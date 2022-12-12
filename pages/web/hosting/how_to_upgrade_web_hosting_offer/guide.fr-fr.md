@@ -25,7 +25,7 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 >
 > **Avant** tout changement sur votre abonnement actuel, vérifiez si vous n'êtes pas concerné par l'une de ces questions :
 >
-> - [Puis-je faire évoluer mon offre gratuite Start 10M vers une offre d'hébergement web ?](#start10m)
+> - [Comment faire évoluer mon offre gratuite Start 10M vers une offre d'hébergement web ?](#start10m)
 > - [Comment bénéficier d'un gain de performance temporaire sur mon offre d'hébergement performance ?](#boost)
 > - [Vais-je perdre le temps restant sur mon offre d'hébergement actuelle lors de mon changement d'offre ?](#billing)
 > - [Est-il possible de changer mon offre actuelle vers une offre inférieure ?](#checks)
@@ -120,20 +120,35 @@ Après avoir pris connaissance de cette information, vous pouvez réaliser votre
 
 #### **Booster temporairement votre hébergement** <a name="boost"></a>
 
-Avec l'[option Boost](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez faire évoluer temporairement les ressources de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
+Avec l'[option Boost](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez augmenter temporairement les ressources CPU et RAM de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
 
-Si l'option **Boost** convient à votre besoin, dans le cadre `Informations générales` de votre hébergement, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.
+> [!warning]
+>
+> Lorsque vous décidez d'activer l'option boost, celle-ci reste active et facturé **tant que vous ne l'avez pas désactivé**.
+
+Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** l'option boost sur votre hébergement.
+
+> [!tabs]
+> **Activer l'option Boost**
+>>
+>> Dans le cadre `Informations générales` de votre hébergement, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.<br><br>
+>> ![boost](images/enable_boost.png){.thumbnail}<br>
+>>
+> **Désactiver l'option Boost**
+>>
+>> Dans l'onglet `Plus` de votre hébergement, cliquez sur `Booster mon offre`{.action}.<br>
+>> Le tableau d'utilisation de l'offre boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
+>> ![boost](images/disable_boost.png){.thumbnail}<br>
 
 ![change_plan](images/change_boost.png){.thumbnail}
 
 #### **La facturation en cas de changement d'offre** <a name="billing"></a>
 
-Lorsque vous modifiez votre formule en cours d'abonnement, un *report de temps* calculé s'applique sur votre nouvelle offre. Ce report est basé sur la durée restante d'abonnement sur votre offre actuelle.
+Lorsque vous modifiez votre formule en cours d'abonnement, un *prorata temporis*  s'applique sur votre nouvelle offre. C'est à dire, d'un montant correspondant à la différence de tarifs entre votre offre actuelle et votre nouvelle offre et cela uniquement sur la période restante jusqu'à votre prochaine date de renouvellement.
 
 > **Exemple :**<br>
 > Vous passez d'une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à un abonnement d'un an sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), alors que l'abonnement Perso en cours n'est pas terminé.<br>
-> Par conséquent, la durée restante de l'abonnement **Perso** sera automatiquement **ajoutée** au pro rata temporis à votre nouvel abonnement **Pro**.<br>
-> Votre nouvel abonnement **Pro** durera de ce fait **un an** + **le pro rata temporis calculé sur votre précédente offre Perso**, jusqu'à son prochain renouvellement.
+> Par conséquent, le montant de la durée restante sur l'abonnement **Perso** sera automatiquement soustrait au coût du nouvel abonnement **Pro** jusqu'à la date de renouvellement initiale.<br>
 
 Si ces conditions vous conviennent, vous pouvez réaliser votre [changement d'offre](#modify)
 
