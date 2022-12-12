@@ -163,11 +163,11 @@ In diesem Fall können Sie die [RAM-Kapazität](https://docs.ovh.com/de/hosting/
 
 > [!warning]
 >
-> Um den RAM zu erhöhen, darf die CloudDB nicht über ein Performance Hosting aktiviert werden. Wenn Sie die RAM-Menge einer in den [Performance Angeboten](https://www.ovhcloud.com/de/web-hosting/performance-offer/){.external} enthaltenen Datenbank erhöhen möchten, müssen Sie diese zuerst abtrennen.
+> Diese Erweiterung des RAM funktioniert nur bei einer CloudDB, die nicht Teil eines Performance Webhostings ist. Wenn Sie die RAM-Kapazität einer in den [Performance Angeboten](https://www.ovhcloud.com/de/web-hosting/performance-offer/){.external} enthaltenen Datenbank erhöhen möchten, müssen Sie diese zuerst abtrennen.
 > 
-Loggen Sie sich zum Abtrennen der Datenbank in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie oben die `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, auf dem die CloudDB aktiviert ist.
+Loggen Sie sich zum Abtrennen der Datenbank in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und öffnen Sie `Web Cloud`{.action}. Klicken Sie links auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting mit der aktiven CloudDB aus.
 >
-Klicken Sie im Bereich `Konfiguration` auf die Kfz-Klassen `...`{.action} rechts neben dem Eintrag für die ganze persönliche Datenbank; klicken Sie dann auf den Button `Abtrennen`{.action}. .
+Klicken Sie im Bereich `Konfiguration` auf den Button `...`{.action} rechts neben `Private Datenbank`. Klicken Sie dann auf `Abtrennen`{.action}.
 >
 
 Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung "[Ihren Datenbankserver konfigurieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#uberprufung-der-ram-nutzung)" befolgen.
