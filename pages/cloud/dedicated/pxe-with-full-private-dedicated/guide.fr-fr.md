@@ -69,7 +69,7 @@ Voici un schéma (logique) de démarrage Netboot :
 
 > [!primary]
 >
-> Cette description reste la plus générique possible afin de rester claire, et ainsi ne pas ajouter des éléments ou contraintes techniques qui sortent du cadre de notre exemple. L'objectif de ce shémar est de donner une vision globale du principe de fonctionnement.
+> Cette description reste la plus générique possible afin de rester claire, et ainsi ne pas ajouter des éléments ou contraintes techniques qui sortent du cadre de notre exemple. L'objectif de ce schéma est de donner une vision globale du principe de fonctionnement.
 >
 
 ## Prérequis
@@ -335,7 +335,7 @@ Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/p
 
 #### Optionnel
 
-Il est également récommandé de déployer les services DNS et NTP.
+Il est également recommandé de déployer les services DNS et NTP.
 
 Ceux-ci ne sont pas nécessaires pour les phases de démarrage des systèmes, donc pas imposés dans cette procédure. Ils font néanmoins partie des services importants par la suite, principalement pour la stabilité de votre infrastructure.
 
