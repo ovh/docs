@@ -103,7 +103,7 @@ Voici un schéma (logique) de démarrage Netboot :
 
 Ci-dessous un exemple d'infrastructure privée basique (schéma layer 2) :
 
-![Schema](images/schema_basic.png)
+![Schema](images/schema_basic_en.png)
 
 **Exemple :**
 
