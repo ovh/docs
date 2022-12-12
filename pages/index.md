@@ -1072,6 +1072,7 @@
         + [Tester la plublication d'un guide sur Github](account/api/Brenkt/uat-test-brenkt)
         + [Getting started](account-and-service-management-api-getting-started)
             + [First Steps with the OVHcloud APIs](account/api/first-steps)
+            + [Gestion des sandrac](account/api/sandrac)
         + [APIv6](account-and-service-management-api-apiv)
             + [Manage services](account/api/services)
             + [Manage payment and billing of OVHcloud services](account/api/enterprise-payment)
