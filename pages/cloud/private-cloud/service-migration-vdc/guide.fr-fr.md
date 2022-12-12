@@ -825,6 +825,6 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 > Que se passe-t-il si la session du service de conseil prend moins de temps que prévu ?
 >> Une session est planifiée et comptabilisée en blocs de 1 heure. Par exemple, une session programmée sur 2 heures et durant 1,5 heure serait facturée sur 2 heures. Une session prévue pour 3 heures mais durant seulement 1,5 heure serait facturée à 2 heures.
 
-## Aller plus loin
+## Aller plus loin, aller plus haut !
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
