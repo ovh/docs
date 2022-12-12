@@ -166,9 +166,9 @@ Nesta situação, pode aumentar a [quantidade de memória RAM](https://docs.ovh.
 >
 > Para aumentar a RAM, o cloudDB não deve ser ativado através de um alojamento Performance. Se deseja aumentar a quantidade de memória RAM de uma base de dados incluída nas [ofertas performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/){.external}, primeiro tem de a desassociar.
 > 
-Para desassociar a base de dados, aceda à [Área de Cliente OVHcloud]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação em cima. Clique em `Alojamentos`{.action} e escolha o alojamento web no qual o cloudDB está ativo.
+> Para desassociar a base de dados, aceda à [Área de Cliente OVHcloud]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e escolha o alojamento web no qual o cloudDB está ativo.
 >
-Na zona `Configuration`, clique em as o `...`{.action} à direita da entrada da `base de dados privada`, e clique no botão `Desassociar`{.action}.
+> Na zona `Configuration`, clique em as o `...`{.action} à direita da entrada da `Base de dados privada`, e clique no botão `Desassociar`{.action}.
 >
 
 Também pode otimizar a sua base de dados seguindo as instruções do nosso guia "[Configurar o seu servidor de bases de dados](https://docs.ovh.com/pt/hosting/configurar-otimizar-servidor-de-bases-de-dados/#otimizar-as-bases-de-dados_1)".

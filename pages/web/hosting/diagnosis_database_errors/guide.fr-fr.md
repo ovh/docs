@@ -162,11 +162,11 @@ Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](https
 
 > [!warning]
 >
-> Pour augmenter la RAM, le cloudDB ne doit pas être activé via un hébergement Performance. Si vous souhaitez augmenter la quantité de mémoire vive d'une base de données incluse dans les [offres performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/){.external}, il vous faut d'abord la détacher.
-> 
-Pour détacher la base de données, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut. Cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web sur lequel le cloudDB est activée.
+> Pour augmenter sa RAM, le CloudDB ne doit pas avoir été activé via un hébergement Performance. Si vous souhaitez augmenter la quantité de mémoire vive d'une base de données incluse dans les [offres performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/){.external}, il vous faut d'abord en délier cette base de données.
 >
-Dans la zone `Configuration`, cliquez sur les `...`{.action} à droite de l'entrée de la `Base de données privée`, puis cliquez sur le bouton `Détacher`{.action}.
+> Pour délier la base de données, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez l'onglet `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web sur lequel le cloudDB est activé.
+>
+> Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de l'entrée de la `Base de données privée` puis cliquez sur le bouton `Délier`{.action}.
 >
 
 Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ».
