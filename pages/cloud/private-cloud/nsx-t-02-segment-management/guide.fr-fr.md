@@ -60,10 +60,10 @@ Cliquez à droite sur `ADD SEGMENT`{.action}.
 
 Choisissez ces informations :
 
-* **Name** : Nom de votre segment
-* **Connected Gateway** : gateway prédefinie ovh-T1-gw | Tier1
-* **Transport Zone** : zone prédéfinie ovh-tz-overlay
-* **Subnet** : Adresse la passerelle sur segment dans son sous réseau comme par exemple 192.168.1.254/24
+* **Name** : Nom de votre segment.
+* **Connected Gateway** : gateway prédefinie ovh-T1-gw | Tier1.
+* **Transport Zone** : zone prédéfinie ovh-tz-overlay.
+* **Subnet** : Adresse la passerelle sur segment dans son sous réseau comme par exemple 192.168.1.254/24.
 
 Ensuite cliquez à droite sur `SAVE`{.action}.
 
@@ -73,20 +73,62 @@ Cliquez sur `NO`{.action}.
 
 ![01 Create Segment 05](images/01-create-segment05.png)
 
-Le nouveau segment apparait dans la liste
+Le nouveau segment apparait dans la liste.
 
 ![01 Create Segment 06](images/01-create-segment06.png)
 
-Toujours dans l'onglet `Networking` cliquez à gauche sur `Network Topology`{.action}. pour voir le nouveau segment et son emplacement dans le réseau.
+Toujours dans l'onglet `Networking` cliquez à gauche sur `Network Topology`{.action} pour voir le nouveau segment et son emplacement dans le réseau.
 
 ![02 Display Network Topology 01](images/02-display-network-topology-with-onesegment01.png)
 
 ### Connexion d'une machine virtuelle à ce segment.
 
-Allez dans l'interface vCenter de votre cluster Hosted Private Cloud 
+Allez dans l'interface vCenter de votre cluster Hosted Private Cloud.
 
+Faites un clic droit sur la `machine virtuelle`{.action}.
 
+![03 Connect Network Card to Segment 01](images/03-connect-network-card-vm-to-segment01.png)
+
+Cliquez sur `Modifier les paramètres`{.action}.
+
+![03 Connect Network Card to Segment 02](images/03-connect-network-card-vm-to-segment02.png)
+
+Allez dans la barre de défilement à droite de votre adaptater réseau et choisissez `Parcourir`{.action}.
+
+![03 Connect Network Card to Segment 03](images/03-connect-network-card-vm-to-segment03.png)
+
+Sélectionnez le `réseau`{.action} qui porte le nom de votre segment. et cliquez sur `OK`{.action}.
+
+![03 Connect Network Card to Segment 04](images/03-connect-network-card-vm-to-segment04.png)
+
+Cliquez sur `OK`{.action}.
+
+![03 Connect Network Card to Segment 05](images/03-connect-network-card-vm-to-segment05.png)
+
+Revenez sur l'interface NSX-T
+
+Allez dans l'onglet `Networking`{.action} choisissez `Network Topology`{.action}.
+
+![04 display network topology with one segment and one vm 01](images/04-display-network-topology-with-onesegment-and-one-vm01.png)
+
+La machine virtuelle associé au réseau apparait dans la topologie du réseau.
+
+Aidez-vous de la première partie du guide pour créer un deuxième segment nommé ov2-segment dans un sous-réseau **192.168.2.0/24** avec une passerelle en **192.168.1.254** afin d'avoir deux segments.
+
+* **ov1-segment** sur le sous-réseau **192.168.1.0/24**
+* **ov2-segment** dans le sous réseau **192.168.2.0/24**
+
+![05 display four VM on two segment01](images/05-display-four-vm-on-two-segment01.png)
+
+Ensuite à partir de la console vCenter, mettez deux machines virtuelles sur le premier segment et deux autres sur le deuxième segment.
+
+Revenez sur l'interface NSX-T dans `Network Topology`{.action}. pour faire apparaitre la nouvelle configuration réseau.
+
+![05 display four VM on two segment02](images/05-display-four-vm-on-two-segment02.png)
+
+Les deux segments sont reliés à la passerelle **ovh-T1-gw**, un routage entre les deux sous-réseau est activé sans blocage.
 
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+
