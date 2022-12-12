@@ -1072,7 +1072,7 @@
         + [Getting started](account-and-service-management-api-getting-started)
             + [First Steps with the OVHcloud APIs](account/api/first-steps)
             + [Gestion des sandrac](account/api/sandrac)
-            + [Tester la plublication d'un guide sur Github](account/api/Brenkt)
+            + [Tester la plublication d'un guide sur Github](account/api/BrenKt)
         + [APIv6](account-and-service-management-api-apiv)
             + [Manage services](account/api/services)
             + [Manage payment and billing of OVHcloud services](account/api/enterprise-payment)
