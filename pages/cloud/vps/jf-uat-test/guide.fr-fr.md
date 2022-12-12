@@ -1,8 +1,6 @@
 ---
 title: 'Tutoriel - Les erreurs courantes de Minecraft'
-slug: minecraft-errors
 excerpt: 'Learn more about common minecraft errors and how to resolve them'
-section: Diagnostic et mode Rescue
 ---
 
 **Dernière mise à jour le 29/06/2021**
