@@ -122,7 +122,7 @@ Les deux segments sont reliés à la passerelle **ovh-T1-gw**, le routage entre 
 
 ## Aller plus loin
 
-[Premiers pars avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
+[Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

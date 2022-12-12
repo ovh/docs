@@ -81,7 +81,7 @@ Inside initial configuration, there is no link between your VMware infrastructur
 
 ## Go further <a name="gofurther"></a>
 
-[First time with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
