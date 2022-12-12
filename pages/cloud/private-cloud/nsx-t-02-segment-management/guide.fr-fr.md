@@ -33,8 +33,8 @@ order: 02
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
-- **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switchde niveau 2.
-- **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle entre les hotes et les VM.
+- **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
+- **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établi des tunnel entre les hôtes et les VM.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
@@ -44,7 +44,7 @@ Les segments peuvent être reliés à **ovh-T1-gw** dans ce cas il faut créer u
 
 ### Création d'un segment dans l'interface NSX-T.
 
-Nous allons créer un segment *Overlay-backed segment* relié à **Tier-1 Gateway** dans un sous réseau en 192.168.1.0/24. La passerelle aura l'adresse 192.168.1.254.
+Nous allons créer un segment *Overlay-backed segment* relié à **ovh-T1-gw** dans un sous réseau en 192.168.1.0/24. La passerelle aura l'adresse 192.168.1.254.
 
 A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action}.
 
@@ -109,10 +109,7 @@ Allez dans l'onglet `Networking`{.action} choisissez `Network Topology`{.action}
 
 La machine virtuelle associée au réseau apparait dans la topologie du réseau.
 
-Aidez-vous de la première partie du guide pour créer un deuxième segment nommé ov2-segment avec ces paramètres **192.168.2.254/24** afin d'avoir deux segments :
-
-* **ov1-segment** sur le sous-réseau **192.168.1.0/24**
-* **ov2-segment** dans le sous réseau **192.168.2.0/24**
+Aidez-vous de la première partie du guide pour créer un deuxième segment nommé ov2-segment avec ces paramètres **192.168.2.254/24** afin d'avoir deux segments connectés à **ovh-T1-gw**.
 
 ![05 display four VM on two segment01](images/05-display-four-vm-on-two-segment01.png)
 

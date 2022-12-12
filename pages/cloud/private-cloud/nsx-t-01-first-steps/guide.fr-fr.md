@@ -9,7 +9,7 @@ order: 01
 **Dernière mise à jour le 07/12/2022**
 
 > [!warning]
-> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
+> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
 >
 
 
