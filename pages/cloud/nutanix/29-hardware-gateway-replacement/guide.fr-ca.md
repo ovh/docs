@@ -12,7 +12,7 @@ order: 10
 
 Une machine virtuelle **OVHgateway** est installée lors d'un déploiement d'un cluster **Nutanix on OVHcloud**. Cette machine virtuelle sert de passerelle Internet sortante pour le cluster. Le débit maximal est de 1 GB/s.
 
-Si vous avez besoin d'une bande passante plus importante, vous pouvez remplacer cette passerelle par un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) et choisir une offre vous permettant entre 1 GB/s et 10 GB/s sur le réseau public.<br>
+Si vous avez besoin d'une bande passante plus importante, vous pouvez remplacer cette passerelle par un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) et choisir une offre vous permettant entre 1 GB/s et 10 GB/s sur le réseau public.<br>
 Contactez le service commercial OVHcloud pour vous aider à choisir le bon serveur. 
 
 **Découvrez comment remplacer la passerelle par défaut par un serveur dédié OVHcloud afin d'augmenter la bande passante.**
@@ -26,9 +26,9 @@ Contactez le service commercial OVHcloud pour vous aider à choisir le bon serve
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté sur le cluster via Prism Central. 
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public, d'autres sur le réseau privé. Ce serveur doit être sur le même Data Center que le cluster Nutanix.
+- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre compte OVHcloud avec plusieurs cartes réseaux, certaines sur le réseau public, d'autres sur le réseau privé. Ce serveur doit être sur le même Data Center que le cluster Nutanix.
 
 ## En pratique
 
@@ -44,7 +44,7 @@ Pour remplacer la VM OVHgateway, nous allons utiliser ces paramètres :
 
 ### Récupération des informations nécessaires au déploiement de votre serveur
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglets. Sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Hosted Private Cloud`{.action} dans la barre d'onglets. Sélectionnez votre cluster Nutanix à gauche et notez le nom du vRack associé à votre cluster Nutanix dans `Réseau privé (vRack)`.
 
 ![01 get nutanix vrack 01](images/01-get-nutanix-vrack01.png){.thumbnail}
 

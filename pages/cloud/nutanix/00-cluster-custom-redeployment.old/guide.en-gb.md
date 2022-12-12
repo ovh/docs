@@ -1,14 +1,12 @@
 ---
-title: Reinstalación personalizada de su Cluster (EN)
+title: Customised redeployment of your Cluster
 slug: cluster-custom-redeployment
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/cluster-custom-redeployment/'
 excerpt: Customised redeployment of a Nutanix Cluster via the OVHcloud API
-section: Primeros pasos
+section: Getting started
 order: 05
 ---
 
-**Last updated 16th November 2022**
+**Last updated 10th June 2022**
 
 ## Objective
 
@@ -23,12 +21,8 @@ Find out how to repackage a Cluster with custom network settings via the OVHclou
 ## Requirements
 
 - a Nutanix Cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- access to the [OVHcloud API page](https://ca.api.ovh.com/)
-
-> [!warning]
-> If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix cluster on OVHcloud BYOL Offer](https://docs.ovh.com/us/es/nutanix/activate-licence-on-nutanix-byol/)
->
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud API page](https://api.ovh.com/)
 
 ## Introduction to using the private network for a Nutanix Cluster at OVHcloud
 
@@ -81,7 +75,7 @@ We will redeploy a cluster with 3 nodes, as in Example 1 in the previous chapter
 > The Cluster redeployment operation cannot be undone. All data in the Cluster will be deleted, and a new admin account password will be generated and sent by email to the OVHcloud customer account holder.
 >
 
-Log in to the [OVHcloud API](https://ca.api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/)
+Log in to the [OVHcloud API](https://api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)
 
 Use the following API call:
 
@@ -144,6 +138,6 @@ Click `Execute`{.action} to start the cluster redeployment.
 
 ## Go further
 
-[Using the OVHcloud API](https://docs.ovh.com/us/es/api/)
+[Using the OVHcloud API](https://docs.ovh.com/gb/en/api/)
 
 Join our community of users on <https://community.ovh.com/en/>.

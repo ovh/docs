@@ -21,7 +21,7 @@ This guide will explain how to replace the outgoing internet gateway (OVHgateway
 ## Requirements
 
 - One Nutanix cluster provided by OVHcloud
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - Access to your clusters via Prism Central
 
 ## Instructions
@@ -42,7 +42,7 @@ In our guide, we will replace this gateway with the network operating system **p
 
 Download an ISO image for the **pfSense** installation from this link: [Downloading pfSense](https://www.pfsense.org/download/){.external}.
 
-Using [this documentation](https://docs.ovh.com/gb/en/nutanix/image-import/), add the **pfSense ISO** image to your Nutanix cluster.
+Using [this documentation](https://docs.ovh.com/ca/en/nutanix/image-import/), add the **pfSense ISO** image to your Nutanix cluster.
 
 <a name="createvmpfsense"></a>
 
@@ -57,7 +57,7 @@ Create a virtual machine with these settings:
 - **CPU**: `2 vCPU`
 - **Network**: `2 network cards, one on VLAN 0 (base) and the other on VLAN 1 (infra)`
 
-You can use [our guide on virtual machine management](https://docs.ovh.com/gb/en/nutanix/virtual-machine-management/) to create this virtual machine.
+You can use [our guide on virtual machine management](https://docs.ovh.com/ca/en/nutanix/virtual-machine-management/) to create this virtual machine.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
@@ -89,7 +89,7 @@ From the `More`{.action} menu at the top, click `Soft Shutdown`{.action}.
 
 Retrieve information about the OVHcloud gateway network settings.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select your Nutanix cluster, and find the information in the `IPFO` field.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), select your Nutanix cluster, and find the information in the `IPFO` field.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -386,7 +386,7 @@ We will create a new subnet in VLAN 2 with an address range in 192.168.2.0/24 an
 
 Log in to Prism Central to make these changes:
 
-Use the [Isolating management machines from production](https://docs.ovh.com/gb/en/nutanix/nutanix-isolate-management-machines/) guide to create a new VLAN on your Nutanix cluster with these settings:
+Use the [Isolating management machines from production](https://docs.ovh.com/ca/en/nutanix/nutanix-isolate-management-machines/) guide to create a new VLAN on your Nutanix cluster with these settings:
 
 - **VLAN name**: `Production`
 - **VLAN number**: `2`
