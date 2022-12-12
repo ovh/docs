@@ -185,7 +185,7 @@ Agora, execute este comando para reiniciar a interface:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+, Fedora 26+ e Arch Linux
+### Debian 9+, Ubuntu 17+ e Arch Linux
 
 Estes sistemas não usam a terminologia eth0, eth1. Como tal, iremos usar o `systemd-network`.
 
@@ -221,6 +221,71 @@ Agora, execute este comando para reiniciar a interface:
 systemctl restart systemd-networkd
 ```
 
+## Fedora 36 e versões posteriores
+
+Fedora utiliza agora ficheiros chave (*keyfiles*).
+Fedora utilizava anteriormente perfis de rede armazenados pela NetworkManager no formato ifcfg no diretório `/etc/sysconfig/network-scripts/`.<br>
+Uma vez que o ifcfg se encontra agora em imparidade, NetworkManager não cria de forma padrão os novos perfis neste formato. O ficheiro de configuração encontra-se agora no `/etc/NetworkManager/system-connections/`.
+
+##### Fase 1: criar um backup
+
+Primeiro, faça uma cópia do ficheiro de configuração para poder reverter a situação a qualquer momento:
+
+```sh
+cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+###### Passo 2: editar o ficheiro de configuração
+
+> [!primary]
+>
+> Tenha em conta que o nome do ficheiro de rede no nosso exemplo pode diferir do seu. Queira adaptar os comandos em função do nome do seu ficheiro. Para obter o nome da interface de rede para poder editar o ficheiro de rede adequado, pode executar o seguinte comando: `ip a`.
+>
+> Também pode verificar a interface ligada com o seguinte comando:
+>
+> ```bash
+> nmcli connection show
+> ```
+>
+
+O Additional IP deve ser adicionado ao ficheiro da seguinte forma:
+
+```sh
+editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+```sh
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+Se tem dois endereços Adicionais IP a configurar, o ficheiro de configuração deverá ser o seguinte:
+
+```sh
+[connection]
+id=cloud-init eno1
+uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+type=ethernet
+[user]
+org.freedesktop.NetworkManager.origin=cloud-init
+[ethernet]
+mac-address=MA:CA:DD:RE:SS:XX
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+##### Passo 3: Reiniciar a interface
+
+Agora, reinicie a sua interface:
+
+```sh
+systemctl restart NetworkManager
+```
 
 ### CentOS e Fedora (versão 25 e anteriores)
 
@@ -337,7 +402,7 @@ LABEL_1=ens32:0
 ```
 
 
-### cPanel
+### cPanel (em CentOS 6)
 
 #### 1 - Fazer cópia do ficheiro de configuração (*source file*)
 

@@ -220,6 +220,71 @@ Pozostaje tylko zrestartować interfejs:
 systemctl restart systemd-networkd
 ```
 
+### Fedora 36 i kolejne wersje
+
+Fedora korzysta teraz z kluczowych plików (*keyfiles*).
+Fedora korzystała wcześniej z profili sieci przechowywanych przez NetworkManager w formacie ifcfg w katalogu `/etc/sysconfig/network-scripts/`.<br>
+NetworkManager nie tworzy już domyślnie nowych profili w tym formacie. Plik konfiguracyjny znajduje się w `/etc/NetworkManager/system-connections/`.
+
+#### Krok 1: utworzenie pliku konfiguracyjnego
+
+Kopia pliku źródłowego musi zostać wykonana przede wszystkim po to, aby w każdej chwili można było cofnąć:
+
+```sh
+cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+#### Krok 2: modyfikacja pliku konfiguracyjny
+
+> [!primary]
+>
+> Pamiętaj, że nazwa pliku sieciowego w naszym przykładzie może różnić się od Twojej. Dostosuj komendy do nazwy pliku. Aby uzyskać nazwę swojego interfejsu sieciowego, aby móc edytować odpowiedni plik sieciowy, możesz wykonać następujące polecenie: `ip a`.
+>
+> Możesz również sprawdzić podłączony interfejs za pomocą polecenia:
+>
+> ```bash
+> nmcli connection show
+> ```
+>
+Możesz teraz dodać Additional IP do pliku konfiguracyjnego w następujący sposób:
+
+```sh
+editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+```sh
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+Jeśli masz dwa dodatkowe adresy Additional IP do skonfigurowania, plik konfiguracyjny powinien wyglądać następująco:
+
+
+```sh
+[connection]
+id=cloud-init eno1
+uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+type=ethernet
+[user]
+org.freedesktop.NetworkManager.origin=cloud-init
+[ethernet]
+mac-address=MA:CA:DD:RE:SS:XX
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+#### Krok 3: restart interfejsu
+
+Pozostaje tylko zrestartować interfejs:
+
+```sh
+systemctl restart NetworkManager
+```
 
 ### CentOS i Fedora (25 i wcześniejsze)
 
@@ -336,7 +401,7 @@ LABEL_1=ens32:0
 ```
 
 
-### cPanel
+### cPanel (w systemie CentOS 6)
 
 #### Krok 1: utworzenie pliku konfiguracyjnego
 

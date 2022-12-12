@@ -221,6 +221,70 @@ Per riavviare l’interfaccia esegui il comando:
 systemctl restart systemd-networkd
 ```
 
+### Fedora 36 e versioni successive
+
+Da questo momento, Fedora utilizza file chiave (*keyfiles*).
+In precedenza Fedora utilizzava profili di rete memorizzati da NetworkManager in formato ifcfg nella directory `/etc/sysconfig/network-scripts/`.<br>
+Poiché l'ifcfg ha subito una riduzione di valore, NetworkManager non crea di default i nuovi profili in questo formato. Il file di configurazione è disponibile in `/etc/NetworkManager/system-connections/`.
+
+#### Step 1: crea il file sorgente
+
+Per prima cosa, esegui una copia del file sorgente per poter tornare indietro in qualsiasi momento:
+
+```sh
+cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+#### Step 2: modifica il file sorgente
+
+> [!primary]
+>
+> Ti ricordiamo che il nome del file di rete nel nostro esempio può differire dal tuo. Adatta i comandi in base al nome del tuo file. Per generare il nome della tua interfaccia di rete per poter modificare il file di rete corrispondente, esegui il comando: `ip a`
+>
+> Verifica anche l'interfaccia connessa con questo comando:
+>
+> ```bash
+> nmcli connection show
+> ```
+>
+Aggiungi il tuo Additional IP al file di configurazione come segue:
+
+```sh
+editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+```sh
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+Se hai due indirizzi Additional IP da configurare, il file di configurazione dovrebbe essere di questo tipo:
+
+```sh
+[connection]
+id=cloud-init eno1
+uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+type=ethernet
+[user]
+org.freedesktop.NetworkManager.origin=cloud-init
+[ethernet]
+mac-address=MA:CA:DD:RE:SS:XX
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+#### Step 3: riavvia l’interfaccia
+
+Per riavviare l’interfaccia esegui il comando:
+
+```sh
+systemctl restart NetworkManager
+```
 
 ### CentOS e Fedora (25 e precedenti)
 
@@ -337,7 +401,7 @@ LABEL_1=ens32:0
 ```
 
 
-### cPanel
+### cPanel (su CentOS 6)
 
 #### Step 1: crea il file sorgente
 

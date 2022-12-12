@@ -167,7 +167,12 @@ address ADDITIONAL_IP2
 netmask 255.255.255.255
 ```
 
-```
+Alternative:
+
+```bash
+auto eth0
+iface eth0 inet dhcp
+
 # IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
@@ -186,7 +191,7 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+, Fedora 26+ und Arch Linux
+### Debian 9+, Ubuntu 17+ und Arch Linux
 
 Bei diesen Distributionen wurde die Benennung von Interfaces in eth0, eth1... abgeschafft und es wird nun die generische Bezeichnung `systemd-network` verwendet.
 
@@ -221,6 +226,71 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 systemctl restart systemd-networkd
 ```
 
+### Fedora 36 und spätere Versionen
+
+Fedora verwendet ab sofort Schlüsseldateien (*keyfiles*).
+Fedora benutzte zuvor im ifcfg-Format im Verzeichnis `/etc/sysconfig/network-scripts/` gespeicherte Netzwerkprofile.<br>
+Da der ifcfg jetzt abgewertet wird, erstellt NetworkManager standardmäßig keine neuen Profile mehr in diesem Format. Die Konfigurationsdatei befindet sich nun in `/etc/NetworkManager/system-connections/`.
+
+
+#### Schritt 1: Die Quelldatei sichern
+
+Kopieren Sie zunächst die Quelldatei, um jederzeit zu einem früheren Zustand zurückkehren zu können:
+
+```sh
+cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+#### Schritt 2: Die Quelldatei bearbeiten
+
+> [!primary]
+>
+> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel sich von Ihrem unterscheiden kann. Bitte passen Sie die Befehle an den Namen Ihrer Datei an. Um den Namen Ihres Netzwerkinterfaces zu erhalten, um die entsprechende Netzwerkdatei bearbeiten zu können, können Sie folgenden Befehl ausführen: IP a`.
+>
+> Sie können auch das angeschlossene Interface mit folgendem Befehl überprüfen:
+>
+> 
+> `nmcli connection show`
+> 
+>
+Sie können nun Ihre Additional IP zur Konfigurationsdatei hinzufügen:
+
+```sh
+editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+```sh
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+Wenn Sie zwei Additional IP-Adressen konfigurieren möchten, sollte die Konfigurationsdatei wie folgt aussehen:
+
+```sh
+[Verbindung]
+id=cloud-init eno1
+uid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+type=ethernet
+[user]
+org.freedesktop.networkManager.origin=cloud-init
+[ethernet]
+mac-address=MA:CA:DD:RE:SS:XX
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+#### Schritt 3: Interface neu starten
+
+Im letzten Schritt starten Sie Ihr Interface neu:
+
+```sh
+systemctl restart NetworkManager
+```
 
 ### CentOS und Fedora (25 und vorherige)
 
@@ -337,7 +407,7 @@ LABEL_1=ens32:0
 ```
 
 
-### cPanel
+### cPanel (auf CentOS 6)
 
 #### Schritt 1: Die Quelldatei sichern
 

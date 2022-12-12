@@ -131,7 +131,7 @@ editor /etc/network/interfaces
 
 A continuación, añada una interfaz secundaria.
 
-```
+```bash
 auto eth0:0
 iface eth0:0 inet static
 address ADDITIONAL_IP
@@ -140,14 +140,14 @@ netmask 255.255.255.255
 
 Para asegurarse de que la interfaz secundaria se active junto con la interfaz **eth0**, añada las siguientes líneas a la configuración de eth0:
 
-```
+```bash
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
 Si quiere configurar dos Additional IP, el archivo **/etc/network/interfaces** debería ser similar al siguiente:
 
-```
+```bash
 auto eth0
 iface eth0 inet static
 address SERVER_IP
@@ -166,7 +166,7 @@ address ADDITIONAL_IP2
 netmask 255.255.255.255
 ```
 
-```
+```bash
 # IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
@@ -186,7 +186,7 @@ Por último, reinicie la interfaz con el siguiente comando:
 ```
 
 
-### Debian 9+, Ubuntu 17+, Fedora 26+
+###  Debian 9+, Ubuntu 17.04+ y Arch Linux
 
 En estas distribuciones, el método de denominación de las interfaces como eth0, eth1, etc. cambia, por lo que utilizaremos de forma más genérica el **systemd-network**.
 
@@ -206,7 +206,7 @@ Ya puede añadir sus Additional IP editando el archivo de la siguiente manera:
 nano /etc/network/50-default.network
 ```
 
-```
+```bash
 [Address]
 Address=22.33.44.55/32
 Label=failover1 # optional
@@ -222,71 +222,85 @@ Por último, reinicie la interfaz con el siguiente comando:
 systemctl restart systemd-networkd
 ```
 
+### Fedora 36 y versiones posteriores
 
-### Arch (systemctl)
+Fedora utiliza ahora archivos clave (*keyfiles*).
+Antes, Fedora utilizaba perfiles de red almacenados por NetworkManager en formato ifcfg en el directorio `/etc/sysconfig/network-scripts/`.<br>
+Una vez que el ifcfg ha caído, NetworkManager ya no crea por defecto los nuevos perfiles en este formato. El archivo de configuración se encuentra ahora en `/etc/NetworkManager/system-connections/`.
 
-#### 0. Añadir interfaz temporal
+#### 1. Crear una copia de seguridad del archivo de configuración
 
-Para probar primero la IP, añadiremos en caliente la IP la interfaz de red que queramos que escuche (lo podemos averiguar con ```ifconfig```). Por defecto la interfaz principal suele ser ```eth0```.
-
-El parámetro ``label eth0:fo1`` es totalmente opcional.
-
-```sh
-ip address add 22.33.44.55/32 broadcast + dev eth0 label eth0:fo1
-```
-
-Si podemos hacer peticiones, es el momento de eliminar la IP y crear el servicio.
+En primer lugar, realice una copia de seguridad del archivo de configuración de las interfaces para poder volver atrás en cualquier momento.
 
 ```sh
-ip addr del 22.33.44.55/32 dev eth0
+cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 
-#### 1. Crear el servicio
+#### 2. Editar el archivo de configuración
 
-Creamos un nuevo servicio.
+> [!primary]
+>
+> Tenga en cuenta que el nombre del archivo de red en nuestro ejemplo puede ser diferente del suyo. Ajuste los comandos en función del nombre del archivo. Para poder editar el archivo de red correspondiente, ejecute el siguiente comando: `ip a`.
+>
+> También puede comprobar la interfaz conectada con el siguiente comando:
+>
+> `nmcli connection show`
+>
+
+Ya puede añadir su Directorio IP al archivo de configuración, como se muestra a continuación:
 
 ```sh
- /etc/systemd/system/failoverIP.service
+editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
-```
-[Unit]
-Description=Failover Adding IP on boot
-# Wait until network is up
-Wants=network-online.target
-After=network.target network-online.target
+### Ubuntu 17.10 y versiones posteriores
 
-[Service]
-# Only start once when network works
-Type=oneshot
-ExecStart=/usr/bin/failoverIP
+Cada dirección IP adicional necesitará su propia línea en el archivo de configuración. El nombre del archivo es `50-cloud-init.yaml` y se encuentra en `/etc/netplan`.
 
-[Install]
-WantedBy=multi-user.target
+#### 1. Determinar la interfaz
+ 
+```sh
+ifconfig
 ```
 
-#### 2. Crear el script del servicio
+Anote el nombre de la interfaz y su dirección MAC.
+
+#### 2. Crear el archivo de configuración
+
+Conéctese al servidor por SSH y ejecute el siguiente comando:
 
 ```sh
-/usr/bin/failoverIP
+editor /etc/netplan/50-cloud-init.yaml
 ```
 
-Aprovecharemos el comando del paso 0
-```
-#!/bin/bash
-ip address add 22.33.44.55/32 broadcast + dev eth0 label eth0:fo1
-```
-
-#### 3. Activación del servicio
-
-Por último, tendremos que habilitar el servicio y arrancarlo (si hemos eliminado la IP en el paso 0).
+A continuación, edite el archivo con el siguiente contenido, sustituyendo « INTERFACE_NAME », « MAC_ADDRESS » et « ADDITIONAL_IP »:
 
 ```sh
-chmod 755 /usr/bin/failoverIP
-systemctl enable failoverIP.service
-systemctl start failoverIP.service
-``` 
+network:
+    version : 2
+    ethernets:
+        INTERFACE_NAME :
+            dhcp4: true
+            match:
+                macaddress : MAC_ADDRESS
+            set-name : INTERFACE_NAME
+            addresses:
+            - ADDITIONAL_IP/32
+```
 
+Guarde y cierre el archivo. Para probar la configuración, introduzca el siguiente comando:
+
+```sh
+# netplan try
+```
+
+#### 3. Aplicar el cambio
+
+Ejecute los siguientes comandos para aplicar la configuración:
+
+```sh
+# netplan apply
+```
 
 ### CentOS y Fedora (25 y anteriores)
 
@@ -308,7 +322,7 @@ editor /etc/sysconfig/network-scripts/ifcfg-eth0:0
 
 Ahora cambie el nombre del **device** y, luego, la IP existente por su Additional IP.
 
-```
+```bash
 DEVICE="eth0:0"
 ONBOOT="yes"
 BOOTPROTO="none" # For CentOS use "static"
@@ -353,14 +367,14 @@ editor /etc/conf.d/net
 
 Añada lo siguiente:
 
-```
+```bash
 config_eth0=( "SERVER_IP netmask 255.255.255.0" "ADDITIONAL_IP netmask 255.255.255.255 brd ADDITIONAL_IP" )
 ```
 
 El archivo **/etc/conf.d/net** debe contener lo siguiente:
 
 
-```
+```bash
 # This blank configuration will automatically use DHCP for any net.
 # scripts in /etc/init.d. To create a more complete configuration,
 # please review /etc/conf.d/net.example and save your configuration
@@ -396,14 +410,14 @@ cp /etc/sysconfig/network/ifcfg-ens32 /etc/sysconfig/network/ifcfg-ens32.bak
 
 A continuación, edite el archivo **/etc/sysconfig/network/ifcfg-ens32** como sigue:
 
-```
+```bash
 IPADDR_1=ADDITIONAL_IP
 NETMASK_1=255.255.255.255
 LABEL_1=ens32:0
 ```
 
 
-### cPanel
+### cPanel (para CentOS 6)
 
 #### 1. Crear una copia de seguridad del archivo de configuración
 
