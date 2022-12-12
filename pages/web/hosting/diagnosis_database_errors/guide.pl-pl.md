@@ -10,7 +10,7 @@ order: 04
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 03-02-2022**
+**Ostatnia aktualizacja z dnia 09-12-2022**
 
 ## Wprowadzenie 
 
@@ -161,6 +161,15 @@ Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OV
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
 W tej sytuacji możesz zwiększyć [ilość pamięci RAM](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#zmiana-oferty-serwera-baz-danych_1) dostępny w części `Bazy danych`{.action} [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
+
+> [!warning]
+>
+> Aby zwiększyć pamięć RAM, nie należy włączać usługi cloudDB za pomocą hostingu Performance. Jeśli chcesz zwiększyć ilość pamięci RAM bazy danych zawartej w [ofertach wydajności](https://www.ovhcloud.com/pl/web-hosting/performance-offer/){.external}, musisz ją odłączyć.
+> 
+> Aby odłączyć bazę danych, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij polecenie `Hosting`{.action}, następnie wybierz hosting, na którym aktywowana jest usługa cloudDB.
+>
+> W obszarze `Konfiguracja` kliknij na `...`{.action} po prawej stronie pozycji `Prywatna baza danych`, następnie kliknij przycisk `Odłącz`{.action}.
+>
 
 Możesz również zoptymalizować bazę danych, postępując zgodnie z instrukcjami zawartymi w przewodniku "[Konfiguracja serwera baz danych](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1)".
 

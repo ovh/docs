@@ -6,7 +6,7 @@ section: Diagnostic
 order: 04
 ---
 
-**Dernière mise à jour le 03/02/2022**
+**Dernière mise à jour le 09/12/2022**
 
 ## Objectif
 
@@ -159,6 +159,15 @@ Le message suivant dans la partie `Bases de données`{.action} de votre [espace 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
 Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#modifier-loffre-du-serveur-de-bases-de-donnees_1) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
+
+> [!warning]
+>
+> Pour augmenter sa RAM, le CloudDB ne doit pas avoir été activé via un hébergement Performance. Si vous souhaitez augmenter la quantité de mémoire vive d'une base de données incluse dans les [offres performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/){.external}, il vous faut d'abord en délier cette base de données.
+>
+> Pour délier la base de données, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez l'onglet `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} puis choisissez l'hébergement web sur lequel le cloudDB est activé.
+>
+> Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de l'entrée de la `Base de données privée` puis cliquez sur le bouton `Délier`{.action}.
+>
 
 Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) ».
 

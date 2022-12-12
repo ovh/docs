@@ -34,7 +34,7 @@ Attivare DNSSEC è possibile seguendo due modalità:
 
 - **se il tuo dominio non utilizza i server DNS OVHcloud**, contatta il provider che gestisce la configurazione dei DNS e richiedi tutti i parametri. Accedi alla sezione `Web Cloud`{.action} Seleziona `Domini`{.action}, quindi seleziona il dominio in questione dalla lista.
 Clicca sulla scheda `Record DS`{.action}, quindi sul pulsante `Modifica`{.action} a destra e infine sul pulsante `+`{.action}.
-Puoi ora completare i 4 campi, "Tag chiave", "Contrassegno", "Algoritmo", "Chiave pubblica (codificata in Base64)", con i dati forniti dal tuo provider attuale.
+Puoi ora completare i 4 campi, "Key Tag", "Flag", "Algoritmo", "Chiave pubblica (codificata in base64)", con i dati forniti dal tuo provider attuale.
 
 > [!primary]
 >
