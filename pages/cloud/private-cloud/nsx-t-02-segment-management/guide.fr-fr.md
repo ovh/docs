@@ -26,25 +26,25 @@ order: 02
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Etre connecté à votre interface vCenter.
+- Être connecté à votre interface vCenter.
 - Avoir **NSX-T** déployé.
 
 ## Présentation
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précemment logical switch) il peut être de deux types :
 
-- **VLAN-backed segments** : la communication entre les hotes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
+- **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
 - **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle entre les hotes et les VM.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
-Les segments peuvent être reliés à **ovh-T1-gw** dans ce cas il faut créer une réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit avec l'extérieur du cluster.
+Les segments peuvent être reliés à **ovh-T1-gw** dans ce cas il faut créer un réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit avec l'extérieur du cluster.
 
 ## En pratiques
 
 ### Création d'un segment dans l'interface NSX-T.
 
-Nous allons créer un segment relié à **Tier-1 Gateway** avec un sous réseau en 192.168.1.0/24 et une passerelle en 192.168.1.254 au travers d'un *Overlay-backed segment*.
+Nous allons créer un segment *Overlay-backed segment* relié à **Tier-1 Gateway** dans un sous réseau en 192.168.1.0/24. La passerelle aura l'adresse 192.168.1.254.
 
 A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action}.
 
@@ -118,7 +118,7 @@ Aidez-vous de la première partie du guide pour créer un deuxième segment nomm
 
 Ensuite à partir de la console **vCenter**, mettez deux machines virtuelles sur le premier segment et deux autres sur le deuxième segment.
 
-Revenez sur l'interface NSX-T dans `Network Topology`{.action}. pour faire apparaitre la nouvelle configuration réseau.
+Revenez sur l'interface NSX-T dans `Network Topology`{.action} pour faire apparaitre la nouvelle configuration réseau.
 
 ![05 display four VM on two segment02](images/05-display-four-vm-on-two-segment02.png)
 
