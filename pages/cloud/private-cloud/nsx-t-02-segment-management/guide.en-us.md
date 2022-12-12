@@ -85,7 +85,7 @@ In the Networking tab, click on `Network Topology`{.action} on the left to see t
 
 Go to the vCenter interface of your Hosted Private Cloud cluster.
 
-Right-click on `virtual machine`{.action} and click `Change settings`{.action}.
+Right-click on `virtual machine`{.action} and click `Edit Settings`{.action}.
 
 ![03 Connect Network Card to Segment 01](images/03-connect-network-card-vm-to-segment01.png)
 
@@ -123,4 +123,7 @@ Both segments are connected to the gateway **ovh-T1-gw**, routing between the tw
 
 ## Go further <a name="gofurther"></a>
 
+[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+
 Join our community of users on <https://community.ovh.com/en/>.
+
