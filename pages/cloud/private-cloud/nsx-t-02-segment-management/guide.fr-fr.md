@@ -12,7 +12,6 @@ order: 02
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
 >
 
-
 ## Objectif
 
 **Découvrir la création et l'utilisation des segment dans l'interface NSX-T et vCenter**
@@ -42,6 +41,8 @@ Les segments sont liés à des zones de transports qui sont prédéfinies par OV
 Les segments peuvent être reliés à une passerelle dans ce cas il faut créer une réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit avec l'extérieur du cluster.
 
 ## En pratique
+
+### Création d'un segment dans l'interface NSX-T.
 
 Nous allons créer un segment rélié à la passerelle **Tier-1 Gateway** avec un sous réseau en 192.168.1.0/24 et une passerelle en 192.168.1.254 au travers d'un Overlay-backed segment.
 
@@ -76,24 +77,15 @@ Le nouveau segment apparait dans la liste
 
 ![01 Create Segment 06](images/01-create-segment06.png)
 
+Toujours dans l'onglet `Networking` cliquez à gauche sur `Network Topology`{.action}. pour voir le nouveau segment et son emplacement dans le réseau.
 
-
-
-
-
-
-
-Nous allons voir comment créer une segment dans l'interface NSX-T et le connecter à une ou plusieurs machines virtuelles.
-
-### Création d'un segment dans l'interface NSX-T.
-
-
+![02 Display Network Topology 01](images/02-display-network-topology-with-onesegment01.png)
 
 ### Connexion d'une machine virtuelle à ce segment.
 
+Allez dans l'interface vCenter de votre cluster Hosted Private Cloud 
 
 
-### Affectation d'un segment à une machine virtuelle dans l'interface vSphere
 
 ## Aller plus loin
 
