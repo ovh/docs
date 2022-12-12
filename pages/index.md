@@ -1069,7 +1069,7 @@
         + [CLI - Use your data in a notebook](platform/ai/cli_17_how_to_cli_data_notebooks)
 + Account and service management
     + [API](account-and-service-management-api)
-        + [BrenKt test](account/api/uat-test-brenkt)
+        + [BrenKt test](account/api/brenkt/uat-test-brenkt)
         + [Getting started](account-and-service-management-api-getting-started)
             + [First Steps with the OVHcloud APIs](account/api/first-steps)
         + [APIv6](account-and-service-management-api-apiv)
