@@ -10,7 +10,7 @@ order: 04
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 03/02/2022**
+**Ultimo aggiornamento: 09/12/2022**
 
 ## Obiettivo
 
@@ -159,6 +159,15 @@ Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
 In questa situazione è possibile aumentare la [quantità di memoria RAM](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
+
+> [!warning]
+>
+> Per aumentare la RAM, il CloudDB non deve essere attivato tramite un hosting Performance. Per aumentare la quantità di RAM di un database incluso nelle [offerte performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/){.external}, è necessario scollegarla prima.
+> 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto. Clicca su `Hosting`{.action} e seleziona l'hosting Web su cui è attivo il cloudDB.
+>
+Nella zona `Configuration`, clicca sui `...`{.action} in corrispondenza dell'entrata della `Database Privato` e clicca su `Distacher`{.action}.
+>
 
 Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](https://docs.ovh.com/it/hosting/configurare-ottimizzare-il-tuo-database-server/#ottimizza-i-tuoi-database_1)".
 

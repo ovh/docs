@@ -10,7 +10,7 @@ Order: 04
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 03/02/2022**
+**Última actualización: 09/12/2022**
 
 ## Objetivo
 
@@ -161,6 +161,15 @@ El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [á
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
 En ese caso, puede aumentar la [cantidad de memoria RAM](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#cambiar-la-oferta-del-servidor-de-bases-de-datos_1) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
+
+> [!warning]
+>
+> Para aumentar la RAM, el CloudDB no debe activarse a través de un hosting Performance. Si quiere aumentar la cantidad de memoria RAM de una base de datos incluida en los [planes Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/){.external}, deberá desvincularla primero.
+> 
+Para desvincular la base de datos, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action} en la barra de navegación en la parte superior. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web en el que esté activado el CloudDB.
+>
+En el área de `Configuración`, haga clic en los `...`{.action} a la derecha de la entrada de la `Base de datos privada` y haga clic en el botón `Desvincular`{.action}.
+>
 
 También puede optimizar su base de datos siguiendo las instrucciones de nuestra guía "[Configurar su servidor de bases de datos](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#gestionar-las-bases-de-datos_1)".
 
