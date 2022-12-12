@@ -69,7 +69,7 @@ Cliquez sur `Create`{.action} pour récupérer vos identifiants pour votre scrip
 - Application Secret (authentifie votre application)
 - Consumer Key (autorise l'application à accéder aux méthodes choisies)
 
-![récupération des tokens](images/sms-tokens-01.png){.thumbnail}
+![récupération des tokens](images/sms-tokens-02.png){.thumbnail}
 
 L'environnement est prêt, les identifiants sont créés, vous êtes prêt pour coder votre premier appel à l'API.
 
