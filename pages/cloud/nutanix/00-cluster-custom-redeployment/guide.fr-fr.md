@@ -201,6 +201,6 @@ Cliquez sur `Execute`{.action} pour lancer le redéploiement du cluster.
 
 [Utilisation de l'API OVHcloud](https://docs.ovh.com/fr/api/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-
 [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
