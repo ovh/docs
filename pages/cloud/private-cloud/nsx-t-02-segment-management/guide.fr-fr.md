@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Dernière mise à jour le 07/12/2022**
+**Dernière mise à jour le 12/12/2022**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -33,8 +33,8 @@ order: 02
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précemment logical switch) il peut être de deux types :
 
-- Gérés à l'aide de VLAN (VLAN-backed segments). la communication entre les hotes et les VM doit se faire au travers d'un switch de niveau 2.
-- Géré à l'aide du surcouche logicielle sans le besoin de VLANs (Overlay-backed segments). la communication se fait au travers de tunnel sans besoin matériel spécifique.
+- **VLAN-backed segments** : la communication entre les hotes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
+- **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle entre les hotes et les VM.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
@@ -44,7 +44,7 @@ Les segments peuvent être reliés à **ovh-T1-gw** dans ce cas il faut créer u
 
 ### Création d'un segment dans l'interface NSX-T.
 
-Nous allons créer un segment rélié à **Tier-1 Gateway** avec un sous réseau en 192.168.1.0/24 et une passerelle en 192.168.1.254 au travers d'un *Overlay-backed segment*.
+Nous allons créer un segment relié à **Tier-1 Gateway** avec un sous réseau en 192.168.1.0/24 et une passerelle en 192.168.1.254 au travers d'un *Overlay-backed segment*.
 
 A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action}.
 
@@ -63,7 +63,7 @@ Choisissez ces informations :
 * **Name** : Nom de votre segment.
 * **Connected Gateway** : gateway prédefinie ovh-T1-gw | Tier1.
 * **Transport Zone** : zone prédéfinie ovh-tz-overlay.
-* **Subnet** : Adresse la passerelle sur segment dans son sous réseau comme par exemple 192.168.1.254/24.
+* **Subnet** : Adresse la passerelle sur segment avec l'étendue comme par exemple 192.168.1.254/24.
 
 Ensuite cliquez à droite sur `SAVE`{.action}.
 
@@ -107,22 +107,22 @@ Allez dans l'onglet `Networking`{.action} choisissez `Network Topology`{.action}
 
 ![04 display network topology with one segment and one vm 01](images/04-display-network-topology-with-onesegment-and-one-vm01.png)
 
-La machine virtuelle associé au réseau apparait dans la topologie du réseau.
+La machine virtuelle associée au réseau apparait dans la topologie du réseau.
 
-Aidez-vous de la première partie du guide pour créer un deuxième segment nommé ov2-segment dans un sous-réseau **192.168.2.0/24** avec une passerelle en **192.168.2.254** afin d'avoir deux segments.
+Aidez-vous de la première partie du guide pour créer un deuxième segment nommé ov2-segment avec ces paramètres **192.168.2.254/24** afin d'avoir deux segments :
 
 * **ov1-segment** sur le sous-réseau **192.168.1.0/24**
 * **ov2-segment** dans le sous réseau **192.168.2.0/24**
 
 ![05 display four VM on two segment01](images/05-display-four-vm-on-two-segment01.png)
 
-Ensuite à partir de la console vCenter, mettez deux machines virtuelles sur le premier segment et deux autres sur le deuxième segment.
+Ensuite à partir de la console **vCenter**, mettez deux machines virtuelles sur le premier segment et deux autres sur le deuxième segment.
 
 Revenez sur l'interface NSX-T dans `Network Topology`{.action}. pour faire apparaitre la nouvelle configuration réseau.
 
 ![05 display four VM on two segment02](images/05-display-four-vm-on-two-segment02.png)
 
-Les deux segments sont reliés à la passerelle **ovh-T1-gw**, un routage entre les deux sous-réseau est activé sans blocage.
+Les deux segments sont reliés à la passerelle **ovh-T1-gw**, un routage entre les deux sous-réseau est activé sans aucunes restrictions réseaux par défaut.
 
 ## Aller plus loin
 
