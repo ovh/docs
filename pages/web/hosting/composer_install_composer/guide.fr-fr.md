@@ -6,7 +6,7 @@ section: PHP
 order: 02
 ---
 
-**Dernière mise à jour le 30/11/2020**
+**Dernière mise à jour le 09/12/2022**
 
 ## Objectif
 
@@ -28,6 +28,8 @@ order: 02
 
 
 ## En pratique
+
+Connectez-vous en SSH à votre hébergement mutualisé à l'aide de notre guide sur [l'utilisation du SSH avec votre hébergement web mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
 Vérifiez que vous utilisez bien une version de PHP compatible en ligne de commande :
 

@@ -10,7 +10,7 @@ order: 06
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 20/06/2022***
+**Última atualização: 09/12/2022***
 
 ## Objetivo
 
@@ -96,6 +96,11 @@ Depois de selecionar a data, clique no botão `Seguinte`{.action}.
 Certifique-se de que não perdeu nenhum ficheiro no processo de restauração (por exemplo, qualquer ficheiro que guardou no seu espaço de armazenamento após a data de restauração selecionada). Tal como indicado, a restauração vai apagar todos os dados atuais para os substituir pelos dados da cópia de segurança.
 
 De seguida, clique no botão `Validar`{.action}.
+
+> [!primary]
+>
+> O restauro automático pode demorar alguns minutos a algumas horas. Se a duração da ação for **mais de 24 horas**, contacte [o suporte da OVHcloud](https://www.ovhcloud.com/pt/support-levels/).
+>
 
 ### Restaurar um ficheiro a partir de um programa ou uma interface <a name="viainterface"></a>
 

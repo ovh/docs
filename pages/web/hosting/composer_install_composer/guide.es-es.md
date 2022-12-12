@@ -10,7 +10,7 @@ order: 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 30/11/2020**
+**Última actualización: 09/12/2022**
 
 ## Objetivo
 
@@ -32,6 +32,8 @@ order: 02
 
 
 ## Procedimiento
+
+Conéctese a su alojamiento compartido por SSH con ayuda de nuestra guía sobre [el uso del SSH con su alojamiento web de OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/).
 
 Compruebe que utiliza una versión de PHP compatible en línea de comandos:
 

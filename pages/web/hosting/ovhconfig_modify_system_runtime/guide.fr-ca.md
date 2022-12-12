@@ -6,7 +6,7 @@ section: "Configuration de l'hébergement"
 order: 03
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 09/12/2022**
 
 ## Objectif
 
@@ -34,7 +34,7 @@ Lorsque vous changez la configuration de votre hébergement, vous modifiez celle
 
 #### Étape 1 : accéder à la gestion de la configuration de l'hébergement
 
-Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. Cliquez ensuite sur le bouton représentant trois points, puis sur `Modifier la configuration`{.action}.
+Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement web concerné. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}. À droite de `Version PHP Globale`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier la configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -42,8 +42,8 @@ Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHclo
 >
 > Si le bouton `Modifier la configuration`{.action} est grisé, il se peut qu'une vérification de la **version PHP globale** soit en cours. Si tel est le cas, un symbole rond de couleur bleue s'affichera à côté de la version, indiquant qu'une vérification est cours. Patientez alors quelques minutes pour que le bouton `Modifier la configuration`{.action} redevienne accessible.
 >
-
-
+> Si l'option `Version PHP Globale`{.action} n'apparaît pas dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), vérifiez qu'un fichier « **.ovhconfig** » existe bien à la racine FTP de votre hébergement mutualisé OVHcloud, en vous aidant de notre guide sur la [configuration du fichier « .ovhconfig »](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/).
+>
 
 #### Étape 2 : modifier la configuration de l'hébergement web
 
@@ -139,5 +139,9 @@ Pour modifier le mode utilisé par votre hébergement web, il existe deux possib
 - **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](../configurer-fichier-ovhconfig/){.external}.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

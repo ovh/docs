@@ -6,7 +6,7 @@ section: Configuração do alojamento
 order: 02
 ---
 
-**Última atualização: 21/01/2019**
+**Última atualização: 09/12/2022**
 
 ## Sumário
 
@@ -34,12 +34,14 @@ Ao alterar a configuração do seu alojamento, estará a alterar a configuraçã
 
 #### 1 - Aceder à gestão da configuração do alojamento
 
-Para iniciar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. A seguir, clique no botão dos três pontos correspondente à linha `Versão global de PHP`{.action} e selecione a opção `Alterar configuração`{.action}.
+Para iniciar esta operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. A seguir, clique no botão `...`{.action} à direita de `Versão global de PHP`{.action} e selecione a opção `Alterar configuração`{.action}.
 
 ![Configuração do alojamento](images/change-hosting-configuration-step1.png){.thumbnail}
 
 > [!primary]
 > Se o botão `Alterar configuração`{.action} estiver cinzento, é possível que esteja a decorrer uma verificação da **versão global de PHP**. Se for o caso, aparecerá um símbolo redondo azul junto da versão, indicando que a verificação está em curso. Aguarde alguns minutos para que o botão `Alterar configuração`{.action} volte a ficar acessível.
+>
+> Se a opção `Versão PHP Globale`{.action} não aparecer no seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), verifique que existe um ficheiro "**.ovhconfig**" na raiz FTP do seu alojamento partilhado OVHcloud através do nosso guia sobre a [configuração do ficheiro ".ovhconfig"](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/).
 >
 
 #### 2 - Alterar a configuração do alojamento web
