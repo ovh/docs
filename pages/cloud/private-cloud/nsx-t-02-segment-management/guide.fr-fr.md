@@ -26,7 +26,6 @@ order: 02
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Être connecté à votre interface vCenter.
 - Avoir **NSX-T** déployé.
 
 ## Présentation
@@ -34,17 +33,17 @@ order: 02
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
 - **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
-- **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établi des tunnel entre les hôtes et les VM.
+- **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les VM.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
-Les segments peuvent être reliés à **ovh-T1-gw** dans ce cas il faut créer un réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit avec l'extérieur du cluster.
+Les segments peuvent être connectés à **ovh-T1-gw** dans ce cas il faut créer un réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit à l'extérieur du cluster.
 
 ## En pratiques
 
-### Création d'un segment dans l'interface NSX-T.
+### Création d'un segment dans l'interface NSX-T
 
-Nous allons créer un segment *Overlay-backed segment* relié à **ovh-T1-gw** dans un sous réseau en 192.168.1.0/24. La passerelle aura l'adresse 192.168.1.254.
+Nous allons créer un segment *Overlay-backed segment* relié à **ovh-T1-gw** dans un sous réseau en 192.168.1.0/24 avec comme passerelle 192.168.1.254.
 
 A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action}.
 
@@ -63,7 +62,7 @@ Choisissez ces informations :
 * **Name** : Nom de votre segment.
 * **Connected Gateway** : gateway prédefinie ovh-T1-gw | Tier1.
 * **Transport Zone** : zone prédéfinie ovh-tz-overlay.
-* **Subnet** : Adresse la passerelle sur segment avec l'étendue comme 192.168.1.254/24.
+* **Subnet** : Adresse de la passerelle du segment dans ce format 192.168.1.254/24.
 
 Ensuite cliquez à droite sur `SAVE`{.action}.
 
@@ -122,6 +121,8 @@ Revenez sur l'interface NSX-T dans `Network Topology`{.action} pour faire appara
 Les deux segments sont reliés à la passerelle **ovh-T1-gw**, le routage entre les deux sous-réseaux est activé sans aucunes restrictions réseaux par défaut.
 
 ## Aller plus loin
+
+[Premiers pars avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
