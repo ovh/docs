@@ -37,7 +37,7 @@ Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé pr
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
-Les segments peuvent être connectés à **ovh-T1-gw** dans ce cas il faut créer un réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit à l'extérieur du cluster.
+Les segments peuvent être connectés à **ovh-T1-gw** dans ce cas il faut créer un réseau avec une passerelle afin de permettre un trafic sortant au-delà de ce segment, soit avec un autre segment soit à l'extérieur du cluster.
 
 ## En pratiques
 

@@ -36,9 +36,9 @@ In an NSX-T solution a segment is a virtual level 2 domain (previously named log
 - **VLAN-backed segments**: communication between hosts and VMs must be done through VLANs and a level 2 switch.
 - **Overlay-backed segments**: the connection is made using a software layer that establishes tunnels between the hosts and the VMs.
 
-Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
+The segments are linked to transport zones that are predefined by OVHcloud.
 
-Les segments peuvent être connectés à **ovh-T1-gw** dans ce cas il faut créer un réseau avec une passerelle afin de permettre un trafic sortant au dela de ce segment, soit avec un autre segment soit à l'extérieur du cluster.
+The segments can be connected to **ovh-T1-gw** in this case you need to create a network with a gateway to allow outgoing traffic beyond this segment, either with another segment or outside the cluster.
 
 ## Instructions
 
