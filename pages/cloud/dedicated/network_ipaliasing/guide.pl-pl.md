@@ -166,7 +166,14 @@ netmask 255.255.255.255
 ```
 Lub tak:
 
-```
+```bash
+auto eth0
+iface eth0 inet static
+address SERVER_IP
+netmask 255.255.255.0
+broadcast xxx.xxx.xxx.255
+gateway xxx.xxx.xxx.254
+
 # IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
@@ -185,7 +192,7 @@ Pozostaje tylko zrestartować interfejs:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+, Fedora 26+ i Arch Linux
+### Debian 9+, Ubuntu 17+ i Arch Linux
 
 W tych dystrybucjach przypisywanie interfejsom nazw eth0, eth1 itd. zostało zlikwidowane, dlatego od tej pory będziemy używać w sposób bardziej ogólny `systemd-network`.
 
@@ -242,10 +249,10 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 >
 > Możesz również sprawdzić podłączony interfejs za pomocą polecenia:
 >
-> ```bash
-> nmcli connection show
-> ```
+> `nmcli connection show`
 >
+
+
 Możesz teraz dodać Additional IP do pliku konfiguracyjnego w następujący sposób:
 
 ```sh

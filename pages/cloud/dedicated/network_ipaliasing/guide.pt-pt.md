@@ -167,6 +167,13 @@ netmask 255.255.255.255
 
 Ou assim:
 
+auto eth0
+iface eth0 inet static
+address SERVER_IP
+netmask 255.255.255.0
+broadcast xxx.xxx.xxx.255
+gateway xxx.xxx.xxx.254
+
 # IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
@@ -243,9 +250,7 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 >
 > Também pode verificar a interface ligada com o seguinte comando:
 >
-> ```bash
-> nmcli connection show
-> ```
+> `nmcli connection show`
 >
 
 O Additional IP deve ser adicionado ao ficheiro da seguinte forma:

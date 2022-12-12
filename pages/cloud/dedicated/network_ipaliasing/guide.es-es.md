@@ -131,7 +131,7 @@ editor /etc/network/interfaces
 
 A continuación, añada una interfaz secundaria.
 
-```
+```bash
 auto eth0:0
 iface eth0:0 inet static
 address ADDITIONAL_IP
@@ -140,7 +140,7 @@ netmask 255.255.255.255
 
 Para asegurarse de que la interfaz secundaria se active junto con la interfaz **eth0**, añada las siguientes líneas a la configuración de eth0:
 
-```
+```bash
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
 pre-down /sbin/ifconfig eth0:0 down
 ```
@@ -169,6 +169,13 @@ netmask 255.255.255.255
 O como esto:
 
 ```bash
+auto eth0
+iface eth0 inet static
+address SERVER_IP
+netmask 255.255.255.0
+broadcast xxx.xxx.xxx.255
+gateway xxx.xxx.xxx.254
+
 # IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down

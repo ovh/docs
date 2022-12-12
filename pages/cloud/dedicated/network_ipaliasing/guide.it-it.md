@@ -167,6 +167,14 @@ netmask 255.255.255.255
 
 O così:
 
+auto eth0
+iface eth0 inet static
+address SERVER_IP
+netmask 255.255.255.0
+broadcast xxx.xxx.xxx.255
+gateway xxx.xxx.xxx.254
+
+
 # IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
@@ -185,7 +193,7 @@ Per riavviare l’interfaccia esegui il comando:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+, Fedora 26+ e Arch Linux
+### Debian 9+, Ubuntu 17+ e Arch Linux
 
 Queste distribuzioni non utilizzano più la nomenclatura eth0, eth1... per le interfacce. Utilizzeremo quindi, in modo più generico, il servizio `systemd-network`.
 
@@ -243,10 +251,9 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 >
 > Verifica anche l'interfaccia connessa con questo comando:
 >
-> ```bash
-> nmcli connection show
-> ```
+> `nmcli connection show`
 >
+
 Aggiungi il tuo Additional IP al file di configurazione come segue:
 
 ```sh
