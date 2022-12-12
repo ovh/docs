@@ -9,7 +9,7 @@ order: 02
 **Dernière mise à jour le 12/12/2022**
 
 > [!warning]
-> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, il seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
+> Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
 >
 
 ## Objectif
@@ -63,7 +63,7 @@ Choisissez ces informations :
 * **Name** : Nom de votre segment.
 * **Connected Gateway** : gateway prédefinie ovh-T1-gw | Tier1.
 * **Transport Zone** : zone prédéfinie ovh-tz-overlay.
-* **Subnet** : Adresse la passerelle sur segment avec l'étendue comme par exemple 192.168.1.254/24.
+* **Subnet** : Adresse la passerelle sur segment avec l'étendue comme 192.168.1.254/24.
 
 Ensuite cliquez à droite sur `SAVE`{.action}.
 
@@ -89,7 +89,7 @@ Faites un clic droit sur la `machine virtuelle`{.action} et cliquez sur `Modifie
 
 ![03 Connect Network Card to Segment 01](images/03-connect-network-card-vm-to-segment01.png)
 
-Allez dans la barre de défilement à droite de votre adaptater réseau et choisissez `Parcourir`{.action}.
+Allez dans la barre de défilement à droite de votre adaptateur réseau et choisissez `Parcourir`{.action}.
 
 ![03 Connect Network Card to Segment 02](images/03-connect-network-card-vm-to-segment02.png)
 
@@ -101,7 +101,7 @@ Cliquez sur `OK`{.action}.
 
 ![03 Connect Network Card to Segment 04](images/03-connect-network-card-vm-to-segment04.png)
 
-Maintenant que votre machine virtuelle est connecté au segment revenez sur l'interface NSX-T.
+Maintenant que votre machine virtuelle est connectée au segment revenez sur l'interface NSX-T.
 
 Allez dans l'onglet `Networking`{.action} choisissez `Network Topology`{.action}.
 
@@ -122,7 +122,7 @@ Revenez sur l'interface NSX-T dans `Network Topology`{.action}. pour faire appar
 
 ![05 display four VM on two segment02](images/05-display-four-vm-on-two-segment02.png)
 
-Les deux segments sont reliés à la passerelle **ovh-T1-gw**, un routage entre les deux sous-réseau est activé sans aucunes restrictions réseaux par défaut.
+Les deux segments sont reliés à la passerelle **ovh-T1-gw**, le routage entre les deux sous-réseaux est activé sans aucunes restrictions réseaux par défaut.
 
 ## Aller plus loin
 
