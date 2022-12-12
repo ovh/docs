@@ -1,59 +1,83 @@
 ---
-title: 'Envoyer des SMS avec l’API OVH en c#'
+title: 'Envoyer des SMS avec l’API OVHcloud en C#'
 slug: envoyer_des_sms_avec_lapi_ovh_en_c
-excerpt: 'Découvrez comment envoyer des SMS avec l’api OVHcloud en c#'
-legacy_guide_number: g1654
+excerpt: 'Découvrez comment envoyer des SMS avec l’api OVHcloud en C#'
 section: 'Envoyer des SMS'
 ---
 
 **Dernière mise à jour le 21/11/2022**
 
+## Objectif
 
-Vous aurez besoin d’un environnement de développement c#, d’un compte OVH avec des crédits SMS et d'un expéditeur de SMS validé.
+Les SMS sont largement utilisés pour diffuser des informations pratiques, suivre l'état d'une commande ou d'un processus transactionnel, être alerté d'un évènement inhabituel ou encore rappeler des rendez-vous. Ce guide détaille la méthode d'envoi d'un premier SMS avec l'API OVHcloud en C#.
 
-## Appels vers l'API
-Il n'existe pas encore de Wrapper c#, nous implémenterons donc l'appel au Webservice directement dans le code. Dans un but de lisibilité et de simplicité, la partie de consommation de l'API n'est pas factorisée ni implémentée complètement (deserialisation json, etc.).
+**Apprenez comment envoyer des SMS avec l'API OVHcloud RESTful en C#.**
 
-Pour l'implémentation de l'appel au Webservice nous vous conseillons de lire le [Premiers Pas avec l'API OVH](http://www.ovh.com/fr/g934.premiers-pas-avec-l-api).
+## Prérequis
+
+- Un environnement de développement C#.
+- un compte OVHcloud avec des crédits SMS.
+- Un expéditeur de SMS validé.
+
+## En pratique
+
+### Appels vers l'API
+
+Nous implémenterons l'appel au Webservice directement dans le code. Dans un but de lisibilité et de simplicité, la partie de consommation de l'API n'est pas factorisée ni implémentée complètement (deserialisation json, etc.).
+
+Pour l'implémentation de l'appel au Webservice, nous vous conseillons de lire notre guide sur les [premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
 
 Dans ce guide nous appellerons deux méthodes :
 
-- Liste des services SMS actifs [https://eu.api.ovh.com/1.0/sms/](https://api.ovh.com/console/#/sms#GET)
-- Envoyer des SMS [https://eu.api.ovh.com/1.0/sms/{ServiceName}/jobs](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
+- Liste des services SMS actifs :
 
+> [!api]
+>
+> @api {GET} /sms
+>
 
+- Envoyer des SMS :
 
+> [!api]
+>
+> @api {POST} /sms/{serviceName}/jobs
+>
 
-## Création des identifiants
-Nous sommes dans le cas où nous avons besoin d’identifiants pour consommer l’API SMS, ces identifiants sont créés une fois pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
-Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/) (cette url vous permet d'avoir automatiquement les bons droits pour ce guide : https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs ).
+### Création des identifiants
 
-![création des tokens](images/img_2466.jpg){.thumbnail}
+Des identifiants API sont nécessaires pour consommer l’API SMS, ils sont créés de manière unitaire pour identifier l’application qui va envoyer des SMS. La durée de vie de ces identifiants est paramétrable.
+
+Créez vos identifiants de Script (all keys at once) sur cette page: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/).
+
+> [!primary]
+>
+> L'URL suivante vous permet d'obtenir automatiquement les bons droits pour ce guide : <https://eu.api.ovh.com/createToken/?GET=/sms/&GET=/sms/*/jobs&POST=/sms/*/jobs>.
+
+![création des tokens](images/sms-tokens-01.png){.thumbnail}
+
 Dans cet exemple simple, nous récupérons les droits pour avoir accès aux informations sur le compte, à la possibilité de voir les envois en attente et à la possibilité d’envoyer des SMS.
 
 - GET /sms/
 - GET/sms/*/jobs
 - POST /sms/*/jobs
 
+L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS, vous pouvez restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVHcloud.
 
-L’étoile (*) active les appels à ces méthodes pour tous vos comptes SMS, vous pouvez restreindre les appels à un seul compte si vous gérez plusieurs comptes SMS sur votre compte OVH.
-
-Vous récupérez vos identifiants pour votre script :
+Cliquez sur `Create`{.action} pour récupérer vos identifiants pour votre script :
 
 - Application Key (identifie votre application)
 - Application Secret (authentifie votre application)
 - Consumer Key (autorise l'application à accéder aux méthodes choisies)
 
+![récupération des tokens](images/sms-tokens-01.png){.thumbnail}
 
-
-![récupération des tokens](images/img_2467.jpg){.thumbnail}
 L'environnement est prêt, les identifiants sont créés, vous êtes prêt pour coder votre premier appel à l'API.
 
+### Connexion basique à l'API : récupération du compte SMS
 
-## Connexion basique à l'API : récupération du compte SMS
 Nous allons maintenant tester la bonne connexion à l’API en affichant simplement le nom du serviceName :
 
-```
+```bash
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -143,25 +167,28 @@ namespace ConsoleApplication1
 }
 ```
 
+Vous devriez récupérer, au lancement de cette application C#, la liste de vos comptes SMS. Nous affichons aussi en premier la signature de la requête calculée.
 
-Vous devriez récupérer au lancement de cette application c# la liste de vos comptes SMS. Nous affichons aussi en premier la signature de la requête calculée.
-
-```
+```bash
 $1$c190e3e8d22399d11dcba599f782f9e11a016727
 ["sms-XX0000-1"]
 ```
 
 
+### Envoi du premier SMS
 
+Pour envoyer des SMS, nous utilisons la méthode POST jobs :
 
-## Envoi du premier SMS
-Pour envoyer des SMS, nous utilisons la méthode POST jobs : [https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST](https://api.ovh.com/console/#/sms/{serviceName}/jobs#POST)
+> [!api]
+>
+> @api {POST} /sms/{serviceName}/jobs
+>
 
-Le paramètre senderForResponse va permettre d’utiliser un numéro court ce qui nous permet d’envoyer directement des SMS sans devoir créer un expéditeur (ex : votre nom).
+Le paramètre senderForResponse va permettre d’utiliser un numéro court, ce qui vous permet d’envoyer directement des SMS sans devoir créer un expéditeur (ex : votre nom).
 Les numéros courts permettent aussi de recevoir des réponses de la part des personnes ayant reçu le SMS, ce qui peut être utile pour une enquête de satisfaction, une application de vote, un jeu...
 
 
-```
+```bash
 private void sendSms()
         {
             String AK = "your_app_key";
@@ -229,16 +256,16 @@ private void sendSms()
 
 Voici le type de réponse attendue :
 
-```
+```bash
 $1$e591c367cebc15b1fe7f9a50d792602824a52e78
 {"totalCreditsRemoved":1,"invalidReceivers":[],"ids":[27814656],"validReceivers":["+33600000000"]}
 ```
 
+On obtient une réponse avec 1 crédit consommé pour un numéro valide. Le message par défaut intègre le message STOP permettant aux destinataires de se désabonner.
+Vous pouvez désactiver le STOP via le paramètre `noStopClause`. A noter qu'avec le STOP vous ne pouvez envoyer de SMS de 20h à 8h du matin.
 
-On obtient une réponse avec 1 crédit consommé pour un numéro valide. Le message par défaut intègre le message STOP permettant aux destinataires de se désabonner, vous pouvez via le paramètre noStopClause désactiver le STOP. A noter qu'avec le STOP vous ne pouvez envoyer de SMS de 20h à 8h du matin.
+## Aller plus loin
 
+La console d'API vous permettra de découvrir d'autres méthodes ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) pour faciliter l'intégration de services tels que : SMS réponses, envoi en masse avec fichier CSV, publipostage, suivi des accusés de réception...
 
-## 
-Ce guide vous a permis d'envoyer votre premier SMS en API RESTful d'OVH. Vous pouvez maintenant poursuivre l'intégration du SMS dans votre application. La console d'API vous permettra de découvrir d'autres méthodes ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) pour faciliter l'intégration de services tels que : SMS réponses, envoi en masse avec fichier CSV, publipostage, suivi des accusés de réception...
-Les SMS sont largement utilisés pour diffuser des informations pratiques, suivre l'état d'une commande ou d'un processus transactionnel, être alerté d'un évènement inhabituel ou encore rappeler des rendez-vous.
-
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
