@@ -297,7 +297,7 @@ systemctl restart NetworkManager
 
 ### Ubuntu 17.10 und spätere Versionen
 
-Jede Additional IP-Adresse benötigt ihre eigene Zeile in der Konfigurationsdatei. Dieser hat den Namen `50-cloud-init.yaml` und befindet sich in `/etc/netplan`.
+Jede Additional IP-Adresse benötigt ihre eigene Zeile in der Konfigurationsdatei. Sie hat den Namen `50-cloud-init.yaml` und befindet sich in `/etc/netplan`.
 
 #### Schritt 1: Interface bestimmen
 
@@ -315,17 +315,17 @@ Verbinden Sie sich via SSH mit Ihrem Server und führen Sie folgenden Befehl aus
 editor /etc/netplan/50-cloud-init.yaml
 ```
 
-Bearbeiten Sie anschließend die Datei mit folgendem Inhalt: « INTERFACE_NAME », « MAC_ADDRESS » und « ADDITIONAL_IP »:
+Bearbeiten Sie anschließend die Datei und geben Sie Ihre Werte folgendermaßen ein für "INTERFACE_NAME", "MAC_ADDRESS" und "ADDITIONAL_IP":
 
 ```sh
 network:
-    version : 2
+    version: 2
     ethernets:
-        INTERFACE_NAME :
+        INTERFACE_NAME:
             dhcp4: true
             match:
-                macaddress : MAC_ADDRESS
-            set-name : INTERFACE_NAME
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
             addresses:
             - ADDITIONAL_IP/32
 ```
