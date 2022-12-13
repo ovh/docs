@@ -1,12 +1,12 @@
 ---
 title: 'Installer et configurer Cecil - Premiers pas'
-slug: installer-cecil
+slug: install-configure-cecil
 excerpt: 'Install and configure Cecil, static web pages generator'
 section: 'Tutoriels'
 order: 
 ---
 
-**Dernière mise à jour le 28/11/2022**
+**Dernière mise à jour le 13/12/2022**
 
 ## Objectif
 
