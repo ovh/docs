@@ -260,6 +260,42 @@ Ya puede añadir su Directorio IP al archivo de configuración, como se muestra 
 editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
+```sh
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+Si quiere configurar dos Additional IP,  el archivo de configuración debería tener el siguiente formato:
+
+```sh
+[connection]
+id=cloud-init eno1
+uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+type=ethernet
+
+[user]
+org.freedesktop.NetworkManager.origin=cloud-init
+
+[ethernet]
+mac-address=MA:CA:DD:RE:SS:XX
+
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+#### 3. Reiniciar la interfaz
+
+Por último, reinicie la interfaz con el siguiente comando:
+
+```sh
+systemctl restart NetworkManager
+```
+
 ### Ubuntu 17.10 y versiones posteriores
 
 Cada dirección IP adicional necesitará su propia línea en el archivo de configuración. El nombre del archivo es `50-cloud-init.yaml` y se encuentra en `/etc/netplan`.
