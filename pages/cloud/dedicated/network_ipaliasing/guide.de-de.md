@@ -276,10 +276,13 @@ Wenn Sie zwei Additional IP-Adressen konfigurieren möchten, sollte die Konfigur
 id=cloud-init eno1
 uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
 type=ethernet
+
 [user]
 org.freedesktop.NetworkManager.origin=cloud-init
+
 [ethernet]
 mac-address=MA:CA:DD:RE:SS:XX
+
 [ipv4]
 method=auto
 may-fail=false

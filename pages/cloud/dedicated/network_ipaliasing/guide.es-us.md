@@ -166,6 +166,8 @@ address ADDITIONAL_IP2
 netmask 255.255.255.255
 ```
 
+O como esto:
+
 ```bash
 auto eth0
 iface eth0 inet static

@@ -234,7 +234,7 @@ Fedora utiliza agora ficheiros chave (*keyfiles*).
 Fedora utilizava anteriormente perfis de rede armazenados pela NetworkManager no formato ifcfg no diretório `/etc/sysconfig/network-scripts/`.<br>
 Uma vez que o ifcfg se encontra agora em imparidade, NetworkManager não cria de forma padrão os novos perfis neste formato. O ficheiro de configuração encontra-se agora no `/etc/NetworkManager/system-connections/`.
 
-#### Fase 1: Fazer cópia do ficheiro de configuração (*source file*)
+#### 1 - Fazer cópia do ficheiro de configuração (*source file*)
 
 Primeiro, faça uma cópia do ficheiro de configuração para poder reverter a situação a qualquer momento:
 
@@ -242,7 +242,7 @@ Primeiro, faça uma cópia do ficheiro de configuração para poder reverter a s
 cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 
-#### Passo 2: editar o ficheiro de configuração
+#### 2 - Editar o ficheiro de configuração
 
 > [!primary]
 >
@@ -273,10 +273,13 @@ Se tem dois endereços Additional IP a configurar, o ficheiro de configuração 
 id=cloud-init eno1
 uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
 type=ethernet
+
 [user]
 org.freedesktop.NetworkManager.origin=cloud-init
+
 [ethernet]
 mac-address=MA:CA:DD:RE:SS:XX
+
 [ipv4]
 method=auto
 may-fail=false
@@ -284,7 +287,7 @@ address1=ADDITIONAL_IP1/32
 address2=ADDITIONAL_IP2/32
 ```
 
-#### Passo 3: Reiniciar a interface
+#### 3 - Reiniciar a interface
 
 Agora, reinicie a sua interface:
 
@@ -294,9 +297,9 @@ systemctl restart NetworkManager
 
 ### Ubuntu 17.10 e versões seguintes
 
-Cada endereço Additional IP necessitará da sua própria linha no ficheiro de configuração. Este tem o nome `50-cloud-init.yaml` e encontra-se em ^/etc/netplan`.
+Cada endereço Additional IP necessitará da sua própria linha no ficheiro de configuração. Este tem o nome `50-cloud-init.yaml` e encontra-se em `/etc/netplan`.
 
-#### 1 - determinar a interface
+#### 1 - Determinar a interface
 
 ```sh
 ifconfig
@@ -304,7 +307,7 @@ ifconfig
 
 Tome nota do nome da interface e do endereço MAC.
 
-#### 2 - criar o ficheiro de configuração
+#### 2 - Criar o ficheiro de configuração
 
 Ligue-se ao seu servidor através de SSH e execute o seguinte comando:
 
@@ -333,7 +336,7 @@ Registe e feche o ficheiro. Para testar a configuração introduza o seguinte co
 # netplan try
 ```
 
-#### 3 - aplicar a alteração
+#### 3 - Aplicar a alteração
 
 De seguida, execute os seguintes comandos para aplicar a configuração:
 
