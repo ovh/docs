@@ -10,7 +10,7 @@ order: 05
 
 ## Objectif
 
-**Découvrez comment reconditionner un Cluster avec des paramètres réseau personnalisés dans l'espace client et dans l'API OVHcloud**.
+**Découvrez comment reconditionner un Cluster avec des paramètres réseau personnalisés dans l'espace client et dans l'API OVHcloud.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -98,7 +98,7 @@ Saisissez les informations concernant chacun de vos nœuds qui sont :
 - les Adresses IP de votre hyperviseur AHV.
 - l'adresse IP de la machine virtuelle CVM.
 
-Ensuite faites défiler la `Fenêtre`{.action}
+Ensuite faites défiler la `Fenêtre`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 04](images/00-cluster-redeployment-through-manager04.png)
 
@@ -113,7 +113,7 @@ Modifier ces valeurs :
 * **Prism Central VIP** : Adresse IP privée de Prism Central.
 * **Prism Element Virtual IP(VIP)** : Adresse IP privée de Prism Element.   
 * **CIDR Gateway** : Adresse IP privée de la passerelle suivie du masque de sous réseau de la forme XX.XX.XX.XX/XX.
-* **AOS Version**: Version choisie lors du redéploiement.
+* **AOS Version**: Version d'AOS choisie lors du redéploiement.
 
 Ensuite cliquez sur `Redéployer`{.action}.
 
