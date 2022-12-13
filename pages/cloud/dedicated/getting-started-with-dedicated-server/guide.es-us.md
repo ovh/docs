@@ -141,7 +141,7 @@ No obstante, puede realizar "hard reboot" en cualquier momento desde el [área d
 
 Como se recuerda en el apartado Objetivo de esta guía, usted es el administrador de su servidor dedicado Como tal, usted es responsable de sus datos y de su seguridad. Para más información sobre la seguridad de su servidor, consulte nuestra guía [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/).
 
-### Monitorización OVHcloud
+### Monitorización OVHcloud <a name="monitoring-server"></a>
 
 Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). La opción se encuentra en la sección `Estado de los servicios`.
 

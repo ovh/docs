@@ -141,7 +141,7 @@ ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio
 
 Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida Mettere in sicurezza [un server dedicato](../mettere-in-sicurezza-un-server-dedicato/).
 
-### Monitoraggio OVHcloud
+### Monitoraggio OVHcloud <a name="monitoring-server"></a>
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
 

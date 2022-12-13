@@ -141,7 +141,7 @@ No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cl
 
 Como explicado acima, o cliente é o administrador do seu servidor dedicado. Enquanto tal, é responsável pelos seus dados e pela sua segurança. Para saber mais sobre a segurança do seu servidor, consulte o nosso guia [Proteger um servidor dedicado](../proteger-um-servidor-dedicado/).
 
-### Monitorização OVHcloud
+### Monitorização OVHcloud <a name="monitoring-server"></a>
 
 Pode ativar ou desativar o monitoring de um servidor dedicado a partir do separador `Informações gerais`{.action} da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A opção situa - se na secção `Estado dos serviços`.
 
