@@ -118,9 +118,9 @@ Dans le cadre d'un changement de l'offre [Start10M](https://docs.ovh.com/fr/host
 
 Après avoir pris connaissance de cette information, vous pouvez réaliser votre [changement d'offre](#modify)
 
-#### **Booster temporairement votre hébergement** <a name="boost"></a>
+#### **Booster temporairement votre hébergement Performance** <a name="boost"></a>
 
-Avec l'[option Boost](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez augmenter temporairement les ressources CPU et RAM de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
+Avec l'[option Boost](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez augmenter temporairement les ressources CPU et RAM de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également [basculer vers l'offre Performance de niveau supérieur](#modify) afin de disposer de ces ressources de manière permanente.
 
 > [!warning]
 >
@@ -140,23 +140,21 @@ Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les in
 >> Le tableau d'utilisation de l'offre boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
 >> ![boost](images/disable_boost.png){.thumbnail}<br>
 
-![change_plan](images/change_boost.png){.thumbnail}
-
 #### **La facturation en cas de changement d'offre** <a name="billing"></a>
 
-Lorsque vous modifiez votre offre intiale en cours d'abonnement, un calcul au *prorata temporis* est alors appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
+Lorsque vous modifiez votre offre intiale vers une offre supérieure, un calcul au *prorata temporis* est alors appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
 Ce calcul correspond à la différence de tarif entre votre offre initiale et votre nouvelle offre.
 
 > **Exemple :**<br>
 >
 > Vous avez souscrit à un abonnement  [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) au 1er janvier 2021.
 >
-> Le 31 octobre 2021, vous passez de cette offre actuelle à un abonnement d'un an sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
+> Le 31 octobre 2021, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
 >
-> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2021 au 1er janvier 2022) est automatiquement soustrait du coût du nouvel abonnement **Pro**,  jusqu'au 1er janvier 2022.
+> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2021 au 1er janvier 2022) est automatiquement soustrait du coût du nouvel abonnement **Pro**, jusqu'au 1er janvier 2022. Vous ne paierez que la différence.
 > A partir du 1er janvier 2022, l'abonnement Pro vous est ensuite facturé à son tarif en vigueur.
 
-Si ces conditions vous conviennent, vous pouvez réaliser votre [changement d'offre](#modify)
+Après avoir pris connaisance de ces infroamtions, vous pouvez réaliser votre [changement d'offre](#modify)
 
 ## Aller plus loin <a name="gofurther"></a>
 
