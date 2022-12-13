@@ -1075,6 +1075,7 @@
             + [Gestion des sandrac](account/api/sandrac)
             + [Tester la plublication d'un guide sur Github](account/api/BrenKt)
             + [Tester la plublicazione d'un guide sur Github](account/api/brenkt-bis)
+            + [How to manage cold](account/api/brenkt1312)
         + [APIv6](account-and-service-management-api-apiv)
             + [Manage services](account/api/services)
             + [Manage payment and billing of OVHcloud services](account/api/enterprise-payment)
