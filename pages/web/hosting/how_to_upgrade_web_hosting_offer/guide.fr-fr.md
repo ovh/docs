@@ -144,11 +144,17 @@ Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les in
 
 #### **La facturation en cas de changement d'offre** <a name="billing"></a>
 
-Lorsque vous modifiez votre formule en cours d'abonnement, un *prorata temporis*  s'applique sur votre nouvelle offre. C'est à dire, d'un montant correspondant à la différence de tarifs entre votre offre actuelle et votre nouvelle offre et cela uniquement sur la période restante jusqu'à votre prochaine date de renouvellement.
+Lorsque vous modifiez votre offre intiale en cours d'abonnement, un calcul au *prorata temporis* est alors appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
+Ce calcul correspond à la différence de tarif entre votre offre initiale et votre nouvelle offre.
 
 > **Exemple :**<br>
-> Vous passez d'une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à un abonnement d'un an sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), alors que l'abonnement Perso en cours n'est pas terminé.<br>
-> Par conséquent, le montant de la durée restante sur l'abonnement **Perso** sera automatiquement soustrait au coût du nouvel abonnement **Pro** jusqu'à la date de renouvellement initiale.<br>
+>
+> Vous avez souscrit à un abonnement  [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) au 1er janvier 2021.
+>
+> Le 31 octobre 2021, vous passez de cette offre actuelle à un abonnement d'un an sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
+>
+> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2021 au 1er janvier 2022) est automatiquement soustrait du coût du nouvel abonnement **Pro**,  jusqu'au 1er janvier 2022.
+> A partir du 1er janvier 2022, l'abonnement Pro vous est ensuite facturé à son tarif en vigueur.
 
 Si ces conditions vous conviennent, vous pouvez réaliser votre [changement d'offre](#modify)
 
