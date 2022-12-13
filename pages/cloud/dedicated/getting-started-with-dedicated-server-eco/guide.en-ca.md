@@ -134,13 +134,21 @@ However, you can carry out a "hard reboot" at any time in your [OVHcloud Control
 
 As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](../securing-a-dedicated-server/).
 
-### OVHcloud Monitoring 
+### OVHcloud Monitoring
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) (section **Service status**).
 
-![Monitoring](images/monitoring-your-server-alt.png){.thumbnail}
+![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
-If **Monitoring** is set to `Enabled`, you will notified via email every time the server is behaving in an unexpected way. You can disable these messages via the `...`{.action} button.
+Click on the button `Configure`{.action}. In the popup window, you have three options for the monitoring behaviour:
+
+- **Disabled**: This option stops alert messages and interventions by OVHcloud. Choose this if you are executing pertinent administrative actions on the server which prevent an ICMP response.
+- **Enabled with proactive intervention**: If the server stops responding, an alert email is sent to you and the server will be checked by a technician.
+- **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, you will need to create a support request.
+
+![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Click on `Confirm`{.action} to update your monitoring configuration.
 
 You can find more information about OVHcloud Monitoring in [this guide](../monitoring-ip-ovh/).
 
