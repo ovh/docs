@@ -87,7 +87,7 @@ In the OVHcloud Control Panel, click on the `Hosted Private Cloud`{.action} tab,
 
 ![00 Redeploy cluster from OVHcloud control panel 01](images/00-cluster-redeployment-through-manager01.png)
 
-If you have subscribed to the Nutanix BYOL offer, a reminder will tell you not to forget to uninstall your licences. You can use this guide to manage your licences: [Managing licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/de/nutanix/activate-license-on-nutanix-byol/). When your licences are uninstalled, click `Continue`{.action}.
+If you have subscribed to the Nutanix BYOL offer, a reminder will tell you not to forget to uninstall your licences. You can use this guide to manage your licences: [Managing licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/de/nutanix/activate-licence-on-nutanix-byol/). When your licences are uninstalled, click `Continue`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 02](images/00-cluster-redeployment-through-manager02.png)
 
