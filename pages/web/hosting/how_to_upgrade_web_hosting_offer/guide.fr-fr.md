@@ -124,7 +124,7 @@ Avec l'[option Boost](https://www.ovhcloud.com/fr/web-hosting/options/boost/), d
 
 > [!warning]
 >
-> Lorsque vous décidez d'activer l'option boost, celle-ci reste active et facturé **tant que vous ne l'avez pas désactivé**.
+> Lorsque vous décidez d'activer l'option boost, celle-ci reste active et facturée **tant que vous ne l'avez pas désactivé**.
 
 Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** l'option boost sur votre hébergement.
 
@@ -142,7 +142,7 @@ Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les in
 
 #### **La facturation en cas de changement d'offre** <a name="billing"></a>
 
-Lorsque vous modifiez votre offre intiale vers une offre supérieure, un calcul au *prorata temporis* est alors appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
+Lorsque vous modifiez votre offre initiale vers une offre supérieure, un calcul au *prorata temporis* est alors appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
 Ce calcul correspond à la différence de tarif entre votre offre initiale et votre nouvelle offre.
 
 > **Exemple :**<br>
@@ -152,9 +152,9 @@ Ce calcul correspond à la différence de tarif entre votre offre initiale et vo
 > Le 31 octobre 2021, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
 >
 > Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2021 au 1er janvier 2022) est automatiquement soustrait du coût du nouvel abonnement **Pro**, jusqu'au 1er janvier 2022. Vous ne paierez que la différence.
-> A partir du 1er janvier 2022, l'abonnement Pro vous est ensuite facturé à son tarif en vigueur.
+> À partir du 1er janvier 2022, l'abonnement Pro vous est ensuite facturé à son tarif en vigueur.
 
-Après avoir pris connaisance de ces infroamtions, vous pouvez réaliser votre [changement d'offre](#modify)
+Après avoir pris connaissance de ces informations, vous pouvez réaliser votre [changement d'offre](#modify)
 
 ## Aller plus loin <a name="gofurther"></a>
 
