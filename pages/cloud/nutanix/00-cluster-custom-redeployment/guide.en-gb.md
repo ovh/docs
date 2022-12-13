@@ -28,8 +28,6 @@ order: 05
 > If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix cluster on OVHcloud BYOL Offer](https://docs.ovh.com/gb/en/nutanix/activate-licence-on-nutanix-byol/)
 >
 
-
-
 ## Introduction to using the private network for a Nutanix Cluster at OVHcloud
 
 Before redeploying a Nutanix Cluster, you must define a private network with its subnet mask, as follows: `XX.XX.XX.XX/XX`.<br>
