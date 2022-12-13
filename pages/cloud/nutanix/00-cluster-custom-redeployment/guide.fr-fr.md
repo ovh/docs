@@ -1,16 +1,16 @@
 ---
 title: Redéploiement personnalisé de votre Cluster
 slug: cluster-custom-redeployment
-excerpt: "Redéploiement personnalisé d'un Cluster Nutanix via l'API OVHcloud"
+excerpt: "Redéploiement personnalisé d'un Cluster Nutanix au travers des outils OVHcloud"
 section: Premiers pas
 order: 05
 ---
 
-**Dernière mise à jour le 16/11/2022**
+**Dernière mise à jour le 17/12/2022**
 
 ## Objectif
 
-Découvrez comment reconditionner un Cluster avec des paramètres réseau personnalisés via l'API OVHcloud.
+**Découvrez comment reconditionner un Cluster avec des paramètres réseau personnalisés dans l'espace client et dans l'API OVHcloud**.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -27,8 +27,6 @@ Découvrez comment reconditionner un Cluster avec des paramètres réseau person
 > [!warning]
 > Si vous avez souscrit à **l'offre Nutanix on OVHcloud BYOL** et que vous avez activé des licences sur votre cluster, vous devez désinstaller vos licences avant de lancer le redéploiement. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/)
 >
-
-
 
 ## Présentation de l'utilisation du réseau privé pour un Cluster Nutanix chez OVHcloud
 
@@ -75,7 +73,7 @@ Voici deux exemples possibles de configuration d'un cluster Nutanix chez OVHclou
 
 ## En pratique
 
-Nous allons redéployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitre précèdent.
+Nous allons redéployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitre précèdent soit à partir de l'espace client OVHcloud soit à partir de l'API OVHcloud.
 
 > [!warning]
 > L'opération de redéploiement du Cluster est irréversible. Toutes les données du Cluster seront supprimées et un nouveau mot de passe du compte admin sera généré et envoyé par e-mail au titulaire du compte client OVHcloud.
@@ -83,11 +81,11 @@ Nous allons redéployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitr
 
 ### Redéploiement du cluster à partir de l'espace client OVHcloud
 
-A partir de l'espace client OVHcloud cliquez sur l'onglet `Hosted Private Cloud`{.action}, seléctionnez votre cluster en dessous de la catégorie `Nutanix` à gauche et cliquez sur `Redéployer mon cluster`{.action}.
+A partir de l'espace client OVHcloud cliquez sur l'onglet `Hosted Private Cloud`{.action}, sélectionnez votre cluster en dessous de la catégorie `Nutanix` à gauche et cliquez sur `Redéployer mon cluster`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 01](images/00-cluster-redeployment-through-manager01.png)
 
-Si vous avez souscrit l'offre Nutanix BYOL un rappel apparait pour ne pas oublier de désinstaller vos licences. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/). Lorsque vos license seront désinstallées, cliquez sur `Continuer`{.action}.
+Si vous avez souscrit l'offre Nutanix BYOL un rappel vous indique ne pas oublier de désinstaller vos licences. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/). Lorsque vos license seront désinstallées, cliquez sur `Continuer`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 02](images/00-cluster-redeployment-through-manager02.png)
 
@@ -104,14 +102,17 @@ Ensuite faites défiler la `Fenêtre`{.action}
 
 ![00 Redeploy cluster from OVHcloud control panel 04](images/00-cluster-redeployment-through-manager04.png)
 
-Configurer ces paramètres :
+Laisser ce paramètres par défaut : 
 
 * **Replication Factor** : RF2.
 * **Erasure Coding feature** : Erasure Coding désactivé.
 * **Prism entral type** : Alone.
+
+Modifier ces valeurs :
+
 * **Prism Central VIP** : Adresse IP privée de Prism Central.
-* **Prism Element Virtual IP(VIP)** : Adresse IP de Prism Element.
-* **CIDR Gateway** : Adresse IP et la masque de l'OVHgateway (ce sera le sous-réseau du réseau d'administration du cluster)
+* **Prism Element Virtual IP(VIP)** : Adresse IP privée de Prism Element.
+* **CIDR Gateway** : Adresse IP suivi du masque de sous réseau de la forme XX.XX.XX.XX/XX
 * **AOS Version**: Version choisie lors du redéploiement.
 
 Ensuite cliquez sur `Redéployer`{.action}.
