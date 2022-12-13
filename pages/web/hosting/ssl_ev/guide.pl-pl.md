@@ -56,6 +56,14 @@ Aby sprawdzić, czy możesz zamówić certyfikat SSL EV, przejdź do [link](http
 
 ## Sprawdź również <a name="go-further"></a>
 
+[Oficjalna strona Sectigo](https://sectigostore.com){.external}
+
+[Opis weryfikacji przeprowadzonych przez Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
+
+[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+
+[Przejdź na stronę przez HTTPS](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).

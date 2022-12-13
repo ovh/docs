@@ -52,6 +52,14 @@ To check if you are eligible to subscribe to an EV SSL certificate, go to [this 
 
 ## Go further <a name="go-further"></a>
 
+[Sectigo official website](https://sectigostore.com){.external}
+
+[Description of checks made by Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
+
+[Managing an SSL certificate on a Web Hosting plan](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+
+[Activate HTTPS on your website](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
