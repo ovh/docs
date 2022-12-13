@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 10.11.2022**
+**Letzte Aktualisierung am 13.12.2022**
 
 > [!primary]
 >
@@ -195,7 +195,7 @@ Im letzten Schritt starten Sie Ihr Interface neu:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+ und Arch Linux
+### Debian 9+, Ubuntu 17.04+ und Arch Linux
 
 Bei diesen Distributionen wurde die Benennung von Interfaces in eth0, eth1... abgeschafft und es wird nun die generische Bezeichnung `systemd-network` verwendet.
 
@@ -249,7 +249,7 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 
 > [!primary]
 >
-> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel sich von Ihrem unterscheiden kann. Passen Sie die Befehle an den Namen Ihrer Datei an. Um den Namen Ihres Netzwerkinterfaces für die Netzwerkdatei zu erhalten, können Sie folgenden Befehl ausführen: `IP a`.
+> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel sich von Ihrem unterscheiden kann. Passen Sie die Befehle an den Namen Ihrer Datei an. Um den Namen Ihres Netzwerkinterfaces für die Netzwerkdatei zu erhalten, können Sie folgenden Befehl ausführen: `ip a`.
 >
 > Sie können auch das verbundene Interface mit folgendem Befehl überprüfen:
 >
@@ -293,6 +293,55 @@ Als letzten Schritt starten Sie Ihr Interface neu:
 
 ```sh
 systemctl restart NetworkManager
+```
+
+### Ubuntu 17.10 und spätere Versionen
+
+Jede Additional IP-Adresse benötigt ihre eigene Zeile in der Konfigurationsdatei. Dieser hat den Namen `50-cloud-init.yaml` und befindet sich in `/etc/netplan`.
+
+#### Schritt 1: Interface bestimmen
+
+```sh
+ifconfig
+```
+
+Notieren Sie den Namen des Interface und dessen MAC-Adresse.
+
+#### Schritt 2: die Konfigurationsdatei erstellen
+
+Verbinden Sie sich via SSH mit Ihrem Server und führen Sie folgenden Befehl aus:
+
+```sh
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Bearbeiten Sie anschließend die Datei mit folgendem Inhalt: « INTERFACE_NAME », « MAC_ADDRESS » und « ADDITIONAL_IP »:
+
+```sh
+network:
+    version : 2
+    ethernets:
+        INTERFACE_NAME :
+            dhcp4: true
+            match:
+                macaddress : MAC_ADDRESS
+            set-name : INTERFACE_NAME
+            addresses:
+            - ADDITIONAL_IP/32
+```
+
+Speichern und schließen Sie die Datei. Geben Sie zum Testen der Konfiguration folgenden Befehl ein:
+
+```sh
+# netplan try
+```
+
+#### Schritt 3: die Änderung anwenden
+
+Führen Sie anschließend folgende Befehle aus, um die Konfiguration anzuwenden:
+
+```sh
+# netplan apply
 ```
 
 ### CentOS und Fedora (25 und vorherige)
