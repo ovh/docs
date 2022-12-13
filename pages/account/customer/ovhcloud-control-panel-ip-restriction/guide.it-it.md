@@ -16,8 +16,8 @@ order: 03
 
 OVHcloud mette a tua disposizione opzioni per rafforzare la sicurezza del tuo Spazio Cliente OVHcloud e dei tuoi servizi.
 
-In particolare, è possibile limitare l'accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-L'attivazione di questa opzione, associata alla protezione del tuo account con una [doppia autenticazione](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/), permette di proteggere in modo ottimale il tuo Spazio Cliente OVHcloud contro eventuali tentativi di intrusione.
+In particolare, è possibile limitare l'accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+L'attivazione di questa opzione, associata alla protezione del tuo account con una [doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/), permette di proteggere in modo ottimale il tuo Spazio Cliente OVHcloud contro eventuali tentativi di intrusione.
 
 **Questa guida ti mostra come proteggere il tuo account OVHcloud limitando gli indirizzi IP autorizzati ad accedervi**
 
@@ -28,8 +28,8 @@ L'attivazione di questa opzione, associata alla protezione del tuo account con u
 
 ## Prerequisiti
   
-- Avere accesso allo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+- Avere accesso allo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Aver letto le [raccomandazioni sulla gestione della password di accesso al tuo account](https://docs.ovh.com/it/customer/gestire-la-password/)
 
 ## Procedura
 
@@ -59,7 +59,7 @@ Se utilizzi una rete 4G/5G in aggiunta, ricordati di recuperare anche l'indirizz
 
 ### Step 2 - attiva una restrizione di accesso per IP
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Clicca su `Nome e cognome` in alto a destra **e** sulla `iniziali` nella colonna blu che appare sulla destra.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Nome e cognome` in alto a destra **e** sulla `iniziali` nella colonna blu che appare sulla destra.
 
 ![Access from Manager](images/ip1.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Per l'implementazione delle restrizioni IP sono presenti due sezioni:
 - **Regola predefinita**. Questo campo permette di:
     - rifiutare l'accesso a tutti gli indirizzi IP tranne quelli precedentemente dichiarati come **autorizzati** nella seconda sezione *IP configurati*. 
     - autorizzare l'accesso a tutti gli indirizzi IP tranne quelli già dichiarati come **rifiutati** nella seconda sezione *IP configurati*.
-    > Seleziona la casella `Alerte`{.action} per ricevere una notifica via email al tuo indirizzo email di contatto, nel caso in cui sia stato effettuato un tentativo di connessione non autorizzato per accedere al tuo Spazio Cliente.
+    > Seleziona la casella `Alert`{.action} per ricevere una notifica via email al tuo indirizzo email di contatto, nel caso in cui sia stato effettuato un tentativo di connessione non autorizzato per accedere al tuo Spazio Cliente.
 
 - **IP configurati**. Questo campo permette di dichiarare gli indirizzi IP soggetti a restrizione o autorizzazione di accesso. e permette di visualizzare le regole predefinite.
 
@@ -88,7 +88,7 @@ Per l'implementazione delle restrizioni IP sono presenti due sezioni:
 >
 > Nella sezione `Regola predefinita`{.action}, conferma **mai** la regola di default in `Rifiutato`{.action} **senza aver autorizzato***correttamente e preventivamente almeno uno dei tuoi indirizzi IP pubblici nella sezione `IP configurati`. 
 >
-> In caso contrario, bloccherai **assolutamente tutti gli IP pubblici (inclusi i tuoi)** senza alcuna eccezione. Nessuno avrà più accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) e dovrai effettuare una procedura amministrativa per sbloccare la tua situazione.
+> In caso contrario, bloccherai **assolutamente tutti gli IP pubblici (inclusi i tuoi)** senza alcuna eccezione. Nessuno avrà più accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e dovrai effettuare una procedura amministrativa per sbloccare la tua situazione.
 >
 > Prestare la massima attenzione su questo punto.
 >
@@ -154,7 +154,7 @@ Una volta inseriti tutti gli indirizzi IP pubblici nella sezione `IP configurati
 
 ## Per saperne di più
 
-[Configura la doppia autenticazione sul tuo Spazio Cliente OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Configura la doppia autenticazione sul tuo Spazio Cliente OVHcloud](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

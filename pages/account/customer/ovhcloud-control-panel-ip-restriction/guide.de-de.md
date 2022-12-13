@@ -16,8 +16,8 @@ order: 03
 
 OVHcloud stellt Ihnen Optionen zur Verfügung, um die Sicherheit Ihres OVHcloud Kundencenters und Ihrer Dienste zu erhöhen.
 
-Sie können insbesondere den Zugang zu Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) auf bestimmte IP-Adressen beschränken.
-Die Einrichtung dieser Option kombiniert mit der Absicherung Ihres Accounts durch eine [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) ermöglicht die optimale Absicherung Ihres OVHcloud Kundencenters gegen mögliche Einbruchsversuche.
+Sie können insbesondere den Zugang zu Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf bestimmte IP-Adressen beschränken.
+Die Einrichtung dieser Option kombiniert mit der Absicherung Ihres Accounts durch eine [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/) ermöglicht die optimale Absicherung Ihres OVHcloud Kundencenters gegen mögliche Einbruchsversuche.
 
 **Diese Anleitung erklärt, wie Sie Ihren OVHcloud Account absichern, indem Sie die IP-Adressen, auf die zugegriffen werden darf, einschränken**
 
@@ -28,8 +28,8 @@ Die Einrichtung dieser Option kombiniert mit der Absicherung Ihres Accounts durc
 
 ## Voraussetzungen
 
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) eingeloggt.
-- Sie haben die [Empfehlungen zur Verwaltung des Zugangspassworts zu Ihrem Account](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/) zur Kenntnis genommen.
+- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Sie haben die [Empfehlungen zur Verwaltung des Zugangspassworts zu Ihrem Account](https://docs.ovh.com/de/customer/Passwort-verwalten/) zur Kenntnis genommen.
 
 ## In der praktischen Anwendung
 
@@ -59,7 +59,7 @@ Wenn Sie zusätzlich ein 4G/5G-Netzwerk verwenden, vergessen Sie nicht, auch die
 
 ### Schritt 2 - Einschränkung des Zugangs nach IP einrichten
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Klicken Sie auf Ihren `Namen und Vornamen` oben rechts **und dann** auf Ihre `Initialen` in der blauen Spalte auf der rechten Seite.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie auf Ihren `Namen und Vornamen` oben rechts **und dann** auf Ihre `Initialen` in der blauen Spalte auf der rechten Seite.
 
 ![Access from Manager](images/ip1.png){.thumbnail}
 
@@ -88,7 +88,7 @@ Es sind zwei Abschnitte zur Umsetzung der IP-Einschränkungen vorhanden:
 >
 > Im Bereich `Standardregel`{.action} bestätigen Sie **niemals** die Standard-Regel als Status: `Abgelehnt`{.action} abgelehnt ***ohne vorherige korrekte Autorisierung** und mindestens einer Ihrer öffentlichen IP-Adressen im `Konfigurierte IP`. 
 >
-> Andernfalls blockieren Sie **absolut alle öffentlichen IPs (einschließlich Ihrer eigenen)** ohne Ausnahme. Niemand hat mehr Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) und Sie müssen einen Verwaltungsvorgang durchführen, um Ihre Situation zu entsperren.
+> Andernfalls blockieren Sie **absolut alle öffentlichen IPs (einschließlich Ihrer eigenen)** ohne Ausnahme. Niemand hat mehr Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und Sie müssen einen Verwaltungsvorgang durchführen, um Ihre Situation zu entsperren.
 >
 > Seien Sie daher in diesem Punkt sehr wachsam.
 >
@@ -154,7 +154,7 @@ Nachdem alle öffentlichen IP-Adressen in der `konfigurierte IP` angegeben sind,
 
 ## Weiterführende Informationen
 
-[Zwei-Faktor-Authentifizierung in Ihrem OVHcloud Kundencenter einrichten](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Zwei-Faktor-Authentifizierung in Ihrem OVHcloud Kundencenter einrichten](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/)
  
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

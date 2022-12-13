@@ -12,8 +12,8 @@ order: 03
 
 OVHcloud met à votre disposition des options pour renforcer la sécurité de votre espace client OVHcloud et de vos services.
 
-Vous pouvez notamment restreindre à certaines adresses IP l'accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-La mise en place de cette option, couplée à la sécurisation de votre compte par une [double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/), permet de sécuriser de manère optimale votre espace client OVHcloud contre d'éventuelles tentatives d'intrusion.
+Vous pouvez notamment restreindre à certaines adresses IP l'accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+La mise en place de cette option, couplée à la sécurisation de votre compte par une [double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/), permet de sécuriser de manère optimale votre espace client OVHcloud contre d'éventuelles tentatives d'intrusion.
 
 **Découvrez comment sécuriser votre compte OVHcloud en limitant les adresses IP autorisées à y accéder**
 
@@ -24,8 +24,8 @@ La mise en place de cette option, couplée à la sécurisation de votre compte p
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/).
 
 ## En pratique
 
@@ -55,7 +55,7 @@ Si vous utilisez un réseau 4G/5G en complément, n'oubliez pas de récupérer �
 
 ### Etape 2 - mettre en place une restriction d'accès par IP
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur votre `nom et prénom` en haut à droite **puis** sur vos `initiales` dans la colonne bleue qui apparaît sur votre droite.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur votre `nom et prénom` en haut à droite **puis** sur vos `initiales` dans la colonne bleue qui apparaît sur votre droite.
 
 ![Access from Manager](images/ip1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Deux sections sont présentes pour la mise en place des restrictions par IP :
 >
 > Dans la section `Règle par défaut`{.action}, ne validez **jamais** la règle par défaut en statut `Refusé`{.action} **sans avoir autorisé** correctement et au préalable au moins une de vos adresses IP publiques dans la section `IP configurées`. 
 >
-> Dans le cas contraire, vous bloquerez **absolument toutes les IP publiques (y compris les vôtres)** sans aucune exception. Plus personne n'aura accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et vous devrez réaliser une procédure administrative pour débloquer votre situation.
+> Dans le cas contraire, vous bloquerez **absolument toutes les IP publiques (y compris les vôtres)** sans aucune exception. Plus personne n'aura accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et vous devrez réaliser une procédure administrative pour débloquer votre situation.
 >
 > Soyez donc extrêmement vigilant sur ce point.
 >
@@ -150,7 +150,7 @@ Une fois l'ensemble des adresses IP publiques renseignées dans la section `IP c
 
 ## Aller plus loin
 
-[Mettre en place une double authentification sur votre espace client OVHcloud](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Mettre en place une double authentification sur votre espace client OVHcloud](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

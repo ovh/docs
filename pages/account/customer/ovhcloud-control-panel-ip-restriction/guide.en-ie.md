@@ -12,8 +12,8 @@ order: 03
 
 OVHcloud provides you with options to enhance the security of your OVHcloud Control Panel and your services.
 
-You can restrict access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) to certain IP addresses.
-By setting this option and securing your account with [two-factor authentication](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/), you can optimally secure your OVHcloud Control Panel against intrusion attempts.
+You can restrict access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) to certain IP addresses.
+By setting this option and securing your account with [two-factor authentication](https://docs.ovh.com/ie/en/customer/secure-account-with-2FA/), you can optimally secure your OVHcloud Control Panel against intrusion attempts.
 
 **Find out how to secure your OVHcloud account by limiting the IP addresses authorised to access it**
 
@@ -24,8 +24,8 @@ By setting this option and securing your account with [two-factor authentication
 
 ## Requirements
 
-- Access into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Have read the [password management recommendations for accessing your account](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+- Access into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- Have read the [password management recommendations for accessing your account](https://docs.ovh.com/ie/en/customer/manage-password/).
 
 ## Instructions
 
@@ -55,7 +55,7 @@ If you are using a 4G/5G network as an addition, remember to also retrieve the I
 
 ### Step 2 - Set up access restriction by IP
 
-Login to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Click on your `first and last name` in the top right **then** on your `initials` in the blue column that appears on your right.
+Login to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Click on your `first and last name` in the top right **then** on your `initials` in the blue column that appears on your right.
 
 ![Access from Manager](images/ip1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ There are two sections for setting IP restrictions:
 >
 > In the `Default rule`{.action} section, do not validate **ever** the default rule in `Denied`{.action} **status without having properly authorised** and in advance at least one of your public IP addresses in the `Configured IPs` section. 
 >
-> Otherwise, you will block **absolutely all public IPs (including yours)** without any exceptions. No one will have access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) any more, and you will need to carry out an administrative procedure to unblock your situation.
+> Otherwise, you will block **absolutely all public IPs (including yours)** without any exceptions. No one will have access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) any more, and you will need to carry out an administrative procedure to unblock your situation.
 >
 > Be extremely vigilant on this point.
 >
@@ -150,7 +150,7 @@ Once you have entered all of the public IP addresses in the `configured IPs` sec
 
 ## Go further
 
-[Set up two-factor authentication on your OVHcloud Control Panel](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Set up two-factor authentication on your OVHcloud Control Panel](https://docs.ovh.com/ie/en/customer/secure-account-with-2FA/)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
 
