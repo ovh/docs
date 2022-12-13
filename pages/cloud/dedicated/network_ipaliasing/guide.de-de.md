@@ -232,14 +232,14 @@ systemctl restart systemd-networkd
 
 ### Fedora 36 und spätere Versionen
 
-Fedora verwendet ab sofort Schlüsseldateien (*keyfiles*).
-Fedora benutzte zuvor im ifcfg-Format im Verzeichnis `/etc/sysconfig/network-scripts/` gespeicherte Netzwerkprofile.<br>
-Da der ifcfg jetzt abgewertet wird, erstellt NetworkManager standardmäßig keine neuen Profile mehr in diesem Format. Die Konfigurationsdatei befindet sich nun in `/etc/NetworkManager/system-connections/`.
+Fedora verwendet nunmehr Schlüsseldateien (*keyfiles*).
+Fedora speicherte zuvor im Verzeichnis `/etc/sysconfig/network-scripts/` Netzwerkprofile im Format ifcfg.<br>
+Da ifcfg nicht mehr unterstützt wird, erstellt NetworkManager keine neuen Profile mehr in diesem Format. Die Konfigurationsdatei befindet sich nun in `/etc/NetworkManager/system-connections/`.
 
 
 #### Schritt 1: Die Quelldatei sichern
 
-Kopieren Sie zunächst die Quelldatei, um jederzeit zu einem früheren Zustand zurückkehren zu können:
+Kopieren Sie zunächst die Quelldatei, um gegebenenfalls zu einem früheren Zustand zurückkehren zu können:
 
 ```sh
 cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
@@ -249,9 +249,9 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 
 > [!primary]
 >
-> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel sich von Ihrem unterscheiden kann. Bitte passen Sie die Befehle an den Namen Ihrer Datei an. Um den Namen Ihres Netzwerkinterfaces zu erhalten, um die entsprechende Netzwerkdatei bearbeiten zu können, können Sie folgenden Befehl ausführen: IP a`.
+> Beachten Sie, dass der Name der Netzwerkdatei in unserem Beispiel sich von Ihrem unterscheiden kann. Passen Sie die Befehle an den Namen Ihrer Datei an. Um den Namen Ihres Netzwerkinterfaces für die Netzwerkdatei zu erhalten, können Sie folgenden Befehl ausführen: `IP a`.
 >
-> Sie können auch das angeschlossene Interface mit folgendem Befehl überprüfen:
+> Sie können auch das verbundene Interface mit folgendem Befehl überprüfen:
 >
 > `nmcli connection show`
 > 
@@ -272,12 +272,12 @@ address1=ADDITIONAL_IP/32
 Wenn Sie zwei Additional IP-Adressen konfigurieren möchten, sollte die Konfigurationsdatei wie folgt aussehen:
 
 ```sh
-[Verbindung]
+[connection]
 id=cloud-init eno1
-uid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
 type=ethernet
 [user]
-org.freedesktop.networkManager.origin=cloud-init
+org.freedesktop.NetworkManager.origin=cloud-init
 [ethernet]
 mac-address=MA:CA:DD:RE:SS:XX
 [ipv4]
@@ -289,7 +289,7 @@ address2=ADDITIONAL_IP2/32
 
 #### Schritt 3: Interface neu starten
 
-Im letzten Schritt starten Sie Ihr Interface neu:
+Als letzten Schritt starten Sie Ihr Interface neu:
 
 ```sh
 systemctl restart NetworkManager
