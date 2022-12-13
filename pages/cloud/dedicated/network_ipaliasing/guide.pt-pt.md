@@ -9,7 +9,7 @@ section: Redes & IP
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização no dia 10/11/2022**
+**Última atualização no dia 13/12/2022**
 
 > [!primary]
 >
@@ -192,7 +192,7 @@ Agora, execute este comando para reiniciar a interface:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+ e Arch Linux
+### Debian 9+, Ubuntu 17.04+ e Arch Linux
 
 Estes sistemas não usam a terminologia eth0, eth1. Como tal, iremos usar o `systemd-network`.
 
@@ -228,13 +228,13 @@ Agora, execute este comando para reiniciar a interface:
 systemctl restart systemd-networkd
 ```
 
-## Fedora 36 e versões posteriores
+### Fedora 36 e versões posteriores
 
 Fedora utiliza agora ficheiros chave (*keyfiles*).
 Fedora utilizava anteriormente perfis de rede armazenados pela NetworkManager no formato ifcfg no diretório `/etc/sysconfig/network-scripts/`.<br>
 Uma vez que o ifcfg se encontra agora em imparidade, NetworkManager não cria de forma padrão os novos perfis neste formato. O ficheiro de configuração encontra-se agora no `/etc/NetworkManager/system-connections/`.
 
-##### Fase 1: criar um backup
+#### Fase 1: Fazer cópia do ficheiro de configuração (*source file*)
 
 Primeiro, faça uma cópia do ficheiro de configuração para poder reverter a situação a qualquer momento:
 
@@ -242,7 +242,7 @@ Primeiro, faça uma cópia do ficheiro de configuração para poder reverter a s
 cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
 ```
 
-###### Passo 2: editar o ficheiro de configuração
+#### Passo 2: editar o ficheiro de configuração
 
 > [!primary]
 >
@@ -266,7 +266,7 @@ may-fail=false
 address1=ADDITIONAL_IP/32
 ```
 
-Se tem dois endereços Adicionais IP a configurar, o ficheiro de configuração deverá ser o seguinte:
+Se tem dois endereços Additional IP a configurar, o ficheiro de configuração deverá ser o seguinte:
 
 ```sh
 [connection]
@@ -284,12 +284,61 @@ address1=ADDITIONAL_IP1/32
 address2=ADDITIONAL_IP2/32
 ```
 
-##### Passo 3: Reiniciar a interface
+#### Passo 3: Reiniciar a interface
 
 Agora, reinicie a sua interface:
 
 ```sh
 systemctl restart NetworkManager
+```
+
+### Ubuntu 17.10 e versões seguintes
+
+Cada endereço Additional IP necessitará da sua própria linha no ficheiro de configuração. Este tem o nome `50-cloud-init.yaml` e encontra-se em ^/etc/netplan`.
+
+#### 1 - determinar a interface
+
+```sh
+ifconfig
+```
+
+Tome nota do nome da interface e do endereço MAC.
+
+#### 2 - criar o ficheiro de configuração
+
+Ligue-se ao seu servidor através de SSH e execute o seguinte comando:
+
+```sh
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+De seguida, edite o ficheiro com o conteúdo em baixo, substituindo « INTERFACE_NAME », « MAC_ADDRESS » e « ADDITIONAL_IP »:
+
+```sh
+network:
+    version : 2
+    ethernets:
+        INTERFACE_NAME :
+            dhcp4: true
+            match:
+                macaddress : MAC_ADDRESS
+            set-name : INTERFACE_NAME
+            addresses:
+            - ADDITIONAL_IP/32
+```
+
+Registe e feche o ficheiro. Para testar a configuração introduza o seguinte comando:
+
+```sh
+# netplan try
+```
+
+#### 3 - aplicar a alteração
+
+De seguida, execute os seguintes comandos para aplicar a configuração:
+
+```sh
+# netplan apply
 ```
 
 ### CentOS e Fedora (versão 25 e anteriores)

@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja dnia 10-11-2022**
+**Ostatnia aktualizacja dnia 13-12-2022**
 
 > [!primary]
 >
@@ -192,7 +192,7 @@ Pozostaje tylko zrestartować interfejs:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+ i Arch Linux
+### Debian 9+, Ubuntu 17.04+ i Arch Linux
 
 W tych dystrybucjach przypisywanie interfejsom nazw eth0, eth1 itd. zostało zlikwidowane, dlatego od tej pory będziemy używać w sposób bardziej ogólny `systemd-network`.
 
@@ -291,6 +291,56 @@ Pozostaje tylko zrestartować interfejs:
 
 ```sh
 systemctl restart NetworkManager
+```
+
+### Ubuntu 17.10 i kolejne wersje
+
+Każdy dodatkowy adres Additional IP będzie potrzebował własnej linii w pliku konfiguracyjnym. Ma ona nazwę `50-cloud-init.yaml` i znajduje się w `/etc/netplan`.
+
+
+#### Krok 1: określić interfejs
+
+```sh
+ifconfig
+```
+
+Zanotuj nazwę interfejsu i adres MAC.
+
+#### Krok 2: utworzyć plik konfiguracyjny
+
+Zaloguj się do serwera przez SSH i wprowadź następującą komendę:
+
+```sh
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Następnie edytuj plik, używając następującej treści: « INTERFACE_NAME », « MAC_ADDRESS » i « ADDITIONAL_IP »:
+
+```sh
+network:
+    version : 2
+    ethernets:
+        INTERFACE_NAME :
+            dhcp4: true
+            match:
+                macaddress : MAC_ADDRESS
+            set-name : INTERFACE_NAME
+            addresses:
+            - ADDITIONAL_IP/32
+```
+
+Zapisz i zamknij plik. Aby przetestować konfigurację, wprowadź następujące polecenie:
+
+```sh
+# netplan try
+```
+
+#### Krok 3: zastosować zmianę
+
+Następnie wprowadź następujące polecenia, aby zastosować konfigurację:
+
+```sh
+# netplan apply
 ```
 
 ### CentOS i Fedora (25 i wcześniejsze)

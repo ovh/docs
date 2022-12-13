@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 10/11/2022**
+**Última actualización: 13/12/2022**
 
 > [!primary]
 >
@@ -298,7 +298,7 @@ systemctl restart NetworkManager
 
 ### Ubuntu 17.10 y versiones posteriores
 
-Cada dirección IP adicional necesitará su propia línea en el archivo de configuración. El nombre del archivo es `50-cloud-init.yaml` y se encuentra en `/etc/netplan`.
+Cada dirección Additional IP necesitará su propia línea en el archivo de configuración. El nombre del archivo es `50-cloud-init.yaml` y se encuentra en `/etc/netplan`.
 
 #### 1. Determinar la interfaz
  

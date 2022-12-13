@@ -9,7 +9,7 @@ section: Rete e IP
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 10/11/2022**
+**Ultimo aggiornamento: 13/12/2022**
 
 > [!primary]
 >
@@ -193,7 +193,7 @@ Per riavviare l’interfaccia esegui il comando:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+ e Arch Linux
+### Debian 9+, Ubuntu 17.04+ e Arch Linux
 
 Queste distribuzioni non utilizzano più la nomenclatura eth0, eth1... per le interfacce. Utilizzeremo quindi, in modo più generico, il servizio `systemd-network`.
 
@@ -291,6 +291,56 @@ Per riavviare l’interfaccia esegui il comando:
 
 ```sh
 systemctl restart NetworkManager
+```
+
+### Ubuntu 17.10 e versioni successive
+
+Ogni indirizzo Additional IP avrà bisogno della sua linea nel file di configurazione. `50-cloud-init.yaml` ed è situata nella `/etc/netplan`.
+
+
+#### Step 1: determinare l'interfaccia
+
+```sh
+ifconfig
+```
+
+Annota il nome dell'interfaccia e il suo indirizzo MAC.
+
+#### Step 2: crea il file di configurazione
+
+Accedi al tuo server via SSH ed esegui questo comando:
+
+```sh
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Successivamente, modifica il file con il contenuto qui sotto, sostituendo « INTERFACE_NAME », « MAC_ADDRESS » e « ADDITIONAL_IP »:
+
+```sh
+network:
+    version : 2
+    ethernets:
+        INTERFACE_NAME :
+            dhcp4: true
+            match:
+                macaddress : MAC_ADDRESS
+            set-name : INTERFACE_NAME
+            addresses:
+            - ADDITIONAL_IP/32
+```
+
+Salva e chiudi il file. Per testare la configurazione, inserisci questo comando:
+
+```sh
+# netplan try
+```
+
+#### Step 3: applicare la modifica
+
+Per applicare la configurazione, esegui questi comandi:
+
+```sh
+# netplan apply
 ```
 
 ### CentOS e Fedora (25 e precedenti)
