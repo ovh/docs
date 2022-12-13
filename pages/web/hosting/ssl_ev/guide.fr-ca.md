@@ -157,7 +157,7 @@ Une fois les vérifications faites par Sectigo, vous serez contacté par leurs s
 
 Une fois que Sectigo a procédé à toutes les vérifications, leurs services génèrent le certificat SSL EV et nous transmettent les éléments nécessaires à son installation sur votre hébergement.
 
-Il ne vous restera plus qu'à [passer votre site en HTTPS](https://docs.ovh.com/ca/fr/hosting/activate-https-website-ssl/) pour utiliser pleinement votre certificat SSL EV.
+Il ne vous restera plus qu'à [passer votre site en HTTPS](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/) pour utiliser pleinement votre certificat SSL EV.
 
 ## Aller plus loin <a name="go-further"></a>
 
@@ -167,7 +167,7 @@ Il ne vous restera plus qu'à [passer votre site en HTTPS](https://docs.ovh.com/
 
 [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
 
-[Passer votre site en HTTPS](https://docs.ovh.com/ca/fr/hosting/activate-https-website-ssl/)
+[Passer votre site en HTTPS](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

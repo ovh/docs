@@ -161,7 +161,7 @@ Po dokonaniu weryfikacji przez Sectigo skontaktujemy się z Tobą przez ich usł
 
 Po przeprowadzeniu wszystkich weryfikacji przez Sectigo ich usługi generują certyfikat SSL EV i przekazują nam niezbędne informacje do zainstalowania go na Twoim hostingu.
 
-Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadować stronę WWW na HTTPS](https://docs.ovh.com/pl/hosting/activate-https-website-ssl/).
+Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadować stronę WWW na HTTPS](https://docs.ovh.com/pl/hosting/aktywacja-https-ssl-na-stronie-WWW/).
 
 ## Sprawdź również <a name="go-further"></a>
 
@@ -171,7 +171,7 @@ Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadowa�
 
 [Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/)
 
-[Przejdź na stronę przez HTTPS](https://docs.ovh.com/pl/hosting/activate-https-website-ssl/)
+[Przejdź na stronę przez HTTPS](https://docs.ovh.com/pl/hosting/aktywacja-https-ssl-na-stronie-WWW/)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 
