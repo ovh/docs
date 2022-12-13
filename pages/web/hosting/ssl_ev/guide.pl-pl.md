@@ -16,7 +16,7 @@ order: 03
 
 Certyfikaty Secure Socket Layer (SSL) umożliwiają szyfrowanie informacji przesyłanych na Twojej stronie WWW. Dzięki temu możesz uniknąć sytuacji, w której osoba lub złośliwy robot "odsłuchuje" zapytań wysyłanych lub wysyłanych z Twojej strony WWW.
 
-OVHcloud oferuje kilka typów certyfikatów SSL dla naszych ofert [hosting OVHcloud](https://www.ovhcloud.com/fr/web-hosting/). Są one przedstawione w naszym przewodniku "[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)". Certyfikaty SSL są niezbędne dla bezpieczeństwa Twojej strony WWW.
+OVHcloud oferuje kilka typów certyfikatów SSL dla naszych ofert [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/). Są one przedstawione w naszym przewodniku "[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/)". Certyfikaty SSL są niezbędne dla bezpieczeństwa Twojej strony WWW.
 
 Istnieją trzy rodzaje certyfikatów SSL:
 
@@ -43,9 +43,9 @@ W przypadku hostingu współdzielonego OVHcloud instytucja certyfikująca certyf
     
 ## Wymagania początkowe <a name="requirements"></a>
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Zamów lub zamów [hosting OVHcloud](https://www.ovhcloud.com/fr/web-hosting/), dla którego nie został zainstalowany żaden certyfikat SSL.
-- Zamów [domenę](https://www.ovhcloud.com/fr/domains/) i uzyskaj wyłączne prawa do korzystania z tej domeny. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Zamów lub zamów [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/), dla którego nie został zainstalowany żaden certyfikat SSL.
+- Zamów [domenę](https://www.ovhcloud.com/pl/domains/) i uzyskaj wyłączne prawa do korzystania z tej domeny. Nazwa domeny nie może być już powiązana z certyfikatem SSL.
 - Być organizacją (firma, agencja rządowa, ...) zarejestrowaną w oficjalnym rejestrze.
 - Posiadanie upoważnienia organizacji do zamawiania certyfikatu SSL EV
 - Być w stanie dokładnie uzasadnić informacje i dane kontaktowe dotyczące organizacji.
@@ -58,14 +58,14 @@ Aby sprawdzić, czy możesz zamówić certyfikat SSL EV, przejdź do [link](http
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/fr/). Niestety nie będziemy w stanie udzielić wsparcia **na wszystkich etapach weryfikacji bezpośrednio z organem certyfikującym Sectigo**. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) niniejszego przewodnika.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety nie będziemy w stanie udzielić wsparcia **na wszystkich etapach weryfikacji bezpośrednio z organem certyfikującym Sectigo**. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) niniejszego przewodnika.
 >
 
 ### Etap 1: zamów certyfikat SSL EV
 
 #### 1.1 - Dla już istniejącej domeny i hostingu OVHcloud
 
-Zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania certyfikatem SSL na hostingu](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/) i wybierz **Certyfikat SSL EV** po przyjeździe do tunelu zamówienia.
+Zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/) i wybierz **Certyfikat SSL EV** po przyjeździe do tunelu zamówienia.
 
 Wpisz poprawnie informacje wymagane przez **Sectigo**, zanim otrzymasz certyfikat SSL EV. 
 
@@ -86,7 +86,7 @@ Postępuj zgodnie z poleceniem aż do płatności, aby potwierdzić zlecenie utw
 
 #### 1.2 - Dla nowej domeny i nowego hostingu
 
-Jeśli jeszcze nie zamówiłeś domeny i przypisanego hostingu, przejdź do [strony głównej OVHcloud](https://www.ovhcloud.com/fr/), wpisz nazwę domeny w **formularz przeszukiwania przeznaczony do tego celu**, a następnie kliknij `Szukaj`{.action}, aby rozpocząć zamówienie.
+Jeśli jeszcze nie zamówiłeś domeny i przypisanego hostingu, przejdź do [strony głównej OVHcloud](https://www.ovhcloud.com/pl/), wpisz nazwę domeny w **formularz przeszukiwania przeznaczony do tego celu**, a następnie kliknij `Szukaj`{.action}, aby rozpocząć zamówienie.
 
 ![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
 
@@ -135,7 +135,7 @@ Wszystkie działania opisane na tym etapie mogą być przeprowadzane w ciągu ki
 Po zrealizowaniu zamówienia Sectigo prześle Ci wiadomość e-mail z linkiem uwierzytelniającym i z procedurą, którą należy postępować.
 Sprawdź Twoje dane i zatwierdź zlecenie, postępując zgodnie z instrukcjami zawartymi w tym e-mailu. 
 
-Aby upewnić się, że korespondencja za pomocą wiadomości e-mail z Sectigo przebiega prawidłowo, sprawdź również ważność konta e-mail podanego w formularzu podczas składania zamówienia na certyfikat SSL EV, jak również adres e-mail do kontaktu powiązany z Twoim [Panelem klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Aby upewnić się, że korespondencja za pomocą wiadomości e-mail z Sectigo przebiega prawidłowo, sprawdź również ważność konta e-mail podanego w formularzu podczas składania zamówienia na certyfikat SSL EV, jak również adres e-mail do kontaktu powiązany z Twoim [Panelem klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 #### 2.2 - Weryfikacje wykonane przez Urząd Certyfikacji Sectigo
 
@@ -161,7 +161,7 @@ Po dokonaniu weryfikacji przez Sectigo skontaktujemy się z Tobą przez ich usł
 
 Po przeprowadzeniu wszystkich weryfikacji przez Sectigo ich usługi generują certyfikat SSL EV i przekazują nam niezbędne informacje do zainstalowania go na Twoim hostingu.
 
-Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadować stronę WWW na HTTPS](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/).
+Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadować stronę WWW na HTTPS](https://docs.ovh.com/pl/hosting/activate-https-website-ssl/).
 
 ## Sprawdź również <a name="go-further"></a>
 
@@ -169,9 +169,9 @@ Aby w pełni korzystać z certyfikatu SSL EV, wystarczy kliknąć na [załadowa�
 
 [Opis weryfikacji przeprowadzonych przez Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
-[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+[Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/)
 
-[Przejdź na stronę przez HTTPS](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+[Przejdź na stronę przez HTTPS](https://docs.ovh.com/pl/hosting/activate-https-website-ssl/)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

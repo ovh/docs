@@ -16,7 +16,7 @@ order: 03
 
 Die Secure Socket Layer Zertifikate (SSL) erlauben es, den Austausch von oder zu Ihrer Website zu verschlüsseln. So wird verhindert, dass böswillige Personen oder Roboter auf Anfragen, die an Ihre Website versandt oder gesendet wurden, aufmerksam zuhören.
 
-OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für unsere [OVHcloud Shared Hosting](https://www.ovhcloud.com/fr/web-hosting/). Sie finden sich in unserer Anleitung "[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)". SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
+OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für unsere [OVHcloud Shared Hosting](https://www.ovhcloud.com/de/web-hosting/). Sie finden sich in unserer Anleitung "[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/)". SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
 
 Es gibt drei Arten von SSL-Zertifikaten:
 
@@ -43,9 +43,9 @@ Für OVHcloud Shared Hosting ist die Zertifizierungsstelle, die EV SSL-Zertifika
  
 ## Voraussetzungen <a name="requirements"></a>
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) eingeloggt.
-- Ein [OVHcloud Shared Hosting](https://www.ovhcloud.com/fr/web-hosting/) bestellen oder besitzen, auf dem noch kein SSL Zertifikat installiert ist.
-- Bestellen oder über eine [Domainname](https://www.ovhcloud.com/fr/domains/) verfügen und über exklusive Nutzungsrechte. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
+- Ein [OVHcloud Shared Hosting](https://www.ovhcloud.com/de/web-hosting/) bestellen oder besitzen, auf dem noch kein SSL Zertifikat installiert ist.
+- Bestellen oder über eine [Domainname](https://www.ovhcloud.com/de/domains/) verfügen und über exklusive Nutzungsrechte. Der Domainname darf nicht bereits mit einem SSL-Zertifikat verbunden sein.
 - eine Organisation (Unternehmen, Regierungsbehörde, ...) sein, die in einem amtlichen Register eingetragen ist.
 - Sie haben die Genehmigung Ihrer Organisation, ein EV SSL-Zertifikat zu bestellen.
 - Sie sind in der Lage, die Angaben und Kontaktdaten Ihrer Organisation genau zu begründen.
@@ -58,14 +58,14 @@ Um zu überprüfen, ob Sie für die Bestellung eines EV SSL-Zertifikats infrage 
 >
 > OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/fr/) zu kontaktieren. Wir werden Ihnen in der Tat keine Unterstützung **für alle Schritte der direkten Kontrollen mit der Zertifizierungsstelle Sectigo gewähren können**. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren. Wir werden Ihnen in der Tat keine Unterstützung **für alle Schritte der direkten Kontrollen mit der Zertifizierungsstelle Sectigo gewähren können**. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
 >
 
 ### Schritt 1: EV SSL-Zertifikat bestellen
 
 #### 1.1 - Für eine bereits bei OVHcloud existierende Domain und Hosting
 
-Lesen Sie unsere Anleitung zur [SSL-Zertifikat auf Ihrem Webhosting verwalten](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/) und wählen Sie das **EV SSL-Zertifikat** aus, sobald Sie im Bestelltunnel angekommen sind.
+Lesen Sie unsere Anleitung zur [SSL-Zertifikat auf Ihrem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/) und wählen Sie das **EV SSL-Zertifikat** aus, sobald Sie im Bestelltunnel angekommen sind.
 
 Geben Sie die von **Sectigo** angeforderten Informationen genau ein, bevor Ihnen das EV SSL-Zertifikat ausgestellt wird. 
 
@@ -86,7 +86,7 @@ Führen Sie die Bestellung bis zur Zahlung durch, um die Anfrage zur Erstellung 
 
 #### 1.2 - Für einen neuen Domainnamen und ein neues Hosting
 
-Wenn Sie Ihre Domain und das dazugehörige Hosting noch nicht bestellt haben, gehen Sie auf unsere [Startseite von OVHcloud](https://www.ovhcloud.com/fr/), geben Sie einen Domainnamen in das dafür vorgesehene **Suchformular** ein und klicken Sie anschließend auf `Suchen`{.action}, um Ihre Bestellung zu starten.
+Wenn Sie Ihre Domain und das dazugehörige Hosting noch nicht bestellt haben, gehen Sie auf unsere [Startseite von OVHcloud](https://www.ovhcloud.com/de/), geben Sie einen Domainnamen in das dafür vorgesehene **Suchformular** ein und klicken Sie anschließend auf `Suchen`{.action}, um Ihre Bestellung zu starten.
 
 ![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
 
@@ -135,7 +135,7 @@ Alle in diesem Schritt beschriebenen Aktionen können über mehrere Tage durchge
 Sobald Ihre Bestellung ausgeführt wurde, sendet Sectigo Ihnen eine E-Mail mit einem Validierungslink und einer Vorgehensweise.
 Überprüfen Sie Ihre Angaben und bestätigen Sie Ihre Anfrage gemäß den Angaben in dieser E-Mail. 
 
-Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse Ihres [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Um sicherzustellen, dass der E-Mail-Verkehr mit Sectigo korrekt abläuft, überprüfen Sie auch die Gültigkeit der im Formular angegebenen E-Mail-Adresse bei der Bestellung des EV SSL und der Kontakt-E-Mail-Adresse Ihres [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 #### 2.2 - Überprüfungen durch die Zertifizierungsstelle Sectigo
 
@@ -161,7 +161,7 @@ Sobald die Überprüfung durch Sectigo abgeschlossen ist, werden Sie von ihren D
 
 Sobald Sectigo alle Überprüfungen durchgeführt hat, erstellen ihre Dienste das EV SSL-Zertifikat und übermitteln uns die für dessen Installation erforderlichen Informationen auf Ihrem Hosting.
 
-Sie müssen nur noch [Ihre Website auf HTTPS umstellen](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/), um Ihr EV SSL-Zertifikat vollständig zu nutzen.
+Sie müssen nur noch [Ihre Website auf HTTPS umstellen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/), um Ihr EV SSL-Zertifikat vollständig zu nutzen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
@@ -169,9 +169,9 @@ Sie müssen nur noch [Ihre Website auf HTTPS umstellen](https://docs.ovh.com/fr/
 
 [Beschreibung der Überprüfungen durch Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
-[SSL-Zertifikat auf seinem Webhosting verwalten](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/)
+[SSL-Zertifikat auf seinem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/)
 
-[Ihre Website auf HTTPS umstellen](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/)
+[Ihre Website auf HTTPS umstellen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
