@@ -102,7 +102,7 @@ Ensuite faites défiler la `Fenêtre`{.action}
 
 ![00 Redeploy cluster from OVHcloud control panel 04](images/00-cluster-redeployment-through-manager04.png)
 
-Laisser ce paramètres par défaut : 
+Laisser ces paramètres par défaut : 
 
 * **Replication Factor** : RF2.
 * **Erasure Coding feature** : Erasure Coding désactivé.
@@ -112,7 +112,7 @@ Modifier ces valeurs :
 
 * **Prism Central VIP** : Adresse IP privée de Prism Central.
 * **Prism Element Virtual IP(VIP)** : Adresse IP privée de Prism Element.   
-* **CIDR Gateway** : Adresse IP suivie du masque de sous réseau de la forme XX.XX.XX.XX/XX.
+* **CIDR Gateway** : Adresse IP privée de la passerelle suivie du masque de sous réseau de la forme XX.XX.XX.XX/XX.
 * **AOS Version**: Version choisie lors du redéploiement.
 
 Ensuite cliquez sur `Redéployer`{.action}.
@@ -136,7 +136,7 @@ Saisissez `REDEPLOY`{.action} et cliquez sur `Confirmer`{.action}.
 Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/.)
 
 > [!warning]
-> Si vous utilisez l'API OVHcloud avec une offre Nutanix BYOL vous n'aurez pas de message pour vous avertir de désinstaller vos licences mais il ne faut pas oublier de le faire. Vous pouvez vous aider de ce guide pour gérer vos licences [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/). Après avoir desinstalllé vos licences vous pourrez redeployer votre cluster avec L'API OVHcloud
+> Si vous utilisez l'API OVHcloud avec une offre Nutanix BYOL vous n'aurez pas de message pour vous avertir de désinstaller vos licences mais il ne faut pas oublier de le faire. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/). Après avoir desinstalllé vos licences vous pourrez rédeployer votre cluster avec L'API OVHcloud
 >
 
 Utilisez l'appel API suivant :
