@@ -316,17 +316,17 @@ Conéctese al servidor por SSH y ejecute el siguiente comando:
 editor /etc/netplan/50-cloud-init.yaml
 ```
 
-A continuación, edite el archivo con el siguiente contenido, sustituyendo « INTERFACE_NAME », « MAC_ADDRESS » et « ADDITIONAL_IP »:
+A continuación, edite el archivo con el siguiente contenido, sustituyendo "INTERFACE_NAME", "MAC_ADDRESS" et "ADDITIONAL_IP":
 
 ```sh
 network:
-    version : 2
+    version: 2
     ethernets:
-        INTERFACE_NAME :
+        INTERFACE_NAME:
             dhcp4: true
             match:
-                macaddress : MAC_ADDRESS
-            set-name : INTERFACE_NAME
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
             addresses:
             - ADDITIONAL_IP/32
 ```
