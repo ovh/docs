@@ -155,6 +155,12 @@ Ajoutez quelques lignes en respectant la syntaxe _Markdown_&nbsp;:
 
 ![Ajout de contenu dans le fichier](images/static_website_installation_cecil%5B9%5D.png)
 
+Supprimez les fichiers dans le cache à l'aide de la commande suivante&nbsp;:
+
+```sh
+php cecil.phar clear
+```
+
 Rebuildez vos pages après avoir sauvegardé votre fichier&nbsp;:
 
 ```sh
