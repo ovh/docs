@@ -1443,6 +1443,7 @@
             + [Configuring IP aliasing](cloud/dedicated/network_ipaliasing)
             + [What are the IP addresses of the OVHcloud monitoring ?](cloud/dedicated/network_ip_monitoring)
             + [Configuring a network bridge](cloud/dedicated/network_bridging)
+            + [Testy McTestFace](cloud/dedicated/testing-test)
         + [Managing servers](bare-metal-cloud-dedicated-servers-managing-servers)
             + [Changing the admin password on a Windows dedicated server](cloud/dedicated/changing-admin-password-on-windows)
             + [OVHcloud AntiSpam - Best Practices and Unblocking an IP](cloud/dedicated/antispam_best_practices)
