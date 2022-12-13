@@ -1,6 +1,5 @@
 ---
 title: Testy McTestFace
-slug: testing-test
 excerpt: Testing all the things
 ---
 
