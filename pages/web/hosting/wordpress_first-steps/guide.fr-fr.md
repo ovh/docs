@@ -6,15 +6,18 @@ section: Tutoriel
 order: 
 ---
 
-**Dernière mise à jour le 07/12/2022**
+**Dernière mise à jour le 12/12/2022**
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous permettre de créer vos premiers contenus avec le CMS [WordPress](https://wordpress.org/), les organiser, les mettre en ligne et changer le thème de votre site.
+Ce tutoriel a pour objectif de vous permettre de créer vos premiers contenus avec le CMS WordPress, les organiser, les mettre en ligne et changer le thème de votre site. Vous pourrez ainsi réaliser votre site web avec un large choix de thématiques&nbsp;": site de votre entreprise, blog, faire connaître votre activité ou vos passions, sans avoir de connaissances en programmation.
 
 ## Prérequis
 
-Vous devez disposez d'un nom de domaine et d'un [Hébergement web](https://www.ovhcloud.com/fr/web-hosting/), à minima une offert [Hébergement Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous permettant d'installer un CMS en 1-clic.
+Vous venez de souscrire à une offre [Hébergement web](https://www.ovhcloud.com/fr/web-hosting/) comprenant un nom de domaine et vous permettant d'installer un CMS en un clic, ce tutoriel vous permettra de faire vos premiers pas avec le CMS WordPress.
+
+
+
 
 Vous pouvez également installer manuellement votre WordPress sur votre hébergement en suivant notre tutoriel [Installer manuellement WordPress](https://docs.ovh.com/fr/hosting/installer-manuellement-wordpress/).
 
@@ -30,7 +33,7 @@ Lors de l'installation de votre CMS en 1-clic, vous avez reçu un mail contenant
 
 ### Se connecter à l'interface d'administration
 
-Rendez-vous sur le lien qui vous a été communiqué par mail lors de l'installation. Par défaut, l'URL pour accéder à l'interface ser termine par `wp-admin`&nbsp;:
+Rendez-vous sur le lien qui vous a été communiqué par mail lors de l'installation. Par défaut, l'URL pour accéder à l'interface se termine par `wp-admin`&nbsp;:
 
 ![WordPress - Admin login](images/wordpress_first_steps%5B1%5D.png){.thumbnail}
 
@@ -64,7 +67,7 @@ Pour créer un article, allez sur le menu à gauche dans «&nbsp;Articles&nbsp;�
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps%5B5%5D.png){.thumbnail}
 
-Depuis la version, WordPress propose une interface pour simplifier la rédaction et la mise en forme des articles&nbsp;: Gutenberg, éditeur WYSIWYG (« what you see is what you get »)&nbsp;:
+Depuis la version 5, WordPress propose une interface pour simplifier la rédaction et la mise en forme des articles&nbsp;. Gutenberg est un éditeur WYSIWYG (« what you see is what you get ») et vous permet de composer directement votre page en ajoutant des éléments tels que des titres, paragraphes, listes, images, etc.&nbsp;:
 
 ![WordPress - Gutenberg](images/wordpress_first_steps%5B6%5D.png){.thumbnail}
 
@@ -72,15 +75,15 @@ Ajoutez un titre à votre page en cliquant sur «&nbsp;Saisissez le titre&nbsp;�
 
 ![WordPress - Gutenberg, add title](images/wordpress_first_steps%5B7%5D.png){.thumbnail}
 
-Pour ajouter du contenu, cliquez sur le signe «&nbsp;+&nbsp;» et choisissez ce que vous souhaitez insérer un bloc qui contiendra un paragraphe, un sous-titre, une image, etc.&nbsp;:
+Pour ajouter du contenu, cliquez sur le signe «&nbsp;+&nbsp;» et choisissez ce que vous souhaitez insérer un bloc qui contiendra un paragraphe&nbsp;:
 
 ![WordPress - Gutenberg, add block](images/wordpress_first_steps%5B8%5D.png){.thumbnail}
 
 Sur la droite de votre page, trois liens vous permettent de&nbsp;:
 
-- Enregistrer le brouillon, que vous pouvez faire avec Ctrl+S
-- Prévisualiser
-- Publier sur votre site.
+- enregistrer le brouillon, que vous pouvez faire avec Ctrl+S
+- prévisualiser
+- publier sur votre site.
 
 Pour notre exemple, nous allons cliquer sur «&nbsp;Visualiser&nbsp;», puis «&nbsp;Prévisualiser dans un nouvel onglet&nbsp;». Vous pouvez choisir le type d'appareil sur lequel faire le rendu (PC, tablette ou smartphone)&nbsp;:
 
@@ -98,7 +101,7 @@ Renseignez maintenant le formulaire pour ajouter une nouvelle catégorie&nbsp;:
 
 - Nom de votre catégorie tel qu'elle apparaîtra sur votre site
 - Slug, c'est le nom qui apparaîtra dans l'URL
-- Catégorie parente vous permet de hiérarchiser vos catégories
+- Catégorie parente vous permet de hiérarchiser vos catégories (la catégorie que vous créez peut être une sous-catégorie d'une catégorie existante)
 - Description, non apparente par défaut, la description de votre catégorie peut toutefois être rendue visible par certains thèmes.
 
 ![WordPress - Categories filled](images/wordpress_first_steps%5B12%5D.png){.thumbnail}
@@ -174,3 +177,4 @@ Vos liens seront alors construits à partir du slug que vous aurez indiqué en �
     - [TemplaMonster](https://www.templatemonster.com/fr/type/themes-wordpress/)
     - [Elegant Themes](https://www.elegantthemes.com/), éditeur du constructeur de thèmes Divi
     - [Elementor](https://elementor.com/), au autre éditeur de thèmes
+- le site officiel [WordPress](https://wordpress.org/).
