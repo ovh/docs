@@ -54,6 +54,108 @@ Para comprobar si puede contratar un certificado SSL EV, acceda a [este enlace](
   
 ## Procedimiento
 
+### Etapa 1: contratar el certificado SSL EV
+
+#### 1.1 - Para un dominio y un alojamiento ya existentes en OVHcloud
+
+Consulte nuestra guía sobre cómo [gestionar un certificado SSL en su alojamiento web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/) y seleccione el **Certificado SSL EV** una vez haya llegado al túnel de pedido.
+
+Introduzca con exactitud la información solicitada por **Sectigo** antes de que se le emita el certificado SSL EV. 
+
+![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+
+Haga clic en `Continuar`{.action} una vez **todos los elementos** correctamente introducidos.
+
+Continúe con el pedido hasta que abone el importe pendiente para validar la solicitud de creación del certificado SSL.
+
+> [!alert]
+>
+> Una vez validado el pedido, la solicitud de certificado SSL EV se envía a la autoridad de certificación **Sectigo**.
+>
+> Asegúrese de que cumple los requisitos para contratar un certificado SSL EV **antes de abonar el certificado**.
+>
+> En efecto, no será posible ninguna devolución del SSL EV, **aunque el procedimiento de verificación ante Sectigo no haya finalizado**.
+>
+
+#### 1.2 - Para un nuevo dominio y alojamiento
+
+Si todavía no ha contratado su dominio y el alojamiento asociado, acceda a nuestra [página de inicio de OVHcloud](https://www.ovhcloud.com/fr/), introduzca un dominio en el **formulario de búsqueda previsto a tal efecto** y haga clic en `Buscar`{.action} para iniciar el pedido.
+
+![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
+
+Seleccione el dominio y elija el alojamiento y las opciones hasta que se abra la pestaña `Configure su alojamiento web`.
+
+Seleccione su elección de instalación de `módulo en 1 clic`{.action} y de `CDN` {.action} y descienda al final de la página hasta la sección `Proteja su sitio web con nuestros certificados SSL`{.action}.
+
+![SSL EV order](images/ssl_ev_order.png){.thumbnail}
+
+Seleccione `Sectigo EV SSL`{.action} y haga clic en `Continuar`{.action}.
+
+Introduzca la información solicitada por **Sectigo** antes de expedir el certificado SSL EV en la nueva página.
+
+![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+
+Haga clic en `Continuar`{.action} una vez **todos los elementos** correctamente introducidos.
+
+Continúe con el pedido hasta que se abone el importe pendiente para iniciar la instalación de sus servicios.
+
+> [!alert]
+>
+> Una vez validado el pedido, la solicitud de certificado SSL EV se envía a la autoridad de certificación **Sectigo**. 
+>
+> Asegúrese de que cumple los requisitos para contratar un certificado SSL EV **antes de abonar el certificado**.
+>
+> En efecto, no será posible ninguna devolución del SSL EV, **aunque el procedimiento de verificación ante Sectigo no haya finalizado**.
+>
+
+### Etapa 2: verificaciones con la Autoridad de Certificación (AC) Sectigo
+
+Todas las acciones descritas en esta etapa se pueden realizar en varios días. Los plazos **dependerán** de las comprobaciones realizadas por Sectigo.
+
+> [!warning]
+>
+> En esta etapa, todo el proceso depende del proveedor de certificado **Sectigo** y de la información que se haya introducido al contratar el certificado SSL EV. 
+>
+> Solo **Sectigo** podrá intervenir en esta etapa y OVHcloud no podrá actuar en este sentido.
+>
+> En efecto, la función del AC Sectigo es certificar, independientemente y con total imparcialidad, los datos de su organización para integrarlos en el certificado SSL EV.
+>
+> Es **Sectigo** quien decide expedir un certificado SSL EV y no OVHcloud. Sectigo es por definición el único que tiene autoridad sobre la certificación.
+>
+
+#### 2.1 - Recepción del email de confirmación por Sectigo
+
+Una vez realizado el pedido, Sectigo le enviará un mensaje de correo electrónico con un enlace de validación y un procedimiento a seguir.
+Compruebe que la información y la solicitud son correctos siguiendo las indicaciones que se ofrecen en este email. 
+
+Para asegurarse de que la comunicación con Sectigo se realiza correctamente, compruebe también la validez de la dirección de correo electrónico que se indica en el formulario al contratar el SSL EV y la dirección de correo electrónico de contacto asociada a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+#### 2.2 - Verificaciones realizadas por la Autoridad de Certificación Sectigo
+
+Sectigo comprobará que su organización existe y que está registrada en los registros oficiales.
+
+> [!primary]
+>
+> Sectigo puede no poder verificar toda la información con los registros oficiales. Los servicios de Sectigo pueden entonces contactar por teléfono con el número que haya indicado al realizar su pedido, o con el número de teléfono oficial de su organización.
+>
+
+A continuación, Sectigo comprobará si tiene la exclusividad/autoridad sobre la propiedad y el uso del dominio con el que va a utilizar el certificado SSL EV.
+
+#### 2.3 - Últimas comprobaciones por teléfono con Sectigo
+
+Una vez realizadas las comprobaciones realizadas por Sectigo, sus servicios le contactarán por teléfono para finalizar la contratación de su certificado SSL EV.
+
+> [!success]
+>
+> Para más información sobre las operaciones descritas en **el Etapa 2** anterior, consulte la [documentación oficial de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sobre el asunto.
+>
+
+### Etapa 3: instalación del certificado SSL EV con su dominio y su alojamiento OVHcloud
+
+Una vez que Sectigo haya procedido a todas las verificaciones, sus servicios generan el certificado SSL EV y nos transmiten los elementos necesarios para su instalación en su alojamiento.
+
+Solo tendrá que [pasar su sitio web en HTTPS](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/) para utilizar plenamente su certificado SSL EV.
+
 ## Más información <a name="go-further"></a>
 
 [Sitio Oficial Sectigo](https://sectigostore.com){.external}
