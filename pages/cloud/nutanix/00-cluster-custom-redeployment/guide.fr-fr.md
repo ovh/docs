@@ -6,7 +6,7 @@ section: Premiers pas
 order: 05
 ---
 
-**Dernière mise à jour le 17/12/2022**
+**Dernière mise à jour le 13/12/2022**
 
 ## Objectif
 
@@ -111,8 +111,8 @@ Laisser ce paramètres par défaut :
 Modifier ces valeurs :
 
 * **Prism Central VIP** : Adresse IP privée de Prism Central.
-* **Prism Element Virtual IP(VIP)** : Adresse IP privée de Prism Element.
-* **CIDR Gateway** : Adresse IP suivi du masque de sous réseau de la forme XX.XX.XX.XX/XX
+* **Prism Element Virtual IP(VIP)** : Adresse IP privée de Prism Element.   
+* **CIDR Gateway** : Adresse IP suivie du masque de sous réseau de la forme XX.XX.XX.XX/XX.
 * **AOS Version**: Version choisie lors du redéploiement.
 
 Ensuite cliquez sur `Redéployer`{.action}.
