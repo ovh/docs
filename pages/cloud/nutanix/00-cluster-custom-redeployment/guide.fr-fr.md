@@ -136,7 +136,7 @@ Saisissez `REDEPLOY`{.action} et cliquez sur `Confirmer`{.action}.
 Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/.)
 
 > [!warning]
-> Si vous utilisez l'API OVHcloud avec une offre Nutanix BYOL vous n'aurez pas de message pour vous avertir de désinstaller vos licences mais il ne faut pas oublier de le faire. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/). Après avoir desinstalllé vos licences vous pourrez rédeployer votre cluster avec L'API OVHcloud
+> Si vous utilisez l'API OVHcloud pour reconditionner votre cluster avec une offre Nutanix BYOL vous n'aurez pas de message pour vous avertir de désinstaller vos licences N'oubliez pas de le faire. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/fr/nutanix/activate-license-on-nutanix-byol/). Après avoir desinstalllé vos licences vous pourrez redéployer votre cluster avec L'API OVHcloud
 >
 
 Utilisez l'appel API suivant :
