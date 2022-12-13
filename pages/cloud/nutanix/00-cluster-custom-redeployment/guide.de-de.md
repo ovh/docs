@@ -135,7 +135,6 @@ Type `REDEPLOY`{.action} and click `Confirm`{.action}.
 
 ### Redeploy the cluster through the OVHcloud API
 
-
 Log in to the [OVHcloud API](https://api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)
 
 > [!warning]

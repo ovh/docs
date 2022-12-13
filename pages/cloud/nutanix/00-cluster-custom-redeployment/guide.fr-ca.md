@@ -24,7 +24,6 @@ order: 05
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/)
 
-
 > [!warning]
 > Si vous avez souscrit à **l'offre Nutanix on OVHcloud BYOL** et que vous avez activé des licences sur votre cluster, vous devez désinstaller vos licences avant de lancer le redéploiement. Vous pouvez vous aider de ce guide pour gérer vos licences :[Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/)
 >
@@ -133,7 +132,6 @@ Saisissez `REDEPLOY`{.action} et cliquez sur `Confirmer`{.action}.
 ![00 Redeploy cluster from OVHcloud control panel 07](images/00-cluster-redeployment-through-manager07.png)
 
 ### Redéploiement du cluster au travers de l'API OVHcloud
-
 
 Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/.)
 

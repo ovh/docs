@@ -75,7 +75,6 @@ Here are two possible examples of Nutanix cluster configuration at OVHcloud:
 
 We will redeploy a cluster with 3 nodes, as in Example 1 in the previous chapter, either from the OVHcloud Control Panel or from the OVHcloud API.
 
-
 > [!warning]
 > The Cluster redeployment operation cannot be undone. All data in the Cluster will be deleted, and a new admin account password will be generated and sent by email to the OVHcloud customer account holder.
 >
@@ -135,7 +134,6 @@ Type `REDEPLOY`{.action} and click `Confirm`{.action}.
 ### Redeploy the cluster through the OVHcloud API
 
 Log in to the [OVHcloud API](https://ca.api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](https://docs.ovh.com/ca/en/api/first-steps-with-ovh-api/)
-
 
 > [!warning]
 > If you use the OVHcloud API to repackage your cluster with a Nutanix BYOL offer, you will not receive a message to notify you to uninstall your licences. Don't forget to do so. You can use this guide to manage your licences:[Managing licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/ca/en/nutanix/activate-license-on-nutanix-byol/). After uninstalling your licences, you can redeploy your cluster with the OVHcloud API

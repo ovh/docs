@@ -79,8 +79,6 @@ We will redeploy a cluster with 3 nodes, as in Example 1 in the previous chapter
 > The Cluster redeployment operation cannot be undone. All data in the Cluster will be deleted, and a new admin account password will be generated and sent by email to the OVHcloud customer account holder.
 >
 
-
-
 ### Redeploy the cluster from the OVHcloud Control Panel
 
 In the OVHcloud Control Panel, click on the `Hosted Private Cloud`{.action} tab, select your cluster below the `Nutanix` category on the left-hand side, then click on `Redeploy cluster`{.action}.
