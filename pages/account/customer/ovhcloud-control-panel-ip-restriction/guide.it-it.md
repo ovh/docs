@@ -1,7 +1,7 @@
 ---
-title: "Restringir el acceso IP al área de cliente de OVHcloud"
+title: "Limitare l'accesso via IP al tuo Spazio Cliente OVHcloud"
 slug: ovhcloud-control-panel-ip-restriction
-excerpt: "Cómo proteger su cuenta de OVHcloud limitando las direcciones IP autorizadas a acceder a ella"
+excerpt: "Come proteggere un account OVHcloud limitando gli indirizzi IP autorizzati ad accedervi"
 section: Sicurezza
 order: 03
 ---
