@@ -54,6 +54,13 @@ Um zu überprüfen, ob Sie für die Bestellung eines EV SSL-Zertifikats infrage 
   
 ## In der praktischen Anwendung
 
+> [!warning]
+>
+> OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/fr/) zu kontaktieren. Wir werden Ihnen in der Tat keine Unterstützung **für alle Schritte der direkten Kontrollen mit der Zertifizierungsstelle Sectigo gewähren können**. Weitere Informationen finden Sie im Abschnitt [Weiterführende Informationen](#go-further) dieser Anleitung.
+>
+
 ### Schritt 1: EV SSL-Zertifikat bestellen
 
 #### 1.1 - Für eine bereits bei OVHcloud existierende Domain und Hosting

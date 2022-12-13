@@ -54,6 +54,115 @@ Per verificare se hai diritto alla sottoscrizione di un certificato SSL EV, clic
   
 ## Procedura
 
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/fr/). OVHcloud non sarà infatti in grado di fornirti assistenza **per tutte le fasi di verifica direttamente realizzata con l'autorità di certificazione Sectigo**. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+>
+
+### Step 1: ordina il certificato SSL EV
+
+#### 1.1 - Per un dominio e un hosting già esistenti presso OVHcloud
+
+Consulta la nostra guida su come [gestire un certificato SSL su un hosting Web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/) e seleziona il **Certificato SSL EV** una volta arrivato nella galleria di comando.
+
+Inserisci con esattezza le informazioni richieste da **Sectigo** prima di ricevere il certificato SSL EV. 
+
+![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+
+Clicca su `Continua`{.action} una volta **tutti gli elementi** inseriti correttamente.
+
+Continua l'ordine fino al pagamento per confermare la richiesta di creazione del certificato SSL.
+
+> [!alert]
+>
+> Una volta convalidato l'ordine, la domanda di certificato SSL EV viene inviata all'autorità di certificazione **Sectigo**.
+>
+> Assicurati obbligatoriamente di poter sottoscrivere un certificato SSL EV **prima di pagare il certificato**.
+>
+> Infatti, non sarà possibile alcun rimborso dell'SSL EV, **anche se la procedura di verifica presso Sectigo non avrà esito positivo**.
+>
+
+#### 1.2 - Per un nuovo dominio e un nuovo hosting
+
+Se non hai ancora ordinato il tuo dominio e il servizio di hosting associato, accedi alla pagina [homepage OVHcloud](https://www.ovhcloud.com/fr/), inserisci un dominio nel**form di ricerca previsto a questo scopo** e clicca su `Cerca`{.action} per avviare il tuo ordine.
+
+![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
+
+Seleziona il tuo dominio, scegli il tuo hosting e le opzioni fino allo step `Configura il tuo hosting Web`
+
+Seleziona `Modulo in 1 click`{.action} e `CDN`{.action} poi scendi giù dalla sezione `Proteggi il tuo sito Web con i nostri certificati SSL`{.action}
+
+![SSL EV order](images/ssl_ev_order.png){.thumbnail}
+
+Scegli `Sectigo EV SSL`{.action} e clicca su `Seguente`{.action}.
+
+Nella nuova pagina, inserisci correttamente le informazioni richieste da **Sectigo** prima di ricevere il certificato SSL EV:
+
+![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+
+Clicca su `Seguente`{.action} una volta **tutti gli elementi** inseriti correttamente.
+
+Continua il tuo ordine fino al pagamento per avviare l'installazione dei tuoi servizi.
+
+> [!alert]
+>
+> Una volta convalidato l'ordine, la domanda di certificato SSL EV viene inviata all'autorità di certificazione **Sectigo**. 
+>
+> Assicurati obbligatoriamente di poter sottoscrivere un certificato SSL EV **prima di pagare il certificato**.
+>
+> Infatti, non sarà possibile alcun rimborso dell'SSL EV, **anche se la procedura di verifica presso Sectigo non avrà esito positivo**.
+>
+
+### Step 2: verifiche con l'Autorità di certificazione (AC) Sectigo
+
+Tutte le azioni descritte in questa fase possono essere eseguite su diversi giorni. I termini **dipendono** dalle verifiche effettuate da Sectigo.
+
+> [!warning]
+>
+> In questo step, l'intero processo dipende dal provider del certificato **Sectigo** e dalle informazioni inserite al momento dell'ordine del tuo certificato SSL EV. 
+>
+> Solo **Sectigo** può intervenire su questo step e OVHcloud non potrà agire su questo livello.
+>
+> In effetti, il ruolo dell'AC Sectigo è quello di certificare, in modo indipendente e imparziale, le informazioni della tua organizzazione per integrarle nel certificato SSL EV.
+>
+> C'è **Sectigo** che decide se rilasciare un certificato SSL EV o meno OVHcloud. Sectigo è per definizione l'unico ad avere autorità sulla certificazione.
+>
+
+#### 2.1 - Ricezione dell'email di conferma da parte di Sectigo
+
+Una volta effettuato l'ordine, Sectigo invierà un'email con un link di conferma e una procedura da seguire.
+Verifica le tue informazioni e conferma la tua richiesta seguendo le indicazioni presenti in questa email. 
+
+Per assicurarti che gli scambi via email con Sectigo avvengano correttamente, verifica anche la validità dell'indirizzo email inserito nel form al momento dell'ordine del certificato SSL EV e l'indirizzo email di contatto associato al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+#### 2.2 - Verifiche effettuate dall'Autorità di Certificazione Sectigo
+
+Sectigo verificherà l'esistenza della tua organizzazione ed effettuerà la registrazione presso i registri ufficiali.
+
+> [!primary]
+>
+> Sectigo può non essere in grado di verificare tutte le informazioni dai registri ufficiali. I servizi di Sectigo possono contattarti telefonicamente al numero indicato al momento dell'ordine o al numero di telefono ufficiale della tua organizzazione.
+>
+
+Sectigo verificherà se hai l'esclusiva/autorità sulla proprietà e l'utilizzo del dominio con cui vuoi utilizzare il certificato SSL EV.
+
+#### 2.3 - Ultime verifiche telefoniche con Sectigo
+
+Una volta effettuate le verifiche da Sectigo, verrai contattato dai loro servizi per telefono per finalizzare la sottoscrizione del tuo certificato SSL EV.
+
+> [!success]
+>
+> Per maggiori informazioni sulle operazioni descritte nello Step 2**, consulta la [documentazione ufficiale di Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sull'argomento.
+>
+
+### Step 3: installazione del certificato SSL EV con il tuo dominio e il tuo hosting OVHcloud
+
+Una volta completata l'operazione, i loro servizi generano il certificato SSL EV e ci trasmettono gli elementi necessari all'installazione sul tuo hosting.
+
+A questo punto non ti resterà che [inserire il tuo sito in HTTPS](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/) per utilizzare appieno il tuo certificato SSL EV.
+
 ## Per saperne di più <a name="go-further"></a>
 
 [Sito ufficiale Sectigo](https://sectigostore.com){.external}

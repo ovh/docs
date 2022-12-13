@@ -54,6 +54,13 @@ Para comprobar si puede contratar un certificado SSL EV, acceda a [este enlace](
   
 ## Procedimiento
 
+> [!warning]
+>
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> 
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/). En efecto, no podremos asistirle en **todas las etapas de verificación directamente efectuada con la autoridad de certificación Sectigo**. Más información en la sección [Más información](#go-further) de esta guía.
+>
+
 ### Etapa 1: contratar el certificado SSL EV
 
 #### 1.1 - Para un dominio y un alojamiento ya existentes en OVHcloud
@@ -89,13 +96,13 @@ Seleccione su elección de instalación de `módulo en 1 clic`{.action} y de `CD
 
 ![SSL EV order](images/ssl_ev_order.png){.thumbnail}
 
-Seleccione `Sectigo EV SSL`{.action} y haga clic en `Continuar`{.action}.
+Seleccione `Sectigo EV SSL`{.action} y haga clic en `Siguiente`{.action}.
 
 Introduzca la información solicitada por **Sectigo** antes de expedir el certificado SSL EV en la nueva página.
 
 ![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
 
-Haga clic en `Continuar`{.action} una vez **todos los elementos** correctamente introducidos.
+Haga clic en `Siguiente`{.action} una vez **todos los elementos** correctamente introducidos.
 
 Continúe con el pedido hasta que se abone el importe pendiente para iniciar la instalación de sus servicios.
 

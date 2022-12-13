@@ -50,6 +50,13 @@ To check if you are eligible to subscribe to an EV SSL certificate, go to [this 
   
 ## Instructions
 
+> [!warning]
+>
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+> 
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/fr/) if you encounter any difficulties. We will not be able to provide you with assistance **for all verification steps directly performed with the Sectigo certification authority**. You can find more information in the [Go further](#go-further) section of this guide.
+>
+
 ### Step 1: order the EV SSL certificate
 
 #### 1.1 - For a domain and a hosting already existing at OVHcloud
