@@ -112,8 +112,8 @@ Leave these default settings :
 
 Modify these values:
 
-* **Prism Central VIP** : Private IP address of Prism Central.
-* **Prism Element Virtual IP(VIP)** : Private IP address of Prism Element.   
+* **Prism Central VIP** : Prism Central private IP address.
+* **Prism Element Virtual IP(VIP)** : Prism Element private IP address.   
 * **CIDR Gateway** : Private IP address of the gateway followed by the subnet mask of the form XX.XX.XX.XX/XX.
 * **AOS Version**: Version of AOS chosen during redeployment.
 
@@ -157,7 +157,7 @@ Enter this data:
 Enter the following information below **nodes:**
 
 - **ahvip:** `IP address of the hypervisor of the first node`.
-- **cvmip:** `IP address of the second node's CVM`.
+- **cvmip:** `IP address of the first node's CVM`.
 
 Then click the `+`{.action} button.
 
