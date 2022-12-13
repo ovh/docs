@@ -25,7 +25,7 @@ order: 05
 - Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/)
 
 > [!warning]
-> Si vous avez souscrit à **l'offre Nutanix on OVHcloud BYOL** et que vous avez activé des licences sur votre cluster, vous devez désinstaller vos licences avant de lancer le redéploiement. Vous pouvez vous aider de ce guide pour gérer vos licences: [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/)
+> Si vous avez souscrit à **l'offre Nutanix on OVHcloud BYOL** et que vous avez activé des licences sur votre cluster, vous devez désinstaller vos licences avant de lancer le redéploiement. Vous pouvez vous aider de ce guide pour gérer vos licences: [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/).
 >
 
 ## Présentation de l'utilisation du réseau privé pour un Cluster Nutanix chez OVHcloud
@@ -85,7 +85,7 @@ A partir de l'espace client OVHcloud cliquez sur l'onglet `Hosted Private Cloud`
 
 ![00 Redeploy cluster from OVHcloud control panel 01](images/00-cluster-redeployment-through-manager01.png)
 
-Si vous avez souscrit l'offre Nutanix BYOL un rappel vous indique ne pas oublier de désinstaller vos licences. Vous pouvez vous aider de ce guide pour gérer vos licences: [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/). Lorsque vos license seront désinstallées, cliquez sur `Continuer`{.action}.
+Si vous avez souscrit l'offre Nutanix BYOL un rappel vous indique ne pas oublier de désinstaller vos licences. Vous pouvez vous aider de ce guide pour gérer vos licences: [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer][Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/). Lorsque vos license seront désinstallées, cliquez sur `Continuer`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 02](images/00-cluster-redeployment-through-manager02.png)
 
