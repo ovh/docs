@@ -97,8 +97,8 @@ Click `Customise the Configuration`{.action} and click `Next`{.action}
 
 Enter the information for each of your nodes, which are:
 
-- the IP addresses of your AHV hypervisor.
-- the IP address of the CVM virtual machine
+- the private IP address of your AHV hypervisor.
+- the private IP address of the CVM virtual machine.
 
 Then scroll through the `Window`{.action}.
 
@@ -107,7 +107,7 @@ Then scroll through the `Window`{.action}.
 Leave these default settings :
 
 * **Replication Factor** : RF2.
-* **Erasure Coding feature** : Erasure Coding désactivé.
+* **Erasure Coding feature** : Erasure Coding disabled.
 * **Prism entral type** : Alone.
 
 Modify these values:
@@ -203,5 +203,7 @@ Click `Execute`{.action} to start the cluster redeployment.
 ## Go further
 
 [Using the OVHcloud API](https://docs.ovh.com/gb/en/api/)
+
+[Managing licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/en/gb/nutanix/activate-license-on-nutanix-byol/)
 
 Join our community of users on <https://community.ovh.com/en/>.

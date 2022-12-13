@@ -95,8 +95,8 @@ Cliquez sur `Personnaliser la configuration`{.action} et cliquez sur `Suivant`{.
 
 Saisissez les informations concernant chacun de vos nœuds qui sont :
 
-- les Adresses IP de votre hyperviseur AHV.
-- l'adresse IP de la machine virtuelle CVM.
+- L'adresse IP privée de votre hyperviseur AHV.
+- L'adresse IP privé de votre machine virtuelle CVM.
 
 Ensuite faites défiler la `Fenêtre`{.action}.
 
