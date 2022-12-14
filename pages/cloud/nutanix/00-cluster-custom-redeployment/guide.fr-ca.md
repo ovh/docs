@@ -1,7 +1,7 @@
 ---
 title: Redéploiement personnalisé de votre Cluster
 slug: cluster-custom-redeployment
-excerpt: "Redéploiement personnalisé d'un Cluster Nutanix au travers des outils OVHcloud"
+excerpt: "Redéploiement personnalisé d'un Cluster Nutanix via les outils OVHcloud"
 section: Premiers pas
 order: 05
 ---
@@ -73,7 +73,7 @@ Voici deux exemples possibles de configuration d'un cluster Nutanix chez OVHclou
 
 ## En pratique
 
-Nous allons redéployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitre précèdent soit à partir de l'espace client OVHcloud soit à partir de l'API OVHcloud.
+Nous allons redéployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitre précèdent, soit à partir de l'espace client OVHcloud, soit à partir de l'API OVHcloud.
 
 > [!warning]
 > L'opération de redéploiement du Cluster est irréversible. Toutes les données du Cluster seront supprimées et un nouveau mot de passe du compte admin sera généré et envoyé par e-mail au titulaire du compte client OVHcloud.
@@ -81,11 +81,13 @@ Nous allons redéployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitr
 
 ### Redéploiement du cluster à partir de l'espace client OVHcloud
 
-A partir de l'espace client OVHcloud cliquez sur l'onglet `Hosted Private Cloud`{.action}, sélectionnez votre cluster en dessous de la catégorie `Nutanix` à gauche et cliquez sur `Redéployer mon cluster`{.action}.
+Depuis l'espace client OVHcloud, cliquez sur l'onglet `Hosted Private Cloud`{.action}, sélectionnez votre cluster en dessous de la catégorie `Nutanix` à gauche et cliquez sur `Redéployer mon cluster`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 01](images/00-cluster-redeployment-through-manager01.png)
 
-Si vous avez souscrit l'offre Nutanix BYOL un rappel vous indique ne pas oublier de désinstaller vos licences. Vous pouvez vous aider de ce guide pour gérer vos licences: [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer][Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/). Lorsque vos license seront désinstallées, cliquez sur `Continuer`{.action}.
+Si vous avez souscrit l'offre Nutanix BYOL, un rappel vous indique ne pas oublier de désinstaller vos licences.<br>
+Vous pouvez vous aider de ce guide pour gérer vos licences : [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL][Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/).<br>
+Lorsque vos license seront désinstallées, cliquez sur `Continuer`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 02](images/00-cluster-redeployment-through-manager02.png)
 
@@ -93,38 +95,38 @@ Cliquez sur `Personnaliser la configuration`{.action} et cliquez sur `Suivant`{.
 
 ![00 Redeploy cluster from OVHcloud control panel 03](images/00-cluster-redeployment-through-manager03.png)
 
-Saisissez les informations concernant chacun de vos nœuds qui sont :
+Saisissez les informations concernant chacun de vos nœuds, à savoir :
 
-- L'adresse IP privée de votre hyperviseur AHV.
-- L'adresse IP privé de votre machine virtuelle CVM.
+- l'adresse IP privée de votre hyperviseur AHV ;
+- l'adresse IP privée de votre machine virtuelle CVM.
 
-Ensuite faites défiler la `Fenêtre`{.action}.
+Faites ensuite défiler la fenêtre.
 
 ![00 Redeploy cluster from OVHcloud control panel 04](images/00-cluster-redeployment-through-manager04.png)
 
-Laisser ces paramètres par défaut : 
+Laissez ces paramètres par défaut : 
 
-* **Replication Factor** : RF2.
-* **Erasure Coding feature** : Erasure Coding désactivé.
-* **Prism entral type** : Alone.
+- **Replication Factor** : RF2.
+- **Erasure Coding feature** : Erasure Coding désactivé.
+- **Prism entral type** : Alone.
 
-Modifier ces valeurs :
+Modifiez ces valeurs :
 
-* **Prism Central VIP** : Adresse IP privée de Prism Central.
-* **Prism Element Virtual IP(VIP)** : Adresse IP privée de Prism Element.   
-* **CIDR Gateway** : Adresse IP privée de la passerelle suivie du masque de sous réseau de la forme XX.XX.XX.XX/XX.
-* **AOS Version**: Version d'AOS choisie lors du redéploiement.
+- **Prism Central VIP** : adresse IP privée de Prism Central.
+- **Prism Element Virtual IP(VIP)** : adresse IP privée de Prism Element.
+- **CIDR Gateway** : adresse IP privée de la passerelle, suivie du masque de sous réseau, sous la forme XX.XX.XX.XX/XX.
+- **AOS Version**: version d'AOS choisie lors du redéploiement.
 
-Ensuite cliquez sur `Redéployer`{.action}.
+Cliquez ensuite sur `Redéployer`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 05](images/00-cluster-redeployment-through-manager05.png)
 
-Saisissez `REDEPLOY`{.action} et cliquez sur `Confirmer`{.action}.
+Saisissez `REDEPLOY` et cliquez sur `Confirmer`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 06](images/00-cluster-redeployment-through-manager06.png)
 
 > [!warning]
-> Le redéploiement du Cluster dure deux heures au minimum. Patientez jusqu'à la réception d'un e-mail adressé au titulaire du compte OVHcloud **avant** d'utiliser à nouveau le Cluster. Dans votre espace client vous devez voir ce message **Le redéploiement de votre cluster est en cours**.
+> Le redéploiement du Cluster dure deux heures au minimum. Patientez jusqu'à la réception d'un e-mail adressé au titulaire du compte OVHcloud **avant** d'utiliser à nouveau le Cluster. Dans votre espace client, vous devez voir ce message « **Le redéploiement de votre cluster est en cours** ».
 >
 > Le **Load Balancer** est reconfiguré lors du redéploiement et fait pointer l'adresse FQDN du Cluster sur l'adresse privée de **Prism Central**.
 >
@@ -136,7 +138,7 @@ Saisissez `REDEPLOY`{.action} et cliquez sur `Confirmer`{.action}.
 Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/.)
 
 > [!warning]
-> Si vous utilisez l'API OVHcloud pour reconditionner votre cluster avec une offre Nutanix BYOL vous n'aurez pas de message pour vous avertir de désinstaller vos licences N'oubliez pas de le faire. Vous pouvez vous aider de ce guide pour gérer vos licences : [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL Offer](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/). Après avoir desinstalllé vos licences vous pourrez redéployer votre cluster avec L'API OVHcloud.
+> Si vous utilisez l'API OVHcloud pour reconditionner votre cluster avec une offre Nutanix BYOL, vous n'aurez pas de message pour vous avertir de désinstaller vos licences. N'oubliez pas de le faire. Vous pouvez vous aider de ce guide pour gérer vos licences : [Gestion des licences dans votre cluster Nutanix on OVHcloud BYOL](https://docs.ovh.com/ca/fr/nutanix/activate-license-on-nutanix-byol/). Après avoir desinstalllé vos licences, vous pourrez redéployer votre cluster avec l'API OVHcloud.
 >
 
 Utilisez l'appel API suivant :

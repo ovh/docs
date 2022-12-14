@@ -27,7 +27,7 @@ order: 05
 - access to the [OVHcloud API page](https://api.ovh.com/)
 
 > [!warning]
-> If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix cluster on OVHcloud BYOL Offer](https://docs.ovh.com/pl/nutanix/activate-licence-on-nutanix-byol/).
+> If you have signed up to the **Nutanix on OVHcloud BYOL offer** and have activated licences on your cluster, you will need to uninstall your licences before you launch the redeployment. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/pl/nutanix/activate-licence-on-nutanix-byol/).
 >
 
 ## Introduction to using the private network for a Nutanix Cluster at OVHcloud
@@ -87,7 +87,7 @@ In the OVHcloud Control Panel, click on the `Hosted Private Cloud`{.action} tab,
 
 ![00 Redeploy cluster from OVHcloud control panel 01](images/00-cluster-redeployment-through-manager01.png)
 
-If you have subscribed to the Nutanix BYOL offer, a reminder will tell you not to forget to uninstall your licences. You can use this guide to manage your licences: [Manage licences in your Nutanix cluster on OVHcloud BYOL Offer](https://docs.ovh.com/pl/nutanix/activate-licence-on-nutanix-byol/). When your licences are uninstalled, click `Continue`{.action}.
+If you have subscribed to the Nutanix BYOL offer, a reminder will tell you not to forget to uninstall your licences. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/pl/nutanix/activate-licence-on-nutanix-byol/). When your licences are uninstalled, click `Continue`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 02](images/00-cluster-redeployment-through-manager02.png)
 
@@ -100,28 +100,28 @@ Enter the information for each of your nodes, which are:
 - the private IP address of your AHV hypervisor.
 - the private IP address of the CVM virtual machine.
 
-Then scroll through the `Window`{.action}.
+Then scroll through the window.
 
 ![00 Redeploy cluster from OVHcloud control panel 04](images/00-cluster-redeployment-through-manager04.png)
 
 Leave these default settings :
 
-* **Replication Factor** : RF2.
-* **Erasure Coding feature** : Erasure Coding disabled.
-* **Prism entral type** : Alone.
+- **Replication Factor** : RF2.
+- **Erasure Coding feature** : Erasure Coding disabled.
+- **Prism entral type** : Alone.
 
 Modify these values:
 
-* **Prism Central VIP** : Prism Central private IP address.
-* **Prism Element Virtual IP(VIP)** : Prism Element private IP address.   
-* **CIDR Gateway** : Private IP address of the gateway followed by the subnet mask of the form XX.XX.XX.XX/XX.
-* **AOS Version**: Version of AOS chosen during redeployment.
+- **Prism Central VIP** : Prism Central private IP address.
+- **Prism Element Virtual IP(VIP)** : Prism Element private IP address.   
+- **CIDR Gateway** : Private IP address of the gateway followed by the subnet mask, in the following form XX.XX.XX.XX/XX.
+- **AOS Version**: Version of AOS chosen during redeployment.
 
 Then click `Redeploy`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 05](images/00-cluster-redeployment-through-manager05.png)
 
-Type `REDEPLOY`{.action} and click `Confirm`{.action}.
+Enter `REDEPLOY` and click `Confirm`{.action}.
 
 ![00 Redeploy cluster from OVHcloud control panel 06](images/00-cluster-redeployment-through-manager06.png)
 
@@ -138,7 +138,7 @@ Type `REDEPLOY`{.action} and click `Confirm`{.action}.
 Log in to the [OVHcloud API](https://api.ovh.com). For more details on how the OVHcloud API works, please refer to our guide on [Getting started with the OVHcloud APIs](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
 
 > [!warning]
-> If you use the OVHcloud API to repackage your cluster with a Nutanix BYOL offer, you will not receive a message to notify you to uninstall your licences. Don't forget to do so. You can use this guide to manage your licences: [Manage licences in your Nutanix cluster on OVHcloud BYOL Offer](https://docs.ovh.com/pl/nutanix/activate-licence-on-nutanix-byol/). After uninstalling your licences, you can redeploy your cluster with the OVHcloud API.
+> If you use the OVHcloud API to repackage your cluster with a Nutanix BYOL offer, you will not receive a message to notify you to uninstall your licences. Don't forget to do so. You can use this guide to manage your licences: [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/pl/nutanix/activate-licence-on-nutanix-byol/). After uninstalling your licences, you can redeploy your cluster with the OVHcloud API.
 >
 
 Use the following API call:
@@ -204,6 +204,6 @@ Click `Execute`{.action} to start the cluster redeployment.
 
 [Using the OVHcloud API](https://docs.ovh.com/pl/api/).
 
-[Manage licences in your Nutanix cluster on OVHcloud BYOL Offer](https://docs.ovh.com/pl/nutanix/activate-licence-on-nutanix-byol/).
+[Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](https://docs.ovh.com/pl/nutanix/activate-licence-on-nutanix-byol/).
 
 Join our community of users on <https://community.ovh.com/en/>.
