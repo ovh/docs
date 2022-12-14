@@ -12,7 +12,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 14/03/2022**
+**Ultimo aggiornamento: 12/12/2022**
 
 ## Obiettivo
 
@@ -141,9 +141,17 @@ Come spiegato nella parte iniziale di questa guida, in quanto amministratore del
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
 
-![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
+![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
-Se il **Monitoraggio** è `attivo`, riceverai un'email ogni volta che il server si comporta in modo inaspettato. Puoi disattivare questi messaggi tramite il pulsante `...`{.action}.
+Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni per il tuo comportamento di sorveglianza:
+
+- **Disattivato**: Questa opzione blocca i messaggi di alert e gli interventi di OVHcloud. Scegli questa opzione se esegui le azioni di amministrazione sul server che impediscono una risposta ICMP.
+- **Attivato con intervento proattivo**: Se il server non risponde più, riceverai un'email di alert e il server sarà verificato da un tecnico.
+- **Attivato senza intervento proattivo**: Riceverai un alert via email nel caso in cui il server non risponda più. Per avviare un intervento è necessario creare una richiesta di assistenza.
+
+![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Clicca su `Conferma`{.action} per aggiornare la tua configurazione di sorveglianza.
 
 Per maggiori informazioni sul monitoraggio, consulta [questa guida](https://docs.ovh.com/it/dedicated/monitoring-ip-ovh/).
 

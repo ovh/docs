@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 14.03.2022**
+**Letzte Aktualisierung am 13.12.2022**
 
 ## Ziel
 
@@ -44,18 +44,20 @@ Wenn Sie mehrere Server haben, können Sie diese über den Button `Alle meine Se
 
 Klicken Sie im Menü `Dedicated Server`{.action} auf den Server Ihrer Wahl, um auf dessen Interface zuzugreifen.
 
-![server interface](images/serverinterfaceOVHcloud.png){.thumbnail}
+![server interface](images/serverinterface01.png){.thumbnail}
+
+![server interface](images/serverinterface02.png){.thumbnail}
 
 **Allgemeine Informationen**: In diesem Abschnitt finden Sie alle Informationen zu Ihrem Server.
 
 - Name: Klicken Sie auf `...`{.action} neben dieser Option, um den Namen Ihres Servers zu ändern.
 - Boot: Klicken Sie auf `...`{.action} neben dieser Option, um den Netboot-Modus Ihres Servers auf den *Rescue-Modus*, den *normalen Modus* (von der Festplatte) oder den *Netzwerk-Modus* umzustellen.
-- System (OS): Klicken Sie `...`{.action} neben dieser Option, um Ihren Server neu zu installieren.
+- Neuestes von OVHcloud installiertes Betriebssystem: Klicken Sie `...`{.action} neben dieser Option, um Ihren Server neu zu installieren.
 
 **Dienststatus**
 
 - Status: Klicken Sie auf `...`{.action} neben dieser Option, um Ihren Server neu zu starten oder zu löschen.
-- Monitoring: Klicken Sie auf `...`{.action} neben dieser Option, um das Monitoring Ihres Servers zu aktivieren/deaktivieren.
+- Monitoring: Klicken Sie auf `Konfigurieren`{.action}, um die [Monitoring-Einstellungen Ihres Servers zu ändern](https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server#monitoring-server).
 
 **Network**
 

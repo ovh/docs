@@ -1,11 +1,11 @@
 ---
-title: What are the IP addresses of the OVHcloud monitoring ?
+title: What are the IP addresses of the OVHcloud monitoring?
 slug: monitoring-ip-ovh
-excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server.
+excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
 section: Network Management
 ---
 
-**Last updated 17th August 2021**
+**Last updated 13th December 2022**
 
 ## Objective
 
@@ -61,23 +61,33 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@nsXXXX:# tcpdump host server.ip | grep ICMP</span> </pre></div>
 >
 
-### Enabling or disabling monitoring
+### Server monitoring
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} drop-down menu.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
 
-In the `General information`{.action} tab, then the **Service status** box, click on the `...`{.action} button next to “Monitoring”. Then click `Enable`{.action} or `Disable`{.action}. Click `Confirm`{.action} in the window that appears to confirm the changes.
+You can set the monitoring status for a dedicated server from the `General information`{.action} tab (section **Service status**).
 
-![monitoring](images/monitoring01.png){.thumbnail}
+![Monitoring](images/monitoring-server.png){.thumbnail}
+
+Click on the button `Configure`{.action}. In the popup window, you have three options for the monitoring behaviour:
+
+- **Disabled**: This option stops alert messages and interventions by OVHcloud. Choose this if you are executing pertinent administrative actions on the server which prevent an ICMP response.
+- **Enabled with proactive intervention**: If the server stops responding, an alert email is sent to you and the server will be checked by a technician.
+- **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, you will need to create a support request.
+
+![Monitoring](images/monitoring-server2.png){.thumbnail}
+
+Click on `Confirm`{.action} to update your monitoring configuration.
 
 ### Enabling monitoring for specific services
 
 In addition to standard monitoring, you can authorise OVHcloud to monitor specific services such as HTTP, SSH and other protocols.
 
-To do this, in the `General information`{.action} tab, then in the **Service status** box, click the `...`{.action} button next to "Monitored services". Click `Monitor my services`{.action}.
+In the `General information`{.action} tab, click the `...`{.action} button next to "Monitored services" in the **Service status** box. Click `Monitor my services`{.action}.
 
 ![monitoring](images/monitoring02.png){.thumbnail}
 
-You will be redirected to the screen below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
+You will be redirected to the page below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
 
 ![monitoring](images/monitoring3.png){.thumbnail}
 

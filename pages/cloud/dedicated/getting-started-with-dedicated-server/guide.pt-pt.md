@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 18/07/2022**
+**Última atualização: 12/12/2022**
 
 ## Objetivo
 
@@ -141,13 +141,19 @@ No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cl
 
 Como explicado acima, o cliente é o administrador do seu servidor dedicado. Enquanto tal, é responsável pelos seus dados e pela sua segurança. Para saber mais sobre a segurança do seu servidor, consulte o nosso guia [Proteger um servidor dedicado](../proteger-um-servidor-dedicado/).
 
-### Monitorização OVHcloud
+### Monitorização OVHcloud <a name="monitoring-server"></a>
 
 Pode ativar ou desativar o monitoring de um servidor dedicado a partir do separador `Informações gerais`{.action} da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A opção situa - se na secção `Estado dos serviços`.
 
-![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
+![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
-Se a **Monitorização** estiver `Ativado`, será alertado por e-mail cada vez que o servidor agir de forma inesperada. Pode desativar estas mensagens através do botão `...`{.action}.
+Clique no botão `Configurar`{.action}. Na janela que aparece, tem três opções para o comportamento de vigilância:
+
+- **Desativado**: Esta opção interrompe as mensagens de alerta e as intervenções da OVHcloud. Escolha esta opção se executar ações de administração pertinentes no servidor que impedem uma resposta ICMP.
+- **Ativado com intervenção proactiva**: Se o servidor deixar de responder, ser-lhe-á enviado um e-mail de alerta e o servidor será verificado por um técnico.
+- **Ativado sem intervenção proactiva**: No caso de o servidor deixar de responder, receberá uma mensagem de alerta por e-mail. Para dar início a uma intervenção, é necessário criar um pedido de assistência.
+
+![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
 Para mais informações sobre o sistema de monitorização, consulte [este manual](https://docs.ovh.com/pt/dedicated/monitoring-ip-ovh/).
 
