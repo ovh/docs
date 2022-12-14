@@ -1359,6 +1359,7 @@
             + [Configuring an additional disk](cloud/vps/config_additional_disk)
             + [Using snapshots on a VPS](cloud/vps/using-snapshots-on-a-vps)
         + [Getting started](bare-metal-cloud-virtual-private-servers-getting-started)
+            + [UAT Test Guide](cloud/vps/uat-gary)
             + [Getting started with a VPS](cloud/vps/starting_with_a_vps)
             + [Securing a VPS](cloud/vps/secure_your_vps)
             + [First steps with pre-installed applications](cloud/vps/apps_first_steps)
