@@ -9,7 +9,7 @@ section: Fortgeschrittene Nutzung
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 04.11.2022**
+**Letzte Aktualisierung am 13.12.2022**
 
 ## Ziel
 
@@ -27,6 +27,11 @@ Antispam-Strategien werden immer strikter. Um ein Blockieren Ihrer E-Mails durch
 ## Voraussetzungen
 
 - Sie haben einen bereits konfigurierten E-Mail-Server.
+
+> [!warning]
+>
+> Ziel dieser Anleitung ist es, Ihnen einige Tipps zur Optimierung des Versands Ihrer E-Mails zu geben. Beachten Sie, dass jeder E-Mail-Dienst seine eigenen Richtlinien und bewährten Verfahren hat, um sicherzustellen, dass die Empfänger E-Mails empfangen. Wir empfehlen Ihnen dringend, diese zu konsultieren.
+>
 
 ## In der praktischen Anwendung
 
@@ -136,6 +141,8 @@ Für mehr Informationen hierzu können Sie bei Microsoft eine [Support-Anfrage e
 #### Gmail Server
 
 Das Hinzufügen spezifischer Einträge (z.B. DMARC-Einträge) kann den Empfang von E-Mails erleichtern, wenn Ihr Empfänger bei Gmail ist. Hier ein Artikel von Google, der Ihnen dabei helfen kann: [Add a DMARC record](https://support.google.com/a/answer/2466563?){.external}.
+
+Google bietet auch einen [Artikel zur Spam-Prävention](https://support.google.com/mail/answer/81126?hl=en){.external} für Gmail-Benutzer.
 
 ### Ihre Konfiguration überprüfen
 

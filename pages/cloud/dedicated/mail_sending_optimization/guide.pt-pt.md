@@ -9,7 +9,7 @@ section: Utilização avançada
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 04/11/2022**
+**Última atualização: 13/12/2022**
 
 ## Objetivo
 
@@ -27,6 +27,11 @@ As políticas antisspam são cada vez mais rigorosas. Para simplificar o envio d
 ## Requisitos
 
 - Ter um servidor de e-mail já configurado
+
+> [!warning]
+>
+> O objetivo deste guia é fornecer-lhe alguns truques para otimizar o envio dos seus e-mails. Tenha em conta que cada serviço de mensagens tem as suas próprias diretivas e boas práticas para garantir a receção dos e-mails pelos destinatários. Recomendamos vivamente que os consulte.
+>
 
 ## Instruções
 
@@ -136,6 +141,8 @@ Para mais informações queira abrir um [pedido de assistência](https://support
 #### Para um servidor Gmail
 
 A adição de registos específicos (por exemplo, um registo DMARC) pode facilitar a receção dos e-mails se o seu destinatário estiver no Gmail. Aqui está um artigo da Google que o pode ajudar: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
+
+A Google também disponibiliza um [artigo dedicado à prevenção do spam](https://support.google.com/mail/answer/81126?hl=en){.external} para os utilizadores do Gmail.
 
 ### Verificar as suas informações
 
