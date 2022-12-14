@@ -1,13 +1,17 @@
 ---
-title: ETCD Quotas error, troubleshooting
-excerpt: ''
+title: ETCD Quotas, usage, troubleshooting and error
+excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
 slug: etcd-quota-error
 section: Diagnostics
 ---
 
-**Last updated 04<sup>rth</sup> October 2022.**
+**Last updated 14th December 2022**
 
 ## Objective
+
+ETCD is one of the major components of a Kubernetes cluster. It's a distributed key-value database that allows to store and replicate cluster state.
+
+![Kubernetes components](images/kube-components-schema.png){.thumbnail}
 
 At some point during the life of your Managed Kubernetes cluster, you may encounter one of the following errors which prevent you from altering resources:
 
@@ -17,7 +21,7 @@ rpc error: code = Unknown desc = quota computation: etcdserver: not capable
 rpc error: code = Unknown desc = The OVHcloud storage quota has been reached
 ```
 
-**This guide will show you how to troubleshoot and resolve this situation.**
+**This guide will show you how to view your usage and quota, troubleshoot and resolve this situation.**
 
 ## Requirements
 
@@ -36,10 +40,32 @@ Quota = 10MB + (25MB per node)* (capped to 200MB)
 
 For example, a cluster with 3 `b2-7` servers has a quota of __85 MB__.
 
+In order to check your current ETCD quota and usage, you can query the OVHcloud API.
+
+> [!api]
+>
+> @api {GET} /cloud/project/{serviceName}/kube/{kubeID}/metrics/etcdUsage
+>
+
+**Result:**
+
+```json
+{
+  "quota": 89128960,
+  "usage": 2604349
+}
+```
+
+> [!primary]
+>
+> ETCD quota and usage result are in bytes.
+
+Using this API endpoint, you can view the ETCD usage and quota and anticipate a possible issue.
+
 The quota can thus be increased by adding nodes, but will never be decreased (even if all nodes are removed) to prevent data loss.  
 The error mentioned above states that the cluster's ETCD storage usage has exceeded the quota.
 
-**To resolve the situation, resources created in excess need to be deleted.**
+**To resolve the situation, you need to delete resources created in excess.**
 
 ### Most common case: misconfigured cert-manager
 
