@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 18/07/2022**
+**Última actualización: 12/12/2022**
 
 ## Objetivo
 
@@ -145,9 +145,17 @@ Como se recuerda en el apartado Objetivo de esta guía, usted es el administrado
 
 Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). La opción se encuentra en la sección `Estado de los servicios`.
 
-![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
+![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
-Si la **monitorización** está `activada`, recibirá un mensaje de correo electrónico cada vez que el servidor se comporte de forma inesperada. Puede desactivar estos mensajes con el botón `...`{.action}.
+Haga clic en el botón `Configurar`{.action}. En el cuadro de diálogo, se mostrarán tres opciones para el comportamiento de la vigilancia:
+
+- **Desactivado**: Esta opción detiene los mensajes de alerta y las intervenciones de OVHcloud. Seleccione esta opción si ejecuta acciones de administración relevantes en el servidor que impidan una respuesta ICMP.
+- **Activado con intervención proactiva**: Si el servidor no responde, recibirá un mensaje de correo electrónico de alerta y el servidor será verificado por un técnico.
+- **Activado sin intervención proactiva**: Recibirá un mensaje de alerta por correo electrónico en caso de que el servidor deje de responder. Para iniciar una intervención, es necesario crear una solicitud de asistencia.
+
+![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Haga clic en `Confirmar`{.action} para actualizar su configuración de monitorización.
 
 Para más información sobre la monitorización de OVHcloud, consulte [esta guía](../monitoring-ip-ovh/).
 
