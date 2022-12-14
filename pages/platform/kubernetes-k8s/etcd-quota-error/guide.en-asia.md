@@ -5,11 +5,11 @@ slug: etcd-quota-error
 section: Diagnostics
 ---
 
-**Last updated 14 December 2022**
+**Last updated 14th December 2022**
 
 ## Objective
 
-ETCD is one of the major component of a Kubernetes cluster. It's a distributed key-value database that allow to store and replicate cluster state.
+ETCD is one of the major components of a Kubernetes cluster. It's a distributed key-value database that allows to store and replicate cluster state.
 
 ![Kubernetes components](images/kube-components-schema.png){.thumbnail}
 
@@ -48,6 +48,7 @@ In order to check your current ETCD quota and usage, you can query the OVHcloud 
 >
 
 **Result:**
+
 ```json
 {
   "quota": 89128960,
