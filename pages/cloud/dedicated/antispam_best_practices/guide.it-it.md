@@ -10,7 +10,7 @@ order: 04
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 30/11/2022**
+**Ultimo aggiornamento: 14/12/2022**
 
 ## Obiettivo
 
@@ -215,7 +215,7 @@ Lo sblocco dell'indirizzo IP è in corso. L'operazione potrebbe richiedere alcun
 
 ### In caso di falsi positivi
 
-In alcuni casi, l'avviso di spam potrebbe essere un falso positivo. Se avete verificato e trovato che il **Message-ID** è associato a un'e-mail legittima, dovete assicurarvi che le vostre e-mail siano conformi alle [RFC (EN)](#rfc) e alle [buone pratiche (EN)](#bestpractices).
+In alcuni casi, l'avviso di spam potrebbe essere un falso positivo. Se avete verificato e trovato che il **Message-ID** è associato a un'e-mail legittima, dovete assicurarvi che le vostre e-mail siano conformi alle [RFC (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#rfc) e alle [buone pratiche (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices).
 
 
 ## Per saperne di più

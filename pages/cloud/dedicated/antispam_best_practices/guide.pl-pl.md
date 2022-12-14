@@ -10,7 +10,7 @@ order: 04
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 30-11-2022**
+**Ostatnia aktualizacja z dnia 14-12-2022**
 
 ## Wprowadzenie
 
@@ -215,7 +215,7 @@ Odblokowanie adresu IP może zająć kilka minut.
 
 ### W przypadku wyników fałszywie dodatnich
 
-W niektórych przypadkach alert antyspamowy może być fałszywie dodatni. Jeśli sprawdzasz i odkryłeś, że **Message-ID** jest przypisany do poprawnego adresu e-mail, upewnij się,  że Twoje wiadomości e-mail są zgodne z [RFC (EN)](#rfc) i [dobrymi praktykami (EN)](#bestpractices).
+W niektórych przypadkach alert antyspamowy może być fałszywie dodatni. Jeśli sprawdzasz i odkryłeś, że **Message-ID** jest przypisany do poprawnego adresu e-mail, upewnij się,  że Twoje wiadomości e-mail są zgodne z [RFC (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#rfc) i [dobrymi praktykami (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices).
 
 ## Sprawdź również
  

@@ -10,7 +10,7 @@ order : 04
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 30/11/2022**
+**Última actualización: 14/12/2022**
 
 ## Objetivo
 
@@ -214,7 +214,7 @@ La dirección IP se está desbloqueando. La operación puede tardar varios minut
 
 ### En caso de falsos positivos
 
-En algunos casos, la alerta de spam puede ser un falso positivo. Si ha comprobado que el **Message-ID** está asociado a un correo electrónico legítimo, debe asegurarse de que sus correos electrónicos cumplen con el [RFC (EN)](#rfc) y las [buenas prácticas (EN)](#bestpractices).
+En algunos casos, la alerta de spam puede ser un falso positivo. Si ha comprobado que el **Message-ID** está asociado a un correo electrónico legítimo, debe asegurarse de que sus correos electrónicos cumplen con el [RFC (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#rfc) y las [buenas prácticas (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices).
 
 ## Más información
   

@@ -10,7 +10,7 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 30.11.2022**
+**Letzte Aktualisierung am 14.12.2022**
 
 ## Ziel
 
@@ -215,7 +215,7 @@ Die IP-Adresse wird nun entsperrt. Es kann einige Minuten dauern, bis die Operat
 
 ### False Positives
 
-In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [RFC (EN)](#rfc) und den [*Best Practices* (EN)](#bestpractices) entsprechen.
+In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [RFC (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#rfc) und den [*Best Practices* (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices) entsprechen.
 
 
 ## Weiterführende Informationen
