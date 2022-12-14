@@ -16,7 +16,7 @@ order: 03
 
 Os certificados Secure Socket Layer (SSL) permitem encriptar as trocas efetuadas a partir ou para o seu website. Isto evita que uma pessoa ou um robô malicioso venha "ouvir" claramente os pedidos enviados ou enviados com o seu website.
 
-A OVHcloud propõe vários tipos de certificados SSL nas nossas ofertas de[alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/). Estes são apresentados no nosso guia "[Gerir um certificado SSL no seu alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/)". Os certificados SSL são incontornáveis para a segurança do seu website.
+A OVHcloud propõe vários tipos de certificados SSL nas nossas ofertas de [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/). Estes são apresentados no nosso guia "[Gerir um certificado SSL no seu alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/)". Os certificados SSL são incontornáveis para a segurança do seu website.
 
 Existem três tipos de certificados SSL:
 
