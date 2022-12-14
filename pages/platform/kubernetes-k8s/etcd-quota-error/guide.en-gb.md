@@ -64,7 +64,7 @@ Using this API endpoint, you can view the ETCD usage and quota and anticipate a 
 The quota can thus be increased by adding nodes, but will never be decreased (even if all nodes are removed) to prevent data loss.  
 The error mentioned above states that the cluster's ETCD storage usage has exceeded the quota.
 
-**To resolve the situation, resources created in excess need to be deleted.**
+**To resolve the situation, you need to delete resources created in excess.**
 
 ### Most common case: misconfigured cert-manager
 
