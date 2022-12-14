@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 03
 ---
 
-**Dernière mise à jour le 28/11/2022**
+**Dernière mise à jour le 14/12/2022**
 
 ## Objectif
 
@@ -160,7 +160,14 @@ Quand un ou des fichiers assets sont modifiés, reconstruisez-le le cache avec l
 php cecil.phar cache:clear:assets
 ```
 
-Si les modifications ne sont pas effectives sur votre navigateur, pensez à vider le cache de celui-ci et rebuilder votre solution&nbsp;:
+Si les modifications ne sont pas effectives sur votre navigateur, pensez à vider le cache de celui-ci.
+Vous pouvez également supprimer les fichiers générés sur votre serveur&nbsp;:
+
+```sh
+php cecil.phar clear
+```
+
+et rebuilder votre solution&nbsp;:
 
 ```sh
 php cecil.phar build
@@ -238,4 +245,4 @@ Ce guide vous donne un exemple de la façon dont vous pouvez intégrer des donn�
     - [News API](https://newsapi.org/)
     - [Polygon.io](https://polygon.io/)
     - une liste d'[API publiques](https://github.com/public-api-lists/public-api-lists)
-- les [commandes](https://cecil.app/documentation/commands/) Cecil
+- les [commandes](https://cecil.app/documentation/commands/) Cecil.
