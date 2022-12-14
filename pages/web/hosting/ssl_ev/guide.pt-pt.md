@@ -71,7 +71,7 @@ Insira com exatidão as informações solicitadas por **Sectigo** antes que lhe 
 
 ![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
 
-Clique em 'Continuer {.action} depois de **todos os elementos** estarem corretamente inseridos.
+Clique em `Continuer`{.action} depois de **todos os elementos** estarem corretamente inseridos.
 
 Continue a encomenda até ao pagamento para validar o pedido de criação do certificado SSL.
 
@@ -93,7 +93,7 @@ Se ainda não encomendou o seu nome de domínio e o alojamento associado, aceda 
 De seguida, selecione o seu nome de domínio, escolha o seu alojamento e as suas opções até ao passo `Configure o seu alojamento web`.
 
 Selecione as suas escolhas de instalação de `módulo em 1 clique`{.action} e `CDN`{.action}, e desça no final da página até à secção `Torne o seu website seguro com os nossos certificados SSL`{.action}.
-
+ 
 ![SSL EV order](images/ssl_ev_order.png){.thumbnail}
 
 Escolha `Sectigo EV SSL`{.action} e depois clique em `Seguinte`{.action}.

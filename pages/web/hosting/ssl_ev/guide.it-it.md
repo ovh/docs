@@ -154,7 +154,7 @@ Una volta effettuate le verifiche da Sectigo, verrai contattato dai loro servizi
 
 > [!success]
 >
-> Per maggiori informazioni sulle operazioni descritte nello Step 2**, consulta la [documentazione ufficiale di Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sull'argomento.
+> Per maggiori informazioni sulle operazioni descritte nello **Step 2**, consulta la [documentazione ufficiale di Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sull'argomento.
 >
 
 ### Step 3: installazione del certificato SSL EV con il tuo dominio e il tuo hosting OVHcloud

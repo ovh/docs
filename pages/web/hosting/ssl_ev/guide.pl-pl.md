@@ -90,7 +90,7 @@ Jeśli jeszcze nie zamówiłeś domeny i przypisanego hostingu, przejdź do [str
 
 ![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
 
-Następnie wybierz domenę, wybierz hosting oraz opcje, aż do etapu `Konfiguracja hostingu.
+Następnie wybierz domenę, wybierz hosting oraz opcje, aż do etapu `Konfiguracja hostingu`.
 
 Wybierz moduł `moduł za 1 kliknięciem`{.action} i `CDN`{.action} i przejdź na dół strony, aż do sekcji `Zabezpiecz swoją stronę za pomocą naszych certyfikatów SSL`{.action}.
 
