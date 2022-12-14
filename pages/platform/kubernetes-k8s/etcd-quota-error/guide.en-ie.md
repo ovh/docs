@@ -5,7 +5,7 @@ slug: etcd-quota-error
 section: Diagnostics
 ---
 
-**Last updated 13 December 2022.**
+**Last updated 14 December 2022**
 
 ## Objective
 
@@ -47,15 +47,17 @@ In order to check your current ETCD quota and usage, you can query the OVHcloud 
 > @api {GET} /cloud/project/{serviceName}/kube/{kubeID}/metrics/etcdUsage
 >
 
-TODO: xxxx
-
 **Result:**
 ```json
 {
-  "usage":1234,
-  "quota":2345
+  quota: 89128960,
+  usage: 2604349
 }
 ```
+
+> [!primary]
+>
+> ETCD quota and usage result are in bytes.
 
 Using this API endpoint, you can view the ETCD usage and quota and anticipate a possible issue.
 
