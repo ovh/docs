@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 05
 ---
 
-**Dernière mise à jour le 12/12/2022**
+**Dernière mise à jour le 14/12/2022**
 
 ## Objectif
 
@@ -331,7 +331,7 @@ Ci-dessous un aperçu de ce que l'on obtient à l'affichage lors d'un Netboot UE
 
 Ci-dessus, nous avons le bootloader **rEFInd** chargé sur une machine avec un système *debian* installé.
 
-Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/dedicated-pxe-private/files/src.zip" download>ce lien</a> les ressources qui ont servi à élaborer nos tests et exemples présents tout au long de cette présentation. Ils pourront servir de template selon vos besoins.
+Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/dedicated/pxe-with-full-private-dedicated/files/src.zip" download>ce lien</a> les ressources qui ont servi à élaborer nos tests et exemples présents tout au long de cette présentation. Ils pourront servir de template selon vos besoins.
 
 #### Optionnel
 

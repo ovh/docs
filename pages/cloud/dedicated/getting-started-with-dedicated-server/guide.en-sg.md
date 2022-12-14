@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 18th July 2022**
+**Last updated 12th December 2022**
 
 ## Objective
 
@@ -79,7 +79,7 @@ In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH
 
 ![Customise the partition configuration](images/SSH_14.png){.thumbnail}
 
-As we are installing a dedicated server, make sure to select "Dedicated" from the drop-down menu (viable for a VPS as well).
+As you are installing a dedicated server, make sure to select "Dedicated" from the drop-down menu (viable for a VPS as well).
 
 In the new window, enter an ID (a name of your choice) and the key itself (of type RSA, ECDSA or Ed25519) into the respective fields.
 
@@ -137,13 +137,21 @@ However, you can carry out a "hard reboot" at any time in your [OVHcloud Control
 
 As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](../securing-a-dedicated-server/).
 
-### OVHcloud Monitoring 
+### OVHcloud Monitoring <a name="monitoring-server"></a> 
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) (section **Service status**).
 
-![Monitoring](images/monitoring-your-server-alt.png){.thumbnail}
+![Monitoring](images/monitoring-your-server.png){.thumbnail}
 
-If **Monitoring** is set to `Enabled`, you will notified via email every time the server is behaving in an unexpected way. You can disable these messages via the `...`{.action} button.
+Click on the button `Configure`{.action}. In the popup window, you have three options for the monitoring behaviour:
+
+- **Disabled**: This option stops alert messages and interventions by OVHcloud. Choose this if you are executing pertinent administrative actions on the server which prevent an ICMP response.
+- **Enabled with proactive intervention**: If the server stops responding, an alert email is sent to you and the server will be checked by a technician.
+- **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, you will need to create a support request.
+
+![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Click on `Confirm`{.action} to update your monitoring configuration.
 
 You can find more information about OVHcloud Monitoring in [this guide](../monitoring-ip-ovh/).
 

@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 14-03-2022**
+**Ostatnia aktualizacja z dnia 13-12-2022**
 
 ## Wprowadzenie
 
@@ -44,18 +44,20 @@ Jeśli posiadasz kilka serwerów, przycisk `Wszystkie moje serwery`{.action} poz
 
 W menu `Serwery dedykowane`{.action} kliknij wybrany serwer, aby uzyskać dostęp do jego interfejsu.
 
-![interfejs serwera](images/serverinterfaceOVHcloud.png){.thumbnail}
+![server interface](images/serverinterface01.png){.thumbnail}
+
+![server interface](images/serverinterface02.png){.thumbnail}
 
 **Informacje ogólne**: w tej sekcji znajdziesz wszystkie informacje dotyczące Twojego serwera.
 
 - Nazwisko: kliknij `...`{.action} obok tej opcji, aby zmienić nazwę serwera.
 - Boot: kliknij `...`{.action} obok tej opcji, aby zmienić netboot serwera w *trybie diagnostycznym (Rescue)*, *trybie normalnym* (na dysku twardego) lub *trybie sieci (Netboot)*.
-- System (OS): kliknij `...`{.action} obok tej opcji, aby zainstalować/zainstalować serwer.
+- Ostatni system operacyjny (OS) zainstalowany przez OVHcloud: kliknij `...`{.action} obok tej opcji, aby zainstalować/zainstalować serwer.
 
 **Stan usług**
 
 - Status: kliknij `...`{.action} obok tej opcji, aby uruchomić lub usunąć serwer.
-- Monitoring: kliknij `...`{.action} obok tej opcji, aby włączyć/wyłączyć monitoring serwera.
+- Monitoring: kliknij na `Skonfiguruj`{.action} aby zmienić [ustawienia monitorowania serwera](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym#monitoring-server).
 
 **Sieć**
 

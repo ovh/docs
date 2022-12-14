@@ -249,12 +249,11 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 >
 > Prenez en compte que le nom du fichier réseau dans notre exemple peut différer du vôtre. Veuillez adapter les commandes en fonction du nom de votre fichier. Pour obtenir le nom de votre interface réseau afin de pouvoir éditer le fichier réseau approprié, vous pouvez exécuter la commande suivante : `ip a`.
 >
+>
 > Vous pouvez également vérifier l'interface connectée avec la commande suivante :
 >
-> ```bash
-> nmcli connection show
-> ```
->
+> `nmcli connection show`
+> 
 
 Vous pouvez maintenant ajouter votre Additional IP au fichier de configuration, comme dans l'exemple ci-dessous :
 
@@ -323,13 +322,13 @@ Ensuite, éditez le fichier avec le contenu ci-dessous, en remplaçant « INTER
 
 ```sh
 network:
-    version : 2
+    version: 2
     ethernets:
-        INTERFACE_NAME :
+        INTERFACE_NAME:
             dhcp4: true
             match:
-                macaddress : MAC_ADDRESS
-            set-name : INTERFACE_NAME
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
             addresses:
             - ADDITIONAL_IP/32
 ```
