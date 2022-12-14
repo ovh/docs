@@ -67,7 +67,7 @@ Klicken Sie anschließend auf den Tab `Sicherheit`{.action}, um auf folgende Sei
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 
-Klicken Sie auf `Aktivieren`{}.action} rechts neben der `Einschränkung des Zugangs nach IP`{.action}.
+Klicken Sie auf `Aktivieren`{.action} rechts neben der `Einschränkung des Zugangs nach IP`{.action}.
 
 #### Vorstellung des Interfaces
 
