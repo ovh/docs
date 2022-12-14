@@ -30,7 +30,7 @@ Antispam-Strategien werden immer strikter. Um ein Blockieren Ihrer E-Mails durch
 
 > [!warning]
 >
-> Ziel dieser Anleitung ist es, Ihnen einige Tipps zur Optimierung des Versands Ihrer E-Mails zu geben. Beachten Sie, dass jeder E-Mail-Dienst seine eigenen Richtlinien und bewährten Verfahren hat, um sicherzustellen, dass die Empfänger E-Mails empfangen. Wir empfehlen Ihnen dringend, diese zu konsultieren.
+> Ziel dieser Anleitung ist es, Ihnen einige Hinweise zur Optimierung beim Versenden Ihrer E-Mails zu geben. Beachten Sie, dass jeder E-Mail-Dienst eigene Richtlinien und bewährte Verfahren hat, um sicherzustellen, dass seine Nutzer E-Mails empfangen. Wir empfehlen Ihnen dringend, diese zu konsultieren.
 >
 
 ## In der praktischen Anwendung
