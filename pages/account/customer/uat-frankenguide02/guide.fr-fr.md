@@ -5,6 +5,18 @@ excerpt: 'Made from pieces of other guides'
 
 **Dernière mise à jour le 03/08/2022**
 
+# This is an H1 title
+
+## This is an H2 title
+
+### This is an H3 title
+
+#### This is an H4 title
+
+##### This is an H5 title
+
+###### This is an H6 title
+
 ### Summary
 
 Original format is from <https://docs.ovh.com/fr/nutanix/metro-availability/#en-pratique>
@@ -14,6 +26,81 @@ Original format is from <https://docs.ovh.com/fr/nutanix/metro-availability/#en-
     - [Tabs with code](#tabscode)
 - [A gif](#gif)
     - [Etape 2.1 Contrôle du plan de reprise d'activité](#faqformats)
+
+### Links
+
+This is [a link to another guide](https://docs.ovh.com/fr/customer/arnaques-fraude-phishing/)
+
+This one is also [a link to another guide, but different](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/)
+
+### Copyright symbol
+
+Original content is from [this guide](https://docs.ovh.com/fr/storage/file-storage/netapp/concepts/#enterprise-file-storage-cest-quoi)
+
+Enterprise File Storage est une offre de système de fichiers managée par OVHcloud et basée sur la solution NetApp&#174; ONTAP.
+
+### Highlighted text
+
+Let's test different highlighting boxes.
+
+#### Primary <a name="primary"></a>
+
+Original content is from [this guide](https://docs.ovh.com/fr/customer/ovhcloud-control-panel-ip-restriction/)
+
+> [!primary]
+>
+> **Avant** de poursuivre les actions décrites dans cette étape, répétez l'opération pour toutes les autres éventuelles adresses IP dont vous souhaitez bloquer l'accès à votre espace client OVHcloud.
+>
+
+#### Warning <a name="warning"></a>
+
+Original content is from [this guide](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#que-faire-si-lun-de-mes-peripheriques-est-perdu-ou-cesse-de-fonctionner)
+
+> [!warning]
+>
+> La suppression d'un seul périphérique ne désactive pas la double authentification.
+>
+> Avant de supprimer un périphérique et afin de ne pas bloquer l'accès à votre compte, vérifiez donc que vous disposez au choix :
+>
+> - d'un périphérique fonctionnel;
+>
+> - d'une autre méthode de double authentification fonctionnelle;
+>
+> - de codes de secours valides.
+>
+
+#### Alert <a name="alert"></a>
+
+Original content is from [this guide](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/#que-faire-si-lun-de-mes-peripheriques-est-perdu-ou-cesse-de-fonctionner)
+
+> [!alert]
+>
+>Si vous avez encore accès à votre espace client OVHcloud malgré la perte de votre périphérique, il est essentiel, à des fins de sécurité, de **supprimer ce périphérique de la liste de ceux utilisés pour la double authentification**.
+>
+>Consultez le chapitre suivant de ce guide pour plus de détails sur la suppression d'un périphérique.
+>
+
+#### Success <a name="success"></a>
+
+Original content is from [this guide](https://docs.ovh.com/gb/en/managed-bare-metal/using-managed-bare-metal-with-vrack/#vsphere-client)
+
+> [!success]
+>
+> By default, OVHcloud delivers an infrastructure with 11 VLANs included (VLAN10 to VLAN20).
+>
+
+#### Grey Highlighting <a name="grey"></a>
+
+Original content is from [this guide](https://docs.ovh.com/fr/customer/ovhcloud-control-panel-ip-restriction/)
+
+> Désormais, **toutes** les adresses IP publiques peuvent accéder à votre espace client OVHcloud, **à l'exception de** celles déclarées dans la section `IP configurées`.
+
+Another one, from [this guide](https://docs.ovh.com/gb/en/load-balancer/configure-iplb/#add-an-ssltls-certificate_1)
+
+>
+> To ensure that your service remains accessible when you switch your domain to your OVHcloud Load Balancer service’s IP address in order to validate your certificate, it is good practice to start by configuring and testing all of the HTTP configuration on port 80. This way, your website will remain accessible without any interruptions.
+> If the website already has a HTTPS connection and you want to switch to certificates managed by your OVHcloud Load Balancer service, you can import your existing certificates, configure and test your HTTPS front-end, and order a new certificate for the same domain.  It will be taken into account automatically when your old certificate expires.
+> 
 
 ### Anchor links <a name="anchorlinks"></a>
 
