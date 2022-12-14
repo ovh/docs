@@ -1,16 +1,16 @@
 ---
-title: "Comment installer les outils courants utilisés en PHP"
-excerpt: "Comment installer les outils courants utilisés en PHP"
-slug: how-to-install-common-tools
-section: PHP
-order: 3
+title: "Comment installer les outils courants et modifier certaines caractéristiques de votre serveur"
+excerpt: ""
+slug: how-to-install-common-tools-and-change-settings-on-your-server
+section: 
+order: 
 ---
 
-**Dernière mise à jour le 25/10/2022**
+**Dernière mise à jour le 14/12/2022**
 
 ## Objectif
 
-Ce guide a pour objectif de vous permettre d'installer les différents outils nécessaires au déploiement d'application web et de framework sur votre hébergement.
+Ce guide a pour objectif de vous permettre d'installer les différents outils nécessaires au déploiement d'application web et de framework sur votre hébergement et de  
 
 ## Prérequis
 
@@ -101,6 +101,48 @@ Verifiez :
 ```sh
 which npm
 ```
+
+### Paramètres de votre serveur
+
+Nos hébergements mutualisés vous permettent de modifier certaines caractéristiques de votre serveur.
+
+#### Modifier la langue
+
+Pour connaître la langue en vigueur, tapez la commande&nbsp;:
+
+```sh
+echo $LANG
+```
+
+Il est possible de modifier la langue de cette façon&nbsp;:
+
+```sh
+export LANG=en_US.utf8
+```
+
+Cette modification ne sera plus effective une fois votre session terminée. Pour que le changement de langue soit persistant, vous devez modifier le fichier `.bashrc` situé à la racine de votre serveur. Éditez le fichier avec la commande suivante&nbsp;:
+
+```sh
+nano .bashrc
+```
+
+Ajoutez à la fin du fichier une variable d'environnement `LANG` qui sera suivie de la commande `export`&nbsp;:
+
+```sh
+# .bashrc
+
+# User specific aliases and functions
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+LANG="fr_FR.utf8"
+export LANG
+```
+
+Vous devez vous déconnecter puis revenir sur votre session pour que les modifications soient prises en compte.
 
 ## Aller plus loin
 
