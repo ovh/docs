@@ -1,7 +1,7 @@
 ---
 title: Configuration du DHCP
 slug: nsx-t-dhcp-configuration
-excerpt: Comment ajouter un serveur DHCP sur un segment
+excerpt: Ajout d'un serveur DHCP à un segment
 section: NSX-T
 order: 03
 ---
@@ -14,7 +14,7 @@ order: 03
 
 ## Objectif
 
-**Découvrir la création et l'utilisation des segment dans l'interface NSX-T et vCenter**
+**Comment faire pour configurer un serveur DHCP dans un segment**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -40,7 +40,7 @@ Cliquez sur l'icône de configuration indiqué avec `trois points verticaux`{.ac
 
 ![01 add DHCP ON Segment 02](images/01-add-dhcp-on-segment02.png)
 
-Cliquez sur `Set DHCP CONFIG`{.action}
+Cliquez sur `Set DHCP CONFIG`{.action}.
 
 ![01 add DHCP ON Segment 03](images/01-add-dhcp-on-segment03.png)
 
@@ -50,15 +50,15 @@ Choisissez à gauche `Local DHCP Server`{.action} dans **DHCP Type**. Ensuite cl
 
 Choisissez ces informations :
 
-* **Name** : Nom de votre serveur DHCP.
-* **Server IP Address** : adresse IP de votre serveur DHCP qui ne doit pas être la même que celle de votre passerelle sous cette forme 192.168.1.253/24.
-* **Edge Cluster** : Sélectionnez votre Edge cluster.
+***Name**: Nom de votre serveur DHCP.
+***Server IP Address**: L'adresse IP de votre serveur DHCP, qui ne doit pas être la même que l'adresse IP de votre passerelle sous la forme 192.168.1.253/24.
+***Edge Cluster**: Sélectionnez votre cluster edge.
 
 Et cliquez sur `Save`{.action}.
 
 ![01 add DHCP ON Segment 05](images/01-add-dhcp-on-segment05.png)
 
-Saisissez ces informations :
+Saisissez ces valeurs :
 
 * **DHCP Server Address** :  Adresse du serveur DHCP comme 192.168.1.253/24
 * **DHCP Range** : Etendue de votre serveur DHCP avec l'adresse du début et de fin séparées un tirêt comme 192.168.1.10-192.168.1.200
