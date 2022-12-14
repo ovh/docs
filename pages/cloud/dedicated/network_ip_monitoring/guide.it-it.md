@@ -9,7 +9,7 @@ section: Rete e IP
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 17/08/2021**
+**Ultimo aggiornamento: 13/12/2022**
 
 ## Obiettivo
 
@@ -73,19 +73,29 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona la scheda `Bare Metal Cloud`{.action}.Seleziona il server nel menu a tendina **Server dedicati**.
 
-Nella scheda `Informazioni generali`{.action} e poi la struttura **Stato dei servizi**, clicca sul pulsante `...`{.action} accanto a "Monitoraggio". Clicca su `Attiva`{.action} o `Disattiva`{.action}. Clicca su `Conferma`{.action} nella nuova finestra per confermare le modifiche.
+È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action}. L'opzione si trova nella sezione `Stato dei servizi`.
 
-![monitoring](images/monitoring01.png){.thumbnail}
+![Monitoring](images/monitoring-server.png){.thumbnail}
+
+Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni per il tuo comportamento di sorveglianza:
+
+- **Disattivato**: Questa opzione blocca i messaggi di alert e gli interventi di OVHcloud. Scegli questa opzione se esegui le azioni di amministrazione sul server che impediscono una risposta ICMP.
+- **Attivato con intervento proattivo**: Se il server non risponde più, riceverai un'email di alert e il server sarà verificato da un tecnico.
+- **Attivato senza intervento proattivo**: Riceverai un alert via email nel caso in cui il server non risponda più. Per avviare un intervento è necessario creare una richiesta di assistenza.
+
+![Monitoring](images/monitoring-server2.png){.thumbnail}
+
+Clicca su `Conferma`{.action} per aggiornare la tua configurazione di sorveglianza.
 
 ### Attiva il monitoring di servizi specifici
 
 Oltre al monitoring standard, OVHcloud può anche monitorare servizi specifici come HTTP, SSH e altri protocolli.
 
- Per effettuare questa operazione, nella scheda `Informazioni generali`{.action} e poi nel riquadro **Stato dei servizi**, clicca sul pulsante `...`{.action} accanto a "Servizi monitorati". Clicca su `Monitora i tuoi servizi`{.action}.
+Per effettuare questa operazione, nella scheda `Informazioni generali`{.action} e poi nel riquadro **Stato dei servizi**, clicca sul pulsante `...`{.action} accanto a "Servizi monitorati". Clicca su `Monitora i tuoi servizi`{.action}.
 
 ![monitoring](images/monitoring02.png){.thumbnail}
 
- Verrai reindirizzato allo schermo qui sotto. Clicca su `Monitora un servizio`{.action} e inserisci l'indirizzo IP, il protocollo, il numero di porta, la risposta del server e l'intervallo di tempo tra le verifiche del tuo servizio. Clicca sul simbolo di conferma (**V**) per confermare le modifiche.
+Verrai reindirizzato allo schermo qui sotto. Clicca su `Monitora un servizio`{.action} e inserisci l'indirizzo IP, il protocollo, il numero di porta, la risposta del server e l'intervallo di tempo tra le verifiche del tuo servizio. Clicca sul simbolo di conferma (**V**) per confermare le modifiche.
 
 ![monitoring](images/monitoring3.png){.thumbnail}
 

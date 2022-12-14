@@ -1,7 +1,7 @@
 ---
-title: Was sind die IP-Adressen des OVHcloud Monitorings?
+title: Welche IP-Adressen nutzt das OVHcloud Monitoring?
 slug: monitoring-ip-ovh
-excerpt: Hier finden Sie die IP-Adressen, die bei der Einrichtung einer Firewall angegeben werden müssen, damit das OVHcloud Monitoring auf Ihrem Server weiterhin funktioniert.
+excerpt: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
 section: Netzwerk & IP
 ---
 
@@ -9,7 +9,7 @@ section: Netzwerk & IP
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 17.08.2021**
+**Letzte Aktualisierung am 13.12.2022**
 
 ## Ziel
 
@@ -23,7 +23,7 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 
 ## Voraussetzungen
 
-- Ein OVHcloud Produkt, auf dem Sie eine Firewall installiert haben.
+- Sie haben einen OVHcloud Dienst, auf dem Sie eine Firewall installiert haben.
 - Sie haben Zugriff auf die Firewall-Regeln.
 
 ## In der praktischen Anwendung
@@ -62,7 +62,7 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 
 > [!primary]
 >
-> Wenn Ihr Server sich in Roubaix 3 befindet, muss die letzte IP über tcpdump abgerufen werden.
+> Wenn Ihr Server sich in Roubaix 3 befindet, muss die letzte IP über `tcpdump` abgerufen werden.
 >
 > ```
 > tcpdump host feste.ip.des.servers | grep ICMP
@@ -71,23 +71,35 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 
 ### Monitoring aktivieren oder deaktivieren
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und wählen Sie den Tab `Bare Metal Cloud`{.action}. Wählen Sie den betreffenden Server im Drop-down-Menü `Dedicated Server`{.action} aus.
+Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und gehen Sie zum Bereich `Bare Metal Cloud`{.action}. Wählen Sie den betreffenden Server unter `Dedicated Server`{.action} aus.
 
-Klicken Sie im Tab `Allgemeine Informationen`{.action} und dann im Rahmen des **Dienststatus** auf den Button `...`{.action} neben "Monitoring". Klicken Sie dann auf `Aktivieren`{.action} oder `Deaktivieren`{.action}. Klicken Sie im angezeigten Fenster auf `Bestätigen`{.action}, um die Änderungen zu bestätigen.
+Sie können den Monitoring-Status eines Servers vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
-![monitoring](images/monitoring01.png){.thumbnail}
+![Monitoring](images/monitoring-server.png){.thumbnail}
+
+Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster haben Sie drei Optionen für das Überwachungsverhalten:
+
+- **Deaktiviert**: Mit dieser Option werden Warnmeldungen und Eingriffe von OVHcloud gestoppt. Wählen Sie dies aus, wenn Sie auf dem Server relevante Administrationsmaßnahmen durchführen, die eine ICMP-Antwort verhindern.
+- **Aktiviert mit proaktivem Eingriff**: Wenn der Server nicht mehr reagiert wird Ihnen eine Benachrichtigung per E-Mail gesendet und der Server von einem Techniker überprüft.
+- **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, muss eine Support-Anfrage erstellt werden.
+
+![Monitoring](images/monitoring-server2.png){.thumbnail}
+
+Klicken Sie auf `Bestätigen`{.action}, um Ihre Monitoring-Konfiguration zu aktualisieren.
 
 ### Das Monitoring bestimmter Dienstleistungen aktivieren
 
-Zusätzlich zum Standard-Monitoring können Sie OVHcloud erlauben, bestimmte Dienste wie HTTP, SSH und andere Protokolle zu überwachen.
+Zusätzlich zum Monitoring können Sie OVHcloud erlauben, bestimmte Dienste wie HTTP, SSH und andere Protokolle zu überwachen.
 
-Klicken Sie im Tab `Allgemeine Informationen`{.action} und dann im Rahmen des **Dienststatus** auf den Button `...`{.action} neben "Dienste im Monitoring". Klicken Sie auf `Monitoring meine Dienstleistungen`{.action}.
+Klicken Sie im Tab `Allgemeine Informationen`{.action} und dann im Rahmen des **Dienststatus** auf den Button `...`{.action} neben "Dienste im Monitoring". Klicken Sie auf `Monitoring meiner Dienstleistungen`{.action}.
 
 ![monitoring](images/monitoring02.png){.thumbnail}
 
-Sie werden auf den unten stehenden Bildschirm weitergeleitet. Klicken Sie auf `Einen Dienst überwachen`{.action} und geben Sie dann die IP-Adresse, das Protokoll, die Port-Nummer, die Antwort des Servers und den Zeitraum zwischen den Überprüfungen Ihres Dienstes an. Klicken Sie auf das Validierungssymbol (**V**), um die Änderungen zu bestätigen.
+Sie werden auf die Seite zur Dienst-Konfiguration weitergeleitet.
 
 ![monitoring](images/monitoring3.png){.thumbnail}
+
+Klicken Sie auf `Einen Dienst überwachen`{.action} und geben Sie dann die IP-Adresse, das Protokoll, die Port-Nummer, die Antwort des Servers und den Zeitraum zwischen den Überprüfungen Ihres Dienstes an. Klicken Sie auf das Hakensymbol, um die Änderungen zu bestätigen.
 
 ## Weiterführende Informationen
 
