@@ -6,7 +6,7 @@ section: Clients So you Start & Kimsufi
 order: 1
 ---
 
-**Dernière mise à jour le 11/03/2022**
+**Dernière mise à jour le 13/12/2022**
 
 ## Objective
 
@@ -40,18 +40,20 @@ Si vous possédez plusieurs serveurs, le bouton `Tous mes serveurs`{.action} vou
 
 Une fois dans le menu `Serveurs Dédiés`{.action}, cliquez sur le serveur de votre choix pour accéder à son interface.
 
-![inteface serveur](images/serverinterfaceOVHcloud.png){.thumbnail}
+![server interface](images/serverinterface01.png){.thumbnail}
+
+![server interface](images/serverinterface02.png){.thumbnail}
 
 **Informations générales** : dans cette section, retrouvez toutes les informations concernant votre serveur.
 
 - Nom : cliquez sur les `...`{.action} à côté de cette option pour modifier le nom de votre serveur.
 - Boot : cliquez sur les `...`{.action} à côté de cette option pour changer le netboot de votre serveur en *mode rescue*, *mode normal* (sur le disque dur) ou *mode network*.
-- Système (OS) : cliquez sur les `...`{.action} à côté de cette option pour installer/réinstaller votre serveur.
+- Dernier système d'exploitation (OS) installé par OVHcloud : cliquez sur les `...`{.action} à côté de cette option pour installer/réinstaller votre serveur.
 
 **Etat des services**
 
 - Statut : cliquez sur les `...`{.action} à côté de cette option pour redémarrer ou supprimer votre serveur.
-- Monitoring : cliquez sur les `...`{.action} à côté de cette option pour activer/désactiver le monitoring sur votre serveur.
+- Monitoring : cliquez sur `Configurer`{.action} pour modifier les [paramètres de monitoring de votre serveur](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie#monitoring-server).
 
 **Réseau**
 

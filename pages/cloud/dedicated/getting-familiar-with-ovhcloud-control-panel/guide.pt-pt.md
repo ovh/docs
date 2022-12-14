@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 14/03/2022**
+**Última atualização: 13/12/2022**
 
 ## Objetivo
 
@@ -44,18 +44,20 @@ Se possui vários servidores, o botão `Todos os meus servidores`{.action} permi
 
 No menu `Servidores Dedicados`{.action}, clique no servidor à sua escolha para aceder à sua interface.
 
-![interface servidor](images/serverinterfaceOVHcloud.png){.thumbnail}
+![server interface](images/serverinterface01.png){.thumbnail}
+
+![server interface](images/serverinterface02.png){.thumbnail}
 
 **Informações gerais**: nesta secção, encontre todas as informações relativas ao seu servidor.
 
 - Nome: clique nas `...`{.action} junto a esta opção para modificar o nome do seu servidor.
 - Boot: clique nas `...`{.action} junto a esta opção para alterar o netboot do seu servidor em *modo rescue*, *modo normal* (no disco rígido) ou *modo network*.
-- Sistema (SO): clique nas `...`{.action} junto a esta opção para instalar/reinstalar o seu servidor.
+- Último sistema operativo (SO) instalado pela OVHcloud: clique nas `...`{.action} junto a esta opção para instalar/reinstalar o seu servidor.
 
 **Estado dos serviços**
 
 - Estado: clique nas `...`{.action} junto a esta opção para reiniciar ou eliminar o seu servidor.
-- Monitorização: clique nas `...`{.action} junto a esta opção para ativar/desativar o monitoring no seu servidor.
+- Monitorização: clique em `Configurar`{.action} para alterar as [configurações de monitoramento do seu servidor](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado#monitoring-server).
 
 **Rede**
 

@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 14/03/2022**
+**Última actualización: 13/12/2022**
 
 ## Objetivo
 
@@ -42,7 +42,9 @@ Si tiene varios servidores, el botón `Todos mis servidores`{.action} le permite
 
 ### Interfaz del servidor
 
-En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
+![server interface](images/serverinterface01.png){.thumbnail}
+
+![server interface](images/serverinterface02.png){.thumbnail}
 
 ![server interface](images/serverinterfaceOVHcloud.png){.thumbnail}
 
@@ -50,12 +52,12 @@ En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccio
 
 - Nombre: haga clic en los `...`{.action} junto a esta opción para cambiar el nombre de su servidor.
 - Boot: haga clic en los `...`{.action} junto a esta opción para cambiar el netboot de su servidor a *modo de rescate*, *modo normal* (en el disco duro) o *modo network*.
-- Sistema operativo (SO): haga clic en los `...`{.action} al lado de esta opción para instalar o reinstalar su servidor.
+- Último sistema operativo (SO) instalado por OVHcloud: haga clic en los `...`{.action} al lado de esta opción para instalar o reinstalar su servidor.
 
 **Estado de los servicios**
 
 - Estado: haga clic en los `...`{.action} junto a esta esta opción para reiniciar o eliminar su servidor.
-- Monitorización: haga clic en los `...`{.action} junto a esta esta opción para activar o desactivar el monitoring en su servidor.
+- Monitorización: haga clic en `Configurar`{.action} para cambiar la [configuración de supervisión de su servidor](https://docs.ovh.com/us/es/dedicated/primeros-pasos-servidor-dedicado#monitoring-server).
 
 **Red**
 

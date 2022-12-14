@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 14/03/2022**
+**Ultimo aggiornamento: 13/12/2022**
 
 ## Obiettivo
 
@@ -44,18 +44,20 @@ Se possiedi più server, il pulsante `Tutti i tuoi server`{.action} ti permette 
 
 Nel menu `Server Dedicati`{.action}, clicca sul server che preferisci per accedere alla sua interfaccia.
 
-![interfaccia server](images/serverinterfaceOVHcloud.png){.thumbnail}
+![server interface](images/serverinterface01.png){.thumbnail}
+
+![server interface](images/serverinterface02.png){.thumbnail}
 
 **Informazioni generali**: in questa sezione trovi tutte le informazioni relative al tuo server.
 
 - Nome: clicca sui `...`{.action} in corrispondenza di questa opzione per modificare il nome del tuo server.
 - Boot: clicca sui `...`{.action} in corrispondenza di questa opzione per cambiare il netboot del tuo server in *Rescue mode*, *modalità normale* (su hard disk) o *modalità network*.
-- Sistema operativo: clicca sui `...`{.action} in corrispondenza di questa opzione per installare/reinstallare il tuo server.
+- Ultimo sistema operativo (SO) installato da OVHcloud: clicca sui `...`{.action} in corrispondenza di questa opzione per installare/reinstallare il tuo server.
 
 **Stato dei servizi**
 
 - Stato: clicca sui `...`{.action} in corrispondenza di questa opzione per riavviare o eliminare il tuo server.
-- Monitoraggio: clicca sui `...`{.action} in corrispondenza di questa opzione per attivare/disattivare il monitoring sul tuo server.
+- Monitoraggio: clicca su `Configura`{.action} per modificare le [impostazioni di monitoraggio del tuo server](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato#monitoring-server).
 
 **Rete**
 
