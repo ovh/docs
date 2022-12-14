@@ -50,8 +50,8 @@ In order to check your current ETCD quota and usage, you can query the OVHcloud 
 **Result:**
 ```json
 {
-  quota: 89128960,
-  usage: 2604349
+  "quota": 89128960,
+  "usage": 2604349
 }
 ```
 
