@@ -269,7 +269,7 @@ may-fail=false
 address1=ADDITIONAL_IP/32
 ```
 
-Si quiere configurar dos Additional IP,  el archivo de configuración debería tener el siguiente formato:
+Si quiere configurar dos Additional IP, el archivo de configuración debería tener el siguiente formato:
 
 ```sh
 [connection]
