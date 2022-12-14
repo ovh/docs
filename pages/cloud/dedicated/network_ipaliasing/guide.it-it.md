@@ -9,7 +9,7 @@ section: Rete e IP
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 10/11/2022**
+**Ultimo aggiornamento: 13/12/2022**
 
 > [!primary]
 >
@@ -167,6 +167,14 @@ netmask 255.255.255.255
 
 O così:
 
+auto eth0
+iface eth0 inet static
+address SERVER_IP
+netmask 255.255.255.0
+broadcast xxx.xxx.xxx.255
+gateway xxx.xxx.xxx.254
+
+
 # IP 1
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
 pre-down /sbin/ifconfig eth0:0 down
@@ -185,7 +193,7 @@ Per riavviare l’interfaccia esegui il comando:
 /etc/init.d/networking restart
 ```
 
-### Debian 9+, Ubuntu 17+, Fedora 26+ e Arch Linux
+### Debian 9+, Ubuntu 17.04+ e Arch Linux
 
 Queste distribuzioni non utilizzano più la nomenclatura eth0, eth1... per le interfacce. Utilizzeremo quindi, in modo più generico, il servizio `systemd-network`.
 
@@ -221,6 +229,122 @@ Per riavviare l’interfaccia esegui il comando:
 systemctl restart systemd-networkd
 ```
 
+### Fedora 36 e versioni successive
+
+Da questo momento, Fedora utilizza file chiave (*keyfiles*).
+In precedenza Fedora utilizzava profili di rete memorizzati da NetworkManager in formato ifcfg nella directory `/etc/sysconfig/network-scripts/`.<br>
+Poiché l'ifcfg ha subito una riduzione di valore, NetworkManager non crea di default i nuovi profili in questo formato. Il file di configurazione è disponibile in `/etc/NetworkManager/system-connections/`.
+
+#### Step 1: crea il file sorgente
+
+Per prima cosa, esegui una copia del file sorgente per poter tornare indietro in qualsiasi momento:
+
+```sh
+cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
+
+#### Step 2: modifica il file sorgente
+
+> [!primary]
+>
+> Ti ricordiamo che il nome del file di rete nel nostro esempio può differire dal tuo. Adatta i comandi in base al nome del tuo file. Per generare il nome della tua interfaccia di rete per poter modificare il file di rete corrispondente, esegui il comando: `ip a`
+>
+> Verifica anche l'interfaccia connessa con questo comando:
+>
+> `nmcli connection show`
+>
+
+Aggiungi il tuo Additional IP al file di configurazione come segue:
+
+```sh
+editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+```sh
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+Se hai due indirizzi Additional IP da configurare, il file di configurazione dovrebbe essere di questo tipo:
+
+```sh
+[connection]
+id=cloud-init eno1
+uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+type=ethernet
+
+[user]
+org.freedesktop.NetworkManager.origin=cloud-init
+
+[ethernet]
+mac-address=MA:CA:DD:RE:SS:XX
+
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+#### Step 3: riavvia l’interfaccia
+
+Per riavviare l’interfaccia esegui il comando:
+
+```sh
+systemctl restart NetworkManager
+```
+
+### Ubuntu 17.10 e versioni successive
+
+Ogni indirizzo Additional IP avrà bisogno della sua linea nel file di configurazione. `50-cloud-init.yaml` ed è situata nella `/etc/netplan`.
+
+
+#### Step 1: determinare l'interfaccia
+
+```sh
+ifconfig
+```
+
+Annota il nome dell'interfaccia e il suo indirizzo MAC.
+
+#### Step 2: crea il file di configurazione
+
+Accedi al tuo server via SSH ed esegui questo comando:
+
+```sh
+editor /etc/netplan/50-cloud-init.yaml
+```
+
+Successivamente, modifica il file con il contenuto qui sotto, sostituendo "INTERFACE_NAME", "MAC_ADDRESS" e "ADDITIONAL_IP":
+
+```sh
+network:
+    version: 2
+    ethernets:
+        INTERFACE_NAME:
+            dhcp4: true
+            match:
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
+            addresses:
+            - ADDITIONAL_IP/32
+```
+
+Salva e chiudi il file. Per testare la configurazione, inserisci questo comando:
+
+```sh
+# netplan try
+```
+
+#### Step 3: applicare la modifica
+
+Per applicare la configurazione, esegui questi comandi:
+
+```sh
+# netplan apply
+```
 
 ### CentOS e Fedora (25 e precedenti)
 
@@ -337,7 +461,7 @@ LABEL_1=ens32:0
 ```
 
 
-### cPanel
+### cPanel (su CentOS 6)
 
 #### Step 1: crea il file sorgente
 
