@@ -36,7 +36,7 @@ A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliqu
 
 ![01 add DHCP ON Segment 01](images/01-add-dhcp-on-segment01.png)
 
-Cliquez sur le signe avec `trois points verticaux`{.action} à gauche de votre segment et cliquez sur `Edit`{.action}.
+Cliquez sur l'icône de configuration indiqué avec `trois points verticaux`{.action} à gauche de votre segment et cliquez sur `Edit`{.action}.
 
 ![01 add DHCP ON Segment 02](images/01-add-dhcp-on-segment02.png)
 
@@ -44,16 +44,14 @@ Cliquez sur `Set DHCP CONFIG`{.action}
 
 ![01 add DHCP ON Segment 03](images/01-add-dhcp-on-segment03.png)
 
-Choisissez à gauche `Local DHCP Server`{.action} dans **DHCP Type**
-
-Ensuite cliquez à droite de **DHCP Profile** sur les `trois points verticaux`{.action}. et cliquez sur `Create New`{.action}.
+Choisissez à gauche `Local DHCP Server`{.action} dans **DHCP Type**. Ensuite cliquez à droite de **DHCP Profile** sur l'icône de configuration avec `trois points verticaux`{.action} et cliquez sur `Create New`{.action}.
 
 ![01 add DHCP ON Segment 04](images/01-add-dhcp-on-segment04.png)
 
-Choisissez ces informations 
+Choisissez ces informations :
 
 * **Name** : Nom de votre serveur DHCP.
-* **Server IP Address** : adresse IP de votre serveur DHCP qui ne doit pas être la même que celle de votre passerelle, comme 192.168.1.253/24.
+* **Server IP Address** : adresse IP de votre serveur DHCP qui ne doit pas être la même que celle de votre passerelle sous cette forme 192.168.1.253/24.
 * **Edge Cluster** : Sélectionnez votre Edge cluster.
 
 Et cliquez sur `Save`{.action}.
@@ -70,6 +68,7 @@ Ensuite cliquez sur `APPLY`{.action}.
 
 ![01 add DHCP ON Segment 06](images/01-add-dhcp-on-segment06.png)
 
+Les machines virtuelles sur ce segment peuvent maintenant être configuré en DHCP.
 
 ## Aller plus loin
 
