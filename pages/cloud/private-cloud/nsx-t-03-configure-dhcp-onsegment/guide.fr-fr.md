@@ -30,13 +30,13 @@ order: 03
 
 ## En pratique
 
-Nous allons configurer un serveur DHCP sur un segment connecté à **OVH-gw-t1**. Ce segment est configuré avec une passerelle en **192.168.1.254/24**
+Nous allons configurer un serveur DHCP sur un segment connecté à **OVH-T1-gw**. Ce segment est configuré avec une passerelle en **192.168.1.254/24**.
 
 A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche.
 
 ![01 add DHCP ON Segment 01](images/01-add-dhcp-on-segment01.png)
 
-Cliquez sur l'icône de configuration indiqué avec `trois points verticaux`{.action} à gauche de votre segment et cliquez sur `Edit`{.action}.
+Cliquez sur l'icône de configuration indiqué avec `trois points verticaux`{.action} à gauche de votre segment et choisissez `Edit`{.action}.
 
 ![01 add DHCP ON Segment 02](images/01-add-dhcp-on-segment02.png)
 
@@ -44,7 +44,7 @@ Cliquez sur `Set DHCP CONFIG`{.action}
 
 ![01 add DHCP ON Segment 03](images/01-add-dhcp-on-segment03.png)
 
-Choisissez à gauche `Local DHCP Server`{.action} dans **DHCP Type**. Ensuite cliquez à droite de **DHCP Profile** sur l'icône de configuration avec `trois points verticaux`{.action} et cliquez sur `Create New`{.action}.
+Choisissez à gauche `Local DHCP Server`{.action} dans **DHCP Type**. Ensuite cliquez à droite de **DHCP Profile** sur l'icône de configuration avec `trois points verticaux`{.action} et choisissez `Create New`{.action}.
 
 ![01 add DHCP ON Segment 04](images/01-add-dhcp-on-segment04.png)
 
