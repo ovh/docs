@@ -63,7 +63,7 @@ Then click on the `Security`{.action} tab to go to the next page:
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 
-Click `Enable`{.action} to the right of `IP access restriction'.
+Click `Enable`{.action} to the right of `IP access restriction`.
 
 #### Interface Overview
 

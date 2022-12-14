@@ -133,7 +133,7 @@ Para bloquear o acesso à sua Área de Cliente OVHcloud a um ou vários endereç
 
 Na nova janela, indique o endereço de IP público que deseja bloquear no campo `IP`{.action}. Escolha a casa `Alerta`{.action} se deseja ser notificado por e-mail das tentativas de ligação através desse endereço IP, e depois passe a `Regra`{.action} no estado `Recusado`{.action}.
 
-Clique em `Seguinte`{.action}, verifique o endereço IP e a regra antes de clicar em 'Valider{.action}.
+Clique em `Seguinte`{.action}, verifique o endereço IP e a regra antes de clicar em `Validar`{.action}.
 
 ![Add deny rule](images/ip10.png){.thumbnail}
 
