@@ -7,7 +7,7 @@ excerpt: Learn how to use you Active Directory server as an authentication sourc
 section: 'Funcionalidades VMware vSphere'
 ---
 
-**Last updated 05th December 2022**
+**Last updated 5th December 2022**
 
 ## Objective
 
@@ -175,7 +175,7 @@ Click on `Import user`{.action}.
 
 ![03 add group 01](images/03-addgroup01.png)
 
-Select your Active Directory, click `Import Group`{.action}, type the `name of your group` and click 'Next`{.action}.
+Select your Active Directory, click `Import Group`{.action}, type the `name of your group` and click `Next`{.action}.
 
 ![03 add group 02](images/03-addgroup02.png)
 
@@ -194,7 +194,7 @@ The group appears in the users list for your cluster, and members of this group 
 
 ### Using the OVHcloud API
 
-You can use the OVHcloud API to perform the same operations (Add a directory and allow a group or user to connect to your vCenter interface).
+You can use the OVHcloud API to perform the same operations (adding a directory and allowing a group or user to connect to your vCenter interface).
 
 #### Add your Active Directory server
 
@@ -207,7 +207,7 @@ Retrieve your « serviceName » using the following API call:
 
 Then, use the following API call to add your Active Directory server as an authentication source.
 
-You will have to specify information retreived from the previous steps. Do not check the "noSsl" checkbox.
+You will have to specify information retrieved from the previous steps. Do not check the "noSsl" checkbox.
 
 > [!api]
 >
@@ -216,11 +216,11 @@ You will have to specify information retreived from the previous steps. Do not c
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/04-federation_create.png){.thumbnail}
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) on your Hosted Private Cloud `Operations`{.action} tab.
+Make sure the return operation is successful. You can follow its progress in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) in your Hosted Private Cloud `Operations`{.action} tab.
 
 > [!primary]
 >
-> If the provided information is invalid, the operation will be canceled and a message will show the returned error.
+> If the provided information is invalid, the operation will be cancelled and a message will show the returned error.
 >
 > ![Canceled operation](images/05-federation_canceled.png){.thumbnail}
 
@@ -237,7 +237,7 @@ Retrieve your « activeDirectoryId » using the following API call:
 
 Then, use the following API call to allow an Active Directory user to access your Hosted Private Cloud.
 
-You will have to specify the "pre-Winows 2000" username as it is inside your Active Directory.
+You will have to specify the "pre-Windows 2000" username as it is inside your Active Directory.
 
 > [!api]
 >
@@ -246,10 +246,10 @@ You will have to specify the "pre-Winows 2000" username as it is inside your Act
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/06-federation_grant_user.png){.thumbnail}
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) on your Hosted Private Cloud `Operations`{.action} tab.<br>
-If the provided information is invalid, the operation will be canceled and a message will show the returned error.
+Make sure the return operation is successful. You can follow its progress in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) in your Hosted Private Cloud `Operations`{.action} tab.<br>
+If the provided information is invalid, the operation will be cancelled and a message will show the returned error.
 
-Once allowed, the user and its permissions will be manageable directly from you OVHcloud Control Panel as any other Hosted Private Cloud user.
+Once allowed, the user and its permissions will be manageable directly from your OVHcloud Control Panel as any other Hosted Private Cloud user.
 
 #### Allow an Active Directory group to access your Hosted Private Cloud
 
@@ -264,7 +264,7 @@ Retrieve your « activeDirectoryId » using the following API call:
 
 Then, use the following API call to allow an Active Directory group to access your Hosted Private Cloud.
 
-You will have to specify the "pre-Winows 2000" group name as it is inside your Active Directory.
+You will have to specify the "pre-Windows 2000" group name as it is inside your Active Directory.
 
 > [!api]
 >
@@ -272,8 +272,8 @@ You will have to specify the "pre-Winows 2000" group name as it is inside your A
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/07-federation_grant_group.png){.thumbnail}
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) on your Hosted Private Cloud `Operations`{.action} tab.<br>
-If the provided information is invalid, the operation will be canceled and a message will show the returned error.
+Make sure the return operation is successful. You can follow its progress in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) in your Hosted Private Cloud `Operations`{.action} tab.<br>
+If the provided information is invalid, the operation will be cancelled and a message will show the returned error.
 
 ## Go further
 

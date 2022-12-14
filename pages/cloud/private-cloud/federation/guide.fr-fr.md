@@ -194,7 +194,7 @@ Le groupe apparaît dans la liste des utilisateurs de votre cluster, les membres
 
 ### Utiliser l'API OVHcloud
 
-Il est possible d'utiliser l'API OVHcloud pour effectuer les mêmes opérations (Ajout d'un annuaire et autorisation d'un groupe ou d'un utilisateur à se connecter à votre interface vCenter).
+Il est possible d'utiliser l'API OVHcloud pour effectuer les mêmes opérations (ajout d'un annuaire et autorisation d'un groupe ou d'un utilisateur à se connecter à votre interface vCenter).
 
 #### Ajouter un annuaire Active directory
 
@@ -237,7 +237,7 @@ Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
 
 Effectuez l'ajout de l'utilisateur issu de votre Active Directory.
 
-Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 » tel qu'indiqué dans votre Active Directory.
+Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 », tel qu'indiqué dans votre Active Directory.
 
 > [!api]
 >
@@ -261,7 +261,7 @@ Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
 
 Effectuez l'ajout du groupe issu de votre Active Directory.
 
-Vous devrez spécifier le nom du groupe « pre-Windows 2000 » tel qu'indiqué dans votre Active Directory.
+Vous devrez spécifier le nom du groupe « pre-Windows 2000 », tel qu'indiqué dans votre Active Directory.
 
 > [!api]
 >
