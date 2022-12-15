@@ -1092,7 +1092,6 @@
             + [Autoreverse](account/reversibility/10-auto-reverse)
     + [Account Information](account-and-service-management-account-information)
         + [Getting started](account-and-service-management-account-information-getting-started)
-            + [Delete me please](account/customer/delete-me)
             + [Securing my OVHcloud account and managing my personal information](account/customer/all_about_username)
             + [Sharing files with the Plik tool](account/customer/use-plik)
             + [Managing users](account/customer/ovhcloud-users-management)
