@@ -21,4 +21,24 @@ Il est recommandé de passer votre site en HTTPS avant toute opération comme pr
 
 ## En pratique
 
+WooCommerce est une extension de WordPress et s'installe donc comme n'importe quelle extension.
+
+### Installation
+
+Connectez-vous sur votre interface d'administration en tapant `/wp-admin`  ou `/wp-login` après votre nom de domaine (la redirection se fait automatiquement)&nbsp;:
+
+![Admin page of WordPress](images/wordpress-woocommerce-first-steps%5B1%5D.png){.thumbnail}
+
+Sur le menu de gauche, rendez-vous dans «&nbsp;Extensions&nbsp;» puis «&nbsp;Ajouter&nbsp;»&nbsp;:
+
+![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps%5B2%5D.png){.thumbnail}
+
+Sur cette nouvelles page «&nbsp;Ajouter des extensions&nbsp;», saisissez «&nbsp;woocommerce&nbsp;» dans la barre de recherche en haut à droite, puis cliquer sur «&nbsp;Installer maintenant&nbsp;» sur l'extension WooCommerce&nbsp;:
+
+![Active WooCommerce](images/wordpress-woocommerce-first-steps%5B3%5D.png){.thumbnail}
+
+Cliquez maintenant sur «&nbsp;Activer&nbsp;»&nbsp;:
+
 ## Aller plus loin
+
+- le site de [WooCommerce](https://woocommerce.com/)
