@@ -65,7 +65,7 @@ Vous aurez alors à renseigner certains éléments&nbsp;:
 - l'URL de votre site (par exemple, `https://monsite.ovh`)
 - une description de votre site
 
-![Installation Cecil](images/static_website_installation_cecil%5B1%5D.png)
+![Installation Cecil](images/static_website_installation_cecil%5B1%5D.png){.thumbnail}
 
 Une fois ces éléments renseignés, vous devez maintenant déployer le site en tapant la commande&nbsp;:
 ```sh
@@ -74,11 +74,11 @@ php cecil.phar build
 
 En affichant le contenu du répertoire, vous constaterez la création d'un répertoire `_site`. C'est ce répertoire qui contiendra l'ensemble des fichiers HTML et des assets&nbsp;:
 
-![Installation Cecil](images/static_website_installation_cecil%5B2%5D.png)
+![Installation Cecil](images/static_website_installation_cecil%5B2%5D.png){.thumbnail}
 
 Vous pouvez maintenant voir le résultat en allant sur votre nom de domaine&nbsp;:
 
-![Installation Cecil](images/static_website_installation_cecil%5B3%5D.png)
+![Installation Cecil](images/static_website_installation_cecil%5B3%5D.png){.thumbnail}
 
 ### Domaine ou sous-domaine
 
@@ -94,7 +94,7 @@ nano config.yml
 
 Remplacez les informations par défaut par les votres et sauvegardez le fichier.
 
-![Fichier de configuration YAML](images/static_website_installation_cecil%5B4%5D.png)
+![Fichier de configuration YAML](images/static_website_installation_cecil%5B4%5D.png){.thumbnail}
 
 ### Créer une nouvelle page
 
@@ -118,7 +118,7 @@ php cecil.phar new:page mapage.md
 
 Un fichier `mapage.md` est alors créé à la racine du répertoire `/pages`&nbsp;
 
-![Installation Cecil](images/static_website_installation_cecil%5B5%5D.png)
+![Installation Cecil](images/static_website_installation_cecil%5B5%5D.png){.thumbnail}
 
 #### Générer les fichiers statiques
 
@@ -130,11 +130,11 @@ php cecil.phar build
 
 Votre fichier se trouve dans le répertoire `_site/mapage/`&nbsp;:
 
-![Installation Cecil](images/static_website_installation_cecil%5B6%5D.png)
+![Installation Cecil](images/static_website_installation_cecil%5B6%5D.png){.thumbnail}
 
 Et vous pouvez la visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mapage/`&nbsp;:
 
-![Résultat navigateur](images/static_website_installation_cecil%5B7%5D.png)
+![Résultat navigateur](images/static_website_installation_cecil%5B7%5D.png){.thumbnail}
 
 ### Personnaliser les fichiers de votre site
 
@@ -149,11 +149,11 @@ Les captures d'écran du présent guide ont été réalisées sous GNU nano.
  nano pages/mapage.md
 ```
 
-![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B8%5D.png)
+![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B8%5D.png){.thumbnail}
 
 Ajoutez quelques lignes en respectant la syntaxe _Markdown_&nbsp;:
 
-![Ajout de contenu dans le fichier](images/static_website_installation_cecil%5B9%5D.png)
+![Ajout de contenu dans le fichier](images/static_website_installation_cecil%5B9%5D.png){.thumbnail}
 
 Supprimez les fichiers dans le cache à l'aide de la commande suivante&nbsp;:
 
@@ -169,17 +169,17 @@ php cecil.phar build
 
 Puis retournez sur votre page pour voir le résultat&nbsp;:
 
-![Page mise à jour](images/static_website_installation_cecil%5B10%5D.png)
+![Page mise à jour](images/static_website_installation_cecil%5B10%5D.png){.thumbnail}
 
 #### **Modification sur votre poste de travail**
 
 Si vous préférez utiliser votre éditeur de code habituel, connectez-vous avec un client FTP sur votre serveur pour récupérer les fichiers sur votre ordinateur&nbsp;:
 
-![Téléchargement avec FileZilla](images/static_website_installation_cecil%5B11%5D.png)
+![Téléchargement avec FileZilla](images/static_website_installation_cecil%5B11%5D.png){.thumbnail}
 
 Vous pouvez maintenant éditer les fichiers dans votre I.D.E.&nbsp;:
 
-![Affichage dans Visual Studio Code](images/static_website_installation_cecil%5B12%5D.png)
+![Affichage dans Visual Studio Code](images/static_website_installation_cecil%5B12%5D.png){.thumbnail}
 
 Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de rebuilder pour avoir vos pages en ligne.
 
