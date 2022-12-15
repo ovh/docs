@@ -108,7 +108,7 @@ Clicca su `Continua`{.action} e verifica l'indirizzo IP e la regola prima di cli
 
 ![Add allow rule](images/ip5.png){.thumbnail}
 
-Nella sezione `IP configuratI` dovrà essere visibile la regola:
+Nella sezione `IP configurati` dovrà essere visibile la regola:
 
 ![Add allow rule](images/ip6.png){.thumbnail}
 

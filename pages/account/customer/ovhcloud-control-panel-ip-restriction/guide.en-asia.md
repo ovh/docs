@@ -15,7 +15,7 @@ OVHcloud provides you with options to enhance the security of your OVHcloud Cont
 You can restrict access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) to certain IP addresses.
 By setting this option and securing your account with [two-factor authentication](https://docs.ovh.com/asia/en/customer/secure-account-with-2FA/), you can optimally secure your OVHcloud Control Panel against intrusion attempts.
 
-**Find out how to secure your OVHcloud account by limiting the IP addresses authorised to access it**
+**Find out how to secure your OVHcloud account by limiting the IP addresses authorised to access it.**
 
 > [!warning]
 >

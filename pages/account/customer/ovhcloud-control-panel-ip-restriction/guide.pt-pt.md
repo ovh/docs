@@ -95,7 +95,7 @@ Estão presentes duas secções para a implementação das restrições por IP:
 
 #### Recusar todos os endereços IP com exceção dos endereços legítimos
 
-Para autorizar o acesso à Área de Cliente OVHcloud apenas a um ou vários endereços IP legítimos, clique no botão `Adicionar uma restrição {.ação}.
+Para autorizar o acesso à Área de Cliente OVHcloud apenas a um ou vários endereços IP legítimos, clique no botão `Adicionar uma restrição`{.action}.
 
 > Nas capturas de ecrã que se seguirão, o IP **192.0.2.0** deverá ser substituído por um IP que lhe diz respeito.
 > 
