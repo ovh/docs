@@ -9,7 +9,7 @@ section: Poziom zaawansowany
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Współtwórz" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 04-11-2022**
+**Ostatnia aktualizacja z dnia 13-12-2022**
 
 ## Wprowadzenie
 
@@ -27,6 +27,11 @@ Polityka antyspamowa jest coraz bardziej rygorystyczna. Aby ograniczyć wysyłk�
 ## Wymagania początkowe
 
 - Posiadać już skonfigurowany serwer poczty elektronicznej
+
+> [!warning]
+>
+> Celem niniejszego przewodnika jest dostarczenie kilku wskazówek dotyczących optymalizacji wysyłki e-maili. Należy pamiętać, że każda usługa poczty elektronicznej posiada własne wytyczne i najlepsze praktyki, aby zagwarantować odbiór wiadomości e-mail przez odbiorców. Zalecamy skorzystanie z nich.
+>
 
 ## W praktyce
 
@@ -136,6 +141,8 @@ Aby uzyskać więcej informacji, prosimy o otwarcie [wniosku o udzielenie pomocy
 #### Na serwer Gmail
 
 Dodanie określonych rekordów (np. rekordu DMARC) może ułatwić odbieranie e-maili, jeśli Twój odbiorca jest w Gmailu. Oto artykuł Google, który może Wam w tym pomóc: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
+
+Google proponuje również [artykuł poświęcony zapobieganiu spamowi](https://support.google.com/mail/answer/81126?hl=en){.external} dla użytkowników Gmail.
 
 ### Sprawdź Twoje dane
 

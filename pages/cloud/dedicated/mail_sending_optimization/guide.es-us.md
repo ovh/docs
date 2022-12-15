@@ -9,7 +9,7 @@ section: Uso avanzado
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 04/11/2022**
+**Última actualización: 13/12/2022**
 
 ## Objectivo
 
@@ -25,6 +25,11 @@ Las políticas antispam cada vez son más estrictas. Para asegurarse que sus cor
 ## Requisitos
 
 - Tener un servidor de correo ya configurado.
+
+> [!warning]
+>
+> Esta guía explica cómo optimizar el envío de mensajes de correo electrónico. Tenga en cuenta que cada servicio de correo tiene sus propias directrices y buenas prácticas para garantizar la recepción del correo electrónico por los destinatarios. Le recomendamos encarecidamente que los consulte.
+>
 
 ## Requisitos
 
@@ -136,6 +141,8 @@ Para más información, [solicite ayuda](https://support.microsoft.com/en-us/get
 #### Desde el servidor de Gmail
 
 Si sus destinatarios son Gmail, debe de añadir los registros específicos (ejem. Registro DMARC) para garantizarse que los correos llegan. Aquí puede encontrar el artículo de Google donde puede encontrar más información: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en).
+
+Google también ofrece un [artículo dedicado a la prevención del spam](https://support.google.com/mail/answer/81126?hl=en){.external} para los usuarios de Gmail.
 
 ### Revisa su información
 
