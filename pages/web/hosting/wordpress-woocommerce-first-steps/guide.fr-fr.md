@@ -10,6 +10,8 @@ order:
 
 ## Objectif
 
+Ce tutoriel a pour objectif de vous permettre de créer une boutique en ligne avec l'extension open source WooCommerce pour le CMS WordPress. 
+
 ## Prérequis
 
 ## En pratique
