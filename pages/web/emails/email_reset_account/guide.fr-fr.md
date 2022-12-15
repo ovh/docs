@@ -22,5 +22,64 @@ Vous souhaitez supprimer une adresse e-mail que vous n'utilisez plus. Réinitial
 
 ## En pratique <a name="instructions"></a>
 
+OVHcloud propose 3 solutions e-mail, la notion de suppression de compte est différente selon votre offre.
+
+- **Email MXplan** : cette offre est vendu par pack de plusieurs comtpes e-mail. Lorsque vous supprimez un compte, vous libérez un emplacement sur votre pack. 
+- **Email Pro** et **Hosted Exchange** : Ces deux offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. lorsque vous voulez supprimer une adresse e-mail, on parlera de **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez aussi résilier l'abonnement de ce compte si vous souhaitez le supprimer définitivement.
 
 
+Sélectionnez l'onglet correspondant à votre offre e-mail :
+
+> [!tabs]
+> **Emails MXplan historique**
+>>
+>> > [!Primary]
+>> >
+>> > 
+>> > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
+>> > |---|---|
+>> > |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
+>> > |Sélectionnez l'onglet **Emails MXplan historique** ci-dessous |Sélectionnez l'onglet **Emails MXplan nouvelle version** ci-dessous |
+>>
+>> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Supprimer le compte`{.action}.<br><br>
+>>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
+>>
+> **Emails MXplan nouvelle version**
+>
+>> > [!Primary]
+>> >
+>> > 
+>> > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
+>> > |---|---|
+>> > |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
+>> > |Sélectionnez l'onglet **Emails MXplan historique** ci-dessous |Sélectionnez l'onglet **Emails MXplan nouvelle version** ci-dessous |
+>>
+>> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Modifier`{.action}.<br><br>
+>>![email](images/email-mxplan-new-reset.png){.thumbnail}<br>
+>>
+> **Email Pro**
+>>
+>> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
+>>![email](images/emailpro-reset.png){.thumbnail}<br>
+>>
+> **Exchange**
+>>
+>> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Réinitialiser`{.action}.<br><br>
+>>![email](images/exchange-reset.png){.thumbnail}<br>
+>>
+
+## Aller plus loin
+
+[Premiers pas avec la solution MXplan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/)
+
+[Premiers pas avec la solution E-mail Pro](https://docs.ovh.com/fr/emails-pro/premiere-configuration/)
+
+[Premiers pas avec la solution Hosted Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/premiere-configuration-exchange/)
+
+[Gérer la facturation de vos comptes Email Pro](hhttps://docs.ovh.com/fr/emails-pro/gestion-facturation-emailpro/)
+
+[Gérer la facturation de vos comptes Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/)
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
