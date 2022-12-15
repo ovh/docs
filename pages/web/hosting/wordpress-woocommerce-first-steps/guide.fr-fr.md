@@ -14,6 +14,11 @@ Ce tutoriel a pour objectif de vous permettre de créer une boutique en ligne av
 
 ## Prérequis
 
+Vous devez disposer d'un hébergement web et d'un nom de domaine pointant sur celui-ci, avoir installé WordPress (votre notre guide [Premiers pas avec WordPress](https://ovhcloud.com/)) et être en capacité de vous connecter à l'interface d'administration.
+Si vous n'avez pas encore d'hébergement, vous pouvez faire votre choix parmi nos solutions d'[Hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
+
+Il est recommandé de passer votre site en HTTPS avant toute opération comme précisé dans le guide [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/).
+
 ## En pratique
 
 ## Aller plus loin
