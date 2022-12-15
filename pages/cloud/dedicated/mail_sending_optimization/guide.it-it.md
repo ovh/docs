@@ -9,7 +9,7 @@ section: Utilizzo avanzato
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 > 
 
-**Ultimo aggiornamento: 04/11/2022**
+**Ultimo aggiornamento: 13/12/2022**
 
 ## Obiettivo
 
@@ -27,6 +27,11 @@ Le politiche anti-spam sono sempre più severe. Per rendere più fluido l'invio 
 ## Prerequisiti
 
 - Disporre di un server email già configurato
+
+> [!warning]
+>
+> Questa guida ti mostra come utilizzare al meglio l'invio delle tue email. Ti ricordiamo che ogni servizio di posta ha le proprie istruzioni e buone prassi per garantire la ricezione delle email da parte dei destinatari. Ti consigliamo vivamente di consultarli.
+>
 
 ## Procedura
 
@@ -137,6 +142,8 @@ Per maggiori informazioni, invia una [richiesta di assistenza](https://support.m
 #### Verso un server Gmail
 
 Aggiungere record specifici (ad esempio un record DMARC) può facilitare la ricezione delle email se il tuo destinatario è a casa di Gmail. Ecco un articolo di Google che può aiutarti in questa direzione: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
+
+Google propone anche un [articolo dedicato alla prevenzione dello spam](https://support.google.com/mail/answer/81126?hl=en){.external} per gli utenti di Gmail.
 
 ### Verifica le tue informazioni
 
