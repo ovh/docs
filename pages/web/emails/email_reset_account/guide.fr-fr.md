@@ -33,9 +33,6 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 > [!tabs]
 > **Emails MXplan historique**
 >>
->> > [!Primary]
->> >
->> > 
 >> > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 >> > |---|---|
 >> > |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
@@ -46,9 +43,6 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >>
 > **Emails MXplan nouvelle version**
 >
->> > [!Primary]
->> >
->> > 
 >> > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 >> > |---|---|
 >> > |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
