@@ -6,7 +6,7 @@ section: Tutoriel
 order: 
 ---
 
-**Dernière mise à jour le 12/12/2022**
+**Dernière mise à jour le 15/12/2022**
 
 ## Objectif
 
@@ -14,12 +14,11 @@ Ce tutoriel a pour objectif de vous permettre de créer vos premiers contenus av
 
 ## Prérequis
 
-Vous venez de souscrire à une offre [Hébergement web](https://www.ovhcloud.com/fr/web-hosting/) comprenant un nom de domaine et vous permettant d'installer un CMS en un clic, ce tutoriel vous permettra de faire vos premiers pas avec le CMS WordPress.
+Vous venez de souscrire à une offre «&nbsp;Hébergement Web&nbsp;» comprenant un nom de domaine et vous permettant d'installer un CMS en un clic, vous pouvez alors suivre ce tutoriel pour mettre en ligne rapidement vos premiers contenus et exploiter votre site.
 
+Si vous ne disposez pas encore d'un hébergement, vous pouvez choisir une de notre offres [Hébergement web](https://www.ovhcloud.com/fr/web-hosting/) parmi celles incluant la fonctionnalité «&nbsp;CMS en 1-clic&nbsp;».
 
-
-
-Vous pouvez également installer manuellement votre WordPress sur votre hébergement en suivant notre tutoriel [Installer manuellement WordPress](https://docs.ovh.com/fr/hosting/installer-manuellement-wordpress/).
+Enfin, dans le cas où vous auriez déjà souscrit à une offre mais pas installé WordPress, reportez-vous au guide [Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
 
 ## En pratique
 
