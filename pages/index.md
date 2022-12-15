@@ -1088,6 +1088,8 @@
             + [Hosted Private Cloud Reversibility Policy](account/reversibility/02-hosted-private-cloud-reversibility-policy)
             + [Dedicated Servers Reversibility Policy](account/reversibility/01-dedicated-servers-reversibility-policy)
             + [Global Reversibility Policy](account/reversibility/00-global-reversibility-policy)
+        + [Walkman features](walkman)
+            + [Autoreverse](account/reversibility/10-auto-reverse)
     + [Account Information](account-and-service-management-account-information)
         + [Getting started](account-and-service-management-account-information-getting-started)
             + [Securing my OVHcloud account and managing my personal information](account/customer/all_about_username)
