@@ -41,6 +41,28 @@ Cliquez maintenant sur «&nbsp;Activer&nbsp;»&nbsp;:
 
 ![Activate WooCommerce](images/wordpress-woocommerce-first-steps%5B4%5D.png){.thumbnail}
 
+### Configuration
+
+Si vous n'avez pas encore paramétré votre extension WooCommerce, un assistant de configuration vous aidera à renseigner les informations relatives à votre site de vente en ligne puis cliquez sur «&nbsp;Continuer&nbsp;»&nbsp;:
+
+![Setup Wizard - Store Details](images/wordpress-woocommerce-first-steps%5B5%5D.png){.thumbnail}
+
+Sélectionnez ensuite votre ou vos domaines d'activité&nbsp;:
+
+![Setup Wizard - Industry](images/wordpress-woocommerce-first-steps%5B6%5D.png){.thumbnail}
+
+Choisissez le type de produits que vous souhaitez vendre sur votre site (certaines options sont payantes)&nbsp;:
+
+![Setup Wizard - Product Types](images/wordpress-woocommerce-first-steps%5B7%5D.png){.thumbnail}
+
+Puis précisez la nature de votre activité&nbsp;:
+
+![Setup Wizard - Business Details](images/wordpress-woocommerce-first-steps%5B8%5D.png){.thumbnail}
+
+Vous serez alors invité à ajouter des fonctionnalités optionnelles (et gratuites)&nbsp;:
+
+![Setup Wizard - Business Details, free features](images/wordpress-woocommerce-first-steps%5B9%5D.png){.thumbnail}
+
 ## Aller plus loin
 
 - le site de [WooCommerce](https://woocommerce.com/)
