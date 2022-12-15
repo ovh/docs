@@ -35,9 +35,11 @@ Sur le menu de gauche, rendez-vous dans «&nbsp;Extensions&nbsp;» puis «&nbsp;
 
 Sur cette nouvelles page «&nbsp;Ajouter des extensions&nbsp;», saisissez «&nbsp;woocommerce&nbsp;» dans la barre de recherche en haut à droite, puis cliquer sur «&nbsp;Installer maintenant&nbsp;» sur l'extension WooCommerce&nbsp;:
 
-![Active WooCommerce](images/wordpress-woocommerce-first-steps%5B3%5D.png){.thumbnail}
+![Install WooCommerce](images/wordpress-woocommerce-first-steps%5B3%5D.png){.thumbnail}
 
 Cliquez maintenant sur «&nbsp;Activer&nbsp;»&nbsp;:
+
+![Activate WooCommerce](images/wordpress-woocommerce-first-steps%5B4%5D.png){.thumbnail}
 
 ## Aller plus loin
 
