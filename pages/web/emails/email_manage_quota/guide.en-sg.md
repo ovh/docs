@@ -79,7 +79,7 @@ Before you perform any other operation on your email account, you will need to f
 You can increase the storage capacity of your email account, if it has not reached its maximum capacity. Below, you will find the approach to follow, depending on your solution:
 
 The capacity of an MXplan account can range from 2.5 MB to 5 GB. If it is full and its capacity is less than 5 GB, you can modify its capacity via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).<br>
-In the `Email accounts`{.action} tab, click the button to the right <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>of the account you want to change, and then click `Edit`{.action}.
+In the `Email accounts`{.action} tab, click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button to the right of the account you want to change, and then click `Edit`{.action}.
 From the `Quota`{.action} box, select the size that suits you, click `Next`{.action}, then `Confirm`{.action}.<br><br>
 ![email](images/email-quota-more01.png){.thumbnail}<br>
 
