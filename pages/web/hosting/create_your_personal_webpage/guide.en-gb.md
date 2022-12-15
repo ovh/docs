@@ -398,7 +398,7 @@ To save time on the appearance of your site and allow you to focus on the conten
 
 A template is a guideline or an example that can be reused, whether or not you can adapt it. Using templates saves time on site design by adapting elements that have already been designed, while offering the qualities that can be demanded of a "professional" site. The word theme can also be used.
 
-There are free "Open Source" solutions available on the internet, such as [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) or [Semantic UI](https://semantic-ui.com/). These tools are called “frameworks”: libraries that make it easier to create websites or web applications. They offer standardised, customisable and reusable elements, and the entire community offers reusable templates.
+There are free "Open Source" solutions available on the internet, such as [Bootstrap](https://getbootstrap.com/, [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) or [Semantic UI](https://semantic-ui.com/). These tools are called “frameworks”: libraries that make it easier to create websites or web applications. They offer standardised, customisable and reusable elements, and the entire community offers reusable templates.
 
 #### Bootstrap
 
