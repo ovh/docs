@@ -1090,6 +1090,7 @@
             + [Global Reversibility Policy](account/reversibility/00-global-reversibility-policy)
     + [Account Information](account-and-service-management-account-information)
         + [Getting started](account-and-service-management-account-information-getting-started)
+            + [Delete me please](account/customer/delete-me)
             + [Securing my OVHcloud account and managing my personal information](account/customer/all_about_username)
             + [Sharing files with the Plik tool](account/customer/use-plik)
             + [Managing users](account/customer/ovhcloud-users-management)
