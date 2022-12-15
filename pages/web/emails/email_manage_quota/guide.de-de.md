@@ -73,7 +73,7 @@ Um sich im Webmail einzuloggen, gehen Sie auf die Seite <https://www.ovhcloud.co
 > [!tabs]
 > **OWA**: **E-Mails (MX Plan)** / **E-Mail Pro** / **Exchange**
 >>
->> Klicken Sie auf den <i class=".icons-gear-concept icons-masterbrand-blue"></i>Button oben rechts und klicken Sie auf `Optionen`{.action}. Klicken Sie unter `Allgemein`{.action} auf `Mein Konto`{.action} in der linken Spalte. Sie können die aktuelle Speicherbelgung Ihres Accounts auf unten auf der Seite einsehen.<br><br>
+>> Klicken Sie auf den <i class=".icons-gear-concept icons-masterbrand-blue"></i> Button oben rechts und klicken Sie auf `Optionen`{.action}. Klicken Sie unter `Allgemein`{.action} auf `Mein Konto`{.action} in der linken Spalte. Sie können die aktuelle Speicherbelgung Ihres Accounts auf unten auf der Seite einsehen.<br><br>
 >>![E-Mail](images/email-quota-webmail01.png){.thumbnail}<br>
 >>
 > **Roundcube**: **E-Mails (MX Plan)**
@@ -107,7 +107,7 @@ Sie können die Speicherkapazität Ihres E-Mail-Accounts erhöhen, sofern er sei
 > **E-Mails (MX Plan)**
 >>
 >> Die Größe eines MX Plan Accounts kann zwischen 2,5 MB und 5 GB betragen. Sie können die Kapazität bei Bedarf über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)<br> ändern.
->> Klicken Sie im Tab `E-Mail-Accounts`{.action} rechts neben dem zu ändernden Account auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>Button und dann auf `Ändern`{.action}.
+>> Klicken Sie im Tab `E-Mail-Accounts`{.action} rechts neben dem zu ändernden Account auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button und dann auf `Ändern`{.action}.
 >> Wählen Sie im Feld `Quota`{.action} die neue Größe aus, klicken Sie auf `Weiter`{.action} und dann `Bestätigen`{.action}.<br><br>
 >> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
@@ -118,7 +118,7 @@ Sie können die Speicherkapazität Ihres E-Mail-Accounts erhöhen, sofern er sei
 > **Exchange**
 >>
 >> Wenn Ihr Exchange Account die maximale Größe von 50 GB erreicht, können Sie für die Angebote **Hosted** und **Provider** eine Erweiterungsoption abonnieren, um die Kapazität auf 300 GB zu erweitern.<br>
->> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihres Dienstes rechts neben dem zu ändernden Account auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>Button und danach auf `Kapazität auf 300 GB erhöhen`{.action}. Wählen Sie den gewünschten Abrechnungsmodus aus und klicken Sie auf `Bestätigen`{.action}.<br><br>
+>> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihres Dienstes rechts neben dem zu ändernden Account auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button und danach auf `Kapazität auf 300 GB erhöhen`{.action}. Wählen Sie den gewünschten Abrechnungsmodus aus und klicken Sie auf `Bestätigen`{.action}.<br><br>
 >>![E-Mail](images/email-quota-more02.png){.thumbnail}<br>
 >>
 >> Wenn der betreffende Account in Exchange **Hosted** oder **Provider** bereits 300 GB Speicherplatz belegt, müssen Inhalte gelöscht oder lokal auf Ihrem Computer [archiviert werden](#archiveorswitch). Dies gilt auch für **Private** Exchange Accounts mit 50 GB Speicherplatz.
@@ -217,7 +217,7 @@ Folgen Sie der passenden Dokumentation für Ihren E-Mail-Dienst:
 > **Exchange**
 >>
 >> Wenn Ihr Exchange Account 50 GB erreicht, können Sie eine Erweiterungsoption abonnieren, um die Kapazität auf 300 GB zu erweitern. Dies gilt nur, wenn es sich um **Hosted Exchange** oder **Provider Exchange** handelt.<br>
->> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihres Exchange Dienstes auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>Button rechts neben dem zu ändernden Account und danach auf `Kapazität auf 300 GB erhöhen`{.action}.<br><br>
+>> Klicken Sie im Tab `E-Mail-Accounts`{.action} Ihres Exchange Dienstes auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button rechts neben dem zu ändernden Account und danach auf `Kapazität auf 300 GB erhöhen`{.action}.<br><br>
 >> ![E-Mail](images/email-quota-more02.png){.thumbnail}<br>
 >>
 
