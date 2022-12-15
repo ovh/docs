@@ -27,26 +27,15 @@ OVHcloud propose 3 solutions e-mail, la notion de suppression de compte est diff
 - **Email MXplan** : cette offre est vendu par pack de plusieurs comtpes e-mail. Lorsque vous supprimez un compte, vous libérez un emplacement sur votre pack. 
 - **Email Pro** et **Hosted Exchange** : Ces deux offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. lorsque vous voulez supprimer une adresse e-mail, on parlera de **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez aussi résilier l'abonnement de ce compte si vous souhaitez le supprimer définitivement.
 
-
-Sélectionnez l'onglet correspondant à votre offre e-mail :
+Sélectionnez l'onglet correspondant à votre offre e-mail (S) :
 
 > [!tabs]
 > **Emails MXplan historique**
->>
->> > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
->> > |---|---|
->> > |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
->> > |Sélectionnez l'onglet **Emails MXplan historique** ci-dessous |Sélectionnez l'onglet **Emails MXplan nouvelle version** ci-dessous |
 >>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Supprimer le compte`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **Emails MXplan nouvelle version**
->
->> > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
->> > |---|---|
->> > |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
->> > |Sélectionnez l'onglet **Emails MXplan historique** ci-dessous |Sélectionnez l'onglet **Emails MXplan nouvelle version** ci-dessous |
 >>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Modifier`{.action}.<br><br>
 >>![email](images/email-mxplan-new-reset.png){.thumbnail}<br>
@@ -61,6 +50,14 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 >> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Réinitialiser`{.action}.<br><br>
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
+
+> **Identifiez votre offre MXplan** 
+>
+> |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
+> |---|---|
+> |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
+> |Sélectionnez l'onglet **Emails MXplan historique** ci-dessous |Sélectionnez l'onglet **Emails MXplan nouvelle version** ci-dessous |<br>
+>
 
 ## Aller plus loin
 
