@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 31st October 2022.**
+**Last updated 15th December 2022.**
 
 <style>
  pre {
@@ -68,6 +68,10 @@ A Public Cloud Load Balancer has the following non-configurable timeouts:
 
 - 20 seconds for the backend connection to be established
 - 180 seconds for the client & server connections
+
+> [!primary]
+>
+> The use of the UDP protocol is not supported.
 
 ## OpenStack
 
