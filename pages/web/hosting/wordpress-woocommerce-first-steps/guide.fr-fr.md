@@ -85,6 +85,24 @@ La page de réglages comprend plusieurs onglets&nbsp;:
 
 ![Setup Wizard - WooCommerce, Settings, General](images/wordpress-woocommerce-first-steps%5B13%5D.png){.thumbnail}
 
+### Réglages
+
+#### Général
+
+#### Produits
+
+#### Expédition
+
+#### Paiements
+
+#### Comptes et confidentialité
+
+#### E-mails
+
+#### Intégration
+
+#### Avancé
+
 ## Aller plus loin
 
 - l'extension [Jetpack](https://jetpack.com/)
