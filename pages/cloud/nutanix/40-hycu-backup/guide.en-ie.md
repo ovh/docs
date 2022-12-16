@@ -185,7 +185,7 @@ Click `Attach to Subnet`{.action}.
 
 ![Create HYCUVM 08](images/02-createhycuvm08.png){.thumbnail}
 
-Select the `inra`{.action} network from the **Subnet** drop-down menu, select `Connected`{.action} in the **Network Connection State** drop-down menu. Then click `Save`{.action}.
+Select the `infra`{.action} network from the **Subnet** drop-down menu, select `Connected`{.action} in the **Network Connection State** drop-down menu. Then click `Save`{.action}.
 
 ![Create HYCUVM 09](images/02-createhycuvm09.png){.thumbnail}
 
