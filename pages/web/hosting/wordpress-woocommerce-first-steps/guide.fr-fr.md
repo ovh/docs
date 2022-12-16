@@ -41,7 +41,7 @@ Cliquez maintenant sur «&nbsp;Activer&nbsp;»&nbsp;:
 
 ![Activate WooCommerce](images/wordpress-woocommerce-first-steps%5B4%5D.png){.thumbnail}
 
-### Configuration
+### Configuration - Méthode 1 (utilisation de l'assistant de configuration)
 
 Si vous n'avez pas encore paramétré votre extension WooCommerce, un assistant de configuration vous aidera à renseigner les informations relatives à votre site de vente en ligne puis cliquez sur «&nbsp;Continuer&nbsp;»&nbsp;:
 
@@ -63,6 +63,15 @@ Vous serez alors invité à ajouter des fonctionnalités optionnelles (et gratui
 
 ![Setup Wizard - Business Details, free features](images/wordpress-woocommerce-first-steps%5B9%5D.png){.thumbnail}
 
+Enfin, vous êtes invité à choisir un thème&nbsp;:
+
+![Setup Wizard - Choose a theme](images/wordpress-woocommerce-first-steps%5B10%5D.png){.thumbnail}
+
+Vous serez ensuite invité à créer un compte pour l'utilisation de l'extension **Jetpack**, extension installée automatiquement par WooCommerce. Cette opération n'est pas nécessaire, vous aurez accès aux fonctions limitées de Jetpack sans avoir à vous authentifier.
+
+Votre boutique en ligne est alors configurée avec les paramètres généraux.
+
 ## Aller plus loin
 
+- l'extension [Jetpack](https://jetpack.com/)
 - le site de [WooCommerce](https://woocommerce.com/)
