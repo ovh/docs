@@ -1,183 +1,180 @@
 ---
-title: Como implementar um certificado SSL EV no meu website?
+title: "Utilizar um certificado SSL EV para o seu website"
 slug: ssl-ev
-excerpt: O certificado SSL EV garante aos seus utilizadores a existencia juridica da sua empresa e permite-lhes adquirir produtos no seu website com total confianca.
+excerpt: "Saiba como encomendar e instalar um certificado SSL EV no seu alojamento Web OVHcloud"
 section: SSL
 order: 03
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Informacoes gerais
-Os certificados SSL EV comercializados pela OVHcloud são emitidos pela autoridade de certificação Comodo. Ela fica encarregue de verificar a existência jurídica da sua empresa.
+**Última atualização: 13/12/2022**
+  
+## Objetivo
 
-Encontre todas as informações comerciais no nosso website : [https://www.ovhcloud.com/pt/web-hosting/options/ssl/](https://www.ovhcloud.com/pt/web-hosting/options/ssl/){.external}.
+Os certificados Secure Socket Layer (SSL) permitem encriptar as trocas efetuadas a partir ou para o seu website. Isto evita que uma pessoa ou um robô malicioso venha "ouvir" claramente os pedidos enviados ou enviados com o seu website.
 
+A OVHcloud propõe vários tipos de certificados SSL nas nossas ofertas de [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/). Estes são apresentados no nosso guia "[Gerir um certificado SSL no seu alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/)". Os certificados SSL são incontornáveis para a segurança do seu website.
 
-### Porque um certificado SSL EV?
-Os certificados SSL EV podem garantir que o website é corretamente administrado pela empresa editora do website, e que ela existe juridicamente. Quando consulta um website protegido por um certificado SSL EV, aparecerá ao lado do cadeado verde o nome da empresa.
+Existem três tipos de certificados SSL:
 
-Certificado SSL não EV
+- Domain Validation (DV)
+- Organização de validação (OV)
+- Extended Validação (EV)
 
+Os níveis de encriptação SSL são idênticos entre estes três tipos de certificados.
 
-![hosting](images/ssl_non_EV.png){.thumbnail}
+A principal diferença reside no nível de controlos que será realizado pela Autoridade de Certificação (AC) que emite o certificado SSL e certifica a sua autenticidade.
 
-Certificado SSL EV
+Os certificados SSL EV são aqueles para os quais os níveis de verificação e de segurança são mais elevados. Geralmente, o certificado SSL EV é utilizado para grandes websites ou websites sensíveis. Este certificado fornecerá o mais alto nível de identificação disponível.
 
+Para os alojamentos partilhados da OVHcloud, a autoridade de certificação que emite os certificados SSL EV é [Sectigo](https://sectigostore.com){.external}.
 
-![hosting](images/ssl_EV.png){.thumbnail}
+> [!warning]
+>
+> Os certificados SSL EV não estão disponíveis para toda a gente. Verifique se é elegível para a sua subscrição **antes** de encomendar este último, com a ajuda dos elementos indicados nos [Requisitos](#requirements) deste guia.
+>
+> Tenha em conta que, uma vez a encomenda iniciada e transmitida ao nosso fornecedor de certificados/autoridade de certificação Sectigo, **nenhum reembolso será possível**.
+>
 
+**Descubra como encomendar e instalar um certificado SSL EV no seu alojamento Web OVHcloud**
+    
+## Requisitos <a name="requirements"></a>
 
-## Como encomendar um certificado SSL EV na OVHcloud ?
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Encomendar ou dispor de um [alojamento partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) no qual nenhum certificado SSL já está instalado.
+- Encomendar ou dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/) e dispor dos direitos exclusivos sobre a sua utilização. O domínio não deve estar associado a um certificado SSL.
+- ser uma organização (empresa, agência governamental, ...) registada num registo oficial.
+- Ter a autorização da sua organização para encomendar um certificado SSL EV.
+- estar em condições de justificar com exatidão as informações e os dados relativos à sua organização.
 
-### Se o seu website ja se encontra na OVH
-Aceda ao seu Espaço Cliente para poder efetuar a encomenda do seu futuro certificado SSL EV.
+Para verificar se é elegível para a subscrição de um certificado SSL EV, aceda a [este link](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}.
+  
+## Instruções
 
+> [!warning]
+>
+> A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). De facto, não poderemos prestar-lhe assistência **para todas as etapas de verificação diretamente realizadas com a autoridade de certificação Sectigo**. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+>
 
-![hosting](images/step1.png){.thumbnail}
+### Etapa 1: encomendar o certificado SSL EV
 
+#### 1.1 - Para um domínio e um alojamento já existentes na OVHcloud
 
-![hosting](images/step2.png){.thumbnail}
+Consulte o nosso guia sobre como [gerir um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/) e selecione o **Certificado SSL EV** uma vez chegado ao túnel de comando.
 
-Apenas terá de seguir as diferentes etapas.
+Insira com exatidão as informações solicitadas por **Sectigo** antes que lhe seja emitido o certificado SSL EV. 
 
+![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
 
-### Se o seu website ainda nao existe
-A OVHcloud propõe-lhe diretamente aquando da encomenda de um novo nome de domínio com o seu futuro alojamento, se desejar subscrever a um certificado SSL EV.
+Clique em `Continuer`{.action} depois de **todos os elementos** estarem corretamente inseridos.
 
-
-![hosting](images/step3.png){.thumbnail}
-
-Basta que especifique as informações da sua empresa:
-
-
-![hosting](images/step4.png){.thumbnail}
-
-
-## Como validar a minha empresa ?
-Após ter efetuado uma encomenda na OVHcloud, receberá um e-mail da parte da Comodo :
-
-```
- Subject : "ORDER #xxxxxxxxxx - Agreement"
- From : noreply_support@comodo.com
- 
- Dear votreadresseemail@domaine.fr
- 
- In order to complete your request for an EV SSL Certificate, we
- require that you confirm the SSL Request and execute an SSL Subscriber
- Agreement. This can be done via click through by following the link
- below and filling in the required details:
- 
- Agreement Link
- 
- If that link doesn't work, please browse to Another Agreement Link and provide the following "verification code":
- 
- xxxxxxxxxxxxxxxxxxxXXXXXXXxxxxxxxxx
- 
- If you do not wish to complete this process online via the click
- through above, you may also download hard copies of the EV SSL
- Certificate Request Form, and the SSL Subscriber Agreement via the links
- below. Should you choose to complete these hardcopy forms you will need
- to print and sign them, then scan and email them to docs@comodo.com.
- Please reference your order number in the subject line.
- 
- Certificate Request Form
- 
- SSL Subscriber Agreement
- 
- Kind Regards,
- 
- Comodo Security Services on behalf of ovhssl
- Support Telephone: +1.888.266.6361 / +1.703.581.6361
- Support Website: http://support.comodo.com
- Validation Docs Fax: US and Canada +1.866.446.7704 / Worldwide +1.801.303.9359
- 
- We now operate a registration-based system for support.
- Please submit your ticket at the support website.
- Please do not reply to this email as this email address is not monitored.
- 
- Comodo Group, Inc. - US Office
- 1255 Broad Street
- Clifton, NJ 07013-3398
- United States
- 
- 
- Comodo CA Limited - European Office
- 26 Office Village,
- Exchange Quay, Trafford Road,
- Salford, Manchester M5 3EQ,
- United Kingdom
- 
- Comodo offers
- essential infrastructure to enable e-merchants, and other
- Internet-connected companies, software providers, and individual
- consumers to interact and conduct business via the Internet safely and
- securely. Our PKI solutions, including SSL Certificates, EV SSL Certificates, Code Signing Certificates as well as Secure E-Mail Certificates,
- increase consumer trust in transacting business online, secure
- information through strong SSL encryption, and satisfy many industry
- best practices or security compliance requirements.
-```
-
-Deverá clicar no link de validação que lhe permitirá confirmar a sua encomenda. Deverá igualemnte precisar a sua autoridade no seio da sua empresa e será necessário a validação do endereço de e-mail associado à sua conta OVHcloud graças ao link clicável. Se a sua empresa está presente no anuário das empresas comerciais ( [https://bde.portaldocidadao.pt/evo/landingpage.aspx](https://bde.portaldocidadao.pt/evo/landingpage.aspx){.external} ), receberá uma chamada da parte da COMODO para efetuar verificações suplementares.
-
-Se a sua empresa não está presente neste anuário, receberá um e-mail da parte da COMODO para que se registe. A COMODO procurará contactá-lo via um número de telefone disponível neste anuário:
-
-```
- Subject : Information Required Order xxxxxxx
- From : evdocs@comodo.com
- 
- 
- Dear Customer,
- 
- Thank you for placing an EV order.
- 
- Your Order is awaiting for Business phone verification.
- 
- Business phone verification: Please update/register your company phone
- number in the Dun & Bradstreet site or else kindly provide legal
- opinion signed by your attorney, or a Latin Notary, if you are in a
- jurisdiction in which a Latin Notary is recognized,
- 
- or Verified legal opinion from a registered Attorney.
- 
- or Verified accountant letter from a registered CPA.
- 
- Please refer the below URL for legal opinion sample.
- 
- https://support.comodo.com/index.php?/Default/Knowledgebase/Article/View/900/87/sample-legal-opinion-letter-for-ev
- 
- If you need assistance, or wish to speak to a Customer Service
- Representative, please contact us toll-free at anytime at 1-888-266-6361
- (U.S.) and +1-703-581-6361 (Worldwide).
- 
- Regards,
- 
- COMODO Validation Team
-```
-
-Assim que a Comodo validar que a sua empresa existe e que pode representá-la, a OVHcloud receberá automaticamente o seu certificado SSL EV e o implementará automaticamente no seu website.
-
-
-## Quais sao as condicoes de elegibilidade ?
-Como definidos no seguinte link, deixamos um resumo das condições de elegibilidade : [https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
-
-Apenas as empresas são elegíveis.
-
-É obrigatório que disponha junto da OVHcloud uma conta de cliente registada como empresa e com o respetivo NIF.
-
-É verificado :
-
-- A existência da sua empresa no anuário das empresas: [https://bde.portaldocidadao.pt/evo/landingpage.aspx](https://bde.portaldocidadao.pt/evo/landingpage.aspx){.external}
-- O número de telefone da sua empresa.
-- O proprietário do seu nome de domínio é verificado na base de dados WHOIS.
-- A confiencialidade dos domínios deve estar suspensa até que este processo de validação esteja terminado.
-- Nome, titulo e autoridade de quem assina o contrato : Se o nome do assinatário do contrato figura, ou não, nos documentos de registo ou na base de dados do portal das finanças. Se for necessária uma validação mais aprofundada, serão contactados diretamente pela Comodo para que se verifique a legitimidade do pedido.
-
-
-### Advertencia Legal
-
+Continue a encomenda até ao pagamento para validar o pedido de criação do certificado SSL.
 
 > [!alert]
 >
-> A OVHcloud não efetua o reembolso do certificado caso não seja elegível.
-> Saiba que se trata de um produto altamente personalizável e como tal, não tem direito aos 15 dias de período de retratação.
-> 
+> Uma vez validada a encomenda, o pedido de certificado SSL EV é enviado à autoridade de certificação **Sectigo**.
+>
+> Certifique-se imperativamente de que é elegível para a subscrição de um certificado SSL EV **antes de pagar o certificado**.
+>
+> Com efeito, não será possível qualquer reembolso do SSL EV, **mesmo que o processo de verificação junto do Sectigo não seja bem sucedido**.
+>
+
+#### 1.2 - Para um novo nome de domínio e um novo alojamento
+
+Se ainda não encomendou o seu nome de domínio e o alojamento associado, aceda à nossa [página inicial da OVHcloud](https://www.ovhcloud.com/pt/), introduza um nome de domínio no **formulário de pesquisa previsto para este efeito** e clique em `Pesquisar`{.action} para iniciar a sua encomenda.
+
+![SSL EV select domain](images/ssl_ev_order_1.png){.thumbnail}
+
+De seguida, selecione o seu nome de domínio, escolha o seu alojamento e as suas opções até ao passo `Configure o seu alojamento web`.
+
+Selecione as suas escolhas de instalação de `módulo em 1 clique`{.action} e `CDN`{.action}, e desça no final da página até à secção `Torne o seu website seguro com os nossos certificados SSL`{.action}.
+ 
+![SSL EV order](images/ssl_ev_order.png){.thumbnail}
+
+Escolha `Sectigo EV SSL`{.action} e depois clique em `Seguinte`{.action}.
+
+Na nova página que aparece, introduza com exatidão as informações solicitadas por **Sectigo** antes que lhe seja emitido o certificado SSL EV:
+
+![SSL EV form](images/ssl_ev_order_6.png){.thumbnail}
+
+Clique em `Seguinte`{.action} depois de **todos os elementos** estarem corretamente inseridos.
+
+Continue a encomenda até o pagamento ser efetuado para iniciar a instalação dos seus serviços.
+
+> [!alert]
+>
+> Uma vez validada a encomenda, o pedido de certificado SSL EV é enviado à autoridade de certificação **Sectigo**. 
+>
+> Certifique-se imperativamente de que é elegível para a subscrição de um certificado SSL EV **antes de pagar o certificado**.
+>
+> Com efeito, não será possível qualquer reembolso do SSL EV, **mesmo que o processo de verificação junto do Sectigo não seja bem sucedido**.
+>
+
+### Etapa 2 : verificações com a Autoridade de Certificação (AC) Sectigo
+
+Todas as ações descritas nesta etapa podem ser realizadas durante vários dias. Os prazos **dependem** das verificações realizadas por Sectigo.
+
+> [!warning]
+>
+> Nesta etapa, todo o processo depende do fornecedor do certificado **Sectigo** e das informações introduzidas aquando da encomenda do certificado SSL EV. 
+>
+> Apenas **Sectigo** poderá intervir nesta etapa e a OVHcloud não poderá agir a este nível.
+>
+> De facto, o papel do AC Sectigo é certificar, de forma independente e imparcial, as informações da sua organização para as integrar no certificado SSL EV.
+>
+> É **Sectigo** que decide emitir um certificado SSL EV e de forma alguma a OVHcloud. Sectigo é, por definição, o único com autoridade em matéria de certificação.
+>
+
+#### 2.1 - Receção do e-mail de confirmação por Sectigo
+
+Depois de efetuar a encomenda, o Sectigo enviar-lhe-á um e-mail com um link de validação e um procedimento a seguir.
+Verifique as suas informações e valide o seu pedido seguindo as indicações presentes neste e-mail. 
+
+Para garantir que a troca de e-mail com Sectigo é efetuada corretamente, verifique também a validade do endereço de e-mail indicado no formulário aquando da encomenda do SSL EV, bem como o endereço de e-mail associado ao seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+
+#### 2.2 - Verificações feitas pela Autoridade de Certificação Sectigo
+
+Sectigo vai depois verificar que a sua organização existe e está bem registada nos registos oficiais.
+
+> [!primary]
+>
+> Sectigo pode não estar em condições de verificar todas as informações junto dos registos oficiais. Os serviços de Sectigo podem contactá-lo por telefone através do número que indicou durante a encomenda ou através do número de telefone oficial da sua organização.
+>
+
+Sectigo vai depois verificar se tem a exclusividade/autoridade sobre a propriedade e a utilização do domínio com o qual vai utilizar o certificado SSL EV.
+
+#### 2.3 - Últimas verificações por telefone com Sectigo
+
+Depois de realizar as verificações por Sectigo, os seus serviços serão contactados por telefone para finalizar a subscrição do seu certificado SSL EV.
+
+> [!success]
+>
+> Para mais informações sobre as operações descritas na **etapa 2**, consulte a [documentação oficial de Sectigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external} sobre o assumpto.
+>
+
+### Etapa 3 : instalação do certificado SSL EV com o seu domínio e o seu alojamento OVHcloud
+
+Depois de Sectigo ter procedido a todas as verificações, os seus serviços geram o certificado SSL EV e transmitem-nos os elementos necessários à sua instalação no seu alojamento.
+
+Só precisa de [atualizar o seu website em HTTPS](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/) para utilizar plenamente o seu certificado SSL EV.
+
+## Quer saber mais? <a name="go-further"></a>
+
+[Site oficial Sectigo](https://sectigostore.com){.external}
+
+[Descrição das verificações efetuadas pela Setigo](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
+
+[Gerir um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/)
+
+[Passar o seu website em HTTPS](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
