@@ -42,7 +42,7 @@ Existem dois tipos de endereços IP:
 
 Para utilizar a opção de restrição por IP da Área de Cliente OVHcloud, deverá introduzir **unicamente** o(s) seu(s) endereço(s) IP público(ais).
 
-Para obter o endereço IP público de um dispositivo que será autorizado a aceder à sua Área de Cliente OVHcloud, aceda ao site [mon-ip.com](https://mon-ip.com){.external} (não gerido pela OVHcloud).
+Para obter o endereço IP público de um dispositivo que será autorizado a aceder à sua Área de Cliente OVHcloud, aceda ao site [whatismyip.com](https://www.whatismyip.com/){.external} (não gerido pela OVHcloud).
 
 Tome nota do endereço IP que aparece e repita a operação para cada um dos dispositivos que será autorizado a aceder à sua Área de Cliente OVHcloud.
 

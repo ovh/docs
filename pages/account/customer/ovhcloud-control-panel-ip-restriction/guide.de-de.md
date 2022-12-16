@@ -42,7 +42,7 @@ Es gibt zwei IP-Adressen:
 
 Um die IP-basierte Einschränkungsoption im OVHcloud Kundencenter zu verwenden, geben Sie **nur** Ihre öffentliche(n) IP(s) ein.
 
-Um die öffentliche IP-Adresse eines Geräts abzurufen, dem der Zugriff auf Ihr OVHcloud Kundencenter gestattet wird, gehen Sie auf die Seite [mon-ip.com](https://mon-ip.com){.external} (nicht von OVHcloud verwaltet).
+Um die öffentliche IP-Adresse eines Geräts abzurufen, dem der Zugriff auf Ihr OVHcloud Kundencenter gestattet wird, gehen Sie auf die Seite [whatismyip.com](https://www.whatismyip.com/){.external} (nicht von OVHcloud verwaltet).
 
 Achten Sie auf die angezeigte IP-Adresse und wiederholen Sie die Operation für jedes Gerät, das Zugriff auf Ihr OVHcloud Kundencenter erhält.
 

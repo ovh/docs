@@ -42,7 +42,7 @@ Istnieją dwa rodzaje adresów IP:
 
 Aby skorzystać z opcji ograniczenia IP w Panelu klienta OVHcloud, należy wpisać **tylko** Twój publiczny adres IP.
 
-Aby uzyskać publiczny adres IP urządzenia, które będzie uprawnione do dostępu do Panelu klienta OVHcloud, przejdź na stronę [mon-ip.com](https://mon-ip.com){.external} (nie zarządzany przez OVHcloud).
+Aby uzyskać publiczny adres IP urządzenia, które będzie uprawnione do dostępu do Panelu klienta OVHcloud, przejdź na stronę [whatismyip.com](https://www.whatismyip.com/){.external} (nie zarządzany przez OVHcloud).
 
 Przypisz do wiadomości adres IP, który się wyświetli, po czym powtórzyj operację dla każdego urządzenia, który będzie miał dostęp do Twojego Panelu klienta OVHcloud.
 
