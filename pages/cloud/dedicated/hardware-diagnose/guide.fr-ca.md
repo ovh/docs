@@ -1,88 +1,71 @@
 ---
-title: Diagnostiquer des dysfonctionnements matériels sur un serveur dédié
+title: 'Diagnostiquer des dysfonctionnements matériels sur un serveur dédié'
 slug: diagnostic-dysfonctionnements-materiels-serveur-dedie
-excerpt: Découvrez comment diagnostiquer des dysfonctionnements matériels sur votre serveur
+excerpt: 'Découvrez comment utiliser les outils de diagnostic pour identifier des dysfonctionnements matériels sur votre serveur'
 section: Sécurité
+order: 03
 ---
 
-**Dernière mise à jour le 2018/06/21**
+**Dernière mise à jour le 15/12/2022**
 
 ## Objectif
 
-
-L’usure d’un serveur peut impliquer avec le temps des dysfonctionnements matériels causant des erreurs. Pour cela, votre serveur est équipé de plusieurs outils de diagnostic permettant d'identifier les composants matériels défectueux.
+L’usure progressive d’un serveur peut amener des dysfonctionnements matériels causant des erreurs. Votre serveur est équipé de plusieurs outils de diagnostic permettant d'identifier les composants matériels défectueux.
 
 **Découvrez comment diagnostiquer des dysfonctionnements matériels sur votre serveur.**
 
-
 ## Prérequis
 
-* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs-dedies/){.external}.
-* Avoir redémarré le serveur en [mode rescue](../ovh-rescue/){.external}.
-
+- Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/).
+- Avoir redémarré le serveur en [mode rescue](https://docs.ovh.com/ca/fr/dedicated/ovh-rescue/).
 
 ## En pratique
 
-### Utiliser l'interface web
-
-Une fois que votre serveur a redémarré en [mode rescue](../ovh-rescue/), vous recevrez un e-mail comportant les informations d'accès à votre service. Ce message contiendra également un lien vers l'interface web du mode rescue. Celui-ci ressemble en général à ceci : *https://IP_du_serveur:444*.
-
-Après avoir cliqué sur le lien, vous serez redirigé vers l'interface web comme indiqué ci-dessous.
-
-![L’interface Web](images/rescue-mode-04.png){.thumbnail}
-
-
-### Exécuter tous les tests matériels
-
-Sur l'interface web, vous pouvez cliquer sur le bouton `Démarrer tous les tests`{.action} qui exécutera simultanément tous les tests matériels disponibles.
-
-![Démarrez tous les tests](images/rescue-mode-042.png){.thumbnail}
-
-
-### Exécuter des tests matériels différents
-
-L'interface web vous permet d'exécuter des tests différents pour :
+Ce guide vous détaille les tests à réaliser pour diagnostiquer :
 
 - le ou les processeurs ;
 - la connexion du réseau ;
 - la mémoire RAM ;
 - les partitions du disque.
-
-Vous pourrez également voir les journaux SMART de votre serveur qui vous donnent des informations détaillées sur le ou les disques durs.
-
- 
-#### Processeurs
+ 
+### Processeurs
 
 Le test du processeur vérifie le bon fonctionnement du processeur de votre serveur et nécessite environ 30 minutes pour s'exécuter correctement. Si le serveur tombe en panne pendant ce test, cela signifie que le processeur est défectueux.
 
-Pour lancer le test, cliquez sur le bouton comme indiqué sur l'image ci-dessous.
+```bash
+WRKR=$(grep -c "^processor" /proc/cpuinfo)
+stress-ng --metrics-brief --timeout 60s --cpu $WRKR --io $WRKR --aggressive --ignite-cpu --maximize --pathological
+stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
+```
 
-![Test du processeur](images/processors.png){.thumbnail}
+### Connexion au réseau
 
-#### Connexion au réseau
+Le test de connexion réseau vérifie votre connexion et votre bande passante externe. Ces données vous sont fournies à titre indicatif, il ne s'agit pas d'un test de performances.
 
-Le test de connexion réseau vérifie votre bande passante interne et externe. Pour lancer le test, cliquez sur le bouton comme indiqué sur l'image ci-dessous.
+```bash
+ping -c 10 proof.ovh.net
+for file in 1Mb 10Mb 100Mb 1Gb ; do time curl -4f https://proof.ovh.net/files/${file}.dat -o /dev/null; done
+```
 
-![Test de réseau](images/network-connection.png){.thumbnail}
-
-#### Mémoire RAM
+### Mémoire RAM
 
 Le test de mémoire vérifie l'intégrité des modules RAM de votre serveur. Si le serveur tombe en panne pendant ce test, cela signifie qu’un ou plusieurs modules RAM sont défectueux.
 
-Pour lancer le test, cliquez sur le bouton comme indiqué sur l'image ci-dessous.
+> [!warning]
+> Attention, ce test peut être très long.
 
-![Test de mémoire](images/memory.png){.thumbnail}
+```bash
+RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
+memtester ${RAM}M 1
+```
 
-#### Partitions du disque
+### Partitions du disque
 
 Le test des partitions comprend un test d'accès au disque et une vérification du système de fichiers. Le test d'accès au disque vérifie si le système peut communiquer avec les disques durs de votre serveur. La vérification du système de fichiers utilise la commande `fsck -fy`.
 
-> [!warning]
->
-> L'exécution d'une vérification du système de fichiers sur un disque dur endommagé peut entraîner une perte de données.
->
-
-![Test de disque](images/partitions.png){.thumbnail}
+```bash
+stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+```
 
 ## Aller plus loin
 

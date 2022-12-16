@@ -1,88 +1,74 @@
 ---
 title: 'Diagnosticare problemi hardware su un server dedicato'
 slug: diagnostica-problemi-hardware-server-dedicato
-excerpt: 'Scopri come individuare problemi di natura hardware su un server'
+excerpt: 'Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server'
 section: Sicurezza
 ---
 
-**Ultimo aggiornamento: 27/11/2018**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 15/12/2022**
 
 ## Obiettivo
-
 
 Con il passare del tempo, l’usura di un server può causare malfunzionamenti dovuti a problemi di tipo hardware. Per questo motivo, i server dedicati OVH sono dotati di numerosi strumenti di diagnostica che permettono di individuare i componenti hardware difettosi.
 
 **Questa guida ti mostra come diagnosticare problemi hardware su un server.**
 
-
 ## Prerequisiti
 
-* Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
-* Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}
-
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/)
+- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/dedicated/rescue_mode/)
 
 ## Procedura
 
-### Utilizza l’interfaccia Web
-
-Una volta riavviato il server in [Rescue mode](https://docs.ovh.com/it/dedicated/rescue_mode/), riceverai un’email contenente le credenziali di accesso e un link all’interfaccia Web della modalità Rescue, con il seguente formato: **https://IP_du_serveur:444**.  
-
-Clicca sul link e sarai reindirizzato verso l’interfaccia Web come mostrato nell’immagine di seguito.
-
-![L’interfaccia Web](images/rescue-mode-04.png){.thumbnail}
-
-
-### Esegui tutti i test hardware
-
-Nella parte superiore dell’interfaccia Web, clicca sul pulsante `Start all tests`{.action} per eseguire contemporaneamente tutti i test hardware disponibili.
-
-![Start all tests](images/rescue-mode-042.png){.thumbnail}
-
-
-### Esegui i test hardware uno alla volta
-
-L’interfaccia Web consente di eseguire separatamente i seguenti test:
+Questa guida ti mostra i test da effettuare per diagnosticare:
 
 - processori
 - connessione di rete
 - memoria RAM
 - partizioni del disco
 
-Inoltre, per avere informazioni dettagliate sugli hard disk è possibile consultare gli SMART log del server.
-
- 
-#### **Processori**
+### Processori
 
 Questo test serve per verificare il corretto funzionamento del processore del server e richiede circa 30 minuti. Se il server si blocca durante il test, significa che il processore è difettoso.
 
-Per avviare il test clicca sul pulsante come indicato nell’immagine seguente:
+```bash
+WRKR=$(grep -c "^processor" /proc/cpuinfo)
+stress-ng --metrics-brief --timeout 60s --cpu $WRKR --io $WRKR --aggressive --ignite-cpu --maximize --pathological
+stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
+```
 
-![Test del processore](images/processors.png){.thumbnail}
+### Connessione di rete
 
-#### **Connessione di rete**
+Il test di connessione di rete permette di verificare la larghezza di banda interna ed esterna. Questi dati sono forniti a titolo indicativo e non costituiscono un test di performance.
 
-Il test di connessione di rete permette di verificare la larghezza di banda interna ed esterna. Per avviare il test clicca sul pulsante come indicato nell’immagine seguente:
+```bash
+ping -c 10 proof.ovh.net
+for file in 1Mb 10Mb 100Mb 1Gb ; do time curl -4f https://proof.ovh.net/files/${file}.dat -o /dev/null; done
+```
 
-![Test di rete](images/network-connection.png){.thumbnail}
-
-#### **Memoria RAM**
+### Memoria RAM
 
 Il test di memoria consente di verificare l’integrità dei moduli RAM del server. Se il server si blocca durante il test, significa che uno o più moduli RAM sono difettosi.
 
-Per avviare il test clicca sul pulsante come indicato nell’immagine seguente:
+> [!warning]
+> Attenzione, questo test potrebbe richiedere molto tempo.
 
-![Test di memoria](images/memory.png){.thumbnail}
+```bash
+RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
+memtester ${RAM}M 1
+```
 
-#### **Partizioni del disco**
+### Partizioni del disco
 
 Questo test comprende sia una verifica dell’accesso al disco che un controllo del file system. Il test di accesso al disco serve per verificare che il sistema sia in grado di comunicare con gli hard disk del server. Riguardo al test del file system, si utilizza il comando `fsck -fy`.
 
-> [!warning]
->
-> Il controllo del file system su un hard disk danneggiato può provocare una perdita di dati.
->
-
-![Test del disco](images/partitions.png){.thumbnail}
+```bash
+stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+```
 
 ## Per saperne di più
 

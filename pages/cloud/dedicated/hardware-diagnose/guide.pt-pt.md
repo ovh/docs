@@ -1,89 +1,75 @@
 ---
 title: 'Diagnosticar avarias materiais num servidor dedicado'
 slug: diagnostico-avarias-materiais-servidor-dedicado
-excerpt: 'Saiba como diagnosticar avarias materiais no seu servidor dedicado'
+excerpt: 'Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor'
 section: Segurança
 ---
 
-**Última atualização: 23/08/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 15/12/2022**
 
 ## Sumário
-
 
 O desgaste de um servidor ao longo do tempo pode causar avarias materiais, originando erros. Por essa razão, o seu servidor inclui várias ferramentas de diagnóstico que permitem identificar os componentes físicos com defeito.
 
 **Saiba como diagnosticar avarias materiais no seu servidor dedicado.**
 
-
 ## Requisitos
 
-* Ter um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
-* Reiniciar o servidor em [Modo Rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/){.external}.
-
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/).
+- Reiniciar o servidor em [Modo Rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/).
 
 ## Instruções
 
-### Utilizar a interface web
-
-Depois de o seu servidor reiniciar em [Modo Rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/), receberá um e-mail com as informações de acesso ao serviço. Também encontrará uma ligação para a interface web do modo rescue. A ligação terá o seguinte formato: *https://IP_do_servidor:444*.
-
-Após clicar na ligação, será redirecionado para a interface web (imagem abaixo).
-
-![A interface web](images/rescue-mode-04.png){.thumbnail}
-
-
-### Realizar todos os testes materiais
-
-Na interface web, pode clicar no botão `Start all tests`{.action} (Iniciar todos os testes) que realizará todos os testes materiais disponíveis ao mesmo tempo.
-
-![Iniciar todos os testes](images/rescue-mode-042.png){.thumbnail}
-
-
-### Realizar testes materiais diferentes
-
-A interface web permite-lhe realizar testes diferentes para:
+Este guia explica pormenorizadamente os testes a realizar para diagnosticar:
 
 - o(s) processador(es);
 - a ligação à rede;
 - a memória RAM;
 - as partições do disco.
 
-Além disso, poderá também ver os logs SMART do servidor que apresentam informações detalhadas sobre o(s) disco(s) rígido(s).
-
- 
-#### Processadores
+### Processadores
 
 O teste do processador verifica o bom funcionamento do processador do seu servidor e requer cerca de 30 minutos para ser executado. Se o servidor avariar durante o teste, isto significa que o processador é defeituoso.
 
-Para efetuar o teste, clique no botão tal como demonstrado na imagem abaixo.
+```bash
+WRKR=$(grep -c "^processor" /proc/cpuinfo)
+stress-ng --metrics-brief --timeout 60s --cpu $WRKR --io $WRKR --aggressive --ignite-cpu --maximize --pathological
+stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
+```
 
-![Teste do processador](images/processors.png){.thumbnail}
+### Ligação à rede
 
-#### Ligação à rede
+O teste da ligação à rede verifica a largura de banda interna e externa. Estes dados são-lhe fornecidos a título indicativo, não se trata de um teste de performance.
 
-O teste da ligação à rede verifica a largura de banda interna e externa. Para efetuar o teste, clique no botão tal como demonstrado na imagem abaixo.
+```bash
+ping -c 10 proof.ovh.net
+for file in 1Mb 10Mb 100Mb 1Gb ; do time curl -4f https://proof.ovh.net/files/${file}.dat -o /dev/null; done
+```
 
-![Teste de rede](images/network-connection.png){.thumbnail}
-
-#### Memória RAM
+### Memória RAM
 
 O teste da memória verifica a integridade dos módulos RAM do seu servidor. Se o servidor avariar durante o teste, isto significa que um ou vários módulos RAM têm defeitos.
 
-Para efetuar o teste, clique no botão tal como demonstrado na imagem abaixo.
+> [!warning]
+> Atenção, este teste pode ser muito longo.
 
-![Teste de memória](images/memory.png){.thumbnail}
+```bash
+RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
+memtester ${RAM}M 1
+```
 
-#### Partições do disco
+### Partições do disco
 
 O teste das partições abrange um teste de acesso ao disco e uma verificação do sistema de ficheiros. O teste de acesso ao disco verifica se o sistema pode comunicar com os discos rígidos do seu servidor. A verificação do sistema de ficheiros utiliza o comando `fsck -fy`.
 
-> [!warning]
->
-> A verificação do sistema de ficheiros num disco rígido danificado pode causar perda de dados.
->
-
-![Teste de disco](images/partitions.png){.thumbnail}
+```bash
+stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+```
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
