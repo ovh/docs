@@ -71,6 +71,20 @@ Vous serez ensuite invité à créer un compte pour l'utilisation de l'extension
 
 Votre boutique en ligne est alors configurée avec les paramètres généraux.
 
+### Configuration - Méthode 2 (configuration manuelle)
+
+Listez les extensions installées en cliquant sur «&nbsp;Extensions&nbsp;» puis «&nbsp;Extensions installées&nbsp;». La liste de vos extensions s'affiche. Cliquez sur «&nbsp;Réglages&nbsp;» dans le module WooCommerce&nbsp;:
+
+![Setup Wizard - Extension, WooCommerce, Settings](images/wordpress-woocommerce-first-steps%5B11%5D.png){.thumbnail}
+
+Vous avez également accès à ces réglages directement en cliquant sur «&nbsp;WooCommerce&nbsp;» puis «&nbsp;Réglages&nbsp;»&nbsp;:
+
+![Setup Wizard - WooCommerce, Settings](images/wordpress-woocommerce-first-steps%5B12%5D.png){.thumbnail}
+
+La page de réglages comprend plusieurs onglets&nbsp;:
+
+![Setup Wizard - WooCommerce, Settings, General](images/wordpress-woocommerce-first-steps%5B13%5D.png){.thumbnail}
+
 ## Aller plus loin
 
 - l'extension [Jetpack](https://jetpack.com/)
