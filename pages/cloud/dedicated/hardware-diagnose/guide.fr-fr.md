@@ -28,7 +28,7 @@ Ce guide vous détaille les tests à réaliser pour diagnostiquer :
 - la mémoire RAM ;
 - les partitions du disque.
  
-#### Processeurs
+### Processeurs
 
 Le test du processeur vérifie le bon fonctionnement du processeur de votre serveur et nécessite environ 30 minutes pour s'exécuter correctement. Si le serveur tombe en panne pendant ce test, cela signifie que le processeur est défectueux.
 
@@ -38,7 +38,7 @@ stress-ng --metrics-brief --timeout 60s --cpu $WRKR --io $WRKR --aggressive --ig
 stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
 ```
 
-#### Connexion au réseau
+### Connexion au réseau
 
 Le test de connexion réseau vérifie votre connexion et votre bande passante externe. Ces données vous sont fournies à titre indicatif, il ne s'agit pas d'un test de performances.
 
@@ -47,7 +47,7 @@ ping -c 10 proof.ovh.net
 for file in 1Mb 10Mb 100Mb 1Gb ; do time curl -4f https://proof.ovh.net/files/${file}.dat -o /dev/null; done
 ```
 
-#### Mémoire RAM
+### Mémoire RAM
 
 Le test de mémoire vérifie l'intégrité des modules RAM de votre serveur. Si le serveur tombe en panne pendant ce test, cela signifie qu’un ou plusieurs modules RAM sont défectueux.
 
@@ -59,7 +59,7 @@ RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/memi
 memtester ${RAM}M 1
 ```
 
-#### Partitions du disque
+### Partitions du disque
 
 Le test des partitions comprend un test d'accès au disque et une vérification du système de fichiers. Le test d'accès au disque vérifie si le système peut communiquer avec les disques durs de votre serveur. La vérification du système de fichiers utilise la commande `fsck -fy`.
 

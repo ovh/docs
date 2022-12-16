@@ -1,88 +1,74 @@
 ---
 title: 'Diagnostyka usterek sprzętowych serwera dedykowanego'
 slug: diagnostyka-usterek-sprzetowych-serwera-dedykowanego
-excerpt: 'Dowiedz się, jak przeprowadzić diagnostykę uszkodzeń fizycznych serwera dedykowanego'
+excerpt: 'Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze'
 section: 'Diagnostyka i tryb Rescue'
 ---
 
-**Ostatnia aktualizacja z dnia 05-08-2018**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 15-12-2022**
 
 ## Wprowadzenie
-
 
 Eksploatacja serwera może z czasem powodować jego fizyczne uszkodzenia, a to z kolei może być przyczyną błędów. Dlatego Twój serwer wyposażony jest w kilka narzędzi diagnostycznych umożliwiających identyfikację uszkodzonych komponentów.
 
 **Dowiedz się, jak przeprowadzić diagnostykę sprzętową serwera dedykowanego.**
 
-
 ## Wymagania początkowe
 
-* Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
-* Uruchomienie serwera w [trybie Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/){.external}
-
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/)
+- Uruchomienie serwera w [trybie Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/)
 
 ## W praktyce
 
-### Korzystanie z interfejsu graficznego trybu Rescue
-
-Po ponownym uruchomieniu Twojego serwera w [trybie Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/) otrzymasz e-mail zawierający dane dostępowe do usługi. W wiadomości tej otrzymasz również link do interfejsu graficznego trybu Rescue. Będzie on wyglądał analogicznie: *https://IP_serwera:444*.
-
-Po kliknięciu na link zostaniesz przekierowany do interfejsu.
-
-![Interfejs sieciowy](images/rescue-mode-04.png){.thumbnail}
-
-
-### Wykonanie wszystkich testów sprzętu
-
-W interfejsie możesz kliknąć przycisk `Uruchom wszystkie testy`{.action}, co spowoduje jednoczesne uruchomienie wszystkich dostępnych testów. 
-
-![Uruchom wszystkie testy](images/rescue-mode-042.png){.thumbnail}
-
-
-### Wykonanie pojedynczych testów sprzętu
-
-W interfejsie możesz wykonać testy:
+Niniejszy przewodnik zawiera szczegółowe informacje o testach, które należy przeprowadzić, aby zdiagnozować:
 
 - procesora lub procesorów;
 - połączenia sieciowego;
 - pamięci RAM;
 - partycji dysku.
 
-Możesz również wyświetlić logi SMART serwera, które zawierają szczegółowe informacje o dysku lub dyskach twardych.
-
- 
-#### Procesory
+### Procesory
 
 Test procesora polega na sprawdzeniu, czy procesor w Twoim serwerze działa poprawnie. Na prawidłowe przeprowadzenie testu potrzeba około 30 minut.  Jeśli test procesora nie zostanie zakończony pomyślnie lub serwer przestanie odpowiadać podczas testu, oznacza to, że procesor jest uszkodzony.
 
-Aby rozpocząć test, kliknij przycisk, jak pokazano na poniższym obrazku. 
+```bash
+WRKR=$(grep -c "^processor" /proc/cpuinfo)
+stress-ng --metrics-brief --timeout 60s --cpu $WRKR --io $WRKR --aggressive --ignite-cpu --maximize --pathological
+stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
+```
 
-![Test procesora](images/processors.png){.thumbnail}
+### Połączenie z siecią
 
-#### Połączenie z siecią
+Test połączenia z siecią pozwala sprawdzić przepustowość wewnętrzną i zewnętrzną. Dane te podane są jedynie w celach informacyjnych.
 
-Test połączenia z siecią pozwala sprawdzić przepustowość wewnętrzną i zewnętrzną. Aby rozpocząć test, kliknij przycisk, jak pokazano na poniższym obrazku. 
+```bash
+ping -c 10 proof.ovh.net
+for file in 1Mb 10Mb 100Mb 1Gb ; do time curl -4f https://proof.ovh.net/files/${file}.dat -o /dev/null; done
+```
 
-![Test sieci](images/network-connection.png){.thumbnail}
-
-#### Pamięć RAM
+### Pamięć RAM
 
 Test pamięci pozwala sprawdzić integralność modułów RAM w Twoim serwerze. Jeśli podczas testu serwer przestanie odpowiadać lub test nie zakończy się pomyślnie, oznacza to, że jeden lub kilka modułów RAM jest uszkodzonych.
 
-Aby rozpocząć test, kliknij przycisk, jak pokazano na poniższym obrazku. 
+> [!warning]
+> Uwaga, ten test może być bardzo długi.
 
-![Test pamięci](images/memory.png){.thumbnail}
+```bash
+RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
+memtester ${RAM}M 1
+```
 
-#### Partycje dysku
+### Partycje dysku
 
 Test partycji składa się z testu dostępu do dysku oraz weryfikacji systemu plików. Test dostępu do dysku pozwala sprawdzić, czy system może komunikować się z dyskami twardymi w Twoim serwerze. Do weryfikacji systemu plików służy komenda `fsck -fy`.
 
-> [!warning]
->
-> Przeprowadzenie weryfikacji systemu plików na uszkodzonym dysku twardym może spowodować utratę danych.
->
-
-![Test dysku](images/partitions.png){.thumbnail}
+```bash
+stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+```
 
 ## Sprawdź również
 
