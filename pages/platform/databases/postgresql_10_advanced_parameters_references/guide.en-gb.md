@@ -34,16 +34,16 @@ td:nth-child(-n+2) {
 
 ## Instructions
 
-### Advanced parameters for PostgreSQL
+### Advanced parameters for PostgreSQL{#custom-id}
 
 Below you can find a summary of every configuration option available for PostgreSQL service:
 
-#### General parameters
+#### General parameters{#custom-id}
 
 | Parameter | Value Type | Description |
 |:---|:---:|:---|
 | `admin_password` | string | Custom password for the admin user. It defaults to a random string, and should be set when a new service is being created. |
-| `admin_username` | string | Custom username for admin user. It should be set when a new service is being created.<br>The default value is: `avnadmin` |
+| `admin_username`{.child} | string | Custom username for admin user. It should be set when a new service is being created.<br>The default value is: `avnadmin` |
 | `backup_hour` | integer | The hour of the day (in UTC) when backup for the service is started. New backup is started only if the previous backup has been completed. A valid range is: 0-24 |
 | `backup_minute` | integer | The minute of the hour when backup for the service is started. New backup is started only if the previous backup has been completed. A valid range is: 0-60 |
 | `ip_filter` | array | Restricts the incoming connections from the Classless Inter-Domain Routing (CIDR) address block, e.g. `10.20.0.0/16`.<br>The default value is: `0.0.0.0/0` |
