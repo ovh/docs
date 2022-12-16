@@ -9,7 +9,7 @@ category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Backups
 ---
 
-**Dernière mise à jour le 20/07/2022**
+**Dernière mise à jour le 16/12/2022**
 
 ## Objectif
 
@@ -185,7 +185,7 @@ Cliquez sur `Attach to Subnet`{.action}.
 
 ![Create HYCUVM 08](images/02-createhycuvm08.png){.thumbnail}
 
-Sélectionnez le réseau `base`{.action} dans le menu déroulant **Subnet** et `Connected`{.action} dans le menu déroulant **Network Connection State**. Cliquez ensuite sur `Save`{.action}.
+Sélectionnez le réseau `infra`{.action} dans le menu déroulant **Subnet** et `Connected`{.action} dans le menu déroulant **Network Connection State**. Cliquez ensuite sur `Save`{.action}.
 
 ![Create HYCUVM 09](images/02-createhycuvm09.png){.thumbnail}
 
