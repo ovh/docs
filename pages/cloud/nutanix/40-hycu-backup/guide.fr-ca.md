@@ -195,8 +195,8 @@ Cliquez sur `Next`{.action}.
 
 Créez un fichier **yaml** en modifiant ces valeurs :
 
-- **< Adresse IP >** : Adresse IP locale du cluster.
-- **< GATEWAY >** : Passerelle locale du cluster pour aller sur Internet.
+- **< Adresse IP >** : Adresse IP locale de la machine virtuelle avec le masque de sous-réseau sous la forme XX.XX.XX.XX/XX. 
+- **< GATEWAY >** : Passerelle locale de la machine virtuelle pour aller sur Internet.
 - **< DNS >** : DNS utilisé sur Internet.
 
 ```yaml

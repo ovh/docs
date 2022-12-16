@@ -195,8 +195,8 @@ Click `Next`{.action}.
 
 Create a **yaml** file by editing these values:
 
-- **< IP address >**: Local IP address of the cluster.
-- **< GATEWAY >**: Local gateway for the cluster to access the Internet.
+- **< IP address >**: The local IP address of the virtual machine with the subnet mask as XX.XX.XX.XX/XX.
+- **< GATEWAY >**: Local gateway for the virtual machine to access the Internet.
 - **< DNS >**: DNS used on the Internet.
 
 ```yaml
