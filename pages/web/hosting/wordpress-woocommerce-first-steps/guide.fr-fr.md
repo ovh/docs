@@ -83,11 +83,22 @@ Vous avez également accès à ces réglages directement en cliquant sur «&nbsp
 
 La page de réglages comprend plusieurs onglets&nbsp;:
 
-![Setup Wizard - WooCommerce, Settings, General](images/wordpress-woocommerce-first-steps%5B13%5D.png){.thumbnail}
+![Setup Wizard - WooCommerce, Settings, Tabs](images/wordpress-woocommerce-first-steps%5B13%5D.png){.thumbnail}
 
 ### Réglages
 
 #### Général
+
+Cet onglet vous permet de définir les éléments suivants&nbsp;:
+
+- adresse de l'entreprise
+- zones de vente et de livraison
+- localisation par défaut du client (optionnel)
+- activation/désaction des taxes
+- coupons
+- données monétaires (devise du site, affichage).
+
+![Setup Wizard - WooCommerce, Settings, General tab](images/wordpress-woocommerce-first-steps%5B14%5D.png){.thumbnail}
 
 #### Produits
 
