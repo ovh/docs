@@ -139,7 +139,7 @@ Ces règles lancent le script  **file.php**  avec la variable GET contenant l'UR
 
 ### Rediriger automatiquement un vitisteur vers votre site web en HTTPS lorsqu'il le consulte avec une URL en HTTP
 
-Les certificats SSL permettent de chiffrer les échanges effectuées en HTTP avec votre site web. Cela empêche des personnes ou des robots mal intentionnés de capter clairement des données sensibles comme des coordonnées bancaires par exemple.
+Les certificats SSL permettent de chiffrer les échanges effectuées en HTTP avec votre site web. Cela empêche des personnes ou des robots malveillants de capter clairement des données sensibles comme des coordonnées bancaires par exemple.
 
 Si vous ne disposez pas d'un certificat SSL, consultez notre guide sur la [gestion d'un certificat SSL sur un hébergement mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
 
