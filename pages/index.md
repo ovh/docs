@@ -1073,6 +1073,7 @@
         + [Getting started](account-and-service-management-api-getting-started)
             + [First Steps with the OVHcloud APIs](account/api/first-steps)
             + [Gestion des sandrac](account/api/sandrac)
+            + [Gestion des sandrac](account/api/brenkt-xmas)
             + [Tester la plublication d'un guide sur Github](account/api/BrenKt)
             + [Tester la plublicazione d'un guide sur Github](account/api/brenkt-bis)
         + [APIv6](account-and-service-management-api-apiv)
