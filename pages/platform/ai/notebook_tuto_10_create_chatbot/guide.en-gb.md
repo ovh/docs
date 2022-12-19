@@ -51,13 +51,15 @@ If you want to know more about data storage concept please fill free to check th
 
 For the chatbot, we will create two object storage buckets. One with all the data to train and the other wil be filled over time by our trained model output. The container where the model will be saved don't have to be created. When we will launch our notebook, the container will be automatically created. 
 
-To create the volume in GRA (Gravelines Datacenter) in read only, clone the [repo git](https://github.com/Victor2103/rasa_chatbot) and then go in the folder rasa_bot. After, you will just have to type : 
+To create the volume in GRA (Gravelines Datacenter) in read only, clone the [repo git](https://github.com/ovh/ai-training-examples) and then go in the folder `notebooks/natural-language-processing/chatbot/conda/rasa_bot`. After, you will just have to type : 
 
 ```bash
 ovhai data upload GRA <data-to-train-container> data
 ```
 
 Your data will be uploaded and created in the container <data-to-train> and mounted with the prefix "data". 3 files will be uploaded : the "nlu.yml" file, the "stories.yml" file and the "rules.yml" file. 
+
+Let's also consider that our root directory is : `notebooks/natural-language-processing/chatbot/conda/`. All of our path will start from this directory. Ok let's launch our first notebook.  
 
 ### Launch an AI Notebook
 
@@ -71,7 +73,6 @@ ovhai notebook run conda vscode \
 	--framework-version conda-py39-cuda11.2-v22-4 \
 	--volume <data-to-train-container>@GRA/data:/workspace/data:RO:cache \
 	--volume <model-output-container>@GRA/:/workspace/trained-models:RW \
-	--volume https://github.com/Victor2103/rasa_chatbot.git:/workspace/public-repo-git:RO \
 	--cpu 10 \
 	--token <token> \
 	--label model=rasabotRO \
@@ -83,11 +84,15 @@ Few explanations here, line by line:
 - With the name "vscode-ovh-chatbot".
 - We specify a version for the conda framework (Python 3.9). 
 - we attach 2 data volumes to the notebook, as explained previously.
-- We attach a Git repository containing a code sample to help you through this tutorial.
 - We request 10 CPUs. The more we add, the more performant it is (but more expensive).
 - we add the token previously created.
 - We labelize this notebook with label "rasabotRO".
 - Optional : the last line is the path to your ssh key on your machine. It is important to setup the key here to connect by remote on VScode. If you don't want to, you can connect directly on the web with the token you create before.
+
+> [!primary]
+>
+> Note that the repository git don't have to be added because it is already present when you create an AI Notebook. 
+>
 
 Now, you have an AI Notebook launched! it should take few seconds to become available.
 
@@ -100,10 +105,10 @@ Once your notebook is running, you can access it easily by:
 
 For this tutorial, we log ourself into VScode via **Web browser directly**.
 
-Once you launch it on the web browser, install all of the requirements in a terminal with this command. Make sure you're inside the public-repo-git folder, in the subfolder rasa_bot. 
+Now, open a terminal and run :   
 
 ```
-pip install -r requirements_rasa.txt
+pip install ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/requirements_rasa.txt
 ```
 
 When you finished this you can train your model with different ways. The first one is directly on the notebook in a terminal and the second one is to use the **AI Training Tool** of OVHcloud. The way to do it with the **AI Training Tool** is described in this [tutorial](https://confluence.ovhcloud.tools/display/~victor.vitcheff@corp.ovh.com/Part+2+Train+a+rasa+chatbot+with+one+docker+file). 
@@ -119,12 +124,21 @@ We will study there three ways to train your model efficiently :
 So to train the model in the notebook, please run in a terminal this command:
 
 ```bash 
-rasa train --data public-repo-git/rasa_bot/data -c public-repo-git/rasa_bot/config.yml -d public-repo-git/rasa_bot/domain.yml --out trained-models --endpoints public-repo-git/rasa_bot/endpoints.yml --force
+rasa train --data data -c ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/config.yml -d ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/domain.yml --out trained-models --endpoints ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/endpoints.yml --force
 ```
 
 > [!warning]
 >
-> Be careful ! This command must be run at the root of the terminal because in the public-repo-git you can't write the .rasa folder. So be sure you're at the root directory of your project. 
+> Be careful ! This command must be run at the root of the terminal because in the `ai-training-examples` folder you can't write the .rasa folder. So be sure you're at the root directory of your project. 
+
+Explication of the command : 
+- `rasa train` : Train a rasa model. Take in parameters the configuration of the training, the data and return a `.tar.gz` file. 
+- `--data data` : Specify the path to the data folder where you have your stories, rules and intents entries. This is in your object storage container. 
+- `-c ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/config.yml` : Specify the path of the file where you have the configuration of your training. 
+- `-d ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/domain.yml` : Specify the path of the domain file. In rasa, this file contains all of the intents and how to connect them with your chatbot. For example how your chatbot will be respond if a user say hello. 
+- `--out trained-models` : Specify the folder to store the model file. 
+- `--endpoints ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/endpoints.yml` : Specify the path of the endpoints files. It could be useful if you want to deploy your model once he is trained. 
+- `--force` : Force the training even if there is already a trained model. 
 
 If you're not using your notebook anymore, don't forget to stop it. Get the notebook id and then just run `ovhai notebook stop <notebook-id>` in a terminal.
 
@@ -142,12 +156,11 @@ ovhai notebook run conda jupyterlab \
 --name jupyter-ovh-chatbot \
 --framework-version conda-py39-cuda11.2-v22-4 \
 --volume <model-output-container>@GRA/:/workspace/trained-models:RW \
---volume https://github.com/Victor2103/rasa_chatbot.git:/workspace/public-repo-git:RO \
 --cpu 10 \
 --token <token> \
 ```
 
-In this notebook I propose to you to create from scratch the chatbot, train it and speak with him. To do this, you will just have to run all the cells in the jupyter notebook. But for this, don't forget to copy the jupyter notebook in the folder `public-repo-git/jupyter` at the root of your notebook (`workspace`). 
+In this notebook I propose to you to create from scratch the chatbot, train it and speak with him. To do this, you will just have to run all the cells in the jupyter notebook. But for this, don't forget to copy the jupyter notebook in the folder `ai-training-examples/notebooks/natural-language-processing/chatbot/conda/jupyter` at the root of your notebook (`workspace`). 
 
 You've run the jupyter notebook, ok let's speak with him at the end!
 
@@ -157,7 +170,7 @@ So, you've trained your model and you want to see if he is returning good result
 Open two terminals. In one of the terminal we will run one custom action and in the second, we will speak with the chatbot. Here is the command for the first terminal : 
 
 ```bash
-cd ~/public-repo-git/rasa_bot
+cd ~/ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot
 rasa run actions 
 ```
 
@@ -166,13 +179,13 @@ In rasa, an interaction with a user is described by an intent from an user and a
 In the other terminal, launch: 
 
 ```bash
-rasa shell -m ~/trained-models --endpoints ~/public-repo-git/rasa_bot/endpoints.yml
+rasa shell -m ~/trained-models --endpoints ~/ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/endpoints.yml
 ```
 
 Explication of the command : 
 - `rasa shell` : load a model and speak with him to test it
-- `-m ~/trained-models` : This is to specify the path of where your model is saved. As see precedential, your model has been trained and is save in this folder. 
-- `--endpoints ~/public-repo-git/rasa_bot/endpoints.yml` : You specify the way of your endpoints.yml file. This file is used to tell where your model is running and the where the port of your custom actions are running. 
+- `-m ~/trained-models` : This is to specify the path of where your model is saved. 
+- `--endpoints ~/ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/endpoints.yml` : You specify the way of your endpoints.yml file. This file is used to tell where your model is running and the where the port of your custom actions are running. 
 
 This is a small example of what you can get with this command : 
 
@@ -204,5 +217,3 @@ If you want to train a rasa chatbot with the tool AI Training, please look at th
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
-
-
