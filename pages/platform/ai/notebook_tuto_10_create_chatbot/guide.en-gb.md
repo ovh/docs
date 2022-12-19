@@ -1,9 +1,9 @@
 ---
-title: AI Notebooks - Tutorial - Create and train a Rasa chatbot
+title: AI Notebooks - Tutorial - Create, Modify and train a Rasa chatbot
 slug: notebook/create-rasa-chatbot
 excerpt: Understand how to create and train a chatbot with AI Notebooks.
 section: AI Notebooks -  Tutorials
-order: 06
+order: 10
 ---
 
 **Last updated 9th December, 2022.**
@@ -217,3 +217,4 @@ If you want to train a rasa chatbot with the tool AI Training, please look at th
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+
