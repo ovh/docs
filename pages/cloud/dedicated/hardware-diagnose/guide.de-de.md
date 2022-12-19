@@ -1,88 +1,75 @@
 ---
 title: 'Hardwarefehler auf einem dedizierten Server erkennen'
 slug: diagnose-hardwarefehler-dedicated-server
-excerpt: 'So ermitteln Sie Hardwarefehler auf Ihrem Server'
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie mithilfe von Diagnose-Tools Hardwarefehler auf Ihrem Server erkennen.'
 section: Diagnose & Rescue Modus
 ---
 
-**Stand 12.09.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
 
-## Einleitung
+**Stand 15.12.2022**
 
+## Ziel
 
 Mit der Zeit kann es bei Ihrem Server zu Hardwarefehlern kommen, die Fehlfunktionen verursachen. Aus diesem Grund ist Ihr Server mit verschiedenen Diagnose-Tools ausgestattet, um beschädigte Hardwarekomponenten zu ermitteln.
 
-**In dieser Anleitung erfahren Sie, wie Sie Hardwarefehler auf Ihrem Server erkennen.**
-
+**Diese Anleitung erklärt, wie Sie Hardwarefehler auf Ihrem Server erkennen.**
 
 ## Voraussetzungen
 
-* Sie verfügen über einen [dedizierten Server](https://www.ovh.de/dedicated_server/){.external}.
-* Sie haben den Server im [Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/){.external} neu gestartet.
+- Sie verfügen über einen [dedizierten Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie haben den Server im [Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/) neu gestartet.
 
+## In der praktischen Anwendung
 
-## Beschreibung
-
-### Das Webinterface verwenden
-
-Nachdem Sie Ihren Server im [Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/) neu gestartet haben, erhalten Sie eine E-Mail mit den zugehörigen Login-Daten. Die E-Mail enthält außerdem einen Link zum Webinterface des Rescue-Modus. Dieser sieht ungefähr so aus: *https://IP_des_servers:444*.
-
-Wenn Sie auf den Link geklickt haben, werden Sie zum Webinterface weitergeleitet (siehe Grafik).
-
-![Webinterface](images/rescue-mode-04.png){.thumbnail}
-
-
-### Hardwaretests durchführen
-
-Klicken Sie im Webinterface auf den Button `Alle Tests starten`{.action}, um gleichzeitig alle verfügbaren Hardwaretests durchzuführen.
-
-![Alle Tests starten](images/rescue-mode-042.png){.thumbnail}
-
-
-### Verschiedene Hardwaretests durchführen
-
-Sie können über das Webinterface spezielle Tests für die folgenden Komponenten vornehmen:
+In dieser Anleitung erfahren Sie, welche Tests zur Diagnose durchgeführt werden müssen:
 
 - Prozessoren
 - Netzwerkverbindung
 - RAM
 - Festplattenpartitionen
 
-Sie können sich auch die SMART-Logs Ihrer Server anzeigen lassen, die detaillierte Informationen zu den Festplatten enthalten.
-
- 
-#### Prozessoren
+### Prozessoren
 
 Der Prozessortest überprüft, ob der Prozessor Ihres Servers korrekt funktioniert und benötigt etwa 30 Minuten, bis er abgeschlossen ist. Wenn der Server während des Tests abstürzt, ist der Prozessor beschädigt.
 
-Um diesen Test zu starten, klicken Sie auf den entsprechenden Button `Test starten`{.action} (siehe Abbildung).
+```bash
+WRKR=$(grep -c "^processor" /proc/cpuinfo)
+![Test du processeur](images/processors.png){.thumbnail}
+stress-ng --metrics-brief --timeout 60s --cpu $WRKR --io $WRKR --aggressive --ignite-cpu --maximize --pathological
+stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
+```
 
-![Test des Prozessors](images/processors.png){.thumbnail}
+### Netzwerkverbindung
 
-#### Netzwerkverbindung
+Der Netzwerktest überprüft Ihre interne und externe Bandbreite. Diese Daten dienen Ihnen als Anhaltspunkt, es handelt sich nicht um einen Leistungstest.
 
-Der Netzwerktest überprüft Ihre interne und externe Bandbreite. Um diesen Test zu starten, klicken Sie auf den entsprechenden Button `Test starten`{.action} (siehe Abbildung).
+```bash
+ping -c 10 proof.ovh.net
+for file in 1Mb 10Mb 100Mb 1Gb ; do time curl -4f https://proof.ovh.net/files/${file}.dat -o /dev/null; done
+```
 
-![Netzwerktest](images/network-connection.png){.thumbnail}
-
-#### RAM
+### RAM
 
 Der Arbeitsspeichertest überprüft alle RAM-Module Ihres Servers. Wenn der Server während des Tests abstürzt, ist mindestens ein RAM-Modul beschädigt.
 
-Um diesen Test zu starten, klicken Sie auf den entsprechenden Button `Test starten`{.action} (siehe Abbildung).
+> [!warning]
+> Achtung, dieser Test kann sehr lange dauern.
 
-![Arbeitsspeichertest](images/memory.png){.thumbnail}
+```bash
+RAM="$(awk -vOFMT=%.0f '$1 == "MemAvailable:" {print $2/1024 - 1024}' /proc/meminfo)"
+memtester ${RAM}M 1
+```
 
-#### Festplattenpartitionen
+### Festplattenpartitionen
 
 Der Partitionstest umfasst einen Zugriffstest der Festplatte und überprüft das Dateisystem. Der Zugriffstest prüft, ob das System mit den Festplatten Ihres Server kommunizieren kann. Die Überprüfung des Dateisystems führt den Befehl `fsck -fy` aus.
 
-> [!warning]
->
-> Die Überprüfung des Dateisystems auf einer beschädigten Festplatte kann zu Datenverlust führen.
->
-
-![Festplattentest](images/partitions.png){.thumbnail}
+```bash
+stress-ng --metrics-brief --timeout 60s --hdd 0 --aggressive
+```
 
 ## Weiterführende Informationen
 
