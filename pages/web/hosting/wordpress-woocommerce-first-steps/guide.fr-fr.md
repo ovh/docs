@@ -6,7 +6,7 @@ section: Tutoriel
 order: 
 ---
 
-**Dernière mise à jour le 15/12/2022**
+**Dernière mise à jour le 19/12/2022**
 
 ## Objectif
 
@@ -102,19 +102,49 @@ Cet onglet vous permet de définir les éléments suivants&nbsp;:
 
 #### Produits
 
+La gestion de produits se fait via un ensemble de sous-rubriques&nbsp;:
+
+- «&nbsp;Général&nbsp;» sert à définir des éléments tels que la page d'accueil qui sera affichée par défaut (boutique, mentions légales, panier, etc.), les unités de mesure, la possibilité ou non de mettre des commentaires à propos des produits ou des notes&nbsp;;
+- «&nbsp;Inventaire&nbsp;» servira à paramétrer la gestion de votre stock (ou ne pas la gérer), et de configurer le comportement du site (stock décrémenté lorsqu'un objet est dans le panier, seuils d'alerte, possibilité de masquer les produits qui ne sont plus en stock)&nbsp;;
+- «&nbsp;Produits téléchargeables&nbsp;» concerne les cas de mise à disposition de documents à télécharger par les utilisateurs&nbsp;:
+- «&nbsp;Répertoires de téléchargement approuvés&nbsp;», précise le ou les répertoires sur le serveur où les fichiers seront téléversés&nbsp;:
+- «&nbsp;Avancé&nbsp;» sert à paramétrer plus finement les attributs des produits.
+
 #### Expédition
+
+Si vous avez laissé activées les extensions proposées gratuitement par défaut lors de l'installation, vous disposez de l'extension [WooCommerce Shipping](https://woocommerce.com/fr-fr/woocommerce-shipping/). Dans le cas contraire, vous pouvez procéder à son installation en vous rendant dans le menu «&nbsp;Extensions&nbsp;»
+
+- «&nbsp;Zones d'expédition&nbsp;» vous permet de définir et configurer des zones d'expédition
+- «&nbsp;Options de livraison&nbsp;» sert à paramétrer l'application pour tout ce qui est relatif aux frais d'expédition
+- les «&nbsp;Classes d'expédition&nbsp;» peuvent être utilisées pour grouper des produits similaires par type d'envoi.
 
 #### Paiements
 
+Dans cet onglet, vous pouvez activer ou désactiver les moyens de paiement que vous proposerez sur votre site. Reportez-vous à la [documentation officielle](https://woocommerce.com/document/payments/) pour configurer votre ou vos moyens de paiement.
+
 #### Comptes et confidentialité
+
+Cette rubrique regroupe toutes les fonctionnalités relatives à la gestion des comptes et des données personnelles.
 
 #### E-mails
 
+Vous pouvez configurer les e-mails types qui sont envoyés par l'application (inscription, commandes, annulations de commande, etc.).
+
 #### Intégration
 
+Pour géolocaliser vos clients en fonction de leur adresse IP, vous pouvez, dans cette sous-rubrique, entrer la clé de licence de [MaxMind](https://www.maxmind.com/), service payant de géolocalisation.
+
 #### Avancé
+
+- «&nbsp;Installation des pages&nbsp;» est utile pour modifier les pages vers lesquelles seront redirigés les utilisateurs lors du processus de commande&nbsp;;
+- «&nbsp;API REST&nbsp;» est la rubrique pour permettre de configurer et paramétrer les accès à WooCommerce via son API REST&nbsp;;
+- «&nbsp;Webhook&nbsp;», où vous pouvez gérer vos fonctions de rappel HTTP&nbsp;;
+- «&nbsp;Ancienne API&nbsp;», où il est possible de réactiver l'ancienne API de WooCommerce (désactivée par défaut)&nbsp;;
+- «&nbsp;WooCommerce.com&nbsp;» sert à activer ou désactiver le tracking de l'activité de votre site de vente en ligne par WebCommerce, et d'avoir des suggestions pour des extensions dédiées (la majorité sont payantes)&nbsp;;
+- «&nbsp;FonctionnalitésP&nbsp;», page regroupant les fonctionnalités en test sur WooCommerce ou récemment ajoutées.
 
 ## Aller plus loin
 
 - l'extension [Jetpack](https://jetpack.com/)
 - le site de [WooCommerce](https://woocommerce.com/)
+- le magasin d'[extensions WooCommerce](https://woocommerce.com/products/).
