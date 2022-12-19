@@ -51,7 +51,7 @@ If you want to know more about data storage concept please fill free to check th
 
 For the chatbot, we will create two object storage buckets. One with all the data to train and the other wil be filled over time by our trained model output. The container where the model will be saved don't have to be created. When we will launch our notebook, the container will be automatically created. 
 
-To create the volume in GRA (Gravelines Datacenter) in read only, clone the [repo git](https://github.com/ovh/ai-training-examples) and then go in the folder `notebooks/natural-language-processing/chatbot/conda/rasa_bot`. After, you will just have to type : 
+To create the volume in GRA (Gravelines Datacenter) in read only, clone the [repo git](https://github.com/ovh/ai-training-examples) and then go in the folder `ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot`. After, you will just have to type : 
 
 ```bash
 ovhai data upload GRA <data-to-train-container> data
@@ -59,7 +59,7 @@ ovhai data upload GRA <data-to-train-container> data
 
 Your data will be uploaded and created in the container <data-to-train> and mounted with the prefix "data". 3 files will be uploaded : the "nlu.yml" file, the "stories.yml" file and the "rules.yml" file. 
 
-Let's also consider that our root directory is : `notebooks/natural-language-processing/chatbot/conda/`. All of our path will start from this directory. Ok let's launch our first notebook.  
+Let's also consider that our root directory is : `ai-training-examples/notebooks/natural-language-processing/chatbot/conda/`. All of our path will start from this directory. Ok let's launch our first notebook.  
 
 ### Launch an AI Notebook
 
@@ -71,7 +71,7 @@ Copy and run this command to launch on your terminal and create the notebook:
 ovhai notebook run conda vscode \
 	--name vscode-ovh-chatbot \
 	--framework-version conda-py39-cuda11.2-v22-4 \
-	--volume <data-to-train-container>@GRA/data:/workspace/data:RO:cache \
+	--volume <data-to-train-container>@GRA/data:/workspace/data:ROe \
 	--volume <model-output-container>@GRA/:/workspace/trained-models:RW \
 	--cpu 10 \
 	--token <token> \
@@ -108,7 +108,7 @@ For this tutorial, we log ourself into VScode via **Web browser directly**.
 Now, open a terminal and run :   
 
 ```
-pip install ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/requirements_rasa.txt
+pip install -r ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/requirements_rasa.txt
 ```
 
 When you finished this you can train your model with different ways. The first one is directly on the notebook in a terminal and the second one is to use the **AI Training Tool** of OVHcloud. The way to do it with the **AI Training Tool** is described in this [tutorial](https://confluence.ovhcloud.tools/display/~victor.vitcheff@corp.ovh.com/Part+2+Train+a+rasa+chatbot+with+one+docker+file). 
@@ -142,7 +142,7 @@ Explication of the command :
 
 If you're not using your notebook anymore, don't forget to stop it. Get the notebook id and then just run `ovhai notebook stop <notebook-id>` in a terminal.
 
-Now that we have train the model, we can test it.
+Now that we have train the model, we can test it. To do this, you can directly go here [Test your model](#test-your-model). The next part will explain how to train your chatbot with a jupyter notebook. 
 
 
 #### Create and train a chatbot with a Jupyter notebook
@@ -193,7 +193,7 @@ This is a small example of what you can get with this command :
 
 Congrats ! you can test your first rasa model and speak with him. If you have several models in your folder trained-models, you can specify after the option -m the folder and the specific model you want to train. 
 
-If you want to train a new model, you can go back earlier and run the command rasa train. [Here](#train-the-model-with-ai-notebook) for the full command. 
+If you want to train a new model, you can go back earlier and run the command rasa train. [Here](#train-your-model) for the full command. 
 
 Once you have your model is ready, we must deploy the model to use it. This will be ensure with the tool AI Deploy from the public cloud.
 
@@ -217,4 +217,3 @@ If you want to train a rasa chatbot with the tool AI Training, please look at th
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
-
