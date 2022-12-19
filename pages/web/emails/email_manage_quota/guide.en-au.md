@@ -16,16 +16,10 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](https://www.ovhcloud.com/en-au/web-hosting/), included in a [free Start10M hosting](https://www.ovhcloud.com/en-au/domains/free-web-hosting/));
+- a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](https://www.ovhcloud.com/en-au/web-hosting/));
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, and `Web Cloud`{.action} section ;
 - access to the email addresses concerned.
 
-> [!primary]
->
-> **Special cases**
->
-> - Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} by going to the domain name concerned.
-> - For [web hosting plans](https://www.ovhcloud.com/en-au/web-hosting/){.external}, you will need to activate your MX Plan package before continuing to read this guide. To do this, please refer to our guide on [Activating the email addresses included in your web](https://docs.ovh.com/au/en/hosting/activate-email-web-hosting/) hosting plan.
 
 ## In practice <a name="instructions"></a>
 
