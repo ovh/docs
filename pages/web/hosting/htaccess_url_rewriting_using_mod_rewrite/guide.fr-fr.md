@@ -12,7 +12,7 @@ order: 03
 
 Le « **mod_rewrite** » est l'un des modules disponibles via le serveur Web HTTP **Apache**. **Apache** est installé sur l'ensemble de notre infrastructure d'hébergements mutualisés. Ce serveur web permet de gérer l'ensemble des requêtes HTTP émises vers votre hébergement web.
 
-Par **exemple**, c'est lui qui récupère les requêtes générées par les navigateurs Internet des visiteurs de votre site et qui retourne le contenu demandé à ces mêmes navigateurs Internet. Ils affichent ensuite le contenu de votre site web à votre visiteur.
+Par **exemple**, c'est lui qui récupère les requêtes HTTP générées par les navigateurs Internet des visiteurs de votre site et qui leur retourne le contenu demandé par ces mêmes requêtes. Les navigateurs Internet affichent ensuite le contenu de votre site web à votre visiteur.
 
 Le « **mod_rewrite** » permet par exemple de réécrire et rediriger :
 
@@ -44,6 +44,8 @@ Le « **mod_rewrite** » offre une infinité de possibilités. Nous allons vous 
 
 ## En pratique
 
+Retrouvez ci-après quelques exemples parmi les plus courants d'utilisation du « **mod_rewrite** » d'Apache. Certains d'entre eux peuvent également favoriser le référencement SEO de votre site web.
+
 > [!primary]
 >
 > Le fichier « .htaccess » peut être placé dans plusieurs dossiers différents. Vous devez uniquement respectez la règle d'un **seul** fichier « .htaccess » par dossier ou sous-dossier.
@@ -53,64 +55,78 @@ Le « **mod_rewrite** » offre une infinité de possibilités. Nous allons vous 
 > Pour éditer (ou créer) des répertoires, connectez-vous à l'espace FTP de votre hébergement. Au besoin, aidez-vous du guide « [Accéder à mon espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) ».
 >
 
-### Redirection simple
-- Editez le fichier .htaccess :
+### Rediriger toutes les requêtes HTTP vers un seul fichier de votre site
+
+Editez le fichier « .htaccess » présent à la racine du répertoire qui contient votre site web. Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple **test.php** par le nom de votre propre fichier):
 
 ```bash
 RewriteEngine On
-RewriteRule .* testing.php
+RewriteRule .* test.php
 ```
 
+Dans notre exemple, toutes les requêtes effectuées vers votre site web sont redirigées vers le fichier  **test.php** .
 
-Cette formule redirige chaque requête sur le script  **testing.php** .
+### Rediriger une partie des requêtes HTTP vers un seul fichier de votre site web
 
-- ou :
+Editez le fichier « .htaccess » présent à la racine du répertoire qui contient votre site web. Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple les valeurs **thetest** et **/test_wslash/test.php** par les nom de vos propres fichiers):
 
 ```bash
 RewriteEngine On
-RewriteRule letstest /test_wslash/testing.php
+RewriteRule thetest /test_wslash/test.php
 ```
 
+Dans notre exemple, toutes les requêtes HTTP qui contiennent  **/thetest**  sont redirigées vers le fichier  **/test_wslash/test.php** .
 
-Cette formule redirige chaque requête  **/letstest**  sur le script  **/test_wslash/testing.php** .
+### Rediriger votre nom de domaine vers son sous-domaine en « www »
 
+Cette règle de réécriture force l'adresse/URL de votre site web à être réécrite avec son sous-domaine en « www ».
 
-### Rediriger exemple.com vers www.exemple.com
-- Cela force l'adresse de votre site à être de type www.exemple.com, utile pour le référencement :
+Editez le fichier « .htaccess » présent à la racine du répertoire qui contient votre site web. Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple **domain.tld** par votre propre nom de domaine):
 
 ```bash
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^exemple.com$
-RewriteRule ^(.*) http://www.exemple.com/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^domain.tld$
+RewriteRule ^(.*) http://www.domain.tld/$1 [QSA,L,R=301]
 ```
 
+Cette réécriture d'URL peut favoriser le référencement SEO de votre site web.
 
+### Rediriger les requêtes vers un dossier en particulier sans afficher le dossier concerné
 
-### Rediriger vers un dossier en particulier sans afficher le dossier concerne
-- Si votre site est n'est pas présent dans le dossier cible, cela force l'adresse de votre site à être de type www.exemple.com, alors qu'en réalité la page appelée est : www.exemple.com/MonSite
+Lorsque vous utilisez un hébergement mutualisé OVHcloud, votre nom de domaine (par exemple **domain.tld**) est déclaré en `Multisites` pour afficher le contenu d'un dossier cible que l'on appelle aussi `dossier racine`. Vous pouvez définir le nom de ce `dossier racine` comme bon vous semble.
+
+Consultez notre guide sur la [configuration d'un multisite sur un hébergement mutualisé](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) si vous souhaitez plus d'informations sur le sujet.
+
+Certains utilisateurs ne placent pas leur site web directement à la base du `dossier racine`. Ils créent alors un sous-dossier (par exemple : **MyWebsite**) dans leur `dossier racine` pour y placer leur site web.
+
+Dans ce cas, l'URL pour accéder au site aura la forme suivante : **http://domain.tld/MyWebsite**.
+
+Si votre site web n'est pas présent directement dans le `dossier racine` déclaré en multisites pour votre nom de domaine et que vous ne souhaitez pas afficher le nom du dossier dans lequel il se trouve, éditez le fichier « .htaccess » présent à la racine du répertoire qui contient votre site web. 
+
+Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple les valeurs **domain.tld** par votre nom de domaine et **MyWebsite** par le nom de votre propre dossier):
 
 ```bash
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^exemple.com
-RewriteCond %{REQUEST_URI} !^/MonSite
-RewriteRule ^(.*)$ /MonSite/
+RewriteCond %{HTTP_HOST} ^domain.tld
+RewriteCond %{REQUEST_URI} !^/MyWebsite
+RewriteRule ^(.*)$ /MyWebsite/
 ```
 
+Dans notre exemple, cela force l'adresse de votre site à être de type **http://domain.tld**, alors qu'en réalité la page appelée est **http://domain.tld/MyWebsite**.
 
+### Réécrire des URLs
 
-### Reecriture des URL
 Le module mod_rewrite permet la réécriture des URL.
 
 - .htaccess :
 
 ```bash
 RewriteEngine On
-RewriteCond %{REQUEST_URI} !testing.php
-RewriteRule (.*) testing.php?var=$1
+RewriteCond %{REQUEST_URI} !file.php
+RewriteRule (.*) file.php?var=$1
 ```
 
-
-Ces règles lancent le script  **testing.php**  avec la variable GET contenant l'URL mis par l'utilisateur.
+Ces règles lancent le script  **file.php**  avec la variable GET contenant l'URL mis par l'utilisateur.
 
 - php :
 
@@ -121,17 +137,23 @@ Ces règles lancent le script  **testing.php**  avec la variable GET contenant l
 4. ?>
 ```
 
+### Rediriger automatiquement un vitisteur vers votre site web en HTTPS lorsqu'il le consulte avec une URL en HTTP
 
+Les certificats SSL permettent de chiffrer les échanges effectuées en HTTP avec votre site web. Cela empêche des personnes ou des robots mal intentionnés de capter clairement des données sensibles comme des coordonnées bancaires par exemple.
 
-### Rediriger automatiquement le visiteur en HTTPS quand il visite le site en HTTP
-Le module mod_rewrite permet la réécriture des URL.
+Si vous ne disposez pas d'un certificat SSL, consultez notre guide sur la [gestion d'un certificat SSL sur un hébergement mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
 
+Certains de vos visiteurs peuvent oublier de saisir l'URL d'accès à votre site en **https://** : cela représente un risque non négligeable pour les données échangées entre votre site web et leurs navigateurs Internet.
+
+Pour empêcher cela, éditez le fichier « .htaccess » présent à la racine du répertoire qui contient votre site web. Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple **domain.tld** par votre propre nom de domaine):
 
 ```bash
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.votredomaine.fr/$1 [R,L]
+RewriteRule ^(.*)$ https://www.domain.tld/$1 [R,L]
 ```
+
+Dans notre exemple, toutes les requêtes effectuées avec une URL en « **http://** » seront automatiquement réécrites en « **https://** ». Vos visiteurs seront aussi redirigés vers votre site en « **https://** ».
 
 ## Aller plus loin <a name="go-further"></a>
 
