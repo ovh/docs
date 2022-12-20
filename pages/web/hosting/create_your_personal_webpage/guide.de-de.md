@@ -2,7 +2,7 @@
 title: 'Tutorial - Eigene Webseite bei OVHcloud erstellen'
 slug: create-your-own-web-page
 excerpt: 'Erfahren Sie hier, wie Sie Ihre erste Webseite auf einem kostenlosen Start 10M Webhosting erstellen'
-section: 'Tutorials'
+section: "Tutorials"
 order: 01
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "Tutorial - What to do if your  Website is hacked"
+title: "Use cases - What to do if your  Website is hacked"
 excerpt: "Learn our tips for repairing your hacked website"
 slug: what_to_do_if_your_wordpress_site_is_hacked
-section: Use cases
+section: "Tutorials"
 order: 01
 ---
 

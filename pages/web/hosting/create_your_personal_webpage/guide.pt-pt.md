@@ -2,7 +2,7 @@
 title: 'Tutorial - Criar a sua página web pessoal na OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Saiba como criar a primeira página num alojamento gratuito Start 10M'
-section: 'Tutoriais'
+section: "Tutoriais"
 order: 01
 ---
 

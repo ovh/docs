@@ -2,7 +2,7 @@
 title: 'Tutorial - Creating your personal webpage at OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Find out how to create your first webpage with a free Start 10M hosting plan'
-section: 'Tutorials'
+section: "Tutorials"
 order: 01
 ---
 

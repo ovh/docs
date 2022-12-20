@@ -1,8 +1,8 @@
 ---
-title: "Tutorial - Asesoramiento sobre el pirateo de su sitio web"
+title: "Casos de uso - Asesoramiento sobre la piratería de su sitio web"
 excerpt: "Descubra nuestros consejos para reparar su sitio web pirateado"
 slug: pirateo_de_su_sitio_web_wordpress_consejos_y_casos_practicos
-section: Casos de uso
+section: "Tutoriales"
 order: 01
 ---
 
