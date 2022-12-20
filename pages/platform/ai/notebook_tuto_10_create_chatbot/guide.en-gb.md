@@ -10,7 +10,7 @@ order: 10
 
 ## Objective
 
-The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebook. We will create and train the chatbot with a jupyter notebook. We will also propose you to train a chatbot in a vscode notebook. This notebook has data which is more advanced than a simple chatbot. There is an another tutorial where you can train your chatbot with the tool `AI Training`. Here is the link [how to train a chatbot with AI Training](https://confluence.ovhcloud.tools/display/~victor.vitcheff@corp.ovh.com/Part+2+Train+a+chatbot+with+AI+Training).
+The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebook. We will create and train the chatbot with a vscode notebook. We will also propose you to train a chatbot in a jupyter notebook. This notebook has data which is more advanced than a simple chatbot. There is an another tutorial where you can train your chatbot with the tool `AI Training`. Here is the link [how to train a chatbot with AI Training](https://confluence.ovhcloud.tools/display/~victor.vitcheff@corp.ovh.com/Part+2+Train+a+chatbot+with+AI+Training).
 
 We will use the famous open source framework [Rasa](https://rasa.community/) to build the chatbot. The framework [chatette](https://github.com/SimGus/Chatette) has been used to generate some data for rasa in the vscode notebook. 
 
@@ -71,7 +71,7 @@ Copy and run this command to launch on your terminal and create the notebook:
 ovhai notebook run conda vscode \
 	--name vscode-ovh-chatbot \
 	--framework-version conda-py39-cuda11.2-v22-4 \
-	--volume <data-to-train-container>@GRA/data:/workspace/data:ROe \
+	--volume <data-to-train-container>@GRA/data:/workspace/data:RO \
 	--volume <model-output-container>@GRA/:/workspace/trained-models:RW \
 	--cpu 10 \
 	--token <token> \
