@@ -1,8 +1,8 @@
 ---
-title: "Tutorial - Ihre Website ist von einem Hack betroffen"
+title: "Anwendungsbeispiele - Ihre Website ist von einem Hack betroffen"
 excerpt: "Erfahren Sie hier, wie Sie Ihre gehackte Website reparieren"
 slug: was_tun_wenn_ihre_wordpress_seite_gehackt_wurde
-section: 'Anwendungsbeispiele'
+section: "Tutorials"
 order: 01
 ---
 

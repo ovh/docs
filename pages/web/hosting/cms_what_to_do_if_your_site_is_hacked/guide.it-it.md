@@ -1,8 +1,8 @@
 ---
-title: "Tutorial - Consigli in seguito alla pirateria del tuo sito Web"
+title: "Casi d'uso - Consigli in seguito alla pirateria del tuo sito Web"
 excerpt: "Scopri i nostri consigli per riparare il tuo sito Web pirata"
 slug: hacking_del_tuo_sito_wordpress_consigli_e_casi_pratici
-section: Casi d'uso
+section: "Tutorial"
 order: 01
 ---
 
