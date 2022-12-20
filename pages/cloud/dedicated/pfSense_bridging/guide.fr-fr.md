@@ -5,7 +5,7 @@ excerpt: 'Apprenez à configurer le mode bridge sur une machine virtuelle Pfsens
 section : Tutoriel
 ---
 
-**Dernière mise à jour le 23/05/2022**
+**Dernière mise à jour le 20/12/2022**
 
 ## Objectif
 
@@ -44,11 +44,11 @@ Pour la configuration réseau des machines virtuelles pfSense, nous utiliserons 
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et ouvrez le menu `IP`{.action}.
 
-Le menu déroulant `Service` vous permet de filtrer les IPs Additional IP. 
+Cliquez sur l'onglet `Additional IP`{.action}.
 
 ![Ajouter une MAC virtuelle (1)](images/manageIPs.png){.thumbnail} 
 
-Cliquez sur les `...`{.action} à côté de l'Additional IP de votre choix puis sur `Ajouter une MAC virtuelle`{.action}.
+Cliquez sur le bouton `...`{.action} à côté de l'Additional IP de votre choix puis sur `Ajouter une MAC virtuelle`{.action}.
 
 ![Ajouter une MAC virtuelle (1)](images/addvmac.png){.thumbnail}
 
