@@ -1,8 +1,9 @@
 ---
-title: Cancel an Additional IP service
+title: Cancelling an Additional IP service
 excerpt: Find out how to cancel an Additional IP service via the OVHcloud API
 slug: cancel-additional-ip
 section: Additional IP
+order: 01
 ---
 
 **Last updated 20th December 2022**
@@ -17,7 +18,7 @@ section: Additional IP
 As any other OVHcloud service, an Additional IP service can be cancelled at any time.
 
 > [!primary]
-> At the moment, an Additional IP service cannot be cancelled from the control panel. This feature will be rolled out soon.
+> At the moment, an Additional IP service cannot be cancelled from the OVHcloud Control Panel. This feature will be rolled out soon.
 >
 
 **This guide explains how to cancel an Additional IP service via the OVHcloud API.**
@@ -25,29 +26,30 @@ As any other OVHcloud service, an Additional IP service can be cancelled at any 
 ## Requirements
 
 - An [Additional IP service](https://www.ovhcloud.com/en-gb/network/additional-ip/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud API console](https://eu.api.ovh.com/)
+- Consulting the guide [First steps to use the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (to familiarise yourself with the OVHcloud API)
 
 ## Instructions
 
-### Cancel an Additional IP service via the API
+### Cancelling an Additional IP service via the API
 
-Log in to the OVHcloud [API webpage](https://api.ovh.com/).
+Log in to the OVHcloud [API web page](https://api.ovh.com/).
 
-First, you need to find out the name of the service you need to cancel :
+You first need to find out the name of the service you need to cancel. Use the following call:
 
 > [!api]
 >
 > @api {GET} /ip/service
 >
 
-To cancel the service, use the following API call :
+To cancel the service, use the following API call:
 
 > [!api]
 >
 > @api {POST} /ip/service/{serviceName}/terminate
 >
 
-- `serviceName` : name of the Additional IP service obtained with previous call
+- `serviceName` : name of the Additional IP service obtained with the previous call.
 
 ## Go further
 

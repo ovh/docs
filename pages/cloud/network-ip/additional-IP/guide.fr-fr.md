@@ -3,13 +3,14 @@ title:  Résilier un service Additional IP
 excerpt: "Découvrez comment résilier un service Additional IP via les API OVHcloud"
 slug: cancel-additional-ip
 section: Additional IP
+order: 01
 ---
 
 **Dernière mise à jour le 19/12/2022**
 
 > [!primary]
 >
-> Depuis le 6 octobre 2022, notre solution "IP Failover" s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a pas d'impact sur ses fonctionnalités.
+> Depuis le 6 octobre 2022, notre solution « IP Failover » s'appelle désormais [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/). Cela n'a pas d'impact sur ses fonctionnalités.
 >
 
 ## Objectif
@@ -17,7 +18,7 @@ section: Additional IP
 Comme tous les services OVHcloud, les services Additional IP peuvent être résiliés à tout moment.
 
 > [!primary]
-> Pour le moment, un service Additional IP ne peut pas être résilier via l'espace client. Cette fonctionnalité arrivera très prochainement.
+> Pour le moment, un service Additional IP ne peut pas être résilié via l'espace client OVHcloud. Cette fonctionnalité arrivera très prochainement.
 >
 
 **Découvez comment résilier votre service Additional IP via les API OVHcloud.**
@@ -25,7 +26,8 @@ Comme tous les services OVHcloud, les services Additional IP peuvent être rési
 ## Prérequis
 
 - Disposer d'un [service Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/).
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Être connecté à la [console API OVHcloud](https://eu.api.ovh.com/).
+- Consulter le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 
@@ -33,7 +35,7 @@ Comme tous les services OVHcloud, les services Additional IP peuvent être rési
 
 Connectez-vous sur la page page web des [API OVHcloud](https://api.ovh.com/).
 
-Vous devez d'abord déterminer le nom du service à résilier :
+Vous devez d'abord déterminer le nom du service à résilier. Pour cela, utilisez l'appel API suivant :
 
 > [!api]
 >
@@ -47,7 +49,7 @@ Pour résilier le service, utilisez l'appel suivant :
 > @api {POST} /ip/service/{serviceName}/terminate
 >
 
-- `serviceName` : le nom du service Additional IP obtenu via l'appel précédent
+- `serviceName` : le nom du service Additional IP obtenu via l'appel API précédent.
 
 ## Aller plus loin
 
