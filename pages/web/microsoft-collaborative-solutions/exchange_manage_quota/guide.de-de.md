@@ -5,7 +5,7 @@ excerpt: "Erfahren Sie hier, wie Sie den Speicherplatz von E-Mail-Accounts verwa
 section: 'Diagnose'
 order: 02
 routes:
-  canonical: "https://docs.ovh.com/gb/en/emails/email_manage_quota/"
+  canonical: "https://docs.ovh.com/de/emails/manage-email-quota/"
 ---
 
 > [!primary]

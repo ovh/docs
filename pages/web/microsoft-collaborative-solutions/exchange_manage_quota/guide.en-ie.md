@@ -5,7 +5,7 @@ excerpt: "Find out how to manage and optimise an email account storage space"
 section: 'Troubleshooting'
 order: 02
 routes:
-  canonical: "https://docs.ovh.com/gb/en/emails/email_manage_quota/"
+  canonical: "https://docs.ovh.com/gb/en/emails/manage-email-quota/"
 ---
 
 **Last updated 17th November 2022**

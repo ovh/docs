@@ -5,7 +5,7 @@ excerpt: "Découvrez comment gérer et optimiser l'espace de stockage d'une adre
 section: 'Diagnostic'
 order: 02
 routes:
-  canonical: "https://docs.ovh.com/gb/en/emails/email_manage_quota/"
+  canonical: "https://docs.ovh.com/fr/emails/manage-email-quota/"
 ---
 
 **Dernière mise à jour le 17/11/2022**

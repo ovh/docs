@@ -5,7 +5,7 @@ excerpt: "Saiba como gerir e otimizar o espaço de armazenamento de um endereço
 section: 'Diagnóstico'
 order: 02
 routes:
-  canonical: "https://docs.ovh.com/gb/en/emails/email_manage_quota/"
+  canonical: "https://docs.ovh.com/pt/emails/manage-email-quota/"
 ---
 
 > [!primary]

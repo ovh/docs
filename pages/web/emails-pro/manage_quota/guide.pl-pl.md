@@ -4,7 +4,8 @@ slug: manage-email-quota
 excerpt: "Dowiedz się, jak zarządzać przestrzenią dyskową konta e-mail i jej optymalizować"
 section: 'Diagnostyka'
 order: 02
-  canonical: "https://docs.ovh.com/gb/en/emails/email_manage_quota/"
+routes:
+  canonical: "https://docs.ovh.com/pl/emails/manage-email-quota/"
 ---
 
 > [!primary]

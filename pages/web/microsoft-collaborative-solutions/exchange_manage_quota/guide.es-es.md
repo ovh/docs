@@ -5,7 +5,7 @@ excerpt: "Cómo gestionar y optimizar el espacio de almacenamiento de una direcc
 section: 'Diagnóstico'
 order: 02
 routes:
-  canonical: "https://docs.ovh.com/gb/en/emails/email_manage_quota/"
+  canonical: "https://docs.ovh.com/es/emails/manage-email-quota/"
 ---
 
 > [!primary]

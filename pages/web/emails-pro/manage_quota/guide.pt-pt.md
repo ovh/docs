@@ -4,7 +4,8 @@ slug: manage-email-quota
 excerpt: "Saiba como gerir e otimizar o espaço de armazenamento de um endereço de e-mail "
 section: 'Diagnóstico'
 order: 02
-  canonical: "https://docs.ovh.com/gb/en/emails/email_manage_quota/"
+routes:
+  canonical: "https://docs.ovh.com/pt/emails/manage-email-quota/"
 ---
 
 > [!primary]
