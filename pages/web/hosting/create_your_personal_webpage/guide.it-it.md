@@ -2,7 +2,7 @@
 title: Tutorial - Creare la propria pagina personale in OVHcloud
 slug: create-your-own-web-page
 excerpt: Come creare la tua prima pagina Web su un hosting gratuito Start 10M
-section: Tutorial
+section: "Tutorial"
 order: 01
 ---
 
