@@ -134,6 +134,10 @@ Dans notre exemple, toutes les requêtes effectuées avec une URL en « **http:/
 
 ## Aller plus loin <a name="go-further"></a>
 
+[Bloquer l'accès à mon site web pour certaines adresses IP via un fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/)
+
+[Protéger l'interface d'administration de votre site par un fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/)
+
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
