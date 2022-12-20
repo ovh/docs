@@ -25,63 +25,63 @@ WooCommerce is a WordPress extension and therefore installs like any other exten
 
 ### Installation
 
-Connectez-vous sur votre interface d'administration en tapant `/wp-admin`  ou `/wp-login` après votre nom de domaine (la redirection se fait automatiquement)&nbsp;:
+Log in to your administration interface by typing `/wp-admin` or `/wp-login` after your domaine name&nbsp;:
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps%5B1%5D.png){.thumbnail}
 
-Sur le menu de gauche, rendez-vous dans «&nbsp;Extensions&nbsp;» puis «&nbsp;Ajouter&nbsp;»&nbsp;:
+On the left menu, click on &ldquo;Plug-in&rdquo; then &ldquo;Add New&rdquo;&nbsp;:
 
 ![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps%5B2%5D.png){.thumbnail}
 
-Sur cette nouvelles page «&nbsp;Ajouter des extensions&nbsp;», saisissez «&nbsp;woocommerce&nbsp;» dans la barre de recherche en haut à droite, puis cliquer sur «&nbsp;Installer maintenant&nbsp;» sur l'extension WooCommerce&nbsp;:
+On this new page &ldquo;Add Plugins&rdquo;, type «&nbsp;woocommerce&nbsp;» in the search bar positionned on the top rught on your screen, then click on &ldquo;Install now&rdquo; WooCommerce plugin frame&nbsp;:
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps%5B3%5D.png){.thumbnail}
 
-Cliquez maintenant sur «&nbsp;Activer&nbsp;»&nbsp;:
+Now click on &ldquo;Activate&rdquo;&nbsp;:
 
 ![Activate WooCommerce](images/wordpress-woocommerce-first-steps%5B4%5D.png){.thumbnail}
 
-### Configuration - Méthode 1 (utilisation de l'assistant de configuration)
+### Settings - 1st method (with the setup wizard)
 
-Si vous n'avez pas encore paramétré votre extension WooCommerce, un assistant de configuration vous aidera à renseigner les informations relatives à votre site de vente en ligne puis cliquez sur «&nbsp;Continuer&nbsp;»&nbsp;:
+If you have not yet set up your WooCommerce extension, a configuration wizard will help you fill in the information about your online sales site then click on &ldquo;Continuer&rdquo;&nbsp;:
 
 ![Setup Wizard - Store Details](images/wordpress-woocommerce-first-steps%5B5%5D.png){.thumbnail}
 
-Sélectionnez ensuite votre ou vos domaines d'activité&nbsp;:
+Select your industries&nbsp;:
 
 ![Setup Wizard - Industry](images/wordpress-woocommerce-first-steps%5B6%5D.png){.thumbnail}
 
-Choisissez le type de produits que vous souhaitez vendre sur votre site (certaines options sont payantes)&nbsp;:
+Select the types of products you want to sell on your web site (some options are not free)&nbsp;:
 
 ![Setup Wizard - Product Types](images/wordpress-woocommerce-first-steps%5B7%5D.png){.thumbnail}
 
-Puis précisez la nature de votre activité&nbsp;:
+Then give some informations about your business&nbsp;:
 
 ![Setup Wizard - Business Details](images/wordpress-woocommerce-first-steps%5B8%5D.png){.thumbnail}
 
-Vous serez alors invité à ajouter des fonctionnalités optionnelles (et gratuites)&nbsp;:
+You will then be asked to add optional and free features&nbsp;:
 
 ![Setup Wizard - Business Details, free features](images/wordpress-woocommerce-first-steps%5B9%5D.png){.thumbnail}
 
-Enfin, vous êtes invité à choisir un thème&nbsp;:
+At least, choose a theme&nbsp;:
 
 ![Setup Wizard - Choose a theme](images/wordpress-woocommerce-first-steps%5B10%5D.png){.thumbnail}
 
-Vous serez ensuite invité à créer un compte pour l'utilisation de l'extension **Jetpack**, extension installée automatiquement par WooCommerce. Cette opération n'est pas nécessaire, vous aurez accès aux fonctions limitées de Jetpack sans avoir à vous authentifier.
+You will then be asked to create an account to use the **Jetpack** extension, automatically installed with WooCommerce. This is not necessary&nbsp;: you will have access to the limited functions of Jetpack without having an account.
 
-Votre boutique en ligne est alors configurée avec les paramètres généraux.
+Your online shop is then configured with the general settings.
 
-### Configuration - Méthode 2 (configuration manuelle)
+### Settings - 2d method (manual)
 
-Listez les extensions installées en cliquant sur «&nbsp;Extensions&nbsp;» puis «&nbsp;Extensions installées&nbsp;». La liste de vos extensions s'affiche. Cliquez sur «&nbsp;Réglages&nbsp;» dans le module WooCommerce&nbsp;:
+List the installed plugins by clicking on &ldquo;Plugind&rdquo; then &ldquo;Installed plugins&rdquo;. Your installeds plugins are displayed. Click now on &ldquo;Settings&rdquo; in the WooCommerce frame.
 
 ![Setup Wizard - Extension, WooCommerce, Settings](images/wordpress-woocommerce-first-steps%5B11%5D.png){.thumbnail}
 
-Vous avez également accès à ces réglages directement en cliquant sur «&nbsp;WooCommerce&nbsp;» puis «&nbsp;Réglages&nbsp;»&nbsp;:
+You can directly access to this settings by clicking on &ldquo;WooCommerce&rdquo; then &ldquo;Settings&rdquo;.
 
 ![Setup Wizard - WooCommerce, Settings](images/wordpress-woocommerce-first-steps%5B12%5D.png){.thumbnail}
 
-La page de réglages comprend plusieurs onglets&nbsp;:
+The settings page include many tabs&nbsp;:
 
 ![Setup Wizard - WooCommerce, Settings, Tabs](images/wordpress-woocommerce-first-steps%5B13%5D.png){.thumbnail}
 
