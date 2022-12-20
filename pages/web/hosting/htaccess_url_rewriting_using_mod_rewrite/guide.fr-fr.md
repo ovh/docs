@@ -114,29 +114,6 @@ RewriteRule ^(.*)$ /MyWebsite/
 
 Dans notre exemple, cela force l'adresse de votre site à être de type **http://domain.tld**, alors qu'en réalité la page appelée est **http://domain.tld/MyWebsite**.
 
-### Réécrire des URLs
-
-Le module mod_rewrite permet la réécriture des URL.
-
-- .htaccess :
-
-```bash
-RewriteEngine On
-RewriteCond %{REQUEST_URI} !file.php
-RewriteRule (.*) file.php?var=$1
-```
-
-Ces règles lancent le script  **file.php**  avec la variable GET contenant l'URL mis par l'utilisateur.
-
-- php :
-
-```php
-1. <?
-2. print("testing server <br/>\n");
-3. print("var: {$_GET['var']}\n");
-4. ?>
-```
-
 ### Rediriger automatiquement un vitisteur vers votre site web en HTTPS lorsqu'il le consulte avec une URL en HTTP
 
 Les certificats SSL permettent de chiffrer les échanges effectuées en HTTP avec votre site web. Cela empêche des personnes ou des robots malveillants de capter clairement des données sensibles comme des coordonnées bancaires par exemple.
