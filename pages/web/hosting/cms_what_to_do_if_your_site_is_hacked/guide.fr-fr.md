@@ -1,5 +1,5 @@
 ---
-title: 'Cas d'usage - Conseils suite au piratage de votre site Web'
+title: "Cas d'usage - Conseils suite au piratage de votre site Web"
 slug: piratage-de-votre-site-wordpress-conseils-et-cas-dusages
 excerpt: 'Découvrez nos conseils pour réparer votre site Web piraté'
 section: "Tutoriels"
