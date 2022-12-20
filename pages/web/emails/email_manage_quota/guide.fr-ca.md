@@ -133,7 +133,7 @@ Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration p
 >>
 >> Configuration d'un compte Exchange sur **Windows** :<br><br>
 >> - [Courrier sur Windows 10](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-courrier-windows-10/) (inclus avec Windows)<br>
->> - [Outlook](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-outlook-2016/)<br>
+>> - [Outlook](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-windows/)<br>
 >> - [Thunderbird](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird/) (gratuit)<br><br>
 >> Configuration d'un compte Exchange sur **macOS** :<br><br>
 >> - [Mail](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-mail-macos/) (inclus avec macOS)<br>
