@@ -4,7 +4,7 @@ slug: firewall-network
 section: Network Management
 ---
 
-**Last updated 7th November 2022**
+**Last updated 20th December 2022**
 
 ## Objective
 
@@ -41,9 +41,13 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 > The Network Firewall protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
 > 
 
-In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. You can use the drop-down menu underneath "My public IP addresses and associated services" to filter your services according to category.
 
-![Enabling the Network Firewall](images/firewall_creation2022.png){.thumbnail}
+![filter service](images/selectservice.png){.thumbnail}
+
+Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
+
+![Enabling the Network Firewall](images/firewallcreation2022.png){.thumbnail}
 
 - You will then be asked to confirm:
 
@@ -81,7 +85,7 @@ You can set up to **20 rules per IP**.
 To add a rule, click on `Add a rule`{.action}:
 
 
-![Add a rule](images/ajoutregle1.png){.thumbnail}
+![Add a rule](images/addarule2022.png){.thumbnail}
 
 For each rule you must choose:
 

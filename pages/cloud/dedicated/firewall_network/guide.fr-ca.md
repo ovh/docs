@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment configurer votre Network Firewall'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 07/11/2022**
+**Dernière mise à jour le 20/12/2022**
 
 ## Objectif
 
@@ -41,9 +41,15 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 > Le Network Firewall protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
-Connectez-vous à[ l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et accédez à la section `Bare Metal Cloud`{.action}. Ensuite, ouvrez la section `IP`{.action} et cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
+Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Bare Metal Cloud`{.action} et cliquer sur `IP`{.action}.
 
-![Activation du Network Firewall](images/firewall_creation2022.png){.thumbnail}
+Vous pouvez utiliser le menu déroulant sous "Mes adresses IP publiques et services associés" pour filtrer vos services par catégories.
+
+![filter service](images/selectservice.png){.thumbnail}
+
+Ensuite, cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
+
+![Activation du Network Firewall](images/firewallcreation2022.png){.thumbnail}
 
 Vous serez alors invité à confirmer votre action.
 
@@ -79,7 +85,7 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
 Pour ajouter une règle, cliquez sur `Ajouter une règle`{.action}.
 
-![Ajouter une règle](images/ajoutregle1.png){.thumbnail}
+![Ajouter une règle](images/addarule2022.png){.thumbnail}
 
 Pour chaque règle, vous devez choisir :
 
