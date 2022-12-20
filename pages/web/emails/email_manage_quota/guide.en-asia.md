@@ -93,19 +93,17 @@ The role of email software is to convert your emails into files, so that they ca
 
 Below is a non-exhaustive list of configuration guides for email clients on computers, depending on the solution you have:
 
-Below is a non-exhaustive list of configuration guides for email clients using IMAP protocol on the **MXplan** offer
-
 Configuring an MXplan account on **Windows**:
 
-- [Mail on Windows 10](https://docs.ovh.com/asia/emails/mail-configuration-windows-10/) (included with Windows)
-- [Outlook for Mxplan](https://docs.ovh.com/asia/emails/configuration-outlook-2016/)
-- [Thunderbird](https://docs.ovh.com/asia/emails/configure-email-for-thunderbird-windows/) (free)
+- [Mail on Windows 10](https://docs.ovh.com/asia/en/emails/mail-configuration-windows-10/) (included with Windows)
+- [Outlook for Mxplan](https://docs.ovh.com/asia/en/emails/configuration-outlook-2016/)
+- [Thunderbird](https://docs.ovh.com/asia/en/emails/configure-email-for-thunderbird-windows/) (free)
 
 Configuring an MXplan account on **macOS**:
 
-- [Mail](https://docs.ovh.com/asia/emails/guide-configuring-mail-on-macos/) (included with macOS)
-- [Outlook](https://docs.ovh.com/asia/emails/configuration-outlook-2016-mac/)
-- [Thunderbird](https://docs.ovh.com/asia/emails/configure-email-for-thunderbird-mac/) (free)
+- [Mail](https://docs.ovh.com/asia/en/emails/guide-configuring-mail-on-macos/) (included with macOS)
+- [Outlook](https://docs.ovh.com/asia/en/emails/configuration-outlook-2016-mac/)
+- [Thunderbird](https://docs.ovh.com/asia/en/emails/configure-email-for-thunderbird-mac/) (free)
 
 Once you have installed your email software, follow the instructions below to prepare the archive folder on your email software.
 
@@ -129,9 +127,7 @@ Once you have installed your email software, follow the instructions below to pr
 
 ## Go further
 
-[Manually migrate your email address](https://docs.ovh.com/asia/emails/migrate-email-addresses-manually/)
-
-[Migrate your email addresses from one OVHcloud email platform to another](https://docs.ovh.com/asia/microsoft-collaborative-solutions/migration-email-platform/)
+[Manually migrate your email address](https://docs.ovh.com/asia/en/emails/migrate-email-addresses-manually/)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 

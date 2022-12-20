@@ -150,7 +150,7 @@ Below is a nonexhaustive list of configuration guides for email clients on compu
 >> - [Outlook for MX Plan](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016/)
 >> - [Thunderbird](https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/) (free)<br><br>
 >> Configuring an MX Plan account on **macOS**:<br><br>
->> - [Mail](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macOS/) (included with macOS)<br>
+>> - [Mail](https://docs.ovh.com/gb/en/emails/guide-configuring-mail-on-macos/) (included with macOS)<br>
 >> - [Outlook](https://docs.ovh.com/gb/en/emails/configuration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-mac/) (free)<br>
 
@@ -162,7 +162,7 @@ Below is a nonexhaustive list of configuration guides for email clients on compu
 >> - [Outlook](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016/)<br>
 >> - [Thunderbird](https://docs.ovh.com/gb/en/emails-pro/configure-emailpro-for-thunderbird-windows/) (free)<br><br>
 >> Configuring an Email Pro account on **macOS**:<br><br>
->> - [Mail](https://docs.ovh.com/gb/en/emails-pro/configuring-email-pro-macOS-mail/) (included with macOS)<br>
+>> - [Mail](https://docs.ovh.com/gb/en/emails-pro/configuring-email-pro-macos-mail/) (included with macOS)<br>
 >> - [Outlook](https://docs.ovh.com/gb/en/emails-pro/configuration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/gb/en/emails-pro/configure-emailpro-for-thunderbird-mac/) (free)<br>
 >>

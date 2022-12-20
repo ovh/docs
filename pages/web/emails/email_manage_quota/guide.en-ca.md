@@ -134,12 +134,12 @@ Below is a non-exhaustive list of configuration guides for email clients using:
 > **Exchange**
 >>
 >> Configuring an Exchange account on **Windows**:<br><br>
->> - [Mail on Windows 10](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/mail-configuration-windows-10/) (included with Windows)<br>
->> - [Outlook](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/configuration-outlook-2016/)<br>
+>> - [Mail on Windows 10](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-mail-configuration-windows-10/) (included with Windows)<br>
+>> - [Outlook](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-windows/)<br>
 >> - [Thunderbird](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird/) (free)<br><br>
 >> Configuring an Exchange account on **macOS**:<br><br>
->> - [Mail](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-automatic-configuration-on-mail-mac/) (included with macOS)<br>
->> - [Outlook](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/configuration-outlook-2016-mac/)<br>
+>> - [Mail](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-mail-macos/) (included with macOS)<br>
+>> - [Outlook](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird-mac/) (free)<br>
 >>
 

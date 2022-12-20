@@ -94,8 +94,6 @@ The role of email software is to convert your emails into files, so that they ca
 
 Below is a non-exhaustive list of configuration guides for email clients on computers, depending on the solution you have:
 
-Below is a non-exhaustive list of configuration guides for email clients using IMAP protocol on the **MXplan** offer
-
 Configuring an MXplan account on **Windows**:
 
 - [Mail on Windows 10](https://docs.ovh.com/au/en/emails/mail-configuration-windows-10/) (included with Windows)
@@ -131,8 +129,6 @@ Once you have installed your email software, follow the instructions below to pr
 ## Go further
 
 [Manually migrate your email address](https://docs.ovh.com/au/en/emails/migrate-email-addresses-manually/)
-
-[Migrate your email addresses from one OVHcloud email platform to another](https://docs.ovh.com/au/en/microsoft-collaborative-solutions/migration-email-platform/)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
