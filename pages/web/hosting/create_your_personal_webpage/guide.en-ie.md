@@ -16,7 +16,7 @@ Find out how to create the first page of a website on a Start 10M hosting plan, 
 
 - A [domain name](https://www.ovhcloud.com/en-ie/domains/)
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) or a [Start 10M hosting plan](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/)
-- A text editor (notebook, TextEdit, Notepad++, etc.)
+- A text editor (Notepad, TextEdit, Notepad++, etc.)
 - An FTP client (such as [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) installed to transfer files to your hosting storage space
 
 ## Before you begin
@@ -153,7 +153,7 @@ You can use lists in HTML. We will take the example of simple lists, called unor
     <h1>Welcome to my personal page</h1>
     <h2>Create your website quickly and easily</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
     <p>The domain name offer includes:</p>
@@ -207,7 +207,7 @@ We will now create a new paragraph in which we will place the image (in this exa
     <h1>Welcome to my personal page</h1>
     <h2>Create your website quickly and easily</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud offers Start 10M hosting for every domain name purchase for free.</p>
     <p>The domain name offer includes:</p>
@@ -326,7 +326,7 @@ Your HTML code will look like this:
     </head>
     <body>
         <header>
-                <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+                <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
         </header>
         <main>
             <h1>Welcome to my personal page</h1>
@@ -354,7 +354,7 @@ Links to navigate a site from page to page are essential elements of the Web. To
 ```html
 <header> 
     <a href="index.html">
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </a>
 </header>
 ```
@@ -398,7 +398,7 @@ To save time on the appearance of your site and allow you to focus on the conten
 
 A template is a guideline or an example that can be reused, whether or not you can adapt it. Using templates saves time on site design by adapting elements that have already been designed, while offering the qualities that can be demanded of a "professional" site. The word theme can also be used.
 
-There are free "Open Source" solutions available on the internet, such as [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) or [Semantic UI](https://semantic-ui.com/). These tools are called “frameworks”: libraries that make it easier to create websites or web applications. They offer standardised, customisable and reusable elements, and the entire community offers reusable templates.
+There are free "Open Source" solutions available on the internet, such as [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) or [Semantic UI](https://semantic-ui.com/). These tools are called “frameworks”: libraries that make it easier to create websites or web applications. They offer standardised, customisable and reusable elements, and the entire community offers reusable templates.
 
 #### Bootstrap
 

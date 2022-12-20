@@ -20,7 +20,7 @@ Questa guida ti mostra come creare la prima pagina di un sito Web su un hosting 
 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) o di un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
-- Disporre di un editor di testo (ad esempio blocchi di testo, TextEdit, Notepad++, ecc...)
+- Disporre di un editor di testo (ad esempio notebook, TextEdit, Notepad++, ecc...)
 - Aver installato un client FTP (come [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), ecc...) per trasferire (depositare sull'hosting) i suoi file sul suo spazio dedicato.
 
 ## Prima di iniziare
@@ -32,17 +32,17 @@ Il contenuto di un sito web è spesso costituito da diverse pagine web. Una pagi
 - **HTML (HyperText Markup Language)**: linguaggio utilizzato per strutturare le tue pagine. La "struttura" designa gli elementi e la loro organizzazione.<br>
 **Esempio**: un titolo di documento sarà seguito da un sottotitolo e da uno o più paragrafi.
 
-Gli elementi utilizzati per strutturare il vostro contenuto sono chiamati "targhette" e si scrivono utilizzando caponi che aprono e chiudono.<br>
+Gli elementi utilizzati per strutturare il vostro contenuto sono chiamati "tag" e si scrivono utilizzando caponi che aprono e chiudono.<br>
 **Esempio**: Il tag `<p>` designa quello che inizia un paragrafo e lo stesso paragrafo è chiuso dal tag `</p>`. 
 
 >[!warning]
 >
-> Per tutti i tag aperti deve essere creato un tag chiuso. Le luci non si sovrappongono (si chiudono nell'ordine inverso dell'apertura) e non possono essere interpretate in modo diverso dalle luci HTML.
+> Per tutti i tag aperti deve essere creato un tag chiuso. I tag non si sovrappongono (si chiudono nell'ordine inverso dell'apertura) e non possono essere interpretate in modo diverso dal tag HTML.
 >
 
-Sono disponibili oltre un centinaio di targhette, ma è possibile realizzare il tuo sito con alcune di esse.
+Sono disponibili oltre un centinaio di tag, ma è possibile realizzare il tuo sito con alcune di esse.
 
-- **Il CSS (Cascading Style Sheet, fogli di stile a cascata)**: linguaggio che descrive il modo in cui saranno posizionati, dimensionati, comportamentali, colorati o visualizzati gli elementi HTML. Tali regole possono essere applicate a elementi generici (lo stesso colore per tutti i titoli del sito, o la polizia che sarà utilizzata per tutti i testi) o a elementi precisi (il testo contenuto nel footer, il comportamento al sorvolo del menu di navigazione).
+- **Il CSS (Cascading Style Sheet, fogli di stile a cascata)**: linguaggio che descrive il modo in cui saranno posizionati, dimensionati, comportamentali, colorati o visualizzati gli elementi HTML. Tali regole possono essere applicate a elementi generici (lo stesso colore per tutti i titoli del sito, o i font che sarà utilizzata per tutti i testi) o a elementi precisi (il testo contenuto nel footer, il comportamento al sorvolo del menu di navigazione).
 
 - **JavaScript**: linguaggio che consente di arricchire le interazioni su un sito Web (o un'applicazione web). Pur essendo indispensabile per gli sviluppatori web, non è obbligatorio per creare il tuo sito web.<br>
 Se non conosci il codice nei diversi linguaggi citati, puoi copiare/incollare gli esempi di codice forniti in questa guida, ti permetteranno di avere un sito web utilizzabile sul tuo hosting.
@@ -51,7 +51,7 @@ Se non conosci il codice nei diversi linguaggi citati, puoi copiare/incollare gl
 
 Per creare una pagina Web, inizia scrivendo in un file il tuo codice sorgente a partire da uno dei tre linguaggi citati sopra. Ecco i nomi principali dell'estensione: *".html"* (per i tuoi file HTML), *".css"* (per i tuoi file CSS), *".js"* (per i tuoi file JavaScript).
 
-I file possono essere scritti in editor di testo, inclusi quelli disponibili di default sul tuo sistema operativo (block note, TextEdit). Numerose soluzioni Open Source gratuite offrono funzionalità aggiuntive: [Notepad++](https://notepad-plus-plus.org/), [Bracket](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) o ancora [Micro](https://micro-editor.github.io/). È inoltre possibile utilizzare un IDE (Integrated Development Environment, ambiente di sviluppo integrato) come [Visual Studio Code](https://code.visualstudio.com/) o [Geany](https://www.geany.org/).
+I file possono essere scritti in editor di testo, inclusi quelli disponibili di default sul tuo sistema operativo (Blocco note, TextEdit). Numerose soluzioni Open Source gratuite offrono funzionalità aggiuntive: [Notepad++](https://notepad-plus-plus.org/), [Bracket](https://brackets.io/), [Sublime Text](https://www.sublimetext.com/) o ancora [Micro](https://micro-editor.github.io/). È inoltre possibile utilizzare un IDE (Integrated Development Environment, ambiente di sviluppo integrato) come [Visual Studio Code](https://code.visualstudio.com/) o [Geany](https://www.geany.org/).
 
 Per visualizzare e adattare le tue pagine prima di depositarle sul tuo hosting, utilizza il tuo browser web. per aprire il file dalla sua posizione locale direttamente sul browser.
 
@@ -63,7 +63,7 @@ Per contro, un sito web **dinamico** sottintende che le pagine visualizzate sono
 
 ### Cos'è il linguaggio PHP?
 
-PHP (*PHP Hypertext Preprocessor*) è un linguaggio utilizzato principalmente nello sviluppo Web. Funziona esclusivamente sul server, quindi non è necessario per costruire gli elementi visibili sul tuo browser. ma sarà utile, ad esempio, per recuperare i messaggi inviati tramite il form di contatto del tuo sito.
+PHP (*PHP Hypertext Preprocessor*) è un linguaggio utilizzato principalmente nello sviluppo Web. Funziona esclusivamente sul server, quindi non è necessario per costruire gli elementi visibili sul tuo browser. Ma sarà utile, ad esempio, per recuperare i messaggi inviati tramite il form di contatto del tuo sito.
 
 ## Procedura
 
@@ -88,7 +88,7 @@ Apri il tuo editor di testo e salva il tuo file di lavoro.
 Le pagine HTML sono sempre strutturate nello stesso modo:
 
 - una dichiarazione DOCTYPE che indica al browser di leggere il contenuto che segue rispettando al massimo gli standard;
-- un tag `<html>` che incoraggerà tutte le altre targhette del documento;
+- un tag `<html>` che includerà tutte le altre tag del documento;
 - un tag `<head>` che contiene informazioni sulla codifica della pagina e il suo titolo;
 - un tag `<body>` che contiene il "corpo" della tua pagina HTML.
 
@@ -109,23 +109,23 @@ Puoi copiare/incollare questo codice nel tuo file `index.html`:
 </html>
 ```
 
-Alcune targhette contengono più informazioni di altre, come il tag `<html lang="en">` dell'esempio di cui sopra.<br>
-In questo caso si parla di attributi che permetteranno di precisare alcuni elementi. In questo caso, indicare la lingua principale della pagina web. Alcuni di questi attributi sono universali e possono essere utilizzati su tutte le targhette (salvo qualche eccezione), altri sono specifici.
+Alcune tag contengono più informazioni di altre, come il tag `<html lang="it">` dell'esempio di cui sopra.<br>
+In questo caso si parla di attributi che permetteranno di precisare alcuni elementi. In questo caso, indicare la lingua principale della pagina web. Alcuni di questi attributi sono universali e possono essere utilizzati su tutte le tag (salvo qualche eccezione), altri sono specifici.
 
-Il tag `<head>` include elementi che non saranno visualizzati sullo schermo. Le targhette `<meta>` daranno indicazioni al browser, ma anche ai motori di ricerca, come la codifica dei caratteri utilizzati nel documento (UTF-8 nell'esempio precedente) o le informazioni sulla visualizzazione su cellulare (nell'esempio precedente, "viewport").
+Il tag `<head>` include elementi che non saranno visualizzati sullo schermo. Le tag `<meta>` daranno indicazioni al browser, ma anche ai motori di ricerca, come la codifica dei caratteri utilizzati nel documento (UTF-8 nell'esempio precedente) o le informazioni sulla visualizzazione su cellulare (nell'esempio precedente, "viewport").
 Il tag `<title>` è molto importante. Ti permette di determinare il titolo della tua pagina che apparirà sulla scheda del tuo browser, ma soprattutto che sarà indicizzato dai motori di ricerca.<br>
 Questo titolo ti permetterà, ad esempio, di apparire nei risultati di ricerca su Google, DuckDuckGo, etc.<br>
 Posizionarsi al massimo in questi risultati è un esercizio definito dalle regole SEO (*Search Engine Optimization*). Non tratteremo questo tema in questo articolo.
 
-Il tag `<body>`, invece, conterrà le altre targhette HTML che struttureranno il tuo documento.
+Il tag `<body>`, invece, conterrà le altre tag HTML che struttureranno il tuo documento.
 
 #### Completare con un titolo, un sottotitolo e il contenuto
 
 Modificheremo il contenuto testuale della tua pagina, rispettando la struttura standard HTML, per aggiungervi un titolo, un sottotitolo, paragrafi e liste di testo.
 
-- **I segnali `<h1>` fino a `<h6>`**
+- **I tag `<h1>` fino a `<h6>`**
 
-I titoli si scrivono tra etichette `<h...>`, che sono gerarchizzate come su qualsiasi documento: prima `<h1>`, poi `<h2>`, ecc., l'ultima delle quali è il tag `<h6>`. Il tag `<h1>` è quindi indispensabile per scrivere un tag `<h2>`. Se non si rispetta questa regola, il browser mostrerà il risultato senza errori.
+I titoli si scrivono tra tag `<h...>`, che sono gerarchizzate come su qualsiasi documento: prima `<h1>`, poi `<h2>`, ecc., l'ultima delle quali è il tag `<h6>`. Il tag `<h1>` è quindi indispensabile per scrivere un tag `<h2>`. Se non si rispetta questa regola, il browser mostrerà il risultato senza errori.
 
 ```html
 <body>
@@ -144,7 +144,7 @@ Questo tag viene utilizzato per inserire testo ("p" per paragrafo). È possibile
 <body>
     <h1>Benvenuto sulla mia pagina personale</h1>
     <h2>Crea rapidamente e facilmente il tuo sito Web</h2>
-    <p>OVHcloud propone, sulla sua offerta Start 10M, gratuitamente, un hosting per l'acquisto di un dominio.</p>
+    <p>OVHcloud offre gratuitamente l'hosting Start 10M per ogni dominio acquistato.</p>
 </body>
 ```
 
@@ -157,26 +157,26 @@ In HTML, puoi utilizzare liste. Prenderemo l'esempio di liste semplici, dette "n
     <h1>Benvenuto sulla mia pagina personale</h1>
     <h2>Crea rapidamente e facilmente il tuo sito Web</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud propone, sulla sua offerta Start 10M, gratuitamente, un hosting per l'acquisto di un dominio.</p>
+    <p>OVHcloud offre gratuitamente l'hosting Start 10M per ogni dominio acquistato.</p>
     <p>L'offerta "Dominio" include:</p>
     <ul>
         <li>Hosting Web 10 MB incluso</li>
-        <li>Account E-mail 5 GB inclusi</li>
+        <li>Account E-mail 5 GB incluso</li>
         <li>DNSSEC: protezione contro l'avvelenamento della cache (cache poisoning)</li>
         <li>Easy Redirect: accesso ai social network dal tuo dominio</li>
     </ul>
 </body>
 ```
 
-Puoi vedere il risultato nel tuo browser: di default, gli elementi delle liste sono visualizzati con chip.
+Puoi vedere il risultato nel tuo browser: di default, gli elementi delle liste sono visualizzati con putini.
 
 #### Aggiungi immagini per rendere la tua pagina più attraente
 
 Il web è soprattutto un mezzo visivo. In questa sezione vedremo come inserire le immagini nel tuo contenuto. L'offerta Start 10M ti offre uno spazio di storage da 10 MB. È sufficiente per le tue pagine HTML e CSS, ma può essere limitato per mettere molte immagini sul tuo sito. In questo caso, ti consigliamo di optare per un'[offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che permetta di usufruire di uno storage di maggiore entità.
 
-Il tag HTML utilizzato per visualizzare un'immagine è il tag `<img>`. Contrariamente alle luci che abbiamo visto prima, non c'è apertura e chiusura di questo elemento. Parleremo di targhette autofermanti. Sono gli attributi di questo tag che permettono di collegare la posizione del file e il testo descrittivo dell'immagine.
+Il tag HTML utilizzato per visualizzare un'immagine è il tag `<img>`. Contrariamente ai tag che abbiamo visto prima, non c'è apertura e chiusura di questo elemento. Parleremo di targhette autofermanti. Sono gli attributi di questo tag che permettono di collegare la posizione del file e il testo descrittivo dell'immagine.
 
 ##### **Ottimizza le tue immagini**
 
@@ -211,9 +211,9 @@ Ora creeremo un nuovo paragrafo in cui inseriremo l'immagine (in questo esempio 
     <h1>Benvenuto sulla mia pagina personale</h1>
     <h2>Crea rapidamente e facilmente il tuo sito Web</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>OVHcloud propone, sulla sua offerta Start 10M, gratuitamente, un hosting per l'acquisto di un dominio.</p>
+    <p>OVHcloud offre gratuitamente l'hosting Start 10M per ogni dominio acquistato.</p>
     <p>L'offerta "Dominio" include:</p>
     <ul>
         <li>Hosting Web 10 MB incluso</li>
@@ -253,7 +253,7 @@ Ora dobbiamo collegare questo file CSS, che abbiamo chiamato per convenzione *st
 </head>
 ```
 
-Per verificare, dichiareremo nel nostro foglio di stile un colore definito per ogni elemento `<h1>` della nostra pagina web. Modifica il file style.css aggiungendo queste righe:
+Per verificare, dichiareremo nel nostro foglio di stile un colore definito per ogni tag `<h1>` della nostra pagina web. Modifica il file style.css aggiungendo queste righe:
 
 ```html
 h1 {
@@ -263,7 +263,7 @@ h1 {
 
 Questo insieme di istruzioni è chiamato "regola CSS" e significa: tutti gli elementi HTML `<h1>` avranno il colore *(color)* rosso *(red)*.
 
-Puoi testare un altro colore sull'elemento `<h2>`, i paragrafi e gli elementi della lista:
+Puoi testare un altro colore sul tag `<h2>`, i paragrafi e gli elementi della lista:
 
 ```html
 h1 {
@@ -285,7 +285,7 @@ li {
 
 Aggiorna la pagina del tuo browser premendo sul tasto `F5` della tua tastiera: il tuo titolo apparirà in rosso.
 
-I browser hanno degli stili predefiniti, in particolare delle regole specifiche per il posizionamento degli elementi. Modificheremo di conseguenza il file CSS e preciseremo una regola che si applicherà a tutti gli elementi HTML visualizzati dal browser. Il selettore `*` (stella), chiamato selettore universale, viene posizionato all'inizio del file CSS:
+I browser hanno degli stili predefiniti, in particolare delle regole specifiche per il posizionamento degli elementi. Modificheremo di conseguenza il file CSS e preciseremo una regola che si applicherà a tutti gli elementi HTML visualizzati dal browser. Il selettore `*` (asterisco), chiamato selettore universale, viene posizionato all'inizio del file CSS:
 
 ```html
 * {
@@ -304,7 +304,7 @@ La proprietà padding definisce il bordo rotante (margine interno), cioè lo spa
 
 Abbiamo posizionato elementi base nel tuo tag `<body>`: `h1`, `h2`, `p`, `ul` e `li`.
 
-Nella sua ultima iterazione, il linguaggio [HTML5](https://html.spec.whatwg.org/) propone nuove targhette che permettono di strutturare meglio un documento e di arricchirlo da un punto di vista semantico. Un documento classico (anche su supporto tradizionale) include blocchi visivamente identificabili che possono essere riprodotti in HTML:
+Nella sua ultima iterazione, il linguaggio [HTML5](https://html.spec.whatwg.org/) propone nuovi tag che permettono di strutturare meglio un documento e di arricchirlo da un punto di vista semantico. Un documento classico (anche su supporto tradizionale) include blocchi visivamente identificabili che possono essere riprodotti in HTML:
 
 - un intestino, che figurerà in un tag `<header>` (da non confondere con il tag `<head>`);
 - contenuto principale, definito da un tag `<main>`;
@@ -330,12 +330,12 @@ Il tuo codice HTML sarà strutturato come segue:
     </head>
     <body>
         <header>
-                <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+                <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
         </header>
         <main>
             <h1>Benvenuto sulla mia pagina personale</h1>
             <h2>Crea rapidamente e facilmente il tuo sito Web</h2>
-            <p>OVHcloud propone, sulla sua offerta Start 10M, gratuitamente, un hosting per l'acquisto di un dominio.</p>
+            <p>OVHcloud offre gratuitamente l'hosting Start 10M per ogni dominio acquistato.</p>
             <p>L'offerta "Dominio" include:</p>
             <ul>
                 <li>Hosting Web 10 MB incluso</li>
@@ -353,12 +353,12 @@ Il tuo codice HTML sarà strutturato come segue:
 
 ### Rendere un elemento interattivo
 
-I link che permettono di navigare da una pagina all'altra su un sito sono elementi essenziali del web. Per attuarle, utilizza il tag `<a>` (_anchor_, ancora), che rende un elemento interattivo, accompagnato da un attributo `href` che conterrà l'URL verso cui puntare. Nel seguente esempio renderemo interattivo il logo contenuto nel tag `<header>`:
+I link che permettono di navigare da una pagina all'altra su un sito sono elementi essenziali del web. Per attuarle, utilizza il tag `<a>` (ancora), che rende un elemento interattivo, accompagnato da un attributo `href` che conterrà l'URL verso cui puntare. Nel seguente esempio renderemo interattivo il logo contenuto nel tag `<header>`:
 
 ```html
 <header> 
     <a href="index.html">
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </a>
 </header>
 ```
@@ -394,7 +394,7 @@ Una volta che i file sono stati trasferiti completamente sul tuo hosting, puoi v
 
 ### Migliora il tuo sito con un template
 
-CSS e HTML sono linguaggi di facile comprensione per un risultato rapido. Tuttavia, questi linguaggi, e in particolare il CSS, hanno registrato una notevole evoluzione. Se le foglie di stili a cascata offrono più funzionalità (animazioni, degradate, posizione degli elementi sulla pagina, ecc.), sono diventate più complesse da codificare.
+CSS e HTML sono linguaggi di facile comprensione per un risultato rapido. Tuttavia, questi linguaggi, e in particolare il CSS, hanno registrato una notevole evoluzione. Se i fogli di stile a cascata offrono più funzionalità (animazioni, degradate, posizione degli elementi sulla pagina, ecc.), sono diventate più complesse da codificare.
 
 Per guadagnare tempo con l'aspetto del tuo sito e permetter di focalizzarti sui contenuti, e quindi sui referenziati, è comune utilizzare i *template* per guadagnare tempo e ottenere un risultato di qualità sia graficamente che funzionalmente (design, ergonomia, visibilità su smartphone e tablet).
 
@@ -402,7 +402,7 @@ Per guadagnare tempo con l'aspetto del tuo sito e permetter di focalizzarti sui 
 
 Un *template* è un modello o un esempio che si può riutilizzare, adattandolo o no. L'utilizzo dei *templates* permette di risparmiare tempo nella progettazione di un sito adattando elementi già progettati, offrendo nel contempo le qualità che si possono esigere da un sito "professionale". Il termine "tema" può essere utilizzato anche per altri scopi.
 
-Esistono soluzioni Open Source gratuite disponibili su Internet, come [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) o ancora [Semantic UI](https://semantic-ui.com/). Questi strumenti sono denominati "framework": librerie che facilitano la creazione di siti o applicazioni web. Offrono elementi standardizzati, personalizzabili e riutilizzabili e tutta la community propone *template* riutilizzabili.
+Esistono soluzioni Open Source gratuite disponibili su Internet, come [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) o ancora [Semantic UI](https://semantic-ui.com/). Questi strumenti sono denominati "framework": librerie che facilitano la creazione di siti o applicazioni web. Offrono elementi standardizzati, personalizzabili e riutilizzabili e tutta la community propone *template* riutilizzabili.
 
 #### Bootstrap
 
