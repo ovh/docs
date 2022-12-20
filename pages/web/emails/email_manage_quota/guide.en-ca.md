@@ -17,7 +17,7 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 ## Requirements
 
 - a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/) package or ordered separately as a standalone solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/));
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and `Web Cloud`{.action} section ;
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), and `Web Cloud`{.action} section ;
 - access to the email addresses concerned.
 
 
@@ -37,7 +37,7 @@ You can do this via the OVHcloud Control Panel if you are managing the email ser
 
 #### From the Control Panel <a name="quotacontrolpanel"></a>
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
 
 > [!tabs]
 > **Emails (MXplan)**
@@ -149,18 +149,18 @@ Once you have installed your email software, follow the instructions below to pr
 > **Outlook**
 >>
 >> In Outlook, make sure that the folder "archive" or "on my computer" is present in your left-hand column so that you can put the items you want to keep locally on your computer. See the Microsoft documentation for preparing your archive folder:<br><br>
->> - [Archiving in Outlook for Windows](https://support.microsoft.com/en-us/office/archive-in-outlook-for-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [About folders on my computer in Outlook for Mac](https://support.microsoft.com/en-us/office/about-on-my-computer-folders-in-outlook-for-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
+>> - [Archiving in Outlook for Windows](https://support.microsoft.com/en-us/office/archive-in-outlook-for-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
+>> - [About folders on my computer in Outlook for Mac](https://support.microsoft.com/en-us/office/about-on-my-computer-folders-in-outlook-for-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
 >>
 > **Mail macOS**
 >>
 >> From Mail on macOS, create a folder that will appear in the "On my Mac" section in the left-hand column. To do this, follow the Apple documentation:<br><br>
->> - [Create or delete mailboxes in Mail on Mac](https://support.apple.com/en-ca/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
+>> - [Create or delete mailboxes in Mail on Mac](https://support.apple.com/en-ca/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>
 >> Via thunderbird from Windows, macOS or Linux, you can move your emails to a folder in the left pane. Use the Mozilla documentation:<br><br>
->> - [Message Archiving](https://support.mozilla.org/en-US/kb/archived-messages){.external}<br>
+>> - [Message Archiving](https://support.mozilla.org/en-US/kb/archived-messages)<br>
 >>
 
 #### Change solution to increase capacity <a name="switchingoffer"></a>

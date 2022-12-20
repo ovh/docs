@@ -23,9 +23,9 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 ## Requisitos
 
 - Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) como [**Hosted Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/)).
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Web Cloud`{.action}.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
 
 ## En la práctica <a name="instructions"></a>
 
-Siga nuestra guía [Gestionar el espacio de almacenamiento de una cuenta de correo](https://docs.ovh.com/us/es/emails/manage-email-quota/){.external} en la sección "Correo electrónico".
+Siga nuestra guía [Gestionar el espacio de almacenamiento de una cuenta de correo](https://docs.ovh.com/us/es/emails/manage-email-quota/) en la sección "Correo electrónico".

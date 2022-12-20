@@ -17,7 +17,7 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 ## Prérequis
 
 - Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)).
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mails concernées.
 
 ## En pratique <a name="instructions"></a>
@@ -36,7 +36,7 @@ Vous pouvez réaliser cette action depuis l'espace client si vous avez la gestio
 
 #### Depuis l'espace client <a name="quotacontrolpanel"></a>
 
-Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre:
+Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre:
 
 > [!tabs]
 > **Emails (MXplan)**
@@ -147,18 +147,18 @@ Une fois votre logiciel de messagerie installé, suivez les instructions ci-dess
 > **Outlook**
 >>
 >> Sur Outlook, assurez-vous que, dans votre colonne de gauche, le dossier « archive » ou « sur mon ordinateur » soit présent pour pouvoir y déposer les éléments que vous souhaitez garder en local sur votre ordinateur. Consultez la documentation de Microsoft pour préparer votre dossier d'archive :<br><br>
->> - [Archivage dans Outlook pour Windows](https://support.microsoft.com/fr-fr/office/archivage-dans-outlook-pour-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [À propos des dossiers sur mon ordinateur dans Outlook pour Mac](https://support.microsoft.com/fr-fr/office/%C3%A0-propos-des-dossiers-sur-mon-ordinateur-dans-outlook-pour-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
+>> - [Archivage dans Outlook pour Windows](https://support.microsoft.com/fr-fr/office/archivage-dans-outlook-pour-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
+>> - [À propos des dossiers sur mon ordinateur dans Outlook pour Mac](https://support.microsoft.com/fr-fr/office/%C3%A0-propos-des-dossiers-sur-mon-ordinateur-dans-outlook-pour-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
 >>
 > **Mail macOS**
 >>
 >> Depuis Mail sur macOS, créez un dossier qui apparaîtra dans la section « Sur mon Mac » dans la colonne de gauche. Pour ce faire, suivez la documentation d'Apple :<br><br>
->> - [Créer ou supprimer des boites aux lettres dans Mail sur Mac](https://support.apple.com/fr-ca/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
+>> - [Créer ou supprimer des boites aux lettres dans Mail sur Mac](https://support.apple.com/fr-ca/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>
 >> Via thunderbird depuis Windows, macOS ou Linux, vous pouvez déplacer vos e-mails dans un dossier du volet de gauche. Aidez-vous de la documentation de Mozilla :<br><br>
->> - [Archivage des messages](https://support.mozilla.org/fr/kb/archivage-des-messages){.external}<br>
+>> - [Archivage des messages](https://support.mozilla.org/fr/kb/archivage-des-messages)<br>
 >>
 
 #### Changer d'offre pour augmenter sa capacité <a name="switchingoffer"></a>

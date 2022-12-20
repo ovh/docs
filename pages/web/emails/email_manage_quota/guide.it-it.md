@@ -21,15 +21,15 @@ Ogni account email OVHcloud dispone di uno spazio di storage dedicato. Gestire c
 ## Prerequisiti
 
 - Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [hosting Start10M gratuito](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
 - Disporre delle informazioni di connessione agli indirizzi email interessati
 
 > [!primary]
 >
 > **Casi particolari**
 >
-> - Se disponi di un hosting Start 10M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, selezionando il dominio interessato.
-> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}. Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](https://docs.ovh.com/it/hosting/attivare-email-hosting-web/).
+> - Se disponi di un hosting Start 10M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), selezionando il dominio interessato.
+> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/). Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](https://docs.ovh.com/it/hosting/attivare-email-hosting-web/).
 
 ## In pratica <a name="instructions"></a>
 
@@ -47,7 +47,7 @@ Questa operazione è disponibile nello Spazio Cliente OVHcloud, se la gestione d
 
 #### Dallo Spazio Cliente OVHcloud <a name="quotacontrolpanel"></a>
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
 
 > [!tabs]
 > **Email (MXplan)**
@@ -186,13 +186,13 @@ Una volta installato il client di posta, segui le istruzioni qui sotto per prepa
 > **Outlook**
 >>
 >> Su Outlook, assicurati che nella colonna di sinistra la cartella "archivia" o "sul mio computer" sia presente per potervi depositare gli elementi che desideri tenere in locale sul tuo computer. Consulta la documentazione di Microsoft per preparare la cartella di archiviazione:<br><br>
->> - [Archiviazione in Outlook per Windows](https://support.microsoft.com/it-it/office/archivio-in-outlook-per-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [Sulle cartelle del mio computer in Outlook per Mac](https://support.microsoft.com/it-it/office/informazioni-sulle-cartelle-in-questo-computer-in-outlook-per-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
+>> - [Archiviazione in Outlook per Windows](https://support.microsoft.com/it-it/office/archivio-in-outlook-per-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
+>> - [Sulle cartelle del mio computer in Outlook per Mac](https://support.microsoft.com/it-it/office/informazioni-sulle-cartelle-in-questo-computer-in-outlook-per-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
 >>
 > **Mail macOS**
 >>
 >> Da Mail su macOS, crea una cartella che comparirà nella sezione "Sul mio Mac" nella colonna di sinistra. Per effettuare questa operazione, consulta la documentazione di Apple:<br><br>
->> - [Creare o eliminare caselle di posta in Mail su Mac](https://support.apple.com/it-it/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
+>> - [Creare o eliminare caselle di posta in Mail su Mac](https://support.apple.com/it-it/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>

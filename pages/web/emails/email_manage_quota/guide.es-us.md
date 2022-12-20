@@ -21,7 +21,7 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 ## Requisitos
 
 - Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) o contratada por separado como solución autónoma, como [**Hosted Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/)).
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Web Cloud`{.action}.
 - Disponer de la información de conexión a las direcciones de correo electrónico correspondientes.
 
 
@@ -42,7 +42,7 @@ Puede realizar esta acción desde el área de cliente si tiene la gestión del s
 
 #### Desde el área de cliente <a name="quotacontrolpanel"></a>
 
-Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
+Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
 
 > [!tabs]
 > **Emails (MXplan)**
@@ -175,18 +175,18 @@ Una vez instalado el cliente de correo, siga las instrucciones que se indican a 
 > **Outlook**
 >>
 >> En Outlook, asegúrese de que, en la columna de la izquierda, esté presente la carpeta "archivado" o "en mi ordenador" para poder guardar en su ordenador los elementos que desee guardar localmente. Consulte la documentación de Microsoft para preparar su carpeta de archivos:<br><br>
->> - [Archivo en Outlook para Windows](https://support.microsoft.com/es-es/office/archivar-en-outlook-para-windows-25f75777-3cdc-4c77-9783-5929c7b47028) {.external}<br>
->> - [Sobre los directorios de mi ordenador en Outlook para Mac](https://support.microsoft.com/es-es/office/acerca-de-las-carpetas-en-mi-pc-en-outlook-para-mac-c91b8729-924d-4c25-a5f6-38883d0f763d) {.external}<br>
+>> - [Archivo en Outlook para Windows](https://support.microsoft.com/es-es/office/archivar-en-outlook-para-windows-25f75777-3cdc-4c77-9783-5929c7b47028) <br>
+>> - [Sobre los directorios de mi ordenador en Outlook para Mac](https://support.microsoft.com/es-es/office/acerca-de-las-carpetas-en-mi-pc-en-outlook-para-mac-c91b8729-924d-4c25-a5f6-38883d0f763d) <br>
 >>
 > **Mail macOS**
 >>
 >> Desde Mail en macOS, cree una carpeta que aparecerá en la sección "En mi Mac" de la columna izquierda. Para ello, consulte la documentación de Apple:<br><br>
->> - [Crear o eliminar buzones de correo en Mail en Mac](https://support.apple.com/es-us/guide/mail/mlhlp1021/15.0/mac/12.0) {.external}< br>
+>> - [Crear o eliminar buzones de correo en Mail en Mac](https://support.apple.com/es-us/guide/mail/mlhlp1021/15.0/mac/12.0) < br>
 >>
 > **Thunderbird**
 >>
 >> Desde Windows, macOS o Linux puede mover sus mensajes de correo a una carpeta de la izquierda. Consulte la documentación de Mozilla:<br><br>
->> - [Archivado de mensajes](https://support.mozilla.org/es/kb/mensajes-archivados) {.external}< br>
+>> - [Archivado de mensajes](https://support.mozilla.org/es/kb/mensajes-archivados) < br>
 >>
 
 #### Cambiar de plan para aumentar su capacidad <a name="switchingoffer"></a>

@@ -19,10 +19,10 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 ## Prérequis
 
 - Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)).
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), partie `Web Cloud`{.action}.
 - Disposer des informations de connexion aux adresses e-mails concernées.
 
 
 ## En pratique <a name="instructions"></a>
 
-Suivez notre guide [Gérer l'espace de stockage d'un compte e-mail](https://docs.ovh.com/ca/fr/emails/manage-email-quota/){.external} dans la rubrique « E-mails mutualisés - MX Plan ».
+Suivez notre guide [Gérer l'espace de stockage d'un compte e-mail](https://docs.ovh.com/ca/fr/emails/manage-email-quota/) dans la rubrique « E-mails mutualisés - MX Plan ».
