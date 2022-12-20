@@ -20,7 +20,7 @@ Questa guida ti mostra come creare la prima pagina di un sito Web su un hosting 
 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
 - Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) o di un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/)
-- Disporre di un editor di testo (ad esempio Blocco note, TextEdit, Notepad++, ecc...)
+- Disporre di un editor di testo (ad esempio notebook, TextEdit, Notepad++, ecc...)
 - Aver installato un client FTP (come [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), ecc...) per trasferire (depositare sull'hosting) i suoi file sul suo spazio dedicato.
 
 ## Prima di iniziare
@@ -157,7 +157,7 @@ In HTML, puoi utilizzare liste. Prenderemo l'esempio di liste semplici, dette "n
     <h1>Benvenuto sulla mia pagina personale</h1>
     <h2>Crea rapidamente e facilmente il tuo sito Web</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud offre gratuitamente l'hosting Start 10M per ogni dominio acquistato.</p>
     <p>L'offerta "Dominio" include:</p>
@@ -211,7 +211,7 @@ Ora creeremo un nuovo paragrafo in cui inseriremo l'immagine (in questo esempio 
     <h1>Benvenuto sulla mia pagina personale</h1>
     <h2>Crea rapidamente e facilmente il tuo sito Web</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud offre gratuitamente l'hosting Start 10M per ogni dominio acquistato.</p>
     <p>L'offerta "Dominio" include:</p>
@@ -330,7 +330,7 @@ Il tuo codice HTML sarà strutturato come segue:
     </head>
     <body>
         <header>
-                <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+                <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
         </header>
         <main>
             <h1>Benvenuto sulla mia pagina personale</h1>
@@ -402,7 +402,7 @@ Per guadagnare tempo con l'aspetto del tuo sito e permetter di focalizzarti sui 
 
 Un *template* è un modello o un esempio che si può riutilizzare, adattandolo o no. L'utilizzo dei *templates* permette di risparmiare tempo nella progettazione di un sito adattando elementi già progettati, offrendo nel contempo le qualità che si possono esigere da un sito "professionale". Il termine "tema" può essere utilizzato anche per altri scopi.
 
-Esistono soluzioni Open Source gratuite disponibili su Internet, come [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) o ancora [Semantic UI](https://semantic-ui.com/). Questi strumenti sono denominati "framework": librerie che facilitano la creazione di siti o applicazioni web. Offrono elementi standardizzati, personalizzabili e riutilizzabili e tutta la community propone *template* riutilizzabili.
+Esistono soluzioni Open Source gratuite disponibili su Internet, come [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) o ancora [Semantic UI](https://semantic-ui.com/). Questi strumenti sono denominati "framework": librerie che facilitano la creazione di siti o applicazioni web. Offrono elementi standardizzati, personalizzabili e riutilizzabili e tutta la community propone *template* riutilizzabili.
 
 #### Bootstrap
 
