@@ -10,7 +10,10 @@ order: 02
 
 ## Objectif
 
-Vous souhaitez supprimer une adresse e-mail que vous n'utilisez plus. Réinitialiser un compte e-mail pour l'utiliser sur une nouvelle adresse e-mail. Ou encore réinitialiser un compte e-mail pour le résilier.
+Vous souhaitez :
+- Supprimer une adresse e-mail que vous n'utilisez plus. 
+- Réinitialiser un compte e-mail pour l'utiliser sur une nouvelle adresse e-mail. 
+- Réinitialiser un compte e-mail pour le résilier.
 
 **Découvrez comment supprimer ou réinitialiser une adresse e-mail sur votre offre e-mail**
 
@@ -25,7 +28,7 @@ Vous souhaitez supprimer une adresse e-mail que vous n'utilisez plus. Réinitial
 OVHcloud propose 3 solutions e-mail, la notion de suppression de compte est différente selon votre offre.
 
 - **Email MXplan** : cette offre est vendue par pack de plusieurs comptes e-mail. Lorsque vous supprimez un compte, vous libérez un emplacement sur votre pack. 
-- **Email Pro** et **Hosted Exchange** : Ces deux offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. Lorsque vous voulez supprimer une adresse e-mail, on parle de **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez également résilier l'abonnement de ce compte si vous souhaitez le supprimer définitivement.
+- **Email Pro** et **Hosted Exchange** : Ces deux offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. Lorsque vous voulez supprimer une adresse e-mail, on parle de **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez également [résilier l'abonnement](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes) de ce compte si vous souhaitez le supprimer définitivement.
 
 ### Supprimer ou réinitialiser un compte e-mail
 
@@ -34,26 +37,26 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 > [!tabs]
 > **Emails MXplan historique**
 >>
->> Pour vérifier si votre offre MXplab est une version historique, référez-vous au tableau de la partie [Identifiez votre offre MXplan](#whichmxplan")<br><br>
+>> Pour vérifier si votre offre MXplan est une version historique, référez-vous au tableau de la partie [Identifiez votre offre MXplan](#whichmxplan")<br><br>
 >>
->> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Supprimer le compte`{.action}.<br><br>
+>> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Supprimer le compte`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **Emails MXplan nouvelle version**
 >>
 >> Pour vérifier si votre offre MXplan est une version historique, référez-vous au tableau de la partie [Identifiez votre offre MXplan](#whichmxplan")<br><br>
->> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
+>> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
 >>![email](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
->> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
+>> Cliquez sur `E-mail Pro`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
 >> Après réinitialisation de votre compte, si vous souhaitez le supprimer définitivement, vous devrez le résilier. Pour cela, consultez notre guide [Gérer la facturation de vos comptes Email-Pro](https://docs.ovh.com/fr/emails-pro/gestion-facturation-emailpro/)<br><br>
 >>![email](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
->> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier, puis cliquez sur `Réinitialiser`{.action}.<br><br>
+>> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Réinitialiser`{.action}.<br><br>
 >> Après réinitialisation de votre compte, si vous souhaitez le supprimer définitivement, vous devrez le résilier. Pour cela, consultez notre guide [Gérer la facturation de vos comptes Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/)<br><br>
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
