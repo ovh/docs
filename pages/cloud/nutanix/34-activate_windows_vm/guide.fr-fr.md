@@ -1,9 +1,9 @@
 ---
-title: 'Activer des machines virtuelles sous Windows Server installées dans Nutanix by OVHcloud avec des licences SPLA OVHcloud'
+title: 'Activer des VM Windows installées sur Nutanix by OVHcloud'
 slug: activate-ovhcloud-windows-licence
 routes:
     canonical: 'https://docs.ovh.com/fr/dedicated/windows-key/'
-excerpt: "Découvrez comment activer une machine virtuelle Windows Server installée dans Nutanix by OVHcloud avec une licence SPLA OVHcloud"
+excerpt: "Découvrez comment activer une VM Windows Server installée dans Nutanix by OVHcloud avec une licence OVHcloud"
 section: "Utilisation avancée"
 order: 04
 ---
@@ -92,12 +92,7 @@ Afin que votre clé soit associée à notre robot d'activation, utilisez la comm
 cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 ```
 
-> [!primary]
->
-> Si vous utilisez un VPS ou une instance Public Cloud, il faut utiliser `kms.cloud.ovh.net`.
-> 
-
-### Activer le système
+## Activer le système
 
 Enfin, pour activer votre système Windows, il vous reste désormais à exxécuter la commande ci-dessous :
 

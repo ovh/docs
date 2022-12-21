@@ -1,5 +1,5 @@
 ---
-title: 'Activate Windows Server virtual machines installed on a Nutanix by OVHcloud solution with OVHcloud SPLA licences'
+title: 'Activate Windows VMs installed on Nutanix by OVHcloud'
 slug: activate-ovhcloud-windows-licence
 routes:
     canonical: https://docs.ovh.com/gb/en/dedicated/windows-key/
