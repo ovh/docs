@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment créer une adresse MAC virtuelle et comment l’ass
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 26/07/2022**
+**Dernière mise à jour le 20/12/2022**
 
 ## Objectif
 
@@ -41,7 +41,9 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 Une fois connecté dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le menu `Bare Metal Cloud`{.action}, puis ouvrez la section `IP`{.action}.
 
-![IP](images/manageIPOVHcloud.png){.thumbnail}
+Cliquez sur l'onglet `Additional IP`{.action}.
+
+![IP](images/manageIPs2022.png){.thumbnail}
 
 Localisez ensuite votre adresse Additional IP (ou votre bloc) dans la liste, puis cliquez sur le bouton `...`{.action} pour afficher la liste des options.
 
