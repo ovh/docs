@@ -18,10 +18,6 @@ order: 05
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 
-
-
-
-
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
@@ -31,15 +27,15 @@ order: 05
 
 ## Présentation
 
-Lorsque vous déployez votre cluster vous avez la possibilité de choisir le dimensionnement de Prism Central sur une ou trois machines virtuelles. Cette option est modifiable lorsque vous redéployer votre cluster mais toutes les données du cluster Nutanix sont éffacées.<br>
+Lorsque vous déployez votre cluster vous avez la possibilité de choisir le dimensionnement de Prism Central sur une ou trois machines virtuelles. Cette option est modifiable lorsque vous redéployer votre cluster mais toutes les données du cluster Nutanix sont effacées.<br>
 
-**Prism Central** peut être dimensionné avec une ou trois machines virtuelles pour une meilleure résilience mais la taille de chaque machine virtuelle peut être differente en fonction des besoins selon ces trois modes :
+**Prism Central** peux être dimensionné avec une ou trois machines virtuelles pour une meilleure résilience, il est aussi possible d'avoir un dimensionnement de chaque machine virtuelles plus importante.
 
 - Small avec 6 vCPU 26 Gb de mémoire et 500 Gb de stockage par machine virtuelle.
 - Large avec 10 vCPU, 26 Gb de mémoire et 2500 Go de stockage par machine virtuelle.
 - X-Large avec 15 vCPU, 60 Gb de mémoir et 2500 Gb de mémoire.
 
-Le mode de déploiement de Prism Central sur les cluster Nutanix by OVHcloud est en mode SMALL avec une machine virtuelle ou trois machines virtuelles.
+Le mode de déploiement de Prism Central sur les cluster Nutanix by OVHcloud est en mode *Small* avec une machine virtuelle ou trois machines virtuelles.
 
 Nous allons voir comment remplacer Prism Central en Mode Small sur une seule machine virtuelle par un Prism Central en mode X-Large sur trois machines virtuelles.
 
@@ -49,12 +45,7 @@ Nous allons voir comment remplacer Prism Central en Mode Small sur une seule mac
 > Le remplacement du mode de fonctionnement de Prism Central implique la suppression de Prism Central et de toutes les options gérées par Prism Central (Microsegmentation, Disaster recovery, etc...)
 >
 
-
-
-
-
-Le remplacement du mode de fonctionnement de Prism Central implique la suppression de Prism Central et de toutes les options gérées par Prism Central (Microsegmentation, Disaster recovery, etc...)
-
+### Paramètrage de l'accès à Prism Element via l'espace client OVHcloud
 
 
 

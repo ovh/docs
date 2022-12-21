@@ -1,6 +1,8 @@
 ---
 title: 'Activer des machines virtuelles sous Windows Server installées dans Nutanix by OVHcloud avec des licences SPLA OVHcloud'
 slug: activate-ovhcloud-windows-licence
+routes:
+    canonical: 'https://docs.ovh.com/fr/dedicated/windows-key/'
 excerpt: "Découvrez comment activer une machine virtuelle Windows Server installée dans Nutanix by OVHcloud avec une licence SPLA OVHcloud"
 section: "Utilisation avancée"
 order: 04
