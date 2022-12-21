@@ -1,7 +1,7 @@
 ---
-title: 'Activer des Machines virtuelles Windows sous licence OVHcloud dans une solution Nutanix by OVHcloud'
+title: 'Activer des machines virtuelles sous Windows Server installées dans Nutanix by OVHcloud avec des licences SPLA OVHcloud'
 slug: activate-ovhcloud-windows-licence
-excerpt: "Find out how to create and activate a Windows virtual machine under an OVHcloud licence in Nutanix by OVHcloud"
+excerpt: "Découvrez comment activer une machine virtuelle Windows Server installée dans Nutanix by OVHcloud avec une licence SPLA OVHcloud"
 section: "Utilisation avancée"
 order: 04
 ---
@@ -20,11 +20,11 @@ order: 04
 
 ## Prérequis
 
-- Disposer d'un cluster Nutanix dans votre compte OVHcloud
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Une licence Windows fournie par OVHcloud
-- Une machine virtuelle sous Windows Server. Vous pouvez vous aider de ce guide pour installer une machine virtuelle sous Windows [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/)
-- Que la machine virtuelle se connecte à Internet au travers du rtVrack (Par exemple via la passerelle par défaut)
+- Une licence Windows fournie par OVHcloud.
+- Une machine virtuelle sous Windows Server. Vous pouvez vous aider de ce guide pour installer une machine virtuelle sous Windows [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/).
+- Que la machine virtuelle se connecte à Internet au travers du rtVrack (Par exemple via la passerelle par défaut).
 
 ## En pratique
 
