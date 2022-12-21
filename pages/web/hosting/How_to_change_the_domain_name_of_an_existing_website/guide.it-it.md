@@ -1,8 +1,8 @@
 ---
-title: "Come cambiare il dominio di un sito esistente"
+title: "Casi d’uso - Come cambiare il dominio di un sito esistente"
 slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Questa guida ti mostra come modificare il dominio di un sito esistente"
-section: "Casi d’uso"
+section: "Tutorial"
 order: 02
 ---
 

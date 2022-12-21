@@ -1,8 +1,8 @@
 ---
-title: "Jak zmienić domenę na istniejącej stronie"
+title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
-section: "Przykłady zastosowania"
+section: "Tutoriale"
 order: 02
 ---
 

@@ -2,7 +2,7 @@
 title: 'Tutorial - Eigene Webseite bei OVHcloud erstellen'
 slug: create-your-own-web-page
 excerpt: 'Erfahren Sie hier, wie Sie Ihre erste Webseite auf einem kostenlosen Start 10M Webhosting erstellen'
-section: 'Tutorials'
+section: "Tutorials"
 order: 01
 ---
 
@@ -20,7 +20,7 @@ Hier erfahren Sie, wie Sie die Homepage einer Website auf einem Start 10M Hostin
 
 - Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
 - Sie haben über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder ein kostenloses [Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/).
-- Sie haben einen Texteditor (notebook, TextEdit, Notepad++, etc.).
+- Sie haben einen Texteditor (Notepad, TextEdit, Notepad++, etc.).
 - Sie haben einen FTP-Client (wie [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php) etc.) installiert, um Dateien auf Ihren Hosting-Speicherplatz zu übertragen.
 
 ## Bevor Sie beginnen
@@ -157,7 +157,7 @@ Sie können im HTML-Format Listen verwenden. Wir nehmen dabei ein Beispiel für 
     <h1>Willkommen auf meiner persönlichen Seite</h1>
     <h2>Erstellen Sie schnell und einfach Ihre Website</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud bietet Ihnen das Start 10M Hosting kostenlos beim Kauf einer Domain an.</p>
     <p>Das Angebot "Domainname" umfasst:</p>
@@ -211,7 +211,7 @@ Wir werden nun einen neuen Absatz erstellen, in dem wir das Bild eintragen (in d
     <h1>Willkommen auf meiner persönlichen Seite</h1>
     <h2>Erstellen Sie schnell und einfach Ihre Website</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud bietet Ihnen das Start 10M Hosting kostenlos beim Kauf einer Domain an.</p>
     <p>Das Angebot "Domainname" umfasst:</p>
@@ -330,7 +330,7 @@ Ihr HTML-Code wird wie folgt strukturiert:
     </head>
     <body>
         <header>
-                <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+                <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
         </header>
         <main>
             <h1>Willkommen auf meiner persönlichen Seite</h1>
@@ -358,7 +358,7 @@ Links, die es ermöglichen, über eine Website von einer Seite zur anderen zu na
 ```html
 <header> 
     <a href="index.html">
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </a>
 </header>
 ```
@@ -402,7 +402,7 @@ Um Zeit für das Aussehen Ihrer Website zu gewinnen und Ihnen zu erlauben, sich 
 
 Ein *Template* ist ein Modell oder ein Beispiel, das man wiederverwenden kann, ob man es nun anpasst oder nicht. Die Nutzung von Templates ermöglicht es, Zeit für die Gestaltung einer Website zu gewinnen, indem bereits entwickelte Elemente angepasst werden und gleichzeitig die Qualitäten geboten werden, die von einer "professionellen" Website gefordert werden können.
 
-Im Internet sind kostenlose "Open Source"-Lösungen verfügbar, wie [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) oder [Semantic UI](https://semantic-ui.com/). Diese Tools werden als "Framework" bezeichnet: Hierbei handelt es sich um Bibliotheken, die die Erstellung von Webseiten oder Webanwendungen erleichtern. Sie bieten standardisierte, personalisierbare und wiederverwendbare Elemente und die gesamte Community bietet wiederverwendbare Templates.
+Im Internet sind kostenlose "Open Source"-Lösungen verfügbar, wie [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) oder [Semantic UI](https://semantic-ui.com/). Diese Tools werden als "Framework" bezeichnet: Hierbei handelt es sich um Bibliotheken, die die Erstellung von Webseiten oder Webanwendungen erleichtern. Sie bieten standardisierte, personalisierbare und wiederverwendbare Elemente und die gesamte Community bietet wiederverwendbare Templates.
 
 #### Bootstrap
 

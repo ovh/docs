@@ -2,7 +2,7 @@
 title: 'Tutorial - Tworzenie strony WWW w OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowym hostingu Start 10M'
-section: 'Tutoriale'
+section: "Tutoriale"
 order: 01
 ---
 
@@ -20,7 +20,7 @@ Dowiedz się, jak utworzyć pierwszą stronę internetową na hostingu Start 10M
 
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) lub bezpłatnego [hostingu Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
-- Posiadanie edytora tekstu (notatnik, TextEdit, Notepad++, itp.)
+- Posiadanie edytora tekstu (notebooka, TextEdit, Notepad++, itp.)
 - Instalacja klienta FTP (takiego jak [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) do pobrania (umieszczenie na hostingu) plików z serwera dedykowanego.
 
 ## Wprowadzenie
@@ -157,7 +157,7 @@ W HTML możesz używać list. Weźmiemy przykład prostych list, tzw. nieuporzą
     <h1>Witamy na mojej stronie osobistej</h1>
     <h2>Szybkie i proste tworzenie strony WWW</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud oferuje hosting Start 10M dla każdej zarejestrowanej domeny.</p>
     <p>Oferta "Domena" zawiera:</p>
@@ -211,7 +211,7 @@ Teraz utworzymy nowy punkt, w którym umieścimy obraz (w tym przykładzie nie o
     <h1>Witamy na mojej stronie osobistej</h1>
     <h2>Szybkie i proste tworzenie strony WWW</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud oferuje hosting Start 10M dla każdej zarejestrowanej domeny.</p>
     <p>Oferta "Domena" zawiera:</p>
@@ -330,7 +330,7 @@ Kod HTML pojawi się w następującej strukturze:
     </head>
     <body>
         <header>
-                <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+                <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
         </header>
         <main>
             <h1>Witamy na mojej stronie osobistej</h1>
@@ -358,7 +358,7 @@ Linki umożliwiające poruszanie się między stronami są istotnymi elementami 
 ```html
 <header> 
     <a href="index.html">
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </a>
 </header>
 ```
@@ -402,7 +402,7 @@ Oszczędzaj czas na wyglądzie Twojej strony WWW i skup się na zawartości, a t
 
 Szablon to *szablon* lub przykład, który można użyć ponownie, dopasowując lub nie. Korzystanie z *szablonów* pozwala zaoszczędzić czas na budowie obiektu, dostosowując elementy już zaprojektowane, zapewniając jednocześnie właściwości, których można wymagać od "profesjonalnej" strony internetowej. Można również użyć słowa "temat".
 
-W Internecie dostępne są bezpłatne rozwiązania "Open Source", takie jak [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) czy [Semantic UI](https://semantic-ui.com/). Narzędzia te określane są jako "framework": księgarnie ułatwiające tworzenie stron WWW lub aplikacji internetowych. Oferują one standardowe, spersonalizowane i nadające się do ponownego użycia elementy oraz *szablony* wielokrotnego użytku.
+W Internecie dostępne są bezpłatne rozwiązania "Open Source", takie jak [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) czy [Semantic UI](https://semantic-ui.com/). Narzędzia te określane są jako "framework": księgarnie ułatwiające tworzenie stron WWW lub aplikacji internetowych. Oferują one standardowe, spersonalizowane i nadające się do ponownego użycia elementy oraz *szablony* wielokrotnego użytku.
 
 #### Bootstrap
 

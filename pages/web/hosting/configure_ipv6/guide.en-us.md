@@ -35,7 +35,7 @@ Our Web Hosting plans have been IPv6 compatible since 2011 but enabling this pro
 > [!warning]
 >This guide is designed to assist you in common tasks as much as possible. Please remember to adapt these actions to fit your situation.
 >
-If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on [https://community.ovh.com/en/](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
 >
 
 If your website is not configured for IPv6, you can do this by adding the information in your domain name’s DNS zone. This allows web browsers to find an IPv6 address when they request the location of your website via the domain name.

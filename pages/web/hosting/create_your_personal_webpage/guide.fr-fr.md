@@ -2,7 +2,7 @@
 title: 'Tutoriel - Créer sa page web personnelle chez OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Apprenez à créer votre première page web sur un hébergement gratuit Start 10M'
-section: 'Tutoriels'
+section: "Tutoriels"
 order: 01
 ---
 
@@ -153,7 +153,7 @@ Vous pouvez, en HTML, utiliser des listes. Nous prendrons l'exemple de listes si
     <h1>Bienvenue sur ma page personnelle</h1>
     <h2>Créez rapidement et facilement votre site web</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud vous propose, sur son offre Start 10M, gratuitement, un hébergement pour tout achat d'un nom de domaine.</p>
     <p>L'offre "Nom de domaine" comprend :</p>
@@ -207,7 +207,7 @@ Nous allons maintenant créer un nouveau paragraphe dans lequel nous placerons l
     <h1>Bienvenue sur ma page personnelle</h1>
     <h2>Créez rapidement et facilement votre site web</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud vous propose, sur son offre Start 10M, gratuitement, un hébergement pour tout achat d'un nom de domaine.</p>
     <p>L'offre "Nom de domaine" comprend :</p>
@@ -326,7 +326,7 @@ Votre code HTML se présentera selon la structure suivante :
     </head>
     <body>
         <header>
-                <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+                <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
         </header>
         <main>
             <h1>Bienvenue sur ma page personnelle</h1>
@@ -354,7 +354,7 @@ Les liens permettant de naviguer d'une page à l'autre sur un site sont des él�
 ```html
 <header> 
     <a href="index.html">
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </a>
 </header>
 ```
@@ -398,7 +398,7 @@ Pour gagner du temps sur l'apparence de votre site et vous permettre de vous con
 
 Un *template* est un modèle ou un exemple que l'on peut réutiliser, en l'adaptant ou non. Le recours aux *templates* permet de gagner du temps sur la conception d'un site en adaptant des éléments déjà conçus, tout en offrant les qualités que l'on peut exiger d'un site « professionnel ». Le mot « thème » peut également être utilisé.
 
-Il existe des solutions « Open Source » gratuites disponibles sur Internet, comme [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) ou encore [Semantic UI](https://semantic-ui.com/). Ces outils sont désignés sous l'appellation « framework » : il s'agit de librairies facilitant la création de sites ou d'applications web. Ils proposent des éléments standardisés, personnalisables et réutilisables et toute la communauté proposes des *templates* réutilisables.
+Il existe des solutions « Open Source » gratuites disponibles sur Internet, comme [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) ou encore [Semantic UI](https://semantic-ui.com/). Ces outils sont désignés sous l'appellation « framework » : il s'agit de librairies facilitant la création de sites ou d'applications web. Ils proposent des éléments standardisés, personnalisables et réutilisables et toute la communauté proposes des *templates* réutilisables.
 
 #### Bootstrap
 

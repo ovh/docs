@@ -7,7 +7,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/dedicated/pfSense-bridging/'
 ---
 
-**Last updated 12th October 2020**
+**Last updated 20th December 2022**
 
 ## Objective
 
@@ -46,11 +46,11 @@ For the pfSense virtual machines network configuration, we will use the followin
 
 In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu. 
 
-The “Service” drop-down menu allows you to filter for Additional IPs. 
+Click the `Additional IP`{.action} tab.
 
 ![Add a virtual MAC (1)](images/manageIPs.png){.thumbnail} 
 
-Next, locate your Additional IP address in the table and click on the three dots to open the `Context`{.action} menu. Select `Add a virtual MAC`{.action}.
+Next, locate your Additional IP address in the table and click the `...`{.action} button to open the menu. Select `Add a virtual MAC`{.action}.
 
 ![Add a virtual MAC (1)](images/addvmac.png){.thumbnail}
 
@@ -100,6 +100,8 @@ Now we’re going to start creating the pfSense virtual machine,
 - If your CPU has the AES instruction set, this should be enabled
 
 ![New vm 1](images/pfsense-vm-1.png){.thumbnail}
+
+If your CPU has the AES instruction set, it must be enabled (from the `CPU`{.action} tab)
 
 ![New vm 2](images/pfsense-vm-2.png){.thumbnail}
 

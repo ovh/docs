@@ -2,7 +2,7 @@
 title: 'Tutorial - Crear una página web personal en OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Cómo crear su primera página web en un alojamiento web gratuito Start 10M'
-section: 'Tutoriales'
+section: "Tutoriales"
 order: 01
 ---
 
@@ -157,7 +157,7 @@ En HTML puede utilizar listas. Tomaremos el ejemplo de listas simples, llamadas 
     <h1>Bienvenido a mi página personal</h1>
     <h2>Cree rápida y fácilmente su sitio web</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud le propone, en su producto Start 10M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
     <p>La oferta "Dominio" incluye:</p>
@@ -211,7 +211,7 @@ Ahora vamos a crear un nuevo párrafo en el que colocar la imagen (en este ejemp
     <h1>Bienvenido a mi página personal</h1>
     <h2>Cree rápida y fácilmente su sitio web</h2>
     <p>
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
     <p>OVHcloud le propone, en su producto Start 10M, gratuitamente un alojamiento para toda compra de un nombre de dominio.</p>
     <p>La oferta "Dominio" incluye:</p>
@@ -330,7 +330,7 @@ El código HTML se mostrará del siguiente modo:
     </head>
     <body>
         <header>
-                <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+                <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
         </header>
         <main>
             <h1>Bienvenido a mi página personal</h1>
@@ -358,7 +358,7 @@ Los enlaces que permiten navegar de una página a otra en un sitio web son eleme
 ```html
 <header> 
     <a href="index.html">
-        <img src="images/logo-ovhcloud.png" alt="Log OVHcloud">
+        <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </a>
 </header>
 ```
@@ -402,7 +402,7 @@ Para ganar tiempo en la apariencia de su sitio web y permitirle concentrarse en 
 
 Una *plantilla* es un modelo o ejemplo que se puede reutilizar, adaptándolo o no. El recurso a las *plantillas* permite ganar tiempo en el diseño de un sitio adaptando elementos ya diseñados, al tiempo que ofrecen las cualidades que se pueden exigir de un sitio "profesional". También puede utilizarse la palabra "tema".
 
-Existen soluciones "open source" gratuitas disponibles en Internet, como [Bootstrap](https://materializecss.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) o [Semantic UI](https://semantic-ui.com/). Estas herramientas se denominan "framework": se trata de librerías que facilitan la creación de sitios o aplicaciones web. Ofrecen elementos estandarizados, personalizables y reutilizables y toda la comunidad propone *templates* reutilizables.
+Existen soluciones "open source" gratuitas disponibles en Internet, como [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Foundation](https://get.foundation/) o [Semantic UI](https://semantic-ui.com/). Estas herramientas se denominan "framework": se trata de librerías que facilitan la creación de sitios o aplicaciones web. Ofrecen elementos estandarizados, personalizables y reutilizables y toda la comunidad propone *templates* reutilizables.
 
 #### Bootstrap
 

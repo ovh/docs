@@ -1,8 +1,8 @@
 ---
-title: "Tutorial - Domainnamen einer Website ändern"
+title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
 slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
-section: "Anwendungsbeispiele"
+section: "Tutorials"
 order: 02
 ---
 
