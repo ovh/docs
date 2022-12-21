@@ -35,7 +35,9 @@ order: 04
 
 When your operating system is in trial mode, a default product key is installed. To modify it, open the `Run`{.action} dialogue box by pressing the Windows key on your keyboard + `R`{.action}.
 
-![Run](images/executer2.png){.thumbnail}
+![Activate execute tools](images/01run-01.png){.thumbnail}
+
+![Run](images/01run-02.png){.thumbnail}
 
 In this box, enter the following command:
 
@@ -88,11 +90,6 @@ To associate your key with our automated activation system, enter the command be
 ```bash
 cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 ```
-
-> [!primary]
->
-> If you are using a VPS or Public Cloud instance, you will need to use `kms.cloud.ovh.net`.
->
 
 ### Activate the system
 

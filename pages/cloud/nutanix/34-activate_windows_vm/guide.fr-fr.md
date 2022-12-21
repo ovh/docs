@@ -34,10 +34,10 @@ order: 04
 
 Lorsque votre système est en version d'essai, une clé par défaut est enregistrée. Pour la modifier, ouvrez l'utilitaire `Exécuter`{.action} (touche de logo Windows + `R`{.action}) :
 
-![Activation de l'utilitaire Exécuter](images/executer.png){.thumbnail}
+![Activation de l'utilitaire Exécuter](images/01run-01.png){.thumbnail}
 
 
-![Exécuter](images/executer2.png){.thumbnail}
+![Exécuter](images/01-run-02.png){.thumbnail}
 
 Dans cet utilitaire, renseignez la commande suivante :
 
