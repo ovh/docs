@@ -1,7 +1,7 @@
 ---
-title: Tutoriel - Comment réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess ?
+title: "Tutoriel - Réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess"
 slug: htaccess-reecriture-url-mod-rewrite
-excerpt: Découvrez comment réécrire l'URL d'accès à votre site grâce au mod_rewrite via le fichier .htaccess
+excerpt: "Découvrez comment réécrire l'URL d'accès à votre site grâce au mod_rewrite via le fichier .htaccess"
 section: Réécriture et authentification
 order: 03
 ---
@@ -12,13 +12,13 @@ order: 03
 
 Le « **mod_rewrite** » est l'un des modules disponibles sur le serveur Web HTTP **Apache**. **Apache** est installé sur l'ensemble de notre infrastructure d'hébergements mutualisés. Ce serveur web permet de gérer l'ensemble des requêtes HTTP émises vers votre hébergement web.
 
-Par **exemple**, c'est Apache qui récupère les requêtes HTTP générées par les navigateurs Internet des visiteurs de votre site et qui leur retourne le contenu demandé par ces mêmes requêtes. Les navigateurs Internet affichent ensuite le contenu de votre site web à votre visiteur.
+Par exemple, c'est Apache qui récupère les requêtes HTTP générées par les navigateurs Internet des visiteurs de votre site et qui leur retourne le contenu demandé par ces mêmes requêtes. Les navigateurs Internet affichent ensuite le contenu de votre site web à votre visiteur.
 
 Le « **mod_rewrite** » permet par exemple de réécrire et rediriger :
 
-- Un visiteur qui saisit votre URL en « HTTP » directement vers l'URL de votre site web en « HTTPS ».
-- L'ensemble des URLs utilisées pour votre site web vers un dossier ou un fichier spécifique.
-- Un visiteur qui saisit votre URL sans « www » directement vers l'URL de votre site web avec les « www ».
+- un visiteur qui saisit votre URL en « HTTP » directement vers l'URL de votre site web en « HTTPS » ;
+- l'ensemble des URLs utilisées pour votre site web vers un dossier ou un fichier spécifique ;
+- un visiteur qui saisit votre URL sans « www » directement vers l'URL de votre site web avec les « www ».
 
 Le « **mod_rewrite** » offre une infinité de possibilités. Nous allons vous présenter ci-après quelques exemples d'utilisation parmi les plus courants.
 
@@ -44,7 +44,7 @@ Le « **mod_rewrite** » offre une infinité de possibilités. Nous allons vous 
 > Les exemples qui vont suivre sont à mettre en place dans un fichier « .htaccess ». Attention, les règles que vous définissez dans ce fichier ont des conséquences directes sur votre site web. Vérifiez systématiquement les règles que vous ajoutez avant de les appliquer à votre site web.
 >
 
-Le fichier « .htaccess » , dans lequel vous allez configurer le « **mod_rewrite** » d'Apache, peut être placé dans plusieurs dossiers différents. Vous devez uniquement respectez la règle d'un **seul** fichier « .htaccess » par dossier ou sous-dossier.
+Le fichier « .htaccess » dans lequel vous allez configurer le « **mod_rewrite** » d'Apache peut être placé dans plusieurs dossiers différents. Vous devez uniquement respecter la règle d'un **seul** fichier « .htaccess » par dossier ou sous-dossier.
 
 Les paramètres définis dans un fichier « .htaccess » s'appliquent au répertoire où il est présent ainsi qu'à tous ses sous-répertoires.
 
@@ -65,14 +65,14 @@ Dans notre exemple, toutes les requêtes effectuées vers votre site web sont re
 
 ### Rediriger une partie des requêtes HTTP vers un seul fichier de votre site web
 
-Éditez le fichier « .htaccess » présent à la racine du répertoire contenant votre site web. Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple les valeurs **thetest** et **/test_wslash/test.php** par les nom de vos propres fichiers):
+Éditez le fichier « .htaccess » présent à la racine du répertoire contenant votre site web. Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple les valeurs **thetest** et **/test_wslash/test.php** par les noms de vos propres fichiers):
 
 ```bash
 RewriteEngine On
 RewriteRule thetest /test_wslash/test.php
 ```
 
-Dans notre exemple, toutes les requêtes HTTP qui contiennent  **/thetest**  sont redirigées vers le fichier  **/test_wslash/test.php** .
+Dans notre exemple, toutes les requêtes HTTP qui contiennent  **/thetest**  sont redirigées vers le fichier  **/test_wslash/test.php**.
 
 ### Rediriger votre nom de domaine vers son sous-domaine en « www »
 
@@ -127,7 +127,7 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.domain.tld/$1 [R,L]
 ```
 
-Dans notre exemple, toutes les requêtes effectuées avec une URL en « **http://** » seront automatiquement réécrites en « **https://** ». Les visiteurs seront aussi redirigés vers votre site en « **https://** ».
+Dans notre exemple, toutes les requêtes effectuées avec une URL en « **http://** » seront automatiquement réécrites en « **https://** ». Les visiteurs seront ainsi redirigés vers votre site en « **https://** ».
 
 ## Aller plus loin <a name="go-further"></a>
 
