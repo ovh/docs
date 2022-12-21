@@ -31,7 +31,7 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 > - En el caso del hosting gratuito Start 10M, es necesario activar previamente el alojamiento para poder crear una dirección de correo. Puede realizar esta operación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), accediendo al dominio correspondiente.
 > - Si tiene un [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/), deberá activar su solución MX Plan incluida antes de continuar la lectura de esta guía. Para ello, consulte nuestra guía [Activar las direcciones de correo incluidas en su alojamiento web](https://docs.ovh.com/es/hosting/activar-correo-hosting-web/).
 
-## En la práctica <a name="instructions"></a>
+## Procedimiento  <a name="instructions"></a>
 
 La gestión del espacio de almacenamiento de su cuenta de correo se dividirá en 3 pasos en esta guía. Se pueden realizar en el orden o de forma independiente, según lo necesite.
 

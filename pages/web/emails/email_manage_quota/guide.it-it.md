@@ -31,7 +31,7 @@ Ogni account email OVHcloud dispone di uno spazio di storage dedicato. Gestire c
 > - Se disponi di un hosting Start 10M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), selezionando il dominio interessato.
 > - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/). Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](https://docs.ovh.com/it/hosting/attivare-email-hosting-web/).
 
-## In pratica <a name="instructions"></a>
+## Procedura <a name="instructions"></a>
 
 La gestione dello spazio di storage del tuo account email sarà suddivisa in 3 step in questa guida. Possono essere eseguite nell'ordine o in modo indipendente, secondo le vostre necessità.
 

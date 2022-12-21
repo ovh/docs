@@ -31,18 +31,4 @@ Chaque compte e-mail OVHcloud dispose d'un espace de stockage dédié. Bien gér
 
 ## En pratique <a name="instructions"></a>
 
-La gestion de l'espace de stockage de votre compte e-mail sera décomposée en 3 étapes dans ce guide. Elles peuvent être réalisées dans l'ordre ou indépendamment, selon votre besoin.
-
-- [**Vérifier**](#check-quota) le quota actuel de vote compte e-mail. Cette étape vous permettra d'évaluer votre consommation actuelle, en vue des 2 étapes suivantes.
-- [**Optimiser**](#optimise) votre compte e-mail. Cette étape vous donne des astuces qui vous permettront de maintenir un espace de stockage sans éléments superflus.
-- [**Archiver** ou **Changer d'offre e-mail**](#archiveorswitch). Si l'étape précédente ne suffit pas, vous trouverez les informations nécessaires pour configurer un espace d'archivage local (sur votre ordinateur) pour vos e-mails via votre logiciel de messagerie. Vous trouverez également les informations nécessaires pour modifier l'offre e-mail de votre compte au profit d'une offre disposant d'un espace de stockage plus important.
-
-![email](images/email-quota-intro.gif){.thumbnail}
-
-### 1- **Vérifier** le quota actuel de votre compte email <a name="check-quota"></a>
-
-Vous pouvez réaliser cette action depuis l'espace client si vous avez la gestion du service e-mail concerné, ou depuis le webmail si vous êtes uniquement l'utilisateur du compte e-mail.
-
-#### Depuis l'espace client <a name="quotacontrolpanel"></a>
-
 Suivez notre guide [Gérer l'espace de stockage d'un compte e-mail](https://docs.ovh.com/fr/emails/manage-email-quota/) dans la rubrique « E-mails mutualisés - MX Plan ».

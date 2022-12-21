@@ -20,7 +20,7 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), and `Web Cloud`{.action} section ;
 - access to the email addresses concerned.
 
-## In practice <a name="instructions"></a>
+## Instructions  <a name="instructions"></a>
 
 The storage space management for your email account will be broken down into 3 steps in this guide. They can be done in order or independently, depending on your need.
 

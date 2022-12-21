@@ -26,7 +26,7 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 
 
 
-## En la práctica <a name="instructions"></a>
+## Procedimiento  <a name="instructions"></a>
 
 La gestión del espacio de almacenamiento de su cuenta de correo se dividirá en 3 pasos en esta guía. Se pueden realizar en el orden o de forma independiente, según lo necesite.
 
