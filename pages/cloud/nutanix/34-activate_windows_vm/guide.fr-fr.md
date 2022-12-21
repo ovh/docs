@@ -17,7 +17,7 @@ order: 04
 > [!warning]
 > Ce tutoriel vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
 >
-> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un prestataire spécialisé. Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce tutoriel.
+> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/). Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce tutoriel.
 >
 
 ## Prérequis

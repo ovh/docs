@@ -2,7 +2,7 @@
 title: 'Activate Windows VMs installed on Nutanix by OVHcloud'
 slug: activate-ovhcloud-windows-licence
 routes:
-    canonical: 'https://docs.ovh.com/ca/en/dedicated/windows-key/'
+    canonical: 'https://docs.ovh.com/gb/en/dedicated/windows-key/'
 excerpt: 'Find out how to activate a Windows Server virtual machine installed on a Nutanix by OVHcloud solution with an OVHcloud SPLA licence'
 section: Advanced use
 order: 04
@@ -17,7 +17,7 @@ order: 04
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
 >
-> If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
+> If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
 >
 
 ## Requirements
@@ -26,7 +26,7 @@ order: 04
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - You must be connected to the cluster via Prism Central
 - A Windows licence provided by OVHcloud
-- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](https://docs.ovh.com/en/gb/nutanix/virtual-machine-management/)
+- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](https://docs.ovh.com/en/ca/nutanix/virtual-machine-management/)
 - The virtual machine connects to the Internet through the rtVrack (e.g. via the default gateway)
 
 ## Instructions

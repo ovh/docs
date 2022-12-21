@@ -2,7 +2,7 @@
 title: 'Activer des VM Windows installées sur Nutanix by OVHcloud'
 slug: activate-ovhcloud-windows-licence
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/dedicated/windows-key/'
+    canonical: 'https://docs.ovh.com/fr/dedicated/windows-key/'
 excerpt: "Découvrez comment activer une VM Windows Server installée dans Nutanix by OVHcloud avec une licence OVHcloud"
 section: "Utilisation avancée"
 order: 04
@@ -17,7 +17,7 @@ order: 04
 > [!warning]
 > Ce tutoriel vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
 >
-> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un prestataire spécialisé. Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce tutoriel.
+> Si vous éprouvez des difficultés à appliquer ces instructions, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/). Pour plus d'informations, consultez la section [Aller plus loin](#gofurther) de ce tutoriel.
 >
 
 ## Prérequis
