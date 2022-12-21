@@ -1,9 +1,9 @@
 ---
-title: 'Activate Windows Server virtual machines installed in Nutanix by OVHcloud with OVHcloud SPLA licences'
+title: 'Activate Windows Server virtual machines installed on a Nutanix by OVHcloud solution with OVHcloud SPLA licences'
 slug: activate-ovhcloud-windows-licence
 routes:
     canonical: https://docs.ovh.com/gb/en/dedicated/windows-key/
-excerpt: 'Find out how to activate a Windows Server virtual machine installed in Nutanix by OVHcloud with an OVHcloud SPLA licence'
+excerpt: 'Find out how to activate a Windows Server virtual machine installed on a Nutanix by OVHcloud solution with an OVHcloud SPLA licence'
 section: Advanced use
 order: 04
 ---
@@ -12,7 +12,7 @@ order: 04
 
 ## Objective
 
-**This tutorial provides some basic information on creating virtual machines within Hyper-V on a Windows Server licensed with OVHcloud.**
+**This tutorial describes how to activate Windows licences provided by OVHcloud on a Nutanix by OVHcloud solution.**
 
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
@@ -26,7 +26,7 @@ order: 04
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - You must be connected to the cluster via Prism Central
 - A Windows licence provided by OVHcloud
-- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows [Virtual Machine Management](https://docs.ovh.com/en/gb/nutanix/virtual-machine-management/)
+- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](https://docs.ovh.com/en/gb/nutanix/virtual-machine-management/)
 - The virtual machine connects to the Internet through the rtVrack (e.g. via the default gateway)
 
 ## Instructions
@@ -74,13 +74,12 @@ Below is a list of the product keys available for each operating system:
 |Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
 |Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
-Source: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
+Source: [Microsoft - Key Management Services (KMS) client activation and product keys](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
 > [!primary]
 >
 > Core versions use the same product keys as non-core versions.
-> 
-
+>
 
 ### Associate your product key
 
@@ -93,7 +92,7 @@ cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 > [!primary]
 >
 > If you are using a VPS or Public Cloud instance, you will need to use `kms.cloud.ovh.net`.
-> 
+>
 
 ### Activate the system
 
@@ -102,7 +101,6 @@ Lastly, to activate your Windows operating system, simply enter the command belo
 ```bash
 cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
-
 
 ## Go further
 

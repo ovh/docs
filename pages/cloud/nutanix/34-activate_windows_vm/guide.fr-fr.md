@@ -12,7 +12,7 @@ order: 04
 
 ## Objectif
 
-**Ce tutoriel décrit la procédure pour activer des licences Windows fournies par OVHcloud dans une solution Nutanix by OVHcloud**
+**Ce tutoriel décrit la procédure pour activer des licences Windows fournies par OVHcloud dans une solution Nutanix by OVHcloud.**
 
 > [!warning]
 > Ce tutoriel vous explique comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes et décrit les actions à effectuer dans un contexte spécifique. Vous devrez peut-être adapter les instructions en fonction de votre situation.
@@ -25,8 +25,8 @@ order: 04
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Une licence Windows fournie par OVHcloud.
-- Une machine virtuelle sous Windows Server. Vous pouvez vous aider de ce guide pour installer une machine virtuelle sous Windows [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/).
-- Que la machine virtuelle se connecte à Internet au travers du rtVrack (Par exemple via la passerelle par défaut).
+- Une machine virtuelle sous Windows Server. Vous pouvez vous aider de ce guide pour installer une machine virtuelle sous Windows : [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/).
+- La machine virtuelle se connecte à Internet au travers du rtVrack (par exemple via la passerelle par défaut).
 
 ## En pratique
 
@@ -47,7 +47,8 @@ cscript.exe c:\windows\system32\slmgr.vbs -upk
 
 ### Ajouter la nouvelle clé
 
-Vous pouvez désormais ajouter la nouvelle clé. Pour cela, retournez à nouveau dans l'utilitaire `Exécuter`{.action} et renseignez la commande suivante :
+Vous pouvez désormais ajouter la nouvelle clé. Pour cela, retournez dans l'utilitaire `Exécuter`{.action} et renseignez la commande suivante :
+
 ```bash
 cscript.exe c:\windows\system32\slmgr.vbs -ipk CLEF KMS
 ```
@@ -75,7 +76,7 @@ Voici la liste des clés KMS disponibles pour chaque système d'exploitation :
 |Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
 |Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
-Source : [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
+Source : [Microsoft - Key Management Services (KMS) client activation and product keys](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
 > [!primary]
 >
@@ -97,7 +98,8 @@ cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 > 
 
 ### Activer le système
-Enfin, pour activer votre système Windows, il vous reste désormais à effectuer la commande ci-dessous :
+
+Enfin, pour activer votre système Windows, il vous reste désormais à exxécuter la commande ci-dessous :
 
 ```bash
 cscript.exe c:\windows\system32\slmgr.vbs -ato
