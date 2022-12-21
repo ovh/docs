@@ -35,9 +35,9 @@ order: 04
 
 When your operating system is in trial mode, a default product key is installed. To modify it, open the `Run`{.action} dialogue box by pressing the Windows key on your keyboard + `R`{.action}.
 
-![Activate execute tools](images/01run-01.png){.thumbnail}
+![Activate run tools](images/01-run01.png){.thumbnail}
 
-![Run](images/01run-02.png){.thumbnail}
+![Run](images/01-run02.png){.thumbnail}
 
 In this box, enter the following command:
 
