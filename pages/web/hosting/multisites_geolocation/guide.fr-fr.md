@@ -1,7 +1,7 @@
 ---
 title: Geolocaliser votre site web dans un pays spécifique
 slug: geolocaliser-site
-excerpt: Découvrez comment géolocaliser votre site web à l'aide de nos adresses IP géolocalisées
+excerpt: "Découvrez comment géolocaliser votre site web à l'aide de nos adresses IP géolocalisées"
 section: Optimiser son site
 order: 05
 ---
@@ -10,7 +10,7 @@ order: 05
  
 ## Objectif
 
-Les moteurs de recherche (Google, bing, yahoo, ...) utilisent des robots d'indexation et de référencement sur l'ensemble des sites web. Ils référencent davantage les sites géolocalisés dans le pays depuis lequel vous effectuez votre recherche.
+Les moteurs de recherche (Google, Bing, Yahoo, ...) utilisent des robots d'indexation et de référencement sur l'ensemble des sites web. Ils référencent en priorité les sites géolocalisés dans le pays depuis lequel vous effectuez votre recherche.
 
 **Exemple**: Si vous lancez une recherche via un moteur de recherche et que vous vous situez en Angleterre, les sites web géolocalisés en Angleterre s'afficheront plus haut dans les résultats de recherche que les autres sites web.
 
@@ -30,7 +30,10 @@ L'option de géolocalisation sur votre hébergement peut être utile pour le ré
 
 Pour les sites web principalement consultés à l'étranger et hébergés sur notre infrastructure d'hébergements mutualisés OVHcloud, nous proposons une option de géolocalisation par adresse IP. Elle permet de mieux référencer les sites web dans le pays où se situe l'adresse IP choisie avec l'option.
 
-Pour utiliser l'option de géolocalisation par IP, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Multisites`{.action}, sur le bouton `...`{.action} situés à droite de votre nom de domaine dans le tableau puis sur `Modifier le domaine`{.action}.
+Pour utiliser l'option de géolocalisation par IP, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+
+Une fois connecté, rendez-vous dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} puis choisissez l'hébergement concerné dans la liste.<br>
+Cliquez ensuite sur l'onglet `Multisite`{.action} puis sur le bouton `...`{.action} situé à droite de votre nom de domaine dans le tableau. Enfin, cliquez sur `Modifier le domaine`{.action}.
 
 ![hosting multisites](images/hosting_multisites.png){.thumbnail}
 
@@ -38,7 +41,7 @@ Dans la nouvelle fenêtre qui s'affiche, cochez la case `IP du pays`{.action} po
 
 ![geolocation option](images/geolocation_option.png){.thumbnail}
 
-Choisissez l'adresse IP du pays pour lequel vous souhaitez géolocaliser votre site parmi les 12 pays proposés : *la République Tchèque, la Finlande, la France, Allemagne, Irlande, Italie, Littuanie, Pays-bas, la Pologne, le Portugal, l'Espagne et les Royaumes-Unis*.
+Choisissez l'adresse IP du pays pour lequel vous souhaitez géolocaliser votre site, parmi les 12 pays proposés : *République Tchèque, Finlande, France, Allemagne, Irlande, Italie, Littuanie, Pays-bas, Pologne, Portugal, Espagne, Royaumes-Uni*.
 
 Cliquez sur `Suivant`{.action} puis sur `Valider`{.action} depuis la fenêtre récapitulative.
 
@@ -48,7 +51,7 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action} depuis la fenêtre r�
 >
 > Dans le cas contraire, vous devrez effectuer la modification manuellement auprès du fournisseur qui gère la zone DNS active de votre nom de domaine. Retrouvez [ici](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/) la documentation qui recense toutes les adresses IP de notre infrastructure d'hébergements mutualisés OVHcloud.
 >
-> Dans tous les cas, un délai de propagation de **4 à 24 heures** sera nécessaire après la modification pour que celle-ci soit pleinement effective et visible sur Internet.
+> Dans tous les cas, un délai de propagation de **4 à 24 heures** après la modification sera nécessaire pour que celle-ci soit pleinement effective et visible sur Internet.
 >
 
 ## Aller plus loin
