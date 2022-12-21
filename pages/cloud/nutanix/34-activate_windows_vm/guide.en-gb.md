@@ -1,11 +1,12 @@
 ---
-title: 'Activating Windows Machines using Hyper-V on an OVHcloud licensed Windows Server'
+title: 'Activate Windows Virtual Machines under an OVHcloud licence in a Nutanix solution by OVHcloud'
+slug: activate-ovhcloud-windows-licence
 excerpt: 'Find out how to create and activate a VM using Hyper-V on a Windows Server licensed by OVHcloud'
-slug: activate-windows-vm-hyperv
-section: 'Tutorial'
+section: Advanced use
+order: 04
 ---
 
-**Last updated 6th January 2022**
+**Last updated 21th December 2022**
 
 ## Objective
 
@@ -19,162 +20,87 @@ section: 'Tutorial'
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external} with Windows Server installed.
-- The Hyper-V role installed
-- A Windows License provided by OVHcloud
+- A Nutanix cluster in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- You must be connected to the cluster via Prism Central
+- A Windows licence provided by OVHcloud
+- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows [Virtual Machine Management](https://docs.ovh.com/en/gb/nutanix/virtual-machine-management/)
+- The virtual machine connects to the Internet through the rtVrack (e.g. via the default gateway)
 
 ## Instructions
 
-This tutorial assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}
+### Uninstall the default product key
 
+When your operating system is in trial mode, a default product key is installed. To modify it, open the `Run`{.action} dialogue box by pressing the Windows key on your keyboard + `R`{.action}.
 
-### Creating a NAT Network
+![Run](images/executer2.png){.thumbnail}
 
-First of all, Windows Server will request the activation of the guest OS through NAT (unless you had a SPLA license to be attached with a specific KMS). Open up a PowerShell session as an administrator. We will create it with the following command:
+In this box, enter the following command:
 
-```sh
-PS C:\Windows\system32> New-VMSwitch -SwitchName "NAT" -SwitchType Internal
-Name SwitchType NetAdapterInterfaceDescription
----- ---------- ------------------------------
-NAT Internal
+```bash
+cscript.exe c:\windows\system32\slmgr.vbs -upk
 ```
 
-After that, confirm the adaptor has been successfully created with:
+### Install the new product key
 
-```sh
-PS C:\Windows\system32> Get-VMSwitch
+You can now install the new product key. To do so, go back to the `Run`{.action} box, and enter the following command:
 
-Name SwitchType NetAdapterInterfaceDescription
----- ---------- ------------------------------
-Intel(R) Ethernet Controller X550 - Virtual Switch External Intel(R) Ethernet Controller X550
-Intel(R) Ethernet Controller X550 #2 - Virtual Switch External Intel(R) Ethernet Controller X550 #2
-NAT Internal
+```bash
+cscript.exe c:\windows\system32\slmgr.vbs -ipk PRODUCT KEY
 ```
 
-We see that the "NAT" Virtual Switch has been created successfully. Once it's been created, we will need to confirm the InterfaceIndex
-or "interface ID" for the following step like this:
+Below is a list of the product keys available for each operating system:
 
-```sh
-PS C:\Windows\system32> Get-NetAdapter
-Name                     InterfaceDescription                  ifIndex Status
-MacAddress             LinkSpeed
-----                     --------------------                  ------- ------
-----------             ---------
-vEthernet(Intel(R) Et... Hyper-V Virtual Ethernet Adapter #2       9      Up 
-D0-50-99-D7-2C-89      10 Gbps
-Ethernet                 Intel(R) Ethernet Controller X550         7      Up 
-D0-50-99-D7-2C-8A      10 Gbps
-Ethernet 2               Intel(R) Ethernet Controller X550 #2      5      Up 
-D0-50-99-D7-2C-89      10 Gbps
-vEthernet (NAT)          Hyper-V Virtual Ethernet Adapter #3      24      Up 
-00-15-5D-17-DD-04      10 Gbps
-vEthernet(Intel(R) Et... Hyper-V Virtual Ethernet Adapter         12      Up 
-D0-50-99-D7-2C-8A      10 Gbps
-```
+|Operating system|Product key|
+|---|---|
+|Windows Server 2008 Standard|TM24T-X9RMF-VWXK6-X8JC9-BFGM2|
+|Windows Server 2008 Enterprise|YQGMW-MPWTJ-34KDK-48M3W-X4Q6V|
+|Windows Server 2008 Datacenter|7M67G-PC374-GR742-YH8V4-TCBY3|
+|Windows Server 2008 R2 Standard|YC6KT-GKW9T-YTKYR-T4X34-R7VHC|
+|Windows Server 2008 R2 Enterprise|489J6-VHDMP-X63PK-3K798-CPX3Y|
+|Windows Server 2008 R2 Datacenter|74YFP-3QFB3-KQT8W-PMXWJ-7M648|
+|Windows Server 2012 Standard|XC9B7-NBPP2-83J2H-RHMBY-92BT4|
+|Windows Server 2012 Datacenter|48HP8-DN98B-MYWDG-T2DCC-8W83P|
+|Windows Server 2012 R2 Standard|D2N9P-3P6X9-2R39C-7RTCD-MDVJX|
+|Windows Server 2012 R2 Datacenter|W3GGN-FT8W3-Y4M27-J84CP-Q3VJ9|
+|Windows 8.1 Professional|GCRJD-8NW9H-F2CDX-CCM8D-9D6T9|
+|Windows Server 2016 Datacenter|CB7KF-BWN84-R7R2Y-793K2-8XDDG|
+|Windows Server 2016 Standard|WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY|
+|Windows Server 2016 Essentials|JCKRF-N37P4-C2D82-9YXRT-4M63B|
+|Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
+|Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
+|Windows Server 2022 Standard|VDYBN-27WPP-V4HQT-9VMD4-VMK7H|
+|Windows Server 2022 Datacenter|WX4NM-KYWYW-QJJR4-XV3QB-6VM33|
 
-In our case, we see our "NAT" adapter ID is 24.
+Source: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
+
+> [!primary]
+>
+> Core versions use the same product keys as non-core versions.
+> 
 
 
-Next, Let's create a NAT network that will allow our VM to connect to the internet; we will be able to see the information of it once it's been executed:
+### Associate your product key
 
-```sh
-PS C:\Windows\system32> New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceIndex 24
-IPAddress : 192.168.0.1
-InterfaceIndex : 24
-InterfaceAlias : vEthernet (NAT)
-AddressFamily : IPv4
-Type : Unicast
-PrefixLength : 24
-PrefixOrigin : Manual
-SuffixOrigin : Manual
-AddressState : Tentative
-ValidLifetime : Infinite ([TimeSpan]::MaxValue)
-PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
-SkipAsSource : False
-PolicyStore : ActiveStore
+To associate your key with our automated activation system, enter the command below in the `Run`{.action} dialogue box:
 
-IPAddress : 192.168.0.1
-InterfaceIndex : 24
-InterfaceAlias : vEthernet (NAT)
-AddressFamily : IPv4
-Type : Unicast
-PrefixLength : 24
-PrefixOrigin : Manual
-SuffixOrigin : Manual
-AddressState : Invalid
-ValidLifetime : Infinite ([TimeSpan]::MaxValue)
-PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
-SkipAsSource : False
-PolicyStore : PersistentStore
+```bash
+cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net
 ```
 
 > [!primary]
+>
+> If you are using a VPS or Public Cloud instance, you will need to use `kms.cloud.ovh.net`.
 > 
-> Note: The IPAddress value will be the internal gateway IP for our VM to be configured; it will connect the WinNAT service inside the host to
-reach internet. The PrefixLength will be the netmask prefix of the IP given before, and lastly the InterfaceIndex will be the ID of the
-virtual switch created on the step before (in our case, its ID is 24).
->
 
-Lastly, let's create the network that will be used by our WinNAT service to reach the internet with the following command:
+### Activate the system
 
-```sh
-PS C:\Windows\system32> New-NetNat -Name MyNATnetwork -InternalIPInterfaceAddressPrefix 192.168.0.0/24
-Name : MyNATnetwork
-ExternalIPInterfaceAddressPrefix :
-InternalIPInterfaceAddressPrefix : 192.168.0.0/24
-IcmpQueryTimeout : 30
-TcpEstablishedConnectionTimeout : 1800
-TcpTransientConnectionTimeout : 120
-TcpFilteringBehavior : AddressDependentFiltering
-UdpFilteringBehavior : AddressDependentFiltering
-UdpIdleSessionTimeout : 120
-UdpInboundRefresh : False
-Store : Local
-Active : True
-```
+Lastly, to activate your Windows operating system, simply enter the command below:
 
-> [!primary]
-> 
-> The Name parameter will define the name of this network, as well as the InternalIPInterfaceAddressPrefix parameter will connect to the network desired; in our case, the network is the one created before:
->
-> - 192.168.0.0 is the network IP
-> - 192.168.0.1 is the gateway for your virtual machines
-> - 192.168.0.2 - 192.168.0.254 will be used as IPs for your virtual machines
->
-
-### Activating the VM
-
-At this point, the network will be correctly set for this validation. Create a new Windows Server 2019 Standard VM (We have used the evaluation ISO downloadable from the official Microsoft website). Once installed, configure your virtual machine with an IP of the range configured on the virtual switch (for example: 192.168.0.2/24):
-
-![VM Configuration](images/vm-conf.png){.thumbnail}
-
-Since the .ISO used has enabled the "Evaluation mode", we need to transfer this guest OS to the Standard version. Launch the following
-command on your CMD:
-
-```sh
-C:\Users\Administrator> DISM.exe /Online /Set-Edition:ServerStandard /ProductKey:N69G4-B89J2-4G8F4-WWYCCJ464C /AcceptEula
-```
-
-> [!primary]
-> 
-> This license (N69G4-B89J2-4G8F4-WWYCC-J464C) belongs to our current KMS validation license repository for Windows Server 2019 Standard. You can grab each of our current license keys from the following guide: [Changing a Windows Server product key](../windows-key)
->
-
-Reboot your VM, then do the following to set the KMS server and activate Windows.
-
-Setting the KMS server
-
-```sh
-cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net 
-```
-
-Activating Windows
-
-```sh
+```bash
 cscript.exe c:\windows\system32\slmgr.vbs -ato
 ```
 
-Your VM should now be activated.
 
 ## Go further
 
