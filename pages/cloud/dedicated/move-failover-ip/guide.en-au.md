@@ -6,7 +6,7 @@ section: Network Management
 order: 7
 ---
 
-**Last updated 24th November 2022**
+**Last updated 20th December 2022**
 
 > [!primary]
 >
@@ -61,16 +61,17 @@ With this technology, you can switch IP addresses from one solution to another i
 
 Log in to the [OVHcloud Control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}.
 
+Click the `Additional IP`{.action} tab.
 
-The "Service" drop-down menu allows you to filter for Additional IPs.
+![manage IPs](images/manageIPs2022.png){.thumbnail}
 
-Click on the `...`{.action} button to the right of the IP address you want to move, then `Move the Additional IP`{.action}.
+Next, click on the `...`{.action} button to the right of the IP address you want to move and select `Move Additional IP`{.action}.
 
-![move Additional](images/manager02.png){.thumbnail}
+![move Additional](images/moveadditionalIP.png){.thumbnail}
 
 In the pop-up window, select the service to move the IP address to from the menu.
 
-![move Additional](images/manager03.png){.thumbnail}
+![move Additional](images/moveadditionalIP2.png){.thumbnail}
 
 Click `Next`{.action}, then `Confirm`{.action}.
 
