@@ -63,8 +63,6 @@ Log in to the [OVHcloud Control](https://www.ovh.com/auth/?action=gotomanager&fr
 
 Click the `Additional IP`{.action} tab.
 
-![IP](images/manageIPs2022.png){.thumbnail}
-
 ![manage IPs](images/manageIPs2022.png){.thumbnail}
 
 Next, click on the `...`{.action} button to the right of the IP address you want to move and select `Move Additional IP`{.action}.
