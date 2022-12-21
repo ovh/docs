@@ -5,7 +5,7 @@ slug: kubernetes-plugins-software-versions-reserved-resources
 section: Technical resources
 ---
 
-**Last updated December 8<sup>th</sup>, 2022.**
+**Last updated December 21<sup>st</sup>, 2022.**
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
 
@@ -14,8 +14,8 @@ We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) &
 Currently, we support the following Kubernetes releases:
 
 * `1.20` (deprecated)
-* `1.21`
-* `1.22`
+* `1.21` (deprecated)
+* `1.22` (deprecated)
 * `1.23`
 * `1.24`
 * `1.25`
@@ -38,8 +38,8 @@ The OS and Docker demon version on your nodes will be regularly updated. Current
 Since `1.20`, we use `containerd` as the default CRI
 
 * `1.20`: 1.5.11 (deprecated)
-* `1.21`: 1.5.11
-* `1.22`: 1.5.11
+* `1.21`: 1.5.11 (deprecated)
+* `1.22`: 1.5.11 (deprecated)
 * `1.23`: 1.6.10
 * `1.24`: 1.6.10
 * `1.25`: 1.6.10
@@ -51,8 +51,8 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 The versions installed depends on the Kubernetes version:
 
 * `1.20`: calico v3.10.3, flannel v0.11.0 (deprecated)
-* `1.21`: calico v3.22.5, flannel v0.17.0
-* `1.22`: calico v3.22.5, flannel v0.17.0
+* `1.21`: calico v3.22.5, flannel v0.17.0 (deprecated)
+* `1.22`: calico v3.22.5, flannel v0.17.0 (deprecated)
 * `1.23`: calico v3.22.5, flannel v0.17.0
 * `1.24`: calico v3.23.5, flannel v0.17.0
 * `1.25`: calico v3.24.5, flannel v0.20.1
@@ -64,8 +64,8 @@ The CSI plugin installed is [cinder](https://github.com/kubernetes/cloud-provide
 The versions depend on the Kubernetes cluster version:
 
 * `1.20`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
-* `1.21`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
-* `1.22`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
+* `1.21`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
+* `1.22`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
 * `1.23`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
 * `1.24`: csi-plugin v1.21.0, csi-attacher v3.5.0, csi-provisioner v3.2.1, csi-snapshotter v6.0.1, snapshot-controller: v6.0.1, csi-resizer v1.5.0
 * `1.25`: csi-plugin v1.21.0, csi-attacher v3.5.0, csi-provisioner v3.2.1, csi-snapshotter v6.0.1, snapshot-controller: v6.0.1, csi-resizer v1.5.0
@@ -75,8 +75,8 @@ The versions depend on the Kubernetes cluster version:
 The versions are:
 
 * `1.20`: coredns v1.10.0, metrics-server v0.6.2 (deprecated)
-* `1.21`: coredns v1.10.0, metrics-server v0.6.2
-* `1.22`: coredns v1.10.0, metrics-server v0.6.2
+* `1.21`: coredns v1.10.0, metrics-server v0.6.2 (deprecated)
+* `1.22`: coredns v1.10.0, metrics-server v0.6.2 (deprecated)
 * `1.23`: coredns v1.10.0, metrics-server v0.6.2
 * `1.24`: coredns v1.10.0, metrics-server v0.6.2
 * `1.25`: coredns v1.10.0, metrics-server v0.6.2
