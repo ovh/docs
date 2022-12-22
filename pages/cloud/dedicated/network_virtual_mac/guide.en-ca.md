@@ -39,7 +39,9 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 To assign a virtual MAC address to an Additional IP, you first need to connect to your OVHcloud Control Panel. Next, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu.
 
-![IP](images/manageIPOVHcloud.png){.thumbnail}
+Click the `Additional IP`{.action} tab.
+
+![IP](images/manageIPs2022.png){.thumbnail}
 
 Once you're in the IP section, locate your Additional IP address (or block) in the list and then click the `...`{.action} button to bring up the list of options.
 
