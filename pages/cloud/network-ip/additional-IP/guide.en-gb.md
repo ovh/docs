@@ -49,6 +49,8 @@ To cancel the service, use the following API call :
 
 - `serviceName` : name of the Additional IP service obtained with previous call
 
+You will then receive an email asking you to confirm the cancellation. After confirmation, the cancellation will be effective.
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

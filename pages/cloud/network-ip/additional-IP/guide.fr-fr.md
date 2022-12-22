@@ -49,6 +49,8 @@ Pour résilier le service, utilisez l'appel suivant :
 
 - `serviceName` : le nom du service Additional IP obtenu via l'appel précédent
 
+Vous recevrez ensuite un email vous demandant de confirmer la résiliation. La résiliation sera effective après confirmation.
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
