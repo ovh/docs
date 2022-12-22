@@ -15,7 +15,7 @@ Para consultar la lista de contactos de sus servicios, acceda a la sección `Ges
 
 #### Ideas y consejos
 
-Si desea más información sobre la gestión de los contactos, consulte nuestra guía [Gestionar los contactos de los servicios](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
+Si desea más información sobre la gestión de los contactos, consulte nuestra guía [Gestionar los contactos de los servicios](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).
 
 ### ¿Cómo modificar los datos de facturación?
 
@@ -35,7 +35,7 @@ Si no renueva el servicio antes de la fecha de expiración, este se suspenderá 
 
 Consulte el estado de sus servicios y administre su renovación en la sección `Mis servicios`{.action} del área de cliente.
 Para renovar sus servicios manualmente, acceda a la página <https://www.ovh.es/cgi-bin/order/renew.cgi>.
-Para más información, consulte nuestra guía [Gestionar la renovación de los servicios](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/).
+Para más información, consulte nuestra guía [Gestionar la renovación de los servicios](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/).
 
 ### ¿Cómo activar la renovación automática?
 
@@ -44,7 +44,7 @@ Acceda a la sección `Productos y servicios`{.action} disponible en la columna d
 #### Ideas y consejos
 
 Antes de activar la renovación automática, asegúrese de haber configurado una forma de pago. De lo contrario, en caso de impago se procederá a la suspensión de los servicios al cabo de 7 días.
-Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/).
+Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/).
 
 ### ¿Cómo desactivar la renovación automática?
 
@@ -55,7 +55,7 @@ Para dar de baja un servicio, consulte la página [¿Cómo dar de baja un servic
 #### Ideas y consejos
 
 La renovación automática permite evitar cortes del servicio. Para una total transparencia, recibirá una notificación por correo electrónico antes de cada renovación.
-Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/).
+Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/).
 
 ### ¿Cómo añadir una forma de pago?
 
@@ -100,7 +100,7 @@ Las soluciones que tengan activada la renovación automática se renovarán el p
 #### Ideas y consejos
 
 Puede cambiar la frecuencia de renovación de un servicio desde la sección `Mis servicios`{.action} del área de cliente.
-Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/).
+Si desea más información, consulte nuestra guía [Gestionar la renovación de los servicios](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/).
 
 ### ¿Qué forma de pago se utiliza para abonar los servicios?
 
@@ -129,7 +129,7 @@ Si no ha configurado ninguna forma de pago pero tiene servicios con renovación 
 #### Ideas y consejos
 
 Tenga a mano su ID de cliente y su contraseña de OVHcloud. Los necesitará para abonar las facturas.
-Asimismo, puede consultar el apartado «Abonar el importe pendiente» de nuestra guía [Gestionar las facturas de OVHcloud](https://docs.ovh.com/es/billing/gestionar-facturas-ovh/#abonar-el-importe-pendiente).
+Asimismo, puede consultar el apartado «Abonar el importe pendiente» de nuestra guía [Gestionar las facturas de OVHcloud](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#abonar-el-importe-pendiente).
 
 ### ¿Cómo conocer el estado de un pago?
 
@@ -152,7 +152,7 @@ La baja será efectiva una vez finalizado el período de validez o de compromiso
 #### Ideas y consejos
 
 En caso de error en el pedido, podrá ejercer su derecho de desistimiento en las condiciones correspondientes. Para más información, consulte la pregunta «¿Cómo cancelar un pedido?».
-Para más información sobre cómo tramitar la baja de nuestros productos y servicios, haga [aquí](https://docs.ovh.com/es/billing/how-to-cancel-your-services/).
+Para más información sobre cómo tramitar la baja de nuestros productos y servicios, haga [aquí](https://docs.ovh.com/us/es/billing/how-to-cancel-your-services/).
 
 
 ### ¿Cómo personalizar la referencia de mis productos o servicios en las facturas?
@@ -166,7 +166,7 @@ La facturación de Public Cloud incluye, por un lado, los recursos con pago por 
 
 #### Ideas y consejos
 
-Si desea más información, consulte nuestra guía [Analizar y gestionar la facturación](https://docs.ovh.com/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/).
+Si desea más información, consulte nuestra guía [Analizar y gestionar la facturación](https://docs.ovh.com/us/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/).
 
 ### ¿Cómo consultar el libro mayor?
 

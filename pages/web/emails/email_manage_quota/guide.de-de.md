@@ -28,8 +28,8 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 >
 > **Sonderfälle**
 >
-> - Hinweis zum Start 10M Hosting: Dieses muss zuerst aktiviert werden, um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} durchführen, indem Sie den betreffenden Domainnamn aufrufen.
-> - Bei einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} müssen Sie den zugehörigen MX Plan aktivieren, bevor Sie mit dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting enthaltenen E-Mail-Accounts aktivieren](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/)".
+> - Hinweis zum Start 10M Hosting: Dieses muss zuerst aktiviert werden, um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) durchführen, indem Sie den betreffenden Domainnamn aufrufen.
+> - Bei einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) müssen Sie den zugehörigen MX Plan aktivieren, bevor Sie mit dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting enthaltenen E-Mail-Accounts aktivieren](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/)".
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
@@ -47,7 +47,7 @@ Sie können diese Aktion über das Kundencenter durchführen, wenn Sie den zugeh
 
 #### Über das Kundencenter <a name="quotacontrolpanel"></a>
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
+Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action} und folgen Sie den passenden Anweisungen für Ihren E-Mail-Dienst:
 
 > [!tabs]
 > **E-Mails (MX Plan)**
@@ -187,18 +187,18 @@ Wenn Ihr E-Mail-Client installiert ist, folgen Sie den nachstehenden Anweisungen
 > **Outlook**
 >>
 >> Vergewissern Sie sich, dass in der linken Spalte der Ordner "Archiv" oder "Auf meinem Computer" vorhanden ist, um die Elemente, die Sie lokal auf Ihrem Computer speichern möchten, dort ablegen zu können. Lesen Sie die Microsoft Dokumentation, um Ihren Archivordner vorzubereiten:<br><br>
->> - [Archivierung in Outlook für Windows](https://support.microsoft.com/de-de/office/archivieren-in-outlook-f%C3%BCr-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [Archivierung in Outlook für Mac](https://support.microsoft.com/de-de/office/informationen-zu-auf-meinem-computer-ordnern-in-outlook-f%C3%BCr-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
+>> - [Archivierung in Outlook für Windows](https://support.microsoft.com/de-de/office/archivieren-in-outlook-f%C3%BCr-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
+>> - [Archivierung in Outlook für Mac](https://support.microsoft.com/de-de/office/informationen-zu-auf-meinem-computer-ordnern-in-outlook-f%C3%BCr-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
 >>
 > **macOS Mail**
 >>
 >> Erstellen Sie mit Mail auf macOS einen Ordner, der in der linken Spalte im Abschnitt "Auf meinem Mac" erscheint. Folgen Sie hierzu der Dokumentation von Apple:<br><br>
->>> - [Mailbox Mac](https://support.apple.com/de-de/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
+>>> - [Mailbox Mac](https://support.apple.com/de-de/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>
 >> Mit Thunderbird können Sie Ihre E-Mails über Windows, macOS oder Linux in einen Ordner verschieben, der in der linken Spalte verfügbar ist. Lesen Sie die Dokumentation von Mozilla:<br><br>
->> - [Mail Archiv](https://support.mozilla.org/de/kb/archivierte-nachrichten){.external}<br>
+>> - [Mail Archiv](https://support.mozilla.org/de/kb/archivierte-nachrichten)<br>
 >>
 
 #### Zu einem Angebot mit höherer Kapazität wechseln <a name="switchingoffer"></a>

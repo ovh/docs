@@ -21,17 +21,17 @@ Cada conta de e-mail da OVHcloud dispõe de um espaço de armazenamento dedicado
 ## Requisitos
 
 - Dispor de uma solução de e-mail OVHcloud previamente configurada (**MX Plan**, proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/), incluída num [alojamento Start10M gratuito](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou encomendada separadamente como solução autónoma, como o [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou o [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/))
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}.
 - Dispor das informações de ligação aos endereços de e-mail em causa.
 
 > [!primary]
 >
 > **Casos especiais**
 >
-> - Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionando-se no domínio em questão.
-> - No âmbito de um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](https://docs.ovh.com/pt/hosting/ativar-e-mail-alojamento-web/)".
+> - Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode efetuar esta operação a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), posicionando-se no domínio em questão.
+> - No âmbito de um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), é necessário ativar a oferta MX Plan incluída antes de continuar a ler este manual. Para isso, consulte o nosso manual "[Ativar os endereços de e-mail incluídos no seu alojamento web](https://docs.ovh.com/pt/hosting/ativar-e-mail-alojamento-web/)".
 
-## Prática <a name="instructions"></a>
+## Instruções  <a name="instructions"></a>
 
 A gestão do espaço de armazenamento da sua conta de e-mail será dividida em 3 etapas neste guia. Podem ser realizadas por ordem ou de forma independente, consoante as suas necessidades.
 
@@ -47,7 +47,7 @@ Pode realizar esta ação a partir da Área de Cliente se tem a gestão do servi
 
 #### A partir da Área de Cliente <a name="quotacontrolpanel"></a>
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
 
 > [!tabs]
 > **E-mails (MXplan)**
@@ -186,18 +186,18 @@ Depois de instalar o seu software de correio, siga as instruções abaixo para p
 > **Outlook**
 >>
 >> No Outlook, certifique-se de que, na sua coluna da esquerda, a pasta "arquivo" ou "no meu computador" está presente para poder introduzir os elementos que deseja manter localmente no seu computador. Consulte a documentação da Microsoft para preparar a sua pasta de arquivo:<br><br>
->> - [Arquivo no Outlook para Windows](https://support.microsoft.com/pt-pt/office/arquivar-no-outlook-para-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [Sobre as pastas do meu computador no Outlook para Mac](https://support.microsoft.com/pt-pt/office/acerca-das-pastas-no-meu-computador-no-outlook-para-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
+>> - [Arquivo no Outlook para Windows](https://support.microsoft.com/pt-pt/office/arquivar-no-outlook-para-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
+>> - [Sobre as pastas do meu computador no Outlook para Mac](https://support.microsoft.com/pt-pt/office/acerca-das-pastas-no-meu-computador-no-outlook-para-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
 >>
 > **Mail macOS**
 >>
 >> A partir do e-mail no macOS, crie uma pasta que aparecerá na secção "No meu Mac" na coluna da esquerda. Para isso, siga a documentação da Apple:<br><br>
->> - [Criar ou eliminar caixas de correio no Mail](https://support.apple.com/pt-pt/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
+>> - [Criar ou eliminar caixas de correio no Mail](https://support.apple.com/pt-pt/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>
 >> Através do thunderbird a partir do Windows, macOS ou Linux, pode mover os seus e-mails para uma pasta da parte esquerda. Ajude-se com a documentação de Mozilla:<br><br>
->> - [Arquivo de mensagens](https://support.mozilla.org/pt-PT/kb/mensagens-arquivadas){.external}<br>
+>> - [Arquivo de mensagens](https://support.mozilla.org/pt-PT/kb/mensagens-arquivadas)<br>
 >>
 
 #### Mudar de oferta para aumentar a sua capacidade <a name="switchingoffer"></a>
