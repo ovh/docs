@@ -16,18 +16,12 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/), included in a [free Start10M hosting](https://www.ovhcloud.com/en-ca/domains/free-web-hosting/) package or ordered separately as a standalone solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/));
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and `Web Cloud`{.action} section ;
+- a pre-configured OVHcloud email solution (**MX Plan**, available as part of our [web hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/) package or ordered separately as a standalone solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/));
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), and `Web Cloud`{.action} section ;
 - access to the email addresses concerned.
 
-> [!primary]
->
-> **Special cases**
->
-> - Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} by going to the domain name concerned.
-> - For [web hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/){.external}, you will need to activate your MX Plan package before continuing to read this guide. To do this, please refer to our guide on [Activating the email addresses included in your web](https://docs.ovh.com/ca/en/hosting/activate-email-web-hosting/) hosting plan.
 
-## In practice <a name="instructions"></a>
+## Instructions  <a name="instructions"></a>
 
 The storage space management for your email account will be broken down into 3 steps in this guide. They can be done in order or independently, depending on your need.
 
@@ -43,7 +37,7 @@ You can do this via the OVHcloud Control Panel if you are managing the email ser
 
 #### From the Control Panel <a name="quotacontrolpanel"></a>
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Web Cloud`{.action} section, then follow the instructions for your solution:
 
 > [!tabs]
 > **Emails (MXplan)**
@@ -140,12 +134,12 @@ Below is a non-exhaustive list of configuration guides for email clients using:
 > **Exchange**
 >>
 >> Configuring an Exchange account on **Windows**:<br><br>
->> - [Mail on Windows 10](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/mail-configuration-windows-10/) (included with Windows)<br>
->> - [Outlook](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/configuration-outlook-2016/)<br>
+>> - [Mail on Windows 10](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-mail-configuration-windows-10/) (included with Windows)<br>
+>> - [Outlook](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-windows/)<br>
 >> - [Thunderbird](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird/) (free)<br><br>
 >> Configuring an Exchange account on **macOS**:<br><br>
->> - [Mail](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-automatic-configuration-on-mail-mac/) (included with macOS)<br>
->> - [Outlook](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/configuration-outlook-2016-mac/)<br>
+>> - [Mail](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-mail-macos/) (included with macOS)<br>
+>> - [Outlook](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird-mac/) (free)<br>
 >>
 
@@ -155,18 +149,18 @@ Once you have installed your email software, follow the instructions below to pr
 > **Outlook**
 >>
 >> In Outlook, make sure that the folder "archive" or "on my computer" is present in your left-hand column so that you can put the items you want to keep locally on your computer. See the Microsoft documentation for preparing your archive folder:<br><br>
->> - [Archiving in Outlook for Windows](https://support.microsoft.com/en-us/office/archive-in-outlook-for-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [About folders on my computer in Outlook for Mac](https://support.microsoft.com/en-us/office/about-on-my-computer-folders-in-outlook-for-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
+>> - [Archiving in Outlook for Windows](https://support.microsoft.com/en-us/office/archive-in-outlook-for-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
+>> - [About folders on my computer in Outlook for Mac](https://support.microsoft.com/en-us/office/about-on-my-computer-folders-in-outlook-for-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
 >>
 > **Mail macOS**
 >>
 >> From Mail on macOS, create a folder that will appear in the "On my Mac" section in the left-hand column. To do this, follow the Apple documentation:<br><br>
->> - [Create or delete mailboxes in Mail on Mac](https://support.apple.com/en-ca/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
+>> - [Create or delete mailboxes in Mail on Mac](https://support.apple.com/en-ca/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>
 >> Via thunderbird from Windows, macOS or Linux, you can move your emails to a folder in the left pane. Use the Mozilla documentation:<br><br>
->> - [Message Archiving](https://support.mozilla.org/en-US/kb/archived-messages){.external}<br>
+>> - [Message Archiving](https://support.mozilla.org/en-US/kb/archived-messages)<br>
 >>
 
 #### Change solution to increase capacity <a name="switchingoffer"></a>

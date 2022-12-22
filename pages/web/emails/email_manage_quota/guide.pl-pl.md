@@ -21,15 +21,15 @@ Każde konto e-mail OVHcloud dysponuje dedykowaną przestrzenią dyskową. Zarz�
 ## Wymagania początkowe
 
 - Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [hostingu Start10M bezpłatnie](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)).
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
 - Dostęp do danych adresów e-mail.
 
 > [!primary]
 >
 > **Szczególne przypadki**
 >
-> - Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przechodząc do odpowiedniej domeny.
-> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](https://docs.ovh.com/pl/hosting/aktywacja-kont-email-zawartych-w-hostingu/)".
+> - Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Operację tę możesz przeprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przechodząc do odpowiedniej domeny.
+> - Zanim przejdziesz do niniejszego przewodnika, należy aktywować Twój pakiet MX Plan zawarty w [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/). W tym celu zapoznaj się z naszym przewodnikiem "[Aktywuj konta e-mail zawarte w Twoim hostingu](https://docs.ovh.com/pl/hosting/aktywacja-kont-email-zawartych-w-hostingu/)".
 
 ## W praktyce <a name="instructions"></a>
 
@@ -47,7 +47,7 @@ Możesz przeprowadzić tę operację w Panelu klienta, jeśli posiadasz uprawnie
 
 #### W Panelu klienta <a name="quotacontrolpanel"></a>
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Web Cloud`{.action} i postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action} i postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
 
 > [!tabs]
 > **E-maile (MXplan)**
@@ -186,18 +186,18 @@ Po zainstalowaniu programu pocztowego postępuj zgodnie z instrukcjami podanymi 
 > **Outlook**
 >>
 >> W programie Outlook upewnij się, że w lewej kolumnie znajduje się folder "archiwum" lub "na moim komputerze", aby móc umieścić w nim elementy, które chcesz przechowywać lokalnie na komputerze. Zapoznaj się z dokumentacją Microsoft, aby przygotować Twój archiwum:<br><br>
->> - [Archiwizacja w programie Outlook dla Windows](https://support.microsoft.com/pl-pl/office/archiwizowanie-w-programie-outlook-dla-systemu-windows-25f75777-3cdc-4c77-9783-5929c7b47028){.external}<br>
->> - [O folderach na moim komputerze w programie Outlook for Mac](https://support.microsoft.com/pl-pl/office/informacje-o-folderach-na-moim-komputerze-w-outlook-dla-komputer%C3%B3w-mac-c91b8729-924d-4c25-a5f6-38883d0f763d){.external}<br>
+>> - [Archiwizacja w programie Outlook dla Windows](https://support.microsoft.com/pl-pl/office/archiwizowanie-w-programie-outlook-dla-systemu-windows-25f75777-3cdc-4c77-9783-5929c7b47028)<br>
+>> - [O folderach na moim komputerze w programie Outlook for Mac](https://support.microsoft.com/pl-pl/office/informacje-o-folderach-na-moim-komputerze-w-outlook-dla-komputer%C3%B3w-mac-c91b8729-924d-4c25-a5f6-38883d0f763d)<br>
 >>
 > **Mail macOS**
 >>
 >> Z poziomu aplikacji Mail na macOS utwórz folder, który pojawi się w sekcji "Na moim Mac" w kolumnie z lewej strony. W tym celu postępuj zgodnie z dokumentacją Apple:<br><br>
->> - [Tworzenie lub usuwanie skrzynek na listy w aplikacji Mail na urządzeniu Mac](https://support.apple.com/pl-pl/guide/mail/mlhlp1021/15.0/mac/12.0){.external}<br>
+>> - [Tworzenie lub usuwanie skrzynek na listy w aplikacji Mail na urządzeniu Mac](https://support.apple.com/pl-pl/guide/mail/mlhlp1021/15.0/mac/12.0)<br>
 >>
 > **Thunderbird**
 >>
 >> Poprzez thunderbird z systemem Windows, macOS lub Linux, możesz przenosić wiadomości e-mail do folderu po lewej stronie. Skorzystaj z dokumentacji Mozilli:<br><br>
->> - [Archiwizacja wiadomości](https://support.mozilla.org/pl/kb/archiwizowanie-wiadomosci){.external}<br>
+>> - [Archiwizacja wiadomości](https://support.mozilla.org/pl/kb/archiwizowanie-wiadomosci)<br>
 >>
 
 #### Zmiana oferty w celu zwiększenia przepustowości <a name="switchingoffer"></a>
