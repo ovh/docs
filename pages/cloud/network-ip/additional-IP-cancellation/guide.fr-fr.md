@@ -6,7 +6,7 @@ section: Additional IP
 order: 01
 ---
 
-**Dernière mise à jour le 19/12/2022**
+**Dernière mise à jour le 22/12/2022**
 
 > [!primary]
 >
@@ -50,6 +50,8 @@ Pour résilier le service, utilisez l'appel suivant :
 >
 
 - `serviceName` : le nom du service Additional IP obtenu via l'appel API précédent.
+
+Vous recevrez ensuite un e-mail vous demandant de confirmer la résiliation. La résiliation sera effective après confirmation.
 
 ## Aller plus loin
 

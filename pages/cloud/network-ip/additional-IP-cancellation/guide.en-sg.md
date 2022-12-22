@@ -6,7 +6,7 @@ section: Additional IP
 order: 01
 ---
 
-**Last updated 20th December 2022**
+**Last updated 22nd December 2022**
 
 > [!primary]
 >
@@ -50,6 +50,8 @@ To cancel the service, use the following API call:
 >
 
 - `serviceName` : name of the Additional IP service obtained with the previous call.
+
+You will then receive an email asking you to confirm the cancellation. After confirmation, the cancellation will be effective.
 
 ## Go further
 
