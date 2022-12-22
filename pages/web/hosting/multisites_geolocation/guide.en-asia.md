@@ -1,29 +1,63 @@
 ---
-title: Geolocation on web hosting packages
-excerpt: ''
+title: "Geolocate your website in a specific country"
+excerpt: "Find out how to geolocate your website using our geolocated IP addresses"
 slug: geolocation_on_web_hosting_packages
 section: Optimise your website
 order: 05
 ---
 
-**Last updated 5th May 2020**
+**Last updated 22nd December 2022**
+  
+## Objective
 
-## 
-You can set up geolocation for your website from your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+Search engines (Google, Bing, Yahoo, ...) use indexing and referencing robots on all websites. They prioritise geolocated sites in the country you are searching from.
 
-Once you are logged on, click on the name of your main website under the Hostings section.
+**Example**: If you search through a search engine and are located in England, geolocated websites in England will show up higher in search results than other websites.
 
-![geolocation](images/2792.png){.thumbnail}
-In the menu, select the Multisite tab.
-Then click on the pen to the right of the website that you wish to geolocate.
+This geolocation is based on the IP address of the hosting plan where your website is located.
 
-![geolocation](images/2793.png){.thumbnail}
-You can then choose the IP for the country in question. 
-OVHcloud can offer 12 different country IPs
+The geolocation option on your hosting can be useful for SEO if your website is mainly visited in a country different from where your shared hosting is located.
 
-![geolocation](images/2794.png){.thumbnail}
-The change will take 24 hours to take effect
+**Find out how to geolocate your website using our geolocated IP addresses.**
+
+## Requirements
+
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/){.external}
+- One or more [domain names](https://www.ovhcloud.com/asia/domains/){.external}
+
+## Instructions
+
+For websites that are mainly visited abroad and hosted on our OVHcloud shared hosting infrastructure, we offer a geolocation by IP address option. It allows websites to be listed more easily in the country where the IP address you have selected is located.
+
+To use the IP geolocation option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}.
+
+Once you have logged in, go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action} then select the relevant hosting plan from the list.<br>
+Then click on the `Multisite`{.action} tab and the `...`{.action} to the right of your domain name in the table. Finally, click `Modify domain`{.action}.
+
+![hosting multisites](images/hosting_multisites.png){.thumbnail}
+
+In the new window that pops up, tick the `Country IP`{.action} box to open the drop-down menu.
+
+![geolocation option](images/geolocation_option.png){.thumbnail}
+
+Choose the IP address of the country for which you want to geolocate your site, from the 12 countries offered: *Czech Republic, Finland, France, Germany, Ireland, Italy, Lithuania, Netherlands, Poland, Portugal, Spain, United Kingdom*.
+
+Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
+
+>[!primary]
+>
+> If your domain name’s active DNS zone is fully managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), the A record in your domain name’s DNS zone will automatically change. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](https://docs.ovh.com/asia/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+>
+> Otherwise, you will need to make the change manually with the provider that manages your domain name’s active DNS zone. Find [here](https://docs.ovh.com/asia/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/) the documentation that lists all the IP addresses in our OVHcloud shared hosting infrastructure.
+>
+> In any case, you will need to wait between **4 and 24 hours** for the changes to propagate fully, and be visible on the internet.
+>
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
