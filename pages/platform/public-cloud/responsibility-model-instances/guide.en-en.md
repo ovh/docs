@@ -6,7 +6,7 @@ excerpt: "Shared responsibilities between OVHcloud and the customer Public Cloud
 order: 5
 ---
 
-**Dernière mise à jour le 22/12/2022**
+**Last update 22/12/2022**
 
 ## Objectif
 
