@@ -5,7 +5,7 @@ slug: optimiser-envoi-emails
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 07/12/2022**
+**Dernière mise à jour le 20/12/2022**
 
 ## Objectif
 
@@ -69,13 +69,15 @@ Une fois cela fait, ajoutez l'enregistrement PTR (également connu sous le nom d
 
 Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rendez-vous dans l'onglet `Bare Metal Cloud`{.action}, puis cliquez sur la section `IP`{.action}. 
 
-Dans le menu déroulant **Service**, sélectionnez un service avec une adresse IPv4 :
+Si vous souhaitez configurer le reverse DNS sur une adresse Additional IP, cliquez sur l'onglet `Additional IP`{.action}.
 
-![Reverse IP](images/servicedropmenu.png){.thumbnail}
+Le menu déroulant sous « **Mes adresses IP publiques et services associés** » vous permet de filtrer vos services par catégorie.
 
-Cliquez sur le bouton `...`{.action} à droite de la ligne correspondante puis sur `Modifier le reverse`{.action} :
+![Reverse IP](images/selectservice2022.png){.thumbnail}
 
-![Reverse IP](images/setreversedns.png){.thumbnail}
+Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne correspondante puis sur `Modifier le reverse`{.action} :
+
+![Reverse IP](images/addreverse2022.png){.thumbnail}
 
 Entrez votre nom de domaine dans la section `Reverse DNS` et cliquez sur `Valider`{.action}.
 

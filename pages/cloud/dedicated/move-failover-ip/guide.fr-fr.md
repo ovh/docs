@@ -6,7 +6,7 @@ section: 'Réseau & IP'
 order: 7
 ---
 
-**Dernière mise à jour le 24/11/2022**
+**Dernière mise à jour le 20/12/2022**
 
 > [!primary]
 >
@@ -63,17 +63,19 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur le menu `Bare Metal Cloud`{.action} puis ouvrez la section `IP`{.action}.
 
-Le menu déroulant « Service » vous permet de ne sélectionner que les Additional IP.
+Cliquez sur l'onglet `Additional IP`{.action}.
 
-Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer l'Additional IP`{.action}.
+![gerer IP](images/manageIPs2022.png){.thumbnail}
 
-![espace client](images/manager02.png){.thumbnail}
+Cliquez sur le bouton `...`{.action} à droite de l'adresse IP à déplacer puis sur `Déplacer Additional IP`{.action}.
+
+![espace client](images/moveadditionalIP.png){.thumbnail}
 
 Dans le menu contextuel qui apparaît, sélectionnez le service vers lequel déplacer l'adresse IP.
 
 Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
-![espace client](images/manager03.png){.thumbnail}
+![espace client](images/moveadditionalIP2.png){.thumbnail}
 
 ### Déplacer une IP via les API
 

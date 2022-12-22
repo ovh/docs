@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure your virtual machines for access to the publ
 section: 'Network Management'
 ---
 
-**Last updated 6th October 2022**
+**Last updated 20th December 2022**
 
 > [!primary]
 >
@@ -49,17 +49,17 @@ Code samples in the following instructions have to be replaced with your own val
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu.
 
-The “Service” drop-down menu allows you to filter for Additional IPs.
+Click the `Additional IP`{.action} tab.
 
-![manage IPs](images/manageIPs.png){.thumbnail}
+![manage IPs](images/manageIPs2022.png){.thumbnail} 
 
-Click on `...`{.action} in the relevant row to open the context menu, and select `Add a virtual MAC`{.action}.
+Next, locate your Additional IP address in the table and click the `...`{.action} button to open the menu. Select `Add a virtual MAC`{.action}.
 
-![Add a virtual MAC](images/virtual_mac_02_2020.png){.thumbnail}
+![Add a virtual MAC (1)](images/addvmac.png){.thumbnail}
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-![Add a virtual MAC](images/addvmac2.png){.thumbnail}
+![Add a virtual MAC (2)](images/addvmac2.png){.thumbnail}
 
 ### Step 2: Determine the gateway address
 
