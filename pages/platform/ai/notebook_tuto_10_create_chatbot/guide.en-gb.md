@@ -36,6 +36,7 @@ ovhai token create -l model=rasabotRW --role operator token-RW-chatbot
 
 Token is now created. Don't forget to save the token to use it later.
 
+Now, if you already have train some models with AI Training by following the tutorial ([Train with AI Training](https://confluence.ovhcloud.tools/x/BIaBDw)), you can skip the next part and go directly [here](#launch-an-ai-notebook).
 
 ### Understand storage concepts
 
