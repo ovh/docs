@@ -5,7 +5,7 @@ excerpt: 'Find out how to send emails and limit the risk of them being marked as
 section: Advanced
 ---
 
-**Last updated 7th December 2022**
+**Last updated 20th December 2022**
 
 ## Objective
 
@@ -68,13 +68,15 @@ Once done, add the PTR record (also known as the reverse):
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, go to the `Bare Metal Cloud`{.action} section, then open `IP`{.action}.  
 
-In the **“Service”** drop-down menu, select a service with an IPv4 address:
+If you wish to configure the reverse DNS on an Additional IP, click on the `Additional IP`{.action} tab.
 
-![Reverse IP](images/servicedropmenu.png){.thumbnail}
+The drop-down menu underneath **"My public IP addresses and associated services"** allows you to filter your services according to category.
 
-Click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
+![Reverse IP](images/selectservice2022.png){.thumbnail}
 
-![Reverse IP](images/setreversedns.png){.thumbnail}
+Next, click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
+
+![Reverse IP](images/addreverse2022.png){.thumbnail}
 
 Enter your domain name on the `Reverse DNS` section and click on `Confirm`{.action}
 

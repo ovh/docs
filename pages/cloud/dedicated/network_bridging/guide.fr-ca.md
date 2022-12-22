@@ -5,7 +5,7 @@ excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Inte
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 06/10/2022**
+**Dernière mise à jour le 20/12/2022**
 
 > [!primary]
 >
@@ -49,13 +49,13 @@ Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de co
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur le menu `Bare Metal Cloud`{.action} puis sur la section `IP`{.action}.
 
-Le menu déroulant « Service » vous permet de ne sélectionner que les Additional IP.
+Cliquez sur l'onglet `Additional IP`{.action}.
 
-![manage IPs](images/manageIPs.png){.thumbnail}
+![manage IPs](images/manageIPs2022.png){.thumbnail}
 
-Cliquez sur les `...`{.action} à côté de l'Additional IP de votre choix, puis cliquez sur `Ajouter une adresse MAC virtuelle`{.action}.
+Cliquez sur le bouton `...`{.action} à côté de l'Additional IP de votre choix puis sur `Ajouter une MAC virtuelle`{.action}.
 
-![Ajouter une MAC virtuelle (1)](images/virtual_mac_02_2020.png){.thumbnail}
+![Ajouter une MAC virtuelle (1)](images/addvmac.png){.thumbnail}
 
 Sélectionnez « ovh » dans la liste déroulante « Type », tapez un nom dans le champ « Nom de la machine virtuelle », puis cliquez sur `Valider`{.action}.
 
