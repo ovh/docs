@@ -3,7 +3,7 @@ title: MySQL - Connectez-vous avec MySQL Workbench (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using MySQL Workbench
 slug: mysql/connect-workbench
 section: MySQL - Guides
-order: 303
+order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-workbench/'
 ---

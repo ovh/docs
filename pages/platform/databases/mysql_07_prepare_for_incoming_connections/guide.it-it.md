@@ -3,7 +3,7 @@ title: MySQL - Configure your MySQL instance to accept incoming connections
 excerpt: Find out how to configure your MySQL instance to accept incoming connections
 slug: mysql/configure-mysql-instance
 section: MySQL - Guides
-order: 100
+order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/configure-mysql-instance/'
 ---

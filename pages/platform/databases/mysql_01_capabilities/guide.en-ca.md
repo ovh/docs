@@ -3,7 +3,7 @@ title: MySQL - Capabilities and Limitations
 slug: mysql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
 section: MySQL - Guides
-order: 1
+order: 010
 ---
 
 **Last updated November 8th, 2022**

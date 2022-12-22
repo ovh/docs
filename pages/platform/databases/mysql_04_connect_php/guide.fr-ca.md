@@ -3,7 +3,7 @@ title: MySQL - Connectez-vous avec PHP (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
 slug: mysql/connect-php
 section: MySQL - Guides
-order: 301
+order: 040
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-php/'
 ---

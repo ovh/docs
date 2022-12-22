@@ -3,7 +3,7 @@ title: MySQL - Connectez-vous avec Python (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the Python programming language
 slug: mysql/connect-python
 section: MySQL - Guides
-order: 302
+order: 050
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-python/'
 ---

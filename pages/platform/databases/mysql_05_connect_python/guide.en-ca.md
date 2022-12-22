@@ -3,7 +3,7 @@ title: MySQL - Connect with Python
 excerpt: Connect to your Public Cloud Databases for MySQL using the Python programming language
 slug: mysql/connect-python
 section: MySQL - Guides
-order: 302
+order: 050
 ---
 
 **Last updated 8th March 2022**

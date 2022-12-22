@@ -3,7 +3,7 @@ title: MySQL - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
 slug: mysql/connect-php
 section: MySQL - Guides
-order: 301
+order: 040
 ---
 
 **Last updated 8th March 2022**
