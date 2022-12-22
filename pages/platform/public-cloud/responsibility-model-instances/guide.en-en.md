@@ -1,176 +1,176 @@
 ---
 title: RACI pour les instances Public Cloud
 slug: raci-instances-public-cloud
-section: Informations générales
-excerpt: "RACI entre OVHcloud et le client pour l'utilisation des instances Public Cloud"
+section: General information
+excerpt: "Shared responsibilities between OVHcloud and the customer Public Cloud Instances"
 order: 5
 ---
 
-**Dernière mise à jour le 22/11/2022**
+**Dernière mise à jour le 22/12/2022**
 
 ## Objectif
 
-Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour les instances Public Cloud. Ce modèle peut aider le client à utiliser au mieux le service.
+The RACI below details shared responsibilities between OVHcloud and the customer for Public Cloud Instances Service. This shared model can help relieve the customer’s operational burden.
 
 | Rôles |
 | --- |
-|R : Est en charge de la Réalisation du processus|
-|A : Est Approbateur de la réalisation du processus|
-|C : Est Consulté pendant le processus|
-|I : Est Informé des résultats du processus|
+|R : Is in charge of carrying out the process|
+|A : Accountable for the successful completion of the process|
+|C : Is consulted during the process|
+|I : Is informed of the results of the process|
 
-### 1. Avant la souscription
+### 1. Before subscription
 
-#### 1.1. Spécifier le service en fonction des besoins
+#### 1.1. Specify service as needed
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Choisir la gamme d'instances en fonction des besoins (CPU, RAM, General Purpose ...)  | RA | I |
-| Renseigner les données à caractère personnel nécessaires pour la souscription au service | RA | I |
-| Choisir la localisation du service | RA | I |
+| Choose the Instance scale following business needs (CPU, RAM, General Purpose ...)  | RA | I |
+| Provide personal data needed for service subscription | RA | I |
+| Choose Service location | RA | I |
 
-### 2. Mise à disposition du service
+### 2. Service availability
 
-#### 2.1. Installer le service
+#### 2.1. Install service
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Produire, acheminer, livrer et maintenir les instances physiques et les bâtiments d’hébergement | I | RA |
-| Installer les briques fonctionnelles internes à l'instance nécessaires au maintien en conditions opérationnelles et au maintien en conditions de sécurité (firmware, BIOS) | I | RA |
-| Déployer la configuration réseau initiale du service | I | RA |
-| Acheter et détenir les licences et droits d’utilisation pour les OS Microsoft proposés au cathalogue d'OVHcloud | CI | RA |
-| Acheter et détenir les licences et droits d'utilisation pour les autres types d'OS utilisés | RA |  |
+| Produce, route, deliver and maintain physical Instances and hosting buldings | I | RA |
+| Install internal functionnal bricks needed to maintain in operational and security conditions the Service (firmware, BIOS) | I | RA |
+| Deploy the first network configuration on the Service  | I | RA |
+| Buy and hold licences and usage rights for Microsoft OS available on OVHcloud cathalog | CI | RA |
+| Buy and hold licences and usage rights for others OS used | RA |  |
 
-#### 2.2. Modèle de réversibilité
+#### 2.2. Reversibility model
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Importer des images aux formats supportés par l'infrastructure OpenStack | RA | C |
+| Import format images supported by OpenStack infrastructure | RA | C |
 
-#### 2.3. Installation du SI client
+#### 2.3. Customer Information System setup
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Installer l'OS | RA | RI |
-| Installer l'ensemble des logiciels souhaités | RA |  |
+| Install OS | RA | RI |
+| Install other softwares needed  | RA |  |
 
-### 3. Utilisation du service
+### 3. Service usage
 
-#### 3.1. Opérations
+#### 3.1. Operations
 
-##### **3.1.1. Opérations quotidiennes**
+##### **3.1.1. Daily operations**
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer la sécurité logique des données installées sur l'instance (confidentialité, intégrité, sauvegardes, …) |RA |  | 
-| Assurer l'accessibilité de l'instance sur le réseau |  | RA |
-| Décider d’ajouter / supprimer une option sur l'instance | RA | I |
-| Réaliser l’ajout / suppression des options ou du matériel sur l'instance | I | RA |
-| Installer les briques de sécurité nécessaires en fonction des besoins | RA |  |
-| Administrer les applicatifs installés sur l'instance | RA |   |
-| Réaliser les backups | RA |  |
-| Réaliser les backups suite à la demande du Client (en option) | CI | RA |
+| Manage data security hosted on the service (confidentiality, integrity, backups, …) |RA |  | 
+| Manage network accessibility of Instances |  | RA |
+| Decide to add / remove options on Instances | RA | I |
+| Carry out addition / deletion of options or material on Instances | I | RA |
+| Install security briks and tools needed following needs | RA |  |
+| Administrate applications installed on Instances | RA |   |
+| Manage backups | RA |  |
+| Manage backups following Customer request (optionnal) | CI | RA |
 
-##### **3.1.2. Gestion des accès**
+##### **3.1.2. Access management**
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer les droits d’accès à l'interface de gestion (espace client OVHcloud) | RA | I |
-| Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures | I | RA |
-| Gérer les accès et la politique de sécurité des utilisateurs du service | RA |  |
+| Manage access rights to OVHcloud Control Panel | RA | I |
+| Manage physical and logical access to infrastructures for OVHcloud teams | I | RA |
+| Manage accesses et users'security policy using the service  | RA |  |
 
 ##### **3.1.3. Monitoring**
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer et monitorer la capacité des serveurs physiques en support des services Public Cloud |  | RA |
-| Gérer et monitorer la capacité des services Public Cloud | RA |  |
-| Surveiller le bon fonctionnement des logiciels installés sur les instances | RA |  |
-| Conserver les logs du control plane qui supervise l'instance (API, hyperviseur) |  | RA |
-| Conserver les logs du système d’information hébergé sur l'instance | RA |  |
-| Monitorer et surveiller le bon fonctionnement des dispositifs physiques (utilités) en support des instances | I | RA |
-| Créer, modifier, contrôler, restaurer, supprimer les jobs de backups | RA |  |
-| Créer les jobs des backups suite à la souscription à l'option Automated backups | AI | R |
-| Réaliser la maintenance des dispositifs de stockage et de sauvegarde fournis |  | RA |
+| Manage and monitor physical servers capacity in support of Public Cloud services |  | RA |
+| Manage and monitor Public Cloud services capacity | RA |  |
+| Monitor the functionning of softwares installed on Instances | RA |  |
+| Retain logs of control plane for Instances monitoring (API, hyperviseur) |  | RA |
+| Retain logs of Information System hosted on Instances| RA |  |
+| Monitor the proper functioning of physical devices (utilities) in support of the service | I | RA |
+| Create, modify, control, restore, delete jobs of backups | RA |  |
+| Create jobs of backups following subsrciption to Automated backups option | AI | R |
+| Maintain storage and backups devices used for the service |  | RA |
 
-##### **3.1.4. Stockage**
+##### **3.1.4. Storage**
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Assurer le chiffrement des données sur l'espace de stockage alloué | RA |  |
+| Manage data encryption of storage space allocated | RA |  |
 
-##### **3.1.5. Connectivité**
+##### **3.1.5. Connectivity**
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer le plan d’adressage IP et choisir les protocoles réseaux adéquats | RA | I |
-| Filtrer les accès réseau à l'instance | RA | I |
-| Assurer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en oeuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés) | I | RA |
+| Manage IP addressing plan and choose appropriate network protocols | RA | I |
+| Filter network accesses to Instances | RA | I |
+| Operate automatic network management systems (architecture, implementation, software and hardware maintenance for deployed public and private networks) | I | RA |
 
 
-##### **3.1.6. Gestion**
+##### **3.1.6. Management**
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Fournir l'inventaire des instances consommées | I | RA |
-| Assurer la sécurité des infrastructures de gestion (API, control plane) |   | RA |
-| Assurer la sécurité des OS, softwares et middlewares installés sur les instances | RA |  |
-| Gérer la sécurité physique des équipements et infrastructures hébergés | I | RA |
-| Gérer la sécurité des données herbergées sur les instances | RA |  |
+| Provide inventory of services used | I | RA |
+| Manage the security of management infrastructure  (API, control plane) |   | RA |
+| Manage security of OS, softwares and middlewares installed on Instances | RA |  |
+| Manage physical security of equipements and hosted infrastructures | I | RA |
+| Manage data security hosted on Instances service | RA |  |
 
-##### **3.1.7. Continuité d'activité**
-| **Activité** | **Client** | **OVHcloud** |
+##### **3.1.7. Business continuity**
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Réaliser des tests périodiques de restauration de données | RA |  |
-| Maintenir un plan de continuité d’activité et de reprise d’activité pour le SI hébergé | RA | C |
-| Gérer les systèmes de gestion automatiques de l’infrastructure mise à disposition | I | RA |
+| Perform periodic restoration tests | RA |  |
+| Maintain a business continuity and disaster recovery plan for IS hosted | RA | C |
+| Manage automatic management systems for the infrastructure provided | I | RA |
 
-#### 3.2. Gestion des évènements
+#### 3.2. Event management
 
 ##### **3.2.1. Incidents**
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Traiter les incidents matériels et réseau (tickets et contacts téléphoniques) | AI | RA |
-| Traiter les autres incidents | RA |  |
-| Remplacer les éléments matériels défectueux de l'infrastructure en support des instances | I | RA |
-| Restaurer les sauvegardes de l'instance | RA |  |
-| Restaurer les sauvegardes en cas de souscription à une option gérée par OVHcloud | A | R |
+| Intervene with network and materials incidents (tickets and contacts) | AI | RA |
+| Intervene with other incidents | RA |  |
+| Change deficient hardware in support of Instances | I | RA |
+| Realize backup recovery of Instances | RA |  |
+| Realize backup recovery in case of subscription to an option managed by OVHcloud | A | R |
 
-#### **3.2.2. Changements**
+#### **3.2.2. Changes**
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Déployer les correctifs, mettre à jour et configurer les OS, softwares, middlewares et systèmes d’information hébergés sur les instances | RA |  |
+| Deploy updates and patches of OS, softwares, middlewares and Information System hosted on Instances | RA |  |
 
-### 4. Réversion
+### 4. Reverting
 
-#### 4.1. Modèle de réversibilité
+#### 4.1. Reversibility Model
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Planifier les opérations de réversibilité | RA |  |
-| Choisir les infrastructures de repli | RA |  |
-| Exporter les données au format QCOW2 | RA | I |
+| Plan reversibility operations | RA |  |
+| Choose fallback infrastructures | RA |  |
+| Export data following QCOW2 format  | RA | I |
 
-#### 4.2. Récupération des données
+#### 4.2. Data recovery
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer les opérations de réversibilité | RA |  |
-| Migrer / transférer les données | RA |  |
+| Manage reversibility operations | RA |  |
+| Migrate/transfer data | RA |  |
 
-### 5. Fin de service
+### 5. End of service
 
-#### 5.1. Destruction des configurations
+#### 5.1. Destroy configurations
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Décommissionner les configurations associées au client après résiliation du contrat |  | RA |
+| Destroy configurations at end of service following contract termination |  | RA |
 
-#### 5.2. Destruction des données
+#### 5.2. Data destruction
 
-| **Activité** | **Client** | **OVHcloud** |
+| **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Supprimer les données sur les instances |  | RA |
-| Détruire les supports de stockage arrivés en fin de vie ou sur lesquels le processus de destruction sécurisé génère des erreurs |  | RA |
+| Destroy data hosted on Instances |  | RA |
+| Destroy end-of-life storage devices  |  | RA |
