@@ -6,7 +6,7 @@ section: Rewriting and authentication
 order: 03
 ---
 
-**Last updated 22nd December 2022**
+**Last updated 22nd December 2022** 
   
 ## Objective
 
