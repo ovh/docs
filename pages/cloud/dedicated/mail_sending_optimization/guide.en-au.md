@@ -74,7 +74,7 @@ The drop-down menu underneath **"My public IP addresses and associated services"
 
 ![Reverse IP](images/selectservice2022.png){.thumbnail}
 
-Next. click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
+Next, click on `...`{.action} in the relevant row and select `Modify the reverse path`{.action}:
 
 ![Reverse IP](images/addreverse2022.png){.thumbnail}
 
