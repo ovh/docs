@@ -6,7 +6,7 @@ section: Réécriture et authentification
 order: 03
 ---
 
-**Dernière mise à jour le 16/12/2022**
+**Dernière mise à jour le 22/12/2022**
 
 ## Objectif
 

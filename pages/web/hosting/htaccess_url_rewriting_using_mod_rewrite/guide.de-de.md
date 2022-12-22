@@ -2,7 +2,7 @@
 title: "Tutorial - Die URL für den Zugang zu meiner Website mithilfe des mod_rewrite-Modells über die .htaccess Datei neu schreiben"
 excerpt: "Diese Anleitung erklärt, wie Sie die Zugriffs-URL mithilfe des mod_rewrite über die .htaccess Datei neu schreiben."
 slug: htaccess_url_rewriting_using_mod_rewrite
-section: Rewriting and authentication
+section: Weiterleitung und Authentifizierung
 order: 03
 ---
 
