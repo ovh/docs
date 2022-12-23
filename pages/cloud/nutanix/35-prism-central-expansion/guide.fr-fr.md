@@ -6,7 +6,7 @@ section: "Utilisation avancée"
 order: 05
 ---
 
-**Dernière mise à jour le 19/12/2022**
+**Dernière mise à jour le 23/12/2022**
 
 ## Objectif
 
@@ -150,19 +150,19 @@ ou
 ssh nutanix@cluster-nutanix-fqdn
 ```
 
-### Remplacement de la machine virtuelle Prism Central par une machine en mod X-LARGE
+### Remplacement de la machine virtuelle Prism Central par une machine en mode X-LARGE
 
 Exécutez ces commandes en ayant au préalable modifié ces informations :
 
-* **\\<Prism-Central-Private-IP-address\\>** : Adresse IP privé de Prism Central
+* **\<Prism-Central-Private-IP-address\>** : Adresse IP privé de Prism Central
 * **\<Prism-Element-Admin-Password\>** : Mot de passe du compte admin de Prism Element
 * **\<Prism-Central-VM-Name\>** : nom de la machine virtuelle Prism Central
 
 ```bash
 # Disconnect Prism Element in Prism Central
-ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=\<Prism-Central-Private-IP-address\> username=admin password=\<Prism-Element-Admin-Password\> force=true
+ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=<Prism-Central-Private-IP-address> username=admin password=<Prism-Element-Admin-Password> force=true
 # Delete VM
-acli vm.delete \<Prism-Central-VM-Name\>
+acli vm.delete <Prism-Central-VM-Name>
 ```
 
 Ensuite connectez vous à un hôte AHV du cluster avec cette commande
@@ -177,13 +177,13 @@ Exécutez cette commande pour récupérer le UUID de votre stockage par défaut 
 * **\<Prism-Element-IP\>** : Adresse IP privée de Prism Element.
 
 ```bash
-curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:\<Prism-Element-Password\>" -X GET "https://\<Prism-Element-Ip\>:9440/PrismGateway/services/rest/v2.0/storage_containers/" | jq -r '[.entities[] | select( .name | contains("default-container")) | .storage_container_uuid][0]'
+curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X GET "https://<Prism-Element-Ip>:9440/PrismGateway/services/rest/v2.0/storage_containers/" | jq -r '[.entities[] | select( .name | contains("default-container")) | .storage_container_uuid][0]'
 ```
 
 Et cette commande pour récuperer l'UUID du réseau d'administration de votre cluster avec les mêmes éléments à modifier que la commande précedente :
 
 ```bash
-curl -s -k -H Accept:application/json -H Content-Type:application/json -u "admin:\<Prism-Element-Password\>" -X POST https://\<prism element ip\>:9440/api/nutanix/v3/subnets/list -d {} | jq -r "[.entities[] | select( .spec.name | contains(\"\<subnet name\>\")) | .metadata.uuid][0]"
+curl -s -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST https://\<prism element ip\>:9440/api/nutanix/v3/subnets/list -d {} | jq -r "[.entities[] | select( .spec.name | contains(\"<subnet name>\")) | .metadata.uuid][0]"
 ```
 
 Créez un fichier nommé **PrismCentralXlarge.json** et rajouter ce texte en remplaçant ces élements :
@@ -200,23 +200,23 @@ Créez un fichier nommé **PrismCentralXlarge.json** et rajouter ce texte en rem
     "resources": {
         "version": "pc.2022.6.0.1",
         "should_auto_register": false,
-        "initial_password": "\<Prism-Central-Password\>",
+        "initial_password": "<Prism-Central-Password>",
         "pc_vm_list": [
             {
                 "vm_name": "prism-central",
-                "container_uuid": "\<Default-Container-UUID\>",
+                "container_uuid": "<Default-Container-UUID>",
                 "num_sockets": 14,
                 "data_disk_size_bytes": 2684354560000,
                 "memory_size_bytes": 64424509440,
                 "nic_list": [
                     {
                         "ip_list": [
-                            "\<Prism-Central-Private-IP-Address\>"
+                            "<Prism-Central-Private-IP-Address>"
                         ],
                         "network_configuration": {
-                            "network_uuid": "\<Nutanix-Network-Admin-UUID\>",
-                            "subnet_mask": "\<Nutanix-Network-Admin-mask\>",
-                            "default_gateway": "\<Nutanix-Network-Admin-Gateway\>"
+                            "network_uuid": "<Nutanix-Network-Admin-UUID>",
+                            "subnet_mask": "<Nutanix-Network-Admin-mask>",
+                            "default_gateway": "<Nutanix-Network-Admin-Gateway>"
                         }
                     }
                 ]
@@ -246,7 +246,7 @@ Saisissez cette commande en modifiant ces options pour créer un fichier **pcreg
 * **\<Prism-Central-Private-IP-Address\>** :
 
 ...bash
-echo "{\"username\":\"admin\",\"password\":\"\<Prism-Central-Password\>\",\"port\":9440,\"ipAddresses\":[\"\<Prism-Central-Private-IP-address\>\"]}" \>pcregister.json
+echo "{\"username\":\"admin\",\"password\":\"\<Prism-Central-Password\>\",\"port\":9440,\"ipAddresses\":[\"<Prism-Central-Private-IP-address>\"]}" \>pcregister.json
 ...
 
 Executez cette commande pour enregistrer Prism Element dans votre nouvelle machine virtuelle Prism Central en modifiant ces paramètres :
@@ -255,7 +255,7 @@ Executez cette commande pour enregistrer Prism Element dans votre nouvelle machi
 * **\<Prism-Element-Private-IP-Address\>** : 
 
 ...bash
-curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:\<Prism-Element-Password\>" -X POST "https://\<Prism-Element-Private-IP-Address\>:9440/PrismGateway/services/rest/v1/multicluster/prism_central/register" -d @pcregister.json
+curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST "https://<Prism-Element-Private-IP-Address>:9440/PrismGateway/services/rest/v1/multicluster/prism_central/register" -d @pcregister.json
 ...
 
 Prism Element est maintenant enregistré dans le nouveau Prism Central.
