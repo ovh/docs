@@ -268,7 +268,7 @@ Saisissez vos Informations personnelles, Cochez la case `I have read ans agree t
 
 Cliquez `Continue`{.action}. lors de la demande d'activationde Pulse.
 
-![02 Expand Prism Central 02](images/02-expand-prismcentral-to-three-vm01.png){.thumbnail}
+![02 Expand Prism Central 02](images/02-expand-prismcentral-to-three-vm02.png){.thumbnail}
 
 Cliquez sur l'icône en `forme d'engrenage`{.action} pour configurer Prism Central.
 
@@ -317,7 +317,7 @@ Cliquez sur `Ajouter un serveur`{.action}
 
 ![03 Modify Prism Central Https Address 02](images/03-modify-prism-central-https-address02.png){.thumbnail}
 
-Saisissez ces information :
+Saisissez ces informations :
 
 * **Nom (Facultatif)** : PC VIP comme Prism Central Virtual IP address
 * **Adresse IPv4** : Adresse IP privée de la l'adresse IP virtuelle
