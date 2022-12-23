@@ -36,6 +36,42 @@ Ce tutoriel indique les actions possibles lorsque votre base de données mutuali
 
 Lorsque votre base de données mutualisée OVHcloud est presque pleine ou en **overquota**, nos robots vous avertissent par e-mail sur l'adresse e-mail du contact « Administrateur » de la base de données. 
 
+Un premier e-mail est envoyé lorsque votre base de données est remplie à plus de **80%** et un deuxième e-mail est envoyé lorsque vous dépassez les **90%**.
+
+Lorsque votre base de données est en **overquota**, un troisième e-mail est envoyé pour vous avertir de la situation. Votre base passe alors en `READ ONLY`. Vous ne pouvez plus ajouter ou modifier des éléments à l'intérieur mais votre base de données reste accessible en *lecture* et en *suppression*. 
+
+### Etape 1 : identifier la ou les table(s) volumineuse(s)
+
+Une base de données est constituée d'une ou plusieurs **tables**, elles-mêmes constituées d'une ou plusieurs **lignes**. 
+
+La première étape consiste à identifier la ou les tables volumineuses présentes dans votre base de données.
+
+>[!primary]
+>
+> [PHPMyAdmin](https://www.phpmyadmin.net/){.external} est disponible avec l'ensemble des bases de données mutualisées OVHcloud.
+> Ce système de gestion de base de données facilite la réalisation des actions manuelles que vous pouvez effectuer avec votre base de données.
+>
+> Toutes les actions expliquées ci-après dans ce tutoriel seront décrites à partir de **PHPMyAdmin**.
+>
+
+#### 1.1 - Se connecter à la base de données via PHPMyAdmin
+
+Récupérez le mot de passe d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web avec lequel votre base de données mutualisée OVHcloud est associée. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+
+![PHPMyAdmin Access](images/pma_access.png){.thumbnail}
+
+Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est pleine, puis sur `Accéder à PHPMyAdmin`{.action}.
+
+![PHPMyAdmin Login](images/pma_interface.png){.thumbnail}
+
+Renseignez le mot de passe d'accès à votre base de données en complément des informations pré-remplies puis cliquez sur `Exécuter`{.action}.
+
+#### 1.2 - Rechercher les tables les plus volumineuses
+
+### Etape 2 : déterminer l'utilité du contenu présent dans la ou les table(s) volumineuse(s)
+
 ## Aller plus loin <a name="go-further"></a>
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
