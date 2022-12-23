@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Last updated 5th October 2022**
+**Last updated 23/12/2022**
 
 > [!warning]
 >
@@ -102,6 +102,8 @@ This table presents a summary of the different phases of the lifecycle of the se
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2024 | 31/08/2024 |
 | SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2024 |
+| Essentials (Intel Broadwell) | 2020 |            |            |            |
+| Premier (Intel Xeon Gold) | 2020 |            |            |            |
 
 ### Datastores (storage)
 
@@ -120,6 +122,13 @@ If your datastore's full profile does not start with "2020-...", it is urgent an
 | 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
 | 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
 | 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
+| 3Tb | 2020 |            |            |            |
+| 6Tb | 2020 |            |            |            |
+| 9Tb | 2020 |            |            |            |
+| 18Tb | 2020 |            |            |            |
+| 36Tb | 2020 |            |            |            |
+| 12Tb | 2023 |            |            |            |
+| 24Tb | 2023 |            |            |            |
 
 ## Integrated Software
 
