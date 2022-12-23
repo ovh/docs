@@ -13,10 +13,10 @@ order: 05
 **Ce guide vous explique comment remplacer votre déploiement Prism Central initial sur une seule machine virtuelle a trois machine virtuelles**.
 
 
-\ [!warning]
-\ OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
-\
-\ Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> [!warning]
+> OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+>
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 
 ## Prérequis
 
@@ -41,9 +41,9 @@ Le mode de déploiement de Prism Central sur les cluster Nutanix by OVHcloud est
 
 Nous allons voir comment remplacer Prism Central en Mode Small sur une seule machine virtuelle par un Prism Central en mode X-Large et ensuite étendre Prism Central sur 3 machines virtuelles pour plus de résiliance
 
-\ [!warning]
-\ Le remplacement du mode de fonctionnement de Prism Central implique la suppression de Prism Central et de toutes les options gérées par Prism Central (Microsegmentation, Disaster recovery, etc...)
-\
+> [!warning]
+> Le remplacement du mode de fonctionnement de Prism Central implique la suppression de Prism Central et de toutes les options gérées par Prism Central (Microsegmentation, Disaster recovery, etc...)
+>
 
 ### Paramètrage de l'accès à Prism Element via l'espace client OVHcloud
 
@@ -236,9 +236,9 @@ Executer cette commande pour déployer votre machine virtuelle Prism Central en 
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:\<Prism-Element-Password\>" -X POST "https://\<Prism-Element-Private-IP-Address\>:9440/api/nutanix/v3/prism_central" -d @PrismCentralXlarge.json
 ...
 
-\ [!warning]
-\ Patientez pendant trente minutes pendant le déploiement de cette machine virtuelles
-\
+> [!warning]
+> Patientez pendant trente minutes pendant le déploiement de cette machine virtuelles
+>
 
 Saisissez cette commande en modifiant ces options pour créer un fichier **pcregister.json**
 
