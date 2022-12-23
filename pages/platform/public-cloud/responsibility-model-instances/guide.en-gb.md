@@ -12,7 +12,7 @@ order: 5
 
 The RACI below details shared responsibilities between OVHcloud and the customer for Public Cloud Instances Service. This shared model can help relieve the customer’s operational burden.
 
-| Rôles |
+| Roles |
 | --- |
 |R : Is in charge of carrying out the process|
 |A : Accountable for the successful completion of the process|
