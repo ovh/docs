@@ -250,9 +250,9 @@ Exécutez cette commande pour enregistrer Prism Element dans votre nouvelle mach
 * **\<Prism-Element-Password\>** : Mot de passe du compte admin de Prism Element.
 * **\<Prism-Element-Private-IP-Address\>** : Adresse IP privée de Prism Element.
 
-...bash
+```bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST "https://<Prism-Element-Private-IP-Address>:9440/PrismGateway/services/rest/v1/multicluster/prism_central/register" -d @pcregister.json
-...
+```
 
 Prism Element est maintenant enregistré dans le nouveau Prism Central.
 
