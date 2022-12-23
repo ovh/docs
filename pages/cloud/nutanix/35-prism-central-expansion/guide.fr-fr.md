@@ -242,7 +242,6 @@ Saisissez cette commande en modifiant ces options pour créer un fichier **pcreg
 echo "{\"username\":\"admin\",\"password\":\"<Prism-Central-Password>\",\"port\":9440,\"ipAddresses\":[\"<Prism-Central-Private-IP-Address>\"]}" > pcregister.json
 ```
 
-
 Exécutez cette commande pour enregistrer Prism Element dans votre nouvelle machine virtuelle Prism Central en modifiant ces paramètres :
 
 * **\<Prism-Element-Password\>** : Mot de passe du compte admin de Prism Element
