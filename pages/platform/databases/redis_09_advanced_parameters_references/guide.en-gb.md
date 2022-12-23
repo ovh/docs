@@ -49,16 +49,16 @@ This guide lists all the supported advanced parameters that allow you to configu
 
 > [!warning]
 >
-> The management of advanced parameters is not supported via Terraform
+> The management of advanced parameters is not supported via Terraform.
 >
 
 ### Using the OVHcloud Control Panel
 
-Please refer to this [guide](https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration/#using-the-ovhcloud-control-panel) to find out how to change your advanced settings from the OVHcloud Control Panel
+Please refer to this [guide](https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration/#using-the-ovhcloud-control-panel) to find out how to change your advanced settings from the OVHcloud Control Panel.
 
 ### Using API
 
-Please refer to this [guide](https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration/#using-api) to find out how to change your advanced settings from the OVHcloud Control Panel
+Please refer to this [guide](https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration/#using-api) to find out how to change your advanced settings from the OVHcloud API.
 
 
 ### Advanced parameters for Redis
