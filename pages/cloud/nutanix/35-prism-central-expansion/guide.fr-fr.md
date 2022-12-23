@@ -23,7 +23,7 @@ order: 05
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur le cluster via Prism Central.
-- Connaitre le mot de passe admin de Prism Element (Lors dudéploiment d'un cluster Nutanix by OVHcloud ce mot de passe est créé à l'identique de celui de Prism Central mais il peut être changé par la suite).
+- Connaitre le mot de passe admin de Prism Element (Lors du déploiement d'un cluster Nutanix by OVHcloud ce mot de passe est créé à l'identique de celui de Prism Central mais il peut être changé par la suite).
 
 ## Présentation
 
@@ -39,7 +39,7 @@ Le mode de redéploiement de Prism Central sur les clusters Nutanix by OVHcloud 
 
 ## En pratique
 
-Nous allons voir comment remplacer Prism Central en Mode Small sur une seule machine virtuelle par un Prism Central en mode X-Large et ensuite étendre Prism Central sur 3 machines virtuelles pour plus de résiliance.
+Nous allons voir comment remplacer Prism Central en Mode Small sur une seule machine virtuelle par un Prism Central en mode X-Large et ensuite étendre Prism Central sur 3 machines virtuelles pour plus de résilience.
 
 > [!warning]
 > Le remplacement du mode de fonctionnement de Prism Central implique la suppression de Prism Central et de toutes les options gérées par Prism Central (Microsegmentation, Disaster recovery, etc...).
@@ -71,7 +71,7 @@ A l'intérieur de la ferme de serveurs cliquez sur `Ajouter un serveur`{.action}
 
 ![Add ssh PE on Load Balancer 04](images/01-add-pe-ssh-on-loadbalancer04.png){.thumbnail}
 
-Completez ces valeurs : 
+Complétez ces valeurs : 
 
 * **Nom (facultatif)** : `PE SSH`.
 * **adresse IPv4** : `Adresse IP de Prism Element`.
@@ -125,7 +125,7 @@ Sélectionnez votre site et cliquez sur `Appliquer la configuration`{.action}.
 
 ![Add ssh PE on Load Balancer 14](images/01-add-pe-ssh-on-loadbalancer14.png){.thumbnail}
 
-refaites une sélection de votre site et cliquez sur `Appliquer la configuration`{.action}.
+Refaites une sélection de votre site et cliquez sur `Appliquer la configuration`{.action}.
 
 ![Add ssh PE on Load Balancer 15](images/01-add-pe-ssh-on-loadbalancer15.png){.thumbnail}
 
@@ -159,7 +159,7 @@ ncli multicluster remove-from-multicluster external-ip-address-or-svm-ips=<Prism
 acli vm.delete <Prism-Central-VM-Name>
 ```
 
-Ensuite connectez vous à un hôte AHV du cluster avec cette commande
+Ensuite connectez-vous à un hôte AHV du cluster avec cette commande
 
 ```bash
 ssh root@private-ip-address-of-one-ahv-servers
@@ -174,7 +174,7 @@ Exécutez cette commande pour récupérer le UUID de votre stockage par défaut 
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X GET "https://<Prism-Element-Ip>:9440/PrismGateway/services/rest/v2.0/storage_containers/" | jq -r '[.entities[] | select( .name | contains("default-container")) | .storage_container_uuid][0]'
 ```
 
-Ensuite exécuter cette autre commande pour récupérer l'UUID du réseau d'administration de votre cluster avec les mêmes éléments à modifier que la commande précedente :
+Ensuite exécuter cette autre commande pour récupérer l'UUID du réseau d'administration de votre cluster avec les mêmes éléments à modifier que la commande précédente :
 
 ```bash
 curl -s -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST https://<prism6element-IP>:9440/api/nutanix/v3/subnets/list -d {} | jq -r "[.entities[] | select( .spec.name | contains(\"<subnet name>\")) | .metadata.uuid][0]"
@@ -216,14 +216,14 @@ Créez un fichier nommé **PrismCentralXlarge.json** avec les informations ci-de
 Remplacez ces éléments dans le fichier :
 
 * **\<Prism-Central-Password\>** : Mot de passe de la future machine virtuelle Prism Central.
-* **\<Default-Container-UUID\>** : UUID du stockage par défaut récupéré précedemment.
-* **\<Prism-Central-Private-IP-Address\>** : Adresse IP privé de Prism Central.
+* **\<Default-Container-UUID\>** : UUID du stockage par défaut récupéré précédemment.
+* **\<Prism-Central-Private-IP-Address\>** : Adresse IP privée de Prism Central.
 * **\<Nutanix-Network-Admin-UUID\>** : UUID du réseau d'administration du cluster Nutanix.
 * **\<Nutanix-Network-Admin-mask\>** : Masque de sous réseaux du réseau d'administration du cluster Nutanix.
 * **\<Nutanix-Network-Admin-Gateway\>** : Passerelle par défaut du réseau d'administration du cluster Nutanix.
 
 
-Executer cette commande pour déployer votre machine virtuelle Prism Central en mode X-Large en modifiant ces paramètres :
+Exécuter cette commande pour déployer votre machine virtuelle Prism Central en mode X-Large en modifiant ces paramètres :
 
 * **\<Prism-Element-Password\>** : Mot de passe du compte admin de Prism Element.
 * **\<Prism-Element-Private-IP-Address\>** : Adresse IP privée de Prism Element.
@@ -266,7 +266,7 @@ Saisissez vos Informations personnelles, Cochez la case `I have read ans agree t
 
 ![02 Expand Prism Central 01](images/02-expand-prismcentral-to-three-vm01.png){.thumbnail}
 
-Cliquez `Continue`{.action}. lors de la demande d'activationde Pulse.
+Cliquez `Continue`{.action}. lors de la demande d'activation de Pulse.
 
 ![02 Expand Prism Central 02](images/02-expand-prismcentral-to-three-vm02.png){.thumbnail}
 
@@ -297,7 +297,7 @@ Et cliquez sur `Expand`{.action}.
 ![02 Expand Prism Central 06](images/02-expand-prismcentral-to-three-vm06.png){.thumbnail}
 
 > [!Warning]
-> L'expansion est en cours et peut durée une trentaine de minutes, veuillez patienter pendant cette période
+> L'expansion est en cours et peux durer une trentaine de minutes, veuillez patienter pendant cette période.
 
 ![02 Expand Prism Central 07](images/02-expand-prismcentral-to-three-vm07.png){.thumbnail}
 
@@ -309,7 +309,7 @@ Lorsque l'expansion est finie la configuration apparait dans Prism Central avec 
 
 Nous allons remplacer l'adresse IP de l'URL de Prism Central par la nouvelle adresse IP virtuelle au travers de la configuration du Load Balancer OVHcloud.
 
-Allez dans l'onglet `Ferme de serveurs`{.action} positionnez vous sur NutaClusterAll et cliquez sur l'icône `flêche vers le bas`{.action} pour afficher les serveurs.
+Allez dans l'onglet `Ferme de serveurs`{.action} positionnez-vous sur NutaClusterAll et cliquez sur l'icône `flêche vers le bas`{.action} pour afficher les serveurs.
 
 ![03 Modify Prism Central Https Address 01](images/03-modify-prism-central-https-address01.png){.thumbnail}
 
@@ -320,14 +320,14 @@ Cliquez sur `Ajouter un serveur`{.action}.
 Saisissez ces informations :
 
 * **Nom (Facultatif)** : PC VIP comme Prism Central Virtual IP address.
-* **Adresse IPv4** : Adresse IP privée de la l'adresse IP virtuelle.
+* **Adresse IPv4** : Adresse IP privée virtuelle.
 * **Port** : 9440.
 
 Et cliquez sur `Ajouter`{.action}.
 
 ![03 Modify Prism Central Https Address 03](images/03-modify-prism-central-https-address03.png){.thumbnail}
 
-Cliquez sur l'icône de `Configuration`{.action} representé par trois petits points à droite du serveur **prismCentral** et choisissez `Retirer`{.action} dans le menu.
+Cliquez sur l'icône de `Configuration`{.action} représenté par trois petits points à droite du serveur **prismCentral** et choisissez `Retirer`{.action} dans le menu.
 
 ![03 Modify Prism Central Https Address 04](images/03-modify-prism-central-https-address04.png){.thumbnail}
 
@@ -343,11 +343,11 @@ Sélectionnez le `site`{.action} et cliquez sur `Appliquer la configuration`{.ac
 
 ![03 Modify Prism Central Https Address 07](images/03-modify-prism-central-https-address07.png){.thumbnail}
 
-Re-sélectionnez le `site`{.action} et cliquez sur `Appliquer la configuration`{.action}.
+Resélectionnez le `site`{.action} et cliquez sur `Appliquer la configuration`{.action}.
 
 ![03 Modify Prism Central Https Address 08](images/03-modify-prism-central-https-address08.png){.thumbnail}
 
-Allez dans l'onglet `Task`{.action} pour voir l'avancement des modifications. la tâche sera terminée quand il le status sera sur **done**.
+Allez dans l'onglet `Tâches`{.action} pour voir l'avancement des modifications. La tâche sera terminée quand il le statut sera sur **done**.
 
 ![03 Modify Prism Central Https Address 09](images/03-modify-prism-central-https-address09.png){.thumbnail}
 
