@@ -9,7 +9,7 @@ section: Utilização avançada
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 13/12/2022**
+**Última atualização: 22-12-2022**
 
 ## Objetivo
 
@@ -73,13 +73,15 @@ Depois de fazer isso, adicione o registo PTR (também conhecido como reverse):
 
 Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao separador `Bare Metal Cloud`{.action} e abra `IP`{.action}. 
 
-No menu pendente do **Serviço**, selecione um serviço com um endereço IPv4:
+Se deseja configurar a Reverse DNS num endereço Aditional IP, clique no separador `Additional IP` {.action}.
 
-![Reverse IP](images/servicedropmenu.png){.thumbnail}
+O menu pendente em "**Os meus endereços IP públicos e serviços associados**" permite-lhe filtrar os seus serviços por categoria.
+
+![Reverse IP](images/selectservice2022.png) {.thumbnail}
 
 Clique no botão `...`{.action} à direita da linha correspondente e, a seguir, em `Modificar a reverse`{.action}:
 
-![Reverse IP](images/setreversedns.png){.thumbnail}
+![Reverse IP](images/addreverse2022.png){.thumbnail}
 
 Introduza o seu domínio na secção `Reverse` e clique em `Validar`{.action}.
 

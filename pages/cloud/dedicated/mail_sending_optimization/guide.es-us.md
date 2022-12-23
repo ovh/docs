@@ -9,7 +9,7 @@ section: Uso avanzado
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 13/12/2022**
+**Última actualización: 22-12-2022**
 
 ## Objectivo
 
@@ -69,15 +69,15 @@ A continuación, añada el registro PTR (también conocido como registro inverso
 
 En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `IP`{.action}. 
 
-![IP inversa](images/ipsection.png)
+Si desea configurar el Registro DNS inverso  en una dirección Additional IP, abra la pestaña `Additional IP`{.action}.
 
-En el menú desplegable **Servicio**, seleccione un servicio con una dirección IPv4:
+El menú desplegable en "**Mis direcciones IP públicas y servicios asociados**" le permite filtrar sus servicios por categorías.
 
-![IP inversa](images/servicedropmenu.png){.thumbnail}
+![IP inversa](images/selectservice2022.png){.thumbnail}
 
 Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Cambiar el registro inverso`{.action}:
 
-![IP inversa](images/setreversedns.png){.thumbnail}
+![IP inversa](images/addreverse2022.png){.thumbnail}
 
 Introduzca su dominio en la sección `Registro inverso` y haga clic en `Aceptar`{.action}.
 
