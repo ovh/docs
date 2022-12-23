@@ -306,7 +306,7 @@ When the expansion is complete the configuration appears in Prism Central with o
 
 ![02 Expand Prism Central 08](images/02-expand-prismcentral-to-three-vm08.png){.thumbnail}
 
-### Modification du Load Balancer pour pointer sur l'adresse IP virtuelle de Prism Central
+### Modifying the Load Balancer to point to the Prism Central virtual IP address
 
 We will replace the IP address of the Prism Central URL with the new virtual IP address through the OVHcloud Load Balancer configuration.
 
