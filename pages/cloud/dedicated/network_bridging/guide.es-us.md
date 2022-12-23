@@ -51,7 +51,7 @@ Para este ejemplo, utilizaremos los siguientes valores en nuestros ejemplos de c
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione la sección `IP`{.action}.
 
-Haga clic en la pestaña `Additional IP`{.action}".
+Haga clic en la pestaña `Additional IP`{.action}.
 
 ![manage IPs](images/manageIPs2022.png){.thumbnail}
 

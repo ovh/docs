@@ -53,7 +53,7 @@ Die Codebeispiele in den folgenden Anweisungen sind durch Ihre eigenen Werte zu 
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, gehen Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
 
-Klicken Sie auf den Tab `Zusätzliche IP`{.action}.
+Klicken Sie auf den Tab `Additional IP`{.action}.
 
 ![manage IPs](images/manageIPs2022.png){.thumbnail}
 
