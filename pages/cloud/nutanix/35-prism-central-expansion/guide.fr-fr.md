@@ -230,7 +230,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<P
 ```
 
 > [!warning]
-> Patientez pendant trente minutes pendant le déploiement de cette machine virtuelle
+> Patientez pendant trente minutes pendant le déploiement de cette machine virtuelle.
 >
 
 Saisissez cette commande en modifiant ces options pour créer un fichier **pcregister.json**
@@ -245,7 +245,7 @@ echo "{\"username\":\"admin\",\"password\":\"<Prism-Central-Password>\",\"port\"
 Exécutez cette commande pour enregistrer Prism Element dans votre nouvelle machine virtuelle Prism Central en modifiant ces paramètres :
 
 * **\<Prism-Element-Password\>** : Mot de passe du compte admin de Prism Element
-* **\<Prism-Element-Private-IP-Address\>** : 
+* **\<Prism-Element-Private-IP-Address\>** : Adresse IP privée de Prism Element
 
 ...bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST "https://<Prism-Element-Private-IP-Address>:9440/PrismGateway/services/rest/v1/multicluster/prism_central/register" -d @pcregister.json
@@ -255,7 +255,7 @@ Prism Element est maintenant enregistré dans le nouveau Prism Central.
 
 ### Migration sur mode de Prism Central vers 3 machines virtuelles
 
-Maintenant que Prism Element est rattaché à votre machine virtuelle Prism Central nous allons nous connecter sur Prism Central et étendre la configuration de Prism Central à trois machines virtuelles.
+Maintenant que Prism Element est rattaché à votre machine virtuelle Prism Central nous allons nous connecter sur Prism Central et étendre Prism Central sur trois machines virtuelles.
 
 Connectez-vous à Prism Central avec l'URL fourni lors du déploiement.
 
@@ -267,7 +267,7 @@ Cliquez `Continue`{.action}. lors de la demande d'activationde Pulse.
 
 ![02 Expand Prism Central 02](images/02-expand-prismcentral-to-three-vm02.png){.thumbnail}
 
-Cliquez sur l'icône en `forme d'engrenage`{.action} pour configurer Prism Central.
+Cliquez sur l'icône de configuration de Prism Central en forme `d'engrenage`{.action}.
 
 ![02 Expand Prism Central 03](images/02-expand-prismcentral-to-three-vm03.png){.thumbnail}
 
@@ -304,7 +304,7 @@ Lorsque l'expansion est finie la configuration apparait dans Prism Central avec 
 
 ### Modification du Load Balancer pour pointer sur l'adresse IP virtuelle de Prism Central
 
-Nous allons revenir sur le Load Balancer OVHcloud pour modifier l'adresse IP de la redirection vers Prism Central.
+Nous allons remplacer l'adresse IP de l'URL de Prism Central par la nouvelle adresse IP virtuelle au travers de la configuration du Load Balancer OVHcloud.
 
 Allez dans l'onglet `Ferme de serveurs`{.action} positionnez vous sur NutaClusteraLL et cliquez sur l'icône `flêche vers le bas`{.action} pour afficher les serveurs
 
@@ -324,7 +324,7 @@ Et cliquez sur `Ajouter`{.action}.
 
 ![03 Modify Prism Central Https Address 03](images/03-modify-prism-central-https-address03.png){.thumbnail}
 
-Cliquez sur l'icône de `Configuration`{.action} avec trois petits points à droite du serveur **prismCentral**. et choisissez `Retirer`{.action} dans le menu.
+Cliquez sur l'icône de `Configuration`{.action} representé par trois petits points à droite du serveur **prismCentral** et choisissez `Retirer`{.action} dans le menu.
 
 ![03 Modify Prism Central Https Address 04](images/03-modify-prism-central-https-address04.png){.thumbnail}
 
@@ -348,7 +348,7 @@ Allez dans l'onglet `Task`{.action} pour voir l'avancement des modifications. la
 
 ![03 Modify Prism Central Https Address 09](images/03-modify-prism-central-https-address09.png){.thumbnail}
 
-Vous disposez maintenant de Prism Central en mode X-LARGE avec trois machines virtuelles accessible depuis l'URL fournie lors du déploiement de votre cluster.
+Vous disposez maintenant de Prism Central en mode X-LARGE avec trois machines virtuelles.
 
 ## Aller plus loin <a name="gofurther"></a>
 
