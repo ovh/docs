@@ -154,7 +154,7 @@ ssh nutanix@cluster-nutanix-fqdn
 
 Exécutez ces commandes en ayant au préalable modifié ces informations :
 
-* **<Prism-Central-Private-IP-address>** : Adresse IP privé de Prism Central
+* **\<Prism-Central-Private-IP-address\>** : Adresse IP privé de Prism Central
 * **<Prism-Element-Admin-Password>** : Mot de passe du compte admin de Prism Element
 * **<Prism-Central-VM-Name>** : nom de la machine virtuelle Prism Central
 
@@ -173,7 +173,7 @@ ssh root@private-ip-address-of-one-ahv-servers
 
 Exécutez cette commande pour récupérer le UUID de votre stockage par défaut en ayant modifié ces paramètres :
 
-* **<Prism-Element-Password>** : Mot de passe du compte admin de **Prism Element**.
+* **\<Prism-Element-Password\>** : Mot de passe du compte admin de **Prism Element**.
 * **<Prism-Element-IP>** : Adresse IP privée de Prism Element.
 
 ```bash
