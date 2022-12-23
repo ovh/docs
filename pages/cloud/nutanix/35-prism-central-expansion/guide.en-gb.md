@@ -98,11 +98,11 @@ Go to the `Tasks`{.action} tab to see the progress of the configuration change.
 
 ![Add ssh PE on Load Balancer 09](images/01-add-pe-ssh-on-loadbalancer09.png){.thumbnail}
 
-When the task is finished, go to the `Front-ends`{.action} tab and click `Add Front-ends`{.action}.
+When the task is finished, go to the `Front-ends`{.action} tab and click `Add a Front-end`{.action}.
 
 ![Add ssh PE on Load Balancer 10](images/01-add-pe-ssh-on-loadbalancer10.png){.thumbnail}
 
-When the task is finished, go to the `Front-ends`{.action} tab and click `Add Front-ends`{.action}.
+When the task is finished, go to the `Front-ends`{.action} tab and click `Add a Front-end`{.action}.
 
 * **Name(Optional)** : `PE-FRONTEND`.
 * **Port** : `22`.
@@ -118,7 +118,7 @@ And click `Add`{.action}.
 
 ![Add ssh PE on Load Balancer 12](images/01-add-pe-ssh-on-loadbalancer12.png){.thumbnail}
 
-Click `Apply configuration`{.action} to the right of the warning message `Your load balancer configuration has not been applied in all datacentres`.
+Click `Apply configuration`{.action} to the right of the warning message `Your load balancer configuration has not been applied in all datacenters`.
 
 ![Add ssh PE on Load Balancer 13](images/01-add-pe-ssh-on-loadbalancer13.png){.thumbnail}
 
@@ -145,7 +145,7 @@ ou
 ssh nutanix@cluster-nutanix-fqdn
 ```
 
-### Replacing the Prism Central virtual machine with an X-LARGE machine
+### Replacing the Prism Central virtual machine with an X-Large machine
 
 Run these commands after you have modified this information:
 
@@ -224,7 +224,7 @@ Replace these items in the file :
 * **\<Nutanix-Network-Admin-Gateway\>** : Nutanix cluster administration network default gateway.
 
 
-Run this command to deploy your Prism Central virtual machine in X-Large mode by changing these settings:
+Run this command to deploy your Prism Central virtual machine in X-Large mode by changing these settings :
 
 * **\<Prism-Element-Password\>** : Prism Element admin account password.
 * **\<Prism-Element-Private-IP-Address\>** : Private IP address of Prism Element.
@@ -251,9 +251,9 @@ Run this command to save Prism Element to your new Prism Central virtual machine
 * **\<Prism-Element-Password\>** : Prism Element admin account password.
 * **\<Prism-Element-Private-IP-Address\>** : Private IP address of Prism Element.
 
-...bash
+```bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST "https://<Prism-Element-Private-IP-Address>:9440/PrismGateway/services/rest/v1/multicluster/prism_central/register" -d @pcregister.json
-...
+```
 
 Prism Element is now saved in the new Prism Central.
 
