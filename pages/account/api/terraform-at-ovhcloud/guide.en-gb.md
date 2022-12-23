@@ -107,7 +107,8 @@ Note :
 | SSH keys | ovh & openstack | [ovh_me_ssh_key](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/me_ssh_key). If you use the openstack provider for compute, you will need to use [openstack_compute_keypair_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_keypair_v2) to manage the ssh keys|
 | Project Settings | ovh | [ovh_cloud_project](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project)|
 
-## Web Cloud
+## Web Cloud
+
 ### Domain Names
 | Manager concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
@@ -139,7 +140,7 @@ Note :
 ## Telecom
 This universe is currently not supported by terraform providers
 
-# Resources
+# Resources
 ## Terraform at OVHCloud examples
 - [Public Cloud examples repository on github](https://github.com/ovh/public-cloud-examples)
 - [Creating a kubernetes cluster on Terraform](../../../../platform/kubernetes-k8s/creating-a-cluster-through-terraform/guide.en-gb.md)
