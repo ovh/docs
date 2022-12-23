@@ -282,6 +282,8 @@ Cliquez sur `Confirm`{.action}.
 
 ![02 Expand Prism Central 05](images/02-expand-prismcentral-to-three-vm05.png){.thumbnail}
 
+L'expansion de Prism Central nécessite trois adresses IP privées supplémentaires, une pour l'adresse ip virtuelle et deux pour les nouvelles machines virtuelles.
+
 Faites défiler la fenêtre et saisissez ces informations :
 
 * **Virtual IP** : Adresse ip privée virtuelle de Prism Central
@@ -303,9 +305,53 @@ Lorsque l'expansion est finie la configuration apparait dans Prism Central avec 
 
 ![02 Expand Prism Central 08](images/02-expand-prismcentral-to-three-vm08.png){.thumbnail}
 
+### Modification du Load Balancer pour pointer sur l'adresse IP virtuelle de Prism Central
 
+Nous allons revenir sur le Load Balancer OVHcloud pour modifier l'adresse IP de la redirection vers Prism Central.
 
+Allez dans l'onglet `Ferme de serveurs`{.action} positionnez vous sur NutaClusteraLL et cliquez sur l'icône `flêche vers le bas`{.action} pour afficher les serveurs
 
+![03 Modify Prism Central Https Address 01](images/03-modify-prism-central-https-address01.png){.thumbnail}
+
+Cliquez sur `Ajouter un serveur`{.action}
+
+![03 Modify Prism Central Https Address 02](images/03-modify-prism-central-https-address02.png){.thumbnail}
+
+Saisissez ces information :
+
+* **Nom (Facultatif)** : PC VIP comme Prism Central Virtual IP address
+* **Adresse IPv4** : Adresse IP privée de la l'adresse IP virtuelle
+* **Port** : 9440
+
+Et cliquez sur `Ajouter`{.action}.
+
+![03 Modify Prism Central Https Address 03](images/03-modify-prism-central-https-address03.png){.thumbnail}
+
+Cliquez sur l'icône de `Configuration`{.action} avec trois petits points à droite du serveur **prismCentral**. et choisissez `Retirer`{.action} dans le menu.
+
+![03 Modify Prism Central Https Address 04](images/03-modify-prism-central-https-address04.png){.thumbnail}
+
+Cliquez sur `delete`{.action}.
+
+![03 Modify Prism Central Https Address 05](images/03-modify-prism-central-https-address05.png){.thumbnail}
+
+Cliquez sur `Appliquer la configuration`{.action}.
+
+![03 Modify Prism Central Https Address 06](images/03-modify-prism-central-https-address06.png){.thumbnail}
+
+Sélectionnez le `site`{.action} et cliquez sur `Appliquer la configuration`{.action}.
+
+![03 Modify Prism Central Https Address 07](images/03-modify-prism-central-https-address07.png){.thumbnail}
+
+Re-sélectionnez le `site`{.action} et cliquez sur `Appliquer la configuration`{.action}.
+
+![03 Modify Prism Central Https Address 08](images/03-modify-prism-central-https-address08.png){.thumbnail}
+
+Allez dans l'onglet `Task`{.action} pour voir l'avancement des modifications. la tâche sera terminée quand il le status sera sur **done**.
+
+![03 Modify Prism Central Https Address 09](images/03-modify-prism-central-https-address09.png){.thumbnail}
+
+Vous disposez maintenant de Prism Central en mode X-LARGE avec trois machines virtuelles accessible depuis l'URL fournie lors du déploiement de votre cluster.
 
 ## Aller plus loin <a name="gofurther"></a>
 
