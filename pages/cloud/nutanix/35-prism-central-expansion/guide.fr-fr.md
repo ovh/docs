@@ -227,7 +227,7 @@ Executer cette commande pour déployer votre machine virtuelle Prism Central en 
 
 ```bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST "https://<Prism-Element-Private-IP-Address>:9440/api/nutanix/v3/prism_central" -d @PrismCentralXlarge.json
-...
+```
 
 > [!warning]
 > Patientez pendant trente minutes pendant le déploiement de cette machine virtuelle
