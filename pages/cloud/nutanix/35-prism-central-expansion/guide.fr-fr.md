@@ -144,13 +144,13 @@ ou
 ssh nutanix@cluster-nutanix-fqdn
 ```
 
-### Remplacement de la machine virtuelle Prism Central par une machine en mode X-LARGE
+### Remplacement de la machine virtuelle Prism Central par une machine en mode X-Large
 
 Exécutez ces commandes en ayant au préalable modifié ces informations :
 
 * **\<Prism-Central-Private-IP-address\>** : Adresse IP privé de Prism Central
 * **\<Prism-Element-Admin-Password\>** : Mot de passe du compte admin de Prism Element
-* **\<Prism-Central-VM-Name\>** : nom de la machine virtuelle Prism Central
+* **\<Prism-Central-VM-Name\>** : Nom de la machine virtuelle Prism Central
 
 ```bash
 # Disconnect Prism Element in Prism Central
@@ -256,7 +256,7 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<P
 
 Prism Element est maintenant enregistré dans le nouveau Prism Central.
 
-### Migration sur mode de Prism Central vers 3 machines virtuelles
+### Migration de Prism Central vers 3 machines virtuelles
 
 Maintenant que Prism Element est rattaché à votre machine virtuelle Prism Central nous allons nous connecter sur Prism Central et étendre Prism Central sur trois machines virtuelles.
 
@@ -287,9 +287,9 @@ L'expansion de Prism Central nécessite trois adresses IP privées supplémentai
 Faites défiler la fenêtre et saisissez ces informations :
 
 * **Virtual IP** : Adresse ip privée virtuelle de Prism Central.
-* **VM Name** : nom de la deuxième machine virtuelle Prism Central.
+* **VM Name** : Nom de la deuxième machine virtuelle Prism Central.
 * **IP** : Adresse Ip privée de la deuxième machine virtuelle.
-* **VM Name** : nom de la troisième machine virtuelle Prism Central.
+* **VM Name** : Nom de la troisième machine virtuelle Prism Central.
 * **IP** : Adresse Ip privée de la troisième machine virtuelle.
 
 Et cliquez sur `Expand`{.action}.
