@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 07-11-2022**
+**Ostatnia aktualizacja z dnia 22-12-2022**
 
 ## Wprowadzenie
 
@@ -45,9 +45,15 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 > Network Firewall chroni adresy IP powiązane z serwerem.  Należy zatem skonfigurować reguły dla każdego adresu IP oddzielnie. Wprowadzenie wspólnej konfiguracji dla całego serwera nie jest możliwe.
 > 
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. Kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. 
 
-![Aktywacja Network Firewall ](images/firewall_creation2022.png){.thumbnail}
+Możesz użyć rozwijanego menu w sekcji "Moje publiczne adresy IP i usługi powiązane", aby sortować Twoje usługi według kategorii.
+
+![filter service](images/selectservice.png){.thumbnail}
+
+Następnie kliknij `...`{.action} aby aktywować zaporę na adresie IPv4.
+
+![Włączenie Network Firewall](images/firewallcreation2022.png){.thumbnail}
 
 Następnie wymagane jest potwierdzenie.
 
@@ -82,7 +88,7 @@ Do dyspozycji masz **20 reguł dla każdego adresu IP**.
 
 Dodawanie reguły odbywa się przez kliknięcie po prawej stronie `Dodaj regułę`{.action}.
 
-![Dodawanie reguły](images/ajoutregle1.png){.thumbnail}
+![Dodawanie reguły](images/addarule2022.png){.thumbnail}
 
 Dla każdej reguły możesz wybrać:
 
