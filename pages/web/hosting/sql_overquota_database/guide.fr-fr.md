@@ -70,6 +70,15 @@ Renseignez le mot de passe d'accès à votre base de données en complément des
 
 #### 1.2 - Rechercher les tables les plus volumineuses
 
+> [!Alert]
+>
+> A partir de maintenant, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans PHPMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
+>
+> Soyez sûr des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
+>
+
+Une fois connecté, la page suivante s'affiche :
+
 ### Etape 2 : déterminer l'utilité du contenu présent dans la ou les table(s) volumineuse(s)
 
 ## Aller plus loin <a name="go-further"></a>
