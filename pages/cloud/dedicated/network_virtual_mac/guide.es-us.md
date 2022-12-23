@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 26/07/2022**
+**Última actualización: 22/12/2022**
 
 ## Objetivo
 
@@ -45,7 +45,9 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 
 En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.
 
-![IP](images/manageIPOVHcloud.png){.thumbnail}
+Haga clic en la pestaña `Additional IP`{.action}.
+
+![manage IPs](images/manageIPs2022.png){.thumbnail}
 
 Localice su dirección Additional IP (o su bloque) en la lista, haga clic en el botón `···`{.action} situado al final de la línea correspondiente para ver la lista de opciones y seleccione `Añadir una MAC virtual`{.action}.
 
