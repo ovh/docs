@@ -23,7 +23,7 @@ order: 05
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur le cluster via Prism Central.
-- Connaitre le mot de passe admin de Prism Element (Lors d'un déploiment de cluster ce mot de passe est le même que sur Prism Central mais il peut être changé par la suite).
+- Connaitre le mot de passe admin de Prism Element (Lors dudéploiment d'un cluster Nutanix by OVHcloud ce mot de passe est créé à l'identique de celui de Prism Central mais il peut être changé par la suite).
 
 ## Présentation
 
@@ -31,11 +31,11 @@ Il est possible de déployer Prism Central dans un dimensionnement personnalisé
 
 - Small avec 6 vCPU 26 Gb de mémoire et 500 Gb de stockage par machine virtuelle.
 - Large avec 10 vCPU, 44 Gb de mémoire et 2500 Go de stockage par machine virtuelle.
-- X-Large avec 14 vCPU, 60 Gb de mémoire et 2500 Gb de mémoire.
+- X-Large avec 14 vCPU, 60 Gb de mémoire et 2500 Gb de stockage.
 
-Prism Central peux être déployé sur une machine virtuelle ou sur trois machines virtuelles pour une meilleure résilience.
+Le déploiement par défaut de Prism Central sur Nutanix by OVHcloud est sur une seule machine virtuelle en mode *Small*.
 
-Le mode de déploiement par défaut de Prism Central sur les clusters Nutanix by OVHcloud est *Small* avec une ou trois machines virtuelles.
+Le mode de redéploiement de Prism Central sur les clusters Nutanix by OVHcloud est *Small* avec une ou trois machines virtuelles.
 
 ## En pratique
 
@@ -45,11 +45,9 @@ Nous allons voir comment remplacer Prism Central en Mode Small sur une seule mac
 > Le remplacement du mode de fonctionnement de Prism Central implique la suppression de Prism Central et de toutes les options gérées par Prism Central (Microsegmentation, Disaster recovery, etc...)
 >
 
-### Paramètrage de l'accès à Prism Element via l'espace client OVHcloud
+### Configuration de l'accès à Prism Element en SSH avec le Load Balancer OVHcloud
 
-Nous allons créer un accès à Prism Element en SSH avec le Load Balancer.
-
-Allez dans votre espace client OVHcloud choisissez l'onglet `Hosted Private Cloud`{.action} en haut, ensuite dans la rubrique Nutanix à gauche cliquez sur votre `Cluster`{.action} et faite défiler la fenêtre et cliquez sur le  `Load Balancer`{.action} associé à votre cluster.
+Allez dans votre espace client OVHcloud choisissez l'onglet `Hosted Private Cloud`{.action} en haut, ensuite cliquez sur votre `Cluster`{.action} à gauche dans la catégorie **Nutanix**, faites défiler la fenêtre et cliquez sur le `Load Balancer`{.action} associé à votre cluster.
 
 ![Add ssh PE on Load Balancer 01](images/01-add-pe-ssh-on-loadbalancer01.png){.thumbnail}
 
@@ -99,7 +97,7 @@ Allez dans l'onglet `Tâches`{.action} pour voir l'avancement de la modification
 
 ![Add ssh PE on Load Balancer 09](images/01-add-pe-ssh-on-loadbalancer09.png){.thumbnail}
 
-Quand la tâche sera finie allez dans l'onglet `Frontends`{.action} et cliquez sur `Ajouter un frontend`{.action}.
+Lorsque la tâche sera terminée, allez dans l'onglet `Frontends`{.action} et cliquez sur `Ajouter un frontend`{.action}.
 
 ![Add ssh PE on Load Balancer 10](images/01-add-pe-ssh-on-loadbalancer10.png){.thumbnail}
 
@@ -113,13 +111,13 @@ Ensuite cliquez sur `Afficher`{.action}.
 
 ![Add ssh PE on Load Balancer 11](images/01-add-pe-ssh-on-loadbalancer11.png){.thumbnail}
 
-Dans l'option **Restreindre l'accès à des IPs** saisissez le réseau ou l'adresse ip qui aura l'autorisation d'accès sur Prism Element en SSH au ormation XX.XX.XX.XX ou XX.XX.XX.XX/XX.
+Dans l'option **Restreindre l'accès à des IPs** saisissez le réseau ou l'adresse ip qui aura l'autorisation d'accès sur Prism Element en SSH avec ce format XX.XX.XX.XX ou XX.XX.XX.XX/XX.
 
 Et cliquez sur `Ajouter`{.action}.
 
 ![Add ssh PE on Load Balancer 12](images/01-add-pe-ssh-on-loadbalancer12.png){.thumbnail}
 
-Cliquez sur `Appliquer la configuration`{.action} à l'intérieur de l'encadré jaune.
+Cliquez sur `Appliquer la configuration`{.action} à droite du message d'avertissement "La configuration de votre load balancer n'est pas appliquée dans tous les datacenters". 
 
 ![Add ssh PE on Load Balancer 13](images/01-add-pe-ssh-on-loadbalancer13.png){.thumbnail}
 
@@ -127,7 +125,7 @@ Sélectionnez votre site et cliquez sur `Appliquer la configuration`{.action}.
 
 ![Add ssh PE on Load Balancer 14](images/01-add-pe-ssh-on-loadbalancer14.png){.thumbnail}
 
-Sélectionnez votre site et cliquez sur `Appliquer la configuration`{.action}.
+refaites une sélection de votre site et cliquez sur `Appliquer la configuration`{.action}.
 
 ![Add ssh PE on Load Balancer 15](images/01-add-pe-ssh-on-loadbalancer15.png){.thumbnail}
 
@@ -169,7 +167,7 @@ ssh root@private-ip-address-of-one-ahv-servers
 
 Exécutez cette commande pour récupérer le UUID de votre stockage par défaut en ayant modifié ces paramètres :
 
-* **\<Prism-Element-Password\\>** : Mot de passe du compte admin de **Prism Element**.
+* **\<Prism-Element-Password\>** : Mot de passe du compte admin de **Prism Element**.
 * **\<Prism-Element-IP\>** : Adresse IP privée de Prism Element.
 
 ```bash
@@ -179,10 +177,10 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<P
 Et cette commande pour récuperer l'UUID du réseau d'administration de votre cluster avec les mêmes éléments à modifier que la commande précedente :
 
 ```bash
-curl -s -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST https://\<prism element ip\>:9440/api/nutanix/v3/subnets/list -d {} | jq -r "[.entities[] | select( .spec.name | contains(\"<subnet name>\")) | .metadata.uuid][0]"
+curl -s -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST https://<prism6element-IP>:9440/api/nutanix/v3/subnets/list -d {} | jq -r "[.entities[] | select( .spec.name | contains(\"<subnet name>\")) | .metadata.uuid][0]"
 ```
 
-Créez un fichier nommé **PrismCentralXlarge.json** et rajouter ce texte en remplaçant ces élements :
+Créez un fichier nommé **PrismCentralXlarge.json** avec les informations ci-dessous en remplaçant ces élements :
 
 * **\<Prism-Central-Password\>** : Mot de passe de la future machine virtuelle Prism Central.
 * **\<Default-Container-UUID\>** : UUID du stockage par défaut récupéré précedemment.
@@ -222,30 +220,30 @@ Créez un fichier nommé **PrismCentralXlarge.json** et rajouter ce texte en rem
 }
 ```
 
-Executer cette commande pour déployer votre machine virtuelle Prism Central en mode X-Large en modifiant ces paramètres
+Executer cette commande pour déployer votre machine virtuelle Prism Central en mode X-Large en modifiant ces paramètres :
 
 * **\<Prism-Element-Password\>** : Mot de passe du compte admin de Prism Element
 * **\<Prism-Element-Private-IP-Address\>** : Adresse IP privée de Prism Element
 
-
-...bash
-curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:\<Prism-Element-Password\>" -X POST "https://\<Prism-Element-Private-IP-Address\>:9440/api/nutanix/v3/prism_central" -d @PrismCentralXlarge.json
+```bash
+curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<Prism-Element-Password>" -X POST "https://<Prism-Element-Private-IP-Address>:9440/api/nutanix/v3/prism_central" -d @PrismCentralXlarge.json
 ...
 
 > [!warning]
-> Patientez pendant trente minutes pendant le déploiement de cette machine virtuelles
+> Patientez pendant trente minutes pendant le déploiement de cette machine virtuelle
 >
 
 Saisissez cette commande en modifiant ces options pour créer un fichier **pcregister.json**
 
-* **\<Prism-Central-Password\>** : 
-* **\<Prism-Central-Private-IP-Address\>** :
+* **\<Prism-Central-Password\>** : Mot de Passe de Prism Central
+* **\<Prism-Central-Private-IP-Address\>** : Adresse IP privée de Prism Central
 
-...bash
-echo "{\"username\":\"admin\",\"password\":\"\<Prism-Central-Password\>\",\"port\":9440,\"ipAddresses\":[\"<Prism-Central-Private-IP-address>\"]}" \>pcregister.json
-...
+```bash
+echo "{\"username\":\"admin\",\"password\":\"<Prism-Central-Password>\",\"port\":9440,\"ipAddresses\":[\"<Prism-Central-Private-IP-Address>\"]}" > pcregister.json
+```
 
-Executez cette commande pour enregistrer Prism Element dans votre nouvelle machine virtuelle Prism Central en modifiant ces paramètres :
+
+Exécutez cette commande pour enregistrer Prism Element dans votre nouvelle machine virtuelle Prism Central en modifiant ces paramètres :
 
 * **\<Prism-Element-Password\>** : Mot de passe du compte admin de Prism Element
 * **\<Prism-Element-Private-IP-Address\>** : 
