@@ -27,15 +27,15 @@ order: 05
 
 ## Présentation
 
-Il est possible de déployer Prism Central avec un dimensionnement personnalisé avec ces options :
+Il est possible de déployer Prism Central dans un dimensionnement personnalisé avec ces options :
 
 - Small avec 6 vCPU 26 Gb de mémoire et 500 Gb de stockage par machine virtuelle.
 - Large avec 10 vCPU, 44 Gb de mémoire et 2500 Go de stockage par machine virtuelle.
 - X-Large avec 14 vCPU, 60 Gb de mémoire et 2500 Gb de mémoire.
 
-Prism Central peut être déployé sur une machine virtuelle ou sur trois machines virtuelles pour une meilleur résilience.
+Prism Central peux être déployé sur une machine virtuelle ou sur trois machines virtuelles pour une meilleure résilience.
 
-Le mode de déploiement de Prism Central sur les clusters Nutanix by OVHcloud est *Small* avec une ou trois machines virtuelles.
+Le mode de déploiement par défaut de Prism Central sur les clusters Nutanix by OVHcloud est *Small* avec une ou trois machines virtuelles.
 
 ## En pratique
 
@@ -76,14 +76,14 @@ A l'intérieur de la ferme de serveurs cliquez sur `Ajouter un serveur`{.action}
 Completez ces valeurs : 
 
 * **Nom (facultatif)** : `PE SSH`
-* **adresse IPv4** : `Prism Element IP Address`
+* **adresse IPv4** : `Adresse IP de Prism Element`
 * **Port** : `22`
 
 Et cliquez sur `Ajouter`{.action}
 
 ![Add ssh PE on Load Balancer 05](images/01-add-pe-ssh-on-loadbalancer05.png){.thumbnail}
 
-Cliquez sur `Appliquer la configuration`{.action} à l'intérieur de l'encadré jaune.
+Cliquez sur `Appliquer la configuration`{.action} à droite du message d'avertissement "La configuration de votre load balancer n'est pas appliquée dans tous les datacenters". 
 
 ![Add ssh PE on Load Balancer 06](images/01-add-pe-ssh-on-loadbalancer06.png){.thumbnail}
 
