@@ -65,7 +65,7 @@ Aby zoptymalizować wysyłkę i zmniejszyć ryzyko blokady kont e-mail, należy 
 
 Najpierw należy utworzyć rekord A w strefie DNS domeny, używając adresu IP Twojego serwera jako celu.
 
-Jeśli Twoje serwery DNS są zarządzane przez OVHcloud, zapoznaj się z tym [przewodnikiem](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/#dostep-do-interfejsu-zarzadzania-strefa-dns).
+Jeśli Twoje Rewers DNS są zarządzane przez OVHcloud, zapoznaj się z tym [przewodnikiem](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/#dostep-do-interfejsu-zarzadzania-strefa-dns).
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 
@@ -73,7 +73,7 @@ Następnie dodaj rekordu PTR (znany również jako rewers):
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do zakładki `Bare Metal Cloud`{.action}, a następnie otwórz `IP`{.action}. 
 
-Jeśli chcesz skonfigurować rewers DNS na adresie Additional IP, kliknij zakładkę `Additional IP`{.action}.
+Jeśli chcesz skonfigurować Rewers DNS na adresie Additional IP, kliknij zakładkę `Additional IP`{.action}.
 
 W rozwijanym menu pod "**Moje publiczne adresy IP i usługi powiązane**" możesz sortować Twoje usługi według kategorii.
 
