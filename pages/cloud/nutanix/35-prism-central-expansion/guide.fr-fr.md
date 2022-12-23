@@ -10,7 +10,7 @@ order: 05
 
 ## Objectif
 
-**Ce guide vous explique comment remplacer votre déploiement Prism Central initial sur une seule machine virtuelle a trois machine virtuelles**.
+**Ce guide vous montre comment redéployer Prism-Central en mode X-LARGE sur trois machines virtuelles**.
 
 
 > [!warning]
@@ -27,19 +27,19 @@ order: 05
 
 ## Présentation
 
-Lorsque vous déployez votre cluster vous avez la possibilité de choisir le dimensionnement de Prism Central sur une ou trois machines virtuelles. Cette option est modifiable lorsque vous redéployer votre cluster mais toutes les données du cluster Nutanix sont effacées.\<br\>
-
-**Prism Central** peux être dimensionné avec une ou trois machines virtuelles pour une meilleure résilience, il est aussi possible d'avoir un dimensionnement de chaque machine virtuelles plus importante.
+Il est possible de déployer Prism Central avec un dimensionnement personnalisé avec ces options :
 
 - Small avec 6 vCPU 26 Gb de mémoire et 500 Gb de stockage par machine virtuelle.
 - Large avec 10 vCPU, 44 Gb de mémoire et 2500 Go de stockage par machine virtuelle.
 - X-Large avec 14 vCPU, 60 Gb de mémoire et 2500 Gb de mémoire.
 
-Le mode de déploiement de Prism Central sur les cluster Nutanix by OVHcloud est en mode *Small* avec une machine virtuelle ou trois machines virtuelles.
+Prism Central peut être déployé sur une machine virtuelle ou sur trois machines virtuelles pour une meilleur résilience.
+
+Le mode de déploiement de Prism Central sur les clusters Nutanix by OVHcloud est *Small* avec une ou trois machines virtuelles.
 
 ## En pratique
 
-Nous allons voir comment remplacer Prism Central en Mode Small sur une seule machine virtuelle par un Prism Central en mode X-Large et ensuite étendre Prism Central sur 3 machines virtuelles pour plus de résiliance
+Nous allons voir comment remplacer Prism Central en Mode Small sur une seule machine virtuelle par un Prism Central en mode X-Large et ensuite étendre Prism Central sur 3 machines virtuelles pour plus de résiliance.
 
 > [!warning]
 > Le remplacement du mode de fonctionnement de Prism Central implique la suppression de Prism Central et de toutes les options gérées par Prism Central (Microsegmentation, Disaster recovery, etc...)
@@ -53,15 +53,11 @@ Allez dans votre espace client OVHcloud choisissez l'onglet `Hosted Private Clou
 
 ![Add ssh PE on Load Balancer 01](images/01-add-pe-ssh-on-loadbalancer01.png){.thumbnail}
 
-Dans les pages de de configuration de votre Load Balancer allez dans l'onglet `Ferme de serveurs`{.action} et cliquez sur 
-
-`Ajouter une ferme de serveurs`{.action}.
+Dans les pages de configuration de votre Load Balancer allez dans l'onglet `Ferme de serveurs`{.action} et cliquez sur `Ajouter une ferme de serveurs`{.action}.
 
 ![Add ssh PE on Load Balancer 02](images/01-add-pe-ssh-on-loadbalancer02.png){.thumbnail}
 
 Saisissez ces informations :
-
-* **** : ``
 
 * **Nom (facultatif)** : `PE SSH`
 * **Protocole** : `TCP`
@@ -261,6 +257,52 @@ curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:<P
 Prism Element est maintenant enregistré dans le nouveau Prism Central.
 
 ### Migration sur mode de Prism Central vers 3 machines virtuelles
+
+Maintenant que Prism Element est rattaché à votre machine virtuelle Prism Central nous allons nous connecter sur Prism Central et étendre la configuration de Prism Central à trois machines virtuelles.
+
+Connectez-vous à Prism Central avec l'URL fourni lors du déploiement.
+
+Saisissez vos Informations personnelles, Cochez la case `I have read ans agree to the terms and conditions`.{action} et cliquez sur `Accept`{.action}.
+
+![02 Expand Prism Central 01](images/02-expand-prismcentral-to-three-vm01.png){.thumbnail}
+
+Cliquez `Continue`{.action}. lors de la demande d'activationde Pulse.
+
+![02 Expand Prism Central 02](images/02-expand-prismcentral-to-three-vm01.png){.thumbnail}
+
+Cliquez sur l'icône en `forme d'engrenage`{.action} pour configurer Prism Central.
+
+![02 Expand Prism Central 03](images/02-expand-prismcentral-to-three-vm03.png){.thumbnail}
+
+Cliquez à gauche sur `Prism Central Management`{.action} et cliquez sur `Scale Out PC`{.action}.
+
+![02 Expand Prism Central 04](images/02-expand-prismcentral-to-three-vm04.png){.thumbnail}
+
+Cliquez sur `Confirm`{.action}.
+
+![02 Expand Prism Central 05](images/02-expand-prismcentral-to-three-vm05.png){.thumbnail}
+
+Faites défiler la fenêtre et saisissez ces informations :
+
+* **Virtual IP** : Adresse ip privée virtuelle de Prism Central
+* **VM Name** : nom de la deuxième machine virtuelle Prism Central
+* **IP** : Adresse Ip privée de la deuxième machine virtuelle
+* **VM Name** : nom de la troisième machine virtuelle Prism Central
+* **IP** : Adresse Ip privée de la troisième machine virtuelle
+
+Et cliquez sur `Expand`{.action}.
+
+![02 Expand Prism Central 06](images/02-expand-prismcentral-to-three-vm06.png){.thumbnail}
+
+> [!Warning]
+> L'expansion est en cours et peut durée une trentaine de minutes, veuillez patienter pendant cette période
+
+![02 Expand Prism Central 07](images/02-expand-prismcentral-to-three-vm07.png){.thumbnail}
+
+Lorsque l'expansion est finie la configuration apparait dans Prism Central avec une adresse IP virtuelles et 3 adresses IP pour chaque machine virtuelle.
+
+![02 Expand Prism Central 08](images/02-expand-prismcentral-to-three-vm08.png){.thumbnail}
+
 
 
 
