@@ -10,7 +10,7 @@ order: 7
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 24/11/2022**
+**Última atualização: 22-12-2022**
 
 > [!primary]
 >
@@ -63,17 +63,19 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `IP`{.action}.
 
-O menu pendente "Service" permite-lhe selecionar apenas os endereços Additional IP.
+Clique no separador `Additional IP`{.action}.
 
-Clique no botão `...`{.action} à direita do endereço IP a migrar e, a seguir, em `Migrar o Additional IP`{.action}.
+![manage IPs](images/manageIPs2022.png){.thumbnail}
 
-![Área de Cliente](images/manager02.png){.thumbnail}
+Clique no botão `...`{.action} à direita do endereço IP a migrar e, a seguir, em `Mover Additional IP`{.action}.
+
+![Área de Cliente](images/moveadditionalIP.png){.thumbnail}
 
 No menu contextual que aparece, selecione o serviço para o qual mover o endereço IP.
 
 Clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
-![Área de Cliente](images/manager03.png){.thumbnail}
+![Área de Cliente](images/moveadditionalIP2.png){.thumbnail}
 
 ### Migrar um IP através das API
 
