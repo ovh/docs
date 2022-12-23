@@ -1,8 +1,8 @@
 ---
-title: RACI pour les instances Public Cloud
+title: RACI for Public Cloud Instances
 slug: raci-instances-public-cloud
 section: General information
-excerpt: "Shared responsibilities between OVHcloud and the customer Public Cloud Instances"
+excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Instances"
 order: 5
 ---
 
