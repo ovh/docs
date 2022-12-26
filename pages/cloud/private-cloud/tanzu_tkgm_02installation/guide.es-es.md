@@ -363,7 +363,7 @@ Go to the vCenter interface to see the seven virtual machines created.
 
 [Introducing VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
-[Documentation de VMware Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
+[Documentation de VMware Tanzu Kubenetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
 
 [Manual installation of the CLI tool for the deployment of Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 

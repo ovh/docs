@@ -147,7 +147,7 @@ Une application peut être constituée de plusieurs pods qui communiquent entre 
 
 [Présentation VMware de Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
-[Documentation VMware de Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
+[Documentation VMware de Tanzu Kubenetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
 
 [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
