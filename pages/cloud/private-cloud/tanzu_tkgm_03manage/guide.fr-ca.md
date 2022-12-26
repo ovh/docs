@@ -1,7 +1,7 @@
 ---
 title: Administrer Tanzu Management Cluster Grid
 slug: tanzu-tkgm-management
-excerpt: Administration de TKG pour créér un cluster de Workload et ajouter des applications dans ce cluster
+excerpt: Administration de TKG pour créer un cluster de Workload et ajouter des applications dans ce cluster
 section: Tanzu
 order: 04
 ---
@@ -10,7 +10,7 @@ order: 04
 
 ## Objectif
 
-**Ce guide vous permet de créér un cluster de *Workload* et ajouter des applications dans ce cluster.**
+**Ce guide vous permet de créer un cluster de *Workload* et ajouter des applications dans ce cluster.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
