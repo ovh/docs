@@ -6,7 +6,7 @@ section: Optimiser son site
 order: 05
 ---
 
-**Dernière mise à jour le 14/12/2022**
+**Dernière mise à jour le 14/12/2022** 
  
 ## Objectif
 
@@ -18,7 +18,7 @@ Cette géolocalisation est basée sur l'adresse IP de l'hébergement où se trou
 
 L'option de géolocalisation sur votre hébergement peut être utile pour le référencement (SEO) si votre site web a pour vocation d'être principalement consulté dans un pays différent de celui où se situe votre hébergement mutualisé.
 
-**Découvrez comment géolocaliser votre site web à l'aide de nos adresses IP géolocalisées**
+**Découvrez comment géolocaliser votre site web à l'aide de nos adresses IP géolocalisées.**
 
 ## Prérequis
 
