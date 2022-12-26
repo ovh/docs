@@ -1,7 +1,7 @@
 ---
 title: Administrer Tanzu Management Cluster Grid
 slug: tanzu-tkgm-management
-excerpt: Administration de TKG pour créér un cluster de Workload et ajouter des applications dans ce cluster
+excerpt: Administration de TKG pour créer un cluster de Workload et ajouter des applications dans ce cluster
 section: Tanzu
 order: 04
 ---
@@ -10,7 +10,7 @@ order: 04
 
 ## Objectif
 
-**Ce guide vous permet de créér un cluster de *Workload* et ajouter des applications dans ce cluster.**
+**Ce guide vous permet de créer un cluster de *Workload* et ajouter des applications dans ce cluster.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -147,7 +147,7 @@ Une application peut être constituée de plusieurs pods qui communiquent entre 
 
 [Présentation VMware de Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
-[Documentation VMware de Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
+[Documentation VMware de Tanzu Kubenetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
 
 [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 
