@@ -9,7 +9,7 @@ section: 'Rete e IP'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 06/10/2022**
+**Ultimo aggiornamento: 22/12/2022**
 
 > [!primary]
 >
@@ -53,13 +53,13 @@ Per questo esempio, nei nostri esempi di codice utilizzeremo i seguenti valori: 
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Bare Metal Cloud`{.action} e apri il menu `IP`{.action}.
 
-Il menu a tendina “Service” ti permette di selezionare solo gli Additional IP.
+Clicca sulla scheda `Additional IP`{.action}.
 
-![manage IPs](images/manageIPs.png){.thumbnail}
+![manage IPs](images/manageIPs2022.png){.thumbnail}
 
-Clicca sui tre puntini `..`{.action}. e poi su `Aggiungi un indirizzo MAC virtuale`{.action}.
+Clicca sui tre puntini `...`{.action} e poi su `Aggiungi un indirizzo MAC virtuale`{.action}.
 
-![Aggiungi un MAC virtuale (1)](images/virtual_mac_02_2020.png){.thumbnail}
+![Aggiungi un MAC virtuale (1)](images/addvmac.png){.thumbnail}
 
 Seleziona "ovh" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome della macchina virtuale" e clicca su `Conferma`{.action}.
 

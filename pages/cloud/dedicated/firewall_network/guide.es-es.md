@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 07/11/2022**
+**Última actualización: 22/12/2022**
 
 ## Objetivo
 
@@ -46,9 +46,14 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 > 
 
 Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.<br>
-Haga clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 en la que quiera activar el cortafuegos y seleccione `Crear firewall`{.action}.
 
-![Activación del firewall de red](images/firewall_creation2022.png){.thumbnail}
+Puede utilizar el menú desplegable "Mis direcciones IP públicas y servicios asociados" para filtrar sus servicios por categorías.
+
+![filter service](images/selectservice.png){.thumbnail}
+
+A continuación, haga clic en el botón `...`{.action} situado a la derecha de la IPv4 correspondiente y seleccione `Crear firewall`{.action}.
+
+![Activación del firewall de red](images/firewallcreation2022.png){.thumbnail}
 
 Confirme la operación haciendo clic en `Aceptar`{.action}.
 
@@ -84,7 +89,7 @@ Es posible añadir hasta **20 reglas por IP**.
 
 Para añadir una regla, haga clic en el botón `Añadir una regla`{.action}.
 
-![Añadir una regla](images/ajoutregle1.png){.thumbnail}
+![Añadir una regla](images/addarule2022.png){.thumbnail}
 
 Para cada regla es necesario seleccionar:
 

@@ -10,7 +10,7 @@ order: 7
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 24-11-2022**
+**Ostatnia aktualizacja z dnia 22-12-2022**
 
 > [!primary]
 >
@@ -66,19 +66,19 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action}, następnie otwórz sekcję  `IP`{.action}.
 
-![Panelu klienta](images/manager01.png){.thumbnail}
+Kliknij na zakładkę `Additional IP`{.action}.
 
-W rozwijanym menu "Service" możesz wybrać tylko adresy Additional IP.
+![manage IPs](images/manageIPs2022.png){.thumbnail}
 
 Kliknij przycisk `...`{.action} po prawej stronie przenoszonego adresu IP, a następnie `Przenieś Additional IP`{.action}.
 
-![Panelu klienta](images/manager02.png){.thumbnail}
+![Panelu klienta](images/moveadditionalIP.png){.thumbnail}
 
 W menu, które się wyświetla wybierz usługę, do której chcesz przenieść adres IP.
 
 Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
-![Panelu klienta](images/manager03.png){.thumbnail}
+![Panelu klienta](images/moveadditionalIP2.png){.thumbnail}
 
 ### Przeniesienie IP przez API
 

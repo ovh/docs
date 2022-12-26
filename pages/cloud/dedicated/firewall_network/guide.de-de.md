@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 07.11.2022**
+**Letzte Aktualisierung am 22.12.2022**
 
 ## Ziel
 
@@ -46,7 +46,13 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 > Network Firewall schützt die IP-Adressen, die mit einer Maschine verbunden sind. Daher ist es notwendig, jede IP-Adresse einzeln zu konfigurieren, eine globale Serverkonfiguration ist nicht möglich.
 > 
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `IP`{.action} und klicken Sie auf `...`{.action}, um die Firewall für die gewünschte IPv4-Adresse zu aktivieren.
+Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `IP`{.action}.
+
+Sie können das Dropdown-Menü unter "Meine öffentlichen IP-Adressen und dazugehörigen Dienste" verwenden, um Ihre Dienste nach Kategorie zu filtern.
+
+![filter service](images/selectservice.png){.thumbnail}
+
+Klicken Sie auf `...`{.action}, um die Firewall für eine IPv4-Adresse zu aktivieren.
 
 ![Aktivierung der Network Firewall](images/firewall_creation2022.png){.thumbnail}
 
@@ -87,7 +93,7 @@ Sie können bis zu **20 Regeln für jede IP-Adresse** festlegen.
 Um eine Regel hinzuzufügen, klicken Sie rechts auf die Schaltfläche `Eine Regel hinzufügen`{.action}:
 
 
-![Regel hinzufügen](images/ajoutregle1.png){.thumbnail}
+![Regel hinzufügen](images/addarule2022.png){.thumbnail}
 
 Legen Sie dann für jede Regel folgende Einstellungen fest:
 
