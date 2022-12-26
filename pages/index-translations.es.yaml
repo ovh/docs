@@ -1,14 +1,14 @@
 account-and-service-management-account-information: Información de cuenta
-account-and-service-management-account-information-getting-started: Primeros pasos
 account-and-service-management-account-information-faq: FAQ
+account-and-service-management-account-information-getting-started: Primeros pasos
 account-and-service-management-account-information-security-and-conformity: Seguridad y conformidad
 account-and-service-management-api: API
 account-and-service-management-api-apiv: APIv6
 account-and-service-management-api-getting-started: Primeros pasos
-account-and-service-management-managing-billing-payments-and-services: Gestión de facturación, pagos y servicio
+account-and-service-management-managing-billing-payments-and-services: Gestionar la facturación, los pagos y los servicios
 account-and-service-management-managing-billing-payments-and-services-api: API
 account-and-service-management-managing-billing-payments-and-services-faq: FAQ
-account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Facturas, facturación y pagos
+account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Facturación y pagos
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-hosted-private-cloud: Hosted Private Cloud
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-public-cloud: Public Cloud
 account-and-service-management-managing-billing-payments-and-services-renewing-a-service: Renovación de un servicio
@@ -21,8 +21,8 @@ bare-metal-cloud-data-platforms-metrics-data-platform-visualisation: Visualizaci
 bare-metal-cloud-dedicated-servers: Servidores dedicados
 bare-metal-cloud-dedicated-servers-advanced-usage: Uso avanzado
 bare-metal-cloud-dedicated-servers-getting-started: Primeros pasos
-bare-metal-cloud-dedicated-servers-managing-servers: Gestionar un servidor
-bare-metal-cloud-dedicated-servers-miscellaneous: Varios
+bare-metal-cloud-dedicated-servers-managing-servers: Gestionar los servidores
+bare-metal-cloud-dedicated-servers-miscellaneous: Miscelánea
 bare-metal-cloud-dedicated-servers-network-and-ip-management: Red e IP
 bare-metal-cloud-dedicated-servers-raid-and-disks: RAID y discos
 bare-metal-cloud-dedicated-servers-security: Seguridad
@@ -32,7 +32,7 @@ bare-metal-cloud-dedicated-servers-vrack: vRack
 bare-metal-cloud-managed-bare-metal: Managed Bare Metal
 bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Primeros pasos
-bare-metal-cloud-managed-bare-metal-managing-virtual-machines: Gestión de máquinas virtuales
+bare-metal-cloud-managed-bare-metal-managing-virtual-machines: Gestionar las máquinas virtuales
 bare-metal-cloud-managed-bare-metal-ovhcloud-features: Funcionalidades de OVHcloud
 bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Servicios y opciones de OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funcionalidades de VMware vSphere
@@ -41,7 +41,7 @@ bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfr
 bare-metal-cloud-network-and-security-solutions-load-balancer: Load Balancer
 bare-metal-cloud-network-and-security-solutions-load-balancer-faq: FAQ
 bare-metal-cloud-network-and-security-solutions-load-balancer-getting-started: Primeros pasos
-bare-metal-cloud-network-and-security-solutions-load-balancer-setting-up: Puesta en marcha
+bare-metal-cloud-network-and-security-solutions-load-balancer-setting-up: Configuración
 bare-metal-cloud-network-and-security-solutions-load-balancer-use-cases: Casos de uso
 bare-metal-cloud-network-and-security-solutions-load-balancer-viewing-statuses: Consultar los estados
 bare-metal-cloud-network-and-security-solutions-ovhcloud-connect: OVHcloud Connect
@@ -51,13 +51,13 @@ bare-metal-cloud-network-and-security-solutions-ovhcloud-connect-getting-started
 bare-metal-cloud-network-and-security-solutions-ovhcloud-connect-technical-resources: Recursos técnicos
 bare-metal-cloud-virtual-private-servers: Servidores Privados Virtuales
 bare-metal-cloud-virtual-private-servers-advanced-usage: Uso avanzado
-bare-metal-cloud-virtual-private-servers-backups: Backup
+bare-metal-cloud-virtual-private-servers-backups: Backups
 bare-metal-cloud-virtual-private-servers-getting-started: Primeros pasos
-bare-metal-cloud-virtual-private-servers-network-and-ip-management: Gestión de redes e IP
+bare-metal-cloud-virtual-private-servers-network-and-ip-management: Red e IP
 bare-metal-cloud-virtual-private-servers-troubleshooting: Resolución de problemas
 bare-metal-cloud-virtual-private-servers-tutorials: Tutoriales
 hosted-private-cloud-cloud-desktop-infrastructure: Cloud Desktop Infrastructure
-hosted-private-cloud-cloud-desktop-infrastructure-setting-up: Puesta en marcha
+hosted-private-cloud-cloud-desktop-infrastructure-setting-up: Configuración
 hosted-private-cloud-cloud-desktop-infrastructure-tutorials: Tutoriales
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix: Hosted Private Cloud powered by Nutanix
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-advanced-usage: Uso avanzado
@@ -68,7 +68,7 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-faq: FAQ
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Primeros pasos
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Mantenimiento y supervisión
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-resources: Gestionar los recursos
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Gestionar una máquina virtual
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Gestionar las máquinas virtuales
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-meltdown-and-spectre-information: Información sobre Meltdown y Spectre
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Redes
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
@@ -77,7 +77,7 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-an
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-security: Seguridad
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: Funcionalidades de VMware vSphere
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: vROps
-hosted-private-cloud-private-cloud: Private Cloud
+hosted-private-cloud-private-cloud: Hosted Private Cloud
 hosted-private-cloud-private-cloud-managing-resources: Gestionar los recursos
 hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Servicios y opciones de OVHcloud
 ovhcloud-labs-data-collector: Data Collector
@@ -89,7 +89,7 @@ ovhcloud-labs-power-web-hosting-python: Python
 ovhcloud-labs-power-web-hosting-ruby: Ruby
 ovhcloud-labs-prescience: Prescience
 ovhcloud-labs-prescience-getting-started: Primeros pasos
-public-cloud-ai--machine-learning: AI & machine learning
+public-cloud-ai--machine-learning: IA y machine learning
 public-cloud-ai--machine-learning-ai-notebooks: AI Notebooks
 public-cloud-ai--machine-learning-ai-notebooks-guides: Guías
 public-cloud-ai--machine-learning-ai-notebooks-tutorials: Tutoriales
@@ -103,7 +103,7 @@ public-cloud-containers-orchestration-managed-kubernetes-ks-getting-started: Pri
 public-cloud-containers-orchestration-managed-kubernetes-ks-technical-resources: Recursos técnicos
 public-cloud-containers-orchestration-managed-kubernetes-ks-troubleshooting: Resolución de problemas
 public-cloud-containers-orchestration-managed-kubernetes-ks-tutorials: Tutoriales
-public-cloud-containers-orchestration-managed-kubernetes-ks-user-guides: Guías
+public-cloud-containers-orchestration-managed-kubernetes-ks-user-guides: Guías de usuario
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Primeros pasos
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutoriales
@@ -111,7 +111,7 @@ public-cloud-data-analytics: Data Analytics
 public-cloud-data-analytics-data-processing: Data Processing
 public-cloud-data-analytics-data-processing-concepts: Conceptos
 public-cloud-data-analytics-data-processing-getting-started: Primeros pasos
-public-cloud-data-analytics-data-processing-how-to: Utilización
+public-cloud-data-analytics-data-processing-how-to: Guías de uso
 public-cloud-data-analytics-data-processing-supported-computing-engines: Motores de cálculo compatibles
 public-cloud-data-analytics-data-processing-tutorials: Tutoriales
 public-cloud-data-platforms-logs-data-platform: Logs Data Platform
@@ -125,8 +125,8 @@ public-cloud-data-platforms-metrics-data-platform-concepts: Conceptos
 public-cloud-data-platforms-metrics-data-platform-getting-started: Primeros pasos
 public-cloud-data-platforms-metrics-data-platform-metrics-services: Servicios de métricas
 public-cloud-data-platforms-metrics-data-platform-protocol: Protocolo
-public-cloud-data-platforms-metrics-data-platform-source: Fonte
-public-cloud-databases: Bases
+public-cloud-data-platforms-metrics-data-platform-source: Fuentes
+public-cloud-databases: Bases de datos
 public-cloud-databases-faq: FAQ
 public-cloud-databases-getting-started: Primeros pasos
 public-cloud-databases-kafka: Kafka
@@ -142,8 +142,8 @@ public-cloud-management-openstack: OpenStack
 public-cloud-management-project-management: Gestión de proyectos
 public-cloud-management-project-management-faq: FAQ
 public-cloud-management-project-management-getting-started: Primeros pasos
-public-cloud-management-project-management-managing-in-the-control-panel: Gestión en el panel de control
-public-cloud-management-project-management-managing-projects: Gestión de proyectos
+public-cloud-management-project-management-managing-in-the-control-panel: Gestión en el área de cliente
+public-cloud-management-project-management-managing-projects: Gestionar los proyectos
 public-cloud-management-project-management-tutorials: Tutoriales
 public-cloud-network: Redes
 public-cloud-network-networking: Redes
@@ -153,57 +153,56 @@ public-cloud-storage-object-storage: Object Storage
 public-cloud-storage-object-storage-s3-object-storage: S3 Object Storage
 web-cloud-clouddb: CloudDB
 web-cloud-clouddb-getting-started: Primeros pasos
-web-cloud-clouddb-setting-up: Puesta en marcha
+web-cloud-clouddb-setting-up: Configuración
 web-cloud-clouddb-technical-resources: Recursos técnicos
 web-cloud-collaborative-solutions: Soluciones colaborativas
 web-cloud-collaborative-solutions-email-pro: E-mail pro
-web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Agregar su dirección de correo electróni
+web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Agregar su dirección de correo electrónico a un servicio de correo electrónico existente
 web-cloud-collaborative-solutions-email-pro-getting-started: Primeros pasos
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo elec
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Instalar una aplicación de correo electr
+web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo electrónico en el ordenador
+web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurar una aplicación de correo electrónico en el móvil o la tablet
 web-cloud-collaborative-solutions-email-pro-troubleshooting: Resolución de problemas
 web-cloud-collaborative-solutions-microsoft-exchange: Microsoft Exchange
-web-cloud-collaborative-solutions-microsoft-exchange-exchange-account-features: Funcionalidades de una cuenta Exchange
+web-cloud-collaborative-solutions-microsoft-exchange-exchange-account-features: Funcionalidades de las cuentas Exchange
 web-cloud-collaborative-solutions-microsoft-exchange-getting-started: Primeros pasos
-web-cloud-collaborative-solutions-microsoft-exchange-migrating: Migrando
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo elec
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Instalar una aplicación de correo electr
+web-cloud-collaborative-solutions-microsoft-exchange-migrating: Migración
+web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo electrónico en el ordenador
+web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurar una aplicación de correo electrónico en el móvil o la tablet
 web-cloud-collaborative-solutions-microsoft-exchange-troubleshooting: Resolución de problemas
 web-cloud-collaborative-solutions-microsoft-exchange-using-outlook-web-access-owa: Utilizar Outlook Web Access (OWA)
 web-cloud-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-collaborative-solutions-mx-plan: MX Plan
-web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Agregar su dirección de correo electróni
+web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Agregar su dirección de correo electrónico a un servicio de correo electrónico existente
 web-cloud-collaborative-solutions-mx-plan-email-address-features: Funcionalidades de las cuentas de correo
 web-cloud-collaborative-solutions-mx-plan-getting-started: Primeros pasos
-web-cloud-collaborative-solutions-mx-plan-migrating: Migrando
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo elec
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Instalar una aplicación de correo electr
+web-cloud-collaborative-solutions-mx-plan-migrating: Migración
+web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo electrónico en el ordenador
+web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurar una aplicación de correo electrónico en el móvil o la tablet
 web-cloud-collaborative-solutions-mx-plan-troubleshooting: Resolución de problemas
 web-cloud-domains: Dominios
 web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: DNS y zona DNS
 web-cloud-domains-dns-security: Seguridad
-web-cloud-domains-domain-names: Dominios
-web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Cambiar el propietario de un dominio (tr
-web-cloud-domains-domain-names-general: General
+web-cloud-domains-domain-names: Nombres de dominio
+web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Cambiar el propietario de un dominio (trade)
 web-cloud-domains-domain-names-security: Seguridad
-web-cloud-domains-domain-names-transferring-between-registrars: Transferencia entre agentes registradore
+web-cloud-domains-domain-names-transferring-between-registrars: Transferencia entre agentes registradores
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Acceso a internet
 web-cloud-internet-internet-access-advanced-setup: Configuración avanzada
 web-cloud-internet-internet-access-getting-started: Primeros pasos
-web-cloud-internet-internet-access-managing-your-offer: Gestión de su producto
-web-cloud-internet-internet-access-managing-your-options: Gestión de opciones
-web-cloud-internet-internet-access-setting-up-your-access: Configuración de los accesos
+web-cloud-internet-internet-access-managing-your-offer: Gestionar las soluciones
+web-cloud-internet-internet-access-managing-your-options: Gestionar las opciones
+web-cloud-internet-internet-access-setting-up-your-access: Configurar los accesos
 web-cloud-internet-internet-access-troubleshooting: Resolución de problemas
 web-cloud-internet-overthebox: OverTheBox
 web-cloud-internet-overthebox-advanced-setup: Configuración avanzada
 web-cloud-internet-overthebox-faq: FAQ
 web-cloud-internet-overthebox-overthebox-intel--it-v: OverTheBox Intel & IT v1
 web-cloud-internet-overthebox-overthebox-plus--it-v: OverTheBox Plus & IT v2
-web-cloud-internet-overthebox-setting-up: Puesta en marcha
-web-cloud-messaging: Mensajería
+web-cloud-internet-overthebox-setting-up: Configuración
+web-cloud-messaging: SMS
 web-cloud-messaging-sms: SMS
 web-cloud-messaging-sms-advanced-usage: Uso avanzado
 web-cloud-messaging-sms-getting-started: Primeros pasos
@@ -214,27 +213,27 @@ web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Primeros pasos
 web-cloud-phone-and-fax-fax-sending-and-receiving-faxes: Enviar y recibir faxes
 web-cloud-phone-and-fax-voip: VoIP
-web-cloud-phone-and-fax-voip-administration: Administrar
+web-cloud-phone-and-fax-voip-administration: Administración
 web-cloud-phone-and-fax-voip-api: API
-web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integración de telefonía informática (CT
+web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integración de telefonía informática (CTI)
 web-cloud-phone-and-fax-voip-faq: FAQ
 web-cloud-phone-and-fax-voip-ipbx: IPBX
 web-cloud-phone-and-fax-voip-numbers-and-aliases: Números y alias
 web-cloud-phone-and-fax-voip-popc: POPC
-web-cloud-phone-and-fax-voip-previous-phone-models: Nuestras antiguas gamas de teléfonos
+web-cloud-phone-and-fax-voip-previous-phone-models: Gamas antiguas de teléfonos
 web-cloud-phone-and-fax-voip-security: Seguridad
 web-cloud-phone-and-fax-voip-telephone-lines: Líneas telefónicas
 web-cloud-phone-and-fax-voip-troubleshooting: Resolución de problemas
 web-cloud-web-hosting: Web hosting
-web-cloud-web-hosting-cloud-web-hosting-plan: Plan de hosting Cloud Web
+web-cloud-web-hosting-cloud-web-hosting-plan: Hosting Cloud Web
 web-cloud-web-hosting-cloud-web-hosting-plan-configuring-a-cloud-web-hosting-plan: Configurar un plan de hosting Cloud Web
 web-cloud-web-hosting-cloud-web-hosting-plan-getting-started: Primeros pasos
 web-cloud-web-hosting-cloud-web-hosting-plan-tutorials: Tutoriales
-web-cloud-web-hosting-personal-and-business-web-hosting-plans: Planes de hosting Personal y Business
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-automating-tasks-cron: Automatizar las tareas (cron)
+web-cloud-web-hosting-personal-and-business-web-hosting-plans: Planes de hosting Individual y Business
+web-cloud-web-hosting-personal-and-business-web-hosting-plans-automating-tasks-cron: Automatización de tareas (cron)
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-cms: CMS
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Configurar un alojamiento web Individual
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-databases: Bases
+web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Configurar un alojamiento web Individual o Business
+web-cloud-web-hosting-personal-and-business-web-hosting-plans-databases: Bases de datos
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-ftp-and-ssh: FTP y SSH
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-getting-started: Primeros pasos
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-php: PHP
@@ -243,16 +242,16 @@ web-cloud-web-hosting-personal-and-business-web-hosting-plans-ssl: SSL
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-troubleshooting: Resolución de problemas
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-tutorials: Tutoriales
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-visibility-pro: Visibility Pro
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-website-optimisation: Optimización sitios web
+web-cloud-web-hosting-personal-and-business-web-hosting-plans-website-optimisation: Optimización de su sitio web
 web-cloud-web-hosting-ssl-gateway: SSL Gateway
 web-cloud-web-hosting-ssl-gateway-getting-started: Primeros pasos
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
-web-cloud-web-paas-powered-by-platformsh-administration: Administrar
+web-cloud-web-paas-powered-by-platformsh-administration: Administración
 web-cloud-web-paas-powered-by-platformsh-administration-management-console: Consola de gestión
 web-cloud-web-paas-powered-by-platformsh-best-practices: Mejores prácticas
 web-cloud-web-paas-powered-by-platformsh-development: Desarrollo
 web-cloud-web-paas-powered-by-platformsh-development-command-line-interface-cli: Interfaz de línea de comandos (CLI)
-web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-development-environment: Implementar un entorno de desarrollo loc
+web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-development-environment: Implementar un entorno de desarrollo local
 web-cloud-web-paas-powered-by-platformsh-domains: Dominios
 web-cloud-web-paas-powered-by-platformsh-domains-custom-domains: Dominios personalizados
 web-cloud-web-paas-powered-by-platformsh-frameworks: Frameworks
@@ -266,7 +265,7 @@ web-cloud-web-paas-powered-by-platformsh-integrations-activity-scripts: Scripts 
 web-cloud-web-paas-powered-by-platformsh-integrations-external-integrations: Integraciones externas
 web-cloud-web-paas-powered-by-platformsh-integrations-notifications: Notificaciones
 web-cloud-web-paas-powered-by-platformsh-integrations-profiling: Profiling
-web-cloud-web-paas-powered-by-platformsh-integrations-source-integrations: Sources
+web-cloud-web-paas-powered-by-platformsh-integrations-source-integrations: Integración de fuentes
 web-cloud-web-paas-powered-by-platformsh-languages: Lenguajes
 web-cloud-web-paas-powered-by-platformsh-languages-cnet-core: C#/.NET Core
 web-cloud-web-paas-powered-by-platformsh-languages-elixir: Elixir
@@ -277,10 +276,10 @@ web-cloud-web-paas-powered-by-platformsh-languages-nodejs: Node.js
 web-cloud-web-paas-powered-by-platformsh-languages-php: PHP
 web-cloud-web-paas-powered-by-platformsh-languages-python: Python
 web-cloud-web-paas-powered-by-platformsh-languages-ruby: Ruby
-web-cloud-web-paas-powered-by-platformsh-overview: Vista general
+web-cloud-web-paas-powered-by-platformsh-overview: Información general
 web-cloud-web-paas-powered-by-platformsh-security: Seguridad
-web-cloud-web-paas-powered-by-platformsh-setting-up: Puesta en marcha
-web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-routes: Configurar rutas
-web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-services: Configuración de servicios
-web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-your-application: Configurar la aplicación
+web-cloud-web-paas-powered-by-platformsh-setting-up: Configuración
+web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-routes: Configurar las rutas
+web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-services: Configurar los servicios
+web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-your-application: Configurar las aplicaciones
 web-cloud-web-paas-powered-by-platformsh-tutorials: Tutoriales

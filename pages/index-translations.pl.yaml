@@ -1,11 +1,11 @@
 account-and-service-management-account-information: Informacje o koncie
-account-and-service-management-account-information-getting-started: Pierwsze kroki
 account-and-service-management-account-information-faq: FAQ
+account-and-service-management-account-information-getting-started: Pierwsze kroki
 account-and-service-management-account-information-security-and-conformity: Bezpieczeństwo i zgodność
 account-and-service-management-api: API
 account-and-service-management-api-apiv: APIv6
 account-and-service-management-api-getting-started: Pierwsze kroki
-account-and-service-management-managing-billing-payments-and-services: Zarządzanie rozliczeniami, płatnościami 
+account-and-service-management-managing-billing-payments-and-services: Zarządzanie rozliczeniami, płatnościami i usługami
 account-and-service-management-managing-billing-payments-and-services-api: API
 account-and-service-management-managing-billing-payments-and-services-faq: FAQ
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Faktury, rozliczenia i płatności
@@ -53,7 +53,7 @@ bare-metal-cloud-virtual-private-servers: Wirtualne serwery prywatne
 bare-metal-cloud-virtual-private-servers-advanced-usage: Zaawansowane użycie
 bare-metal-cloud-virtual-private-servers-backups: Kopie zapasowe
 bare-metal-cloud-virtual-private-servers-getting-started: Pierwsze kroki
-bare-metal-cloud-virtual-private-servers-network-and-ip-management: Zarządzanie siecią i IP
+bare-metal-cloud-virtual-private-servers-network-and-ip-management: Sieć i adres IP
 bare-metal-cloud-virtual-private-servers-troubleshooting: Rozwiązywanie problemów
 bare-metal-cloud-virtual-private-servers-tutorials: Samouczki
 hosted-private-cloud-cloud-desktop-infrastructure: Cloud Desktop Infrastructure
@@ -157,28 +157,28 @@ web-cloud-clouddb-setting-up: Uruchamianie
 web-cloud-clouddb-technical-resources: Zasoby techniczne
 web-cloud-collaborative-solutions: Rozwiązania do pracy zespołowej
 web-cloud-collaborative-solutions-email-pro: E-mail pro
-web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Dodawanie adresu e-mail do istniejącej u
+web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Dodawanie adresu e-mail do istniejącej usługi poczty e-mail
 web-cloud-collaborative-solutions-email-pro-getting-started: Pierwsze kroki
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Konfigurowanie aplikacji poczty e-mail n
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Konfigurowanie aplikacji poczty e-mail n
+web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
+web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym lub tablecie
 web-cloud-collaborative-solutions-email-pro-troubleshooting: Rozwiązywanie problemów
 web-cloud-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-collaborative-solutions-microsoft-exchange-exchange-account-features: Funkcje konta Exchange
 web-cloud-collaborative-solutions-microsoft-exchange-getting-started: Pierwsze kroki
 web-cloud-collaborative-solutions-microsoft-exchange-migrating: Migracja
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Konfigurowanie aplikacji poczty e-mail n
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Konfigurowanie aplikacji poczty e-mail n
+web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
+web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym lub tablecie
 web-cloud-collaborative-solutions-microsoft-exchange-troubleshooting: Rozwiązywanie problemów
 web-cloud-collaborative-solutions-microsoft-exchange-using-outlook-web-access-owa: Korzystanie z Outlook Web Access (OWA)
 web-cloud-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-collaborative-solutions-mx-plan: MX Plan
-web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Dodawanie adresu e-mail do istniejącej u
+web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Dodawanie adresu e-mail do istniejącej usługi poczty e-mail
 web-cloud-collaborative-solutions-mx-plan-email-address-features: Funkcje adresu e-mail
 web-cloud-collaborative-solutions-mx-plan-getting-started: Pierwsze kroki
 web-cloud-collaborative-solutions-mx-plan-migrating: Migracja
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Konfigurowanie aplikacji poczty e-mail n
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Konfigurowanie aplikacji poczty e-mail n
+web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
+web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym lub tablecie
 web-cloud-collaborative-solutions-mx-plan-troubleshooting: Rozwiązywanie problemów
 web-cloud-domains: Domeny
 web-cloud-domains-dns: DNS
@@ -186,7 +186,6 @@ web-cloud-domains-dns-dns-and-dns-zone: Strefy DNS i DNS
 web-cloud-domains-dns-security: Bezpieczeństwo
 web-cloud-domains-domain-names: Nazwy domen
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Zmiana właściciela nazwy domeny (handel)
-web-cloud-domains-domain-names-general: Ogólne
 web-cloud-domains-domain-names-security: Bezpieczeństwo
 web-cloud-domains-domain-names-transferring-between-registrars: Przenoszenie między rejestrami
 web-cloud-internet: Internet
@@ -226,13 +225,13 @@ web-cloud-phone-and-fax-voip-telephone-lines: Linie telefoniczne
 web-cloud-phone-and-fax-voip-troubleshooting: Rozwiązywanie problemów
 web-cloud-web-hosting: Hosting internetowy
 web-cloud-web-hosting-cloud-web-hosting-plan: Plan hostingu w sieci Web w chmurze
-web-cloud-web-hosting-cloud-web-hosting-plan-configuring-a-cloud-web-hosting-plan: Konfigurowanie planu hostingu w sieci We
+web-cloud-web-hosting-cloud-web-hosting-plan-configuring-a-cloud-web-hosting-plan: Konfigurowanie planu hostingu w sieci Web w chmurze
 web-cloud-web-hosting-cloud-web-hosting-plan-getting-started: Pierwsze kroki
 web-cloud-web-hosting-cloud-web-hosting-plan-tutorials: Samouczki
-web-cloud-web-hosting-personal-and-business-web-hosting-plans: Prywatne i biznesowe plany hostingu w si
+web-cloud-web-hosting-personal-and-business-web-hosting-plans: Prywatne i biznesowe plany hostingu w sieci Web
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-automating-tasks-cron: Automatyzacja zadań (cron)
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-cms: CMS
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Konfiguracja hostingu WWW dla osób prywa
+web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Konfiguracja hostingu WWW dla osób prywatnych lub Business
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-databases: Bazy danych
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-ftp-and-ssh: FTP i SSH
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-getting-started: Pierwsze kroki
