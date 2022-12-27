@@ -2,7 +2,7 @@
 title: "Supprimer un compte e-mail"
 slug: delete-email-account
 excerpt: "Découvrez comment supprimer ou réinitialiser une adresse e-mail sur votre offre e-mail"
-section: 'Fonctionnalités des adresses e-mail'
+section: 'Fonctionnalités des adresses e-mail'
 order: 02
 ---
 
