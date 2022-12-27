@@ -98,12 +98,12 @@ public-cloud-ai-and-machine-learning-ai-training-guides: Guide
 public-cloud-ai-and-machine-learning-ai-training-tutorials: Tutorial
 public-cloud-ai-and-machine-learning-getting-started: Iniziare a
 public-cloud-containers-orchestration: Containers & Orchestration
-public-cloud-containers-orchestration-managed-kubernetes-ks: Managed Kubernetes (K8s)
-public-cloud-containers-orchestration-managed-kubernetes-ks-getting-started: Iniziare a
-public-cloud-containers-orchestration-managed-kubernetes-ks-technical-resources: Risorse tecniche
-public-cloud-containers-orchestration-managed-kubernetes-ks-troubleshooting: Risoluzione dei problemi
-public-cloud-containers-orchestration-managed-kubernetes-ks-tutorials: Tutorial
-public-cloud-containers-orchestration-managed-kubernetes-ks-user-guides: Guide
+public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes (K8s)
+public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Iniziare a
+public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Risorse tecniche
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Risoluzione dei problemi
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorial
+public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: Guide
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Iniziare a
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorial
