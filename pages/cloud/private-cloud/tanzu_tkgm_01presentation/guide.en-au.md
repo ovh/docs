@@ -87,7 +87,7 @@ Various backup solutions compatible with **Tanzu Kubernetes Grid** exist, includ
 
 [Introducing VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
-[VMware Tanzu Kubenetes Grid documentation](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
+[VMware Tanzu Kubenetes Grid documentation](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
 
 [Manual installation of the CLI tool for the deployment of Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 

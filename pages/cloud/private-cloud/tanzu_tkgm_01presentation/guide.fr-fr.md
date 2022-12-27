@@ -65,7 +65,7 @@ Une application peut être constituée de plusieurs **pods** qui communiquent en
 
 ### Gestion des volumes persistants
 
-Par défaut, lors de l'arrêt ou d'un crash d'un **pod**, les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente, il est nécessaire de créér des volumes persistants et de les associer aux applications.
+Par défaut, lors de l'arrêt ou d'un crash d'un **pod**, les données contenues dans ce **pod** sont perdues. Pour pouvoir stocker des données de manière permanente, il est nécessaire de créer des volumes persistants et de les associer aux applications.
 
 Les volumes persistants sont stockés par défaut sur le stockage VMware (vSAN ou NFS) qui a servi pour le déploiement du cluster de *WorkLoad*, en utilisant les API VMware (vSphere Cloud Native Storage).
 
@@ -87,7 +87,7 @@ Diverses solutions de sauvegarde compatibles avec **Tanzu Kubernetes Grid** exis
 
 [Présentation de VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 
-[Documentation de VMware Tanzu Kubenetes Grid](https://https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
+[Documentation de VMware Tanzu Kubenetes Grid](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/index.html)
 
 [Installation manuelle de l'outil CLI pour le déploiement de Tanzu Kubernetes GRID](https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.5/vmware-tanzu-kubernetes-grid-15/GUID-install-cli.html)
 

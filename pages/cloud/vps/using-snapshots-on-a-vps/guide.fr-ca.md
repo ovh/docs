@@ -52,7 +52,7 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 
 > [!alert]
 >
-> Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en créér un nouveau avant d'apporter des modifications au système restauré.
+> Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en créer un nouveau avant d'apporter des modifications au système restauré.
 >
 
 ### Bonnes pratiques pour la création d'un snapshot

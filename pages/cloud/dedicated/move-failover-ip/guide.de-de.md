@@ -10,7 +10,7 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 24.11.2022**
+**Letzte Aktualisierung am 22.12.2022**
 
 > [!primary]
 >
@@ -66,17 +66,19 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
 
-Das Drop-down-Menü "Dienst" erlaubt es Ihnen, nach Additional IP-Adressen zu filtern.
+Klicken Sie auf den Tab `Additional IP`{.action}.
 
-Klicken Sie auf `...`{.action} rechts neben der umzuziehenden IP-Adresse und dann auf `Additional IP umziehen`{.action}.
+![manage IPs](images/manageIPs2022.png){.thumbnail}
 
-![Kundencenter](images/manager02.png){.thumbnail}
+Klicken Sie auf `...`{.action} rechts neben der umzuziehenden IP-Adresse und dann auf `Verschieben Additional IP`{.action}.
+
+![Kundencenter](images/moveadditionalIP.png){.thumbnail}
 
 Wählen Sie im angezeigten Kontextmenü den Dienst aus, auf den die IP-Adresse umgezogen werden soll.
 
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
-![Kundencenter](images/manager03.png){.thumbnail}
+![Kundencenter](images/moveadditionalIP2.png){.thumbnail}
 
 ### Eine IP über die API umziehen
 

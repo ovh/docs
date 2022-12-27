@@ -9,7 +9,7 @@ section: 'Redes & IP'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 07/11/2022**
+**Última atualização: 22/12/2022**
 
 ## Sumário
 
@@ -45,9 +45,15 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 > A Network Firewall foi concebida para proteger os endereços de IP associados a uma máquina. Cada IP deverá ser configurado de forma independente. Não é possível realizar uma configuração simultânea dos IP do servidor.
 > 
 
-Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao menu `Bare Metal Cloud`{.action} e abra na secção `IP`{.action}. Clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
+Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao menu `Bare Metal Cloud`{.action} e abra na secção `IP`{.action}. 
 
-![Ativação da Network Firewall](images/firewall_creation2022.png){.thumbnail}
+Pode utilizar o menu pendente em "Os meus endereços IP públicos e serviços associados" para filtrar os seus serviços por categorias.
+
+![filter service](images/selectservice.png){.thumbnail}
+
+A seguir, clique em `...`{.action} para ativar a firewall num endereço IPv4.
+
+![Ativação da Network Firewall](images/firewallcreation2022.png){.thumbnail}
 
 É-lhe solicitada uma confirmação.
 
@@ -83,7 +89,7 @@ Pode definir até **20 regras para cada IP**.
 
 Adicione uma regra através da opção  `Adicionar uma regra`{.action}.
 
-![Adicionar uma regra](images/ajoutregle1.png){.thumbnail}
+![Adicionar uma regra](images/addarule2022.png){.thumbnail}
 
 Para cada regra, deve selecionar:
 

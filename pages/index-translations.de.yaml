@@ -1,11 +1,11 @@
 account-and-service-management-account-information: Account-Informationen
-account-and-service-management-account-information-getting-started: Erste Schritte
 account-and-service-management-account-information-faq: FAQ
+account-and-service-management-account-information-getting-started: Erste Schritte
 account-and-service-management-account-information-security-and-conformity: Sicherheit und Konformität
 account-and-service-management-api: API
 account-and-service-management-api-apiv: APIv6
 account-and-service-management-api-getting-started: Erste Schritte
-account-and-service-management-managing-billing-payments-and-services: Verwaltung von Abrechnungen, Zahlungen u
+account-and-service-management-managing-billing-payments-and-services: Verwaltung von Abrechnungen, Zahlungen und Dienstleistungen
 account-and-service-management-managing-billing-payments-and-services-api: API
 account-and-service-management-managing-billing-payments-and-services-faq: FAQ
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Rechnungen, Abrechnungen und Zahlungen
@@ -53,7 +53,7 @@ bare-metal-cloud-virtual-private-servers: Virtual Private Server
 bare-metal-cloud-virtual-private-servers-advanced-usage: Fortgeschrittene Anwendung
 bare-metal-cloud-virtual-private-servers-backups: Backups
 bare-metal-cloud-virtual-private-servers-getting-started: Erste Schritte
-bare-metal-cloud-virtual-private-servers-network-and-ip-management: Netzwerk- und IP-Verwaltung
+bare-metal-cloud-virtual-private-servers-network-and-ip-management: Netzwerk und IP
 bare-metal-cloud-virtual-private-servers-troubleshooting: Störungsbehebung
 bare-metal-cloud-virtual-private-servers-tutorials: Tutorials
 hosted-private-cloud-cloud-desktop-infrastructure: Cloud Desktop Infrastructure
@@ -68,18 +68,18 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-faq: FAQ
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Erste Schritte
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Wartung und Überwachung
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-resources: Ressourcen verwalten
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Virtuelle Maschine verwalten
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Verwalten von virtuellen Maschinen
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-meltdown-and-spectre-information: Informationen zu Meltdown und Spectre
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Netzwerk
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: OVHcloud Funktionen
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: OVHcloud Dienste und Optionen
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Dienste und Optionen von OHVcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-security: Sicherheit
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: Funktionen von VMware vSphere
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: vROps
 hosted-private-cloud-private-cloud: Private Cloud
 hosted-private-cloud-private-cloud-managing-resources: Ressourcen verwalten
-hosted-private-cloud-private-cloud-ovhcloud-services-and-options: OVHcloud Dienste und Optionen
+hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Dienste und Optionen von OHVcloud
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Erste Schritte
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
@@ -157,28 +157,28 @@ web-cloud-clouddb-setting-up: Aktivierung
 web-cloud-clouddb-technical-resources: Technische Ressourcen
 web-cloud-collaborative-solutions: Kollaborative Lösungen
 web-cloud-collaborative-solutions-email-pro: E-mail pro
-web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Hinzufügen Ihrer E-Mail-Adresse zu einem
+web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Hinzufügen Ihrer E-Mail-Adresse zu einem vorhandenen E-Mail-Dienst
 web-cloud-collaborative-solutions-email-pro-getting-started: Erste Schritte
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Einrichten einer E-Mail-Anwendung auf Ih
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Einrichten einer E-Mail-Anwendung auf Ih
+web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Einrichten einer E-Mail-Anwendung auf Ihrem Computer
+web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Einrichten einer E-Mail-Anwendung auf Ihrem Mobiltelefon oder Tablet
 web-cloud-collaborative-solutions-email-pro-troubleshooting: Störungsbehebung
 web-cloud-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-collaborative-solutions-microsoft-exchange-exchange-account-features: Funktionen eines Exchange-Accounts
 web-cloud-collaborative-solutions-microsoft-exchange-getting-started: Erste Schritte
 web-cloud-collaborative-solutions-microsoft-exchange-migrating: Migration
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Einrichten einer E-Mail-Anwendung auf Ih
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Einrichten einer E-Mail-Anwendung auf Ih
+web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Einrichten einer E-Mail-Anwendung auf Ihrem Computer
+web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Einrichten einer E-Mail-Anwendung auf Ihrem Mobiltelefon oder Tablet
 web-cloud-collaborative-solutions-microsoft-exchange-troubleshooting: Störungsbehebung
 web-cloud-collaborative-solutions-microsoft-exchange-using-outlook-web-access-owa: Outlook Web Access (OWA) verwenden
 web-cloud-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-collaborative-solutions-mx-plan: MX Plan
-web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Hinzufügen Ihrer E-Mail-Adresse zu einem
+web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Hinzufügen Ihrer E-Mail-Adresse zu einem vorhandenen E-Mail-Dienst
 web-cloud-collaborative-solutions-mx-plan-email-address-features: Funktionen der E-Mail-Adressen
 web-cloud-collaborative-solutions-mx-plan-getting-started: Erste Schritte
 web-cloud-collaborative-solutions-mx-plan-migrating: Migration
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Einrichten einer E-Mail-Anwendung auf Ih
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Einrichten einer E-Mail-Anwendung auf Ih
+web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Einrichten einer E-Mail-Anwendung auf Ihrem Computer
+web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Einrichten einer E-Mail-Anwendung auf Ihrem Mobiltelefon oder Tablet
 web-cloud-collaborative-solutions-mx-plan-troubleshooting: Störungsbehebung
 web-cloud-domains: Domains
 web-cloud-domains-dns: DNS
@@ -186,7 +186,6 @@ web-cloud-domains-dns-dns-and-dns-zone: DNS und DNS-Zone
 web-cloud-domains-dns-security: Sicherheit
 web-cloud-domains-domain-names: Domainnamen
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Änderung des Inhabers einer Domain
-web-cloud-domains-domain-names-general: Allgemein
 web-cloud-domains-domain-names-security: Sicherheit
 web-cloud-domains-domain-names-transferring-between-registrars: Transfer zwischen Registrars
 web-cloud-internet: Internet
@@ -198,7 +197,7 @@ web-cloud-internet-internet-access-managing-your-options: Verwaltung Ihrer Optio
 web-cloud-internet-internet-access-setting-up-your-access: Installation Ihrer Zugänge
 web-cloud-internet-internet-access-troubleshooting: Störungsbehebung
 web-cloud-internet-overthebox: OverTheBox
-web-cloud-internet-overthebox-advanced-setup: Erweiterte Konfiguration
+web-cloud-internet-overthebox-advanced-setup: Erweiterte Einrichtung
 web-cloud-internet-overthebox-faq: FAQ
 web-cloud-internet-overthebox-overthebox-intel--it-v: OverTheBox Intel & IT v1
 web-cloud-internet-overthebox-overthebox-plus--it-v: OverTheBox Plus & IT v2
@@ -233,7 +232,7 @@ web-cloud-web-hosting-cloud-web-hosting-plan-tutorials: Tutorials
 web-cloud-web-hosting-personal-and-business-web-hosting-plans: Basic und Business Webhosting
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-automating-tasks-cron: Automatisierung von Tasks (cron)
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-cms: CMS
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Ihr Individual oder Business Webhosting 
+web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Ihr Individual oder Business Webhosting konfigurieren
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-databases: Datenbanken
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-ftp-and-ssh: FTP und SSH
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-getting-started: Erste Schritte
@@ -252,7 +251,7 @@ web-cloud-web-paas-powered-by-platformsh-administration-management-console: Verw
 web-cloud-web-paas-powered-by-platformsh-best-practices: Best Practices
 web-cloud-web-paas-powered-by-platformsh-development: Entwicklung
 web-cloud-web-paas-powered-by-platformsh-development-command-line-interface-cli: Befehlszeilenschnittstelle (CLI)
-web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-development-environment: Einrichtung einer lokalen Entwicklungsum
+web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-development-environment: Einrichtung einer lokalen Entwicklungsumgebung
 web-cloud-web-paas-powered-by-platformsh-domains: Domains
 web-cloud-web-paas-powered-by-platformsh-domains-custom-domains: Personalisierte Domains
 web-cloud-web-paas-powered-by-platformsh-frameworks: Frameworks

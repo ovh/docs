@@ -10,7 +10,7 @@ order: 7
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 24/11/2022**
+**Última actualización: 22/12/2022**
 
 > [!primary]
 >
@@ -65,17 +65,19 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda al menú `Bare Metal Cloud`{.action} y abra `IP`{.action}.
 
-En el menú desplegable "Servicio" puede seleccionar el tipo de servicio a visualizar. Puede elegir "Additional IP" para solamente visualizar las IPs de este tipo.
+Haga clic en la pestaña `Additional IP`{.action}.
 
-Haga clic en el botón `...`{.action} que está a la derecha de la dirección IP que quiera mover y, seguidamente, en `Mover la Additional IP`{.action}.
+![manage IPs](images/manageIPs2022.png){.thumbnail}
 
-![área de cliente](images/manager02.png){.thumbnail}
+Haga clic en el botón `...`{.action} que está a la derecha de la dirección IP que quiera mover y, seguidamente, en `Trasladar Additional IP`{.action}.
+
+![área de cliente](images/moveadditionalIP.png){.thumbnail}
 
 En el menú contextual, seleccione el servicio al que quiere mover la dirección IP.
 
 Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
 
-![área de cliente](images/manager03.png){.thumbnail}
+![área de cliente](images/moveadditionalIP2.png){.thumbnail}
 
 ### Mover una IP a través de las API
 

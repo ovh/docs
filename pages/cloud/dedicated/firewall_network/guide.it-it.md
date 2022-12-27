@@ -9,7 +9,7 @@ section: 'Rete e IP'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 07/11/2022**
+**Ultimo aggiornamento: 22/12/2022**
 
 ## Obiettivo
 
@@ -45,9 +45,15 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 > Il Network Firewall protegge gli IP associati a una macchina. Non è quindi possibile effettuare una configurazione globale del server, ma sarà necessario eseguirne una per ciascun IP separatamente.
 > 
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. Dopo, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. 
 
-![Attivazione del Network Firewall](images/firewall_creation2022.png){.thumbnail}
+Puoi utilizzare il menu a tendina "I tuoi indirizzi IP pubblici e servizi associati" per filtrare i tuoi servizi per categoria.
+
+![filter service](images/selectservice.png){.thumbnail}
+
+In seguito, cliccare sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}.
+
+![Attivazione del Network Firewall](images/firewallcreation2022.png){.thumbnail}
 
 Si apre una nuova finestra per confermare l’operazione:
 
@@ -83,7 +89,7 @@ A questo punto è possibile attivare e configurare il firewall cliccando di nuov
 
 Per aggiungere una regola, clicca sul pulsante `Aggiungi una regola`{.action}:
 
-![Aggiungi una regola](images/ajoutregle1.png){.thumbnail}
+![Aggiungi una regola](images/addarule2022.png){.thumbnail}
 
 Per ogni regola è necessario scegliere:
 

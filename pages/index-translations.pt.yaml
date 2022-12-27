@@ -1,11 +1,11 @@
 account-and-service-management-account-information: Informações da conta
-account-and-service-management-account-information-getting-started: Primeiros passos
 account-and-service-management-account-information-faq: FAQ
+account-and-service-management-account-information-getting-started: Primeiros passos
 account-and-service-management-account-information-security-and-conformity: Segurança e conformidade
 account-and-service-management-api: API
 account-and-service-management-api-apiv: APIv6
 account-and-service-management-api-getting-started: Primeiros passos
-account-and-service-management-managing-billing-payments-and-services: Gestão da faturação, dos pagamentos e do
+account-and-service-management-managing-billing-payments-and-services: Gestão da faturação, dos pagamentos e dos serviços
 account-and-service-management-managing-billing-payments-and-services-api: API
 account-and-service-management-managing-billing-payments-and-services-faq: FAQ
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Faturas, faturação e pagamentos
@@ -53,7 +53,7 @@ bare-metal-cloud-virtual-private-servers: Servidores privados virtuais
 bare-metal-cloud-virtual-private-servers-advanced-usage: Utilização avançada
 bare-metal-cloud-virtual-private-servers-backups: Backups
 bare-metal-cloud-virtual-private-servers-getting-started: Primeiros passos
-bare-metal-cloud-virtual-private-servers-network-and-ip-management: Gestão de rede e IP
+bare-metal-cloud-virtual-private-servers-network-and-ip-management: Rede e IP
 bare-metal-cloud-virtual-private-servers-troubleshooting: Diagnóstico
 bare-metal-cloud-virtual-private-servers-tutorials: Tutoriais
 hosted-private-cloud-cloud-desktop-infrastructure: Cloud Desktop Infrastructure
@@ -72,7 +72,7 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-mac
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-meltdown-and-spectre-information: Informações sobre Meltdown e Spectre
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Sistemas de rede
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: Funcionalidades da OVHcloud
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: Funcionalidades OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Serviços e opções da OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-security: Segurança
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: Funcionalidades VMware vSphere
@@ -157,28 +157,28 @@ web-cloud-clouddb-setting-up: Início
 web-cloud-clouddb-technical-resources: Recursos técnicos
 web-cloud-collaborative-solutions: Soluções colaborativas
 web-cloud-collaborative-solutions-email-pro: E-mail pro
-web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Adicionar endereço de correio eletrónico
+web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Adicionar endereço de correio eletrónico a um serviço de correio eletrónico existente
 web-cloud-collaborative-solutions-email-pro-getting-started: Primeiros passos
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configurar uma aplicação de correio elet
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configuração de um aplicativo de e-mail 
+web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configurar uma aplicação de correio eletrónico no computador
+web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configuração de um aplicativo de e-mail em seu celular ou tablet
 web-cloud-collaborative-solutions-email-pro-troubleshooting: Diagnóstico
 web-cloud-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-collaborative-solutions-microsoft-exchange-exchange-account-features: Funcionalidades de uma conta Exchange
 web-cloud-collaborative-solutions-microsoft-exchange-getting-started: Primeiros passos
 web-cloud-collaborative-solutions-microsoft-exchange-migrating: Migração
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Configurar uma aplicação de correio elet
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configuração de um aplicativo de e-mail 
+web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Configurar uma aplicação de correio eletrónico no computador
+web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configuração de um aplicativo de e-mail em seu celular ou tablet
 web-cloud-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnóstico
 web-cloud-collaborative-solutions-microsoft-exchange-using-outlook-web-access-owa: Utilizar o Outlook Web Access (OWA)
 web-cloud-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-collaborative-solutions-mx-plan: MX Plan
-web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Adicionar endereço de correio eletrónico
-web-cloud-collaborative-solutions-mx-plan-email-address-features: Funcionalidades de endereços de correio 
+web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Adicionar endereço de correio eletrónico a um serviço de correio eletrónico existente
+web-cloud-collaborative-solutions-mx-plan-email-address-features: Funcionalidades de endereços de correio eletrónico
 web-cloud-collaborative-solutions-mx-plan-getting-started: Primeiros passos
 web-cloud-collaborative-solutions-mx-plan-migrating: Migração
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Configurar uma aplicação de correio elet
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configuração de um aplicativo de e-mail 
+web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Configurar uma aplicação de correio eletrónico no computador
+web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configuração de um aplicativo de e-mail em seu celular ou tablet
 web-cloud-collaborative-solutions-mx-plan-troubleshooting: Diagnóstico
 web-cloud-domains: Domínios
 web-cloud-domains-dns: DNS
@@ -186,7 +186,6 @@ web-cloud-domains-dns-dns-and-dns-zone: Zonas DNS e DNS
 web-cloud-domains-dns-security: Segurança
 web-cloud-domains-domain-names: Nomes de domínio
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Alterar o titular de um domínio (trade)
-web-cloud-domains-domain-names-general: Geral
 web-cloud-domains-domain-names-security: Segurança
 web-cloud-domains-domain-names-transferring-between-registrars: Transferência entre agentes de registo
 web-cloud-internet: Internet
@@ -215,7 +214,7 @@ web-cloud-phone-and-fax-fax-sending-and-receiving-faxes: Envio e receção de fa
 web-cloud-phone-and-fax-voip: VoIP
 web-cloud-phone-and-fax-voip-administration: Administrar
 web-cloud-phone-and-fax-voip-api: API
-web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integração de telefonia informática (CTI
+web-cloud-phone-and-fax-voip-computer-telephony-integration-cti: Integração de telefonia informática (CTI)
 web-cloud-phone-and-fax-voip-faq: FAQ
 web-cloud-phone-and-fax-voip-ipbx: IPBX
 web-cloud-phone-and-fax-voip-numbers-and-aliases: Números e alias
@@ -232,7 +231,7 @@ web-cloud-web-hosting-cloud-web-hosting-plan-tutorials: Tutoriais
 web-cloud-web-hosting-personal-and-business-web-hosting-plans: Alojamento Web Perso e Business
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-automating-tasks-cron: Automatização de tarefas (cron)
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-cms: CMS
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Configurar um alojamento web individual 
+web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Configurar um alojamento web individual ou Business
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-databases: Bases de dados
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-ftp-and-ssh: FTP e SSH
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-getting-started: Primeiros passos
@@ -251,7 +250,7 @@ web-cloud-web-paas-powered-by-platformsh-administration-management-console: Cons
 web-cloud-web-paas-powered-by-platformsh-best-practices: Melhores práticas
 web-cloud-web-paas-powered-by-platformsh-development: Desenvolvimento
 web-cloud-web-paas-powered-by-platformsh-development-command-line-interface-cli: Interface da linha de comandos (CLI)
-web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-development-environment: Implementação de um ambiente de desenvol
+web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-development-environment: Implementação de um ambiente de desenvolvimento local
 web-cloud-web-paas-powered-by-platformsh-domains: Domínios
 web-cloud-web-paas-powered-by-platformsh-domains-custom-domains: Domínios personalizados
 web-cloud-web-paas-powered-by-platformsh-frameworks: Frameworks
