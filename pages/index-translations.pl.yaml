@@ -89,14 +89,14 @@ ovhcloud-labs-power-web-hosting-python: Python
 ovhcloud-labs-power-web-hosting-ruby: Ruby
 ovhcloud-labs-prescience: Prescience
 ovhcloud-labs-prescience-getting-started: Pierwsze kroki
-public-cloud-ai--machine-learning: AI & machine learning
-public-cloud-ai--machine-learning-ai-notebooks: AI Notebooks
-public-cloud-ai--machine-learning-ai-notebooks-guides: Przewodniki
-public-cloud-ai--machine-learning-ai-notebooks-tutorials: Samouczki
-public-cloud-ai--machine-learning-ai-training: AI Training
-public-cloud-ai--machine-learning-ai-training-guides: Przewodniki
-public-cloud-ai--machine-learning-ai-training-tutorials: Samouczki
-public-cloud-ai--machine-learning-getting-started: Pierwsze kroki
+public-cloud-ai-and-machine-learning: AI & machine learning
+public-cloud-ai-and-machine-learning-ai-notebooks: AI Notebooks
+public-cloud-ai-and-machine-learning-ai-notebooks-guides: Przewodniki
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials: Samouczki
+public-cloud-ai-and-machine-learning-ai-training: AI Training
+public-cloud-ai-and-machine-learning-ai-training-guides: Przewodniki
+public-cloud-ai-and-machine-learning-ai-training-tutorials: Samouczki
+public-cloud-ai-and-machine-learning-getting-started: Pierwsze kroki
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-ks: Managed Kubernetes (K8s)
 public-cloud-containers-orchestration-managed-kubernetes-ks-getting-started: Pierwsze kroki
