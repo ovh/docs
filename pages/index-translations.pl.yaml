@@ -3,7 +3,7 @@ account-and-service-management-account-information-faq: FAQ
 account-and-service-management-account-information-getting-started: Pierwsze kroki
 account-and-service-management-account-information-security-and-conformity: Bezpieczeństwo i zgodność
 account-and-service-management-api: API
-account-and-service-management-api-apiv: APIv6
+account-and-service-management-api-apiv6: APIv6
 account-and-service-management-api-getting-started: Pierwsze kroki
 account-and-service-management-managing-billing-payments-and-services: Zarządzanie rozliczeniami, płatnościami i usługami
 account-and-service-management-managing-billing-payments-and-services-api: API
@@ -89,21 +89,21 @@ ovhcloud-labs-power-web-hosting-python: Python
 ovhcloud-labs-power-web-hosting-ruby: Ruby
 ovhcloud-labs-prescience: Prescience
 ovhcloud-labs-prescience-getting-started: Pierwsze kroki
-public-cloud-ai--machine-learning: AI & machine learning
-public-cloud-ai--machine-learning-ai-notebooks: AI Notebooks
-public-cloud-ai--machine-learning-ai-notebooks-guides: Przewodniki
-public-cloud-ai--machine-learning-ai-notebooks-tutorials: Samouczki
-public-cloud-ai--machine-learning-ai-training: AI Training
-public-cloud-ai--machine-learning-ai-training-guides: Przewodniki
-public-cloud-ai--machine-learning-ai-training-tutorials: Samouczki
-public-cloud-ai--machine-learning-getting-started: Pierwsze kroki
+public-cloud-ai-and-machine-learning: AI & machine learning
+public-cloud-ai-and-machine-learning-ai-notebooks: AI Notebooks
+public-cloud-ai-and-machine-learning-ai-notebooks-guides: Przewodniki
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials: Samouczki
+public-cloud-ai-and-machine-learning-ai-training: AI Training
+public-cloud-ai-and-machine-learning-ai-training-guides: Przewodniki
+public-cloud-ai-and-machine-learning-ai-training-tutorials: Samouczki
+public-cloud-ai-and-machine-learning-getting-started: Pierwsze kroki
 public-cloud-containers-orchestration: Containers & Orchestration
-public-cloud-containers-orchestration-managed-kubernetes-ks: Managed Kubernetes (K8s)
-public-cloud-containers-orchestration-managed-kubernetes-ks-getting-started: Pierwsze kroki
-public-cloud-containers-orchestration-managed-kubernetes-ks-technical-resources: Zasoby techniczne
-public-cloud-containers-orchestration-managed-kubernetes-ks-troubleshooting: Rozwiązywanie problemów
-public-cloud-containers-orchestration-managed-kubernetes-ks-tutorials: Samouczki
-public-cloud-containers-orchestration-managed-kubernetes-ks-user-guides: Przewodniki
+public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes (K8s)
+public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Pierwsze kroki
+public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Zasoby techniczne
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Rozwiązywanie problemów
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Samouczki
+public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: Przewodniki
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Pierwsze kroki
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Samouczki
@@ -188,6 +188,8 @@ web-cloud-domains-domain-names: Nazwy domen
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Zmiana właściciela nazwy domeny (handel)
 web-cloud-domains-domain-names-security: Bezpieczeństwo
 web-cloud-domains-domain-names-transferring-between-registrars: Przenoszenie między rejestrami
+web-cloud-domains-domain-names-troubleshooting: Diagnostyka
+web-cloud-domains-domain-names-tutorials: Tutoriale
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Dostęp do Internetu
 web-cloud-internet-internet-access-advanced-setup: Konfiguracja zaawansowana
@@ -198,8 +200,8 @@ web-cloud-internet-internet-access-setting-up-your-access: Konfigurowanie dostę
 web-cloud-internet-internet-access-troubleshooting: Rozwiązywanie problemów
 web-cloud-internet-overthebox: OverTheBox
 web-cloud-internet-overthebox-faq: FAQ
-web-cloud-internet-overthebox-overthebox-intel--it-v: OverTheBox Intel & IT v1
-web-cloud-internet-overthebox-overthebox-plus--it-v: OverTheBox Plus & IT v2
+web-cloud-internet-overthebox-overthebox-intel-and-it-v1: OverTheBox Intel & IT v1
+web-cloud-internet-overthebox-overthebox-plus-and-it-v2: OverTheBox Plus & IT v2
 web-cloud-internet-overthebox-setting-up: Uruchamianie
 web-cloud-messaging: Przesyłanie wiadomości
 web-cloud-messaging-sms: SMS
@@ -223,6 +225,7 @@ web-cloud-phone-and-fax-voip-previous-phone-models: Poprzednie modele telefonów
 web-cloud-phone-and-fax-voip-security: Bezpieczeństwo
 web-cloud-phone-and-fax-voip-telephone-lines: Linie telefoniczne
 web-cloud-phone-and-fax-voip-troubleshooting: Rozwiązywanie problemów
+web-cloud-phone-and-fax-voip-tutorials: Tutoriale
 web-cloud-web-hosting: Hosting internetowy
 web-cloud-web-hosting-cloud-web-hosting-plan: Plan hostingu w sieci Web w chmurze
 web-cloud-web-hosting-cloud-web-hosting-plan-configuring-a-cloud-web-hosting-plan: Konfigurowanie planu hostingu w sieci Web w chmurze
@@ -254,7 +257,7 @@ web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-developm
 web-cloud-web-paas-powered-by-platformsh-domains: Domeny
 web-cloud-web-paas-powered-by-platformsh-domains-custom-domains: Domeny niestandardowe
 web-cloud-web-paas-powered-by-platformsh-frameworks: Ramy
-web-cloud-web-paas-powered-by-platformsh-frameworks-drupal-: Drupal 7
+web-cloud-web-paas-powered-by-platformsh-frameworks-drupal-7: Drupal 7
 web-cloud-web-paas-powered-by-platformsh-frameworks-hibernate: Hibernate
 web-cloud-web-paas-powered-by-platformsh-frameworks-jakarta-eeeclipse-microprofile: Jakarta EE/Eclipse MicroProfile
 web-cloud-web-paas-powered-by-platformsh-frameworks-spring: Spring

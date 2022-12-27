@@ -81,7 +81,7 @@ W przypadku OVHcloud skorzystaj z naszej dokumentacji dotyczącej:
 - [Zmiana hasła do konta klienta OVHcloud](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
 - [Zabezpieczenie dostępu do Panelu klienta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/).
 - [Zmień hasło dostępowe do przestrzeni dyskowej FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/).
-- [Zmiana hasła do bazy danych] (https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
+- [Zmiana hasła do bazy danych](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
 
 Zalecamy również użycie [menedżera haseł](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/#uzycie-managera-hasel).
 
@@ -99,7 +99,7 @@ Zalecamy również użycie [menedżera haseł](https://docs.ovh.com/pl/customer/
 
 > [!warning]
 >
-> W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą] (https://partner.ovhcloud.com/pl/) w zakresie bezpieczeństwa cybernetycznego.
+> W przypadku trudności z wykonaniem opisanych poniżej operacji, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) w zakresie bezpieczeństwa cybernetycznego.
 >
 
 Skorzystaj z naszego przewodnika na temat [statystyki i logi Twojego hostingu www](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/), aby wyszukać złośliwe elementy wprowadzone na Twoją stronę WWW. Informacje znajdziesz w logach "www". 
@@ -153,7 +153,7 @@ Wybierz maksymalnie dwie daty przywrócenia przestrzeni dyskowej FTP i bazy dany
 > OVHcloud dysponuje robotami bezpieczeństwa, które mogą wykrywać złośliwe operacje wykonywane z poziomu Twojego hostingu. Strony dezaktywują Twój hosting i powiadamiają e-mail, że Twój hosting został wyłączony.
 > Jako uzupełnienie tego e-maila, zazwyczaj pojawia się strona "403 Forbidden", gdy próbujesz wejść na Twoją stronę.
 >
-> Jeśli Twój hosting jest wyłączony, roboty przywracania automatycznego dostępne w [Panelu klienta OVHcloud] (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) zostaną również wyłączone.
+> Jeśli Twój hosting jest wyłączony, roboty przywracania automatycznego dostępne w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) zostaną również wyłączone.
 > Musisz wykonać ręczne przywracanie strony, usunąć pozostałości złośliwych elementów, a następnie usunąć luki bezpieczeństwa występujące w kopii zapasowej. To **przed** włączyć hosting.
 >
 > Aby ponownie włączyć hosting WWW, postępuj zgodnie z instrukcjami etapu 4 tego [przewodnika](https://docs.ovh.com/pl/hosting/diagnostyka-403-forbidden/).

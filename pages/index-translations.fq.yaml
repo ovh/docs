@@ -3,7 +3,7 @@ account-and-service-management-account-information-faq: FAQ
 account-and-service-management-account-information-getting-started: Premiers pas
 account-and-service-management-account-information-security-and-conformity: Sécurité et conformité
 account-and-service-management-api: API
-account-and-service-management-api-apiv: APIv6
+account-and-service-management-api-apiv6: APIv6
 account-and-service-management-api-getting-started: Premiers pas
 account-and-service-management-managing-billing-payments-and-services: Gérer la facturation, les paiements et les services
 account-and-service-management-managing-billing-payments-and-services-api: API
@@ -34,7 +34,7 @@ bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Premiers pas
 bare-metal-cloud-managed-bare-metal-managing-virtual-machines: Gestion des machines virtuelles
 bare-metal-cloud-managed-bare-metal-ovhcloud-features: Fonctionnalités OVHcloud
-bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Services et options OHVcloud
+bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Services et options OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Fonctionnalités de VMware vSphere
 bare-metal-cloud-network-and-security-solutions: Solutions réseau et sécurité
 bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastru
@@ -73,13 +73,13 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-meltdown-and-spectre
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Réseau
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: Fonctionnalités OVHcloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Services et options OHVcloud
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Services et options OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-security: Sécurité
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: Fonctionnalités de VMware vSphere
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: vROps
 hosted-private-cloud-private-cloud: Private Cloud
 hosted-private-cloud-private-cloud-managing-resources: Gérer les ressources
-hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Services et options OHVcloud
+hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Services et options OVHcloud
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Premiers pas
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
@@ -89,21 +89,21 @@ ovhcloud-labs-power-web-hosting-python: Python
 ovhcloud-labs-power-web-hosting-ruby: Ruby
 ovhcloud-labs-prescience: Prescience
 ovhcloud-labs-prescience-getting-started: Premiers pas
-public-cloud-ai--machine-learning: AI & machine learning
-public-cloud-ai--machine-learning-ai-notebooks: AI Notebooks
-public-cloud-ai--machine-learning-ai-notebooks-guides: Guides
-public-cloud-ai--machine-learning-ai-notebooks-tutorials: Tutoriels
-public-cloud-ai--machine-learning-ai-training: AI Training
-public-cloud-ai--machine-learning-ai-training-guides: Guides
-public-cloud-ai--machine-learning-ai-training-tutorials: Tutoriels
-public-cloud-ai--machine-learning-getting-started: Premiers pas
+public-cloud-ai-and-machine-learning: AI & machine learning
+public-cloud-ai-and-machine-learning-ai-notebooks: AI Notebooks
+public-cloud-ai-and-machine-learning-ai-notebooks-guides: Guides
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials: Tutoriels
+public-cloud-ai-and-machine-learning-ai-training: AI Training
+public-cloud-ai-and-machine-learning-ai-training-guides: Guides
+public-cloud-ai-and-machine-learning-ai-training-tutorials: Tutoriels
+public-cloud-ai-and-machine-learning-getting-started: Premiers pas
 public-cloud-containers-orchestration: Containers & Orchestration
-public-cloud-containers-orchestration-managed-kubernetes-ks: Managed Kubernetes (K8s)
-public-cloud-containers-orchestration-managed-kubernetes-ks-getting-started: Premiers pas
-public-cloud-containers-orchestration-managed-kubernetes-ks-technical-resources: Ressources techniques
-public-cloud-containers-orchestration-managed-kubernetes-ks-troubleshooting: Dépanner
-public-cloud-containers-orchestration-managed-kubernetes-ks-tutorials: Tutoriels
-public-cloud-containers-orchestration-managed-kubernetes-ks-user-guides: Guides d'utilisation
+public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes (K8s)
+public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Premiers pas
+public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Ressources techniques
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Dépanner
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutoriels
+public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: Guides d'utilisation
 public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry
 public-cloud-containers-orchestration-managed-private-registry-getting-started: Premiers pas
 public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutoriels
@@ -188,6 +188,8 @@ web-cloud-domains-domain-names: Noms de domaine
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Changer le propriétaire d'un nom de domaine (trade)
 web-cloud-domains-domain-names-security: Sécurité
 web-cloud-domains-domain-names-transferring-between-registrars: Transfert entre registrars
+web-cloud-domains-domain-names-troubleshooting: Diagnostic et dépannage
+web-cloud-domains-domain-names-tutorials: Tutoriels
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Accès Internet
 web-cloud-internet-internet-access-advanced-setup: Configuration avancée
@@ -199,8 +201,8 @@ web-cloud-internet-internet-access-troubleshooting: Dépanner
 web-cloud-internet-overthebox: OverTheBox
 web-cloud-internet-overthebox-advanced-setup: Configuration avancée
 web-cloud-internet-overthebox-faq: FAQ
-web-cloud-internet-overthebox-overthebox-intel--it-v: OverTheBox Intel & IT v1
-web-cloud-internet-overthebox-overthebox-plus--it-v: OverTheBox Plus & IT v2
+web-cloud-internet-overthebox-overthebox-intel-and-it-v1: OverTheBox Intel & IT v1
+web-cloud-internet-overthebox-overthebox-plus-and-it-v2: OverTheBox Plus & IT v2
 web-cloud-internet-overthebox-setting-up: Mise en route
 web-cloud-messaging: SMS
 web-cloud-messaging-sms: SMS
@@ -224,6 +226,7 @@ web-cloud-phone-and-fax-voip-previous-phone-models: Nos précédentes gammes de 
 web-cloud-phone-and-fax-voip-security: Sécurité
 web-cloud-phone-and-fax-voip-telephone-lines: Lignes téléphoniques
 web-cloud-phone-and-fax-voip-troubleshooting: Dépanner
+web-cloud-phone-and-fax-voip-tutorials: Tutoriels
 web-cloud-web-hosting: Hébergements web
 web-cloud-web-hosting-cloud-web-hosting-plan: Hébergement Cloud Web
 web-cloud-web-hosting-cloud-web-hosting-plan-configuring-a-cloud-web-hosting-plan: Configurer son hébergement Cloud Web
@@ -255,7 +258,7 @@ web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-developm
 web-cloud-web-paas-powered-by-platformsh-domains: Domaines
 web-cloud-web-paas-powered-by-platformsh-domains-custom-domains: Domaines personnalisés
 web-cloud-web-paas-powered-by-platformsh-frameworks: Frameworks
-web-cloud-web-paas-powered-by-platformsh-frameworks-drupal-: Drupal 7
+web-cloud-web-paas-powered-by-platformsh-frameworks-drupal-7: Drupal 7
 web-cloud-web-paas-powered-by-platformsh-frameworks-hibernate: Hibernate
 web-cloud-web-paas-powered-by-platformsh-frameworks-jakarta-eeeclipse-microprofile: Jakarta EE/Eclipse MicroProfile
 web-cloud-web-paas-powered-by-platformsh-frameworks-spring: Spring

@@ -27,7 +27,7 @@ Bei Cloud Web stehen für Ihr Projekt verschiedene Entwicklungssprachen zur Verf
 
 Bei Cloud Web können Sie je nach Projekt eine oder mehrere Runtime Engines auswählen. Die Entscheidung, welche Runtime Engine Sie verwenden sollten, hängt davon ab, was Sie einrichten möchten. 
 
-Falls Sie dies noch nicht getan haben, **vergewissern Sie sich jetzt, dass Ihr Projekt mit Ihrem Cloud Web Hosting kompatibel ist**. Die verfügbaren Programmiersprachen sind auf [unserer Webseite] (https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) aufgeführt. 
+Falls Sie dies noch nicht getan haben, **vergewissern Sie sich jetzt, dass Ihr Projekt mit Ihrem Cloud Web Hosting kompatibel ist**. Die verfügbaren Programmiersprachen sind auf [unserer Webseite](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) aufgeführt. 
 
 Wenn Sie ermittelt haben, welche Runtime Engine(s) Sie verwenden möchten, können Sie mit den nachstehenden Schritten beginnen.
 

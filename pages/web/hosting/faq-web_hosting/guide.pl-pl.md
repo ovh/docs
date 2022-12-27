@@ -211,7 +211,7 @@ Wiadomość ta wskazuje, że adres IP, którego używasz do logowania się do Tw
 
 W tej sytuacji [sprawdź logi](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/), aby określić, które zapytania spowodowały blokadę Twojej strony.<br>
 Sprawdź również, czy komputer nie jest zainfekowany wirusem.<br>
-Możesz również skontaktować się z [naszymi partnerami] (https://partner.ovhcloud.com/pl/directory/), aby sprawdzić kod informatyczny Twojej strony.
+Możesz również skontaktować się z [naszymi partnerami](https://partner.ovhcloud.com/pl/directory/), aby sprawdzić kod informatyczny Twojej strony.
 
 ### Zamówiłem domenę z akcentami i wyświetla się ona w moim panelu klienta w bardzo dziwny sposób. Co mam zrobić?
 
