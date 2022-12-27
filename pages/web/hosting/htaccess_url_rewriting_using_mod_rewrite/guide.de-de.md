@@ -97,7 +97,7 @@ Dieses Umschreiben der URL kann das SEO-Ranking Ihrer Website fördern.
 
 Wenn Sie ein OVHcloud Shared Hosting nutzen, wird Ihr Domainname (z.B. **domain.tld**) als `Multisites` deklariert, um den Inhalt eines Zielordners anzuzeigen, den man auch `Wurzelverzeichnis` nennt. Sie können den Namen dieses `Wurzelverzeichnis` anpassen.
 
-Lesen Sie unsere Anleitung zur [Einrichtung einer Multisite auf einem Shared Hosting] (https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/), wenn Sie weitere Informationen zu diesem Thema wünschen.
+Lesen Sie unsere Anleitung zur [Einrichtung einer Multisite auf einem Shared Hosting](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/), wenn Sie weitere Informationen zu diesem Thema wünschen.
 
 Einige Benutzer legen ihre Website nicht direkt auf der Basis des `Wurzelverzeichnis` an. Sie erstellen dann einen Unterordner (z. B. **MyWebsite**) in ihrem `Wurzelverzeichnis`, in dem sie ihre Website ablegen.
 

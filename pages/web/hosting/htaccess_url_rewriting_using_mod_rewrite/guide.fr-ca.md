@@ -54,7 +54,7 @@ Retrouvez ci-après quelques exemples parmi les plus courants d'utilisation du �
 
 ### Rediriger toutes les requêtes HTTP vers un seul fichier de votre site
 
-Éditez le fichier « .htaccess » présent à la racine du répertoire contenant votre site web. Placez-y le code suivant à l'intérieur (en remplaçant dans notre exemple **test.php** par le nom de votre propre fichier):
+Éditez le fichier « .htaccess » présent à la racine du répertoire contenant votre site web. Placez-y le code suivant à l'intérieur (en remplaçant le **test.php** de notre exemple par le nom de votre propre fichier):
 
 ```bash
 RewriteEngine On

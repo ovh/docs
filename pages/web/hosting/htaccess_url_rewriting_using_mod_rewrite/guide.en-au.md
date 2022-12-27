@@ -1,5 +1,5 @@
 ---
-title: "Tutorial - Rewrite the URL for accessing my website using mod_rewrite via the .htaccess file"
+title: "Tutorial - Rewrite the URL for accessing your website using mod_rewrite via the .htaccess file"
 excerpt: "This guide explains how to rewrite the URL for accessing your website using mod_rewrite via the .htaccess file"
 slug: htaccess_url_rewriting_using_mod_rewrite
 section: Rewriting and authentication
@@ -18,7 +18,7 @@ For example, the **mod_rewrite** allows you to rewrite and redirect:
 
 - a visitor who enters your URL in “HTTP” directly to your website’s URL in “HTTPS”
 - all of the URLs used for your website to a specific folder or file
-- a visitor who enters your URL without “www” directly to the URL of your website with “www”.
+- a visitor who enters your URL without “www” directly to the URL of your website with “www”
 
 The **mod_rewrite** offers an infinite number of possibilities. Below are some of the most common use cases.
 
@@ -51,11 +51,11 @@ The parameters defined in a ".htaccess" file apply to the directory in which it 
 
 To edit (or create) directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Accessing my storage space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/).
 
-Below are some of the most common examples of Apache **mod_rewrite**. Some of them can also help SEO your website.
+Below are some of the most common examples of Apache **mod_rewrite**. Some of them can also help the SEO your website.
 
 ### Redirect all HTTP requests to a single file in your site
 
-Edit the ".htaccess" file in the root directory that contains your website. Place the following code inside (in our example **test.php**, replace the name of your own file):
+Edit the ".htaccess" file in the root directory that contains your website. Place the following code inside (by replacing the **test.php** in our example with the name of your own file):
 
 ```bash
 RewriteEngine On
@@ -91,7 +91,7 @@ This URL rewrite can help SEO your website.
 
 ### Redirect requests to a particular folder without displaying the folder
 
-When you use an OVHcloud shared hosting plan, your domain name (for example **domain.tld**) is declared as `Multisites` to display the contents of a target folder also called `root folder`. You can customise the name of this `root folder`.
+When you use an OVHcloud shared hosting plan, your domain name (for example **domain.tld**) is declared as `Multisites` to display the content of a target folder also called `root folder`. You can customise the name of this `root folder`.
 
 Please refer to our guide on [configuring a multisite on a shared hosting plan](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/) if you would like more information on this subject.
 
@@ -101,7 +101,7 @@ In this case, the URL to access the site will be as follows: **http://domain.tld
 
 If your website is not located directly in the `root folder` declared in multisites for your domain name, and you do not want to display the folder name in your website’s URL, edit the ".htaccess" file located in the root directory of your website. 
 
-Place the following code inside (replacing the values **domain.tld** with your domain name in our example, and **MyWebsite** with the name of your own file):
+Place the following code inside (replacing the values **domain.tld** with your domain name, and **MyWebsite** with the name of your own file):
 
 ```bash
 RewriteEngine on
