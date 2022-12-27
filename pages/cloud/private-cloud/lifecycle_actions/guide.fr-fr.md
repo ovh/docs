@@ -3,7 +3,7 @@ title: "Cycle de vie du Hosted Private Cloud powered by VMware - Déterminer les
 slug: lifecycle-actions
 excerpt: Découvrez les actions à mener sur votre offre Hosted Private Cloud powered by VMware, en fonction de ses caractéristiques
 section: FAQ
-order: 010
+order: 011
 ---
 
 **Dernière mise à jour le 27/12/2022**
@@ -144,7 +144,7 @@ Renseignez les champs de l'appel avec les informations suivantes :
 - **datacenterId** : renseignez le datacenterId obtenu à l'étape 1.2
 - **filerId** : renseignez le filerId obtenu à l'étape 1.3
 
-Si la réponse au champ **fullprofile** ne commence pas par `2020-`, il est alors nécéssaire de passer aux nouvelles gammes de stockage. Ces derniers, en plus d'une meilleure qualité de service, bénéficient de meilleures performances liées notamment à une technologie full-SSD.
+Si la réponse au champ **fullprofile** ne commence pas par `2020-`, il est alors nécéssaire de passer aux nouvelles gammes de stockage. Ces dernières, en plus d'une meilleure qualité de service, bénéficient de meilleures performances liées notamment à une technologie full-SSD.
 
 Commencez par ajouter de nouveaux datastores en suivant le guide « [Ajouter des espaces de stockage](https://docs.ovh.com/fr/private-cloud/additional-storage/) ».
 
