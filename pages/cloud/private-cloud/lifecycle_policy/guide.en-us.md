@@ -36,6 +36,8 @@ Hosted Private Cloud
 * DC2014 & DC2016 (AMD PileDriver)
 * SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
 * SDDC2018 (Intel Broadwell, Intel Haswell)
+* Essentials (Intel Broadwell)
+* Premier (Intel Xeon Gold)
 
 ## Lifecycle timeframe and definitions
 
