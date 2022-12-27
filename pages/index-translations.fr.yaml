@@ -34,7 +34,7 @@ bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Premiers pas
 bare-metal-cloud-managed-bare-metal-managing-virtual-machines: Gestion des machines virtuelles
 bare-metal-cloud-managed-bare-metal-ovhcloud-features: Fonctionnalités OVHcloud
-bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Services et options OHVcloud
+bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Services et options OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Fonctionnalités de VMware vSphere
 bare-metal-cloud-network-and-security-solutions: Solutions réseau et sécurité
 bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructur
@@ -73,13 +73,13 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-meltdown-and-spectre
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Réseau
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: Fonctionnalités OVHcloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Services et options OHVcloud
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Services et options OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-security: Sécurité
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: Fonctionnalités de VMware vSphere
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: vROps
 hosted-private-cloud-private-cloud: Private Cloud
 hosted-private-cloud-private-cloud-managing-resources: Gérer les ressources
-hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Services et options OHVcloud
+hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Services et options OVHcloud
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Premiers pas
 ovhcloud-labs-power-web-hosting: POWER Web Hosting

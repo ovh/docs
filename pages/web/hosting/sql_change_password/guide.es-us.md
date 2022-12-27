@@ -96,7 +96,7 @@ Vuelva al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotoman
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte [esta guía](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte [esta guía](https://docs.ovh.com/es/customer/gestionar-su-contrasena/).
 >
 
 Seleccione la nueva contraseña de la base de datos y nócelo. Deberá cumplir las siguientes condiciones:

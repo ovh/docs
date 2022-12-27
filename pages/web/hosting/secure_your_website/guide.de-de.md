@@ -90,7 +90,7 @@ Denken Sie auch daran, eine aktuelle Version von [PHP](../konfiguration_von_php_
 
 ### Schritt 7: HTTPS aktivieren
 
-Ermöglichen Sie die verschlüsselte Verbindung zu Ihrer Website über das Protokoll **HTTPS** gemäß dieser [Anleitung] (../website-umstellen-https-ssl/). Die Aktivierung dieses Protokolls erlaubt es, den Datenaustausch über Ihre Website zu verschlüsseln (insbesondere Angaben, die Benutzer in Formulare eingeben).
+Ermöglichen Sie die verschlüsselte Verbindung zu Ihrer Website über das Protokoll **HTTPS** gemäß dieser [Anleitung](../website-umstellen-https-ssl/). Die Aktivierung dieses Protokolls erlaubt es, den Datenaustausch über Ihre Website zu verschlüsseln (insbesondere Angaben, die Benutzer in Formulare eingeben).
 
 ### Schritt 8: Schützen Sie Ihre Formulare
 

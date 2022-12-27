@@ -157,7 +157,7 @@ Teniendo en cuenta los elementos adicionales que se le indicarán en este mensaj
 Asimismo, deberá asegurarse de que sus servicios no están siendo controlados por un tercero (por ejemplo, debido a un ataque informático). Para ello, consulte nuestras guías:
 
 - [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/)
-- [Cambiar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/)
+- [Cambiar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/)
 - [Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/es/customer/proteger-su-cuenta-con-una-2FA/)
 - [¿Cómo proteger su sitio web?](https://docs.ovh.com/es/hosting/secure-website/)
 - [Proteger un VPS](https://docs.ovh.com/es/vps/consejos-proteccion-vps/)
