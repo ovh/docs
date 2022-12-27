@@ -34,7 +34,7 @@ bare-metal-cloud-managed-bare-metal-faq: FAQ
 bare-metal-cloud-managed-bare-metal-getting-started: Erste Schritte
 bare-metal-cloud-managed-bare-metal-managing-virtual-machines: Verwalten von virtuellen Maschinen
 bare-metal-cloud-managed-bare-metal-ovhcloud-features: OVHcloud Funktionen
-bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Dienste und Optionen von OHVcloud
+bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Dienste und Optionen von OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funktionen von VMware vSphere
 bare-metal-cloud-network-and-security-solutions: Netzwerk- und Sicherheitslösungen
 bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastru
@@ -73,13 +73,13 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-meltdown-and-spectre
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Netzwerk
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: OVHcloud Funktionen
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Dienste und Optionen von OHVcloud
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Dienste und Optionen von OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-security: Sicherheit
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: Funktionen von VMware vSphere
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: vROps
 hosted-private-cloud-private-cloud: Private Cloud
 hosted-private-cloud-private-cloud-managing-resources: Ressourcen verwalten
-hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Dienste und Optionen von OHVcloud
+hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Dienste und Optionen von OVHcloud
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Erste Schritte
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
