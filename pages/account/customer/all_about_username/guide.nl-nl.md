@@ -51,7 +51,7 @@ U kunt uw wachtwoord achterhalen door te klikken op wachtwoord vergeten op de in
 
 Er zal een bevestigende e-mail verzonden worden aan het contact e-mailadres. 
 Als u geen toegang meer heeft tot dit adres kunt u het volgende formulier invullen:  
-[procedure](https://http://www.ovh.nl/cgi-bin/procedure/procedureChangeEmail.cgi)
+[procedure](https://www.ovh.nl/cgi-bin/procedure/procedureChangeEmail.cgi)
 
 ![](images/3936.png){.thumbnail}
 

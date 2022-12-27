@@ -24,7 +24,7 @@ Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=got
 
 Para gestionar sus contraseñas, debe conectarse en primer lugar al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En caso de olvidar su identificador o su contraseña, haga clic en el `¿No recuerda su ID de cliente o contraseña?`{.action} en la ventana de conexión. Recibirá la información necesaria por correo electrónico.
 
-También puede consultar la guía [Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%c3%b1a/).
+También puede consultar la guía [Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/).
 
 Una vez que se haya conectado al área de cliente,
 

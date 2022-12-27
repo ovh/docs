@@ -118,7 +118,7 @@ En el área de cliente de OVHcloud, abra la pestaña `Usuario y permisos`{.actio
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/es/customer/gestionar-su-contrasena/).
 >
 
 Seleccione la nueva contraseña de la base de datos y nócelo. Deberá cumplir las siguientes condiciones:
@@ -231,7 +231,7 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 [Web hosting: guía de uso de FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)
 
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/)
+[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/)
 
 [Resolver los errores más frecuentes asociados a las bases de datos](https://docs.ovh.com/es/hosting/error-requentes-base-de-datos/)
 

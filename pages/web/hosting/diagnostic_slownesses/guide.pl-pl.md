@@ -140,7 +140,7 @@ phpinfo();
 >
 > W niektórych przypadkach pliki "**.htaccess**" znajdujące się w katalogach/folderach znajdujących się na górze lub na tym samym poziomie, w jakim umieściłeś plik "**phpinfo.php**" mogą mieć wpływ na wyświetlanie w przeglądarce internetowej "**phpinfo.php***". 
 >
-> Operacje na pliku "**.htaccess**" mogą mieć wpływ na wyświetlanie strony. W przypadku trudności z realizacją tego zadania, należy skontaktować się z [wyspecjalizowanym dostawcą] (https://partner.ovhcloud.com/pl/).
+> Operacje na pliku "**.htaccess**" mogą mieć wpływ na wyświetlanie strony. W przypadku trudności z realizacją tego zadania, należy skontaktować się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/).
 >
 > Jeśli nie wyświetla się i **tylko dla zaawansowanych użytkowników**, należy zmienić nazwę plików "**.htaccess**" na "**.htaccess_OLD***", aby serwer nie wykonywał już testu. Zmień nazwę poprawnie po zakończeniu diagnostyki.
 >
