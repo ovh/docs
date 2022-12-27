@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Dernière mise à jour le 05/10/2022**
+**Dernière mise à jour le 27/12/2022**
 
 > [!warning]
 >
@@ -36,6 +36,8 @@ Hosted Private Cloud
 * DC2014 & DC2016 (AMD PileDriver)
 * SDDC2014 et SDDC2016 (Intel Ivy Bridge, Intel Haswell)
 * SDDC2018 (Intel Broadwell, Intel Haswell)
+* Essentials (Intel Broadwell)
+* Premier (Intel Xeon Gold)
 
 ## Chronologie du cycle de vie et définitions
 
@@ -101,6 +103,8 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2024 | 31/08/2024 |
 | SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2024 |
+| Essentials (Intel Broadwell) | 2020 |            |            |            |
+| Premier (Intel Xeon Gold) | 2020 |            |            |            |
 
 ### Datastores (stockage)
 
@@ -119,6 +123,13 @@ Si le profil complet de votre datastore ne commence pas par « 2020-... », il e
 | 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
 | 800Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
 | 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 31/03/2023 |
+| 3Tb | 2020 |            |            |            |
+| 6Tb | 2020 |            |            |            |
+| 9Tb | 2020 |            |            |            |
+| 18Tb | 2020 |            |            |            |
+| 36Tb | 2020 |            |            |            |
+| 12Tb | 2023 |            |            |            |
+| 24Tb | 2023 |            |            |            |
 
 ## Logiciels intégrés
 
