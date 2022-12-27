@@ -3,7 +3,7 @@ account-and-service-management-account-information-faq: FAQ
 account-and-service-management-account-information-getting-started: Primeiros passos
 account-and-service-management-account-information-security-and-conformity: Segurança e conformidade
 account-and-service-management-api: API
-account-and-service-management-api-apiv: APIv6
+account-and-service-management-api-apiv6: APIv6
 account-and-service-management-api-getting-started: Primeiros passos
 account-and-service-management-managing-billing-payments-and-services: Gestão da faturação, dos pagamentos e dos serviços
 account-and-service-management-managing-billing-payments-and-services-api: API
@@ -200,8 +200,8 @@ web-cloud-internet-internet-access-setting-up-your-access: Configuração do ace
 web-cloud-internet-internet-access-troubleshooting: Diagnóstico
 web-cloud-internet-overthebox: OverTheBox
 web-cloud-internet-overthebox-faq: FAQ
-web-cloud-internet-overthebox-overthebox-intel--it-v: OverTheBox Intel & IT v1
-web-cloud-internet-overthebox-overthebox-plus--it-v: OverTheBox Plus & IT v2
+web-cloud-internet-overthebox-overthebox-intel-and-it-v1: OverTheBox Intel & IT v1
+web-cloud-internet-overthebox-overthebox-plus-and-it-v2: OverTheBox Plus & IT v2
 web-cloud-internet-overthebox-setting-up: Início
 web-cloud-messaging: Mensagens
 web-cloud-messaging-sms: SMS
@@ -257,7 +257,7 @@ web-cloud-web-paas-powered-by-platformsh-development-setting-up-a-local-developm
 web-cloud-web-paas-powered-by-platformsh-domains: Domínios
 web-cloud-web-paas-powered-by-platformsh-domains-custom-domains: Domínios personalizados
 web-cloud-web-paas-powered-by-platformsh-frameworks: Frameworks
-web-cloud-web-paas-powered-by-platformsh-frameworks-drupal-: Drupal 7
+web-cloud-web-paas-powered-by-platformsh-frameworks-drupal-7: Drupal 7
 web-cloud-web-paas-powered-by-platformsh-frameworks-hibernate: Hibernate
 web-cloud-web-paas-powered-by-platformsh-frameworks-jakarta-eeeclipse-microprofile: Jakarta EE/Eclipse MicroProfile
 web-cloud-web-paas-powered-by-platformsh-frameworks-spring: Spring
