@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Dernière mise à jour le 23/12/2022**
+**Dernière mise à jour le 27/12/2022**
 
 > [!warning]
 >
