@@ -3,10 +3,10 @@ title: RACI for Public Cloud Instances
 slug: raci-instances-public-cloud
 section: General information
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Instances"
-order: 5
+order: 05
 ---
 
-**Last update 22/12/2022**
+**Last updated 22nd December 2022**
 
 ## Objectif
 
@@ -38,7 +38,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Produce, route, deliver and maintain physical Instances and hosting buldings | I | RA |
 | Install internal functionnal bricks needed to maintain in operational and security conditions the Service (firmware, BIOS) | I | RA |
 | Deploy the first network configuration on the Service  | I | RA |
-| Buy and hold licences and usage rights for Microsoft OS available on OVHcloud cathalog | CI | RA |
+| Buy and hold licences and usage rights for Microsoft OS available on OVHcloud catalog | CI | RA |
 | Buy and hold licences and usage rights for others OS used | RA |  |
 
 #### 2.2. Reversibility model
@@ -66,7 +66,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Manage network accessibility of Instances |  | RA |
 | Decide to add / remove options on Instances | RA | I |
 | Carry out addition / deletion of options or material on Instances | I | RA |
-| Install security briks and tools needed following needs | RA |  |
+| Install security bricks and tools needed following needs | RA |  |
 | Administrate applications installed on Instances | RA |   |
 | Manage backups | RA |  |
 | Manage backups following Customer request (optionnal) | CI | RA |
@@ -77,7 +77,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage access rights to OVHcloud Control Panel | RA | I |
 | Manage physical and logical access to infrastructures for OVHcloud teams | I | RA |
-| Manage accesses et users'security policy using the service  | RA |  |
+| Manage access and security policy for service users  | RA |  |
 
 ##### **3.1.3. Monitoring**
 
@@ -86,11 +86,11 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Manage and monitor physical servers capacity in support of Public Cloud services |  | RA |
 | Manage and monitor Public Cloud services capacity | RA |  |
 | Monitor the functionning of softwares installed on Instances | RA |  |
-| Retain logs of control plane for Instances monitoring (API, hyperviseur) |  | RA |
+| Retain logs of control plane for Instances monitoring (API, hypervisor) |  | RA |
 | Retain logs of Information System hosted on Instances| RA |  |
 | Monitor the proper functioning of physical devices (utilities) in support of the service | I | RA |
 | Create, modify, control, restore, delete jobs of backups | RA |  |
-| Create jobs of backups following subsrciption to Automated backups option | AI | R |
+| Create jobs of backups following subscription to Automated backups option | AI | R |
 | Maintain storage and backups devices used for the service |  | RA |
 
 ##### **3.1.4. Storage**
@@ -119,6 +119,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Manage data security hosted on Instances service | RA |  |
 
 ##### **3.1.7. Business continuity**
+
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Perform periodic restoration tests | RA |  |
@@ -151,7 +152,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Plan reversibility operations | RA |  |
 | Choose fallback infrastructures | RA |  |
-| Export data following QCOW2 format  | RA | I |
+| Export data in QCOW2 format  | RA | I |
 
 #### 4.2. Data recovery
 
