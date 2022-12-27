@@ -1,16 +1,16 @@
 ---
-title: RACI for Block Storage Public Cloud
+title: RACI for Public Cloud Block Storage
 slug: raci-block-storage-public-cloud
 section: General Information
-excerpt: "Shared responsibilities between OVHcloud and the customer for Block Storage Public Cloud"
+excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Block Storage"
 order: 6
 ---
 
-**Last update 23/12/2022**
+**Last update 23rd December 2022**
 
 ## Objectif
 
-The RACI below details shared responsibilities between OVHcloud and the customer for Public Cloud Block Storage Service. This shared model can help relieve the customer’s operational burden.
+The RACI below details shared responsibilities between OVHcloud and the customer for the Public Cloud Block Storage service. This shared model can help relieve the customer’s operational burden.
 
 | Roles |
 | --- |
@@ -25,9 +25,9 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Choose the Block Storage scale following business needs(Classic, High speed, ...) | RA | I |
+| Choose the Block Storage scale following business needs (Classic, High speed, ...) | RA | I |
 | Provide personal data needed for service subscription | RA | I |
-| Choose service location alligned with location of Instances | RA | I |
+| Choose service location aligned with location of Instances | RA | I |
 
 ### 2. Service availability
 
@@ -62,19 +62,19 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Manage network accessibility of storage volumes whithin attached Instances   |  | RA |
 | Decide to add / remove a Block Storage option (resizing, create a snapshot, create a backup volume) | RA | I |
 | Carry out to add / remove a Block Storage option (resizing, create a snapshot, create a backup volume) | I | RA |
-| Install security briks and tools needed following needs | RA |  |
+| Install needed security bricks and tools | RA |  |
 | Administrate storage service | I | RA  |
 | Administrate data | RA |   |
 | Manage backups | RA |  |
-| Manage backups following Customer request (optionnal) | CI | RA |
+| Manage backups following Customer request (optional) | CI | RA |
 
 ##### **3.1.2. Access management**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage access rights to OVHcloud Control Panel | RA | I |
+| Manage access rights to the OVHcloud Control Panel | RA | I |
 | Manage physical and logical access to infrastructures for OVHcloud teams | I | RA |
-| Manage accesses et users'security policy using the service | RA |  |
+| Manage access and security policy for service users | RA |  |
 
 ##### **3.1.3. Monitoring**
 
@@ -82,11 +82,11 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage and monitor physical servers capacity in support of Public Cloud services |  | RA |
 | Monitor Block Storage clusters' performances | I | RA |
-| Retain logs of control plane for Instances monitoring (API, hyperviseur)
+| Retain logs of control plane for Instances monitoring (API, hypervisor)
 | Retain logs of Information System hosted on Instances
 | Monitor the proper functioning of physical devices (utilities) in support of the service
 | Create, modify, control, restore, delete jobs of backups
-| Create jobs of backups following subsrciption to Automated backups option | AI | R |
+| Create jobs of backups following subscription to Automated backups option | AI | R |
 | Maintain storage and backups devices used for the service |  | RA |
 
 ##### **3.1.4. Storage**
@@ -102,26 +102,27 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Provide inventory of storage volumes used | I | RA |
 | Manage the security of management infrastructure (API, control plane) |   | RA |
 | Manage security of OS, softwares and middlewares installed on Instances | RA |  |
-| Manage physical security of equipements and hosted infrastructures | I | RA |
+| Manage physical security of equipments and hosted infrastructures | I | RA |
 | Manage data security hosted on storage volumes | RA |  |
 
 ##### **3.1.6. Business continuity**
+
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Perform periodic restoration tests | RA |  |
 | Maintain a business continuity and disaster recovery plan for IS hosted | RA | C |
 | Manage automatic management systems for the infrastructure provided | I | RA |
 
-#### 3.2. Evenements management
+#### 3.2. Event management
 
 ##### **3.2.1. Incidents**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Intervene with network and materials incidents (tickets and contacts) | AI | RA |
-| Intervene with other incidents | RA |  |
-| Change deficient hardware in support of the service | I | RA |
-| Realize backup recovery of data volumes | RA |  |
+| Process hardware and network incidents (tickets and contacts) | AI | RA |
+| Process other incidents| RA |  |
+| Replace faulty hardware on physical servers and hard disks | I | RA |
+| Restore backups of data volumes | RA |  |
 | Realize backup recovery in case of subscription to an option managed by OVHcloud | A | R |
 
 #### **3.2.2. Changes**
@@ -130,7 +131,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Deploy updates and patches of OS, softwares, middlewares and Information System hosted on Instances | RA |  |
 
-### 4. Reverting
+### 4. Reversibility
 
 #### 4.1. Reversibility Model
 
@@ -138,7 +139,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Plan reversibility operations | RA |  |
 | Choose fallback infrastructures | RA | CI |
-| Export data following QCOW2 format | RA | I |
+| Export data in QCOW2 format | RA | I |
 
 #### 4.2. Data recovery
 
