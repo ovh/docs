@@ -1,7 +1,7 @@
 ---
 title: RACI for Public Cloud Block Storage
 slug: raci-block-storage-public-cloud
-section: General Information
+section: General information
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Block Storage"
 order: 6
 ---
@@ -37,7 +37,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Produce, route, deliver and maintain physical Instances and hosting buldings | I | RA |
 
-#### 2.2. Modèle de réversibilité
+#### 2.2. Reversibility model
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Restore backups of data volumes | RA |  |
 | Realize backup recovery in case of subscription to an option managed by OVHcloud | A | R |
 
-#### **3.2.2. Changes**
+##### **3.2.2. Changes**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
