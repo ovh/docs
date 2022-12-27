@@ -1,6 +1,6 @@
 ---
 title: Using Terraform with OVHcloud
-excerpt: What should I know in order to use Terraform with OVHcloud
+excerpt: Find out about useful resources in order to use Terraform with OVHcloud
 slug: terraform-at-ovhcloud
 section: Terraform
 order: 01
@@ -14,11 +14,11 @@ order: 01
 
 It is widely used and you can also use it with OVHcloud.
 
-At the heart of the Terraform product is the concept of [provider](https://developer.hashicorp.com/terraform/language/providers) which is a plugin that enables interacttion with an API. 
+At the heart of the Terraform product is the concept of [provider](https://developer.hashicorp.com/terraform/language/providers) which is a plugin that enables interaction with an API. 
 
 ## Providers
 
-Based on your automation needs at OVHcloud, you have to pick one or more of the following terraform providers:
+Based on your automation needs at OVHcloud, you have to pick one or more of the following Terraform providers:
 
 - [OVH provider](https://registry.terraform.io/providers/ovh/ovh/latest) that interacts with [OVHcloud API portal](https://api.ovh.com/). You can refer to [this guide](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) to learn more on how to use the API portal.
 - [OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/lastest) : the open standard cloud computing platform that OVHcloud is using to power its Public Cloud service. For more information, check [this page](https://www.ovhcloud.com/en-gb/public-cloud/openstack/).
@@ -27,16 +27,15 @@ Based on your automation needs at OVHcloud, you have to pick one or more of the 
 - [Hashicorp vSphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/latest) to automate the operations of OVHcloud [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/).
 - [Nutanix provider](https://registry.terraform.io/providers/nutanix/nutanix/latest) to automate the operations of OVHcloud [Hosted Private Cloud powered by Nutanix](https://www.ovhcloud.com/en-gb/hosted-private-cloud/nutanix/).
 
-## Mapping from OVHCloud GUI to Terraform provider & resource
+## Mapping OVHcloud GUI to Terraform providers & resources
 
-OVHcloud console GUI (also called "Control Panel" or "Manager") hides some background API complexity to the user. So from a GUI concept, it may be difficult to find the correct provider and the associated 
+OVHcloud console GUI (also called "Control Panel" or "Manager") hides some background API complexity to the user. From a GUI concept, it may be difficult to find the correct provider and the associated 
 [resource](https://developer.hashicorp.com/terraform/language/resources). The tables below are here to help.
-
 
 > [!primary]
 >
 > - The following categories are based on the Control Panel 'New version (Beta)' from December 2022.
-> - If no resource is not available but a Terraform [data source](https://developer.hashicorp.com/terraform/language/data-sources) is, this is mentionned in the table with "[data source]".
+> - If no resource is not available but a Terraform [data source](https://developer.hashicorp.com/terraform/language/data-sources) is, this is mentioned in the table with "[data source]".
  
 ### Bare Metal Cloud
 
@@ -54,8 +53,8 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 
 | Control Panel concept | Terraform provider | Resource or Data Source  |
 | --- | --- | --- |
-| VMware   | not available for ordering<br/>[vsphere](https://registry.terraform.io/providers/hashicorp/vsphere/latest/docs) for management| see provider|
-| Nutanix | not available for ordering<br/>[nutanix](https://registry.terraform.io/providers/nutanix/nutanix/lastest) for management| see provider|
+| VMware   |- not available for ordering<br/>- [vsphere](https://registry.terraform.io/providers/hashicorp/vsphere/latest/docs) for management| see provider|
+| Nutanix |- not available for ordering<br/>- [nutanix](https://registry.terraform.io/providers/nutanix/nutanix/lastest) for management| see provider|
 
 ### Public Cloud
 
@@ -93,7 +92,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | --- | --- | --- |
 |Managed Kubernetes Service - Cluster operations|ovh|[ovh_cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube)
 |Managed Kubernetes Service - Application deployment operations|Hashicorp Kubernetes|[kubernetes_namespace](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace) [kubernetes_deployment](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment)|
-|Kubernetes Load Balancer|Hashicorp kubernetes|[kubernetes_service](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service) as described in this [tutorial](../../../platform/kubernetes-k8s/using-lb/guide.en-gb.md)|
+|Kubernetes Load Balancer|Hashicorp kubernetes|[kubernetes_service](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service) as described in this [tutorial](https://docs.ovh.com/gb/en/kubernetes/using-lb/)|
 |Managed Private Registry|ovh|[ovh_cloud_project_containerregistry](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry)<br/>[ovh_cloud_project_containerregistry_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry_user)|
 |Workflow Management|ovh|not available (see this [feature request](https://github.com/ovh/terraform-provider-ovh/issues/330) on ovh provider project)|
 
@@ -160,7 +159,7 @@ This universe is currently not supported by Terraform providers
 
 ## Resources
 
-### Terraform at OVHCloud examples
+### Terraform with OVHcloud examples
 
 - [Public Cloud examples repository on GitHub](https://github.com/ovh/public-cloud-examples)
 - [Creating a kubernetes cluster on Terraform](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster-through-terraform/)
