@@ -191,7 +191,7 @@ Si votre version de vSphere n'est pas vCSA 7.0 (build 20845200), veuillez créer
 
 #### Récupérer les informations de votre PCC dans vSphere
 
-Rendez vous dans la vue `Mise en réseau`{.action} de votre client vSphere puis dans `Sécurité`{.action} et enfin cliquez sur l'onglet `Upgrade`{.action}.
+Rendez vous dans la vue `Mise en réseau et sécurité`{.action} de votre client vSphere. Cliquez ensuite sur `Installation et mise à niveai`{.action} et enfin sur l'onglet `Mise à niveau`{.action}.
 
 Prenez note de la version de votre NSX-v.
 
