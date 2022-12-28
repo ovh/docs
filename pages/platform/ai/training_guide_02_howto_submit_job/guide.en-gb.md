@@ -15,7 +15,7 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 ## Requirements
 
 -   a **Public cloud** project
--   optionally container objects to attach data to the **job** at step 6, see our [create data container](https://docs.ovh.com/gb/en/storage/pcs/create-container/) guide.
+-   optionally container objects to attach data to the **job** at step 6, see our [create data container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) guide.
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions

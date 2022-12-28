@@ -21,7 +21,7 @@ order: 08
 
 ## Objetivo
 
-[Zonemaster](https://zonemaster.fr/domain_check) es una herramienta nacida de la colaboración entre la [AFNIC](https://www.afnic.fr/en/) (registro francés) y [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (registro sueco). que permite analizar la configuración DNS (Domain Name System) de un dominio e identificar los elementos que pueden mejorarse o corregirse.
+[Zonemaster](https://zonemaster.net/en/run-test) es una herramienta nacida de la colaboración entre la [AFNIC](https://www.afnic.fr/en/) (registro francés) y [The Swedish Internet Foundation](https://internetstiftelsen.se/en/) (registro sueco). que permite analizar la configuración DNS (Domain Name System) de un dominio e identificar los elementos que pueden mejorarse o corregirse.
 
 > [!primary]
 >
@@ -72,7 +72,7 @@ Una vez validado el formulario, los resultados se clasifican por código de colo
 
 ### Información útil
 
-Si tiene más preguntas sobre Zonemaster, consulte [FAQ](https://zonemaster.net/faq) en <https://zonemaster.fr/>.
+Si tiene más preguntas sobre Zonemaster, consulte [FAQ](https://zonemaster.net/es/faq) en <https://zonemaster.fr/>.
 
 ## Más información <a name="go-further"></a>
 

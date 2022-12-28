@@ -17,7 +17,7 @@ This guide shows you how to configure a domain on your container.
 
 ## Requirements
 
-- [Have a storage space](https://docs.ovh.com/au/en/storage/pcs/create-container/)
+- [Have a storage space](https://docs.ovh.com/au/en/storage/object-storage/pcs/create-container/)
 - A domain name
 
 

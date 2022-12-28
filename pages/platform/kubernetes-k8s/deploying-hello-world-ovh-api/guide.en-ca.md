@@ -20,7 +20,7 @@ In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.c
 * You will also need the [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool. You can find the [detailed installation instructions](https://kubernetes.io/docs/tasks/tools/install-kubectl/){.external} for this tool on Kubernetes' official site.
 
 > [!warning]
-> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First Steps with the OVHcloud APIs](https://docs.ovh.com/ca/en/customer/first-steps-with-ovh-api/).
+> This guide assumes you are familiar with the [OVHcloud API](https://api.ovh.com/). If you have never used it, you can find the basics here: [First Steps with the OVHcloud APIs](https://docs.ovh.com/ca/en/api/first-steps-with-ovh-api/).
 >
 
 ## The API Explorer

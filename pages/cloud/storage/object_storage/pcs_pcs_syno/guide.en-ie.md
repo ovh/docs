@@ -17,7 +17,7 @@ This is compatible with the OVHcloud Public Cloud Object Storage and lets you ba
 
 ## Prerequisites
 
-- [Create an Object Storage container](https://docs.ovh.com/ie/en/storage/pcs/create-container/)
+- [Create an Object Storage container](https://docs.ovh.com/ie/en/storage/object-storage/pcs/create-container/)
 - [Configure an Openstack user](https://docs.ovh.com/ie/en/public-cloud/creation-and-deletion-of-openstack-user/#creating-an-openstack-user)
 
 

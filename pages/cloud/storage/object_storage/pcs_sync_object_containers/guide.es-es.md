@@ -16,8 +16,8 @@ If you want to move your objects from one data centre to another, or even from o
 
 ## Requirements
 
-- [An environment that is ready to use the OpenStack API with the Swift client](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [OpenStack environment variables set](https://docs.ovh.com/es/public-cloud/set-openstack-environment-variables/)
+- [An environment that is ready to use the OpenStack API with the Swift client](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
+- [OpenStack environment variables set](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
 - Two object containers in two different data centres
 
 

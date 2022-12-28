@@ -23,7 +23,7 @@ routes:
 There are two ways to manage your data:
 
 - You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](https://docs.ovh.com/it/publiccloud/ai/cli/install-client). Next, find out how to [manage your data with the CLI](https://docs.ovh.com/it/publiccloud/ai/cli/data-cli/).
-- You can use the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), see [create data container](https://docs.ovh.com/it/storage/pcs/create-container/).
+- You can use the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), see [create data container](https://docs.ovh.com/it/storage/object-storage/pcs/create-container/).
 
 ## How it works
 
@@ -107,7 +107,7 @@ Users can enable a `cache` feature that allow jobs and notebooks to re-use avail
 
 ## Going further
 
-- You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/it/storage/pcs/create-container/).
+- You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/it/storage/object-storage/pcs/create-container/).
 
 - You can check how to [use your data in an AI Notebook](https://docs.ovh.com/it/publiccloud/ai/cli/access-object-storage-data/).
 

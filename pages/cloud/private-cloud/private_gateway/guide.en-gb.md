@@ -24,7 +24,7 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 * An [OVHcloud Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
 * Access to the vSphere interface
 * Being connected to [OVHcloud API](https://api.ovh.com/console){.external}.
-* Creating [OVHcloud API credentials](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+* Creating [OVHcloud API credentials](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}.
 
 ## Instructions
 

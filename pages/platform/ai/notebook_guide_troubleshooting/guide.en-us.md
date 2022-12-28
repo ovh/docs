@@ -15,7 +15,7 @@ This tutorial gives you some hints on how to debug your notebooks if things go w
 ## Requirements
 
 - a notebook you would like to start with **AI Notebooks**
-- an [Object Storage Container](https://docs.ovh.com/us/en/storage/pcs/create-container/) in your OVHcloud account
+- an [Object Storage Container](https://docs.ovh.com/us/en/storage/object-storage/pcs/create-container/) in your OVHcloud account
 - a Public Cloud user with the **Administrator** or **AI Training Operator** role
 
 ## Instructions

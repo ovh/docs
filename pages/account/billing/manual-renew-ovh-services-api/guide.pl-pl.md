@@ -16,7 +16,7 @@ Domyślnie, OVHcloud oferuje automatyczne odnawianie usług. Istnieje jednak mo�
 ## Wymagania początkowe
 
 - Zalogowanie do [API OVHcloud](https://api.ovh.com/console){.external}
-- Utworzenie [danych identyfikacyjnych dla API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/)
+- Utworzenie [danych identyfikacyjnych dla API OVH](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)
 
 ## W praktyce
 
