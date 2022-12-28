@@ -23,7 +23,7 @@ Bei OVH können Sie [Dedicated Server](https://www.ovh.de/dedicated_server/){.ex
 ## Voraussetzungen
 
 * Sie verfügen über einen [Hybridserver von OVH](https://www.ovh.de/dedicated_server/){.external}.
-* Sie haben Zugriff auf die [OVH API](https://api.ovh.com/console/){.external}.
+* Sie haben Zugriff auf die [OVH API](https://api.ovh.com/){.external}.
 * Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 > [!warning]

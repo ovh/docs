@@ -12,14 +12,14 @@ order : 01
 
 Une Gateway offre une méthode de connexion sortante sécurisée depuis vos instances en réseau privé, ou bien encore la possibilité d’utiliser des adresses Floating IP avec votre instance ou votre Load Balancer pour l’exposition de services.
 
-Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), l’[API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) ou l’[API OVHcloud](https://ca.api.ovh.com/console/).
+Ces opérations peuvent être réalisées depuis l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), l’[API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) ou l’[API OVHcloud](https://ca.api.ovh.com/).
 
 **Apprenez à créer un réseau privé avec une Gateway**
 
 ## Prérequis
 
 - Posséder un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
-- Avoir accès à l’[API OVHcloud](https://ca.api.ovh.com/console/), à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou à l’environnement OpenStack ([Tutoriel](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/))
+- Avoir accès à l’[API OVHcloud](https://ca.api.ovh.com/), à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou à l’environnement OpenStack ([Tutoriel](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/))
 - Pour OpenStack, il est nécessaire de mettre en place le client OpenStack
 
 ## En pratique

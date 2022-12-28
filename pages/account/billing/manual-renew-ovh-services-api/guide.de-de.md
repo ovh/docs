@@ -16,7 +16,7 @@ OVHcloud bietet Ihnen standardmäßig die Möglichkeit, Ihre Dienste automatisch
 
 ## Voraussetzungen
 
-- Sie sind in der [OVHcloud API](https://api.ovh.com/console){.external} eingeloggt.
+- Sie sind in der [OVHcloud API](https://api.ovh.com/){.external} eingeloggt.
 - Sie haben Ihre [Zugangsdaten für die OVHcloud API eingerichtet - EN](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
 ## In der praktischen Anwendung

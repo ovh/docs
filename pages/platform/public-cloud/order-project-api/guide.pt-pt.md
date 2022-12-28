@@ -26,7 +26,7 @@ A criação de um projeto é a primeira etapa da implantação de [instâncias P
 
 ## Instruções
 
-Ligue-se à [interface API OVHcloud](https://api.ovh.com/console/) e siga os passos abaixo.
+Ligue-se à [interface API OVHcloud](https://api.ovh.com/) e siga os passos abaixo.
 
 ### 1 - construir o carrinho
 

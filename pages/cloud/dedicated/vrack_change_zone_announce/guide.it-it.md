@@ -46,7 +46,7 @@ In questo esempio l’indirizzo IP testato è annunciato a **Roubaix**, come vis
 
 ### Step 2: modifica il blocco IP annunciato
 
-Accedi alla pagina delle [API OVHcloud](https://api.ovh.com/console/){.external} utilizzando il tuo identificativo cliente e utilizza il comando qui sotto per modificare l’annuncio del blocco IP.
+Accedi alla pagina delle [API OVHcloud](https://api.ovh.com/){.external} utilizzando il tuo identificativo cliente e utilizza il comando qui sotto per modificare l’annuncio del blocco IP.
 
 > [!api]
 >

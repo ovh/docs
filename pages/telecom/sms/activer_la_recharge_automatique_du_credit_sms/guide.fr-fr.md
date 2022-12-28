@@ -15,7 +15,7 @@ Ce guide à pour objectif de vous expliquer ce que sont les crédit SMS, comment
 ## Prérequis
 
 - Disposer d'un compte SMS OVHcloud.
-- Être connecté aux [API OVHcloud](https://api.ovh.com/console/) (uniquement pour les transferts de crédits).
+- Être connecté aux [API OVHcloud](https://api.ovh.com/) (uniquement pour les transferts de crédits).
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
 
 ![espace client Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
@@ -83,7 +83,7 @@ Le transfert de crédits SMS ne peut s'effectuer que via API.
 > [!success]
 > Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)».
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/console/) puis utilisez l'API suivante :
+Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) puis utilisez l'API suivante :
 
 > [!api]
 >

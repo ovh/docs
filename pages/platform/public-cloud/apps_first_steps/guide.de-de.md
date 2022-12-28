@@ -33,7 +33,7 @@ Installieren Sie über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?act
 
 Wenn Sie die Instanz erstellt und eine vorinstallierte Anwendung ausgewählt haben, können Sie Ihre Verbindungsdaten nur über die OVHcloud API abrufen.
 
-1. Verbinden Sie sich mit der [API Konsole](https://api.ovh.com/console/).
+1. Verbinden Sie sich mit der [API Konsole](https://api.ovh.com/).
 2. Verwenden Sie anschließend [diesen API Call](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST).
 
 > API Aufruf

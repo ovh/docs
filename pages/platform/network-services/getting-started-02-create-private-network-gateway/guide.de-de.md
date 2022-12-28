@@ -21,7 +21,7 @@ This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?a
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud API](https://eu.api.ovh.com/console/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/))
+- Access to the [OVHcloud API](https://eu.api.ovh.com/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
 
 ## Instructions

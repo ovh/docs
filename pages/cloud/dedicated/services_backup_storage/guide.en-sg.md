@@ -84,7 +84,7 @@ In order to add other IP addresses from which to access, you can use the OVHclou
 > Only OVHcloud IP addresses can be authorised.
 >
 
-Log in to [api.ovh.com](https://ca.api.ovh.com/console/) and use the following call:
+Log in to [api.ovh.com](https://ca.api.ovh.com/) and use the following call:
 
 > [!api]
 >

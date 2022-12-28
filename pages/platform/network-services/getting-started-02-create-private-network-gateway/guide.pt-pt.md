@@ -14,14 +14,14 @@ routes:
 
 A Gateway offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
 
-This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), the [OpenStack API](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/) or the [OVHcloud API](https://eu.api.ovh.com/console/).
+This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), the [OpenStack API](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/) or the [OVHcloud API](https://eu.api.ovh.com/).
 
 **Learn how to create a private network with a gateway.**
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud API](https://eu.api.ovh.com/console/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/))
+- Access to the [OVHcloud API](https://eu.api.ovh.com/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
 
 ## Instructions

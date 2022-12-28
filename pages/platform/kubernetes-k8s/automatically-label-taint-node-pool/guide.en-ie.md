@@ -466,7 +466,7 @@ And if you edit the Node Pool configuration to activate the AutoScaling and scal
 
 ### Create a Node Pool Template through API
 
-You can also create a Node Pool template through the API. You can use the [API Explorer](https://api.ovh.com/console/) for example to interact with our API.
+You can also create a Node Pool template through the API. You can use the [API Explorer](https://api.ovh.com/) for example to interact with our API.
 
 To create a Node Pool with a template (labels, annotations, taints...), you have to make a call on:
 

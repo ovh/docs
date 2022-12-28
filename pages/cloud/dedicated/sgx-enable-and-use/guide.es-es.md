@@ -20,7 +20,7 @@ La tecnología Intel SGX proporciona funciones avanzadas de seguridad mediante e
 
 - Tener un servidor dedicado de la [gama Infrastructure](https://www.ovhcloud.com/es-es/bare-metal/infra/){.external} o de la [gama Advance](https://www.ovhcloud.com/es-es/bare-metal/advance/), con la opción [SGX](https://www.ovhcloud.com/es-es/bare-metal/intel-software-guard-extensions/){.external}
 - Tener acceso al servidor por SSH como administrador (root)
-- Tener acceso a la [API de OVHcloud](https://api.ovh.com/console/){.external}
+- Tener acceso a la [API de OVHcloud](https://api.ovh.com/){.external}
 - Tener instalado Ubuntu 18.04 o similar en el servidor
 
 > [!warning]

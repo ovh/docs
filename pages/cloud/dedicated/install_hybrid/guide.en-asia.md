@@ -16,7 +16,7 @@ OVHcloud offers some [Dedicated Servers](https://www.ovh.com/asia/dedicated-serv
 ## Requirements
 
 * an [OVHcloud Hybrid Server](https://www.ovh.com/asia/dedicated-servers/){.external}
-* access to the [OVHcloud API](https://ca.api.ovh.com/console/){.external}
+* access to the [OVHcloud API](https://ca.api.ovh.com/){.external}
 * access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 
 > [!warning]

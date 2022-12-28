@@ -16,7 +16,7 @@ Natively, OVHcloud offers you the option of renewing your solution automatically
 
 ## Requirements
 
-- You need to be connected to the [OVHcloud API](https://ca.api.ovh.com/console){.external}.
+- You need to be connected to the [OVHcloud API](https://ca.api.ovh.com/){.external}.
 - You need to have created your login details for the OVHcloud API.
 
 ## Instructions

@@ -30,7 +30,7 @@ Using the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&
 
 Once the instance has been installed with your chosen pre-installed application, you can retrieve your login details via the OVHcloud API only.
 
-1. Log in to the [API console here](https://api.ovh.com/console/).
+1. Log in to the [API console here](https://api.ovh.com/).
 2. Then go to [here](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST).
 
 > API call

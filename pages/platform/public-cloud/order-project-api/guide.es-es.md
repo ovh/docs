@@ -26,7 +26,7 @@ La creación de un proyecto es la primera etapa del despliegue de [instancias Pu
 
 ## Procedimiento
 
-Conéctese a la [API de OVHcloud](https://api.ovh.com/console/) y siga los pasos que se indican a continuación.
+Conéctese a la [API de OVHcloud](https://api.ovh.com/) y siga los pasos que se indican a continuación.
 
 ### 1\. construir la canasta
 

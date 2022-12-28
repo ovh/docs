@@ -57,7 +57,7 @@ Substitua "InstanceID" pelo ID da instância correspondente. Este identificador 
 
 ### Desde a API OVHcloud
 
-Aceda à[interface API OVHcloud](https://eu.api.ovh.com/console/) conforme o [guia apropriado](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/) e siga os passos abaixo.
+Aceda à[interface API OVHcloud](https://eu.api.ovh.com/) conforme o [guia apropriado](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/) e siga os passos abaixo.
 
 Utilize a seguinte chamada:
 

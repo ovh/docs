@@ -23,7 +23,7 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 - Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
 - Être connecté à votre VPS en SSH (accès root) ou via un bureau à distance (Windows).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l'[API OVHcloud](https://api.ovh.com/console/).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l'[API OVHcloud](https://api.ovh.com/).
 
 ## En pratique
 

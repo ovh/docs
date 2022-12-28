@@ -17,7 +17,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 - A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) that supports [virtual MACs](https://docs.ovh.com/sg/en/dedicated/network-support-virtual-mac/)
 - An [Additional IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/){.external} or an Additional IP block (RIPE)
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} or to the [OVHcloud API](https://ca.api.ovh.com/console/).
+- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} or to the [OVHcloud API](https://ca.api.ovh.com/).
 - Your server must support virtual MACs. To determine this, consult [this guide](https://docs.ovh.com/sg/en/dedicated/network-support-virtual-mac/).
 
 > [!warning]

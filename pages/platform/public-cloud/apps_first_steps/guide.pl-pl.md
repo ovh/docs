@@ -34,7 +34,7 @@ W [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 Po utworzeniu instancji i wybraniu aplikacji możesz odzyskać dane do logowania tylko przez API OVHcloud.
 
-1. Zaloguj się do [konsoli API](https://api.ovh.com/console/)
+1. Zaloguj się do [konsoli API](https://api.ovh.com/)
 2. Następnie użyj [tego połączenia API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
 
 > Połączenie
