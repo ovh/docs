@@ -22,7 +22,7 @@ O suporte desta funcionalidade é um pré-requisito para todas as ações relati
 ## Requisitos
 
 - Dispor de um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}.
-- Ter acesso à [API OVHcloud](https://api.ovh.com/console/){.external}.
+- Ter acesso à [API OVHcloud](https://api.ovh.com/){.external}.
 
 > [!primary]
 > Se não está familiarizado com a utilização da API OVHcloud, consulte o nosso manual "[Primeiros passos com as API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)".

@@ -18,7 +18,7 @@ Esta guía explica en qué consiste el crédito de SMS, cómo recargarlo de form
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud.
-- Conectarse a la [API de OVHcloud](https://api.ovh.com/console/) (solo para las transferencias de crédito).
+- Conectarse a la [API de OVHcloud](https://api.ovh.com/) (solo para las transferencias de crédito).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Telecom`{.action}{.action} > `SMS`{.action}.
 
 ![área de cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
@@ -86,7 +86,7 @@ Solo es posible transferir créditos de SMS a través de la API.
 > [!success]
 > Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
 
-Para ello, conéctese a [https://api.ovh.com/](https://api.ovh.com/console/) y utilice la siguiente API:
+Para ello, conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente API:
 
 > [!api]
 >

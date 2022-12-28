@@ -17,7 +17,7 @@ OVH biedt uiteraard de mogelijkheid om uw oplossing automatisch te verlengen. U 
 
 ## Vereisten
 
-- U moet ingelogd zijn op de [OVH API](https://api.ovh.com/console){.external}.
+- U moet ingelogd zijn op de [OVH API](https://api.ovh.com/){.external}.
 - U moet uw inloggegevens voor de OVH API hebben aangemaakt.
 
 ## Instructies

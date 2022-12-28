@@ -21,7 +21,7 @@ La route d'API **/service** regroupe les actions communes à tous types de servi
 
 ## Prérequis
 
-* Être connecté aux [API OVHcloud](https://ca.api.ovh.com/console){.external}.
+* Être connecté aux [API OVHcloud](https://ca.api.ovh.com/){.external}.
 * Avoir [créé ses identifiants pour l'API OVHcloud](../first-steps-with-ovh-api/){.external}.
 * Avoir un compte client avec un tag Reseller (contactez votre commercial pour connaître votre éligibilité le cas échéant).
 

@@ -23,7 +23,7 @@ OVH le ofrece la posibilidad de contratar [servidores dedicados](https://www.ovh
 ## Requisitos
 
 * Tener un [servidor híbrido de OVH](https://www.ovh.es/servidores_dedicados/){.external}.
-* Tener acceso a la [API de OVH](https://api.ovh.com/console/){.external}.
+* Tener acceso a la [API de OVH](https://api.ovh.com/){.external}.
 * Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!warning]
@@ -35,7 +35,7 @@ OVH le ofrece la posibilidad de contratar [servidores dedicados](https://www.ovh
 
 ### 1. Obtener el nombre del servidor desde la API de OVH
 
-Una vez conectado a la [API de OVH](https://api.ovh.com/console/){.external}, descienda hasta la siguiente llamada:
+Una vez conectado a la [API de OVH](https://api.ovh.com/){.external}, descienda hasta la siguiente llamada:
 
 > [!api]
 >

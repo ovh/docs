@@ -24,7 +24,7 @@ A OVH oferece a possibilidade de contratar [servidores dedicados](https://www.ov
 ## Requisitos
 
 * Dispor de um [servidor híbrido da OVH](https://www.ovh.pt/servidores_dedicados/){.external}.
-* Ter acesso à [API da OVH](https://api.ovh.com/console/){.external}.
+* Ter acesso à [API da OVH](https://api.ovh.com/){.external}.
 * Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]

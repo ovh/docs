@@ -17,7 +17,7 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 - Posséder [un serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
 - Disposer d'une [adresse Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} ou un bloc d’Additional IP (RIPE).
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou à [l'API OVHcloud](https://ca.api.ovh.com/console/).
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou à [l'API OVHcloud](https://ca.api.ovh.com/).
 - Votre serveur doit supporter les MAC virtuelles. Consultez [ce guide](https://docs.ovh.com/ca/fr/dedicated/network-support-virtual-mac/) afin de le déterminer.
 
 > [!warning]

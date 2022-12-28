@@ -26,7 +26,7 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 - A [Virtual Private Server](https://www.ovhcloud.com/en-ca/vps/) in your OVHcloud account
 - Administrative access (root) via SSH or remote desktop (Windows) to your server
 - A basic understanding of networking
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) / to the [OVHcloud API](https://ca.api.ovh.com/console/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) / to the [OVHcloud API](https://ca.api.ovh.com/)
 
 ## Instructions
 
@@ -57,7 +57,7 @@ The IPv6 address and the IPv6 gateway assigned to your server will appear in the
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
-On the [OVHcloud API page](https://ca.api.ovh.com/console/) click on `Login`{.action} in the top-right corner. On the following page, enter the credentials of your OVHcloud account.
+On the [OVHcloud API page](https://ca.api.ovh.com/) click on `Login`{.action} in the top-right corner. On the following page, enter the credentials of your OVHcloud account.
 
 Use this call to retrieve the IPv6 address assigned to your server:
 

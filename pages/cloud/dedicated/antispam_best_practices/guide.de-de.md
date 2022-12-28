@@ -90,7 +90,7 @@ Sobald die Bearbeitung abgeschlossen ist, wird Ihre IP entsperrt.
 
 #### Entsperren Sie Ihre IP-Adresse über die OVHcloud API
 
-Verbinden Sie sich mit dem [API-Interface von OVHcloud](https://eu.api.ovh.com/console/) und folgen Sie den nachstehenden Schritten. Weitere Informationen zur Verwendung der OVHcloud API finden Sie in unserer Anleitung "[Erste Schritte mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)".
+Verbinden Sie sich mit dem [API-Interface von OVHcloud](https://eu.api.ovh.com/) und folgen Sie den nachstehenden Schritten. Weitere Informationen zur Verwendung der OVHcloud API finden Sie in unserer Anleitung "[Erste Schritte mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)".
 
 Rufen Sie zunächst die Liste der IPs jedes OVHcloud Dienstes ab (Hosted Private Cloud / VPS / Public Cloud / Dedicated Server):
 

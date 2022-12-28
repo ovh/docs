@@ -28,7 +28,7 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 - Tener un [VPS de OVHcloud](https://www.ovhcloud.com/es-es/vps/){.external}.
 - Estar conectado al VPS por SSH (acceso root) o a través de un escritorio remoto (Windows).
 - Tener conocimientos básicos de redes.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a la [API de OVHcloud](https://api.ovh.com/console/).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a la [API de OVHcloud](https://api.ovh.com/).
 
 ## Procedimiento
 

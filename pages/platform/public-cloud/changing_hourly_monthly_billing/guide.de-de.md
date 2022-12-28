@@ -58,7 +58,7 @@ Ersetzen Sie "InstanceID" mit der ID der entsprechenden Instanz. Diese Kennung k
 
 ### Über die OVHcloud API
 
-Loggen Sie sich gemäß der [entsprechenden Anleitung](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) in das [OVHcloud API Interface](https://eu.api.ovh.com/console/) ein und folgen Sie den nachstehenden Schritten.
+Loggen Sie sich gemäß der [entsprechenden Anleitung](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) in das [OVHcloud API Interface](https://eu.api.ovh.com/) ein und folgen Sie den nachstehenden Schritten.
 
 Verwenden Sie folgenden Aufruf:
 

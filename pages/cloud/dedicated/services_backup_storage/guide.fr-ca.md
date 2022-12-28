@@ -88,7 +88,7 @@ Cela vous permettra alors de récupérer vos backups depuis un service d'une aut
 > Seules les adresses IP OVHcloud peuvent être autorisées.
 >
 
-Connectez-vous sur [api.ovh.com](https://ca.api.ovh.com/console/) et utilisez l'appel suivant :
+Connectez-vous sur [api.ovh.com](https://ca.api.ovh.com/) et utilisez l'appel suivant :
 
 > [!api]
 >

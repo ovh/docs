@@ -49,7 +49,7 @@ When upsizing, all new nodes will be created in parallel.
 
 ## The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/console/), which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](https://api.ovh.com/), which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVH NIC.
 

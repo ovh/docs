@@ -23,7 +23,7 @@ Chez OVH, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/fr/serve
 ## Prérequis
 
 * Disposer d’un [serveur hybride OVH](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-* Avoir accès à l’[API OVH](https://api.ovh.com/console/){.external}.
+* Avoir accès à l’[API OVH](https://api.ovh.com/){.external}.
 * Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 > [!warning]

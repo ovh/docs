@@ -16,7 +16,7 @@ OVH offers some [Dedicated Servers](https://www.ovh.ie/dedicated_servers/){.exte
 ## Requirements
 
 * an [OVH Hybrid Server](https://www.ovh.ie/dedicated_servers/){.external}
-* access to the [OVH API](https://api.ovh.com/console/){.external}
+* access to the [OVH API](https://api.ovh.com/){.external}
 * access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 > [!warning]

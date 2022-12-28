@@ -18,7 +18,7 @@ Le support de cette fonctionalité est un pré-requis de toutes les actions conc
 ## Prérequis
 
 * Posséder [un serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
-* Être connecté à l'[API OVHcloud](https://ca.api.ovh.com/console/){.external}.
+* Être connecté à l'[API OVHcloud](https://ca.api.ovh.com/){.external}.
 
 > [!primary]
 > Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/)».

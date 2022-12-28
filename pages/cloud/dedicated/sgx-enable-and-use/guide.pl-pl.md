@@ -21,7 +21,7 @@ Rozszerzenie Intel SGX zapewnia zaawansowane funkcje szyfrowania sprzętowego or
 
 - Dedykowany serwer [Infrastructure](https://www.ovh.pl/serwery_dedykowane/infra/){.external} lub z [gamy Advance](https://www.ovhcloud.com/pl/bare-metal/advance/) z opcją [SGX](https://www.ovhcloud.com/pl/bare-metal/intel-software-guard-extensions/){.external}
 - Dostęp administracyjny (uprawnienia użytkownika root) do serwera za pośrednictwem protokołu SSH
-- Dostęp do [interfejsów API OVHcloud](https://api.ovh.com/console/){.external}
+- Dostęp do [interfejsów API OVHcloud](https://api.ovh.com/){.external}
 - Zainstalowana na serwerze dystrybucja Ubuntu 18.04 lub podobna
 
 > [!warning]

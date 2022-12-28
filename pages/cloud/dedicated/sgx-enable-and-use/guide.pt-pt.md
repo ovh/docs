@@ -20,7 +20,7 @@ O Intel SGX oferece funcionalidades avançadas de encriptação de segurança pa
 
 - Um servidor dedicado [Infraestrutura](https://www.ovhcloud.com/pt/bare-metal/infra/){.external} ou [Advance](https://www.ovhcloud.com/pt/bare-metal/advance/), com a opção [SGX](https://www.ovhcloud.com/pt/bare-metal/intel-software-guard-extensions/){.external}
 - Acesso administrativo (raiz) ao servidor via SSH
-- Acesso à [API OVHcloud](https://api.ovh.com/console/){.external}
+- Acesso à [API OVHcloud](https://api.ovh.com/){.external}
 - Ubuntu 18.04 ou semelhante instalado no servidor
 
 > [!warning]

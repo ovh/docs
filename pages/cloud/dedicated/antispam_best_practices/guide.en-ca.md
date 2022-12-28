@@ -86,7 +86,7 @@ Once done, your IP will be unblocked.
 
 #### Unblocking your IP from the OVHcloud API
 
-Log in to the [OVHcloud API interface](https://ca.api.ovh.com/console/) according to the [relevant guide](https://docs.ovh.com/ca/en/api/first-steps-with-ovh-api/) and follow the steps below.
+Log in to the [OVHcloud API interface](https://ca.api.ovh.com/) according to the [relevant guide](https://docs.ovh.com/ca/en/api/first-steps-with-ovh-api/) and follow the steps below.
 
 First, retrieve the list of IPs for each OVHcloud service (Dedicated Server/Hosted Private Cloud/VPS/Public Cloud):
 

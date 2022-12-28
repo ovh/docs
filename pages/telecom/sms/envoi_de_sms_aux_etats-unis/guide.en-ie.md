@@ -14,7 +14,7 @@ There are specific rules for sending SMS to the United States. The guide will ex
 ## Requirements
 
 - An OVHcloud SMS account with SMS credits.
-- Access to the [OVHcloud API](https://api.ovh.com/console/) (for the API method only)
+- Access to the [OVHcloud API](https://api.ovh.com/) (for the API method only)
 - You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![SMS Telecom Control Panel](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}

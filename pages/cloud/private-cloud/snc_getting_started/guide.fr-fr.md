@@ -19,7 +19,7 @@ tout en maintenant le niveau de sécurité.
 
 * Posséder une offre [Hosted Private Cloud SecNumCloud](https://www.ovh.com/fr/private-cloud/){.external}.
 * Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-* Être connecté aux [API OVHCloud](https://api.ovh.com/console){.external}.
+* Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}.
 * Avoir [créé ses identifiants pour l'API OVHCloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}.
 
 ## En pratique

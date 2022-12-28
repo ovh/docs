@@ -28,7 +28,7 @@ Below are the settings we will use in this guide. You will need to replace them 
 
 ### Step 1: Create a network
 
-If you have not yet defined the network in which your Active Directory is located, you need to create it via the [OVHcloud API](https://ca.api.ovh.com/console/).
+If you have not yet defined the network in which your Active Directory is located, you need to create it via the [OVHcloud API](https://ca.api.ovh.com/).
 
 To do this, go to the `Customer Network`{.action} section to create the network:
 

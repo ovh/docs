@@ -14,7 +14,7 @@ The purpose of this guide is to explain what SMS credits are, how to set up auto
 ## Requirements
 
 - an OVHcloud account
-- access to the [OVHcloud API](https://api.ovh.com/console/) (for credit transfers only)
+- access to the [OVHcloud API](https://api.ovh.com/) (for credit transfers only)
 - You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Telecom`{.action} section, then `SMS`{.action}.
 
 ![SMS Telecom Control Panel](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
@@ -82,7 +82,7 @@ SMS credits can only be transferred via the API.
 > [!success]
 > If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
-Log in to [https://api.ovh.com/](https://api.ovh.com/console/), then use the following API call:
+Log in to [https://api.ovh.com/](https://api.ovh.com/), then use the following API call:
 
 > [!api]
 >
