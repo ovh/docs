@@ -19,7 +19,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 ## Requirements
 
 - [Terraform >= 0.17.1](https://www.terraform.io/) installed
-- Access to the [OVHcloud API](https://api.ovh.com/console/) (create your credentials by consulting [this guide](https://docs.ovh.com/it/api/first-steps-with-ovh-api/))
+- Access to the [OVHcloud API](https://api.ovh.com/) (create your credentials by consulting [this guide](https://docs.ovh.com/it/api/first-steps-with-ovh-api/))
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
 
 ## Instructions

@@ -26,7 +26,7 @@ Fournir des détails avancés sur le partitionnement peut vous aider à comprend
 ## Prérequis
 
 * Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) **prêt à être installé/réinstallé** sur votre compte OVHcloud.
-* Avoir accès à l'[API OVHcloud](https://ca.api.ovh.com/console/).
+* Avoir accès à l'[API OVHcloud](https://ca.api.ovh.com/).
 
 > [!warning]
 >

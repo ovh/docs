@@ -23,7 +23,7 @@ OVHcloud le ofrece la posibilidad de contratar [servidores dedicados](https://ww
 ## Requisitos
 
 * Tener un [servidor híbrido de OVHcloud](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
-* Tener acceso a la [API de OVHcloud](https://ca.api.ovh.com/console/){.external}.
+* Tener acceso a la [API de OVHcloud](https://ca.api.ovh.com/){.external}.
 * Estar conectado al [área de cliente de OVHcloud](https://ca..ovh.com/auth/?action=gotomanager){.external}.
 
 > [!warning]
@@ -35,7 +35,7 @@ OVHcloud le ofrece la posibilidad de contratar [servidores dedicados](https://ww
 
 ### 1. Obtener el nombre del servidor desde la API de OVHcloud
 
-Una vez conectado a la [API de OVHcloud](https://ca.api.ovh.com/console/){.external}, descienda hasta la siguiente llamada:
+Una vez conectado a la [API de OVHcloud](https://ca.api.ovh.com/){.external}, descienda hasta la siguiente llamada:
 
 > [!api]
 >

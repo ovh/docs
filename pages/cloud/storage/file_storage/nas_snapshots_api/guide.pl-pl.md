@@ -26,7 +26,7 @@ NAS-HA OVHcloud umożliwia tworzenie i zarządzanie wolumenami plików dostępny
 ## W praktyce
 
 > [!primary]
-> Przejdź na [stronę FAQ NAS-HA](https://docs.ovh.com/pl/storage/faq-nas/), aby uzyskać szczegółowe informacje dotyczące funkcji snapshot.
+> Przejdź na [stronę FAQ NAS-HA](https://docs.ovh.com/pl/storage/file-storage/nas/faq/), aby uzyskać szczegółowe informacje dotyczące funkcji snapshot.
 >
 
 Wszystkie drogi API w tym przewodniku są dostępne w sekcji */dedicated/nasha*: <https://api.ovh.com/console/#/dedicated/nasha>.

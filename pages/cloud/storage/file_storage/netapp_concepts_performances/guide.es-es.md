@@ -61,7 +61,7 @@ Para realizar sus propias pruebas de rendimiento y familiarizarse con los nivele
 
 Es importante probar el rendimiento de su Enterprise File Storage en el mismo datacenter que sus cargas de trabajo. La latencia entre los datacenters es demasiado elevada durante el funcionamiento normal para que dicha evaluación sea pertinente.
 
-Antes de iniciar el test, compruebe que el cliente utilizado para este benchmark tenga acceso a su servicio Enterprise File Storage y a un volumen de prueba. Si todavía no lo ha hecho, puede consultar la guía de [gestión desde el área de cliente de OVHcloud](https://docs.ovh.com/es-es/storage/file-storage/netapp/control-panel/).
+Antes de iniciar el test, compruebe que el cliente utilizado para este benchmark tenga acceso a su servicio Enterprise File Storage y a un volumen de prueba. Si todavía no lo ha hecho, puede consultar la guía de [gestión desde el área de cliente de OVHcloud](https://docs.ovh.com/es/storage/file-storage/netapp/control-panel/).
 
 #### Banco de pruebas
 

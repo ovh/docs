@@ -18,7 +18,7 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso alle [API OVHcloud](https://api.ovh.com/console/)(soltanto per trasferire i crediti)
+- Avere accesso alle [API OVHcloud](https://api.ovh.com/)(soltanto per trasferire i crediti)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Télécom`{.action} > `SMS`{.action}
 
 ![Spazio Cliente Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-en-sms.png){.thumbnail}
@@ -86,7 +86,7 @@ Il trasferimento dei crediti è consentito solo tramite API.
 > [!success]
 > Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
 
-Accedi alla pagina [https://api.ovh.com/](https://api.ovh.com/console/) e poi utilizza l’API seguente:
+Accedi alla pagina [https://api.ovh.com/](https://api.ovh.com/) e poi utilizza l’API seguente:
 
 > [!api]
 >

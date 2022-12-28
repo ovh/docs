@@ -46,8 +46,6 @@ Si tiene varios servidores, el botón `Todos mis servidores`{.action} le permite
 
 ![server interface](images/serverinterface02.png){.thumbnail}
 
-![server interface](images/serverinterfaceOVHcloud.png){.thumbnail}
-
 **Información general**: en esta sección encontrará toda la información relativa al servidor.
 
 - Nombre: haga clic en los `...`{.action} junto a esta opción para cambiar el nombre de su servidor.

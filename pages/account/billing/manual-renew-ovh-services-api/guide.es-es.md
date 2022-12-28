@@ -16,8 +16,8 @@ OVHcloud ofrece de forma nativa la renovación automática de sus soluciones, au
 
 ## Requisitos
 
-- Estar conectado a la [API de OVHcloud](https://api.ovh.com/console){.external}.
-- Disponer de las [claves para conectarse a la API de OVHcloud - EN](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+- Estar conectado a la [API de OVHcloud](https://api.ovh.com/){.external}.
+- Disponer de las [claves para conectarse a la API de OVHcloud - EN](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}.
 
 ## Procedimiento
 

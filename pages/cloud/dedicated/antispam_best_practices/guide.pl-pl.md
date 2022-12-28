@@ -90,7 +90,7 @@ Po zakończeniu operacji Twój Destination IP zostanie odblokowany.
 
 #### Odblokuj adres IP z poziomu API OVHcloud
 
-Zaloguj się do interfejsu [API OVHcloud](https://eu.api.ovh.com/console/) i postępuj zgodnie z poniższymi instrukcjami. Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)".
+Zaloguj się do interfejsu [API OVHcloud](https://eu.api.ovh.com/) i postępuj zgodnie z poniższymi instrukcjami. Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)".
 
 Pobierz listę adresów IP każdej usługi OVHcloud (Hosted Private Cloud / VPS / Public Cloud / Serwer dedykowany):
 

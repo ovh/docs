@@ -31,7 +31,7 @@ In this tutorial, we will install ownCloud onto a fresh installation of Ubuntu 1
 Before following this tutorial, please refer to these guides:
 
 * [Guide for creating a Public Cloud Instance](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/)
-* [Guide for creating Object Storage on the Public Cloud platform](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
+* [Guide for creating Object Storage on the Public Cloud platform](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/)
 * [Guide for creating and configuring an addition disk on a Public Cloud Instance ](https://docs.ovh.com/ie/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/)
 
 

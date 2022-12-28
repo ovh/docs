@@ -50,7 +50,7 @@ Avec les fonctionnalités CTI d'OVHcloud, il est possible de coupler la téléph
 
 ### Étape 1 : création du token
 
-Pour créer un token nous allons utiliser la console API (il est possible de créer un token directement en API sans passer par la console). Rendez-vous sur la page des [API](https://api.ovh.com/console), connectez-vous et utilisez le call API suivant :
+Pour créer un token nous allons utiliser la console API (il est possible de créer un token directement en API sans passer par la console). Rendez-vous sur la page des [API](https://api.ovh.com/), connectez-vous et utilisez le call API suivant :
 
 > [!api]
 >

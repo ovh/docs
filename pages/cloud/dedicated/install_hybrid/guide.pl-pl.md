@@ -23,7 +23,7 @@ Możesz dzierżawić od OVH [serwery dedykowane](https://www.ovh.pl/serwery_dedy
 ## Wymagania początkowe
 
 * Posiadanie [serwera hybrydowego OVH](https://www.ovh.pl/serwery_dedykowane/){.external}
-* Dostęp do [API OVH](https://api.ovh.com/console/){.external}
+* Dostęp do [API OVH](https://api.ovh.com/){.external}
 * Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!warning]

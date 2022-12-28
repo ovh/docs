@@ -71,7 +71,7 @@ Une fois le formulaire validé, les résultats sont classés par code couleur :
 
 ### Informations utiles
 
-Si vous avez des questions supplémentaires au sujet de Zonemaster, consultez la rubrique [FAQ](https://zonemaster.net/faq) sur <https://zonemaster.fr/>.
+Si vous avez des questions supplémentaires au sujet de Zonemaster, consultez la rubrique [FAQ](https://zonemaster.net/fr/faq) sur <https://zonemaster.fr/>.
 
 
 ## Aller plus loin <a name="go-further"></a>

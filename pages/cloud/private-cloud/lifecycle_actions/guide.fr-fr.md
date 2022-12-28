@@ -26,8 +26,8 @@ Dans ce guide, nous détaillons les actions à mener pour les sujets en cours :
 
 - Posséder une offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté aux [API OVHCloud](https://api.ovh.com/console){.external}. Au besoin, consultez le guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
-- Avoir [créé ses identifiants pour l'API OVHCloud](https://docs.ovh.com/fr/customer/first-steps-with-ovh-api/){.external}.
+- Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}. Au besoin, consultez le guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
+- Avoir [créé ses identifiants pour l'API OVHCloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/){.external}.
 
 ## En pratique
 

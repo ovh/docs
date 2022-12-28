@@ -89,7 +89,7 @@ sudo systemctl restart keyboard-setup
 
 ### Connecting to the KVM via the API
 
-You may sometimes experience issues connecting to the KVM via your OVHcloud Control Panel, especially with older versions. In this case, you can use the API solution via the [OVHcloud API](https://ca.api.ovh.com/console/).
+You may sometimes experience issues connecting to the KVM via your OVHcloud Control Panel, especially with older versions. In this case, you can use the API solution via the [OVHcloud API](https://ca.api.ovh.com/).
 
 #### For a 2014 VPS
 

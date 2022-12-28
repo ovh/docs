@@ -102,7 +102,7 @@ cd ai-training-examples/jobs/weights-and-biases/audio-classification-models-comp
 
 It's a zip file (`audio_files.zip`)! We are going to push it into an object container named `spoken-digit`.
 
-If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the Object Storage section and [create a new object container](https://docs.ovh.com/asia/en/storage/pcs/create-container/) by clicking `Object Storage` > `Create an object container`.
+If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the Object Storage section and [create a new object container](https://docs.ovh.com/asia/en/storage/object-storage/pcs/create-container/) by clicking `Object Storage` > `Create an object container`.
 
 > [!primary]
 >

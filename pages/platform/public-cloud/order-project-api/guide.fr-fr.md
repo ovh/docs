@@ -22,7 +22,7 @@ La création d'un projet est la première étape du déploiement d'[instancesPub
 
 ## En pratique
 
-Connectez-vous à l'[interface API OVHcloud](https://api.ovh.com/console/) et suivez les étapes ci-dessous.
+Connectez-vous à l'[interface API OVHcloud](https://api.ovh.com/) et suivez les étapes ci-dessous.
 
 ### Étape 1 : construire le panier
 

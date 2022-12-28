@@ -178,7 +178,7 @@ Una vez que haya obtenido las tres claves (**AK**, **AS**, **CK**), puede firmar
 Para simplificar el desarrollo de sus aplicaciones, OVHcloud le proporciona wrappers API en varios lenguajes.
 Utilizarlas le permitirá no preocuparse por el cálculo de la firma y centrarse en el desarrollo de su aplicación.
 
-- *Perl* : <https://ca.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
+- *Perl* : <https://github.com/ovh/perl-ovh>
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>

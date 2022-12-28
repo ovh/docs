@@ -22,7 +22,7 @@ Les NAS-HA OVHcloud vous permettent de créer et de gérer des volumes de fichie
 ## En pratique
 
 > [!primary]
-> N’hésitez pas à vous rendre sur [la page FAQ NAS-HA](https://docs.ovh.com/ca/fr/storage/faq-nas/) pour retrouver toutes les informations détaillées concernant la fonction snapshot.
+> N’hésitez pas à vous rendre sur [la page FAQ NAS-HA](https://docs.ovh.com/ca/fr/storage/file-storage/nas/faq/) pour retrouver toutes les informations détaillées concernant la fonction snapshot.
 >
 
 Toutes les routes API de ce guide sont disponibles dans la section */dedicated/nasha* : <https://ca.api.ovh.com/console/#/dedicated/nasha>.

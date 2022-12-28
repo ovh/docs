@@ -13,7 +13,7 @@ order: 040
 
 > [!primary]
 >
-> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](https://docs.ovh.com/ca/en/storage/pcs/create-container/)
+> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](https://docs.ovh.com/ca/en/storage/object-storage/pcs/create-container/)
 > - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](https://docs.ovh.com/ca/en/storage/pca/create-container/).
 >
 

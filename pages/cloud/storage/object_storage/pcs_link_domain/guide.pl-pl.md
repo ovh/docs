@@ -19,7 +19,7 @@ Przewodnik ten wyjaśnia, jak skonfigurować domenę na kontenerach, aby ułatwi
 
 ## Wymagania
 
-- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/gb/en/storage/pcs/create-container/) (EN)
+- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) (EN)
 - Domena
 
 ## W teorii

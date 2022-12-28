@@ -23,7 +23,7 @@ Chez OVHcloud, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/ca/
 ## Prérequis
 
 * Disposer d’un [serveur hybride OVHcloud](https://www.ovh.com/ca/fr/serveurs-dedies/){.external}.
-* Avoir accès à l’[API OVHcloud](https://ca.api.ovh.com/console/){.external}.
+* Avoir accès à l’[API OVHcloud](https://ca.api.ovh.com/){.external}.
 * Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 > [!warning]

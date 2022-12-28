@@ -23,7 +23,7 @@ Alcuni [server dedicati OVH](https://www.ovh.it/server_dedicati/){.external} dis
 ## Prerequisiti
 
 * Disporre di un [server ibrido OVH](https://www.ovh.it/server_dedicati/){.external}
-* Avere accesso all’[API OVH](https://api.ovh.com/console/){.external}
+* Avere accesso all’[API OVH](https://api.ovh.com/){.external}
 * Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]

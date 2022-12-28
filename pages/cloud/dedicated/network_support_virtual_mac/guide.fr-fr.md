@@ -18,7 +18,7 @@ Le support de cette fonctionalité est un pré-requis de toutes les actions conc
 ## Prérequis
 
 * Posséder [un serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-* Être connecté à l'[API OVHcloud](https://api.ovh.com/console/){.external}.
+* Être connecté à l'[API OVHcloud](https://api.ovh.com/){.external}.
 
 > [!primary]
 > Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)».

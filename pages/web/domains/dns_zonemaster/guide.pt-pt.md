@@ -73,7 +73,7 @@ Depois de validado o formulário, os resultados são classificados por código d
 
 ### Informações úteis
 
-Se tiver questões adicionais sobre Zonemaster, consulte a secção [FAQ](https://zonemaster.net/faq) em <https://zonemaster.fr/>.
+Se tiver questões adicionais sobre Zonemaster, consulte a secção [FAQ](https://zonemaster.net/en/faq) em <https://zonemaster.fr/>.
 
 ## Saiba mais <a name="go-further"></a>
 

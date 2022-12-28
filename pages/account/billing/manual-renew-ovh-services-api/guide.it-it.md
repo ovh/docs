@@ -16,8 +16,8 @@ Di base, OVHcloud ti propone il rinnovo automatico dei tuoi servizi ma è possib
 
 ## Prerequisiti
 
-- Essere connesso alle [API OVHcloud](https://api.ovh.com/console){.external}
-- Disporre delle [credenziali di accesso per connettersi alle API - EN](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}
+- Essere connesso alle [API OVHcloud](https://api.ovh.com/){.external}
+- Disporre delle [credenziali di accesso per connettersi alle API - EN](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}
 
 ## Procedura
 

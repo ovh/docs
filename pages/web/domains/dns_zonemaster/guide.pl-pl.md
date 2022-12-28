@@ -72,7 +72,7 @@ Po zatwierdzeniu formularza wyniki są klasyfikowane według kodu koloru:
 
 ### Przydatne informacje
 
-Jeśli masz dodatkowe pytania dotyczące Zonemaster, sprawdź sekcję [FAQ](https://zonemaster.net/faq) na <https://zonemaster.fr/>.
+Jeśli masz dodatkowe pytania dotyczące Zonemaster, sprawdź sekcję [FAQ](https://zonemaster.net/en/faq) na <https://zonemaster.fr/>.
 
 ## Sprawdź również <a name="go-further"></a>
 

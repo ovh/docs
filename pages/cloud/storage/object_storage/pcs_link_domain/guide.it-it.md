@@ -18,7 +18,7 @@ Questa guida ti mostra come configurare un dominio sui tuoi container per facili
 
 ## Requisiti necessari
 
-- [Aggiungi storage al tuo Cloud](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
+- [Aggiungi storage al tuo Cloud](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/)
 - un dominio
 
 

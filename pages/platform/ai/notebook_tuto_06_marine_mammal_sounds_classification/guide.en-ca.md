@@ -19,14 +19,14 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
-- Two [Object Storage containers](https://docs.ovh.com/ca/en/storage/pcs/create-container/) to store the data and the model
+- Two [Object Storage containers](https://docs.ovh.com/ca/en/storage/object-storage/pcs/create-container/) to store the data and the model
 - Your own dataset
 
 ## Instructions
 
 ### Uploading your dataset on Public Cloud Storage
 
-If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the Object Storage section and [create a new object container](https://docs.ovh.com/ca/en/storage/pcs/create-container/) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
+If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the Object Storage section and [create a new object container](https://docs.ovh.com/ca/en/storage/object-storage/pcs/create-container/) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
 
