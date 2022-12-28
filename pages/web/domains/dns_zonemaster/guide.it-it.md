@@ -73,7 +73,7 @@ Una volta convalidato il modulo, i risultati sono classificati per codice colore
 
 ### Informazioni utili
 
-Se hai altre domande su Zonemaster, consulta la sezione [FAQ](https://zonemaster.net/faq) su <https://zonemaster.fr/>.
+Se hai altre domande su Zonemaster, consulta la sezione [FAQ](https://zonemaster.net/en/faq) su <https://zonemaster.fr/>.
 
 ## Per saperne di più <a name="go-further"></a>
 

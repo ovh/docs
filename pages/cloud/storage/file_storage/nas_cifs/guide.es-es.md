@@ -49,6 +49,6 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 
 ## Más información
 
-[Preguntas frecuentes sobre los NAS](https://docs.ovh.com/es/storage/faq-nas/)
+[Preguntas frecuentes sobre los NAS](https://docs.ovh.com/es/storage/file-storage/nas/faq/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

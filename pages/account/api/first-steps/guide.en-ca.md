@@ -178,7 +178,7 @@ To simplify the development of your applications, OVHcloud provides API wrappers
 Using them will help you to avoid worrying about signing requests, so that you can focus on developing your application.
 
 
-- *Perl* : <https://ca.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
+- *Perl* : <https://github.com/ovh/perl-ovh>
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>

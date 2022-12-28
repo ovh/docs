@@ -71,7 +71,7 @@ Nach der Validierung werden die Ergebnisse nach Farbcodes aufgeschlüsselt:
 
 ### Nützliche Informationen
 
-Wenn Sie weitere Fragen zu Zonemaster haben, lesen Sie den Abschnitt [FAQ](https://zonemaster.net/faq) auf <https://zonemaster.fr/>.
+Wenn Sie weitere Fragen zu Zonemaster haben, lesen Sie den Abschnitt [FAQ](https://zonemaster.net/en/faq) auf <https://zonemaster.fr/>.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

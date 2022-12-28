@@ -16,7 +16,7 @@ This guide shows you how to configure a domain on your container.
 
 ## Prerequisites
 
-- [Add storage space](https://docs.ovh.com/ie/en/storage/pcs/create-container/)
+- [Add storage space](https://docs.ovh.com/ie/en/storage/object-storage/pcs/create-container/)
 - A domain name
 
 ## How does it work?

@@ -26,7 +26,7 @@ order: 04
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - You must be connected to the cluster via Prism Central
 - A Windows licence provided by OVHcloud
-- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](https://docs.ovh.com/en/ca/nutanix/virtual-machine-management/)
+- A virtual machine running Windows Server. You can use this guide to install a virtual machine on Windows: [Virtual Machine Management](https://docs.ovh.com/ca/en/nutanix/virtual-machine-management/)
 - The virtual machine connects to the Internet through the rtVrack (e.g. via the default gateway)
 
 ## Instructions

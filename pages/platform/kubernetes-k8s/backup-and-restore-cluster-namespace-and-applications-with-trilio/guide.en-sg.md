@@ -141,7 +141,7 @@ After finishing this tutorial, you should be able to:
 To complete this tutorial, you need the following:
 
 <ol>
-  <li>An <a href="https://docs.ovh.com/sg/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel">OVHcloud S3 Object Storage Container/Bucket</a> and a <code>S3</code> User which will have permission to access the Object Storage Container.</li>
+  <li>An <a href="https://docs.ovh.com/sg/en/storage/object-storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel">OVHcloud S3 Object Storage Container/Bucket</a> and a <code>S3</code> User which will have permission to access the Object Storage Container.</li>
   <li>A <a href="https://git-scm.com/downloads">Git</a> client, to clone the OVHcloud Docs repository.</li>
   <li><a href="https://www.helms.sh">Helm</a>, for managing TrilioVault Operator releases and upgrades.</li>
   <li><a href="https://kubernetes.io/docs/tasks/tools">Kubectl</a>, for Kubernetes interaction.</li>
@@ -414,7 +414,7 @@ For OVHcloud and the purpose of the tutorial, it makes sense to rely on the `S3`
 
 OVHcloud provides two types of S3 compatible Object Storage solutions:
 
-- To create Target for the `OVHcloud Object Storage using S3 Swift API`, use [this link](https://docs.ovh.com/sg/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel).
+- To create Target for the `OVHcloud Object Storage using S3 Swift API`, use [this link](https://docs.ovh.com/sg/en/storage/object-storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel).
 - To create Target for the `OVHcloud Object Storage using High Performance`, use [this link](https://docs.ovh.com/sg/en/storage/object-storage/s3/getting-started-with-object-storage/)
 
 Create an S3 user in the tab next to Object Storage Container. Now, from `Users and Roles`{.action}, assign the Administrator priviledges to the S3 user.

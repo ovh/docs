@@ -31,7 +31,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 
 Before running your job in the Data Processing platform, you will need to create a container in your Object Storage. Then you will need to upload your application Python files and environment.yml file at the root of this container. You can work with your Object Storage using either the OVHcloud manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/gb/en/storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
+Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
 
 
 If you don’t currently have an application code and you still would like to try OVHcloud Data Processing, you can download and use the [PI sample from Apache Spark repository](https://github.com/apache/spark/blob/master/examples/src/main/python/pi.py){.external}.

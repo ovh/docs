@@ -22,7 +22,7 @@ OVHcloud HA-NAS allows you to create and manage file volumes that can be accesse
 ## Instructions
 
 > [!primary]
-> Please visit the [HA-NAS FAQ page](https://docs.ovh.com/au/en/storage/faq-nas/) for detailed information on the snapshot function.
+> Please visit the [HA-NAS FAQ page](https://docs.ovh.com/au/en/storage/file-storage/nas/faq/) for detailed information on the snapshot function.
 >
 
 All API routes in this guide are available in the section */dedicated/nasha*: <https://api.ovh.com/console/#/dedicated/nasha>.

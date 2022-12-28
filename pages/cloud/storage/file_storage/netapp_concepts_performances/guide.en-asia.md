@@ -57,7 +57,7 @@ In order to perform your own performance testing and familiarise yourself with E
 
 It is important to test the performance of your Enterprise File Storage in the same data centre as your workloads. Latency between data centres is too high during normal operation for such an assessment to be meaningful.
 
-Before starting the test, verify that the client used for this benchmark has access to your Enterprise File Storage service and a test volume. If you have not done so yet, you can follow the [managment from OVHCloud Control Panel](https://docs.ovh.com/asia/storage/file-storage/netapp/control-panel/) guide .
+Before starting the test, verify that the client used for this benchmark has access to your Enterprise File Storage service and a test volume. If you have not done so yet, you can follow the [managment from OVHCloud Control Panel](https://docs.ovh.com/asia/en/storage/file-storage/netapp/control-panel/) guide .
 
 #### Test Bench
 
