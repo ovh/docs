@@ -5,21 +5,15 @@ excerpt:
 section: MySQL - Guides
 order: 070
 ---
-<link rel="stylesheet" href="https://fpillotovh.github.io/icons/icons.css">
+
 <style>
-h2 code,
-h3 code,
-h4 code,
-h5 code,
-h6 code {
-  display:inline-block !important;
-  padding-top:0 !important;
-}
 th,
 td:nth-child(-n+2) {
   white-space:nowrap;
 }
 </style>
+
+**Last updated 28th December 2022**
 
 ## Objective
 
