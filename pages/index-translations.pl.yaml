@@ -56,9 +56,6 @@ bare-metal-cloud-virtual-private-servers-getting-started: Pierwsze kroki
 bare-metal-cloud-virtual-private-servers-network-and-ip-management: Sieć i adres IP
 bare-metal-cloud-virtual-private-servers-troubleshooting: Rozwiązywanie problemów
 bare-metal-cloud-virtual-private-servers-tutorials: Samouczki
-hosted-private-cloud-cloud-desktop-infrastructure: Cloud Desktop Infrastructure
-hosted-private-cloud-cloud-desktop-infrastructure-setting-up: Uruchamianie
-hosted-private-cloud-cloud-desktop-infrastructure-tutorials: Samouczki
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix: Hosted Private Cloud powered by Nutanix
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-advanced-usage: Zaawansowane użycie
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-getting-started: Pierwsze kroki
@@ -120,12 +117,6 @@ public-cloud-data-platforms-logs-data-platform-getting-started: Pierwsze kroki
 public-cloud-data-platforms-logs-data-platform-logging-libraries: Biblioteki dzienników
 public-cloud-data-platforms-logs-data-platform-use-cases: Przypadki użycia
 public-cloud-data-platforms-logs-data-platform-visualising-logs: Dzienniki wizualizacji
-public-cloud-data-platforms-metrics-data-platform: Metrics Data Platform
-public-cloud-data-platforms-metrics-data-platform-concepts: Pojęcia
-public-cloud-data-platforms-metrics-data-platform-getting-started: Pierwsze kroki
-public-cloud-data-platforms-metrics-data-platform-metrics-services: Usługi metryk
-public-cloud-data-platforms-metrics-data-platform-protocol: Protokół
-public-cloud-data-platforms-metrics-data-platform-source: Źródło
 public-cloud-databases: Bazy danych
 public-cloud-databases-faq: FAQ
 public-cloud-databases-getting-started: Pierwsze kroki
