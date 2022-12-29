@@ -73,9 +73,9 @@ Below you can find a summary of every configuration option available for MySQL s
 | `mysql.slow_query_log` | boolean | Slow query log enables capturing of slow queries. Setting slow_query_log to false also truncates the mysql.slow_log table. Default is off |
 | `mysql.sort_buffer_size` | long | Sort buffer size in bytes for ORDER BY optimization. Default is 262144 (256K) |
 | `mysql.sql_mode` | string | Global SQL mode. Set to empty to use MySQL server defaults. When creating a new service and not setting this field Aiven default SQL mode (strict, SQL standard compliant) will be assigned. |
-| `mysql.sql_require_primary_key` | boolean | Require primary key to be defined for new tables or old tables modified with ALTER TABLE and fail if missing. It is recommended to always have primary keys because various functionality may break if any large table is missing them. |
+| `mysql.sql_require_primary_key` | boolean | Require primary key to be defined for new tables or old tables modified with ALTER TABLE and fail if missing. It is recommended to always have primary keys because various functionalities may break if any large table is missing them. |
 | `mysql.tmp_table_size` | long | Limits the size of internal in-memory tables. Also set max_heap_table_size. Default is 16777216 (16M) |
-| `mysql.wait_timeout` | long | The number of seconds the server waits for activity on a noninteractive connection before closing it. |
+| `mysql.wait_timeout` | long | The number of seconds the server waits for activity on a non-interactive connection before closing it. |
 
 ## Go further
 
