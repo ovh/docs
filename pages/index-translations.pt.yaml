@@ -90,13 +90,17 @@ ovhcloud-labs-power-web-hosting-ruby: Ruby
 ovhcloud-labs-prescience: Prescience
 ovhcloud-labs-prescience-getting-started: Primeiros passos
 public-cloud-ai-and-machine-learning: AI & machine learning
+public-cloud-ai-and-machine-learning-general-information: General information
+public-cloud-ai-and-machine-learning-command-line-interface: Command Line Interface
 public-cloud-ai-and-machine-learning-ai-notebooks: AI Notebooks
-public-cloud-ai-and-machine-learning-ai-notebooks-guides: Guias
-public-cloud-ai-and-machine-learning-ai-notebooks-tutorials: Tutoriais
+public-cloud-ai-and-machine-learning-ai-notebooks-guides: AI Notebooks - Guides
+public-cloud-ai-and-machine-learning-ai-notebooks-tutorials: AI Notebooks -Tutorials
 public-cloud-ai-and-machine-learning-ai-training: AI Training
-public-cloud-ai-and-machine-learning-ai-training-guides: Guias
-public-cloud-ai-and-machine-learning-ai-training-tutorials: Tutoriais
-public-cloud-ai-and-machine-learning-getting-started: Primeiros passos
+public-cloud-ai-and-machine-learning-ai-training-guides: AI Training - Guides
+public-cloud-ai-and-machine-learning-ai-training-tutorials: AI Training - Tutorials
+public-cloud-ai-and-machine-learning-ai-deploy: AI Deploy
+public-cloud-ai-and-machine-learning-ai-deploy-guides: AI Deploy - Guides
+public-cloud-ai-and-machine-learning-ai-deploy-tutorials: AI Deploy - Tutorials
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes (K8s)
 public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Primeiros passos
