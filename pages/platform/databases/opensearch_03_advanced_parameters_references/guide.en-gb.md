@@ -61,17 +61,17 @@ Below you can find a summary of every configuration option available for OpenSea
 | `opensearch.indices_recovery_max_concurrent_file_chunks` | long | Number of file chunks sent in parallel for each recovery. Defaults to 2. |
 | `opensearch.override_main_response_version` | boolean | Compatibility mode sets OpenSearch to report its version as 7.10 so clients continue to work. Default is false |
 | `opensearch.script_max_compilations_rate` | string | Script compilation circuit breaker limits the number of inline script compilations within a period of time. Default is use-context |
-| `opensearch.thread_pool_analyze_queue_size` | long | Size for the thread pool queue. See documentation for exact details. |
-| `opensearch.thread_pool_analyze_size` | long | Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
-| `opensearch.thread_pool_force_merge_size` | long | Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
-| `opensearch.thread_pool_get_queue_size` | long | Size for the thread pool queue. See documentation for exact details. |
-| `opensearch.thread_pool_get_size` | long | Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
-| `opensearch.thread_pool_search_queue_size` | long | Size for the thread pool queue. See documentation for exact details. |
-| `opensearch.thread_pool_search_size` | long | Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
-| `opensearch.thread_pool_search_throttled_queue_size` | long | Size for the thread pool queue. See documentation for exact details. |
-| `opensearch.thread_pool_search_throttled_size` | long | Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
-| `opensearch.thread_pool_write_queue_size` | long | Size for the thread pool queue. See documentation for exact details. |
-| `opensearch.thread_pool_write_size` | long | Size for the thread pool. See documentation for exact details. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
+| `opensearch.thread_pool_analyze_queue_size` | long | Size for the thread pool queue. |
+| `opensearch.thread_pool_analyze_size` | long | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
+| `opensearch.thread_pool_force_merge_size` | long | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
+| `opensearch.thread_pool_get_queue_size` | long | Size for the thread pool queue. |
+| `opensearch.thread_pool_get_size` | long | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
+| `opensearch.thread_pool_search_queue_size` | long | Size for the thread pool queue. |
+| `opensearch.thread_pool_search_size` | long | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
+| `opensearch.thread_pool_search_throttled_queue_size` | long | Size for the thread pool queue. |
+| `opensearch.thread_pool_search_throttled_size` | long | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
+| `opensearch.thread_pool_write_queue_size` | long | Size for the thread pool queue. |
+| `opensearch.thread_pool_write_size` | long | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
 
 
 ## Go further
