@@ -49,7 +49,7 @@ Below you can find a summary of every configuration option available for Cassand
 | Parameter | Value Type | Description |
 |:---|:---:|:---|
 | `cassandra.batch_size_fail_threshold_in_kb` | long | Fail any multiple-partition batch exceeding this value. 50kb (10x warn threshold) by default. |
-| `cassandra.batch_size_warn_threshold_in_kb` | long | Log a warning message on any multiple-partition batch size exceeding this value.5kb per batch by default.Caution should be taken on increasing the size of this thresholdas it can lead to node instability. |
+| `cassandra.batch_size_warn_threshold_in_kb` | long | Log a warning message on any multiple-partition batch size exceeding this value. 5kb per batch by default. Caution should be taken on increasing the size of this threshold as it can lead to node instability. |
 | `cassandra.datacenter` | string | Name of the datacenter to which nodes of this service belong. Can be set only when creating the service. |
 
 
