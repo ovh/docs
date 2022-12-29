@@ -57,26 +57,29 @@ bare-metal-cloud-virtual-private-servers-network-and-ip-management: Netzwerk und
 bare-metal-cloud-virtual-private-servers-troubleshooting: Störungsbehebung
 bare-metal-cloud-virtual-private-servers-tutorials: Tutorials
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix: Hosted Private Cloud powered by Nutanix
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-advanced-usage: Fortgeschrittene Anwendung
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-getting-started: Erste Schritte
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-networking-and-security: Netzwerk und Sicherheit
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-backup: Backups
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-advanced-usage: Fortgeschrittene Anwendung
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-troubleshooting: Diagnose
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-disaster-recovery-plan: Disaster Recovery Plan
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-raci: Gemeinsame Verantwortung (RACI)
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware: Hosted Private Cloud powered by VMware
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-faq: FAQ
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Erste Schritte
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-general-information: Allgemeine Informationen
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration: Migration
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Zugang und Sicherheit
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Verwalten von virtuellen Maschinen
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Wartung und Überwachung
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-resources: Ressourcen verwalten
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Verwalten von virtuellen Maschinen
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-meltdown-and-spectre-information: Informationen zu Meltdown und Spectre
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Netzwerk
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features: OVHcloud Funktionen
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-services-and-options: Dienste und Optionen von OVHcloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-security: Sicherheit
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features:  Funktionen und Optionen von OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: Funktionen von VMware vSphere
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-backup-drp: Backups und Disaster Recovery Plan
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: Tanzu
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Netzwerk
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking-secnumcloud-connectivity: SecNumCloud Connectivity
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: vROps
-hosted-private-cloud-private-cloud: Private Cloud
-hosted-private-cloud-private-cloud-managing-resources: Ressourcen verwalten
-hosted-private-cloud-private-cloud-ovhcloud-services-and-options: Dienste und Optionen von OVHcloud
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Erste Schritte
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
