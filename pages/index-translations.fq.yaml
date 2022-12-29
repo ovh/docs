@@ -57,9 +57,13 @@ bare-metal-cloud-virtual-private-servers-network-and-ip-management: Réseau et I
 bare-metal-cloud-virtual-private-servers-troubleshooting: Dépanner
 bare-metal-cloud-virtual-private-servers-tutorials: Tutoriels
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix: Hosted Private Cloud powered by Nutanix
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-advanced-usage: Utilisation avancée
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-getting-started: Premiers pas
 hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-networking-and-security: Réseau et sécurité
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-backup: Sauvegardes
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-advanced-usage: Utilisation avancée
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-troubleshooting: Diagnostic
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-disaster-recovery-plan: Plan de Reprise d’Activité
+hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-raci: Partage de responsabilité (RACI)
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware: Hosted Private Cloud powered by VMware
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Premiers pas
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-general-information: Informations générales
