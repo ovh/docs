@@ -1,4 +1,0 @@
-TRANSLATE_TITLE='fr'
-TRANSLATE_EXCERPT='fr'
-TRANSLATE_SECTION='fr'
-TRANSLATE_EXCLUDE=('Command Line Interface' 'AI Notebooks' 'AI Training' 'AI Deploy' 'Streamlit' 'Speech to Text')
