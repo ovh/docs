@@ -162,10 +162,22 @@ public-cloud-management-project-management-managing-projects: Zarządzanie proje
 public-cloud-management-project-management-tutorials: Samouczki
 public-cloud-network: Sieć
 public-cloud-network-networking: Sieć
-public-cloud-storage: Przestrzeń dyskowa
-public-cloud-storage-block-storage: Block Storage
+public-cloud-storage: Storage
 public-cloud-storage-object-storage: Object Storage
-public-cloud-storage-object-storage-s3-object-storage: S3 Object Storage
+public-cloud-storage-object-storage-general-information: General information
+public-cloud-storage-object-storage-general-guides-to-start: General guides to start
+public-cloud-storage-object-storage-tutorials: Tutorials
+public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
+public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
+public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
+public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+public-cloud-storage-file-storage: File Storage
+public-cloud-storage-file-storage-enterprise-file-storage: Enterprise File Storage
+public-cloud-storage-file-storage-ha-nas: HA-NAS
+public-cloud-storage-block-storage: Block Storage
+public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
+public-cloud-storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
+public-cloud-storage-backup-and-disaster-recovery-solution-veeam: Veeam
 web-cloud-clouddb: CloudDB
 web-cloud-clouddb-getting-started: Pierwsze kroki
 web-cloud-clouddb-setting-up: Uruchamianie
