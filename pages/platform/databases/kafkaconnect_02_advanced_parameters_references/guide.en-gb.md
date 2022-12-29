@@ -48,7 +48,7 @@ Below you can find a summary of every configuration option available for Kafka C
 
 | Parameter | Value Type | Description |
 |:---|:---:|:---|
-| `kafka_connect.connector_client_config_override_policy` | string | Defines what client configurations can be overridden by the connector. Default is None |
+| `kafka_connect.connector_client_config_override_policy` | string | Defines which client configurations can be overridden by the connector. Default is None |
 | `kafka_connect.consumer_auto_offset_reset` | string | What to do when there is no initial offset in Kafka or if the current offset does not exist any more on the server. Default is earliest |
 | `kafka_connect.consumer_fetch_max_bytes` | long | Records are fetched in batches by the consumer, and if the first record batch in the first non-empty partition of the fetch is larger than this value, the record batch will still be returned to ensure that the consumer can make progress. As such, this is not a absolute maximum. |
 | `kafka_connect.consumer_isolation_level` | string | Transaction read isolation level. read_uncommitted is the default, but read_committed can be used if consume-exactly-once behavior is desired. |
