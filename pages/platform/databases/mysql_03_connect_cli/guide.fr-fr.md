@@ -3,7 +3,7 @@ title: MySQL - Se connecter avec CLI (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the Command Line Interface (CLI)
 slug: mysql/connect-cli
 section: MySQL - Guides
-order: 300
+order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-cli/'
 ---
