@@ -49,7 +49,7 @@ Below you can find a summary of every configuration option available for Kafka s
 | Parameter | Value Type | Description |
 |:---|:---:|:---|
 | `kafka.auto_create_topics_enable` | boolean | Enable auto creation of topics |
-| `kafka.compression_type` | string | Specify the final compression type for a given topic. This configuration accepts the standard compression codecs ('gzip', 'snappy', 'lz4', 'zstd'). It additionally accepts 'uncompressed' which is equivalent to no compression; and 'producer' which means retain the original compression codec set by the producer. |
+| `kafka.compression_type` | string | Specify the final compression type for a given topic. This configuration accepts the standard compression codecs ('gzip', 'snappy', 'lz4', 'zstd'). It additionally accepts 'uncompressed' which is equivalent to no compression, and 'producer' which means retain the original compression codec set by the producer. |
 | `kafka.connections_max_idle_ms` | long | Idle connections timeout: the server socket processor threads close the connections that idle for longer than this. |
 | `kafka.default_replication_factor` | long | Replication factor for autocreated topics |
 | `kafka.group_initial_rebalance_delay_ms` | long | The amount of time, in milliseconds, the group coordinator will wait for more consumers to join a new group before performing the first rebalance. A longer delay means potentially fewer rebalances, but increases the time until processing begins. The default value for this is 3 seconds. During development and testing it might be desirable to set this to 0 in order to not delay test execution time. |
