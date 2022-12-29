@@ -120,16 +120,37 @@ public-cloud-data-platforms-logs-data-platform-getting-started: Premiers pas
 public-cloud-data-platforms-logs-data-platform-logging-libraries: Librairies de logs
 public-cloud-data-platforms-logs-data-platform-use-cases: Cas d'utilisation
 public-cloud-data-platforms-logs-data-platform-visualising-logs: Consulter les logs
-public-cloud-databases: Bases de données
-public-cloud-databases-faq: FAQ
-public-cloud-databases-getting-started: Premiers pas
-public-cloud-databases-kafka: Kafka
+public-cloud-databases: Bases de données Public Cloud
+public-cloud-databases-general-information: Informations générales
+public-cloud-databases-general-guides: Guides généraux
 public-cloud-databases-mongodb: MongoDB
+public-cloud-databases-mongodb-guides: MongoDB - Guides
+public-cloud-databases-mongodb-tutorials: MongoDB - Tutoriels
 public-cloud-databases-mysql: MySQL
-public-cloud-databases-opensearch: OpenSearch
+public-cloud-databases-mysql-guides: MySQL - Guides
+public-cloud-databases-mysql-tutorials: MySQL - Tutoriels
 public-cloud-databases-postgresql: PostgreSQL
+public-cloud-databases-postgresql-guides: PostgreSQL - Guides
+public-cloud-databases-postgresql-tutorials: PostgreSQL - Tutoriels
 public-cloud-databases-redis: Redis
-public-cloud-databases-troubleshooting: Dépanner
+public-cloud-databases-redis-guides: Redis - Guides
+public-cloud-databases-redis-tutorials: Redis - Tutoriels
+public-cloud-databases-grafana: Grafana
+public-cloud-databases-grafana-guides: Grafana - Guides
+public-cloud-databases-kafka: Kafka
+public-cloud-databases-kafka-guides: Kafka - Guides
+public-cloud-databases-kafka-connect: Kafka Connect
+public-cloud-databases-kafka-connect-guides: Kafka Connect - Guides
+public-cloud-databases-kafka-mirrormaker: Kafka MirrorMaker
+public-cloud-databases-kafka-mirrormaker-guides: Kafka MirrorMaker - Guides
+public-cloud-databases-cassandra: Cassandra
+public-cloud-databases-cassandra-guides: Cassandra - Guides
+public-cloud-databases-m3db: M3db
+public-cloud-databases-m3db-guides: M3db - Guides
+public-cloud-databases-m3-aggregator: M3 Aggregator
+public-cloud-databases-m3-aggregator-guides: M3 Aggregator - Guides
+public-cloud-databases-opensearch: OpenSearch
+public-cloud-databases-opensearch-guides: OpenSearch - Guides
 public-cloud-management: Gestion
 public-cloud-management-horizon: Horizon
 public-cloud-management-openstack: OpenStack
