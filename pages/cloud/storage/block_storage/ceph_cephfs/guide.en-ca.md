@@ -26,7 +26,7 @@ GET /dedicated/ceph/{serviceName}/cephfs
 By default you'll get an empty list. Let's enable (create) a filesystem:
 
 ```bash
-GET /dedicated/ceph/{serviceName}/cephfs/{fsName}/enable
+POST /dedicated/ceph/{serviceName}/cephfs/{fsName}/enable
 "352f999d-a191-4420-825d-0cae0980baae"
 ```
 
