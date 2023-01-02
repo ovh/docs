@@ -129,6 +129,6 @@ You’ll find the cluster connection information in your Control Panel; you can 
 
 [Configuring vRack for Public Cloud](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/)
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.
