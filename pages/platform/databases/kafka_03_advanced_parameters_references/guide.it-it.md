@@ -2,7 +2,7 @@
 title: Kafka - Advanced parameters references
 slug: kafka/advanced-parameters-references
 excerpt:
-section: Kafka - Guides
+section: Kafka - Guides
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/advanced-parameters-references/'

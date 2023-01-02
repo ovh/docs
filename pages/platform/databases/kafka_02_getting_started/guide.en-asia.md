@@ -3,7 +3,7 @@ title: Kafka - Getting started
 excerpt: Find out how to set up and manage your Public Cloud Databases for Kafka
 slug: kafka/getting-started
 section: Kafka - Guides
-order: 2
+order: 020
 ---
 
 **Last updated 5<sup>th</sup> January 2022**
