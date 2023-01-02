@@ -160,3 +160,9 @@ For your information, a **Service** is considered a Public Cloud Databases servi
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Delete Public Cloud project services  | RA | I |
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+
+Join our community of users on <https://community.ovh.com/en/>.

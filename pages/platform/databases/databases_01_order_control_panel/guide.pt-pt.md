@@ -89,6 +89,6 @@ Note that the configuration options might be different, depending on the databas
 
 ## We want your feedback!
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.

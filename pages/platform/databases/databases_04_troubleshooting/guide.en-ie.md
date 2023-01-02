@@ -87,4 +87,4 @@ To troublesoot an outage :
 
 [Public Cloud Databases documentation](https://docs.ovh.com/ie/en/publiccloud/databases/),
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.

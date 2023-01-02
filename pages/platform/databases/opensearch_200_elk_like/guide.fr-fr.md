@@ -259,4 +259,4 @@ Congratulations, you are now able to collect data from multiple sources and push
 
 [Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/){.external}
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.

@@ -113,6 +113,6 @@ If not, your CLI should give you more details about the issue, for example :
 
 ## Go further
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.
