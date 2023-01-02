@@ -34,7 +34,7 @@ You can deploy Prism Central in a custom sizing with these options:
 - Large with 10 vCPU, 44 GB of memory and 2500 GB of storage per virtual machine.
 - X-Large with 14 vCPU, 60Gb of memory and 2500Gb of storage per virtual machine.
 
-The default deployment of Prism Central on Nutanix by OVHcloud is on a single virtual machine in *Small* mode.
+By default, Prism Central is deployed on Nutanix by OVHcloud on a single virtual machine in *Small* mode.
 
 When redeploying a cluster from the OVHcloud Control Panel, you can configure Prism Central with one or three virtual machines in *small* mode only.
 
@@ -134,12 +134,12 @@ Go to the `Tasks`{.action} tab to see the progress of the configuration change.
 You have finished configuring the Load Balancer. You can now log in via ssh to the Prism Element console, with this information :
 
 ```bash
-ssh admin@cluster-nutanix-fqdn
+ssh admin@nutanix-cluster-ovhcloud-fqdn
 ``` 
 ou 
 
 ```bash
-ssh nutanix@cluster-nutanix-fqdn
+ssh nutanix@nutanix-cluster-ovhcloud-fqdn
 ```
 
 ### Replacing the Prism Central virtual machine with an X-Large machine
