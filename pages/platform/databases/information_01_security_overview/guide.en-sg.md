@@ -82,4 +82,4 @@ All database services are IP restricted. By default, services are not accessible
 
 [Public Cloud Databases documentation](https://docs.ovh.com/sg/en/publiccloud/databases/)
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.

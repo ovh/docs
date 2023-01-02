@@ -89,4 +89,4 @@ Please note that if the cluster is deleted, logs and metrics are also automatica
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

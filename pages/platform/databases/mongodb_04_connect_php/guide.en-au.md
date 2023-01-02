@@ -176,6 +176,6 @@ They can really help your work with PHP.
 
 [Configuring vRack for Public Cloud](https://docs.ovh.com/au/en/public-cloud/public-cloud-vrack/)
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.

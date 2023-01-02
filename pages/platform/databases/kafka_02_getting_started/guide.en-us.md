@@ -3,7 +3,7 @@ title: Kafka - Getting started
 excerpt: Find out how to set up and manage your Public Cloud Databases for Kafka
 slug: kafka/getting-started
 section: Kafka - Guides
-order: 2
+order: 020
 ---
 
 **Last updated 5<sup>th</sup> January 2022**
@@ -18,7 +18,7 @@ Apache Kafka is an open-source and highly resilient event streaming platform bas
 
 You can get more information on Kafka from the [official Kafka website](https://kafka.apache.org/intro){.external).
 
-This guide explains how to successfully configure Public Cloud Databases for Kafka via the OVHcloud Control Panel. 
+This guide explains how to successfully configure Public Cloud Databases for Kafka via the OVHcloud Control Panel.
 
 ## Requirements
 
@@ -69,7 +69,7 @@ Take note of the pricing information and click `Next`{.action} to continue.
 
 #### Step 5: Configure your options
 
-You can name your database in this step and decide to attach a public or private network. 
+You can name your database in this step and decide to attach a public or private network.
 Please note that attaching a private network is a feature not yet available at this time.
 
 ![Configure options](images/kafka_options.png){.thumbnail}
@@ -268,4 +268,4 @@ Some UI tools for Kafka are also available:
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka) to find how to connect to your database with several languages.
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.

@@ -3,7 +3,7 @@ title: Kafka - Capacités et limitations (EN)
 slug: kafka/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
 section: Kafka - Guides
-order: 1
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/capabilities/'
 ---
@@ -167,4 +167,4 @@ For each topic you can specify:
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!

@@ -2,7 +2,7 @@
 title: Kafka - Advanced parameters references
 slug: kafka/advanced-parameters-references
 excerpt:
-section: Kafka - Guides
+section: Kafka - Guides
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/advanced-parameters-references/'
@@ -95,6 +95,6 @@ Below you can find a summary of every configuration option available for Kafka s
 
 ## Go further
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -3,7 +3,7 @@ title: Kafka - Premiers pas (EN)
 excerpt: Find out how to set up and manage your Public Cloud Databases for Kafka
 slug: kafka/getting-started
 section: Kafka - Guides
-order: 2
+order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/getting-started/'
 ---
@@ -270,4 +270,4 @@ Some UI tools for Kafka are also available:
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/kafka) to find how to connect to your database with several languages.
 
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
