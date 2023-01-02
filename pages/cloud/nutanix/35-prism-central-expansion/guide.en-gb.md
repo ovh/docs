@@ -6,7 +6,7 @@ section: "Advanced use"
 order: 05
 ---
 
-**Last updated 23th December 2022**
+**Last updated 02nd January 2023**
 
 ## Objectif
 
@@ -36,25 +36,22 @@ You can deploy Prism Central in a custom sizing with these options:
 
 The default deployment of Prism Central on Nutanix by OVHcloud is on a single virtual machine in *Small* mode.
 
-The Prism Central redeployment mode on Nutanix clusters by OVHcloud is *Small* with one or three virtual machines.
+When redeploying a cluster from the OVHcloud Control Panel, you can configure Prism Central with one or three virtual machines in *small* mode only.
 
 ## Instructions
 
-We will look at how to replace Prism Central in Small mode on a single virtual machine with a Prism Central in X-Large mode and then extend Prism Central on 3 virtual machines for more resilience.
-
-> [!warning]
-> Replacing the operating mode of Prism Central means removing Prism Central and all options managed by Prism Central (Microsegmentation, Disaster recovery, etc...).
->
+We will look at how to replace Prism Central in Small mode on a single virtual machine with a Prism Central in X-Large mode and then extend Prism Central on 3 virtual machines for more resilience.<br>
+The Nutanix cluster remains operational during this operation but the features that require **Prism Central** will be removed.
 
 ### Configuring SSH access to Prism Element with the OVHcloud Load Balancer
 
 Go to the OVHcloud Control Panel, choose the `Hosted Private Cloud`{.action} tab at the top, then click on your `Cluster`{.action} on the left in the **Nutanix** category, scroll down the window and click on the `Load Balancer`{.action} associated with your cluster.
 
-![Add ssh PE on Load Balancer 01](images/01-add-pe-ssh-on-loadbalancer01.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 01](images/01-add-pe-ssh-on-loadbalancer01.png){.thumbnail}
 
 In the configuration pages for your Load Balancer, go to the `Server clusters`{.action} tab, and click `Add a server cluster`{.action}.
 
-![Add ssh PE on Load Balancer 02](images/01-add-pe-ssh-on-loadbalancer02.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 02](images/01-add-pe-ssh-on-loadbalancer02.png){.thumbnail}
 
 Enter this information :
 
@@ -66,11 +63,11 @@ Enter this information :
 
 Then click `Add`{.action}.
 
-![Add ssh PE on Load Balancer 03](images/01-add-pe-ssh-on-loadbalancer03.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 03](images/01-add-pe-ssh-on-loadbalancer03.png){.thumbnail}
 
 Within the server cluster, click `Add server`{.action}.
 
-![Add ssh PE on Load Balancer 04](images/01-add-pe-ssh-on-loadbalancer04.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 04](images/01-add-pe-ssh-on-loadbalancer04.png){.thumbnail}
 
 Fill in these values :
 
@@ -80,27 +77,27 @@ Fill in these values :
 
 And click `Add`{.action}.
 
-![Add ssh PE on Load Balancer 05](images/01-add-pe-ssh-on-loadbalancer05.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 05](images/01-add-pe-ssh-on-loadbalancer05.png){.thumbnail}
 
 Click `Apply configuration`{.action} to the right of the warning message `Your load balancer configuration has not been applied in all datacenters`.
 
-![Add ssh PE on Load Balancer 06](images/01-add-pe-ssh-on-loadbalancer06.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 06](images/01-add-pe-ssh-on-loadbalancer06.png){.thumbnail}
 
 Select your location and click on `Apply configuration`{.action}.
 
-![Add ssh PE on Load Balancer 07](images/01-add-pe-ssh-on-loadbalancer07.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 07](images/01-add-pe-ssh-on-loadbalancer07.png){.thumbnail}
 
 Select your location again and click `Apply configuration`{.action}.
 
-![Add ssh PE on Load Balancer 08](images/01-add-pe-ssh-on-loadbalancer08.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 08](images/01-add-pe-ssh-on-loadbalancer08.png){.thumbnail}
 
 Go to the `Tasks`{.action} tab to see the progress of the configuration change.
 
-![Add ssh PE on Load Balancer 09](images/01-add-pe-ssh-on-loadbalancer09.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 09](images/01-add-pe-ssh-on-loadbalancer09.png){.thumbnail}
 
 When the task is finished, go to the `Front-ends`{.action} tab and click `Add a Front-end`{.action}.
 
-![Add ssh PE on Load Balancer 10](images/01-add-pe-ssh-on-loadbalancer10.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 10](images/01-add-pe-ssh-on-loadbalancer10.png){.thumbnail}
 
 When the task is finished, go to the `Front-ends`{.action} tab and click `Add a Front-end`{.action}.
 
@@ -110,29 +107,29 @@ When the task is finished, go to the `Front-ends`{.action} tab and click `Add a 
 
 Then click `Show`{.action}.
 
-![Add ssh PE on Load Balancer 11](images/01-add-pe-ssh-on-loadbalancer11.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 11](images/01-add-pe-ssh-on-loadbalancer11.png){.thumbnail}
 
 In the **Restrict access to IPs** option, enter the network or IP address that will have access permission to Prism Element in SSH with this format XX.XX.XX.XX or XX.XX.XX.XX/XX.
 
 And click `Add`{.action}.
 
-![Add ssh PE on Load Balancer 12](images/01-add-pe-ssh-on-loadbalancer12.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 12](images/01-add-pe-ssh-on-loadbalancer12.png){.thumbnail}
 
 Click `Apply configuration`{.action} to the right of the warning message `Your load balancer configuration has not been applied in all datacenters`.
 
-![Add ssh PE on Load Balancer 13](images/01-add-pe-ssh-on-loadbalancer13.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 13](images/01-add-pe-ssh-on-loadbalancer13.png){.thumbnail}
 
-Select your location and click on `Apply configuration`{.action}.
+Reselect your site and click on `Apply configuration`{.action}.
 
-![Add ssh PE on Load Balancer 14](images/01-add-pe-ssh-on-loadbalancer14.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 14](images/01-add-pe-ssh-on-loadbalancer14.png){.thumbnail}
 
 Select your location again and click on `Apply configuration`{.action}.
 
-![Add ssh PE on Load Balancer 15](images/01-add-pe-ssh-on-loadbalancer15.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 15](images/01-add-pe-ssh-on-loadbalancer15.png){.thumbnail}
 
 Go to the `Tasks`{.action} tab to see the progress of the configuration change.
 
-![Add ssh PE on Load Balancer 16](images/01-add-pe-ssh-on-loadbalancer16.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 16](images/01-add-pe-ssh-on-loadbalancer16.png){.thumbnail}
 
 You have finished configuring the Load Balancer. You can now log in via ssh to the Prism Element console, with this information :
 

@@ -6,7 +6,7 @@ section: "Utilisation avancée"
 order: 05
 ---
 
-**Dernière mise à jour le 23/12/2022**
+**Dernière mise à jour le 02/01/2023**
 
 ## Objectif
 
@@ -35,15 +35,12 @@ Il est possible de déployer Prism Central dans un dimensionnement personnalisé
 
 Le déploiement par défaut de Prism Central sur Nutanix by OVHcloud est sur une seule machine virtuelle en mode *Small*.
 
-Le mode de redéploiement de Prism Central sur les clusters Nutanix by OVHcloud est *Small* avec une ou trois machines virtuelles.
+Lors d'un rédeploiement d'un cluster à partir de l'espace client OVHcloud il est possible de configurer Prism Central avec une ou trois machines virtuelles uniqument en mode *small*.
 
 ## En pratique
 
-Nous allons voir comment remplacer Prism Central en Mode Small sur une seule machine virtuelle par un Prism Central en mode X-Large et ensuite étendre Prism Central sur 3 machines virtuelles pour plus de résilience.
-
-> [!warning]
-> Le remplacement du mode de fonctionnement de Prism Central implique la suppression de Prism Central et de toutes les options gérées par Prism Central (Microsegmentation, Disaster recovery, etc...).
->
+Nous allons voir comment remplacer Prism Central en Mode *Small* sur une seule machine virtuelle par un Prism Central en mode X-Large et ensuite étendre Prism Central sur 3 machines virtuelles pour plus de résilience.<br>
+Le cluster Nutanix reste opérationnel pendant cette opération mais les fonctionnalités qui ont besoin de **Prism Central** seront supprimées.
 
 ### Configuration de l'accès à Prism Element en SSH avec le Load Balancer OVHcloud
 
@@ -79,27 +76,27 @@ Complétez ces valeurs :
 
 Et cliquez sur `Ajouter`{.action}.
 
-![Add ssh PE on Load Balancer 05](images/01-add-pe-ssh-on-loadbalancer05.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 05](images/01-add-pe-ssh-on-loadbalancer05.png){.thumbnail}
 
 Cliquez sur `Appliquer la configuration`{.action} à droite du message d'avertissement "La configuration de votre load balancer n'est pas appliquée dans tous les datacenters". 
 
-![Add ssh PE on Load Balancer 06](images/01-add-pe-ssh-on-loadbalancer06.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 06](images/01-add-pe-ssh-on-loadbalancer06.png){.thumbnail}
 
 Sélectionnez votre site et cliquez sur `Appliquer la configuration`{.action}.
 
-![Add ssh PE on Load Balancer 07](images/01-add-pe-ssh-on-loadbalancer07.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 07](images/01-add-pe-ssh-on-loadbalancer07.png){.thumbnail}
 
 Sélectionnez à nouveau votre site et cliquez sur `Appliquer la configuration`{.action}.
 
-![Add ssh PE on Load Balancer 08](images/01-add-pe-ssh-on-loadbalancer08.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 08](images/01-add-pe-ssh-on-loadbalancer08.png){.thumbnail}
 
 Allez dans l'onglet `Tâches`{.action} pour voir l'avancement de la modification de la configuration.
 
-![Add ssh PE on Load Balancer 09](images/01-add-pe-ssh-on-loadbalancer09.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 09](images/01-add-pe-ssh-on-loadbalancer09.png){.thumbnail}
 
 Lorsque la tâche sera terminée, allez dans l'onglet `Frontends`{.action} et cliquez sur `Ajouter un frontend`{.action}.
 
-![Add ssh PE on Load Balancer 10](images/01-add-pe-ssh-on-loadbalancer10.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 10](images/01-add-pe-ssh-on-loadbalancer10.png){.thumbnail}
 
 Saisissez ces informations :
 
@@ -109,29 +106,29 @@ Saisissez ces informations :
 
 Ensuite cliquez sur `Afficher`{.action}.
 
-![Add ssh PE on Load Balancer 11](images/01-add-pe-ssh-on-loadbalancer11.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 11](images/01-add-pe-ssh-on-loadbalancer11.png){.thumbnail}
 
 Dans l'option **Restreindre l'accès à des IPs** saisissez le réseau ou l'adresse ip qui aura l'autorisation d'accès sur Prism Element en SSH avec ce format XX.XX.XX.XX ou XX.XX.XX.XX/XX.
 
 Et cliquez sur `Ajouter`{.action}.
 
-![Add ssh PE on Load Balancer 12](images/01-add-pe-ssh-on-loadbalancer12.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 12](images/01-add-pe-ssh-on-loadbalancer12.png){.thumbnail}
 
 Cliquez sur `Appliquer la configuration`{.action} à droite du message d'avertissement "La configuration de votre load balancer n'est pas appliquée dans tous les datacenters". 
 
-![Add ssh PE on Load Balancer 13](images/01-add-pe-ssh-on-loadbalancer13.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 13](images/01-add-pe-ssh-on-loadbalancer13.png){.thumbnail}
 
 Sélectionnez votre site et cliquez sur `Appliquer la configuration`{.action}.
 
-![Add ssh PE on Load Balancer 14](images/01-add-pe-ssh-on-loadbalancer14.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 14](images/01-add-pe-ssh-on-loadbalancer14.png){.thumbnail}
 
-Refaites une sélection de votre site et cliquez sur `Appliquer la configuration`{.action}.
+Resélectionnez votre site et cliquez sur `Appliquer la configuration`{.action}.
 
-![Add ssh PE on Load Balancer 15](images/01-add-pe-ssh-on-loadbalancer15.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 15](images/01-add-pe-ssh-on-loadbalancer15.png){.thumbnail}
 
 Allez dans l'onglet `Tâches`{.action} pour voir l'avancement de la modification de la configuration.
 
-![Add ssh PE on Load Balancer 16](images/01-add-pe-ssh-on-loadbalancer16.png){.thumbnail}
+![01 Add ssh PE on Load Balancer 16](images/01-add-pe-ssh-on-loadbalancer16.png){.thumbnail}
 
 La configuration du Load Balancer est terminée, vous pouvez maintenant vous connecter en ssh sur la console Prism Element avec ces informations :
 
