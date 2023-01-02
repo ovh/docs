@@ -3,7 +3,7 @@ title: Kafka - Premiers pas (EN)
 excerpt: Find out how to set up and manage your Public Cloud Databases for Kafka
 slug: kafka/getting-started
 section: Kafka - Guides
-order: 2
+order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/getting-started/'
 ---
