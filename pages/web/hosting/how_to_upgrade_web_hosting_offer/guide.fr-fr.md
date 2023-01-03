@@ -6,7 +6,7 @@ section: Optimiser son site
 order: 02
 ---
 
-**Dernière mise à jour le 22/06/2022**
+**Dernière mise à jour le 03/01/2023**
 
 ## Objectif
 
@@ -23,7 +23,7 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 > [!warning]
 >
-> **Avant** tout changement sur votre abonnement actuel, vérifiez si vous n'êtes pas concerné par l'une de ces questions :
+> **Avant** tout changement sur votre abonnement actuel, vérifiez si vous êtes concerné par l'une de ces questions :
 >
 > - [Comment faire évoluer mon offre gratuite Start 10M vers une offre d'hébergement web ?](#start10m)
 > - [Comment bénéficier d'un gain de performance temporaire sur mon offre d'hébergement performance ?](#boost)
@@ -45,7 +45,7 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 
 > [!warning]
 >
-> La modification de votre abonnement pour une offre de la gamme inférieure n'est possible que s'il s'agit de l'offre **immédiatement inférieure**. 
+> La modification de votre abonnement pour une offre de la gamme inférieure n'est possible que s'il s'agit de l'offre **immédiatement inférieure**.
 > Par exemple, vous ne pourrez pas passer d'une formule *Performance 2* à une formule *Pro* en une seule opération.
 > Vous devrez **d'abord** faire évoluer votre hébergement depuis la formule *Performance 2* vers l'offre *Performance 1* **puis** vers l'offre *Pro*.
 
@@ -107,26 +107,25 @@ Dans la partie `Emails`{.action} de votre espace client, sélectionnez l'offre c
 
 #### Finalisation
 
-Une fois ces 6 éléments vérifiés, vous pouvez réaliser votre [changement d'offre](#modify)
-
+Une fois ces 6 éléments vérifiés, vous pouvez réaliser votre [changement d'offre](#modify).
 
 ### Cas particuliers
 
-#### **Vous possédez une offre Start 10M** <a name="start10m"></a>
+#### Vous possédez une offre Start 10M <a name="start10m"></a>
 
 Dans le cadre d'un changement de l'offre [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
 
-Après avoir pris connaissance de cette information, vous pouvez réaliser votre [changement d'offre](#modify)
+Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
-#### **Booster temporairement votre hébergement Performance** <a name="boost"></a>
+#### Booster temporairement votre hébergement Performance <a name="boost"></a>
 
 Avec l'[option Boost](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez augmenter temporairement les ressources CPU et RAM de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également [basculer vers l'offre Performance de niveau supérieur](#modify) afin de disposer de ces ressources de manière permanente.
 
 > [!warning]
 >
-> Lorsque vous décidez d'activer l'option boost, celle-ci reste active et facturée **tant que vous ne l'avez pas désactivé**.
+> Lorsque vous décidez d'activer l'option Boost, celle-ci reste active et facturée **tant que vous ne l'avez pas désactivée**.
 
-Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** l'option boost sur votre hébergement.
+Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** cette option sur votre hébergement.
 
 > [!tabs]
 > **Activer l'option Boost**
@@ -137,24 +136,24 @@ Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les in
 > **Désactiver l'option Boost**
 >>
 >> Dans l'onglet `Plus` de votre hébergement, cliquez sur `Booster mon offre`{.action}.<br>
->> Le tableau d'utilisation de l'offre boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
+>> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
 >> ![boost](images/disable_boost.png){.thumbnail}<br>
 
-#### **La facturation en cas de changement d'offre** <a name="billing"></a>
+#### La facturation en cas de changement d'offre <a name="billing"></a>
 
 Lorsque vous modifiez votre offre initiale vers une offre supérieure, un calcul au *prorata temporis* est alors appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
 Ce calcul correspond à la différence de tarif entre votre offre initiale et votre nouvelle offre.
 
 > **Exemple :**<br>
 >
-> Vous avez souscrit à un abonnement  [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) au 1er janvier 2021.
+> Vous avez souscrit à un abonnement [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) au 1er janvier 2022.
 >
-> Le 31 octobre 2021, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
+> Le 31 octobre 2022, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
 >
-> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2021 au 1er janvier 2022) est automatiquement soustrait du coût du nouvel abonnement **Pro**, jusqu'au 1er janvier 2022. Vous ne paierez que la différence.
-> À partir du 1er janvier 2022, l'abonnement Pro vous est ensuite facturé à son tarif en vigueur.
+> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2022 au 1er janvier 2023) est automatiquement soustrait du coût du nouvel abonnement **Pro**, jusqu'au 1er janvier 2023. Vous ne paierez que la différence.
+> À partir du 1er janvier 2023, l'abonnement Pro vous est ensuite facturé à son tarif en vigueur.
 
-Après avoir pris connaissance de ces informations, vous pouvez réaliser votre [changement d'offre](#modify)
+Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
 ## Aller plus loin <a name="gofurther"></a>
 

@@ -6,7 +6,7 @@ section: Premiers pas
 order: 05
 ---
 
-**Dernière mise à jour le 28/11/2022**
+**Dernière mise à jour le 03/01/2023**
 
 ## Gestion de votre offre
 
