@@ -199,6 +199,6 @@ Cuando se realiza una restauración, en su vSphere aparecen varios eventos.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/jW2FgBJ72h>
+Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/ovhcloud>
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

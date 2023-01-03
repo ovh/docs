@@ -199,6 +199,6 @@ Vous constaterez, dans votre vSphere, différentes opérations lors de la restau
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur Discord : <https://discord.gg/jW2FgBJ72h>
+Échangez avec notre communauté d’utilisateurs sur Discord : <https://discord.gg/ovhcloud>
 
 Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/){.external}.

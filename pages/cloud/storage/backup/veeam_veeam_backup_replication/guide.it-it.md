@@ -215,6 +215,6 @@ Verifica le informazioni per assicurarti che si tratti della tua licenza OVHclou
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti su Discord: <https://discord.gg/jW2FgBJ72h>
+Contatta la nostra Community di utenti su Discord: <https://discord.gg/ovhcloud>
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

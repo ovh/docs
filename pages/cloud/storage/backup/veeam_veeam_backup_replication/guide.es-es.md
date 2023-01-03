@@ -216,6 +216,6 @@ Compruebe que la información mostrada corresponde a su licencia de OVHcloud.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/jW2FgBJ72h>
+Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/ovhcloud>
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -199,6 +199,6 @@ Podczas przywracania w interfejsie vSphere zauważysz różne operacje.
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/jW2FgBJ72h>
+Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/ovhcloud>
 
 Dołącz do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

@@ -199,6 +199,6 @@ Durante il ripristino, vedrai comparire varie operazioni nel tuo vSphere.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti su Discord: <https://discord.gg/jW2FgBJ72h>
+Contatta la nostra Community di utenti su Discord: <https://discord.gg/ovhcloud>
 
 Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
