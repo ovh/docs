@@ -293,7 +293,7 @@ Cliquez sur `Expand`{.action}.
 
 ![02 Expand Prism Central 06](images/02-expand-prismcentral-to-three-vm06.png){.thumbnail}
 
-> [!Warning]
+> [!warning]
 > L'expansion est en cours et peut durer une trentaine de minutes, veuillez patienter pendant cette période.
 
 ![02 Expand Prism Central 07](images/02-expand-prismcentral-to-three-vm07.png){.thumbnail}
