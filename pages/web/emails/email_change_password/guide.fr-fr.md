@@ -10,12 +10,12 @@ order: 03
 
 ## Objectif
 
-Les adresses e-mail de votre offre e-mail OVHcloud sont accessibles grâce au mot de passe qui leur est associé. La modification de celui-ci peut se faire de 2 manières selon votre offre e-mail:
+Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de passe qui leur est associé. La modification de celui-ci peut se faire de 2 manières selon votre offre e-mail:
 
 - Depuis le Webmail
 - Via l'espace client OVHcloud
 
-**Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud**
+**Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud.**
 
 ## Prérequis
 
@@ -24,7 +24,7 @@ Les adresses e-mail de votre offre e-mail OVHcloud sont accessibles grâce au mo
 
 > [!primary]
 >
-> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consultez nos guides de configurations de votre logiciel de messagerie depuis la page d'acceuil de votre offre e-mail:
+> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consultez nos guides de configurations pour votre logiciel de messagerie depuis la page d'acceuil de votre offre e-mail:
 >
 > - [MXplan](https://docs.ovh.com/fr/emails/)
 > - [E-mail Pro](https://docs.ovh.com/fr/emails-pro/)
@@ -36,19 +36,21 @@ Les adresses e-mail de votre offre e-mail OVHcloud sont accessibles grâce au mo
 ### Modifier le mot de passe depuis l'espace client <a name="controlpanel"></a>
 
 > [!warning]
-> Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
+> Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
 > [!tabs]
 > **Emails MXplan (Version historique)**
 >>
+>> Si vous ne connaissez pas le type d'offre MXplan que vous possédez, consultez notre paragraphe [Identifiez votre offre MXplan](#whichmxplan)
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
 >> Cliquez sur le bouton <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Changer le mot de passe`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **Emails MXplan (Nouvelle version)**
 >>
+>> Si vous ne connaissez pas le type d'offre MXplan que vous possédez, consultez notre paragraphe [Identifiez votre offre MXplan](#whichmxplan)
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
->> Cliquez sur le bouton <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Changer le mot de passe`{.action}.<br><br>
+>> Cliquez sur le bouton <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Modifier`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Email Pro**
@@ -59,7 +61,8 @@ Les adresses e-mail de votre offre e-mail OVHcloud sont accessibles grâce au mo
 >>
 > **Exchange**
 >>
->> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.<br><br>
+>> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.<br>
+>> Cliquez sur le bouton <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Modifier`{.action}.<br><br>
 >>![email](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 
