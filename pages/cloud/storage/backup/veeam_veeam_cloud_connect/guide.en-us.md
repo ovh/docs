@@ -162,4 +162,6 @@ In your vSphere client, you can verify that various events are logged when a res
 
 ## Go further
 
+Join our community of Discord users: <https://discord.gg/ovhcloud>
+
 Join our community of users on <https://community.ovh.com/en/>.

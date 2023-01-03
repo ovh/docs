@@ -215,4 +215,6 @@ Verifique que a informação apresentada corresponde à sua licença da OVHcloud
 
 ## Quer saber mais?
 
+Fale com a nossa comunidade de utilizadores no Discord: <https://discord.gg/ovhcloud>
+
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

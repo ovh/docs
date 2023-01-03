@@ -163,4 +163,6 @@ In Ihrem vSphere Client können Sie sehen, dass verschiedene Ereignisse protokol
 
 ## Weiterführende Informationen
 
+Treten Sie unserer Benutzergemeinschaft auf Discord bei: <https://discord.gg/ovhcloud>.
+
 Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

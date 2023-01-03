@@ -82,7 +82,7 @@ L’implementazione del Veeam Cloud Connect si effettua dalla stessa interfaccia
 >[!success]
 >
 > L’installazione della console è disponibile in questa pagina.
-> 
+>
 
 Per prima cosa, clicca su “ADD SERVICE PROVIDER" per aggiungere il servizio alla tua console.
 
@@ -109,7 +109,7 @@ Infine, visualizzi un riepilogo.
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-recap.png){.thumbnail}
 
-Una volta cliccato su `termina`{.action}, il tuo servizio comparirà sulla console. 
+Una volta cliccato su `termina`{.action}, il tuo servizio comparirà sulla console.
 
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-finish.png){.thumbnail}
@@ -198,5 +198,7 @@ Durante il ripristino, vedrai comparire varie operazioni nel tuo vSphere.
 ![veeam cloud connect](images/veeam-cloud-connect-restore-done.png){.thumbnail}
 
 ## Per saperne di più
+
+Contatta la nostra Community di utenti su Discord: <https://discord.gg/ovhcloud>
 
 Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

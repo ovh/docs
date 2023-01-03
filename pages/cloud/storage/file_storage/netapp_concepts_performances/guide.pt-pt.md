@@ -20,7 +20,7 @@ Descubra os conceitos relacionados com o aprovisionamento, o acompanhamento e o 
 
 ### Acompanhamento das performances
 
-A noção de "nível de serviço" é um elemento importante da oferta Enterprise File Storage. Define os níveis de desempenho alcançáveis para cada serviço provisionado. O desempenho de um sistema de ficheiros é geralmente definido por vários elementos: 
+A noção de "nível de serviço" é um elemento importante da oferta Enterprise File Storage. Define os níveis de desempenho alcançáveis para cada serviço provisionado. O desempenho de um sistema de ficheiros é geralmente definido por vários elementos:
 
 - O débito.
 - IOPS (ou número de operações de entrada-saída por segundo).
@@ -33,13 +33,13 @@ Esta informação é importante quando desenvolve a sua arquitetura de armazenam
 
 - **Exemplo n°1**: a sua aplicação necessita de um débito teórico de cerca de **430 MB/s**. Para isso, deve aprovisionar pelo menos **7 TB** de armazenamento. Com efeito, um cálculo rápido (**430/64 = 6,72**) permite estimar a capacidade mínima necessária para atingir este caudal.
 
-- **Exemplo n°2**: a sua infraestrutura requer **4500 IOPS** e um volume de dados de **1 TB**. Para isso, é necessário aprovisionar ***2 TB** para obter os **4500 IOPS necessários**. Mais especificamente neste caso, beneficiará de **8000 IOPS** sobre a capacidade provisionada. Trata-se de aprovisionar o seu serviço de forma a assegurar o nível de desempenho desejado.
+- **Exemplo n°2**: a sua infraestrutura requer **4500 IOPS** e um volume de dados de **1 TB**. Para isso, é necessário aprovisionar **2 TB** para obter os **4500 IOPS necessários**. Mais especificamente neste caso, beneficiará de **8000 IOPS** sobre a capacidade provisionada. Trata-se de aprovisionar o seu serviço de forma a assegurar o nível de desempenho desejado.
 
 - **Exemplo n°3**: a sua aplicação não requer performance particular, mas um volume de armazenamento superior a **60 TB**. Neste caso, é preferível orientar-se para o serviço de armazenamento [NAS-HA](https://www.ovhcloud.com/pt/storage-solutions/nas-ha/), mais económico e que permite atingir capacidades superiores a 58 TB por serviço.
 
 ### volumes e qualidade de serviços (QoS)
 
-Relembramos que um volume é uma partição do serviço (também chamada "pool" ou "pool de capacidade"). Aquando da sua encomenda, aprovisionará uma capacidade para o seu serviço. Uma vez o serviço entregue, será obrigado a criar os seus volumes ao colocar à disposição uma quota que vai de 100GB a 29TB por volume. 
+Relembramos que um volume é uma partição do serviço (também chamada "pool" ou "pool de capacidade"). Aquando da sua encomenda, aprovisionará uma capacidade para o seu serviço. Uma vez o serviço entregue, será obrigado a criar os seus volumes ao colocar à disposição uma quota que vai de 100GB a 29TB por volume.
 
 Encontre aqui a hierarquia de um serviço de armazenamento Enterprise File Storage:
 
@@ -65,12 +65,12 @@ Antes de iniciar o teste, verifique se o cliente utilizado para este benchmark t
 
 #### Banco de teste
 
-A ferramenta [FIO](https://github.com/axboe/fio) permite-lhe testar vários cenários e modificar vários parâmetros de teste: 
+A ferramenta [FIO](https://github.com/axboe/fio) permite-lhe testar vários cenários e modificar vários parâmetros de teste:
 
 - O número de imagens.
 - O tamanho das imagens.
 - O tamanho do bloco.
-- O duração do teste. 
+- O duração do teste.
 - O número de FIO workers.
 - O modelo de acesso (leitura/escrita/sequencial/aleatório), etc.
 
