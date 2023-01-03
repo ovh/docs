@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Letzte Aktualisierung am 17.11.2022**
+**Letzte Aktualisierung am 04.01.2023**
 
 > [!primary]
 >
