@@ -195,4 +195,6 @@ Upewnij się, czy wyświetlane informacje dotyczą Twojej licencji OVHcloud.
 
 ## Sprawdź również
 
+Przyłącz się do społeczności naszych użytkowników na Discord: <https://discord.gg/jW2FgBJ72h>
+
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

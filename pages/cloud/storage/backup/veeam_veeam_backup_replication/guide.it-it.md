@@ -71,13 +71,13 @@ Verrai reindirizzato all'assistente all'installazione, ti sarà sufficiente chiu
 
 ### Crea un account di servizio Veeam Enterprise
 
-#### Attiva un account di servizio 
+#### Attiva un account di servizio
 
 Per prima cosa, genera una password **complessa**.
 
 Per iniziare, attiva Windows Powershell come amministratore.
 
-Successivamente, crea un account di servizio accedendo come amministratore e utilizzando queste righe di comando: 
+Successivamente, crea un account di servizio accedendo come amministratore e utilizzando queste righe di comando:
 
 ```powershell
 New-LocalUser “OVHVeeamEnterprise” -Password (ConvertTo-SecureString - AsPlainText “P@ssword01” -Force) -Description “OVH Service Account for Veeam Enterprise -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
@@ -87,7 +87,7 @@ Tieni presente che il nome dell'account e la password rappresentano un esempio e
 
 * Nome dell'account: OVHVeeamEnterprise
 * Password: P@ssword01
-  
+
 
 #### Definisci le autorizzazioni dell’account di servizio
 
@@ -150,7 +150,7 @@ Il tuo utente OVHVeeamEnterprise è accessibile in locale e a distanza.
 
 ## Dallo Spazio Cliente OVHcloud
 
-Accedi alla sezione `Hosted Private Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosted Private Cloud`{.action} e seleziona `Piattaforme e servizi`{.action}. Seleziona il tuo servizio **backupserverenterenterprise** e clicca su `Attiva la licenza`{.action} nella sezione `Scelta rapida`.
+Accedi alla sezione `Hosted Private Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosted Private Cloud`{.action} e seleziona `Piattaforme e servizi`{.action}. Seleziona il tuo servizio **backupserverenterenterprise** e clicca su `Attiva la licenza`{.action}` nella sezione `Scelta rapida`.
 
 ![](images/veeam001.png){.thumbnail}
 
@@ -178,7 +178,7 @@ Per prima cosa, recupera il serviceName:
 > @api {GET} /veeam/veeamEnterprise
 >
 
-Esegui la registrazione: 
+Esegui la registrazione:
 
 > [!api]
 >
@@ -214,5 +214,7 @@ Verifica le informazioni per assicurarti che si tratti della tua licenza OVHclou
 ![](images/veeamBandR_lic_2.png){.thumbnail}
 
 ## Per saperne di più
+
+Contatta la nostra Community di utenti su Discord: <https://discord.gg/jW2FgBJ72h>
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -213,4 +213,6 @@ Check that the information displayed is definitely for your OVHcloud licence.
 
 ## Go further
 
+Join our community of Discord users: <https://discord.gg/jW2FgBJ72h>
+
 Join our community of users on <https://community.ovh.com/en/>.

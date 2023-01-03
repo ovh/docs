@@ -82,7 +82,7 @@ La activación del Veeam Cloud Connect se realiza en la misma interfaz, en la co
 > [!success]
 >
 > Puede consultar la instalación de la consola en esta página.
-> 
+>
 
 Primero debe añadir el servicio en su consola, haciendo clic en «ADD SERVICE PROVIDER»
 
@@ -198,5 +198,7 @@ Cuando se realiza una restauración, en su vSphere aparecen varios eventos.
 ![veeam cloud connect](images/veeam-cloud-connect-restore-done.png){.thumbnail}
 
 ## Más información
+
+Interactúe con nuestra comunidad de usuarios en Discord : <https://discord.gg/jW2FgBJ72h>
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
