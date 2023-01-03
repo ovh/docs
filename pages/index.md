@@ -426,6 +426,7 @@
             + [Migrating to Nutanix via the Nutanix Move tool](cloud/nutanix/32-move-to-nutanix)
             + [Activate Windows VMs installed on Nutanix by OVHcloud](cloud/nutanix/34-activate_windows_vm)
             + [Adding a node in a Nutanix cluster](cloud/nutanix/33-add-node)
+            + [Replacing Prism Central from Small Mode to X-Large Mode](cloud/nutanix/35-prism-central-expansion)
         + [Troubleshooting](hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-troubleshooting)
             + [Retrieving your Nutanix installation status information](cloud/nutanix/50-cluster-information)
         + [Disaster recovery plan](hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-disaster-recovery-plan)
