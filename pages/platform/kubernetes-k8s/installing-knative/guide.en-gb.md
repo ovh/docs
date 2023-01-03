@@ -74,7 +74,7 @@ The Knative CLI (kn) provides a quick and easy interface for creating Knative re
 
 `kn` also simplifies completion of otherwise complex procedures such as autoscaling and traffic splitting.
 
-In order to install the CLI, [follow the instructions](https://knative.dev/docs/getting-started/#install-the-knative-cli) depending on your OS.
+In order to install the CLI, [follow the instructions](https://knative.dev/docs/getting-started/quickstart-install/#install-the-knative-cli) depending on your OS.
 
 Then test the CLI is correctly installed in your computer:
 
@@ -159,6 +159,8 @@ customresourcedefinition.apiextensions.k8s.io/revisions.serving.knative.dev unch
 customresourcedefinition.apiextensions.k8s.io/routes.serving.knative.dev unchanged
 customresourcedefinition.apiextensions.k8s.io/serverlessservices.networking.internal.knative.dev unchanged
 customresourcedefinition.apiextensions.k8s.io/services.serving.knative.dev unchanged
+secret/serving-certs-ctrl-ca created
+secret/knative-serving-certs created
 image.caching.internal.knative.dev/queue-proxy created
 configmap/config-autoscaler created
 configmap/config-defaults created
@@ -172,7 +174,6 @@ configmap/config-network created
 configmap/config-observability created
 configmap/config-tracing created
 horizontalpodautoscaler.autoscaling/activator created
-Warning: policy/v1beta1 PodDisruptionBudget is deprecated in v1.21+, unavailable in v1.25+; use policy/v1 PodDisruptionBudget
 poddisruptionbudget.policy/activator-pdb created
 deployment.apps/activator created
 service/activator-service created
