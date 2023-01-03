@@ -1,6 +1,6 @@
 ---
 title: Replacing Prism Central from Small Mode to X-Large Mode
-slug: prism-central-to-xlarge-mode
+slug: prism-central-expansion
 excerpt: 'How to replace Prism Central with three X-Large VMs' 
 section: "Advanced use"
 order: 05
