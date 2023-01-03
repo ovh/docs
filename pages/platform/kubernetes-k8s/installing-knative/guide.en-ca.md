@@ -6,7 +6,7 @@ section: Serverless
 order: 1
 ---
 
-**Last updated 12th November, 2021.**
+**Last updated 2nd January, 2023.**
 
 <style>
  pre {
@@ -74,7 +74,7 @@ The Knative CLI (kn) provides a quick and easy interface for creating Knative re
 
 `kn` also simplifies completion of otherwise complex procedures such as autoscaling and traffic splitting.
 
-In order to install the CLI, [follow the instructions](https://knative.dev/docs/getting-started/#install-the-knative-cli) depending on your OS.
+In order to install the CLI, [follow the instructions](https://knative.dev/docs/getting-started/quickstart-install/#install-the-knative-cli) depending on your OS.
 
 Then test the CLI is correctly installed in your computer:
 
@@ -106,12 +106,12 @@ The first thing to do is to install the Knative Serving component:
 - Install the required custom resources by running the command:
 
 ```
-kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-crds.yaml
+kubectl apply -f https://github.com/knative/serving/releases/latest/download/serving-crds.yaml
 ```
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-crds.yaml
+<pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/latest/download/serving-crds.yaml
 customresourcedefinition.apiextensions.k8s.io/certificates.networking.internal.knative.dev created
 customresourcedefinition.apiextensions.k8s.io/configurations.serving.knative.dev created
 customresourcedefinition.apiextensions.k8s.io/clusterdomainclaims.networking.internal.knative.dev created
@@ -129,12 +129,12 @@ customresourcedefinition.apiextensions.k8s.io/images.caching.internal.knative.de
 - Install the core components of Knative Serving by running the command:
 
 ```
-kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-core.yaml
+kubectl apply -f https://github.com/knative/serving/releases/latest/download/serving-core.yaml
 ```
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-core.yaml
+<pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/latest/download/serving-core.yaml
 namespace/knative-serving created
 clusterrole.rbac.authorization.k8s.io/knative-serving-aggregated-addressable-resolver created
 clusterrole.rbac.authorization.k8s.io/knative-serving-addressable-resolver created
@@ -159,6 +159,8 @@ customresourcedefinition.apiextensions.k8s.io/revisions.serving.knative.dev unch
 customresourcedefinition.apiextensions.k8s.io/routes.serving.knative.dev unchanged
 customresourcedefinition.apiextensions.k8s.io/serverlessservices.networking.internal.knative.dev unchanged
 customresourcedefinition.apiextensions.k8s.io/services.serving.knative.dev unchanged
+secret/serving-certs-ctrl-ca created
+secret/knative-serving-certs created
 image.caching.internal.knative.dev/queue-proxy created
 configmap/config-autoscaler created
 configmap/config-defaults created
@@ -172,7 +174,6 @@ configmap/config-network created
 configmap/config-observability created
 configmap/config-tracing created
 horizontalpodautoscaler.autoscaling/activator created
-Warning: policy/v1beta1 PodDisruptionBudget is deprecated in v1.21+, unavailable in v1.25+; use policy/v1 PodDisruptionBudget
 poddisruptionbudget.policy/activator-pdb created
 deployment.apps/activator created
 service/activator-service created
@@ -204,7 +205,7 @@ As the networking layer, you can [install the one you want](https://knative.dev/
 Install the Knative Kourier controller by running the command:
 
 ```
-kubectl apply -f https://github.com/knative/net-kourier/releases/download/knative-v1.0.0/kourier.yaml
+kubectl apply -f https://github.com/knative/net-kourier/releases/latest/download/kourier.yaml
 ```
 
 Configure Knative Serving to use Kourier by default by running the command:
@@ -264,16 +265,16 @@ webhook-7df8fd847b-rm9q2                  1/1     Running   0          33m
 And we can check the Knative Serving installed version:
 
 ```
-kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "serving.knative.dev/release"}}'
+kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "app.kubernetes.io/version"}}'
 ```
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "serving.knative.dev/release"}}'
-v1.0.0
+<pre class="console"><code>$ kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "app.kubernetes.io/version"}}'
+v1.8.3
 </code></pre>
 
-Knative Serving version 1.0.0 is correctly deployed in our cluster, Cool!
+Knative Serving version 1.8.3 is correctly deployed in our cluster, Cool!
 
 #### Configuring DNS
 
