@@ -27,7 +27,7 @@ section: User guides
  }
 </style>
 
-**Last updated 22nd August 2022**
+**Last updated 3rd January 2023**
 
 ## Objective
 
@@ -77,6 +77,15 @@ Once the update has been performed, you cannot revert to the previous version.
 1. Click on `Confirm`{.action}
 
     ![Click on Confirm](images/upgrading-kubernetes-version-003.png){.thumbnail}
+
+> [!primary]
+>
+> Your security policy must be set at least to "Minimum unavailability", otherwise the upgrade will fail.
+>
+> ![Security Policy](images/upgrading-kubernetes-version-005.png){.thumbnail}
+>
+> ![Failed Upgrade](images/upgrading-kubernetes-version-006.png){.thumbnail}
+>
 
 ### Step 2 - Wait for the upgrading to end 
 

@@ -213,4 +213,6 @@ Dans les informations, vérifiez qu'il s'agit bien de votre licence OVHcloud.
 
 ## Aller plus loin
 
+Échangez avec notre communauté d’utilisateurs sur Discord : <https://discord.gg/ovhcloud>
+
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

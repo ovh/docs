@@ -212,4 +212,6 @@ Klicken Sie links im Menü auf `License`{.action}.
 
 ## Weiterführende Informationen
 
+Treten Sie unserer Benutzergemeinschaft auf Discord bei: <https://discord.gg/ovhcloud>.
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
