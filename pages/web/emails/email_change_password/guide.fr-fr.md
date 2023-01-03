@@ -24,7 +24,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 
 > [!primary]
 >
-> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consultez nos guides de configurations pour votre logiciel de messagerie depuis la page d'acceuil de votre offre e-mail:
+> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consulter nos guides de configurations pour votre logiciel de messagerie depuis la page d'accueil de votre offre e-mail:
 >
 > - [MXplan](https://docs.ovh.com/fr/emails/)
 > - [E-mail Pro](https://docs.ovh.com/fr/emails-pro/)
@@ -68,7 +68,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 
 ### Modifier le mot de passe depuis le webmail
 
-La modification de votre mot de passe via le webmail est diponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pplication) :
+La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pplication) :
 
 - Emails MXplan (Nouvelle version)
 - Email Pro
