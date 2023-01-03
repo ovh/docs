@@ -78,6 +78,12 @@ Once the update has been performed, you cannot revert to the previous version.
 
     ![Click on Confirm](images/upgrading-kubernetes-version-003.png){.thumbnail}
 
+**Remark:** Your security policy must be set at least to "Minimum unavailability", otherwise the upgrade will fail.
+
+  ![Security Policy](images/upgrading-kubernetes-version-005.png){.thumbnail}
+
+  ![Failed Upgrade](images/upgrading-kubernetes-version-006.png){.thumbnail}
+
 ### Step 2 - Wait for the upgrading to end 
 
 The upgrading process can take several minutes (around 5 minutes per node in your cluster). During that time, a message on the OVHcloud Control Panel warns you that the cluster is being upgraded:
