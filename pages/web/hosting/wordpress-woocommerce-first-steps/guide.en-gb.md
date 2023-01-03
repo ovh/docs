@@ -89,7 +89,7 @@ The settings page include many tabs&nbsp;:
 
 #### General
 
-Cet onglet vous permet de définir les éléments suivants&nbsp;:
+This add is used to set the following parameters&nbsp;:
 
 - address
 - selling location
@@ -102,7 +102,7 @@ Cet onglet vous permet de définir les éléments suivants&nbsp;:
 
 #### Products
 
-La gestion de produits se fait via un ensemble de sous-rubriques&nbsp;:
+Product management is done through a set of sub-sections&nbsp;:
 
 - «&nbsp;Général&nbsp;» sert à définir des éléments tels que la page d'accueil qui sera affichée par défaut (boutique, mentions légales, panier, etc.), les unités de mesure, la possibilité ou non de mettre des commentaires à propos des produits ou des notes&nbsp;;
 - «&nbsp;Inventaire&nbsp;» servira à paramétrer la gestion de votre stock (ou ne pas la gérer), et de configurer le comportement du site (stock décrémenté lorsqu'un objet est dans le panier, seuils d'alerte, possibilité de masquer les produits qui ne sont plus en stock)&nbsp;;
