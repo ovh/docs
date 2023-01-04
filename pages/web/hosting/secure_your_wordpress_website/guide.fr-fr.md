@@ -175,9 +175,30 @@ Wordfence comprend un pare-feu et un scanner de logiciels malveillants qui ont �
 
 ![Installer l'extension Wordfence](images/Installation%20de%20l'extension%20Wordfence%20Security.png)
 
-Une fois activé, renseignez votre adresse e-mail pour recevoir les rapports hebdomadaires, accepter les conditions générales puis à l’écran suivant cliquez sur «&nbsp;no thanks&nbsp;».
+Lorsque que vous cliquez sur «&nbsp;Activate&nbsp;», vous serez invité à enregistrer votre extension. Si vous n'avez pas de compte Wordfence, cliquez sur «&nbsp;Get Your Wordfence Licence&nbsp;», vous serez redirigé vers le site de l'éditeur de l'extension pour créer votre compte&nbsp;:
+
+![Page d'accueil Wordfence - Obtenir sa licence ou installer avec celle existance](images/Obtenir%20votre%20licence%20Wordfence.png)
+
+Sur le site de l'éditeur, sélectionnez la version « Free ». Cliquez sur « Get a Free Licence ». Une fenêtre modale s'ouvrira, cliquez sur « I'm OK waiting 30 days for protection from new threats » :
+
+![Wordfence - Souscription offre gratuite](images/Souscription%20offre%20gratuite.png)
+
+Une nouvelle fenêtre modale apparaît avec l'URL de votre site WordPress. Renseignez votre adresse mail et cochez la case relative à l'acceptation des conditions générales d'utilisation&nbsp;:
+
+![Wordfence - Confirmation URL](images/Confirmation%20URL.png)
+
+Un message vous indique alors que qu'un mail vous a été envoyé&nbsp;:
+
+![Wordfence - Confirmation envoi clé](images/Confirmation%20envoi%20cl%C3%A9.png)
+
+Ouvrez-le et cliquez sur le lien qui s'y trouve pour finaliser la création de votre compte (le lien vous envoie directement sur l'interface d'administration de WordPress). Vous pourrez alors valider la clé de licence inscrite dans les formulaires&nbsp;:
+
+![Wordfence - Licence](images/Licence.png)
+
+Cette opération peut également être faite manuellement en copiant la clé qui se trouve dans le mail d'inscription.
+
 Le firewall, aussi appelé WAF (Web Application Firewall) entre en mode apprentissage. Cela ne va durer que quelques dizaines de minutes tout au plus.
-Entre temps, cliquez sur «&nbsp;Click here to configure&nbsp;».
+Entre temps, cliquez sur « Click here to configure »&nbsp;:
 
 ![Configurer l'extension](images/Configuration%20de%20l'extension%20Wordfence.png)
 
