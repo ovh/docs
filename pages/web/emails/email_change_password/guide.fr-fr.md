@@ -46,7 +46,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 >> Cliquez sur le bouton <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Changer le mot de passe`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
-> **Emails MXplan (Nouvelle version)**
+> **Emails MXplan (nouvelle version)**
 >>
 >> Si vous ne connaissez pas le type d'offre MXplan que vous possédez, consultez notre paragraphe [Identifiez votre offre MXplan](#whichmxplan).<br><br>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
