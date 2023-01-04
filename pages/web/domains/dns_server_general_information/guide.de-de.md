@@ -67,7 +67,7 @@ Stellen Sie sicher, dass Ihre Domain aufgrund der Änderungen nicht unerreichbar
 
 ### Zugang zur Verwaltung der OVHcloud DNS-Server
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Domainnamen`{.action} die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Server`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Server`{.action}.
 
 Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für Ihre Domain definiert sind. Es werden möglicherweise mehrere DNS-Server angezeigt. Eine Tabellenzeile entspricht dabei jeweils einem Server.
 

@@ -60,7 +60,7 @@ Please ensure that the modifications will not render your domain name inaccessib
 
 ### Accessing the OVHcloud DNS server management
 
-First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click `Domains`{.action}, then choose the domain name concerned. Go to the `DNS servers`{.action} tab.
+First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and go to the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS servers`{.action} tab.
 
 The table that appears will list the DNS servers currently set by OVHcloud for your domain name. Several DNS servers can be listed, each with its own row in the table.
 

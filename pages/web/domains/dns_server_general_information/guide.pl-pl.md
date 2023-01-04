@@ -64,7 +64,7 @@ Upewnij się, czy wprowadzone modyfikacje nie uniemożliwią dostępu do Twojej 
 
 ### Dostęp do interfejsu zarządzania serwerami DNS
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę. Przejdź do zakładki `Serwery DNS`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, a następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Serwery DNS`{.action}.
 
 Pojawi się tabela wyszczególniająca serwery DNS aktualnie zdefiniowane przez OVHcloud dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli. 
 

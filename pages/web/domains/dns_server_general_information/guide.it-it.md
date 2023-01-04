@@ -66,7 +66,7 @@ Assicurati che le modifiche non rendano il tuo dominio inaccessibile. Se non ne 
 
 ### Accedere alla gestione dei server DNS OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. e clicca sulla scheda `Server DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio. e clicca sulla scheda `Server DNS`{.action}.
 
 Visualizzi una tabella con tutti i server DNS OVHcloud configurati per il tuo dominio. A ogni riga corrisponde un server DNS. 
 
