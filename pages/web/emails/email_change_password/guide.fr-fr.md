@@ -76,7 +76,7 @@ La modification de votre mot de passe via le webmail est disponible pour les off
 
 > [!warning]
 >
-> L'offre **Emails MXplan (Version historique)** utilise le webmail Roundcube, le changement de mot de passe se fait uniquement [par l'espace client](#controlpanel)
+> L'offre **Emails MXplan (version historique)** utilise le webmail Roundcube, le changement de mot de passe se fait uniquement [via l'espace client](#controlpanel).
 >
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
