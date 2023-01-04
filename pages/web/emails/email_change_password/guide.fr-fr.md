@@ -39,7 +39,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 > Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
 > [!tabs]
-> **Emails MXplan (Version historique)**
+> **Emails MXplan (version historique)**
 >>
 >> Si vous ne connaissez pas le type d'offre MXplan que vous possédez, consultez notre paragraphe [Identifiez votre offre MXplan](#whichmxplan).<br><br>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
