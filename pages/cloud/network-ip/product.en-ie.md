@@ -32,7 +32,7 @@ order: 08
 > - [Moving an Additional IP](https://docs.ovh.com/ie/en/dedicated/ip-fo-move/)
 > - [How to determine if your dedicated server supports virtual MAC addresses](https://docs.ovh.com/ie/en/dedicated/network-support-virtual-mac/)
 > - [Assigning a Virtual MAC to an Additional IP](https://docs.ovh.com/ie/en/dedicated/network-virtual-mac/)
-> - [Configurer son adresse IP en alias](https://docs.ovh.com/fr/dedicated/network-ipaliasing/)
+> - [Configuring IP aliasing](https://docs.ovh.com/ie/en/dedicated/network-ipaliasing/)
 > - [vRack - Configuring the vRack on your dedicated servers](https://docs.ovh.com/ie/en/dedicated/configuring-vrack-on-dedicated-servers/)
 > - [vRack - Configuring an IP block in a vRack](https://docs.ovh.com/ie/en/dedicated/ip-block-vrack/)
 > - [vRack - Change the announcement of an IP block in vRack](https://docs.ovh.com/ie/en/dedicated/change-anouncement-ip-block-vrack/)
