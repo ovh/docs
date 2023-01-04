@@ -95,6 +95,7 @@ This permission can be used in particular if you want to delete old codes or con
 By default **filesystem volumes** are created and deleted on the fly for each job needing it.
 
 User can enable a `cache` feature that allow jobs and notebooks to re-use available volumes instead of creating a new one each time. That feature serves several purposes :
+
 - Reducing synchronization time for data that have already been downloaded before.
 - Sharing same volumes between several jobs or notebooks.
 

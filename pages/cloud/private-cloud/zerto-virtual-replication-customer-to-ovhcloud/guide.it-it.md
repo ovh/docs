@@ -177,7 +177,7 @@ La rete sarà necessariamente in /23 (512 IPs).
 
 Le impostazioni supportate sono
 
-- Protocollo: ESP:
+- Protocollo: ESP
 - Algoritmi di cifratura:  AES 256 bits 
 - Algoritmo di hash: SHA256
 - PFS: Off

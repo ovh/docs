@@ -50,6 +50,7 @@ OPTIONS:
 The creation of application tokens is pretty straightforward, you need to define what roles to assign to the token and its scope.
 
 There are two roles available:
+
 - `read` a token with this role will allow access to the services exposed by the job on the `job_url`
 - `operator` a token with this role will allow interaction with AI Training api and CLI
 

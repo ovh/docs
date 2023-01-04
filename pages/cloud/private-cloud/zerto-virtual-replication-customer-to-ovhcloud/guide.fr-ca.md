@@ -173,7 +173,7 @@ Le réseau sera forcément en /23 (512 IPs).
 
 Les paramètres supportés sont
 
-- Protocole : ESP :
+- Protocole : ESP
 - Algorithmes de chiffrement : AES 256 bits
 - Algorithmes de hachage : SHA256
 - PFS : Off

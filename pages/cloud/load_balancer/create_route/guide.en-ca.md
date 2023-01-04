@@ -36,6 +36,7 @@ A route controls traffic according to different criteria. You can express these 
 For example, *IF* the URL _starts_ with '/wp-admin/' (1) *AND* the connection _is_ in HTTP (2) *THEN* _redirect_ to the HTTPS version of the page (3).
 
 In this example, there are two rules:
+
 - the connection must come from a HTTP front-end (2)
 - its URL must begin with the WordPress admin pages (1)
 

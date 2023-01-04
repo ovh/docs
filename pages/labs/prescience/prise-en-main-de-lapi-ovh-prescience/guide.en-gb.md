@@ -479,6 +479,7 @@ Example of result:
 > Prescience Serving provides methods of performing both this transformation and the inference.
 
 The Serving platform allows you to perform the following:
+
 - Transformation and evaluation
 - Evaluation only
 - Transformation only

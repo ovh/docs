@@ -283,7 +283,9 @@ Une fois le « dataset » créé, il est possible de commencer à l'optimiser.
 |`budget`|`Integer`|Body JSON|6| Budget alloué à l'optimisation| 10
 
 Exemple :
+
 - fichier `optimize.json`
+
 ```json
 {
     "scoring_metric": "roc_auc",
