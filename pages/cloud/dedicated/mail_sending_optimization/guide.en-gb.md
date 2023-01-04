@@ -107,7 +107,7 @@ Next, you will need to sign the SNDS (Smart Network Data Services) and JMRP (Jun
 
 Once your account is created, you must fill in the following form: 
 
-- **Company name**:
+- **Company name**
 - **Contact email address**: (A valid email address where Microsoft can contact you)
 - **Complaint feedback email address**: (A valid email address where you will receive spam complaints. The **best practices** want the email to be in the form: **abuse@mydomain.com**.)
 

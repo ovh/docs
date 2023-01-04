@@ -35,6 +35,7 @@ Prima di fare qualsiasi cosa **è necessario effettuare un backup dei dati**. L�
 
 Anche se è raro che due dischi diventino difettosi contemporaneamente, questa eventualità non è impossibile.
 Nessun disco verrà sostituito senza che tu abbia prima confermato quanto segue:
+
 -	di aver effettuato il backup dei dati
 -	di accettare la potenziale perdita dei dati come conseguenza della sostituzione del disco
 

@@ -89,6 +89,7 @@ Correlacione los gráficos de recursos utilizados de su hospedaje (más informac
 Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)){.external}.
 
 Cómo acceder a los registros:
+
 - Haga clic en el dominio en la sección `Hospedaje`{.action}.
 - Haga clic en la pestaña `Más +`{.action} y, a continuación, seleccione `Estadísticas y registros`{.action}.
 - Después, haga clic en los enlaces mostrados para acceder tanto a las _estadísticas de visitas al sitio web_ como a los _registros_.
@@ -97,6 +98,7 @@ Cómo acceder a los registros:
 
 
 Cómo acceder a los gráficos:
+
 - En la sección `Hospedaje`{.action}, haga clic en el dominio.
 - En la sección `Información general`{.action}, desplace la pantalla hasta el final de la página, donde podrá consultar los gráficos de utilización de su hospedaje.
 - Allí, podrá seleccionar el tipo de información, así como el periodo de los datos que desea ver.

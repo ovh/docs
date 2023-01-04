@@ -33,6 +33,7 @@ Avant de faire quoi que ce soit, **il est nécessaire d'effectuer une sauvegarde
 
 S'il est rare que deux disques soient défaillants en même temps, ce cas n’est pas impossible.
 Aucun changement de disque ne sera effectué sans :
+
 -	une confirmation de votre part de la sauvegarde de vos données ;
 -	une confirmation que vous acceptez en connaissance de cause leur perte potentielle dûe au remplacement du disque.
 

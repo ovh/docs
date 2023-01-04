@@ -34,6 +34,7 @@ Bevor Sie weitere Schritte einleiten, **sollten Sie in jedem Fall eine vollstän
 
 Es ist zwar außerordentlich selten, dass zwei Festplatten gleichzeitig ausfallen, allerdings auch nicht unmöglich.
 Wir führen keinen Festplattenwechsel durch ohne:
+
 -	eine Bestätigung Ihrerseits über die ordnungsgemäße Sicherung Ihrer Daten
 -	eine Bestätigung Ihrerseits, dass Sie sich der Möglichkeit eines Datenverlusts im Rahmen des Festplattenaustauschs bewusst sind
 

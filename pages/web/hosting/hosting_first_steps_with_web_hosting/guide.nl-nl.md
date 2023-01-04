@@ -71,7 +71,7 @@ Om de database aan te maken, logt u in op uw [OVHcloud Control Panel](https://ww
 
 ![Toegang tot 1-klik-modules](images/create_a_database.png){/thumbnail}
 
-Wanneer de database is aangemaakt, gaat u voor de installatie van de 1-klik-module naar de tab ‘1-klik-module’{action}, en klikt u op de knop `Module toevoegen`{.action}. Selecteer de CMS die u wenst te installeren, controleer of het vakje Geavanceerde installatie{.action} aangevinkt is en klik vervolgens op de knop `Volgende`{.action}.
+Wanneer de database is aangemaakt, gaat u voor de installatie van de 1-klik-module naar de tab ‘1-klik-module’{.action}, en klikt u op de knop `Module toevoegen`{.action}. Selecteer de CMS die u wenst te installeren, controleer of het vakje Geavanceerde installatie{.action} aangevinkt is en klik vervolgens op de knop `Volgende`{.action}.
 
 ![Toegang tot 1-klik-modules](images/access_to_the_1_click_modules_section.png){/thumbnail}
 

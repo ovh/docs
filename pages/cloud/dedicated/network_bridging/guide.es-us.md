@@ -37,6 +37,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 ## Procedimiento
 
 Los pasos básicos son siempre los mismos, independientemente de los sistemas utilizados:
+
 - creación de una dirección MAC virtual para una dirección IP de migración;
 - Abonar la dirección MAC de la máquina virtual (MV) a esta nueva dirección.
 - configurar la dirección IP, la máscara de red, la pasarela y la ruta hacia la pasarela dentro de la máquina virtual.

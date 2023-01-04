@@ -174,7 +174,7 @@ Wenn Sie einen der migrierten Accounts auf einem E-Mail-Client (wie Outlook) ein
 
 Wenn Sie sich zum ersten Mal in Ihrem neuen E-Mail-Account einloggen, können migrierte Inhalte teilweise verborgen sein. Um alle Elemente anzuzeigen, klicken Sie im Webmail auf den Pfeil neben `Posteingang`, um die Subordner freizugeben. Der migrierte Inhalt Ihres alten E-Mail-Accounts sollte erscheinen.
 
-![exchange](images/owa_migrate_content.png) {.thumbnail}
+![exchange](images/owa_migrate_content.png){.thumbnail}
 
 Standardordner wie "Gesendete Elemente" oder "Papierkorb" erscheinen in englischer Benennung ("Sent items" und "Trash"), im Gegensatz zu von Ihnen selbst erstellten Ordnern.
 

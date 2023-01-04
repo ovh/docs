@@ -8,7 +8,7 @@ space_name: Téléphonie
 section: Administratif
 ---
 
-**Dernière mise à jour le 14/06/2021**
+**Dernière mise à jour le 04/01/2023**
 
 ## Objectif
 
@@ -22,6 +22,10 @@ Lorsque vous changez de téléphone, vous restituez votre ancien matériel. Que 
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
+
+> [!primary]
+>
+> Pour plus d'informations sur l'échange de téléphones fournis par OVHcloud, consultez notre guide « [Gérer le téléphone Plug & Phone d’une ligne SIP](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/) ».
 
 Ce guide décrit 2 exemples de RMA (échange de téléphone et résiliation) afin d'en comprendre le fonctionnement.
 D'autres typologies de RMA existent, leur déroulement étant similaire (envoi d'un e-mail puis rappel et enfin clôture du RMA).

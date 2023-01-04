@@ -187,11 +187,11 @@ Abra la navegación de la barra lateral haciendo clic en su nombre en la esquina
 
 En la lista de claves, haga clic en el icono `Clave` situado junto a la llave SSH de su elección para asignarla como llave por defecto.
 
-![Área de cliente de la llave SSH](images/defaultsshkey.png) {.thumbnail}
+![Área de cliente de la llave SSH](images/defaultsshkey.png){.thumbnail}
 
 Una vez finalizada la operación, se mostrará un mensaje confirmando que la clave ha sido establecida de forma predeterminada. El icono de la `llave` aparece resaltado.
 
-![Área de cliente de la llave SSH](images/defaultsshkey1.png) {.thumbnail}
+![Área de cliente de la llave SSH](images/defaultsshkey1.png){.thumbnail}
 
 ### Desactivar la clave SSH por defecto <a name="disablesshkey"></a>
 

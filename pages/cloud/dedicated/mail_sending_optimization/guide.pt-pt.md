@@ -73,11 +73,11 @@ Depois de fazer isso, adicione o registo PTR (também conhecido como reverse):
 
 Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao separador `Bare Metal Cloud`{.action} e abra `IP`{.action}. 
 
-Se deseja configurar a Reverse DNS num endereço Additional IP, clique no separador `Additional IP` {.action}.
+Se deseja configurar a Reverse DNS num endereço Additional IP, clique no separador `Additional IP`{.action}.
 
 O menu pendente em "**Os meus endereços IP públicos e serviços associados**" permite-lhe filtrar os seus serviços por categoria.
 
-![Reverse IP](images/selectservice2022.png) {.thumbnail}
+![Reverse IP](images/selectservice2022.png){.thumbnail}
 
 Clique no botão `...`{.action} à direita da linha correspondente e, a seguir, em `Modificar a reverse`{.action}:
 

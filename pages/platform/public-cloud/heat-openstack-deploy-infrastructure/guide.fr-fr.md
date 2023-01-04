@@ -57,6 +57,7 @@ Nous vous apportons une première approche de Heat et des *stacks* représentant
 Dans notre langage, voici ce que l'on pourrait transmettre à Heat.
 
 « Mon application est composée de :
+
 - trois serveurs frontaux web de type [B2-15](https://www.ovhcloud.com/fr/public-cloud/prices/){.external} ;
 - deux serveurs de base de données de type [C2-30](https://www.ovhcloud.com/fr/public-cloud/prices/){.external} ;
 - deux disques additionnels raccordés aux serveurs de base de données ;

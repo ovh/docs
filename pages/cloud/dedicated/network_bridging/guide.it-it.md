@@ -39,6 +39,7 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 ## Procedura
 
 Gli step di base sono sempre gli stessi, indipendentemente dai sistemi utilizzati:
+
 - creazione di un indirizzo MAC virtuale per un indirizzo IP di trasferimento
 - regolare l'indirizzo MAC della macchina virtuale (VM) su questo nuovo indirizzo
 - configurare l'indirizzo IP, la maschera di rete, il gateway e la strada verso il gateway all'interno della macchina virtuale.

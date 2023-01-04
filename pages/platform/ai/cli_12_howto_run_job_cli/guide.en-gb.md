@@ -120,6 +120,7 @@ Let us go through those options and outline a few good practices with volume mou
 
 The `--volume` flag is used to attach a container as a volume to the job.
 The volume description sets the option for the volume and synchronisation process `<container@region/prefix:mount_path:permission:cache>`:
+
 - `container` the container in OVHcloud Object Storage to synchronise
 - `region` the Object Storage region on which the container is located
 - `prefix` objects in the container are filtered on the base of this prefix, only matching objects are synced

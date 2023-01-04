@@ -52,7 +52,7 @@ Nötigenfalls können Sie die aktuell von Ihrem Hosting verwendete PHP-Version a
 
 - **Im OVHcloud Kundencenter**: Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Im Tab `Allgemeine Informationen`{.action} finden Sie die Version unter *Globale PHP-Version*. 
 
-![phpversion](images/change-php-version-step1.png) {.thumbnail}
+![phpversion](images/change-php-version-step1.png){.thumbnail}
 
 > [!primary]
 > Wird ein rundes blaues Symbol angezeigt, warten Sie einige Minuten, bis die Version aktualisiert ist.

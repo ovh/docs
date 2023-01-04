@@ -357,15 +357,15 @@ Cliquez sur `Add Image`{.action}.
 
 ![Change Disk Controller 04](images/ChangeVMDiskController04.PNG){.thumbnail}
 
-Sélectionnez **VM Disk** comme `Image Source`. Saisissez un nom dans `Search by VM Name`{action} et cliquez sur `+`{action}.
+Sélectionnez **VM Disk** comme `Image Source`. Saisissez un nom dans `Search by VM Name`{.action} et cliquez sur `+`{.action}.
 
 ![Change Disk Controller 05](images/ChangeVMDiskController05.PNG){.thumbnail}
 
-Saisissez un nom dans le champ `Image Name` et cliquez sur `Next`{action}.
+Saisissez un nom dans le champ `Image Name` et cliquez sur `Next`{.action}.
 
 ![Change Disk Controler 06](images/ChangeVMDiskController06.PNG){.thumbnail}
 
-Sélectionnez `Place image on source VM's cluster`{action} et cliquez sur `Save`{action}.
+Sélectionnez `Place image on source VM's cluster`{.action} et cliquez sur `Save`{.action}.
 
 ![Change Disk Controller 07](images/ChangeVMDiskController07.PNG){.thumbnail}
 
@@ -373,7 +373,7 @@ L'image créée à partir de la machine virtuelle apparaît au bout de quelques 
 
 ![Change Disk Controller 08](images/ChangeVMDiskController08.PNG){.thumbnail}
 
-Ouvrez sur le menu principal et cliquez sur `VMs`{action}.
+Ouvrez sur le menu principal et cliquez sur `VMs`{.action}.
 
 ![Change Disk Controller 09](images/ChangeVMDiskController09.PNG){.thumbnail}
 
@@ -381,19 +381,19 @@ Cochez la case à gauche de la machine virtuelle.
 
 ![Change Disk Controller 10](images/ChangeVMDiskController10.PNG){.thumbnail}
 
-Ouvrez le menu `Actions`{action} et choisissez `Update`{action}.
+Ouvrez le menu `Actions`{.action} et choisissez `Update`{.action}.
 
 ![Change Disk Controller 11](images/ChangeVMDiskController11.PNG){.thumbnail}
 
-Cliquez sur l'icône de `corbeille`{action} à coté du lecteur de CDROM.
+Cliquez sur l'icône de `corbeille`{.action} à coté du lecteur de CDROM.
 
 ![Change Disk Controller 12](images/ChangeVMDiskController12.PNG){.thumbnail}
 
-Cliquez sur l'icône de `corbeille`{action} à coté du lecteur de disque.
+Cliquez sur l'icône de `corbeille`{.action} à coté du lecteur de disque.
 
 ![Change Disk Controller 13](images/ChangeVMDiskController13.PNG){.thumbnail}
 
-Cliquez sur `Attach Disk`{action}.
+Cliquez sur `Attach Disk`{.action}.
 
 ![Change Disk Controller 14](images/ChangeVMDiskController14.PNG){.thumbnail}
 
@@ -402,19 +402,19 @@ Choisissez :
 - **Disk** Dans `Type`;
 - sélectionnez l'option **Clone from image**;
 - saisissez le **nom de l'image créée** dans `Image`; 
-- sélectionnez PCI comme `Bus type`{action} et cliquez sur `Save`{action}
+- sélectionnez PCI comme `Bus type`{.action} et cliquez sur `Save`{.action}
 
 ![Change Disk Controller 15](images/ChangeVMDiskController15.PNG){.thumbnail}
 
-Cliquez sur `Next`{action}.
+Cliquez sur `Next`{.action}.
 
 ![Change Disk Controller 16](images/ChangeVMDiskController16.PNG){.thumbnail}
 
-Cliquez sur `Next`{action}.
+Cliquez sur `Next`{.action}.
 
 ![Change Disk Controller 17](images/ChangeVMDiskController17.PNG){.thumbnail}
 
-Cliquez sur `Save`{action}.
+Cliquez sur `Save`{.action}.
 
 ![Change Disk Controller 18](images/ChangeVMDiskController18.PNG){.thumbnail}
 

@@ -62,6 +62,7 @@ Inserisci le informazioni richieste:
 |Server di posta in uscita|Inserisci il server “pro**?**.mail.ovh.net:587”.|
 
 Assicurati di aver selezionato correttamente le seguenti voci:
+
 - “Il server in uscita richiede l’autenticazione”
 - “Utilizzare lo stesso nome utente e la password per l’invio della posta”
 - ”Richiedere il protocollo SSL per la posta in entrata”

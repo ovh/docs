@@ -95,7 +95,7 @@ Une fois le réseau Wi-Fi modifié, cliquez sur le bouton `Valider`{.action}.
 
 ![configureremotelybox](images/configure-remotely-box-step4.png){.thumbnail}
 
-#### 2.3 Configuration réseau
+#### 2.3 Configuration réseau (IP LAN, DHCP, redirections de ports)
 
 Depuis cette partie, plusieurs possibilités de configuration s'offrent à vous.
 

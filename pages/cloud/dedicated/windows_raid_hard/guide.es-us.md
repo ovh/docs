@@ -240,7 +240,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 Finalmente, vaya al Panel de control de OVHcloud para continuar con la instalación de Windows en su servidor.
 
-Deberá marcar la casilla Personalizar configuración de partición {.action} y cambiar el esquema de partición actual a uno que especifique el disco **C**, con un tamaño máximo de 200 GB.
+Deberá marcar la casilla `Personalizar configuración de partición`{.action} y cambiar el esquema de partición actual a uno que especifique el disco **C**, con un tamaño máximo de 200 GB.
 
 Una vez que el sistema esté instalado, inicie sesión en su sistema Windows y abra la utilidad `Administración de discos`{.action}, y luego particione el segundo disco virtual (correspondiente a nuestro segundo RAID, que se muestra como "no asignado") en el formato GPT .
 

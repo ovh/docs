@@ -287,7 +287,7 @@ iseq ${platform} efi && goto is_efi_x86_64 || goto end
 echo EFI boot mode
 
 # Récuperer le fichier de configuration
-imgfetch --name refind.conf tftp://${[next-server}/refind.conf
+imgfetch --name refind.conf tftp://${next-server}/refind.conf
 
 # Charger le binaire rEFIND
 imgfetch --name refind tftp://${next-server}/refind_x64.efi

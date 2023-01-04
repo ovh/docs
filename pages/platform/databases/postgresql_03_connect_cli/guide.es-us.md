@@ -100,6 +100,7 @@ Once connected, you can manage your PostgreSQL instance with built-in PostgreSQL
 Please follow the official PostgreSQL documentation.
 
 To verify:
+
 - `\h CREATE DATABASE` will display help on a specific command (here for *CREATE DATABASE*);
 - `\l+` will list all the databases;
 - `select * from pg_user;` will display information about existing users.

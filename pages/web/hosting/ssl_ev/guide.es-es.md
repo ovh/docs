@@ -92,7 +92,7 @@ Si todavía no ha contratado su dominio y el alojamiento asociado, acceda a nues
 
 Seleccione el dominio y elija el alojamiento y las opciones hasta que se abra la pestaña `Configure su alojamiento web`.
 
-Seleccione su elección de instalación de `módulo en 1 clic`{.action} y de `CDN` {.action} y descienda al final de la página hasta la sección `Proteja su sitio web con nuestros certificados SSL`{.action}.
+Seleccione su elección de instalación de `módulo en 1 clic`{.action} y de `CDN`{.action} y descienda al final de la página hasta la sección `Proteja su sitio web con nuestros certificados SSL`{.action}.
 
 ![SSL EV order](images/ssl_ev_order.png){.thumbnail}
 
