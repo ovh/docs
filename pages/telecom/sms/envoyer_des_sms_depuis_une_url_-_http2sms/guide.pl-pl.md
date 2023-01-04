@@ -106,6 +106,7 @@ Oto lista kodów zwrotnych API:
 
 
 W razie niepowodzenia przyczyna jest zapisywana:
+
 - w polu wiadomości w przypadku json lub xml;
 - w drugim wierszu w przypadku html i text/plain.
 

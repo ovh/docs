@@ -168,7 +168,7 @@ If you have configured one of the migrated accounts on an email client (such as 
 
 When you first log in to your new email account, the migrated content may be partially hidden. To view all items in the webmail, click on the arrow symbol next to the `Inbox` to reveal the subfolders. The migrated content of your old email account should appear.
 
-![exchange](images/owa_migrate_content.png) {.thumbnail}
+![exchange](images/owa_migrate_content.png){.thumbnail}
 
 After a migration, please check all of the folders and subfolders in your account to ensure that all of the elements are present.
 

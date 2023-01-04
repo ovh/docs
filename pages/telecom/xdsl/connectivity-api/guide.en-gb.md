@@ -26,6 +26,7 @@ OVHcloud offers various internet access packages that contain at least one inter
 You can view offers here: [https://www.ovhtelecom.fr/offre-internet/i](https://www.ovhtelecom.fr/offre-internet/){.external}.
 
 Services can be managed using these API endpoints:
+
 * `/pack/xdsl`: Manage Internet package offerings
 * `/xdsl`: Manage Internet access, sub-services and options
 * `/connectivity`: will replace `/xdsl`. For now it allows to do the eligibility for copper and fiber offers.

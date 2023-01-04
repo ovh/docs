@@ -167,7 +167,7 @@ Si ha configurado alguna de las cuentas migradas en un cliente de correo (p. ej.
 
 Al conectarse por primera vez a su nueva cuenta de correo, el contenido migrado puede ocultarse parcialmente. Para ver todos los elementos, haga clic en la cabecera situada al lado de la `bandeja de entrada` para revelar los subdirectorios. El contenido migrado de su antigua cuenta de correo debe aparecer.
 
-![exchange](images/owa_migrate_content.png) {.thumbnail}
+![exchange](images/owa_migrate_content.png){.thumbnail}
 
 Las carpetas predeterminadas, como "elementos enviados" o "papelera", aparecen en inglés ("Sent items" y "Trash"), a excepción de las carpetas que haya creado.
 

@@ -107,6 +107,7 @@ Here is a list of API return codes.
 
 
 When a failure occurs, the cause is included:
+
 - in the message field for .json or .xml
 - on the second line for .html and text/plain
 

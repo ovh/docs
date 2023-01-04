@@ -31,6 +31,7 @@ OVHcloud propose différentes offres d'accès à Internet par le biais de packag
 Les offres sont visibles ici : [https://www.ovhtelecom.fr/offre-internet/](https://www.ovhtelecom.fr/offre-internet/){.external}.
 
 Les services peuvent être gérés à l'aide de ces points de terminaison d'API :
+
 * `/pack/xdsl` : Gérer les packages d'offres Internet;
 * `/xdsl` : Gérer les accès Internet, les sous-services et les options;
 * `/connectivity` : va remplacer `/xdsl`. Pour l'instant il permet de faire l'éligibilité aux offres cuivre et fibre.

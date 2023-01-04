@@ -54,7 +54,7 @@ Puede activar o activar SGX con una cantidad específica de memoria reservada, p
 
 Se mostrará una ventana de confirmación confirmando que, para activar la tecnología Intel SGX, es necesario reiniciar el servidor.
 
-![activación SGX](images/confirmation-popup_sgx.png) {.thumbnail}
+![activación SGX](images/confirmation-popup_sgx.png){.thumbnail}
 
 > [!warning]
 >

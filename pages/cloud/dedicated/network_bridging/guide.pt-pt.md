@@ -38,6 +38,7 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 ## Instruções
 
 As etapas de base são sempre as mesmas, independentemente dos sistemas utilizados:
+
 - criação de um endereço MAC virtual para um endereço IP de migração;
 - ajustar o endereço MAC da máquina virtual (VM) a este novo endereço;
 - configurar o endereço IP, a máscara de rede, a gateway e a estrada para a gateway no interior da máquina virtual.

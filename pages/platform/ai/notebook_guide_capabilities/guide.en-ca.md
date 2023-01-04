@@ -103,6 +103,7 @@ Each AI Notebooks has the ability to sync data from Public Cloud Object Storage 
 ### Live-code editors
 
 You can choose between two **live-code editors** to launch and edit your notebook:
+
 - VScode
 - Jupyterlab
 

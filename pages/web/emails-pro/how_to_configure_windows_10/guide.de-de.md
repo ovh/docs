@@ -61,6 +61,7 @@ Geben Sie nun folgende Informationen ein:
 |Postausgangsserver|Tragen Sie „pro**?**.mail.ovh.net:587“ ein.|
 
 Überprüfen Sie, dass die folgenden Haken gesetzt sind:
+
 - „Ausgangsserver erfordert Authentifizierung“
 - „Benutzernamen und Kennwort auch zum Senden von E-Mail verwenden“
 - „SSL für eingehende E-Mails erforderlich“

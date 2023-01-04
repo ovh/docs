@@ -39,6 +39,7 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 ## W praktyce
 
 Podstawowe etapy są zawsze takie same, niezależnie od stosowanych systemów:
+
 - utworzenie wirtualnego adresu MAC dla IP migracji;
 - ustawienie adresu MAC wirtualnej maszyny (VM) na tym nowym adresie;
 - skonfigurować adres IP, maskę sieciową, bramę i drogę do bramy wewnątrz maszyny wirtualnej.

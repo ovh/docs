@@ -34,6 +34,7 @@ Une route sert à contrôler le trafic selon différents critères. Il est possi
 Par exemple, *SI* l'URL _commence_ par '/wp-admin/' (1) *ET* que la connexion _est_ en HTTP (2) *ALORS* _rediriger_ vers la version HTTPS de la page (3).
 
 Dans cet exemple, il y a deux règles :
+
 - la connexion doit venir d'un frontend HTTP (2) ;
 - son URL doit commencer par les pages d'administration de WordPress (1).
 

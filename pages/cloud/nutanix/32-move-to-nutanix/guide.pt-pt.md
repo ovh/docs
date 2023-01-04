@@ -362,15 +362,15 @@ Click `Add Image`{.action}.
 
 ![Change Disk Controller 04](images/ChangeVMDiskController04.PNG){.thumbnail}
 
-Select **VM Disk** as the `Image Source`. Type a name in `Search by VM Name`{action} and click `+`{action}.
+Select **VM Disk** as the `Image Source`. Type a name in `Search by VM Name`{.action} and click `+`{.action}.
 
 ![Change Disk Controller 05](images/ChangeVMDiskController05.PNG){.thumbnail}
 
-Type a name in the `Image Name` field and click `Next`{action}.
+Type a name in the `Image Name` field and click `Next`{.action}.
 
 ![Change Disk Controller 06](images/ChangeVMDiskController06.PNG){.thumbnail}
 
-Select `Place image on source VM's cluster`{action} and click `Save`{action}.
+Select `Place image on source VM's cluster`{.action} and click `Save`{.action}.
 
 ![Change Disk Controller 07](images/ChangeVMDiskController07.PNG){.thumbnail}
 
@@ -378,7 +378,7 @@ The image created from the virtual machine appears after a few moments.
 
 ![Change Disk Controller 08](images/ChangeVMDiskController08.PNG){.thumbnail}
 
-Open the main menu and click `VMs`{action}.
+Open the main menu and click `VMs`{.action}.
 
 ![Change Disk Controller 09](images/ChangeVMDiskController09.PNG){.thumbnail}
 
@@ -386,19 +386,19 @@ Check the box to the left of the virtual machine.
 
 ![Change Disk Controller 10](images/ChangeVMDiskController10.PNG){.thumbnail}
 
-Open the `Actions`{action} menu and choose `Update`{action}.
+Open the `Actions`{.action} menu and choose `Update`{.action}.
 
 ![Change Disk Controller 11](images/ChangeVMDiskController11.PNG){.thumbnail}
 
-Click on the `trash can`{action} icon next to the CDROM drive.
+Click on the `trash can`{.action} icon next to the CDROM drive.
 
 ![Change Disk Controller 12](images/ChangeVMDiskController12.PNG){.thumbnail}
 
-Click on the `trash can`{action} icon next to the disk drive.
+Click on the `trash can`{.action} icon next to the disk drive.
 
 ![Change Disk Controller 13](images/ChangeVMDiskController13.PNG){.thumbnail}
 
-Click `Attach Disk`{action}.
+Click `Attach Disk`{.action}.
 
 ![Change Disk Controller 14](images/ChangeVMDiskController14.PNG){.thumbnail}
 
@@ -407,19 +407,19 @@ Select:
 - **Disk** In `Type`;
 - Select **Clone from image**;
 - Enter the **name of the image created** in `Image`; 
-- Select PCI as the `Bus type`{action} and click `Save`{action}
+- Select PCI as the `Bus type`{.action} and click `Save`{.action}
 
 ![Change Disk Controller 15](images/ChangeVMDiskController15.PNG){.thumbnail}
 
-Click `Next`{action}.
+Click `Next`{.action}.
 
 ![Change Disk Controller 16](images/ChangeVMDiskController16.PNG){.thumbnail}
 
-Click `Next`{action}.
+Click `Next`{.action}.
 
 ![Change Disk Controller 17](images/ChangeVMDiskController17.PNG){.thumbnail}
 
-Click `Save`{action}.
+Click `Save`{.action}.
 
 ![Change Disk Controller 18](images/ChangeVMDiskController18.PNG){.thumbnail}
 

@@ -35,6 +35,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 ## En pratique
 
 Les étapes de base sont toujours les mêmes, indépendamment des systèmes utilisés :
+
 * création d'une adresse MAC virtuelle pour une adresse IP de basculement ;
 * régler l'adresse MAC de la machine virtuelle (VM) sur cette nouvelle adresse ;
 * configurer l'adresse IP, le masque réseau, la passerelle et la route vers la passerelle à l'intérieur de la machine virtuelle.

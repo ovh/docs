@@ -119,6 +119,7 @@ Voici la liste des codes de retour de l'API :
 
 
 Lors d'un échec, la cause est inscrite :
+
 - dans le champ message pour le json ou le xml et 
 - sur la deuxième ligne pour le html et le text/plain.
 

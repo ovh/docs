@@ -54,7 +54,7 @@ Pode optar por ativar SGX com uma quantidade específica de memória reservada o
 
 Aparecerá um pop-up de confirmação, confirme que tomou conhecimento que a ativação da tecnologia Intel SGX requer o(s) reboot(s) do seu servidor.
 
-![ativação SGX](images/confirmation-popup_sgx.png) {.thumbnail}
+![ativação SGX](images/confirmation-popup_sgx.png){.thumbnail}
 
 > [!warning]
 >

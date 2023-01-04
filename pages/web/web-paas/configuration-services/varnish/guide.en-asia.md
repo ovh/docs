@@ -171,6 +171,7 @@ You can then access the `varnishstats` relationship over HTTP at the following p
 Note that because of the circular relationship issue noted above this cannot be done on the application that Varnish is forwarding to.  It will need to be run on a separate application container.
 
 To access the Varnish endpoint:
+
 - Connect to your cluster [using ssh](../../development-ssh) or through the CLI `webpaas ssh -p <project id>`,
 
 - Display the [relationships array](../../configuration-app/relationships) with `echo $PLATFORM_RELATIONSHIPS | base64 -d | jq '.'`,

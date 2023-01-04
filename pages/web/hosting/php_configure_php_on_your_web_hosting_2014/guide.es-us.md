@@ -52,7 +52,7 @@ Si lo necesita, puede consultar la versión actual de PHP del alojamiento de dos
 
 - **Desde el área de cliente de OVHcloud** : conéctese al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, localice la versión a continuación de *Versión PHP global*. 
 
-![phpversion](images/change-php-version-step1.png) {.thumbnail}
+![phpversion](images/change-php-version-step1.png){.thumbnail}
 
 > [!primary]
 Si aparece un círculo de color azul, espere unos minutos a que se actualice la versión.

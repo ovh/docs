@@ -5,7 +5,7 @@ excerpt: 'Apprenez à gérer le téléphone Plug & Phone de votre ligne SIP OVHc
 section: 'Lignes téléphoniques'
 ---
 
-**Dernière mise à jour le 21/06/2022**
+**Dernière mise à jour le 04/01/2023**
 
 ## Objectif
 
@@ -21,6 +21,10 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 ![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
+
+> [!primary]
+>
+> Nos téléphones sont fournis en l'échange d'une caution (restituée en fin de contrat). Retrouvez sur [cette page](https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml) l'ensemble des téléphones proposés.
 
 Votre ligne SIP OVHcloud peut être associée à un téléphone Plug & Phone OVHcloud. Cela vous permet ainsi de gérer ce dernier depuis votre espace client. Cette gestion s'effectue par le biais de plusieurs manipulations. Poursuivez la lecture de cette documentation selon celle que vous souhaitez réaliser.
 
@@ -44,7 +48,7 @@ Positionnez-vous ensuite sur l'onglet `Téléphone`{.action}, puis cliquez sur `
 
 Sur la page qui s'affiche, dans la partie « Commander un équipement », sélectionnez dans le menu déroulant le téléphone que vous souhaitez obtenir, puis suivez les étapes qui apparaissent.
 
-Si vous souhaitez rattacher votre ligne SIP à un équipement OVHcloud que vous possédez déjà et qui s'affiche dans l'espace client, suivez les instructions de la section « [Rattacher votre ligne à un téléphone Plug & Phone](#rattacher-telephone » de cette documentation. 
+Si vous souhaitez rattacher votre ligne SIP à un équipement OVHcloud que vous possédez déjà et qui s'affiche dans l'espace client, suivez les instructions de la section « [Rattacher votre ligne à un téléphone Plug & Phone](#rattacher-telephone) » de cette documentation. 
 
 ![plug&phone](images/plug-and-phone-step2.png){.thumbnail}
 
@@ -72,6 +76,11 @@ Sur la page qui s'affiche, dans la partie « Commander un équipement », sél
 |Changer pour le ...|Permet de changer le téléphone actuellement rattaché à votre ligne SIP pour un autre équipement. Assurez-vous de prendre connaissance de la procédure qui apparaît dans la partie « Informations ».| 
 
 ![plug&phone](images/plug-and-phone-step4.png){.thumbnail}
+
+> [!primary]
+>
+> Retrouvez plus d'informations sur le déroulement d'un renvoi ou d'un échange d'un téléphone sur notre guide « [Déroulement d’un RMA](https://docs.ovh.com/fr/voip/deroulement-d-un-rma/) ».
+> 
 
 ### Rattacher votre ligne à un téléphone Plug & Phone <a name="rattacher-telephone"></a>
 
@@ -103,5 +112,7 @@ Sur la page qui s'affiche, dans la partie « Détacher la ligne d'un Plug & Pho
 ![plug&phone](images/plug-and-phone-step6.png){.thumbnail}
 
 ## Aller plus loin
+
+[Déroulement d’un RMA](https://docs.ovh.com/fr/voip/deroulement-d-un-rma/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
