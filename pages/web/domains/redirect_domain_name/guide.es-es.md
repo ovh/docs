@@ -99,7 +99,7 @@ Esta opción permite, una vez introducido el dominio redirigido, mostrar el domi
 >>
 > **Etapa 2**
 >>
->> Seleccione "Hacia una dirección Web {.action}".
+>> Seleccione `Hacia una dirección Web`{.action}.
 >>
 >> ![Etapa 2](images/Step2.png){.thumbnail}
 >>

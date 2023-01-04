@@ -52,7 +52,7 @@ Se necessário, pode conhecer a versão de PHP atualmente utilizada pelo seu alo
 
 - **através da Área de Cliente OVHcloud**: aceda a [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à parte `Web Cloud`{.action}, clique nos `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Informações gerais`{.action}, localize a versão abaixo da *Versão global PHP*. 
 
-![phpversion](images/change-php-version-step1.png) {.thumbnail}
+![phpversion](images/change-php-version-step1.png){.thumbnail}
 
 > [!primary]
 > Se estiver presente um símbolo redondo azul, aguarde alguns minutos para que a versão seja atualizada.

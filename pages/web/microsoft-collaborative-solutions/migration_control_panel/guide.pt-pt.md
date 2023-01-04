@@ -172,7 +172,7 @@ Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), de
 
 Quando se liga pela primeira vez à sua nova conta de e-mail, o conteúdo migrado pode estar parcialmente oculto. Para apresentar todos os elementos, a partir do webmail, clique no master junto da "Caixa de Receção" para revelar os subpasta. O conteúdo migrado da sua antiga conta de e-mail deverá aparecer.
 
-![exchange](images/owa_migrate_content.png) {.thumbnail}
+![exchange](images/owa_migrate_content.png){.thumbnail}
 
 As pastas predefinidas, como "elementos enviados" ou "lixeira", aparecem em inglês ("Sent items" e "Trash"), à exceção das pastas que criou.
 

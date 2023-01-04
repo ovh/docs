@@ -104,7 +104,7 @@ Es posible aumentar la capacidad de almacenamiento de su cuenta de correo si est
 >> La capacidad de una cuenta MXplan puede ir de 2,5 MB a 5 GB. Si está saturado y tiene una capacidad inferior a 5 GB, puede modificar su capacidad desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).<br>
 >> En la pestaña `Cuentas de correo`{.action}, haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i>situado al final de la línea correspondiente a la cuenta que quiera modificar y seleccione `Editar`{.action}.
 >> En la casilla `Cuota`{.action}, seleccione el tamaño que más le convenga, haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}.<br><br>
->> ![email](images/email-quota-more01.png) {.thumbnail}<br>
+>> ![email](images/email-quota-more01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
