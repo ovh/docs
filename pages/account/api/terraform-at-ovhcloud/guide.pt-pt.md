@@ -1,5 +1,5 @@
 ---
-title: Using Terraform with OVHcloud
+title: Using Terraform with OVHcloud (EN)
 excerpt: Find out about useful resources in order to use Terraform with OVHcloud
 slug: terraform-at-ovhcloud
 section: Terraform
@@ -94,7 +94,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | --- | --- | --- |
 |Managed Kubernetes Service - Cluster operations|ovh|[ovh_cloud_project_kube](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_kube)
 |Managed Kubernetes Service - Application deployment operations|Hashicorp Kubernetes|[kubernetes_namespace](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace) [kubernetes_deployment](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment)|
-|Kubernetes Load Balancer|Hashicorp kubernetes|[kubernetes_service](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service) as described in this [tutorial](https://docs.ovh.com/pt/kubernetes/using-lb/)|
+|Kubernetes Load Balancer|Hashicorp kubernetes|[kubernetes_service](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service) as described in this [tutorial](https://docs.ovh.com/ie/en/kubernetes/using-lb/)|
 |Managed Private Registry|ovh|[ovh_cloud_project_containerregistry](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry)<br/>[ovh_cloud_project_containerregistry_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry_user)|
 |Workflow Management|ovh|not available (see this [feature request](https://github.com/ovh/terraform-provider-ovh/issues/330) on ovh provider project)|
 
@@ -164,9 +164,9 @@ This universe is currently not supported by Terraform providers
 ### Terraform with OVHcloud examples
 
 - [Public Cloud examples repository on GitHub](https://github.com/ovh/public-cloud-examples)
-- [Creating a kubernetes cluster on Terraform](https://docs.ovh.com/pt/kubernetes/creating-a-cluster-through-terraform/)
-- [Creating a private registry (Harbor) through Terraform](https://docs.ovh.com/pt/private-registry/creating-a-private-registry-through-terraform/)
-- [Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state](https://docs.ovh.com/pt/public-cloud/use_high_perf_object_storage_terraform_backend_state/)
+- [Creating a kubernetes cluster on Terraform](https://docs.ovh.com/ie/en/kubernetes/creating-a-cluster-through-terraform/)
+- [Creating a private registry (Harbor) through Terraform](https://docs.ovh.com/ie/en/private-registry/creating-a-private-registry-through-terraform/)
+- [Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state](https://docs.ovh.com/ie/en/public-cloud/use_high_perf_object_storage_terraform_backend_state/)
 
 ### OVH Provider
 
