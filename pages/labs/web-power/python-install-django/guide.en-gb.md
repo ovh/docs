@@ -65,33 +65,33 @@ To use [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html) framewor
 
 
 ```sh
-cd www
-virtualenv venv
-source venv/bin/activate
+~$ cd www
+~/www$ virtualenv venv
+~/www$ source venv/bin/activate
 ```
 
 Update `pip`:
 
 ```sh
-pip install --upgrade pip
+~/www$ pip install --upgrade pip
 ```
 
 Install Django:
 
 ```sh
-pip install django
+~/www$ pip install django
 ```
 
 Create the new Django project:
 
 ```sh
-django-admin startproject config
+~/www$ django-admin startproject config
 ```
 
 By default, Django's wsgi application is located in `config/wsgi.py`. As our configured hosting entrypoint is `app.py`, we can create the following symlink:
 
 ```sh
-ln -s config/wsgi.py app.py
+~/www$ ln -s config/wsgi.py app.py
 ```
 
 As Django is installed inside a `virtualenv`, we should tell the app to use it. We can do so by adding these 2 lines in `app.py` before Django import:
