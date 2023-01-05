@@ -6,11 +6,11 @@ section: Tutoriel
 order: 
 ---
 
-**Dernière mise à jour le 15/12/2022**
+**Dernière mise à jour le 05/01/2023**
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous permettre de créer vos premiers contenus avec le CMS WordPress, les organiser, les mettre en ligne et changer le thème de votre site. Vous pourrez ainsi réaliser votre site web avec un large choix de thématiques&nbsp;": site de votre entreprise, blog, faire connaître votre activité ou vos passions, sans avoir de connaissances en programmation.
+Ce tutoriel a pour objectif de vous permettre de créer vos premiers contenus avec le CMS WordPress, les organiser, les mettre en ligne et changer le thème de votre site. Vous pourrez ainsi réaliser votre site web avec un large choix de thématiques&nbsp;: site de votre entreprise, blog, faire connaître votre activité ou vos passions, sans avoir de connaissances en programmation.
 
 ## Prérequis
 
@@ -32,13 +32,13 @@ Lors de l'installation de votre CMS en 1-clic, vous avez reçu un mail contenant
 
 ### Se connecter à l'interface d'administration
 
-Rendez-vous sur le lien qui vous a été communiqué par mail lors de l'installation. Par défaut, l'URL pour accéder à l'interface se termine par `wp-admin`&nbsp;:
+Rendez-vous sur le lien qui vous a été communiqué par mail lors de l'installation. Par défaut, l'URL pour accéder à l'interface se termine par `wp-admin`. Si vous ne vous êtes pas authentifié sur votre interface d'administration, WordPress vous redirigera automatiquement sur votre URL se terminant par `wp-login`&nbsp;:
 
 ![WordPress - Admin login](images/wordpress_first_steps%5B1%5D.png){.thumbnail}
 
 > [!warning]
 > 
-> Sur cette page d'accueil, vous avez la possibilité de changer la langue par défaut de l'interface de WordPress dans le menu déroulant situé en base de page et en validant en cliquant sur «&nbsp;Change&nbsp;».
+> Sur cette page d'accueil, vous avez la possibilité de changer la langue par défaut de l'interface de WordPress dans le menu déroulant situé en base de page et en validant en cliquant sur «&nbsp;Change&nbsp;». Vous avez bien sûr la possibilité de changer la langue ultérieurement.
 
 Saisissez le login (ou «&nbsp;Nom de l'administrateur&nbsp;») qui vous a été fourni par mail et le mot de passe dans le lien «&nbsp;Mot de passe WordPress&nbsp;» dans le même document. Vous arrivez alors sur votre tableau de bord&nbsp;:
 
@@ -66,7 +66,7 @@ Pour créer un article, allez sur le menu à gauche dans «&nbsp;Articles&nbsp;�
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps%5B5%5D.png){.thumbnail}
 
-Depuis la version 5, WordPress propose une interface pour simplifier la rédaction et la mise en forme des articles&nbsp;. Gutenberg est un éditeur WYSIWYG (« what you see is what you get ») et vous permet de composer directement votre page en ajoutant des éléments tels que des titres, paragraphes, listes, images, etc.&nbsp;:
+Depuis la version 5, WordPress propose une interface pour simplifier la rédaction et la mise en forme des articles&nbsp;: Gutenberg est un éditeur WYSIWYG (« what you see is what you get ») et vous permet de composer directement votre page en ajoutant des éléments tels que des titres, paragraphes, listes, images, etc.&nbsp;:
 
 ![WordPress - Gutenberg](images/wordpress_first_steps%5B6%5D.png){.thumbnail}
 
@@ -99,7 +99,7 @@ WordPress vous permet de définir des catégories et d'associer vos articles ave
 Renseignez maintenant le formulaire pour ajouter une nouvelle catégorie&nbsp;:
 
 - Nom de votre catégorie tel qu'elle apparaîtra sur votre site
-- Slug, c'est le nom qui apparaîtra dans l'URL
+- Slug, c'est le nom qui apparaîtra dans l'URL (cet élément peut être intéressant pour améliorer votre référencement)
 - Catégorie parente vous permet de hiérarchiser vos catégories (la catégorie que vous créez peut être une sous-catégorie d'une catégorie existante)
 - Description, non apparente par défaut, la description de votre catégorie peut toutefois être rendue visible par certains thèmes.
 
@@ -119,7 +119,7 @@ Pour affecter un article à une ou plusieurs catégories, cliquez sur «&nbsp;Ar
 
 ![WordPress - Categorize a post](images/wordpress_first_steps%5B15%5D.png){.thumbnail}
 
-Vous pouvez alors modifier les catégories en cochant ou décochant les éléments listés dans la colonne «&nbsp;Categories&nbsp;»&nbsp;:
+Vous pouvez alors modifier les catégories en cochant ou décochant les éléments listés dans la colonne «&nbsp;Catégories&nbsp;»&nbsp;:
 
 ![WordPress - Set new categories to an existing post](images/wordpress_first_steps%5B16%5D.png){.thumbnail}
 
