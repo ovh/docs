@@ -6,7 +6,7 @@ section: Tutoriel
 order: 
 ---
 
-**Dernière mise à jour le 19/12/2022**
+**Dernière mise à jour le 05/01/2023**
 
 ## Objectif
 
@@ -43,7 +43,7 @@ Cliquez maintenant sur «&nbsp;Activer&nbsp;»&nbsp;:
 
 ### Configuration - Méthode 1 (utilisation de l'assistant de configuration)
 
-Si vous n'avez pas encore paramétré votre extension WooCommerce, un assistant de configuration vous aidera à renseigner les informations relatives à votre site de vente en ligne puis cliquez sur «&nbsp;Continuer&nbsp;»&nbsp;:
+Si vous n'avez pas encore paramétré votre extension WooCommerce, un assistant de configuration vous aidera à renseigner les informations relatives à votre site de vente en ligne. Renseignez le formulaire puis puis cliquez sur «&nbsp;Continuer&nbsp;»&nbsp;:
 
 ![Setup Wizard - Store Details](images/wordpress-woocommerce-first-steps%5B5%5D.png){.thumbnail}
 
@@ -67,7 +67,7 @@ Enfin, vous êtes invité à choisir un thème&nbsp;:
 
 ![Setup Wizard - Choose a theme](images/wordpress-woocommerce-first-steps%5B10%5D.png){.thumbnail}
 
-Vous serez ensuite invité à créer un compte pour l'utilisation de l'extension **Jetpack**, extension installée automatiquement par WooCommerce. Cette opération n'est pas nécessaire, vous aurez accès aux fonctions limitées de Jetpack sans avoir à vous authentifier.
+WooCommerce vous sollicitera pour créer un compte pour l'utilisation de l'extension **Jetpack**, extension installée automatiquement en plus de l'extension WooCommerce. Cette opération n'est pas nécessaire, vous aurez accès aux fonctions limitées de Jetpack sans avoir à vous authentifier.
 
 Votre boutique en ligne est alors configurée avec les paramètres généraux.
 
@@ -141,7 +141,7 @@ Pour géolocaliser vos clients en fonction de leur adresse IP, vous pouvez, dans
 - «&nbsp;Webhook&nbsp;», où vous pouvez gérer vos fonctions de rappel HTTP&nbsp;;
 - «&nbsp;Ancienne API&nbsp;», où il est possible de réactiver l'ancienne API de WooCommerce (désactivée par défaut)&nbsp;;
 - «&nbsp;WooCommerce.com&nbsp;» sert à activer ou désactiver le tracking de l'activité de votre site de vente en ligne par WebCommerce, et d'avoir des suggestions pour des extensions dédiées (la majorité sont payantes)&nbsp;;
-- «&nbsp;FonctionnalitésP&nbsp;», page regroupant les fonctionnalités en test sur WooCommerce ou récemment ajoutées.
+- «&nbsp;Fonctionnalités&nbsp;», page regroupant les fonctionnalités en test sur WooCommerce ou récemment ajoutées.
 
 ## Aller plus loin
 
