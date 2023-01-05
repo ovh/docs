@@ -8,7 +8,7 @@ section: Network management
 order: 3
 ---
 
-**Last updated 14th November 2021**
+**Last updated 5th January 2023**
 
 ## Objective
 
@@ -28,15 +28,17 @@ Configuring the reverse DNS resolution for a VPS is especially useful when sendi
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), switch to the `Bare Metal Cloud`{.action} section and open `IP`{.action}.
 
-In the table on this page, your eligible services will be listed. You can filter for your VPS using the drop-down menu under **Services**.
+The drop-down menu underneath **"My public IP addresses and associated services"** allows you to filter your services according to category.
 
-![Reverse DNS](images/reversecp01.png){.thumbnail}
+![Reverse IP](images/selectservice2022.png){.thumbnail}
 
 Click on `...`{.action} in the row of the IP address concerned and select `Modify the reverse path`{.action}.
 
-![Reverse DNS](images/reversecp02.png){.thumbnail}
+![Reverse DNS](images/reversecp01.png){.thumbnail}
 
 In the new window, enter your reverse path and click on `Confirm`{.action}.
+
+![Reverse DNS](images/reversecp02.png){.thumbnail}
 
 You can also edit the reverse path directly via the icon in the **Reverse DNS** column of the table.
 

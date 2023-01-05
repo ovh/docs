@@ -6,7 +6,7 @@ section: So You Start & Kimsufi customers
 order: 1
 ---
 
-**Last updated 13th December 2022**
+**Last updated 5th January 2023**
 
 ## Objective
 
@@ -76,7 +76,7 @@ For more information on managing your dedicated server via the OVHcloud Control 
 
 To access the IP section of the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then open `IP`{.action}.
 
-![ip section](images/manageIPOVHcloud.png){.thumbnail}
+![ip section](images/manageIP2023.png){.thumbnail}
 
 ### Licences tab (not offered on Kimsufi)
 
