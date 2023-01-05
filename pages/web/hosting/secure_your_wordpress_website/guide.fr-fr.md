@@ -6,7 +6,7 @@ section:
 order: 
 ---
 
-**Dernière mise à jour le 08/12/2022**
+**Dernière mise à jour le 05/01/2023**
 
 # Sécurité WordPress
 
@@ -34,17 +34,17 @@ Même si les mises à jour de vos thèmes et extensions sont configurées pour �
 
 Pour activer la mise à jour automatique d’un thème, c’est très simple. Depuis le tableau de bord, allez sur «&nbsp;Apparence&nbsp;» > «&nbsp;Thèmes&nbsp;» puis cliquez sur le thème choisi puis «&nbsp;Activer les mises à jour auto&nbsp;».
 
-![Activer les mises à jour automatique des thèmes](images/Activation%20de%20la%20mise%20%C3%A0%20jour%20automatique%20des%20th%C3%A8mes.png)
+![Activer les mises à jour automatique des thèmes](images/Activation%20de%20la%20mise%20%C3%A0%20jour%20automatique%20des%20th%C3%A8mes.png){.thumbnail}
 
 ### Comment activer la mise à jour automatique de vos extensions WordPress ?
 
-![Activer les mises à jour automatique des extensions](images/Activation%20de%20la%20mise%20%C3%A0%20jour%20automatique%20des%20extensions.png)
+![Activer les mises à jour automatique des extensions](images/Activation%20de%20la%20mise%20%C3%A0%20jour%20automatique%20des%20extensions.png){.thumbnail}
 
 ### Pourquoi mettre à jour la version PHP de votre hébergement ?
 
 Il est également important d’utiliser la dernière version de PHP disponible (à condition que vos thèmes et extensions installées la supportent). Là aussi, de nombreux correctifs de performances et de sécurité sont fournis à chaque mise à jour. Vous pouvez vérifier les versions encore supportées de PHP ici&nbsp;: [https://www.php.net/supported-versions.php](https://www.php.net/supported-versions.php).
 
-![Roadmap langage PHP](images/Versions%20support%C3%A9es%20de%20PHP.png)
+![Roadmap langage PHP](images/Versions%20support%C3%A9es%20de%20PHP.png){.thumbnail}
 
 A l'heure de la rédaction ces lignes, il vous est recommandé de configurer votre hébergement OVHcloud en&nbsp;:
 - Environnement d’exécution&nbsp;: Stable 64
@@ -60,7 +60,7 @@ Si votre WordPress a été installé et configuré sur une version de PHP qui n�
 
 Voici à quoi cela ressemble sur l’espace client&nbsp;:
 
-![Roadmap langage PHP](images/Configuration%20h%C3%A9bergement.png)
+![Roadmap langage PHP](images/Configuration%20h%C3%A9bergement.png){.thumbnail}
 
 _Point important&nbsp;: il est crucial à cette étape que votre WordPress, ses thèmes et ses extensions soient bien tous à jour avant de procéder à cette modification !_
 
@@ -80,15 +80,15 @@ Point important&nbsp;: Elle nécessitera au préalable d’avoir installé un ce
 
 Depuis votre tableau de bord WordPress, cliquez sur «&nbsp;Extensions&nbsp;» puis «&nbsp;ajouter&nbsp;». Tapez Really Simple SSL en recherche, puis «&nbsp;Installer maintenant&nbsp;». Patientez quelques secondes, puis cliquez sur «&nbsp;Activer&nbsp;».
 
-![Installer l'extension Really Simple SSL](images/Installation%20de%20Really%20Simple%20SSL.png)
+![Installer l'extension Really Simple SSL](images/Installation%20de%20Really%20Simple%20SSL.png){.thumbnail}
 
 Il ne reste plus qu’à activer le SSL ! Rien de plus simple, il suffit de cliquer sur le bouton qui apparaît&nbsp;:
 
-![Activer SSL](images/Activation%20de%20l'extension%20Really%20Simple%20SSL.png)
+![Activer SSL](images/Activation%20de%20l'extension%20Really%20Simple%20SSL.png){.thumbnail}
 
 Le SSL est désormais actif par défaut sur votre site internet. Il ne reste plus qu’à faire quelques réglages comme activer la redirection 301 via _.htaccess_&nbsp;:
 
-![Activer la redirection 301 via .htaccess](images/Activation%20de%20la%20redirection%20301.png)
+![Activer la redirection 301 via .htaccess](images/Activation%20de%20la%20redirection%20301.png){.thumbnail}
 
 On va ensuite installer les en-têtes de sécurité recommandées pour notre connexion HTTPS, en modifiant le .htaccess via Filezilla.
 
@@ -98,7 +98,7 @@ Sachez qu’il est également possible de le faire depuis FTP Explorer&nbsp;: [h
 
 Une fois connecté, un simple clic droit sur le fichier _.htaccess_ puis «&nbsp;afficher / éditer&nbsp;»&nbsp;:
 
-![Ouvrir un fichier distant depuis FileZilla](images/%C3%89dition%20d'un%20fichier%20distant%20en%20FTP%20avec%20FileZilla.png)
+![Ouvrir un fichier distant depuis FileZilla](images/%C3%89dition%20d'un%20fichier%20distant%20en%20FTP%20avec%20FileZilla.png){.thumbnail}
 
 Une fois ouvert dans un éditeur de texte, il suffit de copier/coller les lignes de texte suivantes à la fin&nbsp;:
 
@@ -117,7 +117,7 @@ Header always set Permissions-Policy "geolocation=(); midi=();notifications=();p
 
 Ce qui nous donne à la fin de cette opération le résultat suivant dans le fichier _.htaccess_ situé à la de le dossier racine de votre site web&nbsp;:
 
-![Copie d'écran du fichier .htaccess modifié](images/Fichier%20.htaccess%20modifi%C3%A9.png)
+![Copie d'écran du fichier .htaccess modifié](images/Fichier%20.htaccess%20modifi%C3%A9.png){.thumbnail}
 
 _Point important&nbsp;: Une fois ces lignes copiées, pensez bien depuis votre éditeur de texte à cliquer sur «&nbsp;Fichier&nbsp;» puis «&nbsp;Enregistrer&nbsp;», et, en fermant votre éditeur de texte, à retourner sur Filezilla pour valider le popup vous demandant de renvoyer le fichier sur le serveur. Sans cela, vos modifications ne seront pas prises en compte._
 
@@ -141,72 +141,72 @@ Se connecter sur l’interface dédiée avec le compte administrateur
 
 Cliquer sur le plugin «&nbsp;miniOrange 2-Factor&nbsp;»
 
-![Accéder à l'extension miniOrange 2-Factor](images/Acc%C3%A8s%20%C3%A0%20l'extension%20miniOrange%202-Factor%20dans%20le%20Dashboard.png)
+![Accéder à l'extension miniOrange 2-Factor](images/Acc%C3%A8s%20%C3%A0%20l'extension%20miniOrange%202-Factor%20dans%20le%20Dashboard.png){.thumbnail}
 
 Cliquer sur «&nbsp;Configure&nbsp;» sous la méthode d’authentification «&nbsp;Google Authenticator&nbsp;»
 
-![Configurer Google Authenticator](images/Acc%C3%A8s%20%C3%A0%20la%20configuration%20de%20Google%20Authenticator.png)
+![Configurer Google Authenticator](images/Acc%C3%A8s%20%C3%A0%20la%20configuration%20de%20Google%20Authenticator.png){.thumbnail}
 
 Sur la première étape du processus de configuration, sélectionner l’application que vous utiliserez sur votre smartphone pour générer la série de chiffres. Une fois la méthode sélectionnée, scannez le QR Code avec votre smartphone via l’application Google Authenticator
 
-![Générer le QRCode pour le scanner avec l'application installée sur son smartphone](images/G%C3%A9n%C3%A9ration%20d'un%20QR%20Code.png)
+![Générer le QRCode pour le scanner avec l'application installée sur son smartphone](images/G%C3%A9n%C3%A9ration%20d'un%20QR%20Code.png){.thumbnail}
 
 Attribuer un nom puis passer à l’étape 2 de la vérification en saisissant le code généré sur votre application mobile
 
 Si l’opération est un succès, une fenêtre vous confirmera que l’accès à votre compte est bien effectif en 2FA
 
-![Fenêtre de confirmation de la configuration du second facteur d'authentification](images/Confirmation%20de%20la%20mise%20en%20place%20du%20second%20facteur%20d'authentification.png)
+![Fenêtre de confirmation de la configuration du second facteur d'authentification](images/Confirmation%20de%20la%20mise%20en%20place%20du%20second%20facteur%20d'authentification.png){.thumbnail}
 
 ### Comment mesurer la santé du site de votre site web ?
 
 Pourquoi avons-nous fait tout cela ? Tout simplement pour mieux sécuriser votre connexion HTTPS, et surtout, pour le plaisir de voir la santé de notre site en pleine forme !
 
-![Santé du site](images/V%C3%A9rification%20de%20la%20sant%C3%A9%20du%20site.png)
+![Santé du site](images/V%C3%A9rification%20de%20la%20sant%C3%A9%20du%20site.png){.thumbnail}
 
 Cette section n’est pas une extension, elle fait partie intégrante d’un WordPress par défaut. Elle peut vous alerter d’un problème de performances ou de sécurité sur votre site internet.
 
 Vous pouvez par ailleurs tester vos en-têtes de sécurité ici&nbsp;: [https://securityheaders.com/](https://securityheaders.com/).
 
-![Résultat scan sécurité sur le site https://securityheaders.com/](images/Scan%20de%20s%C3%A9curit%C3%A9%20du%20site.png) 
+![Résultat scan sécurité sur le site https://securityheaders.com/](images/Scan%20de%20s%C3%A9curit%C3%A9%20du%20site.png){.thumbnail}
 
 ### Comment configurer WordFence pour votre WordPress ?
 
 Wordfence comprend un pare-feu et un scanner de logiciels malveillants qui ont été conçus dès le départ pour protéger WordPress.
 
-![Installer l'extension Wordfence](images/Installation%20de%20l'extension%20Wordfence%20Security.png)
+![Installer l'extension Wordfence](images/Installation%20de%20l'extension%20Wordfence%20Security.png){.thumbnail}
 
 Lorsque que vous cliquez sur «&nbsp;Activate&nbsp;», vous serez invité à enregistrer votre extension. Si vous n'avez pas de compte Wordfence, cliquez sur «&nbsp;Get Your Wordfence Licence&nbsp;», vous serez redirigé vers le site de l'éditeur de l'extension pour créer votre compte&nbsp;:
 
-![Page d'accueil Wordfence - Obtenir sa licence ou installer avec celle existance](images/Obtenir%20votre%20licence%20Wordfence.png)
+![Page d'accueil Wordfence - Obtenir sa licence ou installer avec celle existance](images/Obtenir%20votre%20licence%20Wordfence.png){.thumbnail}
 
 Sur le site de l'éditeur, sélectionnez la version « Free ». Cliquez sur « Get a Free Licence ». Une fenêtre modale s'ouvrira, cliquez sur « I'm OK waiting 30 days for protection from new threats » :
 
-![Wordfence - Souscription offre gratuite](images/Souscription%20offre%20gratuite.png)
+![Wordfence - Souscription offre gratuite](images/Souscription%20offre%20gratuite.png){.thumbnail}
 
 Une nouvelle fenêtre modale apparaît avec l'URL de votre site WordPress. Renseignez votre adresse mail et cochez la case relative à l'acceptation des conditions générales d'utilisation&nbsp;:
 
-![Wordfence - Confirmation URL](images/Confirmation%20URL.png)
+![Wordfence - Confirmation URL](images/Confirmation%20URL.png){.thumbnail}
 
 Un message vous indique alors que qu'un mail vous a été envoyé&nbsp;:
 
-![Wordfence - Confirmation envoi clé](images/Confirmation%20envoi%20cl%C3%A9.png)
+![Wordfence - Confirmation envoi clé](images/Confirmation%20envoi%20cl%C3%A9.png){.thumbnail}
 
 Ouvrez-le et cliquez sur le lien qui s'y trouve pour finaliser la création de votre compte (le lien vous envoie directement sur l'interface d'administration de WordPress). Vous pourrez alors valider la clé de licence inscrite dans les formulaires&nbsp;:
 
-![Wordfence - Licence](images/Licence.png)
+![Wordfence - Licence](images/Licence.png){.thumbnail}
 
 Cette opération peut également être faite manuellement en copiant la clé qui se trouve dans le mail d'inscription.
 
 Le firewall, aussi appelé WAF (Web Application Firewall) entre en mode apprentissage. Cela ne va durer que quelques dizaines de minutes tout au plus.
 Entre temps, cliquez sur « Click here to configure »&nbsp;:
 
-![Configurer l'extension](images/Configuration%20de%20l'extension%20Wordfence.png)
+![Configurer l'extension](images/Configuration%20de%20l'extension%20Wordfence.png){.thumbnail}
 
-![Récupérer le fichier .htaccess](images/T%C3%A9l%C3%A9charger%20le%20fichier%20.htaccess.png)
+![Récupérer le fichier .htaccess](images/T%C3%A9l%C3%A9charger%20le%20fichier%20.htaccess.png){.thumbnail}
 
 On télécharge la sauvegarde de notre fichier .htaccess sur notre ordinateur, puis on clique sur «&nbsp;continue&nbsp;».
 
-![Confirmation d'installation](images/Confirmation%20d'installation%20du%20firewall.png)
+![Confirmation d'installation](images/Confirmation%20d'installation%20du%20firewall.png){.thumbnail}
 
 Maintenant nous allons optimiser les réglages pour la protection contre les attaques de type _brute force_.
 
@@ -218,7 +218,7 @@ Voici les réglages que à privilégier&nbsp;:
 - **Amount of time a user is locked out** (combien de temps l’internaute est-il banni)&nbsp;: 2 mois
 - **Immediately lock out invalid usernames** (bloquez immédiatement les internautes se connectant avec un nom d’utilisateur WordPress qui n’existe pas
 
-![Réglages](images/R%C3%A9glages%20principaux%20de%20WordFence.png)
+![Réglages](images/R%C3%A9glages%20principaux%20de%20WordFence.png){.thumbnail}
 
 Sachez que si par mégarde vous vous auto-bannissiez lors de la connexion à votre tableau de bord, un e-mail est envoyé à l’adresse que vous avez renseignée dans WordFence qui vous permettra de vous dé-bannir et donc pouvoir retenter une connexion.
 
