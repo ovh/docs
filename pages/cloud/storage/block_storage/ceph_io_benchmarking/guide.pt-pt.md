@@ -5,8 +5,8 @@ excerpt: 'Como avaliar os desempenhos da solução Cloud Disk Array'
 section: 'Cloud Disk Array'
 ---
 
-**Última atualização: 09/08/2019
-**
+**Última atualização: 09/08/2019**
+
 ## Requisitos
 Antes de começar os testes de avaliação de um serviço, deve estar familiarizado com o seu ambiente. Preste atenção aos pequenos detalhes, pois podem invalidar o benchmark. Por exemplo, não faz sentido testar os desempenhos do seu Cloud Disk Array de um datacenter diferente, pois, a latência entre datacenters é demasiado elevada para realizar essa avaliação.
 
@@ -114,3 +114,9 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 
 ## Medir o desempenho do Cloud Disk Array
 Para medir o desempenho do Cloud Disk Array, realizamos testes em 32 imagens (cada uma com um tamanho de 32 GB), durante várias horas. A utilização de conjuntos de big data durante os testes permite garantir que o desempenho se mantém a um determinado nível.
+
+## Quer saber mais?
+
+Visite nosso canal Discord dedicado: <https://discord.gg/ovhcloud>. Faça perguntas, forneça feedback e interaja diretamente com a equipe que desenvolve nossos serviços de armazenamento e backup.
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/>.

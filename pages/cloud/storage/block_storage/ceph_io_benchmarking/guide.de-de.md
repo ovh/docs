@@ -113,3 +113,10 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 ## Weiterführende Informationen
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+
+
+## Weiterführende Informationen
+
+Besuchen Sie unseren speziellen Discord-Kanal: <https://discord.gg/ovhcloud>. Stellen Sie Fragen, geben Sie Feedback und interagieren Sie direkt mit dem Team, das unsere Speicher- und Sicherungsdienste entwickelt.
+
+Treten Sie unserer Benutzergemeinschaft auf <https://community.ovh.com/> bei.

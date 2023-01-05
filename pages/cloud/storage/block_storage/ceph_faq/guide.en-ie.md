@@ -5,6 +5,8 @@ excerpt: 'Frequently asked questions'
 section: Cloud Disk Array
 ---
 
+**Last update 5th November 2020**
+
 
 ## What is Cloud Disk Array?
 Cloud Disk Array (CDA) is a private, dedicated (on disk level) storage system powered by Ceph. During development and testing it was known as Ceph-as-a-Service. CDA gives you storage space that can be utilized in a number of ways:
@@ -63,3 +65,9 @@ Whichever protocol you use to store your data in Ceph, it is stored internally a
 In case of 1 replica failure, there is no disruption for client (except for slight performance degradation because of recovery).
 
 In case of 2 replica failures, client access is blocked to the degraded objects until they are replicated at least 2 times. This is done in order to prevent data loss.
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

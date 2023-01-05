@@ -5,6 +5,8 @@ excerpt: This guide shows you how to change Ceph user rights using the web inter
 section: Cloud Disk Array
 ---
 
+**Last update 21st September 2020**
+
 
 ## Using web interface
 Using web interface is the easiest way to change user rights.
@@ -32,12 +34,12 @@ As usual cluster status and task list changes.
 > [!api]
 >
 > @api {PUT} /dedicated/ceph/{serviceName}/pool
-> 
+>
 
 > [!api]
 >
 > @api {GET} /dedicated/ceph/{serviceName}/user
-> 
+>
 Result example:
 
 
@@ -54,3 +56,9 @@ GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/user
   }
 ]
 ```
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

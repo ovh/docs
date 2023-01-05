@@ -7,6 +7,8 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/change-user-rights/'
 ---
 
+**Last update 21st September 2020**
+
 
 ## Using web interface
 Using web interface is the easiest way to change user rights.
@@ -56,3 +58,9 @@ GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/user
   }
 ]
 ```
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

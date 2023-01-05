@@ -5,6 +5,8 @@ excerpt: This guide shows you how to create an IP ACL to allow access to your ce
 section: Cloud Disk Array
 ---
 
+**Last update 26th March 2018**
+
 
 ## Using web interface
 
@@ -12,7 +14,7 @@ section: Cloud Disk Array
 > [!primary]
 >
 > Using web interface is the easiest way to create an IP ACL.
-> 
+>
 
 First, connect to the [manager](https://ca.ovh.com/manager/dedicated/#/configuration){.external} and under Platforms and services you'll fine the Ceph service.
 
@@ -46,7 +48,7 @@ After the pool creation, you are back to manager. You can see that cluster statu
 > [!api]
 >
 > @api {POST} /dedicated/ceph/{serviceName}/acl
-> 
+>
 serviceName is the fsid of your cluster.
 
 You can check ACL creation by listing ACL.
@@ -55,7 +57,7 @@ You can check ACL creation by listing ACL.
 > [!api]
 >
 > @api {GET} /dedicated/ceph/{serviceName}/acl
-> 
+>
 Example:
 
 
@@ -70,3 +72,9 @@ GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/acl
   }
 ]
 ```
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.
