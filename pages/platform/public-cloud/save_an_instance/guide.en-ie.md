@@ -6,7 +6,7 @@ section: Management via Control Panel
 order: 1
 ---
 
-**Last updated 28th February 2022**
+**Last updated 4th January 2023**
 
 ## Objective
 
@@ -22,6 +22,10 @@ You can create a single backup of an instance or configure a schedule in order t
 ## Instructions
 
 ### Creating a backup of an instance
+
+> [!warning]
+> This option is only available through a **Cold Snapshot** for Metal instances. During this process, the Metal instance will be switched to rescue-mode, and once the backup is performed, the instance will rebooted back to normal mode.
+>
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu.
 

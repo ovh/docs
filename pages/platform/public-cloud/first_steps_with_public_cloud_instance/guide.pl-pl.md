@@ -10,7 +10,7 @@ order: 05
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 22-03-2022**
+**Ostatnia aktualizacja z dnia 04-01-2023**
 
 ## Wprowadzenie
 
@@ -92,6 +92,10 @@ Kliknij `Zrestartuj w trybie Rescue`{.action}.
 Uruchomi to tryb Rescue dla instancji. Aby uzyskać szczegółowe informacje, zapoznaj się z przewodnikiem [Przełączenie instancji w tryb rescue](../przelaczenie_instancji_w_tryb_rescue/).
 
 #### Restart instancji 
+
+> [!warning]
+> Opcja uruchamiania bez wykonaj restart programowy (soft) nie jest aktualnie dostępna dla instancji Metal.
+>
 
 - Kliknij przycisk `Wykonaj restart programowy (soft)`{.action}, aby wykonać restart programowy.
 - Kliknij `Wykonaj restart sprzętowy (hard)`{.action}, aby rozpocząć reboot na poziomie sprzętowym.

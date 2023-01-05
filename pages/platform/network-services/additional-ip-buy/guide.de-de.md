@@ -10,7 +10,7 @@ order: 02
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 07.11.2022**
+**Letzte Aktualisierung am 04.01.2023**
 
 > [!primary]
 >
@@ -35,6 +35,10 @@ Diese Additional IPs können nur für Instanzen desselben Projekts migriert werd
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben mindestens eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte) in Ihrem Kunden-Account.
+
+> [!warning]
+> Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
+>
 
 ## In der praktischen Anwendung
 

@@ -10,7 +10,7 @@ order: 05
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/03/2022**
+**Última atualização: 04/01/2023**
 
 ## Objetivo
 
@@ -92,6 +92,10 @@ Clique em `Reiniciar em modo de rescue`{.action}.
 Isto irá ativar o modo de rescue da instância. Consulte o nosso manual [Passar uma instância em modo de rescue](../passar_uma_instancia_em_modo_de_rescue/) para obter informações detalhadas.
 
 #### Reiniciar uma instância
+
+> [!warning]
+> A opção de reboot a quente (soft) não está atualmente disponível para as instâncias Metal.
+>
 
 - Clique em `Reboot a quente (soft)`{.action} para efetuar um reboot ao nível de software.
 - Clique em `Reiniciar a frio (hard)`{.action} para lançar um reboot ao nível material.

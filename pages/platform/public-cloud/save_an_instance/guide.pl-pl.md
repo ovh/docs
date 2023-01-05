@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 28-02-2022**
+**Ostatnia aktualizacja z dnia 04-01-2023**
 
 ## Wprowadzenie
 
@@ -26,6 +26,10 @@ Możesz utworzyć kopię zapasową instancji lub skonfigurować harmonogram, aby
 ## W praktyce
 
 ### Tworzenie kopii zapasowej instancji
+
+> [!warning]
+> Ta opcja jest dostępna tylko przez **Cold Snapshot** dla instancji Metal. Instancja Metal przejdzie do trybu Rescue. Po wykonaniu kopii zapasowej instancja zostanie zrestartowana w trybie normalnym.
+>
 
 Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz swój projekt `Public Cloud`{.action}. Następnie kliknij `Instances`{.action} w menu po lewej stronie.
 

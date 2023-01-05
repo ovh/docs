@@ -10,7 +10,7 @@ order: 04
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 07/11/2022**
+**Última atualização: 04/01/2023**
 
 > [!primary]
 >
@@ -29,6 +29,10 @@ Este guia explica como poderá migrar um Additional IP de uma instância para ou
 - Dispor de, no mínimo, duas instâncias [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} iniciadas
 - Um Additional IP
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+
+> [!warning]
+> Esta funcionalidade não está atualmente disponível para as instâncias Metal.
+>
 
 ## Instruções
 

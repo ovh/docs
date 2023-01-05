@@ -7,7 +7,7 @@ order: 02
 ---
 
 
-**Last updated 7th November 2022**
+**Last updated 4th January 2023**
 
 > [!primary]
 >
@@ -31,6 +31,10 @@ These Additional IP addresses can only be migrated to instances in the same proj
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 - A [Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/) in your Public Cloud project
+
+> [!warning]
+> This feature is currently not available for Metal instances.
+>
 
 ## Instructions
 

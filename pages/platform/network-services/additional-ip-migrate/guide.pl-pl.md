@@ -10,7 +10,7 @@ order: 04
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja: 07-11-2022**
+**Ostatnia aktualizacja: 04-01-2023**
 
 > [!primary]
 >
@@ -29,6 +29,10 @@ W tym przewodniku wyjaśniono, jak przenieść adres Additional IP (używany w p
 - Co najmniej dwie działające instancje Public Cloud
 - Adres Additional IP
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+
+> [!warning]
+> Ta funkcja nie jest aktualnie dostępna dla instancji Metal.
+>
 
 ## W praktyce
 

@@ -10,7 +10,7 @@ section: Gestione dallo Spazio Cliente OVHcloud
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/02/2022**
+**Ultimo aggiornamento: 04/01/2023**
 
 ## Obiettivo
 
@@ -26,6 +26,10 @@ Crea un backup unico di un'istanza o configura una pianificazione per automatizz
 ## Procedura
 
 ### Effettua un backup dell’istanza
+
+> [!warning]
+> Questa opzione è disponibile solo via **Cold Snapshot** per le istanze Metal. L'istanza Metal passerà in modalità Rescue e, una volta effettuato il backup, l'istanza sarà riavviata in modalità normale.
+>
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e apri il tuo progetto `Public Cloud`{.action}. Clicca sulle `Instances`{.action} nel menu a sinistra.
 

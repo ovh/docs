@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: Gestione dallo Spazio Cliente OVHcloud
 ---
 
-**Ultimo aggiornamento 02/08/2022**
+**Ultimo aggiornamento 04/01/2023**
 
 ## Obiettivo
 
@@ -21,6 +21,10 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 * Avere accesso all’istanza via SSH con l’utente root
 
 ## Procedura
+
+> [!alert]
+>
+> Ad oggi, la modalità Rescue per le istanze Metal non è disponibile nello Spazio Cliente OVHcloud. Per maggiori informazioni, consulta la guida dedicata al [Rescue mode per le istanze Metal](https://docs.ovh.com/it/public-cloud/metal-instance-rescue-mode/).
 
 ### Attiva la modalità di ripristino
 

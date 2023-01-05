@@ -10,7 +10,7 @@ order: 05
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 22/03/2022**
+**Última actualización: 04/01/2023**
 
 ## Objetivo
 
@@ -92,6 +92,10 @@ Haga clic en `Reiniciar en modo de rescate`{.action}.
 Esto activará el modo de rescate de la instancia. Para más información, consulte nuestra guía [Poner una instancia en modo de rescate](../poner_una_instancia_en_modo_de_rescate/).
 
 #### Reiniciar una instancia
+
+> [!warning]
+> La opción de reiniciar en caliente (soft) no está actualmente disponible para las instancias Metal.
+>
 
 - Haga clic en `Reiniciar en caliente (soft)`{.action} para reiniciar a nivel de software.
 - Haga clic en `Reiniciar en frío (hard)`{.action} para iniciar un reinicio a nivel de hardware.

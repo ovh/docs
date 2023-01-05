@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 28.02.2022**
+**Letzte Aktualisierung am 04.01.2023**
 
 ## Ziel
 
@@ -26,6 +26,10 @@ Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan kon
 ## In der praktischen Anwendung
 
 ### Backup einer Instanz erstellen
+
+> [!warning]
+> Diese Option ist für Metal Instanzen nur über einen **Cold Snapshot** verfügbar. Die Metal-Instanz wird in den Rescue-Modus versetzt, und sobald das Backup abgeschlossen ist, wird die Instanz im normalen Modus neu gestartet.
+>
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
 

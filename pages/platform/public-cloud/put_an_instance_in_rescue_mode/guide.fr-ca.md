@@ -7,7 +7,7 @@ section: "Gestion depuis l'espace client"
 order: 04
 ---
 
-**Dernière mise à jour le 01/08/2022**
+**Dernière mise à jour le 04/01/2023**
 
 ## Objectif
 
@@ -24,6 +24,10 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 * Avoir accès à votre instance via SSH en tant qu'administrateur (root)
 
 ## En pratique
+
+> [!alert]
+>
+> A ce jour, le mode rescue pour les instances Metal n'est pas accessible via l'espace client OVHcloud. Pour plus d'informations, consultez notre guide dédié au [mode rescue pour les instances Metal](https://docs.ovh.com/ca/fr/public-cloud/metal-instance-rescue-mode/).
 
 ### Activer le mode rescue
 
