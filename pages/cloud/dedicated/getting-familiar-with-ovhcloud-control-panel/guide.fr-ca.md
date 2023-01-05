@@ -6,7 +6,7 @@ section: Clients So you Start & Kimsufi
 order: 1
 ---
 
-**Dernière mise à jour le 13/12/2022**
+**Dernière mise à jour le 05/01/2023**
 
 ## Objective
 
@@ -76,7 +76,7 @@ Pour plus d'informations sur la gestion de votre serveur dédié via l'espace cl
 
 Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ensuite sur `IP`{.action} :
 
-![section ip](images/manageIPOVHcloud.png){.thumbnail}
+![section ip](images/manageIP2023.png){.thumbnail}
 
 ### Onglet Licences (non disponible sur Kimsufi)
 
