@@ -25,7 +25,7 @@ Based on your automation needs at OVHcloud, you have to pick one or more of the 
 - [Hashicorp AWS provider](https://registry.terraform.io/providers/hashicorp/aws/latest/) to automate the operations of the S3 Object Storage.
 - [Hashicorp Kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) : once you have provisionned a Kubernetes cluster with OVH provider, you can manage your Kubernetes configuration with this provider.
 - [Hashicorp vSphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/latest) to automate the operations of OVHcloud [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/).
-- [Nutanix provider](https://registry.terraform.io/providers/nutanix/nutanix/latest) to automate the operations of OVHcloud [Hosted Private Cloud powered by Nutanix](https://www.ovhcloud.com/en-gb/hosted-private-cloud/nutanix/).
+- [Nutanix provider](https://registry.terraform.io/providers/nutanix/nutanix/latest) to automate the operations of OVHcloud [Nutanix on OVHcloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/nutanix/).
 
 ## Mapping OVHcloud GUI to Terraform providers & resources
 

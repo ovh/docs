@@ -6,7 +6,7 @@ section: "Utilisation avancée"
 order: 03
 hidden: true
 kb: Hosted Private Cloud
-category_l1: Hosted Private Cloud powered by Nutanix
+category_l1: Nutanix on OVHcloud
 category_l2: Advanced usage
 ---
 
@@ -32,7 +32,7 @@ Les clusters Nutanix sont évolutifs. Il est possible de rajouter des nœuds dan
 
 ## Informations techniques
 
-La solution **Hosted Private Cloud powered by Nutanix** permet d'avoir entre 3 et 18 nœuds sur le même cluster.
+La solution **Nutanix on OVHcloud** permet d'avoir entre 3 et 18 nœuds sur le même cluster.
 
 Il est possible d'ajouter plusieurs nœuds lors de l'expansion du cluster.
 

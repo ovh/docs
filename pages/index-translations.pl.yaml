@@ -56,14 +56,14 @@ bare-metal-cloud-virtual-private-servers-getting-started: Pierwsze kroki
 bare-metal-cloud-virtual-private-servers-network-and-ip-management: Sieć i adres IP
 bare-metal-cloud-virtual-private-servers-troubleshooting: Rozwiązywanie problemów
 bare-metal-cloud-virtual-private-servers-tutorials: Samouczki
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix: Hosted Private Cloud powered by Nutanix
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-getting-started: Pierwsze kroki
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-networking-and-security: Sieć i bezpieczeństwo
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-backup: Backups
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-advanced-usage: Zaawansowane użycie
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-troubleshooting: Diagnostyka
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-disaster-recovery-plan: Disaster Recovery Plan
-hosted-private-cloud-hosted-private-cloud-powered-by-nutanix-raci: Podział odpowiedzialności (RACI)
+hosted-private-cloud-nutanix-on-ovhcloud: Nutanix on OVHcloud
+hosted-private-cloud-nutanix-on-ovhcloud-getting-started: Pierwsze kroki
+hosted-private-cloud-nutanix-on-ovhcloud-networking-and-security: Sieć i bezpieczeństwo
+hosted-private-cloud-nutanix-on-ovhcloud-backup: Backups
+hosted-private-cloud-nutanix-on-ovhcloud-advanced-usage: Zaawansowane użycie
+hosted-private-cloud-nutanix-on-ovhcloud-troubleshooting: Diagnostyka
+hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Disaster Recovery Plan
+hosted-private-cloud-nutanix-on-ovhcloud-raci: Podział odpowiedzialności (RACI)
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware: Hosted Private Cloud powered by VMware
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Pierwsze kroki
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-general-information: Informacje ogólne
