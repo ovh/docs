@@ -10,7 +10,7 @@ order: 02
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 07/11/2022**
+**Ultimo aggiornamento: 04/01/2023**
 
 > [!primary]
 >
@@ -34,6 +34,10 @@ Questi indirizzi possono essere trasferiti esclusivamente verso le istanze di un
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 - Disporre di almeno un’istanza. A questo proposito, consulta [la guida per creare un’istanza dallo Spazio Cliente](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/).
+
+> [!warning]
+> Questa funzionalità al momento non è disponibile per le istanze Metal.
+>
 
 ## Procedura
 

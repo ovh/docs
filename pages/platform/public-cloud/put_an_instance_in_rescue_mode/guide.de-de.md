@@ -5,7 +5,7 @@ excerpt: Erfahren Sie hier, wie Sie den Rescue-Modus für Ihre Public Cloud Inst
 section: Verwaltung im OVHcloud Kundencenter
 ---
 
-**Letzte Aktualisierung am 02.08.2022**
+**Letzte Aktualisierung am 04.01.2023**
 
 ## Ziel
 
@@ -21,6 +21,10 @@ In diesem Fall können Sie Ihre Instanz mithilfe des Rescue-Modus neu konfigurie
 - Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH.
 
 ## In der praktischen Anwendung
+
+> [!alert]
+>
+> Der Rescue-Modus für Metal Instanzen ist derzeit nicht über das OVHcloud Kundencenter verfügbar. Weitere Informationen finden Sie in unserer Anleitung zum [Rescue-Modus für Metal-Instanzen](https://docs.ovh.com/de/public-cloud/metal-instance-rescue-mode/).
 
 ### Schritt 1: Rescue-Modus aktivieren
 

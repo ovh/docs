@@ -5,6 +5,8 @@ excerpt: 'This guide will show how to enable and manage CephFS on your CDA'
 section: Cloud Disk Array
 ---
 
+**Last update 31st May 2021**
+
 
 ## What is CephFS?
 
@@ -18,17 +20,17 @@ Enabling and management is possible only through API. For now it's only possible
 
 First step is to list your current CephFS:
 
-```bash
-GET /dedicated/ceph/{serviceName}/cephfs
-[ ]
-```
+> [!api]
+>
+> @api {GET} /dedicated/ceph/{serviceName}/cephfs
+>
 
 By default you'll get an empty list. Let's enable (create) a filesystem:
 
-```bash
-POST /dedicated/ceph/{serviceName}/cephfs/{fsName}/enable
-"352f999d-a191-4420-825d-0cae0980baae"
-```
+> [!api]
+>
+> @api {POST} /dedicated/ceph/{serviceName}/cephfs/{fsName}/enable
+>
 
 Your CephFS should be available within few minutes. You can verify that directly on your cluster by using:
 
@@ -48,41 +50,48 @@ ceph --id CEPH_USER fs get fs-default
 You can remove your filesystem when no longer needed. There are two steps here:
 
  * disable your filesystem - this will block access to CephFS but your data will be intact, if you change your mind you can just enable it again
-```bash
-POST /dedicated/ceph/{serviceName}/cephfs/{fsName}/disable
-```
+
+> [!api]
+>
+> @api {POST} /dedicated/ceph/{serviceName}/cephfs/{fsName}/disable
+>
+
  * purge filesystem data - this can only be done on disabled filesystem
-```bash
-DELETE /dedicated/ceph/{serviceName}/cephfs/{fsName}
-```
+
+ > [!api]
+ >
+ > @api {DELETE} /dedicated/ceph/{serviceName}/cephfs/{fsName}
+ >
 
 
 ## CephFS access management
 
 To manage access to CephFS, the same set of IP ACL is used as for whole CDA. However, you'll need a user to write to a CephFS. Use the following API call to create a user:
 
-```bash
-POST /dedicated/ceph/{serviceName}/user
-```
+> [!api]
+>
+> @api {POST} /dedicated/ceph/{serviceName}/user
+>
 
 You'll also need to grant that user read and write access to CephFS data and metadata pools, called ```cephfs.fs-default.data``` and ```cephfs.fs-default.meta``` respectively. Do it using the following API call:
 
-```bash
-POST /dedicated/ceph/{serviceName}/user/{userName}/pool
-```
+> [!api]
+>
+> @api {POST} /dedicated/ceph/{serviceName}/user/{userName}/pool
+>
 
-Grants you need are ```read```, ```write```.
+Grants you need are `read`, `write`.
 
 
 ## Mounting CephFS on your host
 
-Install the ```ceph-common``` package that contains ```/sbin/mount.ceph``` binary. The package name may be different for your disribution. In the example below we use a Debian-based one:
+Install the `ceph-common` package that contains `/sbin/mount.ceph` binary. The package name may be different for your disribution. In the example below we use a Debian-based one:
 
 ```bash
 apt install --no-install-recommends ceph-common
 ```
 
-Now we need to point client to CDA cluster. Edit (or create) ```/etc/ceph/ceph.conf```. It should look like below:
+Now we need to point client to CDA cluster. Edit (or create) `/etc/ceph/ceph.conf`. It should look like below:
 
 ```bash
 [global]
@@ -92,15 +101,17 @@ Now we need to point client to CDA cluster. Edit (or create) ```/etc/ceph/ceph.c
 
 FSID is the service name of your CDA. ```mon host``` IPs can be fetched using the following API call:
 
-```bash
-GET /dedicated/ceph/{serviceName}
-```
+> [!api]
+>
+> @api {GET} /dedicated/ceph/{serviceName}
+>
 
 You will also need a second file with key for the user used to connect to the cluster. Fetch his key using:
 
-```bash
-GET /dedicated/ceph/{serviceName}/user/{userName}
-```
+> [!api]
+>
+> @api {GET} /dedicated/ceph/{serviceName}/user/{userName}
+>
 
 Create a file called ```/etc/ceph/ceph.client.CEPHFS_USER.keyring``` with following content:
 
@@ -114,3 +125,9 @@ Finally you can mount your filesystem:
 mkdir /mnt/cephfs
 mount -t ceph -o name=CEPHFS_USER :/ /mnt/cephfs/
 ```
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

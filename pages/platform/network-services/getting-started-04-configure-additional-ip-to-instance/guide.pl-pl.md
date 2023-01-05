@@ -10,7 +10,7 @@ order: 01
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 02-11-2022**
+**Ostatnia aktualizacja z dnia 04-01-2023**
 
 > [!primary]
 >
@@ -35,6 +35,10 @@ Być może będziesz musiał skonfigurować adresy Additional IP na Twoich insta
 - adresu [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/) lub bloku Additional IP
 - dostęp administratora (root) przez SSH lub GUI do Twojej instancji
 - podstawowa wiedza o sieciach i ich administrowaniu
+
+> [!warning]
+> Ta funkcja nie jest aktualnie dostępna dla instancji Metal.
+>
 
 ## W praktyce
 

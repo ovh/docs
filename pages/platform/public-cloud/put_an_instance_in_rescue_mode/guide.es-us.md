@@ -7,7 +7,7 @@ section: 'Gestión de las instancias desde el área de cliente'
 order: 03
 ---
 
-**Última actualización: 02/08/2022**
+**Última actualización: 04/01/2023**
 
 ## Objetivo
 
@@ -24,6 +24,11 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 * Tener acceso a la instancia por SSH como administrador (usuario raíz).
 
 ## Procedimiento
+
+> [!alert]
+>
+> Hasta la fecha, el modo de rescate para las instancias Metal no está accesible desde el área de cliente de OVHcloud. Para más información, consulte nuestra guía sobre el [modo de rescate para las instancias Metal](https://docs.ovh.com/us/es/public-cloud/metal-instance-rescue-mode/).
+
 
 ### Activar el modo de rescate
 

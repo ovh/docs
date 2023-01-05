@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
-**Última atualização: 02/08/2022**
+**Última atualização: 04/01/2023**
 
 ## Sumário
 
@@ -23,6 +23,10 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 * acesso administrativo (root) à sua instância via SSH
 
 ## Instruções
+
+> [!alert]
+>
+> Atualmente, o modo rescue para as instâncias Metal não está acessível através da Área de Cliente OVHcloud. Para mais informações, consulte o nosso guia dedicado ao [modo rescue para as instâncias Metal](https://docs.ovh.com/pt/public-cloud/metal-instance-rescue-mode/).
 
 ### Ativar o modo rescue
 

@@ -11,7 +11,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 08/12/2021**
+**Ultimo aggiornamento: 04/01/2023**
 
 ## Obiettivo
 
@@ -29,6 +29,10 @@ Ciò può essere utile nei seguenti casi:
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel proprio account OVHcloud
 - Avere un accesso amministratore (root) alla tua istanza via SSH
+
+> [!warning]
+> Questa funzionalità al momento non è disponibile per le istanze Metal.
+>
 
 ## Procedura
 

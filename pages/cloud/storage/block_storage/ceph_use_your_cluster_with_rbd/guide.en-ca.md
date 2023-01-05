@@ -5,7 +5,13 @@ excerpt: This guide shows you how to access your cluster using rbd client.
 section: Cloud Disk Array
 ---
 
+**Last update 22th June 2022**
+
+## Objective
+
 There are different ways to use your Ceph cluster. We'll describe how to map your cluster using **rbd client**.
+
+## Requirements
 
 You must first ensure that you have done those steps :
 
@@ -120,3 +126,9 @@ Filesystem      Size  Used Avail Use% Mounted on
 ```
 
 You can now use your Ceph cluster!
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

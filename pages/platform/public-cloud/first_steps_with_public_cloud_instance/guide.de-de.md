@@ -10,7 +10,7 @@ order: 05
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.03.2022**
+**Letzte Aktualisierung am 04.01.2023**
 
 ## Ziel
 
@@ -92,6 +92,10 @@ Klicken Sie auf `Neustart im Rescue-Modus`{.action}.
 Dies aktiviert den Rescue-Modus der Instanz. Um detaillierte Informationen zu erhalten, lesen Sie unsere Anleitung zum [Rescue-Modus](../umstellung_einer_instanz_auf_den_rescue-modus/).
 
 #### Instanz neu starten
+
+> [!warning]
+> Die Durchführung eines Soft Reboot ist derzeit für Metal Instanzen nicht verfügbar.
+>
 
 - Klicken Sie auf `Soft Reboot durchführen`{.action} um einen Neustart auf Software-Ebene durchzuführen.
 - Klicken Sie auf `Hard Reboot durchführen`{.action} um einen Neustart auf Hardware-Ebene durchzuführen.

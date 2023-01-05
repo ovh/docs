@@ -7,7 +7,7 @@ section: Management via Control Panel
 order: 3
 ---
 
-**Last updated 1st August 2022**
+**Last updated 4th January 2023**
 
 ## Objective
 
@@ -24,6 +24,10 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 - Administrative access (root) to your instance via SSH
 
 ## Instructions
+
+> [!alert]
+>
+> To date, rescue mode for Metal instances cannot be accessed via the OVHcloud Control Panel. For more information, please refer to our guide on [rescue mode for Metal instances](https://docs.ovh.com/ca/en/public-cloud/metal-instance-rescue-mode/).
 
 ### Step 1: Activating rescue mode
 

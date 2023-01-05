@@ -11,7 +11,7 @@ section: Uso avanzado
 
 **Última actualización: 22/12/2022**
 
-## Objectivo
+## Objetivo
 
 Las políticas antispam cada vez son más estrictas. Para asegurarse que sus correos electrónicos llegan a los destinatarios sin ser bloqueados por las herramientas de seguridad, usted necesita configurar en su servicio para autenticar los correos y validar su contenido.
 

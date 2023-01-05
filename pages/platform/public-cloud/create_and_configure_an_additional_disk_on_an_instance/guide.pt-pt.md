@@ -11,7 +11,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 08/12/2021**
+**Última atualização: 04/01/2023**
 
 ## Objetivo
 
@@ -29,6 +29,10 @@ Tal pode ser útil nos seguintes casos:
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Dispor de uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
 - Ter acesso de administrador (root) à sua instância através de SSH
+
+> [!warning]
+> Esta funcionalidade não está atualmente disponível para as instâncias Metal.
+>
 
 ## Instruções
 

@@ -5,6 +5,8 @@ excerpt: 'Cómo hacer un benchmark del rendimiento de la solución de almacenami
 section: 'Cloud Disk Array'
 ---
 
+**Last update 25th May 2019**
+
 ## Requisitos
 Antes de comenzar el benchmark, debe estar familiarizado con su entorno. Preste atención a los pequeños detalles, ya que estos pueden hacer que la prueba no sea válida. (por ejemplo, no tiene mucho sentido probar el rendimiento de Cloud Disk Array desde un datacenter diferente, ya que, aunque puede hacerlo, la latencia entre datacenters es demasiado elevada para realizar un benchmark).
 
@@ -42,7 +44,7 @@ Es posible probar el rendimiento de tres formas distintas:
 - mapeando la imagen hacia el periférico **/dev/rbd**;
 - realizando un benchmark en una máquina virtual con una imagen RBD.
 
-En esta guía vamos a emplear el primer método. 
+En esta guía vamos a emplear el primer método.
 
 Ejecute Fio como en el siguiente ejemplo:
 
@@ -113,3 +115,9 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 
 ## Cómo medir el rendimiento de Cloud Disk Array
 En este caso, para medir el rendimiento de Cloud Disk Array, hemos realizado tests en 32 imágenes de 32 GB cada una durante varias horas. Utilizar conjuntos de datos de big data para los tests permite asegurar que el rendimiento se mantendrá a un nivel determinado.
+
+## Más información
+
+Visite nuestro canal dedicado de Discord: <https://discord.gg/ovhcloud>. Haga preguntas, proporcione comentarios e interactúe directamente con el equipo que crea nuestros servicios de almacenamiento y copia de seguridad.
+
+Únase a nuestra comunidad de usuarios en <https://community.ovh.com/>.

@@ -118,3 +118,9 @@ Aby zmierzyć wydajność Cloud Disk Array, prowadzimy przez kilka godzin testy 
 ## Sprawdź również
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+
+## Sprawdź również
+
+Odwiedź nasz dedykowany kanał na Discordzie: <https://discord.gg/ovhcloud>. Zadawaj pytania, przesyłaj opinie i kontaktuj się bezpośrednio z zespołem, który tworzy nasze usługi przechowywania i tworzenia kopii zapasowych.
+
+Dołącz do naszej społeczności użytkowników na <https://community.ovh.com/>.

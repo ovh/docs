@@ -7,6 +7,8 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/create-a-pool/'
 ---
 
+**Last update 26th March 2018**
+
 
 ## Using web interface
 
@@ -14,7 +16,7 @@ routes:
 > [!primary]
 >
 > Using web interface is the easiest way to create a pool.
-> 
+>
 
 First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster.
 
@@ -42,7 +44,7 @@ After pool creation you are back to manager, you can see that cluster status has
 > [!api]
 >
 > @api {POST} /dedicated/ceph/{serviceName}/pool
-> 
+>
 serviceName is the fsid of your cluster.
 
 You can check pool creation by listing pools.
@@ -51,7 +53,7 @@ You can check pool creation by listing pools.
 > [!api]
 >
 > @api {GET} /dedicated/ceph/{serviceName}/pool
-> 
+>
 For example:
 
 
@@ -76,3 +78,9 @@ GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/pool
   }
 ]
 ```
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

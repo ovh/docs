@@ -10,7 +10,7 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 02.11.2022**
+**Letzte Aktualisierung am 04.01.2023**
 
 > [!primary]
 >
@@ -36,6 +36,10 @@ Es kann nowendig werden, Additional IPs auf Ihren Instanzen konfigurieren, zum B
 - Sie verfügen über eine [Additional IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Additional IP-Block.
 - Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
+
+> [!warning]
+> Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
+>
 
 ## In der praktischen Anwendung
 

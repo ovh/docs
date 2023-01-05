@@ -6,7 +6,7 @@ section: Additional IP
 order: 01
 ---
 
-**Dernière mise à jour le 02/11/2022**
+**Dernière mise à jour le 04/01/2023**
 
 > [!primary]
 >
@@ -31,6 +31,10 @@ Vous devrez peut-être configurer des adresses Additional IP sur vos instances, 
 - une [adresse Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/ip/) ou un bloc Additional IP
 - un accès administrateur (root) via SSH ou GUI à votre instance
 - des connaissances de base sur les réseaux et leur administration
+
+> [!warning]
+> Cette fonctionnalité n'est actuellement pas disponible pour les instances Metal.
+>
 
 ## En pratique
 

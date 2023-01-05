@@ -10,7 +10,7 @@ order: 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 07/11/2022**
+**Última actualización: 04/01/2023**
 
 > [!primary]
 >
@@ -35,6 +35,10 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](https://docs.ovh.com/es/public-cloud/crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
+
+> [!warning]
+> Esta funcionalidad no está actualmente disponible para instancias Metal.
+>
 
 ## Procedimiento
 

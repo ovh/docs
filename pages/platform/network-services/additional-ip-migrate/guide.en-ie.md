@@ -6,7 +6,7 @@ section: Additional IP
 order: 04
 ---
 
-**Last updated 2nd November 2022**
+**Last updated 4th January 2023**
 
 > [!primary]
 >
@@ -25,6 +25,10 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 - At least two [Public Cloud instances](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - An Additional IP address
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+
+> [!warning]
+> This feature is currently not available for Metal instances.
+>
 
 ## Instructions
 

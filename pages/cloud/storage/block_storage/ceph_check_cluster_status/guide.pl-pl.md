@@ -7,6 +7,8 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/check-cluster-status/'
 ---
 
+**Last update 22nd December 2020**
+
 
 ## Using web interface
 First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster. You will see two differents parts: **cluster details** and **cluster health**.
@@ -160,3 +162,9 @@ Get Ceph cluster health:
   usedBytes: 124981248
 }
 ```
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

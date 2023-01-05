@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja z dnia 02-08-2022**
+**Ostatnia aktualizacja z dnia 04-01-2023**
 
 ## Wprowadzenie
 
@@ -22,7 +22,12 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 * dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * dostęp administracyjny (uprawnienia użytkownika root) do instancji za pośrednictwem protokołu SSH
 
-## W praktyce
+## W praktyce> 
+
+[!alert]
+>
+> Do tej pory tryb Rescue dla instancji Metal nie jest dostępny w panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [trybu Rescue dla instancji Metal](https://docs.ovh.com/pl/public-cloud/metal-instance-rescue-mode/).
+
 
 ### Aktywacja trybu ratunkowego
 

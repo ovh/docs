@@ -27,7 +27,7 @@ order: 1
  }
 </style>
 
-**Dernière mise à jour le 03/02/2021**
+**Dernière mise à jour le 05/01/2023**
 
 ## Objectif
 
@@ -62,34 +62,34 @@ Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et activez `virtualenv`: 
 
 ```sh
-cd www
-virtualenv venv
-source venv/bin/activate
+~$ cd www
+~/www$ virtualenv venv
+~/www$ source venv/bin/activate
 ```
 
 Mettez à jour `pip`.
 
 ```sh
-pip install --upgrade pip
+~/www$ pip install --upgrade pip
 ```
 
 Installez Django.
 
 ```sh
-pip install django
+~/www$ pip install django
 ```
 
 Créez le nouveau projet Django.
 
 ```sh
-django-admin startproject config
+~/www$ django-admin startproject config .
 ```
 
 Par défaut, l'application `wsgi` de Django se trouve dans `config/wsgi.py`.
 Comme le point d'entrée configuré est `app.py`, vous pouvez créer le lien symbolique suivant :
 
 ```sh
-ln -s config/wsgi.py app.py
+~/www$ ln -s config/wsgi.py app.py
 ```
 
 Django est installé dans un environnement virtuel, vous devez demander à l'application de l'utiliser. 

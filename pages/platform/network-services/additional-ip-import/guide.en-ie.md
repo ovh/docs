@@ -6,7 +6,7 @@ section: Additional IP
 order: 03
 ---
 
-**Last updated 7th November 2022**
+**Last updated 4th January 2023**
 
 > [!primary]
 >
@@ -31,6 +31,9 @@ Instead of buying additional ones, you can import an Additional IP address that 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - An [Additional IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/)
 
+> [!warning]
+> This feature is not currently available for Metal instances.
+>
 
 ## Instructions
 
