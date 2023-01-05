@@ -5,6 +5,8 @@ excerpt: Ce guide vous présente comment avoir accès à votre cluster en utilis
 section: Cloud Disk Array
 ---
 
+**Last update 22th June 2022**
+
 ## Objectif
 
 Il existe différentes façons d'utiliser votre grappe Ceph. Nous allons décrire comment cartographier votre cluster en utilisant **rbd client**.
@@ -125,3 +127,10 @@ Vous pouvez maintenant utiliser votre grappe Ceph !
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+
+## Aller plus loin
+
+Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
+
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

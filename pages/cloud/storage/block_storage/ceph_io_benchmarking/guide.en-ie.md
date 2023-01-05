@@ -5,6 +5,8 @@ excerpt: 'Evaluating performance of Cloud Disk Array'
 section: 'Cloud Disk Array'
 ---
 
+**Last update 25th May 2019**
+
 ## Before you start
 Before starting benchmarks get familiar with your environment. Even small missed detail can make your benchmark invalid. For example, there is no point in testing performance of Cloud Disk Array from different DC. While it will be working, latencies between DC are too high for such setup.
 
@@ -111,3 +113,9 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 
 ## How we measure Cloud Disk Array performance
 To measure Cloud Disk Array performance we are running test on a 32 images, each of 32GiB size, running for a few hours. Using big data set during test ensures us that performance will stay on a specified level.
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

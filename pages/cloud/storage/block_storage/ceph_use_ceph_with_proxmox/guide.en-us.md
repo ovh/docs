@@ -108,6 +108,9 @@ Once a template has been downloaded, you can start using it to create containers
 
 ![Container template](images/use_ceph_with_proxmox_4.png){.thumbnail}
 
-## Go further <a name="gofurther"></a>
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -5,6 +5,8 @@ excerpt: 'This guide will show how to enable and manage CephFS on your CDA'
 section: Cloud Disk Array
 ---
 
+**Last update 31st May 2021**
+
 
 ## What is CephFS?
 
@@ -114,3 +116,9 @@ Finally you can mount your filesystem:
 mkdir /mnt/cephfs
 mount -t ceph -o name=CEPHFS_USER :/ /mnt/cephfs/
 ```
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.

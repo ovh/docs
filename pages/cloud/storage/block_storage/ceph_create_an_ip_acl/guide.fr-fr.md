@@ -5,6 +5,8 @@ excerpt: "Ce guide vous montre comment créer une ACL IP pour autoriser l'accès
 section: Cloud Disk Array
 ---
 
+**Last update 26th March 2018**
+
 
 ## Utiliser l'interface web
 
@@ -70,3 +72,9 @@ GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/acl
   }
 ]
 ```
+
+## Aller plus loin
+
+Rendez-vous sur notre chaîne Discord dédiée : <https://discord.gg/ovhcloud>. Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
+
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

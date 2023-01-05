@@ -33,7 +33,7 @@ cluster 3eb69d65-fec7-4e05-91c0-7fe07b6fed1a
               64 active+clean
 ```
 
-Se il risultato ottenuto è simile a quello incluso qui sopra, è possibile iniziare a preparare l’immagine per il test utilizzando questo comando: 
+Se il risultato ottenuto è simile a quello incluso qui sopra, è possibile iniziare a preparare l’immagine per il test utilizzando questo comando:
 
 
 ```bash
@@ -86,7 +86,7 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 
 
 ### Scritture casuali con blocchi da 4.000 tr/min
-Questo test genera quattro processi Fio, ognuno dei quali utilizza 2 thread per scrivere su un’immagine distinta 
+Questo test genera quattro processi Fio, ognuno dei quali utilizza 2 thread per scrivere su un’immagine distinta
 
 
 ```bash
@@ -115,3 +115,9 @@ fio --name=test-1 --ioengine=rbd --pool=rbd --rbdname=test-image --numjobs=1 \
 
 ## Misurare le prestazioni di Cloud Disk Array
 Per calcolare le performance del servizio Cloud Disk Array, effettueremo test su 32 immagini da 32 GB ciascuna per qualche ora. L’utilizzo di grossi volumi di dati durante i test garantisce il mantenimento delle prestazioni al livello stabilito.
+
+## Per saperne di più
+
+Visita il nostro canale Discord dedicato: <https://discord.gg/ovhcloud>. Poni domande, fornisci feedback e interagisci direttamente con il team che crea i nostri servizi di archiviazione e backup.
+
+Unisciti alla nostra community di utenti su <https://community.ovh.com/>.

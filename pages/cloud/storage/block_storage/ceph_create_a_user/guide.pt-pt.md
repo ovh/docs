@@ -7,6 +7,8 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/create-a-user/'
 ---
 
+**Last update 26th March 2018**
+
 
 ## Using web interface
 
@@ -63,3 +65,9 @@ GET /dedicated/ceph/98d166d8-7c88-47b7-9cb6-63acd5a59c15/user
   }
 ]
 ```
+
+## Go further
+
+Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
+
+Join our community of users on <https://community.ovh.com/en/>.
