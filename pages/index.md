@@ -964,7 +964,7 @@
                 + [Installing PrestaShop manually](web/hosting/cms_manual_installation_prestashop)
             + [Tutorials](web-cloud-web-hosting-personal-and-business-web-hosting-plans-tutorials)
                 + [Tutorial - Creating your personal webpage at OVHcloud](web/hosting/create_your_personal_webpage)
-                + [Use cases - What to do if your Website is hacked](web/hosting/what_to_do_if_your_wordpress_site_is_hacked)
+                + [Use cases - What to do if your Website is hacked](web/hosting/cms_what_to_do_if_your_site_is_hacked)
                 + [Use cases - How to change the domain of an existing website](web/hosting/How_to_change_the_domain_name_of_an_existing_website)
                 + [Tutorial - Using FileZilla with your OVHcloud hosting](web/hosting/ftp_filezilla_user_guide)
             + [Databases](web-cloud-web-hosting-personal-and-business-web-hosting-plans-databases)
