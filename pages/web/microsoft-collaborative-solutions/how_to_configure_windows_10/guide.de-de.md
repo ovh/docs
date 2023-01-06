@@ -20,11 +20,6 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 - Die Mail App ist auf Ihrem Gerät installiert.
 - Sie haben die Login-Daten der E-Mail-Adresse, die Sie einrichten möchten.
 
-> [!primary]
->
-> Sie verwenden noch eine ältere Windows-Version? Die entsprechende Dokumentation finden Sie hier: [Exchange 2013/2016: Konfiguration in Windows 8](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_in_windows_8/){.external}
->
-
 ## Beschreibung
 
 ### Schritt 1: Account hinzufügen

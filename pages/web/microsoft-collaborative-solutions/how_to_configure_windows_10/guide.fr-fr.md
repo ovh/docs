@@ -28,11 +28,6 @@ Les comptes Exchange peuvent être configurés sur différents logiciels de mess
 - Disposer de l'application Courrier installée sur votre appareil.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 
-> [!primary]
->
-> Vous utilisez une version antérieure de Windows ? Consultez notre documentation : [Configurer son compte Exchange sur Courrier pour Windows 8](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-sous-windows-8/){.external}.
->
-
 ## En pratique
 
 ### Étape 1 : ajouter le compte
