@@ -46,7 +46,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 
 > [!warning]
 >
-> You can only change your subscription to a lower range plan if it is the **lower** range plan.
+> You can only change your subscription to a lower range plan if it is the immediate **lower** range plan.
 > For example, you cannot switch from a *Performance 2* formula to a *Professional* formula in a single operation.
 > You will **first** need to upgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* **plan, then** to the *Professional plan*.
 
