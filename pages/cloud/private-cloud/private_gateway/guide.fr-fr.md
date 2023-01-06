@@ -16,7 +16,7 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 
 
 > [!warning]
-> Do not enable the Private Gateway if you are using the Disaster Recovery Plan solution [Zerto](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/zerto/) as this would cause Zerto to fail.
+> N'activez pas l'option Private Gateway si vous utilisez la solution de plan de reprise d'activité [Zerto](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/zerto/) car cela provoquerait un dysfonctionnement de Zerto.
 >
 
 
