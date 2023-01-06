@@ -62,7 +62,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 > 
 > ![exchange](images/config-outlook-exchange03.png){.thumbnail}
 >
-> Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la pestaña `Dominios asociados`{.action}, en la columna "`Diagnóstico`{.action}" de la tabla.
+> Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la pestaña `Dominios asociados`{.action}, en la columna `Diagnóstico`{.action}"de la tabla.
 >
 
 - Si la configuración del dominio es válida, puede aparecer un mensaje de autorización de conexión a los servidores de OVHcloud. Acepte la configuración automática de su cuenta Exchange.
