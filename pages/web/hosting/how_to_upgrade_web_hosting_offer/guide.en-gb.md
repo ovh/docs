@@ -114,7 +114,7 @@ Once you have checked these 6 elements, you can [change your plan](#modify).
 
 #### You have a Start 10M solution <a name="start10m"></a>
 
-If you change your [Start10M](https://docs.ovh.com/gb/en/hosting/activate-start10m/) solution, you will only be offered the [Personal Hosting](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) plan. However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/).
+If you change your [Start10M](https://docs.ovh.com/gb/en/hosting/activate-start10m/) solution, you will only be offered the [Personal Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/). However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 Please follow [these instructions](#modify) to change your plan.
 
