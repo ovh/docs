@@ -90,7 +90,7 @@ Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde j�
 
 A OVHcloud oferece uma aplicação web que permite aceder ao seu endereço de e-mail a partir do seu browser acessível no endereço <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
  
-# Quer mais?
+## Quer saber mais?
 
 [Configurar uma conta E-mail Pro na aplicação Correio para Windows](https://docs.ovh.com/pt/emails-pro/mail-configuration-windows-10/)
 

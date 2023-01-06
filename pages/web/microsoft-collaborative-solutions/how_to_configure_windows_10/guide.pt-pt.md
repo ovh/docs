@@ -68,7 +68,7 @@ Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde j�
 
 A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](hthttps://www.ovhcloud.com/pt/emails/) . Este endereço está disponível em <hthttps://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
-# Quer mais?
+## Quer saber mais?
 
 [Configurar um endereço de e-mail no serviço MX Plan ou num serviço de alojamento web na aplicação Correio para Windows 10](https://docs.ovh.com/pt/emails/mail-configuration-windows-10/) 
 
