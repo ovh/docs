@@ -55,7 +55,7 @@ Par exemple, la flavor b2-30 définit 8 vCPU, 30 Go de RAM et 200 Go d'espace di
 
 ### OpenStack
 
-OpenStack est la suite logiciellle utilisée par OVHcloud pour construire le socle du service Public Coud. Au fil des années, cette technologie est devenu un standard du marché et un bon nombre d'outils sont directement compatibles OpenStack.
+OpenStack est la suite logiciellle utilisée par OVHcloud pour construire le socle du service Public Cloud. Au fil des années, cette technologie est devenu un standard du marché et un bon nombre d'outils sont directement compatibles OpenStack.
 
 ### Volume
 
