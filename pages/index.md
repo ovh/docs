@@ -876,7 +876,7 @@
             + [Managing in the Control panel](public-cloud-management-project-management-managing-in-the-control-panel)
                 + [Replacing your lost SSH key pair](platform/public-cloud/replacing_lost_ssh_key)
                 + [Putting an instance in rescue mode](platform/public-cloud/put_an_instance_in_rescue_mode)
-                + [Putting a Metal instance in rescue mode](platform/public-cloud/rescue_mode_metal_instance/)
+                + [Putting a Metal instance in rescue mode](platform/public-cloud/rescue_mode_metal_instance)
                 + [Deploying a GPU instance](platform/public-cloud/deploy_a_gpu_instance)
                 + [Using instance backups to create or restore an instance](platform/public-cloud/create_restore_a_virtual_server_with_a_backup)
                 + [Resize an instance](platform/public-cloud/resize_instance_manager)
