@@ -27,12 +27,12 @@ Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fr
 
 > [!warning]
 >
-> **Avant** tout changement sur votre abonnement actuel, vérifiez si vous êtes concerné par l'une de ces questions :
+> **Prima** di apportare qualsiasi modifica al tuo abbonamento attuale, verifica se hai a che fare con una di queste domande:
 >
-> - [Comment faire évoluer mon offre gratuite Start 10M vers une offre d'hébergement web ?](#start10m)
-> - [Comment bénéficier d'un gain de performance temporaire sur mon offre d'hébergement performance ?](#boost)
-> - [Vais-je perdre le temps restant sur mon offre d'hébergement actuelle lors de mon changement d'offre ?](#billing)
-> - [Est-il possible de changer mon offre actuelle vers une offre inférieure ?](#checks)
+> - [Come far evolvere la tua offerta gratuita Start 10M verso un'offerta di hosting Web?](#start10m)
+> - [Come usufruire di prestazioni aggiuntive temporanee sulla tua offerta di hosting Performance?](#boost)
+> - [Perdero' il tempo restante sulla tua offerta di hosting attuale al momento della modifica dell'offerta?](#billing)
+> - [È possibile modificare la tua offerta corrente verso un'offerta inferiore?](#checks)
 >
 
 Prima di effettuare la modifica verso una gamma inferiore, verifica i 6 elementi seguenti:
@@ -137,7 +137,7 @@ Se l'opzione **Boost** è perfetta per te, ecco le istruzioni per **attivare** o
 > [!tabs]
 > **Attiva l'opzione Boost**
 >>
->> Nel riquadro `Informazioni generali` del tuo hosting, clicca sul pulsante`...`{.action} a destra di `Boost` e poi su `Boost` `{.action}.<br><br>
+>> Nel riquadro `Informazioni generali` del tuo hosting, clicca sul pulsante `...`{.action} a destra di `Boost`{.action}  e poi su `Boost`{.action}.<br><br>
 >> ![boost](images/enable_boost.png){.thumbnail}<br>
 >>
 > **Disattiva l'opzione Boost**
@@ -155,7 +155,7 @@ Questo calcolo corrisponde alla differenza di prezzo tra la tua offerta iniziale
 >
 > Il 1° gennaio 2022 hai sottoscritto un abbonamento [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/).
 >
-> Il 31 ottobre 2022, passa da questa offerta **Personale** a un abbonamento sull'offerta [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
+> Il 31 ottobre 2022, passa da questa offerta **Personale** a un abbonamento sull'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/).<br>
 >
 > Di conseguenza, l'importo corrispondente alla durata residua dell'abbonamento **Personale** (2 mesi, dal 1o novembre 2022 al 1o gennaio 2023) viene automaticamente detratto dal costo del nuovo abbonamento **Pro** fino al 1o gennaio 2023. Pagherete solo la differenza.
 > A partire dal 1° gennaio 2023, l'abbonamento Pro ti verrà fatturato alla tariffa in vigore.

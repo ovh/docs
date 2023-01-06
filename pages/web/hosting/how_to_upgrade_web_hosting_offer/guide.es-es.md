@@ -140,7 +140,7 @@ Si la opción **Boost** se ajusta a sus necesidades, a continuación se indican 
 >>
 > **Desactivar la opción Boost**
 >>
->> En la pestaña `Plus` del alojamiento, haga clic en `"Mejorar mi plan`{.action}".<br>
+>> En la pestaña `Plus` del alojamiento, haga clic en `Mejorar mi plan`{.action}.<br>
 >> Se mostrará la tabla de uso de la opción Boost. Haga clic en `Desactivar el plan "boost`{.action}".<br><br>
 >> ![boost](images/disable_boost.png){.thumbnail}<br>
 

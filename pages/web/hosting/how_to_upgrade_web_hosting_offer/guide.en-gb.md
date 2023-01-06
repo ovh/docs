@@ -149,7 +149,7 @@ This calculation corresponds to the price difference between your initial soluti
 >
 > You subscribed to a [Personal Hosting](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) subscription on January 1, 2022.
 >
-> On October 31, 2022, you will upgrade from this **Personal** plan to a subscription on the plan >
+> On October 31, 2022, you will upgrade from this **Personal** plan to a subscription on the plan [Professional](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
 >
 > Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Professional** subscription, until January 1, 2023. You will only pay the difference.
 > From 1st January 2023, you will then be billed for your Professional subscription at its current price.
