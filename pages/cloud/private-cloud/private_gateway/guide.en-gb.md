@@ -6,13 +6,19 @@ section: OVHcloud Features
 hidden: true
 ---
 
-**Last updated 20th August 2021**
+**Last updated 06th January 2023**
 
 ## Objective
 
 The vSphere interface is accessible by default over the Internet. For infrastructures that can be managed through the vRack private network, vSphere access can be switched over to the vRack through the private gateway.
 
 **This guide explains how to enable private gateway on your Hosted Private Cloud infrastructure through the OVHcloud API.**
+
+> [!warning]
+> Do not enable the Private Gateway if you are using the Disaster Recovery Plan solution [Zerto](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/zerto/) as this would cause Zerto to fail.
+>
+
+
 
 > [!warning]
 >
