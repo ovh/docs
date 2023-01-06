@@ -217,7 +217,7 @@ Working Devices : 2
 Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command: 
 
 ```sh
-sfdisk -d /dev/sdb | sfdisk /dev/sda 
+sgdisk -R /dev/sda /dev/sdb
 ```
 
 We can now rebuild the RAID array. The following code snippet shows how we can rebulid the `/dev/md2` partition layout with the recently-copied sda partition table: 
