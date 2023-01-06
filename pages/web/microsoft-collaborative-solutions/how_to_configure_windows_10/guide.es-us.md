@@ -27,7 +27,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 Abra la aplicación Correo en su dispositivo. Puede añadir una cuenta de dos formas distintas:
 
 - **Si es la primera vez que usa la aplicación**, haga clic en el botón `Agregar cuenta`{.action}.
--  **Si ya tiene una cuenta configurada**, haga clic en `Cuentas`{.action} en el menú izquierdo y, en el menú que aparecerá a la derecha, haga clic en `Agregar cuenta`{.action}.
+- **Si ya tiene una cuenta configurada**, haga clic en `Cuentas`{.action} en el menú izquierdo y, en el menú que aparecerá a la derecha, haga clic en `Agregar cuenta`{.action}.
 
 ![exchange](images/configuration-mail-windows-step1.png){.thumbnail}
 
