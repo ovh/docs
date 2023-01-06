@@ -124,7 +124,7 @@ With the [Boost option](https://www.ovhcloud.com/en-gb/web-hosting/options/boost
 
 > [!warning]
 >
-> When you choose to enable the Boost option, the option remains active and charged **until you disable it**.
+> When you choose to enable the Boost option, the option remains active and is billed **until you disable it**.
 
 If the **Boost** option suits your needs, below are the instructions for **enabling** or **disabling** this option on your web hosting plan.
 
