@@ -1,6 +1,7 @@
 account-and-service-management-account-information: Account-Informationen
 account-and-service-management-account-information-faq: FAQ
 account-and-service-management-account-information-getting-started: Erste Schritte
+account-and-service-management-account-information-users: Erstellen und Verwalten von Nutzern
 account-and-service-management-account-information-security-and-conformity: Sicherheit und Konformität
 account-and-service-management-api: API
 account-and-service-management-api-apiv6: APIv6
@@ -81,6 +82,9 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: Tanzu
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Netzwerk
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking-secnumcloud-connectivity: SecNumCloud Connectivity
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: vROps
+hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
+hosted-private-cloud-sap-ovhcloud-getting-started: Erste Schritte
+hosted-private-cloud-sap-ovhcloud-advanced-usage: Fortgeschrittene Anwendung
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Erste Schritte
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
