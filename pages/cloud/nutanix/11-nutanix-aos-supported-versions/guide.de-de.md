@@ -35,7 +35,7 @@ Nutanix offers two versions of AOS that are regularly updated:
 
 When a **LTS** or **STS** version is released, the previous version is supported for three months.
 
-OVHcloud integrates LTS versions with the **Hosted Private Cloud powered by Nutanix** product on their release dates, once a year. For STS versions, OVHcloud includes a maximum of 3 STS versions per year in the **Hosted Private Cloud powered by Nutanix** product, on Nutanix release dates.
+OVHcloud integrates LTS versions with the **Nutanix on OVHcloud** product on their release dates, once a year. For STS versions, OVHcloud includes a maximum of 3 STS versions per year in the **Nutanix on OVHcloud** product, on Nutanix release dates.
 
 > [!warning]
 >

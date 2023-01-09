@@ -20,11 +20,6 @@ Gli account Exchange possono essere configurati su client di posta compatibili, 
 - Aver installato l’applicazione Posta sul proprio dispositivo
 - Disporre delle credenziali associate all’account email da configurare
 
-> [!primary]
->
-> Utilizzi una versione precedente di Windows? Consulta la guida: [Configurare un account di posta elettronica con l’applicazione Posta per Windows 8](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_configurazione_di_windows_8/){.external}.
->
-
 ## Procedura
 
 ### Step 1: aggiungi il tuo account

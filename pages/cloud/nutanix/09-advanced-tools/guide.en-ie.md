@@ -1,7 +1,7 @@
 ---
 title: Advanced tools
 slug: advanced-tools
-excerpt: Presentation of various advanced tools available for the Hosted Private Cloud powered by Nutanix offer
+excerpt: Presentation of various advanced tools available for the Nutanix on OVHcloud offer
 section: Advanced use
 order: 01
 ---

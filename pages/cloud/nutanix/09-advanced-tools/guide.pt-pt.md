@@ -3,7 +3,7 @@ title: Ferramentas avançadas (EN)
 slug: advanced-tools
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/advanced-tools/'
-excerpt: Presentation of various advanced tools available for the Hosted Private Cloud powered by Nutanix offer
+excerpt: Presentation of various advanced tools available for the Nutanix on OVHcloud offer
 section: Utilização avançada
 order: 01
 ---

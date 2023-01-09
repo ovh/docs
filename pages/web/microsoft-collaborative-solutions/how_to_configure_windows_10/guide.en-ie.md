@@ -20,11 +20,6 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 - You must have Microsoft Outlook installed on your device.
 - You need to have the required credentials for the email address you would like to configure.
 
-> [!primary]
->
-> Are you using a previous version of Windows? Please read this guide: [Configuring your email address in the Mail application for Windows 8](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/exchange_2013_configuration_on_windows_8/){.external}.
->
-
 ## Instructions
 
 ### Step 1: Add the account

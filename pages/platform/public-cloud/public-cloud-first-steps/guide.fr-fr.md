@@ -10,7 +10,7 @@ order: 04
 
 ## Objectif
 
-Les instances Pubic Cloud OVHcloud nécessitent une approche différente de celle d'une solution de serveur dédiée ou VPS.
+Les instances Public Cloud OVHcloud nécessitent une approche différente de celle d'une solution de serveur dédiée ou VPS.
 
 **Ce guide vous présente les premières étapes de la création et de la connexion à une instance Public Cloud.**
 

@@ -6,7 +6,7 @@ section: Advanced use
 order: 03
 hidden: true
 kb: Hosted Private Cloud
-category_l1: Hosted Private Cloud powered by Nutanix
+category_l1: Nutanix on OVHcloud
 category_l2: Advanced usage
 ---
 

@@ -20,11 +20,6 @@ Konta Exchange można skonfigurować w różnych kompatybilnych programach poczt
 - Instalacja aplikacji Poczta na Twoim urządzeniu
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
-> [!primary]
->
-> Czy używasz wcześniejszej wersji oprogramowania Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w aplikacji Poczta na urządzeniu z systemem Windows 8](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_konfiguracja_w_systemie_windows_8/){.external}.
->
-
 ## W praktyce
 
 ### Etap 1: dodanie konta
