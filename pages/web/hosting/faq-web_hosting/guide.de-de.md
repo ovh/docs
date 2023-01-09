@@ -50,7 +50,7 @@ Lesen Sie die Anleitung "[Mehrere Websites auf einem Webhosting einrichten](http
 
 ## Wie kann ich das Hosting-Angebot ändern?
 
-Um das Webhosting-Angebot zu bestellen, das am besten zu Ihren Bedürfnissen passt, können Sie unsere Angebote auf [diese Seite](https://www.ovhcloud.com/de/web-hosting/) einsehen.
+Um das Webhosting-Angebot zu bestellen, das am besten zu Ihren Bedürfnissen passt, können Sie unsere Angebote auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/) vergleichen.
 
 Wenn Sie Ihre Wahl getroffen haben, folgen Sie den Anweisungen in unserer Anleitung [Webhosting Angebot upgraden](https://docs.ovh.com/de/hosting/how_to_change_web_hosting_offer/).
 
