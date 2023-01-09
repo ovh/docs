@@ -6,11 +6,11 @@ section: Optimise your website
 order: 02
 ---
 
-**Last updated 22nd June 2022**
+**Last updated 3rd January 2023**
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-gb/web-hosting/) to have more compute resources, storage space, databases or email addresses. Additional features such as [mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-gb/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 
@@ -46,9 +46,9 @@ Then select your new subscription and its duration. Confirm the corresponding co
 
 > [!warning]
 >
-> You can only change your subscription to a lower range plan if it is the immediate **lower** range plan.
-> For example, you cannot switch from a *Performance 2* formula to a *Professional* formula in a single operation.
-> You will **first** need to upgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* **plan, then** to the *Professional plan*.
+> You can only change your subscription to a lower range plan if it is the **immediate lower range** plan.
+> For example, you cannot switch from *Performance 2* to *Professional* in a single operation.
+> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Professional* plan.
 
 Before you make your switch to a lower range, check the following 6 items:
 
@@ -60,11 +60,11 @@ Before you switch from the [Personal](https://www.ovhcloud.com/en-gb/web-hosting
 
 #### 2 - Start SQL databases
 
-Before moving your hosting plan to a lower plan, please ensure that the new plan has enough [databases](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/). Also make sure they are of sufficient size.
+Before moving your hosting to a lower plan, please ensure that the new plan has enough [databases](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/). Also make sure they are of sufficient size.
 
 Otherwise, delete unused databases and reduce the amount of data they contain, if necessary. This quantity must not exceed the maximum size of the databases in the new solution (for any requests for assistance with the operations to be carried out, contact the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/)).
 
-If you have deleted data from your databases, you can recalculate the quota used from the `Databases`{.action} tab in the `Hosting`{.action} section of the OVHcloud Control Panel. Click on the `...`{.action} button to the right of the database concerned, then `Recalculate the quota`{.action}.
+If you have deleted data from your databases, you can recalculate the quota from the `Databases`{.action} tab in the `Hosting plans`{.action} section of the OVHcloud Control Panel. Click on the `...`{.action} button to the right of the database concerned, then `Recalculate the quota`{.action}.
 
 ![quota](images/quota.png){.thumbnail}
 
@@ -94,7 +94,7 @@ The quota used on your FTP hosting plan is visible in the `Hosting plans`{.actio
 
 Please also check that your new solution has a sufficient number of available email accounts. Otherwise, delete the extra accounts, after you have [backed up](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/) the contents if necessary.
 
-If you would like to keep the same number of email accounts, before moving your web hosting to a lower plan, you can also order a new **MX Plan** email solution. In the `Emails`{.action} section of the OVHcloud Control Panel, click on the solution concerned, then on the `...`{.action} button to the right of the `solution`. Next, click `Change solution`{.action}.
+If you would like to keep the same number of email accounts, before moving your web hosting to a lower plan, you can also order a new **MX Plan** email solution. In the `Emails`{.action} section of the OVHcloud Control Panel, click on the solution concerned, then on the `...`{.action} button to the right of `Solution`. Next, click `Change solution`{.action}.
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Please follow [these instructions](#modify) to change your plan.
 
 #### Boost your Performance web hosting plan temporarily <a name="boost"></a>
 
-With the [Boost option](https://www.ovhcloud.com/en-gb/web-hosting/options/boost/), available on our *Performance* plans, you can temporarily increase your hosting system’s CPU and RAM resources to absorb seasonal traffic spikes. If this increase is prolonged over time, you can also [switch to the higher-level Performance plan](#modify) to have these resources permanently.
+With the [Boost option](https://www.ovhcloud.com/en-gb/web-hosting/options/boost/), available on our *Performance* plans, you can temporarily increase your hosting system’s CPU and RAM resources to absorb seasonal traffic spikes. If this increase is prolonged over time, you can also [switch to a higher-level Performance plan](#modify) to have these resources permanently.
 
 > [!warning]
 >
@@ -131,7 +131,7 @@ If the **Boost** option suits your needs, below are the instructions for **enabl
 > [!tabs]
 > **Enable the Boost option**
 >>
->> In the `General informations` section of your Web Hosting plan, click on the `...`{.action} button to the right of `Boost`, then `Boost my plan`{.action}.<br><br>
+>> In the `General information` section of your Web Hosting plan, click on the `...`{.action} button to the right of `Boost`, then `Boost my plan`{.action}.<br><br>
 >> ![boost](images/enable_boost.png){.thumbnail}<br>
 >>
 > **Disable the Boost option**
@@ -149,7 +149,7 @@ This calculation corresponds to the price difference between your initial soluti
 >
 > You subscribed to a [Personal Hosting](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) subscription on January 1, 2022.
 >
-> On October 31, 2022, you will upgrade from this **Personal** plan to a subscription on the plan [Professional](https://www.ovhcloud.com/fr/web-hosting/professional-offer/).<br>
+> On October 31, 2022, you upgrade from this **Personal** plan to a [Professional plan](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/).<br>
 >
 > Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Professional** subscription, until January 1, 2023. You will only pay the difference.
 > From 1st January 2023, you will then be billed for your Professional subscription at its current price.
