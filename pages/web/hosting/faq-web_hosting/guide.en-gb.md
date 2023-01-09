@@ -48,7 +48,7 @@ See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.
 
 To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](https://www.ovhcloud.com/en-gb/web-hosting/).
 
-Once you have made your choice, follow the instructions in our guide [Developing a web hosting plan](https://docs.ovh.com/gb/en/hosting/how_to_change_web_hosting_offer/).
+Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](https://docs.ovh.com/gb/en/hosting/how_to_change_web_hosting_offer/).
 
 ### How do I keep the email offer linked to my hosting plan when cancelling?
 
