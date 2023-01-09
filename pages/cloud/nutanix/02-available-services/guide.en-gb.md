@@ -1,7 +1,7 @@
 ---
 title: List of included services and licences
 slug: available-services
-excerpt: 'Presentation of the included services and licences in the Hosted Private Cloud powered by Nutanix offer'
+excerpt: 'Presentation of the included services and licences in the Nutanix on OVHcloud offer'
 section: Getting started
 order: 02
 ---
@@ -10,14 +10,14 @@ order: 02
 
 ## Objective
 
-This page lists the included Nutanix licences and services in the **Hosted Private Cloud powered by Nutanix** offer.
+This page lists the included Nutanix licences and services in the **Nutanix on OVHcloud** offer.
 
-## Scope of included Nutanix licences and services in the Hosted Private Cloud powered by Nutanix offer
+## Scope of included Nutanix licences and services in the Nutanix on OVHcloud offer
 
-Only the Nutanix licences and services listed on this page are available in the Hosted Private Cloud powered by Nutanix offer.<br>
+Only the Nutanix licences and services listed on this page are available in the Nutanix on OVHcloud offer.<br>
 If the licence or service you are looking for is not available, please refer to the [Hosted Private Cloud GitHub roadmap](https://github.com/ovh/hosted-private-cloud-roadmap/projects/3) as a first step.
 
-Hosted Private Cloud powered by Nutanix offers two licence packs:
+Nutanix on OVHcloud offers two licence packs:
 
 - **Nutanix Standard Pack**
 - **Nutanix Advanced Pack** includes licences and services from the **Nutanix Standard Pack**, plus additional licences and services to support more advanced uses such as higher-performance replication, multiple sites, advanced data encryption capabilities, and Disaster Recovery Plan options. 

@@ -7,7 +7,7 @@ order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-veeam-backup/'
 kb: Hosted Private Cloud
-category_l1: Hosted Private Cloud powered by Nutanix
+category_l1: Nutanix on OVHcloud
 category_l2: Backups
 ---
 

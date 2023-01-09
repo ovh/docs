@@ -5,7 +5,7 @@ excerpt: "Découvrez comment configurer et utiliser Nutanix Flow"
 section: Réseau et sécurité
 order: 09
 kb: Hosted Private Cloud
-category_l1: Hosted Private Cloud powered by Nutanix
+category_l1: Nutanix on OVHcloud
 category_l2: Networking and security
 ---
 
@@ -13,7 +13,7 @@ category_l2: Networking and security
 
 ## Objectif
 
-Nutanix Flow est disponible sur toutes les offres **Hosted Private Cloud Powered by Nutanix**. Cette option permet de sécuriser le réseau dans un ou plusieurs clusters gérés par **Prism Central**
+Nutanix Flow est disponible sur toutes les offres **Nutanix on OVHcloud**. Cette option permet de sécuriser le réseau dans un ou plusieurs clusters gérés par **Prism Central**
 
 **Apprenez à utiliser Nutanix Flow pour la sécurisation du réseau au sein d'un cluster Nutanix.**
 

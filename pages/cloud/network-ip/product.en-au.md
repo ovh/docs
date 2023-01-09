@@ -2,7 +2,7 @@
 title: 'Network & IP'
 slug: network-ip
 excerpt: 'OVHcloud Network & IP Solutions User Guides'
-sections: Bring Your Own IP, Additional IP, SecNumCloud Connectivity, Our network & IP guides for Web Cloud Hosting plans, Our network & IP guides for VPS, Our network & IP guides for Dedicated Servers, Our network & IP guides for Hosted Private Cloud powered by VMware, Our network & IP guides for Hosted Private Cloud powered by Nutanix, Our network & IP guides for Public Cloud
+sections: Bring Your Own IP, Additional IP, SecNumCloud Connectivity, Our network & IP guides for Web Cloud Hosting plans, Our network & IP guides for VPS, Our network & IP guides for Dedicated Servers, Our network & IP guides for Hosted Private Cloud powered by VMware, Our network & IP guides for Nutanix on OVHcloud, Our network & IP guides for Public Cloud
 order: 08
 ---
 

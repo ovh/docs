@@ -1,7 +1,7 @@
 ---
 title: Outils avancés
 slug: advanced-tools
-excerpt: "Présentation de divers outils avancés disponibles pour l'offre Hosted Private Cloud powered by Nutanix"
+excerpt: "Présentation de divers outils avancés disponibles pour l'offre Nutanix on OVHcloud"
 section: Utilisation avancée
 order: 01
 ---
