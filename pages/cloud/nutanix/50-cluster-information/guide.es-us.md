@@ -12,7 +12,7 @@ order: 01
 
 ## Objective
 
-In order to optimise the handling of support tickets for Hosted Private Cloud powered by Nutanix, it is essential to provide OVHcloud teams with a set of information on the status of your Nutanix installation.
+In order to optimise the handling of support tickets for Nutanix on OVHcloud, it is essential to provide OVHcloud teams with a set of information on the status of your Nutanix installation.
 
 **This guide explains how to retrieve essential information on the status of your Nutanix cluster.**
 
