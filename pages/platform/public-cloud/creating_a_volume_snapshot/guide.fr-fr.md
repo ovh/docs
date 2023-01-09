@@ -6,7 +6,7 @@ section: Stockage
 order: 2
 ---
 
-**Dernière mise à jour le 18/01/2022**
+**Dernière mise à jour le 09/01/2023**
 
 ## Objectif
 
@@ -35,7 +35,15 @@ A droite du volume concerné, cliquez sur `...`{.action} puis sur `Créer un sna
 
 Dans la fenêtre qui apparaît, vous pouvez donner un nom différent au snapshot. Prenez connaissance des informations tarifaires, puis cliquez sur `Créer un snapshot`{.action}.
 
-Le temps de création du snapshot dépend de la quantité de données présentes sur le volume.
+Le temps de création du snapshot dépend de la quantité de données présentes sur le volume, de l'utilisation des ressources de l'instance au moment du snapshot et d'autres facteurs spécifiques à l'hôte.
+
+Nous vous recommandons donc d'effectuer vos snapshots en dehors de vos heures de production. 
+
+D'autres bonnes pratiques incluent :
+
+- éviter de créer des snapshots aux heures de pointe (22h00 - 04h00 heure de Paris)
+- Installez l'agent qemu-guest si ce n'est pas fait ou essayez de le désactiver si nécessaire.
+- essayer de ne pas trop "solliciter" le serveur pendant la phase de création du snapshot (limitation des I/O, consommation de RAM, etc.)
 
 Un snapshot de volume étant un clone de l'ensemble du disque, il aura la taille maximale du volume d'origine, quelle que soit l'allocation réelle d'espace disque.
 
