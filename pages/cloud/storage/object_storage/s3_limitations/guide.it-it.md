@@ -1,7 +1,7 @@
 ---
 title: Object Storage - Limiti tecnici (EN)
 slug: s3/limitations
-excerpt: Find here information on the Object Storage S3 Object Storage limitations
+excerpt: Find here the technical limits of the S3 Object Storage offer
 section: General information
 order: 025
 routes:
@@ -14,11 +14,11 @@ routes:
 
 This page provides an overview of the technical limitations of the S3 Object Storage offer.
 
-### Maximum number of containers in storage
+### Maximum number of buckets per project
 
 100
 
-### Maximum number of objects in a container
+### Maximum number of objects in a bucket
 
 Unlimited
 

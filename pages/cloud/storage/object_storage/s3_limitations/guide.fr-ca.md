@@ -12,11 +12,11 @@ order: 025
 
 Retrouvez ici les limites techniques relatives à l'offre S3 Object Storage.
 
-### Nombre maximum de conteneurs dans un stockage
+### Nombre maximum de buckets par projet
 
 100
 
-### Nombre maximum d'objets dans un conteneurs
+### Nombre maximum d'objets dans un bucket
 
 Illimité
 
