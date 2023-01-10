@@ -59,8 +59,8 @@ At the end of this tutorial you should have the following flow:
 
 ## Pre-requisites
 
-- A [Public Cloud project](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/) in your OVHcloud account.
-- The [OpenStack API CLI](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/) installed.
+- A [Public Cloud project](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/) in your OVHcloud account.
+- The [OpenStack API CLI](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) installed.
 - Be familiar with the [OVHcloud API](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
 - The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
 

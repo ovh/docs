@@ -74,7 +74,7 @@ Fill the fields to create a new node pool.
 The subsequent node pool configuration steps are described in [Creating a cluster](../creating-a-cluster/).
 
 > [!primary]
-> To learn more about the flavors of the current OVHcloud range, [refer to this page](https://www.ovhcloud.com/en-ie/public-cloud/prices/).
+> To learn more about the flavors of the current OVHcloud range, [refer to this page](https://www.ovhcloud.com/asia/public-cloud/prices/).
 
 
 ### Deleting a node pool
