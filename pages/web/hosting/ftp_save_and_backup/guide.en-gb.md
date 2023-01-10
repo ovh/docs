@@ -138,7 +138,7 @@ You will need to enter your primary username (or FTP login) with a suffix determ
 |One day ago, at 00:01 (UTC+1)|-snap1|ftpuser**-snap1**|
 |Two days ago, at 00:01 (UTC+1)|-snap2|ftpuser**-snap2**|
 |Last Sunday, at 01:00 (UTC+1)|-snap3|ftpuser**-snap3**|
-|Sunday, 2 weeks ago, at 01:00|-snap4|ftpuser**-snap4**|
+|Sunday, 2 weeks ago, at 01:00 (UTC+1)|-snap4|ftpuser**-snap4**|
 
 Please ensure that you replace ‘ftpuser’ with with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
 
@@ -154,7 +154,7 @@ Before you move on to the next step, ensure that you have gathered all the files
 
 #### Step 4: Restore the files.
 
-Once you have got the files you need to restore, connect to your storage space again. This time, however, do not add your FTP username to connect. By not entering this suffix, you will connect to the current content on your storage space, and not a backup from an earlier date.
+Once you have got the files you need to restore, connect to your storage space again. This time, however, do not add the suffix to connect but write only the FTP username. By not entering this suffix, you will connect to the current content on your storage space, and not a backup from an earlier date.
 
 Once you have connected, you can now restore the files you want. To do this, explore the content of your storage space until you find them, then download them, overwriting the old files.
 
