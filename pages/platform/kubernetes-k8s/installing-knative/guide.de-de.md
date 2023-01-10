@@ -303,7 +303,7 @@ kubectl patch configmap/config-domain \
   --patch '{"data":{"knative.my-website.com":""}}'
 ```
 
-For more information about DNS on OVHcloud, please read our guide on [how to configure a DNS zone](https://docs.ovh.com/de/domains/web_hosting_how_to_edit_my_dns_zone/).
+For more information about DNS on OVHcloud, please read our guide on [how to configure a DNS zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
 
 ### Deploying an application
 

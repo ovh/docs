@@ -364,7 +364,7 @@ $ echo $INGRESS_URL
 135.125.84.194
 </code></pre>
 
-If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/fr/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](https://docs.ovh.com/fr/domains/web_hosting_how_to_edit_my_dns_zone/).
+If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/fr/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
 
 If you are using an external DNS provider, please configure your domain before reading the rest of this tutorial.
 
