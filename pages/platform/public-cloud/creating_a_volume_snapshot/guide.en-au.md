@@ -6,7 +6,7 @@ section: Storage
 order: 2
 ---
 
-**Last updated 18th January 2022**
+**Last updated 9th January 2023** 
 
 ## Objective
 
@@ -34,7 +34,15 @@ In the row of the volume concerned, click on `...`{.action} and select `Create a
 
 In the popup window, you can enter a different name for the snapshot. Take note of the pricing information, then click on `Take a snapshot`{.action}.
 
-The snapshot creation time depends on the amount of data on the volume.
+The snapshot creation time may take several hours, depending on the amount of data present on the volume, the instance resource utilization at the time of the snapshot and other host-specific factors.
+
+We therefore recommend that you perform your snapshots outside of your production hours. 
+
+Other best practices include:
+
+- Avoid creating snapshots during peak hours (04:00 AM - 10:00 PM Paris time).
+- Install the qemu-guest agent if it is not installed... or try to disable it if necessary.
+- Try not to "solicit" the server too much during the snapshot creation phase (I/O limitation, RAM consumption, etc.).
 
 Since a volume snapshot is a clone of the entire disk, it will have the maximum size of the original volume, regardless of the actual disk space allocation.
 

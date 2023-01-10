@@ -50,29 +50,9 @@ Consulte la guía "[Alojar varios sitios web en un mismo hosting](https://docs.o
 
 ### ¿Cómo cambiar de plan de alojamiento?
 
-> [!primary]
->
-> Para contratar el plan de hosting más adecuado para usted, consulte [esta página](https://www.ovhcloud.com/fr/web-hosting/).
->
+Para contratar el plan de hosting más adecuado para usted, puede consultar nuestros planes en [esta página](https://www.ovhcloud.com/es-es/web-hosting/).
 
-Para cambiar de plan de [hosting](https://www.ovhcloud.com/fr/web-hosting/), acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento en la sección `Web Cloud`{.action}. A continuación, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y, en la sección `Suscripción`, haga clic en el botón `...`{.action} en el apartado `Producto` y luego en `Cambiar de producto`{.action}.
-
-A continuación, seleccione la nueva fórmula de alojamiento y la duración de la nueva suscripción. Lea los contratos correspondientes y haga clic en `Enviar`{.action}.
-
-> [!warning]
->
-> Antes de cambiar a un plan "inferior" (por ejemplo, antes de pasar de un plan [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) a un plan [Personal](https://www.ovhcloud.com/fr/web-hosting/personal-offer/)), compruebe que su uso es compatible con su nueva fórmula:
->
-> - Si ha creado demasiadas direcciones de correo para cambiar a un plan inferior, guarde y elimine las direcciones menos utilizadas.
->
-> - Si la cuota del nuevo plan de hosting es insuficiente, conéctese por [FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) al alojamiento, guarde y elimine los directorios y archivos no necesarios.
->
-> - Si su nuevo plan de hosting incluye un número insuficiente de bases de datos o un volumen de almacenamiento, guarde y elimine los datos o las bases de datos no utilizadas. También puede contratar una [oferta de servidores de bases de datos](https://www.ovh.com/fr/cloud-databases/).
->
-> - Si ha creado listas de [correo](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) con su plan de hosting, compruebe que la nueva solución incluya esta funcionalidad.
->
-> En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) o con nuestra [comunidad de usuarios](https://community.ovh.com/en/).
->
+A continuación, siga las indicaciones de nuestra guía ["Mejorar el plan de hosting"](https://docs.ovh.com/es/hosting/how_to_change_web_hosting_offer/).
 
 ### ¿Cómo conservar la solución de correo asociada a mi alojamiento compartido cuando se da de baja el servicio?
 

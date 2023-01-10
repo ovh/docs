@@ -36,6 +36,12 @@ To follow the steps required to build your website, go to this [page](https://ww
 
 **Tips and tricks**: To help you create your website, OVHcloud allows you to install website creation support software (WordPress, PrestaShop, Joomla! and Drupal) on your hosting plan, with the [1-click modules](https://docs.ovh.com/sg/en/hosting/web_hosting_web_hosting_modules/) feature.
 
+### How do I change my hosting plan?
+
+To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](https://www.ovhcloud.com/en-sg/web-hosting/).
+
+Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](https://docs.ovh.com/sg/en/hosting/how_to_change_web_hosting_offer/).
+
 ### How do I transfer my website and emails to OVHcloud servers? 
 
 Read our guide on [Migrating your website and emails to OVHcloud](https://docs.ovh.com/sg/en/hosting/migrating-website-to-ovh/).

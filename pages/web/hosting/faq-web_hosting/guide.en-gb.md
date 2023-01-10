@@ -46,29 +46,9 @@ See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.
 
 ### How do I change my hosting plan?
 
-> [!primary]
->
-> To order the Web Hosting plan that best suits your needs, visit [this page](https://www.ovhcloud.com/en-gb/web-hosting/).
->
+To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](https://www.ovhcloud.com/en-gb/web-hosting/).
 
-To change your [shared hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on `Web Cloud`{.action}, then on `Hosting plans`{.action}. Select the Web Hosting plan concerned, then, in the `Plan` section, click on the `...`{.action} button in the `Solution` part, then on `Change plan`{.action}.
-
-Then select your new hosting plan and the duration of your new subscription. Review the corresponding contracts, then click on `Send`{.action}.
-
-> [!warning]
->
-> Before switching to a "lower" offer (for example, before switching from a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) offer to a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) offer), check that your hosting usage is compatible with your new plan:
->
-> - If you have created too many email addresses to upgrade to a lower plan, save and then delete the least used addresses.
->
-> - If the quota for the new hosting plan is insufficient, log in to your hosting plan via [FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/), save and delete any unnecessary folders and files.
->
-> - If your new hosting plan does not have enough databases or storage volume, back up and delete any unused data or databases. You can also order a [database server solution](https://www.ovh.co.uk/cloud/cloud-databases/).
->
-> - If you have created [mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) with your hosting plan, please check that the new plan includes this feature.
->
-> If you have any doubts about the changes you need to make, contact our [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) or our [community of users](https://community.ovh.com/en/).
->
+Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](https://docs.ovh.com/gb/en/hosting/how_to_change_web_hosting_offer/).
 
 ### How do I keep the email offer linked to my hosting plan when cancelling?
 

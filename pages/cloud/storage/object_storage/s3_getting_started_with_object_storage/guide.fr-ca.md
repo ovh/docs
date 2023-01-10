@@ -36,7 +36,7 @@ user@host:~$ pip3 install awscli awscli-plugin-endpoint
 > - Installez le package `groff` si vous souhaitez utiliser l'aide en ligne de commande.
 >
 
-#### Collecter les informatoons d'identification
+#### Collecter les informations d'identification
 
 - Vous aurez besoin de l'*Access key* et de la *Secret key* de votre utilisateur. Ces informations sont accessibles depuis l'onglet `Utilisateurs S3` dans votre espace client.
 - Vous aurez également besoin de votre *url_endpoint*. Si vous avez déjà créé votre bucket, cette information est accessible depuis l'onglet `Mes conteneurs` puis dans les détails du votre bucket. En cas de besoin, suivez ce [guide](https://docs.ovh.com/ca/fr/storage/object-storage/s3/location/).
