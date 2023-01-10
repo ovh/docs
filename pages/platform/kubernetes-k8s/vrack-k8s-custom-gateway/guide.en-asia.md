@@ -65,7 +65,7 @@ At the end of this tutorial you should have the following flow:
 ## Initialization
 
 To setup a functional environment, you have to load the OpenStack and the OVHcloud API credentials.
-To help you, we have also created several useful scripts and templates for you.
+To help you we also created for you several useful scripts and templates.
 
 First, create a `utils` folder in your environment/local machine. 
 Then, download the [ovhAPI.sh](https://raw.githubusercontent.com/ovh/docs/master/pages/platform/kubernetes-k8s/vrack-k8s-custom-gateway/utils/ovhAPI.sh) script into it.
