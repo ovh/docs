@@ -24,24 +24,48 @@ Enfin, dans le cas où vous auriez déjà souscrit à une offre mais pas install
 
 ### Prérequis et configurations
 
-Le présent document fait référence à la version 8 de Prestashop sortie en octobre 2023. Le CMS fonctionne sur les versions de PHP allant de la 7.2 à la 8.1. Il est recommandé d'utiliser cette dernière version pour un fonctionnement optimal. Vous trouverez plus de détails sur la page des [prérequis techniques](https://devdocs.prestashop-project.org/8/basics/installation/system-requirements/).
+Le présent document fait référence à la version 1.7 de Prestashop. Le CMS fonctionne sur les versions de PHP allant de la 7.1 à la 7.4. Il est recommandé d'utiliser cette dernière version pour un fonctionnement optimal. Vous trouverez plus de détails sur la page des [prérequis techniques](https://devdocs.prestashop-project.org/1.7/basics/installation/system-requirements/).
 
 Sur votre Manager OVH, rendez-vous sur sur l'inglet «&nbsp;Web Cloud&nbsp;», puis sélectionnez le nom de domaine sur lequel vous souhaitez installer votre solution Prestashop&nbsp;:
 
 ![Sélectionner son nom de domaine](images/prestashop_first_steps%5B1%5D.png){.thumbnail}
 
-Dans «&nbsp;Configuration&nbsp;», changez la version de PHP pour la passer en 8.1&nbsp;:
+Dans «&nbsp;Configuration&nbsp;», changez la version de PHP pour la passer en 7.4&nbsp;:
 
 ![Changer la version de PHP](images/prestashop_first_steps%5B2%5D.png){.thumbnail}
 
-Commandez également un certificat SSL&nbsp;:
+Installez également un certificat SSL. Vous pouvez vous reporter à notre guide [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
 
-![Installer un certificat SSL](images/prestashop_first_steps%5B3%5D.png){.thumbnail}
+Pensez à mettre en place la redirection de votre nom de domaine en HTTP vers HTTPS. Vous trouverez les différentes méthodes sur ce guide [Comprendre la redirection d'un nom de domaine](https://docs.ovh.com/fr/domains/redirection-nom-de-domaine/#comprendre-la-redirection-dun-nom-de-domaine).
 
 ### Installation en 1-click
+
+Cliquez sur l'onglet «&nbsp;Modules en 1 clic&nbsp;»&nbsp;:
+
+![Modules en 1 clic](images/prestashop_first_steps%5B3%5D.png){.thumbnail}
+
+Sélectionnez «&nbsp;Ajouter un module&nbsp;» et choisissez **Prestashop**&nbsp;:
+
+![Choisir Prestashop](images/prestashop_first_steps%5B4%5D.png){.thumbnail}
+
+Vous aurez alors le choix entre l'installation normale (par défaut) et l'installation en mode avancé.
+
+#### Installation par défaut
+
+Dans ce mode, vous n'avez qu'à choisir quel nom de domaine pointera sur votre installation. Par défaut, les fichiers de Prestashop seront disponibles dans le répertoire `./www/` de votre serveur.
+
+![Installation par défaut](images/prestashop_first_steps%5B5%5D.png){.thumbnail}
+
+Validez en cliquant sur «&nbsp;Installer&nbsp;». Votre module s'installe, vous serez notifié par mail à l'issue du processus.
+
+Une fois déployé, le module figurera dans la liste des modules installés sur votre serveur&nbsp;:
+
+![Liste des modules installés](images/prestashop_first_steps%5B6%5D.png){.thumbnail}
+
+#### Installation en mode avancé
 
 
 
 ## Aller plus loin
 
-- le site officiel de [Prestashop](https://www.prestashop.com/)r
+- le site officiel de [Prestashop](https://www.prestashop.com/)
