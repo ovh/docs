@@ -36,9 +36,17 @@ Utilisez ce guide pour ajouter un stockage plus important si vous n'avez pas enc
 
 ### Migration de vos machines virtuelles
 
-Utiliser Storage migration pour migrer les données de votre datastore obsolète vers votre nouveau datastore.
+Allez dans votre interface vCenter et vérifiez les machines virtuelles qui se trouvent sur chacun de vos datastore obsolètes.
+
+Cliquez sur l'icône de `stockage`{.action}, choisissez à gauche votre `Datastore`{.action} dans `Shared Storage`{.action} et cliquez sur l'onglet `VM`{.action} pour faire apparaitre les machines virtuelles qui se trouvent sur ce stockage obsolète.
+
+![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png)
+
+Ensuite Utiliser Storage migration pour migrer les données de votre datastore obsolète vers votre nouveau datastore.
 
 Vous pouvez utiliser ce guide pour effectuer la migration VMware Storage vMotion [VMware Storage vMotion](https://docs.ovh.com/fr/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion).
+
+Lorsque vous n'aurez plus de machines virtuelles sur votre stockage vous pourrez supprimer votre DataStore
 
 ### Suppression du stockage de votre cluster VMware
 

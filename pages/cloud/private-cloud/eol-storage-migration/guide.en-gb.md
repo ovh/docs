@@ -36,7 +36,13 @@ Use this guide to add more storage if you have not yet subscribed to a more rece
 
 ### Migrate your virtual machines
 
-Use Storage migration to migrate your data from your outdated datastore to your new datastore.
+Go to your vCenter interface and check the VMs on each of your outdated datastore.
+
+Click the `Storage`{.action} icon, select your `Datastore`{.action} in `Shared Storage`{.action} on the left and click the `VMs`{.action} tab to display the virtual machines on this obsolete storage.
+
+![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png)
+
+Then use Storage migration to migrate your data from your outdated datastore to your new datastore.
 
 You can use this guide to perform the VMware Storage vMotion migration [VMware Storage vMotion](https://docs.ovh.com/gb/en/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion).
 
