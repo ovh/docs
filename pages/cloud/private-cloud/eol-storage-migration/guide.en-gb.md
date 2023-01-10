@@ -37,15 +37,64 @@ Use this guide to add more storage if you have not yet subscribed to a more rece
 
 ### Migrate your virtual machines
 
-Go to your vCenter interface and check the VMs on each of your outdated datastore.
+Go to your vCenter interface and check the virtual machines that are on each of your outdated datastores.
 
-Click the `Storage`{.action} icon, select your `Datastore`{.action} in `Shared Storage`{.action} on the left and click the `VMs`{.action} tab to display the virtual machines on this obsolete storage.
+Click on the `storage`{.action} icon, select your `Datastore`{.action} in `Shared Storage`{.action} on the left, click on the `VM`{.action} tab and stay on `Virtual Machines`{.action} to display the virtual machines on this obsolete storage.
 
-![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png)
+![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png){.thumbnail}
 
-Then use Storage migration to migrate your data from your outdated datastore to your new datastore.
+Right-click on each of the `virtual machines`{.action} that are on this datastore, choose `Migrate`{.action} and help
+Use this [VMware Storage vMotion](https://docs.ovh.com/fr/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion) guide to migrate to a more recent datastore.
 
-You can use this guide to perform the VMware Storage vMotion migration [VMware Storage vMotion](https://docs.ovh.com/gb/en/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion).
+![01 check existing VM on datastore 02](images/01-check-existing-vm-on-datastore02.png){.thumbnail}
+
+When you run out of virtual machines in the tab, go to `VM template in folders`{.action} to view the templates saved on your *datastore*.
+
+![02 unregister and move template 01](images/02-unregister-and-move-template01.png){.thumbnail}
+
+Right-click on each of the `models`{.action} saved in your *datastore* and click on `Remove from Inventory`{.action}.
+
+> [!warning]
+> The model is deleted from the inventory but is still in the *datastore*. You can retrieve it and move it to another *datastore* or delete it if you no longer need it.
+>
+
+![02 unregister and move template 02](images/02-unregister-and-move-template02.png){.thumbnail}
+
+The model list is empty, you can keep moving your models to another datastore.
+
+![02 unregister and move template 03](images/02-unregister-and-move-template03.png){.thumbnail}
+
+Go to the `Files`{.action} tab, go to a `folder in a template`{.action} and click `Move to`{.action}.
+
+![02 unregister and move template 04](images/02-unregister-and-move-template04.png){.thumbnail}
+
+Choose a `Datastore`{.action} and click `OK`{.action}.
+
+![02 unregister and move template 05](images/02-unregister-and-move-template05.png){.thumbnail}
+
+Wait for the task to complete.
+
+![02 unregister and move template 06](images/02-unregister-and-move-template06.png){.thumbnail}
+
+Select the destination datastore for the model on the left, go to the `Model Folder`{.action}, select the `Model File`{.action} and click `Save VM`{.action}.
+
+![03 register template 01](images/03-register-template01.png){.thumbnail}
+
+Click `NEXT`{.action}.
+
+![03 register template 02](images/03-register-template02.png){.thumbnail}
+
+Click `NEXT`{.action} again.
+
+![03 register template 03](images/03-register-template03.png){.thumbnail}
+
+Click `FINISH`{.action}.
+
+![03 register template 04](images/03-register-template04.png){.thumbnail}
+
+Go to the `VM & templates`{.action} tab. to make your model appear.
+
+![03 register template 05](images/03-register-template05.png){.thumbnail}
 
 ### Deleting storage for your VMware cluster
 
