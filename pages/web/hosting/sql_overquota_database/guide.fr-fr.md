@@ -64,7 +64,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est pleine, puis sur `Accéder à PHPMyAdmin`{.action}.
 
-![PHPMyAdmin Login](images/pma_interface.png){.thumbnail}
+![PHPMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
 Renseignez le mot de passe d'accès à votre base de données en complément des informations pré-remplies puis cliquez sur `Exécuter`{.action}.
 
@@ -83,7 +83,7 @@ Une fois connecté, la page suivante s'affiche :
 
 Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de gauche puis sur `Taille`{.action} en haut à droite du tableau qui s'affiche :
 
-![PHPMyAdmin Login](images/pma_show_table.png){.thumbnail}
+![PHPMyAdmin Tables](images/pma_show_table.png){.thumbnail}
 
 Les tables les plus volumineuses apparaîssent en haut du tableau. Identifiez les **tables** les plus volumineuses puis passez à l'**étape 2**.
 
@@ -118,7 +118,7 @@ Dans tous les cas, nous vous conseillons d'analyser la structure de votre base d
 
 Une fois que vous avez déterminé si le contenu de vos tables est nécessaire ou non au fonctionnement de votre site, plusieurs options s'offrent à vous :
 
-- **Cas 1 - l'ensemble du contenu de la table volumineuse est nécessaire au bon fonctionnement de votre site :**
+#### Cas 1 - l'ensemble du contenu de la table volumineuse est nécessaire au bon fonctionnement de votre site :
 
 Vous devrez basculer votre base de données sur une base de données plus volumineuse.
 
@@ -132,7 +132,7 @@ Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de do
 - [Premiers pas avec l'offre Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 - [Importer votre ancienne base de données dans votre offre Cloud Databases](https://docs.ovh.com/fr/clouddb/restaurer-importer-base-de-donnees/)
 
-- **Cas 2 : tout ou partie du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site :**
+#### Cas 2 : tout ou partie du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site :
 
 >[!alert]
 >
@@ -141,11 +141,49 @@ Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de do
 
 Les bases de données mutualisées OVHcloud disposent de plusieurs commandes SQL pour agir sur leurs contenus.
 
-Dans le cas d'un overquota ou d'une table volumineuse, trois commandes sont disponibles :
+Dans le cas d'un overquota ou d'une table volumineuse, **trois commandes** sont disponibles.
 
-- **DELETE** : permet de supprimer **une ou plusieurs lignes** d'une table donnée. Cette commande est utile si une partie du contenu de la table est nécessaire au bon fonctionnement de votre site web.
-- **TRUNCATE** : permet de supprimer **toutes les lignes** d'une table donnée
-- **DROP** : permet de supprimer complètement **une table et l'ensemble des lignes qu'elle contient**. Cette commande n'est pas à utiliser si la table doit continuer d'exister.
+Vous pouvez directement effectuer ces requêtes depuis l'interface **PHPMyAdmin** via l'onglet `SQL`{.action} :
+
+![PHPMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+
+La commande **DELETE** : 
+
+Elle permet de supprimer **une ou plusieurs lignes** d'une table donnée. Cette commande est utile si une partie du contenu de la table est nécessaire au bon fonctionnement de votre site web.
+
+**Exemples** :
+
+```bash
+DELETE FROM `table_1`
+```
+Supprime l'ensemble des lignes de la **table_1**
+
+```bash
+DELETE FROM `table_1` WHERE `id` = 1
+```
+Supprime la ou les ligne(s) de la **table_1** dont la valeur de la colonne **id** est égal à **1**.
+
+La commande **TRUNCATE** : 
+
+Elle permet de supprimer **toutes les lignes** d'une table donnée.
+
+**Exemple** :
+
+```bash
+TRUNCATE TABLE `table_1`
+```
+Supprime l'ensemble des lignes de la **table_1** sans exception.
+
+La commande **DROP** : 
+
+Elle permet de supprimer complètement **une table et l'ensemble des lignes qu'elle contient**. Cette commande n'est pas à utiliser si la table doit continuer d'exister.
+
+**Exemple** :
+
+```bash
+DROP TABLE `table_1`
+```
+Supprime la table **table_1** et l'ensemble des lignes qu'elle contient.
 
 ## Aller plus loin <a name="go-further"></a>
 
