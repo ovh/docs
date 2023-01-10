@@ -12,12 +12,12 @@ order: 03
 
 Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de différents types de licences Microsoft 365 aux tarifs préférentiels afin que vous puissiez les revendre auprès de vos clients.
 
-**Découvrez comment  souscrire et administrer un service Office 365 Revendeurs (CSP2) chez OVHcloud.**
+**Découvrez comment souscrire et administrer un service Office 365 Revendeurs (CSP2) depuis votre espace client OVHcloud.**
 
 ## Prérequis
 
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Disposer d’un MPN ID (Microsoft Partner Network IDentifiant) 
+- Disposer d’un [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifiant) 
 - Être inscrit au programme CSP (Cloud Solution Provider) de Microsoft en tant que revendeur indirect dans la région où vous exercez (par exemple : « UE » pour l’Europe)
 
 > [!warning]
@@ -31,10 +31,7 @@ Si vous ne disposez pas encore d’un MPN ID, vous pouvez vous en créer un (si 
 
 Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à consulter cette autre [documentation officielle de Microsoft](https://docs.microsoft.com/fr-fr/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
 
-> [!success]
->
-> Le MPN ID vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via l'espace client OVHcloud. Ce cashback est soumis à des règles définies par Microsoft, en fonction des volumes d'abonnements que vous générerez.
->
+Le MPN ID vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via l'espace client OVHcloud. Ce cashback est soumis à des règles définies par Microsoft, en fonction des volumes d'abonnements que vous générerez.
 
 ## En pratique
 
@@ -42,7 +39,7 @@ Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à
 
 Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, sélectionnez `Sunrise`{.action} dans le bandeau supérieur puis cliquez sur `Office 365 Revendeurs`{.action}.
 
-- Saisissez votre MPN ID préalablement créé auprès de Microsoft.
+- Saisissez votre MPN ID préalablement créé auprès de Microsoft. Si vous n'avez pas encore de MPN ID, [consultez la page d'aide de Microsoft](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account).
 - Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licences (Tenant) que vous allez créer.
 
 > [!primary]
@@ -50,32 +47,16 @@ Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace 
 > Vous pouvez également définir un **sous-domaine personnalisé** lors de la création d'une nouvelle plateforme en cochant la petite case prévue à cet effet (sous réserve des noms disponibles).
 >
 
-- Dans la liste en dessous, indiquez les licences que vous souhaitez ajouter à votre groupe.
+- Dans la liste en dessous, ajoutez les licences que vous souhaitez ajouter à votre groupe.
 - Cliquez sur `Commander`{.action} pour finaliser votre commande.
 
-> [!warning]
->
-> Veuillez vous assurer de la validité de l'adresse e-mail renseignée lors de la création de votre groupe de licences, car celle-ci recevra les informations d'identification à la plateforme Microsoft.
->
+Veuillez vous assurer de la validité de l'adresse e-mail renseignée lors de la création de votre groupe de licences, car celle-ci servira à recevoir les informations d'identification à la plateforme Microsoft.
 
 ![office365](images/csp2-01.png){.thumbnail}
-
-#### Cas particulier des délégations
-
-- Si vous disposez déjà d'un service Office 365 CSP2 chez Microsoft, vous avez la possibilité d'en déléguer l'administration à OVHcloud. Vous pourrez ainsi ajouter des abonnements supplémentaires directement depuis votre espace client OVHcloud. Lors de la commande d'un nouveau groupe de licences, vous devrez alors choisir `Délégation d'une plateforme créée au préalable chez Microsoft` et préciser avec exactitude le **Tenant Office 365 existant** que vous pouvez retrouver sur votre portail Microsoft, ainsi que votre MPN ID.
-
-- Si vous passez déjà par un autre fournisseur qu'OVHcloud pour votre Office 365 revendeurs, vous pourrez également en déléguer l'administration à OVHcloud mais vous devrez rompre au préalable le lien avec votre ancien fournisseur.
-
-- Une double validation sera nécessaire pour finaliser l'apparition du tenant dans votre espace client OVHcloud.
-
-- Une fois les licences souscrites sur le tenant délégué, ces dernières seront disponibles sur votre [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external}. Vous devrez alors remplacer vos anciennes licences dans votre [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external} par les licences OVHcloud puis résilier vos anciennes licences afin de ne pas continuer à les payer en double.
-
-- Rassurez-vous, si vous disposez de licences indisponibles à l'achat chez OVHcloud, vous pouvez tout à fait conserver ces licences actives chez Microsoft.
 
 > [!warning]
 > Etant donné qu'il s'agit de produits sous licences, il n'est pas possible de basculer un tenant Office 365 revendeurs d'un idenfiant client OVHcloud à un autre.
 > 
-
 
 ### Gérer votre service Office 365 Revendeur
 
@@ -89,7 +70,8 @@ Les informations suivantes apparaissent:
 - **Nom d'affichage du service** : permet de personnaliser le nom d'affichage du service dans votre espace client.
 - **Créé le** : indique la date de création du service.
 - **Portail d'administration Microsoft** : lien du portail Office qui permet d'administrer vos abonnements.
-- **Réinitialiser le mot de passe administrateur** : permet de modifier le mot de passe de connexion au portail d’administration Microsoft.
+- La gestion du mot de passe administrateur de votre groupe de licence Microsoft (Tenant) se fait directement depuis l'interface d'administration Microsoft. N'hésitez pas à consulter [la documentation de Microsoft](https://support.microsoft.com/account-billing/reset-a-forgotten-microsoft-account-password-eff4f067-5042-c1a3-fe72-b04d60556c37).
+- La gestion de domaine additionnel se fait également depuis l'interface d'administration de Microsoft. N'hésitez pas à consulter [la documentation de Microsoft](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
 
@@ -137,4 +119,4 @@ Pour vous y connecter, vous devez renseigner votre identifiant ainsi que le mot 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
