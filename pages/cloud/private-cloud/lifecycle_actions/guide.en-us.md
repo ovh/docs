@@ -173,7 +173,7 @@ Fill in the call fields with the following information:
 
 If the answer in the **profile** field is `Dedicated Cloud`, you will need to switch to the new ranges. These hosts are no longer compatible with the latest versions of ESXi, and therefore can no longer be supported by VMware or OVHcloud.
 
-To complete your migration, you can follow this guide: [Migrate to a new infrastructure](https://docs.ovh.com/us/en/private-cloud/vdc-migration/).
+To complete your migration, you can follow this guide: [Migrate to a new infrastructure](https://docs.ovh.com/gb/en/private-cloud/vdc-migration/).
 
 ### Software component lifecycle
 

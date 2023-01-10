@@ -1,5 +1,5 @@
 ---
-title: "Hosted Private Cloud VMware Lifecycle Policy - Determine actions to be taken"
+title: "Cykl życia usługi Hosted Private Cloud powered by VMware - Określenie działań, jakie należy podjąć (EN)"
 slug: lifecycle-actions
 excerpt: Find out what to do with your Hosted Private Cloud powered by VMware solution, depending on its features
 section: FAQ
@@ -125,11 +125,11 @@ Fill in the call fields with the following information:
 
 If your datastore is located in room 29 of our Roubaix datacentre, you will need to change your storage space. This room no longer meets our security criteria.
 
-Start by adding new datastores, using our guide on [adding storage](https://docs.ovh.com/pl/private-cloud/how_to_add_a_storage/).
+Start by adding new datastores, using our guide on [adding storage](https://docs.ovh.com/pl/private-cloud/w_jaki_sposob_dodac_przestrzen_dyskowa/).
 
 Then use VMware's *Storage vMotion* feature to move your VMs to your new datastores. You can refer to the VMware [Storage vMotion documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-A15EE2F6-AAF5-40DC-98B7-0DF72E166888.html).
 
-Finally, delete your old datastores by following our guide on [deleting a datastore](https://docs.ovh.com/pl/private-cloud/remove-data-store/).
+Finally, delete your old datastores by following our guide on [deleting a datastore](https://docs.ovh.com/pl/private-cloud/usuwanie-datastore/).
 
 #### Retrieve your datastore type
 
@@ -148,11 +148,11 @@ Fill in the call fields with the following information:
 
 If the response to the **fullprofile** field does not start with `2020-`, then it is necessary to switch to the new storage ranges. In addition to higher service quality, they also benefit from higher performance, linked mainly to full-SSD technology.
 
-Start by adding new datastores by following the guide on [adding storage](https://docs.ovh.com/pl/private-cloud/how_to_add_a_storage/).
+Start by adding new datastores by following the guide on [adding storage](https://docs.ovh.com/pl/private-cloud/w_jaki_sposob_dodac_przestrzen_dyskowa/).
 
 Then use VMware's *Storage vMotion* feature to move your VMs to your new datastores. You can refer to the VMware [Storage vMotion documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenterhost.doc/GUID-A15EE2F6-AAF5-40DC-98B7-0DF72E166888.html).
 
-Finally, delete your old datastores by following our guide on [deleting a datastore](https://docs.ovh.com/pl/private-cloud/remove-data-store/).
+Finally, delete your old datastores by following our guide on [deleting a datastore](https://docs.ovh.com/pl/private-cloud/usuwanie-datastore/).
 
 ### Host lifecycle
 
@@ -175,7 +175,7 @@ Fill in the call fields with the following information:
 
 If the answer in the **profile** field is `Dedicated Cloud`, you will need to switch to the new ranges. These hosts are no longer compatible with the latest versions of ESXi, and therefore can no longer be supported by VMware or OVHcloud.
 
-To complete your migration, you can follow this guide: [Migrate to a new infrastructure](https://docs.ovh.com/pl/private-cloud/vdc-migration/).
+To complete your migration, you can follow this guide: [Migrate to a new infrastructure](https://docs.ovh.com/gb/en/private-cloud/vdc-migration/).
 
 ### Software component lifecycle
 

@@ -290,6 +290,7 @@
         + [General information](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-general-information)
             + [Technical capabilities](cloud/private-cloud/hpc_limits)
             + [Hosted Private Cloud VMware Lifecycle Policy](cloud/private-cloud/lifecycle_policy)
+            + [Hosted Private Cloud VMware Lifecycle Policy - Determine actions to be taken](cloud/private-cloud/lifecycle_actions)
             + [Dedicated Cloud FAQ](cloud/private-cloud/faq_private_cloud)
         + [Migration](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration)
             + [Migrating a PCC to Hosted Private Cloud](cloud/private-cloud/service-migration)
