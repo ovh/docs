@@ -18,7 +18,7 @@ order: 005
 
 Certains stockages ne seront plus disponibles à la fin Mars 2023 car ils ne seront plus maintenus comme indiqué dans ce guide [Cycle de vie du Hosted Private Cloud powered by VMware](https://docs.ovh.com/fr/private-cloud/lifecycle-policy/#datastores-stockage)
 
-Nous allons parcourir l'ensemble des étapes de migration de vos données vers un stockage plus récent et désactiverons votre stockage obsolète.
+Nous allons parcourir l'ensemble des étapes de migration de vos données vers un stockage plus récent et désasctiver votre stockage obsolète.
 
 ## Prérequis
 

@@ -18,8 +18,7 @@ order: 1
 
 Some storages will no longer be available at the end of March 2023 as they will no longer be maintained as described in this guide [Life cycle of Hosted Private Cloud powered by VMware](https://docs.ovh.com/gb/en/private-cloud/lifecycle-policy/#datastores-stockage).
 
-We will look at all the steps of data migration to newer storage and disable your obsolete storage.
-
+We will go through all the steps to migrate your data to more recent storage and disable your obsolete storage
 
 ## Requirements
 
@@ -43,7 +42,7 @@ You can use this guide to perform the VMware Storage vMotion migration [VMware S
 
 ### Deleting storage for your VMware cluster
 
-Use this guide to delete your obsolete storage [Delete a datastore](https://docs.ovh.com/gb/en/private-cloud/suppression-data-store/)
+Use this guide to delete your obsolete storage [Delete a datastore](https://docs.ovh.com/gb/en/private-cloud/remove-data-store/)
 
 > [!warning]
 > After deleting your Datastore, you will need to go to your Control Panel to stop subscribing to this service.
