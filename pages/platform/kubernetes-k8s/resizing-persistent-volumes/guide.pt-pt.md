@@ -49,7 +49,7 @@ You also need to know how PVs are handled on OVHcloud Managed Kubernetes service
 
 > [!warning]
 > When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
-> This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#storage)
+> This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/pt/public-cloud/prices/#storage)
 > 
 ## Let's make a Persistent Volume Claim
 
