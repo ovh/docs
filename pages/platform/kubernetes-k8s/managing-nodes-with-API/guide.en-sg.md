@@ -12,7 +12,7 @@ order: 1
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover one of the first steps after ordering a cluster: managing nodes and node pools, using the OVHcloud API.
 
-In this guide, we are assuming you're using the [OVHcloud API](https://ca.api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
+In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
 
 ## Requirements
 
@@ -36,7 +36,7 @@ Finally `monthlyBilled` boolean ensures that all nodes in a node pool will be sp
 
 After creation, the `desiredNodes`, `minNodes`, `maxNodes`, `autoscale` and `template` properties can also be edited at any time.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](https://ca.api.ovh.com/): adding nodes to an existing node pool, creating a new node pool, etc.
+In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](https://api.ovh.com/): adding nodes to an existing node pool, creating a new node pool, etc.
 
 
 ## Upsizing and downsizing a Node Pool
@@ -49,13 +49,13 @@ When upsizing, all new nodes will be created in parallel.
 
 ## The API Explorer
 
-To simplify things, we are using the [API Explorer](https://ca.api.ovh.com/), which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](https://api.ovh.com/), which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVH NIC.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Cloud section](https://ca.api.ovh.com/console/#/cloud) of the API Explorer, you will see the available `/cloud/project/{serviceName}/kube` endpoint.
+If you go to the [Cloud section](https://api.ovh.com/console/#/cloud) of the API Explorer, you will see the available `/cloud/project/{serviceName}/kube` endpoint.
 
 
 ## List your OVHcloud Managed Kubernetes clusters

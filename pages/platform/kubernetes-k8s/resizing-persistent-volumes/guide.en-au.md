@@ -49,6 +49,7 @@ You also need to know how PVs are handled on OVHcloud Managed Kubernetes service
 > When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
 > This volume is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Volume Block Storage price](https://www.ovhcloud.com/en-au/public-cloud/prices/#storage)
 >
+
 ## Let's make a Persistent Volume Claim
 
 To test the PVs resizing, we will need a PV associated to the cluster, i.e. we need to deploy a service making a PVC. To keep thing simple, we choose to deploy a single instance of [MySQL](https://www.mysql.com/).
@@ -89,7 +90,7 @@ metadata:
   name: mysql
 spec:
   ports:
-    - port: 3306
+  - port: 3306
   selector:
     app: mysql
   clusterIP: None
@@ -111,22 +112,22 @@ spec:
         app: mysql
     spec:
       containers:
-        - image: mysql:5.6
+      - image: mysql:5.6
+        name: mysql
+        env:
+          # Use secret in real usage
+        - name: MYSQL_ROOT_PASSWORD
+          value: password
+        ports:
+        - containerPort: 3306
           name: mysql
-          env:
-            # Use secret in real usage
-            - name: MYSQL_ROOT_PASSWORD
-              value: password
-          ports:
-            - containerPort: 3306
-              name: mysql
-          volumeMounts:
-            - name: mysql-persistent-storage
-              mountPath: /var/lib/mysql
-      volumes:
+        volumeMounts:
         - name: mysql-persistent-storage
-          persistentVolumeClaim:
-            claimName: mysql-pv-claim
+          mountPath: /var/lib/mysql
+      volumes:
+      - name: mysql-persistent-storage
+        persistentVolumeClaim:
+          claimName: mysql-pv-claim
 ```
 
 And we deploy and verify it:
