@@ -71,21 +71,7 @@ Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el
 
 ![cuota](images/quota.png){.thumbnail}
 
-#### 3 - CloudDB
-
-Si utiliza el producto [CloudDB](https://ovhcloud.com/us/es/hosting/empezar-con-clouddb/#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
-Haga clic en el botón `...`{.action} en la sección `Bases de datos privadas`{.action} y, seguidamente, en `Desvincular`{.action}.
-
-![clouddb](images/clouddb.png){.thumbnail}
-
-Esta acción le permitirá contratar una solución Cloud Databases independiente de la suscripción *Performance*. Los datos del servidor se conservarán.
-
-Si no desea conservar estos datos, puede también eliminar su SQL privado antes de pasar a la oferta *Profesional* : 
-
-1. Guarde sus datos siguiendo las instrucciones de este [guía](https://ovhcloud.com/us/es/hosting/guardar-exportar-una-base-de-datos/).<br>
-2. Elimine su servidor Cloud Databases a través de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha de la línea correspondiente y luego en `Eliminar mi alojamiento SQL privado`{.action}.
-
-#### 4 - Espacio FTP
+#### 3 - Espacio FTP
 
 Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluye suficiente [espacio de almacenamiento FTP](https://ovhcloud.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) para poder importar los archivos de su alojamiento actual.
 
@@ -93,7 +79,7 @@ La cuota utilizada en su alojamiento FTP puede verse en la sección `Alojamiento
 
 ![ftp](images/ftp.png){.thumbnail}
 
-#### 5 - Direcciones de correo
+#### 4 - Direcciones de correo
 
 Compruebe también que la nueva solución ofrezca un número suficiente de direcciones de correo electrónico disponibles. En caso contrario, elimine las direcciones superfluas después de haberlas [guardado](https://ovhcloud.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/) si es necesario.
 
@@ -101,7 +87,7 @@ Si quiere conservar el mismo número de cuentas de correo antes de pasar el aloj
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-#### 6 - Mailing lists
+#### 5 - Mailing lists
 
 La funcionalidad [Mailing lists](https://ovhcloud.com/us/es/emails/guia_de_utilizacion_de_listas_de_difusion/) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/).
 
