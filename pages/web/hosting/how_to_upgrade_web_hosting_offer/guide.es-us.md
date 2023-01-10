@@ -14,7 +14,7 @@ order: 02
 
 ## Objetivo
 
-Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](https://ovhcloud.com/us/es/emails/guia_de_utilizacion_de_listas_de_difusion/) (a partir del [plan Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/)).
+Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) le permite aumentar la capacidad de sus [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para disponer de un alojamiento más potente, más espacio de almacenamiento, bases de datos, direcciones de correo o funcionalidades adicionales como los [listas de correo](https://docs.ovh.com/us/es/emails/guia_de_utilizacion_de_listas_de_difusion/) (a partir del [plan Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/)) o el [servicio SQL privado](https://www.ovhcloud.com/es/web-hosting/options/private-sql/) (incluidos los productos de la [gama Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/)).
 
 **Descubra cómo cambiar sin interrupción el plan de hosting de OVHcloud.**
 
@@ -57,7 +57,7 @@ Antes de realizar el cambio a una gama inferior, compruebe los siguientes 6 elem
 
 #### 1 - Número de sitios
 
-El producto [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/) no permite tener más de un dominio en el [multisitio](https://ovhcloud.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) de su alojamiento.
+El producto [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/) no permite tener más de un dominio en el [multisitio](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) de su alojamiento.
 
 Antes de cambiar del plan [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) al plan [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/), compruebe que el alojamiento solo tenga un sitio web.
 
@@ -73,7 +73,7 @@ Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el
 
 #### 3 - Espacio FTP
 
-Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluye suficiente [espacio de almacenamiento FTP](https://ovhcloud.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) para poder importar los archivos de su alojamiento actual.
+Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluye suficiente [espacio de almacenamiento FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) para poder importar los archivos de su alojamiento actual.
 
 La cuota utilizada en su alojamiento FTP puede verse en la sección `Alojamientos`{.action} del área de cliente. Haga clic en la pestaña `Información general`{.action} y encontrará el límite en el `Espacio en disco`.
 
@@ -81,7 +81,7 @@ La cuota utilizada en su alojamiento FTP puede verse en la sección `Alojamiento
 
 #### 4 - Direcciones de correo
 
-Compruebe también que la nueva solución ofrezca un número suficiente de direcciones de correo electrónico disponibles. En caso contrario, elimine las direcciones superfluas después de haberlas [guardado](https://ovhcloud.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/) si es necesario.
+Compruebe también que la nueva solución ofrezca un número suficiente de direcciones de correo electrónico disponibles. En caso contrario, elimine las direcciones superfluas después de haberlas [guardado](https://docs.ovh.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/) si es necesario.
 
 Si quiere conservar el mismo número de cuentas de correo antes de pasar el alojamiento a una solución inferior, puede contratar una nueva solución de correo **MX Plan**. En la sección `Correo electrónico`{.action} del área de cliente, haga clic en el producto correspondiente y, seguidamente, en el botón `...`{.action} a la derecha del `Producto`{.action}. Haga clic en `Cambiar de plan`{.action}.
 
@@ -89,7 +89,7 @@ Si quiere conservar el mismo número de cuentas de correo antes de pasar el aloj
 
 #### 5 - Mailing lists
 
-La funcionalidad [Mailing lists](https://ovhcloud.com/us/es/emails/guia_de_utilizacion_de_listas_de_difusion/) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/).
+La funcionalidad [Mailing lists](https://docs.ovh.com/us/es/emails/guia_de_utilizacion_de_listas_de_difusion/) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/).
 
 Para migrar a un plan de hosting [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/), primero deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
@@ -141,9 +141,9 @@ Siga [estas instrucciones](#modify) para cambiar de producto.
 
 ## Más información <a name="gofurther"></a>
 
-[Consultar las estadísticas y logs de mi sitio web alojado en un plan compartido](https://ovhcloud.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/)
+[Consultar las estadísticas y logs de mi sitio web alojado en un plan compartido](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/)
 
-[Optimización del rendimiento de su sitio web](https://ovhcloud.com/us/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
+[Optimización del rendimiento de su sitio web](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 

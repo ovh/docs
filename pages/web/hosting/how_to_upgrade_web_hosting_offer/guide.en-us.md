@@ -10,7 +10,7 @@ order: 02
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](https://ovhcloud.com/en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](https://docs.ovh.com/us/en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 
@@ -52,7 +52,7 @@ Before you make your switch to a lower range, check the following 6 items:
 
 #### 1 - Number of sites
 
-With the [Kimsufi Web](https://www.ovhcloud.com/en/web-hosting/old-web-hosting-offers/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://ovhcloud.com/en/hosting/multisites-configuring-multiple-websites/).
+With the [Kimsufi Web](https://www.ovhcloud.com/en/web-hosting/old-web-hosting-offers/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://docs.ovh.com/us/en/hosting/multisites-configuring-multiple-websites/).
 
 Before you switch from the [Personal](https://www.ovhcloud.com/en/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.ovhcloud.com/en/web-hosting/old-web-hosting-offers/) solution, please check that your web hosting plan only has one website.
 
@@ -68,7 +68,7 @@ If you have deleted data from your databases, you can recalculate the quota from
 
 #### 3 - FTP space
 
-Before switching your hosting plan to a lower plan, please ensure that the new plan includes enough [FTP storage space](https://ovhcloud.com/en/hosting/log-in-to-storage-ftp-web-hosting/) so that you can import files from your current hosting plan.
+Before switching your hosting plan to a lower plan, please ensure that the new plan includes enough [FTP storage space](https://docs.ovh.com/us/en/hosting/log-in-to-storage-ftp-web-hosting/) so that you can import files from your current hosting plan.
 
 The quota used on your FTP hosting plan is visible in the `Hosting plans`{.action} section of the OVHcloud Control Panel. Click on the `General information`{.action} tab, and you will see the quota under `Disk space`.
 
@@ -76,7 +76,7 @@ The quota used on your FTP hosting plan is visible in the `Hosting plans`{.actio
 
 #### 4 - Email accounts
 
-Please also check that your new solution has a sufficient number of available email accounts. Otherwise, delete the extra accounts, after you have [backed up](https://ovhcloud.com/en/emails/migrate-email-addresses-manually/) the contents if necessary.
+Please also check that your new solution has a sufficient number of available email accounts. Otherwise, delete the extra accounts, after you have [backed up](https://docs.ovh.com/us/en/emails/migrate-email-addresses-manually/) the contents if necessary.
 
 If you would like to keep the same number of email accounts, before moving your web hosting to a lower plan, you can also order a new **MX Plan** email solution. In the `Emails`{.action} section of the OVHcloud Control Panel, click on the solution concerned, then on the `...`{.action} button to the right of `Solution`. Next, click `Change solution`{.action}.
 
@@ -84,7 +84,7 @@ If you would like to keep the same number of email accounts, before moving your 
 
 #### 5 - Mailing lists
 
-The [Mailing lists](https://ovhcloud.com/en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en/web-hosting/personal-offer/) and [Kimsufi Web](https://www.ovhcloud.com/en/web-hosting/old-web-hosting-offers/) hosting plans.
+The [Mailing lists](https://docs.ovh.com/us/en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en/web-hosting/personal-offer/) and [Kimsufi Web](https://www.ovhcloud.com/en/web-hosting/old-web-hosting-offers/) hosting plans.
 
 To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
@@ -136,9 +136,9 @@ Please follow [these instructions](#modify) to change your plan.
 
 ## Go further <a name="gofurther"></a>
 
-[Accessing a website’s logs and statistics on a web hosting](https://ovhcloud.com/en/hosting/shared_view_my_websites_logs_and_statistics/)
+[Accessing a website’s logs and statistics on a web hosting](https://docs.ovh.com/us/en/hosting/shared_view_my_websites_logs_and_statistics/)
 
-[Optimising your website’s performance](https://ovhcloud.com/en/hosting/web_hosting_optimise_your_website_performance/)
+[Optimising your website’s performance](https://docs.ovh.com/us/en/hosting/web_hosting_optimise_your_website_performance/)
 
 For specialised services (SEO, development,etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 
