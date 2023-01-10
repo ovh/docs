@@ -6,7 +6,7 @@ section: FAQ
 order: 1
 ---
 
-**Last updated 03st January 2023**
+**Last updated 10th January 2023**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -16,6 +16,11 @@ order: 1
 
 ## Objective
 
+Some storages will no longer be available at the end of March 2023 as they will no longer be maintained as described in this guide [Life cycle of Hosted Private Cloud powered by VMware](https://docs.ovh.com/gb/en/private-cloud/lifecycle-policy/#datastores-stockage).
+
+We will look at all the steps of data migration to newer storage and disable your obsolete storage.
+
+
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
@@ -23,6 +28,20 @@ order: 1
 - A user account with access to vSphere
 
 ## Instructions
+
+### Add storage
+
+Use this guide to add more storage if you have not yet subscribed to a more recent solution.
+
+[How do I add storage space?](https://docs.ovh.com/fr/private-cloud/additional-storage/)
+
+### Migrate your virtual machines
+
+Use Storage migration to migrate your data from your outdated datastore to your new datastore.
+
+### Deleting storage for your VMware cluster
+
+Use this guide to delete your obsolete storage [Delete a datastore](https://docs.ovh.com/gb/en/private-cloud/suppression-data-store/)
 
 
 ## Go further
