@@ -40,9 +40,9 @@ We therefore recommend that you perform your snapshots outside of your productio
 
 Other best practices include:
 
-- avoid creating snapshots during peak hours (10 PM - 04:00 PM Paris time)
-- install the qemu-guest agent if it is not installed... or try to disable it if necessary!
-- try not to `solicit` the server too much during the snapshot creation phase (I/O limitation, RAM consumption, etc.)
+- Avoid creating snapshots during peak hours (04:00 AM - 10:00 PM Paris time).
+- Install the qemu-guest agent if it is not installed... or try to disable it if necessary.
+- Try not to "solicit" the server too much during the snapshot creation phase (I/O limitation, RAM consumption, etc.).
 
 Since a volume snapshot is a clone of the entire disk, it will have the maximum size of the original volume, regardless of the actual disk space allocation.
 
