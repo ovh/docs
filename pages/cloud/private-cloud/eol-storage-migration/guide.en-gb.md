@@ -39,10 +39,15 @@ Use this guide to add more storage if you have not yet subscribed to a more rece
 
 Use Storage migration to migrate your data from your outdated datastore to your new datastore.
 
+You can use this guide to perform the VMware Storage vMotion migration [VMware Storage vMotion](https://docs.ovh.com/gb/en/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion).
+
 ### Deleting storage for your VMware cluster
 
 Use this guide to delete your obsolete storage [Delete a datastore](https://docs.ovh.com/gb/en/private-cloud/suppression-data-store/)
 
+> [!warning]
+> After deleting your Datastore, you will need to go to your Control Panel to stop subscribing to this service.
+>
 
 ## Go further
 

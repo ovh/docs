@@ -36,11 +36,18 @@ Utilisez ce guide pour ajouter un stockage plus important si vous n'avez pas enc
 
 ### Migration de vos machines virtuelles
 
-Effectuer une storage migration vers un stockage plus récent, Cette partie n'est pas encore à documenter.
+Utiliser Storage migration pour migrer les données de votre datastore obsolète vers votre nouveau datastore.
+
+Vous pouvez utiliser ce guide pour effectuer la migration VMware Storage vMotion [VMware Storage vMotion](https://docs.ovh.com/fr/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion).
 
 ### Suppression du stockage de votre cluster VMware
 
 Aidez-vous de ce guide pour supprimer votre stockage obsolète [Supprimer un datastore](https://docs.ovh.com/fr/private-cloud/suppression-data-store/)
+
+> [!warning]
+> Après avoir supprimé votre Datastore il faudra aller dans votre espace client pour arrêter la souscription à ce service.
+>
+
 
 ## Aller plus loin
 
