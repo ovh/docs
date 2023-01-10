@@ -50,29 +50,9 @@ Consulta la guida [Condividere un hosting tra più siti](https://docs.ovh.com/it
 
 ### Come cambiare il piano di hosting?
 
-> [!primary]
->
-> Per ordinare la soluzione di hosting Web più adatta alle tue esigenze, consulta [questa pagina](https://www.ovhcloud.com/it/web-hosting/).
->
+Per ordinare la soluzione di hosting Web più adatta alle tue esigenze, consulta le nostre offerte su [questa pagina](https://www.ovhcloud.com/it/web-hosting/).
 
-Per cambiare offerta di [hosting condiviso](https://www.ovhcloud.com/it/web-hosting/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action} e poi su `Hosting`{.action}. Scegli l'hosting interessato e, nella sezione `Abbonamento`, clicca sui tre puntini `...`{.action} nella sezione `Servizio` e poi su `Modifica offerta`{.action}.
-
-Seleziona la nuova soluzione di hosting e la durata del nuovo abbonamento. Leggi i contratti e clicca su `Invia`{.action}.
-
-> [!warning]
->
-> Prima di passare a un'offerta "inferiore" (ad esempio, prima di passare da un'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) a un'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/)), verifica che l'utilizzo dell'hosting sia compatibile con la nuova formula:
->
-> - Se hai creato troppi indirizzi email per passare a un'offerta inferiore, salva ed elimina gli indirizzi meno utilizzati.
->
-> - Se la quota della nuova offerta di hosting non è sufficiente, accedi in [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) al tuo hosting, salva ed elimina le cartelle e i file non necessari.
->
-> - Se la tua nuova offerta di hosting comporta un numero di database o un volume di storage insufficiente, salva ed elimina i dati o i database non utilizzati. È inoltre possibile ordinare un [server di database](https://www.ovh.it/cloud/cloud-databases/).
->
-> - Se hai creato [mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) con la tua offerta di hosting, verifica che la tua nuova offerta includa questa funzionalità.
->
-> In caso di dubbi sulle operazioni da effettuare, contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) o la nostra [Community di utenti](https://community.ovh.com/en/).
->
+Una volta effettuata la scelta, segui la procedura descritta nella guida [Fai evolvere la tua offerta di hosting Web](https://docs.ovh.com/it/hosting/how_to_change_web_hosting_offer/).
 
 ### Come conservare l'offerta email associata al tuo hosting condiviso durante la disattivazione?
 

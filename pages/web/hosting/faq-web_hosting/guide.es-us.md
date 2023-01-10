@@ -40,6 +40,13 @@ Para más información, consulte esta [página](https://www.ovhcloud.com/es/web-
 
 **Trucos y Trucos**: Para ayudarle a crear su sitio web, OVHcloud le permite instalar en su alojamiento un programa de soporte para la creación de sitios web (WordPress, PrestaShop, Joomla! y Drupal), gracias a la funcionalidad [Módulos en 1 clic](https://docs.ovh.com/us/es/hosting/modulos-en-un-clic/).
 
+### ¿Cómo cambiar de plan de alojamiento?
+
+Para contratar el plan de hosting más adecuado para usted, puede consultar nuestros planes en [esta página](https://www.ovhcloud.com/es/web-hosting/).
+
+A continuación, siga las indicaciones de nuestra guía ["Mejorar el plan de hosting"](https://docs.ovh.com/us/es/hosting/how_to_change_web_hosting_offer/).
+
+
 ### ¿Cómo transferir un sitio web y el correo a los servidores de OVHcloud? 
 
 Consulte la guía [Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).

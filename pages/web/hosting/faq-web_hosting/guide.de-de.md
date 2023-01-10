@@ -48,6 +48,12 @@ Lesen Sie die Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](https:
 
 Lesen Sie die Anleitung "[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)" .
 
+## Wie kann ich das Hosting-Angebot ändern?
+
+Um das Webhosting-Angebot zu bestellen, das am besten zu Ihren Bedürfnissen passt, können Sie unsere Angebote auf [dieser Seite](https://www.ovhcloud.com/de/web-hosting/) vergleichen.
+
+Wenn Sie Ihre Wahl getroffen haben, folgen Sie den Anweisungen in unserer Anleitung [Webhosting Angebot upgraden](https://docs.ovh.com/de/hosting/how_to_change_web_hosting_offer/).
+
 ### Wie kann ich die E-Mail-Accounts meines Webhosting bei einer Kündigung beibehalten?
 
 Wenn Sie Ihr Webhosting kündigen oder löschen, wird auch der inbegriffene E-Mail-Dienst gekündigt. Um Ihre E-Mail-Accounts zu behalten, müssen Sie den E-Mail-Dienst vor der Kündigung des Hostings abtrennen.<br>

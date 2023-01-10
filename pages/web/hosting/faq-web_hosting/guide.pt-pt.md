@@ -50,29 +50,9 @@ Consulte o guia [Partilhar o alojamento entre vários sites](https://docs.ovh.co
 
 ### Como mudar de fórmula de alojamento?
 
-> [!primary]
->
-> Para encomendar a fórmula de alojamento Web mais adaptada às suas necessidades, consulte [esta página](https://www.ovhcloud.com/pt/web-hosting/).
->
+Para encomendar a fórmula de alojamento web mais adaptada às suas necessidades, pode consultar as nossas ofertas em [esta página](https://www.ovhcloud.com/pt/web-hosting/).
 
-Para alterar a oferta de [alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/), na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}. Escolha o alojamento em causa e, na secção `Subscrição`, clique no botão `...`{.action} na secção `Oferta` e, a seguir, em `Mudar de oferta`{.action}.
-
-De seguida, selecione a sua nova fórmula de alojamento e a duração da sua nova subscrição. Consulte os contratos correspondentes e clique em `Enviar`{.action}.
-
-> [!warning]
->
-> Antes de migrar para uma oferta "inferior" (por exemplo, antes de passar de uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) para uma oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/)), verifique se a sua utilização do alojamento é compatível com a sua nova fórmula:
->
-> - Se criou demasiados endereços de e-mail para passar para uma oferta inferior, guarde e elimine os endereços menos utilizados;
->
-> - Se a quota da nova oferta de alojamento for insuficiente, ligue-se ao seu alojamento através de [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/), guarde e elimine as pastas e ficheiros desnecessários;
->
-> - Se a nova oferta de alojamento incluir um número de bases de dados ou um volume de armazenamento insuficiente, guarde e elimine os dados ou as bases de dados não utilizados. Também pode encomendar uma [oferta de servidor de bases de dados](https://www.ovh.pt/cloud/cloud-databases/);
->
-> - Se criou [mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) com a sua oferta de alojamento, verifique se a sua nova oferta inclui esta funcionalidade.
->
-> Caso tenha dúvidas sobre as operações a realizar, contacte os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/directory/) ou a nossa [comunidade de utilizadores](https://community.ovh.com/en/).
->
+Uma vez selecionada a opção, siga as instruções do nosso manual ["Fazer evoluir o seu plano de alojamento web"](https://docs.ovh.com/pt/hosting/how_to_change_web_hosting_offer/).
 
 ### Como conservar a oferta de e-mail associada ao meu alojamento partilhado aquando de uma rescisão?
 

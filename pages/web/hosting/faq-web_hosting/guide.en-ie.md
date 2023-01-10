@@ -44,6 +44,12 @@ Read our guide on [Migrating your website and emails to OVHcloud](https://docs.o
 
 See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/).
 
+### How do I change my hosting plan?
+
+To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](https://www.ovhcloud.com/en-ie/web-hosting/).
+
+Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](https://docs.ovh.com/ie/en/hosting/how_to_change_web_hosting_offer/).
+
 ### How do I keep the email offer linked to my hosting plan when cancelling?
 
 When you cancel or delete your hosting plan, the email solution attached to it will also be cancelled. To keep your email addresses, you will need to detach the email solution before cancelling the hosting plan.<br>
