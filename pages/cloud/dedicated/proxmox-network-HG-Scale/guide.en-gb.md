@@ -6,7 +6,7 @@ section: 'Advanced use'
 order: 5
 ---
 
-**Last updated 09th January 2023**
+**Last updated 9th January 2023**
 
 > [!primary]
 >
