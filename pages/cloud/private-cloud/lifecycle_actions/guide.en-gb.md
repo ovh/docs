@@ -102,7 +102,7 @@ You must now have retrieved the following information:
 - all your **hostId**
 - all your **filerId**
 
-### Datastore lifecycle 
+### Datastore lifecycle
 
 The aim of this step is to check if any of your datastores require lifecycle actions from VMware environments hosted at OVHcloud.
 
@@ -152,7 +152,7 @@ Then use VMware's *Storage vMotion* feature to move your VMs to your new datasto
 
 Finally, delete your old datastores by following our guide on [deleting a datastore](https://docs.ovh.com/gb/en/private-cloud/remove-data-store/).
 
-### Host lifecycle 
+### Host lifecycle
 
 The aim of this step is to check if any of your hosts require lifecycle actions from VMware environments hosted at OVHcloud.
 
@@ -179,7 +179,7 @@ To complete your migration, you can follow this guide: [Migrate to a new infrast
 
 #### Retrieving your PCC information in the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) with an administrator account.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with an administrator account.
 
 Click on the `Hosted Private Cloud`{.action} tab and select your service from the `VMware`{.action} list.
 

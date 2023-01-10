@@ -22,11 +22,11 @@ In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (gr
 
 When you order a new cluster, it is created with a default node pool. Refer to our guide on [creating a cluster](../creating-a-cluster/) for more information.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb).
 
 ## Instructions
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the table, select a cluster by clicking on the cluster name.
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb). In the table, select a cluster by clicking on the cluster name.
 
 ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 
