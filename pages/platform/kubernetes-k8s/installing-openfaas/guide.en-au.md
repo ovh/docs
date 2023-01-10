@@ -200,7 +200,7 @@ echo -n $PASSWORD | ./faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
 ```
 
 Now you're connected to the gateway, and you can send commands to the OpenFaaS platform. 
-~~~~
+
 By default, there is no function installed on your OpenFaaS platform, as you can verify with the `faas-cli list` command.
 
 
@@ -210,7 +210,7 @@ In my own deployment (URLs and IP changed), the precedent operations gave:
 <pre class="console"><code>$ kubectl get svc -n openfaas gateway-external -o wide
 NAME               TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE     SELECTOR
 gateway-external   LoadBalancer   10.3.xxx.yyy   xy.xy.xy.xy   8080:30012/TCP   9m10s   app=gateway
-~~~~
+
 $ export OPENFAAS_URL=xy.xy.xy.xy:8080
 
 $ echo -n $PASSWORD | ./faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
@@ -401,8 +401,3 @@ In the UI Portal you will find the list of the deployed functions, and for each 
 So now you have a working OpenFaaS platform on your OVHcloud Managed Kubernetes cluster.
 
 To learn more about OpenFaaS, and how you can get a maximum profit from it, please refer to the [official OpenFaaS documentation](https://docs.openfaas.com/){.external}. You can also follow the [OpenFaaS workshops](https://github.com/openfaas/workshop){.external} to learn in a more practical way.  
-
-
-
-
-
