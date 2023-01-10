@@ -40,7 +40,8 @@ Cliquez sur l'icône de `stockage`{.action}, choisissez à gauche votre `Datasto
 
 ![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png){.thumbnail}
 
-Faites un clic-droit sur chacunes des `machines virtuelles`{.action} qui se trouvent sur ce datastore, choisissez `Migrer`{.action} et aidez vous de ce guide [VMware Storage vMotion](https://docs.ovh.com/fr/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion) pour effectuer la migration vers un datastore plus récent.
+Faites un clic-droit sur chacunes des `machines virtuelles`{.action} qui se trouvent sur ce datastore, choisissez `Migrer`{.action} et aidez
+-vous de ce guide [VMware Storage vMotion](https://docs.ovh.com/fr/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion) pour effectuer la migration vers un datastore plus récent.
 
 ![01 check existing VM on datastore 02](images/01-check-existing-vm-on-datastore02.png){.thumbnail}
 
@@ -78,19 +79,19 @@ Choisissez le Datastore de destination du modèle à gauche, allez dans le `Doss
 
 Cliquez sur `Suivant`{.action}.
 
-![03 register template 02](images/03-register-template02){.thumbnail}
+![03 register template 02](images/03-register-template02.png){.thumbnail}
 
 Cliquez à nouveau sur `Suivant`{.action}.
 
-![03 register template 03](images/03-register-template03){.thumbnail}
+![03 register template 03](images/03-register-template03.png){.thumbnail}
 
 Cliquez sur `FINISH`{.action}.
 
-![03 register template 04](images/03-register-template04){.thumbnail}
+![03 register template 04](images/03-register-template04.png){.thumbnail}
 
 Allez dans l'onglet `VM & modèles`{.action}. pour faire apparaitre votre modèle.
 
-![03 register template 05](images/03-register-template05){.thumbnail}
+![03 register template 05](images/03-register-template05.png){.thumbnail}
 
 ### Suppression du stockage de votre cluster VMware
 
