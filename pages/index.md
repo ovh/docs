@@ -800,7 +800,6 @@
                 + [Dynamically resizing a cluster with the cluster autoscaler](platform/kubernetes-k8s/using-cluster-autoscaler)
                 + [Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster](platform/kubernetes-k8s/upgrading-kubernetes-version)
                 + [Managing nodes and node pools](platform/kubernetes-k8s/managing-nodes)
-                + [Adding nodes to a OVHcloud Managed Kubernetes cluster](platform/kubernetes-k8s/adding-nodes)
                 + [Using vRack - Communicating between different private networks](platform/kubernetes-k8s/using-vrack-between-private-networks)
                 + [Resetting an OVHcloud Managed Kubernetes cluster](platform/kubernetes-k8s/resetting-a-cluster)
                 + [Managing nodes with the NodePools CRD](platform/kubernetes-k8s/node-pools-crd)
