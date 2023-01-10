@@ -34,19 +34,58 @@ Utilisez ce guide pour ajouter un stockage plus important si vous n'avez pas enc
 
 [Comment ajouter de l’espace de stockage ?](https://docs.ovh.com/fr/private-cloud/additional-storage/)
 
-### Migration de vos machines virtuelles
+### Migration de vos machines virtuelles et des modèles de machines virtuelles
 
 Allez dans votre interface vCenter et vérifiez les machines virtuelles qui se trouvent sur chacun de vos datastore obsolètes.
 
-Cliquez sur l'icône de `stockage`{.action}, choisissez à gauche votre `Datastore`{.action} dans `Shared Storage`{.action} et cliquez sur l'onglet `VM`{.action} pour faire apparaitre les machines virtuelles qui se trouvent sur ce stockage obsolète.
+Cliquez sur l'icône de `stockage`{.action}, choisissez à gauche votre `Datastore`{.action} dans `Shared Storage`{.action},cliquez sur l'onglet `VM`{.action} et restez sur `Machines virtuelles`{.action} pour faire apparaître les machines virtuelles qui se trouvent sur ce stockage obsolète.
 
-![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png)
+![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png){.thumbnail}
 
-Ensuite Utiliser Storage migration pour migrer les données de votre datastore obsolète vers votre nouveau datastore.
+Faites un clic-droit sur chacunes des `machines virtuelles`{.action} qui se trouvent sur ce datastore, choisissez `Migrer`{.action} et aidez vous de ce guide [VMware Storage vMotion](https://docs.ovh.com/fr/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion) pour effectuer la migration vers un datastore plus récent.
 
-Vous pouvez utiliser ce guide pour effectuer la migration VMware Storage vMotion [VMware Storage vMotion](https://docs.ovh.com/fr/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion).
+![01 check existing VM on datastore 02](images/01-check-existing-vm-on-datastore02.png){.thumbnail}
 
-Lorsque vous n'aurez plus de machines virtuelles sur votre stockage vous pourrez supprimer votre DataStore
+Lorsque vous n'aurez plus de machines virtuelles dans l'onglet rendez-vous sur `Modèle de VM dans des dossiers`{.action} pour afficher les modèles enregistrés sur votre datastore.
+
+![02 unregister and move template 01](images/02-unregister-and-move-template01.png){.thumbnail}
+
+Faites un clic droit sur chacun des `modèles`{.action} enregistrés dans votre datastore et cliquez sur `Supprimer de l'inventaire`{.action}.
+
+> [!warning]
+> Le modèle est supprimé de l'inventaire mais se trouve toujours dans le datastore, vous pouvez le récuperer pour le remettre sur un autre datastore ou le supprimer si vous n'en avez plus besoin.
+>
+
+![02 unregister and move template 02](images/02-unregister-and-move-template02.png){.thumbnail}
+
+La liste de modèle est vide, vous pouvez maintenez déplacez vos modèles sur un autre datastore.
+
+![02 unregister and move template 03](images/02-unregister-and-move-template03.png){.thumbnail}
+
+Allez sur l'onglet `Fichiers`{.action}, positionnez-vous sur un `dossier d'un modèle`{.action} et cliquez sur `Déplacez vers`{.action}.
+
+![02 unregister and move template 04](images/02-unregister-and-move-template04.png){.thumbnail}
+
+Choisissez un `Datastore`{.action} et cliquez sur `OK`{.action}
+
+![02 unregister and move template 05](images/02-unregister-and-move-template05.png){.thumbnail}
+
+Attendez que la tâche soit terminée.
+
+![02 unregister and move template 06](images/02-unregister-and-move-template06.png){.thumbnail}
+
+Choisissez le Datastore de destination du modèle à gauche, allez dans le `Dossier du modèle`{.action}, sélectionnez le `fichier du modèle`{.action} et cliquez sur  `Enregistrer une VM`{.action}.
+
+![03 register template 01](images/03-register-template01){.thumbnail}
+
+
+
+
+
+
+
+
+
 
 ### Suppression du stockage de votre cluster VMware
 
