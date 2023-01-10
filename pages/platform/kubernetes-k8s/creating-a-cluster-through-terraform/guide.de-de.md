@@ -22,7 +22,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/de/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
+- A [Public Cloud project](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin
@@ -503,7 +503,7 @@ xxx can be: RAM, CPU, VM, Disk or Port.
 If this is the case, the quotas must be increased.
 In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](https://docs.ovh.com/de/public-cloud/increase-public-cloud-quota/){.external}.
+[Increasing Public Cloud quotas](https://docs.ovh.com/de/public-cloud/public-cloud-quota-erhoehen/){.external}.
 
 ## Destroy (cleanup)
 
@@ -581,7 +581,7 @@ Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have 
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/de/public-cloud/kubernetes/).
 
 To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/).
 

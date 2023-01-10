@@ -1,11 +1,11 @@
 ---
 title: Configuring multi-attach persistent volumes with OVHcloud NAS-HA
-slug: Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha
+slug: configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha
 excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcloud NAS-HA'
 section: Storage
 order: 4
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/'
+    canonical: 'https://docs.ovh.com/gb/en/kubernetes/configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/'
 ---
 
 <style>
@@ -38,7 +38,7 @@ OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volu
 
 ## Requirements
 
-This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/en/public-cloud/kubernetes/) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial assumes that you already have a working [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/de/public-cloud/kubernetes/) cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
 It also assumes you have an OVHcloud NAS-HA already available. If you don't, you can [order one in the OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/nas).
 
