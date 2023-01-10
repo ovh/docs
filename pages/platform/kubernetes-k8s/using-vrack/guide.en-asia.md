@@ -36,7 +36,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 By default, your Kubernetes clusters will have public IPs. For some uses cases, or for security reasons, you might prefer having your Kubernetes cluster inside a private network. 
 
-OVHcloud [vRack](https://www.ovh.com/asia/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
+OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. 
 
 **This guide will cover the integration of OVHcloud Managed Kubernetes clusters into vRack private networks.**
 

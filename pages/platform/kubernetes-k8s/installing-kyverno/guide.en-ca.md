@@ -149,6 +149,8 @@ go: downloading github.com/dimchansky/utfbom v1.1.1
 $ cp ./cmd/cli/kubectl-kyverno/kyverno /usr/local/bin/kyverno
 </code></pre>
 
+After the installation, check that the `kyverno` CLI is working:
+
 ```bash
 kyverno version
 ```

@@ -72,6 +72,7 @@ Finally, enter a for name your cluster and click the `Send`{.action} button.
 
 The cluster creation is now in progress. It should be available within a few minutes in your OVHcloud Control Panel.
 
+
 ## Go further
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/asia/public-cloud/kubernetes/).

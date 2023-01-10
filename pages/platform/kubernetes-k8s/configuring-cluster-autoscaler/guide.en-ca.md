@@ -81,7 +81,7 @@ The easiest way to enable the autoscaler is using the Kubernetes API, for exampl
 
 #### Using Kubernetes API
 
-When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/gb/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
+When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/ca/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
 
 To list node pools, you can use:
 

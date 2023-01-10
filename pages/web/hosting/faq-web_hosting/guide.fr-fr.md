@@ -50,7 +50,6 @@ Afin de commander la formule d'hébergement Web la plus adaptée à vos besoins,
 
 Une fois votre choix fait, suivez les instructions de notre documentation [« Faire évoluer son offre d’hébergement web »](https://docs.ovh.com/fr/hosting/how_to_change_web_hosting_offer/).
 
-
 ### Comment conserver l'offre e-mail liée à mon hébergement mutualisé lors d'une résiliation ?
 
 Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail avant la résiliation de l'hébergement.<br>

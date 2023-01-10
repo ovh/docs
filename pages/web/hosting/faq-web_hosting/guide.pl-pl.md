@@ -50,29 +50,9 @@ Zapoznaj się z przewodnikiem [Instalacja kilku stron WWW na jednym hostingu](ht
 
 ### Jak zmienić formułę hostingu?
 
-> [!primary]
->
-> Aby zamówić ofertę hostingu WWW dostosowaną do Twoich potrzeb, sprawdź [tę stronę](https://www.ovhcloud.com/pl/web-hosting/).
->
+Aby zamówić ofertę hostingu WWW dostosowaną do Twoich potrzeb, zapoznaj się z naszymi ofertami na stronie [tej stronie](https://www.ovhcloud.com/pl/web-hosting/).
 
-Aby zmienić [ofertę hostingu](https://www.ovhcloud.com/pl/web-hosting/) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij `Web Cloud`{.action}, a następnie `Hosting`{.action}. Wybierz odpowiedni hosting, a następnie w sekcji `Abonament` kliknij przycisk `...`{.action} w sekcji `Usługa`, a następnie `Zmień ofertę`{.action}.
-
-Następnie wybierz nową ofertę hostingu oraz czas trwania nowego abonamentu. Zapoznaj się z odpowiednimi regulaminami i kliknij `Wyślij`{.action}.
-
-> [!warning]
->
-> Przed przejściem na ofertę niższą (na przykład przed przejściem z oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) na ofertę [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/)) sprawdź, czy korzystanie z hostingu jest kompatybilne z Twoją nową formułą:
->
-> - Jeśli utworzyłeś zbyt wiele kont e-mail, aby przejść na niższą ofertę, wykonaj kopię zapasową, a następnie usuń mniej używane konta e-mail;
->
-> - Jeśli limit nowej oferty hostingowej jest niewystarczający, zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) do hostingu, wykonaj kopię zapasową, a następnie usuń niepotrzebne pliki i katalogi;
->
-> - Jeśli Twój nowy hosting zawiera niewystarczającą liczbę baz danych lub przestrzeń dyskową, wykonaj kopie zapasowe, a następnie usuń niewykorzystane dane lub bazy danych. Możesz również zamówić [ofertę serwera baz danych](https://www.ovh.pl/cloud/cloud-databases/);
->
-> - Jeśli utworzyłeś [listy mailingowe](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) wraz z hostingiem, sprawdź, czy nowa oferta zawiera tę funkcjonalność.
->
-> W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/) lub naszą [społecznością użytkowników ](https://community.ovh.com/en/).
->
+Po dokonaniu wyboru postępuj zgodnie z instrukcjami zawartymi w przewodniku OVH ["Zmiana oferty hostingu"](https://docs.ovh.com/pl/hosting/how_to_change_hosting_offer/).
 
 ### Jak zachować konto e-mail powiązane z hostingiem podczas rezygnacji z usługi?
 

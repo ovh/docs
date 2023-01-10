@@ -32,9 +32,9 @@ order: 6
 
 ## Objective
 
-OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
+OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them.
 
-During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads. 
+During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads.
 
 This guide will cover how to enable and manage the cluster autoscaler on your OVHcloud Managed Kubernetes cluster.
 
@@ -52,11 +52,11 @@ This guide will cover how to enable and manage the cluster autoscaler on your OV
 
 One of the hallmarks of cloud native environments is that they must automatically adapt to fluctuating loads. These fluctuations can be for the most part regular, such as day-night or work-weekend cycles, or more ad hoc, such as a Black Friday situation. A well-designed cloud native system must scale up and down to adapt to fluctuations in load without human intervention.
 
-Kubernetes has a powerful set of features to accommodate to shifting workloads, the [horizontal pod autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/). 
+Kubernetes has a powerful set of features to accommodate to shifting workloads, the [horizontal pod autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
 
 > [!primary]
 >
-> The Horizontal Pod Autoscaler automatically scales the number of Pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics). 
+> The Horizontal Pod Autoscaler automatically scales the number of Pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics).
 
 But the horizontal pod autoscaling has a hard limit, the number of available nodes in your Kubernetes cluster. It can only add pods to a Replica Set if there is enough available resources in your Kubernetes nodes, and it cannot reduce the size of your cluster if your nodes are underutilized.
 
@@ -68,7 +68,7 @@ The cluster and horizontal pod autoscalers can work together, and are often both
 
 #### Scaling up and down
 
-To scale-up a cluster, the cluster autoscale watches the load on your nodes and detects when your cluster has resource constraints (e.g. it cannot schedule nodes because of lack of resources). When such a situation arise, the cluster autoscaler adds nodes to your [node pools](../managing-nodes/) to match the demand. 
+To scale-up a cluster, the cluster autoscale watches the load on your nodes and detects when your cluster has resource constraints (e.g. it cannot schedule nodes because of lack of resources). When such a situation arise, the cluster autoscaler adds nodes to your [node pools](../managing-nodes/) to match the demand.
 
 The cluster autoscaler also works the other way around, monitoring underutilized nodes and decreasing the number of nodes, helping to reduce your costs.
 
@@ -77,7 +77,7 @@ The cluster autoscaler also works the other way around, monitoring underutilized
 > The scaling up is conceptually easier than the scaling down. When the autoscaler detects resource constraints, it *simply* needs to add yet another node (providing it's under the user defined limit of nodes). But in order to scale down, even if most nodes are underutilized, it needs to move all the pods outside of one of the nodes before deleting it.
 >
 > Some considerations like pods using node selectors, anti-affinity, or restrictive PodDisruptionBudget (PDB).
-> 
+>
 > For more information on this factors disrupting the scaling down of the cluster, please see the [What types of pods can prevent CA from removing a node?](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node) page.
 
 In order to scale up and down the cluster, the autoscaler uses user-defined parameters for things like limits (*what are the upper and lower number of nodes limits in your cluster?*), nodes resource thresholds (*at what load level should it add or remove a node?*) or time intervals (*how often should it scale the cluster?*). These parameters are described in the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
@@ -99,10 +99,10 @@ You can activate the autoscaler on several node pools, each of which can have a 
 > [!primary]
 >
 > In order to avoid unexpected expenses, you should be careful to not enable autoscaling on monthly-billed node pools. However, you are still allowed to do so if you know what you are doing.
-> 
-> A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload. 
+>
+> A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload.
 
-When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or directly [using the Kubernetes API](../managing-nodes/). 
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or directly [using the Kubernetes API](../managing-nodes/).
 
 To list node pools, you can use:
 

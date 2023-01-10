@@ -26,7 +26,7 @@ In this guide we explain how to do some basic operations with nodes and node poo
 
 ## Instructions
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). In the table, select a cluster by clicking on the cluster name.
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb). In the table, select a cluster by clicking on the cluster name.
 
 ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Fill the fields to create a new node pool.
 The subsequent node pool configuration steps are described in [Creating a cluster](../creating-a-cluster/).
 
 > [!primary]
-> To learn more about the flavors of the current OVHcloud range, [refer to this page](https://www.ovhcloud.com/en-ie/public-cloud/prices/).
+> To learn more about the flavors of the current OVHcloud range, [refer to this page](https://www.ovhcloud.com/en-ca/public-cloud/prices/).
 
 
 ### Deleting a node pool

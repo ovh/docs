@@ -53,7 +53,7 @@ The versions installed depends on the Kubernetes version:
 * `1.20`: calico v3.10.3, flannel v0.11.0 (deprecated)
 * `1.21`: calico v3.22.5, flannel v0.17.0 (deprecated)
 * `1.22`: calico v3.22.5, flannel v0.17.0 (deprecated)
-* `1.23`: calico v3.22.5, flannel v0.17.0 
+* `1.23`: calico v3.22.5, flannel v0.17.0
 * `1.24`: calico v3.23.5, flannel v0.17.0
 * `1.25`: calico v3.24.5, flannel v0.20.1
 

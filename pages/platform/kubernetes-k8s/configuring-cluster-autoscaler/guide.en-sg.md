@@ -74,13 +74,14 @@ Here you have a description of the parameters used in the autoscaler configurati
 You can get more information on those parameters on the [Kubernetes autoscaler documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md).
 
 If you consider we should reevaluate the default value and/or prioritize the possible customization of one of those parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+
 ### Configuring the autoscaler
 
 The easiest way to enable the autoscaler is using the Kubernetes API, for example using `kubectl`.
 
 #### Using Kubernetes API
 
-When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/gb/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
+When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/sg/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
 
 To list node pools, you can use:
 

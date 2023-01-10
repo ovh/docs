@@ -7,7 +7,7 @@ section: Technical resources
 
 **Last updated May 30<sup>th</sup>, 2022.**
 
-You can find here a few details about the APIs: the one we expose on OVHcloud and the configuration of Kubernetes APIs on OVHcloud Managed Kubernetes clusters.
+ou can find here some details on the APIs: the one we expose on OVHcloud and the configuration of Kubernetes APIs on OVHcloud Managed Kubernetes clusters.
 
 ## OVHcloud API
 
