@@ -10,13 +10,13 @@ order: 02
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](https://docs.ovh.com/au/en//en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-au/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](https://docs.ovh.com/au/en//en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en-au/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-au/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-au/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/)
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
@@ -52,13 +52,13 @@ Before you make your switch to a lower range, check the following 6 items:
 
 #### 1 - Number of sites
 
-With the [Kimsufi Web](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/old-web-hosting-offers/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://docs.ovh.com/au/en//en/hosting/multisites-configuring-multiple-websites/).
+With the [Kimsufi Web](https://www.ovhcloud.com/en-au/web-hosting/old-web-hosting-offers/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://docs.ovh.com/au/en//en/hosting/multisites-configuring-multiple-websites/).
 
-Before you switch from the [Personal](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/old-web-hosting-offers/) solution, please check that your web hosting plan only has one website.
+Before you switch from the [Personal](https://www.ovhcloud.com/en-au/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.ovhcloud.com/en-au/web-hosting/old-web-hosting-offers/) solution, please check that your web hosting plan only has one website.
 
 #### 2 - Start SQL databases
 
-Before moving your hosting to a lower plan, please ensure that the new plan has enough [databases](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/options/start-sql/). Also make sure they are of sufficient size.
+Before moving your hosting to a lower plan, please ensure that the new plan has enough [databases](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/). Also make sure they are of sufficient size.
 
 Otherwise, delete unused databases and reduce the amount of data they contain, if necessary. This quantity must not exceed the maximum size of the databases in the new solution (for any requests for assistance with the operations to be carried out, contact the [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/)).
 
@@ -68,7 +68,7 @@ If you have deleted data from your databases, you can recalculate the quota from
 
 #### 3 - CloudDB
 
-If you are using the [CloudDB](https://docs.ovh.com/au/en//en/hosting/getting-started-with-clouddb/#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Professional](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
+If you are using the [CloudDB](https://docs.ovh.com/au/en//en/hosting/getting-started-with-clouddb/#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-au/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Professional](https://www.ovhcloud.com/en-au/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
 Click the `... `{.action} button in the `Private database`{.action} section, then `Detach`{.action}.
 
 ![clouddb](images/clouddb.png){.thumbnail}
@@ -98,9 +98,9 @@ If you would like to keep the same number of email accounts, before moving your 
 
 #### 6 - Mailing lists
 
-The [Mailing lists](https://docs.ovh.com/au/en//en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/personal-offer/) and [Kimsufi Web](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/old-web-hosting-offers/) hosting plans.
+The [Mailing lists](https://docs.ovh.com/au/en//en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en-au/web-hosting/personal-offer/) and [Kimsufi Web](https://www.ovhcloud.com/en-au/web-hosting/old-web-hosting-offers/) hosting plans.
 
-To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-au/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
 In the `Emails`{.action} section of your Control Panel, select the solution concerned, then click on `...`{.action} to the right of `Solution`{.action}. Next, click `Change solution`{.action}.
 
@@ -112,7 +112,7 @@ Once you have checked these 6 elements, you can [change your plan](#modify).
 
 #### Boost your Performance web hosting plan temporarily <a name="boost"></a>
 
-With the [Boost option](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/options/boost/), available on our *Performance* plans, you can temporarily increase your hosting system’s CPU and RAM resources to absorb seasonal traffic spikes. If this increase is prolonged over time, you can also [switch to a higher-level Performance plan](#modify) to have these resources permanently.
+With the [Boost option](https://www.ovhcloud.com/en-au/web-hosting/options/boost/), available on our *Performance* plans, you can temporarily increase your hosting system’s CPU and RAM resources to absorb seasonal traffic spikes. If this increase is prolonged over time, you can also [switch to a higher-level Performance plan](#modify) to have these resources permanently.
 
 > [!warning]
 >
@@ -139,9 +139,9 @@ This calculation corresponds to the price difference between your initial soluti
 
 > **Example:**<br>
 >
-> You subscribed to a [Personal Hosting](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/personal-offer/) subscription on January 1, 2022.
+> You subscribed to a [Personal Hosting](https://www.ovhcloud.com/en-au/web-hosting/personal-offer/) subscription on January 1, 2022.
 >
-> On October 31, 2022, you upgrade from this **Personal** plan to a [Professional plan](https://www.ovhcloud.com/en-au/web-cloud/web-hosting/professional-offer/).<br>
+> On October 31, 2022, you upgrade from this **Personal** plan to a [Professional plan](https://www.ovhcloud.com/en-au/web-hosting/professional-offer/).<br>
 >
 > Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Professional** subscription, until January 1, 2023. You will only pay the difference.
 > From 1st January 2023, you will then be billed for your Professional subscription at its current price.
@@ -156,6 +156,6 @@ Please follow [these instructions](#modify) to change your plan.
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/web-cloud/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
