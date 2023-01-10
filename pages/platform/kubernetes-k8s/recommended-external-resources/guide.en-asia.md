@@ -5,7 +5,6 @@ slug: recommended-external-resources
 section: Technical resources
 ---
 
-
 **Last updated 1<sup>st</sup> July, 2019.**
 
 <style>
@@ -30,7 +29,6 @@ section: Technical resources
  }
 </style>
 
-
 # Recommended external resources
 
 We list here some external resources that can help you to go further with Kubernetes.
@@ -49,5 +47,3 @@ We list here some external resources that can help you to go further with Kubern
 - [Reddit Kubernetes section](https://www.reddit.com/r/kubernetes/){.external}
 - [#kubernetes-users Slack channel](http://slack.k8s.io/){.external}
 - [awesome-kubernetes](https://ramitsurana.github.io/awesome-kubernetes/){.external}
-
-
