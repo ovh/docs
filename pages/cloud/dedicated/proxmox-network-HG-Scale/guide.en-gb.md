@@ -39,7 +39,7 @@ On the High Grade & SCALE ranges, it is not possible to operate Additional IPs i
 
 ### Additional IP in routed mode on public network interfaces
 
-This configuration offer better perfomences in therm of bandwidth but is less flexible. In this configuration the additional ip have to be attached to a dedicated server. If you have multiple Proxmox hosts and you want to migrate VM from one host to another you have also to migrate the addtional IP from the manager or using the API. You can automate this task by creating script using OVHcloud API.
+This configuration offers a better performance in terms of bandwidth, but is less flexible. With this configuration, the Additional IP has to be attached to a dedicated server. If you have multiple Proxmox hosts and want to migrate a VM from one host to another, you must also migrate the Additional IP linked to the VM. This can be done via the OVHcloud control panel or the OVHcloud API (you can automate this task by creating script).
 
 #### Target configuration schema
 
@@ -47,11 +47,11 @@ This configuration offer better perfomences in therm of bandwidth but is less fl
 
 #### Explanations
 
-Proxmox is based on debian distribution. In this guide we will update the network configuration using ssh and not the web-ui.
+Since Proxmox is based on debian distribution, we will update the network configuration file using SSH and not the web-ui.
 
 You need to:
 
-- ssh on Proxmox host
+- administrative access (root) via SSH
 - create an aggregation (linux bond)
 - create a bridge
 - allow forwarding 
@@ -61,9 +61,10 @@ You need to:
 #### Configure the hypervisor
 
 Login using ssh on Proxmox host:
+
 ```bash
-ssh PUB_IP_DEDICATED_SERVER
-# you can also use private IP on vRack if you have a jumphost
+ssh root@IPv4_of_your_server
+# you can also use a private IP on vRack if you have a jumphost
 ```
 
 The entire configuration is done in the `/etc/network/interfaces` file:
@@ -111,7 +112,7 @@ iface bond0 inet static
 	bond-updelay 200
 	bond-lacp-rate 1
 	bond-xmit-hash-policy layer2+3
-	# Used the mac address of the first public interface
+	# Use the mac address of the first public interface
 	hwaddress AB:CD:EF:12:34:56
 
 #Private
@@ -124,7 +125,7 @@ iface bond1 inet static
 	bond-updelay 200
 	bond-lacp-rate 1
 	bond-xmit-hash-policy layer2+3
-	# Used the mac address of the first private interface
+	# Use the mac address of the first private interface
 	hwaddress GH:IJ:KL:12:34:56
 
 # Configure the bridge with a private address and add route(s) to send the Additional IPs to it
@@ -133,7 +134,7 @@ iface bond1 inet static
 # You can use it or create another one 
 auto vmbr0
 iface vmbr0 inet dhcp
-	# Define a private IP, should not overlap your existing private networks on the vrack for example 
+	# Define a private IP, it should not overlap your existing private networks on the vrack for example 
 	address 192.168.0.1/24
 	bridge-ports none
 	bridge-stp off
@@ -159,7 +160,7 @@ At this point, restart the network services or restart the server.
 systemctl restart networking.service
 ```
 
-When you restart networking.service, the bridges (vmbr0 for example) can be in down state. This is due to Proxmox disconnecting every VM to the briges and not reconnecting them. To force VMs reconnection to the briges you can reboot the VMs.
+When you restart `networking.service`, the bridges (for example: vmbr0) may be in a shutdown state. This is because Proxmox disconnects each VM from the bridges and does not reconnect them. To force the VMs to reconnect to the bridges, you can reboot the VMs.
 
 #### Configuration example of a client VM on Debian
 
@@ -176,7 +177,7 @@ iface ens18 inet static
 
 #### Test and validation
 
-Now, your VMs should be able to join a public service over internet. In addtion your VMs can also be joined directly over internet through the Additional IP. The bandwith available corespond to the bandwith available on the Public interfaces of your server and will not impact the private interfaces used for vRack. This bandwidth is shared with others VMs on the same host that are using additional IP and the Proxmox host for public access.
+Now, your VMs should be able to reach a public service over internet. In addition, your VMs can also be reached directly over the internet through the Additional IP. The bandwith available corresponds to the bandwith available on the Public interfaces of your server and will not impact the private interfaces used for the vRack. This bandwidth is shared with other VMs on the same host that are using Additional IPs and the Proxmox host for public access.
 
 To check your public IP, from the VM:
 ```bash
@@ -186,7 +187,7 @@ ADDITIONAL_IP    				# should return your additional ip
 
 ### Additional IP via vRack
 
-This configuration is more flexible, you don't have to associate additional IP to a server but to vRack. That means, if a VM wants to use an additional IP it can claim it directly without any additional configuration and regardless the host where is it hosted.
+This configuration is more flexible, you don't have to associate an Additional IP to a server but rather to a vRack. This means that if a VM wants to use an additional IP, it can claim it directly without any additional configuration and independently of the host it is hosted on.
 
 > [!warning]
 >
