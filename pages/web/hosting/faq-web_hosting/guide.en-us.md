@@ -38,7 +38,7 @@ To follow the steps required to build your website, go to this [page](https://ww
 
 ### How do I change my hosting plan?
 
-To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](https://www.ovhcloud.com/en-us/web-hosting/).
+To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](https://www.ovhcloud.com/en/web-hosting/).
 
 Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](https://docs.ovh.com/us/en/hosting/how_to_change_web_hosting_offer/).
 
