@@ -42,7 +42,7 @@ Lorsque votre base de données est en **overquota**, un troisième e-mail est en
 
 ### Etape 1 : identifier la ou les table(s) volumineuse(s)
 
-Une base de données est constituée d'une ou plusieurs **tables**, elles-mêmes constituées d'une ou plusieurs **lignes**. 
+Une base de données est constituée d'une ou plusieurs **tables**, elles-mêmes constituées d'une ou plusieurs **lignes** organisées à l'aide de **colonnes** prédéterminées.
 
 La première étape consiste à identifier la ou les tables volumineuses présentes dans votre base de données.
 
@@ -79,7 +79,73 @@ Renseignez le mot de passe d'accès à votre base de données en complément des
 
 Une fois connecté, la page suivante s'affiche :
 
+![PHPMyAdmin Login](images/pma_login.png){.thumbnail}
+
+Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de gauche puis sur `Taille`{.action} en haut à droite du tableau qui s'affiche :
+
+![PHPMyAdmin Login](images/pma_show_table.png){.thumbnail}
+
+Les tables les plus volumineuses apparaîssent en haut du tableau. Identifiez les **tables** les plus volumineuses puis passez à l'**étape 2**.
+
 ### Etape 2 : déterminer l'utilité du contenu présent dans la ou les table(s) volumineuse(s)
+
+Une fois les tables volumineuses identifiées, déterminez si l'intégralité de leurs contenus est nécessaire au fonctionnement de votre site ou non.
+
+>[!primary]
+>
+> Si vous utilisez un Content Managment System (CMS) tel que WordPress, Joomla!, PrestaShop ou Drupal, vérifiez que vos tables volumineuses ne sont pas liées à un plugin/thème récemment installé ou mis à jour.
+>
+> Dans ce cas, contactez l'éditeur du plugin/thème pour qu'il vous indique les correctifs à appliquer pour votre CMS.
+>
+ 
+Pour les autres cas liés aux CMS, nous vous recommandons de contacter directement l'éditeur de votre CMS avant de réaliser les actions qui suivent.
+
+Pour vous aider, retrouvez ci-après les liens vers les sites officiels des CMS proposés en installation « **En un clic** » par OVHcloud :
+
+- [WordPress](https://wordpress.org/){.external}
+- [Joomla!](https://www.joomla.org){.external}
+- [PrestaShop](https://www.prestashop.com/){.external}
+- [Drupal](https://drupal.org){.external}
+
+> [!primary]
+>
+> Si votre site a été développé « **manuellement** » par un prestataire spécialisé, nous vous recommandons de le contacter afin qu'il corrige votre situation.
+>
+
+Dans tous les cas, nous vous conseillons d'analyser la structure de votre base de données afin de voir si des optimisations structurelles ne sont pas possibles.
+
+### Etape 3 : agir pour corriger la situation 
+
+Une fois que vous avez déterminé si le contenu de vos tables est nécessaire ou non au fonctionnement de votre site, plusieurs options s'offrent à vous :
+
+- **Cas 1 - l'ensemble du contenu de la table volumineuse est nécessaire au bon fonctionnement de votre site :**
+
+Vous devrez basculer votre base de données sur une base de données plus volumineuse.
+
+Consultez notre offre de base de données [Cloud Databases](https://www.ovh.com/fr/cloud-databases/) pour choisir votre nouveau service de base de données. 
+
+Nous recomandons cette offre pour les bases de données volumineuses pour tous les sites hébergés sur notre infrastructure mutualisée. 
+
+Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
+
+- [Exporter votre base de données existante](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/)
+- [Premiers pas avec l'offre Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
+- [Importer votre ancienne base de données dans votre offre Cloud Databases](https://docs.ovh.com/fr/clouddb/restaurer-importer-base-de-donnees/)
+
+- **Cas 2 : tout ou partie du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site :**
+
+>[!alert]
+>
+> La suite de ce guide vous explique comment supprimer des données présentes dans votre base de données. Soyez sûr de ce que vous faites ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous avez la moindre hésitation.
+>
+
+Les bases de données mutualisées OVHcloud disposent de plusieurs commandes SQL pour agir sur leurs contenus.
+
+Dans le cas d'un overquota ou d'une table volumineuse, trois commandes sont disponibles :
+
+- **DELETE** : permet de supprimer **une ou plusieurs lignes** d'une table donnée. Cette commande est utile si une partie du contenu de la table est nécessaire au bon fonctionnement de votre site web.
+- **TRUNCATE** : permet de supprimer **toutes les lignes** d'une table donnée
+- **DROP** : permet de supprimer complètement **une table et l'ensemble des lignes qu'elle contient**. Cette commande n'est pas à utiliser si la table doit continuer d'exister.
 
 ## Aller plus loin <a name="go-further"></a>
 
