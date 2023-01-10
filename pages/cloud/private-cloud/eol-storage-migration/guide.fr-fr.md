@@ -4,6 +4,7 @@ slug: eol-storage-migration
 excerpt: Marche à suivre pour effectuer une migration de stockage
 section: FAQ
 order: 005
+hidden: true
 ---
 
 **Dernière mise à jour le 10/01/2023**
@@ -34,13 +35,13 @@ Utilisez ce guide pour ajouter un stockage plus important si vous n'avez pas enc
 
 ### Migration de vos machines virtuelles et des modèles de machines virtuelles
 
-Allez dans votre interface vCenter et vérifiez les machines virtuelles qui se trouvent sur chacun de vos datastore obsolètes.
+Allez dans votre interface vCenter et vérifiez les machines virtuelles qui se trouvent sur chacun de vos datastores obsolètes.
 
 Cliquez sur l'icône de `stockage`{.action}, choisissez à gauche votre `Datastore`{.action} dans `Shared Storage`{.action},cliquez sur l'onglet `VM`{.action} et restez sur `Machines virtuelles`{.action} pour faire apparaître les machines virtuelles qui se trouvent sur ce stockage obsolète.
 
 ![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png){.thumbnail}
 
-Faites un clic-droit sur chacunes des `machines virtuelles`{.action} qui se trouvent sur ce datastore, choisissez `Migrer`{.action} et aidez
+Faites un clic-droit sur chacune des `machines virtuelles`{.action} qui se trouvent sur ce datastore, choisissez `Migrer`{.action} et aidez
 -vous de ce guide [VMware Storage vMotion](https://docs.ovh.com/fr/managed-bare-metal/vmware-storage-vmotion-new/#finaliser-le-vmotion) pour effectuer la migration vers un datastore plus récent.
 
 ![01 check existing VM on datastore 02](images/01-check-existing-vm-on-datastore02.png){.thumbnail}
@@ -52,7 +53,7 @@ Lorsque vous n'aurez plus de machines virtuelles dans l'onglet, rendez-vous sur 
 Faites un clic droit sur chacun des `modèles`{.action} enregistrés dans votre *datastore* et cliquez sur `Supprimer de l'inventaire`{.action}.
 
 > [!warning]
-> Le modèle est supprimé de l'inventaire mais se trouve toujours dans le *datastore*, vous pouvez le récuperer pour le remettre sur un autre datastore ou le supprimer si vous n'en avez plus besoin.
+> Le modèle est supprimé de l'inventaire mais se trouve toujours dans le *datastore*, vous pouvez le récupérer pour le remettre sur un autre *datastore* ou le supprimer si vous n'en avez plus besoin.
 >
 
 ![02 unregister and move template 02](images/02-unregister-and-move-template02.png){.thumbnail}
@@ -77,11 +78,11 @@ Choisissez le Datastore de destination du modèle à gauche, allez dans le `Doss
 
 ![03 register template 01](images/03-register-template01.png){.thumbnail}
 
-Cliquez sur `Suivant`{.action}.
+Cliquez sur `NEXT`{.action}.
 
 ![03 register template 02](images/03-register-template02.png){.thumbnail}
 
-Cliquez à nouveau sur `Suivant`{.action}.
+Cliquez à nouveau sur `NEXT`{.action}.
 
 ![03 register template 03](images/03-register-template03.png){.thumbnail}
 

@@ -4,6 +4,7 @@ slug: eol-storage-migration
 excerpt: 'How to perform a storage migration'
 section: FAQ
 order: 1
+hidden: true
 ---
 
 **Last updated 10th January 2023**
