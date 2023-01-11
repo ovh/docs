@@ -28,7 +28,7 @@ Profitez d'une infrastructure privée sans avoir modifié la configuration par d
 >
 
 Les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/) vous permettent de configurer/déclarer vos propres réseaux.<br>
-Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnant en réalité en liens aggrégés et assurant la redondance en cas de panne.<br>
+Chaque serveur est muni au minimum de 2 interfaces réseaux, fonctionnant en réalité en liens agrégés et assurant la redondance en cas de panne.<br>
 Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics* et *privés* en passant par notre solution [vRack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire possédant **uniquement** des réseaux privés.
