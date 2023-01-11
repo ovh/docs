@@ -22,10 +22,10 @@ You can easily make statistics for yourself or users. Famous social networks suc
 At the end of the tutorial, you will succeed to read CSV file from OVHcloud Object Storage, count words, remove stop words, and find the twentiest most used ones.
 
 
-## Requirements 
+## Requirements
 - Access to the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}
-- An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](https://docs.ovh.com/de/public-cloud/create_a_public_cloud_project/) for details.)
+- An OVHcloud account
+- A cloud project in your OVHcloud account (see [How to create a cloud project](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) for details.)
 - Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details.)
 
 
@@ -51,7 +51,7 @@ Let's go back to the tutorial. Click on the CSV file, then download "billboard_l
 
 > [!primary]
 >
-> You can download Python and Environment files generated here on [official OVHcloud Github repository](https://github.com/ovh/data-processing-samples){.external} [[1]](#notes) 
+> You can download Python and Environment files generated here on [official OVHcloud Github repository](https://github.com/ovh/data-processing-samples){.external} [[1]](#notes)
 > We recommend the use of Conda as a preferred Python environment.
 > Also, if you want to execute this code on your computer, it will require Apache Spark up and running, locally.
 >
@@ -113,7 +113,7 @@ When executed, inside our logs we will see the content of the dataframe thanks t
     |  20|stop in the name ...|        the supremes|1965| stop in the name...|     1|
     +----+--------------------+--------------------+----+--------------------+------+
     only showing top 20 rows
-    
+
 
 Now, we can play with this dataframe! Let's explode the strings of the "Lyrics" column and count the words frequencies:
 
@@ -259,7 +259,7 @@ A detailed version about how to deploy a job in Python is explained on the guide
 Briefly, inside OVHcloud Data Processing control panel, click on "start a new job" then:
 
 - Put your CSV file, your Python Script and environment.yml file in the same OVHcloud Object storage container (public or private) at the root level
-- Select `Data Processing`{.action} from the left panel 
+- Select `Data Processing`{.action} from the left panel
 - Select `Submit a new job`{.action}
 - Select Apache Spark, choose a region
 - Configure your Spark cluster (4vCores - 15GB memory for driver & executor template, executor count set to 1 recommended)
@@ -291,4 +291,3 @@ You can read data from multiple sources, like Object Storage via AWS S3 API prot
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/) and [pyspark's documentation](https://spark.apache.org/docs/latest/api/python/index.html).
 
 You can send your questions, suggestions or feedbacks in our community of users on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-
