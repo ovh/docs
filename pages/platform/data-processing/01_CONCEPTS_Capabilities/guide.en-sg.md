@@ -77,7 +77,6 @@ with IP within a range depending on the region:
 
 - 164.132.38.64/26 for GRA (164.132.38.64 - 164.132.38.127)
 
-
 ### Storage
 
 - Before submitting a job, you will need to upload your job into your OVHcloud Object Storage account. 

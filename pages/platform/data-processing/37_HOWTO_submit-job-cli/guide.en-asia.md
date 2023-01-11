@@ -55,9 +55,9 @@ consumer_key=my_consumer_key
 Before running your job in the Data Processing platform, you will need to create a container in OVHcloud Object Storage. 
 You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
+Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/asia/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
 
-You can also manage your Object storage through command line with the [Openstack Swift API](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_api/){.external} 
+You can also manage your Object storage through command line with the [Openstack Swift API](https://docs.ovh.com/asia/en/public-cloud/getting_started_with_the_swift_api/){.external} 
 
 When it is created, upload your application code and environment file if needed at the root of the container. If you don't have any application code, you can still try the CLI with the examples files provided inside the `testdata` directory of the [GitHub project](https://github.com/ovh/data-processing-spark-submit){.external}.
 If you want to submit a python job, do not forget to upload your environment.yml file (see [How to generate environment file for Python jobs](../generate-environment){.external})
@@ -162,4 +162,3 @@ Then the Spark-Submit CLI will exit with it.
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-

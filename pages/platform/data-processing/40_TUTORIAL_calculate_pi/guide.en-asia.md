@@ -6,7 +6,7 @@ section: Tutorials
 order: 1
 ---
 
-**Last updated 30<sup>th</sup> April, 2020**
+**Last updated 20<sup>th</sup> January, 2021**
 
 ## Objective
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
@@ -68,7 +68,7 @@ Spark allows us to use this method much faster. Instead of making each calculati
 ### Step 1 : Write a python code using Apache Spark
 
 Here is a code sample written in Python do calculate π.
-Save it in a file called 'pi-spark.py' or download it from this repository: [Data Processing Samples - Calculate Pi](https://github.com/ovh/data-processing-samples/tree/master/python_calculatePi).
+Save it in a file called 'pi-spark.py' or download it from this repository: [Data Processing Samples - Calculate Pi](https://github.com/ovh/data-processing-samples/tree/master/python_calculatePi) [[1]](#notes).
 
 
 ```python
@@ -240,6 +240,9 @@ Here is a graphical representation of the results :
 
 ![Monte Carlo comparison](images/comparison_chart.png){.thumbnail}
 
+## Notes
+
+[1] Please select the tag related to the Spark version you want to use.
 
 ## Go further
 
@@ -248,4 +251,3 @@ Calculating π number is a basic example, but Apache Spark is capable of powerfu
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/) and [pyspark's documentation](https://spark.apache.org/docs/latest/api/python/index.html).
 
 You can send your questions, suggestions or feedbacks in our community of users on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-

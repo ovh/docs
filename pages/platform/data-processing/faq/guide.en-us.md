@@ -117,7 +117,7 @@ Storage and Storage transfer are not included in the Data processing offer.
 
 ### What  are the SLA linked to the Data processing offer?
 
-For more information, we invite you to read our [specific conditions for Public Cloud service](https://www.ovh.com/world/support/contracts/).
+For more information, we invite you to read our [specific conditions for Public Cloud service](https://www.ovh.co.uk/support/contracts/).
 
 
 ### How to monitor a cluster?  Is Datadog compatible?
@@ -142,4 +142,3 @@ OVHcloud builds a cluster, deploys it and monitors it. A great breakthrough, rig
 To learn more about using Data Processing and how to create a cluster and process your data, we invite you to look at [Data Processing documentation page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-

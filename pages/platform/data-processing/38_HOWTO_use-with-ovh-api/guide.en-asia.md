@@ -26,7 +26,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 ### Step 1: Get your OVHcloud API credentials
 
 To be able to use the OVHcloud API, you must set up some configurations that will allow it to authenticate.
-To do so, you will need an application key, a secret application key and a consumer key. These can be obtained [here](https://ca.api.ovh.com/createToken/){.external}.
+To do so, you will need an application key, a secret application key and a consumer key. These can be obtained [here](https://eu.api.ovh.com/createToken/){.external}.
 
 You need to add the rights `GET/POST/PUT` on the endpoint `/cloud/project/*/dataProcessing/*`.
 
@@ -58,7 +58,7 @@ Once you have your credentials, you will be able to query the OVHcloud API. To d
 
 ### Step 3: Take a look at the OVHcloud API endpoints
 
-In order to know which endpoints are available through the OVHcloud API, you can have a look at the [API web page](https://ca.api.ovh.com/){.external} and click on the `Explore`{.action} button.
+In order to know which endpoints are available through the OVHcloud API, you can have a look at the [API web page](https://api.ovh.com/){.external} and click on the `Explore`{.action} button.
 
 To use this UI, you have to be logged in with your OVHcloud account credentials.
 
@@ -112,4 +112,3 @@ If this is your first time using Data Processing, we advise to try it out first 
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at the [Data Processing documentations page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-

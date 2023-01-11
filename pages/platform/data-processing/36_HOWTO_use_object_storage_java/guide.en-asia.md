@@ -6,7 +6,7 @@ section: How to
 order: 6
 ---
 
-**Last updated 19<sup>th</sup> May, 2020**
+**Last updated 20<sup>th</sup> January, 2021**
 
 ## Objective
 This guide gives you a basic example about using OpenStack Swift and its S3 API with OVHcloud Data Processing using Java.
@@ -20,7 +20,7 @@ Samples are based on the well-known WordCount. We will first read data from a te
 - An OVHcloud account.
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details).
 - Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details).
-- The input file 'novel.txt' used by the following samples is available [here](https://github.com/ovh/data-processing-samples/tree/master/java_S3WordCount/novel.txt){.external}.
+- The input file 'novel.txt' used by the following samples is available [here](https://github.com/ovh/data-processing-samples/tree/master/java_S3WordCount/novel.txt){.external} [[1]](#notes).
 You have to upload it in an Object Storage container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create an OVHcloud Object Storage container). In this example, we created a container named 'textfile" and uploaded the novel.txt object into that container. 
 - OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file (textfile container in this example). (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details).
 
@@ -182,7 +182,11 @@ pom.xml :
 > Everything in OVHcloud object storage container in which you uploaded your code, will be downloaded to the Data Processing cluster. If you have big volume of data, the best practice is to put your data in a separated Object Storage container. 
 
 
-You can find the source code of this project in OVHcloud github repository in this address: [ovh/data-processing-samples](https://github.com/ovh/data-processing-samples/tree/master/){.external}
+You can find the source code of this project in OVHcloud github repository in this address: [ovh/data-processing-samples](https://github.com/ovh/data-processing-samples/tree/master/){.external} [[1]](#notes)
+
+## Notes
+
+[1] Please select the tag related to the Spark version you want to use.
 
 ## Go further
 
@@ -193,5 +197,3 @@ Concerning the 'WordCount' use case, here is a link to a more advanced tutorial 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/){.external}
 
 You can send your questions, suggestions or feedbacks in our community of users on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-
-

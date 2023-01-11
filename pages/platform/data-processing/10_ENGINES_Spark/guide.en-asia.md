@@ -43,4 +43,3 @@ Please send us your questions, feedback and suggestions to improve the service:
 
 - On OVHcloud community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/)
 - On our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-

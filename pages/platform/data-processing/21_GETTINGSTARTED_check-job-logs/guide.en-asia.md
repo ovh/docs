@@ -161,4 +161,3 @@ With this token you should be able to list and to download the logs files of you
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at the [Data Processing documentations page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-
