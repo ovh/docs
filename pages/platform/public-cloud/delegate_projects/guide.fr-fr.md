@@ -55,6 +55,6 @@ Pour révoquer un accès, cliquez sur le bouton `...`{.action} puis sélectionne
 
 [Informations concernant le mode de facturation Public Cloud](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)
 
-[Paramètres d’accès et de sécurité dans Horizon](https://docs.ovh.com/fr/public-cloud/acces-et-securite-dans-horizon/)
+[Paramètres d’accès et de sécurité dans Horizon](https://docs.ovh.com/fr/public-cloud/access_and_security_in_horizon/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

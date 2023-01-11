@@ -22,7 +22,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 ## Instructions
 
 ### Step 1: Download the Data Processing CLI
-Download the latest release for your system of the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as `ovh-spark-submit` or run this: 
+Download the latest release for your system of the CLI binary available on [GitHub](https://github.com/ovh/data-processing-spark-submit/releases){.external} and save it as `ovh-spark-submit` or run this:
 ```shell-session
 $ export SYSTEM_ARCHITECTURE=darwin_386 # or darwin_amd64 or linux_386 or linux_amd64 or windows_386 or windows_amd64
 $ export DATA_PROCESSING_CLI_VERSION=$(curl -s https://api.github.com/repos/ovh/data-processing-spark-submit/releases/latest | grep "tag_name" | cut -d : -f 2,3 | tr -d \",\ )
@@ -52,12 +52,12 @@ consumer_key=my_consumer_key
 ```
 
 ### Step 3: Upload your application code to Object Storage
-Before running your job in the Data Processing platform, you will need to create a container in OVHcloud Object Storage. 
+Before running your job in the Data Processing platform, you will need to create a container in OVHcloud Object Storage.
 You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
+Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/ca/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
 
-You can also manage your Object storage through command line with the [Openstack Swift API](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_api/){.external} 
+You can also manage your Object storage through command line with the [Openstack Swift API](https://docs.ovh.com/ca/en/storage/object-storage/pcs/getting-started-with-the-swift-api/){.external} 
 
 When it is created, upload your application code and environment file if needed at the root of the container. If you don't have any application code, you can still try the CLI with the examples files provided inside the `testdata` directory of the [GitHub project](https://github.com/ovh/data-processing-spark-submit){.external}.
 If you want to submit a python job, do not forget to upload your environment.yml file (see [How to generate environment file for Python jobs](../generate-environment){.external})
@@ -97,7 +97,7 @@ $ ./ovh-spark-submit -h
 
 If you don't know how to set these parameters values, please refer to the page [How to fill the job submit form in the Data Processing page from the OVHcloud Manager](../job-submit-form){.external})
 
-While your job is running, you can watch logs in your terminal or access Spark UI through this URL: 
+While your job is running, you can watch logs in your terminal or access Spark UI through this URL:
 
 `https://adc.{region}.dataconvergence.ovh.com/{your-job-id}/jobs/`
 
@@ -162,4 +162,3 @@ Then the Spark-Submit CLI will exit with it.
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-

@@ -23,7 +23,7 @@ Poderá necessitar de migrar os seus volumes adicionais de um datacenter para ou
 
 * Dispor de uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
 * Dispor de um acesso administrador (root) ao datacenter através de SSH.
-* Ler o manual [Preparar o ambiente para utilizar a API OpenStack](../preparar_o_ambiente_para_utilizar_a_api_openstack/){.external}. (Recomendado)
+* Ler o manual [Preparar o ambiente para utilizar a API OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external}. (Recomendado)
 
 > [!primary]
 >

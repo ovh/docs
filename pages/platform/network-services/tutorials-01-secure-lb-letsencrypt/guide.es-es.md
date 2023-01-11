@@ -21,7 +21,7 @@ After setting up your Load Balancer, you can configure it with a certificate in 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
-- [Preparing your environment for using the OpenStack API](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/))
+- [Preparing your environment for using the OpenStack API](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
 - [OpenStack Octavia client](https://docs.openstack.org/python-octaviaclient/latest/install/index.html) and [OpenStack Barbican](https://docs.openstack.org/python-barbicanclient/latest/install/index.html) set up
 - A Load Balancer running in your project
 

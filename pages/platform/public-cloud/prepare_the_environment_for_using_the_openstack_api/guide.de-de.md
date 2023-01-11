@@ -1,6 +1,6 @@
 ---
 title: 'Umgebung für die Verwendung der OpenStack-API vorbereiten'
-slug: vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api
+slug: prepare_the_environment_for_using_the_openstack_api
 excerpt: 'Installieren Sie die OpenStack-Umgebung, um Ihre Instanzen über die API zu verwalten.'
 legacy_guide_number: 1851
 section: 'OpenStack'
@@ -186,6 +186,6 @@ nova help
 
 ## Weiterführende Informationen
 
-[OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/).
+[OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -109,8 +109,7 @@ You should have these files in your `hello-ovh` directory:
 └── ovh.svg
 ```
 
-1. Go into the `hello-ovh` folder, containing the three files, and do a `docker build`.
-  You will need to tag your build using your private registry URL, the project within the registry (*private* if you followed the [managing users and projects](../managing-users-and-projects/) guide), and the image name (*hello-ovh*):
+- Go into the `hello-ovh` folder, containing the three files, and do a `docker build`. You will need to tag your build using your private registry URL, the project within the registry (*private* if you followed the [managing users and projects](../managing-users-and-projects/) guide), and the image name (*hello-ovh*):
 
 ```bash
 docker build --tag [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0 .
@@ -137,7 +136,7 @@ Successfully built 3f803b45da18
 Successfully tagged 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
 </code></pre>
 
-1. Login to your private registry, using a user with write rights to the project (*private-user* if you followed the [managing users and projects](../managing-users-and-projects/) guide)
+- Login to your private registry, using a user with write rights to the project (*private-user* if you followed the [managing users and projects](../managing-users-and-projects/) guide)
 
 ```bash
 docker login [YOUR_PRIVATE_REGISTRY_URL]
@@ -151,7 +150,7 @@ Password:
 Login Succeeded
 </code></pre>
 
-1. Upload the image to the private registry
+- Upload the image to the private registry
 
 ```bash
 docker push [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0

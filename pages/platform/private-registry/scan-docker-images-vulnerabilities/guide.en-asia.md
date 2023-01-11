@@ -10,7 +10,7 @@ category_l2: Managed Private Registry
 category_l3: Tutorials
 ---
 
-**Last updated 15th April, 2022**
+**Last updated 15th April 2022**
 
 <style>
  pre {
@@ -53,7 +53,7 @@ You can scan your images on your private registry by using the Harbor UI.
 
 ### Check that you have enabled a vulnerability scanner
 
-By default, when you create a Private Registry in order to enable a vulnerabilities scanner, you need to choose a `M` or `L` plan.
+By default, when you create a Private Registry in order to enable a vulnerabilities scanner you need to choose a `M` or `L` plan.
 
 > [!primary]
 >

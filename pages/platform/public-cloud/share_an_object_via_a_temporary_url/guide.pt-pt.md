@@ -17,8 +17,8 @@ Quando pretende partilhar um ficheiro com alguém, não quer transmitir informa�
 
 ## Requisitos
 
-- [Ter preparado o ambiente para usar a API OpenStack](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/){.ref}.
-- [Carregar as variáveis do ambiente OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.ref} (versão em francês).
+- [Ter preparado o ambiente para usar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.ref}.
+- [Carregar as variáveis do ambiente OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/){.ref} (versão em francês).
 - Ter instalado o Python no seu ambiente de trabalho.
 
 ## Instruções

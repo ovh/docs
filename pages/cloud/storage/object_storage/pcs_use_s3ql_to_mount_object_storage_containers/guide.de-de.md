@@ -47,7 +47,7 @@ fs-passphrase: PASSPHRASE
 ```
 
 Die Informationen wie TENANT_NAME und USERNAME finden Sie in Ihrer OpenRC-Datei.
-Mehr dazu erfahren Sie in dieser Hilfe: [Zugriffs- und Sicherheitseinstellungen in Horizon](https://docs.ovh.com/de/public-cloud/zugriff_und_sicherheit_in_horizon/)
+Mehr dazu erfahren Sie in dieser Hilfe: [Zugriffs- und Sicherheitseinstellungen in Horizon](https://docs.ovh.com/de/public-cloud/access_and_security_in_horizon/)
 
 Die Argumente REGION_NAME und CT_NAME müssen entsprechend dem Namen und Standort Ihres Object Containers angepasst werden.
 

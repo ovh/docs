@@ -30,7 +30,7 @@ routes:
  }
 </style>
 
-**Last updated 26th September 2022**
+**Last updated 11th January 2023**
 
 In this tutorial, we are using [Kubernetes Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) to back up and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
 
@@ -40,7 +40,7 @@ They provide the ability to create a “snapshot” of a persistent volume. A sn
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](https://blog.devrel.ovh/deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 The tutorial also supposes that you're familiar with [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/). You also need to know how PVs are handled on the OVHcloud Managed Kubernetes service. Please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](https://docs.ovh.com/pl/kubernetes/ovh-kubernetes-persistent-volumes/) guide.
 

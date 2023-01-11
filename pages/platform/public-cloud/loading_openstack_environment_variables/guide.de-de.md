@@ -1,7 +1,7 @@
 ---
 title: 'OpenStack Umgebungsvariablen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Umgebungsvariablen für die Nutzung der OpenStack API einrichten'
-slug: die-variablen-der-umgebung-openstack-laden
+slug: set-openstack-environment-variables
 legacy_guide_number: 1852
 section: 'OpenStack'
 ---
@@ -16,7 +16,7 @@ Das Konfigurieren der OpenStack Umgebungsvariablen auf Ihrem lokalen Gerät erm�
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen [OpenStack User erstellt](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/).
-- OpenStack ist bereits [auf Ihrem System installiert](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/).
+- OpenStack ist bereits [auf Ihrem System installiert](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
 
 ## In der praktischen Anwendung
 

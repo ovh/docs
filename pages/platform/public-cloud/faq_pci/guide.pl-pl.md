@@ -72,7 +72,7 @@ Możesz przypisać do 25 dodatkowych wolumenów do każdej instancji.
 
 OVHcloud chroni całą swoją infrastrukturę dzięki swojemu unikalnemu rozwiązaniu anty-DDoS. Ponadto możesz stworzyć grupy bezpieczeństwa OpenStack. Jest to odpowiednik zapory zarządzany bezpośrednio na poziomie infrastruktury OpenStack, przed Twoimi instancjami.
 
-Zapraszamy do zapoznania się z przewodnikiem [Konfiguracja grupy zabezpieczeń](https://docs.ovh.com/pl/public-cloud/konfiguracja_grupy_zabezpieczen/).
+Zapraszamy do zapoznania się z przewodnikiem [Konfiguracja grupy zabezpieczeń](https://docs.ovh.com/pl/public-cloud/configure-security-group-horizon/).
 
 Zabezpieczenia te, w połączeniu z zabezpieczeniami, które możesz zainstalować na Twoich serwerach, zwiększą niezawodność wdrożenia.
 

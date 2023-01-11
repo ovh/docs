@@ -25,8 +25,8 @@ Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos ins
 
 ## Prérequis
 
-- [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
+- [Préparer l'environnement pour utiliser l'API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
+- [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
 
 
 ## En pratique

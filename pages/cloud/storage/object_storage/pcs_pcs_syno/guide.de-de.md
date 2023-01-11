@@ -40,7 +40,7 @@ Um die Synchronisierung Ihres Synology NAS zu konfigurieren müssen Sie über di
 
 Diese können Sie anhand der folgenden Anleitung im Kundencenter herunterladen:
 
-- [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
+- [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/)
 
 #### Konfiguration des Synchronisationspunkts mit Cloud Sync
 

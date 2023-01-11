@@ -140,7 +140,7 @@ Verwenden Sie folgende Anleitungen, um Informationen zum praktischen Vorgehen zu
 |[Auf das Horizon-Interface zugreifen](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)|Das OpenStack Horizon Interface erlaubt einige erweiterte Einstellungen. Der Zugriff wird hier erklärt.|
 |[Kubernetes-Cluster erstellen](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN) |Diese Anleitung begleitet Sie bei der Erstellung Ihres ersten Kubernetes-Clusters.|
 |[Eine Additional IP konfigurieren](https://docs.ovh.com/de/public-cloud/failover-ip-konfigurieren-pci/)|Mit Additional IPs können Sie den Traffic von einer Instanz auf eine andere umstellen. In dieser Anleitung erfahren Sie, wie Sie diesen konfigurieren.|
-|[OpenStack CLI installieren](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)|OpenStack kann auch über die Kommandozeile verwendet werden. Hier können Sie die Tools installieren.|
+|[OpenStack CLI installieren](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/)|OpenStack kann auch über die Kommandozeile verwendet werden. Hier können Sie die Tools installieren.|
 
 Einer der großen Vorteile der Verwendung von Standard- und Open-Source-Technologien wie OpenStack oder Kubernetes besteht darin, dass alle bereits verfügbaren Dokumentationen herangezogen werden können.
 

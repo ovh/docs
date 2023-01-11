@@ -6,7 +6,7 @@ section: Getting started
 order: 07
 ---
 
-**Last updated 2nd November 2022**
+**Last updated 10th January 2023**
 
 ## Objective
 
@@ -144,29 +144,53 @@ Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 
 
 #### Creating a VLAN in the OVHcloud Control Panel
 
-Once a vRack exists, navigate to the `Private Network`{.action} section. 
+Once a vRack exists, click on `Private Network`{.action} in the left-hand menu under **Network**. 
 
-![VLAN creation](images/vrack2021-03.png){.thumbnail}
+![VLAN creation](images/vrack2022-03.png){.thumbnail}
 
 Click on the button `Add Private Network`{.action}. The following page allows you to customise multiple settings.
 
-![add private network](images/vrack5.png){.thumbnail}
+In step 1, select the region in which you want the private network to be located.
 
-If you select the `Set a VLAN ID` option, you will need to choose a VLAN ID number between 2 and 4,000.
+![select region](images/vrack5-2022.png){.thumbnail}
 
-If you have not ticked the box `Set a VLAN ID`, VLAN 0 will be set automatically.
+In the next step, a number of options are presented to you:
+
+![create network](images/vrack6-2022.png){.thumbnail}
+
+In the **Private Network Name** field, set a name for your private network.
+
+**Create a Gateway and connect to the private network**
+
+Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](https://docs.ovh.com/gb/en/publiccloud/network-services/creating-private-network-with-gateway/) and [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance).
+
+> [!warning]
+> If the option is greyed out, it means the region selected does not support it. For more information, please refer to our [regions availability](https://www.ovhcloud.com/en-gb/public-cloud/regions-availability/) page. 
+> 
+
+**Layer 2 network options**
+
+If you tick the `Set a VLAN ID` box, you will need to choose a VLAN ID number between 2 and 4,000.
+
+If you do not tick the box, the system will assign a random VLAN ID number.
+
+If you wish to set the VLAN ID number to 0, you will need to go through the [OVHcloud APIv6](#vlansetup).
+
+Please note that if you have an existing private network with VLAN ID 0, this option will be ticked by default and greyed out.
 
 In case you need to be able to communicate with dedicated servers in this VLAN, please consult the guide [Creating multiple vLANs in a vRack](https://docs.ovh.com/gb/en/dedicated/multiple-vlans/).
 
+**DHCP address distribution options**
+
 The default DHCP range is 10.0.0.0/16. To change this IP range, you will need to configure it through the OVHcloud APIv6.
 
-In the next step, choose the regions you want, enter a name for your private network, and then click `Create`{.action} to start the process.
+Once done, click on `Create`{.action} to start the process.
 
 > [!primary]
 > Creating the private network may take several minutes.
 >
 
-#### Creating a VLAN with the OVHcloud APIv6
+#### Creating a VLAN with the OVHcloud APIv6 <a name="vlansetup"></a>
 
 To create a VLAN using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) of the corresponding guide.
 
@@ -183,7 +207,7 @@ There are two possible scenarios:
 
 If you need assistance, follow this guide first: [Creating an instance in the OVHcloud Control Panel](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/#create-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
 
-![attach new instance](images/vrack6.png){.thumbnail}
+[attach new instance](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > You will be able to connect your instance to **only one** vRack from the OVHcloud Control Panel.

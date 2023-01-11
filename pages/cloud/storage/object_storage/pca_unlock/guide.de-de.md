@@ -23,8 +23,8 @@ Da Cold Storage Daten nur selten Zugriff benötigen, ist eine Freigabeanforderun
 - *Unfreeze* im OVHcloud Kundencenter:
     - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - *Unfreeze* über python-swiftclient:
-    - [Umgebung für die Verwendung der OpenStack-API vorbereiten](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) indem python-swiftclient installiert wird.
-    - [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/).
+    - [Umgebung für die Verwendung der OpenStack-API vorbereiten](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/) indem python-swiftclient installiert wird.
+    - [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/).
 
 ## In der praktischen Anwendung
 

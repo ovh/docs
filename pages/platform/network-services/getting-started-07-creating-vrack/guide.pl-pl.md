@@ -77,8 +77,8 @@ Dzięki API OpenStack możesz również w prosty sposób zautomatyzować zarząd
 
 Aby uzyskać więcej informacji na temat korzystania z API OpenStack, zapoznaj się z następującymi przewodnikami:
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/)
-- [Zmienne środowiskowe OpenStack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Zmienne środowiskowe OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
 
 Następnie, w razie potrzeby, będziesz mógł korzystać z API dedykowanych dla OpenStack:
 

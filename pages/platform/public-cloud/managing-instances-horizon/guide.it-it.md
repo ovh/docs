@@ -72,7 +72,7 @@ Nell'interfaccia di gestione dell'istanza, seleziona l'opzione che preferisci ne
 
 - Attach Interface: questa opzione permette di aggiungere una o più interfacce private alla tua istanza tramite la VLAN. Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#aggiunta-di-uninterfaccia-privata) della guida.
 - Detach Interface: questa opzione permette di eliminare un'interfaccia associata a un'istanza. Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#elimina-uninterfaccia-privata) della guida.
-- Edit Instance: questa opzione permette di modificare il nome dell'istanza e i [gruppi di sicurezza](https://docs.ovh.com/it/public-cloud/configura_un_gruppo_di_sicurezza/).
+- Edit Instance: questa opzione permette di modificare il nome dell'istanza e i [gruppi di sicurezza](https://docs.ovh.com/it/public-cloud/configure-security-group-horizon/).
 
 > [!warning]
 > Le opzioni in rosso indicano la possibilità di perdita di dati durante il processo. Prima di apportare modifiche all'istanza, assicurati di disporre sempre di un backup dei dati.

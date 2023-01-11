@@ -14,14 +14,14 @@ routes:
 
 A Gateway offers a secure outbound connection method from your private network instances or the ability to use Floating IPs with your instance or Load Balancer for service exposition.
 
-This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), the [OpenStack API](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/) or the [OVHcloud API](https://eu.api.ovh.com/).
+This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), the [OpenStack API](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/) or the [OVHcloud API](https://eu.api.ovh.com/).
 
 **Learn how to create a private network with a gateway.**
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud API](https://eu.api.ovh.com/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/))
+- Access to the [OVHcloud API](https://eu.api.ovh.com/), the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) or the OpenStack command line environment ([Tutorial](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment (optional)
 
 ## Instructions
@@ -103,8 +103,8 @@ This can be created via the [OVHcloud Control Panel](https://www.ovh.com/auth/?a
 
 Before proceeding, it is recommended that you consult these guides:
 
-- [Preparing an environment to use the OpenStack API](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/)
-- [Setting OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
+- [Preparing an environment to use the OpenStack API](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Setting OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
  
 > [!tabs]
 > **Step 1**

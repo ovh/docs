@@ -1,6 +1,6 @@
 ---
 title: 'Crear y configurar un grupo de seguridad en Horizon'
-slug: configurar-un-grupo-de-seguridad
+slug: configure-security-group-horizon
 excerpt: 'Cómo crear un grupo de seguridad y configurarlo en una instancia de Public Cloud'
 section: Gestión desde Horizon
 order: 6

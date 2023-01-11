@@ -6,7 +6,7 @@ section: Premiers pas
 order: 07
 ---
 
-**Dernière mise à jour le 02/11/2022**
+**Dernière mise à jour le 10/01/2023**
 
 ## Objectif
 
@@ -76,8 +76,8 @@ Grâce à l’API OpenStack, vous pouvez aussi facilement automatiser cette gest
 
 Afin de vous familariser avec l'API OpenStack, consultez tout d'abord les guides suivants :
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/)
+- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/)
 
 Vous pourrez alors, suivant votre besoin, utiliser les API dédiées à OpenStack :
 
@@ -154,27 +154,49 @@ Depuis les APIv6 OVHcloud, vous pourrez personnaliser l'ensemble des paramètres
 
 Une fois le vRack créé, cliquez à nouveau sur `Private network`{.action} dans le menu latéral de gauche. 
 
-![VLAN creation](images/vrack2021-03.png){.thumbnail}
+![VLAN creation](images/vrack2022-03.png){.thumbnail}
 
 Cliquez à présent sur `Créer un réseau privé`{.action}. La page suivante vous permettra de personnaliser plusieurs paramètres.
 
-![add private network](images/vrack5.png){.thumbnail}
+À l'étape 1, sélectionnez la région dans laquelle vous souhaitez créer le réseau privé.
+
+![select region](images/vrack5-2022.png){.thumbnail}
+
+À l'étape suivante, un certain nombre d'options vous sont présentées :
+
+![create network](images/vrack6-2022.png){.thumbnail}
+
+**Créez une Gateway et connectez-vous au réseau privé**
+
+Sélectionnez cette option si vous avez l'intention de créer des instances avec un réseau privé uniquement. Pour plus d’informations, nous vous invitons à consulter les guides suivants : [Créer un réseau privé avec une Gateway](https://docs.ovh.com/ca/fr/publiccloud/network-services/creating-private-network-with-gateway/) et [Création et connexion à votre première instance Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance).
+
+> [!warning]
+> Si l'option est grisée, cela signifie qu'elle est incompatible avec la région sélectionnée. Pour plus d’informations, veuillez vous référer à notre page sur la [disponibilité des produits Public Cloud pour chaque région](https://www.ovhcloud.com/fr-ca/public-cloud/regions-availability/).
+>
+
+**Options réseau du layer 2**
 
 Si vous cochez la case `Définir un VLAN`, vous devrez choisir un numéro de VLAN allant de 2 à 4000.
 
-Si vous ne cochez pas la case `Définir un VLAN`, vous serez par défaut dans le VLAN 0.
+Si vous ne cochez pas cette case, le système attribuera un numéro de VLAN aléatoire.
+
+Si vous souhaitez définir le numéro du VLAN à 0, vous devez passer par l'[API OVHcloud](#vlansetup).
+
+Veuillez noter que si vous avez un réseau privé existant avec un VLAN ID 0, cette option sera cochée par défaut et grisée.
 
 Dans le cas où vous devez faire communiquer des serveurs dédiés OVHcloud avec du VLAN taggué, consultez le guide suivant : [Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/ca/fr/dedicated/creer-vlan-vrack/).
 
+**Options de distribution des adresses DHCP**
+
 La plage DHCP par défaut est en 10.0.0.0/16. Pour modifier cette plage IP, vous devrez obligatoirement passer par les APIv6 OVHcloud.
 
-Validez les différentes régions souhaitées, saisissez un nom pour votre réseau privé et cliquez enfin sur `Créer`{.action} pour amorcer sa création. 
+Une fois vos choix faits, cliquez sur `Créer`{.action} pour lancer le processus.
 
 > [!primary]
 > La création du réseau privé peut prendre plusieurs minutes.
 >
 
-#### Créer un VLAN depuis les APIv6 OVHcloud
+#### Créer un VLAN depuis les APIv6 OVHcloud <a name="vlansetup"></a>
 
 Pour créer un VLAN depuis les APIv6 OVHcloud, cliquez [ici](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1) pour consulter le guide spécifique à cette méthode.
 
@@ -189,9 +211,9 @@ Deux situations peuvent se présenter à vous :
 
 ##### **Depuis l'espace client OVHcloud**
 
-Consultez le guide [Créer une instance depuis l’espace client](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#create-instance). Lors de la création d'une instance, vous pourrez spécifier, durant l'étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
+Consultez le guide [Créer une instance depuis l’espace client](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#create-instance). Lors de la création d'une instance, vous pouvez choisir, à l'étape 5, un mode réseau, puis un réseau privé dans lequel intégrer votre instance.
 
-![attach new instance](images/vrack6.png){.thumbnail}
+[attach new instance](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > Lors de la création d'une nouvelle instance, vous ne pourrez raccorder votre instance qu'à un seul vRack depuis l'espace client OVHcloud.

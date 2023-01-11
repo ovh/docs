@@ -1,7 +1,7 @@
 ---
 title: 'Criar e configurar um grupo de segurança no Horizon'
 excerpt: 'Saiba como criar um grupo de segurança e configurá-lo numa instância Public Cloud'
-slug: configurar_um_grupo_de_seguranca
+slug: configure-security-group-horizon
 legacy_guide_number: g1925
 section: Gestão a partir do Horizon
 ---

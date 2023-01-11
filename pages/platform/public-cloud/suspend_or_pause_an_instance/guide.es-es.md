@@ -27,7 +27,7 @@ order: 03
 
 - Tener [una instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/) sobre la facturación por **horas**
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o al [interfaz de Horizon](https://docs.ovh.com/es/public-cloud/crear_un_acceso_a_horizon/)
-- Conocimiento de la [API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) y de las [variables OpenStack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
+- Conocimiento de la [API de OpenStack](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/) y de las [variables OpenStack](https://docs.ovh.com/es/public-cloud/set-openstack-environment-variables/)
 
 ## Procedimiento
 
@@ -92,8 +92,8 @@ Para ver la instantánea (snapshot), haga clic en `Images`{.action} en el menú 
 
 Antes de continuar, se recomienda consultar las siguientes guías:
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
-- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
+- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/es/public-cloud/set-openstack-environment-variables/)
 
 Una vez que el entorno esté listo, escriba lo siguiente en la línea de comandos:
 

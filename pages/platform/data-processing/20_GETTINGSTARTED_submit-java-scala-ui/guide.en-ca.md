@@ -31,7 +31,7 @@ To read an introduction about Data Processing service you can visit [Data Proces
 
 Before running your job in Data Processing platform, you will need to create a container in OVHcloud Object Storage for your job and upload your application jar file into this container. You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
+Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/ca/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
 
 
 If you don’t currently have an application code and you still would like to try OVHcloud Data Processing, you can download an [Apache Spark package](http://spark.apache.org/downloads.html) and extract it. Inside, you can find a jar file in examples/jars folder to run the SparkPi sample (which will just compute the Pi value).
@@ -68,4 +68,3 @@ After your Spark job is finished, you will be able to check the results from you
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-

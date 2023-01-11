@@ -1,7 +1,7 @@
 ---
 title: "Paramètres d'accès et de sécurité dans Horizon"
 excerpt : "Découvrez comment gérer et sécuriser l'accès à vos instances"
-slug: acces-et-securite-dans-horizon
+slug: access_and_security_in_horizon
 legacy_guide_number: 1774
 section: Gestion depuis Horizon
 order: 07

@@ -71,7 +71,7 @@ Seleccione la opción que desee en el panel de control de la instancia.
 
 - Attach Interface: esta opción permite añadir una o más interfaces privadas a su instancia a través de la VLAN. Para más información, consulte [esta parte](https://docs.ovh.com/us/es/public-cloud/public-cloud-vrack/#anadir-una-interfaz-privada) de la guía correspondiente.
 - Detach Interface: esta opción permite eliminar una interfaz vinculada a una instancia. Para más información, consulte [esta parte](https://docs.ovh.com/us/es/public-cloud/public-cloud-vrack/#eliminacion-de-una-interfaz-privada) de la guía correspondiente.
-- Edit Instance : esta opción permite cambiar el nombre de la instancia y los [grupos de seguridad](https://docs.ovh.com/us/es/public-cloud/configurar-un-grupo-de-seguridad/).
+- Edit Instance : esta opción permite cambiar el nombre de la instancia y los [grupos de seguridad](https://docs.ovh.com/us/es/public-cloud/configure-security-group-horizon/).
 
 > [!warning]
 > Las opciones en rojo indican la posibilidad de pérdida de datos durante el proceso. Asegúrese de disponer siempre de una copia de seguridad de sus datos antes de realizar cambios en su instancia.

@@ -68,7 +68,7 @@ Vous pouvez attacher jusqu'à 25 volumes additionnels par instance.
 
 OVHcloud protège l'ensemble de son infrastructure grâce à sa solution anti-DDoS exclusive. De plus, vous avez la possibilité d'ajouter les groupes de sécurité OpenStack : cet équivalent d'un pare-feu est géré directement au niveau de l'infrastructure d'OpenStack, en amont de vos instances.
 
-Nous vous invitons à consulter le guide [Configurer un groupe de sécurité](https://docs.ovh.com/ca/fr/public-cloud/configurer-un-groupe-de-securite/).
+Nous vous invitons à consulter le guide [Configurer un groupe de sécurité](https://docs.ovh.com/ca/fr/public-cloud/configure-security-group-horizon/).
 
 Ces protections, associées à celles que vous pouvez mettre en place sur vos serveurs, vous permettront d'optimiser la fiabilité de votre déploiement.
 

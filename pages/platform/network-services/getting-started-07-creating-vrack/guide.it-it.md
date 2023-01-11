@@ -80,8 +80,8 @@ Grazie all'API OpenStack, è possibile automatizzare facilmente questa gestione 
 
 Per familiarizzarti con l'API OpenStack, consulta queste guide:
 
-- [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/)
-- [Impostare le variabili d'ambiente OpenStack](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/)
+- [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Impostare le variabili d'ambiente OpenStack](https://docs.ovh.com/it/public-cloud/set-openstack-environment-variables/)
 
 A seconda delle tue necessità, puoi utilizzare le API dedicate a OpenStack:
 

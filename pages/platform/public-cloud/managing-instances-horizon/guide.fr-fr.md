@@ -66,7 +66,7 @@ Dans l’interface de gestion de l’instance, sélectionnez l'option souhaitée
 
 - Attach Interface : cette option permet d'ajouter une ou plusieurs interfaces privées à votre instance via le VLAN. Pour plus d'informations, consultez [cette partie](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/#ajout-dune-interface-privee) du guide correspondant.
 - Detach Interface : cette option permet de supprimer une interface liée à une instance. Pour plus d'informations, consultez [cette partie](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/#suppression-dune-interface-privee) du guide correspondant.
-- Edit Instance : cette option permet de changer le nom de l'instance et les [groupes de sécurité](https://docs.ovh.com/fr/public-cloud/configurer-un-groupe-de-securite/).
+- Edit Instance : cette option permet de changer le nom de l'instance et les [groupes de sécurité](https://docs.ovh.com/fr/public-cloud/configure-security-group-horizon/).
 
 > [!warning]
 > Les options en rouge indiquent la possibilité de perte de données pendant le processus. Assurez-vous de toujours disposer d'une sauvegarde de vos données avant de faire des changements sur votre instance.

@@ -21,8 +21,8 @@ Aby zautomatyzować Twoje operacje w infrastrukturze Public Cloud, możesz uży�
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](../przygotowanie_srodowiska_dla_api_openstack/) poprzez instalację Python-cinderclient oraz python-novaclient
-- [Pobranie zmiennych środowiskowych OpenStack](../zmienne-srodowiskowe-openstack/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](../prepare_the_environment_for_using_the_openstack_api/) poprzez instalację Python-cinderclient oraz python-novaclient
+- [Pobranie zmiennych środowiskowych OpenStack](../set-openstack-environment-variables/)
 
 ## W praktyce
 

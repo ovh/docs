@@ -23,7 +23,7 @@ OVHcloud ofrece a los clientes de Public Cloud imágenes listas para usar, pero 
 - una [instancia de Public Cloud](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/) desde el área de cliente de OVHcloud
 - su propia imagen RAW/QCOW2 (formatos recomendados) 
 - un usuario de [OpenStack](../crear-y-eliminar-un-usuario-de-openstack/) 
-- un entorno [OpenStack CLI ready](../preparar_el_entorno_para_utilizar_la_api_de_openstack/) (si utiliza CLI)
+- un entorno [OpenStack CLI ready](../prepare_the_environment_for_using_the_openstack_api/) (si utiliza CLI)
 
 ## Procedimiento
 

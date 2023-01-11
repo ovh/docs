@@ -23,8 +23,8 @@ Para los datos que no se consulten con frecuencia, es necesaria una solicitud de
 - Deshielo desde el Panel de configuración de OVHcloud:
     - Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Deshielo en python-swiftclient:
-    - [Preparar el entorno para utilizar la API OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) instalando python-swiftclient.
-    - [Cargar las variables de entorno OpenStack](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/).
+    - [Preparar el entorno para utilizar la API OpenStack](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/) instalando python-swiftclient.
+    - [Cargar las variables de entorno OpenStack](https://docs.ovh.com/es/public-cloud/set-openstack-environment-variables/).
 
 ## Procedimiento
 

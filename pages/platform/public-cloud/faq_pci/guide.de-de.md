@@ -74,7 +74,7 @@ Sie können bis zu 25 zusätzliche Volumes an eine Instanz anhängen.
 
 OVHcloud schützt seine gesamte Infrastruktur mit seinem exklusiven DDoS-Schutz. Darüber hinaus können Sie OpenStack-Sicherheitsgruppen hinzufügen: Dieser Schutz entspricht einer Firewall und wird direkt auf der OpenStack-Infrastruktur verwaltet, also Ihren Instanzen vorangestellt.
 
-Lesen Sie die Anleitung [Eine Sicherheitsgruppe in Horizon erstellen und konfigurieren](https://docs.ovh.com/de/public-cloud/eine-sicherheitsgruppe-konfigurieren-horizon/).
+Lesen Sie die Anleitung [Eine Sicherheitsgruppe in Horizon erstellen und konfigurieren](https://docs.ovh.com/de/public-cloud/configure-security-group-horizon/).
 
 Mithilfe dieser Schutzmaßnahmen, zusammen mit denen, die Sie selbst auf Ihren Servern einrichten, können Sie die Zuverlässigkeit Ihrer Deployments optimieren.
 

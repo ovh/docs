@@ -44,7 +44,7 @@ fs-passphrase: PASSPHRASE
 ```
 
 
-Puede consultar los datos TENANT_NAME y USERNAME en el archivo OpenRC. La guía «[Acceso y seguridad en Horizon](https://docs.ovh.com/us/es/public-cloud/acceso_y_seguridad_en_horizon/)» explica cómo.
+Puede consultar los datos TENANT_NAME y USERNAME en el archivo OpenRC. La guía «[Acceso y seguridad en Horizon](https://docs.ovh.com/us/es/public-cloud/access_and_security_in_horizon/)» explica cómo.
 
 Los argumentos REGION_NAME y CT_NAME deben adaptarse según el nombre y la localización del contenedor de objetos.
 

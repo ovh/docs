@@ -1,6 +1,6 @@
 ---
 title: 'Eine Sicherheitsgruppe in Horizon erstellen und konfigurieren'
-slug: eine-sicherheitsgruppe-konfigurieren-horizon
+slug: configure-security-group-horizon
 excerpt: 'Erfahren Sie hier, wie Sie eine Sicherheitsgruppe erstellen und auf einer Public Cloud Instanz konfigurieren'
 section: Horizon
 ---
