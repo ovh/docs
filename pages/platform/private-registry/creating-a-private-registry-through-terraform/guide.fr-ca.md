@@ -49,7 +49,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/ca/fr/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
+- A [Public Cloud project](https://docs.ovh.com/ca/fr/public-cloud/creer-un-projet-public-cloud/) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin
@@ -83,7 +83,7 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Why?
 
-Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
+Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs.
 
 In order to retrieve this necessary information, please follow the [First steps with the OVHcloud APIs](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) tutorial.
 
@@ -99,7 +99,7 @@ In the Public Cloud section, you can retrieve your service name ID thanks to the
 
 You will also use this information in Terraform resources definition files.
 
-## Instructions 
+## Instructions
 
 When you want to manage (create, modify, and remove) your infrastructure, getting started with Terraform is easy.
 Just create files ending with `.tf` containing the description of the resources you want to have.
@@ -223,7 +223,7 @@ With this output, we tell Terraform to retrieve the URL of this registry to acce
 
 For your information, outputs are useful to retrieve and display specific information after the resources creation.
 
-Your code organisation should be like this: 
+Your code organisation should be like this:
 
 ```
 .
