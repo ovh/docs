@@ -32,7 +32,7 @@ También hay disponibles otras interfaces, cuya configuración es similar a la q
 ## Requisitos
 
 - Descargar e instalar [Cyberduck](https://cyberduck.io/).
-- Disponer de las claves de usuario (*OS_USERNAME*) y del proyecto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*), que puede obtener descargando el archivo OpenRC en el menú [Users and Roles](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/#paso-1-obtener-las-variables) de su [área de cliente Public Cloud de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Disponer de las claves de usuario (*OS_USERNAME*) y del proyecto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*), que puede obtener descargando el archivo OpenRC en el menú [Users and Roles](https://docs.ovh.com/es/public-cloud/set-openstack-environment-variables/#paso-1-obtener-las-variables) de su [área de cliente Public Cloud de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Disponer de su contraseña de usuario de OpenStack.
 
 Si ya no conoce la contraseña de usuario de OpenStack, puede cambiarla siguiendo [esta guía](https://docs.ovh.com/es/public-cloud/cambiar-la-contrasena-de-usuario-openstack/).

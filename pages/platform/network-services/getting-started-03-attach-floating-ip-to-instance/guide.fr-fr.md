@@ -17,7 +17,7 @@ Les Floating IP sont des adresses IP publiques sur [Public Cloud](https://www.ov
 ## Prérequis
 
 - Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) existant sur votre compte OVHcloud
-- Avoir accès à [l’API OVHcloud](https://eu.api.ovh.com/) ou à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/))
+- Avoir accès à [l’API OVHcloud](https://eu.api.ovh.com/) ou à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou à l’environnement OpenStack en ligne de commande (si besoin, consultez notre [tutoriel](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
 - L’outil [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} installé sur votre environnement de travail (facultatif)
 
 ## Comprendre le service Floating IP

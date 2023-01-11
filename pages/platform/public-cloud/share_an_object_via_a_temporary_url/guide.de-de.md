@@ -18,7 +18,7 @@ Wenn Sie eine Datei für einen anderen Benutzer freigeben, möchten Sie dabei na
 
 ## Voraussetzungen
 
-- [Sie haben die Umgebung für die Verwendung der OpenStack-API vorbereitet](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/).
+- [Sie haben die Umgebung für die Verwendung der OpenStack-API vorbereitet](../prepare_the_environment_for_using_the_openstack_api/).
 - Sie haben die OpenStack-Umgebungsvariablen eingerichtet.
 - Python ist auf Ihrem System installiert.
 

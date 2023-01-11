@@ -1,7 +1,7 @@
 ---
 title: Parámetros de acceso y seguridad en Horizon
 excerpt: Cómo gestionar y proteger el acceso a sus instancias
-slug: acceso_y_seguridad_en_horizon
+slug: access_and_security_in_horizon
 legacy_guide_number: g1774
 section: Gestión desde Horizon
 order: 4

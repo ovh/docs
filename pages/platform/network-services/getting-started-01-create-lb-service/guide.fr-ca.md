@@ -17,7 +17,7 @@ Notre nouvelle solution Load Balancer as a Service (LBaaS) est basée sur le ser
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/)
-- Utiliser [l'environnement de commande Openstack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/))
+- Utiliser [l'environnement de commande Openstack](https://docs.ovh.com/ca/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
 - Avoir installé le client Openstack Octavia
 
 ## En pratique

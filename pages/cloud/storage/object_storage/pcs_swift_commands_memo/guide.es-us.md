@@ -20,8 +20,8 @@ The OpenStack swiftclient allows you to interact with and manage your containers
 
 ## Requirements
 
-- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) by installing python-swiftclient.
-- [Load the OpenStack environment variables](https://docs.ovh.com/us/es/public-cloud/cargar-las-variables-de-entorno-openstack/).
+- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/us/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient.
+- [Load the OpenStack environment variables](https://docs.ovh.com/us/es/public-cloud/set-openstack-environment-variables/).
 
 ## Instructions
 

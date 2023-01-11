@@ -27,8 +27,8 @@ Sie können zum Beispiel die Erstellung zusätzlicher Instanzen starten, wenn Ih
 
 ## Voraussetzungen
 
-- [Umgebung für die Verwendung der OpenStack-API vorbereiten](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
-- [OpenStack Umgebungsvariablen einrichten](../die-variablen-der-umgebung-openstack-laden/)
+- [Umgebung für die Verwendung der OpenStack-API vorbereiten](../prepare_the_environment_for_using_the_openstack_api/)
+- [OpenStack Umgebungsvariablen einrichten](../set-openstack-environment-variables/)
 
 
 ## In der praktischen Anwendung

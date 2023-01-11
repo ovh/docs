@@ -59,6 +59,6 @@ Para anular um acesso, clique no botão `...`{.action} e selecione a opção `El
 
 [Informações sobre o método de faturação Public Cloud](https://docs.ovh.com/pt/public-cloud/informacoes-sobre-o-metodo-de-faturacao-cloud/)
 
-[Parâmetros de acesso e de segurança no Horizon](https://docs.ovh.com/pt/public-cloud/gestao-a-partir-do-horizon/)
+[Parâmetros de acesso e de segurança no Horizon](https://docs.ovh.com/pt/public-cloud/access_and_security_in_horizon/)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -40,7 +40,7 @@ Aby skonfigurować synchronizację usługi NAS Synology, należy posiadać ident
 
 Możesz je pobrać pobierając plik OpenRC z pierwszej części przewodnika:
 
-- [Pobranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/#etap-1-zgromadzenie-zmiennych){.ref}
+- [Pobranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/#etap-1-zgromadzenie-zmiennych){.ref}
 
 #### Konfiguracja punktu synchronizacji z Cloud Sync
 

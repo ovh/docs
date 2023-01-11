@@ -40,7 +40,7 @@ Para configurar a sincronização da NAS Synology, deverá dispor dos dados de a
 
 Para as recuperar, descarregue o ficheiro OpenRC através da primeira parte do seguinte guia:
 
-- [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/carregar-as-variaveis-de-ambiente-openstack/#etapa-1-recuperar-as-variaveis){.ref}
+- [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/#etapa-1-recuperar-as-variaveis){.ref}
 
 #### Configuração do ponto de sincronização com Cloud Sync
 

@@ -60,6 +60,6 @@ Um einen Zugang zu widerrufen, klicken Sie auf den Button `...`{.action} und wä
 
 [Informationen zu den Abrechnungsoptionen der Public Cloud](https://docs.ovh.com/de/public-cloud/informationen-zu-cloud-abrechnungsoptionen/)
 
-[Zugriffs- und Sicherheitseinstellungen in Horizon](https://docs.ovh.com/de/public-cloud/zugriff_und_sicherheit_in_horizon/)
+[Zugriffs- und Sicherheitseinstellungen in Horizon](https://docs.ovh.com/de/public-cloud/access_and_security_in_horizon/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

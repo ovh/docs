@@ -18,7 +18,7 @@ Możesz przenieść instancję Public Cloud między centrami danych, gdy preferu
 
 * Utworzenie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na Twoim koncie OVHcloud
 * Dostęp administratora (root) do centrum danych przez SSH
-* Przeczytanie przewodnika [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/){.external} (zalecane)
+* Przeczytanie przewodnika [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external} (zalecane)
 
 > [!primary]
 >

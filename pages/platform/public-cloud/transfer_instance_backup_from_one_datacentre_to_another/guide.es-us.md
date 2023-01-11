@@ -18,7 +18,7 @@ Es posible que necesite transferir una instancia de Public Cloud de un datacente
 
 * Haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/en/public-cloud/){.external} desde su cuenta de cliente.
 * Tener acceso de administrador (root) a su datacenter a través de SSH.
-* Haber leído la guía [Preparar el entorno para utilizar la API de OpenStack](../preparar_el_entorno_para_utilizar_la_api_de_openstack/){.external} (recomendado).
+* Haber leído la guía [Preparar el entorno para utilizar la API de OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external} (recomendado).
 
 > [!primary]
 >

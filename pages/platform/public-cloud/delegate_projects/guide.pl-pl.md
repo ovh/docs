@@ -59,6 +59,6 @@ Aby cofnąć dostęp, kliknij przycisk `...`{.action} i wybierz `Usuń`{.action}
 
 [Informacje o sposobie rozliczania usługi Public Cloud](https://docs.ovh.com/pl/public-cloud/analizowanie_platnosci_i_zarzadzanie_nimi/)
 
-[Parametry dostępu i bezpieczeństwa w Horizon](https://docs.ovh.com/pl/public-cloud/dostep-i-bezpieczenstwo-w-horizon/)
+[Parametry dostępu i bezpieczeństwa w Horizon](https://docs.ovh.com/pl/public-cloud/access_and_security_in_horizon/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -15,8 +15,8 @@ Przewodnik ten wyjaśnia, jak zwiększyć prędkość wysyłki na Object Storage
 
 ## Wstępne wymagania
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/) za pomoca klienta python-swiftclient
-- [Zmienne środowiskowe OpenStack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/) za pomoca klienta python-swiftclient
+- [Zmienne środowiskowe OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
 
 ## W praktyce
 

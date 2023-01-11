@@ -19,7 +19,7 @@ In alcuni casi potresti avere la necessità di spostare le tue istanze da un dat
 
 * Disporre di un’[istanza Public Cloud OVHcloud](https://www.ovhcloud.com/it/public-cloud/)
 * Avere accesso in SSH al datacenter (root)
-* Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) (consigliato)
+* Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/) (consigliato)
 
 > [!primary]
 >

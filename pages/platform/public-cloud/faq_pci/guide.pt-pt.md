@@ -72,7 +72,7 @@ Sim, o limite é de 25 volumes adicionais por instância.
 
 A OVHcloud protege toda a sua infraestrutura graças à sua solução anti-DDoS exclusiva. Além disso, tem a possibilidade de adicionar os grupos de segurança OpenStack: este equivalente de firewall é gerido diretamente ao nível da infraestrutura da OpenStack, além das suas instâncias.
 
-Pode consultar o guia [Configurar um grupo de segurança](https://docs.ovh.com/pt/public-cloud/configurar_um_grupo_de_seguranca/).
+Pode consultar o guia [Configurar um grupo de segurança](https://docs.ovh.com/pt/public-cloud/configure-security-group-horizon/).
 
 Estas proteções, associadas às que pode aplicar aos seus servidores, irão permitir-lhe otimizar a fiabilidade da sua implementação.
 

@@ -59,6 +59,6 @@ Para desbloquear un acceso, haga clic en el botón `...`{.action} y seleccione `
 
 [Información sobre el modo de facturación de Public Cloud](https://docs.ovh.com/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/)
 
-[Parámetros de acceso y seguridad en Horizon](https://docs.ovh.com/es/public-cloud/acceso_y_seguridad_en_horizon/)
+[Parámetros de acceso y seguridad en Horizon](https://docs.ovh.com/es/public-cloud/access_and_security_in_horizon/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -18,7 +18,7 @@ Per condividere un file con un amico o un collega senza fornire le informazioni 
 
 ## Prerequisiti
 
-- [Aver preparato l’ambiente di sviluppo per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/){.ref}
+- [Aver preparato l’ambiente di sviluppo per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.ref}
 - Impostare le variabili d'ambiente OpenStack
 - Aver installato Python sul proprio dispositivo
 

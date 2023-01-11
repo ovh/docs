@@ -23,7 +23,7 @@ In alcuni casi, potresti avere bisogno di trasferire i tuoi dischi aggiuntivi da
 
 - Disporre di un'[istanza Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} attiva nel tuo account OVHcloud
 - Avere accesso in SSH al datacenter (root)
-- Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](../prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/){.external} (consigliato)
+- Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external} (consigliato)
 
 
 > [!primary]

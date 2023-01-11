@@ -19,7 +19,7 @@ Our new Load Balancer as a Service (LBaaS) solution is based on [OpenStack Octav
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
-- Using the [OpenStack command line environment](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/)
+- Using the [OpenStack command line environment](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment
 
 ## Instructions

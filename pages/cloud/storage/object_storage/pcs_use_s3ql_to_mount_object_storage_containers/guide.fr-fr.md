@@ -19,7 +19,7 @@ Vous pouvez trouver plus d'informations directement sur leur [Site Web](http://w
 
 ## Prérequis
 
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/)
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/)
 - [Avoir créé un conteneur](https://docs.ovh.com/fr/storage/object-storage/pcs/create-container/)
 
 > [!primary]

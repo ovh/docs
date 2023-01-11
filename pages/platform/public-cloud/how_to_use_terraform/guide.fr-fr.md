@@ -47,8 +47,8 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 ## Prérequis
 
 * [Configurer un accès utilisateur à Horizon](../creer-un-acces-a-horizon/)
-* [Préparer l’environnement pour utiliser l’API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-* [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
+* [Préparer l’environnement pour utiliser l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
+* [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
 * [Disposer de vos identifiants API et de votre clé d'autorisation OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)
 * [Une clé SSH](../premiers-pas-instance-public-cloud/)
 * [Le provider Terraform OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
@@ -128,7 +128,7 @@ provider "ovh" {
 
 Un « alias » est un identifiant unique pour un type de fournisseur. Par exemple, si vous avez deux fournisseurs OpenStack avec des informations d'identification différentes, vous devez spécifier chaque fournisseur dans la ressource.
 
-Il faut maintenant [créer un nouvel utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/), puis [générer le fichier OpenRC ](https://docs.ovh.com/fr/public-cloud/charger-les-variables-denvironnement-openstack/#etape-1-recuperer-les-variables) contenant tous les identifiants que vous souhaitez exporter en tant qu'environnement variables.
+Il faut maintenant [créer un nouvel utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/), puis [générer le fichier OpenRC ](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/#etape-1-recuperer-les-variables) contenant tous les identifiants que vous souhaitez exporter en tant qu'environnement variables.
 
 Chargez ce fichier, puis entrez le mot de passe de l'utilisateur que vous avez créé précédemment :
 

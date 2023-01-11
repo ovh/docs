@@ -22,7 +22,7 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 
 - Sie verfügen über eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) mit **stündlicher** Abrechnung.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
-- Sie haben Kenntnisse der [OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) und der [OpenStack Variablen](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/).
+- Sie haben Kenntnisse der [OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/) und der [OpenStack Variablen](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/).
 
 ## In der praktischen Anwendung
 
@@ -87,8 +87,8 @@ Um den Snapshot anzuzeigen, klicken Sie im Menü `Compute`{.action} auf `Images`
 
 Bevor Sie fortfahren, empfehlen wir Ihnen folgende Anleitungen:
 
-- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
-- [Konfigurieren der OpenStack-Umgebungsvariablen](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
+- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Konfigurieren der OpenStack-Umgebungsvariablen](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/)
 
 Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 

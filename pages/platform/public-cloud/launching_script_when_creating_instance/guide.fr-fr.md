@@ -18,8 +18,8 @@ Dans certaines situations, il vous sera nécessaire de lancer un script lors de 
 
 ## Prérequis
 
-- [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
+- [Préparer l'environnement pour utiliser l'API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
+- [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
 
 
 ## En pratique

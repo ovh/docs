@@ -17,7 +17,7 @@ Si quiere enviar un archivo a otra persona, pero no desea facilitarle sus claves
 
 ## Requisitos
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/){.ref}.
+- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.ref}.
 - Cargar las variables de entorno de OpenStack.
 - Tener Python instalado en su equipo.
 

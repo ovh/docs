@@ -20,8 +20,8 @@ Middleware Swift s3api, który zapewnia kompatybilność API S3 został włączo
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/)
-- [Parametry dostępu i bezpieczeństwa w interfejsie Horizon](https://docs.ovh.com/pl/public-cloud/dostep-i-bezpieczenstwo-w-horizon/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Parametry dostępu i bezpieczeństwa w interfejsie Horizon](https://docs.ovh.com/pl/public-cloud/access_and_security_in_horizon/)
 
 ## W praktyce
 
