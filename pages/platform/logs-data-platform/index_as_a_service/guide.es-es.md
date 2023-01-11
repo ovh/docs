@@ -4,6 +4,8 @@ slug: index-as-a-service
 order: 2
 excerpt: Use the power of OpenSearch without managing a cluster.
 section: Features
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/index-as-a-service/'
 ---
 
 **Last updated 13th October, 2022**
