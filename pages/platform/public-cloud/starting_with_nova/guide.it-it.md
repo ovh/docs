@@ -28,8 +28,8 @@ Questa guida ti mostra come utilizzare le API OpenStack per gestire le tue istan
 
 ## Prerequisiti
 
-- [Preparare l’ambiente per utilizzare l’API OpenStack](../prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/)
-- [Impostare le variabili d’ambiente OpenStack](../impostare-le-variabili-dambiente-openstack/)
+- [Preparare l’ambiente per utilizzare l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
+- [Impostare le variabili d’ambiente OpenStack](../set-openstack-environment-variables/)
 
 
 ## Procedura

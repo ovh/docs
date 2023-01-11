@@ -140,7 +140,7 @@ En la práctica, a continuación le ofrecemos algunas guías que le ayudarán en
 |[Conectarse a Horizon](https://docs.ovh.com/us/es/public-cloud/horizon/)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|
 |[Crear un cluster Kubernetes](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN)|Esta guía le ayudará paso a paso a la creación de su primer cluster Kubernetes.|
 |[Configurar una Additional IP](https://docs.ovh.com/us/es/public-cloud/configurer-une-ip-failover/)|Las Additional IP permiten cambiar el tráfico de una instancia a otra. Esta guía explica cómo configurar esta opción.|
-|[Instalación de la CLI OpenStack](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)|OpenStack también puede utilizarse en línea de comandos. Así es como instalar las herramientas.|
+|[Instalación de la CLI OpenStack](https://docs.ovh.com/us/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/)|OpenStack también puede utilizarse en línea de comandos. Así es como instalar las herramientas.|
 
 Una de las grandes ventajas de utilizar tecnologías estándares y abiertas, como OpenStack o Kubernetes, es disfrutar de toda la documentación ya disponible.
 

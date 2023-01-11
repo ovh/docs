@@ -18,7 +18,7 @@ Poderá ter de mover a sua instância Public Cloud de um datacenter para outro, 
 
 * Ter criado uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} a partir da sua conta.
 * Dispor de um acesso administrador (root) ao datacenter através de SSH.
-* Ler o manual "[Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/){.external}". (Recomendado)
+* Ler o manual "[Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external}". (Recomendado)
 
 > [!primary]
 >

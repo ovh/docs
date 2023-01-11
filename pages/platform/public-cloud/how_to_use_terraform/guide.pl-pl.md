@@ -49,8 +49,8 @@ As an example, this video shows how to easily scale the number of instances whil
 ### Requirements
 
 - [Configuring user access to Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
-- [Preparing an environment for using the OpenStack API](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/)
-- [Setting OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
+- [Preparing an environment for using the OpenStack API](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Setting OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
 - [Your OVHcloud API identifiers and authorisation key](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)
 - [An SSH key](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
 - [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
@@ -130,7 +130,7 @@ provider "ovh" {
 
 The "alias" is a unique identifier for a provider. For example, if you have two OpenStack providers with different credentials, you must precise each provider in the resource.
 
-You now need to [create a new OpenStack user](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/), then [generate the OpenRC file](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/#etap-1-zgromadzenie-zmiennych) containing all of the credentials you want to export as environment variables.
+You now need to [create a new OpenStack user](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/), then [generate the OpenRC file](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/#etap-1-zgromadzenie-zmiennych) containing all of the credentials you want to export as environment variables.
 
 Load this file, then enter the password for the user you created earlier:
 

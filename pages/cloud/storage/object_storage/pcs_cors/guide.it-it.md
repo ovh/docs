@@ -27,8 +27,8 @@ CORS metadata is only present in the container. The values specified apply to th
 
 ## Requirements
 
-- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) by installing python-swiftclient
-- [Loading the OpenStack environment variables](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/)
+- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
+- [Loading the OpenStack environment variables](https://docs.ovh.com/it/public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
 

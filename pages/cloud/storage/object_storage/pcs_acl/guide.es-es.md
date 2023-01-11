@@ -38,8 +38,8 @@ Elements can be separated by spaces, as in the following example:
 
 - an Object Storage container
 - [OpenStack users](https://docs.ovh.com/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
-- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/) by installing python-swiftclient
-- [Loading the OpenStack environment variables](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
+- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
+- [Loading the OpenStack environment variables](https://docs.ovh.com/es/public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
 

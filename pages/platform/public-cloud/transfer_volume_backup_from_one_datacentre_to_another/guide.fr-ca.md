@@ -19,7 +19,7 @@ Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter �
 
 * Posséder une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} dans votre compte OVHcloud.
 * Disposer d’un accès administrateur (root) à votre datacenter via SSH.
-* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/){.external} » (recommandé).
+* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external} » (recommandé).
 
 > [!primary]
 >

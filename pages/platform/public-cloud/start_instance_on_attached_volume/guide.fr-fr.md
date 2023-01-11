@@ -29,7 +29,7 @@ Il est également possible de déployer un système d'exploitation sur un volume
 
 
 ### Prérequis
-- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
+- [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
 - Un volume avec un système d'exploitation
 
 

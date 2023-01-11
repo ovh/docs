@@ -72,7 +72,7 @@ Sì, a ogni istanza si può associare un massimo di 25 volumi aggiuntivi.
 
 OVHcloud protegge l'intera infrastruttura grazie alla sua soluzione anti-DDoS esclusiva. a cui è possibile aggiungere gruppi di sicurezza OpenStack: equiparabili a un firewall, sono gestiti direttamente a livello dell’infrastruttura OpenStack, a monte delle istanze.
 
-Per maggiori informazioni, consulta la guida [Creare e configurare un gruppo di sicurezza su Horizon](https://docs.ovh.com/it/public-cloud/configura_un_gruppo_di_sicurezza/).
+Per maggiori informazioni, consulta la guida [Creare e configurare un gruppo di sicurezza su Horizon](https://docs.ovh.com/it/public-cloud/configure-security-group-horizon/).
 
 Queste protezioni, combinate alle ulteriori misure che puoi adottare sulle macchine, consentono di ottimizzare l’affidabilità dei deploy effettuati.
 

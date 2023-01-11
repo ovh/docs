@@ -1,7 +1,7 @@
 ---
 title: 'Charger les variables d’environnement OpenStack'
 excerpt: 'Apprenez à charger vos variables d’environnement pour utiliser l’API d’OpenStack'
-slug: charger-les-variables-denvironnement-openstack
+slug: set-openstack-environment-variables
 legacy_guide_number: 1852
 section: 'Gestion via OpenStack'
 order: 2
@@ -17,7 +17,7 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Avoir créé un utilisateur OpenStack. Consultez [le guide qui y est dédié](../creation-et-suppression-dun-utilisateur-openstack/)
-- Avoir préparé l'environnement pour utiliser OpenStack. Consultez pour cela le guide suivant : [Préparer l’environnement pour utiliser l’API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
+- Avoir préparé l'environnement pour utiliser OpenStack. Consultez pour cela le guide suivant : [Préparer l’environnement pour utiliser l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
 
 ## En pratique
 

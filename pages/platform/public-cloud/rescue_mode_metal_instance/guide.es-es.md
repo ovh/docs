@@ -30,8 +30,8 @@ Unlike other Public Cloud Instances where the rescue mode can be activated from 
 
 Before following these steps, it’s recommended that you first complete the following:
 
-- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)
-- [Setting OpenStack environment variables](https://docs.ovh.com/es/public-cloud/cargar-las-variables-de-entorno-openstack/)
+- [Preparing the environment to use the OpenStack API](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Setting OpenStack environment variables](https://docs.ovh.com/es/public-cloud/set-openstack-environment-variables/)
 
 ### Putting a Metal instance in rescue mode using OpenStack CLI
 

@@ -19,7 +19,7 @@ Vous pouvez avoir besoin de déplacer votre instance Public Cloud d’un datacen
 
 * Posséder une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVH.
 * Disposer d’un accès administrateur (root) à votre datacenter via SSH.
-* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.external} » (recommandé).
+* Lire le guide « [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external} » (recommandé).
 
 > [!primary]
 >

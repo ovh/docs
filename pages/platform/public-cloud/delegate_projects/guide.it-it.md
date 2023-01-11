@@ -59,6 +59,6 @@ Per rimuovere un accesso, clicca sul pulsante `...`{.action} poi seleziona `Elim
 
 [Informazioni sulle modalità di fatturazione Public Cloud](https://docs.ovh.com/it/public-cloud/analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/)
 
-[Impostazioni di accesso e sicurezza in Horizon](https://docs.ovh.com/it/public-cloud/accesso_e_sicurezza_con_horizon/)
+[Impostazioni di accesso e sicurezza in Horizon](https://docs.ovh.com/it/public-cloud/access_and_security_in_horizon/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

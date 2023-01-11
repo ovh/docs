@@ -1,7 +1,7 @@
 ---
 title: Zugriffs- und Sicherheitseinstellungen in Horizon
 excerpt: Erfahren Sie hier, wie Sie sicheren Zugang zu Ihren Instanzen einrichten
-slug: zugriff_und_sicherheit_in_horizon
+slug: access_and_security_in_horizon
 legacy_guide_number: g1774
 section: 'Horizon'
 ---

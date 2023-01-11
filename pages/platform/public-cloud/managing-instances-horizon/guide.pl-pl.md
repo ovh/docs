@@ -70,7 +70,7 @@ W interfejsie zarządzania instancją wybierz odpowiednią opcję z rozwijanej l
 
 - Attach Interface: ta opcja pozwala na dodanie jednego lub kilku prywatnych interfejsów do Twojej instancji za pośrednictwem sieci VLAN. Więcej informacji znajdziesz w [tej części](https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#dodawanie-prywatnego-interfejsu) odpowiedniego przewodnika.
 - Detach Interface: ta opcja pozwala na usunięcie interfejsu związanego z instancją. Więcej informacji znajdziesz w [tej części](https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#usuwanie-prywatnego-interfejsu) odpowiedniego przewodnika.
-- Edit Instance: ta opcja pozwala na zmianę nazwy instancji i [grup zabezpieczeń](https://docs.ovh.com/pl/public-cloud/konfiguracja_grupy_zabezpieczen/).
+- Edit Instance: ta opcja pozwala na zmianę nazwy instancji i [grup zabezpieczeń](https://docs.ovh.com/pl/public-cloud/configure-security-group-horizon/).
 
 > [!warning]
 > Opcje w kolorze czerwonym wskazują na możliwość utraty danych podczas procesu. Zanim wprowadzisz zmiany na Twojej instancji, upewnij się, że zawsze posiadasz kopię zapasową swoich danych.

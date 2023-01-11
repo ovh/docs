@@ -70,7 +70,7 @@ Wählen Sie im Verwaltungsinterface der Instanz die gewünschte Option aus der D
 
 - Attach Interface: Mit dieser Option können Sie über das VLAN eine oder mehrere private Interfaces zu Ihrer Instanz hinzufügen. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#ein-privates-interface-hinzufugen_1) der vRack-Anleitung.
 - Detach Interface: Mit dieser Option können Sie ein Interface löschen, das zu einer Instanz gehört. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#loschung-eines-interfaces) der vRack-Anleitung.
-- Edit Instance: Mit dieser Option können Sie den Namen der Instanz und die [Sicherheitsgruppen ändern](https://docs.ovh.com/de/public-cloud/eine-sicherheitsgruppe-konfigurieren-horizon/).
+- Edit Instance: Mit dieser Option können Sie den Namen der Instanz und die [Sicherheitsgruppen ändern](https://docs.ovh.com/de/public-cloud/configure-security-group-horizon/).
 
 > [!warning]
 > Die rot markierten Optionen geben an, ob während des Vorgangs Datenverlust möglich ist. Stellen Sie sicher, dass Sie immer über ein Backup Ihrer Daten verfügen, bevor Sie Änderungen an Ihrer Instanz vornehmen.

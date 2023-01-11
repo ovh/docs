@@ -1,6 +1,6 @@
 ---
 title: 'Tworzenie i konfigurowanie grupy zabezpieczeń w interfejsie Horizon'
-slug: konfiguracja_grupy_zabezpieczen
+slug: configure-security-group-horizon
 excerpt: 'Dowiedz się, jak utworzyć grupę zabezpieczeń i skonfigurować ją na instancji Public Cloud'
 legacy_guide_number: g1925
 section: Zarządzanie w interfejsie Horizon

@@ -28,7 +28,7 @@ Si vous n'êtes pas familiarisé avec la gestion du stockage en ligne de command
 ## Prérequis
 
 - Télécharger et installer [Cyberduck](https://cyberduck.io/).
-- Disposer de vos identifiants utilisateur (*OS_USERNAME*) et de projet (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*), que vous pouvez obtenir en téléchargeant le fichier « OpenRC » dans le menu [Users and Roles](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/#etape-1-recuperer-les-variables) de votre [espace client Public Cloud OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+- Disposer de vos identifiants utilisateur (*OS_USERNAME*) et de projet (*OS_PROJECT_NAME* ou *OS_TENANT_NAME*), que vous pouvez obtenir en téléchargeant le fichier « OpenRC » dans le menu [Users and Roles](https://docs.ovh.com/ca/fr/public-cloud/set-openstack-environment-variables/#etape-1-recuperer-les-variables) de votre [espace client Public Cloud OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Disposer de votre mot de passe d'utilisateur OpenStack.
 
 Si vous ne connaissez plus votre mot de passe d'utilisateur OpenStack, vous pouvez le modifier en suivant [ce guide](https://docs.ovh.com/ca/fr/public-cloud/modification-du-mot-de-passe-dun-utilisateur-openstack/).
