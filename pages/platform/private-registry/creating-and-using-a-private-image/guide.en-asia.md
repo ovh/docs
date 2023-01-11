@@ -109,8 +109,7 @@ You should have these files in your `hello-ovh` directory:
 └── ovh.svg
 ```
 
-- Go into the `hello-ovh` folder, containing the three files, and do a `docker build`.
-  You will need to tag your build using your private registry URL, the project within the registry (*private* if you followed the [managing users and projects](../managing-users-and-projects/) guide), and the image name (*hello-ovh*):
+- Go into the `hello-ovh` folder, containing the three files, and do a `docker build`. You will need to tag your build using your private registry URL, the project within the registry (*private* if you followed the [managing users and projects](../managing-users-and-projects/) guide), and the image name (*hello-ovh*):
 
 ```bash
 docker build --tag [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0 .

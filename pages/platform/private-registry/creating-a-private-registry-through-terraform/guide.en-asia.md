@@ -377,7 +377,8 @@ $ terraform output user
 "myuser"
 
 $ terraform output password
-"mygeneratedpassword"</code></pre>
+"mygeneratedpassword"
+</code></pre>
 
 Now go to the private registry URL and login with the credentials you have retrieved.
 

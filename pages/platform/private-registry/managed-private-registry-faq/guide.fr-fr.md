@@ -5,29 +5,30 @@ section: 'Premiers pas'
 order: 1
 ---
 
-## Objectif
-Retrouvez ici les questions les plus fréquemment posées sur Managed Private Registry (Harbor). Vous pouvez également consulter [nos guides (pour l'instant disponibles uniquement en anglais)](https://docs.ovh.com/gb/en/private-registry/){.external} .
+## Objective
+Here are the most frequently asked questions about Managed Private Registry (Harbor).
 
-### Dans quelles régions la solution Private Registry est-elle disponible ?
-Private registry est actuellement disponible en Europe de l’Ouest (région GRA).
+### In which regions is the Private Registry solution available?
+Private Registry is currently available in Western Europe (GRA region).
 
-#### Trucs et astuces
-L’ensemble du trafic vers et depuis le registre est totalement gratuit.
+### What version of Harbor is offered?
+All new Private Registry services expose Harbor 2.0. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.
 
-### Quels sont les niveaux de service inclus dans le service Private Registry ?
-Private Registry est couvert par un niveau de services (SLA) lui garantissant une très haute disponibilité pour ainsi vous donner l’assurance d’une grande efficacité de vos développements et déploiements. Les plans M et L ont un SLA qui couvre également les composants tels que l’interface utilisateur et le scan de vulnérabilités. Vous trouverez tous les détails dans les [conditions particulières relatives au cloud public OVHcloud](https://www.ovh.com/fr/support/contrats/){.external}. 
+#### Tips and Tricks
+All traffic to and from the registry is completely free.
 
-### Dois-je nécessairement, avec Private Registry, utiliser le service Kubernetes géré par OVHcloud ?
-Non, car en souscrivant à l’offre Private Registry, vous disposerez de votre propre Docker Registry et de votre propre Harbor (API et interface graphique). Dès réception de vos identifiants prévus à cet effet, vous pourrez utiliser le service Private Registry avec n'importe quel outil de conteneur ou orchestrateur, l’offre Kubernetes d’OVHcloud ou une autre.
+### What service levels are included in the Private Registry service?
+Private Registry is covered by a service level (SLA) that guarantees very high availability to give you the assurance of a high efficiency of your developments and deployments. M and L plans have an SLA that also covers components such as the user interface and vulnerability scanning. You will find all the details in the [Special Conditions for OVHcloud Public Cloud Service](https://www.ovh.co.uk/support/contracts/){.external}.
 
-### En tant que client Private Registry, ai-je la possibilité de changer d’offre ?
-Vous pouvez à tout moment migrer d'une offre à une autre de capacité plus importante. Dès que vous nous signalez votre souhait d’évolution, la prise en compte des nouvelles limites est effective en quelques dizaines de secondes, sans perte de données ni changement de configuration nécessaire.
+### Do I have to use the OVHcloud Managed Kubernetes Service service with Private Registry?
+No, because by subscribing to the Private Registry service you will have your own Docker Registry and your own Harbor (API and GUI). Once you receive your IDs, you will be able to use the Private Registry service with any container or orchestrator tool, the OVHcloud Kubernetes solution or another one.
 
-#### Trucs et astuces
-Si vous créez, modifiez ou supprimez votre offre en cours de mois, vous serez facturé uniquement pour les heures effectives de votre offre. En fonction de l’offre choisie, vous bénéficiez d’une capacité de stockage pouvant aller jusqu’à  2 TB. Pour chacune de ces offres, le trafic en illimité est inclus et ce quel que soit sa destination.
+### As a Private Registry user, do I have the option to switch plans?
+You can migrate to a plan with larger capacity at any time. As soon as you notify us of your wish for evolution, the new limits are taken into account in tens of seconds without any data loss or configuration changes required.
 
-## Aller plus loin
+#### Tips and Tricks
+If you create, edit or delete your service during the month, you will be billed only for the hours actually used. Depending on your choice of plan, you can have up to 5 TB of storage capacity. For each of the plans, unlimited traffic is included, regardless of its destination.
 
-[Nos guides en anglais sur Managed Private Registry (Harbor)](https://docs.ovh.com/gb/en/private-registry/){.external}.
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
