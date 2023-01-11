@@ -4,6 +4,8 @@ slug: mysql-slow-queries
 order: 04
 excerpt: Keep your MySQL database at high speed with Logs Data Platform!
 section: Use cases
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/mysql-slow-queries/'
 ---
 
 **Last updated 11th April, 2019**
@@ -76,7 +78,7 @@ Slow query logs are multi-line logs giving information:
 ### Configure Filebeat on your system
 
 Our favorite way to send MySQL slow query logs is to send logs directly to Logs Data Platform by using [Filebeat](https://www.elastic.co/fr/downloads/beats/filebeat-oss){.external}.
-We cover Filebeat in depth in [another tutorial](https://docs.ovh.com/fr/logs-data-platform/filebeat-logs/){.external}. Here is a minimal **filebeat.yml** configuration file.
+We cover Filebeat in depth in [another tutorial](https://docs.ovh.com/pt/logs-data-platform/filebeat-logs/){.external}. Here is a minimal **filebeat.yml** configuration file.
 
 ```yaml
 #=========================== Filebeat inputs =============================
@@ -173,5 +175,5 @@ All this information can help you to analyse the most difficult queries for your
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
