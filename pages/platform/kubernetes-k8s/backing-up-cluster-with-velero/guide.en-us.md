@@ -28,7 +28,7 @@ order: 3
  }
 </style>
 
-**Last updated 5th October 2022**
+**Last updated 11th January 2023**
 
 ## Objective
 
@@ -131,6 +131,12 @@ Create a new bucket:
 aws --profile default s3 mb s3://velero-s3
 ```
 
+List your buckets:
+
+```bash
+aws s3 ls
+```
+
 ### Installing Velero
 
 We strongly recommend that you use an [official release of Velero](https://github.com/vmware-tanzu/velero/releases). The tarballs for each release contain the velero command-line client. Expand the tarball and add it to your PATH.
@@ -151,7 +157,7 @@ Install Velero, including all prerequisites, into the cluster and start the depl
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.5.1,velero/velero-plugin-for-csi:v0.3.1 \
+  --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket <your bucket name> \
   --secret-file ./credentials-velero \
   --backup-location-config region=<public cloud region without digit>,s3ForcePathStyle="true",s3Url=https://s3.<public cloud region without digit>.cloud.ovh.net \
@@ -164,7 +170,7 @@ In our case, with the cluster in the `GRA` region, that meant:
 velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.5.1,velero/velero-plugin-for-csi:v0.3.1 \
+  --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file ./credentials-velero \
   --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net \
@@ -174,7 +180,7 @@ velero install \
 <pre class="console"><code>$ velero install \
   --features=EnableCSI \
   --provider aws \
-  --plugins velero/velero-plugin-for-aws:v1.5.1,velero/velero-plugin-for-csi:v0.3.1 \
+  --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
   --bucket velero-s3 \
   --secret-file ./credentials-velero \
   --backup-location-config region=gra,s3ForcePathStyle="true",s3Url=https://s3.gra.cloud.ovh.net \
@@ -293,6 +299,12 @@ And apply it to your cluster:
 kubectl apply -f nginx-example-without-pv.yml
 ```
 
+Check Pods have been created:
+
+```bash
+kubectl get pod -n nginx-example
+```
+
 Create a backup of the namespace:
 
 ```bash
@@ -304,6 +316,10 @@ Verify that the backup is done:
 ```bash
 velero get backup nginx-backup
 ```
+
+> [!primary]
+>
+> Wait until the status is equals to `Completed`.
 
 Simulate a disaster:
 
@@ -330,6 +346,12 @@ namespace/nginx-example created
 deployment.apps/nginx-deployment created
 service/my-nginx created
 
+$ kubectl get pod -n nginx-example
+
+NAME                                READY   STATUS    RESTARTS   AGE
+nginx-deployment-84df99548d-h9hlb   1/1     Running   0          2m24s
+nginx-deployment-84df99548d-p8ktw   1/1     Running   0          2m19s
+
 $ velero backup create nginx-backup --include-namespaces nginx-example
 
 Backup request "nginx-backup" submitted successfully.
@@ -337,8 +359,8 @@ Run `velero backup describe nginx-backup` or `velero backup logs nginx-backup` f
 
 $ velero get backup nginx-backup
 
-NAME           STATUS      ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
-nginx-backup   Completed   0        0          2022-09-21 16:54:03 +0200 CEST   29d       default            <none>
+NAME           STATUS      ERRORS   WARNINGS   CREATED                         EXPIRES   STORAGE LOCATION   SELECTOR
+nginx-backup   Completed   0        1          2023-01-11 09:28:58 +0100 CET   29d       default            <none>
 
 $ kubectl delete namespaces nginx-example
 
@@ -348,32 +370,34 @@ $ kubectl get all -n nginx-example
 No resources found in nginx-example namespace.
 
 $ velero restore create --from-backup nginx-backup
-Restore request "nginx-backup-20220921165428" submitted successfully.
-Run `velero restore describe nginx-backup-20220921165428` or `velero restore logs nginx-backup-20220921165428` for more details.
+Restore request "nginx-backup-20230111093134" submitted successfully.
+Run `velero restore describe nginx-backup-20230111093134` or `velero restore logs nginx-backup-20230111093134` for more details.
 
-$ velero restore logs nginx-backup-20220921165428
-time="2022-09-21T14:54:28Z" level=info msg="starting restore" logSource="pkg/controller/restore_controller.go:478" restore=velero/nginx-backup-20220921165428
-time="2022-09-21T14:54:28Z" level=info msg="Starting restore of backup velero/nginx-backup" logSource="pkg/restore/restore.go:392" restore=velero/nginx-backup-20220921165428
-time="2022-09-21T14:54:28Z" level=info msg="Resource 'secrets' will be restored into namespace 'nginx-example'" logSource="pkg/restore/restore.go:1889" restore=velero/nginx-backup-20220921165428
-time="2022-09-21T14:54:28Z" level=info msg="Resource 'configmaps' will be restored into namespace 
+$ velero restore logs nginx-backup-20230111093134
+time="2023-01-11T08:31:36Z" level=info msg="starting restore" logSource="pkg/controller/restore_controller.go:478" restore=velero/nginx-backup-20230111093134
+time="2023-01-11T08:31:36Z" level=info msg="Starting restore of backup velero/nginx-backup" logSource="pkg/restore/restore.go:392" restore=velero/nginx-backup-20230111093134
+time="2023-01-11T08:31:36Z" level=info msg="Resource 'volumesnapshotclasses.snapshot.storage.k8s.io' will be restored at cluster scope" logSource="pkg/restore/restore.go:1891" restore=velero/nginx-backup-20230111093134
+time="2023-01-11T08:31:36Z" level=info msg="Resource 'volumesnapshotcontents.snapshot.storage.k8s.io' will be restored at cluster scope" logSource="pkg/restore/restore.go:1891" restore=velero/nginx-backup-20230111093134
 [...]
-time="2022-09-21T14:54:29Z" level=info msg="Done waiting for all post-restore exec hooks to complete" logSource="pkg/restore/restore.go:579" restore=velero/nginx-backup-20220921165428
-time="2022-09-21T14:54:29Z" level=info msg="restore completed" logSource="pkg/controller/restore_controller.go:518" restore=velero/nginx-backup-20220921165428
+time="2023-01-11T08:31:37Z" level=warning msg="Cluster resource restore warning: could not restore, VolumeSnapshotContent \"snapcontent-83dc003f-7ed2-47c3-9442-61b48686cf78\" already exists. Warning: the in-cluster version is different than the backed-up version." logSource="pkg/controller/restore_controller.go:511" restore=velero/nginx-backup-20230111093134
+time="2023-01-11T08:31:37Z" level=info msg="restore completed" logSource="pkg/controller/restore_controller.go:518" restore=velero/nginx-backup-20230111093134
 
 $ kubectl get all -n nginx-example
 
-NAME                                   READY   STATUS    RESTARTS   AGE
-pod/nginx-deployment-f7ccf9478-bxnw8   1/1     Running   0          8s
-pod/nginx-deployment-f7ccf9478-wtqw7   1/1     Running   0          8s
+NAME                                    READY   STATUS    RESTARTS   AGE
+pod/nginx-deployment-84df99548d-h9hlb   1/1     Running   0          2m39s
+pod/nginx-deployment-84df99548d-p8ktw   1/1     Running   0          2m39s
 
-NAME               TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
-service/my-nginx   LoadBalancer   10.3.98.16   <pending>     80:31092/TCP   8s
+NAME                    TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
+service/my-nginx        LoadBalancer   10.3.120.98    <pending>   80:30445/TCP   2m39s
+service/nginx-service   LoadBalancer   10.3.209.170   <pending>   80:30045/TCP   2m39s
 
 NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/nginx-deployment   2/2     2            2           8s
+deployment.apps/nginx-deployment   2/2     2            2           2m39s
 
-NAME                                         DESIRED   CURRENT   READY   AGE
-replicaset.apps/nginx-deployment-f7ccf9478   2         2         2       8s
+NAME                                          DESIRED   CURRENT   READY   AGE
+replicaset.apps/nginx-deployment-5bfc8c9f6f   0         0         0       2m39s
+replicaset.apps/nginx-deployment-84df99548d   2         2         2       2m39s
 </code></pre>
 
 Before continuing, clean the `nginx-example` namespace:
@@ -516,7 +540,7 @@ $ echo $LB_IP
 $ curl -I $LB_IP
 HTTP/1.1 200 OK
 Server: nginx/1.7.9
-Date: Thu, 22 Sep 2022 06:40:15 GMT
+Date: Wed, 11 Jan 2023 08:37:30 GMT
 Content-Type: text/html
 Content-Length: 612
 Last-Modified: Tue, 23 Dec 2014 16:25:09 GMT
@@ -527,7 +551,7 @@ Accept-Ranges: bytes
 $ curl -I $LB_IP
 HTTP/1.1 200 OK
 Server: nginx/1.7.9
-Date: Thu, 22 Sep 2022 06:41:41 GMT
+Date: Wed, 11 Jan 2023 08:37:33 GMT
 Content-Type: text/html
 Content-Length: 612
 Last-Modified: Tue, 23 Dec 2014 16:25:09 GMT
@@ -558,8 +582,8 @@ $ echo $POD_NAME
 pod/nginx-deployment-5bfc8c9f6f-xkw5x
 
 $  kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
-10.2.0.0 - - [22/Sep/2022:08:03:53 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-10.2.1.0 - - [22/Sep/2022:08:03:54 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+xxx.xxx.xxx.xxx - - [11/Jan/2023:08:37:30 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+xxx.xxx.xxx.xxx - - [11/Jan/2023:08:37:33 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 </code></pre>
 
 Now we can ask velero to do the backup of the namespace:
@@ -623,22 +647,22 @@ Waiting for backup to complete. You may safely press ctrl-c to stop waiting - yo
 Backup completed with status: Completed. You may check for more information using the commands `velero backup describe nginx-backup-with-pv` and `velero backup logs nginx-backup-with-pv`.
 
 $ velero backup get nginx-backup-with-pv
-NAME                   STATUS      ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
-nginx-backup-with-pv   Completed   0        0          2022-09-22 10:05:15 +0200 CEST   29d       default            <none>
+NAME                   STATUS      ERRORS   WARNINGS   CREATED                         EXPIRES   STORAGE LOCATION   SELECTOR
+nginx-backup-with-pv   Completed   0        1          2023-01-11 09:38:39 +0100 CET   29d       default            <none>
 
 $ velero describe backup nginx-backup-with-pv --details --features=EnableCSI
 
 Name:         nginx-backup-with-pv
 Namespace:    velero
 Labels:       velero.io/storage-location=default
-Annotations:  velero.io/source-cluster-k8s-gitversion=v1.24.3
+Annotations:  velero.io/source-cluster-k8s-gitversion=v1.24.8
               velero.io/source-cluster-k8s-major-version=1
               velero.io/source-cluster-k8s-minor-version=24
 
 Phase:  Completed
 
 Errors:    0
-Warnings:  0
+Warnings:  1
 
 Namespaces:
   Included:  nginx-example
@@ -661,13 +685,13 @@ Hooks:  <none>
 
 Backup Format Version:  1.1.0
 
-Started:    2022-09-22 10:05:15 +0200 CEST
-Completed:  2022-09-22 10:05:22 +0200 CEST
+Started:    2023-01-11 09:38:39 +0100 CET
+Completed:  2023-01-11 09:38:53 +0100 CET
 
-Expiration:  2022-10-22 10:05:15 +0200 CEST
+Expiration:  2023-02-10 09:38:39 +0100 CET
 
-Total items to be backed up:  29
-Items backed up:              29
+Total items to be backed up:  28
+Items backed up:              28
 
 Resource List:
   apps/v1/Deployment:
@@ -675,41 +699,40 @@ Resource List:
   apps/v1/ReplicaSet:
     - nginx-example/nginx-deployment-5bfc8c9f6f
   discovery.k8s.io/v1/EndpointSlice:
-    - nginx-example/nginx-service-z4jww
+    - nginx-example/nginx-service-8zztd
   snapshot.storage.k8s.io/v1/VolumeSnapshot:
-    - nginx-example/velero-nginx-logs-mtsw6
+    - nginx-example/velero-nginx-logs-4mzqj
   snapshot.storage.k8s.io/v1/VolumeSnapshotClass:
-    - csi-cinder-snapclass-in-use-v1
+    - csi-cinder-snapclass-in-use-v1-velero
   snapshot.storage.k8s.io/v1/VolumeSnapshotContent:
-    - snapcontent-a3fe902c-ac9e-4485-9c28-7e00f894e2d1
+    - snapcontent-a94596ac-53e8-4dbd-82ab-4b2b2059f9ad
   v1/ConfigMap:
     - nginx-example/kube-root-ca.crt
   v1/Endpoints:
     - nginx-example/nginx-service
   v1/Event:
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq.17171fe5e9e5a9fb
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq.17171fe62acfbf06
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq.17171fe6d34abaaf
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq.17171fe801352cbe
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq.17171fe86ff09c8c
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq.17171fe8ea0ebbde
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq.17171fe8ef69d163
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq.17171fe8fb24c3a6
-    - nginx-example/nginx-deployment-5bfc8c9f6f.17171fe5e9786fc5
-    - nginx-example/nginx-deployment.17171fe5e8606801
-    - nginx-example/nginx-logs.17171fe5dd6ea3ce
-    - nginx-example/nginx-logs.17171fe5ddad2df3
-    - nginx-example/nginx-logs.17171fe62ac541c2
-    - nginx-example/nginx-service.17171fe5f3ce2f2e
-    - nginx-example/nginx-service.17171ffc83383b31
+    - nginx-example/nginx-deployment-5bfc8c9f6f-wfh2s.17393436adcb2afc
+    - nginx-example/nginx-deployment-5bfc8c9f6f-wfh2s.17393437118d0de4
+    - nginx-example/nginx-deployment-5bfc8c9f6f-wfh2s.173934386fe43eb6
+    - nginx-example/nginx-deployment-5bfc8c9f6f-wfh2s.17393439eaee38ad
+    - nginx-example/nginx-deployment-5bfc8c9f6f-wfh2s.1739343a473097ed
+    - nginx-example/nginx-deployment-5bfc8c9f6f-wfh2s.1739343a4b321cbb
+    - nginx-example/nginx-deployment-5bfc8c9f6f-wfh2s.1739343a579c4298
+    - nginx-example/nginx-deployment-5bfc8c9f6f.17393436adb1ca3e
+    - nginx-example/nginx-deployment.17393436aca15492
+    - nginx-example/nginx-logs.17393436a42eebba
+    - nginx-example/nginx-logs.17393436a43b2735
+    - nginx-example/nginx-logs.17393436cd9041ea
+    - nginx-example/nginx-service.17393436b64016dd
+    - nginx-example/nginx-service.17393442dbc725bd
   v1/Namespace:
     - nginx-example
   v1/PersistentVolume:
-    - ovh-managed-kubernetes-dmhe43-pvc-3c7b1e00-9b78-4d45-843a-7e969be29191
+    - ovh-managed-kubernetes-dmhe43-pvc-310bd5e6-b4ef-41eb-8960-17a99c837355
   v1/PersistentVolumeClaim:
     - nginx-example/nginx-logs
   v1/Pod:
-    - nginx-example/nginx-deployment-5bfc8c9f6f-9s4jq
+    - nginx-example/nginx-deployment-5bfc8c9f6f-wfh2s
   v1/Service:
     - nginx-example/nginx-service
   v1/ServiceAccount:
@@ -718,8 +741,8 @@ Resource List:
 Velero-Native Snapshots: <none included>
 
 CSI Volume Snapshots:
-Snapshot Content Name: snapcontent-a3fe902c-ac9e-4485-9c28-7e00f894e2d1
-  Storage Snapshot ID: a4eb1ca3-3246-4e97-9e79-83bd0162aa40
+Snapshot Content Name: snapcontent-a94596ac-53e8-4dbd-82ab-4b2b2059f9ad
+  Storage Snapshot ID: e72e2844-d5e5-4829-96c7-8c2cd80b475b
   Snapshot Size (bytes): 1073741824
   Ready to use: true
 
@@ -729,33 +752,30 @@ namespace "nginx-example" deleted
 
 $ velero restore create --from-backup nginx-backup-with-pv --wait
 
-Restore request "nginx-backup-with-pv-20220922101426" submitted successfully.
+Restore request "nginx-backup-with-pv-20230111094040" submitted successfully.
 Waiting for restore to complete. You may safely press ctrl-c to stop waiting - your restore will continue in the background.
 .
-Restore completed with status: Completed. You may check for more information using the commands `velero restore describe nginx-backup-with-pv-20220922101426` and `velero restore logs nginx-backup-with-pv-20220922101426`.
+Restore completed with status: Completed. You may check for more information using the commands `velero restore describe nginx-backup-with-pv-20230111094040` and `velero restore logs nginx-backup-with-pv-20230111094040`.
 
 $ kubectl get all -n nginx-example
-kubectl get pvc -n nginx-example
 NAME                                    READY   STATUS    RESTARTS   AGE
-pod/nginx-deployment-5bfc8c9f6f-9s4jq   1/1     Running   0          19s
+pod/nginx-deployment-5bfc8c9f6f-wfh2s   1/1     Running   0          22s
 
 NAME                    TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
-service/nginx-service   LoadBalancer   10.3.XXX.XXX   <pending>     80:30053/TCP   18s
+service/nginx-service   LoadBalancer   10.3.xxx.xxx   <pending>     80:31456/TCP   22s
 
 NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/nginx-deployment   1/1     1            1           18s
+deployment.apps/nginx-deployment   1/1     1            1           22s
 
 NAME                                          DESIRED   CURRENT   READY   AGE
-replicaset.apps/nginx-deployment-5bfc8c9f6f   1         1         1       18s
-NAME         STATUS   VOLUME                                                                   CAPACITY   ACCESS MODES   STORAGECLASS            AGE
-nginx-logs   Bound    ovh-managed-kubernetes-dmhe43-pvc-6e6d023d-b7b2-4cc3-9a7f-3f061d841d67   1Gi        RWO            csi-cinder-high-speed   19s
+replicaset.apps/nginx-deployment-5bfc8c9f6f   1         1         1       22s
 
 $ export POD_NAME=$(kubectl -n nginx-example get pods -o name)
 
 $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
 
-10.2.0.0 - - [22/Sep/2022:08:03:53 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-10.2.1.0 - - [22/Sep/2022:08:03:54 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+141.94.167.92 - - [11/Jan/2023:08:37:30 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+141.94.167.92 - - [11/Jan/2023:08:37:33 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 </code></pre>
 
 Your namespace with resources and PVC have been correctly restored.
@@ -808,11 +828,11 @@ You should have a result like this:
 
 <pre class="console"><code>$ velero schedule get
 NAME             STATUS    CREATED                          SCHEDULE     BACKUP TTL   LAST BACKUP   SELECTOR
-daily-snapshot   Enabled   2022-10-04 09:12:05 +0200 CEST   15 0 * * *   168h0m0s     9h ago        <none>
+daily-snapshot   Enabled   2023-01-11 09:43:00 +0100 CET   15 0 * * *   168h0m0s     9h ago        <none>
 
 $ velero backup get
 NAME                            STATUS             ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
-daily-snapshot-20221004072023   Completed          0        1          2022-10-04 09:20:23 +0200 CEST   6d        default            <none>
+daily-snapshot-20230111084430   Completed          0        1          2023-01-11 09:44:30 +0100 CET   6d        default            <none>
 </code></pre>
 
 ### Cleanup
@@ -821,6 +841,12 @@ Clean the `nginx-example` namespace:
 
 ```bash
 kubectl delete namespace nginx-example
+```
+
+Clean velero schedule:
+
+```bash
+velero schedule delete daily-snapshot
 ```
 
 Clean existing velero backup:
