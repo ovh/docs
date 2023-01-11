@@ -31,7 +31,7 @@ We will go through all the steps to migrate your data to more recent storage and
 
 ### Add storage
 
-You can use the new storage ranges, and you will get full-SSD (vs SSD-accelerated) disks, 2x2x25Gbps network cards (vs 2x10Gbps), higher availability and resilience. For more information click on this link [NFS Datastore](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/).
+You can use the new storage ranges, and you will get full-SSD (vs SSD-accelerated) disks, 2x2x25Gbps network cards (vs 2x10Gbps), higher availability and resilience. For more information click on this link [NFS Datastore](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/datastores-nfs/).
 
 Use this guide to add more storage if you have not yet subscribed to a more recent solution.
 
