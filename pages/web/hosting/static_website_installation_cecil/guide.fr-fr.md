@@ -1,47 +1,46 @@
 ---
-title: 'Installer et configurer Cecil - Premiers pas'
+title: 'Tutoriel - Premiers pas sur l'installation et la configuration de Cecil'
 slug: install-configure-cecil
-excerpt: 'Install and configure Cecil, static web pages generator'
+excerpt: 'Découvrez comment installer et configurer Cecil pour administrer vos pages web statiques'
 section: 'Tutoriels'
-order: 
+order: 04
 ---
 
-**Dernière mise à jour le 13/12/2022**
+**Dernière mise à jour le 11/01/2023**
 
 ## Objectif
 
-Ce guide a pour objectif de vous permettre d'installer et de configurer [Cecil](https://cecil.app/), application écrite en PHP permettant de générer et d'administrer des pages web statiques.
+Ce tutoriel vous explique comment installer et configurer [Cecil](https://cecil.app/){.external}. Il s'agit d'une application écrite en PHP permettant de générer et d'administrer des pages web statiques.
 
-Un site web composé essentiellement de pages web statiques vous garantira un meilleur temps de chargement pour vos visiteurs en plus d’une plus grande sécurité. Sans contenu dynamique, vos pages représentent un risque moindre face aux attaques. La génération d’un site statique vous permet de disposer d’une grande liberté pour vous permettre de créer le site web de vos rêves tout en gagnant du temps puisque vous n’aurez pas à partir de zéro.
+Un site web composé essentiellement de pages web statiques garanti un meilleur temps de chargement pour vos visiteurs et une plus grande sécurité. Sans contenu dynamique, vos pages sont plus robustes face aux attaques informatiques. La génération d’un site statique permet de disposer d’une liberté plus grande pour créer le site web de votre choix. Vous gagnerez également du temps puisque vous n’aurez pas à partir de zéro.
 
 ## Prérequis
 
-Pour avoir des temps de réponse optimaux, nous préconisons notre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/). Cette solution inclut un accès SSH qui va vous permettre d'installer en ligne de commande une ou plusieurs solutions alternatives à celles proposées dans l'offre.
-
-Pour mettre en place la solution, vous devrez intégrer les éléments suivants&nbsp;:
-- être familier avec l'utilisation de la ligne de commande
-- savoir transférer ses fichiers en FTP avec un client comme [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
-- avoir paramétré votre zone DNS pour faire pointer votre nom de domaine (ou votre sous-domaine) sur votre serveur. Cela vous sera utile si vous avez l’intention de créer plusieurs sites statiques sur le même hébergement web.
-
-Vous devez également avoir installé [Composer](https://getcomposer.org/) et avoir votre fichier `composer.phar` à la racine de votre serveur où dans n'importe quel répertoire accessible.
+- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) incluant un accès SSH. Cet accès permet d'installer en ligne de commande une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergements web.
+- Être familiarisé à la saisie en ligne de commande
+- Être en capacité de transférer des fichiers en FTP avec un client comme [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+- Paramétrer votre zone DNS pour faire pointer votre nom de domaine (ou sous-domaine) vers votre hébergement web mutualisé. Utile notamment si vous souhaitez héberger plusieurs site en [Multisites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) sur votre hébergement web mutualisé.
+- Installer préalablement [Composer](https://getcomposer.org/){.external} avec le fichier `composer.phar` à la racine de votre hébergement web mutualisé ou dans le dossier cible de votre nom de domaine.
 
 ## En pratique
 
-Votre offre de web hosting vous permet de définir un sous-domaine qui pourra être utilisé pour déployer votre site réalisé avec Cecil.
-
-Pour accéder à la gestion multisite de votre offre, veuillez vous reporter à ce [guide](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+Les [hébergements web mutualisés](https://www.ovhcloud.com/fr/web-hosting/) permettent de définir des domaines ou sous-domaines en [multisites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/). Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
 
 ### Créer le répertoire dans lequel seront vos fichiers
 
-Une fois connecté en SSH à votre serveur, créez un répertoire à la racine avec la commande&nbsp;:
+Une fois connecté en SSH à votre hébergement web, créez un répertoire à la racine avec la commande&nbsp;:
 ```sh
-mkdir monsitestatique
+mkdir mystaticwebsite
 ```
+
+Remplacez `mystaticwebsite` par le nom de dossier de votre choix (sans accents et sans espaces).
 
 Puis allez dans votre ce répertoire&nbsp;:
 ```sh
-cd monsitestatique
+cd mystaticwebsite
 ```
+
+Remplacez `mystaticwebsite` par votre nom de dossier.
 
 ### Téléchargement
 
@@ -59,15 +58,17 @@ Lancez l'installation avec la commande&nbsp;:
 php cecil.phar new:site
 ```
 
-Vous aurez alors à renseigner certains éléments&nbsp;:
+Renseignez les éléments demandés&nbsp;:
+
 - le titre de votre site _(title)_
 - la _baseline_
-- l'URL de votre site (par exemple, `https://monsite.ovh`)
-- une description de votre site
+- l'URL de votre site web (par exemple, `https://mywebsite.ovh`)
+- une description de votre site web
 
 ![Installation Cecil](images/static_website_installation_cecil%5B1%5D.png){.thumbnail}
 
 Une fois ces éléments renseignés, vous devez maintenant déployer le site en tapant la commande&nbsp;:
+
 ```sh
 php cecil.phar build
 ```
@@ -82,7 +83,9 @@ Vous pouvez maintenant voir le résultat en allant sur votre nom de domaine&nbsp
 
 ### Domaine ou sous-domaine
 
-Pour visualiser le résultat de votre site sur votre navigateur, vous devez modifier le pointage de votre nom de domaine ou de sous-domaine dans le répertoire `_site` qui a été créé lors de l'installation de Cecil.
+Pour visualiser le résultat de votre site sur votre navigateur, modifiez le pointage de votre nom de domaine ou de sous-domaine dans le répertoire `_site` créé précédemment lors de l'installation de **Cecil**.
+
+Si votre nom de domaine ou sous-domaine est hébergé chez OVHcloud, consultez nos guides relatifs à la [configuration DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) et à la mise en place d'un [multisites sur votre hébergement web](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/)
 
 ### Configurer son site
 
@@ -98,7 +101,7 @@ Remplacez les informations par défaut par les votres et sauvegardez le fichier.
 
 ### Créer une nouvelle page
 
-La création des pages qui contiendront les données de votre site se fait via des fichiers au format _Markdown_. Ces pages sont personnalisables : Cecil intègre le moteur de _template_ [Twig](https://twig.symfony.com/) qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/).
+La création des pages qui contiendront les données de votre site se font via des fichiers au format _Markdown_. Ces pages sont personnalisables : **Cecil**  intègre le moteur de _template_ [Twig](https://twig.symfony.com/){.external} qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/){.external}.
 
 Les dossiers et fichiers sont organisés comme suit&nbsp;:
 
