@@ -105,21 +105,23 @@ La création des pages qui contiendront les données de votre site se font via d
 
 Les dossiers et fichiers sont organisés comme suit&nbsp;:
 
-- `assets` contiendra les éléments graphiques, audio et vidéo, les scripts JavaScript et les styles (CSS, Sass) 
-- `layouts` est le répertoire dans lequel seront le ou les _templates_
-- `pages` sera l'endroit où seront vos fichiers _Markdown_
-- `_site` est le répertoire qui contiendra les fichiers générés et qui sera pointé par votre nom de domaine
-- `static` pour tous les fichiers statiques type PDF.
+- `assets` : contient les éléments graphiques, audio et vidéo, les scripts JavaScript et les styles (CSS, Sass) 
+- `layouts` : répertoire dans lequel seront le ou les _templates_
+- `pages` : endroit où seront vos fichiers _Markdown_
+- `_site` : répertoire qui contient les fichiers générés et qui est pointé par votre nom de domaine
+- `static` : tous les fichiers statiques type PDF.
 
 #### Créer un fichier _Markdown_ en ligne de commande
 
 À la racine du site, tapez la commande&nbsp;:
 
 ```sh
-php cecil.phar new:page mapage.md
+php cecil.phar new:page mypage.md
 ```
 
-Un fichier `mapage.md` est alors créé à la racine du répertoire `/pages`&nbsp;
+Un fichier `mypage.md` est alors créé à la racine du répertoire `/pages`&nbsp;
+
+Remplacez `mypage` par le nom de votre propre page.
 
 ![Installation Cecil](images/static_website_installation_cecil%5B5%5D.png){.thumbnail}
 
@@ -131,26 +133,28 @@ Toujours à la racine, tapez la commande&nbsp;:
 php cecil.phar build
 ```
 
-Votre fichier se trouve dans le répertoire `_site/mapage/`&nbsp;:
+Votre fichier se trouve dans le répertoire `_site/mypage/`&nbsp;:
 
 ![Installation Cecil](images/static_website_installation_cecil%5B6%5D.png){.thumbnail}
 
-Et vous pouvez la visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mapage/`&nbsp;:
+Et vous pouvez la visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mypage/`&nbsp;:
 
 ![Résultat navigateur](images/static_website_installation_cecil%5B7%5D.png){.thumbnail}
 
 ### Personnaliser les fichiers de votre site
 
-#### **Modification sur le serveur**
+#### Modification sur le serveur
 
-L'édition des fichiers _Markdown_ peut se faire directement sur le serveur. Sur votre offre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/), [vi](https://ex-vi.sourceforge.net/l) ou [vim](https://www.vim.org/).
-Les captures d'écran du présent guide ont été réalisées sous GNU nano.
+L'édition des fichiers _Markdown_ peut se faire directement sur le serveur d'hébergement web. Sur votre offre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/l){.external} ou [vim](https://www.vim.org/){.external}.
+Les captures d'écran du présent tutoriel ont été réalisées sous **GNU nano**.
 
-Éditez le fichier `mapage.md` situé dans le répertoire `pages` en tapant la commande suivante si vous êtes à la racine de votre site&nbsp;:
+Éditez le fichier `mypage.md` situé dans le répertoire `pages` en tapant la commande suivante si vous êtes à la racine de votre site&nbsp;:
 
 ```sh
- nano pages/mapage.md
+ nano pages/mypage.md
 ```
+
+Remplacez `mypage` par le nom de votre propre page.
 
 ![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B8%5D.png){.thumbnail}
 
@@ -164,7 +168,7 @@ Supprimez les fichiers dans le cache à l'aide de la commande suivante&nbsp;:
 php cecil.phar clear
 ```
 
-Rebuildez vos pages après avoir sauvegardé votre fichier&nbsp;:
+Reconstruisez vos pages après avoir sauvegardé votre fichier&nbsp;:
 
 ```sh
 php cecil.phar build
@@ -174,7 +178,7 @@ Puis retournez sur votre page pour voir le résultat&nbsp;:
 
 ![Page mise à jour](images/static_website_installation_cecil%5B10%5D.png){.thumbnail}
 
-#### **Modification sur votre poste de travail**
+#### Modification sur votre poste de travail
 
 Si vous préférez utiliser votre éditeur de code habituel, connectez-vous avec un client FTP sur votre serveur pour récupérer les fichiers sur votre ordinateur&nbsp;:
 
@@ -184,11 +188,11 @@ Vous pouvez maintenant éditer les fichiers dans votre I.D.E.&nbsp;:
 
 ![Affichage dans Visual Studio Code](images/static_website_installation_cecil%5B12%5D.png){.thumbnail}
 
-Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de rebuilder pour avoir vos pages en ligne.
+Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de **rebuilder** pour avoir vos pages en ligne.
 
 ### Ajout la page générée au menu de votre site
 
-Pour ajouter cette nouvelle page dans le menu du site, vous devez modifier manuellement l'en-tête du fichier `.md` en rajoutant la ligne&nbsp;:
+Pour ajouter cette nouvelle page dans le menu du site web, modifiez manuellement l'en-tête du fichier `.md` en rajoutant la ligne&nbsp;:
 
 ```sh
 menu: main
@@ -196,13 +200,13 @@ menu: main
 
 ### Conclusion
 
-Cecil est un outil permettant de construire efficacement un site statique à partir de fichier Markdown, langage de balisage plus simple à mettre en œuvre que le HTML L'organisation des fichiers Markdown conditionne la hiérarchie de vos pages web.<br/>
+**Cecil** est un outil permettant de construire efficacement un site statique à partir de fichiers *Markdown*, langage de balisage plus simple à mettre en œuvre que le HTML L'organisation des fichiers Markdown conditionne la hiérarchie de vos pages web.<br/>
 L'utilisation d'un moteur de template très utilisé dans la communauté développeurs web vous permettra de trouver facilement de nombreuses sources sur internet pour concevoir une interface d'apparence professionnelle.
 
 ## Aller plus loin
 
-- le site de l'application [Cecil](https://cecil.app/)
-- la [page](https://daringfireball.net/projects/markdown/) du créateur du format Markdown
-- un [guide](https://www.markdownguide.org/) sur ce format
+- le site de l'application [Cecil](https://cecil.app/){.external}
+- la [page](https://daringfireball.net/projects/markdown/){.external} du créateur du format *Markdown*
+- un [guide](https://www.markdownguide.org/){.external} sur le format *Markdown*
 - notre guide sur l'[utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
-- le site officiel de [Twig](https://twig.symfony.com/), le moteur de templates utilisé par Cecil.
+- le site officiel de [Twig](https://twig.symfony.com/){.external}, le moteur de templates utilisé par Cecil.
