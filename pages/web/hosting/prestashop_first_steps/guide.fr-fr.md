@@ -40,6 +40,14 @@ Pensez à mettre en place la redirection de votre nom de domaine en HTTP vers HT
 
 ### Installation en 1-click
 
+> [!warning]
+>
+> Lors de l'installation, par défaut ou en mode avancé, il est possible qu'une erreur se produise au cas où le répertoire de destination de vos fichier (`./www/` par défaut) ne serait pas vide.
+> Vous serez notifié du problème par mail. Le module est automatiquement désinstallé.
+>
+> Pour corriger le problème, connectez-vous à votre serveur en SSH et videz ou effacez le répertoire dans lequel s'est faire l'installation.
+>
+
 Cliquez sur l'onglet «&nbsp;Modules en 1 clic&nbsp;»&nbsp;:
 
 ![Modules en 1 clic](images/prestashop_first_steps%5B3%5D.png){.thumbnail}
@@ -64,7 +72,37 @@ Une fois déployé, le module figurera dans la liste des modules installés sur 
 
 #### Installation en mode avancé
 
+L'installation avancée vous permet de choisir la base de données qui sera utilisée avec Prestashop. Lors de l'ajour du module Prestashop, cochez l'option «&nbsp;Installation en mode avancé&nbsp;»&nbsp;:
 
+![Installation en mode avancé](images/prestashop_first_steps%5B7%5D.png){.thumbnail}
+
+Vous serez invité à sélectionner une base de données parmi celles que vous avez déjà configurées, ou bien à vous connecter à une base de données distante en renseignant le formulaire avec les informations suivantes&nbsp;:
+
+- l'adresse du serveur (nom de domaine ou adresse IP)
+- le nom de la base de données
+- le port utilisé (par défaut, MySQL utilise le port 3306)
+- le nom de l'utilisateur (login)
+- le mot de passe lié au compte.
+
+![Installation en mode avancé - Choix de la base de données](images/prestashop_first_steps%5B8%5D.png){.thumbnail}
+
+**Éléments à vérifier - Les données saisies dans le formulaire n'apparaissent pas dans la base de données**<br />
+Dans le formulaire suivant, vous serez invité à renseigner l'adresse mail et le mot de passe de connexion
+
+![Installation en mode avancé - Informations additionnelles](images/prestashop_first_steps%5B9%5D.png){.thumbnail}
+
+Enfin, vérifiez et confirmez les informations relatives à votre installation&nbsp;:
+
+![Installation en mode avancé - Page récapitulative](images/prestashop_first_steps%5B10%5D.png){.thumbnail}
+
+### Fin de l'installation
+
+À la fin de l'installation, vous recevrez un mail comportant différentes informations&nbsp;:
+
+- l'URL pour accéder à l'interface publique de votre site e-commerce
+- le lien pour accéder à l'interface d'administration
+- le `login` administrateur
+- un lien pour récupérer votre mot de passe administrateur.
 
 ## Aller plus loin
 
