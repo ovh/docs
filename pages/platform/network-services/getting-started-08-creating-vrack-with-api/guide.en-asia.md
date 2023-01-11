@@ -196,7 +196,7 @@ Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 
 
 Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follow these steps:
 
-#### Retrieving the required information
+#### Retrieving the required information <a name="vlansetup"></a>
 
 ##### **Public Cloud project**
 
