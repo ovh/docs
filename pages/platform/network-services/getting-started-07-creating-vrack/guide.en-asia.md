@@ -6,7 +6,7 @@ section: Getting started
 order: 07
 ---
 
-**Last updated 17th November 2022**
+**Last updated 10th January 2023**
 
 ## Objective
 
@@ -165,7 +165,7 @@ In the **Private Network Name** field, set a name for your private network.
 Select this option if you intend to create instances with a private network only. For more information, please consult the following guides: [Creating a private network with Gateway](https://docs.ovh.com/asia/en/publiccloud/network-services/creating-private-network-with-gateway/) and [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance).
 
 > [!warning]
-> If the option is greyed out, it means the region selected does not support it. For more information, please refer to our [regions availability](https://www.ovhcloud.com/en-ca/public-cloud/regions-availability/) page. 
+> If the option is greyed out, it means the region selected does not support it. For more information, please refer to our [regions availability](https://www.ovhcloud.com/asia/public-cloud/regions-availability/) page. 
 > 
 
 **Layer 2 network options**

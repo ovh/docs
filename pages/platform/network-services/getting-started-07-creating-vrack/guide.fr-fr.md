@@ -6,7 +6,7 @@ section: Premiers pas
 order: 07
 ---
 
-**Dernière mise à jour le 17/11/2022**
+**Dernière mise à jour le 10/01/2023**  
 
 ## Objectif
 
@@ -159,8 +159,6 @@ Une fois le vRack créé, cliquez à nouveau sur `Private network`{.action} dans
 Cliquez à présent sur `Créer un réseau privé`{.action}. La page suivante vous permettra de personnaliser plusieurs paramètres.
 
 À l'étape 1, sélectionnez la région dans laquelle vous souhaitez créer le réseau privé.
-
-![add private network](images/vrack5.png){.thumbnail}
 
 ![select region](images/vrack5-2022.png){.thumbnail}
 
