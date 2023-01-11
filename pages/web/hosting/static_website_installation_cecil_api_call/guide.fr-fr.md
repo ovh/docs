@@ -1,41 +1,40 @@
 ---
-title: 'Cecil - Dynamiser le contenu d'une page'
+title: "Tutoriel - Dynamiser le contenu d'une page web avec Cecil"
 slug: static-site-generator-cecil-use-api
-excerpt: 'Cecil - Get datas from an API to fill a static web page'
+excerpt: "Découvrez comment dynamiser le contenu d'une page web avec Cecil"
 section: 'Tutoriels'
 order: 03
 ---
 
-**Dernière mise à jour le 14/12/2022**
+**Dernière mise à jour le 11/01/2023**
 
 ## Objectif
 
-Dans ce guide, nous verrons comment utiliser le générateur de site [Cecil](https://cecil.app/fr/) pour rendre le contenu d'une page dynamique en appelant une API pour récupérer des informations et les afficher sur une page générée par la solution.
+Ce tutoriel explique comment utiliser le générateur de site [Cecil](https://cecil.app/fr/){.external} pour rendre le contenu d'une page dynamique. Le tout en appelant une API pour récupérer et afficher des informations sur une page générée via **Cecil**.
+
+**Découvrez comment dynamiser le contenu d'une page web avec Cecil**
 
 ## Prérequis
 
-Afin de garantir un temps de chargement des pages optimal, nous vous recommandons notre solution de web hosting [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/).
-
-Vous devrez également&nbsp;:
-
-- être à l'aise avec la ligne de commande
-- avoir installé et configuré l'application Cecil sur votre hébergement (reportez-vous au guide [Installer et configurer Cecil](https://ovhcloud.com/)).
+- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) incluant un accès SSH. Cet accès permet d'installer en ligne de commande une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergements web.
+- Être familiarisé à la saisie en ligne de commande
+- Avoir installé et configuré l'application **Cecil** sur votre hébergement (reportez-vous à notre tutoriel sur [l'installation et la configuration de Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil)).
 
 ## En pratique
 
-L'exemple choisi consiste à utiliser une API d'un service fournissant des données météorologiques en fonction d'une ville saisie par l'utilisateur.
+L'exemple choisi consiste à utiliser l'une des APIs d'un service fournissant des données météorologiques. Ceci en fonction d'une ville saisie par l'utilisateur.
 
 Les étapes sont les suivantes&nbsp;:
 
-- créer une nouvelle page sur Cecil et ajouter cette page au menu du site
+- créer une nouvelle page sur Cecil et ajouter cette page au menu du site web
 - créer un compte et récupérer la clé permettant de faire des requêtes sur l'API météo
 - modifier le fichier `.md` créé en ajoutant du code HTML
-- ajouter des assets (JavaScript et CSS)
+- ajouter des `assets` (JavaScript et CSS)
 - générer et tester la solution.
 
 ### Créer une nouvelle page
 
-Préparez votre environnement en vous connectant en SSH sur votre serveur et reportez-vous au guide [Installer et configurer Cecil](https://ovhcloud.com/) pour installer votre application Cecil dans un répertoire dédié.
+Préparez votre environnement en vous connectant en SSH sur votre hébergement web et reportez-vous au guide [Installer et configurer Cecil](https://ovhcloud.com/) pour installer votre application **Cecil** dans un répertoire dédié.
 
 Créez un répertoire et placez-vous dedans&nbsp;:
 
@@ -46,10 +45,10 @@ cd myWebSite
 
 ### Utilisation de l'API OpenWeather
 
-Pour ce guide, nous allons utiliser une API fournie par le site [OpenWeather](https://openweathermap.org/) permettant de connaître les informations météorologiques en fonction du nom d'une ville.
+Pour ce tutoriel, nous allons utiliser une API fournie par le site [OpenWeather](https://openweathermap.org/){.external}. Elle permet de connaître les informations météorologiques en fonction du nom d'une ville.
 
-Créez un compte : https://home.openweathermap.org/users/sign_up<br>
-Une fois votre compte validé (par envoi d'un mail de confirmation), allez sur le menu «&nbsp;My API keys&nbsp;». Une clé a été générée par défaut, nous allons l'utiliser pour la suite.
+Créez un compte sur <https://home.openweathermap.org/users/sign_up><br>
+Une fois votre compte validé (par envoi d'un e-mail de confirmation), rendez-vous sur le menu «&nbsp;My API keys&nbsp;». Une clé a été générée par défaut, récupérez-là et conservez-là pour la suite de ce tutoriel.
 
 ![Open Weather API key](images/static_website_installation_cecil_api_call%5B1%5D.png)
 
@@ -78,7 +77,7 @@ menu: main
 ---
 ```
 
-Après l'en-tête, ajoutez le code HTML pour afficher la ville choisie, le température renvoyées par l'API et un bouton pour changer de paramètre&nbsp;:
+Après l'en-tête, ajoutez le code HTML pour afficher la ville choisie, les températures renvoyées par l'API et un bouton pour changer de paramètre&nbsp;:
 
 ```html
 ---
@@ -101,13 +100,13 @@ Générez la pages HTML avec la commande suivante&nbsp;:
 php cecil.phar build
 ```
 
-Vérifiez dans votre navigateur et cliquez sur le lien «&nbsp;Weather&nbsp;» qui a été ajouté dans le menu principal&nbsp;:
+Vérifiez le résultat dans votre navigateur et cliquez sur le lien «&nbsp;Weather&nbsp;» qui a été ajouté dans le menu principal&nbsp;:
 
 ![Test new page](images/static_website_installation_cecil_api_call%5B2%5D.png)
 
 ### Ajouter le code JavaScript
 
-Il n'est pas possible d'ajouter une balise `<script>` dans un fichier Markdown. Il faut modifier le template fourni par défaut.
+Il est impossible d'ajouter une balise `<script>` dans un fichier Markdown. Vous devrez modifier le template fourni par défaut.
 
 #### Modifier le template
 
@@ -125,7 +124,7 @@ Ouvrez le fichier `index.html.twig` :
 
 ![Cecil layouts index file](images/static_website_installation_cecil_api_call%5B4%5D.png)
 
-Le fichier fait référence à un template qui n'est pas présent dans le répertoire. Ce fichier (et d'autres) sont en fait dans le fichier `cecil.phar`. Les extensions `.phar` désigne des archives de fichiers PHP qui sont manipulables sans être décompressés.
+Le fichier fait référence à un template qui n'est pas présent dans le répertoire. Ce fichier (et d'autres) sont en réalité dans le fichier `cecil.phar`. Les extensions `.phar` désignent des archives de fichiers PHP qui sont manipulables sans être décompressées.
 Décompressez les fichiers de cette archive pour les rendre visibles&nbsp;:
 
 ```sh
@@ -142,7 +141,7 @@ Nous allons modifier le template par défaut pour insérer une balise `<script>`
 nano layouts/_default/page.html.twig
 ```
 
-Cette balise et son contenu sont à placer avant la balise fermante `</body>` en page de page&nbsp;:
+Cette balise et son contenu sont à placer avant la balise fermante `</body>` en bas de page&nbsp;:
 
 ```twig
     </footer>
@@ -154,20 +153,20 @@ Cette balise et son contenu sont à placer avant la balise fermante `</body>` en
 </html>
 ```
 
-Quand un ou des fichiers assets sont modifiés, reconstruisez-le le cache avec la commande&nbsp;:
+Quand un ou plusieurs fichiers `assets` sont modifiés, reconstruisez le cache avec la commande&nbsp;:
 
 ```sh
 php cecil.phar cache:clear:assets
 ```
 
-Si les modifications ne sont pas effectives sur votre navigateur, pensez à vider le cache de celui-ci.
-Vous pouvez également supprimer les fichiers générés sur votre serveur&nbsp;:
+Si les modifications ne sont pas effectives sur votre navigateur internet, videz le cache de celui-ci.
+Vous pouvez également supprimer les fichiers générés sur votre hébergement web&nbsp;:
 
 ```sh
 php cecil.phar clear
 ```
 
-et rebuilder votre solution&nbsp;:
+et reconstruisez votre solution à l'aide de la commande ci-dessous&nbsp;:
 
 ```sh
 php cecil.phar build
@@ -175,15 +174,15 @@ php cecil.phar build
 
 #### Ajouter le fichier JavaScript
 
-Les fichiers JavaScript, comme les fichiers CSS, sont à mettre dans le répertoire `assets`. Libre à vous de les organiser dans différents répertoires.
+Les fichiers JavaScript, comme les fichiers CSS, sont à mettre dans le répertoire `assets`. Vous pouvez les organiser dans différents répertoires.
 
-Nous allons créer le fichier `script.js` mentionné précédemment à la racinte de ce répertoire `assets`&nbsp;:
+Créez le fichier `script.js` mentionné précédemment à la racine du répertoire `assets`&nbsp;:
 
 ```sh
 nano assets/script.js
 ```
 
-Pensez à remplacer la valeur de la variable `apiKey` par la clé que vous aurez récupérée sur le site 
+Remplacez la valeur de la variable `apiKey` par la clé récupérée précédement sur le site [OpenWeather](https://openweathermap.org/){.external}
 
 ```javascript
 let apiKey = '123456789'; // Remplacez cette valeur
@@ -222,7 +221,7 @@ function getTemperature(city) {
 
 ### Tests
 
-Vous pouvez aller sur votre navigateur&nbsp;:
+Rendez-vous sur votre site web via un navigateur Internet&nbsp;:
 
 ![Web page with JavaScript running](images/static_website_installation_cecil_api_call%5B6%5D.png)
 
@@ -234,15 +233,15 @@ Cliquez sur «&nbsp;Changez de ville&nbsp;» et saisissez le nom d'une commune&n
 
 ### Conclusion
 
-Ce guide vous donne un exemple de la façon dont vous pouvez intégrer des données dynamiques récupérées sur des sources externes par le biais d'API. Vous pouvez ainsi construire et faire vivre un site en modifiant manuellement les contenus des pages et en en créant de nouvelles, tout en enrichissant leur contenu depuis d'autres sites.
+Ce tutoriel vous donne un exemple d'intégration de données dynamiques récupérées sur des sources externes par le biais d'APIs. Construisez et faites vivre un site web en modifiant manuellement le contenu de ces pages ou créez-en de nouvelles. Le tout en enrichissant leurs contenus depuis d'autres sites web.
 
 ## Aller plus loin
 
-- le site [OpenWeather](https://openweathermap.org/)
-- quelques API à tester sur votre site
-    - [Numbers API](http://numbersapi.com/#42)
-    - [NASA](https://api.nasa.gov/)
-    - [News API](https://newsapi.org/)
-    - [Polygon.io](https://polygon.io/)
-    - une liste d'[API publiques](https://github.com/public-api-lists/public-api-lists)
-- les [commandes](https://cecil.app/documentation/commands/) Cecil.
+- le site [OpenWeather](https://openweathermap.org/){.external}
+- quelques API à tester sur votre site web
+    - [Numbers API](http://numbersapi.com/#42){.external}
+    - [NASA](https://api.nasa.gov/){.external}
+    - [News API](https://newsapi.org/){.external}
+    - [Polygon.io](https://polygon.io/){.external}
+    - une liste d'[API publiques](https://github.com/public-api-lists/public-api-lists){.external}
+- les [commandes](https://cecil.app/documentation/commands/){.external} **Cecil**.
