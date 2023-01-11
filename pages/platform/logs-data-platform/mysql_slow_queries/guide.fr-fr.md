@@ -76,7 +76,7 @@ Slow query logs are multi-line logs giving information:
 ### Configure Filebeat on your system
 
 Our favorite way to send MySQL slow query logs is to send logs directly to Logs Data Platform by using [Filebeat](https://www.elastic.co/fr/downloads/beats/filebeat-oss){.external}.
-We cover Filebeat in depth in [another tutorial](https://docs.ovh.com/gb/en/logs-data-platform/filebeat-logs/){.external}. Here is a minimal **filebeat.yml** configuration file.
+We cover Filebeat in depth in [another tutorial](https://docs.ovh.com/fr/logs-data-platform/filebeat-logs/){.external}. Here is a minimal **filebeat.yml** configuration file.
 
 ```yaml
 #=========================== Filebeat inputs =============================
