@@ -168,9 +168,9 @@ To connect to your database from outside the cluster execute the following comma
 
 After installing the chart, follow the instructions on your console to test your Redis deployment and delete it when your tests are finished.
 
-<pre class="console"><code>$ export REDIS_PASSWORD=$(kubectl get secret --namespace default test-redis -o jsonpath="{.data.redis-password}" | base64 --decode)
+<pre class="console"><code>$ export REDIS_PASSWORD=$(kubectl get secret --namespace default test-redis -o jsonpath="{.data.redis-password}" | base64 -d)
 
-$ kubectl run --namespace default redis-client --restart='Never'  --env REDISCLI_AUTH=$REDIS_PASSWORD  --image docker.io/bitnami/redis:6.2.6-debian-10-r53 --command -- sleep infinity
+$ kubectl run --namespace default redis-client --restart='Never'  --env REDIS_PASSWORD=$REDIS_PASSWORD  --image docker.io/bitnami/redis:7.0.7-debian-11-r7 --command -- sleep infinity
 pod/redis-client created
 
 $ echo $REDIS_PASSWORD
