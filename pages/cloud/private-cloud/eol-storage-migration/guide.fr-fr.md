@@ -7,7 +7,7 @@ order: 005
 hidden: true
 ---
 
-**Dernière mise à jour le 10/01/2023**
+**Dernière mise à jour le 11/01/2023**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -30,6 +30,8 @@ Nous allons parcourir l'ensemble des étapes de migration de vos données vers u
 ## En pratique
 
 ### Ajout d'un stockage
+
+Vous pouvez utiliser les nouvelles gammes de stockage et vous bénéficierez de disques full-SSD (vs SSD-accelerated), de cartes réseaux 2x2x25Gbps (vs 2x10Gbps), d'une meilleure disponibilité et résilience. Pour plus d'informations cliquez sur ce lien [Datastore NFS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/).
 
 Utilisez ce guide pour ajouter un stockage plus important si vous n'avez pas encore souscrit à une offre plus récente [Comment ajouter de l’espace de stockage ?](https://docs.ovh.com/fr/private-cloud/additional-storage/)
 

@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Last updated 10th January 2023**
+**Last updated 11th January 2023**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -30,6 +30,8 @@ We will go through all the steps to migrate your data to more recent storage and
 ## Instructions
 
 ### Add storage
+
+You can use the new storage ranges, and you will get full-SSD (vs SSD-accelerated) disks, 2x2x25Gbps network cards (vs 2x10Gbps), higher availability and resilience. For more information click on this link [NFS Datastore](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/).
 
 Use this guide to add more storage if you have not yet subscribed to a more recent solution.
 
