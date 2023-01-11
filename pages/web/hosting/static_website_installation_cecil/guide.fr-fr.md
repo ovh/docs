@@ -3,7 +3,6 @@ title: 'Tutoriel - Premiers pas sur l'installation et la configuration de Cecil'
 slug: install-configure-cecil
 excerpt: 'Découvrez comment installer et configurer Cecil pour administrer vos pages web statiques'
 section: 'Tutoriels'
-order: 04
 ---
 
 **Dernière mise à jour le 11/01/2023**
