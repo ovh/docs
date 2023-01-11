@@ -73,6 +73,7 @@ After the project is created, you can browse repositories, helm charts, members,
 
 ![Managing users and projects](images/managing-users-and-projects-007.png){.thumbnail}
 
+
 ### Creating a new user and giving it rights on the *private* project
 
 Now you're going to create a new user and give him developer rights over the *private* project.

@@ -52,7 +52,7 @@ You should have at least one wordpress Helm chart in your Private Registry:
 
 We (the OVHcloud Managed Kubernetes Service team) are working on a patch to be released in early 2022. In the meantime, please remove the default storage class and install the new one.
 
-- Delete the concerned `StorageClass` that you are using by default 
+- Delete the concerned `StorageClass` that you are using by default
 
 ```bash
 kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
