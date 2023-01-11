@@ -197,5 +197,3 @@ Concerning the 'WordCount' use case, here is a link to a more advanced tutorial 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/){.external}
 
 You can send your questions, suggestions or feedbacks in our community of users on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-
-

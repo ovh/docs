@@ -42,20 +42,20 @@ The Apache Spark dashboard for your job will then start automatically.
 
 ### Grafana Dashboard
 
-After you submit a job to the Data Processing platform, follow these steps to monitor your job using a Grafana dashboard. 
+After you submit a job to the Data Processing platform, follow these steps to monitor your job using a Grafana dashboard.
 
 - Find your job in the list of jobs in the Data Processing page in the OVHcloud Manager.
-- Click on the name of the job to open its dashboard. 
-- In the dashboard, click on `Monitor job`{.action} in the **Actions** panel. 
+- Click on the name of the job to open its dashboard.
+- In the dashboard, click on `Monitor job`{.action} in the **Actions** panel.
 
 ![Metrics token](images/token.png){.thumbnail}
 
-- Copy and save the metrics token that is now displayed in the popup. 
+- Copy and save the metrics token that is now displayed in the popup.
 - Open [https://grafana.dataconvergence.ovh.com:3000/d/VhF0A_Gnz/ovhcloud-data-processing-overview?orgId=2](https://grafana.dataconvergence.ovh.com:3000/d/VhF0A_Gnz/ovhcloud-data-processing-overview?orgId=2) and login with your OVHcloud account.
 - Paste the metrics token that you copied and saved before in the `token`{.action} field.
-- You should now be able to see your job's dashboard if your job ID is already set in the `jobId`{.action} field. 
+- You should now be able to see your job's dashboard if your job ID is already set in the `jobId`{.action} field.
   Otherwise, you can simply write the ID of the jobs you want to monitor in this field.
-
+  
 ![grafana charts](images/grafanadashboard.png){.thumbnail}
 
 ## Go further
@@ -63,4 +63,3 @@ After you submit a job to the Data Processing platform, follow these steps to mo
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
-
