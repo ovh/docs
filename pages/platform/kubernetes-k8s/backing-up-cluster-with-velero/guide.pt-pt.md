@@ -321,7 +321,7 @@ velero get backup nginx-backup
 
 > [!primary]
 >
-> Wait until the status is equals to `Completed`.
+> Wait until the status is equal to `Completed`.
 
 Simulate a disaster:
 
