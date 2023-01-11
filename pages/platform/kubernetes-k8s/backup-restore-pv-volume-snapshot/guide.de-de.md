@@ -30,7 +30,7 @@ routes:
  }
 </style>
 
-**Last updated 26th September 2022**
+**Last updated 11th January 2023**
 
 In this tutorial, we are using [Kubernetes Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) to back up and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
 
