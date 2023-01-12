@@ -165,7 +165,7 @@ Wählen Sie in Schritt 1 die Region aus, in der Sie das private Netzwerk einrich
 
 Im nächsten Schritt erhalten Sie eine Reihe von Optionen:
 
-![create network](images/vrack6-2022.png) {.thumbnail}
+![create network](images/vrack6-2022.png){.thumbnail}
 
 **Erstellen Sie ein Gateway und verbinden Sie sich mit dem privaten Netzwerk**
 

@@ -182,7 +182,7 @@ Seleccione esta opción si quiere crear instancias únicamente con una red priva
 
 Si marca la casilla `Indicar un ID de VLAN`, deberá elegir un número de VLAN de 2 a 4000.
 
-Si desea definir el número de la VLAN a 0, debe pasar por la[API de OVHcloud](#vlansetup).
+Si desea definir el número de la VLAN a 0, debe pasar por la [API de OVHcloud](#vlansetup).
 
 Tenga en cuenta que si tiene una red privada existente con un VLAN ID 0, esta opción estará marcada por defecto.
 
@@ -192,7 +192,7 @@ Si desea que los servidores dedicados de OVHcloud se comuniquen con una VLAN « 
 
 El rango DHCP predeterminado es 10.0.0.0/16. Para modificar el rango de IP, es necesario utilizar las APIv6 de OVHcloud.
 
-Una vez hecha su elección, haga clic en `Crear`{.acción} para iniciar el proceso.
+Una vez hecha su elección, haga clic en `Crear`{.action} para iniciar el proceso.
 
 > [!primary]
 > La creación de la red privada puede tardar varios minutos.
