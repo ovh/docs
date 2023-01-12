@@ -39,16 +39,16 @@ You can access your OVHcloud email accounts using the password associated with t
 > For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
 > [!tabs]
-> **MXplan emails (historical version)**
+> **MXplan emails (legacy version)**
 >>
->> If you do not know the type of MXplan solution you have, please read our ><br>
+>> If you do not know which type of MXplan solution you have, please read our section [Identify your MXplan solution](#whichmxplan).<br>
 >> Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the `Emails`{.action} tab. The window that appears will display the existing email accounts. <br>
 >> Click the <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Change password`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **MXplan emails (new version)**
 >>
->> If you do not know the type of MXplan solution you have, please read our ><br>
+>> If you do not know which type of MXplan solution you have, please read our section [Identify your MXplan solution](#whichmxplan).<br>
 >> Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the `Emails`{.action} tab. The window that appears will display the existing email accounts. <br>
 >> Click the <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> button then click `Edit`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
@@ -76,7 +76,7 @@ Changing your password via webmail is available for OVHcloud email offers using 
 
 > [!warning]
 >
-> The MXplan **emails solution (historical version)** uses Roundcube webmail. You can only change your password [via the OVHcloud Control Panel](#controlpanel).
+> The **MXplan emails solution (legacy version)** uses Roundcube webmail. You can only change your password [via the OVHcloud Control Panel](#controlpanel).
 >
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -108,7 +108,7 @@ In the table below, you will find the information you need to identify your MX P
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> The solution appears in the “**Subscription**” box on the right, the legacy solution *does not* have a server reference.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>The new solution has a \`Server **model**\` in the \`**Summary**\` box on the left.|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> The solution appears in the “**Subscription**” box on the right, the legacy solution *does not* have a server reference.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>The new solution has a **Server model** in the **Summary** box on the left.|
 
 ## Go further
 

@@ -41,28 +41,28 @@ Die E-Mail-Accounts Ihres OVHcloud Angebots sind mit dem zugehörigen Passwort v
 > [!tabs]
 > **MXplan E-Mails (historische Version)**
 >>
->> Wenn Sie den Typ des MXplan Angebots nicht kennen, lesen Sie bitte unseren Abschnitt ><br>
+>> Wenn Sie den Typ des MXplan Angebots nicht kennen, lesen Sie unseren Abschnitt [Name Ihres MXplan Angebots](#whichmxplan).<br>
 >> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden MX Plan Dienstes aus. Gehen Sie auf den Tab `E-Mails`{.action}. Im angezeigten Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
->> Klicken Sie auf <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>den Button und `dann auf Passwort {.action}` ändern.<br><br>
->>![{.thumbnail}](images/email-password-mxplan-legacy01.png) E-Mail<br>
+>> Klicken Sie auf <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> den Button und `dann auf Passwort`{.action} ändern.<br><br>
+>>![E-Mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **MXplan E-Mails (neue Version)**
 >>
->> Wenn Sie den Typ des MXplan Angebots nicht kennen, lesen Sie bitte unseren Abschnitt ><br>
+>> Wenn Sie den Typ des MXplan Angebots nicht kennen, lesen Sie unseren Abschnitt [Name Ihres MXplan Angebots](#whichmxplan).<br>
 >> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden MX Plan Dienstes aus. Gehen Sie auf den Tab `E-Mails`{.action}. Im angezeigten Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
->> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>und dann auf `Ändern`{.action}.<br><br>
->>![{.thumbnail}](images/email-password-mxplan-new01.png) E-Mail<br>
+>> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>>![E-Mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **E-Mail Pro**
 >>
 >> Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie die betreffende Plattform aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Im angezeigten Fenster werden die bestehenden E-Mail-Accounts angezeigt.<br>
->> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>und dann auf `Ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Klicken Sie auf `Microsoft`{.action} / `Exchange`{.action} und wählen Sie die betreffende Plattform aus. Gehen Sie auf den Tab `E-Mail Accounts`{.action}. Im angezeigten Fenster werden die bestehenden E-Mail-Accounts angezeigt.<br>
->> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>und dann auf `Ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 

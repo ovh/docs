@@ -19,16 +19,16 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 
 ## Wymagania początkowe
 
-- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/fr/web-hosting/), zawartego w [hostingu Start10M bezpłatnie](https://www.ovhcloud.com/fr/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/))
+- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [hostingu Start10M bezpłatnie](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/))
 - W zależności od metody, której używasz: zalogować się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action} lub logować się do konta e-mail za pośrednictwem [interfejsu webmail](https://www.ovhcloud.com/pl/mail/).
 
 > [!primary]
 >
 > Po zmianie hasła do Twojego konta e-mail wprowadź tę zmianę na wszystkich urządzeniach, na których skonfigurowałeś konto. Zapoznaj się z naszymi przewodnikami dotyczącymi konfiguracji Twojego programu pocztowego na stronie głównej Twojej usługi e-mail:
 >
-> - [MXplan](https://docs.ovh.com/fr/emails/)
-> - [E-mail Pro](https://docs.ovh.com/fr/emails-pro/)
-> - [Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/)
+> - [MXplan](https://docs.ovh.com/pl/emails/)
+> - [E-mail Pro](https://docs.ovh.com/pl/emails-pro/)
+> - [Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/)
 >
 
 ## W praktyce
@@ -41,16 +41,16 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 > [!tabs]
 > **E-maile MXplan (wersja historyczna)**
 >>
->> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem ><br>
+>> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem [Sprawdź ofertę MXplan](#whichmxplan).<br>
 >> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `E-maile`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. <br>
 >> Kliknij przycisk, <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień hasło`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **E-maile MXplan (nowa wersja)**
 >>
->> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem ><br>
+>> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem [Sprawdź ofertę MXplan](#whichmxplan).<br>
 >> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `E-maile`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. <br>
->> Kliknij przycisk, po czym <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>kliknij `Zmień`{.action}.<br><br>
+>> Kliknij przycisk, po czym <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> kliknij `Zmień`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Email Pro**
@@ -81,7 +81,7 @@ Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-m
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Przejdź do strony "[Webmail](https://www.ovhcloud.com/fr/mail/)". Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
+Przejdź do strony "[Webmail](https://www.ovhcloud.com/pl/mail/)". Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -112,12 +112,12 @@ W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej ofe
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MXplan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/)
+[Pierwsze kroki z usługą MXplan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
 
-[Pierwsze kroki z usługą E-mail Pro](https://docs.ovh.com/fr/emails-pro/premiere-configuration/)
+[Pierwsze kroki z usługą E-mail Pro](https://docs.ovh.com/pl/emails-pro/pierwsza-konfiguracja-email-pro/)
 
-[Pierwsze kroki z usługą Hosted Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/premiere-configuration-exchange/)
+[Pierwsze kroki z usługą Hosted Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_pierwsza_konfiguracja_uslugi/)
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/fr/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
