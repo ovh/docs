@@ -6,11 +6,12 @@ section:
 order: 
 ---
 
-**Dernière mise à jour le 15/12/2022**
+**Dernière mise à jour le 12/01/2023**
 
 ## Objectif
 
-Ce guide a pour objectif de vous permettre d'installer les différents outils nécessaires au déploiement d'application web et de framework sur votre hébergement et de  
+Ce guide a pour objectif de vous permettre d'installer les différents outils nécessaires au déploiement d'application web et de framework sur votre hébergement.
+Vous trouverez égalements des conseils en terme de pratique vous permettant de gagner du temps sur des tâches répétitives.
 
 ## Prérequis
 
@@ -143,6 +144,26 @@ export LANG
 ```
 
 Vous devez vous déconnecter puis revenir sur votre session pour que les modifications soient prises en compte.
+
+### Clé SSH
+
+#### Charger sa clé SSH en mémoire
+
+Lors de l'utilisation de votre clé SSH, votre passphrase vous est systématiquement demandée. Pour éviter de la saisie à chaque fois, vous pouvez la charger en mémoire.
+
+Dans votre terminal, saisissez la commande&nbsp;:
+
+```ssh
+eval $(ssh-agent -s)
+```
+
+Puis&nbsp;:
+
+```ssh
+ssh-add
+```
+
+Vous serez alors amené à saisir la passphrase associée à votre clé SSH. Elle ne sera plus demandée par la suite tant que le terminal que vous utilisez n'est pas fermé.
 
 ## Aller plus loin
 
