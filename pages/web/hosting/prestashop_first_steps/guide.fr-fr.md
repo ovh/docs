@@ -104,6 +104,10 @@ Enfin, vérifiez et confirmez les informations relatives à votre installation&n
 - le `login` administrateur
 - un lien pour récupérer votre mot de passe administrateur.
 
+Votre site e-commerce est en ligne avec des données par défaut&nbsp;:
+
+![Page d'accueil Prestashop](images/prestashop_first_steps%5B11%5D.png){.thumbnail}
+
 ## Aller plus loin
 
 - le site officiel de [Prestashop](https://www.prestashop.com/)
