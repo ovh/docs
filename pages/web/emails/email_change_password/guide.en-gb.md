@@ -85,7 +85,7 @@ Go to the [Webmail](https://www.ovhcloud.com/en-gb/mail/) page. Enter your full 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
-Click the button <i class="icons-gear-concept icons-masterbrand-blue"></i>at the top, then click `Options`{.action}.
+Click the <i class="icons-gear-concept icons-masterbrand-blue"></i> button at the top, then click `Options`{.action}.
 
 ![email](images/mxplan-password-new-step3.png){.thumbnail}
 
