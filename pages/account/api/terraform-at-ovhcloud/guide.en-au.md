@@ -6,7 +6,7 @@ section: Terraform
 order: 01
 ---
 
-**Last updated 27th December 2022**
+**Last updated 12th January 2023**
 
 ## Introduction
 
@@ -20,7 +20,7 @@ At the heart of the Terraform product is the concept of [provider](https://devel
 
 Based on your automation needs at OVHcloud, you have to pick one or more of the following Terraform providers:
 
-- [OVH provider](https://registry.terraform.io/providers/ovh/ovh/latest) that interacts with [OVHcloud API portal](https://api.ovh.com/). You can refer to [this guide](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) to learn more on how to use the API portal.
+- [OVH provider](https://registry.terraform.io/providers/ovh/ovh/latest) that interacts with [OVHcloud API portal](https://api.ovh.com/). You can refer to [this guide](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) to learn more on how to use the API portal. Furthermore, the OVH provider evolves as fast as the OVHcloud offering, be sure to follow the [releases](https://github.com/ovh/terraform-provider-ovh/releases).
 - [OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/lastest) : the open standard cloud computing platform that OVHcloud is using to power its Public Cloud service. For more information, check [this page](https://www.ovhcloud.com/en-au/public-cloud/openstack/).
 - [Hashicorp AWS provider](https://registry.terraform.io/providers/hashicorp/aws/latest/) to automate the operations of the S3 Object Storage.
 - [Hashicorp Kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) : once you have provisionned a Kubernetes cluster with OVH provider, you can manage your Kubernetes configuration with this provider.
@@ -35,7 +35,8 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 > [!primary]
 >
 > - The following categories are based on the Control Panel 'New version (Beta)' from December 2022.
-> - If no resource is not available but a Terraform [data source](https://developer.hashicorp.com/terraform/language/data-sources) is, this is mentioned in the table with "[data source]".
+> - If no resource is available but a Terraform [data source](https://developer.hashicorp.com/terraform/language/data-sources) is, this is mentioned in the table with "[data source]".
+> - When multiple resources are available for one GUI concept, only the main resource is provided in this list.
  
 ### Bare Metal Cloud
 
@@ -43,7 +44,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | --- | --- | --- |
 | Dedicated Server | ovh | [data source] [ovh_dedicated_server](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dedicated_server) |
 | Virtual Private Server | ovh | [ovh_vps](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/vps) |
-| HA-NAS | ovh | soon to come ovh_dedicated_nasha_partition |
+| HA-NAS | ovh |-[data source] [ovh_dedicated_nasha](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dedicated_nasha)<br/>- [ovh_dedicated_nasha_partition](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dedicated_nasha_partition)|
 | Enterprise File Storage | ovh | not available |
 | Cloud Disk array | ovh | [data source] [ovh_dedicated_ceph](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dedicated_ceph)|
 | Veam Cloud Connect | not available ||
@@ -100,9 +101,9 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
-| AI Notebooks | not available||
-| AI Training | not available||
-| AI Deploy | not available||
+| AI Notebooks | not available but [ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/overview-cli/) can help for automation||
+| AI Training | not available but [ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/overview-cli/) can help for automation||
+| AI Deploy | not available but [ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/overview-cli/) can help for automation||
 
 #### Data & Analytics
 
