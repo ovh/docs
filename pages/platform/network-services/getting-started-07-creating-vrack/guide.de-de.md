@@ -10,7 +10,7 @@ order: 07
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 02.11.2022**
+**Letzte Aktualisierung am 11.01.2023**
 
 ## Ziel
 
@@ -155,27 +155,49 @@ Dies ist nützlich, um Ihr vRack in mehrere virtuelle Netzwerke aufzuteilen.
 
 Sobald ein vRack erstellt ist, gehen Sie zum Abschnitt `Private Network`{.action}. 
 
-![VLAN Erstellung](images/vrack2021-03.png){.thumbnail}
+![VLAN Erstellung](images/vrack2022-03.png){.thumbnail}
 
 Klicken Sie nun auf `Privates Netzwerk erstellen`{.action}. Auf der nächsten Seite können Sie mehrere Einstellungen anpassen.
 
-![add private network](images/vrack5.png){.thumbnail}
+Wählen Sie in Schritt 1 die Region aus, in der Sie das private Netzwerk einrichten möchten.
+
+![select region](images/vrack5-2022.png){.thumbnail}
+
+Im nächsten Schritt erhalten Sie eine Reihe von Optionen:
+
+![create network](images/vrack6-2022.png) {.thumbnail}
+
+**Erstellen Sie ein Gateway und verbinden Sie sich mit dem privaten Netzwerk**
+
+Wählen Sie diese Option aus, wenn Sie beabsichtigen, Instanzen ausschließlich mit einem privaten Netzwerk zu erstellen. Weitere Informationen finden Sie in den folgenden Hilfen: [Creating a private network with Gateway (EN)](https://docs.ovh.com/de/publiccloud/network-services/creating-private-network-with-gateway/) und [Erste Public Cloud Instanz erstellen und auf dieser einloggen](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen).
+
+> [!warning]
+> Wenn die Option grau ist, bedeutet dies, dass sie mit der ausgewählten Region unvereinbar ist. Weitere Informationen finden Sie auf unserer Seite zur [Verfügbarkeit der Public Cloud Produkte für jede Region](https://www.ovhcloud.com/de/public-cloud/regions-availability/).
+>
+
+**Netzwerk-Optionen von Layer 2:**
 
 Setzen Sie einen Haken bei `VLAN-ID festlegen` und wählen Sie eine Nummer von 2 bis 4000 aus.
 
-Wenn Sie das Feld `VLAN-ID festlegen` nicht anhaken, wird VLAN 0 verwendet.
+Wenn Sie dieses Feld nicht ankreuzen, erhält das System eine zufällige VLAN-Nummer
+
+Wenn Sie die Nummer des VLAN auf 0 festlegen möchten, müssen Sie die [OVHcloud API](#vlansetup) verwenden.
+
+Bitte beachten Sie, dass wenn Sie ein privates Netzwerk mit einer VLAN-ID 0 haben, diese Option standardmäßig angekreuzt und grau ist.
 
 Wenn in diesem VLAN mit OVHcloud Dedicated Servern kommuniziert werden soll, lesen Sie folgende Anleitung: "[Mehrere VLANs im vRack erstellen](https://docs.ovh.com/de/dedicated/vrack-vlan-erstellen/)."
 
+**Verteilungsoptionen für DHCP-Adressen**
+
 Der standardmäßige DHCP-Bereich ist 10.0.0.0/16. Um diesen IP-Bereich zu ändern, müssen Sie die OVHcloud APIv6 verwenden.
 
-Bestätigen Sie die gewünschten Regionen, geben Sie einen Namen für Ihr privates Netzwerk ein und klicken Sie dann auf `Erstellen`{.action}, um dessen Erstellung zu starten. 
+Wenn Sie Ihre Wahl getroffen haben, klicken Sie auf `Erstellen`{.action}, um den Prozess zu starten.
 
 > [!primary]
 > Die Erstellung des privaten Netzwerks kann einige Minuten in Anspruch nehmen.
 >
 
-#### Erstellen eines VLAN mit der OVHcloud APIv6
+#### Erstellen eines VLAN mit der OVHcloud APIv6 <a name="vlansetup"></a>
 
 Um ein VLAN mit der OVHCloud APIv6 zu erstellen, folgen Sie [diesem Abschnitt](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) der entsprechenden Anleitung.
 
@@ -190,9 +212,9 @@ Es können zwei Situationen auftreten:
 
 ##### **Über das OVHcloud Kundencenter**
 
-Folgen Sie der Anleitung zum [Erstellen einer Public Cloud-Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#create-instance). Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
+Folgen Sie der Anleitung zum [Erstellen einer Public Cloud-Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#create-instance). Bei der Erstellung einer Instanz können Sie in Schritt 5 einen Netzwerkmodus und anschließend ein privates Netzwerk auswählen, in das Ihre Instanz integriert werden kann.
 
-![attach new instance](images/vrack6.png){.thumbnail}
+![attach new instance](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > Bei der Erstellung einer neuen Instanz können Sie Ihre Instanz nur mit einem vRack über das OVHcloud Kundencenter verbinden.

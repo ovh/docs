@@ -10,7 +10,7 @@ order: 07
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 02/11/2022**
+**Ultimo aggiornamento: 11/01/2023**
 
 ## Obiettivo
 
@@ -158,17 +158,39 @@ Grazie alle APIv6 OVHcloud è possibile personalizzare l'insieme dei parametri: 
 
 Una volta creata la vRack, clicca di nuovo su `Private Network`{.action} nel menu a sinistra. 
 
-![VLAN creation](images/vrack2021-03.png){.thumbnail}
+![VLAN creation](images/vrack2022-03.png){.thumbnail}
 
 Clicca su `Crea una rete privata`{.action}. La pagina successiva ti permette di personalizzare diversi parametri.
 
-![add private network](images/vrack5.png){.thumbnail}
+Al punto 1, seleziona la Region in cui vuoi creare la rete privata.
+
+![select region](images/vrack5-2022.png){.thumbnail}
+
+Allo step successivo, vengono presentate diverse opzioni:
+
+![create network](images/vrack6-2022.png){.thumbnail}
+
+**Crea un servizio Gateway e connettiti alla rete privata**
+
+Seleziona questa opzione se intendi creare istanze esclusivamente con rete privata. Per maggiori informazioni, consulta queste guide: [Creating a private network with Gateway (EN)](https://docs.ovh.com/it/publiccloud/network-services/creating-private-network-with-gateway/) e [Creare e connettersi a un’istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza).
+
+> [!warning]
+> Se l'opzione è grigia, significa che è incompatibile con la Region selezionata. Per maggiori informazioni, consulta la nostra pagina sulla [disponibilità dei prodotti Public Cloud per ogni Region](https://www.ovhcloud.com/fr-ca/public-cloud/regions-availability/).
+>
+
+**Opzioni di rete del layer 2**
 
 Selezionando la casella `Definisci l’ID della VLAN`, dovrai scegliere un numero di VLAN che varia da 2 a 4.000.
 
-Se non selezioni la casella `Definisci l’ID della VLAN`, sarai di default nella VLAN 0.
+Se non selezioni questa casella, il sistema assegnerà un numero di VLAN casuale.
+
+Per definire il numero della VLAN a 0, è necessario passare attraverso l'[API OVHcloud](#vlansetup).
+
+Ti ricordiamo che se hai una rete privata esistente con una VLAN ID 0, l'opzione verrà selezionata di default.
 
 Se hai bisogno di far comunicare i server dedicati OVHcloud con VLAN tag, consulta questa guida: [Creare due o più VLAN nella vRack](https://docs.ovh.com/it/dedicated/creare-vlan-vrack/).
+
+**Opzioni DHCP di distribuzione degli indirizzi**
 
 La gamma DHCP predefinita è 10.0.0.0/16. Per modificare questa classe IP, è necessario passare attraverso le APIv6 OVHcloud.
 
@@ -178,7 +200,7 @@ Conferma le Region richieste, inserisci un nome per la tua rete privata e clicca
 > La creazione della rete privata potrebbe richiedere alcuni minuti.
 >
 
-#### Crea una VLAN dalle APIv6 OVHcloud
+#### Crea una VLAN dalle APIv6 OVHcloud <a name="vlansetup"></a>
 
 Per creare una VLAN dalle APIv6 OVHcloud, clicca [qui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN), per consultare la guida specifica a questo metodo.
 
@@ -193,9 +215,9 @@ Possono presentarsi due situazioni:
 
 ##### **Dallo Spazio Cliente OVHcloud**
 
-Consulta la guida [Creare un'istanza dallo Spazio Cliente](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#create-instance). Durante la creazione di un'istanza, potrai specificare, nello Step 4, una rete privata nella quale integrare la tua istanza. Nel menu a tendina presentato seleziona la tua vRack creata precedentemente.
+Consulta la guida [Creare un'istanza dallo Spazio Cliente](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#create-instance). Durante la creazione di un'istanza, potrai specificare, nello step 5 puoi scegliere una modalità di rete e una rete privata nella quale integrare la tua istanza.
 
-![attach new instance](images/vrack6.png){.thumbnail}
+![attach new instance](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > Quando crei una nuova istanza, accedi alla tua istanza solo con una vRack dallo Spazio Cliente OVHcloud.

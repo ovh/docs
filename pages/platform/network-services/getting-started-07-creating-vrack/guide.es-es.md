@@ -10,7 +10,7 @@ order: 07
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 02/11/2022**
+**Última actualización: 11/01/2023**
 
 ## Objetivo
 
@@ -158,27 +158,47 @@ Con la APIv6 de OVHcloud podrá personalizar todos los parámetros: rango IP (10
 
 Una vez creado el vRack, vuelva a hacer clic en `Private Network`{.action} en el menú lateral izquierdo. 
 
-![Creación de la VLAN](images/vrack2021-03.png){.thumbnail}
+![Creación de la VLAN](images/vrack2022-03.png){.thumbnail}
 
 A continuación, haga clic en `Crear una red privada`{.action}. La página siguiente le permitirá personalizar varios parámetros.
 
-![add private network](images/vrack5.png){.thumbnail}
+En el paso 1, seleccione la región en la que quiere crear la red privada.
+
+![select region](images/vrack5-2022.png){.thumbnail}
+
+En la siguiente etapa podrá elegir entre una serie de opciones:
+
+![create network](images/vrack6-2022.png){.thumbnail}
+
+**Cree un servicio Gateway y conéctese a la red privada**
+
+Seleccione esta opción si quiere crear instancias únicamente con una red privada. Para más información, consulte las siguientes guías: [Creating a private network with Gateway (EN)](https://docs.ovh.com/es/publiccloud/network-services/creating-private-network-with-gateway/) y [Crear y conectarse a una instancia de Public Cloud](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/#3-crear-una-instancia).
+
+> [!warning]
+> Si la opción aparece atenuada, significa que es incompatible con la región seleccionada. Para más información, consulte nuestra página sobre la [disponibilidad de productos de Public Cloud para cada región](https://www.ovhcloud.com/es-es/public-cloud/regions-availability/).
+>
+
+**Opciones de red de la capa 2 (L2)**
 
 Si marca la casilla `Indicar un ID de VLAN`, deberá elegir un número de VLAN de 2 a 4000.
 
-Si no marca la casilla `Indicar un ID de VLAN`, se mostrará por defecto en la VLAN 0.
+Si desea definir el número de la VLAN a 0, debe pasar por la[API de OVHcloud](#vlansetup).
+
+Tenga en cuenta que si tiene una red privada existente con un VLAN ID 0, esta opción estará marcada por defecto.
 
 Si desea que los servidores dedicados de OVHcloud se comuniquen con una VLAN « etiquetada », consulte la siguiente guía: [Crear varias VLAN en el vRack](https://docs.ovh.com/es/dedicated/crear-vlan-vrack/).
 
+**Opciones de distribución de direcciones DHCP**
+
 El rango DHCP predeterminado es 10.0.0.0/16. Para modificar el rango de IP, es necesario utilizar las APIv6 de OVHcloud.
 
-Acepte las distintas regiones, introduzca un nombre para la red privada y haga clic en `Crear`{.action} para empezar a crearla. 
+Una vez hecha su elección, haga clic en `Crear`{.acción} para iniciar el proceso.
 
 > [!primary]
 > La creación de la red privada puede tardar varios minutos.
 >
 
-#### Crear una VLAN desde las APIv6 de OVHcloud
+#### Crear una VLAN desde las APIv6 de OVHcloud <a name="vlansetup"></a>
 
 Para crear una VLAN desde las APIv6 de OVHcloud, haga clic [aquí](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN), para consultar la guía específica.
 
@@ -193,9 +213,9 @@ Puede darse dos situaciones:
 
 ##### **Desde el área de cliente de OVHcloud**
 
-Consulte la guía [Crear una instancia desde el área de cliente](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/#create-instance). Al crear una instancia, podrá especificar, en el paso 4, una red privada en la que integrar su instancia. Seleccione el vRack anteriormente creado en el menú desplegable que aparece.
+Consulte la guía [Crear una instancia desde el área de cliente](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/#create-instance). Al crear una instancia, podrá especificar, en el paso 5, un modo de red y, a continuación, una red privada en la que integrar su instancia.
 
-![attach new instance](images/vrack6.png){.thumbnail}
+![attach new instance](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > Al crear una nueva instancia, solo podrá conectar su instancia a un único vRack desde el área de cliente de OVHcloud.
