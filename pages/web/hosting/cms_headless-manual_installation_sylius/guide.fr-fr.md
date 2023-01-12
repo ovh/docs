@@ -6,7 +6,7 @@ section: CMS
 order: 08
 ---
 
-**Dernière mise à jour le 24/10/2022**
+**Dernière mise à jour le 12/01/2023**
 
 ## Objectif
 
@@ -31,7 +31,7 @@ Il faudra, de plus, installer des applicatifs nécessaires à l'installation de 
 Sylius repose sur le _framework_ Symfony. Lors de l'installation, plusieurs fichiers et répertoires vont être créés. Le point d'entrée de votre site ne se situera pas à la racince de votre installation, mais dans le répertoire `/public`.
 Vous devez donc modifier le pointage de votre nom de domaine vers ce répertoire comme dans l'exemple suivante :
 
-![Redirection vers /public](images/cms_headless-manual_installation_sylius%5B1%5D.png)
+![Redirection vers /public](images/cms_headless-manual_installation_sylius_1.png)
 
 #### Base de données
 
@@ -49,7 +49,6 @@ Sous Windows, nous devons installer un terminal ou un émulateur de terminal :
 - Git Bash, si vous avez installé [Git](https://git-scm.com/) sur votre machine
 - [ConEmu](https://conemu.github.io/)
 - [Cmder](https://cmder.app/) (qui inclut ConEmu)
-- _etc._
 
 #### Se connecter en SSH
 
@@ -66,12 +65,14 @@ ssh login@ssh.clusterxxx.hosting.ovh.net
 ```
 
 >[!warning]
+>
 >Vous êtes alors invité à saisir votre mot de passe.
 >Attention : la saisie du mot de passe n'a aucun effet à l'écran pour des raisons de sécurité.
+>
 
 Une fois connecté à votre serveur, vous aurez une fenêtre similaire à celle-ci :
 
-![Accès SSH](images/cms_headless-manual_installation_sylius%5B2%5D.png)
+![Accès SSH](images/cms_headless-manual_installation_sylius_2.png)
 
 ### Installations
 
@@ -159,7 +160,7 @@ php -d memory_limit=-1 composer.phar create-project sylius/sylius-standard syliu
 
 L'ensemble des fichiers sera installé dans le répertoire `sylius` :
 
-![Répertoire Sylius](images/cms_headless-manual_installation_sylius%5B3%5D.png)
+![Répertoire Sylius](images/cms_headless-manual_installation_sylius_3.png)
 
 #### Rediriger le visiteur en HTTPS
 
@@ -176,7 +177,7 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://monsite.ovh/$1 [R,L]
 ```
 
-![Redirection HTTP vers HTTPS](images/cms_headless-manual_installation_sylius%5B7%5D.png)
+![Redirection HTTP vers HTTPS](images/cms_headless-manual_installation_sylius_7.png)
 
 #### Configurer Sylius - Partie _back end_
 
@@ -196,7 +197,7 @@ Avant de lancer Sylius pour la première fois, il faut configurer la connexion �
 
 Cette configuration se fait dans le fichier `.env` situé à la racine de votre projet Sylius :
 
-![Localisation fichier .env](images/cms_headless-manual_installation_sylius%5B4%5D.png)
+![Localisation fichier .env](images/cms_headless-manual_installation_sylius_4.png)
 
 Pour éditer ce fichier, nous allons utiliser nano, un éditeur disponible nativement sur votre serveur, en lançant la commande :
 
@@ -206,7 +207,7 @@ nano .env
 
 Votre éditeur s'ouvre et vous pouvez découvrir le fichier de configuration installé par défaut :
 
-![Édition fichier .env dans nano](images/cms_headless-manual_installation_sylius%5B5%5D.png)
+![Édition fichier .env dans nano](images/cms_headless-manual_installation_sylius_5.png)
 
 La ligne qui nous intéresse est la suivante :
 
@@ -236,7 +237,7 @@ php bin/console sylius:install
 
 Vous aurez alors cet affichage :
 
-![Installation Sylius, étape 1](images/cms_headless-manual_installation_sylius%5B6%5D.png)
+![Installation Sylius, étape 1](images/cms_headless-manual_installation_sylius_6.png)
 
 Répondez « N » à la première question pour créer ou écraser la base de données, vous l'avez déjà créée sur votre Manager :
 
@@ -335,15 +336,15 @@ Vous pouvez vérifiez le bon fonctionnement de l'API en vous rendant sur l'URL d
 
 Rendez-vous sur la page d'accueil de l'API :
 
-![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B8%5D.png)
+![Page d'accueil API](images/cms_headless-manual_installation_sylius_8.png)
 
 Cliquez ensuite sur le premier lien, dans _AdminUser Token_, `/api/v2/admin/authentication-token` :
 
-![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B9%5D.png)
+![Page d'accueil API](images/cms_headless-manual_installation_sylius_9.png)
 
 Cliquez sur le bouton Try it out et remplacez alors les paramètres `email` et `password` par ceux que vous avez défini lors de l'installation, puis sur _Execute_ :
 
-![Page d'accueil API](images/cms_headless-manual_installation_sylius%5B10%5D.png)
+![Page d'accueil API](images/cms_headless-manual_installation_sylius_10.png)
 
 Si vos identifiants sont corrects, vous aurez alors une code HTTP 200 en retour et le token correspondant à votre compte.J
 
