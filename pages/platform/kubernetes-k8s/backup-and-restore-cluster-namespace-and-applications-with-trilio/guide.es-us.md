@@ -421,7 +421,7 @@ OVHcloud provides two types of S3 compatible Object Storage solutions:
 
 Create an S3 user in the tab next to Object Storage Container. Now, from `Users and Roles`{.action}, assign the Administrator priviledges to the S3 user.
 
-Next, create an Access Key and Secret Key to access the S3 Object Storage Container using the [Getting Started with the Swift S3 API](https://docs.ovh.com/us/es/storage/getting_started_with_the_swift_S3_API/) tutorial.
+Next, create an Access Key and Secret Key to access the S3 Object Storage Container using the [Getting Started with the Swift S3 API](https://docs.ovh.com/us/es/storage/object-storage/pcs/getting-started-with-the-swift-s3-api/) tutorial.
  
 > [!primary]
 >

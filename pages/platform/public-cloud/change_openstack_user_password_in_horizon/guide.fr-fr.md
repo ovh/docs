@@ -11,7 +11,7 @@ order: 06
 
 ## Objectif
 
-Dans le guide [créer un accès à Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/){.external}, il vous a été expliqué comment créer et supprimer un utilisateur OpenStack et générer un mot de passe d’accès.
+Dans le guide [créer un accès à Horizon](https://docs.ovh.com/fr/public-cloud/horizon/){.external}, il vous a été expliqué comment créer et supprimer un utilisateur OpenStack et générer un mot de passe d’accès.
 
 À l’aide du panneau Horizon, il est possible de définir un mot de passe pour chaque utilisateur. Attention, le changement de mot de passe d’un compte utilisateur entraîne l’annulation des identifiants actifs au moment du changement.
 

@@ -22,7 +22,7 @@ Wenn sich Ihre Infrastruktur weiterentwickelt, müssen Sie unter Umständen den 
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) mit der Flex-Option.
-- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
+- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/).
 
 ## In der praktischen Anwendung
 

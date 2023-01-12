@@ -1,7 +1,7 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-slug: zwiekszenie_limitow_public_cloud
+slug: increase-public-cloud-quota
 legacy_guide_number: g1904
 section: 'Zarządzanie projektami'
 order: 6

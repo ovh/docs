@@ -21,7 +21,7 @@ order: 3
 ## Prérequis
 
 - Avoir créé une [instance Public Cloud OVHcloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/) au forfait **horaire**.
-- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l’interface [Horizon.](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/)
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l’interface [Horizon.](https://docs.ovh.com/fr/public-cloud/horizon/)
 - Avoir des connaissances de l’[API Openstack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) et des [variables Openstack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/)
 
 ## En pratique
@@ -65,7 +65,7 @@ Le snapshot sera ensuite disponible dans la rubrique `Instance Backup`{.action}.
 
 #### Depuis l’interface Horizon
 
-Pour utiliser cette méthode, il vous faut [créer un utilisateur OpenStack](../presentation-dhorizon/) et vous [connecter à l’interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Pour utiliser cette méthode, il vous faut [créer un utilisateur OpenStack](../horizon/) et vous [connecter à l’interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Si vous avez déployé des instances dans différentes régions, assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche dans l’interface Horizon.
 

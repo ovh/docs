@@ -22,7 +22,7 @@ Dzięki stale zmieniającej się infrastrukturze możesz zwiększyć przestrzeń
 ## Wymagania
 
 - Posiadanie [instancji Public Cloud](../public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) typu *flex*.
-- [Utworzenie dostępu do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
+- [Utworzenie dostępu do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
 
 ## W praktyce
 

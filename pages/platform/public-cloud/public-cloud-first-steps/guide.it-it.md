@@ -352,7 +352,7 @@ Se visualizzi un messaggio relativo al certificato, clicca su `Sì`{.action}. Qu
 
 [Effettuare lo Snapshot di un’istanza](../effettuare-snapshot-di-un-istanza/)
 
-[Aumenta la quota del tuo Public Cloud](../aumenta_la_quota_del_tuo_public_cloud/)
+[Aumenta la quota del tuo Public Cloud](../increase-public-cloud-quota/)
 
 [Passare dalla fatturazione oraria a quella mensile](../cambiare-tipo-fatturazione-public-cloud/)
 

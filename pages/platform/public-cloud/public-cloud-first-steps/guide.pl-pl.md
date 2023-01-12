@@ -352,7 +352,7 @@ Jeśli pojawi się komunikat dotyczący certyfikatu, kliknij przycisk `Tak`{.act
 
 [Tworzenie kopii zapasowej instancji](https://docs.ovh.com/pl/public-cloud/kopia_zapasowa_instancji/)
 
-[Zwiększenie limitów Public Cloud](https://docs.ovh.com/pl/public-cloud/zwiekszenie_limitow_public_cloud/)
+[Zwiększenie limitów Public Cloud](https://docs.ovh.com/pl/public-cloud/increase-public-cloud-quota/)
 
 [Zmiana typu rozliczenia z godzinowego na miesięczne](https://docs.ovh.com/pl/public-cloud/zmiana-typu-rozliczenia/)
 

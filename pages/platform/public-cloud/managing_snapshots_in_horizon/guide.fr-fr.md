@@ -17,7 +17,7 @@ Lors de votre activité, vous serez probablement amené à effectuer une sauvega
 ## Prérequis
 
 - Avoir [créé une instance Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) dans votre compte OVHcloud
-- [Accéder à l'interface Horizon](../creer-un-acces-a-horizon/)
+- [Accéder à l'interface Horizon](../horizon/)
 
 ## En pratique
 

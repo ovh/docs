@@ -17,7 +17,7 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 
 ## Requirements
 
-- [Access to the Horizon interface](https://docs.ovh.com/ca/en/public-cloud/configure_user_access_to_horizon/)
+- [Access to the Horizon interface](https://docs.ovh.com/ca/en/public-cloud/horizon/)
 - Access to the Images menu in the OpenStack Horizon interface 
 
 

@@ -20,7 +20,7 @@ Das mit OpenStack ausgelieferte Horizon Interface wurde von OVHcloud angepasst, 
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) in Ihrem Kunden-Account.
+- Sie haben ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/create_a_public_cloud_project/) in Ihrem Kunden-Account.
 - Sie haben einen [OpenStack Benutzer](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) in Ihrem Projekt erstellt.
 
 ## In der praktischen Anwendung

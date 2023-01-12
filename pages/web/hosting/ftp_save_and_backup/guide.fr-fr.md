@@ -6,7 +6,7 @@ section: 'FTP et SSH'
 order: 06
 ---
 
-**Dernière mise à jour le 09/12/2022**
+**Dernière mise à jour le 12/01/2023**
 
 ## Objectif
 
@@ -44,6 +44,22 @@ Définissez également la méthode de restauration que vous allez utiliser :
 |---|---|
 |Restauration depuis l'espace client OVHcloud|Restaure intégralement le contenu de l'espace de stockage. Le contenu actuel sera entièrement remplacé par celui de la sauvegarde sélectionnée.|
 |Restauration depuis un logiciel ou une interface|Permet de vous connecter en lecture seule à une sauvegarde de l'espace de stockage. Bien qu'un peu plus technique, cette méthode vous permet de récupérer un ou plusieurs fichiers à une date antérieure, sans avoir à écraser intégralement le contenu de l'espace de stockage.|
+
+> [!warning]
+>
+> Concernant la méthode de **restauration depuis l'espace client OVHcloud**, vérifiez qu'au moins **la moitié de l'espace de stockage FTP total** compris avec votre offre d'hébergement est encore disponible.
+> Par exemple, si vous disposez d'une offre d'hébergement **Performance**, 250 Go doivent encore être disponibles sur les 500 Go mis à disposition.
+>
+> En effet, nos robots installent la sauvegarde sur votre hébergement avant de supprimer le contenu FTP qui sera remplacé par la restauration.
+>
+> Pour vérifier le quota utilisé sur votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l’hébergement concerné. 
+>
+> Le quota utilisé apparaît sur la page qui s'affiche :
+>
+> ![ftp quota](images/check-ftp-quota.png){.thumbnail}
+>
+> Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement, récupérez en local certains éléments volumineux de votre site web (pour cela, vous pouvez utiliser [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)). Supprimez-les ensuite de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez alors lancer votre restauration depuis l'espace client OVHcloud.
+>
 
 Une fois prêt, poursuivez la lecture de cette documentation en fonction de la méthode de restauration choisie.
 
@@ -164,5 +180,9 @@ Une fois connecté, il ne vous reste plus qu'à restaurer le ou les fichiers sou
 [Utiliser le logiciel Cyberduck avec son hébergement web](https://docs.ovh.com/fr/hosting/utilisation-cyberduck-mac/){.external}.
 
 [Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external}.
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

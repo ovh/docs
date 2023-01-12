@@ -51,7 +51,7 @@ This means that, for now, the only way to remove the Openstack Keystone Trust cr
 We therefore recommend you to use a dedicated cloud project to minimize impacts if you decided to stop using the Data Processing service in the future.
 To learn more about cloud projects, please visit these pages: 
 
-- [How to create a cloud project in OVHcloud account](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/)
+- [How to create a cloud project in OVHcloud account](../../public-cloud/create_a_public_cloud_project/)
 - [How to delete a cloud project in OVHcloud account](../../public-cloud/delete_a_project/)
 
 ## Go further

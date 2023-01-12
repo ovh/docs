@@ -29,7 +29,7 @@ As a result of increased activity, or simply new needs, your instance may not be
 ## Requirements
 
 - An [OVHcloud Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/#create-instance)
-- [Access to the Horizon interface](../configure_user_access_to_horizon/)
+- [Access to the Horizon interface](../horizon/)
 
 ## Instructions
 

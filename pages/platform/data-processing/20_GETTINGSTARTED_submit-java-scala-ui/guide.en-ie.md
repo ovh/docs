@@ -1,7 +1,7 @@
 ---
-title: Submitting a Java/Scala job to Data Processing platform using OVHcloud manager
+title: Submitting a Java/Scala job to Data Processing platform using OVHcloud Control Panel
 slug: submit-javascala
-excerpt: Find out how to create a cluster and run your Apache Spark Java/Scala job with Data Processing platform using OVHcloud Manager
+excerpt: Find out how to create a cluster and run your Apache Spark Java/Scala job with Data Processing platform using the OVHcloud Control Panel
 section: Getting started
 order: 0
 ---
@@ -10,28 +10,28 @@ order: 0
 
 ## Objective
 
-This guide helps you to upload an Apache Spark job in Java or Scala to your OVHcloud Object Storage and run your job with Data Processing using OVHcloud Manager.
+This guide helps you to upload an Apache Spark job in Java or Scala to your OVHcloud Object Storage and run your job with Data Processing using the OVHcloud Control Panel.
 
-If you would like to submit an Apache Spark job in Python language, you can read this document: [How to submit a Python job to Data Processing using OVHcloud Manager](../submit-python/){.external}
+If you would like to submit an Apache Spark job in Python language, you can read this document: [How to submit a Python job to Data Processing using the OVHcloud Control Panel](../submit-python/){.external}
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} to use Data Processing platform.
+In this guide, we are assuming that you're using the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} to use Data Processing platform.
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements
 
-- Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - A [Public Cloud project](../../public-cloud/create_a_public_cloud_project/) in your OVHcloud account
-- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/configure_user_access_to_horizon/){.external} for details.)
+- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/horizon/){.external} for details.)
 - A jar file containing your Java or Scala code to be run in Apache Spark environment
 
 ## Instructions
 
 ### Step 1: Upload your application code to Object Storage
 
-Before running your job in Data Processing platform, you will need to create a container in OVHcloud Object Storage for your job and upload your application jar file into this container. You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
+Before running your job in Data Processing platform, you will need to create a container in OVHcloud Object Storage for your job and upload your application jar file into this container. You can work with your Object Storage using either the OVHcloud Control Panel or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/ie/en/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
+Please see [Creating Storage Containers in the OVHcloud Control Panel](https://docs.ovh.com/ie/en/storage/object-storage/pcs/create-container/#controlpanel) or [Create an object container in Horizon](https://docs.ovh.com/ie/en/storage/object-storage/pcs/create-container/#horizon) for more details.
 
 
 If you don’t currently have an application code and you still would like to try OVHcloud Data Processing, you can download an [Apache Spark package](http://spark.apache.org/downloads.html) and extract it. Inside, you can find a jar file in examples/jars folder to run the SparkPi sample (which will just compute the Pi value).
@@ -41,7 +41,7 @@ Once you have a Storage container and an application to run on OVHcloud Data Pro
 ### Step 2: Submit your Spark job
 To submit your job with your required parameters follow these steps:
 
-- Login to the OVHcloud Manager and select `Public Cloud`{.action}
+- Login to the OVHcloud Control Panel and select `Public Cloud`{.action}
 - Select the relevant project if you have multiple projects in your OVHcloud account
 - Select `Data Processing`{.action} from the left panel
 - Select `Submit a new job`{.action}

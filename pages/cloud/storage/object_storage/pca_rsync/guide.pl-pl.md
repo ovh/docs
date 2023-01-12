@@ -27,7 +27,7 @@ Pliki binarne są dostępne w większości najnowszych dystrybucji systemów ope
 
 ### ID OpenStack
 
-Za pomocą tego [przewodnika](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/) możesz wygenerować identyfikator klienta i hasło OpenStack.
+Za pomocą tego [przewodnika](https://docs.ovh.com/pl/public-cloud/horizon/) możesz wygenerować identyfikator klienta i hasło OpenStack.
 
 ### TenantName
 

@@ -35,7 +35,7 @@ Si utiliza Horizon:
 
 ## Procedimiento
 
-### Creación de un contenedor Object Storage desde el área de cliente de OVHcloud
+### Creación de un contenedor Object Storage desde el área de cliente de OVHcloud <a name="controlpanel"></a>
 
 Conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, haga clic en `Object Storage`{.action} en la columna izquierda, en `Storage`.
 
@@ -80,7 +80,7 @@ Su contenedor está creado:
 
 ![container created](images/create-container-20211005112013807.png)
 
-### Creación de un contenedor Object Storage desde Horizon
+### Creación de un contenedor Object Storage desde Horizon <a name="horizon"></a>
 
 > [!primary]
 >

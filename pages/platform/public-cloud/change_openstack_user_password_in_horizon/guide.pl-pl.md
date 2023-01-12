@@ -10,7 +10,7 @@ section: Zarządzanie w interfejsie Horizon
 
 ## Wprowadzenie
 
-W przewodniku [Dostęp do panelu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/){.external} pokazano, jak stworzyć i usunąć użytkownika OpenStack oraz wygenerować hasło dostępowe.
+W przewodniku [Dostęp do panelu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/){.external} pokazano, jak stworzyć i usunąć użytkownika OpenStack oraz wygenerować hasło dostępowe.
 Za pomocą panelu Horizon można ustawić własne hasło dla danego użytkownika. 
 Zmiana hasła do konta użytkownika powoduje unieważnienie aktywnych tokenów w momencie zmiany.
 

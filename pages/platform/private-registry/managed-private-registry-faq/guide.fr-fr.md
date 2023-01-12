@@ -1,7 +1,7 @@
 ---
 title: 'FAQ Managed Private Registry (Harbor)'
 slug: managed-private-registry-faq
-section: 'Premiers pas'
+section: 'Getting started'
 order: 1
 ---
 

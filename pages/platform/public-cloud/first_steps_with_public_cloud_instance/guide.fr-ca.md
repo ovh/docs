@@ -138,6 +138,6 @@ Consultez notre guide « [Créer une première instance Public Cloud et s'y conn
 
 [Créer une première instance Public Cloud et s’y connecter](../premiers-pas-instance-public-cloud/)
 
-[Présentation d'Horizon](../presentation-dhorizon/)
+[Présentation d'Horizon](../horizon/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

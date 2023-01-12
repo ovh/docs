@@ -35,7 +35,7 @@ Jeśli korzystasz z interfejsu Horizon:
 
 ## W praktyce
 
-### Tworzenie kontenera Object Storage w Panelu klienta OVHcloud
+### Tworzenie kontenera Object Storage w Panelu klienta OVHcloud <a name="controlpanel"></a>
 
 Zaloguj się do swojego [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij `Object Storage`{.action} na pasku nawigacji po lewej stronie w `Storage`.
 
@@ -80,7 +80,7 @@ Kontener został utworzony:
 
 ![kontener created](images/create-container-20211005112013807.png)
 
-### Tworzenie kontenera Object Storage w interfejsie Horizon
+### Tworzenie kontenera Object Storage w interfejsie Horizon <a name="horizon"></a>
 
 > [!primary]
 >

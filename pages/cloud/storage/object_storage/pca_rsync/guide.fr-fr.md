@@ -23,7 +23,7 @@ Les fichiers binaires précompilés sont disponibles dans la plupart des distrib
 
 ### ID OpenStack
 
-Vous pouvez générer votre identifiant et votre mot de passe OpenStack à l'aide de ce [guide](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/).
+Vous pouvez générer votre identifiant et votre mot de passe OpenStack à l'aide de ce [guide](https://docs.ovh.com/fr/public-cloud/horizon/).
 
 ### TenantName
 

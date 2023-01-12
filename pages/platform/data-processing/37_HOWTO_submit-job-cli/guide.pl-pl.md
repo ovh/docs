@@ -18,7 +18,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 ## Requirements
 - An OVHcloud account
 - An activated cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} and [How to activate the Data Processing service for your cloud project](../activation){.external} for details)
-- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/configure_user_access_to_horizon/){.external} for details)
+- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/horizon/){.external} for details)
 - An application code to be run in Apache Spark environment
 
 ## Instructions

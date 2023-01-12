@@ -18,7 +18,7 @@ Vous pouvez par exemple configurer des groupes de sécurité pour filtrer les co
 
 ## Prérequis
 
-- [Accéder à l'interface Horizon](../creer-un-acces-a-horizon/)
+- [Accéder à l'interface Horizon](../horizon/)
 
 ## En pratique
 

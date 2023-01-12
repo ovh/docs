@@ -11,7 +11,7 @@ section: Vanaf de Horizon-interface
 
 ## Introductie
 
-In onze handleiding over [configuratie van gebruikerstoegang tot Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/){.external}, leggen we uit hoe u OpenStack-gebruikers kunt aanmaken en verwijderen en hoe u een toegangswachtwoord kunt genereren.
+In onze handleiding over [configuratie van gebruikerstoegang tot Horizon](https://docs.ovh.com/fr/public-cloud/horizon/){.external}, leggen we uit hoe u OpenStack-gebruikers kunt aanmaken en verwijderen en hoe u een toegangswachtwoord kunt genereren.
 
 Met behulp van het Horizon-panel kunt u ook wachtwoorden instellen voor elke gebruiker. Houd er rekening mee, dat wanneer u een gebruikerswachtwoord wijzigt, het vorige wachtwoord onmiddellijk wordt geannuleerd.
 

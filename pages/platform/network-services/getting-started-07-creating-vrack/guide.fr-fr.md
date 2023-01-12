@@ -16,7 +16,7 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/) est un réseau privé qui vo
 
 ## Prérequis
 
-- Posséder un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
+- Posséder un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 - Avoir [créé un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) (facultatif)
 - Connaissances réseaux élémentaires
@@ -43,7 +43,7 @@ Interface visuelle indépendante d'OVHcloud, [Horizon](https://horizon.cloud.ovh
 
 Cette interface complète et technique vous permet de gérer la quasi totalité des actions OpenStack. Ce sera une des interfaces nécessaires si vous souhaitez gérer plus de deux VLAN, ajouter des interfaces réseau privées à vos instances, gérer des images personnalisées, etc...
 
-Consultez le guide [Accéder à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/presentation-dhorizon/) pour vous familiariser à Horizon.
+Consultez le guide [Accéder à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/) pour vous familiariser à Horizon.
 
 > [!primary]
 > Horizon fonctionnant par zone, pensez bien à choisir votre zone géographique de travail tout en haut à gauche de votre interface (GRA5, SBG3, BHS1, etc...)

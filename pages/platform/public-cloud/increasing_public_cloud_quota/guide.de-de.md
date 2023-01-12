@@ -1,7 +1,7 @@
 ---
 title: 'Public Cloud Quote erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-slug: public-cloud-quota-erhoehen
+slug: increase-public-cloud-quota
 legacy_guide_number: 1904
 section: Projektverwaltung
 order: 6

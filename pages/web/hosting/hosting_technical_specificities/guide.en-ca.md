@@ -71,7 +71,7 @@ Please refer to [this guide](../creating-database/) for more information about m
 
 ### PHP
 
-- We recommend to consult [our website](https://www.ovhcloud.com/en-ca/web-hosting/php.xml) to make sure the Web Hosting plan you would like to order will be appropriate for your hosting requirements.
+- We recommend to consult [our website](https://www.ovhcloud.com/en-ca/web-hosting/uc-programming-language/) to make sure the Web Hosting plan you would like to order will be appropriate for your hosting requirements.
 
 > [!warning]
 >

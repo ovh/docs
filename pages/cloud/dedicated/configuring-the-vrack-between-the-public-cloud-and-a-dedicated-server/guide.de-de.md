@@ -34,7 +34,7 @@ OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein private
 
 ### Public Cloud Projekt zum vRack hinzufügen
 
-Nachdem Ihr [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) fertig konfiguriert ist, muss es zum vRack hinzugefügt werden. Dies kann auf zwei Arten geschehen.
+Nachdem Ihr [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/create_a_public_cloud_project/) fertig konfiguriert ist, muss es zum vRack hinzugefügt werden. Dies kann auf zwei Arten geschehen.
 
 #### Option 1: Einen neuen vRack Dienst bestellen, wenn Sie noch keinen verwenden (kostenlos).
 
