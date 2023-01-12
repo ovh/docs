@@ -12,7 +12,7 @@ order: 04
 
 Ce tutoriel vous explique comment installer et configurer [Cecil](https://cecil.app/){.external}. Il s'agit d'une application écrite en PHP permettant de générer et d'administrer des pages web statiques.
 
-Un site web composé essentiellement de pages web statiques garanti un meilleur temps de chargement pour vos visiteurs et une plus grande sécurité. Sans contenu dynamique, vos pages sont plus robustes face aux attaques informatiques. La génération d’un site statique permet de disposer d’une liberté plus grande pour créer le site web de votre choix. Vous gagnerez également du temps puisque vous n’aurez pas à partir de zéro.
+Un site web composé essentiellement de pages web statiques garantit un meilleur temps de chargement pour vos visiteurs et une plus grande sécurité. Sans contenu dynamique, vos pages sont plus robustes face aux attaques informatiques. La génération d’un site statique permet de disposer d’une liberté plus grande pour créer le site web de votre choix. Vous gagnerez également du temps puisque vous n’aurez pas à partir de zéro.
 
 ## Prérequis
 
@@ -24,18 +24,22 @@ Un site web composé essentiellement de pages web statiques garanti un meilleur 
 
 ## En pratique
 
-Les [hébergements web mutualisés](https://www.ovhcloud.com/fr/web-hosting/) permettent de définir des domaines ou sous-domaines en [multisites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/). Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
+Les [hébergements web mutualisés](https://www.ovhcloud.com/fr/web-hosting/) permettent de déclarer des domaines ou sous-domaines en multisites. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
+
+Pour vous aider à déclarer un domaine ou sous-domaine en multisite sur votre hébergement, consultez notre page [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
 
 ### Créer le répertoire dans lequel seront vos fichiers
 
 Une fois connecté en SSH à votre hébergement web, créez un répertoire à la racine avec la commande&nbsp;:
+
 ```sh
 mkdir mystaticwebsite
 ```
 
 Remplacez `mystaticwebsite` par le nom de dossier de votre choix (sans accents et sans espaces).
 
-Puis allez dans votre ce répertoire&nbsp;:
+Puis allez dans votre le répertoire&nbsp;:
+
 ```sh
 cd mystaticwebsite
 ```
@@ -73,7 +77,7 @@ Une fois ces éléments renseignés, vous devez maintenant déployer le site en 
 php cecil.phar build
 ```
 
-En affichant le contenu du répertoire, vous constaterez la création d'un répertoire `_site`. C'est ce répertoire qui contiendra l'ensemble des fichiers HTML et des assets&nbsp;:
+En affichant le contenu du répertoire, vous constaterez la présence d'un répertoire `_site`. Ce répertoire contiendra l'ensemble des fichiers HTML et des assets&nbsp;:
 
 ![Installation Cecil](images/static_website_installation_cecil%5B2%5D.png){.thumbnail}
 
@@ -101,7 +105,7 @@ Remplacez les informations par défaut par les votres et sauvegardez le fichier.
 
 ### Créer une nouvelle page
 
-La création des pages qui contiendront les données de votre site se font via des fichiers au format _Markdown_. Ces pages sont personnalisables : **Cecil**  intègre le moteur de _template_ [Twig](https://twig.symfony.com/){.external} qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/){.external}.
+La création des pages qui contiendront les données de votre site se fait via des fichiers au format _Markdown_. Ces pages sont personnalisables : **Cecil**  intègre le moteur de _template_ [Twig](https://twig.symfony.com/){.external} qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/){.external}.
 
 Les dossiers et fichiers sont organisés comme suit&nbsp;:
 
@@ -145,7 +149,7 @@ Et vous pouvez la visualiser sur votre serveur en tapant l'URL de votre site, su
 
 #### Modification sur le serveur
 
-L'édition des fichiers _Markdown_ peut se faire directement sur le serveur d'hébergement web. Sur votre offre [Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/l){.external} ou [vim](https://www.vim.org/){.external}.
+L'édition des fichiers _Markdown_ peut se faire directement sur le serveur d'hébergement web. Sur votre offre d'[Hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/l){.external} ou [vim](https://www.vim.org/){.external}.
 Les captures d'écran du présent tutoriel ont été réalisées sous **GNU nano**.
 
 Éditez le fichier `mypage.md` situé dans le répertoire `pages` en tapant la commande suivante si vous êtes à la racine de votre site&nbsp;:
@@ -190,7 +194,7 @@ Vous pouvez maintenant éditer les fichiers dans votre I.D.E.&nbsp;:
 
 Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur votre serveur et de **rebuilder** pour avoir vos pages en ligne.
 
-### Ajout la page générée au menu de votre site
+### Ajouter la page générée au menu de votre site
 
 Pour ajouter cette nouvelle page dans le menu du site web, modifiez manuellement l'en-tête du fichier `.md` en rajoutant la ligne&nbsp;:
 
@@ -200,8 +204,8 @@ menu: main
 
 ### Conclusion
 
-**Cecil** est un outil permettant de construire efficacement un site statique à partir de fichiers *Markdown*, langage de balisage plus simple à mettre en œuvre que le HTML L'organisation des fichiers Markdown conditionne la hiérarchie de vos pages web.<br/>
-L'utilisation d'un moteur de template très utilisé dans la communauté développeurs web vous permettra de trouver facilement de nombreuses sources sur internet pour concevoir une interface d'apparence professionnelle.
+**Cecil** est un outil permettant de construire efficacement un site statique à partir de fichiers *Markdown*, langage de balisage plus simple à mettre en œuvre que le HTML. L'organisation des fichiers Markdown conditionne la hiérarchie de vos pages web.<br/>
+L'utilisation d'un moteur de template, très utilisé dans la communauté développeurs web, vous permettra de trouver facilement de nombreuses sources sur internet pour concevoir une interface d'apparence professionnelle.
 
 ## Aller plus loin
 
