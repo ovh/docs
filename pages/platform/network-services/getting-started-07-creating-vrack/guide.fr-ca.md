@@ -213,7 +213,7 @@ Deux situations peuvent se présenter à vous :
 
 Consultez le guide [Créer une instance depuis l’espace client](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#create-instance). Lors de la création d'une instance, vous pouvez choisir, à l'étape 5, un mode réseau, puis un réseau privé dans lequel intégrer votre instance.
 
-[attach new instance](images/network-selection.png){.thumbnail}
+![attach new instance](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > Lors de la création d'une nouvelle instance, vous ne pourrez raccorder votre instance qu'à un seul vRack depuis l'espace client OVHcloud.
