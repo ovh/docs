@@ -15,7 +15,7 @@ Sie können zum Beispiel Sicherheitsgruppen definieren, um ein- und ausgehende V
 
 ## Voraussetzungen
 
-- [Zugang zum Horizon-Interface](../erstellung_eines_zugangs_zu_horizon/)
+- [Zugang zum Horizon-Interface](../horizon/)
 
 
 ## In der praktischen Anwendung

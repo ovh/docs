@@ -1,7 +1,7 @@
 ---
 title: 'Augmenter les quotas Public Cloud'
 excerpt: 'Découvez comment demander l’augmentation de vos quotas Public Cloud'
-slug: augmenter-le-quota-public-cloud
+slug: increase-public-cloud-quota
 legacy_guide_number: 1904
 section: 'Gestion de projets'
 order: 6

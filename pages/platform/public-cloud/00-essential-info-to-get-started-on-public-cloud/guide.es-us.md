@@ -28,7 +28,7 @@ Si ya está familiarizado con estos conceptos, puede seguir descubriendo el Publ
 - [Cree su primer proyecto de Public Cloud](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/)
 - [Conocer la interfaz de Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-interface/)
 - [Crear la primera instancia](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/)
-- [Gestionar los límites](https://docs.ovh.com/us/es/public-cloud/aumentar_el_limite_de_public_cloud/)
+- [Gestionar los límites](https://docs.ovh.com/us/es/public-cloud/increase-public-cloud-quota/)
 
 ## Enfoque global <a name="global-approach"></a>
 
@@ -106,7 +106,7 @@ Por ejemplo: En el mes, ha utilizado 1 instancia d2-8 durante todo el mes y 3 in
 
 Es posible que tenga que ocuparse de los límites.
 <br>La cuota de Public Cloud establece el máximo de recursos que puede empezar. Depende de ciertos parámetros (antigüedad de la cuenta, facturas anteriores..).
-<br>Estas cuotas se asignan por localización (región en el sentido de OpenStack). Así pues, puede que consiga el máximo de recursos posible en su proyecto y que sea necesario [aumentar los límites](https://docs.ovh.com/us/es/public-cloud/aumentar_el_limite_de_public_cloud/).
+<br>Estas cuotas se asignan por localización (región en el sentido de OpenStack). Así pues, puede que consiga el máximo de recursos posible en su proyecto y que sea necesario [aumentar los límites](https://docs.ovh.com/us/es/public-cloud/increase-public-cloud-quota/).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}
 

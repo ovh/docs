@@ -71,7 +71,7 @@ Customise the values of the variables according to the configuration you wish to
 |Variables|Details|
 |---|---|
 |app.engine|Allows you to modify the PHP engine used by the hosting plan. Enter “php” to enable the PHP-FPM accelerator and  “phpcgi” to disable it. |
-|app.engine.version|Allows you to define the PHP version used by the hosting plan from [the ones proposed by OVHcloud](https://www.ovhcloud.com/en-ca/web-hosting/php.xml). Enter the version of your choice.|
+|app.engine.version|Allows you to define the PHP version used by the hosting plan from [the ones proposed by OVHcloud](https://www.ovhcloud.com/en-ca/web-hosting/uc-programming-language/). Enter the version of your choice.|
 |http.firewall|Allows you to enable or disable the  [firewall supplied with all OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/options/){.external}. Enter “security” to enable it or “none” to disable it.|
 |environment|Allows you to manage cache behaviour for the static files of your website, as well as PHP error processing. Enter “production” to maximise caching and hide PHP errors or “development”, so that no cache is applied and PHP error are displayed.|
 |container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [View the configurations available](../modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1).|

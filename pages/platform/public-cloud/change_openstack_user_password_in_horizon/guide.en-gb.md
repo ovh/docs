@@ -11,7 +11,7 @@ order: 06
 
 ## Objective
 
-In our guide to [Configuring user access to Horizon](../configure_user_access_to_horizon/){.external}, we explained how to create and delete OpenStack users, as well as how to generate an access password.
+In our guide to [Configuring user access to Horizon](../horizon/){.external}, we explained how to create and delete OpenStack users, as well as how to generate an access password.
 
 Using the Horizon panel, you can also set passwords for each individual user. Please note that when you change a user password, the previous password will be immediately cancelled.
 

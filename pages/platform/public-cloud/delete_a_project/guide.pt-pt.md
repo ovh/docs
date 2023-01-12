@@ -59,7 +59,7 @@ Uma vez introduzida e confirmada a sua senha, o seu projecto entrará na fase de
 
 ## Saiba mais
 
-[Criar o seu primeiro projeto Public Cloud](https://docs.ovh.com/pt/public-cloud/criar_seu_primeiro_projeto_public_cloud/)
+[Criar o seu primeiro projeto Public Cloud](https://docs.ovh.com/pt/public-cloud/create_a_public_cloud_project/)
 
 [Criar uma primeira instância Public Cloud e ligar-se a ela](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/)
 

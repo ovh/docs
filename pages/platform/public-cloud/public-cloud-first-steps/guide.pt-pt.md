@@ -352,7 +352,7 @@ Se surgir uma mensagem relativa a certificados, clique em `Sim`{.action}. De seg
 
 [Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/)
 
-[Aumentar a quota Public Cloud](../aumentar_a_quota_public_cloud/)
+[Aumentar a quota Public Cloud](../increase-public-cloud-quota/)
 
 [Passar de uma faturação à hora para uma faturação ao mês](../mudar-tipo-faturacao-public-cloud/)
 

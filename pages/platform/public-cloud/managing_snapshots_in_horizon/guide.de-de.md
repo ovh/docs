@@ -22,7 +22,7 @@ Während des Betriebs können Sie jederzeit eine Sicherung Ihrer Daten, der Konf
 ## Voraussetzungen
 
 - Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
+- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/).
 
 ## In der praktischen Anwendung
 

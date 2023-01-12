@@ -17,11 +17,11 @@ Vous avez la possibilité de créer des instances directement depuis l'interface
 ## Prérequis
 
 - Posséder un projet [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} créé depuis votre compte OVHcloud.
-- [Être connecté à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/presentation-dhorizon/){.external}. 
+- [Être connecté à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/){.external}. 
 
 ## En pratique
 
-Pour lancer la création d'une instance, connectez-vous à l'interface Horizon. Si vous avez besoin d'aide pour réaliser cette manipulation, reportez-vous à [notre documentation](https://docs.ovh.com/fr/public-cloud/presentation-dhorizon/).
+Pour lancer la création d'une instance, connectez-vous à l'interface Horizon. Si vous avez besoin d'aide pour réaliser cette manipulation, reportez-vous à [notre documentation](https://docs.ovh.com/fr/public-cloud/horizon/).
 
 Cliquez ensuite sur `Compute`{.action} dans le menu de gauche, puis sur `Instances`{.action}.
 

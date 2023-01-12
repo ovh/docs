@@ -133,7 +133,7 @@ Here are some guides to help you with the first steps:
 |[Using an SSH key](https://docs.ovh.com/us/en/public-cloud/use-of-an-ssh-key-in-the-public-cloud-interface/)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
 |[Private Network Configuration](https://docs.ovh.com/us/en/public-cloud/public-cloud-vrack/)|At OVHcloud, private networks are powered by vRack technology. This guide will help you get started.|
 |[Attach an additional disk to an instance](https://docs.ovh.com/us/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/)|This guide will help you add additional storage to your first instance.|
-|[Accessing the Horizon interface](https://docs.ovh.com/us/en/public-cloud/configure_user_access_to_horizon/)|The Horizon interface of OpenStack allows some advanced actions, here is how to connect to it.|
+|[Accessing the Horizon interface](https://docs.ovh.com/us/en/public-cloud/horizon/)|The Horizon interface of OpenStack allows some advanced actions, here is how to connect to it.|
 |[Creating a Kubernetes cluster](https://docs.ovh.com/us/en/kubernetes/creating-a-cluster/)|This guide will help you step by step in creating your first Kubernetes cluster.|
 |[Configuring an Additional IP](https://docs.ovh.com/us/en/public-cloud/configure_a_failover_ip/)|Additional IPs can allow you to switch traffic from one instance to another. This guide will explain how to configure this.|
 |[Installing the OpenStack CLI](https://docs.ovh.com/us/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/)|OpenStack can also be used in the command line. Here is how to install the tools.|

@@ -35,7 +35,7 @@ El [vRack](https://www.ovh.es/soluciones/vrack/){.external} de OVHcloud es una r
 
 ### Añadir un proyecto de Public Cloud al vRack
 
-Una vez que haya configurado su [proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/crear_tu_primer_proyecto_de_public_cloud/), deberá añadirlo al vRack. Puede hacerse de dos maneras:
+Una vez que haya configurado su [proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/create_a_public_cloud_project/), deberá añadirlo al vRack. Puede hacerse de dos maneras:
 
 1. Al contratar un servicio vRack si no tiene uno, este producto es gratuito.
 

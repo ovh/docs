@@ -10,7 +10,7 @@ section: 'Horizon'
 
 ## Einleitung
 
-In der Anleitung "[Auf das Horizon-Interface zugreifen](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)" konnten Sie nachlesen, wie Sie einen OpenStack-Benutzer und ein Zugangspasswort erstellen und löschen.
+In der Anleitung "[Auf das Horizon-Interface zugreifen](https://docs.ovh.com/de/public-cloud/horizon/)" konnten Sie nachlesen, wie Sie einen OpenStack-Benutzer und ein Zugangspasswort erstellen und löschen.
 
 Mithilfe des Horizon-Panels kann jedem Benutzer ein Passwort zugewiesen werden. Bitte beachten Sie, dass beim Ändern eines Benutzerkonto-Passworts die bisherigen Login-Daten sofort gelöscht werden.
 

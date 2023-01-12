@@ -22,7 +22,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/) in your OVHcloud account
+- A [Public Cloud project](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin
@@ -503,7 +503,7 @@ xxx can be: RAM, CPU, VM, Disk or Port.
 If this is the case, the quotas must be increased.
 In order to check your quotas and increase them, please follow this tutorial:
 
-[Increasing Public Cloud quotas](https://docs.ovh.com/it/public-cloud/aumenta_la_quota_del_tuo_public_cloud/){.external}.
+[Increasing Public Cloud quotas](https://docs.ovh.com/it/public-cloud/increase-public-cloud-quota/){.external}.
 
 ## Destroy (cleanup)
 

@@ -31,7 +31,7 @@ If you use Horizon :
 
 ## Instructions
 
-### Creating an Object Storage container from the OVHcloud Control Panel
+### Creating an Object Storage container from the OVHcloud Control Panel <a name="controlpanel"></a>
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Object Storage`{.action} in the left-hand navigation bar under "Storage".
 Finally, click `Create an object container`{.action}.
@@ -75,7 +75,7 @@ Your container is now created:
 
 ![container created](images/create-container-20211005112013807.png)
 
-### Creating an Object Storage container from Horizon
+### Creating an Object Storage container from Horizon <a name="horizon"></a>
 
 > [!primary]
 >

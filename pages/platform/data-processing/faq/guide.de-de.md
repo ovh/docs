@@ -4,7 +4,7 @@ slug:  data-processing-faq
 section: Getting started
 order: 3
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/data-processing/ data-processing-faq /'
+    canonical: 'https://docs.ovh.com/gb/en/data-processing/data-processing-faq/'
 ---
 
 **Last updated 16<sup>th</sup> June, 2020**

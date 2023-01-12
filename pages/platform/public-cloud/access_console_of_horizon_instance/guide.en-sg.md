@@ -19,7 +19,7 @@ In the event of loss of access to your instance, wether caused by a configuratio
 
 ## Requirements
 
-- [Configuring user access to Horizon](../configure_user_access_to_horizon/)
+- [Configuring user access to Horizon](../horizon/)
 - An already created instance
 - [A root password](../become_the_root_user_and_select_a_password/) created on the instance
 

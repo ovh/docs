@@ -22,7 +22,7 @@ Możliwe jest tworzenie zrzutów instancji, które będą mogły zostać wykorzy
 ## Wymagania początkowe
 
 - Utworzenie [instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
-- [Dostęp do interfejsu Horizon](../tworzenie_dostepu_do_interfejsu_horizon/)
+- [Dostęp do interfejsu Horizon](../horizon/)
 
 ## W praktyce
 

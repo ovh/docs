@@ -1,7 +1,7 @@
 ---
 title: 'Ein Public Cloud Projekt löschen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Public Cloud Projekt löschen'
-slug: ein_projekt_loschen
+slug: delete_a_project
 section: 'Projektverwaltung'
 ---
 

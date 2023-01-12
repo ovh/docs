@@ -20,7 +20,7 @@ Das OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/) ist ein privates Netzw
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) in Ihrem Kunden-Account.
+- Sie verfügen über ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/create_a_public_cloud_project/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen [OpenStack User erstellt](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) (optional).
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.

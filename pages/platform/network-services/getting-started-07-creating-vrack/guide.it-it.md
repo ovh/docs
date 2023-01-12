@@ -20,7 +20,7 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/) è una rete privata che permette
 
 ## Prerequisiti
 
-- Disporre di un [progetto Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/)
+- Disporre di un [progetto Public Cloud](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Aver [creato un utente OpenStack](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/#crea-un-utente-openstack_1) (facoltativo)
 - Conoscenze di rete elementari

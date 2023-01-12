@@ -21,7 +21,7 @@ You can create multiple Instances directly in the Horizon interface, and also co
 
 ## Instructions
 
-To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](../configure_user_access_to_horizon/).
+To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](../horizon/).
 
 Next, click `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
 

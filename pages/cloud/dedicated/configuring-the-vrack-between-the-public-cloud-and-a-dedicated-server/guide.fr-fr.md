@@ -31,7 +31,7 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/) OVHcloud est un réseau priv
 
 ### Ajouter un projet Public Cloud au vRack
 
-Une fois votre [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) configuré, il est nécessaire de l’ajouter au vRack. Cela peut se faire de deux manières :
+Une fois votre [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/) configuré, il est nécessaire de l’ajouter au vRack. Cela peut se faire de deux manières :
 
 1. En commandant un service vRack si vous n’en avez pas un, ce produit est gratuit et la mise à disposition ne prend que quelques minutes.
 

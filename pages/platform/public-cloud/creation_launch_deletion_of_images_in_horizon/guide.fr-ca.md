@@ -15,7 +15,7 @@ L'ajout d'images personnalisées est possible via l'interface OpenStack Horizon.
 
 
 ### Prérequis
-- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
+- [Créer un accès à Horizon](../horizon/)
 - Se rendre dans le menu Images de l'interface OpenStack Horizon
 
 

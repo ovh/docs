@@ -35,7 +35,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 
 ### Dodaj projekt Public Cloud do usługi vRack
 
-Po skonfigurowaniu Twojego [projektu Public Cloud](https://docs.ovh.com/pl/public-cloud/utworz_projekt_public_cloud/) należy dodać go do sieci vRack. Można to zrobić na dwa sposoby:
+Po skonfigurowaniu Twojego [projektu Public Cloud](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/) należy dodać go do sieci vRack. Można to zrobić na dwa sposoby:
 
 1. Jeżeli usługa vRack nie jest dostępna, produkt ten jest bezpłatny.
 

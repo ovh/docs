@@ -21,7 +21,7 @@ Możesz na przykład skonfigurować grupy zabezpieczeń, aby filtrować połącz
 
 ## Wymagania początkowe
 
-- [Dostęp do interfejsu Horizon](../tworzenie_dostepu_do_interfejsu_horizon/)
+- [Dostęp do interfejsu Horizon](../horizon/)
 
 ## W praktyce
 

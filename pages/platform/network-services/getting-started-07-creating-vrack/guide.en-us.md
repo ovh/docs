@@ -207,7 +207,7 @@ There are two possible scenarios:
 
 If you need assistance, follow this guide first: [Creating an instance in the OVHcloud Control Panel](https://docs.ovh.com/us/en/public-cloud/public-cloud-first-steps/#create-instance). When creating an instance, you can specify, in Step 4, a private network to integrate your instance into. Choose your previously created vRack from the drop-down menu.
 
-[attach new instance](images/network-selection.png){.thumbnail}
+![attach new instance](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > You will be able to connect your instance to **only one** vRack from the OVHcloud Control Panel.

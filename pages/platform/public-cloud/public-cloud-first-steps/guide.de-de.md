@@ -354,7 +354,7 @@ Erscheint eine Zertifikatsmeldung, klicken Sie auf `Ja`{.action}. Geben Sie ansc
 
 [Backup einer Instanz erstellen](../ein_backup_einer_instanz_erstellen/)
 
-[Public Cloud Quota erhöhen](../public-cloud-quota-erhoehen/)
+[Public Cloud Quota erhöhen](../increase-public-cloud-quota/)
 
 [Von der stündlichen auf monatliche Abrechnung umstellen](../abrechnungsart-aendern-public-cloud/)
 

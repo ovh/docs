@@ -25,10 +25,10 @@ Niniejszy przewodnik wyjaśnia, co jest niezbędne do prawidłowego działania p
 Jeśli już znasz te pojęcia, możesz kontynuować proces odkrywania Public Cloud OVHcloud, przechodząc do następujących przewodników:
 
 - [Otwórz konto OVHcloud](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/)
-- [Utwórz Twój pierwszy projekt Public Cloud](https://docs.ovh.com/pl/public-cloud/utworz_projekt_public_cloud/)
+- [Utwórz Twój pierwszy projekt Public Cloud](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/)
 - [Poznaj interfejs Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-interface/)
 - [Utwórz pierwszą instancję](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
-- [Zarządzanie limitami](https://docs.ovh.com/pl/public-cloud/zwiekszenie_limitow_public_cloud/)
+- [Zarządzanie limitami](https://docs.ovh.com/pl/public-cloud/increase-public-cloud-quota/)
 
 ## Podejście globalne <a name="global-approach"></a>
 
@@ -84,7 +84,7 @@ Istnieje kilka sposobów zarządzania zasobami Public Cloud. Bez względu na to,
 
 Aby rozpocząć korzystanie z usługi, najpierw musisz mieć [konto klienta OVHcloud](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/).
 
-Następnie [utwórz projekt Public Cloud](https://docs.ovh.com/pl/public-cloud/utworz_projekt_public_cloud/). Projekt to środowisko, które będziesz musiał określić jako kontekst.
+Następnie [utwórz projekt Public Cloud](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/). Projekt to środowisko, które będziesz musiał określić jako kontekst.
 
 Na przykład możesz wybrać rozdzielenie środowisk testowych i produkcyjnych na dwa projekty.
 <br>Możesz również korzystać z różnych projektów dla różnych aplikacji (strona publiczna, sklep internetowy, aplikacja biznesowa, zarządzanie dokumentami, itp.).
@@ -102,7 +102,7 @@ Przykład: W miesiącu korzystałeś z 1 instancji d2-8 przez cały miesiąc ora
 
 Może będziecie musieli poradzić sobie z kwestią limitów.
 <br>Limit Public Cloud określa maksymalną liczbę zasobów, które możesz uruchomić. To zależy od niektórych parametrów (starszeństwo konta, wcześniejsze faktury...).
-<br>Kwoty te są przyznawane według lokalizacji (region w rozumieniu OpenStack). Możliwe jest zatem, że osiągniesz maksymalny poziom zasobów projektu i [zwiększ limity](https://docs.ovh.com/pl/public-cloud/zwiekszenie_limitow_public_cloud/).
+<br>Kwoty te są przyznawane według lokalizacji (region w rozumieniu OpenStack). Możliwe jest zatem, że osiągniesz maksymalny poziom zasobów projektu i [zwiększ limity](https://docs.ovh.com/pl/public-cloud/increase-public-cloud-quota/).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}
 
@@ -133,7 +133,7 @@ W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
 |[Korzystanie z klucza SSH](https://docs.ovh.com/pl/public-cloud/zarzazdzanie-kluczami-SSH-w-public-cloud/)| Aby zalogować się do instancji Linux, zapoznaj się z tym przewodnikiem dotyczącym korzystania z tej instancji.|
 |[Konfiguracja prywatnej sieci](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)|W OVHcloud prywatne sieci opierają się na technologii vRack. Niniejszy przewodnik pomaga Ci w uruchomieniu tej usługi.|
 |[Przypisz dodatkowy dysk do instancji](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)|Niniejszy przewodnik wyjaśnia, jak dodać przestrzeń dyskową do Twojej pierwszej instancji.|
-|[Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)|Interfejs Horizon OpenStack pozwala na wykonywanie niektórych zaawansowanych operacji.|
+|[Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)|Interfejs Horizon OpenStack pozwala na wykonywanie niektórych zaawansowanych operacji.|
 |[Utwórz klaster Kubernetes](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN)|Niniejszy przewodnik ułatwi Ci realizację pierwszego klastra Kubernetes.|
 |[Konfiguracja Additional IP](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/)|Adresy Additional IP pozwalają na przełączanie ruchu z jednej instancji na inną. Niniejszy przewodnik wyjaśnia, jak to skonfigurować.|
 |[Instalacja CLI OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)|OpenStack może być również używany w wierszu poleceń. Oto jak zainstalować narzędzia.|

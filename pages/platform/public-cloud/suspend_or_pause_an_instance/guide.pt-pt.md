@@ -25,7 +25,7 @@ order: 3
 ## Requisitos
 
 - uma [instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) sobre faturação à **hora**
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} o à [interface Horizon](https://docs.ovh.com/pt/public-cloud/criar_um_acesso_a_interface_horizon/)
+- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} o à [interface Horizon](https://docs.ovh.com/pt/public-cloud/horizon/)
 - Conhecimento da [API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/) e das [variáveis OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/)
 
 ## Instruções

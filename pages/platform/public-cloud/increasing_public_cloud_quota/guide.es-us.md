@@ -1,7 +1,7 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Cómo aumentar el límite en Public Cloud'
-slug: aumentar_el_limite_de_public_cloud
+slug: increase-public-cloud-quota
 legacy_guide_number: g1904
 section: 'Gestión del proyecto'
 order: 04
