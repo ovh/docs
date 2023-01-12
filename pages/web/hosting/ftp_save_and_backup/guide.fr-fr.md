@@ -47,17 +47,18 @@ Définissez également la méthode de restauration que vous allez utiliser :
 
 > [!warning]
 >
-> Concernant la méthode de **restauration depuis l'espace client OVHcloud**, vérifiez qu'au moins **la moitié de l'espace de stockage FTP total** compris avec votre offre d'hébergement est encore disponible. Par exemple, si vous disposez d'une offre d'hébergement **Performance**, 250 Go/500 Go doivent encore être disponibles.
+> Concernant la méthode de **restauration depuis l'espace client OVHcloud**, vérifiez qu'au moins **la moitié de l'espace de stockage FTP total** compris avec votre offre d'hébergement est encore disponible.
+> Par exemple, si vous disposez d'une offre d'hébergement **Performance**, 250 Go doivent encore être disponibles sur les 500 Go mis à disposition.
 >
-> Effectivement, nos robots installent la sauvegarde sur votre hébergement avant de supprimer le contenu FTP qui sera remplacé par la restauration.
+> En effet, nos robots installent la sauvegarde sur votre hébergement avant de supprimer le contenu FTP qui sera remplacé par la restauration.
 >
-> Pour visualiser le quota utilisé avec votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l’hébergement concerné. 
+> Pour vérifier le quota utilisé sur votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la partie `Web Cloud`{.action} puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l’hébergement concerné. 
 >
->Le quota utilisé apparaît sur la page qui s'affiche :
+> Le quota utilisé apparaît sur la page qui s'affiche :
 >
 > ![ftp quota](images/check-ftp-quota.png){.thumbnail}
 >
-> Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement, récupérez en local certains éléments volumineux de votre site web à l'aide de [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/). Ensuite, supprimez-les de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez ensuite lancer votre restauration depuis l'espace client OVHcloud.
+> Si l'espace de stockage FTP utilisé est supérieur à la moitié de l'espace de stockage FTP total de votre offre d'hébergement, récupérez en local certains éléments volumineux de votre site web (pour cela, vous pouvez utiliser [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)). Supprimez-les ensuite de votre espace de stockage FTP. Cela diminuera la taille de l'espace de stockage FTP que vous utilisez et vous pourrez alors lancer votre restauration depuis l'espace client OVHcloud.
 >
 
 Une fois prêt, poursuivez la lecture de cette documentation en fonction de la méthode de restauration choisie.
