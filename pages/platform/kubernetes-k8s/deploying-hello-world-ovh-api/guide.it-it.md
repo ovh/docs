@@ -57,11 +57,11 @@ The first element needed to deploy the *Hello World* application is a `node pool
 You will need to give it several information but only the `flavorName` parameter (the flavor of the instance you want to create) is a required parameter. If you don't fill a value for `desiredNodes` parameter, the default value will be 1.
 For this tutorial choose a general purpose node, like the `b2-7` flavor.
 
-![Add a node pool](images/kube-api-05.png){.thumbnail}
+![Add a node pool](images/kube-api-06.png){.thumbnail}
 
 The API will return you the new node pool information.
 
-![Add a node pool](images/kube-api-06.png){.thumbnail}
+![Add a node pool](images/kube-api-05.png){.thumbnail}
 
 ## Verify your node pool is ready
 
