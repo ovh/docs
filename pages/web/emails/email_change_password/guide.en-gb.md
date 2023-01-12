@@ -19,7 +19,7 @@ You can access your OVHcloud email accounts using the password associated with t
 
 ## Requirements
 
-- You must have a pre-configured OVHcloud email solution (**MX Plan**, included in our web[ hosting ](https://www.ovhcloud.com/en-gb/web-hosting/)plans, included in a free[ Start10M ](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/) hosting package, or ordered separately as a standalone solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/)).
+- You must have a pre-configured OVHcloud email solution (**MX Plan**, included in our [web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), included in a free [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/) hosting package, or ordered separately as a standalone solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) or [**Email Pro**](https://www.ovhcloud.com/en-gb/emails/email-pro/)).
 - Depending on the method you are using: access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section, or access to the email address via [webmail](https://www.ovhcloud.com/en-gb/mail/).
 
 > [!primary]
