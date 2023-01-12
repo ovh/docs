@@ -89,7 +89,7 @@ Click the <i class="icons-gear-concept icons-masterbrand-blue"></i> button at th
 
 ![email](images/mxplan-password-new-step3.png){.thumbnail}
 
-In the left-hand side of the new page that opens, expand the "General" tab in the tree-view, then click `My account`{.action} . Next, click `Change password`{.action}.
+On the left-hand side of the new page that opens, expand the "General" tab in the tree-view, then click `My account`{.action}. Next, click `Change password`{.action}.
 
 ![email](images/mxplan-password-new-step4.png){.thumbnail}
 
