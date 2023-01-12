@@ -12,7 +12,7 @@ routes:
 
 Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVHcloud API.
 
-In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb), please take a look to the [Deploying a Hello World application with the OVHcloud Cloud Manager](../deploying-hello-world/) guide.
+In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr), please take a look to the [Deploying a Hello World application with the OVHcloud Cloud Manager](../deploying-hello-world/) guide.
 
 ## Before you begin
 
@@ -57,11 +57,11 @@ The first element needed to deploy the *Hello World* application is a `node pool
 You will need to give it several information but only the `flavorName` parameter (the flavor of the instance you want to create) is a required parameter. If you don't fill a value for `desiredNodes` parameter, the default value will be 1.
 For this tutorial choose a general purpose node, like the `b2-7` flavor.
 
-![Add a node pool](images/kube-api-05.png){.thumbnail}
+![Add a node pool](images/kube-api-06.png){.thumbnail}
 
 The API will return you the new node pool information.
 
-![Add a node pool](images/kube-api-06.png){.thumbnail}
+![Add a node pool](images/kube-api-05.png){.thumbnail}
 
 ## Verify your node pool is ready
 
