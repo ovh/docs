@@ -10,7 +10,7 @@ order: 03
 
 ## Objectif
 
-Ce tutoriel explique comment utiliser le générateur de site [Cecil](https://cecil.app/fr/){.external} pour rendre le contenu d'une page dynamique. Le tout en appelant une API pour récupérer et afficher des informations sur une page générée via **Cecil**.
+Ce tutoriel vous décrit comment utiliser le générateur de site [Cecil](https://cecil.app/fr/){.external} pour afficher le contenu d'une page dynamique. Le tout en appelant une API pour récupérer et afficher des informations sur une page générée via **Cecil**.
 
 **Découvrez comment dynamiser le contenu d'une page web avec Cecil**
 
@@ -50,7 +50,7 @@ Pour ce tutoriel, nous allons utiliser une API fournie par le site [OpenWeather]
 Créez un compte sur <https://home.openweathermap.org/users/sign_up><br>
 Une fois votre compte validé (par envoi d'un e-mail de confirmation), rendez-vous sur le menu «&nbsp;My API keys&nbsp;». Une clé a été générée par défaut, récupérez-là et conservez-là pour la suite de ce tutoriel.
 
-![Open Weather API key](images/static_website_installation_cecil_api_call%5B1%5D.png)
+![Open Weather API key](images/static_website_installation_cecil_api_call01.png)
 
 ### Ajout du code HTML
 
@@ -102,7 +102,7 @@ php cecil.phar build
 
 Vérifiez le résultat dans votre navigateur et cliquez sur le lien «&nbsp;Weather&nbsp;» qui a été ajouté dans le menu principal&nbsp;:
 
-![Test new page](images/static_website_installation_cecil_api_call%5B2%5D.png)
+![Test new page](images/static_website_installation_cecil_api_call02.png)
 
 ### Ajouter le code JavaScript
 
@@ -118,11 +118,11 @@ ls -la layouts
 
 Le fichier contient un répertoire `blog` et un fichier `index.html.twig`&nbsp;:
 
-![layouts directory](images/static_website_installation_cecil_api_call%5B3%5D.png)
+![layouts directory](images/static_website_installation_cecil_api_call03.png)
 
 Ouvrez le fichier `index.html.twig` :
 
-![Cecil layouts index file](images/static_website_installation_cecil_api_call%5B4%5D.png)
+![Cecil layouts index file](images/static_website_installation_cecil_api_call04.png)
 
 Le fichier fait référence à un template qui n'est pas présent dans le répertoire. Ce fichier (et d'autres) sont en réalité dans le fichier `cecil.phar`. Les extensions `.phar` désignent des archives de fichiers PHP qui sont manipulables sans être décompressées.
 Décompressez les fichiers de cette archive pour les rendre visibles&nbsp;:
@@ -133,7 +133,7 @@ php cecil.phar util:extract
 
 Affichez à nouveau le contenu du répertoire `layouts`&nbsp;:
 
-![Cecil layouts directory including uncompressed files](images/static_website_installation_cecil_api_call%5B5%5D.png)
+![Cecil layouts directory including uncompressed files](images/static_website_installation_cecil_api_call05.png)
 
 Nous allons modifier le template par défaut pour insérer une balise `<script>` qui contiendra le code permettant l'appel à l'API&nbsp;:
 
@@ -223,13 +223,13 @@ function getTemperature(city) {
 
 Rendez-vous sur votre site web via un navigateur Internet&nbsp;:
 
-![Web page with JavaScript running](images/static_website_installation_cecil_api_call%5B6%5D.png)
+![Web page with JavaScript running](images/static_website_installation_cecil_api_call06.png)
 
 Cliquez sur «&nbsp;Changez de ville&nbsp;» et saisissez le nom d'une commune&nbsp;:
 
-![Select a new city](images/static_website_installation_cecil_api_call%5B7%5D.png)
+![Select a new city](images/static_website_installation_cecil_api_call07.png)
 
-![Page updated](images/static_website_installation_cecil_api_call%5B8%5D.png)
+![Page updated](images/static_website_installation_cecil_api_call08.png)
 
 ### Conclusion
 
