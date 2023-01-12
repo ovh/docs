@@ -977,6 +977,7 @@
                 + [Use cases - What to do if your Website is hacked](web/hosting/cms_what_to_do_if_your_site_is_hacked)
                 + [Use cases - How to change the domain of an existing website](web/hosting/How_to_change_the_domain_name_of_an_existing_website)
                 + [Tutorial - Using FileZilla with your OVHcloud hosting](web/hosting/ftp_filezilla_user_guide)
+                + [Tutorial - Installing and configuring Cecil](web/hosting/static_website_installation_cecil)
             + [CMS](web-cloud-web-hosting-personal-and-business-web-hosting-plans-cms)
                 + [Installing Joomla! manually](web/hosting/cms_manual_installation_joomla)
                 + [Installing Drupal manually](web/hosting/cms_manual_installation_drupal)
