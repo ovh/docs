@@ -34,7 +34,7 @@ Les étapes sont les suivantes&nbsp;:
 
 ### Créer une nouvelle page
 
-Préparez votre environnement en vous connectant en SSH sur votre hébergement web et reportez-vous au guide [Installer et configurer Cecil](https://ovhcloud.com/) pour installer votre application **Cecil** dans un répertoire dédié.
+Préparez votre environnement en vous connectant en SSH sur votre hébergement web et reportez-vous au guide [Installer et configurer Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil) pour installer votre application **Cecil** dans un répertoire dédié.
 
 Créez un répertoire et placez-vous dedans&nbsp;:
 
@@ -48,7 +48,7 @@ cd myWebSite
 Pour ce tutoriel, nous allons utiliser une API fournie par le site [OpenWeather](https://openweathermap.org/){.external}. Elle permet de connaître les informations météorologiques en fonction du nom d'une ville.
 
 Créez un compte sur <https://home.openweathermap.org/users/sign_up><br>
-Une fois votre compte validé (par envoi d'un e-mail de confirmation), rendez-vous sur le menu «&nbsp;My API keys&nbsp;». Une clé a été générée par défaut, récupérez-là et conservez-là pour la suite de ce tutoriel.
+Une fois votre compte validé (par envoi d'un e-mail de confirmation), rendez-vous sur le menu «&nbsp;My API keys&nbsp;». Une clé a été générée par défaut, récupérez-la et conservez-la pour la suite de ce tutoriel.
 
 ![Open Weather API key](images/static_website_installation_cecil_api_call01.png)
 
@@ -135,7 +135,7 @@ Affichez à nouveau le contenu du répertoire `layouts`&nbsp;:
 
 ![Cecil layouts directory including uncompressed files](images/static_website_installation_cecil_api_call05.png)
 
-Nous allons modifier le template par défaut pour insérer une balise `<script>` qui contiendra le code permettant l'appel à l'API&nbsp;:
+Modifier le template par défaut pour insérer une balise `<script>` qui contiendra le code permettant l'appel à l'API&nbsp;:
 
 ```sh
 nano layouts/_default/page.html.twig
@@ -174,7 +174,7 @@ php cecil.phar build
 
 #### Ajouter le fichier JavaScript
 
-Les fichiers JavaScript, comme les fichiers CSS, sont à mettre dans le répertoire `assets`. Vous pouvez les organiser dans différents répertoires.
+Les fichiers JavaScript, comme les fichiers CSS, doivent être placés dans le répertoire `assets`. Vous pouvez les organiser dans différents répertoires.
 
 Créez le fichier `script.js` mentionné précédemment à la racine du répertoire `assets`&nbsp;:
 
@@ -182,7 +182,7 @@ Créez le fichier `script.js` mentionné précédemment à la racine du réperto
 nano assets/script.js
 ```
 
-Remplacez la valeur de la variable `apiKey` par la clé récupérée précédement sur le site [OpenWeather](https://openweathermap.org/){.external}
+Remplacez la valeur de la variable `apiKey` par la clé récupérée précédemment sur le site [OpenWeather](https://openweathermap.org/){.external}
 
 ```javascript
 let apiKey = '123456789'; // Remplacez cette valeur
@@ -221,7 +221,7 @@ function getTemperature(city) {
 
 ### Tests
 
-Rendez-vous sur votre site web via un navigateur Internet&nbsp;:
+Consultez maintenant votre site web via un navigateur Internet&nbsp;:
 
 ![Web page with JavaScript running](images/static_website_installation_cecil_api_call06.png)
 
@@ -233,7 +233,7 @@ Cliquez sur «&nbsp;Changez de ville&nbsp;» et saisissez le nom d'une commune&n
 
 ### Conclusion
 
-Ce tutoriel vous donne un exemple d'intégration de données dynamiques récupérées sur des sources externes par le biais d'APIs. Construisez et faites vivre un site web en modifiant manuellement le contenu de ces pages ou créez-en de nouvelles. Le tout en enrichissant leurs contenus depuis d'autres sites web.
+Ce tutoriel vous présente un exemple d'intégration de données dynamiques récupérées sur des sources externes par le biais d'APIs. Construisez et faites vivre un site web en modifiant manuellement le contenu de ces pages ou créez-en de nouvelles. Le tout en enrichissant leurs contenus depuis d'autres sites web.
 
 ## Aller plus loin
 
