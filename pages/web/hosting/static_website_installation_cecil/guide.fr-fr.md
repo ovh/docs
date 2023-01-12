@@ -79,11 +79,11 @@ php cecil.phar build
 
 En affichant le contenu du répertoire, vous constaterez la présence d'un répertoire `_site`. Ce répertoire contiendra l'ensemble des fichiers HTML et des assets&nbsp;:
 
-![Installation Cecil](images/static_website_installation_cecil%5B2.png){.thumbnail}
+![Installation Cecil](images/static_website_installation_cecil02.png){.thumbnail}
 
 Vous pouvez maintenant voir le résultat en allant sur votre nom de domaine&nbsp;:
 
-![Installation Cecil](images/static_website_installation_cecil%5B3.png){.thumbnail}
+![Installation Cecil](images/static_website_installation_cecil03.png){.thumbnail}
 
 ### Domaine ou sous-domaine
 
@@ -101,7 +101,7 @@ nano config.yml
 
 Remplacez les informations par défaut par les votres et sauvegardez le fichier.
 
-![Fichier de configuration YAML](images/static_website_installation_cecil%5B4.png){.thumbnail}
+![Fichier de configuration YAML](images/static_website_installation_cecil04.png){.thumbnail}
 
 ### Créer une nouvelle page
 
@@ -127,7 +127,7 @@ Un fichier `mypage.md` est alors créé à la racine du répertoire `/pages`&nbs
 
 Remplacez `mypage` par le nom de votre propre page.
 
-![Installation Cecil](images/static_website_installation_cecil%5B5.png){.thumbnail}
+![Installation Cecil](images/static_website_installation_cecil05.png){.thumbnail}
 
 #### Générer les fichiers statiques
 
@@ -139,11 +139,11 @@ php cecil.phar build
 
 Votre fichier se trouve dans le répertoire `_site/mypage/`&nbsp;:
 
-![Installation Cecil](images/static_website_installation_cecil%5B6.png){.thumbnail}
+![Installation Cecil](images/static_website_installation_cecil06.png){.thumbnail}
 
 Et vous pouvez la visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mypage/`&nbsp;:
 
-![Résultat navigateur](images/static_website_installation_cecil%5B7.png){.thumbnail}
+![Résultat navigateur](images/static_website_installation_cecil07.png){.thumbnail}
 
 ### Personnaliser les fichiers de votre site
 
@@ -160,11 +160,11 @@ Les captures d'écran du présent tutoriel ont été réalisées sous **GNU nano
 
 Remplacez `mypage` par le nom de votre propre page.
 
-![Édition du fichier dans GNU nano](images/static_website_installation_cecil%5B8.png){.thumbnail}
+![Édition du fichier dans GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
 
 Ajoutez quelques lignes en respectant la syntaxe _Markdown_&nbsp;:
 
-![Ajout de contenu dans le fichier](images/static_website_installation_cecil%5B9.png){.thumbnail}
+![Ajout de contenu dans le fichier](images/static_website_installation_cecil09.png){.thumbnail}
 
 Supprimez les fichiers dans le cache à l'aide de la commande suivante&nbsp;:
 
