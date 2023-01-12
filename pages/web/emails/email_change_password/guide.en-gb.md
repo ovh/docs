@@ -42,7 +42,7 @@ You can access your OVHcloud email accounts using the password associated with t
 > **MXplan emails (historical version)**
 >>
 >> If you do not know the type of MXplan solution you have, please read our ><br>
->> Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the {.action} `Emails` tab. The window that appears will display the existing email accounts. <br>
+>> Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the `Emails`{.action} tab. The window that appears will display the existing email accounts. <br>
 >> Click the button, <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>then click `Change password`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
