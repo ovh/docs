@@ -145,7 +145,7 @@ Assim que estiver pronto para continuar a operação, avance para o passo seguin
 
 A partir da interface ou do programa selecionado, deverá ligar-se ao seu espaço de armazenamento para aceder aos dados da cópia de segurança que pretende recuperar. Para isso, deverá ter um nome de utilizador FTP, a respetiva palavra-passe e o nome de host do seu servidor FTP.
 
-Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojamento. Caso não tenha a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/){.external} (versão em inglês).
+Pode consultar estas informações na janela `FTP - SSH`{.action} do seu alojamento. Caso não tenha a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/){.external}.
 
 ![backupftp](images/backupftp-step4.png){.thumbnail}
 

@@ -79,7 +79,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > [!primary]
 > **Website in maintenance mode**
 > 
-> To determine whether your website has been placed in "maintenance" mode, please refer to our guide [What do I do if I have a 403 forbidden page?](https://docs.ovh.com/gb/en/hosting/diagnostic-403-forbidden/). 
+> To determine whether your website has been placed in "maintenance" mode, please refer to our guide [What do I do if I have a 403 forbidden page?](https://docs.ovh.com/ie/en/hosting/diagnostic-403-forbidden/). 
 > 
 > In this case:
 >
