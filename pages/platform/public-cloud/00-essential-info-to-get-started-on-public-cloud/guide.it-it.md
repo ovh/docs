@@ -25,10 +25,10 @@ Questa guida ti mostra le principali nozioni per una corretta gestione dei prodo
 Se hai già familiarità con questi concetti, è possibile continuare la scoperta del Public Cloud OVHcloud attraverso queste guide:
 
 - [Apri un account OVHcloud](https://docs.ovh.com/it/customer/creare-account-ovhcloud/)
-- [Crea il tuo primo progetto Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/)
+- [Crea il tuo primo progetto Public Cloud](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/)
 - [Scopri l'interfaccia Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-interface/)
 - [Crea la tua prima istanza](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
-- [Gestisci le quote](https://docs.ovh.com/it/public-cloud/aumenta_la_quota_del_tuo_public_cloud/)
+- [Gestisci le quote](https://docs.ovh.com/it/public-cloud/increase-public-cloud-quota/)
 
 ## Approccio globale <a name="global-approach"></a>
 
@@ -87,7 +87,7 @@ Le risorse Public Cloud possono essere manipolate in diversi modi. Sia che si sc
 
 Per iniziare, ti serve un [account cliente OVHcloud](https://docs.ovh.com/it/customer/creare-account-ovhcloud/).
 
-A questo punto [crei un progetto Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/). Un progetto è un ambiente che voi dedicherete a un contesto.
+A questo punto [crei un progetto Public Cloud](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/). Un progetto è un ambiente che voi dedicherete a un contesto.
 
 Ad esempio, è possibile scegliere di separare i propri ambienti di test e produzione in due progetti.
 <br>Oppure puoi utilizzare diversi progetti per le tue applicazioni (siti pubblici, shop online, applicazioni aziendali, gestione di documenti, ecc...).
@@ -105,7 +105,7 @@ Esempio: Nel mese, hai utilizzato 1 istanza d2-8 per tutto il mese e 3 istanze b
 
 Forse sarete chiamati a gestire la questione delle quote.
 <br>La quota Public Cloud definisce la quantità massima di risorse che puoi avviare. Dipende da alcuni parametri (anzianità dell'account, fatture precedenti...).
-<br>Tali quote sono assegnate per localizzazione (regione in senso OpenStack). È quindi possibile che tu raggiunga il massimo delle risorse possibili sul tuo progetto e che sia necessario [aumentare queste quote](https://docs.ovh.com/it/public-cloud/aumenta_la_quota_del_tuo_public_cloud/).
+<br>Tali quote sono assegnate per localizzazione (regione in senso OpenStack). È quindi possibile che tu raggiunga il massimo delle risorse possibili sul tuo progetto e che sia necessario [aumentare queste quote](https://docs.ovh.com/it/public-cloud/increase-public-cloud-quota/).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}
 

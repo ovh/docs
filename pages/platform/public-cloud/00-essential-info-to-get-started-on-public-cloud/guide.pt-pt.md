@@ -25,10 +25,10 @@ Este guia permite-lhe descobrir as noções essenciais para uma boa exploração
 Se já está familiarizado com estes conceitos, pode continuar a descoberta do Public Cloud da OVHcloud através dos seguintes guias:
 
 - [Abrir uma conta OVHcloud](https://docs.ovh.com/pt/customer/criar-conta-ovhcloud/)
-- [Criar o seu primeiro projeto Public Cloud](https://docs.ovh.com/pt/public-cloud/criar_seu_primeiro_projeto_public_cloud/)
+- [Criar o seu primeiro projeto Public Cloud](https://docs.ovh.com/pt/public-cloud/create_a_public_cloud_project/)
 - [Familiarizar-se com a interface Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-interface/)
 - [Criar a primeira instância](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/)
-- [Gerir as quotas](https://docs.ovh.com/pt/public-cloud/aumentar_a_quota_public_cloud/)
+- [Gerir as quotas](https://docs.ovh.com/pt/public-cloud/increase-public-cloud-quota/)
 
 ## Abordagem global <a name="global-approach"></a>
 
@@ -85,7 +85,7 @@ Existem várias formas de manipular os recursos Public Cloud. Quer descubra os p
 
 Para começar, precisará de uma [conta de cliente OVHcloud](https://docs.ovh.com/pt/customer/criar-conta-ovhcloud/).
 
-De seguida, terá de [criar um projeto Public Cloud](https://docs.ovh.com/pt/public-cloud/criar_seu_primeiro_projeto_public_cloud/). Um projeto é um ambiente que vão dedicar a um contexto.
+De seguida, terá de [criar um projeto Public Cloud](https://docs.ovh.com/pt/public-cloud/create_a_public_cloud_project/). Um projeto é um ambiente que vão dedicar a um contexto.
 
 Por exemplo, pode optar por separar os seus ambientes de teste e de produção em dois projetos.
 <br>Ou pode utilizar diferentes projetos para as suas diferentes aplicações (site público, loja online, aplicação profissional, gestão de documentos, etc..).
@@ -103,7 +103,7 @@ Por exemplo: Neste mês, utilizou 1 instância d2-8 durante todo o mês e 3 inst
 
 Poderá ser levado a gerir a questão das quotas.
 <br>O limite Public Cloud define o máximo de recursos que pode iniciar. Depende de determinados parâmetros (antiguidade da conta, faturas anteriores...).
-<br>Estas quotas são atribuídas por localização (região no sentido OpenStack). Por isso, é possível que atinja o máximo de recursos possíveis no seu projeto e que seja necessário [aumentar estas quotas](https://docs.ovh.com/pt/public-cloud/aumentar_a_quota_public_cloud/).
+<br>Estas quotas são atribuídas por localização (região no sentido OpenStack). Por isso, é possível que atinja o máximo de recursos possíveis no seu projeto e que seja necessário [aumentar estas quotas](https://docs.ovh.com/pt/public-cloud/increase-public-cloud-quota/).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}
 
@@ -134,7 +134,7 @@ Na prática, pode consultar os seguintes manuais:
 |[Utilização de uma chave SSH](https://docs.ovh.com/pt/public-cloud/usar-uma-chave-ssh-na-interface-public-cloud/)| Para se ligar a uma instância Linux, terá de passar por uma ligação SSH, este manual explica-lhe a utilização.|
 |[Configuração da rede privada](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)|Na OVHcloud, as redes privadas são suportadas pela tecnologia vRack. Este guia acompanha-o nesta implementação.|
 |[Associar um disco suplementar a uma instância](https://docs.ovh.com/pt/public-cloud/criar_e_configurar_um_disco_suplementar_numa_instancia/)|Este manual fornece instruções para adicionar espaço de armazenamento adicional à primeira instância.|
-|[Aceder à interface Horizon](https://docs.ovh.com/pt/public-cloud/criar_um_acesso_a_interface_horizon/)|A interface Horizon da OpenStack permite algumas ações avançadas. Aqui está como conectá-lo.|
+|[Aceder à interface Horizon](https://docs.ovh.com/pt/public-cloud/horizon/)|A interface Horizon da OpenStack permite algumas ações avançadas. Aqui está como conectá-lo.|
 |[Criar um cluster Kubernetes](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN)|Este guia acompanha-o passo a passo na criação do seu primeiro cluster Kubernetes.|
 |[Configurar um Additional IP](https://docs.ovh.com/pt/public-cloud/configurer-une-ip-failover/)|Os endereços Additional IP permitem-lhe transferir o tráfego de uma instância para outra, este guia explica-lhe como configurar isto.|
 |[Instalação da CLI OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/)|OpenStack pode também ser utilizado em linha de comandos: eis como instalar as ferramentas.|

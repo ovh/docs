@@ -22,7 +22,7 @@ Ad esempio, è possibile configurare gruppi di sicurezza per filtrare le conness
 
 ## Prerequisiti
 
-- [Accedere all’interfaccia Horizon](../crea_un_utente_per_accedere_a_horizon/)
+- [Accedere all’interfaccia Horizon](../horizon/)
 
 ## Procedura
 

@@ -353,7 +353,7 @@ Si un message de certificat apparaît, cliquez sur `Oui`{.action}. Entrez ensuit
 
 [Sauvegarder une instance](../sauvegarder-une-instance/)
 
-[Augmenter le quota Public Cloud](../augmenter-le-quota-public-cloud/)
+[Augmenter le quota Public Cloud](../increase-public-cloud-quota/)
 
 [Passer d’une facturation à l’heure à mensuelle](../changer-type-facturation-public-cloud/)
 

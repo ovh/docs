@@ -353,7 +353,7 @@ Si aparece un mensaje de certificado, acéptelo. A continuación, introduzca el 
 
 [Guardar una copia de seguridad de una instancia](../guardar_copia_de_seguridad_de_una_instancia/)
 
-[Aumentar el límite de Public Cloud](../aumentar_el_limite_de_public_cloud/)
+[Aumentar el límite de Public Cloud](../increase-public-cloud-quota/)
 
 [Cambiar de facturación por horas a mensual](../cambiar-modalidad-facturacion-public-cloud/)
 

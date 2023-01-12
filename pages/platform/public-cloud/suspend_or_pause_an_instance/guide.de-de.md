@@ -21,7 +21,7 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) mit **stündlicher** Abrechnung.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder das [Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/).
 - Sie haben Kenntnisse der [OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/) und der [OpenStack Variablen](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/).
 
 ## In der praktischen Anwendung

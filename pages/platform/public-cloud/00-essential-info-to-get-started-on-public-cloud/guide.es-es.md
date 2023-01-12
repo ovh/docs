@@ -25,10 +25,10 @@ Esta guía explica los aspectos esenciales para una buena explotación de los pr
 Si ya está familiarizado con estos conceptos, puede seguir descubriendo el Public Cloud de OVHcloud en las siguientes guías:
 
 - [Abrir una cuenta de OVHcloud](https://docs.ovh.com/es/customer/crear-cuenta-ovhcloud/)
-- [Cree su primer proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/crear_tu_primer_proyecto_de_public_cloud/)
+- [Cree su primer proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/create_a_public_cloud_project/)
 - [Conocer la interfaz de Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-interface/)
 - [Crear la primera instancia](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/)
-- [Gestionar los límites](https://docs.ovh.com/es/public-cloud/aumentar_el_limite_de_public_cloud/)
+- [Gestionar los límites](https://docs.ovh.com/es/public-cloud/increase-public-cloud-quota/)
 
 ## Enfoque global <a name="global-approach"></a>
 
@@ -88,7 +88,7 @@ Existen diversas formas de gestionar los recursos de Public Cloud. Tanto si desc
 
 Para empezar, necesitará una [cuenta de cliente de OVHcloud](https://docs.ovh.com/es/customer/crear-cuenta-ovhcloud/).
 
-A continuación, deberá [crear un proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/crear_tu_primer_proyecto_de_public_cloud/). Un proyecto es un entorno que va a dedicar a un contexto.
+A continuación, deberá [crear un proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/create_a_public_cloud_project/). Un proyecto es un entorno que va a dedicar a un contexto.
 
 Por ejemplo, puede separar los entornos de prueba y producción de dos proyectos.
 <br>O puede utilizar diferentes proyectos para sus distintas aplicaciones (sitio web público, tienda online, aplicación empresarial, gestión de documentos, etc.).
@@ -106,7 +106,7 @@ Por ejemplo: En el mes, ha utilizado 1 instancia d2-8 durante todo el mes y 3 in
 
 Es posible que tenga que ocuparse de los límites.
 <br>La cuota de Public Cloud establece el máximo de recursos que puede empezar. Depende de ciertos parámetros (antigüedad de la cuenta, facturas anteriores..).
-<br>Estas cuotas se asignan por localización (región en el sentido de OpenStack). Así pues, puede que consiga el máximo de recursos posible en su proyecto y que sea necesario [aumentar los límites](https://docs.ovh.com/es/public-cloud/aumentar_el_limite_de_public_cloud/).
+<br>Estas cuotas se asignan por localización (región en el sentido de OpenStack). Así pues, puede que consiga el máximo de recursos posible en su proyecto y que sea necesario [aumentar los límites](https://docs.ovh.com/es/public-cloud/increase-public-cloud-quota/).
 
 ![Public Cloud quota](images/quota.png){.thumbnail}
 

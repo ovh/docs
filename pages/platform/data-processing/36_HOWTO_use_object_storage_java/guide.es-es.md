@@ -23,8 +23,8 @@ Samples are based on the well-known WordCount. We will first read data from a te
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details).
 - Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details).
 - The input file 'novel.txt' used by the following samples is available [here](https://github.com/ovh/data-processing-samples/tree/master/java_S3WordCount/novel.txt){.external} [[1]](#notes).
-You have to upload it in an Object Storage container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create an OVHcloud Object Storage container). In this example, we created a container named 'textfile" and uploaded the novel.txt object into that container. 
-- OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file (textfile container in this example). (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details).
+You have to upload it in an Object Storage container. (see [Getting started with the Swift API](https://docs.ovh.com/es/storage/object-storage/pcs/getting-started-with-the-swift-api/){.external} to read more about how to create an OVHcloud Object Storage container). In this example, we created a container named 'textfile" and uploaded the novel.txt object into that container. 
+- OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file (textfile container in this example). (See [How to create EC2 credentials](https://docs.ovh.com/es/storage/object-storage/pcs/getting-started-with-the-swift-s3-api/){.external} for more details).
 
 ## Read/Write data with Apache Spark using OpenStack Swift S3 API in Java
 

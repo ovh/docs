@@ -10,7 +10,7 @@ section: Gestão a partir do Horizon
 
 ## Sumário
 
-No guia [Criar um acesso à interface Horizon](https://docs.ovh.com/pt/public-cloud/criar_um_acesso_a_interface_horizon/){.external}, explica-se como criar e eliminar um utilizador OpenStack e gerir uma palavra-passe de acesso.
+No guia [Criar um acesso à interface Horizon](https://docs.ovh.com/pt/public-cloud/horizon/){.external}, explica-se como criar e eliminar um utilizador OpenStack e gerir uma palavra-passe de acesso.
 
 Com a ajuda da interface Horizon, é possível definir uma palavra-passe para cada utilizador. Atenção: a alteração da palavra-passe de uma conta de utilizador implica a anulação dos ID ativos no momento da modificação.
 

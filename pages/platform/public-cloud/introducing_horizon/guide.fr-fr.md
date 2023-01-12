@@ -1,6 +1,6 @@
 ---
 title: Présentation de Horizon
-slug: presentation-dhorizon
+slug: horizon
 legacy_guide_number: 1776
 section: Gestion depuis Horizon
 order: 01
@@ -16,7 +16,7 @@ L'interface Horizon, nativement proposée avec OpenStack, a été adaptée par O
 
 ## Prérequis
 
-- Un [project Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) dans votre compte OVHcloud.
+- Un [project Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/) dans votre compte OVHcloud.
 - Un utilisateur [OpenStack](../creation-et-suppression-dun-utilisateur-openstack/) créé dans votre projet.
 
 ## En pratique

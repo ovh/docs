@@ -46,7 +46,7 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 
 ## Prérequis
 
-* [Configurer un accès utilisateur à Horizon](../creer-un-acces-a-horizon/)
+* [Configurer un accès utilisateur à Horizon](../horizon/)
 * [Préparer l’environnement pour utiliser l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
 * [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
 * [Disposer de vos identifiants API et de votre clé d'autorisation OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/)

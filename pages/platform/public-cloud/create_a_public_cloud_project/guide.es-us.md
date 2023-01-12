@@ -1,6 +1,6 @@
 ---
 title: 'Creando su primer proyecto de Public Cloud de OVHcloud'
-slug: crear_su_primer_proyecto_de_public_cloud
+slug: create_a_public_cloud_project
 excerpt: 'Cómo crear su primer proyecto de Public Cloud a través del área de cliente de OVHcloud'
 section: Primeros pasos
 order: 03

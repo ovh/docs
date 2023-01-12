@@ -26,7 +26,7 @@ Samples are based on the well-known WordCount. We will first read data from a te
 The following is an example with only dependencies required for this How to: [environment.yml](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/environment.yml) [[1]](#notes).
 Otherwise, this [How to](../generate-environment) explains how to generate an environment file.
 - The input file 'wordcount.txt' used by the following samples is available [Here](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount.txt) [[1]](#notes).
-The wordcount.txt file should be uploaded in the container you're using when submitting a job. Please refer to this documentation that explains how to create a Swift container [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/).
+The wordcount.txt file should be uploaded in the container you're using when submitting a job. Please refer to this documentation that explains how to create a Swift container [Getting started with the Swift API](https://docs.ovh.com/de/storage/object-storage/pcs/getting-started-with-the-swift-api/).
 
 ## Read data in the container specified when submitting your job using OpenStack Swift API
 
@@ -82,7 +82,7 @@ Find below the code in Python that:
 
 Save it in a file called 'wordcount_s3only.py' or download it from this repository: [Data Processing Samples - Object Storage](https://github.com/ovh/data-processing-samples/tree/master/python_objectStorage/wordcount_s3only.py) [[1]](#notes).
 
-Credentials provided for S3 can concern any OVHcloud Object Storage container. In this sample, you can upload the wordcount.txt file in any Object Storage container or account and it is not necessary that you upload it in the same container as the one that you upload the source code. Just you need to generate the proper access key and secret key for that container. (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details)
+Credentials provided for S3 can concern any OVHcloud Object Storage container. In this sample, you can upload the wordcount.txt file in any Object Storage container or account and it is not necessary that you upload it in the same container as the one that you upload the source code. Just you need to generate the proper access key and secret key for that container. (See [How to create EC2 credentials](https://docs.ovh.com/de/storage/object-storage/pcs/getting-started-with-the-swift-s3-api/){.external} for more details)
 
 ```python
 from __future__ import print_function
@@ -139,7 +139,7 @@ Save it in a file called 'wordcount_both.py' or download it from this repository
 
 Credentials provided for S3 can concern any OVHcloud Object Storage container. 
 In this sample you need to generate S3 access key and secret key for the destination container in which you would like to write the result. 
-(See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details)
+(See [How to create EC2 credentials](https://docs.ovh.com/de/storage/object-storage/pcs/getting-started-with-the-swift-s3-api/){.external} for more details)
 Thus, you can read data from your Swift container and write the result in another container.
 
 ```python

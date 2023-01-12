@@ -1,7 +1,7 @@
 ---
 title: 'Eliminar un proyecto de Public Cloud'
 excerpt: 'Cómo eliminar un proyecto de Public Cloud'
-slug: eliminar_un_proyecto
+slug: delete_a_project
 section: 'Gestión del proyecto'
 order: 01
 ---
@@ -59,7 +59,7 @@ Una vez introducida y confirmada su contraseña, su proyecto entrará en la fase
 
 ## Más información
 
-[Cree su primer proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/crear_tu_primer_proyecto_de_public_cloud/)
+[Cree su primer proyecto de Public Cloud](https://docs.ovh.com/es/public-cloud/create_a_public_cloud_project/)
 
 [Crear una primera instancia de Public Cloud y conectarse a ella](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/)
 

@@ -49,7 +49,7 @@ If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/) in your OVHcloud account
+- A [Public Cloud project](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
 - Installing [Terraform CLI](https://www.terraform.io/downloads.html){.external}
 
 ## Before you begin

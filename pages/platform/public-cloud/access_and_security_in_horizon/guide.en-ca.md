@@ -16,7 +16,7 @@ For example, you can define security groups to filter incoming and outgoing conn
 
 ## Requirements
 
-- [Configuring user access to Horizon](../configure_user_access_to_horizon/)
+- [Configuring user access to Horizon](../horizon/)
 
 
 ## Instructions

@@ -22,7 +22,7 @@ Para tal, é possível que crie snapshots das suas instâncias, podendo utilizar
 ## Requisitos
 
 - Ter [criado uma instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
-- [Ter acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/)
+- [Ter acesso à interface Horizon](../horizon/)
 
 ## Instruções
 

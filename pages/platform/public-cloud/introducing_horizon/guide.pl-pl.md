@@ -20,7 +20,7 @@ Interfejs Horizon, natywnie proponowany z OpenStack, został dostosowany przez O
 
 ## Wymagania początkowe
 
-- Utworzenie [Projekt Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) na Twoim koncie OVHcloud.
+- Utworzenie [Projekt Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/) na Twoim koncie OVHcloud.
 - Użytkownik [OpenStack](../tworzenie-i-usuwanie-uzytkownika-openstack/) utworzony w Twoim projekcie.
 
 ## W praktyce

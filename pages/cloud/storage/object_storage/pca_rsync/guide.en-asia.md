@@ -23,7 +23,7 @@ Precompiled binaries are available in most modern OS distributions, so you shoul
 
 ### OpenStack ID
 
-You can generate your OpenStack login and password using this [guide](https://docs.ovh.com/asia/en/public-cloud/configure_user_access_to_horizon/).
+You can generate your OpenStack login and password using this [guide](https://docs.ovh.com/asia/en/public-cloud/horizon/).
 
 ### TenantName
 

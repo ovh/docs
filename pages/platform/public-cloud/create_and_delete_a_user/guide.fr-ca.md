@@ -54,7 +54,7 @@ Veillez à enregistrer le mot de passe, uniquement affiché à ce moment précis
 
 ![Generate](images/generatepw.png){.thumbnail}
 
-Une fois l'utilisateur OpenStack créé, vous pourrez utiliser ses identifiants pour vous connecter à [l'interface Horizon](https://docs.ovh.com/ca/fr/public-cloud/presentation-dhorizon/) en cliquant sur le lien `Horizon`{.action} dans le menu de gauche.
+Une fois l'utilisateur OpenStack créé, vous pourrez utiliser ses identifiants pour vous connecter à [l'interface Horizon](https://docs.ovh.com/ca/fr/public-cloud/horizon/) en cliquant sur le lien `Horizon`{.action} dans le menu de gauche.
 
 ### Suppression de l'utilisateur OpenStack
 
@@ -71,6 +71,6 @@ Cliquez sur `...`{.action} et sélectionnez `Supprimer`{.action}.
 
 ## Aller plus loin
 
-[Présentation de Horizon](https://docs.ovh.com/ca/fr/public-cloud/presentation-dhorizon/)
+[Présentation de Horizon](https://docs.ovh.com/ca/fr/public-cloud/horizon/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

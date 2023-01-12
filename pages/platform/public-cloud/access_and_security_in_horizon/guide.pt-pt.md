@@ -20,7 +20,7 @@ Pode, por exemplo, configurar grupos de segurança para filtrar as ligações de
 
 ## Requisitos
 
-- [Aceder à interface Horizon](../criar_um_acesso_a_interface_horizon/)
+- [Aceder à interface Horizon](../horizon/)
 
 ## Instruções
 

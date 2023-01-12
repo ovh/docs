@@ -18,7 +18,7 @@ As your infrastructure is constantly evolving, you may need to increase the stor
 ## Requirements
 
 - An [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) with the flex option
-- [Access to the Horizon interface](https://docs.ovh.com/asia/en/public-cloud/configure_user_access_to_horizon/)
+- [Access to the Horizon interface](https://docs.ovh.com/asia/en/public-cloud/horizon/)
 
 ## Instructions
 

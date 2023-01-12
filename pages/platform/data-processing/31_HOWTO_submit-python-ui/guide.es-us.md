@@ -23,7 +23,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 - Access to [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 - An OVHcloud account
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details.)
-- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/configure_user_access_to_horizon/){.external} for details.)
+- An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/horizon/){.external} for details.)
 - Your application code as Python files
 - An environment.yml file in Conda standard.  (Anaconda is a Python distribution that helps you easily manage and share your Python environment and requirements. It contains a lot of Python packages by default and specially the data science related packages. Please visit [this website](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#sharing-an-environment) to learn more about how to create your environment.yml file with Conda format.)
 

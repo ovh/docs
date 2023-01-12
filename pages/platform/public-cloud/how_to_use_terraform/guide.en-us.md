@@ -46,7 +46,7 @@ As an example, this video shows how to easily scale the number of instances whil
 
 ### Requirements
 
-- [Configuring user access to Horizon](../configure_user_access_to_horizon/)
+- [Configuring user access to Horizon](../horizon/)
 - [Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
 - [Setting OpenStack environment variables](../set-openstack-environment-variables/)
 - [Your OVHcloud API identifiers and authorisation key](../../api/first-steps-with-ovh-api/)

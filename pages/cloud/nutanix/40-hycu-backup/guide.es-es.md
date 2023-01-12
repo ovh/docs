@@ -32,7 +32,7 @@ HYCU for Nutanix is a backup software available for Nutanix.
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - You must be connected to the cluster via Prism Central. 
 - A Public Cloud project with a High Performance Object Storage type storage bucket, with a user with read and write permissions for this bucket. You can find more information on how to create a Public Cloud project and how to use the High Performance Object Storage service on the following pages:
-    - [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/es/public-cloud/crear_tu_primer_proyecto_de_public_cloud/)
+    - [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/es/public-cloud/create_a_public_cloud_project/)
     - [Getting started with S3 High Performance](https://docs.ovh.com/es/storage/object-storage/s3/getting-started-with-object-storage/).
 - 60 GB of storage, 8 GB of memory and 8 cores on your Nutanix Cluster.
 

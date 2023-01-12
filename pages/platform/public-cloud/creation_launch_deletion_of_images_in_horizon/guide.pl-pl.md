@@ -21,7 +21,7 @@ Dodawanie spersonalizowanych obrazów jest możliwe w interfejsie OpenStack Hori
 
 ## Wymagania początkowe
 
-- [Dostep do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
+- [Dostep do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
 - Przejście do menu Obrazy w interfejsie OpenStack Horizon
 
 ![public-cloud](images/horizon_menu.png){.thumbnail}

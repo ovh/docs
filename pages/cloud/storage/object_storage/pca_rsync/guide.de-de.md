@@ -27,7 +27,7 @@ Vorkompilierte Binärdateien sind für die meisten Betriebssystemdistributionen 
 
 ### OpenStack ID
 
-Mithilfe dieser [Anleitung](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/) können Sie Ihre OpenStack-Kennung und Ihr Passwort erstellen.
+Mithilfe dieser [Anleitung](https://docs.ovh.com/de/public-cloud/horizon/) können Sie Ihre OpenStack-Kennung und Ihr Passwort erstellen.
 
 ### TenantName
 
