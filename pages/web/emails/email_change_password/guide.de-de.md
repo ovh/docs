@@ -50,7 +50,7 @@ Die E-Mail-Accounts Ihres OVHcloud Angebots sind mit dem zugehörigen Passwort v
 >>
 >> Wenn Sie den Typ des MXplan Angebots nicht kennen, lesen Sie bitte unseren Abschnitt ><br>
 >> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden MX Plan Dienstes aus. Gehen Sie auf den Tab `E-Mails`{.action}. Im angezeigten Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
->> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>und dann auf `{.action}` ändern.<br><br>
+>> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>und dann auf `Ändern`{.action}.<br><br>
 >>![{.thumbnail}](images/email-password-mxplan-new01.png) E-Mail<br>
 >>
 > **E-Mail Pro**
