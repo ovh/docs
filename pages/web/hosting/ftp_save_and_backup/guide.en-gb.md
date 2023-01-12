@@ -6,7 +6,7 @@ section: 'FTP and SSH'
 order: 06
 ---
 
-**Last updated 09th December 2022**
+**Last updated 12th January 2023**
 
 ## Objective
 
@@ -46,6 +46,22 @@ You also need to decide which restore method you will use:
 |Restoring via software or an interface|Gives you read-only access to a backup of the storage space. Although this method is more technical, you can use it to recover one or more files from a previous date, without having to overwrite the entire contents of the storage space.|
 
 Once you are ready to do so, carry on reading the section of this guide that is relevant to the restore method you have chosen.
+
+> [!warning]
+>
+> Regarding the **restore from OVHcloud Control Panel** method, check that at least **half of the total FTP storage space** included with your hosting package is still available.
+> For example, if you have a **Performance** hosting package, 250 GB must still be available out of the 500 GB provided.
+>
+> This is because our robots install the backup on your hosting before deleting the FTP content which will be replaced by the restoration.
+>
+> To check the quota used on your web hosting, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Web Cloud`{.action} section and click on `Hosting plans`{.action}. Then choose the name of the hosting concerned. 
+>
+> The quota used appears on the page that appears:
+>
+> ![ftp quota](images/check-ftp-quota.png){.thumbnail}
+>
+> If the FTP storage space used is more than half of the total FTP storage space of your hosting package, retrieve locally some of the large items from your website (you can use [Filezilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)). Then remove them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
+>
 
 - [Restore the storage space via the OVHcloud Control Panel](#viacontrolpanel)
 
@@ -164,4 +180,8 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 [Retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/)
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 

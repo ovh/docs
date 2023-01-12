@@ -10,7 +10,7 @@ order: 06
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 09/12/2022***
+**Última atualização: 12/01/2023**
 
 ## Objetivo
 
@@ -48,6 +48,22 @@ Da mesma forma, deverá definir o método de restauração que vai utilizar:
 |---|---|
 |Restauração a partir da Área de Cliente|Restaura na íntegra o conteúdo do espaço de armazenamento. O conteúdo atual será totalmente substituído pelo da cópia de segurança selecionada.|
 |Restauração a partir de um programa ou uma interface|Permite-lhe aceder em modo só de leitura a uma cópia de segurança do espaço de armazenamento. Este método, embora mais técnico, permite restaurar um ou vários ficheiros numa data anterior sem apagar todo o conteúdo do espaço de armazenamento.|
+
+> [!warning]
+>
+> Relativamente ao método de **restauro a partir da Área de Cliente OVHcloud**, verifique que pelo menos **metade do espaço de armazenamento FTP total** incluído com o seu plano de alojamento ainda está disponível.
+> Por exemplo, se dispõe de uma oferta de alojamento **Performance**, 250GB ainda estão disponíveis nos 500GB disponibilizados.
+>
+> De facto, os nossos robôs instalam o backup no seu alojamento antes de eliminar o conteúdo FTP que será substituído pelo restauro.
+>
+> Para verificar o limite utilizado no seu alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Aceda à secção `Web Cloud`{.action} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente. 
+>
+> A quota utilizada aparece na página que aparece:
+>
+>![ftp quota](images/check-ftp-quota.png){.thumbnail}
+>
+> Se o espaço de armazenamento FTP utilizado for superior a metade do espaço de armazenamento FTP total do seu plano de alojamento, recupere localmente determinados elementos volumosos do seu website (para isso, pode utilizar [Filezilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/)). De seguida, elimine-os do seu espaço de armazenamento FTP. Isto diminuirá o tamanho do espaço de armazenamento FTP que utiliza e poderá então lançar o seu restauro a partir da Área de Cliente OVHcloud.
+>
 
 Aceda à informação correspondente ao método de restauração escolhido.
 
@@ -169,4 +185,8 @@ Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pel
 
 [Recuperar a cópia de segurança da base de dados de um alojamento web](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVHcloud](https://community.ovh.com/en/){.external}
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
