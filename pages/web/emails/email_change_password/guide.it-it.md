@@ -1,60 +1,95 @@
 ---
-title: 'Modificare la password di un account email MX Plan'
+title: 'Modifica la password di un indirizzo email'
 slug: modificare-password-account-email-mxplan
-excerpt: 'Come impostare una nuova password per un indirizzo email creato con MX Plan'
+excerpt: 'Come modificare la password di un indirizzo email OVHcloud'
 section: 'Per iniziare'
 order: 03
 ---
 
-**Ultimo aggiornamento: 23/07/2019**
+**Ultimo aggiornamento: 03/01/2023**
 
 ## Obiettivo
 
-La soluzione MX Plan di OVHcloud permette di usufruire di una o più caselle email per inviare e ricevere messaggi da qualsiasi dispositivo. L’accesso al servizio è possibile tramite la password associata.
+Gli account email del servizio OVHcloud sono accessibili tramite la password associata. La modifica può essere effettuata in 2 modi diversi a seconda del servizio di posta:
 
-**Questa guida ti mostra come modificare la password di un account email MX Plan.**
+- Dalla Webmail
+- Dallo Spazio Cliente
+
+**Questa guida ti mostra come modificare la password di un indirizzo email OVHcloud.**
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} o una soluzione MX Plan ordinata separatamente)
-- A seconda del metodo scelto, avere accesso alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o alla [Webmail](https://www.ovh.it/mail/){.external} <i>Outlook on the web</i>
+- Disporre di una soluzione email OVHcloud configurata precedentemente (**MX Plan**, inclusa nelle nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [hosting Start10M gratuito](https://www.ovhcloud.com/it/domains/free-web-hosting/) o ordinata separatamente come soluzione autonoma, come [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
+- In base al metodo utilizzato: essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action} o essere connesso all'indirizzo email dalla [Webmail](https://www.ovhcloud.com/it/mail/).
 
 > [!primary]
 >
-> Se imposti una nuova password per il tuo account email OVHcloud, sarà necessario apportare la stessa modifica su tutti i dispositivi utilizzati.
+> Quando modifichi la password del tuo indirizzo email, sarà necessario apportare la stessa modifica su tutti i dispositivi su cui è stato configurato l'indirizzo email. Consulta le nostre guide di configurazione per il tuo client di posta dalla homepage del tuo servizio di posta:
+>
+> - [MXplan](https://docs.ovh.com/it/emails/)
+> - [Email Pro](https://docs.ovh.com/it/emails-pro/)
+> - [Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/)
 >
 
 ## Procedura
 
-In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nella sezione `E-mail`{.action}, seleziona il dominio a cui risulta associata la soluzione MX Plan. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+### Modifica la password dallo Spazio Cliente OVH <a name="controlpanel"></a>
 
-|Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
-|---|---|
-|![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro `Abbonamento`|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Il servizio è indicato nel riquadro `Riepilogo`, sotto la voce `Referenza server`|
-|Consulta il paragrafo [Vecchia versione della soluzione MX Plan](#mx-legacy)|Consulta il paragrafo [Nuova versione della soluzione MX Plan](#mx-new)|
+> [!warning]
+> Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, sceglierne una che non ha alcun rapporto con le tue informazioni personali (ad esempio, eviti le indicazioni del tuo cognome, nome e data di nascita) e rinnovarla regolarmente.
 
-### Nuova versione della soluzione MX Plan <a name="mx-new"></a>
+> \[!tabs]
+> **Email MXplan (versione storica)**
+>>
+>> Se non ricordi il tipo di offerta MXplan, consulta il paragrafo ><br>
+>> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. <br>
+>> Clicca sul pulsante <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>e poi su `Modifica la password`{.action}.<br><br>
+>>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
+>>
+> **Email MXplan (nuova versione)**
+>>
+>> Se non ricordi il tipo di offerta MXplan, consulta il paragrafo ><br>
+>> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. <br>
+>> Clicca sul pulsante <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>e poi su `Modifica`{.action}.<br><br>
+>>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
+>>
+> **Email Pro**
+>>
+>> Clicca su `Email Pro`{.action} e seleziona il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti.<br>
+>> Clicca sul pulsante <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>e poi su `Modifica`{.action}.<br><br>
+>>![email](images/email-password-emailpro01.png){.thumbnail}<br>
+>>
+> **Exchange**
+>>
+>> Clicca su `Microsoft`{.action} / `Exchange`{.action} e poi seleziona il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti.<br>
+>> Clicca sul pulsante <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>e poi su `Modifica`{.action}.<br><br>
+>>![email](images/email-password-exchange01.png){.thumbnail}<br>
+>>
 
-Se disponi della nuova versione del servizio, l’interfaccia visualizzata dovrebbe essere quella dell’immagine qui sotto. In caso contrario [torna al paragrafo precedente](./#procedura) e assicurati di aver verificato correttamente la tua versione attiva.  
+### Modifica la password dalla Webmail
 
-![email](images/mxplan-password-new-step1.png){.thumbnail}
+La modifica della password tramite la Webmail è disponibile per le soluzioni email OVHcloud che utilizzano **OWA** (**O**utlook **W**eb **A**pp):
 
-Per modificare la password di un account email è possibile procedere in due modi diversi. Prosegui nella lettura di questa guida in base alla modalità che intendi utilizzare.
+- Email MX Plan (Nuova versione)
+- Email Pro
+- Exchange
 
-- [Modificare la password dalla Webmail <i>Outlook on the web</i>](./#modificare-la-password-dalla-webmail-owa): in questo caso è necessario disporre della password corrente. 
-- [Modificare la password dallo Spazio Cliente OVHcloud](./#modificare-la-password-dallo-spazio-cliente-ovh): in questo caso non è necessario disporre della password corrente.
+> [!warning]
+>
+> L'offerta **Email MXplan (versione storica)** utilizza Roundcube, la modifica della password può essere effettuata solo [dallo Spazio Cliente](#controlpanel).
+>
 
-#### Modificare la password dalla Webmail <i>Outlook on the web</i>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Accedi alla [pagina di connessione](https://www.ovh.it/mail/){.external}, inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}. 
+Accedi alla pagina "[Webmail](https://www.ovhcloud.com/it/mail/)". inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
-Si apre di default la casella della posta in arrivo. Clicca sull’icona a forma di ingranaggio in alto a destra e seleziona `Opzioni`{.action}.
+Clicca sul pulsante <i class="icons-gear-concept icons-masterbrand-blue"></i>in alto e poi su `Opzioni`{.action}.
 
 ![email](images/mxplan-password-new-step3.png){.thumbnail}
 
-Apri la sezione `Generale` nella colonna di sinistra, clicca su `Il mio account`{.action} e seleziona `Modifica la password`{.action}.
+Apri la sezione “Generale” nella colonna di sinistra, clicca su Il `mio account`{.action} e seleziona ` Modifica la password`{.action}.
 
 ![email](images/mxplan-password-new-step4.png){.thumbnail}
 
@@ -67,50 +102,22 @@ Si apre una finestra: inserisci prima la password corrente e poi quella nuova, c
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Modificare la password dallo Spazio Cliente OVHcloud
+#### Identifica la tua offerta MXplan <a name="whichmxplan"></a>
 
-Accedi allo `Spazio Cliente OVHcloud`{.action}, seleziona il tuo servizio nella sezione `Email`{.action} della colonna a sinistra e clicca sulla scheda `Account email`{.action}. Visualizzi una tabella con tutti gli account email creati sul tuo servizio. Clicca sui tre puntini in corrispondenza dell’account interessato e seleziona `Modifica`{.action}.
+Nella tabella qui sotto trovi le informazioni necessarie per identificare la tua offerta MXplan.
 
-![email](images/mxplan-password-new-step6.png){.thumbnail}
-
-Nella nuova finestra, inserisci la nuova password e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.
-
-
-Clicca su `Continua`{.action} e infine `Conferma`{.action}. La nuova password sarà attiva dopo alcuni minuti. 
-
-![email](images/mxplan-password-new-step7.png){.thumbnail}
-
-Una volta che la modifica diventerà effettiva sarà possibile accedere all’account email in due modi:
-
-- **dalla Webmail OVHcloud**: accedi alla [pagina di connessione](https://www.ovh.it/mail/){.external} e inserisci le tue credenziali. Se hai appena modificato la password e l’autenticazione non va a buon fine, attendi qualche minuto e riprova. Per maggiori informazioni sull’utilizzo della Webmail <i>Outlook on the Web</i>, consulta [questa guida](https://docs.ovh.com/it/emails/utilizzo-owa/){.external}.
-
-- **da un client di posta compatibile**: in questo caso è necessario inserire la nuova password su tutti i dispositivi su cui è stato configurato l’account email. Potrebbe aprirsi automaticamente una finestra in cui ti verrà chiesto di inserire la nuova password. In caso contrario, consulta le nostre [guide di configurazione](../) disponibili online oppure contatta il produttore del client di posta o dell’applicazione utilizzata.
-
-### Vecchia versione della soluzione MX Plan <a name="mx-legacy"></a>
-
-Se disponi della vecchia versione del servizio, l’interfaccia visualizzata dovrebbe essere quella dell’immagine qui sotto. In caso contrario [torna al paragrafo precedente](./#procedura) e assicurati di aver verificato correttamente la tua versione attiva. 
-
-![email](images/mxplan-password-legacy-step1.png){.thumbnail}
-
-Accedi allo `Spazio Cliente OVHcloud`{.action}, seleziona il tuo servizio nella sezione `Email`{.action} della colonna a sinistra e clicca sulla scheda `Email`{.action}. Visualizzi una tabella con tutti gli account email creati sul tuo servizio. Clicca sui tre puntini in corrispondenza dell’account interessato e seleziona `Modifica la password`{.action}.
-
-![email](images/mxplan-password-legacy-step2.png){.thumbnail}
-
-Nella nuova finestra, inserisci la nuova password e confermala. Per motivi di sicurezza ti consigliamo di non utilizzare due volte la stessa password, scegliere una password che non contenga informazioni personali (ad esempio nome, cognome o data di nascita) e di modificarla regolarmente.
-
-
-Clicca sul pulsante `Conferma `{.action}. La nuova password sarà attiva dopo alcuni minuti.
-
-![email](images/mxplan-password-legacy-step3.png){.thumbnail}
-
-Dopo aver modificato la password, potrai effettuare la connessione al tuo account email in due modi:
-
-- **dalla Webmail OVHcloud**: accedi alla [pagina di connessione](https://www.ovh.it/mail/){.external} e inserisci le tue credenziali. Se hai appena modificato la password e l’autenticazione non va a buon fine, attendi qualche minuto e riprova. Per maggiori informazioni sull’utilizzo della Webmail RoundCube, consulta [questa guida](../webmail_guida_allutilizzo_di_roundcube/){.external}.
-
-- **da un client di posta compatibile**: in questo caso è necessario inserire la nuova password su tutti i dispositivi su cui è stato configurato l’account email. Potrebbe aprirsi automaticamente una finestra in cui ti verrà chiesto di inserire la nuova password. In caso contrario, consulta le nostre [guide di configurazione](../) disponibili online oppure contatta il produttore del client di posta o dell’applicazione utilizzata.
+|Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> L'offerta appare nel riquadro "**Abbonamento**" sulla destra, l'offerta storica *non* possiede un server di riferimento.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>La nuova offerta possiede un "Server **Referenza**", nel riquadro "**Riassunto**" a sinistra.|
 
 ## Per saperne di più
 
-Per saperne di più sulle misure di sicurezza delle password, consulta [questa pagina](https://www.commissariatodips.it/area-riservata/scelta-password.html){.external}. 
+[Iniziare a utilizzare la soluzione MXplan](https://docs.ovh.com/it/emails/informazioni-generali-email-condivise/)
+
+[Iniziare a utilizzare la soluzione Email Pro](https://docs.ovh.com/it/emails-pro/prima-configurazione/)
+
+[Iniziare a utilizzare la soluzione Hosted Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_prima_configurazione/)
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
