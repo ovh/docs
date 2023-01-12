@@ -56,7 +56,7 @@ You can access your OVHcloud email accounts using the password associated with t
 > **Email Pro**
 >>
 >> Click `Email Pro`{.action}, then choose the name of the platform concerned. Go to the `Email accounts`{.action}  tab. The window that appears will display the existing email accounts.<br>
->> Click the button and <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i>then click `Edit`{.action}.<br><br>
+>> Click the <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> button then click `Edit`{.action}.<br><br>
 >>![email](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
 > **Exchange**
