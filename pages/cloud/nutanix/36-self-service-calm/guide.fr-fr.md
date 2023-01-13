@@ -925,11 +925,11 @@ L'application Linux est dans le marketplace en attente d'approbation.
 
 Allez sur l'icône du `Marketplace Manager`{.action}, allez sur l'onglet `Approval Pending`{.action}, cochez l'application `UBUNTU 22 NGINX`{.action} et Cochez l'icône de validation à droite.
 
-![07 approve Application 02](images/07-approve-application02.png){.thumbnail}
+![07 approve Application 02](images/07-approve-application01.png){.thumbnail}
 
 Cochez l'application `WS 2022 IIS`{.action} et Cochez l'icône de validation à droite.
 
-![07 approve Application 02](images/07-approve-application03.png){.thumbnail}
+![07 approve Application 02](images/07-approve-application02.png){.thumbnail}
 
 Allez sur l'onglet `Approved`{.action}, cliquez sur la colonne `Source`{.action} pour afficher les applications locales en premier, cochez `WS 2022 IIS`{.action}, Sélectionnez à droite `NCM Self Service Project 01`{.action} et cliquez sur `Apply`{.action}.
 
