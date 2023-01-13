@@ -2,7 +2,7 @@
 title: Cassandra - Références des paramètres avancés (EN)
 slug: cassandra/advanced-parameters-references
 excerpt:
-section: Cassandre - Guides
+section: Cassandra - Guides
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/cassandra/advanced-parameters-references/'
