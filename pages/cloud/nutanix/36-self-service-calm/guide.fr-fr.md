@@ -955,13 +955,9 @@ L'application Ubuntu est publiée.
 
 ![08 ADD to market place 06](images/08-add-to-marketplace06.png){.thumbnail}
 
-Cliquez sur l'icône `Marketplace`{.action} en haut de la barre de menu verticale à gauche.
+Cliquez sur l'icône `Marketplace`{.action} en haut de la barre de menu verticale à gauche. et cliquez sur `Get`{.action} en dessous de l'application UBUNTU 22 NGINX.
 
 ![08 ADD to market place 07](images/08-add-to-marketplace07.png){.thumbnail}
-
-Cliquez sur `Get`{.action} en dessous de l'application UBUNTU 22 NGINX.
-
-![08 ADD to market place 08](images/08-add-to-marketplace08.png){.thumbnail}
 
 Cliquez sur `Launch`{.action}.
 
