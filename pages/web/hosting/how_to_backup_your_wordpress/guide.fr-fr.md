@@ -1,6 +1,6 @@
 ---
 title: "Tutoriel - Sauvegarder votre site WordPress"
-slug: saveugarder-wordpress
+slug: sauvegarder-wordpress
 excerpt: "Découvrez comment sauvegarder le contenu de votre site WordPress et sa base de données"
 section: 'Premiers pas'
 order: 
