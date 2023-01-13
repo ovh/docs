@@ -2,8 +2,8 @@
 title: OpenSearch - Getting started
 excerpt: Find out how to set up and manage your Public Cloud Databases for OpenSearch
 slug: opensearch/getting-started
-section: OpenSearch - Guides
-order: 2
+section: OpenSearch - Guides
+order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/getting-started/'
 ---
