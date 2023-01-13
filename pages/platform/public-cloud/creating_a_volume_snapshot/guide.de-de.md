@@ -10,7 +10,7 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 18.01.2022**
+**Letzte Aktualisierung am 13.01.2023**
 
 ## Ziel
 
@@ -38,7 +38,15 @@ Klicken Sie rechts neben dem betreffenden Volume auf `...`{.action} und dann auf
 
 Im Popup-Fenster können Sie dem Snapshot einen anderen Namen geben. Nehmen Sie die Abrechnungsinformation zur Kenntnis und klicken Sie dann auf `Snapshot erstellen`{.action}.
 
-Die Erstellungsdauer des Snapshots hängt von der Menge der auf dem Volume vorhandenen Daten ab.
+Die Dauer der Erstellung des Snapshots hängt von der Menge der auf dem Volume vorhandenen Daten, der Verwendung der Ressourcen der Instanz zum Zeitpunkt des Snapshots und anderen hostspezifischen Faktoren ab.
+
+Wir empfehlen Ihnen, Ihre Snapshots außerhalb Ihrer Produktionsstunden durchzuführen.
+
+Hier einige weitere bewährte Praktiken:
+
+- vermeiden Sie die Erstellung von Snapshots zu Spitzenzeiten (04:00 - 22:00 Uhr Pariser Zeit);
+- installieren Sie das Mittel qemu-guest, wenn dies nicht erfolgt ist, oder versuchen Sie es gegebenenfalls zu deaktivieren;
+- Versuchen Sie, den Server während der Erstellung des Snapshots nicht zu "aufzurufen" (Begrenzung der I/O-Werte, RAM-Verbrauch usw.).
 
 Da ein Volume Snapshot ein Klon der gesamten Disk ist, hat er unabhängig von der Speicherplatzbelegung die maximale Größe des ursprünglichen Volumes.
 
