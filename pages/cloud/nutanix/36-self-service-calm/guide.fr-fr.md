@@ -45,36 +45,36 @@ Il est nécessaire d'avoir une adresse IP configurée pour le **ISCSI Data Servi
 
 A partir du tableau de bord Prism Central cliquez sur votre `Cluster`{.action} dans la rubrique **Cluster Quick Access**.
 
-[00 Activate CALM 01](images/00-activate-calm01.png)
+![00 Activate CALM 01](images/00-activate-calm01.png){.thumbnail}
 
 Dans Prism Element cliquez en haut à gauche sur les `paramètres de votre cluster`{.action}.
 
-[00 Activate CALM 02](images/00-activate-calm02.png)
+![00 Activate CALM 02](images/00-activate-calm02.png){.thumbnail}
 
 Saisissez une `adresse IP`{.action} dans **ISCSI Data Services IP** non utilisée de l'étendue du réseau d'administration et cliquez sur `Save`{.action}.
 
-[00 Activate CALM 03](images/00-activate-calm03.png)
+![00 Activate CALM 03](images/00-activate-calm03.png){.thumbnail}
 
 Revenez dans l'interface de Prism Central allez dans le menu principal à gauche et cliquez sur `Calm`{.action} dans la rubrique **Services**
 
-[00 Activate CALM 04](images/00-activate-calm04.png)
+![00 Activate CALM 04](images/00-activate-calm04.png){.thumbnail}
 
 Cliquez sur `Enable App. Orchestration(Calm)`{.action}.
 
-[00 Activate CALM 05](images/00-activate-calm05.png)
+![00 Activate CALM 05](images/00-activate-calm05.png){.thumbnail}
 
 Cochez la case `Enable App Management`{.action} et cliquez sur `Save`{.action}.
 
-[00 Activate CALM 06](images/00-activate-calm06.png)
+![00 Activate CALM 06](images/00-activate-calm06.png){.thumbnail}
 
 L'activation de CALM est en cours.
 
-[00 Activate CALM 07](images/00-activate-calm07.png)
+![00 Activate CALM 07](images/00-activate-calm07.png){.thumbnail}
 
 > [!primary]
 > Un message d'erreur apparait pendant le déploiement de CALM quittez la fênetre et attendez que le déploiement soit terminée.
 
-[00 Activate CALM 08](images/00-activate-calm08.png)
+![00 Activate CALM 08](images/00-activate-calm08.png)
 
 ### Création d'un projet
 
@@ -82,71 +82,71 @@ Avant de déployer des application il faut tout d'abord créer une projet.
 
 Au travers du menu de Prism Central cliquez sur `Calm`{.action} dans la rubrique Services.
 
-![01 create Project 01](images/01-create-project-01.png)
+![01 create Project 01](images/01-create-project-01.png){.thumbnail}
 
 Cliquez sur l'icône `Projects`{.action} dans la barre de menu verticales.
 
-![01 create Project 02](images/01-create-project-02.png)
+![01 create Project 02](images/01-create-project-02.png){.thumbnail}
 
 CLiquez sur le bouton `+ Create Project`{.action}.
 
-![01 create Project 03](images/01-create-project-03.png)
+![01 create Project 03](images/01-create-project-03.png){.thumbnail}
 
 Saisissez le `nom du projet`{.action} dans **Project Name** et cliquez sur `Create`{.action}
 
-![01 create Project 04](images/01-create-project-04.png)
+![01 create Project 04](images/01-create-project-04.png){.thumbnail}
 
 Dans le tableau de bord cliquez sur `+ Add infrastructure`{.action}.
 
-![01 create Project 05](images/01-create-project-05.png)
+![01 create Project 05](images/01-create-project-05.png){.thumbnail}
 
 Cliquez sur `Add infrastructure`{.action}.
 
-![01 create Project 06](images/01-create-project-06.png)
+![01 create Project 06](images/01-create-project-06.png){.thumbnail}
 
 Sélectionnez `NTNX_LOCAL_AZ`{.action} dans accounts.
 
-![01 create Project 07](images/01-create-project-07.png)
+![01 create Project 07](images/01-create-project-07.png){.thumbnail}
 
 Cliquez sur `Configure Resources`{.action}.
 
-![01 create Project 08](images/01-create-project-08.png)
+![01 create Project 08](images/01-create-project-08.png){.thumbnail}
 
 Sélectionnez votre `Cluster`{.action} dans **Select clusters to be added to this project** et cliquez sur `+ Select VLANs`{.action}.
 
-![01 create Project 09](images/01-create-project-09.png)
+![01 create Project 09](images/01-create-project-09.png){.thumbnail}
 
 Cochez le VLAN `production`{.action} et cliquez sur `+ Confirm and Select Default`{.action}.
 
-![01 create Project 10](images/01-create-project-10.png)
+![01 create Project 10](images/01-create-project-10.png){.thumbnail}
 
 Cliquez sur `Confirm`{.action}.
 
-![01 create Project 11](images/01-create-project-11.png)
+![01 create Project 11](images/01-create-project-11.png){.thumbnail}
 
 Cliquez sur `Save`{.action}.
 
-![01 create Project 12](images/01-create-project-12.png)
+![01 create Project 12](images/01-create-project-12.png){.thumbnail}
 
 Dans la barre d'onglets rendez-vous sur `Environment`{.action} et cliquez sur `Create Environment`{.action}.
 
-![01 create Project 13](images/01-create-project-13.png)
+![01 create Project 13](images/01-create-project-13.png){.thumbnail}
 
 Saisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action}.
 
-![01 create Project 14](images/01-create-project-14.png)
+![01 create Project 14](images/01-create-project-14.png){.thumbnail}
 
 Cliquez sur `Select Infrastucture`{.action}.
 
-![01 create Project 15](images/01-create-project-15.png)
+![01 create Project 15](images/01-create-project-15.png){.thumbnail}
 
 Cliquez sur `NTNX_LOCAL_AZ`{.action}.
 
-![01 create Project 16](images/01-create-project-16.png)
+![01 create Project 16](images/01-create-project-16.png){.thumbnail}
 
 Cliquez sur `Required for lauching blueprints from marketplace`{.action}. à droite de **VM Configuration**
 
-![01 create Project 17](images/01-create-project-17.png)
+![01 create Project 17](images/01-create-project-17.png){.thumbnail}
 
 Renseignez ces informations :
 
@@ -161,15 +161,15 @@ Renseignez ces informations :
 
 Ensuite faite défiler la `fenêtre`{.action} vers le bas.
 
-![01 create Project 18](images/01-create-project-18.png)
+![01 create Project 18](images/01-create-project-18.png){.thumbnail}
 
 Cliquez sur le bouton `+`{.action} à droite de **NETWORK ADAPTERS (NICs).
 
-![01 create Project 19](images/01-create-project-19.png)
+![01 create Project 19](images/01-create-project-19.png){.thumbnail}
 
 Choisissez la carte réseau dans le VLAN `production`{.action}, cochez la case `Check log-in upon create`{.action} et faites défiler la `fenêtre`{.action} vers le haut.
 
-![01 create Project 20](images/01-create-project-20.png)
+![01 create Project 20](images/01-create-project-20.png){.thumbnail}
 
 Allez sur l'onglet `Linux`{.action}, saississez ces informations :
 
@@ -185,23 +185,23 @@ Allez sur l'onglet `Linux`{.action}, saississez ces informations :
 
 Ensuite faites défiler la `fenêtre vers le bas`{.action}.
 
-![01 create Project 21](images/01-create-project-21.png)
+![01 create Project 21](images/01-create-project-21.png){.thumbnail}
 
 Cliquez sur le bouton `+`{.action} à droite de **NETWORK ADAPTERS (NICs).
 
-![01 create Project 22](images/01-create-project-22.png)
+![01 create Project 22](images/01-create-project-22.png){.thumbnail}
 
 Choisissez la carte réseau dans le VLAN `production`{.action}, cochez la case `Check log-in upon create`{.action} et cliquez sur `Next`{.action}.
 
-![01 create Project 23](images/01-create-project-23.png)
+![01 create Project 23](images/01-create-project-23.png){.thumbnail}
 
 Cliquez sur `+ Add Credential`{.action}.
 
-![01 create Project 24](images/01-create-project-24.png)
+![01 create Project 24](images/01-create-project-24.png){.thumbnail}
 
 Cliquez sur `+ Add Credential`{.action}.
 
-![01 create Project 25](images/01-create-project-25.png)
+![01 create Project 25](images/01-create-project-25.png){.thumbnail}
 
 Saisissez ces informations :
 
@@ -211,7 +211,7 @@ Saisissez ces informations :
 
 Ensuite cliquez sur `+ Add Credential`{.action}.
 
-![01 create Project 26](images/01-create-project-26.png)
+![01 create Project 26](images/01-create-project-26.png){.thumbnail}
 
 Saisissez ces informations :
 
@@ -221,47 +221,47 @@ Saisissez ces informations :
 
 Ensuite cliquez sur `Save Environment`{.action}.
 
-![01 create Project 27](images/01-create-project-27.png)
+![01 create Project 27](images/01-create-project-27.png){.thumbnail}
 
 Cliquez sur `Marketplace Usage`{.action}.
 
-![02 add credential to environment 01](images/02-add-credential-to-environment01.png)
+![02 add credential to environment 01](images/02-add-credential-to-environment01.png){.thumbnail}
 
 Cliquez sur `Update`{.action}.
 
-![02 add credential to environment 02](images/02-add-credential-to-environment02.png)
+![02 add credential to environment 02](images/02-add-credential-to-environment02.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![02 add credential to environment 03](images/02-add-credential-to-environment03.png)
+![02 add credential to environment 03](images/02-add-credential-to-environment03.png){.thumbnail}
 
 Cliquez sur `Not ready for marketplace usage`{.action} à droite de VM Configuration.
 
-![02 add credential to environment 04](images/02-add-credential-to-environment04.png)
+![02 add credential to environment 04](images/02-add-credential-to-environment04.png){.thumbnail}
 
 Faites défiler la `fenêtre`{.action} vers le bas.
 
-![02 add credential to environment 05](images/02-add-credential-to-environment05.png)
+![02 add credential to environment 05](images/02-add-credential-to-environment05.png){.thumbnail}
 
 Choisissez `WindowsAccount`{.action} dans **Credential** et faites défiler la `fenêtre`{.action} vers le haut.
 
-![02 add credential to environment 06](images/02-add-credential-to-environment06.png)
+![02 add credential to environment 06](images/02-add-credential-to-environment06.png){.thumbnail}
 
 Cliquez sur l'onglet `Linux`{.action} dans **Credential** et faites défiler la `fenêtre`{.action} vers le bas.
 
-![02 add credential to environment 07](images/02-add-credential-to-environment07.png)
+![02 add credential to environment 07](images/02-add-credential-to-environment07.png){.thumbnail}
 
 Choisissez `LinuxAccount`{.action} dans **Credential** et cliquez sur `Next`{.action}
 
-![02 add credential to environment 08](images/02-add-credential-to-environment08.png)
+![02 add credential to environment 08](images/02-add-credential-to-environment08.png){.thumbnail}
 
 Cliquez sur `Save Environment`{.action}
 
-![02 add credential to environment 09](images/02-add-credential-to-environment09.png)
+![02 add credential to environment 09](images/02-add-credential-to-environment09.png){.thumbnail}
 
 Votre environement est prêt pour la création et la diffusion d'applications.
 
-![02 add credential to environment 10](images/02-add-credential-to-environment10.png)
+![02 add credential to environment 10](images/02-add-credential-to-environment10.png){.thumbnail}
 
 ### Création d'applications
 
@@ -271,21 +271,21 @@ Nous allons crééer deux applications, tester le bon fonctionnement et les publ
 
 Dans la barre verticale choisissez `Blueprints`{.action}, faite défiler le menu `Create Blueprint`{.action} et cliquez sur sur `Multi VM/Pod Blueprint`{.action}.
 
-![Create Windows Blueprint 01](images/03-create-windows-blueprint01.png)
+![Create Windows Blueprint 01](images/03-create-windows-blueprint01.png){.thumbnail}
 
 Choisissez le `nom`{.action} de votre plan dans **Name** et cliquez sur `Proceed`{.action}.
 
-![Create Windows Blueprint 02](images/03-create-windows-blueprint02.png)
+![Create Windows Blueprint 02](images/03-create-windows-blueprint02.png){.thumbnail}
 
 Saisissez le `nom`{.action} dans **Application Profile Name** et cliquez sur  `Credentials`{.action} en haut.
 
-![Create Windows Blueprint 03](images/03-create-windows-blueprint03.png)
+![Create Windows Blueprint 03](images/03-create-windows-blueprint03.png){.thumbnail}
 
 Nous allons créer le compte Windows il sera utilisé à l'interieur de sysprep en tant que variable et dans la configuration des tâches d'installation du plan et le test de connexion distant.
 
 Cliquez sur bouton `+`{.action} à coté de Credentials.
 
-![Create Windows Blueprint 04](images/03-create-windows-blueprint04.png)
+![Create Windows Blueprint 04](images/03-create-windows-blueprint04.png){.thumbnail}
 
 Saisissez ces informations :
 
@@ -295,15 +295,15 @@ Saisissez ces informations :
 
 et cliquez sur `Done`{.action}.
 
-![Create Windows Blueprint 05](images/03-create-windows-blueprint05.png)
+![Create Windows Blueprint 05](images/03-create-windows-blueprint05.png){.thumbnail}
 
 CLiquez sur `Back`{.action}.
 
-![Create Windows Blueprint 06](images/03-create-windows-blueprint06.png)
+![Create Windows Blueprint 06](images/03-create-windows-blueprint06.png){.thumbnail}
 
 Cliquez sur le bouton `+`{.action} à gauche à coté de **Service**.
 
-![Create Windows Blueprint 07](images/03-create-windows-blueprint07.png)
+![Create Windows Blueprint 07](images/03-create-windows-blueprint07.png){.thumbnail}
 
 Saisissez ces informations :
 
@@ -312,7 +312,7 @@ Saisissez ces informations :
 
 et cliquez sur `Clone from environment`{.action}.
 
-![Create Windows Blueprint 08](images/03-create-windows-blueprint08.png)
+![Create Windows Blueprint 08](images/03-create-windows-blueprint08.png){.thumbnail}
 
 Faites défilez la fenêtre de droite, cochez `Guest Customization`{.action}, cliquez sur `Sysprep`{.action}, ensuite copiez le contenu du fichier sysprep ci-dessous dans **Script** :
 
@@ -396,17 +396,17 @@ Faites défilez la fenêtre de droite, cochez `Guest Customization`{.action}, cl
 </unattend>
 ```
 
-![Create Windows Blueprint 09](images/03-create-windows-blueprint09.png)
+![Create Windows Blueprint 09](images/03-create-windows-blueprint09.png){.thumbnail}
 
 Continuez à aire défiler la fenêtre et vérifiez que **Check log-in upon create** soit coché et choisissez `WindowsAccount`{.action} dans **Credential**.
 
-![Create Windows Blueprint 10](images/03-create-windows-blueprint10.png)
+![Create Windows Blueprint 10](images/03-create-windows-blueprint10.png){.thumbnail}
 
 Nous allons maintenant créer des tâches en Powershell qui s'executerons après l'installation et la personalisation de Windows. Chaque tâche s'éxécutent l'unes après l'autre.
 
 Dans la fenêtre de gauche faites défilez, positionnez vous sur `Install`{.action} dans **Package** et cliquez sur `+ Task`{.action}.
 
-![Create Windows Blueprint 11](images/03-create-windows-blueprint11.png)
+![Create Windows Blueprint 11](images/03-create-windows-blueprint11.png){.thumbnail}
 
 Renseignez ces informations :
 
@@ -428,7 +428,7 @@ exit 0
 
 Et cliquez sur `+ Task`{.action}.
 
-![Create Windows Blueprint 12](images/03-create-windows-blueprint12.png)
+![Create Windows Blueprint 12](images/03-create-windows-blueprint12.png){.thumbnail}
 
 Completez ces informations :
 
@@ -456,8 +456,7 @@ Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "</html>"
 
 Ensuite cliquez sur `+ Task`{.action}.
 
-![Create Windows Blueprint 13](images/03-create-windows-blueprint13.png)
-
+![Create Windows Blueprint 13](images/03-create-windows-blueprint13.png){.thumbnail}
 Saisissez ces informations :
 
 **Task Name** : `reboot VM`
@@ -473,23 +472,23 @@ restart-computer -force
 
 Et cliquez sur `Save`{.action} en haut de la fenêtre.
 
-![Create Windows Blueprint 14](images/03-create-windows-blueprint14.png)
+![Create Windows Blueprint 14](images/03-create-windows-blueprint14.png){.thumbnail}
 
 L'appliation est créée cliquez sur `Launch`{.action} pour tester votre application.
 
-![Create Windows Blueprint 15](images/03-create-windows-blueprint15.png)
+![Create Windows Blueprint 15](images/03-create-windows-blueprint15.png){.thumbnail}
 
 Saisissez un `Nom`{.action} dans **Application Name** et cliquez sur `Deploy`{.action}.
 
-![Create Windows Blueprint 16](images/03-create-windows-blueprint16.png)
+![Create Windows Blueprint 16](images/03-create-windows-blueprint16.png){.thumbnail}
 
 Une nouvelle fenêtre apparait cliquez sur `Audit`{.action} pour voir les étapes du déploiement de votre application. Lorsque le déploiement est terminé vous pouvez voir en haut de la fenêtre l'indication **RUNNING** pour vous indiquer que l'application est déployée et active.
 
-![Create Windows Blueprint 17](images/03-create-windows-blueprint17.png)
+![Create Windows Blueprint 17](images/03-create-windows-blueprint17.png){.thumbnail}
 
 Dans notre cas le serveur IIS est actif et affiche un messsage sur l'adresse IP de la machine virtuelle en HTTP.
 
-![Create Windows Blueprint 18](images/03-create-windows-blueprint18.png)
+![Create Windows Blueprint 18](images/03-create-windows-blueprint18.png){.thumbnail}
 
 #### Création de l'application WEB Nginx sous Linux Ubuntu
 
@@ -497,19 +496,19 @@ Nous allons créer une autre application qui sera sous LINUX UBUNTU avec NGINX i
 
 rendez-vous sur l'icône `Blueprints`{.action} dans la barre de menu vertical de CALM, cliquez sur `Multi VM/Pod Blueprint`{.action} depuis le menu **Create Blueprint**.
 
-[04 create Linux blueprint 01](images/04-create-linux-blueprint01.png)
+![04 create Linux blueprint 01](images/04-create-linux-blueprint01.png){.thumbnail}
 
 Saisissez le `Nom`{.action} dans **Name** et cliquez sur `Proceed`{.action}.
 
-[04 create Linux blueprint 02](images/04-create-linux-blueprint02.png)
+![04 create Linux blueprint 02](images/04-create-linux-blueprint02.png){.thumbnail}
 
 Cliquez sur `Credentials`{.action}.
 
-[04 create Linux blueprint 03](images/04-create-linux-blueprint03.png)
+![04 create Linux blueprint 03](images/04-create-linux-blueprint03.png){.thumbnail}
 
 Cliquez sur `Credentials +`{.action}.
 
-[04 create Linux blueprint 04](images/04-create-linux-blueprint04.png)
+![04 create Linux blueprint 04](images/04-create-linux-blueprint04.png){.thumbnail}
 
 Saisissez ces informations concernant le compte d'administration Linux :
 
@@ -519,11 +518,11 @@ Saisissez ces informations concernant le compte d'administration Linux :
 
 Ensuite cliquez sur `Done`{.action}.
 
-[04 create Linux blueprint 05](images/04-create-linux-blueprint05.png)
+![04 create Linux blueprint 05](images/04-create-linux-blueprint05.png){.thumbnail}
 
 Cliquez sur `Credentials +`{.action}.
 
-[04 create Linux blueprint 06](images/04-create-linux-blueprint06.png)
+![04 create Linux blueprint 06](images/04-create-linux-blueprint06.png){.thumbnail}
 
 Saisissez ces informations concernant le compte d'administration de Prism Central :
 
@@ -537,15 +536,15 @@ Saisissez ces informations concernant le compte d'administration de Prism Centra
 
 Ensuite cliquez sur `Done`{.action}.
 
-[04 create Linux blueprint 07](images/04-create-linux-blueprint07.png)
+![04 create Linux blueprint 07](images/04-create-linux-blueprint07.png){.thumbnail}
 
 Cliquez sur `Back`{.action}.
 
-[04 create Linux blueprint 08](images/04-create-linux-blueprint08.png)
+![04 create Linux blueprint 08](images/04-create-linux-blueprint08.png){.thumbnail}
 
 Saisissez `Linux Application`{.action} dans **Application Proile Name** et cliquez sur `+`{.action} dans la fenêtre de gauche à droite de **Service**.
 
-[04 create Linux blueprint 09](images/04-create-linux-blueprint09.png)
+![04 create Linux blueprint 09](images/04-create-linux-blueprint09.png){.thumbnail}
 
 Saisissez ces informations :
 
@@ -554,7 +553,7 @@ Saisissez ces informations :
 
 Cliquez sur `Clone from environment`{.action} et faites défiler la `fenêtre`{.action} de droite vers le bas.
 
-[04 create Linux blueprint 10](images/04-create-linux-blueprint10.png)
+![04 create Linux blueprint 10](images/04-create-linux-blueprint10.png){.thumbnail}
 
 Cochez `Guest Customization`{.action} copiez le contenu ci-dessous dans **script**
 
@@ -574,20 +573,20 @@ ssh_pwauth: true
 ```
 
 > [!primary]
-> Ce fichier est le fichier d'initialisation de Linux avec des images cloud-init, il utilise les mots de passes qui vient de CALM au travers de variables qui ont cette forme @@{LinuxAccount.username}@@ pour le compte utilisateur ou @@{LinuxAccount.secret}@@ pour le mot de passe.
+> Ce fichier est le fichier d'initialisation de Linux avec des images cloud-init, il utilise les mots de passes qui vient de CALM au travers de variables qui ont cette forme @@{LinuxAccount.username}@@ pour le compte utilisateur ou @@{LinuxAccount.secret}@@ pour le mot de .
 >
 
 faites défiler la `fenêtre`{.action} de droite vers le bas.
 
-[04 create Linux blueprint 11](images/04-create-linux-blueprint11.png)
+![04 create Linux blueprint 11](images/04-create-linux-blueprint11.png){.thumbnail}
 
 Choisissez `LinuxAccount`{.action} dans **Check log-in upon create**.
 
-[04 create Linux blueprint 12](images/04-create-linux-blueprint12.png)
+![04 create Linux blueprint 12](images/04-create-linux-blueprint12.png){.thumbnail}
 
 Dans la fenêtre de gauche faites rendez-vous sur `Install`{.action} en dessous de **Package** et cliquez sur `+ Task`{.action}.
 
-[04 create Linux blueprint 13](images/04-create-linux-blueprint13.png)
+![04 create Linux blueprint 13](images/04-create-linux-blueprint13.png){.thumbnail}
 
 Saisissez ces informations concenrnant la tâche de redimentionnement du disque de votre machine virtuelle.
 
@@ -732,7 +731,7 @@ sleep(60)
 
 Et cliquez sur + `Task`{.action}.
 
-[04 create Linux blueprint 14](images/04-create-linux-blueprint13.png)
+![04 create Linux blueprint 14](images/04-create-linux-blueprint13.png){.thumbnail}
 
 Renseignez ces informations sur la tâche de vérification des services sur Linux:
 
@@ -749,7 +748,7 @@ sudo sed 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' 
 
 Et cliquez sur + `Task`{.action} pour ajouter une nouvelle tâche à la suite.
 
-[04 create Linux blueprint 15](images/04-create-linux-blueprint15.png)
+![04 create Linux blueprint 15](images/04-create-linux-blueprint15.png){.thumbnail}
 
 Renseignez ces informations sur la tâche de mise à jour UBUNTU:
 
@@ -767,7 +766,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 
 Et cliquez sur + `Task`{.action} pour ajouter une nouvelle tâche à la suite.
 
-[04 create Linux blueprint 16](images/04-create-linux-blueprint16.png)
+![04 create Linux blueprint 16](images/04-create-linux-blueprint16.png){.thumbnail}
 
 Renseignez ces informations sur la tâche d'installation de NGINX et CURL':
 
@@ -784,7 +783,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt install nginx curl -y
 
 Et cliquez sur + `Task`{.action} pour ajouter une nouvelle tâche à la suite.
 
-[04 create Linux blueprint 17](images/04-create-linux-blueprint17.png)
+![04 create Linux blueprint 17](images/04-create-linux-blueprint17.png){.thumbnail}
 
 Saisissez ces informations concernant la dernière tâche de personalisation de NGINX':
 
@@ -818,31 +817,31 @@ sudo cat /var/www/html/index.nginx-debian.html
 
 Et cliquez sur + `Save`{.action} pour finaliser la création de votre plan.
 
-[04 create Linux blueprint 18](images/04-create-linux-blueprint18.png)
+![04 create Linux blueprint 18](images/04-create-linux-blueprint18.png){.thumbnail}
 
 Cliquez sur `Launch`{.action} pour tester votre blueprint.
 
-[04 create Linux blueprint 19](images/04-create-linux-blueprint19.png)
+![04 create Linux blueprint 19](images/04-create-linux-blueprint19.png){.thumbnail}
 
 Saisissez le `nom`{.action} de votre déploiement de test dans **Application Name** et cliquez sur `Deploy`{.action}.
 
-[04 create Linux blueprint 20](images/04-create-linux-blueprint20.png)
+![04 create Linux blueprint 20](images/04-create-linux-blueprint20.png){.thumbnail}
 
 Le déploiement se lance.
 
-[04 create Linux blueprint 21](images/04-create-linux-blueprint21.png)
+![04 create Linux blueprint 21](images/04-create-linux-blueprint21.png){.thumbnail}
 
 Cliquez sur `Audit`{.action} pour voir l'avancement du déploiement.
 
-[04 create Linux blueprint 22](images/04-create-linux-blueprint22.png)
+![04 create Linux blueprint 22](images/04-create-linux-blueprint22.png){.thumbnail}
 
 Le déploiement terminé vous pouvez aller en HTTP sur l'adresse IP de votre VM NGINX pour voir le message de bienvenu.
 
-[04 create Linux blueprint 23](images/04-create-linux-blueprint23.png)
+![04 create Linux blueprint 23](images/04-create-linux-blueprint23.png){.thumbnail}
 
 ### Publication des applications 
 
-
+Cliquez à gauche sur l'icône des 
 
 
 ### Ajout des applications publiées sur le portail de CALM
