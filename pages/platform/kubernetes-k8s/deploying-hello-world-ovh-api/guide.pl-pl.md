@@ -104,15 +104,13 @@ The `GET /cloud/project/{serviceName}/kube/{kubeId}` API endpoint provides impor
 
 The first element needed to deploy the *Hello World* application is a `node pool`, a pool of machines, in your cluster. To create this node pool, you can use the `POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool` endpoint, which will deploy a node pool for your cluster on the Public Cloud.
 
-You will need to give it several information but only the `flavorName` parameter (the flavor of the instance you want to create) is a required parameter. If you don't fill a value for `desiredNodes` parameter, the default value will be 1.
+You will need to give it several information but only the `flavorName` parameter (the flavor of the instance you want to create) is a required parameter. If you don't fill a value for `desiredNodes` parameter, the default value will be 1, so you will create a new node pool with one node.
 For this tutorial choose a general purpose node, like the `b2-7` flavor.
 
 > [!api]
 >
 > @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
 >
-
-![Add a node pool](images/kube-api-06.png){.thumbnail}
 
 **Result:**
 
