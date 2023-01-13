@@ -128,7 +128,7 @@ Cliquez sur `Save`{.action}.
 
 ![01 create Project 12](images/01-create-project-12.png){.thumbnail}
 
-Dans la barre d'onglets rendez-vous sur `Environment`{.action} et cliquez sur `Create Environment`{.action}.
+Dans la barre d'onglets rendez-vous sur `Environments`{.action} et cliquez sur `Create Environment`{.action}.
 
 ![01 create Project 13](images/01-create-project-13.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Renseignez ces informations :
 * **Image** : `WS2022EN-SYSPREPED`
 
 > [!primary]
-> l'image a été générée à partir d'un WINDOWS Serveur 2022 dont on a appliqué un sysprep pour remettre tous les paramètres par défauts il est possible de lui appliquer des paramètres lors d'un déploiement avec CALM.
+> l'image a été générée à partir d'un WINDOWS Serveur 2022 dont on a appliqué un sysprep pour remettre tous les paramètres par défauts il est possible d'automatiser le déploiement de Windows à partir de ce type de VM à l'aide d'un ficher de configuration paramétré dans CALM.
 
 Ensuite faite défiler la `fenêtre`{.action} vers le bas.
 
@@ -173,7 +173,7 @@ Choisissez la carte réseau dans le VLAN `production`{.action}, cochez la case `
 
 Allez sur l'onglet `Linux`{.action}, saississez ces informations :
 
-* **Cluster** : `séléction de votre cluster`
+* **Cluster** : `sélection de votre cluster`
 * **vCPUs** : `4`
 * **Core per vCPU** : `1`
 * **Memory (GiB)** : ``
@@ -265,7 +265,7 @@ Votre environement est prêt pour la création et la diffusion d'applications.
 
 ### Création d'applications
 
-Nous allons crééer deux applications, tester le bon fonctionnement et les publier dans le marketplace du cluster.
+Nous allons crééer deux applications, tester leurs bon fonctionnements et les publier dans le marketplace du cluster.
 
 #### Création de l'application WEB IIS sous Windows
 
@@ -573,7 +573,7 @@ ssh_pwauth: true
 ```
 
 > [!primary]
-> Ce fichier est le fichier d'initialisation de Linux avec des images cloud-init, il utilise les mots de passes qui vient de CALM au travers de variables qui ont cette forme @@{LinuxAccount.username}@@ pour le compte utilisateur ou @@{LinuxAccount.secret}@@ pour le mot de .
+> Ce fichier est le fichier d'initialisation de Linux avec des images cloud-init, il utilise les mots de passes qui vient de CALM au travers de variables qui ont cette forme @@{LinuxAccount.username}@@ pour le compte utilisateur ou @@{LinuxAccount.secret}@@ pour le mot de passe.
 >
 
 faites défiler la `fenêtre`{.action} de droite vers le bas.
@@ -839,13 +839,161 @@ Le déploiement terminé vous pouvez aller en HTTP sur l'adresse IP de votre VM 
 
 ![04 create Linux blueprint 23](images/04-create-linux-blueprint23.png){.thumbnail}
 
-### Publication des applications 
+#### Publication des applications 
 
-Cliquez à gauche sur l'icône des 
+Allez sur l'icône `Blueprints`{.action} dans la barre verticale de CALM à gauche et cliquez sur le plan `WS 2022 IIS`{.action}.
 
+![05 publish Windows Application 01](images/05-publish-windows-application01.png){.thumbnail}
 
-### Ajout des applications publiées sur le portail de CALM
+Cliquez sur `Publish`{.action}.
 
+![05 publish Windows Application 02](images/05-publish-windows-application02.png){.thumbnail}
+
+Appliquez ces valeurs :
+
+* **Name** : `WS 2022 IIS`
+* **Publish with secrets** : `activé`
+* **Initial Version** : `1.0.0`
+
+Ensuite cliquez à gauche sur `Change`{.action}.
+
+![05 publish Windows Application 03](images/05-publish-windows-application03.png){.thumbnail}
+
+Cliquez sur `Upload from computer`{.action}.
+
+![05 publish Windows Application 04](images/05-publish-windows-application04.png){.thumbnail}
+
+Choisissez l'`image`{.action} sur votre ordinateur et cliquez sur `Ouvrir`{.action}.
+
+![05 publish Windows Application 05](images/05-publish-windows-application05.png){.thumbnail}
+
+Nommez votre Icône `IIS`{.action} et cliquez sur le bouton de `validation bleu`{.action}.
+
+![05 publish Windows Application 06](images/05-publish-windows-application06.png){.thumbnail}
+
+Cliquez sur `Select & continue`{.action}.
+
+![05 publish Windows Application 07](images/05-publish-windows-application07.png){.thumbnail}
+
+Cliquez sur `Submit for approval`{.action}.
+
+![05 publish Windows Application 08](images/05-publish-windows-application08.png){.thumbnail}
+
+L'application Windows est dans le marketplace en attente d'approbation.
+
+cliquez sur le plan `UBUNTU 22 NGINX`{.action}.
+
+![06 publish Windows Application 01](images/06-publish-linux-application01.png){.thumbnail}
+
+Cliquez sur `Publish`{.action}.
+
+![06 publish Windows Application 02](images/06-publish-linux-application02.png){.thumbnail}
+
+Appliquez ces valeurs :
+
+* **Name** : `UBUNTU 22 NGINX`
+* **Publish with secrets** : `activé`
+* **Initial Version** : `1.0.0`
+
+Ensuite cliquez à gauche sur `Change`{.action}.
+
+![06 publish Windows Application 03](images/06-publish-linux-application03.png){.thumbnail}
+
+Cliquez sur `Upload from computer`{.action}.
+
+![06 publish Windows Application 04](images/06-publish-linux-application04.png){.thumbnail}
+
+Choisissez l'`image`{.action} sur votre ordinateur et cliquez sur `Ouvrir`{.action}.
+
+![06 publish Windows Application 05](images/06-publish-linux-application05.png){.thumbnail}
+
+Nommez votre Icône `NGINX`{.action} et cliquez sur le bouton de `validation bleu`{.action}.
+
+![06 publish Windows Application 06](images/06-publish-linux-application06.png){.thumbnail}
+
+Selectionnez votre icône et cliquez sur `Select & continue`{.action}.
+
+![06 publish Windows Application 07](images/06-publish-linux-application07.png){.thumbnail}
+
+Cliquez sur `Submit for approval`{.action}.
+
+![06 publish Windows Application 08](images/06-publish-linux-application08.png){.thumbnail}
+
+L'application Linux est dans le marketplace en attente d'approbation.
+
+#### Ajout des applications publiées sur le portail de CALM
+
+Allez sur l'icône du `Marketplace Manager`{.action}, allez sur l'onglet `Approval Pending`{.action}, cochez l'application `UBUNTU 22 NGINX`{.action} et Cochez l'icône de validation à droite.
+
+![07 approve Application 02](images/07-approve-application02.png){.thumbnail}
+
+Cochez l'application `WS 2022 IIS`{.action} et Cochez l'icône de validation à droite.
+
+![07 approve Application 02](images/07-approve-application03.png){.thumbnail}
+
+Allez sur l'onglet `Approved`{.action}, cliquez sur la colonne `Source`{.action} pour afficher les applications locales en premier, cochez `WS 2022 IIS`{.action}, Sélectionnez à droite `NCM Self Service Project 01`{.action} et cliquez sur `Apply`{.action}.
+
+![08 ADD to market place 01](images/08-add-to-marketplace01.png){.thumbnail}
+
+Cliquez sur `Publish`{.action}.
+
+![08 ADD to market place 02](images/08-add-to-marketplace02.png){.thumbnail}
+
+L'application Windows est publiée.
+
+![08 ADD to market place 03](images/08-add-to-marketplace03.png){.thumbnail}
+
+Cochez `Ubuntu 22 NGINX`{.action}, Sélectionnez à droite `NCM Self Service Project 01`{.action} et cliquez sur `Apply`{.action}.
+
+![08 ADD to market place 04](images/08-add-to-marketplace04.png){.thumbnail}
+
+Cliquez sur `Publish`{.action}.
+
+![08 ADD to market place 05](images/08-add-to-marketplace05.png){.thumbnail}
+
+L'application Ubuntu est publiée.
+
+![08 ADD to market place 06](images/08-add-to-marketplace06.png){.thumbnail}
+
+Cliquez sur l'icône `Marketplace`{.action} en haut de la barre de menu verticale à gauche.
+
+![08 ADD to market place 07](images/08-add-to-marketplace07.png){.thumbnail}
+
+Cliquez sur `Get`{.action} en dessous de l'application UBUNTU 22 NGINX.
+
+![08 ADD to market place 08](images/08-add-to-marketplace08.png){.thumbnail}
+
+Cliquez sur `Launch`{.action}.
+
+![08 ADD to market place 08](images/08-add-to-marketplace08.png){.thumbnail}
+
+Saisissez un `Nom`{.action} dans **Application Name** et cliquez sur `Deploy`{.action}. pour déployer une application.
+
+![08 ADD to market place 09](images/08-add-to-marketplace09.png){.thumbnail}
+
+#### Suppression d'une application déployée
+
+Il est possible de supprimer une application déployée aussi simplement que de la déployer
+
+Cliquez sur l'icônes des `Blueprints`{.action} à gauche. et cochez une application déployée.
+
+![09 delete deployed APP 01](images/09-delete-deployed-app01.png){.thumbnail}
+
+Au travers du menu **Action** cliquez sur `Delete`{.action}.
+
+![09 delete deployed APP 02](images/09-delete-deployed-app02.png){.thumbnail}
+
+Cliquez sur `Confirm`{.action}.
+
+![09 delete deployed APP 03](images/09-delete-deployed-app03.png){.thumbnail}
+
+Tout comme un tâche de déploiement il est possible de voir l'état d'avancement d'une suppression.
+
+![09 delete deployed APP 04](images/09-delete-deployed-app04.png){.thumbnail}
+
+L'application est entierement supprimée.
+
+![09 delete deployed APP 05](images/09-delete-deployed-app05.png){.thumbnail}
 
 
 
