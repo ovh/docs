@@ -6,7 +6,7 @@ section: Office
 order: 03
 ---
 
-**Dernière mise à jour le 17/06/2022**
+**Dernière mise à jour le 16/01/2023**
 
 ## Objectif 
 
@@ -22,7 +22,7 @@ Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de p
 
 > [!warning]
 >
-> Deuis le 01/07/2022, tous les services Office 365 revendeurs (CSP2) qui ne disposeront pas d’un MPN ID inscrit au programme « CSP revendeur indirect » seront désactivés par Microsoft.
+> Depuis le 01/07/2022, tous les services Office 365 revendeurs (CSP2) qui ne disposeront pas d’un MPN ID inscrit au programme « CSP revendeur indirect » seront désactivés par Microsoft.
 >
 > Disposer d'un MPN ID est désormais obligatoire pour toute nouvelle souscription.
 >
@@ -41,18 +41,18 @@ Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace 
 
 - *Facultatif* : vous pouvez définir un **sous-domaine personnalisé** lors de la création d'une nouvelle plateforme en cochant la case prévue à cet effet (sous réserve des noms disponibles).
 - Saisissez votre MPN ID préalablement créé auprès de Microsoft.
-- Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licences (Tenant) que vous allez créer.
+- Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licences (*Tenant*) que vous allez créer.
 - Dans la liste en dessous, ajoutez les licences que vous souhaitez intégrer à votre groupe.
 - Cliquez sur `Commander`{.action} pour finaliser.
 
 > [!warning]
-> Veuillez vous assurer de la validité de l'adresse e-mail renseignée lors de la création de votre groupe de licences, car celle-ci servira à recevoir les informations d'identification à la plateforme Microsoft.
+> Veuillez vous assurer de la validité de l'adresse e-mail renseignée lors de la création de votre groupe de licences, car celle-ci servira à recevoir les informations d'identification sur la plateforme Microsoft.
 >
 
 ![office365](images/csp2-01.png){.thumbnail}
 
 > [!warning]
-> S'agissant de produits sous licences, il n'est pas possible de basculer un Tenant Office 365 revendeurs d'un idenfiant client OVHcloud à un autre. Il est nécessaire d'arrêter l'abonnement sur le compte OVHcloud d'origine et souscrire à ce même type de licence sur le nouveau compte OVHcloud.
+> S'agissant de produits sous licences, il n'est pas possible de basculer un *Tenant* Office 365 revendeurs d'un idenfiant client OVHcloud à un autre. Il est nécessaire d'arrêter l'abonnement sur le compte OVHcloud d'origine et souscrire ce même type de licence sur le nouveau compte OVHcloud.
 > 
 
 ### Gérer votre service Office 365 Revendeur
@@ -63,12 +63,12 @@ Pour cela, rendez-vous dans la section `Sunrise`{.action}. Dans le menu de gauch
 
 Les informations suivantes apparaissent:
 
-- **Nom interne du service** : nom de votre service. Il n'est visible que depuis votre espace client. Il correspond aussi au Tenant chez Microsoft.
-- **Nom d'affichage du service** : personnaliser le nom d'affichage du service dans votre espace client.
+- **Nom interne du service** : nom de votre service. Il n'est visible que depuis votre espace client. Il correspond aussi au *Tenant* chez Microsoft.
+- **Nom d'affichage du service** : personnalisez le nom d'affichage du service dans votre espace client.
 - **Créé le** : date de création du service.
 - **Portail d'administration Microsoft** : lien du portail Office qui permet d'administrer vos abonnements.
-- La gestion du mot de passe administrateur de votre Tenant Microsoft se fait directement depuis l'interface d'administration Microsoft. N'hésitez pas à consulter [la documentation de Microsoft](https://support.microsoft.com/account-billing/reset-a-forgotten-microsoft-account-password-eff4f067-5042-c1a3-fe72-b04d60556c37).
-- La gestion de domaine additionnel se fait également depuis l'interface d'administration de Microsoft. N'hésitez pas à consulter [la documentation de Microsoft](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
+- La gestion du mot de passe administrateur de votre *Tenant* Microsoft se fait directement depuis l'interface d'administration Microsoft. N'hésitez pas à consulter [la documentation de Microsoft](https://support.microsoft.com/account-billing/reset-a-forgotten-microsoft-account-password-eff4f067-5042-c1a3-fe72-b04d60556c37).
+- La gestion de domaines additionnels se fait également depuis l'interface d'administration de Microsoft. Consultez [la documentation de Microsoft](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
 
