@@ -12,9 +12,9 @@ order: 6
 >
 >  - [RACI DBaaS](https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/)
 >
->  - [RACI Instances](TBC)
+>  - [RACI Instances](https://docs.ovh.com/gb/en/public-cloud/raci-instances-public-cloud/)
 >
->  - [RACI Block Storage](TBC)
+>  - [RACI Block Storage](https://docs.ovh.com/gb/en/public-cloud/raci-block-storage-public-cloud/)
 >
 >  - [RACI Log Data Platform](https://docs.ovh.com/fr/logs-data-platform/responsibility-model/)
 >
