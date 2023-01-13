@@ -46,7 +46,7 @@ Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace 
 - Cliquez sur `Commander`{.action} pour finaliser.
 
 > [!warning]
-> Veuillez vous assurer de la validité de l'adresse e-mail renseignée lors de la création de votre groupe de licences, car celle-ci servira à recevoir les informations d'identification sur la plateforme Microsoft.
+> Veuillez vous assurer de la validité de l'adresse e-mail renseignée lors de la création de votre groupe de licences, car celle-ci servira à recevoir les informations d'identification pour la plateforme Microsoft.
 >
 
 ![office365](images/csp2-01.png){.thumbnail}
