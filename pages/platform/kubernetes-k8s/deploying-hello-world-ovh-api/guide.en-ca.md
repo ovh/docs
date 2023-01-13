@@ -46,14 +46,11 @@ The `GET /cloud/project/{serviceName}/kube` API endpoint lists all the available
 **Result:**
 
 ```json
-{
 [
-"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ]
-}
 ```
 
 By calling it, you can view a list of values. Note down the ID of the cluster you want to use. In this example, we will refer to it as `kubeId`.
