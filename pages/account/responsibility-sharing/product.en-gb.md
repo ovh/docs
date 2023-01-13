@@ -10,13 +10,13 @@ order: 6
 >
 > ### RACI Public Cloud
 >
->  - [RACI DBaaS](https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/)
+>  - [RACI Public Cloud Databases](https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/)
 >
->  - [RACI Instances](https://docs.ovh.com/gb/en/public-cloud/raci-instances-public-cloud/)
+>  - [RACI Public Cloud Instances](https://docs.ovh.com/gb/en/public-cloud/raci-instances-public-cloud/)
 >
 >  - [RACI Block Storage](https://docs.ovh.com/gb/en/public-cloud/raci-block-storage-public-cloud/)
 >
->  - [RACI Log Data Platform](https://docs.ovh.com/fr/logs-data-platform/responsibility-model/)
+>  - [RACI Log Data Platform](https://docs.ovh.com/gb/en/logs-data-platform/responsibility-model/)
 >
 > ### RACI Microsoft collaborative solutions
 >

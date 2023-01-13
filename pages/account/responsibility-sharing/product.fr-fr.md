@@ -2,7 +2,7 @@
 title: Partage de responsabilités
 slug: partage-responsabilite
 excerpt: Partage de responsabilités entre OVHcloud et ses clients
-sections: RACI Bare Metal Cloud, RACI Public Cloud, Solutions collaborative Microsoft, Web Cloud 
+sections: RACI Bare Metal Cloud, RACI Public Cloud, RACI Microsoft collaborative solutions, RACI Web Cloud
 order: 6
 ---
 
@@ -10,9 +10,9 @@ order: 6
 >
 > ### RACI Public Cloud
 >
->  - [RACI DBaaS](https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/)
+>  - [RACI Public Cloud Databases](https://docs.ovh.com/fr/publiccloud/databases/responsibility-model/)
 >
->  - [RACI Instances](https://docs.ovh.com/fr/public-cloud/raci-instances-public-cloud/)
+>  - [RACI Public Cloud Instances](https://docs.ovh.com/fr/public-cloud/raci-instances-public-cloud/)
 >
 >  - [RACI Block Storage](https://docs.ovh.com/fr/public-cloud/raci-block-storage-public-cloud/)
 >
