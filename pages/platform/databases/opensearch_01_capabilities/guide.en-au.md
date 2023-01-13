@@ -2,8 +2,8 @@
 title: OpenSearch - Capabilities and Limitations
 slug: opensearch/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for OpenSearch
-section: OpenSearch - Guides
-order: 1
+section: OpenSearch - Guides
+order: 010
 ---
 
 **Last updated November 8th, 2022**
