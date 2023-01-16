@@ -6,7 +6,7 @@ section: AI Deploy - Tutorials
 order: 04
 ---
 
-**Last updated 3rd November, 2022.**
+**Last updated 16th January, 2023.**
 
 > [!primary]
 >
@@ -36,7 +36,7 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 
 First, the tree structure of your folder should be as follows.
 
-![image](images/tree_yolov5_web_service.png){.thumbnail}
+![image](images/tree_flask-yolov5_service.png){.thumbnail}
 
 -   You have to create the folder named `models_train` and this is where you can store the weights generated after your trainings. You are free to put as many weight files as you want in the `models_train` folder.
 
@@ -49,6 +49,7 @@ Create a Python file named `app.py`.
 Inside that file, import your required modules:
 
 ``` {.python}
+import sys
 import io
 from PIL import Image
 import cv2
@@ -73,16 +74,6 @@ Here a python dictionary is created to store the name of each of your weight fil
 dictOfModels = {}
 # create a list of keys to use them in the select part of the html code
 listOfKeys = []
-for r, d, f in os.walk("models_train"):
-    for file in f:
-        if ".pt" in file:
-            # example: file = "model1.pt"
-            # the path of each model: os.path.join(r, file)
-            dictOfModels[os.path.splitext(file)[0]] = torch.hub.load('ultralytics/yolov5', 'custom', path=os.path.join(r, file), force_reload=True)
-            # you would obtain: dictOfModels = {"model1" : model1 , etc}
-    for key in dictOfModels :
-        listOfKeys.append(key)     # put all the keys in the listOfKeys
-    print(listOfKeys)
 ```
 
 Write the inference function:
@@ -117,12 +108,11 @@ def predict():
     # updates results.imgs with boxes and labels
     results.render()
     # encoding the resulting image and return it
-    for img in results.imgs:
+    for img in results.ims:
         RGB_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         im_arr = cv2.imencode('.jpg', RGB_img)[1]
         response = make_response(im_arr.tobytes())
         response.headers['Content-Type'] = 'image/jpeg'
-    # return your image with boxes and labels
     return response
 
 def extract_img(request):
@@ -135,10 +125,31 @@ def extract_img(request):
     return file
 ```
 
-Start your app:
+Define the main and start your app:
 
 ``` {.python}
 if __name__ == '__main__':
+
+    print('Starting yolov5 webservice...')
+    # Getting directory containing models from command args (or default 'models_train')
+    models_directory = 'models_train'
+    if len(sys.argv) > 1:
+        models_directory = sys.argv[1]
+    print(f'Watching for yolov5 models under {models_directory}...')
+    for r, d, f in os.walk(models_directory):
+        for file in f:
+            if ".pt" in file:
+                # example: file = "model1.pt"
+                # the path of each model: os.path.join(r, file)
+                model_name = os.path.splitext(file)[0]
+                model_path = os.path.join(r, file)
+                print(f'Loading model {model_path} with path {model_path}...')
+                dictOfModels[model_name] = torch.hub.load('ultralytics/yolov5', 'custom', path=model_path, force_reload=True)
+                # you would obtain: dictOfModels = {"model1" : model1 , etc}
+        for key in dictOfModels :
+            listOfKeys.append(key) # put all the keys in the listOfKeys
+
+    # starting app
     app.run(debug=True,host='0.0.0.0')
 ```
 
@@ -149,23 +160,26 @@ Find more information about the Flask application [here](https://flask.palletspr
 The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ``` {.console}
-Flask==1.1.2
-
-pandas
-
-opencv-python-headless
-
-matplotlib
-
-seaborn
+Flask==2.1.0
+torch==1.13.1
+torchvision==0.14.1
+psutil==5.9.4
+IPython==8.8.0
+requests==2.28.2
+PyYAML==6.0
+tqdm==4.64.1
+pandas==1.5.2
+opencv-python-headless==4.6.0.66
+matplotlib==3.6.3
+seaborn==0.12.2
 ```
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a pytorch image:
+Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a python:3.8 image:
 
 ``` {.console}
-FROM pytorch/pytorch
+FROM python:3.8
 ```
 
 Create the home directory and add your files to it:
@@ -199,7 +213,7 @@ ENV HOME=/workspace
 Launch the following command from the **Dockerfile** directory to build your application image:
 
 ``` {.console}
-docker build . -t yolov5_web:latest
+docker build . -t flask-yolov5:latest
 ```
 
 > [!primary]
@@ -208,14 +222,14 @@ docker build . -t yolov5_web:latest
 
 > [!primary]
 >
-> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **yolov5_web:latest**.
+> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **flask-yolov5:latest**.
 
 ### Test it locally (optional)
 
 Launch the following **Docker command** to launch your application locally on your computer:
 
 ``` {.console}
-docker run --rm -it -p 5000:5000 --user=42420:42420 yolov5_web:latest
+docker run --rm -it -p 5000:5000 --user=42420:42420 flask-yolov5:latest
 ```
 
 > [!primary]
@@ -249,8 +263,8 @@ docker login -u <user> -p <password> <shared-registry-address>
 Push the compiled image into the shared registry:
 
 ``` {.console}
-docker tag yolov5_web:latest <shared-registry-address>/yolov5_web:latest
-docker push <shared-registry-address>/yolov5_web:latest
+docker tag flask-yolov5:latest <shared-registry-address>/flask-yolov5:latest
+docker push <shared-registry-address>/flask-yolov5:latest
 ```
 
 ### Launch the AI Deploy app
@@ -258,7 +272,7 @@ docker push <shared-registry-address>/yolov5_web:latest
 The following command starts a new app running your Flask application:
 
 ``` {.console}
-ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/yolov5_web:latest
+ovhai app run --default-http-port 5000 --cpu 4 <shared-registry-address>/flask-yolov5:latest
 ```
 
 > [!primary]
