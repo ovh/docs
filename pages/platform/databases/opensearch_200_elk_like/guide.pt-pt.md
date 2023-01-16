@@ -2,7 +2,7 @@
 title: OpenSearch - Monitor your infra (with Logstash or Fluent Bit)
 excerpt: Find out how to set up Logstash and Fluent Bit with your OpenSearch databases
 slug: opensearch/logstash
-section: OpenSearch - Guides
+section: OpenSearch - Guides
 order: 200
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/logstash/'
