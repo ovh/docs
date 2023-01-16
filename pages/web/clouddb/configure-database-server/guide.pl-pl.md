@@ -14,13 +14,13 @@ order: 06
 
 ## Wprowadzenie
 
-Za pomocą serwerów baz CloudDB możesz wpłynąć na globalne parametry serwera. Możesz również wyświetlić aktywność swojego serwera. 
+Za pomocą serwerów baz Web Cloud Databases możesz wpłynąć na globalne parametry serwera. Możesz również wyświetlić aktywność swojego serwera. 
 
 **Dowiedz się, jak skonfigurować i zoptymalizować serwer baz danych.**
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji CloudDB](https://www.ovh.pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie [instancji Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
@@ -46,13 +46,13 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji SQL. Pr
 
 ## Zarządzaj dostępami
 
-Usługa CloudDB jest dostępna z poziomu hostingu OVHcloud lub/i z sieci publicznej.
+Usługa Web Cloud Databases jest dostępna z poziomu hostingu OVHcloud lub/i z sieci publicznej.
 
 #### Zatwierdź adres IP
 
-Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.
+Aby uzyskać dostęp do instancji Web Cloud Databases, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.
 
-W Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji CloudDB. 
+W Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji Web Cloud Databases. 
 
 Kliknij kartę Autoryzowane `IP`{.action}, a następnie przycisk `Dodaj adres IP/maskę`{.action}.
 
@@ -68,25 +68,25 @@ W przypadku hostingu OVHcloud możesz po prostu zaznaczyć opcję `Zezwól hosti
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-ip-step3.png){.thumbnail}
 
-### Zmień ofertę CloudDB
+### Zmień ofertę Web Cloud Databases
 
-Aby zmienić ofertę CloudDB, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
+Aby zmienić ofertę Web Cloud Databases, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
 W zakładce **"Informacje ogólne"**, która jest wyświetlana domyślnie, kliknij `...`{.action} po prawej stronie słowa "RAM", a następnie `Zmień ilość pamięci RAM`{.action}, aby przejść do zlecenia zamówienia na tą zmianę.
 
-![clouddb](images/private-sql-order-ram01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-order-ram01.png){.thumbnail}
 
 Wybierz żądaną ilość pamięci RAM i kliknij `Dalej`{.action}. Następnie możesz wybrać żądany okres.
 
 > [!primary]
 >
-> Prorata zostanie wpłacona, jeśli pozostaniesz kilka miesięcy przed wygaśnięciem usługi. Kwota proporcjonalna zostanie obliczona na podstawie daty wygaśnięcia instancji CloudDB, a nie na podstawie daty wygaśnięcia zamówienia.
+> Prorata zostanie wpłacona, jeśli pozostaniesz kilka miesięcy przed wygaśnięciem usługi. Kwota proporcjonalna zostanie obliczona na podstawie daty wygaśnięcia instancji Web Cloud Databases, a nie na podstawie daty wygaśnięcia zamówienia.
 > 
 
 Po zatwierdzeniu regulaminów zostaniesz przekierowany do zamówienia, abyś mógł uregulować tą zmianę. Zmiana zostanie wykonana w ciągu kilku godzin.
 
 > [!warning]
 >
-> Jeśli dysponujesz aktualnie darmowym CloudDB dzięki hostingowi Performance, zmiana oferty straci jej bezpłatność.
+> Jeśli dysponujesz aktualnie darmowym Web Cloud Databases dzięki hostingowi Performance, zmiana oferty straci jej bezpłatność.
 > 
 
 ### Zmiana konfiguracji serwera baz danych
@@ -99,7 +99,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Zastosuj`{.action}.
 
-![clouddb](images/private-sql-config02.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-config02.png){.thumbnail}
 
 - **Rozmiar**: Katalog plików tymczasowych. **/dev/shm** odpowiada instancji pamięci RAM. **/tmp** odpowiada instancji dysku twardego.
 - **MaxAllowedPacket**: Maksymalny rozmiar pakietów
@@ -158,7 +158,7 @@ Nie można zmienić konfiguracji instancji PostgreSQL.
 
 Możesz jednak aktywować rozszerzenia Twoich baz danych. W tym celu przejdź do zakładki `Bazy danych`, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
 
-![clouddb](images/private-sql-config03.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-config03.png){.thumbnail}
 
 ### Zmiana wersji MySQL, PostgreSQL lub MariaDB serwera baz danych
 
@@ -168,7 +168,7 @@ Aktualna wersja pojawia się w wierszu **"Wersja"**.
 
 Aby zmienić tę wersję, kliknij `Zmień wersję`{.action}.
 
-![clouddb](images/private-sql-config04.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-config04.png){.thumbnail}
 
 #### Jak poznać dokładną wersję PostgreSQL, której używam?
 
@@ -207,7 +207,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykonywania zapytań"**.
 
-![clouddb](images/private-sql-metrics01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-metrics01.png){.thumbnail}
 
 #### Dostęp do logów "Slow Query"
 
@@ -221,7 +221,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 W zakładce `informacje ogólne` sekcja **"SFTP"** w polu **"Informacje o logowaniu"**
 
-![clouddb](images/private-sql-SFTP01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-SFTP01.png){.thumbnail}
 
 Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
 
@@ -233,7 +233,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki pamięci RAM"**.
 
-![clouddb](images/private-sql-metrics02.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-metrics02.png){.thumbnail}
 
 #### Monitorowanie liczby połączeń na minutę
 
@@ -243,7 +243,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki całkowitej liczby połączeń na minutę"**.
 
-![clouddb](images/private-sql-metrics03.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-metrics03.png){.thumbnail}
 
 ### Optymalizacja bazy danych
 

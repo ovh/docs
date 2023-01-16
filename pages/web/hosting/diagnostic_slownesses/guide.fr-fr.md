@@ -154,7 +154,7 @@ phpinfo();
 
 Connectez-vous à votre base de données en suivant **l'étape 3** de notre guide sur la [création d'une base de données mutualisée](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-Si vous utilisez une base de données sur une offre **CloudDB**, consultez notre guide sur [la connexion à votre base de données présente sur une offre Cloud DB](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+Si vous utilisez une base de données sur une offre **Web Cloud Databases**, consultez notre guide sur [la connexion à votre base de données présente sur une offre Web Cloud Databases](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
 
 Si la connexion est réussie, vous arrivez sur l'interface suivante :
 

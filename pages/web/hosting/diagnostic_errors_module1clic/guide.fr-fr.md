@@ -51,7 +51,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/).
+Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois modules en 1 clic supplémentaires. Les offres **Performance** vous permettront aussi d'activer gratuitement un [serveur Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/).
 
 #### Solution n°2 : supprimer une base de données non utilisée <a name="supprimer-la-base"></a>
 
@@ -153,7 +153,7 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) sur une base de données située sur un [serveur CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur noté lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
+Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) sur une base de données située sur un [serveur Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur noté lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
 
 Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](../creer-bases-de-donnees-et-utilisateurs/#gerer-les-droits-des-utilisateurs) concerné, afin qu'il dispose des droits **Administrateur** ou en **Lecture/écriture** sur la base de données.
 
@@ -163,7 +163,7 @@ Vérifiez également ses identifiants en vous [connectant directement](../connex
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) sur une base de données située sur un [serveur CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Vous avez reçu ce message d'erreur par e-mail. Il signifie que le nom de serveur de bases de données que vous avez indiqué est incorrect.
+Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](../modules-en-1-clic/#installation-avancee-dun-module) sur une base de données située sur un [serveur Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Vous avez reçu ce message d'erreur par e-mail. Il signifie que le nom de serveur de bases de données que vous avez indiqué est incorrect.
 
 Cliquez sur la partie `Web cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sur l'onglet `Bases de données`{.action}.
 

@@ -48,7 +48,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Utilizar una [base de datos asociada a su plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o a un [servidor CloudDB](https://www.ovh.es/cloud/cloud-databases/).
+- Utilizar una [base de datos asociada a su plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o a un [servidor Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 - Disponer de las claves FTP para conectarse al [espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) del alojamiento.
 
 ## Procedimiento
@@ -82,7 +82,7 @@ Busque y abra el archivo de configuración de su sitio web:
 Existen dos posibilidades:
 
 - Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting;
-- Caso n° 2: está incluida en una solución *CloudDB*, en cuyo caso deberá encontrar el **nombre del servidor** y el **nombre de usuario** de la base de datos para identificarla sin riesgo de error.
+- Caso n° 2: está incluida en una solución *Web Cloud Databases*, en cuyo caso deberá encontrar el **nombre del servidor** y el **nombre de usuario** de la base de datos para identificarla sin riesgo de error.
 
 Para determinar qué casos se aplican al sitio web, en el archivo de configuración indicado en el [Etapa 1](#step1), empiece por anotar el nombre de la base de datos:
 
@@ -99,7 +99,7 @@ Vuelva al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, vaya al [Etapa 3](#step3).
 
-En caso contrario, la base de datos del sitio web está asociada a un servicio [CloudDB](https://www.ovh.es/cloud/cloud-databases/).
+En caso contrario, la base de datos del sitio web está asociada a un servicio [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
 En ese caso, deberá volver al archivo de configuración del sitio web para registrar el *nombre del servidor* y el *nombre de usuario* de la base de datos:
 
@@ -110,7 +110,7 @@ En ese caso, deberá volver al archivo de configuración del sitio web para regi
 
 A continuación, haga clic en `Bases de datos`{.action} en el apartado `Web Cloud`{.action}. 
 
-En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [CloudDB](https://www.ovh.es/cloud/cloud-databases/), con el `Nombre del host`{.action}.
+En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/), con el `Nombre del host`{.action}.
 
 En el área de cliente de OVHcloud, abra la pestaña `Usuario y permisos`{.action} para identificar también el `Nombre de usuario`{.action} de la base de datos.
 
@@ -197,7 +197,7 @@ De nuevo, existen dos posibles situaciones:
 
 - Si la base de datos se encuentra en la sección dedicado al [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/) del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), siga estas [instrucciones](#case1).
 
-- Si su base de datos se encuentra en la sección de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) dedicada a sus productos de [CloudDB](https://docs.ovh.com/es/clouddb/), siga estas [instrucciones](#case2).
+- Si su base de datos se encuentra en la sección de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) dedicada a sus productos de [Web Cloud Databases](https://docs.ovh.com/es/clouddb/), siga estas [instrucciones](#case2).
 
 #### Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting <a name="case1"></a>
 
@@ -213,7 +213,7 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Caso n° 2: la base de datos de su sitio web forma parte de una solución CloudDB. <a name="case2"></a>
+#### Caso n° 2: la base de datos de su sitio web forma parte de una solución Web Cloud Databases. <a name="case2"></a>
 
 Acceda a la sección `Bases de datos`{.action} del área de cliente y haga clic en el servidor correspondiente en la pestaña `Usuarios y permisos`{.action}.
 

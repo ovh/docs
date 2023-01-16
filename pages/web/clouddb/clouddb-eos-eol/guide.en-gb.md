@@ -1,5 +1,5 @@
 ---
-title: 'CloudDB EOS and EOL announcements'
+title: 'Web Cloud Databases EOS and EOL announcements'
 slug: clouddb-eos-eol
 section: 'Technical resources'
 ---

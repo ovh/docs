@@ -20,14 +20,14 @@ Baza danych może zawierać dużą liczbę informacji niezbędnych dla Twojej st
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [instancji Web Cloud Databases](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 > [!primary]
 >
-> Pamiętaj, że rozwiązania [CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+> Pamiętaj, że rozwiązania [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
 > <br> - Pamiętaj, że nie ma dostępu "root".
 > <br> - Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL lub Adminer jest w pełni kompatybilne.
 >
@@ -49,13 +49,13 @@ W kolumnie **"Kopie zapasowe"** liczba ta odpowiada liczbie kopii zapasowych dos
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Zapisz teraz`{.action}.
 
-![clouddb](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Eksport kopii zapasowej
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wyświetl kopie zapasowe.`{.action}
 
-![clouddb](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie `Pobierz kopię zapasową`{.action}, aby pobrać kopię zapasową.
 
@@ -73,7 +73,7 @@ Po zalogowaniu się do phpMyAdmin kliknij nazwę bazy danych, którą chcesz wye
 
 Masz dwa możliwe sposoby eksportu. Jeśli nie potrzebujesz określonego trybu, zalecamy użycie trybu **szybkiego** w formacie **SQL**.
 
-![clouddb](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 Eksportowanie bazy MySQL lub MariaDB z wiersza poleceń
 

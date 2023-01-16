@@ -48,7 +48,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 
 - Ter um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou a um [CloudDB](https://www.ovh.pt/cloud/cloud-databases/).
+- Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou a um [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
 - Ter acesso às credenciais FTP para aceder ao [espaço de armazenamento do alojamento](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
 ## Instruções
@@ -82,7 +82,7 @@ Procure e abra o ficheiro de configuração do seu site:
 Existem dois casos possíveis:
 
 - Caso n°1: a base de dados do seu site faz parte da sua oferta de alojamento;
-- Caso n°2: está incluída numa oferta *CloudDB*, caso em que deverá encontrar o **nome do servidor** e o **nome de utilizador** da sua base de dados, de forma a identificar a base de dados sem correr o risco de erro.
+- Caso n°2: está incluída numa oferta *Web Cloud Databases*, caso em que deverá encontrar o **nome do servidor** e o **nome de utilizador** da sua base de dados, de forma a identificar a base de dados sem correr o risco de erro.
 
 Para determinar o caso aplicável ao seu website, no ficheiro de configuração identificado na [Etapa 1](#step1), comece por anotar o nome da sua base de dados:
 
@@ -99,7 +99,7 @@ De seguida, volte à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?a
 
 Se localizar o nome da base de dados indicado no ficheiro de configuração nesta parte da Área de Cliente, consulte o [Etapa 3](#step3).
 
-Caso contrário, a base de dados do seu site está associada a uma oferta [CloudDB](https://www.ovh.pt/cloud/cloud-databases/).
+Caso contrário, a base de dados do seu site está associada a uma oferta [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
 
 Para anotar o *nome do servidor* e o *nome de utilizador* da base de dados, deverá voltar ao ficheiro de configuração do seu site:
 
@@ -110,7 +110,7 @@ Para anotar o *nome do servidor* e o *nome de utilizador* da base de dados, deve
 
 A seguir, clique na secção `Bases de dados`{.action}, na secção `Web Cloud`{.action}. 
 
-No separador `Informações gerais`{.action}, identifique, nas suas ofertas [CloudDB](https://www.ovh.pt/cloud/cloud-databases/), a que contém, sob a menção `Nome do host`{.action}, o nome do servidor da sua base de dados encontrado anteriormente.
+No separador `Informações gerais`{.action}, identifique, nas suas ofertas [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/), a que contém, sob a menção `Nome do host`{.action}, o nome do servidor da sua base de dados encontrado anteriormente.
 
 Ainda nesta parte da sua Área de Cliente, aceda ao separador `Utilizador e permissões`{.action}, para que possa também consultar o `Nome de utilizador`{.action} da sua base de dados.
 
@@ -197,7 +197,7 @@ Novamente, dois casos são possíveis:
 
 - Se a base de dados estiver na parte da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) dedicada ao seu [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), siga as [instruções](#case1).
 
-- Se a sua base de dados estiver na parte da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) dedicada às suas ofertas [CloudDB](https://docs.ovh.com/pt/clouddb/), siga as [instruções](#case2).
+- Se a sua base de dados estiver na parte da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) dedicada às suas ofertas [Web Cloud Databases](https://docs.ovh.com/pt/clouddb/), siga as [instruções](#case2).
 
 #### Caso n°1: a base de dados do seu site faz parte da sua oferta de alojamento <a name="case1"></a>
 
@@ -213,7 +213,7 @@ Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Et
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Caso n°2: a base de dados do seu site faz parte de uma oferta CloudDB <a name="case2"></a>
+#### Caso n°2: a base de dados do seu site faz parte de uma oferta Web Cloud Databases <a name="case2"></a>
 
 Aceda à secção `Bases de dados`{.action} da Área de Cliente e ao servidor em questão, clique no separador `Utilizadores e permissões`{.action}:
 

@@ -49,9 +49,9 @@ Sur une période glissante de 3600 secondes (soit 1 heure), votre offre d'héber
 
 #### Connexions simultanées à la base de données
 
-- Sur les offres d'hébergement Web (bases de données partagées), il y a une limite de 30 connexions simultanées par base de données (200 avec une base de données CloudDB). Veuillez consulter le [détail de nos offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
+- Sur les offres d'hébergement Web (bases de données partagées), il y a une limite de 30 connexions simultanées par base de données (200 avec une base de données Web Cloud Databases). Veuillez consulter le [détail de nos offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
 
-- Vous pouvez également commander des bases de données **CloudDB** supplémentaires, celles-ci disposant d'options de personnalisation :
+- Vous pouvez également commander des bases de données **Web Cloud Databases** supplémentaires, celles-ci disposant d'options de personnalisation :
 
     - *max_connections*: 100 par défaut, avec possibilité de passer à 200
 
@@ -61,7 +61,7 @@ Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https
 
 #### Connexions depuis un serveur externe
 
-- Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à la base de données d'un hébergement Web OVHcloud, qu'il s'agisse de bases de données SQL partagées ou CloudDB. Seuls les serveurs OVHcloud Web Hosting peuvent se connecter aux serveurs de base de données. Toute autre connexion provoquera l'erreur suivante:
+- Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à la base de données d'un hébergement Web OVHcloud, qu'il s'agisse de bases de données SQL partagées ou Web Cloud Databases. Seuls les serveurs OVHcloud Web Hosting peuvent se connecter aux serveurs de base de données. Toute autre connexion provoquera l'erreur suivante:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -156,7 +156,7 @@ Découvrez comment [se connecter à l’espace de stockage](../connexion-espace-
 
 #### Base de données / SQL
 
-Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (CloudDB), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou via les [API OVHcloud](https://api.ovh.com/)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées à 3 endroits distincts en France : Roubaix(RBX), Strasbourg(SBG), et Gravelines(GRA). La politique de rétention des sauvegardes est de 30 jours.
+Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (Web Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou via les [API OVHcloud](https://api.ovh.com/)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées à 3 endroits distincts en France : Roubaix(RBX), Strasbourg(SBG), et Gravelines(GRA). La politique de rétention des sauvegardes est de 30 jours.
 
 Découvrez comment [Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/) sur notre documentation.
 

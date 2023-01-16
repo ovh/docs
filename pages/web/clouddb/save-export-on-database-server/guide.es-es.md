@@ -20,12 +20,12 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 ## Requisitos
 
-- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
+- Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
-> Tenga en cuenta que las soluciones [CloudDB](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> Tenga en cuenta que las soluciones [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
 > <br> - Tenga en cuenta que no hay acceso "root".
 > <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 
@@ -46,13 +46,13 @@ En la columna **"Copias de seguridad"**, la cifra corresponde al número de copi
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Guardar`{.action}.
 
-![clouddb](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Exportar una copia de seguridad
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y, seguidamente, en `Mostrar las copias de seguridad`{.action}.
 
-![clouddb](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
 
 Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, seguidamente, en `Descargar la copia de seguridad`{.action} para descargar la copia de seguridad.
 
@@ -70,7 +70,7 @@ Una vez conectado a phpMyAdmin, haga clic en el nombre de la base de datos que q
 
 Hay dos modos de exportación posibles. Si no necesita ayuda específica, le recomendamos que utilice el modo **rápido** en formato **SQL**.
 
-![clouddb](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 Exportar la base de datos MySQL o MariaDB en línea de comandos
 

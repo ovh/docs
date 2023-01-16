@@ -85,7 +85,7 @@ Introduzca la información de conexión a la base de datos que utilizará con el
 
 - Si la base de datos ya está creada en el alojamiento, selecciónela e introduzca la información que se le solicita.
 - Si la base de datos todavía no está creada en el alojamiento, deberá seguir los pasos que se indican para crearla y, a continuación, seleccionarla e introducir la información que se le solicita.
-- Si la base de datos ya está creada en un CloudDB, selecciónela en la lista `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El CloudDB y el plan de hosting deben estar alojados en el mismo datacenter.
+- Si la base de datos ya está creada en un Web Cloud Databases, selecciónela en la lista `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El Web Cloud Databases y el plan de hosting deben estar alojados en el mismo datacenter.
 - Si la base de datos ya está creada en otro alojamiento web de OVHcloud, selecciónela en la lista `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. La base de datos y el plan de hosting deben estar alojados en el mismo datacenter.
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.

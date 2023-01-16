@@ -32,9 +32,9 @@ Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni d
   
 ## Wymagania początkowe
 
-- Posiadanie [instancji CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [instancji Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Przeglądanie [przewodnik dotyczący uruchomienia usługi CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
+- Przeglądanie [przewodnik dotyczący uruchomienia usługi Web Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
 
 ## W praktyce
 
@@ -52,9 +52,9 @@ Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni d
 
 Aby zalogować się do bazy danych, musisz dysponować:
 
-- Posiadanie adresu instancji CloudDB
-- Posiadanie portu dla instancji CloudDB
-- Posiadanie nazwy użytkownika instancji CloudDB
+- Posiadanie adresu instancji Web Cloud Databases
+- Posiadanie portu dla instancji Web Cloud Databases
+- Posiadanie nazwy użytkownika instancji Web Cloud Databases
 - Hasło przypisane do użytkownika
 - Posiadanie bazy danych
 
@@ -101,7 +101,7 @@ Połączyłeś się z bazą danych:
 
 #### Logowanie przez interfejs phpMyAdmin
 
-Możesz korzystać z phpMyAdmin do przeglądania zawartości bazy danych. W tym celu zainstaluj phpMyAdmin na Twoim własnym serwerze lub hostingu. Podczas tej instalacji skonfiguruj informacje dotyczące Twojego serwera CloudDB i wybranej bazy danych, aby phpMyAdmin mógł się do niego zalogować.
+Możesz korzystać z phpMyAdmin do przeglądania zawartości bazy danych. W tym celu zainstaluj phpMyAdmin na Twoim własnym serwerze lub hostingu. Podczas tej instalacji skonfiguruj informacje dotyczące Twojego serwera Web Cloud Databases i wybranej bazy danych, aby phpMyAdmin mógł się do niego zalogować.
 
 ### Eksportuj i zaimportuj bazę danych MySQL lub MariaDB
 
@@ -119,7 +119,7 @@ cat nazwa_bazy.sql | mysql --host=serwer --user=użytkownik --port=port --passwo
 
 > [!primary]
 >
-> W niektórych przypadkach pamięć RAM dostępna w Twojej instancji CloudDB może nie powodować odpowiedniego eksportu lub importu. W takim przypadku zalecamy użycie narzędzia OVHcloud w Panelu klienta. W razie potrzeby skorzystaj z dokumentacji ["Pierwsze kroki z usługą CloudDB"](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
+> W niektórych przypadkach pamięć RAM dostępna w Twojej instancji Web Cloud Databases może nie powodować odpowiedniego eksportu lub importu. W takim przypadku zalecamy użycie narzędzia OVHcloud w Panelu klienta. W razie potrzeby skorzystaj z dokumentacji ["Pierwsze kroki z usługą Web Cloud Databases"](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
 >
 
 ## Sprawdź również

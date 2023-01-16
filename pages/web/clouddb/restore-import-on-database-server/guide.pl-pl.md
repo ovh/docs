@@ -20,14 +20,14 @@ W wyniku błędu bazy danych musisz mieć możliwość przywrócenia kopii zapas
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie [instancji Web Cloud Databases](https://www.ovh.com/pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 > [!primary]
 >
-> Pamiętaj, że rozwiązania [CloudDB](https://www.ovh.pl/cloud/cloud-databases/) nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+> Pamiętaj, że rozwiązania [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
 > <br> - Pamiętaj, że nie ma dostępu "root".
 > <br> - Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL lub Adminer jest w pełni kompatybilne.
 >
@@ -44,7 +44,7 @@ Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wy�
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
-![clouddb](images/private-sql-restore01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-restore01.png){.thumbnail}
 
 > [!warning]
 >
@@ -55,7 +55,7 @@ Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} 
 
 Kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
 
-![clouddb](images/private-sql-import01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-import01.png){.thumbnail}
 
 Masz dwie możliwości:
 
@@ -70,7 +70,7 @@ Wpisz nazwę pliku importowanego, kliknij `Przeglądaj`{.action}, aby go wybrać
 > Plik musi mieć format ".sql", ".txt" lub ".gz".
 > 
 
-![clouddb](images/private-sql-import02.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-import02.png){.thumbnail}
 
 Zaznacz, jeśli chcesz, **"Wyczyść aktualną bazę danych"** przed importem i **"Wyślij e-mail po zakończeniu importu"**, aby otrzymać informacje o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
 
@@ -80,7 +80,7 @@ Jeśli wcześniej zaimportowałeś plik, możesz wybrać opcję **"Import istnie
 
 Wybierz plik w rozwijanym menu i kliknij `Dalej`{.action}.
 
-![clouddb](images/private-sql-import03.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-import03.png){.thumbnail}
 
 Zaznacz, jeśli chcesz, **"Wyczyść aktualną bazę danych"** przed importem i **"Wyślij e-mail po zakończeniu importu"**, aby otrzymać informacje o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
 
@@ -107,7 +107,7 @@ Wybierz plik kopii zapasowej, klikając `Przeglądaj`{.action} (uwaga, plik nie 
 
 Pozostaw domyślne opcje i kliknij `Uruchom`{.action} import.
 
-![clouddb](images/private-sql-import04.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-import04.png){.thumbnail}
 
 #### Importuj bazę MySQL lub MariaDB za pomocą wiersza poleceń
 

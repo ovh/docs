@@ -121,7 +121,7 @@ Jeśli przenosisz istniejącą stronę WWW do OVHcloud, pobierz bazę danych od 
 
 #### 2. Utworzenie bazy danych w OVHcloud 
 
-Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external},[Cloud DB](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
+Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external},[Web Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
 Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action}. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
 

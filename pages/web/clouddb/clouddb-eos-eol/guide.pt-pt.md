@@ -1,5 +1,5 @@
 ---
-title: 'Anúncios de fim de venda/vida CloudDB'
+title: 'Anúncios de fim de venda/vida Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Recursos técnicos'
 ---
@@ -12,7 +12,7 @@ section: 'Recursos técnicos'
 
 ## Objetivo
 
-Os produtos abrangidos por estes anúncios de fim de vida e de venda são os serviços CloudDB, instâncias SGBD contactáveis através da rede pública ou através da rede Web Hosting.
+Os produtos abrangidos por estes anúncios de fim de vida e de venda são os serviços Web Cloud Databases, instâncias SGBD contactáveis através da rede pública ou através da rede Web Hosting.
 Para mais informações, consulte a [política de fim de vida das bases de dados geridas](../managed-db-life-cycle-policy/).
 
 |Versão|Anúncio de fim de vida|Fim da venda|Fim do suporte|

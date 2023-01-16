@@ -87,7 +87,7 @@ I CMS necessitano di un database per funzionare. Le nostre offerte di [hosting w
 
 Utilizza la nostra documentazione per [creare un database dalla tua offerta di hosting web](https://docs.ovh.com/it/hosting/creare-database/).
 
-Se disponi di un'offerta CloudDB in MySQL o MariaDB e desideri utilizzarla per installare manualmente il tuo WordPress, consulta la nostra guida sulla [creazione di un database su un CloudDB](https://docs.ovh.com/it/clouddb/creare-database-e-utente/#crea-un-database).
+Se disponi di un'offerta Web Cloud Databases in MySQL o MariaDB e desideri utilizzarla per installare manualmente il tuo WordPress, consulta la nostra guida sulla [creazione di un database su un Web Cloud Databases](https://docs.ovh.com/it/clouddb/creare-database-e-utente/#crea-un-database).
 
 Una volta creato il database, recupera i parametri di connessione (server, nome del database, nome utente e password) e conservali per [step 3](#step3) di questa guida.
 
@@ -100,7 +100,7 @@ Una volta creato il database, recupera i parametri di connessione (server, nome 
 > Accedi al tuo database per censire i "prefissi" delle tabelle già presenti all'interno. per non scegliere un "prefisso" da tavolo già utilizzato da un altro sito.
 >
 > - Per connetterti al tuo database associato alla tua offerta di hosting Web, consulta [questa guida](https://docs.ovh.com/it/hosting/creare-database/#accedi-allinterfaccia-phpmyadmin).
-> - Per connetterti a un database presente su un Cloud DB, consulta [questa guida](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/).
+> - Per connetterti a un database presente su un Web Cloud Databases, consulta [questa guida](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/).
 >
 
 ### Step 2 - Avvia l'installazione manuale
@@ -229,7 +229,7 @@ Inserisci le informazioni richieste relative al database:
 - Nome del database: questo nome è stato definito durante la creazione del database nello[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 - Identificativo: è identico al nome del database se utilizzi un database incluso con il tuo hosting Web.
-Per i database creati su un CloudDB, fai riferimento alle informazioni indicate nello [step 1.4](#step1-4) di questa guida.
+Per i database creati su un Web Cloud Databases, fai riferimento alle informazioni indicate nello [step 1.4](#step1-4) di questa guida.
 
 - Password: ti è stato inviato via email durante la creazione del database. È possibile che l'abbiate modificato nel frattempo.
 
@@ -239,7 +239,7 @@ Per i database creati su un CloudDB, fai riferimento alle informazioni indicate 
 > 
 > - Il nome del server di un database incluso nella tua offerta di hosting Web ha questa forma: `NameOfYourDatabase.mysql.db` 
 >
-> - Il nome del server di un database CloudDB inizia con il tuo identificativo cliente OVHcloud, nella forma seguente: `OVHID(without-ovh)-XXX.eu.cloudddb.ovh.net` dove i **"X"** sono da sostituire con il riferimento del tuo servizio CloudDB.
+> - Il nome del server di un database Web Cloud Databases inizia con il tuo identificativo cliente OVHcloud, nella forma seguente: `OVHID(without-ovh)-XXX.eu.cloudddb.ovh.net` dove i **"X"** sono da sostituire con il riferimento del tuo servizio Web Cloud Databases.
 >
 
 - Prefisso delle tabelle: se l'installazione avviene con un nuovo database, inserisci il "prefisso" che preferisci. Se utilizzi un database già utilizzato da un altro sito, consulta lo [step 1.4](#step1-4) di questa guida per non inserire un "prefisso" di tavolo già utilizzato nel tuo database.

@@ -16,14 +16,14 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- You must have a [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
@@ -67,7 +67,7 @@ If the connection succeeds, the next page of phpMyAdmin will appear.
 
 > [!warning]
 >
-> If you use a `Cloud DB` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](https://docs.ovh.com/gb/en/clouddb/configure-optimise-database-server/).
+> If you use a `Web Cloud Databases` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](https://docs.ovh.com/gb/en/clouddb/configure-optimise-database-server/).
 >
 
 To connect to your database, please ensure that you have the following information:

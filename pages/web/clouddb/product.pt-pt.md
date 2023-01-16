@@ -1,5 +1,5 @@
 ---
-title: CloudDB
+title: Web Cloud Databases
 slug: clouddb
 excerpt: Inicie as suas bases de dados em apenas alguns cliques, a OVHcloud ocupa-se do resto.
 order: 04

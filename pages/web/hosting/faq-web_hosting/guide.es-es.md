@@ -60,10 +60,10 @@ Al dar de baja o eliminar el alojamiento compartido, el servicio de correo asoci
 
 Para ello, acceda a la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} situado a la derecha de "**Direcciones de correo**". Haga clic en `Desvincular mi opción de correo`{.action} y siga las instrucciones para contratar una solución de correo independiente que le permitirá conservar sus direcciones de correo ya creadas.
 
-### Al dar de baja un plan de hosting Performance, ¿cómo conservar la solución CloudDB asociada?
+### Al dar de baja un plan de hosting Performance, ¿cómo conservar la solución Web Cloud Databases asociada?
 
-Los alojamientos compartidos **Performance** incluyen una solución CloudDB que se puede activar gratuitamente.
-Al dar de baja o eliminar el alojamiento compartido **Performance**, la solución CloudDB asociada también se dará de baja. Para conservar su Cloud Databases, deberá desvincularlo antes de dar de baja el alojamiento.<br>
+Los alojamientos compartidos **Performance** incluyen una solución Web Cloud Databases que se puede activar gratuitamente.
+Al dar de baja o eliminar el alojamiento compartido **Performance**, la solución Web Cloud Databases asociada también se dará de baja. Para conservar su Cloud Databases, deberá desvincularlo antes de dar de baja el alojamiento.<br>
 
 Para ello, abra la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} a la derecha de "**Base de datos privada**". Haga clic en `Desvincular`{.action} y siga las instrucciones para contratar una solución Cloud Databases independiente, lo que le permitirá conservar su Cloud Databases ya creado.
 

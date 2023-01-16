@@ -20,14 +20,14 @@ Si se produce un error en la base de datos, es necesario que pueda restaurar una
 
 ## Requisitos
 
-- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/)).
+- Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que las soluciones [CloudDB](https://www.ovh.es/cloud/cloud-databases/) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> Tenga en cuenta que las soluciones [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
 > <br> - Tenga en cuenta que no hay acceso "root".
 > <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 > 
@@ -44,7 +44,7 @@ Haga clic en el botón `...`{.action} a la derecha de la base de datos y, seguid
 
 Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, seguidamente, en `Restaurar la copia de seguridad`{.action}.
 
-![clouddb](images/private-sql-restore01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-restore01.png){.thumbnail}
 
 > [!warning]
 >
@@ -55,7 +55,7 @@ Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el b
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y seleccione `Importar archivo`{.action}.
 
-![clouddb](images/private-sql-import01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-import01.png){.thumbnail}
 
 Tiene dos posibilidades:
 
@@ -70,7 +70,7 @@ Escriba un nombre para el archivo importado, haga clic en `Navegar`{.action} par
 > El archivo debe tener el formato ".sql", ".txt" o ".gz".
 > 
 
-![clouddb](images/private-sql-import02.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-import02.png){.thumbnail}
 
 Marque **"Vaciar la base de datos actual"** antes de la importación y **"Enviar un email al final de la importación"** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud y haga clic en `Aceptar`{.action}.
 
@@ -80,7 +80,7 @@ Si ya había importado un archivo antes, puede seleccionar la opción **"Importa
 
 Seleccione el archivo en el menú desplegable y haga clic en `Siguiente`{.action}.
 
-![clouddb](images/private-sql-import03.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-import03.png){.thumbnail}
 
 Marque **"Vaciar la base de datos actual"** antes de la importación y **"Enviar un email al final de la importación"** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud y haga clic en `Aceptar`{.action}.
 
@@ -107,7 +107,7 @@ Seleccione el archivo de backup haciendo clic en `Navegar`{.action} (atención: 
 
 Deje las opciones predeterminadas y haga clic en `Ejecutar`{.action} para iniciar la importación.
 
-![clouddb](images/private-sql-import04.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-import04.png){.thumbnail}
 
 #### Importar una base de datos MySQL o MariaDB en línea de comandos
 

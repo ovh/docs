@@ -119,7 +119,7 @@ Se estiver a migrar um site já existente, obtenha a base de dados junto do anti
 
 #### 3.2. Criar a base de dados na OVHcloud 
 
-Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} ou [Cloud DB](https://www.ovh.pt/cloud-databases/){.external}), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
+Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} ou [Web Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
 
 Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
 

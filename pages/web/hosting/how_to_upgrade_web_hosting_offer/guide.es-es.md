@@ -72,12 +72,12 @@ Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el
 
 ![cuota](images/quota.png){.thumbnail}
 
-#### 3 - CloudDB
+#### 3 - Web Cloud Databases
 
-Si utiliza el producto [CloudDB](https://docs.ovh.com/es/hosting/empezar-con-clouddb/#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
+Si utiliza el producto [Web Cloud Databases](https://docs.ovh.com/es/hosting/empezar-con-clouddb/#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
 Haga clic en el botón `...`{.action} en la sección `Bases de datos privadas`{.action} y, seguidamente, en `Desvincular`{.action}.
 
-![clouddb](images/clouddb.png){.thumbnail}
+![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
 Esta acción le permitirá contratar una solución Cloud Databases independiente de la suscripción *Performance*. Los datos del servidor se conservarán.
 

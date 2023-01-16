@@ -67,19 +67,19 @@ If you have deleted data from your databases, you can recalculate the quota from
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - CloudDB
+#### 3 - Web Cloud Databases
 
-If you are using the [CloudDB](https://docs.ovh.com/ie/en/hosting/getting-started-with-clouddb/#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Professional](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
+If you are using the [Web Cloud Databases](https://docs.ovh.com/ie/en/hosting/getting-started-with-clouddb/#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Professional](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
 Click the `... `{.action} button in the `Private database`{.action} section, then `Detach`{.action}.
 
-![clouddb](images/clouddb.png){.thumbnail}
+![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
-With this action, you can order a CloudDB solution independent of your *Performance* subscription. Your server data will be stored.
+With this action, you can order a Web Cloud Databases solution independent of your *Performance* subscription. Your server data will be stored.
 
 If you do not want to keep this data, you can also delete your Private SQL before going to the *Professional* offer: 
 
 1. Back up your data by following the instructions in this [guide](https://docs.ovh.com/ie/en/hosting/backup-export-database-server/).<br>
-2. Delete your CloudDB server via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, click on your name in the top right-hand corner, then `Service management`{.action}. Then click on the `...`{.action} button to the right of the row concerned, then `Delete my Private SQL hosting service`{.action}.
+2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, click on your name in the top right-hand corner, then `Service management`{.action}. Then click on the `...`{.action} button to the right of the row concerned, then `Delete my Private SQL hosting service`{.action}.
 
 #### 4 - FTP space
 

@@ -114,7 +114,7 @@ Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygo
 
 Aby usunąć moduł za pomocą 1 kliknięcia, należy rozpocząć od zidentyfikowania bazy danych w **sposób** pewny. W tym celu przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Bazy danych`{.action}.
 
-Jeśli w tej części Panelu klienta dysponujesz jedną bazą danych i nie posiadasz rozwiązań [CloudDB](https://www.ovh.pl/cloud/cloud-databases/) , możesz uznać, że chodzi o Twoją stronę WWW.
+Jeśli w tej części Panelu klienta dysponujesz jedną bazą danych i nie posiadasz rozwiązań [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) , możesz uznać, że chodzi o Twoją stronę WWW.
 
 W przeciwnym razie przejdź do zakładki `MultiSite`{.action}. Zapisz nazwę katalogu `Katalog główny`: jest to katalog, w którym znajdują się pliki tworzące moduł za pomocą 1 kliknięcia na serwer FTP.
 

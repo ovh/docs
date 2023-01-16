@@ -36,9 +36,9 @@ Además, la sustitución del motor de almacenamiento InnoDB por XtraDB sumada a 
 
 Para seguir los pasos de esta guía, es necesario:
 
-- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
+- Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- Haber consultado la [guía de inicio de CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/).
+- Haber consultado la [guía de inicio de Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/).
 
 ## Procedimiento
 
@@ -46,7 +46,7 @@ Para seguir los pasos de esta guía, es necesario:
 
 > [!primary]
 >
-> Tenga en cuenta que la solución CloudDB no da acceso al servidor host, sino a las bases de datos alojadas en él. Los comandos SQL genéricos funcionan sin ningún problema, y los programas de tipo HeidiSQL o SQuirreL SQL son totalmente compatibles.
+> Tenga en cuenta que la solución Web Cloud Databases no da acceso al servidor host, sino a las bases de datos alojadas en él. Los comandos SQL genéricos funcionan sin ningún problema, y los programas de tipo HeidiSQL o SQuirreL SQL son totalmente compatibles.
 > 
 
 > [!primary]
@@ -56,9 +56,9 @@ Para seguir los pasos de esta guía, es necesario:
 
 Para conectarse a ella, es necesario disponer de la siguiente información relativa a la base de datos:
 
-- Disponer de la dirección de su instancia CloudDB.
-- el puerto de su instancia CloudDB;
-- el nombre de usuario de su instancia CloudDB
+- Disponer de la dirección de su instancia Web Cloud Databases.
+- el puerto de su instancia Web Cloud Databases;
+- el nombre de usuario de su instancia Web Cloud Databases
 - Disponer de la contraseña asociada al usuario.
 - el nombre de la base de datos;
 

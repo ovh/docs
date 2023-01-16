@@ -48,7 +48,7 @@ La modifica della password del database del tuo sito avviene in quattro step:
 
 - Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Utilizza un [database associato alla tua offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
+- Utilizza un [database associato alla tua offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/).
 - Disporre delle credenziali FTP per accedere allo [spazio di storage dell'hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) 
 
 ## Procedura
@@ -82,7 +82,7 @@ Ricerca e apri il file di configurazione del tuo sito:
 Sono possibili due casi:
 
 - Caso 1: il database del tuo sito fa parte della tua offerta di hosting;
-- Caso 2: è inclusa in un'offerta *CloudDB*, nel qual caso dovrai trovare il **nome del server** e il **nome utente** del tuo database per identificarlo senza rischio di errore.
+- Caso 2: è inclusa in un'offerta *Web Cloud Databases*, nel qual caso dovrai trovare il **nome del server** e il **nome utente** del tuo database per identificarlo senza rischio di errore.
 
 Per verificare quale caso si applica al tuo sito, nel file di configurazione identificato allo [Step 1](#step1), inserisci il nome del database:
 
@@ -99,7 +99,7 @@ Dopodiché torna allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 Se hai ritrovato in questa sezione del tuo Spazio Cliente il nome del database indicato nel file di configurazione, passa allo [Step 3](#step3).
 
-In caso contrario, il database del tuo sito è associato a un'offerta [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
+In caso contrario, il database del tuo sito è associato a un'offerta [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/).
 
 Per registrare il *nome del server* e il *nome utente* del database, è necessario ritornare al file di configurazione del tuo sito:
 
@@ -110,7 +110,7 @@ Per registrare il *nome del server* e il *nome utente* del database, è necessar
 
 Clicca su `Database`{.action} nella sezione `Web Cloud`{.action}. 
 
-Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [CloudDB](https://www.ovh.it/cloud/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
+Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
 
 Sempre in questa sezione del tuo Spazio Cliente OVHcloud, clicca sulla scheda `Utente e diritti`{.action}, per visualizzare anche il `Nome utente`{.action} del tuo database.
 
@@ -197,7 +197,7 @@ Di nuovo, sono possibili due casi:
 
 - Se il database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata al tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), segui queste [istruzioni](#case1).
 
-- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [CloudDB](https://docs.ovh.com/it/clouddb/), segui queste [istruzioni](#case2).
+- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [Web Cloud Databases](https://docs.ovh.com/it/clouddb/), segui queste [istruzioni](#case2).
 
 #### Caso 1: il database del tuo sito fa parte della tua offerta di hosting <a name="case1"></a>
 
@@ -213,7 +213,7 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Caso 2: il database del tuo sito fa parte di un'offerta CloudDB <a name="case2"></a>
+#### Caso 2: il database del tuo sito fa parte di un'offerta Web Cloud Databases <a name="case2"></a>
 
 Accedi alla sezione `Database`{.action} del tuo Spazio Cliente e clicca sulla scheda `Utenti e diritti`{.action}:
 

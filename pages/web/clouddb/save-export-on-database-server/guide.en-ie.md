@@ -16,12 +16,12 @@ Your database can contain a lot of essential information for your website. It is
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
-> Please note that the [CloudDB](https://www.ovh.ie/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 
@@ -42,13 +42,13 @@ In the **Backups** column, the number corresponds to the number of backups avail
 
 Click the `...`{.action} button to the right of the database, then click `Back up now`{.action}.
 
-![clouddb](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Exporting a backup
 
 Click the `...`{.action} button to the right of the database, then click `Show backups`{.action}
 
-![clouddb](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
 
 The list of available backups will appear. Click on the `...`{.action} button to the right of the backup you want to create, then click `Download the backup`{.action} to retrieve this backup.
 
@@ -66,7 +66,7 @@ Once you have logged in to phpMyAdmin, click on the name of the database you wan
 
 You have two possible export modes. If you do not have a specific need, we recommend using **quick** mode in **SQL** format.
 
-![clouddb](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 Exporting a MySQL or MariaDB database from the command line
 

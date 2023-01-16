@@ -220,10 +220,10 @@ Ejemplo:
 Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. También debería evitar el uso de «GROUP BY», a menos que sea estrictamente necesario.
 
 
-#### CloudDB
-Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de CloudDB para disponer de más recursos.
+#### Web Cloud Databases
+Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de Web Cloud Databases para disponer de más recursos.
 
-[Consultar la solución CloudDB en nuestro sitio web](https://www.ovh.es/cloud/cloud-databases/){.external}.
+[Consultar la solución Web Cloud Databases en nuestro sitio web](https://www.ovh.es/cloud/cloud-databases/){.external}.
 
 ## Más información
 

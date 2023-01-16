@@ -20,14 +20,14 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 
 ## Wymagania początkowe
 
-- - Posiadanie [instancji CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- - Posiadanie [instancji Web Cloud Databases](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 > [!primary]
 >
-> Pamiętaj, że rozwiązania [CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+> Pamiętaj, że rozwiązania [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
 > <br> - Pamiętaj, że nie ma dostępu "root".
 > <br> - Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL lub Adminer jest w pełni kompatybilne.
 >
@@ -71,7 +71,7 @@ Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona 
 
 > [!warning]
 >
-> Jeśli korzystasz z oferty "Cloud DB"/"Prywatny SQL", pamiętaj, aby zezwolić na IP w przewodniku dotyczącym [konfiguracji serwera bazy danych](https://docs.ovh.com/pl/clouddb/konfiguracja-optymalizacja-serwera-bazy-danych/).
+> Jeśli korzystasz z oferty "Web Cloud Databases"/"Prywatny SQL", pamiętaj, aby zezwolić na IP w przewodniku dotyczącym [konfiguracji serwera bazy danych](https://docs.ovh.com/pl/clouddb/konfiguracja-optymalizacja-serwera-bazy-danych/).
 >
 
 Aby zalogować się do bazy danych, upewnij się, że pobrałeś następujące informacje:

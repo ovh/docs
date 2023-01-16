@@ -47,7 +47,7 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritte
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder einen [CloudDB Dienst](https://www.ovh.de/cloud-databases/).
+- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud-databases/).
 - Sie verfügen über die FTP-Zugangsdaten, um sich auf dem [Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings einzuloggen.
 
 ## In der praktischen Anwendung
@@ -81,7 +81,7 @@ Suchen und öffnen Sie die Konfigurationsdatei Ihrer Website:
 Es sind zwei Fälle möglich:
 
 - Fall 1: Die Datenbank Ihrer Website ist Teil Ihres Webhosting-Angebots.
-- Fall 2: Die Datenbank ist Teil eines *CloudDB* Dienstes. In diesem Fall benötigen Sie den *Servernamen* und den *Benutzernamen* Ihrer Datenbank, um den korrekten Datenbankdienst gesichert zu ermitteln.
+- Fall 2: Die Datenbank ist Teil eines *Web Cloud Databases* Dienstes. In diesem Fall benötigen Sie den *Servernamen* und den *Benutzernamen* Ihrer Datenbank, um den korrekten Datenbankdienst gesichert zu ermitteln.
 
 Um zu bestimmen, welcher Fall auf Ihre Webseite zutrifft, notieren Sie zunächst den Namen der Datenbank in der im [ersten Schritt](#step1) identifizierten Konfigurationsdatei:
 
@@ -98,7 +98,7 @@ Führen Sie im Bereich `Web Cloud`{.action} Ihres [OVHcloud Kundencenters](https
 
 Wenn Sie in diesem Teil Ihres Kundencenters den Namen der in der Konfigurationsdatei angegebenen Datenbank gefunden haben, gehen Sie zu [Schritt 3](#step3).
 
-Ist das nicht der Fall, ist die Datenbank Ihrer Website an ein [CloudDB Angebot](https://www.ovh.de/cloud-databases/) gebunden.
+Ist das nicht der Fall, ist die Datenbank Ihrer Website an ein [Web Cloud Databases Angebot](https://www.ovh.de/cloud-databases/) gebunden.
 
 Gehen Sie dann zurück zur Konfigurationsdatei Ihrer Website, um den *Servernamen* sowie den *Benutzernamen* Ihrer Datenbank zu notieren:
 
@@ -109,7 +109,7 @@ Gehen Sie dann zurück zur Konfigurationsdatei Ihrer Website, um den *Servername
 
 Öffnen Sie anschließend `Datenbanken`{.action} im Bereich `Web Cloud`{.action}.
 
-Im Tab `Allgemeine Informationen`{.action} können Sie in Ihren [CloudDB Angeboten](https://www.ovh.de/cloud-databases/) den Servernamen Ihrer zuvor gefundenen Datenbank unter `Hostname`{.action} auswählen.
+Im Tab `Allgemeine Informationen`{.action} können Sie in Ihren [Web Cloud Databases Angeboten](https://www.ovh.de/cloud-databases/) den Servernamen Ihrer zuvor gefundenen Datenbank unter `Hostname`{.action} auswählen.
 
 Gehen Sie in diesem Bereich Ihres Kundencenters auf den Tab `Benutzer und Rechte`{.action}, um auch den `Benutzernamen`{.action} Ihrer Datenbank zu ermitteln.
 
@@ -196,7 +196,7 @@ Auch hier sind zwei Fälle möglich:
 
 - Wenn Ihre Datenbank sich im Bereich Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) für [Webhostings](https://www.ovhcloud.com/de/web-hosting/)befindet, folgen Sie [diesen Anweisungen](#case1).
 
-- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, der [CloudDB Angeboten](https://docs.ovh.com/de/clouddb/) gewidmet ist, folgen Sie [diesen Anweisungen](#case2).
+- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, der [Web Cloud Databases Angeboten](https://docs.ovh.com/de/clouddb/) gewidmet ist, folgen Sie [diesen Anweisungen](#case2).
 
 #### Fall 1: Die Datenbank Ihrer Website ist Teil Ihres Webhostings <a name="case1"></a>
 
@@ -212,7 +212,7 @@ Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (festgele
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Fall 2: Die Datenbank Ihrer Website ist Teil eines CloudDB Datenbankdienstes <a name="case2"></a>
+#### Fall 2: Die Datenbank Ihrer Website ist Teil eines Web Cloud Databases Datenbankdienstes <a name="case2"></a>
 
 Gehen Sie in den Bereich `Datenbanken`{.action} Ihres Kundencenters und klicken Sie auf den betreffenden Server. Gehen Sie zum Tab `Benutzer und Rechte`{.action}:
 

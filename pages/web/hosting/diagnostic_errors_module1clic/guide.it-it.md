@@ -55,7 +55,7 @@ Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Le offerte [Hosting Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Hosting Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) ti permetteranno di creare fino a tre moduli in 1 click supplementari. Le offerte **Hosting Performance** ti permettono di attivare gratuitamente un [server CloudDB](https://www.ovh.it/cloud/cloud-databases/).
+Le offerte [Hosting Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) e [Hosting Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) ti permetteranno di creare fino a tre moduli in 1 click supplementari. Le offerte **Hosting Performance** ti permettono di attivare gratuitamente un [server Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/).
 
 #### Soluzione n°2: eliminare un database non utilizzato <a name="delete-the-database"></a>
 
@@ -148,7 +148,7 @@ Se non disponi di altri database e non desideri ordinare un'offerta complementar
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). Questo messaggio di errore è stato inviato via email. Ciò significa che l'utente registrato durante l'installazione non dispone dei diritti sufficienti sul database o che gli identificativi indicati sono errati.
+Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). Questo messaggio di errore è stato inviato via email. Ciò significa che l'utente registrato durante l'installazione non dispone dei diritti sufficienti sul database o che gli identificativi indicati sono errati.
 
 In questa situazione, modifica prima i [diritti dell'utente](../creare-database-e-utente/#gestire-i-diritti-degli-utenti) affinché disponga dei diritti **Administratore** o en **Lettura/scrittura** sulla base dei dati.
 
@@ -158,7 +158,7 @@ Verifica i suoi identificativi anche collegandoti direttamente al tuo [server di
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). Questo messaggio di errore è stato inviato via email. Significa che il nome del server di database indicato non è corretto.
+Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). Questo messaggio di errore è stato inviato via email. Significa che il nome del server di database indicato non è corretto.
 
 Accedi alla sezione `Web cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla scheda `Database`{.action} dello schermo.
 

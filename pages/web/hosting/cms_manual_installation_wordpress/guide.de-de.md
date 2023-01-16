@@ -86,7 +86,7 @@ Ein CMS benötigt eine Datenbank, um zu funktionieren. Sie sind in unseren [Webh
 
 Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
 
-Wenn Sie über eine MySQL- oder MariaDB-Datenbank in CloudDB verfügen und diese für die manuelle Installation Ihres WordPress verwenden möchten, lesen Sie unsere [Dokumentation zu CloudDB](https://docs.ovh.com/de/clouddb/datenbank-und-benutzer-erstellen/#datenbank-erstellen).
+Wenn Sie über eine MySQL- oder MariaDB-Datenbank in Web Cloud Databases verfügen und diese für die manuelle Installation Ihres WordPress verwenden möchten, lesen Sie unsere [Dokumentation zu Web Cloud Databases](https://docs.ovh.com/de/clouddb/datenbank-und-benutzer-erstellen/#datenbank-erstellen).
 
 Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Server, Name der Datenbank, Benutzername und Passwort) ab und speichern Sie diese für [Schritt 3](#step3) dieser Anleitung.
 
@@ -99,7 +99,7 @@ Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Ser
 > Loggen Sie sich anschließend in Ihre Datenbank ein, um die "Präfixe" der bereits enthaltenen Tabellen zu identifizieren. Stellen Sie sicher, bereits vorhandene Tabellenpräfixe nicht für Ihre neue Website zu verwenden.
 >
 > - Um sich mit der Datenbank des Webhostings zu verbinden, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/datenbank-erstellen/#schritt-3-datenbank-verwalten).
-> - Um sich mit einer CloudDB Datenbank zu verbinden, lesen Sie [diese Anleitung](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
+> - Um sich mit einer Web Cloud Databases Datenbank zu verbinden, lesen Sie [diese Anleitung](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
 >
 
 ### Schritt 2 - Manuelle Installation starten
@@ -228,7 +228,7 @@ Geben Sie die angeforderten Informationen zur Datenbank ein:
 - Database name: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert.
 
 - Username: Dieser ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden.
-Für Datenbanken, die in CloudDB erstellt wurden, lesen Sie die Informationen in [Schritt 1.4](#step1-4) dieser Anleitung.
+Für Datenbanken, die in Web Cloud Databases erstellt wurden, lesen Sie die Informationen in [Schritt 1.4](#step1-4) dieser Anleitung.
 
 - Password: Es wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
@@ -238,7 +238,7 @@ Für Datenbanken, die in CloudDB erstellt wurden, lesen Sie die Informationen in
 > 
 > - Der Servername einer Datenbank, die in einem Webhosting inklusive ist, hat im Allgemeinen folgendes Format: `DatenbankName.mysql.db`. 
 >
-> - Der Servername einer CloudDB Datenbank leitet sich von Ihrer OVHcloud Kundenkennung ab und hat folgendes Format: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei  **XXX** für die Referenz Ihrer CloudDB steht.
+> - Der Servername einer Web Cloud Databases Datenbank leitet sich von Ihrer OVHcloud Kundenkennung ab und hat folgendes Format: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei  **XXX** für die Referenz Ihrer Web Cloud Databases steht.
 >
 
 - Table Prefix: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Falls Sie eine Datenbank angegeben haben, die bereits von einer anderen Website verwendet wird, stellen Sie sicher, dass die Präfixe sich nicht überschneiden (siehe [Schritt 1.4](#step1-4) dieser Anleitung).

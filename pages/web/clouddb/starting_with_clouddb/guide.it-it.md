@@ -1,8 +1,8 @@
 ---
-title: 'Inziare a utilizzare CloudDB'
+title: 'Inziare a utilizzare Web Cloud Databases'
 slug: iniziare-a-utilizzare-clouddb
 legacy_guide_number: 2216
-excerpt: 'Scopri come utilizzare la soluzione CloudDB'
+excerpt: 'Scopri come utilizzare la soluzione Web Cloud Databases'
 section: Per iniziare
 order: 01
 ---
@@ -15,35 +15,35 @@ order: 01
 
 ## Obiettivo
 
-La soluzione CloudDB permette di usufruire di un'istanza di database, le cui risorse sono dedicate e garantite che ti offrono prestazioni e flessibilità.
-La soluzione CloudDB è associata di default alla rete di hosting Web OVHcloud. È possibile associarla a qualsiasi altra rete tramite una lista di indirizzi IP autorizzati.
+La soluzione Web Cloud Databases permette di usufruire di un'istanza di database, le cui risorse sono dedicate e garantite che ti offrono prestazioni e flessibilità.
+La soluzione Web Cloud Databases è associata di default alla rete di hosting Web OVHcloud. È possibile associarla a qualsiasi altra rete tramite una lista di indirizzi IP autorizzati.
 
-**Scopri come iniziare a utilizzare la soluzione CloudDB**. 
+**Scopri come iniziare a utilizzare la soluzione Web Cloud Databases**. 
 
 ## Prerequisiti
 
-- Disporre di un’[istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa nelle soluzioni di [hosting Web performance](https://www.ovhcloud.com/it/web-hosting/))
+- Disporre di un’[istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa nelle soluzioni di [hosting Web performance](https://www.ovhcloud.com/it/web-hosting/))
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
-### Attiva il tuo server CloudDB incluso con la tua offerta di hosting Web
+### Attiva il tuo server Web Cloud Databases incluso con la tua offerta di hosting Web
 
-Se la tua offerta di hosting include l'opzione CloudDB, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
+Se la tua offerta di hosting include l'opzione Web Cloud Databases, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
 
-Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **CloudDB**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
+Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Web Cloud Databases**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
 
 ![Informazioni generali](images/db-activation.png){.thumbnail}
 
-Per completare l'operazione segui le istruzioni riportate qui di seguito per determinare il tipo e la versione del tuo server CloudDB. e sarà accessibile dalla colonna di sinistra nel `Database`{.action}.
+Per completare l'operazione segui le istruzioni riportate qui di seguito per determinare il tipo e la versione del tuo server Web Cloud Databases. e sarà accessibile dalla colonna di sinistra nel `Database`{.action}.
 
 ### Visualizza le informazioni generali dell'istanza
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Database`{.action} nel menu a sinistra e seleziona la tua istanza CloudDB. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Database`{.action} nel menu a sinistra e seleziona la tua istanza Web Cloud Databases. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
 
 > [!primary]
 >
-> Il nome del servizio CloudDB nello Spazio Cliente OVHcloud contiene una parte del tuo identificativo cliente e termina con tre numeri (001 per il primo servizio CloudDB installato, 002 per il secondo, ecc...).
+> Il nome del servizio Web Cloud Databases nello Spazio Cliente OVHcloud contiene una parte del tuo identificativo cliente e termina con tre numeri (001 per il primo servizio Web Cloud Databases installato, 002 per il secondo, ecc...).
 >
 
 In questa interfaccia puoi visualizzare anche le informazioni principali relative alla tua istanza. Ti consigliamo di verificarne la correttezza e assicurarti che corrispondano alle descrizioni indicate di seguito:
@@ -53,13 +53,13 @@ In questa interfaccia puoi visualizzare anche le informazioni principali relativ
 |Stato del servizio|Indica se l’istanza è attiva, in stato di riavvio o sospesa. Per poter eseguire operazioni, l’istanza deve essere attiva.|
 |Tipo|Indica il sistema di database utilizzato dal server.|
 |Versione|Indica la versione del sistema di database utilizzata dal server. Ti ricordiamo di verificare la compatibilità del tuo sito con la versione scelta.|
-|Saturazione CPU| Indica il tempo CPU passato in saturazione. La tua istanza CloudDB non è limitata in termini di CPU, ma devi fare attenzione a non sovraccaricare la CPU del tuo CloudDB.|
-|RAM|Indica la memoria disponibile sulla tua istanza e segnala l’eventuale raggiungimento della soglia limite. La tua istanza CloudDB dispone di risorse dedicate e garantite: la memoria RAM.  Se necessario, è possibile aumentarla e ricevere una notifica in caso di utilizzo di tutte le risorse disponibili.|
+|Saturazione CPU| Indica il tempo CPU passato in saturazione. La tua istanza Web Cloud Databases non è limitata in termini di CPU, ma devi fare attenzione a non sovraccaricare la CPU del tuo Web Cloud Databases.|
+|RAM|Indica la memoria disponibile sulla tua istanza e segnala l’eventuale raggiungimento della soglia limite. La tua istanza Web Cloud Databases dispone di risorse dedicate e garantite: la memoria RAM.  Se necessario, è possibile aumentarla e ricevere una notifica in caso di utilizzo di tutte le risorse disponibili.|
 |Infrastruttura|Indica l’infrastruttura utilizzata dall’istanza. Questa informazione è relativa alla piattaforma di OVHcloud.|
 |Datacenter|Indica il datacenter in cui è stata creata l’istanza. Assicurati che corrisponda a quello dell’hosting Web OVHcloud in cui è (o sarà) ospitato il tuo sito.|
 |Host|Indica il server OVHcloud in cui è stata creata l’istanza. Questa informazione è relativa all'infrastruttura OVHcloud e, in caso di [incidenti](http://status.ovh.net/){.external}, può essere presente nelle nostre comunicazioni.|
 
-![Clouddb](images/clouddb-general-information.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-general-information.png){.thumbnail}
 
 ### Crea un database
 
@@ -68,10 +68,10 @@ In questa interfaccia puoi visualizzare anche le informazioni principali relativ
 > Questo step non si applica al sistema di database Redis.
 >
 
-Per creare il tuo primo database sull’istanza CloudDB, clicca sulla scheda `Database`{.action} e poi sul pulsante `Aggiungi database`{.action}.
+Per creare il tuo primo database sull’istanza Web Cloud Databases, clicca sulla scheda `Database`{.action} e poi sul pulsante `Aggiungi database`{.action}.
 
 
-![Clouddb](images/clouddb-add-database.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-database.png){.thumbnail}
 
 Nella finestra che appare, oltre alla creazione del database, puoi scegliere di:
 
@@ -94,7 +94,7 @@ In base alla tua scelta, completa le informazioni richieste e poi clicca su `Con
 > Per motivi di sicurezza, durante l’inserimento dei dati ti invitiamo a rispettare i requisiti richiesti.
 >
 
-![Clouddb](images/clouddb-add-database-step2.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-database-step2.png){.thumbnail}
 
 ### Crea un utente 
 
@@ -105,9 +105,9 @@ In base alla tua scelta, completa le informazioni richieste e poi clicca su `Con
 
 Se hai creato l'utente insieme al database, questo step è opzionale. Per un progetto più complesso, invece, potrebbe essere necessario autorizzare più utenti a lavorare sullo stesso database. Ad esempio, uno potrebbe disporre dei permessi di lettura e scrittura mentre l’altro dei permessi di sola lettura.
 
-Se un utente aggiuntivo non è necessario al tuo progetto, puoi passare allo step successivo. In caso contrario, per creare un utente sulla tua istanza CloudDB, clicca sulla scheda `Utenti e diritti`{.action} e poi sul pulsante `Aggiungi un utente`{.action}.
+Se un utente aggiuntivo non è necessario al tuo progetto, puoi passare allo step successivo. In caso contrario, per creare un utente sulla tua istanza Web Cloud Databases, clicca sulla scheda `Utenti e diritti`{.action} e poi sul pulsante `Aggiungi un utente`{.action}.
 
-![Clouddb](images/clouddb-add-user.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-user.png){.thumbnail}
 
 Inserisci le informazioni richieste nella finestra che appare e poi clicca su `Conferma`{.action}.
 
@@ -121,11 +121,11 @@ Inserisci le informazioni richieste nella finestra che appare e poi clicca su `C
 > Per motivi di sicurezza, durante l’inserimento dei dati ti invitiamo a rispettare i requisiti richiesti.
 >
 
-![Clouddb](images/clouddb-add-user-step2.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-user-step2.png){.thumbnail}
 
 Una volta creato l’utente è necessario assegnargli i permessi per autorizzarlo a effettuare operazioni sul database (come lettura, inserimento e cancellazione dei dati): clicca sull’icona a forma di ingranaggio e seleziona `Gestisci i diritti`{.action}. Si apre una nuova pagina in cui puoi scegliere i permessi da assegnare. Per un utilizzo standard, scegli Amministratore.
 
-![Clouddb](images/clouddb-add-rights.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-rights.png){.thumbnail}
 
 ### Importa un database
 
@@ -142,13 +142,13 @@ Negli step successivi descriviamo come importare un database attraverso lo Spazi
 
 Seleziona la scheda `Database`{.action}, clicca sull’icona a forma di ingranaggio e poi su `Importa un file`{.action}. Nella nuova finestra, seleziona l’opzione `Importa un nuovo file`{.action} e clicca su `Continua`{.action}.
 
-![Clouddb](images/clouddb-add-import-step1.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-import-step1.png){.thumbnail}
 
 - **Step 2: seleziona e invia il file di backup**
 
 Assegna un nome al file che ti permetterà di identificare questo backup in futuro nel caso in cui volessi ripristinarlo. In seguito, accanto a **File**, seleziona il file di backup del database sul tuo computer, poi clicca su `Continua`{.action}. Attendi la conferma di invio del file e poi clicca sul pulsante `Continua`{.action}.
 
-![Clouddb](images/clouddb-add-import-step2.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-import-step2.png){.thumbnail}
 
 - **Step 3: avvia l'importazione del database**
 
@@ -159,68 +159,68 @@ A questo punto scegli se applicare o meno le seguenti opzioni aggiuntive, poi cl
 |Svuota il database attuale|Il contenuto del database viene totalmente eliminato e sostituito da quello del backup.|
 |Ricevi una email al termine dell’importazione|Una volta completata l'importazione del database, riceverai una notifica via email.|
 
-![Clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
+![Web Cloud Databases](images/clouddb-add-import-step3.png){.thumbnail} 
 
 ### Autorizza un indirizzo IP <a name="trustip"></a>
 
-Affinché l’accesso alla tua istanza CloudDB funzioni correttamente, è fondamentale indicare gli IP o i blocchi di IP che possono connettersi ai tuoi database. Per fare ciò, clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungere un IP/mask`{.action}.
+Affinché l’accesso alla tua istanza Web Cloud Databases funzioni correttamente, è fondamentale indicare gli IP o i blocchi di IP che possono connettersi ai tuoi database. Per fare ciò, clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungere un IP/mask`{.action}.
 
-![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Nella finestra che appare indica l’indirizzo IP o la mask da autorizzare in `IP/mask`{.action} e poi, se vuoi, aggiungi una descrizione. Decidi se vuoi fornire un accesso soltanto ai database o anche via SFTP. Infine clicca su `Conferma`{.action}.
 
-![Clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-ip-step2.png){.thumbnail}
 
 ### Autorizza la connessione a un hosting Web OVHcloud <a name="trustip"></a>
 
-Di default, la soluzione CloudDB è automaticamente associata agli hosting Web OVHcloud. Se necessario, è possibile disattivare l'accesso degli hosting Web OVHcloud al database CloudDB.
+Di default, la soluzione Web Cloud Databases è automaticamente associata agli hosting Web OVHcloud. Se necessario, è possibile disattivare l'accesso degli hosting Web OVHcloud al database Web Cloud Databases.
 
 Clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Accesso agli hosting Web OVHcloud`{.action}.
 
-![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 
 ### Collega il tuo sito al database
 
-Una volta creato il database, che uno o più utenti dispongono dei diritti su quest'ultima e che sull'istanza CloudDB sono stati autorizzati almeno un indirizzo IP o gli hosting Web OVHcloud, non resta che collegare il sito al database. Questo step può essere effettuato in diversi modi, in base al sito o al CMS utilizzato (WordPress, Joomla!, ecc...) e allo step in cui ti trovi se installi un sito Web.
+Una volta creato il database, che uno o più utenti dispongono dei diritti su quest'ultima e che sull'istanza Web Cloud Databases sono stati autorizzati almeno un indirizzo IP o gli hosting Web OVHcloud, non resta che collegare il sito al database. Questo step può essere effettuato in diversi modi, in base al sito o al CMS utilizzato (WordPress, Joomla!, ecc...) e allo step in cui ti trovi se installi un sito Web.
 
 In ogni caso, è necessario disporre di queste cinque informazioni:
 
 |Informazione|Descrizione|
 |---|---|
-|Nome del database|È il nome assegnato in fase di creazione del database. Puoi trovare tutti i database creati sulla tua istanza CloudDB dalla scheda `Database`{.action}.|
-|Nome utente|È il nome utente definito durante la creazione del database o degli eventuali utenti aggiuntivi. Puoi trovare tutti gli utenti creati sulla tua istanza CloudDB dalla scheda `Utenti e diritti`{.action}.|
+|Nome del database|È il nome assegnato in fase di creazione del database. Puoi trovare tutti i database creati sulla tua istanza Web Cloud Databases dalla scheda `Database`{.action}.|
+|Nome utente|È il nome utente definito durante la creazione del database o degli eventuali utenti aggiuntivi. Puoi trovare tutti gli utenti creati sulla tua istanza Web Cloud Databases dalla scheda `Utenti e diritti`{.action}.|
 |Password dell’utente|È la password associata all'utente definita durante le operazioni precedenti.|
 |Hostname del server|È l’indirizzo del server utilizzato dal tuo sito per connettersi al tuo database. Questa informazione è disponibile nello Spazio Cliente OVHcloud, scheda **Informazioni generali** > `Informazioni di login`{.action}.|
-|Porta del server|È la porta di connessione all'istanza CloudDB, che permette l’accesso del tuo sito al database. Questa informazione è disponibile nello Spazio Cliente OVHcloud, scheda **Informazioni generali** > `Informazioni di login`{.action}.|
+|Porta del server|È la porta di connessione all'istanza Web Cloud Databases, che permette l’accesso del tuo sito al database. Questa informazione è disponibile nello Spazio Cliente OVHcloud, scheda **Informazioni generali** > `Informazioni di login`{.action}.|
 
 > [!warning]
 >
 > Il campo `Porta`{.action} potrebbe non essere disponibile nella configurazione del tuo sito. In questo caso, è necessario aggiungerlo dopo l’hostname del server, separandolo con il simbolo *:* (ad esempio hostname:porta).
 >
 
-![Clouddb](images/clouddb-login-information.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-login-information.png){.thumbnail}
 
-### Recupera i log del tuo server CloudDB
+### Recupera i log del tuo server Web Cloud Databases
 
-Per verificare gli ultimi log del tuo database, accedi alla scheda `Logs`{.action} del tuo server CloudDB. Questa scheda mostra in tempo reale gli alert e gli errori.
+Per verificare gli ultimi log del tuo database, accedi alla scheda `Logs`{.action} del tuo server Web Cloud Databases. Questa scheda mostra in tempo reale gli alert e gli errori.
 
-![clouddb](images/clouddb-log01.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-log01.png){.thumbnail}
 
-Per recuperare tutti i log del tuo server CloudDB, accedi via SFTP a quest'ultimo.
+Per recuperare tutti i log del tuo server Web Cloud Databases, accedi via SFTP a quest'ultimo.
 
 > [!warning]
 >
-> Prima di connetterti verifica che l'indirizzo IP della postazione utilizzata sia autorizzato sul tuo server CloudDB, con l'opzione `SFTP` selezionata. Per maggiori informazioni, consulta la sezione [Autorizza la connessione a un hosting Web OVHcloud](#trustip) di questa guida.
+> Prima di connetterti verifica che l'indirizzo IP della postazione utilizzata sia autorizzato sul tuo server Web Cloud Databases, con l'opzione `SFTP` selezionata. Per maggiori informazioni, consulta la sezione [Autorizza la connessione a un hosting Web OVHcloud](#trustip) di questa guida.
 
-Le informazioni di connessione SFTP sono disponibili nella scheda `Informazioni generali`{.action} del tuo server CloudDB. Se non ricordi la `password del server`, clicca sul pulsante `...`{.action} a destra per modificarlo.
+Le informazioni di connessione SFTP sono disponibili nella scheda `Informazioni generali`{.action} del tuo server Web Cloud Databases. Se non ricordi la `password del server`, clicca sul pulsante `...`{.action} a destra per modificarlo.
 
-![clouddb](images/clouddb-log02.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-log02.png){.thumbnail}
 
 Accedi tramite un client FTP (FileZilla, Cyberduck, WinSCP, ecc...).
 
 Per FileZilla, nel menu `File`{.action}, vai al `Gestionale di siti`{.action}. Clicca su `Nuovo sito`{.action} e inserisci le impostazioni rilevate precedentemente.
 
-![clouddb](images/clouddb-log03.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-log03.png){.thumbnail}
 
 Il file di log, chiamato `stdout.log`, si trova alla radice.
 

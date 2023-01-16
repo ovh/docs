@@ -106,7 +106,7 @@ Aby sprawdzić, czy są dostępne migawki oraz ich sygnaturę czasową utworzeni
 
 **Zbyt dużo połączeń**
 
-Bazy danych w ramach hostingu WWW mają limit 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeśli mimo tego problem będzie się powtarzać, należy rozważyć podjęcie innych środków, tj. wybór prywatnej bazy danych SQL ([CloudDB](https://www.ovh.pl/cloud/cloud-databases/)) lub [zmianę pakietu hostingu na wyższy](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/). 
+Bazy danych w ramach hostingu WWW mają limit 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeśli mimo tego problem będzie się powtarzać, należy rozważyć podjęcie innych środków, tj. wybór prywatnej bazy danych SQL ([Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/)) lub [zmianę pakietu hostingu na wyższy](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/). 
 
 **Błędy połączenia typu „nie można znaleźć”**
 

@@ -83,7 +83,7 @@ Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[héber
 
 Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-Si vous disposez d'une offre CloudDB en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre WordPress, consultez notre documentation sur la [création d'une base de données sur un CloudDB](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
+Si vous disposez d'une offre Web Cloud Databases en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre WordPress, consultez notre documentation sur la [création d'une base de données sur un Web Cloud Databases](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
 
 Une fois la base de données créée, récupérez les paramètres de connexion (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et conservez-les pour [l'étape 3](#step3) de ce guide.
 
@@ -96,7 +96,7 @@ Une fois la base de données créée, récupérez les paramètres de connexion (
 > Connectez-vous ensuite à votre base de données pour recenser les « préfixes » des tables déjà présentes à l'intérieur. Ceci afin de ne pas choisir un « préfixe » de table déjà utilisé par un autre de vos sites.
 >
 > - Pour vous connecter à votre base de données liée à votre offre d'hébergement web, consultez [ce guide](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin).
-> - Pour vous connecter à une base de données présente sur un Cloud DB, consultez [ce guide](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+> - Pour vous connecter à une base de données présente sur un Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
 >
 
 ### Etape 2 - démarrer l'installation manuelle
@@ -225,7 +225,7 @@ Renseignez les informations demandées concernant la base de données :
 - Nom de la base de données : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 - Identifiant : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un CloudDB, référez-vous aux informations indiquées dans [l'étape 1.4](#step1-4) de ce guide.
+Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans [l'étape 1.4](#step1-4) de ce guide.
 
 - Mot de passe : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayiez modifié entre temps.
 
@@ -235,7 +235,7 @@ Pour les bases de données créées sur un CloudDB, référez-vous aux informati
 > 
 > - Le nom du serveur d'une bases de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
 >
-> - Le nom du serveur d'une base de données CloudDB commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service CloudDB.
+> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
 >
 
 - Préfixe des tables : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à [l'étape 1.4](#step1-4) de ce guide pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.

@@ -105,7 +105,7 @@ Um die verfügbaren Snapshots zu überprüfen und deren Erstellungszeitpunkt ein
 
 **Too many connections**
 
-Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine [CloudDB](https://www.ovh.de/cloud/cloud-databases/) oder ein [Upgrade Ihres Webhostings](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/). 
+Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) oder ein [Upgrade Ihres Webhostings](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/). 
 
 **Verbindungsfehler und „not found“-Meldungen**
 

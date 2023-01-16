@@ -20,7 +20,7 @@ I database server Cloud Database ti danno la possibilità di agire sui parametri
 
 ## Prerequisiti
 
-- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/) (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/fr/web-hosting/).
+- Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/fr/web-hosting/).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -46,52 +46,52 @@ In questa interfaccia vengono mostrate anche le informazioni principali della tu
 
 ## Gestisci i tuoi accessi
 
-Il tuo CloudDB è accessibile dai tuoi hosting Web OVHcloud o dalla rete pubblica.
+Il tuo Web Cloud Databases è accessibile dai tuoi hosting Web OVHcloud o dalla rete pubblica.
 
 #### Autorizza un indirizzo IP
 
-Per il corretto funzionamento dell'accesso alla tua istanza CloudDB, è necessario indicare gli indirizzi IP o le classi di IP che possono connettersi ai tuoi database.
+Per il corretto funzionamento dell'accesso alla tua istanza Web Cloud Databases, è necessario indicare gli indirizzi IP o le classi di IP che possono connettersi ai tuoi database.
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Database`{.action} > Istanza CloudDB corrispondente.
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Database`{.action} > Istanza Web Cloud Databases corrispondente.
 
 Clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungi un indirizzo IP/mask`{.action}.
 
-![Clouddb](images/clouddb-add-ip.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-ip.png){.thumbnail}
 
 Nella finestra che appare indica l’indirizzo IP o la mask da autorizzare in `IP/mask`{.action} e poi, se vuoi, aggiungi una descrizione. Decidi se vuoi fornire un accesso soltanto ai database o anche via SFTP. Infine clicca su `Conferma`{.action}.
 
-![Clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-ip-step2.png){.thumbnail}
 
 #### Autorizza la connessione a un hosting Web OVHcloud
 
 Per gli hosting Web OVHcloud è sufficiente selezionare `Autorizza gli hosting Web OVHcloud ad accedere al database`.
 
-![Clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-ip-step3.png){.thumbnail}
 
-### Modifica la tua offerta CloudDB
+### Modifica la tua offerta Web Cloud Databases
 
-Per modificare l'offerta del tua istanza CloudDB, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
+Per modificare l'offerta del tua istanza Web Cloud Databases, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 Nella scheda **"Informazioni generali"**, visualizzata di default, clicca su `...`{.action} a destra della voce "RAM" e poi su `Modifica la quantità di RAM`{.action} per accedere all'ordine di questo passaggio.
 
-![clouddb](images/private-sql-order-ram01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-order-ram01.png){.thumbnail}
 
 Scegli la quantità di RAM desiderata e clicca su `Seguente`{.action}. e scegliere la durata scelta.
 
 > [!primary]
 >
-> Se hai ancora qualche mese prima della scadenza, verrà effettuato un prorata. Questo prorata sarà basato sulla data di scadenza della tua istanza CloudDB e non su quello del buono d'ordine.
+> Se hai ancora qualche mese prima della scadenza, verrà effettuato un prorata. Questo prorata sarà basato sulla data di scadenza della tua istanza Web Cloud Databases e non su quello del buono d'ordine.
 > 
 
 Dopo la conferma dei contratti, verrai reindirizzato al buono d'ordine da cui sarà possibile pagare la modifica. L'operazione diventerà effettiva entro qualche ora.
 
 > [!warning]
 >
-> Se disponi attualmente di un CloudDB gratuito grazie al tuo hosting Performance, la modifica dell'offerta ti farà perdere la gratuità.
+> Se disponi attualmente di un Web Cloud Databases gratuito grazie al tuo hosting Performance, la modifica dell'offerta ti farà perdere la gratuità.
 > 
 
 ### Modifica la configurazione del tuo database server
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo server CloudDB.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo server Web Cloud Databases.
 
 #### Istanza MySQL e MariaDB
 
@@ -99,7 +99,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione attualmente definita per il tuo database. Puoi modificarla direttamente e cliccare su `Applica`{.action}.
 
-![clouddb](images/private-sql-config02.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-config02.png){.thumbnail}
 
 - **Temp**: Directory dei file temporanei. **/dev/shm** corrisponde alla memoria RAM dell'istanza. **/tmp** corrisponde all'hard disk dell'istanza.
 - **MaxAllowedPacket**: Dimensione massima dei pacchetti
@@ -158,7 +158,7 @@ Non è possibile modificare la configurazione di un'istanza PostgreSQL.
 
 ma è possibile attivare estensioni sui database. Clicca sulla scheda `Database`, poi sull'icona della tabella del tuo database sotto la colonna "**Estensioni"**
 
-![clouddb](images/private-sql-config03.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-config03.png){.thumbnail}
 
 ### Modifica la versione MySQL, PostgreSQL o MariaDB del database server
 
@@ -168,7 +168,7 @@ La versione attuale compare nella riga **"Versione"**.
 
 Per modificare questa versione, clicca su `Modifica la versione`{.action}.
 
-![clouddb](images/private-sql-config04.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-config04.png){.thumbnail}
 
 
 #### Come conoscere la versione esatta di PostgreSQL che uso?
@@ -209,7 +209,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistiche dei tempi di esecuzione delle richieste"**.
 
-![clouddb](images/private-sql-metrics01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-metrics01.png){.thumbnail}
 
 #### Accesso ai log "Slow Query"
 
@@ -223,7 +223,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nella scheda `informazioni generali`, consulta la sezione **"SFTP"** nel riquadro **"Informazioni di connessione"**
 
-![clouddb](images/private-sql-SFTP01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-SFTP01.png){.thumbnail}
 
 Per effettuare l'accesso via **SFTP**, è possibile utilizzare Filezilla utilizzando la guida: [ Utilizzo del software FileZilla con il tuo hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/).
 
@@ -236,7 +236,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche della memoria RAM utilizzata"**.
 
-![clouddb](images/private-sql-metrics02.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-metrics02.png){.thumbnail}
 
 #### Controlla il numero di connessioni al minuto
 
@@ -246,7 +246,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche del totale delle connessioni al minuto"**.
 
-![clouddb](images/private-sql-metrics03.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-metrics03.png){.thumbnail}
 
 ### Ottimizza i tuoi database
 

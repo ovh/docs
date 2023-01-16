@@ -29,14 +29,14 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 - Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Utilizzare una delle nostre offerte di database: [Web Cloud](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/)
+- Utilizzare una delle nostre offerte di database: [Web Cloud](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/)
 ## Procedura
 
 ### "Error establishing a database connection"
 
 #### Verifica gli incidenti in corso
 
-Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server CloudDB o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
+Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server Web Cloud Databases o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
 
 
 > [!primary]
@@ -129,7 +129,7 @@ Puoi anche migrare i tuoi dati su un nuovo database:
 - Inserisci gli identificativi del nuovo database nel [file di configurazione](#config_file) del tuo sito.
 
 > [!primary]
-> Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web).
+> Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web).
 >
 
 ##### Metodo 3: eliminare i dati non necessari
@@ -154,7 +154,7 @@ Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configu
 
 Superamento della capacità della RAM
 
-Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è riportato che il tuo server [CloudDB](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
+Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -162,9 +162,9 @@ In questa situazione è possibile aumentare la [quantità di memoria RAM](https:
 
 > [!warning]
 >
-> Per aumentare la RAM, il CloudDB non deve essere attivato tramite un hosting Performance. Per aumentare la quantità di RAM di un database incluso nelle [offerte performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/){.external}, è necessario scollegarla prima.
+> Per aumentare la RAM, il Web Cloud Databases non deve essere attivato tramite un hosting Performance. Per aumentare la quantità di RAM di un database incluso nelle [offerte performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/){.external}, è necessario scollegarla prima.
 > 
-> Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l'hosting Web su cui è attivo il cloudDB.
+> Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e seleziona l'hosting Web su cui è attivo il Web Cloud Databases.
 >
 > Nella zona `Configurazione`, clicca sui `...`{.action} in corrispondenza dell'entrata della `Database Privato` e clicca su `Scollega`{.action}.
 >
@@ -193,7 +193,7 @@ Questo messaggio di errore significa che il database che stai cercando di import
 
 > [!success]
 >
-> Avere un "**trigger**" nello script di importazione del tuo database non è autorizzato sui server di hosting condiviso OVHcloud. importa il tuo database su un server [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
+> Avere un "**trigger**" nello script di importazione del tuo database non è autorizzato sui server di hosting condiviso OVHcloud. importa il tuo database su un server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/).
 >
 
 Inoltre, la seguente richiesta non è autorizzata:
@@ -216,7 +216,7 @@ USE `Database-Name`;
 > **"404 ERROR MySQL server has gone away"**
 >
 
-Questo messaggio di errore compare durante l'[importazione di un database](https://docs.ovh.com/it/hosting/ripristinare-importare-database/#importa-un-backup-locale) su un server [CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). È legato per la maggior parte del tempo alla quantità troppo elevata di dati da importare o alla mancanza di ottimizzazione delle richieste SQL nello script di importazione.
+Questo messaggio di errore compare durante l'[importazione di un database](https://docs.ovh.com/it/hosting/ripristinare-importare-database/#importa-un-backup-locale) su un server [Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). È legato per la maggior parte del tempo alla quantità troppo elevata di dati da importare o alla mancanza di ottimizzazione delle richieste SQL nello script di importazione.
 
 Per risolvere questa anomalia, puoi:
 
@@ -248,7 +248,7 @@ In questa situazione, [verifica le credenziali inserite](https://docs.ovh.com/it
 
 Il numero massimo di connessioni attive per i database consegnati con hosting condivisi ([StartSQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) è di **30**.
 
-Questo numero è di **200** per i database dei server [CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). (Questo parametro è modificabile nella sezione `Configuration`{.action} del tuo server database).
+Questo numero è di **200** per i database dei server [Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). (Questo parametro è modificabile nella sezione `Configuration`{.action} del tuo server database).
 
 Questo messaggio compare durante la [connessione a PhpMyAdmin](https://docs.ovh.com/it/hosting/creare-database/) quando viene superato il numero massimo di connessioni.
 
@@ -275,13 +275,13 @@ Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](https
 >
 > Se il database a cui vuoi connetterti compare nella scheda `Database`{.action} della sezione `Hosting`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), il nome da inserire è indicato nella colonna `Indirizzo del server`.
 >
-> Se vuoi connetterti a un database su un server [CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
+> Se vuoi connetterti a un database su un server [Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/) il nome del server da inserire è iscritto nella scheda `Informazioni generali`{.action}, `Informazioni di connessione`{.action}, `SQL`{.action} e nella sezione `Nome host`{.action}.
 >
 
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Iniziare a utilizzare il servizio CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
+[Iniziare a utilizzare il servizio Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

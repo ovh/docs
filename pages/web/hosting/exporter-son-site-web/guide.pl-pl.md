@@ -62,7 +62,7 @@ Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, prze
 Z naszego przewodnika dowiesz się, jak utworzyć i pobrać kopię zapasową bazy danych:
 [„Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW”](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/){.external}.
 
-Jeśli korzystasz z **serwera CloudDB** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
+Jeśli korzystasz z **serwera Web Cloud Databases** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
 [Tworzenie i eksportowanie bazy danych na serwerze baz danych](https://docs.ovh.com/pl/hosting/kopia-zapasowa-eksportowa-bazy-danych/){.external}.
 
 ### Etap 3: pobranie logów z hostingu OVHcloud

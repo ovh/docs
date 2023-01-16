@@ -24,7 +24,7 @@ Your database usage may result in anomalies on your website or error messages in
 
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an OVHcloud database service: [Web Cloud](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or [CloudDB](https://www.ovh.ie/cloud/cloud-databases/)
+- an OVHcloud database service: [Web Cloud](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/)
 
 ## Instructions
 
@@ -32,7 +32,7 @@ Your database usage may result in anomalies on your website or error messages in
 
 #### Check ongoing incidents
 
-First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) whether your data centre, hosting cluster or CloudDB server is affected by an incident on the OVHcloud infrastructure.
+First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) whether your data centre, hosting cluster or Web Cloud Databases server is affected by an incident on the OVHcloud infrastructure.
 
 > [!primary]
 >
@@ -40,7 +40,7 @@ First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.statu
 >
 > - To find your Web Hosting plan's data centre and filer (file server), open `Hosting plans`{.action} and select the plan concerned. The information is available in the `General information`{.action} tab.
 > - To find the **cluster** of servers on which your hosting is located, click on the `FTP-SSH`{.action} tab. The cluster identifier is part of the name of your `FTP server`.
-> - To retrieve the name of your **CloudDB** server, click on `Databases`{.action} in the left-hand menu, then on the relevant service. You can find the information concerned under the heading `Host name` in the `SQL` part of the `General information`{.action} tab.
+> - To retrieve the name of your **Web Cloud Databases** server, click on `Databases`{.action} in the left-hand menu, then on the relevant service. You can find the information concerned under the heading `Host name` in the `SQL` part of the `General information`{.action} tab.
 >
 
 #### Verify login credentials for your database <a name="config_file"></a>
@@ -126,7 +126,7 @@ You can also migrate your data to a new database:
 
 > [!primary]
 >
-> If you have a **Performance** Web Hosting plan, you can also [activate a free CloudDB service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/#clouddb-server-activation-included-with-your-web-hosting-plan).
+> If you have a **Performance** Web Hosting plan, you can also [activate a free Web Cloud Databases service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/#clouddb-server-activation-included-with-your-web-hosting-plan).
 >
 
 #### Method 3: Delete unnecessary data
@@ -151,7 +151,7 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 ### RAM overflows
 
-The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) indicates that your [CloudDB](https://www.ovh.ie/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
+The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) indicates that your [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -193,7 +193,7 @@ If necessary, contact our [user community](https://community.ovh.com/en/) or [OV
 
 > [!success]
 >
-> You cannot have a "**trigger**" in your database’s import script on OVHcloud shared hosting servers. In this situation, import your database to a [CloudDB server](https://www.ovh.ie/cloud/cloud-databases/).
+> You cannot have a "**trigger**" in your database’s import script on OVHcloud shared hosting servers. In this situation, import your database to a [Web Cloud Databases server](https://www.ovh.ie/cloud/cloud-databases/).
 >
 
 The following query is also not allowed:
@@ -216,11 +216,11 @@ Replace `Database-Name` with the name of the database as displayed in your [OVHc
 > **"404 ERROR MySQL server has gone away"**
 >
 
-This error message appears when [importing a database](https://docs.ovh.com/ie/en/hosting/restore-import-database/#importing-a-local-backup) on a [CloudDB server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). I most cases, it is caused by the quantity of data to be imported being too large or by non-optimised SQL queries in the import script.
+This error message appears when [importing a database](https://docs.ovh.com/ie/en/hosting/restore-import-database/#importing-a-local-backup) on a [Web Cloud Databases server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). I most cases, it is caused by the quantity of data to be imported being too large or by non-optimised SQL queries in the import script.
 
 To resolve this issue, you can use the following methods:
 
-- Increase the [amount of RAM](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#modifying-the-database-server-solution_1): go to the [CloudDB server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/) concerned in the `Databases` section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
+- Increase the [amount of RAM](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#modifying-the-database-server-solution_1): go to the [Web Cloud Databases server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/) concerned in the `Databases` section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
 
 - Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/). We will not be able to assist you with this.)
 
@@ -248,7 +248,7 @@ In this situation, [check the credentials entered](https://docs.ovh.com/ie/en/ho
 
 The maximum number of active connections for databases delivered with a shared hosting ([Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/)) is **30**.
 
-This number increases to **200** for the [CloudDB service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). (This setting can be modified in the `Configuration`{.action} section of your database service.)
+This number increases to **200** for the [Web Cloud Databases service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). (This setting can be modified in the `Configuration`{.action} section of your database service.)
 
 A "Too many connections" error when [connecting to phpMyAdmin](https://docs.ovh.com/ie/en/hosting/creating-database/#accessing-the-phpmyadmin-interface) appears, if this maximum number of connections is exceeded.
 
@@ -275,12 +275,12 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 >
 > If the database you would like to connect to appears in the `Databases`{.action} tab of the `Hosting plans`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), the name to enter is in the `Server address` column.
 >
-> If you want to connect to a database on a [CloudDB server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/), the server name can be retrieved from the tab `General information`{.action}, in the box `Login information`{.action} under `SQL`{.action} and labelled as `Host name`{.action}.
+> If you want to connect to a database on a [Web Cloud Databases server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/), the server name can be retrieved from the tab `General information`{.action}, in the box `Login information`{.action} under `SQL`{.action} and labelled as `Host name`{.action}.
 >
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with CloudDB](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/)
+[Getting started with Web Cloud Databases](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/)
 
 [Resolving the most common 1-click module errors](https://docs.ovh.com/ie/en/hosting/error-frequently-1-click-modules/)
 

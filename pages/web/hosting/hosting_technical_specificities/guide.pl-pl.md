@@ -53,9 +53,9 @@ W ciągu 3600 sekund (czyli 1 godzina) Twoja oferta hostingowa pozwoli Ci na wys
 
 ### Jednoczesne połączenia z bazą danych
 
-- Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (200 z bazą danych CloudDB). Sprawdź [szczegóły naszych ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/), aby poznać dostępne opcje w każdym planie hostingu WWW.
+- Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (200 z bazą danych Web Cloud Databases). Sprawdź [szczegóły naszych ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/), aby poznać dostępne opcje w każdym planie hostingu WWW.
 
-- Możesz również zamówić dodatkowe bazy danych **CloudDB**, które mają opcje personalizacji:
+- Możesz również zamówić dodatkowe bazy danych **Web Cloud Databases**, które mają opcje personalizacji:
 
     - *max_connections*: domyślnie 100, z możliwością zwiększenia do 200
 
@@ -161,7 +161,7 @@ Dowiedz się, jak [zalogować się do przestrzeni dyskowej](https://docs.ovh.com
 
 #### Baza danych / SQL
 
-W przypadku baz danych na hostingu (zawartych w ofercie hostingu www) lub serwerów baz danych (CloudDB) dostępnych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie kopia zapasowa baz danych jest wykonywana codziennie. Kopie te są dostępne (poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub poprzez [API OVHcloud](https://api.ovh.com/). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane te są kopiowane w 3 różnych miejscach we Francji: Roubaix (RBX), Strasburg (SBG) i Gravelines (GRA). Polityka przechowywania kopii zapasowych wynosi 30 dni.
+W przypadku baz danych na hostingu (zawartych w ofercie hostingu www) lub serwerów baz danych (Web Cloud Databases) dostępnych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie kopia zapasowa baz danych jest wykonywana codziennie. Kopie te są dostępne (poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub poprzez [API OVHcloud](https://api.ovh.com/). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane te są kopiowane w 3 różnych miejscach we Francji: Roubaix (RBX), Strasburg (SBG) i Gravelines (GRA). Polityka przechowywania kopii zapasowych wynosi 30 dni.
 
 Dowiedz się, jak [Pobierz kopię zapasową bazy danych hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/) w naszej dokumentacji.
 

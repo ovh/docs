@@ -72,19 +72,19 @@ Nachdem Sie Ihre Datenbanken gelöscht haben, denken Sie daran, die genutzte Quo
 
 ![Quota](images/quota.png){.thumbnail}
 
-#### 3 - CloudDB
+#### 3 - Web Cloud Databases
 
-Wenn Sie die in Ihrem Hosting der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthaltene [CloudDB](https://docs.ovh.com/de/hosting/erste-schritte-mit-clouddb/#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers) verwenden und Ihr Hosting auf [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) umstellen möchten, gehen Sie in den Bereich `Hosting-Pakete`{.action} Ihres Kundencenters.<br>
+Wenn Sie die in Ihrem Hosting der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthaltene [Web Cloud Databases](https://docs.ovh.com/de/hosting/erste-schritte-mit-clouddb/#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers) verwenden und Ihr Hosting auf [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) umstellen möchten, gehen Sie in den Bereich `Hosting-Pakete`{.action} Ihres Kundencenters.<br>
 Klicken Sie im Bereich `Konfiguration`{.action} auf den Button `...`{.action} und dann auf `Abtrennen`{.action}.
 
-![clouddb](images/clouddb.png){.thumbnail}
+![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
-Mit dieser Aktion können Sie einen CloudDB Dienst bestellen, der unabhängig von Ihrem *Performance* Abo ist. Die Daten Ihres Servers werden gespeichert.
+Mit dieser Aktion können Sie einen Web Cloud Databases Dienst bestellen, der unabhängig von Ihrem *Performance* Abo ist. Die Daten Ihres Servers werden gespeichert.
 
 Wenn Sie diese Daten nicht speichern möchten, können Sie auch einfach den Private SQL löschen, bevor Sie zum *Pro* Angebot wechseln.
 
 1. Speichern Sie Ihre Daten gemäß den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/hosting/backup-eine-datenbank-exportieren/).<br>
-2. Löschen Sie Ihren CloudDB Server über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie hierzu oben rechts auf Ihren Namen und dann auf der `Dienstverwaltung`{.action}. Klicken Sie dann rechts in der betreffenden Zeile auf `...`{.action} und dann auf `Mein SQL Private Hosting kündigen`{.action}.
+2. Löschen Sie Ihren Web Cloud Databases Server über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie hierzu oben rechts auf Ihren Namen und dann auf der `Dienstverwaltung`{.action}. Klicken Sie dann rechts in der betreffenden Zeile auf `...`{.action} und dann auf `Mein SQL Private Hosting kündigen`{.action}.
 
 #### 4 - FTP Bereich
 

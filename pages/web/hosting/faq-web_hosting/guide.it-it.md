@@ -60,12 +60,12 @@ Una volta terminato o eliminato il tuo hosting condiviso, l'offerta email associ
 
 Per effettuare questa operazione, clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione `Configurazione`, clicca sul pulsante `...`{.action} a destra di `Account email`. Clicca su `Scollega la tua opzione email`{.action} e segui le istruzioni per ordinare un'offerta email indipendente che ti permetterà di conservare i tuoi indirizzi email già creati.
 
-### In caso di disattivazione di un hosting condiviso Performance, come conservare l'offerta CloudDB associata?
+### In caso di disattivazione di un hosting condiviso Performance, come conservare l'offerta Web Cloud Databases associata?
 
-Gli hosting condivisi **Performance** includono un'offerta CloudDB attivabile gratuitamente.
-Quando elimini o elimini il tuo hosting condiviso **Performance**, l'offerta CloudDB associata è disattivata. Per conservare il tuo CloudDB, dovrai scollegarlo prima della disattivazione dell'hosting.<br>
+Gli hosting condivisi **Performance** includono un'offerta Web Cloud Databases attivabile gratuitamente.
+Quando elimini o elimini il tuo hosting condiviso **Performance**, l'offerta Web Cloud Databases associata è disattivata. Per conservare il tuo Web Cloud Databases, dovrai scollegarlo prima della disattivazione dell'hosting.<br>
 
-Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione **Configurazione**, clicca sul pulsante `...`{.action} a destra di "**Database Private**". Clicca su `Scollega`{.action} e segui le istruzioni per ordinare un'offerta CloudDB indipendente, per mantenere il tuo CloudDB già creato.
+Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezione **Configurazione**, clicca sul pulsante `...`{.action} a destra di "**Database Private**". Clicca su `Scollega`{.action} e segui le istruzioni per ordinare un'offerta Web Cloud Databases indipendente, per mantenere il tuo Web Cloud Databases già creato.
 
 ## Diagnostica
 

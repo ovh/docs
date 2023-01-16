@@ -62,7 +62,7 @@ Para consultar la carpeta en la que está almacenado el sitio web, abra la pesta
 Para obtener una copia de seguridad de la base de datos, consulte nuestra guía:
 [Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/){.external}.
 
-Si utiliza una base de datos **CloudDB** para su sitio web, consulte la sección relativa al backup de nuestra guía:
+Si utiliza una base de datos **Web Cloud Databases** para su sitio web, consulte la sección relativa al backup de nuestra guía:
 [Guardar y exportar una base de datos en un servidor de bases de datos](https://docs.ovh.com/es/hosting/guardar-exportar-una-base-de-datos/){.external}.
 
 ### 3. obtener los logs de su alojamiento de OVHcloud

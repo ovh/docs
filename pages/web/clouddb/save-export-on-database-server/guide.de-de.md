@@ -20,14 +20,14 @@ Ihre Datenbank enthält in der Regel wichtige Datensätze für den Betrieb Ihrer
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die [CloudDB Dienste](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankserver gewähren, sondern auf die darauf gehosteten Datenbanken. 
+> Beachten Sie, dass die [Web Cloud Databases Dienste](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankserver gewähren, sondern auf die darauf gehosteten Datenbanken. 
 > <br> - Es gibt keinen "root"-Zugang. 
 > <br> - Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
@@ -48,13 +48,13 @@ In der Spalte **Sicherungen** indiziert die Zahl die für Ihre Datenbank verfüg
 
 Klicken Sie auf `...`{.action} rechts neben der Datenbank und dann auf `Jetzt sichern`{.action}.
 
-![clouddb](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Backup exportieren
 
 Klicken Sie auf `...`{.action}. rechts neben der Datenbank und dann auf `Die Sicherungen anzeigen`{.action}.
 
-![clouddb](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
 
 Die Liste der verfügbaren Backups erscheint. Klicken Sie auf `...`{.action} rechts neben dem ausgewählten Backup und dann auf `Sicherung herunterladen`{.action}, um die Datei anzufordern.
 
@@ -72,7 +72,7 @@ Wenn Sie in phpMyAdmin eingeloggt sind, klicken Sie auf den Namen der Datenbank,
 
 Sie haben zwei mögliche Exportmethoden. Wenn Sie keine besonderen Bedürfnisse haben, empfehlen wir Ihnen die Verwendung des Schnellmodus im **SQL**-Format.
 
-![clouddb](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 MySQL oder MariaDB Datenbank über die Kommandozeile exportieren
 

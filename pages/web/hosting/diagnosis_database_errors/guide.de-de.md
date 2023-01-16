@@ -28,7 +28,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie verwenden einen unserer Datenbankdienste: [Web Cloud](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [CloudDB](https://www.ovh.de/cloud/cloud-databases/).
+- Sie verwenden einen unserer Datenbankdienste: [Web Cloud](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/).
 
 ## In der praktischen Anwendung
 
@@ -36,7 +36,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 #### Auf aktuelle Störungen überprüfen
 
-Überprüfen Sie zunächst auf [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), ob Ihr Rechenzentrum, Hosting-Cluster oder CloudDB Server von einer Störung auf der OVHcloud Infrastruktur betroffen sind.
+Überprüfen Sie zunächst auf [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), ob Ihr Rechenzentrum, Hosting-Cluster oder Web Cloud Databases Server von einer Störung auf der OVHcloud Infrastruktur betroffen sind.
 
 > [!primary]
 >
@@ -44,7 +44,7 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 >
 > - Das **Rechenzentrum** und den *Filer* Ihres Webhostings finden Sie im Tab `Allgemeine Informationen`{.action}: Wählen Sie das Hosting unter `Hosting-Pakete`{.action} aus und wechseln zum Tab `Allgemeine Informationen`{.action}.
 > - Das **Cluster** Ihres Webhostings kann im Tab `FTP-SSH`{.action} eingesehen werden. Die Cluster-Kennung erscheint als Teil des Servernamens unter `FTP-Server`.
-> - Um den Namen des **CloudDB** zu finden, klicken Sie unter `Datenbanken`{.action} auf den betreffenden Datenbankdienst. Die Server-Bezeichung (`Hostname`) befindet sich unter `SQL` im Feld `Verbindungsinformationen` des Tabs `Allgemeine Informationen`{.action}.
+> - Um den Namen des **Web Cloud Databases** zu finden, klicken Sie unter `Datenbanken`{.action} auf den betreffenden Datenbankdienst. Die Server-Bezeichung (`Hostname`) befindet sich unter `SQL` im Feld `Verbindungsinformationen` des Tabs `Allgemeine Informationen`{.action}.
 >
 
 #### Verbindungsdaten Ihrer Datenbank überprüfen <a name="config_file"></a>
@@ -130,7 +130,7 @@ Sie können Ihre Daten auch auf eine neue Datenbank migrieren:
 
 > [!primary]
 >
-> Wenn Sie über ein **Performance** Hosting-Paket verfügen, können Sie auch [kostenlos einen CloudDB Server aktivieren](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers).
+> Wenn Sie über ein **Performance** Hosting-Paket verfügen, können Sie auch [kostenlos einen Web Cloud Databases Server aktivieren](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers).
 >
 
 #### Methode 3: Unnötige Daten löschen
@@ -155,7 +155,7 @@ Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung
 
 ### Überschreitungen der RAM-Kapazität
 
-In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wird darauf hingewiesen, dass Ihre [CloudDB](https://www.ovh.de/cloud/cloud-databases/) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
+In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wird darauf hingewiesen, dass Ihre [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -163,9 +163,9 @@ In diesem Fall können Sie die [RAM-Kapazität](https://docs.ovh.com/de/hosting/
 
 > [!warning]
 >
-> Diese Erweiterung des RAM funktioniert nur bei einer CloudDB, die nicht Teil eines Performance Webhostings ist. Wenn Sie die RAM-Kapazität einer in den [Performance Angeboten](https://www.ovhcloud.com/de/web-hosting/performance-offer/){.external} enthaltenen Datenbank erhöhen möchten, müssen Sie diese zuerst abtrennen.
+> Diese Erweiterung des RAM funktioniert nur bei einer Web Cloud Databases, die nicht Teil eines Performance Webhostings ist. Wenn Sie die RAM-Kapazität einer in den [Performance Angeboten](https://www.ovhcloud.com/de/web-hosting/performance-offer/){.external} enthaltenen Datenbank erhöhen möchten, müssen Sie diese zuerst abtrennen.
 > 
-> Loggen Sie sich zum Abtrennen der Datenbank in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und öffnen Sie `Web Cloud`{.action}. Klicken Sie links auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting mit der aktiven CloudDB aus.
+> Loggen Sie sich zum Abtrennen der Datenbank in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und öffnen Sie `Web Cloud`{.action}. Klicken Sie links auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting mit der aktiven Web Cloud Databases aus.
 >
 > Klicken Sie im Bereich `Konfiguration` auf den Button `...`{.action} rechts neben `Private Datenbank`. Klicken Sie dann auf `Abtrennen`{.action}.
 >
@@ -197,7 +197,7 @@ Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/
 
 > [!success]
 >
-> Sie können keinen **Trigger** im Importskript Ihrer Datenbank verwenden. Importieren Sie in diesem Fall Ihre Datenbank auf einen [CloudDB Dienst](https://www.ovh.de/cloud/cloud-databases/).
+> Sie können keinen **Trigger** im Importskript Ihrer Datenbank verwenden. Importieren Sie in diesem Fall Ihre Datenbank auf einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud/cloud-databases/).
 >
 
 Außerdem ist folgende Abfrage nicht zulässig:
@@ -221,11 +221,11 @@ Ersetzen Sie `Database-Name` mit dem Namen der Datenbank aus Ihrem [OVHcloud Kun
 >
 
 
-Diese Fehlermeldung wird beim [Import einer Datenbank](https://docs.ovh.com/de/hosting/datenbank-importieren/#eine-lokale-sicherung-importieren) auf [CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) angezeigt. Dies hängt meist mit der Menge der zu importierenden Daten oder mit einer mangelnden Optimierung der SQL-Abfragen im Importskript zusammen.
+Diese Fehlermeldung wird beim [Import einer Datenbank](https://docs.ovh.com/de/hosting/datenbank-importieren/#eine-lokale-sicherung-importieren) auf [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) angezeigt. Dies hängt meist mit der Menge der zu importierenden Daten oder mit einer mangelnden Optimierung der SQL-Abfragen im Importskript zusammen.
 
 Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
-- Erhöhung der [Arbeitsspeicherkapazität (RAM)](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots_1). Gehen Sie hierzu zum [CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM` und wählen Sie `RAM-Menge ändern`{.action}.
+- Erhöhung der [Arbeitsspeicherkapazität (RAM)](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#wechseln-des-datenbank-angebots_1). Gehen Sie hierzu zum [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie dann auf die Schaltfläche `...`{.action} im Bereich `RAM` und wählen Sie `RAM-Menge ändern`{.action}.
 
 - Splitten Sie Ihre Datenbank, um sie dann über mehrere Operationen zu importieren. (Für Fragen zu den durchzuführenden Operationen kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.)
 
@@ -253,7 +253,7 @@ Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](
 
 Die maximale Anzahl an aktiven Verbindungen für die mit den Shared Hosting Angeboten gelieferten Datenbanken ([StartSQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/)) beträgt **30**.
 
-Diese Zahl erhöht sich auf **200** für Datenbanken auf [CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/). (Diese Einstellung kann im Bereich `Konfiguration`{.action} Ihres Datenbankdienstes geändert werden).
+Diese Zahl erhöht sich auf **200** für Datenbanken auf [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/). (Diese Einstellung kann im Bereich `Konfiguration`{.action} Ihres Datenbankdienstes geändert werden).
 
 Diese Nachricht erscheint bei der [Verbindung über phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen), wenn diese maximale Anzahl an Verbindungen überschritten wird.
 
@@ -280,12 +280,12 @@ Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](https://docs.ovh.
 >
 > Wenn sich die Datenbank, mit der Sie sich verbinden möchten, unter `Web Cloud`{.action} im Tab `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, finden Sie den anzugebenen Namen in der Spalte `Server-Adresse`.
 >
-> Wenn Sie sich mit einer Datenbank auf [CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) verbinden möchten, finden Sie den einzugebenden Servernamen im Tab `Allgemeine Informationen`{.action} im Bereich `Verbindungsinformationen`{.action} unter `SQL`{.action}, hier bezeichnet als `Hostname`{.action}.
+> Wenn Sie sich mit einer Datenbank auf [Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) verbinden möchten, finden Sie den einzugebenden Servernamen im Tab `Allgemeine Informationen`{.action} im Bereich `Verbindungsinformationen`{.action} unter `SQL`{.action}, hier bezeichnet als `Hostname`{.action}.
 >
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Erste Schritte mit CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
+[Erste Schritte mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

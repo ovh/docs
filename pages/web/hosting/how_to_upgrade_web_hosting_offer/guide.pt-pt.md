@@ -70,19 +70,19 @@ No seguimento da eliminação de dados nas suas bases de dados, pense em recalcu
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - CloudDB
+#### 3 - Web Cloud Databases
 
-Se utiliza a oferta [CloudDB](https://docs.ovh.com/pt/hosting/comecar-com-clouddb/#ativacao-do-seu-servidor-clouddb-incluido-com-o-seu-plano-de-alojamento-web) incluída com o seu alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e deseja migrar o seu alojamento para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), aceda à parte `Alojamentos`{.action} da sua Área de Cliente.<br>
+Se utiliza a oferta [Web Cloud Databases](https://docs.ovh.com/pt/hosting/comecar-com-clouddb/#ativacao-do-seu-servidor-clouddb-incluido-com-o-seu-plano-de-alojamento-web) incluída com o seu alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e deseja migrar o seu alojamento para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), aceda à parte `Alojamentos`{.action} da sua Área de Cliente.<br>
 Clique no botão `...`{.action} na parte `Bases de dados privada`{.action} depois `Desassociar`{.action}.
 
-![clouddb](images/clouddb.png){.thumbnail}
+![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
-Esta ação permitir-lhe-á encomendar uma oferta CloudDB independente da sua subscrição *Performance*. Os dados do seu servidor serão conservados.
+Esta ação permitir-lhe-á encomendar uma oferta Web Cloud Databases independente da sua subscrição *Performance*. Os dados do seu servidor serão conservados.
 
 Se não deseja conservar estes dados, pode também eliminar o seu SQL privado antes de passar para a oferta *Pro*: 
 
 1. Faça o backup dos seus dados seguindo as instruções deste [guia](https://docs.ovh.com/pt/hosting/backup-exportacao-base-de-dados/).<br>
-2. Elimine o seu servidor CloudDB através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, clique no canto superior direito no seu nome e depois em `Gestão dos serviços`{.action}. A seguir, clique no botão `...`{.action} à direita da linha em questão e depois `Eliminar o meu alojamento SQL privado`{.action}.
+2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, clique no canto superior direito no seu nome e depois em `Gestão dos serviços`{.action}. A seguir, clique no botão `...`{.action} à direita da linha em questão e depois `Eliminar o meu alojamento SQL privado`{.action}.
 
 #### 4 - Espaço FTP
 

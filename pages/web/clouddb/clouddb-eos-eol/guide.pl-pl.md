@@ -1,5 +1,5 @@
 ---
-title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi CloudDB'
+title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Zasoby techniczne'
 ---
@@ -12,7 +12,7 @@ section: 'Zasoby techniczne'
 
 ## Wprowadzenie
 
-Produktami objętymi ogłoszeniami o zakończeniu sprzedaży są usługi CloudDB, instancje SGBD dostępne za pośrednictwem sieci publicznej lub sieci Web Hosting.
+Produktami objętymi ogłoszeniami o zakończeniu sprzedaży są usługi Web Cloud Databases, instancje SGBD dostępne za pośrednictwem sieci publicznej lub sieci Web Hosting.
 Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](../managed-db-life-cycle-policy/) baz danych.
 
 |Wersja|Ogłoszenie o zakończeniu życia|Koniec sprzedaży|Zakończenie pomocy|

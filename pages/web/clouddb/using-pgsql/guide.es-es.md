@@ -6,7 +6,7 @@ section: Primeros pasos
 order: 03
 ---
 
-¿Quiere utilizar PostgreSQL en CloudDB? Descubra cómo crear y administrar fácilmente sus bases de datos alojadas en esta solución.
+¿Quiere utilizar PostgreSQL en Web Cloud Databases? Descubra cómo crear y administrar fácilmente sus bases de datos alojadas en esta solución.
 
 
 ## Introduccion
@@ -14,7 +14,7 @@ order: 03
 ### Requisitos
 Para seguir los pasos de esta guía, es necesario:
 
-- tener una instancia CloudDB;
+- tener una instancia Web Cloud Databases;
 - haber consultado [esta guía](../empezar-con-clouddb/).
 
 
@@ -31,12 +31,12 @@ Además, tiene una comunidad *open source* muy activa.
 
 > [!primary]
 >
-> Tenga en cuenta que la solución CloudDB no da acceso al servidor host, sino a las bases de datos alojadas en él. Los comandos SQL genéricos funcionan sin ningún problema, y los programas de tipo HeidiSQL o SQuirreL SQL son totalmente compatibles.
+> Tenga en cuenta que la solución Web Cloud Databases no da acceso al servidor host, sino a las bases de datos alojadas en él. Los comandos SQL genéricos funcionan sin ningún problema, y los programas de tipo HeidiSQL o SQuirreL SQL son totalmente compatibles.
 > 
 
 Para conectarse a ella, es necesario disponer de la siguiente información relativa a la base de datos:
 
-- la dirección de la instancia CloudDB en la que está alojada;
+- la dirección de la instancia Web Cloud Databases en la que está alojada;
 - el puerto;
 - el nombre de usuario;
 - la contraseña;

@@ -115,7 +115,7 @@ Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modu
 
 Um Ihr 1-Klick-Modul zu löschen, müssen Sie zuerst sein Datenbank mit Sicherheit **identifizieren**. Gehen Sie dazu im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action} und auf das betreffende Hosting und dann auf den Tab `Datenbanken`{.action}.
 
-Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [CloudDB](https://www.ovh.de/cloud/cloud-databases/) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
+Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfügen und über keine [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) Lösung verfügen, können Sie davon ausgehen, dass es sich um Ihre Website handelt.
 
 Andernfalls gehen Sie zum Tab `Multisite`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`: Dieses Verzeichnis enthält die Dateien, aus denen Ihr 1-Klick-Modul auf dem FTP-Server besteht.
 

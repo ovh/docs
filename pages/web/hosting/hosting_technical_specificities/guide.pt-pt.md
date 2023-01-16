@@ -53,9 +53,9 @@ Durante um período de 3600 segundos (ou seja, 1 hora), a sua oferta de alojamen
 
 ### Conexões simultâneas à base de dados
 
-- Nas ofertas de alojamento web (bases de dados partilhadas), há um limite de 30 conexões simultâneas por base de dados (200 com uma base de dados CloudDB). Consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/) para conhecer as opções disponíveis em cada plano de alojamento web.
+- Nas ofertas de alojamento web (bases de dados partilhadas), há um limite de 30 conexões simultâneas por base de dados (200 com uma base de dados Web Cloud Databases). Consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/) para conhecer as opções disponíveis em cada plano de alojamento web.
 
-- Também pode encomendar bases de dados **CloudDB** suplementares, que dispõem de opções de personalização:
+- Também pode encomendar bases de dados **Web Cloud Databases** suplementares, que dispõem de opções de personalização:
 
     - *max_connections*: 100 de forma padrão, com a possibilidade de passar para 200
 
@@ -65,7 +65,7 @@ Para saber mais, consulte as nossas [ofertas de alojamento](https://www.ovhcloud
 
 #### Conexões a partir de um servidor externo
 
-- Por razões de segurança, não é possível conectar-se a partir de um servidor externo à base de dados de um alojamento web OVHcloud, mesmo que sejam bases de dados SQL partilhadas ou CloudDB. Apenas os servidores OVHcloud Web Hosting podem conectar-se aos servidores das bases de dados. Qualquer outra conexão vai provocar o erro seguinte:
+- Por razões de segurança, não é possível conectar-se a partir de um servidor externo à base de dados de um alojamento web OVHcloud, mesmo que sejam bases de dados SQL partilhadas ou Web Cloud Databases. Apenas os servidores OVHcloud Web Hosting podem conectar-se aos servidores das bases de dados. Qualquer outra conexão vai provocar o erro seguinte:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect...
@@ -161,7 +161,7 @@ Saiba como [ligar-se ao espaço de armazenamento](https://docs.ovh.com/pt/hostin
 
 ###### Base de dados / SQL
 
-Para as bases de dados partilhadas (incluídas na sua oferta de alojamento Web) ou os servidores de base de dados (CloudDB), propostos em Gravelines (GRA), em França e Beauharnois (BHS), no Canadá, o backup das bases de dados é feito todos os dias. Estes backups estão acessíveis (através de [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou através das [API OVHcloud](https://api.ovh.com/). Os backups são igualmente armazenados numa outra infraestrutura. Estes dados são replicados em 3 locais distintos em França: Roubaix(RBX), Estrasburgo(SBG) e Gravelines(GRA). A política de retenção dos backups é de 30 dias.
+Para as bases de dados partilhadas (incluídas na sua oferta de alojamento Web) ou os servidores de base de dados (Web Cloud Databases), propostos em Gravelines (GRA), em França e Beauharnois (BHS), no Canadá, o backup das bases de dados é feito todos os dias. Estes backups estão acessíveis (através de [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou através das [API OVHcloud](https://api.ovh.com/). Os backups são igualmente armazenados numa outra infraestrutura. Estes dados são replicados em 3 locais distintos em França: Roubaix(RBX), Estrasburgo(SBG) e Gravelines(GRA). A política de retenção dos backups é de 30 dias.
 
 Saiba como [Recuperar o backup da base de dados de um alojamento web](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) no nosso manual.
 

@@ -52,9 +52,9 @@ Innerhalb eines gleitenden Zeitraums von 3600 Sekunden (also 1 Stunde) können S
 
 ### Simultane Verbindungen mit der Datenbank
 
-- Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 simultanen Verbindungen je Datenbank (200 bei enthaltener CloudDB Datenbank). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) nachlesen.
+- Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 simultanen Verbindungen je Datenbank (200 bei enthaltener Web Cloud Databases Datenbank). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) nachlesen.
 
-- Darüber hinaus können Sie auch zusätzliche **CloudDB** Datenbanken bestellen und weiter anpassen:
+- Darüber hinaus können Sie auch zusätzliche **Web Cloud Databases** Datenbanken bestellen und weiter anpassen:
 
     - *max_connections*: standardmäßig 100, bis zu 200 möglich
 
@@ -64,7 +64,7 @@ Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](https:
 
 #### Verbindungen über einen externen Server
 
-- Aus Sicherheitsgründen ist es nicht möglich, sich über einen externen Server mit der Datenbank eines OVHcloud Webhostings zu verbinden, unabhängig davon, ob es sich dabei um eine geteilte oder eine CloudDB Datenbank handelt. Nur OVHcloud Webhosting Server können sich mit den Datenbankservern verbinden. Jeder andere Verbindungsversuch führt zu folgendem Fehler:
+- Aus Sicherheitsgründen ist es nicht möglich, sich über einen externen Server mit der Datenbank eines OVHcloud Webhostings zu verbinden, unabhängig davon, ob es sich dabei um eine geteilte oder eine Web Cloud Databases Datenbank handelt. Nur OVHcloud Webhosting Server können sich mit den Datenbankservern verbinden. Jeder andere Verbindungsversuch führt zu folgendem Fehler:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -160,7 +160,7 @@ In unseren Dokumentationen erfahren Sie, wie Sie sich [in den Speicherplatz einl
 
 #### Datenbank / SQL
 
-Für geteilte Datenbanken ("Shared", inklusive in Ihrem Webhosting Angebot) oder Datenbank-Server (CloudDB), lokalisiert in Gravelines (GRA), Frankreich und Beauharnois (BHS), Kanada, erfolgt eine tägliche Sicherung der Datenbanken. Diese Backups sind verfügbar (über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder über die [OVHcloud API](https://api.ovh.com/)). Die Backups werden auch auf einer anderen Infrastruktur gespeichert. Diese Daten werden an 3 verschiedenen Standorten in Frankreich repliziert: Roubaix (RBX), Straßburg (SBG) und Gravelines (GRA). Die Aufbewahrungsdauer für die Backups beträgt 30 Tage.
+Für geteilte Datenbanken ("Shared", inklusive in Ihrem Webhosting Angebot) oder Datenbank-Server (Web Cloud Databases), lokalisiert in Gravelines (GRA), Frankreich und Beauharnois (BHS), Kanada, erfolgt eine tägliche Sicherung der Datenbanken. Diese Backups sind verfügbar (über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder über die [OVHcloud API](https://api.ovh.com/)). Die Backups werden auch auf einer anderen Infrastruktur gespeichert. Diese Daten werden an 3 verschiedenen Standorten in Frankreich repliziert: Roubaix (RBX), Straßburg (SBG) und Gravelines (GRA). Die Aufbewahrungsdauer für die Backups beträgt 30 Tage.
 
 In unserer Anleitung erfahren Sie, wie [Backups der Datenbank eines Webhostings abrufen](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
 

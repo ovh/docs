@@ -20,14 +20,14 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 
 ## Requisitos
 
-- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
+- Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que las soluciones [CloudDB](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> Tenga en cuenta que las soluciones [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
 > <br> - Tenga en cuenta que no hay acceso "root".
 > <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 
@@ -71,7 +71,7 @@ Si la conexión se ha completado, se mostrará la siguiente página de phpMyAdmi
 
 > [!warning]
 >
-> Si utiliza una solución Cloud DB/ SQL Privado, no olvide autorizar su IP utilizando la guía sobre la [configuración de su servidor de bases de datos](https://docs.ovh.com/es/clouddb/configurar-optimizar-su-servidor-de-base-de-datos/).
+> Si utiliza una solución Web Cloud Databases/ SQL Privado, no olvide autorizar su IP utilizando la guía sobre la [configuración de su servidor de bases de datos](https://docs.ovh.com/es/clouddb/configurar-optimizar-su-servidor-de-base-de-datos/).
 >
 
 Para conectarse a la base de datos, asegúrese de que dispone de la siguiente información:

@@ -13,8 +13,8 @@ Deseja utilizar PostgreSQL? Descubra como criar e gerir facilmente as suas bases
 
 ### Pre-requisitos
 
-- Uma instância CloudDB
-- Ter consultado [o guia CloudDB](../comecar-com-clouddb/)
+- Uma instância Web Cloud Databases
+- Ter consultado [o guia Web Cloud Databases](../comecar-com-clouddb/)
 
 ### O que e uma base de dados PostgreSQL ?
 PostgreSQL é um sistema de gestão de bases de dados relacionais e de objetos (SGBDRO). Trata-se de um sistema robusto e extensível, capaz de manipular com total fiabilidade grandes volumes de dados. Dispõe igualmente de uma comunidade opensource bastante ativa.
@@ -38,7 +38,7 @@ De forma a poder ligar-se à base de dados, assegure-se que:
 
 Todas estas informações estão disponíveis no seu [Espaço Cliente Web](https://www.ovh.com/manager/web/){.external}.
 
-Está igualmente disponível um guia : [CloudDB - primeira utilização](../starting_with_clouddb/guide.pt-pt.md){.ref}
+Está igualmente disponível um guia : [Web Cloud Databases - primeira utilização](../starting_with_clouddb/guide.pt-pt.md){.ref}
 
 
 ### Ligacao atraves de linha de comandos

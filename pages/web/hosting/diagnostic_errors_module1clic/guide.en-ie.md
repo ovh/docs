@@ -50,7 +50,7 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-With the [Professional](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [CloudDB](https://www.ovh.ie/cloud/cloud-databases/) for free.
+With the [Professional](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) for free.
 
 #### Solution 2: delete an unused database <a name="deleteDB"></a>
 
@@ -144,7 +144,7 @@ If you don't have any other databases and you don't want to order an additional 
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#basic-module-installation) on a database located on a [CloudDB server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the user logged in during the installation does not have sufficient rights to the database, or that the credentials entered are incorrect.
+You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#basic-module-installation) on a database located on a [Web Cloud Databases server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the user logged in during the installation does not have sufficient rights to the database, or that the credentials entered are incorrect.
 
 In this situation, first modify the [user rights](../create-databases-and-users/#managing-user-rights) concerned, so that they have **Administrator** or **Read/write** rights on the database.
 
@@ -154,7 +154,7 @@ You can also verify your login details by [connecting directly](../connecting-to
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation) on a database located on a [CloudDB server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the database server name you specified is incorrect.
+You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation) on a database located on a [Web Cloud Databases server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the database server name you specified is incorrect.
 
 Click on the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then on the `Databases`{.action} tab.
 

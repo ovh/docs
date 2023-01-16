@@ -29,7 +29,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 - Disponer de un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [CloudDB](https://www.ovh.es/cloud/cloud-databases/).
+- Utilizar uno de nuestros productos de bases de datos [Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
 ## Procedimiento
 
@@ -37,7 +37,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 
 #### Comprobar los incidentes en curso
 
-En primer lugar, compruebe en [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que su datacenter, su cluster de alojamiento, su servidor CloudDB no se ven afectados por ningún incidente en la infraestructura de OVHcloud.
+En primer lugar, compruebe en [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que su datacenter, su cluster de alojamiento, su servidor Web Cloud Databases no se ven afectados por ningún incidente en la infraestructura de OVHcloud.
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ En primer lugar, compruebe en [https://web-cloud.status-ovhcloud.com/](https://w
 >
 > - Para encontrar el `Datacenter` de su alojamiento, así como su `Filer` (servidor de archivos), seleccione `Alojamientos`{.action} y, seguidamente, el alojamiento correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
 > - Para consultar el **cluster** de servidores en el que se encuentra el alojamiento, abra la pestaña `FTP-SSH`{.action}. Esta información aparecerá en el nombre del servidor FTP.
-> - Para encontrar el nombre de su servidor **CloudDB**, haga clic en `Bases de datos`{.action} y seleccione el servicio correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
+> - Para encontrar el nombre de su servidor **Web Cloud Databases**, haga clic en `Bases de datos`{.action} y seleccione el servicio correspondiente. Puede consultar esta información en la pestaña `Información general`{.action}.
 >
 
 #### Comprobar las claves de conexión a su base de datos <a name="config_file"></a>
@@ -131,7 +131,7 @@ También puede migrar sus datos a una nueva base de datos:
 
 > [!primary]
 >
-> Si dispone de un alojamiento **Performance**, también puede [activar gratis un servidor CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting).
+> Si dispone de un alojamiento **Performance**, también puede [activar gratis un servidor Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting).
 >
 
 #### Método 3: eliminar datos innecesarios
@@ -156,7 +156,7 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 
 ### Memoria RAM rebasada
 
-El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), indica que su servidor [CloudDB](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
+El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -164,9 +164,9 @@ En ese caso, puede aumentar la [cantidad de memoria RAM](https://docs.ovh.com/es
 
 > [!warning]
 >
-> Para aumentar la RAM, el CloudDB no debe activarse a través de un hosting Performance. Si quiere aumentar la cantidad de memoria RAM de una base de datos incluida en los [planes Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/){.external}, deberá desvincularla primero.
+> Para aumentar la RAM, el Web Cloud Databases no debe activarse a través de un hosting Performance. Si quiere aumentar la cantidad de memoria RAM de una base de datos incluida en los [planes Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/){.external}, deberá desvincularla primero.
 > 
-> Para desvincular la base de datos, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web en el que esté activado el CloudDB.
+> Para desvincular la base de datos, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web en el que esté activado el Web Cloud Databases.
 >
 > En el área de `Configuración`, haga clic en los `...`{.action} a la derecha de la entrada de la `Base de datos privada` y haga clic en el botón `Desvincular`{.action}.
 >
@@ -202,7 +202,7 @@ Este mensaje de error significa que la base de datos que está intentando import
 >
 > ¿Qué elementos del script de importación de mi base de datos pueden causar un error "#1044 - Access denied for user to database"?
 
-Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [CloudDB](https://www.ovh.es/cloud/cloud-databases/).
+Tener un **"trigger"** en el script de importación de su base de datos no está autorizado en los servidores de alojamiento compartido de OVHcloud. En ese caso, importe la base de datos en un servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
 Por otro lado, no está permitida la siguiente petición:
 
@@ -224,11 +224,11 @@ USE `Database-Name`;
 > **"ERROR MySQL server has gone away"**
 >
 
-Este mensaje de error aparece durante [la importación de una base de datos](https://docs.ovh.com/es/hosting/restaurar-importar-base-de-datos/#2-importar-una-copia-de-seguridad-local) en un servidor [CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). La mayor parte del tiempo se debe a la cantidad excesiva de datos que se van a importar o a la falta de optimización de las peticiones SQL en el script de importación.
+Este mensaje de error aparece durante [la importación de una base de datos](https://docs.ovh.com/es/hosting/restaurar-importar-base-de-datos/#2-importar-una-copia-de-seguridad-local) en un servidor [Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). La mayor parte del tiempo se debe a la cantidad excesiva de datos que se van a importar o a la falta de optimización de las peticiones SQL en el script de importación.
 
 Para resolver esta anomalía, puede:
 
-- Aumentar la [cantidad de memoria RAM](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#seguimiento-de-la-ram-consumida). Para ello, acceda al [servidor CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
+- Aumentar la [cantidad de memoria RAM](https://docs.ovh.com/es/hosting/configurar-optimizar-su-servidor-de-base-de-datos/#seguimiento-de-la-ram-consumida). Para ello, acceda al [servidor Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/) correspondiente en la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en el botón `...`{.action} en la sección `RAM` y, seguidamente, en `Cambiar la cantidad de RAM`{.action}.
 
 - Fraccione su base de datos para importarla en varias operaciones en lugar de una (para cualquier duda sobre las operaciones a realizar, contacte con nuestra [comunidad](https://community.ovh.com/en/) o con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/). Nosotros no podremos asistirle en este asunto.
 
@@ -256,7 +256,7 @@ En ese caso, [compruebe los identificadores indicados](https://docs.ovh.com/es/h
 
 El número máximo de conexiones activas para las bases de datos entregadas con los alojamientos compartidos [StartSQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) es de **30**.
 
-Este número es de **200** para las bases de servidores [CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). (Puede cambiar este parámetro en la sección `Configuración`{.action} del servidor de la base de datos).
+Este número es de **200** para las bases de servidores [Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). (Puede cambiar este parámetro en la sección `Configuración`{.action} del servidor de la base de datos).
 
 Este mensaje aparece durante [conexión a PhpMyAdmin](https://docs.ovh.com/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin) cuando se supera el número máximo de conexiones.
 
@@ -283,12 +283,12 @@ Compruebe el nombre del servidor que quiera registrar en su [área de cliente de
 >
 > Si la base de datos a la que desea conectarse aparece en la pestaña `Bases de datos`{.action} de la parte `Alojamientos`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), el nombre que debe introducir se indica en la columna `Dirección del servidor`.
 >
-> Si desea conectarse a una base de datos en un servidor [CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
+> Si desea conectarse a una base de datos en un servidor [Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
 >
 
 ## Más información <a name="gofurther"></a>
 
-[Primeros pasos con el servicio CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/)
+[Primeros pasos con el servicio Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

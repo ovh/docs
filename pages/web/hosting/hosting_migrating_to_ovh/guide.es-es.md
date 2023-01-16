@@ -119,7 +119,7 @@ Para la copia de seguridad de su base de datos, [cree una nueva base de datos](h
 
 > [!primary]
 >
-> OVHcloud ofrece servidores de bases de datos CloudDB. Si desea utilizar esta solución en su sitio web, consulte toda la documentación relativa a este producto en nuestra página dedicada <https://docs.ovh.com/es/clouddb/>.
+> OVHcloud ofrece servidores de bases de datos Web Cloud Databases. Si desea utilizar esta solución en su sitio web, consulte toda la documentación relativa a este producto en nuestra página dedicada <https://docs.ovh.com/es/clouddb/>.
 >
 
 Conecte a continuación su base de datos de OVHcloud con el archivo de configuración de su sitio web, presente en el espacio de almacenamiento FTP de su alojamiento de OVHcloud.

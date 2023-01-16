@@ -62,7 +62,7 @@ Pour vérifier le dossier dans lequel votre site internet est stocké, positionn
 Pour récupérer une sauvegarde de votre base de données, consultez notre guide :
 [« Récupérer la sauvegarde de la base de données d’un hébergement web »](../exportation-bases-donnees/){.external}.
 
-Si vous utilisez une base de données **CloudDB** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
+Si vous utilisez une base de données **Web Cloud Databases** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
 [Sauvegarder et exporter une base de données sur votre serveur de bases de données](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/){.external}.
 
 ### Étape 3 : récupérer les logs de votre hébergement OVHcloud
@@ -104,6 +104,6 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 
 [Récupérer la sauvegarde de la base de données d’un hébergement web](../exportation-bases-donnees/){.external}.
 
-[Premiers pas avec le service CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/){.external}.
+[Premiers pas avec le service Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

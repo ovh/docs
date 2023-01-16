@@ -20,7 +20,7 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (auch in einem [Performance Web Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (auch in einem [Performance Web Hosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

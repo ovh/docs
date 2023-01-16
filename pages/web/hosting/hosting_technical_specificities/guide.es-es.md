@@ -53,9 +53,9 @@ En un período de 3600 segundos (es decir, 1 hora), su plan de hosting le permit
 
 ### Conexiones simultáneas a la base de datos
 
-- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos (200 con la base de datos CloudDB incluida). Consulte los [detalles de nuestros planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
+- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos (200 con la base de datos Web Cloud Databases incluida). Consulte los [detalles de nuestros planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
 
-- También puede contratar bases de datos **CloudDB** adicionales, que tienen opciones de personalización:
+- También puede contratar bases de datos **Web Cloud Databases** adicionales, que tienen opciones de personalización:
 
     - *max_connections*: 100 por defecto, con posibilidad de pasar a 200
 
@@ -65,7 +65,7 @@ Para saber más, consulte los detalles de nuestros [Planes de hosting](https://w
 
 #### Conexiones desde un servidor externo
 
-- Por razones de seguridad, no es posible conectarse desde un servidor externo a la base de datos de un plan de hosting OVHcloud, ya sean bases de datos SQL compartidas o CloudDB. Solo los servidores OVHcloud Web Hosting pueden conectarse a los servidores de base de datos. Cualquier otra conexión generará el siguiente error:
+- Por razones de seguridad, no es posible conectarse desde un servidor externo a la base de datos de un plan de hosting OVHcloud, ya sean bases de datos SQL compartidas o Web Cloud Databases. Solo los servidores OVHcloud Web Hosting pueden conectarse a los servidores de base de datos. Cualquier otra conexión generará el siguiente error:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -161,7 +161,7 @@ Esta guía explica cómo [conectarse al espacio de almacenamiento](https://docs.
 
 #### Base de datos / SQL
 
-Para las bases de datos compartidas (incluidas en su plan de hosting) o los servidores de bases de datos (CloudDB) de Gravelines (GRA), Francia y Beauharnois (BHS), Canadá, la copia de seguridad de las bases de datos se realiza diariamente. Estas copias de seguridad están disponibles (a través de [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a través de [la API de OVHcloud](https://api.ovh.com/)). Las copias de seguridad también se almacenan en otra infraestructura. Estos datos se replican en 3 lugares distintos en Francia : Roubaix (RBX), Estrasburgo (SBG) y Gravelines (GRA). La política de retención de las copias de seguridad es de 30 días.
+Para las bases de datos compartidas (incluidas en su plan de hosting) o los servidores de bases de datos (Web Cloud Databases) de Gravelines (GRA), Francia y Beauharnois (BHS), Canadá, la copia de seguridad de las bases de datos se realiza diariamente. Estas copias de seguridad están disponibles (a través de [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a través de [la API de OVHcloud](https://api.ovh.com/)). Las copias de seguridad también se almacenan en otra infraestructura. Estos datos se replican en 3 lugares distintos en Francia : Roubaix (RBX), Estrasburgo (SBG) y Gravelines (GRA). La política de retención de las copias de seguridad es de 30 días.
 
 Esta guía explica cómo [Descargar la copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/) en nuestra guía.
 

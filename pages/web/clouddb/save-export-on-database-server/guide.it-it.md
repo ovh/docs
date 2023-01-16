@@ -20,14 +20,14 @@ Il tuo database può contenere molte informazioni essenziali per il tuo sito. E'
 
 ## Prerequisiti
 
-- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/fr/web-hosting/)
+- Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 > [!primary]
 >
-> Attenzione: le soluzioni [CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> Attenzione: le soluzioni [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
 > <br> - Attenzione: non sono presenti accessi "root".
 > <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
 >
@@ -49,13 +49,13 @@ Al livello della colonna **Backup**, la cifra corrisponde al numero di backup di
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del database e seleziona `Salva adesso`{.action}.
 
-![clouddb](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Esporta un backup
 
 Clicca sui tre puntini `...`{.action} a destra del database e seleziona `Mostra i backup`{.action}
 
-![clouddb](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
 
 Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} a destra del backup scelto e poi su `Scarica il backup`{.action} per recuperare questo backup.
 
@@ -73,7 +73,7 @@ Una volta connesso a phpMyAdmin, clicca sul nome del database da esportare e poi
 
 Avete due possibili modalità di esportazione. Se non hai necessità specifiche, ti consigliamo di utilizzare la modalità **rapida** in formato **SQL**.
 
-![clouddb](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 Esporta il tuo database MySQL o MariaDB da riga di comando
 

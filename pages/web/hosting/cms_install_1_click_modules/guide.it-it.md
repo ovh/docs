@@ -81,7 +81,7 @@ A questo punto, inserisci i dati di accesso al tuo database. Esistono diverse po
 
 - se il database è già creato sul tuo hosting, selezionalo dalla lista e inserisci le informazioni richieste
 - se il database non è ancora stato creato sul tuo hosting, segui le indicazioni per crearlo, poi selezionalo dalla lista e inserisci le informazioni richieste
-- se il database è stato creato sulla tua istanza CloudDB, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
+- se il database è stato creato sulla tua istanza Web Cloud Databases, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
 - se il database è stato creato su un altro hosting Web OVHcloud, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. Il database e lo spazio di hosting devono essere ospitati nello stesso datacenter
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}.

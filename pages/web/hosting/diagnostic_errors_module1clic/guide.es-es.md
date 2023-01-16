@@ -55,7 +55,7 @@ En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Los planes [Hosting Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor CloudDB](https://www.ovh.es/cloud/cloud-databases/).
+Los planes [Hosting Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
 
 #### Solución n°2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
 
@@ -148,7 +148,7 @@ Si no tiene bases de datos adicionales y no desea contratar una solución adicio
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Ha iniciado la instalación de un módulo en 1 clic en [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) en una base de datos situada en un [servidor CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). Le hemos enviado por correo electrónico este mensaje de error. Significa que el usuario que se registró durante la instalación no tiene suficientes permisos sobre la base de datos o que las claves indicadas son incorrectas.
+Ha iniciado la instalación de un módulo en 1 clic en [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) en una base de datos situada en un [servidor Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). Le hemos enviado por correo electrónico este mensaje de error. Significa que el usuario que se registró durante la instalación no tiene suficientes permisos sobre la base de datos o que las claves indicadas son incorrectas.
 
 En ese caso, modifique en primer lugar los [derechos del usuario](../crear-bases-de-datos-y-usuarios/#gestionar-los-derechos-de-los-usuarios) correspondientes para que disponga de los permisos **Administrador** o **Lectura/escritura** sobre la base de datos.
 
@@ -158,7 +158,7 @@ Compruebe también sus claves de acceso [conectando directamente](../coneccion-b
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Ha iniciado la instalación de un módulo en 1 clic en [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) en una base de datos situada en un [servidor CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). Le hemos enviado por correo electrónico este mensaje de error. Significa que el nombre de servidor de bases de datos indicado es incorrecto.
+Ha iniciado la instalación de un módulo en 1 clic en [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) en una base de datos situada en un [servidor Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). Le hemos enviado por correo electrónico este mensaje de error. Significa que el nombre de servidor de bases de datos indicado es incorrecto.
 
 Haga clic en la sección `Web cloud`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y, seguidamente, en la pestaña `Bases de datos`{.action}.
 

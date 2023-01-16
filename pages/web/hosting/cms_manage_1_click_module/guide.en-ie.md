@@ -109,7 +109,7 @@ However, we strongly recommend using the documentation provided by your CMS publ
 
 To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
 
-If you have only one database in this part of your Control Panel and you do not have a [CloudDB](https://www.ovh.ie/cloud/cloud-databases/) offer, you can consider this to be your website's database.
+If you have only one database in this part of your Control Panel and you do not have a [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) offer, you can consider this to be your website's database.
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 

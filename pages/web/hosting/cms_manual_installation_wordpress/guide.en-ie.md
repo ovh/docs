@@ -84,7 +84,7 @@ CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/en-ie/w
 
 Use our documentation to [create a database from your web hosting plan](https://docs.ovh.com/ie/en/hosting/creating-database/).
 
-If you have a CloudDB MySQL or MariaDB database and you want to use it with your WordPress, please refer to our documentation on [creating a CloudDB database](https://docs.ovh.com/ie/en/clouddb/create-databases-and-users/#creating-a-database).
+If you have a Web Cloud Databases MySQL or MariaDB database and you want to use it with your WordPress, please refer to our documentation on [creating a Web Cloud Databases database](https://docs.ovh.com/ie/en/clouddb/create-databases-and-users/#creating-a-database).
 
 Once you have created the database, retrieve the connection settings (server, database name, user name, and password) and save them for [step 3](#step3) in this guide.
 
@@ -97,7 +97,7 @@ Once you have created the database, retrieve the connection settings (server, da
 > Then log in to your database to list the prefixes of the tables already inside. This is to avoid choosing a table "prefix" already used by another of your sites.
 >
 > - To connect to your database linked to your Web Hosting plan, see [this guide](https://docs.ovh.com/ie/en/hosting/creating-database/#accessing-the-phpmyadmin-interface).
-> - To connect to a database on a Cloud DB, see [this guide](https://docs.ovh.com/ie/en/clouddb/connecting-to-database-on-database-server/).
+> - To connect to a database on a Web Cloud Databases, see [this guide](https://docs.ovh.com/ie/en/clouddb/connecting-to-database-on-database-server/).
 >
 
 ### Step 2 - start manual installation
@@ -226,7 +226,7 @@ Enter the information requested for the database:
 - Database name: this name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 - Username: It is identical to the database name if you are using a database included with your web hosting plan.
-For databases created on CloudDB, please refer to the information in [Step 1.4](#step1-4) of this guide.
+For databases created on Web Cloud Databases, please refer to the information in [Step 1.4](#step1-4) of this guide.
 
 - Password: It was sent to you by email when the database was created. You may have modified it in the meantime.
 
@@ -236,7 +236,7 @@ For databases created on CloudDB, please refer to the information in [Step 1.4](
 > 
 > - The server name of a database included with your web hosting plan usually has this format: `NameOfYourDatabase.mysql.db`. 
 >
-> - The server name of a CloudDB database starts with your OVHcloud NIC handle and is in the following format: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where **"XXX"** is to be replaced by the reference of your CloudDB service.
+> - The server name of a Web Cloud Databases database starts with your OVHcloud NIC handle and is in the following format: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where **"XXX"** is to be replaced by the reference of your Web Cloud Databases service.
 >
 
 - Table Prefix: if you are installing WordPress with a new database, you can enter a custom prefix. If you are using a database that is already in use by another website, please refer to [Step 1.4](#step1-4) of this guide to avoid associating WordPress with a table prefix used by another software.

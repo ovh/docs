@@ -28,9 +28,9 @@ Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL
 
 ## Prérequis
 
-- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/)(incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/))
+- Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/)(incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/))
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Avoir consulté le [guide de démarrage de CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
+- Avoir consulté le [guide de démarrage de Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
 ## En pratique
 
@@ -48,15 +48,15 @@ Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL
 
 Afin de vous connecter à votre base, assurez-vous de :
 
-- Disposer de l'adresse de votre instance CloudDB
-- Disposer du port de votre instance CloudDB
-- Disposer du nom d'utilisateur de votre instance CloudDB
+- Disposer de l'adresse de votre instance Web Cloud Databases
+- Disposer du port de votre instance Web Cloud Databases
+- Disposer du nom d'utilisateur de votre instance Web Cloud Databases
 - Disposer du mot de passe associé à l'utilisateur
 - Disposer du nom de votre base de données
 
 Toutes ces informations sont disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Un guide est également disponible : [Premiers pas avec le service CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
+Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
 #### Connexion en ligne de commande
 
@@ -97,7 +97,7 @@ Vous êtes maintenant bien connecté à votre base de données :
 
 #### Connexion par phpMyAdmin
 
-Vous pouvez utiliser phpMyAdmin pour explorer le contenu de votre base de données. Pour cela, installez phpMyAdmin sur votre propre serveur ou hébergement web. Durant cette installation, veillez à bien paramétrer les informations de votre serveur CloudDB et de la base de données souhaitée afin que phpMyAdmin puisse s'y connecter.
+Vous pouvez utiliser phpMyAdmin pour explorer le contenu de votre base de données. Pour cela, installez phpMyAdmin sur votre propre serveur ou hébergement web. Durant cette installation, veillez à bien paramétrer les informations de votre serveur Web Cloud Databases et de la base de données souhaitée afin que phpMyAdmin puisse s'y connecter.
 
 ### Exporter et importer une base de données MySQL ou MariaDB
 
@@ -115,7 +115,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 
 > [!primary]
 >
-> Dans certains cas, il se peut que la RAM disponible dans votre instance CloudDB ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil fourni par OVHcloud dans votre espace client. Reportez-vous à la documentation « [Premiers pas avec le service CloudDB ](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#importation-dune-base-de-donnees) » si nécessaire.
+> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil fourni par OVHcloud dans votre espace client. Reportez-vous à la documentation « [Premiers pas avec le service Web Cloud Databases ](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#importation-dune-base-de-donnees) » si nécessaire.
 >
 
 ## Aller plus loin

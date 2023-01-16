@@ -49,9 +49,9 @@ For a rolling period of 3600 seconds (1 hour), your hosting plan will allow you 
 
 #### Simultaneous Database Connections
 
-- On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (200 with the included CloudDB database). Plese refer to the [product page](https://www.ovhcloud.com/en-gb/web-hosting/) to verify the available options of our Web Hosting plans.
+- On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (200 with the included Web Cloud Databases database). Plese refer to the [product page](https://www.ovhcloud.com/en-gb/web-hosting/) to verify the available options of our Web Hosting plans.
 
-- You can also order additional **CloudDB** databases, which have some customisation options:
+- You can also order additional **Web Cloud Databases** databases, which have some customisation options:
 
     - *max_connections*: 100 by default, with the possibility of increasing to 200
 
@@ -62,7 +62,7 @@ Find out more on our [website](https://www.ovhcloud.com/en-gb/web-hosting/option
 
 #### Connections from an external server
 
-- For security reasons it is not possible to connect from an external server to a Web Hosting plan's database, irrespective of whether they are shared or CloudDB databases. Only OVHcloud Web Hosting servers are able to connect to the database servers. Any other connection will cause the following error:
+- For security reasons it is not possible to connect from an external server to a Web Hosting plan's database, irrespective of whether they are shared or Web Cloud Databases databases. Only OVHcloud Web Hosting servers are able to connect to the database servers. Any other connection will cause the following error:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -159,7 +159,7 @@ Find out how to [log in to your storage space](https://docs.ovh.com/gb/en/hostin
 
 #### Database / SQL
 
-For shared database services (included in your Web Hosting plan) or database servers (CloudDB), offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. You can access these backups (via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or via the [OVHcloud API](https://api.ovh.com/)). Backups are also stored on another infrastructure. This data is replicated in 3 separate locations in France: Roubaix (RBX), Strasbourg (SBG), and Gravelines (GRA). The backup retention policy is 30 days.
+For shared database services (included in your Web Hosting plan) or database servers (Web Cloud Databases), offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. You can access these backups (via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or via the [OVHcloud API](https://api.ovh.com/)). Backups are also stored on another infrastructure. This data is replicated in 3 separate locations in France: Roubaix (RBX), Strasbourg (SBG), and Gravelines (GRA). The backup retention policy is 30 days.
 
 Find out how to [Retrieve a database backup of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/) in our guide.
 

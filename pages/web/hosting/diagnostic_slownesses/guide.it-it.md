@@ -158,7 +158,7 @@ phpinfo();
 
 Accedi al tuo database seguendo **lo step 3** della nostra guida sulla [creazione di un database condiviso](https://docs.ovh.com/it/hosting/creare-database/).
 
-Se utilizzi un database su un'offerta **CloudDB**, consulta la nostra guida su [la connessione al tuo database presente su un'offerta Cloud DB](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/).
+Se utilizzi un database su un'offerta **Web Cloud Databases**, consulta la nostra guida su [la connessione al tuo database presente su un'offerta Web Cloud Databases](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/).
 
 Se la connessione è andata a buon fine, accedi all'interfaccia seguente:
 

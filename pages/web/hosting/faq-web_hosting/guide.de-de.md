@@ -60,12 +60,12 @@ Wenn Sie Ihr Webhosting kündigen oder löschen, wird auch der inbegriffene E-Ma
 
 Gehen Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Im Bereich `Konfiguration` klicken Sie auf `...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie auf `Meine E-Mail-Option abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges E-Mail-Angebot zu bestellen, mit dem Sie Ihre bereits erstellten E-Mail-Accounts behalten können.
 
-### Wie kann ich bei einer Kündigung eines Performance Hostings den darin enthaltenen CloudDB Dienst beibehalten?
+### Wie kann ich bei einer Kündigung eines Performance Hostings den darin enthaltenen Web Cloud Databases Dienst beibehalten?
 
-Ein Webhosting der Reihe **Performance** beinhaltet ein kostenlos aktivierbares CloudDB Angebot.
-Wenn Sie Ihr **Performance** Hosting kündigen oder löschen, wird auch der dazugehörige CloudDB Dienst gekündigt. Um Ihr CloudDB zu behalten, müssen Sie es vor der Kündigung des Hostings abtrennen.<br>
+Ein Webhosting der Reihe **Performance** beinhaltet ein kostenlos aktivierbares Web Cloud Databases Angebot.
+Wenn Sie Ihr **Performance** Hosting kündigen oder löschen, wird auch der dazugehörige Web Cloud Databases Dienst gekündigt. Um Ihr Web Cloud Databases zu behalten, müssen Sie es vor der Kündigung des Hostings abtrennen.<br>
 
-Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Private Datenbank**". Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges CloudDB Angebot zu bestellen, mit dem Sie Ihr bereits erstelltes CloudDB beibehalten können.
+Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hostings. Klicken Sie im Abschnitt **Konfiguration** auf die Schaltfläche `...`{.action} rechts von "**Private Datenbank**". Klicken Sie auf `Abtrennen`{.action} und folgen Sie den Anweisungen, um ein unabhängiges Web Cloud Databases Angebot zu bestellen, mit dem Sie Ihr bereits erstelltes Web Cloud Databases beibehalten können.
 
 ## Diagnose
 

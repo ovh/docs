@@ -219,10 +219,10 @@ Example:
 Avoid using the "HAVING" clause which can slow down queries. You should also avoid using "GROUP BY", unless strictly necessary.
 
 
-#### CloudDB
-If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our CloudDB offer to have more resources available.
+#### Web Cloud Databases
+If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Web Cloud Databases offer to have more resources available.
 
-[See the CloudDB offer on our website](https://www.ovh.co.uk/cloud/cloud-databases/).
+[See the Web Cloud Databases offer on our website](https://www.ovh.co.uk/cloud/cloud-databases/).
 
 ## Go further
 
@@ -230,6 +230,6 @@ If despite all the changes and optimisations you did undertake the database is s
 
 [Creating and managing a database in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/creating-database)
 
-[Getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
+[Getting started with the Web Cloud Databases service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
 
 Join our community of users on <https://community.ovh.com/en/>.

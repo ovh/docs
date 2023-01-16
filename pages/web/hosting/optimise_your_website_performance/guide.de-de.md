@@ -216,9 +216,9 @@ Beispiel:
 Vermeiden Sie die Verwendung der „HAVING“ -Klausel, die Abfragen verlangsamen kann. Sie sollten auch die Verwendung von „GROUP BY“ vermeiden, es sei denn, dies ist unbedingt erforderlich.
 
 
-#### CloudDB
-Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenommen haben, zu langsam läuft oder wenn eine große Anzahl von Anfragen regelmäßig an die Datenbank gestellt werden, können Sie gegebenenfalls zu unserem CloudDB-Angebot wechseln; dort stehen Ihnen dann mehr Ressourcen zur Verfügung.
-[Das CloudDB Angebot auf unserer Website](https://www.ovh.de/cloud/cloud-databases/){.external}.
+#### Web Cloud Databases
+Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenommen haben, zu langsam läuft oder wenn eine große Anzahl von Anfragen regelmäßig an die Datenbank gestellt werden, können Sie gegebenenfalls zu unserem Web Cloud Databases-Angebot wechseln; dort stehen Ihnen dann mehr Ressourcen zur Verfügung.
+[Das Web Cloud Databases Angebot auf unserer Website](https://www.ovh.de/cloud/cloud-databases/){.external}.
 
 
 ## Weiterführende Informationen
@@ -227,6 +227,6 @@ Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenomme
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
 
-[Erste Schritte mit CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/){.external}
+[Erste Schritte mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

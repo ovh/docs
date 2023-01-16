@@ -85,7 +85,7 @@ Geben Sie nun die Verbindungsinformationen zu Ihrer Datenbank ein. Hierbei haben
 
 - Die Datenbank ist bereits auf Ihrem Webhosting eingerichtet: Wählen Sie die Datenbank in der Liste aus und geben Sie die erforderlichen Informationen ein.
 - Die Datenbank ist noch nicht auf Ihrem Webhosting eingerichtet: Folgen Sie den Anweisungen, um die Datenbank zu erstellen, und führen Sie den Vorgang anschließend erneut durch.
-- Die Datenbank ist auf Ihrer CloudDB Instanz eingerichtet: Klicken Sie in der Liste auf die Zeile `Datenbank außerhalb Ihres Webhostings`{.action} und geben Sie die erforderlichen Informationen ein. Die Instanz und das Webhosting müssen im selben Rechenzentrum gehostet sein.
+- Die Datenbank ist auf Ihrer Web Cloud Databases Instanz eingerichtet: Klicken Sie in der Liste auf die Zeile `Datenbank außerhalb Ihres Webhostings`{.action} und geben Sie die erforderlichen Informationen ein. Die Instanz und das Webhosting müssen im selben Rechenzentrum gehostet sein.
 - Die Datenbank ist auf einem anderen OVHcloud Webhosting eingerichtet: Klicken Sie in der Liste auf die Zeile `Datenbank außerhalb Ihres Webhostings`{.action} und geben Sie die erforderlichen Informationen ein. Die Datenbank und das Webhosting müssen im selben Rechenzentrum gehostet sein.
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
@@ -144,6 +144,6 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
 
-Entdecken Sie unsere [CloudDB Angebote](https://www.ovh.de/cloud/cloud-databases/){.external}
+Entdecken Sie unsere [Web Cloud Databases Angebote](https://www.ovh.de/cloud/cloud-databases/){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

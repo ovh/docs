@@ -158,7 +158,7 @@ phpinfo();
 
 Zaloguj się do bazy danych, postępując zgodnie z **etap 3** w przewodniku [dotyczącym tworzenia wspólnej bazy danych](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/).
 
-Jeśli korzystasz z bazy danych w ofercie **CloudDB**, zapoznaj się z naszym przewodnikiem [dotyczącym połączenia z bazą danych w usłudze Cloud DB](https://docs.ovh.com/pl/clouddb/polaczenie-bazy-danych-serwer-bdd/).
+Jeśli korzystasz z bazy danych w ofercie **Web Cloud Databases**, zapoznaj się z naszym przewodnikiem [dotyczącym połączenia z bazą danych w usłudze Web Cloud Databases](https://docs.ovh.com/pl/clouddb/polaczenie-bazy-danych-serwer-bdd/).
 
 Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 

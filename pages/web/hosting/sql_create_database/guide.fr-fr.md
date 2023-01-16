@@ -106,7 +106,7 @@ Pour vérifier les snapshots disponibles ainsi que leur date et heure de créati
 
 **Trop de connexions**
 
-Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives devraient être envisagées, par exemple, le passage à une base de données [CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/) ou une [mise à niveau d'une offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/). 
+Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives devraient être envisagées, par exemple, le passage à une base de données [Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/) ou une [mise à niveau d'une offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/). 
 
 **Erreurs de connexion / « introuvable »**
 

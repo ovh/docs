@@ -106,7 +106,7 @@ To verify the available snapshots and their creation timestamp, click on the sym
 
 **Too many connections**
 
-Web Hosting databases are limited to 30 simultaneous connections (system variable *max_connections*). SQL requests should therefore be optimised to prevent this kind of error. If issues persist anyway, alternative measures should be considered i.e. switching to a [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) or a [hosting plan upgrade](https://www.ovhcloud.com/en-gb/web-hosting/uc-best-web-hosting/). 
+Web Hosting databases are limited to 30 simultaneous connections (system variable *max_connections*). SQL requests should therefore be optimised to prevent this kind of error. If issues persist anyway, alternative measures should be considered i.e. switching to a [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) or a [hosting plan upgrade](https://www.ovhcloud.com/en-gb/web-hosting/uc-best-web-hosting/). 
 
 **Connection / "not found" errors**
 

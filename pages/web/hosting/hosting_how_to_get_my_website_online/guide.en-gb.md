@@ -107,7 +107,7 @@ If you are migrating an existing website, you can recover your existing database
 
 #### 2. Create the database at OVHcloud 
 
-If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} or [Cloud DB solution](https://www.ovh.co.uk/cloud/cloud-databases/){.external}), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
+If you already have a database and wish to use it (from an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} or [Web Cloud Databases solution](https://www.ovh.co.uk/cloud/cloud-databases/){.external}), you will need your username and password, the name of the database and the address of the server. You can now go on to the next step.
 
 If you want to create a new database with OVHcloud, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then click on `Hosting`{.action} . Select the name of the Hosting plan concerned, and click on the `Database`{.action} tab.
 

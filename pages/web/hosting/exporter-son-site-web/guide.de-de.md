@@ -62,7 +62,7 @@ Gehen Sie in Ihrem OVHcloud-Kundencenter auf den Tab `Multisite`{.action}, um he
 Informationen zum Abrufen eines Backups Ihrer Datenbank finden Sie in unserer Anleitung:
 [Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken).
 
-Wenn Sie eine Datenbank **CloudDB** für Ihre Website verwenden, lesen Sie den Abschnitt "Backup" in unserer Anleitung:
+Wenn Sie eine Datenbank **Web Cloud Databases** für Ihre Website verwenden, lesen Sie den Abschnitt "Backup" in unserer Anleitung:
 [Eine Datenbank Ihres Datenbankservers sichern und exportieren](https://docs.ovh.com/de/hosting/backup-eine-datenbank-exportieren/){.external}.
 
 ### Schritt 3: Logs Ihres OVHcloud Webhostings abrufen

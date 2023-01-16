@@ -119,7 +119,7 @@ Per il backup del tuo database, [crea un nuovo database](https://docs.ovh.com/it
 
 > [!primary]
 >
-> OVHcloud propone server di database CloudDB. Per utilizzare questa offerta con il tuo sito Web, consulta la nostra documentazione su questo prodotto nella nostra pagina dedicata <https://docs.ovh.com/it/clouddb/>.
+> OVHcloud propone server di database Web Cloud Databases. Per utilizzare questa offerta con il tuo sito Web, consulta la nostra documentazione su questo prodotto nella nostra pagina dedicata <https://docs.ovh.com/it/clouddb/>.
 >
 
 Associa il tuo database OVHcloud al file di configurazione del tuo sito presente nello spazio di storage FTP del tuo hosting OVHcloud.

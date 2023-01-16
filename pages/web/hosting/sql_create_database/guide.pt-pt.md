@@ -106,7 +106,7 @@ Para verificar os snapshots disponíveis e a sua data/hora de criação, clique 
 
 **Demasiadas conexões**
 
-As bases de dados dos alojamentos web têm um limite de 30 conexões simultâneas (variável de sistema *max_connections*). Assim, os pedidos SQL devem ser otimizados de modo a evitar este tipo de erro. Se continuar a encontrar problemas, considere tomar medidas alternativas; por exemplo: mudar para uma  [CloudDB](https://www.ovh.pt/cloud/cloud-databases/) ou fazer um [upgrade do plano de alojamento](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/). 
+As bases de dados dos alojamentos web têm um limite de 30 conexões simultâneas (variável de sistema *max_connections*). Assim, os pedidos SQL devem ser otimizados de modo a evitar este tipo de erro. Se continuar a encontrar problemas, considere tomar medidas alternativas; por exemplo: mudar para uma  [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) ou fazer um [upgrade do plano de alojamento](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/). 
 
 **Erros de conexão ou «not found»**
 

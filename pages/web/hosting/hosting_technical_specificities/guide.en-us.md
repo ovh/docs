@@ -149,7 +149,7 @@ Find out how to [log in to your storage space](https://docs.ovh.com/us/en/hostin
 
 #### Database / SQL
 
-For shared databases (included in your web hosting plan) or database servers (CloudDB), offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. You can access these backups (via [the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} or via the [OVHcloud API](https://api.ovh.com/)). Backups are also stored on another infrastructure. This data is replicated in 3 separate locations in France: Roubaix(RBX), Strasbourg(SBG), and Gravelines(GRA). The backup retention policy is 30 days.
+For shared databases (included in your web hosting plan) or database servers (Web Cloud Databases), offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. You can access these backups (via [the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} or via the [OVHcloud API](https://api.ovh.com/)). Backups are also stored on another infrastructure. This data is replicated in 3 separate locations in France: Roubaix(RBX), Strasbourg(SBG), and Gravelines(GRA). The backup retention policy is 30 days.
 
 Find out how to [Retrieve a database backup of a Web Hosting plan](https://docs.ovh.com/us/en/hosting/web_hosting_database_export_guide/) in our guide.
 

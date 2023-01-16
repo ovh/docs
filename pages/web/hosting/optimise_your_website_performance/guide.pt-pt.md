@@ -215,9 +215,9 @@ Exemplo:
 #### Evitar as opções que utilizam muitos recursos:
 Evite utilizar a cláusula “HAVING”, por exemplo, que atrasa as suas consultas. Deve ainda evitar a utilização de “GROUP BY”, a menos que seja estritamente necessário.
 
-#### CloudDB
-Se, apesar de todas as alterações e otimizações realizadas, a base de dados estiver lenta, ou se for efetuado um grande número de consultas na base de dados, é aconselhável mudar para a nossa oferta de CloudDB para ter mais recursos disponíveis.
-[Consultar a oferta CloudDB no nosso site](https://www.ovh.pt/cloud/cloud-databases/){.external}.
+#### Web Cloud Databases
+Se, apesar de todas as alterações e otimizações realizadas, a base de dados estiver lenta, ou se for efetuado um grande número de consultas na base de dados, é aconselhável mudar para a nossa oferta de Web Cloud Databases para ter mais recursos disponíveis.
+[Consultar a oferta Web Cloud Databases no nosso site](https://www.ovh.pt/cloud/cloud-databases/){.external}.
 
 ## Vá mais longe
 
@@ -225,6 +225,6 @@ Se, apesar de todas as alterações e otimizações realizadas, a base de dados 
 
 [Gestão de uma base de dados num pacote de alojamento web](../gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
 
-[CloudDB - primeira utilização](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/){.external}
+[Web Cloud Databases - primeira utilização](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/){.external}
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

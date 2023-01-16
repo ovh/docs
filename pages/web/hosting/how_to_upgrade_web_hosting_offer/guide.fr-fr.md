@@ -67,19 +67,19 @@ Suite à la suppression de données sur vos bases, pensez à recalculer le quota
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - CloudDB
+#### 3 - Web Cloud Databases
 
-Si vous utilisez l'offre [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
+Si vous utilisez l'offre [Web Cloud Databases](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
 Cliquez sur le bouton `...`{.action} dans la partie `Bases de données privée`{.action} puis sur `Délier`{.action}.
 
-![clouddb](images/clouddb.png){.thumbnail}
+![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
-Cette action vous permettra de commander une offre CloudDB indépendante de votre abonnement *Performance*. Les données de votre serveur seront conservées.
+Cette action vous permettra de commander une offre Web Cloud Databases indépendante de votre abonnement *Performance*. Les données de votre serveur seront conservées.
 
 Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre SQL privé avant de passer sur l'offre *Pro* : 
 
 1. Sauvegardez vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique).<br>
-2. Supprimez votre serveur CloudDB via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
+2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### 4 - Espace FTP
 

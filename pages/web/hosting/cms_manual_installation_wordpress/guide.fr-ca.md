@@ -223,7 +223,7 @@ Renseignez les informations demandées concernant la base de données :
 - Nom de la base de données : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 - Identifiant : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un CloudDB, référez-vous aux informations indiquées dans [l'étape 1.4](#step1-4) de ce guide.
+Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans [l'étape 1.4](#step1-4) de ce guide.
 
 - Mot de passe : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayiez modifié entre temps.
 
@@ -233,7 +233,7 @@ Pour les bases de données créées sur un CloudDB, référez-vous aux informati
 > 
 > - Le nom du serveur d'une bases de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
 >
-> - Le nom du serveur d'une base de données CloudDB commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service CloudDB.
+> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
 >
 
 - Préfixe des tables : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à [l'étape 1.4](#step1-4) de ce guide pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.

@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą Cloud Databases'
 slug: pierwsze-kroki-z-clouddb
-excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB'
+excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases'
 section: 'Pierwsze kroki'
 order: 01
 ---
@@ -14,10 +14,10 @@ order: 01
 
 ## Wprowadzenie
 
-Rozwiązanie CloudDB pozwala na korzystanie z instancji baz danych, której zasoby są dedykowane i gwarantowane, które zapewniają wysoką wydajność i elastyczność.
-Twoje rozwiązanie CloudDB jest domyślnie powiązane z siecią hostingu OVHcloud. Można ją połączyć z dowolną inną siecią za pomocą listy uprawnionych adresów IP.
+Rozwiązanie Web Cloud Databases pozwala na korzystanie z instancji baz danych, której zasoby są dedykowane i gwarantowane, które zapewniają wysoką wydajność i elastyczność.
+Twoje rozwiązanie Web Cloud Databases jest domyślnie powiązane z siecią hostingu OVHcloud. Można ją połączyć z dowolną inną siecią za pomocą listy uprawnionych adresów IP.
 
-**Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB.**
+**Dowiedz się, jak rozpocząć korzystanie z rozwiązania Web Cloud Databases.**
 
 ## Wymagania początkowe
 
@@ -26,15 +26,15 @@ Twoje rozwiązanie CloudDB jest domyślnie powiązane z siecią hostingu OVHclou
 
 ## W praktyce
 
-### Włączenie prywatnego CloudDB zawartego w ofercie hostingu
+### Włączenie prywatnego Web Cloud Databases zawartego w ofercie hostingu
 
-Jeśli Twój hosting zawiera opcję prywatnego CloudDB, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
+Jeśli Twój hosting zawiera opcję prywatnego Web Cloud Databases, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
 
-W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie **CloudDB**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
+W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie **Web Cloud Databases**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
 
 ![Informacje ogólne](images/db-activation.png){.thumbnail}
 
-Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej, aby określić typ i wersję Twojego prywatnego CloudDB. Będzie on dostępny w kolumnie po lewej stronie w `bazie danych`{.action}.
+Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej, aby określić typ i wersję Twojego prywatnego Web Cloud Databases. Będzie on dostępny w kolumnie po lewej stronie w `bazie danych`{.action}.
 
 ### Wyświetlanie informacji ogólnych o instancji
 
@@ -42,7 +42,7 @@ W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action
 
 > [!primary]
 >
-> Nazwa usługi CloudDB w Panelu klienta zawiera część Twojego identyfikatora klienta i kończy się trzema cyframi (001 dla pierwszej zainstalowanej usługi CloudDB, 002 dla drugiej, etc.).
+> Nazwa usługi Web Cloud Databases w Panelu klienta zawiera część Twojego identyfikatora klienta i kończy się trzema cyframi (001 dla pierwszej zainstalowanej usługi Web Cloud Databases, 002 dla drugiej, etc.).
 >
 
 W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji. Sprawdź, czy wyświetlające się dane są poprawne i czy są zgodne z poniższymi parametrami.
@@ -52,8 +52,8 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji. Sprawd
 |Status usługi|Pokazuje, czy instancja jest uruchomiona, w trakcie restartu czy zawieszona. Twoja instancja musi być uruchomiona, abyś mógł przeprowadzać na niej działania.|
 |Typ|Pokazuje system baz danych używany przez serwer.|
 |Wersja|Pokazuje wersję systemu baz danych używanego przez serwer. Upewnij się, czy Twoja strona WWW jest kompatybilna z wybraną wersją.|
-|Saturacja CPU|Pokazuje czas procesora podczas wysycenia. Twoja instancja CloudDB nie jest limitowana pod względem procesora, ale pamiętaj, aby nie przeciążać procesora CloudDB.|
-|RAM|Pokazuje pamięć operacyjną dostępną dla Twojej instancji oraz ewentualne przekroczenia pamięci. Twoja instancja CloudDB dysponuje dedykowaną i gwarantowaną pamięcią RAM. Jeśli zajdzie taka potrzeba, możesz zwiększyć pamięć RAM. Możesz również ustawić alert o jej całkowitym zużyciu.|
+|Saturacja CPU|Pokazuje czas procesora podczas wysycenia. Twoja instancja Web Cloud Databases nie jest limitowana pod względem procesora, ale pamiętaj, aby nie przeciążać procesora Web Cloud Databases.|
+|RAM|Pokazuje pamięć operacyjną dostępną dla Twojej instancji oraz ewentualne przekroczenia pamięci. Twoja instancja Web Cloud Databases dysponuje dedykowaną i gwarantowaną pamięcią RAM. Jeśli zajdzie taka potrzeba, możesz zwiększyć pamięć RAM. Możesz również ustawić alert o jej całkowitym zużyciu.|
 |Infrastruktura|Pokazuje infrastrukturę używaną przez Twoją instancję. Jest to wewnętrzne oznaczenie infrastruktury OVHcloud.|
 |Centrum danych|Pokazuje centrum danych, w którym została uruchomiona instancja.|
 |Host|Pokazuje serwer OVHcloud, na którym utworzona została instancja. Jest to wewnętrzne oznaczenie OVHcloud, które może pojawić się w komunikatach dotyczących [prac modernizacyjnych i potencjalnych incydentów OVHcloud](https://www.status-ovhcloud.com/){.external}.|
@@ -67,7 +67,7 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji. Sprawd
 > Etap ten nie dotyczy systemu baz danych Redis.
 >
 
-Aby utworzyć pierwszą bazę danych na Twojej instancji CloudDB, kliknij zakładkę `Bazy danych`{.action}, następnie przycisk `Dodaj bazę danych`{.action}.
+Aby utworzyć pierwszą bazę danych na Twojej instancji Web Cloud Databases, kliknij zakładkę `Bazy danych`{.action}, następnie przycisk `Dodaj bazę danych`{.action}.
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-database.png){.thumbnail}
 
@@ -161,7 +161,7 @@ Wybierz, lub nie, dodatkowe opcje opisane poniżej, a następnie kliknij `Zatwie
 
 ### Autoryzacja adresu IP <a name="trustip"></a>
 
-Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.  Aby to zrobić, przejdź do zakładki `Autoryzowane adresy IP`{.action}, następnie kliknij `Dodaj adres IP/maskę`{.action}.
+Aby uzyskać dostęp do instancji Web Cloud Databases, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.  Aby to zrobić, przejdź do zakładki `Autoryzowane adresy IP`{.action}, następnie kliknij `Dodaj adres IP/maskę`{.action}.
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-ip-2022.png){.thumbnail}
 
@@ -171,25 +171,25 @@ W oknie, które się wyświetli wskaż adres IP lub maskę, którą chcesz autor
 
 ### Zezwalaj na logowanie do hostingu OVHcloud <a name="trustip"></a>
 
-Domyślnie Twoje rozwiązanie CloudDB jest automatycznie powiązane z hostingiem OVHcloud. Jeśli chcesz, możesz wyłączyć dostęp do Twojej bazy danych CloudDB z hostingu OVHcloud.
+Domyślnie Twoje rozwiązanie Web Cloud Databases jest automatycznie powiązane z hostingiem OVHcloud. Jeśli chcesz, możesz wyłączyć dostęp do Twojej bazy danych Web Cloud Databases z hostingu OVHcloud.
 
 W tym celu kliknij zakładkę `dozwolone IP`{.action}, następnie przycisk `Dostęp do hostingu WWW OVHcloud`{.action}.
 
-![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 
 ### Powiązanie strony WWW z bazą danych
 
-Po utworzeniu bazy danych, przyznaniu praw co najmniej jednemu użytkownikowi, jednocześnie mając co najmniej jeden adres IP lub autoryzację hostingu OVHcloud na instancji CloudDB, pozostaje połączyć Twoją stronę WWW z bazą danych. Etap ten może zostać zrealizowany na kilka sposobów, w zależności od używanej strony WWW lub CMS (WordPress, Joomla!, etc.), a także od etapu, na którym się znajdujesz, jeśli instalujesz stronę WWW.
+Po utworzeniu bazy danych, przyznaniu praw co najmniej jednemu użytkownikowi, jednocześnie mając co najmniej jeden adres IP lub autoryzację hostingu OVHcloud na instancji Web Cloud Databases, pozostaje połączyć Twoją stronę WWW z bazą danych. Etap ten może zostać zrealizowany na kilka sposobów, w zależności od używanej strony WWW lub CMS (WordPress, Joomla!, etc.), a także od etapu, na którym się znajdujesz, jeśli instalujesz stronę WWW.
 
 Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące informacje:
 
 |Informacja|Opis |
 |---|---|
-|Nazwa bazy danych|Jest to nazwa, którą określiłeś podczas tworzenia bazy danych. Listę wszystkich baz danych utworzonych w instancji CloudDB znajdziesz w zakładce `Bazy danych`{.action}.|
-|Nazwa użytkownika|Jest to nazwa, którą określiłeś podczas tworzenia bazy danych lub ewentualnie nazwa użytkownika dodatkowego, którego utworzyłeś. Listę wszystkich użytkowników utworzonych w instancji CloudDB znajdziesz w zakładce `Użytkownicy i uprawnienia`{.action}.|
+|Nazwa bazy danych|Jest to nazwa, którą określiłeś podczas tworzenia bazy danych. Listę wszystkich baz danych utworzonych w instancji Web Cloud Databases znajdziesz w zakładce `Bazy danych`{.action}.|
+|Nazwa użytkownika|Jest to nazwa, którą określiłeś podczas tworzenia bazy danych lub ewentualnie nazwa użytkownika dodatkowego, którego utworzyłeś. Listę wszystkich użytkowników utworzonych w instancji Web Cloud Databases znajdziesz w zakładce `Użytkownicy i uprawnienia`{.action}.|
 |Hasło użytkownika|Jest to hasło przypisane podczas tworzenia użytkownika.|
 |Nazwa hosta|Jest to nazwa serwera, którą należy wprowadzić, aby Twoja strona WWW mogła się łączyć z Twoją bazą danych. Informacja ta jest dostępna w Panelu klienta w zakładce `Informacje ogólne`{.action} w części **Informacje o dostępie**.|
-|Port serwera|Jest to port do połączenia z Twoją instancją CloudDB, dzięki czemu twoja strona WWW może połączyć się z Twoją bazą danych. Informacja ta jest dostępna w Panelu klienta w zakładce `Informacje ogólne`{.action} w części **Informacje o dostępie**.|
+|Port serwera|Jest to port do połączenia z Twoją instancją Web Cloud Databases, dzięki czemu twoja strona WWW może połączyć się z Twoją bazą danych. Informacja ta jest dostępna w Panelu klienta w zakładce `Informacje ogólne`{.action} w części **Informacje o dostępie**.|
 
 > [!warning]
 >
@@ -198,27 +198,27 @@ Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące info
 
 ![cloud databases - bazy danych na instancji](images/clouddb-login-information.png){.thumbnail}
 
-### Pobierz logi Twojego serwera CloudDB
+### Pobierz logi Twojego serwera Web Cloud Databases
 
-Aby sprawdzić najnowsze logi bazy danych, przejdź do zakładki `Logs`{.action} Twojego serwera CloudDB. W zakładce wyświetlają się alerty i błędy w czasie rzeczywistym.
+Aby sprawdzić najnowsze logi bazy danych, przejdź do zakładki `Logs`{.action} Twojego serwera Web Cloud Databases. W zakładce wyświetlają się alerty i błędy w czasie rzeczywistym.
 
-![clouddb](images/clouddb-log01.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-log01.png){.thumbnail}
 
-Aby pobrać wszystkie logi Twojego serwera CloudDB, zaloguj się przez SFTP do tego serwera.
+Aby pobrać wszystkie logi Twojego serwera Web Cloud Databases, zaloguj się przez SFTP do tego serwera.
 
 > [!warning]
 >
-> Przed zalogowaniem upewnij się, że adres IP poczty, której używasz jest poprawnie autoryzowany na serwerze CloudDB z opcją `SFTP` zaznaczoną. Skorzystaj z sekcji [Zezwalaj na logowanie do hostingu OVHcloud](#trustip) w tym przewodniku.
+> Przed zalogowaniem upewnij się, że adres IP poczty, której używasz jest poprawnie autoryzowany na serwerze Web Cloud Databases z opcją `SFTP` zaznaczoną. Skorzystaj z sekcji [Zezwalaj na logowanie do hostingu OVHcloud](#trustip) w tym przewodniku.
 
-Dane do logowania SFTP znajdziesz w zakładce `Informacje ogólne`{.action} Twojego serwera CloudDB. Jeśli nie znasz `hasła do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby go zmienić.
+Dane do logowania SFTP znajdziesz w zakładce `Informacje ogólne`{.action} Twojego serwera Web Cloud Databases. Jeśli nie znasz `hasła do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby go zmienić.
 
-![clouddb](images/clouddb-log02.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-log02.png){.thumbnail}
 
 Zaloguj się za pośrednictwem klienta FTP (FileZilla, Cyberduck, WinSCP, itp.).
 
 W przypadku FileZilla w menu `Plik`{.action} przejdź do `Zarządzanie stronami`{.action}. Kliknij przycisk `Nowa strona`{.action}, po czym wprowadź wcześniej ustawienia.
 
-![clouddb](images/clouddb-log03.png){.thumbnail}
+![Web Cloud Databases](images/clouddb-log03.png){.thumbnail}
 
 Plik logów zatytułowany `stdout.log` znajduje się w katalogu głównym.
 

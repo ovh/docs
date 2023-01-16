@@ -17,7 +17,7 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 At least one of the following 3 solutions:
 
 - One of the included databases with a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/).
-- A [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/) offer)
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/) offer)
 - A database pack [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/).
 
 ## Instructions
@@ -26,7 +26,7 @@ At least one of the following 3 solutions:
 
 The products covered by this end-of-life policy are:
 
-- CloudDB Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
+- Web Cloud Databases Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
 - SharedSQL Web Hosting services, MySQL databases that can be reached through the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
 
 ### Definitions and guidelines for the end-of-life policy

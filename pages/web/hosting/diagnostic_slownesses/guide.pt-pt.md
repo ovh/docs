@@ -158,7 +158,7 @@ phpinfo();
 
 Aceda à sua base de dados seguindo *** o etapa 3** do nosso manual sobre a [criação de uma base de dados partilhada](https://docs.ovh.com/pt/hosting/criar-base-de-dados/).
 
-Se utiliza uma base de dados numa oferta **CloudDB**, consulte o nosso guia sobre [a ligação à sua base de dados presente numa oferta Cloud DB](https://docs.ovh.com/pt/clouddb/conexao-base-de-dados-servidor-bdd/).
+Se utiliza uma base de dados numa oferta **Web Cloud Databases**, consulte o nosso guia sobre [a ligação à sua base de dados presente numa oferta Web Cloud Databases](https://docs.ovh.com/pt/clouddb/conexao-base-de-dados-servidor-bdd/).
 
 Se a ligação for bem-sucedida, poderá aceder à seguinte interface:
 

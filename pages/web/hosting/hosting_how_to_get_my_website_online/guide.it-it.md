@@ -119,7 +119,7 @@ Se stai migrando un sito, contatta il tuo precedente provider per recuperare il 
 
 #### 2. Creare il database in OVHcloud 
 
-Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} o [Cloud DB](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
+Se disponi già di un database (incluso, ad esempio, in una soluzione di [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} o [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external}) recupera nome utente, password, nome del database e indirizzo del server e poi passa allo step successivo.
 
 Per creare un nuovo database accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action}, clicca sulla scheda `Database`{.action} e poi sul pulsante `Crea un database`{.action}. Se non compare, clicca su `Azioni`{.action} > `Crea un database`{.action}.
 Inserisci le informazioni richieste.

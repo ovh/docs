@@ -43,7 +43,7 @@ There are four steps to changing your website’s database password:
 
 - An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [database associated with your hosting](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) or a [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/)
+- A [database associated with your hosting](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) or a [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/)
 - FTP login details to log in to your [hosting’s storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/)
 
 ## Instructions
@@ -77,7 +77,7 @@ Locate and open your site's configuration file:
 There are two possible cases:
 
 - Case 1: Your website database is part of your hosting plan.
-- Case 2: It is included in a *CloudDB* offer, in which case you will need to find the **server name** and the **username** of your database, in order to identify the database without any risk of error.
+- Case 2: It is included in a *Web Cloud Databases* offer, in which case you will need to find the **server name** and the **username** of your database, in order to identify the database without any risk of error.
 
 To determine which case applies to your website, in the configuration file identified in [step 1](#step1), start by noting down the name of its database:
 
@@ -94,7 +94,7 @@ Then go back to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=go
 
 If you have found the database name listed in the configuration file in this section of the OVHcloud Control Panel, go to [step 3](#step3).
 
-Otherwise, your website’s database is linked to a [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) solution.
+Otherwise, your website’s database is linked to a [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) solution.
 
 You will need to go back to your website’s configuration file to note the *server name* and *database username*:
 
@@ -105,7 +105,7 @@ You will need to go back to your website’s configuration file to note the *ser
 
 Then click in the `Databases`{.action} section of the `Web Cloud`{.action} section.
 
-For [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) solutions, open the tab `General information`{.action}. Check for the database server name identified previously under `Host name`{.action}.
+For [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) solutions, open the tab `General information`{.action}. Check for the database server name identified previously under `Host name`{.action}.
 
 In this section of the OVHcloud Control Panel, go to the `Users and rights`{.action} tab to find your database’s `Username`{.action}.
 
@@ -192,7 +192,7 @@ Again, two cases are possible:
 
 - If your database is located in the section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) that is dedicated to your [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), follow [these instructions](#case1).
 
-- If your database is located in the section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) dedicated to your [CloudDB solutions](https://docs.ovh.com/gb/en/clouddb/), follow [these instructions](#case2).
+- If your database is located in the section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) dedicated to your [Web Cloud Databases solutions](https://docs.ovh.com/gb/en/clouddb/), follow [these instructions](#case2).
 
 #### Case 1: Your website’s database is part of your hosting plan <a name="case1"></a>
 
@@ -208,7 +208,7 @@ In the window that pops up, enter your database’s new password (defined at [st
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Case 2: Your website’s database is part of a CloudDB solution <a name="case2"></a>
+#### Case 2: Your website’s database is part of a Web Cloud Databases solution <a name="case2"></a>
 
 Go to the `Databases`{.action} section in your Control Panel and click on the server concerned, then click on `Users and rights`{.action}:
 

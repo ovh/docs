@@ -55,7 +55,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Dzięki ofercie [Hosting Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem **Hosting Performance** będziesz mógł włączyć za darmo [CloudDB](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
+Dzięki ofercie [Hosting Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem **Hosting Performance** będziesz mógł włączyć za darmo [Web Cloud Databases](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 #### Rozdział 2: usuń niewykorzystaną bazę danych <a name="delete-database"></a>
 
@@ -148,7 +148,7 @@ Jeśli nie posiadasz innych baz danych i nie chcesz zamawiać dodatkowej oferty,
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [serwerze CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że zarejestrowany użytkownik podczas instalacji nie posiada wystarczających uprawnień do bazy danych lub że wskazane identyfikatory są nieprawidłowe.
+Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [serwerze Web Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że zarejestrowany użytkownik podczas instalacji nie posiada wystarczających uprawnień do bazy danych lub że wskazane identyfikatory są nieprawidłowe.
 
 W tej sytuacji najpierw zmodyfikuj [prawa użytkownika](../tworzenie-baz-danych-i-uzytkownikow/#zarzadzanie-prawami-uzytkownikow), aby posiadał on uprawnienia **Administrator** lub **Odczyt/zapis** na bazie danych.
 
@@ -158,7 +158,7 @@ Sprawdź również jego dane do logowania [bezpośrednio](../polaczenie-bazy-dan
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [serwerze CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że podana przez Ciebie nazwa serwera baz danych jest nieprawidłowa.
+Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [serwerze Web Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że podana przez Ciebie nazwa serwera baz danych jest nieprawidłowa.
 
 Kliknij na `Web cloud`{.action} [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie na zakładkę `Bazy danych`{.action}.
 

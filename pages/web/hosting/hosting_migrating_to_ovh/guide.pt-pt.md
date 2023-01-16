@@ -119,7 +119,7 @@ Para o backup da sua base de dados, [crie uma nova base de dados](https://docs.o
 
 > [!primary]
 >
-> A OVHcloud oferece servidores de base de dados CloudDB. Se pretender utilizar esta oferta com o seu website, consulte toda a nossa documentação sobre este produto na [nossa página dedicada](https://docs.ovh.com/pt/clouddb/).
+> A OVHcloud oferece servidores de base de dados Web Cloud Databases. Se pretender utilizar esta oferta com o seu website, consulte toda a nossa documentação sobre este produto na [nossa página dedicada](https://docs.ovh.com/pt/clouddb/).
 >
 
 De seguida, associe a sua base de dados OVHcloud ao ficheiro de configuração do seu site presente no espaço de armazenamento FTP do seu alojamento OVHcloud.

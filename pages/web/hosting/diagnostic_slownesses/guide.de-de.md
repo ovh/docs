@@ -158,7 +158,7 @@ phpinfo();
 
 Loggen Sie sich in Ihrer Datenbank ein, indem Sie **Schritt 3** unserer [Anleitung zu Webhosting-Datenbanken](https://docs.ovh.com/de/hosting/datenbank-erstellen/) befolgen.
 
-Wenn Sie eine Datenbank mit **CloudDB** nutzen, lesen Sie unsere Anleitung zur [Datenbankverbindung mit CloudDB](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
+Wenn Sie eine Datenbank mit **Web Cloud Databases** nutzen, lesen Sie unsere Anleitung zur [Datenbankverbindung mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
 
 Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 

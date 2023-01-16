@@ -119,7 +119,7 @@ Do tworzenia kopii zapasowej bazy danych [utwórz nową bazę danych](https://do
 
 > [!primary]
 >
-> OVHcloud oferuje serwery baz danych CloudDB. Jeśli chcesz korzystać z tej oferty na swojej stronie internetowej, zapoznaj się z naszą dokumentacją dotyczącą tego produktu na naszej stronie <https://docs.ovh.com/pl/clouddb/>.
+> OVHcloud oferuje serwery baz danych Web Cloud Databases. Jeśli chcesz korzystać z tej oferty na swojej stronie internetowej, zapoznaj się z naszą dokumentacją dotyczącą tego produktu na naszej stronie <https://docs.ovh.com/pl/clouddb/>.
 >
 
 Połącz następnie bazę danych OVHcloud z plikiem konfiguracyjnym Twojej strony WWW dostępnym w przestrzeni dyskowej FTP Twojego hostingu OVHcloud.

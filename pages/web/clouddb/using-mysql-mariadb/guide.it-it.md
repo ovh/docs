@@ -32,9 +32,9 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 
 ## Prerequisiti
 
-- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
+- Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Consulta la guida [all'avvio di CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
+- Consulta la guida [all'avvio di Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
 
 ## Procedura
 
@@ -52,15 +52,15 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 
 Per accedere al tuo database, sono necessarie queste informazioni:
 
-- Disporre dell'indirizzo della tua istanza CloudDB
-- Aver attivato la porta della tua istanza CloudDB
-- Disporre del nome utente della tua istanza CloudDB
+- Disporre dell'indirizzo della tua istanza Web Cloud Databases
+- Aver attivato la porta della tua istanza Web Cloud Databases
+- Disporre del nome utente della tua istanza Web Cloud Databases
 - Disporre della password associata all'utente
 - Disporre del nome del tuo database
 
 Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Se necessario, consulta la guida: [Inziare a utilizzare CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
+Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
 
 #### Connessione da riga di comando
 
@@ -101,7 +101,7 @@ A questo punto, sei connesso al tuo database:
 
 #### Connessione con phpMyAdmin
 
-Puoi utilizzare phpMyAdmin per esplorare il contenuto del tuo database. installa phpMyAdmin sul tuo server o hosting Web. Durante l'installazione, assicurati di configurare correttamente le informazioni del tuo server CloudDB e del database desiderato in modo che phpMyAdmin possa connettersi.
+Puoi utilizzare phpMyAdmin per esplorare il contenuto del tuo database. installa phpMyAdmin sul tuo server o hosting Web. Durante l'installazione, assicurati di configurare correttamente le informazioni del tuo server Web Cloud Databases e del database desiderato in modo che phpMyAdmin possa connettersi.
 
 ### Esporta e importa un database MySQL o MariaDB
 
@@ -119,7 +119,7 @@ cat nome_database.sql | mysql --host=server --user=utente --port=porta --passwor
 
 > [!primary]
 >
-> In alcuni casi, è possibile che la RAM disponibile nella tua istanza CloudDB non permetta di realizzare l'esportazione o l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. Se necessario, consulta la documentazione ["Iniziare a utilizzare il servizio CloudDB"](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
+> In alcuni casi, è possibile che la RAM disponibile nella tua istanza Web Cloud Databases non permetta di realizzare l'esportazione o l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. Se necessario, consulta la documentazione ["Iniziare a utilizzare il servizio Web Cloud Databases"](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
 >
 
 ## Per saperne di più

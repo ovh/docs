@@ -88,19 +88,19 @@ Po usunięciu danych z baz danych pamiętaj o przeliczeniu rozmiaru używanego w
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - CloudDB
+#### 3 - Web Cloud Databases
 
-Jeśli korzystasz z oferty [CloudDB](https://docs.ovh.com/pl/hosting/pierwsze-kroki-z-clouddb/#wlaczenie-prywatnego-clouddb-zawartego-w-ofercie-hostingu) zawartej w ofercie hostingu [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) i chcesz przejść na ofertę hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), przejdź do części 'Hosting{.action} w Twoim panelu klienta.<br>
+Jeśli korzystasz z oferty [Web Cloud Databases](https://docs.ovh.com/pl/hosting/pierwsze-kroki-z-clouddb/#wlaczenie-prywatnego-clouddb-zawartego-w-ofercie-hostingu) zawartej w ofercie hostingu [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) i chcesz przejść na ofertę hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), przejdź do części 'Hosting{.action} w Twoim panelu klienta.<br>
 Kliknij przycisk `...`{.action} w części `Prywatna baza danych`{.action} a następnie na `Odłącz`{.action}.
 
-![clouddb](images/clouddb.png){.thumbnail}
+![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
-Czynność ta pozwoli Ci na zamówienie usługi CloudDB niezależnej od Twojego abonamentu *Performance*. Dane przechowywane na serwerze zostaną zachowane.
+Czynność ta pozwoli Ci na zamówienie usługi Web Cloud Databases niezależnej od Twojego abonamentu *Performance*. Dane przechowywane na serwerze zostaną zachowane.
 
 Jeśli nie chcesz przechowywać tych danych, możesz również usunąć prywatny serwer SQL przed przejściem na ofertę *Pro*: 
 
 1. Przechowuj swoje dane zgodnie z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/hosting/kopia-zapasowa-eksportowa-bazy-danych/).<br>
-2. Usuń serwer CloudDB z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tym celu w prawym górnym rogu kliknij Twoją nazwę, a następnie `Zarządzanie usługami`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, po czym kliknij `Usuń serwer Private SQL`{.action}.
+2. Usuń serwer Web Cloud Databases z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tym celu w prawym górnym rogu kliknij Twoją nazwę, a następnie `Zarządzanie usługami`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniej linii, po czym kliknij `Usuń serwer Private SQL`{.action}.
 
 #### 4 - Przestrzeni FTP
 

@@ -32,9 +32,9 @@ Das System ist 100% kompatibel und gilt insgesamt als „freier“ als das origi
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (auch enthalten in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/)).
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (auch enthalten in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/)).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben die [Anleitung zum Start mit CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) befolgt.
+- Sie haben die [Anleitung zum Start mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) befolgt.
 
 ## In der praktischen Anwendung
 
@@ -52,15 +52,15 @@ Das System ist 100% kompatibel und gilt insgesamt als „freier“ als das origi
 
 Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie:
 
-- Die Adresse Ihrer CloudDB Instanz
-- Den Port Ihrer CloudDB Instanz
-- Den Benutzernamen Ihrer CloudDB Instanz
+- Die Adresse Ihrer Web Cloud Databases Instanz
+- Den Port Ihrer Web Cloud Databases Instanz
+- Den Benutzernamen Ihrer Web Cloud Databases Instanz
 - Das Passwort des Benutzers
 - Den Namen Ihrer Datenbank
 
 Diese Informationen sind über Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehbar.
 
-Die Anleitung finden Sie unter: [Erste Schritte mit CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+Die Anleitung finden Sie unter: [Erste Schritte mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
 
 #### Per Kommandozeile verbinden
 
@@ -101,7 +101,7 @@ Sie sind jetzt mit Ihrer Datenbank verbunden.
 
 #### Per phpMyAdmin verbinden
 
-Sie können phpMyAdmin verwenden, um den Inhalt Ihrer Datenbank zu analysieren. Installieren Sie hierfür phpMyAdmin auf Ihrem eigenen Server oder Webhosting. Achten Sie bei dieser Installation darauf, die Zugangsdaten Ihres CloudDB Servers und der gewünschten Datenbank so einzurichten, dass phpMyAdmin sich damit verbinden kann.
+Sie können phpMyAdmin verwenden, um den Inhalt Ihrer Datenbank zu analysieren. Installieren Sie hierfür phpMyAdmin auf Ihrem eigenen Server oder Webhosting. Achten Sie bei dieser Installation darauf, die Zugangsdaten Ihres Web Cloud Databases Servers und der gewünschten Datenbank so einzurichten, dass phpMyAdmin sich damit verbinden kann.
 
 
 ### Export und Import einer MySQL oder MariaDB Datenbank
@@ -120,7 +120,7 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 > [!primary]
 >
-> In manchen Fällen kann es sein, dass das in Ihrer CloudDB Instanz verfügbare RAM nicht den gewünschten Export oder Import durchführen kann. Ist das der Fall, empfehlen wir Ihnen die Verwendung des OVHcloud Tools im Kundencenter. Folgen Sie dazu der Anleitung "[Erste Schritte mit CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/#datenbank-importieren)", falls erforderlich.
+> In manchen Fällen kann es sein, dass das in Ihrer Web Cloud Databases Instanz verfügbare RAM nicht den gewünschten Export oder Import durchführen kann. Ist das der Fall, empfehlen wir Ihnen die Verwendung des OVHcloud Tools im Kundencenter. Folgen Sie dazu der Anleitung "[Erste Schritte mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/#datenbank-importieren)", falls erforderlich.
 >
 
 ## Weiterführende Informationen
