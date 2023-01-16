@@ -19,11 +19,11 @@ order: 06
 
 ## Prérequis
 
-- Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être connecté sur le cluster via Prism Central
-- D'avoir des licences en BYOL pour Self Service (CALM) (Ces licences ne sont pas disponibles avec le Pack standard et advanced proposé par OVHcloud).
-- Posséder un VLAN supplémentaire dans votre cluster qui distribue des adresses IP en IPAM et possède un accès à Internet 
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté sur le cluster via Prism Central.
+- D'avoir des licences en BYOL pour Self Service (CALM) (Ces licences ne sont pas disponibles avec les Pack standard et advanced proposés par OVHcloud).
+- Posséder un VLAN supplémentaire dans votre cluster qui distribue des adresses IP en IPAM et possède un accès à Internet. 
 
 ## Présentation
 
@@ -114,7 +114,7 @@ Sélectionnez votre `Cluster`{.action} dans **Select clusters to be added to thi
 
 ![01 create Project 09](images/01-create-project-09.png){.thumbnail}
 
-Cochez le VLAN `production`{.action} et cliquez sur `+ Confirm and Select Default`{.action}.
+Cochez le VLAN `production`{.action} et cliquez sur `Confirm and Select Default`{.action}.
 
 ![01 create Project 10](images/01-create-project-10.png){.thumbnail}
 
@@ -279,7 +279,7 @@ Saisissez le `nom`{.action} dans **Application Profile Name** et cliquez sur  `C
 
 ![03 Create Windows Blueprint 03](images/03-create-windows-blueprint03.png){.thumbnail}
 
-Nous allons créer le compte Windows il sera utilisé à l'intérieur de sysprep en tant que variable et dans la configuration des tâches d'installations du plan et pour le test de connexion distant.
+Nous allons créer le compte Windows il sera utilisé à l'intérieur de sysprep en tant que variable, dans la configuration des tâches d'installations du plan et pour le test de connexion distant.
 
 Cliquez sur bouton `+`{.action} à coté de Credentials.
 

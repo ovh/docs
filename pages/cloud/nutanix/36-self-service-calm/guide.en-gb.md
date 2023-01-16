@@ -115,7 +115,7 @@ Select your `Cluster`{.action} from **Select clusters to be added to this projec
 
 ![01 create Project 09](images/01-create-project-09.png){.thumbnail}
 
-Check the `production`{.action} VLAN and click `+ Confirm and Select Default`{.action}.
+Check the `production`{.action} VLAN and click `Confirm and Select Default`{.action}.
 
 ![01 create Project 10](images/01-create-project-10.png){.thumbnail}
 
