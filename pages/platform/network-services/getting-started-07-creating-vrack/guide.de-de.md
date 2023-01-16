@@ -153,7 +153,7 @@ Dies ist nützlich, um Ihr vRack in mehrere virtuelle Netzwerke aufzuteilen.
 
 #### Erstellen eines VLAN im OVHcloud Kundencenter <a name="kundencenter"></a>
 
-Sobald ein vRack erstellt ist, gehen Sie zum Abschnitt `Private Network`{.action}. 
+Sobald das vRack erstellt ist, gehen Sie zum Abschnitt `Private Network`{.action}. 
 
 ![VLAN Erstellung](images/vrack2022-03.png){.thumbnail}
 
@@ -169,7 +169,7 @@ Im nächsten Schritt erhalten Sie eine Reihe von Optionen:
 
 **Erstellen Sie ein Gateway und verbinden Sie sich mit dem privaten Netzwerk**
 
-Wählen Sie diese Option aus, wenn Sie beabsichtigen, Instanzen ausschließlich mit einem privaten Netzwerk zu erstellen. Weitere Informationen finden Sie in den folgenden Hilfen: [Creating a private network with Gateway (EN)](https://docs.ovh.com/de/publiccloud/network-services/creating-private-network-with-gateway/) und [Erste Public Cloud Instanz erstellen und auf dieser einloggen](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen).
+Wählen Sie diese Option aus, wenn Sie beabsichtigen, Instanzen ausschließlich für ein privates Netzwerk zu erstellen. Weitere Informationen finden Sie in den folgenden Hilfen: [Creating a private network with Gateway (EN)](https://docs.ovh.com/de/publiccloud/network-services/creating-private-network-with-gateway/) und [Erste Public Cloud Instanz erstellen und auf dieser einloggen](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen).
 
 > [!warning]
 > Wenn die Option grau ist, bedeutet dies, dass sie mit der ausgewählten Region unvereinbar ist. Weitere Informationen finden Sie auf unserer Seite zur [Verfügbarkeit der Public Cloud Produkte für jede Region](https://www.ovhcloud.com/de/public-cloud/regions-availability/).
@@ -179,7 +179,7 @@ Wählen Sie diese Option aus, wenn Sie beabsichtigen, Instanzen ausschließlich 
 
 Setzen Sie einen Haken bei `VLAN-ID festlegen` und wählen Sie eine Nummer von 2 bis 4000 aus.
 
-Wenn Sie dieses Feld nicht ankreuzen, erhält das System eine zufällige VLAN-Nummer
+Wenn Sie dieses Feld nicht ankreuzen, wird eine zufällige VLAN-Nummer vergeben.
 
 Wenn Sie die Nummer des VLAN auf 0 festlegen möchten, müssen Sie die [OVHcloud API](#vlansetup) verwenden.
 
@@ -189,7 +189,7 @@ Wenn in diesem VLAN mit OVHcloud Dedicated Servern kommuniziert werden soll, les
 
 **Verteilungsoptionen für DHCP-Adressen**
 
-Der standardmäßige DHCP-Bereich ist 10.0.0.0/16. Um diesen IP-Bereich zu ändern, müssen Sie die OVHcloud APIv6 verwenden.
+Der DHCP-Bereich ist auf 10.0.0.0/16 voreingestellt. Um diesen IP-Bereich zu ändern, müssen Sie die OVHcloud APIv6 verwenden.
 
 Wenn Sie Ihre Wahl getroffen haben, klicken Sie auf `Erstellen`{.action}, um den Prozess zu starten.
 
@@ -227,7 +227,7 @@ Bitte folgen Sie [diesem Abschnitt](https://docs.ovh.com/gb/en/publiccloud/netwo
 
 ##### **Über die OpenStack APIs**
 
-Um die OpenStack APIs zu verwenden, denken Sie bitte daran, Ihre Arbeitsumgebung wie im ersten Teil [dieser Anleitung beschrieben vorzubereiten](#openstack-api).
+Um die OpenStack APIs zu verwenden, denken Sie daran, Ihre Arbeitsumgebung wie im ersten Teil [dieser Anleitung beschrieben vorzubereiten](#openstack-api).
 
 Wenn Sie eine Instanz direkt im vRack erstellen möchten, ist dies das zu verwendende Verfahren.
 
