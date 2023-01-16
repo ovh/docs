@@ -162,7 +162,7 @@ Sie können die administrative **oder** technische Verwaltung **oder** die Rechn
 
 ### Was sollte ich bei Verdacht auf Identitätsbetrug tun?
 
-Wenn Sie per E-Mail über eine unbekannte Verbindung mit Ihrem Kundencenter informiert werden, empfehlen wir Ihnen, sofort [Ihr Passwort zu ändern](../Passwort-verwalten/#passwort-andern) und Ihren Account zusätzlich [mit Zwei-Faktor-Authentifizierung zu schützen](../Account-mit-2FA-absichern/).
+Wenn Sie per E-Mail über eine unbekannte Verbindung mit Ihrem Kundencenter informiert werden, empfehlen wir Ihnen, sofort [Ihr Passwort zu ändern](https://docs.ovh.com/de/customer/Passwort-verwalten/#passwort-andern) und Ihren Account zusätzlich [mit Zwei-Faktor-Authentifizierung zu schützen](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/).
 
 Wenn Sie eine verdächtige Aktivität auf Ihrem Account feststellen, [kontaktieren Sie den OVHcloud Support](https://www.ovh.com/manager/dedicated/#/support/tickets/new) unter +49 681 906730, damit unsere Teams Sie bei den notwendigen Schritten unterstützen können.
 

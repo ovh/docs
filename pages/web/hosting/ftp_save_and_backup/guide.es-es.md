@@ -10,7 +10,7 @@ order: 06
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 09/12/2022**
+**Última actualización: 12/01/2023**
 
 ## Objetivo
 
@@ -48,6 +48,22 @@ Asimismo, deberá decidir el método de restauración que quiera utilizar:
 |---|---|
 |Restauración desde el área de cliente|Restaura el contenido íntegro del espacio de almacenamiento. Todo el contenido actual será sustituido por el de la copia de seguridad seleccionada.|
 |Restauración desde un programa o una interfaz web|Permite conectarse en modo de solo lectura a una copia de seguridad del espacio de almacenamiento. Este método, aunque es más técnico, permite restaurar uno o varios archivos a una fecha anterior sin tener que borrar todo el contenido actual del espacio de almacenamiento.|
+
+> [!warning]
+>
+> En cuanto al método de **restauración desde el área de cliente de OVHcloud**, compruebe que al menos **la mitad del espacio total de almacenamiento FTP** incluido en su paquete de alojamiento sigue disponible.
+> Por ejemplo, si tiene un paquete de alojamiento **Performance**, aún deberían estar disponibles 250 GB de los 500 GB disponibles.
+>
+> Esto se debe a que nuestros robots instalan la copia de seguridad en su alojamiento antes de borrar el contenido FTP que será reemplazado por la restauración.
+>
+> Para comprobar la cuota utilizada en su alojamiento web, inicie sesión en su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Vaya a la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. A continuación, elija el nombre del alojamiento en cuestión. 
+>
+> La cuota utilizada aparece en la página que aparece:
+>
+> ![ftp quota](images/check-ftp-quota.png){.thumbnail}
+>
+> Si el espacio de almacenamiento FTP utilizado es superior a la mitad del espacio de almacenamiento FTP total de su paquete de alojamiento, recupere localmente algunos de los elementos de gran tamaño de su sitio web (puede utilizar [Filezilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)). A continuación, elimínelos de su almacenamiento FTP. Esto reducirá el tamaño del espacio de almacenamiento FTP que está utilizando y entonces podrá lanzar su restauración desde el área de cliente de OVHcloud.
+>
 
 Una vez que haya elegido el método de restauración más adecuado en función de sus necesidades, continúe la lectura de esta guía en el apartado correspondiente:
 
@@ -168,5 +184,9 @@ Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. 
 [Web hosting: Guía de uso de Cyberduck (Mac)](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_cyberduck_mac/){.external}
 
 [Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -28,7 +28,7 @@ Lo Spazio Cliente OVHcloud ti permette di gestire i tuoi dati personali e di del
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!primary]
-> In caso di difficoltà di connessione al tuo account, consulta la sezione "[Non riesco a connettermi](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#login-failure)" della nostra guida [Accedere allo Spazio Cliente OVHcloud](https://docs.ovh.com/fr/customer/se-connecter-espace-client-ovhcloud/).
+> In caso di difficoltà di connessione al tuo account, consulta la sezione "[Non riesco a connettermi](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#login-failure)" della nostra guida [Accedere allo Spazio Cliente OVHcloud](https://docs.ovh.com/it/customer/accedere-spazio-cliente-ovhcloud/).
 >
 
 ## Procedura
@@ -163,7 +163,7 @@ Per maggiori informazioni, consulta la [guida sulla gestione degli utenti](https
 
 ### Che fare in caso di sospetta usurpazione d’identità?
 
-Se ricevi una email che indica un accesso sconosciuto al tuo Spazio Cliente, ti consigliamo di [modificare immediatamente la password del tuo account](../gestire-la-password/#modifica-la-password) e di [proteggerlo tramite l’attivazione della doppia autenticazione](../proteggi_il_tuo_account_con_2FA/).
+Se ricevi una email che indica un accesso sconosciuto al tuo Spazio Cliente, ti consigliamo di [modificare immediatamente la password del tuo account](https://docs.ovh.com/it/customer/gestire-la-password/#modifica-la-password) e di [proteggerlo tramite l’attivazione della doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/).
 
 Se riscontri un'attività sospetta sul tuo account, [contatta il supporto OVHcloud](https://www.ovhcloud.com/it/contact/) al +39 02 5560 0423 affinché i nostri team ti assistano nei passi da compiere.
 

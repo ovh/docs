@@ -122,11 +122,11 @@ Vous venez de souscrire à un abonnement OVHcloud permettant de créer votre pro
 Dans cette situation, vous pouvez confier à votre prestataire le droit « [contact technique](#gestion_des_contacts) » sur votre hébergement OVHcloud.<br>
 Cet accès lui permettra d'effectuer les manipulations nécessaires à la mise en ligne de votre site (ajout d'un domaine ou sous-domaine dans le multisite, installation d'un module en 1 clic, modification du mot de passe FTP ou de la base de données, création d'un certificat SSL, etc...).
 
-Si votre nom de domaine n'est pas relié à votre hébergement et que vous souhaitez aussi confier les opérations nécessaires à votre webmaster, donnez-lui alors le droit « [contact technique](#gestion_des_contacts) » sur la [zone DNS](../../domains/editer-ma-zone-dns/) de votre domaine.
+Si votre nom de domaine n'est pas relié à votre hébergement et que vous souhaitez aussi confier les opérations nécessaires à votre webmaster, donnez-lui alors le droit « [contact technique](#gestion_des_contacts) » sur la [zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) de votre domaine.
 
 Le droit « [contact technique](#gestion_des_contacts) » ne permet pas de modifier les contacts administrateur ou facturation d'un service.<br>
 Il ne donnera pas à votre webmaster les accès à vos factures ou commandes, au renouvellement de vos services ou à vos moyens de paiement.<br>
-Il ne lui permettra pas non plus d'effectuer le [transfert de la gestion de votre nom de domaine](../../domains/transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/) vers un autre hébergeur ou de [changer son propriétaire](../../domains/changement-proprietaire-domaine/).
+Il ne lui permettra pas non plus d'effectuer le [transfert de la gestion de votre nom de domaine](https://docs.ovh.com/fr/domains/transfert-sortant-dun-nom-de-domaine-generique-ou-geographique/) vers un autre hébergeur ou de [changer son propriétaire](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
 
 En tant que [contact administrateur](#administrateur), vous pourrez enfin à tout moment récupérer le « [contact technique](#technique) » de votre service.
 

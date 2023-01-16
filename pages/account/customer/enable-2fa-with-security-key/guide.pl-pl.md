@@ -20,7 +20,7 @@ Weryfikacja dwuetapowa za pomocą klucza sprzętowego Universal Second Factor (U
 
 ## Wymagania początkowe
 
-- Zapoznanie się z [różnymi metodami weryfikacji dwuetapowej w OVHcloud](../zabezpieczenie-konta-za-pomoca-2FA/).
+- Zapoznanie się z [różnymi metodami weryfikacji dwuetapowej w OVHcloud](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/).
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Posiadanie klucza sprzętowego U2F.
 - Dostępność wolnego portu USB w Twoim komputerze.
