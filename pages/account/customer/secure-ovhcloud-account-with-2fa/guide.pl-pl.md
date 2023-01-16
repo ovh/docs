@@ -22,7 +22,7 @@ Możesz aktywować uwierzytelnianie z wykorzystaniem weryfikacji dwuetapowej (2F
 
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Posiadanie telefonu komórkowego (w przypadku metody SMS-owej), smartfona lub tabletu (w przypadku aplikacji mobilnej), bądź klucza sprzętowego Universal Second Factor (U2F).
-- Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](../zarzadzanie-haslem/).
+- Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
 
 ## W praktyce
 
@@ -39,9 +39,9 @@ Po pierwszym powiązaniu aplikacji z Twoim kontem dostęp urządzenia do Interne
 
 ### Etap 1: aktywowanie Twojej pierwszej metody weryfikacji dwuetapowej
 
-- [Aktywuj weryfikację dwuetapową przez SMS](../aktywacja-weryfikacji-dwuetapowej-przez-sms/).
-- [Aktywuj weryfikację dwuetapową przy użyciu aplikacji mobilnej](../wlacz-weryfikacje-dwuetapowa-przez-aplikacje-mobilna/).
-- [Aktywuj weryfikację dwuetapową za pomocą klucza sprzętowego](../aktywacja-weryfikacji-dwuetapowej-za-pomoca-klucza-sprzetowego/).
+- [Aktywuj weryfikację dwuetapową przez SMS](https://docs.ovh.com/pl/customer/aktywacja-weryfikacji-dwuetapowej-przez-sms/).
+- [Aktywuj weryfikację dwuetapową przy użyciu aplikacji mobilnej](https://docs.ovh.com/pl/customer/wlacz-weryfikacje-dwuetapowa-przez-aplikacje-mobilna/).
+- [Aktywuj weryfikację dwuetapową za pomocą klucza sprzętowego](https://docs.ovh.com/pl/customer/aktywacja-weryfikacji-dwuetapowej-za-pomoca-klucza-sprzetowego/).
 
 Po dodaniu pierwszej metody możesz dodać jeszcze jedną lub dwie kolejne, aby mieć więcej sposobów logowania się do swojego konta.
 

@@ -141,11 +141,11 @@ In this scenario, OVHcloud enables you to grant access to your account while pro
 
 #### Creating users
 
-A user can have read or write access to your account, or all of your services. You can create, manage and delete these users via the OVHcloud Control Panel. To find out more, please refer to our [guide on user management](../managing-users/).
+A user can have read or write access to your account, or all of your services. You can create, manage and delete these users via the OVHcloud Control Panel. To find out more, please refer to our [guide on user management](https://docs.ovh.com/us/en/customer/managing-users/).
 
 ## What to do in the event of identity theft
 
-If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](../manage-password/#change-your-password) and [securing it with two-factor authentication](../secure-account-with-2FA/).
+If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](https://docs.ovh.com/us/en/customer/manage-password/#change-your-password) and [securing it with two-factor authentication](https://docs.ovh.com/us/en/customer/secure-account-with-2FA/).
 
 If you observe any suspicious activity on your account, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/manager/#/dedicated/support/tickets/new).
 

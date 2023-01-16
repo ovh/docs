@@ -7,11 +7,11 @@ section: APIv6 OVHcloud
 
 **Dernière mise à jour le 03/05/2022**
 
-- [Introduction](../../domains/api)
-- [Commander un nom de domaine](../../domains/api-order)
-- [Gestion des tâches](../../domains/api-tasks)
-- [Gestion des contacts d'un nom de domaine](../../domains/api-contact)
-- [Gestion des règles d'éligibilité](../../domains/api-rules)
-- [Configurer l'affichage de ses données dans le Whois](../../domains/api-whois)
-- [Configurer les DNS de son nom de domaine](../../domains/api-dns)
-- [Transférer un nom de domaine](../../domains/api-transfer)
+- [Introduction](https://docs.ovh.com/fr/domains/api)
+- [Commander un nom de domaine](https://docs.ovh.com/fr/domains/api-order)
+- [Gestion des tâches](https://docs.ovh.com/fr/domains/api-tasks)
+- [Gestion des contacts d'un nom de domaine](https://docs.ovh.com/fr/domains/api-contact)
+- [Gestion des règles d'éligibilité](https://docs.ovh.com/fr/domains/api-rules)
+- [Configurer l'affichage de ses données dans le Whois](https://docs.ovh.com/fr/domains/api-whois)
+- [Configurer les DNS de son nom de domaine](https://docs.ovh.com/fr/domains/api-dns)
+- [Transférer un nom de domaine](https://docs.ovh.com/fr/domains/api-transfer)

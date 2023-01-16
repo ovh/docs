@@ -16,7 +16,7 @@ OVHcloud ti offre la possibilità di creare utenti che possano eseguire operazio
 >
 > Le gestione degli utenti è diversa dalla gestione dei contatti. Infatti, un utente avrà, come minimo, un accesso in lettura a tutte le sezioni del tuo Spazio Cliente.
 >
-> Le gestione dei contatti consiste, invece, nel delegare la completa gestione degli aspetti amministrativi, tecnici o di fatturazione di uno o più servizi sul tuo account OVHcloud. Per maggiori informazioni sulla gestione dei contatti, consulta [questa guida](../gestisci_i_tuoi_contatti/).
+> Le gestione dei contatti consiste, invece, nel delegare la completa gestione degli aspetti amministrativi, tecnici o di fatturazione di uno o più servizi sul tuo account OVHcloud. Per maggiori informazioni sulla gestione dei contatti, consulta [questa guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
 >
 
 **Questa guida ti mostra i diversi privilegi di cui un utente può usufruire e il metodo per aggiungere e gestire gli utenti.**
@@ -64,7 +64,7 @@ Nella nuova finestra, inserisci le informazioni richieste. Clicca su `Conferma`{
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Identificativo | Ad esempio, inserisci il nome dell’utente oppure il suo ruolo. |
 | Email | Inserisci l’indirizzo email dell’utente |
-| Password | Definisci la password dell'utente. Potrà modificarla più avanti, una volta creato il suo accesso. <br>Per impostare la password, consulta [la guida sulla gestione delle password](../gestire-la-password/). |
+| Password | Definisci la password dell'utente. Potrà modificarla più avanti, una volta creato il suo accesso. <br>Per impostare la password, consulta [la guida sulla gestione delle password](https://docs.ovh.com/it/customer/gestire-la-password/). |
 | Privilegi | Scegli tra Nessuno/Utente/Amministratore |
 | Descrizione | È possibile aggiungere una descrizione dell’utente Esempio: il suo ruolo nell’azienda |
 
@@ -76,7 +76,7 @@ Esempio: **1234-567-89/johnsmith**.
 
 A questo punto l’utente appena creato potrà accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}usando questo identificativo. 
 
-Inoltre potrà modificare password e proteggere l’accesso al tuo account attivando la doppia autenticazione (solo ed esclusivamente per il suo accesso in qualità di utente). A questo proposito consulta [la guida relativa all’attivazione della doppia autenticazione](../proteggi_il_tuo_account_con_2FA/){.external}.
+Inoltre potrà modificare password e proteggere l’accesso al tuo account attivando la doppia autenticazione (solo ed esclusivamente per il suo accesso in qualità di utente). A questo proposito consulta [la guida relativa all’attivazione della doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/){.external}.
 
 ### Step 3: gestisci gli utenti
 

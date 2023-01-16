@@ -7,11 +7,11 @@ section: APIv6
 
 **Last updated 3rd May 2022**
 
-- [Introduction](../../domains/api)
-- [Order a Domain Name](../../domains/api-order)
-- [Tasks Management](../../domains/api-tasks)
-- [Manage Contacts of a Domain Name](../../domains/api-contact)
-- [Managing Eligibility Rules](../../domains/api-rules)
-- [Configure the Display of Contact Data in the Whois](../../domains/api-whois)
-- [Configure the DNS of your Domain Name](../../domains/api-dns)
-- [Transfer a Domain Name](../../domains/api-transfer)
+- [Introduction](https://docs.ovh.com/ca/en/domains/api)
+- [Order a Domain Name](https://docs.ovh.com/ca/en/domains/api-order)
+- [Tasks Management](https://docs.ovh.com/ca/en/domains/api-tasks)
+- [Manage Contacts of a Domain Name](https://docs.ovh.com/ca/en/domains/api-contact)
+- [Managing Eligibility Rules](https://docs.ovh.com/ca/en/domains/api-rules)
+- [Configure the Display of Contact Data in the Whois](https://docs.ovh.com/ca/en/domains/api-whois)
+- [Configure the DNS of your Domain Name](https://docs.ovh.com/ca/en/domains/api-dns)
+- [Transfer a Domain Name](https://docs.ovh.com/ca/en/domains/api-transfer)

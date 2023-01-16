@@ -159,7 +159,7 @@ Para más información, consulte la [guía sobre la gestión de usuarios](https:
 
 ### ¿Qué hacer si sospecha de una usurpación de identidad?
 
-Si recibe un mensaje de correo electrónico en el que se le informa de un inicio de sesión desconocido en su área de cliente, le recomendamos [cambiar inmediatamente la contraseña de su cuenta](../gestionar-su-contrasena/#modificar-la-contrasena) y [protegerla con la doble autenticación](../proteger-su-cuenta-con-una-2FA/).
+Si recibe un mensaje de correo electrónico en el que se le informa de un inicio de sesión desconocido en su área de cliente, le recomendamos [cambiar inmediatamente la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/#modificar-la-contrasena) y [protegerla con la doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/).
 
 Si advierte una actividad sospechosa en su cuenta, [póngase en contacto con el equipo de asistencia de OVHcloud](https://www.ovhcloud.com/es/contact/) para que le informe del procedimiento que deberá seguir.
 
