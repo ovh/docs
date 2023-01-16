@@ -1,6 +1,6 @@
 ---
 title: "Tutoriel - Sauvegarder votre site WordPress"
-slug: sauvegarder-wordpress
+slug: realize-backup-wordpress
 excerpt: "Découvrez comment sauvegarder le contenu de votre site WordPress et sa base de données"
 section: 'Premiers pas'
 order: 
