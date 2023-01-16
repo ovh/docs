@@ -21,24 +21,21 @@ O Office 365 Revendedores (CSP2) é um serviço que lhe permite beneficiar de di
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Dispor de um MPN ID (Microsoft Partner Network Identifier)
+- Dispor de um [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDIP) 
 - Estar inscrito no programa CSP (Cloud Solution Provider) da Microsoft enquanto revendedor indireto na região em que exerce a sua atividade (por exemplo: "UE" para a Europa)
 
 > [!warning]
 >
 > A partir de 01/07/2022, todos os serviços Office 365 revendedores (CSP2) que não disponham de um MPN ID inscrito no programa "CSP revendedor indireto" serão desativados pela Microsoft.
 >
-> Dispor de um MPN ID é agora obrigatório para qualquer nova subscrição.
+> Para qualquer nova subscrição, é agora obrigatório dispor de um MPN ID.
 >
 
-Se ainda não dispõe de um MPN ID, pode criar um (se é elegível para as condições da Microsoft) seguindo a [documentação oficial da Microsoft](https://docs.microsoft.com/pt-pt/partner-center/mpn-create-a-partner-center-account) {.external}.
+Se ainda não dispõe de um MPN ID, pode criar um (se é elegível para as condições Microsoft) seguindo a documentação oficial da Microsoft ["O que é o Microsoft Cloud Partner Program? "](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
 
-Para se inscrever como revendedor indireto, convidamo-lo a consultar esta outra [documentação oficial da Microsoft](https://docs.microsoft.com/pt-pt/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller) {.external}.
+Para se inscrever como revendedor indireto, convidamo-lo a consultar a documentação Microsoft ["Inscrever-se no programa Fornecedor de soluções Cloud"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
 
-> [!success]
->
-> O "MPN ID" permite-lhe obter um backup das subscrições que encomendará através da Área de Cliente OVHcloud. Este cashback está sujeito a regras definidas pela Microsoft, em função dos volumes de subscrições que gerará.
->
+O MPN ID permite-lhe obter um backup das subscrições que encomendará através da Área de Cliente OVHcloud. Este cashback está sujeito a regras definidas pela Microsoft, em função dos volumes de subscrições que gerará.
 
 ## Instruções
 
@@ -46,39 +43,23 @@ Para se inscrever como revendedor indireto, convidamo-lo a consultar esta outra 
 
 Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Depois de conectar, selecione `Sunrise`{.action} no painel superior e clique em `Office 365 Revendedores`{.action}.
 
+- *Facultativo*: pode definir um **subdomínio personalizado** durante a criação de uma nova plataforma, selecionando a opção prevista para o efeito (sob reserva dos nomes disponíveis).
 - Introduza o seu MPN ID previamente criado junto da Microsoft.
-- Complete as informações de contacto do cliente final, estas são solicitadas para definir o gestor do grupo de licenças (Tenant) que vai criar.
-
-> [!primary]
->
->  Também pode definir um **subdomínio personalizado** aquando da criação de uma nova plataforma, selecionando a pequena casa prevista para este efeito (sob reserva dos nomes disponíveis).
->
-
-- Na lista abaixo, indique as licenças que deseja adicionar ao seu grupo.
-- Clique em `Encomendar`{.action} para finalizar a sua encomenda.
+- Complete as informações de contacto do cliente final, estas são solicitadas para definir o gestor do grupo de licenças (*Tenant*) que vai criar.
+- Na lista abaixo, adicione as licenças que deseja integrar ao seu grupo.
+- Clique em `Encomendar`{.action} para finalizar.
 
 > [!warning]
->
-> Certifique-se da validade do endereço de e-mail indicado aquando da criação do seu grupo de licenças, pois esta receberá as informações de identificação na plataforma Microsoft.
+> Certifique-se da validade do endereço de e-mail indicado aquando da criação do seu grupo de licenças, pois este servirá para receber as informações de identificação para a plataforma Microsoft.
 >
 
 ![office365](images/csp2-01.png){.thumbnail}
 
-#### Caso específico das delegações
-
-- Se já dispõe de um serviço Office 365 CSP2 na Microsoft, tem a possibilidade de delegar a sua administração na OVHcloud. Assim, poderá adicionar subscrições suplementares diretamente a partir da sua Área de Cliente OVHcloud. Aquando da encomenda de um novo grupo de licenças, deverá escolher "Delegação de uma plataforma criada previamente na Microsoft`" e especificar com exatidão o **Tenant Office 365 existente** que poderá encontrar no seu portal Microsoft, bem como o seu MPN ID.
-
-- Se já passou por um outro fornecedor que não a OVHcloud para o seu Office 365 revendedores, poderá igualmente delegar a administração à OVHcloud, mas deverá quebrar previamente a ligação com o seu antigo fornecedor.
-
-- Será necessária uma dupla validação para finalizar o aparecimento da associação na sua Área de Cliente OVHcloud.
-
-- Uma vez subscritas as licenças no endereço delegado, estas estarão disponíveis no seu [portal de administração Microsoft](https://portal.office.com/Admin/Default.aspx){.external}. Deverá então substituir as suas antigas licenças no seu [portal de administração Microsoft](https://portal.office.com/Admin/Default.aspx){.external} pelas licenças OVHcloud, e rescindir as suas antigas licenças para não continuar a pagá-las em duplicado.
-
-- Tranquilize-se, se dispõe de licenças indisponíveis para compra na OVHcloud, poderá perfeitamente conservar estas licenças ativas na Microsoft.
-
 > [!warning]
-> Como se trata de produtos licenciados, não é possível migrar um "Tenant" Office 365 revendedores de um identificador de cliente OVHcloud para outro.
+> No que diz respeito aos produtos sujeitos a licenças, não é possível migrar um *Tenant* Office 365 revendedores de um identificador de cliente OVHcloud para outro. É necessário parar a subscrição na conta OVHcloud original e subscrever este tipo de licença na nova conta OVHcloud.
 >
+
+![office365](images/csp2-01.png){.thumbnail}
 
 ### Gerir o serviço Office 365 Revendedor
 
@@ -92,25 +73,10 @@ Surgem as seguintes informações:
 - **Nome de apresentação do serviço**: permite personalizar o nome de visualização do serviço na sua Área de Cliente.
 - **Criado a**: indica a data de criação do serviço.
 - **Portal de administração Microsoft**: ligação do portal Office que permite administrar as suas subscrições.
-- **Reinicializar a password administrador**: permite alterar a palavra-passe de ligação ao portal de administração Microsoft.
+- A gestão da password do administrador do seu *Tenant* Microsoft faz-se diretamente a partir da interface de administração Microsoft. Não hesite em consultar [a documentação da Microsoft](https://support.microsoft.com/account-billing/reset-a-forgotten-microsoft-account-password-eff4f067-5042-c1a3-fe72-b04d60556c37).
+- A gestão de domínios adicionais faz-se igualmente a partir da interface de administração da Microsoft. Consulte [a documentação da Microsoft](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
-
-### Configurar automaticamente um domínio alojado na OVHcloud
-
-A OVHcloud disponibiliza uma ferramenta que facilita a configuração da zona DNS do seu domínio. Pode configurar automaticamente os seus nomes de domínio que utilizam a zona DNS da OVHcloud para que possam funcionar com as seguintes soluções:
-
-- Exchange Online;
-- Skype;
-- Intune.
-
-Para realizar esta operação, deve escolher o domínio em questão na lista pendente e selecionar as soluções desejadas. Criaremos então os campos DNS adequados na zona DNS da OVHcloud do domínio.
-
-> [!warning]
-> Para que a configuração seja funcional, deve assegurar-se de que utiliza corretamente os servidores DNS da OVHcloud para os nomes de domínio em causa. Não hesite em consultar o nosso guia [Alterar os servidores DNS de um nome de domínio OVHcloud](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/).
->
-
-![office365](images/sunrise_office365_CSP2_automatic_domain_configuration.png){.thumbnail}
 
 ### Gerir as suas subscrições
 
@@ -123,11 +89,11 @@ A gestão das suas subscrições permite-lhe aumentar ou anular as licenças ass
 - **Data de criação**: indicar a data de criação da assinatura do tipo de licença selecionado.
 - **Última atualização**: indicar a data da última atualização (por exemplo, adição de uma licença) da assinatura.
 
-`O ícone em forma de lápis` permite modificar o número total de licenças da assinatura. `O ícone em forma de caixote do lixo` permite cancelar a assinatura e todas as licenças.
+O ícone <i class="icons-pen"></i>  permite modificar o número total de licenças da assinatura. O ícone <i class="icons-bin"></i>  permite cancelar a assinatura e todas as licenças.
 
 > [!primary]
 >
-> Devem ser respeitadas condições particulares de utilização fornecidas pela Microsoft para as licenças Educação. Pode encontrar estes documentos oficiais em função da sua língua e região [aqui](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=AcademicQualEdUserDef){.external}.
+> Devem ser respeitadas condições particulares de utilização fornecidas pela Microsoft para as licenças Educação. Pode encontrar estes documentos oficiais em função da sua língua e região [aqui](https://www.microsoft.com/licensing/docs){.external}.
 >
 
 ![office365](images/sunrise_office365_CSP2_Subscribers.png){.thumbnail}

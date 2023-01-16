@@ -83,7 +83,7 @@ La gestion de vos abonnements vous permet d'augmenter ou d'annuler les licences 
 - **Date de création** : indique la date de création de l'abonnement au type de licence sélectionné.
 - **Dernière mise à jour** : indique la date de dernière mise à jour (comme l'ajout d'une licence par exemple) de l'abonnement.
 
-`L’icône en forme de crayon` permet de modifier le nombre total de licences de l'abonnement. `L'icône en forme de corbeille` permet de résilier l'abonnement ainsi que toutes ses licences.
+L’icône <i class="icons-pen"></i> permet de modifier le nombre total de licences de l'abonnement. L'icône <i class="icons-bin"></i> permet de résilier l'abonnement ainsi que toutes ses licences.
 
 > [!primary]
 >

@@ -20,20 +20,22 @@ Office 365 Reseller (CSP2) ist ein Dienst, mit dem Sie verschiedene Arten von Mi
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über eine MPN ID (Microsoft Partner Network Identifikationsnummer).
-- Sie sind im CSP-Programm (Cloud Solutions Provider) von Microsoft als indirekter Reseller in der Region, in der Sie operieren, angemeldet (z.B.: "EU" für Europa).
+- Sie sind im OVHcloud [Kundencenter eingeloggt](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie verfügen über eine [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDe) 
+- Sie sind im CSP (Cloud Solutions Provider) Programm von Microsoft als indirekter Reseller in der Region angemeldet, in der Sie arbeiten (zum Beispiel: "EU"für Europa)
 
 > [!warning]
 >
-> Ab dem 01.07.2022 werden alle Office 365 Reseller Dienstleistungen (CSP2), die nicht über eine im Programm "Indirekter CSP Reseller" eingetragene MPN ID verfügen, von Microsoft deaktiviert.
+> Seit dem 01.07.2022 werden alle Office 365 Reseller Dienstleistungen (CSP2), die nicht über eine im Programm "CSP indirekter Reseller"eingetragene MPN-ID verfügen, von Microsoft deaktiviert.
 >
-> Es muss nun eine MPN ID für jede Neubestellung vorhanden sein.
+> Sie müssen nun über eine MPN-ID für jede Neubestellung verfügen.
 >
 
-Wenn Sie noch nicht über eine MPN ID verfügen, können Sie eine erstellen (falls Sie die Bedingungen von Microsoft erfüllen), indem Sie die [offizielle Microsoft Dokumentation](https://docs.microsoft.com/de-de/partner-center/mpn-create-a-partner-center-account){.external} befolgen.
+Wenn Sie noch nicht über eine MPN ID verfügen, können Sie eine MPN ID erstellen (wenn Sie die Bedingungen von Microsoft erfüllen können), [indem Sie die offizielle Dokumentation von Microsoft befolgen."Was ist das Microsoft Cloud Partner Program? "](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
 
-Um sich als indirekter Reseller anzumelden, folgen Sie [dieser offiziellen Microsoft Dokumentation](https://docs.microsoft.com/de-de/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
+Um sich dann als indirekter Reseller anzumelden, lesen Sie die Microsoft Dokumentation "Sich [beim Cloud Anbieter anmelden"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
+
+Mit der MPN ID erhalten Sie ein Cashback zu den Abonnements, die Sie über das OVHcloud Kundencenter bestellen. Dieses Cashback unterliegt den von Microsoft festgelegten Regeln, abhängig von der Anzahl der von Ihnen erstellten Abonnements.
 
 > [!success]
 >
@@ -46,39 +48,22 @@ Um sich als indirekter Reseller anzumelden, folgen Sie [dieser offiziellen Micro
 
 Um einen Office 365 Reseller Dienst zu bestellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie `Sunrise`{.action} im oberen Menu aus. Klicken Sie dann auf `Office 365 Revendeurs`{.action}.
 
+- *Optional*: Sie können bei **der Erstellung** einer neuen Plattform eine personalisierte Subdomain definieren, indem Sie das dafür vorgesehene Feld ankreuzen (unter Vorbehalt der verfügbaren Namen).
 - Geben Sie Ihre zuvor bei Microsoft erstellte MPN ID ein.
-- Vervollständigen Sie die Kontaktinformationen des Endkunden. Diese werden angefordert, um den Manager der Lizenzgruppe ("Tenant") zu definieren, die Sie erstellen möchten.
-
-> [!primary]
->
-> Sie können bei der Erstellung einer neuen Plattform auch eine **personalisierte Subdomain** definieren, indem Sie das entsprechende Feld anhaken (sofern die Namen verfügbar sind).
-
-
-- Geben Sie in der Liste die Lizenzen ein, die Sie zu Ihrer Gruppe hinzufügen möchten.
-- Klicken Sie auf `Bestellen`{.action}, um Ihre Bestellung abzuschließen.
+- Vervollständigen Sie die Kontaktinformationen des Endkunden. Diese werden angefordert, um die Verwaltung der Lizenzgruppe (*Tenant*) zu definieren, die Sie erstellen möchten.
+- Fügen Sie in der unten stehenden Liste die Lizenzen hinzu, die Sie in Ihre Gruppe integrieren möchten.
+- Klicken Sie auf `Bestellen`{.action}, um den Vorgang abzuschließen.
 
 > [!warning]
->
-> Bitte überprüfen Sie die Gültigkeit der bei der Erstellung Ihrer Lizenzgruppe angegebenen E-Mail-Adresse, da diese die Login-Daten der Microsoft Plattform erhält.
+> Bitte überprüfen Sie die Gültigkeit der bei der Erstellung Ihrer Lizenzgruppe angegebenen E-Mail-Adresse, da diese für den Empfang der Login-Daten für die Microsoft-Plattform verwendet wird.
 >
 
 ![office365](images/csp2-01.png){.thumbnail}
 
-#### Sonderfall Delegationen
-
-- Wenn Sie bereits über einen Office 365 CSP2 Dienst bei Microsoft verfügen, können Sie dessen Administration an OVHcloud delegieren. So können Sie direkt über Ihr OVHcloud Kundencenter zusätzliche Abonnements hinzufügen. Wenn Sie eine neue Lizenzgruppe bestellen, wählen Sie `Eine bei Microsoft erstellte Plattform delegieren` aus und geben Sie den **Office 365 Tenant*** ein, den Sie in Ihrem Microsoft Portal zusammen mit Ihrer MPN ID einsehen können. 
-
-- Wenn Sie bereits einen anderen Anbieter als OVHcloud für Ihr Office 365 Reseller nutzen, können Sie die Verwaltung auch an OVHcloud delegieren, müssen aber vorher die Anbindung zu Ihrem bisherigen Anbieter beenden.
-
-- Es ist eine doppelte Validierung erforderlich, um das Start des Tenant in Ihrem OVHcloud Kundencenter abzuschließen.
-
-- Sobald der delegierte Tenant abonniert ist, werden die Lizenzen in Ihrem [Microsoft Verwaltungsportal](https://portal.office.com/Admin/Default.aspx){.external} verfügbar. Ersetzen Sie anschließend Ihre alten Lizenzen in Ihrem [Microsoft Verwaltungsportal](https://portal.office.com/Admin/Default.aspx){.external} durch die OVHcloud Lizenzen und kündigen Sie Ihre alten Lizenzen, damit Sie nicht doppelt bezahlen müssen.
-
-- Lizenzen, die bei OVHcloud nicht verfügbar sind, bleiben weiterhin bei Microsoft aktiv.
-
 > [!warning]
-> Da es sich um lizenzierte Produkte handelt, ist es nicht möglich, einen Office 365 Reseller Tenant von einem OVHcloud Kunden-Account auf einen anderen zu wechseln.
->
+> Bei lizenzierten Produkten ist es nicht möglich, einen Tenant Office *365* Reseller von einem identischen OVHcloud Kunden auf einen anderen zu wechseln. Es ist notwendig, das Abonnement für den ursprünglichen OVHcloud-Account zu beenden und diese Lizenz für den neuen OVHcloud-Account zu bestellen.
+> 
+![office365](images/csp2-01.png){.thumbnail}
 
 ### Office 365 Reseller Dienste verwalten
 
@@ -92,25 +77,10 @@ Folgende Angaben werden angezeigt:
 - **Anzeigename des Dienstes**: Erlaubt es, den Anzeigenamen des Dienstes in Ihrem Kundencenter zu personalisieren.
 - **Erstellt am**: Gibt das Erstellungsdatum des Dienstes an.
 - **Microsoft Verwaltungsportal**: URL zur Office Verwaltungsoberfläche, über die Sie Ihre Abonnements verwalten können.
-- **Das Administrator-Passwort zurücksetzen**: Ermöglicht die Änderung des Login-Passworts zum Microsoft Administrationsportal.
+- Die Verwaltung des Administratorpassworts Ihres *Microsoft* Tenant erfolgt direkt über das Microsoft Verwaltungsinterface. Lesen Sie auch [die Microsoft Dokumentation](https://support.microsoft.com/account-billing/reset-a-forgotten-microsoft-account-password-eff4f067-5042-c1a3-fe72-b04d60556c37).
+- Die Verwaltung zusätzlicher Domains erfolgt auch über das Verwaltungsinterface von Microsoft. Lesen [Sie die Microsoft Dokumentation](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
-
-### Eine bei OVHcloud gehostete Domain automatisch konfigurieren
-
-OVHcloud stellt Ihnen ein Tool zur Verfügung, das die Konfiguration der DNS-Zone Ihres Domainnamens vereinfacht. So können Sie Domainnamen, die OVHcloud DNS-Zonen verwenden, automatisch konfigurieren, damit sie mit folgenden Lösungen funktionieren:
-
-- Exchange Online
-- Skype
-- Intune
-
-Wählen Sie hierzu die entsprechende Domain in der Drop-down-Liste und anschließend die gewünschten Lösungen aus. Wir erstellen dann die entsprechenden DNS-Einträge in der OVHcloud DNS-Zone der Domain.
-
-> [!warning]
-> Damit die Konfiguration funktioniert, müssen Sie sicherstellen, dass Sie die OVHcloud DNS-Server für die betreffenden Domains verwenden. Lesen Sie dazu unsere Anleitung "[DNS-Server einer OVHcloud Domain ändern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/)".
->
-
-![office365](images/sunrise_office365_CSP2_automatic_domain_configuration.png){.thumbnail}
 
 ### Ihre Abos verwalten
 
@@ -123,11 +93,11 @@ Mit der Verwaltung Ihrer Abos können Sie die zu Ihrer Abonnementgruppe gehören
 - **Erstellungsdatum**: Gibt das Erstellungsdatum des Abonnements für den ausgewählten Lizenztyp an.
 - **Letztes Update**: Gibt das Datum an, an dem das Abonnement zuletzt aktualisiert wurde (z.B. durch Hinzufügen einer Lizenz).
 
-Mit dem Stift-Button können Sie die Gesamtzahl der Lizenzen des Abonnements ändern. Mit dem Papierkorb-Button können Sie das Abonnement und alle Lizenzen kündigen.
+Mit dem <i class="icons-pen"></i>  können Sie die Gesamtzahl der Lizenzen des Abonnements ändern. Mit dem <i class="icons-bin"></i>  können Sie das Abonnement und alle Lizenzen kündigen.
 
 > [!primary]
 >
-> Für Office 365 Education sind besondere Lizenzbedingungen von Microsoft einzuhalten. Die entsprechenden offiziellen Dokumente stehen Ihnen je nach Region und Sprache [hier](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=AcademicQualEdUserDef){.external} zur Verfügung.
+> Für Office 365 Education sind besondere Lizenzbedingungen von Microsoft einzuhalten. Die entsprechenden offiziellen Dokumente stehen Ihnen je nach Region und Sprache [hier](https://www.microsoft.com/licensing/docs){.external} zur Verfügung.
 >
 
 ![office365](images/sunrise_office365_CSP2_Subscribers.png){.thumbnail}
