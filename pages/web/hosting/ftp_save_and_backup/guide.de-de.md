@@ -51,18 +51,18 @@ Entscheiden Sie sich für eine Wiederherstellungsmethode, die Sie verwenden möc
 
 > [!warning]
 >
-> Bezüglich der Methode der **Wiederherstellung über das OVHcloud Kundencenter** überprüfen Sie, dass mindestens **die Hälfte des gesamten FTP-Speicherplatzes**, der bei Ihrem Webhosting-Angebot inbegriffen ist, noch verfügbar ist.
-> Wenn Sie zum Beispiel über ein Webhosting-Angebot verfügen **Performance**, müssen noch 250 GB der zur Verfügung gestellten 500 GB verfügbar sein.
+> Bezüglich der Methode der **Wiederherstellung über das OVHcloud Kundencenter** überprüfen Sie, dass mindestens **die Hälfte des FTP-Speicherplatzes**, der bei Ihrem Webhosting-Angebot inbegriffen ist, noch frei ist.
+> Wenn Sie zum Beispiel über ein Webhosting **Performance** verfügen, müssen noch 250 GB der insgesamt 500 GB verfügbar sein.
 >
-> Unsere Roboter installieren das Backup auf Ihrem Hosting, bevor sie den FTP Inhalt löschen, der durch die Wiederherstellung ersetzt wird.
+> Unsere Roboter installieren das Backup auf Ihrem Hosting, bevor der FTP Inhalt gelöscht und von der Wiederherstellung überschrieben wird.
 >
-> Um das auf Ihrem Webhosting verwendete Quota zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. 
+> Um die auf Ihrem Webhosting verwendete Quota zu überprüfen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. 
 >
-> Das verwendete Quota erscheint auf der angezeigten Seite:
+> Die Speicherplatzbelegung erscheint auf dieser Seite:
 >
 >![ftp quota](images/check-ftp-quota.png){.thumbnail}
 >
-> Wenn der verwendete FTP-Speicherplatz mehr als die Hälfte des gesamten FTP-Speicherplatzes Ihres Webhosting-Angebots beträgt, können Sie vor Ort einige große Elemente Ihrer Website abrufen (dazu können Sie [Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)). Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des von Ihnen genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung dann über das OVHcloud-Kundencenter starten.
+> Wenn mehr als die Hälfte des gesamten FTP-Speicherplatzes Ihres Webhostings belegt ist, können Sie zum Beispiel große Dateien Ihrer Website auswählen und lokal sichern. (Sie können dazu [Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/) verwenden). Löschen Sie diese anschließend aus Ihrem FTP-Speicherplatz. Dadurch verringert sich die Größe des genutzten FTP-Speicherplatzes und Sie können die Wiederherstellung über das OVHcloud-Kundencenter starten.
 >
 
 Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellungsmethode:
