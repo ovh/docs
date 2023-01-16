@@ -6,7 +6,7 @@ section: Utilisation avancée
 order: 06
 ---
 
-**Dernière mise à jour le 13/01/2023**
+**Dernière mise à jour le 16/01/2023**
 
 ## Objectif
 
@@ -22,16 +22,16 @@ order: 06
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur le cluster via Prism Central
-- D'avoir des licences en BYOL pour ce service (Ces licences ne sont pas disponibles avec le Pack advanced).
-- Posséder un VLAN supplémentaire dans votre cluster qui fait propose du DCHP en IPAM et qui a accès à Internet 
+- D'avoir des licences en BYOL pour Self Service (CALM) (Ces licences ne sont pas disponibles avec le Pack standard et advanced proposé par OVHcloud).
+- Posséder un VLAN supplémentaire dans votre cluster qui distribue des adresses IP en IPAM et possède un accès à Internet 
 
 ## Présentation
 
-NCM Self Service est une solution d'orchestration hétorogène qui permet l'automatisation et la gestion de déploiements, il fonctionne sur Prism Central il est utilisable sur des clusters Nutanix et d'autres environnements.
+NCM Self Service (CALM) est une solution d'orchestration hétorogène qui permet l'automatisation et la gestion de déploiements, il fonctionne sur Prism Central il est utilisable à partir de Prism Central et permet l'administration de divers environnements (Cluster Nutanix, Serveur baremetal, etc...).
 
 ## En pratique
 
-Nous allons activer CALM, créer deux applications et les publier sur le portail d'applications.
+Nous allons activer CALM, créer deux applications pour notre cluster Nutanix et les publier sur le portail d'applications.
 
 Le deux applications que nous allons publier seront :
 
@@ -41,7 +41,7 @@ Le deux applications que nous allons publier seront :
 
 ### Activation de CALM
 
-Il est nécessaire d'avoir une adresse IP configurée pour le **ISCSI Data Services IP**
+Avant de déployer CALM il faut configurer une adresse IP pour le **ISCSI Data Services IP**.
 
 A partir du tableau de bord Prism Central cliquez sur votre `Cluster`{.action} dans la rubrique **Cluster Quick Access**.
 
