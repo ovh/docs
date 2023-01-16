@@ -10,7 +10,7 @@ order: 06
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja dnia 09-12-2022**
+**Ostatnia aktualizacja dnia 12-01-2023**
 
 ## Wprowadzenie 
 
@@ -48,6 +48,22 @@ Określ również metodę przywracania, której użyjesz.
 |---|---|
 |Przywracanie w Panelu klienta|Pozwala przywrócić całą zawartość przestrzeni dyskowej. Aktualna zawartość przestrzeni dyskowej zostanie zastąpiona wybraną kopią zapasową.|
 |Przywracanie plików za pomocą programu lub interfejsu|Pozwala zalogować się do kopii zapasowej przestrzeni dyskowej tylko w trybie odczytu. Jest to metoda wymagająca większych umiejętności technicznych, pozwala jednak przywrócić jeden lub kilka plików z wcześniejszą datą bez konieczności usuwania całej zawartości przestrzeni dyskowej.|
+
+> [!warning]
+>
+> Metoda **przywracania w Panelu klienta OVHcloud** sprawdź, czy co najmniej **połowa całkowitej przestrzeni dyskowej FTP** w pakiecie hostingowym jest nadal dostępna.
+> Na przykład, jeśli dysponujesz usługą hostingu **Performance**, 250 GB musi być nadal dostępne w dostępnych 500 GB.
+>
+> Nasze roboty instalują na Twoim hostingu kopię zapasową, zanim usuną zawartość FTP, która zostanie zastąpiona przywróceniem danych.
+>
+> Aby sprawdzić rozmiar używany na Twoim hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przejdź do sekcji `Web Cloud`{.action} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting. 
+>
+> Wykorzystany limit pojawia się na stronie, która się wyświetla:
+>
+>![ftp quota](images/check-ftp-quota.png){.thumbnail}
+>
+> Jeśli używana przestrzeń dyskowa FTP jest większa niż połowa całkowitej przestrzeni dyskowej FTP w Twojej ofercie hostingu, możesz lokalnie pobrać duże elementy Twojej strony WWW (w tym celu możesz użyć [Filezilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/)). Usuń je z przestrzeni FTP. Zmniejszy to rozmiar przestrzeni dyskowej FTP, której używasz i będziesz mógł przywrócić dane z Panelu klienta OVHcloud.
+>
 
 Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestrzeni dyskowej. 
 
@@ -169,4 +185,8 @@ Po zalogowaniu wgraj wybrany plik lub pliki. W tym celu przejrzyj zawartość Tw
 
 [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
