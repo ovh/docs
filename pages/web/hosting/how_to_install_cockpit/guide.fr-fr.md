@@ -6,7 +6,7 @@ section: CMS
 order: 09
 ---
 
-**Dernière mise à jour le 08/11/2022**
+**Dernière mise à jour le 13/01/2023**
 
 ## Objectif
 
@@ -57,13 +57,13 @@ git clone https://github.com/Cockpit-HQ/Cockpit.git .
 
 L'installation se fait par votre navigateur en saisissant le nom de domaine que vous avez configuré suivi de `/install` : https://monsite.ovh/install (en remplaçant `monsite.ovh` par votre domaine).
 
-![Page d'installation de Cockpit](images/how_to_install_cockpit%5B1%5D.png)
+![Page d'installation de Cockpit](images/how_to_install_cockpit_1.png)
 
 ### Accédez à l'interface d'administration
 
 Revenez sur votre nom de domaine et saisissez les login et mot de passe par défaut (admin/admin) :
 
-![Accès interface admin](images/how_to_install_cockpit%5B2%5D.png)
+![Accès interface admin](images/how_to_install_cockpit_2.png)
 
 ### Changer le mot de passe du compte admin
 
@@ -71,11 +71,11 @@ Pour des raisons évidentes de sécurité, changez le mot de passe `admin` du co
 
 Cliquez sur l'icône en bas à gauche (Users) :
 
-![Icône Users](images/how_to_install_cockpit%5B3%5D.png)
+![Icône Users](images/how_to_install_cockpit_3.png)
 
 Cliquez ensuite sur le compte 'Admin' et modifiez les informations de ce compte via la formulaire affiché. Changez alors votre adresse mail, votre mot de passe et pensez à générer un token dans la rubrique « API Key » en cliquant sur le cercle terminé par une flèche. Si vous le souhaitez, vous pouvez également activer un second facteur d'authentification (2FA) :
 
-![Interface admin](images/how_to_install_cockpit%5B4%5D.png)
+![Interface admin](images/how_to_install_cockpit_4.png)
 
 N'oubliez pas de valider en cliquant sur « Update » en bas et à droite de la page.
 
@@ -111,7 +111,7 @@ Vous trouverez plus de détail sur la [documentation](https://getcockpit.com/doc
 
 L'interface de Cockpit vous permet de créer des contenus en utilisant des modèles :
 
-![Content overview](images/how_to_install_cockpit%5B5%5D.png)
+![Content overview](images/how_to_install_cockpit_5.png)
 
 #### Contenus
 
@@ -128,11 +128,11 @@ L'option Tree vous permettra d'organiser l'arborescence qui contiendra vos Colle
 
 Le menu « Assets » vous permet de gérer vos contenus. Créez des répertoires pour organiser vos contenus et uploadez vos images et illustrations :
 
-![Folder creation](images/how_to_install_cockpit%5Ba5%5D.png)
+![Folder creation](images/how_to_install_cockpit_a5.png)
 
 Uploadez maintenant une image dans votre répertoire :
 
-![Upload picture](images/how_to_install_cockpit%5Ba6%5D.png)
+![Upload picture](images/how_to_install_cockpit_a6.png)
 
 ![Upload picture](images/how_to_install_cockpit%5Ba7%5D.png)
 
