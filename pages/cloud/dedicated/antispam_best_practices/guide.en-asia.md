@@ -6,7 +6,7 @@ section: Server Management
 order: 5
 ---
 
-**Last updated 17th October 2022**
+**Last updated 16th January 2023**
 
 ## Objective
 
@@ -68,9 +68,11 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and click on `IP`{.action}.
 
-A pop-up message indicates the IP/service that has been blocked for SPAM.
+In the yellow pop-up window for IP alerts, click on the "View all alerts" drop-down arrow to view all alerts on your IP(s).
 
-![Anti spam alert](images/alertantispam.png){.thumbnail}
+If you have an alert on any your IP(s), the information will be displayed right underneath:
+
+![Anti spam alert](images/alertblockedip.png){.thumbnail}
 
 Next, in the section "My public IP addresses and associated services" , click on the `...`{.action} next to the corresponding IP/service and select `Anti-spam`{.action}.
 

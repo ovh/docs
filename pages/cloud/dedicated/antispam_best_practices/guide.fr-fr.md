@@ -6,7 +6,7 @@ section : Diagnostic et mode Rescue
 order : 04
 ---
 
-**Dernière mise à jour le 17/10/2022**
+**Dernière mise à jour le 16/01/2023**
 
 ## Objectif
 
@@ -68,9 +68,11 @@ Une fois le problème résolu, vous pouvez débloquer votre adresse IP en effect
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `IP`{.action}.
 
-Une pop-up vous indique l'IP ou le service bloqué pour SPAM.
+Dans la fenêtre pop-up jaune pour les alertes IP, cliquez sur la flèche déroulante "Voir toutes mes alertes" pour afficher toutes les alertes sur votre ou vos IP.
 
-![Alerte anti spam](images/alertantispam.png){.thumbnail}
+Si vous avez une alerte sur l'une de vos IP, l'information sera affichée juste en dessous :
+
+![Alerte anti spam](images/alertblockedip.png){.thumbnail}
 
 Dans la rubrique « Mes adresses IP publiques et services associés », cliquez sur le bouton `...`{.action} à côté de l'IP ou le service correspondant et sélectionnez `Anti-spam`{.action}.
 
