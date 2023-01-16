@@ -151,6 +151,7 @@
             + [Configuring the network on ESXi on the High Grade & SCALE ranges](cloud/dedicated/esxi-network-HG-Scale)
     + [Virtual Private Servers](bare-metal-cloud-virtual-private-servers)
         + [Getting started](bare-metal-cloud-virtual-private-servers-getting-started)
+            + [Getting started with SSH](cloud/vps/ssh_introduction)
             + [Getting started with a VPS](cloud/vps/starting_with_a_vps)
             + [FAQ](cloud/vps/vps-faq)
             + [Securing a VPS](cloud/vps/secure_your_vps)
