@@ -16,7 +16,7 @@ Bei OVHcloud haben Sie die Möglichkeit, Benutzer zu erstellen und diesen Lese- 
 >
 > Die Benutzerverwaltung unterscheidet sich von der Verwaltung der Kontakte. Ein Benutzer erhält mindestens *read-only*-Zugriff auf alle Bereiche Ihres Kundencenters.
 >
-> Bei der Kontaktverwaltung hingegen geht es darum, die vollständige Verwaltung der administrativen, technischen oder rechnungsrelevanten Aspekte eines oder mehrerer Dienste Ihres OVHcloud Accounts auf eine andere Person zu übertragen. Für weitere Informationen zur Verwaltung der Kontakte lesen Sie [diese Anleitung](../verwaltung-der-kontakte/).
+> Bei der Kontaktverwaltung hingegen geht es darum, die vollständige Verwaltung der administrativen, technischen oder rechnungsrelevanten Aspekte eines oder mehrerer Dienste Ihres OVHcloud Accounts auf eine andere Person zu übertragen. Für weitere Informationen zur Verwaltung der Kontakte lesen Sie [diese Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/).
 >
 
 **Diese Anleitung erklärt, über welche Rechte ein Benutzer verfügen kann und wie Sie Benutzer hinzufügen und verwalten.**
@@ -64,7 +64,7 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kennung | Geben Sie zum Beispiel den Namen des Benutzers oder dessen Funktion ein. |
 | E-Mail | Geben Sie die E-Mail-Adresse des Benutzers ein. |
-| Passwort | Legen Sie das Passwort des Benutzers fest. Er kann dieses ändern, nachdem sein Zugang erstellt wurde. <br>Wir empfehlen Ihnen, hierzu [die Anleitung zur Passwortverwaltung](../Passwort-verwalten/) zu lesen. |
+| Passwort | Legen Sie das Passwort des Benutzers fest. Er kann dieses ändern, nachdem sein Zugang erstellt wurde. <br>Wir empfehlen Ihnen, hierzu [die Anleitung zur Passwortverwaltung](https://docs.ovh.com/de/customer/Passwort-verwalten/) zu lesen. |
 | Rechte | Wählen Sie aus Keine/Benutzer/Administrator. |
 | Beschreibung | Sie können eine Benutzerbeschreibung hinzufügen, beispielsweise die Rolle in Ihrem Unternehmen. |
 
@@ -76,7 +76,7 @@ Beispiel: **1234-567-89/johnsmith**.
 
 Der Benutzer kann sich von nun an mit dieser Kennung im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen. 
 
-Darüber hinaus kann er sein Passwort ändern und seinen eigenen Zugang zu Ihrem Account mithilfe einer Zwei-Faktor-Authentifizierung zusätzlich schützen (diese betrifft nur seinen Zugriff als Benutzer). Um mehr über die Einrichtung der Zwei-Faktor-Authentifizierung zu erfahren, lesen Sie [diese Anleitung](../Account-mit-2FA-absichern/).
+Darüber hinaus kann er sein Passwort ändern und seinen eigenen Zugang zu Ihrem Account mithilfe einer Zwei-Faktor-Authentifizierung zusätzlich schützen (diese betrifft nur seinen Zugriff als Benutzer). Um mehr über die Einrichtung der Zwei-Faktor-Authentifizierung zu erfahren, lesen Sie [diese Anleitung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/).
 
 ### Schritt 3: Benutzer verwalten
 

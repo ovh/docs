@@ -163,7 +163,7 @@ Para saber mais, consulte o [guia sobre a gestão dos utilizadores](https://docs
 
 ### O que fazer em caso de suspeição de usurpação de identidade?
 
-Se receber um e-mail a dar-lhe conta de um acesso incomum à sua Área de Cliente, deve [alterar imediatamente a palavra-passe da sua conta](../gerir-a-palavra-passe/#alterar-a-sua-palavra-passe) e [protegê-la por meio de uma dupla autenticação](../proteger-a-sua-conta-com-uma-2FA/).
+Se receber um e-mail a dar-lhe conta de um acesso incomum à sua Área de Cliente, deve [alterar imediatamente a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#alterar-a-sua-palavra-passe) e [protegê-la por meio de uma dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/).
 
 Se detetar uma atividade suspeita na sua conta, [contacte o Apoio ao Cliente OVHcloud](https://www.ovhcloud.com/pt/contact/) em +351 213 155 642 para que as nossas equipas o ajudem nas diligências a efetuar.
 

@@ -16,7 +16,7 @@ OVHcloud umożliwia tworzenie użytkowników, którzy mogą działać w trybie o
 >
 > Zarządzanie użytkownikami różni się od zarządzania kontaktami. Użytkownik ma jako minimum dostęp w trybie odczytu do wszystkich sekcji w Panelu klienta.
 >
-> Zarządzanie kontaktami ma z kolei na celu całkowite oddelegowanie zarządzania aspektami administracyjnymi, technicznymi lub księgowymi jednej lub kilku usług na koncie OVHcloud. Więcej szczegółów dotyczących zarządzania kontaktami znajdziesz w [tym przewodniku](../zarzadzanie_kontaktami/).
+> Zarządzanie kontaktami ma z kolei na celu całkowite oddelegowanie zarządzania aspektami administracyjnymi, technicznymi lub księgowymi jednej lub kilku usług na koncie OVHcloud. Więcej szczegółów dotyczących zarządzania kontaktami znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
 >
 
 **Ten przewodnik zawiera szczegółowe informacje na temat uprawnień, jakie może posiadać użytkownik, oraz na temat sposobów dodawania użytkowników i zarządzania nimi.**
@@ -76,7 +76,7 @@ Przykład: **1234-567-89/johnsmith**.
 
 Przy użyciu tego identyfikatora nowy użytkownik będzie mógł zalogować się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
 
-Będzie również mógł zmienić swoje hasło i zabezpieczyć swój własny dostęp do Twojego konta, włączając procedurę weryfikacji dwuetapowej (która dotyczy wyłącznie jego dostępu jako użytkownika). W tym celu zapoznaj się z [przewodnikiem dotyczącym wdrażania weryfikacji dwuetapowej](../zabezpieczenie-konta-za-pomoca-2FA/){.external}.
+Będzie również mógł zmienić swoje hasło i zabezpieczyć swój własny dostęp do Twojego konta, włączając procedurę weryfikacji dwuetapowej (która dotyczy wyłącznie jego dostępu jako użytkownika). W tym celu zapoznaj się z [przewodnikiem dotyczącym wdrażania weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/){.external}.
 
 ### Etap 3: Zarządzanie użytkownikami
 

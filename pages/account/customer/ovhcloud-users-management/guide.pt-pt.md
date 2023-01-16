@@ -16,7 +16,7 @@ A OVHcloud permite-lhe criar utilizadores com permissão de leitura ou escrita n
 >
 > A gestão de utilizadores difere da gestão de contactos. Um utilizador terá, no mínimo, acesso de leitura a todas as rubricas da sua Área de Cliente.
 >
-> Já a gestão de contactos visa delegar a administração completa dos aspetos administrativos, técnicos ou de faturação de um ou vários serviços associados à sua conta OVHcloud. Para mais informações acerca da gestão de contactos, consulte [este guia](../gestao_dos_contactos/).
+> Já a gestão de contactos visa delegar a administração completa dos aspetos administrativos, técnicos ou de faturação de um ou vários serviços associados à sua conta OVHcloud. Para mais informações acerca da gestão de contactos, consulte [este guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
 >
 
 **Este guia explica os diferentes privilégios de que um utilizador pode dispor, bem como o método de criação e de gestão de utilizadores.**
@@ -64,7 +64,7 @@ Na janela que se abrir, complete os campos obrigatórios. Clique em `Validar`{.a
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ID de utilizador | Introduza, por exemplo, o nome do utilizador ou a sua função. |
 | E-mail | Introduza o endereço de e-mail do utilizador. |
-| Palavra-passe | Defina a palavra-passe do utilizador. Mais tarde, ele poderá alterar esta palavra-passe. <br>Sugerimos que consulte [o guia sobre a gestão de palavras-passe](../gerir-a-palavra-passe/){.external} antes de a definir. |
+| Palavra-passe | Defina a palavra-passe do utilizador. Mais tarde, ele poderá alterar esta palavra-passe. <br>Sugerimos que consulte [o guia sobre a gestão de palavras-passe](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/){.external} antes de a definir. |
 | Privilégio | Escolha entre Nenhum, Utilizador e Administrador. |
 | Descrição | Pode acrescentar uma descrição do utilizador. Por exemplo, a função que desempenha. |
 
@@ -76,7 +76,7 @@ Por exemplo: **1234-567-89/johnsmith**.
 
 O utilizador em causa poderá desde logo aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} por meio desse ID de utilizador. 
 
-Ele poderá igualmente alterar a sua própria palavra-passe e proteger o seu próprio acesso à conta ativando uma medida de dupla autenticação (esta última só será aplicada ao acesso desse utilizador). Para esse efeito, aconselhamos a consulta do [guia respeitante à implementação da dupla autenticação](../proteger-a-sua-conta-com-uma-2FA/){.external}.
+Ele poderá igualmente alterar a sua própria palavra-passe e proteger o seu próprio acesso à conta ativando uma medida de dupla autenticação (esta última só será aplicada ao acesso desse utilizador). Para esse efeito, aconselhamos a consulta do [guia respeitante à implementação da dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/){.external}.
 
 ### Etapa 3: Gerir os utilizadores
 
