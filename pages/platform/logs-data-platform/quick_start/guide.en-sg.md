@@ -5,7 +5,7 @@ order: 1
 section: Get Started
 ---
 
-**Last updated July 28th, 2022**
+**Last updated 16th January, 2023**
 
 ## Objective
 
@@ -70,7 +70,7 @@ The menu **"..."** at the right gives you several features:
 
 Logs Data Platform supports several logs formats, each one of them has its own advantages and disadvantages. Here are the different formats available
 
-- **GELF**: This is the native format of logs used by Graylog. This JSON format will allow you to send logs really easily. See: [http://docs.graylog.org/en/latest/pages/gelf.html](http://docs.graylog.org/en/latest/pages/gelf.html){.external}. The GELF input only accept a null (`\0`) delimiter.
+- **GELF**: This is the native format of logs used by Graylog. This JSON format will allow you to send logs really easily. See: [https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. The GELF input only accept a null (`\0`) delimiter.
 - **LTSV**: this simple format is very efficient and is still human readable. you can learn more about it [here](http://ltsv.org){.external}. LTSV has two inputs that accept a line delimiter or a null delimiter.
 - **RFC 5424**: This format is commonly used by logs utility such as syslog. It is extensible enough to allow you to send all your data. More information about it can be found at this link: [RFC
 5424](https://tools.ietf.org/html/rfc5424){.external}.
@@ -149,7 +149,7 @@ helps going
 
 Giving you all the messages that contains the terms `helps` and `going`.
 
-Graylog allows you to extensively search through your logs without compromising usability. For more information about how to craft relevant searches on Graylog, please visit [Graylog Search Documentation](http://docs.graylog.org/en/2.0/pages/queries.html){.external}.
+Graylog allows you to extensively search through your logs without compromising usability. For more information about how to craft relevant searches on Graylog, please visit [Graylog Search Documentation](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html){.external}.
 
 Send several logs with different values for `user_id`, for example. At the left of the page you will see the fields present in your stream, you can click on the `user_id` checkbox to display all the values for this field along the logs.
 

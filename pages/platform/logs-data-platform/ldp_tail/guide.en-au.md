@@ -6,7 +6,7 @@ excerpt: This super-powered tail will follow and format your logs with flying co
 section: Features
 ---
 
-**Last updated 22nd July 2020**
+**Last updated 16th January, 2023**
 
 ## Objective
 
@@ -69,7 +69,7 @@ My Title: Success , The Joke: Success is relative. The more success, the more re
 My Title: Freeway , The Joke: When everything is coming your way, you're on the wrong side of the freeway.
 ```
 
-Please note that in this example we use the [GELF](http://docs.graylog.org/en/2.2/pages/gelf.html){.external} field naming convention of, which means that your extra fields must all have an underscore. This is because the WebSocket endpoint sends messages fully compatible with the GELF format so you can use them after in any GELF compatible tool.
+Please note that in this example we use the [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external} field naming convention of, which means that your extra fields must all have an underscore. This is because the WebSocket endpoint sends messages fully compatible with the GELF format so you can use them after in any GELF compatible tool.
 
 The pattern option allows you also to customize colors, background and text colors are customizable.
 
