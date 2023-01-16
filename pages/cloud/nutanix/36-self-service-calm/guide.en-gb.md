@@ -34,7 +34,7 @@ NCM Self Service (CALM) is a heterogeneous orchestration solution that allows th
 
 We will enable CALM, create two applications for our Nutanix cluster, and publish them to the application portal, which are:
 
-* A Nginx web server with Linux Ubuntu.
+* A Nginx Web server with Linux Ubuntu.
 * An IIS Web server on Windows server.
 
 
@@ -54,7 +54,7 @@ Type an `IP Address`{.action} in **ISCSI Data Services IP** not used in the scop
 
 ![00 Activate CALM 03](images/00-activate-calm03.png){.thumbnail}
 
-Go back to Prism Central, go to the main menu on the left and click on `Calm'{.action} in the **Services** section
+Go back to Prism Central, go to the main menu on the left and click on `Calm`{.action} in the **Services** section
 
 ![00 Activate CALM 04](images/00-activate-calm04.png){.thumbnail}
 
@@ -272,7 +272,7 @@ In the vertical bar choose `Blueprints`{.action}, scroll to the `Create Blueprin
 
 ![03 Create Windows Blueprint 01](images/03-create-windows-blueprint01.png){.thumbnail}
 
-Choose the `name`{.action} of your plan from **Name** and click `Proceed`{.action}.
+Choose the `name`{.action} of your blueprint from **Name** and click `Proceed`{.action}.
 
 ![03 Create Windows Blueprint 02](images/03-create-windows-blueprint02.png){.thumbnail}
 
@@ -280,7 +280,7 @@ Type the `name`{.action} in **Application Profile Name** and click `Credentials`
 
 ![03 Create Windows Blueprint 03](images/03-create-windows-blueprint03.png){.thumbnail}
 
-We will create the Windows account it will be used inside sysprep as variable and in the configuration of the plan installation tasks and for the remote connection test.
+We will create the Windows account it will be used inside sysprep as variable and in the configuration of the blueprint installation tasks and for the remote connection test.
 
 Click on `+`{.action} button next to Credentials.
 
@@ -494,7 +494,7 @@ A new window will appear, click on `Audit`{.action} to see the steps for deployi
 
 We will create another application under Linux Ubuntu with Nginx installed as a WEB server.
 
-Rendez-vous sur l'icône `Blueprints`{.action} dans la barre de menu vertical de CALM, cliquez sur `Multi VM/Pod Blueprint`{.action} depuis le menu **Create Blueprint**.
+Go to the `Blueprints`{.action} icon in the CALM vertical menu bar, click on `Multi VM/Pod Blueprint`{.action} from the **Create Blueprint** menu.
 
 ![04 create Linux blueprint 01](images/04-create-linux-blueprint01.png){.thumbnail}
 
@@ -821,11 +821,11 @@ sudo echo '</html>' >> /var/www/html/index.nginx-debian.html
 sudo cat /var/www/html/index.nginx-debian.html
 ```
 
-And click + `Save`{.action} to finish creating your plan.
+And click + `Save`{.action} to finish creating your blueprint.
 
 ![04 create Linux blueprint 18](images/04-create-linux-blueprint18.png){.thumbnail}
 
-Click `Launch`{.action} to test your plan.
+Click `Launch`{.action} to test your blueprint.
 
 ![04 create Linux blueprint 19](images/04-create-linux-blueprint19.png){.thumbnail}
 
@@ -887,7 +887,7 @@ Click `Submit for approval`{.action}.
 
 The Windows application is in the marketplace awaiting approval.
 
-Click the `UBUNTU 22 NGINX`{.action} plan.
+Click the `UBUNTU 22 NGINX`{.action} blueprint.
 
 ![06 publish Windows Application 01](images/06-publish-linux-application01.png){.thumbnail}
 
@@ -972,7 +972,7 @@ Type a `Name`{.action} in **Application Name** and click `Deploy`{.action} to de
 
 ![08 ADD to market place 09](images/08-add-to-marketplace09.png){.thumbnail}
 
-#### Suppression d'une application déployée
+#### Deleting a deployed application
 
 Deleting a deployed application is as simple as deploying it.
 
