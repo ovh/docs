@@ -27,7 +27,7 @@ order: 06
 
 ## Présentation
 
-NCM Self Service (CALM) est une solution d'orchestration hétorogène qui permet l'automatisation et la gestion de déploiements, il fonctionne sur Prism Central et permet l'administration de divers environnements (Cluster Nutanix, Serveur baremetal, etc...).
+NCM Self Service (CALM) est une solution d'orchestration hétérogène qui permet l'automatisation et la gestion de déploiements, il fonctionne sur Prism Central et permet l'administration de divers environnements (Cluster Nutanix, Serveur baremetal, etc...).
 
 ## En pratique
 
@@ -70,13 +70,13 @@ L'activation de CALM est en cours.
 ![00 Activate CALM 07](images/00-activate-calm07.png){.thumbnail}
 
 > [!primary]
-> Un message d'erreur apparait pendant le déploiement de CALM, n'en tenez pas compte quittez la fênetre et patientez jusqu'a que l'installation soit terminée.
+> Un message d'erreur apparait pendant le déploiement de CALM, n'en tenez pas compte quittez la fenêtre et patientez jusqu'a que l'installation soit terminée.
 
 ![00 Activate CALM 08](images/00-activate-calm08.png)
 
 ### Création d'un projet
 
-Avant de déployer des application il faut tout d'abord créer une projet.
+Avant de déployer des applications il faut tout d'abord créer une projet.
 
 Au travers du menu de Prism Central cliquez sur `Calm`{.action} dans la rubrique Services.
 
@@ -86,7 +86,7 @@ Cliquez sur l'icône `Projects`{.action} dans la barre de menu verticales.
 
 ![01 create Project 02](images/01-create-project-02.png){.thumbnail}
 
-CLiquez sur le bouton `+ Create Project`{.action}.
+Cliquez sur le bouton `+ Create Project`{.action}.
 
 ![01 create Project 03](images/01-create-project-03.png){.thumbnail}
 
@@ -155,7 +155,7 @@ Renseignez ces informations :
 * **Image** : `WS2022EN-SYSPREPED`
 
 > [!primary]
-> l'image a été générée à partir d'un WINDOWS Serveur 2022 dont on a appliqué un sysprep pour remettre tous les paramètres par défauts. Lors d'une utilisation avec CALM il est possible d'automatiser les paramètres à partir d'un fichier XML pour sysprep.
+> L'image est générée à partir d'une VM WIN DOWS Serveur 2022 dont on a appliqué un sysprep pour remettre la configuration par défaut. Lors d'une utilisation avec CALM il est possible d'automatiser l'installation d'un OS Windows à partir de ce type d'image et de lui appliquer des paramètres stockés dans un fichier XML.
 
 Ensuite faite défiler la `fenêtre`{.action} vers le bas.
 
@@ -169,16 +169,16 @@ Choisissez la carte réseau dans le VLAN `production`{.action}, cochez la case `
 
 ![01 create Project 20](images/01-create-project-20.png){.thumbnail}
 
-Allez sur l'onglet `Linux`{.action}, saississez ces informations :
+Allez sur l'onglet `Linux`{.action}, saisissez ces informations :
 
 * **Cluster** : `sélection de votre cluster`
 * **vCPUs** : `4`
 * **Core per vCPU** : `1`
-* **Memory (GiB)** : ``
+* **Memory (GiB)** : `4`
 * **Image** : `jammy-server-cloudimg-amd64.img`
 
 > [!primary]
-> L'image permet une installation avec cloud-init d'UBUNTU utilisable au travers de CALM, elle est téléchargeable sur Internet à cette adresse [Ubuntu CLoud Images](https://cloud-images.ubuntu.com/).
+> L'image est préconfigurée pour l'utilisation de cloud-init d'UBUNTU, elle est téléchargeable sur Internet à cette adresse [Ubuntu CLoud Images](https://cloud-images.ubuntu.com/). CALM permet l'automatisation et la personnalisation d'une installation Linux au travers de ce type d'images et de fichiers de configuration YAML.
 >
 
 Ensuite faites défiler la `fenêtre vers le bas`{.action}.
@@ -257,13 +257,13 @@ Cliquez sur `Save Environment`{.action}
 
 ![02 add credential to environment 09](images/02-add-credential-to-environment09.png){.thumbnail}
 
-Votre environement est prêt pour la création et la diffusion d'applications.
+Votre environnement est prêt pour la création et la diffusion d'applications.
 
 ![02 add credential to environment 10](images/02-add-credential-to-environment10.png){.thumbnail}
 
 ### Création d'applications
 
-Nous allons crééer deux applications, tester leurs bon fonctionnements et les publier dans le marketplace du cluster.
+Nous allons créer deux applications, tester leurs bons fonctionnements et les publier dans le marketplace du cluster.
 
 #### Création de l'application WEB IIS sous Windows
 
@@ -291,7 +291,7 @@ Saisissez ces informations :
 - **Username** : `administrator`
 - **Password** : `Mot de passe du compte administrator`
 
-et cliquez sur `Done`{.action}.
+Et cliquez sur `Done`{.action}.
 
 ![Create Windows Blueprint 05](images/03-create-windows-blueprint05.png){.thumbnail}
 
@@ -308,7 +308,7 @@ Saisissez ces informations :
 - **Name** : `VM IIS`
 - **Operation System** : `Windows`
 
-et cliquez sur `Clone from environment`{.action}.
+Et cliquez sur `Clone from environment`{.action}.
 
 ![Create Windows Blueprint 08](images/03-create-windows-blueprint08.png){.thumbnail}
 
@@ -402,7 +402,7 @@ Continuez de faire défiler la fenêtre et vérifiez que **Check log-in upon cre
 
 Nous allons maintenant créer des tâches en Powershell qui s'executerons après l'installation et la personalisation de Windows. Chacunes des tâche s'éxécutent l'une après l'autre.
 
-Dans la fenêtre de gauche positionnez vous sur `Install`{.action} en dessous de la catégorie **Package** et cliquez sur `+ Task`{.action}.
+Dans la fenêtre de gauche positionnez-vous sur `Install`{.action} en dessous de la catégorie **Package** et cliquez sur `+ Task`{.action}.
 
 ![Create Windows Blueprint 11](images/03-create-windows-blueprint11.png){.thumbnail}
 
@@ -428,7 +428,7 @@ Et cliquez sur `+ Task`{.action}.
 
 ![Create Windows Blueprint 12](images/03-create-windows-blueprint12.png){.thumbnail}
 
-Completez ces informations :
+Complétez ces informations :
 
 **Task Name** : `Customize IIS`
 **Type** : `Execute`
@@ -485,7 +485,7 @@ Une nouvelle fenêtre apparait cliquez sur `Audit`{.action} pour voir les étape
 
 ![Create Windows Blueprint 17](images/03-create-windows-blueprint17.png){.thumbnail}
 
-Dans notre cas le serveur IIS est actif et affiche un messsage sur l'adresse IP de la machine virtuelle en HTTP.
+Dans notre cas le serveur IIS est actif et affiche un message sur l'adresse IP de la machine virtuelle en HTTP.
 
 ![Create Windows Blueprint 18](images/03-create-windows-blueprint18.png){.thumbnail}
 
@@ -493,7 +493,7 @@ Dans notre cas le serveur IIS est actif et affiche un messsage sur l'adresse IP 
 
 Nous allons créer une autre application qui sera sous LINUX UBUNTU avec NGINX installé en tant que serveur WEB.
 
-rendez-vous sur l'icône `Blueprints`{.action} dans la barre de menu vertical de CALM, cliquez sur `Multi VM/Pod Blueprint`{.action} depuis le menu **Create Blueprint**.
+Rendez-vous sur l'icône `Blueprints`{.action} dans la barre de menu vertical de CALM, cliquez sur `Multi VM/Pod Blueprint`{.action} depuis le menu **Create Blueprint**.
 
 ![04 create Linux blueprint 01](images/04-create-linux-blueprint01.png){.thumbnail}
 
@@ -572,10 +572,10 @@ ssh_pwauth: true
 ```
 
 > [!primary]
-> Ce fichier est le fichier d'initialisation de Linux avec des images cloud-init, il utilise les mots de passes qui vient de CALM au travers de variables qui ont cette forme @@{LinuxAccount.username}@@ pour le compte utilisateur et @@{LinuxAccount.secret}@@ pour le mot de passe.
+> Ce fichier est le fichier d'initialisation de Linux avec des images cloud-init, il utilise les mots de passes qui vient de CALM au travers de macros-instructions qui ont cette forme @@{LinuxAccount.username}@@ pour le compte utilisateur et @@{LinuxAccount.secret}@@ pour le mot de passe.
 >
 
-faites défiler la `fenêtre`{.action} de droite vers le bas.
+Faites défiler la `fenêtre`{.action} de droite vers le bas.
 
 ![04 create Linux blueprint 11](images/04-create-linux-blueprint11.png){.thumbnail}
 
@@ -587,13 +587,17 @@ Dans la fenêtre de gauche faites rendez-vous sur `Install`{.action} en dessous 
 
 ![04 create Linux blueprint 13](images/04-create-linux-blueprint13.png){.thumbnail}
 
-Saisissez ces informations concernant la tâche de redimentionnement du disque de votre machine virtuelle.
+Saisissez ces informations concernant la tâche de redimensionnement du disque de votre machine virtuelle.
 
 * **Task Name** : `Disk resize`
 * **Type** : `Execute`
 * **Script Type** : `EScript`
 
-Ensuite copiez le contenu de script
+Ensuite copiez le contenu de ce script :
+
+> [!primary]
+> Ce script utilise les mots de passes qui viennet de CALM au travers de variables qui ont cette forme @@{PC_ADMIN.username}@@ pour le compte utilisateur et @@{PC_ADMIN.secret}@@ pour le mot de passe.
+>
 
 ```python
 vmUuid = '@@{id}@@'
@@ -784,7 +788,7 @@ Et cliquez sur + `Task`{.action} pour ajouter une nouvelle tâche à la suite.
 
 ![04 create Linux blueprint 17](images/04-create-linux-blueprint17.png){.thumbnail}
 
-Saisissez ces informations concernant la dernière tâche de personalisation de NGINX':
+Saisissez ces informations concernant la dernière tâche de personnalisation de NGINX':
 
 * **Task Name** : `Service restart`
 * **Type** : `Execute`
@@ -818,7 +822,7 @@ Et cliquez sur + `Save`{.action} pour finaliser la création de votre plan.
 
 ![04 create Linux blueprint 18](images/04-create-linux-blueprint18.png){.thumbnail}
 
-Cliquez sur `Launch`{.action} pour tester votre blueprint.
+Cliquez sur `Launch`{.action} pour tester votre plan.
 
 ![04 create Linux blueprint 19](images/04-create-linux-blueprint19.png){.thumbnail}
 
@@ -878,9 +882,9 @@ Cliquez sur `Submit for approval`{.action}.
 
 ![05 publish Windows Application 08](images/05-publish-windows-application08.png){.thumbnail}
 
-L'application Windows est dans le marketplace en attente d'approbation.
+L'application Windows est dans la marketplace en attente d'approbation.
 
-cliquez sur le plan `UBUNTU 22 NGINX`{.action}.
+Cliquez sur le plan `UBUNTU 22 NGINX`{.action}.
 
 ![06 publish Windows Application 01](images/06-publish-linux-application01.png){.thumbnail}
 
@@ -918,7 +922,7 @@ Cliquez sur `Submit for approval`{.action}.
 
 ![06 publish Windows Application 08](images/06-publish-linux-application08.png){.thumbnail}
 
-L'application Linux se trouve dans le marketplace en attente d'approbation.
+L'application Linux se trouve dans la marketplace en attente d'approbation.
 
 #### Ajout des applications publiées sur le portail de CALM
 
@@ -954,7 +958,7 @@ L'application Ubuntu est publiée.
 
 ![08 ADD to market place 06](images/08-add-to-marketplace06.png){.thumbnail}
 
-Cliquez sur l'icône `Marketplace`{.action} en haut de la barre de menu verticale à gauche. et cliquez sur `Get`{.action} en dessous de l'application UBUNTU 22 NGINX.
+Cliquez sur l'icône `Marketplace`{.action} en haut de la barre de menu verticale à gauche et cliquez sur `Get`{.action} en dessous de l'application UBUNTU 22 NGINX.
 
 ![08 ADD to market place 07](images/08-add-to-marketplace07.png){.thumbnail}
 
@@ -962,7 +966,7 @@ Cliquez sur `Launch`{.action}.
 
 ![08 ADD to market place 08](images/08-add-to-marketplace08.png){.thumbnail}
 
-Saisissez un `Nom`{.action} dans **Application Name** et cliquez sur `Deploy`{.action}. pour déployer une application.
+Saisissez un `Nom`{.action} dans **Application Name** et cliquez sur `Deploy`{.action} pour déployer une application.
 
 ![08 ADD to market place 09](images/08-add-to-marketplace09.png){.thumbnail}
 
@@ -970,7 +974,7 @@ Saisissez un `Nom`{.action} dans **Application Name** et cliquez sur `Deploy`{.a
 
 La suppression d'une application déployée est aussi simple que son déploiement.
 
-Cliquez sur l'icônes des `Blueprints`{.action} à gauche. et cochez sur une application déployée.
+Cliquez sur l'icônes des `Blueprints`{.action} à gauche  et cochez sur une application déployée.
 
 ![09 delete deployed APP 01](images/09-delete-deployed-app01.png){.thumbnail}
 
@@ -982,11 +986,11 @@ Cliquez sur `Confirm`{.action}.
 
 ![09 delete deployed APP 03](images/09-delete-deployed-app03.png){.thumbnail}
 
-Tout comme un tâche de déploiement il est possible de voir l'état d'avancement d'une suppression.
+Il est possible de voir l'état d'avancement d'une suppression comme pour un déploiement.
 
 ![09 delete deployed APP 04](images/09-delete-deployed-app04.png){.thumbnail}
 
-L'application est entierement supprimée.
+L'application est entièrement supprimée.
 
 ![09 delete deployed APP 05](images/09-delete-deployed-app05.png){.thumbnail}
 
