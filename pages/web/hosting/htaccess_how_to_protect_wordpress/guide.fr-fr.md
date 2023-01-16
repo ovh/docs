@@ -66,7 +66,7 @@ De la même façon, si vous n'avez pas l'habitude de manipuler ce type de fichie
 
 Comme précisé en introduction, il est possible d'avoir plusieurs fichier **.htaccess** sur un même hébergement web. Chacun de ces fichiers définissant les règles pour le répertoire où il se situe, ainsi que les sous-répertoires qu'il contient.
 
-#### À la racine du site
+#### À la racine du site web
 
 C'est à ce niveau que se feront la majorité des modifications. Installé par défaut, le fichier **.htaccess** placé à la racine du site contient les lignes suivantes&nbsp;:
 
@@ -97,27 +97,31 @@ RewriteRule . /index.php [L]
 - **RewriteBase** : indique que la racine du site est «&nbsp;/&nbsp;».
 - **RewriteCond** : il s'agit de préconditions pour la règle qui suit directement. Dans notre cas, la première précondition exclut les URLs contenant un chemin vers un fichier réel, tandis que la deuxième exclut, elle, les sous-répertoires.
 
-#### Que puis-je rajouter dans un fichier **.htaccess** avec WordPress ?
+### Que puis-je rajouter dans un fichier **.htaccess** avec WordPress ?
 
-Il existe plusieurs façons de définir et modifier des paramètres qui changeront le comportement du serveur (avec, toutefois, certaines limitations fonction de l'hébergement)&nbsp;: modifier les fichiers de configuration de votre serveur, ajouter ou modifier des directives dans le fichier de configuration _wp-config.php_ à la racine de votre site et, enfin, modifier ou ajouter des directives dans le fichier _.htaccess_ à la racine.
+Il existe plusieurs façons de définir et modifier des paramètres qui changeront le comportement du serveur avec, toutefois, certaines limitations fonction de l'hébergement): 
 
-##### **Rediriger de HTTP vers HTTPS**
+- modifier les fichiers de configuration de votre serveur,
+- ajouter ou modifier des directives dans le fichier de configuration _wp-config.php_ à la racine de votre site web,
+- modifier ou ajouter des directives dans le fichier _.htaccess_ à la racine.
 
-Pour faire la direction de toutes vos URL de HTTP vers HTTPS, vous devez tout d'abord générer votre certificat SSL dans votre manager OVH&nbsp;:
+### Rediriger de HTTP vers HTTPS
 
-![Activation du certificat SSL sur le manager OVH](images/htaccess_how_to_protect_wordpress%5B1%5D.png){.thumbnail}
+Pour faire la direction de toutes vos URLs de HTTP vers HTTPS, générez votre certificat SSL dans votre manager OVHcloud:
 
-N'hésitez pas à vous référez à notre guide [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement).
+![Activation du certificat SSL sur le manager cloud](images/htaccess_how_to_protect_wordpress%5B1%5D.png){.thumbnail}
 
-##### **Empêcher l'affichage des répertoires et sous-répertoires**
+Vous pouvez également consulter notre guide [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement).
 
-Pour éviter de permettre à n'importe quel visiteur de votre site d'afficher le contenu des sous-répertoires (et accessoirement donner des informations à des pirates sur les thèmes ou extensions utilisés), vous pouvez bloquer la visualisation du contenu en ajoutant cette ligne&nbsp;:
+### Empêcher l'affichage des répertoires et sous-répertoires
+
+Pour éviter de permettre à l'ensemble des visiteurs de votre site web d'afficher le contenu des sous-répertoires (et accessoirement donner des informations à des pirates sur les thèmes ou extensions utilisés), bloquez la visualisation du contenu en ajoutant cette ligne dans votre fichier **.htaccess**:
 
 ```Options All -Indexes```
 
-##### **Protéger votre fichier de configuration**
+### Protéger votre fichier de configuration
 
-Votre fichier _wp-config.php_, à la racine de votre site, contient des informations de configuration, comme son nom l'indique. Vous pouvez empêcher l'accès à ce fichier avec ces quelques lignes&nbsp;:
+Votre fichier _wp-config.php_ présent à la racine de votre site web, contient des informations de configuration sensibles. Empêchez l'accès à ce fichier en ajoutant les  lignes suivantes dans votre fichier **.htaccess** :
 
 ```
 <Files ~ "^.*\.([Hh][Tt][AaPp])">
@@ -127,9 +131,11 @@ Votre fichier _wp-config.php_, à la racine de votre site, contient des informat
 </Files>
 ```
 
-##### **Bloquer une adresse IP**
+Pour plus de détails sur le sujet, consultez notre guide sur la [restriction d'accès par IP via le fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
 
-Si vous avez identifié l'adresse IP d'un visiteur indésirable, voici la ligne à mentionner dans votre fichier _.htaccess_&nbsp;:
+### Bloquer une adresse IP
+
+Si vous avez identifié l'adresse IP d'un visiteur indésirable, voici la ligne à mentionner dans votre fichier **.htaccess**:
 
 ```
 <Limit GET POST>
@@ -140,9 +146,11 @@ Si vous avez identifié l'adresse IP d'un visiteur indésirable, voici la ligne 
 
 Où xxx.xxx.xxx.xxx désigne l'adresse IP à bloquer.
 
-#### Dans le répertoire wp-admin (ou dans les autres répertoires)
+Pour plus de détails sur le sujet, consultez notre guide sur la [restriction d'accès par IP via le fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
 
-Ce répertoire est celui qui va vous permettre de vous connecter à votre interface d'administration (la méthode fonctionne également avec les autres répertoires, mais ils correspondent à des URL qui n'aboutissent pas à une interface particulière). Un des moyens de protéger ce répertoire, est d'autoriser spécifiquement l'accès à une adresse IP (ou à plusieurs)&nbsp;:
+#### Bloquer un adresse IP depuis le répertoire wp-admin (ou dans les autres répertoires)
+
+C'est le répertoire permettant de vous connecter à votre interface d'administration (la méthode fonctionne également avec les autres répertoires, mais ils correspondent à des URLs qui n'aboutissent pas à une interface particulière). Pour protéger ce répertoire, autorisez spécifiquement l'accès à une ou plusieurs adresses IP à l'aide du code suivant à placer dans votre **.htaccess** :
 
 ```
 <Limit GET POST PUT>
@@ -154,11 +162,13 @@ Ce répertoire est celui qui va vous permettre de vous connecter à votre interf
 
 ### Ce que vous devez retenir
 
-- Pensez à garder une version fonctionnelle de votre fichier .htaccess avant toute manipulation
-- Si les modifications que vous avez faites provoquent une erreur, remplacer (via votre client FTP) le fichier en ligne par la version précédente
+- Gardez une version fonctionnelle de votre fichier **.htaccess** avant toute manipulation
+- Si les modifications que vous avez faites provoquent une erreur, remplacez (via votre client FTP) le fichier **.htaccess** en ligne par la version précédente
 - Vous pouvez gérer certains paramètres dans votre fichier _wp-config.php_
-- Bien configurés, les fichiers _.htaccess_ sont particulièrement efficaces (gestion des URL, redirection, sécurité).
+- Les fichiers _.htaccess_ sont particulièrement efficaces pour la gestion des URLs, les redirections et la sécurité de votre site web.
 
 ## Aller plus loin
 
-Vous pouvez consulter le [tutoriel disponible sur le site de la Fondation Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
+Consultez le [tutoriel disponible sur le site de la Fondation Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
+
+
