@@ -1,7 +1,7 @@
 ---
 title: Mise en place de NCM Self Service (CALM) 
 slug: self-service-calm
-excerpt: 'Comment activer Self Service et (CALM dans votre cluster Nutanix)' 
+excerpt: 'Comment activer Self Service et (CALM dans votre Prism Central)' 
 section: Utilisation avancée
 order: 06
 ---
@@ -10,7 +10,7 @@ order: 06
 
 ## Objectif
 
-**Ce guide vous montre comment mettre en place NCM Self-Service (Calm) sur votre cluster Nutanix**
+**Ce guide vous montre comment mettre en place NCM Self-Service (Calm) sur votre Prism Central**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.

@@ -1,7 +1,7 @@
 ---
 title: Setting up NCM Self Service (CALM)
 slug: self-service-calm
-excerpt: 'How to enable Self Service and (CALM in your Nutanix cluster)'  
+excerpt: 'How to enable Self Service and (CALM in your Prism Central)'  
 section: "Advanced use"
 order: 06
 ---
@@ -10,7 +10,7 @@ order: 06
 
 ## Objectif
 
-**This guide will show you how to redeploy Prism-Central in X-LARGE mode across three virtual machines.**
+**This guide will show you how to set up NCM Self-Service (Calm) on your Prism Central.**
 
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
