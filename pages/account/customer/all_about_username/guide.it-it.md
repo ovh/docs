@@ -28,7 +28,7 @@ Lo Spazio Cliente OVHcloud ti permette di gestire i tuoi dati personali e di del
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!primary]
-> In caso di difficoltà di connessione al tuo account, consulta la sezione "[Non riesco a connettermi](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#login-failure)" della nostra guida [Accedere allo Spazio Cliente OVHcloud](https://docs.ovh.com/fr/customer/se-connecter-espace-client-ovhcloud/).
+> In caso di difficoltà di connessione al tuo account, consulta la sezione "[Non riesco a connettermi](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#login-failure)" della nostra guida [Accedere allo Spazio Cliente OVHcloud](https://docs.ovh.com/it/customer/accedere-spazio-cliente-ovhcloud/).
 >
 
 ## Procedura
