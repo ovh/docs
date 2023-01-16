@@ -40,13 +40,13 @@ Im Popup-Fenster können Sie dem Snapshot einen anderen Namen geben. Nehmen Sie 
 
 Die Dauer der Erstellung des Snapshots hängt von der Menge der auf dem Volume vorhandenen Daten, der Verwendung der Ressourcen der Instanz zum Zeitpunkt des Snapshots und anderen hostspezifischen Faktoren ab.
 
-Wir empfehlen Ihnen, Ihre Snapshots außerhalb Ihrer Produktionsstunden durchzuführen.
+Wir empfehlen Ihnen, Ihre Snapshots außerhalb Ihrer produktiven Zeiten durchzuführen.
 
 Hier einige weitere bewährte Praktiken:
 
-- vermeiden Sie die Erstellung von Snapshots zu Spitzenzeiten (04:00 - 22:00 Uhr Pariser Zeit);
-- installieren Sie das Mittel qemu-guest, wenn dies nicht erfolgt ist, oder versuchen Sie es gegebenenfalls zu deaktivieren;
-- Versuchen Sie, den Server während der Erstellung des Snapshots nicht zu "aufzurufen" (Begrenzung der I/O-Werte, RAM-Verbrauch usw.).
+- Vermeiden Sie die Erstellung von Snapshots zu Spitzenzeiten (04:00 - 22:00 Uhr Pariser Zeit).
+- Installieren Sie "qemu-guest", sofern nicht bereits geschehen, oder versuchen Sie es gegebenenfalls zu deaktivieren.
+- Versuchen Sie, den Server während der Erstellung des Snapshots nicht zu beanspruchen (Begrenzung der I/O-Werte, RAM-Verbrauch etc.).
 
 Da ein Volume Snapshot ein Klon der gesamten Disk ist, hat er unabhängig von der Speicherplatzbelegung die maximale Größe des ursprünglichen Volumes.
 
