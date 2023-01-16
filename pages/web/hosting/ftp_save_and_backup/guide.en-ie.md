@@ -6,7 +6,7 @@ section: 'FTP and SSH'
 order: 06
 ---
 
-**Last updated 11th January 2023**
+**Last updated 12th January 2023**
 
 ## Objective
 
@@ -30,10 +30,10 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 
 Before you begin, ensure that you can use the restore dates offered to restore your Web Hosting plan’s storage space back to your chosen date:
 
-- same day, at 00:01 (UTC+1)
-- one day ago, at 00:01 (UTC+1)
-- two days ago, at 00:01 (UTC+1)
-- Sunday, at 01:00 (UTC+1)
+- Same day, at 00:01 (UTC+1)
+- One day ago, at 00:01 (UTC+1)
+- Two days ago, at 00:01 (UTC+1)
+- Last Sunday, at 01:00 (UTC+1)
 - Sunday two weeks ago, at 01:00 (UTC+1)
 
 If you want to retrieve a backup from an earlier period, OVHcloud will not be able to provide you with this. We advise taking personal backups of your website in advance, and using those if you would like an earlier backup. 
@@ -47,8 +47,8 @@ You also need to decide which restore method you will use:
 
 > [!warning]
 >
-> Regarding the **restore from OVHcloud Control Panel** method, check that at least **half of the total FTP storage space** included with your hosting package is still available.
-> For example, if you have a **Performance** hosting package, 250 GB must still be available out of the 500 GB provided.
+> Regarding the **restore from OVHcloud Control Panel** method, check that at least **half of the total FTP storage space** included with your hosting plan is still available.
+> For example, if you have a **Performance** hosting plan, 250 GB must still be available out of the 500 GB provided.
 >
 > This is because our robots install the backup on your hosting before deleting the FTP content which will be replaced by the restoration.
 >
@@ -180,7 +180,7 @@ Once you have connected, you can now restore the files you want. To do this, exp
 
 [Retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/ie/en/hosting/web_hosting_database_export_guide/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
