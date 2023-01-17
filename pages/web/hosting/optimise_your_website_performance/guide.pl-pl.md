@@ -6,7 +6,7 @@ section: 'Optymalizacja strony WWW'
 order: 06
 ---
 
-**Ostatnia aktualizacja dnia 03-02-2022**
+**Ostatnia aktualizacja dnia 01-03-2023**
 
 ## Wprowadzenie 
 Ten przewodnik jest przeznaczony dla klientów, którzy chcą poprawić wydajność witryny internetowej.

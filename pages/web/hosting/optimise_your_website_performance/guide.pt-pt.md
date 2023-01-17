@@ -6,7 +6,7 @@ section: Otimizar o seu site
 order: 06
 ---
 
-**Última atualização: 03/02/2022**
+**Última atualização: 01/03/2023**
 
 ## Sumário
 Este guia destina-se a clientes que pretendem melhorar o desempenho do seu website.

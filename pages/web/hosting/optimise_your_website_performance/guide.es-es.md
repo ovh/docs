@@ -6,7 +6,7 @@ section: 'Optimización del sitio web'
 order: 06
 ---
 
-**Última actualización: 03/02/2022**
+**Última actualización: 01/03/2023**
 
 ## Objetivo
 Esta guía ha sido creada para aquellos clientes que deseen mejorar el rendimiento de su sitio web.

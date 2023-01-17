@@ -7,7 +7,7 @@ section: Optimise your website
 order: 06
 ---
 
-**Last updated 3rd February 2022**
+**Last updated 1st March 2023**
 
 ## Objective
 This guide is designed for customers who wish to improve the performance of their website.

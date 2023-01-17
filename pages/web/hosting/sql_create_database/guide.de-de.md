@@ -6,7 +6,7 @@ section: 'Datenbanken'
 order: 01
 ---
 
-**Letzte Aktualisierung am 03.02.2022**
+**Letzte Aktualisierung am 01.03.2023**
 
 ## Ziel 
 

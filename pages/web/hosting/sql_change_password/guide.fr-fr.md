@@ -6,7 +6,7 @@ section: Bases de données
 order: 02
 ---
 
-**Dernière mise à jour le 26/01/2022**
+**Dernière mise à jour le 01/03/2023**
 
 ## Objectif
 
