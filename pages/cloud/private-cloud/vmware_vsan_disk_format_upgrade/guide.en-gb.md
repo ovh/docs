@@ -1,13 +1,13 @@
 ---
-title: 'Mise à jour du format des disques vSAN'
+title: 'Updating the vSAN disk format'
 slug: vsan-disk-format-upgrade
-excerpt: 'Découvrez comment mettre à jour le format des disques d'un vSAN'
+excerpt: 'Find out how to update the format of a vSAN’s disks'
 section: 'VMware vSphere features'
 ---
 
 **Last updated 17th January 2023**
 
-**Ce guide vous montre comment mettre à jour le format de vos disques vSAN** 
+**This guide will show you how to update the format of your vSAN disks** 
 
 ## Objective
 
@@ -21,33 +21,33 @@ The aim of this guide is to explain how vSAN fault domains work and how they are
 
 ## Overview
 
-Régulièrement le format des disques vSAN est amélioré avec de nouvelles versions. nous allons voir comment mettre à jour le format des disques vSAN.
+vSAN disks are regularly upgraded with new versions. we will look at how to update the vSAN disk format.
 
 ## Instructions
 
-Connectez-vous à votre interface vSphere à l'aide de ce [guide](https://docs.ovh.com/fr/private-cloud/connexion-interface-vsphere/).
+Log in to your vSphere interface using this [guide](https://docs.ovh.com/gb/en/private-cloud/connexion-interface-vsphere/).
 
-Au travers de l'interface vSphere cliquez à gauche sur votre `Cluster`{.action}, positionnez-vous à droite sur l'onglet `Configurer`{.action}, Choisissez `Services`{.action} dans la rubrique **vSAN** et cliquez sur `PRÉVERIFIER LA MISE A NIVEAU`{.action}.
+In the vSphere interface, click on your `Cluster`{.action} to the left, go to the `Configure`{.action} tab, choose `Services`{.action} in the **vSAN** section and click `PRE-CHECK UPGRADE`{.action}.
 
-![01 vSAN disk format upgrarde 01](images/01-vsan-disk-format-upgrade01.png){.thumbnail}
+![01 vSAN disk format upgrade 01](images/01-vsan-disk-format-upgrade01.png){.thumbnail}
 
-Le contrôle de mise à niveau vous indique que tout est ok pour effectuer la mise à jour.
+The upgrade control tells you that everything is ok to perform the upgrade.
 
-Cliquez sur `METTRE À NIVEAU`{.action}.
+Click `UPGRADE`{.action}.
 
-![01 vSAN disk format upgrarde 02](images/01-vsan-disk-format-upgrade02.png){.thumbnail}
+![01 vSAN disk format upgrade 02](images/01-vsan-disk-format-upgrade02.png){.thumbnail}
 
-Cliquez sur `METTRE À NIVEAU`{.action} pour confirmer la mise à niveau.
+Click `UPGRADE`{.action} to confirm the upgrade.
 
-![01 vSAN disk format upgrarde 03](images/01-vsan-disk-format-upgrade03.png){.thumbnail}
+![01 vSAN disk format upgrade 03](images/01-vsan-disk-format-upgrade03.png){.thumbnail}
 
-La mise à niveau se déroule en quelques instants.
+The upgrade will take a few moments.
 
-![01 vSAN disk format upgrarde 04](images/01-vsan-disk-format-upgrade04.png){.thumbnail}
+![01 vSAN disk format upgrade 04](images/01-vsan-disk-format-upgrade04.png){.thumbnail}
 
-Lorsque la mise à niveau est terminée une information vous indique que tout est correct ainsi que le numéro de version du format des disque vSAN.
+When the upgrade is complete, you will be informed that everything is correct, as well as the vSAN disk format version number.
 
-![01 vSAN disk format upgrarde 05](images/01-vsan-disk-format-upgrade05.png){.thumbnail}
+![01 vSAN disk format upgrade 05](images/01-vsan-disk-format-upgrade05.png){.thumbnail}
 
 ## Go further
 
