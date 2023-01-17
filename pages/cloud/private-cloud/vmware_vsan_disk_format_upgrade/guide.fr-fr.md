@@ -29,7 +29,7 @@ Au travers de l'interface vSphere cliquez à gauche sur votre `Cluster`{.action}
 
 ![01 vSAN disk format upgrarde 01](images/01-vsan-disk-format-upgrade01.png){.thumbnail}
 
-Le contrôle de mise à niveau vous indique que tout est ok pour éffectuer la mise à jour.
+Le contrôle de mise à niveau vous indique que tout est ok pour effectuer la mise à jour.
 
 Cliquez sur `METTRE À NIVEAU`{.action}.
 
@@ -43,7 +43,7 @@ La mise à niveau se déroule en quelques instants.
 
 ![01 vSAN disk format upgrarde 04](images/01-vsan-disk-format-upgrade04.png){.thumbnail}
 
-Lorsque la mise à niveau est terminée une information vous indique le numéro de version du format des disque vSAN.
+Lorsque la mise à niveau est terminée une information vous indique que tout est correct ainsi que le numéro de version du format des disque vSAN.
 
 ![01 vSAN disk format upgrarde 05](images/01-vsan-disk-format-upgrade05.png){.thumbnail}
 
