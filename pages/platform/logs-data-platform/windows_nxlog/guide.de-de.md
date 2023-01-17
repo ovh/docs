@@ -7,7 +7,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/windows-nxlog/'
 ---
 
-**Last updated 27th July, 2020**
+**Last updated 16th January, 2023**
 
 ## Objective
 
@@ -38,7 +38,7 @@ The configuration is pretty much straightforward. Here is the configuration file
 ```ApacheConf hl_lines="26 36 38"
  ## This is a sample configuration file. See the nxlog reference manual about the
  ## configuration options. It should be installed locally and is also available
- ## online at http://nxlog.org/nxlog-docs/en/nxlog-reference-manual.html
+ ## online at https://docs.nxlog.co/userguide/documentation.html
 
  ## Please set the ROOT to the folder your nxlog was installed into,
  ## otherwise it will not start.
@@ -115,7 +115,7 @@ Jump to Graylog (use the Graylog access button in the Manager) and to the stream
 
 I think that's pretty much it. I know, it didn't even take 10 minutes :-).
 
-If you want to go further, don't hesitate to fly to the [NXlog documentation](https://nxlog.co/docs/){.external}
+If you want to go further, don't hesitate to fly to the [NXlog documentation](https://docs.nxlog.co/userguide/documentation.html){.external}
 
 ## Getting Help
 
