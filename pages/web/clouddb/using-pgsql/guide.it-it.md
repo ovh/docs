@@ -6,6 +6,8 @@ section: Per iniziare
 order: 03
 ---
 
+**Ultimo aggiornamento: 01/03/2023**
+
 Vuoi utilizzare PostgreSQL? Scopri come creare e gestire i tuoi database con la massima semplicità!
 
 

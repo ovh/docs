@@ -6,6 +6,8 @@ section: Primeros pasos
 order: 03
 ---
 
+**Última actualización: 01/03/2023**
+
 ¿Quiere utilizar PostgreSQL en Web Cloud Databases? Descubra cómo crear y administrar fácilmente sus bases de datos alojadas en esta solución.
 
 

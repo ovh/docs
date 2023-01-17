@@ -4,7 +4,7 @@ slug: managed-db-life-cycle-policy
 section: 'Technical resources'
 ---
 
-**Last updated 29th June 2022**
+**Last updated 1st March 2023**
 
 ## Objective
 

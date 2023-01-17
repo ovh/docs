@@ -6,6 +6,8 @@ section: 'Primeiros passos'
 order: 03
 ---
 
+**Última atualização: 01/03/2023**
+
 Deseja utilizar PostgreSQL? Descubra como criar e gerir facilmente as suas bases de dados!
 
 

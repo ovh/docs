@@ -6,6 +6,8 @@ section: 'Pierwsze kroki'
 order: 03
 ---
 
+**Ostatnia aktualizacja dnia 01-03-2023**
+
 Chcesz korzystać z PostgreSQL? Sprawdź, jak w prosty sposób tworzyć bazy danych i nimi zarządzać!
 
 

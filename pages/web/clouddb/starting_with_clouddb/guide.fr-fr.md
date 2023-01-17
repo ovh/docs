@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 01
 ---
 
-**Dernière mise à jour le 22/06/2022**
+**Dernière mise à jour le 01/03/2023**
 
 ## Objectif
 
@@ -28,7 +28,7 @@ Si votre offre d'hébergement inclut l'option Web Cloud Databases, rendez-vous d
 
 Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **Web Cloud Databases**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
 
-![Informations générales](images/db-activation.png){.thumbnail}
+![Informations générales](images/web-cloud-databases-activation.png){.thumbnail}
 
 Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur Web Cloud Databases. Il sera ensuite accessible depuis la colonne de gauche dans `Base de données`{.action}.
 

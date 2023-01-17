@@ -4,7 +4,7 @@ slug: clouddb-eos-eol
 section: 'Technical resources'
 ---
 
-**Last updated 21st July 2022**
+**Last updated 1st March 2023**
 
 ## Objective
 

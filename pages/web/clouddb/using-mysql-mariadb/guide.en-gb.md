@@ -6,7 +6,7 @@ section: Getting started
 order: 02
 ---
 
-**Last updated 29th June 2022**
+**Last updated 1st March 2023**
 
 ## Objective
 
