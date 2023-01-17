@@ -49,6 +49,6 @@ Lorsque la mise à niveau est terminée une information vous indique que tout es
 
 ## Aller plus loin
 
-[Upgrade vSAN Disk Format Using vSphere Web Client](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.virtualsan.doc/GUID-9FB6F6D8-80A9-4584-BD0D-8FED073B3D40.html)
+[Mise à niveau du format de disque vSAN à l'aide de vSphere Web Client](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.virtualsan.doc/GUID-9FB6F6D8-80A9-4584-BD0D-8FED073B3D40.html)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
