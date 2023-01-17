@@ -1,7 +1,7 @@
 ---
-title: "Den IP-Zugang auf Ihr OVHcloud Kundencenter beschränken"
+title: "Zugriff auf Ihr OVHcloud Kundencenter nach IP beschränken"
 slug: ovhcloud-control-panel-ip-restriction
-excerpt: "Diese Anleitung erklärt, wie Sie Ihren OVHcloud Account absichern, indem Sie die IP-Adressen mit Zugriffsberechtigung auf diesen begrenzen."
+excerpt: "Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account absichern, indem Sie Zugriffsberechtigungen für IP-Adressen einrichten"
 section: Sicherheit
 order: 03
 ---
@@ -16,50 +16,50 @@ order: 03
 
 OVHcloud stellt Ihnen Optionen zur Verfügung, um die Sicherheit Ihres OVHcloud Kundencenters und Ihrer Dienste zu erhöhen.
 
-Sie können insbesondere den Zugang zu Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf bestimmte IP-Adressen beschränken.
-Die Einrichtung dieser Option kombiniert mit der Absicherung Ihres Accounts durch eine [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/) ermöglicht die optimale Absicherung Ihres OVHcloud Kundencenters gegen mögliche Einbruchsversuche.
+Sie können den Zugang zu Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf bestimmte IP-Adressen beschränken.
+Die Einrichtung dieser Option, kombiniert mit der [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/), ermöglicht die optimale Absicherung Ihres OVHcloud Kundencenters gegen unbefugte Zugriffe.
 
-**Diese Anleitung erklärt, wie Sie Ihren OVHcloud Account absichern, indem Sie die IP-Adressen, auf die zugegriffen werden darf, einschränken**
+**Diese Anleitung erklärt, wie Sie Ihren OVHcloud Kunden-Account absichern, indem Sie den Zugang über IP-Adressen einschränken.**
 
 > [!warning]
 >
-> Zugriffsbeschränkungen nach IP und/oder Zwei-Faktor-Authentifizierung sichern nur den Zugang zum OVHcloud Kundencenter ab, über das Sie Ihre OVHcloud Dienste bestellen, verwalten, verlängern oder löschen können. Diese Optionen sichern Ihre Dienste nicht per se ab, für die Sie spezifische Sicherheitsmaßnahmen einrichten müssen.
+> Zugriffsbeschränkungen nach IP und die Zwei-Faktor-Authentifizierung sichern nur den Zugang zum OVHcloud Kundencenter, über das Sie Ihre OVHcloud Dienste bestellen, verwalten, verlängern oder löschen können. Diese Optionen haben keinen direkten Einfluss auf den Zugang zu Ihren Diensten selbst. Dazu müssen individuelle Sicherheitsmaßnahmen konfiguriert werden.
 >
 
 ## Voraussetzungen
 
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
-- Sie haben die [Empfehlungen zur Verwaltung des Zugangspassworts zu Ihrem Account](https://docs.ovh.com/de/customer/Passwort-verwalten/) zur Kenntnis genommen.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben die [Empfehlungen zur Verwaltung des Account-Passworts](https://docs.ovh.com/de/customer/Passwort-verwalten/) zur Kenntnis genommen.
 
 ## In der praktischen Anwendung
 
-### Schritt 1 - Abruf der öffentlichen IP-Adressen, die zum Zugriff auf Ihr OVHcloud Kundencenter berechtigt sind
+## Schritt 1: Bestimmung der öffentlichen IP-Adressen, die zum Zugriff auf Ihr OVHcloud Kundencenter berechtigt sind
 
-Es gibt zwei IP-Adressen:
+Es gibt grundsätzlich zwei Arten IP-Adressen:
 
-- **Öffentliche IP-Adressen**: sie sind im gesamten Internet sichtbar. Diese werden zum Beispiel über Ihren Internet-Zugang/Router verwendet, damit Sie über eine Internetadresse verfügen, um auf das gesamte Netzwerk zuzugreifen.
-- **Private IP-Adressen**: unsichtbar und im Internet nicht nutzbar, werden sie einem lokalen Netzwerk zugewiesen. Um unser Beispiel zu nennen: Ihr Internet-Router wird jedem der mit ihm verbundenen Geräte (Computer, Smartphones, Tablets...) eine private IP-Adresse zuweisen. Ihr Internet-Zugangspunkt/Router ermöglicht es diesen Geräten, ihre öffentliche IP für den Internetzugang zu verwenden. Diese IP-Adressen lassen sich leicht erkennen, da sie in der Regel mit 10.0.X.X, 172.16.X.X oder 192.168.X.X beginnen (wobei X Werte zwischen 0 und 255 sind).
+- **Öffentliche IP-Adressen**: Sie sind im Internet sichtbar und werden z.B. von Ihrem Internet-Zugangspunkt bzw. Ihrer Internet-Box verwendet, um den Zugang zu öffentlichen Netzwerken (Internet) zu ermöglichen.
+- **Private IP-Adressen**: Sie sind im Internet nicht sichtbar und können nur in lokalen Netzwerk verwendet werden. Beispielsweise wird jedem der in Ihrem privaten Netzwerk mit Ihrer Internet-Box verbundenen Geräte (Computer, Smartphones, Tablets, etc.) eine private IP-Adresse zugewiesen. Ihr Internet-Zugangspunkt ermöglicht es dann diesen Geräten, die öffentliche IP-Adresse für den Internetzugang zu verwenden. Private IP-Adressen lassen sich leicht erkennen, da sie in der Regel mit 10.X.X.X, 172.16.X.X oder 192.168.X.X beginnen (wobei X für Werte zwischen 0 und 255 steht).
 
-Um die IP-basierte Einschränkungsoption im OVHcloud Kundencenter zu verwenden, geben Sie **nur** Ihre öffentliche(n) IP(s) ein.
+Um die IP-basierte Zugriffsbeschränkung im OVHcloud Kundencenter zu verwenden, geben Sie **ausschließlich** öffentliche IP-Adressen ein.
 
 Um die öffentliche IP-Adresse eines Geräts abzurufen, dem der Zugriff auf Ihr OVHcloud Kundencenter gestattet wird, gehen Sie auf die Seite [whatismyip.com](https://www.whatismyip.com/){.external} (nicht von OVHcloud verwaltet).
 
-Achten Sie auf die angezeigte IP-Adresse und wiederholen Sie die Operation für jedes Gerät, das Zugriff auf Ihr OVHcloud Kundencenter erhält.
+Notieren Sie die angezeigte IP-Adresse und wiederholen Sie dies für jedes Gerät, das Zugriff auf Ihr OVHcloud Kundencenter erhalten soll.
 
 Wenn Sie zusätzlich ein 4G/5G-Netzwerk verwenden, vergessen Sie nicht, auch die IP-Adresse(n) dieses Netzwerks(s) abzurufen.
 
 > [!warning]
 >
-> Die meisten Internet Access Provider (ISPs) weisen Ihrem Internet/Box Access Point eine **dynamisch** IP-Adresse zu. Diese dynamischen IP-Adressen ändern sich beim Neustart Ihres Routers oder alle 24/48 Stunden. Einige Internetprovider können Ihnen jedoch auf Anfrage **Festnetz** IP-Adressen zuweisen.
+> Die meisten Internet Access Provider (ISPs) weisen Ihrem Internetzugang eine **dynamische** IP-Adresse zu. Diese dynamischen IP-Adressen ändern sich beim Neustart Ihres Routers oder alle 24/48 Stunden. Einige Internetprovider können Ihnen jedoch auf Anfrage **statische** IP-Adressen zuweisen.
 >
 > Für eine 3G/4G/5G Verbindung sind IP-Adressen systematisch **dynamisch**.
 >
-> **Bevor** Sie in Ihrem OVHcloud Kundencenter eine IP-Einschränkung einrichten, überprüfen Sie bei Ihrem ISP, dass es sich bei den zuvor abgerufenen IP-Adressen um IP-Adressen handelt **Festnetz**. Andernfalls könnten Sie den Zugang zu Ihrem OVHcloud Kundencenter schnell verlieren, indem Sie eine dynamische IP angeben.
+> **Bevor** Sie in Ihrem OVHcloud Kundencenter eine IP-Einschränkung einrichten, überprüfen Sie bei Ihrem ISP, dass es sich bei den zuvor abgerufenen IP-Adressen um  **statische** IP-Adressen handelt. Andernfalls könnten Sie den Zugang zu Ihrem OVHcloud Kundencenter verlieren, indem Sie eine dynamische IP angeben.
 >
 
-### Schritt 2 - Einschränkung des Zugangs nach IP einrichten
+### Schritt 2: Einschränkung des Zugangs nach IP einrichten
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie auf Ihren `Namen und Vornamen` oben rechts **und dann** auf Ihre `Initialen` in der blauen Spalte auf der rechten Seite.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und. Klicken Sie auf Ihren `Namen und Vornamen` oben rechts **und dann** auf Ihre `Initialen` in der blauen Spalte.
 
 ![Access from Manager](images/ip1.png){.thumbnail}
 
@@ -67,42 +67,42 @@ Klicken Sie anschließend auf den Tab `Sicherheit`{.action}, um auf folgende Sei
 
 ![Access from Manager](images/ip2.png){.thumbnail}
 
-Klicken Sie auf `Aktivieren`{.action} rechts neben der `Einschränkung des Zugangs nach IP`{.action}.
+Klicken Sie auf `Aktivieren`{.action} rechts neben `Einschränkung des Zugangs nach IP`{.action}.
 
-#### Vorstellung des Interfaces
+#### Interface - Übersicht
 
 ![Access from Manager](images/ip3.png){.thumbnail}
 
-Es sind zwei Abschnitte zur Umsetzung der IP-Einschränkungen vorhanden:
+Es gibt zwei Abschnitte zur Umsetzung der IP-Beschränkungen:
 
-- **Standardregel**. Dieses Feld erlaubt:
-    - entweder den Zugriff auf alle IP-Adressen verweigern, es sei denn, diese wurden zuvor im zweiten Abschnitt *IP konfiguriert* als **autorisiert** gemeldet. 
-    - oder erlauben, auf alle IP-Adressen zuzugreifen, außer auf diejenigen, die zuvor im zweiten Abschnitt *IP konfiguriert* als **abgelehnt** gemeldet wurden.
-    > Setzen Sie einen Haken bei `Alarm`{.action}, wenn Sie per E-Mail über Ihre Kontakt-E-Mail-Adresse benachrichtigt werden möchten, wenn ein unbefugter Verbindungsversuch unternommen wurde, um auf Ihr Kundencenter zuzugreifen.
+- **Standardregel**. Dieses Feld hat zwei Funktionen:
+    - Den Zugriff für alle IP-Adressen verweigern, ausgenommen die im zweiten Abschnitt `Konfigurierte IP` als **Berechtigt** eingetragenen.
+    - Den Zugriff für alle IP-Adressen erlauben, ausgenommen die im zweiten Abschnitt `Konfigurierte IP` als **Abgelehnt** eingetragenen.
+    > Setzen Sie einen Haken bei `Alarm`{.action}, um über Ihre Kontakt-E-Mail-Adresse benachrichtigt zu werden, wenn eine unbefugter Login-Versuch in Ihr Kundencenter erfolgt.
 
-- **IP konfiguriert**. In diesem Feld können IP-Adressen eingetragen werden, für die eine Zugriffsbeschränkung oder Zugriffsberechtigung gilt. Es ermöglicht auch die Anzeige der zuvor eingerichteten Regeln.
+- **Konfigurierte IP**. In diesem Feld können IP-Adressen eingetragen werden, für die eine Zugriffsbeschränkung oder Zugriffsberechtigung gilt. Es zeigt auch alle bereits eingerichteten Regeln an.
 
 > [!alert]
 >
-> Achtung, bevor Sie fortfahren.
+> Warnung, bevor Sie fortfahren.
 >
-> Im Bereich `Standardregel`{.action} bestätigen Sie **niemals** die Standard-Regel als Status: `Abgelehnt`{.action} abgelehnt ***ohne vorherige korrekte Autorisierung** und mindestens einer Ihrer öffentlichen IP-Adressen im `Konfigurierte IP`. 
+> `Bestätigen`{.action} Sie **niemals** die `Standardregel`{.action} im Status: `Abgelehnt`{.action} ***ohne vorherige Autorisierung** einer Ihrer öffentlichen IP-Adressen in `Konfigurierte IP`. 
 >
-> Andernfalls blockieren Sie **absolut alle öffentlichen IPs (einschließlich Ihrer eigenen)** ohne Ausnahme. Niemand hat mehr Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und Sie müssen einen Verwaltungsvorgang durchführen, um Ihre Situation zu entsperren.
+> Andernfalls blockieren Sie **alle öffentlichen IPs (einschließlich Ihrer eigenen)** ohne Ausnahmeregelung. Der Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wird dadurch gesperrt und Sie müssen einen Verwaltungsvorgang durchführen, um den Zugang wieder zu entsperren.
 >
-> Seien Sie daher in diesem Punkt sehr wachsam.
+> Widmen Sie daher diesem Punkt besondere Aufmerksamkeit.
 >
 
-#### Alle IP-Adressen mit Ausnahme der legitimen Adressen ablehnen
+#### Alle IP-Adressen mit Ausnahme berechtigter Adressen ablehnen
 
-Um den Zugriff auf das OVHcloud Kundencenter nur für eine oder mehrere rechtmäßige IP-Adressen zu erlauben, klicken Sie auf den Button `Eine Einschränkung hinzufügen`{.action}.
+Um den Zugriff auf das OVHcloud Kundencenter nur für eine oder mehrere autorisierte IP-Adressen zu erlauben, klicken Sie auf den Button `Eine Einschränkung hinzufügen`{.action}.
 
-> In den folgenden Screenshots wird die IP-Adresse **192.0.2.0** durch eine IP-Adresse ersetzt, die Sie betrifft.
+> Ersetzen Sie die in den folgenden Screenshots angezeigte IP-Adresse **192.0.2.0** mit Ihrer tatsächlich verwendeten Adresse.
 > 
 
 ![Add allow rule](images/ip4.png){.thumbnail}
 
-Geben Sie im nächsten Fenster im Formular `IP`{.action} die öffentliche IP-Adresse ein, die Sie autorisieren möchten. Setzen Sie einen Haken im Feld `Alarm`{.action}, wenn Sie per E-Mail über den Verbindungsversuch über diese IP-Adresse informiert werden möchten, und legen Sie dann die `Regel`{.action} für den Status `Berechligt`{.action} fest.
+Geben Sie im neuen Fenster in `IP`{.action} die öffentliche IP-Adresse ein, die Sie autorisieren möchten. Setzen Sie einen Haken im Feld `Alarm`{.action}, wenn Sie per E-Mail über Verbindungsversuche über diese IP-Adresse informiert werden möchten, und setzen Sie dann die `Regel`{.action} auf den Status `Berechtigt`{.action}.
 
 Klicken Sie auf `Weiter`{.action} und überprüfen Sie Ihre IP-Adresse sowie die Regel, bevor Sie auf `Bestätigen`{.action} klicken.
 
@@ -114,30 +114,30 @@ Die Regel sollte dann im Bereich `Konfigurierte IP`{.action} angezeigt werden.
 
 > [!primary]
 >
-> **Bevor** Sie mit den in diesem Schritt beschriebenen Aktionen fortfahren, wiederholen Sie die vorstehende Operation für alle anderen IP-Adressen, denen Sie den Zugriff auf Ihr OVHcloud Kundencenter erlauben möchten.
+> **Bevor** Sie mit den in diesem Schritt beschriebenen Aktionen fortfahren, wiederholen Sie den Vorgang für alle anderen IP-Adressen, denen Sie den Zugriff auf Ihr OVHcloud Kundencenter erlauben möchten.
 >
 
-Nachdem Sie **alle** Ihre öffentlichen IP-Adressen in der Rubrik `Konfigurierte IP`{.action} angegeben haben, gehen Sie in den Bereich `Standardregeln`{.action} und klicken Sie auf die Regel `Abgelehnt`{.action}. Setzen Sie ein Häkchen bei `Alarm`{.action}, wenn Sie per E-Mail über die Login-Versuche informiert werden möchten, und klicken Sie dann auf `Bestätigen`{.action}.
+Nachdem Sie **alle** Ihre öffentlichen IP-Adressen in der Rubrik `Konfigurierte IP`{.action} angegeben haben, klicken Sie im Bereich `Standardregel`{.action} auf `Abgelehnt`{.action}. Haken Sie `Alarm`{.action} an, wenn Sie per E-Mail über die Login-Versuche informiert werden möchten, und klicken Sie dann auf `Bestätigen`{.action}.
 
 ![Add allow rule](images/ip7.png){.thumbnail}
 
-> Ab sofort **Nur** Zugriff auf Ihr OVHcloud Kundencenter haben bereits autorisierte öffentliche IP-Adressen im Bereich `konfigurierte IP`.
+> Ab sofort haben **ausschließlich** die im Bereich `Konfigurierte IP`{.action} autorisierten öffentlichen IP-Adressen Zugriff auf Ihr OVHcloud Kundencenter.
 
 #### Alle IP-Adressen mit Ausnahme bestimmter Adressen erlauben
 
-Mit der Option der Zugriffsbeschränkung nach IP können auch alle IP-Adressen auf Ihr OVHcloud Kundencenter zugreifen, mit Ausnahme einiger Adressen, die Sie zuvor als rechtswidrig identifiziert haben.
+Mit der Kundencenter-Zugriffsbeschränkung nach IP können bestimmte IP-Adressen blockiert werden, während alle anderen öffentlichen Adressen generell für den Zugang erlaubt bleiben.
 
-Um den Zugang zu Ihrem OVHcloud Kundencenter für eine oder mehrere IP-Adressen zu sperren, klicken Sie im Bereich `konfigurierte IP` auf den Button `Eine Einschränkung hinzufügen`{.action}.
+Um den Zugang zu Ihrem OVHcloud Kundencenter für eine oder mehrere IP-Adressen zu sperren, klicken Sie im Bereich `Konfigurierte IP` auf den Button `Eine Einschränkung hinzufügen`{.action}.
 
 ![Add Deny rule](images/ip9.png){.thumbnail}
 
-Geben Sie im nächsten Fenster die öffentliche IP-Adresse ein, die Sie im `IP`{.action} Feld blockieren möchten. Setzen Sie einen Haken im Feld `Alarm`{.action}, wenn Sie über die Anmeldeversuche über diese IP-Adresse per E-Mail benachrichtigt werden möchten. Gehen Sie dann zur `Regel`{.action} über den Status `abgelehnt`{.action} .
+Geben Sie im neuen Fenster in `IP`{.action} die öffentliche IP-Adresse ein, die Sie blockieren möchten. Setzen Sie einen Haken im Feld `Alarm`{.action}, wenn Sie per E-Mail über Verbindungsversuche über diese IP-Adresse informiert werden möchten, und setzen Sie dann die `Regel`{.action} auf den Status `Abgelehnt`{.action}.
 
 Klicken Sie auf `Weiter`{.action}, überprüfen Sie die IP-Adresse und die Regel, bevor Sie auf `Bestätigen`{.action} klicken.
 
 ![Add Deny rule](images/ip10.png){.thumbnail}
 
-Die Regel sollte dann im Bereich `konfigurierte IP` angezeigt werden.
+Die Regel sollte dann im Bereich `Konfigurierte IP`{.action} angezeigt werden.
 
 ![Add Deny rule](images/ip11.png){.thumbnail}
 
@@ -146,11 +146,11 @@ Die Regel sollte dann im Bereich `konfigurierte IP` angezeigt werden.
 > **Bevor** Sie mit den in diesem Schritt beschriebenen Aktionen fortfahren, wiederholen Sie den Vorgang für alle anderen IP-Adressen, deren Zugriff auf Ihr OVHcloud Kundencenter Sie blockieren möchten.
 >
 
-Nachdem alle öffentlichen IP-Adressen in der `konfigurierte IP` angegeben sind, geben Sie in der Rubrik `Standardregeln` die Regel für den Status `Autorisiert`{.action} ein. Setzen Sie ein Häkchen bei `Alarm`{.action}, wenn Sie per E-Mail über die Login-Versuche informiert werden möchten, und klicken Sie dann auf `Bestätigen`{.action}.
+Nachdem Sie **alle** abzulehnenden IP-Adressen in der Rubrik `Konfigurierte IP`{.action} angegeben haben, klicken Sie im Bereich `Standardregel`{.action} auf `Autorisiert`{.action}. Haken Sie `Alarm`{.action} an, wenn Sie per E-Mail über die Login-Versuche informiert werden möchten, und klicken Sie dann auf `Bestätigen`{.action}.
 
 ![Add Deny rule](images/ip12.png){.thumbnail}
 
-> Ab sofort **alle** können öffentliche IP-Adressen auf Ihr OVHcloud Kundencenter zugreifen, **mit Ausnahme von** auf die im Bereich `konfigurierte IP`.
+> Ab sofort können alle öffentlichen IP-Adressen **außer** die im Bereich `Konfigurierte IP`{.action} abgelehnten öffentlichen IP-Adressen auf Ihr OVHcloud Kundencenter zugreifen.
 
 ## Weiterführende Informationen
 

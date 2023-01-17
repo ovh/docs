@@ -174,7 +174,7 @@ sudo apt install fail2ban
 
 Sie können die Fail2ban-Konfigurationsdateien personalisieren, um Dienste, die dem öffentlichen Internet ausgesetzt sind, vor wiederholten Verbindungsversuchen zu schützen.
 
-Wie von Fail2ban empofohlen, erstellen Sie eine lokale Konfigurationsdatei für Ihre Dienste, indem Sie die Datei "jail.conf" kopieren:
+Wie von Fail2ban empfohlen, erstellen Sie eine lokale Konfigurationsdatei für Ihre Dienste, indem Sie die Datei "jail.conf" kopieren:
 
 ```bash
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
@@ -229,13 +229,13 @@ Starten Sie den Dienst neu, um sicherzustellen, dass er mit den individualisiert
 sudo service fail2ban restart
 ```
 
-Fail2ban verfügt über zahlreiche Einstellungen und Filter für die Indvidualisierung sowie vordefinierte Optionen, zum Beispiel wenn Sie einem Nginx Webserver eine zusätzliche Sicherheitsebene hinzufügen möchten.
+Fail2ban verfügt über zahlreiche Einstellungen und Filter für die Individualisierung sowie vordefinierte Optionen, zum Beispiel wenn Sie einem Nginx Webserver eine zusätzliche Sicherheitsebene hinzufügen möchten.
 
 Weitere Informationen und Empfehlungen zu Fail2ban finden Sie in der [offiziellen Dokumentation](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} dieses Tools.
 
 ### Konfiguration der OVHcloud Network Firewall
 
-Bei OVHcloud Diensten beseteht die Möglichkeit, am Eingangspunkt der Infrastruktur die so genannte Network Firewall zu aktivieren. Eine korrekte Konfiguration dieser Firewall ermöglicht es, Verbindungen zu blockieren, bevor diese überhaupt auf Ihrem Server ankommen.
+Bei OVHcloud Diensten besteht die Möglichkeit, am Eingangspunkt der Infrastruktur die so genannte Network Firewall zu aktivieren. Eine korrekte Konfiguration dieser Firewall ermöglicht es, Verbindungen zu blockieren, bevor diese überhaupt auf Ihrem Server ankommen.
 
 Wenn Sie die OVHcloud Network Firewall aktivieren möchten, folgen Sie [dieser Anleitung](../../dedicated/firewall-network/).
 

@@ -1,12 +1,12 @@
 ---
-title: "Tutoriel - Installation et configuration de Cecil"
+title: "Tutoriel - Installation et configuration de Cecil, un générateur de sites statiques (SSG) en PHP"
 slug: install-configure-cecil
-excerpt: "Découvrez comment installer et configurer Cecil pour administrer vos pages web statiques"
+excerpt: "Découvrez comment Cecil vous permet de créer votre site statique à l'aide d'un moteur de template moderne (Jamstack)"
 section: 'Tutoriels'
 order: 04
 ---
 
-**Dernière mise à jour le 12/01/2023**
+**Dernière mise à jour le 16/01/2023**
 
 ## Objectif
 
@@ -14,7 +14,7 @@ Ce tutoriel vous explique comment installer et configurer [Cecil](https://cecil.
 
 Un site web composé essentiellement de pages web statiques garantit un meilleur temps de chargement pour vos visiteurs et une plus grande sécurité. Sans contenu dynamique, vos pages sont plus robustes face aux attaques informatiques. La génération d’un site statique permet de disposer d’une liberté plus grande pour créer le site web de votre choix. Vous gagnerez également du temps puisque vous n’aurez pas à partir de zéro.
 
-**Découvrez comment installer et configurer Cecil pour administrer vos pages web statiques.**
+**Découvrez comment Cecil vous permet de créer votre site statique à l'aide d'un moteur de template moderne (Jamstack).**
 
 ## Prérequis
 

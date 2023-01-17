@@ -28,7 +28,7 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 >
 > **Sonderfälle**
 >
-> - Hinweis zum Start 10M Hosting: Dieses muss zuerst aktiviert werden, um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) durchführen, indem Sie den betreffenden Domainnamn aufrufen.
+> - Hinweis zum Start 10M Hosting: Dieses muss zuerst aktiviert werden, um einen E-Mail-Account zu erstellen. Sie können diese Operation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) durchführen, indem Sie den betreffenden Domainnamen aufrufen.
 > - Bei einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) müssen Sie den zugehörigen MX Plan aktivieren, bevor Sie mit dieser Anleitung fortfahren. Lesen Sie hierzu unsere Anleitung "[Die in Ihrem Webhosting enthaltenen E-Mail-Accounts aktivieren](https://docs.ovh.com/de/hosting/webhosting-email-aktivieren/)".
 
 ## In der praktischen Anwendung <a name="instructions"></a>
