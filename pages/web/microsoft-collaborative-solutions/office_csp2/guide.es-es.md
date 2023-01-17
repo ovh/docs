@@ -21,7 +21,7 @@ Office 365 Reseller (CSP2) es un servicio que permite disfrutar de diferentes ti
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- Tener un ID de [cliente](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) MPN (ID de red de Microsoft Partner). 
+- Tener un  [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier). 
 - Estar inscrito en el programa CSP (Cloud Solution Provider) de Microsoft como revendedor indirecto en la región en la que ejerza su actividad (p. ej.: "UE" para Europa)
 
 > [!warning]
