@@ -26,7 +26,7 @@ Office 365 Reseller (CSP2) è un servizio che ti permette di usufruire di divers
 
 > [!warning]
 >
-> Dal 01/07/2022, tutti i servizi Office 365 rivenditori (CSP2) che non disporranno di un ID MPN iscritto al programma "CSP Reseller indiretto" saranno disattivati da Microsoft.
+> Dal 01/07/2022, tutti i servizi Office 365 rivenditori (CSP2) che non dispongono di un MPN ID iscritto al programma "CSP Reseller indiretto" sono disattivati da Microsoft.
 >
 > Avere un MPN ID è obbligatorio per ogni nuova sottoscrizione
 >
