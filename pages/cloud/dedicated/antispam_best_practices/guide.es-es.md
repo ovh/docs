@@ -10,7 +10,7 @@ order : 04
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 14/12/2022**
+**Última actualización: 16/01/2023**
 
 ## Objetivo
 
@@ -71,9 +71,11 @@ Una vez resuelto el problema, puede desbloquear la dirección IP realizando las 
 
 En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action}.
 
-Una ventana emergente le indica la IP o el servicio bloqueado por spam.
+En el marco amarillo dedicado a las alertas, haga clic en la flecha desplegable `Ver todas mis alertas`{.action} para mostrar todas las alertas en su o sus direcciones IP.
 
-![Alerta antispam](images/alertantispam.png){.thumbnail}
+Si una de sus direcciones IP está afectada por una alerta, la información se mostrará justo debajo:
+
+![Alerta antispam](images/alertblockedip.png){.thumbnail}
 
 En la sección "Mis direcciones IP públicas y servicios asociados", haga clic en el botón `...`{.action} situado junto a la IP o el servicio correspondiente y seleccione `Antispam`{.action}.
 

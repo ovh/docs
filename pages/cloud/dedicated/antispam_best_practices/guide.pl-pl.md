@@ -10,7 +10,7 @@ order: 04
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 14-12-2022**
+**Ostatnia aktualizacja z dnia 16-01-2023**
 
 ## Wprowadzenie
 
@@ -72,9 +72,11 @@ Po rozwiązaniu problemu możesz odblokować Destination IP wykonując następuj
 
 W [Panelu klienta OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `IP`{.action}.
 
-Pojawi się komunikat adresu IP lub usługi zablokowanej ze względu na SPAM.
+W żółtym ramce dla alertów kliknij rozwijaną strzałkę `Wyświetl wszystkie moje alerty`{.action}, aby wyświetlić wszystkie alerty na Twoim adresie IP.
 
-![Alert przeciw spamie](images/alertantispam.png){.thumbnail}
+Jeśli jeden z Twoich adresów IP dotyczy alertu, informacje zostaną wyświetlone poniżej:
+
+![Alert przeciw spamie](images/alertblockedip.png){.thumbnail}
 
 W sekcji "Moje publiczne adresy IP i powiązane usługi" kliknij przycisk `...`{.action} obok IP lub powiązanej z nim usługi i wybierz opcję `Antyspam`{.action}.
 

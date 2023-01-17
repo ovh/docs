@@ -10,7 +10,7 @@ order: 04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 14.12.2022**
+**Letzte Aktualisierung am 16.01.2023**
 
 ## Ziel
 
@@ -72,9 +72,11 @@ Wenn das Problem gelöst ist, können Sie Ihre IP-Adresse entsperren, indem Sie 
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `IPs`{.action}.
 
-Eine Warnmeldung zeigt Ihnen die aufgrund von SPAM blockierte IP oder Dienstleistung an.
+Klicken Sie im gelben Hinweisfeld auf den Drop-down-Pfeil `Alle Benachrichtigungen anzeigen`{.action}, um alle Alarme bezüglich Ihrer IP-Adresse(n) anzuzeigen.
 
-![Spam-Alarm](images/alertantispam.png){.thumbnail}
+Wenn eine Ihrer IP-Adressen von einem Alarm betroffen ist, werden die Informationen direkt unterhalb angezeigt:
+
+![Spam-Alarm](images/alertblockedip.png){.thumbnail}
 
 Im Bereich "Meine öffentlichen IP-Adressen und dazugehörigen Dienste" klicken Sie auf den Button `...`{.action} neben der IP oder dem entsprechenden Dienst und wählen Sie `Antispam`{.action}.
 
