@@ -135,7 +135,7 @@ Below is a non-exhaustive list of configuration guides for email clients using:
 >>
 >> Configuring an Exchange account on **Windows**:<br><br>
 >> - [Mail on Windows 10](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-mail-configuration-windows-10/) (included with Windows)<br>
->> - [Outlook](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-windows/)<br>
+>> - [Outlook](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/configuration-outlook-2016/)<br>
 >> - [Thunderbird](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-configuration-thunderbird/) (free)<br><br>
 >> Configuring an Exchange account on **macOS**:<br><br>
 >> - [Mail](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange-configuration-mail-macos/) (included with macOS)<br>
