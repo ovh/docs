@@ -15,11 +15,13 @@ section: 'Fonctionnalités VMware vSphere'
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir déployé un [datastore vSan](https://docs.ovh.com/fr/private-cloud/vmware-vsan/)
+- Avoir déployé un [cluster vSan](https://docs.ovh.com/fr/private-cloud/vmware-vsan/)
 
 ## Présentation
 
 Régulièrement le format des disques vSAN est amélioré avec de nouvelles versions. nous allons voir comment mettre à jour le format des disques vSAN.
+
+Il nécessaire de mettre à jour la version du format des disques vSAN pour avoir de nouvelles fonctionnalités ou garder un compatibilité avec les versions de votre cluster VMware comme indiqué sur ce lien [Understanding vSAN on-disk format versions and compatibility (2148493)](https://kb.vmware.com/s/article/2148493).
 
 ## En pratique
 

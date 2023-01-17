@@ -15,11 +15,13 @@ section: 'VMware vSphere features'
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- A deployed [vSan Datastore](https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/)
+- A deployed [vSan cluster](https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/)
 
 ## Overview
 
 vSAN disks are regularly upgraded with new versions. we will look at how to update the vSAN disk format.
+
+You need to update the vSAN disk format version to have new features or to maintain compatibility with versions of your VMware cluster as described in this link [Understanding vSAN on-disk format versions and compatibility (2148493)](https://kb.vmware.com/s/article/2148493).
 
 ## Instructions
 
