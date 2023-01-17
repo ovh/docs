@@ -7,11 +7,9 @@ section: 'VMware vSphere features'
 
 **Last updated 17th January 2023**
 
-**This guide will show you how to update the format of your vSAN disks** 
-
 ## Objective
 
-The aim of this guide is to explain how vSAN fault domains work and how they are implemented.
+**This guide will show you how to update the format of your vSAN disks** 
 
 ## Requirements
 
