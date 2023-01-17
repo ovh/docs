@@ -6,7 +6,7 @@ section: Bring Your Own IP
 order: 1
 ---
 
-**Dernière mise à jour le 23/11/2022**
+**Dernière mise à jour le 17/01/2023**
 
 ## Objectif
 
@@ -137,7 +137,7 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 
 > [!warning]
-> Si votre bloc IP importé est déjà annoncé sur Internet à partir d’autre sites qu’OVHcloud lors de l’utilisation du service BYOIP (multihoming), vous risquez d’éventuelles perte de paquet ouautres problèmes de routage. Nous ne serons par conséquent pas en mesure de vous garantir la connectivité aux services OVHcloud avec votre bloc IP importé.
+> Si votre bloc IP importé est déjà annoncé sur Internet à partir d’autre sites qu’OVHcloud lors de l’utilisation du service BYOIP (multihoming), vous risquez d’éventuelles pertes de paquets ou d'autres difficultés de routage. Nous ne serons par conséquent pas en mesure de vous garantir la connectivité aux services OVHcloud avec votre bloc IP importé.
 
 ## En pratique
 
@@ -187,7 +187,8 @@ Non, une plage d'IP doit être utilisée dans un seul campus.
 
 ### Est-il possible de changer le campus d'une adresse IP importée ?
 
-Il est possible de changer le campus d'un bloc IP uniquement si vous avez choisi un campus français au moment de la commande. Dans ce cas, vous pourrez changer votre bloc IP de campus uniquement si le service destination est situé dans un campus français (Roubaix, Gravelines ou Strasbourg). Pour les autres campus, il vous faudrait libérer le produit et le racheter (pour l'instant c'est la seule façon de procéder).
+Il est possible de changer le campus d'un bloc IP uniquement si vous avez choisi un campus français au moment de la commande. Dans ce cas, vous pourrez changer votre bloc IP de campus uniquement si le service destination est situé dans un campus français (Roubaix, Gravelines ou Strasbourg).<br>
+Pour les autres campus, il vous faudrait libérer le produit et le racheter. Il s'agit de la seule méthode valide pour le moment.
 
 ### Comment savoir quels serveurs DNS OVHcloud géreront la zone ARPA de mon IP importée ?
 
