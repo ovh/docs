@@ -35,7 +35,7 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 
 First, the tree structure of your folder should be as follows.
 
-![image](images/tree_flask-yolov5_service.png){.thumbnail}
+![image](images/tree_yolov5_web_service.png){.thumbnail}
 
 -   You have to create the folder named `models_train` and this is where you can store the weights generated after your trainings. You are free to put as many weight files as you want in the `models_train` folder.
 
