@@ -26,7 +26,7 @@ O Office 365 Revendedores (CSP2) é um serviço que lhe permite beneficiar de di
 
 > [!warning]
 >
-> A partir de 01/07/2022, todos os serviços Office 365 revendedores (CSP2) que não disponham de um MPN ID inscrito no programa "CSP revendedor indireto" serão desativados pela Microsoft.
+> A partir de 01/07/2022, todos os serviços Office 365 revendedores (CSP2) que não dispõem de um MPN ID inscrito no programa "CSP revendedor indireto" são desativados pela Microsoft.
 >
 > Para qualquer nova subscrição, é agora obrigatório dispor de um MPN ID.
 >
