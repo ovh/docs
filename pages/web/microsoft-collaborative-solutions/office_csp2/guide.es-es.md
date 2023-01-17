@@ -31,7 +31,7 @@ Office 365 Reseller (CSP2) es un servicio que permite disfrutar de diferentes ti
 > Ahora es obligatorio disponer de un MPN ID para nuevas contrataciones.
 >
 
-Si todavía no tiene un ID MPN, puede crear uno (si cumple los requisitos de Microsoft) siguiendo la documentación oficial de Microsoft ["¿Qué es el Programa de Partner de Microsoft? "](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
+Si todavía no tiene un MPN ID, puede crear uno (si cumple los requisitos de Microsoft) siguiendo la documentación oficial de Microsoft ["¿Qué es el Programa de Partner de Microsoft? "](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
 
 Para inscribirse como revendedor indirecto, consulte la documentación de Microsoft ["Suscribirse al programa proveedor de soluciones cloud"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
 
