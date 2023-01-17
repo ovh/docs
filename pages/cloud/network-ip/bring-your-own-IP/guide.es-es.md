@@ -8,7 +8,7 @@ section: Bring Your Own IP
 order: 1
 ---
 
-**Last updated 23rd November 2022**
+**Last updated 17th January 2023**
 
 ## Objective
 
@@ -140,6 +140,9 @@ For more information on route objects, please refer to your RIR’s documentatio
 - RIPE - [Managing Route Objects](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr)
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 
+> [!warning]
+> If your imported IP block is already advertized on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
+
 ## Instructions
 
 ### How to use the product
@@ -188,7 +191,8 @@ No, an IP range must be used in only one campus.
 
 ### Is changing the campus of an imported IP possible?
 
-Not at the moment, to achieve this you would have to release the product and purchase it again (this is the only option for now).
+It is possible to change the campus of an IP block only if you have chosen a French campus at the time of the order. In this case, you can change the campus of your IP block only if the destination service is located on a French campus (Roubaix, Gravelines or Strasbourg).<br>
+For other campuses, you would have to release the product and redeem it (this is currently the only valid method).
 
 ### How will I know which OVHcloud DNS servers will handle the ARPA zone for my imported IP?
 
