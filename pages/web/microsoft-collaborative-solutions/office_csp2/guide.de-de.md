@@ -22,7 +22,7 @@ Office 365 Reseller (CSP2) ist ein Dienst, mit dem Sie verschiedene Arten von Mi
 
 - Sie sind im OVHcloud [Kundencenter eingeloggt](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 - Sie verfügen über eine [MPN ID](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDe) 
-- Sie sind im CSP (Cloud Solutions Provider) Programm von Microsoft als indirekter Reseller in der Region angemeldet, in der Sie arbeiten (zum Beispiel: "EU"für Europa)
+- Sie sind im CSP (Cloud Solutions Provider) Programm von Microsoft als indirekter Reseller in der Region angemeldet, in der Sie arbeiten (zum Beispiel: "EU" für Europa)
 
 > [!warning]
 >
@@ -33,7 +33,7 @@ Office 365 Reseller (CSP2) ist ein Dienst, mit dem Sie verschiedene Arten von Mi
 
 Wenn Sie noch nicht über eine MPN ID verfügen, können Sie eine MPN ID erstellen (wenn Sie die Bedingungen von Microsoft erfüllen können), [indem Sie die offizielle Dokumentation von Microsoft befolgen."Was ist das Microsoft Cloud Partner Program? "](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
 
-Um sich dann als indirekter Reseller anzumelden, lesen Sie die Microsoft Dokumentation "Sich [beim Cloud Anbieter anmelden"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
+Um sich dann als indirekter Reseller anzumelden, lesen Sie die Microsoft Dokumentation ["Sich beim Cloud Anbieter anmelden"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
 
 Mit der MPN ID erhalten Sie ein Cashback zu den Abonnements, die Sie über das OVHcloud Kundencenter bestellen. Dieses Cashback unterliegt den von Microsoft festgelegten Regeln, abhängig von der Anzahl der von Ihnen erstellten Abonnements.
 
@@ -61,7 +61,7 @@ Um einen Office 365 Reseller Dienst zu bestellen, loggen Sie sich in Ihr [OVHclo
 ![office365](images/csp2-01.png){.thumbnail}
 
 > [!warning]
-> Bei lizenzierten Produkten ist es nicht möglich, einen Tenant Office *365* Reseller von einem identischen OVHcloud Kunden auf einen anderen zu wechseln. Es ist notwendig, das Abonnement für den ursprünglichen OVHcloud-Account zu beenden und diese Lizenz für den neuen OVHcloud-Account zu bestellen.
+> Bei lizenzierten Produkten ist es nicht möglich, einen *Tenant* Office 365 Reseller von einem identischen OVHcloud Kunden auf einen anderen zu wechseln. Es ist notwendig, das Abonnement für den ursprünglichen OVHcloud-Account zu beenden und diese Lizenz für den neuen OVHcloud-Account zu bestellen.
 > 
 ![office365](images/csp2-01.png){.thumbnail}
 

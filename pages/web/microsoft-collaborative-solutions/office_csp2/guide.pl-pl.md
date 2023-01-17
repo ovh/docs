@@ -31,7 +31,7 @@ Office 365 Resellerzy (CSP2) to usługa pozwalająca na korzystanie z różnych 
 > Posiadanie identyfikatora MPN jest już obowiązkowe w przypadku każdego nowego zamówienia.
 >
 
-Jeśli nie posiadasz jeszcze identyfikatora MPN, możesz utworzyć taki numer (jeśli możesz spełnić warunki Microsoft), postępując zgodnie z oficjalną dokumentacją Microsoft ["Co to jest Microsoft Cloud Partner Program? "](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
+Jeśli nie posiadasz jeszcze identyfikatora MPN, możesz utworzyć taki numer (jeśli możesz spełnić warunki Microsoft), postępując zgodnie z oficjalną dokumentacją Microsoft ["Co to jest Microsoft Cloud Partner Program?"](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
 
 Aby zarejestrować się jako pośrednik reseller, zapoznaj się z dokumentacją Microsoft ["Zapisywanie się do programu Dostawca rozwiązań Cloud"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
 
@@ -74,8 +74,8 @@ Pojawiają się następujące informacje:
 - **Nazwa wyświetlania usługi**: pozwala na personalizację nazwy wyświetlacza w Panelu klienta.
 - **Utworzony dnia**: wskazuje datę utworzenia usługi.
 - **Portal administracyjny Microsoft**: link do portalu Office pozwalający na zarządzanie subskrypcjami.
-- Hasło administratora *Tenant* Microsoft można zarządzać bezpośrednio w interfejsie Microsoft. Zapoznaj się [z dokumentacją Microsoft](https://support.microsoft.com/account-billing/reset-a-forgotten-microsoft-account-password-eff4f067-5042-c1a3-fe72-b04d60556c37).
-- Zarządzanie dodatkowymi domenami odbywa się również w interfejsie administracyjnym Microsoft. Zapoznaj [się z dokumentacją Microsoft](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
+- Hasło administratora *Tenant* Microsoft można zarządzać bezpośrednio w interfejsie Microsoft. Zapoznaj się z [dokumentacją Microsoft](https://support.microsoft.com/account-billing/reset-a-forgotten-microsoft-account-password-eff4f067-5042-c1a3-fe72-b04d60556c37).
+- Zarządzanie dodatkowymi domenami odbywa się również w interfejsie administracyjnym Microsoft. Zapoznaj się z [dokumentacją Microsoft](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
 
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
