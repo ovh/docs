@@ -64,10 +64,6 @@ We accept IP blocks from size /24 up to size /19. Below, is the number of /24 yo
 | /20 | 16 |
 | /19 | 32 |
 
-### Your IP range is not in use on the Internet <a name="notinuseontheinternet"></a>
-
-The range must not be announced or in use on the Internet (no announcement in terms of Border Gateway Protocol (BGP) on at least one public network).
-
 ### Your IP/AS have a clean reputation <a name="cleanipreputation"></a>
 
 We may refuse using IPs/AS with a bad reputation, and we reserve the right to stop announcing the IPs/AS if their reputation has a negative impact on OVHcloud's reputation.
@@ -138,6 +134,9 @@ For more information on route objects, please refer to your RIR’s documentatio
 - RIPE - [Managing Route Objects](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr)
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 
+> [!warning]
+> If your imported IP block is already advertized on the Internet from sites than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
+
 ## Instructions
 
 ### How to use the product
@@ -186,7 +185,7 @@ No, an IP range must be used in only one campus.
 
 ### Is changing the campus of an imported IP possible?
 
-Not at the moment, to achieve this you would have to release the product and purchase it again (this is the only option for now).
+It is possible to change the campus of an IP block only if you have chosen a French campus at the time of the order. In this case, you can change the campus of your IP block only if the destination service is located on a French campus (Roubaix, Gravelines or Strasbourg). For other campuses, you would have to release the product and redeem it (for now this is the only way to do this).
 
 ### How will I know which OVHcloud DNS servers will handle the ARPA zone for my imported IP?
 

@@ -64,10 +64,6 @@ Nous acceptons les blocs IP de tailles comprises entre /24 et /19. Vous trouvere
 | /20 | 16 |
 | /19 | 32 |
 
-### Avoir une plage d'IP non utilisée sur Internet <a name="haveaniprangenotinuseontheinternet"></a>
-
-La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annonce en terme de Border Gateway Protocol (BGP) sur au moins un réseau public).
-
 ### Avoir une plage d'IP ou numéro AS avec une réputation propre <a name="haveacleanipreputation"></a>
 
 Nous pouvons refuser l’utilisation d’adresses IP ou de numéros AS ayant une mauvaise réputation, et nous nous réservons le droit de ne plus les annoncer si leur réputation a un impact négatif sur la réputation d’OVHcloud.
@@ -140,6 +136,9 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 - RIPE - [Managing Route Objects](https://www.ripe.net/manage-ips-and-asns/db/support/managing-route-objects-in-the-irr)
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 
+> [!warning]
+> Si votre bloc IP importé est déjà annoncé sur Internet à partir d’autre sites qu’OVHcloud lors de l’utilisation du service BYOIP (multihoming), vous risquez d’éventuelles perte de paquet ouautres problèmes de routage. Nous ne serons par conséquent pas en mesure de vous garantir la connectivité aux services OVHcloud avec votre bloc IP importé.
+
 ## En pratique
 
 ### Comment utiliser les adresses IP
@@ -188,7 +187,7 @@ Non, une plage d'IP doit être utilisée dans un seul campus.
 
 ### Est-il possible de changer le campus d'une adresse IP importée ?
 
-Pas pour le moment. Pour y parvenir, il vous faudrait libérer le produit et le racheter (pour l'instant c'est la seule façon de procéder).
+Il est possible de changer le campus d'un bloc IP uniquement si vous avez choisi un campus français au moment de la commande. Dans ce cas, vous pourrez changer votre bloc IP de campus uniquement si le service destination est situé dans un campus français (Roubaix, Gravelines ou Strasbourg). Pour les autres campus, il vous faudrait libérer le produit et le racheter (pour l'instant c'est la seule façon de procéder).
 
 ### Comment savoir quels serveurs DNS OVHcloud géreront la zone ARPA de mon IP importée ?
 
