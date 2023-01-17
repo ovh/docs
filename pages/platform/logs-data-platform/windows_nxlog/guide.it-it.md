@@ -38,7 +38,7 @@ The configuration is pretty much straightforward. Here is the configuration file
 ```ApacheConf hl_lines="26 36 38"
  ## This is a sample configuration file. See the nxlog reference manual about the
  ## configuration options. It should be installed locally and is also available
- ## online at https://docs.nxlog.co/userguide/documentation.htmll
+ ## online at https://docs.nxlog.co/userguide/documentation.html
 
  ## Please set the ROOT to the folder your nxlog was installed into,
  ## otherwise it will not start.
