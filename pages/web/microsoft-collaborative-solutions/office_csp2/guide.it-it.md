@@ -10,7 +10,7 @@ order: 03
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 17/06/2022**
+**Ultimo aggiornamento: 17/01/2023**
 
 ## Obiettivo
 
@@ -21,18 +21,21 @@ Office 365 Reseller (CSP2) è un servizio che ti permette di usufruire di divers
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre di un MPN ID (Microsoft Partner Network IDentifier)
+- Disporre di un ID [MPN](https://learn.microsoft.com/partner-center/mpn-create-a-partner-center-account) (Microsoft Partner Network IDentifier) 
 - Essere iscritto al programma CSP (Cloud Solution Provider) di Microsoft come rivenditore indiretto nella regione in cui si esercita (ad esempio: "UE" per l’Europa)
 
 > [!warning]
 >
-> A partire dal 01/07/2022, tutti i servizi Office 365 rivenditori (CSP2) che non disporranno di un MPN ID iscritto al programma "CSP Reseller indiretto" saranno disattivati da Microsoft.
+> Dal 01/07/2022, tutti i servizi Office 365 rivenditori (CSP2) che non dispongono di un MPN ID iscritto al programma "CSP Reseller indiretto" sono disattivati da Microsoft.
 >
-> Avere un MPN ID è obbligatorio per ogni nuova sottoscrizione.
+> Avere un MPN ID è obbligatorio per ogni nuova sottoscrizione
 >
-Se non disponi ancora di un MPN ID, puoi crearne uno (se hai diritto alle condizioni Microsoft) seguendo la [documentazione ufficiale di Microsoft](https://docs.microsoft.com/it-it/partner-center/mpn-create-a-partner-center-account){.external}.
 
-Per iscriverti come reseller indiretto, consulta la documentazione ufficiale di Microsoft (https://docs.microsoft.com/it-it/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
+Se non disponi ancora di un ID MPN, puoi crearne uno (se hai diritto alle condizioni Microsoft) seguendo la documentazione ufficiale di Microsoft ["Cos'è il Microsoft Cloud Partner Program?"](https://docs.microsoft.com/partner-center/mpn-create-a-partner-center-account){.external}.
+
+Per iscriverti come rivenditore indiretto, ti invitiamo a consultare la documentazione Microsoft ["Iscriviti al programma Fornitori di soluzioni Cloud"](https://docs.microsoft.com/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
+
+Il MPN ID ti permetterà di ottenere un cashback sugli abbonamenti che ordinerai tramite lo Spazio Cliente OVHcloud. Il cashback è soggetto a regole definite da Microsoft, in funzione dei volumi di abbonamenti che genererai.
 
 > [!success]
 >
@@ -45,39 +48,22 @@ Per iscriverti come reseller indiretto, consulta la documentazione ufficiale di 
 
 Per ordinare un servizio Office 365 Reseller, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona `Sunrise`{.action} nel pannello superiore e clicca su `Office 365 Reseller`{.action}.
 
-- Inserisci il tuo MPN ID creato precedentemente con Microsoft
-- Inserisci le informazioni di contatto del cliente finale per definire il gestore del gruppo di licenze (Tenant) che stai per creare.
-
-> [!primary]
->
-> Puoi anche definire un **sottodominio personalizzato** durante la creazione di una nuova piattaforma selezionando la casella corrispondente (con riserva dei nomi disponibili).
->
-
-- Nella lista qui sotto, indica le licenze che vuoi aggiungere al tuo gruppo.
-- Clicca su `Ordina`{.action} per completare l'ordine.
+- *Facoltativo*: puoi definire un **sottodominio personalizzato** al momento della creazione di una nuova piattaforma selezionando la casella all'uopo prevista (con riserva dei nomi disponibili).
+- Inserisci il tuo ID MPN creato precedentemente su Microsoft.
+- Completa le informazioni di contatto del cliente finale, ti verrà richiesto per definire il gestore del gruppo di licenze (*Tenant*) che stai per creare.
+- Nella lista qui sotto, aggiungi le licenze che vuoi integrare al tuo gruppo.
+- Clicca su `Ordina`{.action} per finalizzare
 
 > [!warning]
->
-> Verifica la validità dell'indirizzo email inserito durante la creazione del tuo gruppo di licenze, in quanto riceverà le credenziali di accesso alla piattaforma Microsoft.
+> Verifica la validità dell'indirizzo email inserito durante la creazione del tuo gruppo di licenze, in quanto verrà utilizzato per ricevere le credenziali di accesso per la piattaforma Microsoft.
 >
 
 ![office365](images/csp2-01.png){.thumbnail}
 
-#### Caso particolare delle deleghe
-
-- Se disponi già di un servizio Office 365 CSP2 presso Microsoft, hai la possibilità di delegare l'amministrazione a OVHcloud. È possibile aggiungere abbonamenti supplementari direttamente dallo Spazio Cliente OVHcloud. Al momento dell'ordine di un nuovo gruppo di licenze, scegli `Delega di una piattaforma creata precedentemente da Microsoft` e precisa il **Tenant Office 365 esistente*** che puoi trovare sul tuo portale Microsoft, così come il tuo ID MPN.
-
-- Se per il tuo Office 365 Reseller utilizzi già un provider diverso da OVHcloud, è possibile delegare la gestione a OVHcloud, ma prima rompere il legame con il tuo precedente provider.
-
-- Per completare l'apparizione dello startup nello Spazio Cliente OVHcloud sarà necessaria una doppia conferma.
-
-- Una volta che le licenze sono sottoscritte sul tuo delegato, queste saranno disponibili sul tuo [portale di amministrazione Microsoft](https://portal.office.com/Admin/Default.aspx){.external}. In questo caso, è necessario sostituire le vecchie licenze nel tuo [portale di amministrazione Microsoft](https://portal.office.com/Admin/Default.aspx){.external} con le licenze OVHcloud e disattivare le vecchie licenze per non continuare a pagarle in doppio.
-
-- Assicurati che, se hai licenze non disponibili per l'acquisto da OVHcloud, puoi mantenere queste licenze attive presso Microsoft.
-
 > [!warning]
-> Dal momento che si tratta di prodotti su licenza, non è possibile trasferire un Office 365 Reseller da un identificativo cliente OVHcloud a un altro.
->
+> Nel caso di prodotti in licenza, non è possibile trasferire un *Tenant* Office 365 rivenditori da un identificativo cliente OVHcloud a un altro. È necessario sottoscrivere l'abbonamento sull'account OVHcloud originale e sottoscrivere questo tipo di licenza sul nuovo account OVHcloud.
+
+![office365](images/csp2-01.png){.thumbnail}
 
 ### Gestisci il tuo servizio Office 365 Reseller
 
@@ -91,25 +77,10 @@ Le seguenti informazioni sono fornite:
 - **Nome visualizzato del servizio**: permette di personalizzare il nome visualizzato del servizio nello Spazio Cliente.
 - **Creato il**: indica la data di creazione del servizio.
 - **Portale di amministrazione Microsoft**: link del portale Office che permette di amministrare i tuoi abbonamenti.
-- **Reimposta la password amministratore**: permette di modificare la password di connessione al portale di amministrazione Microsoft.
+- La password amministratore del tuo *Tenente* Microsoft viene gestita direttamente dall'interfaccia di amministrazione Microsoft. Consulta [la documentazione di Microsoft](https://support.microsoft.com/account-billing/reset-a-forgotten-microsoft-account-password-eff4f067-5042-c1a3-fe72-b04d60556c37).
+- Puoi gestire domini aggiuntivi anche dall'interfaccia di amministrazione di Microsoft. Consulta [la documentazione di Microsoft](https://support.microsoft.com/office/connect-your-domain-to-office-365-cd74b4fa-6d34-4669-9937-ed178ac84515).
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
-
-### Configura automaticamente un dominio ospitato in OVHcloud
-
-OVHcloud mette a disposizione uno strumento che facilita la configurazione della zona DNS del tuo dominio. È possibile configurare automaticamente i domini che utilizzano la zona DNS OVHcloud per consentire loro di funzionare con queste soluzioni:
-
-- Exchange Online;
-- Skype;
-- Intune
-
-Per effettuare questa operazione, seleziona il dominio dal menu a tendina e scegli uno o più servizi. A questo punto creeremo i record DNS adeguati nella zona DNS OVHcloud del dominio.
-
-> [!warning]
-> Per il corretto funzionamento della configurazione è necessario assicurarsi che i server DNS OVHcloud siano utilizzati correttamente per i domini interessati. Consulta la guida [Modificare i server DNS di un dominio OVHcloud](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/).
->
-
-![office365](images/sunrise_office365_CSP2_automatic_domain_configuration.png){.thumbnail}
 
 ### Gestisci i tuoi abbonamenti
 
@@ -122,11 +93,11 @@ La gestione dei tuoi abbonamenti ti permette di aumentare o annullare le licenze
 - **Data di creazione**: indica la data di creazione dell'abbonamento al tipo di licenza selezionato.
 - **Ultimo aggiornamento**: indica la data dell'ultimo aggiornamento (ad esempio l'aggiunta di una licenza) dell'abbonamento.
 
-`L'icona a forma di matita` permette di modificare il numero totale di licenze dell'abbonamento. `L'icona a forma di cestino` permette di rescindere l'abbonamento e tutte le sue licenze.
+L'icona <i class="icons-pen"></i> permette di modificare il numero totale di licenze dell'abbonamento. L'icona <i class="icons-bin"></i>  permette di rescindere l'abbonamento e tutte le sue licenze.
 
 > [!primary]
 >
-> Le licenze Office 365 Education sono vincolate alle regole definite nelle Condizioni Particolari di utilizzo fornite da Microsoft, Questi documenti ufficiali sono disponibili in base alla lingua e alla regione [qui](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&Keyword=AcademicQualEdUserDef){.external}.
+> Le licenze Office 365 Education sono vincolate alle regole definite nelle Condizioni Particolari di utilizzo fornite da Microsoft, Questi documenti ufficiali sono disponibili in base alla lingua e alla regione [qui](https://www.microsoft.com/licensing/docs){.external}.
 >
 
 ![office365](images/sunrise_office365_CSP2_Subscribers.png){.thumbnail}
