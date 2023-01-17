@@ -1,6 +1,6 @@
 ---
 title: 'Mise à jour du format des disques vSAN'
-slug: vmware-vsan-disk-format-upgrade
+slug: vsan-disk-format-upgrade
 excerpt: 'Découvrez comment mettre à jour le format des disques d'un vSAN'
 section: 'Fonctionnalités VMware vSphere'
 ---
