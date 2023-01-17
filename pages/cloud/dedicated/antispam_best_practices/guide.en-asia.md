@@ -68,7 +68,7 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and click on `IP`{.action}.
 
-In the yellow pop-up window for IP alerts, click on the "View all alerts" drop-down arrow to view all alerts on your IP(s).
+In the yellow window for IP alerts, click on the `View all alerts`{.action} drop-down arrow to view all alerts on your IP(s).
 
 If you have an alert on any your IP(s), the information will be displayed right underneath:
 
