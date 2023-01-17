@@ -43,7 +43,7 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 
 > [!primary]
 >
-> Network Firewall schützt die IP-Adressen, die mit einer Maschine verbunden sind. Daher ist es notwendig, jede IP-Adresse einzeln zu konfigurieren, eine globale Serverkonfiguration ist nicht möglich.
+> Die Network Firewall schützt IP-Adressen, die mit einem Server verbunden sind. Daher ist es notwendig, jede IP-Adresse einzeln zu konfigurieren; eine globale Serverkonfiguration ist nicht möglich.
 > 
 
 Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `IP`{.action}.
@@ -97,13 +97,13 @@ Um eine Regel hinzuzufügen, klicken Sie rechts auf die Schaltfläche `Eine Rege
 
 Legen Sie dann für jede Regel folgende Einstellungen fest:
 
-- die Priorität (von 0 bis 19, wobei die Regel mit dem Wert 0 als erste Regel angewendet wird, danach in aufsteigender Reihenfolge)
-- die auszuführende Aktion: (`Erlauben`{.action} oder `Verbieten`{.action})
-- das Protokoll
-- eine IP-Adresse (optional)
-- den Quell-Port (nur bei TCP)
-- den Ziel-Port (nur bei TCP)
-- die TCP-Optionen (nur bei TCP)
+- Die Priorität (von 0 bis 19, wobei die Regel mit dem Wert 0 als erste Regel angewendet wird, danach in aufsteigender Reihenfolge)
+- Die auszuführende Aktion (`Erlauben`{.action} oder `Verbieten`{.action})
+- Das Protokoll
+- Dine IP-Adresse (optional)
+- Den Quell-Port (nur bei TCP)
+- Den Ziel-Port (nur bei TCP)
+- Die TCP-Optionen (nur bei TCP)
 
 
 ![Details zum Hinzufügen einer Regel](images/ajoutregle4.png){.thumbnail}
@@ -153,7 +153,7 @@ Bitte beachten Sie, dass die Network Firewall nicht erstellt oder aktiviert sein
 ### Armor Firewall konfigurieren (Game Firewall)
 
 > [!primary]
-> Die Armor Firewall ist standardmäßig mit bestimmten Regeln vorkonfiguriert, die OVHcloud für die gängigsten Spiele festgelegt hat. Für Kunden, die über einen dedizierten Game Server verfügen, erlauben wir Ihnen jedoch, einen Schritt weiter zu gehen und auch Regeln für Ports zu konfigurieren.
+> Die Armor Firewall ist mit bestimmten Regeln vorkonfiguriert, die OVHcloud für die gängigsten Spiele festgelegt hat. Für Kunden, die über einen dedizierten Game Server verfügen, erlauben wir Ihnen jedoch, einen Schritt weiter zu gehen und auch Regeln für Ports zu konfigurieren.
 >
 
 Um die Regeln Ihrer Ports in Armor zu konfigurieren müssen Sie sich zuerst in Ihrem OVHcloud Kundencenter einloggen.<br>
@@ -167,7 +167,7 @@ Sie können bis zu **30 Regeln für jede IP-Adresse** festlegen.
 
 ![configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
 
-Aktivieren Sie die Ports nach Bedarf auf dem folgenden Bildschirm und klicken Sie auf `Bestätigen`{.action}, wenn Sie Ihre Regeln hinzugefügt haben. Die Armor Firewall wurde nun erfolgreich konfiguriert.
+Aktivieren Sie die Ports nach Bedarf auf der folgenden Seite und klicken Sie auf `Bestätigen`{.action}, wenn Sie Ihre Regeln hinzugefügt haben. Die Armor Firewall wurde nun erfolgreich konfiguriert.
 
 ## Weiterführende Informationen
 

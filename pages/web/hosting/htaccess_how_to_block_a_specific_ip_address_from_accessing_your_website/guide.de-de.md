@@ -15,18 +15,18 @@ order: 01
 
 ## Ziel 
 
-Dieses Tutorial hilft Ihnen dabei, den Zugang zu Ihren Webseiten vor externen Netzwerken abzusichern sowie unbefugten Zugriff und DoS-Angriffe (Denial of Service) zu verhindern.
+Dieses Tutorial hilft Ihnen dabei, den Zugang zu Ihren Webseiten von externen Netzwerken abzusichern sowie unbefugten Zugriff und DoS-Angriffe (Denial of Service) zu verhindern.
 
-Sie können das mithilfe einer ".htaccess" Datei erreichen. Es handelt sich dabei um eine spezielle Textdatei, die vom Webserver (Apache) gelesen wird und es ermöglicht, bestimmte Regeln für ein Verzeichnis und alle seine Unterverzeichnisse festzulegen.
+Sie können das mithilfe einer ".htaccess" Datei erreichen. Es handelt sich dabei um eine spezielle Textdatei, die vom Webserver (Apache) gelesen wird und es ermöglicht, bestimmte Regeln für ein Verzeichnis und dessen Unterverzeichnisse festzulegen.
 
-Sie können mehrere ".htaccess" Dateien in [FTP Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings erstellen, jedoch nur **eine einzige** pro Verzeichnis oder Unterverzeichnis, um Konflikte zwischen verschiedenen ".htaccess" Dateien zu vermeiden.
+Sie können mehrere ".htaccess" Dateien in [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings erstellen, jedoch nur **eine einzige** pro Verzeichnis oder Unterverzeichnis, um Konflikte zwischen verschiedenen ".htaccess" Dateien zu vermeiden.
 
 **Diese Anleitung erklärt, wie Sie den Zugang zu Ihrer Seite für bestimmte IP-Adressen über eine ".htaccess" Datei blockieren.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
@@ -47,8 +47,8 @@ Sie können mehrere ".htaccess" Dateien in [FTP Bereich](https://docs.ovh.com/de
 ### Eine IP, einen IP-Bereich, eine Domain oder alle IPs eines Landes blockieren 
 
 Es sind mehrere Regeln verfügbar, um die Zugänge zu Ihrem Hosting über die ".htaccess" zu sperren.<br>
-Achten Sie auf die Syntax und die Blockierungseinstellungen, damit Sie sich nicht selbst vom Abruf Ihrer gehosteten Seiten und/oder Skripte aussperren.<br>
-Im Fehlerfall können Sie sich jederzeit in den [FTP Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings einloggen, um den Fehler zu korrigieren. 
+Achten Sie auf die Syntax und die Blockierungseinstellungen, damit Sie sich nicht selbst vom Aufruf Ihrer gehosteten Seiten und/oder Skripte aussperren.<br>
+Im Fehlerfall können Sie sich jederzeit in den [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings einloggen, um den Fehler zu korrigieren. 
 
 > [!primary]
 >
@@ -105,7 +105,7 @@ Um eine bestimmte IP-Adresse zu blockieren, tragen Sie einen der beiden folgende
 
 #### Einen IP-Bereich blockieren
 
-Um einen IP-Adressbereich zu blockieren, tragen Sie einen der beiden folgenden Codes in Ihrer Datei ".htaccess" ein:
+Um einen IP-Adressbereich zu blockieren, tragen Sie einen der beiden folgenden Codes in Ihrer ".htaccess" ein:
 
 > [!tabs]
 > Historische Syntax
@@ -124,7 +124,7 @@ Um einen IP-Adressbereich zu blockieren, tragen Sie einen der beiden folgenden C
 >> ```
 >>
 
-- **Beispiel**: Wenn Sie alle IP-Adressen in 192.168.x.x blockieren möchten, müssen Sie einen der folgenden Codes einfügen:
+- **Beispiel**: Wenn Sie alle IP-Adressen in 192.168.x.x blockieren möchten, tragen Sie einen der folgenden Codes ein:
 
 > [!tabs]
 > Historische Syntax
@@ -165,7 +165,7 @@ Um eine Domain zu blockieren, tragen Sie einen der folgenden Codes in Ihre ".hta
 >> ```
 >>
 
-- **Beispiel**: Wenn Sie die Domain domain.tld blockieren möchten, müssen Sie einen der folgenden Codes schreiben:
+- **Beispiel**: Wenn Sie "domain.tld" blockieren möchten, fügen Sie einen der folgenden Codes ein:
 
 > [!tabs]
 > Historische Syntax
@@ -236,13 +236,13 @@ Um alle IP-Adressen eines Landes zu blockieren, tragen Sie einen der folgenden C
 >> ```
 >>
 
-### Um nur einigen wenigen IPs, einem IP-Bereich oder allen IPs eines Landes zu erlauben
+### Um nur einige IPs, einen IP-Bereich oder alle IPs eines Landes zu erlauben
 
 Anstatt den Zugang für eine oder mehrere IPs zu beschränken und allen anderen Zugang zu Ihrem Hosting zu gewähren, können Sie den umgekehrten Schritt tun, indem Sie alle IPs blockieren und dann nur einer oder mehreren IPs Zugriff auf Ihren Dienst gewähren.
 
 #### Eine oder mehrere IPs erlauben
 
-Um nur einer IP den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der folgenden Codes in Ihrer ".htaccess" Datei ein:
+Um nur einer IP den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der folgenden Codes in Ihre ".htaccess" Datei ein:
 
 > [!tabs]
 > Historische Syntax
@@ -260,7 +260,7 @@ Um nur einer IP den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der f
 >> ```
 >>
 
-- **Beispiel**: Wenn Sie nur den IPs 192.168.1.2 und 192.168.1.3 den Zugriff auf Ihr Hosting erlauben möchten, müssen Sie einen der folgenden Codes verwenden:
+- **Beispiel**: Wenn Sie nur den IPs 192.168.1.2 und 192.168.1.3 den Zugriff auf Ihr Hosting erlauben möchten, verwenden Sie einen der folgenden Codes:
 
 > [!tabs]
 > Historische Syntax
@@ -281,7 +281,7 @@ Um nur einer IP den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der f
 
 #### Einen IP-Bereich erlauben
 
-Um einem IP-Bereich den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der folgenden Codes in Ihrer ".htaccess" Datei ein:
+Um einem IP-Bereich den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der folgenden Codes in Ihre ".htaccess" Datei ein:
 
 > [!tabs]
 > Historische Syntax
@@ -300,7 +300,7 @@ Um einem IP-Bereich den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen d
 >> ```
 >>
 
-- **Beispiel**: Wenn Sie nur dem IP-Bereich 192.168.1.x den Zugriff auf Ihr Hosting erlauben möchten, müssen Sie einen der folgenden Codes einfügen:
+- **Beispiel**: Wenn Sie nur dem IP-Bereich 192.168.1.x den Zugriff auf Ihr Hosting erlauben möchten, fügen Sie einen der folgenden Codes ein:
 
 > [!tabs]
 > Historische Syntax
@@ -321,7 +321,7 @@ Um einem IP-Bereich den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen d
 
 #### Alle IPs eines Landes erlauben
 
-Um allen IP-Adressen eines Landes den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der folgenden Codes in Ihrer ".htaccess" Datei ein:
+Um allen IP-Adressen eines Landes den Zugriff auf Ihren Dienst zu erlauben, tragen Sie einen der folgenden Codes in Ihre ".htaccess" Datei ein:
 
 > [!tabs]
 > Historische Syntax
@@ -366,7 +366,7 @@ Um allen IP-Adressen eines Landes den Zugriff auf Ihren Dienst zu erlauben, trag
 
 ### Weitere Aktionen mit ".htaccess"
 
-Abgesehen von der Zugriffssicherheit auf Ihr Hosting erlaubt die ".htaccess" Datei noch weitere Aktionen. Nachfolgend finden Sie drei weitere OVHcloud Tutorials zum Thema:
+Abgesehen von der Zugriffssicherheit auf Ihr Hosting erlaubt die ".htaccess" Datei noch weitere Aktionen. Nachfolgend finden Sie weitere OVHcloud Tutorials zum Thema:
 
 - [Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/)
 - [Fortgeschrittene Operationen mit .htaccess Dateien](https://docs.ovh.com/de/hosting/webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich/)

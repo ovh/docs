@@ -10,7 +10,7 @@ order: 01
 
 ## Objective
 
-The aim of this tutorial is to help you secure access to your websites from external networks, and prevent intrusions and DDoS attacks.
+The aim of this tutorial is to help you secure access to your websites from external networks, and prevent intrusions and DoS attacks.
 
 You can do this with a ".htaccess" file, a particular text file, that the web server (Apache) detects, and that allows you to define special rules for a directory and all of its subdirectories.
 
@@ -22,12 +22,12 @@ You can create multiple ".htaccess" files in [the FTP space](https://docs.ovh.co
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [`Go further`](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- You must have [OVHcloud shared hosting](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
 
 ## Instructions
 
@@ -37,14 +37,14 @@ You can create multiple ".htaccess" files in [the FTP space](https://docs.ovh.co
 >
 > The settings defined by a ".htaccess" file apply to the directory where it is installed and to all subdirectories.
 >
-> To edit (or create) these directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Accessing my storage space](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/).
+> To edit (or create) these directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/).
 >
 
-### Block an IP, a range of IPs, a domain or all the IPs of a Country
+### Block an IP, a range of IPs, a domain or all the IPs of a country
 
 Several rules are available to block access to your hosting plan via ".htaccess".<br>
-Be careful with the syntax and settings that you block to prevent blocking yourself from viewing your hosted sites and/or scripts.<br>
-In the event of an error, you can always log in to [the FTP space](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting to correct the situation.
+Be careful with the syntax and block settings to prevent blocking yourself from viewing your hosted sites and/or scripts.<br>
+In the event of an error, you can always log in to [the FTP space](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting to correct mistakes.
 
 > [!primary]
 >
@@ -140,7 +140,7 @@ To block an IP address range, insert one of the following two codes into your ".
 
 ### Block a domain
 
-Some domains can access your hosting via redirections or requests.
+Some domains might access your hosting via redirections or requests.
 
 To block a domain, insert one of the following two codes into your ".htaccess" file:
 
@@ -192,7 +192,7 @@ To block a domain, insert one of the following two codes into your ".htaccess" f
 > Several websites list the countries and their respective Country Codes, including [https://www.iban.com/country-codes](https://www.iban.com/country-codes){.external} (independent of OVHcloud).
 >
 
-To block all IPs in a country, insert one of the following two codes into your ".htaccess" file:
+To block all IPs of a country, insert one of the following two codes into your ".htaccess" file:
 
 > [!tabs]
 > Historical Syntax
@@ -211,7 +211,7 @@ To block all IPs in a country, insert one of the following two codes into your "
 >> ```
 >>
 
-- **Example**: If you want to block geolocated IP addresses in Fiji (FJ) and Greenland (GR), you will need to write one of the following two codes:
+- **Example**: If you want to block geolocated IP addresses from Fiji (FJ) and Greenland (GR), you will need to write one of the following two codes:
 
 > [!tabs]
 > Historical Syntax
@@ -231,7 +231,7 @@ To block all IPs in a country, insert one of the following two codes into your "
 >> ```
 >>
 
-### To authorise only a few IPs, a range of IPs or all the IPs of a country
+### To authorise selected IPs, a range of IPs or all the IPs of a country
 
 Rather than restricting access to one or more IPs and allowing others to access your hosting, you can do the opposite by blocking all IPs and then allowing only one or more IPs to access your service.
 
@@ -295,7 +295,7 @@ To authorise a range of IPs to access your service, insert one of the following 
 >> ```
 >>
 
-- **Example**: If you only want to authorise the 192.168.1.x IP range to access your hosting, you will need to write one of the following two codes:
+- **Example**: If you only want to authorise the IP range 192.168.1.x to access your hosting, you will need to write one of the following two codes:
 
 > [!tabs]
 > Historical Syntax
@@ -337,7 +337,7 @@ To authorise all IPs in a country to access your service, insert one of the foll
 >> ```
 >>
 
-- **Example**: If you wish to authorise only Fiji (FJ) and Greenland (GR) to access your accommodation, you will need to write one of the following two codes:
+- **Example**: If you wish to authorise only Fiji (FJ) and Greenland (GR) to access your hosting, you will need to write one of the following two codes:
 
 > [!tabs]
 > Historical Syntax
@@ -361,15 +361,15 @@ To authorise all IPs in a country to access your service, insert one of the foll
 
 ### Further actions with the ".htaccess" file
 
-Regardless of the security of general access to the hosting, the ".htaccess" file allows you to perform other actions. Below are three other OVHcloud tutorials on the subject:
+Besides general access security to the hosting, the ".htaccess" file allows you to perform other actions. Below are more OVHcloud tutorials on the subject:
 
 - [Protect your website’s administration interface via ".htaccess"](https://docs.ovh.com/ca/en/hosting/how_to_password_protect_a_directory_on_your_website/).
-- [Rewrite your URLs using mod_rewrite](https://docs.ovh.com/ca/en/hosting/htaccess_url_rewriting_using_mod_rewrite/).
-- [Perform other operations with the ".htaccess" file](https://docs.ovh.com/ca/en/hosting/what_else_can_you_do_with_the_htaccess_file/).
+- [Rewrite your URLs using mod_rewrite](https://docs.ovh.com/ca/en/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+- [Perform other operations with the ".htaccess" file](https://docs.ovh.com/ca/en/hosting/what_else_can_you_do_with_the_htaccess_file/)
 
-## Go further <a name=`go-further`></a>
+## Go further <a name=go-further></a>
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
