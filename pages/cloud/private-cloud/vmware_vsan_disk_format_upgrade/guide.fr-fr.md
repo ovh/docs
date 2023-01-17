@@ -9,7 +9,7 @@ section: 'Fonctionnalités VMware vSphere'
 
 ## Objectif
 
-*Ce guide vous montre comment mettre à jour le format de vos disques vSAN* 
+**Ce guide vous montre comment mettre à jour le format de vos disques vSAN** 
 
 ## Prérequis
 
