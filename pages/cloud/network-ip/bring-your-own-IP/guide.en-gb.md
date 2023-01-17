@@ -135,7 +135,7 @@ For more information on route objects, please refer to your RIR’s documentatio
 - ARIN - [Submitting Routing Information](https://www.arin.net/resources/manage/irr/#submitting-routing-information)
 
 > [!warning]
-> If your imported IP block is already advertized on the Internet from sites than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
+> If your imported IP block is already advertized on the Internet from sites other than OVHcloud (multihoming case), you risk packet loss or other routing issues. We will therefore not be able to guarantee connectivity to OVHcloud services with your imported IP block.
 
 ## Instructions
 
