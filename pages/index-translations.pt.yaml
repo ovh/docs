@@ -108,14 +108,22 @@ public-cloud-ai-and-machine-learning-ai-deploy-guides: AI Deploy - Guides
 public-cloud-ai-and-machine-learning-ai-deploy-tutorials: AI Deploy - Tutorials
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes (K8s)
-public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Primeiros passos
-public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Recursos técnicos
-public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Diagnóstico
-public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutoriais
-public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: Guias
-public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry
-public-cloud-containers-orchestration-managed-private-registry-getting-started: Primeiros passos
-public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutoriais
+public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
+public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Technical resources
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: User guides
+public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
+public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
+public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
+public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-gpu: GPU
+public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
+public-cloud-containers-orchestration-managed-kubernetes-k8s-serverless: Serverless
+public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
+public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (Harbor)
+public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
+public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-data-analytics: Data Analytics
 public-cloud-data-analytics-data-processing: Data Processing
 public-cloud-data-analytics-data-processing-concepts: Conceitos
