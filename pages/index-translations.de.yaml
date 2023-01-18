@@ -168,15 +168,16 @@ public-cloud-databases-m3-aggregator: M3 Aggregator
 public-cloud-databases-m3-aggregator-guides: M3 Aggregator - Guides
 public-cloud-databases-opensearch: OpenSearch
 public-cloud-databases-opensearch-guides: OpenSearch - Guides
-public-cloud-management: Verwaltung
-public-cloud-management-horizon: Horizon
-public-cloud-management-openstack: OpenStack
-public-cloud-management-project-management: Projektverwaltung
-public-cloud-management-project-management-faq: FAQ
-public-cloud-management-project-management-getting-started: Erste Schritte
-public-cloud-management-project-management-managing-in-the-control-panel: Verwaltung im Kundencenter
-public-cloud-management-project-management-managing-projects: Projektverwaltung
-public-cloud-management-project-management-tutorials: Tutorials
+public-cloud-compute: Compute
+public-cloud-compute-getting-started: Erste Schritte
+public-cloud-compute-general-information: Allgemeine Informationen
+public-cloud-compute-project-management: Projektverwaltung
+public-cloud-compute-instance-management: Verwaltung von Instanzen
+public-cloud-compute-instance-management-getting-started: Verwaltung von Instanzen - Erste Schritte
+public-cloud-compute-instance-management-control-panel: Verwaltung über das OVHcloud Kundencenter
+public-cloud-compute-instance-management-horizon: Verwaltung über Horizon
+public-cloud-compute-instance-management-openstack: Verwaltung über die OpenStack API
+public-cloud-compute-tutorials: Tutorials
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Konzepte
 public-cloud-network-getting-started: Erste Schritte
