@@ -6,7 +6,7 @@ section: 'Bases de données'
 order: 06
 ---
 
-**Dernière mise à jour le 09/01/2023**
+**Dernière mise à jour le 17/01/2023**
 
 ## Objectif
 
@@ -48,23 +48,23 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 >[!primary]
 >
-> [PHPMyAdmin](https://www.phpmyadmin.net/){.external} est disponible avec l'ensemble des bases de données mutualisées OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/){.external} est disponible avec l'ensemble des bases de données mutualisées OVHcloud.
 > Ce système de gestion de base de données facilite la réalisation des actions manuelles que vous pouvez effectuer avec votre base de données.
 >
-> Toutes les actions expliquées ci-après dans ce tutoriel seront décrites à partir de **PHPMyAdmin**.
+> Toutes les actions expliquées ci-après dans ce tutoriel seront décrites à partir de **phpMyAdmin**.
 >
 
-#### 1.1 - Se connecter à la base de données via PHPMyAdmin
+#### 1.1 - Se connecter à la base de données via phpMyAdmin
 
 Récupérez le mot de passe d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web avec lequel votre base de données mutualisée OVHcloud est associée. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
-![PHPMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est pleine, puis sur `Accéder à PHPMyAdmin`{.action}.
+Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est pleine, puis sur `Accéder à phpMyAdmin`{.action}.
 
-![PHPMyAdmin Go Login](images/pma_interface.png){.thumbnail}
+![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
 Renseignez le mot de passe d'accès à votre base de données en complément des informations pré-remplies puis cliquez sur `Exécuter`{.action}.
 
@@ -72,18 +72,18 @@ Renseignez le mot de passe d'accès à votre base de données en complément des
 
 > [!Alert]
 >
-> A partir de maintenant, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans PHPMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
+> A partir de maintenant, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans phpMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
 >
 > Soyez sûr des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
 >
 
 Une fois connecté, la page suivante s'affiche :
 
-![PHPMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma_login.png){.thumbnail}
 
 Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de gauche puis sur `Taille`{.action} en haut à droite du tableau qui s'affiche :
 
-![PHPMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
 
 Les tables les plus volumineuses apparaîssent en haut du tableau. Identifiez les **tables** les plus volumineuses puis passez à l'**étape 2**.
 
@@ -112,8 +112,6 @@ Pour vous aider, retrouvez ci-après les liens vers les sites officiels des CMS 
 > Si votre site a été développé « **manuellement** » par un prestataire spécialisé, nous vous recommandons de le contacter afin qu'il corrige votre situation.
 >
 
-Dans tous les cas, nous vous conseillons d'analyser la structure de votre base de données afin de voir si des optimisations structurelles ne sont pas possibles.
-
 ### Etape 3 : agir pour corriger la situation 
 
 Une fois que vous avez déterminé si le contenu de vos tables est nécessaire ou non au fonctionnement de votre site, plusieurs options s'offrent à vous :
@@ -124,7 +122,7 @@ Vous devrez basculer votre base de données sur une base de données plus volumi
 
 Consultez notre offre de base de données [Cloud Databases](https://www.ovh.com/fr/cloud-databases/) pour choisir votre nouveau service de base de données. 
 
-Nous recomandons cette offre pour les bases de données volumineuses pour tous les sites hébergés sur notre infrastructure mutualisée. 
+Nous recomandons cette offre pour les bases de données volumineuses.
 
 Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
 
@@ -132,7 +130,15 @@ Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de do
 - [Premiers pas avec l'offre Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 - [Importer votre ancienne base de données dans votre offre Cloud Databases](https://docs.ovh.com/fr/clouddb/restaurer-importer-base-de-donnees/)
 
-#### Cas 2 : tout ou partie du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site :
+#### Cas 2 - tout ou partie du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site :
+
+Avant d'effectuer ce qui suit, vérifiez si les données contenues dans la table volumineuse correspondent à des éléments qui peuvent être supprimés depuis l'espace d'administration de votre CMS. 
+
+**Exemples** :
+
+- anciens commentaires/posts
+- éléments présents dans le menu `Corbeille` de votre CMS
+- données liées à un ancien thème et/ou plugin
 
 >[!alert]
 >
@@ -143,20 +149,15 @@ Les bases de données mutualisées OVHcloud disposent de plusieurs commandes SQL
 
 Dans le cas d'un overquota ou d'une table volumineuse, **trois commandes** sont disponibles.
 
-Vous pouvez directement effectuer ces requêtes depuis l'interface **PHPMyAdmin** via l'onglet `SQL`{.action} :
+Vous pouvez directement effectuer ces requêtes depuis l'interface **phpMyAdmin** via l'onglet `SQL`{.action} :
 
-![PHPMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
 
 La commande **DELETE** : 
 
 Elle permet de supprimer **une ou plusieurs lignes** d'une table donnée. Cette commande est utile si une partie du contenu de la table est nécessaire au bon fonctionnement de votre site web.
 
 **Exemples** :
-
-```bash
-DELETE FROM `table_1`
-```
-Supprime l'ensemble des lignes de la **table_1**
 
 ```bash
 DELETE FROM `table_1` WHERE `id` = 1
