@@ -488,7 +488,6 @@
                 + [Managing snapshots of an instance in Horizon](platform/public-cloud/managing_snapshots_in_horizon)
                 + [Changing an OpenStack user password in Horizon](platform/public-cloud/change_openstack_user_password_in_horizon)
                 + [Creating, launching and deleting images in Horizon](platform/public-cloud/creation_launch_deletion_of_images_in_horizon)
-                + [Access the console for an instance in Horizon](platform/public-cloud/access_console_of_horizon_instance)
                 + [Revert a flex instance](platform/public-cloud/revert_a_flex_instance)
                 + [Resize an instance](platform/public-cloud/resize_of_an_instance)
             + [Managing instance using OpenStack API](public-cloud-compute-instance-management-openstack)
