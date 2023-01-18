@@ -1,7 +1,7 @@
 ---
-title: `Tutorial - Add dynamic content to a static web page generated with Cecil`
+title: 'Tutorial - Add dynamic content to a static web page generated with Cecil'
 slug: static-site-generator-cecil-use-api
-excerpt: `Find out how to add a call to an external API from your static web page`
+excerpt: 'Find out how to add a call to an external API from your static web page'
 section: 'Tutorials'
 order: 5
 ---
