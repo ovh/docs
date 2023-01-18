@@ -6,7 +6,7 @@ section: MongoDB - Guides
 order: 010
 ---
 
-**Last updated November 8th, 2022**
+**Last updated January 16th, 2023**
 
 ## Objective
 
@@ -104,16 +104,19 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 ### Features
 
 #### Network
-
 MongoDB clusters are reachable through default port 27017.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
-When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
-
-DHCP must be enabled in your private network in order to order MongoDB clusters in the said private network.
-
 Ingress and Egress traffic are included in the service plans and unmetered.
+
+##### Private network considerations
+Here are some considerations to take into account when using private network:
+
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- **DHCP must be enabled** in your private network in order to launch MongoDB clusters in the said private network.
+- When connecting from outside subnet, Openstack IP gateway must be enable in the subnet use for the Database service. Customer is responsible for other custom network setup.
+
 
 #### Backups
 
