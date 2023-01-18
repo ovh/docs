@@ -10,9 +10,9 @@ order: 06
 
 ## Objectif
 
-Une base de données permet, par exemple, de stocker des informations relatives à votre site web et à son fontionnement. Ces informations sont structurées pour que votre site web y accède facilement : ce qui permet une consultation optimale et parfois même personnalisée pour les utilisateurs/visiteurs de votre site web. 
+Une base de données permet, par exemple, de stocker des informations relatives à votre site web et à son fonctionnement. Ces informations sont structurées pour que votre site web y accède facilement : ce qui permet une consultation optimale et parfois même personnalisée pour les utilisateurs/visiteurs de votre site web. 
 
-Au cours de son utilisation, une base de données peut acquérir, modifier ou suprimer des informations (données de connexion, données utilisateurs, données d'affichage, données nécessaires au bon fonctionnement de votre site web, ...). 
+Au cours de son utilisation, une base de données peut acquérir, modifier ou supprimer des informations (données de connexion, données utilisateurs, données d'affichage, données nécessaires au bon fonctionnement de votre site web, ...). 
 
 Dans certains cas, la base de données enregistre tellement d'informations que l'espace de stockage qui lui est alloué se rempli complètement. Lorsque la base de données est pleine à 100%, on parle d'**overquota**.
 
@@ -85,7 +85,7 @@ Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de
 
 ![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
 
-Les tables les plus volumineuses apparaîssent en haut du tableau. Identifiez les **tables** les plus volumineuses puis passez à l'**étape 2**.
+Les tables les plus volumineuses apparaissent en haut du tableau. Identifiez les **tables** les plus volumineuses puis passez à l'**étape 2**.
 
 ### Etape 2 : déterminer l'utilité du contenu présent dans la ou les table(s) volumineuse(s)
 
@@ -122,7 +122,7 @@ Vous devrez basculer votre base de données sur une base de données plus volumi
 
 Consultez notre offre de base de données [Cloud Databases](https://www.ovh.com/fr/cloud-databases/) pour choisir votre nouveau service de base de données. 
 
-Nous recomandons cette offre pour les bases de données volumineuses.
+Nous recommandons cette offre pour les bases de données volumineuses.
 
 Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
 
