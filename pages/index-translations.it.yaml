@@ -177,8 +177,13 @@ public-cloud-management-project-management-getting-started: Per iniziare
 public-cloud-management-project-management-managing-in-the-control-panel: Gestione nel tuo Spazio Cliente
 public-cloud-management-project-management-managing-projects: Gestisci il tuo progetto
 public-cloud-management-project-management-tutorials: Tutorial
-public-cloud-network: Rete
-public-cloud-network-networking: Rete
+public-cloud-network: Public Cloud Network Services
+public-cloud-network-concepts: Concetti
+public-cloud-network-getting-started: Per iniziare
+public-cloud-network-additional-ip: Additional IP
+public-cloud-network-configuration: Configurazione
+public-cloud-network-technical-resources: Risorse tecniche
+public-cloud-network-tutorials: Tutorial
 public-cloud-storage: Storage
 public-cloud-storage-object-storage: Object Storage
 public-cloud-storage-object-storage-general-information: General information
