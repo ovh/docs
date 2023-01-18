@@ -168,17 +168,23 @@ public-cloud-databases-m3-aggregator: M3 Aggregator
 public-cloud-databases-m3-aggregator-guides: M3 Aggregator - Guides
 public-cloud-databases-opensearch: OpenSearch
 public-cloud-databases-opensearch-guides: OpenSearch - Guides
-public-cloud-management: Zarządzanie
-public-cloud-management-horizon: Horizon
-public-cloud-management-openstack: OpenStack
-public-cloud-management-project-management: Zarządzanie projektami
-public-cloud-management-project-management-faq: FAQ
-public-cloud-management-project-management-getting-started: Pierwsze kroki
-public-cloud-management-project-management-managing-in-the-control-panel: Zarządzanie w panelu sterowania
-public-cloud-management-project-management-managing-projects: Zarządzanie projektami
-public-cloud-management-project-management-tutorials: Samouczki
-public-cloud-network: Sieć
-public-cloud-network-networking: Sieć
+public-cloud-compute: Compute
+public-cloud-compute-getting-started: Pierwsze kroki
+public-cloud-compute-general-information: Informacje ogólne
+public-cloud-compute-project-management: Zarządzanie projektami
+public-cloud-compute-instance-management: Zarządzanie instancjami
+public-cloud-compute-instance-management-getting-started: Zarządzanie instancjami - Pierwsze kroki
+public-cloud-compute-instance-management-control-panel: Zarządzanie w Panelu klienta OVHcloud
+public-cloud-compute-instance-management-horizon: Zarządzanie w interfejsie Horizon
+public-cloud-compute-instance-management-openstack: Zarządzanie w OpenStack API
+public-cloud-compute-tutorials: Tutorials
+public-cloud-network: Public Cloud Network Services
+public-cloud-network-concepts: Koncepcje
+public-cloud-network-getting-started: Pierwsze kroki
+public-cloud-network-additional-ip: Additional IP
+public-cloud-network-configuration: Konfiguracja
+public-cloud-network-technical-resources: Zasoby techniczne
+public-cloud-network-tutorials: Tutoriale
 public-cloud-storage: Storage
 public-cloud-storage-object-storage: Object Storage
 public-cloud-storage-object-storage-general-information: General information
