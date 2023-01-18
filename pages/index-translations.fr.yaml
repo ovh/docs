@@ -13,6 +13,7 @@ account-and-service-management-managing-billing-payments-and-services-faq: FAQ
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Facturation et paiements
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-hosted-private-cloud: Hosted Private Cloud
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-public-cloud: Public Cloud
+account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-ai-notebooks: AI Notebooks
 account-and-service-management-managing-billing-payments-and-services-renewing-a-service: Renouveler un service
 account-and-service-management-managing-billing-payments-and-services-terminating-a-service: Résiliation d’un service
 account-and-service-management-managing-billing-payments-and-services-terminating-a-service-hosted-private-cloud: Hosted Private Cloud
@@ -39,6 +40,7 @@ bare-metal-cloud-managed-bare-metal-ovhcloud-features: Fonctionnalités OVHcloud
 bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Services et options OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Fonctionnalités de VMware vSphere
 bare-metal-cloud-network-and-security-solutions: Solutions réseau et sécurité
+bare-metal-cloud-network-and-security-solutions-byoip: Bring your own IP (BYOIP)
 bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructur
 bare-metal-cloud-network-and-security-solutions-load-balancer: Load Balancer
 bare-metal-cloud-network-and-security-solutions-load-balancer-faq: FAQ
