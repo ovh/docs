@@ -105,14 +105,16 @@ Here are the node types you can choose from:
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
 ### Features
-
 #### Network
-
 Public as well as private networking (vRack) can be used for all the offers.
 
-When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
+Ingress and Egress traffic are included in the service plans and unmetered.
 
-For both public and private networks, Ingress and Egress traffic are included in the service plans and unmetered.
+##### Private network considerations
+Here are some considerations to take into account when using private network:
+
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- When connecting from outside subnet, Openstack IP gateway must be enable in the subnet use for the Database service. Customer is responsible for other custom network setup.
 
 #### Kafka replication and data retention
 
