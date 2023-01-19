@@ -109,7 +109,7 @@ Retrouvez ci-dessous les liens vers les sites officiels des CMS proposés en ins
 
 > [!primary]
 >
-> Si votre site a été développé « **manuellement** » par un prestataire spécialisé, nous vous recommandons de le contacter afin qu'il corrige votre situation.
+> Si votre site a été développé « **manuellement** » par un prestataire spécialisé, nous vous recommandons de le contacter afin qu'il vous accompagne.
 >
 
 ### Etape 3 : agir pour corriger la situation 
