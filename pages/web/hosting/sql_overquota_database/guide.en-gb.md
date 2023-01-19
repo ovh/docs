@@ -22,8 +22,8 @@ This tutorial will show you the actions you can take when your OVHcloud shared d
 
 ## Requirements
 
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
-- You must have a [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) with an associated OVHcloud shared database.
+- Be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) with an associated OVHcloud shared database.
   
 ## Instructions
 
