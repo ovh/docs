@@ -1,12 +1,12 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive (Beta) (EN)
 slug: cold-archive/getting-started
-excerpt: This guide shows you how to manage your data with Cold Archive
+excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
 section: Spécificités de la classe de stockage Cold Archive
 order: 020
 ---
 
-**Dernière mise à jour le 19 Octobre 2022**
+**Dernière mise à jour le 19/01/2023**
 
 ## Objectif
 
@@ -23,7 +23,7 @@ La restauration peut prendre un certain temps car elle doit être lue sur des ba
 
 ## En pratique
 
-Dans ce tutoriel, les **alias awscli** sont utilisés pour simplifier les commandes.
+Dans ce guide, les **alias awscli** sont utilisés pour simplifier les commandes.
 
 ```bash
 mkdir -p ~/.aws/cli
@@ -114,7 +114,7 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net get-ovh-bucket-status
 
 | État de l'archive (= bucket) | Description | Autorisations d'objets |
 | --- | --- | --- |
-| **`None`** | Aucune configuration Intelligent-Tiering n'a encore été appliquée au compartiment. | Tous
+| **`None`** | Aucune configuration Intelligent-Tiering n'a encore été appliquée au compartiment. | Tous |
 | **`Archiving`** | Archivage en cours sur bandes. | Liste |
 | **`Archived`** | Objets archivés sur bandes uniquement. | Liste |
 | **`Restoring`** | Restauration en cours à partir des bandes. | Liste |
