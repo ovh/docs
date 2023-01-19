@@ -6,7 +6,7 @@ section: MySQL - Guides
 order: 010
 ---
 
-**Last updated November 8th, 2022**
+**Last updated January 19th, 2023**
 
 ## Objective
 
@@ -105,14 +105,19 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 ### Features
 
 #### Network
-
 MySQL clusters are reachable through default port 3306.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
-When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
-
 Ingress and Egress traffic are included in the service plans and unmetered.
+
+##### Private network considerations
+Here are some considerations to take into account when using private network:
+
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+
+
 
 #### Maximum simultaneous connections
 

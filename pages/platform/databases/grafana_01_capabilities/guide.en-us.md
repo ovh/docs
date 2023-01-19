@@ -6,7 +6,7 @@ section: Grafana - Guides
 order: 010
 ---
 
-**Last updated October 26, 2022**
+**Last updated January 19th, 2023**
 
 ## Objective
 
@@ -74,15 +74,19 @@ Here are the node types you can choose from:
 | db1-7   | n/a       | 2     | 7           |
 
 ### Features
-
 #### Network
+Grafana clusters are reachable through a random port, attributed during cluster creation. Once your cluster is in **RUNNING** status, the Service URI will display the port to use.
 
-Grafana clusters are reachable through a random port, attributed during cluster creation.
-Once your cluster is in `RUNNING` status, the Service URI will display the port to use.
+Public as well as private networking (vRack) can be used for all the offers.
 
-Public networking can be used for all the offers.
+Ingress and Egress traffic are included in the service plans and unmetered.
 
-For both public and private networks, Ingress and Egress traffic are included in the service plans and unmetered.
+##### Private network considerations
+Here are some considerations to take into account when using private network:
+
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+
 
 #### Advanced parameters
 

@@ -158,7 +158,7 @@ This option allows you to reconfigure your instance on a new basis, or simply ch
 
 To find out how to shelve or pause an instance, please refer to [this guide](https://docs.ovh.com/us/en/public-cloud/shelve-or-pause-an-instance/).
 
-### Access the instance console
+### Access the instance console <a name="console"></a>
 
 If you lose access to your instance, either because of a bad configuration, or because the SSH service is down, you can always reconfigure your instance using the VNC console.
 

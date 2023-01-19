@@ -13,6 +13,7 @@ account-and-service-management-managing-billing-payments-and-services-faq: FAQ
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Facturación y pagos
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-hosted-private-cloud: Hosted Private Cloud
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-public-cloud: Public Cloud
+account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-ai-notebooks: AI Notebooks
 account-and-service-management-managing-billing-payments-and-services-renewing-a-service: Renovación de un servicio
 account-and-service-management-managing-billing-payments-and-services-terminating-a-service: Baja de un servicio
 account-and-service-management-managing-billing-payments-and-services-terminating-a-service-hosted-private-cloud: Hosted Private Cloud
@@ -39,6 +40,7 @@ bare-metal-cloud-managed-bare-metal-ovhcloud-features: Funcionalidades de OVHclo
 bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Servicios y opciones de OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funcionalidades de VMware vSphere
 bare-metal-cloud-network-and-security-solutions: Soluciones de red y seguridad
+bare-metal-cloud-network-and-security-solutions-byoip: Bring your own IP (BYOIP)
 bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastru
 bare-metal-cloud-network-and-security-solutions-load-balancer: Load Balancer
 bare-metal-cloud-network-and-security-solutions-load-balancer-faq: FAQ
@@ -68,20 +70,18 @@ hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Disaster Recove
 hosted-private-cloud-nutanix-on-ovhcloud-raci: Compartir responsabilidades (RACI)
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware: Hosted Private Cloud powered by VMware
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Primeros pasos
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-general-information: Información general
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-migration: Migración
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Acceso y seguridad
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Gestionar las máquinas virtuales
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring: Mantenimiento y supervisión
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-resources: Gestionar los recursos
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features:  Funcionalidades y opciones de OVHcloud
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: Funcionalidades de VMware vSphere
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: NSX
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vmware-vsphere-features: VMware vSphere
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx: VMware NSX
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-backup-drp: Copias de seguridad y solución de recuperación ante desastres
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: Tanzu
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-tanzu: VMware Tanzu
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Redes
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking-secnumcloud-connectivity: SecNumCloud Connectivity
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: vROps
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: VMware vROps
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-getting-started: Primeros pasos
 hosted-private-cloud-sap-ovhcloud-advanced-usage: Uso avanzado
@@ -108,14 +108,22 @@ public-cloud-ai-and-machine-learning-ai-deploy-guides: AI Deploy - Guides
 public-cloud-ai-and-machine-learning-ai-deploy-tutorials: AI Deploy - Tutorials
 public-cloud-containers-orchestration: Containers & Orchestration
 public-cloud-containers-orchestration-managed-kubernetes-k8s: Managed Kubernetes (K8s)
-public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Primeros pasos
-public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Recursos técnicos
-public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Resolución de problemas
-public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutoriales
-public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: Guías de usuario
-public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry
-public-cloud-containers-orchestration-managed-private-registry-getting-started: Primeros pasos
-public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutoriales
+public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started: Getting started
+public-cloud-containers-orchestration-managed-kubernetes-k8s-technical-resources: Technical resources
+public-cloud-containers-orchestration-managed-kubernetes-k8s-troubleshooting: Troubleshooting
+public-cloud-containers-orchestration-managed-kubernetes-k8s-tutorials: Tutorials
+public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides: User guides
+public-cloud-containers-orchestration-managed-kubernetes-k8s-network: Network
+public-cloud-containers-orchestration-managed-kubernetes-k8s-observability-monitoring: Monitoring & Observability
+public-cloud-containers-orchestration-managed-kubernetes-k8s-traffic-management: Traffic management
+public-cloud-containers-orchestration-managed-kubernetes-k8s-storage: Storage
+public-cloud-containers-orchestration-managed-kubernetes-k8s-gpu: GPU
+public-cloud-containers-orchestration-managed-kubernetes-k8s-security: Security
+public-cloud-containers-orchestration-managed-kubernetes-k8s-serverless: Serverless
+public-cloud-containers-orchestration-managed-kubernetes-k8s-operators: Operators
+public-cloud-containers-orchestration-managed-private-registry: Managed Private Registry (Harbor)
+public-cloud-containers-orchestration-managed-private-registry-getting-started: Getting started
+public-cloud-containers-orchestration-managed-private-registry-tutorials: Tutorials
 public-cloud-data-analytics: Data Analytics
 public-cloud-data-analytics-data-processing: Data Processing
 public-cloud-data-analytics-data-processing-concepts: Conceptos
@@ -160,17 +168,23 @@ public-cloud-databases-m3-aggregator: M3 Aggregator
 public-cloud-databases-m3-aggregator-guides: M3 Aggregator - Guides
 public-cloud-databases-opensearch: OpenSearch
 public-cloud-databases-opensearch-guides: OpenSearch - Guides
-public-cloud-management: Gestión
-public-cloud-management-horizon: Horizon
-public-cloud-management-openstack: OpenStack
-public-cloud-management-project-management: Gestión de proyectos
-public-cloud-management-project-management-faq: FAQ
-public-cloud-management-project-management-getting-started: Primeros pasos
-public-cloud-management-project-management-managing-in-the-control-panel: Gestión en el área de cliente
-public-cloud-management-project-management-managing-projects: Gestionar los proyectos
-public-cloud-management-project-management-tutorials: Tutoriales
-public-cloud-network: Redes
-public-cloud-network-networking: Redes
+public-cloud-compute: Compute
+public-cloud-compute-getting-started: Primeros pasos
+public-cloud-compute-general-information: Información general
+public-cloud-compute-project-management: Gestión del proyecto
+public-cloud-compute-instance-management: Gestión de las instancias
+public-cloud-compute-instance-management-getting-started: Gestión de las instancias - Primeros pasos
+public-cloud-compute-instance-management-control-panel: Gestión de las instancias desde el área de cliente
+public-cloud-compute-instance-management-horizon: Gestión desde Horizon
+public-cloud-compute-instance-management-openstack: Gestión a través de la API OpenStack
+public-cloud-compute-tutorials: Tutoriales
+public-cloud-network: Public Cloud Network Services
+public-cloud-network-concepts: Conceptos
+public-cloud-network-getting-started: Primeros pasos
+public-cloud-network-additional-ip: Additional IP
+public-cloud-network-configuration: Configuración
+public-cloud-network-technical-resources: Recursos Técnicos
+public-cloud-network-tutorials: Tutoriales
 public-cloud-storage: Storage
 public-cloud-storage-object-storage: Object Storage
 public-cloud-storage-object-storage-general-information: General information

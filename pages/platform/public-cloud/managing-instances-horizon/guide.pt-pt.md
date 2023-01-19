@@ -156,7 +156,7 @@ Finalmente, clique em `Rebuild Instance`{.action}. Esta operação pode demorar 
 
 Para saber como suspender ou colocar em pausa uma instância, clique [aqui](https://docs.ovh.com/pt/public-cloud/suspender_ou_colocar_em_pausa_uma_instancia/) para consultar o guia específico deste método.
 
-### Aceder à consola da instância
+### Aceder à consola da instância <a name="console"></a>
 
 Em caso de perda de acesso à sua instância, devido a uma configuração incorreta ou a um corte no serviço SSH, é sempre possível reconfigurar a instância com a ajuda da consola VNC.
 
