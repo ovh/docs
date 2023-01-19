@@ -32,7 +32,7 @@ Pour vous aider à déclarer un domaine ou un sous-domaine en multisite sur votr
 
 ### Créer le répertoire dans lequel seront vos fichiers
 
-Une fois connecté en SSH à votre hébergement web, créez un répertoire à la racine avec la commande suivante &nbsp;:
+Une fois connecté en SSH à votre hébergement web, créez un répertoire à la racine avec la commande suivante :
 
 ```sh
 mkdir mystaticwebsite
@@ -40,7 +40,7 @@ mkdir mystaticwebsite
 
 Remplacez `mystaticwebsite` par le nom de dossier de votre choix (sans accents et sans espaces).
 
-Allez ensuite dans ce répertoire&nbsp;:
+Allez ensuite dans ce répertoire:
 
 ```sh
 cd mystaticwebsite
@@ -50,7 +50,7 @@ Remplacez `mystaticwebsite` par votre nom de dossier.
 
 ### Téléchargement
 
-Dans le répertoire que vous venez de créer, téléchargez Cecil&nbsp;:
+Dans le répertoire que vous venez de créer, téléchargez Cecil:
 
 ```sh
 curl -OL https://github.com/Cecilapp/Cecil/releases/latest/download/cecil.phar
@@ -58,13 +58,13 @@ curl -OL https://github.com/Cecilapp/Cecil/releases/latest/download/cecil.phar
 
 ### Installation
 
-Lancez l'installation de Cecil avec la commande suivante&nbsp;:
+Lancez l'installation de Cecil avec la commande suivante:
 
 ```sh
 php cecil.phar new:site
 ```
 
-Renseignez les éléments demandés&nbsp;:
+Renseignez les éléments demandés:
 
 - le titre de votre site _(title)_
 - la _baseline_
@@ -73,17 +73,17 @@ Renseignez les éléments demandés&nbsp;:
 
 ![Installation Cecil](images/static_website_installation_cecil01.png){.thumbnail}
 
-Une fois ces éléments renseignés, vous devez maintenant déployer le site en tapant la commande suivante&nbsp;:
+Une fois ces éléments renseignés, vous devez maintenant déployer le site en tapant la commande suivante:
 
 ```sh
 php cecil.phar build
 ```
 
-En affichant le contenu du répertoire, vous constaterez la présence d'un répertoire `_site`. Ce répertoire contiendra l'ensemble des fichiers HTML et des assets&nbsp;:
+En affichant le contenu du répertoire, vous constaterez la présence d'un répertoire `_site`. Ce répertoire contiendra l'ensemble des fichiers HTML et des assets:
 
 ![Installation Cecil](images/static_website_installation_cecil02.png){.thumbnail}
 
-Vous pouvez maintenant voir le résultat en vous rendant sur votre nom de domaine&nbsp;:
+Vous pouvez maintenant voir le résultat en vous rendant sur votre nom de domaine:
 
 ![Installation Cecil](images/static_website_installation_cecil03.png){.thumbnail}
 
@@ -95,7 +95,7 @@ Si votre nom de domaine ou sous-domaine est hébergé chez OVHcloud, consultez n
 
 ### Configurer son site
 
-Les informations générales de votre site peuvent être configurées dans le fichier `config.yml`&nbsp;:
+Les informations générales de votre site peuvent être configurées dans le fichier `config.yml`:
 
 ```sh
 nano config.yml
@@ -109,7 +109,7 @@ Remplacez les informations par défaut par les vôtres et sauvegardez le fichier
 
 La création des pages qui contiendront les données de votre site se fait via des fichiers au format _Markdown_. Ces pages sont personnalisables. **Cecil**  intègre le moteur de _template_ [Twig](https://twig.symfony.com/){.external} qui est utilisé par défaut avec le _framework_ [Symfony](https://symfony.com/){.external}.
 
-Les dossiers et fichiers sont organisés comme suit&nbsp;:
+Les dossiers et fichiers sont organisés comme suit:
 
 - `assets` : contient les éléments graphiques, audio et vidéo, les scripts JavaScript et les styles (CSS, Sass) 
 - `layouts` : répertoire dans lequel seront le ou les _templates_
@@ -119,7 +119,7 @@ Les dossiers et fichiers sont organisés comme suit&nbsp;:
 
 #### Créer un fichier _Markdown_ en ligne de commande
 
-À la racine du site, tapez la commande suivante&nbsp;:
+À la racine du site, tapez la commande suivante:
 
 ```sh
 php cecil.phar new:page mypage.md
@@ -133,17 +133,17 @@ Remplacez `mypage` par le nom de votre propre page.
 
 #### Générer les fichiers statiques
 
-Toujours à la racine, tapez la commande suivante &nbsp;:
+Toujours à la racine, tapez la commande suivante :
 
 ```sh
 php cecil.phar build
 ```
 
-Votre fichier se trouve dans le répertoire `_site/mypage/`&nbsp;:
+Votre fichier se trouve dans le répertoire `_site/mypage/`:
 
 ![Installation Cecil](images/static_website_installation_cecil06.png){.thumbnail}
 
-Vous pouvez le visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mypage/`&nbsp;:
+Vous pouvez le visualiser sur votre serveur en tapant l'URL de votre site, suivi de `/mypage/`:
 
 ![Résultat navigateur](images/static_website_installation_cecil07.png){.thumbnail}
 
@@ -154,7 +154,7 @@ Vous pouvez le visualiser sur votre serveur en tapant l'URL de votre site, suivi
 L'édition des fichiers _Markdown_ peut se faire directement sur le serveur d'hébergement web. Sur votre offre d'[hébergement Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](https://www.vim.org/){.external}.
 Les captures d'écran du présent tutoriel ont été réalisées sous **GNU nano**.
 
-Éditez le fichier `mypage.md` situé dans le répertoire `pages` en tapant la commande suivante si vous êtes à la racine de votre site&nbsp;:
+Éditez le fichier `mypage.md` situé dans le répertoire `pages` en tapant la commande suivante si vous êtes à la racine de votre site:
 
 ```sh
  nano pages/mypage.md
@@ -164,33 +164,33 @@ Remplacez `mypage` par le nom de votre propre page.
 
 ![Édition du fichier dans GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
 
-Ajoutez quelques lignes en respectant la syntaxe _Markdown_&nbsp;:
+Ajoutez quelques lignes en respectant la syntaxe _Markdown_:
 
 ![Ajout de contenu dans le fichier](images/static_website_installation_cecil09.png){.thumbnail}
 
-Supprimez les fichiers dans le cache à l'aide de la commande suivante&nbsp;:
+Supprimez les fichiers dans le cache à l'aide de la commande suivante:
 
 ```sh
 php cecil.phar clear
 ```
 
-Reconstruisez vos pages après avoir sauvegardé votre fichier&nbsp;:
+Reconstruisez vos pages après avoir sauvegardé votre fichier:
 
 ```sh
 php cecil.phar build
 ```
 
-Puis retournez sur votre page pour voir le résultat&nbsp;:
+Puis retournez sur votre page pour voir le résultat:
 
 ![Page mise à jour](images/static_website_installation_cecil10.png){.thumbnail}
 
 #### Modification sur votre poste de travail
 
-Si vous préférez utiliser votre éditeur de code habituel, connectez-vous avec un client FTP sur votre serveur pour récupérer les fichiers sur votre ordinateur&nbsp;:
+Si vous préférez utiliser votre éditeur de code habituel, connectez-vous avec un client FTP sur votre serveur pour récupérer les fichiers sur votre ordinateur:
 
 ![Téléchargement avec FileZilla](images/static_website_installation_cecil11.png){.thumbnail}
 
-Vous pouvez maintenant éditer les fichiers dans votre I.D.E.&nbsp;:
+Vous pouvez maintenant éditer les fichiers dans votre I.D.E.:
 
 ![Affichage dans Visual Studio Code](images/static_website_installation_cecil12.png){.thumbnail}
 
@@ -198,7 +198,7 @@ Il vous suffit de renvoyer vos fichiers modifiés ou vos nouveaux fichiers sur v
 
 ### Ajouter la page générée au menu de votre site
 
-Pour ajouter cette nouvelle page dans le menu du site web, modifiez manuellement l'en-tête du fichier `.md` en rajoutant la ligne suivante&nbsp;:
+Pour ajouter cette nouvelle page dans le menu du site web, modifiez manuellement l'en-tête du fichier `.md` en rajoutant la ligne suivante:
 
 ```sh
 menu: main
