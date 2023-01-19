@@ -5,7 +5,7 @@ excerpt: "Découvrez comment mettre à jour le format des disques vSAN"
 section: 'Fonctionnalités VMware vSphere'
 ---
 
-**Dernière mise à jour le 17/01/2023**
+**Dernière mise à jour le 19/01/2023**
 
 ## Objectif
 

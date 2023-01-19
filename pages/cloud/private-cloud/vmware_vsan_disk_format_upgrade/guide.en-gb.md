@@ -5,7 +5,7 @@ excerpt: 'Find out how to update the format of a vSAN’s disks'
 section: 'VMware vSphere features'
 ---
 
-**Last updated 17th January 2023**
+**Last updated 19th January 2023**
 
 ## Objective
 
