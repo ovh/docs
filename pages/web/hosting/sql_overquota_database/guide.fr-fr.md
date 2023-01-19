@@ -142,7 +142,7 @@ Avant d'effectuer ce qui suit, vérifiez si les données contenues dans la table
 
 >[!alert]
 >
-> La suite de ce guide vous explique comment supprimer des données présentes dans votre base de données. Soyez sûr de ce que vous faites ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous avez la moindre hésitation.
+> La suite de ce guide vous décrit comment supprimer des données présentes dans votre base de données. Assurez-vous de ce que vous faites ou contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) en cas de doute.
 >
 
 Les bases de données mutualisées OVHcloud disposent de plusieurs commandes SQL pour agir sur leurs contenus.
