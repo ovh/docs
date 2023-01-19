@@ -14,7 +14,7 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs 
 
 ## Prérequis
 
-- Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir créé un [utilisateur S3](https://docs.ovh.com/fr/storage/s3/gestion-des-identites-et-des-acces/)
 
