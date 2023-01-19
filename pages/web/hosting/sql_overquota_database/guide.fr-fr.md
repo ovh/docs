@@ -48,7 +48,7 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 >[!primary]
 >
-> [phpMyAdmin](https://www.phpmyadmin.net/){.external} est disponible avec l'ensemble des bases de données mutualisées OVHcloud.
+> [phpMyAdmin](https://www.phpmyadmin.net/){.external} est disponible sur l'ensemble des bases de données mutualisées OVHcloud.
 > Ce système de gestion de base de données facilite la réalisation des actions manuelles que vous pouvez effectuer avec votre base de données.
 >
 > Toutes les actions expliquées ci-après dans ce tutoriel seront décrites à partir de **phpMyAdmin**.
