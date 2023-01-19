@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/'
 ---
 
-**Last updated January 16th, 2023**
+**Last updated January 19th, 2023**
 
 ## Objective
 
@@ -117,7 +117,8 @@ Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - **DHCP must be enabled** in your private network in order to launch MongoDB clusters in the said private network.
-- When connecting from outside subnet, Openstack IP gateway must be enable in the subnet use for the Database service. Customer is responsible for other custom network setup.
+- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+
 
 #### Backups
 
