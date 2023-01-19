@@ -18,7 +18,7 @@ Dans certains cas, la base de données enregistre une telle quantité d'informat
 
 Ce tutoriel vous propose des actions lorsque votre base de données mutualisée OVHcloud arrive à saturation ou déjà en **overquota**.
 
-**Découvrez comment agir lorsque votre base de données est pleine**
+**Découvrez comment agir lorsque votre base de données est saturée**
 
 ## Prérequis
 
