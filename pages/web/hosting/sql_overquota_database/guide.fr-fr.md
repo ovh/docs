@@ -72,7 +72,7 @@ Renseignez le mot de passe d'accès à votre base de données en complément des
 
 > [!Alert]
 >
-> A partir de maintenant, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans phpMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
+> Désormais, vous intervenez directement sur le contenu de votre base de données. Les manipulations que vous réalisez dans phpMyAdmin peuvent avoir des conséquences irréversibles si celles-ci ne sont pas réalisées correctement.
 >
 > Soyez sûr des manipulations que vous effectuez. Si vous éprouvez la moindre difficulté, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/). En effet, OVHcloud ne pourra pas vous fournir une assistance sur le contenu de votre base de données.
 >
