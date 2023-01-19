@@ -100,7 +100,7 @@ Une fois les tables volumineuses identifiées, déterminez si l'intégralité de
  
 Pour les autres cas liés aux CMS, nous vous recommandons de contacter directement l'éditeur de votre CMS avant de réaliser les actions qui suivent.
 
-Pour vous aider, retrouvez ci-après les liens vers les sites officiels des CMS proposés en installation « **En un clic** » par OVHcloud :
+Retrouvez ci-dessous les liens vers les sites officiels des CMS proposés en installation « **En un clic** » par OVHcloud :
 
 - [WordPress](https://wordpress.org/){.external}
 - [Joomla!](https://www.joomla.org){.external}
