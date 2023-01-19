@@ -95,7 +95,7 @@ Une fois les tables volumineuses identifiées, déterminez si l'intégralité de
 >
 > Si vous utilisez un Content Managment System (CMS) tel que WordPress, Joomla!, PrestaShop ou Drupal, vérifiez que vos tables volumineuses ne sont pas liées à un plugin/thème récemment installé ou mis à jour.
 >
-> Dans ce cas, contactez l'éditeur du plugin/thème pour qu'il vous indique les correctifs à appliquer pour votre CMS.
+> Dans ce cas, contactez l'éditeur du plugin/thème pour qu'il vous communique sur les actions à mener sur votre CMS.
 >
  
 Pour les autres cas liés aux CMS, nous vous recommandons de contacter directement l'éditeur de votre CMS avant de réaliser les actions qui suivent.
