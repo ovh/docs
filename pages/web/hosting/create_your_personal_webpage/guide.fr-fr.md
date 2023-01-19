@@ -6,7 +6,7 @@ section: "Tutoriels"
 order: 01
 ---
 
-**Dernière mise à jour le 22/11/2022**
+**Dernière mise à jour le 19/01/2023**
 
 ## Objectif
 
@@ -15,7 +15,7 @@ Découvre comment créer la première page d'un site web sur un hébergement Sta
 ## Prérequis
 
 - Posséder un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou d'un [hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/)
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/) ou avoir activé [hébergement gratuit Start 10M](https://docs.ovh.com/fr/hosting/activer-start10m/)
 - Avoir un éditeur de texte (bloc-notes, TextEdit, Notepad++, etc.)
 - Avoir installé un client FTP (tel que [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) pour téléverser (déposer sur l'hébergement) ses fichiers sur son espace dédié.
 
