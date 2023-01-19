@@ -10,7 +10,7 @@ order: 06
 
 ## Objectif
 
-Une base de données permet, par exemple, de stocker des informations relatives à votre site web et à son fonctionnement. Ces informations sont structurées pour que votre site web y accède facilement : ce qui permet une consultation optimale et parfois même personnalisée pour les utilisateurs/visiteurs de votre site web. 
+Une base de données permet, par exemple, de stocker des informations relatives à votre site web et à son fonctionnement. Ces informations sont structurées pour que votre site web y accède facilement : ce qui permet une consultation optimale et personnalisée pour les utilisateurs/visiteurs de votre site web. 
 
 Au cours de son utilisation, une base de données peut acquérir, modifier ou supprimer des informations (données de connexion, données utilisateurs, données d'affichage, données nécessaires au bon fonctionnement de votre site web, ...). 
 
