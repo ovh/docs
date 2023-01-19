@@ -156,7 +156,7 @@ Na koniec kliknij `Rebuild Instance`{.action}. Operacja ta może zająć kilka m
 
 Aby dowiedzieć się, jak wstrzymanie lub uśpienie instancji, kliknij [tutaj](https://docs.ovh.com/pl/public-cloud/wstrzymanie_lub_uspienie_instancji/), aby zapoznać się z przewodnikiem dotyczącym tej metody.
 
-### Dostęp do konsoli instancji
+### Dostęp do konsoli instancji <a name="console"></a>
 
 W przypadku utraty dostępu do instancji, wynikającej z nieprawidłowej konfiguracji lub przerwy w działaniu usługi SSH, możesz ponownie skonfigurować instancję za pomocą konsoli VNC.
 
