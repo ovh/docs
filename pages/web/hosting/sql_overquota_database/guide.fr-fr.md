@@ -130,7 +130,7 @@ Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de do
 - [Premiers pas avec l'offre Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 - [Importer votre ancienne base de données dans votre offre Cloud Databases](https://docs.ovh.com/fr/clouddb/restaurer-importer-base-de-donnees/)
 
-#### Cas 2 - tout ou partie du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site :
+#### Cas 2 - Une partie ou l'ensemble du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site :
 
 Avant d'effectuer ce qui suit, vérifiez si les données contenues dans la table volumineuse correspondent à des éléments qui peuvent être supprimés depuis l'espace d'administration de votre CMS. 
 
