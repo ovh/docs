@@ -194,7 +194,7 @@ Jeśli wolisz używać Twojego zwykłego edytora kodu, zaloguj się z klientem F
 
 ![Do pobrania z FileZilla](images/static_website_installation_cecil11.png){.thumbnail}
 
-Teraz możesz edytować pliki w swoim repozytorium:
+Teraz możesz edytować pliki I.D.E. w swoim repozytorium:
 
 ![Wyświetlanie w Visual Studio Code](images/static_website_installation_cecil12.png){.thumbnail}
 

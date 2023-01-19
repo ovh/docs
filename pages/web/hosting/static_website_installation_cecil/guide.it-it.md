@@ -194,7 +194,7 @@ Se preferisci utilizzare il tuo editore di codice abituale, collegati con un cli
 
 ![Scarica con FileZilla](images/static_website_installation_cecil11.png){.thumbnail}
 
-Ora puoi modificare i file nel tuo ID&ID:
+Ora puoi modificare i file nel tuo I.D.E.:
 
 ![Visualizzazione in Visual Studio Code](images/static_website_installation_cecil12.png){.thumbnail}
 
