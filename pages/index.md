@@ -532,7 +532,7 @@
             + [Configuring an Additional IP](platform/network-services/getting-started-04-configure-additional-ip-to-instance)
             + [Buying an Additional IP](platform/network-services/additional-ip-buy)
             + [Importing an Additional IP](platform/network-services/additional-ip-import)
-            + [Migrating an Additional IP](pages/platform/network-services/additional-ip-migrate)
+            + [Migrating an Additional IP](platform/network-services/additional-ip-migrate)
         + [Configuration](public-cloud-network-configuration)
             + [L3 services SNAT configuration](platform/network-services/configuration-01-snat-configuration)
             + [Configuring IPv6 on a Public Cloud instance](platform/network-services/configuration-02-how-to-configure-ipv6)
