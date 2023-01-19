@@ -12,7 +12,7 @@ order: 06
 
 Une base de données permet, par exemple, de stocker des informations relatives à votre site web et à son fonctionnement. Ces informations sont structurées pour que votre site web y accède facilement : ce qui permet une consultation optimale et personnalisée pour les utilisateurs/visiteurs de votre site web. 
 
-Au cours de son utilisation, une base de données peut acquérir, modifier ou supprimer des informations (données de connexion, données utilisateurs, données d'affichage, données nécessaires au bon fonctionnement de votre site web, ...). 
+Au cours de son utilisation, une base de données peut acquérir, modifier ou supprimer des informations (données de connexion, données utilisateurs, données d'affichage, données nécessaires au bon fonctionnement de votre site web, etc.). 
 
 Dans certains cas, la base de données enregistre tellement d'informations que l'espace de stockage qui lui est alloué se rempli complètement. Lorsque la base de données est pleine à 100%, on parle d'**overquota**.
 
