@@ -16,7 +16,7 @@ Au cours de son utilisation, une base de données peut acquérir, modifier ou su
 
 Dans certains cas, la base de données enregistre une telle quantité d'informations que l'espace de stockage qui lui est alloué sature. Lorsque la base de données est saturée, on parle d'**overquota**.
 
-Ce tutoriel indique les actions possibles lorsque votre base de données mutualisée OVHcloud est presque pleine ou en **overquota**.
+Ce tutoriel vous propose des actions lorsque votre base de données mutualisée OVHcloud arrive à saturation ou déjà en **overquota**.
 
 **Découvrez comment agir lorsque votre base de données est pleine**
 
