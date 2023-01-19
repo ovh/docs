@@ -62,7 +62,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est pleine, puis sur `Accéder à phpMyAdmin`{.action}.
+Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est saturée, puis sur `Accéder à phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
