@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Que faire lorsque ma base de données est saturée ?"
 slug: overquota-database
-excerpt: "Découvrez comment agir lorsque votre base de données est pleine"
+excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
 section: 'Bases de données'
 order: 06
 ---
