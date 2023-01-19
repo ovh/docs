@@ -1,11 +1,9 @@
 ---
-title: Cold Archive - Premiers pas avec Cold Archive (Beta) (EN)
-slug: s3/getting-started-with-cold-archive
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/getting-started-with-cold-archive/'
+title: Cold Archive - Getting started with Cold Archive (Beta)
+slug: cold-archive/getting-started
 excerpt: This guide shows you how to manage your data with Cold Archive
-section: Spécificités de la classe de stockage Cold Archive
-order: 200
+section: Cold Archive Storage Class Specifics
+order: 020
 ---
 
 **Last updated 19th October 2022**
@@ -20,7 +18,7 @@ Restoration can take some time as it needs to be read on tapes.
 
 ## Requirements
 
-- [Getting started with Object Storage](https://docs.ovh.com/fr/storage/object-storage/s3/getting-started-with-object-storage/#utilisation-de-aws-cli)
+- [Getting started with Object Storage](https://docs.ovh.com/ca/en/storage/object-storage/s3/getting-started-with-object-storage/#using-aws-cli)
 - `awscli` version >= 1.16.62
 
 ## Instructions
@@ -126,4 +124,4 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net get-ovh-bucket-status
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
