@@ -112,7 +112,7 @@ Retrouvez ci-dessous les liens vers les sites officiels des CMS proposés en ins
 > Si votre site a été développé « **manuellement** » par un prestataire spécialisé, nous vous recommandons de le contacter afin qu'il vous accompagne.
 >
 
-### Etape 3 : agir pour corriger la situation 
+### Etape 3 : mener une action corrective
 
 Une fois que vous avez déterminé si le contenu de vos tables est nécessaire ou non au fonctionnement de votre site, plusieurs options s'offrent à vous :
 
