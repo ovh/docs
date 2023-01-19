@@ -58,7 +58,7 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 Récupérez le mot de passe d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web avec lequel votre base de données mutualisée OVHcloud est associée. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web associée à votre base de données mutualisée OVHcloud. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
