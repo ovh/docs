@@ -36,7 +36,7 @@ Ce tutoriel vous propose des actions lorsque votre base de données mutualisée 
 
 Lorsque votre base de données mutualisée OVHcloud arrive à saturation (**overquota**), nos robots vous avertissent par e-mail sur l'adresse e-mail du [contact « Administrateur »](https://docs.ovh.com/fr/customer/gestion-des-contacts/) de la base de données. 
 
-Un premier e-mail est envoyé lorsque votre base de données est remplie à plus de **80%** et un deuxième e-mail est envoyé lorsque vous dépassez les **90%**.
+Un premier e-mail est envoyé lorsque votre base de données a consommé plus de **80%** de sa capacité. Un deuxième e-mail est envoyé lorsque vous avez dépassé **90%**.
 
 Lorsque votre base de données est en **overquota**, un troisième e-mail est envoyé pour vous avertir de la situation. Votre base passe alors en `READ ONLY`. Vous ne pouvez plus ajouter ou modifier des éléments à l'intérieur mais votre base de données reste accessible en *lecture* et en *suppression*. 
 
