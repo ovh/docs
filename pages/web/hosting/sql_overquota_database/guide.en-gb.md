@@ -62,7 +62,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-From the `Databases`{.action} tab, click the `...`{.action} to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
+From the `Databases`{.action} tab, click on the button `...`{.action} to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Below are links to the official CMS websites offered by OVHcloud "**In one click
 
 Once you have determined whether or not the contents of your tables are necessary for your site to work, you have several options:
 
-#### Scenario #1 - All of the contents of the large table are required for your website to work properly
+#### Case 1 - All of the contents of the large table are required for your website to work properly
 
 You will need to switch your database to a larger database.
 
