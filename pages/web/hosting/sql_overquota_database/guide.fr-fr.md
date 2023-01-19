@@ -14,7 +14,7 @@ Une base de données permet, par exemple, de stocker des informations relatives 
 
 Au cours de son utilisation, une base de données peut acquérir, modifier ou supprimer des informations (données de connexion, données utilisateurs, données d'affichage, données nécessaires au bon fonctionnement de votre site web, etc.). 
 
-Dans certains cas, la base de données enregistre tellement d'informations que l'espace de stockage qui lui est alloué se rempli complètement. Lorsque la base de données est pleine à 100%, on parle d'**overquota**.
+Dans certains cas, la base de données enregistre une telle quantité d'informations que l'espace de stockage qui lui est alloué sature. Lorsque la base de données est saturée, on parle d'**overquota**.
 
 Ce tutoriel indique les actions possibles lorsque votre base de données mutualisée OVHcloud est presque pleine ou en **overquota**.
 
