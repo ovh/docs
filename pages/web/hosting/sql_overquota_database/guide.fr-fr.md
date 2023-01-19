@@ -34,7 +34,7 @@ Ce tutoriel vous propose des actions lorsque votre base de données mutualisée 
 > Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
-Lorsque votre base de données mutualisée OVHcloud est presque pleine ou en **overquota**, nos robots vous avertissent par e-mail sur l'adresse e-mail du contact « Administrateur » de la base de données. 
+Lorsque votre base de données mutualisée OVHcloud arrive à saturation (**overquota**), nos robots vous avertissent par e-mail sur l'adresse e-mail du [contact « Administrateur »](https://docs.ovh.com/fr/customer/gestion-des-contacts/) de la base de données. 
 
 Un premier e-mail est envoyé lorsque votre base de données est remplie à plus de **80%** et un deuxième e-mail est envoyé lorsque vous dépassez les **90%**.
 
