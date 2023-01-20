@@ -3,14 +3,14 @@ title: "Tutorial - Adicionar conteúdo dinâmico a uma página web estática ger
 slug: static-site-generator-cecil-use-api
 excerpt: "Saiba como adicionar uma chamada a uma API externa a partir da sua página web estática"
 section: 'Tutoriais'
-order: 5
+order: 05
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 16/01/2023**
+**Última atualização: 20/01/2023**
 
 ## Objetivo
 
@@ -29,7 +29,7 @@ Este tutorial explica como utilizar o gerador de site [Cecil](https://cecil.app)
 
 - Ter um [serviço de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) com acesso SSH. Este acesso permite instalar, em linha de comandos, uma ou várias soluções alternativas às propostas por defeito nas nossas ofertas de alojamento web.
 - Estar familiarizado com a introdução em linha de comandos.
-- Ter instalado e configurado a aplicação **Cecil** no seu alojamento (consulte o nosso tutorial sobre [a instalação e a configuração do Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)).
+- Ter instalado e configurado a aplicação **Cecil** no seu alojamento (consulte o nosso tutorial sobre [a instalação e a configuração do Cecil](https://docs.ovh.com/pt/hosting/install-configure-cecil/)).
 
 ## Instruções
 
@@ -38,14 +38,14 @@ O exemplo escolhido consiste em utilizar uma das API de um serviço que fornece 
 As etapas são as seguintes:
 
 - criar uma nova página no Cecil e adicionar esta página ao menu do website;
-- criar uma conta e recuperar a chave que permite fazer pedidos na API meteorológica;
+- criar uma conta e recuperar a chave que permite fazer pedidos na API meteorológica
 - alterar o ficheiro `.md` criado adicionando código HTML;
 - adicionar `assets` (JavaScript e CSS);
 - gerar e testar a solução.
 
 ### Criar uma nova página
 
-Prepare o seu ambiente ligando-se através de SSH ao seu alojamento web e adira ao tutorial "[Instalar e configurar Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)" para instalar a sua aplicação **Cecil** num diretório dedicado.
+Prepare o seu ambiente ligando-se através de SSH ao seu alojamento web e adira ao tutorial "[Instalar e configurar Cecil](https://docs.ovh.com/pt/hosting/install-configure-cecil/)" para instalar a sua aplicação **Cecil** num diretório dedicado.
 
 Crie um diretório e coloque-se dentro:
 
@@ -68,7 +68,7 @@ Uma vez a sua conta validada (através de um e-mail de confirmação), aceda ao 
 Crie uma nova página com o seguinte comando:
 
 ```bash
-php cecil.phar new:página weather.md
+php cecil.phar new:page weather.md
 ```
 
 De seguida, edite a página gerada:
@@ -93,15 +93,15 @@ Depois do cabeçalho, adicione o código HTML para mostrar a cidade escolhida, a
 ```html
 ---
 title: "Weather"
-data: 2022-11-28
+date: 2022-11-28
 published: true
-menu: mão
+menu: main
 ---
 <h1>Weather</h1>
 <div>
     <span id="city">Roubaix</span>
-    <div id="temperatura"><span id="temperaturaValue"></span>°C</div>
-    <div id="modify">Muange city</div>
+    <div id="temperature"><span id="temperatureValue"></span> °C</div>
+    <div id="modify">Change city</div>
 </div>
 ```
 
@@ -124,7 +124,7 @@ Não é possível adicionar um `<script>` num ficheiro Markdown. Deverá modific
 Os templates estão dispostos no diretório `layouts`. Pode visualizá-las através do seguinte comando:
 
 ```bash
-les -la layouts
+ls -la layouts
 ```
 
 O ficheiro contém um diretório de `blog` e um ficheiro `index.html.twig`:
