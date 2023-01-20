@@ -3,14 +3,14 @@ title: "Tutorial - Aggiungere contenuto dinamico in una pagina Web statica gener
 slug: static-site-generator-cecil-use-api
 excerpt: Come aggiungere una chiamata verso un'API esterna dalla tua pagina Web statica
 section: Tutorial
-order: 5
+order: 05
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 16/01/2023**
+**Ultimo aggiornamento: 20/01/2023**
 
 ## Obiettivo
 
@@ -38,7 +38,7 @@ L'esempio scelto è l'utilizzo di una delle API di un servizio che fornisce dati
 Gli step sono i seguenti:
 
 - creare una nuova pagina su Cecil e aggiungere questa pagina al menu del sito web
-- creare un account e recuperare la chiave per effettuare richieste sull'API meteo;
+- creare un account e recuperare la chiave per effettuare richieste sull'API meteo
 - modificare il file.`md` creato aggiungendo il codice HTML
 - aggiungere `assets` (JavaScript e CSS)
 - generare e testare la soluzione.
