@@ -1,8 +1,8 @@
 ---
-title: "Tutorial - Dynamischen Inhalt auf einer statischen Webseite hinzufügen, die mit Cecil erstellt wird"
+title: "Tutorial - Dynamischen Inhalt auf einer statischen Webseite hinzufügen, die mit Cecil erstellt wurde"
 slug: static-site-generator-cecil-use-api
-excerpt: "Hier erfahren Sie, wie Sie einen Anruf auf eine externe API von Ihrer statischen Webseite aus hinzufügen."
-section: 'Tutorials'
+excerpt: "Erfahren Sie hier, wie Sie externe APIs von Ihrer statischen Webseite aus aufrufen"
+section: Tutorials
 order: 5
 ---
 
@@ -14,52 +14,51 @@ order: 5
 
 ## Ziel
 
-In dieser Anleitung erfahren Sie, wie Sie den [Cecil-Website-Generator](https://cecil.app){.external} verwenden, um den Inhalt einer dynamischen Seite anzuzeigen. Indem Sie eine API aufrufen, um Informationen auf einer über **Cecil erstellten Seite wiederzugeben**.
+In dieser Anleitung erfahren Sie, wie Sie das Web-Entwicklungstool [Cecil](https://cecil.app){.external} verwenden, um den Inhalt einer dynamischen Seite wiederzugeben. Dazu wird eine externe API eingebunden, die Informationen auf einer mit **Cecil** erstellten Seite anzeigt.
 
-**Hier erfahren Sie, wie Sie einen Anruf auf eine externe API von Ihrer statischen Webseite aus hinzufügen.**
+**In diesem Tutorial wird erläutert, wie Sie API-Aufrufe von Ihrer statischen Webseite aus hinzufügen.**
 
 > [!warning]
->
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wenn Sie Schwierigkeiten haben, den Schritten dieses Tutorials zu folgen, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
+> Wenn Sie Schwierigkeiten haben, den Schritten dieses Tutorials zu folgen, empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/) mit SSH-Zugang. Mit diesem Zugang können Sie über die Kommandozeile eine oder mehrere Alternativen zu den standardmäßig in unseren Webhosting Angeboten angebotenen Lösungen installieren.
-- Sie sind mit der Eingabe über die Kommandozeile vertraut.
-- Sie haben die **Cecil** Anwendung auf Ihrem Hosting installiert und konfiguriert (lesen Sie unsere Anleitung zur [Installation und Konfiguration von Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)).
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
+- Sie sind mit der Befehlszeileneingabe vertraut.
+- Sie haben die Anwendung **Cecil** auf Ihrem Hosting installiert und konfiguriert (gemäß unseres Tutorials zur [Installation und Konfiguration von Cecil](https://docs.ovh.com/de/hosting/install-configure-cecil/)).
 
 ## In der praktischen Anwendung
 
-Als Beispiel wird eine der APIs eines Wetterdatendienstes verwendet. Dies hängt von einer Stadt ab, die vom Benutzer angegeben wird.
+Als Beispiel wird eine API eines Wetterdatendienstes verwendet, basierend auf einer Stadt, die vom Benutzer eingegeben wird.
 
-Die Schritte sind:
+Die Schritte sind dabei wie folgt:
 
-- eine neue Seite auf Cecil erstellen und diese Seite in das Menü der Website einfügen;
-- einen Account erstellen und den Schlüssel für Anfragen an die Wettervorhersage abrufen
-- die erstellte `.md`-Datei durch Hinzufügen von HTML-Code bearbeiten
-- Assets `hinzufügen` (JavaScript und CSS)
-- die Lösung erstellen und testen
+- Erstellen einer neuen Seite in **Cecil** und diese in das Menü der Website einfügen.
+- Einen Account erstellen und einen Schlüssel für Anfragen an die Wetterdaten-API abrufen.
+- Die erstellte `.md`-Datei durch Hinzufügen von HTML-Code bearbeiten.
+- Hinzufügen von `assets` (JavaScript und CSS).
+- Die Lösung anwenden und testen.
 
 ### Eine neue Seite erstellen
 
-Erstellen Sie Ihre Umgebung, indem Sie sich via SSH mit Ihrem Webhosting verbinden. Lesen Sie die Anleitung ["Cecil installieren und konfigurieren"](https://docs.ovh.com/fr/hosting/install-configure-cecil/), um Ihre **Cecil** Anwendung in einem dedizierten Verzeichnis zu installieren.
+Loggen Sie sich zunächst via SSH auf Ihrem Webhosting ein. Folgen Sie der Anleitung "[Installation und Konfiguration von Cecil](https://docs.ovh.com/de/hosting/install-configure-cecil/)", um Ihre **Cecil** Anwendung in einem dedizierten Verzeichnis zu installieren.
 
-Erstellen Sie ein Verzeichnis und platzieren Sie sich:
+Erstellen Sie ein neues Verzeichnis wechseln Sie zu diesem:
 
 ```bash
 mkdir myWebSite
 cd myWebSite
 ```
 
-### Verwendung der OpenWeather API
+### Verwendung der API von OpenWeather
 
-Für diese Anleitung verwenden wir eine API, die von der [OpenWeather](https://openweathermap.org/){.external}-Seite bereitgestellt wird. Sie ermöglicht es, die meteorologischen Informationen je nach dem Namen einer Stadt zu kennen.
+Für dieses Tutorial verwenden wir eine API, die von [OpenWeather](https://openweathermap.org/){.external} bereitgestellt wird. Sie ermöglicht es, die meteorologischen Informationen je nach einer spezifizierten Stadt abzurufen.
 
-Erstellen Sie einen Account auf <https://home.openweathermap.org/users/sign_up><br>
-Sobald Ihr Account validiert wurde (per E-Mail zur Bestätigung), gehen Sie auf das Menü "My API keys". Es wurde standardmäßig ein Key erstellt, Sie können ihn abrufen und für die Fortsetzung dieses Tutorials speichern.
+Erstellen Sie einen Account auf <https://home.openweathermap.org/users/sign_up>.<br>
+Sobald Ihr Account validiert wurde (per E-Mail), gehen Sie auf zum Menü "My API keys". Es wurde ein Schlüssel erstellt, den Sie hier kopieren und für die Fortsetzung dieses Tutorials speichern können.
 
 ![Open Weather API key](images/static_website_installation_cecil_api_call01.png){.thumbnail}
 
@@ -77,7 +76,7 @@ Bearbeiten Sie anschließend die erstellte Seite:
 nano pages/weather.md
 ```
 
-Ändern Sie den Kopf der Datei, damit die Seite im Menü erscheint:
+Ändern Sie den Header der Datei, damit die Seite im Menü erscheint:
 
 ```
 ---
@@ -105,29 +104,29 @@ menu: main
 </div>
 ```
 
-Erstellen Sie die HTML-Seite mit folgendem Befehl:
+Erzeugen Sie die HTML-Seite mit folgendem Befehl:
 
 ```bash
 php cecil.phar build
 ```
 
-Überprüfen Sie das Ergebnis in Ihrem Browser und klicken Sie auf den "Weather" Link, der im Hauptmenü hinzugefügt wurde:
+Überprüfen Sie das Ergebnis in Ihrem Browser und klicken Sie auf den Link "Weather", der im Hauptmenü hinzugefügt wurde:
 
 ![Test new page](images/static_website_installation_cecil_api_call02.png){.thumbnail}
 
 ### JavaScript-Code hinzufügen
 
-Es ist nicht möglich, einen `<script>` Beacon in eine Markdown-Datei hinzuzufügen. Ändern Sie das standardmäßig bereitgestellte Template.
+Es ist nicht möglich, einen `<script>` Tag in eine Markdown-Datei einzufügen. Ändern Sie das Standard-Template.
 
 #### Template bearbeiten
 
-Die Templates sind im `Layouts`-Verzeichnis angeordnet. Sie können sie mit folgendem Befehl anzeigen:
+Die Templates sind im Verzeichnis `layouts` enthalten. Sie können sie mit folgendem Befehl anzeigen:
 
 ```bash
 ls -la layouts
 ```
 
-Die Datei enthält ein `blog`-Verzeichnis und eine `index.html.twig`-Datei:
+Die Datei enthält das Verzeichnis `blog` und die Datei `index.html.twig`:
 
 ![Layouts Directory](images/static_website_installation_cecil_api_call03.png){.thumbnail}
 
@@ -135,24 +134,25 @@ Die Datei enthält ein `blog`-Verzeichnis und eine `index.html.twig`-Datei:
 
 ![Cecil layouts index file](images/static_website_installation_cecil_api_call04.png){.thumbnail}
 
-Die Datei bezieht sich auf ein Template, das nicht im Verzeichnis vorhanden ist. Diese (und andere) Datei ist tatsächlich in der Datei `cecil.phar` enthalten. Die Domainendungen `.phar` bezeichnen Archive von PHP-Dateien, die ohne Komprimierung bearbeitet werden können.
-Dekomprimieren Sie die Dateien dieses Archivs, um sie sichtbar zu machen:
+Die Datei bezieht sich auf ein Template, das nicht im Verzeichnis vorhanden ist. Diese und weitere Dateien sind in `cecil.phar` enthalten. Dateien mit der Erweiterung `.phar` sind PHP-Archivdateien, die ohne Dekomprimierung bearbeitet werden können.
+
+Entpacken Sie die Dateien dieses Archivs, um sie sichtbar zu machen:
 
 ```bash
 php cecil.phar util:extract
 ```
 
-Tragen Sie den Inhalt des `layouts` Verzeichnisses erneut ein:
+Anzeige des Inhalts von `layouts`:
 
 ![Cecil layouts directory including unkompriessed files](images/static_website_installation_cecil_api_call05.png){.thumbnail}
 
-Ändern Sie das Standardtemplate, um ein `<skript>`-Signal einzufügen, das den Code für den Aufruf an die API enthält:
+Ändern Sie das Standard-Template, um einen `<skript>` Tag einzufügen, der den Code für den API-Aufruf enthält:
 
 ```bash
 nano layouts/_default/page.html.twig
 ```
 
-Dieser Bake und sein Inhalt sind vor dem fermantischen `</body>` Baken am Seitenende anzubringen:
+Dieser Tag und dessen Inhalt sind vor dem schließenden `</body>` am Seitenende einzufügen:
 
 ```twig
     </footer>
@@ -164,20 +164,20 @@ Dieser Bake und sein Inhalt sind vor dem fermantischen `</body>` Baken am Seiten
 </html>
 ```
 
-Wenn eine oder mehrere `assets`-Dateien geändert werden, rekonstruieren Sie den Cache mit folgendem Befehl:
+Wenn eine oder mehrere Dateien in `assets` geändert wurden, muss der Cache mit folgendem Befehl erneuert werden:
 
 ```bash
 php cecil.phar cache:clear:assets
 ```
 
-Wenn die Änderungen in Ihrem Browser nicht aktiv sind, leeren Sie dessen Cache.
-Sie können auch die auf Ihrem Webhosting erstellten Dateien löschen:
+Wenn die Änderungen in Ihrem Browser nicht angezeigt werden, leeren Sie den Cache.
+Sie können auch die auf Ihrem Webhosting erzeugten Dateien löschen:
 
 ```bash
 php cecil.phar clear
 ```
 
-Rekonstruieren Sie anschließend Ihre Lösung mit folgendem Befehl:
+Regenerieren Sie anschließend die Seite mit folgendem Befehl:
 
 ```bash
 php cecil.phar build
@@ -185,29 +185,29 @@ php cecil.phar build
 
 #### JavaScript-Datei hinzufügen
 
-JavaScript-Dateien, wie CSS-Dateien, sind im Verzeichnis `assets` einzutragen. Sie können sie in verschiedenen Verzeichnissen organisieren.
+JavaScript-Dateien, wie etwa CSS-Dateien, sind im Verzeichnis `assets` zu platzieren. Sie können sie in verschiedenen Verzeichnissen organisieren.
 
-Erstellen Sie die zuvor erwähnte `script.js`-Datei im Wurzelverzeichnis des `assets`:
+Erstellen Sie die zuvor erwähnte Datei `script.js` im Wurzelverzeichnis `assets`:
 
 ```bash
 nano assets/script.js
 ```
 
-Ersetzen Sie den Wert der `apiKey`-Variablen mit dem zuvor auf der [OpenWeather](https://openweathermap.org/){.external}-Seite abgerufenen Schlüssel.
+Ersetzen Sie den Wert der Variable `apiKey` mit Ihrem zuvor auf [OpenWeather](https://openweathermap.org/){.external} erhaltenen Schlüssel.
 
 ```javascript
 let apiKey = '123456789'; // Ersetzen Sie diesen Wert
-let city = 'Roubaix'; // Geben Sie hier die Standardstadt an, die auf der Wetterseite angezeigt wird
-getTemperature(city);  // Anruf der die API rufenden Funktion mit dem Parameter 'city'
+let city = 'Roubaix'; // Geben Sie hier die Stadt an, die auf der Wetterseite angezeigt wird
+getTemperature(city);  // Aufrufende Funktion mit dem Parameter "city"
 
-// Ereignis zum Klick auf "Change City" hinzugefügt
+// Ereignis zum Klick auf "Change City"
 let button = document.querySelector('#modify');
 button.addEventListener('click', () => {
     city = prompt('Choose a city');
     getTemperature(city);
 });
 
-// API Anruf-Funktion unter Verwendung eines XMLHttpRequest Objekts für eine asynchrone Anfrage
+// API-Funktion unter Verwendung eines Objekts "XMLHttpRequest" für eine asynchrone Anfrage
 function getTemperature(city) {
     let url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey + '&units=metric';
     let xhrQuery = new XMLHttpRequest();
@@ -223,7 +223,7 @@ function getTemperature(city) {
                 document.querySelector('#city').textContent = city;
                 document.querySelector('#temperatureValue').textContent = temperature;
             } else {
-                alert('A problem has occurred, please come try later.');
+                alert('A problem has occurred, please try later.');
             }
         }
     };
@@ -232,32 +232,32 @@ function getTemperature(city) {
 
 ### Tests
 
-Rufen Sie Ihre Website nun über einen Webbrowser auf:
+Rufen Sie Ihre Website nun in einem Webbrowser auf.
 
 ![Web page with JavaScript running](images/static_website_installation_cecil_api_call06.png){.thumbnail}
 
-Klicken Sie auf "Stadt wechseln" und geben Sie den Namen einer Gemeinde ein:
+Klicken Sie auf "Change City" und geben Sie den Namen einer Stadt ein:
 
 ![Select a new city](images/static_website_installation_cecil_api_call07.png){.thumbnail}
 
-![Updated Seite](images/static_website_installation_cecil_api_call08.png){.thumbnail}
+![Updated](images/static_website_installation_cecil_api_call08.png){.thumbnail}
 
-### Schluss
+### Fazit
 
-In dieser Anleitung erfahren Sie, wie dynamische Daten, die über APIs aus externen Quellen gewonnen wurden, integriert werden. Erstellen und pflegen Sie eine Website, indem Sie den Inhalt dieser Seiten manuell ändern oder neue erstellen. Gleichzeitig bereichern sie ihre Inhalte über andere Websites.
+Dynamische Daten, die über APIs externer Quellen bezogen wurden, können wie oben beschrieben in statische Webseiten integriert werden. Erstellen und pflegen Sie eine Website, indem Sie den Inhalt dieser Seiten manuell ändern oder neue erstellen. Gleichzeitig bereichern sie ihre Inhalte mithilfe externer Websites.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
-- Einige APIs zum Testen auf Ihrer Website
+- Weitere APIs für Ihre Website:
     - [Numbers API](http://numbersapi.com/#42){.external}
     - [NASA](https://api.nasa.gov/){.external}
     - [News API](https://newsapi.org/){.external}
     - [Polygon.io](https://polygon.io/){.external}
-    - eine Liste öffentlicher [APIs](https://github.com/public-api-lists/public-api-lists){.external}
-- Die [Cecil-Steuerung](https://cecil.app/documentation/commands/){.external}.
+    - [Liste öffentlicher APIs](https://github.com/public-api-lists/public-api-lists){.external}
+- [Cecil Befehlsreferenz](https://cecil.app/documentation/commands/){.external}
 
-Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/).
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
-Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote einsehen](https://www.ovhcloud.com/de/support-levels/).
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
