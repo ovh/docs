@@ -148,12 +148,12 @@ Click `Required for lauching blueprints from marketplace`{.action} to the right 
 
 ![01 create Project 17](images/01-create-project-17.png){.thumbnail}
 
-Enter this information :
+Enter this information:
 
-* **Cluster** : `choosing your cluster`
-* **vCPUs** : `4`
-* **Core per vCPU** : `1`
-* **Memory (GiB)** : `4`
+* **Cluster**: `choosing your cluster`
+* **vCPUs**: `4`
+* **Core per vCPU**: `1`
+* **Memory (GiB)**: `4`
 * **Image** : `WS2022EN-SYSPREPED`
 
 > [!primary]
@@ -171,13 +171,13 @@ Choose the network adapter in the `production`{.action} VLAN, check the `Check l
 
 ![01 create Project 20](images/01-create-project-20.png){.thumbnail}
 
-Go to the `Linux`{.action} tab, enter this information :
+Go to the `Linux`{.action} tab, enter this information:
 
-* **Cluster** : `choosing your cluster`
-* **vCPUs** : `4`
-* **Core per vCPU** : `1`
-* **Memory (GiB)** : `4`
-* **Image** : `jammy-server-cloudimg-amd64.img`
+* **Cluster**: `choosing your cluster`
+* **vCPUs**: `4`
+* **Core per vCPU**: `1`
+* **Memory (GiB)**: `4`
+* **Image**: `jammy-server-cloudimg-amd64.img`
 
 > [!primary]
 > The image is pre-configured for UBUNTU Cloud-init use and can be downloaded from the Internet at [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/). CALM allows the automation and customisation of a Linux installation through these types of images and YAML configuration files.
@@ -205,9 +205,9 @@ Click `+ Add Credential`{.action}.
 
 Enter this information:
 
-* **Name** : `WindowsAccount`
-* **Username** : `administrator`
-* **Password** : `administrator account password`
+* **Name**: `WindowsAccount`
+* **Username**: `administrator`
+* **Password**: `administrator account password`
 
 Then, click `+ Add Credential`{.action}.
 
@@ -215,9 +215,9 @@ Then, click `+ Add Credential`{.action}.
 
 Enter this information:
 
-* **Name** : `LinuxAccount`
-* **Username** : `administrator`
-* **Password** : `administrator account password`
+* **Name**: `LinuxAccount`
+* **Username**: `administrator`
+* **Password**: `administrator account password`
 
 Then, click `Save Environment`{.action}.
 
@@ -289,9 +289,9 @@ Click on the `+`{.action} button next to **Credentials**.
 
 Enter this information:
 
-- **Name** : `WindowsAccount`
-- **Username** : `administrator`
-- **Password** : `Administrator account password`
+- **Name**: `WindowsAccount`
+- **Username**: `administrator`
+- **Password**: `Administrator account password`
 
 And click on `Done`{.action}.
 
@@ -408,7 +408,7 @@ In the left-hand window, go to `Install`{.action} below the **Package** category
 
 ![03 Create Windows Blueprint 11](images/03-create-windows-blueprint11.png){.thumbnail}
 
-Enter this information 
+Enter this information: 
 
 **Task Name**: `IIS Installation`
 **Type**: `Execute`
