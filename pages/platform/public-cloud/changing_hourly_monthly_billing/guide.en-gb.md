@@ -67,6 +67,17 @@ Use the following call:
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
 
+### From a Terraform script
+
+This is possible thanks to the `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} from the resource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+
+```terraform
+metadata = {
+    "ovh-monthly-instance" = 1
+}
+```
+
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -6,67 +6,78 @@ section: 'Gestion de projets'
 order: 5
 ---
 
-**Dernière mise à jour le 22/03/2022**
+**Last updated 18th March 2022**
 
-## Objectif
+## Objective
 
-Lors de la création d’une instance Public Cloud, vous pouvez choisir entre une facturation à l’heure ou une facturation mensuelle. Les instances « à l'heure » sont facturées en *pay-as-you-go* , c'est-à-dire que chaque utilisateur paie en fin de mois, pour chaque heure commencée, la somme des ressources réellement consommées.
-<br>Les instances assujetties à un taux mensuel sont jusqu'à 50 % moins chères que les instances assujetties à un taux horaire pour la même durée. Chaque mois entamé est facturé en fin de mois.
-<br>Si vous avez initialement choisi une facturation à l'heure, vous pouvez passer à la facturation mensuelle à tout moment.
+When you create a Public Cloud instance, you can choose to be billed at either an hourly or monthly rate. Hourly-rate instances are billed on a pay-as-you-go basis, i.e. at the end of each month, users are billed for every commenced hour per actual resources used.<br>
+Monthly-rate instances are up to 50% less expensive compared to an hourly rate for the same duration. Each month commenced will be billed at the end of the month.<br>
+If you initially selected hourly billing, you can switch to monthly billing at any time.
 
-**Ce guide explique comment passer d'une facturation à l'heure vers une facturation mensuelle.**
+**This guide explains how to switch from hourly to monthly billing.**
 
 > [!warning]
 >
-> Le passage d'une facturation mensuelle vers une facturation à l'heure n'est pas possible. Si vous voulez passer à la facturation à l'heure, il vous faudra supprimer l’instance facturée mensuellement, puis créer une nouvelle instance et choisir la facturation à l'heure. Dans ce cas, nous vous conseillons de suivre ces étapes :
+> You cannot switch from monthly to hourly billing. If you would like to be billed at the hourly rate, you will need to delete your monthly-rate billing instance, create a new one, and select hourly billing. In this case we suggest that you do the following procedure:
 >
->- Créez un <i>snapshot </i>de votre instance actuelle ;
+>- Create a snapshot of your current instance.
 >
->- Créez une nouvelle instance à partir de ce <i>snapshot </i>;
+>- Create a new instance based on this snapshot.
 >
->- Supprimez l’instance à facturation mensuelle.
+>- Delete the monthly instance.
 >
 
-## Prérequis
+## Requirements
 
-- Vous devez avoir créé une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}.
-- Vous devez être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- A [Public Cloud instance](https://www.ovhcloud.com/fr/public-cloud/){.external} in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
-## En pratique
+## Instructions
 
-### Depuis l'espace client OVHcloud
+### From the OVHcloud Control Panel
 
-Dans [votre espace client](https://www.ovh.com/auth/?action=alleraugestionnaire){.external}, cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
 
-![Modifier le mode de calcul des factures](images/switch_to_monthly_updated.png){.thumbnail}
+![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
 
-Il vous faudra ensuite confirmer que vous souhaitez modifier le mode de facturation :
+You will then need to confirm that you want to change the billing rate:
 
-![Confirmer la modification du mode de calcul des factures](images/confirm_to_monthly_updated.png){.thumbnail}
+![Confirm billing calculation change](images/confirm_to_monthly_updated.png){.thumbnail}
 
-Après validation de votre choix, vous recevrez immédiatement une facture mensuelle au prorata. La prochaine facture inclura la partie du mois à l'heure (le 1er du mois jusqu'au changement) et les nouveaux frais mensuels.
+Once you have confirmed your choice, you will immediately receive a monthly prorated bill. The next bill will include the hourly-rate part of the month (1st of the month until the change) and the new monthly fee.
 
-### Depuis l'API Openstack
+### From the Openstack API
 
-Lors de la création d'une instance à l'aide de l'API Openstack, sauf si cela est spécifié dans le script de création, l'instance est automatiquement créée avec un abonnement horaire. Pour passer à un abonnement mensuel, exécutez la commande suivante :
+When creating an instance using the Openstack API, unless specified in the creation script, the instance is automatically created with an hourly subscription. To switch to a monthly subscription, execute the following command:
 
 ```bash
 openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
-Remplacez "InstanceID" par l'ID de l'instance correspondante. Cet identifiant peut être récupéré depuis l’espace client ou l’API OVHcloud.
+Replace "InstanceID" with the ID of the corresponding instance. This ID can be retrieved via the OVHcloud control panel or the OVHcloud API.
 
-### Depuis l'API OVHcloud
+### From the OVHcloud API
 
-Connectez-vous à l’[interface API OVHcloud](https://eu.api.ovh.com/) et utilisez l'appel suivant :
+Log in to the [OVHcloud API interface](https://eu.api.ovh.com/) according to the [relevant guide](../../api/first-steps-with-ovh-api/) and follow the steps below.
+
+Use the following call:
 
 > [!api]
 >
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
 
-Vous trouverez plus d'informations sur l'utilisation de l'API OVHcloud sur notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
+### From a Terraform script
 
-## Aller plus loin
+This is possible thanks to the `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} from the resource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+```terraform
+metadata = {
+    "ovh-monthly-instance" = 1
+}
+```
+
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
