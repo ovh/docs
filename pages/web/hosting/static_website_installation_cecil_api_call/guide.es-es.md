@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Añadir contenido dinámico a una página web estática generada con Cecil"
 slug: static-site-generator-cecil-use-api
-excerpt: Cómo añadir una llamada a una API externa desde la página web estática
+excerpt: "Cómo añadir una llamada a una API externa desde la página web estática"
 section: 'Tutoriales'
 order: 05
 ---
@@ -29,7 +29,7 @@ Este tutorial explica cómo utilizar el generador de sitios web [Cecil](https://
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) con acceso SSH. Este acceso permite instalar en línea de comandos una o más soluciones alternativas a las que ofrecen nuestros planes de hosting por defecto.
 - Estar familiarizado con la entrada en línea de comandos.
-- Haber instalado y configurado la aplicación **Cecil** en su alojamiento (consulte nuestro tutorial sobre [la instalación y configuración de Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)).
+- Haber instalado y configurado la aplicación **Cecil** en su alojamiento (consulte nuestro tutorial sobre [la instalación y configuración de Cecil](https://docs.ovh.com/es/hosting/install-configure-cecil/)).
 
 ## Procedimiento
 
@@ -39,13 +39,13 @@ Los pasos son los siguientes:
 
 - crear una nueva página en Cecil y añadir esta página al menú del sitio web.
 - crear una cuenta y recuperar la llave para realizar consultas a la API meteorológica.
-- modificar el archivo `.md` creado añadiendo código HTML;
+- modificar el archivo `.md` creado añadiendo código HTML.
 - Añadir `elementos` (JavaScript y CSS).
 - generar y probar la solución.
 
 ### Crear una página nueva
 
-Prepare su entorno conectándose por SSH a su alojamiento web y consulte el tutorial "[Instalar y configurar Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)" para instalar su aplicación **Cecil** en un directorio dedicado.
+Prepare su entorno conectándose por SSH a su alojamiento web y consulte el tutorial "[Instalar y configurar Cecil](https://docs.ovh.com/es/hosting/install-configure-cecil/)" para instalar su aplicación **Cecil** en un directorio dedicado.
 
 Cree un directorio y sitúese en él:
 
