@@ -3,14 +3,14 @@ title: "Tutorial - Dodaj dynamiczne treści do statycznej strony internetowej ge
 slug: static-site-generator-cecil-use-api
 excerpt: "Dowiedz się, jak dodać połączenie do zewnętrznego API na stronie statycznej WWW"
 section: 'Tutoriale'
-order: 5
+order: 05
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 16-01-2023**
+**Ostatnia aktualizacja z dnia 20-01-2023**
 
 ## Wprowadzenie
 
@@ -22,14 +22,14 @@ Tutorial wyjaśnia, jak używać generatora strony [Cecil](https://cecil.app){.e
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Jeśli masz trudności z postępuniem zgodnie z instrukcjami zawartymi w tym przewodniku, zalecamy skorzystanie z pomocy specjalisty[ ](https://partner.ovhcloud.com/pl/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+> Jeśli masz trudności z postępuniem zgodnie z instrukcjami zawartymi w tym przewodniku, zalecamy skorzystanie z [pomocy specjalisty](https://partner.ovhcloud.com/pl/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec rozwiązań oferowanych domyślnie w naszej ofercie hostingu.
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec rozwiązań oferowanych domyślnie w naszej ofercie hostingu.
 - Zaznajomiony z wprowadzaniem wiersza poleceń.
-- Instalacja i skonfigurowanie aplikacji **Cecil** na Twoim hostingu (zapoznaj się z naszym tutorialem [dotyczącym instalacji i konfiguracji Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)).
+- Instalacja i skonfigurowanie aplikacji **Cecil** na Twoim hostingu (zapoznaj się z naszym tutorialem [dotyczącym instalacji i konfiguracji Cecil](https://docs.ovh.com/pl/hosting/install-configure-cecil/)).
 
 ## W praktyce
 
@@ -38,14 +38,14 @@ Wybranym przykładem jest wykorzystanie jednego z API usługi dostarczającej da
 Etapy te są następujące:
 
 - utworzyć nową stronę Cecil i dodać tę stronę do menu strony;
-- utworzyć konto i pobrać klucz do wykonywania zapytań do interfejsu API pogody;
+- utworzyć konto i pobrać klucz do wykonywania zapytań do interfejsu API pogody
 - zmodyfikować plik `.md` utworzony poprzez dodanie kodu HTML;
 - dodawanie `assets` (JavaScript i CSS);
 - wygenerować i przetestować rozwiązanie.
 
 ### Stwórz nową stronę
 
-Przygotuj środowisko, logując się przez SSH na hostingu i postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Instalacja i konfiguracja Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)", aby zainstalować aplikację **Cecil** w dedykowanym katalogu.
+Przygotuj środowisko, logując się przez SSH na hostingu i postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Instalacja i konfiguracja Cecil](https://docs.ovh.com/pl/hosting/install-configure-cecil/)", aby zainstalować aplikację **Cecil** w dedykowanym katalogu.
 
 Stwórz katalog i umieszczaj go w:
 
@@ -135,7 +135,7 @@ Otwórz plik `index.html.twig`:
 
 ![Cecil layouts index file](images/static_website_installation_cecil_api_call04.png){.thumbnail}
 
-Plik odnosi się do szablonu, który nie jest obecny w katalogu. Ten plik (i inne) są w rzeczywistości w pliku `cecil.phar`. Rozszerzenia `.far` to archiwa plików PHP, które można obsłużyć bez rozpakowania.
+Plik odnosi się do szablonu, który nie jest obecny w katalogu. Ten plik (i inne) są w rzeczywistości w pliku `cecil.phar`. Rozszerzenia `.phar` to archiwa plików PHP, które można obsłużyć bez rozpakowania.
 Rozłącz pliki tego archiwum, aby były widoczne:
 
 ```bash
