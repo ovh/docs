@@ -87,7 +87,7 @@ In the new window that opens, enter your current password first. Then enter your
 
 [Getting started with the MX Plan solution](https://docs.ovh.com/ca/en/emails/web_hosting_an_overview_of_ovh_email/)
 
-[Getting started with the Hosted Exchange solution](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_20132016_configuring_the_solution_for_the_first_time/)
+[Getting started with the Hosted Exchange solution](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/configuring-exchange/)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 

@@ -86,7 +86,7 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 
 [Primeros pasos con la solución MXplan](https://docs.ovh.com/us/es//emails/primeros-pasos-correo-compartido/)
 
-[Primeros pasos con la solución Hosted Exchange](https://docs.ovh.com/us/es//microsoft-collaborative-solutions/exchange_20132016_primera_configuracion_del_servicio/)
+[Primeros pasos con la solución Hosted Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_primera_configuracion_del_servicio/)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 
