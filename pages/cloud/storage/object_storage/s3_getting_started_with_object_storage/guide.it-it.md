@@ -16,7 +16,7 @@ This guide is designed to familiarise you with the management of your containers
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://docs.ovh.com/it/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - An [S3 user](https://docs.ovh.com/it/storage/s3/identity-and-access-management/) already created
 
