@@ -1,7 +1,7 @@
 ---
-title: "Modifier le mot de passe d'une adresse e-mail MX Plan"
+title: "Modifier le mot de passe d'une adresse e-mail"
 slug: modifier-mot-de-passe-adresse-email
-excerpt: "Apprenez à changer le mot de passe d'une adresse e-mail créée dans le cadre de l'offre MX Plan"
+excerpt: "Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud"
 section: 'Premiers pas'
 order: 03
 ---
@@ -111,8 +111,6 @@ Vous trouverez, dans le tableau ci-dessous, les informations nécessaires pour i
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> L'offre apparait dans le cadre « **Abonnement** » sur la droite, l'offre historique *ne possède pas* de référence serveur.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>La nouvelle offre possède une « **Référence serveur** » dans le cadre « **Résumé** » sur la gauche.|
 
 ## Aller plus loin
-
-[En apprendre plus sur la sécurité des mots de passe grâce à l'ANSSI](http://www.ssi.gouv.fr/guide/mot-de-passe/).
 
 [Premiers pas avec la solution MXplan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/)
 
