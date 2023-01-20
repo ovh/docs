@@ -974,7 +974,7 @@ Saisissez un `Nom`{.action} dans **Application Name** et cliquez sur `Deploy`{.a
 
 La suppression d'une application déployée est aussi simple que son déploiement.
 
-Cliquez sur l'icônes des `Blueprints`{.action} à gauche  et cochez sur une application déployée.
+Cliquez sur l'icônes des `Blueprints`{.action} à gauche et cochez sur une application déployée.
 
 ![09 delete deployed APP 01](images/09-delete-deployed-app01.png){.thumbnail}
 
