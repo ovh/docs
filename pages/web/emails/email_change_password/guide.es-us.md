@@ -1,58 +1,71 @@
 ---
 title: 'Cambiar la contraseña de una dirección de correo'
 slug: cambiar-contrasena-direccion-correo
-excerpt: 'Cómo cambiar la contraseña de una dirección de correo electrónico'
+excerpt: 'Cómo cambiar la contraseña de una dirección de correo de OVHcloud'
 section: 'Primeros pasos'
 order: 03
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 03/01/2023**
 
 ## Objetivo
 
-Las direcciones de correo de la solución MX Plan permiten enviar y recibir mensajes desde cualquier dispositivo. Para acceder a estas direcciones, es necesario disponer de su contraseña.
+Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante la contraseña asociada. Según su solución de correo, podrá modificarla de dos formas:
 
-**Esta guía explica cómo cambiar la contraseña de una dirección de correo de la solución MX Plan.**
+- Desde el webmail
+- Desde el área de cliente de OVHcloud
+
+**Esta guía explica cómo cambiar la contraseña de una dirección de correo electrónico de OVHcloud.**
 
 ## Requisitos
 
-- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
-- En función del método que utilice, estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección `Web Cloud`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook en la Web.
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) o contratada por separado como solución autónoma, como [**Hosted Exchange**](https://www.ovhcloud.com/es/emails/hosted-exchange/)).
+- Según el método utilizado: Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action} o estar conectado a la dirección de correo electrónico desde el [webmail](https://www.ovhcloud.com/es/mail/).
 
 > [!primary]
 >
-> Si cambia la contraseña de una dirección de correo electrónico, también deberá modificarla en todos los dispositivos en los que esté configurada dicha dirección.
+> Al cambiar la contraseña de una dirección de correo, también deberá modificarla en todos los dispositivos en los que esté configurada la dirección de correo. No dude en consultar nuestras guías de configuración para su cliente de correo desde la página de inicio de su solución de correo:
+>
+> - [MXplan](https://docs.ovh.com/us/es//emails/)
+> - [Exchange](https://docs.ovh.com/us/es//microsoft-collaborative-solutions/)
 >
 
 ## Procedimiento
 
-En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+### Cambiar la contraseña desde el área de cliente <a name="controlpanel"></a>
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
+> [!warning]
+> Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
-|Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
-|---|---|
-|![Correo electrónico](images/mxplan-password-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro **Suscripción**, en el epígrafe **Producto**.|![Correo electrónico](images/mxplan-password-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro **Resumen**, en el epígrafe **Referencia del servidor**.|
-|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](#mx-legacy).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](#mx-new).|
+> [!tabs]
+> **Emails MXplan**
+>>
+>> Si no conoce el tipo de producto MXplan que posee, consulte el apartado [Identifique su producto MXplan](#whichmxplan).<br>
+>> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Correo electrónico`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. <br>
+>> Haga clic en el botón <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
+>>![email](images/email-password-mxplan-new01.png) {.thumbnail}<br>
+>>
+> **Exchange**
+>>
+>> Haga clic en `Microsoft`{.action} / `Exchange`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.<br>
+>> Haga clic en el botón <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
+>>![Correo electrónico](images/email-password-exchange01.png){.thumbnail}<br>
+>>
 
-### Nueva versión de la solución MX Plan <a name="mx-new"></a>
+### Cambiar la contraseña desde el webmail
 
-Si dispone de la nueva versión de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución.  
+La modificación de su contraseña a través del webmail está disponible para los servicios de correo electrónico de OVHcloud que utilizan **OWA** (**O**utlook **W**eb **A**pplication):
 
-![Correo electrónico](images/mxplan-password-new-step1.png){.thumbnail}
+- Emails MXplan
+- Exchange
 
-Existen dos formas de cambiar la contraseña de una dirección de correo: desde el webmail Outlook en la Web o desde el área de cliente. Continúe leyendo esta guía en el apartado correspondiente al método que desee utilizar.
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="Vídeo de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-- [Cambiar la contraseña desde el webmail Outlook en la Web](./#cambiar-la-contrasena-desde-el-webmail-outlook-en-la-web): Para seguir este procedimiento necesitará la contraseña actual. 
-- [Cambiar la contraseña desde el área de cliente de OVHcloud](./#cambiar-la-contrasena-desde-el-area-de-cliente-de-ovhcloud): En este caso, no necesitará la contraseña actual.
-
-#### Cambiar la contraseña desde el webmail Outlook en la Web
-
-Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
+Acceda a la página [Webmail](https://www.ovhcloud.com/es/mail/) e introduzca su dirección de correo electrónico completa y la contraseña actual. Haga clic en el botón `Conexión`{.action}. 
 
 ![Correo electrónico](images/mxplan-password-new-step2.png){.thumbnail}
 
-Se abrirá la bandeja de entrada. Haga clic en el icono con forma de rueda dentada situado en la barra superior y seleccione `Opciones`{.action}.
+Haga clic en el botón <i class="icons-gear-concept icons-masterbrand-blue"></i>situado en la barra superior y seleccione `Opciones`{.action}.
 
 ![Correo electrónico](images/mxplan-password-new-step3.png){.thumbnail}
 
@@ -60,7 +73,7 @@ En la columna izquierda, despliegue el menú `General`{.action} y haga clic en `
 
 ![Correo electrónico](images/mxplan-password-new-step4.png){.thumbnail}
 
-En la nueva ventana, introduzca la contraseña actual, escriba una nueva contraseña y repítala en el último campo. Haga clic en el botón  `Guardar`{.action} para aplicar el cambio.
+En la nueva ventana, introduzca la contraseña actual, escriba una nueva contraseña y repítala en el último campo. Haga clic en el botón `Guardar`{.action} para aplicar el cambio.
 
 > [!primary]
 >
@@ -69,48 +82,12 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Cambiar la contraseña desde el área de cliente de OVHcloud
-
-Seleccione el MX Plan en la columna izquierda y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con todas las direcciones de correo electrónico creadas en el MX Plan. Haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}.
-
-![Correo electrónico](images/mxplan-password-new-step6.png){.thumbnail}
-
-En la nueva ventana, introduzca la nueva contraseña y confírmela. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
-
-A continuación, haga clic en `Siguiente`{.action}, compruebe que la información que se muestra en el resumen es correcta y, por último, haga clic en `Aceptar`{.action}. El cambio de contraseña tardará unos minutos en aplicarse.
-
-![Correo electrónico](images/mxplan-password-new-step7.png){.thumbnail}
-
-Una vez que haya cambiado la contraseña, puede acceder a la dirección de correo electrónico utilizando el webmail o configurando la cuenta en un dispositivo:
-
-- **Utilizar el webmail**: Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](../uso-outlook-en-la-web/){.external}.
-
-- **Utilizar un cliente de correo compatible**: Introduzca la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática en el dispositivo solicitándole que introduzca la nueva contraseña. Si no es el caso, puede consultar nuestras [guías de configuración](../) o contactar con el editor del programa o la aplicación que utilice, ya que el procedimiento es distinto en todos ellos.
-
-### Versión histórica de la solución MX Plan <a name="mx-legacy"></a>
-
-Si dispone de la versión histórica de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución. 
-
-![Correo electrónico](images/mxplan-password-legacy-step1.png){.thumbnail}
-
-Para cambiar la contraseña de una dirección de correo, abra la pestaña `Correo electrónico`{.action}. Se mostrará una tabla con todas las direcciones de correo electrónico creadas en el MX Plan. Haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cambiar la contraseña`{.action}.
-
-![Correo electrónico](images/mxplan-password-legacy-step2.png){.thumbnail}
-
-En la nueva ventana, introduzca la nueva contraseña en los dos campos. Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que la contraseña no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos o fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
-
-A continuación, haga clic en `Aceptar`{.action}. El cambio de contraseña tardará unos minutos en aplicarse.
-
-![Correo electrónico](images/mxplan-password-legacy-step3.png){.thumbnail}
-
-Una vez que haya cambiado la contraseña, puede acceder a la dirección de correo electrónico utilizando el webmail o configurando la cuenta en un dispositivo:
-
-- **Utilizar el webmail**: Vaya a la [página de conexión al webmail](https://www.ovh.es/mail/){.external} e introduzca su dirección de correo y la nueva contraseña. Si acaba de cambiar la contraseña y la autenticación falla, espere unos minutos y vuelva a intentar conectarse. Para más información, consulte nuestra guía [Webmail: Guía de uso de Roundcube](../webmail_guia_de_uso_de_roundcube/){.external}.
-
-- **Utilizar un cliente de correo compatible**: Introduzca la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática en el dispositivo solicitándole que introduzca la nueva contraseña. Si no es el caso, puede consultar nuestras [guías de configuración](../) o contactar con el editor del programa o la aplicación que utilice, ya que el procedimiento es distinto en todos ellos.
-
 ## Más información
 
-[*Privacidad y seguridad en internet*, «Ficha 3: ¿Son suficientes las contraseñas?)», AEPD](https://www.aepd.es/media/guias/guia-privacidad-y-seguridad-en-internet.pdf){.external}
+[Primeros pasos con la solución MXplan](https://docs.ovh.com/us/es//emails/primeros-pasos-correo-compartido/)
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+[Primeros pasos con la solución Hosted Exchange](https://docs.ovh.com/us/es//microsoft-collaborative-solutions/exchange_20132016_primera_configuracion_del_servicio/)
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
