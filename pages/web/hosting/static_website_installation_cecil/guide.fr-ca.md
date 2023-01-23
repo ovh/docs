@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 04
 ---
 
-**Dernière mise à jour le 16/01/2023**
+**Dernière mise à jour le 17/01/2023**
 
 ## Objectif
 
@@ -18,17 +18,17 @@ Un site web composé essentiellement de pages web statiques garantit un meilleur
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) incluant un accès SSH. Cet accès permet d'installer en ligne de commande une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergements web.
+- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant un accès SSH. Cet accès permet d'installer en ligne de commande une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergements web.
 - Être familiarisé à la saisie en ligne de commande.
-- Être en capacité de transférer des fichiers en FTP avec un client comme [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
-- Paramétrer votre zone DNS pour faire pointer votre nom de domaine (ou sous-domaine) vers votre hébergement web mutualisé. Cela s'avère notamment utile si vous souhaitez héberger plusieurs sites en [multisites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) sur votre hébergement web mutualisé.
+- Être en capacité de transférer des fichiers en FTP avec un client comme [FileZilla](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/).
+- Paramétrer votre zone DNS pour faire pointer votre nom de domaine (ou sous-domaine) vers votre hébergement web mutualisé. Cela s'avère notamment utile si vous souhaitez héberger plusieurs sites en [multisites](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) sur votre hébergement web mutualisé.
 - Installer préalablement [Composer](https://getcomposer.org/){.external} avec le fichier `composer.phar` à la racine de votre hébergement web mutualisé ou dans le dossier cible de votre nom de domaine.
 
 ## En pratique
 
-Les [hébergements web mutualisés](https://www.ovhcloud.com/fr/web-hosting/) permettent de déclarer des domaines ou sous-domaines en multisites. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
+Les [hébergements web mutualisés](https://www.ovhcloud.com/fr-ca/web-hosting/) permettent de déclarer des domaines ou sous-domaines en multisites. Un domaine ou un sous-domaine est nécessaire pour déployer votre site web réalisé avec **Cecil**.
 
-Pour vous aider à déclarer un domaine ou un sous-domaine en multisite sur votre hébergement, consultez notre page « [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ».
+Pour vous aider à déclarer un domaine ou un sous-domaine en multisite sur votre hébergement, consultez notre page « [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ».
 
 ### Créer le répertoire dans lequel seront vos fichiers
 
@@ -91,7 +91,7 @@ Vous pouvez maintenant voir le résultat en vous rendant sur votre nom de domain
 
 Pour visualiser le résultat de votre site sur votre navigateur, modifiez le pointage de votre nom de domaine ou de sous-domaine dans le répertoire `_site` créé précédemment lors de l'installation de **Cecil**.
 
-Si votre nom de domaine ou sous-domaine est hébergé chez OVHcloud, consultez nos guides relatifs à la [configuration DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) et à la mise en place d'un [multisites sur votre hébergement web](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+Si votre nom de domaine ou sous-domaine est hébergé chez OVHcloud, consultez nos guides relatifs à la [configuration DNS](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/) et à la mise en place d'un [multisites sur votre hébergement web](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
 
 ### Configurer son site
 
@@ -151,7 +151,7 @@ Vous pouvez le visualiser sur votre serveur en tapant l'URL de votre site, suivi
 
 #### Modification sur le serveur
 
-L'édition des fichiers _Markdown_ peut se faire directement sur le serveur d'hébergement web. Sur votre offre d'[hébergement Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](https://www.vim.org/){.external}.
+L'édition des fichiers _Markdown_ peut se faire directement sur le serveur d'hébergement web. Sur votre offre d'[hébergement Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/), votre accès SSH pour permet d'utiliser indifféremment [GNU nano](https://nano-editor.org/){.external}, [vi](https://ex-vi.sourceforge.net/){.external} ou [vim](https://www.vim.org/){.external}.
 Les captures d'écran du présent tutoriel ont été réalisées sous **GNU nano**.
 
 Éditez le fichier `mypage.md` situé dans le répertoire `pages` en tapant la commande suivante si vous êtes à la racine de votre site:
@@ -215,4 +215,4 @@ Le [site officiel de l'application Cecil](https://cecil.app/){.external}
 
 Un [guide sur le format Markdown](https://www.markdownguide.org/){.external}
 
-Notre [guide sur l'utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+Notre [guide sur l'utilisation de FileZilla](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/)
