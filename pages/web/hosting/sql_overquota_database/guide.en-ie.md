@@ -56,9 +56,9 @@ The first step is to identify the large table or tables in your database.
 
 #### 1.1 - Connect to the database via phpMyAdmin
 
-Retrieve the password for accessing your database directly in your website’s configuration file. Perform this action using the **step 1** in our guide to [changing a database password](https://docs.ovh.com/ie/en/hosting/change-password-database/).
+Retrieve the password for accessing your database directly from your website’s configuration file. Perform this action using the **step 1** in our guide to [changing a database password](https://docs.ovh.com/ie/en/hosting/change-password-database/).
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the navigation bar at the top of the screen. Click on `Hosting plans`{.action} then choose the web hosting plan associated with your OVHcloud shared database. Next, go to the `Databases`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the navigation bar at the top of the screen. Click on `Hosting plans`{.action} and choose the web hosting plan associated with your OVHcloud shared database. Next, go to the `Databases`{.action} tab.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
