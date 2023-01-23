@@ -131,7 +131,7 @@ php cecil.phar new:page mypage.md
 
 Um ficheiro `mypage.md` é criado na raiz do diretório `/pages`.
 
-Substitua `mypage por um nome próprio.
+Substitua `mypage` por um nome próprio.
 
 ![Instalação Cecil](images/static_website_installation_cecil05.png){.thumbnail}
 
@@ -164,7 +164,7 @@ Editar o ficheiro `mypage.md` situado no diretório `pages` o seguinte comando s
  nano pages/mypage.md
 ```
 
-Substitua `mypage por um nome próprio.
+Substitua `mypage` por um nome próprio.
 
 ![Edição do ficheiro em GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
 
