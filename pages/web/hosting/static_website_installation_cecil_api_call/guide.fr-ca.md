@@ -18,14 +18,14 @@ Ce tutoriel vous décrit comment utiliser le générateur de site [Cecil](https:
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Si vous éprouvez des difficultés à suivre les étapes de ce tutoriel, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) . En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Si vous éprouvez des difficultés à suivre les étapes de ce tutoriel, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) . En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
 >
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) incluant un accès SSH. Cet accès permet d'installer, en ligne de commande, une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergement web.
+- Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant un accès SSH. Cet accès permet d'installer, en ligne de commande, une ou plusieurs solutions alternatives à celles proposées par défaut dans nos offres d'hébergement web.
 - Être familiarisé à la saisie en ligne de commande.
-- Avoir installé et configuré l'application **Cecil** sur votre hébergement (reportez-vous à notre tutoriel sur [l'installation et la configuration de Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/)).
+- Avoir installé et configuré l'application **Cecil** sur votre hébergement (reportez-vous à notre tutoriel sur [l'installation et la configuration de Cecil](https://docs.ovh.com/ca/fr/hosting/install-configure-cecil/)).
 
 ## En pratique
 
@@ -41,7 +41,7 @@ Les étapes sont les suivantes&nbsp;:
 
 ### Créer une nouvelle page
 
-Préparez votre environnement en vous connectant en SSH sur votre hébergement web et reportez-vous au tutoriel « [Installer et configurer Cecil](https://docs.ovh.com/fr/hosting/install-configure-cecil/) » pour installer votre application **Cecil** dans un répertoire dédié.
+Préparez votre environnement en vous connectant en SSH sur votre hébergement web et reportez-vous au tutoriel « [Installer et configurer Cecil](https://docs.ovh.com/ca/fr/hosting/install-configure-cecil/) » pour installer votre application **Cecil** dans un répertoire dédié.
 
 Créez un répertoire et placez-vous dedans&nbsp;:
 
@@ -252,8 +252,8 @@ Ce tutoriel vous présente un exemple d'intégration de données dynamiques réc
     - une liste d'[API publiques](https://github.com/public-api-lists/public-api-lists){.external}
 - Les [commandes Cecil](https://cecil.app/documentation/commands/){.external}.
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
