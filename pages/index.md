@@ -351,6 +351,7 @@
             + [Enabling Virtual Machine Encryption (VM Encrypt)](cloud/private-cloud/vm_encrypt)
             + [Using VMware Hyperconvergence with vSAN](cloud/private-cloud/vmware_vsan)
             + [Adding an ESXi server to a vSAN cluster](cloud/private-cloud/vmware_vsan_add_host)
+            + [Updating the vSAN disk format](cloud/private-cloud/vmware_vsan_disk_format_upgrade)
             + [Managing vSAN fault domains](cloud/private-cloud/vmware_vsan_fault_domain)
             + [VMware vMotion](cloud/private-cloud/vmware_vmotion_new)
             + [VMware HA (High Availability)](cloud/private-cloud/vmware_ha_high_availability)
