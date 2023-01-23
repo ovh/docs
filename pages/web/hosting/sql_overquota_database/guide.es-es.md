@@ -27,7 +27,7 @@ Este tutorial explica las acciones que debe realizar cuando la base de datos en 
 ## Requisitos
 
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Disponer de un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) con una base de datos en alojamiento compartido de OVHcloud asociada.
+- Disponer de un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) con una base de datos en alojamiento compartido de OVHcloud asociada.
   
 ## Procedimiento
 
