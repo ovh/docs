@@ -6,13 +6,13 @@ section: Premiers pas
 order: 3
 ---
 
-**Dernière mise à jour le 24/03/2022**
+**Dernière mise à jour le 23/01/2023**
 
 ## Objectif
 
 Contrairement aux instances Windows créées dans le réseau public, les instances Windows créées avec le mode réseau privé (vrack) n'ont pas leurs licences Windows automatiquement activées. Dans ce cas, vous devez activer la licence manuellement afin d'avoir accès à tous les services Windows.
 
-**Ce guide a pour objectif de vous accompagner dans la configuration de l’interface publique de vos instances Public Cloud au sein de votre vRack.**
+**Ce guide a pour objectif de vous accompagner dans la configuration de l’interface public de vos instances Public Cloud au sein de votre vRack.**
 
 ## Prérequis
 
@@ -24,7 +24,7 @@ Nous vous recommandons de consultez le guide [Accéder à l’interface Horizon]
 
 ## En pratique
 
-### Attacher un port publique "Ext-Net" à une instance.
+### Attacher un port public « Ext-Net » à une instance.
 
 #### Depuis l'interface Horizon
 
@@ -50,12 +50,12 @@ Sélectionnez votre interface et validez :
 
 Avant de poursuivre, Il est recommandé de consulter ces guides :
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/)
+- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
+- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/).
 
 Pour commencer, rassemblez toutes les informations nécessaires:
 
-**Identifaction de vos instances :**
+**Identification de vos instances :**
 
 ```bash
 openstack server list
@@ -64,7 +64,8 @@ openstack server list
 +--------------------------------------+-------------------+--------+---------------------------------------------------------------------+----------------------------------------+----------+
 | f095ad19-5c0a-4ef5-8e01-b3590bc9c6f1 | MyInstance        | ACTIVE |                                                                     | Windows Server 2016 Standard (Desktop) | win-b2-7 |
 +--------------------------------------+-------------------+--------+---------------------------------------------------------------------+----------------------------------------+----------+
-``` 
+```
+
 
 **Identification des réseaux publics et privés :**
 
@@ -80,7 +81,7 @@ openstack network list
 +--------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Avec les éléments récupérés précédemment, vous pouvez créer un port publique nommé « Ext-Net » sur le subnet « Ext-Net » et l'attacher à l'instance :
+Avec les éléments récupérés précédemment, vous pouvez créer un port public nommé « Ext-Net » sur le subnet « Ext-Net » et l'attacher à l'instance :
 
 ```bash
 openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
@@ -138,13 +139,13 @@ openstack port list --name Ext-Net
 | ed34add5-aa76-4aab-97af-815724d76e2c | Ext-Net | fa:16:3e:68:35:9c | ip_address='2001:41d0:304:400::128f', subnet_id='4aa6cac1-d5cd-4e25-b14b-7573aeabcab1'| DOWN   |
 |                                      |         |                   | ip_address='57.128.42.227', subnet_id='22e2d853-1b86-48f3-8596-9d12c7693dc7'          |        |
 +--------------------------------------+---------+-------------------+---------------------------------------------------------------------------------------+--------+
-``` 
+```
 
 Attacher le port à l'instance :
 
 ```bash
 openstack server add port <server_id> <port_id>
-``` 
+```
 
 #### Activer votre système Windows
 
@@ -175,6 +176,6 @@ slmgr.vbs -dli
 
 ## Aller plus loin
 
-[Corriger la clé d’activation Windows Server](https://docs.ovh.com/fr/dedicated/windows-key/)
+[Corriger la clé d’activation Windows Server](https://docs.ovh.com/fr/dedicated/windows-key/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
