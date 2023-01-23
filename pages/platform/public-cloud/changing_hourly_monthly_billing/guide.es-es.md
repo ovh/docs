@@ -6,7 +6,7 @@ section: 'Gestión del proyecto'
 order: 07
 ---
 
-**Última actualización: 21/03/2022**
+**Última actualización: 23/01/2023**
 
 ## Objetivo
 
@@ -68,11 +68,11 @@ Utilice la siguiente llamada:
 
 ### Desde un script Terraform
 
-Esto es posible gracias a los `metadatos` [atributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} del recurso [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Esto es posible gracias a los `metadata` [atributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} del recurso [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
 
-```terraforma
-metadatos = {
-"instancia-mensual-ovh" = 1
+```terraform
+metadata = {
+"ovh-monthly-instance" = 1
 }
 ```
 

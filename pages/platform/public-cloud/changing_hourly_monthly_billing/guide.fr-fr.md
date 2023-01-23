@@ -6,7 +6,7 @@ section: 'Gestion de projets'
 order: 5
 ---
 
-**Dernière mise à jour le 22/03/2022**
+**Dernière mise à jour le 23/01/2023**
 
 ## Objectif
 
@@ -65,6 +65,8 @@ Connectez-vous à l’[interface API OVHcloud](https://eu.api.ovh.com/) et utili
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
 
+Vous trouverez plus d'informations sur l'utilisation de l'API OVHcloud sur notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
+
 ### Depuis un script Terraform
 
 Ceci est possible grâce aux `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} de la ressource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external} :
@@ -73,8 +75,7 @@ Ceci est possible grâce aux `metadata` [attribute](https://registry.terraform.i
 metadata = {
 "ovh-monthly-instance" = 1
 }
-
-Vous trouverez plus d'informations sur l'utilisation de l'API OVHcloud sur notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
+```
 
 ## Aller plus loin
 

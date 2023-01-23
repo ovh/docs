@@ -5,7 +5,7 @@ slug: abrechnungsart-aendern-public-cloud
 section: Projektverwaltung
 ---
 
-**Letzte Aktualisierung am 21.03.2022**
+**Letzte Aktualisierung am 23.01.2023**
 
 ## Ziel
 
@@ -69,10 +69,10 @@ Verwenden Sie folgenden Aufruf:
 
 ### von einem Terraform-Skript aus
 
-Dies ist möglich dank der `Metadaten` [Attribut](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} aus der Ressource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Dies ist möglich dank der `Metadata` [Attribut](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} aus der Ressource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
 
 ```terraform
-Metadaten = {
+metadata = {
 "ovh-monthly-instance" = 1
 }
 ```
