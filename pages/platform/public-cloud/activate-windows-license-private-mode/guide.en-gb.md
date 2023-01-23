@@ -1,7 +1,7 @@
 ---
-title: 'Adding cloud credit'
-slug: add-cloud-credit
-excerpt: 'Find out how to add credit or vouchers to your Public Cloud project'
-section: Project management
+title: 'Activating a Windows licence for an instance in private mode'
+slug: activate-licence-windows-instance-private-mode
+excerpt: 'Find out how to activate a Windows licence on an instance in private mode'
+section: Getting started
 order: 3
 ---

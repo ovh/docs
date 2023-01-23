@@ -1,13 +1,12 @@
 ---
 title: 'Activer une licence Windows pour une instance en mode privée'
-slug: activer-license-windows-instance-mode-privee
+slug: activer-licence-windows-instance-mode-privee
 excerpt: 'Découvrez comment activer une license Windows sur une instance en mode privée'
 section: Premiers pas
 order: 3
 ---
 
-
-
+**Dernière mise à jour le 24/03/2022**
 
 ## Objectif
 
@@ -21,7 +20,7 @@ Contrairement aux instances Windows créées dans le réseau public, les instanc
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir [créé un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
 
-Nous vous recommandons de consultez le guide [Accéder à l’interface Horizon] pour vous familiariser à Horizon.
+Nous vous recommandons de consultez le guide [Accéder à l’interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/) pour vous familiariser à Horizon.
 
 ## En pratique
 
@@ -81,7 +80,7 @@ openstack network list
 +--------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Avec les éléments récupérés précédemment, vous pouvez créer un port publique nommé « Ext-Net » sur le subnet « Ext-Net » et l'attacher à l'instance
+Avec les éléments récupérés précédemment, vous pouvez créer un port publique nommé « Ext-Net » sur le subnet « Ext-Net » et l'attacher à l'instance :
 
 ```bash
 openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
@@ -141,17 +140,17 @@ openstack port list --name Ext-Net
 +--------------------------------------+---------+-------------------+---------------------------------------------------------------------------------------+--------+
 ``` 
 
-Attacher le port a l'instance :
+Attacher le port à l'instance :
 
 ```bash
 openstack server add port <server_id> <port_id>
 ``` 
 
-#### Activer votre Windows
+#### Activer votre système Windows
 
 Pour pourvoir activer votre système Windows, vous devrez passer par Powershell.
 
-Une fois connecter à votre instance Windows, cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
+Une fois connecté à votre instance Windows, cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
 
 Renseignez la commande suivante :
 
@@ -163,9 +162,9 @@ slmgr.vbs -ato
 
 La licence Windows sera activé pour 180 jours.
 
-Il sera nécessaire de réiterer cela tous les 180 jours.
+Il sera nécessaire de répéter cette opération tous les 180 jours.
 
-Pour vérifier le statut de la license et sa date d'expiration :
+Pour vérifier le statut de la licence et sa date d'expiration :
 
 ```bash
 slmgr.vbs -dli
