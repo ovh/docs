@@ -17,6 +17,8 @@ order: 08
 
 ## Objectif
 
+Ce tutoriel explique comment créer une page web professionnelle comprenant des incitations à renseigner un formulaire par les visiteurs de votre site web. Les données récupérées seront envoyées directement sur l'adresse e-mail de votre choix, adresse depuis laquelle vous pourrez leur répondre directement.
+
 ## Prérequis
 
 ## En pratique
