@@ -423,6 +423,7 @@
             + [Activate Windows VMs installed on Nutanix by OVHcloud](cloud/nutanix/34-activate_windows_vm)
             + [Adding a node in a Nutanix cluster](cloud/nutanix/33-add-node)
             + [Replacing Prism Central from Small Mode to X-Large Mode](cloud/nutanix/35-prism-central-expansion)
+            + [Setting up NCM Self Service (CALM)](cloud/nutanix/36-self-service-calm)
         + [Troubleshooting](hosted-private-cloud-nutanix-on-ovhcloud-troubleshooting)
             + [Retrieving your Nutanix installation status information](cloud/nutanix/50-cluster-information)
         + [Disaster recovery plan](hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan)
