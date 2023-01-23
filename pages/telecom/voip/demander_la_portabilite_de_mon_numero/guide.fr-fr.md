@@ -6,7 +6,7 @@ section: 'Numéros ou alias'
 order: 1
 ---
 
-**Dernière mise à jour le 22/06/2022**
+**Dernière mise à jour le 23/01/2023**
 
 ## Objectif
 
@@ -17,7 +17,6 @@ La portabilité permet à un abonné de conserver son numéro de téléphone lor
 ## Prérequis
 
 - Disposer d'au moins un numéro de téléphone chez un autre opérateur, dont le pays est compatible avec [la portabilité chez OVHcloud](https://www.ovhtelecom.fr/telephonie/services_inclus/portabilite_numero.xml){.external}.
-- Pour les numéros géographiques, justifier d'une adresse postale correspondant à la zone du ou des numéros concernés.
 - Disposer d'une offre [VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/){.external}.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} :
 
