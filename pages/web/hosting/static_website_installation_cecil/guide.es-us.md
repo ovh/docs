@@ -212,7 +212,7 @@ menu: main
 **Cecil** es una herramienta que permite construir eficazmente un sitio estático a partir de archivos *Markdown*, lenguaje de marcado más fácil de implementar que el HTML. La organización de los archivos Markdown condiciona la jerarquía de sus páginas web.<br/>
 El uso de un motor de plantillas, muy utilizado en la comunidad de desarrolladores web, le permitirá encontrar fácilmente numerosas fuentes en Internet para diseñar una interfaz de apariencia profesional.
 
-## Ir más lejos
+## Más información
 
 El [sitio oficial de la aplicación Cecil](https://cecil.app/){.external}
 

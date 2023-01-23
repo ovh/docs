@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Installazione e configurazione di Cecil, un generatore di siti statici (SSG) in PHP"
-slug: install-configura-cil
+slug: install-configure-cecil
 excerpt: "Scopri come Cecil ti permette di creare il tuo sito statico con l'aiuto di un motore template moderno (Jamstack)"
 section: Tutorial
 order: 04
@@ -54,7 +54,7 @@ Sostituisci `mystaticwebsite` con il nome della tua cartella.
 
 ### Scaricamento
 
-Nella directory che hai appena creato, scarica Cecil;
+Nella directory che hai appena creato, scarica Cecil:
 
 ```sh
 curl -OL https://github.com/Cecilapp/Cecil/releases/latest/download/cecil.phar
@@ -83,7 +83,7 @@ Una volta inseriti questi elementi, è necessario implementare il sito digitando
 php cecil.phar build
 ```
 
-Visualizzando il contenuto della directory, vedrete la presenza di una directory `_site`. La directory conterrà tutti i file HTML e gli assets;
+Visualizzando il contenuto della directory, vedrete la presenza di una directory `_site`. La directory conterrà tutti i file HTML e gli assets:
 
 ![Installazione Cecil](images/static_website_installation_cecil02.png){.thumbnail}
 
@@ -143,11 +143,11 @@ Sempre alla radice, inserisci questo comando :
 php cecil.phar build
 ```
 
-Il tuo file si trova nella directory `_site/mypage/`;
+Il tuo file si trova nella directory `_site/mypage/`:
 
 ![Installazione Cecil](images/static_website_installation_cecil06.png){.thumbnail}
 
-Lo si può visualizzare sul server digitando l'URL del sito, seguito da `/mypage/`;
+Lo si può visualizzare sul server digitando l'URL del sito, seguito da `/mypage/`:
 
 ![Risultato browser](images/static_website_installation_cecil07.png){.thumbnail}
 

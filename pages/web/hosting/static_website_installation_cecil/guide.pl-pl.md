@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Instalacja i konfiguracja Cecil, generatora stron statycznych (SSG) w PHP"
-slug: instalacja-konfiguracja-cecil
+slug: install-configure-cecil
 excerpt: "Dowiedz się, jak Cecil pozwala na tworzenie strony statycznej przy użyciu nowoczesnego silnika szablonu (Jamstack)"
 section: 'Tutoriale'
 order: 04
@@ -99,7 +99,7 @@ Jeśli Twoja domena lub subdomena jest zainstalowana w OVHcloud, zapoznaj się z
 
 ### Konfiguracja strony
 
-Ogólne informacje dotyczące Twojej strony mogą być skonfigurowane w pliku `config.yml`;
+Ogólne informacje dotyczące Twojej strony mogą być skonfigurowane w pliku `config.yml`:
 
 ```sh
 nano config.yml
@@ -147,7 +147,7 @@ Twój plik znajduje się w katalogu `_site/mypage/`:
 
 ![Instalacja Cecil](images/static_website_installation_cecil06.png){.thumbnail}
 
-Możesz wyświetlić go na Twoim serwerze, wpisując adres URL strony, a następnie `/mypage/`;
+Możesz wyświetlić go na Twoim serwerze, wpisując adres URL strony, a następnie `/mypage/`:
 
 ![Wynik przeglądarki](images/static_website_installation_cecil07.png){.thumbnail}
 

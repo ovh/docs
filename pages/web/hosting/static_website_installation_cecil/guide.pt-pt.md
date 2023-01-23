@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Instalação e configuração de Cecil, um gerador de sites estáticos (SSG) em PHP"
-slug: instalar-configurar-cecil
+slug: install-configure-cecil
 excerpt: "Descubra como Cecil lhe permite criar o seu site estático com a ajuda de um motor de template moderno (Jamstack)"
 section: 'Tutoriais'
 order: 04
@@ -68,7 +68,7 @@ Execute a instalação de Cecil com o seguinte comando:
 php cecil.phar new:site
 ```
 
-Introduza os elementos solicitados;
+Introduza os elementos solicitados:
 
 - o título do seu site _ (title)_
 - _baseline_
@@ -83,7 +83,7 @@ Depois de inserir estes elementos, deverá implementar o website utilizando o se
 php cecil.phar build
 ```
 
-Ao visualizar o conteúdo do diretório, verificará a presença de um diretório `_site`. Este diretório deve conter todos os ficheiros HTML e bases de dados;
+Ao visualizar o conteúdo do diretório, verificará a presença de um diretório `_site`. Este diretório deve conter todos os ficheiros HTML e bases de dados:
 
 ![Instalação Cecil](images/static_website_installation_cecil02.png){.thumbnail}
 
@@ -99,7 +99,7 @@ Se o seu domínio ou subdomínio estiver alojado na OVHcloud, consulte os nossos
 
 ### Configurar o seu site
 
-As informações gerais do seu site podem ser configuradas no ficheiro `config.yml`;
+As informações gerais do seu site podem ser configuradas no ficheiro `config.yml`:
 
 ```sh
 nano config.yml
@@ -143,7 +143,7 @@ Na raiz, introduza o seguinte comando:
 php cecil.phar build
 ```
 
-O seu ficheiro encontra-se no diretório `_site/mypage/`;
+O seu ficheiro encontra-se no diretório `_site/mypage/`:
 
 ![Instalação Cecil](images/static_website_installation_cecil06.png){.thumbnail}
 
@@ -168,7 +168,7 @@ Substitua `mypage por um nome próprio.
 
 ![Edição do ficheiro em GNU nano](images/static_website_installation_cecil08.png){.thumbnail}
 
-Adicione algumas linhas respeitando a syntaxe _Markdown_;
+Adicione algumas linhas respeitando a syntaxe _Markdown_:
 
 ![Adicionar conteúdo ao ficheiro](images/static_website_installation_cecil09.png){.thumbnail}
 
@@ -178,7 +178,7 @@ Elimine os ficheiros na cache através do seguinte comando:
 php cecil.phar clear
 ```
 
-Reconstrua as suas páginas após ter guardado o seu ficheiro;
+Reconstrua as suas páginas após ter guardado o seu ficheiro:
 
 ```sh
 php cecil.phar build
