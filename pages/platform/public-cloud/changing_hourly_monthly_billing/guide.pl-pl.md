@@ -5,7 +5,7 @@ slug: zmiana-typu-rozliczenia
 section: 'Zarządzanie projektami'
 ---
 
-**Ostatnia aktualizacja: 21-03-2022**
+**Ostatnia aktualizacja: 23-01-2023**
 
 ## Wprowadzenie
 
@@ -28,7 +28,6 @@ Podczas tworzenia instancji Public Cloud można wybrać typ rozliczenia za godzi
 
 - utworzona [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}
 - zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-
 
 ## W praktyce
 
@@ -64,6 +63,16 @@ Skorzystaj z następującego połączenia:
 >
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
+
+### Ze skryptu Terraform
+
+Jest to możliwe dzięki `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} z zasobu [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+
+```terraform
+metadata = {
+"ovh-monthly-instance" = 1
+}
+```
 
 ## Sprawdź również
 

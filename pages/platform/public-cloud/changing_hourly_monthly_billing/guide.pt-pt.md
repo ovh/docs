@@ -5,7 +5,7 @@ slug: mudar-tipo-faturacao-public-cloud
 section: 'Gestão do projeto'
 ---
 
-**Última atualização: 21/03/2022**
+**Última atualização: 23/01/2023**
 
 ## Sumário
 
@@ -23,7 +23,6 @@ Ao criar uma instância Public Cloud, é possível escolher entre uma faturaçã
 >
 >- Elimine a instância mensal.
 >
-
 
 ## Requisitos
 
@@ -57,7 +56,7 @@ Substitua "InstanceID" pelo ID da instância correspondente. Este identificador 
 
 ### Desde a API OVHcloud
 
-Aceda à[interface API OVHcloud](https://eu.api.ovh.com/) conforme o [guia apropriado](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/) e siga os passos abaixo.
+Aceda à [interface API OVHcloud](https://eu.api.ovh.com/) conforme o [guia apropriado](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/) e siga os passos abaixo.
 
 Utilize a seguinte chamada:
 
@@ -65,6 +64,16 @@ Utilize a seguinte chamada:
 >
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
+
+### A partir de um script Terraform
+
+Isto é possível graças ao `metadata` [attribute](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} do recurso [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+
+```terraform
+metadata = {
+"ovh-monthly-instance" = 1
+}
+```
 
 ## Quer saber mais?
 

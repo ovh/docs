@@ -5,7 +5,7 @@ slug: cambiare-tipo-fatturazione-public-cloud
 section: 'Gestione del progetto'
 ---
 
-**Ultimo aggiornamento 21/03/2022**
+**Ultimo aggiornamento 23/01/2023**
 
 ## Obiettivo
 
@@ -65,6 +65,15 @@ Utilizza questa chiamata:
 >
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
+### Da uno script Terraform
+
+Questo è possibile grazie ai `metadata` [attributo](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} dalla risorsa [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+
+```terraform
+metadata = {
+"ovh-monthly-instance" = 1
+}
+```
 
 ## Per saperne di più
 
