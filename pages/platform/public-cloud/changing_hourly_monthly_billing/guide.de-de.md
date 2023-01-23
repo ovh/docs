@@ -67,13 +67,13 @@ Verwenden Sie folgenden Aufruf:
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
 
-### von einem Terraform-Skript aus
+### Mit einem Terraform-Skript
 
-Dies ist möglich dank der `Metadata` [Attribut](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} aus der Ressource [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+Dies ist möglich dank des `metadata` [Attributs](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} aus der Ressource [*openstack_compute_instance_v2*](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
 
 ```terraform
 metadata = {
-"ovh-monthly-instance" = 1
+    "ovh-monthly-instance" = 1
 }
 ```
 
