@@ -1,116 +1,127 @@
 ---
-title: 'Passwort einer MX Plan E-Mail-Adresse ändern'
+title: "Passwort eines E-Mail-Accounts ändern"
 slug: passwort-e-mail-adresse-aendern
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie das Passwort einer E-Mail-Adresse ändern, die Sie in Ihrem MX Plan Account angelegt haben.'
-section: 'Erste Schritte'
+excerpt: "Erfahren Sie hier, wie Sie das Passwort eines OVHcloud E-Mail-Accounts ändern"
+section: Erste Schritte
 order: 03
 ---
 
-**Stand 01.07.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 03.01.2023**
 
-Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät versenden und empfangen. Sie erhalten Zugriff über das zugehörige Passwort.
+## Ziel
 
-**Hier erfahren Sie, wie Sie das Passwort einer E-Mail-Adresse ändern, die Sie in Ihrem MX Plan Account angelegt haben.**
+Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwort nutzbar. Je nach verwendetem E-Mail-Angebot können Sie es auf 2 Arten ändern:
+
+- Über das Webmail-Interface
+- Über das OVHcloud Kundencenter
+
+**Diese Anleitung erklärt, wie Sie das Passwort eines OVHcloud E-Mail-Accounts ändern.**
 
 ## Voraussetzungen
 
-- Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} oder separat bestellbar.
-- Je nach der von Ihnen gewählten Vorgehensweise sind Sie entweder in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Web Cloud`{.action} oder über das [Webmail-Interface](https://www.ovh.de/mail/){.external} Outlook on the Web (OWA) eingeloggt.
+- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/), einem kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder auf den relevanten Account über [Webmail](https://www.ovhcloud.com/de/mail/), je nach verwendeter Methode.
 
 > [!primary]
 >
-> Wenn Sie das Passwort Ihrer E-Mail-Adresse ändern, muss diese Änderung auch auf alle Geräte übertragen werden, auf denen die E-Mail-Adresse eingerichtet ist.
+> Wenn Sie das Passwort Ihrer E-Mail-Adresse ändern, muss diese Änderung auch auf alle E-Mail-Clients, die auf diesen Account zugreifen, angewendet werden. Finden Sie dazu die Konfigurationsanleitung zu Ihrer E-Mail-Anwendung auf der Anleitungsseite für Ihr E-Mail-Angebot:
+>
+> - [MX Plan](https://docs.ovh.com/de/emails/)
+> - [E-Mail Pro](https://docs.ovh.com/de/emails-pro/)
+> - [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/)
 >
 
-## Beschreibung
+## In der praktischen Anwendung
 
-Je nach Aktivierungsdatum Ihres Dienstes, oder falls [Ihr Angebot vor Kurzem migriert wurde](https://www.ovhcloud.com/de/web-hosting/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
+### Passwort über das Kundencenter ändern <a name="controlpanel"></a>
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+> [!warning]
+> Aus Sicherheitsgründen empfehlen wir, Passwörter nicht mehrfach zu verwenden, eines auszuwählen, das keine persönlichen Angaben enthält (Namen, Vornamen und Geburtsdatum) und es regelmäßig zu ändern.
 
-|Historische MX Plan Version|Neue MX Plan Version|
-|---|---|
-|![E-Mail](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Ihr Angebot steht in der Box „Abo“|![E-Mail](images/mxplan-password-new-step1.png){.thumbnail}<br>Die „Server-Referenz“ steht in der Box „Zusammenfassung“.|
-|Weiter zur [historischen MX Plan Version](./#historische-mx-plan-version_2)|Weiter zur [neuen MX Plan Version](#mx-new)|
+> [!tabs]
+> **MX Plan E-Mail (Legacy)**
+>>
+>> Wenn Sie den Typ Ihres MX Plan Angebots nicht kennen, lesen Sie den Abschnitt zur [Identifikation Ihres MX Plans](#whichmxplan).<br>
+>> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden Dienstes aus. Gehen Sie zum Tab `E-Mails`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
+>> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Passwort ändern`{.action}.<br><br>
+>>![E-Mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
+>>
+> **MX Plan E-Mail (neue Version)**
+>>
+>> Wenn Sie den Typ Ihres MX Plan Angebots nicht kennen, lesen Sie den Abschnitt zur [Identifikation Ihres MX Plans](#whichmxplan).<br>
+>> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden Dienstes aus. Gehen Sie zum Tab `E-Mails`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
+>> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>>![E-Mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
+>>
+> **E-Mail Pro**
+>>
+>> Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie den Dienstnamen aus. Gehen Sie zum Tab `E-Mail Accounts`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt.<br>
+>> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>>![E-Mail](images/email-password-emailpro01.png){.thumbnail}<br>
+>>
+> **Exchange**
+>>
+>> Klicken Sie auf `Microsoft`{.action}, dann `Exchange`{.action} und wählen Sie den Dienstnamen aus. Gehen Sie zum Tab `E-Mail Accounts`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt.<br>
+>> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>>![E-Mail](images/email-password-exchange01.png){.thumbnail}<br>
+>>
 
-### Neue MX Plan Version <a name="mx-new"></a>
+### Passwort über Webmail ändern
 
-Sie verfügen über die neue MX Plan Version und sollten die nachfolgende Anzeige sehen. Ist das nicht der Fall, überprüfen Sie [mithilfe der oben stehenden Informationen](./#beschreibung), dass Sie den richtigen Schritten folgen.  
+Die Änderung eines Passworts über Webmail ist für die OVHcloud E-Mail-Angebote unter Verwendung von **OWA** (**O**utlook **W**eb **A**pplication) verfügbar:
 
-![E-Mail](images/mxplan-password-new-step1.png){.thumbnail}
+- MX Plan E-Mail (Neue Version)
+- E-Mail Pro
+- Exchange
 
-Es gibt zwei Möglichkeiten, um das Passwort einer E-Mail-Adresse zu ändern. Fahren Sie mit der gewünschten Vorgehensweise fort.
+> [!warning]
+>
+> Die Dienste vom Typ **MX Plan Legacy** verwenden Roundcube Webmail. Die Passwortänderung erfolgt hier ausschließlich im [OVHcloud Kundencenter](#controlpanel).
+>
 
-- [Passwort über OWA Webmail ändern](./#passwort-uber-owa-webmail-andern). Hierzu benötigen Sie das aktuelle Passwort der E-Mail-Adresse. 
-- [Passwort über das OVHcloud Kundencenter ändern](./#passwort-uber-das-ovh-kundencenter-andern). Hierzu ist das aktuelle Passwort der E-Mail-Adresse nicht erforderlich.
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Passwort über OWA Webmail ändern
-
-Gehen Sie zunächst auf die Seite „[Webmail Login](https://www.ovh.de/mail/){.external}“. Geben Sie dort Ihre vollständige E-Mail-Adresse und das aktuelle Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}. 
+Öffnen Sie die [Webmail-Seite](https://www.ovhcloud.com/de/mail/). Geben Sie dort Ihre vollständige E-Mail-Adresse und das aktuelle Passwort ein. Klicken Sie anschließend auf den Button `Login`{.action}.
 
 ![E-Mail](images/mxplan-password-new-step2.png){.thumbnail}
 
-Daraufhin wird Ihr Postfach angezeigt. Klicken Sie im oberen Bereich auf das Zahnrad-Symbol und anschließend auf `Optionen`{.action}.
+Klicken Sie oben auf den Button <i class="icons-gear-concept icons-masterbrand-blue"></i> und dann auf `Optionen`{.action}.
 
 ![E-Mail](images/mxplan-password-new-step3.png){.thumbnail}
 
-Erweitern Sie im linken Bereich auf der neu geöffneten Seite den Tab „Allgemein“ der Ordnerstruktur und klicken Sie auf `Mein Konto`{.action}. Klicken Sie dann auf `Kennwort ändern`{.action}.
+Erweitern Sie im linken Bereich auf der neu geöffneten Seite den Tab "Allgemein" der Ordnerstruktur und klicken Sie auf `Mein Konto`{.action}. Klicken Sie dann auf `Kennwort ändern`{.action}.
 
 ![E-Mail](images/mxplan-password-new-step4.png){.thumbnail}
 
-Geben Sie im neu geöffneten Fenster zunächst Ihr aktuelles Passwort ein. Geben Sie anschließend Ihr neues Passwort ein und bestätigen Sie dieses. Um die Änderung zu speichern, klicken Sie auf den Button `Speichern`{.action}.
+Geben Sie im neu geöffneten Fenster zunächst Ihr aktuelles Passwort ein. Geben Sie anschließend Ihr neues Passwort ein und bestätigen Sie es. Um die Änderung zu speichern, klicken Sie auf den Button `Speichern`{.action}.
 
 > [!primary]
 >
-> Geben Sie das neue Passwort auf allen Geräten ein, auf denen die E-Mail-Adresse eingerichtet ist.
+> Geben Sie das neue Passwort auch in allen für diesen Account verwendeten E-Mail-Clients ein.
 >
 
 ![E-Mail](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Passwort über das OVHcloud Kundencenter ändern
+#### Identifizieren Sie die Version Ihres MX Plans <a name="whichmxplan"></a>
 
-Gehen Sie zunächst auf den Tab `E-Mail-Accounts`{.action}. Die angezeigte Tabelle enthält alle E-Mail-Adressen, die im Rahmen Ihres Angebots angelegt wurden. Klicken Sie nun rechts neben der betreffenden Adresse auf den Button `...`{.action} und dann auf `Ändern`{.action}.
+In der dieser Tabelle finden Sie die notwendigen Informationen zur Identifizierung Ihres MX Plans:
 
-![E-Mail](images/mxplan-password-new-step6.png){.thumbnail}
-
-Geben Sie im angezeigten Fenster ein neues Passwort ein und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.
-
-Nachdem Sie Ihre Auswahl vorgenommen haben, klicken Sie auf `Weiter`{.action}, dann auf `Bestätigen`{.action}. Die Änderung benötigt einige Minuten, bis sie wirksam ist.
-
-![E-Mail](images/mxplan-password-new-step7.png){.thumbnail}
-
-Nachdem Sie das Passwort geändert haben, können Sie auf Ihre E-Mail-Adresse zugreifen. Hierzu haben Sie zwei Möglichkeiten.
-
-- **Unser Webmail verwenden**: Gehen Sie auf die Seite „[Webmail Login](https://www.ovh.de/mail/){.external}“ und geben Sie die betreffende E-Mail-Adresse sowie das neue Passwort ein. Wenn Sie das Passwort gerade erste geändert haben und sich nicht einloggen können, warten sie einen Moment und versuchen Sie es anschließend erneut. Weitere Informationen zur Verwendung Ihrer E-Mail-Adresse mit OWA finden Sie in unserer Anleitung „[E-Mail-Adresse via Outlook on the web (OWA) verwenden](../verwendung-owa/){.external}“.
-
-- **Kompatiblen E-Mail-Client verwenden**: Das neue Passwort muss auf allen Geräten verwendet werden, auf denen die E-Mail-Adresse eingerichtet ist. Es kann sein, dass automatisch ein Fenster angezeigt wird, in dem Sie das neue Passwort eingeben sollen. Ist das nicht der Fall, [nutzen Sie unsere Konfigurationsanleitungen](../) oder wenden Sie sich an den Herausgeber der verwendeten Software oder Anwendung, falls der Vorgang von dieser abhängig ist.
-
-### Historische MX Plan Version <a name="mx-legacy"></a>
-
-Sie verfügen über die historische MX Plan Version und sollten die nachfolgende Anzeige sehen. Ist das nicht der Fall, überprüfen Sie [mithilfe der oben stehenden Informationen](./#beschreibung), dass Sie den richtigen Schritten folgen. 
-
-![E-Mail](images/mxplan-password-legacy-step1.png){.thumbnail}
-
-Um das Passwort einer E-Mail-Adresse zu ändern, gehen Sie zunächst auf den Tab `E-Mails`{.action}. Die angezeigte Tabelle enthält alle E-Mail-Adressen, die im Rahmen Ihres MX Plan Angebots angelegt wurden. Klicken Sie nun rechts neben der betreffenden Adresse auf den Button `...`{.action} und dann auf `Passwort ändern`{.action}.
-
-![E-Mail](images/mxplan-password-legacy-step2.png){.thumbnail}
-
-Geben Sie im angezeigten Fenster ein neues Passwort ein und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.
-
-Wenn Sie fertig sind, klicken Sie auf Bestätigen. Die Änderung benötigt einige Minuten, bis sie wirksam ist.
-
-![E-Mail](images/mxplan-password-legacy-step3.png){.thumbnail}
-
-Nachdem Sie das Passwort geändert haben, können Sie auf Ihre E-Mail-Adresse zugreifen. Hierzu haben Sie zwei Möglichkeiten.
-
-- **Unser Webmail verwenden**: Gehen Sie auf die Seite „[Webmail Login](https://www.ovh.de/mail/){.external}“ und geben Sie die betreffende E-Mail-Adresse sowie das neue Passwort ein. Wenn Sie das Passwort gerade erste geändert haben und sich nicht einloggen können, warten sie einen Moment und versuchen Sie es anschließend erneut. Weitere Informationen finden Sie in unserer Anleitung „[Webmail: Verwendung von RoundCube](../webmail_verwendung_von_roundcube/){.external}“.
-
-- **Kompatiblen E-Mail-Client verwenden**: Das neue Passwort muss auf allen Geräten verwendet werden, auf denen die E-Mail-Adresse eingerichtet ist. Es kann sein, dass automatisch ein Fenster angezeigt wird, in dem Sie das neue Passwort eingeben sollen. Ist das nicht der Fall, [nutzen Sie unsere Konfigurationsanleitungen](../) oder wenden Sie sich an den Herausgeber der verwendeten Software oder Anwendung, falls der Vorgang von dieser abhängig ist.
+|MX Plan Legacy|Neue MX Plan Version|
+|---|---|
+|![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Dienstbezeichnung steht im Rahmen **Abo** rechts. MX Plan Legacy *hat keine* Server-Referenz.|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Das neue Angebot hat eine **Server-Referenz** im Rahmen **Zusammenfassung** links.|
 
 ## Weiterführende Informationen
 
-[Hier finden Sie weitere Ratschläge zur Passwortsicherheit vom BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html){.external}.
+[Erste Schritte mit MX Plan](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/)
+
+[Erste Schritte mit E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/)
+
+[Erste Schritte mit Hosted Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_der_dienstleistung/)
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote einsehen](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

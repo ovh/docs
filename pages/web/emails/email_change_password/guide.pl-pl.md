@@ -1,115 +1,123 @@
 ---
 title: 'Zmiana hasła do konta e-mail'
 slug: zmiana-hasla-do-konta-email
-excerpt: 'Dowiedz się, jak zmienić hasło do konta e-mail utworzonego w ramach pakietu MX Plan'
+excerpt: 'Dowiedz się, jak zmienić hasło do konta e-mail OVHcloud'
 section: 'Pierwsze kroki'
 order: 03
 ---
 
-**Ostatnia aktualizacja z dnia 06-05-2019**
+**Ostatnia aktualizacja z dnia 03-01-2023**
 
 ## Wprowadzenie
 
-Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzystając z dowolnego urządzenia. Dostęp do konta chroniony jest przypisanym do niego hasłem.
+Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisanego do nich hasła. Możesz ją zmienić na 2 sposobów, w zależności od oferty e-mail:
 
-**Dowiedz się, jak zmienić hasło do konta e-mail utworzonego w ramach pakietu MX Plan.**
+- Z poziomu interfejsu Webmail
+- W Panelu klienta OVHcloud
+
+**Dowiedz się, jak zmienić hasło do konta e-mail OVHcloud.**
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting](https://www.ovhcloud.com/pl/web-hosting/){.external}, [Hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} lub oferty MX Plan zamówionej oddzielnie.
-- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail](https://www.ovh.pl/mail/){.external} Outlook Web App (OWA).
+- Posiadanie wcześniej skonfigurowanego rozwiązania poczty elektronicznej OVHcloud (**MX Plan**, zaproponowanego w naszej [ofercie hostingu](https://www.ovhcloud.com/pl/web-hosting/), zawartego w [hostingu Start10M bezpłatnie](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionym oddzielnie jako rozwiązanie autonomiczne, takie jak [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/))
+- W zależności od metody, której używasz: zalogować się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action} lub logować się do konta e-mail za pośrednictwem [interfejsu webmail](https://www.ovhcloud.com/pl/mail/).
 
 > [!primary]
 >
-> Po zmianie hasła do Twojego konta e-mail wprowadź je na wszystkich urządzeniach, na których skonfigurowałeś konto.
+> Po zmianie hasła do Twojego konta e-mail wprowadź tę zmianę na wszystkich urządzeniach, na których skonfigurowałeś konto. Zapoznaj się z naszymi przewodnikami dotyczącymi konfiguracji Twojego programu pocztowego na stronie głównej Twojej usługi e-mail:
+>
+> - [MXplan](https://docs.ovh.com/pl/emails/)
+> - [E-mail Pro](https://docs.ovh.com/pl/emails-pro/)
+> - [Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/)
 >
 
 ## W praktyce
 
-W zależności od daty aktywacji usługi lub jeśli usługa została niedawno przeniesiona, możliwe jest, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, ustal jaką wersję posiadasz. 
+### Zmiana hasła w Panelu klienta <a name="controlpanel"></a>
 
-W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}. Kliknij E-maile, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+> [!warning]
+> Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło, które nie ma żadnego związku z Twoimi danymi osobistymi (takimi jak nazwisko, imię i data urodzenia) i regularnie je zmieniać.
 
-|Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
-|---|---|
-|![E-mail](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![E-mail](images/mxplan-password-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu „Informacje ogólne”|
-|Przejdź do [Poprzedniej wersja usługi MX Plan](#mx-legacy)|Przejdź do [Nowej wersji usługi MX Plan](#mx-new).|
+> [!tabs]
+> **E-maile MXplan (wersja historyczna)**
+>>
+>> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem [Sprawdź ofertę MXplan](#whichmxplan).<br>
+>> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `E-maile`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. <br>
+>> Kliknij przycisk, <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień hasło`{.action}.<br><br>
+>>![e-mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
+>>
+> **E-maile MXplan (nowa wersja)**
+>>
+>> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem [Sprawdź ofertę MXplan](#whichmxplan).<br>
+>> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `E-maile`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. <br>
+>> Kliknij przycisk, po czym <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> kliknij `Zmień`{.action}.<br><br>
+>>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
+>>
+> **Email Pro**
+>>
+>> Kliknij `E-mail Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
+>> Kliknij przycisk, <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień`{.action}.<br><br>
+>>![email](images/email-password-emailpro01.png){.thumbnail}<br>
+>>
+> **Exchange**
+>>
+>> Kliknij `Microsoft`{.action} / `Exchange`{.action}, następnie wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
+>> Kliknij przycisk, <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień`{.action}.<br><br>
+>>![email](images/email-password-exchange01.png){.thumbnail}<br>
+>>
 
-### Nowa wersja usługi MX Plan <a name="mx-new"></a>
+### Zmiana hasła w interfejsie Webmail
 
-Posiadasz nową wersję usługi MX Plan. Powinno Ci się wyświetlić takie okno. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#w-praktyce).  
+Zmiana hasła za pomocą interfejsu webmail jest dostępna w przypadku ofert e-mail OVHcloud wykorzystujących **OWA** (**O**utlook **W**eb **A**pplication):
 
-![E-mail](images/mxplan-password-new-step1.png){.thumbnail}
+- E-maile MXplan (Nowa wersja)
+- Email Pro
+- Exchange
 
-Istnieją dwie metody zmiany hasła do konta e-mail. Przejdź do metody, z której chcesz skorzystać.
+> [!warning]
+>
+> W ofercie **Email MXplan (wersja historyczna)** używamy interfejsu Webmail Roundcube. Zmiana hasła jest wykonywana tylko [w Panelu klienta](#controlpanel).
+>
 
-- [Zmiana hasła w interfejsie Webmail OWA](./#zmiana-hasla-w-interfejsie-webmail-owa). Przygotuj aktualne hasło. 
-- [Zmiana hasła w Panelu klienta](./#zmiana-hasla-w-panelu-klienta). Przygotuj aktualne hasło.
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube wideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Zmiana hasła w interfejsie Webmail OWA
+Przejdź do strony "[Webmail](https://www.ovhcloud.com/pl/mail/)". Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
 
-Zaloguj się na stronie [interfejsu Webmail](https://www.ovh.pl/mail/){.external}. Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
+![email](images/mxplan-password-new-step2.png){.thumbnail}
 
-![E-mail](images/mxplan-password-new-step2.png){.thumbnail}
+Kliknij przycisk <i class="icons-gear-concept icons-masterbrand-blue"></i> w górnej części, a następnie `Opcje`{.action}.
 
-Wyświetli się wówczas Twoja skrzynka odbiorcza. Kliknij koło zębate w górnej części, a następnie `Opcje`{.action}.
-
-![E-mail](images/mxplan-password-new-step3.png){.thumbnail}
+![email](images/mxplan-password-new-step3.png){.thumbnail}
 
 Na nowej stronie, która się wyświetli, po lewej stronie rozwiń kartę „Ogólne” w widoku drzewa, po czym kliknij `Moje konto`{.action}. Następnie kliknij `Zmień hasło`{.action}.
 
-![E-mail](images/mxplan-password-new-step4.png){.thumbnail}
+![email](images/mxplan-password-new-step4.png){.thumbnail}
 
-W nowym oknie, które się wyświetli, wprowadź aktualne hasło, po czym je zatwierdź. Kliknij przycisk `Zapisz`{.action}, aby zapisać zmiany.
+W nowym oknie, które się wyświetli, wprowadź aktualne hasło, po czym je zatwierdź Następnie wpisz nowe hasło i potwierdź je. Kliknij przycisk `Zapisz`{.action}, aby zapisać zmiany.
 
 > [!primary]
 >
 > Wprowadź nowe hasło na wszystkich urządzeniach, na których skonfigurowałeś konto.
 >
 
-![E-mail](images/mxplan-password-new-step5.png){.thumbnail}
+![email](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Zmiana hasła w Panelu klienta
+#### Zidentyfikuj ofertę MXplan <a name="whichmxplan"></a>
 
-W tym celu przejdź do zakładki `Konta e-mail`{.action}. Tabela, która się wyświetla zawiera listę wszystkich kont e-mail utworzonych w ramach Twojej usługi. Kliknij przycisk `...`{.action} po prawej stronie wybranego konta, a następnie `Zmień`{.action}.
+W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej oferty MXplan.
 
-![E-mail](images/mxplan-password-new-step6.png){.thumbnail}
-
-W oknie, które się wyświetla, ustal nowe hasło i potwierdź je. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
-
-Po zmianie hasła kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}. Nowe hasło będzie aktywne po kilku minutach.
-
-![E-mail](images/mxplan-password-new-step7.png){.thumbnail}
-
-Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na dwa różne sposoby.
-
-- Zaloguj się na stronie **Logowanie do interfejsu Webmail**, po czym wprowadź odpowiedni adres e-mail oraz hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web App (OWA)](../korzystanie-owa/){.external}.
-
-- **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
-
-### Poprzednia wersja usługi MX Plan <a name="mx-legacy"></a>
-
-Posiadasz starszą wersję usługi MX Plan. Powinno Ci się wyświetlić takie okno. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#w-praktyce). 
-
-![E-mail](images/mxplan-password-legacy-step1.png){.thumbnail}
-
-Aby zmienić hasło do konta e-mail, przejdź do zakładki `E-maile`{.action}. Tabela, która się wyświetla, zawiera listę wszystkich kont e-mail utworzonych w ramach Twojej usługi MX Plan. Kliknij przycisk `...`{.action} po prawej stronie wybranego konta, a następnie `Zmień hasło`{.action}.
-
-![E-mail](images/mxplan-password-legacy-step2.png){.thumbnail}
-
-W oknie, które się wyświetla, ustal nowe hasło i potwierdź je. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.
-
-Po zmianie hasła kliknij przycisk `Zatwierdź`{.action}. Nowe hasło będzie aktywne po kilku minutach.
-
-![E-mail](images/mxplan-password-legacy-step3.png){.thumbnail}
-
-Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na dwa różne sposoby.
-
-- Zaloguj się na stronie **Logowanie do interfejsu Webmail**, po czym wprowadź odpowiedni adres e-mail oraz hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](../webmail_przewodnik_dotyczacy_interfejsu_roundcube){.external}.
-
-- **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
-
+|Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Oferta pojawia się w ramce "**Abonament**" po prawej stronie. Historyczna oferta *nie* posiada żadnego odniesienia do serwera.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Nowa oferta posiada "**Oznaczenie serwera**" w polu "**Podsumowanie**" po lewej stronie.|
 
 ## Sprawdź również
+
+[Pierwsze kroki z usługą MXplan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+
+[Pierwsze kroki z usługą E-mail Pro](https://docs.ovh.com/pl/emails-pro/pierwsza-konfiguracja-email-pro/)
+
+[Pierwsze kroki z usługą Hosted Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_pierwsza_konfiguracja_uslugi/)
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

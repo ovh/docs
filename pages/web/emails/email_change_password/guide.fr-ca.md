@@ -1,60 +1,71 @@
 ---
-title: "Modifier le mot de passe d'une adresse e-mail MX Plan"
+title: "Modifier le mot de passe d'une adresse e-mail"
 slug: modifier-mot-de-passe-adresse-email
-excerpt: "Apprenez à changer le mot de passe d'une adresse e-mail créée dans le cadre de l'offre MX Plan"
+excerpt: "Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud"
 section: 'Premiers pas'
 order: 03
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 03/01/2023**
 
 ## Objectif
 
-Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recevoir vos messages depuis l’appareil de votre choix. Cet accès est possible grâce au mot de passe qui lui est associé.
+Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de passe qui leur est associé. La modification de celui-ci peut se faire de 2 manières selon votre offre e-mail:
 
-**Apprenez à modifier le mot de passe d'une adresse e-mail créée dans le cadre de l'offre MX Plan.**
+- Depuis le Webmail
+- Via l'espace client OVHcloud
+
+**Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, l'[hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external}, ou l'offre MX Plan commandée séparément.
-- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](https://www.ovh.com/ca/fr/mail/){.external} Outlook Web Messenger (OWA).
+- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)).
+- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail](https://www.ovhcloud.com/fr-ca/mail/).
 
 > [!primary]
 >
-> En modifiant le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée.
+> Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consulter nos guides de configurations pour votre logiciel de messagerie depuis la page d'accueil de votre offre e-mail:
+>
+> - [MXplan](https://docs.ovh.com/ca/fr/emails/)
+> - [Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/)
 >
 
 ## En pratique
 
-Selon la date d'activation de votre service ou si celui-ci a été récemment migré, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
+### Modifier le mot de passe depuis l'espace client <a name="controlpanel"></a>
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}. Cliquez sur `E-mails`{.action}, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
+> [!warning]
+> Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
-|Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
-|---|---|
-|![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement ».|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé ».|
-|Poursuivre vers « [Version historique de l'offre MX Plan](#mx-legacy) ».|Poursuivre vers « [Nouvelle version de l'offre MX Plan](#mx-new) ».|
+> [!tabs]
+> **Emails MXplan**
+>>
+>> Si vous ne connaissez pas le type d'offre MXplan que vous possédez, consultez notre paragraphe [Identifiez votre offre MXplan](#whichmxplan).<br><br>
+>> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Emails`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. <br>
+>> Cliquez sur le bouton <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Modifier`{.action}.<br><br>
+>>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
+>>
+> **Exchange**
+>>
+>> Cliquez sur `Microsoft`{.action} / `Exchange`{.action}, puis choisissez le nom de la plateforme concernée. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants.<br>
+>> Cliquez sur le bouton <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> puis sur `Modifier`{.action}.<br><br>
+>>![email](images/email-password-exchange01.png){.thumbnail}<br>
+>>
 
-### Nouvelle version de l'offre MX Plan <a name="mx-new"></a>
+### Modifier le mot de passe depuis le webmail
 
-Vous possédez la nouvelle version de l'offre MX Plan. Voici l'affichage que vous devez obtenir. Si ce n'est pas le cas, assurez-vous d'avoir suivi le bon cheminement [en vous reportant aux informations ci-dessus](./#en-pratique).  
+La modification de votre mot de passe via le webmail est disponible pour les offres email OVHcloud utilisant **OWA** (**O**utlook **W**eb **A**pplication) :
 
-![email](images/mxplan-password-new-step1.png){.thumbnail}
-
-Il existe deux possibilités pour modifier le mot de passe d'une adresse e-mail. Poursuivez vers celle que vous souhaitez effectuer.
-
-- [Modifier le mot de passe depuis le webmail OWA](./#modifier-le-mot-de-passe-depuis-le-webmail-owa). Pour cela, vous devez être en possession du mot de passe actuel. 
-- [Modifier le mot de passe depuis l'espace client OVHcloud](./#modifier-le-mot-de-passe-depuis-lespace-client-ovh). Pour cela, vous n'avez pas besoin d'être en possession du mot de passe actuel.
-
-#### Modifier le mot de passe depuis le webmail OWA
+- Emails MXplan
+- Exchange
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Commencez en accédant à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
+Accédez à la page « [Webmail](https://www.ovhcloud.com/fr-ca/mail/) ». Sur celle-ci, renseignez votre adresse e-mail complète, ainsi que son mot de passe actuel. Cliquez ensuite sur le bouton `Connexion`{.action}. 
 
 ![email](images/mxplan-password-new-step2.png){.thumbnail}
 
-Votre boîte de réception s'affiche alors. Cliquez sur l'icône en forme de roue dentée dans la partie supérieure, puis sur `Options`{.action}.
+Cliquez sur le bouton <i class="icons-gear-concept icons-masterbrand-blue"></i> dans la partie supérieure, puis sur `Options`{.action}.
 
 ![email](images/mxplan-password-new-step3.png){.thumbnail}
 
@@ -71,46 +82,12 @@ Sur la nouvelle fenêtre qui apparaît, commencez par renseigner votre mot de pa
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Modifier le mot de passe depuis l'espace client OVHcloud
-
-Commencez en vous positionnant sur l'onglet `Comptes e-mail`{.action}. Le tableau qui s'affiche contient toutes les adresses e-mail créées dans le cadre de votre offre. Cliquez alors sur le bouton `...`{.action} à droite de l'adresse concernée, puis sur `Modifier`{.action}.
-
-![email](images/mxplan-password-new-step6.png){.thumbnail}
-
-Dans la fenêtre qui s'affiche, définissez un nouveau mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
-
-Une fois ceci fait, cliquez sur le bouton `Suivant`{.action}, puis sur `Valider`{.action}. Le changement nécessite quelques minutes avant d'être effectif.
-
-![email](images/mxplan-password-new-step7.png){.thumbnail}
-
-Une fois le mot de passe modifié, vous pouvez accéder à l'adresse e-mail. Pour cela, vous disposez de deux possibilités.
-
-- **Utiliser notre webmail** : accédez à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son nouveau mot de passe. Si vous venez à l'instant de modifier le mot de passe et que l'authentification échoue, patientez quelques instants puis effectuez une nouvelle tentative de connexion. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](../utilisation-owa/){.external} ».
-
-- **Utiliser un logiciel de messagerie compatible** : vous devez renseigner le nouveau mot de passe sur tous les appareils où l’adresse e-mail a été configurée. Pour cela, il se peut qu'une fenêtre apparaisse automatiquement, vous demandant de le renseigner. Dans le cas contraire, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur du logiciel ou de l'aplication que vous utilisez, cette manipulation étant inhérente à ce dernier.
-
-### Version historique de l'offre MX Plan  <a name="mx-legacy"></a>
-
-Vous possédez la version historique de l'offre MX Plan. Voici l'affichage que vous devez obtenir. Si ce n'est pas le cas, assurez-vous d'avoir suivi le bon cheminement [en vous reportant aux informations ci-dessus](./#en-pratique). 
-
-![email](images/mxplan-password-legacy-step1.png){.thumbnail}
-
-Pour modifier le mot de passe d'une adresse e-mail, positionnez-vous sur l'onglet `E-mails`{.action}. Le tableau qui s'affiche contient toutes les adresses e-mail créés dans le cadre de votre offre. Cliquez alors sur le bouton `...`{.action} à droite de l'adresse concernée, puis sur `Changer le mot de passe`{.action}.
-
-![email](images/mxplan-password-legacy-step2.png){.thumbnail}
-
-Dans la fenêtre qui s'affiche, définissez un nouveau mot de passe et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
-
-Une fois ceci fait, cliquez sur le bouton `Valider`{.action}. Le changement nécessite quelques minutes avant d'être effectif.
-
-![email](images/mxplan-password-legacy-step3.png){.thumbnail}
-
-Une fois le mot de passe modifié, vous pouvez accéder à l'adresse e-mail. Pour cela, vous disposez de deux possibilités.
-
-- **Utiliser notre webmail** : accédez à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son nouveau mot de passe. Si vous venez à l'instant de modifier le mot de passe et que l'authentification échoue, patientez quelques instants puis effectuez une nouvelle tentative de connexion. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](../utilisation-roundcube/){.external} ».
-
-- **Utiliser un logiciel de messagerie compatible** : vous devez renseigner le nouveau mot de passe sur tous les appareils où l’adresse e-mail a été configurée. Pour cela, il se peut qu'une fenêtre apparaisse automatiquement, vous demandant de le renseigner. Dans le cas contraire, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur du logiciel ou de l'application que vous utilisez, cette manipulation étant inhérente à ce dernier.
-
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+[Premiers pas avec la solution MXplan](https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/)
+
+[Premiers pas avec la solution Hosted Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/premiere-configuration-exchange/)
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

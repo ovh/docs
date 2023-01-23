@@ -189,7 +189,7 @@ Créez le fichier `script.js` mentionné précédemment à la racine du réperto
 nano assets/script.js
 ```
 
-Remplacez la valeur de la variable `apiKey` par la clé récupérée précédemment sur le site [OpenWeather](https://openweathermap.org/){.external}
+Remplacez la valeur de la variable `apiKey` par la clé récupérée précédemment sur le site [OpenWeather](https://openweathermap.org/){.external}.
 
 ```javascript
 let apiKey = '123456789'; // Remplacez cette valeur

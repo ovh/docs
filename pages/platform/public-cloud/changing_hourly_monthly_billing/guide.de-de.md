@@ -5,11 +5,11 @@ slug: abrechnungsart-aendern-public-cloud
 section: Projektverwaltung
 ---
 
-**Letzte Aktualisierung am 21.03.2022**
+**Letzte Aktualisierung am 23.01.2023**
 
 ## Ziel
 
-Wenn Sie eine Public Cloud Instanz erstellen, können Sie wählen, ob die Abrechnung stündlich oder monatlich erfolgen soll. Instanzen mit Stundensatz werden nach dem Verfahren *Pay as you go* abgerechnet, d.h. am Monatsende werden den Nutzern die spezifischen Ressourcen in Rechnung gestellt, die sie verwendet haben. 
+Wenn Sie eine Public Cloud Instanz erstellen, können Sie wählen, ob die Abrechnung stündlich oder monatlich erfolgen soll. Instanzen mit Stundensatz werden nach dem Verfahren *Pay as you go* abgerechnet, d.h. am Monatsende werden den Nutzern die spezifischen Ressourcen in Rechnung gestellt, die sie verwendet haben.
 
 Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werden zu einem niedrigeren Preis berechnet (bis zu 50% weniger als bei der verbrauchsspezifischen Abrechnung). Wenn Sie ursprünglich die stündliche Abrechnung ausgewählt haben, können Sie jederzeit zur monatlichen Abrechnung wechseln.
 
@@ -66,6 +66,16 @@ Verwenden Sie folgenden Aufruf:
 >
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
+
+### Mit einem Terraform-Skript
+
+Dies ist möglich dank des `metadata` [Attributs](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2#metadata){.external} aus der Ressource [*openstack_compute_instance_v2*](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2){.external}:
+
+```terraform
+metadata = {
+    "ovh-monthly-instance" = 1
+}
+```
 
 ## Weiterführende Informationen
 
