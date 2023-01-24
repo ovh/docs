@@ -1,8 +1,6 @@
 ---
 title: Configurare un account Email Pro su Thunderbird per Windows
 slug: configurazione-thundebird-emailpro-windows
-routes:
-    canonical: 'https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/'
 excerpt: Come configurare il tuo indirizzo Email Pro su Thunderbird per Windows
 section: Configurazione di un client di posta
 order: 5

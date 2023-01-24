@@ -2,8 +2,6 @@
 title: Configuring an Exchange account on iPhone and iPad
 excerpt: Find out how to configure an Exchange account on iPhone and iPad, via the Mail app
 slug: exchange_2013_how_to_configure_on_ios_iphoneipad
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/emails/email_hosting_iphone_ios_91_configuration/'
 section: Configuration on smartphone/tablet
 order: 03
 ---

@@ -1,8 +1,6 @@
 ---
 title: 'Configurer son compte E-mail Pro sur Thunderbird pour Windows'
 slug: configuration-thunderbird-45-8-0
-routes:
-    canonical: 'https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/'
 excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows'
 section: 'Configuration sur ordinateur'
 order: 5
