@@ -49,7 +49,7 @@ The ".htaccess" file in which you are going to configure the Apache **mod_rewrit
 
 The parameters defined in a ".htaccess" file apply to the directory in which it is present, as well as to all its subdirectories.
 
-To edit (or create) directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Accessing your Web Hosting plan’s storage space](https://docs.ovh.com/ca/en/log-in-to-storage-ftp-web-hosting/).
+To edit (or create) directories, log in to your hosting plan’s FTP space. If you need help with this, please refer to our guide on [Accessing your Web Hosting plan’s storage space](https://docs.ovh.com/ca/en/hosting/log-in-to-storage-ftp-web-hosting/).
 
 Below are some of the most common examples of using Apache **mod_rewrite**. Some of them can also help the SEO your website.
 
@@ -93,7 +93,7 @@ This URL rewrite can help SEO your website.
 
 When you use an OVHcloud shared hosting plan, your domain name (for example **domain.tld**) is declared as a `Multisite` to display the content of a target folder also called `root folder`. You can customise the name of this `root folder`.
 
-Please refer to our guide on [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ca/en/multisites-configuring-multiple-websites/) if you would like more information on this subject.
+Please refer to our guide on [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ca/en/hosting/multisites-configuring-multiple-websites/) if you would like more information on this subject.
 
 Some users do not place their websites directly in the `root folder`, but inside a subfolder (for example: **MyWebsite**) inside this `root folder`.
 
@@ -116,7 +116,7 @@ In our example, this forces your website address to be displayed as **http://dom
 
 SSL certificates encrypt the data exchanged in HTTP with your website. This prevents people or malicious robots from collecting data exchanged between the site and the visitor, such as bank details.
 
-If you do not have an SSL certificate, please refer to our guide on [Managing an SSL certificate on an OVHcloud shared hosting plan](https://docs.ovh.com/ca/en/ssl-certificates-on-web-hosting-plans/).
+If you do not have an SSL certificate, please refer to our guide on [Managing an SSL certificate on an OVHcloud shared hosting plan](https://docs.ovh.com/ca/en/hosting/ssl-certificates-on-web-hosting-plans/).
 
 Some of your visitors may forget to enter the URL to access your site by **https://**: This poses a significant risk to the data exchanged between your website and their web browsers.
 
@@ -132,12 +132,12 @@ In our example, all requests made with a URL in **http://** will be automaticall
 
 ## Go further <a name="go-further"></a>
 
-[Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?](https://docs.ovh.com/ca/en/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?](https://docs.ovh.com/ca/en/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
 
-[Protect your website's administration interface with a .htaccess file](https://docs.ovh.com/ca/en/how_to_password_protect_a_directory_on_your_website/)
+[Protect your website's administration interface with a .htaccess file](https://docs.ovh.com/ca/en/hosting/how_to_password_protect_a_directory_on_your_website/)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
