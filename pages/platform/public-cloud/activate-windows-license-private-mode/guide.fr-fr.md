@@ -1,30 +1,31 @@
 ---
-title: 'Activer une licence Windows pour une instance en mode privée'
-slug: activer-licence-windows-instance-mode-privee
-excerpt: 'Découvrez comment activer une license Windows sur une instance en mode privée'
+title: 'Activer une licence Windows pour une instance en mode privé'
+slug: activate-windows-licence-private-mode-instance
+excerpt: 'Découvrez comment activer une license Windows sur une instance en mode privé'
 section: Premiers pas
-order: 3
+order: 09
 ---
 
 **Dernière mise à jour le 23/01/2023**
 
 ## Objectif
 
-Contrairement aux instances Windows créées dans le réseau public, les instances Windows créées avec le mode réseau privé (vrack) n'ont pas leurs licences Windows automatiquement activées. Dans ce cas, vous devez activer la licence manuellement afin d'avoir accès à tous les services Windows.
+Contrairement aux instances Windows créées dans le réseau public, les instances Windows créées avec le mode réseau privé (vRack) n'ont pas leurs licences Windows automatiquement activées.
+Dans ce cas, vous devez activer la licence manuellement afin d'avoir accès à tous les services Windows.
 
-**Ce guide a pour objectif de vous accompagner dans la configuration de l’interface public de vos instances Public Cloud au sein de votre vRack.**
+**Ce guide a pour objectif de vous accompagner dans la configuration de l’interface publique de vos instances Public Cloud au sein de votre vRack.**
 
 ## Prérequis
 
 - Posséder un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Avoir [créé un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
+- [Avoir créé un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
 
-Nous vous recommandons de consultez le guide [Accéder à l’interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/) pour vous familiariser à Horizon.
+Nous vous recommandons de consulter le guide « [Accéder à l’interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/) » pour vous familiariser à Horizon.
 
 ## En pratique
 
-### Attacher un port public « Ext-Net » à une instance.
+### Attacher un port public « Ext-Net » à une instance
 
 #### Depuis l'interface Horizon
 
@@ -48,14 +49,14 @@ Sélectionnez votre interface et validez :
 
 #### Depuis l'API OpenStack
 
-Avant de poursuivre, Il est recommandé de consulter ces guides :
+Avant de poursuivre, il est recommandé de consulter ces guides :
 
 - [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
 - [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/).
 
-Pour commencer, rassemblez toutes les informations nécessaires:
+Rassemblez tout d'abord toutes les informations nécessaires :
 
-**Identification de vos instances :**
+- **Identification de vos instances**
 
 ```bash
 openstack server list
@@ -67,7 +68,7 @@ openstack server list
 ```
 
 
-**Identification des réseaux publics et privés :**
+- **Identification des réseaux publics et privés**
 
 ```bash
 openstack network list
@@ -129,7 +130,7 @@ openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
 +-------------------------+----------------------------------------------------------------------------------------+
 ```
 
-Récupérer l'UUID du port « Ext-Net » :
+Récupérez l'UUID du port « Ext-Net » :
 
 ```bash
 openstack port list --name Ext-Net
@@ -141,7 +142,7 @@ openstack port list --name Ext-Net
 +--------------------------------------+---------+-------------------+---------------------------------------------------------------------------------------+--------+
 ```
 
-Attacher le port à l'instance :
+Attachez le port à l'instance :
 
 ```bash
 openstack server add port <server_id> <port_id>
@@ -149,7 +150,7 @@ openstack server add port <server_id> <port_id>
 
 #### Activer votre système Windows
 
-Pour pourvoir activer votre système Windows, vous devrez passer par Powershell.
+Pour pourvoir activer votre système Windows, vous devez passer par Powershell.
 
 Une fois connecté à votre instance Windows, cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
 
@@ -161,11 +162,11 @@ slmgr.vbs -ato
 
 ![activation clé windows](images/windowsactivation1.png){.thumbnail}
 
-La licence Windows sera activé pour 180 jours.
+La licence Windows sera activée pour 180 jours.
 
 Il sera nécessaire de répéter cette opération tous les 180 jours.
 
-Pour vérifier le statut de la licence et sa date d'expiration :
+Pour vérifier le statut de la licence et sa date d'expiration, utilisez la commande suivante :
 
 ```bash
 slmgr.vbs -dli
@@ -173,9 +174,8 @@ slmgr.vbs -dli
 
 ![activation clé windows](images/windowsactivation2.png){.thumbnail}
 
-
 ## Aller plus loin
 
-[Corriger la clé d’activation Windows Server](https://docs.ovh.com/fr/dedicated/windows-key/).
+[Découvrez comment corriger la clé d’activation de votre Windows Server](https://docs.ovh.com/fr/dedicated/windows-key/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
