@@ -85,7 +85,7 @@ Po zalogowaniu wyświetla się następująca strona:
 
 ![phpMyAdmin Login](images/pma_login.png){.thumbnail}
 
-W kolumnie po lewej stronie kliknij `"Nazwa bazy danych"`{.action}, a następnie `Rozmiar{.action} w prawym górnym rogu tabeli, która się wyświetli:
+W kolumnie po lewej stronie kliknij `"Nazwa bazy danych"`{.action}, a następnie `Rozmiar`{.action} w prawym górnym rogu tabeli, która się wyświetli:
 
 ![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
 
