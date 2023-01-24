@@ -82,6 +82,12 @@ Créez un fichier vide `sendMail.js` que vous placerez dans le même répertoire
 
 ![JavaScript file](images/create_your_customer_acquisition_webpage_4.png){.thumbnail}
 
+### Le fichier PHP
+
+L'envoi de mail se fait par un script PHP. Dans le répertoire `scripts`, créez un fichier `sendMail.php` :
+
+![PHP file](images/create_your_customer_acquisition_webpage_5.png){.thumbnail}
+
 ## Aller plus loin <a name="go-further"></a>
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
