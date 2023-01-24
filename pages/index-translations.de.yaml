@@ -277,27 +277,24 @@ web-cloud-phone-and-fax-voip-security: Sicherheit
 web-cloud-phone-and-fax-voip-telephone-lines: Telefonleitungen
 web-cloud-phone-and-fax-voip-troubleshooting: Störungsbehebung
 web-cloud-phone-and-fax-voip-tutorials: Tutorials
-web-cloud-web-hosting: Webhosting
-web-cloud-web-hosting-cloud-web-hosting-plan: Cloud Web Hosting Angebot
-web-cloud-web-hosting-cloud-web-hosting-plan-configuring-a-cloud-web-hosting-plan: Konfiguration des Cloud Web Hostings
-web-cloud-web-hosting-cloud-web-hosting-plan-getting-started: Erste Schritte
-web-cloud-web-hosting-cloud-web-hosting-plan-tutorials: Tutorials
-web-cloud-web-hosting-personal-and-business-web-hosting-plans: Basic und Business Webhosting
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-automating-tasks-cron: Automatisierung von Tasks (cron)
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-cms: CMS
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Ihr Individual oder Business Webhosting konfigurieren
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-databases: Datenbanken
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-ftp-and-ssh: FTP und SSH
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-getting-started: Erste Schritte
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-php: PHP
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-redirection-and-authentication: Weiterleitung und Authentifizierung
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-ssl: SSL
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-troubleshooting: Störungsbehebung
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-tutorials: Tutorials
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-visibility-pro: Visibility Pro
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-website-optimisation: Optimierung Ihrer Seite
-web-cloud-web-hosting-ssl-gateway: SSL Gateway
-web-cloud-web-hosting-ssl-gateway-getting-started: Erste Schritte
+web-cloud-hosting: Webhosting
+web-cloud-hosting-automating-tasks-cron: Automatisierung von Tasks (cron)
+web-cloud-hosting-cloud-web-configuration: Einrichten eines Web-Cloud-Hostings
+web-cloud-hosting-cms: CMS
+web-cloud-hosting-configuring-web-hosting-plan: Konfiguration des Basic, Pro und Performance Webhostings
+web-cloud-hosting-databases: Datenbanken
+web-cloud-hosting-ftp-and-ssh: FTP und SSH
+web-cloud-hosting-getting-started: Erste Schritte
+web-cloud-hosting-php: PHP
+web-cloud-hosting-redirection-and-authentication: Weiterleitung und Authentifizierung
+web-cloud-hosting-ssl: SSL
+web-cloud-hosting-troubleshooting: Störungsbehebung
+web-cloud-hosting-tutorials: Tutorials
+web-cloud-hosting-tutorials-cloud-web: Tutorials für Cloud Web hostings
+web-cloud-hosting-tutorials-web-hosting-plan: Tutorials für Basic, Pro und Performance Webhostings
+web-cloud-hosting-website-optimisation: Optimierung Ihrer Seite
+web-cloud-hosting-ssl-gateway: SSL Gateway
+web-cloud-hosting-ssl-gateway-getting-started: Erste Schritte
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
 web-cloud-web-paas-powered-by-platformsh-administration: Verwalten
 web-cloud-web-paas-powered-by-platformsh-administration-management-console: Verwaltungskonsole
