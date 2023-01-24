@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Dernière mise à jour le 03/02/2022**
+**Dernière mise à jour le 24/01/2023**
 
 ## Objectif
 
@@ -20,7 +20,9 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) compatible.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Ne pas avoir téléchargé de fichiers dans le répertoire où sera installé votre module.
+- Utiliser [une version de PHP compatible](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) sur votre hébergement web.
+- Avoir [configuré correctement votre fichier .ovhconfig](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/).
+- Le répertoire où sera installé votre module doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site internet doit être déclaré en tant que multisite.
 
 ## En pratique
@@ -146,5 +148,9 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 [Gestion d’une base de données depuis un hébergement mutualisé](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
 
 Découvrez nos [offres CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
