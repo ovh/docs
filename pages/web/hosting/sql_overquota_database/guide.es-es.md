@@ -116,7 +116,7 @@ A continuación se muestran los enlaces a los sitios web oficiales de los CMS qu
 Si su sitio ha sido desarrollado "**manualmente**" por un proveedor especializado, le recomendamos que contacte con él para que le acompañe.
 >
 
-### Etape 3: realizar una acción correctiva
+### Etapa 3: realizar una acción correctiva
 
 Una vez que haya determinado si el contenido de las tablas es necesario para el funcionamiento del sitio web, podrá elegir entre varias opciones:
 
