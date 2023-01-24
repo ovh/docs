@@ -1,8 +1,6 @@
 ---
 title: Configurare un indirizzo email su Thunderbird per macOS
 slug: servizio_email_guida_alla_configurazione_di_thunderbird_su_mac
-routes:
-    canonical: 'https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/'
 legacy_guide_number: g1297
 excerpt: Trovi qui le informazioni per configurare il tuo indirizzo email su Thunderbird.
 section: Configurazione su computer
