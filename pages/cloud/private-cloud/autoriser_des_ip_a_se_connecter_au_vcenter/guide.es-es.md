@@ -1,30 +1,29 @@
 ---
 title: Autorizar direcciones IP a conectarse al vCenter
 slug: autorizar-direcciones-ip-a-conectarse-al-vcenter
-legacy_guide_number: '1442255'
-space_key: VS
-space_name: vSphere as a Service
 section: Funcionalidades de OVHcloud
 ---
 
-**Última actualización: 18/08/2021**
+**Última actualización: 25/01/2023**
 
 ## Objetivo
 
-Es posible limitar el acceso al vCenter autorizando solo la conexión de determinadas direcciones IP. 
+El acceso al vCenter solo está restringido a las direcciones IP autorizadas.
 
 **Esta guía explica cómo autorizar direcciones IP a conectarse al vCenter.**
 
 ## Requisitos
 
-* Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-* Disponer de una [infraestructura Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external} en su cuenta de OVHcloud.
+* Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+* Disponer de una [infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) en su cuenta de OVHcloud.
 
 ## Procedimiento
 
-Cuando la política de acceso al vCenter está restringida, es necesario añadir las direcciones IP autorizadas a conectarse al servicio.
+Por defecto, el acceso al vCenter está restringido. Es necesario añadir las IP que estén autorizadas a conectarse al servicio.
 
-Esta operación se realiza desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external-link}. En el menú `Servidores`, acceda a la sección `Private Cloud`. Seleccione la infraestructura y, a continuación, abra la pestaña `Seguridad`. Por último, haga clic en `Añadir un nuevo rango de direcciones IP`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y haga clic en la pestaña `Hosted Private Cloud`{.action}.
+
+Haga clic en el menú `VMware`{.action}, seleccione su infraestructura y acceda a la pestaña `Seguridad`{.action}. Haga clic en `Añadir un nuevo rango de direcciones IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

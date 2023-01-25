@@ -1,30 +1,29 @@
 ---
 title: Autorizar IP a ligar-se ao vCenter
 slug: autorizar-ip-a-ligar-se-ao-vcenter
-legacy_guide_number: '1442255'
-space_key: VS
-space_name: vSphere as a Service
 section: Funcionalidades da OVHcloud
 ---
 
-**Última atualização: 18/08/2021**
+**Última atualização: 25/01/2023**
 
 ## Objetivo
 
-É possível limitar o acesso ao vCenter autorizando que apenas alguns endereços IP se liguem. 
+O acesso ao seu vCenter é restrito aos endereços IP autorizados.
 
 **Saiba como autorizar endereços IP a ligarem-se ao vCenter.**
 
 ## Requisitos
 
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-* Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external} na sua conta OVHcloud.
+* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+* Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) na sua conta OVHcloud.
 
 ## Instruções
 
-Quando a política de acesso ao vCenter é limitada, é necessário adicionar os IP que serão autorizados a ligar-se ao serviço.
+Por predefinição, o acesso ao seu vCenter é restrito. Por isso, é necessário adicionar os IP que serão autorizados a ligar-se ao serviço.
 
-A operação pode ser realizada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external-link}. Na secção `Hosted Private Cloud`, clique na opção `Private Cloud`. Selecione a infraestrutura e aceda ao separador `Segurança` e clique em `Adicionar um novo intervalo de endereços IP`{.action}.
+A operação pode ser realizada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na secção `Hosted Private Cloud`{.action}, clique na opção `VMware`{.action}. 
+
+Selecione a infraestrutura e aceda ao separador `Segurança`{.action} e clique em `Adicionar um novo intervalo de endereços IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 
@@ -41,4 +40,4 @@ Só precisa de validar clicando em `Seguinte`{.action} e, uma vez que o IP está
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
