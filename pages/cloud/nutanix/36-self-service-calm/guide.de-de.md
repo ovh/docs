@@ -2,7 +2,7 @@
 title: NCM Self Service (CALM) einrichten (EN)
 slug: self-service-calm
 excerpt: 'How to enable Self Service (CALM) in your Prism Central'  
-section: Erweiterte Nutzung
+section: Fortgeschrittene Nutzung
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/self-service-calm/'
@@ -318,7 +318,7 @@ Scroll down the window on the right and check the `Guest Customisation`{.action}
 
 > [!primary]
 > This file is generated from the Windows ADK tools downloadable via this [link](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) and has been adapted by adding variables from Nutanix CALM such as '@@{WindowsAccount.secret}@@' that represents the password of the WindowsAccount.
-> 
+>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -408,7 +408,7 @@ In the left-hand window, go to `Install`{.action} below the **Package** category
 
 ![03 Create Windows Blueprint 11](images/03-create-windows-blueprint11.png){.thumbnail}
 
-Enter this information: 
+Enter this information:
 
 - **Task Name**: `IIS Installation`
 - **Type**: `Execute`
@@ -732,7 +732,7 @@ while state != "SUCCEEDED":
 print("OS disk extended to {} GB".format(diskSize))
 
 # Wait until VM boots
-sleep(60) 
+sleep(60)
 ```
 
 Click `+ Task`{.action}.

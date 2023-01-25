@@ -2,7 +2,7 @@
 title: Aktualisieren des vSAN-Festplattenformats (EN)
 slug: vsan-disk-format-upgrade
 excerpt: "Find out how to update the format of a vSAN disk"
-section: VMware vSphere-Funktionen
+section: VMware vSphere Funktionen
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/vsan-disk-format-upgrade/'
 ---
@@ -13,7 +13,7 @@ routes:
 
 vSAN disks are regularly upgraded with new versions. You need to update the vSAN disk format version to have new features or to maintain compatibility with the versions of your VMware cluster, as described in this article: [Understanding vSAN on-disk format versions and compatibility (2148493)](https://kb.vmware.com/s/article/2148493).
 
-**This guide explains how to update the format of your vSAN disks.** 
+**This guide explains how to update the format of your vSAN disks.**
 
 ## Requirements
 
