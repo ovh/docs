@@ -9,7 +9,7 @@ section: OVHcloud Funktionen
 
 ## Ziel
 
-Der Zugang zu Ihrem vCenter ist ausschließlich auf autorisierte IP-Adressen beschränkt.
+Der Zugang zu Ihrem vCenter ist auf autorisierte IP-Adressen beschränkt.
 
 **Erfahren Sie, wie Sie IP-Adressen für die Verbindung mit vCenter zulassen können.**
 
@@ -20,21 +20,21 @@ Der Zugang zu Ihrem vCenter ist ausschließlich auf autorisierte IP-Adressen bes
 
 ## In der praktischen Anwendung
 
-Standardmäßig ist der Zugang zu vCenter beschränkt. Fügen Sie daher die IP-Adressen hinzu, die zur Verbindung mit dem Dienst berechtigt sind.
+Der Zugang zu vCenter ist nur eingeschränkt möglich. Fügen Sie daher die IP-Adressen hinzu, die zur Verbindung mit dem Dienst berechtigt sind.
 
 Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie im Bereich `Hosted Private Cloud` auf die Rubrik `VMware`{.action}. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit`{.action} und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 
-Fügen Sie hier die entsprechende IP hinzu. Sie können auch eine Beschreibung anfügen, um sie später einfacher in der Liste wiederzufinden.
+Fügen Sie hier die IP-Adresse hinzu. Sie können auch eine Beschreibung anfügen, um sie später einfacher in der Liste wiederzufinden.
 
-Nun müssen Sie nur noch bestätigen: Klicken Sie auf `Weiter`{.action}, und sobald die IP als **„Autorisiert und eingerichtet“** gekennzeichnet ist, ist die Verbindung mit vSphere über diese IP möglich.
+Nun müssen Sie nur noch bestätigen: Klicken Sie auf `Weiter`{.action}, und sobald die IP-Adresse als **„Autorisiert und eingerichtet“** gekennzeichnet ist, ist die Verbindung mit vSphere über diese IP möglich.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
 
 > [!primary]
 >
-> Bitte beachten Sie, dass Sie aus Sicherheitsgründen maximal 2048 IP-Adressen erlauben können, sich mit vCenter zu verbinden.
+> Beachten Sie, dass Sie aus Sicherheitsgründen maximal 2048 IP-Adressen zur Verbindung mit vCenter erlauben können.
 >
 
 ## Weiterführende Informationen
