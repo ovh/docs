@@ -1,17 +1,14 @@
 ---
 title: Autoriser des IP à se connecter au vCenter
 slug: autoriser-des-ip-a-se-connecter-au-vcenter
-legacy_guide_number: '1442255'
-space_key: VS
-space_name: vSphere as a Service
 section: Fonctionnalités OVHcloud
 ---
 
-**Dernière mise à jour le 18/08/2021**
+**Dernière mise à jour le 25/01/2023**
 
 ## Objectif
 
-Il est possible de restreindre l'accès au vCenter en autorisant uniquement certaines adresses IP à s'y connecter. 
+L'accès à votre vCenter est restreint uniquement aux adresses IP autorisées.
 
 **Découvrez comment autoriser des adresses IP à se connecter au vCenter.**
 
@@ -22,21 +19,21 @@ Il est possible de restreindre l'accès au vCenter en autorisant uniquement cert
 
 ## En pratique
 
-Lorsque la politique d'accès au vCenter est restreinte, il est nécessaire d'ajouter les IPs qui seront autorisées à se connecter au service.
+Par défaut, l'accès à votre vCenter est restreint. Il est donc nécessaire d'ajouter les IPs qui seront autorisées à se connecter au service.
 
-L'opération se réalise dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external-link}. Dans la section `Hosted Private Cloud`, cliquez sur la rubrique `Private Cloud`. Sélectionnez l'infrastructure puis rendez-vous dans l'onglet `Sécurité` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external-link} et cliquez sur l'onglet `Hosted Private Cloud`. Cliquez sur la rubrique `VMware`, sélectionnez votre infrastructure puis rendez-vous dans l'onglet `Sécurité`. Cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 
-Rajoutez ici l'IP concernée et éventuellement une description pour la retrouver facilement dans la liste plus tard.
+Rajoutez ici l'IP concernée et éventuellement une description pour la retrouver plus facilement dans la liste ultérieurement.
 
-Il ne reste plus qu'a valider en cliquant sur `Suivant`{.action} et une fois que l'IP est bien marquée comme **"Autorisée et mise en place"**, la connexion au vSphere sera possible depuis l'IP en question.
+Validez cet ajout en cliquant sur `Suivant`{.action}. Une fois que l'IP est bien marquée comme **"Autorisée et mise en place"**, la connexion au vSphere sera possible depuis l'adresse IP en question.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
 
 > [!primary]
 >
-> Veuillez noter que pour des raisons de sécurité, vous ne pourrez autoriser qu'un maximum de 2048 adresses IP à se connecter à votre vCenter.
+> Veuillez noter que, pour des raisons de sécurité, vous ne pourrez autoriser qu'un maximum de 2048 adresses IP à se connecter à votre vCenter.
 >
 
 ## Aller plus loin
