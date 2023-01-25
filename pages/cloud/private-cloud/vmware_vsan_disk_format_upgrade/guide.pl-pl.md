@@ -1,8 +1,10 @@
 ---
-title: "Updating the vSAN disk format"
+title: Aktualizowanie formatu dysku vSAN (EN)
 slug: vsan-disk-format-upgrade
 excerpt: "Find out how to update the format of a vSAN disk"
-section: VMware vSphere features
+section: Funkcjonalności VMware vSphere
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/vsan-disk-format-upgrade/'
 ---
 
 **Last updated 19th January 2023**
@@ -11,17 +13,17 @@ section: VMware vSphere features
 
 vSAN disks are regularly upgraded with new versions. You need to update the vSAN disk format version to have new features or to maintain compatibility with the versions of your VMware cluster, as described in this article: [Understanding vSAN on-disk format versions and compatibility (2148493)](https://kb.vmware.com/s/article/2148493).
 
-**This guide explains how to update the format of your vSAN disks.** 
+**This guide explains how to update the format of your vSAN disks.**
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- A deployed [vSan cluster](https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/)
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
+- A deployed [vSan cluster](https://docs.ovh.com/pl/private-cloud/vmware-vsan/)
 
 ## Instructions
 
-Log in to your vSphere interface using [this guide](https://docs.ovh.com/gb/en/private-cloud/login-vsphere-interface/).
+Log in to your vSphere interface using [this guide](https://docs.ovh.com/pl/private-cloud/polaczenie-interfejs-vsphere/).
 
 In the vSphere interface, click on your `Cluster`{.action} to the left, go to the `Configure`{.action} tab, choose `Services`{.action} in the **vSAN** section and click `PRE-CHECK UPGRADE`{.action}.
 

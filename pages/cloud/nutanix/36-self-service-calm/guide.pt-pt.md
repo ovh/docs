@@ -1,321 +1,324 @@
 ---
-title: Mise en place de NCM Self Service (CALM) 
+title: Criação de NCM Self Service (CALM) (EN)
 slug: self-service-calm
-excerpt: 'Comment activer Self Service (CALM) dans votre Prism Central' 
-section: Utilisation avancée
+excerpt: 'How to enable Self Service (CALM) in your Prism Central'  
+section: Utilização avançada
 order: 06
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/self-service-calm/'
 ---
 
-**Dernière mise à jour le 16/01/2023**
+**Last updated 16th January 2023**
 
 ## Objectif
 
-**Découvrez comment mettre en place NCM Self-Service (Calm) sur votre Prism Central**
+**Find out how to set up NCM Self-Service (Calm) on your Prism Central.**
 
 > [!warning]
-> OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+> This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/pt/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
+>
 
-## Prérequis
+## Requirements
 
-- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté sur le cluster via Prism Central.
-- Avoir des licences en BYOL pour Self Service (CALM). Ces licences ne sont pas disponibles avec les Pack Standard et Advanced proposés par OVHcloud.
-- Posséder un VLAN supplémentaire dans votre cluster qui distribue des adresses IP en IPAM et possède un accès à Internet. 
+- A Nutanix cluster in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- You must be connected to the cluster via Prism Central
+- Have BYOL for Self Service (CALM) licences (These licences are not available with the standard and advanced pack offered by OVHcloud).
+- An additional VLAN in your cluster that distributes IPAM IP addresses and has internet access
 
-## Présentation
+## Overview
 
-NCM Self Service (CALM) est une solution d'orchestration hétérogène qui permet l'automatisation et la gestion de déploiements, il fonctionne sur Prism Central et autorise l'administration de divers environnements (cluster Nutanix, serveur bare metal, etc...).
+NCM Self Service (CALM) is a heterogeneous orchestration solution that allows the automation and management of deployments, it runs on Prism Central and grants the administration of various environments (Nutanix Cluster, bare metal server, etc...).
 
-## En pratique
+## Instructions
 
-Nous allons activer CALM, créer deux applications pour notre cluster Nutanix et les publier sur les portails d'applications qui sont :
+We will enable CALM, create two applications for our Nutanix cluster and publish them on the application portals which are:
 
-- Un serveur WEB Nginx sous Linux Ubuntu.
-- Un serveur WEB IIS sous Windows server.
+- An Nginx Web server with Linux Ubuntu.
+- An IIS Web server on Windows server.
 
-### Activation de CALM
+### Activating CALM
 
-Avant de déployer CALM, il faut configurer une adresse IP pour le **ISCSI Data Services IP**.
+Before deploying CALM, you must configure an IP address for the **ISCSI Data Services IP**.
 
-Depuis le tableau de bord Prism Central, cliquez sur votre `Cluster`{.action} dans la rubrique **Cluster Quick Access**.
+From the Prism Central dashboard, click on your `Cluster`{.action} in the **Cluster Quick Access** section.
 
 ![00 Activate CALM 01](images/00-activate-calm01.png){.thumbnail}
 
-Dans Prism Element, cliquez en haut à gauche sur les `paramètres de votre cluster`{.action}.
+In the Prism Element, click on the `cluster settings`{.action} in the top left-hand corner.
 
 ![00 Activate CALM 02](images/00-activate-calm02.png){.thumbnail}
 
-Saisissez une `adresse IP`{.action} dans **ISCSI Data Services IP** (elle ne doit pas être utilisée dans l'étendue du réseau d'administration) puis cliquez sur `Save`{.action}.
+Enter an `IP Address`{.action} in **ISCSI Data Services IP** which is not used in the scope of the management network and click `Save`{.action}.
 
 ![00 Activate CALM 03](images/00-activate-calm03.png){.thumbnail}
 
-Revenez sur Prism Central, allez dans le menu principal à gauche et cliquez sur `Calm`{.action} dans la rubrique **Services**
+Go back to Prism Central, go to the main menu on the left and click on `Calm`{.action} in the **Services** section
 
 ![00 Activate CALM 04](images/00-activate-calm04.png){.thumbnail}
 
-Cliquez sur `Enable App. Orchestration(Calm)`{.action}.
+Click `Enable App. Orchestration(Calm)`{.action}.
 
 ![00 Activate CALM 05](images/00-activate-calm05.png){.thumbnail}
 
-Cochez la case `Enable App Management`{.action} et cliquez sur `Save`{.action}.
+Select the `Enable App Management`{.action} check box and click `Save`{.action}.
 
 ![00 Activate CALM 06](images/00-activate-calm06.png){.thumbnail}
 
-L'activation de CALM est en cours.
+CALM is being activated.
 
 ![00 Activate CALM 07](images/00-activate-calm07.png){.thumbnail}
 
 > [!primary]
-> Un message d'erreur apparait pendant le déploiement de CALM. N'en tenez pas compte, quittez la fenêtre et patientez jusqu'a que l'installation soit terminée.
+> An error message appears during CALM deployment, ignore it, exit the window and wait until the installation is complete.
 
 ![00 Activate CALM 08](images/00-activate-calm08.png)
 
-### Création d'un projet
+### Creating a project
 
-Il est nécessaire de créer un projet pour déployer des applications.
+You need to create a project to deploy applications.
 
-Via le menu de Prism Central, cliquez sur `Calm`{.action} dans la rubrique Services.
+From the Prism Central menu, click on `Calm`{.action} in the Services section.
 
 ![01 create Project 01](images/01-create-project-01.png){.thumbnail}
 
-Cliquez sur l'icône `Projects`{.action} dans la barre de menu verticale.
+Click the `Projects`{.action} icon in the vertical menu bar.
 
 ![01 create Project 02](images/01-create-project-02.png){.thumbnail}
 
-Cliquez sur le bouton `+ Create Project`{.action}.
+Click the `+ Create Project`{.action} button.
 
 ![01 create Project 03](images/01-create-project-03.png){.thumbnail}
 
-Saisissez le `nom du projet`{.action} dans **Project Name** et cliquez sur `Create`{.action}
+Type the `project name`{.action} in **Project Name** field and click `Create`{.action}
 
 ![01 create Project 04](images/01-create-project-04.png){.thumbnail}
 
-Cliquez sur `+ Add infrastructure`{.action}.
+click `+ Add infrastructure`{.action}.
 
 ![01 create Project 05](images/01-create-project-05.png){.thumbnail}
 
-Cliquez sur `Add infrastructure`{.action}.
+Click `Add infrastructure`{.action}.
 
 ![01 create Project 06](images/01-create-project-06.png){.thumbnail}
 
-Sélectionnez `NTNX_LOCAL_AZ`{.action} dans accounts.
+Select `NTNX_LOCAL_AZ`{.action} from accounts.
 
 ![01 create Project 07](images/01-create-project-07.png){.thumbnail}
 
-Cliquez sur `Configure Resources`{.action}.
+Click `Configure Resources`{.action}.
 
 ![01 create Project 08](images/01-create-project-08.png){.thumbnail}
 
-Sélectionnez votre `Cluster`{.action} dans **Select clusters to be added to this project** et cliquez sur `+ Select VLANs`{.action}.
+Select your `Cluster`{.action} from **Select clusters to be added to this project** and click `+ Select VLANs`{.action}.
 
 ![01 create Project 09](images/01-create-project-09.png){.thumbnail}
 
-Cochez le VLAN `production`{.action} et cliquez sur `Confirm and Select Default`{.action}.
+Check the `production`{.action} VLAN box and click `Confirm and Select Default`{.action}.
 
 ![01 create Project 10](images/01-create-project-10.png){.thumbnail}
 
-Cliquez sur `Confirm`{.action}.
+Click `Confirm`{.action}.
 
 ![01 create Project 11](images/01-create-project-11.png){.thumbnail}
 
-Cliquez sur `Save`{.action}.
+Click `Save`{.action}.
 
 ![01 create Project 12](images/01-create-project-12.png){.thumbnail}
 
-Dans la barre d'onglets, rendez-vous sur `Environments`{.action} et cliquez sur `Create Environment`{.action}.
+In the tab bar go to `Environments`{.action} and click `Create Environment`{.action}.
 
 ![01 create Project 13](images/01-create-project-13.png){.thumbnail}
 
-Saisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action}.
+Type a `Name`{.action} in the **Name** field and click `Next`{.action}.
 
 ![01 create Project 14](images/01-create-project-14.png){.thumbnail}
 
-Cliquez sur `Select Infrastucture`{.action}.
+Click `Select Infrastructure`{.action}.
 
 ![01 create Project 15](images/01-create-project-15.png){.thumbnail}
 
-Cliquez sur `NTNX_LOCAL_AZ`{.action}.
+Click `NTNX_LOCAL_AZ`{.action}.
 
 ![01 create Project 16](images/01-create-project-16.png){.thumbnail}
 
-Cliquez sur `Required for lauching blueprints from marketplace`{.action} à droite de **VM Configuration**
+Click `Required for lauching blueprints from marketplace`{.action} to the right of **VM Configuration**
 
 ![01 create Project 17](images/01-create-project-17.png){.thumbnail}
 
-Renseignez ces informations :
+Enter this information:
 
-- **Cluster** : `sélection de votre cluster`
-- **vCPUs** : `4`
-- **Core per vCPU** : `1`
-- **Memory (GiB)** : `4`
+- **Cluster**: `choose your cluster`
+- **vCPUs**: `4`
+- **Core per vCPU**: `1`
+- **Memory (GiB)**: `4`
 - **Image** : `WS2022EN-SYSPREPED`
 
 > [!primary]
-> L'image est générée à partir d'une VM WINDOWS Server 2022 sur laquelle on a appliqué un sysprep pour remettre la configuration par défaut. Lors d'une utilisation avec CALM, il est possible d'automatiser l'installation d'un OS Windows à partir de ce type d'image et de lui appliquer des paramètres stockés dans un fichier XML.
+> The image is generated from a VM WINDOWS Server 2022 on which a sysprep was applied to reset the default configuration. When used with CALM, it is possible to automate the installation of a Windows OS from this type of image and apply settings stored in an XML file to it.
 
-Faites ensuite défiler la fenêtre vers le bas.
+Then, scroll down the window.
 
 ![01 create Project 18](images/01-create-project-18.png){.thumbnail}
 
-Cliquez sur le bouton `+`{.action} à droite de **NETWORK ADAPTERS (NICs)**.
+Click the `+`{.action} button to the right of **NETWORK ADAPTERS (NICs)**.
 
 ![01 create Project 19](images/01-create-project-19.png){.thumbnail}
 
-Choisissez la carte réseau dans le VLAN `production`{.action}, cochez la case `Check log-in upon create`{.action} et faites défiler la fenêtre vers le haut.
+Choose the network adapter in the `production`{.action} VLAN, check the `Check log-in upon create`{.action} box and scroll up in the window.
 
 ![01 create Project 20](images/01-create-project-20.png){.thumbnail}
 
-Allez sur l'onglet `Linux`{.action}, saisissez ces informations :
+Go to the `Linux`{.action} tab, enter this information:
 
-- **Cluster** : `sélection de votre cluster`
-- **vCPUs** : `4`
-- **Core per vCPU** : `1`
-- **Memory (GiB)** : `4`
-- **Image** : `jammy-server-cloudimg-amd64.img`
+- **Cluster**: `choose your cluster`
+- **vCPUs**: `4`
+- **Core per vCPU**: `1`
+- **Memory (GiB)**: `4`
+- **Image**: `jammy-server-cloudimg-amd64.img`
 
 > [!primary]
-> L'image est préconfigurée pour l'utilisation de cloud-init d'UBUNTU, elle est téléchargeable sur Internet à cette adresse [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/). CALM permet l'automatisation et la personnalisation d'une installation Linux au travers de ce type d'images et de fichiers de configuration YAML.
+> The image is pre-configured for UBUNTU Cloud-init use and can be downloaded from the Internet at [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/). CALM allows the automation and customisation of a Linux installation through these types of images and YAML configuration files.
 >
 
-Faites ensuite défiler la fenêtre vers le bas.
+Then scroll down the window.
 
 ![01 create Project 21](images/01-create-project-21.png){.thumbnail}
 
-Cliquez sur le bouton `+`{.action} à droite de **NETWORK ADAPTERS (NICs)**.
+Click the `+`{.action} button to the right of **NETWORK ADAPTERS (NICs)**.
 
 ![01 create Project 22](images/01-create-project-22.png){.thumbnail}
 
-Choisissez la carte réseau dans le VLAN `production`{.action}, cochez la case `Check log-in upon create`{.action} et cliquez sur `Next`{.action}.
+Choose the network adapter in the `production`{.action} VLAN, check the `Check log-in upon create`{.action} box and click `Next`{.action}.
 
 ![01 create Project 23](images/01-create-project-23.png){.thumbnail}
 
-Cliquez sur `+ Add Credential`{.action}.
+Click `+ Add Credential`{.action}.
 
 ![01 create Project 24](images/01-create-project-24.png){.thumbnail}
 
-Cliquez sur `+ Add Credential`{.action}.
+Click `+ Add Credential`{.action}.
 
 ![01 create Project 25](images/01-create-project-25.png){.thumbnail}
 
-Saisissez ces informations :
+Enter this information:
 
-- **Name** : `WindowsAccount`
-- **Username** : `administrator`
-- **Password** : `mot de passe du compte administrator`
+- **Name**: `WindowsAccount`
+- **Username**: `administrator`
+- **Password**: `administrator account password`
 
-Cliquez ensuite sur `+ Add Credential`{.action}.
+Then, click `+ Add Credential`{.action}.
 
 ![01 create Project 26](images/01-create-project-26.png){.thumbnail}
 
-Saisissez ces informations :
+Enter this information:
 
-- **Name** : `LinuxAccount`
-- **Username** : `administrator`
-- **Password** : `mot de passe du compte administrator`
+- **Name**: `LinuxAccount`
+- **Username**: `administrator`
+- **Password**: `administrator account password`
 
-Cliquez ensuite sur `Save Environment`{.action}.
+Then, click `Save Environment`{.action}.
 
 ![01 create Project 27](images/01-create-project-27.png){.thumbnail}
 
-Cliquez sur `Marketplace Usage`{.action}.
+Click `Marketplace Usage`{.action}.
 
 ![02 add credential to environment 01](images/02-add-credential-to-environment01.png){.thumbnail}
 
-Cliquez sur `Update`{.action}.
+Click `Update`{.action}.
 
 ![02 add credential to environment 02](images/02-add-credential-to-environment02.png){.thumbnail}
 
-Cliquez sur `Next`{.action}.
+Click `Next`{.action}.
 
 ![02 add credential to environment 03](images/02-add-credential-to-environment03.png){.thumbnail}
 
-Cliquez sur `Not ready for marketplace usage`{.action} à droite de VM Configuration.
+Click `Not ready for marketplace usage`{.action} to the right of VM Configuration.
 
 ![02 add credential to environment 04](images/02-add-credential-to-environment04.png){.thumbnail}
 
-Faites défiler la fenêtre vers le bas.
+Scroll down the window.
 
 ![02 add credential to environment 05](images/02-add-credential-to-environment05.png){.thumbnail}
 
-Choisissez `WindowsAccount`{.action} dans **Credential** et faites défiler la fenêtre vers le haut.
+Choose `WindowsAccount`{.action} from **Credential** and scroll up the window.
 
 ![02 add credential to environment 06](images/02-add-credential-to-environment06.png){.thumbnail}
 
-Cliquez sur l'onglet `Linux`{.action} dans **Credential** et faites défiler la fenêtre vers le bas.
+Click the `Linux`{.action} tab in **Credential** and scroll down the window.
 
 ![02 add credential to environment 07](images/02-add-credential-to-environment07.png){.thumbnail}
 
-Choisissez `LinuxAccount`{.action} dans **Credential** et cliquez sur `Next`{.action}.
+Choose `LinuxAccount`{.action} from **Credential** and click `Next`{.action}.
 
 ![02 add credential to environment 08](images/02-add-credential-to-environment08.png){.thumbnail}
 
-Cliquez sur `Save Environment`{.action}.
+Click `Save Environment`{.action}.
 
 ![02 add credential to environment 09](images/02-add-credential-to-environment09.png){.thumbnail}
 
-Votre environnement est prêt pour la création et la diffusion d'applications.
+Your environment is ready for application creation and distribution.
 
 ![02 add credential to environment 10](images/02-add-credential-to-environment10.png){.thumbnail}
 
-### Création d'applications
+### Creating applications
 
-Nous allons créer deux applications, tester leur bon fonctionnement et les publier dans le marketplace du cluster.
+We will create two applications, test how they work, and publish them to the cluster marketplace.
 
-#### Création de l'application WEB IIS sous Windows
+#### Creating IIS Web Application on Windows
 
-Dans la barre verticale, choisissez `Blueprints`{.action}, faites défiler le menu `Create Blueprint`{.action} et cliquez sur sur `Multi VM/Pod Blueprint`{.action}.
+In the vertical bar ,choose `Blueprints`{.action}, scroll to the `Create Blueprint`{.action} menu and click on `Multi VM/Pod Blueprint`{.action}.
 
 ![03 Create Windows Blueprint 01](images/03-create-windows-blueprint01.png){.thumbnail}
 
-Choisissez le `nom`{.action} de votre plan dans **Name** et cliquez sur `Proceed`{.action}.
+Choose the `name`{.action} of your blueprint from **Name** and click on `Proceed`{.action}.
 
 ![03 Create Windows Blueprint 02](images/03-create-windows-blueprint02.png){.thumbnail}
 
-Saisissez le `nom`{.action} dans **Application Profile Name** et cliquez sur `Credentials`{.action} en haut.
+Type the `name`{.action} in **Application Profile Name** and click on `Credentials`{.action} at the top.
 
 ![03 Create Windows Blueprint 03](images/03-create-windows-blueprint03.png){.thumbnail}
 
-Nous allons créer le compte Windows. Il sera utilisé à l'intérieur de sysprep en tant que variable, dans la configuration des tâches d'installation du plan et pour le test de connexion distant.
+We will create the Windows account, it will be used inside sysprep as variable, in the configuration of the blueprint installation tasks and for the remote connection test.
 
-Cliquez sur bouton `+`{.action} à côté de Credentials.
+Click on the `+`{.action} button next to **Credentials**.
 
 ![03 Create Windows Blueprint 04](images/03-create-windows-blueprint04.png){.thumbnail}
 
-Saisissez ces informations :
+Enter this information:
 
-- **Name** : `WindowsAccount`
-- **Username** : `administrator`
-- **Password** : `Mot de passe du compte administrator`
+- **Name**: `WindowsAccount`
+- **Username**: `administrator`
+- **Password**: `Administrator account password`
 
-Cliquez ensuite sur `Done`{.action}.
+And click on `Done`{.action}.
 
 ![03 Create Windows Blueprint 05](images/03-create-windows-blueprint05.png){.thumbnail}
 
-Cliquez sur `Back`{.action}.
+Click `Back`{.action}.
 
 ![03 Create Windows Blueprint 06](images/03-create-windows-blueprint06.png){.thumbnail}
 
-Cliquez sur le bouton `+`{.action} dans la fenêtre de gauche à côté de **Service**.
+Click the `+`{.action} button in the left window next to **Service**.
 
 ![03 Create Windows Blueprint 07](images/03-create-windows-blueprint07.png){.thumbnail}
 
-Saisissez ces informations :
+Enter this information:
 
-- **Name** : `VM IIS`
-- **Operation System** : `Windows`
+- **Name**: `VM IIS`
+- **Operation System**: `Windows`
 
-Cliquez ensuite sur `Clone from environment`{.action}.
+And click on `Clone from environment`{.action}.
 
 ![03 Create Windows Blueprint 08](images/03-create-windows-blueprint08.png){.thumbnail}
 
-Faites défiler la fenêtre de droite vers le bas, cochez `Guest Customization`{.action}, cliquez sur `Sysprep`{.action} puis copiez le contenu du fichier sysprep ci-dessous dans **Script** :
+Scroll down the window on the right and check the `Guest Customisation`{.action} box. Next, click `Sysprep`{.action} and then copy the contents of the sysprep file below to **Script**:
 
 > [!primary]
-> Ce fichier est généré à partir des outils Windows ADK téléchargeables via ce [lien](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) et a été ensuite adapté en rajoutant des variables venant de Nutanix CALM, comme `@@{WindowsAccount.secret}@@` qui représente le mot de passe du compte WindowsAccount.
-> 
+> This file is generated from the Windows ADK tools downloadable via this [link](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) and has been adapted by adding variables from Nutanix CALM such as '@@{WindowsAccount.secret}@@' that represents the password of the WindowsAccount.
+>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -395,24 +398,24 @@ Faites défiler la fenêtre de droite vers le bas, cochez `Guest Customization`{
 
 ![03 Create Windows Blueprint 09](images/03-create-windows-blueprint09.png){.thumbnail}
 
-Continuez de faire défiler la fenêtre et vérifiez que **Check log-in upon create** est coché puis choisissez `WindowsAccount`{.action} dans **Credential**.
+Continue to scroll through the window and check that **Check log-in upon create** is checked and choose `WindowsAccount`{.action} from **Credential**.
 
 ![03 Create Windows Blueprint 10](images/03-create-windows-blueprint10.png){.thumbnail}
 
-Nous allons maintenant créer des tâches en Powershell qui s'exécuteront après l'installation et la personnalisation de Windows. Chacune de ces tâches s'exécute l'une après l'autre.
+We will now create tasks in Powershell that will run after Windows installation and customisation. Each of these tasks runs in sequence.
 
-Dans la fenêtre de gauche, positionnez-vous sur `Install`{.action} en dessous de la catégorie **Package** et cliquez sur `+ Task`{.action}.
+In the left-hand window, go to `Install`{.action} below the **Package** category and click on `+ Task`{.action}.
 
 ![03 Create Windows Blueprint 11](images/03-create-windows-blueprint11.png){.thumbnail}
 
-Renseignez ces informations :
+Enter this information:
 
-- **Task Name** : `IIS Installation`
-- **Type** : `Execute`
-- **Script Type** : `Powershell`
-- **Credential** : `WindowsAccount`
+- **Task Name**: `IIS Installation`
+- **Type**: `Execute`
+- **Script Type**: `Powershell`
+- **Credential**: `WindowsAccount`
 
-Copiez ce contenu dans **Script** :
+Copy this content to **Script**:
 
 ```powershell
 Install-WindowsFeature -name Web-Server -IncludeManagementTools
@@ -423,18 +426,18 @@ exit 0
 
 ```
 
-Cliquez ensuite sur `+ Task`{.action}.
+Click `+ Task`{.action}.
 
 ![03 Create Windows Blueprint 12](images/03-create-windows-blueprint12.png){.thumbnail}
 
-Complétez ces informations :
+Fill in this information:
 
-- **Task Name** : `Customize IIS`
-- **Type** : `Execute`
-- **Script Type** : `Powershell`
-- **Credential** : `WindowsAccount`
+**Task Name**: `Customize IIS`
+**Type**: `Execute`
+**Script Type**: `Powershell`
+**Credential**: `WindowsAccount`
 
-Copiez ce contenu dans **Script** :
+Copy this content to **Script**:
 
 ```powershell
 echo "<!DOCTYPE html>" | out-file "C:\inetpub\wwwroot\default.htm"
@@ -451,109 +454,109 @@ Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "</body>"
 Add-Content -Path C:\inetpub\wwwroot\default.htm -Value "</html>"
 ```
 
-Cliquez ensuite sur `+ Task`{.action}.
+Then click `+ Task`{.action}.
 
 ![03 Create Windows Blueprint 13](images/03-create-windows-blueprint13.png){.thumbnail}
 
-Saisissez ces informations :
+Enter this information:
 
-- **Task Name** : `reboot VM`
-- **Type** : `Execute`
-- **Script Type** : `Powershell`
-- **Credential** : `WindowsAccount`
+**Task Name**: `reboot VM`
+**Type**: `Execute`
+**Script Type**: `Powershell`
+**Credential**: `WindowsAccount`
 
-Copiez ce contenu dans **Script** :
+Copy this content to **Script**:
 
 ```powershell
 restart-computer -force
 ```
 
-Cliquez ensuite sur `Save`{.action} en haut de la fenêtre.
+Click `Save`{.action} at the top of the window.
 
 ![03 Create Windows Blueprint 14](images/03-create-windows-blueprint14.png){.thumbnail}
 
-L'application est créée, cliquez sur `Launch`{.action} pour tester votre application.
+The application is created, click `Launch`{.action} to test your application.
 
 ![03 Create Windows Blueprint 15](images/03-create-windows-blueprint15.png){.thumbnail}
 
-Saisissez un `Nom`{.action} dans **Application Name** et cliquez sur `Deploy`{.action}.
+Type a `Name`{.action} in **Application Name** and click `Deploy`{.action}.
 
 ![03 Create Windows Blueprint 16](images/03-create-windows-blueprint16.png){.thumbnail}
 
-Une nouvelle fenêtre apparait, cliquez sur `Audit`{.action} pour voir les étapes du déploiement de votre application. Lorsque le déploiement est terminé, vous pouvez voir en haut de la fenêtre l'indication **RUNNING** qui vous indique que l'application est déployée et active.
+A new window will appear, click on `Audit`{.action} to see the steps for deploying your application. When the deployment is complete you can see at the top of the window the **RUNNING** indication that the application is deployed and active.
 
 ![03 Create Windows Blueprint 17](images/03-create-windows-blueprint17.png){.thumbnail}
 
-Dans notre cas, le serveur IIS est actif et affiche un message sur l'adresse IP de la machine virtuelle en HTTP.
+In our case, the IIS server is active and displays a message on the IP address of the virtual machine in HTTP.
 
 ![03 Create Windows Blueprint 18](images/03-create-windows-blueprint18.png){.thumbnail}
 
-#### Création de l'application WEB Nginx sous Linux Ubuntu
+#### Creating the Nginx web application on Linux Ubuntu
 
-Nous allons créer une autre application sous Linux Ubuntu avec Nginx installé en tant que serveur WEB.
+We will create another application under Linux Ubuntu with Nginx installed as a WEB server.
 
-Rendez-vous sur l'icône `Blueprints`{.action} dans la barre de menu verticale de CALM, cliquez sur `Multi VM/Pod Blueprint`{.action} depuis le menu **Create Blueprint**.
+Go to the `Blueprints`{.action} icon in the CALM vertical menu bar, click on `Multi VM/Pod Blueprint`{.action} from the **Create Blueprint** menu.
 
 ![04 create Linux blueprint 01](images/04-create-linux-blueprint01.png){.thumbnail}
 
-Saisissez le `Nom`{.action} dans **Name** et cliquez sur `Proceed`{.action}.
+Type the `Name`{.action} in **Name** and click `Proceed`{.action}.
 
 ![04 create Linux blueprint 02](images/04-create-linux-blueprint02.png){.thumbnail}
 
-Cliquez sur `Credentials`{.action}.
+Click `Credentials`{.action}.
 
 ![04 create Linux blueprint 03](images/04-create-linux-blueprint03.png){.thumbnail}
 
-Cliquez sur `Credentials +`{.action}.
+Click `Credentials +`{.action}.
 
 ![04 create Linux blueprint 04](images/04-create-linux-blueprint04.png){.thumbnail}
 
-Saisissez ces informations concernant le compte d'administration Linux :
+Enter this information for the Linux administration account:
 
-- **Name** : `LinuxAccount`
-- **Username** : `administrator`
-- **Password** : `Mot de passe du compte administrator`
+- **Name**: `LinuxAccount`
+- **Username**: `administrator`
+- **Password**: `Administrator account password`
 
-Cliquez ensuite sur `Done`{.action}.
+Then click `Done`{.action}.
 
 ![04 create Linux blueprint 05](images/04-create-linux-blueprint05.png){.thumbnail}
 
-Cliquez sur `Credentials +`{.action}.
+Click on `Credentials +`{.action}.
 
 ![04 create Linux blueprint 06](images/04-create-linux-blueprint06.png){.thumbnail}
 
-Saisissez ces informations concernant le compte d'administration de Prism Central :
+Enter this information about the Prism Central administration account:
 
-- **Name** : `PC_ADMIN`
-- **Username** : `admin`
-- **Password** : `Mot de passe de Prism Central`
+- **Name**: `PC_ADMIN`
+- **Username**: `admin`
+- **Password**: `Prism Central Password`
 
 > [!primary]
-> Ce mot de passe sert si vous utilisez des EScript (Scripts en python) dans vos tâches de déploiements, il sera utilisé lors de l'utilisation de l'API Prism Central. Dans cet exemple vous trouverez un EScript qui redimensionnera le stockage de la machine virtuelle Ubuntu NGINX.
+> This password is used if you use EScript (Python Scripts) in your deployment tasks, it will be used when using the Prism Central API. In this example, you will find an EScript that will resize the Ubuntu NGINX virtual machine storage.
 >
 
-Cliquez ensuite sur `Done`{.action}.
+Then click `Done`{.action}.
 
 ![04 create Linux blueprint 07](images/04-create-linux-blueprint07.png){.thumbnail}
 
-Cliquez sur `Back`{.action}.
+Click `Back`{.action}.
 
 ![04 create Linux blueprint 08](images/04-create-linux-blueprint08.png){.thumbnail}
 
-Saisissez `Linux Application`{.action} dans **Application Profile Name** et cliquez sur `+`{.action} dans la fenêtre de gauche à droite de **Service**.
+Type `Linux Application`{.action} in **Application Profile Name** and click `+`{.action} in the left-to-right window of **Service**.
 
 ![04 create Linux blueprint 09](images/04-create-linux-blueprint09.png){.thumbnail}
 
-Saisissez ces informations :
+Enter this information:
 
-- **Service Name** : `Ubuntu`
-- **VM Name** : `Ubuntu NGINX`
+- **Service Name**: `Ubuntu`
+- **VM Name**: `Ubuntu NGINX`
 
-Cliquez ensuite sur `Clone from environment`{.action} et faites défiler la fenêtre de droite vers le bas.
+Then click on `Clone from environment`{.action} and scroll down the window on the right.
 
 ![04 create Linux blueprint 10](images/04-create-linux-blueprint10.png){.thumbnail}
 
-Cochez `Guest Customization`{.action}, copiez le contenu ci-dessous dans **script**.
+Check `Guest Customization`{.action} and copy the content below in **script**.
 
 ```config
 #cloud-config
@@ -571,32 +574,33 @@ ssh_pwauth: true
 ```
 
 > [!primary]
-> Il s'agit du fichier d'initialisation de Linux avec des images cloud-init. Il utilise les informations du compte LinuxAccount qui vient de CALM au travers de macro-instructions qui ont cette forme @@{LinuxAccount.username}@@ pour le compte utilisateur et @@{LinuxAccount.secret}@@ pour le mot de passe.
+> This file is the Linux initialisation file with cloud-init images, it uses the information from the LinuxAccount account that comes from CALM through macro-instructions that have this form: @@{LinuxAccount.username}@@ for the user account and @@{LinuxAccount.secret}@@ for the password.
 >
 
-Faites défiler la fenêtre de droite vers le bas.
+Scroll down the window on the right.
 
 ![04 create Linux blueprint 11](images/04-create-linux-blueprint11.png){.thumbnail}
 
-Choisissez `LinuxAccount`{.action} dans **Check log-in upon create**.
+Choose `LinuxAccount`{.action} from **Check log-in upon create**.
 
 ![04 create Linux blueprint 12](images/04-create-linux-blueprint12.png){.thumbnail}
 
-Dans la fenêtre de gauche, rendez-vous sur `Install`{.action} en dessous de **Package** et cliquez sur `+ Task`{.action}.
+In the left window, go to `Install`{.action} below **Package** and click on `+ Task`{.action}.
 
 ![04 create Linux blueprint 13](images/04-create-linux-blueprint13.png){.thumbnail}
 
-Saisissez les informations de la tâche de redimensionnement du disque de votre machine virtuelle.
+Enter the information for your virtual machine's disk resize task.
 
-- **Task Name** : `Disk resize`
-- **Type** : `Execute`
-- **Script Type** : `EScript`
+- **Task Name**: `Disk resize`
+- **Type**: `Execute`
+- **Script Type**: `EScript`
 
-Copiez ensuite le contenu de ce script :
+Then copy the content of this script:
 
 > [!primary]
-> Ce script utilise les mots de passe qui viennent de CALM au travers de variables qui ont cette forme @@{PC_ADMIN.username}@@ pour le compte utilisateur et @@{PC_ADMIN.secret}@@ pour le mot de passe.
+> This script uses the passwords that come from CALM through variables that have this form: @@{PC_ADMIN.username}@@ for the user account and @@{PC_ADMIN.secret}@@ for the password.
 >
+
 
 ```python
 vmUuid = '@@{id}@@'
@@ -728,73 +732,73 @@ while state != "SUCCEEDED":
 print("OS disk extended to {} GB".format(diskSize))
 
 # Wait until VM boots
-sleep(60) 
+sleep(60)
 ```
 
-Cliquez ensuite sur `+ Task`{.action}.
+Click `+ Task`{.action}.
 
 ![04 create Linux blueprint 14](images/04-create-linux-blueprint14.png){.thumbnail}
 
-Renseignez ces informations sur la tâche de vérification des services sur Linux :
+Enter this information about the Linux service verification task:
 
-- **Task Name** : `Service restart`
-- **Type** : `Execute`
-- **Script Type** : `Shell`
-- **Credential** : `LinuxAccount`
+- **Task Name**: `Service restart`
+- **Type**: `Execute`
+- **Script Type**: `Shell`
+- **Credential**: `LinuxAccount`
 
-Copiez ensuite le contenu ci-dessous dans **Script** :
+Then copy the content below to **Script**:
 
 ```bash
 sudo sed 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf
 ```
 
-Cliquez sur `+ Task`{.action} pour ajouter une nouvelle tâche à la suite.
+Click `+ Task`{.action} to add a new task in sequence.
 
 ![04 create Linux blueprint 15](images/04-create-linux-blueprint15.png){.thumbnail}
 
-Renseignez ces informations sur la tâche de mise à jour UBUNTU:
+Enter this information about the UBUNTU update task:
 
-- **Task Name** : `Service restart`
-- **Type** : `Execute`
-- **Script Type** : `Shell`
-- **Credential** : `LinuxAccount`
+- **Task Name**: `Service restart`
+- **Type**: `Execute`
+- **Script Type**: `Shell`
+- **Credential**: `LinuxAccount`
 
-Copiez ensuite le contenu ci-dessous dans **Script** :
+Then copy the content below to **Script**:
 
 ```bash
 sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 ```
 
-Cliquez à nouveau sur `+ Task`{.action} pour ajouter une nouvelle tâche à la suite.
+And click `+ Task`{.action} to add a new task in sequence.
 
 ![04 create Linux blueprint 16](images/04-create-linux-blueprint16.png){.thumbnail}
 
-Renseignez ces informations sur la tâche d'installation de Nginx et Curl :
+Enter this information about the NGINX and CURL installation task:
 
-- **Task Name** : `Service restart`
-- **Type** : `Execute`
-- **Script Type** : `Shell`
-- **Credential** : `LinuxAccount`
+- **Task Name**: `Service restart`
+- **Type**: `Execute`
+- **Script Type**: `Shell`
+- **Credential**: `LinuxAccount`
 
-Copiez ensuite le contenu ci-dessous dans **Script** :
+Then copy the content below to **Script**:
 
 ```bash
 sudo DEBIAN_FRONTEND=noninteractive apt install nginx curl -y
 ```
 
-Cliquez à nouveau sur `+ Task`{.action} pour ajouter une nouvelle tâche à la suite.
+Click `+ Task`{.action} to add a new task in sequence.
 
 ![04 create Linux blueprint 17](images/04-create-linux-blueprint17.png){.thumbnail}
 
-Saisissez ces informations concernant la dernière tâche de personnalisation de NGINX':
+Enter this information about the last NGINX customisation task:
 
-- **Task Name** : `Service restart`
-- **Type** : `Execute`
-- **Script Type** : `Shell`
-- **Credential** : `LinuxAccount`
+- **Task Name**: `Service restart`
+- **Type**: `Execute`
+- **Script Type**: `Shell`
+- **Credential**: `LinuxAccount`
 
-Copiez ensuite le contenu ci-dessous dans **Script** :
+Then copy the content below to **Script**:
 
 ```bash
 sudo ls -l /var/www/html/
@@ -817,184 +821,184 @@ sudo echo '</html>' >> /var/www/html/index.nginx-debian.html
 sudo cat /var/www/html/index.nginx-debian.html
 ```
 
-Enfin, cliquez sur + `Save`{.action} pour finaliser la création de votre plan.
+Click `+ Save`{.action} to finish creating your blueprint.
 
 ![04 create Linux blueprint 18](images/04-create-linux-blueprint18.png){.thumbnail}
 
-Cliquez sur `Launch`{.action} pour tester votre plan.
+Click `Launch`{.action} to test your blueprint.
 
 ![04 create Linux blueprint 19](images/04-create-linux-blueprint19.png){.thumbnail}
 
-Saisissez le `nom`{.action} de votre déploiement de test dans **Application Name** et cliquez sur `Deploy`{.action}.
+Type the `name`{.action} of your test deployment in **Application Name** and click `Deploy`{.action}.
 
 ![04 create Linux blueprint 20](images/04-create-linux-blueprint20.png){.thumbnail}
 
-Le déploiement se lance.
+Deployment begins.
 
 ![04 create Linux blueprint 21](images/04-create-linux-blueprint21.png){.thumbnail}
 
-Cliquez sur `Audit`{.action} pour voir l'avancement du déploiement.
+Click `Audit`{.action} to view your deployment progress.
 
 ![04 create Linux blueprint 22](images/04-create-linux-blueprint22.png){.thumbnail}
 
-Une fois le déploiement terminé, vous pouvez accéder en HTTP à l'adresse IP de votre VM NGINX pour visualiser le message de bienvenue.
+Once the deployment is complete, you can access the IP address of your NGINX VM via HTTP to view the welcome message.
 
 ![04 create Linux blueprint 23](images/04-create-linux-blueprint23.png){.thumbnail}
 
-#### Publication des applications 
+#### Publishing applications
 
-Allez sur l'icône `Blueprints`{.action} dans la barre verticale de CALM à gauche et cliquez sur le plan `WS 2022 IIS`{.action}.
+Go to the `Blueprints`{.action} icon in the CALM vertical bar on the left and click on the `WS 2022 IIS`{.action} map.
 
 ![05 publish Windows Application 01](images/05-publish-windows-application01.png){.thumbnail}
 
-Cliquez sur `Publish`{.action}.
+Click `Publish`{.action}.
 
 ![05 publish Windows Application 02](images/05-publish-windows-application02.png){.thumbnail}
 
-Appliquez ces valeurs :
+Apply these values:
 
-- **Name** : `WS 2022 IIS`
-- **Publish with secrets** : `activé`
-- **Initial Version** : `1.0.0`
+- **Name**: `WS 2022 IIS`
+- **Publish with secrets**: `enabled`
+- **Initial Version**: `1.0.0`
 
-Cliquez ensuite à gauche sur `Change`{.action}.
+Then click on `Change`{.action} on the left.
 
 ![05 publish Windows Application 03](images/05-publish-windows-application03.png){.thumbnail}
 
-Cliquez sur `Upload from computer`{.action}.
+Click `Upload from computer`{.action}.
 
 ![05 publish Windows Application 04](images/05-publish-windows-application04.png){.thumbnail}
 
-Choisissez l'`image`{.action} sur votre ordinateur et cliquez sur `Ouvrir`{.action}.
+Choose the `image`{.action} on your computer and click `Open`{.action}.
 
 ![05 publish Windows Application 05](images/05-publish-windows-application05.png){.thumbnail}
 
-Nommez votre icône `IIS`{.action} et cliquez sur le `bouton bleu de validation`{.action}.
+Name your Icon `IIS`{.action} and click on the `blue validation`{.action} button.
 
 ![05 publish Windows Application 06](images/05-publish-windows-application06.png){.thumbnail}
 
-Cliquez sur `Select & continue`{.action}.
+Click `Select & continue`{.action}.
 
 ![05 publish Windows Application 07](images/05-publish-windows-application07.png){.thumbnail}
 
-Cliquez sur `Submit for approval`{.action}.
+Click `Submit for approval`{.action}.
 
 ![05 publish Windows Application 08](images/05-publish-windows-application08.png){.thumbnail}
 
-L'application Windows est dans le marketplace en attente d'approbation.
+The Windows application is in the marketplace awaiting approval.
 
-Cliquez sur le plan `UBUNTU 22 NGINX`{.action}.
+Click the `UBUNTU 22 NGINX`{.action} blueprint.
 
 ![06 publish Windows Application 01](images/06-publish-linux-application01.png){.thumbnail}
 
-Cliquez sur `Publish`{.action}.
+Click `Publish`{.action}.
 
 ![06 publish Windows Application 02](images/06-publish-linux-application02.png){.thumbnail}
 
-Appliquez ces valeurs :
+Apply these values:
 
-- **Name** : `UBUNTU 22 NGINX`
-- **Publish with secrets** : `activé`
-- **Initial Version** : `1.0.0`
+- **Name**: `UBUNTU 22 NGINX`
+- **Publish with secrets**: `enabled`
+- **Initial Version**: `1.0.0`
 
-Cliquez ensuite à gauche sur `Change`{.action}.
+Then click `Change`{.action} on the left.
 
 ![06 publish Windows Application 03](images/06-publish-linux-application03.png){.thumbnail}
 
-Cliquez sur `Upload from computer`{.action}.
+Click `Upload from computer`{.action}.
 
 ![06 publish Windows Application 04](images/06-publish-linux-application04.png){.thumbnail}
 
-Choisissez l'`image`{.action} sur votre ordinateur et cliquez sur `Ouvrir`{.action}.
+Choose the `image`{.action} on your computer and click `Open`{.action}.
 
 ![06 publish Windows Application 05](images/06-publish-linux-application05.png){.thumbnail}
 
-Nommez votre icône `NGINX`{.action} et cliquez sur le `bouton bleu de validation`{.action}.
+Name your icon `NGINX`{.action} and click the `blue validation button`{.action}.
 
 ![06 publish Windows Application 06](images/06-publish-linux-application06.png){.thumbnail}
 
-Sélectionnez votre icône et cliquez sur `Select & continue`{.action}.
+Select your icon and click `Select & continue`{.action}.
 
 ![06 publish Windows Application 07](images/06-publish-linux-application07.png){.thumbnail}
 
-Cliquez sur `Submit for approval`{.action}.
+Click `Submit for approval`{.action}.
 
 ![06 publish Windows Application 08](images/06-publish-linux-application08.png){.thumbnail}
 
-L'application Linux se trouve dans la marketplace en attente d'approbation.
+The Linux application is in the marketplace awaiting approval.
 
-#### Ajout des applications publiées sur le portail de CALM
+#### Adding applications published on the CALM portal
 
-Cliquez sur l'icône du `Marketplace Manager`{.action}, allez sur l'onglet `Approval Pending`{.action}, cochez l'application `UBUNTU 22 NGINX`{.action} et cliquez sur l'icône de validation à droite.
+Click on the `Marketplace Manager`{.action} icon, go to the `Approval Pending`{.action} tab, check the `UBUNTU 22 NGINX`{.action} application, and click the validation icon on the right.
 
 ![07 approve Application 02](images/07-approve-application01.png){.thumbnail}
 
-Cochez l'application `WS 2022 IIS`{.action} et cliquez sur l'icône de validation à droite.
+Check the `WS 2022 IIS`{.action} application and click the validation icon on the right.
 
 ![07 approve Application 02](images/07-approve-application02.png){.thumbnail}
 
-Allez sur l'onglet `Approved`{.action}, cliquez sur la colonne `Source`{.action} pour afficher les applications locales en premier, cochez `WS 2022 IIS`{.action}. Sélectionnez en bas à droite `NCM Self Service Project 01`{.action} et cliquez sur `Apply`{.action}.
+Go to the `Approved`{.action} tab, click on the `Source`{.action} column to display the local applications first, check `WS 2022 IIS`{.action}, select `NCM Self Service Project 01`{.action} at the bottom right and click `Apply`{.action}.
 
 ![08 ADD to market place 01](images/08-add-to-marketplace01.png){.thumbnail}
 
-Cliquez sur `Publish`{.action}.
+Click `Publish`{.action}.
 
 ![08 ADD to market place 02](images/08-add-to-marketplace02.png){.thumbnail}
 
-L'application Windows est publiée.
+The Windows application is published.
 
 ![08 ADD to market place 03](images/08-add-to-marketplace03.png){.thumbnail}
 
-Cochez `Ubuntu 22 NGINX`{.action}, Sélectionnez à droite `NCM Self Service Project 01`{.action} et cliquez sur `Apply`{.action}.
+Check `Ubuntu 22 NGINX`{.action}, select `NCM Self Service Project 01`{.action} on the right and click `Apply`{.action}.
 
 ![08 ADD to market place 04](images/08-add-to-marketplace04.png){.thumbnail}
 
-Cliquez sur `Publish`{.action}.
+Click `Publish`{.action}.
 
 ![08 ADD to market place 05](images/08-add-to-marketplace05.png){.thumbnail}
 
-L'application Ubuntu est publiée.
+The Ubuntu application is published.
 
 ![08 ADD to market place 06](images/08-add-to-marketplace06.png){.thumbnail}
 
-Cliquez sur l'icône `Marketplace`{.action} en haut de la barre de menu verticale à gauche et cliquez sur `Get`{.action} en dessous de l'application UBUNTU 22 NGINX.
+Click the `Marketplace`{.action} icon at the top of the vertical menu bar on the left and click `Get`{.action} below the UBUNTU 22 NGINX application.
 
 ![08 ADD to market place 07](images/08-add-to-marketplace07.png){.thumbnail}
 
-Cliquez sur `Launch`{.action}.
+Click `Launch`{.action}.
 
 ![08 ADD to market place 08](images/08-add-to-marketplace08.png){.thumbnail}
 
-Saisissez un `Nom`{.action} dans **Application Name** et cliquez sur `Deploy`{.action} pour déployer une application.
+Type a `Name`{.action} in **Application Name** and click `Deploy`{.action} to deploy an application.
 
 ![08 ADD to market place 09](images/08-add-to-marketplace09.png){.thumbnail}
 
-#### Suppression d'une application déployée
+#### Deleting a deployed application
 
-La suppression d'une application déployée est aussi simple que son déploiement.
+Deleting a deployed application is as simple as deploying it.
 
-Cliquez sur l'icône des `Blueprints`{.action} à gauche et cochez une application déployée.
+Click on the `Blueprints`{.action} icons on the left and check a deployed application.
 
 ![09 delete deployed APP 01](images/09-delete-deployed-app01.png){.thumbnail}
 
-Via le menu **Action** cliquez sur `Delete`{.action}.
+From the **Action** menu, click `Delete`{.action}.
 
 ![09 delete deployed APP 02](images/09-delete-deployed-app02.png){.thumbnail}
 
-Cliquez sur `Confirm`{.action}.
+Click `Confirm`{.action}.
 
 ![09 delete deployed APP 03](images/09-delete-deployed-app03.png){.thumbnail}
 
-Il est possible de suivre la suppression comme pour un déploiement.
+You can view the progress of a deletion as you would for a deployment.
 
 ![09 delete deployed APP 04](images/09-delete-deployed-app04.png){.thumbnail}
 
-L'application est maintenant supprimée.
+The application is completely deleted.
 
 ![09 delete deployed APP 05](images/09-delete-deployed-app05.png){.thumbnail}
 
-## Aller plus loin <a name="gofurther"></a>
+## Go further <a name="gofurther"></a>
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
 
 [Nutanix NCM Self Service (CALM)](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Calm-Admin-Operations-Guide-v3_6_0:Nutanix-Calm-Admin-Operations-Guide-v3_6_0).
