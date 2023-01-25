@@ -16,13 +16,20 @@ A website essentially composed of static web pages guarantees a better loading t
 
 **This tutorial explains how Cecil allows you to create your static website using a modern template engine (Jamstack).**
 
+> [!warning]
+>
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> 
+> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+>
+
 ## Requirements
 
 - Have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that includes SSH access. With this access, you can install one or more alternative solutions online, to those offered by default in our web hosting plans.
 - Be familiar with command line input.
 - Be able to transfer files via FTP with a client like [FileZilla](https://docs.ovh.com/au/en/hosting/web_hosting_filezilla_user_guide/).
 - Configure your DNS zone to point your domain name (or subdomain) to your web hosting plan. This is particularly useful if you would like to host several websites in [multisites](https://docs.ovh.com/au/en/hosting/multisites-configuring-multiple-websites/) on your shared web hosting plan.
-- Install [Composer](https://getcomposer.org/){.external} with the file 'composer.phar' in the root of your web hosting or in the target folder of your domain name.
+- Install [Composer](https://getcomposer.org/){.external} with the file `composer.phar` in the root of your web hosting or in the target folder of your domain name.
 
 ## Instructions
 
@@ -186,7 +193,7 @@ Then return to your page to see the result:
 
 #### Change your workstation
 
-If you prefer to use your usual code editor, log in with an FTP client on your server to retrieve the files on your computer:
+If you prefer to use your usual code editor on your computer, log on to your server with an FTP client and retrieve the files:
 
 ![FileZilla Download](images/static_website_installation_cecil11.png){.thumbnail}
 
@@ -209,7 +216,7 @@ menu: main
 **Cecil** is a tool to effectively build a static site from *Markdown* files, a markup language easier to implement than HTML. Organising Markdown files determines the hierarchy of your web pages.<br/>
 Using a template engine, widely used in the web developer community, will allow you to easily find many sources on the Internet to design a professional looking interface.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Cecil application official website](https://cecil.app/){.external}
 
