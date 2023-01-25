@@ -166,6 +166,8 @@ La licence Windows sera activée pour 180 jours.
 
 Il sera nécessaire de répéter cette opération tous les 180 jours.
 
+Dans l'intervalle si vous voulez isoler votre instance du réseau Public, vous pouvez désactiver le port public créé via Horizon ou l'API OpenStack. Vous pouvez également directement désactiver le port réseau via Windows.
+
 Pour vérifier le statut de la licence et sa date d'expiration, utilisez la commande suivante :
 
 ```bash
