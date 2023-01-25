@@ -294,6 +294,8 @@ Consistency Policy : bitmap
 
 Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command: 
 
+**For GPR partitions**
+
 ```sh
 sgdisk -R /dev/sda /dev/sdb 
 ```
@@ -303,6 +305,12 @@ Once this is done, the next step is to randomize the GUID of the new disk to pre
 
 ```sh
 sgdisk -G /dev/sdb
+```
+
+**For MBR partitions**
+
+```sh
+sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
 We can now rebuild the RAID array. The following code snippet shows how we can rebulid the `/dev/md4` partition layout with the recently-copied sda partition table: 
