@@ -2,15 +2,14 @@
 title: IP-Autorisierung für vCenter
 slug: verbindung-von-ip-zum-vcenter-erlauben
 excerpt: Erfahren Sie hier, wie Sie den Zugang zu vCenter über die Freigabe von IP-Adressen verwalten
-legacy_guide_number: '1442255'
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 18.08.2021**
+**Letzte Aktualisierung am 25.01.2023**
 
 ## Ziel
 
-Der Zugang zu vCenter kann eingeschränkt werden. Dazu wird nur bestimmten IP-Adressen die Verbindung damit gestattet. 
+Der Zugang zu Ihrem vCenter ist ausschließlich auf autorisierte IP-Adressen beschränkt.
 
 **Erfahren Sie, wie Sie IP-Adressen für die Verbindung mit vCenter zulassen können.**
 
@@ -21,9 +20,9 @@ Der Zugang zu vCenter kann eingeschränkt werden. Dazu wird nur bestimmten IP-Ad
 
 ## In der praktischen Anwendung
 
-Wenn die Regeln für den Zugang zu vCenter anpassen, müssen die IPs hinzugefügt werden, die sich mit dem Dienst verbinden dürfen.
+Standardmäßig ist der Zugang zu vCenter beschränkt. Fügen Sie daher die IP-Adressen hinzu, die zur Verbindung mit dem Dienst berechtigt sind.
 
-Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie im Bereich `Hosted Private Cloud` auf die Rubrik `Private Cloud`. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit` und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
+Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie im Bereich `Hosted Private Cloud` auf die Rubrik `VMware`{.action}. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit`{.action} und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

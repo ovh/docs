@@ -4,24 +4,26 @@ slug: autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter
 section: Funkcjonalności OVHcloud
 ---
 
-**Ostatnia aktualizacja z dnia 18-08-2021**
+**Ostatnia aktualizacja z dnia 25-01-2023**
 
 ## Wprowadzenie
 
-Możesz ograniczyć dostęp do vCenter, pozwalając na łączenie się z nim tylko określonym adresom IP. 
+Dostęp do vCenter jest ograniczony wyłącznie do uprawnionych adresów IP.
 
 **Dowiedz się, jak autoryzować adresy IP, które mogą łączyć się z vCenter.**
 
 ## Wymagania początkowe
 
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-* Posiadanie [infrastruktury Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external} na koncie OVHcloud.
+* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+* Posiadanie [infrastruktury Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) na koncie OVHcloud.
 
 ## W praktyce
 
-Kiedy polityka dostępu do vCenter jest ograniczona, konieczne jest dodanie adresów IP, które będą mogły łączyć się z usługą.
+Dostęp do vCenter jest domyślnie ograniczony. Należy zatem dodać adresy IP, które będą mogły łączyć się z usługą.
 
-Operacja ta przeprowadzana jest w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external-link}. W sekcji `Serwer`, kliknij sekcję `Private Cloud`. Wybierz infrastrukturę, przejdź do zakładki `Bezpieczeństwo`, po czym kliknij `Dodaj nowy zakres adresów IP`{.action}.
+Operacja ta przeprowadzana jest w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external-link}. W sekcji `Hosted Private Cloud`{.action}, kliknij sekcję `VMware`{.action}.
+
+Wybierz infrastrukturę, przejdź do zakładki `Bezpieczeństwo`{.action}, po czym kliknij `Dodaj nowy zakres adresów IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 
