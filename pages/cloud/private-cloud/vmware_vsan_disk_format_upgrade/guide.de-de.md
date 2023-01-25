@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren des vSAN-Festplattenformats (EN)
+title: Aktualisieren des vSAN Diskformats (EN)
 slug: vsan-disk-format-upgrade
 excerpt: "Find out how to update the format of a vSAN disk"
 section: VMware vSphere Funktionen
