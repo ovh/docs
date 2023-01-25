@@ -163,7 +163,7 @@ Permite eliminar **uma ou várias linhas** de uma determinada tabela. Esta encom
 
 **Exemplo**:
 
-```sql
+```bash
 DELETE FROM `table_1` WHERE `id` = 1
 ```
 
@@ -175,7 +175,7 @@ Permite eliminar **todas as linhas** de uma determinada tabela.
 
 **Exemplo**:
 
-```sql
+```bash
 TRUNCATE TABLE `table_1`
 ```
 
@@ -187,7 +187,7 @@ Permite suprimir completamente **uma tabela e o conjunto das linhas que contém*
 
 **Exemplo**:
 
-```sql
+```bash
 DROP TABLE `table_1`
 ```
 

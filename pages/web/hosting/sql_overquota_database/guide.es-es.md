@@ -163,7 +163,7 @@ Permite eliminar **una o más filas** de una tabla dada. Este comando es útil s
 
 **Ejemplo**:
 
-```sql
+```bash
 DELETE FROM `table_1` WHERE `id` = 1
 ```
 
@@ -175,7 +175,7 @@ Permite eliminar **todas las filas** de una tabla dada.
 
 **Ejemplo**:
 
-```sql
+```bash
 TRUNCATE TABLE `table_1`
 ```
 
@@ -187,7 +187,7 @@ Permite eliminar completamente **una tabla y todas las filas que contiene**. Est
 
 **Ejemplo**:
 
-```sql
+```bash
 DROP TABLE `table_1`
 ```
 
