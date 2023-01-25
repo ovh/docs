@@ -88,6 +88,73 @@ L'envoi de mail se fait par un script PHP. Dans le répertoire `scripts`, créez
 
 ![PHP file](images/create_your_customer_acquisition_webpage_5.png){.thumbnail}
 
+### Lier la feuille de style et les scripts JavaScript à la page HTML
+
+Ajouter dans la balise `<head>` les balises '<script>`et `<link>` indiquant au navigateur quels fichiers utiliser :
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web site</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery-3.6.3.js"></script>
+    <script src="assets/js/sendMail.js"></script>
+</head>
+```
+
+### Ajouter des titres, des contenus et des images
+
+Ajoutez un titre, un sous-titre et du contenu alternant texte et illustrations :
+
+```html
+<body>
+    <main>
+        <section>
+            <h1>A title</h1>
+            <h2>A subtile</h2>
+        </section>
+        <section>
+            <div class="container">
+                <div>
+                    <p>Some content here</p>
+                    <p><button><a href="#sendMessageFrom">Use the form below</a></button></p>
+                </div>
+                <img src="assets/images/picture_1.png" alt="Customer acquisition illustration 1" width=600 height=400 />
+            </div>
+            <div class="container">
+                <img src="assets/images/picture_2.png" alt="Customer acquisition illustration 2" width=600 height=400 />
+                <div>
+                    <p>Some content here</p>
+                    <p><button><a href="#sendMessageFrom">Contact us</a></button></p>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <p>Some content here</p>
+                    <p><button><a href="#sendMessageFrom">Use the form below</a></button></p>
+                </div>
+                <img src="assets/images/picture_3.png" alt="Customer acquisition illustration 3" width=600 height=400 />
+            </div>
+            <div class="container">
+                <img src="assets/images/picture_4.png" alt="Customer acquisition illustration 4" width=600 height=400 />
+                <div>
+                    <p>Some content here</p>
+                    <p><button><a href="#sendMessageFrom">Contact us</a></button></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+```
+
+Disposez vos images dans le répertoire `assets/images` :
+
+![Add picture in the images directory](images/create_your_customer_acquisition_webpage_6.png){.thumbnail}
+
 ## Aller plus loin <a name="go-further"></a>
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
