@@ -1,5 +1,5 @@
 ---
-title: Configurando o Autoatendimento NCM (CALM) (EN)
+title: Criação de NCM Self Service (CALM) (EN)
 slug: self-service-calm
 excerpt: 'How to enable Self Service (CALM) in your Prism Central'  
 section: Utilização avançada
@@ -17,7 +17,7 @@ routes:
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
 >
-> If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
+> If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/pt/directory/) and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
 >
 
 ## Requirements

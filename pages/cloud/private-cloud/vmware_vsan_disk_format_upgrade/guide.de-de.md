@@ -23,7 +23,7 @@ vSAN disks are regularly upgraded with new versions. You need to update the vSAN
 
 ## Instructions
 
-Log in to your vSphere interface using [this guide](https://docs.ovh.com/de/private-cloud/connexion-interface-vsphere/).
+Log in to your vSphere interface using [this guide](https://docs.ovh.com/de/private-cloud/den_vsphere_client_installieren/).
 
 In the vSphere interface, click on your `Cluster`{.action} to the left, go to the `Configure`{.action} tab, choose `Services`{.action} in the **vSAN** section and click `PRE-CHECK UPGRADE`{.action}.
 
