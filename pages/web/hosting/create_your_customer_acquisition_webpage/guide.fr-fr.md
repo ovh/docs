@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 08
 ---
 
-**Dernière mise à jour le 23/01/2023**
+**Dernière mise à jour le 25/01/2023**
 
 > [!warning]
 >
