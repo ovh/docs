@@ -24,7 +24,7 @@ More information about AI Training can be found [here](https://www.ovhcloud.com/
 At the end of this tutorial, you will have learned to master **OVHcloud AI Training**.
 
 We will show you how you can:
-- **Upload your data to the OVH Public Cloud**, in the Object Storage. 
+- **Upload your data** to the OVHcloud Object Storage. 
 - **Launch your training job and attach your data to its environment**, so your model can access to your data.
 - **Monitor** the progress of your job.
 - **Download your model** in the cloud in order to retrieve it, once trained.
@@ -35,7 +35,7 @@ We will show you how you can:
 ## Use case:
 We will train an image classifier on the *Fashion MNIST* dataset.
 This dataset contains 70,000 examples of *Zalando*'s article images. Each one is a 28x28 grayscale image, associated with a label from 10 classes. 
-This dataset is available on their [GitHub repository](https://github.com/zalandoresearch/fashion-mnist), but I will directly download it from [Kaggle](https://www.kaggle.com/datasets/zalando-research/fashionmnist). It is a `.zip` file of 72MB size. 
+This dataset is available on their [GitHub repository](https://github.com/zalandoresearch/fashion-mnist), but you can directly download it from [Kaggle](https://www.kaggle.com/datasets/zalando-research/fashionmnist). It is a `.zip` file of 72MB size. 
  
 
 ## Requirements
@@ -49,18 +49,18 @@ This dataset is available on their [GitHub repository](https://github.com/zaland
 
 You will follow different steps to export your data, train your model and save it.
 
-### Step 1 - Upload your own data to the OVH cloud (Optional)
+### Step 1 - Upload your data to the OVHcloud Object Storage (Optional)
 
 This step is optional because you may load some famous datasets through libraries, commands, ..., so you will not need to upload your own data on the cloud. 
 
-On the other hand, you can upload your data (dataset, python and requirements files, ...) to the cloud, in the Object Storage. This can be done in two ways: either from the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or via the [OVH AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/).
+On the other hand, you can upload your data (dataset, python and requirements files, ...) to the cloud, in the Object Storage. This can be done in two ways: either from the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or via the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/).
 
 *This data can be deleted at any time.*
 
 #### 1.1 - Upload your data via UI (Control Panel)
 If you do not feel comfortable with commands, this way will be more intuitive for you.
 
-First, go to the [OVH Public Cloud](https://www.ovh.com/manager/#/public-cloud/).
+First, go to the [OVHcloud Public Cloud](https://www.ovh.com/manager/#/public-cloud/).
 
 Then, select the Object Storage section (in the Storage category) and [create a new Object Container](https://docs.ovh.com/gb/en/storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
 
@@ -77,7 +77,7 @@ Once your object container is created, you will see it in the Object Storage lis
 
 
 #### 1.2 - Upload your data via CLI
-To follow this part, make sure you have installed the [OVH AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/) on your computer or on an instance. 
+To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/) on your computer or on an instance. 
 
 As on the manager, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of your object container can be done by the following command:
 
@@ -93,11 +93,11 @@ Assuming a file named `my-dataset.zip` exists in your current working directory,
 ovhai data upload GRA fashion_MNIST_dataset my-dataset.zip
 ```
 
-This `.zip` file can now be accessed from all OVH AI products, either with read-only (RO) or read-write (RW) permissions.
+This `.zip` file can now be accessed from all OVHcloud AI products, either with read-only (RO) or read-write (RW) permissions.
 
 ### Step 2 - Launch your training job and attach your data to its environment
 
-To launch your training job, you can also use the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or the [OVH AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/).
+To launch your training job, you can also use the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/).
 
 #### 2.1 - Launch a training job via UI (Control Panel)
 
@@ -159,7 +159,7 @@ ovhai job run <docker_image_name> \
 > [!primary]
 >
 > Arguments:
-> `<docker_image_name>` Choose the image you want to use to create your environment. You can get a list of the frameworks images hosted by OVH [here](https://registry.hub.docker.com/u/ovhcom). You can also use another Docker image, but it may take longer to load.
+> `<docker_image_name>` Choose the image you want to use to create your environment. You can get a list of the frameworks images hosted by OVHcloud [here](https://registry.hub.docker.com/u/ovhcom). You can also use another Docker image, but it may take longer to load.
 >
 > `<nb_gpus>` Number of GPUs your job will be run on. You can also use CPUs by replacing this line by `--cpu <nb_cpus>`.
 >
