@@ -6,24 +6,24 @@ section: AI Training - Tutorials
 order: 01	
 ---
 
-**Last updated 24th January, 2023.**
+**Last updated 26th January, 2023.**
 
 This tutorial will allow you to train your first **Model in AI Training**. 
 
-
 ## What is AI Training?
+
 AI Training allows you to train your models easily, with just a few clicks or commands. This solution runs your training job on the computational cloud resources you have chosen (CPU/GPU). As soon as your training job is finished, the status of the AI Training job will change from *Run* to *Done*, which means that the billing will be stopped immediately. Thus, you will save time and increase the productivity of your team, while respecting the integrity of your sensitive data ([GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)).
 
 AI Training is compatible with leading applications and frameworks such as *Pytorch, Scikit-learn, TensorFlow, Transformers* and others!
 
 More information about AI Training can be found [here](https://www.ovhcloud.com/en-gb/public-cloud/ai-training/).
 
-
 ## Objective of this tutorial
 
 At the end of this tutorial, you will have learned to master **OVHcloud AI Training**.
 
 We will show you how you can:
+
 - **Upload your data** to the OVHcloud Object Storage. 
 - **Launch your training job and attach your data to its environment**, so your model can access to your data.
 - **Monitor** the progress of your job.
@@ -31,12 +31,11 @@ We will show you how you can:
 
 *Each step will be accompanied by an example to guide you.*
 
+## Use case
 
-## Use case:
 We will train an image classifier on the *Fashion MNIST* dataset.
 This dataset contains 70,000 examples of *Zalando*'s article images. Each one is a 28x28 grayscale image, associated with a label from 10 classes. 
 This dataset is available on their [GitHub repository](https://github.com/zalandoresearch/fashion-mnist), but you can directly download it from [Kaggle](https://www.kaggle.com/datasets/zalando-research/fashionmnist). It is a `.zip` file of 72MB size. 
- 
 
 ## Requirements
 
@@ -58,6 +57,7 @@ On the other hand, you can upload your data (dataset, python and requirements fi
 **This data can be deleted at any time.**
 
 #### 1.1 - Upload your data via UI (Control Panel)
+
 If you do not feel comfortable with commands, this way will be more intuitive for you.
 
 First, go to the [OVHcloud Public Cloud section](https://www.ovh.com/manager/#/public-cloud/).
@@ -77,6 +77,7 @@ Once your object container is created, you will see it in the Object Storage lis
 
 
 #### 1.2 - Upload your data via CLI
+
 To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/) on your computer or on an instance. 
 
 As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of your object container can be done by the following command:
@@ -105,7 +106,7 @@ Now, select the `AI Training` section (in the `AI & Machine Learning` category) 
 
 Here you will have to specify a `region` and a `Docker image`. Depending on the framework you are using in your project, you will have to select the Docker image that suits you best. This will reduce the number of library installations you need to do.
 
-Make sure to mention in a `requirements.txt` file all the libraries that are not included in the image. For example, the *Pytorch* image does not contain the *Pandas* library. Since my code uses it, I will have to mention it in my `requirements.txt` file and install it, otherwise the job will not run correctly.
+Make sure to mention in a `requirements.txt` file all the libraries that are not included in the image. For example, the *Pytorch* image does not contain the *Pandas* library. Since our code uses it, we will have to mention it in our `requirements.txt` file and install it, otherwise the job will not run correctly.
 
 Then, you can toggle the `I want to link volumes of data to the job` switch, to attach your Object Storage container(s) to your job environment and access the data you have stored in the cloud (dataset, python files, requirements.txt, etc.). 
 
@@ -113,21 +114,22 @@ If you have not created an Object Storage, don't worry, this step is optional.
 
 If you want to add yours, just select the container that contains your data and specify the mount directory you have mentioned in your Python code. 
 
-For example, I load my data by calling the `/workspace/my_data/my-dataset.zip` folder in my Python code. This is why I choose `/workspace/my_data` as the mount directory.
+For example, we load our data by calling the `/workspace/my_data/my-dataset.zip` folder in our Python code. This is why we choose `/workspace/my_data` as the mount directory.
 
-Depending on your needs, you can enable or disable the cache and select the permission you want. Since I want to both read my data but also be able to extract the zip file (which means write new files) and save my model once dragged into this object container, I will opt for the Read & Write permission on this container.
+Depending on your needs, you can enable or disable the cache and select the permission you want. Since we want to both read our data but also be able to extract the zip file (which means write new files) and save our model once dragged into this object container, we will opt for the Read & Write permission on this container.
 
 
 > [!primary]
 >
 > A good practice is to attach a container with your input data, and attach a second container to save the output data in. 
 >
-> But since I want to keep this tutorial fairly simple, I will use only one container for my data.
+> But since we want to keep this tutorial fairly simple, we will use only one container for our data.
 >
 
 Then, in the `Enter the Docker command` step, you can specify the command that allows you to install your librairies and run your Python script, which are both contained in your object container. 
 
-Example:
+- Example:
+
 Assuming you have added your main .py file and your requirements.txt file to a container that you have linked to your job with `my_data` as your mount directory, you can then use: 
 
 ```console
@@ -141,7 +143,6 @@ Assuming you have added your main .py file and your requirements.txt file to a c
 
 To finish, you just have to enter an SSH command in case you would like to access the job remotely via SSH, and you must specify the resources of your job (number of `CPUs` or `GPUs`). 
 When everything is done, you can launch the job by clicking the `Create` button.
-
 
 #### 2.2 - Launch a training job via CLI
 
@@ -177,7 +178,7 @@ Depending on your needs, you can select the `permission_mode` you want (Read-Onl
 
 Otherwise, you can remove the --volume line, since it will not bring anything to your app.
 
-To give you a real example, here is the command I will use to launch my job, assuming this time that my `dataset.zip` is contained in a `fashion_MNIST_dataset` container, with a `mount_directory` named `my_data`, and that my Python file and my `requirements.txt` file are in the `ovh/ai-training-examples` GitHub repository: 
+To give you a real example, here is the command we will use to launch our job, assuming this time that our `dataset.zip` is contained in a `fashion_MNIST_dataset` container, with a `mount_directory` named `my_data`, and that our Python file and our `requirements.txt` file are in the `ovh/ai-training-examples` GitHub repository: 
 
 ```console
 ovhai job run ovhcom/ai-training-pytorch \
@@ -193,9 +194,11 @@ ovhai job run ovhcom/ai-training-pytorch \
 >
 
 ### Step 3 - Monitor the progress of your job
+
 When your job is launched, you can follow its progress (loading of your volumes, evolution of the job status, follow your prints, etc.)
 
 #### Monitor via UI
+
 This can be done by clicking on your job's name, in the `AI & Machine Learning` > `AI Training`. You will find there two categories:
 
 - `Job Information`: There you will find the general progress of your job. 
@@ -203,6 +206,7 @@ This can be done by clicking on your job's name, in the `AI & Machine Learning` 
 - `Logs`: This is particularly useful to track your prints and to understand why your job could not be launched, in the case of errors. You will find a console that will display all this information.
 
 #### Monitor via CLI
+
 Once your job is launched, you will get a lot of information via the CLI. Two main ones will be useful: the `Id` of your AI Training job, given in the very first lines (not to be confused with the ID of the added volumes), and the `Info URL`. 
 
 The `Info URL` will allow you to visually follow your job live. You will see the progress of the loading of your volumes, the status of your job which is evolving and will go to `Running` at the time of launch. 
@@ -222,10 +226,11 @@ If you are not present when the job is finished and goes to `Done`, don't worry,
 We can now download the trained model, again in two ways (UI/CLI).
 
 #### Download via UI
+
 Just click your `object container` as if you still wanted to add new files to it. This will allow you to see all the files that are contained in it. You should find your trained model in it, that you can download by clicking the `...` button.
 
-
 #### Download via CLI
+
 If you prefer to use the AI CLI, you will need to use the following command:
 
 ```console
@@ -244,15 +249,16 @@ ovhai data download [OPTIONS] <DATA_STORE> <CONTAINER> [OBJECTS]...
 >
 
 For more info about this command, you can use:
+
 ```console
 ovhai data download --help
 ```
 
-For example, in my case I will use:
+For example, in our case we will use:
+
 ```console
 ovhai data download GRA fashion_MNIST_dataset model.net
 ```
-
 
 ## Go further
 
