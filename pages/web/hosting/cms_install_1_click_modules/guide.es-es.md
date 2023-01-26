@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Última actualización: 03/02/2022**
+**Última actualización: 26/01/2023**
 
 ## Objetivo
 
@@ -19,7 +19,9 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth//).
-- No haber descargado archivos en el directorio en el que vaya a instalar el módulo.
+- Utilizar [una versión de PHP compatible](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/) en su alojamiento web.
+- Haber [configurado correctamente su archivo .ovhconfig](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/).
+- El directorio en el que se instalará el módulo debe estar vacío o no existe actualmente.
 - El dominio (y el subdominio, en su caso) que utilice para el sitio web debe estar declarado como multisitio.
 
 
@@ -143,5 +145,9 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 [Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
 Descubra nuestras [bases de datos Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

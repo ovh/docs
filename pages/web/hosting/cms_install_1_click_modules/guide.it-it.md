@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Ultimo aggiornamento: 03/02/2022**
+**Ultimo aggiornamento: 26/01/2023**
 
 ## Obiettivo
 
@@ -18,7 +18,9 @@ I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, 
 
 - Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Non aver salvato file nella directory in cui verrà installato il modulo
+- Utilizzare [una versione di PHP compatibile](https://docs.ovh.com/it/hosting/configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/) sul tuo hosting Web.
+- Aver [configurato correttamente il file.ovhconfig](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/)
+- La directory in cui verrà installato il tuo modulo deve essere vuota o al momento inesistente.
 - Aver impostato come multisito il dominio (ed eventualmente il sottodominio) che verrà utilizzato per il sito Web
 
 ## Procedura
@@ -29,7 +31,7 @@ Un CMS (Content Management System) consente di progettare un sito Web tramite un
 
 Con i moduli in 1 click di OVHcloud sono disponibili 4 CMS.  Se hai già scelto il CMS da installare, prosegui nella lettura di questa guida. In caso contrario, la nostra [pagina comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external} potrebbe esserti di aiuto.
 
-Se il CMS che hai scelto non è presente fra le opzioni proposte da OVHcloud, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui]( https://www.ovhcloud.com/it/web-hosting/){.external}).
+Se il CMS che hai scelto non è presente fra le opzioni proposte da OVHcloud, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui](https://www.ovhcloud.com/it/web-hosting/){.external}).
 
 ![Logo dei CMS](images/CMS_logo.png){.thumbnail}
 
@@ -133,12 +135,16 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 
 ## Per saperne di più
 
-[Scegli il CMS per il tuo sito Web]( https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}
+[Scegli il CMS per il tuo sito Web](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}
 
 [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}
 
-[Gestire un database da un hosting condiviso]( https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
+[Gestire un database da un hosting condiviso](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
 
 Scopri la nostra soluzione [Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

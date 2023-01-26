@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 26/01/2023**
 
 ## Objectif
 
@@ -20,7 +20,9 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) compatible.
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Ne pas avoir téléchargé de fichiers dans le répertoire où sera installé votre module.
+- Utiliser [une version de PHP compatible](https://docs.ovh.com/ca/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) sur votre hébergement web.
+- Avoir [configuré correctement votre fichier .ovhconfig](https://docs.ovh.com/ca/fr/hosting/configurer-fichier-ovhconfig/).
+- Le répertoire où sera installé votre module doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site internet doit être déclaré en tant que multisite.
 
 ## En pratique
@@ -54,7 +56,7 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis le domaine sur 
 
 Si vous ne trouvez pas le domaine voulu dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter, puis essayez de nouveau d'ajouter un module.
 
-Vous pouvez également consulter le guide [Comment partager mon hébergement web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} pour vous aider.
+Vous pouvez également consulter le guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} pour vous aider.
 
 Une fois le CMS sélectionné, vous devrez choisir entre une installation simple ou avancée :
 
@@ -104,7 +106,7 @@ Vous devez à présent renseigner les informations suivantes pour la configurati
 - *nom ou e-mail de l'administrateur :* il s'agit de l'identifiant que vous utiliserez pour vous connecter à l'administration de votre CMS ;
 - *mot de passe :* il s'agit du mot de passe que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS ;
 - *domaine :* il s'agit du domaine sur lequel vous souhaitez installer votre site ;
-Vous pouvez également consulter le guide [Comment partager mon hébergement web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/) pour vous aider.
+Vous pouvez également consulter le guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) pour vous aider.
 - *langue :* il s'agit de langue dans laquelle le CMS sera installé ;
 - *chemin d’installation :* ce dernier est automatiquement renseigné à la sélection du domaine. Vous avez la possibilité de le compléter en y renseignant des sous-répertoires.
 
@@ -140,8 +142,12 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 
 [Choisir un CMS pour créer un site web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-cms-comparison/){.external}
 
-[Comment partager mon hébergement web entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+[Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
-[Créer une base de données sur son hébergement web](../creer-base-de-donnees/){.external}
+[Créer une base de données sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/){.external}
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

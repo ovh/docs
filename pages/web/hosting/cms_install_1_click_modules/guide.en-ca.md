@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Last updated 5th May 2020**
+**Last updated 26th January 2023**
 
 ## Objective
 
@@ -18,9 +18,11 @@ order: 01
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- no files stored in the directory that your module will be installed in
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/).
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- Use [a compatible PHP version](https://docs.ovh.com/ca/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/) on your Web Hosting plan.
+- Have [correctly configured your .ovhconfig file](https://docs.ovh.com/ca/en/hosting/configuring-file-ovhconfig/).
+- The directory where your module will be installed must be empty or currently non-existent.
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
 
 ## Instructions
@@ -53,7 +55,7 @@ In the window that opens, select the CMS you would like to use, and the domain y
 
 If the domain you want to use does not appear in the list, go to the `Multi-site`{.action} tab to add it, then try adding a module again.
 
-You can also refer to the guide [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/).
+You can also refer to the guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ca/en/hosting/multisites-configuring-multiple-websites/).
 
 Once you have selected your domain, you must choose between basic or advanced installation:
 
@@ -103,7 +105,7 @@ Now, you will need to enter the following information to configure the module:
 - **Admin name or email address:** the username you will use to log in to your CMS admin interface.
 - **Password:** the password you will use to log in to your CMS admin interface.
 - **Domain:** the domain you wish to install your website on.
-You can also refer to the guide [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/).
+You can also refer to the guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ca/en/hosting/multisites-configuring-multiple-websites/).
 - **Language:** the language that the CMS will be installed in.
 - **Installation path:** this is automatically entered when you select your domain. You can also add subdirectories to it.
 
@@ -133,7 +135,7 @@ Below, we've included some links from these CMS publishers, to help you get star
 |CMS|Official documentation|
 |---|---|
 |WordPress|[First steps with WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
-|PrestaShop|[Getting started with PrestaShop](http://doc.prestashop.com/display/PS17/Getting+Started){.external}|
+|PrestaShop|[Getting started with PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started){.external}|
 |Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
 |Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
 
@@ -141,6 +143,10 @@ Below, we've included some links from these CMS publishers, to help you get star
 
 [Choosing a CMS for building your website](https://www.ovhcloud.com/en-ca/web-hosting/uc-cms-comparison/){.external}
 
-[Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/)
+[Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ca/en/hosting/multisites-configuring-multiple-websites/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

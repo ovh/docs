@@ -6,7 +6,7 @@ section: Fonctionnalités VMware vSphere
 order: 09
 ---
 
-**Dernière mise à jour le 07/09/2022**
+**Dernière mise à jour le 26/01/2023**
 
 ## Objectif
 
@@ -32,8 +32,6 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 >
 > Il est possible que votre cluster **Hosted Private Cloud powered by VMware** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
 >
-> Les options de chiffrement **vSAN Data-At-Rest Encryption** et  **vSAN Data-In-Transit Encryption** ne sont pas supportées par défaut sur les clusters vSAN. Si toutefois vous souhaitez mettre en place ces options, veuillez contacter votre **Technical Account Manager**.
->
 
 ## Présentation
 
@@ -41,7 +39,9 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 Il est possible d'exporter la clé **vSphere Native Key provider** et de la réimporter sur un autre cluster.
 
-Dans le détail, lorsque l'on chiffre une machine virtuelle, l'hôte ESXi génère une clé **DEK**, cette clé servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données. La clé **DEK** est chiffrée à l'aide de la clé générée par **vSphere Native Key provider**. Cette DEK chiffrée est stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Dans le détail, lorsque l'on chiffre une machine virtuelle, le Vcenter génère une clé **KDK** (Key Derivation Key).<br>
+Cette clé est poussée aux ESXi et permet de générer une autre clé, la **DEK** (Data Encryption Key) qui servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données.<br>
+La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chiffrée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
@@ -167,6 +167,26 @@ Le nouveau chiffrement s'effectue en quelques millisecondes car l'opération eff
 Cliquez sur la `machine virtuelle`{.action} sur laquelle le chiffrement a été modifié et allez dans l'onglet `Résumé`{.action}. Vous pouvez constater que le chiffrement utilise un fournisseur de clés natif à coté du `cadenas`.
 
 ![03 migrate-from-kms-to-vnkp 07](images/03-migrate-from-kms-to-vnkp07.png){.thumbnail}
+
+### Chiffrement d'un Datastore d'un cluster vSAN
+
+Vous avez la possibilité de chiffrer le Datastore d'un cluster vSAN à la place des machines virtuelles.
+
+Dans votre interface vSphere, positionnez-vous sur votre `cluster vSAN`{.action} à droite, sélectionnez l'onglet `Configurer`{.action}, faites défiler la fenêtre jusqu'à **Services de données** et cliquez sur `Modifier`{.action}.
+
+![Activate vSAN data at rest encryption 01](images/04-activate-vsan-data-at-rest-encryption-01.png)
+
+Activez le `Chiffrement des données au repos`{.action}, cochez la case `Effacer les données résiduelles`{.action}, choisissez votre `Fournisseur de clés`{.action} et cliquez sur `APPLIQUER`{.action}.
+
+> [!primary]
+> Un avertissement vous informe qu'un problème de performance pourrais subvenir lors de l'activation de ces paramètres, n'en tenez pas compte.
+>
+
+![Activate vSAN data at rest encryption 02](images/04-activate-vsan-data-at-rest-encryption-02.png)
+
+Revenez sur **Services de données** et vous constaterez que le **Chiffrement de données au repos** est activé avec votre clé.
+
+![Activate vSAN data at rest encryption 03](images/04-activate-vsan-data-at-rest-encryption-03.png)
 
 ## Aller plus loin <a name="gofurther"></a>
 

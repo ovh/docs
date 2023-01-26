@@ -8,7 +8,7 @@ section: VMware vSphere features
 order: 09
 ---
 
-**Last updated 7th September 2022**
+**Last updated 26th January 2023**
 
 ## Objective
 
@@ -34,8 +34,6 @@ The aim of this guide is to explain the implementation details of **vSphere Nati
 >
 > Your **Hosted Private Cloud powered by VMware** cluster may not be in version 7.0 Update 2. If so, please contact support to upgrade your infrastructure.
 >
-> The **vSAN Data-At-Rest Encryption** and **vSAN Data-In-Transit Encryption** encryption options are not supported by default on vSAN clusters.<br>
-> If you would like to implement these options, please contact your **Technical Account Manager**.
 
 ## Presentation
 
@@ -170,7 +168,27 @@ Click the `virtual machine`{.action} on which the encryption has been changed an
 
 ![03 migrate-from-kms-to-vnkp 07](images/03-migrate-from-kms-to-vnkp07.png){.thumbnail}
 
-## Go further <a name=`gofurther`></a>
+### Encrypting a Datastore of a vSAN cluster
+
+You can encrypt the Datastore of a vSAN cluster instead of the virtual machines.
+
+Through your vSphere interface, go to your `vSAN cluster`{.action} on the right, select the `Configure`{.action} tab, scroll to **Data Services** and click `EDIT`{.action}.
+
+![Activate vSAN data at rest encryption 01](images/04-activate-vsan-data-at-rest-encryption-01.png)
+
+Enable `Data-At-Rest encryption`{.action}, check `Wipe residual Data`{.action}, choose your `Key Provider`{.action} and click `APPLY`{.action}.
+
+> [!primary]
+> A warning will inform you that a performance problem may occur when you enable these settings. Please ignore it.
+>
+
+![Activate vSAN data at rest encryption 02](images/04-activate-vsan-data-at-rest-encryption-02.png)
+
+Go back to **Data Services** and you will see that **Data encryption at rest** is enabled with your key.
+
+![Activate vSAN data at rest encryption 03](images/04-activate-vsan-data-at-rest-encryption-03.png)
+
+## Go further <a name="gofurther"></a>
 
 [VMware vSphere Native Key Provider Overview](https://core.vmware.com/native-key-provider)
 
