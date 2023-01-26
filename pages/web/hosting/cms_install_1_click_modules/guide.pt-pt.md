@@ -53,7 +53,7 @@ Irá visualizar uma janela onde poderá escolher o CMS e o domínio ao qual dese
 
 Se não encontrar o domínio desejado na lista, clique no separador `Multisite`{.action} e adicione o domínio. De seguida, tente novamente adicionar o módulo.
 
-Se tiver dúvidas, pode consultar o guia (em francês) [Como usar meu alojamento web com vários sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} (versão PT disponível em breve).
+Se tiver dúvidas, pode consultar o guia (em francês) [Como usar meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external} (versão PT disponível em breve).
 
 Depois de selecionar o domínio, selecione a instalação simples ou a instalação avançada:
 
@@ -104,7 +104,7 @@ Para configurar módulo, deve fornecer várias informações.
 - **Nome ou e-mail do administrador:** corresponde ao «nome de utilizador» (username) usado para aceder à interface de gestão do CMS.
 - **Palavra-passe:** palavra-passe usada para aceder à interface de gestão do CMS.
 - **Domínio:** domínio ao qual deseja associar o seu site.
-Em caso de dúvida, consulte o guia (em francês) [Como usar o meu alojamento web com vários sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) (versão PT disponível em breve).
+Em caso de dúvida, consulte o guia (em francês) [Como usar o meu alojamento web com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) (versão PT disponível em breve).
 - **Idioma:** língua de funcionamento do CMS.
 - **Caminho da instalação:** esta informação é preenchida automaticamente após a seleção do domínio. O caminho da instalação pode ser completado adicionando sub-diretórios. (sub-pastas).
 
@@ -132,7 +132,7 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 |CMS|Manuais em inglês|
 |---|---|
 |WordPress|[First steps with WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
-|PrestaShop|[Getting started with PrestaShop](http://doc.prestashop.com/display/PS17/Getting+Started){.external}|
+|PrestaShop|[Getting started with PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started){.external}|
 |Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
 |Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
 
@@ -140,7 +140,7 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 
 [Escolher um CMS para criar um *site*](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external}.
 
-[Como usar o meu alojamento com vários sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} (versão PT disponível em breve).
+[Como usar o meu alojamento com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external} (versão PT disponível em breve).
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
 
