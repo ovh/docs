@@ -17,7 +17,7 @@ In this case, you must activate the licence manually to access all Windows servi
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/sg/en/public-cloud/create_a_public_cloud_project/)
+- A [Public Cloud project](https://docs.ovh.com/sg/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 - An [OpenStack user account](https://docs.ovh.com/sg/en/public-cloud/creation-and-deletion-of-openstack-user/)
 
@@ -47,7 +47,7 @@ Select your interface and confirm.
 
 ![interface select](images/attachinterfacehorizon.png){.thumbnail}
 
-#### Via OpenStack API
+#### Via the OpenStack API
 
 Before continuing, we recommend reading these guides:
 
@@ -152,7 +152,7 @@ openstack server add port <server_id> <port_id>
 
 To activate Windows, you must go through Powershell.
 
-Once you have logged in to your Windows instance, click the `Start`{.action} menu, then click on the `Windows PowerShell`{.action}.
+Once you have logged in to your Windows instance, right click on the `Start`{.action} menu and select `Windows PowerShell`{.action}.
 
 Enter the following command:
 

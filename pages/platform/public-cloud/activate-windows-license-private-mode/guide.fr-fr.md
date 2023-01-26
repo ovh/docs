@@ -17,7 +17,7 @@ Dans ce cas, vous devez activer la licence manuellement afin d'avoir accès à t
 
 ## Prérequis
 
-- Posséder un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/)
+- Posséder un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - [Avoir créé un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
 
@@ -152,7 +152,7 @@ openstack server add port <server_id> <port_id>
 
 Pour pourvoir activer votre système Windows, vous devez passer par Powershell.
 
-Une fois connecté à votre instance Windows, cliquez sur le menu `Démarrer`{.action}, puis sur l'icône du `Windows PowerShell`{.action}.
+Une fois connecté à votre instance Windows, faites un clic droit sur le menu `Démarrer`{.action} et sélectionnez `Windows Powershell`{.action}.
 
 Renseignez la commande suivante :
 
