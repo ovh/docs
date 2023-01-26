@@ -429,14 +429,14 @@ Many free tools allow you to rework your illustrations:
 - The Windows 10 and 11 [Photos app](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4)
 - The macOS [Photos app](https://support.apple.com/en-gb/guide/photos/welcome/mac)
 - [Paint.Net](https://www.getpaint.net/), [GIMP](https://www.gimp.org/), [darktable](https://www.darktable.org/)
-- Also think about the photo editing applications available on Android or iOS smartphones.
+- Photo editing applications available on Android or iOS smartphones
 
 You will also find online resources:
 
 - [Compressor](https://compressor.io/)
 - [ShrinkMe](https://shrinkme.app/)
 - [Free Online Image Optimiser](https://kraken.io/web-interface)
-- [TinyJPG](https://tinyjpg.com/) and [TinyPNG](https://tinypng.com/).
+- [TinyJPG](https://tinyjpg.com/) and [TinyPNG](https://tinypng.com/)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

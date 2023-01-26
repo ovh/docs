@@ -6,7 +6,7 @@ section: 'Tutorials'
 order: 04
 ---
 
-**Letzte Aktualisierung am 18.01.2023** 
+**Letzte Aktualisierung am 18.01.2023**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -19,6 +19,12 @@ Dieses Tutorial zeigt Ihnen, wie Sie [Cecil](https://cecil.app/){.external} inst
 Eine im Wesentlichen aus statischen Seiten bestehende Website garantiert Ihren Besuchern eine bessere Ladezeit und eine höhere Sicherheit. Ohne dynamischen Inhalt sind Ihre Seiten robuster gegen Cyber-Angriffe. Das Erzeugen von statischen Seiten erlaubt mehr Freiheiten bei der Seiten-Erstellung. Sie sparen auch Zeit, da Sie nicht bei Null anfangen müssen.
 
 **In diesem Tutorial wird erläutert, wie Sie mit Cecil Ihre statische Website mit einer modernen Template-Engine (Jamstack) erstellen können.**
+
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+>
+> Wenn Sie Schwierigkeiten haben, die Schritte in diesem Tutorial durchzuführen, empfehlen wir, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+>
 
 ## Voraussetzungen
 
@@ -214,7 +220,7 @@ menu: main
 **Cecil** ist ein Tool, mit dem eine statische Site aus *Markdown*-Dateien erstellt werden kann. Diese Markup-Sprache ist einfacher zu implementieren als HTML. Die Organisation von Markdown-Dateien bestimmt die Hierarchie Ihrer Webseiten.<br/>
 Die Verwendung einer Template Engine, die in der Web-Entwickler-Community weit verbreitet ist, ermöglicht es Ihnen, viele Quellen im Internet zu finden, um eine professionell aussehende Benutzeroberfläche zu entwerfen.
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Offizielle Webseite von Cecil](https://cecil.app/){.external}
 
