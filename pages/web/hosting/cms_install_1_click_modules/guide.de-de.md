@@ -16,12 +16,12 @@ order: 01
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager) eingeloggt.
-- [Eine kompatible PHP-Version](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/) auf Ihrem Webhosting verwenden.
-- [Ihre .ovhconfig-Datei korrekt konfiguriert](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/).
-- Das Verzeichnis, in dem Ihr Modul installiert wird, muss leer sein oder derzeit nicht vorhanden sein.
-- Die Domain (und gegebenenfalls die Subdomain) Ihrer Website ist als Multisite registriert.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verwenden eine [kompatible PHP-Version](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/) auf Ihrem Webhosting. 
+- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/).
+- Sie haben ein neues, leeres Verzeichnis erstellt, um Ihr Modul darin zu installieren.
+- Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist als Multisite registriert.
 
 ## Beschreibung
 
@@ -53,7 +53,7 @@ Im angezeigten Fenster wählen Sie zunächst das gewünschte CMS und anschließe
 
 Wenn Sie die gewünschte Domain nicht in der Liste finden, klicken Sie auf den Tab `Multisite`{.action}, um sie hinzuzufügen, und versuchen Sie anschließend erneut, ein Modul hinzuzufügen.
 
-Für weitere Informationen, lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
+Für weitere Informationen, lesen Sie die Anleitung "[Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}".
 
 Nachdem Sie die gewünschte Domain ausgewählt haben, haben Sie die Wahl zwischen einer einfachen oder der erweiterten Installation „im Experten-Modus“:
 
@@ -103,12 +103,12 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.acti
 
 Geben Sie nun die folgenden Informationen zur Konfiguration des Moduls ein:
 
-- *Name oder E-Mail-Adresse des Administrators:* die Kennung, mit der Sie sich zur Verwaltung Ihres CMS einloggen.
-- *Passwort:* das Passwort, mit dem Sie sich im Verwaltungsinterface Ihres CMS einloggen.
-- *Domain:* die Domain, auf der Sie Ihre Website installieren.
-Für weitere Informationen, lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
-- *Sprache:* die Sprache, in der das CMS installiert wird.
-- *Installationspfad:* wird bei der Domain-Auswahl automatisch angegeben. Sie haben die Möglichkeit, den Pfad durch die Angabe von Unterverzeichnissen zu ergänzen.
+- *Name oder E-Mail-Adresse des Administrators:* Die Kennung, mit der Sie sich zur Verwaltung Ihres CMS einloggen.
+- *Passwort:* Das Passwort, mit dem Sie sich im Verwaltungsinterface Ihres CMS einloggen.
+- *Domain:* Der Domainname, mit dem Ihre Website erreicht werden soll.
+Für weitere Informationen lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
+- *Sprache:* Die Sprache, in der das CMS installiert wird.
+- *Installationspfad:* Wird bei der Domain-Auswahl automatisch angegeben. Sie haben die Möglichkeit, den Pfad durch die Angabe von Unterverzeichnissen zu ergänzen.
 
 Wenn Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
 
