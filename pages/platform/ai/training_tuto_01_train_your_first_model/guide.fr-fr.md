@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutoriel - Entraînez votre premier modèle ML (EN)
 slug: training/tuto-train-first-ml-model
-excerpt: "Comment former votre premier modèle d'apprentissage automatique dans AI Training"
+excerpt: "Comment construire et entraîner votre premier modèle dans AI Training"
 section: AI Training - Tutoriels
 order: 01	
 routes:
