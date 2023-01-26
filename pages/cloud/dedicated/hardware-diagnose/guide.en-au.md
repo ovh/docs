@@ -39,7 +39,7 @@ stress-ng --metrics-brief --timeout 60s --brk 0 --stack 0 --bigheap 0 
 
 ### Network Connection
 
-The network connection test checks your internal and external bandwidth. To start the test, click the button as shown below. This data is provided for information purposes only and is not a performance test.
+The network connection test checks your internal and external bandwidth. This data is provided for information purposes only and is not a performance test.
 
 ```bash
 ping -c 10 proof.ovh.net
