@@ -18,7 +18,7 @@ This tutorial describes how to use the [Cecil](https://cecil.app){.external} sit
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 > 
-> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide
+> If you experience any difficulties following the steps in this tutorial, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or reach out to the OVHcloud community. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -194,7 +194,7 @@ Replace the value of the `apiKey` variable with the key retrieved earlier on the
 ```javascript
 let apiKey = '123456789'; // Replace this value
 let city = 'Roubaix'; // Indicate here the default city that will be displayed on the weather page
-getTemperature(city);  // Calling function calling API with parameter 'city'
+getTemperature(city);  // Call function calling the API with the parameter "city"
 
 // Add an event by clicking on the “Change city” button
 let button = document.querySelector('#modify');
@@ -219,7 +219,7 @@ function getTemperature(city) {
                 document.querySelector('#city').textContent = city;
                 document.querySelector('#temperatureValue').textContent = temperature;
             } else
-                alert('A problem has occurred, please come try later.');
+                alert('A problem has occurred, please try later.');
             }
         }
     };
@@ -242,7 +242,7 @@ Click on “Change city” and enter the name of a municipality:
 
 This tutorial shows you an example of how to integrate dynamic data retrieved from external sources using APIs. Build and maintain a website by manually editing the content of these pages, or create new ones. All this while enriching their content from other websites.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 - Some APIs to test on your website:
     - [Numbers API](http://numbersapi.com/#42){.external}
@@ -252,7 +252,7 @@ This tutorial shows you an example of how to integrate dynamic data retrieved fr
     - [A list of public APIs](https://github.com/public-api-lists/public-api-lists){.external}
 - [Cecil commands](https://cecil.app/documentation/commands/){.external}
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 

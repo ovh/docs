@@ -18,7 +18,7 @@ In some cases, the database stores such a large amount of information that it wi
 
 This tutorial will show you the actions you can take when your OVHcloud shared database is close to saturation, or is already in **overquota**.
 
-**This guide explains how to do when your database is full.**
+**This guide explains possible actions when your database is full.**
 
 ## Requirements
 
@@ -40,7 +40,7 @@ The first email will be sent when your database has consumed more than **80%** o
 
 When your database is in **overquota**, you will be sent a third warning email. Your database will then switch to *READ ONLY*. You can no longer add or modify your database entries, but they are still accessible to **read** and **delete**. 
 
-### Step 1: Identify large table(s)
+### Step 1: Identify large tables
 
 A database is made up of one or more **tables**, themselves consisting of one or more **rows** organised using predetermined **columns**.
 
@@ -159,7 +159,7 @@ You can use it to remove **one or more rows** from a given table. This command i
 
 **Example**:
 
-```bash
+```sql
 DELETE FROM `table_1` WHERE `id` = 1
 ```
 
@@ -171,7 +171,7 @@ This command deletes **all rows** from a given table.
 
 **Example**:
 
-```bash
+```sql
 TRUNCATE TABLE `table_1`
 ```
 
@@ -183,7 +183,7 @@ It allows you to completely remove **a table and all the rows it contains**. Thi
 
 **Example**:
 
-```bash
+```sql
 DROP TABLE `table_1`
 ```
 
