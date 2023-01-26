@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Stand 26.01.2023**
+**Letzte Aktualisierung am 26.01.2023**
 
 ## Einleitung 
 
