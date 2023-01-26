@@ -449,6 +449,7 @@
             + [Familiarise yourself with the Public Cloud interface](platform/public-cloud/03-public-cloud-interface-walk-me)
             + [Creating your first OVHcloud Public Cloud project](platform/public-cloud/create_a_public_cloud_project)
             + [Creating and connecting to your first Public Cloud instance](platform/public-cloud/public-cloud-first-steps)
+            + [Activating a Windows licence for an instance in private mode](platform/public-cloud/activate-windows-license-private-mode)
         + [General information](public-cloud-compute-general-information)
             + [FAQ](platform/public-cloud/faq_pci)
             + [Public Cloud Glossary](platform/public-cloud/introduction_about_instances)
