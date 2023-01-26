@@ -17,7 +17,11 @@ order: 08
 
 ## Objectif
 
-Ce tutoriel explique comment créer une page web professionnelle comprenant des incitations à renseigner un formulaire par les visiteurs de votre site web. Les données récupérées seront envoyées directement sur l'adresse e-mail de votre choix, adresse depuis laquelle vous pourrez leur répondre directement.
+Connectez-vous avec votre public, collectez des prospects qualifiés et vendez vos services avec une simple page web.
+Créez votre présence en ligne et développez votre mailing liste d'abonnés grâce ...
+
+Créez votre présence en ligne et développez votre mailing liste d'abonnés, Connectez-vous avec votre public, collectez des prospects qualifiés avec une simple page web.
+
 
 ## Prérequis
 
@@ -25,17 +29,17 @@ Ce tutoriel explique comment créer une page web professionnelle comprenant des 
 - Avoir souscrit à une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/)
 - Être en capacité d'utiliser un éditeur de texte sur votre ordinateur ou un IDE
 - Avoir installé un client FTP comme [FileZilla](https://filezilla-project.org/download.php).
-- Avoir quelques notions de programmation web (HTML, CSS et PHP)
+- Avoir quelques notions de programmation web (HTML, CSS, JavaScript et PHP)
 
 Consultez le tutoriel [« Créer sa page web personnelle chez OVHcloud »](https://docs.ovh.com/fr/hosting/create-your-own-web-page/) pour vous familiariser avec les concepts de programmation utilisés.
 
 ## En pratique
 
-Sur une page web unique seront disposés des éléments d'illustration et textuels, chacun renvoyant vers un formulaire sur le bas de page.
+Sur une unique page web unique seront disposés des éléments d'illustration et de texte, chacun renvoyant vers un formulaire sur le bas de page.
 
 Ce formulaire qui permettra la récupération des données saisies et l'envoi vers l'adresse mail de votre choix via un script en PHP.
 
-### Mise en place de l'architecture
+### Mise en place des fichiers
 
 Les fichiers seront organisés de la façon suivante :
 
@@ -90,7 +94,7 @@ L'envoi de mail se fait par un script PHP. Dans le répertoire `scripts`, créez
 
 ### Lier la feuille de style et les scripts JavaScript à la page HTML
 
-Ajouter dans la balise `<head>` les balises '<script>`et `<link>` indiquant au navigateur quels fichiers utiliser :
+Ajouter dans la balise `<head>` les balises `<script>`et `<link>` indiquant au navigateur quels fichiers utiliser :
 
 ```html
 <!DOCTYPE html>
@@ -151,9 +155,30 @@ Ajoutez un titre, un sous-titre et du contenu alternant texte et illustrations :
 </body>
 ```
 
+### Favicon
+
+Ajoutez un fichier `favicon` à la racine du site :
+
+![Add favicon](images/create_your_customer_acquisition_webpage_6.png){.thumbnail}
+
+Et modifiez le contenu de `<head>` en ajoutant une balise `<link>` pour lier le fichier HTML au favicon :
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web site</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/jquery-3.6.3.js"></script>
+    <script src="assets/js/sendMail.js"></script>
+</head>
+```
+
 Disposez vos images dans le répertoire `assets/images` :
 
-![Add picture in the images directory](images/create_your_customer_acquisition_webpage_6.png){.thumbnail}
+![Add picture in the images directory](images/create_your_customer_acquisition_webpage_7.png){.thumbnail}
 
 ## Aller plus loin <a name="go-further"></a>
 
