@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Stand 03.02.2022**
+**Stand 26.01.2023**
 
 ## Einleitung 
 
@@ -18,7 +18,9 @@ order: 01
 
 - Sie besitzen ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager) eingeloggt.
-- Das Verzeichnis, in dem Ihr Modul installiert wird, enthält keine anderen Dateien.
+- [Eine kompatible PHP-Version](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/) auf Ihrem Webhosting verwenden.
+- [Ihre .ovhconfig-Datei korrekt konfiguriert](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/).
+- Das Verzeichnis, in dem Ihr Modul installiert wird, muss leer sein oder derzeit nicht vorhanden sein.
 - Die Domain (und gegebenenfalls die Subdomain) Ihrer Website ist als Multisite registriert.
 
 ## Beschreibung
@@ -145,5 +147,9 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 [Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
 
 Entdecken Sie unsere [CloudDB Angebote](https://www.ovh.de/cloud/cloud-databases/){.external}
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
