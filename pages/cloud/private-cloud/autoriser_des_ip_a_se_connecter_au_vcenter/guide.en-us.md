@@ -2,17 +2,14 @@
 title: 'Authorising IP addresses for vCenter access'
 slug: authorise-ip-addresses-vcenter
 excerpt: 'Find out how to manage IP address access restrictions for vCenter'
-legacy_guide_number: '1442255'
-space_key: VS
-space_name: vSphere as a Service
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 18th August 2021**
+**Last updated 25th January 2023**
 
 ## Objective
 
-Access to your Private Cloud can be restricted by allowing only certain IP addresses or ranges to connect to it.
+Access to your vCenter is restricted only to authorized IP addresses.
 
 **This guide explains how to authorise IP addresses for vCenter access in the OVHcloud Control Panel.**
 
@@ -23,11 +20,11 @@ Access to your Private Cloud can be restricted by allowing only certain IP addre
 
 ## Instructions
 
-If you have set the vCenter access policy to "Restricted", you need to add the IP addresses that will be allowed to connect to the service.
+Log into your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Switch to the `Hosted Private Cloud`{.action} tab and click again on `Hosted Private Cloud`{.action} to the left. 
 
-In your OVHcloud Control Panel, open the "Hosted Private Cloud" section, then select your service under `Private Cloud`{.action} in the left-hand navigation bar.
+Select your infrastructure and go to the `Security`{.action} tab.
 
-From the main page of the service, switch to the `Security`{.action} tab, then click on `Add a new IP address range`{.action}.
+Click `Add a new IP address range`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

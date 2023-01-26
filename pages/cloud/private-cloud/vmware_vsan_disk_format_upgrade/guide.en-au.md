@@ -15,13 +15,13 @@ vSAN disks are regularly upgraded with new versions. You need to update the vSAN
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- A deployed [vSan cluster](https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/)
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au))
+- A deployed [vSan cluster](https://docs.ovh.com/au/en/private-cloud/vmware-vsan/)
 
 ## Instructions
 
-Log in to your vSphere interface using [this guide](https://docs.ovh.com/gb/en/private-cloud/login-vsphere-interface/).
+Log in to your vSphere interface using [this guide](https://docs.ovh.com/au/en/private-cloud/login-vsphere-interface/).
 
 In the vSphere interface, click on your `Cluster`{.action} to the left, go to the `Configure`{.action} tab, choose `Services`{.action} in the **vSAN** section and click `PRE-CHECK UPGRADE`{.action}.
 
