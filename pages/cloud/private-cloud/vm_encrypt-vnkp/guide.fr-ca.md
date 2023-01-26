@@ -33,31 +33,15 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 > Il est possible que votre cluster **Hosted Private Cloud powered by VMware** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
 >
 
-### Chiffrement d'un Datastore d'un cluster vSAN
-
-Vous avez la possibilité de chiffrer le Datastore d'un cluster vSAN à la place des machines virtuelles.
-
-Au travers de votre interface vSphere positionnez-vous sur votre `cluster vSAN`{.action} à droite, sélectionnez l'onglet `Configurer`{.action}, faites défiler la fenêtre jusqu'a **Service de données** et cliquez sur `Modifier`{.action}.
-
-![Activate vSAN data at rest encryption 01](images/04-activate-vsan-data-at-rest-encryption-01.png)
-
-Activez le `Chiffrement des données au repos`{.action}, cochez la case `Effacer les données résiduelles`{.action}, Choisissez votre `Fournisseur de clés`{.action} et cliquez sur `APPLIQUER`{.action}.
-
-> [!primary]
-> Un avertissement vous informe qu'un problème de performance pourrait subvenir lors de l'activation de ces paramètres, n'en tenez pas compte.
->
-
-![Activate vSAN data at rest encryption 02](images/04-activate-vsan-data-at-rest-encryption-02.png)
-
-## Aller plus loin <a name="gofurther"></a>
-
 ## Présentation
 
 **vSphere Native Key provider** permet de chiffrer les machines virtuelles, d'activer un vTPM dans les machines virtuelles ou d'activer le chiffrement « data-at-rest » sur vSAN, sans avoir besoin d'un serveur **KMS** (*Key Management Server*) externe.
 
 Il est possible d'exporter la clé **vSphere Native Key provider** et de la réimporter sur un autre cluster.
 
-Dans le détail, lorsque l'on chiffre une machine virtuelle, l'hôte ESXi génère une clé **DEK**, cette clé servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données. La clé **DEK** est chiffrée à l'aide de la clé générée par **vSphere Native Key provider**. Cette DEK chiffrée est stockée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
+Dans le détail, lorsque l'on chiffre une machine virtuelle, le Vcenter génère une clé **KDK** (Key Derivation Key).<br>
+Cette clé est poussée aux ESXi et permet de générer une autre clé, la **DEK** (Data Encryption Key) qui servira à effectuer le chiffrement des fichiers composant la machine virtuelle et donc de ses données.<br>
+La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chiffrée avec la machine virtuelle. Vous trouverez plus de détails sur le chiffrement **VMware** en consultant les documentations officielles dans la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
@@ -188,11 +172,11 @@ Cliquez sur la `machine virtuelle`{.action} sur laquelle le chiffrement a été 
 
 Vous avez la possibilité de chiffrer le Datastore d'un cluster vSAN à la place des machines virtuelles.
 
-Au travers de votre interface vSphere positionnez-vous sur votre `cluster vSAN`{.action} à droite, sélectionnez l'onglet `Configurer`{.action}, faites défiler la fenêtre jusqu'a **Services de données** et cliquez sur `Modifier`{.action}.
+Dans votre interface vSphere, positionnez-vous sur votre `cluster vSAN`{.action} à droite, sélectionnez l'onglet `Configurer`{.action}, faites défiler la fenêtre jusqu'à **Services de données** et cliquez sur `Modifier`{.action}.
 
 ![Activate vSAN data at rest encryption 01](images/04-activate-vsan-data-at-rest-encryption-01.png)
 
-Activez le `Chiffrement des données au repos`{.action}, cochez la case `Effacer les données résiduelles`{.action}, Choisissez votre `Fournisseur de clés`{.action} et cliquez sur `APPLIQUER`{.action}.
+Activez le `Chiffrement des données au repos`{.action}, cochez la case `Effacer les données résiduelles`{.action}, choisissez votre `Fournisseur de clés`{.action} et cliquez sur `APPLIQUER`{.action}.
 
 > [!primary]
 > Un avertissement vous informe qu'un problème de performance pourrais subvenir lors de l'activation de ces paramètres, n'en tenez pas compte.
@@ -200,7 +184,7 @@ Activez le `Chiffrement des données au repos`{.action}, cochez la case `Effacer
 
 ![Activate vSAN data at rest encryption 02](images/04-activate-vsan-data-at-rest-encryption-02.png)
 
-Revenez sur le **Services de données** et vous constaterez que le **Chiffrement de données au repos** est activé avec votre clé.
+Revenez sur **Services de données** et vous constaterez que le **Chiffrement de données au repos** est activé avec votre clé.
 
 ![Activate vSAN data at rest encryption 03](images/04-activate-vsan-data-at-rest-encryption-03.png)
 

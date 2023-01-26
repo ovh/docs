@@ -170,16 +170,16 @@ Click the `virtual machine`{.action} on which the encryption has been changed an
 
 ### Encrypting a Datastore of a vSAN cluster
 
-you can encrypt the Datastore of a vSAN cluster instead of the virtual machines.
+You can encrypt the Datastore of a vSAN cluster instead of the virtual machines.
 
 Through your vSphere interface, go to your `vSAN cluster`{.action} on the right, select the `Configure`{.action} tab, scroll to **Data Services** and click `EDIT`{.action}.
 
 ![Activate vSAN data at rest encryption 01](images/04-activate-vsan-data-at-rest-encryption-01.png)
 
-Enable `Data-At-Rest encryption`{.action}, check `Wipe residual Data`{.action}, Choose your `Key Provider`{.action} and click `APPLY`{.action}.
+Enable `Data-At-Rest encryption`{.action}, check `Wipe residual Data`{.action}, choose your `Key Provider`{.action} and click `APPLY`{.action}.
 
 > [!primary]
-> A warning will inform you that a performance problem may occur when you enable these settings. Ignore them.
+> A warning will inform you that a performance problem may occur when you enable these settings. Please ignore it.
 >
 
 ![Activate vSAN data at rest encryption 02](images/04-activate-vsan-data-at-rest-encryption-02.png)

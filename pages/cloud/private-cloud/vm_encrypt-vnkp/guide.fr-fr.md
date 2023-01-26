@@ -32,7 +32,6 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 >
 > Il est possible que votre cluster **Hosted Private Cloud powered by VMware** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
 >
->
 
 ## Présentation
 
@@ -173,19 +172,19 @@ Cliquez sur la `machine virtuelle`{.action} sur laquelle le chiffrement a été 
 
 Vous avez la possibilité de chiffrer le Datastore d'un cluster vSAN à la place des machines virtuelles.
 
-Au travers de votre interface vSphere positionnez-vous sur votre `cluster vSAN`{.action} à droite, sélectionnez l'onglet `Configurer`{.action}, faites défiler la fenêtre jusqu'a **Services de données** et cliquez sur `Modifier`{.action}.
+Dans votre interface vSphere, positionnez-vous sur votre `cluster vSAN`{.action} à droite, sélectionnez l'onglet `Configurer`{.action}, faites défiler la fenêtre jusqu'à **Services de données** et cliquez sur `Modifier`{.action}.
 
 ![Activate vSAN data at rest encryption 01](images/04-activate-vsan-data-at-rest-encryption-01.png)
 
-Activez le `Chiffrement des données au repos`{.action}, cochez la case `Effacer les données résiduelles`{.action}, Choisissez votre `Fournisseur de clés`{.action} et cliquez sur `APPLIQUER`{.action}.
+Activez le `Chiffrement des données au repos`{.action}, cochez la case `Effacer les données résiduelles`{.action}, choisissez votre `Fournisseur de clés`{.action} et cliquez sur `APPLIQUER`{.action}.
 
 > [!primary]
-> Un avertissement vous informe qu'un problème de performance pourrait subvenir lors de l'activation de ces paramètres, n'en tenez pas compte.
+> Un avertissement vous informe qu'un problème de performance pourrait survenir lors de l'activation de ces paramètres, n'en tenez pas compte.
 >
 
 ![Activate vSAN data at rest encryption 02](images/04-activate-vsan-data-at-rest-encryption-02.png)
 
-Revenez sur le **Services de données** et vous constaterez que le **Chiffrement de données au repos** est activé avec votre clé.
+Revenez sur **Services de données** et vous constaterez que le **Chiffrement de données au repos** est activé avec votre clé.
 
 ![Activate vSAN data at rest encryption 03](images/04-activate-vsan-data-at-rest-encryption-03.png)
 
