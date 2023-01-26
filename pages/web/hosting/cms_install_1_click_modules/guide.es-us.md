@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Última actualización: 03/02/2022**
+**Última actualización: 26/01/2023**
 
 ## Objetivo
 
@@ -19,7 +19,9 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- No haber descargado archivos en el directorio en el que vaya a instalar el módulo.
+- Utilizar [una versión de PHP compatible](https://docs.ovh.com/us/es/hosting/cambiar-version-php-en-alojamiento-web/) en su alojamiento web.
+- Haber [configurado correctamente su archivo .ovhconfig](https://docs.ovh.com/us/es/hosting/configurar-archivo-ovhconfig/).
+- El directorio en el que se instalará el módulo debe estar vacío o no existe actualmente.
 - El dominio (y el subdominio, en su caso) que utilice para el sitio web debe estar declarado como multisitio.
 
 
@@ -103,7 +105,7 @@ Para configurar el módulo, introduzca los siguientes datos:
 - **Nombre o dirección de correo electrónico del administrador:** Identificador que utilizará para conectarse al panel de administración de su CMS.
 - **Contraseña:** Contraseña que utilizará para conectarse al panel de administración de su CMS.
 - **Dominio:** Dominio en el que desea instalar su sitio web.
-Para más información, consulte la guía [Utilizar un mismo plan de hosting para varios sitios web](../configurar-un-multisitio-en-un-alojamiento-web/).
+Para más información, consulte la guía [Utilizar un mismo plan de hosting para varios sitios web](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/).
 - **Idioma:** Idioma en el que se instalará el CMS.
 - **Ruta de instalación:** Este parámetro se completa automáticamente al seleccionar el dominio. También puede completar la ruta introduciendo subdirectorios.
 
@@ -139,6 +141,10 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 
 [Elegir un CMS para crear un sitio web](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}
 
-[Gestionar una base de datos desde un alojamiento compartido](../gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
+[Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/us/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -18,9 +18,11 @@ order: 01
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- no files stored in the directory that your module will be installed in
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+- Use [a compatible PHP version](https://docs.ovh.com/ie/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/) on your Web Hosting plan.
+- Have [correctly configured your .ovhconfig file](https://docs.ovh.com/ie/en/hosting/configuring-file-ovhconfig/).
+- The directory where your module will be installed must be empty or currently non-existent.
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
 
 ## Instructions
@@ -143,4 +145,8 @@ Below, we've included some links from these CMS publishers, to help you get star
 
 [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/)
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Last updated 3rd February 2022**
+**Last updated 26th January 2023**
 
 ## Objective
 
@@ -18,9 +18,11 @@ order: 01
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- no files stored in the directory that your module will be installed in
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Use [a compatible PHP version](https://docs.ovh.com/gb/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/) on your Web Hosting plan.
+- Have [correctly configured your .ovhconfig file](https://docs.ovh.com/gb/en/hosting/configuring-file-ovhconfig/).
+- The directory where your module will be installed must be empty or currently non-existent.
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
 
 ## Instructions
@@ -142,5 +144,9 @@ Below, we've included some links from these CMS publishers, to help you get star
 [Choosing a CMS for building your website](https://www.ovhcloud.com/en-gb/web-hosting/uc-cms-comparison/){.external}
 
 [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

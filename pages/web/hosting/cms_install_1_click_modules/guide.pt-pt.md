@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Última atualização: 03/02/2022**
+**Última atualização: 26/01/2023**
 
 ## Sumário
 
@@ -18,8 +18,10 @@ Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site
 
 - Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth//).
+- Utilizar [uma versão de PHP compatível](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/) no seu alojamento web.
+- Ter [configurado corretamente o seu ficheiro .ovhconfig](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/).
+- O diretório onde será instalado o seu módulo deve estar vazio ou atualmente inexistente.
 - Aceder à secção multisite e adicionar o domínio (ou subdomínio) que ficará associado ao seu site.
-- O diretório (pasta) onde o módulo será instalado tem que estar vazio.
 
 ## Instruções
 
@@ -134,7 +136,7 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 |Joomla!|[Getting started with Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
 |Drupal|[Understanding Drupal](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
 
-## Quer saber mais? Clique nos links abaixo
+## Quer saber mais?
 
 [Escolher um CMS para criar um *site*](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/){.external}.
 
@@ -144,4 +146,8 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 
 Veja a nossa [oferta CloudDB](https://www.ovh.pt/cloud/cloud-databases/){.external}
 
-Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
