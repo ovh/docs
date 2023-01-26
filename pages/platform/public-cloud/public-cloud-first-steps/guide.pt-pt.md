@@ -157,7 +157,7 @@ Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, int
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. Na página «Home», clique em `Criar uma instância`{.action}. (Encontrará a mesma funcionalidade na página «Instâncias», clicando em `Instâncias`{.action} na barra de navegação à esquerda, sob «Compute».)
 
-![instance select](images/instance-creation-01-2021.png){.thumbnail}
+![instance select](images/instance-creation-01-2023.png){.thumbnail}
 
 Antes de mais, escolha um modelo de servidor de acordo com as suas necessidades. O assistente vai fornecer descrições dos vários casos de uso e da disponibilidade dos modelos. Pode escolher entre as seguintes categorias personalizadas:
 

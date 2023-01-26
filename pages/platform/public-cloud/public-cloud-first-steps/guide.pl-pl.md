@@ -157,7 +157,7 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie “Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze “Środowisko obliczeniowe”).
 
-![instance select](images/instance-creation-01-2021.png){.thumbnail}
+![instance select](images/instance-creation-01-2023.png){.thumbnail}
 
 Najpierw wybierz odpowiedni do swoich potrzeb szablon serwera. Narzędzie pomocy wyświetli opisy dotyczące różnych zastosowań i dostępności modeli serwera. Do wyboru są następujące dostosowane kategorie:
 

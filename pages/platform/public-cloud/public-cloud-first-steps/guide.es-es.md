@@ -157,7 +157,7 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
 
-![instance select](images/instance-creation-01-2021.png){.thumbnail}
+![instance select](images/instance-creation-01-2023.png){.thumbnail}
 
 En primer lugar, seleccione el modelo que mejor se adapta a sus necesidades. Podrá consultar las características de las diferentes instancias y los modelos de servidor disponibles de entre las siguientes categorías:
 

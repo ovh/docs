@@ -157,7 +157,7 @@ Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im n
 
 Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der “Start”-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der “Instanzen”-Seite, indem Sie in der linken Menüzeile unter “Compute” auf `Instances`{.action} klicken.)
 
-![Instanz auswählen](images/instance-creation-01-2021.png){.thumbnail}
+![Instanz auswählen](images/instance-creation-01-2023.png){.thumbnail}
 
 Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. Der Assistent zeigt Ihnen Beschreibungen zu den verschiedenen Einsatzzwecken sowie die Verfügbarkeit der Servermodelle. Sie können aus den folgenden angepassten Kategorien auswählen:
 
