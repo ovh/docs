@@ -29,7 +29,7 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus, wechseln Sie zum Tab `Datenbanken`{.action} und klicken Sie dann auf `Datenbank hinzufügen`{.action}.
 
-![private-sql](images/private-sql-createdb01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-createdb01.png){.thumbnail}
 
 Füllen Sie die Felder gemäß den angegebenen Kriterien ein. Sie können direkt einen Benutzer erstellen, indem Sie **Benutzer erstellen** anhaken.
 
@@ -40,7 +40,7 @@ Füllen Sie die Felder gemäß den angegebenen Kriterien ein. Sie können direkt
 
 Klicken Sie dann auf `Bestätigen`{.action}.
 
-![private-sql](images/private-sql-createdb02.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-createdb02.png){.thumbnail}
 
 ### Benutzer erstellen
 
@@ -48,7 +48,7 @@ Um einen Datenbankserver von OVHcloud zu verwenden, müssen Benutzer mit spezifi
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus, wechseln Sie zum Tab `Benutzer und Rechte`{.action} und klicken Sie dann auf `Einen Benutzer hinzufügen`{.action}.
 
-![private-sql](images/private-sql-user01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-user01.png){.thumbnail}
 
 Geben Sie einen "Benutzernamen" und ein "Passwort" ein und klicken Sie anschließend auf `Bestätigen`{.action}. 
 
@@ -60,7 +60,7 @@ Um die Rechte jedes Benutzers zu verwalten, loggen Sie sich in Ihr [OVHcloud Kun
 
 Klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem jeweiligen Benutzer, dann auf `Rechte verwalten`{.action}.
 
-![private-sql](images/private-sql-rights01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-rights01.png){.thumbnail}
 
 In der linken Spalte **Datenbank** finden Sie die Liste der Datenbanken Ihres Datenbankservers.
 
@@ -76,7 +76,7 @@ Benutzern können die folgenden Berechtigungen erteilt werden:
 > Die Segmentierung der oben genannten Rechte ist OVHcloud vorbehalten. So kann ein Benutzer mit der `Administrator`-Berechtigung **DLL** (Data Definition Language) und **DML** (Data Manipulation Language) verwenden, während ein Benutzer mit der Berechtigung `Lesen/Schreiben` nur **DLL** nutzen kann.
 >
 
-![private-sql](images/private-sql-rights02.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-rights02.png){.thumbnail}
 
 #### Eine Datenbank löschen
 
@@ -90,7 +90,7 @@ Um die Rechte jedes Benutzers zu verwalten, loggen Sie sich in Ihr [OVHcloud Kun
 
 Um eine Datenbank auf Ihrem Datenbankserver zu löschen, klicken Sie auf `...`{.action} rechts neben der betreffenden Datenbank und anschließend auf `Die Datenbank löschen`{.action}.
 
-![private-sql](images/private-sql-deldb01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-deldb01.png){.thumbnail}
 
 ## Weiterführende Informationen
 
