@@ -4,6 +4,7 @@ slug: importar-su-propia-imagen
 excerpt: Cómo importar su propia imagen en Public Cloud
 section: OpenStack
 order: 10
+updated: 2020-10-27
 ---
 
 > [!primary]

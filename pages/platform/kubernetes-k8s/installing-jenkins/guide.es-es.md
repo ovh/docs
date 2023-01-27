@@ -5,6 +5,7 @@ excerpt: "Find out how to install Jenkins on OVHcloud Managed Kubernetes"
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-jenkins/'
+updated: 2021-12-20
 ---
 
 **Last updated December 20 2021.**

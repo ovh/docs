@@ -4,6 +4,7 @@ slug: deploy/tuto-build-use-flask-image
 excerpt: How to build and use a custom Docker image containing a Flask application
 section: AI Deploy - Tutorials
 order: 02
+updated: 2022-11-03
 ---
 
 **Last updated 3rd November, 2022.**

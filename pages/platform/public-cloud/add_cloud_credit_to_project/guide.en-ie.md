@@ -4,6 +4,7 @@ slug: add-cloud-credit
 excerpt: 'Find out how to add credit or vouchers to your Public Cloud project'
 section: Project management
 order: 3
+updated: 2022-02-04
 ---
 
 **Last updated 4th February 2022**

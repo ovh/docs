@@ -4,6 +4,7 @@ excerpt: "Visite guidée de l'interface Public Cloud"
 slug: public-cloud-interface
 section: Premiers pas
 order: 03
+updated: 2021-12-06
 ---
 
 **Dernière mise à jour le 06/12/2021**

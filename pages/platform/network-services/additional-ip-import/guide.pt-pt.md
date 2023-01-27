@@ -4,6 +4,7 @@ excerpt: "Este guia explica como importar um Additional IP para o seu projeto Pu
 slug: import-additional-ip
 section: Additional IP
 order: 03
+updated: 2023-01-04
 ---
 
 **Última atualização: 04/01/2023**

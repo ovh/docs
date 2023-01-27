@@ -4,6 +4,7 @@ slug: m3aggregator/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3 Aggregator
 section: M3 Aggregator - Guides
 order: 010
+updated: 2023-01-19
 ---
 
 **Last updated January 19th, 2023**

@@ -4,6 +4,7 @@ slug: create-launch-and-delete-images-in-horizon
 legacy_guide_number: 1784
 section: Horizon
 order: 09
+updated: 2021-12-30
 ---
 
 **Last updated 30th December 2021**

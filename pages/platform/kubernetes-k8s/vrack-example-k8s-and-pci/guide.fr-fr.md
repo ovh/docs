@@ -5,6 +5,7 @@ section: Network
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/vrack-example-k8s-and-pci/'
+updated: 2021-12-21
 ---
 
 **Last updated December 21 2021.**

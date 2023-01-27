@@ -5,6 +5,7 @@ excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenI
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-keycloak/'
+updated: 2022-11-24
 ---
 
 **Last updated 24th November, 2022.**

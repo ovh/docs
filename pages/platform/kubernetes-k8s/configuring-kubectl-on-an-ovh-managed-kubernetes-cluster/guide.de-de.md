@@ -6,6 +6,7 @@ section: User guides
 order: 0
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/configuring-kubectl/'
+updated: 2022-04-27
 ---
 
 **Last updated 27<sup>th</sup> April, 2022.**

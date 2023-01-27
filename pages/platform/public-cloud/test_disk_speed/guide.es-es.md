@@ -4,6 +4,7 @@ excerpt: Comprobar la velocidad de los discos
 slug: comprobar_la_velocidad_de_los_discos
 legacy_guide_number: g1956
 section: Almacenamiento
+updated: 2022-01-04
 ---
 
 > [!primary]

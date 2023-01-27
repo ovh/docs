@@ -4,6 +4,7 @@ slug: gestionar-instancias-public-cloud-horizon
 excerpt: Cómo gestionar sus instancias a través de la interfaz de Horizon
 section: Gestión desde Horizon
 order: 4
+updated: 2022-01-25
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: installing-kyverno
 excerpt: Find out how to secure your OVHcloud Managed Kubernetes and deploy Kyverno for policy management
 section: Security
 order: 0
+updated: 2022-08-11
 ---
 
 **Last updated 11th August 2022.**

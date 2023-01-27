@@ -4,6 +4,7 @@ slug: training/tuto-tensorboard-inside-job
 excerpt: How to use a tensorboard inside an AI Training Job
 section: AI Training - Tutorials
 order: 05
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

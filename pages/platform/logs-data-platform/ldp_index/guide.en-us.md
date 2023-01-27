@@ -4,6 +4,7 @@ slug: ldp-index
 order: 8
 excerpt: Send your logs to the platform with the OpenSearch API.
 section: Features
+updated: 2022-06-13
 ---
 
 **Last updated 13th June, 2022**

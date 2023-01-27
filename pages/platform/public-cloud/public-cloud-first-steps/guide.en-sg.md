@@ -4,6 +4,7 @@ slug: public-cloud-first-steps
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
 section: 'Getting started'
 order: 1
+updated: 2022-11-17
 ---
 
 **Last updated 17th November 2022**

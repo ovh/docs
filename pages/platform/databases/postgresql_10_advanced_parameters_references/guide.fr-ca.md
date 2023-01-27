@@ -6,6 +6,7 @@ section: PostgreSQL - Guides
 order: 100
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/advanced-parameters-references/'
+updated: 2022-12-28
 ---
 
 <style>

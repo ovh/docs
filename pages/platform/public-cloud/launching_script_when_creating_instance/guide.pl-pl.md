@@ -4,6 +4,7 @@ excerpt: Uruchomienie skryptu podczas tworzenia instancji
 slug: uruchomienie_skryptu_podczas_tworzenia_instancji
 legacy_guide_number: g1932
 section: Zarządzanie w OpenStack CLI
+updated: 2022-03-18
 ---
 
 **Ostatnia aktualizacja z dnia 18/03/2022**

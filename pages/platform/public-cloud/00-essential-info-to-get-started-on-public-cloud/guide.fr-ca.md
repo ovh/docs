@@ -4,6 +4,7 @@ excerpt: "Découvrez des notions de base utiles pour commencer dans l'environnem
 slug: public-cloud-essential-information
 section: Premiers pas
 order: 01
+updated: 2022-02-07
 ---
 
 **Dernière mise à jour le 07/02/2022**

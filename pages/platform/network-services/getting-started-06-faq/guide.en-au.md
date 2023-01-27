@@ -4,6 +4,7 @@ slug: faq
 excerpt: Frequently Asked Questions on Public Cloud Network Services
 section: Getting started
 order: 03
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

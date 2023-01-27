@@ -4,6 +4,7 @@ excerpt: 'Find out how to use images from OVHcloud Managed Private Registry serv
 slug: using-private-registry-with-kubernetes
 section: 'Tutorials'
 order: 02
+updated: 2022-04-13
 ---
 
 **Last updated 13th April, 2022.**

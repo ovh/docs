@@ -4,6 +4,7 @@ slug: openstack-user-erstellen-loeschen
 excerpt: 'Erfahren Sie hier, wie Sie einen OpenStack User über Ihr OVHcloud Kundencenter erstellen und löschen'
 section: 'Projektverwaltung'
 order: 8
+updated: 2022-03-16
 ---
 
 > [!primary]

@@ -5,6 +5,7 @@ slug: analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione
 section: Gestione del progetto
 legacy_guide_number: g2031
 order: 2
+updated: 2022-08-29
 ---
 
 **Ultimo aggiornamento: 30/08/2022**

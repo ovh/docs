@@ -10,6 +10,7 @@ category_l2: Managed Private Registry
 category_l3: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/scan-docker-images-vulnerabilities/'
+updated: 2022-04-15
 ---
 
 **Last updated 15th April 2022**

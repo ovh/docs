@@ -4,6 +4,7 @@ slug: zusaetzliche-ssh-schluessel-konfigurieren
 excerpt: Erfahren Sie hier, wie Sie zusätzliche SSH-Schlüssel für Ihre Public Cloud Instanz konfigurieren
 section: 'Tutorials'
 order: 01
+updated: 2022-02-04
 ---
 
 > [!primary]

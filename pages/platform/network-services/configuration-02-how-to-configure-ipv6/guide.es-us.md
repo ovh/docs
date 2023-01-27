@@ -4,6 +4,7 @@ slug: ipv6-configuration
 excerpt: 'Cómo configurar el protocolo IPv6 en una instancia de Public Cloud'
 section: Configuración
 order: 02
+updated: 2022-11-15
 ---
 
 > [!primary]

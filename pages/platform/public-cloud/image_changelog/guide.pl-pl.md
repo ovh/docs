@@ -4,6 +4,7 @@ slug: pci-vps-image-changelog
 excerpt:  Sprawdź zmiany wprowadzone na obrazach dostarczonych na rozwiązania Public Cloud i VPS
 section: 'Pierwsze kroki'
 order: 8
+updated: 2021-02-09
 ---
 
 **Ostatnia aktualizacja z dnia 18-01-2021**

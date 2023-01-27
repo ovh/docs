@@ -4,6 +4,7 @@ slug: changelog-images
 excerpt:  Descubra los cambios realizados en las imágenes que aparecen en las soluciones Public Cloud y VPS.
 section: 'Información general'
 order: 02
+updated: 2021-02-09
 ---
 
 **Última actualización: 18/01/2021**

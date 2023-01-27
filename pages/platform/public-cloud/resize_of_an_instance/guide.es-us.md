@@ -5,6 +5,7 @@ slug: redimensionar_una_instancia
 legacy_guide_number: g1778
 section: Gestión desde Horizon
 order: 9
+updated: 2021-11-22
 ---
 
 > [!primary]

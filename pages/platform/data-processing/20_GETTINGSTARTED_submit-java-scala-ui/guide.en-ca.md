@@ -4,6 +4,7 @@ slug: submit-javascala
 excerpt: Find out how to create a cluster and run your Apache Spark Java/Scala job with Data Processing platform using the OVHcloud Control Panel
 section: Getting started
 order: 0
+updated: 2020-05-04
 ---
 
 **Last updated 04<sup>th</sup> May, 2020**

@@ -3,6 +3,7 @@ title: Known limits
 excerpt: 'Requirements and limits to respect'
 slug: known-limits
 section: Technical resources
+updated: 2022-12-15
 ---
 
 

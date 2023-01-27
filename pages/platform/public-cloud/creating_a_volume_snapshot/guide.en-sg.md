@@ -4,6 +4,7 @@ slug: creating-volume-snapshot
 excerpt: 'Find out how to create a snapshot of a Public Cloud additional disk'
 section: Storage
 order: 2
+updated: 2023-01-09
 ---
 
 **Last updated 9th January 2023** 

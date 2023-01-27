@@ -4,6 +4,7 @@ excerpt: Zmiana klucza SSH w przypadku utraty
 slug: zmiana_klucza_ssh_w_przypadku_utraty
 legacy_guide_number: g2069
 section: Tutoriale
+updated: 2022-02-10
 ---
 
 > [!primary]

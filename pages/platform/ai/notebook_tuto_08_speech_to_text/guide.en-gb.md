@@ -4,6 +4,7 @@ slug: notebooks/tuto-speech-to-text-recognition
 excerpt: How to convert Speech to Text using AI Notebooks
 section: AI Notebooks - Tutorials
 order: 08
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

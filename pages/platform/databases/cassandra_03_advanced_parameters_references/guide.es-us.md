@@ -6,6 +6,7 @@ section: Cassandra - Guides
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/cassandra/advanced-parameters-references/'
+updated: 2022-12-28
 ---
 
 <style>

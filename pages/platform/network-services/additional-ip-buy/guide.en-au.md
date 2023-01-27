@@ -4,6 +4,7 @@ slug: buy-additional-ip
 excerpt: "Find out how to order Additional IP addresses for your instances"
 section: Additional IP
 order: 02
+updated: 2023-01-04
 ---
 
 **Last updated 4th January 2023**

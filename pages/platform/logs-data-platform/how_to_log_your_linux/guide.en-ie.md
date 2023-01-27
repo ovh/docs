@@ -3,6 +3,7 @@ title: How to log your Linux with syslog-ng 3.8+
 slug: how-to-log-your-linux
 order: 02
 section: Use cases
+updated: 2020-07-27
 ---
 
 **Last updated 27th July, 2020**

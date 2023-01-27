@@ -4,6 +4,7 @@ slug: gerir-instancias-public-cloud
 excerpt: Saiba como gerir as suas instâncias através da interface Horizon
 section: Gestão a partir do Horizon
 order: 04
+updated: 2022-01-25
 ---
 
 > [!primary]

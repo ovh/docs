@@ -6,6 +6,7 @@ section: AI Deploy - Tutoriels
 order: 08
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/'
+updated: 2022-11-29
 ---
 
 **Last updated 29th November, 2022.**

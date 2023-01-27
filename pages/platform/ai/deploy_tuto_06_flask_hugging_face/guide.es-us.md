@@ -6,6 +6,7 @@ section: AI Deploy - Tutorials
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/'
+updated: 2022-11-03
 ---
 
 **Last updated 3rd November, 2022.**

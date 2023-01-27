@@ -4,6 +4,7 @@ slug: configuring-kubectl
 excerpt: Find out how to retrieve the `kubectl` configuration file to interact with an OVHcloud Managed Kubernetes cluster.
 section: User guides
 order: 0
+updated: 2022-04-27
 ---
 
 **Last updated 27<sup>th</sup> April, 2022.**

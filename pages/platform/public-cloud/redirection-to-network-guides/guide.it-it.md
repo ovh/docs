@@ -4,6 +4,7 @@ slug: public-cloud-network-services-redirection
 excerpt: Tutte le nostre guide sulla rete Public Cloud
 section: 'Rete'
 order: 00
+updated: 2022-11-02
 ---
 
 **Ultimo aggiornamento: 02/11/2022**

@@ -4,6 +4,7 @@ slug: training/add-private-registry
 excerpt: Learn how to add your own registry to AI Training via UI
 section: AI Training - Guides
 order: 05
+updated: 2021-04-20
 ---
 
 **Last updated 20th April, 2021.**

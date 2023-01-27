@@ -6,6 +6,7 @@ section: AI Deploy - Tutorials
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/web-service-yolov5/'
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023.**

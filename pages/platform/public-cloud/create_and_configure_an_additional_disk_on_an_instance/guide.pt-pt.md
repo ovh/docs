@@ -5,6 +5,7 @@ slug: criar_e_configurar_um_disco_suplementar_numa_instancia
 legacy_guide_number: g1863
 section: Armazenamento
 order: 1
+updated: 2023-01-04
 ---
 
 > [!primary]

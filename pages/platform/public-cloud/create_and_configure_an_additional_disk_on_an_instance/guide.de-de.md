@@ -5,6 +5,7 @@ excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrer Public Cl
 legacy_guide_number: 1863
 section: 'Storage'
 order: 1
+updated: 2023-01-04
 ---
 
 > [!primary]

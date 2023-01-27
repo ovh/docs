@@ -3,6 +3,7 @@ title: Dateisystem auf FreeBSD 12 anpassen
 slug: freebsd-12-datei-skalieren
 excerpt: Erfahren Sie hier, wie Sie das Dateisystem einer Public Cloud Instanz oder eines VPS unter FreeBSD 12 anpassen
 section: Tutorials
+updated: 2020-10-27
 ---
 
 **Letzte Aktualisierung am 27.10.2020**

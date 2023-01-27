@@ -4,6 +4,7 @@ slug: desplegar-una-instancia-gpu
 excerpt: 'Cómo desplegar una instancia GPU en Linux o Windows'
 section: 'Gestión de las instancias desde el área de cliente'
 order: 06
+updated: 2019-12-06
 ---
 
 **Última actualización: 6/12/2019**

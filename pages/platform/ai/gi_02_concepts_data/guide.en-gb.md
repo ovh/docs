@@ -4,6 +4,7 @@ slug: data
 excerpt: Learn the concept behind AI Tools data
 section: General information
 order: 105
+updated: 2022-04-11
 ---
 
 **Last updated 11th April 2022**

@@ -6,6 +6,7 @@ section: AI Deploy - Tutorials
 order: 07
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-eda-iris/'
+updated: 2022-11-03
 ---
 
 **Last updated 3rd November, 2022.**

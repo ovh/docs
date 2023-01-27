@@ -3,6 +3,7 @@ title: Customizing CoreDNS on an OVHcloud Managed Kubernetes cluster
 slug: customizing-coredns
 excerpt: 'Find out how to customize CoreDNS on an OVHcloud Managed Kubernetes cluster'
 section: User guides
+updated: 2022-10-11
 ---
 
 <style>

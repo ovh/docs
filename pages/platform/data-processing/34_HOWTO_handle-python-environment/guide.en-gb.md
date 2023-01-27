@@ -4,6 +4,7 @@ slug: generate-environment
 excerpt: Find out how to create your Python environment and export it as an environment file.
 section: How to
 order: 4
+updated: 2020-05-04
 ---
 
 **Last updated 04<sup>th</sup> May, 2020**

@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak utworzyć lub przywrócić kopię zapasową instancj
 slug: tworzenie_przywracanie_serwera_wirtualnego_na_podstawie_kopii_zapasowej
 legacy_guide_number: g1882
 section: 'Zarządzanie w Panelu klienta OVH'
+updated: 2021-03-19
 ---
 
 > [!primary]

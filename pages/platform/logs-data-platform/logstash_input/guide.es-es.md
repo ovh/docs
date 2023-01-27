@@ -5,6 +5,7 @@ order: 1
 section: Features
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/logstash-input/'
+updated: 2021-07-30
 ---
 
 **Last updated 30th July, 2021**

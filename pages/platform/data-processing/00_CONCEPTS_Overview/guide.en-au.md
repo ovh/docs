@@ -4,6 +4,7 @@ slug: overview
 excerpt: Introduction to OVHcloud Data Processing Platform
 section: Concepts
 order: 0
+updated: 2020-03-06
 ---
 
 **Last updated 06<sup>th</sup> March, 2020**

@@ -3,6 +3,7 @@ title: 'Przeniesienie kopii zapasowej instancji do innego centrum danych'
 excerpt: 'Dowiedz się, jak przenieść instancję zachowując jej stan i konfigurację'
 slug: przenoszenie_kopii_zapasowych_pomiedzy_centrami_danych
 section: 'Z poziomu wiersza poleceń '
+updated: 2019-03-29
 ---
 
 **Ostatnia aktualizacja z dnia 01-07-2019**

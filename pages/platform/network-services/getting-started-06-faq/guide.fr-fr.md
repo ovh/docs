@@ -4,6 +4,7 @@ slug: faq
 excerpt: Foire aux questions sur les services réseau Public Cloud
 section: Premiers pas
 order: 03
+updated: 2022-11-02
 ---
 
 **Dernière mise à jour le 02/11/2022**

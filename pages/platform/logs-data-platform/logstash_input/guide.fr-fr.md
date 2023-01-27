@@ -3,6 +3,7 @@ title: All you have to know about the Logstash Collector on Logs Data Platform!
 slug: logstash-input
 order: 1
 section: Features
+updated: 2021-07-30
 ---
 
 **Last updated 30th July, 2021**

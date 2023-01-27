@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak zarządzać dostępem do instancji i zabezpieczyć do
 slug: access_and_security_in_horizon
 section: Zarządzanie w interfejsie Horizon
 order: 4
+updated: 2021-05-26
 ---
 
 > [!primary]

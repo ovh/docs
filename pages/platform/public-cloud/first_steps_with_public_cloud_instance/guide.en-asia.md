@@ -4,6 +4,7 @@ slug: get-started-with-a-public-cloud-instance
 excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
 section: Getting started
 order: 05
+updated: 2023-01-04
 ---
 
 **Last updated 4th January 2023**

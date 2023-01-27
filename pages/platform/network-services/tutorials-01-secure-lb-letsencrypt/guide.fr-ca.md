@@ -4,6 +4,7 @@ slug: load-balancer-with-letsencrypt
 excerpt: "Découvrez comment configurer un Load Balancer Public Cloud sécurisé avec Let's Encrypt"
 section: Tutoriels
 order: 01
+updated: 2022-11-02
 ---
 
 **Dernière mise à jour le 02/11/2022**

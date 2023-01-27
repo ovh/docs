@@ -4,6 +4,7 @@ excerpt: Find out how to set up your managed database service in the OVHcloud Co
 slug: getting-started
 section: General guides
 order: 010
+updated: 2022-07-27
 ---
 
 **Last updated 27th July 2022**

@@ -4,6 +4,7 @@ excerpt: Descubra as principais secções da interface Horizon
 slug: horizon
 section: Gestão a partir do Horizon
 order: 01
+updated: 2022-03-16
 ---
 
 > [!primary]

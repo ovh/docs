@@ -4,6 +4,7 @@ slug: changer-sa-cle-ssh-en-cas-de-perte
 legacy_guide_number: 2069
 section: "Gestion depuis l'espace client"
 order: 05
+updated: 2022-02-10
 ---
 
 **Dernière mise à jour le 10/02/2022**

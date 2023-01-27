@@ -4,6 +4,7 @@ slug: kopia_zapasowa_instancji
 excerpt: 'Dowiedz się, jak utworzyć kopię zapasową instancji Public Cloud w Panelu klienta OVHcloud'
 section: 'Zarządzanie w Panelu klienta OVH'
 order: 1
+updated: 2023-01-04
 ---
 
 > [!primary]

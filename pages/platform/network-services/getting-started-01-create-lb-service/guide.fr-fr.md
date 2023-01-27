@@ -4,6 +4,7 @@ slug: getting-started-with-load-balancer-public-cloud
 excerpt: Découvrez comment débuter avec un Load Balancer Public Cloud
 section: Premiers pas
 order: 01
+updated: 2022-11-02
 ---
 
 **Dernière mise à jour le 02/11/2022**

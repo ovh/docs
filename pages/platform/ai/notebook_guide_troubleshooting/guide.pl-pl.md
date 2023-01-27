@@ -6,6 +6,7 @@ section: AI Notebooks - Guides
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/debug-notebooks/'
+updated: 2022-04-14
 ---
 
 **Last updated 14th April, 2022.**

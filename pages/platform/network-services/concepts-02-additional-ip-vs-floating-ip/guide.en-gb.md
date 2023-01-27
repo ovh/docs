@@ -4,6 +4,7 @@ slug: additional-ip-vs-floating-ip
 excerpt: Find out how to use public IP addresses in the scope of Public Cloud Networking
 section: Concepts
 order: 02
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

@@ -5,6 +5,7 @@ slug: increase-public-cloud-quota
 legacy_guide_number: g1904
 section: 'Zarządzanie projektami'
 order: 6
+updated: 2021-10-18
 ---
 
 > [!primary]

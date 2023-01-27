@@ -5,6 +5,7 @@ excerpt: 'Find out how to install Agones on OVHcloud Managed Kubernetes'
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-agones/'
+updated: 2022-12-09
 ---
 
 <style>

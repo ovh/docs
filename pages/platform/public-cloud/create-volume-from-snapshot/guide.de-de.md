@@ -4,6 +4,7 @@ slug: create-volume-from-backup
 excerpt: Erfahren Sie hier, wie Sie zusätzliche Festplatten aus einem Volume Snapshot erzeugen
 section: Storage
 order: 4
+updated: 2021-04-06
 ---
 
 > [!primary]

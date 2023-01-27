@@ -4,6 +4,7 @@ slug: configure-additional-ip
 excerpt: Come aggiungere indirizzi Additional IP alla configurazione della tua istanza
 section: Additional IP
 order: 01
+updated: 2023-01-04
 ---
 
 > [!primary]

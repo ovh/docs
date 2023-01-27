@@ -4,6 +4,7 @@ excerpt: Die Geschwindigkeit der Festplatten testen
 slug: die_geschwindigkeit_der_festplatten_testen
 section: 'Storage'
 legacy_guide_number: g1956
+updated: 2022-01-04
 ---
 
 > [!primary]

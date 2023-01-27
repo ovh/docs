@@ -5,6 +5,7 @@ excerpt: 'Find out how to set your environment variables to use the OpenStack AP
 legacy_guide_number: 1852
 section: OpenStack
 order: 2
+updated: 2021-08-18
 ---
 
 **Last updated 18th August 2021**

@@ -6,6 +6,7 @@ section: Kafka Connect - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafkaconnect/advanced-parameters-references/'
+updated: 2022-12-28
 ---
 
 <style>

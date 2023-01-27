@@ -4,6 +4,7 @@ excerpt: Lifecycle policy for Public Cloud Databases engines
 slug: lifecycle-policy
 section: General information
 order: 020
+updated: 2021-09-15
 ---
 
 **Last updated September 15th, 2021**

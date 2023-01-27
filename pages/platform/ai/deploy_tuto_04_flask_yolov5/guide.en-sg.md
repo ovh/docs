@@ -4,6 +4,7 @@ slug: deploy/web-service-yolov5
 excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask
 section: AI Deploy - Tutorials
 order: 04
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023.**

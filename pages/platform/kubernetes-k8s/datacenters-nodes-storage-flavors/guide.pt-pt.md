@@ -5,6 +5,7 @@ slug: datacenters-nodes-storage-flavors
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/datacenters-nodes-storage-flavors/'
+updated: 2022-02-16
 ---
 
 **Last updated February 16th, 2022.**

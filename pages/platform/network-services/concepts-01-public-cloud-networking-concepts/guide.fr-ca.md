@@ -4,6 +4,7 @@ slug: networking-concepts
 excerpt: "Découvrez quels sont les concepts de base du Public Cloud Networking"
 section: Concepts
 order: 01
+updated: 2022-11-02
 ---
 
 **Dernière mise à jour le 02/11/2022**

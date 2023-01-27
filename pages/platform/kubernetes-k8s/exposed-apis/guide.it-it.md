@@ -5,6 +5,7 @@ slug: exposed-apis-feature-gates
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/exposed-apis-feature-gates/'
+updated: 2022-05-30
 ---
 
 **Last updated May 30<sup>th</sup>, 2022.**

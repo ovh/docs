@@ -4,6 +4,7 @@ slug: apache-logs
 order: 03
 excerpt: Get to know what is happening on your websites in real time.
 section: Use cases
+updated: 2020-07-27
 ---
 
 **Last updated 27th July, 2020**

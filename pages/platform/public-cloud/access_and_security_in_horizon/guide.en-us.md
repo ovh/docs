@@ -5,6 +5,7 @@ slug: access_and_security_in_horizon
 legacy_guide_number: g1774
 section: Horizon
 order: 07
+updated: 2021-05-26
 ---
 
 **Last updated 26th May 2021**

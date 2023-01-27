@@ -3,6 +3,7 @@ title: Revertierung einer Flex-Instanz
 slug: revertieren-einer-flex-instanz
 excerpt: Erfahren Sie hier, wie Sie eine Flex-Instanz über OpenStack Horizon zurücksetzen können
 section: Horizon
+updated: 2021-11-15
 ---
 
 > [!primary]

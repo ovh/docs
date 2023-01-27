@@ -4,6 +4,7 @@ slug: public-cloud-erste-schritte
 excerpt: 'So starten Sie nach der Erstellung eines Projekts mit der Verwendung Ihres Public Cloud Dienstes'
 section: 'Erste Schritte'
 order: 1
+updated: 2022-11-17
 ---
 
 **Letzte Aktualisierung am 17.11.2022**

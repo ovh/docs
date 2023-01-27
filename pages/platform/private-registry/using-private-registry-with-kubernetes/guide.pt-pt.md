@@ -6,6 +6,7 @@ section: 'Tutorials'
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/using-private-registry-with-kubernetes/'
+updated: 2022-04-13
 ---
 
 **Last updated 13th April, 2022.**

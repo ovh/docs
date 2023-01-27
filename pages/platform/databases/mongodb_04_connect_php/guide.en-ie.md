@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for MongoDB using the PHP progra
 slug: mongodb/connect-php
 section: MongoDB - Guides
 order: 040
+updated: 2022-07-27
 ---
 
 **Last updated 27<sup>th</sup> July 2022**

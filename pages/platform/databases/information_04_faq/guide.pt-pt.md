@@ -5,6 +5,7 @@ section: General information
 order: 040
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/faq/'
+updated: 2021-08-25
 ---
 
 **Last updated August 25<sup>th</sup>, 2021**

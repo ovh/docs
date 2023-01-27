@@ -4,6 +4,7 @@ slug: prepare_the_environment_for_using_the_openstack_api
 excerpt: 'Installieren Sie die OpenStack-Umgebung, um Ihre Instanzen über die API zu verwalten.'
 legacy_guide_number: 1851
 section: 'OpenStack'
+updated: 2022-03-30
 ---
 
 **Letzte Aktualisierung am 22.12.2021**

@@ -6,6 +6,7 @@ section: Security
 order: 3
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-trivy/'
+updated: 2022-06-01
 ---
 
 **Last updated 1st June 2022**

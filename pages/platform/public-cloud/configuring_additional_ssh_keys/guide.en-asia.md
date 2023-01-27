@@ -4,6 +4,7 @@ slug: configuring_additional_ssh_keys
 excerpt: 'Find out how to configure additional SSH keys for your Public Cloud instance'
 section: Tutorials
 order: 01
+updated: 2022-02-04
 ---
 
 **Last updated 4th February 2022**

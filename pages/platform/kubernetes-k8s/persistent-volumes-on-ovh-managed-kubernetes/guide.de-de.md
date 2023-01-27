@@ -5,6 +5,7 @@ excerpt: 'Find out how to setup and manage Persistent Volumes on OVHcloud Manage
 section: Getting started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/ovh-kubernetes-persistent-volumes/'
+updated: 2022-10-17
 ---
 
 <style>

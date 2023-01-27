@@ -5,6 +5,7 @@ slug: kubernetes-plugins-software-versions-reserved-resources
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/kubernetes-plugins-software-versions-reserved-resources/'
+updated: 2022-12-21
 ---
 
 **Last updated December 21<sup>st</sup>, 2022.**

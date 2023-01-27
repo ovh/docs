@@ -3,6 +3,7 @@ title: 'Napraw bootloader GRUB'
 slug: napraw-bootloader-grub
 excerpt: 'Przewodnik naprawy bootloader GRUB na instancji'
 section: Tutoriale
+updated: 2020-11-23
 ---
 
 **Ostatnia aktualizacja z dnia 22-11-2020**

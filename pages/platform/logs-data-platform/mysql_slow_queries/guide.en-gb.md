@@ -4,6 +4,7 @@ slug: mysql-slow-queries
 order: 04
 excerpt: Keep your MySQL database at high speed with Logs Data Platform!
 section: Use cases
+updated: 2019-04-11
 ---
 
 **Last updated 11th April, 2019**

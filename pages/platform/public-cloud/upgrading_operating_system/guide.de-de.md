@@ -3,6 +3,7 @@ title: "Betriebssystem aktualisieren"
 slug: upgrade-os
 excerpt: 'Erfahren Sie hier, wie Sie ein End-of-Life-Betriebssystem aktualisieren'
 section: 'Tutorials'
+updated: 2022-02-07
 ---
 
 > [!primary]

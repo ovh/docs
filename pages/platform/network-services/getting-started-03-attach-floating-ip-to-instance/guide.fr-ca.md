@@ -4,6 +4,7 @@ excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la
 slug: attaching-pci-floating-ip-to-instance
 section: Premiers pas
 order: 02
+updated: 2022-11-14
 ---
 
 **Dernière mise à jour le 14/11/2022**

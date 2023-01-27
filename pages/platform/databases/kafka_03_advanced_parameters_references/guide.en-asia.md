@@ -4,6 +4,7 @@ slug: kafka/advanced-parameters-references
 excerpt:
 section: Kafka - Guides
 order: 030
+updated: 2022-12-28
 ---
 
 <style>

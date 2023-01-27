@@ -4,6 +4,7 @@ slug: erste_schritte_mit_ihrer_public_cloud_instanz_horizon
 excerpt: "Erfahren Sie hier, wie Sie Ihre Instanzen über das Horizon-Interface verwalten"
 section: Horizon
 order: 04
+updated: 2022-01-25
 ---
 
 > [!primary]

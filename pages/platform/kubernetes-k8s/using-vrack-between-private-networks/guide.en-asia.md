@@ -4,6 +4,7 @@ slug: using-vrack-between-private-networks
 excerpt: ''
 section: Network
 order: 01
+updated: 2022-07-25
 ---
 
 **Last updated July 25th, 2022.**
