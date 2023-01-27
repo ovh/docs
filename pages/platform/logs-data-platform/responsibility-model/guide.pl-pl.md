@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/responsibility-model/'
 ---
 
-**Last updated July 28th, 2022**
+**Last updated January 26th, 2023**
 
 The Logs Data Platform is an interface for collecting, indexing and analyzing logs. Wherever your logs come from, you can use the platform to choose different entry points depending on the protocol, security level and format. You can analyze and use data with a variety of different APIs and web interfaces.
 
@@ -20,7 +20,7 @@ This shared model can help relieve the customer’s operational burden.
 | Roles |
 | --- |
 | R: Is in charge of carrying out the process |
-| A: Guarantees the successful completion of the process |
+| A: Accountable for the successful completion of the process |
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
@@ -43,6 +43,7 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Install, configure, and deliver functional components of the service | I | RA |
+| Setup audit trails as stream on dedicated clusters (enterprise) | I | RA |
 | Produce, route, deliver and maintain physical machines, virtual machines and hosting buildings |  | RA |
 
 #### 2.2. Reversibility model
@@ -69,13 +70,14 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Ensure network accessibility of the Platform |  | RA |
+| Manage network accessibility of the Platform |  | RA |
 | Decide to add/delete resources to the existing service |  | RA |
 | Manage confidentiality, integrity of data hosted on the service | RA |  |
 | Manage risks of the log forwarder agent | RA |  |
 | Manage backups on the service (logs and dashboards) | RA |  |
 | Manage backups on service management infrastructure |  | RA |
 | Adapt log forwarder agent configuration following IS evolution | RA |  |
+| Decide to observe audit trails available in audit stream (enterprise) | RA |  |
 
 ##### **3.1.2. Access management**
 
@@ -103,7 +105,7 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Keep the content sent to Logs Data Platform adequate, relevant and appropriate | RA |  |
-| Ensure data immutability | I | RA |
+| Manage data immutability | I | RA |
 | Perform storage device maintenance |  | RA |
 | Create, modify, control, restore, delete internal backup jobs on management infrastructure | I | RA |
 
