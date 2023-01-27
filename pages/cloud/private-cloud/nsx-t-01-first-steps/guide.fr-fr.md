@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Dernière mise à jour le 07/12/2022**
+**Dernière mise à jour le 27/01/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -15,7 +15,7 @@ order: 01
 
 ## Objectif
 
-**Ce guide est une introduction à NSX-T**
+**Ce guide est une introduction à NSX-T dans un cluster Hosted Private Cloud by VMware**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -27,7 +27,7 @@ NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networ
 
 Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfiguration est appliqué avec deux passerelles :
 
-- **Tier-0 Gateway**: For connections outside the cluster, this is called north-south traffic.
+- **Tier-0 Gateway**: Pour les connexions entre le cluster VMware et en dehors.
 - **Tier-1 Gateway** : Pour les connexions intra-cluster (segments) qui dans ce cas est trafic est-ouest.
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.

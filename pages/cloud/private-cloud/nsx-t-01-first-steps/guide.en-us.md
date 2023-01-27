@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Last updated 07th December 2022**
+**Last updated 27th January 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -27,7 +27,7 @@ NSX-T is a Software-Defined Networking (SDN)** solution provided by VMware. OVHc
 
 When a customer subscribes to the NSX-T offer and is enabled, a preset is applied with two gateways :
 
-- **Tier-0 Gateway** : For connections between the VMware cluster and the Internet.
+- **Tier-0 Gateway** : For connections between and outside the VMware cluster.
 - **Tier-1 Gateway**: For intra-cluster connections (segments) that in this case is east-west traffic.
 
 The two gateways are interconnected to allow internal networks to communicate outside the cluster.
