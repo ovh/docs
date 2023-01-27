@@ -1,7 +1,7 @@
 ---
-title: `Delete an email account`
+title: Delete an email account
 slug: delete-email-account
-excerpt: `Find out how to delete or reset an email address on your email solution`
+excerpt: Find out how to delete or reset an email address on your email solution
 section: 'Email address features'
 order: 02
 ---

@@ -2,7 +2,7 @@
 title: "E-Mail Account löschen"
 slug: delete-email_account
 excerpt: "Hier erfahren Sie, wie Sie eine E-Mail-Adresse auf Ihrem E-Mail-Angebot löschen oder zurücksetzen."
-section: ‚E-Mail Account Funktionen‘
+section: 'E-Mail Account Funktionen'
 order: 02
 ---
 

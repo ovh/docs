@@ -1,8 +1,8 @@
 ---
 title: "Eliminar una cuenta de correo"
 slug: delete-email-account
-excerpt: Cómo eliminar o restaurar una dirección de correo electrónico en un servicio de correo
-section: 'Funcionalidades del correo electrónico'
+excerpt: "Cómo eliminar o restaurar una dirección de correo electrónico en un servicio de correo"
+section: 'Gestión de la cuenta de correo'
 order: 02
 ---
 

@@ -2,7 +2,7 @@
 title: "Elimina un account email"
 slug: delete-email-account
 excerpt: Come eliminare o reimpostare un indirizzo email sul servizio di posta
-section: Funzionalità degli indirizzi email
+section: 'Funzionalità degli indirizzi email'
 order: 02
 ---
 

@@ -2,7 +2,7 @@
 title: "Usuń konto e-mail"
 slug: delete-email-account
 excerpt: "Dowiedz się, jak usunąć lub zresetować konto e-mail w Twojej usłudze e-mail"
-section: 'Funkcje adresów e-mail'
+section: 'Funkcjonalności kont e-mail'
 order: 02
 ---
 
