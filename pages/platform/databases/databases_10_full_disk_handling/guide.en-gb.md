@@ -4,6 +4,7 @@ slug: handling-disk-full
 excerpt: Find out how to avoid, analyse and fix a Public Cloud Databases service reaching its full disk capacity
 section: General guides
 order: 100
+updated: 2023-01-23
 ---
 
 **Last updated January 23rd, 2023**
@@ -54,7 +55,7 @@ It may be that you reached the full disk situation because of a runaway applicat
 
 ##### **Kafka**, **OpenSearch**, **M3DB**
 
-You can reclaim disk space by deleting a `Kafka` topic, an `OpenSearch` index or an `M3DB` namespace. 
+You can reclaim disk space by deleting a `Kafka` topic, an `OpenSearch` index or an `M3DB` namespace.
 
 ##### **MongoDB**
 
@@ -67,7 +68,7 @@ For these engines, call the respective API endpoint to temporarily allow write o
 > [!tabs]
 > PostgreSQL
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/postgresql/{clusterId}/enableWrites 
+>> > @api {POST} /cloud/project/{serviceName}/database/postgresql/{clusterId}/enableWrites
 > MySQL
 >> > [!api]
 >> > @api {POST} /cloud/project/{serviceName}/database/mysql/{clusterId}/enableWrites
