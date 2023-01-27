@@ -1,5 +1,5 @@
 ---
-title: Gestion des situations « Disque plein » (EN)
+title: Gestion des situations de «Full Disk» (EN)
 slug: handling-disk-full
 excerpt: Découvrez comment éviter, analyser et réparer un service Public Cloud Databases atteignant sa pleine capacité de disque
 section: Guides généraux
