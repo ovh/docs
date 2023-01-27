@@ -40,7 +40,7 @@ Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Exi
 
 Quando surgir a lista dos backups, clique no botão `...`{.action} à direita do backup escolhido e em `Restaurar o backup`{.action}.
 
-![Web Cloud Databases](images/private-sql-restore01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-restore01.png){.thumbnail}
 
 > [!warning]
 >
@@ -51,7 +51,7 @@ Quando surgir a lista dos backups, clique no botão `...`{.action} à direita do
 
 Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Importar um ficheiro`{.action}.
 
-![Web Cloud Databases](images/private-sql-import01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-import01.png){.thumbnail}
 
 ***Tem duas possibilidades ao seu dispor:***
 
@@ -66,7 +66,7 @@ Introduza um nome para o ficheiro importado. Clique em `Percorrer`{.action} para
 > O ficheiro deve estar no formato ".sql", ".txt" ou ".gz".
 > 
 
-![Web Cloud Databases](images/private-sql-import02.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-import02.png){.thumbnail}
 
 Se desejar, selecione as opções **«Limpar a base de dados atual»** antes da importação e **«Enviar um e-mail no fim da importação** para ser informado da conclusão da operação no endereço de e-mail de referência da sua conta OVHcloud. Por fim, clique em `Validar`{.action}.
 
@@ -76,7 +76,7 @@ Se já importou um ficheiro anteriormente, poderá escolher a opção **«Import
 
 Selecione o ficheiro no menu suspenso e clique em `Seguinte`{.action}.
 
-![Web Cloud Databases](images/private-sql-import03.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-import03.png){.thumbnail}
 
 Se desejar, selecione as opções **«Limpar a base de dados atual»** antes da importação e **«Enviar um e-mail no fim da importação** para ser informado da conclusão da operação no endereço de e-mail de referência da sua conta OVHcloud. Por fim, clique em `Validar`{.action}.
 
@@ -102,7 +102,7 @@ Selecione o ficheiro de backup clicando em `Percorrer`{.action} (atenção: o fi
 
 Deixe as opções predefinidas e clique em `Executar`{.action} para lançar a importação.
 
-![Web Cloud Databases](images/private-sql-import04.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
 
 #### Importar uma base MySQL ou MariaDB a partir da linha de comandos
 
