@@ -77,8 +77,6 @@ Left-click on `Network Topology`{.action}.
 
 A network topology diagram is available with two public IP addresses connected to the **ovh-T0-gateway** and the connection to the **ovh-T1-gateway**.
 
-Inside initial configuration, there is no link between your VMware infrastructure and the internet.
-
 ![03 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
