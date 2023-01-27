@@ -4,6 +4,7 @@ excerpt: "Découvrez comment résilier un service Additional IP via les API OVHc
 slug: cancel-additional-ip
 section: Additional IP
 order: 01
+updated: 2022-12-22
 ---
 
 **Dernière mise à jour le 22/12/2022**

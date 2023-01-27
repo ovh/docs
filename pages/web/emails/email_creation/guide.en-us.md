@@ -4,6 +4,7 @@ slug: hosted_email_how_to_set_up_an_email_address
 excerpt: 'Find out how to create an email address with an MX Plan solution'
 section: 'Getting started'
 order: 02
+updated: 2022-10-11
 ---
 
 **Last updated 11th October 2022**

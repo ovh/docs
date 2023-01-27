@@ -4,6 +4,7 @@ slug: activate-licence-on-nutanix-byol
 excerpt: "Comment ajouter et enlever des licences dans un cluster Nutanix avec l'offre BYOL"
 section: Premiers pas
 order: 12
+updated: 2022-11-16
 ---
 
 **Dernière mise à jour le 16/11/2022**

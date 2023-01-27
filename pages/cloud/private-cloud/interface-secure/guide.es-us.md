@@ -4,6 +4,7 @@ slug: interfaz-segura
 excerpt: Cómo utilizar la interfaz segura en infraestructuras HDS o PCI-DSS
 section: Servicios y opciones de OVHcloud
 order: 04
+updated: 2022-10-12
 ---
 
 **Última actualización: 12/10/2022**

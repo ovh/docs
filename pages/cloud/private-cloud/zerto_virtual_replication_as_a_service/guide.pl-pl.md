@@ -3,6 +3,7 @@ title: Korzystanie z Replikacji Zerto Virtual między dwoma centrami danych OVHc
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie awaryjnym w dwóch ofertach Private Cloud
 section: Usługi i opcje OVHcloud
+updated: 2022-02-11
 ---
 
 > [!primary]

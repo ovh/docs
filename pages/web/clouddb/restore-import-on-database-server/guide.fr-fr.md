@@ -4,6 +4,7 @@ slug: restaurer-importer-base-de-donnees
 excerpt: 'Découvrez comment restaurer et importer votre base de données'
 section: 'Configuration'
 order: 05
+updated: 2022-06-29
 ---
 
 **Dernière mise à jour le 29/06/2022**

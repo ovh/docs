@@ -4,6 +4,7 @@ excerpt: Find out how to manage your Web PaaS solution in the OVHcloud Control P
 slug: web-paas-managing-service
 section: Getting started
 order: 2
+updated: 2021-05-28
 ---
 
 **Last updated 28th May 2021**

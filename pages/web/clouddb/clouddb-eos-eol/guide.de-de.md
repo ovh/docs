@@ -2,6 +2,7 @@
 title: CloudDB - EOL und EOS Ankündigungen
 slug: clouddb-eos-eol
 section: 'Technische Ressourcen'
+updated: 2022-07-21
 ---
 
 > [!primary]

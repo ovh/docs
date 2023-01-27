@@ -6,6 +6,7 @@ routes:
 excerpt: Descubra as possibilidades da sua Área de Cliente Managed Bare Metal
 section: Introdução
 order: 1
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

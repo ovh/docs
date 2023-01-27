@@ -4,6 +4,7 @@ slug: exchange_20132016_pierwsza_konfiguracja_uslugi
 excerpt: 'Rozpocznij pracę z usługą Hosted Exchange'
 section: 'Pierwsze kroki z Exchange'
 order: 01
+updated: 2018-01-19
 ---
 
 **Ostatnia aktualizacja dnia 2018-01-19**

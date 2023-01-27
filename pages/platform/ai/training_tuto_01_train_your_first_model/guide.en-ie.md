@@ -4,6 +4,7 @@ slug: training/tuto-train-first-ml-model
 excerpt: How to train your first machine learning model in AI Training
 section: AI Training - Tutorials
 order: 01	
+updated: 2023-01-26
 ---
 
 **Last updated 26th January, 2023.**

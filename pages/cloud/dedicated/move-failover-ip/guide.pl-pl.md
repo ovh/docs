@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak przenieść Additional IP z Panelu klienta lub poprze
 slug: ip-fo-move
 section: Sieć & IP
 order: 7
+updated: 2022-12-20
 ---
 
 > [!primary]

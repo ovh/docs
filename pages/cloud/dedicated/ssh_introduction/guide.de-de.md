@@ -3,6 +3,7 @@ title: Einführung in SSH
 slug: ssh-einfuehrung
 excerpt: Erfahren Sie hier, wie Sie SSH-Verbindungen verwenden, um auf Ihren Server zuzugreifen
 section: Erste Schritte
+updated: 2022-06-08
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre premièr
 slug: premiers-pas-instance-public-cloud
 section: 'Premiers pas'
 order: 04
+updated: 2022-11-17
 ---
 
 **Dernière mise à jour le 17/11/2022**

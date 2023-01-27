@@ -4,6 +4,7 @@ slug: install_composer_on_web_hosting_packages
 excerpt: Find out how to install and take your first steps with Composer
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 **Last updated 09th December 2022**

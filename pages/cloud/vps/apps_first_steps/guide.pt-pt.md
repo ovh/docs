@@ -4,6 +4,7 @@ slug: aplicacoes-pre-instaladas
 excerpt: Saiba como implementar aplicações pré-instaladas no seu VPS
 section: 'Primeiros passos'
 order: 4
+updated: 2022-08-25
 ---
 
 **Última atualização: 25/08/2022**

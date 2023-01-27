@@ -4,6 +4,7 @@ slug: managing-users
 excerpt: 'Find out how to manage users via your OVHcloud account'
 section: 'Advanced use'
 order: 01
+updated: 2020-05-20
 ---
 
 **Last updated 20th May 2020**

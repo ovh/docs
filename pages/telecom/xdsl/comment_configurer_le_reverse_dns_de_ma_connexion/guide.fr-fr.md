@@ -5,6 +5,7 @@ legacy_guide_number: '7962659'
 space_key: CRXDSL
 space_name: XDSL
 section: Configuration de mon offre
+updated: 2022-06-02
 ---
 
 **Dernière mise à jour le 02/06/2022**

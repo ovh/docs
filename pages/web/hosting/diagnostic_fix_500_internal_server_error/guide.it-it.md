@@ -4,6 +4,7 @@ slug: errore-500-internal-server-error
 excerpt: Diagnostica i casi più comuni di errore 500
 section: Diagnostica
 order: 06
+updated: 2022-07-21
 ---
 
 > [!primary]

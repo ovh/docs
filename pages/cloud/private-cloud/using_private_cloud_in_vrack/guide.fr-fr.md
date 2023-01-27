@@ -5,6 +5,7 @@ excerpt: Découvrez comment utilisez le vRack avec votre offre Hosted Private Cl
 legacy_guide_number: '7766915'
 section: Services et options OVHcloud
 order: 02
+updated: 2022-03-28
 ---
 
 **Dernière mise à jour le 28/03/2022**

@@ -4,6 +4,7 @@ excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihren Exchange Account in An
 slug: exchange_20132016_konfiguration_in_android
 section: 'Konfiguration auf Smartphone/Tablet'
 order: 02
+updated: 2018-03-12
 ---
 
 **Stand 14.09.2018**

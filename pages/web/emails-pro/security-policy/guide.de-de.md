@@ -4,6 +4,7 @@ slug: manage-security-policy-password
 excerpt: 'Erfahren Sie hier, wie Sie die Sicherheitseinstellungen Ihres E-Mail-Dienstes verwalten'
 section: 'Erste Schritte'
 order: 8
+updated: 2022-04-22
 ---
 
 **Letzte Aktualisierung am 22.04.2022**

@@ -7,6 +7,7 @@ hidden: true
 excerpt: "Découvrez comment réaliser le transfert d'un nom de domaine en .pl vers OVHcloud"
 section: Transfert
 order: 09
+updated: 2022-10-19
 ---
 
 **Dernière mise à jour le 19/10/2022**

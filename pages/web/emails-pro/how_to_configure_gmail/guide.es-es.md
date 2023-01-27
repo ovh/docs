@@ -4,6 +4,7 @@ slug: configuration-gmail
 excerpt: 'Cómo configurar una cuenta Email Pro en la interfaz web de Gmail'
 section: 'Configuración del cliente de correo'
 order: 6
+updated: 2020-03-18
 ---
 
 **Última actualización: 19/03/2018**

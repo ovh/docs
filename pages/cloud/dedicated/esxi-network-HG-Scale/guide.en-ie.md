@@ -4,6 +4,7 @@ slug: esxi-network-hg-scale
 excerpt: 'Find out how to configure the network on VMware ESXi on the High Grade & SCALE ranges'
 section: 'Advanced use'
 order: 6
+updated: 2022-05-09
 ---
 
 **Last updated 9th May 2022**

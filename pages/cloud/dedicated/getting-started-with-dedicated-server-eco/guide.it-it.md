@@ -6,6 +6,7 @@ routes:
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise
 section: 'Per iniziare'
 order: 2
+updated: 2022-12-12
 ---
 
 > [!primary]

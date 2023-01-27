@@ -4,6 +4,7 @@ slug: exchange-korzystanie-z-kont-współdzielonych
 excerpt: Dodaj i użyj konta współdzielonego w Twojej usłudze E-mail Exchange
 section: Funkcje kont Exchange
 order: 06
+updated: 2021-06-15
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: Find out how to get your website back online if it displays an "Index o
 slug: diagnostic-index-of
 section:  Troubleshooting
 order: 07
+updated: 2022-05-10
 ---
 
 **Last updated 10th May 2022**

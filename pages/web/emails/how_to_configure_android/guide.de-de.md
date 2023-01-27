@@ -4,6 +4,7 @@ slug: konfiguration-android
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihre MX Plan Adresse in Android über die Gmail-App einrichten.'
 section: 'E-Mail Clients'
 order: 9
+updated: 2018-03-12
 ---
 
 **Stand 14.09.2018**

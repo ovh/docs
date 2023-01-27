@@ -4,6 +4,7 @@ excerpt: Dostęp do statystyk strony www
 slug: hosting_statystyki_i_logi_strony
 section: Optymalizacja strony WWW
 order: 04
+updated: 2021-01-05
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: hardware-gateway-replacement
 excerpt: "Comment remplacer votre passerelle intégrée à Nutanix par un serveur dédié pour augmenter la bande passante"
 section: Réseau et sécurité
 order: 10
+updated: 2022-12-05
 ---
 
 **Dernière mise à jour le 05/12/2022**

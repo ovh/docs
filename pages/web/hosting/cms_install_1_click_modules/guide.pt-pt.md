@@ -4,6 +4,7 @@ slug: partilhado_guias_dos_modulos_dos_alojamentos_partilhados
 excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVH
 section: CMS
 order: 01
+updated: 2023-01-26
 ---
 
 **Última atualização: 26/01/2023**

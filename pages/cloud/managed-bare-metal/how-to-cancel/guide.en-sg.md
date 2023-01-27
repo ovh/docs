@@ -6,6 +6,7 @@ routes:
 excerpt: Learn how to request the termination of a Managed Bare Metal infrastructure
 section: OVHcloud Features
 order: 09
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

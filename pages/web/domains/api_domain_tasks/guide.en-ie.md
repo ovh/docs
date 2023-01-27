@@ -4,6 +4,7 @@ slug: api-tasks
 excerpt: "How asynchronous tasks on domain names work"
 section: "Domains API"
 order: 04
+updated: 2022-05-05
 ---
 
 **Last updated 5th May 2022**

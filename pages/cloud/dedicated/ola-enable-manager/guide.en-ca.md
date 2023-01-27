@@ -4,6 +4,7 @@ slug: ola-manager
 excerpt: 'Find out how to enable OVHcloud Link Aggregation in the OVHcloud Control Panel'
 section: 'Advanced use'
 order: 1
+updated: 2022-05-18
 ---
 
 **Last updated 18th May 2022**

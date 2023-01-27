@@ -4,6 +4,7 @@ slug: utilisation-dynhost
 excerpt: 'Apprenez à paramétrer un enregistrement DNS dynamique (DynHost) pour votre nom de domaine OVHcloud'
 section: 'DNS et zone DNS'
 order: 06
+updated: 2018-07-19
 ---
 
 **Dernière mise à jour le 06/06/2018**

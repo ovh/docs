@@ -3,6 +3,7 @@ title: 'Recuperare il numero di serie di un hard disk'
 slug: recuperare-numero-di-serie-disco
 excerpt: 'Come conoscere il numero di serie di un disco per effettuarne la sostituzione'
 section: 'RAID e dischi'
+updated: 2018-08-21
 ---
 
 **Ultimo aggiornamento: 05/08/2019**

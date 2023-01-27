@@ -4,6 +4,7 @@ slug: update-sap-hana-sles
 excerpt: This guide provides you with general guidelines on how to update a SAP HANA server and client.
 section: Advanced usage
 order: 2
+updated: 2022-02-04
 ---
 
 **Last updated 4th February 2022**

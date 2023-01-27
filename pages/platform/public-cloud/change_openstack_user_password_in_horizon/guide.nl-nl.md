@@ -4,6 +4,7 @@ title: Wijziging van het wachtwoord van een OpenStack-gebruiker in Horizon
 excerpt: Leer hoe u een gebruikerswachtwoord in de Horizon-interface kunt wijzigen.
 slug: wijziging-wachtwoord-openstack-gebruiker
 section: Vanaf de Horizon-interface
+updated: 2018-03-07
 ---
 
 **Laatste update 08-03-2018**

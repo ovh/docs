@@ -4,6 +4,7 @@ slug: how_to_password_protect_a_directory_on_your_website
 excerpt: "Find out how to protect access to your website's administration with a .htaccess file"
 section: Rewriting and authentication
 order: 02
+updated: 2021-09-20
 ---
 
 **Last updated 20th September 2021**

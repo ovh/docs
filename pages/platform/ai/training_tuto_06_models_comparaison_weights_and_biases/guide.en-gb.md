@@ -4,6 +4,7 @@ slug: training/tuto-models-comparaison-weights-and-biases
 excerpt: Compare 2 models by running 2 jobs in parallel. See which one performs best on your data!
 section: AI Training - Tutorials
 order: 06
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

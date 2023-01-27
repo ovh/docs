@@ -6,6 +6,7 @@ routes:
 excerpt: This guide shows you how to manage your data with Cold Archive
 section: Spécificités de la classe de stockage Cold Archive
 order: 200
+updated: 2022-10-19
 ---
 
 **Last updated 19th October 2022**

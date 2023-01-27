@@ -4,6 +4,7 @@ title: 'Webmail: RoundCube Gebruikershandleiding'
 excerpt: ''
 slug: webmail_roundcube_gebruikershandleiding
 legacy_guide_number: g1302
+updated: 2022-05-31
 ---
 
 

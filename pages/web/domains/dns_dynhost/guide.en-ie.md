@@ -4,6 +4,7 @@ excerpt: 'Find out how to configure a dynamic DNS record (DynHost) for your OVHc
 slug: hosting_dynhost
 section: 'DNS and DNS Zone'
 order: 06
+updated: 2018-07-19
 ---
 
 **Last updated 16th August 2018**

@@ -4,6 +4,7 @@ slug: web_hosting_transferencia_de_un_dominio_couk
 excerpt: 'En esta guía encontrará información relativa a la transferencia de un dominio .uk o asociado a OVHcloud'
 section: Operaciones en los dominios
 order: 04
+updated: 2022-10-19
 ---
 
 > [!primary]

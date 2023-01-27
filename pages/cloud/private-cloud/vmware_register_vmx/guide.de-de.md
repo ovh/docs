@@ -4,6 +4,7 @@ slug: vsphere-register-vm-vmx
 excerpt: Erfahren Sie hier, wie Sie VMs betriebsunfähiger Datastores in einem neuen Dienst registrieren
 section: VMware vSphere Funktionen
 order: 07
+updated: 2021-03-24
 ---
 
 > [!primary]

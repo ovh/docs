@@ -4,6 +4,7 @@ slug: install-ghost-cloud-web
 excerpt: 'Find out how to set up a blog with the Ghost platform on Cloud Web'
 section: Tutorials
 order: 01
+updated: 2022-05-04
 ---
 
 **Last updated 4th May 2022**

@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail-Accounts mit dem OVH Mail Migra
 slug: exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator
 section: Account-Migration
 order: 03
+updated: 2022-02-14
 ---
 
 > [!primary]

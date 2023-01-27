@@ -4,6 +4,7 @@ slug: elastalert
 order: 11
 excerpt: Deploy in a few minutes one of the most complete alert system.
 section: Use cases
+updated: 2022-07-28
 ---
 
 **Last updated July 28th, 2022**

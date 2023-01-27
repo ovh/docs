@@ -4,6 +4,7 @@ slug: web_hosting_guia_de_uso_de_filezilla
 excerpt: "Consulte aquí un tutorial sobre el uso de Filezilla en su alojamiento compartido"
 section: FTP y SSH
 order: 01
+updated: 2022-09-13
 ---
 
 **Última actualización: 13/09/2022**

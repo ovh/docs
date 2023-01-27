@@ -3,6 +3,7 @@ title: "Désactiver le serveur DHCP de votre modem"
 slug: "intel-itv1-desactiver-dhcp-modem"
 excerpt: "Découvrer comment désactiver le DHCP sur les modems des principaux fournisseur d'accès"
 section: "OverTheBox Intel et IT v1"
+updated: 2021-04-14
 ---
 
 **Dernière mise à jour le 14/04/2021**

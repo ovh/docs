@@ -4,6 +4,7 @@ slug: debuter-avec-clouddb
 excerpt: 'Découvrez comment bien débuter avec la solution CloudDB'
 section: 'Premiers pas'
 order: 01
+updated: 2022-06-22
 ---
 
 **Dernière mise à jour le 22/06/2022**

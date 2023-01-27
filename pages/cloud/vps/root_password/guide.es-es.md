@@ -3,6 +3,7 @@ title: Cambiar la contraseña «root» de un VPS
 slug: root-password
 excerpt: Cómo cambiar la contraseña «root» de un VPS
 section: Diagnóstico y modo de rescate
+updated: 2021-04-20
 ---
 
 **Última actualización: 27/04/2021**

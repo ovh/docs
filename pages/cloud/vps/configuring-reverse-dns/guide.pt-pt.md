@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/public-cloud/configurar_a_reverse_dns_de_uma_instancia/'
 section: Rede e IP
 order: 3
+updated: 2023-01-05
 ---
 
 > [!primary]

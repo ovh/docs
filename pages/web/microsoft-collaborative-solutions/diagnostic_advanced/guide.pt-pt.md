@@ -4,6 +4,7 @@ excerpt: 'Saiba como realizar um diagnóstico automatizado dos erros nas contas 
 slug: diagnostico_exchange_o_que_fazer_em_caso_de_erro
 section: Diagnóstico Exchange
 order: 01
+updated: 2022-10-19
 ---
 
 > [!primary]

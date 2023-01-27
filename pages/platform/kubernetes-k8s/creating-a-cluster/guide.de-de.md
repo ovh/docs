@@ -6,6 +6,7 @@ section: Getting started
 order: 0
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/'
+updated: 2021-09-29
 ---
 
 **Last updated 29th September 2021**

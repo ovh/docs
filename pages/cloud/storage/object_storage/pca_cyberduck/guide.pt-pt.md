@@ -4,6 +4,7 @@ slug: pca/cyberduck
 excerpt: Saiba como configurar o Cyberduck para gerir o seu Public Cloud Archive
 section: OpenStack Swift Archive Storage Class Specifics
 order: 080
+updated: 2021-06-18
 ---
 
 > [!primary]

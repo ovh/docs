@@ -4,6 +4,7 @@ slug: getting-started-with-postgresql
 excerpt: Using Your Databases
 section: Getting started
 order: 03
+updated: 2022-10-28
 ---
 
 Do you want to use PostgreSQL? Learn how to easily manage your databases!

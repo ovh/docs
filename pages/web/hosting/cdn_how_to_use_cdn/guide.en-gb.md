@@ -4,6 +4,7 @@ excerpt: 'Find out how to improve your website by reducing loading times on a We
 slug: guide_to_using_the_geocache_accelerator_on_a_web_hosting_package
 section: Optimise your website
 order: 03
+updated: 2021-12-23
 ---
 
 **Last updated 23rd December 2021**

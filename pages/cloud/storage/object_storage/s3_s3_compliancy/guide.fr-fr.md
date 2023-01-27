@@ -4,6 +4,7 @@ slug: s3/s3-compliancy
 excerpt:
 section: Informations générales
 order: 010
+updated: 2021-12-08
 ---
 
 **Dernière mise à jour le 08/12/2021**

@@ -4,6 +4,7 @@ slug: nas/get-started
 excerpt: Find out how to manage a HA-NAS via the OVHcloud Control Panel
 section: HA-NAS
 order: 01
+updated: 2021-09-16
 ---
 
 **Last updated 16th September 2021**

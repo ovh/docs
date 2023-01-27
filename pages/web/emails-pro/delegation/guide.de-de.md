@@ -3,6 +3,7 @@ title: 'Berechtigungen für einen E-Mail Account übertragen'
 slug: emailpro-delegation
 section: 'Erste Schritte'
 order: 5
+updated: 2020-10-24
 ---
 
 **Stand 24.10.2020**

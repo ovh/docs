@@ -4,6 +4,7 @@ slug: autorizar-direcciones-ip-a-conectarse-al-vcenter
 routes:
     canonical: 'https://docs.ovh.com/es/private-cloud/autorizar-direcciones-ip-a-conectarse-al-vcenter/'
 section: Funcionalidades de OVHcloud
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

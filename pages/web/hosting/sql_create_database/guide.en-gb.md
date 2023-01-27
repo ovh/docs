@@ -4,6 +4,7 @@ slug: creating-database
 excerpt: 'Find out how to use databases included in an OVHcloud Web Hosting plan'
 section: Databases
 order: 01
+updated: 2022-02-03
 ---
 
 **Last updated 3rd February 2022**

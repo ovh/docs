@@ -4,6 +4,7 @@ slug: layer3
 excerpt: 'Details about using Layer 3 (L3) with OVHcloud Connect'
 section: Concepts
 order: 2
+updated: 2020-09-14
 ---
 
 **Last updated 14th September 2020**

@@ -3,6 +3,7 @@ title: "Usuń kopię zapasową wirtualnej maszyny z witryny Zerto"
 slug: zerto-vm-replica-deletion
 excerpt: Dowiedz się, jak usunąć wirtualną maszynę ze strony WWW, gdy jest ona usuwana ze strony źródłowej
 section: Usługi i opcje OVHcloud
+updated: 2021-12-09
 ---
 
 > [!primary]

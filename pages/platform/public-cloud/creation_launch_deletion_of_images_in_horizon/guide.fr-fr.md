@@ -4,6 +4,7 @@ slug: creation-lancement-et-suppression-dimages-dans-horizon
 legacy_guide_number: 1784
 section: Gestion depuis Horizon
 order: 09
+updated: 2021-12-30
 ---
 
 **Dernière mise à jour le 30/12/2021**

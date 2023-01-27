@@ -6,6 +6,7 @@ routes:
 excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
 section: Spécificités de la classe de stockage d'archive OpenStack Swift
 order: 050
+updated: 2021-09-23
 ---
 
 **Dernière mise à jour le 23/09/2021**

@@ -4,6 +4,7 @@ slug: install-configure-cecil
 excerpt: "Découvrez comment Cecil vous permet de créer votre site statique à l'aide d'un moteur de template moderne (Jamstack)"
 section: 'Tutoriels'
 order: 04
+updated: 2023-01-17
 ---
 
 **Dernière mise à jour le 16/01/2023**

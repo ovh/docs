@@ -4,6 +4,7 @@ slug: using-automated-backups-on-a-vps
 excerpt: 'Find out how to enable and use the Automated Backup option in the OVHcloud Control Panel'
 section: 'Backup options'
 order: 2
+updated: 2022-11-15
 ---
 
 **Last updated 15th November 2022**

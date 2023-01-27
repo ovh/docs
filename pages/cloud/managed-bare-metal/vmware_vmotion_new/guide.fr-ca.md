@@ -6,6 +6,7 @@ routes:
 excerpt: Déplacer votre machine virtuelle sur un hôte différent à chaud
 section: Fonctionnalités VMware vSphere
 order: 04
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

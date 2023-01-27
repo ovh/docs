@@ -4,6 +4,7 @@ slug: mail-configuration-on-windows-10
 excerpt: 'Find out how to configure your MX Plan email address in the Mail app for Windows 10.'
 section: 'Configure on computer'
 order: 06
+updated: 2018-04-04
 ---
 
 **Last updated 4th April 2018**

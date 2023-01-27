@@ -3,6 +3,7 @@ title: 'Passar de uma faturação à hora para uma faturação ao mês'
 excerpt: 'Saiba como modificar o tipo de faturação da sua instância Public Cloud'
 slug: mudar-tipo-faturacao-public-cloud
 section: 'Gestão do projeto'
+updated: 2023-01-23
 ---
 
 **Última atualização: 23/01/2023**

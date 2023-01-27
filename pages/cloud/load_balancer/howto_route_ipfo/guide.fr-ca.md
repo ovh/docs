@@ -3,6 +3,7 @@ title: 'Router une Additional IP'
 slug: route-Additional IP
 excerpt: 'Router une Additional IP'
 section: Configuration
+updated: 2022-10-06
 ---
 
 **Dernière mise à jour le 06/10/2022**

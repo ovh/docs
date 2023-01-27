@@ -4,6 +4,7 @@ excerpt: Find out how to order and manage your Public Cloud managed database ser
 slug: order-api
 section: General guides
 order: 020
+updated: 2021-09-03
 ---
 
 **Last updated September 3<sup>rd</sup>, 2021**

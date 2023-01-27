@@ -4,6 +4,7 @@ slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Descubra las posibles acciones a través de un archivo .htaccess para bloquear el acceso a su sitio web a determinadas direcciones IP."
 section: Reescritura y autenticación
 order: 01
+updated: 2022-09-12
 ---
 
 **Última actualización: 12/09/2022**

@@ -4,6 +4,7 @@ slug: liste_de_destinataire_sms
 excerpt: "Découvrez comment créer une liste de destinataires SMS et l'importer dans votre espace client OVHcloud."
 legacy_guide_number: g2402
 section: 'Gérer mon offre'
+updated: 2022-08-05
 ---
 
 **Dernière mise à jour le 05/08/2022**

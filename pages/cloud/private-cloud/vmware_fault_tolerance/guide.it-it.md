@@ -5,6 +5,7 @@ excerpt: Come garantire la disponibilità continua delle VM con il servizio Faul
 legacy_guide_number: '2163251'
 section: Funzionalità VMware vSphere
 order: 06
+updated: 2020-07-07
 ---
 
 **Ultimo aggiornamento: 22/07/2020**

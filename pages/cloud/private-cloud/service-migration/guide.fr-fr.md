@@ -4,6 +4,7 @@ excerpt: Découvrez comment gérer tous les aspects liés à la migration d'une 
 slug: sddc-migration
 section: Premiers pas
 order: 6
+updated: 2021-12-06
 ---
 
 **Dernière mise à jour le 06/12/2021**

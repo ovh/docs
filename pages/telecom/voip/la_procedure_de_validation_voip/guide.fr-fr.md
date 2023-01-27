@@ -4,6 +4,7 @@ excerpt: 'Découvrez comment valider votre compte OVHcloud suite à votre premi�
 slug: la-procedure-de-validation-voip
 section: Administratif
 order: 01
+updated: 2022-01-28
 ---
 
 **Dernière mise à jour le 28/01/2022**

@@ -3,6 +3,7 @@ title: 'Partilhar ficheiros com a ferramenta Plik'
 excerpt: 'Saiba como usar a ferramenta Plik para enviar ficheiros a outras pessoas'
 slug: plik
 section: Ferramentas
+updated: 2022-02-14
 ---
 
 > [!primary]

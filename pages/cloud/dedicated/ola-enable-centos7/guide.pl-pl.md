@@ -4,6 +4,7 @@ slug: ola-centos7
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze CentOS'
 section: 'Poziom zaawansowany'
 order: 3
+updated: 2021-03-25
 ---
 
 **Ostatnia aktualizacja z dnia 25-03-2021**

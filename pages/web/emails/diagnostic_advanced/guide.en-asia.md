@@ -5,6 +5,7 @@ legacy_guide_number: 2117
 excerpt: Find out what to do if your emails are not sent or received correctly by OVHcloud
 section: Troubleshooting
 order: 02
+updated: 2022-07-21
 ---
 
 **Last updated 21st July 2022**

@@ -6,6 +6,7 @@ section: 'Primeros pasos'
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/es/emails/cambiar-contrasena-direccion-correo/'
+updated: 2023-01-03
 ---
 
 **Última actualización: 03/01/2023**

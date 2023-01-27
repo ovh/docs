@@ -4,6 +4,7 @@ slug: suspendre-ou-mettre-en-pause-une-instance
 legacy_guide_number: 1781
 section: Gestion de projets
 order: 3
+updated: 2021-09-20
 ---
 
 **Dernière mise à jour le 10/09/2021**

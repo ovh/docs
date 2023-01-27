@@ -3,6 +3,7 @@ title: "Updating the vSAN disk format"
 slug: vsan-disk-format-upgrade
 excerpt: "Find out how to update the format of a vSAN disk"
 section: VMware vSphere features
+updated: 2023-01-19
 ---
 
 **Last updated 19th January 2023**

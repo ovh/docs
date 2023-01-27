@@ -3,6 +3,7 @@ title: "Recuperare il backup dello spazio FTP del tuo hosting Cloud Web"
 slug: backup_ftp_cloud_web
 section: Backup
 order: 01
+updated: 2022-09-13
 ---
 
 **Ultimo aggiornamento: 13/09/2022**

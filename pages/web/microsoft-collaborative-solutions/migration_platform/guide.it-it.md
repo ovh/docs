@@ -4,6 +4,7 @@ slug: migration-email-platform
 excerpt: "Questa guida ti mostra come migrare gli indirizzi email da una piattaforma Exchange o Email Pro verso un'altra piattaforma Exchange, Email Pro o MX Plan"
 section: Migrazione account
 order: 01
+updated: 2021-10-21
 ---
 
 > [!primary]

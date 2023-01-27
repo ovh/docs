@@ -6,6 +6,7 @@ section: MySQL - Tutorials
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/tutorial-connect-kubernetes-to-managed-mysql/'
+updated: 2021-12-30
 ---
 
 <style>

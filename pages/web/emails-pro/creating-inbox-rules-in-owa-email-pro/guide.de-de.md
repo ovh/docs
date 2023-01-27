@@ -3,6 +3,7 @@ title: 'Posteingangsregeln über das OWA Interface'
 slug: creating-inbox-rules-in-owa-email-pro
 section: 'Erste Schritte'
 order: 3
+updated: 2020-03-12
 ---
 
 **Letzte Aktualisierung am 26.02.2021**

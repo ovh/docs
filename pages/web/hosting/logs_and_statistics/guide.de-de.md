@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abr
 slug: webhosting_die_statistiken_und_logs_meiner_website_einsehen
 section: 'Webseitenoptimierung'
 order: 04
+updated: 2021-01-05
 ---
 
 > [!primary]

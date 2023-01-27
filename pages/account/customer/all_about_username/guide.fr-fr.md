@@ -4,6 +4,7 @@ slug: tout-savoir-sur-identifiant-client
 excerpt: "Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et déléguer l'accès à votre compte."
 section: 'Premiers pas'
 order: 3
+updated: 2021-07-01
 ---
 
 **Dernière mise à jour le 01/07/2021**

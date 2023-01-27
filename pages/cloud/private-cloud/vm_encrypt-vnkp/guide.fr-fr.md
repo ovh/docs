@@ -4,6 +4,7 @@ slug: vm-encrypt-vnkp
 excerpt: Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles avec vSphere Native Key Provider
 section: Fonctionnalités VMware vSphere
 order: 09
+updated: 2023-01-26
 ---
 
 **Dernière mise à jour le 26/01/2023**

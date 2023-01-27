@@ -2,6 +2,7 @@
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi CloudDB'
 slug: clouddb-eos-eol
 section: 'Zasoby techniczne'
+updated: 2022-07-21
 ---
 
 > [!primary]

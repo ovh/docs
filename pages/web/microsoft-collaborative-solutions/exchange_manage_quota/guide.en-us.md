@@ -6,6 +6,7 @@ section: 'Troubleshooting'
 order: 02
 routes:
   canonical: "https://docs.ovh.com/gb/en/emails/manage-email-quota/"
+updated: 2022-11-17
 ---
 
 **Last updated 17th November 2022**

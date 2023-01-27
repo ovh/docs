@@ -4,6 +4,7 @@ slug: nsx-edge-firewall-configuration
 excerpt: creating firewall rules  
 section: NSX
 order: 04
+updated: 2021-11-25
 ---
 
 **Last updated 25th November 2021**

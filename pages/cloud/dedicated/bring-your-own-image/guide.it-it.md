@@ -3,6 +3,7 @@ title: Utilizza la funzionalità Bring Your Own Image
 excerpt: Scopri come creare le tue immagini grazie a Bring Your Own Image
 slug: bringyourownimage
 section: Utilizzo avanzato
+updated: 2022-11-25
 ---
 
 > [!primary]

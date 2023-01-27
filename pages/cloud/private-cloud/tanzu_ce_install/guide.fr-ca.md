@@ -4,6 +4,7 @@ slug: tanzu-ce-install
 excerpt: Intégrer Tanzu Community Edition (TCE) à votre infrastructure OVHcloud
 section: Tanzu
 order: 01
+updated: 2022-11-16
 ---
 
 **Dernière mise à jour le 16/11/2022**

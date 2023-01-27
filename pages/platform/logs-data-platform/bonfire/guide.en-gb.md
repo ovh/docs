@@ -3,6 +3,7 @@ title: How to query logs from the command line
 slug: bonfire
 order: 09
 section: Use cases
+updated: 2020-07-27
 ---
 
 **Last updated 27th July, 2020**

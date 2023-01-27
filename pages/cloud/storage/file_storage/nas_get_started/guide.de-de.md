@@ -4,6 +4,7 @@ slug: nas/get-started
 excerpt: Erfahren Sie hier, wie Sie ein High Availability NAS über Ihr OVHcloud Kundencenter verwalten
 section: HA-NAS
 order: 01
+updated: 2021-09-16
 ---
 
 > [!primary]

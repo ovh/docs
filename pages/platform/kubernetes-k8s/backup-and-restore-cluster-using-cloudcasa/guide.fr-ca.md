@@ -6,6 +6,7 @@ section: Storage
 order: 12
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backup-and-restore-cluster-using-cloudcasa/'
+updated: 2022-10-31
 ---
 
 <style>

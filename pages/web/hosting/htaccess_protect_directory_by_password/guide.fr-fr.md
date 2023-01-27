@@ -4,6 +4,7 @@ slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authent
 excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site avec un fichier .htaccess"
 section: Réécriture et authentification
 order: 02
+updated: 2021-09-20
 ---
 
 **Dernière mise à jour le 20/09/2021**

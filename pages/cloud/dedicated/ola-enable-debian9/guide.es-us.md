@@ -4,6 +4,7 @@ slug: ola-debian9
 excerpt: 'Activar el servicio OVHcloud Link Aggregation en un servidor Debian 9'
 section: 'Uso avanzado'
 order: 2
+updated: 2022-01-07
 ---
 
 **Última actualización: 07/01/2022**

@@ -2,6 +2,7 @@
 title: 'Polityka wycofania z eksploatacji zarządzanych baz danych'
 slug: managed-db-life-cycle-policy
 section: 'Zasoby techniczne'
+updated: 2022-06-29
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: configuracion-ios-iphone-ipad
 excerpt: 'Cómo configurar una cuenta Exchange en un iPhone o iPad utilizando la aplicación Mail'
 section: 'Configuración en smartphone/tablet'
 order: 03
+updated: 2021-05-21
 ---
 
 

@@ -4,6 +4,7 @@ slug: configurer-des-cles-ssh-supplementaires
 excerpt: 'Découvrez comment configurer des clés SSH supplémentaires pour votre instance Public Cloud'
 section: 'Tutoriels'
 order: 01
+updated: 2022-02-04
 ---
 
 **Dernière mise à jour le 04/02/2022**

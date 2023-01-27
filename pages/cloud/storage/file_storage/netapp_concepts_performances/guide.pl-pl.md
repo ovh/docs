@@ -4,6 +4,7 @@ excerpt: "Poznaj koncepcje związane z tworzeniem rezerw, monitoringiem oraz tes
 slug: netapp/performances
 section: Enterprise File Storage
 order: 011
+updated: 2022-11-30
 ---
 
 **Ostatnia aktualizacja z dnia 30-11-2022**

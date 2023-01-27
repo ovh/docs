@@ -6,6 +6,7 @@ excerpt: This super-powered tail will follow and format your logs with flying co
 section: Features
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/ldp-tail/'
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

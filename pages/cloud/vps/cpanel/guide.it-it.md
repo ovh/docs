@@ -3,6 +3,7 @@ title: Deploy di cPanel su un VPS
 slug: cpanel
 excerpt: Come installare un VPS con l'applicazione cPanel preinstallata.
 section: Utilizzo avanzato
+updated: 2021-10-14
 ---
 
 > [!primary]

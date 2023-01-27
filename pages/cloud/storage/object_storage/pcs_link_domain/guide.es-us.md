@@ -5,6 +5,7 @@ slug: pcs/link-domain
 section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g2006
 order: 120
+updated: 2021-10-27
 ---
 
 ## Objetivo

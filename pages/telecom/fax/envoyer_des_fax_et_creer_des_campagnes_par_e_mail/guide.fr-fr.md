@@ -5,6 +5,7 @@ excerpt: Découvrez comment envoyer des fax ou des campagnes de fax par e-mail
 legacy_guide_number: '8355851'
 section: Envoi/Réception de fax
 order: 1
+updated: 2022-06-23
 ---
 
 **Dernière mise à jour le 23/06/2022**

@@ -4,6 +4,7 @@ excerpt: "Identifiez l'origine des lenteurs de votre site web et découvrez comm
 slug: slow-website-fix
 section: Diagnostic
 order: 01
+updated: 2022-11-17
 ---
 
 **Dernière mise à jour le 10/11/2022**

@@ -5,6 +5,7 @@ excerpt: 'Find out how to create an OVHcloud DNS zone for your domain name via t
 legacy_guide_number: g2229
 section: 'DNS and DNS Zone'
 order: 02
+updated: 2018-08-06
 ---
 
 **Last updated 06th August 2018**

@@ -4,6 +4,7 @@ slug: vm-encrypt
 excerpt: Esta guía explica cómo activar el cifrado de sus máquinas virtuales.
 section: Funcionalidades de VMware vSphere
 order: 08
+updated: 2020-06-29
 ---
 
 **Última actualización: 01/07/2020**

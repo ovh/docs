@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to scale your virtual machine
 section: Virtual machine management
 order: 3
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

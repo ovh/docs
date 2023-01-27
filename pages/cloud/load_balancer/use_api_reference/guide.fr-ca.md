@@ -3,6 +3,7 @@ title: Référence Rapide API Load Balancer
 slug: iplb-api-reference
 excerpt: Description rapide des différentes fonctions de l’API servant à gérer le Load Balancer
 section: Premiers pas
+updated: 2022-04-04
 ---
 
 

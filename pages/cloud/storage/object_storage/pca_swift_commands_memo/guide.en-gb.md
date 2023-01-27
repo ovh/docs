@@ -4,6 +4,7 @@ slug: pca/swift-commands-memo
 excerpt: Find here the main swift commands to manage your Public Cloud Archive object containers
 section: OpenStack Swift Archive Storage Class Specifics
 order: 070
+updated: 2021-09-21
 ---
 
 **Last updated 21st September 2021**

@@ -3,6 +3,7 @@ title: Reimpostare una password Windows
 slug: reimpostare-una-password-windows
 excerpt: Guida alla reimpostazione di una password con Windows
 section: Diagnostica e modalità Rescue
+updated: 2020-11-25
 ---
 
 > [!primary]

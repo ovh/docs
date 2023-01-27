@@ -6,6 +6,7 @@ section: Security
 order: 0
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-kyverno/'
+updated: 2022-08-11
 ---
 
 **Last updated 11th August 2022.**

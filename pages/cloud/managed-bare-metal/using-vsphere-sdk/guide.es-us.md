@@ -6,6 +6,7 @@ routes:
 excerpt: Instrumentación y uso del conjunto de librerías vSphere SDK
 section: Funcionalidades de VMware vSphere
 order: 10
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

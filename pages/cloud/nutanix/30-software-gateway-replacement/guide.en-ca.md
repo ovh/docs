@@ -4,6 +4,7 @@ slug: software-gateway-replacement
 excerpt: Find out how to replace the OVHgateway with another manageable virtual machine
 section: Network & Security
 order: 11
+updated: 2022-12-05
 ---
 
 **Last updated 5th December 2022**

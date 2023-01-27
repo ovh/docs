@@ -4,6 +4,7 @@ excerpt: Find out how to back up and restore your Persistent Volume with Volume 
 slug: backup-restore-pv-volume-snapshot
 section: Storage
 order: 2
+updated: 2023-01-11
 ---
 
 <style>

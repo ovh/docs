@@ -4,6 +4,7 @@ slug: prism-element-nutanix-replication
 excerpt: How to set up asynchronous or NearSync replication through Prism Element
 section: Disaster Recovery Plan
 order: 04
+updated: 2022-06-29
 ---
 
 **Last updated 29th June 2022**

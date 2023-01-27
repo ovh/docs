@@ -4,6 +4,7 @@ excerpt: "Identifique el origen de la lentitud de su sitio web y descubra cómo 
 slug: slow-website-fix
 section: Diagnóstico
 order: 01
+updated: 2022-11-17
 ---
 
 **Última actualización: 17/11/2022**

@@ -6,6 +6,7 @@ routes:
 excerpt: Saiba como implementar uma máquina virtual através da interface vSphere
 section: Gestão das máquinas virtuais
 order: 0
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

@@ -3,6 +3,7 @@ title: 'Boas práticas de segurança vSphere Web Client'
 slug: proteger-acesso-vsphere-web
 excerpt: 'Descubra como proteger o acesso ao vSphere Web Client'
 section: Introdução
+updated: 2020-06-30
 ---
 
 **Última atualização: 30/07/2020**

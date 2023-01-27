@@ -6,6 +6,7 @@ excerpt:  Scopri come utilizzare la vRack con la tua soluzione Managed Bare Meta
 slug: vrack-essentials
 section: Servizi e opzioni OVHcloud
 order: 02
+updated: 2020-11-23
 ---
 
 > [!primary]

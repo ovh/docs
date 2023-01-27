@@ -4,6 +4,7 @@ slug: partilhado_colocar_o_meu_website_online
 excerpt: 'Saiba como publicar um site no seu alojamento web da OVH'
 section: Primeiros passos
 order: 06
+updated: 2022-07-21
 ---
 
 > [!primary]

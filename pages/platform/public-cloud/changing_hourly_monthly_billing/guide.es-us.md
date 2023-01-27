@@ -4,6 +4,7 @@ excerpt: 'Cómo cambiar la modalidad de facturación de una instancia de Public 
 slug: cambiar-modalidad-facturacion-public-cloud
 section: 'Gestión del proyecto'
 order: 06
+updated: 2023-01-23
 ---
 
 **Última actualización: 23/01/2023**

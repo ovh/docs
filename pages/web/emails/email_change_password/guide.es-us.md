@@ -4,6 +4,7 @@ slug: cambiar-contrasena-direccion-correo
 excerpt: 'Cómo cambiar la contraseña de una dirección de correo de OVHcloud'
 section: 'Primeros pasos'
 order: 03
+updated: 2023-01-03
 ---
 
 **Última actualización: 03/01/2023**

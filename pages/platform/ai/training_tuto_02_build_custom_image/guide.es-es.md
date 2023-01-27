@@ -6,6 +6,7 @@ section: AI Training - Tutorials
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/build-use-custom-image/'
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

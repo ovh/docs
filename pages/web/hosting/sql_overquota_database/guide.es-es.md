@@ -4,6 +4,7 @@ slug: database-overquota
 excerpt: "Cómo actuar cuando la base de datos está saturada"
 section: 'Bases de datos'
 order: 06
+updated: 2023-01-19
 ---
 
 **Última actualización: 23/01/2023**

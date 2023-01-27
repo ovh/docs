@@ -4,6 +4,7 @@ excerpt: Find out how to set up Logstash and Fluent Bit with your OpenSearch dat
 slug: opensearch/logstash
 section: OpenSearch - Guides
 order: 200
+updated: 2021-12-17
 ---
 
 **Last updated 17<sup>th</sup> December 2021**

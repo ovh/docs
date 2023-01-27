@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for PostgreSQL using pgAdmin
 slug: postgresql/connect-pgadmin
 section: PostgreSQL - Guides
 order: 070
+updated: 2022-04-04
 ---
 
 **Last updated 4<sup>th</sup> April, 2022**

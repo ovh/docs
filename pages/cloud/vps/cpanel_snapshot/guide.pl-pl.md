@@ -3,6 +3,7 @@ title: 'Automatyczna kopia zapasowa - kernel panic (cPanel)'
 slug: cpanel_auto_backup
 excerpt: 'Dowiedz się, jak usunąć problemy z blokowaniem serwerów cPanel podczas wykonywania automatycznej kopii zapasowej OVHcloud'
 section: 'Poziom zaawansowany'
+updated: 2021-03-09
 ---
 
 > [!primary]

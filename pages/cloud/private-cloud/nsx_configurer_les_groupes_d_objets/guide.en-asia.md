@@ -4,6 +4,7 @@ slug: setup-nsx-groups
 excerpt: Create groups to simplify rules management
 section: NSX
 order: 09
+updated: 2021-11-24
 ---
 
 **Last updated 24th November 2021**

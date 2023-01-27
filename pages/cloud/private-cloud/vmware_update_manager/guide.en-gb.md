@@ -4,6 +4,7 @@ excerpt: Updating your hosts with VMware Update Manager
 slug: use_vmware_update_manager
 section: Maintenance and monitoring
 order: 11
+updated: 2021-12-09
 ---
 
 **Last Updated 9th December 2021**

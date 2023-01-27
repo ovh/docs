@@ -3,6 +3,7 @@ title: OVHcloud Rechnungen verwalten
 slug: ovh-rechnungen-verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Rechnungen und deren Bezahlung verwalten
 section: Abrechnung
+updated: 2022-05-12
 ---
 
 > [!primary]

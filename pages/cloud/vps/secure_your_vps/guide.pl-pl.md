@@ -3,6 +3,7 @@ title: Zabezpieczenie serwera VPS
 slug: porady-zabezpieczenie-vps
 section: 'Pierwsze kroki'
 excerpt: 'Odkryj podstawowe elementy umożliwiające zabezpieczenie serwera VPS'
+updated: 2022-05-05
 ---
 
 > [!primary]

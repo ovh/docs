@@ -4,6 +4,7 @@ slug: creer-cle-ssh-serveur-dediees
 excerpt: 'Découvrez comment créer une clé SSH pour une connexion sécurisée à votre serveur dédié'
 section: 'Premiers pas'
 order: 3
+updated: 2022-03-31
 ---
 
 **Dernière mise à jour le 31/03/2022**

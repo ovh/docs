@@ -4,6 +4,7 @@ slug: autorizar-ip-a-ligar-se-ao-vcenter
 routes:
     canonical: 'https://docs.ovh.com/pt/private-cloud/autorizar-ip-a-ligar-se-ao-vcenter/'
 section: Funcionalidades da OVHcloud
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

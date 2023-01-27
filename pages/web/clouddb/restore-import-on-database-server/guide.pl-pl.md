@@ -4,6 +4,7 @@ slug: przywracanie-importowanie-bazy-danych
 excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
 section: 'Konfiguracja'
 order: 05
+updated: 2022-06-29
 ---
 
 > [!primary]

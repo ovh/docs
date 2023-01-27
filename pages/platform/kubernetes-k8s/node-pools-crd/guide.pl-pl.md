@@ -6,6 +6,7 @@ section: User guides
 order: 2
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/node-pools-crd/'
+updated: 2022-02-18
 ---
 
 <style>

@@ -4,6 +4,7 @@ excerpt: 'Saiba como instalar e começar a gerir um VPS'
 slug: instalar-gerir-vps
 section: 'Primeiros passos'
 order: 1
+updated: 2022-03-25
 ---
 
 > [!primary]

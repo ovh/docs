@@ -3,6 +3,7 @@ title: 'Connectivity API'
 excerpt: 'Develop using connectivity API'
 slug: connectivity-api
 section: 'Advanced technical configurations'
+updated: 2020-12-07
 ---
 
 **Last updated 7th December 2020**

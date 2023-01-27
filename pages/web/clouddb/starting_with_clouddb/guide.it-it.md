@@ -5,6 +5,7 @@ legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione CloudDB'
 section: Per iniziare
 order: 01
+updated: 2022-06-22
 ---
 
 **Ultimo aggiornamento: 22/06/2022**

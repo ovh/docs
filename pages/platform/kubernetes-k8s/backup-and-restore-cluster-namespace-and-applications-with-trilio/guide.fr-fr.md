@@ -5,6 +5,7 @@ excerpt: 'Backup and Restore Cluster, Namespace and Applications using TVK'
 section: 'Tutorials'
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio/'
+updated: 2022-08-11
 ---
 
 <style>

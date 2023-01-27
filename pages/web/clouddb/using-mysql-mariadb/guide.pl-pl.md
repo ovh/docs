@@ -4,6 +4,7 @@ slug: mysql-i-mariadb
 excerpt: Korzystanie z baz danych
 section: 'Pierwsze kroki'
 order: 02
+updated: 2022-06-29
 ---
 
 > [!primary]

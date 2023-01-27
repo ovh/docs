@@ -6,6 +6,7 @@ section: M3db - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/m3db/configure-m3db-instance/'
+updated: 2022-05-12
 ---
 
 **Last updated 12th May 2022**

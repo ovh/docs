@@ -4,6 +4,7 @@ slug: netapp/volume-acl
 excerpt: Dowiedz się, jak zarządzać ACL wolumenu Enterprise File Storage przy użyciu API OVHcloud
 section: Enterprise File Storage
 order: 041
+updated: 2021-10-27
 ---
 
 > [!primary]

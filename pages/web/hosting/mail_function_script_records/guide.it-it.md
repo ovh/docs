@@ -4,6 +4,7 @@ excerpt: "Come monitorare e gestire le email automatiche inviate da un hosting W
 slug: hosting_web_gestisci_linvio_delle_tue_email_automatiche
 section: Diagnostica
 order: 09
+updated: 2022-10-12
 ---
 
 **Ultimo aggiornamento: 12/10/2022**

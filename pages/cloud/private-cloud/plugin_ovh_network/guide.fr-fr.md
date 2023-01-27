@@ -5,6 +5,7 @@ excerpt: Découvrez comment utiliser le plugin OVH Network sur votre offre Priva
 legacy_guide_number: '7766560'
 section: Fonctionnalités OVHcloud
 order: 03
+updated: 2020-07-01
 ---
 
 **Dernière mise à jour le 07/07/2020**

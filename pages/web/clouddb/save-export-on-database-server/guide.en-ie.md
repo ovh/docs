@@ -4,6 +4,7 @@ slug: backup-export-database-server
 excerpt: 'Find out how to back up and export your database'
 section: Configuration
 order: 04
+updated: 2022-06-27
 ---
 
 **Last updated 27th June 2022**

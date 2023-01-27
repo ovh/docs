@@ -6,6 +6,7 @@ section: Informations générales
 order: 104
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/users/'
+updated: 2021-03-01
 ---
 
 **Last updated 1st March, 2021.**

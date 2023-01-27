@@ -4,6 +4,7 @@ slug: index-as-a-service
 order: 2
 excerpt: Use the power of OpenSearch without managing a cluster.
 section: Features
+updated: 2022-10-13
 ---
 
 **Last updated 13th October, 2022**

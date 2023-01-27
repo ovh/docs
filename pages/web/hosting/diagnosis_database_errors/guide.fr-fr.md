@@ -4,6 +4,7 @@ excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de 
 slug: erreurs-frequentes-bases-de-donnees
 section: Diagnostic
 order: 04
+updated: 2022-12-09
 ---
 
 **Dernière mise à jour le 09/12/2022**

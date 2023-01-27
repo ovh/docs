@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihr vRack mit Public Cloud Instanzen einric
 slug: public-cloud-vrack
 section: Erste Schritte
 order: 07
+updated: 2023-01-10
 ---
 
 > [!primary]

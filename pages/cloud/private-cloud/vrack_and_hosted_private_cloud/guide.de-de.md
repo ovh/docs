@@ -4,6 +4,7 @@ slug: vrack-kompatibilitat-hosted-private-cloud
 excerpt: Erfahren Sie hier, welche Konfigurationen mit vRack und Hosted Private Cloud Diensten möglich sind
 section: OVHcloud Funktionen
 order: 01
+updated: 2021-12-31
 ---
 
 > [!primary]

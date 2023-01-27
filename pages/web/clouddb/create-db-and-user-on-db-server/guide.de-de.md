@@ -4,6 +4,7 @@ slug: datenbank-und-benutzer-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie eine Datenbank auf Ihrem Datenbankserver erstellen'
 section: Konfiguration
 order: 02
+updated: 2022-06-23
 ---
 
 > [!primary]

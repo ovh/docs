@@ -6,6 +6,7 @@ routes:
 excerpt: The vScope interface allows you to monitor your infrastructure
 section: Servizi e opzioni OVHcloud
 order: 01
+updated: 2022-01-28
 ---
 
 **Last updated 28th January 2022**

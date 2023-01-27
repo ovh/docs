@@ -4,6 +4,7 @@ slug: passwort-e-mail-adresse-aendern
 excerpt: "Erfahren Sie hier, wie Sie das Passwort eines OVHcloud E-Mail-Accounts ändern"
 section: Erste Schritte
 order: 03
+updated: 2023-01-03
 ---
 
 > [!primary]

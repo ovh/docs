@@ -4,6 +4,7 @@ slug: primera-configuracion
 excerpt: 'Cómo configurar por primera vez la solución Email Pro'
 section: 'Primeros pasos'
 order: 1
+updated: 2020-04-09
 ---
 
 **Última actualización: 7/4/2020**

@@ -3,6 +3,7 @@ title: "Renouveler mes services via l'API OVHcloud"
 slug: renouveler-manuellement-service-via-api
 excerpt: 'Découvrez comment renouveler vos services via l’API OVHcloud'
 section: 'Gérer mes services et leur renouvellement'
+updated: 2020-05-05
 ---
 
 **Dernière mise à jour le 14 juillet 2020**

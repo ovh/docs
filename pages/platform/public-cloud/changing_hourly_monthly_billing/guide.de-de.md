@@ -3,6 +3,7 @@ title: 'Von der stündlichen auf monatliche Abrechnung umstellen'
 excerpt: 'Erfahren Sie hier, wie Sie die Abrechnungsart Ihrer Public Cloud Instanz ändern'
 slug: abrechnungsart-aendern-public-cloud
 section: Projektverwaltung
+updated: 2023-01-23
 ---
 
 **Letzte Aktualisierung am 23.01.2023**

@@ -3,6 +3,7 @@ title: 'Alterar a palavra-passe administrador num servidor dedicado Windows'
 slug: "alterar-palavra-passe-admin-windows"
 excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor dedicado Windows'
 section: 'Diagnóstico e Modo Rescue'
+updated: 2021-01-12
 ---
 
 **Última atualização: 16/12/2020**

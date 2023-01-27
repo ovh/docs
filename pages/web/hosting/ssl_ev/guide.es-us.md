@@ -4,6 +4,7 @@ slug: ssl-ev
 excerpt: "Cómo contratar e instalar un certificado SSL EV en un alojamiento web de OVHcloud"
 section: SSL
 order: 03
+updated: 2022-12-13
 ---
 
 > [!primary]

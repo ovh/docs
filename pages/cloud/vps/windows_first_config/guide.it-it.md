@@ -3,6 +3,7 @@ title: Configura una nuova installazione di Windows Server
 slug: windows-first-config
 excerpt: Come attivare la connessione a desktop remoto, ICMP e log di avvio
 section: Per iniziare
+updated: 2022-05-06
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: email_hosting_iphone_ios_91_configuration
 excerpt: Find out how to configure an MX Plan email address on iPhone and iPad
 section: Configure on smartphone
 order: 01
+updated: 2022-07-20
 ---
 
 **Last updated 20th July 2022**

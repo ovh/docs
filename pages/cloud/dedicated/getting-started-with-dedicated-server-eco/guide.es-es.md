@@ -6,6 +6,7 @@ routes:
 excerpt: 'Cómo empezar a utilizar un servidor dedicado Kimsufi, So you Start o Rise'
 section: 'Primeros pasos'
 order: 2
+updated: 2022-12-12
 ---
 
 > [!primary]

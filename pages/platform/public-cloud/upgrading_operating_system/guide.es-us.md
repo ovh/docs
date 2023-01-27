@@ -3,6 +3,7 @@ title: Actualizar el sistema operativo
 slug: upgrade-os
 excerpt: 'Cómo actualizar un sistema operativo al final de su vida útil'
 section: Tutoriales
+updated: 2022-02-07
 ---
 
 > [!primary]

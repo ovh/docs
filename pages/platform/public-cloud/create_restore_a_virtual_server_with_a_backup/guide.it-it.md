@@ -4,6 +4,7 @@ excerpt: 'Crea/ripristina il tuo server virtuale da un backup'
 slug: crearipristina_il_tuo_server_virtuale_da_un_backup
 legacy_guide_number: g1882
 section: Gestione dallo Spazio Cliente OVHcloud
+updated: 2021-03-19
 ---
 
 > [!primary]

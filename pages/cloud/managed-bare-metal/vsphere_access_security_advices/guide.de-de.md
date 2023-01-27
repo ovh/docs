@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/vsphere-web-zugang-sichern/'
 excerpt: Hier erfahren Sie, wie Sie den Zugang zu Ihrem vSphere Web Client sichern.
 section: Erste Schritte
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

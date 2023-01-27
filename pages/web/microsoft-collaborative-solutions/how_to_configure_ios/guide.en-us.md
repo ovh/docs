@@ -4,6 +4,7 @@ excerpt: Find out how to configure an Exchange account on iPhone and iPad, via t
 slug: exchange_2013_how_to_configure_on_ios_iphoneipad
 section: Configuration on smartphone/tablet
 order: 03
+updated: 2021-05-21
 ---
 
 **Last updated 21st May 2021**

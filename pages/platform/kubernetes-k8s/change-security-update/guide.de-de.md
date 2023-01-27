@@ -5,6 +5,7 @@ excerpt: 'Find out how to change the security update policy on an OVHcloud Manag
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/change-security-update/'
+updated: 2022-11-07
 ---
 
 <style>

@@ -4,6 +4,7 @@ slug: ripristinare-importare-database
 excerpt: Come ripristinare e importare il database
 section: Configurazione
 order: 05
+updated: 2022-06-29
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Mode de répartition
 slug: iplb-balancing
 excerpt: Découvrez les différents modes de répartition de charge du Load Balancer OVHcloud
 section: Configuration
+updated: 2018-01-17
 ---
 
 **Dernière mise à jour le 24/03/2022**

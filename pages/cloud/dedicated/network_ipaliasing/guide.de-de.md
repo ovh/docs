@@ -3,6 +3,7 @@ title: 'Konfiguration von IP-Aliasing'
 slug: network-ipaliasing
 excerpt: 'So fügen Sie Additional IPs zu Ihrer Konfiguration hinzu'
 section: 'Netzwerk & IP'
+updated: 2022-12-07
 ---
 
 > [!primary]

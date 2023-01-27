@@ -4,6 +4,7 @@ slug: migration-ihrer-website-zu-ovh
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website, E-Mails und Domains ohne Dienstunterbrechung zu OVHcloud migrieren"
 section: 'Erste Schritte'
 order: 08
+updated: 2022-11-24
 ---
 
 **Letzte Aktualisierung am 24.11.2022**

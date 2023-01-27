@@ -4,6 +4,7 @@ slug: configure-optimise-database-server
 excerpt: 'Find out how to configure and optimise your database server'
 section: Configuration
 order: 06
+updated: 2022-06-30
 ---
 
 **Last updated 30th June 2022**

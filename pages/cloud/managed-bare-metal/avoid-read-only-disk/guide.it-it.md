@@ -6,6 +6,7 @@ routes:
 excerpt: Come evitare l’attivazione della modalità di sola lettura sui dischi delle VM Linux
 section: Gestione delle macchine virtuali
 order: 10
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

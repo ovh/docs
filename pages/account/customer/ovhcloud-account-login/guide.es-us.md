@@ -4,6 +4,7 @@ slug: conectarse-area-de-cliente-ovhcloud
 excerpt: 'Cómo autenticarse en su cuenta de OVHcloud'
 section: 'Primeros pasos'
 order: 2
+updated: 2021-07-01
 ---
 
 > [!primary]

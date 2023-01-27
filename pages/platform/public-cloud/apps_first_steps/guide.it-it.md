@@ -4,6 +4,7 @@ slug: applicazioni-preinstallallees
 excerpt: Scopri come creare applicazioni preinstallate sulle tue istanze Public Cloud
 section: Per iniziare
 order: 7
+updated: 2021-09-07
 ---
 
 **Ultimo aggiornamento: 07/09/2021**

@@ -5,6 +5,7 @@ slug: poner_una_instancia_en_modo_de_rescate
 legacy_guide_number: g2029
 section: 'Gestión de las instancias desde el área de cliente'
 order: 03
+updated: 2023-01-04
 ---
 
 **Última actualización: 04/01/2023**

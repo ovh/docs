@@ -4,6 +4,7 @@ slug: twitter
 order: 07
 excerpt: Logs Data Platform can be used in multiple ways. Twitter feed and keyword analysis is one of them.
 section: Use cases
+updated: 2019-04-10
 ---
 
 **Last updated 10th April, 2019**

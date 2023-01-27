@@ -4,6 +4,7 @@ excerpt: "Ermitteln Sie den Ursprung der Ladezeiten Ihrer Website und erfahren S
 slug: slow-website-fix
 section: Diagnose
 order: 01
+updated: 2022-11-17
 ---
 
 **Letzte Aktualisierung am 17.11.2022**

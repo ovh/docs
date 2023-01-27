@@ -3,6 +3,7 @@ title: Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster
 slug: upgrading-kubernetes-version
 excerpt: 'Find out how to upgrade the Kubernetes version on an OVHcloud Managed Kubernetes cluster'
 section: User guides
+updated: 2023-01-03
 ---
 
 <style>

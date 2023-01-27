@@ -4,6 +4,7 @@ slug: cli/getting-started-cli
 excerpt: Learn how to run an AI Notebook using the CLI
 section: Command Line Interface
 order: 201
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

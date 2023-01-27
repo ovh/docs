@@ -4,6 +4,7 @@ slug: configure-security-group-horizon
 excerpt: 'Dowiedz się, jak utworzyć grupę zabezpieczeń i skonfigurować ją na instancji Public Cloud'
 legacy_guide_number: g1925
 section: Zarządzanie w interfejsie Horizon
+updated: 2021-08-24
 ---
 
 > [!primary]

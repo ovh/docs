@@ -4,6 +4,7 @@ slug: migration-email-platform
 excerpt: "Dowiedz się, jak migrować konta e-mail z platformy Exchange lub E-mail Pro na inną platformę Exchange, E-mail Pro lub MX Plan"
 section: Migracja konta
 order: 01
+updated: 2021-10-21
 ---
 
 > [!primary]

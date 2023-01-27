@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/zerto-virtual-replication-klient-do-ovhcloud/'
 excerpt: 'Dowiedz się, jak skonfigurować tunel VPN w celu połączenia lokalnej platformy Zerto z infrastrukturą Managed Bare Metal OVHcloud'
 section: 'Usługi i opcje OVHcloud'
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

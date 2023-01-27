@@ -6,6 +6,7 @@ section: AI Deploy - Guides
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/getting-started/'
+updated: 2022-11-03
 ---
 
 **Last updated 3rd November, 2022.**

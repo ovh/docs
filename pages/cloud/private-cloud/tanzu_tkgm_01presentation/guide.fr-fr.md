@@ -4,6 +4,7 @@ slug: tanzu-tkgm-presentation
 excerpt: Découvrez la solution Tanzu Kubernetes Grid 
 section: Tanzu
 order: 02
+updated: 2022-11-15
 ---
 
 **Dernière mise à jour le 15/11/2022**

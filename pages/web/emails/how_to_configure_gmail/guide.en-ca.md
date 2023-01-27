@@ -4,6 +4,7 @@ slug: gmail-configuration
 excerpt: 'Find out how to configure an email address on the Gmail online interface'
 section: 'Configure an email service'
 order: 01
+updated: 2021-01-08
 ---
 
 **Last updated 8th January 2021**

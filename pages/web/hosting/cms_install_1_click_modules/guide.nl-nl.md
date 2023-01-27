@@ -4,6 +4,7 @@ title: Installatie van een site met 1-klik modules
 slug: 1-klik-modules
 excerpt: Ontdek hoe u uw site kunt installeren met onze 1-klik modules
 section: CMS
+updated: 2023-01-26
 ---
 
 **Laatste update 19-01-2018**

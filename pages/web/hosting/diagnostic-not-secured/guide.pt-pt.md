@@ -4,6 +4,7 @@ excerpt: "Reagir em caso de mensagem de erro relacionado com a segurança do seu
 slug: erro-site-nao-seguro
 section: Diagnóstico
 Order: 03
+updated: 2021-07-08
 ---
 
 > [!primary]

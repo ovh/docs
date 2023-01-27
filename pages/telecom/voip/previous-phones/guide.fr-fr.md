@@ -3,6 +3,7 @@ title: "Guides d'utilisation de nos précédentes gammes de téléphones"
 slug: nos-precedentes-gammes-de-telephones
 excerpt: 'Retrouvez les guides des précédents téléphones fournis par OVHcloud'
 section: Nos précédentes gammes de téléphones
+updated: 2020-04-28
 ---
 
 **Dernière mise à jour le 28/04/2020**

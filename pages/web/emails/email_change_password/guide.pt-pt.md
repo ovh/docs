@@ -4,6 +4,7 @@ slug: alterar-palavra-passe-endereco-email
 excerpt: 'Saiba como alterar a palavra-passe de um endereço de e-mail da OVHcloud'
 section: Introdução
 order: 03
+updated: 2023-01-03
 ---
 
 **Última atualização: 03/01/2023**

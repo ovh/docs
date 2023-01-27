@@ -4,6 +4,7 @@ slug: encrypt-secret-with-sealed-secrets-kubeseal
 excerpt: Find out how to encrypt your Kubernetes Secrets in order to store them in Git with Sealed Secrets (Kubeseal)
 section: Security
 order: 2
+updated: 2022-06-06
 ---
 
 **Last updated 6th June 2022.**

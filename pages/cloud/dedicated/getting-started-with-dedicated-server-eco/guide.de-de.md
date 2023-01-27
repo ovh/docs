@@ -6,6 +6,7 @@ routes:
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Kimsufi, So You Start oder Rise Dedicated Server verwalten'
 section: 'Erste Schritte'
 order: 2
+updated: 2022-12-12
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: control-panel-ovh-private-cloud
 excerpt: Find out how to use the OVHcloud Hosted Private Cloud Control Panel
 section: Getting started
 order: 1
+updated: 2021-12-15
 ---
 
 **Last updated 15th December 2021**

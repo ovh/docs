@@ -4,6 +4,7 @@ excerpt: In questa guida ti mostriamo come configurare degli account di risorsa
 slug: exchange_2013_utilizzo_account_di_risorsa
 section: Funzionalità degli account Exchange
 order: 05
+updated: 2020-06-05
 ---
 
 **Ultimo aggiornamento: 22 dicembre 2020**

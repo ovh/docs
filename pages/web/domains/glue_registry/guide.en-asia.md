@@ -4,6 +4,7 @@ excerpt: 'Find out how to customise the DNS servers for your OVHcloud domain nam
 slug: glue_registry
 section: 'DNS and DNS Zone'
 order: 07
+updated: 2018-10-26
 ---
 
 **Last updated 5th May 2020**

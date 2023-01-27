@@ -4,6 +4,7 @@ slug: create-your-own-web-page
 excerpt: 'Find out how to create your first webpage with a free Start 10M hosting plan'
 section: "Tutorials"
 order: 01
+updated: 2022-11-22
 ---
 
 **Last updated 22nd November 2022**

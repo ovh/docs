@@ -4,6 +4,7 @@ slug: database-overquota
 excerpt: "Descubra como agir quando a base de dados está sobrecarregada"
 section: 'Bases de dados'
 order: 06
+updated: 2023-01-19
 ---
 
 **Última atualização: 23/01/2023**

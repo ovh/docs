@@ -4,6 +4,7 @@ slug: pca/create-container
 excerpt: Saiba como criar os seus containers Public Cloud Archive a partir da Área de Cliente OVHcloud
 section: OpenStack Swift Archive Storage Class Specifics
 order: 020
+updated: 2021-10-27
 ---
 
 > [!primary]

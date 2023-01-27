@@ -3,6 +3,7 @@ title: Encryption
 slug: security-encryption
 section: Security
 order: 8
+updated: 2021-05-11
 ---
 
 **Last updated 11th May 2021**

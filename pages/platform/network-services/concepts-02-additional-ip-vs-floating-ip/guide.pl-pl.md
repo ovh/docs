@@ -6,6 +6,7 @@ section: Koncepcje
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/additional-ip-vs-floating-ip/'
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

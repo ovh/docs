@@ -6,6 +6,7 @@ routes:
 excerpt: 'Lifecycle policy for Hosted Private Cloud powered by VMware'
 section: FAQ
 order: 3
+updated: 2022-12-27
 ---
 
 **Last updated 27th December 2022**

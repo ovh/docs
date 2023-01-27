@@ -6,6 +6,7 @@ section: AI Notebooks - Tutorials
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-hugging-face-sentiment-analysis/'
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

@@ -6,6 +6,7 @@ routes:
 excerpt: 'Come utilizzare i dati di monitoraggio nelle tue applicazioni tramite l’API vScope'
 section: 'Servizi e opzioni OVHcloud'
 order: 1
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

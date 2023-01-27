@@ -3,6 +3,7 @@ title: 'Configurar el vRack entre Public Cloud y un servidor dedicado'
 slug: configurar-vrack-entre-public-cloud-servidor-dedicado
 excerpt: 'Cómo configurar una red privada entre una instancia de Public Cloud y un servidor dedicado'
 section: vRack
+updated: 2021-10-15
 ---
 
 > [!primary]

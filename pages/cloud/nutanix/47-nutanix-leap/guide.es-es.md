@@ -6,6 +6,7 @@ section: Disaster Recovery Plan
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/leap-replication/'
+updated: 2022-07-18
 ---
 
 **Last updated 18th July 2022**

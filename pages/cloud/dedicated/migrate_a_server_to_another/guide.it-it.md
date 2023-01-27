@@ -4,6 +4,7 @@ slug: migrare-i-dati-da-un-server-dedicato-a-un-altro
 excerpt: Come migrare i dati da un server dedicato a un altro
 section: Per iniziare
 order: 5
+updated: 2021-09-16
 ---
 
 > [!primary]

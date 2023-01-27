@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/ca/fr/private-cloud/changement-du-mot-de-passe-utilisateur/'
 excerpt: Découvrez comment modifier le mot de passe d'un utilisateur du client vSphere depuis votre espace client OVHcloud
 section: Fonctionnalités OVHcloud
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

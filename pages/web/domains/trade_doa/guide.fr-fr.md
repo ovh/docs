@@ -4,6 +4,7 @@ slug: trade_doa
 excerpt: "Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)"
 section: 'Changement de propriétaire'
 order: 02
+updated: 2022-10-10
 ---
 
 **Dernière mise à jour le 10/10/2022**

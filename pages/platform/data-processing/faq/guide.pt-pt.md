@@ -5,6 +5,7 @@ section: Getting started
 order: 3
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/data-processing-faq/'
+updated: 2020-06-16
 ---
 
 **Last updated 16<sup>th</sup> June, 2020**

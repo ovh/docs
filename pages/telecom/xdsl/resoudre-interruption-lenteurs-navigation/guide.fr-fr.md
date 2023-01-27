@@ -3,6 +3,7 @@ title: 'Résoudre une interruption ou des lenteurs de navigation'
 slug: resoudre-interruption-lenteurs-navigation
 excerpt: 'Découvrez comment rétablir votre accès à Internet ou identifier un élément perturbateur'
 section: 'Diagnostic et dépannage'
+updated: 2021-02-16
 ---
 
 **Dernière mise à jour le 16/02/2021**

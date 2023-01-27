@@ -4,6 +4,7 @@ slug: manager-ovh-private-cloud
 excerpt: Odkryj możliwości Panelu klienta Private Cloud
 section: Pierwsze kroki
 order: 1
+updated: 2021-12-15
 ---
 
 **Ostatnia aktualizacja z dnia 17-06-2020**

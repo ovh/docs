@@ -4,6 +4,7 @@ slug: przenoszenie-kont-e-mail
 excerpt: Dowiedz się, jak ręcznie przenieść Twoje konto e-mail na inny adres e-mail
 section: Migracja
 order: 01
+updated: 2021-01-05
 ---
 
 **Ostatnia aktualizacja z dnia 27-10-2020**

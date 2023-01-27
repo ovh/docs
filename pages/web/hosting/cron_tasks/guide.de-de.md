@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting k
 slug: webhosting_automatisierte_aufgaben_cron
 section: 'Automatische Tasks (CRON)'
 order: 01
+updated: 2022-12-01
 ---
 
 > [!primary]

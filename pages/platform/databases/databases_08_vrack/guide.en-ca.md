@@ -4,6 +4,7 @@ slug: configure-vrack
 excerpt: Connect a Public Cloud Database to vRack
 section: General guides
 order: 035
+updated: 2022-10-26
 ---
 
 **Last updated October 26, 2022**

@@ -6,6 +6,7 @@ section: Storage
 order: 3
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backing-up-cluster-with-velero/'
+updated: 2023-01-11
 ---
 
 <style>

@@ -4,6 +4,7 @@ slug: konfiguracja-ipv6
 excerpt: 'Dowiedz się, jak skonfigurować IPv6 na VPS OVHcloud'
 section: 'Sieć & IP'
 order: 1
+updated: 2022-12-01
 ---
 
 > [!primary]

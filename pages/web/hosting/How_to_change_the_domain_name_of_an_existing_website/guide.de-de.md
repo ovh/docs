@@ -4,6 +4,7 @@ slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
 section: "Tutorials"
 order: 02
+updated: 2022-10-25
 ---
 
 > [!primary]

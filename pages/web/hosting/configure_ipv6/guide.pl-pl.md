@@ -4,6 +4,7 @@ slug: konfiguracja-ipv6-dla-twojej-strony
 excerpt: Dowiedz się, jak stworzyć stronę WWW kompatybilną z IPv6
 section: 'Konfiguracja hostingu'
 order: 06
+updated: 2020-11-27
 ---
 
 > [!primary]

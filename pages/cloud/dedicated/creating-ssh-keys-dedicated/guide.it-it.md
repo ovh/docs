@@ -4,6 +4,7 @@ slug: creare-chiave-ssh-dedicata
 excerpt: 'Come generare una chiave SSH per connettersi in modo sicuro a un server dedicato'
 section: 'Per iniziare'
 order: 4
+updated: 2022-03-31
 ---
 
 **Ultimo aggiornamento: 01/04/2022**

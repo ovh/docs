@@ -3,6 +3,7 @@ title: 'Configurare un blocco di indirizzi IP nella vRack'
 slug: configurare-blocco-ip-nella-vRack
 excerpt: 'Scopri come configurare un blocco di indirizzi IP nella vRack'
 section: vRack
+updated: 2022-07-26
 ---
 
 **Ultimo aggiornamento: 26/07/2022**

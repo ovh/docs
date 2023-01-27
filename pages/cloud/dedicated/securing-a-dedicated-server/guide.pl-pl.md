@@ -4,6 +4,7 @@ slug: porady-zabezpieczanie-serwera-dedykowanego
 excerpt: 'Dowiedz się, jak zwiększyć bezpieczeństwo serwera dedykowanego'
 section: 'Pierwsze kroki'
 order: 2
+updated: 2018-06-20
 ---
 
 **Ostatnia aktualizacja z dnia 2018-08-13**

@@ -5,6 +5,7 @@ excerpt: Comprendre le mécanisme de Zmotion
 legacy_guide_number: '4161650'
 section: Services et options OVHcloud
 order: 08
+updated: 2020-07-13
 ---
 
 **Dernière mise à jour le 03/07/2020**

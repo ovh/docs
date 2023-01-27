@@ -4,6 +4,7 @@ slug: pierwsze-kroki-z-clouddb
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB'
 section: 'Pierwsze kroki'
 order: 01
+updated: 2022-06-22
 ---
 
 **Ostatnia aktualizacja dnia 22-06-2022**

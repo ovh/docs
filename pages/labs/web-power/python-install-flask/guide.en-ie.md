@@ -4,6 +4,7 @@ slug: python-install-flask
 excerpt: Find out how to install Flask on your POWER web hosting plan
 section: Python
 order: 2
+updated: 2021-01-05
 ---
 
 <style>

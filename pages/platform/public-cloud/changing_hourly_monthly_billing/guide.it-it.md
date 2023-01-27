@@ -3,6 +3,7 @@ title: 'Passare dalla fatturazione oraria a quella mensile'
 excerpt: 'Scopri come modificare il tipo di fatturazione delle tua istanza Public Cloud'
 slug: cambiare-tipo-fatturazione-public-cloud
 section: 'Gestione del progetto'
+updated: 2023-01-23
 ---
 
 **Ultimo aggiornamento 23/01/2023**

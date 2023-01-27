@@ -4,6 +4,7 @@ slug: conectarse_como_usuario_root_y_establecer_una_contrasena
 excerpt: 'Esta guía explica cómo configurar el usuario root y la contraseña de la cuenta root'
 section: Primeros pasos
 order: 08
+updated: 2022-03-24
 ---
 
 **Última actualización: 24/03/2022**

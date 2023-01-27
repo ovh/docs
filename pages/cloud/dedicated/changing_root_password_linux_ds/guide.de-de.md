@@ -4,6 +4,7 @@ slug: root-passwort-aendern-linux-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie das administrative Passwort Ihres Dedicated Servers ändern'
 section: 'Server Management'
 order: 1
+updated: 2021-02-16
 ---
 
 > [!primary]

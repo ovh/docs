@@ -4,6 +4,7 @@ excerpt: Saiba como se ligar ao seu Hosted Private Cloud em SFTP
 slug: ligacao_por_sftp
 section: Introdução
 order: 3
+updated: 2021-12-28
 ---
 
 **Última atualização: 28/12/2021**

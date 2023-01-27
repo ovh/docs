@@ -6,6 +6,7 @@ routes:
 excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend to store your Terraform state'
 section: Tutorials
 order: 03
+updated: 2022-07-11
 ---
 
 <style>

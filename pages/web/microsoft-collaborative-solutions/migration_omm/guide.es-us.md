@@ -4,6 +4,7 @@ slug: exchange-migracion-de-cuentas-correo-ovh-mail-migrator
 excerpt: 'Cómo utilizar OVH Mail Migrator para migrar una cuenta de correo electrónico'
 section: Migración de una cuenta
 order: 03
+updated: 2022-02-14
 ---
 
 **Última actualización: 01/06/2018**

@@ -4,6 +4,7 @@ slug: korzystanie-z-vouchera
 excerpt: 'Dowiedz się, jak dodać zasilenie lub vouchery do Twojego projektu Public Cloud'
 section: 'Informacje wprowadzające'
 order: 3
+updated: 2022-02-04
 ---
 
 > [!primary]

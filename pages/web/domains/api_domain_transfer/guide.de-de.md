@@ -6,6 +6,7 @@ section: "Domains API"
 order: 9
 routes:
   canonical: "https://docs.ovh.com/gb/en/domains/api-transfer/"
+updated: 2022-07-21
 ---
 
 **Last updated 21st July 2022**

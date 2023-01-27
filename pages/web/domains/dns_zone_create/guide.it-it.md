@@ -5,6 +5,7 @@ excerpt: 'Come creare una zona DNS per il tuo dominio dallo Spazio Cliente'
 legacy_guide_number: g2229
 section: 'DNS e zona DNS'
 order: 02
+updated: 2018-08-06
 ---
 
 **Ultimo aggiornamento: 30/11/2018**

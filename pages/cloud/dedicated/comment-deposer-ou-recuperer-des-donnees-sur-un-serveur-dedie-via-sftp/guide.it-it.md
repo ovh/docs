@@ -3,6 +3,7 @@ title: 'Caricare e recuperare dati su un server dedicato tramite il protocollo S
 slug: caricare-e-recuperare-dati-via-sftp
 excerpt: 'Come trasferire dati da un server dedicato a un computer personale e viceversa'
 section: Tutorial
+updated: 2021-05-18
 ---
 
 > [!primary]

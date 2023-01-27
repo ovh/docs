@@ -3,6 +3,7 @@ title: 'Usunięcie błędu dla domeny'
 slug: domena-errors
 section: Zadania bieżące
 order: 02
+updated: 2022-09-01
 ---
 
 > [!primary]

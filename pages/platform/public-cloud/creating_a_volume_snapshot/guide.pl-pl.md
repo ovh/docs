@@ -4,6 +4,7 @@ slug: migawka-wolumenu
 excerpt: Dowiedz się, jak utworzyć snapshot dodatkowego dysku Public Cloud
 section: Przestrzeń dyskowa
 order: 2
+updated: 2023-01-09
 ---
 
 > [!primary]

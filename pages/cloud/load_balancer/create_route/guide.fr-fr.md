@@ -3,6 +3,7 @@ title: "Configuration d'un service OVHcloud Load Balancer avec les routes HTTP"
 slug: routes
 excerpt: 'Dirigez dynamiquement vos requêtes vers une ferme en particulier'
 section: Configuration
+updated: 2018-04-09
 ---
 
 **Dernière mise à jour le 28/03/2022**

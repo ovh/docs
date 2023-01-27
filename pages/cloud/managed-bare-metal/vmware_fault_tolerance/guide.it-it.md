@@ -6,6 +6,7 @@ routes:
 excerpt: Come garantire la disponibilità continua delle VM con il servizio Fault Tolerance
 section: Funzionalità VMware vSphere
 order: 06
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

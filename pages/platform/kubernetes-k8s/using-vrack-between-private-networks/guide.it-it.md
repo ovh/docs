@@ -6,6 +6,7 @@ section: Network
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/using-vrack-between-private-networks/'
+updated: 2022-07-25
 ---
 
 **Last updated July 25th, 2022.**

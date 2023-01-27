@@ -6,6 +6,7 @@ excerpt: This long-term storage feature keeps your logs safely and cost efficien
 section: Features
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/cold-storage/'
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

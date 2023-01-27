@@ -4,6 +4,7 @@ slug: erste-schritte-mit-webhosting
 excerpt: So starten Sie mit Ihrem Webhosting
 section: 'Erste Schritte'
 order: 02
+updated: 2022-11-11
 ---
 
 **Stand 14.11.2022** 

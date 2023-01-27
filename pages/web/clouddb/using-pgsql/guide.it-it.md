@@ -4,6 +4,7 @@ slug: come-utilizzare-postgresql
 excerpt: Guida all'utilizzo dei tuoi database
 section: Per iniziare
 order: 03
+updated: 2022-10-28
 ---
 
 Vuoi utilizzare PostgreSQL? Scopri come creare e gestire i tuoi database con la massima semplicità!

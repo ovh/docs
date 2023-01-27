@@ -3,6 +3,7 @@ title: Ridimensionare il file system su FreeBSD 12
 slug: ridimensionare-il-file-system-su-freebsd
 excerpt: Scopri come ridimensionare il file system di un'istanza Public Cloud o di un VPS con FreeBSD 12
 section: Tutorial
+updated: 2020-10-27
 ---
 
 > [!primary]

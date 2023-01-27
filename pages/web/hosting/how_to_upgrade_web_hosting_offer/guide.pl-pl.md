@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak zmienić formułę subskrypcji hostingu OVHcloud"
 slug: how_to_change_hosting_offer
 section: Optymalizacja strony WWW
 order: 02
+updated: 2023-01-03
 ---
 
 > [!primary]

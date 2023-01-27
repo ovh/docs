@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/ca/fr/vps/windows-first-config/'
 excerpt: Decouvrez ici comment activer la connexion au Bureau a distance via KVM si celle-ci est desactivee.
 section: Premiers pas
+updated: 2022-01-18
 ---
 
 **Derniére mise à jour le 18/01/2022**

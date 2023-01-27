@@ -4,6 +4,7 @@ slug: node-pools-crd
 excerpt: ''
 section: User guides
 order: 2
+updated: 2022-02-18
 ---
 
 <style>

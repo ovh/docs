@@ -6,6 +6,7 @@ excerpt: Logs Data Platform can be used in multiple ways. Twitter feed and keywo
 section: Use cases
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/twitter/'
+updated: 2019-04-10
 ---
 
 **Last updated 10th April, 2019**

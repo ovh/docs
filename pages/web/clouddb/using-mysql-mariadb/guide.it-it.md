@@ -4,6 +4,7 @@ slug: come-utilizzare-mysql-e-mariadb
 excerpt: Guida all'utilizzo dei tuoi database
 section: Per iniziare
 order: 02
+updated: 2022-06-29
 ---
 
 > [!primary]

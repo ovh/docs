@@ -6,6 +6,7 @@ section: AI Training - Tutoriels
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/'
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

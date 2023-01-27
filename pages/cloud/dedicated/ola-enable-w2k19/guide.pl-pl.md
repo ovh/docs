@@ -4,6 +4,7 @@ slug: ola-w2k19
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Windows Server 2019'
 section: 'Poziom zaawansowany'
 order: 4
+updated: 2021-03-25
 ---
 
 **Ostatnia aktualizacja z dnia 25-03-2021**

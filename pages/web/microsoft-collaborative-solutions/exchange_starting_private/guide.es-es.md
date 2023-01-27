@@ -4,6 +4,7 @@ slug: exchange_primeros_pasos_con_un_servidor_private
 excerpt: 'Cómo configurar el servidor Private Exchange'
 section: 'Primeros pasos con Exchange'
 order: 02
+updated: 2020-04-17
 ---
 
 **Última actualización: 25/3/2020**

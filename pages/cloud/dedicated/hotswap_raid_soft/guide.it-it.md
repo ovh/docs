@@ -3,6 +3,7 @@ title: 'Sostituire un disco a caldo su un server con RAID Software'
 slug: hotswap-raid-soft
 excerpt: 'Come sostituire un disco senza interruzione di servizio sul tuo server con RAID Software'
 section: 'RAID e dischi'
+updated: 2016-11-21
 ---
 
 **Ultimo aggiornamento: 20/12/2019**

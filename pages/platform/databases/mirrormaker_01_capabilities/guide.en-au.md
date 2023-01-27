@@ -4,6 +4,7 @@ slug: mirrormaker/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
 section: Kafka MirrorMaker - Guides
 order: 1
+updated: 2023-01-19
 ---
 
 **Last updated January 19th, 2023**

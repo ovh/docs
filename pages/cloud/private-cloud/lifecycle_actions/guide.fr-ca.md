@@ -4,6 +4,7 @@ slug: lifecycle-actions
 excerpt: Découvrez les actions à mener sur votre offre Hosted Private Cloud powered by VMware, en fonction de ses caractéristiques
 section: FAQ
 order: 011
+updated: 2022-12-27
 ---
 
 **Dernière mise à jour le 27/12/2022**

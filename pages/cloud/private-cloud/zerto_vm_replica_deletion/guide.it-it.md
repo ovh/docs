@@ -3,6 +3,7 @@ title: "Eliminare la copia di una VM dal sito di recupero Zerto"
 slug: zerto-vm-replica-deletion
 excerpt: Come eliminare una VM dal sito di recupero quando viene eliminata dal sito di origine
 section: Servizi e opzioni OVHcloud
+updated: 2021-12-09
 ---
 
 > [!primary]

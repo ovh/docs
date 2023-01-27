@@ -6,6 +6,7 @@ routes:
 excerpt: Cómo instrumentar una máquina virtual desde la interfaz vSphere
 section: Gestión de las máquinas virtuales
 order: 0
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

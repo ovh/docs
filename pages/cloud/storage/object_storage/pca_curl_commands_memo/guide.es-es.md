@@ -6,6 +6,7 @@ routes:
 excerpt: Find here the main curl commands for managing your Public Cloud Archive object containers
 section: OpenStack Swift Archive Storage Class Specifics
 order: 060
+updated: 2021-10-27
 ---
 
 **Last updated 27th October 2021**

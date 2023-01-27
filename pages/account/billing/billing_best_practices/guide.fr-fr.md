@@ -4,6 +4,7 @@ slug : billing-best-practices
 excerpt : Retrouvez ici les éléments indispensables pour la bonne gestion de vos factures, commandes, moyens de paiement et compte client
 section : Gérer mes services et leur renouvellement
 order : 02
+updated: 2022-05-02
 ---
 
 **Dernière mise à jour le 02/05/2022**

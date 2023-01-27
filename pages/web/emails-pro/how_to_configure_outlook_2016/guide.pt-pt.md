@@ -4,6 +4,7 @@ slug: configuracao-outlook-2016
 excerpt: 'Saiba como configurar uma conta Email Pro no Outlook para Windows'
 section: 'Configuração do software cliente de e-mail'
 order: 1
+updated: 2021-07-05
 ---
 
 > [!primary]

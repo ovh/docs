@@ -5,6 +5,7 @@ excerpt: 'Find out how to customize CoreDNS on an OVHcloud Managed Kubernetes cl
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/customizing-coredns/'
+updated: 2022-10-11
 ---
 
 <style>

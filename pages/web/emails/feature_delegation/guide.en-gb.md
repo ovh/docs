@@ -5,6 +5,7 @@ slug: delegate-managing-emails
 excerpt: 'Find out how to delegate the management of email accounts for your MX Plan solution'
 section: 'Email address features'
 order: 05
+updated: 2021-10-08
 ---
 
 **Last updated 8th October 2021**

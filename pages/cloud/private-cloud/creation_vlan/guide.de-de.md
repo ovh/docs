@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to create VLANs in your vRack
 section: OVHcloud Funktionen
 order: 02
+updated: 2022-02-07
 ---
 
 **Last updated 7th February 2022**

@@ -4,6 +4,7 @@ slug: high-level-documentation
 excerpt: "Les détails techniques de l'infrastructure Nutanix chez OVHcloud"
 section: Premiers pas
 order: 01
+updated: 2022-12-08
 ---
 
 **Last updated 8th December 2022**

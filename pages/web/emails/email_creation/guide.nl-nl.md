@@ -5,6 +5,7 @@ slug: webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres
 excerpt: 'Leer hoe u een e-mailadres met MX Plan kunt aanmaken'
 section: 'Beheer uw e-mailadres'
 order: 1
+updated: 2022-10-11
 ---
 
 **Laatste update 12-04-2018**

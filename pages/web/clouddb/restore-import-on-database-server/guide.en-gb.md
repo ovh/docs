@@ -4,6 +4,7 @@ slug: restore-import-database
 excerpt: 'Find out how to restore and import your database'
 section: Configuration
 order: 05
+updated: 2022-06-29
 ---
 
 **Last updated 29th June 2022**

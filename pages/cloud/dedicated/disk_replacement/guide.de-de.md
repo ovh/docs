@@ -3,6 +3,7 @@ title: 'Eine defekte Festplatte austauschen'
 slug: disk-replacement
 excerpt: 'In dieser Anleitung erklären wir Ihnen, wie Sie eine defekte Festplatte erkennen und deren Austausch beantragen.'
 section: 'Diagnose & Rescue Modus'
+updated: 2018-06-21
 ---
 
 **Letzte Aktualisierung am 28.08.2018**

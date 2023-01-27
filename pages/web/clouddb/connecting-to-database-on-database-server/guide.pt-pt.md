@@ -4,6 +4,7 @@ slug: conexao-base-de-dados-servidor-bdd
 excerpt: 'Saiba como se conectar a uma base de dados'
 section: Configuração
 order: 03
+updated: 2022-09-22
 ---
 
 > [!primary]

@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/ca/fr/vps/reinitialiser-un-mot-de-passe-windows'
 excerpt: "Guide de réinitialisation d'un mot de passe sous Windows"
 section: Tutoriels
+updated: 2020-11-25
 ---
 
 **Dernière mise à jour le 26/11/2020**

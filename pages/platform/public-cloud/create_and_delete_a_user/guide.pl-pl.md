@@ -4,6 +4,7 @@ slug: tworzenie-i-usuwanie-uzytkownika-openstack
 section: 'Zarządzanie w Panelu klienta OVH'
 excerpt: Dowiedz się, jak utworzyć i usunąć użytkownika OpenStack w Panelu klienta OVHcloud
 order: 9
+updated: 2022-03-16
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: "Nozione di numero d'ordine o Purchase Order (PO)"
 slug: purchase-order
 excerpt: Comprendere il concetto di numero d'ordine o purchase order e applicarlo nel contesto del saldo delle fatture OVHcloud
 section: Fatturazione
+updated: 2022-07-22
 ---
 
 > [!primary]

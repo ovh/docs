@@ -4,6 +4,7 @@ slug: exchange-configuration-de-thunderbird-mac
 excerpt: 'Découvrez comment configurer votre adresse e-mail Exchange sur Thunderbird pour Mac OS'
 section: 'Configuration sur ordinateur'
 order: 05
+updated: 2021-08-26
 ---
 
 **Dernière mise à jour le 23/08/2021**

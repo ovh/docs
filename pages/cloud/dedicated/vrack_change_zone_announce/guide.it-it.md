@@ -3,6 +3,7 @@ title: 'Modificare i blocchi IP annunciati nella vRack'
 slug: modificare-blocchi-ip-annunciati-vrack
 excerpt: 'Come cambiare l’annuncio di un blocco IP nella rete privata vRack'
 section: vRack
+updated: 2019-03-12
 ---
 
 **Ultimo aggiornamento: 21/08/2019**

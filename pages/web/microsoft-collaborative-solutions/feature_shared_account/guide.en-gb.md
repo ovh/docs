@@ -4,6 +4,7 @@ slug: exchange-using-share-accounts
 excerpt: Find out how to add and use a shared account on your Exchange email solution
 section: Exchange account features
 order: 06
+updated: 2021-06-15
 ---
 
 **Last updated 15th June 2021**

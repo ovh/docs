@@ -4,6 +4,7 @@ slug: getting-started-openstack-api
 excerpt: Cómo gestionar sus instancias con ayuda del cliente Python OpenStack
 section: OpenStack
 order: 3
+updated: 2022-10-13
 ---
 
 > [!primary]

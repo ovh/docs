@@ -4,6 +4,7 @@ slug: installation-de-composer-sur-les-hebergements-mutualises
 excerpt: Découvrez comment installer et faire vos premiers pas sur Composer.
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 **Dernière mise à jour le 09/12/2022**

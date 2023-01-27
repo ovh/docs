@@ -3,6 +3,7 @@ title: Aggiorna il tuo sistema operativo
 slug: upgrade-os
 excerpt: Come aggiornare un sistema operativo alla fine del ciclo di vita
 section: Tutorial
+updated: 2022-02-07
 ---
 
 > [!primary]

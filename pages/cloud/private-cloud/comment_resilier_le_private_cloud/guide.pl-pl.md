@@ -4,6 +4,7 @@ slug: jak-zrezygnowac-z-private-cloud
 excerpt: Dowiedz się, jak zrezygnować z infrastruktury Private Cloud
 section: Funkcjonalności OVHcloud
 order: 09
+updated: 2020-07-08
 ---
 
 **Ostatnia aktualizacja z dnia 08-10-2020**

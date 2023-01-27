@@ -5,6 +5,7 @@ slug: order-ssl-gateway
 links: 
    - docs/web/ssl-gateway/use_ssl_gateway/
 excerpt: Beveilig verbindingen met uw website
+updated: 2022-12-01
 ---
 
 

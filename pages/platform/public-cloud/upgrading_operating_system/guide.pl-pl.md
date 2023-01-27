@@ -3,6 +3,7 @@ title: Aktualizacja systemu operacyjnego
 slug: upgrade-os
 excerpt: 'Dowiedz się, jak zaktualizować system operacyjny pod koniec życia'
 section: 'Tutoriale'
+updated: 2022-02-07
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Configuring an email address on the macOS Mail app'
 slug: guide-configuring-mail-on-macos
 section: 'Configure on computer'
 order: 03
+updated: 2022-06-13
 ---
 
 ---

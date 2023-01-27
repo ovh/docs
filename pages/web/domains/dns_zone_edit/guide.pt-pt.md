@@ -4,6 +4,7 @@ slug: alojamento_partilhado_como_editar_a_minha_zona_dns
 excerpt: 'Saiba como editar uma zona DNS da OVHcloud através da Área de Cliente'
 order: 3
 section: 'DNS e zona DNS'
+updated: 2022-07-07
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: technische-eigenschaften-web-hosting
 excerpt: 'Erfahren Sie hier mehr zum technischen Leistungsvermögen Ihrer Hosting-Lösung'
 section: 'Webhosting-Konfiguration'
 order: 05
+updated: 2022-11-18
 ---
 
 > [!primary]

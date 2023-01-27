@@ -6,6 +6,7 @@ routes:
 excerpt: Descubra los diferentes formatos de disco
 section: Gestión de las máquinas virtuales
 order: 04
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

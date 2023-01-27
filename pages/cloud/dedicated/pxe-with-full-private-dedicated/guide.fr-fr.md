@@ -4,6 +4,7 @@ slug: netboot-ola
 excerpt: "Découvrez comment réaliser les redémarrages de vos serveurs OVHcloud fonctionnant à travers votre agrégation privée active"
 section: 'Utilisation avancée'
 order: 05
+updated: 2022-12-14
 ---
 
 **Dernière mise à jour le 14/12/2022**

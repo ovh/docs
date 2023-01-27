@@ -4,6 +4,7 @@ slug: vmware-ha-high-availability
 excerpt: Manage restart policy with HA function
 section: VMware vSphere features
 order: 02
+updated: 2020-04-30
 ---
 
 **Last updated Apr. 30th 2020**

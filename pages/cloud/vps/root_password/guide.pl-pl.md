@@ -3,6 +3,7 @@ title: Zmiana hasła root na serwerze VPS
 slug: root-password
 excerpt: Sprawdź, jak zmienić hasło root
 section: Diagnostyka i tryb Rescue
+updated: 2021-04-20
 ---
 
 **Ostatnia aktualizacja z dnia 27/04/2021**

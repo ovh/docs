@@ -3,6 +3,7 @@ deprecated: true
 title: Aan de slag met PostgreSQL
 slug: aan-de-slag-met-postgresql
 excerpt: Using Your Databases
+updated: 2022-10-28
 ---
 
 Wilt u gebruikmaken van PostgreSQL? Leer hoe u uw databases met gemak kunt beheren!

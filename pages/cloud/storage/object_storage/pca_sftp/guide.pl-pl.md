@@ -4,6 +4,7 @@ slug: pca/sftp
 excerpt: Przewodnik ten wyjasnia, jak zarzadzac usuga Public Cloud Archive.
 section: OpenStack Swift Archive Storage Class Specifics
 order: 100
+updated: 2022-05-13
 ---
 
 **Ostatnia aktualizacja z dnia 13-05-2022**

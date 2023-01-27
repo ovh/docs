@@ -4,6 +4,7 @@ slug: configurar-otimizar-servidor-de-bases-de-dados
 excerpt: 'Saiba como configurar e otimizar o servidor de bases de dados'
 section: 'Configuração'
 order: 06
+updated: 2022-06-30
 ---
 
 > [!primary]

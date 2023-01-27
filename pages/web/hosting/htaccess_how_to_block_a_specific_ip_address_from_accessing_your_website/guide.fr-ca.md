@@ -4,6 +4,7 @@ slug: mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site
 excerpt: "Découvrez les actions possibles via un fichier .htaccess afin de bloquer l'accès à votre site à certaines adresses IP"
 section: Réécriture et authentification
 order: 01
+updated: 2022-09-12
 ---
 
 **Dernière mise à jour le 12/09/2022**

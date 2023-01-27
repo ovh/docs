@@ -3,6 +3,7 @@ title: 'Envoyer des SMS depuis une adresse e-mail'
 slug: envoyer-sms-depuis-adresse-email
 excerpt: 'Découvrez comment envoyer des SMS depuis une adresse email'
 section: 'Envoyer des SMS'
+updated: 2020-06-04
 ---
 
 **Dernière mise à jour le 19/05/2020**

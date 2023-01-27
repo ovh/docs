@@ -4,6 +4,7 @@ excerpt: "Entdecken Sie nützliche Grundkenntnisse, um in der Public Cloud Umgeb
 slug: public-cloud-essential-information
 section: Erste Schritte
 order: 01
+updated: 2022-02-07
 ---
 
 > [!primary]

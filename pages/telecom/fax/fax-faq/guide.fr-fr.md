@@ -4,6 +4,7 @@ excerpt: Retrouvez les questions les plus fréquemment posées sur le service Fa
 slug: faq-fax
 section: Premiers pas
 order: 5
+updated: 2022-06-24
 ---
 
 **Dernière mise à jour le 24/06/2022** 

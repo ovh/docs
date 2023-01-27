@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie die Kontakte eines Public Cloud Projekts ver
 slug: die_kontakte_eines_projekts_andern
 section: 'Projektverwaltung'
 order: 6
+updated: 2022-04-04
 ---
 
 > [!primary]

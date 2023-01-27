@@ -6,6 +6,7 @@ section: Rete e Sicurezza
 order: 11
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/software-gateway-replacement/'
+updated: 2022-12-05
 ---
 
 **Last updated 5th December 2022**

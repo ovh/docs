@@ -4,6 +4,7 @@ slug: configurer-email-pro-mail-macos
 excerpt: 'Apprenez à configurer votre compte E-mail Pro sur Mail de macOS'
 section: 'Configuration sur ordinateur'
 order: 3
+updated: 2022-06-13
 ---
 
 **Dernière mise à jour le 13/06/2022**

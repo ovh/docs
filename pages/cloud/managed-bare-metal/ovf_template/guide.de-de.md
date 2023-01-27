@@ -6,6 +6,7 @@ routes:
 excerpt: Erfahren Sie hier, wie Sie ein Linux, Windows Server oder Windows SQL Server Template deployen
 section: Verwaltung virtueller Maschinen
 order: 02
+updated: 2020-11-18
 ---
 
 > [!primary]

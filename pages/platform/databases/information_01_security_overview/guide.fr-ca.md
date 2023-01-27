@@ -6,6 +6,7 @@ section: Informations générales
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/concepts-security-overview/'
+updated: 2022-11-21
 ---
 
 **Last updated 21st November 2022**

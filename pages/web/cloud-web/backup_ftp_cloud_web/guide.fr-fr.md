@@ -3,6 +3,7 @@ title: "Récupérer la sauvegarde de l'espace FTP de son hébergement Cloud Web"
 slug: backup_ftp_cloud_web
 section: Sauvegardes
 order: 01
+updated: 2022-09-13
 ---
 
 **Dernière mise à jour le 13/09/2022**

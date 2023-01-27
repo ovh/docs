@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz in Ihrem OVHcloud 
 slug: ein_backup_einer_instanz_erstellen
 section: Verwaltung im OVHcloud Kundencenter
 order: 1
+updated: 2023-01-04
 ---
 
 > [!primary]

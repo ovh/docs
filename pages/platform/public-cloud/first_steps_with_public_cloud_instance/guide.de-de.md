@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Instanzen im OVHcloud Kund
 slug: die_ersten_schritte_mit_ihrer_public_cloud_instanz
 section: 'Erste Schritte'
 order: 05
+updated: 2023-01-04
 ---
 
 > [!primary]

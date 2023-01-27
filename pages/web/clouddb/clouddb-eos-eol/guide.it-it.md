@@ -2,6 +2,7 @@
 title: 'Annunci di fine vendita/vita CloudDB'
 slug: clouddb-eos-eol
 section: 'Risorse tecniche'
+updated: 2022-07-21
 ---
 
 > [!primary]

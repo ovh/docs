@@ -5,6 +5,7 @@ slug: tutto_sullidentificativo_cliente_ovh
 legacy_guide_number: g2123
 section: 'Per iniziare'
 order: 3
+updated: 2021-07-01
 ---
 
 > [!primary]

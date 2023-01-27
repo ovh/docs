@@ -4,6 +4,7 @@ excerpt: Cómo utilizar el vRack con la solución Hosted Private Cloud
 slug: anadir_un_dedicated_cloud_al_vrack_15_y_configurar_una_mv
 legacy_guide_number: g1257
 section: Servicios y opciones de OVHcloud
+updated: 2022-03-28
 ---
 
 > [!primary]

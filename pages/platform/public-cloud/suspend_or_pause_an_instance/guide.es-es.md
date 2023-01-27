@@ -4,6 +4,7 @@ slug: suspender_o_poner_en_pausa_una_instancia
 legacy_guide_number: g1781
 section: Gestión del proyecto
 order: 03
+updated: 2021-09-20
 ---
 
 > [!primary]

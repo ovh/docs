@@ -4,6 +4,7 @@ slug: demarrez-avec-mysql-et-mariadb
 excerpt: 'Utilisez vos bases de données'
 section: 'Premiers pas'
 order: 02
+updated: 2022-06-29
 ---
 
 **Dernière mise à jour le 29/06/2022**

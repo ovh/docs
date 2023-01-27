@@ -4,6 +4,7 @@ slug: installer-camaleon-cloud-web
 excerpt: 'Découvrez comment installer un Camaleon CMS sur Cloud Web'
 section: Tutoriels
 order: 03
+updated: 2022-05-04
 ---
 
 **Dernière mise à jour le 04/05/2022**

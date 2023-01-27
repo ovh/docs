@@ -4,6 +4,7 @@ slug: web_hosting_publicar_un_sitio_web_en_internet
 excerpt: 'Cómo subir un sitio web a un alojamiento de OVHcloud para publicarlo en internet'
 section: 'Primeros pasos'
 order: 06
+updated: 2022-07-21
 ---
 
 > [!primary]

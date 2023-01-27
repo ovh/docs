@@ -5,6 +5,7 @@ excerpt: 'This guide will show you how to do IP bridging on a pfSense virtual ma
 section: Tutoriales
 routes:
     canonical: 'https://docs.ovh.com/gb/en/dedicated/pfSense-bridging/'
+updated: 2022-12-20
 ---
 
 **Last updated 20th December 2022**

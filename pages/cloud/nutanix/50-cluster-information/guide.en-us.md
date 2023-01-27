@@ -4,6 +4,7 @@ slug: nutanix-cluster-information
 excerpt: Find out how to retrieve essential information on the status of your Nutanix cluster
 section: Troubleshooting
 order: 01
+updated: 2022-03-14
 ---
 
 **Last updated 14th March 2022**

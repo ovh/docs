@@ -4,6 +4,7 @@ excerpt: Find out how to set up and manage your Public Cloud Databases for OpenS
 slug: opensearch/getting-started
 section: OpenSearch - Guides
 order: 020
+updated: 2021-12-06
 ---
 
 **Last updated 06<sup>th</sup> December 2021**

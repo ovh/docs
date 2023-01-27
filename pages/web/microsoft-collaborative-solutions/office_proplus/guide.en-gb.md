@@ -4,6 +4,7 @@ slug: office365-proplus-remote-desktop
 excerpt: Find out how to install and use Microsoft 365 apps on a remote desktop (RDS) or shared computer
 section: Office
 order: 04
+updated: 2021-09-06
 ---
 
 **Last updated 6th September 2021**

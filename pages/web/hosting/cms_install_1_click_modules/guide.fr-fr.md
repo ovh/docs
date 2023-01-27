@@ -4,6 +4,7 @@ slug: modules-en-1-clic
 excerpt: 'Découvrez comment installer votre site via nos modules en 1 clic'
 section: CMS
 order: 01
+updated: 2023-01-26
 ---
 
 **Dernière mise à jour le 24/01/2023**

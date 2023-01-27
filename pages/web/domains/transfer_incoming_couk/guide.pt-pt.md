@@ -4,6 +4,7 @@ slug: web_hosting_how_to_transfer_a_couk_domain_name
 excerpt: 'Neste guia encontrará diferentes informações relativas à transferência de um nome de domínio .uk ou equiparado para a OVHcloud'
 section: Transferência
 order: 04
+updated: 2022-10-19
 ---
 
 > [!primary]

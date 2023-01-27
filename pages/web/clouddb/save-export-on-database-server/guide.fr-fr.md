@@ -4,6 +4,7 @@ slug: sauvegarder-exporter-une-base-de-donnees
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
 section: 'Configuration'
 order: 04
+updated: 2022-06-27
 ---
 
 **Dernière mise à jour le 23/06/2022**

@@ -4,6 +4,7 @@ slug: primi-passi-public-cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
 section: Per iniziare
 order: 1
+updated: 2022-11-17
 ---
 
 **Ultimo aggiornamento: 17/11/2022**

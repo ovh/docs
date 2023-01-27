@@ -5,6 +5,7 @@ slug: einrichten_von_auto-antworten
 section: 'E-Mail Account Funktionen'
 order: 02
 legacy_guide_number: g2052
+updated: 2021-04-20
 ---
 
 > [!primary]

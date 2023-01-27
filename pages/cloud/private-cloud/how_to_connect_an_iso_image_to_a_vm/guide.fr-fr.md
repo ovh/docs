@@ -3,6 +3,7 @@ title: Connecter une image ISO à une VM
 excerpt: Comment connecter une image ISO à une machine virtuelle ?
 slug: connect_iso_to_vm
 section: Premiers pas
+updated: 2022-01-11
 ---
 
 **Dernière mise à jour le 11/01/2022**

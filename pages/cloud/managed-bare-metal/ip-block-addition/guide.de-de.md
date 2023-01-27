@@ -7,6 +7,7 @@ excerpt: Erfahren Sie hier, wie Sie einen IP-Block für Ihr Managed Bare Metal P
 legacy_guide_number: '7766457'
 section: OVHcloud Funktionen
 order: 1
+updated: 2020-11-18
 ---
 
 **Letzte Aktualisierung am 18.11.2020**

@@ -4,6 +4,7 @@ excerpt: Domande più frequenti sugli hosting web OVHcloud
 slug: faq-hosting-web
 section: Per iniziare
 order: 05
+updated: 2022-11-28
 ---
 
 > [!primary]

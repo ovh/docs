@@ -5,6 +5,7 @@ slug: skonfiguruj_alert
 section: 'Zarządzanie wirtualnymi maszynami'
 legacy_guide_number: g599
 order: 9
+updated: 2020-07-08
 ---
 
 **Ostatnia aktualizacja z dnia 03-09-2020**

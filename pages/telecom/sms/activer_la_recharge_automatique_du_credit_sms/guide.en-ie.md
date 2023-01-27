@@ -4,6 +4,7 @@ slug: enable-automatic-recredit-sms-credit
 excerpt: 'Find out how to manage your OVHcloud SMS credits'
 legacy_guide_number: '16254520'
 section: 'Managing your solution'
+updated: 2022-08-29
 ---
 
 **Last updated 29th August 2022**

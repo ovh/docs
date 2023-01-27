@@ -3,6 +3,7 @@ title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
 section: Services et options OVHcloud
+updated: 2022-02-11
 ---
 
 **Dernière mise à jour le 11/02/2022**

@@ -4,6 +4,7 @@ slug: vmware-drs-distributed-ressource-scheduler-new
 excerpt: Dowiedz się, jak kontrolować równoważenie obciążenia dzięki funkcji DRS
 section: Funkcjonalności VMware vSphere
 order: 03
+updated: 2020-07-07
 ---
 
 **Ostatnia aktualizacja z dnia 29-06-2020**

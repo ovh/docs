@@ -4,6 +4,7 @@ slug: deploy/tuto-streamlit-sounds-classification
 excerpt: How to deploy a Streamlit app to classify marine mammal sounds
 section: AI Deploy - Tutorials
 order: 03
+updated: 2022-11-24
 ---
 
 **Last updated 24th November, 2022.**

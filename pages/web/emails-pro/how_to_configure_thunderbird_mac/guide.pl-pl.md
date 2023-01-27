@@ -4,6 +4,7 @@ slug: konfiguracja-thunderbird-emailpro-mac
 excerpt: 'Dowiedz się, jak skonfigurować Twoje konto E-mail Pro w programie Thunderbird na urządzeniu z systemem macOS'
 section: 'Konfiguracja programu pocztowego'
 order: 6
+updated: 2021-08-26
 ---
 
 > [!primary]

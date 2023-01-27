@@ -4,6 +4,7 @@ slug: mettere-in-sicurezza-un-server-dedicato
 excerpt: 'Scopri come proteggere un server dedicato grazie ad alcuni suggerimenti'
 section: 'Per iniziare'
 order: 2
+updated: 2018-06-20
 ---
 
 **Ultimo aggiornamento: 04/10/2018**

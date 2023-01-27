@@ -4,6 +4,7 @@ slug: alterar-palavra-passe-utilizador-ftp
 excerpt: Saiba como alterar a palavra-passe de um utilizador FTP criado num alojamento web da OVH
 section: FTP e SSH
 order: 03
+updated: 2022-08-18
 ---
 
 > [!primary]

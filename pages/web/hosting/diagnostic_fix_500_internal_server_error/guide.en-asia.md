@@ -4,6 +4,7 @@ excerpt: Find out how to fix some of the most common website errors
 slug: web_hosting_how_to_fix_the_500_internal_server_error
 section: 'Troubleshooting'
 order: 06
+updated: 2022-07-21
 ---
 
 **Last updated 21st July 2022**

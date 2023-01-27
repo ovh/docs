@@ -4,6 +4,7 @@ excerpt: Learn how to associate an email address with your vSphere user
 slug: associate-email-with-vsphere-user
 legacy_guide_number: '1441987'
 section: OVHcloud Features
+updated: 2020-07-07
 ---
 
 **Last updated 7th July 2020**

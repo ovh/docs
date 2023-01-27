@@ -4,6 +4,7 @@ slug: korzystanie-z-sdk-vsphere
 excerpt: Dowiedz się, jak uruchomić SDK vSphere i jak z niego korzystać
 section: Funkcjonalności VMware vSphere
 order: 12
+updated: 2020-07-13
 ---
 
 **Ostatnia aktualizacja z dnia 01-07-2020**

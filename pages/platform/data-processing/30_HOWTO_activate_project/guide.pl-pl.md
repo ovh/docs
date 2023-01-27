@@ -6,6 +6,7 @@ section: How to
 order: 0
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/activation/'
+updated: 2020-03-06
 ---
 
 **Last updated 06<sup>th</sup> March, 2020**

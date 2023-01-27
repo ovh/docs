@@ -6,6 +6,7 @@ routes:
 excerpt: Utilisation et mise en place du SDK vSphere
 section: Fonctionnalités VMware vSphere
 order: 10
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18 novembre 2020**

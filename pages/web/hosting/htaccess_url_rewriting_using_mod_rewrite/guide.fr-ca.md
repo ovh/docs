@@ -4,6 +4,7 @@ slug: htaccess-reecriture-url-mod-rewrite
 excerpt: "Découvrez comment réécrire l'URL d'accès à votre site grâce au mod_rewrite via le fichier .htaccess"
 section: Réécriture et authentification
 order: 03
+updated: 2022-12-22
 ---
 
 **Dernière mise à jour le 22/12/2022**

@@ -3,6 +3,7 @@ title: "Configurer sa box à partir de l'espace client OVHcloud"
 slug: configuration_du_modem_a_partir_de_votre_espace_client
 excerpt: "Découvrez comment paramétrer à distance votre box OVHcloud depuis l'espace client"
 section: 'Configuration de mon offre'
+updated: 2022-12-08
 ---
 
 **Dernière mise à jour le 08/12/2022**

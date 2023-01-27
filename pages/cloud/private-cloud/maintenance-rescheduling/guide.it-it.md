@@ -3,6 +3,7 @@ title: Scegli la manutenzione pianificata su Hosted Private Cloud
 excerpt: "Questa guida ti mostra come impostare una manutenzione programmata sul tuo servizio Hosted Private Cloud powered by VMware"
 slug: maintenance-rescheduling
 section: Funzionalità OVHcloud
+updated: 2022-11-30
 ---
 
 > [!primary]

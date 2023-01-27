@@ -4,6 +4,7 @@ slug: web_hosting_come_importare_un_database_mysql
 excerpt: 'Come importare un backup in un database di un hosting Web OVH'
 section: Database
 order: 04
+updated: 2018-09-25
 ---
 
 **Ultimo aggiornamento: 28/03/2019**

@@ -4,6 +4,7 @@ slug: kopia-zapasowa-eksportowa-bazy-danych
 excerpt: 'Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych'
 section: 'Konfiguracja'
 order: 04
+updated: 2022-06-27
 ---
 
 > [!primary]

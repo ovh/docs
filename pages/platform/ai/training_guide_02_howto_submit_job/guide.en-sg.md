@@ -4,6 +4,7 @@ slug: training/submit-job
 excerpt: Learn how to submit an AI Training job via UI
 section: AI Training - Guides
 order: 02
+updated: 2021-05-18
 ---
 
 **Last updated 18th May, 2021.**

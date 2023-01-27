@@ -4,6 +4,7 @@ slug: hgrstor2-system-configuration
 excerpt: Setting up and configuring the multipath as part of using an HGR-STOR-2 server
 section: Advanced use
 order: 6
+updated: 2022-08-25
 ---
 
 **Last updated 25th August 2022**

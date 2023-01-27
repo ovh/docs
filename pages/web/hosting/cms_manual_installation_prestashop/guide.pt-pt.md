@@ -4,6 +4,7 @@ excerpt: Como instalar manualmente o PrestaShop?
 slug: cms_como_instalar_manualmente_prestashop
 section: CMS
 order: 06
+updated: 2022-12-01
 ---
 
 

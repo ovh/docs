@@ -5,6 +5,7 @@ excerpt: 'Saiba como começar a usar e a gerir o serviço CloudDB'
 legacy_guide_number: 2216
 section: 'Primeiros passos'
 order: 01
+updated: 2022-06-22
 ---
 
 **Última atualização: 22/06/2022**

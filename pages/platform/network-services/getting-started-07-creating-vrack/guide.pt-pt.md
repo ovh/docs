@@ -4,6 +4,7 @@ excerpt: 'Saiba como configurar o vRack para as instâncias de Public Cloud'
 slug: public-cloud-vrack
 section: Introdução
 order: 07
+updated: 2023-01-10
 ---
 
 > [!primary]

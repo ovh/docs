@@ -4,6 +4,7 @@ slug: guide-dutilisation-mailing-list
 excerpt: 'Decouvrez dans ce guide comment utiliser les listes de diffusion.'
 section: 'Fonctionnalités des adresses e-mail'
 order: 03
+updated: 2020-03-19
 ---
 
 **Dernière mise à jour le 13/02/2020**

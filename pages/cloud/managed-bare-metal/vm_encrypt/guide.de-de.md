@@ -6,6 +6,7 @@ routes:
 excerpt: So aktivieren Sie die VMware-Funktion zur Verschlüsselung Ihrer virtuellen Maschinen
 section: VMware vSphere Funktionen
 order: 07
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

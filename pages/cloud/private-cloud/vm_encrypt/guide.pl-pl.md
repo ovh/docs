@@ -4,6 +4,7 @@ slug: szyfrowanie-vm
 excerpt: Dowiedz się, jak włączyć szyfrowanie maszyn wirtualnych
 section: Funkcjonalności VMware vSphere
 order: 08
+updated: 2020-06-29
 ---
 
 **Ostatnia aktualizacja z dnia 01-07-2020**

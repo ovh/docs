@@ -3,6 +3,7 @@ title: 'Evitare il freeze di una macchina virtuale con l’opzione Veeam Managed
 slug: evitare-freeze-vm-con-opzione-veeam-backup
 excerpt: 'Come implementare una soluzione che eviti il blocco di una VM con il meccanismo DRS di VMware'
 section: 'Gestione delle macchine virtuali'
+updated: 2022-02-22
 ---
 
 > [!primary]

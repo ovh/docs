@@ -3,6 +3,7 @@ title: "Configuration des sondes sur un service OVHcloud Load Balancer"
 slug: probes
 excerpt: "Découvrez les principes généraux et des cas d'usage pour les sondes"
 section: Configuration
+updated: 2019-02-12
 ---
 
 **Dernière mise à jour le à 25/03/2022**

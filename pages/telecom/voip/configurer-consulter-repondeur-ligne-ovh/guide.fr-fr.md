@@ -3,6 +3,7 @@ title: 'Configurer et consulter le répondeur de sa ligne'
 slug: configurer-consulter-repondeur-ligne-ovh
 excerpt: 'Apprenez à configurer et utiliser le répondeur de votre ligne téléphonique OVHcloud'
 section: 'Lignes téléphoniques'
+updated: 2022-08-23
 ---
 
 **Dernière mise à jour le 23/08/2022**

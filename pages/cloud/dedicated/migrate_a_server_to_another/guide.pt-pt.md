@@ -4,6 +4,7 @@ slug: migracao-dos-dados-de-um-servidor-dedicado-para-outro
 excerpt: Saiba como migrar dados de um servidor dedicado para outro
 section: Introdução
 order: 4
+updated: 2021-09-16
 ---
 
 > [!primary]

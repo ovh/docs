@@ -4,6 +4,7 @@ excerpt: "Scopri i nostri consigli per riparare il tuo sito Web pirata"
 slug: hacking_del_tuo_sito_wordpress_consigli_e_casi_pratici
 section: "Tutorial"
 order: 01
+updated: 2022-11-15
 ---
 
 **Ultimo aggiornamento: 10/11/2022**

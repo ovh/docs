@@ -4,6 +4,7 @@ slug: suivi-emails-automatises
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
 section: Diagnostic
 order: 09
+updated: 2022-10-12
 ---
 
 **Dernière mise à jour le 05/10/2022**

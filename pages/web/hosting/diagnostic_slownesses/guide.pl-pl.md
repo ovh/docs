@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, skąd pochodzą opóźnienia Twojej strony WWW i jak je 
 slug: slow-website-fix
 section: Diagnostyka
 order: 01
+updated: 2022-11-17
 ---
 
 **Ostatnia aktualizacja z dnia 17-11-2022**

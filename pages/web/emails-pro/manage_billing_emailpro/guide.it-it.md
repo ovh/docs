@@ -4,6 +4,7 @@ slug: gestione-fatturazione-emailpro
 excerpt: Come gestire la fatturazione del tuo servizio Email Pro
 section: 'Per iniziare'
 order: 7
+updated: 2022-02-23
 ---
 
 > [!primary]

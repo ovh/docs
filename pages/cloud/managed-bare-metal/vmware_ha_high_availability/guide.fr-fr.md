@@ -6,6 +6,7 @@ routes:
 excerpt: Maitriser la politique de redémarrage avec la fonction HA
 section: Fonctionnalités VMware vSphere
 order: 02
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

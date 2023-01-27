@@ -4,6 +4,7 @@ slug: secnumcloud-connectivity-vpn-spn-concept
 excerpt: 'Présentation du concept de VPN-SPN au sein de la solution SecNumCloud Connectivity'
 section: SecNumCloud Connectivity
 order: 04
+updated: 2021-11-18
 ---
 
 > [!primary]

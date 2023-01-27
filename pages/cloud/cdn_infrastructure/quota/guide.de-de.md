@@ -4,6 +4,7 @@ slug: quota-cdn
 excerpt: 'So funktionieren Traffic-Limits in Ihrem CDN'
 section: 'Erste Schritte'
 order: 3
+updated: 2018-02-22
 ---
 
 **Stand 03.04.2019**

@@ -4,6 +4,7 @@ slug: erste-schritte-mit-mysql-und-mariadb
 excerpt: Verwendung Ihrer Datenbanken
 section: Erste Schritte
 order: 02
+updated: 2022-06-29
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: public-cloud-primeiros-passos
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
 section: Introdução
 order: 1
+updated: 2022-11-17
 ---
 
 **Última atualização: 17/11/2022**

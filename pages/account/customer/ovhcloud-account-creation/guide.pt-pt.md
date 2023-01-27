@@ -4,6 +4,7 @@ slug: criar-conta-ovhcloud
 excerpt: 'Saiba como criar a sua conta OVHcloud'
 Section: Introdução
 order: 1
+updated: 2021-07-01
 ---
 
 > [!primary]

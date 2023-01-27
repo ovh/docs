@@ -4,6 +4,7 @@ slug: exchange-signature-automatique-disclaimer
 excerpt: Retrouvez ici la procedure d’activation d’un pied de page (Disclaimer) sur votre compte e-mail
 section: Fonctionnalités des comptes Exchange
 order: 07
+updated: 2020-03-26
 ---
 
 **Dernière mise à jour le 26/03/2020**

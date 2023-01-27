@@ -4,6 +4,7 @@ slug: limit-transferu-cdn
 excerpt: 'Dowiedz się, jak zarządzać limitem transferu w usłudze CDN'
 section: 'Pierwsze kroki'
 order: 3
+updated: 2018-02-22
 ---
 
 **Ostatnia aktualizacja dnia 10-12-2018**

@@ -4,6 +4,7 @@ excerpt: Découvrez comment remettre votre site en ligne quand il affiche une pa
 slug: diagnostic-index-of
 section: Diagnostic
 order: 07
+updated: 2022-05-10
 ---
 
 **Dernière mise à jour le 10/05/2022**

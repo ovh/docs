@@ -5,6 +5,7 @@ slug: mijn-website-online-zetten
 excerpt: 'Ontdek hoe u een website op uw webhosting online zet'
 section: 'Aan de slag'
 order: 2
+updated: 2022-07-21
 ---
 
 **Laatste update 29-06-2018**

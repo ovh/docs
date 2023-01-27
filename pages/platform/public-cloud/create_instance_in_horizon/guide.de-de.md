@@ -3,6 +3,7 @@ title: 'Eine Instanz über das Horizon-Interface erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Instanz über das Horizon-Interface erstellen'
 slug: erstellung_einer_instanz_in_horizon
 section: 'Horizon'
+updated: 2022-08-01
 ---
 
 > [!primary]

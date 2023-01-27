@@ -4,6 +4,7 @@ slug: demarrez-avec-postgresql
 excerpt: 'Utilisez vos bases de donnees'
 section: 'Premiers pas'
 order: 03
+updated: 2022-10-28
 ---
 
 Vous désirez utiliser PostgreSQL ? Découvrez comment créer et gérer vos bases de données en toute simplicité !

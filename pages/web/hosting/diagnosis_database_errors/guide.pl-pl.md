@@ -4,6 +4,7 @@ excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danyc
 slug: blad-baz-danych
 section: Diagnostyka
 order: 04
+updated: 2022-12-09
 ---
 
 > [!primary]

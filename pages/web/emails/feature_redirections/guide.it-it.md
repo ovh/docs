@@ -5,6 +5,7 @@ slug: servizio_email_configura_il_reindirizzamento_delle_tue_email
 section: 'Funzionalità degli indirizzi email'
 legacy_guide_number: g2001
 order: 01
+updated: 2020-05-20
 ---
 
 **Ultimo aggiornamento: 22/01/2019**

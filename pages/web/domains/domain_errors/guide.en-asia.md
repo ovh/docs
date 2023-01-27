@@ -3,6 +3,7 @@ title: Troubleshooting a domain name error
 slug: domain-errors
 section: Common tasks
 order: 02
+updated: 2022-09-01
 ---
 
 **Last updated 1st September 2022**

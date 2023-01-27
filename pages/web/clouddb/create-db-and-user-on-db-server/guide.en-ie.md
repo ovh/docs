@@ -4,6 +4,7 @@ slug: create-databases-and-users
 excerpt: 'Find out how to create a database on your database server'
 section: Configuration
 order: 02
+updated: 2022-06-23
 ---
 
 **Last updated 23rd June 2022**

@@ -4,6 +4,7 @@ slug: erste-schritte-mit-postgresql
 excerpt: Verwendung Ihrer Datenbanken
 section: Erste Schritte
 order: 03
+updated: 2022-10-28
 ---
 
 Sie möchten mit PostgreSQL arbeiten? Dann lesen Sie hier, wie Sie Ihre Datenbanken ganz einfach erstellen und verwalten.

@@ -4,6 +4,7 @@ excerpt: Seguimento dos seus emails enviados a partir de um website num alojamen
 slug: alojamento_partilhado_seguimento_dos_emails_automatizados
 section: Diagnóstico
 Order: 09
+updated: 2022-10-12
 ---
 
 **Última atualização: 12/10/2022**

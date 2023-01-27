@@ -2,6 +2,7 @@
 title: Beta Outbound firewall
 slug: firewall
 section: App
+updated: 2021-03-26
 ---
 
 **Last updated 12th February 2021**

@@ -6,6 +6,7 @@ routes:
 excerpt: Simple steps to use the NSX Edge load balancing service
 section: NSX
 order: 05
+updated: 2021-11-29
 ---
 
 **Last Updated on 29th November 2021**

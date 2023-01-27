@@ -3,6 +3,7 @@ title: Zabezpieczenie serwera z zainstalowaną usługą Memcached
 slug: zabezpieczenie-serwera-memcached
 excerpt: Dowiedz się, jak zabezpieczyć serwer z zainstalowanym Memcached
 section: Poziom zaawansowany
+updated: 2018-03-02
 ---
 
 **Ostatnia aktualizacja dnia 2018-02-03**

@@ -4,6 +4,7 @@ excerpt: 'Hier erfahren Sie, wie Sie einem anderen Account Berechtigungen für I
 slug: exchange_2013_send_as_versand_als
 section: Exchange Account-Funktionen
 order: 03
+updated: 2020-10-24
 ---
 
 **Stand 24.10.2020**

@@ -4,6 +4,7 @@ slug: configurazione-iphone-ios
 excerpt: 'Come configurare un account Email Pro su un iPhone o un iPad tramite l’applicazione Mail'
 section: 'Configurazione di un client di posta'
 order: 3
+updated: 2021-05-21
 ---
 
 > [!primary]

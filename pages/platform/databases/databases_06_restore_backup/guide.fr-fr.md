@@ -6,6 +6,7 @@ section: Guides généraux
 order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/restore-backup'
+updated: 2022-05-04
 ---
 
 **Last updated May 4th, 2022**

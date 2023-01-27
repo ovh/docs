@@ -6,6 +6,7 @@ section: Traffic management
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/securing-nginx-ingress-cert-manager/'
+updated: 2022-06-27
 ---
 
 **Last updated 27th June 2022.**

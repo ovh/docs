@@ -3,6 +3,7 @@ title: Configurer le vRack sur le load balancer
 slug: configurer-vrack-sur-load-balancer
 excerpt: Voici comment configurer le vRack sur un Load Balancer
 section: Configuration
+updated: 2022-04-04
 ---
 
 ## Introduction

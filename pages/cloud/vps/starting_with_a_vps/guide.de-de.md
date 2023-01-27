@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier die Grundlagen der Verwendung eines VPS'
 slug: erste-schritte-mit-einem-vps
 section: 'Erste Schritte'
 order: 1
+updated: 2022-03-25
 ---
 
 > [!primary]

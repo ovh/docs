@@ -4,6 +4,7 @@ title: Configuratie van uw e-mailadres in Outlook 2016 voor Mac
 slug: configuratie-outlook-2016-mac
 excerpt: Ontdek hoe u uw e-mailadres kunt configureren in Outlook 2016 voor Mac
 section: Outlook
+updated: 2018-05-31
 ---
 
 **Laatste update 22-03-2018**

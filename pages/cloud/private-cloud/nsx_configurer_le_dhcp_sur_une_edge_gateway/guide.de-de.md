@@ -6,6 +6,7 @@ routes:
 excerpt: Assign IPs to your VMs through DHCP
 section: NSX
 order: 03
+updated: 2021-11-22
 ---
 
 **Last Updated on 22nd November 2021**

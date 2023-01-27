@@ -4,6 +4,7 @@ slug: konfiguracja_php_na_hostingu_www_ovh_2014
 excerpt: "Dowiedz się, jak zmienić wersję PHP na hostingu OVHcloud"
 section: PHP
 order: 01
+updated: 2022-09-19
 ---
 
 **Ostatnia aktualizacja z dnia 19-09-2022**

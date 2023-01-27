@@ -4,6 +4,7 @@ slug: hyperv-network-hg-scale
 excerpt: 'Découvrez comment configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
 section: 'Utilisation avancée'
 order: 5
+updated: 2021-11-15
 ---
 
 **Dernière mise à jour le 15/11/2021**

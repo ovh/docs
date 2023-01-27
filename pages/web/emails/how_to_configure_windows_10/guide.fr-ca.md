@@ -4,6 +4,7 @@ slug: configuration-courrier-sur-windows-10
 excerpt: "Apprenez à configurer une adresse e-mail de votre hébergement sur l'application Courrier pour Windows"
 section: 'Configuration sur ordinateur'
 order: 06
+updated: 2018-04-04
 ---
 
 **Dernière mise à jour le 05/05/2020**

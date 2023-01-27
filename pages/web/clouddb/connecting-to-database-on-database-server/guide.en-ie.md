@@ -4,6 +4,7 @@ slug: connecting-to-database-on-database-server
 excerpt: 'Find out how to log in to your database'
 section: Configuration
 order: 03
+updated: 2022-09-22
 ---
 
 **Last updated 22nd September 2022**

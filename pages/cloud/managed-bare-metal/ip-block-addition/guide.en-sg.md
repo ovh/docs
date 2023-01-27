@@ -7,6 +7,7 @@ excerpt: Find out how to order an IP block on your Managed Bare Metal
 legacy_guide_number: '7766457'
 section: OVHcloud Features
 order: 01
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

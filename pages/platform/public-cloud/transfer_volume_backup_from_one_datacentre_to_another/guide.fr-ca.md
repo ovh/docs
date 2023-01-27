@@ -5,6 +5,7 @@ legacy_guide_number: 1941
 section: Stockage
 excerpt: 'Apprenez à déplacer une sauvegarde de volume entre différents centres de données'
 order: 11
+updated: 2021-01-19
 ---
 
 **Dernière mise à jour le 29 mars 2019**

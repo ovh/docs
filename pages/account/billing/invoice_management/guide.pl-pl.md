@@ -3,6 +3,7 @@ title: Zarządzanie fakturami OVHcloud
 slug: zarzadzanie-fakturami-ovhcloud
 excerpt: Dowiedz się, jak zarządzać fakturami i związanymi z nimi płatnościami
 section: Płatności
+updated: 2022-05-12
 ---
 
 > [!primary]

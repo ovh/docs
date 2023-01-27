@@ -4,6 +4,7 @@ slug: konfiguracja-pliku-ovhconfig
 excerpt: 'Poznaj plik .ovhconfig i dowiedz się, jak go modyfikować'
 section: 'Konfiguracja hostingu'
 order: 03
+updated: 2019-01-03
 ---
 
 **Ostatnia aktualizacja z dnia 03-01-2019**

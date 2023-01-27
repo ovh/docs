@@ -5,6 +5,7 @@ routes:
 excerpt: Saiba como associar um endereço de e-mail ao seu utilizador vSphere
 slug: associar-e-mail-a-um-utilizador
 section: Funcionalidades da OVHcloud
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

@@ -8,6 +8,7 @@ kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Kubernetes (K8s)
 category_l3: Operators
+updated: 2022-04-11
 ---
 
 **Last updated 11th April, 2022.**

@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pl/vps/windows-first-config/'
 excerpt: Dowiedz się, jak aktywować połączenie ze zdalnym pulpitem i odpowiedź ICMP
 section: Pierwsze kroki
+updated: 2022-01-18
 ---
 
 > [!primary]

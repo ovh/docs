@@ -3,6 +3,7 @@ title: Activar y utilizar el modo de rescate en un VPS
 slug: rescue
 excerpt: Cómo reiniciar un VPS en modo de rescate.
 section: Diagnóstico y modo de rescate
+updated: 2022-05-02
 ---
 
 **Última actualización: 02/05/2022**

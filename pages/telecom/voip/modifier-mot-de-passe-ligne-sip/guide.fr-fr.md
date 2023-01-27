@@ -3,6 +3,7 @@ title: "Modifier le mot de passe d'une ligne SIP"
 slug: modifier-mot-de-passe-ligne-sip
 excerpt: "Apprenez à changer le mot de passe d’une ligne SIP OVHcloud ne disposant pas d'un téléphone Plug & Phone OVHcloud"
 section: Sécurité
+updated: 2022-06-13
 ---
 
 **Dernière mise à jour le 13/06/2022**

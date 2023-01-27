@@ -4,6 +4,7 @@ slug: alerting
 order: 5
 excerpt: With the alerting feature you don't even need to watch your logs, our platform does it for you.
 section: Features
+updated: 2022-07-28
 ---
 
 **Last updated July 28th, 2022**

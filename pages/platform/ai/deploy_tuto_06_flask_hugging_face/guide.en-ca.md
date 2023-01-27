@@ -4,6 +4,7 @@ slug: deploy/tuto-flask-hugging-face-sentiment-analysis
 excerpt: How to deploy an app to analyse text sentiment with Hugging Face and Flask
 section: AI Deploy - Tutorials
 order: 06
+updated: 2022-11-03
 ---
 
 **Last updated 3rd November, 2022.**

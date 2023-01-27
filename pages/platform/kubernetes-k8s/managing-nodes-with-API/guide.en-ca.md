@@ -4,6 +4,7 @@ slug: managing-nodes-with-api
 excerpt: ''
 section: User guides
 order: 1
+updated: 2022-08-04
 ---
 
 **Last updated 4th August 2022.**

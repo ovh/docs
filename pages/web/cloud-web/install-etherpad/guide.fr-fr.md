@@ -4,6 +4,7 @@ slug: installer-etherpad-cloud-web
 excerpt: "Installez l'éditeur de texte Etherpad sur votre hébergement Cloud Web et rendez-le accessible avec votre nom de domaine"
 section: Tutoriels
 order: 02
+updated: 2022-05-04
 ---
 
 **Dernière mise à jour le 04/05/2022**

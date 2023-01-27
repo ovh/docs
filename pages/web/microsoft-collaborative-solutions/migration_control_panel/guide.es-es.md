@@ -4,6 +4,7 @@ slug: migrar-direccion-correo-en-alojamiento-correo-a-exchange
 excerpt: 'Cómo migrar una dirección MX Plan a una cuenta Email Pro o Exchange'
 section: Migración de una cuenta
 order: 02
+updated: 2022-11-22
 ---
 
 **Última actualización: 22/11/2022**

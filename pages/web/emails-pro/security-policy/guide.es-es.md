@@ -4,6 +4,7 @@ slug: manage-security-policy-password
 excerpt: 'Esta guía explica cómo configurar la política de seguridad de un servicio de correo'
 section: 'Primeros pasos'
 order: 8
+updated: 2022-04-22
 ---
 
 **Última actualización: 22/04/2022**

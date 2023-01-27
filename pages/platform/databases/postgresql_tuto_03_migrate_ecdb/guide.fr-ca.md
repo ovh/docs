@@ -6,6 +6,7 @@ section: PostgreSQL - Tutoriels
 order: 080
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/howto-migrate-ecdb-to-pcd/'
+updated: 2022-03-02
 ---
 
 **Last updated March 2nd 2022**

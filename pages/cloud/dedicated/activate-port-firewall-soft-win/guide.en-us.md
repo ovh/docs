@@ -4,6 +4,7 @@ excerpt: Find out how to configure your firewall on Windows
 slug: firewall-windows
 section: Security
 order: 03
+updated: 2022-01-31
 ---
 
 **Last updated 31st January 2022**

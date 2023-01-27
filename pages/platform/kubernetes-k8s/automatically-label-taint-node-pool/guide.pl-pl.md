@@ -5,6 +5,7 @@ excerpt: 'Find out how to add labels, annotations and taints on Nodes thanks to 
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/automatically-label-taint-node-pool/'
+updated: 2022-07-28
 ---
 
 <style>

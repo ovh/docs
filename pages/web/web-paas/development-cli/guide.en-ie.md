@@ -3,6 +3,7 @@ title: CLI (Command line interface)
 slug: development-cli
 section: Development
 order: 5
+updated: 2021-03-31
 ---
 
 **Last updated 31st March 2021**

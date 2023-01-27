@@ -4,6 +4,7 @@ slug: zmiana-hasla-do-bazy-danych
 excerpt: Dowiedz się, jak zmienić hasło do bazy danych utworzonej w ramach pakietu hostingowego
 section: Bazy danych
 order: 02
+updated: 2022-01-26
 ---
 
 > [!primary]

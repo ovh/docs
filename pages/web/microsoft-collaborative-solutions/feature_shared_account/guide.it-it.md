@@ -4,6 +4,7 @@ slug: exchange-utilizzo-account-condivisi
 excerpt: Aggiungi e utilizza un account condiviso sulla tua soluzione Exchange
 section: Funzionalità degli account Exchange
 order: 06
+updated: 2021-06-15
 ---
 
 > [!primary]

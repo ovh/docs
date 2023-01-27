@@ -4,6 +4,7 @@ slug: erste-schritte-mit-cloud-web
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie richtig mit Ihrem Cloud Web Hosting starten'
 section: 'Erste Schritte'
 order: 01
+updated: 2022-05-04
 ---
 
 > [!primary]

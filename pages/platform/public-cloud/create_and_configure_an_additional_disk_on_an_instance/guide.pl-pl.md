@@ -4,6 +4,7 @@ slug: utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji
 excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
 section: 'Zarządzanie w Panelu klienta OVH'
 order: 1
+updated: 2023-01-04
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: "Saiba como encomendar o seu projeto Public Cloud com a API OVHcloud"
 slug: encomendar-project-public-cloud-api
 section: Introdução
 order: 9
+updated: 2020-12-09
 ---
 
 **Última atualização: 22/12/2020**

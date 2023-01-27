@@ -4,6 +4,7 @@ slug: konfigurieren-ihres-datenbank-servers
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
 section: Konfiguration
 order: 06
+updated: 2022-06-30
 ---
 
 > [!primary]

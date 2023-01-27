@@ -4,6 +4,7 @@ excerpt: "Identify the cause of your website's slowdowns and find out how to res
 slug: slow-website-fix
 section: Troubleshooting
 order: 01
+updated: 2022-11-17
 ---
 
 **Last updated 17th November 2022**

@@ -3,6 +3,7 @@ title: 'Configuring OVHcloud Secondary DNS on a dedicated server'
 slug: secondary-dns
 excerpt: 'Find out how to add a secondary DNS server for your domain'
 section: 'Advanced use'
+updated: 2021-01-08
 ---
 
 **Last updated 8th January 2021**

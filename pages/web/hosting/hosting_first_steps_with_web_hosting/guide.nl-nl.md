@@ -5,6 +5,7 @@ slug: begin_met_een_webhosting_pakket
 excerpt: Ontdek hoe u aan de slag kunt met een webhosting plan
 section: Eerste stappen
 order: 1
+updated: 2022-11-11
 ---
 
 **Laatste update op 22-01-2018**

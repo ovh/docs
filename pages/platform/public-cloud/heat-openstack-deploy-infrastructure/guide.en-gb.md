@@ -3,6 +3,7 @@ title: Deploying a basic infrastructure with OpenStack Heat (BETA)
 slug: deploy-infrastructure-with-openstack-heat
 excerpt: Find out how to get started with Heat and stacks by deploying your first infrastructure
 section: Tutorials
+updated: 2022-03-30
 ---
 
 **Last updated 30th March 2022**

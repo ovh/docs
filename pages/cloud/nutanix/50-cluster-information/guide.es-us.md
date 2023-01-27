@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to retrieve essential information on the status of your Nutanix cluster
 section: Diagnóstico
 order: 01
+updated: 2022-03-14
 ---
 
 **Last updated 14th March 2022**

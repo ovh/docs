@@ -4,6 +4,7 @@ slug: debuter-avec-une-instance-public-cloud
 excerpt: 'Découvrez comment gérer vos instances Public Cloud dans l’espace client OVHcloud'
 section: 'Premiers pas'
 order: 05
+updated: 2023-01-04
 ---
 
 **Dernière mise à jour le 04/01/2023**

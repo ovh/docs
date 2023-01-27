@@ -4,6 +4,7 @@ slug: fehler-website-nicht-gesichert
 excerpt: Erfahren Sie hier, wie Sie bei sicherheitsrelevanten Fehlermeldungen auf Ihrer Website vorgehen
 section: Diagnose
 order: 03
+updated: 2021-07-08
 ---
 
 > [!primary]

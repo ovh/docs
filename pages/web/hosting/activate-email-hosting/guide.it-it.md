@@ -4,6 +4,7 @@ slug: attivare-email-hosting-web
 excerpt: 'Come attivare gli account di posta inclusi nella tua soluzione di hosting Web'
 section: Per iniziare
 order: 07
+updated: 2022-11-18
 ---
 
 **Ultimo aggiornamento: 17/08/2020**

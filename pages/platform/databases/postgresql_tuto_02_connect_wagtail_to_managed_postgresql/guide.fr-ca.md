@@ -6,6 +6,7 @@ section: PostgreSQL - Tutoriels
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/tutorial-connect-wagtail-to-managed-postgresql/'
+updated: 2022-02-11
 ---
 
 

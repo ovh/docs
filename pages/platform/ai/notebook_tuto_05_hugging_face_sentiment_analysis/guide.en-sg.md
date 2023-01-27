@@ -4,6 +4,7 @@ slug: notebooks/tuto-hugging-face-sentiment-analysis
 excerpt: How to use Hugging Face models to analyse Twitter sentiments
 section: AI Notebooks - Tutorials
 order: 05
+updated: 2022-09-01
 ---
 
 **Last updated 29th August, 2022.**
