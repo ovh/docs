@@ -6,7 +6,7 @@ section: NSX-T
 order: 03
 ---
 
-**Dernière mise à jour le 14/12/2022**
+**Dernière mise à jour le 27/01/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -61,7 +61,7 @@ Et cliquez sur `Save`{.action}.
 Saisissez ces valeurs :
 
 * **DHCP Server Address** :  Adresse du serveur DHCP comme 192.168.1.253/24
-* **DHCP Range** : Etendue de votre serveur DHCP avec l'adresse du début et de fin séparées un tirêt comme 192.168.1.10-192.168.1.200
+* **DHCP Range** : Etendue de votre serveur DHCP avec l'adresse du début et de fin séparés un tiret comme 192.168.1.10-192.168.1.200
 * **DNS Server** : Serveurs DNS comme 213.186.33.99 qui est le serveur DHCP OVHcloud.
 
 Ensuite cliquez sur `APPLY`{.action}.
