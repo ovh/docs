@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 04
 ---
 
-**Última actualización: 17/11/2022**
+**Última actualización: 26/01/2023**
 
 ## Objetivo
 
@@ -170,6 +170,7 @@ En primer lugar, seleccione el modelo que mejor se adapta a sus necesidades. Pod
 | Sandbox    | -       | Alojado en recursos compartidos para entornos de testeo y desarrollo      |
 | Discovery    | -       | Alojado en recursos compartidos para entornos de testeo y desarrollo      |
 | IOPS   | ✓     | Optimizado para transferencia de datos en disco    |
+| Metal | ✓ | Recursos dedicados con acceso directo a recursos informáticos, de almacenamiento y de red|
 
 
 > [!primary]

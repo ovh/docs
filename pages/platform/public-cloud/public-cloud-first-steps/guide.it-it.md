@@ -6,7 +6,7 @@ section: Per iniziare
 order: 1
 ---
 
-**Ultimo aggiornamento: 17/11/2022**
+**Ultimo aggiornamento: 26/01/2023**
 
 ## Obiettivo
 
@@ -170,6 +170,7 @@ Per prima cosa, seleziona un modello di server in base alle tue esigenze. La pro
 | Sandbox    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
 | Discovery    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
 | IOPS   | ✓     | Ottimizzato per il trasferimento dei dati su disco    |
+| Metal | ✓ | Risorse dedicate con accesso diretto alle risorse di calcolo, di storage e di rete|
 
 
 > [!primary]

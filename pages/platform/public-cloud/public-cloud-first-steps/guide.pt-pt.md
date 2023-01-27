@@ -6,7 +6,7 @@ section: Introdução
 order: 1
 ---
 
-**Última atualização: 17/11/2022**
+**Última atualização: 26/01/2023**
 
 ## Objetivo
 
@@ -170,6 +170,7 @@ Antes de mais, escolha um modelo de servidor de acordo com as suas necessidades.
 | Sandbox    | -       | Alojado em recursos partilhados para testes e ambientes de desenvolvimento      |
 | Discovery    | -       | Alojado em recursos partilhados para testes e ambientes de desenvolvimento      |
 | IOPS   | ✓     | Otimizado para transferências de dados de disco    |
+| Metal | ✓ | Recursos dedicados com acesso directo a recursos informáticos, de armazenamento e de rede|
 
 
 > [!primary]

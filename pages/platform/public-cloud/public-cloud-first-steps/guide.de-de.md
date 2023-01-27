@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 17.11.2022**
+**Letzte Aktualisierung am 26.01.2023**
 
 ## Ziel
 
@@ -170,6 +170,7 @@ Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. 
 | Sandbox    | -       | Auf geteilten Ressourcen gehostet, für Test- und Entwicklungsumgebungen      |
 | Discovery    | -       | Auf geteilten Ressourcen gehostet, für Test- und Entwicklungsumgebungen      |
 | IOPS   | ✓     | Optimiert für Festplattentransaktionen    |
+| Metal | ✓ | Dedizierte Ressourcen mit direktem Zugriff auf Rechen-, Speicher- und Netzwerkressourcen |
 
 
 > [!primary]

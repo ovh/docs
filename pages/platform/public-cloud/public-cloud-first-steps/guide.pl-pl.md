@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja: 17-11-2022**
+**Ostatnia aktualizacja: 26-01-2023**
 
 ## Wprowadzenie
 
@@ -170,6 +170,7 @@ Najpierw wybierz odpowiedni do swoich potrzeb szablon serwera. Narzędzie pomocy
 | Sandbox    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
 | Discovery    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
 | IOPS   | ✓     | Zoptymalizowane pod kątem transferu danych na dyskach    |
+| Metal | ✓ | Dedykowane zasoby z bezpośrednim dostępem do zasobów obliczeniowych, magazynowych i sieciowych|
 
 
 > [!primary]
