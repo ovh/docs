@@ -1,12 +1,12 @@
 ---
-title: DHCP Configuration
-slug: nsx-t-dhcp-configuration
-excerpt: How to Add a DHCP Server to a Segment
+title: Securing Inter Segment
+slug: nsx-t-intersegment-secure
+excerpt: Comment sécuriser les accès entre segment
 section: NSX-T
-order: 03
+order: 04
 ---
 
-**Last updated 14th December 2022**
+**Last updated 27th January 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -31,45 +31,6 @@ order: 03
 
 ## Instructions
 
-We will configure a DHCP server on a segment connected to **OVH-T1-gw**. This segment is configured with a gateway in **192.168.1.254/24**.
-
-From the NSX-T interface go to the `Networking`{.action} tab and click on `Segments`{.action} on the left.
-
-![01 add DHCP ON Segment 01](images/01-add-dhcp-on-segment01.png)
-
-Click the specified configuration icon with `three vertical dots`{.action} to the left of your segment and choose `Edit`{.action}.
-
-![01 add DHCP ON Segment 02](images/01-add-dhcp-on-segment02.png)
-
-Click `Set DHCP CONFIG`{.action}.
-
-![01 add DHCP ON Segment 03](images/01-add-dhcp-on-segment03.png)
-
-Select `Local DHCP Server`{.action} on the left in **DHCP Type**. Then click the configuration icon with `three vertical dots`{.action} to the right of **DHCP Profile** and choose `Create New`{.action}.
-
-![01 add DHCP ON Segment 04](images/01-add-dhcp-on-segment04.png)
-
-Choose this information :
-
-* **Name** : Name of your DHCP server.
-* **Server IP Address** : The IP address of your DHCP server, which must not be the same as your gateway IP address in this form 192.168.1.253/24.
-* **Edge Cluster** : Select your cluster edge.
-
-And click `Save`{.action}.
-
-![01 add DHCP ON Segment 05](images/01-add-dhcp-on-segment05.png)
-
-Enter these values:
-
-* **DHCP Server Address**: DHCP server address like 192.168.1.253/24
-* **DHCP Range**: Scope of your DHCP server with start address and end address separated a dash like 192.168.1.10-192.168.1.200
-* **DNS Server**: DNS servers like 213.186.33.99 which is the OVHcloud DHCP server.
-
-Then click `APPLY`{.action}.
-
-![01 add DHCP ON Segment 06](images/01-add-dhcp-on-segment06.png)
-
-Virtual machines on this segment can now be configured with DHCP.
 
 ## Go further <a name="gofurther"></a>
 

@@ -32,6 +32,8 @@ When a customer subscribes to the NSX-T offer and is enabled, a preset is applie
 
 The two gateways are interconnected to allow internal networks to communicate outside the cluster.
 
+In the ALPHA version of NSX-T a block of 8 IP addresses is delivered. INTERNET access is functional through one of these addresses, it will also be possible to make port redirections through this address.
+
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials.
@@ -45,7 +47,7 @@ You can connect to NSX-T from the URL of your cluster, provided by OVHcloud, in 
 
 From the homepage for your cluster, click the `NSX NSX-T`{.action} icon.
 
-![01 NSX-T Connection 01](images/01-nsxt-connection01.png)
+![01 NSX-T Connection 01](images/01-nsxt-connection01.png){.thumbnail}
 
 Enter your credentials and click `LOG IN`{.action}.
 
@@ -53,11 +55,11 @@ Enter your credentials and click `LOG IN`{.action}.
 > The user account is for your VMware cluster, followed by **@your-pcc-fqdn-name**
 >
 
-![01 NSX-T Connection 02](images/01-nsxt-connection02.png)
+![01 NSX-T Connection 02](images/01-nsxt-connection02.png){.thumbnail}
 
 The NSX-T interface appears.
 
-![01 NSX-T Connection 03](images/01-nsxt-connection03.png)
+![01 NSX-T Connection 03](images/01-nsxt-connection03.png){.thumbnail}
 
 ### Display the default configuration
 
@@ -65,19 +67,19 @@ We will see the network topology configured by default when deploying the **NSX-
 
 In the **NSX-T** interface, click on the `Networking`{.action} tab.
 
-![02 Display network topology 01](images/02-display-network-topology01.png)
+![02 Display network topology 01](images/02-display-network-topology01.png){.thumbnail}
 
 A view of all network elements is displayed.
 
 Left-click on `Network Topology`{.action}.
 
-![02 Display network topology 02](images/02-display-network-topology02.png)
+![02 Display network topology 02](images/02-display-network-topology02.png){.thumbnail}
 
 A network topology diagram is available with two public IP addresses connected to the **ovh-T0-gateway** and the connection to the **ovh-T1-gateway**.
 
 Inside initial configuration, there is no link between your VMware infrastructure and the internet.
 
-![03 Display network topology 03](images/02-display-network-topology03.png)
+![03 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
 
