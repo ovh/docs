@@ -1285,7 +1285,6 @@
         + [Tutorials](web-cloud-web-paas-powered-by-platformsh-tutorials)
             + [Migrating to Web PaaS](web/web-paas/tutorials-migrating)
             + [Exporting data](web/web-paas/tutorials-exporting)
-            + [Tutorials](web/web-paas/tutorials)
     + [Collaborative Solutions](web-cloud-collaborative-solutions)
         + [MX Plan](web-cloud-collaborative-solutions-mx-plan)
             + [Getting started](web-cloud-collaborative-solutions-mx-plan-getting-started)
