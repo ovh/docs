@@ -85,7 +85,7 @@ Nella tabella qui sotto trovi le informazioni necessarie per identificare la tua
 
 [Iniziare a utilizzare la soluzione Hosted Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_prima_configurazione/)
 
-[Gestisci la fatturazione dei tuoi account Email Pro](hhttps://docs.ovh.com/it/emails-pro/gestione-fatturazione-emailpro/)
+[Gestisci la fatturazione dei tuoi account Email Pro](https://docs.ovh.com/it/emails-pro/gestione-fatturazione-emailpro/)
 
 [Gestisci la fatturazione dei tuoi account Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/)
 

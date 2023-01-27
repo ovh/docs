@@ -85,7 +85,7 @@ Na tabela abaixo, encontrará as informações necessárias para identificar a s
 
 [Primeiros passos com a solução Hosted Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_a_primeira_configuracao_do_servico/)
 
-[Gerir a faturação das contas Email Pro](hhttps://docs.ovh.com/pt/emails-pro/gestao-faturacao-emailpro/)
+[Gerir a faturação das contas Email Pro](https://docs.ovh.com/pt/emails-pro/gestao-faturacao-emailpro/)
 
 [Gerir a faturação das suas contas Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/)
 
