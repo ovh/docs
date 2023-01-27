@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Dernière mise à jour le 12/12/2022**
+**Dernière mise à jour le 27/01/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -32,8 +32,8 @@ order: 02
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
-- **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
-- **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les VM.
+* **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
+* **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les VM.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 

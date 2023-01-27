@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Last updated 12th November 2022**
+**Last updated 27th January 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -33,8 +33,8 @@ order: 02
 
 In an NSX-T solution a segment is a virtual level 2 domain (previously named logical switch) it can be of two types :
 
-- **VLAN-backed segments**: communication between hosts and VMs must be done through VLANs and a level 2 switch.
-- **Overlay-backed segments**: the connection is made using a software layer that establishes tunnels between the hosts and the VMs.
+* **VLAN-backed segments**: communication between hosts and VMs must be done through VLANs and a level 2 switch.
+* **Overlay-backed segments**: the connection is made using a software layer that establishes tunnels between the hosts and the VMs.
 
 The segments are linked to transport zones that are predefined by OVHcloud.
 
@@ -60,8 +60,8 @@ Click on `ADD SEGMENT`{.action} on the right.
 
 Choose this information:
 
-***Name**: Your segment name.
-***Connected Gateway**: predefined gateway ovh-T1-gw | Tier1.
+* **Name**: Your segment name.
+* **Connected Gateway**: predefined gateway ovh-T1-gw | Tier1.
 * **Transport Zone**: ovh-tz-overlay predefined zone.
 * **Subnet**: The gateway address of the segment in this format 192.168.1.254/24.
 
