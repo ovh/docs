@@ -1,5 +1,5 @@
 ---
-title: Handling Disk Full situations
+title: "Handling &laquo;Disk Full&raquo; situations"
 slug: handling-disk-full
 excerpt: Find out how to avoid, analyse and fix a Public Cloud Databases service reaching its full disk capacity
 section: General guides
@@ -14,19 +14,26 @@ No matter the database technology, when no more physical disk space is available
 
 **This guide helps you understand how Public Cloud Databases services behave before and when reaching such conditions, and what you can do about it.**
 
-## Avoiding full disk conditions
+## Requirements
 
-### Disk space usage metrics
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Public Cloud database service](https://www.ovhcloud.com/en-gb/public-cloud/databases/) up and running
+
+## Instructions
+
+### Avoiding full disk conditions
+
+#### Disk space usage metrics
 
 As part of using your Public Cloud Databases service efficiently, you should keep an eye on the service metrics. You can access those in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or using the [API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). You can also make use of [cross-service integrations](https://docs.ovh.com/gb/en/publiccloud/databases/cross-service-integration/) to gather, observe and alert based on services metrics.
 
-### Mail notifications
+#### Mail notifications
 
 When your service storage begins to fill up and reaches a high mark, Public Cloud Databases sends you an email to warn you of the situation. The specific threshold depends on the engine, it may range from 75 to 90 percent.
 
 When the disk usage increases even more and reaches a critical level (depending on the engine, ranging from 90 to 95 percent), you will receive another mail notification and the service will turn to a "disk full" mode, where it will start to refuse writes.
 
-## How to handle a disk full situation
+### How to handle a disk full situation
 
 Different engines react in different ways, thus Public Cloud Databases services react differently when facing disk full conditions:
 
@@ -35,25 +42,25 @@ Different engines react in different ways, thus Public Cloud Databases services 
 - `MySQL` and `PostgreSQL` turn to read-only with a way to temporarily revert to read-write.
 - `MongoDB` forbids writes but allows deletes.
 
-### What to do: Upgrading your service
+#### What to do: Upgrading your service
 
 It may be that your usage simply requires more storage. You can then increase the provisioned storage, and / or upgrade to an offer with more storage.
 
 Once the upgrade finishes, the service will detect that more storage is available and thus revert to normal mode.
 
-### What to do: Reclaim disk space
+#### What to do: Reclaim disk space
 
 It may be that you reached the full disk situation because of a runaway application filling up your database, or that you store some old obsolete data. In these cases, stop whatever process is unduly filling up your storage, then remove unwanted data.
 
-#### `Kafka`, `OpenSearch`, `M3DB`
+##### **Kafka**, **OpenSearch**, **M3DB**
 
 You can reclaim disk space by deleting a `Kafka` topic, an `OpenSearch` index or an `M3DB` namespace. 
 
-#### `MongoDB`
+##### **MongoDB**
 
 `MongoDB` refuses any query that inserts data, but allows queries deleting data. You can thus execute any `MongoDB` command that allows to reclaim disk space.
 
-#### `PostgreSQL`, `MySQL`
+##### **PostgreSQL**, **MySQL**
 
 For these engines, call the respective API endpoint to temporarily allow write operations:
 
