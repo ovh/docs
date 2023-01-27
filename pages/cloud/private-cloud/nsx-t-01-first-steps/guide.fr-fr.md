@@ -32,6 +32,7 @@ Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfi
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
 
+Dans la version ALPHA de NSX-T un bloc de 8 adresses IP est livré. L'accès INTERNET est fonctionnel au travers d'une de ces adresses, il sera aussi possible de faire des redirections de ports au travers de cette adresse.
 
 ## Prérequis
 
