@@ -78,7 +78,7 @@ In the table below, you will find the information you need to identify your MX P
 
 [Getting started with the Email Pro solution](https://docs.ovh.com/gb/en/emails-pro/first-configuration-email-pro/)
 
-[Getting started with the Hosted Exchange solution](https://docs.ovh.com/fr/microsoft-collaborative-solutions/premiere-configuration-exchange/)
+[Getting started with the Hosted Exchange solution](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_configuring_the_solution_for_the_first_time/)
 
 [Manage the billing of your Email Pro accounts](hhttps://docs.ovh.com/gb/en/emails-pro/emailpro-billing/)
 
