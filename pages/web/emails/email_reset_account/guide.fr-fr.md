@@ -38,14 +38,15 @@ Sélectionnez l'onglet correspondant à votre offre e-mail :
 > [!tabs]
 > **Emails MXplan historique**
 >>
->> Pour vérifier si votre offre MXplan est une version historique, référez-vous au tableau de la partie « [Identifiez votre offre MXplan](#whichmxplan) » de ce guide.<br><br>
+>> Pour vérifier si votre offre MXplan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MXplan](#whichmxplan) » de ce guide.<br><br>
 >>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Supprimer le compte`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **Emails MXplan nouvelle version**
 >>
->> Pour vérifier si votre offre MXplan est une version historique, référez-vous au tableau de la partie « [Identifiez votre offre MXplan](#whichmxplan) » de ce guide.<br><br>
+>> Pour vérifier si votre offre MXplan est une version historique ou nouvelle, référez-vous au tableau de la partie « [Identifiez votre offre MXplan](#whichmxplan) » de ce guide.<br><br>
+>>
 >> Cliquez sur `Emails`{.action} puis choisissez le nom du service MX Plan concerné. Positionnez-vous sur l'onglet `Comptes e-mail`{.action}. La fenêtre qui apparaît affiche les comptes e-mail existants. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite du compte à modifier puis cliquez sur `Réinitialiser ce compte`{.action}.<br><br>
 >>![email](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
