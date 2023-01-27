@@ -5,7 +5,7 @@ excerpt: 'This guide will help you configure your server’s RAID array in the e
 section: 'RAID and disks'
 ---
 
-**Last updated 11th October 2022**
+**Last updated 27th January 2023**
 
 ## Objective
 
@@ -113,13 +113,15 @@ Disk model: QEMU HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-[Disklabel type: dos]               
+`Disklabel type: dos`              
 Disk identifier: 0x150f6797
 ```
 
 We can see that `/dev/md2` consists of 888.8GB and `/dev/md4` contains 973.5GB. If we were to run the mount command we can also find out the layout of the disk.
 
 ```sh
+# mount
+
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
 udev on /dev type devtmpfs (rw,nosuid,relatime,size=16315920k,nr_inodes=4078980,mode=755)
@@ -155,6 +157,8 @@ tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3266552k,mode=
 Alternatively, the `lsblk` command offers a different view of the partitions:
 
 ```sh
+lsblk
+
 NAME    MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sda       8:0    0   1.8T  0 disk
 ├─sda1    8:1    0     1M  0 part
@@ -180,7 +184,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Please note that if you are connected as the user root, you might get the following message when you try to unmount the partition (in our case, where our md4 is mounted in /home):
+> Please note that if you are connected as the user root, you may get the following message when you try to unmount the partition (in our case, where our md4 is mounted in /home):
 > 
 > `umount: /home: target is busy`
 >
@@ -299,15 +303,17 @@ Once the disk has been replaced, we need to copy the partition table from a heal
 ```sh
 sgdisk -R /dev/sda /dev/sdb 
 ```
-The command should be in this format: sgdisk -R /dev/newdisk /dev/workingdisk
+The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`
 
 Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
 
 ```sh
-sgdisk -G /dev/sdb
+sgdisk -G /dev/sda
 ```
 
 **For MBR partitions**
+
+Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command: 
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
@@ -316,7 +322,7 @@ sfdisk -d /dev/sdb | sfdisk /dev/sda
 We can now rebuild the RAID array. The following code snippet shows how we can rebulid the `/dev/md4` partition layout with the recently-copied sda partition table: 
 
 ```sh
-mdadm --add /dev/md2 /dev/sda2
+mdadm --add /dev/md4 /dev/sda4
 cat /proc/mdstat
 
 Personalities : [raid1] [linear] [multipath] [raid0] [raid6] [raid5] [raid4] [raid10]
@@ -329,7 +335,6 @@ md4 : active raid1 sda4[0] sdb4[1]
       bitmap: 0/8 pages [0KB], 65536KB chunk
 
 unused devices: <none>
-
 ```
 
 We can verify the RAID details with the following command:
@@ -369,7 +374,7 @@ mdadm --detail /dev/md4
 The RAID has now been rebuilt, but we still need to mount the partition (`/dev/md4` in this example) with the following command: 
 
 ```sh
-mount /dev/md2 /home
+mount /dev/md4 /home
 ```
 
 ## Go Further
