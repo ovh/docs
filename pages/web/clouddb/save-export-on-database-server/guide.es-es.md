@@ -46,13 +46,13 @@ En la columna **"Copias de seguridad"**, la cifra corresponde al número de copi
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y, a continuación, en `Guardar`{.action}.
 
-![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
 
 #### 2\. Exportar una copia de seguridad
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y, seguidamente, en `Mostrar las copias de seguridad`{.action}.
 
-![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
 
 Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, seguidamente, en `Descargar la copia de seguridad`{.action} para descargar la copia de seguridad.
 
@@ -70,7 +70,7 @@ Una vez conectado a phpMyAdmin, haga clic en el nombre de la base de datos que q
 
 Hay dos modos de exportación posibles. Si no necesita ayuda específica, le recomendamos que utilice el modo **rápido** en formato **SQL**.
 
-![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
 
 ##### 1\.2 Exportar la base de datos MySQL o MariaDB en línea de comandos
 

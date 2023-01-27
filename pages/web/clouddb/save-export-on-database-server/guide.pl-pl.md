@@ -49,13 +49,13 @@ W kolumnie **"Kopie zapasowe"** liczba ta odpowiada liczbie kopii zapasowych dos
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Zapisz teraz`{.action}.
 
-![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
 
 #### 2\. Eksport kopii zapasowej
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wyświetl kopie zapasowe.`{.action}
 
-![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie `Pobierz kopię zapasową`{.action}, aby pobrać kopię zapasową.
 
@@ -73,7 +73,7 @@ Po zalogowaniu się do phpMyAdmin kliknij nazwę bazy danych, którą chcesz wye
 
 Masz dwa możliwe sposoby eksportu. Jeśli nie potrzebujesz określonego trybu, zalecamy użycie trybu **szybkiego** w formacie **SQL**.
 
-![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
 
 ##### 1\.2 Eksportowanie bazy MySQL lub MariaDB z wiersza poleceń
 

@@ -49,13 +49,13 @@ Al livello della colonna **Backup**, la cifra corrisponde al numero di backup di
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del database e seleziona `Salva adesso`{.action}.
 
-![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
 
 #### 2\. Esporta un backup
 
 Clicca sui tre puntini `...`{.action} a destra del database e seleziona `Mostra i backup`{.action}
 
-![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
 
 Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} a destra del backup scelto e poi su `Scarica il backup`{.action} per recuperare questo backup.
 
@@ -73,7 +73,7 @@ Una volta connesso a phpMyAdmin, clicca sul nome del database da esportare e poi
 
 Avete due possibili modalità di esportazione. Se non hai necessità specifiche, ti consigliamo di utilizzare la modalità **rapida** in formato **SQL**.
 
-![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
 
 ##### 1\.2 Esporta il tuo database MySQL o MariaDB da riga di comando
 

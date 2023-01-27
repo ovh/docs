@@ -42,13 +42,13 @@ In the **Backups** column, the number corresponds to the number of backups avail
 
 Click the `...`{.action} button to the right of the database, then click `Back up now`{.action}.
 
-![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
 
 #### 2\. Exporting a backup
 
 Click the `...`{.action} button to the right of the database, then click `Show backups`{.action}
 
-![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
 
 The list of available backups will appear. Click on the `...`{.action} button to the right of the backup you want to create, then click `Download the backup`{.action} to retrieve this backup.
 
@@ -66,7 +66,7 @@ Once you have logged in to phpMyAdmin, click on the name of the database you wan
 
 You have two possible export modes. If you do not have a specific need, we recommend using **quick** mode in **SQL** format.
 
-![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
 
 ##### 1\.2 Exporting a MySQL or MariaDB database from the command line
 

@@ -48,13 +48,13 @@ In der Spalte **Sicherungen** indiziert die Zahl die für Ihre Datenbank verfüg
 
 Klicken Sie auf `...`{.action} rechts neben der Datenbank und dann auf `Jetzt sichern`{.action}.
 
-![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
 
 #### 2\. Backup exportieren
 
 Klicken Sie auf `...`{.action}. rechts neben der Datenbank und dann auf `Die Sicherungen anzeigen`{.action}.
 
-![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
 
 Die Liste der verfügbaren Backups erscheint. Klicken Sie auf `...`{.action} rechts neben dem ausgewählten Backup und dann auf `Sicherung herunterladen`{.action}, um die Datei anzufordern.
 
@@ -72,7 +72,7 @@ Wenn Sie in phpMyAdmin eingeloggt sind, klicken Sie auf den Namen der Datenbank,
 
 Sie haben zwei mögliche Exportmethoden. Wenn Sie keine besonderen Bedürfnisse haben, empfehlen wir Ihnen die Verwendung des Schnellmodus im **SQL**-Format.
 
-![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
 
 ##### 1\.2 MySQL oder MariaDB Datenbank über die Kommandozeile exportieren
 

@@ -49,13 +49,13 @@ Ao nível da coluna **«Backups»**, o algarismo corresponde ao número de salva
 
 Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Fazer backup agora`{.action}.
 
-![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
 
 #### 2. Exportar um backup
 
 Clique no botão `...`{.action} à direita da base de dados e, a seguir, em `Exibir os backups`{.action}.
 
-![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
 
 Quando surgir a lista dos backups, clique no botão `...`{.action} à direita do backup escolhido e em `Descarregar o backup`{.action} para o obter.
 
@@ -73,7 +73,7 @@ Depois de se conectar ao phpMyAdmin, clique no nome da base de dados que deseja 
 
 Há dois modos de exportação. Se não tem necessidades específicas, sugerimos que utilize o modo **rápido** no formato **SQL**.
 
-![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
 
 ##### 1.2\. Exportar uma base MySQL ou MariaDB a partir da linha de comandos
 

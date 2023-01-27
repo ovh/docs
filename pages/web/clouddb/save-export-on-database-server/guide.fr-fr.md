@@ -45,13 +45,13 @@ Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre d
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Sauvegarder maintenant`{.action}.
 
-![Web Cloud Databases](images/private-sql-save01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-save01.png){.thumbnail}
 
 #### 2\. Exporter une sauvegarde
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Afficher les sauvegardes`{.action}
 
-![Web Cloud Databases](images/private-sql-dl01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-dl01.png){.thumbnail}
 
 La liste des sauvegardes disponibles apparaît,  cliquez sur le bouton `...`{.action} à droite de la sauvegarde choisie, puis sur `Télécharger la sauvegarde`{.action} pour récupérer cette sauvegarde.
 
@@ -69,7 +69,7 @@ Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que
 
 Vous avez deux modes d'exportation possibles. Si vous n'avez pas de besoin spécifique, nous vous conseillons d'utiliser le mode **rapide** au format **SQL**.
 
-![Web Cloud Databases](images/private-sql-export01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
 
 ##### 1\.2 Exporter ma base MySQL ou MariaDB en ligne de commande
 
