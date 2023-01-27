@@ -7,8 +7,7 @@ section: Project management
 order: 5
 ---
 
-**Last updated 18th October 2021**
-
+**Last updated 27th January 2023**
 ## Objective
 
 By default, the Public Cloud projects as well as the resources total (RAM, CPU, disk space, number of instances, etc.) you can use are limited for security reasons.
@@ -52,13 +51,13 @@ Next, click on the drop down arrow next to "Select the volume" to view the list 
 
 The table below shows the resources you get for each quota:
 
-|Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|
-|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|
-|20 VMs|20|40|240GB|20TB|40|40|
-|50 VMs|50|64|496GB|20TB|100|100|
-|100 VMs|100|128|992GB|39TB|200|200|
-|200 VMs|200|512|3.9TB|78TB|400|400|
+|Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|Floating Ips|Octavia Loadbalancer|Gateway (Routers)|
+|---|---|---|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
 
 Once you have selected your volume, click on `Confirm`{.action}. Your payment will be processed as soon as possible.
 

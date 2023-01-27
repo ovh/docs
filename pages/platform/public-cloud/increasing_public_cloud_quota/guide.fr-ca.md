@@ -7,7 +7,7 @@ section: 'Gestion de projets'
 order: 6
 ---
 
-**Dernière mise à jour le 18/10/2021**
+**Dernière mise à jour le 27/01/2023**
 
 ## Objectif
 
@@ -51,13 +51,13 @@ Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher 
 
 Le tableau ci-dessous vous indique les ressources obtenues pour chaque quota :
 
-|Quota|Instances|CPU/Cores|RAM|Taille du volume|Volumes|Snapshots|
-|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|
-|20 VMs|20|40|240GB|20TB|40|40|
-|50 VMs|50|64|496GB|20TB|100|100|
-|100 VMs|100|128|992GB|39TB|200|200|
-|200 VMs|200|512|3.9TB|78TB|400|400|
+|Quota|Instances|CPU/Cores|RAM|Taille du volume|Volumes|Snapshots|Floating IPs|Loadbalancer Octavia|Gateway (Routers)|
+|---|---|---|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
 
 Une fois votre volume sélectionné, cliquez sur `Confirmer`{.action}. Votre paiement sera pris en compte dans les plus brefs délais.
 

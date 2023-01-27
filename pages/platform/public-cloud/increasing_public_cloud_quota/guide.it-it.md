@@ -11,7 +11,7 @@ order: 6
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 25/10/2021**
+**Ultimo aggiornamento: 27/01/2023**
 
 ## Obiettivo
 
@@ -57,13 +57,13 @@ In seguito, clicca sulla freccia a discesa accanto a "Seleziona il volume" per v
 
 Nella tabella seguente vengono indicate le risorse disponibili per ogni quota:
 
-|Quota|Instanze|CPU/Cores|RAM|Dimensione del volume|Volumi|Snapshots|
-|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|
-|20 VMs|20|40|240GB|20TB|40|40|
-|50 VMs|50|64|496GB|20TB|100|100|
-|100 VMs|100|128|992GB|39TB|200|200|
-|200 VMs|200|512|3.9TB|78TB|400|400|
+|Quota|Instanze|CPU/Cores|RAM|Dimensione del volume|Volumi|Snapshots|Floating IPs|Loadbalancer Octavia|Gateway (Routers)|
+|---|---|---|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
 
 Una volta selezionato il suo volume, clicca su `Conferma`{.action}. Il tuo pagamento sarà elaborato al più presto.
 

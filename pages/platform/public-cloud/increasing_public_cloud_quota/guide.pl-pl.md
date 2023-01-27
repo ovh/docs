@@ -11,7 +11,7 @@ order: 6
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 25-10-2021**
+**Ostatnia aktualizacja z dnia 27-01-2023**
 
 ## Wprowadzenie
 
@@ -57,13 +57,13 @@ Następnie kliknij na strzałkę rozwijaną obok "Wybierz wolumen", aby wyświet
 
 Poniższa tabela wyszczególnia zasoby, które możesz uzyskać dla każdego limitu:
 
-|Quota|Instancje|CPU/Cores|RAM|Rozmiar woluminu|Woluminy|Snapshots|
-|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|
-|20 VMs|20|40|240GB|20TB|40|40|
-|50 VMs|50|64|496GB|20TB|100|100|
-|100 VMs|100|128|992GB|39TB|200|200|
-|200 VMs|200|512|3.9TB|78TB|400|400|
+|Quota|Instancje|CPU/Cores|RAM|Rozmiar woluminu|Woluminy|Snapshots|Floating IPs|Loadbalancer Octavia|Gateway (Routers)|
+|---|---|---|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
 
 Po wybraniu wolumenu kliknij przycisk `Zatwierdź`{.action}. Twoja płatność zostanie przetworzona tak szybko, jak to możliwe.
 
