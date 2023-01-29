@@ -2,18 +2,21 @@
 title: Cold Archive - Présentation
 slug: cold-archive/overview
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
-section: Cold Archive Storage Class Specifics
+section: Spécificités de la classe de stockage Cold Archive
 order: 010
 ---
 
-**Dernière mise à jour le 17/01/2023**
+**Dernière mise à jour le 29/01/2023**
 
 ## Objectif
 
-OVHcloud Cold Archive est une classe de stockage conçue pour un stockage à long terme :
+OVHcloud Cold Archive est une classe de stockage conçue pour un stockage à long terme des données non utilisées.
 
-- Conservation des données pour une durée > 8 mois
-- Archive immuable, les données ne peuvent pas être mises à jour après avoir été archivées
+Ses principales caractéristiques sont :
+
+- Rétention à long terme : conservation des données pour une durée > 8 mois.
+- Immuabilité des données : les données ne peuvent pas être mises à jour après avoir été archivées.
+- Durabilité (99,999%) et protection contre le bit-rot (dégradation des données sur une longue période).
 - A tout moment, vous avez accès aux métadonnées qui sont toujours en ligne pour consultation. Vous pouvez récupérer les données à la demande dans un délai de 48 heures.
 
 La conception matérielle est spécifiquement conçue pour ce cas d'utilisation, afin de fournir une plate-forme de confiance avec le meilleur rapport résilience/prix :
@@ -78,7 +81,7 @@ Vous pouvez suivre les différentes étapes du stockage de vos données via le s
 
 ## Performances réseau, téléchargement et récupération
 
-Cold Archive est un service basé sur Object Storage - API S3. Les performances et les limitations (nombre de containers, compte, bande passante maximale par connexion, nombre de requêtes par seconde sur le bucket, taille maximale par objet / mpu / part, etc) sont disponibles [ici](https://docs.ovh.com/fr/storage/object-storage/s3/limitations/).
+Cold Archive est un service basé sur Object Storage - API S3. Les performances et les limitations (nombre de buckets, compte, bande passante maximale par connexion, nombre de requêtes par seconde sur le bucket, taille maximale par objet / mpu / part, etc) sont disponibles [ici](https://docs.ovh.com/fr/storage/object-storage/s3/limitations/).
 
 Pour télécharger vos données, la bande passante maximale est de **1 Gbps par connexion logique** et le nombre de connexions utilisables en parallèle est **illimité**.
 

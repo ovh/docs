@@ -6,15 +6,18 @@ section: Cold Archive Storage Class Specifics
 order: 010
 ---
 
-**Last updated 17th January 2023**
+**Last updated 29th January 2023**
 
 ## Objective
 
-OVHcloud Cold Archive is a class of storage designed for long-term storage:
+OVHcloud Cold Archive is  a class of storage designed for a long-term strage of non-actively used data.
 
-- Data storage for a period > 8 months
-- Immutable archive, the data cannot be updated after being archived
-- At any moment, you have access to the metadata which is always online for consultation. You can retrieve the data on demand within 48 hours when you need it.
+Its main features are:
+
+- Long-term retention: storage of data for a period > 8 months
+- Data immutability: data cannot be updated after being archived
+- Durability (99,999%) and protection against bit-rot (degradation of data over long period of time)
+- At any moment you have access to the metadata always online for consultation. You can retrieve the data on demand within 48 hours when you need it.
 
 The hardware design is specifically build for this use case, to provide a trusted platform with best resiliency/price ratio:
 
@@ -78,7 +81,7 @@ You can track the different steps of your data by the status of your bucket 
 
 ## Network, upload and retrieval performances  
 
-Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of containers, account, maximum bandwidth per connection, number of request per second on bucket, maximum size per object / mpu / part, etc) are available [here](https://docs.ovh.com/gb/en/storage/object-storage/s3/limitations/).
+Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of request per second on bucket, maximum size per object / mpu / part, etc) are available [here](https://docs.ovh.com/gb/en/storage/object-storage/s3/limitations/).
 
 To upload your data, the maximum bandwidth is **1 Gbps per logical connection** and the number of connections that can be used in parallel is **unlimited**.
 

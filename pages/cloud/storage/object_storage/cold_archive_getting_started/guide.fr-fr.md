@@ -1,5 +1,5 @@
 ---
-title: Cold Archive - Premiers pas avec Cold Archive (Beta) (EN)
+title: Cold Archive - Premiers pas avec Cold Archive
 slug: cold-archive/getting-started
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
 section: Spécificités de la classe de stockage Cold Archive
@@ -114,7 +114,7 @@ aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net get-ovh-bucket-status
 
 | État de l'archive (= bucket) | Description | Autorisations d'objets |
 | --- | --- | --- |
-| **`None`** | Aucune configuration Intelligent-Tiering n'a encore été appliquée au compartiment. | Tous |
+| **`None`** | Aucune configuration Intelligent-Tiering n'a encore été appliquée au bucket. | Tous |
 | **`Archiving`** | Archivage en cours sur bandes. | Liste |
 | **`Archived`** | Objets archivés sur bandes uniquement. | Liste |
 | **`Restoring`** | Restauration en cours à partir des bandes. | Liste |

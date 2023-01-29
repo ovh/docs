@@ -1,5 +1,5 @@
 ---
-title: Cold Archive - Getting started with Cold Archive (Beta) (EN)
+title: Cold Archive - Getting started with Cold Archive (EN)
 slug: cold-archive/getting-started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/getting-started-with-cold-archive/'
