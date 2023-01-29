@@ -565,7 +565,7 @@
                 + [Object Storage - Use S3 Object Storage with Owncloud](cloud/storage/object_storage/s3_owncloud)
             + [Cold Archive Storage Class Specifics](public-cloud-storage-object-storage-cold-archive-storage-class-specifics)
                 + [Cold Archive - Getting started with Cold Archive](cloud/storage/object_storage/cold_archive_getting_started)
-                + [Cold Archive - Overview](cloud/storage/object_storage/cold_archive_overviewd)
+                + [Cold Archive - Overview](cloud/storage/object_storage/cold_archive_overview)
             + [OpenStack Swift Storage Class Specifics](public-cloud-storage-object-storage-openstack-swift-storage-class-specifics)
                 + [Object Storage Swift - Getting started with the Swift API](cloud/storage/object_storage/pcs_getting_started_with_the_swift_api)
                 + [Object Storage Swift - Getting started with the Swift S3 API](cloud/storage/object_storage/pcs_getting_started_with_the_swift_s3_api)
