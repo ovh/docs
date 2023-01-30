@@ -60,9 +60,9 @@ Et cliquez sur `Save`{.action}.
 
 Saisissez ces valeurs :
 
-* **DHCP Server Address** :  Adresse du serveur DHCP comme 192.168.1.253/24
-* **DHCP Range** : Etendue de votre serveur DHCP avec l'adresse du début et de fin séparés un tiret comme 192.168.1.10-192.168.1.200
-* **DNS Server** : Serveurs DNS comme 213.186.33.99 qui est le serveur DHCP OVHcloud.
+* **DHCP Server Address** : Adresse du serveur DHCP 192.168.1.253/24 (Ce doit être la même adresse que dans le profil DHCP).
+* **DHCP Range** : Etendue de votre serveur DHCP avec l'adresse du début et de fin séparés par un tiret 192.168.1.10-192.168.1.200.
+* **DNS Server** : Serveur DNS OVHcloud 213.186.33.99.
 
 Ensuite cliquez sur `APPLY`{.action}.
 

@@ -75,7 +75,7 @@ Left-click on `Network Topology`{.action}.
 
 ![02 Display network topology 02](images/02-display-network-topology02.png){.thumbnail}
 
-A schema representing the network topology is available with two public IP addresses (both addresses are for NSX-T and are not usable for port redirections) connected to the **ovh-T0-gateway** and the connection to the **ovh-T1-gateway**.
+A diagram representing the network topology is available with two public IP addresses (both addresses are for NSX-T and are not usable for port redirections) connected to the **ovh-T0-gateway** and the connection to the **ovh-T1-gateway**.
 
 ![03 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
