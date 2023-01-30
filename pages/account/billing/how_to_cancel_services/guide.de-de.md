@@ -71,7 +71,7 @@ Klicken Sie auf den zu kündigenden Produkttyp in der folgenden Liste der wichti
 &emsp;&emsp;[Web Hosting](#hosting)<br />
 &emsp;&emsp;[Sectigo SSL-Zertifikate](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web PaaS powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
 &emsp;&emsp;[E-Mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[E-Mail Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
@@ -188,9 +188,9 @@ Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.acti
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
-#### CloudDB <a name="clouddb"></a>
+#### Web Cloud Databases <a name="webclouddatabases"></a>
 
-Um Ihren [CloudDB](https://www.ovh.de/cloud/cloud-databases/) Dienst zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
+Um Ihren [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) Dienst zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
 
 Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 

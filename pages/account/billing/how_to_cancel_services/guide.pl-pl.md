@@ -71,7 +71,7 @@ Kliknij na rodzaj produktu, który chcesz zrezygnować z usługi na poniższej l
 &emsp;&emsp;[Hosting](#hosting)<br />
 &emsp;&emsp;[Certyfikat SSL Sectigo](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web Paas powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
 &emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[E-mail Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
@@ -188,9 +188,9 @@ Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnac
 
 Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
-#### CloudDB <a name="clouddb"></a>
+#### Web Cloud Databases <a name="webclouddatabases"></a>
 
-Aby zrezygnować z usługi [CloudDB](https://www.ovh.pl/cloud/cloud-databases/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+Aby zrezygnować z usługi [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Zrezygunj`{.action}.
 

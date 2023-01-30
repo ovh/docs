@@ -71,7 +71,7 @@ Clique no tipo de produto a rescindir na seguinte lista das principais ofertas O
 &emsp;&emsp;[Alojamento Web](#hosting)<br />
 &emsp;&emsp;[Certificado SSL Sectigo](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web Paas powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
 &emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[E-mail Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
@@ -188,9 +188,9 @@ A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, 
 
 Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
-#### CloudDB <a name="clouddb"></a>
+#### Web Cloud Databases <a name="webclouddatabases"></a>
 
-Para rescindir a sua oferta [CloudDB](https://www.ovh.pt/cloud/cloud-databases/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
+Para rescindir a sua oferta [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
