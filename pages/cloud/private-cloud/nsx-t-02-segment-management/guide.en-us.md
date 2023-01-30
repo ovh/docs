@@ -1,5 +1,5 @@
 ---
-title: Segment management
+title: Segment management in NSX-T
 slug: nsx-t-segment-management
 excerpt: How to create and use segments
 section: NSX-T
