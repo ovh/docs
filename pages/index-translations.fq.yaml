@@ -203,33 +203,32 @@ public-cloud-storage-backup-and-disaster-recovery-solution: Backup et Plan de Re
 public-cloud-storage-backup-and-disaster-recovery-solution-veeam: Veeam
 web-cloud-clouddb: CloudDB
 web-cloud-clouddb-getting-started: Premiers pas
-web-cloud-clouddb-setting-up: Mise en route
+web-cloud-clouddb-configuration: Configuration
 web-cloud-clouddb-technical-resources: Ressources techniques
-web-cloud-collaborative-solutions: Outils collaboratifs
-web-cloud-collaborative-solutions-email-pro: E-mail pro
-web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Ajouter votre adresse de courriel à un service de messagerie existant
-web-cloud-collaborative-solutions-email-pro-getting-started: Premiers pas
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configuration d'une application de courriel sur votre ordinateur
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurer une application de courriel sur son téléphone mobile ou sa tablette
-web-cloud-collaborative-solutions-email-pro-troubleshooting: Dépanner
-web-cloud-collaborative-solutions-microsoft-exchange: Microsoft Exchange
-web-cloud-collaborative-solutions-microsoft-exchange-exchange-account-features: Fonctionnalités d'un compte Exchange
-web-cloud-collaborative-solutions-microsoft-exchange-getting-started: Premiers pas
-web-cloud-collaborative-solutions-microsoft-exchange-migrating: Migration
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Configuration d'une application de courriel sur votre ordinateur
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurer une application de courriel sur son téléphone mobile ou sa tablette
-web-cloud-collaborative-solutions-microsoft-exchange-troubleshooting: Dépanner
-web-cloud-collaborative-solutions-microsoft-exchange-using-outlook-web-access-owa: Utiliser Outlook Web Access (OWA)
-web-cloud-collaborative-solutions-microsoft-office: Microsoft Office
-web-cloud-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
-web-cloud-collaborative-solutions-mx-plan: MX Plan
-web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Ajouter votre adresse de courriel à un service de messagerie existant
-web-cloud-collaborative-solutions-mx-plan-email-address-features: Fonctionnalités des adresses électroniques
-web-cloud-collaborative-solutions-mx-plan-getting-started: Premiers pas
-web-cloud-collaborative-solutions-mx-plan-migrating: Migration
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Configuration d'une application de courriel sur votre ordinateur
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurer une application de courriel sur son téléphone mobile ou sa tablette
-web-cloud-collaborative-solutions-mx-plan-troubleshooting: Dépanner
+web-cloud-email-collaborative-solutions: Solutions e-mail et outils collaboratifs
+web-cloud-email-collaborative-solutions-common-email-features: Fonctionnalités communes aux offres e-mail
+web-cloud-email-collaborative-solutions-common-email-features-using-outlook-web-access-owa: Utilisation d’Outlook Web Application (OWA)
+web-cloud-email-collaborative-solutions-common-email-features-migration: Migration de services
+web-cloud-email-collaborative-solutions-common-email-features-troubleshooting: Diagnostic et dépannage
+web-cloud-email-collaborative-solutions-mx-plan: MX Plan
+web-cloud-email-collaborative-solutions-mx-plan-getting-started: Premiers pas
+web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Fonctionnalités des adresses e-mail
+web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
+web-cloud-email-collaborative-solutions-email-pro-getting-started: Premiers pas
+web-cloud-email-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
+web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
+web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Fonctionnalités d'un compte Exchange
+web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Premiers pas
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostic et dépannage
+web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
+web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-domains: Domaines
 web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: DNS et zone DNS
@@ -292,8 +291,8 @@ web-cloud-hosting-troubleshooting: Dépanner
 web-cloud-hosting-tutorials: Tutoriels
 web-cloud-hosting-tutorials-cloud-web: Tutoriels Cloud Web
 web-cloud-hosting-website-optimisation: Optimisation de votre site web
-web-cloud-hosting-ssl-gateway: SSL Gateway
-web-cloud-hosting-ssl-gateway-getting-started: Premiers pas
+web-cloud-ssl-gateway: SSL Gateway
+web-cloud-ssl-gateway-getting-started: Premiers pas
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
 web-cloud-web-paas-powered-by-platformsh-administration: Administration
 web-cloud-web-paas-powered-by-platformsh-administration-management-console: Console de gestion
