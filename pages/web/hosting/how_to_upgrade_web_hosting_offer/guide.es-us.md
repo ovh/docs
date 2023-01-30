@@ -10,7 +10,7 @@ order: 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 22/06/2022**
+**Última actualización: 30/01/2023**
 
 ## Objetivo
 
@@ -47,10 +47,9 @@ A continuación, seleccione la nueva suscripción y la duración de la misma. Ac
 ### Comprobar que el alojamiento es compatible con un producto inferior <a name="checks"></a>
 
 > [!warning]
+> El cambio de la suscripción para una oferta inferior no está disponible para nuestros clientes que están alojados fuera de Europa.
 >
-> Solo es posible modificar la suscripción para un producto que ofrezca menos recursos si se trata del producto **inmediatamente inferior**. 
-> Por ejemplo, no podrá pasar de una fórmula *Performance 2* a una fórmula *Profesional* en una sola operación.
-> **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Profesional*.
+> Si desea cambiar la suscripción a un plan inferior, siga los pasos de nuestra guía "[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)".
 >
 
 Antes de realizar el cambio a una gama inferior, compruebe los siguientes 6 elementos:

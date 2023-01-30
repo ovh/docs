@@ -6,7 +6,7 @@ section: Optimise your website
 order: 02
 ---
 
-**Last updated 3rd January 2023**
+**Last updated 30th January 2023**
 
 ## Objective
 
@@ -43,10 +43,10 @@ Then select your new subscription and its duration. Confirm the corresponding co
 ### Checking that your hosting plan is compatible with a lower plan <a name="checks"></a>
 
 > [!warning]
+> Subscription changes for lower plans are not available for customers whose services are hosted outside Europe.
 >
-> You can only change your subscription to a lower range plan if it is the **immediate lower range** plan.
-> For example, you cannot switch from *Performance 2* to *Professional* in a single operation.
-> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Professional* plan.
+> If you would like to change your subscription to a lower plan, please follow the steps in our guide “[Migrate your website and emails to OVHcloud](https://docs.ovh.com/asia/en/hosting/migrating-website-to-ovh/)”.
+>
 
 Before you make your switch to a lower range, check the following 5 items:
 

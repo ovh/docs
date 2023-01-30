@@ -6,7 +6,7 @@ section: Optimiser son site
 order: 02
 ---
 
-**Dernière mise à jour le 19/05/2022**
+**Dernière mise à jour le 30/01/2023**
 
 ## Objectif
 
@@ -39,19 +39,11 @@ Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouv
 
 ### Modifier votre offre d'hébergement <a name="modify"></a>
 
-> [!primary]
->
-> La modification de votre abonnement pour une offre délivrant moins de ressources n'est possible que s'il s'agit de l'offre **immédiatement inférieure**. 
-> Par exemple, vous ne pourrez pas passer d'une formule *Performance 2* à une formule *Pro* en une seule opération.
-> Vous devrez **d'abord** faire évoluer votre hébergement depuis la formule *Performance 2* vers l'offre *Performance 1* **puis** vers l'offre *Pro*.
->
-
 > [!warning]
+> Le changement d'abonnement pour une offre inférieure est indisponible pour nos clients dont les services sont hébergés hors Europe.
 >
-> **Avant** tout changement de votre abonnement pour une offre inférieure, vérifiez que l'utilisation de votre offre actuelle est compatible avec les caractéristiques de votre prochaine [offre d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/).
->
-> Pour ce faire, suivez [ces instructions](#checks), effectuez le changement d'offre puis répétez ces opérations autant de fois que nécessaire.
->
+> Si vous souhaitez modifiez votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](https://docs.ovh.com/ca/fr/hosting/migrer-mon-site-chez-ovh/) ».
+> 
 
 Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
 
