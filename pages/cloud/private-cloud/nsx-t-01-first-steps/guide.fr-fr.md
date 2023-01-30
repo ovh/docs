@@ -32,8 +32,7 @@ Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfi
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
 
-Dans la version ALPHA de NSX-T un bloc de 16 adresses IP est livré. L'accès INTERNET est fonctionnel au travers d'une de ces adresses, il est aussi possible de faire des redirections de ports au travers de 9 adresses de la deuxième du bloc jusqu'a la neuvieme, et la douzieme qui sert de nat pour la sortie INTERNET les autres adresses sont réservées.
-
+OVHcloud fourni un bloc de 16 adresses IP publiques, certaines sont réservés vous pouvez utiliser 8 adresses à partir de la deuxième adresse du bloc pour effectuer des redirections de ports.
 
 
 ## Prérequis
