@@ -6,7 +6,7 @@ section: NSX-T
 order: 04
 ---
 
-**Last updated 27th January 2023**
+**Last updated 30th January 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -26,17 +26,17 @@ order: 04
 ## Prérequis
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials.
-- Having a user account with access to vSphere as well as the specific rights for NSX-T (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
-- **NSX-T** deployed.
+- Having a user account with access to vSphere as well as the specific rights for NSX-T (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Having **NSX-T** deployed with two segments configured in your NSX-T configuration, you can use this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
 
 ## Instructions
 
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/us/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
 
-[Segment management](https://docs.ovh.com/us/en/nsx-t-segment-management/)
+[Segment management](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
