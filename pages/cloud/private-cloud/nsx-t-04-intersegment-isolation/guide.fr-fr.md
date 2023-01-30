@@ -31,9 +31,9 @@ order: 04
 
 ## En pratique
 
-Le réseau entre segment derrière la **ovh-T1-gw** n'est pas isolé, chaque segment communiquent entre eux sans restriction. 
+Les réseaux de chaque segment derrière la **ovh-T1-gw** ne sont pas isolés par défaut. 
 
-Nous allons créer une règle qui isole ces deux segments entre eux à partir de leurs sous-réseaux :
+Nous allons créer une règle qui isole ces deux segments entre eux à partir de leurs adresses de sous-réseaux :
 
 - ov1-segment : 192.168.1.0/24.
 - ov2-segment : 192.168.2.0/24.
@@ -50,7 +50,7 @@ Dans la colonne **Name** saisissez `ov1 <-> ov2 isolation`{.action}.
 
 ![02 Configure policy 02](images/02-configure-policy02.png){.thumbnail}
 
-à gauche de votre stratégie cliquez sur les `trois petits points verticaux`{.action} et choisissez `Add Rule`{.action} dans le menu.
+À gauche de votre stratégie cliquez sur les `trois petits points verticaux`{.action} et choisissez `Add Rule`{.action} dans le menu.
 
 ![02 Configure policy 03](images/02-configure-policy03.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Cliquez sur le `stylo`{.action} dans la colonne **Sources**.
 
 ![02 Configure policy 05](images/02-configure-policy05.png){.thumbnail}
 
-Choisissez `IP Addresses`{.action}, saisissez `192.168.1.0/24`{.action} qui est le sous-réseau du segment ov1-segment et cliquez sur `APPLY`{.action} 
+Choisissez `IP Addresses`{.action}, saisissez `192.168.1.0/24`{.action} qui est le sous-réseau du segment ov1-segment et cliquez sur `APPLY`{.action}.
 
 ![02 Configure policy 06](images/02-configure-policy06.png){.thumbnail}
 
@@ -70,11 +70,11 @@ Cliquez sur le `stylo`{.action} dans la colonne **Destinations**.
 
 ![02 Configure policy 07](images/02-configure-policy07.png){.thumbnail}
 
-Choisissez `IP Addresses`{.action}, saisissez `192.168.2.0/24`{.action} qui est le sous-réseau du segment ov2-segment et cliquez sur `APPLY`{.action} 
+Choisissez `IP Addresses`{.action}, saisissez `192.168.2.0/24`{.action} qui est le sous-réseau du segment ov2-segment et cliquez sur `APPLY`{.action}.
 
 ![02 Configure policy 08](images/02-configure-policy08.png){.thumbnail}
 
-Sélectionnez `Drop`{.action} dans la colonne **Action**
+Sélectionnez `Drop`{.action} dans la colonne **Action**.
 
 ![02 Configure policy 09](images/02-configure-policy09.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Cliquez sur le `stylo`{.action} dans la colonne **Sources**.
 
 ![02 Configure policy 12](images/02-configure-policy12.png){.thumbnail}
 
-Choisissez `IP Addresses`{.action}, saisissez `192.168.2.0/24`{.action} qui est le sous-réseau du segment ov2-segment et cliquez sur `APPLY`{.action} 
+Choisissez `IP Addresses`{.action}, saisissez `192.168.2.0/24`{.action} qui est le sous-réseau du segment ov2-segment et cliquez sur `APPLY`{.action}.
 
 ![02 Configure policy 13](images/02-configure-policy13.png){.thumbnail}
 
@@ -98,7 +98,7 @@ Cliquez sur le `stylo`{.action} dans la colonne **Destinations**.
 
 ![02 Configure policy 14](images/02-configure-policy14.png){.thumbnail}
 
-Choisissez `IP Addresses`{.action}, saisissez `192.168.1.0/24`{.action} qui est le sous-réseau du segment ov1-segment et cliquez sur `APPLY`{.action} 
+Choisissez `IP Addresses`{.action}, saisissez `192.168.1.0/24`{.action} qui est le sous-réseau du segment ov1-segment et cliquez sur `APPLY`{.action}.
 
 ![02 Configure policy 15](images/02-configure-policy15.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Cliquez sur `PUBLISH`{.action} pour activer la règle.
 
 Dans la colonne **Action** un rond vert avec *Success* indique que la règle est active. la communication entre les deux segments ne sera plus possible.
 
-![02 Configure policy 16](images/02-configure-policy18.png){.thumbnail}
+![02 Configure policy 18](images/02-configure-policy18.png){.thumbnail}
 
 ## Aller plus loin
 
