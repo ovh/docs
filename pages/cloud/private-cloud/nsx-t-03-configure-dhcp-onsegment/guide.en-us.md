@@ -75,7 +75,7 @@ Virtual machines on this segment can now be configured with DHCP.
 
 [Getting started with NSX-T](https://docs.ovh.com/us/en/private-cloud/nsx-t-first-steps/)
 
-[Segment management](https://docs.ovh.com/us/en/nsx-t-segment-management/)
+[Segment management in NSX-T](https://docs.ovh.com/us/en/nsx-t-segment-management/)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
