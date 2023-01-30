@@ -120,7 +120,5 @@ Dans la colonne **Action** un rond vert avec *Success* indique que la règle est
 
 [Gestion des segment dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
 
-
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
