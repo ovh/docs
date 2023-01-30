@@ -203,7 +203,7 @@ public-cloud-storage-backup-and-disaster-recovery-solution: Backup et Plan de Re
 public-cloud-storage-backup-and-disaster-recovery-solution-veeam: Veeam
 web-cloud-clouddb: CloudDB
 web-cloud-clouddb-getting-started: Premiers pas
-web-cloud-clouddb-setting-up: Mise en route
+web-cloud-clouddb-configuration: Configuration
 web-cloud-clouddb-technical-resources: Ressources techniques
 web-cloud-collaborative-solutions: Outils collaboratifs
 web-cloud-collaborative-solutions-email-pro: E-mail pro
@@ -292,8 +292,8 @@ web-cloud-hosting-troubleshooting: Dépanner
 web-cloud-hosting-tutorials: Tutoriels
 web-cloud-hosting-tutorials-cloud-web: Tutoriels Cloud Web
 web-cloud-hosting-website-optimisation: Optimisation de votre site web
-web-cloud-hosting-ssl-gateway: SSL Gateway
-web-cloud-hosting-ssl-gateway-getting-started: Premiers pas
+web-cloud-ssl-gateway: SSL Gateway
+web-cloud-ssl-gateway-getting-started: Premiers pas
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
 web-cloud-web-paas-powered-by-platformsh-administration: Administration
 web-cloud-web-paas-powered-by-platformsh-administration-management-console: Console de gestion
