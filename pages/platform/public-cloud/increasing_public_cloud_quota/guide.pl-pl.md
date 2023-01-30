@@ -57,7 +57,7 @@ Następnie kliknij na strzałkę rozwijaną obok "Wybierz wolumen", aby wyświet
 
 Poniższa tabela wyszczególnia zasoby, które możesz uzyskać dla każdego limitu:
 
-|Quota|Instancje|CPU/Cores|RAM|Rozmiar woluminu|Woluminy|Snapshots|Floating IPs|Loadbalancer Octavia|Gateway (Routers)|
+|Quota|Instancje|CPU/Cores|RAM|Rozmiar woluminu|Woluminy|Snapshots|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|2|2|2|
 |20 VMs|20|40|240GB|20TB|40|40|2|2|2|

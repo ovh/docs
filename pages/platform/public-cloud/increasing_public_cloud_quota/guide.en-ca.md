@@ -51,7 +51,7 @@ Next, click on the drop down arrow next to "Select the volume" to view the list 
 
 The table below shows the resources you get for each quota:
 
-|Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|Floating Ips|Octavia Loadbalancer|Gateway (Routers)|
+|Quota|Instances|CPU/Cores|RAM|Volume Size|Volumes|Snapshots|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|2|2|2|
 |20 VMs|20|40|240GB|20TB|40|40|2|2|2|

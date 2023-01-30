@@ -58,7 +58,7 @@ Em seguida, clique na seta descendente ao lado de "Selecione o volume" para exib
 
 A tabela abaixo mostra os recursos obtidos para cada cota:
 
-|Quota|Instâncias|CPU/Cores|RAM|Tamanho do volume|Volumes|Snapshots|Floating IPs|Loadbalancer Octavia|Gateway (Routers)|
+|Quota|Instâncias|CPU/Cores|RAM|Tamanho do volume|Volumes|Snapshots|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
 |---|---|---|---|---|---|---|---|---|---|
 |10 VMs|10|20|40GB|20TB|20|20|2|2|2|
 |20 VMs|20|40|240GB|20TB|40|40|2|2|2|
