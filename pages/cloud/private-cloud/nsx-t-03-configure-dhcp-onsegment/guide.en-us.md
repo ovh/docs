@@ -6,7 +6,7 @@ section: NSX-T
 order: 03
 ---
 
-**Last updated 27th January 2023**
+**Last updated 30th January 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -27,7 +27,7 @@ order: 03
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials.
 - Having a user account with access to vSphere as well as the specific rights for NSX-T (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
-- **NSX-T** deployed.
+- You need to have **NSX-T** deployed with a segment configured in your NSX-T configuration. Use this guide [Segment management in NSX-T](https://docs.ovh.com/en/us/private-cloud/nsx-t-segment-management).
 
 ## Instructions
 
