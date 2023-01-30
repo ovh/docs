@@ -207,24 +207,25 @@ web-cloud-clouddb-configuration: Configuração
 web-cloud-clouddb-technical-resources: Recursos técnicos
 web-cloud-email-collaborative-solutions: Soluções de e-mail e Ferramentas Colaborativas
 web-cloud-email-collaborative-solutions-common-email-features: Funcionalidades comuns às ofertas de e-mail
-web-cloud-email-collaborative-solutions-migrating: Migração de serviços
-web-cloud-email-collaborative-solutions-troubleshooting: Diagnóstico
+web-cloud-email-collaborative-solutions-common-email-features-using-outlook-web-access-owa: Utilização do Outlook Web Application (OWA)
+web-cloud-email-collaborative-solutions-common-email-features-migration: Migração de serviços
+web-cloud-email-collaborative-solutions-common-email-features-troubleshooting: Diagnóstico
 web-cloud-email-collaborative-solutions-mx-plan: MX Plan
 web-cloud-email-collaborative-solutions-mx-plan-getting-started: Primeiros passos
 web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Funcionalidades de endereços de correio eletrónico
 web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-phone: Configurar uma aplicação de e-mail no seu smartphone
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
 web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Adicionar endereço de correio eletrónico a um serviço de correio eletrónico existente
 web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
 web-cloud-email-collaborative-solutions-email-pro-getting-started: Primeiros passos
 web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
-web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-phone: Configurar uma aplicação de e-mail no seu smartphone
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
 web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Adicionar endereço de correio eletrónico a um serviço de correio eletrónico existente
 web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Primeiros passos
 web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funcionalidades de uma conta Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Configurar uma aplicação de e-mail no seu computador
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-phone: Configurar uma aplicação de e-mail no seu smartphone
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurar uma aplicação de e-mail no seu smartphone
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnóstico
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint

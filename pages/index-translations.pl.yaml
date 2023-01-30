@@ -207,24 +207,25 @@ web-cloud-clouddb-configuration: Konfiguracja
 web-cloud-clouddb-technical-resources: Zasoby techniczne
 web-cloud-email-collaborative-solutions: Rozwiązania e-mail i narzędzia do pracy zespołowej
 web-cloud-email-collaborative-solutions-common-email-features: Funkcje wspólne dla ofert e-mail
-web-cloud-email-collaborative-solutions-migrating: Migracja usług
-web-cloud-email-collaborative-solutions-troubleshooting: Rozwiązywanie problemów
+web-cloud-email-collaborative-solutions-common-email-features-using-outlook-web-access-owa: Korzystanie z Outlook Web Application (OWA)
+web-cloud-email-collaborative-solutions-common-email-features-migration: Migracja usług
+web-cloud-email-collaborative-solutions-common-email-features-troubleshooting: Rozwiązywanie problemów 
 web-cloud-email-collaborative-solutions-mx-plan: MX Plan
 web-cloud-email-collaborative-solutions-mx-plan-getting-started: Pierwsze kroki
 web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Funkcje adresu e-mail
 web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-phone: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
 web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Dodawanie adresu e-mail do istniejącej usługi poczty e-mail
 web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
 web-cloud-email-collaborative-solutions-email-pro-getting-started: Pierwsze kroki
 web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
-web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-phone: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
 web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Dodawanie adresu e-mail do istniejącej usługi poczty e-mail
 web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Pierwsze kroki
 web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funkcje konta Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Konfigurowanie aplikacji poczty e-mail na komputerze
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-phone: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Konfigurowanie aplikacji poczty e-mail na telefonie komórkowym
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Rozwiązywanie problemów
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint

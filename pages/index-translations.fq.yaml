@@ -207,24 +207,25 @@ web-cloud-clouddb-configuration: Configuration
 web-cloud-clouddb-technical-resources: Ressources techniques
 web-cloud-email-collaborative-solutions: Solutions e-mail et outils collaboratifs
 web-cloud-email-collaborative-solutions-common-email-features: Fonctionnalités communes aux offres e-mail
-web-cloud-email-collaborative-solutions-migrating: Migration de services
-web-cloud-email-collaborative-solutions-troubleshooting: Diagnostic et dépannage
+web-cloud-email-collaborative-solutions-common-email-features-using-outlook-web-access-owa: Utilisation d’Outlook Web Application (OWA)
+web-cloud-email-collaborative-solutions-common-email-features-migration: Migration de services
+web-cloud-email-collaborative-solutions-common-email-features-troubleshooting: Diagnostic et dépannage
 web-cloud-email-collaborative-solutions-mx-plan: MX Plan
 web-cloud-email-collaborative-solutions-mx-plan-getting-started: Premiers pas
 web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Fonctionnalités des adresses e-mail
-web-cloud-email-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Configuration d'une application e-mail sur votre ordinateur
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
 web-cloud-email-collaborative-solutions-email-pro-getting-started: Premiers pas
 web-cloud-email-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configuration d'une application e-mail sur votre ordinateur
-web-cloud-email-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-email-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Ajouter votre adresse e-mail à un service de messagerie existant
 web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Fonctionnalités d'un compte Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Premiers pas
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Configuration d'une application e-mail sur votre ordinateur
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurer une application e-mail sur votre smartphone ou tablette
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Configuration d'une application e-mail sur votre ordinateur
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device: Configurer une application e-mail sur votre smartphone ou tablette
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Diagnostic et dépannage
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
