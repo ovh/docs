@@ -7,10 +7,10 @@ account-and-service-management-api: API
 account-and-service-management-api-apiv6: APIv6
 account-and-service-management-api-getting-started: Erste Schritte
 account-and-service-management-api-terraform: Terraform
-account-and-service-management-managing-billing-payments-and-services: Verwaltung von Abrechnungen, Zahlungen und Dienstleistungen
+account-and-service-management-managing-billing-payments-and-services: Verwaltung von Abrechnung, Zahlungen und Dienstleistungen
 account-and-service-management-managing-billing-payments-and-services-api: API
 account-and-service-management-managing-billing-payments-and-services-faq: FAQ
-account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Rechnungen, Abrechnungen und Zahlungen
+account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments: Abrechnung und Zahlungen
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-hosted-private-cloud: Hosted Private Cloud
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-public-cloud: Public Cloud
 account-and-service-management-managing-billing-payments-and-services-invoices-billing-and-payments-ai-notebooks: AI Notebooks
@@ -27,7 +27,7 @@ bare-metal-cloud-dedicated-servers-getting-started: Erste Schritte
 bare-metal-cloud-dedicated-servers-managing-servers: Server verwalten
 bare-metal-cloud-dedicated-servers-miscellaneous: Verschiedenes
 bare-metal-cloud-dedicated-servers-network-and-ip-management: Netzwerk und IP
-bare-metal-cloud-dedicated-servers-raid-and-disks: RAID & Festplatten
+bare-metal-cloud-dedicated-servers-raid-and-disks: RAID & Disks
 bare-metal-cloud-dedicated-servers-security: Sicherheit
 bare-metal-cloud-dedicated-servers-troubleshooting: Störungsbehebung
 bare-metal-cloud-dedicated-servers-tutorials: Tutorials
@@ -41,7 +41,7 @@ bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Dienste und O
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funktionen von VMware vSphere
 bare-metal-cloud-network-and-security-solutions: Netzwerk- und Sicherheitslösungen
 bare-metal-cloud-network-and-security-solutions-byoip: Bring your own IP (BYOIP)
-bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastru
+bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastruktur
 bare-metal-cloud-network-and-security-solutions-load-balancer: Load Balancer
 bare-metal-cloud-network-and-security-solutions-load-balancer-faq: FAQ
 bare-metal-cloud-network-and-security-solutions-load-balancer-getting-started: Erste Schritte
@@ -176,7 +176,7 @@ public-cloud-compute-instance-management: Verwaltung von Instanzen
 public-cloud-compute-instance-management-getting-started: Verwaltung von Instanzen - Erste Schritte
 public-cloud-compute-instance-management-control-panel: Verwaltung über das OVHcloud Kundencenter
 public-cloud-compute-instance-management-horizon: Verwaltung über Horizon
-public-cloud-compute-instance-management-openstack: Verwaltung über die OpenStack API
+public-cloud-compute-instance-management-openstack: Verwaltung über OpenStack
 public-cloud-compute-tutorials: Tutorials
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Konzepte
@@ -205,26 +205,26 @@ web-cloud-clouddb: CloudDB
 web-cloud-clouddb-getting-started: Erste Schritte
 web-cloud-clouddb-configuration: Konfiguration
 web-cloud-clouddb-technical-resources: Technische Ressourcen
-web-cloud-email-collaborative-solutions: E-Mail Lösungen und kollaborative Tools
-web-cloud-email-collaborative-solutions-common-email-features: Gemeinsame Funktionen der E-Mail Angebote
+web-cloud-email-collaborative-solutions: E-Mail-Lösungen und kollaborative Tools
+web-cloud-email-collaborative-solutions-common-email-features: Gemeinsame Funktionen von E-Mail-Accounts
 web-cloud-email-collaborative-solutions-migrating: Migration von Dienstleistungen
 web-cloud-email-collaborative-solutions-troubleshooting: Störungsbehebung
 web-cloud-email-collaborative-solutions-mx-plan: MX Plan
 web-cloud-email-collaborative-solutions-mx-plan-getting-started: Erste Schritte
-web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Funktionen der E-Mail-Adressen
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Einrichten einer E-Mail-Anwendung auf Ihrem Computer
-web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-phone: Einrichten einer E-Mail-Anwendung auf Ihrem Mobiltelefon oder Tablet
-web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Hinzufügen Ihrer E-Mail-Adresse zu einem vorhandenen E-Mail-Dienst
-web-cloud-email-collaborative-solutions-email-pro: E-mail Pro
+web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Funktionen von E-Mail-Accounts
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: E-Mail-Anwendung auf Ihrem Computer einrichten
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-phone: E-Mail-Anwendung auf Ihrem Mobilgerät einrichten
+web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Hinzufügen eines Accounts zu einem vorhandenen E-Mail-Dienst
+web-cloud-email-collaborative-solutions-email-pro: E-Mail Pro
 web-cloud-email-collaborative-solutions-email-pro-getting-started: Erste Schritte
-web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Einrichten einer E-Mail-Anwendung auf Ihrem Computer
-web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-phone: Einrichten einer E-Mail-Anwendung auf Ihrem Mobiltelefon oder Tablet
-web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Hinzufügen Ihrer E-Mail-Adresse zu einem vorhandenen E-Mail-Dienst
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: E-Mail-Anwendung auf Ihrem Computer einrichten
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-phone: E-Mail-Anwendung auf Ihrem Mobilgerät einrichten
+web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Hinzufügen eines Accounts zu einem vorhandenen E-Mail-Dienst
 web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
 web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Erste Schritte
-web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funktionen eines Exchange-Accounts
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Einrichten einer E-Mail-Anwendung auf Ihrem Computer
-web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-phone: Einrichten einer E-Mail-Anwendung auf Ihrem Mobiltelefon oder Tablet
+web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funktionen von Exchange-Accounts
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: E-Mail-Anwendung auf Ihrem Computer einrichten
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-phone: E-Mail-Anwendung auf Ihrem Mobilgerät einrichten
 web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Störungsbehebung
 web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
 web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
@@ -233,7 +233,7 @@ web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: DNS und DNS-Zone
 web-cloud-domains-dns-security: Sicherheit
 web-cloud-domains-domain-names: Domainnamen
-web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Änderung des Inhabers einer Domain
+web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Änderung des Inhabers eines Domainnamens
 web-cloud-domains-domain-names-security: Sicherheit
 web-cloud-domains-domain-names-transferring-between-registrars: Transfer zwischen Registrars
 web-cloud-domains-domain-names-troubleshooting: Diagnose
