@@ -6,7 +6,7 @@ section: Per iniziare
 order: 1
 ---
 
-**Ultimo aggiornamento: 17/11/2022**
+**Ultimo aggiornamento: 26/01/2023**
 
 ## Obiettivo
 
@@ -157,7 +157,7 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
 
-![instance select](images/instance-creation-01-2021.png){.thumbnail}
+![instance select](images/instance-creation-01-2023.png){.thumbnail}
 
 Per prima cosa, seleziona un modello di server in base alle tue esigenze. La procedura guidata fornisce una descrizione dei diversi casi d'uso e della disponibilità del modello di server. Puoi scegliere tra le seguenti categorie personalizzate:
 
@@ -170,6 +170,7 @@ Per prima cosa, seleziona un modello di server in base alle tue esigenze. La pro
 | Sandbox    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
 | Discovery    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
 | IOPS   | ✓     | Ottimizzato per il trasferimento dei dati su disco    |
+| Metal | ✓ | Risorse dedicate con accesso diretto alle risorse di calcolo, di storage e di rete|
 
 
 > [!primary]

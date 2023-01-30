@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja: 17-11-2022**
+**Ostatnia aktualizacja: 26-01-2023**
 
 ## Wprowadzenie
 
@@ -157,7 +157,7 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie “Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze “Środowisko obliczeniowe”).
 
-![instance select](images/instance-creation-01-2021.png){.thumbnail}
+![instance select](images/instance-creation-01-2023.png){.thumbnail}
 
 Najpierw wybierz odpowiedni do swoich potrzeb szablon serwera. Narzędzie pomocy wyświetli opisy dotyczące różnych zastosowań i dostępności modeli serwera. Do wyboru są następujące dostosowane kategorie:
 
@@ -170,6 +170,7 @@ Najpierw wybierz odpowiedni do swoich potrzeb szablon serwera. Narzędzie pomocy
 | Sandbox    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
 | Discovery    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
 | IOPS   | ✓     | Zoptymalizowane pod kątem transferu danych na dyskach    |
+| Metal | ✓ | Dedykowane zasoby z bezpośrednim dostępem do zasobów obliczeniowych, magazynowych i sieciowych|
 
 
 > [!primary]
