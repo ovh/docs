@@ -11,7 +11,7 @@ order: 04
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización 25/10/2021**
+**Última actualización 27/01/2023**
 
 ## Objetivo
 
@@ -55,13 +55,13 @@ A continuación, haga clic en la flecha desplegable situada junto a "Seleccione 
 
 La tabla siguiente muestra los recursos que obtiene por cada cuota:
 
-|Quota|Instancias|CPU/núcleos|RAM|Tamaño del volumen|Volúmenes|Snapshots|
-|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|
-|20 VMs|20|40|240GB|20TB|40|40|
-|50 VMs|50|64|496GB|20TB|100|100|
-|100 VMs|100|128|992GB|39TB|200|200|
-|200 VMs|200|512|3.9TB|78TB|400|400|
+|Quota|Instancias|CPU/núcleos|RAM|Tamaño del volumen|Volúmenes|Snapshots|Floating IPs|Octavia Load Balancer|Gateway (Routers)|
+|---|---|---|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
 
 Una vez seleccionado el volumen, haga clic en `Confirmar`{.action}. El pago se procesará lo antes posible.
 

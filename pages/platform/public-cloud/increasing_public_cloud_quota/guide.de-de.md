@@ -11,7 +11,7 @@ order: 6
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 25.10.2021**
+**Letzte Aktualisierung am 27.01.2023**
 
 ## Ziel
 
@@ -56,13 +56,13 @@ Klicken Sie dann auf den Dropdown-Pfeil neben "Wählen Sie die Menge aus", um di
 
 Die nachstehende Tabelle zeigt die Ressourcen, die Sie für jedes Kontingent erhalten:
 
-|Quota|Instanzen|CPU/Cores|RAM|Größe Disk|Anzahl Disk|Snapshots|
-|---|---|---|---|---|---|---|
-|10 VMs|10|20|40GB|20TB|20|20|
-|20 VMs|20|40|240GB|20TB|40|40|
-|50 VMs|50|64|496GB|20TB|100|100|
-|100 VMs|100|128|992GB|39TB|200|200|
-|200 VMs|200|512|3.9TB|78TB|400|400|
+|Quota|Instanzen|CPU/Cores|RAM|Größe Disk|Anzahl Disk|Snapshots|Floating IPs|Octavia Load Balancer|Gateway (Routers)
+|---|---|---|---|---|---|---|---|---|---|
+|10 VMs|10|20|40GB|20TB|20|20|2|2|2|
+|20 VMs|20|40|240GB|20TB|40|40|2|2|2|
+|50 VMs|50|64|496GB|20TB|100|100|10|10|10|
+|100 VMs|100|128|992GB|39TB|200|200|10|10|10|
+|200 VMs|200|512|3.9TB|78TB|400|400|50|50|50|
 
 Klicken Sie nach Auswahl der gewünschten Kapazität auf `Bestätigen`{.action}. Ihre Zahlung wird so schnell wie möglich bearbeitet.
 
