@@ -205,31 +205,29 @@ web-cloud-clouddb: CloudDB
 web-cloud-clouddb-getting-started: Per iniziare
 web-cloud-clouddb-setting-up: Avvio
 web-cloud-clouddb-technical-resources: Risorse tecniche
-web-cloud-collaborative-solutions: Soluzioni collaborative
-web-cloud-collaborative-solutions-email-pro: E-mail pro
-web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Aggiunta del tuo indirizzo di posta elettronica a un servizio di posta elettronica esistente
-web-cloud-collaborative-solutions-email-pro-getting-started: Per iniziare
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configura un'applicazione di posta elettronica sul tuo computer
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Installazione di un'applicazione di posta elettronica sul telefono cellulare o sul tablet
-web-cloud-collaborative-solutions-email-pro-troubleshooting: Risoluzione dei problemi
-web-cloud-collaborative-solutions-microsoft-exchange: Microsoft Exchange
-web-cloud-collaborative-solutions-microsoft-exchange-exchange-account-features: Funzionalità di un account Exchange
-web-cloud-collaborative-solutions-microsoft-exchange-getting-started: Per iniziare
-web-cloud-collaborative-solutions-microsoft-exchange-migrating: Trasferimento
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Configura un'applicazione di posta elettronica sul tuo computer
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Installazione di un'applicazione di posta elettronica sul telefono cellulare o sul tablet
-web-cloud-collaborative-solutions-microsoft-exchange-troubleshooting: Risoluzione dei problemi
-web-cloud-collaborative-solutions-microsoft-exchange-using-outlook-web-access-owa: Utilizza Outlook Web Access (OWA)
-web-cloud-collaborative-solutions-microsoft-office: Microsoft Office
-web-cloud-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
-web-cloud-collaborative-solutions-mx-plan: MX Plan
-web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Aggiunta del tuo indirizzo di posta elettronica a un servizio di posta elettronica esistente
-web-cloud-collaborative-solutions-mx-plan-email-address-features: Caratteristiche indirizzo di posta elettronica
-web-cloud-collaborative-solutions-mx-plan-getting-started: Per iniziare
-web-cloud-collaborative-solutions-mx-plan-migrating: Trasferimento
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Configura un'applicazione di posta elettronica sul tuo computer
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Installazione di un'applicazione di posta elettronica sul telefono cellulare o sul tablet
-web-cloud-collaborative-solutions-mx-plan-troubleshooting: Risoluzione dei problemi
+web-cloud-email-collaborative-solutions: Soluzioni email e strumenti collaborativi
+web-cloud-email-collaborative-solutions-common-email-features: Funzionalità comuni alle offerte email
+web-cloud-email-collaborative-solutions-migrating: Migrazione di servizi
+web-cloud-email-collaborative-solutions-troubleshooting: Risoluzione dei problemi
+web-cloud-email-collaborative-solutions-mx-plan: MX Plan
+web-cloud-email-collaborative-solutions-mx-plan-getting-started: Per iniziare
+web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Caratteristiche indirizzo di posta elettronica
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Configura un'applicazione di posta elettronica sul tuo computer
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-phone: Installazione di un'applicazione di posta elettronica sul telefono cellulare
+web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Aggiunta del tuo indirizzo di posta elettronica a un servizio di posta elettronica esistente
+web-cloud-email-collaborative-solutions-email-pro: Email Pro
+web-cloud-email-collaborative-solutions-email-pro-getting-started: Per iniziare
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Configura un'applicazione di posta elettronica sul tuo computer
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-phone: Installazione di un'applicazione di posta elettronica sul telefono cellulare
+web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Aggiunta del tuo indirizzo di posta elettronica a un servizio di posta elettronica esistente
+web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
+web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Per iniziare
+web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funzionalità di un account Exchange
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Configura un'applicazione di posta elettronica sul tuo computer
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-phone: Installazione di un'applicazione di posta elettronica sul telefono cellulare
+web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Risoluzione dei problemi
+web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
+web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-domains: Domini
 web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: Zone DNS e DNS
@@ -277,7 +275,6 @@ web-cloud-phone-and-fax-voip-security: Sicurezza
 web-cloud-phone-and-fax-voip-telephone-lines: Linee telefoniche
 web-cloud-phone-and-fax-voip-troubleshooting: Risoluzione dei problemi
 web-cloud-phone-and-fax-voip-tutorials: Tutorial
-
 web-cloud-hosting: Hosting Web
 web-cloud-hosting-automating-tasks-cron: Operazioni di automazione (cron)
 web-cloud-hosting-cloud-web-configuration: Configura un hosting Cloud Web
@@ -296,12 +293,8 @@ web-cloud-hosting-tutorials-web-hosting-plan: Tutorial hosting per Web Personale
 web-cloud-hosting-website-optimisation: Ottimizzazione del tuo sito
 web-cloud-hosting-ssl-gateway: SSL Gateway
 web-cloud-hosting-ssl-gateway-getting-started: Per iniziare
-
 web-cloud-web-hosting-personal-and-business-web-hosting-plans: Hosting Personale e Business
-
-
 web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Configura il tuo hosting Web Individual o Business
-
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
 web-cloud-web-paas-powered-by-platformsh-administration: Amministrare
 web-cloud-web-paas-powered-by-platformsh-administration-management-console: Management console
