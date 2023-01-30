@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Last updated 27th January 2023**
+**Last updated 30th January 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -52,7 +52,7 @@ From the homepage for your cluster, click the `NSX NSX-T`{.action} icon.
 Enter your credentials and click `LOG IN`{.action}.
 
 > [!warning]
-> The user account is for your VMware cluster, followed by **@your-pcc-fqdn-name**
+> To authenticate on the NSX-T interface, you need to use an account provided by OVHcloud followed by your cluster’s FQDN, such as **admin@pcc-xxxxx.ovh.xx**.
 >
 
 ![01 NSX-T Connection 02](images/01-nsxt-connection02.png){.thumbnail}

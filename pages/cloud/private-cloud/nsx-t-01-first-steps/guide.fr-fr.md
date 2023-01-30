@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Dernière mise à jour le 27/01/2023**
+**Dernière mise à jour le 30/01/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -32,7 +32,9 @@ Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfi
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
 
-Dans la version ALPHA de NSX-T un bloc de 8 adresses IP est livré. L'accès INTERNET est fonctionnel au travers d'une de ces adresses, il sera aussi possible de faire des redirections de ports au travers de cette adresse.
+Dans la version ALPHA de NSX-T un bloc de 16 adresses IP est livré. L'accès INTERNET est fonctionnel au travers d'une de ces adresses, il est aussi possible de faire des redirections de ports au travers de 9 adresses de la deuxième du bloc jusqu'a la neuvieme, et la douzieme qui sert de nat pour la sortie INTERNET les autres adresses sont réservées.
+
+
 
 ## Prérequis
 
@@ -52,7 +54,7 @@ A partir de la page d'accueil de votre cluster cliquez sur l'icône `NSX NSX-T`{
 Saisissez vos informations d'identifications et cliquez sur `LOG IN`{.action}.
 
 > [!warning]
-> Le compte utilisateur est celui de votre cluster VMware suivi de **@nom-fqdn-votre-pcc** 
+> Pour s'authentifier sur l'interface NSX-T, il faut utiliser un compte fourni par OVHcloud suivi du nom FQDN de votre cluster comme **admin@pcc-xxxxx.ovh.xx**. 
 >
 
 ![01 NSX-T Connection 02](images/01-nsxt-connection02.png)
