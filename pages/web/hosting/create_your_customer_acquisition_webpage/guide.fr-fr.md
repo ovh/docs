@@ -180,6 +180,34 @@ Disposez vos images dans le répertoire `assets/images` :
 
 ![Add picture in the images directory](images/create_your_customer_acquisition_webpage_7.png){.thumbnail}
 
+### Formulaire de contact
+
+Ajoutez le code HTML pour le formulaire :
+
+```html
+<section id="contact">
+    <h2>Contact</h2>
+    <form method="post" id="sendMessageForm" action="">
+        <p class="output"></p>
+        <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" required name="name" id="name">
+        </div>
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="email">
+        </div>
+        <div class="form-row">
+            <label for="message">Message</label>
+            <textarea required name="message" id="message"></textarea>
+        </div>
+        <div class="form-row">
+            <input type="submit" value="Send" />
+        </div>
+    </form>
+</section>
+```
+
 ## Aller plus loin <a name="go-further"></a>
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
