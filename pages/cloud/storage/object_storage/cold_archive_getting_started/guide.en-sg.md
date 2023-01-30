@@ -1,9 +1,9 @@
 ---
-title: Cold Archive - Getting started with Cold Archive (Beta)
-slug: s3/getting-started-with-cold-archive
+title: Cold Archive - Getting started with Cold Archive
+slug: cold-archive/getting-started
 excerpt: This guide shows you how to manage your data with Cold Archive
 section: Cold Archive Storage Class Specifics
-order: 200
+order: 020
 ---
 
 **Last updated 19th October 2022**
