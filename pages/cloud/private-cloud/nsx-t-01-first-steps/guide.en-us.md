@@ -27,8 +27,8 @@ NSX-T is a Software-Defined Networking (SDN)** solution provided by VMware. OVHc
 
 When a customer subscribes to the NSX-T offer and is enabled, a preset is applied with two gateways :
 
-- **Tier-0 Gateway** : For connections between and outside the VMware cluster.
-- **Tier-1 Gateway**: For intra-cluster connections (segments) that in this case is east-west traffic.
+- **Tier-0 Gateway** : For connections between the cluster and the public INTERNET network, known as north-south traffic.
+- **Tier-1 Gateway**: For communication between cluster virtual segments. This type of connection is called east-west traffic.
 
 The two gateways are interconnected to allow internal networks to communicate outside the cluster.
 
@@ -75,7 +75,7 @@ Left-click on `Network Topology`{.action}.
 
 ![02 Display network topology 02](images/02-display-network-topology02.png){.thumbnail}
 
-A network topology diagram is available with two public IP addresses connected to the **ovh-T0-gateway** and the connection to the **ovh-T1-gateway**.
+A schema representing the network topology is available with two public IP addresses (both addresses are for NSX-T and are not usable for port redirections) connected to the **ovh-T0-gateway** and the connection to the **ovh-T1-gateway**.
 
 ![03 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 

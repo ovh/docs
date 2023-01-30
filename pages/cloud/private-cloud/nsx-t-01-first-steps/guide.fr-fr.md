@@ -1,5 +1,5 @@
 ---
-title: Premier pas avec NSX-T
+title: Premiers pas avec NSX-T
 slug: nsx-t-first-steps
 excerpt: Découvrez NSX-T
 section: NSX-T
@@ -27,8 +27,8 @@ NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networ
 
 Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfiguration est appliqué avec deux passerelles :
 
-- **Tier-0 Gateway**: Pour les connexions entre le cluster VMware et en dehors.
-- **Tier-1 Gateway** : Pour les connexions intra-cluster (segments) qui dans ce cas est trafic est-ouest.
+- **Tier-0 Gateway**: Pour les connexions entre le cluster et le réseau INTERNET public, que l'on nomme trafic nord-sud.
+- **Tier-1 Gateway** : Pour les communications entre segments virtuels du cluster. Ce type de connexion s'appelle trafic est-ouest.
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
 
@@ -76,7 +76,7 @@ Cliquez à gauche sur `Network Topology`{.action}.
 
 ![02 Display network topology 02](images/02-display-network-topology02.png)
 
-Un schéma représentant la topologie réseau est disponible avec deux adresses IP publiques connectées à la passerelle **ovh-T0-gateway** ainsi que la connexion à la passerelle **ovh-T1-gateway**.
+Un schéma représentant la topologie réseau est disponible avec deux adresses IP publiques (Ces deux adresses servent pour NSX-T et ne sont pas utilisables pour des redirections de ports) connectées à la passerelle **ovh-T0-gateway** ainsi que la connexion à la passerelle **ovh-T1-gateway**.
 
 ![03 Display network topology 03](images/02-display-network-topology03.png)
 
