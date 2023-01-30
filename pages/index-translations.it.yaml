@@ -289,12 +289,9 @@ web-cloud-hosting-ssl: SSL
 web-cloud-hosting-troubleshooting: Risoluzione dei problemi
 web-cloud-hosting-tutorials: Tutorial
 web-cloud-hosting-tutorials-cloud-web: Tutorial per Cloud Web
-web-cloud-hosting-tutorials-web-hosting-plan: Tutorial hosting per Web Personale, Pro o Performance
 web-cloud-hosting-website-optimisation: Ottimizzazione del tuo sito
 web-cloud-hosting-ssl-gateway: SSL Gateway
 web-cloud-hosting-ssl-gateway-getting-started: Per iniziare
-web-cloud-web-hosting-personal-and-business-web-hosting-plans: Hosting Personale e Business
-web-cloud-web-hosting-personal-and-business-web-hosting-plans-configuring-an-individual-or-business-web-hosting-plan: Configura il tuo hosting Web Individual o Business
 web-cloud-web-paas-powered-by-platformsh: Web PaaS powered by Platform.sh
 web-cloud-web-paas-powered-by-platformsh-administration: Amministrare
 web-cloud-web-paas-powered-by-platformsh-administration-management-console: Management console
@@ -315,7 +312,6 @@ web-cloud-web-paas-powered-by-platformsh-integrations-activity-scripts: Script d
 web-cloud-web-paas-powered-by-platformsh-integrations-external-integrations: Integrazioni esterne
 web-cloud-web-paas-powered-by-platformsh-integrations-notifications: Notifiche
 web-cloud-web-paas-powered-by-platformsh-integrations-profiling: Creazione profilo
-web-cloud-web-paas-powered-by-platformsh-integrations-profiling-new-relic: New relic
 web-cloud-web-paas-powered-by-platformsh-integrations-source-integrations: Integrazioni di origini
 web-cloud-web-paas-powered-by-platformsh-languages: Lingue
 web-cloud-web-paas-powered-by-platformsh-languages-cnet-core: C#/.NET Core
