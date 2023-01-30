@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 08
 ---
 
-**Dernière mise à jour le 25/01/2023**
+**Dernière mise à jour le 30/01/2023**
 
 > [!warning]
 >
@@ -182,7 +182,7 @@ Disposez vos images dans le répertoire `assets/images` :
 
 ### Formulaire de contact
 
-Ajoutez le code HTML pour le formulaire :
+Ajoutez le code HTML Bonpour le formulaire :
 
 ```html
 <section id="contact">
@@ -207,6 +207,89 @@ Ajoutez le code HTML pour le formulaire :
     </form>
 </section>
 ```
+
+### Le code PHP
+
+Dans le répertoire `scripts`, créer un fichier `sendMail.php`.
+
+Ce script en PHP a vous vocation de :
+
+- récupérer les données envoyées depuis le formulaire HTML
+- vérifier si les données sont conformes (pas de chaînes de caractères vides, e-mail conforme)
+- générer un mail au format HTML reprenant les informations du formulaire
+- envoyer le mail
+- retourner une valeur indiquant si l'envoi a été effectué ou non.
+
+```php
+<?php
+
+date_default_timezone_set('Europe/Paris'); // Set the local timezone
+
+$to = "john.doe@mail.com"; // The recipient's e-mail address
+$from = "noreply@mywebsite.com"; // The sender's e-mail address
+
+$errors = []; // Empty array 
+
+if (isset($_POST['name']) && !empty($_POST['name'])) { // Test the 'name' input
+    $name = htmlentities($_POST['name']);
+} else {
+    $errors['name'] = 'Name is required';
+}
+
+if (isset($_POST['email']) && filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) { // Test the 'email' input
+    $email = $_POST['email'];
+} else {
+    $errors['email'] = 'Email is required';
+}
+
+if (isset($_POST['message'])) { // Test the 'message' input
+    $message = htmlentities($_POST['message'], ENT_QUOTES);
+} else {
+    $errors['message'] = 'Message is required';
+}
+
+if (empty($errors)) { // If the $errors array is empty
+
+    $datetime = date("m-d-Y H:i"); // Set a timestamp
+     
+    $subject = "Lead page - $datetime - Contact - ". html_entity_decode($name); // Define the subject of the email
+
+    $contenu = "<html> \n"; // email content
+    $contenu .= "<head> \n";
+    $contenu .= "<title>$subject</title> \n";
+    $contenu .= "</head> \n";
+    $contenu .= "<body> \n";
+    $contenu .= "Hi!<br> \n";
+    $contenu .= "<br> \n";
+    $contenu .= "You just have received a message from your website.<br> \n";
+    $contenu .= "<br> \n";
+    $contenu .= "From: ". html_entity_decode($name);
+    $contenu .= "<br> \n";
+    $contenu .= "e-mail: &lt;" . $email . "&gt; <br> \n";
+    $contenu .= "<br> \n";
+    $contenu .= "Message:<br> \n";
+    $contenu .= $message . " <br> \n";
+    $contenu .= "</body> \n";
+    $contenu .= "</html> \n";
+     
+    $headers  = "MIME-Version: 1.0 \n"; // Set the headers
+    $headers .= "Content-Transfer-Encoding: 8bit \n";
+    $headers .= "Content-type: text/html; charset=utf-8 \n";
+    $headers .= "From: $from  \n";
+   
+    $sendMail = mail($to, $subject, $contenu, $headers); // Send the email and put the boolean result in a variable
+
+    echo $sendMail ? 'success' : 'error'; // Test the variable and send back a string
+
+} else {
+    echo 'error';
+}
+```
+
+> [!warning]
+>
+> L'adresse mail de l'expéditeur doit être identique au nom de domaine sur lequel est exécuté le script d'envoi.
+>
 
 ## Aller plus loin <a name="go-further"></a>
 
