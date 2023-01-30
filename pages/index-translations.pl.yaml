@@ -290,7 +290,6 @@ web-cloud-hosting-ssl: SSL
 web-cloud-hosting-troubleshooting: Rozwiązywanie problemów
 web-cloud-hosting-tutorials: Samouczki
 web-cloud-hosting-tutorials-cloud-web: Samouczki dla Cloud Web
-web-cloud-hosting-tutorials-web-hosting-plan: Samouczki dla hostingu Perso, Pro lub Performance
 web-cloud-hosting-website-optimisation: Optymalizacja witryny sieci Web
 web-cloud-hosting-ssl-gateway: SSL Gateway
 web-cloud-hosting-ssl-gateway-getting-started: Pierwsze kroki
@@ -314,7 +313,6 @@ web-cloud-web-paas-powered-by-platformsh-integrations-activity-scripts: Skrypty 
 web-cloud-web-paas-powered-by-platformsh-integrations-external-integrations: Integracje zewnętrzne
 web-cloud-web-paas-powered-by-platformsh-integrations-notifications: Powiadomienia
 web-cloud-web-paas-powered-by-platformsh-integrations-profiling: Profilowanie
-web-cloud-web-paas-powered-by-platformsh-integrations-profiling-new-relic: New relic
 web-cloud-web-paas-powered-by-platformsh-integrations-source-integrations: Integracje źródłowe
 web-cloud-web-paas-powered-by-platformsh-languages: Języki
 web-cloud-web-paas-powered-by-platformsh-languages-cnet-core: C#/.NET Core
