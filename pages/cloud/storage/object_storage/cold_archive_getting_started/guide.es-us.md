@@ -2,7 +2,7 @@
 title: Cold Archive - Getting started with Cold Archive (EN)
 slug: cold-archive/getting-started
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/getting-started-with-cold-archive/'
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/cold-archive/getting-started/'
 excerpt: This guide shows you how to manage your data with Cold Archive
 section: Cold Archive Storage Class Specifics
 order: 020
