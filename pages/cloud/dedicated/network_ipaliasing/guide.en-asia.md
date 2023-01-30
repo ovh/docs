@@ -5,7 +5,7 @@ excerpt: 'Find out how to add Additional IP addresses to your server configurati
 section: 'Network Management'
 ---
 
-**Last updated 7th December 2022**
+**Last updated 30th January 2023**
 
 > [!primary]
 >
@@ -361,7 +361,7 @@ netplan apply
 ```
 
 
-### CentOS and Fedora (25 and earlier)
+### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9), Fedora (25 and earlier)
 
 #### Step 1: Create the config file
 
@@ -398,6 +398,13 @@ You now need to start your alias interface:
 ifup eth0:0
 ```
 
+#### For AlmaLinux and RockLinux
+
+You need to restart your interface:
+
+```sh
+systemctl restart NetworkManager
+```
 
 ### Gentoo
 
