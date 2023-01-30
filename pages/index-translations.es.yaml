@@ -205,31 +205,29 @@ web-cloud-clouddb: CloudDB
 web-cloud-clouddb-getting-started: Primeros pasos
 web-cloud-clouddb-configuration: Configuración
 web-cloud-clouddb-technical-resources: Recursos técnicos
-web-cloud-collaborative-solutions: Soluciones colaborativas
-web-cloud-collaborative-solutions-email-pro: E-mail pro
-web-cloud-collaborative-solutions-email-pro-adding-your-email-address-to-an-existing-email-service: Agregar su dirección de correo electrónico a un servicio de correo electrónico existente
-web-cloud-collaborative-solutions-email-pro-getting-started: Primeros pasos
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo electrónico en el ordenador
-web-cloud-collaborative-solutions-email-pro-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurar una aplicación de correo electrónico en el móvil o la tablet
-web-cloud-collaborative-solutions-email-pro-troubleshooting: Resolución de problemas
-web-cloud-collaborative-solutions-microsoft-exchange: Microsoft Exchange
-web-cloud-collaborative-solutions-microsoft-exchange-exchange-account-features: Funcionalidades de las cuentas Exchange
-web-cloud-collaborative-solutions-microsoft-exchange-getting-started: Primeros pasos
-web-cloud-collaborative-solutions-microsoft-exchange-migrating: Migración
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo electrónico en el ordenador
-web-cloud-collaborative-solutions-microsoft-exchange-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurar una aplicación de correo electrónico en el móvil o la tablet
-web-cloud-collaborative-solutions-microsoft-exchange-troubleshooting: Resolución de problemas
-web-cloud-collaborative-solutions-microsoft-exchange-using-outlook-web-access-owa: Utilizar Outlook Web Access (OWA)
-web-cloud-collaborative-solutions-microsoft-office: Microsoft Office
-web-cloud-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
-web-cloud-collaborative-solutions-mx-plan: MX Plan
-web-cloud-collaborative-solutions-mx-plan-adding-your-email-address-to-an-existing-email-service: Agregar su dirección de correo electrónico a un servicio de correo electrónico existente
-web-cloud-collaborative-solutions-mx-plan-email-address-features: Funcionalidades de las cuentas de correo
-web-cloud-collaborative-solutions-mx-plan-getting-started: Primeros pasos
-web-cloud-collaborative-solutions-mx-plan-migrating: Migración
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-computer: Configurar una aplicación de correo electrónico en el ordenador
-web-cloud-collaborative-solutions-mx-plan-setting-up-an-email-application-on-your-mobile-phone-or-tablet: Configurar una aplicación de correo electrónico en el móvil o la tablet
-web-cloud-collaborative-solutions-mx-plan-troubleshooting: Resolución de problemas
+web-cloud-email-collaborative-solutions: Soluciones de correo y herramientas colaborativas
+web-cloud-email-collaborative-solutions-common-email-features: Funcionalidades comunes a los productos de correo
+web-cloud-email-collaborative-solutions-migrating: Migración de servicios
+web-cloud-email-collaborative-solutions-troubleshooting: Resolución de problemas
+web-cloud-email-collaborative-solutions-mx-plan: MX Plan
+web-cloud-email-collaborative-solutions-mx-plan-getting-started: Primeros pasos
+web-cloud-email-collaborative-solutions-mx-plan-email-address-features: Funcionalidades de las cuentas de correo
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-computer: Configurar una aplicación de correo electrónico en el ordenador
+web-cloud-email-collaborative-solutions-mx-plan-setting-up-email-application-on-mobile-phone: Configurar una aplicación de correo electrónico en el móvil
+web-cloud-email-collaborative-solutions-mx-plan-adding-email-address-on-existing-email-service: Agregar su dirección de correo electrónico a un servicio de correo electrónico existente
+web-cloud-email-collaborative-solutions-email-pro: Email Pro
+web-cloud-email-collaborative-solutions-email-pro-getting-started: Primeros pasos
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-computer: Configurar una aplicación de correo electrónico en el ordenador
+web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-phone: Configurar una aplicación de correo electrónico en el móvil
+web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service: Agregar su dirección de correo electrónico a un servicio de correo electrónico existente
+web-cloud-email-collaborative-solutions-microsoft-exchange: Microsoft Exchange
+web-cloud-email-collaborative-solutions-microsoft-exchange-getting-started: Primeros pasos
+web-cloud-email-collaborative-solutions-microsoft-exchange-exchange-account-features: Funcionalidades de las cuentas Exchange
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer: Configurar una aplicación de correo electrónico en el ordenador
+web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-phone: Configurar una aplicación de correo electrónico en el móvil
+web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting: Resolución de problemas
+web-cloud-email-collaborative-solutions-microsoft-office: Microsoft Office
+web-cloud-email-collaborative-solutions-microsoft-sharepoint: Microsoft Sharepoint
 web-cloud-domains: Dominios
 web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: DNS y zona DNS
