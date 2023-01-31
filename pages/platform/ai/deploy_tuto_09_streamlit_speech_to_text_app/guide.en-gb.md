@@ -1,12 +1,12 @@
 ---
 title: AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit
 slug: deploy/tuto-streamlit-speech-to-text-app
-excerpt: How to create and deploy a Streamlit Application for Speech To Text 
+excerpt: How to create and deploy a Streamlit Application for Speech To Text
 section: AI Deploy - Tutorials
 order: 09
 ---
 
-**Last updated 6th December, 2022.**
+**Last updated 31st January, 2023.**
 
 > [!primary]
 >
@@ -19,7 +19,7 @@ order: 09
 
 ## Objective
 
-The purpose of this documentation is to **Deploy the Speech to Text Application** we have realised in our [blog article](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) using [Streamlit](https://streamlit.io/) and pre-trained models. 
+The purpose of this documentation is to **Deploy the Speech to Text Application** we have realised in our [blog article](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) using [Streamlit](https://streamlit.io/) and pre-trained models.
 
 Deploying your app will allow you to benefit from **very powerful resources** which will make the speech to text application extremely fast. It can also be easily shared, unlike a local application.
 
@@ -53,7 +53,7 @@ You are going to follow different steps to deploy your **Streamlit Speech to Tex
 
 ### Write the requirements.txt file for the application
 
-The `requirements.txt` file will allow us to write all the modules needed by our application. This file will be useful for the `Dockerfile`. 
+The `requirements.txt` file will allow us to write all the modules needed by our application. This file will be useful for the `Dockerfile`.
 Put this file (and the next ones) in the same directory as your python scripts.
 
 ```console
@@ -131,7 +131,7 @@ ENV HOME=/workspace
 
 ### Build the Docker image from the Dockerfile
 
-Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files). 
+Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files).
 
 Once you are in it, launch the following command to build your application image:
 
@@ -144,6 +144,13 @@ docker build . -t streamlit_app:latest
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example, we choose **streamlit_app:latest**.
+>
+
+> [!warning]
+>
+> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
+>
+> `docker buildx build --platform linux/amd64 ...`
 >
 
 ### Push the image into the shared registry
@@ -174,9 +181,9 @@ docker push <shared-registry-address>/streamlit_app:latest
 
 ### Import the models and save them locally (Optional)
 
-As we explained in the blog article, you will considerably reduce the initialization time of the app if you download the models and store them in a local folder. This will allow you not to have to download them again every time you relaunch the application. 
+As we explained in the blog article, you will considerably reduce the initialization time of the app if you download the models and store them in a local folder. This will allow you not to have to download them again every time you relaunch the application.
 
-To do this, we will use **AI Training**. This will allow us to launch a python script from *GitHub* that will **download the models and store them in an OVHcloud volume** named `speech_to_text_app_models`. 
+To do this, we will use **AI Training**. This will allow us to launch a python script from *GitHub* that will **download the models and store them in an OVHcloud volume** named `speech_to_text_app_models`.
 When the models will be downloaded and added to this volume, the status of the job will automatically switch from `Running` to `Done` and the **job will be immediately stopped**. This operation should be quite fast.
 
 *Unfortunately, the diarization model can't be saved anymore since pyannote.audio v2. Make sure you have replaced the `use_auth_token="ACCESS TOKEN GOES HERE"` code line in the app.py file by your own token so it can download the model. If the model fails to be downloaded during the initialization of the app, the diarization option will be disabled.*
@@ -195,14 +202,14 @@ ovhai job run <shared-registry-address>/streamlit_app:latest \
 > `streamlit_app:latest` corresponds to the name of your Docker image.
 >
 > `--volume` allows you to specify what volume you want to add to your job. As mentioned, we add the volume `speech_to_text_app_models` and we put it in `RW` (read and write) mode since we want to add our models to this volume. If you do not have this volume in your Object Storage list, do not worry, it will be created automatically. As you can see, the `--volume` parameter also allows you to get files from a GitHub repository, which in our case contains the script to download the models.
-> 
+>
 > `--bash` allows you to provide commands through which you install the librairies mentioned in your `requirements.txt` file, and run the python script.
 >
 
 When you run this command, an `Info url` will appear. Opening it will allow you to **track the status of the job**.
 Once the *GitHub* repository is recovered, the python script will be launched and the job status will switch to `Running`. Then, you just have to wait for the job to end.
 
-We advise you to **turn on the auto-refresh option** (`Running` status automatically disables it). This will allow you to see when the job will end (job status switches to `Done`). Otherwise, you can refresh the page manually. 
+We advise you to **turn on the auto-refresh option** (`Running` status automatically disables it). This will allow you to see when the job will end (job status switches to `Done`). Otherwise, you can refresh the page manually.
 
 Once the models have been uploaded and the status is `Done`, you can continue.
 
