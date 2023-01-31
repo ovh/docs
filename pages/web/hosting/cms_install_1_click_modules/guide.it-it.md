@@ -133,7 +133,7 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 |CMS|Documentazione Ufficiale|
 |---|---|
 |WordPress|[Primi passi con WordPress](https://codex.wordpress.org/it:Primi_passi_con_WordPress){.external}|
-|PrestaShop|[Guida introduttiva di PrestaShop](http://doc.prestashop.com/display/PS17/Guida+introduttiva+di+PrestaShop+1.7){.external}|
+|PrestaShop|[Guida introduttiva di PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+introduttiva+di+PrestaShop+1.7){.external}|
 |Joomla!|[Documentazione Joomla!](https://docs.joomla.org/Joomla_info_page/it-IT){.external}|
 |Drupal|[Documentazione Drupal](http://www.drupal.it/home-documentazione){.external}|
 
