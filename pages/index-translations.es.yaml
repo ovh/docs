@@ -3,10 +3,6 @@ account-and-service-management-account-information-faq: FAQ
 account-and-service-management-account-information-getting-started: Primeros pasos
 account-and-service-management-account-information-users: Creación y gestión de usuarios
 account-and-service-management-account-information-security-and-conformity: Seguridad y conformidad
-account-and-service-management-api: API
-account-and-service-management-api-apiv6: APIv6
-account-and-service-management-api-getting-started: Primeros pasos
-account-and-service-management-api-terraform: Terraform
 account-and-service-management-managing-billing-payments-and-services: Gestionar la facturación, los pagos y los servicios
 account-and-service-management-managing-billing-payments-and-services-api: API
 account-and-service-management-managing-billing-payments-and-services-faq: FAQ
@@ -39,20 +35,6 @@ bare-metal-cloud-managed-bare-metal-managing-virtual-machines: Gestionar las má
 bare-metal-cloud-managed-bare-metal-ovhcloud-features: Funcionalidades de OVHcloud
 bare-metal-cloud-managed-bare-metal-ovhcloud-services-and-options: Servicios y opciones de OVHcloud
 bare-metal-cloud-managed-bare-metal-vmware-vsphere-features: Funcionalidades de VMware vSphere
-bare-metal-cloud-network-and-security-solutions: Soluciones de red y seguridad
-bare-metal-cloud-network-and-security-solutions-byoip: Bring your own IP (BYOIP)
-bare-metal-cloud-network-and-security-solutions-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastru
-bare-metal-cloud-network-and-security-solutions-load-balancer: Load Balancer
-bare-metal-cloud-network-and-security-solutions-load-balancer-faq: FAQ
-bare-metal-cloud-network-and-security-solutions-load-balancer-getting-started: Primeros pasos
-bare-metal-cloud-network-and-security-solutions-load-balancer-setting-up: Configuración
-bare-metal-cloud-network-and-security-solutions-load-balancer-use-cases: Casos de uso
-bare-metal-cloud-network-and-security-solutions-load-balancer-viewing-statuses: Consultar los estados
-bare-metal-cloud-network-and-security-solutions-ovhcloud-connect: OVHcloud Connect
-bare-metal-cloud-network-and-security-solutions-ovhcloud-connect-concepts: Conceptos
-bare-metal-cloud-network-and-security-solutions-ovhcloud-connect-configuration: Configuración
-bare-metal-cloud-network-and-security-solutions-ovhcloud-connect-getting-started: Primeros pasos
-bare-metal-cloud-network-and-security-solutions-ovhcloud-connect-technical-resources: Recursos técnicos
 bare-metal-cloud-virtual-private-servers: Servidores Privados Virtuales
 bare-metal-cloud-virtual-private-servers-advanced-usage: Uso avanzado
 bare-metal-cloud-virtual-private-servers-backups: Backups
@@ -185,22 +167,6 @@ public-cloud-network-additional-ip: Additional IP
 public-cloud-network-configuration: Configuración
 public-cloud-network-technical-resources: Recursos Técnicos
 public-cloud-network-tutorials: Tutoriales
-public-cloud-storage: Storage
-public-cloud-storage-object-storage: Object Storage
-public-cloud-storage-object-storage-general-information: General information
-public-cloud-storage-object-storage-general-guides-to-start: General guides to start
-public-cloud-storage-object-storage-tutorials: Tutorials
-public-cloud-storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
-public-cloud-storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
-public-cloud-storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
-public-cloud-storage-file-storage: File Storage
-public-cloud-storage-file-storage-enterprise-file-storage: Enterprise File Storage
-public-cloud-storage-file-storage-ha-nas: HA-NAS
-public-cloud-storage-block-storage: Block Storage
-public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
-public-cloud-storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
-public-cloud-storage-backup-and-disaster-recovery-solution-veeam: Veeam
 web-cloud-clouddb: CloudDB
 web-cloud-clouddb-getting-started: Primeros pasos
 web-cloud-clouddb-configuration: Configuración
@@ -331,3 +297,36 @@ web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-routes: Configur
 web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-services: Configurar los servicios
 web-cloud-web-paas-powered-by-platformsh-setting-up-configuring-your-application: Configurar las aplicaciones
 web-cloud-web-paas-powered-by-platformsh-tutorials: Tutoriales
+storage-object-storage: Object Storage
+storage-object-storage-general-information: General information
+storage-object-storage-general-guides-to-start: General guides to start
+storage-object-storage-tutorials: Tutorials
+storage-object-storage-configure-object-storage-with-your-solutions: Configure Object Storage with your solutions
+storage-object-storage-cold-archive-storage-class-specifics: Cold Archive Storage Class Specifics
+storage-object-storage-openstack-swift-storage-class-specifics: OpenStack Swift Storage Class Specifics
+storage-object-storage-openstack-swift-archive-storage-class-specifics: OpenStack Swift Archive Storage Class Specifics
+storage-file-storage: File Storage
+storage-file-storage-enterprise-file-storage: Enterprise File Storage
+storage-file-storage-ha-nas: HA-NAS
+storage-block-storage: Block Storage
+storage-block-storage-cloud-disk-array: Cloud Disk Array
+storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
+storage-backup-and-disaster-recovery-solution-veeam: Veeam
+network-byoip: Bring your own IP (BYOIP)
+network-additional-ip: Additional IP
+network-ovhcloud-connect: OVHcloud Connect
+network-ovhcloud-connect-concepts: Conceptos
+network-ovhcloud-connect-configuration: Configuración
+network-ovhcloud-connect-getting-started: Primeros pasos
+network-ovhcloud-connect-technical-resources: Recursos técnicos
+network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
+network-load-balancer: Load Balancer
+network-load-balancer-faq: FAQ
+network-load-balancer-getting-started: Primeros pasos
+network-load-balancer-setting-up: Configuración
+network-load-balancer-use-cases: Casos de uso
+network-load-balancer-viewing-statuses: Consultar los estados
+ifrastructure-as-code-api: API
+ifrastructure-as-code-api-apiv6: APIv6
+ifrastructure-as-code-api-getting-started: Primeros pasos
+ifrastructure-as-code-terraform: Terraform
