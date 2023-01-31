@@ -52,7 +52,7 @@ Selecione o separador correspondente à sua oferta de e-mail:
 >> Para verificar se a sua oferta MX plan é uma versão histórica ou nova, consulte a tabela da parte "[Identifique a sua oferta MXplan](#whichmxplan)" deste manual.<br><br>
 >>
 >> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `Contas de e-mail`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da conta a modificar e, a seguir, em `Reinicializar esta conta`{.action}.<br><br>
->>![e-mail](images/email-mxplan-new-reset.png) {.thumbnail}<br>
+>>![e-mail](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
