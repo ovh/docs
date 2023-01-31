@@ -51,7 +51,7 @@ Select the tab corresponding to your email solution:
 
 [Getting started with MX Plan](https://docs.ovh.com/us/en/emails/web_hosting_an_overview_of_ovh_email/)
 
-[Getting started with Hosted Exchange](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/exchange_20132016_configuring_the_solution_for_the_first_time/)
+[Getting started with Hosted Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_configuring_the_solution_for_the_first_time/)
 
 [Managing the billing of your Exchange accounts](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/manage-exchange-billing/)
 

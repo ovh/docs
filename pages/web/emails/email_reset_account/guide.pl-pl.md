@@ -44,14 +44,14 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 >>
 >> Aby sprawdzić, czy Twoja oferta MXplan jest wersją historyczną czy nową, zapoznaj się z tabelą w części "[Sprawdź ofertę MXplan](#whichmxplan)" tego przewodnika.<br><br>
 >>
->> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. Kliknij przycisk po prawej stronie konta, które chcesz zmienić, a następnie kliknij <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Usuń konto` `{.action}.<br><br>
+>> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. Kliknij przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które ma zostać zmienione, a następnie kliknij polecenie `Usuń konto`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **E-maile MXplan nowa wersja**
 >>
 >> Aby sprawdzić, czy Twoja oferta MXplan jest wersją historyczną czy nową, zapoznaj się z tabelą w części "[Sprawdź ofertę MXplan](#whichmxplan)" tego przewodnika.<br><br>
 >>
->> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. Kliknij przycisk po prawej stronie konta, które chcesz zmienić, a następnie kliknij <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Zresetuj to konto` `{.action}.<br><br>
+>> Kliknij na `E-maile`{.action}, następnie wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. Kliknij na przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które chcesz zmienić, po czym kliknij przycisk `Zresetuj to konto`{.action}.<br><br>>>
 >>![e-mail](images/email-mxplan-new-reset.png){.thumbnail}<br>
 >>
 > **Email Pro**

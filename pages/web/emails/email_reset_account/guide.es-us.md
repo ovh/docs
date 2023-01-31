@@ -55,7 +55,7 @@ Seleccione la pestaña correspondiente a su servicio de correo:
 
 [Primeros pasos con la solución MXplan](https://docs.ovh.com/us/es/emails/primeros-pasos-correo-compartido/)
 
-[Primeros pasos con la solución Hosted Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_20132016_primera_configuracion_del_servicio/)
+[Primeros pasos con la solución Hosted Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_primera_configuracion_del_servicio/)
 
 [Gestionar la facturación de las cuentas Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/)
 
