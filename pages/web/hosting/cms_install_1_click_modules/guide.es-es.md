@@ -22,7 +22,7 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 ## Requisitos
 
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth//).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Utilizar [una versión de PHP compatible](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/) en su alojamiento web.
 - Haber [configurado correctamente su archivo .ovhconfig](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/).
 - El directorio en el que se instalará el módulo debe estar vacío o no existe actualmente.

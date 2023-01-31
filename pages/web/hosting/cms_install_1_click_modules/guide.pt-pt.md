@@ -21,7 +21,7 @@ Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site
 ## Requisitos
 
 - Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth//).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Utilizar [uma versão de PHP compatível](https://docs.ovh.com/pt/hosting/configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/) no seu alojamento web.
 - Ter [configurado corretamente o seu ficheiro .ovhconfig](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/).
 - O diretório onde será instalado o seu módulo deve estar vazio ou atualmente inexistente.
