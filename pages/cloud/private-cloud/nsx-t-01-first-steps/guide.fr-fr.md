@@ -32,7 +32,7 @@ Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfi
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
 
-OVHcloud fourni un bloc de 16 adresses IP publiques, certaines sont réservés vous pouvez utiliser 8 adresses à partir de la deuxième adresse du bloc pour effectuer des redirections de ports.
+OVHcloud fourni un bloc de 8 adresses IP publiques, certaines sont réservées vous pouvez utiliser l'adresse qui est préconfigurée pour le SNAT en sortie.
 
 
 ## Prérequis

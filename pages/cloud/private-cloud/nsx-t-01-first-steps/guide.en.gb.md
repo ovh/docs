@@ -32,7 +32,7 @@ When a customer subscribes to the NSX-T offer and is enabled, a preset is applie
 
 The two gateways are interconnected to allow internal networks to communicate outside the cluster.
 
-OVHcloud provides a block of 16 public IP addresses, some of which are reserved. You can use 8 addresses from the second address in the block to perform port redirections.
+OVHcloud provides a block of 8 public IP addresses, some of which are reserved. You can use the address which is used for SNAT by default.
 
 ## Requirements
 
