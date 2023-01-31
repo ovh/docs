@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Last updated 26th January 2023**
+**Last updated 31st January 2023**
 
 ## Objective
 
@@ -144,6 +144,10 @@ Below, we've included some links from these CMS publishers, to help you get star
 [Choosing a CMS for building your website](https://www.ovhcloud.com/en-ie/web-hosting/uc-cms-comparison/){.external}
 
 [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/)
+
+[Manage your CMS](https://docs.ovh.com/ie/en/hosting/1-click-module-management/)
+
+[Uninstall your CMS](https://docs.ovh.com/ie/en/hosting/1-click-module-management/#step-3-delete-your-module)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 

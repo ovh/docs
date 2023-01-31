@@ -1,14 +1,18 @@
 ---
 title: "Módulos 1 clique: como instalar um CMS para criar um site"
 slug: partilhado_guias_dos_modulos_dos_alojamentos_partilhados
-excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVH
+excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVHcloud
 section: CMS
 order: 01
 ---
 
-**Última atualização: 26/01/2023**
+**Última atualização: 31/01/2023**
 
-## Sumário
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+## Objetivo
 
 Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site de forma fácil e rápida, e que dispensa conhecimentos de código web ou de programação. Cada módulo permite instalar um dos Sistemas de Gestão de Conteúdos (*Content Management Systems* / CMS) mais populares do mercado: WordPress, PrestaShop, Drupal e Joomla!.
 
@@ -143,6 +147,10 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 [Como usar o meu alojamento com vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/){.external} (versão PT disponível em breve).
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
+
+[Gerir o CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/)
+
+[Desinstalar o seu CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/#etapa-3-eliminar-o-modulo)
 
 Veja a nossa [oferta CloudDB](https://www.ovh.pt/cloud/cloud-databases/){.external}
 

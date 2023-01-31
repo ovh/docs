@@ -6,7 +6,7 @@ section: CMS
 order: 01
 ---
 
-**Dernière mise à jour le 26/01/2023**
+**Dernière mise à jour le 31/01/2023**
 
 ## Objectif
 
@@ -145,6 +145,10 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
 [Créer une base de données sur son hébergement web](https://docs.ovh.com/ca/fr/hosting/creer-base-de-donnees/){.external}
+
+[Gérer votre CMS](https://docs.ovh.com/ca/fr/hosting/1-click-module-management/)
+
+[Désinstaller votre CMS](https://docs.ovh.com/ca/fr/hosting/1-click-module-management/#etape-3-supprimer-votre-module)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
