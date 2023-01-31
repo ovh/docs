@@ -10,7 +10,7 @@ order: 02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 22/06/2022**
+**Última actualización: 30/01/2023**
 
 ## Objetivo
 
@@ -31,10 +31,15 @@ Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&fr
 >
 > - [¿Cómo disfrutar de un aumento temporal del rendimiento de mi plan de hosting Performance?](#boost)
 > - [¿Voy a perder el tiempo restante de mi actual plan de hosting al cambiar de plan?](#billing)
-> - [¿Es posible cambiar mi solución actual a una inferior?](#checks)
 >
 
 ### Modificar el plan de hosting <a name="modify"></a>
+
+> [!warning]
+> La modificación de la suscripción para una oferta inferior no está disponible para nuestros clientes, ya que sus servicios están alojados en un datacenter situado fuera de Europa.
+>
+> Si desea cambiar la suscripción a un plan inferior, siga los pasos de nuestra guía "[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)".
+>
 
 Para modificar su suscripción, vaya a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
@@ -43,61 +48,6 @@ En el recuadro `Suscripción`, haga clic en el botón `...`{.action} a la derech
 ![change_plan](images/change_plan.png){.thumbnail}
 
 A continuación, seleccione la nueva suscripción y la duración de la misma. Acepte los contratos correspondientes y haga clic en `Enviar`{.action}.
-
-### Comprobar que el alojamiento es compatible con un producto inferior <a name="checks"></a>
-
-> [!warning]
->
-> Solo es posible modificar la suscripción para un producto que ofrezca menos recursos si se trata del producto **inmediatamente inferior**. 
-> Por ejemplo, no podrá pasar de una fórmula *Performance 2* a una fórmula *Profesional* en una sola operación.
-> **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Profesional*.
->
-
-Antes de realizar el cambio a una gama inferior, compruebe los siguientes 6 elementos:
-
-#### 1 - Número de sitios
-
-El producto [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/) no permite tener más de un dominio en el [multisitio](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) de su alojamiento.
-
-Antes de cambiar del plan [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) al plan [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/), compruebe que el alojamiento solo tenga un sitio web.
-
-#### 2 - Bases de datos Start SQL
-
-Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluya suficientes [bases de datos](https://www.ovhcloud.com/es/web-hosting/options/start-sql/). Compruebe también que sean de tamaño suficiente.
-
-En caso contrario, elimine las bases de datos no utilizadas y reduzca la cantidad de datos que contienen. Esta cantidad no deberá exceder del tamaño máximo de las bases de datos de la nueva oferta (para cualquier solicitud de soporte sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/)).
-
-Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el espacio utilizado en la pestaña `Bases de datos`{.action} de la sección `Alojamientos`{.action} del área de cliente. Haga clic en el botón `...`{.action} a la derecha de la base de que se trate y, seguidamente, `Recalcular el espacio utilizado`{.action}.
-
-![cuota](images/quota.png){.thumbnail}
-
-#### 3 - Espacio FTP
-
-Antes de cambiar al plan de hosting inferior, asegúrese de que el nuevo plan incluye suficiente [espacio de almacenamiento FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) para poder importar los archivos de su alojamiento actual.
-
-La cuota utilizada en su alojamiento FTP puede verse en la sección `Alojamientos`{.action} del área de cliente. Haga clic en la pestaña `Información general`{.action} y encontrará el límite en el `Espacio en disco`.
-
-![ftp](images/ftp.png){.thumbnail}
-
-#### 4 - Direcciones de correo
-
-Compruebe también que la nueva solución ofrezca un número suficiente de direcciones de correo electrónico disponibles. En caso contrario, elimine las direcciones superfluas después de haberlas [guardado](https://docs.ovh.com/us/es/emails/migrar-sus-direcciones-de-correo-manualmente/) si es necesario.
-
-Si quiere conservar el mismo número de cuentas de correo antes de pasar el alojamiento a una solución inferior, puede contratar una nueva solución de correo **MX Plan**. En la sección `Correo electrónico`{.action} del área de cliente, haga clic en el producto correspondiente y, seguidamente, en el botón `...`{.action} a la derecha del `Producto`{.action}. Haga clic en `Cambiar de plan`{.action}.
-
-![mxplan](images/mxplan.png){.thumbnail}
-
-#### 5 - Mailing lists
-
-La funcionalidad [Mailing lists](https://docs.ovh.com/us/es/emails/guia_de_utilizacion_de_listas_de_difusion/) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.ovhcloud.com/es/web-hosting/old-web-hosting-offers/).
-
-Para migrar a un plan de hosting [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/), primero deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-
-En la sección `Correo electrónico`{.action} del área de cliente, seleccione el servicio correspondiente y haga clic en `...`{.action} a la derecha del `Producto`{.action}. Haga clic en `Cambiar de plan`{.action}.
-
-#### Finalización
-
-Una vez que haya comprobado estos 6 elementos, puede realizar el [cambio de producto](#modify).
 
 ### Casos particulares
 
