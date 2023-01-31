@@ -6,7 +6,11 @@ section: CMS
 order: 01
 ---
 
-**Ultimo aggiornamento: 26/01/2023**
+**Ultimo aggiornamento: 31/01/2023**
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
 ## Obiettivo
 
@@ -129,7 +133,7 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 |CMS|Documentazione Ufficiale|
 |---|---|
 |WordPress|[Primi passi con WordPress](https://codex.wordpress.org/it:Primi_passi_con_WordPress){.external}|
-|PrestaShop|[Guida introduttiva di PrestaShop](http://doc.prestashop.com/display/PS17/Guida+introduttiva+di+PrestaShop+1.7){.external}|
+|PrestaShop|[Guida introduttiva di PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+introduttiva+di+PrestaShop+1.7){.external}|
 |Joomla!|[Documentazione Joomla!](https://docs.joomla.org/Joomla_info_page/it-IT){.external}|
 |Drupal|[Documentazione Drupal](http://www.drupal.it/home-documentazione){.external}|
 
@@ -140,6 +144,10 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}
 
 [Gestire un database da un hosting condiviso](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
+
+[Gestire il vostro CMS](https://docs.ovh.com/it/hosting/1-click-module-management/)
+
+[Disinstallare il tuo CMS](https://docs.ovh.com/it/hosting/1-click-module-management/#step-3-elimina-il-tuo-modulo)
 
 Scopri la nostra soluzione [Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 

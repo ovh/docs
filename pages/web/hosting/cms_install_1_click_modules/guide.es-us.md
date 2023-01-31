@@ -6,7 +6,11 @@ section: CMS
 order: 01
 ---
 
-**Última actualización: 26/01/2023**
+**Última actualización: 31/01/2023**
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
 ## Objetivo
 
@@ -142,6 +146,10 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 [Elegir un CMS para crear un sitio web](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}
 
 [Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/us/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
+
+[Gestionar su CMS](https://docs.ovh.com/us/es/hosting/1-click-module-management/)
+
+[Desinstalar su CMS](https://docs.ovh.com/us/es/hosting/1-click-module-management/#etapa-3-eliminar-el-modulo)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 
