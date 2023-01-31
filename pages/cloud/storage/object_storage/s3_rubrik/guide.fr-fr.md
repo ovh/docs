@@ -3,23 +3,24 @@ title: Utiliser S3 Object Storage avec Rubrik
 slug: s3/rubrik
 excerpt: Découvrez comment configurer le stockage dans Rubrik pour utiliser un bucket S3 Object Storage
 section: Object Storage S3 High Performance
-order: 171
-hidden: true
+order: 172
 ---
 
-**Dernière mise à jour le 03/08/2022**
+**Dernière mise à jour le 31/01/2023**
 
 ## Objectif
 
 Rubrik est une solution de sauvegarde robuste et sécurisée qui autorise l'archivage sur un stockage High Performance Object Storage OVHcloud.
 
-**Ce guide explique comment configurer High Performance Object Storage OVHcloud comme dépot d'archivage du logiciel Rubrik.**
+**Ce guide vous montre comment configurer High Performance Object Storage OVHcloud comme dépot d'archivage du logiciel Rubrik.**
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+>
+> Les licences Rubrik ne sont pas fournies par OVHcloud. Pour plus d’informations, contactez le service commercial de Rubrik.
 >
 
 ## Prérequis
@@ -30,19 +31,15 @@ Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/
 
 ## En pratique
 
-Pour pouvoir utiliser **High Performance Storage** en tant que dépot d'archive du logiciel Rubrik il est nécessaire de créer :
-
-- Un utilisateur dans un compte public OVHcloud qui peut créer des *Buckets* ;
-- Une clé RSA 2048 bits.
+Vous devez créer un utilisateur dans un compte public OVHcloud qui a la possibilité de générer des *Buckets*, ensuite produire une clé RSA 2048 bits avant de pouvoir utiliser **High Performance Storage** en tant que dépot d'archive du logiciel Rubrik.
 
 ### Création d'un utilisateur sur un projet public OVHcloud
 
-Nous allons créer un compte dans un projet public qui sera capable d'ajouter des *buckets* sur un stockage **High Performance Object Storage**
+Nous allons créer un compte dans un projet public qui sera capable d'ajouter des *buckets* sur un stockage **High Performance Object Storage**.
 
 Connectez-vous à l'espace client OVHcloud au travers de l'url [OVHcloud](https://www.ovhcloud.com).
 
 Cliquez en haut à gauche sur le `menu principal`{.action}.
-
 
 ![01 Create User 01](images/01-createuser01.png)
 
@@ -86,20 +83,20 @@ Cliquez sur `l'icône rond avec 3 petits points`{.action} à droite du compte ut
 
 ![01 Create User 11](images/01-createuser11.png)
 
-Choisissez sur `Générer les credentials S3`{.action} à droite.
+Choisissez `Générer les credentials S3`{.action} à droite.
 
 ![01 Create User 12](images/01-createuser12.png)
 
-L'accès S3 a été créé il est composé de ces éléments :
+L'accès S3 est créé il est composé de ces éléments :
 
 - **access key** ;
 - **secret key** .
 
 ![01 Create User 13](images/01-createuser13.png)
 
-### Création d'une clé privé RSA
+### Production d'une clé privé RSA
 
-Nous allons utiliser l'outils en ligne de commande openssl disponible sous Linux ou Windows 
+Nous allons utiliser l'outils en ligne de commande openssl disponible sous Linux ou Windows. 
 
 Lancer cette commande dans un terminal :
 
@@ -120,25 +117,23 @@ oic8XYh0OdAA5aY1kIy33Gg8NVarnGMe+ezc9NhF6AHIhAgwXZ+NBLdcUujPBaqx
 -----END RSA PRIVATE KEY-----
 ```
 
-
 ### Configuration du stockage dans le logiciel Rubrik
 
-Lors de la configuration du dépôt d'archive veuillez saisir ces informations :
+Saisissez ces informations dans le logiciel Rubrik lors de la configuration du dépôt d'archives.
 
-* ** Acces Key** : `Acces key généré au travers de l'espace client OVHcloud` ;
-* ** Secret Key** : `Secret key généré au travers de l'espace client OVHcloud` ;
-* ** hostname** : `s3.gra.perf.cloud.ovh.net` pour le Datacenter de Graveline ou `s3.sbg.perf.cloud.ovh.net` pour celui de Strasbourg ;
-* ** bucket Prefix** : `prefixe du bucket` en minuscule ;
-* ** Number of Buckets** : prenez `1` ;
+* ** Acces Key** : Votre `Acces key` ; 
+* ** Secret Key** : Votre `Secret key` ;
+* ** hostname** : Soit `s3.gra.perf.cloud.ovh.net` pour le Datacenter de Gravelines ou `s3.sbg.perf.cloud.ovh.net` pour celui de Strasbourg ;
+* ** bucket Prefix** : `Prefixe du bucket` en minuscule ;
+* ** Number of Buckets** : Choisissez `1` ;
 * ** Archival Location Name** : `S3Compatible`
-* ** RSA Key** : `copiez la clé RSA -----BEGIN RSA PRIVATE KEY----- ... -----END RSA PRIVATE KEY-----`
+* ** RSA Key** : Copiez la `clé RSA` 
 
 Ensuite cliquez sur `Add`{.action}
 
 ![02 Configure rubrik repository 01](images/02-configure-rubrik-repository01.png)
 
-
-Un *bucket* sera créé dans le projet public OVHcloud avec comme préfixe le nom dans **bucket Prefix**
+Un *bucket* sera automatiquement créé dans le projet public OVHcloud avec comme préfixe le nom contenu dans  **bucket Prefix**
 
 ## Aller plus loin
 

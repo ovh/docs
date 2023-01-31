@@ -1,15 +1,17 @@
 ---
-title: Object Storage - Use S3 Object Storage with Veeam
-slug: s3/veeam
+title: Object Storage - Use S3 Object Storage with Rubrik
+slug: s3/rubrik
 section: Configure Object Storage with your solutions
-order: 007
+order: 172
 ---
 
-**Last updated on 3rd January 2022**
+**Last updated on 31th January 2023**
 
 ## Objective
 
-This guide is intended to show you how to configure Veeam to use your S3 Object Storage.
+Rubrik is a robust and secure backup solution that allows archiving to OVHcloud High Performance Object Storage.
+
+**This guide will show you how to configure OVHcloud High Performance Object Storage as a repository for Rubrik software archives.**
 
 > [!warning]
 >
@@ -17,80 +19,125 @@ This guide is intended to show you how to configure Veeam to use your S3 Object 
 >
 > This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 >
+> The Rubrik licences are not provided by OVHcloud. For more information, contact the Rubrik sales department.
+>
 
 ## Requirements
 
-- A bucket
-- A user with the required access rights on the bucket
-- Your S3 credentials (access_key and secret_access_key).
+- Creating a public project via the OVHcloud Control Panel
 
 See our [Getting started with S3 Object Storage](https://docs.ovh.com/gb/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
 
 ## Instructions
 
-### Adding S3 Compatible Object Storage
+You need to create a user in an OVHcloud public account who can generate *Buckets*, then produce a 2048-bit RSA key before you can use **High Performance Storage** as the Rubrik software archive repository.
 
-#### Step 1 - Launch New Object Repository Wizard
+### Creating a user on an OVHcloud public project
 
-To launch the New Object Repository wizard, do one of the following:
+We will create an account in a public project that will be able to add *buckets* to **High Performance Object Storage** storage
 
-- Open the **Backup Infrastructure** view. In the inventory pane, select the **Backup Repositories** node and click `Add Repository`{.action} on the ribbon. In the **Add Backup Repository** dialog, select `Object Storage`{.action} > `S3 Compatible`{.action}.
+Log in to the OVHcloud Control Panel via the [OVHcloud] URL (https://www.ovhcloud.com).
 
-- Open the **Backup Infrastructure** view. In the inventory pane, right-click the **Backup Repositories** node and select **Add Backup Repository**. In the **Add Backup Repository** dialog, select `Object Storage`{.action} > `S3 Compatible`{.action}.
+Click on the `main menu`{.action} in the top left-hand corner.
 
-![Launch New Object Repository Wizard](images/highperf-veeam-20220103142309570.png){.thumbnail}
+![01 Create User 01](images/01-createuser01.png)
 
-#### Step 2 - Specify Object Storage Name
+Choose `Public Cloud`{.action}.
 
-At the **Name** step of the wizard, specify a name and description for the object storage repository:
+![01 Create User 01](images/01-createuser02.png)
 
-- In the **Name** field, specify a name for the new object storage repository.
-- In the **Description** field, enter an optional description. The default description contains information about the user who added the object storage repository, date and time when the object storage repository was added.
+Click the `right arrow`{.action} in the top right-hand corner.
 
-If you wish to limit the maximum number of tasks that can be processed at once, select the **Limit concurrent tasks to N** check box.
+![01 Create User 03](images/01-createuser03.png)
 
-![Specify Object Storage Name](images/highperf-veeam-2022010416461795.png){.thumbnail}
+Click your `project`{.action}.
 
-#### Step 3 - Specify Object Storage Account
+![01 Create User 04](images/01-createuser04.png)
 
-At the **Account** step of the wizard, specify the connection settings:
+Click on the `main menu`{.action} in the top left-hand corner.
 
-- In the **Service point** field, specify an endpoint address of your S3 Compatible object storage: `https://s3.<region_in_lowercase>.perf.cloud.ovh.net`.
-- In the **Region** field, specify a region: `<region_in_lowercase>`.
-- From the **Credentials** drop-down list, select user credentials to access your S3 Compatible object storage.
+![01 Create User 06](images/01-createuser05.png)
 
-If you already have a credentials record that was configured in advance, select it from the drop-down list. Otherwise, click `Add`{.action} and provide your access and secret keys. You can also click the `Manage cloud accounts`{.action} link to add, edit or remove a credentials record.
+Select `Public Cloud`{.action}.
 
-To use a gateway server, select the **Use the following gateway server** check box and choose an appropriate server from the list. You may want to use a gateway server, for example, if your organization has NAT or different types of firewalls and your access to the internet is limited.
+![01 Create User 06](images/01-createuser06.png)
 
-You can select any Microsoft Windows or Linux server that is added to your backup infrastructure and has internet connection. By default, the role of a gateway server is assigned to the machine where Veeam Backup & Replication is installed.
+Use the `scroll bar`{.action} and click `Users & Roles`{.action}.
 
-If you choose not to use a gateway server, make sure that all scale-out repository extents have direct internet access.
+![01 Create User 07](images/01-createuser07.png)
 
-![Step 3. Specify Object Storage Account](images/highperf-veeam-20220104174350437.png){.thumbnail}
+Click `Add User`{.action}.
 
-#### Step 4 - Specify Object Storage Settings
+![01 Create User 08](images/01-createuser08.png)
 
-At the **Bucket** step of the wizard, specify the bucket and folder that will be used to store data:
+Type a `user name` in **User Description** and click `Next`{.action}.
 
-1. From the **Bucket** drop-down list, select a bucket. Make sure that the bucket where you want to store your backup data was created in advance.
-2. In the **Select Folder** field, select a cloud folder to which you want to map your object storage repository.
+![01 Create User 09](images/01-createuser09.png)
 
-To select a folder, click `Browse`{.action} and either select an existing folder or create a new one by clicking `New Folder`{.action}.
+Select the `ObjectStore operator`{.action} box and click `Validate`{.action}.
 
-To define a soft limit that can be exceeded temporarily for your object storage consumption, select the **Limit object storage consumption to** check box and provide the value in TB or PB.
+![01 Create User 10](images/01-createuser10.png)
 
-![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png){.thumbnail}
+Click on the `round icon with 3 small dots`{.action} to the right of the user account created to generate S3 access.
 
-#### Step 5 - Finish working with the wizard
+![01 Create User 11](images/01-createuser11.png)
 
-At the **Summary** step of the wizard, complete the object storage repository configuration:
+Choose `Generate S3 credentials`{.action} on the right.
 
-- Review details of the object storage repository.
-- Click `Finish`{.action} to exit the wizard.
+![01 Create User 12](images/01-createuser12.png)
 
-![Step 5. Finish Working with Wizard](images/highperf-veeam-20220104180210797.png){.thumbnail}
+S3 access is created it is composed of these elements:
+
+- **access key** ;
+- **secret key** .
+
+![01 Create User 13](images/01-createuser13.png)
+
+### Generating an RSA private key
+
+We will use the openssl command line tools available on Linux or Windows.
+
+Run this command in a terminal :
+
+```bash
+openssl genrsa -out rubrik_encryption_key.pem 2048
+```
+
+The contents of the file are of this form, for example:
+
+```console
+-----BEGIN RSA PRIVATE KEY-----
+tbEH9hP4TVC6ZRdxqL59hEuKMLQru93sW1b4uZ/S8W7y5Ip1WwnqJPNqUbwOto/f
+LhsVAoGBAOnHOBJeUabERcur4It6NJdwQ/TPSrOkLnW5WMjEOcbwZr0Pq7GaW6l/
+tbEH9hP4TVC6ZRdxqL59hEuKMLQru93sW1b4uZ/S8W7y5Ip1WwnqJPNqUbwOto/f
+LhsVAoGBAOnHOBJeUabERcur4It6NJdwQ/TPSrOkLnW5WMjEOcbwZr0Pq7GaW6l/
+oic8XYh0OdAA5aY1kIy33Gg8NVarnGMe+ezc9NhF6AHIhAgwXZ+NBLdcUujPBaqx
+7p3lZs1vEEBX4ouHX93qz7ymNJ+MTeQtCNX4tQfE4kcLT0pY+DtW
+-----END RSA PRIVATE KEY-----
+```
+
+
+### Storage configuration in the Rubrik software
+
+Enter this information in the Rubrik software when configuring the archive repository.
+
+* ** Acces Key** : Your `Acces key` ; 
+* ** Secret Key** : Your `Secret key` ;
+* ** hostname** : Either `s3.gra.perf.cloud.ovh.net` for the Gravelines datacentre or `s3.sbg.perf.cloud.ovh.net` for the Strasbourg datacenter ;
+* ** bucket Prefix** : lowercase `bucket prefix` ;
+* ** Number of Buckets** : Choose `1` ;
+* ** Archival Location Name** : `S3Compatible` ;
+* ** RSA Key** : Copy the `RSA key` ; 
+
+Then click `Add`{.action}
+
+![02 Configure rubrik repository 01](images/02-configure-rubrik-repository01.png)
+
+A *bucket* will be automatically created in the OVHcloud public project with the name contained in **bucket Prefix** as a prefix.
 
 ## Go further
 
+Official [Rubrik] website (https://www.rubrik.com/)
+
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+
