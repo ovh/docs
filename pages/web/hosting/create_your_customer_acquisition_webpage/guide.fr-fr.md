@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 08
 ---
 
-**Dernière mise à jour le 30/01/2023**
+**Dernière mise à jour le 31/01/2023**
 
 > [!warning]
 >
@@ -17,11 +17,7 @@ order: 08
 
 ## Objectif
 
-Connectez-vous avec votre public, collectez des prospects qualifiés et vendez vos services avec une simple page web.
-Créez votre présence en ligne et développez votre mailing liste d'abonnés grâce ...
-
-Créez votre présence en ligne et développez votre mailing liste d'abonnés, Connectez-vous avec votre public, collectez des prospects qualifiés avec une simple page web.
-
+Ce tutoriel va vous permettre de créer une page web pour développer votre présence en ligne. Vos visiteurs pourrons vous contacter par un simple formulaire dont le contenu arrivera sur l'adresse mail de votre choix. Cette liste de prospects qualifiés sera optimale pour vos démarcharges en ligne par mail.
 
 ## Prérequis
 
@@ -290,6 +286,34 @@ if (empty($errors)) { // If the $errors array is empty
 >
 > L'adresse mail de l'expéditeur doit être identique au nom de domaine sur lequel est exécuté le script d'envoi.
 >
+
+### Le fichier JavaScript
+
+Ce fichier permet d'envoyer le contenu du formulaire en AJAX au script PHP.
+
+```javascript
+$(document).ready(function() {
+    $("#sendMessageForm").on('submit', function(event) {
+        event.preventDefault();
+        var formData = $(this);
+
+        $.ajax({
+            method: "POST",
+            url: "scripts/sendMail.php",
+            data: formData.serialize(),
+            success: function(result) {
+                if (result == 'success') {
+                    $('.output').css('display', 'block');
+                    $('.output').text('Message sent!');
+                } else {
+                    $('.output').text('Error sending message!');
+                }
+            }
+        });
+
+    });
+});
+```
 
 ## Aller plus loin <a name="go-further"></a>
 
