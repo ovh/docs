@@ -23,14 +23,19 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 
 > [!warning]
 >
-> **Before** you make any changes to your current subscription, check to see if you have any of these questions:
+> **Before** you make any changes to your current subscription, check to see if these questions apply to your situation:
 >
 > - [How do I get a temporary performance boost on my Performance hosting plan?](#boost)
 > - [Will I waste the time remaining on my current hosting plan when I change plans?](#billing)
-> - [Can I upgrade my current plan to a lower plan?](#checks)
 >
 
 ### Modifying your hosting plan <a name="modify"></a>
+
+> [!warning]
+> Subscription downgrading is not available for customers whose services are hosted in a data centre outside Europe.
+>
+> If you would like to change your subscription to a lower plan, please follow the steps in our guide “[Migrating your website and emails to OVHcloud](https://docs.ovh.com/sg/en/hosting/migrating-website-to-ovh/)”.
+>
 
 To change your subscription, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the plan concerned.
 
@@ -39,60 +44,6 @@ In the `Plan` box, click the `...`{.action} button to the right of `Solution`, t
 ![change_plan](images/change_plan.png){.thumbnail}
 
 Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
-
-### Checking that your hosting plan is compatible with a lower plan <a name="checks"></a>
-
-> [!warning]
-> Subscription changes for lower plans are not available for customers whose services are hosted in a datacentre outside Europe.
->
-> If you would like to change your subscription to a lower plan, please follow the steps in our guide “[Migrate your website and emails to OVHcloud](https://docs.ovh.com/sg/en/hosting/migrating-website-to-ovh/)”.
->
-
-Before you make your switch to a lower range, check the following 6 items:
-
-#### 1 - Number of sites
-
-With the [Kimsufi Web](https://www.ovhcloud.com/en-sg/web-hosting/old-web-hosting-offers/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://docs.ovh.com/sg/en/hosting/multisites-configuring-multiple-websites/).
-
-Before you switch from the [Personal](https://www.ovhcloud.com/en-sg/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.ovhcloud.com/en-sg/web-hosting/old-web-hosting-offers/) solution, please check that your web hosting plan only has one website.
-
-#### 2 - Start SQL databases
-
-Before moving your hosting to a lower plan, please ensure that the new plan has enough [databases](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/). Also make sure they are of sufficient size.
-
-Otherwise, delete unused databases and reduce the amount of data they contain, if necessary. This quantity must not exceed the maximum size of the databases in the new solution (for any requests for assistance with the operations to be carried out, contact the [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/)).
-
-If you have deleted data from your databases, you can recalculate the quota from the `Databases`{.action} tab in the `Hosting plans`{.action} section of the OVHcloud Control Panel. Click on the `...`{.action} button to the right of the database concerned, then `Recalculate the quota`{.action}.
-
-![quota](images/quota.png){.thumbnail}
-
-#### 3 - FTP space
-
-Before switching your hosting plan to a lower plan, please ensure that the new plan includes enough [FTP storage space](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting/) so that you can import files from your current hosting plan.
-
-The quota used on your FTP hosting plan is visible in the `Hosting plans`{.action} section of the OVHcloud Control Panel. Click on the `General information`{.action} tab, and you will see the quota under `Disk space`.
-
-![ftp](images/ftp.png){.thumbnail}
-
-#### 4 - Email accounts
-
-Please also check that your new solution has a sufficient number of available email accounts. Otherwise, delete the extra accounts, after you have [backed up](https://docs.ovh.com/sg/en/emails/migrate-email-addresses-manually/) the contents if necessary.
-
-If you would like to keep the same number of email accounts, before moving your web hosting to a lower plan, you can also order a new **MX Plan** email solution. In the `Emails`{.action} section of the OVHcloud Control Panel, click on the solution concerned, then on the `...`{.action} button to the right of `Solution`. Next, click `Change solution`{.action}.
-
-![mxplan](images/mxplan.png){.thumbnail}
-
-#### 5 - Mailing lists
-
-The [Mailing lists](https://docs.ovh.com/sg/en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en-sg/web-hosting/personal-offer/) and [Kimsufi Web](https://www.ovhcloud.com/en-sg/web-hosting/old-web-hosting-offers/) hosting plans.
-
-To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-sg/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
-
-In the `Emails`{.action} section of your Control Panel, select the solution concerned, then click on `...`{.action} to the right of `Solution`{.action}. Next, click `Change solution`{.action}.
-
-#### Completion
-
-Once you have checked these 6 elements, you can [change your plan](#modify).
 
 ### Special cases
 
