@@ -173,7 +173,7 @@ Se tiver copiado o resultado na sua totalidade, o identificador após a chave j�
 > Quaisquer chaves guardadas na seção “Serviços Dedicados” serão igualmente utilizáveis para os seus serviços VPS. No que respeita às chaves SSH para os serviços Public Cloud, consulte [este guia](../../public-cloud/public-cloud-primeiros-passos).
 >
 
-### Definir uma chave SSH predefinida (apenas para a secção "Serviços Dedicados")
+### Definir uma chave SSH predefinida (apenas para a secção "Serviços Dedicados") <a name="cpsshkey"></a>
 
 Se tiver adicionado múltiplas chaves SSH à sua Área de Cliente, é possível definir uma chave a utilizar como chave predefinida na conta.
 

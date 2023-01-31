@@ -186,7 +186,7 @@ Wenn Sie die vollständige Ausgabe kopiert haben, sollte der “Identifier” hi
 > Alle im Abschnitt “Dedicated” gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
 >
 
-### Einen Standardschlüssel festlegen (nur für den Bereich "Dedicated")
+### Einen Standardschlüssel festlegen (nur für den Bereich "Dedicated") <a name="cpsshkey"></a>
 
 Wenn Sie mehrere SSH-Schlüssel in Ihrem Kundencenter hinzugefügt haben, können Sie einen Schlüssel festlegen, der als Standardschlüssel für den Account verwendet werden soll.
 
