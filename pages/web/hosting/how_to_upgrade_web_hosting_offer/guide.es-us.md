@@ -47,7 +47,7 @@ A continuación, seleccione la nueva suscripción y la duración de la misma. Ac
 ### Comprobar que el alojamiento es compatible con un producto inferior <a name="checks"></a>
 
 > [!warning]
-> El cambio de la suscripción para una oferta inferior no está disponible para nuestros clientes que están alojados fuera de Europa.
+> La modificación de la suscripción para una oferta inferior no está disponible para nuestros clientes, ya que sus servicios están alojados en un datacenter situado fuera de Europa.
 >
 > Si desea cambiar la suscripción a un plan inferior, siga los pasos de nuestra guía "[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)".
 >

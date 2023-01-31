@@ -40,7 +40,7 @@ Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouv
 ### Modifier votre offre d'hébergement <a name="modify"></a>
 
 > [!warning]
-> Le changement d'abonnement pour une offre inférieure est indisponible pour nos clients dont les services sont hébergés hors Europe.
+> Le changement d'abonnement pour une offre inférieure est indisponible pour nos clients dont les services sont hébergés dans un Datacentre en dehors de l'Europe.
 >
 > Si vous souhaitez modifiez votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](https://docs.ovh.com/ca/fr/hosting/migrer-mon-site-chez-ovh/) ».
 > 

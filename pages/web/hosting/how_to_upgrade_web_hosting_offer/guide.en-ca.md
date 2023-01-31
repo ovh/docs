@@ -43,7 +43,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 ### Checking that your hosting plan is compatible with a lower plan <a name="checks"></a>
 
 > [!warning]
-> Subscription changes for lower plans are not available for customers whose services are hosted outside Europe.
+> Subscription changes for lower plans are not available for customers whose services are hosted in a datacentre outside Europe.
 >
 > If you would like to change your subscription to a lower plan, please follow the steps in our guide “[Migrate your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/)”.
 >
