@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/'
 ---
 
-**Last updated 1st December, 2022.**
+**Last updated 31st January, 2023.**
 
 > [!primary]
 >
@@ -36,6 +36,7 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
 | OVHcloud | Sketch recognition | Recognize handwritten digits with Gradio | [AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/) | [Dockerfile - Sketch recognition](https://github.com/ovh/ai-training-examples/blob/main/apps/gradio/sketch-recognition/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition` | 8080 (default) | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition` | **Web interface** - access to the app with the url |
 | OVHcloud | Spam classification | Classify spam messages with FastAPI | [AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/) | [Dockerfile - Spam classifier API](https://github.com/ovh/ai-training-examples/blob/main/apps/fastapi/spam-classifier-api/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification` | 8000 | `ovhai app run --default-http-port 8000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification` | **API** - interact with the API with `<app-url>/docs` or curl command |
 | OVHcloud | Sentiment analysis | Analyse text sentiment with Hugging Face models and Flask | [AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/) | [Dockerfile - Sentiment analysis Hugging Face app](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/sentiment-analysis-hugging-face-app/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | 5000 | `ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | **Web interface** - access to the app with the url |
+| OVHcloud | Speech-to-Text | Use Speech-to-Text powers on audio and video | [AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit](https://docs.ovh.com/de/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/) | [Dockerfile - Speech-to-Text Streamlit app](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/speech-to-text/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text` | 8501 | `ovhai app run --default-http-port 8501 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text` | **Web interface** - access to the app with the url |
 
 If you want to launch these apps from the OVHcloud control panel:
 

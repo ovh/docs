@@ -6,7 +6,7 @@ section: AI Training - Tutorials
 order: 02
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 31st January, 2023.**
 
 ## Objective
 
@@ -113,6 +113,13 @@ docker build . -t <image-identifier>
 > [!primary]
 >
 > The `-t` argument allow you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`.
+
+> [!warning]
+>
+> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
+>
+> `docker buildx build --platform linux/amd64 ...`
+>
 
 ## Test it locally (Optional)
 
