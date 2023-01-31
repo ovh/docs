@@ -20,7 +20,7 @@ You want to:
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) or ordered separately)
+- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/))
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) as the Admin contact of the email service concerned (section `Web Cloud`{.action})
 
 ## Instructions <a name="instructions"></a>
