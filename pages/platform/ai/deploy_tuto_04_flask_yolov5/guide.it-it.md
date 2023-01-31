@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/web-service-yolov5/'
 ---
 
-**Last updated 16th January, 2023.**
+**Last updated 31st January, 2023.**
 
 > [!primary]
 >
@@ -225,6 +225,12 @@ docker build . -t flask-yolov5:latest
 > [!primary]
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **flask-yolov5:latest**.
+
+> [!warning]
+>
+> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
+>
+> `docker buildx build --platform linux/amd64 ...`
 
 ### Test it locally (optional)
 

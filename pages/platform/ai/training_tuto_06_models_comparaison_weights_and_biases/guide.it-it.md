@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/'
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 31st January, 2023.**
 
 ## Objective
 
@@ -286,6 +286,13 @@ docker build . -t <your-docker-id>/audio-classification-models:latest
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **audio-classification-models:latest**.
+>
+
+> [!warning]
+>
+> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
+>
+> `docker buildx build --platform linux/amd64 ...`
 >
 
 ### Push the image into your Docker Hub
