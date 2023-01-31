@@ -12,7 +12,7 @@ order: 172
 
 Rubrik est une solution de sauvegarde robuste et sécurisée qui autorise l'archivage sur un stockage High Performance Object Storage OVHcloud.
 
-**Ce guide vous montre comment configurer High Performance Object Storage OVHcloud comme dépot d'archivage du logiciel Rubrik.**
+**Ce guide vous montre comment configurer High Performance Object Storage OVHcloud comme dépôt d'archivage du logiciel Rubrik.**
 
 > [!warning]
 >
@@ -27,7 +27,7 @@ Rubrik est une solution de sauvegarde robuste et sécurisée qui autorise l'arch
 
 - Avoir créé un projet public au travers de l'espace client OVHcloud.
 
-Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Créer votre premier projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/) » pour plus de détails.
 
 ## En pratique
 
@@ -133,7 +133,7 @@ Ensuite cliquez sur `Add`{.action}
 
 ![02 Configure rubrik repository 01](images/02-configure-rubrik-repository01.png)
 
-Un *bucket* sera automatiquement créé dans le projet public OVHcloud avec comme préfixe le nom contenu dans  **bucket Prefix**
+Un *bucket* est automatiquement créé dans le projet public OVHcloud avec comme préfixe le nom contenu dans  **bucket Prefix**.
 
 ## Aller plus loin
 

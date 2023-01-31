@@ -26,7 +26,7 @@ Rubrik is a robust and secure backup solution that allows archiving to OVHcloud 
 
 - Creating a public project via the OVHcloud Control Panel
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/gb/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
+Please refer to our guide [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/create_a_public_cloud_project/) for more details.
 
 ## Instructions
 
@@ -133,7 +133,7 @@ Then click `Add`{.action}
 
 ![02 Configure rubrik repository 01](images/02-configure-rubrik-repository01.png)
 
-A *bucket* will be automatically created in the OVHcloud public project with the name contained in **bucket Prefix** as a prefix.
+A *bucket* is automatically created in the OVHcloud public project with the name contained in **bucket Prefix** as a prefix.
 
 ## Go further
 
