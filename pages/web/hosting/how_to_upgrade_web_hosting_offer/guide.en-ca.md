@@ -32,7 +32,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 ### Modifying your hosting plan <a name="modify"></a>
 
 > [!warning]
-> Subscription downgrades are not available for customers whose services are hosted in a data centre outside Europe.
+> Subscription downgrading is not available for customers whose services are hosted in a data centre outside Europe.
 >
 > If you would like to change your subscription to a lower plan, please follow the steps in our guide “[Migrating your website and emails to OVHcloud](https://docs.ovh.com/ca/en/hosting/migrating-website-to-ovh/)”.
 >
