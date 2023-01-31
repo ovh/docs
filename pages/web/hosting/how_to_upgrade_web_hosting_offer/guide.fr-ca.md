@@ -21,28 +21,21 @@ Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=
 
 ## En pratique
 
-> [!success]
-> 
-> **Besoin de booster temporairement votre hébergement ?**
+> [!warning]
 >
-> Avec l'[OPTION BOOST](https://www.ovhcloud.com/fr-ca/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez faire évoluer temporairement les ressources de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
+> **Avant** tout changement sur votre abonnement actuel, vérifiez si vous êtes concerné par l'une de ces questions :
+>
+> - [Comment bénéficier d'un gain de performance temporaire sur mon offre d'hébergement performance ?](#boost)
+> - [Vais-je perdre le temps restant sur mon offre d'hébergement actuelle lors de mon changement d'offre ?](#billing)
 >
 
-### Important - La facturation en cas de changement d'offre
-
-Lorsque vous modifiez votre formule en cours d'abonnement, un *report de temps* s'applique sur votre nouvelle offre. Ce report correspond à la durée restante d'abonnement sur votre offre actuelle.
-
-**Exemple :**<br>
-Vous passez d'une offre [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) à une offre [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/), alors que l'abonnement en cours n'est pas terminé.<br>
-Par conséquent, la durée restante sera automatiquement **ajoutée** au pro rata temporis à votre nouvel abonnement **Pro**.<br>
-Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouvellement.
 
 ### Modifier votre offre d'hébergement <a name="modify"></a>
 
 > [!warning]
-> Le changement d'abonnement pour une offre inférieure est indisponible pour nos clients dont les services sont hébergés dans un Datacentre en dehors de l'Europe.
+> Le changement d'abonnement pour une offre inférieure est indisponible pour nos clients dont les services sont hébergés dans un datacenter en dehors de l'Europe.
 >
-> Si vous souhaitez modifiez votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](https://docs.ovh.com/ca/fr/hosting/migrer-mon-site-chez-ovh/) ».
+> Si vous souhaitez modifier votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](https://docs.ovh.com/ca/fr/hosting/migrer-mon-site-chez-ovh/) ».
 > 
 
 Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
@@ -53,47 +46,45 @@ Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `O
 
 Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Valider`{.action}.
 
-### Vérifier que votre hébergement est compatible avec une offre inférieure <a name="checks"></a>
+### Cas particuliers
 
-#### Nombre de sites
+#### Booster temporairement votre hébergement Performance <a name="boost"></a>
 
-L'offre [Kimsufi Web](https://www.ovhcloud.com/fr-ca/web-hosting/old-web-hosting-offers/) ne permet pas d'avoir plus d'un nom de domaine sur le [multisite](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) de votre hébergement.
+Avec l'[option Boost](https://www.ovhcloud.com/fr-ca/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez augmenter temporairement les ressources CPU et RAM de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également [basculer vers l'offre Performance de niveau supérieur](#modify) afin de disposer de ces ressources de manière permanente.
 
-Avant de passer de l'offre [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) à l'offre [Kimsufi Web](https://www.ovhcloud.com/fr-ca/web-hosting/old-web-hosting-offers/), vérifiez donc que votre hébergement ne comporte qu'un seul site.
+> [!warning]
+>
+> Lorsque vous décidez d'activer l'option Boost, celle-ci reste active et facturée **tant que vous ne l'avez pas désactivée**.
 
-#### Bases de données Start SQL
+Si l'option **Boost** convient à votre besoin, vous trouverez ci-dessous les instructions pour **activer** ou **désactiver** cette option sur votre hébergement.
 
-Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre comporte assez de [bases de données](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/). Vérifiez aussi qu'elles sont de tailles suffisantes.
+> [!tabs]
+> **Activer l'option Boost**
+>>
+>> Dans le cadre `Informations générales` de votre hébergement, cliquez sur le bouton `...`{.action} à droite de `Boost` puis sur `Booster mon offre`{.action}.<br><br>
+>> ![boost](images/enable_boost.png){.thumbnail}<br>
+>>
+> **Désactiver l'option Boost**
+>>
+>> Dans l'onglet `Plus` de votre hébergement, cliquez sur `Booster mon offre`{.action}.<br>
+>> Le tableau d'utilisation de l'option Boost s'affiche, cliquez sur `Désactiver l'offre boost`{.action}.<br><br>
+>> ![boost](images/disable_boost.png){.thumbnail}<br>
 
-Dans le cas contraire, supprimez les bases de données inutilisées et réduisez, si nécessaire, la quantité de données qu'elles contiennent. Cette quantité ne devra pas dépasser la taille maximale des bases de données de la nouvelle offre (pour toute demande d'assistance sur les manipulations à effectuer, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/)).
+#### La facturation en cas de changement d'offre <a name="billing"></a>
 
-Suite à la suppression de données sur vos bases, pensez à recalculer le quota utilisé depuis l'onglet `Bases de données`{.action} dans la partie `Hébergements`{.action} de votre espace client. Cliquez sur le bouton `...`{.action} à droite de la base concernée puis sur `Recalculer le quota`{.action}.
+Lorsque vous modifiez votre offre initiale vers une offre supérieure, un calcul au *prorata temporis* est alors appliqué jusqu'à la prochaine date de renouvellement de cet abonnement initial.
+Ce calcul correspond à la différence de tarif entre votre offre initiale et votre nouvelle offre.
 
-![quota](images/quota.png){.thumbnail}
+> **Exemple :**<br>
+>
+> Vous avez souscrit à un abonnement [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) au 1er janvier 2022.
+>
+> Le 31 octobre 2022, vous passez de cette offre **Perso** à un abonnement sur l'offre [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/).<br>
+>
+> Par conséquent, le montant correspondant à la durée restante sur l'abonnement **Perso** (2 mois, du 1er novembre 2022 au 1er janvier 2023) est automatiquement soustrait du coût du nouvel abonnement **Pro**, jusqu'au 1er janvier 2023. Vous ne paierez que la différence.
+> À partir du 1er janvier 2023, l'abonnement Pro vous est ensuite facturé à son tarif en vigueur.
 
-#### Espace FTP
-
-Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre propose suffisamment [d'espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) pour que l'import des fichiers de votre hébergement actuel soit possible.
-
-Le quota utilisé sur votre hébergement FTP est visible dans la partie `Hébergements`{.action} de votre espace client. Cliquez sur l'onglet `Informations générales`{.action}, vous retrouverez le quota sous `Espace Disque`.
-
-![ftp](images/ftp.png){.thumbnail}
-
-#### Adresses e-mail
-
-Vérifiez également que votre nouvelle offre propose un nombre suffisant d'adresses e-mail disponibles. Dans le cas contraire, supprimez les adresses superflues, après les avoir [sauvegardées](https://docs.ovh.com/ca/fr/emails/migrer-ses-adresses-email-manuellement/) si nécessaire.
-
-Si vous souhaitez conserver le même nombre de boîtes e-mail, avant de passer votre hébergement sur une offre inférieure, vous pouvez également commander une nouvelle offre de messagerie **MX Plan**. Dans la partie `Emails`{.action} de votre espace client, cliquez sur l'offre concernée puis sur le bouton  `...`{.action} à droite de `Offre`. Cliquez enfin sur `Changer d'offre`{.action}.
-
-![mxplan](images/mxplan.png){.thumbnail}
-
-#### Mailing lists
-
-La fonctionnalité [Mailing lists](https://docs.ovh.com/ca/fr/emails/guide-dutilisation-mailing-list/) est en option sur les hébergements [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/) et [Kimsufi Web](https://www.ovhcloud.com/fr-ca/web-hosting/old-web-hosting-offers/).
-
-Pour passer votre hébergement sur une offre [Perso](https://www.ovhcloud.com/fr-ca/web-hosting/personal-offer/), vous devrez donc dans un premier temps en supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-
-Dans la partie `Emails`{.action} de votre espace client, sélectionnez l'offre concernée puis cliquez sur `...`{.action} à droite de `Offre`{.action}. Cliquez enfin sur `Changer d'offre`{.action}.
+Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
 ## Aller plus loin <a name="gofurther"></a>
 
