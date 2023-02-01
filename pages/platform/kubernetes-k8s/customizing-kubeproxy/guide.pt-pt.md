@@ -36,6 +36,7 @@ routes:
 The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them.
 
 The kube-proxy Kubernete's component (which runs on each Nodes and allows network comunication to Pods) with iptables is actually a bottleneck to scale the cluster to a high number of Nodes so at OVHcloud we decided to reduce this bottleneck and allows you to use kube-proxy with IPVS.
+
 [IPVS (IP Virtual Server)](https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/) is built on top of the Netfilter and implements transport-layer Load Balancing as part of the Linux kernel.
 
 At OVHcloud, we listen to our users and improve our products and services accordingly, which is why we give you the ability to customize the kube-proxy configuration.
@@ -128,6 +129,10 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 > [!primary]
 >
 > This API call generate a `configMap` that will be used by kube-proxy component.
+>
+> To access to this `configMap` you can execute `kubectl get cm kube-proxy -n kube-system -o yaml` command.
+>
+> The kube-proxy `configMap` in new Kubernetes clusters includes `config.conf` entry.
 
 Both IPVS and iptables specific configuration can be set at the same time and kube-proxy will select the one to use according the mode value.
 
