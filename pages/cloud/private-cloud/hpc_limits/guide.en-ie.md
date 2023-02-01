@@ -6,7 +6,7 @@ section: FAQ
 order: 1
 ---
 
-**Last updated 18th August 2021**
+**Last updated 01/02/2023**
 
 ## Objective
 
@@ -19,12 +19,13 @@ order: 1
 |:-----:|:-----:|:----------:|
 | Max. number of PCCs per customer ID | Number of vCenters or packs per organisation | No limit |
 | Number of linked PCCs | vCenters linked (Enhanced Linked Mode) | 0 (not allowed) |
+| Minimum datastores per PCC (SLA) | Number of datastores per vCenter to maintain SLA | 2 |
 | Minimum hosts per PCC (SLA) | Number of hosts per vCenter to maintain SLA | 2 |
 | Minimum hosts per PCC (no SLA) | Bare minimum hosts to work with vCenter without SLA | 0 |
 | Max. number of hosts per cluster | Hosts per cluster | 64 |
 | Max. number of clusters per vDC | Number of cluster within the same virtual data centre | No limit |
 | Max. number of vDCs per PCC | Virtual data centres customers can add per vCenter | 400 |
-| Max. number of hosts per PCC | Limits of hosts per vCenter | range **Hosts**: 340 hosts, 70 zpools<br>range **Hybrid**: 241 hosts, 120 zpools<br>range **BigDS**: 76 hosts, 205 zpools |
+| Max. number of hosts per PCC | Limits of hosts per vCenter |  231 hosts, 110 zpools |
 | Max. number of VMs per SDDC | VMs managed by the same vCenter | 25000 |
 | Max. number of VMs per host | VMs hosted on the same physical host | 1024 |
 | Max. number of IPs per PCC |  Max. number of Public IPs assignable and usable per vCenter | 1 x /23 |

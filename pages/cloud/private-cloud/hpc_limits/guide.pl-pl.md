@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 18/08/2021**
+**Ostatnia aktualizacja z dnia 01/02/2023**
 
 ## Wprowadzenie
 
@@ -27,7 +27,7 @@ order: 2
 | Maksymalna liczba hostów na klaster | Hosty na klaster | 64 |
 | Maksymalna liczba klastrów na vDC | Liczba klastrów w tym samym wirtualnym centrum danych | Brak limitu |
 | Maksymalna liczba vDC z wykorzystaniem PCC | Liczba wirtualnych centrów danych (vDC), które klienci mogą dodać przez vCenter | 400 |
-| Maksymalna liczba hosty z wykorzystaniem PCC | Limity hostów na vCenter | Zakres **Hostów**: 340 hosty, 70 zpoole<br>plaża **Hybrid**: 241 hosty, 120 zpoole<br>Zakres **BigDS**: 76 hosty, 205 zpoole |
+| Maksymalna liczba hosty z wykorzystaniem PCC | Limity hostów na vCenter | 231 hosty, 110 zpoole |
 | Maksymalna liczba wirtualnych maszyn przez SDDC | VM zarządzane przez ten sam vCenter | 25 000 |
 | Maksymalna liczba wirtualnych maszyn na hosta | VM zainstalowane na tym samym fizycznym hoście | 1024 |
 | Maksymalna liczba adresów IP przez PCC | Maksymalna liczba publicznych adresów IP, które mogą być przypisane i używane przez vCenter | 1 x /23 |

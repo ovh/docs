@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 18/08/2021**
+**Ultimo aggiornamento: 01/02/2023**
 
 ## Obiettivo
 
@@ -27,7 +27,7 @@ order: 2
 | Numero max. di host per cluster | Host per cluster | 64 |
 | Numero max. di cluster per vDC | Numero di cluster nello stesso datacenter virtuale | Nessun limite |
 | Numero max. di vDC per PCC | Il numero di datacenter virtuali (vDC) che i clienti possono aggiungere per vCenter | 400 |
-| Numero max. di host per PCC | Limiti host per vCenter | spiaggia **Hosts**: 340 hosts, 70 zpools<br>range **Hybrid**: 241 hosts, 120 zpools<br>range **BigDS**: 76 hosts, 205 zpools |
+| Numero max. di host per PCC | Limiti host per vCenter | 231 hosts, 110 zpools |
 | Numero max. di macchine virtuali tramite SDDC | VM gestite dallo stesso vCenter | 25 000 |
 | Numero max. di macchine virtuali per host | VM ospitate sullo stesso host fisico | 1024 |
 | Numero max. di indirizzi IP per PCC | Numero max. di indirizzi IP pubblici che possono essere attribuiti e utilizzabili dal vCenter | 1 x /23 |
