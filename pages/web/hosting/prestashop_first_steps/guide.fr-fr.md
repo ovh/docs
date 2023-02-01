@@ -6,7 +6,7 @@ section: Tutoriel
 order: 
 ---
 
-**Dernière mise à jour le 12/01/2023**
+**Dernière mise à jour le 01/01/2023**
 
 ## Objectif
 
@@ -28,11 +28,11 @@ Le présent document fait référence à la version 1.7 de Prestashop. Le CMS fo
 
 Sur votre Manager OVH, rendez-vous sur sur l'inglet «&nbsp;Web Cloud&nbsp;», puis sélectionnez le nom de domaine sur lequel vous souhaitez installer votre solution Prestashop&nbsp;:
 
-![Sélectionner son nom de domaine](images/prestashop_first_steps%5B1%5D.png){.thumbnail}
+![Sélectionner son nom de domaine](images/prestashop_first_steps_1.png){.thumbnail}
 
 Dans «&nbsp;Configuration&nbsp;», changez la version de PHP pour la passer en 7.4&nbsp;:
 
-![Changer la version de PHP](images/prestashop_first_steps%5B2%5D.png){.thumbnail}
+![Changer la version de PHP](images/prestashop_first_steps_2.png){.thumbnail}
 
 Installez également un certificat SSL. Vous pouvez vous reporter à notre guide [Gérer un certificat SSL sur son hébergement web](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
 
@@ -50,11 +50,11 @@ Pensez à mettre en place la redirection de votre nom de domaine en HTTP vers HT
 
 Cliquez sur l'onglet «&nbsp;Modules en 1 clic&nbsp;»&nbsp;:
 
-![Modules en 1 clic](images/prestashop_first_steps%5B3%5D.png){.thumbnail}
+![Modules en 1 clic](images/prestashop_first_steps_3.png){.thumbnail}
 
 Sélectionnez «&nbsp;Ajouter un module&nbsp;» et choisissez **Prestashop**&nbsp;:
 
-![Choisir Prestashop](images/prestashop_first_steps%5B4%5D.png){.thumbnail}
+![Choisir Prestashop](images/prestashop_first_steps_4.png){.thumbnail}
 
 Vous aurez alors le choix entre l'installation normale (par défaut) et l'installation en mode avancé.
 
@@ -62,19 +62,19 @@ Vous aurez alors le choix entre l'installation normale (par défaut) et l'instal
 
 Dans ce mode, vous n'avez qu'à choisir quel nom de domaine pointera sur votre installation. Par défaut, les fichiers de Prestashop seront disponibles dans le répertoire `./www/` de votre serveur.
 
-![Installation par défaut](images/prestashop_first_steps%5B5%5D.png){.thumbnail}
+![Installation par défaut](images/prestashop_first_steps_5.png){.thumbnail}
 
 Validez en cliquant sur «&nbsp;Installer&nbsp;». Votre module s'installe, vous serez notifié par mail à l'issue du processus.
 
 Une fois déployé, le module figurera dans la liste des modules installés sur votre serveur&nbsp;:
 
-![Liste des modules installés](images/prestashop_first_steps%5B6%5D.png){.thumbnail}
+![Liste des modules installés](images/prestashop_first_steps_6.png){.thumbnail}
 
 #### Installation en mode avancé
 
 L'installation avancée vous permet de choisir la base de données qui sera utilisée avec Prestashop. Lors de l'ajour du module Prestashop, cochez l'option «&nbsp;Installation en mode avancé&nbsp;»&nbsp;:
 
-![Installation en mode avancé](images/prestashop_first_steps%5B7%5D.png){.thumbnail}
+![Installation en mode avancé](images/prestashop_first_steps_7.png){.thumbnail}
 
 Vous serez invité à sélectionner une base de données parmi celles que vous avez déjà configurées, ou bien à vous connecter à une base de données distante en renseignant le formulaire avec les informations suivantes&nbsp;:
 
@@ -84,18 +84,18 @@ Vous serez invité à sélectionner une base de données parmi celles que vous a
 - le nom de l'utilisateur (login)
 - le mot de passe lié au compte.
 
-![Installation en mode avancé - Choix de la base de données](images/prestashop_first_steps%5B8%5D.png){.thumbnail}
+![Installation en mode avancé - Choix de la base de données](images/prestashop_first_steps_8.png){.thumbnail}
 
 **Éléments à vérifier - Les données saisies dans le formulaire n'apparaissent pas dans la base de données**<br />
 Dans le formulaire suivant, vous serez invité à renseigner l'adresse mail et le mot de passe de connexion
 
-![Installation en mode avancé - Informations additionnelles](images/prestashop_first_steps%5B9%5D.png){.thumbnail}
+![Installation en mode avancé - Informations additionnelles](images/prestashop_first_steps_9.png){.thumbnail}
 
 Enfin, vérifiez et confirmez les informations relatives à votre installation&nbsp;:
 
-![Installation en mode avancé - Page récapitulative](images/prestashop_first_steps%5B10%5D.png){.thumbnail}
+![Installation en mode avancé - Page récapitulative](images/prestashop_first_steps_10.png){.thumbnail}
 
-### Fin de l'installation
+#### Fin de l'installation
 
 À la fin de l'installation, vous recevrez un mail comportant différentes informations&nbsp;:
 
@@ -106,7 +106,16 @@ Enfin, vérifiez et confirmez les informations relatives à votre installation&n
 
 Votre site e-commerce est en ligne avec des données par défaut&nbsp;:
 
-![Page d'accueil Prestashop](images/prestashop_first_steps%5B11%5D.png){.thumbnail}
+![Page d'accueil Prestashop](images/prestashop_first_steps_11.png){.thumbnail}
+
+### Installation manuelle
+
+Dans le cas d'une installation manuelle, vous devez :
+
+- vous connectez en SSH sur votre serveur et créer un répertoire dans lequel seront les fichiers Prestashop
+- configurer votre nom de domaine pour qu'il pointe dans ce répertoire particulier.
+
+#### Récupérer les fichiers
 
 ## Aller plus loin
 
