@@ -34,10 +34,12 @@ order: 05
 
 Nous allons voir comment rediriger une demande d'accès à un port depuis l'adresse publique utilisée pour le SNAT (Source Network Address Translation) vers une machine virtuelle connectée à INTERNET via un segment avec du DNAT (Destination Network Address Translation).
 
-Dans notre exemple nous allons rediriger les requêttes vers l'adresse publique sur le port 2222 
+Dans notre exemple nous allons rediriger les requêttes vers l'adresse publique sur le port 2222 à destination du port 22 d'une machine virtuelle linux connectée au segment **ov1-segment** qui possède l'adresse IP 192.168.1.1. comme indiquée ci-dessous dans l'interface vSphere.
+
+![Display VM parameter](images/00-display-vm-parameter01.png){.thumbnail}
 
 > [Primary]
->  Dans la  version ALPHA de NSX-T les adresses publiques fournies utilisent un masque à /29 ce qui permet l'utilisation de 6 adresses publiques, certaines sont utilisées pour le fonctionnement de NSX-T. Il ne reste plus qu'une adresse utilisable pour des redirections des ports, dans les futures versions le masque sera à /28 et qui permettra l'utilisation de 14 adresses au total.
+>  Dans la  version ALPHA de NSX-T les adresses publiques fournies utilisent un masque à /29 ce qui permet l'utilisation de 6 adresses publiques, certaines sont utilisées pour le fonctionnement de NSX-T. Il ne reste plus qu'une adresse utilisable pour des redirections des ports. Dans les futures versions le masque sera à /28 qui contiendra 14 adresses au total.
 
 Depuis l'interface NSX-T cliquez sur `Networking`{.action} en haut à gauche.
 
