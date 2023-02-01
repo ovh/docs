@@ -6,7 +6,7 @@ section: NSX-T
 order: 05
 ---
 
-**Dernière mise à jour le 31/01/2023**
+**Dernière mise à jour le 01/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -14,7 +14,7 @@ order: 05
 
 ## Objectif
 
-**Comment faire rediriger un port entrant depuis une adresse publique vers une machine virtuelle**
+**Montrer comment rediriger un port entrant depuis une adresse publique vers une machine virtuelle.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -32,9 +32,12 @@ order: 05
 
 ## En pratique
 
-Nous allons voir comment rediriger une demande d'accès à un port depuis l'adresse publique utilisé pour le SNAT vers une machine virtuelle à l'intérieur d'un segment avec du NAT (Network Address Translation).
+Nous allons voir comment rediriger une demande d'accès à un port depuis l'adresse publique utilisée pour le SNAT (Source Network Address Translation) vers une machine virtuelle connectée à INTERNET via un segment avec du DNAT (Destination Network Address Translation).
 
-Dans notre exemple nous allons rediriger les requettes à destination de l'adresse publique sur le port 2222 vers une machine virtuelle sous linux en 192.168.1.1 sur le port 22 (port SSH) en limitant l'accès uniquement à un réseau public disponible. 
+Dans notre exemple nous allons rediriger les requêttes vers l'adresse publique sur le port 2222 
+
+> [Primary]
+>  Dans la  version ALPHA de NSX-T les adresses publiques fournies utilisent un masque à /29 ce qui permet l'utilisation de 6 adresses publiques, certaines sont utilisées pour le fonctionnement de NSX-T. Il ne reste plus qu'une adresse utilisable pour des redirections des ports, dans les futures versions le masque sera à /28 et qui permettra l'utilisation de 14 adresses au total.
 
 Depuis l'interface NSX-T cliquez sur `Networking`{.action} en haut à gauche.
 
@@ -62,7 +65,7 @@ Ensuite cliquez sur `Set`{.action} sous la colonne **Apply To**.
 
 ![01 NAT redirection 04](images/01-nat-redirection04.png){.thumbnail}
 
-Sélectionnez les `deux int-edge`{.action} et cliquez sur `APPLY`{.action}.
+Sélectionnez les deux `int-edge`{.action} et cliquez sur `APPLY`{.action}.
 
 ![01 NAT redirection 05](images/01-nat-redirection05.png){.thumbnail}
 
@@ -96,11 +99,11 @@ Cliquez sur `SAVE`{.action} pour activer la règle.
 
 ![01 NAT redirection 11](images/01-nat-redirection11.png){.thumbnail}
 
-La redirection est active car son status est sur **Success**.
+La redirection est active.
 
 ![01 NAT redirection 12](images/01-nat-redirection12.png){.thumbnail}
 
-Vous pouvez faire un test en executant cette commande :
+Exécutez cette commande pour faire un test depuis un site distant du cluster :
 
 ```bash
 ssh root@203.0.113.1 -p 2222
@@ -110,7 +113,7 @@ ssh root@203.0.113.1 -p 2222
 
 [Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
 
-[Gestion des segment dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+[Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
