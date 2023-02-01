@@ -35,7 +35,7 @@ Grafana nodes have to be in the same region. Multi-AZ is currently not supported
 
 The Public Cloud Databases offer supports the following Grafana versions:
 
-- Grafana 8.3
+- Grafana 9.1
 
 You can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
 

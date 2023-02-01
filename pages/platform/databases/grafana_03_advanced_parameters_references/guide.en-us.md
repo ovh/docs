@@ -42,13 +42,13 @@ Please refer to this [guide](https://docs.ovh.com/us/en/publiccloud/databases/ad
 
 Below you can find a summary of every configuration option available for Grafana service:
 
-| Parameter | Value Type | Description |
-|:---|:---:|:---|
-| `smtp_server.from_address` | string | Address used for sending emails |
-| `smtp_server.host` | string | Server hostname or IP |
-| `smtp_server.port` | long | SMTP server port |
-| `smtp_server.skip_verify` | boolean | Skip verifying server certificate. Defaults to false |
-| `smtp_server.starttls_policy` | string | Either OpportunisticStartTLS, MandatoryStartTLS or NoStartTLS. Default is OpportunisticStartTLS. |
+| Parameter | Value Type | Minimum | Maximum | Values | Description |
+|:---|:---:|:---:|:---:|:---|:---|
+| `smtp_server.from_address` | string | | | | Address used for sending emails |
+| `smtp_server.host` | string | | | | Server hostname or IP |
+| `smtp_server.port` | long | 1 | 65535  | | SMTP server port |
+| `smtp_server.skip_verify` | boolean | | | | Skip verifying server certificate. Defaults to false |
+| `smtp_server.starttls_policy` | string | | | "MandatoryStartTLS", "NoStartTLS", "OpportunisticStartTLS" | Either OpportunisticStartTLS, MandatoryStartTLS or NoStartTLS. Default is OpportunisticStartTLS. |
 
 
 ## Go further

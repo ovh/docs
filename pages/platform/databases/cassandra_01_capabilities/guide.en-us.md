@@ -130,7 +130,6 @@ As of today, you can't export logs and metrics, nor plug them into a remote tool
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 
-
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.

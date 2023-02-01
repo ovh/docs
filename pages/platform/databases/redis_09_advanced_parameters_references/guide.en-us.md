@@ -46,18 +46,18 @@ Please refer to this [guide](https://docs.ovh.com/us/en/publiccloud/databases/ad
 
 Below you can find a summary of every configuration option available for Redis service:
 
-| Parameter | Value Type | Description |
-|:---|:---:|:---|
-| `redis_acl_channels_default` | string | Determines default pub/sub channels' ACL for new users if ACL is not supplied. When this option is not defined, all_channels is assumed to keep backward compatibility. This option doesn't affect Redis configuration acl-pubsub-default. |
-| `redis_io_threads` | long | Redis IO thread count |
-| `redis_lfu_decay_time` | long | LFU maxmemory-policy counter decay time in minutes |
-| `redis_lfu_log_factor` | long | Counter logarithm factor for volatile-lfu and allkeys-lfu maxmemory-policies |
-| `redis_notify_keyspace_events` | string | Set notify-keyspace-events option |
-| `redis_number_of_databases` | long | Set number of redis databases. Changing this will cause a restart of redis service. |
-| `redis_persistence` | string | When persistence is 'rdb', Redis does RDB dumps each 10 minutes if any key is changed. Also RDB dumps are done according to backup schedule for backup purposes. When persistence is 'off', no RDB dumps and backups are done, so data can be lost at any moment if service is restarted for any reason, or if service is powered off. Also service can't be forked. |
-| `redis_pubsub_client_output_buffer_limit` | long | Set output buffer limit for pub / sub clients in MB. The value is the hard limit, the soft limit is 1/4 of the hard limit. When setting the limit, be mindful of the available memory in the selected service plan. |
-| `redis_ssl` | boolean | Require SSL to access Redis |
-| `redis_timeout` | long | Redis idle connection timeout in seconds |
+| Parameter | Value Type | Minimum | Maximum | Values | Description |
+|:---|:---:|:---:|:---:|:---|:---|
+| `redis_acl_channels_default` | string | | | "allchannels", "resetchannels" | Determines default pub/sub channels' ACL for new users if ACL is not supplied. When this option is not defined, all_channels is assumed to keep backward compatibility. This option doesn't affect Redis configuration acl-pubsub-default. |
+| `redis_io_threads` | long | 1 | 32 | | Redis IO thread count |
+| `redis_lfu_decay_time` | long | 1 | 120 | | LFU maxmemory-policy counter decay time in minutes |
+| `redis_lfu_log_factor` | long | 0 | 100 | | Counter logarithm factor for volatile-lfu and allkeys-lfu maxmemory-policies |
+| `redis_notify_keyspace_events` | string | | | | Set notify-keyspace-events option |
+| `redis_number_of_databases` | long | 1 | 128 | | Set number of redis databases. Changing this will cause a restart of redis service. |
+| `redis_persistence` | string | | | "off", "rdb" | When persistence is 'rdb', Redis does RDB dumps each 10 minutes if any key is changed. Also RDB dumps are done according to backup schedule for backup purposes. When persistence is 'off', no RDB dumps and backups are done, so data can be lost at any moment if service is restarted for any reason, or if service is powered off. Also service can't be forked. |
+| `redis_pubsub_client_output_buffer_limit` | long | 32 | 512 | | Set output buffer limit for pub / sub clients in MB. The value is the hard limit, the soft limit is 1/4 of the hard limit. When setting the limit, be mindful of the available memory in the selected service plan. |
+| `redis_ssl` | boolean | | | | Require SSL to access Redis |
+| `redis_timeout` | long | 0 | 31536000 | | Redis idle connection timeout in seconds |
 
 
 ## Go further
