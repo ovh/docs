@@ -10,7 +10,7 @@ order: 06
 
 ## Objectif
 
-Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, les mettre en ligne et changer le thème de votre site web avec le Content Managment System (CMS) **WordPress**. Vous pourrez réaliser votre site web avec un large choix de thématiques&nbsp;: site web de votre entreprise, blog, faire connaître votre activité ou vos passions, sans connaissances particulières en programmation.
+Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, les mettre en ligne et changer le thème de votre site web avec le Content Managment System (CMS) **WordPress**. Vous pourrez réaliser votre site web sans connaissances particulières en programmation avec un large choix de thématiques comme un site web d'entreprise, un blog, faire connaître votre activité ou votre passion.
 
 > [!warning]
 >
@@ -30,9 +30,9 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 
 ## En pratique
 
-Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL]((https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement)) pour le nom de domaine avec lequel vous souhaitez utiliser votre site web.
+Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL]((https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement)) sur le nom de domaine associé à votre site web.
 
-Lors de l'installation de votre CMS en 1-clic, vous avez reçu un e-mail contenant des éléments nécessaires à la poursuite de ce tutoriel&nbsp;:
+Lors de l'installation de votre CMS en 1-clic, vous avez reçu un e-mail contenant les éléments nécessaires à la poursuite de ce tutoriel&nbsp;:
 
 - le lien d'accès à l'interface d'administration
 - le nom de l'administrateur
@@ -46,9 +46,9 @@ Rendez-vous sur le lien d'accès à l'interface d'administration communiqué par
 
 ![WordPress - Admin login](images/wordpress_first_steps%5B1%5D.png){.thumbnail}
 
-> [!warning]
+> [!primary]
 > 
-> Sur cette page d'accueil, vous avez la possibilité de changer la langue par défaut de l'interface de **WordPress**. Rendez-vous dans le menu déroulant situé en bas de page, sélectionnez la langue de votre choix puis en valider avec le bouton «&nbsp;Change&nbsp;». La langue peut être changée ultérieurement.
+> Sur cette page d'accueil, vous avez la possibilité de changer la langue par défaut de l'interface de **WordPress**. Rendez-vous dans le menu déroulant situé en bas de page, sélectionnez la langue de votre choix puis valider avec le bouton `Change`{.action}. La langue peut être changée ultérieurement.
 > 
 
 Saisissez le login (ou le «&nbsp;Nom de l'administrateur&nbsp;») qui vous a été fourni par e-mail ainsi que le «&nbsp;Mot de passe WordPress&nbsp;» dans le même e-mail. Vous arrivez alors sur votre tableau de bord&nbsp;:
@@ -59,21 +59,21 @@ Saisissez le login (ou le «&nbsp;Nom de l'administrateur&nbsp;») qui vous a é
 
 Les **thèmes WordPress** sont des ensembles de fichiers permettant de modifier la présentation de votre site web sans en modifier le contenu. Il existe de nombreux thèmes disponibles sur internet, gratuits comme payants, avec des thématiques différentes (sites web, blogs, e-commerce, presse en ligne, ...).
 
-Pour modifier votre thème, placez-vous dans le menu de gauche de votre Tableau de bord, rendez-vous dans «&nbsp;Apparence&nbsp;» puis cliquez sur «&nbsp;Thèmes&nbsp;»&nbsp;:
+Pour modifier votre thème, placez-vous dans le menu de gauche de votre Tableau de bord, cliquez sur `Apparence`{.action} puis sur `Thèmes`{.action} :
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps%5B3%5D.png){.thumbnail}
 
-Choisissez un thème parmi ceux proposés et cliquez sur «&nbsp;Activer&nbsp;»&nbsp;:
+Choisissez un thème parmi ceux proposés et cliquez sur `Activer`{.action} :
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps%5B4%5D.png){.thumbnail}
 
-Vous pouvez constater le résultat en vous rendant sur votre site web avec votre nom de domaine.
+Vous pouvez visualiser le résultat en vous rendant sur votre site web avec votre nom de domaine.
 
 ### Écrire un article
 
 WordPress vous permet de créer facilement du contenu sans avoir de connaissance en développement web.
 
-Pour créer un article, rendez-vous dans la section «&nbsp;Articles&nbsp;» présente dans le menu à gauche puis cliquez sur «&nbsp;Ajouter&nbsp;»&nbsp;:
+Pour créer un article, rendez-vous dans la section `Articles`{.action} présente dans le menu à gauche puis cliquez sur `Ajouter`{.action}:
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps%5B5%5D.png){.thumbnail}
 
@@ -81,21 +81,21 @@ Depuis la version 5, **WordPress** propose une interface pour simplifier la réd
 
 ![WordPress - Gutenberg](images/wordpress_first_steps%5B6%5D.png){.thumbnail}
 
-Cliquez sur «&nbsp;Saisissez le titre&nbsp; pour ajouter un titre à votre page :
+Cliquez sur `Saisissez le titre`{.action} pour ajouter un titre à votre page :
 
 ![WordPress - Gutenberg, add title](images/wordpress_first_steps%5B7%5D.png){.thumbnail}
 
-Pour ajouter du contenu, cliquez sur le signe «&nbsp;+&nbsp;» et choisissez ce que vous souhaitez insérer&nbsp;:
+Pour ajouter du contenu, cliquez sur le signe `+`{.action} et choisissez ce que vous souhaitez insérer&nbsp;:
 
 ![WordPress - Gutenberg, add block](images/wordpress_first_steps%5B8%5D.png){.thumbnail}
 
 Sur la droite de votre page, trois liens vous permettent d'effectuer les actions suivantes&nbsp;:
 
-- enregistrer le brouillon, que vous pouvez faire avec Ctrl+S;
-- prévisualiser;
-- publier sur votre site web.
+- `Enregistrer le brouillon`{.action}, que vous pouvez faire avec Ctrl+S;
+- `prévisualiser`{.action};
+- `Publier`{.action} sur votre site web.
 
-Dans notre **exemple**, cliquez sur «&nbsp;Visualiser&nbsp;», puis «&nbsp;Prévisualiser dans un nouvel onglet&nbsp;». Choisissez le type d'appareil sur lequel faire le rendu (PC, tablette ou smartphone)&nbsp;:
+Dans notre **exemple**, cliquez sur `Visualiser`{.action}, puis `Prévisualiser dans un nouvel onglet`{.action} . Choisissez le type d'appareil sur lequel faire le rendu (PC, tablette ou smartphone)&nbsp;:
 
 ![WordPress - Preview](images/wordpress_first_steps%5B10%5D.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Pour revenir à l'interface d'administration de **WordPress**, cliquez sur l'ic�
 
 ### Gérer les catégories
 
-**WordPress** permet de définir des catégories et d'associer vos articles avec une ou plusieurs d'entre elles. Pour gérer les catégories de votre site web, rendez-vous dans la section «&nbsp;Articles&nbsp;», puis dans la section «&nbsp;Catégories&nbsp;»&nbsp;:
+**WordPress** permet de définir des catégories et d'associer vos articles avec une ou plusieurs d'entre elles. Pour gérer les catégories de votre site web, rendez-vous dans la section `Articles`{.action}, puis dans la section `Catégories`{.action} :
 
 ![WordPress - Categories](images/wordpress_first_steps%5B11%5D.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Renseignez maintenant le formulaire pour ajouter une nouvelle catégorie&nbsp;:
 
 ![WordPress - Categories filled](images/wordpress_first_steps%5B12%5D.png){.thumbnail}
 
-Une fois ces informations indiquées, cliquez sur le bouton «&nbsp;Ajouter une nouvelle catégorie&nbsp;»&nbsp;:
+Une fois ces informations indiquées, cliquez sur le bouton `Ajouter une nouvelle catégorie`{.action}:
 
 ![WordPress - Categories added](images/wordpress_first_steps%5B13%5D.png){.thumbnail}
 
@@ -126,11 +126,11 @@ Vous avez la possibilité de gérer la hiérarchie des vos catégories. Une nouv
 
 ### Affecter une catégorie à un article
 
-Pour affecter un article à une ou plusieurs catégories, cliquez sur «&nbsp;Articles&nbsp;» (Posts). Vous disposerez de la liste contenant tous les articles et leurs statuts. Survolez le titre de l'article que vous souhaitez classer puis cliquez sur «&nbsp;Modification rapide&nbsp;»&nbsp;:
+Pour affecter un article à une ou plusieurs catégories, cliquez sur `Articles` (Posts). Vous disposerez de la liste contenant tous les articles et leurs statuts. Survolez le titre de l'article que vous souhaitez classer puis cliquez sur `Modification rapide`{.action} :
 
 ![WordPress - Categorize a post](images/wordpress_first_steps%5B15%5D.png){.thumbnail}
 
-Vous pouvez alors modifier les catégories en cochant ou décochant les éléments listés dans la colonne «&nbsp;Catégories&nbsp;»&nbsp;:
+Vous pouvez alors modifier les catégories en cochant ou décochant les éléments listés dans la colonne `Catégories`{.action} :
 
 ![WordPress - Set new categories to an existing post](images/wordpress_first_steps%5B16%5D.png){.thumbnail}
 
@@ -143,16 +143,16 @@ Vous pouvez alors modifier les catégories en cochant ou décochant les élémen
 
 Les pages sont à distinguer des articles. Elles servent essentiellement à écrire des contenus qui n'évolueront pas ou peu dans le temps comme des mentions légales, des conditions générales d'utilisation, etc.
 
-Rendez-vous sur la page «&nbsp;Pages&nbsp;»&nbsp;:
+Rendez-vous sur la page `Pages`{.action} :
 
 ![WordPress - Go to pages](images/wordpress_first_steps%5B17%5D.png){.thumbnail}
 
->[!warning]
+>[!primary]
 >
 > Par défaut, il existe une page qui est générée à l'installation de **WordPress**. Pour des raisons de lisibilité, cette page a été supprimée de l'exemple.
 >
 
-Cliquez sur «&nbsp;Ajouter&nbsp;». Vous retrouvez alors l'éditeur Gutenberg&nbsp;:
+Cliquez sur `Ajouter`{.action}. Vous retrouvez alors l'éditeur Gutenberg&nbsp;:
 
 ![WordPress - Pages, Gutenberg page builder](images/wordpress_first_steps%5B18%5D.png){.thumbnail}
 
@@ -166,17 +166,17 @@ Vous pouvez revenir sur la page d'accueil de votre site web, vous disposerez d'u
 
 ### Améliorer ses permaliens
 
-Par défaut, lien de vos contenus **WordPress** sont écrits avec une syntaxe de type `paramètre=valeur`, `valeur` étant un nombre entier qui n'est pas explicite. La modification de l'écriture des permaliens permet d'avoir des URLs avec un format plus explicite. Vos URLs seront plus lisibles et le référencement naturel de votre site  web s'en trouvera amélioré.
+Par défaut, les liens de vos pages **WordPress** sont écrits avec une syntaxe de type `paramètre=valeur`, `valeur` étant un nombre entier qui n'est pas explicite. La modification de l'écriture des permaliens permet d'avoir des URLs avec un format plus explicite. Vos URLs seront plus lisibles et le référencement naturel de votre site  web s'en trouvera amélioré.
 
-Sur la page d'accueil du tableau de bord, rendez-vous sur «&nbsp;Réglages&nbsp;» puis sur «&nbsp;Permaliens&nbsp;»&nbsp;:
+Sur la page d'accueil du tableau de bord, rendez-vous sur `Réglages`{.action} puis sur `Permaliens`{.action}:
 
 ![WordPress - Settings/Permalinks](images/wordpress_first_steps%5B21%5D.png){.thumbnail}
 
-Vous avez alors le choix entre plusieurs types de permaliens. Sélectionnez le «&nbsp;Titre de la publication&nbsp;» puis validez en bas de la page&nbsp;:
+Vous avez alors le choix entre plusieurs types de permaliens. Sélectionnez le « Titre de la publication » puis validez en bas de la page&nbsp;:
 
 ![WordPress - Settings/Permalinks, select post name pattern](images/wordpress_first_steps%5B21%5D.png){.thumbnail}
 
-Vos liens seront alors construits à partir du slug précédemment indiqué lors de l'édition de vos articles et de vos pages.
+Vos liens seront alors construits à partir du slug précédemment renseigné lors de l'édition de vos articles et de vos pages.
 
 ## Aller plus loin <a name="go-further"></a>
 
