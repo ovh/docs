@@ -26,7 +26,7 @@ order: 05
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX-T** déployé avec deux segment configurés dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
+- Avoir **NSX-T** déployé avec un segment configuré dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
 - Avoir une machine virtuelle sous Linux avec l'accès en SSH fonctionnel sur le réseau privé
 
 
@@ -34,7 +34,7 @@ order: 05
 
 Nous allons voir comment rediriger une demande d'accès à un port depuis l'adresse publique utilisée pour le SNAT (Source Network Address Translation) vers une machine virtuelle connectée à INTERNET via un segment avec du DNAT (Destination Network Address Translation).
 
-Dans notre exemple nous allons rediriger les requêttes vers l'adresse publique sur le port 2222 à destination du port 22 d'une machine virtuelle linux connectée au segment **ov1-segment** qui possède l'adresse IP 192.168.1.1. comme indiquée ci-dessous dans l'interface vSphere.
+Dans notre exemple nous allons rediriger les requêttes vers l'adresse publique sur le port 2222 à destination du port 22 d'une machine virtuelle linux connectée au segment **ov1-segment** qui possède l'adresse IP 192.168.1.1 comme indiquée ci-dessous dans l'interface vSphere. L'accès ne sera autorisé que depuis une adresse ip publique distante.
 
 ![Display VM parameter](images/00-display-vm-parameter01.png){.thumbnail}
 
@@ -56,18 +56,18 @@ Notez l'adresse IP de la règle de SNAT par défaut dans la colonne **Translated
 Completez ces informations : 
 
 * **Name** : saisissez `to-ssh-linux`.
-* **Action** : choisissez `NAT`.
+* **Action** : choisissez `DNAT`.
 * **Source IP** : Saisissez une adresse IP ou un range d'adresse IP qui pourra se connecter à ce port.
-* **Destination IP** : Saisissez l'adresse `IP publique` qui sert pour le SNAT par défaut.
+* **Destination IP** : Saisissez l'adresse `IP publique` que vous avez noté depuis la règle existante.
 * **Destination Port** : Port utilisé lors de l'accès à l'adresse publique , ici `2222`.
 * **Firewall** : Sélectionnez `Match internal Address`.
-* **Translated IP** : Saisissez l'adresse IP privée de la machine virtuelle LINUX derrière une segment comme `192.168.1.1`.
+* **Translated IP** : Saisissez l'adresse IP privée de la machine virtuelle LINUX `192.168.1.1`.
 
 Ensuite cliquez sur `Set`{.action} sous la colonne **Apply To**.
 
 ![01 NAT redirection 04](images/01-nat-redirection04.png){.thumbnail}
 
-Sélectionnez les deux `int-edge`{.action} et cliquez sur `APPLY`{.action}.
+Sélectionnez les deux `T0-interface`{.action} et cliquez sur `APPLY`{.action}.
 
 ![01 NAT redirection 05](images/01-nat-redirection05.png){.thumbnail}
 
@@ -105,10 +105,10 @@ La redirection est active.
 
 ![01 NAT redirection 12](images/01-nat-redirection12.png){.thumbnail}
 
-Exécutez cette commande pour faire un test depuis un site distant du cluster :
+Exécutez cette commande à partir d'un site distant pour tester la redirection :
 
 ```bash
-ssh root@203.0.113.1 -p 2222
+ssh root@nsxt-publicaddress -p 2222
 ```
 
 ## Aller plus loin
