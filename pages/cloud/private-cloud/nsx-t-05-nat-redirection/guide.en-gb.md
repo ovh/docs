@@ -1,12 +1,12 @@
 ---
-title: Securing Inter Segment
-slug: nsx-t-intersegment-secure
-excerpt: Comment sécuriser les accès entre segment
+title: Port redirection with NAT on NSX-T
+slug: nsx-t-nat-redirection
+excerpt: How to redirect an incoming port from a public address to a virtual machine
 section: NSX-T
-order: 04
+order: 05
 ---
 
-**Last updated 30th January 2023**
+**Last updated 01st February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -15,7 +15,7 @@ order: 04
 
 ## Objectif
 
-**How to Configure a DHCP Server in a Segment**
+**Show how to redirect an incoming port from a public address to a virtual machine.**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -27,99 +27,95 @@ order: 04
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Having **NSX-T** deployed with two segments configured in your NSX-T configuration, you can use this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
+- Having **NSX-T** deployed with one segment configured in your NSX-T configuration, you can use this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
 
 ## Instructions
 
-The networks in each segment behind the **ovh-T1-gw** are not isolated by default.
+We will see how to redirect a port access request from the public address used for SNAT (Source Network Address Translation) to an INTERNET-connected virtual machine via a segment with DNAT (Destination Network Address Translation).
 
-We will create a rule that isolates these two segments from each other from their subnet addresses :
+In our example, we will redirect requests to the public address on port 2222 to port 22 of a linux virtual machine connected to the **ov1-segment** segment that has the IP address 192.168.1.1 as shown below in the vSphere interface. Access will only be allowed from one remote public IP address.s
 
-- ov1-segment : 192.168.1.0/24.
-- ov2-segment : 192.168.2.0/24.
+![Display VM parameter](images/00-display-vm-parameter01.png){.thumbnail}
 
-Through the **NSX-T** interface select the `Security`{.action} tab, click `Distributed Firewall`{.action} in the vertical menu bar on the left and click `+ ADD POLICY`{.action}.
+> [Primary]
+>  In the ALPHA version of NSX-T the public addresses provided use a mask at /29 which allows the use of 6 public addresses, some are used for the operation of NSX-T. There is only one address left that can be used for port redirections. In future versions the mask will be /28 which will contain 14 addresses in total.
 
-![01 go to distributed firewall security01](images/01-goto-distributed-firewall-security01.png){.thumbnail}
+In the NSX-T interface, click on `Networking`{.action} in the top left-hand corner.
 
-Go to the `Category Specific Rules`{.action} tab and click `ADD POLICY`{.action}.
+![01 NAT redirection 01](images/01-nat-redirection01.png){.thumbnail}
 
-![02 Configure policy 01](images/02-configure-policy01.png){.thumbnail}
+Click on `NAT`{.action} in the top left-hand corner of the vertical menu bar.
 
-In the **Name** column, type `ov1 <-> ov2 isolation`{.action}.
+![01 NAT redirection 02](images/01-nat-redirection02.png){.thumbnail}
 
-![02 Configure policy 02](images/02-configure-policy02.png){.thumbnail}
+Note the IP address of the SNAT rule by default in the **Translated IP Port** column, we will reuse it in our redirection rule. Then click on `ADD NAT RULE`{.action} on the left.
 
-To the left of your strategy, click on the `three small vertical dots`{.action} and choose `Add Rule`{.action} from the menu.
+![01 NAT redirection 03](images/01-nat-redirection03.png){.thumbnail}
 
-![02 Configure policy 03](images/02-configure-policy03.png){.thumbnail}
+Fill in this information :
 
-Type `drop ov1 -> ov2`{.action} in the **Name** column.
+* **Name** : Type `to-ssh-linux'.
+* **Action** : Choose `DNAT`.
+* **Source IP** : Enter the remote IP address that will have access to this port on the public address.
+* **Destination IP** : Enter the `public IP` address you have written down from the existing rule.
+* **Destination Port** : Port used when accessing public address, here `2222'.
+* **Firewall** : Select Match internal Address.
+* **Translated IP** : Enter the private IP address of the LINUX virtual machine '192.168.1.1'.
 
-![02 Configure policy 04](images/02-configure-policy04.png){.thumbnail}
+Then click `Set`{.action} under the **Apply To** column.
 
-Click on the `pen`{.action} in the **Sources** column.
+![01 NAT redirection 04](images/01-nat-redirection04.png){.thumbnail}
 
-![02 Configure policy 05](images/02-configure-policy05.png){.thumbnail}
+Select both `T0-interface`{.action} and click `APPLY`{.action}.
 
-Choose `IP Addresses`{.action}, enter `192.168.1.0/24`{.action} which is the subnet of the ov1-segment segment and click `APPLY`{.action}.
+![01 NAT redirection 05](images/01-nat-redirection05.png){.thumbnail}
 
-![02 Configure policy 06](images/02-configure-policy06.png){.thumbnail}
+Click on `the three small vertical dots`{.action} to the right of **Select Service** and choose `Create New`{.action}.
 
-Click on the `pen`{.action} in the **Destinations** column.
+![01 NAT redirection 06](images/01-nat-redirection06.png){.thumbnail}
 
-![02 Configure policy 07](images/02-configure-policy07.png){.thumbnail}
+Type `NAT22`{.action} under the **Name** column and click `Set`{.action}.
 
-Choose `IP Addresses`{.action}, enter `192.168.2.0/24`{.action} which is the subnet of the ov2 segment and click `APPLY`{.action}.
+![01 NAT redirection 07](images/01-nat-redirection07.png){.thumbnail}
 
-![02 Configure policy 08](images/02-configure-policy08.png){.thumbnail}
+Click `ADD SERVICE ENTRY`{.action}.
 
-Select `Drop`{.action} in the **Action** column.
+![01 NAT redirection 08](images/01-nat-redirection08.png){.thumbnail}
 
-![02 Configure policy 09](images/02-configure-policy09.png){.thumbnail}
+Fill in these values :
 
-Click the `three small vertical dots`{.action} to the left of your policy and choose `Add Rule`{.action} from the menu.
+ **Name** : type `SSH22`.
+* **Action** : choose `TCP`.
+* **Destination Ports** : Enter `22`.
 
-![02 Configure policy 10](images/02-configure-policy10.png){.thumbnail}
+Then click `APPLY`{.action}.
 
-Type `drop ov2 -> ov1`{.action} in the **Name** column.
+![01 NAT redirection 09](images/01-nat-redirection09.png){.thumbnail}
 
-![02 Configure policy 11](images/02-configure-policy11.png){.thumbnail}
+Click `SAVE`{.action}.
 
-Click on the `pen`{.action} in the **Sources** column.
+![01 NAT redirection 10](images/01-nat-redirection10.png){.thumbnail}
 
-![02 Configure policy 12](images/02-configure-policy12.png){.thumbnail}
+Click `SAVE`{.action} to activate the rule.
 
-Choisissez `IP Addresses`{.action}, saisissez `192.168.2.0/24`{.action} qui est le sous-réseau du segment ov2-segment et cliquez sur `APPLY`{.action}.
+![01 NAT redirection 11](images/01-nat-redirection11.png){.thumbnail}
 
-![02 Configure policy 13](images/02-configure-policy13.png){.thumbnail}
+Redirection is active.
 
-Choose `IP Addresses`{.action}, enter `192.168.2.0/24`{.action} which is the subnet of the ov2 segment and click `APPLY`{.action}.
+![01 NAT redirection 12](images/01-nat-redirection12.png){.thumbnail}
 
-![02 Configure policy 14](images/02-configure-policy14.png){.thumbnail}
+Run this command from a remote site to test the redirection :
 
-Choose `IP Addresses`{.action}, enter `192.168.1.0/24`{.action} which is the subnet of the ov1-segment segment and click `APPLY`{.action}.
-
-![02 Configure policy 15](images/02-configure-policy15.png){.thumbnail}
-
-Select `Drop`{.action} in the **Action** column.
-
-![02 Configure policy 16](images/02-configure-policy16.png){.thumbnail}
-
-Click `PUBLISH`{.action} to activate the rule.
-
-![02 Configure policy 17](images/02-configure-policy17.png){.thumbnail}
-
-In the **Action** column, a green circle with *Success* indicates that the rule is active. communication between the two segments will no longer be possible.
-
-![02 Configure policy 18](images/02-configure-policy18.png){.thumbnail}
+```bash
+ssh root@nsxt-publicaddress -p 2222
+```
 
 
 ## Go further <a name="gofurther"></a>
 
 [Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
 
-[Segment management](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+[Segment management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
