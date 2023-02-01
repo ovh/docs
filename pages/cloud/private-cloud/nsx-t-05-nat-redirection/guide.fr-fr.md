@@ -34,7 +34,7 @@ order: 05
 
 Nous allons voir comment rediriger une demande d'accès à un port depuis l'adresse publique utilisée pour le SNAT (Source Network Address Translation) vers une machine virtuelle connectée à INTERNET via un segment avec du DNAT (Destination Network Address Translation).
 
-Dans notre exemple nous allons rediriger les requêttes vers l'adresse publique sur le port 2222 à destination du port 22 d'une machine virtuelle linux connectée au segment **ov1-segment** qui possède l'adresse IP 192.168.1.1 comme indiquée ci-dessous dans l'interface vSphere. L'accès ne sera autorisé que depuis une adresse ip publique distante.
+Dans notre exemple nous allons rediriger les requêtes vers l'adresse publique sur le port 2222 à destination du port 22 d'une machine virtuelle linux connectée au segment **ov1-segment** qui possède l'adresse IP 192.168.1.1 comme indiquée ci-dessous dans l'interface vSphere. L'accès ne sera autorisé que depuis une adresse ip publique distante.
 
 ![Display VM parameter](images/00-display-vm-parameter01.png){.thumbnail}
 
