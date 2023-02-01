@@ -107,9 +107,11 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 {
     "region": "GRA5",
     "name": "my-super-cluster",
+    "kubeProxyMode": "ipvs",
     "customization": {
       "kubeProxy":{
-         "iptables":{
+          // All fields are optional
+          "iptables":{
             "minSyncPeriod":"PT1S",
             "syncPeriod":"PT30S"
          },
@@ -136,9 +138,16 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 
 Both IPVS and iptables specific configuration can be set at the same time and kube-proxy will select the one to use according the mode value.
 
-If a field is not specified in the API payload, it will not be present in the config file and let kube-proxy use it's default value (kubeProxyMode default is 'iptables').
+If a field is not specified in the API payload, it will not be present in the config file and let kube-proxy use it's default value (`kubeProxyMode` default is 'iptables').
+
+You can take a look to the [Kube-proxy default values](https://github.com/kubernetes/kubernetes/blob/master/pkg/proxy/apis/config/v1alpha1/defaults.go#L38) for more information.
 
 - Reset a Kubernetes cluster (all Kubernetes data will be erased (pods, services, configuration, etc), nodes will be either deleted or reinstalled)
+
+> [!primary]
+>
+> `kubeProxyMode` cannot be modified, you need to reset your Kubernetes cluster.
+>
 
 > [!api]
 >
@@ -149,6 +158,7 @@ If a field is not specified in the API payload, it will not be present in the co
 {
     "region": "GRA5",
     "name": "my-super-cluster",
+    "kubeProxyMode": "ipvs",
     "customization": {
       "kubeProxy":{
          "iptables":{
@@ -173,6 +183,10 @@ Both kubeProxyMode and customization.* can be modified on cluster reset with the
 If these fields are not specified, it will reset to default value (ipvs for kubeProxyMode and empty customization).
 
 - Update only `kubeProxy` and keeping existing `apiServer` customization if any:
+
+> [!primary]
+>
+> `kubeProxyMode` cannot be modified by updating an existing cluster, it can only be set on cluster creation and reset.
 
 > [!api]
 >
