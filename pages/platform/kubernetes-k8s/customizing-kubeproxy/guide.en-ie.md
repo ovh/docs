@@ -33,7 +33,7 @@ section: Network
 
 The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them.
 
-The kube-proxy Kubernete's component (which runs on each Nodes and allows network comunication to Pods) with iptables is actually a bottleneck to scale the cluster to a high number of Nodes so at OVHcloud we decided to reduce this bottleneck and allows you to use kube-proxy with IPVS.
+The kube-proxy Kubernete's component (which runs on each Nodes and allows network comunication to Pods) with iptables is actually a bottleneck to scale the cluster to a high number of Nodes so at OVHcloud we decided to reduce this bottleneck and allow you to use kube-proxy with IPVS.
 
 [IPVS (IP Virtual Server)](https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/) is built on top of the Netfilter and implements transport-layer Load Balancing as part of the Linux kernel.
 
@@ -69,6 +69,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 >
 
 **Result:**
+
 ```json
 {
     "apiServer": {
@@ -128,15 +129,15 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the
 
 > [!primary]
 >
-> This API call generate a `configMap` that will be used by kube-proxy component.
+> This API call generate a `configMap` that will be used by the kube-proxy component.
 >
-> To access to this `configMap` you can execute `kubectl get cm kube-proxy -n kube-system -o yaml` command.
+> To access this `configMap` you can execute the `kubectl get cm kube-proxy -n kube-system -o yaml` command.
 >
 > The kube-proxy `configMap` in new Kubernetes clusters includes `config.conf` entry.
 
-Both IPVS and iptables specific configuration can be set at the same time and kube-proxy will select the one to use according the mode value.
+Both IPVS and iptables specific configuration can be set at the same time and kube-proxy will select the one to use according to the mode value.
 
-If a field is not specified in the API payload, it will not be present in the config file and let kube-proxy use it's default value (`kubeProxyMode` default is 'iptables').
+If a field is not specified in the API payload, it will not be present in the config file and let kube-proxy use its default value (`kubeProxyMode` default is 'iptables').
 
 You can take a look to the [Kube-proxy default values](https://github.com/kubernetes/kubernetes/blob/master/pkg/proxy/apis/config/v1alpha1/defaults.go#L38) for more information.
 
@@ -227,9 +228,11 @@ If these fields are not specified, it will reset to default value (ipvs for kube
 	}
 }
 ```
+
 > [!primary]
 >
 > Updating customization.kubeProxy will trigger following actions:
+>
 > - apply updated configMap
 > - then rollout restart kube-proxy so it uses the new configuration
 
