@@ -1,5 +1,5 @@
 ---
-title: 'Attiva una licenza Windows per un'istanza in modalità privata'
+title: "Attiva una licenza Windows per un'istanza in modalità privata"
 slug: activate-windows-licence-private-mode-instance
 excerpt: Come attivare una licenza Windows su un'istanza in modalità privata
 section: Per iniziare
