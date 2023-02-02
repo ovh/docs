@@ -13,6 +13,7 @@ order: 01
 >
 
 
+
 ## Objectif
 
 **Ce guide est une introduction à NSX-T dans un cluster Hosted Private Cloud by VMware**
@@ -27,14 +28,14 @@ order: 01
 
 NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. Pour le fonctionnement de NSX-T en version ALPHA deux hôtes sont déployés avec sur chacun une machine virtuelle dédiée à NSX-T ce qui permet une redondance en cas de défaillance d'un des hôtes.
 
-Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfiguration est appliquée avec deux passerelles :
+Lorsqu'un client souscrit à l'offre NSX-T et quelle est activée une pré-configuration est appliquée avec deux passerelles :
 
-- **Tier-0 Gateway** : Pour les connexions entre le cluster et le réseau INTERNET public, que l'on nomme trafic nord-sud.
-- **Tier-1 Gateway** : Pour les communications entre segments virtuels du cluster. Ce type de connexion s'appelle trafic est-ouest.
+* **Tier-0 Gateway** : Pour les connexions entre le cluster et le réseau INTERNET public, que l'on nomme trafic nord-sud.
+* **Tier-1 Gateway** : Pour les communications entre segments virtuels du cluster. Ce type de connexion s'appelle trafic est-ouest.
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
 
-OVHcloud fourni un bloc de 8 adresses IP publiques, certaines sont réservées vous pouvez utiliser l'adresse **HA VIP** qui est préconfigurée pour le SNAT en sortie.
+OVHcloud fourni un bloc de 8 adresses IP publiques, certaines sont réservées. L'adresse **HA VIP** est préconfigurée, elle est utilisée pour le SNAT par défaut sur les futurs segments internes.
 
 ## Prérequis
 
@@ -81,7 +82,7 @@ Le schéma ci-dessous représente la topologie réseau avec de haut en bas :
 
 - Les deux interfaces physiques qui permettent une redondance de l'accès Internet en cas de défaillance (Ces deux interfaces utilisent des adresses IP publiques qui ne sont pas utilisables pour la configuration client).
 - La passerelle Nord-Sud qui assurent la liaison entre Le réseau Internet et les réseaux internes de votre cluster.
-- La liaison entre les passerelle **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
+- La liaison entre les passerelles **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
 - La passerelle Est-Ouest pour assurer les communication entre les réseaux internes du cluster.
 
 En bas à droite vous avez **ovh-segment-nsxpublic**, c'est un segment réseau connecté au réseau public OVHcloud sur le VLAN 2197 il contient le réseau des adresses publiques utilisable pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher cette adresse.
@@ -108,7 +109,7 @@ Cliquez sur le `Numéro`{.action} à droite de **HA VIP Configuration**.
 
 ![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
 
-Vous avez l'adresse IP virtuelle publique qui est utilisable dans vos configurations **NSX-T**, cliquez sur `Close`{.action} pour fermer cette fenêtre.
+Vous voyez l'adresse IP virtuelle publique qui est utilisable dans vos configurations **NSX-T**, cliquez sur `Close`{.action} pour fermer cette fenêtre.
 
 ![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
 
@@ -118,11 +119,11 @@ Une configuration SNAT par défaut est appliquée ce qui permet l'accès Interne
 
 A partir de l'onglet `Networking`{.action} cliquez sur `NAT`{.action} pour afficher la configuration par défaut des règles de NAT.
 
-La règle par défaut pour le **SNAT** montre que l'on utiise l'adresse IP virtuelles pour faire la translation depuis les réseaux internes au cluster.
+La règle par défaut pour le **SNAT** montre que l'on utiise l'adresse IP virtuelle pour faire la translation depuis les réseaux internes au cluster.
 
 ![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
 
-
+Vous venez de voir la configuration par défaut. Vous pouvez consultez les autres guides OVHcloud concernant NSX-T pour créer des segments, gérer le DHCP, faire de la redirection de port en DNAT, du Load balancing, du VPN, etc...
 
 ## Aller plus loin
 

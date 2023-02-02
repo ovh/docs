@@ -6,14 +6,15 @@ section: NSX-T
 order: 01
 ---
 
-**Last updated 30th January 2023**
+**Last updated 02th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
 >
 
+## Objective
 
-## Objectif
+**This guide is an introduction to the NSX-T**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -21,18 +22,19 @@ order: 01
 > This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
-**This guide is an introduction to the NSX-T**
+## Overview
 
-NSX-T is a Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud is offering this service to replace NSX-V in its Hosted Private Cloud Powerer by VMware solution.
+NSX-T is a Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud is offering this service in place of NSX-V in its Hosted Private Cloud Powered by VMware solution. For the ALPHA version of NSX-T to work, two hosts are deployed with a dedicated virtual machine for NSX-T on each host, allowing redundancy in the event of one of the hosts failing.
 
-When a customer subscribes to the NSX-T offer and is enabled, a preset is applied with two gateways :
+When a customer subscribes to the NSX-T offer and is enabled, a pre-configuration is applied with two gateways:
 
-- **Tier-0 Gateway** : For connections between the cluster and the public INTERNET network, known as north-south traffic.
-- **Tier-1 Gateway**: For communication between cluster virtual segments. This type of connection is called east-west traffic.
+* **Tier-0 Gateway** : For connections between the cluster and the public INTERNET network, known as north-south traffic.
+* **Tier-1 Gateway**: For communication between cluster virtual segments. This type of connection is called east-west traffic.
 
 The two gateways are interconnected to allow internal networks to communicate outside the cluster.
 
-OVHcloud provides a block of 8 public IP addresses, some of which are reserved. You can use the address which is used for SNAT by default.
+OVHcloud provides a block of 8 public IP addresses, some of which are reserved. The **HA VIP** address is preconfigured, it is used for SNAT by default on future internal segments.
+
 
 ## Requirements
 
@@ -76,9 +78,52 @@ Left-click on `Network Topology`{.action}.
 
 ![02 Display network topology 02](images/02-display-network-topology02.png){.thumbnail}
 
-A diagram representing the network topology is available with two public IP addresses (both addresses are for NSX-T and are not usable for port redirections) connected to the **ovh-T0-gateway** and the connection to the **ovh-T1-gateway**.
+The diagram below shows the network topology from top to bottom:
 
-![03 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
+- The two physical interfaces that allow redundancy of internet access in case of failure (Both interfaces use public IP addresses that are not usable for client configuration).
+- The North-South gateway that acts as the link between the Internet network and the internal networks of your cluster.
+- The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
+- The East-West gateway to ensure communication between the cluster’s internal networks.
+
+In the bottom right you have **ovh-segment-nsxpublic**, it is a network segment connected to the OVHcloud public network on VLAN 2197 it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to display this address.
+
+![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
+
+In the right pane you have the subnet used by NSX-T on the public network.
+
+![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
+
+### Display of virtual IP address **HA VIP**
+
+When NSX-T is deployed in ALPHA version, a virtual IP address is assigned and it also serves for the SNAT of future segments on the cluster’s internal network. We will see how to retrieve this information.
+
+Stay on the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} on the left. in the **Connectivity** category.
+
+![03 Display public vip 01](images/01-nsxt-connection01.png){.thumbnail}
+
+Click the scroll button `>`{.action} to the left of **Name** to view the configuration.
+
+![03 Display public vip 02](images/01-nsxt-connection02.png){.thumbnail}
+
+Click on the `Number`{.action} to the right of **HA VIP Configuration**.
+
+![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
+
+You see the public virtual IP address that can be used in your **NSX-T** configurations, click `Close`{.action} to close this window.
+
+![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
+
+### NAT Default Configuration Information
+
+A default SNAT configuration is applied, which allows Internet access from the private networks of your future segments.
+
+From the `Networking`{.action} tab, click `NAT`{.action} to view the default configuration of NAT rules.
+
+The default rule for the **SNAT** shows that the virtual IP address is used to translate from the networks within the cluster.
+
+![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
+
+You have just seen the default configuration. You can refer to the other OVHcloud guides for NSX-T to create segments, manage DHCP, perform DNAT port redirection, load balancing, VPN, etc...
 
 ## Go further <a name="gofurther"></a>
 
