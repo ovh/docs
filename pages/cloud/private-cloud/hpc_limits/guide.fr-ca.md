@@ -6,7 +6,7 @@ section: FAQ
 order: 2
 ---
 
-**Dernière mise à jour le 18/08/2021**
+**Dernière mise à jour le 01/02/2023**
 
 ## Objectif
 
@@ -18,12 +18,13 @@ order: 2
 |:-----:|:-----:|:----------:|
 | Nombre max. de PCC par ID client | Nombre de vCenter ou de packs par organisation | Aucune limite |
 | Nombre de PCC liés | Connexion de vCenters (Enhanced Link Mode) | 0 (non autorisé) |
+| Nombre min. de datastores par PCC (SLA) | Nombre de datastores par vCenter pour le maintien du contrat de niveau de service | 2 |
 | Nombre min. de hosts par PCC (SLA) | Nombre d'hôtes par vCenter pour le maintien du contrat de niveau de service | 2 |
 | Nombre min. de hosts par PCC (sans SLA) | Nombre minimal d'hôtes à utiliser avec vCenter sans contrat de niveau de service | 0 |
 | Nombre max. de hosts par cluster | Hosts par cluster | 64 |
 | Nombre max. de clusters par vDC | Nombre de clusters dans le même centre de données virtuel | Aucune limite |
 | Nombre max. de vDC par PCC | Le nombre de data centres virtuels (vDC) que les clients peuvent ajouter par vCenter | 400 |
-| Nombre max. de hosts par PCC | Limites de hosts par vCenter | plage **Hosts**: 340 hosts, 70 zpools<br>plage **Hybrid**: 241 hosts, 120 zpools<br>plage **BigDS**: 76 hosts, 205 zpools |
+| Nombre max. de hosts par PCC | Limites de hosts par vCenter |  231 hosts, 110 zpools |
 | Nombre max. de machines virtuelles par SDDC | VMs gérées par le même vCenter | 25 000 |
 | Nombre max. de machines virtuelles par host | VMs hébergées sur le même host physique | 1024 |
 | Nombre max. d'adresses IP par PCC | Nombre max. d'adresses IP publiques pouvant être attribuées et utilisables par vCenter | 1 x /23 |
