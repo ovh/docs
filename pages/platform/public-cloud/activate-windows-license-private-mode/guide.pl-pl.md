@@ -17,9 +17,9 @@ W tym przypadku należy aktywować licencję ręcznie, aby uzyskać dostęp do w
 
 ## Wymagania początkowe
 
-- Posiadanie [projektu Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/)
-- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- [Utworzenie użytkownika OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
+- Posiadanie [projektu Public Cloud](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/)
+- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- [Utworzenie użytkownika OpenStack](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/)
 
 Zalecamy zapoznanie się z przewodnikiem  "[Dostęp do interfejsu Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)" w celu zapoznania się z programem Horizon.
 
@@ -82,7 +82,7 @@ openstack network list
 +--------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Dzięki pobraniu wcześniej elementów możesz utworzyć publiczny port o nazwie "Ext-Net" w podsieci "Ext-Net" i przypisać go do instancji:
+Dzięki pobraniu wcześniej elementów możesz utworzyć publiczny port o nazwie "Ext-Net" w subnet "Ext-Net" i przypisać go do instancji:
 
 ```bash
 openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net

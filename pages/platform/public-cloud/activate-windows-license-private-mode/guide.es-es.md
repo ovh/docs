@@ -6,7 +6,7 @@ section: Primeros pasos
 order: 09
 ---
 
-**Última actualización: 01/02/2023**
+**Última actualización: 02/02/2023**
 
 ## Objetivo
 
@@ -18,7 +18,7 @@ En ese caso, deberá activar la licencia manualmente para poder acceder a todos 
 ## Requisitos
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - [Haber creado un usuario de OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
 
 Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)" para familiarizarse con Horizon.
@@ -29,17 +29,17 @@ Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/
 
 #### Desde la interfaz Horizon
 
-Conéctese a la interfaz [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} utilizando el método que se indica en la [primera parte de esta guía](./#interfaz-horizon).
+Conéctese a la interfaz [Horizon](https://horizon.cloud.ovh.net/auth/login/) utilizando el método que se indica en la [primera parte de esta guía](https://docs.ovh.com/es/publiccloud/network-services/public-cloud-vrack/#interfaz-horizon).
 
 Conéctese a su zona de trabajo:
 
 ![region](images/horizon1.png){.thumbnail}
 
-Acceda a `Compute`{.action} y seleccione `Instances`{.action}.
+Acceda a `Compute`{.action} y seleccione `Instances`{.action}:
 
 ![procesamiento y instancia](images/horizon2.png){.thumbnail}
 
-Para añadir una interfaz, en la columna "Acciones", haga clic en la flecha que le permitirá acceder a las acciones que pueda realizar en la instancia. Haga clic en `Attach Interface`{.action}.
+Para añadir una interfaz, en la columna "Actions", haga clic en la flecha que le permitirá acceder a las acciones que pueda realizar en la instancia. Haga clic en `Attach Interface`{.action}:
 
 ![attach interface](images/horizon3.png){.thumbnail}
 
@@ -51,8 +51,8 @@ Seleccione la interfaz y acepte:
 
 Antes de continuar, se recomienda consultar estas guías:
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
-- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/).
+- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
+- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/es/public-cloud/set-openstack-environment-variables/).
 
 En primer lugar, recopile toda la información necesaria:
 
@@ -130,7 +130,7 @@ openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
 +-------------------------+----------------------------------------------------------------------------------------+
 ```
 
-Descargue el UUID del puerto Ext-Net :
+Descargue el UUID del puerto Ext-Net:
 
 ```bash
 openstack port list --name Ext-Net
@@ -182,6 +182,6 @@ slmgr.vbs -dli
 
 ## Más información
 
-[Esta guía explica cómo corregir la clave de activación de Windows Server](https://docs.ovh.com/fr/dedicated/windows-key/).
+[Averigua cómo cambiar la clave de activación de Windows Server](https://docs.ovh.com/es/dedicated/clave-windows/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en>.

@@ -2,11 +2,11 @@
 title: 'Ativar uma licença Windows para uma instância em modo privado'
 slug: activate-windows-licence-private-mode-instance
 excerpt: 'Descubra como ativar uma licença Windows numa instância em modo privado'
-section: Primeiros passos
+section: Introdução
 order: 09
 ---
 
-**Última atualização: o1/02/2023**
+**Última atualização: 02/02/2023**
 
 ## Objetivo
 
@@ -182,6 +182,6 @@ slmgr.vbs -dli
 
 ## Quer saber mais?
 
-[Saiba como corrigir a chave de produto do Windows Server](https://docs.ovh.com/pt/dedicated/windows-key/).
+[Saiba como alterar a chave de produto do Windows Server](https://docs.ovh.com/pt/dedicated/windows-key/).
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -6,7 +6,7 @@ section: Per iniziare
 order: 09
 ---
 
-**Ultimo aggiornamento: 01/02/2023**
+**Ultimo aggiornamento: 02/02/2023**
 
 ## Obiettivo
 
@@ -82,7 +82,7 @@ openstack network list
 +--------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Con gli elementi recuperati precedentemente, potete creare una porta pubblica chiamata "Ext-Net" sulla rubrica "Ext-Net" e associarla all'istanza:
+Con gli elementi recuperati precedentemente, potete creare una porta pubblica chiamata "Ext-Net" sulla subnet "Ext-Net" e associarla all'istanza:
 
 ```bash
 openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net

@@ -6,7 +6,7 @@ section: Primeros pasos
 order: 09
 ---
 
-**Última actualización: 01/02/2023**
+**Última actualización: 02/02/2023**
 
 ## Objetivo
 
@@ -29,7 +29,7 @@ Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/
 
 #### Desde la interfaz Horizon
 
-Conéctese a la interfaz [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} utilizando el método que se indica en la [primera parte de esta guía](https://docs.ovh.com/us/es/publiccloud/network-services/public-cloud-vrack/#interfaz-horizon).
+Conéctese a la interfaz [Horizon](https://horizon.cloud.ovh.net/auth/login/) utilizando el método que se indica en la [primera parte de esta guía](https://docs.ovh.com/us/es/publiccloud/network-services/public-cloud-vrack/#interfaz-horizon).
 
 Conéctese a su zona de trabajo:
 
@@ -39,7 +39,7 @@ Acceda a `Compute`{.action} y seleccione `Instances`{.action}:
 
 ![procesamiento y instancia](images/horizon2.png){.thumbnail}
 
-Para añadir una interfaz, en la columna "Acciones", haga clic en la flecha que le permitirá acceder a las acciones que pueda realizar en la instancia. Haga clic en `Attach Interface`{.action}.
+Para añadir una interfaz, en la columna "Actions", haga clic en la flecha que le permitirá acceder a las acciones que pueda realizar en la instancia. Haga clic en `Attach Interface`{.action}.
 
 ![attach interface](images/horizon3.png){.thumbnail}
 
@@ -130,7 +130,7 @@ openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
 +-------------------------+----------------------------------------------------------------------------------------+
 ```
 
-Descargue el UUID del puerto Ext-Net :
+Descargue el UUID del puerto Ext-Net:
 
 ```bash
 openstack port list --name Ext-Net
@@ -182,6 +182,6 @@ slmgr.vbs -dli
 
 ## Más información
 
-[Esta guía explica cómo corregir la clave de activación de Windows Server](https://docs.ovh.com/fr/dedicated/windows-key/).
+[Averigua cómo cambiar la clave de activación de Windows Server](https://docs.ovh.com/us/es/dedicated/clave-windows/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en>.
