@@ -7,11 +7,11 @@ section: 'Fonctionnalités des adresses e-mail'
 order: 01
 ---
 
-**Dernière mise à jour le 22/01/2020**
+**Dernière mise à jour le 01/02/2023**
 
 ## Objectif
 
-Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos redirections e-mail, par exemple pour rediriger des e-mails reçus sur une adresse A vers une adresse B.
+Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos redirections et alias e-mail, par exemple pour renvoyer des e-mails reçus sur une adresse A vers une adresse B.
 
 ## Généralités
 
@@ -21,11 +21,23 @@ Une redirection permet de réorienter un e-mail reçu sur une première adresse,
 
 Par exemple, vous souhaitez qu'à l'envoi d'un e-mail sur **public@mydomain.com**, celui-ci soit renvoyé vers **private@otherdomain.com**. Cela permet de communiquer la première adresse à l'expéditeur ( **public@mydomain.com** ), sans qu'il ne connaisse votre véritable adresse ( **private@otherdomain.com** ).
 
-Il y a deux types de redirections : 
+### Qu'est-ce qu'un alias e-mail ?
 
-- La redirection simple (schéma 1); l'e-mail est directement renvoyé vers l'adresse de redirection et le destinataire ne reçoit pas l'e-mail. 
+Contrairement à la redirection, l'adresse e-mail associée à l'alias n'est pas une adresse que l'on consulte, il s'agit d'un « masque ».
 
-- La redirection avec copie locale (schéma 2); l'e-mail est transmis au destinataire ainsi qu'à l'adresse de redirection.
+Créer un alias pour votre adresse e-mail vous permet de communiquer une adresse « masque » à vos contacts, sans avoir à communiquer votre adresse email personnelle à l'expéditeur. Une adresse e-mail peut avoir plusieurs alias.
+
+![emails](images/email-alias01.png){.thumbnail}
+
+Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias **anonymous@mydomain.ovh**. Vous pouvez alors communiquer à vos contacts l'adresse **anonymous@mydomain.ovh** et recevoir vos e-mails sur **john.smith@mydomain.ovh** sans que l'expéditeur n'ait connaissance de **john.smith@mydomain.ovh**.
+
+### Redirection et alias en image 
+
+- **La redirection simple (schéma 1)**; l'e-mail est directement renvoyé vers l'adresse de redirection et le destinataire ne reçoit pas l'e-mail. 
+
+- **La redirection avec copie locale (schéma 2)**; l'e-mail est transmis au destinataire ainsi qu'à l'adresse de redirection.
+
+- **L'alias email (schéma 3)**; l'e-mail est adressé à l'alias qui le renvoit vers le destinataire sur lequel l'alias à été configuré.
 
 ![emails](images/schema-redirect.png){.thumbnail}
 
@@ -36,7 +48,7 @@ Il y a deux types de redirections :
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une [offre d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, [l'hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/){.external}, ou l'offre MX Plan commandée séparément.
+- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/)).
 
 ## En pratique
 
@@ -51,29 +63,24 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 
 ### Version historique de l'offre MX Plan
 
-#### Étape 1: accéder a la gestion des redirections
-Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.
+> [!tab]
+>
+> **1. Accès aux redirections**
+>> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.<br><br>
+>> ![emails](images/mxplan-legacy-1.png){.thumbnail}<br>
+>>
+> **2. ajouter une redirection**
+>> Le tableau des redirections déjà actives s'affiche. À droite, cliquez sur le bouton `Ajouter une redirection`{.action}.<br><br>
+>> ![emails](images/mxplan-legacy-2.png){.thumbnail}<br>
+>>
+> **3. paramètrer la redirection**
+>> **De l'adresse** : Renseignez ici l'adresse e-mail que vous souhaitez rediriger.|  
+>> **Vers l'adresse** : Renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.|
+>> **Choisissez un mode de copie** : Choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVHcloud** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection) <br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma](./#generalites){.external} au début de ce guide.*<br><br>
+>> ![emails](images/mxplan-legacy-3.png){.thumbnail}<br><br>
+>> Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.
 
-![emails](images/mxplan-legacy-1.png){.thumbnail}
 
-
-#### Étape 2: ajouter une redirection
-
-Le tableau des redirections déjà actives s'affiche. À droite, cliquez sur le bouton `Ajouter une redirection`{.action}.
-
-![emails](images/mxplan-legacy-2.png){.thumbnail}
-
-Complétez selon les 3 paramètres suivants :
-
-|Information|Description| 
-|---|---|  
-|De l'adresse |Renseignez ici l'adresse e-mail que vous souhaitez rediriger.|  
-|Vers l'adresse|Renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.|
-|Choisissez un mode de copie|Choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVHcloud** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection) <br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma](./#generalites){.external} au début de ce guide.*|
-
-Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.
-
-![emails](images/mxplan-legacy-3.png){.thumbnail}
 
 > [!primary]
 > Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des
@@ -111,12 +118,9 @@ Sur cette fenêtre, vous allez définir les règles nécessaires pour créer une
 |Lorsque le message arrive et remplit toutes ces conditions| Votre redirection s'appliquant à tous les messages, selectionnez **[Appliquer à tous les messages]** (cadre 2).|
 |Effectuer toutes les opérations suivantes|C'est ici que vous appliquez la redirection, selectionnez **Transférer, rediriger ou envoyer** puis **Rediriger le message vers...** (cadre 3). Tapez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant **Rediriger le message vers...** puis cliquez sur `Enregistrer`{.action} (cadre 4)|
 
-
 ![emails](images/mxplan-new-4.png){.thumbnail}
 
 Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](./#generalites){.external} au début de ce guide). Si cela correspond à votre besoin, cliquez sur `OK`{.action} (icône de disquette) en haut à gauche et la règle sera appliquée. Sinon, passez à l'étape ci-dessous.
-
-
 
 Pour appliquer une **redirection simple** ([schéma 1](./#generalites){.external} au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur **Déplacer, copier ou supprimer** et enfin **supprimer le message**. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.
 
