@@ -85,7 +85,7 @@ Le schéma ci-dessous représente la topologie réseau avec de haut en bas :
 - La liaison entre les passerelles **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
 - La passerelle Est-Ouest pour assurer les communication entre les réseaux internes du cluster.
 
-En bas à droite vous avez **ovh-segment-nsxpublic**, c'est un segment réseau connecté au réseau public OVHcloud sur le VLAN 2197 il contient le réseau des adresses publiques utilisable pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher cette adresse.
+En bas à droite vous avez **ovh-segment-nsxpublic**, c'est un segment réseau connecté au réseau public OVHcloud sur le VLAN 2197 il contient le réseau des adresses publiques utilisable pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce réseau.
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 

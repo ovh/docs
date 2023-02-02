@@ -85,7 +85,7 @@ The diagram below shows the network topology from top to bottom:
 - The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
 - The East-West gateway to ensure communication between the cluster’s internal networks.
 
-In the bottom right you have **ovh-segment-nsxpublic**, it is a network segment connected to the OVHcloud public network on VLAN 2197 it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to display this address.
+In the bottom right you have **ovh-segment-nsxpublic**, it is a network segment connected to the OVHcloud public network on VLAN 2197 it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to display this network.
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
