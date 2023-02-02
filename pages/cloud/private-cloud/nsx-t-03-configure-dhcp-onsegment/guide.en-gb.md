@@ -35,19 +35,19 @@ We will configure a DHCP server on a segment connected to **OVH-T1-gw**. This se
 
 From the NSX-T interface go to the `Networking`{.action} tab and click on `Segments`{.action} on the left.
 
-![01 add DHCP ON Segment 01](images/01-add-dhcp-on-segment01.png)
+![01 add DHCP ON Segment 01](images/01-add-dhcp-on-segment01.png){.thumbnail}
 
 Click the specified configuration icon with `three vertical dots`{.action} to the left of your segment and choose `Edit`{.action}.
 
-![01 add DHCP ON Segment 02](images/01-add-dhcp-on-segment02.png)
+![01 add DHCP ON Segment 02](images/01-add-dhcp-on-segment02.png){.thumbnail}
 
 Click `Set DHCP CONFIG`{.action}.
 
-![01 add DHCP ON Segment 03](images/01-add-dhcp-on-segment03.png)
+![01 add DHCP ON Segment 03](images/01-add-dhcp-on-segment03.png){.thumbnail}
 
 Select `Local DHCP Server`{.action} on the left in **DHCP Type**. Then click the configuration icon with `three vertical dots`{.action} to the right of **DHCP Profile** and choose `Create New`{.action}.
 
-![01 add DHCP ON Segment 04](images/01-add-dhcp-on-segment04.png)
+![01 add DHCP ON Segment 04](images/01-add-dhcp-on-segment04.png){.thumbnail}
 
 Choose this information :
 
@@ -57,7 +57,7 @@ Choose this information :
 
 And click `Save`{.action}.
 
-![01 add DHCP ON Segment 05](images/01-add-dhcp-on-segment05.png)
+![01 add DHCP ON Segment 05](images/01-add-dhcp-on-segment05.png){.thumbnail}
 
 Enter these values:
 
@@ -67,7 +67,7 @@ Enter these values:
 
 Then click `APPLY`{.action}.
 
-![01 add DHCP ON Segment 06](images/01-add-dhcp-on-segment06.png)
+![01 add DHCP ON Segment 06](images/01-add-dhcp-on-segment06.png){.thumbnail}
 
 Virtual machines on this segment can now be configured with DHCP.
 
