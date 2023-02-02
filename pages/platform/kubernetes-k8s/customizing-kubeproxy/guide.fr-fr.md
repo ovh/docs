@@ -233,7 +233,7 @@ If these fields are not specified, it will reset to default value (ipvs for kube
 
 > [!primary]
 >
-> Updating customization.kubeProxy will trigger following actions:
+> Updating customization.kubeProxy will trigger the following actions:
 >
 > - apply updated configMap
 > - then rollout restart kube-proxy so it uses the new configuration
