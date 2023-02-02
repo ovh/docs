@@ -12,10 +12,9 @@ order: 02
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
 >
 
+## Objective
 
-## Objectif
-
-**Découvrir la création et l'utilisation des segment dans l'interface NSX-T et vCenter**
+**Discover the creation and use of segments in the NSX-T and vCenter interface**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -23,22 +22,20 @@ order: 02
 > This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
-## Prérequis
+## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - **NSX-T** deployed.
 
-## Presentation
+## Overview
 
 In an NSX-T solution a segment is a virtual level 2 domain (previously named logical switch) it can be of two types :
 
-* **VLAN-backed segments**: communication between hosts and VMs must be done through VLANs and a level 2 switch.
-* **Overlay-backed segments**: the connection is made using a software layer that establishes tunnels between the hosts and the VMs.
+* **VLAN-backed segments** : the communication between the hosts and the VMs must be done through VLANs and a level 2 switch. This type of segment is completely isolated inside the VLAN, it is not possible to connect them to a gateway.
+* **Overlay-backed segments**: the connection is made using a software layer that establishes tunnels between hosts and virtual machines. When configuring a segment of this type, it is mandatory to add an address in a subnet to allow communication outside that segment. They must be connected to the gateway **ovh-T1-gw**.
 
 The segments are linked to transport zones that are predefined by OVHcloud.
-
-The segments can be connected to **ovh-T1-gw** in this case you need to create a network with a gateway to allow outgoing traffic beyond this segment, either with another segment or outside the cluster.
 
 ## Instructions
 
@@ -120,6 +117,50 @@ Return to the NSX-T interface in `Network Topology`{.action} to bring up the new
 ![05 display four VM on two segment02](images/05-display-four-vm-on-two-segment02.png)
 
 Both segments are connected to the gateway **ovh-T1-gw**, routing between the two subnets is enabled without any network restrictions by default.
+
+### Création d'un segment sur un VLAN 
+
+Through the NSX-T interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section.
+
+![06 Add vlan segment 01](images/06-add-vlan-segment01.png){.thumbnail}
+
+Fill in this information :
+
+* **Name** : Type `vlan100-vrack-segment`.
+* **Transport Zone** : Sélectionnez `vlan100-vrack-segment`.
+* **VLAN** : Type the number `100`.
+
+Then click `SAVE`{.action}.
+
+![06 Add vlan segment 02](images/06-add-vlan-segment02.png){.thumbnail}
+
+Click `NO`{.action}.
+
+![06 Add vlan segment 03](images/06-add-vlan-segment03.png){.thumbnail}
+
+### Assigning a VLAN Segment to a Virtual Machine
+
+Allez dans votre interface vSphere et faites un `clic droit`{.action} sur votre machine virtuelle et choisissez `Edit Settings`{.action}.
+
+![07 connect VM to VLAN segment 01](images/07-connect-vm-to-vlan-segment01.png){.thumbnail}
+
+Go to your network adapter and click `Browse`{.action}.
+
+![07 connect VM to VLAN segment 02](images/07-connect-vm-to-vlan-segment02.png){.thumbnail}
+
+Click the `segment`{.action} associated with your VLAN and click `OK`{.action}.
+
+![07 connect VM to VLAN segment 03](images/07-connect-vm-to-vlan-segment03.png){.thumbnail}
+
+Click `OK`{.action} to commit the changes.
+
+![07 connect VM to VLAN segment 04](images/07-connect-vm-to-vlan-segment04.png){.thumbnail}
+
+### Displaying a network topology with overlay segments and other segments on VLANs
+
+Go back to the NSX-T interface, go to the `Networking`{.action} tab, and click on `Network Topology`{.action} on the left to display a graphical view of the network in which we do not see a connection between the VLAN segment and the gateway **ov-T1-gw**.
+
+![08 display network topology vlan overlay01](images/08-display-network-topology-vlan-overlay01.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
 

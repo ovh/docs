@@ -33,13 +33,11 @@ order: 02
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
 * **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2. Ce type de segment est totalement isolé à l'intérieur du VLAN, il n'est pas possible de les connecter à une passerelle.
-* **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment.
+* **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment. Ils doivent être connectés à la passerelle **ovh-T1-gw**.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
-Les segments peuvent être connectés à **ovh-T1-gw** dans ce cas il faut créer un réseau avec une passerelle afin de permettre un trafic sortant au-delà de ce segment, soit avec un autre segment soit à l'extérieur du cluster.
-
-## En pratiques
+## En pratique
 
 ### Création d'un segment de type overlay dans l'interface NSX-T
 
@@ -120,7 +118,7 @@ Revenez sur l'interface NSX-T dans `Network Topology`{.action} pour faire appara
 
 Les deux segments sont reliés à la passerelle **ovh-T1-gw**, le routage entre les deux sous-réseaux est activé sans aucunes restrictions réseaux par défaut.
 
-### Création d'un segment sur un VLAN isolé des passerelles
+### Création d'un segment sur un VLAN 
 
 Au travers de l'interface de NSX-T cliquez allez sur l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**.
 
@@ -142,7 +140,7 @@ Cliquez sur `NO`{.action}.
 
 ### Affectation d'un segment de type VLAN à une machine virtuelle
 
-Allez dand votre interface vSphere et faites un `clic droit`{.action} sur votre machine virtuelle et choisissez `Modifier les paramètres`{.action}.
+Allez dans votre interface vSphere et faites un `clic droit`{.action} sur votre machine virtuelle et choisissez `Modifier les paramètres`{.action}.
 
 ![07 connect VM to VLAN segment 01](images/07-connect-vm-to-vlan-segment01.png){.thumbnail}
 
@@ -160,20 +158,9 @@ Cliquez sur `OK`{.action} pour valider les changements.
 
 ### Affichage d'une topologie réseau avec des segments en overlay et d'autres segments sur des VLAN
 
-Revenez dans l'interface NSX-T, allez sur l'onglet `Networking`{.action}, et cliquez à gauche sur `Network Topology`{.action} pour afficher un vue graphique du réseau dans lequel nous ne voyons pas de  connexion entre le segment et la passerelle **ov-T1-gw**.
+Revenez dans l'interface NSX-T, allez sur l'onglet `Networking`{.action}, et cliquez à gauche sur `Network Topology`{.action} pour afficher un vue graphique du réseau dans lequel nous ne voyons pas de  connexion entre le segment de type VLAN et la passerelle **ov-T1-gw**.
 
 ![08 display network topology vlan overlay01](images/08-display-network-topology-vlan-overlay01.png){.thumbnail}
-
-
-
-
-
-
-
-
-
-
-
 
 ## Aller plus loin
 
