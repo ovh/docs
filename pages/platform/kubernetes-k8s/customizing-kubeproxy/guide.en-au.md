@@ -49,13 +49,13 @@ At OVHcloud, we listen to our users and improve our products and services accord
 
 #### The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](https://ca.api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVHcloud NIC handle.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the API Explorer, you will see the available endpoints:
+If you go to the [Kubernetes section](https://ca.api.ovh.com/console/#/kube) of the API Explorer, you will see the available endpoints:
 
 ![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
 
