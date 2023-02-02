@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 01/02/2023**
+**Ostatnia aktualizacja z dnia 01-02-2023**
 
 ## Wprowadzenie
 
@@ -22,6 +22,7 @@ order: 2
 |:-----:|:-----:|:----------:|
 | Maksymalna liczba Hosted Private Cloud na identyfikator klienta | Liczba vCenter lub pakietów na organizację | Brak limitu |
 | Liczba powiązanych PCC | Połączenie vCenters (Enhanced Link Mode) | 0 (niedozwolony) |
+| Minimalna liczba datastore na PCC (SLA) | Liczba datastore w vCenter do utrzymania regulaminu poziomu usługi | 2 |
 | Minimalna liczba hostów na PCC (SLA) | Liczba hostów w vCenter do utrzymania regulaminu poziomu usługi | 2 |
 | Minimalna liczba hostów na PCC (bez SLA) | Minimalna liczba hostów do wykorzystania z vCenter bez umowy na gwarantowany poziom usługi | 0 |
 | Maksymalna liczba hostów na klaster | Hosty na klaster | 64 |

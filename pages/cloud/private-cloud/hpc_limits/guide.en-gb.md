@@ -6,7 +6,7 @@ section: FAQ
 order: 1
 ---
 
-**Last updated 01/02/2023**
+**Last updated 1st February 2023**
 
 ## Objective
 

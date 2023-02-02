@@ -22,6 +22,7 @@ order: 2
 |:-----:|:-----:|:----------:|
 | Numero max. di PCC per ID cliente | Numero di vCenter o di pack per organizzazione | Nessun limite |
 | Numero di PCC associati | Connessione di vCenters (Enhanced Link Mode) | 0 (non autorizzato) |
+| Numero min. di datastore per PCC (SLA) | Numero di datastore per vCenter per mantenere il contratto di livello di servizio | 2 |
 | Numero min. di host per PCC (SLA) | Numero di host per vCenter per mantenere il contratto di livello di servizio | 2 |
 | Numero min. di host per PCC (senza SLA) | Numero minimo di host da utilizzare con vCenter senza contratto di livello di servizio | 0 |
 | Numero max. di host per cluster | Host per cluster | 64 |

@@ -22,6 +22,7 @@ order: 2
 |:-----:|:-----:|:----------:|
 | Maximale Anzahl pro Client-ID | Anzahl der vCenter oder Pakete pro Organisation | Kein Limit |
 | Anzahl der verbundenen PCC | vCenters Verbindung (Enhanced Link Mode) | 0 (nicht autorisiert) |
+| Anzahl min. von Datastores pro PCC (SLA) | Anzahl der Datastores pro vCenter zur Aufrechterhaltung des Service Level Agreements | 2 |
 | Anzahl min. von Hosts pro PCC (SLA) | Anzahl der Hosts pro vCenter zur Aufrechterhaltung des Service Level Agreements | 2 |
 | Anzahl min. von Hosts pro PCC (ohne SLA) | Mindestanzahl der Hosts, die in vCenter ohne Service Level Agreement zu verwenden sind | 0 |
 | Maximale Anzahl von Hosts pro Cluster | Hosts je Cluster | 64 |
