@@ -32,8 +32,8 @@ order: 02
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
-* **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2.
-* **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les VM.
+* **VLAN-backed segments** : la communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2. Ce type de segment est totalement isolé à l'intérieur du VLAN, il n'est pas possible de les connecter à une passerelle.
+* **Overlay-backed segments** : la connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
@@ -41,21 +41,21 @@ Les segments peuvent être connectés à **ovh-T1-gw** dans ce cas il faut crée
 
 ## En pratiques
 
-### Création d'un segment dans l'interface NSX-T
+### Création d'un segment de type overlay dans l'interface NSX-T
 
 Nous allons créer un segment *Overlay-backed segment* relié à **ovh-T1-gw** dans un sous réseau en 192.168.1.0/24 avec comme passerelle 192.168.1.254.
 
 A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action}.
 
-![01 Create Segment 01](images/01-create-segment01.png)
+![01 Create Segment 01](images/01-create-segment01.png){.thumbnail}
 
 Cliquez à gauche sur `Segments`{.action}.
 
-![01 Create Segment 02](images/01-create-segment02.png)
+![01 Create Segment 02](images/01-create-segment02.png){.thumbnail}
 
 Cliquez à droite sur `ADD SEGMENT`{.action}.
 
-![01 Create Segment 03](images/01-create-segment03.png)
+![01 Create Segment 03](images/01-create-segment03.png){.thumbnail}
 
 Choisissez ces informations :
 
@@ -66,59 +66,96 @@ Choisissez ces informations :
 
 Ensuite cliquez à droite sur `SAVE`{.action}.
 
-![01 Create Segment 04](images/01-create-segment04.png)
+![01 Create Segment 04](images/01-create-segment04.png){.thumbnail}
 
 Cliquez sur `NO`{.action}.
 
-![01 Create Segment 05](images/01-create-segment05.png)
+![01 Create Segment 05](images/01-create-segment05.png){.thumbnail}
 
 Le nouveau segment apparait dans la liste.
 
-![01 Create Segment 06](images/01-create-segment06.png)
+![01 Create Segment 06](images/01-create-segment06.png){.thumbnail}
 
 Toujours dans l'onglet `Networking` cliquez à gauche sur `Network Topology`{.action} pour voir le nouveau segment et son emplacement dans le réseau. 
 
-![02 Display Network Topology 01](images/02-display-network-topology-with-onesegment01.png)
+![02 Display Network Topology 01](images/02-display-network-topology-with-onesegment01.png){.thumbnail}
 
-### Connexion d'une machine virtuelle à ce segment.
+### Connexion d'une machine virtuelle à un segment de type overlay.
 
 Allez dans l'interface vCenter de votre cluster Hosted Private Cloud.
 
 Faites un clic droit sur la `machine virtuelle`{.action} et cliquez sur `Modifier les paramètres`{.action}.
 
-![03 Connect Network Card to Segment 01](images/03-connect-network-card-vm-to-segment01.png)
+![03 Connect Network Card to Segment 01](images/03-connect-network-card-vm-to-segment01.png){.thumbnail}
 
 Allez dans la barre de défilement à droite de votre adaptateur réseau et choisissez `Parcourir`{.action}.
 
-![03 Connect Network Card to Segment 02](images/03-connect-network-card-vm-to-segment02.png)
+![03 Connect Network Card to Segment 02](images/03-connect-network-card-vm-to-segment02.png){.thumbnail}
 
 Sélectionnez le `réseau`{.action} qui porte le nom de votre segment. et cliquez sur `OK`{.action}.
 
-![03 Connect Network Card to Segment 03](images/03-connect-network-card-vm-to-segment03.png)
+![03 Connect Network Card to Segment 03](images/03-connect-network-card-vm-to-segment03.png){.thumbnail}
 
 Cliquez sur `OK`{.action}.
 
-![03 Connect Network Card to Segment 04](images/03-connect-network-card-vm-to-segment04.png)
+![03 Connect Network Card to Segment 04](images/03-connect-network-card-vm-to-segment04.png){.thumbnail}
 
 Maintenant que votre machine virtuelle est connectée au segment revenez sur l'interface NSX-T.
 
 Allez dans l'onglet `Networking`{.action} choisissez `Network Topology`{.action}.
 
-![04 display network topology with one segment and one vm 01](images/04-display-network-topology-with-onesegment-and-one-vm01.png)
+![04 display network topology with one segment and one vm 01](images/04-display-network-topology-with-onesegment-and-one-vm01.png){.thumbnail}
 
 La machine virtuelle associée au réseau apparait dans la topologie du réseau.
 
 Aidez-vous de la première partie du guide pour créer un deuxième segment nommé ov2-segment avec ces paramètres **192.168.2.254/24** afin d'avoir deux segments connectés à **ovh-T1-gw**.
 
-![05 display four VM on two segment01](images/05-display-four-vm-on-two-segment01.png)
+![05 display four VM on two segment01](images/05-display-four-vm-on-two-segment01.png){.thumbnail}
 
 Ensuite à partir de la console **vCenter**, mettez deux machines virtuelles sur le premier segment et deux autres sur le deuxième segment.
 
 Revenez sur l'interface NSX-T dans `Network Topology`{.action} pour faire apparaitre la nouvelle configuration réseau.
 
-![05 display four VM on two segment02](images/05-display-four-vm-on-two-segment02.png)
+![05 display four VM on two segment02](images/05-display-four-vm-on-two-segment02.png){.thumbnail}
 
 Les deux segments sont reliés à la passerelle **ovh-T1-gw**, le routage entre les deux sous-réseaux est activé sans aucunes restrictions réseaux par défaut.
+
+### Création d'un segment sur un VLAN isolé des passerelles
+
+Au travers de l'interface de NSX-T cliquez allez sur l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**.
+
+![06 Add vlan segment 01](images/06-add-vlan-segment01.png){.thumbnail}
+
+Remplissez ces informations :
+
+* **Name** : Saisissez `vlan100-vrack-segment`.
+* **Transport Zone** : Sélectionnez `vlan100-vrack-segment`.
+* **VLAN** : Tapez le nombre `100`.
+
+Ensuite cliquez sur `SAVE`{.action}.
+
+![06 Add vlan segment 02](images/06-add-vlan-segment02.png){.thumbnail}
+
+Cliquez sur `NO`{.action}.
+
+![06 Add vlan segment 03](images/06-add-vlan-segment03.png){.thumbnail}
+
+### Affectation d'un segment de type VLAN à une machine virtuelle
+
+Allez dand votre interface vSphere et faites un `clic droit`{.action} sur votre machine virtuelle et choisissez `Modifier les paramètres`{.action}.
+
+![Aff]
+
+Positionnez vous sur votre adapteur réseau et cliquez sur `Parcourir`{.action}.
+
+
+
+
+
+
+
+
+
 
 ## Aller plus loin
 

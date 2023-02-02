@@ -12,8 +12,6 @@ order: 01
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
 >
 
-
-
 ## Objectif
 
 **Ce guide est une introduction à NSX-T dans un cluster Hosted Private Cloud by VMware**
