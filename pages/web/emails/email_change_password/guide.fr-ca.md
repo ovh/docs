@@ -37,7 +37,7 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 > [!warning]
 > Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions de votre nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.
 
-Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre:
+Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dirigez-vous dans la partie `Web Cloud`{.action} puis suivez les instructions selon votre offre :
 
 > [!tabs]
 > **Emails MXplan**
