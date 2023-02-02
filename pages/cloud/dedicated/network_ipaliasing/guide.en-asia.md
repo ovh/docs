@@ -496,7 +496,7 @@ Finally, reboot your server to apply the changes.
 
 In the WHM control panel, click on `IP functions` and select `Add a New IP Address`{.action} in the left-hand sidebar.
 
-![Add new IP](images/addnewipcpanel.png){.thumbnail}
+![Add new IP](images/Cpanel-1.png){.thumbnail}
 
 #### Step 2: Add the additional IP information
 
@@ -504,7 +504,7 @@ Enter your Additional IP in the form `xxx.xxx.xxx.xxx` into the field “New IP 
 
 Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
-![enter new IP information](images/confirmipcpanel.png){.thumbnail}
+![enter new IP information](images/Cpanel-2.png){.thumbnail}
 
 > [!warning]
 >
@@ -515,7 +515,7 @@ Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
 Back in the section `IP functions`, click on `Show or Delete Current IP Addresses`{.actions} to verify that the Additional IP address was added correctly.
 
-![check configured IP](images/newaddedip.png){.thumbnail}
+![check configured IP](images/Cpanel-3.png){.thumbnail}
 
 
 ### Windows Servers
