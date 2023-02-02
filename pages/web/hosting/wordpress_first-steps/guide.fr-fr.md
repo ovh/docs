@@ -42,7 +42,7 @@ Récupérez ces éléments avant de poursuivre.
 
 ### Se connecter à l'interface d'administration
 
-Rendez-vous sur le lien d'accès à l'interface d'administration communiqué par e-mail lors de l'installation du CMS. Par défaut, l'URL se termine par `wp-admin`. Si vous ne vous êtes pas authentifié sur votre interface d'administration, **WordPress** vous redirigera automatiquement sur votre URL se terminant par `wp-login`&nbsp;:
+Rendez-vous sur le lien d'accès à l'interface d'administration communiqué par e-mail lors de l'installation du CMS. Par défaut, l'URL se termine par `wp-admin`. Si vous ne vous êtes pas authentifié sur votre interface d'administration, **WordPress** vous redirigera automatiquement sur votre URL se terminant par `wp-login` :
 
 ![WordPress - Admin login](images/wordpress_first_steps%5B1%5D.png){.thumbnail}
 
