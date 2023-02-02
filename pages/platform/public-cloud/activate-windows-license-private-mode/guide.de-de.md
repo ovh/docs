@@ -1,10 +1,14 @@
 ---
-title: 'Eine Windows Lizenz für eine Instanz im privaten Modus aktivieren'
+title: "Windows-Lizenz für eine Instanz im privaten Modus aktivieren"
 slug: activate-windows-licence-private-mode-instance
-excerpt: 'Erfahren Sie, wie Sie eine Windows-Lizenz für eine Instanz im privaten Modus aktivieren'
+excerpt: "Erfahren Sie hier, wie Sie eine Windows-Lizenz für eine Instanz im privaten Modus aktivieren"
 section: Erste Schritte
 order: 09
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
 **Letzte Aktualisierung am 31.01.2023**
 
@@ -13,15 +17,15 @@ order: 09
 Im Gegensatz zu Windows-Instanzen, die im öffentlichen Netzwerk erstellt wurden, haben Windows-Instanzen, die im privaten Netzwerk-Modus (vRack) erstellt wurden, ihre Windows-Lizenzen nicht automatisch aktiviert.
 In diesem Fall müssen Sie die Lizenz manuell aktivieren, um Zugriff auf alle Windows-Dienstleistungen zu erhalten.
 
-**In dieser Anleitung hilft Ihnen bei der Konfiguration des öffentlichen Interfaces Ihrer Public Cloud Instanzen in Ihrem vRack.**
+**Diese Anleitung hilft Ihnen bei der Konfiguration des öffentlichen Interfaces Ihrer Public Cloud Instanzen im vRack.**
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Kunden-Account
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie haben einen [OpenStack User erstellt](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/)
+- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben einen [OpenStack User erstellt](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/).
 
-Wir empfehlen Ihnen, die Anleitung [Auf das Horizon-Interface](https://docs.ovh.com/de/public-cloud/horizon/) zu lesen, um sich mit Horizon vertraut zu machen.
+Wir empfehlen, die [Einführung in das Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/) zu lesen, um sich mit Horizon vertraut zu machen.
 
 ## In der praktischen Anwendung
 
@@ -37,7 +41,7 @@ Wählen Sie die korrekte Zone im Menü aus.
 
 Öffnen Sie `Compute`{.action} und dann `Instances`{.action} links im Menü.
 
-![und Instanz](images/horizon2.png){.thumbnail}
+![Instanz](images/horizon2.png){.thumbnail}
 
 Um ein Interface hinzuzufügen, klicken Sie in der Spalte “Actions” auf den Pfeil, um auf die Aktionen zuzugreifen, die auf der Instanz möglich sind. Klicken Sie dann auf `Attach Interface`{.action}:
 
@@ -45,14 +49,14 @@ Um ein Interface hinzuzufügen, klicken Sie in der Spalte “Actions” auf den 
 
 Wählen Sie Ihr Interface aus und bestätigen Sie.
 
-![select Interface](images/attachinterfacehorizon.png){.thumbnail}
+![select interface](images/attachinterfacehorizon.png){.thumbnail}
 
-#### Über die OpenStack APIs
+#### Über die OpenStack API
 
 Bevor Sie fortfahren, empfehlen wir Ihnen folgende Anleitungen:
 
-- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
-- [Konfigurieren der OpenStack-Umgebungsvariablen](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/).
+- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/)
 
 Sammeln Sie zunächst alle notwendigen Informationen:
 
@@ -82,7 +86,7 @@ openstack network list
 +--------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Mit den zuvor abgerufenen Elementen können Sie einen öffentlichen Port mit dem Namen "Ext-Net" im Subnet "Ext-Net" erstellen und an die Instanz.
+Mit den zuvor abgerufenen Elementen können Sie einen öffentlichen Port mit dem Namen "Ext-Net" im Subnet "Ext-Net" erstellen und mit der Instanz verbinden.
 
 ```bash
 openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
@@ -130,7 +134,7 @@ openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
 +-------------------------+----------------------------------------------------------------------------------------+
 ```
 
-Rufen Sie die UUID des Ports "Ext-Net" ab
+Rufen Sie die UUID des Ports "Ext-Net" ab:
 
 ```bash
 openstack port list --name Ext-Net
@@ -150,9 +154,9 @@ openstack server add port <server_id> <port_id>
 
 #### Windows-System aktivieren
 
-Um Ihr Windows-System zu aktivieren, müssen Sie Powershell verwenden.
+Um Ihr Windows-System zu aktivieren, müssen Sie PowerShell verwenden.
 
-Wenn Sie sich in Ihrer Windows-Instanz eingeloggt haben, klicken Sie auf `Starten`{.action} und dann auf das `Windows PowerShell Icon`{.action}.
+Wenn Sie sich in Ihrer Windows-Instanz eingeloggt haben, klicken Sie auf das `Startmenü`{.action} und dann auf das Icon von `Windows PowerShell`{.action}.
 
 Geben Sie folgenden Befehl ein:
 
@@ -162,13 +166,13 @@ slmgr.vbs -ato
 
 ![Windows Key aktivieren](images/windowsactivation1.png){.thumbnail}
 
-Die Windows Lizenz wird für 180 Tage aktiviert.
+Die Windows-Lizenz wird für 180 Tage aktiviert.
 
 Diese Operation muss alle 180 Tage wiederholt werden.
 
 > [!primary]
 >
-> In der Zwischenzeit können Sie, wenn Sie Ihre Instanz vom öffentlichen Netzwerk isolieren möchten, den erstellten öffentlichen Port über Horizon oder die OpenStack-API deaktivieren.
+> In der Zwischenzeit können Sie, wenn Sie Ihre Instanz vom öffentlichen Netzwerk isolieren möchten, den erstellten öffentlichen Port über Horizon oder die OpenStack API deaktivieren.
 > Sie können den Netzwerk-Port auch direkt über Windows deaktivieren.
 >
 
@@ -182,6 +186,6 @@ slmgr.vbs -dli
 
 ## Weiterführende Informationen
 
-[Hier erfahren Sie, wie Sie den Aktivierungs-Key Ihres Windows Servers korrigieren](https://docs.ovh.com/de/dedicated/windows-key/).
+[Den Aktivierungsschlüssel Ihres Windows Servers korrigieren](https://docs.ovh.com/de/dedicated/windows-key/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
