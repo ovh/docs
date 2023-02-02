@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Dernière mise à jour le 30/01/2023**
+**Dernière mise à jour le 02/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -23,17 +23,18 @@ order: 01
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
-NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. 
+## Présentation
 
-Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfiguration est appliqué avec deux passerelles :
+NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. Pour le fonctionnement de NSX-T en version ALPHA deux hôtes sont déployés avec sur chacun une machine virtuelle dédiée à NSX-T ce qui permet une redondance en cas de défaillance d'un des hôtes.
 
-- **Tier-0 Gateway**: Pour les connexions entre le cluster et le réseau INTERNET public, que l'on nomme trafic nord-sud.
+Lorsque un client souscrit à l'offre NSX-T et quelle est activée une préconfiguration est appliquée avec deux passerelles :
+
+- **Tier-0 Gateway** : Pour les connexions entre le cluster et le réseau INTERNET public, que l'on nomme trafic nord-sud.
 - **Tier-1 Gateway** : Pour les communications entre segments virtuels du cluster. Ce type de connexion s'appelle trafic est-ouest.
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
 
-OVHcloud fourni un bloc de 8 adresses IP publiques, certaines sont réservées vous pouvez utiliser l'adresse qui est préconfigurée pour le SNAT en sortie.
-
+OVHcloud fourni un bloc de 8 adresses IP publiques, certaines sont réservées vous pouvez utiliser l'adresse **HA VIP** qui est préconfigurée pour le SNAT en sortie.
 
 ## Prérequis
 
@@ -48,7 +49,7 @@ La connexion à NSX-T se fait à partir de l'URL de votre cluster fourni par OVH
 
 A partir de la page d'accueil de votre cluster cliquez sur l'icône `NSX NSX-T`{.action}.
 
-![01 NSX-T Connection 01](images/01-nsxt-connection01.png)
+![01 NSX-T Connection 01](images/01-nsxt-connection01.png){.thumbnail}
 
 Saisissez vos informations d'identifications et cliquez sur `LOG IN`{.action}.
 
@@ -56,11 +57,11 @@ Saisissez vos informations d'identifications et cliquez sur `LOG IN`{.action}.
 > Pour s'authentifier sur l'interface NSX-T, il faut utiliser un compte fourni par OVHcloud suivi du nom FQDN de votre cluster comme **admin@pcc-xxxxx.ovh.xx**. 
 >
 
-![01 NSX-T Connection 02](images/01-nsxt-connection02.png)
+![01 NSX-T Connection 02](images/01-nsxt-connection02.png){.thumbnail}
 
 L'interface NSX-T s'affiche.
 
-![01 NSX-T Connection 03](images/01-nsxt-connection03.png)
+![01 NSX-T Connection 03](images/01-nsxt-connection03.png){.thumbnail}
 
 ### Affichage de la configuration par défaut
 
@@ -68,17 +69,60 @@ Nous allons voir la topologie du réseau configurée par défaut lors du déploi
 
 Au travers de l'interface **NSX-T** cliquez sur l'onglet `Networking`{.action}.
 
-![02 Display network topology 01](images/02-display-network-topology01.png)
+![02 Display network topology 01](images/02-display-network-topology01.png){.thumbnail}
 
 Une vue de l'ensemble des éléments du réseau est affichée.
 
 Cliquez à gauche sur `Network Topology`{.action}.
 
-![02 Display network topology 02](images/02-display-network-topology02.png)
+![02 Display network topology 02](images/02-display-network-topology02.png){.thumbnail}
 
-Un schéma représentant la topologie réseau est disponible avec deux adresses IP publiques (Ces deux adresses servent pour NSX-T et ne sont pas utilisables pour des redirections de ports) connectées à la passerelle **ovh-T0-gateway** ainsi que la connexion à la passerelle **ovh-T1-gateway**.
+Le schéma ci-dessous représente la topologie réseau avec de haut en bas :
 
-![03 Display network topology 03](images/02-display-network-topology03.png)
+- Les deux interfaces physiques qui permettent une redondance de l'accès Internet en cas de défaillance (Ces deux interfaces utilisent des adresses IP publiques qui ne sont pas utilisables pour la configuration client).
+- La passerelle Nord-Sud qui assurent la liaison entre Le réseau Internet et les réseaux internes de votre cluster.
+- La liaison entre les passerelle **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
+- La passerelle Est-Ouest pour assurer les communication entre les réseaux internes du cluster.
+
+En bas à droite vous avez **ovh-segment-nsxpublic**, c'est un segment réseau connecté au réseau public OVHcloud sur le VLAN 2197 il contient le réseau des adresses publiques utilisable pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher cette adresse.
+
+![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
+
+Dans le volet de droite vous avez le sous-réseau utilisé par NSX-T sur le réseau publique.
+
+![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
+
+### Affichage de l'adresse IP virtuelle **HA VIP**
+
+Lors du déploiement de NSX-T en version ALPHA, une adresse IP virtuelle est affectée elle sert aussi pour le SNAT des futurs segments sur le réseau interne du cluster. Nous allons voir comment récupérer cette information.
+
+Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action}. dans la catégorie **Connectivity**.
+
+![03 Display public vip 01](images/01-nsxt-connection01.png){.thumbnail}
+
+Cliquez sur le bouton de déroulement `>`{.action} à gauche de **Name** pour afficher la configuration.
+
+![03 Display public vip 02](images/01-nsxt-connection02.png){.thumbnail}
+
+Cliquez sur le `Numéro`{.action} à droite de **HA VIP Configuration**.
+
+![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
+
+Vous avez l'adresse IP virtuelle publique qui est utilisable dans vos configurations **NSX-T**, cliquez sur `Close`{.action} pour fermer cette fenêtre.
+
+![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
+
+### Information sur la configuration par défaut du NAT
+
+Une configuration SNAT par défaut est appliquée ce qui permet l'accès Internet à partir des réseaux privés de vos futurs segments.
+
+A partir de l'onglet `Networking`{.action} cliquez sur `NAT`{.action} pour afficher la configuration par défaut des règles de NAT.
+
+La règle par défaut pour le **SNAT** montre que l'on utiise l'adresse IP virtuelles pour faire la translation depuis les réseaux internes au cluster.
+
+![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
+
+
 
 ## Aller plus loin
 
