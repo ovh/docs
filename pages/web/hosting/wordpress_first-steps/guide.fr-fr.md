@@ -134,7 +134,7 @@ Vous pouvez alors modifier les catégories en cochant ou décochant les élémen
 
 ![WordPress - Set new categories to an existing post](images/wordpress_first_steps%5B16%5D.png){.thumbnail}
 
->[!warning]
+> [!warning]
 >
 > Sélectionner une sous-catégorie n'entraîne pas la sélection automatique de la catégorie parente.
 >
@@ -147,7 +147,7 @@ Rendez-vous sur la page `Pages`{.action} :
 
 ![WordPress - Go to pages](images/wordpress_first_steps%5B17%5D.png){.thumbnail}
 
->[!primary]
+> [!primary]
 >
 > Par défaut, il existe une page qui est générée à l'installation de **WordPress**. Pour des raisons de lisibilité, cette page a été supprimée de l'exemple.
 >
