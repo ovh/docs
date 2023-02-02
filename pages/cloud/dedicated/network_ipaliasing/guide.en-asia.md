@@ -5,7 +5,7 @@ excerpt: 'Find out how to add Additional IP addresses to your server configurati
 section: 'Network Management'
 ---
 
-**Last updated 30th January 2023**
+**Last updated 2nd February 2023**
 
 > [!primary]
 >
@@ -490,41 +490,32 @@ LABEL_1=ens32:0
 Finally, reboot your server to apply the changes.
 
 
-### cPanel (on CentOS 6)
+### cPanel (on CentOS 7)
 
-#### Step 1: Create a backup
+#### Step 1: Access the WHM IP management section
 
-First, make a copy of the config file, so that you can revert at any time:
+In the WHM control panel, click on `IP functions` and select `Add a New IP Address`{.action} in the left-hand sidebar.
 
-```sh
-cp /etc/ips /etc/ips.bak
-```
+![Add new IP](images/addnewipcpanel.png){.thumbnail}
 
-#### Step 2: Edit the config file
+#### Step 2: Add the additional IP information
 
-You then need to edit the /etc/ips file:
+Enter your Additional IP in the form `xxx.xxx.xxx.xxx` into the field “New IP or IP range to add”. 
 
-```sh
-editor /etc/ips
-```
-Then add the Additional IP to the file:
+Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
-```bash
-ADDITIONAL_IP:255.255.255.255:ADDITIONAL_IP
-```
-Next, add the IP in `/etc/ipaddrpool``:
+![enter new IP information](images/confirmipcpanel.png){.thumbnail}
 
-```bash
-ADDITIONAL_IP
-```
+> [!warning]
+>
+> Please note that if you have more than one IP to configure on the same block and you add them all at once, the WHM system will force you to use the subnet mask `255.255.255.0`. We do not recommend using this configuration, instead, you need to add each IP individually in order to use the proper subnet mask `255.255.255.255`.
+> 
 
-#### Step 3: Restart the interface
+#### Step 3: Check the current IP configuration
 
-You now need to restart your interface:
+Back in the section `IP functions`, click on `Show or Delete Current IP Addresses`{.actions} to verify that the Additional IP address was added correctly.
 
-```sh
-/etc/init.d/ipaliases restart
-```
+![check configured IP](images/newaddedip.png){.thumbnail}
 
 
 ### Windows Servers
