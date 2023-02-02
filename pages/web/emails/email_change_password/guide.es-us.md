@@ -37,10 +37,11 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 > [!warning]
 > Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
+Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
+
 > [!tabs]
 > **Emails MXplan**
 >>
->> Si no conoce el tipo de producto MXplan que posee, consulte el apartado [Identifique su producto MXplan](#whichmxplan).<br>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Correo electrónico`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. <br>
 >> Haga clic en el botón <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png) {.thumbnail}<br>
