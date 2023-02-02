@@ -6,7 +6,7 @@ section: Primeros pasos
 order: 09
 ---
 
-**Última actualización: 25/01/2023**
+**Última actualización: 01/02/2023**
 
 ## Objetivo
 
@@ -19,9 +19,9 @@ En ese caso, deberá activar la licencia manualmente para poder acceder a todos 
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- [Haber creado un usuario de OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
+- [Haber creado un usuario de OpenStack](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
 
-Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)" para familiarizarse con Horizon.
+Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/us/es/public-cloud/horizon/)" para familiarizarse con Horizon.
 
 ## Procedimiento
 
@@ -29,13 +29,13 @@ Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/
 
 #### Desde la interfaz Horizon
 
-Conéctese a la interfaz [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} utilizando el método que se indica en la [primera parte de esta guía](./#interfaz-horizon).
+Conéctese a la interfaz [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} utilizando el método que se indica en la [primera parte de esta guía](https://docs.ovh.com/us/es/publiccloud/network-services/public-cloud-vrack/#interfaz-horizon).
 
 Conéctese a su zona de trabajo:
 
 ![region](images/horizon1.png){.thumbnail}
 
-Acceda a `Compute`{.action} y seleccione `Instances`{.action}.
+Acceda a `Compute`{.action} y seleccione `Instances`{.action}:
 
 ![procesamiento y instancia](images/horizon2.png){.thumbnail}
 
@@ -51,8 +51,8 @@ Seleccione la interfaz y acepte:
 
 Antes de continuar, se recomienda consultar estas guías:
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
-- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/).
+- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/us/es/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
+- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/us/es/public-cloud/set-openstack-environment-variables/).
 
 En primer lugar, recopile toda la información necesaria:
 

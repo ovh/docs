@@ -1,62 +1,62 @@
 ---
-title: Activar una licencia Windows para una instancia en modo privado
+title: 'Aktywacja licencji Windows dla instancji w trybie prywatnym'
 slug: activate-windows-licence-private-mode-instance
-excerpt: 'Cómo activar una licencia Windows en una instancia en modo privado'
-section: Primeros pasos
+excerpt: 'Dowiedz się, jak aktywować licencję Windows na instancji w trybie prywatnym'
+section: Pierwsze kroki
 order: 09
 ---
 
-**Última actualización: 01/02/2023**
+**Ostatnia aktualizacja z dnia 02-02-2023**
 
-## Objetivo
+## Wprowadzenie
 
-A diferencia de las instancias Windows creadas en la red pública, las instancias Windows creadas con el modo de red privada (vRack) no tienen sus licencias Windows automáticamente activadas.
-En ese caso, deberá activar la licencia manualmente para poder acceder a todos los servicios Windows.
+W przeciwieństwie do instancji Windows utworzonych w sieci publicznej, instancje Windows utworzone w trybie prywatnej sieci (vRack) nie mają automatycznie włączonych licencji Windows.
+W tym przypadku należy aktywować licencję ręcznie, aby uzyskać dostęp do wszystkich usług Windows.
 
-**Esta guía explica cómo configurar la interfaz pública de las instancias de Public Cloud en el vRack.**
+**Niniejszy przewodnik wyjaśnia, jak skonfigurować publiczny interfejs instancji Public Cloud w ramach usługi vRack.**
 
-## Requisitos
+## Wymagania początkowe
 
-- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- [Haber creado un usuario de OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
+- Posiadanie [projektu Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/)
+- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- [Utworzenie użytkownika OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
 
-Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)" para familiarizarse con Horizon.
+Zalecamy zapoznanie się z przewodnikiem  "[Dostęp do interfejsu Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)" w celu zapoznania się z programem Horizon.
 
-## Procedimiento
+## W praktyce
 
-### Asociar un puerto público "Ext-Net" a una instancia
+### Przypisz publiczny port "Ext-Net" do instancji
 
-#### Desde la interfaz Horizon
+#### W interfejsie Horizon
 
-Conéctese a la interfaz [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} utilizando el método que se indica en la [primera parte de esta guía](./#interfaz-horizon).
+Zaloguj się do interfejsu [Horizon](https://horizon.cloud.ovh.net/auth/login/), postępując zgodnie z instrukcjami zawartymi w [pierwszej części tego przewodnika](https://docs.ovh.com/pl/publiccloud/network-services/public-cloud-vrack/#interfejs-horizon).
 
-Conéctese a su zona de trabajo:
+Zaloguj się do Twojego obszaru pracy:
 
 ![region](images/horizon1.png){.thumbnail}
 
-Acceda a `Compute`{.action} y seleccione `Instances`{.action}.
+Następnie przejdź do `Compute`{.action}, następnie `Instances`{.action}:
 
-![procesamiento y instancia](images/horizon2.png){.thumbnail}
+![compute i instance](images/horizon2.png){.thumbnail}
 
-Para añadir una interfaz, en la columna "Acciones", haga clic en la flecha que le permitirá acceder a las acciones que pueda realizar en la instancia. Haga clic en `Attach Interface`{.action}.
+Aby dodać interfejs, w kolumnie "Actions" kliknij strzałkę umożliwiającą dostęp do operacji, które można wykonać na instancji. Następnie kliknij `Attach Interface`{.action}:
 
-![attach interface](images/horizon3.png){.thumbnail}
+![interfejs](images/horizon3.png){.thumbnail}
 
-Seleccione la interfaz y acepte:
+Wybierz interfejs i zatwierdź:
 
-![interfaz select](images/attachinterfacehorizon.png){.thumbnail}
+![interfejs select](images/attachinterfacehorizon.png){.thumbnail}
 
-#### Desde la API de OpenStack
+#### Z poziomu API OpenStack
 
-Antes de continuar, se recomienda consultar estas guías:
+Przed kontynuowaniem prac zalecamy zapoznanie się z następującymi przewodnikami:
 
-- [Preparar el entorno para utilizar la API de OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
-- [Cargar las variables de entorno necesarias para OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/).
+- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
+- [Zmienne środowiskowe OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/).
 
-En primer lugar, recopile toda la información necesaria:
+Najpierw należy zgromadzić wszystkie niezbędne informacje:
 
-- **Identificación de las instancias**
+- **Identyfikacja twoich instancji**
 
 ```bash
 openstack server list
@@ -68,7 +68,7 @@ openstack server list
 ```
 
 
-- **Identificación de las redes públicas y privadas**
+- **Identyfikacja sieci publicznych i prywatnych**
 
 ```bash
 openstack network list
@@ -82,7 +82,7 @@ openstack network list
 +--------------------------------------+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-Con los elementos recuperados anteriormente, puede crear un puerto público llamado "Ext-Net" en la subnet "Ext-Net" y asociarlo a la instancia:
+Dzięki pobraniu wcześniej elementów możesz utworzyć publiczny port o nazwie "Ext-Net" w podsieci "Ext-Net" i przypisać go do instancji:
 
 ```bash
 openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
@@ -130,7 +130,7 @@ openstack port create --network b2c02fdc-ffdf-40f6-9722-533bd7058c06 Ext-Net
 +-------------------------+----------------------------------------------------------------------------------------+
 ```
 
-Descargue el UUID del puerto Ext-Net :
+Pobierz UUID portu "Ext-Net":
 
 ```bash
 openstack port list --name Ext-Net
@@ -142,46 +142,46 @@ openstack port list --name Ext-Net
 +--------------------------------------+---------+-------------------+---------------------------------------------------------------------------------------+--------+
 ```
 
-Asocie el puerto a la instancia:
+Przypisz port do instancji:
 
 ```bash
 openstack server add port <server_id> <port_id>
 ```
 
-#### Activar su sistema Windows
+#### Włącz system Windows
 
-Para activar su sistema Windows, debe pasar por Powershell.
+Aby włączyć system Windows, należy skorzystać z opcji Powershell.
 
-Una vez que se haya conectado a la instancia Windows, haga clic en el menú `Iniciar`{.action} y seleccione el icono del `Windows PowerShell`{.action}.
+Po zalogowaniu się do instancji Windows kliknij menu `Start`{.action}, a następnie ikonę `Windows PowerShell`{.action}.
 
-Introduzca el siguiente comando:
+Wpisz następujące polecenie:
 
 ```bash
 slmgr.vbs -ato
 ```
 
-![activación de llave windows](images/windowsactivation1.png){.thumbnail}
+![aktywacja klucza windows](images/windowsactivation1.png){.thumbnail}
 
-La licencia Windows se activará durante 180 días.
+Licencja Windows zostanie włączona na 180 dni.
 
-Será necesario repetir esta operación cada 180 días.
+Należy powtarzać tę operację co 180 dni.
 
 > [!primary]
 >
-> Mientras tanto, si quiere aislar su instancia de la red pública, puede desactivar el puerto público creado a través de Horizon o la API de OpenStack.
-> También puede desactivar directamente el puerto de red a través de Windows.
+> W międzyczasie, jeśli chcesz odizolować instancję od sieci publicznej, możesz wyłączyć utworzony publiczny port za pośrednictwem interfejsu Horizon lub API OpenStack.
+> Możesz również bezpośrednio wyłączyć port sieciowy przez system Windows.
 >
 
-Para comprobar el estado y la fecha de expiración de la licencia, utilice el siguiente comando:
+Aby sprawdzić status licencji i datę jej wygaśnięcia, wpisz następujące polecenie:
 
 ```bash
 slmgr.vbs -dli
 ```
 
-![activación de llave windows](images/windowsactivation2.png){.thumbnail}
+![aktywacja klucza windows](images/windowsactivation2.png){.thumbnail}
 
-## Más información
+## Sprawdź również
 
-[Esta guía explica cómo corregir la clave de activación de Windows Server](https://docs.ovh.com/fr/dedicated/windows-key/).
+[Dowiedz się, jak naprawić klucz aktywacyjny systemu Windows Server](https://docs.ovh.com/pl/dedicated/windows-klucz/).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
