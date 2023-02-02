@@ -6,7 +6,7 @@ section: AI Deploy - Tutorials
 order: 09
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 1st February, 2023.**
 
 > [!primary]
 >
@@ -38,6 +38,7 @@ To deploy your app, you need:
 - A [user for AI Deploy](https://docs.ovh.com/us/en/publiccloud/ai/users/).
 - [The OVHcloud AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/) **and** [Docker](https://www.docker.com/get-started) installed on your local computer, **or** only an access to a Debian Docker Instance on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 - To deploy your app, you must have the full code of the application, either by cloning the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), or by having followed our [blog article](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) that taught you how to build this app step by step.
+- If you want the diarization option (speakers differentiation), you will need an access token. This token will be requested at the launch of the application. To create your token, follow the steps indicated on the [model page](https://huggingface.co/pyannote/speaker-diarization). If the token is not specified, the application will be launched without this feature.
 
 ## Instructions
 
@@ -49,7 +50,7 @@ You are going to follow different steps to deploy your **Streamlit Speech to Tex
 - **(Optional) - Import the models and save them locally** in an *Object Storage (volume)* to speed up the initialization of the app.
 - **Deploy your app**.
 
-*If you have cloned the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), you will not need to rewrite the files (requirements.txt, packages.txt and Dockerfile) since you already have them. In this case, you can go directly to the "Build the Docker image" step, even if it is better to understand the global operation.*
+*If you have cloned the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), you will not need to rewrite the files (requirements.txt and Dockerfile) since you already have them. In this case, you can go directly to the "Build the Docker image" step, even if it is better to understand the global operation.*
 
 ### Write the requirements.txt file for the application
 
@@ -73,15 +74,6 @@ pyannote.core==4.4
 pydub==0.25.1
 ```
 
-### Write the packages.txt file
-
-Then, you need to write the `packages.txt` file, which contains general system packages:
-
-```console
-libsndfile1-dev
-ffmpeg
-```
-
 ### Write the Dockerfile for the application
 
 A `Dockerfile` is a text document that contains all the commands a user could call on the command line to build an image.
@@ -94,7 +86,7 @@ FROM python:3.8
 
 We recommend that you do not downgrade the version of python. Indeed, according to *pyannote.audio's* [documentation](https://github.com/pyannote/pyannote-audio), only python 3.8+ is officially supported for the moment.
 
-Then, define the home directory and add all your files (python scripts, requirements.txt, packages.txt, and the Dockerfile) to it thanks to the following commands:
+Then, define the home directory and add all your files (python scripts, requirements.txt and the Dockerfile) to it thanks to the following commands:
 
 ```console
 WORKDIR /workspace
@@ -106,8 +98,7 @@ With AI Deploy, `workspace` will be your home directory.
 We can now install our needed system packages. To do this, use `apt-get`, which is a command-line tool which helps in handling packages:
 
 ```console
-RUN apt-get update
-RUN xargs -a packages.txt apt-get install --yes
+RUN apt-get update && apt-get install -y ffmpeg libsndfile1-dev
 ```
 
 Use a `pip install ...` command to install our needed python modules that are in the `requirements.txt` file:
