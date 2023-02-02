@@ -99,19 +99,19 @@ When NSX-T is deployed in ALPHA version, a virtual IP address is assigned and it
 
 Stay on the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} on the left. in the **Connectivity** category.
 
-![03 Display public vip 01](images/01-nsxt-connection01.png){.thumbnail}
+![03 Display public vip 01](images/03-display-public-vip01.png)){.thumbnail}
 
 Click the scroll button `>`{.action} to the left of **Name** to view the configuration.
 
-![03 Display public vip 02](images/01-nsxt-connection02.png){.thumbnail}
+![03 Display public vip 02](images/03-display-public-vip02.png)){.thumbnail}
 
 Click on the `Number`{.action} to the right of **HA VIP Configuration**.
 
-![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
+![03 Display public vip 03](images/03-display-public-vip03.png)){.thumbnail}
 
 You see the public virtual IP address that can be used in your **NSX-T** configurations, click `Close`{.action} to close this window.
 
-![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
+![03 Display public vip 03](images/03-display-public-vip04.png)){.thumbnail}
 
 ### NAT Default Configuration Information
 

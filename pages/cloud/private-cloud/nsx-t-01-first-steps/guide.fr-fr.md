@@ -89,7 +89,7 @@ En bas à droite vous avez **ovh-segment-nsxpublic**, c'est un segment réseau c
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
-Dans le volet de droite vous avez le sous-réseau utilisé par NSX-T sur le réseau publique.
+Dans le volet de droite vous avez le sous-réseau utilisé par NSX-T sur le réseau public.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
@@ -99,19 +99,19 @@ Lors du déploiement de NSX-T en version ALPHA, une adresse IP virtuelle est aff
 
 Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action}. dans la catégorie **Connectivity**.
 
-![03 Display public vip 01](images/01-nsxt-connection01.png){.thumbnail}
+![03 Display public vip 01](images/03-display-public-vip01.png){.thumbnail}
 
 Cliquez sur le bouton de déroulement `>`{.action} à gauche de **Name** pour afficher la configuration.
 
-![03 Display public vip 02](images/01-nsxt-connection02.png){.thumbnail}
+![03 Display public vip 02](images/03-display-public-vip02.png){.thumbnail}
 
 Cliquez sur le `Numéro`{.action} à droite de **HA VIP Configuration**.
 
-![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
+![03 Display public vip 03](images/03-display-public-vip03.png){.thumbnail}
 
 Vous voyez l'adresse IP virtuelle publique qui est utilisable dans vos configurations **NSX-T**, cliquez sur `Close`{.action} pour fermer cette fenêtre.
 
-![03 Display public vip 03](images/01-nsxt-connection03.png){.thumbnail}
+![03 Display public vip 03](images/03-display-public-vip04.png){.thumbnail}
 
 ### Information sur la configuration par défaut du NAT
 
