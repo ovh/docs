@@ -38,6 +38,8 @@ Gli account email del servizio OVHcloud sono accessibili tramite la password ass
 > [!warning]
 > Per motivi di sicurezza, ti consigliamo di non utilizzare due volte la stessa password, sceglierne una che non ha alcun rapporto con le tue informazioni personali (ad esempio, eviti le indicazioni del tuo cognome, nome e data di nascita) e rinnovarla regolarmente.
 
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona la sezione `Web Cloud`{.action} e segui le indicazioni fornite:
+
 > [!tabs]
 > **Email MXplan (versione storica)**
 >>

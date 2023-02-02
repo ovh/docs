@@ -38,6 +38,8 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 > [!warning]
 > Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło, które nie ma żadnego związku z Twoimi danymi osobistymi (takimi jak nazwisko, imię i data urodzenia) i regularnie je zmieniać.
 
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action} i postępuj zgodnie z instrukcjami zawartymi w Twojej ofercie:
+
 > [!tabs]
 > **E-maile MXplan (wersja historyczna)**
 >>
