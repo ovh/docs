@@ -7,13 +7,58 @@ order: 100
 ---
 
 <style>
-th,
-td:nth-child(-n+2) {
-  white-space:nowrap;
+table thead {
+  display: none;
+}
+table tr {
+  display: block;
+  margin-bottom: 40px;
+}
+table tr:nth-child(2n) {
+  background:none !important;
+}
+table tr:last-child {
+  margin-bottom: 0;
+}
+table td {
+  border-bottom:none !important;
+  box-shadow:inset 13ch 0 0 rgb(241, 241, 241),inset calc(13ch + 1px) 0 0 #59d2ef;
+  display: block;
+  min-height:46px;
+  position: relative;
+  padding-left:14ch !important;
+}
+table td:last-child {
+  border-bottom:1px solid #59d2ef !important;
+}
+table td:before {
+  color: #000;
+  font-weight: 600 !important;
+  left: 0;
+  padding: 0 1ch;
+  position: absolute;
+}
+table td:nth-child(1):before {
+  content:'Parameter';
+}
+table td:nth-child(2):before {
+  content:'Type';
+}
+table td:nth-child(3):before {
+  content:'Minimum';
+}
+table td:nth-child(4):before {
+  content:'Maximum';
+}
+table td:nth-child(5):before {
+  content:'Values';
+}
+table td:nth-child(6):before {
+  content:'Description';
 }
 </style>
 
-**Last updated 28th December 2022**
+**Last updated 6th February 2023**
 
 ## Objective
 
@@ -48,7 +93,7 @@ Below you can find a summary of every configuration option available for Postgre
 #### General parameters
 
 | Parameter | Value Type | Minimum | Maximum | Values | Description |
-|:---|:---:|:---:|:---:|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 | `pg.autovacuum_analyze_scale_factor` | double | 0 | 1 | | Specifies a fraction of the table size to add to autovacuum_analyze_threshold when deciding whether to trigger an ANALYZE. The default is 0.2 (20% of table size) |
 | `pg.autovacuum_analyze_threshold` | long | 0 | 2147483647 | | Specifies the minimum number of inserted, updated or deleted tuples needed to trigger an ANALYZE in any one table. The default is 50 tuples. |
 | `pg.autovacuum_freeze_max_age` | long | 200000000 | 1500000000 | | Specifies the maximum age (in transactions) that a table's pg_class.relfrozenxid field can attain before a VACUUM operation is forced to prevent transaction ID wraparound within the table. Note that the system will launch autovacuum processes to prevent wraparound even when autovacuum is otherwise disabled. This parameter will cause the server to be restarted. |
@@ -65,7 +110,7 @@ Below you can find a summary of every configuration option available for Postgre
 | `pg.deadlock_timeout` | long | 500 | 1800000 | | This is the amount of time, in milliseconds, to wait on a lock before checking to see if there is a deadlock condition. |
 | `pg.default_toast_compression` | string | | | "lz4", "pglz" | Specifies the default TOAST compression method for values of compressible columns (the default is lz4). |
 | `pg.idle_in_transaction_session_timeout` | long | 0 | 604800000 | | Time out sessions with open transactions after this number of milliseconds |
-| `pg.jit` | boolean | Controls system-wide use of Just-in-Time Compilation (JIT). |
+| `pg.jit` | boolean | | | | Controls system-wide use of Just-in-Time Compilation (JIT). |
 | `pg.log_autovacuum_min_duration` | long | -1 | 2147483647 | | Causes each action executed by autovacuum to be logged if it ran for at least the specified number of milliseconds. Setting this to zero logs all autovacuum actions. Minus-one (the default) disables logging autovacuum actions. |
 | `pg.log_error_verbosity` | string | | | "DEFAULT", "TERSE", "VERBOSE" | Controls the amount of detail written in the server log for each message that is logged. |
 | `pg.log_line_prefix` | string | | | "'%m [%p] %q[user=%u,db=%d,app=%a] '", "'%t [%p]: [%l-1] user=%u,db=%d,app=%a,client=%h '", "'pid=%p,user=%u,db=%d,app=%a,client=%h '" | Choose from one of the available log-formats. These can support popular log analyzers like pgbadger, pganalyze etc. |

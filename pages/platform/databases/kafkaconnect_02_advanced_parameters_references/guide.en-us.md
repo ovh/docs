@@ -7,13 +7,58 @@ order: 020
 ---
 
 <style>
-th,
-td:nth-child(-n+2) {
-  white-space:nowrap;
+table thead {
+  display: none;
+}
+table tr {
+  display: block;
+  margin-bottom: 40px;
+}
+table tr:nth-child(2n) {
+  background:none !important;
+}
+table tr:last-child {
+  margin-bottom: 0;
+}
+table td {
+  border-bottom:none !important;
+  box-shadow:inset 13ch 0 0 rgb(241, 241, 241),inset calc(13ch + 1px) 0 0 #59d2ef;
+  display: block;
+  min-height:46px;
+  position: relative;
+  padding-left:14ch !important;
+}
+table td:last-child {
+  border-bottom:1px solid #59d2ef !important;
+}
+table td:before {
+  color: #000;
+  font-weight: 600 !important;
+  left: 0;
+  padding: 0 1ch;
+  position: absolute;
+}
+table td:nth-child(1):before {
+  content:'Parameter';
+}
+table td:nth-child(2):before {
+  content:'Type';
+}
+table td:nth-child(3):before {
+  content:'Minimum';
+}
+table td:nth-child(4):before {
+  content:'Maximum';
+}
+table td:nth-child(5):before {
+  content:'Values';
+}
+table td:nth-child(6):before {
+  content:'Description';
 }
 </style>
 
-**Last updated 28th December 2022**
+**Last updated 6th February 2023**
 
 ## Objective
 
@@ -47,7 +92,7 @@ Please refer to this [guide](https://docs.ovh.com/us/en/publiccloud/databases/ad
 Below you can find a summary of every configuration option available for Kafka Connect service:
 
 | Parameter | Value Type | Minimum | Maximum | Values | Description |
-|:---|:---:|:---:|:---:|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 | `kafka_connect.connector_client_config_override_policy` | string | | | "All", "None" | Defines which client configurations can be overridden by the connector. Default is None |
 | `kafka_connect.consumer_auto_offset_reset` | string | | | "earliest", "latest" | What to do when there is no initial offset in Kafka or if the current offset does not exist any more on the server. Default is earliest |
 | `kafka_connect.consumer_fetch_max_bytes` | long | 1048576 | 104857600 | | Records are fetched in batches by the consumer, and if the first record batch in the first non-empty partition of the fetch is larger than this value, the record batch will still be returned to ensure that the consumer can make progress. As such, this is not a absolute maximum. |

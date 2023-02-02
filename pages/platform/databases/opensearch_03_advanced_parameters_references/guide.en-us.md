@@ -7,13 +7,55 @@ order: 030
 ---
 
 <style>
-th,
-td:nth-child(-n+2) {
-  white-space:nowrap;
+table thead {
+  display: none;
+}
+table tr {
+  display: block;
+  margin-bottom: 40px;
+}
+table tr:nth-child(2n) {
+  background:none !important;
+}
+table tr:last-child {
+  margin-bottom: 0;
+}
+table td {
+  border-bottom:none !important;
+  box-shadow:inset 13ch 0 0 rgb(241, 241, 241),inset calc(13ch + 1px) 0 0 #59d2ef;
+  display: block;
+  min-height:46px;
+  position: relative;
+  padding-left:14ch !important;
+}
+table td:last-child {
+  border-bottom:1px solid #59d2ef !important;
+}
+table td:before {
+  color: #000;
+  font-weight: 600 !important;
+  left: 0;
+  padding: 0 1ch;
+  position: absolute;
+}
+table td:nth-child(1):before {
+  content:'Parameter';
+}
+table td:nth-child(2):before {
+  content:'Type';
+}
+table td:nth-child(3):before {
+  content:'Minimum';
+}
+table td:nth-child(4):before {
+  content:'Maximum';
+}
+table td:nth-child(5):before {
+  content:'Description';
 }
 </style>
 
-**Last updated 28th December 2022**
+**Last updated 6th February 2023**
 
 ## Objective
 
@@ -47,7 +89,7 @@ Please refer to this [guide](https://docs.ovh.com/us/en/publiccloud/databases/ad
 Below you can find a summary of every configuration option available for OpenSearch service:
 
 | Parameter | Value Type | Minimum | Maximum | Description |
-|:---|:---:|:---:|:---:|:---|
+|:---|:---|:---|:---|:---|
 | `opensearch.action_auto_create_index_enabled` | boolean | | | Explicitly allow or block automatic creation of indices. Defaults to true |
 | `opensearch.cluster_max_shards_per_node` | long | 10 | 10000 | Controls the number of shards allowed in the cluster per data node |
 | `opensearch.cluster_routing_allocation_node_concurrent_recoveries` | long | 2 | 16 | How many concurrent incoming/outgoing shard recoveries (normally replicas) are allowed to happen on a node. Defaults to 2. |
