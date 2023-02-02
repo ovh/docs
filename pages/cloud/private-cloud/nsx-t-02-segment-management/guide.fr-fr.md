@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Dernière mise à jour le 27/01/2023**
+**Dernière mise à jour le 02/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -144,9 +144,27 @@ Cliquez sur `NO`{.action}.
 
 Allez dand votre interface vSphere et faites un `clic droit`{.action} sur votre machine virtuelle et choisissez `Modifier les paramètres`{.action}.
 
-![Aff]
+![07 connect VM to VLAN segment 01](images/07-connect-vm-to-vlan-segment01.png){.thumbnail}
 
-Positionnez vous sur votre adapteur réseau et cliquez sur `Parcourir`{.action}.
+Positionnez-vous sur votre adapteur réseau et cliquez sur `Parcourir`{.action}.
+
+![07 connect VM to VLAN segment 02](images/07-connect-vm-to-vlan-segment02.png){.thumbnail}
+
+Cliquez sur le `segment`{.action} associé à votre VLAN et cliquez sur `OK`{.action}.
+
+![07 connect VM to VLAN segment 03](images/07-connect-vm-to-vlan-segment03.png){.thumbnail}
+
+Cliquez sur `OK`{.action} pour valider les changements.
+
+![07 connect VM to VLAN segment 04](images/07-connect-vm-to-vlan-segment04.png){.thumbnail}
+
+### Affichage d'une topologie réseau avec des segments en overlay et d'autres segments sur des VLAN
+
+Revenez dans l'interface NSX-T, allez sur l'onglet `Networking`{.action}, et cliquez à gauche sur `Network Topology`{.action} pour afficher un vue graphique du réseau dans lequel nous ne voyons pas de  connexion entre le segment et la passerelle **ov-T1-gw**.
+
+![08 display network topology vlan overlay01](images/08-display-network-topology-vlan-overlay01.png){.thumbnail}
+
+
 
 
 
