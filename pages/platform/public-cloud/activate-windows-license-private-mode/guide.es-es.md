@@ -188,4 +188,4 @@ slmgr.vbs -dli
 
 [Averigua cómo cambiar la clave de activación de Windows Server](https://docs.ovh.com/es/dedicated/clave-windows/).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
