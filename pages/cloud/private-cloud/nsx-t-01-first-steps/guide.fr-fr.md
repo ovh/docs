@@ -19,7 +19,7 @@ order: 01
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des dificultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Présentation
@@ -28,8 +28,8 @@ NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networ
 
 Lorsqu'un client souscrit à l'offre NSX-T et quelle est activée une pré-configuration est appliquée avec deux passerelles :
 
-* **Tier-0 Gateway** : Pour les connexions entre le cluster et le réseau INTERNET public, que l'on nomme trafic nord-sud.
-* **Tier-1 Gateway** : Pour les communications entre segments virtuels du cluster. Ce type de connexion s'appelle trafic est-ouest.
+* **Tier-0 Gateway** : Pour les connexions entre le cluster et le réseau physique (VLAN et Internet), que l'on nomme trafic nord-sud.
+* **Tier-1 Gateway** : Pour les communications entre segments virtuels (overlays) du cluster. Ce type de connexion s'appelle trafic est-ouest.
 
 Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
 
@@ -76,24 +76,23 @@ Cliquez à gauche sur `Network Topology`{.action}.
 
 ![02 Display network topology 02](images/02-display-network-topology02.png){.thumbnail}
 
-Le schéma ci-dessous représente la topologie réseau avec de haut en bas :
+Le schéma ci-dessous représente la topologie réseau avec ces informations  :
 
-- Les deux interfaces physiques qui permettent une redondance de l'accès Internet en cas de défaillance (Ces deux interfaces utilisent des adresses IP publiques qui ne sont pas utilisables pour la configuration client).
-- La passerelle Nord-Sud qui assurent la liaison entre Le réseau Internet et les réseaux internes de votre cluster.
-- La liaison entre les passerelles **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
-- La passerelle Est-Ouest pour assurer les communication entre les réseaux internes du cluster.
-
-En bas à droite vous avez **ovh-segment-nsxpublic**, c'est un segment réseau connecté au réseau public OVHcloud sur le VLAN 2197 il contient le réseau des adresses publiques utilisable pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce réseau.
+- The two physical interfaces that allow redundancy of internet access in case of failure (Both interfaces use public IP addresses that are not usable for client configuration).
+- The North-South gateway that provides the link between the physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
+- The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
+- The East-West gateway to ensure communication between the cluster’s internal networks (overlay).
+- **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this network.
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
-Dans le volet de droite vous avez le sous-réseau utilisé par NSX-T sur le réseau public.
+Sur le volet de droite vous avez la passerelle du sous-réseau utilisé par NSX-T sur le réseau public. Par défaut cette passerelle est l'adresse IP virtuelle et son masque de sous-réseau.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
 ### Affichage de l'adresse IP virtuelle **HA VIP**
 
-Lors du déploiement de NSX-T en version ALPHA, une adresse IP virtuelle est affectée elle sert aussi pour le SNAT des futurs segments sur le réseau interne du cluster. Nous allons voir comment récupérer cette information.
+Lors du déploiement de NSX-T une adresse IP virtuelle est affectée elle sert aussi pour le SNAT des futurs segments sur le réseau interne du cluster. Nous allons voir comment récupérer cette information. 
 
 Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action}. dans la catégorie **Connectivity**.
 
@@ -113,11 +112,11 @@ Vous voyez l'adresse IP virtuelle publique qui est utilisable dans vos configura
 
 ### Information sur la configuration par défaut du NAT
 
-Une configuration SNAT par défaut est appliquée ce qui permet l'accès Internet à partir des réseaux privés de vos futurs segments.
+Une configuration SNAT par défaut est appliquée, ce qui permet l'accès Internet à partir de tout les réseaux connectés à la passerelle **Tier-0 Gateways** (Ceux en Overlays à partir de la passerelle **Tier-1-Gateways** et ceux qui utilisent un VLAN)
 
 A partir de l'onglet `Networking`{.action} cliquez sur `NAT`{.action} pour afficher la configuration par défaut des règles de NAT.
 
-La règle par défaut pour le **SNAT** montre que l'on utiise l'adresse IP virtuelle pour faire la translation depuis les réseaux internes au cluster.
+La règle par défaut pour le **SNAT** montre que l'on utiise l'adresse IP virtuelle pour faire la translation pour tous les réseaux.
 
 ![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
 

@@ -81,21 +81,20 @@ Left-click on `Network Topology`{.action}.
 The diagram below shows the network topology from top to bottom:
 
 - The two physical interfaces that allow redundancy of internet access in case of failure (Both interfaces use public IP addresses that are not usable for client configuration).
-- The North-South gateway that acts as the link between the Internet network and the internal networks of your cluster.
+- The North-South gateway that provides the link between the physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
 - The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
-- The East-West gateway to ensure communication between the cluster’s internal networks.
-
-In the bottom right you have **ovh-segment-nsxpublic**, it is a network segment connected to the OVHcloud public network on VLAN 2197 it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to display this network.
+- The East-West gateway to ensure communication between the cluster’s internal networks (overlay).
+- **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this network.
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
-In the right pane you have the subnet used by NSX-T on the public network.
+On the right pane you have the gateway of the subnet used by NSX-T on the public network. By default, this gateway is the virtual IP address and its subnet mask.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
 ### Display of virtual IP address **HA VIP**
 
-When NSX-T is deployed in ALPHA version, a virtual IP address is assigned and it also serves for the SNAT of future segments on the cluster’s internal network. We will see how to retrieve this information.
+Lors du déploiement de NSX-T une adresse IP virtuelle est affectée elle sert aussi pour le SNAT des futurs segments sur le réseau interne du cluster. Nous allons voir comment récupérer cette information. 
 
 Stay on the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} on the left. in the **Connectivity** category.
 
@@ -115,7 +114,7 @@ You see the public virtual IP address that can be used in your **NSX-T** configu
 
 ### NAT Default Configuration Information
 
-A default SNAT configuration is applied, which allows Internet access from the private networks of your future segments.
+A default SNAT configuration is applied, which allows Internet access from all networks connected to the **Tier-0 Gateway Gateways** (Those with Overlays from the **Tier-1-Gateway Gateways** and those using a VLAN)
 
 From the `Networking`{.action} tab, click `NAT`{.action} to view the default configuration of NAT rules.
 
