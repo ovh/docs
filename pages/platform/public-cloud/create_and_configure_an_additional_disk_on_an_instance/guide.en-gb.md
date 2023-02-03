@@ -6,11 +6,7 @@ section: Storage
 order: 1
 ---
 
-<<<<<<< HEAD
 **Last updated 2nd February 2023**
-=======
-**Last updated 29th November 2022**
->>>>>>> b0b0d27978a5b85544872d7f26811f1cf0fafb76
 
 ## Objective
 
