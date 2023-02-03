@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Last updated 02th February 2023**
+**Last updated 03th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
