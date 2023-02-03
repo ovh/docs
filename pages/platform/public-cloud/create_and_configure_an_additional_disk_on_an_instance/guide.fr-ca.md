@@ -7,7 +7,7 @@ section: 'Stockage'
 order: 1
 ---
 
-**Dernière mise à jour le 04/01/2023**
+**Dernière mise à jour le 03/02/2023**
 
 ## Objectif
 
