@@ -9,13 +9,55 @@ routes:
 ---
 
 <style>
-th,
-td:nth-child(-n+2) {
-  white-space:nowrap;
+table thead {
+  display: none;
+}
+table tr {
+  display: block;
+  margin-bottom: 40px;
+}
+table tr:nth-child(2n) {
+  background:none !important;
+}
+table tr:last-child {
+  margin-bottom: 0;
+}
+table td {
+  border-bottom:none !important;
+  box-shadow:inset 13ch 0 0 rgb(241, 241, 241),inset calc(13ch + 1px) 0 0 #59d2ef;
+  display: block;
+  min-height:46px;
+  position: relative;
+  padding-left:14ch !important;
+}
+table td:last-child {
+  border-bottom:1px solid #59d2ef !important;
+}
+table td:before {
+  color: #000;
+  font-weight: 600 !important;
+  left: 0;
+  padding: 0 1ch;
+  position: absolute;
+}
+table td:nth-child(1):before {
+  content:'Parameter';
+}
+table td:nth-child(2):before {
+  content:'Type';
+}
+table td:nth-child(3):before {
+  content:'Minimum';
+}
+table td:nth-child(4):before {
+  content:'Maximum';
+}
+table td:nth-child(5):before {
+  content:'Description';
 }
 </style>
 
-**Last updated 28th December 2022**
+**Last updated 6th February 2023**
 
 ## Objective
 
@@ -48,11 +90,11 @@ Please refer to this [guide](https://docs.ovh.com/fr/publiccloud/databases/advan
 
 Below you can find a summary of every configuration option available for Cassandra service:
 
-| Parameter | Value Type | Description |
-|:---|:---:|:---|
-| `cassandra.batch_size_fail_threshold_in_kb` | long | Fail any multiple-partition batch exceeding this value. 50kb (10x warn threshold) by default. |
-| `cassandra.batch_size_warn_threshold_in_kb` | long | Log a warning message on any multiple-partition batch size exceeding this value. 5kb per batch by default. Caution should be taken on increasing the size of this threshold as it can lead to node instability. |
-| `cassandra.datacenter` | string | Name of the datacenter to which nodes of this service belong. Can be set only when creating the service. |
+| Parameter | Value Type | Minimum | Maximum | Description |
+|:---|:---|:---|:---|:---|
+| `cassandra.batch_size_fail_threshold_in_kb` | long | 1 | 1000000 | Fail any multiple-partition batch exceeding this value. 50kb (10x warn threshold) by default. |
+| `cassandra.batch_size_warn_threshold_in_kb` | long | 1 | 1000000 | Log a warning message on any multiple-partition batch size exceeding this value. 5kb per batch by default. Caution should be taken on increasing the size of this threshold as it can lead to node instability. |
+| `cassandra.datacenter` | string | | | Name of the datacenter to which nodes of this service belong. Can be set only when creating the service. |
 
 
 ## Go further
