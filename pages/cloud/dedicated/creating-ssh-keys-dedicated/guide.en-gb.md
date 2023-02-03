@@ -21,9 +21,9 @@ Please note that SSH keys are not used for authentication on servers running the
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
-- administrative access (root) via SSH
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- Administrative access (root) via SSH
 
 ## Instructions
 
@@ -189,7 +189,7 @@ If you have copied the full output, the identifier after the key should already 
 If you have added multiple SSH keys in your control panel, it is possible to set one key to be used as the default key on the account. 
 
 > [!warning]
-> Please note that once a default key is set, it will also be used as the means connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 
+> Please note that once a default key is set, it will also be used as the means of connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 
 > 
 
 Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
