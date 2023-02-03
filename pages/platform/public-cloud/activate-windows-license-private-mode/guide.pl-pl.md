@@ -8,6 +8,10 @@ order: 09
 
 **Ostatnia aktualizacja z dnia 02-02-2023**
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
 ## Wprowadzenie
 
 W przeciwieństwie do instancji Windows utworzonych w sieci publicznej, instancje Windows utworzone w trybie prywatnej sieci (vRack) nie mają automatycznie włączonych licencji Windows.
@@ -21,7 +25,7 @@ W tym przypadku należy aktywować licencję ręcznie, aby uzyskać dostęp do w
 - Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - [Utworzenie użytkownika OpenStack](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/)
 
-Zalecamy zapoznanie się z przewodnikiem  "[Dostęp do interfejsu Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)" w celu zapoznania się z programem Horizon.
+Zalecamy zapoznanie się z przewodnikiem  "[Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)" w celu zapoznania się z programem Horizon.
 
 ## W praktyce
 

@@ -8,6 +8,10 @@ order: 09
 
 **Última atualização: 02/02/2023**
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 Contrariamente às instâncias Windows criadas na rede pública, as instâncias Windows criadas com o modo de rede privada (vRack) não têm as suas licenças Windows automaticamente ativadas.

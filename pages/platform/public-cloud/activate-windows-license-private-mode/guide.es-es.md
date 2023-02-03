@@ -8,6 +8,10 @@ order: 09
 
 **Última actualización: 02/02/2023**
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
 A diferencia de las instancias Windows creadas en la red pública, las instancias Windows creadas con el modo de red privada (vRack) no tienen sus licencias Windows automáticamente activadas.
@@ -19,9 +23,9 @@ En ese caso, deberá activar la licencia manualmente para poder acceder a todos 
 
 - Un [proyecto de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- [Haber creado un usuario de OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
+- [Haber creado un usuario de OpenStack](https://docs.ovh.com/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
 
-Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)" para familiarizarse con Horizon.
+Le recomendamos que consulte la guía "[Acceder a Horizon](https://docs.ovh.com/es/public-cloud/horizon/)" para familiarizarse con Horizon.
 
 ## Procedimiento
 
