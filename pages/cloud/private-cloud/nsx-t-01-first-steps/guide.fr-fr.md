@@ -78,11 +78,11 @@ Cliquez à gauche sur `Network Topology`{.action}.
 
 Le schéma ci-dessous représente la topologie réseau avec ces informations  :
 
-- The two physical interfaces that allow redundancy of internet access in case of failure (Both interfaces use public IP addresses that are not usable for client configuration).
-- The North-South gateway that provides the link between the physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
-- The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
-- The East-West gateway to ensure communication between the cluster’s internal networks (overlay).
-- **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this network.
+- Les deux interfaces physiques qui permettent une redondance de l'accès Internet en cas de défaillance (Ces deux interfaces utilisent des adresses IP publiques qui ne sont pas utilisables pour la configuration client).
+- La passerelle Nord-Sud qui assurent la liaison entre Le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
+- La liaison entre les passerelles **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
+- La passerelle Est-Ouest pour assurer les communications entre les réseaux internes (overlay) du cluster.
+- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce réseau.
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
