@@ -48,7 +48,6 @@ Please note that Kafka Connect and Kafka Mirrormaker 2 aren't available so far.
 
 Three plans are available:
 
-- *Essential*
 - *Business*
 - *Enterprise*
 
@@ -79,6 +78,7 @@ Here are the node types you can choose from:
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
+| db1-4   | 480       | 2     | 4           |
 | db1-7   | 960       | 2     | 7           |
 | db1-15  | 1920      | 4     | 15          |
 | db1-30  | 3840      | 8     | 30          |
