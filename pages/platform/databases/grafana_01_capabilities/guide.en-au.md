@@ -87,11 +87,6 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
 
-
-#### Advanced parameters
-
-We do not currently support Grafana advanced parameters.
-
 #### Backups
 
 *Essential* plan clusters are automatically backed up daily during their backup window. Backup retention is 1 day.
