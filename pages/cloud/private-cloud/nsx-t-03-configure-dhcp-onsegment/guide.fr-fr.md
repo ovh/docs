@@ -14,12 +14,12 @@ order: 03
 
 ## Objectif
 
-**Comment faire pour configurer un serveur DHCP dans un segment**
+**Comment faire pour configurer un serveur DHCP dans un segment Overlay ou VLAN**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis
@@ -29,62 +29,97 @@ order: 03
 - Avoir **NSX-T** déployé avec un segment de type overlay configuré dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
 
 
-
 ## En pratique
 
-Nous allons configurer un serveur DHCP sur un segment connecté à **OVH-T1-gw**. Ce segment est configuré avec une passerelle en **192.168.1.254/24**.
+Nous allons configurer le DHCP pour un segment en Overlay derrière la passerelle **ovh-t1-gw** et pour un segment sur un VLAN sur la passerelle **ovh-t0-gw**. 
 
-### Configuration commune du DHCP pour tous les segment de type overlay
+### Configuration commune du DHCP pour tous les segments de type overlay
 
+Tout d'abord nous allons créer une serveur DCHP commun à tous les segments en Overlay.
 
+Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `DHCP`{.action} à gauche dans la rubrique **IP Management**. Ensuite cliquez sur `ADD DHCP PROFILE`{.action}.
+
+![01 Common DHCP configuration 01](images/01-common-dhcp-configuration01.png){.thumbnail}
+
+Saisissez un `Nom`{.action} dans **Name** et cliquez sur `SAVE`{.action}
+
+![01 Common DHCP configuration 02](images/01-common-dhcp-configuration02.png){.thumbnail}
+
+Le serveur DCHP est actif il utilise une réseau en 100.96.0.1/30, n'utilisez pas ce réseau dans un de vos segments.
+
+![01 Common DHCP configuration 03](images/01-common-dhcp-configuration03.png){.thumbnail}
 
 ### Affectation du DHCP à passerelle **ovh-t1-gateway**
 
+Toujours dans l'onglet `Networking`{.action} cliquez sur `Tier-1-Gateways`{.action} à gauche dans la rubrique **Connectivity**.
+
+![02 Attach DHCP to OVHT1 GATEWAY 01](images/02-attach-dhcp-to-ovht1-gateway01.png){.thumbnail}
+
+Cliquez sur les `trois petits points`{.action} et choisissez `Edit`{.action} dans le menu.
+
+![01 Common DHCP configuration 04](images/`Set DHCP Configuration`{.action}.
+
+![02 Attach DHCP to OVHT1 GATEWAY 02](images/02-attach-dhcp-to-ovht1-gateway02.png){.thumbnail}
+
+Cliquez sur `Set DHCP Configuration`{.action}.
+
+![02 Attach DHCP to OVHT1 GATEWAY 03](images/02-attach-dhcp-to-ovht1-gateway03.png){.thumbnail}
+
+Choississez `DHCP Server`{.action} dans **Type**, et votre `configuration DHCP`{.action} dans **DHCP Server Profile**. Ensuite cliquez sur `SAVE`{.action}.
+
+![02 Attach DHCP to OVHT1 GATEWAY 04](images/02-attach-dhcp-to-ovht1-gateway04.png){.thumbnail}
+
+Cliquez sur `SAVE`{.action}.
+
+![02 Attach DHCP to OVHT1 GATEWAY 05](images/02-attach-dhcp-to-ovht1-gateway05.png){.thumbnail}
+
+Cliquez sur `CLOSE EDITING`{.action}.
+
+![02 Attach DHCP to OVHT1 GATEWAY 06](images/02-attach-dhcp-to-ovht1-gateway06.png){.thumbnail}
+
 ### Mise en place du DHCP sur un segment de type Overlay
 
-A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche.
+A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**
 
-![01 add DHCP ON Segment 01](images/01-add-dhcp-on-segment01.png){.thumbnail}
+![03 add DHCP ON Segment 01](images/03-add-dhcp-on-segment01.png){.thumbnail}
 
-Cliquez sur l'icône de configuration indiqué avec `trois points verticaux`{.action} à gauche de votre segment et choisissez `Edit`{.action}.
+Allez dans la rubrique `Segments`{.action}, cliquez sur l'icône de configuration indiqué avec `trois points verticaux`{.action} à gauche de votre segment et choisissez `Edit`{.action}.
 
-![01 add DHCP ON Segment 02](images/01-add-dhcp-on-segment02.png){.thumbnail}
+![03 add DHCP ON Segment 01](images/03-add-dhcp-on-segment01.png){.thumbnail}
 
 Cliquez sur `Set DHCP CONFIG`{.action}.
 
-![01 add DHCP ON Segment 03](images/01-add-dhcp-on-segment03.png){.thumbnail}
+![03 add DHCP ON Segment 02](images/03-add-dhcp-on-segment02.png){.thumbnail}
 
-Choisissez à gauche `Local DHCP Server`{.action} dans **DHCP Type**. Ensuite cliquez à droite de **DHCP Profile** sur l'icône de configuration avec `trois points verticaux`{.action} et choisissez `Create New`{.action}.
+Remplissez ces informations :
 
-![01 add DHCP ON Segment 04](images/01-add-dhcp-on-segment04.png){.thumbnail}
+* **DHCP Type** : Laissez `Gateway DHCP Server`{.action}.
+* **DHCP Ranges** : Saisissez votre étendue `192.168.1.10-192.168.1.200`{.action}.
+* **DNS Servers** : Ecrivez le DHCP OVHcloud `2&3.186.33.99`{.action}.
 
-Choisissez ces informations :
+Et cliquez sur `APPLY`{.action}.
 
-***Name**: Nom de votre serveur DHCP.
-***Server IP Address**: L'adresse IP de votre serveur DHCP, qui ne doit pas être la même que l'adresse IP de votre passerelle sous la forme 192.168.1.253/24.
-***Edge Cluster**: Sélectionnez votre cluster edge.
+![03 add DHCP ON Segment 03](images/03-add-dhcp-on-segment03.png){.thumbnail}
 
-Et cliquez sur `Save`{.action}.
+Cliquez sur `SAVE`{.action}.
 
-![01 add DHCP ON Segment 05](images/01-add-dhcp-on-segment05.png){.thumbnail}
+![03 add DHCP ON Segment 04](images/03-add-dhcp-on-segment04.png){.thumbnail}
 
-Saisissez ces valeurs :
+Cliquez sur `CLOSE EDITIND`{.action}.
 
-* **DHCP Server Address** : Adresse du serveur DHCP 192.168.1.253/24 (Ce doit être la même adresse que dans le profil DHCP).
-* **DHCP Range** : Etendue de votre serveur DHCP avec l'adresse du début et de fin séparés par un tiret 192.168.1.10-192.168.1.200.
-* **DNS Server** : Serveur DNS OVHcloud 213.186.33.99.
+![03 add DHCP ON Segment 05](images/03-add-dhcp-on-segment05.png){.thumbnail}
 
-Ensuite cliquez sur `APPLY`{.action}.
+Les machines virtuelles sur ce segment peuvent maintenant être configurées en DHCP.
 
-![01 add DHCP ON Segment 06](images/01-add-dhcp-on-segment06.png){.thumbnail}
+### Mise en place du DCHP sur un segment de type VLAN
 
-Les machines virtuelles sur ce segment peuvent maintenant être configuré en DHCP.
+Nous allons activer un serveur DHCP sur un segment de type VLAN connecté 
 
 ## Aller plus loin
 
 [Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
 
-[Gestion des segment dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+[Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
