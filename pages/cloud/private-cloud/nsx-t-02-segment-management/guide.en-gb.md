@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Last updated 03rd February 2023**
+**Last updated 06th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -19,7 +19,7 @@ order: 02
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
 ## Requirements
@@ -32,7 +32,8 @@ order: 02
 
 In an NSX-T solution a segment is a virtual level 2 domain (previously named logical switch) it can be of two types :
 
-* **VLAN-backed segments** : The communication between the hosts and the VMs must be through VLANs and a level 2 switch. This type of segment is completely isolated inside the VLAN, it is not possible to connect them to the gateways **ovh-T1-gw** and **ovh-T0-gw**.
+* **VLAN-backed segments** : Communication between hosts and VMs must be done through VLANs and a level 2 switch. In order for this VLAN to communicate with elements of NSX-T (Internet and overlay segments behind the gateway **ovh-T1-gw**) you will need to make a modification on the gateway **ovh-t0-gw**.
+
 * **Overlay-backed segments**: the connection is made using a software layer that establishes tunnels between hosts and virtual machines. When configuring a segment of this type, it is mandatory to add an address in a subnet to allow communication outside that segment. They must be connected to the gateway **ovh-T1-gw**.
 
 The segments are linked to transport zones that are predefined by OVHcloud.
@@ -118,17 +119,17 @@ Return to the NSX-T interface in `Network Topology`{.action} to bring up the new
 
 Both segments are connected to the gateway **ovh-T1-gw**, routing between the two subnets is enabled without any network restrictions by default.
 
-### Création d'un segment sur un VLAN 
+### Creating a Segment on a VLAN 
 
-Through the NSX-T interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section.
+Through the NSX-T interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section.ace de NSX-T cliquez allez sur l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**.
 
 ![06 Add vlan segment 01](images/06-add-vlan-segment01.png){.thumbnail}
 
 Fill in this information :
 
-* **Name** : Type `vlan100-vrack-segment`.
-* **Transport Zone** : Sélectionnez `vlan100-vrack-segment`.
-* **VLAN** : Type the number `100`.
+* **Name** : Type 'vlan100-vrack-segment'.
+* **Transport Zone** : Select 'vlan100-vrack-segment'.
+* **VLAN** : Write the number '100'.
 
 Then click `SAVE`{.action}.
 
@@ -138,29 +139,82 @@ Click `NO`{.action}.
 
 ![06 Add vlan segment 03](images/06-add-vlan-segment03.png){.thumbnail}
 
-### Assigning a VLAN Segment to a Virtual Machine
+### Connecting a VLAN segment to the gateway **ovh-T0-gw**
 
-Allez dans votre interface vSphere et faites un `clic droit`{.action} sur votre machine virtuelle et choisissez `Edit Settings`{.action}.
+You can route the network from a VLAN segment to the Internet and the Overlay segments by creating interfaces on the **ovh-T0-gw** gateway. Each interface will have a private IP address that will serve as a gateway.
 
-![07 connect VM to VLAN segment 01](images/07-connect-vm-to-vlan-segment01.png){.thumbnail}
+> ![warning]
+> This guide will show you how to create two interfaces with two IP addresses in the same subnet on the **Edge Node**. Warning only the IP address that is on the active **Edge Node** will be usable to be able to route outside the VLAN. In the planned evolutions of NSX-T it will be possible to create a virtual IP address that will work on any of the **Edge Node**.
+
+In our example, we will use these values :
+
+
+* **VLAN Subnet**: 192.168.100.0/24
+* **Private IP address for the first Edge Node**: 192.168.100.252
+* **Private IP address for the second Edge Node**: 192.168.100.253
+* **Future virtual IP address** : 192.168.100.254
+
+Through the NSX-T interface go to the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} on the left in the **Connectivity** section and in the gateway settings click on the `Number`{.action} on the left of **External and Service Interfaces**.
+
+![07 add interfaces to ovh-T0-gw with vlan 01](images/07-add-interfaces-to-ovh0-gw-with-vlan01.png){.thumbnail}
+
+Click `ADD INTERFACE`{.action}.
+
+![07 add interfaces to ovh-T0-gw with vlan 02](images/07-add-interfaces-to-ovh0-gw-with-vlan02.png){.thumbnail}
+
+Choisissez ces informations :
+
+* **Name** : Type `vlan100-e1` as the name of your interface.
+* **Type** : Select `External`.
+* **IP Address** : Enter the IP address of the first EDGE `192.168.100.252`.
+* **Connected To(Segment)** : Take the segment that is on vlan 100 on the vrack named `vlan100-vrack-segment`.
+* **Edge Node** : Select the first `Edge Node`.
+
+Then click `SAVE`{.action} to confirm the creation of the interface on **ovh-t0-gw**.
+
+![07 add interfaces to ovh-T0-gw with vlan 03](images/07-add-interfaces-to-ovh0-gw-with-vlan03.png){.thumbnail}
+
+You will see the new interface, click again on `ADD INTERFACE`{.action}.
+
+![07 add interfaces to ovh-T0-gw with vlan 04](images/07-add-interfaces-to-ovh0-gw-with-vlan04.png){.thumbnail}
+
+Choose this information :
+
+* **Name** : Type `vlan100-e2` as the name of your interface.
+* **Type** : Select `External`.
+* **IP Address** : Enter the IP address of the second EDGE `192.168.100.253`.
+* **Connected To(Segment)** : Take the segment that is on vlan 100 on the vrack named `vlan100-vrack-segment`.
+* **Edge Node** : Select the second `Edge Node`.
+
+Then click `SAVE`{.action} to confirm the creation of the interface on **ovh-t0-gw**.
+
+![07 add interfaces to ovh-T0-gw with vlan 05](images/07-add-interfaces-to-ovh0-gw-with-vlan03.png){.thumbnail}
+
+The configuration is complete if you have two active interfaces on VLAN 100, it is now possible to route outside this segment. on one of the two created addresses.
+
+### Affectation d'un segment de type VLAN à une machine virtuelle
+
+Go to your vSphere interface and `right-click`{.action} on your virtual machine and choose `Change settings`{.action}.
+
+![08 connect VM to VLAN segment 01](images/08-connect-vm-to-vlan-segment01.png){.thumbnail}
 
 Go to your network adapter and click `Browse`{.action}.
 
-![07 connect VM to VLAN segment 02](images/07-connect-vm-to-vlan-segment02.png){.thumbnail}
+![08 connect VM to VLAN segment 02](images/08-connect-vm-to-vlan-segment02.png){.thumbnail}
 
 Click the `segment`{.action} associated with your VLAN and click `OK`{.action}.
 
-![07 connect VM to VLAN segment 03](images/07-connect-vm-to-vlan-segment03.png){.thumbnail}
+![08 connect VM to VLAN segment 03](images/08-connect-vm-to-vlan-segment03.png){.thumbnail}
 
 Click `OK`{.action} to commit the changes.
 
-![07 connect VM to VLAN segment 04](images/07-connect-vm-to-vlan-segment04.png){.thumbnail}
+![08 connect VM to VLAN segment 04](images/08-connect-vm-to-vlan-segment04.png){.thumbnail}
 
-### Displaying a network topology with overlay segments and other segments on VLANs
+### Affichage d'une topologie réseau avec des segments en overlay et d'autres segments sur des VLAN
 
-Go back to the NSX-T interface, go to the `Networking`{.action} tab, and click on `Network Topology`{.action} on the left to display a graphical view of the network in which we do not see a connection between the VLAN segment and the gateway **ov-T1-gw**.
+Go back to the NSX-T interface, go to the `Networking`{.action} tab, and click on `Network Topology`{.action} on the left to view a graphical view of the network. In the NSX-T network topology, the trunks on the VLAN are not displayed, but they do exist as shown in orange on the diagram.
 
-![08 display network topology vlan overlay01](images/08-display-network-topology-vlan-overlay01.png){.thumbnail}
+![09 display network topology vlan overlay01](images/09-display-network-topology-vlan-overlay01.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
 

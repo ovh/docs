@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Dernière mise à jour le 03/02/2023**
+**Dernière mise à jour le 06/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -139,11 +139,57 @@ Cliquez sur `NO`{.action}.
 
 ![06 Add vlan segment 03](images/06-add-vlan-segment03.png){.thumbnail}
 
-### Connexion d'un segment de type VLAN à la passerelle **ovh-T0**
+### Connexion d'un segment de type VLAN à la passerelle **ovh-T0-gw**
 
+Il est possible de router le réseau venant d'un segment de type VLAN vers Internet et les segments de type Overlay en créant des interfaces sur la passerelle **ovh-T0-gw**. Chaque interface aura une adresse IP privée qui servira de passerelle.
 
+> ![warning]
+> Ce guide vous montre comment créer deux interfaces avec deux adresses IP dans un même sous-réseau sur les **Edge Node**. Attention seule l'adresse IP qui se trouve sur la **Edge Node** active sera utilisable pour pouvoir faire du routage à l'extérieur du VLAN. Dans les évolutions prévues de NSX-T il sera possible créer une adresse IP virtuelle qui fonctionnera sur n'importe lesquelles des **Edge Node**.
 
+Dans notre exemple nous allons utiliser ces informations :
 
+* **Sous réseau du VLAN** : 192.168.100.0/24.
+* **Adresse IP privée pour le premier Edge Node** : 192.168.100.252.
+* **Adresse IP privée pour le deuxième Edge Node** : 192.168.100.253.
+* **Future adresse IP virtuelle** : 192.168.100.254.
+
+Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Tier-0 Gateways`{.action} à gauche dans la rubrique **Connectivity** et dans les paramètres de la passerelle cliquez sur le `Numéro`{.action} à gauche de **External and Service Interfaces**.
+
+![07 add interfaces to ovh-T0-gw with vlan 01](images/07-add-interfaces-to-ovh0-gw-with-vlan01.png){.thumbnail}
+
+Cliquez sur `ADD INTERFACE`{.action}.
+
+![07 add interfaces to ovh-T0-gw with vlan 02](images/07-add-interfaces-to-ovh0-gw-with-vlan02.png){.thumbnail}
+
+Choisissez ces informations :
+
+* **Name** : Saisissez `vlan100-e1` comme nom de votre interfaces.
+* **Type** : Sélectionnez `External`.
+* **IP Address** : saisissez l'adresse IP du premier EDGE `192.168.100.252`
+* **Connected To(Segment)** : Prenez le segment qui est sur le vlan 100 sur le vrack nommé `vlan100-vrack-segment`.
+* **Edge Node** : Sélectionnez le premier `Edge Node`.
+
+Ensuite cliquez sur `SAVE`{.action} pour valider la création de l'interface sur **ovh-t0-gw**.
+
+![07 add interfaces to ovh-T0-gw with vlan 03](images/07-add-interfaces-to-ovh0-gw-with-vlan03.png){.thumbnail}
+
+Vous voyez apparaitre la nouvelle interface, cliquez à nouveau sur `ADD INTERFACE`{.action}.
+
+![07 add interfaces to ovh-T0-gw with vlan 04](images/07-add-interfaces-to-ovh0-gw-with-vlan04.png){.thumbnail}
+
+Choisissez ces informations :
+
+* **Name** : Saisissez `vlan100-e2` comme nom de votre interfaces.
+* **Type** : Sélectionnez `External`.
+* **IP Address** : saisissez l'adresse IP du deuxième EDGE `192.168.100.253`
+* **Connected To(Segment)** : Prenez le segment qui est sur le vlan 100 sur le vrack nommé `vlan100-vrack-segment`.
+* **Edge Node** : Sélectionnez le second `Edge Node`.
+
+Ensuite cliquez sur `SAVE`{.action} pour valider la création de l'interface sur **ovh-t0-gw**.
+
+![07 add interfaces to ovh-T0-gw with vlan 05](images/07-add-interfaces-to-ovh0-gw-with-vlan03.png){.thumbnail}
+
+La configuration est terminée vous avec deux interfaces actives sur le VLAN 100, il est maintenant possible de faire du routage à l'extérieur de ce segment. sur l'une des deux adresses créée.
 
 ### Affectation d'un segment de type VLAN à une machine virtuelle
 
@@ -165,7 +211,7 @@ Cliquez sur `OK`{.action} pour valider les changements.
 
 ### Affichage d'une topologie réseau avec des segments en overlay et d'autres segments sur des VLAN
 
-Revenez dans l'interface NSX-T, allez sur l'onglet `Networking`{.action}, et cliquez à gauche sur `Network Topology`{.action} pour afficher un vue graphique du réseau dans lequel nous ne voyons pas de  connexion entre le segment de type VLAN et la passerelle **ov-T1-gw**.
+Revenez dans l'interface NSX-T, allez sur l'onglet `Networking`{.action}, et cliquez à gauche sur `Network Topology`{.action} pour afficher un vue graphique du réseau. Dans la topologie réseau de NSX-T les liaisons sur le VLAN ne sont pas affichées mais elles existent bien comme indiqué en orange sur le schéma.
 
 ![09 display network topology vlan overlay01](images/09-display-network-topology-vlan-overlay01.png){.thumbnail}
 
