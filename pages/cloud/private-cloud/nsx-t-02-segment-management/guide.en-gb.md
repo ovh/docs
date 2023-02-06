@@ -121,7 +121,7 @@ Both segments are connected to the gateway **ovh-T1-gw**, routing between the tw
 
 ### Creating a Segment on a VLAN 
 
-Through the NSX-T interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section.ace de NSX-T cliquez allez sur l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**.
+Through the NSX-T interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section.
 
 ![06 Add vlan segment 01](images/06-add-vlan-segment01.png){.thumbnail}
 
@@ -210,7 +210,7 @@ Click `OK`{.action} to commit the changes.
 
 ![08 connect VM to VLAN segment 04](images/08-connect-vm-to-vlan-segment04.png){.thumbnail}
 
-### Affichage d'une topologie réseau avec des segments en overlay et d'autres segments sur des VLAN
+### Displaying a network topology with overlay segments and other segments on VLANs
 
 Go back to the NSX-T interface, go to the `Networking`{.action} tab, and click on `Network Topology`{.action} on the left to view a graphical view of the network. In the NSX-T network topology, the trunks on the VLAN are not displayed, but they do exist as shown in orange on the diagram.
 
