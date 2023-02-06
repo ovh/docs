@@ -84,7 +84,7 @@ The diagram below shows the network topology from top to bottom:
 - The North-South gateway (**ovh-t0-gw**) that provides the link between The physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
 - The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
 - The East-West gateway (**ovh-t1-gw**) that manages communications between the cluster’s internal networks (overlay segments).
-- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce réseau.
+-  **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this segment. You can find more information about segments in this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
@@ -99,7 +99,7 @@ This segment contains two pieces of information :
 
 We will show you how to display the virtual IP addresses attached to the **ovh-t0-gw** gateway.
 
-Only one virtual IP address is assigned when NSX-T is delivered, it is the public address that is used for SNAT from Internet access on the segments attached to the gateway **ovh-t0-gw**.
+Only one virtual IP address is assigned when NSX-T is delivered. It is used for SNAT on the segments attached to the gateway **ovh-t0-gw**.
 
 
 > ![Primary]

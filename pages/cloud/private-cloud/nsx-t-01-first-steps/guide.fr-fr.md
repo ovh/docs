@@ -82,12 +82,8 @@ Le schéma ci-dessous représente la topologie réseau avec ces informations :
 - La passerelle Nord-Sud (**ovh-t0-gw**) qui assure la liaison entre Le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
 - La liaison entre les passerelles **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
 - La passerelle Est-Ouest (**ovh-t1-gw**) qui gère les communications entre les réseaux internes (segments de type overlay) du cluster.
-- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce réseau.
+- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce segment. Vous trouverez plus d'informations concernant les segments dans ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management)
 
-
-> ![primary]
-> Vous trouverez plus d'informations concernant les segments dans ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management)
-> 
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
@@ -102,7 +98,7 @@ Ce segment contient deux informations :
 
 Nous allons voir comment afficher les adresses IP virtuelles attachées à la passerelle **ovh-t0-gw**.
 
-Une seule adresse IP virtuelle est affectée lors de la livraison de NSX-T, c'est l'adresse publique qui sert pour le SNAT à partir des accès vers Internet sur les segments attachés à la passerelle **ovh-t0-gw**.
+Une seule adresse IP virtuelle est affectée lors de la livraison de NSX-T, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-t0-gw**.
 
 > ![Primary]
 > Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles, mais cette fonctionalité devrait être bientôt disponible.
