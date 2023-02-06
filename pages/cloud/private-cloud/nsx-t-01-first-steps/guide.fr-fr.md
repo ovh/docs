@@ -90,7 +90,7 @@ Le schéma ci-dessous représente la topologie réseau avec ces informations :
 Ce segment contient deux informations :
 
 * L'adresse IP publique virtuelle **HA VIP**.
-* Le numéro VLAN utilisé sur votre réseau public de votre cluster cluster vSphere.
+* Le numéro VLAN utilisé sur votre réseau public de votre cluster vSphere.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
@@ -101,10 +101,10 @@ Nous allons voir comment afficher les adresses IP virtuelles attachées à la pa
 Une seule adresse IP virtuelle est affectée lors de la livraison de NSX-T, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-t0-gw**.
 
 > ![Primary]
-> Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles, mais cette fonctionalité devrait être bientôt disponible.
+> Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles, mais cette fonctionnalité devrait être bientôt disponible.
 > 
 
-Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action}. dans la catégorie **Connectivity**.
+Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action} dans la catégorie **Connectivity**.
 
 ![03 Display public vip 01](images/03-display-public-vip01.png){.thumbnail}
 
@@ -126,7 +126,7 @@ Une configuration SNAT par défaut est appliquée, ce qui permet l'accès Intern
 
 A partir de l'onglet `Networking`{.action} cliquez sur `NAT`{.action} pour afficher la configuration par défaut des règles de NAT.
 
-La règle par défaut pour le **SNAT** montre que l'on utiise l'adresse IP virtuelle pour faire la translation pour tous les réseaux.
+La règle par défaut pour le **SNAT** montre que l'on utilise l'adresse IP virtuelle pour faire la translation pour tous les réseaux.
 
 ![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
 

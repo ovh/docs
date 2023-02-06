@@ -106,7 +106,7 @@ Only one virtual IP address is assigned when NSX-T is delivered. It is used for 
 > For now it is not possible to create new virtual IP addresses, but this feature should be available soon.
 > 
 
-Stay on the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} on the left. in the **Connectivity** category.
+Stay on the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} on the left in the **Connectivity** category.
 
 ![03 Display public vip 01](images/03-display-public-vip01.png)){.thumbnail}
 
