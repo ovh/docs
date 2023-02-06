@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Dernière mise à jour le 03/02/2023**
+**Dernière mise à jour le 06/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -19,12 +19,12 @@ order: 01
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des dificultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Présentation
 
-NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. Pour le fonctionnement de NSX-T en version ALPHA deux hôtes sont déployés avec sur chacun une machine virtuelle dédiée à NSX-T ce qui permet une redondance en cas de défaillance d'un des hôtes.
+NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. Deux hôtes sont déployés avec sur chacun une machine virtuelle dédiée à NSX-T ce qui permet une redondance en cas de défaillance d'un des hôtes.
 
 Lorsqu'un client souscrit à l'offre NSX-T et quelle est activée une pré-configuration est appliquée avec deux passerelles :
 
@@ -76,23 +76,37 @@ Cliquez à gauche sur `Network Topology`{.action}.
 
 ![02 Display network topology 02](images/02-display-network-topology02.png){.thumbnail}
 
-Le schéma ci-dessous représente la topologie réseau avec ces informations  :
+Le schéma ci-dessous représente la topologie réseau avec ces informations :
 
 - Les deux interfaces physiques qui permettent une redondance de l'accès Internet en cas de défaillance (Ces deux interfaces utilisent des adresses IP publiques qui ne sont pas utilisables pour la configuration client).
-- La passerelle Nord-Sud qui assurent la liaison entre Le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
+- La passerelle Nord-Sud (**ovh-t0-gw**) qui assure la liaison entre Le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
 - La liaison entre les passerelles **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
-- La passerelle Est-Ouest pour assurer les communications entre les réseaux internes (overlay) du cluster.
+- La passerelle Est-Ouest (**ovh-t1-gw**) qui gère les communications entre les réseaux internes (segments de type overlay) du cluster.
 - **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce réseau.
+
+
+> ![primary]
+> Vous trouverez plus d'informations concernant les segments dans ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management)
+> 
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
-Sur le volet de droite vous avez la passerelle du sous-réseau utilisé par NSX-T sur le réseau public. Par défaut cette passerelle est l'adresse IP virtuelle et son masque de sous-réseau.
+Ce segment contient deux informations :
+
+* L'adresse IP publique virtuelle **HA VIP**.
+* Le numéro VLAN utilisé sur votre réseau public de votre cluster cluster vSphere.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
 ### Affichage de l'adresse IP virtuelle **HA VIP**
 
-Lors du déploiement de NSX-T une adresse IP virtuelle est affectée elle sert aussi pour le SNAT des futurs segments sur le réseau interne du cluster. Nous allons voir comment récupérer cette information. 
+Nous allons voir comment afficher les adresses IP virtuelles attachées à la passerelle **ovh-t0-gw**.
+
+Une seule adresse IP virtuelle est affectée lors de la livraison de NSX-T, c'est l'adresse publique qui sert pour le SNAT à partir des accès vers Internet sur les segments attachés à la passerelle **ovh-t0-gw**.
+
+> ![Primary]
+> Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles, mais cette fonctionalité devrait être bientôt disponible.
+> 
 
 Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action}. dans la catégorie **Connectivity**.
 
@@ -112,7 +126,7 @@ Vous voyez l'adresse IP virtuelle publique qui est utilisable dans vos configura
 
 ### Information sur la configuration par défaut du NAT
 
-Une configuration SNAT par défaut est appliquée, ce qui permet l'accès Internet à partir de tout les réseaux connectés à la passerelle **Tier-0 Gateways** (Ceux en Overlays à partir de la passerelle **Tier-1-Gateways** et ceux qui utilisent un VLAN)
+Une configuration SNAT par défaut est appliquée, ce qui permet l'accès Internet à partir de tous les réseaux connectés à la passerelle **ovh-T0-gw**, ceux qui sont reliés au travers de segment de type VLAN et ceux qui sont en overlay à partir de la passerelle **ovh-T1-gw**.
 
 A partir de l'onglet `Networking`{.action} cliquez sur `NAT`{.action} pour afficher la configuration par défaut des règles de NAT.
 
@@ -123,5 +137,7 @@ La règle par défaut pour le **SNAT** montre que l'on utiise l'adresse IP virtu
 Vous venez de voir la configuration par défaut. Vous pouvez consultez les autres guides OVHcloud concernant NSX-T pour créer des segments, gérer le DHCP, faire de la redirection de port en DNAT, du Load balancing, du VPN, etc...
 
 ## Aller plus loin
+
+[Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

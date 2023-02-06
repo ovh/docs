@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Last updated 03th February 2023**
+**Last updated 06th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -19,7 +19,7 @@ order: 01
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
 ## Overview
@@ -81,20 +81,30 @@ Left-click on `Network Topology`{.action}.
 The diagram below shows the network topology from top to bottom:
 
 - The two physical interfaces that allow redundancy of internet access in case of failure (Both interfaces use public IP addresses that are not usable for client configuration).
-- The North-South gateway that provides the link between the physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
+- The North-South gateway (**ovh-t0-gw**) that provides the link between The physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
 - The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
-- The East-West gateway to ensure communication between the cluster’s internal networks (overlay).
-- **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this network.
+- The East-West gateway (**ovh-t1-gw**) that manages communications between the cluster’s internal networks (overlay segments).
+- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce réseau.
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
-On the right pane you have the gateway of the subnet used by NSX-T on the public network. By default, this gateway is the virtual IP address and its subnet mask.
+This segment contains two pieces of information :
+
+* The virtual public IP address **HA VIP**.
+* The VLAN number used on your public network in your vSphere cluster.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
 ### Display of virtual IP address **HA VIP**
 
-Lors du déploiement de NSX-T une adresse IP virtuelle est affectée elle sert aussi pour le SNAT des futurs segments sur le réseau interne du cluster. Nous allons voir comment récupérer cette information. 
+We will show you how to display the virtual IP addresses attached to the **ovh-t0-gw** gateway.
+
+Only one virtual IP address is assigned when NSX-T is delivered, it is the public address that is used for SNAT from Internet access on the segments attached to the gateway **ovh-t0-gw**.
+
+
+> ![Primary]
+> For now it is not possible to create new virtual IP addresses, but this feature should be available soon.
+> 
 
 Stay on the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} on the left. in the **Connectivity** category.
 
@@ -114,7 +124,7 @@ You see the public virtual IP address that can be used in your **NSX-T** configu
 
 ### NAT Default Configuration Information
 
-A default SNAT configuration is applied, which allows Internet access from all networks connected to the **Tier-0 Gateway Gateways** (Those with Overlays from the **Tier-1-Gateway Gateways** and those using a VLAN)
+A default SNAT configuration is applied, which allows Internet access from all networks connected to the gateway **ovh-T0-gw**, those connected through VLAN segment and those overlay from the gateway **ovh-T1-gw**.
 
 From the `Networking`{.action} tab, click `NAT`{.action} to view the default configuration of NAT rules.
 

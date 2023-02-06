@@ -19,7 +19,7 @@ order: 02
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis
@@ -32,7 +32,8 @@ order: 02
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
-* **VLAN-backed segments** : La communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2. Ce type de segment est totalement isolé à l'intérieur du VLAN, il n'est pas possible de les connecter aux passerelles **ovh-T1-gw** et **ovh-T0-gw**.
+* **VLAN-backed segments** : La communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2. Pour que ce VLAN puisse communiquer avec les éléments de NSX-T (Internet et les segments overlay derrière la passerelle **ovh-T1-gw**) vous devrez faire une modification sur la passerelle **ovh-t0-gw**.
+
 * **Overlay-backed segments** : La connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment. Ils doivent être connectés à la passerelle **ovh-T1-gw**.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
@@ -138,29 +139,35 @@ Cliquez sur `NO`{.action}.
 
 ![06 Add vlan segment 03](images/06-add-vlan-segment03.png){.thumbnail}
 
+### Connexion d'un segment de type VLAN à la passerelle **ovh-T0**
+
+
+
+
+
 ### Affectation d'un segment de type VLAN à une machine virtuelle
 
 Allez dans votre interface vSphere et faites un `clic droit`{.action} sur votre machine virtuelle et choisissez `Modifier les paramètres`{.action}.
 
-![07 connect VM to VLAN segment 01](images/07-connect-vm-to-vlan-segment01.png){.thumbnail}
+![08 connect VM to VLAN segment 01](images/08-connect-vm-to-vlan-segment01.png){.thumbnail}
 
 Positionnez-vous sur votre adapteur réseau et cliquez sur `Parcourir`{.action}.
 
-![07 connect VM to VLAN segment 02](images/07-connect-vm-to-vlan-segment02.png){.thumbnail}
+![08 connect VM to VLAN segment 02](images/08-connect-vm-to-vlan-segment02.png){.thumbnail}
 
 Cliquez sur le `segment`{.action} associé à votre VLAN et cliquez sur `OK`{.action}.
 
-![07 connect VM to VLAN segment 03](images/07-connect-vm-to-vlan-segment03.png){.thumbnail}
+![08 connect VM to VLAN segment 03](images/08-connect-vm-to-vlan-segment03.png){.thumbnail}
 
 Cliquez sur `OK`{.action} pour valider les changements.
 
-![07 connect VM to VLAN segment 04](images/07-connect-vm-to-vlan-segment04.png){.thumbnail}
+![08 connect VM to VLAN segment 04](images/08-connect-vm-to-vlan-segment04.png){.thumbnail}
 
 ### Affichage d'une topologie réseau avec des segments en overlay et d'autres segments sur des VLAN
 
 Revenez dans l'interface NSX-T, allez sur l'onglet `Networking`{.action}, et cliquez à gauche sur `Network Topology`{.action} pour afficher un vue graphique du réseau dans lequel nous ne voyons pas de  connexion entre le segment de type VLAN et la passerelle **ov-T1-gw**.
 
-![08 display network topology vlan overlay01](images/08-display-network-topology-vlan-overlay01.png){.thumbnail}
+![09 display network topology vlan overlay01](images/09-display-network-topology-vlan-overlay01.png){.thumbnail}
 
 ## Aller plus loin
 
