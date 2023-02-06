@@ -23,7 +23,7 @@ Nous avons conçu les classes de stockages S3 pour qu’elles soient **compatibl
 | Object Storage S3 - High Performance |`https://s3.<region>.perf.cloud.ovh.net` | Gravelines: gra<br>Strasbourg: sbg<br>Beauharnois: bhs |
 | Object Storage SWIFT - Standard - Legacy |`https://s3.<region>.cloud.ovh.net` | Strasbourg: sbg<br>London: uk<br>Frankfurt: de<br>Warsaw: waw<br>Beauharnois: bhs<br>Gravelines: gra |
 
-Le point de terminaison des bucket est une URL, par exemple `https://my-bucket.s3.gra.perf.cloud.ovh.net` qui représente un point de terminaison de style « hôte virtuel ».
+Le point de terminaison des bucket est une URL, par exemple `https://my-bucket.s3.gra.perf.cloud.ovh.net` qui représente un point de terminaison de style « hôte virtuel ». <Br> Des localisations sont également ouvertes aux Etats-Unis. Vous trouverez le détail des endpoints de la plaque Amérique dans la documentation suivante <https://support.us.ovhcloud.com/hc/en-us/articles/10667991081107-Endpoints-and-Object-Storage-Geoavailability>
 
 ## Aller plus loin
 
