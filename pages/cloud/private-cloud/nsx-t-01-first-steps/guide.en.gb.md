@@ -93,6 +93,8 @@ This segment contains two pieces of information :
 * The virtual public IP address **HA VIP**.
 * The VLAN number used on your public network in your vSphere cluster.
 
+Connections through VLANs do not appear in the NSX-T network topology, you can see the addition on the diagram that shows the connection between the ovh-segment-nspublic segment and the ovh-T0-gw gateway through the two default interfaces.
+
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
 ### Display of virtual IP address **HA VIP**
