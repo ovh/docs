@@ -38,6 +38,8 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 > [!warning]
 > Por motivos de seguridad, le recomendamos que no utilice dos veces la misma contraseña, que elija una que no guarde ninguna relación con sus datos personales (evite mencionar su nombre, apellidos y fecha de nacimiento, por ejemplo) y que la cambie periódicamente.
 
+Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda al apartado `Web Cloud`{.action} y siga las indicaciones de su solución:
+
 > [!tabs]
 > **MXplan (versión histórica)**
 >>

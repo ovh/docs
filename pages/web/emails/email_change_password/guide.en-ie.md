@@ -39,6 +39,8 @@ You can access your OVHcloud email accounts using the password associated with t
 > [!warning]
 > For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Web Cloud`{.action} section, then follow the instructions for your solution
+
 > [!tabs]
 > **MX Plan email (legacy version)**
 >>

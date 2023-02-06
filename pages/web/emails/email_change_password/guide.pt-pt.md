@@ -38,6 +38,8 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 > [!warning]
 > Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe, selecione uma palavra-passe que não tenha qualquer relação com as suas informações pessoais (evite as menções do seu apelido, nome próprio e data de nascimento, por exemplo) e que a renove regularmente.
 
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action} e siga as instruções indicadas na oferta:
+
 > [!tabs]
 > **E-mails MXplan (versão histórica)**
 >>

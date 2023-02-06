@@ -173,7 +173,7 @@ Si vous avez copié l'intégralité de la chaine, l'identifiant qui suit la clé
 > Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](../../public-cloud/premiers-pas-instance-public-cloud).
 >
 
-### Définir une clé SSH par défaut (uniquement pour la section « Dédiés »)
+### Définir une clé SSH par défaut (uniquement pour la section « Dédiés ») <a name="cpsshkey"></a>
 
 Si vous avez ajouté plusieurs clés SSH dans votre espace client, il est possible de définir une clé à utiliser comme clé par défaut sur le compte.
 

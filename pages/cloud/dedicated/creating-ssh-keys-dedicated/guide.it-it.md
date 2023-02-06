@@ -173,7 +173,7 @@ Se hai copiato per intero il risultato, l’identificativo che segue la chiave d
 > Qualsiasi chiave salvata nella sezione “Dedicato” potrà essere utilizzata anche per il tuo VPS. Per le chiavi SSH relative ai servizi Public Cloud, consulta [questa guida](../../public-cloud/primi-passi-public-cloud).
 >
 
-### Imposta una chiave SSH predefinita (solo per la l'universo "Dedicated")
+### Imposta una chiave SSH predefinita (solo per la l'universo "Dedicated") <a name="cpsshkey"></a>
 
 Se hai aggiunto più chiavi SSH nel tuo Spazio Cliente, è possibile definire una chiave da utilizzare come chiave predefinita sull'account.
 
