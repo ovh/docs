@@ -142,7 +142,7 @@ rescue-customer:~# fdisk -l
 rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
-Si vous possédez des datastores de type `VMFS 6`, vous devez installer l'outil `vmfs6-tools` manuellement dans l'environnement mode rescue :
+Si vous possédez des datastores de type `VMFS 6`, vous devez installer manuellement l'outil `vmfs6-tools` dans l'environnement du mode rescue :
 
 ```bash
 rescue-customer:~# apt-get update && apt-get upgrade
@@ -153,7 +153,7 @@ rescue-customer:~# apt-get update && apt-get upgrade
 # make install
 ```
 
-Accéder au dossier `sbin` pour créer le dossier de montage :
+Accédez au dossier `sbin` pour créer le dossier de montage :
 
 ```bash
 rescue-customer:~# cd /usr/local/sbin/
