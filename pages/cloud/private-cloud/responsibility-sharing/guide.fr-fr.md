@@ -31,7 +31,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Dimensionner les serveurs en fonction des besoins | RA | I |
 | Choisir les logiciels VMware (vSphere, vROps, vScope, vSAN, NSX, TKG…) en fonction des besoins | RA | I |
 | Décider de la version des logiciels VMware à utiliser | I | RA |
-| Concevoir le projet de manière à ne pas stocker de données persistantes importantes en local (les nœuds sont gérés en mode cattle) | A |  |
 
 ### 2. Mise à disposition du service
 
