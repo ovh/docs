@@ -42,7 +42,7 @@ Le piratage d'un site Web est systématiquement lié à **au moins** l'un des po
 - un logiciel espion présent sur l'un des appareils que vous utilisez pour administrer votre site web ;
 - l'utilisation d'un plugin ou d'un thème « non officiel », notamment si vous utilisez un Content Managment System (CMS) comme WordPress, Joomla!, PrestaShop ou Drupal ;
 - des mots de passe (FTP, SQL, « back-office » pour les CMS, etc) trop courts ou trop faciles à trouver, d'autant plus lorsqu'ils ne sont jamais changés ;
-- un script de votre site qui ouvre délibérément des ports au niveau de votre hébergement Web **sans** vérifier ce qui reçu par ces ports ;
+- un script de votre site qui ouvre délibérément des ports au niveau de votre hébergement Web **sans** vérifier ce qui est reçu par ces ports ;
 - des droits d'accès FTP « CHMOD » un peu trop permissifs.
 
 **Le piratage d'un site Web ne vient pas d'un défaut de sécurité de l'hébergement web.** Seuls les scripts/fichiers qu'il héberge sont en capacité de donner des ordres à l'hébergement. Ils peuvent lui demander ou non d'ouvrir certains ports d'accès fermés par défaut ou d'exécuter ou non certaines actions.<br>

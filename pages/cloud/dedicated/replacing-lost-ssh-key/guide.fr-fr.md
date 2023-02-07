@@ -1,18 +1,18 @@
 ---
-title: "Remplacement de votre paire de clés SSH perdue"
+title: "Remplacer une paire de clés SSH perdue"
 slug: dedicated-replacing-lost-ssh-key-pair
 excerpt: "Découvrez comment récupérer l’accès SSH à votre serveur dédié"
 section: Diagnostic et mode Rescue
 order: 2
 ---
 
-**Dernière mise à jour le 30 janvier 2023**
+**Dernière mise à jour le 06/02/2023**
 
 ## Objectif
 
 Si vous [utilisez des clés SSH](https://docs.ovh.com/fr/dedicated/changer-mot-passe-root-linux-sur-serveur-dedie/) pour vous connecter à votre serveur dédié, la perte de votre clé SSH privée pourrait signifier la perte totale d'accès à votre serveur.
 
-Vous pouvez cependant vous connecter à votre serveur via le [mode rescue d'OVHcloud](https://docs.ovh.com/fr/dedicated/ovh-rescue/), avec un mot de passe provisoire et ainsi vous permettre de modifier vos fichiers.
+Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHcloud](https://docs.ovh.com/fr/dedicated/ovh-rescue/), grâce à un mot de passe provisoire qui vous permettra de modifier vos fichiers.
 
 **Découvrez comment remplacer vos clés SSH en cas de perte d'accès à votre serveur.**
 
@@ -30,33 +30,33 @@ Vous pouvez cependant vous connecter à votre serveur via le [mode rescue d'OVHc
 
 ## En pratique
 
-### Étape 1 : Désactiver la clé SSH actuelle
+### Étape 1 - Désactiver la clé SSH actuelle
 
 Afin d'accéder à votre serveur en mode rescue, la clé SSH active doit d'abord être désactivée.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et naviguez jusqu'à la section `Clés SSH`{.action}. Aidez-vous de notre [« Changer le mot de passe root sur un serveur dédié »](https://docs.ovh.com/fr/dedicated/changer-mot-passe-root-linux-sur-serveur-dedie/#cpsshkey) si nécessaire.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et naviguez jusqu'à la section `Clés SSH`{.action}. Aidez-vous de notre guide [« Changer le mot de passe root sur un serveur dédié »](https://docs.ovh.com/fr/dedicated/changer-mot-passe-root-linux-sur-serveur-dedie/#cpsshkey) si nécessaire.
 
-La clé publique stockée dans l'espace client est inutile sans la clé privée correspondante, vous pouvez la supprimer. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de la clé et sélectionnez `Supprimer la clé`{.action}.
+La clé publique stockée dans l'espace client est inutile sans la clé privée correspondante, vous pouvez donc la supprimer. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de la clé et sélectionnez `Supprimer la clé`{.action}.
 
 ![Supprimer la clé](images/replace-lost-key-01.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, cliquez sur `Confirmer`{.action}.
 
-### Étape 2 : Créer une nouvelle paire de clés
+### Étape 2 - Créer une nouvelle paire de clés
 
-Comme dans la première partie du guide [« Changer le mot de passe root sur un serveur dédié »](https://docs.ovh.com/fr/dedicated/changer-mot-passe-root-linux-sur-serveur-dedie/), créez une nouvelle paire de clés SSH sur votre appareil.
+Créez une nouvelle paire de clés SSH sur votre poste de travail, tel que décrit dans la première partie du guide [« Changer le mot de passe root sur un serveur dédié »](https://docs.ovh.com/fr/dedicated/changer-mot-passe-root-linux-sur-serveur-dedie/)
 
-### Étape 3 : Accédez à votre serveur en mode rescue et remplacez la clé
+### Étape 3 - Accéder à votre serveur en mode rescue et remplacer la clé
 
-Suivez les étapes du guide  pour vous connecter à votre serveur et monter vos partitions.
+Suivez les étapes du guide sur le [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/) pour vous connecter à votre serveur et monter vos partitions.
 
 Lorsque vous avez accès à vos fichiers, ouvrez le fichier « authorized_keys » concerné dans un éditeur de texte. Ce fichier stocke les clés SSH et se trouve dans le dossier `home` de l'utilisateur connecté à votre serveur. (Remplacez « USER_NAME » par votre nom d'utilisateur.)
 
-```
+```bash
 rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
-Copiez et collez votre nouvelle clé publique (créée à l'étape 2) dans le fichier. Le contenu du fichier devrait ressembler à l'exemple suivant :
+Copiez-collez votre nouvelle clé publique (créée à l'étape 2) dans le fichier. Le contenu du fichier devrait ressembler à l'exemple suivant :
 
 ```console
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
@@ -65,7 +65,7 @@ ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
 EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
-Vous pouvez supprimer la chaîne de clé « old » du fichier, désormais obsolète. Enregistrez et quittez l'éditeur.
+Vous pouvez supprimer la chaîne de clé « old » (désormais obsolète) du fichier. Enregistrez et quittez l'éditeur.
 
 Revenez au mode de démarrage « normal » et redémarrez le serveur dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Consultez le guide [« Activer et utiliser le mode rescue »](https://docs.ovh.com/fr/dedicated/ovh-rescue/) si nécessaire.
 
