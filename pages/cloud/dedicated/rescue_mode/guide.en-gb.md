@@ -147,7 +147,7 @@ Now mount the partition with the following command, replacing `sdbX` with the va
 rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
-If you have `VMFS 6 datastores`, you need to install `vmfs6-tools` manually in the rescue mode environment:
+If you have `VMFS 6` datastores, you need to manually install the `vmfs6-tools` in the rescue mode environment:
 
 ```bash
 rescue-customer:~# apt-get update && apt-get upgrade
