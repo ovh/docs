@@ -11,7 +11,7 @@ kb: Hosted Private Cloud
 
 ## Objective
 
-The RACI below details shared responsibilities between OVHcloud and the customer . This model is designed to help the customer make the best use of the VMware on OVHcloud service
+The RACI below details shared responsibilities between OVHcloud and the customer. This model is designed to help the customer make the best use of the VMware on OVHcloud service
 
 | Roles |
 | --- |
@@ -40,7 +40,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Produce, route, deliver and maintain physical machines and hosting buildings | I | RA |
 | Install and configure the functional building blocks internal to the dedicated server that are necessary for maintaining operational conditions and security conditions (firmware, BIOS, BMC, IPMI, etc.). |  | RA |
-| urchase and own the licenses and rights of use for the OS used | I | RA  |
+| Purchase and own the licenses and rights of use for the OS used | I | RA  |
 | Deploy initial network configuration to devices | I | RA |
 | Install the vCenter | I | RA |
 | Supply TKGm templates  | I | RA |
@@ -87,12 +87,12 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Monitor the proper functioning of physical devices (utilities) supporting the vCenter | I | RA |
 | Monitor physical resource performance | RA | R |
-| Process and clear alarms from managed devices on the | I | RA |
+| Process and clear alarms from managed devices on the vCenter | I | RA |
 | Keep logs of the information system hosted on the vCenter |  | RA |
 | Keep logs of the Control Plane that monitors the vCenter |  | RA |
 | Monitor the performance of the services installed on the vCenter | RA |  |
 | Monitor the performance of the service TKGm | RA |  |
-| Adapt resources allocated as per the measured performances | RA | I |
+| Adapt resources allocated as per the measured performances and expectations | RA | I |
 | Supply infrastructure's log (API, hypervisor, cluster, kubernetes) | I | RA |
 | Verify the right application of backup policies | RA |  |
 
