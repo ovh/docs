@@ -27,7 +27,7 @@ section: Network
  }
 </style>
 
-**Last updated 1st February 2023**
+**Last updated 7th February 2023**
 
 ## Objective
 
@@ -55,7 +55,7 @@ Log in to the API Explorer using your OVHcloud NIC handle.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the API Explorer, you will see the available endpoints:
+If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/kube~GET) of the API Explorer, you will see the available endpoints:
 
 ![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
 
@@ -177,7 +177,7 @@ You can take a look to the [Kube-proxy default values](https://github.com/kubern
 }
 ```
 
-Both kubeProxyMode and customization.* can be modified on cluster reset with the same payload used for creation.
+Both `kubeProxyMode` and `customization` fields can be modified on cluster reset with the same payload used for creation.
 
 If these fields are not specified, it will reset to default value (ipvs for kubeProxyMode and empty customization).
 
@@ -231,7 +231,7 @@ If these fields are not specified, it will reset to default value (ipvs for kube
 
 > [!primary]
 >
-> Updating customization.kubeProxy will trigger the following actions:
+> Updating `customization.kubeProxy` field will trigger the following actions:
 >
 > - apply updated configMap
 > - then rollout restart kube-proxy so it uses the new configuration
