@@ -20,20 +20,20 @@ Questa guida ti mostra come configurare alcune funzionalità del tuo hosting Web
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/fr-ca/) o [l'amministratore del CMS WordPress](https://wordpress.com/fr/support/){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/) o [l'amministratore del CMS WordPress](https://wordpress.com/it/support/){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
 
 **Questa guida ti mostra come proteggere il tuo WordPress con uno o più file htaccess.**
 
 ## Prerequisiti
 
-- Disporre di un [hosting Web](https://www.ovhcloud.com/fr-ca/web-hosting/) e aver installato WordPress
-- Essere in grado di utilizzare un client FTP come [FileZilla](https://filezilla-project.org/) Consulta la guida [Utilizzare FileZilla per recuperare e salvare i tuoi dati](https://docs.ovh.com/ca/fr/dedicated/deposer-et-recuperer-donnees-via-sftp/#utiliser-filezilla-pour-recuperer-et-deposer-vos-donnees).
+- Disporre di un [hosting Web](https://www.ovhcloud.com/it/web-hosting/) e aver installato WordPress
+- Essere in grado di utilizzare un client FTP come [FileZilla](https://filezilla-project.org/) Consulta la guida [Utilizzare FileZilla per recuperare e salvare i tuoi dati](https://docs.ovh.com/it/dedicated/caricare-e-recuperare-dati-via-sftp/#utilizza-filezilla-per-recuperare-e-salvare-i-tuoi-dati).
 
 I file **.htaccess** possono essere creati e modificati con editor di testo come:
 
-- [Blocco note](https://support.microsoft.com/fr-ca/windows/aide-de-bloc-notes-windows-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} di Windows
-- [TextEdit](https://support.apple.com/fr-ca/guide/textedit/welcome/mac){.external} su macOS 
+- [Blocco note](https://support.microsoft.com/it-it/windows/assistenza-per-blocco-note-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} di Windows
+- [TextEdit](https://support.apple.com/it-it/guide/textedit/welcome/mac){.external} su macOS 
 - [Notepad++](https://notepad-plus-plus.org/){.external}.
 
 ## FAQ
@@ -42,7 +42,7 @@ I file **.htaccess** possono essere creati e modificati con editor di testo come
 
 Un file **.htaccess** permette di configurare un server Web. Nel caso di un hosting web condiviso, si tratta del server web open source "**Apache**". La sintassi di questo file è definita dall'organismo che modifica e mantiene **Apache**. A differenza della maggior parte dei file di configurazione di un server, i file **.htaccess** sono situati nelle directory dei siti Web, nello spazio di storage FTP del tuo hosting Web. Un file **.htaccess** avrà effetti sulla directory in cui è presente e su tutte le sottocartelle presenti all'interno.
 
-Le nostre offerte di hosting condivisi non autorizzano i file di configurazione server. Tuttavia, i file **.htaccess** danno la possibilità di modificare alcune caratteristiche e comportamenti. Inoltre, non è necessario riavviare il server **Apache** affinché le indicazioni e le modifiche scritte nel file **.htaccess** siano prese in carico. Tutte le nostre offerte di [hosting web condiviso OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) permettono di configurare file **.htaccess*.
+Le nostre offerte di hosting condivisi non autorizzano i file di configurazione server. Tuttavia, i file **.htaccess** danno la possibilità di modificare alcune caratteristiche e comportamenti. Inoltre, non è necessario riavviare il server **Apache** affinché le indicazioni e le modifiche scritte nel file **.htaccess** siano prese in carico. Tutte le nostre offerte di [hosting web condiviso OVHcloud](https://www.ovhcloud.com/it/web-hosting/) permettono di configurare file **.htaccess*.
 
 Il punto davanti al nome del file **.htaccess** (senza estensione) designa un file nascosto. Questi file non sono accessibili da utenti esterni che accedono al tuo sito Web.
 
@@ -107,7 +107,7 @@ Esistono diversi modi per definire e modificare i parametri che cambieranno il c
 
 > [!warning]
 >
-> Prima di seguire gli step qui sotto, è necessario reindirizzare il protocollo HTTP verso HTTPS. Per effettuare questa operazione, segui le istruzioni contenute nella guida [Attivare il protocollo HTTPS su un sito Internet tramite SSL](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement).
+> Prima di seguire gli step qui sotto, è necessario reindirizzare il protocollo HTTP verso HTTPS. Per effettuare questa operazione, segui le istruzioni contenute nella guida [Attivare il protocollo HTTPS su un sito Internet tramite SSL](https://docs.ovh.com/it/hosting/attivare-https-su-sito-internet-tramite-certificato-ssl/#step-1-attiva-il-certificato-ssl-sullhosting).
 
 ### Impedire la visualizzazione delle directory e delle sottodirectory
 
@@ -129,7 +129,7 @@ Il tuo file **wp-config.php**, presente alla radice del tuo sito Web, contiene i
 </Files>
 ```
 
-Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["restrizione di accesso via IP tramite il file.htaccess"](https://docs.ovh.com/ca/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["restrizione di accesso via IP tramite il file.htaccess"](https://docs.ovh.com/it/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 ### Blocca un indirizzo IP
 
@@ -144,7 +144,7 @@ Se hai identificato un indirizzo IP malevolo, inserisci la riga nel tuo file **.
 
 In questo esempio `xxx.xxx.xxx.xxx` indica l'indirizzo IP da bloccare.
 
-Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["restrizione di accesso via IP tramite il file.htaccess"](https://docs.ovh.com/ca/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["restrizione di accesso via IP tramite il file.htaccess"](https://docs.ovh.com/it/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 #### Blocca un indirizzo IP dalla directory wp-admin (o nelle altre directory)
 
@@ -167,4 +167,4 @@ La directory **wp-admin** permette di accedere alla tua interfaccia di amministr
 
 ## Spingiti oltre <a name="go-further"></a>
 
-Consulta il [tutorial disponibile sul sito della Fondazione Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
+Consulta il [tutorial disponibile sul sito della Fondazione Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).

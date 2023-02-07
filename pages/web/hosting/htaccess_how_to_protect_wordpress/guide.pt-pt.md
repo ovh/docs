@@ -20,20 +20,20 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/fr-ca/) ou [editor do CMS WordPress](https://wordpress.com/fr/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se precisar de ajuda, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) ou [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
 >
 
 **Descubra como proteger o seu WordPress com um ou vários ficheiros htaccess.**
 
 ## Requisitos
 
-- Ter um [alojamento web](https://www.ovhcloud.com/fr-ca/web-hosting/) e ter instalado o WordPress.
-- Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla para recuperar e registar os seus dados](https://docs.ovh.com/ca/fr/dedicated/deposer-et-recuperer-donnees-via-sftp/#utiliser-filezilla-pour-recuperer-et-deposer-vos-donnees)".
+- Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e ter instalado o WordPress.
+- Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla para recuperar e registar os seus dados](https://docs.ovh.com/pt/dedicated/carregar-e-descarregar-dados-atrav%C3%A9s-de-sftp/#utilizar-o-filezilla-para-recuperar-e-registar-os-seus-dados)".
 
 Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto como:
 
-- [Bloco de notas](https://support.microsoft.com/fr-ca/windows/aide-de-bloc-notes-windows-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} do Windows;
-- [Text Edit](https://support.apple.com/fr-ca/guide/textedit/welcome/mac){.external} em macOS; 
+- [Bloco de notas](https://support.microsoft.com/pt-pt/windows/ajuda-no-bloco-de-notas-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} do Windows;
+- [Text Edit](https://support.apple.com/pt-pt/guide/textedit/welcome/mac){.external} em macOS; 
 - [Notepad+](https://notepad-plus-plus.org/){.external}.
 
 ## FAQ
@@ -42,7 +42,7 @@ Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto
 
 Um ficheiro **.htaccess** permite configurar um servidor web. No caso de um alojamento web partilhado, trata-se do servidor web open source "**Apache**". A sintaxe deste ficheiro é definida pelo organismo que edita e mantém **Apache**. Contrariamente à maioria dos ficheiros de configuração de um servidor, os ficheiros **.htaccess** estão localizados nos diretórios dos websites, mais precisamente no espaço de armazenamento FTP do seu alojamento web. Um ficheiro **.htaccess** terá efeitos no diretório no qual está presente, bem como em todos os sub-diretórios presentes no interior.
 
-As nossas ofertas de alojamento partilhado não permitem os ficheiros de configuração do servidor. No entanto, os ficheiros **.htaccess** dão a possibilidade de modificar certas características e comportamentos. Além disso, não é necessário reiniciar o servidor **Apache** para que as indicações e modificações escritas no ficheiro **.htaccess** sejam tomadas em conta. O conjunto das nossas ofertas de [alojamento web partilhado OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) permitem configurar ficheiros **.htaccess**.
+As nossas ofertas de alojamento partilhado não permitem os ficheiros de configuração do servidor. No entanto, os ficheiros **.htaccess** dão a possibilidade de modificar certas características e comportamentos. Além disso, não é necessário reiniciar o servidor **Apache** para que as indicações e modificações escritas no ficheiro **.htaccess** sejam tomadas em conta. O conjunto das nossas ofertas de [alojamento web partilhado OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) permitem configurar ficheiros **.htaccess**.
 
 O ponto em frente ao nome do ficheiro **.htaccess** (que não tem extensão por si) designa um ficheiro escondido. Além disso, estes ficheiros não são acessíveis aos utilizadores externos que acedem ao seu website.
 
@@ -107,7 +107,7 @@ Existem várias formas de definir e modificar os parâmetros que irão modificar
 
 > [!warning]
 >
-> Antes de seguir os passos abaixo, é necessário reencaminhar o protocolo HTTP para HTTPS. Para isso, siga as instruções do nosso manual ["Ativar o HTTPS num website com certificado SSL"](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement).
+> Antes de seguir os passos abaixo, é necessário reencaminhar o protocolo HTTP para HTTPS. Para isso, siga as instruções do nosso manual ["Ativar o HTTPS num website com certificado SSL"](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/#1-ativar-o-certificado-ssl-no-alojamento).
 
 ### Impedir a apresentação dos diretórios e sub-diretórios
 
@@ -129,7 +129,7 @@ O seu ficheiro **wp-config.php**, presente na raiz do seu website, contém infor
 </Files>
 ```
 
-Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/ca/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 ### Bloquear um endereço IP
 
@@ -144,7 +144,7 @@ Se identificou um endereço de IP malicioso, eis a linha a inserir no ficheiro *
 
 Neste exemplo, `xxx.xxx.xxx.xxx`, refere-se ao endereço de IP a bloquear.
 
-Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/ca/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 #### Bloquear um endereço IP a partir do diretório wp-admin (ou nos outros diretórios)
 
@@ -167,4 +167,4 @@ O diretório **wp-admin** permite-lhe ligar-se à sua interface de administraç�
 
 ## Quer saber mais? <a name="go-further"></a>
 
-Consulte o [tutorial disponível no site da Fundação Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
+Consulte o [tutorial disponível no site da Fundação Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).

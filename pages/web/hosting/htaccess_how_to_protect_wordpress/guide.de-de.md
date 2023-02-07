@@ -20,20 +20,20 @@ In dieser Anleitung erfahren Sie, wie Sie bestimmte Funktionen Ihres Webhostings
 >
 > OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/fr-ca/) oder [Herausgeber des CMS WordPress](https://wordpress.com/fr/support/){.external} zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Mehr Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
+> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) oder [Herausgeber des CMS WordPress](https://wordpress.com/de/support/){.external} zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Mehr Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 >
 
 **Erfahren Sie, wie Sie Ihre WordPress mit einem oder mehreren HTACCESS-Dateien absichern.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/fr-ca/web-hosting/) und haben WordPress installiert.
-- Sie können einen FTP-Client wie [FileZilla](https://filezilla-project.org/) verwenden. Sie können in unserer Anleitung "[FileZilla für den Abruf und die Speicherung Ihrer Daten verwenden]"(https://docs.ovh.com/ca/fr/dedicated/deposer-et-recuperer-donnees-via-sftp/#utiliser-filezilla-pour-recuperer-et-deposer-vos-donnees) nachlesen.
+- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) und haben WordPress installiert.
+- Sie können einen FTP-Client wie [FileZilla](https://filezilla-project.org/) verwenden. Sie können in unserer Anleitung "[FileZilla für den Abruf und die Speicherung Ihrer Daten verwenden]"(https://docs.ovh.com/de/dedicated/daten-via-sftp-exportieren-und-ablegen/#filezilla-fur-das-ubertragen-ihrer-daten-verwenden) nachlesen.
 
 Die Dateien **.htaccess** können mit Texteditoren erstellt und geändert werden, zum Beispiel:
 
-- [Notizblock](https://support.microsoft.com/fr-ca/windows/aide-de-bloc-notes-windows-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} von Windows
-- [TextEdit](https://support.apple.com/fr-ca/guide/textedit/welcome/mac){.external} auf macOS 
+- [Notizblock](https://support.microsoft.com/de-de/windows/hilfe-in-windows-editor-4d68c388-2ff2-0e7f-b706-35fb2ab88a8c){.external} von Windows
+- [TextEdit](https://support.apple.com/de-de/guide/textedit/welcome/mac){.external} auf macOS 
 - [Notepad+](https://notepad-plus-plus.org/){.external}.
 
 ## FAQ
@@ -42,7 +42,7 @@ Die Dateien **.htaccess** können mit Texteditoren erstellt und geändert werden
 
 Mit einer **.htaccess** Datei können Sie einen Webserver konfigurieren. Bei Shared Hosting handelt es sich um den Open-Source-Webserver "**Apache**". Die Syntax dieser Datei wird durch den Organismus definiert, der sie erstellt und aufrechterhält **Apache**. Im Gegensatz zu den meisten Konfigurationsdateien eines Servers befinden sich die **.htaccess** Dateien in den Verzeichnissen der Websites, genauer gesagt im FTP-Speicherplatz Ihres Webhostings. Eine **.htaccess** Datei hat Auswirkungen auf das Verzeichnis, in dem sie vorhanden ist, sowie auf alle darin befindlichen Unterverzeichnisse.
 
-Unsere Webhosting-Angebote erlauben keine Serverkonfigurationsdateien. Die **.htaccess** Dateien ermöglichen es jedoch, bestimmte Eigenschaften und Verhaltensweisen zu ändern. Darüber hinaus ist es nicht notwendig, den Server **Apache** neu zu starten, damit die Angaben und Änderungen in der Datei **.htaccess** berücksichtigt werden. Mit unseren [OVHcloud Shared Hosting](https://www.ovhcloud.com/fr-ca/web-hosting/) Angeboten können Dateien **.htaccess** konfiguriert werden.
+Unsere Webhosting-Angebote erlauben keine Serverkonfigurationsdateien. Die **.htaccess** Dateien ermöglichen es jedoch, bestimmte Eigenschaften und Verhaltensweisen zu ändern. Darüber hinaus ist es nicht notwendig, den Server **Apache** neu zu starten, damit die Angaben und Änderungen in der Datei **.htaccess** berücksichtigt werden. Mit unseren [OVHcloud Shared Hosting](https://www.ovhcloud.com/de/web-hosting/) Angeboten können Dateien **.htaccess** konfiguriert werden.
 
 Der Punkt vor dem Dateinamen **.htaccess** (der selbst keine Endung hat) bezeichnet eine versteckte Datei. Außerdem sind diese Dateien für externe Benutzer, die Ihre Website aufrufen, nicht verfügbar.
 
@@ -107,7 +107,7 @@ Es gibt mehrere Möglichkeiten, die Einstellungen zu definieren und zu ändern, 
 
 > [!warning]
 >
-> Bevor Sie den folgenden Schritten folgen, richten Sie das HTTP-Protokoll auf HTTPS. Folgen Sie hierzu den Anweisungen in unserer Anleitung ["Website mithilfe von SSL auf HTTPS umstellen"](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement).
+> Bevor Sie den folgenden Schritten folgen, richten Sie das HTTP-Protokoll auf HTTPS. Folgen Sie hierzu den Anweisungen in unserer Anleitung ["Website mithilfe von SSL auf HTTPS umstellen"](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren).
 
 ### Die Anzeige von Verzeichnissen und Unterverzeichnissen verhindern
 
@@ -129,7 +129,7 @@ Ihre Datei **wp-config.php**, die sich im Wurzelverzeichnis Ihrer Website befind
 </Files>
 ```
 
-Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur ["IP-basierte Zugriffsbeschränkung über die .htaccess-Datei"](https://docs.ovh.com/ca/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur ["IP-basierte Zugriffsbeschränkung über die .htaccess-Datei"](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 ### Eine IP-Adresse blockieren
 
@@ -144,7 +144,7 @@ Wenn Sie eine böswillige IP-Adresse identifiziert haben, geben Sie hier die Zei
 
 In diesem Beispiel bedeutet `xxx.xxx.xxx.xxx` die zu blockierende IP-Adresse.
 
-Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur ["IP-basierte Zugriffsbeschränkung über die .htaccess-Datei"](https://docs.ovh.com/ca/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
+Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung zur ["IP-basierte Zugriffsbeschränkung über die .htaccess-Datei"](https://docs.ovh.com/de/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 #### Eine IP-Adresse aus dem wp-admin Verzeichnis (oder in den anderen Verzeichnissen) blockieren
 
@@ -167,4 +167,4 @@ Mit dem Verzeichnis **wp-admin** können Sie sich mit Ihrem Verwaltungsinterface
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-Siehe [Tutorial auf der Website der Apache Foundation](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
+Siehe [Tutorial auf der Website der Apache Foundation](https://httpd.apache.org/docs/2.4/de/howto/htaccess.html).
