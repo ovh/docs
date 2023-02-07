@@ -6,7 +6,7 @@ section: 'Diagnostic and rescue mode'
 order: 1
 ---
 
-**Last updated 20th September 2022**
+**Last updated 7th February 2023**
 
 ## Objective
 
@@ -156,7 +156,7 @@ rescue-customer:~# apt-get update && apt-get upgrade
 # make install
 ```
 
-Access the the `sbin` folder, to create the mount folder: 
+Access the `sbin` folder, to create the mount folder: 
 
 ```bash
 rescue-customer:~# cd /usr/local/sbin/

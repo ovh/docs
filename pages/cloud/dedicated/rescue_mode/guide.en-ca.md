@@ -6,7 +6,7 @@ section: 'Diagnostic and rescue mode'
 order: 1
 ---
 
-**Last updated 20th September 2022**
+**Last updated 7th February 2023**
 
 ## Objective
 
@@ -143,6 +143,36 @@ Now mount the partition with the following command, replacing `sdbX` with the va
 
 ```bash
 rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+If you have `VMFS 6 datastores`, you need to install `vmfs6-tools` manually in the rescue mode environment:
+
+```bash
+rescue-customer:~# apt-get update && apt-get upgrade
+# apt-get install git uuid-dev libfuse-dev pkg-config gcc
+# git clone https://salsa.debian.org/debian/vmfs6-tools.git
+# cd vmfs6-tools
+# make
+# make install
+```
+
+Access the `sbin` folder, to create the mount folder: 
+
+```bash
+rescue-customer:~# cd /usr/local/sbin/
+# mkdir /mnt/datastore
+```
+
+Then list your partitions in order to retrieve the name of the datastore partition:
+
+```bash
+rescue-customer:~# fdisk -l
+```
+
+Now mount the partition with the following command, replacing `sdbX` with the value identified in the previous step:
+
+```bash
+rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.action} in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and restart the server from the command line.
