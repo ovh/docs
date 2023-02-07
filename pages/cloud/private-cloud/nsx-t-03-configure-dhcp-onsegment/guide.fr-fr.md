@@ -6,7 +6,7 @@ section: NSX-T
 order: 03
 ---
 
-**Dernière mise à jour le 03/02/2023**
+**Dernière mise à jour le 07/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -81,15 +81,15 @@ Cliquez sur `CLOSE EDITING`{.action}.
 
 A partir de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**
 
-![03 add DHCP ON Segment 01](images/03-add-dhcp-on-segment01.png){.thumbnail}
+![03 add DHCP ON Segment 01](images/03-configure-dhcp-overlay-segment01.png){.thumbnail}
 
 Allez dans la rubrique `Segments`{.action}, cliquez sur l'icône de configuration indiqué avec `trois points verticaux`{.action} à gauche de votre segment et choisissez `Edit`{.action}.
 
-![03 add DHCP ON Segment 01](images/03-add-dhcp-on-segment01.png){.thumbnail}
+![03 add DHCP ON Segment 02](images/03-configure-dhcp-overlay-segment02.png){.thumbnail}
 
 Cliquez sur `Set DHCP CONFIG`{.action}.
 
-![03 add DHCP ON Segment 02](images/03-add-dhcp-on-segment02.png){.thumbnail}
+![03 add DHCP ON Segment 03](images/03-configure-dhcp-overlay-segment03.png){.thumbnail}
 
 Remplissez ces informations :
 
@@ -99,15 +99,15 @@ Remplissez ces informations :
 
 Et cliquez sur `APPLY`{.action}.
 
-![03 add DHCP ON Segment 03](images/03-add-dhcp-on-segment03.png){.thumbnail}
+![03 add DHCP ON Segment 04](images/03-configure-dhcp-overlay-segment01.png){.thumbnail}
 
 Cliquez sur `SAVE`{.action}.
 
-![03 add DHCP ON Segment 04](images/03-add-dhcp-on-segment04.png){.thumbnail}
+![03 add DHCP ON Segment 05](images/03-configure-dhcp-overlay-segment06.png){.thumbnail}
 
 Cliquez sur `CLOSE EDITIND`{.action}.
 
-![03 add DHCP ON Segment 05](images/03-add-dhcp-on-segment05.png){.thumbnail}
+![03 add DHCP ON Segment 06](images/03-configure-dhcp-overlay-segment06.png){.thumbnail}
 
 Les machines virtuelles sur ce segment peuvent maintenant être configurées en DHCP.
 
