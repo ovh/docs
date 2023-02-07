@@ -44,7 +44,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Déployer la configuration réseau initiale sur les équipements | I | RA |
 | Installer le vCenter | I | RA |
 | Fournir les templates de TKGm  | I | RA |
-| Installer TKGm selon la configuration initiale demandée par le client | R | A |
 | Adapter la configuration du service après sa livraison initiale | RA |  |
 
 #### 2.1. Installation du SI client
@@ -129,7 +128,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Assurer la sécurité des infrastructures de gestion (API, control plane) | R | RA |
 | Assurer la sécurité du logiciel VMware, des Softwares et Middlewares installés sur le vCenter | R | RA |
-| GGérer la sécurité physique des équipements et infrastructures hébergés chez OVHcloud | I | RA |
+| Gérer la sécurité physique des équipements et infrastructures hébergés chez OVHcloud | I | RA |
 | Gérer la sécurité des données déposées par le Client sur le vCenter | RA |  |
 | Fournir l’inventaire des infrastructures et services mis en œuvre dans le vCenter | I | RA |
 | Gérer les risques relatifs à l’infrastructure mise à disposition dans le vCenter |  | RA |
@@ -185,7 +184,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Fournir la politique de réversibilité du service | I | RA |
 | Créer et déployer le plan de réversibilité du SI géré | RA |  |
 | Planifier les opérations de réversibilité | RA |  |
 | Choisir les infrastructures de repli | RA |  |
