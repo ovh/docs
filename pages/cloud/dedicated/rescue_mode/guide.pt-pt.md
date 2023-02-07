@@ -10,7 +10,7 @@ section: 'Diagnóstico e Modo Rescue'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 20/09/2022**
+**Última atualização: 07/02/2023**
 
 ## Objetivo
 
@@ -151,6 +151,38 @@ Agora, execute o seguinte comando para montar a partição, substituindo `sdbX` 
 
 ```bash
 rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Se possui datastores do tipo `VMFS 6`, deve instalar manualmente a ferramenta `vmfs6-tools` no ambiente do modo rescue:
+
+
+```bash
+rescue-customer:~# apt-get update && apt-get upgrade
+# apt-get install git uuid-dev libfuse-dev pkg-config gcc
+# git clone https://salsa.debian.org/debian/vmfs6-tools.git
+# cd vmfs6-tools
+# make
+# make install
+```
+
+Aceda à pasta `sbin` para criar a pasta de montagem:
+
+```bash
+rescue-customer:~# cd /usr/local/sbin/
+# mkdir /mnt/datastore
+```
+
+De seguida, retorize as suas partições para recuperar o nome da partição do datastore:
+
+```bash
+rescue-customer:~# fdisk -l
+```
+
+Agora, execute o seguinte comando para montar a partição, substituindo `sdbX` pelo valor indicado na etapa anterior:
+
+
+```bash
+rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.
