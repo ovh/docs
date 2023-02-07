@@ -1,0 +1,44 @@
+---
+title: Gateway Firewall Management
+slug: nsx-t-manage-gateway-firewall
+excerpt: How to administer distributed firewall
+section: NSX-T
+order: 06
+---
+
+**Last updated 07th February 2023**
+
+> [!warning]
+> Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
+>
+
+
+## Objectif
+
+**How to administer the firewall of the ovh-t0-gw and ovh-t&-gw gateways**
+
+> [!warning]
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
+>
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+>
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Having **NSX-T** deployed with two segments configured in your NSX-T configuration, you can use this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
+
+## Instructions
+
+
+
+
+## Go further <a name="gofurther"></a>
+
+[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+
+[Segment management](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+
+Join our community of users on <https://community.ovh.com/en/>.
+
