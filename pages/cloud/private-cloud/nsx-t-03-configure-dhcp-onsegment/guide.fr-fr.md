@@ -57,15 +57,13 @@ Toujours dans l'onglet `Networking`{.action} cliquez sur `Tier-1-Gateways`{.acti
 
 Cliquez sur les `trois petits points`{.action} et choisissez `Edit`{.action} dans le menu.
 
-![01 Common DHCP configuration 04](images/`Set DHCP Configuration`{.action}.
-
 ![02 Attach DHCP to OVHT1 GATEWAY 02](images/02-attach-dhcp-to-ovht1-gateway02.png){.thumbnail}
 
 Cliquez sur `Set DHCP Configuration`{.action}.
 
 ![02 Attach DHCP to OVHT1 GATEWAY 03](images/02-attach-dhcp-to-ovht1-gateway03.png){.thumbnail}
 
-Choississez `DHCP Server`{.action} dans **Type**, et votre `configuration DHCP`{.action} dans **DHCP Server Profile**. Ensuite cliquez sur `SAVE`{.action}.
+Choississez `DHCP Server`{.action} dans **Type**, et votre `profil DHCP`{.action} dans **DHCP Server Profile**. Ensuite cliquez sur `SAVE`{.action}.
 
 ![02 Attach DHCP to OVHT1 GATEWAY 04](images/02-attach-dhcp-to-ovht1-gateway04.png){.thumbnail}
 
@@ -93,7 +91,7 @@ Remplissez ces informations :
 
 * **DHCP Type** : Laissez `Gateway DHCP Server`{.action}.
 * **DHCP Ranges** : Saisissez votre étendue `192.168.1.10-192.168.1.200`{.action}.
-* **DNS Servers** : Ecrivez le DHCP OVHcloud `2&3.186.33.99`{.action}.
+* **DNS Servers** : Ajouter le serveur DNS OVHcloud `2&3.186.33.99`{.action}.
 
 Et cliquez sur `APPLY`{.action}.
 
@@ -103,7 +101,7 @@ Cliquez sur `SAVE`{.action}.
 
 ![03 add DHCP ON Segment 04](images/03-configure-dhcp-overlay-segment04.png){.thumbnail}
 
-Cliquez sur `CLOSE EDITIND`{.action}.
+Cliquez sur `CLOSE EDITING`{.action}.
 
 ![03 add DHCP ON Segment 05](images/03-configure-dhcp-overlay-segment05.png){.thumbnail}
 
@@ -111,7 +109,13 @@ Les machines virtuelles sur ce segment peuvent maintenant être configurées en 
 
 ### Mise en place du DCHP sur un segment de type VLAN
 
-Nous allons activer un serveur DHCP sur un segment de type VLAN connecté 
+Sur un segment de type VLAN connecté au travers d'interfaces sur la passerelle **ovh-t0-gw** il n'est pas possible d'utiliser le profil créé pour les segments Overlay. IL est aussi interdit de créer un profil et le connecter sur la passerelle **ovh-t0-gw**. 
+
+Pour pouvoir avoir un serveur DHCP sur ce segment nous allons créer une configuration DHCP avec un nouveau profil directement attaché au segment.
+
+
+
+
 
 ## Aller plus loin
 
