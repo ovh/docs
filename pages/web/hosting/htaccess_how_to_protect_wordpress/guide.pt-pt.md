@@ -14,7 +14,7 @@ order:
 
 ## Objetivo
 
-Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamento web com um ou vários ficheiros ***, nomeadamente para modificar os parâmetros de uma parte ou do conjunto do seu website (reencaminhamentos, proibições de acesso, autorizações restritas, controlo da cache, etc.).
+Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamento web com um ou vários ficheiros **.htaccess**, nomeadamente para modificar os parâmetros de uma parte ou do conjunto do seu website (reencaminhamentos, proibições de acesso, autorizações restritas, controlo da cache, etc.).
 
 > [!warning]
 >
