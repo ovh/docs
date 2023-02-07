@@ -38,7 +38,7 @@ Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto
 
 ## FAQ
 
-### O que é um ficheiro **.htaccess*?
+### O que é um ficheiro **.htaccess**?
 
 Um ficheiro **.htaccess** permite configurar um servidor web. No caso de um alojamento web partilhado, trata-se do servidor web open source "**Apache**". A sintaxe deste ficheiro é definida pelo organismo que edita e mantém **Apache**. Contrariamente à maioria dos ficheiros de configuração de um servidor, os ficheiros **.htaccess** estão localizados nos diretórios dos websites, mais precisamente no espaço de armazenamento FTP do seu alojamento web. Um ficheiro **.htaccess** terá efeitos no diretório no qual está presente, bem como em todos os sub-diretórios presentes no interior.
 
@@ -129,7 +129,7 @@ O seu ficheiro **wp-config.php**, presente na raiz do seu website, contém infor
 </Files>
 ```
 
-Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website/).
 
 ### Bloquear um endereço IP
 
@@ -144,7 +144,7 @@ Se identificou um endereço de IP malicioso, eis a linha a inserir no ficheiro *
 
 Neste exemplo, `xxx.xxx.xxx.xxx`, refere-se ao endereço de IP a bloquear.
 
-Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website/).
 
 #### Bloquear um endereço IP a partir do diretório wp-admin (ou nos outros diretórios)
 

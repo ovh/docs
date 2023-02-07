@@ -38,7 +38,7 @@ Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tek
 
 ## FAQ
 
-### Czym jest plik **.htaccess*?
+### Czym jest plik **.htaccess**?
 
 Plik **.htaccess** pozwala na skonfigurowanie serwera www. W przypadku hostingu współdzielonego chodzi o serwer open source "**Apache**". Składnia tego pliku jest definiowana przez organ, który edytuje i utrzymuje **Apache**. W przeciwieństwie do większości plików konfiguracyjnych serwera, pliki **.htaccess** znajdują się w katalogach stron www, a dokładniej w przestrzeni dyskowej FTP Twojego hostingu. Plik **.htaccess** będzie miał wpływ na katalog, w którym jest obecny, oraz na wszystkie podkatalogi znajdujące się wewnątrz.
 
