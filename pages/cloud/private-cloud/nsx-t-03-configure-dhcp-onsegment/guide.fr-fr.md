@@ -109,13 +109,62 @@ Les machines virtuelles sur ce segment peuvent maintenant être configurées en 
 
 ### Mise en place du DCHP sur un segment de type VLAN
 
-Sur un segment de type VLAN connecté au travers d'interfaces sur la passerelle **ovh-t0-gw** il n'est pas possible d'utiliser le profil créé pour les segments Overlay. IL est aussi interdit de créer un profil et le connecter sur la passerelle **ovh-t0-gw**. 
+Sur un segment de type VLAN connecté au travers d'interfaces sur la passerelle **ovh-t0-gw** il n'est pas possible d'utiliser le profil créé pour les segments Overlay. IL est aussi interdit de de connecter sur la passerelle **ovh-t0-gw**.
+
+Aidez-vous du guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/) pour créer un segment de type VLAN et utiliser ces paramètres  :
+
+* **Sous réseau du VLAN** : 192.168.100.0/24.
+* **Adresse IP privée de l'interface pour le premier Edge Node** : 192.168.100.252.
+* **Adresse IP privée de l'interface pour le deuxième Edge Node** : 192.168.100.253.
+* **Future adresse IP virtuelle** : 192.168.100.254.
+* **Adresse IP du serveur DHCP** : 192.168.100.251
 
 Pour pouvoir avoir un serveur DHCP sur ce segment nous allons créer une configuration DHCP avec un nouveau profil directement attaché au segment.
 
+Allez sur l'onglet `Networking`{.action}, cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity** ensuite cliquez sur les  `trois petits points`{.action} à gauche de votre segment de type VLAN et choisissez dans le menu `Edit`{.action}.
 
+![04 Configure DHCP fo VLAN SEGMENT 01](images/04-configure-dhcp-for-vlan-segment01.png){.thumbnail} 
 
+Saisissez dans la colonne **Subnets** l'`adresse IP et du masque`{.action} de l'interface active sur votre passerelle **ovh-t0-gw** et cliquez sur `SET DHCP CONFIG`{.action}.
 
+> ![warning]
+> Pour l'instant il faut utiliser l'adresse IP de l'interface active, dans les futures évolutions de NSX-T il sera possible d'utiliser la future adresse IP virtuelle.
+>
+
+![04 Configure DHCP fo VLAN SEGMENT 02](images/04-configure-dhcp-for-vlan-segment02.png){.thumbnail} 
+
+Laissez `Local DHCP Server`{.action} dans **DHCP Type**, cliquez sur les `trois petits points`{.action} à droite de **DHCP Profile et choisissez dans le menu `Create New`{.action}.
+
+![04 Configure DHCP fo VLAN SEGMENT 03](images/04-configure-dhcp-for-vlan-segment03.png){.thumbnail}
+
+Saisissez ces informations :
+
+* **Name** : comme `DHCP-VLAN100`.
+* **Server IP Address** : adresse IP sur serveur DHCP `192.168.100.251/24`.
+
+Ensuite sélectionnez votre `Edge Cluster`{.action} et cliquez sur `SAVE`{.action}.
+
+![04 Configure DHCP fo VLAN SEGMENT 04](images/04-configure-dhcp-for-vlan-segment04.png){.thumbnail}
+
+Vérifiez que dans **DHCP Profile** le profil est bien présent et saisissez ces informations :
+
+* **DHCP Server** : Adresse du serveur DHCP `192.168.100.251/24`.
+* **Etendue** : Etendue du serveur DHCP `192.168.100.10-192.168.100.200`.
+* **DNS Servers** : Adresse IP du serveur DNS OVHcloud `213.186.33.99`.
+
+Ensuite cliquez sur `APPLY`{.action}.
+
+![04 Configure DHCP fo VLAN SEGMENT 05](images/04-configure-dhcp-for-vlan-segment05.png){.thumbnail}
+
+Cliquez sur `SAVE`{.action}.
+
+![04 Configure DHCP fo VLAN SEGMENT 06](images/04-configure-dhcp-for-vlan-segment06.png){.thumbnail}
+
+Cliquez sur `CLOSE EDITING`{.action}.
+
+![04 Configure DHCP fo VLAN SEGMENT 07](images/04-configure-dhcp-for-vlan-segment07.png){.thumbnail}
+
+Le serveur DHCP est actif sur ce segment de type VLAN.
 
 ## Aller plus loin
 
