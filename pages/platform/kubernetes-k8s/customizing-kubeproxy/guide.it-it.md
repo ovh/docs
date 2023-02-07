@@ -35,7 +35,7 @@ routes:
 
 The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them.
 
-The kube-proxy Kubernete's component (which runs on each Nodes and allows network comunication to Pods) with iptables is actually a bottleneck to scale the cluster to a high number of Nodes so at OVHcloud we decided to reduce this bottleneck and allow you to use kube-proxy with IPVS.
+The kube-proxy Kubernete's component (which runs on each Node and allows network commnication to Pods) with iptables is actually a bottleneck to scale the cluster to a high number of Nodes so at OVHcloud we decided to reduce this bottleneck and allow you to use kube-proxy with IPVS.
 
 [IPVS (IP Virtual Server)](https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/) is built on top of the Netfilter and implements transport-layer Load Balancing as part of the Linux kernel.
 
@@ -183,7 +183,7 @@ Both `kubeProxyMode` and `customization` fields can be modified on cluster reset
 
 If these fields are not specified, it will reset to default value (ipvs for kubeProxyMode and empty customization).
 
-- Update only `kubeProxy` and keeping existing `apiServer` customization if any:
+- Update only `kubeProxy` and keep existing `apiServer` customization if any:
 
 > [!primary]
 >
@@ -233,13 +233,13 @@ If these fields are not specified, it will reset to default value (ipvs for kube
 
 > [!primary]
 >
-> Updating `customization.kubeProxy` field will trigger the following actions:
+> Updating the `customization.kubeProxy` field will trigger the following actions:
 >
 > - apply updated configMap
 > - then rollout restart kube-proxy so it uses the new configuration
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/it/public-cloud/kubernetes/).
 
 Join our community of users on <https://community.ovh.com/en/>.
