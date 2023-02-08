@@ -3,6 +3,7 @@ title: Managing OVHcloud orders
 slug: managing-ovh-orders
 excerpt: Find out how to manage your OVHcloud orders
 section: Billing
+updated: 2022-05-06
 ---
 
 **Last updated 6th May 2022**

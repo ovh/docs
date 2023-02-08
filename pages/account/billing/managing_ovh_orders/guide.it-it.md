@@ -3,6 +3,7 @@ title: Gestire gli ordini OVHcloud
 slug: gestire-ordini-ovh
 excerpt: Come monitorare i tuoi ordini dallo Spazio Cliente OVHcloud
 section: Gestione di ordini, fatture e servizi
+updated: 2022-05-06
 ---
 
 > [!primary]

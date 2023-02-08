@@ -3,6 +3,7 @@ title: Politique de réversibilité d'un hébergement Web
 slug: politique-de-reversibilite-hebergement-web
 section: Politiques de réversibilité
 order: 5
+updated: 2021-05-05
 ---
 
 **Dernière mise à jour le 05/05/2021**

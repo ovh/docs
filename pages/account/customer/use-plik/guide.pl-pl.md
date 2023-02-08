@@ -3,6 +3,7 @@ title: 'Udostępnianie plików za pomocą narzędzia Plik'
 excerpt: 'Dowiedz się, jak używać narzędzia Plik do wysyłania plików innym osobom'
 slug: plik
 section: Narzędzia
+updated: 2022-02-14
 ---
 
 > [!primary]

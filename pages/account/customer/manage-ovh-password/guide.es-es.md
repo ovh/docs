@@ -4,6 +4,7 @@ slug: gestionar-su-contrasena
 excerpt: 'Cómo establecer, cambiar y gestionar la contraseña de acceso al área de cliente de OVHcloud'
 section: 'Primeros pasos'
 order: 4
+updated: 2021-07-21
 ---
 
 ## Objetivo

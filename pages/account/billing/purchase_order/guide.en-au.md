@@ -3,6 +3,7 @@ title: 'Purchase Order (PO)'
 slug: purchase-order
 excerpt: 'Understanding the notion of a Purchase Order number, and applying it when paying OVHcloud bills'
 section: Billing
+updated: 2022-07-22
 ---
 
 **Last updated 22nd July 2022**

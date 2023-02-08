@@ -4,6 +4,7 @@ slug: wlacz-weryfikacje-dwuetapowa-przez-aplikacje-mobilna
 excerpt: 'Dowiedz się, jak zabezpieczyć swój panel klienta OVHcloud dzięki weryfikacji dwuetapowej przez aplikację mobilną OTP'
 section: Bezpieczeństwo
 hidden: true
+updated: 2020-04-16
 ---
 
 **Ostatnia aktualizacja z dnia 29-05-2020**

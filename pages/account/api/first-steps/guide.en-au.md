@@ -3,6 +3,7 @@ title: 'First Steps with the OVHcloud APIs'
 slug: first-steps-with-ovh-api
 excerpt: 'Learn how to use OVHcloud APIs'
 section: 'Getting started'
+updated: 2022-05-30
 ---
 
 **Last updated 30th May 2022**

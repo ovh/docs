@@ -5,6 +5,7 @@ slug: saber_tudo_sobre_o_identificador_de_cliente
 legacy_guide_number: g2123
 section: Introdução
 order: 3
+updated: 2021-07-01
 ---
 
 > [!primary]

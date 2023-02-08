@@ -3,6 +3,7 @@ title: Manage services
 slug: ovh-api-service
 excerpt: Manage the life cycle of your OVH Service after delivery
 section: APIv6
+updated: 2020-01-02
 ---
 
 **Last updated January 2 2020**

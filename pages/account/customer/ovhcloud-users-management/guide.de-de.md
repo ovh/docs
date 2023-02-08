@@ -4,6 +4,7 @@ slug: benutzer-verwalten
 excerpt: 'Erfahren Sie hier, wie Sie Benutzer über Ihren OVHcloud Kunden-Account verwalten'
 section: Fortgeschrittene Nutzung
 order: 01
+updated: 2020-05-20
 ---
 
 **Letzte Aktualisierung am 20.05.2020**

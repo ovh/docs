@@ -4,6 +4,7 @@ slug: billing-best-practices
 excerpt: Trovi qui gli elementi indispensabili per una corretta gestione delle tue fatture, ordini, modalità di pagamento e account cliente
 section: Gestione di ordini, fatture e servizi
 order: 02
+updated: 2022-05-02
 ---
 
 > [!primary]

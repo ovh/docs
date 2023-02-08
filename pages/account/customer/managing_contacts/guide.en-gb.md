@@ -4,6 +4,7 @@ slug: managing-contacts
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
 section: 'Getting started'
 order: 6
+updated: 2021-12-13
 ---
 
 **Last updated 13th December 2021**

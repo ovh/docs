@@ -3,6 +3,7 @@ title: 'Securing your OVHcloud account with two-factor authentication'
 slug: secure-account-with-2FA
 excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication'
 section: Security
+updated: 2022-07-20
 ---
 
 **Last updated 20th July 2022**

@@ -3,6 +3,7 @@ title: 'Gérer le paiement et la facturation de vos services OVHcloud'
 slug: ovh-enterprise-payment
 excerpt: 'Découvrez comment ajouter un moyen de paiement, automatiser sa prise en compte et gérer votre facturation Entreprise'
 section: 'APIv6 OVHcloud'
+updated: 2020-01-02
 ---
 
 **Dernière mise à jour le 08/06/2019**

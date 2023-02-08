@@ -4,6 +4,7 @@ slug: activar-la-doble-autenticacion-por-llave-de-seguridad
 excerpt: 'Cómo proteger su área de cliente de OVHcloud activando la doble autenticación por llave de seguridad U2F'
 section: Seguridad
 hidden: true
+updated: 2022-07-08
 ---
 
 > [!primary]

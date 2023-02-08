@@ -4,6 +4,7 @@ slug: die-Zwei-Faktor-Authentifizierung-per-mobiler-Applikation-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr OVHcloud Kundencenter absichern können, indem Sie die Zwei-Faktor-Authentifizierung per mobiler OTP-Applikation aktivieren'
 section: Sicherheit
 hidden: true
+updated: 2020-04-16
 ---
 
 **Letzte Aktualisierung am 16.04.2020**

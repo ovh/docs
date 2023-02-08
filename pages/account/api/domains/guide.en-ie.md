@@ -3,6 +3,7 @@ title: Manage Domain Names
 slug: ovh-api-domains
 excerpt: Manage your domain names using the OVHcloud public API
 section: APIv6
+updated: 2022-05-03
 ---
 
 **Last updated 3rd May 2022**
