@@ -6,7 +6,7 @@ section: NSX-T
 order: 04
 ---
 
-**Dernière mise à jour le 07/02/2023**
+**Dernière mise à jour le 08/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -104,6 +104,8 @@ Cliquez sur `SAVE`{.action}.
 Cliquez sur `CLOSE EDITING`{.action}.
 
 ![Modify DHCP overlay segment 06](images/02-modify-dhcp-overlay-segment06.png){.thumbnail}
+
+Le serveur DHCP est configuré pour utiliser le redirecteur de NSX-T.
 
 ## Aller plus loin
 
