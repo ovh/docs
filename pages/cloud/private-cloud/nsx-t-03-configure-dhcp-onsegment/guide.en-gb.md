@@ -172,9 +172,9 @@ The DHCP server is active on this VLAN segment.
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/us/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
 
-[Segment management in NSX-T](https://docs.ovh.com/us/en/nsx-t-segment-management/)
+[Segment management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
