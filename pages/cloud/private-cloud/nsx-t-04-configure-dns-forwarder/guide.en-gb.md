@@ -118,7 +118,7 @@ Your segment's DHCP setting now uses the DNS forwarder you created earlier.
 
 [DHCP Configuration](https://docs.ovh.com/gb/en/nsx-t-dhcp-configuration)
 
-[VMware NSX-T 3.2 and DNS information](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
+[VMware DNS documentation in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

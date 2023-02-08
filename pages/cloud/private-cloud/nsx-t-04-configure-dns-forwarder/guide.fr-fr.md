@@ -115,7 +115,7 @@ Le paramétrage DHCP de votre segment utilise maintenant le redirecteur DNS cré
 
 [Configuration du DHCP](https://docs.ovh.com/fr/nsx-t-dhcp-configuration)
 
-[Informations VMware sur NSX-T 3.2 et le service DNS](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
+[Documentation VMware sur le service DNS dans NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
