@@ -4,6 +4,7 @@ slug: ruby-install-camaleon
 excerpt: Find out how to install Camaleon on your POWER web hosting plan
 section: Ruby
 order: 2
+updated: 2021-02-04
 ---
 
 <style>

@@ -4,6 +4,7 @@ slug: nodejs-installer-strapi
 excerpt: Découvrez comment installer Strapi sur votre hébergement web POWER
 section: Node.js
 order: 6
+updated: 2021-02-04
 ---
 
 

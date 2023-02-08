@@ -4,6 +4,7 @@ slug: ruby-installer-camaleon
 excerpt: Découvrez comment installer Camaleon sur votre hébergement web POWER
 section: Ruby
 order: 2
+updated: 2021-02-04
 ---
 
 <style>
