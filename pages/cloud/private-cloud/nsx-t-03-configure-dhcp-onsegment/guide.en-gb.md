@@ -32,7 +32,10 @@ order: 03
 
 ## Instructions
 
-We will configure DHCP for an overlay segment behind the gateway **ovh-t1-gw** and for a segment on a VLAN on the gateway **ovh-t0-gw**.
+We will configure DHCP for : 
+
+* An overlay segment behind the gateway **ovh-t1-gw** 
+* For a segment on a VLAN  the gateway **ovh-t0-gw**.
 
 ### Common DHCP configuration for all overlay segments
 
@@ -133,7 +136,7 @@ In the **Subnets** column, enter the IP address and mask`{.action} of the active
 
 ![04 Configure DHCP fo VLAN SEGMENT 02](images/04-configure-dhcp-for-vlan-segment02.png){.thumbnail} 
 
-Leave `Local DHCP Server`{.action} in **DHCP Type**, click the `three dots`{.action} to the right of **DHCP Profile and choose `Create New`{.action} from the menu.
+Leave `Local DHCP Server`{.action} in **DHCP Type**, click the `three dots`{.action} to the right of **DHCP Profile** and choose `Create New`{.action} from the menu.
 
 ![04 Configure DHCP fo VLAN SEGMENT 03](images/04-configure-dhcp-for-vlan-segment03.png){.thumbnail}
 
