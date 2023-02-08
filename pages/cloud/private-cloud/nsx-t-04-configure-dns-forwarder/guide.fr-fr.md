@@ -45,8 +45,8 @@ Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cli
 Renseignez ces informations :
 
 * **Name** : Nom de votre service comme `dns-forwarder`.
-* **Tier-0/Tier-1 Gateway** : Choisissez la passerelle Nord-Sud `ovh-T0-gw`.
-* **DNS Service IP** : Saisissez une adresse IP privée non utilisé dans vos segments comme `192.168.200.1`.
+* **Tier-0/Tier-1 Gateway** : Votre passerelle Nord-Sud `ovh-T0-gw`.
+* **DNS Service IP** : Adresse IP privée non utilisé dans vos segments comme `192.168.200.1`.
 
 Ensuite cliquez sur les `Points de suspensions verticaux`{.action} en dessous de **Default DNS Zone**.
 

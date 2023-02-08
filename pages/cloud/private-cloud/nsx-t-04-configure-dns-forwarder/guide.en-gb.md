@@ -37,87 +37,86 @@ You can use a DNS forwarder in NSX-T that centralises all DNS queries and redire
 
 ## Instructions
 
-Nous allons créer un redirecteur DNS et l'attacher à la passerelle nord-sud (ovh-t0-gw), il sera utilisable sur l'ensemble des segments de NSX-T.
+We will create a DNS redirector and attach it to the north-south gateway (ovh-t0-gw), it will be usable on all segments of NSX-T.
 
-### Configuration du redirecteur DNS
+### DNS forwarder configuration
 
-Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `DNS`{.action} à gauche dans la rubrique **IP Management**. Ensuite cliquez sur `ADD DNS SERVICE`{.action}.
+Through the NSX-T interface go to the `Networking`{.action} tab and click on `DNS`{.action} on the left in the **IP Management** section. Then click `ADD DNS SERVICE`{.action}.
 
 ![Configure DNS forwarder 01](images/01-configure-dns-forwarder01.png){.thumbnail}
 
-Renseignez ces informations :
+Enter this information :
 
-* **Name** : Nom de votre service comme `dns-forwarder`.
-* **Tier-0/Tier-1 Gateway** : Choisissez la passerelle Nord-Sud `ovh-T0-gw`.
-* **DNS Service IP** : Saisissez une adresse IP privée non utilisé dans vos segments comme `192.168.200.1`.
+* **Name** : Your service name is dns-forwarder. `dns-forwarder`.
+* **Tier-0/Tier-1 Gateway** : Your North-South gateway `ovh-T0-gw`.
+* **DNS Service IP** : Private IP address not used in your segments like `192.168.200.1`.
 
-Ensuite cliquez sur les `Points de suspensions verticaux`{.action} en dessous de **Default DNS Zone**.
+Next, click the `Vertical Hover Points`{.action} below **Default DNS Zone**.
 
 ![Configure DNS forwarder 02](images/01-configure-dns-forwarder02.png){.thumbnail}
 
-Cliquez sur `Add New Default Zone`{.action}.
+Click `Add New Default Zone`{.action}.
 
 ![Configure DNS forwarder 03](images/01-configure-dns-forwarder03.png){.thumbnail}
 
-Remplissez ces valeurs :
+Fill in these values :
 
-* **Name** : Nom de la zone comme `cdns.ovh.net`.
-* **DNS Servers** : Serveur DNS OVHcloud `213.186.33.99`.
+* **Name** : The name of the zone, such as `cdns.ovh.net`.
+* **DNS Servers** : OVHcloud DNS server `213.186.33.99`.
 
-Ensuite cliquez sur `SAVE`{.action}.
+Then click `SAVE`{.action}.
 
 ![Configure DNS forwarder 04](images/01-configure-dns-forwarder04.png){.thumbnail}
 
-Cliquez sur `SAVE`{.action}.
+Click `SAVE`{.action}.
 
 ![Configure DNS forwarder 05](images/01-configure-dns-forwarder05.png){.thumbnail}
 
-Votre redirecteur DNS est actif et utilisable sur tous vos segments en Overlay ou VLAN connectés à votre passerelle nord-sud (ovh-t0-gw).
+Your DNS forwarder is active and usable on all your overlay or VLAN segments connected to your north-south gateway (ovh-t0-gw).
 
 ![Configure DNS forwarder 06](images/01-configure-dns-forwarder06.png){.thumbnail}
 
-### Modification du serveur DHCP pour utiliser un redirecteur DNS
+### Editing the DHCP server to use a DNS forwarder
 
-Si vous avez configuré des serveurs DHCP dans NSX-T comme indiqué dans ce guide [Configuration du DHCP](https://docs.ovh.com/fr/nsx-t-dhcp-configuration), vous avez la possibilité de modifier la configuration pour utiliser le redirecteur DNS dans vos configuration DHCP.
+If you have configured DHCP servers in NSX-T as described in this guide [Configuring DHCP](https://docs.ovh.com/gb/en/nsx-t-dhcp-configuration), you have the option to modify the configuration to use the DNS forwarder in your DHCP configurations.
 
-Nous allons voir comment modifier le serveur DNS sur la configuration DHCP d'un de vos segments.
+We will see how to modify the DNS server on the DHCP configuration of one of your segments.
 
-Restez sur l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
+Stay on the `Networking`{.action} tab and click `Segments`{.action} on the left in the **Connectivity** section. 
 
-Ensuite cliquez sur les `points de suspensions verticaux`{.action} à coté de votre segment et choisissez dans le menu `Edit`{.action}.
+Then click on the `vertical suspension points`{.action} next to your segment and choose `Edit`{.action} from the menu.
 
 ![Modify DHCP overlay segment 01](images/02-modify-dhcp-overlay-segment01.png){.thumbnail}
 
-Cliquez sur `EDIT DHCP CONFIG`{.action}.
+Click `EDIT DHCP CONFIG`{.action}.
 
 ![Modify DHCP overlay segment 02](images/02-modify-dhcp-overlay-segment02.png){.thumbnail}
 
-Cliquez sur la `croix`{.action} à droite du DNS existant dans l'option **DNS Servers** pour l'enlever de la configuration.
+Click the `X`{.action} to the right of the existing DNS in the **DNS Servers** option to remove it from the configuration.
 
 ![Modify DHCP overlay segment 03](images/02-modify-dhcp-overlay-segment03.png){.thumbnail}
 
-Ajouter dans **DNS Servers** l'adresse IP de votre redirecteur DNS comme `192.168.200.1`{.action} et cliquez sur `APPLY`{.action}.
+Add your DNS redirector IP address in **DNS Servers** as `192.168.200.1`{.action} and click `APPLY`{.action}.
 
 ![Modify DHCP overlay segment 04](images/02-modify-dhcp-overlay-segment04.png){.thumbnail}
 
-Cliquez sur `SAVE`{.action}.
+Click `SAVE`{.action}.
 
 ![Modify DHCP overlay segment 05](images/02-modify-dhcp-overlay-segment05.png){.thumbnail}
 
-Cliquez sur `CLOSE EDITING`{.action}.
+Click `CLOSE EDITING`{.action}.
 
 ![Modify DHCP overlay segment 06](images/02-modify-dhcp-overlay-segment06.png){.thumbnail}
 
-Le serveur DHCP est configuré pour utiliser le redirecteur de NSX-T.
-
+The DHCP server is configured to use the NSX-T Redirector.
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/us/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
 
-[Segment management in NSX-T](https://docs.ovh.com/us/en/nsx-t-segment-management/)
+[Segment management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
 
-[DHCP Configuration](https://docs.ovh.com/fr/nsx-t-dhcp-configuration)
+[DHCP Configuration](https://docs.ovh.com/gb/en/nsx-t-dhcp-configuration)
 
 [VMware NSX-T 3.2 and DNS information](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
