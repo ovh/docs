@@ -27,13 +27,13 @@ section: Network
  }
 </style>
 
-**Last updated 7th February 2023**
+**Last updated 8th February 2023**
 
 ## Objective
 
 The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them.
 
-The kube-proxy Kubernete's component (which runs on each Node and allows network commnication to Pods) with iptables is actually a bottleneck to scale the cluster to a high number of Nodes so at OVHcloud we decided to reduce this bottleneck and allow you to use kube-proxy with IPVS.
+The kube-proxy Kubernete's component (which runs on each Node and allows network communication to Pods) with iptables is actually a bottleneck to scale the cluster to a high number of Nodes so at OVHcloud we decided to reduce this bottleneck and allow you to use kube-proxy with IPVS.
 
 [IPVS (IP Virtual Server)](https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/) is built on top of the Netfilter and implements transport-layer Load Balancing as part of the Linux kernel.
 
