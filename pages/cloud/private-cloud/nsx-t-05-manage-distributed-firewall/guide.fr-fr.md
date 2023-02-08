@@ -29,8 +29,27 @@ order: 05
 - Avoir **NSX-T** déployé avec deux segment configurés dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
 
 
+## Présentation
+
+Le pare-feu distribué de NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. IL doit être utilisé normalement sur les connexions est-ouest mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-t0-gateway). Le type de filtrage est disponible entre :
+
+- Tous les membres d'un segment et tous les autres membres d'un autre segment.
+- Certaines machines virtuelles d'un segment et d'autres machines virtuelles du même segment ou d'un autre segment.
+
+Pour simplifier l'administration de votre solution NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc...) et de faire des groupes qui contiennent ces balises au travers de requêtes.
+
 ## En pratique
 
+Nous allons positionnez des balises sur une machine virtuelle et sur un segment, créer des groupes qui contiendrons ces balises et créer une règle de blocage entre deux groupes.
+
+### Création des balises
+
+
+
+### Ajout de groupe qui contiendrons les balises
+
+
+### Mise en place d'une règle de pare-feu distribué
 
 
 ## Aller plus loin
