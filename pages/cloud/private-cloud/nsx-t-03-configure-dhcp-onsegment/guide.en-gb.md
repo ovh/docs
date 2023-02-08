@@ -119,7 +119,7 @@ In order to have a DHCP server on this segment, we will create a DHCP configurat
 
 If you do not have a VLAN type segment, use the [Segment Management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/) guide to create it with these settings :
 
-* **VLAN Subnet**: 192.168.100.0/24.**.
+* **VLAN Subnet**: 192.168.100.0/24.
 * **Interface private IP address for first Edge Node** : 192.168.100.252.
 * **Interface private IP address for the second Edge Node** : 192.168.100.253.
 * **Future virtual IP address** : 192.168.100.254.
@@ -128,7 +128,7 @@ Go to the `Networking`{.action} tab, click on `Segments`{.action} on the left in
 
 ![04 Configure DHCP fo VLAN SEGMENT 01](images/04-configure-dhcp-for-vlan-segment01.png){.thumbnail} 
 
-In the **Subnets** column, enter the IP address and mask`{.action} of the active interface on your gateway **ovh-t0-gw** and click `SET DHCP CONFIG`{.action}.
+In the **Subnets** column, enter the `IP address and mask`{.action} of the active interface on your gateway **ovh-t0-gw** and click `SET DHCP CONFIG`{.action}.
 
 > ![warning]
 > For now you must use the IP address of the active interface, in future developments of NSX-T it will be possible to use the future virtual IP address.
