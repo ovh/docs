@@ -39,5 +39,7 @@ order: 05
 
 [Gestion des segment dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
 
+[Documentation VMware sur le pare-feu distribué dans NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-41CC06DF-1CD4-4233-B43E-492A9A3AD5F6.html)
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

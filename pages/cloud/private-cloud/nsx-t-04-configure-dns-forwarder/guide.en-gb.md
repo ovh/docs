@@ -108,7 +108,7 @@ Click `CLOSE EDITING`{.action}.
 
 ![Modify DHCP overlay segment 06](images/02-modify-dhcp-overlay-segment06.png){.thumbnail}
 
-The DHCP server is configured to use the NSX-T Redirector.
+Your segment's DHCP setting now uses the DNS forwarder you created earlier.
 
 ## Go further <a name="gofurther"></a>
 
