@@ -4,6 +4,7 @@ slug: nodejs-install-ghost
 excerpt: Find out how to install Ghost  on your POWER web hosting plan
 section: Node.js
 order: 3
+updated: 2021-02-04
 ---
 
 

@@ -4,6 +4,7 @@ slug: nodejs-installer-slideshow
 excerpt: Découvrez comment installer Slideshow sur votre hébergement web POWER
 section: Node.js
 order: 5
+updated: 2021-02-04
 ---
 
 <style>

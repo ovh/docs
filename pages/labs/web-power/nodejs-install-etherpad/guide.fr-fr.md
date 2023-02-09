@@ -4,6 +4,7 @@ slug: nodejs-installer-etherpad
 excerpt: Découvrez comment installer Etherpad sur votre hébergement web POWER
 section: Node.js
 order: 2
+updated: 2021-02-04
 ---
 
 <style>

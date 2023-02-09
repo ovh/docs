@@ -4,6 +4,7 @@ slug: nodejs-using-typescript
 excerpt: Find out how to use TypeScript on your POWER web hosting plan
 section: Node.js
 order: 7
+updated: 2021-02-04
 ---
 
 

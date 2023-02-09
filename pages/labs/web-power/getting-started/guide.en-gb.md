@@ -4,6 +4,7 @@ slug: getting-started-with-power-web-hosting
 excerpt: Find out how to get started with a POWER Web Hosting plan
 section: Getting started
 order: 1
+updated: 2021-02-04
 ---
 
 <style>
