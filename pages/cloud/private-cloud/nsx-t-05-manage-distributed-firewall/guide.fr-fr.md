@@ -157,28 +157,83 @@ Choisissez ces paramètres :
 
 Et cliquez sur `APPLY`{.action}.
 
-![04 Create Group With tag on VM 04](images/04-create-group-with-tag-on-segment04.png){.thumbnail}
+![05 Create Group With tag on VM 04](images/05-create-group-with-tag-on-vm04.png){.thumbnail}
 
 Cliquez sur `SAVE`{.action}.
 
-![04 Create Group With tag on VM 05](images/04-create-group-with-tag-on-segment05.png){.thumbnail}
+![05 Create Group With tag on VM 05](images/05-create-group-with-tag-on-vm05.png){.thumbnail}
 
 cliquez sur `View Members`{.action} dans la ligne de votre groupe pour afficher les membres.
 
-![04 Create Group With tag on VM 06](images/04-create-group-with-tag-on-segment06.png){.thumbnail}
+![05 Create Group With tag on VM 06](images/05-create-group-with-tag-on-vm06.png){.thumbnail}
 
 Dans la rubrique **Virtual Machines** la machine virtuelle balisé est automatiquement ajouté, cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
 
-![04 Create Group With tag on VM 07](images/04-create-group-with-tag-on-segment07.png){.thumbnail}
+![05 Create Group With tag on VM 07](images/05-create-group-with-tag-on-vm07.png){.thumbnail}
 
 ### Mise en place d'une règle de pare-feu distribué
 
 Nous allons maintenant créér une règle de pare-feu distribué de blocage entre les deux groupes créé.
 
+Allez sur l'onglet `Security`{.action}, Sélectionnez `Distributed Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}
 
+![06 Create distributed firewall rules 01](images/06-create-distributed-firewall-rules01.png){.thumbnail}
 
+Nommez votre stratégie `Isolate vm and segments`{.action}.
 
+![06 Create distributed firewall rules 02](images/06-create-distributed-firewall-rules02.png){.thumbnail}
 
+Cliquez sur `points de suspensions verticaux`{.action} et choisissez `Add Rule`{.action} dans le menu.
+
+![06 Create distributed firewall rules 03](images/06-create-distributed-firewall-rules03.png){.thumbnail}
+
+Cliquez sur l'icone en forme de `stylo`{.action} à droite de **Any** dans la colonne **Sources**.
+
+![06 Create distributed firewall rules 04](images/06-create-distributed-firewall-rules04.png){.thumbnail}
+
+Cochez le groupe `g-segment01`{.action} et cliquez sur `APPLY`{.action}
+
+![06 Create distributed firewall rules 05](images/06-create-distributed-firewall-rules05.png){.thumbnail}
+
+Cliquez sur l'icone en forme de `stylo`{.action} à droite de **Any** dans la colonne **Destinations**.
+
+![06 Create distributed firewall rules 06](images/06-create-distributed-firewall-rules06.png){.thumbnail}
+
+Cochez le groupe `g-vm`{.action} et cliquez sur `APPLY`{.action}.
+
+![06 Create distributed firewall rules 07](images/06-create-distributed-firewall-rules07.png){.thumbnail}
+
+Choisissez `Drop`{.action} pour supprimer les paquets sur cette règle et cliquez sur les `points de suspensions verticaux`{.action}. à gauche de votre stratégie.
+
+![06 Create distributed firewall rules 08](images/06-create-distributed-firewall-rules08.png){.thumbnail}
+
+Cliquez sur `Add Rule`{.action} dans le menu.
+
+![06 Create distributed firewall rules 09](images/06-create-distributed-firewall-rules09.png){.thumbnail}
+
+Cliquez sur l'icone en forme de `stylo`{.action} à droite de **Any** dans la colonne **Sources**.
+
+![06 Create distributed firewall rules 10](images/06-create-distributed-firewall-rules10.png){.thumbnail}
+
+Cochez le groupe `g-vm`{.action} et cliquez sur `APPLY`{.action}
+
+![06 Create distributed firewall rules 11](images/06-create-distributed-firewall-rules11.png){.thumbnail}
+
+Cliquez sur l'icone en forme de `stylo`{.action} à droite de **Any** dans la colonne **Destinations**.
+
+![06 Create distributed firewall rules 12](images/06-create-distributed-firewall-rules12.png){.thumbnail}
+
+Cochez le groupe `g-segment01`{.action} et cliquez sur `APPLY`{.action}.
+
+![06 Create distributed firewall rules 13](images/06-create-distributed-firewall-rules13.png){.thumbnail}
+
+Choisissez `Drop`{.action} pour supprimer les paquets sur cette règle et cliquez sur les `publish`{.action} pour valider la création de la stratégie et de ces deux règles associées.
+
+![06 Create distributed firewall rules 14](images/06-create-distributed-firewall-rules14.png){.thumbnail}
+
+Votre règle est active le trafic entre la machine virtuelle membre du groupe g-vm et le segment membre du group g-segment n'est plus possible.
+
+![06 Create distributed firewall rules 14](images/06-create-distributed-firewall-rules14.png){.thumbnail}
 
 
 ## Aller plus loin
