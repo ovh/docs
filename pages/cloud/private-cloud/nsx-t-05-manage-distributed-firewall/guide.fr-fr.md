@@ -35,12 +35,13 @@ la fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage
 
 - Tous les membres d'un segment et tous les autres membres d'un autre segment.
 - Certaines machines virtuelles d'un segment et d'autres machines virtuelles du même segment ou d'un autre segment.
+- Certains segments vers des machines vituelles et vice-versa.
 
-Pour simplifier l'administration de votre solution NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc...) et de créér des groupes qui contiennent ces balises au travers de requêtes.
+Pour simplifier l'administration de NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc...) et de créér des groupes qui contiennent les objets associés aux balises ou des plages d'adresses IP (Cette solution n'est pas à priviligier).
 
 ## En pratique
 
-Nous allons positionner des balises sur une machine virtuelle et sur un segment, créer des groupes qui contiendront ces balises et mettre en place une stratégie de blocage entre deux groupes au travers du pare-feu distribué.
+Nous allons créér et des balises à l'intérieur d'une machine virtuelle et d'un segment, ajouter des groupes qui contiendront ces balises et mettre en place une stratégie de blocage entre deux groupes au travers du pare-feu distribué.
 
 ### Création des balises
 
@@ -77,11 +78,11 @@ Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de 
 
 ![02 Create tag on vm 01](images/02-create-tag-on-vm01.png){.thumbnail}
 
-Saisissez `vm`{.action} à la place de tag et cliquez sur `Add Item(s) vm`{.action} en dessous de la zone de saisie.
+Saisissez `vm`{.action} à la place de **Tag** et cliquez sur `Add Item(s) vm`{.action} en dessous de la zone de saisie.
 
-![02 Create tag on vm 02](images/02-create-tag-on-vm01.png){.thumbnail}
+![02 Create tag on vm 02](images/02-create-tag-on-vm02.png){.thumbnail}
 
-Saisissez `ov2`{.action} à la place de scope et cliquez sur `Add Item(s) ov2`{.action} en dessous de la zone de saisie.
+Saisissez `ov2`{.action} à la place de **Scope** et cliquez sur `Add Item(s) ov2`{.action} en dessous de la zone de saisie.
 
 ![02 Create tag on vm 03](images/02-create-tag-on-vm03.png){.thumbnail}
 
@@ -163,11 +164,13 @@ Cliquez sur `SAVE`{.action}.
 
 ![05 Create Group With tag on VM 05](images/05-create-group-with-tag-on-vm05.png){.thumbnail}
 
-cliquez sur `View Members`{.action} dans la ligne de votre groupe pour afficher les membres.
+Cliquez sur `View Members`{.action} dans la ligne de votre groupe pour afficher les membres.
 
 ![05 Create Group With tag on VM 06](images/05-create-group-with-tag-on-vm06.png){.thumbnail}
 
-Dans la rubrique **Virtual Machines** la machine virtuelle balisée est automatiquement ajoutée, cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
+Dans la rubrique **Virtual Machines** vous voyez la machine virtuelle balisée qui a été automatiquement ajoutée.
+
+Cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
 
 ![05 Create Group With tag on VM 07](images/05-create-group-with-tag-on-vm07.png){.thumbnail}
 
@@ -183,7 +186,7 @@ Nommez votre stratégie `Isolate vm and segments`{.action}.
 
 ![06 Create distributed firewall rules 02](images/06-create-distributed-firewall-rules02.png){.thumbnail}
 
-Cliquez sur les `points de suspensions verticaux`{.action} et choisissez `Add Rule`{.action} dans le menu.
+Cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre stratégie et choisissez `Add Rule`{.action} dans le menu.
 
 ![06 Create distributed firewall rules 03](images/06-create-distributed-firewall-rules03.png){.thumbnail}
 
@@ -195,7 +198,7 @@ Cochez le groupe `g-segment01`{.action} et cliquez sur `APPLY`{.action}
 
 ![06 Create distributed firewall rules 05](images/06-create-distributed-firewall-rules05.png){.thumbnail}
 
-Cliquez sur l'icone en forme de `stylo`{.action} à droite de **Any** dans la colonne **Destinations**.
+Cliquez sur l'icône en forme de `stylo`{.action} à droite de **Any** dans la colonne **Destinations**.
 
 ![06 Create distributed firewall rules 06](images/06-create-distributed-firewall-rules06.png){.thumbnail}
 
@@ -211,7 +214,7 @@ Cliquez sur `Add Rule`{.action} dans le menu.
 
 ![06 Create distributed firewall rules 09](images/06-create-distributed-firewall-rules09.png){.thumbnail}
 
-Cliquez sur l'icone en forme de `stylo`{.action} à droite de **Any** dans la colonne **Sources**.
+Cliquez sur l'icône en forme de `stylo`{.action} à droite de **Any** dans la colonne **Sources**.
 
 ![06 Create distributed firewall rules 10](images/06-create-distributed-firewall-rules10.png){.thumbnail}
 
@@ -219,7 +222,7 @@ Cochez le groupe `g-vm`{.action} et cliquez sur `APPLY`{.action}
 
 ![06 Create distributed firewall rules 11](images/06-create-distributed-firewall-rules11.png){.thumbnail}
 
-Cliquez sur l'icone en forme de `stylo`{.action} à droite de **Any** dans la colonne **Destinations**.
+Cliquez sur l'icône en forme de `stylo`{.action} à droite de **Any** dans la colonne **Destinations**.
 
 ![06 Create distributed firewall rules 12](images/06-create-distributed-firewall-rules12.png){.thumbnail}
 
@@ -227,14 +230,13 @@ Cochez le groupe `g-segment01`{.action} et cliquez sur `APPLY`{.action}.
 
 ![06 Create distributed firewall rules 13](images/06-create-distributed-firewall-rules13.png){.thumbnail}
 
-Choisissez `Drop`{.action} pour supprimer les paquets sur cette règle et cliquez sur les `publish`{.action} pour valider la création de la stratégie et de ces deux règles associées.
+Choisissez `Drop`{.action} pour supprimer les paquets sur cette règle et cliquez sur `publish`{.action} pour valider la création de la stratégie et de ces deux règles associées.
 
 ![06 Create distributed firewall rules 14](images/06-create-distributed-firewall-rules14.png){.thumbnail}
 
-Votre règle est active le trafic entre la machine virtuelle membre du groupe g-vm et le segment membre du group g-segment n'est plus possible.
+Votre règle est active, le trafic entre la machine virtuelle membre du groupe g-vm et le segment membre du group g-segment n'est plus possible.
 
 ![06 Create distributed firewall rules 14](images/06-create-distributed-firewall-rules14.png){.thumbnail}
-
 
 ## Aller plus loin
 
