@@ -177,7 +177,7 @@ As we explained in the blog article, you will considerably reduce the initializa
 To do this, we will use **AI Training**. This will allow us to launch a python script from *GitHub* that will **download the models and store them in an OVHcloud volume** named `speech_to_text_app_models`.
 When the models will be downloaded and added to this volume, the status of the job will automatically switch from `Running` to `Done` and the **job will be immediately stopped**. This operation should be quite fast.
 
-*Unfortunately, the diarization model can't be saved anymore since pyannote.audio v2. Make sure you have replaced the `use_auth_token="ACCESS TOKEN GOES HERE"` code line in the app.py file by your own token so it can download the model. If the model fails to be downloaded during the initialization of the app, the diarization option will be disabled.*
+*Unfortunately, the diarization model can't be saved anymore since pyannote.audio v2. The application will load it in the classical way, by using your model access token, which will be requested by the application once launched.*
 
 To launch this **AI Training** job and download the models, use the following OVHcloud's CLI command:
 
