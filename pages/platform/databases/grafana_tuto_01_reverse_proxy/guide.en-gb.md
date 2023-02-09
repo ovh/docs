@@ -100,7 +100,7 @@ server {
 
 ```
 
-Be careful, replace the hostname of the Grafana server \<your-grafana-12345abc-12345abc.database.cloud.ovh.net:443> by your own.
+Be careful, replace the hostname of the Grafana server ***your-grafana-12345abc-12345abc.database.cloud.ovh.net:443*** by your own.
 
 Update also the SSL certificates and key. If needed you can create for testing purpose or non production environment :
 
