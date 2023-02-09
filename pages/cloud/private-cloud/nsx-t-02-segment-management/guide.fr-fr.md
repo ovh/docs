@@ -161,7 +161,7 @@ Cliquez sur `ADD INTERFACE`{.action}.
 Choisissez ces informations :
 
 * **Name** : Saisissez `vlan100-interface` comme nom de votre interfaces.
-* **IP Address / Mask** : saisissez l'adresse IP du premier EDGE `192.168.100.254/24`
+* **IP Address / Mask** : Saisissez l'adresse IP de l'interface `192.168.100.254/24` qui doit correspondre à la passerelle.
 * **Connected To(Segment)** : Prenez le segment qui est sur le vlan 100 sur le vrack nommé `vlan100-vrack-segment`.
 
 Ensuite cliquez sur `SAVE`{.action} pour valider la création de l'interface sur **ovh-t0-gw**.
