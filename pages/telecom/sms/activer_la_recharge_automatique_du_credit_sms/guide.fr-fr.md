@@ -4,6 +4,7 @@ slug: activer-la-recharge-automatique-du-credit-sms
 excerpt: 'Apprenez comment gérer vos crédits SMS OVHcloud'
 legacy_guide_number: '16254520'
 section: 'Gérer mon offre'
+updated: 2023-02-09
 ---
 
 **Dernière mise à jour le 09/02/2023**

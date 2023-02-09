@@ -4,6 +4,7 @@ slug: demander-la-portabilite-de-mon-numero
 excerpt: "Apprenez à porter un ou plusieurs numéros chez OVHcloud et à suivre l'avancement du processus"
 section: 'Numéros ou alias'
 order: 1
+updated: 2023-01-23
 ---
 
 **Dernière mise à jour le 23/01/2023**

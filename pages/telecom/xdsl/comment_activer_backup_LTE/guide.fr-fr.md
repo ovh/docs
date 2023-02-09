@@ -3,6 +3,7 @@ title: 'Comment activer un lien de secours LTE'
 slug: comment-activer-backup-LTE
 excerpt: 'Découvrez comment activer un lien de secours LTE'
 section: 'Configurations techniques avancées'
+updated: 2021-02-05
 ---
 
 **Dernière mise à jour le 05/02/2021**

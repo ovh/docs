@@ -4,6 +4,7 @@ slug: connectivity-api
 excerpt: 'Développez en utilisant notre API connectivity'
 section: 'Configurations techniques avancées'
 order: 5
+updated: 2020-12-07
 ---
 
 > [!primary]

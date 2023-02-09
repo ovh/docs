@@ -3,6 +3,7 @@ title: 'Dépannage C530 IP'
 slug: depannage-c530-ip
 section: 'Gigaset C530IP'
 hidden: true
+updated: 2020-12-09
 ---
 
 **Sommaire :**

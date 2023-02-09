@@ -3,6 +3,7 @@ title: 'Gérer et configurer un bloc IP /29'
 slug: comment-commander-et-gerer-un-bloc-ip-29
 excerpt: 'Apprenez à administrer un bloc IP /29 et à le paramétrer sur votre box OVHcloud'
 section: 'Configurations techniques avancées'
+updated: 2022-02-16
 ---
 
 **Dernière mise à jour le 16/02/2022**

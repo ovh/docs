@@ -3,6 +3,7 @@ title: 'Configurer les touches programmables de votre téléphone OVHcloud'
 slug: configurer-touches-programmables
 excerpt: 'Découvrez comment programmer vos touches personnalisées sur un téléphone OVHcloud'
 section: 'Lignes téléphoniques'
+updated: 2020-02-26
 ---
 
 **Dernière mise à jour le 26/02/2020**

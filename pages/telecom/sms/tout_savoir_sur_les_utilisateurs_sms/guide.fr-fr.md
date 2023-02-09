@@ -4,6 +4,7 @@ excerpt: 'Découvrez les fonctionnalités des utilisateurs API pour envoyer des 
 slug: tout_savoir_sur_les_utilisateurs_sms
 legacy_guide_number: g2144
 section: 'Gérer mon offre'
+updated: 2022-08-05
 ---
 
 **Dernière mise à jour le 05/08/2022** 

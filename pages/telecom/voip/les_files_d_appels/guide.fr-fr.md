@@ -4,6 +4,7 @@ slug: les-files-d-appels
 excerpt: "Découvrez comment configurer une file d'appels sur un numéro alias"
 section: 'Numéros ou alias'
 order: 5
+updated: 2022-05-17
 ---
 
 **Dernière mise à jour le 17/05/2022** 

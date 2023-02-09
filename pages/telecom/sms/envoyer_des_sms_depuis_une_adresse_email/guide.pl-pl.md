@@ -3,6 +3,7 @@ title: 'Wysyłanie wiadomości SMS z adresu e-mail'
 slug: wysylanie-wiadomosci-sms-z-adresu-e-mail
 excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS z adresu e-mail'
 section: 'Wysyłanie wiadomości SMS'
+updated: 2020-06-04
 ---
 
 **Ostatnia aktualizacja z dnia 19-05-2020**

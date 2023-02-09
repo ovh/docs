@@ -3,6 +3,7 @@ title: 'Envoyer des SMS avec l’API OVHcloud en C#'
 slug: envoyer_des_sms_avec_lapi_ovh_en_c
 excerpt: 'Découvrez comment envoyer des SMS avec l’api OVHcloud en C#'
 section: 'Envoyer des SMS'
+updated: 2022-11-21
 ---
 
 **Dernière mise à jour le 21/11/2022**

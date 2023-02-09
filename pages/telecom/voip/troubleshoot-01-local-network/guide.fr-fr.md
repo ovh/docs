@@ -4,6 +4,7 @@ slug: diagnostic-reseau-local
 excerpt: "Découvrez comment effectuer des vérifications basiques sur votre réseau local pour favoriser le fonctionnement de la téléphonie VoIP OVHcloud"
 section: 'Diagnostic et dépannage'
 order: 01
+updated: 2022-05-04
 ---
 
 **Dernière mise à jour le 04/05/2022**

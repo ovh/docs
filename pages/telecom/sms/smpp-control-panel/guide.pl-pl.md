@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak zarządzać ustawieniami konta SMPP w Panelu klienta
 slug: smpp-control-panel
 section: SMPP
 order: 01
+updated: 2023-02-09
 ---
 
 > [!primary]

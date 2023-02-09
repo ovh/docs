@@ -3,6 +3,7 @@ title: Ma première campagne SMS
 excerpt: Découvrez comment effectuer une première campagne d’envoi de SMS
 slug: ma_premiere_campagne_sms
 section: Premiers pas
+updated: 2022-08-05
 ---
 
 **Dernière mise à jour le 05/08/2022**

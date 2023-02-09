@@ -3,6 +3,7 @@ title: Lista di destinatari SMS
 slug: lista_di_destinatari_sms
 excerpt: Scopri come creare una lista di destinatari SMS e importarla nel tuo Spazio Cliente OVHcloud.
 section: Gestisci la tua offerta
+updated: 2022-08-05
 ---
 
 > [!primary]

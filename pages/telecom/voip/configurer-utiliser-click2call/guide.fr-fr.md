@@ -3,6 +3,7 @@ title: 'Configurer et utiliser le Click2Call sur une ligne SIP'
 slug: configurer-utiliser-click2call
 excerpt: 'Apprenez à configurer et utiliser la fonctionnalité Click2Call avec une ligne SIP OVHcloud'
 section: 'Lignes téléphoniques'
+updated: 2022-06-21
 ---
 
 **Dernière mise à jour le 21/06/2022**

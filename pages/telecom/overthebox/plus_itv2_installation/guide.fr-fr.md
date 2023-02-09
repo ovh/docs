@@ -3,6 +3,7 @@ title: "Installation OverTheBox Plus ou IT v2"
 slug: plus-itv2-installation
 excerpt: "Découvrez comment installer et configurer votre équipement OverTheBox Plus ou IT v2 afin de profiter de votre offre OverTheBox"
 section: "OverTheBox Plus et IT v2"
+updated: 2021-04-14
 ---
 
 **Dernière mise à jour le 14/04/2021**

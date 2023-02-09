@@ -3,6 +3,7 @@ title: 'Restreindre sa ligne SIP OVHcloud par IP'
 slug: restreindre-ligne-sip-par-ip
 excerpt: 'Découvrez comment restreindre l’accès à vos lignes SIP grâce à une restriction par IP'
 section: Sécurité
+updated: 2022-06-22
 ---
 
 **Dernière mise à jour le 22/06/2022**

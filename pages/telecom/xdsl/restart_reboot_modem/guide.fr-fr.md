@@ -3,6 +3,7 @@ title: 'Redémarrer ou réinitialiser une box OVHcloud'
 slug: redemarrer-reinitialiser-modem-adsl-ovh
 excerpt: 'Découvrez comment effectuer le redémarrage et la réinitialisation de votre box'
 section: 'Diagnostic et dépannage'
+updated: 2021-07-23
 ---
 
 **Dernière mise à jour le 23/07/2021**

@@ -4,6 +4,7 @@ excerpt: "Découvrez comment demander le déménagement de votre offre d'accès 
 slug: comment-demenager-mon-acces-xdsl
 section: Gestion de mon offre
 odrder: 1
+updated: 2022-10-10
 ---
 
 **Dernière mise à jour le 10/10/2022**

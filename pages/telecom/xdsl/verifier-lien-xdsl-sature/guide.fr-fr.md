@@ -3,6 +3,7 @@ title: 'Vérifier si son lien xDSL est saturé'
 slug: verifier-lien-xdsl-sature
 excerpt: 'Apprenez à contrôler la saturation de votre connexion internet'
 section: 'Diagnostic et dépannage'
+updated: 2022-02-16
 ---
 
 **Dernière mise à jour le 16/02/2022**

@@ -3,6 +3,7 @@ title: 'Mettre à jour son OverTheBox'
 slug: config-upgrade
 excerpt: 'Découvrez comment mettre à jour votre équipement OverTheBox'
 section: "Configurations de l'OverTheBox"
+updated: 2022-11-08
 ---
 
 **Dernière mise à jour le 08/11/2022**

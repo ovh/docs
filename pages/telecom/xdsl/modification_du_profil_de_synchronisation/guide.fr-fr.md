@@ -3,6 +3,7 @@ title: Modification du profil de synchronisation
 slug: modification-du-profil-de-synchronisation
 excerpt: Découvrez comment modifier le profil de synchronisation de votre accès xDSL/FTTH
 section: Configuration de mon offre
+updated: 2022-02-16
 ---
 
 **Dernière mise à jour le 16/02/2022**

@@ -3,6 +3,7 @@ title: 'Ajouter un lien LTE'
 slug: plus-itv2-lte
 excerpt: 'Découvrez comment ajouter un lien LTE à votre OverTheBox'
 section: "OverTheBox Plus et IT v2"
+updated: 2021-04-29
 ---
 
 **Dernière mise à jour le 29/04/2021**

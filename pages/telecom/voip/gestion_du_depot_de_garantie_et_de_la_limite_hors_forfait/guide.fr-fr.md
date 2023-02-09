@@ -4,6 +4,7 @@ slug: gestion-du-depot-de-garantie-et-de-la-limite-hors-forfait
 excerpt: 'Découvrez comment gérer les consommations hors-forfait de vos services VoIP OVHcloud'
 legacy_guide_number: '7536699'
 section: Administratif
+updated: 2021-06-01
 ---
 
 **Dernière mise à jour le 01/06/2021**

@@ -3,6 +3,7 @@ title: 'Moja pierwsza kampania SMS'
 excerpt: 'Dowiedz się, jak przeprowadzić pierwszą kampanię wysyłki wiadomości SMS'
 slug: moja-pierwsza-kampania-sms
 section: Pierwsze kroki
+updated: 2022-08-05
 ---
 
 > [!primary]

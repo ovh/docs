@@ -3,6 +3,7 @@ title: 'Sending SMS messages with the OVHcloud API in Java'
 excerpt: 'Find out how to send SMS messages with the OVHcloud RESTful API in Java'
 slug: send_sms_with_ovhcloud_api_in_java
 section: 'Sending SMS messages'
+updated: 2020-06-01
 ---
 
 **Last updated 01st June 2020**

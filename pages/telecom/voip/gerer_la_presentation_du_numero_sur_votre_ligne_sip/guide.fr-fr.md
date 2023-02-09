@@ -3,6 +3,7 @@ title: 'Configurer la présentation de son numéro'
 slug: gerer-la-presentation-du-numero-sur-votre-ligne-sip
 excerpt: 'Découvrez comment configurer la présentation du numéro de votre ligne OVHcloud'
 section: 'Lignes téléphoniques'
+updated: 2022-06-21
 ---
 
 **Dernière mise à jour le 21/06/2022**
