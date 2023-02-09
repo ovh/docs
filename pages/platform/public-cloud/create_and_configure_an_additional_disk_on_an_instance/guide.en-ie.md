@@ -6,7 +6,7 @@ section: Storage
 order: 1
 ---
 
-**Last updated 2nd February 2023**
+**Last updated 9th February 2023**
 
 ## Objective
 
@@ -21,7 +21,7 @@ This can be useful in cases where:
 
 ## Requirements
 
-- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - A [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
 
@@ -67,7 +67,7 @@ The examples below presume you are logged in as a user with elevated permissions
 
 #### Using Linux
 
-Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+Establish an [SSH connection to your instance](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -319,7 +319,7 @@ If you wish to detach a volume from your instance, the best practice is to unmou
 
 #### On Linux
 
-Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+Establish an [SSH connection to your instance](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
