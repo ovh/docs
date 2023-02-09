@@ -308,9 +308,7 @@ Dans la dernière fenêtre, cliquez sur `Terminer`{.action} pour formater le dis
 
 Le disque sera par la suite disponible en tant que lecteur dans l'explorateur de fichiers.
 
-## Aller plus loin
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.### Détacher un volume
+### Détacher un volume
 
 Si vous souhaitez détacher un volume de votre instance, la meilleure pratique est de démonter le volume du système d'exploitation avant de le détacher de l'instance.
 
@@ -321,7 +319,7 @@ Si vous souhaitez détacher un volume de votre instance, la meilleure pratique e
 
 #### Sous Linux
 
-Ouvrez une [connexion SSH à votre instance](../public-cloud-first-steps/#connect-to-instance), puis utilisez la commande ci-dessous pour lister les disques attachés.
+Ouvrez une [connexion SSH à votre instance](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) puis utilisez la commande ci-dessous pour lister les disques attachés.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -349,11 +347,11 @@ Enregistrez et quittez l'éditeur.
 
 Rendez-vous dans la rubrique `Public Cloud`{.action} de votre espace client OVHcloud et cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage**.
 
-Cliquez sur le `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
+Cliquez sur le bouton `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
 
 ![detach disk](images/detachinstance.png){.thumbnail}
 
-Cliquez sur "Confirmer"{.action} dans la fenêtre qui s'affiche pour lancer le processus.
+Cliquez sur `Confirmer`{.action} dans la fenêtre qui s'affiche pour lancer le processus.
 
 ![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
@@ -361,11 +359,11 @@ Cliquez sur "Confirmer"{.action} dans la fenêtre qui s'affiche pour lancer le p
 
 Établissez une connexion RDP (Remote Desktop) avec votre instance Windows.
 
-Une fois connecté, Une fois connecté, faites un clic droit sur le menu `Démarrer`{.action} et ouvrez `Gestion du disque`{.action}.
+Une fois connecté faites un clic-droit sur le menu `Démarrer`{.action} et ouvrez `Gestion du disque`{.action}.
 
 ![gestion des disques](images/start-menu.png){.thumbnail}
 
-Faites un clic droit sur le volume que vous souhaitez démonter et sélectionnez `Modifier la lettre de lecteur et les chemins d'accès...`{.action}.
+Faites un clic-droit sur le volume que vous souhaitez démonter et sélectionnez `Modifier la lettre de lecteur et les chemins d'accès...`{.action}.
 
 ![unmount disk](images/unmountdisk.png){.thumbnail}
 
@@ -377,11 +375,11 @@ Cliquez ensuite sur `Oui`{.action} pour confirmer la suppression de la lettre du
 
 ![confirm remove disk](images/confirmunmounting.png){.thumbnail}
 
-Lorsque vous avez terminé, vous pouvez fermer la fenêtre de Gestion de disque.
+Lorsque vous avez terminé, vous pouvez fermer la fenêtre de gestion de disque.
 
 Rendez-vous dans la rubrique `Public Cloud`{.action} de votre espace client OVHcloud et cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage**.
 
-Cliquez sur le `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
+Cliquez sur le bouton `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
 
 ![detach disk](images/detachinstance.png){.thumbnail}
 
