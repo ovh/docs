@@ -6,7 +6,7 @@ section: NSX-T
 order: 05
 ---
 
-**Dernière mise à jour le 07/02/2023**
+**Dernière mise à jour le 08/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -40,16 +40,145 @@ Pour simplifier l'administration de votre solution NSX-T il est possible de posi
 
 ## En pratique
 
-Nous allons positionnez des balises sur une machine virtuelle et sur un segment, créer des groupes qui contiendrons ces balises et créer une règle de blocage entre deux groupes.
+Nous allons positionnez des balises sur une machine virtuelle et sur un segment, créer des groupes qui contiendront ces balises et créer une règle de blocage entre deux groupes.
 
 ### Création des balises
 
+Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur. `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
+Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche du segment que vous voulez baliser et choisissez dans le menu `Edit`{.action}.
 
+![01 Create tag on segment 01](images/01-create-tag-on-segment01.png){.thumbnail}
 
-### Ajout de groupe qui contiendrons les balises
+à droite de **Tags* saisissez `ovsegment`{.action} à la place de tag et cliquez sur `Add Item(s) ovsegment`{.action} en dessous de la zone de saisie.
 
+![01 Create tag on segment 02](images/01-create-tag-on-segment02.png){.thumbnail}
+
+Saisissez `ov1`{.action} à la place de scope et cliquez sur `Add Item(s) ov1`{.action} en dessous de la zone de saisie.
+
+![01 Create tag on segment 02](images/01-create-tag-on-segment02.png){.thumbnail}
+
+Cliquez sur le signe `+`{.action} à gauche de votre balise.
+
+![01 Create tag on segment 03](images/01-create-tag-on-segment03.png){.thumbnail}
+
+La balise créée est affiché en bas à droite de **Tags** vous pouvez en créer d'autres en fonction de vos besoins.
+
+Cliquez sur `SAVE`{.action}
+
+![01 Create tag on segment 04](images/01-create-tag-on-segment04.png){.thumbnail}
+
+Cliquez sur `CLOSE EDITING`{.action} pour finaliser le balisage de votre segment.
+
+![01 Create tag on segment 05](images/01-create-tag-on-segment04.png){.thumbnail}
+
+Alez sur l'onglet `Inventory`{.action} et cliquez sur. `Virtual Machines`{.action} à gauche dans l'inventaire pour afficher la liste des machine virtuelles. 
+
+Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre machine virtuelle que vous voulez baliser et choisissez dans le menu `Edit`{.action}.
+
+![02 Create tag on vm 01](images/02-create-tag-on-vm01.png){.thumbnail}
+
+Saisissez `vm`{.action} à la place de tag et cliquez sur `Add Item(s) vm`{.action} en dessous de la zone de saisie.
+
+![02 Create tag on vm 02](images/02-create-tag-on-vm01.png){.thumbnail}
+
+Saisissez `ov2`{.action} à la place de scope et cliquez sur `Add Item(s) ov2`{.action} en dessous de la zone de saisie.
+
+![02 Create tag on vm 03](images/02-create-tag-on-vm03.png){.thumbnail}
+
+Cliquez sur le signe `+`{.action} à gauche de votre balise.
+
+![02 Create tag on vm 04](images/02-create-tag-on-vm04.png){.thumbnail}
+
+La balise est créée cliquez sur `SAVE`{.action} pour enregistrer vos modifications
+
+![02 Create tag on vm 05](images/02-create-tag-on-vm05.png){.thumbnail}
+
+Restez dans l'inventaire et cliquez sur  `Tags`{.action} à gauche pour afficher la liste des balises.
+
+![03 Show tags 01](images/03-show-tags01.png){.thumbnail}
+
+### Ajout de groupes qui contiennent les balises
+
+Toujours dans l'inventaire allez dans `Groups`{.action} à gauche et cliquez sur `ADD GROUP`{.action} pour créér un groupe.
+
+![04 Create Group With tag on segment 01](images/04-create-group-with-tag-on-segment01.png){.thumbnail}
+
+Saisissez `g-segment01`{.action} en dessous de la colonne **Name** et cliquez sur `Set`{.action} sous la colonne **Compute Members**.
+
+![04 Create Group With tag on segment 02](images/04-create-group-with-tag-on-segment02.png){.thumbnail}
+
+Laissez sélectionné `Generic`{.action} et cliquez sur `+ ADD CRITERION`{.action}.
+
+![04 Create Group With tag on segment 03](images/04-create-group-with-tag-on-segment03.png){.thumbnail}
+
+Choisissez ces paramètres :
+
+* **Type** : `NSX Segment`.
+* **Tags** : Equals `ovsegment`.
+* **Scope**: Equals `ov1`.
+
+Et cliquez sur `APPLY`{.action}.
+
+![04 Create Group With tag on segment 04](images/04-create-group-with-tag-on-segment04.png){.thumbnail}
+
+Cliquez sur `SAVE`{.action}.
+
+![04 Create Group With tag on segment 05](images/04-create-group-with-tag-on-segment05.png){.thumbnail}
+
+Le groupe est créé cliquez sur `View Members`{.action} dans la ligne de votre groupe pour afficher la liste des membres
+
+![04 Create Group With tag on segment 06](images/04-create-group-with-tag-on-segment06.png){.thumbnail}
+
+Cliquez sur `IP Addresses`{.action} pour affficher les adresses IP qui sont utilisées sur votre segment et qui ont été automatiquement ajouté à votre groupe.
+
+![04 Create Group With tag on segment 07](images/04-create-group-with-tag-on-segment07.png){.thumbnail}
+
+Cliquez sur `NSX Segments`{.action} pour affficher le segment membre de ce groupe automatiquement rajouté à partir des critères. Vous pouvez cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
+
+![04 Create Group With tag on segment 08](images/04-create-group-with-tag-on-segment08.png){.thumbnail}
+
+Cliquez sur `ADD GROUP`{.action} pour créér un deuxième groupe.
+
+![05 Create Group With tag on VM 01](images/05-create-group-with-tag-on-vm01.png){.thumbnail}
+
+Saisissez `g-vm`{.action} en dessous de la colonne **Name** et cliquez sur `Set`{.action} sous la colonne **Compute Members**.
+
+![05 Create Group With tag on VM 02](images/05-create-group-with-tag-on-vm02.png){.thumbnail}
+
+Laissez sélectionné `Generic`{.action} et cliquez sur `+ ADD CRITERION`{.action}.
+
+![05 Create Group With tag on VM 03](images/05-create-group-with-tag-on-vm03.png){.thumbnail}
+
+Choisissez ces paramètres :
+
+* **Type** : `Virtual Machine`.
+* **Tags** : Equals `vm`.
+* **Scope**: Equals `ov2`.
+
+Et cliquez sur `APPLY`{.action}.
+
+![04 Create Group With tag on VM 04](images/04-create-group-with-tag-on-segment04.png){.thumbnail}
+
+Cliquez sur `SAVE`{.action}.
+
+![04 Create Group With tag on VM 05](images/04-create-group-with-tag-on-segment05.png){.thumbnail}
+
+cliquez sur `View Members`{.action} dans la ligne de votre groupe pour afficher les membres.
+
+![04 Create Group With tag on VM 06](images/04-create-group-with-tag-on-segment06.png){.thumbnail}
+
+Dans la rubrique **Virtual Machines** la machine virtuelle balisé est automatiquement ajouté, cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
+
+![04 Create Group With tag on VM 07](images/04-create-group-with-tag-on-segment07.png){.thumbnail}
 
 ### Mise en place d'une règle de pare-feu distribué
+
+Nous allons maintenant créér une règle de pare-feu distribué de blocage entre les deux groupes créé.
+
+
+
+
+
 
 
 ## Aller plus loin
