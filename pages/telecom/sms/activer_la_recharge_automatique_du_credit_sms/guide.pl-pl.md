@@ -9,7 +9,7 @@ section: Zarządzanie ofertą
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 29-08-2022**
+**Ostatnia aktualizacja z dnia 09-02-2023**
 
 ## Wprowadzenie
 
@@ -81,25 +81,20 @@ Wypełnij wymagane pola:
 > Zasilenia można przenosić wyłącznie między kontami SMS należącymi do jednego identyfikatora OVHcloud. Przenoszenie zasileń między dwoma identyfikatorami OVHcloud jest niemożliwe.
 >
 
-Przenoszenie zasileń SMS może się odbywać wyłącznie przez API.
+W Panelu klienta OVHcloud wybierz jedno z Twoich kont SMS i kliknij polecenie `Przeniesienie zasileń`{.action} z zakładki `Strona główna`{.action}.
 
-> [!success]
-> Jeśli nie wiesz, jak korzystać z API OVHcloud, zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)".
+![transfer zasileń SMS](images/credit-transfer01.png){.thumbnail}
 
-Zaloguj się w konsoli [https://api.ovh.com/](https://api.ovh.com/), a następnie użyj następującego API:
+Wybierz:
 
-> [!api]
->
-> @api {post} /sms/{serviceName}/transferCredits
->
+- konto SMS, które ma przenieść zasilenia
+- konto SMS, które ma otrzymać zasilenia
+- liczbę zasileń, które mają zostać przeniesione
 
-Uzupełnij trzy wymagane pola:
+Kliknij polecenie `Wyślij`{.action}, aby zatwierdzić przeniesienie. Jest on natychmiastowy.
 
-- `serviceName`: podaj nazwę konta SMS, z którego mają zostać przekazane zasilenia
-- `credits`: podaj liczbę zasileń przeznaczonych do przeniesienia
-- `smsAccountTarget`: podaj nazwę konta SMS, które ma otrzymać zasilenia
+![transfer zasileń SMS](images/credit-transfer02.png){.thumbnail}
 
-Kliknij polecenie `Wykonaj`{.action}, aby zatwierdzić przeniesienie. To działanie ma efekt natychmiastowy.
 
 ## Sprawdź również
 

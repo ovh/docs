@@ -4,6 +4,7 @@ slug: nodejs-using-typescript
 excerpt: Découvrez comment utiliser TypeScript sur votre hébergement web POWER
 section: Node.js
 order: 7
+updated: 2021-02-04
 ---
 
 <style>

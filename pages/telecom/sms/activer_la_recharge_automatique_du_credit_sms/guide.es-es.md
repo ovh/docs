@@ -9,7 +9,7 @@ section: 'Gestionar el servicio'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 29/08/2022**
+**Última actualización: 09/02/2023**
 
 ## Objetivo
 
@@ -74,32 +74,27 @@ Por último, configure los siguientes campos:
 
 ![Crédito de SMS](images/smscredit03.png){.thumbnail}
 
-### Transferencia de créditos
+### Transferir créditos SMS
 
 > [!primary]
 >
 > Solo es posible transferir créditos entre cuentas de SMS de un mismo ID de cliente de OVHcloud. No es posible transferir créditos entre dos ID de cliente de OVHcloud diferentes.
 >
 
-Solo es posible transferir créditos de SMS a través de la API.
+En el área de cliente de OVHcloud, seleccione una de sus cuentas de SMS y haga clic en `Transferir crédito`{.action} en la pestaña `Inicio`{.action}.
 
-> [!success]
-> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
+![transferencia de créditos de SMS](images/credit-transfer01.png) {.thumbnail}
 
-Para ello, conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente API:
+Seleccione:
 
-> [!api]
->
-> @api {post} /sms/{serviceName}/transferCredits
->
+- la cuenta de SMS que va a transferir los créditos
+- la cuenta de SMS que va a recibir los créditos
+- el número de créditos que se transferirán
 
-Introduzca la información solicitada:
+Haga clic en `Enviar`{.action} para confirmar la transferencia. Esta operación es inmediata.
 
-- `serviceName`: referencia de la cuenta de SMS que transfiere los créditos.
-- `credits`: número de créditos que desea transferir.
-- `smsAccountTarget`: referencia de la cuenta de SMS que recibe los créditos.
+![transferencia de créditos de SMS](images/credit-transfer02.png) {.thumbnail}
 
-Haga clic en `Execute`{.action} para confirmar la transferencia, que se realizará de forma inmediata.
 
 ## Más información
 

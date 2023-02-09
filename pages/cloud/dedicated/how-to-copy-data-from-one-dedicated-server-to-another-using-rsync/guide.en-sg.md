@@ -9,7 +9,7 @@ section: Tutorial
 
 As part of a migration or backup process, you may find that you need to copy or transfer data stored on one dedicated server, and move it to another. 
 
-Distributed under the GNU GPL licence, rysnc (short for “remote synchronisation”) is a free file syncing software program that can perform unidirectional synchronisation, i.e. copying files from a source server to a target server. 
+Distributed under the GNU GPL licence, rsync (short for “remote synchronisation”) is a free file syncing software program that can perform unidirectional synchronisation, i.e. copying files from a source server to a target server. 
 
 **This tutorial will show you how to copy data from one OVHcloud dedicated server to another using rsync.**
 

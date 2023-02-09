@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 02/05/2022**
+**Dernière mise à jour le 07/02/2023**
 
 ## Objectif
 
@@ -140,6 +140,36 @@ rescue-customer:~# fdisk -l
 
 ```bash
 rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Si vous possédez des datastores de type `VMFS 6`, vous devez installer manuellement l'outil `vmfs6-tools` dans l'environnement du mode rescue :
+
+```bash
+rescue-customer:~# apt-get update && apt-get upgrade
+# apt-get install git uuid-dev libfuse-dev pkg-config gcc
+# git clone https://salsa.debian.org/debian/vmfs6-tools.git
+# cd vmfs6-tools
+# make
+# make install
+```
+
+Accédez au dossier `sbin` pour créer le dossier de montage :
+
+```bash
+rescue-customer:~# cd /usr/local/sbin/
+# mkdir /mnt/datastore
+```
+
+Listez ensuite vos partitions afin de récupérer le nom de la partition du datastore :
+
+```bash
+rescue-customer:~# fdisk -l
+```
+
+À présent, montez la partition avec la commande suivante, en remplaçant `sdbX` par la valeur identifiée à l'étape précédente :
+
+```bash
+rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et redémarrez le serveur en ligne de commande.

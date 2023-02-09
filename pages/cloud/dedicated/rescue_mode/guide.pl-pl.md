@@ -9,7 +9,7 @@ section: 'Diagnostyka i tryb Rescue'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 20-09-2022**
+**Ostatnia aktualizacja z dnia 07-02-2023**
 
 ## Wprowadzenie
 
@@ -150,6 +150,36 @@ Teraz zamontuj partycję za pomocą następującego polecenia, zastępując `sdb
 
 ```bash
 rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Jeśli posiadasz datastores typu `VMFS 6`, musisz ręcznie zainstalować narzędzie `vmfs6-tools` w środowisku trybu Rescue:
+
+```bash
+rescue-customer:~# apt-get update && apt-get upgrade
+# apt-get install git uuid-dev libfuse-dev pkg-config gcc
+# git clone https://salsa.debian.org/debian/vmfs6-tools.git
+# cd vmfs6-tools
+# make
+# make install
+```
+
+Przejdź do folderu `sbin`, aby utworzyć folder montażowy:
+
+```bash
+rescue-customer:~# cd /usr/local/sbin/
+# mkdir /mnt/datastore
+```
+
+Następnie przełącz partycje, aby pobrać nazwę partycji datastore:
+
+```bash
+rescue-customer:~# fdisk -l
+```
+
+Teraz zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością zidentyfikowaną na poprzednim etapie:
+
+```bash
+rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.

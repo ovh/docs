@@ -4,6 +4,7 @@ slug: nodejs-installer-wikijs
 excerpt: Découvrez comment installer Wiki.JS sur votre hébergement web POWER
 section: Node.js
 order: 4
+updated: 2021-02-04
 ---
 
 <style>
