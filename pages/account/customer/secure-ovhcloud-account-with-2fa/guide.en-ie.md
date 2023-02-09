@@ -81,9 +81,7 @@ You can also use one of the security codes provided to you.
 > To avoid the risk of blocking access to your account, please check that you can use one of the following login methods before removing a device:
 > 
 > - via a working device
-> 
 > - via another working method of two-factor authentication 
-> 
 > - via valid security codes
 > 
 
@@ -94,6 +92,15 @@ To remove a device, please log in to the [OVHcloud Control Panel](https://www.ov
 Next, click `Security`{.action} (the first step on the image below), then click on the `...`{.action} icon (second step) to the right of the device you want to delete, and finally, click `Remove`{.action} (third step).
 
 ![2FA](images/hub2FAc.png){.thumbnail}
+
+You will then be sent a final validation code for the device you want to delete. Enter this code in the window that opens, then click `Confirm`{.action} to complete the deletion.
+
+> [!alert]
+>
+> If you no longer have access to the device you want to delete, you cannot delete it yourself from the OVHcloud Control Panel.
+>
+> In this case, **contact our support teams directly** by following the process described [here](#2FA-deletion).
+>
 
 ### Disable two-factor authentication completely <a name="disable-2fa"></a>
 
@@ -107,7 +114,7 @@ Once you have removed all your devices, disable the emergency codes by clicking 
 
 ![2FA codes](images/disabling-codes.png){.thumbnail}
 
-#### If you no longer have access to your OVHcloud Control Panel
+#### If you no longer have access to your OVHcloud Control Panel <a name="2FA-deletion"></a>
 
 If you no longer have valid devices and if you no longer have valid emergency codes, you can request that two-factor authentication be disabled by contacting our support teams.
 

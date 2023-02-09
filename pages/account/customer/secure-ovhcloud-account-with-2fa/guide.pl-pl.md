@@ -86,9 +86,7 @@ Możesz także wykorzystać jeden z otrzymanych kodów bezpieczeństwa.
 > Aby nie zablokować dostępu do Twojego konta, przed usunięciem urządzenia upewnij się, że dysponujesz co najmniej jedną z poniższych metod:
 > 
 > - działającym urządzeniem;
-> 
 > - inną działającą metodą weryfikacji dwuetapowej; 
-> 
 > - prawidłowymi kodami bezpieczeństwa.
 > 
 
@@ -99,6 +97,15 @@ Aby usunąć urządzenie, zaloguj się do [panelu klienta OVHcloud](https://www.
 Następnie kliknij przycisk `Bezpieczeństwo`{.action} (pierwszy etap na poniższym obrazie), a później `...`{.action} (drugi etap) z prawej strony Twojego urządzenia do usunięcia, a na koniec wybierz opcję `Usuń`{.action} (trzeci etap).
 
 ![2FA](images/hub2FAc.png){.thumbnail}
+
+Na urządzenie, które chcesz usunąć, otrzymasz najnowszy kod aktywacyjny. Wpisz ten kod w oknie, które się otworzy, następnie kliknij `Zatwierdź`{.action}, aby zakończyć usunięcie.
+
+> [!alert]
+>
+> Jeśli nie masz już dostępu do urządzenia, które chcesz usunąć, nie będziesz mógł go usunąć z Panelu klienta OVHcloud.
+>
+> W tym przypadku **skontaktuj się bezpośrednio** z naszymi zespołami wsparcia, postępując zgodnie z opisanym procesem [tutaj](#2FA-deletion).
+>
 
 ### Wyłącz w pełni weryfikację dwuetapową <a name="disable-2fa"></a>
 
@@ -112,7 +119,7 @@ Po usunięciu wszystkich urządzeń, wyłącz kody zapasowe, klikając przycisk 
 
 ![2FA kody](images/disabling-codes.png){.thumbnail}
 
-#### Jeśli nie masz już dostępu do Panelu klienta OVHcloud
+#### Jeśli nie masz już dostępu do Panelu klienta OVHcloud <a name="2FA-deletion"></a>
 
 Jeśli nie posiadasz już dostępu do narzędzi podwójnej autoryzacji  i nie masz już poprawnych kodów zapasowych, możesz zlecić wyłączenie weryfikacji dwuetapowej, kontaktując się z zespołem pomocy.
 

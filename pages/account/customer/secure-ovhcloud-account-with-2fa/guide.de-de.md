@@ -84,9 +84,7 @@ Auch können Sie einen der Sicherheitscodes verwenden, die Ihnen zur Verfügung 
 > Um den Zugang zu Ihrem Account nicht zu sperren, vergewissern Sie sich vor dem Entfernen eines Peripheriegeräts, dass Sie eine der folgenden Möglichkeiten zur Verfügung haben:
 > 
 > - ein funktionstüchtiges Peripheriegerät;
-> 
 > - eine alternative, funktionierende Methode der Zwei-Faktor-Authentifizierung;
-> 
 > - gültige Sicherheitscodes.
 > 
 
@@ -97,6 +95,15 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 Klicken Sie danach auf `Sicherheit`{.action} (Schritt 1 auf dem Bild unten), dann auf `...`{.action} (Schritt 2) rechts vom Peripheriegerät, das Sie entfernen möchten, und schließlich auf `Löschen`{.action} (Schritt 3).
 
 ![2FA](images/hub2FAc.png){.thumbnail}
+
+Ihnen wird dann ein letzter Validierungscode auf dem Gerät zugesandt, das Sie löschen möchten. Geben Sie diesen Code im angezeigten Fenster ein und klicken Sie anschließend auf `Bestätigen`{.action}, um die Löschung abzuschließen.
+
+> [!alert]
+>
+> Wenn Sie keinen Zugriff mehr auf das Gerät haben, das Sie löschen möchten, können Sie es nicht selbst aus dem OVHcloud Kundencenter löschen.
+>
+> In diesem Fall **kontaktieren Sie unsere Support-Teams direkt**, indem Sie den [hier](#2FA-deletion) beschriebenen Prozess verfolgen.
+>
 
 ### Die Zwei-Faktor-Authentifizierung vollständig deaktivieren <a name="disable-2fa"></a>
 
@@ -110,7 +117,7 @@ Wenn alle Ihre Geräte gelöscht sind, deaktivieren Sie die Notfall-Codes, indem
 
 ![2FA Codes](images/disabling-codes.png){.thumbnail}
 
-#### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben
+#### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben <a name="2FA-deletion"></a>
 
 Wenn keinen Zugriff auf validierte Geräte und auch keine gültigen Notfall-Codes mehr haben, können Sie die Zwei-Faktor-Authentifizierung deaktivieren, indem Sie unsere Support-Teams kontaktieren.
 

@@ -79,9 +79,7 @@ Vous pouvez également utiliser l'un des codes de sécurité mis à votre dispos
 > Avant de supprimer un périphérique et afin de ne pas bloquer l'accès à votre compte, vérifiez donc que vous disposez au choix :
 > 
 > - d'un périphérique fonctionnel ;
-> 
 > - d'une autre méthode de double authentification fonctionnelle ; 
-> 
 > - de codes de sécurité valides.
 > 
 
@@ -92,6 +90,15 @@ Pour supprimer un périphérique, connectez-vous à votre [espace client OVHclou
 Cliquez ensuite sur `Sécurité`{.action} (première étape sur l'image ci-dessous), puis sur les `...`{.action} (deuxième étape) à droite de votre périphérique à supprimer et enfin sur `Supprimer`{.action} (troisième étape).
 
 ![2FA](images/remove_auth.png){.thumbnail}
+
+Un dernier code de validation vous est alors envoyé sur le périphérique que vous souhaitez supprimer. Renseignez ce code dans la fenêtre qui s'ouvre puis cliquez sur `Valider`{.action} pour terminer la suppression.
+
+> [!alert]
+>
+> Si vous n'avez plus accès au périphérique que vous souhaitez supprimer, vous ne pourrez pas le supprimer vous-même de l'espace client OVHcloud.
+>
+> Dans ce cas, **contactez directement** nos équipes support en suivant le processus décrit [ici](#2FA-deletion).
+>
 
 ### Désactiver complètement la double authentification <a name="desactivation"></a>
 
@@ -105,7 +112,7 @@ Une fois tous vos périphériques supprimés, désactivez les codes de secours e
 
 ![2FA codes](images/disabling-codes.png){.thumbnail}
 
-#### Si vous n'avez plus accès à votre espace client OVHcloud
+#### Si vous n'avez plus accès à votre espace client OVHcloud <a name="2FA-deletion"></a>
 
 Si vous ne disposez plus de périphériques valides et si vous ne disposez plus de codes de secours valides, vous pouvez demander la désactivation de la double authentification en contactant nos équipes support.
 

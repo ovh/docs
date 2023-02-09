@@ -84,9 +84,7 @@ Também pode utilizar um dos códigos de segurança disponíveis.
 > Antes de apagar um periférico e para não bloquear o acesso à sua conta, certifique-se de que tem ao seu dispor pelo menos:
 > 
 > - um periférico funcional;
-> 
 > - um outro método de dupla autenticação funcional; 
-> 
 > - códigos de segurança válidos.
 > 
 
@@ -97,6 +95,15 @@ Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](https://www.o
 Clique então em `Segurança`{.action} (etapa 1 na imagem abaixo), depois em `...`{.action} (etapa 2) à direita do periférico que pretende eliminar e, por fim, em `Eliminar`{.action} (etapa 3).
 
 ![2FA](images/hub2FAc.png){.thumbnail}
+
+Receberá um último código de validação no periférico que deseja eliminar. Introduza este código na nova janela e clique em `Validar`{.action} para terminar a eliminação.
+
+> [!alert]
+>
+> Se não tiver acesso ao periférico que pretende eliminar, não poderá eliminá-lo você mesmo da Área de Cliente OVHcloud.
+>
+> Neste caso, **contacte diretamente** as nossas equipas de apoio seguindo o processo descrito [aqui](#2FA-deletion).
+>
 
 ### Desativar completamente a dupla autenticação <a name="disable-2fa"></a>
 
@@ -110,7 +117,7 @@ Depois de eliminar todos os periféricos, desative os códigos de segurança cli
 
 ![2FA códigos](images/disabling-codes.png){.thumbnail}
 
-#### Se já não tem acesso à Área de Cliente OVHcloud
+#### Se já não tem acesso à Área de Cliente OVHcloud <a name="2FA-deletion"></a>
 
 Se já não dispõe de periféricos válidos e se já não dispõe de códigos de segurança válidos, pode solicitar a desativação da dupla autenticação contactando as nossas equipas de suporte.
 
