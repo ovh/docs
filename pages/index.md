@@ -1564,6 +1564,9 @@
             + [Advanced usage](web-cloud-messaging-sms-advanced-usage)
                 + [Tout ce qu’il faut savoir sur le HLR - SMS](telecom/sms/tout_ce_quil_faut_savoir_sur_le_hlr_-_sms)
                 + [API SMS Cookbook](telecom/sms/api_sms_cookbook)
+            + [SMPP](web-cloud-messaging-sms-smpp)
+                + [Managing an SMS SMPP account](telecom/sms/smpp-control-panel)
+                + [SMPP Technical Specifications](telecom/sms/smpp-specification)
 + OVHcloud Labs
     + [Data Collector](ovhcloud-labs-data-collector)
         + [Getting started](ovhcloud-labs-data-collector-getting-started)
