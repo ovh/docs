@@ -184,7 +184,7 @@ If you have copied the full output, the identifier after the key should already 
 
 ### Setting a default SSH key (only for the “Dedicated” section) <a name="cpsshkey"></a>
 
-If you have added multiple SSH keys in your control panel, it is possible to set one key to be used as the default key on the account. 
+If you have added multiple SSH keys in your Control Panel, it is possible to set one key to be used as the default key on the account. 
 
 > [!warning]
 > Please note that once a default key is set, it will also be used as the means of connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 

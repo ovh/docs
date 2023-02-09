@@ -15,7 +15,7 @@ routes:
 This guide will show you how to interconnect two Nutanix clusters, provided by OVHcloud through an IPsec VPN. To do this, we will replace the **OVHgateway** virtual machines that provide internet access with a gateway under the **pfSense** operating system.
 
 > [!warning]
-> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure  that they function correctly.
 >
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/de/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >
