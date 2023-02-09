@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 02/05/2022**
+**Dernière mise à jour le 07/02/2023**
 
 ## Objectif
 
