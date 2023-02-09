@@ -5,6 +5,7 @@ excerpt: Come visualizzare e amministrare il rinnovo delle tue soluzioni dallo S
 section: Fatturazione
 order: 1
 legacy_guide_number: g1271
+updated: 2022-04-07
 ---
 
 > [!primary]

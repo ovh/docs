@@ -3,6 +3,7 @@ title: 'Plik nutzen, um Dateien zu teilen'
 excerpt: Erfahren Sie hier, wie Sie mit dem Plik Tool Dateien an andere Personen senden
 slug: plik
 section: Tools
+updated: 2022-02-14
 ---
 
 > [!primary]

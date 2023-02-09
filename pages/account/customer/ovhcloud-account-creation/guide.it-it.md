@@ -4,6 +4,7 @@ slug: creare-account-ovhcloud
 excerpt: Come creare un account OVHcloud
 section: 'Per iniziare'
 order: 1
+updated: 2021-07-01
 ---
 
 > [!primary]

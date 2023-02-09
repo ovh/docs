@@ -3,6 +3,7 @@ title: Public Cloud Reversibility Policy
 slug: public-cloud-reversibility-policy
 section: Reversibility policies
 order: 4
+updated: 2021-05-05
 ---
 
 **Last updated 5th May 2021**

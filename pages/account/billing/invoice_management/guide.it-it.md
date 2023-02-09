@@ -3,6 +3,7 @@ title: Gestire le fatture OVHcloud
 slug: gestire-fatture-ovhcloud
 excerpt: Come amministrare fatture e pagamenti dallo Spazio Cliente
 section: Fatturazione
+updated: 2022-05-12
 ---
 
 > [!primary]

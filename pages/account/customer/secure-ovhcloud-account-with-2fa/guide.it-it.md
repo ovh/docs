@@ -3,6 +3,7 @@ title: 'Rendere sicuro il tuo account OVHcloud con la doppia autenticazione'
 slug: proteggi_il_tuo_account_con_2FA
 excerpt: 'Come rendere più sicuro il tuo account OVHcloud attivando la doppia autenticazione'
 section: Sicurezza
+updated: 2022-07-20
 ---
 
 > [!primary]

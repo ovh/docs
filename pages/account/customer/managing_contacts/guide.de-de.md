@@ -4,6 +4,7 @@ slug: verwaltung-der-kontakte
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte Ihrer OVHcloud Dienste verwalten'
 section: 'Erste Schritte'
 order: 6
+updated: 2021-12-13
 ---
 
 **Letzte Aktualisierung am 13.12.2021** 

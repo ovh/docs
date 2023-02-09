@@ -4,6 +4,7 @@ slug: log-in-to-ovhcloud-control-panel
 excerpt: 'Find out how to log in to your OVHcloud account'
 Section: 'Getting started'
 order: 2
+updated: 2021-07-01
 ---
 
 **Last updated 1st July 2021**

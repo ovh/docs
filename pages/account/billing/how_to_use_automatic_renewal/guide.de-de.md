@@ -4,6 +4,7 @@ slug: anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh
 excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die automatische Verlängerung Ihrer Dienste verwalten
 section: Verlängerung der Dienste verwalten
 order: 1
+updated: 2022-04-07
 ---
 
 > [!primary]

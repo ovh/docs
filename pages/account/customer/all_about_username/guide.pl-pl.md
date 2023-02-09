@@ -5,6 +5,7 @@ slug: identyfikator_klienta
 legacy_guide_number: g2123
 section: 'Pierwsze kroki'
 order: 3
+updated: 2021-07-01
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Betrug erkennen − So schützen Sie sich vor Phishing und betrügerisch
 slug: e-mail-betrug-phishing
 excerpt: 'Wie können Sie eine Phishing-Mail erkennen und was ist zu tun, wenn Sie auf einen betrügerischen Link geklickt haben?'
 section: Sicherheit
+updated: 2020-10-12
 ---
 
 **Letzte Aktualisierung am 12.10.2020** 

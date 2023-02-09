@@ -4,6 +4,7 @@ excerpt: Find out how to discontinue your OVHcloud subscriptions
 slug: how-to-cancel-your-services
 section: Managing the renewal of services
 order: 03
+updated: 2022-03-22
 ---
 
 **Last updated 22rd March 2022**

@@ -3,6 +3,7 @@ title: Zarządzanie zamówieniami w OVHcloud
 slug: zarzadzanie-zamowieniami-ovh
 excerpt: Dowiedz się, jak zarządzać zamówieniami na usługi w OVHcloud
 section: Zamówienia, faktury i usługi
+updated: 2022-05-06
 ---
 
 > [!primary]

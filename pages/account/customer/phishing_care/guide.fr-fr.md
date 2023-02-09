@@ -3,6 +3,7 @@ title: 'Phishing - Comment reconnaître des e-mails ou SMS frauduleux ?'
 slug: arnaques-fraude-phishing
 excerpt: 'Comment reconnaître un e-mail de phishing et que faire si vous avez cliqué sur un lien frauduleux ?'
 section: Sécurité
+updated: 2020-10-12
 ---
 
 **Dernière mise à jour le 29/11/2022**

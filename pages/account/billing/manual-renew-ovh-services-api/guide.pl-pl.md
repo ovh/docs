@@ -3,6 +3,7 @@ title: 'Odnawianie usług przy użyciu API OVHcloud'
 slug: odnawianie-uslug-api-ovh
 excerpt: 'Dowiedz się, jak odnawiać usługi przy użyciu API OVHcloud'
 section: 'Pierwsze kroki'
+updated: 2020-05-05
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-06**

@@ -5,6 +5,7 @@ excerpt: Dowiedz się, jak zarządzać odnawianiem usług OVHcloud w Panelu klie
 legacy_guide_number: g1271
 section: Pierwsze kroki
 order: 1
+updated: 2022-04-07
 ---
 
 > [!primary]

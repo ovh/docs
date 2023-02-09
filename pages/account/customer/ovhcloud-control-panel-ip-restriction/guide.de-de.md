@@ -4,6 +4,7 @@ slug: ovhcloud-control-panel-ip-restriction
 excerpt: "Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account absichern, indem Sie Zugriffsberechtigungen für IP-Adressen einrichten"
 section: Sicherheit
 order: 03
+updated: 2022-12-12
 ---
 
 > [!primary]

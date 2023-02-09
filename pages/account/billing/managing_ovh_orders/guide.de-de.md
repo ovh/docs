@@ -3,6 +3,7 @@ title: OVHcloud Bestellungen verwalten
 slug: bestellungen-verwalten-ovh
 excerpt: Erfahren Sie hier, wie Sie Ihre Bestellungen bei OVHcloud verwalten
 section: Abrechnung
+updated: 2022-05-06
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: zarzadzanie-haslem
 excerpt: 'Dowiedz się, jak tworzyć, zmieniać i zarządzać hasłem do Panelu klienta OVHcloud'
 section: 'Pierwsze kroki'
 order: 4
+updated: 2021-07-21
 ---
 
 ## Wprowadzenie
