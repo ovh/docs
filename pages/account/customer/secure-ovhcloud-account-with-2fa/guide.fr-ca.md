@@ -93,7 +93,7 @@ Cliquez ensuite sur `Sécurité`{.action} (première étape sur l'image ci-desso
 
 Un dernier code de validation vous est alors envoyé sur le périphérique que vous souhaitez supprimer. Renseignez ce code dans la fenêtre qui s'ouvre puis cliquez sur `Valider`{.action} pour terminer la suppression.
 
-> [!alert]
+> [!warning]
 >
 > Si vous n'avez plus accès au périphérique que vous souhaitez supprimer, vous ne pourrez pas le supprimer vous-même de l'espace client OVHcloud.
 >

@@ -91,7 +91,7 @@ Next, click `Security`{.action} (the first step on the image below), then click 
 
 You will then be sent a final validation code for the device you want to delete. Enter this code in the window that opens, then click `Confirm`{.action} to complete the deletion.
 
-> [!alert]
+> [!warning]
 >
 > If you no longer have access to the device you want to delete, you cannot delete it yourself from the OVHcloud Control Panel.
 >

@@ -100,11 +100,11 @@ Haga clic en `«Seguridad»`{.action} (primer paso en la siguiente imagen) y, se
 
 Recibirá un último código de verificación en el dispositivo que quiera eliminar. Introduzca el código en la ventana que se abre y haga clic en `Aceptar`{.action} para finalizar la eliminación.
 
-> [!alert]
+> [!warning]
 >
-Si ya no tiene acceso al dispositivo que desea eliminar, no podrá eliminarlo usted mismo del área de cliente de OVHcloud.
+> Si ya no tiene acceso al dispositivo que desea eliminar, no podrá eliminarlo usted mismo desde el área de cliente de OVHcloud.
 >
-> En ese caso, **Contacte directamente** con nuestro equipo de soporte siguiendo el proceso descrito [aquí](#2FA-deletion).
+> En ese caso, **contacte directamente** con nuestro equipo de soporte siguiendo el proceso descrito [aquí](#2FA-deletion).
 >
 
 ### Desactivar la doble autenticación por completo <a name="disable-2fa"></a>

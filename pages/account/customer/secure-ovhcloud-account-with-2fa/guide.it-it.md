@@ -98,7 +98,7 @@ Clicca su `Sicurezza`{.action}(primo step nell’immagine qui di seguito) e poi 
 
 A questo punto, riceverai un ultimo codice di conferma sulla periferica che vuoi eliminare. Nella nuova finestra, inserisci il codice e clicca su `Conferma`{.action} per completare l'eliminazione.
 
-> [!alert]
+> [!warning]
 >
 > Se non hai più accesso alla periferica da rimuovere, non puoi eliminarla direttamente dallo Spazio Cliente OVHcloud.
 >

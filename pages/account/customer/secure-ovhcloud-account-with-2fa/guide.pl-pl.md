@@ -100,7 +100,7 @@ Następnie kliknij przycisk `Bezpieczeństwo`{.action} (pierwszy etap na poniżs
 
 Na urządzenie, które chcesz usunąć, otrzymasz najnowszy kod aktywacyjny. Wpisz ten kod w oknie, które się otworzy, następnie kliknij `Zatwierdź`{.action}, aby zakończyć usunięcie.
 
-> [!alert]
+> [!warning]
 >
 > Jeśli nie masz już dostępu do urządzenia, które chcesz usunąć, nie będziesz mógł go usunąć z Panelu klienta OVHcloud.
 >

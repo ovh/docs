@@ -98,7 +98,7 @@ Klicken Sie danach auf `Sicherheit`{.action} (Schritt 1 auf dem Bild unten), dan
 
 Ihnen wird dann ein letzter Validierungscode auf dem Gerät zugesandt, das Sie löschen möchten. Geben Sie diesen Code im angezeigten Fenster ein und klicken Sie anschließend auf `Bestätigen`{.action}, um die Löschung abzuschließen.
 
-> [!alert]
+> [!warning]
 >
 > Wenn Sie keinen Zugriff mehr auf das Gerät haben, das Sie löschen möchten, können Sie es nicht selbst aus dem OVHcloud Kundencenter entfernen.
 >

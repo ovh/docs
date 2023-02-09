@@ -75,7 +75,7 @@ Si votre périphérique (téléphone mobile/smartphone/clé de sécurité) est p
 - utiliser un autre périphérique de double authentification à votre disposition, si vous en avez activé plusieurs;
 - [désactiver la double authentification](#desactivation).
 
-> [!alert]
+> [!warning]
 >
 >Si vous avez encore accès à votre espace client OVHcloud malgré la perte de votre périphérique, il est essentiel, à des fins de sécurité, de **supprimer ce périphérique de la liste de ceux utilisés pour la double authentification**.
 >
@@ -105,7 +105,7 @@ Cliquez ensuite sur `Sécurité`{.action} (première étape sur l'image ci-desso
 
 Un dernier code de validation vous est alors envoyé sur le périphérique que vous souhaitez supprimer. Renseignez ce code dans la fenêtre qui s'ouvre puis cliquez sur `Valider`{.action} pour terminer la suppression.
 
-> [!alert]
+> [!warning]
 >
 > Si vous n'avez plus accès au périphérique que vous souhaitez supprimer, vous ne pourrez pas le supprimer vous-même de l'espace client OVHcloud.
 >

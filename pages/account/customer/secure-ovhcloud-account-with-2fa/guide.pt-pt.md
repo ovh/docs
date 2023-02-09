@@ -98,7 +98,7 @@ Clique então em `Segurança`{.action} (etapa 1 na imagem abaixo), depois em `..
 
 Receberá um último código de validação no periférico que deseja eliminar. Introduza este código na nova janela e clique em `Validar`{.action} para terminar a eliminação.
 
-> [!alert]
+> [!warning]
 >
 > Se não tiver acesso ao periférico que pretende eliminar, não poderá eliminá-lo você mesmo da Área de Cliente OVHcloud.
 >
