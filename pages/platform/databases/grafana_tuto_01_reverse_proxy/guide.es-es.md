@@ -32,7 +32,7 @@ Schema concept :
 
 - A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- A Grafana database running on your OVHcloud Public Cloud project ([this guide](https://docs.ovh.com/es/publiccloud/databases/getting-started/) can help you to create a managed Grafana and if you need more details on the private network configuration use [this guide](https://docs.ovh.com/es/publiccloud/databases/configure-vrack/))
+- A Grafana database running on your OVHcloud Public Cloud project. ([This guide](https://docs.ovh.com/es/publiccloud/databases/getting-started/) can help you to create a managed Grafana. If you need more details on the private network configuration use [this guide](https://docs.ovh.com/es/publiccloud/databases/configure-vrack/))
 
 ## Instructions
 
@@ -45,7 +45,7 @@ Schema concept :
 For this tutorial, we will use an Ubuntu 22.10 image to install NGINX.
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) and create a new compute instance in your vRack.
-If needed to expose your Reverse Proxy to public network, please select the IP Floating address option.
+If you need to expose your Reverse Proxy to a public network, please select the IP Floating address option.
 
 ### Install NGINX
 
@@ -58,6 +58,7 @@ sudo apt install nginx
 ```
 
 Check if your NGINX service is installed and running correctly:
+
 ```bash
 sudo systemctl status nginx
 ```
@@ -66,7 +67,7 @@ sudo systemctl status nginx
 
 Regarding the NGINX configuration we are going to follow the [official Grafana documentation](https://grafana.com/tutorials/run-grafana-behind-a-proxy/).
 
-Create a configuration file in /etc/nginx/sites-enabled/ file:
+Create a configuration file in the `/etc/nginx/sites-enabled/` file:
 
 ```nginx
 # this is required to proxy Grafana Live WebSocket connections.
@@ -104,7 +105,7 @@ server {
 
 Be careful, replace the hostname of the Grafana server ***your-grafana-12345abc-12345abc.database.cloud.ovh.net:443*** by your own.
 
-Update also the SSL certificates and key. If needed you can create for testing purpose or non production environment :
+Update also the SSL certificates and key. If needed you can create for testing purposes or non production environment :
 
 ```bash
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/your_certificate.key -out /etc/nginx/ssl/your_certificate.crt
