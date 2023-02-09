@@ -3,6 +3,7 @@ title: Zarządzanie historią wiadomości SMS
 slug: zarzadzanie-historia-wiadomosci-sms
 excerpt: Dowiedz się, jak sprawdzić historię wiadomości SMS wysłanych z Twojego konta OVHcloud
 section: Zarządzanie ofertą
+updated: 2022-08-05
 ---
 
 > [!primary]

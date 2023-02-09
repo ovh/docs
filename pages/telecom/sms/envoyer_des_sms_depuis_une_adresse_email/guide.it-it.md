@@ -3,6 +3,7 @@ title: Inviare degli SMS da un indirizzo e-mail
 slug: inviare-sms-da-indirizzo-email
 excerpt: Scopri come inviare SMS da un indirizzo email
 section: Inviare SMS
+updated: 2020-06-04
 ---
 
 **Ultimo aggiornamento: 19/05/2020**

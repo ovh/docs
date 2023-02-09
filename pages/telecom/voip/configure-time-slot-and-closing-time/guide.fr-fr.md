@@ -3,6 +3,7 @@ title: 'Configurer des plages horaires et des fermetures exceptionnelles sur une
 slug: configurer-plages-horaires-fermetures-exceptionnelles-ligne
 excerpt: 'Découvrez comment configurer des plages horaires et des fermetures exceptionnelles sur votre ligne OVHcloud'
 section: 'Lignes téléphoniques'
+updated: 2022-06-21
 ---
 
 **Dernière mise à jour le 21/06/2022**

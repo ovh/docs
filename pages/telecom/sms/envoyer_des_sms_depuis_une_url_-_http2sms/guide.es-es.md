@@ -3,6 +3,7 @@ title: 'Enviar SMS desde una URL'
 slug: enviar-sms-desde-una-url
 excerpt: 'Cómo enviar SMS desde una dirección http'
 section: 'Enviar SMS'
+updated: 2020-05-20
 ---
 
 **Última actualización: 04/11/2019** 

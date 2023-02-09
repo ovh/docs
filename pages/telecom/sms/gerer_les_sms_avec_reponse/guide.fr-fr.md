@@ -3,6 +3,7 @@ title: Gérer les SMS avec réponse
 slug: gerer-les-sms-avec-reponse
 legacy_guide_number: '8650768'
 section: Gérer mon offre
+updated: 2020-09-14
 ---
 
 ### Préambule {#préambule}

@@ -3,6 +3,7 @@ title: Sending SMS messages via a URL - http2sms
 slug: send_sms_messages_via_url_-_http2sms
 excerpt: Find out how to send SMS messages via a HTTP address
 section: Sending SMS messages
+updated: 2020-05-20
 ---
 
 **Last updated 20th May 2020** 

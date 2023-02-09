@@ -3,6 +3,7 @@ title: 'Dépanner son accès internet fibre'
 slug: depanner-diagnostic-acces-internet-fibre
 excerpt: 'Découvrez comment dépanner et remettre en service votre accès internet fibre OVHcloud'
 section: 'Diagnostic et dépannage'
+updated: 2022-02-16
 ---
 
 **Dernière mise à jour le 16/02/2022**

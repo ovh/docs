@@ -5,6 +5,7 @@ slug: envoyer_des_fax_via_limprimante_virtuelle_ecofax-_windows
 legacy_guide_number: g1685
 section: Envoi/Réception de fax
 order: 4
+updated: 2022-06-24
 ---
 
 **Dernière mise à jour le 24/06/2022**

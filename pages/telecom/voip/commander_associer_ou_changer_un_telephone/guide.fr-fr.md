@@ -3,6 +3,7 @@ title: "Gérer le téléphone Plug & Phone d'une ligne SIP"
 slug: commander-associer-ou-changer-un-telephone
 excerpt: 'Apprenez à gérer le téléphone Plug & Phone de votre ligne SIP OVHcloud'
 section: 'Lignes téléphoniques'
+updated: 2023-01-04
 ---
 
 **Dernière mise à jour le 04/01/2023**

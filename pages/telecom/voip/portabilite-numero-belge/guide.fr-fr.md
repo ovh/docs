@@ -4,6 +4,7 @@ slug: portabilite-numero-belge
 excerpt: 'Découvrez comment porter un ou plusieurs numéros belges chez OVHcloud'
 section: 'Numéros ou alias'
 order: 2
+updated: 2022-08-05
 ---
 
 **Dernière mise à jour le 05/08/2022**

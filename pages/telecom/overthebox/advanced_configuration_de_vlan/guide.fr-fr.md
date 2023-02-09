@@ -5,6 +5,7 @@ description: 'Configuration de VLAN'
 slug: configuration-de-vlan
 excerpt: 'Nous allons vous présenter comment créer un vlan, par exemple vlan 666'
 section: "Configurations techniques avancées"
+updated: 2021-04-13
 ---
 
 ## Sur OverTheBox Plus (switch Ethernet intégré)

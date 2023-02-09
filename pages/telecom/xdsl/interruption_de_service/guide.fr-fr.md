@@ -3,6 +3,7 @@ title: 'Rétablir son service suite à une coupure complète ou partielle'
 slug: interruption-de-service
 excerpt: 'Découvrez comment rétablir votre service suite à une coupure complète ou partielle'
 section: 'Diagnostic et dépannage'
+updated: 2018-09-18
 ---
 
 **Dernière mise à jour le 18/09/2018**

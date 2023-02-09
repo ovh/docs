@@ -4,6 +4,7 @@ slug: depannage-telephone-plug-and-phone
 excerpt: 'Apprenez à dépanner votre téléphone OVHcloud'
 section: 'Diagnostic et dépannage'
 order: 02
+updated: 2022-05-09
 ---
 
 **Dernière mise à jour le 09/05/2022**

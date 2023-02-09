@@ -4,6 +4,7 @@ excerpt: "Découvrez comment gérer les paramètres d'un compte SMPP depuis l'es
 slug: smpp-control-panel
 section: SMPP
 order: 01
+updated: 2023-02-09
 ---
 
 **Dernière mise à jour le 09/02/2023**

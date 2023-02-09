@@ -3,6 +3,7 @@ title: Gestire la cronologia degli SMS
 slug: gestire-la-cronologia-degli-sms
 excerpt: Come consultare la cronologia degli SMS inviati dallo Spazio Cliente OVHcloud
 section: Gestisci la tua offerta 
+updated: 2022-08-05
 ---
 
 > [!primary]

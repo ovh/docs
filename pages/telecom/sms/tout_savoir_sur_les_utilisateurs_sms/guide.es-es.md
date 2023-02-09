@@ -4,6 +4,7 @@ slug: usuarios-de-sms
 excerpt: 'Descubra las funcionalidades de los usuarios de la API de SMS'
 legacy_guide_number: g2144
 section: 'Gestionar el servicio'
+updated: 2022-08-05
 ---
 
 > [!primary]

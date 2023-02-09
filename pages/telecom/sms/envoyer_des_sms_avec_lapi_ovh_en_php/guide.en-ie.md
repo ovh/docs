@@ -4,6 +4,7 @@ slug: send_sms_with_ovhcloud_api_in_php
 excerpt: Find out how to send SMS messages with the OVHcloud RESTful API in PHP
 legacy_guide_number: g1639
 section: Sending SMS messages
+updated: 2020-06-25
 ---
 
 **Last updated 25th June 2020**

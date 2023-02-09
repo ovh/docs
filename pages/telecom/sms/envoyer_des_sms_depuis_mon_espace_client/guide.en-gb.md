@@ -3,6 +3,7 @@ title: Sending SMS messages via the OVHcloud Control Panel
 slug: send_sms_messages_via_control_panel
 excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
 section: Sending SMS messages
+updated: 2022-08-05
 ---
 
 **Last updated 5th August 2022**

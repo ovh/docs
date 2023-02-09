@@ -3,6 +3,7 @@ title: Sending SMS messages to the USA
 slug: sending-sms-to-usa
 excerpt: Find out how to send SMS messages to the USA
 section: Sending SMS messages
+updated: 2022-08-05
 ---
 
 **Last updated 5th August 2022**

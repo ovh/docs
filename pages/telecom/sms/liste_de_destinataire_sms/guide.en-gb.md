@@ -4,6 +4,7 @@ slug: list_of_sms_recipients
 excerpt: 'Find out how to create a list of SMS recipients and import it into your OVHcloud Control Panel.'
 legacy_guide_number: g2402
 section: 'Managing your solution'
+updated: 2022-08-05
 ---
 
 **Last updated 5th August 2022**

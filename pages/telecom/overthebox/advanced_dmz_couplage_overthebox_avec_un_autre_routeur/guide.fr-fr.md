@@ -4,6 +4,7 @@ keywords: 'DMZ, Routeur'
 description: 'DMZ &#58; couplage OverTheBox avec un autre routeur'
 slug: dmz-couplage-overthebox-avec-un-autre-routeur
 section: "Configurations techniques avancées"
+updated: 2021-11-26
 ---
 
 **Dernière mise à jour le 26/11/2021**

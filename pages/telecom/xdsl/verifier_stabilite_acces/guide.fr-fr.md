@@ -4,6 +4,7 @@ slug: verifier-stabilite-acces-logs-radius
 excerpt: 'Découvrez comment vérifier la stabilité de votre accès xDSL ou FTTH en utilisant les API OVHcloud'
 section: 'Diagnostic et dépannage'
 order: 9
+updated: 2022-02-16
 ---
 
 **Dernière mise à jour le 16/02/2022**
