@@ -9,7 +9,7 @@ section: Seguridad
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 21/07/2022**
+**Última actualización: 09/02/2023**
 
 ## Objetivo
 
@@ -132,4 +132,8 @@ A efectos de seguridad, una vez restablecido el acceso a su cuenta, le recomenda
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

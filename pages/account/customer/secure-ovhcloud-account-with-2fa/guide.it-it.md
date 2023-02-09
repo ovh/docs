@@ -9,7 +9,7 @@ section: Sicurezza
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 30/12/2021**
+**Ultimo aggiornamento: 09/02/2023**
 
 ## Obiettivo
 
@@ -130,4 +130,8 @@ Dopo aver verificato i documenti, un consulente può disattivare manualmente la 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com](https://community.ovh.com).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -5,7 +5,7 @@ excerpt: 'Find out how to improve security for your OVHcloud account by enabling
 section: Security
 ---
 
-**Last updated 20th July 2022**
+**Last updated 9th February 2023**
 
 ## Objective
 
@@ -128,4 +128,8 @@ After verifying your documents, a support agent will manually disable two-factor
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.

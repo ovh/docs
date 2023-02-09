@@ -9,7 +9,7 @@ section: Sicherheit
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 03.01.2022**
+**Letzte Aktualisierung am 09.02.2023**
 
 ## Ziel
 
@@ -130,5 +130,9 @@ Kontaktieren Sie den OVHcloud Support unter +49 681 906730, sobald Ihre entsprec
 Nach Überprüfung Ihrer Unterlagen kann ein Support-Mitarbeiter die Zwei-Faktor-Authentifizierung manuell aus Ihrem OVHcloud Kunden-Account entfernen.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
