@@ -105,7 +105,7 @@ server {
 
 Be careful, replace the hostname of the Grafana server ***your-grafana-12345abc-12345abc.database.cloud.ovh.net:443*** by your own.
 
-Update also the SSL certificates and key. If needed you can create for testing purposes or non production environment :
+Also update the certificates and SSL key. If necessary, you can create them for testing purposes or in a non-productive environment using the following command:
 
 ```bash
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/your_certificate.key -out /etc/nginx/ssl/your_certificate.crt
@@ -115,9 +115,7 @@ Now the NGNIX is configured in reverse proxy mode
 
 ### IP Packet forwarding
 
-afin de rediriger le traffic de voitre Ip Public vers votre Ip Privé
-
-Uncomment the following line in /etc/sysctl.conf to enable packet forwarding for IPv4:
+To redirect traffic from your Public IP to your Private IP,uncomment the following line in /etc/sysctl.conf to enable packet forwarding for IPv4:
 
 ```bash
 net.ipv4.ip_forward=1
