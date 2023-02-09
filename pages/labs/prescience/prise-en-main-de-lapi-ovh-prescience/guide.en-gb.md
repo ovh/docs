@@ -3,6 +3,7 @@ title: 'Discover the OVH Prescience APIs'
 slug: getting-started-with-ovh-prescience-api
 excerpt: 'Learn how to manage OVH Prescience APIs'
 section: 'Getting started'
+updated: 2018-09-26
 ---
 
 **Last updated on 26/09/2018**

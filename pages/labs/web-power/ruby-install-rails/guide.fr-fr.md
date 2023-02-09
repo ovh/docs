@@ -4,6 +4,7 @@ slug: nodejs-installer-rails
 excerpt: Découvrez comment installer Rails sur votre hébergement web POWER
 section: Ruby
 order: 2
+updated: 2021-02-04
 ---
 
 <style>

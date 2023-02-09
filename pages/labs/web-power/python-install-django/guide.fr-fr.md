@@ -4,6 +4,7 @@ slug: python-installer-django
 excerpt: Découvrez comment installer Django sur votre hébergement web POWER
 section: Python
 order: 1
+updated: 2023-01-05
 ---
 
 

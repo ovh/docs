@@ -4,6 +4,7 @@ slug: ruby-install-rails
 excerpt: Find out how to install Rails on your POWER web hosting plan
 section: Ruby
 order: 1
+updated: 2021-02-04
 ---
 
 <style>

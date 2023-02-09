@@ -4,6 +4,7 @@ slug: nodejs-install-strapi
 excerpt: Find out how to install Strapi headless CMS on your POWER web hosting plan
 section: Node.js
 order: 6
+updated: 2021-02-04
 ---
 
 

@@ -3,11 +3,10 @@ title: "Gestion d'un compte SMS SMPP"
 excerpt: "Découvrez comment gérer les paramètres d'un compte SMPP depuis l'espace client OVHcloud"
 slug: smpp-control-panel
 section: SMPP
-hidden: true
 order: 01
 ---
 
-**Dernière mise à jour le 08/02/2023**
+**Dernière mise à jour le 09/02/2023**
 
 ## Objectif
 
