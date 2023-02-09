@@ -115,7 +115,7 @@ Now the NGNIX is configured in reverse proxy mode
 
 ### IP Packet forwarding
 
-To redirect traffic from your Public IP to your Private IP,uncomment the following line in /etc/sysctl.conf to enable packet forwarding for IPv4:
+To redirect traffic from your Public IP to your Private IP, uncomment the following line in `/etc/sysctl.conf` to enable packet forwarding for IPv4:
 
 ```bash
 net.ipv4.ip_forward=1
