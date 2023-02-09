@@ -3,11 +3,10 @@ title: Managing an SMS SMPP account
 excerpt: Find out how to manage an SMPP account settings from the OVHcloud Control Panel
 slug: smpp-control-panel
 section: SMPP
-hidden: true
 order: 01
 ---
 
-**Last updated 8th February 2023**
+**Last updated 9th February 2023**
 
 ## Objective
 
