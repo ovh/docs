@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/'
 ---
 
-**Last updated 1st February, 2023.**
+**Last updated 9th February, 2023.**
 
 > [!primary]
 >

@@ -6,7 +6,7 @@ section: AI Deploy - Tutorials
 order: 09
 ---
 
-**Last updated 1st February, 2023.**
+**Last updated 9th February, 2023.**
 
 > [!primary]
 >
