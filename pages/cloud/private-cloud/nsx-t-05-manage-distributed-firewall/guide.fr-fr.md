@@ -31,21 +31,21 @@ order: 05
 
 ## Présentation
 
-la fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. IL doit être utilisé normalement sur les connexions est-ouest mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-t0-gateway). Le type de filtrage est disponible entre :
+La fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. IL doit être utilisé normalement sur les connexions est-ouest mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-t0-gateway). Le type de filtrage est disponible entre :
 
 - Tous les membres d'un segment et tous les autres membres d'un autre segment.
 - Certaines machines virtuelles d'un segment et d'autres machines virtuelles du même segment ou d'un autre segment.
-- Certains segments vers des machines vituelles et vice-versa.
+- Certains segments vers des machines virtuelles et vice-versa.
 
-Pour simplifier l'administration de NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc...) et de créér des groupes qui contiennent les objets associés aux balises ou des plages d'adresses IP (Cette solution n'est pas à priviligier).
+Pour simplifier l'administration de NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc..) et de créer des groupes qui contiennent les objets associés aux balises ou des plages d'adresses IP (Cette solution n'est pas à privilégier).
 
 ## En pratique
 
-Nous allons créér et des balises à l'intérieur d'une machine virtuelle et d'un segment, ajouter des groupes qui contiendront ces balises et mettre en place une stratégie de blocage entre deux groupes au travers du pare-feu distribué.
+Nous allons créer et des balises à l'intérieur d'une machine virtuelle et d'un segment, ajouter des groupes qui contiendront ces balises et mettre en place une stratégie de blocage entre deux groupes au travers du pare-feu distribué.
 
 ### Création des balises
 
-Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur. `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
+Dans l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur. `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
 Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche du segment que vous voulez baliser et choisissez `Edit`{.action} dans le menu.
 
 ![01 Create tag on segment 01](images/01-create-tag-on-segment01.png){.thumbnail}
@@ -72,7 +72,7 @@ Cliquez sur `CLOSE EDITING`{.action} pour finaliser le balisage de votre segment
 
 ![01 Create tag on segment 05](images/01-create-tag-on-segment04.png){.thumbnail}
 
-Alez sur l'onglet `Inventory`{.action} et cliquez sur `Virtual Machines`{.action} à gauche dans l'inventaire pour afficher la liste des machine virtuelles. 
+Allez sur l'onglet `Inventory`{.action} et cliquez sur `Virtual Machines`{.action} à gauche dans l'inventaire pour afficher la liste des machines virtuelles. 
 
 Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre machine virtuelle que vous voulez baliser et choisissez `Edit`{.action} à l'intérieur du menu.
 
@@ -90,7 +90,7 @@ Cliquez sur le signe `+`{.action} à gauche de votre balise.
 
 ![02 Create tag on vm 04](images/02-create-tag-on-vm04.png){.thumbnail}
 
-La balise est créée cliquez sur `SAVE`{.action} pour enregistrer vos modifications.
+La balise est créée, cliquez sur `SAVE`{.action} pour enregistrer vos modifications.
 
 ![02 Create tag on vm 05](images/02-create-tag-on-vm05.png){.thumbnail}
 
@@ -100,7 +100,7 @@ Restez dans l'inventaire et cliquez sur `Tags`{.action} à gauche pour afficher 
 
 ### Ajout de groupes qui contiennent les balises
 
-Toujours dans l'inventaire allez dans `Groups`{.action} à gauche et cliquez sur `ADD GROUP`{.action} pour créér un groupe.
+Toujours dans l'inventaire allez dans `Groups`{.action} à gauche et cliquez sur `ADD GROUP`{.action} pour créer un groupe.
 
 ![04 Create Group With tag on segment 01](images/04-create-group-with-tag-on-segment01.png){.thumbnail}
 
@@ -130,15 +130,15 @@ Le groupe est créé cliquez sur `View Members`{.action} qui se trouve sur la li
 
 ![04 Create Group With tag on segment 06](images/04-create-group-with-tag-on-segment06.png){.thumbnail}
 
-Cliquez sur `IP Addresses`{.action} pour affficher les adresses IP qui sont utilisées sur votre segment et qui ont été automatiquement ajouté à votre groupe.
+Cliquez sur `IP Addresses`{.action} pour afficher les adresses IP qui sont utilisées sur votre segment et qui ont été automatiquement ajouté à votre groupe.
 
 ![04 Create Group With tag on segment 07](images/04-create-group-with-tag-on-segment07.png){.thumbnail}
 
-Cliquez sur `NSX Segments`{.action} pour affficher le segment membre de ce groupe automatiquement rajouté à partir des critères. Vous pouvez cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
+Cliquez sur `NSX Segments`{.action} pour afficher le segment membre de ce groupe automatiquement rajouté à partir des critères. Vous pouvez cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
 
 ![04 Create Group With tag on segment 08](images/04-create-group-with-tag-on-segment08.png){.thumbnail}
 
-Cliquez sur `ADD GROUP`{.action} pour créér un deuxième groupe.
+Cliquez sur `ADD GROUP`{.action} pour créer un deuxième groupe.
 
 ![05 Create Group With tag on VM 01](images/05-create-group-with-tag-on-vm01.png){.thumbnail}
 
@@ -176,7 +176,7 @@ Cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
 
 ### Mise en place d'une règle de pare-feu distribué
 
-Nous allons maintenant créér une règle sur le pare-feu distribué de blocage entre les deux groupes créé.
+Nous allons maintenant créer une règle sur le pare-feu distribué de blocage entre les deux groupes créés.
 
 Allez sur l'onglet `Security`{.action}, Sélectionnez `Distributed Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}
 
