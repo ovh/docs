@@ -3,7 +3,6 @@ title: Gestión de una cuenta SMS SMPP
 excerpt: Cómo gestionar los parámetros de una cuenta SMPP desde el área de cliente de OVHcloud
 slug: smpp-control-panel
 section: SMPP
-hidden: true
 order: 01
 ---
 
@@ -11,7 +10,7 @@ order: 01
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 08/02/2023**
+**Última actualización: 09/02/2023**
 
 ## Objetivo
 

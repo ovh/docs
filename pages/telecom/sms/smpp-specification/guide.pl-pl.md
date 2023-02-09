@@ -5,11 +5,10 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/sms/smpp-specifications/'
 excerpt: 'Discover the technical specifications of the OVHcloud SMPP solution'
 section: SMPP
-hidden: true
 order: 02
 ---
 
-**Last updated 8th February 2023**
+**Last updated 9th February 2023**
 
 ## Objective
 
