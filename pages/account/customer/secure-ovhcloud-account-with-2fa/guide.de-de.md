@@ -100,9 +100,9 @@ Ihnen wird dann ein letzter Validierungscode auf dem Gerät zugesandt, das Sie l
 
 > [!alert]
 >
-> Wenn Sie keinen Zugriff mehr auf das Gerät haben, das Sie löschen möchten, können Sie es nicht selbst aus dem OVHcloud Kundencenter löschen.
+> Wenn Sie keinen Zugriff mehr auf das Gerät haben, das Sie löschen möchten, können Sie es nicht selbst aus dem OVHcloud Kundencenter entfernen.
 >
-> In diesem Fall **kontaktieren Sie unsere Support-Teams direkt**, indem Sie den [hier](#2FA-deletion) beschriebenen Prozess verfolgen.
+> In diesem Fall **kontaktieren Sie unsere Support-Teams**, indem Sie dem [hier](#2FA-deletion) beschriebenen Prozess folgen.
 >
 
 ### Die Zwei-Faktor-Authentifizierung vollständig deaktivieren <a name="disable-2fa"></a>
