@@ -63,6 +63,45 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 
 ### Créer une redirection
 
+La gestion des redirections ne se fait pas via l'espace client pour la nouvelle version de l'offre MX Plan mais directement via le webmail de l'adresse e-mail concernée.
+
+Rendez-vous sur le webmail à l'adresse [mail.ovh.net](https://www.ovh.com/fr/mail/){.external}. Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
+![emails](images/webmail.png){.thumbnail}
+
+#### Étape 1: accéder à la gestion des redirections
+
+Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovh.com/fr/mail/){.external}, cliquez sur la roue crantée en haut à droite puis sur `Options`{.action},
+
+![emails](images/mxplan-new-1.png){.thumbnail}
+Depuis la fenêtre **Options**, dans la colonne de gauche, dirigez-vous dans la catégorie **Traitement automatique** de la section **Courrier** puis cliquez sur `Règles de boîte de réception et de rangement`{.action} 
+
+![emails](images/mxplan-new-2.png){.thumbnail}
+
+Cette fenêtre permet de gérer vos redirections mais également d'appliquer des filtres sur l'ensemble des e-mail entrants.
+
+#### Étape 2: ajouter une redirection
+
+Une fois dans la fenêtre de gestion des **Règles de boîte de réception**, cliquez sur l'icône `+`{.action} en haut à gauche.
+![emails](images/mxplan-new-3.png){.thumbnail}
+
+Sur cette fenêtre, vous allez définir les règles nécessaires pour créer une redirection :
+
+|Information|Description| 
+|---|---|  
+|Nom |Définissez le nom de votre redirection (cadre 1).|  
+|Lorsque le message arrive et remplit toutes ces conditions| Votre redirection s'appliquant à tous les messages, selectionnez **[Appliquer à tous les messages]** (cadre 2).|
+|Effectuer toutes les opérations suivantes|C'est ici que vous appliquez la redirection, selectionnez **Transférer, rediriger ou envoyer** puis **Rediriger le message vers...** (cadre 3). Tapez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant **Rediriger le message vers...** puis cliquez sur `Enregistrer`{.action} (cadre 4)|
+
+![emails](images/mxplan-new-4.png){.thumbnail}
+
+Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](./#generalites){.external} au début de ce guide). Si cela correspond à votre besoin, cliquez sur `OK`{.action} (icône de disquette) en haut à gauche et la règle sera appliquée. Sinon, passez à l'étape ci-dessous.
+
+Pour appliquer une **redirection simple** ([schéma 1](./#generalites){.external} au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur **Déplacer, copier ou supprimer** et enfin **supprimer le message**. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.
+
+![emails](images/mxplan-new-5.png){.thumbnail}
+
+Une fois la fenêtre complétée, cliquez sur `OK`{.action}(icône de disquette) en haut à gauche.
+
 #### Version historique de l'offre MX Plan
 
 > [!tab]
@@ -86,47 +125,6 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 > Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des
 > redirections, elle matérialise cette copie locale.
 > 
-
-#### Nouvelle version de l'offre MX Plan
-
-La gestion des redirections ne se fait pas via l'espace client pour la nouvelle version de l'offre MX Plan mais directement via le webmail de l'adresse e-mail concernée.
-
-Rendez-vous sur le webmail à l'adresse [mail.ovh.net](https://www.ovh.com/fr/mail/){.external}. Saisissez **l'adresse e-mail** et le **mot de passe** pour vous y connecter.
-![emails](images/webmail.png){.thumbnail}
-
-##### Étape 1: accéder à la gestion des redirections
-
-Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovh.com/fr/mail/){.external}, cliquez sur la roue crantée en haut à droite puis sur `Options`{.action},
-
-![emails](images/mxplan-new-1.png){.thumbnail}
-Depuis la fenêtre **Options**, dans la colonne de gauche, dirigez-vous dans la catégorie **Traitement automatique** de la section **Courrier** puis cliquez sur `Règles de boîte de réception et de rangement`{.action} 
-
-![emails](images/mxplan-new-2.png){.thumbnail}
-
-Cette fenêtre permet de gérer vos redirections mais également d'appliquer des filtres sur l'ensemble des e-mail entrants.
-
-##### Étape 2: ajouter une redirection
-
-Une fois dans la fenêtre de gestion des **Règles de boîte de réception**, cliquez sur l'icône `+`{.action} en haut à gauche.
-![emails](images/mxplan-new-3.png){.thumbnail}
-
-Sur cette fenêtre, vous allez définir les règles nécessaires pour créer une redirection :
-
-|Information|Description| 
-|---|---|  
-|Nom |Définissez le nom de votre redirection (cadre 1).|  
-|Lorsque le message arrive et remplit toutes ces conditions| Votre redirection s'appliquant à tous les messages, selectionnez **[Appliquer à tous les messages]** (cadre 2).|
-|Effectuer toutes les opérations suivantes|C'est ici que vous appliquez la redirection, selectionnez **Transférer, rediriger ou envoyer** puis **Rediriger le message vers...** (cadre 3). Tapez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant **Rediriger le message vers...** puis cliquez sur `Enregistrer`{.action} (cadre 4)|
-
-![emails](images/mxplan-new-4.png){.thumbnail}
-
-Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [schéma 2](./#generalites){.external} au début de ce guide). Si cela correspond à votre besoin, cliquez sur `OK`{.action} (icône de disquette) en haut à gauche et la règle sera appliquée. Sinon, passez à l'étape ci-dessous.
-
-Pour appliquer une **redirection simple** ([schéma 1](./#generalites){.external} au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur **Déplacer, copier ou supprimer** et enfin **supprimer le message**. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.
-
-![emails](images/mxplan-new-5.png){.thumbnail}
-
-Une fois la fenêtre complétée, cliquez sur `OK`{.action}(icône de disquette) en haut à gauche.
 
 ### Créer un alias
 
