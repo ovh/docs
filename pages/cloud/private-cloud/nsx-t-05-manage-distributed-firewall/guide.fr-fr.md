@@ -45,15 +45,15 @@ Nous allons positionner des balises sur une machine virtuelle et sur un segment,
 ### Création des balises
 
 Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur. `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
-Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche du segment que vous voulez baliser et choisissez dans le menu `Edit`{.action}.
+Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche du segment que vous voulez baliser et choisissez `Edit`{.action} dans le menu.
 
 ![01 Create tag on segment 01](images/01-create-tag-on-segment01.png){.thumbnail}
 
-à droite de **Tags* saisissez `ovsegment`{.action} à la place de tag et cliquez sur `Add Item(s) ovsegment`{.action} en dessous de la zone de saisie.
+à droite de **Tags** saisissez `ovsegment`{.action} à la place de tag et cliquez sur `Add Item(s) ovsegment`{.action} en dessous de la zone de saisie.
 
 ![01 Create tag on segment 02](images/01-create-tag-on-segment02.png){.thumbnail}
 
-Saisissez `ov1`{.action} à la place de scope et cliquez sur `Add Item(s) ov1`{.action} en dessous de la zone de saisie.
+Saisissez `ov1`{.action} à la place de **Scope** et cliquez sur `Add Item(s) ov1`{.action} en dessous de la zone de saisie.
 
 ![01 Create tag on segment 02](images/01-create-tag-on-segment02.png){.thumbnail}
 
