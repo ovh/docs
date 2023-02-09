@@ -1,7 +1,7 @@
 ---
-title: 'SSH-Schlüssel erzeugen'
+title: "SSH-Schlüssel erstellen und verwenden"
 slug: ssh-schluessel-erzeugen
-excerpt: 'Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden'
+excerpt: "Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden"
 section: 'Sicherheit'
 order: 1
 ---
@@ -18,7 +18,7 @@ Sie können den öffentlichen Schlüssel auf einem beliebigen Server platzieren 
 
 > [!primary]
 >
-Beachten Sie bitte, dass SSH-Schlüssel bei Servern, auf denen Windows installiert ist, nicht zur Authentifizierung verwendet werden. Für Windows Server müssen Sie weiterhin einen Benutzernamen und ein Kennwort verwenden.
+Beachten Sie, dass SSH-Schlüssel bei Servern, auf denen Windows installiert ist, nicht zur Authentifizierung verwendet werden. Für Windows Server müssen Sie weiterhin einen Benutzernamen und ein Kennwort verwenden.
 >
 
 ## Voraussetzungen
@@ -107,7 +107,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 
-### Erstellen eins SSH-Schlüssels mithilfe von PuTTY (für Windows)
+### Erstellen eines SSH-Schlüssels mithilfe von PuTTY (für Windows)
 
 [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) ist eine Open Source SSH Client Software mit einer grafischen Benutzeroberfläche, die für Windows und andere Betriebssysteme verfügbar ist. PuTTY bietet Ihnen die Möglichkeit, eine Remoteverbindung mit einem Linux-Server herzustellen. Die dazugehörige Software, PuTTY Key Generator (PuTTYgen), kann zum Erstellen von SSH-Schlüsseln verwendet werden.
 

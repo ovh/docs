@@ -3,6 +3,7 @@ title: La desserte interne
 slug: la-desserte-interne
 legacy_guide_number: '7962664'
 section: Premiers pas
+updated: 2020-08-31
 ---
 
 ### Préambule {#préambule}

@@ -1,12 +1,12 @@
 ---
 title: "Replacing your lost SSH key pair"
-slug: dedicated-replacing-lost-ssh-key-pair
+slug: dedicated-servers-replacing-lost-ssh-key-pair
 excerpt: "Find out how to regain SSH access to your dedicated server"
 section: Diagnostics and rescue mode
 order: 2
 ---
 
-**Last updated 30th January 2023**
+**Last updated 6th February 2023**
 
 ## Objective
 

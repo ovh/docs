@@ -3,6 +3,7 @@ title: Inviare SMS dallo Spazio Cliente
 slug: inviare_sms_dallo_spazio_cliente
 excerpt: Come inviare SMS facilmente dal tuo Spazio Cliente OVHcloud
 section: Inviare SMS
+updated: 2022-08-05
 ---
 
 **Ultimo aggiornamento: 05/08/2022**

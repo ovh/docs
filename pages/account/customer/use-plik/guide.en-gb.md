@@ -3,6 +3,7 @@ title: 'Sharing files with the Plik tool'
 excerpt: Find out how to use the Plik tool to send files to other people
 slug: plik
 section: Tools
+updated: 2022-02-14
 ---
 
 **Last updated 14th February 2022**

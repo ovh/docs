@@ -3,6 +3,7 @@ title: Politique de réversibilité des Serveurs Dédiés
 slug: politique-reversibilite-serveurs-dedies
 section: Politiques de réversibilité
 order: 2
+updated: 2021-05-05
 ---
 
 **Dernière mise à jour le 5 mai 2021**

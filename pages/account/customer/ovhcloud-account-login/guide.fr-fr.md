@@ -4,6 +4,7 @@ slug: se-connecter-espace-client-ovhcloud
 excerpt: 'Découvrez comment vous authentifier sur votre compte OVHcloud'
 Section: 'Premiers pas'
 order: 2
+updated: 2021-07-01
 ---
 
 **Dernière mise à jour le 01/07/2021**

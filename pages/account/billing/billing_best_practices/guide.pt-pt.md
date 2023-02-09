@@ -4,6 +4,7 @@ slug: billing-best-practices
 excerpt: Encontre aqui os elementos indispensáveis para a boa gestão das suas faturas, encomendas, métodos de pagamento e conta de cliente
 section: Gerir as encomendas, faturas e serviços
 order: 02
+updated: 2022-05-02
 ---
 
 > [!primary]

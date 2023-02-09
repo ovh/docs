@@ -4,6 +4,7 @@ excerpt: Cómo gestionar los parámetros de una cuenta SMPP desde el área de cl
 slug: smpp-control-panel
 section: SMPP
 order: 01
+updated: 2023-02-09
 ---
 
 > [!primary]

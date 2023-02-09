@@ -4,6 +4,7 @@ slug: billing-best-practices
 excerpt: Znajdziesz tutaj elementy niezbędne do prawidłowego zarządzania fakturami, zamówieniami, sposobami płatności i kontem klienta.
 section: Zamówienia, faktury i usługi
 order: 02
+updated: 2022-05-02
 ---
 
 > [!primary]

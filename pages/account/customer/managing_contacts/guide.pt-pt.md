@@ -4,6 +4,7 @@ slug: gestao_dos_contactos
 excerpt: 'Saiba como definir ou alterar os contactos (gestores) dos serviços OVHcloud'
 section: Introdução
 order: 6
+updated: 2021-12-13
 ---
 
 **Última atualização no dia 13/12/2021**

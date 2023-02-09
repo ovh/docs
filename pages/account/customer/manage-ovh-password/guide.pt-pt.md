@@ -4,6 +4,7 @@ slug: gerir-a-palavra-passe
 excerpt: 'Aprenda a definir, alterar e gerir a palavra-passe da sua Área de Cliente OVHcloud'
 section: Introdução
 order: 4
+updated: 2021-07-21
 ---
 
 ## Sumário

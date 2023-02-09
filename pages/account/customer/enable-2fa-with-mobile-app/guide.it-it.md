@@ -4,6 +4,7 @@ slug: attiva_la_doppia_autenticazione_tramite_applicazione_mobile
 excerpt: 'Come rendere sicuro il tuo Spazio Cliente OVHcloud attivando la doppia autenticazione tramite applicazione OTP'
 section: Sicurezza
 hidden: true
+updated: 2020-04-16
 ---
 
 **Ultimo aggiornamento: 16/04/2020**

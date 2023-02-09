@@ -3,6 +3,7 @@ title: 'Gérer et utiliser les appels simultanés'
 slug: gerer-utiliser-appels-simultanes
 excerpt: 'Apprenez à gérer et utiliser les appels simultanés avec une ligne téléphonique OVHcloud'
 section: 'Lignes téléphoniques'
+updated: 2022-06-21
 ---
 
 **Dernière mise à jour le 21/06/2022**

@@ -3,6 +3,7 @@ title: Wysyłanie SMS-ów do Stanów Zjednoczonych
 slug: wysylanie_sms-ow_do_stanow_zjednoczonych
 excerpt: Odkryj w jaki sposób wysyłać wiadomości SMS do Stanów Zjednoczonych
 section: 'Wysyłanie wiadomości SMS'
+updated: 2022-08-05
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Hosted Private Cloud Reversibility Policy
 slug: hosted-private-cloud-reversibility-policy
 section: Reversibility policies
 order: 3
+updated: 2021-05-05
 ---
 
 **Last updated 5th May 2021**

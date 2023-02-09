@@ -4,6 +4,7 @@ slug: ovhcloud-control-panel-ip-restriction
 excerpt: "Come proteggere un account OVHcloud limitando gli indirizzi IP autorizzati ad accedervi"
 section: Sicurezza
 order: 03
+updated: 2022-12-12
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Launching your first SMS campaign
 excerpt: Find out how to launch an SMS campaign
 slug: launch_first_sms_campaign
 section: Getting started
+updated: 2022-08-05
 ---
 
 **Last updated 5th August 2022**

@@ -4,6 +4,7 @@ slug: all-about-your-username
 excerpt: 'Find out how to optimise your OVHcloud account security, manage your personal information, and delegate access to your account'
 section: 'Getting started'
 order: 3
+updated: 2021-07-01
 ---
 
 **Last updated 1st July 2021**

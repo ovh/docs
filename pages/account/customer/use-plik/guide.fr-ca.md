@@ -3,6 +3,7 @@ title: 'Utilisation de Plik'
 excerpt: "Découvrez comment utiliser Plik pour envoyer des fichiers à d'autres personnes"
 slug: plik
 section: Outils
+updated: 2022-02-14
 ---
 
 **Dernière mise à jour le 03/07/2021**

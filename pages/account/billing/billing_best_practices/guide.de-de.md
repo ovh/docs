@@ -4,6 +4,7 @@ slug: billing-best-practices
 excerpt: Erfahren Sie hier alles zur Verwaltung Ihrer Rechnungen, Bestellungen, Zahlungsmittel und Kunden-Accounts
 section: Verlängerung der Dienste verwalten
 order: 02
+updated: 2022-05-02
 ---
 
 > [!primary]

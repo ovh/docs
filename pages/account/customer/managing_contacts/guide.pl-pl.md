@@ -4,6 +4,7 @@ slug: zarzadzanie_kontaktami
 excerpt: 'Dowiedz się, jak zarządzać kontaktami dla Twoich usług OVHcloud'
 section: Pierwsze kroki
 order: 6
+updated: 2021-12-13
 ---
 
 **Ostatnia aktualizacja z dnia 13-12-2021** 

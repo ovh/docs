@@ -3,6 +3,7 @@ title: Dépannage LG 8820
 slug: depannage-lg-8820
 section: LG8820
 hidden: true
+updated: 2020-04-20
 ---
 
 ------------------------------------------------------------------------

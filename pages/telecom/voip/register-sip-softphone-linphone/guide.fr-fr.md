@@ -8,6 +8,7 @@ kb: Web Cloud
 category_l1: Phone and Fax
 category_l2: VoIP
 category_l3: Tutorials
+updated: 2022-03-31
 ---
 
 **Dernière mise à jour le 31/03/2022**

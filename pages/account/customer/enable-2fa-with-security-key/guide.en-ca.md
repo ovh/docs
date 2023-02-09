@@ -4,6 +4,7 @@ slug: enable-two-factor-authentication-via-security-key
 excerpt: 'Find out how to secure your OVHcloud customer account by enabling two-factor authentication via U2F security key'
 section: Security
 hidden: true
+updated: 2022-07-08
 ---
 
 **Last updated 8th July 2022**

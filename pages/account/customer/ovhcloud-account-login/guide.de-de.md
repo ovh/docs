@@ -4,6 +4,7 @@ slug: sich-mit-ovhcloud-kundencenter-verbinden
 excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrem OVHcloud Kunden-Account verbinden'
 section: 'Erste Schritte'
 order: 2
+updated: 2021-07-01
 ---
 
 > [!primary]

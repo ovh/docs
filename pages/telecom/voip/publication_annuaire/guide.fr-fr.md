@@ -3,6 +3,7 @@ title: "Renseigner les coordonnées d'une ligne ou d'un numéro et les faire par
 slug: publication-annuaire
 excerpt: 'Découvrez comment rattacher des informations à votre ligne ou numéro OVHcloud et les publier dans les annuaires'
 section: Administratif
+updated: 2022-06-22
 ---
 
 **Dernière mise à jour le 22/06/2022**

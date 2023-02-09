@@ -3,6 +3,7 @@ title: 'Rinnovare un servizio tramite l’API OVHcloud'
 slug: rinnovare-servizi-tramite-api
 excerpt: 'Scopri come rinnovare un servizio utilizzando l’API OVHcloud'
 section: 'Per iniziare'
+updated: 2020-05-05
 ---
 
 **Ultimo aggiornamento: 10/09/2018**

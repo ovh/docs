@@ -3,6 +3,7 @@ title: 'Managing SMS credits and enabling automatic re-crediting'
 slug: enable-automatic-recredit-sms-credit
 excerpt: 'Find out how to manage your OVHcloud SMS credits'
 section: 'Managing your solution'
+updated: 2023-02-09
 ---
 
 **Last updated 9th February 2023**

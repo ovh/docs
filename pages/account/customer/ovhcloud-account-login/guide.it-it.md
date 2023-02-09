@@ -4,6 +4,7 @@ slug: accedere-spazio-cliente-ovhcloud
 excerpt: Come autenticarsi al tuo account OVHcloud
 section: 'Per iniziare'
 order: 2
+updated: 2021-07-01
 ---
 
 > [!primary]

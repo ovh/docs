@@ -4,6 +4,7 @@ slug: alles_uber_ihre_ovh_kundenkennung
 excerpt: 'Erfahren Sie hier, wie Sie die Account-Sicherheit optimieren, Ihre persönlichen Informationen verwalten und den Zugriff auf Ihren Account delegieren'
 section: 'Erste Schritte'
 order: 3
+updated: 2021-07-01
 ---
 
 > [!primary]

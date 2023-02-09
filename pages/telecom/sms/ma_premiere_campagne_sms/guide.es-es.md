@@ -3,6 +3,7 @@ title: Crear una campaña de SMS
 slug: crear-una-campana-sms
 excerpt: Cómo crear una campaña de envío de SMS
 section: Primeros pasos
+updated: 2022-08-05
 ---
 
 > [!primary]

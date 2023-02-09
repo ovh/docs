@@ -3,6 +3,7 @@ title: 'Lista odbiorców wiadomości SMS'
 slug: lista-odbiorcow-sms
 excerpt: 'Dowiedz się, jak utworzyć listę odbiorców wiadomości SMS i importować ją do Panelu klienta OVHcloud'
 section: 'Zarządzanie ofertą'
+updated: 2022-08-05
 ---
 
 > [!primary]

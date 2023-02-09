@@ -4,6 +4,7 @@ excerpt: Find out how to manage an SMPP account settings from the OVHcloud Contr
 slug: smpp-control-panel
 section: SMPP
 order: 01
+updated: 2023-02-09
 ---
 
 **Last updated 9th February 2023**

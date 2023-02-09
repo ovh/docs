@@ -6,6 +6,7 @@ legacy_guide_number: '8650753'
 space_key: CRSMSFAX
 space_name: SMS
 section: 'Gérer mon offre'
+updated: 2022-08-05
 ---
 
 **Dernière mise à jour le 05/08/2022**

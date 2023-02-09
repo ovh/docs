@@ -3,6 +3,7 @@ title: Inviare SMS negli Stati Uniti
 slug: invio_sms_negli_stati-uniti
 excerpt: Come inviare SMS negli Stati Uniti
 section: 'Inviare SMS'
+updated: 2022-08-05
 ---
 
 > [!primary]

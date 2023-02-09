@@ -4,6 +4,7 @@ excerpt: Come gestire le impostazioni di un account SMPP dallo Spazio Cliente OV
 slug: smpp-control-panel
 sezione: SMPP
 order: 01
+updated: 2023-02-09
 ---
 
 > [!primary]

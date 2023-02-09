@@ -4,6 +4,7 @@ excerpt: Statistiques sur la QoS des appels
 slug: statistiques_sur_la_qos_des_appels
 legacy_guide_number: g1716
 section: API
+updated: 2022-10-05
 ---
 
 

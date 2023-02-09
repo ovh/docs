@@ -5,6 +5,7 @@ excerpt: 'Découvrez comment préparer et envoyer une campagne de fax depuis vot
 legacy_guide_number: '8355856'
 section: Envoi/Réception de fax
 order: 2
+updated: 2022-02-16
 ---
 
 **Dernière mise à jour le 16/02/2022**

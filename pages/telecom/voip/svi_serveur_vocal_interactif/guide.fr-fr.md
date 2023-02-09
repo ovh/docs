@@ -4,6 +4,7 @@ slug: svi-serveur-vocal-interactif
 excerpt: "Découvrez comment configurer un serveur vocal interactif depuis l'espace client OVHcloud"
 section: 'Numéros ou alias'
 order: 6
+updated: 2022-08-04
 ---
 
 **Dernière mise à jour le 04/08/2022**

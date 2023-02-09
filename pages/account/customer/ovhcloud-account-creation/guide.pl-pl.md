@@ -4,6 +4,7 @@ slug: tworzenie-konta-ovhcloud
 excerpt: 'Dowiedz się, jak założyć konto OVHcloud'
 Section: 'Pierwsze kroki'
 order: 1
+updated: 2021-07-01
 ---
 
 > [!primary]

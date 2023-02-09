@@ -18,16 +18,16 @@ order: 01
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/).
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
-- Use [a compatible PHP version](https://docs.ovh.com/ca/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/) on your Web Hosting plan.
-- Have [correctly configured your .ovhconfig file](https://docs.ovh.com/ca/en/hosting/configuring-file-ovhconfig/).
+- You have an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) in your customer account.
+- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- Your web hosting uses a [compatible PHP version](https://docs.ovh.com/ca/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+- You have [correctly configured your .ovhconfig file](https://docs.ovh.com/ca/en/hosting/configuring-file-ovhconfig/).
 - The directory where your module will be installed must be empty or currently non-existent.
-- The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
+- The website’s domain name (with a subdomain, if applicable) is declared as a multisite.
 
 ## Instructions
 
-### Step 1: choose the right CMS
+### Step 1: Choose the right CMS
 
 You can use a CMS (Content Management System) to build your website via an easy-to-use interface. There are several types, each designed to suit certain projects. By using a CMS, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more.
 
@@ -37,7 +37,7 @@ If you would like to install a CMS that isn’t offered as an OVHcloud 1-click m
 
 ![CMS logos](images/CMS_logo.png){.thumbnail}
 
-### Step 2: access the 1-click module manager
+### Step 2: Access the 1-click module manager
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Then click the `1-click modules`{.action} tab.
 
@@ -45,7 +45,7 @@ Here, you can look at the 1-click modules you have already installed, manage the
 
 ![Access to the 1-click modules section](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
-### Step 3: add a module
+### Step 3: Add a module
 
 You can launch the installation of a 1-click module by clicking `Add a module`{.action}.
 
@@ -124,7 +124,7 @@ For the final step of advanced configuration, please check that the information 
 
 ![Validating installation in advanced mode](images/advanced_installation_summary.png){.thumbnail}
 
-### Step 4: customise your website
+### Step 4: Customise your website
 
 You will receive an email confirming that your CMS module has been successfully installed, and you will be prompted to log in to your admin interface. You can then edit your website’s theme, and publish your first pieces of content on it.
 

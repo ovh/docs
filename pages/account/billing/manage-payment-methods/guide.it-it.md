@@ -3,6 +3,7 @@ title: Gestire i metodi di pagamento
 slug: manage-payment-methods
 excerpt: Come gestire i tuoi metodi di pagamento nello Spazio Cliente OVHcloud
 section: Fatturazione
+updated: 2022-05-18
 ---
 
 > [!primary]

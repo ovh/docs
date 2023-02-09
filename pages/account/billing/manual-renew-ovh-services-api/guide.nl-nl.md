@@ -4,6 +4,7 @@ title: 'Uw diensten verlengen via de OVH API'
 slug: dienst-verlengen-via-api
 excerpt: 'Ontdek hoe u uw diensten middels OVH‘s API kunt vernieuwen'
 section: 'Aan de slag'
+updated: 2020-05-05
 ---
 
 **Laatste update 25-05-2018**

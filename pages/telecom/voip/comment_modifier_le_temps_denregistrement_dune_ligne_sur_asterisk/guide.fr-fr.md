@@ -4,6 +4,7 @@ excerpt: Comment modifier le temps d’enregistrement (Register expire) sur Aste
 slug: comment_modifier_le_temps_denregistrement_dune_ligne_sur_asterisk
 legacy_guide_number: g1709
 section: IPBX
+updated: 2018-03-26
 ---
 
 

@@ -4,6 +4,7 @@ slug: renovacion-automatica-ovh
 excerpt: Cómo gestionar la renovación de los servicios de OVHcloud desde el área de cliente
 section: Primeros pasos
 order: 1
+updated: 2022-04-07
 ---
 
 > [!primary]

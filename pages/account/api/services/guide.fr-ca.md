@@ -3,6 +3,7 @@ title: 'Gestion des services'
 slug: ovh-api-service
 excerpt: 'Gérer le cycle de vie de vos services OVHcloud après leur livraison'
 section: 'APIv6 OVHcloud'
+updated: 2020-01-02
 ---
 
 **Dernière mise à jour le 08/06/2020**

@@ -3,6 +3,7 @@ title: Envoyer des SMS depuis mon espace client
 slug: envoyer_des_sms_depuis_mon_espace_client
 excerpt: Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud
 section: Envoyer des SMS
+updated: 2022-08-05
 ---
 
 **Dernière mise à jour le 05/08/2022**

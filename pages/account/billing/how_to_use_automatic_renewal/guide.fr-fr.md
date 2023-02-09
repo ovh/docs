@@ -4,6 +4,7 @@ slug: renouvellement-automatique-ovh
 excerpt: Apprenez à gérer le renouvellement de vos services OVHcloud dans votre espace client
 section: Gérer mes services et leur renouvellement
 order: 01
+updated: 2022-04-07
 ---
 
 **Dernière mise à jour le 07/04/2022**

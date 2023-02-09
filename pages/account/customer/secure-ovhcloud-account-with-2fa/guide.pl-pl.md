@@ -3,6 +3,7 @@ title: 'Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej'
 slug: zabezpieczenie-konta-za-pomoca-2FA
 excerpt: 'Dowiedz się, jak poprawić bezpieczeństwo Twojego konta OVHcloud dzięki aktywacji weryfikacji dwuetapowej'
 section: Bezpieczeństwo
+updated: 2022-07-20
 ---
 
 > [!primary]
