@@ -66,7 +66,7 @@ Regarding the NGINX configuration we are going to follow the [official Grafana d
 
 Create a configuration file in /etc/nginx/sites-enabled/ file:
 
-```
+```nginx
 # this is required to proxy Grafana Live WebSocket connections.
 map $http_upgrade $connection_upgrade {
   default upgrade;
