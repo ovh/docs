@@ -31,16 +31,16 @@ order: 05
 
 ## Présentation
 
-Le pare-feu distribué de NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. IL doit être utilisé normalement sur les connexions est-ouest mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-t0-gateway). Le type de filtrage est disponible entre :
+la fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. IL doit être utilisé normalement sur les connexions est-ouest mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-t0-gateway). Le type de filtrage est disponible entre :
 
 - Tous les membres d'un segment et tous les autres membres d'un autre segment.
 - Certaines machines virtuelles d'un segment et d'autres machines virtuelles du même segment ou d'un autre segment.
 
-Pour simplifier l'administration de votre solution NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc...) et de faire des groupes qui contiennent ces balises au travers de requêtes.
+Pour simplifier l'administration de votre solution NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc...) et de créér des groupes qui contiennent ces balises au travers de requêtes.
 
 ## En pratique
 
-Nous allons positionnez des balises sur une machine virtuelle et sur un segment, créer des groupes qui contiendront ces balises et créer une règle de blocage entre deux groupes.
+Nous allons positionner des balises sur une machine virtuelle et sur un segment, créer des groupes qui contiendront ces balises et mettre en place une stratégie de blocage entre deux groupes au travers du pare-feu distribué.
 
 ### Création des balises
 
@@ -61,9 +61,9 @@ Cliquez sur le signe `+`{.action} à gauche de votre balise.
 
 ![01 Create tag on segment 03](images/01-create-tag-on-segment03.png){.thumbnail}
 
-La balise créée est affiché en bas à droite de **Tags** vous pouvez en créer d'autres en fonction de vos besoins.
+La balise créée est affichée en bas à droite de **Tags**, vous pouvez en créer d'autres en fonction de vos besoins.
 
-Cliquez sur `SAVE`{.action}
+Cliquez sur `SAVE`{.action}.
 
 ![01 Create tag on segment 04](images/01-create-tag-on-segment04.png){.thumbnail}
 
@@ -71,9 +71,9 @@ Cliquez sur `CLOSE EDITING`{.action} pour finaliser le balisage de votre segment
 
 ![01 Create tag on segment 05](images/01-create-tag-on-segment04.png){.thumbnail}
 
-Alez sur l'onglet `Inventory`{.action} et cliquez sur. `Virtual Machines`{.action} à gauche dans l'inventaire pour afficher la liste des machine virtuelles. 
+Alez sur l'onglet `Inventory`{.action} et cliquez sur `Virtual Machines`{.action} à gauche dans l'inventaire pour afficher la liste des machine virtuelles. 
 
-Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre machine virtuelle que vous voulez baliser et choisissez dans le menu `Edit`{.action}.
+Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre machine virtuelle que vous voulez baliser et choisissez `Edit`{.action} à l'intérieur du menu.
 
 ![02 Create tag on vm 01](images/02-create-tag-on-vm01.png){.thumbnail}
 
@@ -89,11 +89,11 @@ Cliquez sur le signe `+`{.action} à gauche de votre balise.
 
 ![02 Create tag on vm 04](images/02-create-tag-on-vm04.png){.thumbnail}
 
-La balise est créée cliquez sur `SAVE`{.action} pour enregistrer vos modifications
+La balise est créée cliquez sur `SAVE`{.action} pour enregistrer vos modifications.
 
 ![02 Create tag on vm 05](images/02-create-tag-on-vm05.png){.thumbnail}
 
-Restez dans l'inventaire et cliquez sur  `Tags`{.action} à gauche pour afficher la liste des balises.
+Restez dans l'inventaire et cliquez sur `Tags`{.action} à gauche pour afficher la liste des balises.
 
 ![03 Show tags 01](images/03-show-tags01.png){.thumbnail}
 
@@ -125,7 +125,7 @@ Cliquez sur `SAVE`{.action}.
 
 ![04 Create Group With tag on segment 05](images/04-create-group-with-tag-on-segment05.png){.thumbnail}
 
-Le groupe est créé cliquez sur `View Members`{.action} dans la ligne de votre groupe pour afficher la liste des membres
+Le groupe est créé cliquez sur `View Members`{.action} qui se trouve sur la ligne de votre groupe pour afficher la liste des membres.
 
 ![04 Create Group With tag on segment 06](images/04-create-group-with-tag-on-segment06.png){.thumbnail}
 
@@ -167,13 +167,13 @@ cliquez sur `View Members`{.action} dans la ligne de votre groupe pour afficher 
 
 ![05 Create Group With tag on VM 06](images/05-create-group-with-tag-on-vm06.png){.thumbnail}
 
-Dans la rubrique **Virtual Machines** la machine virtuelle balisé est automatiquement ajouté, cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
+Dans la rubrique **Virtual Machines** la machine virtuelle balisée est automatiquement ajoutée, cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
 
 ![05 Create Group With tag on VM 07](images/05-create-group-with-tag-on-vm07.png){.thumbnail}
 
 ### Mise en place d'une règle de pare-feu distribué
 
-Nous allons maintenant créér une règle de pare-feu distribué de blocage entre les deux groupes créé.
+Nous allons maintenant créér une règle sur le pare-feu distribué de blocage entre les deux groupes créé.
 
 Allez sur l'onglet `Security`{.action}, Sélectionnez `Distributed Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}
 
@@ -183,11 +183,11 @@ Nommez votre stratégie `Isolate vm and segments`{.action}.
 
 ![06 Create distributed firewall rules 02](images/06-create-distributed-firewall-rules02.png){.thumbnail}
 
-Cliquez sur `points de suspensions verticaux`{.action} et choisissez `Add Rule`{.action} dans le menu.
+Cliquez sur les `points de suspensions verticaux`{.action} et choisissez `Add Rule`{.action} dans le menu.
 
 ![06 Create distributed firewall rules 03](images/06-create-distributed-firewall-rules03.png){.thumbnail}
 
-Cliquez sur l'icone en forme de `stylo`{.action} à droite de **Any** dans la colonne **Sources**.
+Cliquez sur l'icône en forme de `stylo`{.action} à droite de **Any** dans la colonne **Sources**.
 
 ![06 Create distributed firewall rules 04](images/06-create-distributed-firewall-rules04.png){.thumbnail}
 
@@ -203,7 +203,7 @@ Cochez le groupe `g-vm`{.action} et cliquez sur `APPLY`{.action}.
 
 ![06 Create distributed firewall rules 07](images/06-create-distributed-firewall-rules07.png){.thumbnail}
 
-Choisissez `Drop`{.action} pour supprimer les paquets sur cette règle et cliquez sur les `points de suspensions verticaux`{.action}. à gauche de votre stratégie.
+Choisissez `Drop`{.action} pour supprimer les paquets sur cette règle et cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre stratégie.
 
 ![06 Create distributed firewall rules 08](images/06-create-distributed-firewall-rules08.png){.thumbnail}
 
