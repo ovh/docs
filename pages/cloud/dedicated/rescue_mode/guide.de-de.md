@@ -163,7 +163,7 @@ rescue-customer:~# apt-get update && apt-get upgrade
 # make install
 ```
 
-Wechseln Sie in den Ordner `sbin`, um den Einrichtungsordner zu erstellen :
+Wechseln Sie in den Ordner `sbin`, um den Mount-Ordner zu erstellen:
 
 ```bash
 rescue-customer:~# cd /usr/local/sbin/
@@ -182,7 +182,7 @@ Mounten Sie nun die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX
 rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
-Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
+Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte booten`{.action} und starten Sie den Server über die Kommandozeile neu.
 
 ### Windows <a name="windowsrescue"></a>
 
