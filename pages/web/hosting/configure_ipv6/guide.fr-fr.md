@@ -51,7 +51,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ![IPv6](images/ipv6_01.png){.thumbnail}
 
-### Étape 2 : Configurer la zone DNS
+### Étape 2 : Configurer la zone DNS active de votre nom de domaine
 
 > [!warning]
 >
