@@ -1,7 +1,7 @@
 ---
 title: "Consulter son compte E-mail depuis l'interface OWA"
 slug: exchange-2016-guide-utilisation-outlook-web-app
-excerpt: 'Découvrez comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA'
+excerpt: "Découvrez comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA"
 section: "Utilisation d'Outlook Web Application (OWA)"
 order: 01
 ---
