@@ -706,6 +706,8 @@
                 + [Grafana - Capabilities and Limitations](platform/databases/grafana_01_capabilities)
                 + [Grafana - Configure your Grafana instance to accept incoming connections](platform/databases/grafana_02_prepare_for_incoming_connections)
                 + [Grafana - Advanced parameters references](platform/databases/grafana_03_advanced_parameters_references)
+            + [Tutorials](public-cloud-databases-grafana-tutorials)
+                + [Grafana - Expose your Grafana to internet through a NGINX reverse proxy](platform/databases/grafana_tuto_01_reverse_proxy)
         + [Kafka](public-cloud-databases-kafka)
             + [Guides](public-cloud-databases-kafka-guides)
                 + [Kafka - Capabilities and Limitations](platform/databases/kafka_01_capabilities)
