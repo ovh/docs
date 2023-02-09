@@ -32,7 +32,7 @@ order: 02
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
-* **VLAN-backed segments** : La communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2. Pour que ce VLAN puisse communiquer avec les éléments de NSX-T (Internet et les segments overlay derrière la passerelle **ovh-T1-gw**) vous devrez faire une modification sur la passerelle **ovh-t0-gw**.
+* **VLAN-backed segments** : La communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2. Pour que ce VLAN puisse communiquer avec les éléments de NSX-T (Internet et les segments overlay derrière la passerelle **ovh-T1-gw**) vous devrez faire une modification sur la passerelle **ovh-t1-gw**.
 
 * **Overlay-backed segments** : La connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment. Ils doivent être connectés à la passerelle **ovh-T1-gw**.
 
@@ -130,6 +130,7 @@ Remplissez ces informations :
 * **Name** : Saisissez `vlan100-vrack-segment`.
 * **Transport Zone** : Sélectionnez `vlan100-vrack-segment`.
 * **VLAN** : Tapez le nombre `100`.
+* **Subnets** : Saisissez l'adresse et le range de la passerelle sur ce segment `192.168.100.254/24`
 
 Ensuite cliquez sur `SAVE`{.action}.
 
@@ -139,57 +140,43 @@ Cliquez sur `NO`{.action}.
 
 ![06 Add vlan segment 03](images/06-add-vlan-segment03.png){.thumbnail}
 
-### Connexion d'un segment de type VLAN à la passerelle **ovh-T0-gw**
+### Connexion d'un segment de type VLAN à la passerelle **ovh-T1-gw**
 
-Il est possible de router le réseau venant d'un segment de type VLAN vers Internet et les segments de type Overlay en créant des interfaces sur la passerelle **ovh-T0-gw**. Chaque interface aura une adresse IP privée qui servira de passerelle.
+Il est possible de router le réseau venant d'un segment de type VLAN vers Internet et les segments de type Overlay en créant une interface sur la passerelle **ovh-T1-gw**. Lors de la création de l'interface il utiliser mettre la même adresse IP que celle indiqué dansle Subnet du segment.
 
-> ![warning]
-> Ce guide vous montre comment créer deux interfaces avec deux adresses IP dans un même sous-réseau sur les **Edge Node**. Attention seule l'adresse IP qui se trouve sur la **Edge Node** active sera utilisable pour pouvoir faire du routage à l'extérieur du VLAN. Dans les évolutions prévues de NSX-T il sera possible créer une adresse IP virtuelle qui fonctionnera sur n'importe lesquelles des **Edge Node**.
+Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Tier-1 Gateways`{.action} à gauche dans la rubrique **Connectivity**.
 
-Dans notre exemple nous allons utiliser ces informations :
+Ensuite cliquez sur le `trois points de suspensions verticaux`{.action} et choisissez `Edit`{.action} dans le menu
 
-* **Sous réseau du VLAN** : 192.168.100.0/24.
-* **Adresse IP privée pour le premier Edge Node** : 192.168.100.252.
-* **Adresse IP privée pour le deuxième Edge Node** : 192.168.100.253.
-* **Future adresse IP virtuelle** : 192.168.100.254.
+![07 add interfaces to ovh-T1-gw with vlan 01](images/07-add-interface-on-ovh-t1-gw01.png){.thumbnail}
 
-Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Tier-0 Gateways`{.action} à gauche dans la rubrique **Connectivity** et dans les paramètres de la passerelle cliquez sur le `Numéro`{.action} à gauche de **External and Service Interfaces**.
+Cliquez sur la `Flêche vers le bas`{.action} à gauche de **SERVICE INTERFACES** et cliquez sur `Set`{.action} qui vient de s'afficher à droite de **Service Interfaces**.
 
-![07 add interfaces to ovh-T0-gw with vlan 01](images/07-add-interfaces-to-ovh0-gw-with-vlan01.png){.thumbnail}
+![07 add interfaces to ovh-T1-gw with vlan 02](images/07-add-interface-on-ovh-t1-gw02.png){.thumbnail}
 
 Cliquez sur `ADD INTERFACE`{.action}.
 
-![07 add interfaces to ovh-T0-gw with vlan 02](images/07-add-interfaces-to-ovh0-gw-with-vlan02.png){.thumbnail}
+![07 add interfaces to ovh-T1-gw with vlan 03](images/07-add-interface-on-ovh-t1-gw03.png){.thumbnail}
 
 Choisissez ces informations :
 
-* **Name** : Saisissez `vlan100-e1` comme nom de votre interfaces.
-* **Type** : Sélectionnez `External`.
-* **IP Address** : saisissez l'adresse IP du premier EDGE `192.168.100.252`
+* **Name** : Saisissez `vlan100-interface` comme nom de votre interfaces.
+* **IP Address / Mask** : saisissez l'adresse IP du premier EDGE `192.168.100.254/24`
 * **Connected To(Segment)** : Prenez le segment qui est sur le vlan 100 sur le vrack nommé `vlan100-vrack-segment`.
-* **Edge Node** : Sélectionnez le premier `Edge Node`.
 
 Ensuite cliquez sur `SAVE`{.action} pour valider la création de l'interface sur **ovh-t0-gw**.
 
-![07 add interfaces to ovh-T0-gw with vlan 03](images/07-add-interfaces-to-ovh0-gw-with-vlan03.png){.thumbnail}
+![07 add interfaces to ovh-T1-gw with vlan 04](images/07-add-interface-on-ovh-t1-gw04.png){.thumbnail}
 
-Vous voyez apparaitre la nouvelle interface, cliquez à nouveau sur `ADD INTERFACE`{.action}.
+Cliquez sur `CLOSE`{.action}
 
-![07 add interfaces to ovh-T0-gw with vlan 04](images/07-add-interfaces-to-ovh0-gw-with-vlan04.png){.thumbnail}
+![07 add interfaces to ovh-T1-gw with vlan 05](images/07-add-interface-on-ovh-t1-gw05.png){.thumbnail}
 
-Choisissez ces informations :
+Le nombre 1 à coté de Service Interfaces indique que l'interface est créée, cliquez sur `CLOSE EDITING`{.action} pour finaliser la création de l'interface.
 
-* **Name** : Saisissez `vlan100-e2` comme nom de votre interfaces.
-* **Type** : Sélectionnez `External`.
-* **IP Address** : saisissez l'adresse IP du deuxième EDGE `192.168.100.253`
-* **Connected To(Segment)** : Prenez le segment qui est sur le vlan 100 sur le vrack nommé `vlan100-vrack-segment`.
-* **Edge Node** : Sélectionnez le second `Edge Node`.
+![07 add interfaces to ovh-T1-gw with vlan 05](images/07-add-interface-on-ovh-t1-gw05.png){.thumbnail}
 
-Ensuite cliquez sur `SAVE`{.action} pour valider la création de l'interface sur **ovh-t0-gw**.
-
-![07 add interfaces to ovh-T0-gw with vlan 05](images/07-add-interfaces-to-ovh0-gw-with-vlan03.png){.thumbnail}
-
-La configuration est terminée vous avec deux interfaces actives sur le VLAN 100, il est maintenant possible de faire du routage à l'extérieur de ce segment. sur l'une des deux adresses créée.
+Vous pouvez maitenant vous connecter en dehors de ce segment au travers de l'interface avec la passerelle 192.168.100.254/24.
 
 ### Affectation d'un segment de type VLAN à une machine virtuelle
 
