@@ -98,6 +98,7 @@
             + [Managing Intel SGX on an Infrastructure server](cloud/dedicated/sgx-enable-and-use)
         + [Troubleshooting](bare-metal-cloud-dedicated-servers-troubleshooting)
             + [Activating and using rescue mode](cloud/dedicated/rescue_mode)
+            + [Replacing your lost SSH key pair](cloud/dedicated/replacing-lost-ssh-key)
             + [Replacing a defective disk](cloud/dedicated/disk_replacement)
             + [Hardware diagnostics](cloud/dedicated/hardware-diagnose)
             + [Installing an OVHcloud SSH key](cloud/dedicated/ovh_ssh_key)
