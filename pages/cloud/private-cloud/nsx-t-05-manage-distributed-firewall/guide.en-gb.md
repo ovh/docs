@@ -46,7 +46,7 @@ We will create and tag within a virtual machine and segment, add groups that wil
 ### Creating tags
 
 In the NSX-T interface go to the `Networking`{.action} tab and click. `Segments`{.action} on the left in **Connectivity**.
-Then click on the `vertical suspension points`{.action} to the left of the segment you want to tag and choose `Edit`{.action} from the menu.
+Then click on the `three vertical ellipsis`{.action} to the left of the segment you want to tag and choose `Edit`{.action} from the menu.
 
 ![01 Create tag on segment 01](images/01-create-tag-on-segment01.png){.thumbnail}
 
@@ -74,7 +74,7 @@ Click `CLOSE EDITING`{.action} to complete the markup for your segment.
 
 Go to the `Inventory`{.action} tab and click `Virtual Machines`{.action} on the left in the inventory to view the list of virtual machines.
 
-Then click on the `vertical suspension points`{.action} to the left of your virtual machine that you want to tag and choose `Edit`{.action} from the menu.
+Then click on the `three vertical ellipsis`{.action} to the left of your virtual machine that you want to tag and choose `Edit`{.action} from the menu.
 
 ![02 Create tag on vm 01](images/02-create-tag-on-vm01.png){.thumbnail}
 
