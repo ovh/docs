@@ -142,7 +142,7 @@ Cliquez sur `NO`{.action}.
 
 ### Connexion d'un segment de type VLAN à la passerelle **ovh-T1-gw**
 
-Il est possible de router le réseau venant d'un segment de type VLAN vers Internet et les segments de type Overlay en créant une interface sur la passerelle **ovh-T1-gw**. Lors de la création de l'interface il utiliser mettre la même adresse IP que celle indiqué dansle Subnet du segment.
+Il est possible de router le réseau venant d'un segment de type VLAN vers Internet et les segments de type Overlay en créant une interface sur la passerelle **ovh-T1-gw**. Lors de la création de l'interface il faut utiliser la même adresse IP que celle indiquée dans le sous-réseau du segment.
 
 Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Tier-1 Gateways`{.action} à gauche dans la rubrique **Connectivity**.
 
