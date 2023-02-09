@@ -1,7 +1,7 @@
 ---
-title: Ajouter un pied de page pour vos comptes Exchange 
+title: Ajouter un pied de page pour vos comptes E-mail 
 slug: exchange-signature-automatique-disclaimer
-excerpt: Retrouvez ici la procedure d’activation d’un pied de page (Disclaimer) sur votre compte e-mail
+excerpt: Découvrez comment créer une signature automatique depuis l’espace client OVHcloud
 section: Fonctionnalités des comptes Exchange
 order: 07
 ---
