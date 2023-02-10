@@ -50,8 +50,8 @@ If you need to expose your Reverse Proxy to a public network, please select the 
 Once you have access to your new instance, update your system and install NGINX:
 
 ```bash
-sudo apt dist update
-sudo apt dist upgrade
+sudo apt update
+sudo apt full-upgrade
 sudo apt install nginx
 ```
 
