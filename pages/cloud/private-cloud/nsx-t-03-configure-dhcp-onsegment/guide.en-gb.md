@@ -96,7 +96,7 @@ Fill in this information :
 
 * **DHCP Type** : Leave `DHCP Server Gateway`{.action}.
 * **DHCP Ranges** : Enter your scope `192.168.1.10-192.168.1.200`{.action}.
-* **DNS Servers** : Add OVHcloud DNS server `2&3.186.33.99`{.action}.
+* **DNS Servers** : Add OVHcloud DNS server `213.186.33.99`{.action}.
 
 And click on `APPLY`{.action}.
 
