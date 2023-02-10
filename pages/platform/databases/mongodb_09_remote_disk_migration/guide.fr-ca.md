@@ -1,6 +1,6 @@
 ---
-title: MongoDB - Informations sur la migration de disque distant (EN)
-excerpt: Everything you need to know about the remote disk migration 
+title: MongoDB - Informations sur la migration des disques distants (EN)
+excerpt: Everything you need to know about the remote disk migration
 slug: mongodb/remote-disk-migration
 section: MongoDB - Guides
 order: 090
@@ -20,7 +20,7 @@ This guide gives you more information about the disk migration planned from the 
 
 ## Background
 
-Starting Tuesday 7th of Febuary, all MongoDB services are created with [block storage technology](https://www.ovhcloud.com/fr-ca/public-cloud/block-storage/). This means your data will be stored on a remote disk instead of the local SSD of the VM. This change only impacts new services. Existing services are still using their local disk until we migrate it. This migration will take place between the 13th and the 26th of March. 
+Starting Tuesday 7th of Febuary, all MongoDB services are created with [block storage technology](https://www.ovhcloud.com/fr-ca/public-cloud/block-storage/). This means your data will be stored on a remote disk instead of the local SSD of the VM. This change only impacts new services. Existing services are still using their local disk until we migrate it. This migration will take place between the 13th and the 26th of March.
 
 ## Why are we changing the storage technology ?
 
@@ -110,11 +110,11 @@ No, the price will still be the same for more effective storage.
 
 #### What should I do?
 
-Nothing. Everything is handled by the OVHcloud operations team. Your service will be migrated without you noticing anything. 
+Nothing. Everything is handled by the OVHcloud operations team. Your service will be migrated without you noticing anything.
 
 #### Will I lose effective disk space?
 
-No, you will actually gain effective disk space. 
+No, you will actually gain effective disk space.
 
 #### When will my service be migrated?
 
