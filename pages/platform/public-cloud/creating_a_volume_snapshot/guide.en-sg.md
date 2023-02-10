@@ -20,7 +20,7 @@ A snapshot of an additional volume serves two general purposes:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- A [Block storage volume](../create_and_configure_an_additional_disk_on_an_instance/) created in your [Public Cloud](https://www.ovhcloud.com/en-sg/public-cloud/) project
+- A [Block storage volume](https://docs.ovh.com/sg/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/) created in your [Public Cloud](https://www.ovhcloud.com/en-sg/public-cloud/) project
 
 ## Instructions
 
