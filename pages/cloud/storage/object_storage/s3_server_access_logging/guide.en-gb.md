@@ -185,7 +185,7 @@ The following list describes the log record fields:
 - Authentication Type: type of request authentication used
     - AuthHeader
     - QueryString
-- Host Header: endpoint used to connect to Amazon S3
+- Host Header: endpoint used to connect to S3
     - (BUCKET.)STORAGE_DOMAIN
 
 ### Check log file acl
