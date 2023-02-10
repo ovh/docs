@@ -134,6 +134,24 @@ The default rule for **SNAT** shows that the virtual IP address is used to trans
 
 ![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
 
+### Route activation on all segments connected to your gateway **ovh-T1-gw**
+
+By default, the segments behind the **ovh-T1-gw** gateway do not have routing enabled except with another segment connected to that gateway. We will see how to activate it if necessary.
+
+From the **Networking** tab click on `Tier-1 Gateways`{.action} Then click on the `suspension points`{.action} to the left of the **ovh-T1-gw** gateway and choose `Edit`{.action} from the menu.
+
+![Add route on ovh T1 01](images/05-activate-route-on-ovh-t1-gw01.png){.thumbnail}
+
+Click the `arrow`{.action} to the left of **Route Advertisement** and click the `button`{.action} to the right of **All Connected Segments & Service Ports**. Then click `SAVE`{.action}.
+
+![Add route on ovh T1 02](images/05-activate-route-on-ovh-t1-gw02.png){.thumbnail}
+
+Click `CLOSE EDITING`{.action}.
+
+![Add route on ovh T1 03](images/05-activate-route-on-ovh-t1-gw03.png){.thumbnail}
+
+Now routing is enabled on the ovh-T1-gw gateway segments.
+
 You have just seen the default configuration. You can refer to the other OVHcloud guides for NSX-T to create segments, manage DHCP, perform DNAT port redirection, load balancing, VPN, etc...
 
 ## Go further <a name="gofurther"></a>
