@@ -125,15 +125,15 @@ If you do not have a VLAN type segment, use the [Segment Management in NSX-T](ht
 
 Go to the `Networking`{.action} tab, click on `Segments`{.action} on the left in the **Connectivity** section, then click on the `three small dots`{.action} on the left of your VLAN segment and choose `Edit`{.action} from the menu.
 
-![04 Configure DHCP fo VLAN SEGMENT 01](images/04-configure-dhcp-for-vlan-segment01.png){.thumbnail} 
+![04 Configure DHCP fo VLAN SEGMENT 01](images/04-configure-dhcp-for-vlan-segment-01.png){.thumbnail} 
 
 In the **Subnets** column, enter the `IP address and mask`{.action} of the active interface on your gateway **ovh-T1-gw** and click `SET DHCP CONFIG`{.action}.
 
-![04 Configure DHCP fo VLAN SEGMENT 02](images/04-configure-dhcp-for-vlan-segment02.png){.thumbnail} 
+![04 Configure DHCP fo VLAN SEGMENT 02](images/04-configure-dhcp-for-vlan-segment-02.png){.thumbnail} 
 
 Leave `Local DHCP Server`{.action} in **DHCP Type**, click the `three dots`{.action} to the right of **DHCP Profile** and choose `Create New`{.action} from the menu.
 
-![04 Configure DHCP fo VLAN SEGMENT 03](images/04-configure-dhcp-for-vlan-segment03.png){.thumbnail}
+![04 Configure DHCP fo VLAN SEGMENT 03](images/04-configure-dhcp-for-vlan-segment-03.png){.thumbnail}
 
 Enter this information :
 
@@ -142,7 +142,7 @@ Enter this information :
 
 Then select your `Edge Cluster`{.action} and click `SAVE`{.action}.
 
-![04 Configure DHCP fo VLAN SEGMENT 04](images/04-configure-dhcp-for-vlan-segment04.png){.thumbnail}
+![04 Configure DHCP fo VLAN SEGMENT 04](images/04-configure-dhcp-for-vlan-segment-04.png){.thumbnail}
 
 Verify that the profile is present in **DHCP Profile** and enter this information :
 
@@ -152,15 +152,15 @@ Verify that the profile is present in **DHCP Profile** and enter this informatio
 
 Then click `APPLY`{.action}.
 
-![04 Configure DHCP fo VLAN SEGMENT 05](images/04-configure-dhcp-for-vlan-segment05.png){.thumbnail}
+![04 Configure DHCP fo VLAN SEGMENT 05](images/04-configure-dhcp-for-vlan-segment-05.png){.thumbnail}
 
 Click `SAVE`{.action}.
 
-![04 Configure DHCP fo VLAN SEGMENT 06](images/04-configure-dhcp-for-vlan-segment06.png){.thumbnail}
+![04 Configure DHCP fo VLAN SEGMENT 06](images/04-configure-dhcp-for-vlan-segment-06.png){.thumbnail}
 
 Click `CLOSE EDITING`{.action}.
 
-![04 Configure DHCP fo VLAN SEGMENT 07](images/04-configure-dhcp-for-vlan-segment07.png){.thumbnail}
+![04 Configure DHCP fo VLAN SEGMENT 07](images/04-configure-dhcp-for-vlan-segment-07.png){.thumbnail}
 
 The DHCP server is active on this VLAN segment.
 
