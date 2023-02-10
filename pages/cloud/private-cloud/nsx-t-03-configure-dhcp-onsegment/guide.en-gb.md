@@ -127,7 +127,7 @@ Go to the `Networking`{.action} tab, click on `Segments`{.action} on the left in
 
 ![04 Configure DHCP fo VLAN SEGMENT 01](images/04-configure-dhcp-for-vlan-segment-01.png){.thumbnail} 
 
-In the **Subnets** column, enter the `IP address and mask`{.action} of the active interface on your gateway **ovh-T1-gw** and click `SET DHCP CONFIG`{.action}.
+Click `SET DHCP CONFIG`{.action}.
 
 ![04 Configure DHCP fo VLAN SEGMENT 02](images/04-configure-dhcp-for-vlan-segment-02.png){.thumbnail} 
 
@@ -144,7 +144,7 @@ Then select your `Edge Cluster`{.action} and click `SAVE`{.action}.
 
 ![04 Configure DHCP fo VLAN SEGMENT 04](images/04-configure-dhcp-for-vlan-segment-04.png){.thumbnail}
 
-Verify that the profile is present in **DHCP Profile** and enter this information :
+Verify in **DHCP Profile** that the profile is present and enter this information :
 
 * **DHCP Server** : DHCP server address `192.168.100.253/24`.
 * **Etendue** : DHCP Server Scope `192.168.100.10-192.168.100.200`.
