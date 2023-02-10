@@ -8,7 +8,7 @@ order: 01
 ---
 
 <style>
-.640pxwidth{
+.w-640 {
   max-width:640px !important;
 }
 </style>
@@ -103,22 +103,22 @@ Suivez les étapes suivantes :
 >>
 >> **Nom**: Définissez le nom de votre redirection <br>
 >> **Lorsque le message arrive et remplit toutes ces conditions** : Si votre redirection s'applique à tous les messages, sélectionnez `[Appliquer à tous les messages]`{.action} .<br>
->>![emails](images/emails-all-04.png){.thumbnail.640pxwidth}<br><br>
+>>![emails](images/emails-all-04.png){.thumbnail .w-640}<br><br>
 >>
 > **Etape 5**
 >>
 >> **Effectuer toutes les opérations suivantes**: C'est ici que vous appliquez la redirection, selectionnez **Transférer, rediriger ou envoyer** puis **Rediriger le message vers...** . 
->>![emails](images/emails-all-05.png){.thumbnail.640pxwidth}<br><br>
+>>![emails](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
 > **Etape 6**
 >>
 >> Tapez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant **Rediriger le message vers...** puis cliquez sur `Enregistrer`{.action}. Cliquez enfin sur `OK`{.action}(icône de disquette) pour finaliser votre redirection<br>
->>![emails](images/emails-all-06.png){.thumbnail.640pxwidth}<br><br>
+>>![emails](images/emails-all-06.png){.thumbnail .w-640}<br><br>
 >>
 
 > [!primary]
 > Pour appliquer une **redirection simple** ([schéma 1](#diagram) au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur **Déplacer, copier ou supprimer** et enfin **supprimer le message**. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.
-> ![emails](images/emails-all-07.png){.thumbnail.640pxwidth}
+> ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Créer un alias <a name="alias"></a>
 
