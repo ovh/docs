@@ -100,7 +100,7 @@ RewriteRule . /index.php [L]
 Existen varias formas de definir y modificar los parámetros que cambiarán el comportamiento del servidor (aunque existen limitaciones en función del alojamiento):
 
 - modificar los archivos de configuración del servidor;
-Añadir o modificar directrices en el archivo de configuración **wp-config.php** en la raíz del sitio web.
+- Añadir o modificar directrices en el archivo de configuración **wp-config.php** en la raíz del sitio web.
 - modificar o añadir directivas en el archivo **.htaccess** situado en la raíz.
 
 ## Procedimiento
