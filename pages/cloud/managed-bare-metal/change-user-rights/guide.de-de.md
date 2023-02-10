@@ -4,6 +4,7 @@ slug: die-rechte-eines-nutzers-aendern
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/die-rechte-eines-nutzers-aendern/'
 section: OVHcloud Funktionen
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

@@ -6,6 +6,7 @@ routes:
 excerpt: Cómo sustituir un host
 section: Funcionalidades de OVHcloud
 order: 04
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

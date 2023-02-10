@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/change-users-rights/'
 excerpt: Find out how to manage user permissions for the vSphere client
 section: OVHcloud Features
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

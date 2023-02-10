@@ -6,6 +6,7 @@ excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisat
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Responsibility sharing
+updated: 2022-04-07
 ---
 
 **Dernière mise à jour le 07/04/2022**

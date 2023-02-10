@@ -6,6 +6,7 @@ routes:
 excerpt: 'Dowiedz się, jak korzystać z wtyczki OVH Network w usłudze Managed Bare Metal'
 legacy_guide_number: '7766560'
 section: 'Funkcjonalności OVHcloud'
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

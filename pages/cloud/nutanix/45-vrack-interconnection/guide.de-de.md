@@ -6,6 +6,7 @@ section: Disaster Recovery Plan
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-vrack-interconnection/'
+updated: 2022-09-28
 ---
 
 **Last updated 28th September 2022**

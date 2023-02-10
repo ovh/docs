@@ -6,6 +6,7 @@ section: Disaster Recovery Plan
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/metro-availability/'
+updated: 2022-11-15
 ---
 
 

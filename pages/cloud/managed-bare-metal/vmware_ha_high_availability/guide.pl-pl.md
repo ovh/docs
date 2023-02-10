@@ -6,6 +6,7 @@ routes:
 excerpt: Zarządzanie polityką restartowania przy użyciu funkcji HA
 section: Funkcjonalności VMware vSphere
 order: 02
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja dnia 18-11-2020**

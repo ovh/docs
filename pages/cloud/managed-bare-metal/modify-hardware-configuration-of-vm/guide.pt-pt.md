@@ -6,6 +6,7 @@ routes:
 excerpt: Saiba como fazer evoluir a sua máquina virtual
 section: Gestão das máquinas virtuais
 order: 03
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

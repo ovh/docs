@@ -6,6 +6,7 @@ routes:
 excerpt: Learn how to clone an existing virtual machine in vSphere
 section: Maintenance and monitoring
 order: 07
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

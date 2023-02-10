@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/es/private-cloud/eliminar-un-datastore/'
 excerpt: 'Cómo eliminar un datastore de un Managed Bare Metal'
 section: 'Funcionalidades de OVHcloud'
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

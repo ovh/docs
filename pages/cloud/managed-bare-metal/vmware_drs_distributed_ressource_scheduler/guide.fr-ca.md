@@ -6,6 +6,7 @@ routes:
 excerpt: Maitriser la répartition de charge avec la fonction DRS
 section: Fonctionnalités VMware vSphere
 order: 03
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

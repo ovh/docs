@@ -6,6 +6,7 @@ routes:
 excerpt: Umstellung der Festplatte Ihrer VM unter Linux auf ausschließliche Leseberechtigung verhindern
 section: Verwaltung virtueller Maschinen
 order: 10
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

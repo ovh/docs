@@ -6,6 +6,7 @@ routes:
 excerpt: Apprenez à vous connecter à votre Managed Bare Metal en SFTP
 section: Premiers pas
 order: 3
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

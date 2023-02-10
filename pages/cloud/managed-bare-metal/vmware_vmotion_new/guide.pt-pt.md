@@ -6,6 +6,7 @@ routes:
 excerpt: Migrar a quente uma máquina virtual para um host diferente
 section: Funcionalidades VMware vSphere
 order: 04
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

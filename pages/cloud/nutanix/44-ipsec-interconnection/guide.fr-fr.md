@@ -4,6 +4,7 @@ slug: ipsec-interconnection
 excerpt: "Mise en place d'un VPN IPsec entre deux clusters Nutanix distants"
 section: "Plan de Reprise d'Activité"
 order: 02
+updated: 2022-06-29
 ---
 
 **Dernière mise à jour le 29/06/2022**

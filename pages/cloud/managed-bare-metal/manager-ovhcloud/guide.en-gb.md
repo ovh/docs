@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to use the OVHcloud Managed Bare Metal Control Panel
 section: Getting started
 order: 1
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

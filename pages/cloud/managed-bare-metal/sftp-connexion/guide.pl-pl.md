@@ -6,6 +6,7 @@ routes:
 excerpt: Dowiedz się, jak się połączyć z Managed Bare Metal za pomocą SFTP
 section: Pierwsze kroki
 order: 3
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

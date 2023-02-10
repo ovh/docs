@@ -6,6 +6,7 @@ routes:
 excerpt: Ordinare un blocco IP su un Managed Bare Metal
 section: Funzionalità OVHcloud
 order: 01
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

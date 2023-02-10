@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/au/en/private-cloud/vmware-ha-high-availability/'
 excerpt: Manage restart policy with HA function
 section: VMware vSphere features
+updated: 2020-11-18
 ---
 
 **Last updated November 18th 2020**

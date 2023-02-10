@@ -4,6 +4,7 @@ slug: autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter
 routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/'
 section: Funkcjonalności OVHcloud
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

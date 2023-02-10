@@ -6,6 +6,7 @@ excerpt: Sehen Sie hier, wie Sie sich per SFTP mit Ihrer Managed Bare Metal verb
 slug: verbindung_per_sftp
 section: Erste Schritte
 order: 3
+updated: 2020-11-18
 ---
 
 

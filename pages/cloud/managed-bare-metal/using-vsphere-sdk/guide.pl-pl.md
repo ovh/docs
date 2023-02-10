@@ -6,6 +6,7 @@ routes:
 excerpt: Dowiedz się, jak uruchomić SDK vSphere i jak z niego korzystać
 section: Funkcjonalności VMware vSphere
 order: 10
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

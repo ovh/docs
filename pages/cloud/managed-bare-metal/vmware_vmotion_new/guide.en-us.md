@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to move your virtual machine to a different host (hot migration)
 section: VMware vSphere features
 order: 4
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

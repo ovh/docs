@@ -6,6 +6,7 @@ routes:
 excerpt: Saiba como clonar uma VM existente através de vSphere
 section: Gestão das máquinas virtuais
 order: 07
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

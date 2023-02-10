@@ -6,6 +6,7 @@ routes:
 excerpt: Come funziona lo Snapshot orario OVHcloud
 section: Funzionalità OVHcloud
 order: 06
+updated: 2020-11-30
 ---
 
 > [!primary]

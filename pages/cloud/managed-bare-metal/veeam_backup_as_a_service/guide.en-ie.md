@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/ie/en/private-cloud/veeam-backup-as-a-service/'
 excerpt: Find out how to enable and use the Veeam Managed Backup option to secure your VMs
 section: 'OVHcloud services and options'
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

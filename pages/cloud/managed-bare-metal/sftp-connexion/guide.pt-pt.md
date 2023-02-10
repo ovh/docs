@@ -6,6 +6,7 @@ excerpt: Saiba como se ligar ao seu Managed Bare Metal em SFTP
 slug: ligacao_por_sftp
 section: Introdução
 order: 3
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

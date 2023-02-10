@@ -6,6 +6,7 @@ routes:
 excerpt: Saiba como ativar a encriptação das suas máquinas virtuais
 section: Funcionalidades VMware vSphere
 order: 07
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

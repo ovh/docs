@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to deploy a Linux, Windows Server or Windows SQL Server template
 section: Virtual machine management
 order: 02
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

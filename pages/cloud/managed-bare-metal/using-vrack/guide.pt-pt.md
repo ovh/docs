@@ -6,6 +6,7 @@ routes:
 excerpt: Saiba como utilizar o vRack com o seu serviço Managed Bare Metal
 section: Serviços e opções OVHcloud
 order: 02
+updated: 2020-11-23
 ---
 
 > [!primary]

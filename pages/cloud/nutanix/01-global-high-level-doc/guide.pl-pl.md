@@ -6,6 +6,7 @@ routes:
 excerpt: Technical details of the Nutanix infrastructure at OVHcloud
 section: Pierwsze kroki
 order: 01
+updated: 2022-12-08
 ---
 
 **Last updated 8th December 2022**

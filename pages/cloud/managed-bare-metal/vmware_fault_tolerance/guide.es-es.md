@@ -6,6 +6,7 @@ routes:
 excerpt: Garantizar la continuidad de su máquina virtual con Fault Tolerance
 section: Funcionalidades de VMware vSphere
 order: 06
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

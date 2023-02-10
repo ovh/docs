@@ -6,6 +6,7 @@ routes:
 excerpt: 'How to add and remove licences in a Nutanix cluster with the BYOL offer'
 section: Pierwsze kroki
 order: 12
+updated: 2022-11-16
 ---
 
 **Last updated 16th November 2022**
