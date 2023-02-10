@@ -3,7 +3,7 @@ title: "Tutorial - Użyj pliku htaccess w systemie WordPress"
 slug: use-htaccess-with-wordpress
 excerpt: "Dowiedz się, jak zabezpieczyć blog WordPress jednym lub kilkoma plikami htaccess"
 section: 'Tutoriale'
-order: 
+order: 07
 ---
 
 **Ostatnia aktualizacja z dnia 07-02-2023**
@@ -168,3 +168,9 @@ Katalog **wp-admin** pozwala na połączenie z Twoim interfejsem administracyjny
 ## Sprawdź również <a name="go-further"></a>
 
 Sprawdź [tutorial dostępny na stronie internetowej Fundacji Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
