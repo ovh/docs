@@ -66,7 +66,7 @@ No quadro **IPv6**, copie a entrada e passe ao passo seguinte.
 
 Para que o seu browser encontre o endereço IPv6 com o seu nome de domínio, modifique a zona DNS ativa do seu domínio. Utilize o nosso guia "[Editar uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#editar-a-zona-dns-da-ovhcloud-do-seu-dominio_1)" para criar uma entrada DNS do tipo **AAAA**.
 
-Na parte `Web Cloud`{.action}, clique nos `Nomes de domínio`{.action. Escolha o seu nome de domínio e aceda ao separador `Zona DNS`{.action}. Clique no botão `Para Adicionar uma entrada`{.action} à direita da tabela. 
+Na parte `Web Cloud`{.action}, clique nos `Nomes de domínio`{.action}. Escolha o seu nome de domínio e aceda ao separador `Zona DNS`{.action}. Clique no botão `Para Adicionar uma entrada`{.action} à direita da tabela. 
 
 Introduza o endereço IPv6 previamente copiado utilizando o tipo de registo **AAAA**.
 
