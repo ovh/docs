@@ -165,7 +165,7 @@ La directory **wp-admin** permette di accedere alla tua interfaccia di amministr
 - Puoi gestire alcuni parametri nel tuo file **wp-config.php**
 - I file **.htaccess** sono particolarmente efficaci per la gestione di URL, reindirizzamenti e la sicurezza del tuo sito Web.
 
-## Spingiti oltre <a name="go-further"></a>
+## Per saperne di più <a name="go-further"></a>
 
 Consulta il [tutorial disponibile sul sito della Fondazione Apache](https://httpd.apache.org/docs/2.4/en/howto/htaccess.html).
 
