@@ -5,6 +5,7 @@ slug: como_anadir_un_almacenamiento
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_to_add_a_storage/'
 section: Primeros pasos
+updated: 2022-02-01
 ---
 
 **Last Updated 1st February 2022**

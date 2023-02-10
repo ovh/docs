@@ -4,6 +4,7 @@ slug: instrumentacion-de-una-maquina-virtual
 excerpt: Cómo instrumentar una máquina virtual desde la interfaz vSphere
 section: Gestión de las máquinas virtuales
 order: 0
+updated: 2020-06-29
 ---
 
 **Última actualización: 29/6/2020**

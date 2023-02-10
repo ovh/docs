@@ -4,6 +4,7 @@ slug: tanzu-ce-install
 excerpt: Integrate Tanzu Community Edition (TCE) on your infrastructure
 section: Tanzu
 order: 01
+updated: 2022-11-16
 ---
 
 **Last updated 16th November 2022**

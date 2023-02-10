@@ -4,6 +4,7 @@ slug: vsphere-register-vm-vmx
 excerpt: Find out how to reregister VMs on a new service from old datastores
 section: VMware vSphere features
 order: 07
+updated: 2021-03-24
 ---
 
 **Last updated 24th March 2021**

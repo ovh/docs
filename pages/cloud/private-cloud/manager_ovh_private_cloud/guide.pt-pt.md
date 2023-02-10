@@ -4,6 +4,7 @@ slug: manager-ovh-private-cloud
 excerpt: Descubra as possibilidades da sua Área de Cliente Private Cloud
 section: Introdução
 order: 1
+updated: 2021-12-15
 ---
 
 **Última atualização: 24/07/2020**

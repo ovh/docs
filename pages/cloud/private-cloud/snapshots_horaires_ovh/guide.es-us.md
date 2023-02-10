@@ -5,6 +5,7 @@ excerpt: Funcionamiento de los snapshots de OVHcloud
 legacy_guide_number: '2163263'
 section: Funcionalidades de OVHcloud
 order: 06
+updated: 2022-03-15
 ---
 
 > [!primary]

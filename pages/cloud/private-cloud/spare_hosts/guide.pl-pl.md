@@ -5,6 +5,7 @@ slug: hosty_zapasowe
 section: 'Funkcjonalności OVHcloud'
 legacy_guide_number: g860
 order: 4
+updated: 2020-06-29
 ---
 
 **Ostatnia aktualizacja z dnia 02-09-2020**

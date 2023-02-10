@@ -4,6 +4,7 @@ slug: vmware-drs-distributed-ressource-scheduler-new
 excerpt: Aprenda a gestionar el balanceo de carga con la función DRS
 section: Funcionalidades de VMware vSphere
 order: 03
+updated: 2020-07-07
 ---
 
 **Última actualización: 29/06/2020**

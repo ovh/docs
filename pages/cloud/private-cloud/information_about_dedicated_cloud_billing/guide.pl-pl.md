@@ -3,6 +3,7 @@ title: Informacje o płatnościach za usługę Hosted Private Cloud
 excerpt: Informacje o zasadach płatności za usługę Hosted Private Cloud
 slug: informacje_o_platnosciach_za_usluge_dedicated_cloud
 legacy_guide_number: g677
+updated: 2022-12-08
 ---
 
 

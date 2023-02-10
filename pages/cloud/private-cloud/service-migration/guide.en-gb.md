@@ -4,6 +4,7 @@ excerpt: Find out how to manage all aspects of migrating a PCC infrastructure
 slug: sddc-migration
 section: Getting started
 order: 6
+updated: 2021-12-06
 ---
 
 **Last updated 6th December 2021**

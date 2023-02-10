@@ -4,6 +4,7 @@ slug: vmware-drs-distributed-ressource-scheduler-new
 excerpt: Maitriser la répartition de charge avec la fonction DRS
 section: Fonctionnalités VMware vSphere
 order: 03
+updated: 2020-07-07
 ---
 
 **Dernière mise à jour le 29/06/2020**

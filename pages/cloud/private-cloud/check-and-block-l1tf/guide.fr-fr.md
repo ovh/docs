@@ -3,6 +3,7 @@ title: 'Vérifier et bloquer la faille L1TF'
 slug: verifier-bloquer-faille-l1tf
 excerpt: 'Découvrez comment bloquer la vulnérabilité L1TF'
 section: Sécurité
+updated: 2019-02-26
 ---
 
 **Dernière mise à jour le 26/02/2019**

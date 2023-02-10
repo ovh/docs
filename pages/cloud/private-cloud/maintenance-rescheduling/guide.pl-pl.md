@@ -3,6 +3,7 @@ title: "Przeniesienie zaplanowanej konserwacji do Hosted Private Cloud"
 excerpt: "Dowiedz się, jak przenieść zaplanowaną konserwację na usługę Hosted Private Cloud powered by VMware"
 slug: maintenance-rescheduling
 section: Funkcjonalności OVHcloud
+updated: 2022-11-30
 ---
 
 > [!primary]

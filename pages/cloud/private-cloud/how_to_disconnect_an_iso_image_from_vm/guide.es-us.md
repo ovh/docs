@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/disconnect_iso_from_vm/'
 excerpt: How do you disconnect an ISO image from a virtual machine?
 section: Primeros pasos
+updated: 2022-04-27
 ---
 
 **Last Updated on 11th May 2022**

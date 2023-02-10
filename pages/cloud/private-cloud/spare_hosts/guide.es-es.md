@@ -4,6 +4,7 @@ slug: los_hosts_de_spare
 excerpt: Cómo sustituir un host
 section: Funcionalidades de OVHcloud
 order: 04
+updated: 2020-06-29
 ---
 
 **Última actualización: 07/07/2020**

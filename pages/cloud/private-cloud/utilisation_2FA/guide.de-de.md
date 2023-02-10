@@ -3,6 +3,7 @@ title: Zwei-Faktor-Authentifizierung (2FA) auf Ihrer Private Cloud Infrastruktur
 slug: 2FA-verwenden
 excerpt: Erfahren Sie hier, wie Sie die Zwei-Faktor-Authentifizierung einrichten, um Ihre Infrastruktur zu schützen
 section: OVHcloud Funktionen
+updated: 2022-06-10
 ---
 
 **Letzte Aktualisierung am 10.06.2022**

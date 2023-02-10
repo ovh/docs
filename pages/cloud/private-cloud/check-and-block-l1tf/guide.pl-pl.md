@@ -3,6 +3,7 @@ title: 'Weryfikacja i blokowanie podatności L1TF'
 slug: weryfikacja-blokowanie-podatnosci-l1tf
 excerpt: 'Dowiedz się, jak zablokować lukę L1TF'
 section: Bezpieczeństwo
+updated: 2019-02-26
 ---
 
 **Ostatnia aktualizacja z dnia 01-06-2019**

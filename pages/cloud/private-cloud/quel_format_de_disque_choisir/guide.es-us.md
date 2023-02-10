@@ -4,6 +4,7 @@ slug: elegir-un-formato-de-disco
 excerpt: Descubra los diferentes formatos de disco
 section: Gestión de las máquinas virtuales
 order: 04
+updated: 2022-02-02
 ---
 
 **Última actualización: 01/02/2022**

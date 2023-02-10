@@ -4,6 +4,7 @@ slug: capacites-techniques
 excerpt: 'Retrouvez les capacités et limitations techniques des solutions Hosted Private Cloud fournies par OVHcloud'
 section: FAQ
 order: 021
+updated: 2023-02-01
 ---
 
 **Dernière mise à jour le 01/02/2023**

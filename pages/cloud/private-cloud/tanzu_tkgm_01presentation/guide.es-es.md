@@ -6,6 +6,7 @@ section: Tanzu
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/tanzu-tkgm-presentation/'
+updated: 2022-11-15
 ---
 
 **Last updated 15th November 2022**

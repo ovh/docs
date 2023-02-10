@@ -5,6 +5,7 @@ excerpt: Find out how to assure continuous availability of your virtual machine 
 legacy_guide_number: '2163251'
 section: VMware vSphere features
 order: 06
+updated: 2020-07-07
 ---
 
 **Last updated 7th July 2020**

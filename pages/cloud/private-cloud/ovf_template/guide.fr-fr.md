@@ -4,6 +4,7 @@ slug: deploiement-template-ovh
 excerpt: Découvrez comment déployer un template Linux, Windows Server ou Windows SQL Server
 section: Gestion des machines virtuelles
 order: 02
+updated: 2020-10-12
 ---
 
 **Dernière mise à jour le 03/08/2020**

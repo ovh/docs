@@ -4,6 +4,7 @@ slug: vm-encrypt
 excerpt: So aktivieren Sie die VMware-Funktion zur Verschlüsselung Ihrer virtuellen Maschinen
 section: VMware vSphere Funktionen
 order: 08
+updated: 2020-06-29
 ---
 
 **Stand 20.08.2020**

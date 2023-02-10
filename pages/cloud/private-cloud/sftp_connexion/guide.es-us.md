@@ -4,6 +4,7 @@ slug: conexion_en_sftp
 excerpt: Cómo conectarse a Hosted Private Cloud por SFTP
 section: Primeros pasos
 order: 3
+updated: 2021-12-28
 ---
 
 **Última actualización: 28/12/2021**

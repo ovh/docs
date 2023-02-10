@@ -4,6 +4,7 @@ slug: vm-encrypt
 excerpt: Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles
 section: Fonctionnalités VMware vSphere
 order: 08
+updated: 2020-06-29
 ---
 
 **Dernière mise à jour le 01/07/2020**

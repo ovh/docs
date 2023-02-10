@@ -4,6 +4,7 @@ excerpt: Learn how to add storage to your infrastructure
 slug: how_to_add_a_storage
 legacy_guide_number: g606
 section: Resource management
+updated: 2022-02-01
 ---
 
 **Last Updated 1st February 2022**

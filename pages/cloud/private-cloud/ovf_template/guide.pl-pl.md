@@ -3,6 +3,7 @@ title: 'Instalacja VM z szablonów OVF Windows i SQL Server'
 slug: instalacja-z-szablonow-ovh
 excerpt: 'Dowiedz się, jak zainstalować VM z szablonu Windows i SQL Server'
 section: 'Usługi i opcje OVHcloud'
+updated: 2020-10-12
 ---
 
 **Ostatnia aktualizacja dnia 2018-06-11**

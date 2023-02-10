@@ -4,6 +4,7 @@ slug: hosted-private-cloud-vrack
 excerpt: Découvrez comment utilisez le vRack avec votre offre Hosted Private Cloud
 section: Services et options OVHcloud
 order: 02
+updated: 2022-03-28
 ---
 
 **Dernière mise à jour le 28/03/2022**

@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_to_add_a_storage/'
 section: Per iniziare
 legacy_guide_number: g606
+updated: 2022-02-01
 ---
 
 **Last Updated 1st February 2022**

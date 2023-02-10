@@ -5,6 +5,7 @@ excerpt: Créer des règles de pare-feu
 legacy_guide_number: '7766384'
 section: NSX
 order: 04
+updated: 2021-11-25
 ---
 
 **Dernière mise à jour le 25/11/2021**

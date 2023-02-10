@@ -2,6 +2,7 @@
 title: Zmiana uprawnień użytkownika
 slug: zmiana-uprawnien-uzytkownika
 section: Funkcjonalności OVHcloud
+updated: 2020-06-29
 ---
 
 **Ostatnia aktualizacja z dnia 03-09-2020**

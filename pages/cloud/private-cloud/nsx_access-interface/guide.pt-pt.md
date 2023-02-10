@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to use the NSX interface
 section: NSX
 order: 1
+updated: 2021-11-17
 ---
 
 **Last updated 17th November 2021**

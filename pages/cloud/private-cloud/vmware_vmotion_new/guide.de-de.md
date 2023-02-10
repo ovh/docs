@@ -4,6 +4,7 @@ slug: vmware-vmotion-neu
 excerpt: Verlagern Sie Ihre virtuelle Maschine bei laufendem Betrieb auf einen anderen Host (Hot-Swap)
 section: VMware vSphere Funktionen
 order: 04
+updated: 2020-07-10
 ---
 
 **Stand 30.06.2020**

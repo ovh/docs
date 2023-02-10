@@ -4,6 +4,7 @@ title: SFTP-verbinding
 excerpt: ''
 slug: sftp-verbinding
 legacy_guide_number: g589
+updated: 2021-12-28
 ---
 
 

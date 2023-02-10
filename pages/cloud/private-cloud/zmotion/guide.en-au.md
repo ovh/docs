@@ -5,6 +5,7 @@ excerpt: Find out how the Zmotion process works
 legacy_guide_number: '4161650'
 section: OVHcloud Features
 order: 8
+updated: 2020-07-13
 ---
 
 **Last updated 13th July 2020**

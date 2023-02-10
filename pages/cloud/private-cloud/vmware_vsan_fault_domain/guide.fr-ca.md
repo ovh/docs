@@ -3,6 +3,7 @@ title: 'Gestion de domaines de panne vSAN'
 slug: vmware-vsan-fault-domain
 excerpt: 'Découvrez comment gérer les domaines de panne vSAN'
 section: 'Fonctionnalités VMware vSphere'
+updated: 2021-12-23
 ---
 
 **Dernière mise à jour le 23/12/2021**

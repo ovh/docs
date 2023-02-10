@@ -3,6 +3,7 @@ title: 'PCI-DSS-Zertifizierung für Ihre Private Cloud aktivieren'
 slug: pci-dss-option-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Finanz- und Patientendaten auf Ihrer Hosted Private Cloud Infrastruktur hosten'
 section: OVHcloud Dienste und Optionen
+updated: 2020-05-27
 ---
 
 **Letzte Aktualisierung am 13.02.2020**

@@ -4,6 +4,7 @@ slug: manager-ovh-private-cloud
 excerpt: Entdecken Sie alle Funktionen Ihres Hosted Private Cloud Kundencenters
 section: Erste Schritte
 order: 1
+updated: 2021-12-15
 ---
 
 **Letzte Aktualisierung am 05.10.2021**

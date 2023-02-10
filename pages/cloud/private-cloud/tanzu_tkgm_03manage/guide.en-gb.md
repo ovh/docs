@@ -4,6 +4,7 @@ slug: tanzu-tkgm-management
 excerpt: TKG administration to create a Workload cluster and add applications to this cluster
 section: Tanzu
 order: 04
+updated: 2022-11-10
 ---
 
 **Last updated 10th November 2022**

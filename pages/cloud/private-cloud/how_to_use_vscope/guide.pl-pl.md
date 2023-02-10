@@ -7,6 +7,7 @@ excerpt: The vScope interface allows you to monitor your infrastructure
 section: 'Usługi i opcje OVHcloud'
 legacy_guide_number: g718
 order: 01
+updated: 2022-01-28
 ---
 
 **Last updated 28th January 2022**

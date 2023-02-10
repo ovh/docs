@@ -3,6 +3,7 @@ title: Etendre un volume dans vSphere et dans un OS
 slug: extend-disk
 excerpt: "Découvrez comment augmenter la taille d'un disque virtuel et l'intégrer à votre VM"
 section: Gestion des machines virtuelles
+updated: 2022-01-13
 ---
 
 **Dernière mise à jour le 13/01/2022**

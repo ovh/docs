@@ -6,6 +6,7 @@ routes:
 excerpt: Return to a previous VM state using snapshots
 section: Gestão das máquinas virtuais
 order: 08
+updated: 2022-01-19
 ---
 
 **Last updated 19th January 2022**

@@ -5,6 +5,7 @@ excerpt: Commander un bloc IP sur votre Hosted Private Cloud
 legacy_guide_number: '7766457'
 section: Fonctionnalités OVHcloud
 order: 01
+updated: 2022-04-06
 ---
 
 **Dernière mise à jour le 06/04/2022**

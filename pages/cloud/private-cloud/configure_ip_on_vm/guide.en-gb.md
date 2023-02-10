@@ -3,6 +3,7 @@ title: 'Configure an IP address on a virtual machine'
 slug: configure-ip-on-virtual-machine
 excerpt: 'This guide will show you how to assign a public or private IP address to a virtual machine'
 section: 'Getting started'
+updated: 2020-10-13
 ---
 
 **Last updated 13th October 2020**

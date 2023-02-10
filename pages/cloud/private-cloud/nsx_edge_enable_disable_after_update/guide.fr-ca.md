@@ -3,6 +3,7 @@ title: "Comment éditer la fonction HA d'une NSX Edge"
 slug: enable-disable-nsx-edge-after-update
 section: NSX
 order: 10
+updated: 2022-09-14
 ---
 
 **Dernière mise à jour le 14/09/2022**
