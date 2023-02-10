@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/authorise-ip-addresses-vcenter/'
 excerpt: 'Find out how to manage IP address access restrictions for vCenter'
 section: 'OVHcloud services and options'
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

@@ -6,6 +6,7 @@ routes:
 excerpt: Comprendre le fonctionnement des snapshots horaires OVHcloud
 section: Fonctionnalités OVHcloud
 order: 06
+updated: 2020-11-30
 ---
 
 **Dernière mise à jour le 30/11/2020**

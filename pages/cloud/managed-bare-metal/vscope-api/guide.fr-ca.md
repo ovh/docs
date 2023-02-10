@@ -6,6 +6,7 @@ routes:
 excerpt: 'L’API vScope vous permet d’utiliser les données de monitoring dans vos applications'
 section: 'Services et options OVHcloud'
 order: 1
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

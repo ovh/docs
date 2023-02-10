@@ -4,6 +4,7 @@ slug: nutanix-upgrade-prismcentral
 excerpt: Découvrez comment faire un upgrade de votre cluster Nutanix
 section: Premiers pas
 order: 08
+updated: 2022-05-16
 ---
 
 **Dernière mise à jour le 16/05/2022**

@@ -4,6 +4,7 @@ slug: alterar-os-direitos-de-um-utilizador
 routes:
     canonical: 'https://docs.ovh.com/pt/private-cloud/alterar-os-direitos-de-um-utilizador/'
 section: Funcionalidades da OVHcloud
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

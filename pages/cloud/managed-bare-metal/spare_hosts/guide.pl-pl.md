@@ -6,6 +6,7 @@ excerpt: 'Zarządzanie hostami zapasowymi w usłudze Managed Bare Metal'
 slug: hosty_zapasowe
 section: 'Funkcjonalności OVHcloud'
 legacy_guide_number: g860
+updated: 2020-11-18
 ---
 
 ## Wprowadzenie

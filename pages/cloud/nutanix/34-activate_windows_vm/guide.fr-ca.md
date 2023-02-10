@@ -6,6 +6,7 @@ routes:
 excerpt: "Découvrez comment activer une VM Windows Server installée dans Nutanix by OVHcloud avec une licence OVHcloud"
 section: "Utilisation avancée"
 order: 04
+updated: 2022-12-21
 ---
 
 **Dernière mise à jour le 21/12/2022**

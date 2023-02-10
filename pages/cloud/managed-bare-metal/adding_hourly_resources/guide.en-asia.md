@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/asia/en/private-cloud/adding-hourly-resources/'
 excerpt: 'Find out how to add resources that are billed on an hourly basis'
 section: 'OVHcloud Features'
+updated: 2020-12-15
 ---
 
 **Last updated 15th December 2020**

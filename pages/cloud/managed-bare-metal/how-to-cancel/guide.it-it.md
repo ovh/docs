@@ -6,6 +6,7 @@ routes:
 excerpt: Come richiedere l’eliminazione di un’infrastruttura Managed Bare Metal
 section: Funzionalità OVHcloud
 order: 09
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

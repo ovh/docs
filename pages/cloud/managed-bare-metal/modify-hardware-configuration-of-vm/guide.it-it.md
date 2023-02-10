@@ -6,6 +6,7 @@ routes:
 excerpt: Come apportare modifiche alla configurazione della tua macchina virtuale
 section: Gestione delle macchine virtuali
 order: 03
+updated: 2020-11-18
 ---
 
 

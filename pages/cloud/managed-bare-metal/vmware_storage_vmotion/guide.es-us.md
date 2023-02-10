@@ -6,6 +6,7 @@ excerpt: Cómo migrar en caliente una máquina virtual a un host diferente
 slug: vmware_storage_vmotion
 section: Funcionalidades de VMware vSphere
 order: 05
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

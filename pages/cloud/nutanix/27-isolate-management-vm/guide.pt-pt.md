@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to isolate management machines from production
 section: Rede e segurança
 order: 07
+updated: 2022-01-11
 ---
 
 **Last updated 11th January 2022**

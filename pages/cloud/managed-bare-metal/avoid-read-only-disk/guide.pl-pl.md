@@ -6,6 +6,7 @@ routes:
 excerpt: Jak zapobiec sytuacji, w której dysk maszyny wirtualnej z systemem Linux przechodzi w tryb tylko do odczytu
 section: Zarządzanie wirtualnymi maszynami
 order: 10
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/aktualizacja-hasla-uzytkownika/'
 excerpt: Dowiedz się, jak zmienić hasło użytkownika klienta vSphere w Panelu klienta OVHcloud
 section: Funkcjonalności OVHcloud
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

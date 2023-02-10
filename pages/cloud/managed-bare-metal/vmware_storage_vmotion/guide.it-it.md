@@ -6,6 +6,7 @@ excerpt: Come trasferire a caldo una macchina virtuale su un datastore different
 slug: vmware_storage_vmotion
 section: Funzionalità VMware vSphere
 order: 05
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

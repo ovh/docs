@@ -6,6 +6,7 @@ routes:
 excerpt: Esta guía explica cómo activar el cifrado de sus máquinas virtuales.
 section: Funcionalidades de VMware vSphere
 order: 07
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

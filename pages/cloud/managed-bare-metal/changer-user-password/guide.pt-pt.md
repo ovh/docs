@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/private-cloud/alteracao-da-palavra-passe-de-utilizador/'
 excerpt: Saiba como alterar a palavra-passe de um utilizador cliente vSphere através da Área de Cliente OVHcloud
 section: Funcionalidades da OVHcloud
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

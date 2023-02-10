@@ -4,6 +4,7 @@ slug: leap-replication
 excerpt: "Mise en place de réplications avancées avec Leap"
 section: Plan de Reprise d'Activité
 order: 05
+updated: 2022-07-18
 ---
 
 **Dernière mise à jour le 18/07/2022**

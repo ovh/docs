@@ -7,6 +7,7 @@ order: 02
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Advanced usage
+updated: 2022-04-05
 ---
 
 **Dernière mise à jour le 31/03/2022**

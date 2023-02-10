@@ -4,6 +4,7 @@ slug: prism-central-expansion
 excerpt: 'How to replace Prism Central with three X-Large VMs' 
 section: "Advanced use"
 order: 05
+updated: 2023-01-03
 ---
 
 **Last updated 3rd January 2023**

@@ -6,6 +6,7 @@ routes:
 excerpt: Hier erfahren Sie, wie Sie eine virtuelle Maschine über das vSphere Interface erstellen.
 section: Verwaltung virtueller Maschinen
 order: 0
+updated: 2020-11-18
 ---
 
 **Letzte Aktualisierung am 18.11.2020**

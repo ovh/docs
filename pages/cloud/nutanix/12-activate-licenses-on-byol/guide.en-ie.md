@@ -4,6 +4,7 @@ slug: activate-licence-on-nutanix-byol
 excerpt: 'How to add licences in an OVHcloud Nutanix cluster in the BYOL solution'
 section: Getting started
 order: 12
+updated: 2022-11-16
 ---
 
 **Last updated 16th November 2022**

@@ -4,6 +4,7 @@ slug: metro-availability
 excerpt: "Implementing Metro for a Disaster Recovery Plan"
 section: "Disaster Recovery Plan"
 order: 06
+updated: 2022-11-15
 ---
 
 **Last updated 15th november 2022**

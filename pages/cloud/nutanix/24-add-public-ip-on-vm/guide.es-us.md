@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to use a public IP on a Ubuntu VM, created via API
 section: Red y seguridad
 order: 04
+updated: 2022-01-11
 ---
 
 **Last updated 11th January 2022**

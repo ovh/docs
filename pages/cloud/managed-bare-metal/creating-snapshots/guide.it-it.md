@@ -6,6 +6,7 @@ routes:
 excerpt: Ripristina lo stato precedente delle tue VM tramite gli Snapshot
 section: Gestione delle macchine virtuali
 order: 08
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

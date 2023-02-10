@@ -6,6 +6,7 @@ routes:
 excerpt: 'Hier erfahren Sie, wie Sie eine IP auf einer virtuellen Maschine konfigurieren'
 section: 'Verwaltung virtueller Maschinen'
 order: 5
+updated: 2020-11-18
 ---
 
 > [!primary]

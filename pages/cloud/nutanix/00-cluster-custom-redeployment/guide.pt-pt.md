@@ -6,6 +6,7 @@ routes:
 excerpt: Customised redeployment of a Nutanix Cluster using OVHcloud tools
 section: Primeiros passos
 order: 05
+updated: 2022-12-13
 ---
 
 **Last updated 13th December 2022**

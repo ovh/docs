@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/es/private-cloud/modificar-politica-acceso-al-vcenter/'
 excerpt: Cómo modificar la política de acceso al vCenter
 section: Funcionalidades de OVHcloud
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how OVHcloud hourly snapshots work
 section: OVHcloud Features
 order: 06
+updated: 2020-11-30
 ---
 
 **Last updated 30th November 2020**

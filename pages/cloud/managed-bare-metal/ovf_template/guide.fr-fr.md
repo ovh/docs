@@ -6,6 +6,7 @@ routes:
 excerpt: Découvrez comment déployer un template Linux, Windows Server ou Windows SQL Server
 section: Gestion des machines virtuelles
 order: 02
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

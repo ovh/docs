@@ -6,6 +6,7 @@ routes:
 excerpt: Tutte le funzionalità disponibili nello Spazio Cliente Managed Bare Metal
 section: Per iniziare
 order: 1
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

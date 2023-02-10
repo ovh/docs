@@ -6,6 +6,7 @@ routes:
 excerpt: 'So installieren Sie VMware Tools auf Linux oder Windows'
 section: 'Verwaltung virtueller Maschinen'
 order: 6
+updated: 2020-11-18
 ---
 
 > [!primary]

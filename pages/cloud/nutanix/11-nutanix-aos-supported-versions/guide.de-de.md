@@ -6,6 +6,7 @@ routes:
 excerpt: Check the Nutanix AOS versions supported by OVHcloud
 section: Erste Schritte
 order: 11
+updated: 2022-11-25
 ---
 
 **Last updated 25th November 2022**

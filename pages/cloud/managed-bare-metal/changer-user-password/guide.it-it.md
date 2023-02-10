@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/it/private-cloud/modificare-password-utente/'
 excerpt: Come impostare una nuova password per un utente del client vSphere dallo Spazio Cliente OVHcloud
 section: Funzionalità OVHcloud
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

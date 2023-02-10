@@ -5,6 +5,7 @@ routes:
 excerpt: Cómo asociar una dirección de correo electrónico a un usuario vSphere
 slug: asociar-direccion-correo-electronico-a-usuario-vsphere
 section: Funcionalidades de OVHcloud
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

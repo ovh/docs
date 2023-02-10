@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to implement and use the vSphere SDK
 section: VMware vSphere features
 order: 10
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

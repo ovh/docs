@@ -6,6 +6,7 @@ routes:
 excerpt: Erfahren Sie hier, wie Sie das vSphere SDK einrichten und verwenden
 section: VMware vSphere Funktionen
 order: 10
+updated: 2020-11-18
 ---
 
 **Letzte Aktualisierung am 18.11.2020**

@@ -6,6 +6,7 @@ routes:
 excerpt: Cómo evitar el modo de solo lectura del disco de las MV en Linux
 section: Gestión de las máquinas virtuales
 order: 10
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**
