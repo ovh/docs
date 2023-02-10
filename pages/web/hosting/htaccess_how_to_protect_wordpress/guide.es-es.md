@@ -59,7 +59,7 @@ De la misma manera, si no está acostumbrado a manipular este tipo de archivo, p
 
 ### ¿Qué herramientas utilizar?
 
-un cliente FTP para recuperar sus archivos (FileZilla, Cyberduck).
+- un cliente FTP para recuperar sus archivos (FileZilla, Cyberduck).
 - un editor de texto.
 
 ### ¿Dónde están situados los archivos .htaccess en WordPress?
