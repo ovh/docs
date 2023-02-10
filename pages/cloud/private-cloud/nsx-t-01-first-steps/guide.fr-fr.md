@@ -28,8 +28,8 @@ NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networ
 
 Lorsqu'un client souscrit à l'offre NSX-T et quelle est activée une pré-configuration est appliquée avec ces deux passerelles :
 
-* **ovh-T0-gw** : Cette passerelle est le point d'entrée réseau de votre cluster elle est préconfigurée avec deux interfaces et une adresse IP virtuelle. Elle est de type **Tier-0 Gateways**.
-* **ovh-T1-gw** : Cette passerelle est dans la catégories des **Tier-1 Gateways**. Il est possible de créer des segments (VLAN ou Overlay) qui lui seront connectés. Elle est reliée à **ovh-T0-gw** pour les liaisons exterieures aux cluster (Physique et Internet). 
+* **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is of type **Tier-0 Gateways** (North-South).
+* **ovh-T1-gw** : Cette passerelle est dans la catégories des **Tier-1 Gateways** (est-ouest). Il est possible de créer des segments (VLAN ou Overlay) qui lui seront connectés. Elle est reliée à **ovh-T0-gw** pour les liaisons exterieures aux cluster (Physique et Internet). 
 
 Il est possible de créer de nouvelles passerelles de type **Tier-1 Gateways** et de les relier à la passerelle **ovh-T0-gw**. 
 
@@ -79,9 +79,9 @@ Cliquez à gauche sur `Network Topology`{.action}.
 Le schéma ci-dessous représente la topologie réseau avec ces informations :
 
 - Les deux interfaces physiques qui permettent une redondance de l'accès Internet en cas de défaillance (Ces deux interfaces utilisent des adresses IP publiques qui ne sont pas utilisables pour la configuration client).
-- La passerelle Nord-Sud (**ovh-t0-gw**) qui assure la liaison entre Le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
-- La liaison entre les passerelles **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
-- La passerelle Est-Ouest (**ovh-t1-gw**) qui gère les communications entre les réseaux internes (segments de type overlay) du cluster. Il est aussi possible d'effectuer des connexions avec des VLAN sur des vRacks.
+- La passerelle nord-sud (**ovh-T0-gw**) qui assure la liaison entre Le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
+- La liaison entre les passerelles **ovh-T0-gw** et **ovh-T1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
+- La passerelle est-ouest (**ovh-T1-gw**) qui gère les communications entre les réseaux internes (segments de type overlay) du cluster. Il est aussi possible d'effectuer des connexions avec des VLAN sur des vRacks.
 - **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce segment. Vous trouverez plus d'informations concernant les segments dans ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management)
 
 
@@ -92,18 +92,18 @@ Ce segment contient deux informations :
 * L'adresse IP publique virtuelle **HA VIP**.
 * Le numéro VLAN utilisé sur votre réseau public de votre cluster vSphere.
 
-Les connexions au travers de VLAN sur la passerelle **ovh-t0-gw** n'apparaissent pas dans la topologie réseau de NSX-T, même si elle existe.
+Les connexions au travers de VLAN sur la passerelle **ovh-T0-gw** n'apparaissent pas dans la topologie réseau de NSX-T, même si elle existe.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
 ### Affichage de l'adresse IP virtuelle **HA VIP**
 
-Nous allons voir comment afficher les adresses IP virtuelles attachées à la passerelle **ovh-t0-gw**.
+Nous allons voir comment afficher les adresses IP virtuelles attachées à la passerelle **ovh-T0-gw**.
 
-Une seule adresse IP virtuelle est affectée lors de la livraison de NSX-T, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-t0-gw**.
+Une seule adresse IP virtuelle est affectée lors de la livraison de NSX-T, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-T0-gw**.
 
 > ![Primary]
-> Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles sur la passerelle **ovh-t0-gw**, mais cette fonctionnalité devrait être bientôt disponible.
+> Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles sur la passerelle **ovh-T0-gw**, mais cette fonctionnalité devrait être bientôt disponible.
 > 
 
 Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action} dans la catégorie **Connectivity**.

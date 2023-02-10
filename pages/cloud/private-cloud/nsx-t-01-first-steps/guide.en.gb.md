@@ -28,8 +28,8 @@ NSX-T is a Software-Defined Networking (SDN)** solution provided by VMware. OVHc
 
 When a customer subscribes to the NSX-T offer and is enabled, a pre-configuration is applied with two gateways:
 
-* **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is a **Tier-0 Gateways**.
-* **ovh-T1-gw** : This gateway is in the **Tier-1 Gateways** category. You can create segments (VLANs or Overlay) that will be connected to it. It is connected to **ovh-T0-gw** for connections outside the clusters (Physical and Internet).
+* **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is of type **Tier-0 Gateways** (North-South).
+* **ovh-T1-gw** : This gateway is in the **Tier-1 Gateways** (East-West) category. You can create segments (VLANs or Overlay) that will be connected to it. It is connected to **ovh-T0-gw** for connections outside the clusters (Physical and Internet).
 
 New Gateways **Tier-1 gateways** can be created and linked to the **ovh-T0-gw** gateway.
 
@@ -81,9 +81,9 @@ Left-click on `Network Topology`{.action}.
 The diagram below shows the network topology from top to bottom:
 
 - The two physical interfaces that allow redundancy of internet access in case of failure (Both interfaces use public IP addresses that are not usable for client configuration).
-- The North-South gateway (**ovh-t0-gw**) that provides the link between The physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
-- The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
-- The East-West gateway (**ovh-t1-gw**) that manages communications between the cluster’s internal networks (overlay segments). You can also make connections with VLANs on vRacks.
+- The North-South gateway (**ovh-T0-gw**) that provides the link between The physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
+- The connection between the **ovh-T0-gw** and **ovh-T1-gw** gateways is via IP addresses reserved for this purpose.
+- The East-West gateway (**ovh-T1-gw**) that manages communications between the cluster’s internal networks (overlay segments). You can also make connections with VLANs on vRacks.
 -  **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this segment. You can find more information about segments in this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
@@ -93,15 +93,15 @@ This segment contains two pieces of information :
 * The virtual public IP address **HA VIP**.
 * The VLAN number used on your public network in your vSphere cluster.
 
-Connections through VLANs on the **ovh-t0-gw** gateway do not appear in the NSX-T network topology, even if it exists.
+Connections through VLANs on the **ovh-T0-gw** gateway do not appear in the NSX-T network topology, even if it exists.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
 ### Display of virtual IP address **HA VIP**
 
-We will show you how to display the virtual IP addresses attached to the **ovh-t0-gw** gateway.
+We will show you how to display the virtual IP addresses attached to the **ovh-T0-gw** gateway.
 
-Only one virtual IP address is assigned when NSX-T is delivered. It is used for SNAT on the segments attached to the gateway **ovh-t0-gw**.
+Only one virtual IP address is assigned when NSX-T is delivered. It is used for SNAT on the segments attached to the gateway **ovh-T0-gw**.
 
 
 > ![Primary]
