@@ -133,9 +133,9 @@ Through the NSX-T interface click on the `Networking`{.action} tab and click on 
 
 Fill in this information :
 
-* **Name** : Type 'vlan100-vrack-segment'.
-* **Transport Zone** : Select 'vlan100-vrack-segment'.
-* **VLAN** : Write the number '100'.
+* **Name** : Type `vlan100-vrack-segment`.
+* **Transport Zone** : Select `ovh-tz-vrack`.
+* **VLAN** : Write the number `100`.
 * **Subnets** : Enter the gateway address and range on this segment `192.168.100.254/24`
 
 Then click `SAVE`{.action}.
@@ -148,7 +148,7 @@ Click `NO`{.action}.
 
 ### Connecting a VLAN segment to the gateway **ovh-T1-gw**
 
-You can route the network from a VLAN segment to the Internet and the Overlay segments by creating an interface on the **ovh-T1-gw** gateway. When creating the interface, use the same IP address as the one specified in the segment subnet.
+You can route the network from a VLAN segment to the Internet and other segments by creating an interface on the **ovh-T1-gw** gateway. When creating the interface, use the same IP address as the one specified in the segment subnet.
 
 Through the NSX-T interface go to the `Networking`{.action} tab and click on `Tier-1 Gateways`{.action} on the left in the **Connectivity** section.
 
@@ -180,7 +180,7 @@ Click `CLOSE`{.action}.
 
 The number 1 next to **Service Interfaces** indicates that the interface is created, click `CLOSE EDITING`{.action} to complete the creation of the interface.
 
-![07 add interfaces to ovh-T1-gw with vlan 05](images/07-add-interface-on-ovh-t1-gw05.png){.thumbnail}
+![07 add interfaces to ovh-T1-gw with vlan 05](images/07-add-interface-on-ovh-t1-gw06.png){.thumbnail}
 
 You can now connect outside this segment through the interface with gateway 192.168.100.254/24.
 
