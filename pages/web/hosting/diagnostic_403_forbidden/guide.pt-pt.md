@@ -3,7 +3,7 @@ title: O que fazer em caso de página "403 forbidden"?
 excerpt: Saiba como repor o seu site online quando apresenta uma página "403 forbidden"
 slug: diagnostico-403-forbidden
 section: Diagnóstico
-Order: 08
+order: 08
 ---
 
 > [!primary]

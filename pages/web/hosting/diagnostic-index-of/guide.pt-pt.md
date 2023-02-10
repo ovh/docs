@@ -3,7 +3,7 @@ title: O que fazer em caso de página « Index of »?
 excerpt: Saiba como repor o seu site online quando exibe uma página « Index of ».
 slug: diagnostico-index-of
 section: Diagnóstico
-Order: 07
+order: 07
 ---
 
 > [!primary]

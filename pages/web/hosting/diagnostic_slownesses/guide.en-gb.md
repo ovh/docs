@@ -3,7 +3,7 @@ title: "My website is slow. What to do?"
 excerpt: "Identify the cause of your website's slowdowns and find out how to improve this situation"
 slug: slow-website-fix
 section: Troubleshooting
-order: 01
+order: 05
 ---
 
 **Last updated 17th November 2022**

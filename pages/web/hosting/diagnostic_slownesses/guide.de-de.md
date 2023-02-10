@@ -3,7 +3,7 @@ title: "Meine Website lädt zu langsam. Was soll ich tun?"
 excerpt: "Ermitteln Sie den Ursprung der Ladezeiten Ihrer Website und erfahren Sie, wie Sie diese Situation verbessern"
 slug: slow-website-fix
 section: Diagnose
-order: 01
+order: 05
 ---
 
 **Letzte Aktualisierung am 17.11.2022**
