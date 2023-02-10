@@ -83,7 +83,7 @@ Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [
 
 Suivez les étapes suivantes :
 
-> [!tab]
+> [!tabs]
 > **Etape 1**
 >>
 >> Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovh.com/fr/mail/), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
@@ -132,7 +132,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Pour ajouter un alias à votre compte e-mail, suivez les étapes suivantes:
 
-> [!tab]
+> [!tabs]
 > **Etape 1**
 >>
 >> Dans le tableau qui s'affiche, vous trouverez une colonne `Alias`.<br><br>
@@ -154,7 +154,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 La méthode pour créer un alias ou une redirection est strictement la même. Il vous suffit de suivre les étapes suivantes :
 
-> [!tab]
+> [!tabs]
 > **Etape 1**
 >> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.<br><br>
 >> ![emails](images/mxplan-legacy-1.png){.thumbnail}<br>
