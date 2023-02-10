@@ -6,7 +6,7 @@ section: NSX-T
 order: 03
 ---
 
-**Dernière mise à jour le 08/02/2023**
+**Dernière mise à jour le 10/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -34,7 +34,7 @@ order: 03
 Nous allons configurer le DHCP pour : 
 
 - Un segment en Overlay derrière la passerelle **ovh-T1-gw** 
-- Un segment sur un VLAN connecté à la passerelle **ovh-T0-gw**.
+- Un segment sur un VLAN connecté à la passerelle **ovh-T1-gw**.
 
 ### Configuration commune du DHCP pour tous les segments de type overlay
 
@@ -52,7 +52,7 @@ Le serveur DCHP est actif il utilise un réseau en 100.96.0.1/30, n'utilisez pas
 
 ![01 Common DHCP configuration 03](images/01-common-dhcp-configuration03.png){.thumbnail}
 
-### Affectation du DHCP à passerelle **ovh-T1-gateway**
+### Affectation du DHCP à passerelle **ovh-T1-gw**
 
 Toujours dans l'onglet `Networking`{.action} cliquez sur `Tier-1-Gateways`{.action} à gauche dans la rubrique **Connectivity**.
 
@@ -94,7 +94,7 @@ Remplissez ces informations :
 
 * **DHCP Type** : Laissez `Gateway DHCP Server`{.action}.
 * **DHCP Ranges** : Saisissez votre étendue `192.168.1.10-192.168.1.200`{.action}.
-* **DNS Servers** : Ajouter le serveur DNS OVHcloud `2&3.186.33.99`{.action}.
+* **DNS Servers** : Ajouter le serveur DNS OVHcloud `213.186.33.99`{.action}.
 
 Et cliquez sur `APPLY`{.action}.
 
@@ -112,7 +112,7 @@ Les machines virtuelles sur ce segment peuvent maintenant être configurées en 
 
 ### Mise en place du DCHP sur un segment de type VLAN
 
-Sur un segment de type VLAN connecté au travers d'interfaces sur la passerelle **ovh-T0-gw** il n'est pas possible d'utiliser le profil créé pour les segments Overlay. IL est aussi interdit de connecter un nouveau profil sur la passerelle **ovh-T0-gw**.
+Sur un segment de type VLAN il n'est pas possible d'utiliser le profil créé pour les segments Overlay. 
 
 Pour pouvoir avoir un serveur DHCP sur ce segment nous allons créer une configuration DHCP avec un nouveau profil directement attaché au segment.
 
@@ -125,11 +125,7 @@ Allez sur l'onglet `Networking`{.action}, cliquez sur `Segments`{.action} à gau
 
 ![04 Configure DHCP fo VLAN SEGMENT 01](images/04-configure-dhcp-for-vlan-segment01.png){.thumbnail} 
 
-Saisissez dans la colonne **Subnets** l'`adresse IP et du masque`{.action} de l'interface active sur votre passerelle **ovh-t0-gw** et cliquez sur `SET DHCP CONFIG`{.action}.
-
-> ![warning]
-> Pour l'instant vous devez utiliser l'adresse IP de l'interface active, dans les futures évolutions de NSX-T il sera possible d'utiliser la future adresse IP virtuelle.
->
+Saisissez dans la colonne **Subnets** l'`adresse IP et du masque`{.action} de l'interface active sur votre passerelle **ovh-T1-gw** et cliquez sur `SET DHCP CONFIG`{.action}.
 
 ![04 Configure DHCP fo VLAN SEGMENT 02](images/04-configure-dhcp-for-vlan-segment02.png){.thumbnail} 
 

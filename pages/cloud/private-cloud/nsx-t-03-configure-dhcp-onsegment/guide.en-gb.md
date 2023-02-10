@@ -6,7 +6,7 @@ section: NSX-T
 order: 03
 ---
 
-**Last updated 08th February 2023**
+**Last updated 10th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -36,7 +36,7 @@ order: 03
 We will configure DHCP for : 
 
 * An overlay segment behind the gateway **ovh-T1-gw** 
-* A segment on a VLAN connected to the gateway **ovh-T0-gw**.
+* A segment on a VLAN connected to the gateway **ovh-T1-gw**.
 
 ### Common DHCP configuration for all overlay segments
 
@@ -54,7 +54,7 @@ Le serveur DCHP est actif, il utilise un réseau en 100.96.0.1/30, n'utilisez pa
 
 ![01 Common DHCP configuration 03](images/01-common-dhcp-configuration03.png){.thumbnail}
 
-### DHCP assignment to gateway **ovh-t1-gateway**
+### DHCP assignment to gateway **ovh-T1-gw**
 
 In the `Networking`{.action} tab, click on `Tier-1-Gateways`{.action} on the left in the **Connectivity** section.
 
@@ -114,22 +114,20 @@ Virtual machines in this segment can now be configured with DHCP.
 
 ### Setting up DCHP on a VLAN segment
 
-On a VLAN segment connected through interfaces on the gateway **ovh-t0-gw** it is not possible to use the profile created for the Overlay segments. It is also forbidden to connect a new profile on the gateway **ovh-t0-gw**.
+On a VLAN segment connected through interfaces on the gateway **ovh-T1-gw** it is not possible to use the profile created for the Overlay segments. It is also forbidden to connect a new profile on the gateway **ovh-T1-gw**.
 
 In order to have a DHCP server on this segment, we will create a DHCP configuration with a new profile directly attached to the segment.
 
 If you do not have a VLAN type segment, use the [Segment Management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/) guide to create it with these settings :
 
 * **VLAN Subnet**: 192.168.100.0/24.
-* **Interface private IP address for first Edge Node** : 192.168.100.252.
-* **Interface private IP address for the second Edge Node** : 192.168.100.253.
 * **Future virtual IP address** : 192.168.100.254.
 
 Go to the `Networking`{.action} tab, click on `Segments`{.action} on the left in the **Connectivity** section, then click on the `three small dots`{.action} on the left of your VLAN segment and choose `Edit`{.action} from the menu.
 
 ![04 Configure DHCP fo VLAN SEGMENT 01](images/04-configure-dhcp-for-vlan-segment01.png){.thumbnail} 
 
-In the **Subnets** column, enter the `IP address and mask`{.action} of the active interface on your gateway **ovh-t0-gw** and click `SET DHCP CONFIG`{.action}.
+In the **Subnets** column, enter the `IP address and mask`{.action} of the active interface on your gateway **ovh-T0-gw** and click `SET DHCP CONFIG`{.action}.
 
 > ![warning]
 > For now you must use the IP address of the active interface, in future developments of NSX-T it will be possible to use the future virtual IP address.
