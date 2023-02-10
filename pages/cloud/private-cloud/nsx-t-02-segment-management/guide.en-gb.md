@@ -127,7 +127,7 @@ Both segments are connected to the gateway **ovh-T1-gw**, routing between the tw
 
 ### Creating a Segment on a VLAN 
 
-Through the NSX-T interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section.
+Through the NSX-T interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section. Then click `ADD SEGMENT`{.action}.
 
 ![06 Add vlan segment 01](images/06-add-vlan-segment01.png){.thumbnail}
 
@@ -170,7 +170,7 @@ Choose this information :
 * **IP Address / Mask** : Enter the IP address of the interface `192.168.100.254/24` that should match the gateway.
 * **Connected To(Segment)** : Take the segment that is on vlan 100 on the vrack named `vlan100-vrack-segment`.
 
-Then click `SAVE`{.action} to confirm the creation of the interface on **ovh-t1-gw**.
+Then click `SAVE`{.action} to confirm the creation of the interface on **ovh-T1-gw**.
 
 ![07 add interfaces to ovh-T1-gw with vlan 04](images/07-add-interface-on-ovh-t1-gw04.png){.thumbnail}
 

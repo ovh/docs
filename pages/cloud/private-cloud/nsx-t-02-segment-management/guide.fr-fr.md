@@ -128,7 +128,7 @@ Les deux segments sont reliés à la passerelle **ovh-T1-gw**, le routage entre 
 
 ### Création d'un segment sur un VLAN 
 
-Au travers de l'interface de NSX-T cliquez allez sur l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**.
+Au travers de l'interface de NSX-T cliquez allez sur l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**. Ensuite cliquez sur `ADD SEGMENT`{.action}.
 
 ![06 Add vlan segment 01](images/06-add-vlan-segment01.png){.thumbnail}
 
@@ -137,7 +137,7 @@ Remplissez ces informations :
 * **Name** : Saisissez `vlan100-vrack-segment`.
 * **Transport Zone** : Sélectionnez `ovh-tz-vrack`.
 * **VLAN** : Tapez le nombre `100`.
-* **Subnets** : Saisissez l'adresse et le range de la passerelle sur ce segment `192.168.100.254/24.
+* **Subnets** : Saisissez l'adresse et le range de la passerelle sur ce segment `192.168.100.254/24`.
 
 Ensuite cliquez sur `SAVE`{.action}.
 
@@ -171,7 +171,7 @@ Choisissez ces informations :
 * **IP Address / Mask** : Saisissez l'adresse IP de l'interface `192.168.100.254/24` qui doit correspondre à la passerelle.
 * **Connected To(Segment)** : Prenez le segment qui est sur le vlan 100 sur le vrack nommé `vlan100-vrack-segment`.
 
-Ensuite cliquez sur `SAVE`{.action} pour valider la création de l'interface sur **ovh-t0-gw**.
+Ensuite cliquez sur `SAVE`{.action} pour valider la création de l'interface sur **ovh-T1-gw**.
 
 ![07 add interfaces to ovh-T1-gw with vlan 04](images/07-add-interface-on-ovh-t1-gw04.png){.thumbnail}
 
