@@ -6,7 +6,7 @@ section: NSX-T
 order: 04
 ---
 
-**Dernière mise à jour le 08/02/2023**
+**Dernière mise à jour le 10/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -30,11 +30,11 @@ order: 04
 
 # Présentation
 
-Il est possible d'utiliser un redirecteur DNS dans NSX-T qui centralise toutes les requêtes DNS et les redirigent vers des serveurs DNS externes, ce qui permet de réduire le flux réseau. Il est possible d'attacher le redirecteur DNS sur la passerelle nord-sud (ovh-t0-gw) ou la passerelle est-ouest (ovh-t1-gw) en fonction de vos besoins.
+Il est possible d'utiliser un redirecteur DNS dans NSX-T qui centralise toutes les requêtes DNS et les redirigent vers des serveurs DNS externes, ce qui permet de réduire le flux réseau. Il est possible d'attacher le redirecteur DNS sur la passerelle nord-sud (ovh-T0-gw) ou la passerelle est-ouest (ovh-T1-gw) en fonction de vos besoins.
 
 ## En pratique
 
-Nous allons créer un redirecteur DNS et l'attacher à la passerelle nord-sud (ovh-t0-gw), il sera utilisable sur l'ensemble des segments de NSX-T.
+Nous allons créer un redirecteur DNS et l'attacher à la passerelle nord-sud (ovh-T0-gw), il sera utilisable sur l'ensemble des segments de NSX-T.
 
 ### Configuration du redirecteur DNS
 

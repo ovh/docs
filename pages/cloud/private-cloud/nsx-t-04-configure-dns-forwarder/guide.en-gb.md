@@ -6,7 +6,7 @@ section: NSX-T
 order: 04
 ---
 
-**Last updated 08th February 2023**
+**Last updated 10th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -33,7 +33,7 @@ order: 04
 
 ## Overview
 
-You can use a DNS forwarder in NSX-T that centralises all DNS queries and redirects them to external DNS servers, which reduces network traffic. You can attach the DNS forwarder to the north-south gateway (ovh-t0-gw) or the east-west gateway (ovh-t1-gw), depending on your needs.
+You can use a DNS forwarder in NSX-T that centralises all DNS queries and redirects them to external DNS servers, which reduces network traffic. You can attach the DNS forwarder to the north-south gateway (ovh-T0-gw) or the east-west gateway (ovh-T1-gw), depending on your needs.
 
 ## Instructions
 
