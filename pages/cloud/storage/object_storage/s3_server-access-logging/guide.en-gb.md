@@ -233,5 +233,5 @@ $ cat Documents/logging_disable.json
 Then configure bucket logging parameters with this empty configuration file:
 
 ```
-$ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://Documents/logging_disable.json
+$ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://logging_disable.json
 ```
