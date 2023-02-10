@@ -3,7 +3,7 @@ title: 'Tutoriel - Utiliser le fichier htaccess avec WordPress'
 slug: use-htaccess-with-wordpress
 excerpt: 'Découvrez comment sécuriser votre blog WordPress avec un ou plusieurs fichiers htaccess'
 section: 'Tutoriels'
-order: 
+order: 07
 ---
 
 **Dernière mise à jour le 06/02/2023**
@@ -164,3 +164,9 @@ Le répertoire **wp-admin** permet de vous connecter à votre interface d'admini
 ## Aller plus loin <a name="go-further"></a>
 
 Consultez le [tutoriel disponible sur le site de la Fondation Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
