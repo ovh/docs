@@ -1,41 +1,46 @@
 ---
-title: MongoDB - Remote disk migration informations
+title: MongoDB - Remote disk migration information
 excerpt: Everything you need to know about the remote disk migration 
 slug: mongodb/remote-disk-migration
 section: MongoDB - Guides
 order: 090
 ---
 
-**Last updated 9<sup>th</sup> Febuary 2023**
+**Last updated 9<sup>th</sup> February 2023**
 
 ## Objective
 
-This guide gives you more information about the disk migration planned from the 13th to the 26th of March. You will be able to learn more about why and how we operate this change. Moreover you will find out what are the impact on your MongoDB service.
+This guide gives you more information about the disk migration planned from the 13th to the 26th of March. You will be able to learn more about why and how we operate this change. You also will find out what are the impact on your MongoDB service.
 
 ## Requirements
 
-- Nothing is required from you, everything is handled by OVHcloud operation team
+- Nothing is required from you, everything is handled by the OVHcloud operations team.
 
-## Contexte
-Starting Tuesday 7th of Febuary all MongoDB services created are created with [block storage technologie](https://www.ovhcloud.com/en/public-cloud/block-storage/). Meaning your data will be stored on a remote disk instead of the local ssd of the VM. This change only impact new services, existing services are still using their local disk until we migrate it. This migration will take place between the 13th and the 26th of March. 
+## Background
 
-## Why are we changing storage technologie ?
+Starting Tuesday 7th of Febuary, all MongoDB services are created with [block storage technology](https://www.ovhcloud.com/en/public-cloud/block-storage/). This means your data will be stored on a remote disk instead of the local SSD of the VM. This change only impacts new services. Existing services are still using their local disk until we migrate it. This migration will take place between the 13th and the 26th of March. 
+
+## Why are we changing the storage technology ?
 
 ### Flexibility
-One of the main reason we are moving away from local ssd disk is to allow more flexibility in disk size. A lot of you are asking for more flexibility in disk size and decoupling compute and storage. Remote disk bring this flexibility, you will soon be able to precisely select your disk size, without having to upgrade your computation power.
+
+One of the main reasons we are moving away from local SSD disk is to allow more flexibility in disk size. Many customers are asking for more flexibility in disk size and decoupling compute and storage. Remote disk bring this flexibility, you will soon be able to accurately select your disk size, without having to upgrade your computation power.
 
 ### Homogeneity
-MongoDB was the only public cloud database engine storing data on local ssd, making the whole offer heterogeneous. This migration come in line with our goal to make the whole offer as coherent as possible.
+
+MongoDB is the only Public Cloud Database engine storing data on local SSD, making the whole offer heterogeneous. This migration comes in line with our goal to make the whole offer as coherent as possible.
 
 ## What are the changes ?
 
 ### Disk technology
-As said before we were previously using local ssd of the VM in order to store the data hold by the MongoDB. We will now use remote disk using [block storage technologie](https://www.ovhcloud.com/en/public-cloud/block-storage/). We will use `High Speed` technologie. You will be able to check the technologie used in storage property in the OVHcloud manager page of your service.
+
+As mentioned above, OVHcloud was previously using local SSD of the VM in order to store the data held by the MongoDB engine. We will now use remote disk using [block storage technology](https://www.ovhcloud.com/en/public-cloud/block-storage/). We will use `High Speed` technology. You will be able to check the technology used in the storage properties of your service, from the OVHcloud Control Panel.
 
 ### Disk space
-With the migration we will change the disk space available to store data. While paying the same price you will have access to more effective storage. You can find bellow the comparaison between what you currently have access to and what you will have access to after the migration depending on the service flavor.
 
-| Flavor  | Local ssd (before migration) | Remote disk (after migration) |
+This migration also means we will change the disk space available to store data. For the same price you will have access to more effective storage. You can find below the comparison between what you currently have access to and what you will have access to after the migration, depending on the service flavor.
+
+| Flavor  | Local SSD (before migration) | Remote disk (after migration) |
 |---------|------------------------------|-------------------------------|
 | db1-2   |              25GB            |               40GB            |
 | db1-4   |              50GB            |               80GB            |
@@ -45,73 +50,85 @@ With the migration we will change the disk space available to store data. While 
 | db1-60  |              400GB           |              1280GB           |
 | db1-120 |              800GB           |              2560GB           |
 
-Also, before the migration the displayed disk space was shared with the system, meaning it would not be equal to the effective disk space available for data storage. With remote disk, the space amount displayed is the effective disk space available for data storage.
+On top of that, prior to the migration the displayed disk space is shared with the system, meaning it would not be equal to the effective disk space available for data storage. With remote disk, the displayed space amount is the effective disk space available for data storage.
 
 ## Migration
-### Timeline
-07/02 : All new service are remote disk only.
 
-08/02 - 12/02 : Mailing the owner of impacted services.
+### Migration imeline
 
-08/02 - 12/02 : Migration maintenance task available to the customer.
+- 2023/02/07 : All new services are remote disk only.
+- From 2023/02/08 to 2023/02/12 : An email is sent to the owners of impacted services.
+- From 2023/02/08 to 2023/02/12 : A migration maintenance task available to the customer.
+- From 2023/03/13 to 2023/03/26 : Migration of services. To get the exact date of your migration, check the maintenances task of your service.
 
-13/03 - 26/03 : Migration of services, to get the exact date of your migration check the maintenances task of your service.
+On migration day, an email will be sent to the concerned customers to inform them about the successful migration.
 
-Migration day : Mailing to warn your service has been successfully migrated.
+### Migration steps
 
-### Steps
 The migration of your service will be done in 6 major steps:
 
 1. Stopping MongoDB process
 2. Attaching a remote disk to the existing VM
 3. Setup and encryption of the new remote disk
-4. Copying data from local ssd to the remote disk
+4. Copying data from local SSD to the remote disk
 5. Starting MongoDB process
 6. Mailing to warn your service has been successfully migrated
 
-For `business` and `enterprise` plans, nodes are migrated one after the other allowing for your application to still have access to the data.
-However, `essential` plan are composed of only one node, meaning a service intureption is to be expected.
+For `Business` and `Enterprise` plans, nodes are migrated one after the other, allowing your application to still have access to the data.
+However, `Essential` plans are composed of only one node, meaning a service interruption is to be expected.
+
 ## FAQ
 
-#### Is there service interuption expected ?
+#### Is a service interruption expected?
+
 It depends of the plan you are using:
 
-`business` and `enterprise` : You will NOT experience a service interuption, we are going to migrate your data one node at a time, making it seemless for the app connected to your MongoDB.
+- `Business` and `Enterprise` : You will not experience a service interruption. We are going to migrate your data one node at a time, making it seamless for the app connected to your MongoDB.
+- `Essentials` : You will experience a service interruption during a few minutes, corresponding to the time it takes to migrate your data from the local storage to the remote one.
 
-`essentials` : You will experience a service interuption of a few minute, it correspond to the time it takes to migrate your data from the local storage to the remote one.
+#### Is data loss expected?
 
-#### Is data loss expected ?
 No, all your data will be copied to the new storage without any loss.
 
-#### Is there change to at rest data encryption ?
+#### Will data encryption at rest change?
+
 No, we will still be using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) to encrypt your data at rest.
 
-#### Is there going to be a performance change ?
-Maybe, the new storage does not have the same performance as using the local ssd disk of the VM. The overall performance of your database is dependant of many parameters, mainly but not limited to your workload type and the specification of the hardware running your database. With changing the disk technologie we're changing a part of the hardware running the database, thus you might see performance change when using your database.
+#### Will there be performance changes?
 
-#### How to know if my service is impacted ?
-If your service has been created before the 7th of febuary 2023 your service use local disk storage and will be migrated. You can also check the type of storage your service is using, you can look at the storage property in the OVHcloud manager page of your service. The value `local SSD` would mean you have not been migrated yet, you should have a maintenace scheduled for the migration.
+Maybe. The new storage does not have the same performance as using the local SSD disk of the VM. The overall performance of your database is dependent on many parameters, mainly but not limited to your workload type and the specification of the hardware running your database. With this change in disk technology, we are changing a part of the hardware running the database, so you might see performance change when using your database.
 
-#### Does the price change ?
+#### How to know if my service is impacted?
+
+If your service has been created before the 7th of Febuary 2023, your service uses local disk storage and will be migrated. You can also check the type of storage your service is using, reading your service's storage properties in the OVHcloud Control Panel. The value `local SSD` means you have not been migrated yet and you will have a scheduled maintenance for the migration.
+
+#### Does the price change?
+
 No, the price will still be the same for more effective storage.
 
-#### What do I have to do ?
-Nothing, everything is handled by OVHcloud operation team, your service will be migrated without you noticing anything. 
+#### What should I do?
 
-#### Will I lose effective disk space ?
-No, in fact you will gain effective disk space. 
+Nothing. Everything is handled by the OVHcloud operations team. Your service will be migrated without you noticing anything. 
 
-#### When my service will be migrated ?
-All services impacted are going to be migrated between the 13th and the 26th of March. You can find out the exact time of migration in the maintenance window of your service OVHcloud manager page. You can also follow the migration via the [OVHcloud status page of the migration](https://public-cloud.status-ovhcloud.com/incidents/4wbsn6c6ys85).
+#### Will I lose effective disk space?
 
-#### Can I change the migration date ?
+No, you will actually gain effective disk space. 
+
+#### When will my service be migrated?
+
+All concerned services are going to be migrated between the 13th and the 26th of March. You can find out the exact time of migration in you service's maintenance window in the OVHcloud Control Panel. You can also follow the migration via the [OVHcloud status page of the migration](https://public-cloud.status-ovhcloud.com/incidents/4wbsn6c6ys85).
+
+#### Can I change the migration date?
+
 Yes, you can manualy trigger the maintenance to a more convinient time for you.
 
-#### Can I block the migration ?
+#### Can I refuse the migration?
+
 No, this migration is mandatory.
 
-#### Can I still order local ssd services ?
-No, since the 7th of febuary 2023 only remote disk storage is available with MongoDB services and in general with public cloud databases.
+#### Can I still order local SSD services?
+
+No, since the 7th of febuary 2023 only remote disk storage is available with MongoDB services and in general with Public Cloud Databases.
 
 ## We want your feedback!
 
