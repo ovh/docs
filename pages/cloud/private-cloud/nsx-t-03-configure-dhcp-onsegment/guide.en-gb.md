@@ -114,24 +114,20 @@ Virtual machines in this segment can now be configured with DHCP.
 
 ### Setting up DCHP on a VLAN segment
 
-On a VLAN segment connected through interfaces on the gateway **ovh-T1-gw** it is not possible to use the profile created for the Overlay segments. It is also forbidden to connect a new profile on the gateway **ovh-T1-gw**.
+On a VLAN segment it is not possible to use the profile created for Overlay segments.
 
 In order to have a DHCP server on this segment, we will create a DHCP configuration with a new profile directly attached to the segment.
 
 If you do not have a VLAN type segment, use the [Segment Management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/) guide to create it with these settings :
 
 * **VLAN Subnet**: 192.168.100.0/24.
-* **Future virtual IP address** : 192.168.100.254.
+* **Gateway and interface IP address** : 192.168.100.254/24.
 
 Go to the `Networking`{.action} tab, click on `Segments`{.action} on the left in the **Connectivity** section, then click on the `three small dots`{.action} on the left of your VLAN segment and choose `Edit`{.action} from the menu.
 
 ![04 Configure DHCP fo VLAN SEGMENT 01](images/04-configure-dhcp-for-vlan-segment01.png){.thumbnail} 
 
-In the **Subnets** column, enter the `IP address and mask`{.action} of the active interface on your gateway **ovh-T0-gw** and click `SET DHCP CONFIG`{.action}.
-
-> ![warning]
-> For now you must use the IP address of the active interface, in future developments of NSX-T it will be possible to use the future virtual IP address.
->
+In the **Subnets** column, enter the `IP address and mask`{.action} of the active interface on your gateway **ovh-T1-gw** and click `SET DHCP CONFIG`{.action}.
 
 ![04 Configure DHCP fo VLAN SEGMENT 02](images/04-configure-dhcp-for-vlan-segment02.png){.thumbnail} 
 
@@ -142,7 +138,7 @@ Leave `Local DHCP Server`{.action} in **DHCP Type**, click the `three dots`{.act
 Enter this information :
 
 * **Name**: Like `DHCP-VLAN100`.
-* **Server IP Address** : IP address of DHCP server `192.168.100.251/24`.
+* **Server IP Address** : IP address of DHCP server `192.168.100.253/24`.
 
 Then select your `Edge Cluster`{.action} and click `SAVE`{.action}.
 
@@ -150,7 +146,7 @@ Then select your `Edge Cluster`{.action} and click `SAVE`{.action}.
 
 Verify that the profile is present in **DHCP Profile** and enter this information :
 
-* **DHCP Server** : DHCP server address `192.168.100.251/24`.
+* **DHCP Server** : DHCP server address `192.168.100.253/24`.
 * **Etendue** : DHCP Server Scope `192.168.100.10-192.168.100.200`.
 * **DNS Servers** : OVHcloud DNS server IP address `213.186.33.99`.
 

@@ -119,7 +119,7 @@ Pour pouvoir avoir un serveur DHCP sur ce segment nous allons créer une configu
 Si vous n'avez pas de segment de type de VLAN, aidez-vous du guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/) pour le crééer avec ces paramètres :
 
 * **Sous-réseau du VLAN** : 192.168.100.0/24.
-* **Gateway and interface IP address** : 192.168.100.254/24.
+* **Adresse IP de la passerelle et de l'interface** : 192.168.100.254/24.
 
 Allez sur l'onglet `Networking`{.action}, cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity** ensuite cliquez sur les  `trois petits points`{.action} à gauche de votre segment de type VLAN et choisissez `Edit`{.action} dans le menu.
 
@@ -136,7 +136,7 @@ Laissez `Local DHCP Server`{.action} dans **DHCP Type**, cliquez sur les `trois 
 Saisissez ces informations :
 
 * **Name** : Comme `DHCP-VLAN100`.
-* **Server IP Address** : Adresse IP du serveur DHCP `192.168.100.251/24`.
+* **Server IP Address** : Adresse IP du serveur DHCP `192.168.100.253/24`.
 
 Ensuite sélectionnez votre `Edge Cluster`{.action} et cliquez sur `SAVE`{.action}.
 
@@ -144,7 +144,7 @@ Ensuite sélectionnez votre `Edge Cluster`{.action} et cliquez sur `SAVE`{.actio
 
 Vérifiez que dans **DHCP Profile** le profil est bien présent et saisissez ces informations :
 
-* **DHCP Server** : adresse IP du serveur DHCP `192.168.100.251/24`.
+* **DHCP Server** : adresse IP du serveur DHCP `192.168.100.253/24`.
 * **DHCP Range** : Etendue du serveur DHCP `192.168.100.10-192.168.100.200`.
 * **DNS Servers** : Adresse IP du serveur DNS OVHcloud `213.186.33.99`.
 
