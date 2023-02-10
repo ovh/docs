@@ -3,6 +3,7 @@ title: 'Zmiana hasła root na serwerze dedykowanym'
 slug: zmiana-hasla-root-na-serwerze-dedykowanym-linux
 excerpt: 'Dowiedz się, jak zmienić hasło root do serwera dedykowanego'
 section: 'Diagnostyka i tryb Rescue'
+updated: 2021-02-16
 ---
 
 > [!primary]

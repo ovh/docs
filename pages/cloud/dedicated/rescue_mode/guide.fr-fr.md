@@ -3,6 +3,7 @@ title: 'Activer et utiliser le mode rescue'
 slug: ovh-rescue
 excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
+updated: 2023-02-07
 ---
 
 **Dernière mise à jour le 07/02/2023**

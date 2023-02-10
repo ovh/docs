@@ -4,6 +4,7 @@ slug: ssl-certificate-cdn
 excerpt: 'Find out how to add an SSL certificate on the CDN'
 section: 'Getting started'
 order: 4
+updated: 2018-02-22
 ---
 
 **Last updated 22nd February 2018**

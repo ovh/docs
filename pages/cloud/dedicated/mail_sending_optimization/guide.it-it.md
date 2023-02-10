@@ -3,6 +3,7 @@ title: Ottimizza l'invio delle email
 excerpt: Scopri come inviare email limitando il rischio di spam
 slug: ottimiza-invio-email
 section: Utilizzo avanzato
+updated: 2022-12-20
 ---
 
 > [!primary]

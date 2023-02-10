@@ -4,6 +4,7 @@ title: 'Hardware diagnostics'
 slug: hardware-diagnostics
 excerpt: 'Ontdek hoe u hardwarestoringen op uw server kunt diagnosticeren'
 section: Veiligheid
+updated: 2022-12-15
 ---
 
 **Laatste update 09-13-2018**

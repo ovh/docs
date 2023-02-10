@@ -3,6 +3,7 @@ title: Konfiguracja ramek Jumbo w vRacku
 slug: 'network-jumbo'
 excerpt: Dowiedz się, jak konfigurować ramki Jumbo w vRacku
 section: 'vRack'
+updated: 2020-08-17
 ---
 
 **Ostatnia aktualizacja z dnia 28-08-2020**

@@ -3,6 +3,7 @@ title: "Korzystanie z Hyper-V z adresów Additional IP w sieci vRack"
 excerpt: "Dowiedz się, jak skonfigurować wirtualną maszynę z Additional IP i Hyper-V w sieci vRack"
 slug: ipfo-vrack-hyperv
 section: vRack 
+updated: 2021-02-25
 ---
 
 > [!primary]

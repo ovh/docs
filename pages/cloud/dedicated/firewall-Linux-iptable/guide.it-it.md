@@ -4,6 +4,7 @@ excerpt: Scopri come proteggere un server con iptables
 slug: firewall-iptables
 section: Sicurezza
 order: 01
+updated: 2022-10-18
 ---
 
 > [!primary]

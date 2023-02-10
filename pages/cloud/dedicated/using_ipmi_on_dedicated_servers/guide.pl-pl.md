@@ -4,6 +4,7 @@ slug: uzywanie-ipmi-serwery-dedykowane
 excerpt: 'IPMI pozwala na połączenie się z serwerem bez korzystania z zewnętrznego oprogramowania'
 section: 'Pierwsze kroki'
 order: 4
+updated: 2022-11-16
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Backup Storage auf einem Dedicated Server verwenden'
 slug: dienste-storage-backup
 excerpt: 'Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz aktivieren und auf diesen zugreifen'
 section: Server Management
+updated: 2021-03-15
 ---
 
 > [!primary]

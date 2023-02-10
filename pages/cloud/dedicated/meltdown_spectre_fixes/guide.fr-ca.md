@@ -3,6 +3,7 @@ title: Information about Meltdown and Spectre vulnerability fixes
 slug: information-about-meltdown-spectre-vulnerability-fixes
 section: Meltdown and Spectre informations
 fullwidth: true
+updated: 2022-11-16
 ---
 
 <div id="main-content" class="wiki-content table-meltown-spectre">

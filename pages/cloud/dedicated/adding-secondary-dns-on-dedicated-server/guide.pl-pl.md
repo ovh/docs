@@ -3,6 +3,7 @@ title: 'Tworzenie DNS secondary na serwerze dedykowanym'
 slug: dodawanie-domeny-secondary-dns
 excerpt: 'Dowiedz się, jak utworzyć DNS secondary dla Twojego serwera dedykowanego OVHcloud'
 section: 'Poziom zaawansowany'
+updated: 2021-01-08
 ---
 
 > [!primary]

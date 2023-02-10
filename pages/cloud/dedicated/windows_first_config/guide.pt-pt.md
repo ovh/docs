@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/vps/windows-first-config/'
 excerpt: Saiba como ativar a ligação à Área de Trabalho remota e a resposta ICMP
 section: Introdução
+updated: 2022-01-18
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Come riavviare il tuo server dedicato in modalità Rescue'
 slug: rescue_mode
 legacy_guide_number: g920
 section: 'Diagnostica e modalità Rescue'
+updated: 2023-02-07
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Remplacer un disque défectueux
 slug: remplacement-disque
 excerpt: Découvrez comment identifier un disque défectueux et demander son remplacement
 section: RAID & disques
+updated: 2018-06-21
 ---
 
 **Dernière mise à jour le 2018/05/25**

@@ -3,6 +3,7 @@ title: 'Introduction au SSH'
 slug: ssh-introduction
 excerpt: "Découvrez comment utiliser les connexions SSH pour accéder à votre serveur"
 section: 'Premiers pas'
+updated: 2022-06-08
 ---
 
 **Dernière mise à jour le 08/06/2022**

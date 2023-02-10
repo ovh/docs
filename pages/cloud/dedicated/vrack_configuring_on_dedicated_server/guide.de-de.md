@@ -4,6 +4,7 @@ slug: mehrere-dedizierte-server-im-vrack-konfigurieren
 excerpt: 'Erfahren Sie hier, wie Sie ein vRack auf zwei oder mehr Servern einrichten'
 section: vRack
 order: 01
+updated: 2022-05-02
 ---
 
 > [!primary]

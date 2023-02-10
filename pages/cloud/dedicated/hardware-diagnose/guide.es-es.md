@@ -3,6 +3,7 @@ title: 'Diagnosticar fallos de hardware en un servidor dedicado'
 slug: diagnostico-fallos-hardware-servidor-dedicado
 excerpt: 'Cómo utilizar las herramientas de diagnóstico para identificar fallos de hardware en el servidor'
 section: 'Diagnóstico y modo de rescate'
+updated: 2022-12-15
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Diagnosticare problemi hardware su un server dedicato'
 slug: diagnostica-problemi-hardware-server-dedicato
 excerpt: 'Scopri come utilizzare gli strumenti di diagnostica per identificare malfunzionamenti hardware sul tuo server'
 section: Sicurezza
+updated: 2022-12-15
 ---
 
 > [!primary]

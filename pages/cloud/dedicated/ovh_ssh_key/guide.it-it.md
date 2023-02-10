@@ -3,6 +3,7 @@ title: Installare la chiave SSH OVHcloud
 slug: chiave-ssh-ovh
 excerpt: Come configurare una chiave SSH OVHcloud per consentire l'intervento dei nostri amministratori
 section: SSH e chiave SSH
+updated: 2018-02-12
 ---
 
 **Ultimo aggiornamento: 12/04/2021**

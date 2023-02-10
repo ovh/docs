@@ -3,6 +3,7 @@ title: Determinar se a funcionalidade dos MAC virtuais é suportada por um servi
 slug: network-support-virtual-mac
 excerpt: Saiba como determinar se a funcionalidade dos MAC virtuais é suportada por um servidor dedicado através da API OVHcloud
 section: Redes & IP
+updated: 2021-12-09
 ---
 
 > [!primary]

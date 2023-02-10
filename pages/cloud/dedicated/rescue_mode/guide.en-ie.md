@@ -4,6 +4,7 @@ slug: rescue_mode
 excerpt: 'Find out how to activate and use rescue mode on a dedicated server'
 section: 'Diagnostic and rescue mode'
 order: 1
+updated: 2023-02-07
 ---
 
 **Last updated 7th February 2023**

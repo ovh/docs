@@ -3,6 +3,7 @@ title: 'Configuring IP aliasing'
 slug: network-ipaliasing
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
 section: 'Network management'
+updated: 2022-12-07
 ---
 
 **Last updated 7th December 2022**

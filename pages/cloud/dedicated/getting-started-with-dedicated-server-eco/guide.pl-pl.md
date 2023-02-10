@@ -6,6 +6,7 @@ routes:
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego Kimsufi, So You Start lub Rise'
 section: 'Pierwsze kroki'
 order: 2
+updated: 2022-12-12
 ---
 
 > [!primary]

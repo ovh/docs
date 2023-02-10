@@ -3,6 +3,7 @@ title: Den Versand von E-Mails optimieren
 excerpt: Erfahren Sie hier, wie Sie das Spam-Risiko reduzieren, wenn Sie E-Mails versenden 
 slug: optimierung-von-e-mails
 section: Fortgeschrittene Nutzung
+updated: 2022-12-20
 ---
 
 > [!primary]

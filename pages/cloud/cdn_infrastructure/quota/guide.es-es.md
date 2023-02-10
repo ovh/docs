@@ -4,6 +4,7 @@ slug: limite-trafico-cdn
 excerpt: 'Cómo funcionan los límites de tráfico en la solución CDN de OVH'
 section: 'Primeros pasos'
 order: 3
+updated: 2018-02-22
 ---
 
 **Última actualización: 30/11/2018**

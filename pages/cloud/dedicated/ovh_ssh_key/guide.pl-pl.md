@@ -3,6 +3,7 @@ title: Instalacja klucza SSH OVHcloud
 slug: ovh-klucz-ssh
 excerpt: Przewodnik opisuje instalację klucza SSH OVHcloud umożliwiającego naszym administratorom dokonywanie interwencji oraz jego dezaktywację
 section: SSH i klucz SSH
+updated: 2018-02-12
 ---
 
 **Ostatnia aktualizacja dnia 2021-04-12**

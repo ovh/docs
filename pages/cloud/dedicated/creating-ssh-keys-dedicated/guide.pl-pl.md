@@ -4,6 +4,7 @@ slug: tworzenie-klucze-ssh-dedykowane
 excerpt: 'Dowiedz się, jak utworzyć klucze SSH w celu bezpiecznego łączenia się z serwerem dedykowanym'
 section: 'Pierwsze kroki'
 order: 3
+updated: 2022-03-31
 ---
 
 **Ostatnia aktualizacja: 01-04-2022**

@@ -3,6 +3,7 @@ title: 'Cambiar la contraseña root en un servidor dedicado'
 slug: cambiar-contrasena-root-linux-en-servidor-dedicado
 excerpt: 'Cómo cambiar la contraseña root de un servidor dedicado'
 section: 'Diagnóstico y modo de rescate'
+updated: 2021-02-16
 ---
 
 > [!primary]

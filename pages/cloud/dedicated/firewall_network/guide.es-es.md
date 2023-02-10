@@ -3,6 +3,7 @@ title: 'Configurar el firewall de red'
 slug: firewall-de-red
 excerpt: 'Cómo configurar el Network Firewall'
 section: 'Red e IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

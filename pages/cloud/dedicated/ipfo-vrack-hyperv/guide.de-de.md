@@ -3,6 +3,7 @@ title: "Hyper-V mit Additional IPs in einem vRack verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Hyper-V mit Additional IPs in einem vRack konfigurieren"
 slug: ipfo-vrack-hyperv
 section: vRack 
+updated: 2021-02-25
 ---
 
 > [!primary]

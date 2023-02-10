@@ -4,6 +4,7 @@ slug: ola-w2k19
 excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Windows Server 2019 Server aktivieren'
 section: 'Fortgeschrittene Nutzung'
 order: 4
+updated: 2021-03-25
 ---
 
 **Letzte Aktualisierung am 25.03.2021**

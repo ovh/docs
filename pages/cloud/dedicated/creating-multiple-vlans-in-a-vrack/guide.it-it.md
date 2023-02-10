@@ -3,6 +3,7 @@ title: 'Creare due o più VLAN nella vRack'
 slug: creare-vlan-vrack
 excerpt: 'Scopri come creare molteplici VLAN nella vRack'
 section: vRack
+updated: 2022-02-24
 ---
 
 **Ultimo aggiornamento: 24/02/2022**

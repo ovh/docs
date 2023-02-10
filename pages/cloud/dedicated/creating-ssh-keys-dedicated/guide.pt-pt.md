@@ -4,6 +4,7 @@ slug: criar-chaves-ssh-dedicadas
 excerpt: 'Saiba como criar chaves SSH para estabelecer uma ligação segura ao seu servidor dedicado'
 section: 'SSH e chave SSH'
 order: 3
+updated: 2022-03-31
 ---
 
 **Última atualização: 01/04/2022**

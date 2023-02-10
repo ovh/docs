@@ -3,6 +3,7 @@ title: Quelles sont les adresses IP du monitoring OVHcloud ?
 slug: monitoring-ip-ovh
 excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall, afin que le monitoring OVHcloud continue de fonctionner sur votre serveur.
 section: Réseau & IP
+updated: 2022-12-13
 ---
 
 **Dernière mise à jour le 13/12/2022**

@@ -4,6 +4,7 @@ slug: iniziare-a-utilizzare-server-dedicato
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato
 section: 'Per iniziare'
 order: 1
+updated: 2022-12-12
 ---
 
 > [!primary]

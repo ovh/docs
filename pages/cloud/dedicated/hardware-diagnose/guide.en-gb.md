@@ -3,6 +3,7 @@ title: 'Hardware diagnostics'
 slug: hardware-diagnostics
 excerpt: 'Find out how to use diagnostic tools to identify hardware failures on your server'
 section: 'Diagnostics and rescue mode'
+updated: 2022-12-15
 ---
 
 **Last updated 15th December 2022**

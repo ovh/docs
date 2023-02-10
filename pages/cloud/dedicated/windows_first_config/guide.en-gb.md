@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/vps/windows-first-config/'
 excerpt: 'Find out how to enable Remote Desktop and ICMP'
 section: 'Getting started'
+updated: 2022-01-18
 ---
 
 **Last updated 18th January 2022**
