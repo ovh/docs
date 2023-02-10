@@ -3,7 +3,7 @@ title: "Moja strona jest powolny. Co robić? "
 excerpt: "Dowiedz się, skąd pochodzą opóźnienia Twojej strony WWW i jak je rozwiązać"
 slug: slow-website-fix
 section: Diagnostyka
-order: 05
+order: 09
 ---
 
 **Ostatnia aktualizacja z dnia 17-11-2022**
