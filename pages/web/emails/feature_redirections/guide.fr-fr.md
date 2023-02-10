@@ -7,6 +7,12 @@ section: 'Fonctionnalités des adresses e-mail'
 order: 01
 ---
 
+<style>
+.640pxwidth{
+  max-width:640px !important;
+}
+</style>
+
 **Dernière mise à jour le 01/02/2023**
 
 ## Objectif
@@ -112,7 +118,7 @@ Suivez les étapes suivantes :
 
 > [!primary]
 > Pour appliquer une **redirection simple** ([schéma 1](#diagram) au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur **Déplacer, copier ou supprimer** et enfin **supprimer le message**. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.
-> ![emails](images/emails-all-07.png){.thumbnail}
+> ![emails](images/emails-all-07.png){.thumbnail}{.640pxwidth}
 
 ### Créer un alias <a name="alias"></a>
 
