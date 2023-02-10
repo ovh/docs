@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Last updated 06th February 2023**
+**Last updated 10th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -83,7 +83,7 @@ The diagram below shows the network topology from top to bottom:
 - The two physical interfaces that allow redundancy of internet access in case of failure (Both interfaces use public IP addresses that are not usable for client configuration).
 - The North-South gateway (**ovh-t0-gw**) that provides the link between The physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
 - The connection between the **ovh-t0-gw** and **ovh-t1-gw** gateways is via IP addresses reserved for this purpose.
-- The East-West gateway (**ovh-t1-gw**) that manages communications between the cluster’s internal networks (overlay segments).
+- The East-West gateway (**ovh-t1-gw**) that manages communications between the cluster’s internal networks (overlay segments). You can also make connections with VLANs on vRacks.
 -  **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this segment. You can find more information about segments in this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
@@ -93,7 +93,7 @@ This segment contains two pieces of information :
 * The virtual public IP address **HA VIP**.
 * The VLAN number used on your public network in your vSphere cluster.
 
-Connections through VLANs do not appear in the NSX-T network topology, you can see the addition on the diagram that shows the connection between the ovh-segment-nspublic segment and the ovh-T0-gw gateway through the two default interfaces.
+Connections through VLANs on the **ovh-t0-gw** gateway do not appear in the NSX-T network topology, even if it exists.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
@@ -126,7 +126,7 @@ You see the public virtual IP address that can be used in your **NSX-T** configu
 
 ### NAT Default Configuration Information
 
-A default SNAT configuration is applied, which allows Internet access from all networks connected to the gateway **ovh-T0-gw**, those connected through VLAN segment and those overlay from the gateway **ovh-T1-gw**.
+A default SNAT configuration is applied, which allows Internet access from all networks connected to the gateway **ovh-T0-gw**, those connected through VLAN segment and those overlay.
 
 From the `Networking`{.action} tab, click `NAT`{.action} to view the default configuration of NAT rules.
 

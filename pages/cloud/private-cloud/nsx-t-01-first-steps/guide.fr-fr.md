@@ -6,7 +6,7 @@ section: NSX-T
 order: 01
 ---
 
-**Dernière mise à jour le 06/02/2023**
+**Dernière mise à jour le 10/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -81,7 +81,7 @@ Le schéma ci-dessous représente la topologie réseau avec ces informations :
 - Les deux interfaces physiques qui permettent une redondance de l'accès Internet en cas de défaillance (Ces deux interfaces utilisent des adresses IP publiques qui ne sont pas utilisables pour la configuration client).
 - La passerelle Nord-Sud (**ovh-t0-gw**) qui assure la liaison entre Le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
 - La liaison entre les passerelles **ovh-t0-gw** et **ovh-t1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
-- La passerelle Est-Ouest (**ovh-t1-gw**) qui gère les communications entre les réseaux internes (segments de type overlay) du cluster.
+- La passerelle Est-Ouest (**ovh-t1-gw**) qui gère les communications entre les réseaux internes (segments de type overlay) du cluster. Il est aussi possible d'effectuer des connexions avec des VLAN sur des vRacks.
 - **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce segment. Vous trouverez plus d'informations concernant les segments dans ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management)
 
 
@@ -92,7 +92,7 @@ Ce segment contient deux informations :
 * L'adresse IP publique virtuelle **HA VIP**.
 * Le numéro VLAN utilisé sur votre réseau public de votre cluster vSphere.
 
-Les connexions au travers de VLAN n'apparaissent pas dans la topologie réseau de NSX-T, vous pouvez voir le rajout sur le diagramme qui montre la connexion entre le segment ovh-segment-nspublic et la passerelle ovh-T0-gw au travers des deux interfaces par défaut.
+Les connexions au travers de VLAN sur la passerelle **ovh-t0-gw** n'apparaissent pas dans la topologie réseau de NSX-T, même si elle existe.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Nous allons voir comment afficher les adresses IP virtuelles attachées à la pa
 Une seule adresse IP virtuelle est affectée lors de la livraison de NSX-T, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-t0-gw**.
 
 > ![Primary]
-> Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles, mais cette fonctionnalité devrait être bientôt disponible.
+> Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles sur la passerelle **ovh-t0-gw**, mais cette fonctionnalité devrait être bientôt disponible.
 > 
 
 Restez sur l'onglet `Networking`{.action} et cliquez à gauche sur `Tier-0 Gateways`{.action} dans la catégorie **Connectivity**.
@@ -124,7 +124,7 @@ Vous voyez l'adresse IP virtuelle publique qui est utilisable dans vos configura
 
 ### Information sur la configuration par défaut du NAT
 
-Une configuration SNAT par défaut est appliquée, ce qui permet l'accès Internet à partir de tous les réseaux connectés à la passerelle **ovh-T0-gw**, ceux qui sont reliés au travers de segment de type VLAN et ceux qui sont en overlay à partir de la passerelle **ovh-T1-gw**.
+Une configuration SNAT par défaut est appliquée, ce qui permet l'accès Internet à partir de tous les réseaux connectés à la passerelle **ovh-T0-gw**, ceux qui sont reliés au travers de segment de type VLAN et ceux qui sont en overlay. 
 
 A partir de l'onglet `Networking`{.action} cliquez sur `NAT`{.action} pour afficher la configuration par défaut des règles de NAT.
 
