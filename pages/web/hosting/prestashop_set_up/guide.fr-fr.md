@@ -30,6 +30,27 @@ Si vous avez opté pour l'installation du module Prestashop en 1-click, les info
 
 Si votre CMS a été installé manuellement, l'URL vous permettant d'accéder à cette interface sera votre nom de domaine, suivi du nom du dossier `admin` que vous trouverez en vous connectant sur votre serveur avec un client FTP (FileZilla).
 
+Une fois connecté, vous arrivez sur votre Dashbord :
+
+![Prestashop Dashboard](images/prestashop_set_up_1.png)
+
+Le menu sur la gauche comprend les éléments suivants :
+
+- **Tableau de bord**, vous permettant de revenir à la page d'accueil du back office
+- **Vendre**, regroupant les éléments tels que les commandes, le catalogue de produits et les clients
+- **Personnaliser**, intégrant la possibilité d'ajouter des modules, de modifier l'apparence du site, gérer les moyens de paiement et les modes de livraison
+- **Configurer**, concerne tous les réglages simples et avancés possibles sur l'outil.
+
+![Dashboard left menu](images/prestashop_set_up_2.png)
+
+### Ajouter des catégories et des produits
+
+Dans le menu de gauche, cliquez sur **Vendre**, puis **Catégories** :
+
+![Menu Sell, categories](images/prestashop_set_up_3.png)
+
+
+
 
 
 ## Aller plus loin
