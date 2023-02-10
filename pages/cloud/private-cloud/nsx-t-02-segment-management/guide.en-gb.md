@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Last updated 06th February 2023**
+**Last updated 10th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -37,6 +37,12 @@ In an NSX-T solution a segment is a virtual level 2 domain (previously named log
 * **Overlay-backed segments**: the connection is made using a software layer that establishes tunnels between hosts and virtual machines. When configuring a segment of this type, it is mandatory to add an address in a subnet to allow communication outside that segment. They must be connected to the gateway **ovh-T1-gw**.
 
 The segments are linked to transport zones that are predefined by OVHcloud.
+
+* **system-owned-vlan-transport-zone-for-rtep | VLAN** : Area for extended RTEP networks.
+* **system-owned-vlan-transport-zone-for-evpn | VLAN** : Zone for VPNs.
+* **ovh-tz-overlay | VLAN** : Zone for Overlay segments behind the **ovh-t1-gw** gateway.
+* **ovh-tz-public | VLAN** : Area connected to the public network on a single VLAN provided by OVHcloud.
+* **ovh-tz-vrack | VLAN** : Area connected to the OVHcloud vRack where it is possible to create segments with a particular VLAN.
 
 ## Instructions
 
@@ -192,7 +198,7 @@ Then click `SAVE`{.action} to confirm the creation of the interface on **ovh-t0-
 
 The configuration is complete if you have two active interfaces on VLAN 100, it is now possible to route outside this segment. on one of the two created addresses.
 
-### Affectation d'un segment de type VLAN à une machine virtuelle
+### Assigning a VLAN Segment to a Virtual Machine
 
 Go to your vSphere interface and `right-click`{.action} on your virtual machine and choose `Change settings`{.action}.
 

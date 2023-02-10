@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Dernière mise à jour le 06/02/2023**
+**Dernière mise à jour le 10/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -37,6 +37,13 @@ Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé pr
 * **Overlay-backed segments** : La connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment. Ils doivent être connectés à la passerelle **ovh-T1-gw**.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
+
+* **system-owned-vlan-transport-zone-for-rtep | VLAN** : Zone prévue pour les réseaux étendues RTEP
+* **system-owned-vlan-transport-zone-for-evpn | VLAN** : Zone prévue pour les VPN.
+* **ovh-tz-overlay | VLAN** : Zone pour les segments de type Overlay derrière la passerelle **ovh-t1-gw**
+* **ovh-tz-public | VLAN** : Zone connectée au réseau public sur un VLAN unique fourni par OVHcloud.
+* **ovh-tz-vrack | VLAN** : Zone reliée au vRACK Ovhcloud sur lequel il est possible de créer des segments avec un VLAN particulier.
+
 
 ## En pratique
 
@@ -198,7 +205,7 @@ Cliquez sur `OK`{.action} pour valider les changements.
 
 ### Affichage d'une topologie réseau avec des segments en overlay et d'autres segments sur des VLAN
 
-Revenez dans l'interface NSX-T, allez sur l'onglet `Networking`{.action}, et cliquez à gauche sur `Network Topology`{.action} pour afficher un vue graphique du réseau. Dans la topologie réseau de NSX-T les liaisons sur le VLAN ne sont pas affichées mais elles existent bien comme indiqué en orange sur le schéma.
+Revenez dans l'interface NSX-T, allez sur l'onglet `Networking`{.action}, et cliquez à gauche sur `Network Topology`{.action} pour afficher une vue graphique du réseau. Vous verrez les réseaux de type Overlay et ceux de type VLAN connectées au travers d'une INTERFACE sur **ovh-t1-gw**.
 
 ![09 display network topology vlan overlay01](images/09-display-network-topology-vlan-overlay01.png){.thumbnail}
 
