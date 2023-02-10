@@ -4,6 +4,7 @@ slug: ola-centos7
 excerpt: 'Die OVHcloud Link Aggregation auf Ihrem CentOS 7-Server aktivieren'
 section: 'Fortgeschrittene Nutzung'
 order: 3
+updated: 2021-03-25
 ---
 
 **Letzte Aktualisierung am 25.03.2021**

@@ -3,6 +3,7 @@ title: Utiliser la fonctionnalité Bring Your Own Image
 excerpt: Apprenez à déployer vos images grâce à Bring Your Own Image
 slug: bringyourownimage
 section: Utilisation avancée
+updated: 2022-11-25
 ---
 
 **Dernière mise à jour le 25/11/2022**

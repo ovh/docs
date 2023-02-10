@@ -4,6 +4,7 @@ slug: ola-w2k19
 excerpt: 'Activer OVHcloud Link Aggregation sur votre serveur « Windows Server 2019 »'
 section: 'Utilisation avancée'
 order: 4
+updated: 2021-03-25
 ---
 
 **Dernière mise à jour le 23/03/2021.**

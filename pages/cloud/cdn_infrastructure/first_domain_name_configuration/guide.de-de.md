@@ -4,6 +4,7 @@ slug: erste-domain-konfiguration-im-cdn
 excerpt: 'Hier erfahren Sie, wie Sie eine Domain im OVH CDN konfigurieren.'
 section: 'Erste Schritte'
 order: 2
+updated: 2018-02-21
 ---
 
 **Stand 24.04.2019**

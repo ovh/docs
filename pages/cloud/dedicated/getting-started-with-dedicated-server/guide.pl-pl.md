@@ -4,6 +4,7 @@ slug: pierwsze-kroki-z-serwerem-dedykowanym
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego'
 section: 'Pierwsze kroki'
 order: 1
+updated: 2022-12-12
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: quota-cdn
 excerpt: 'Find out how quota works on the CDN'
 section: 'Getting started'
 order: 3
+updated: 2018-02-22
 ---
 
 **Last updated 22nd February 2018**

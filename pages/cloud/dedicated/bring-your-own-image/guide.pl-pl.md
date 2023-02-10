@@ -3,6 +3,7 @@ title: Korzystanie z funkcji Bring Your Own Image
 excerpt: Dowiedz się, jak tworzyć obrazy za pomocą Bring Your Own Image
 slug: bringyourownimage
 section: Poziom zaawansowany
+updated: 2022-11-25
 ---
 
 **Ostatnia aktualizacja z dnia 25-11-2022**

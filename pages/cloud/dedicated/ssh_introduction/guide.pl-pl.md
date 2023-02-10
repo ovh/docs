@@ -3,6 +3,7 @@ title: Wprowadzenie do SSH
 slug: ssh-wprowadzenie
 excerpt: "Dowiedz się, jak korzystać z połączeń SSH, aby uzyskać dostęp do serwera"
 section: Pierwsze kroki
+updated: 2022-06-08
 ---
 
 > [!primary]

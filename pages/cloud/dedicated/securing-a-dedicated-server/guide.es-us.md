@@ -4,6 +4,7 @@ slug: seguridad-de-un-servidor-dedicado
 excerpt: 'Medidas de seguridad para proteger un servidor dedicado'
 section: 'Primeros pasos'
 order: 2
+updated: 2018-06-20
 ---
 
 **Última actualización: 31/08/2018**

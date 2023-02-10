@@ -3,6 +3,7 @@ title: 'Optimización del envío de correos electrónicos'
 excerpt: 'Averigüe cómo enviar correos electrónicos y limite el riesgo de que se marquen como spam'
 slug: optimizar-envio-correo-electronico
 section: Uso avanzado
+updated: 2022-12-20
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: "Navigationshilfe für Ihr OVHcloud Kundencenter"
 slug: get-familiar-with-ovhcloud-control-panel
 section: So you Start & Kimsufi Kunden
 order: 1
+updated: 2023-01-05
 ---
 
 > [!primary]

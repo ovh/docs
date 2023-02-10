@@ -3,6 +3,7 @@ title: Replacing a defective disk
 slug: disk-replacement
 excerpt: Find out how to identify a defective disk, and request a replacement
 section: Server Management
+updated: 2018-06-21
 ---
 
 **Last updated 21st June 2018**

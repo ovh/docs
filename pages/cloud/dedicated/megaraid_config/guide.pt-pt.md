@@ -3,6 +3,7 @@ title: Configurar o seu MegaRAID em RAID 0
 slug: using-the-maximum-amount-of-disk-space
 excerpt: "Descubra como configurar os discos do seu servidor em RAID 0, de forma a explorar o máximo de espaço utilizável"
 section: RAID e discos
+updated: 2022-07-08
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Welche IP-Adressen nutzt das OVHcloud Monitoring?
 slug: monitoring-ip-ovh
 excerpt: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
 section: Netzwerk & IP
+updated: 2022-12-13
 ---
 
 > [!primary]

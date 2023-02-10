@@ -4,6 +4,7 @@ slug: ola-manager
 excerpt: 'Découvrez comment activer l’agrégation de liens OVHcloud dans votre espace client.'
 section: 'Utilisation avancée'
 order: 1
+updated: 2022-05-18
 ---
 
 **Dernière mise à jour le 18/05/2022**

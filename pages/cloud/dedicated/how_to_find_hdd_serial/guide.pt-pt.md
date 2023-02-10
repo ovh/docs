@@ -3,6 +3,7 @@ title: 'Obter o número de série de um disco rígido'
 slug: obter-numero-serie-disco
 excerpt: 'Saiba como obter o número de série de um disco rígido para proceder à sua substituição'
 section: 'RAID e discos'
+updated: 2018-08-21
 ---
 
 **Última atualização: 24/07/2019**

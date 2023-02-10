@@ -3,6 +3,7 @@ title: 'Daten via SFTP auf einem Dedicated Server ablegen oder herunterladen'
 slug: daten-via-sftp-exportieren-und-ablegen
 excerpt: 'Erfahren Sie hier, wie Sie SFTP zur Datenübertragung verwenden'
 section: Tutorial
+updated: 2021-05-18
 ---
 
 > [!primary]

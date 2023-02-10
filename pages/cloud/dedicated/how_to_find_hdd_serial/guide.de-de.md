@@ -3,6 +3,7 @@ title: 'Seriennummer einer Festplatte ermitteln'
 slug: find-disk-serial-number
 excerpt: 'Hier erfahren Sie, wie Sie die Seriennummer einer Festplatte ermitteln, um diese auszutauschen.'
 section: 'Diagnose & Rescue Modus'
+updated: 2018-08-21
 ---
 
 **Letzte Aktualisierung am 02.07.2019**

@@ -3,6 +3,7 @@ title: Determinare se la funzionalità dei MAC virtuali è supportata su un serv
 slug: network-support-virtual-mac
 excerpt: "Scopri come determinare se la funzionalità dei MAC virtuali è supportata su un server dedicato tramite l'API OVHcloud"
 section: Rete e IP
+updated: 2021-12-09
 ---
 
 > [!primary]

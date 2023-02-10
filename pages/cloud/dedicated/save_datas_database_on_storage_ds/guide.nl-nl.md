@@ -4,6 +4,7 @@ title: 'Backup van data en databases op een storage server'
 slug: backup-data-database-opslagserver
 excerpt: 'Beveilig uw data in 5 stappen'
 section: Handleiding
+updated: 2022-02-09
 ---
 
 ## Introductie 

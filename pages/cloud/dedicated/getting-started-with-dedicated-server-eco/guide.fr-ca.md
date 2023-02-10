@@ -6,6 +6,7 @@ routes:
 excerpt: 'Découvrez comment procéder après la livraison de votre serveur dédié Kimsufi, So You Start ou Rise'
 section: 'Premiers pas'
 order: 2
+updated: 2022-12-12
 ---
 
 **Dernière mise à jour le 12/12/2022**

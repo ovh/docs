@@ -4,6 +4,7 @@ slug: esxi-network-hg-scale
 excerpt: 'Dowiedz się, jak skonfigurować sieć na ESXi w ofercie High Grade & SCALE'
 section: 'Poziom zaawansowany'
 order: 6
+updated: 2022-05-09
 ---
 
 > [!primary]

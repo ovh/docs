@@ -3,6 +3,7 @@ title: Otimizar o envio de e-mails
 excerpt: Saiba como enviar e-mails limitando o risco de spam
 slug: otimizar-enviar-emails
 section: Utilização avançada
+updated: 2022-12-20
 ---
 
 > [!primary]

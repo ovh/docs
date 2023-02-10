@@ -4,6 +4,7 @@ slug: diagnostic-dysfonctionnements-materiels-serveur-dedie
 excerpt: 'Découvrez comment utiliser les outils de diagnostic pour identifier des dysfonctionnements matériels sur votre serveur'
 section: Sécurité
 order: 03
+updated: 2022-12-15
 ---
 
 **Dernière mise à jour le 15/12/2022**

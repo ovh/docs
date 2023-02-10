@@ -4,6 +4,7 @@ slug: ola-debian9
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation na serwerze Debian 9'
 section: 'Poziom zaawansowany'
 order: 2
+updated: 2022-01-07
 ---
 
 **Ostatnia aktualizacja z dnia 07/01/2022**

@@ -4,6 +4,7 @@ slug: dedicated-servers-replacing-lost-ssh-key-pair
 excerpt: Cómo recuperar el acceso SSH a un servidor dedicado
 section: 'Diagnóstico y modo de rescate'
 order: 2
+updated: 2023-02-06
 ---
 
 > [!primary]

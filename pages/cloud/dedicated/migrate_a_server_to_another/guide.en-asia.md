@@ -4,6 +4,7 @@ slug: migrate-data-from-one-dedicated-server-to-another
 excerpt: Find out how to migrate data from one dedicated server to another
 section: Getting started
 order: 5
+updated: 2021-09-16
 ---
 
 **Last updated 16th September 2021**

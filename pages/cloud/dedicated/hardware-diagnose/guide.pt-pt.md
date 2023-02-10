@@ -3,6 +3,7 @@ title: 'Diagnosticar avarias materiais num servidor dedicado'
 slug: diagnostico-avarias-materiais-servidor-dedicado
 excerpt: 'Saiba como utilizar as ferramentas de diagnóstico para identificar avarias materiais no seu servidor'
 section: Segurança
+updated: 2022-12-15
 ---
 
 > [!primary]

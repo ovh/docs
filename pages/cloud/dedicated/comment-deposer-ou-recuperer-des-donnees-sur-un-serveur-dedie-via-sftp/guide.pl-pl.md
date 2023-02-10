@@ -3,6 +3,7 @@ title: 'Przesyłanie i pobieranie danych z serwera dedykowanego za pośrednictwe
 slug: przesylanie-i-pobieranie-danych-sftp
 excerpt: 'Dowiedz się, jak przesłać dane z serwera dedykowanego na komputer lokalny i na odwrót'
 section: Tutorial
+updated: 2021-05-18
 ---
 
 > [!primary]

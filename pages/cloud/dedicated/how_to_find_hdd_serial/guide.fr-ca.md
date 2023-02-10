@@ -3,6 +3,7 @@ title: "Récupérer le numéro de série d'un disque dur"
 slug: find-disk-serial-number
 excerpt: "Découvrez comment récupérer le numéro de série d'un disque dur pour remplacer celui-ci"
 section: 'RAID & disques'
+updated: 2018-08-21
 ---
 
 **Dernière mise à jour le 22/05/2019**

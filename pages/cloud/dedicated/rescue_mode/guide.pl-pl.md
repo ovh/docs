@@ -3,6 +3,7 @@ title: 'Uruchamianie i korzystanie z trybu Rescue'
 slug: ovh-rescue
 excerpt: 'Dowiedz się, jak uruchomić i korzystać z trybu Rescue na serwerze dedykowanym'
 section: 'Diagnostyka i tryb Rescue'
+updated: 2023-02-07
 ---
 
 > [!primary]

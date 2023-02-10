@@ -4,6 +4,7 @@ slug: root-password
 excerpt: Find out how to change the root or admin password of a dedicated server
 section: Server management
 order: 1
+updated: 2021-02-16
 ---
 
 **Last updated 16th February 2021**

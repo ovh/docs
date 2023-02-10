@@ -4,6 +4,7 @@ slug: changer-mot-passe-admin-windows
 excerpt: 'Découvrez comment modifier le mot de passe administrateur sur un serveur dédié Windows'
 section: 'Diagnostic et mode Rescue'
 order: 2
+updated: 2021-01-12
 ---
 
 **Dernière mise à jour le 16 décembre 2020**

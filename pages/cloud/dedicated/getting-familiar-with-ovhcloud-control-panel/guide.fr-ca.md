@@ -4,6 +4,7 @@ excerpt: "Apprenez à naviguer dans l'espace client OVHcloud"
 slug: se-familiariser-avec-lespace-client-ovhcloud
 section: Clients So you Start & Kimsufi
 order: 1
+updated: 2023-01-05
 ---
 
 **Dernière mise à jour le 05/01/2023**
