@@ -74,7 +74,7 @@ Nous vous conseillons également de suivre les [informations officielles du CERT
 
 Nous vous invitons à suivre les [recommandations du CERT-FR](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/).
 
-### Est-ce qu'il y a un rique d'exfiltration de données ?
+### Est-ce qu'il y a un risque d'exfiltration de données ?
 
 Pas à notre connaissance sur cette vague d'attaque.
 
