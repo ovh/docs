@@ -35,6 +35,8 @@ Il est possible de créer de nouvelles passerelles de type **Tier-1 Gateways** e
 
 OVHcloud fourni un bloc de 8 adresses IP publiques, certaines sont réservées. L'adresse **HA VIP** est préconfigurée, elle est utilisée pour le SNAT par défaut sur les futurs segments internes.
 
+Par défaut les routes ne sont pas activés les segments créés derrière la passerelle **ovh-T1-gw** peuvent communiquer entre eux mais pas au-delà.
+
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
@@ -132,7 +134,27 @@ La règle par défaut pour le **SNAT** montre que l'on utilise l'adresse IP virt
 
 ![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
 
+### Activation de la route sur tous les segments connectés à votre passerelle **ovh-T1-gw**
+
+Par défaut les segments qui se trouvent derrière la passerelle  **ovh-T1-gw** n'ont pas le routage activé sauf avec un autre segment connecté sur cette passerelle. Nous allons voir comment faire pour l'activer si nécessaire.
+
+A partir de l'onglet **Networking** cliquez sur `Tier-1 Gateways`{.action} Ensuite cliquez sur les `points de suspensions`{.action} à gauche de la passerelle **ovh-T1-gw** et choisissez dans le menu `Edit`{.action}.
+
+![Add route on ovh T1 01](images/05-activate-route-on-ovh-t1-gw01.png){.thumbnail}
+
+Cliquez sur la `flèche`{.action} à gauche de **Route Advertisement** et cliquez sur le `bouton`{.action} marche à droite de **All Connected Segments & Service Ports**. Ensuite cliquez sur `SAVE`{.action}.
+
+![Add route on ovh T1 02](images/05-activate-route-on-ovh-t1-gw02.png){.thumbnail}
+
+Cliquez sur `CLOSE EDITING`{.action}.
+
+![Add route on ovh T1 03](images/05-activate-route-on-ovh-t1-gw03.png){.thumbnail}
+
+Maintenant le routage est activé sur les segments.
+
 Vous venez de voir la configuration par défaut. Vous pouvez consultez les autres guides OVHcloud concernant NSX-T pour créer des segments, gérer le DHCP, faire de la redirection de port en DNAT, du Load balancing, du VPN, etc...
+
+
 
 ## Aller plus loin
 
