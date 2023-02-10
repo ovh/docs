@@ -148,6 +148,14 @@ Pour ajouter un alias à votre compte e-mail, suivez les étapes suivantes:
 >> Cliquez sur `Ajouter un alias`{.action}, puis saisissez l'adresse que vous avez choisie pour votre alias et validez votre choix.<br><br>
 >> ![emails](images/email-alias03.png){.thumbnail}<br>
 
+#### Supprimer un alias
+
+Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée, puis sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
+
+Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le menu de gestion des alias. Enfin, cliquez sur `Supprimer l'alias`{.action}
+
+![emails](images/email-alias04.png){.thumbnail}
+
 #### Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
@@ -177,15 +185,6 @@ La méthode pour créer un alias ou une redirection est strictement la même. Il
 > [!primary]
 > Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des redirections, elle matérialise cette copie locale.
 > 
-
-
-#### Supprimer un alias
-
-Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite de l'adresse e-mail concernée, puis sur `Configurer les alias`{.action} ( ou `Gérer les alias`{.action}).
-
-Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le menu de gestion des alias. Enfin, cliquez sur `Supprimer l'alias`{.action}
-
-![emails](images/email-alias04.png){.thumbnail}
 
 ## Aller plus loin
 
