@@ -28,7 +28,7 @@ NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networ
 
 Lorsqu'un client souscrit à l'offre NSX-T et quelle est activée une pré-configuration est appliquée avec ces deux passerelles :
 
-* **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is of type **Tier-0 Gateways** (North-South).
+* **ovh-T0-gw** : Cette passerelle est le point d'entrée réseau de votre cluster elle est préconfigurée avec deux interfaces et une adresse IP virtuelle. Elle est de type **Tier-0 Gateways** (nord-sud).
 * **ovh-T1-gw** : Cette passerelle est dans la catégories des **Tier-1 Gateways** (est-ouest). Il est possible de créer des segments (VLAN ou Overlay) qui lui seront connectés. Elle est reliée à **ovh-T0-gw** pour les liaisons exterieures aux cluster (Physique et Internet). 
 
 Il est possible de créer de nouvelles passerelles de type **Tier-1 Gateways** et de les relier à la passerelle **ovh-T0-gw**. 
