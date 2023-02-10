@@ -20,7 +20,7 @@ Como resultado, se introdujo el protocolo **IPv6** para conectar a la red Intern
 
 Al estar menos disponibles las direcciones IPv4, es más difícil añadir nuevas máquinas a la red de Internet con la norma IPv4. No obstante, las conexiones con una dirección IPv6 solo son útiles si, por ejemplo, su sitio web también está disponible con el mismo protocolo. De este modo, cuanto más sitios web estén disponibles en IPv6, mayor será el número de actores presentes en la red de internet que transferirán sus dispositivos o máquinas a este nuevo protocolo.
 
-Para más información, consulte el artículo de [Wikipedia](https://fr.wikipedia.org/wiki/IPv6){.external} sobre el protocolo IPv6.
+Para más información, consulte el artículo de [Wikipedia](https://es.wikipedia.org/wiki/IPv6){.external} sobre el protocolo IPv6.
 
 Nuestros planes de hosting son compatibles con IPv6 desde 2011. Sin embargo, la activación de este protocolo ha sido hasta hace poco una opción opcional de configuración. 
 

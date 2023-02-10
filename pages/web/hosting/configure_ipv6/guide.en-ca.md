@@ -16,7 +16,7 @@ As a result, the **IPv6** protocol was introduced to allow up to 340 sextillion 
 
 Since IPv4 addresses are now less available, it is more difficult to add new machines to the internet using the IPv4 standard. However, connections with an IPv6 address are only useful if, for example, your website is also available with the same protocol. So the more websites that are accessible via IPv6, the more players on the internet will switch their devices/machines to this new protocol.
 
-For more information, see [Wikipedia](https://fr.wikipedia.org/wiki/IPv6){.external}'s article on IPv6.
+For more information, see [Wikipedia](https://en.wikipedia.org/wiki/IPv6){.external}'s article on IPv6.
 
 Our web hosting plans have been IPv6 compatible since 2011. However, until recently, enabling this protocol remained an optional option for the configuration. 
 

@@ -20,7 +20,7 @@ Das Protokoll **IPv6** wurde deshalb eingeführt, um bis zu 340 Millionen Gerät
 
 Da IPv4-Adressen weniger verfügbar sind, ist es schwieriger, neue Maschinen zum IPv4-Standard im Internet hinzuzufügen. Allerdings sind Verbindungen zu einer IPv6-Adresse nur nützlich, wenn Ihre Website zum Beispiel auch mit demselben Protokoll verfügbar ist. Je mehr IPv6-Websites verfügbar sind, desto mehr können die verschiedenen Akteure im Internet ihre Geräte und Maschinen auf dieses neue Protokoll umstellen.
 
-Weitere Informationen finden Sie in [Wikipedia](https://fr.wikipedia.org/wiki/IPv6){.external} zum IPv6-Protokoll.
+Weitere Informationen finden Sie in [Wikipedia](https://de.wikipedia.org/wiki/IPv6){.external} zum IPv6-Protokoll.
 
 Unsere Webhostings sind seit 2011 mit IPv6 kompatibel. Die Aktivierung dieses Protokolls ist jedoch bis vor kurzem eine optionale Option für die Konfiguration geblieben. 
 

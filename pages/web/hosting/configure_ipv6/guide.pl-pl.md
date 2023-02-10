@@ -20,7 +20,7 @@ W rezultacie wprowadzono protokół **IPv6**, aby umożliwić podłączenie do s
 
 Ponieważ adresy IPv4 są obecnie mniej dostępne, trudniej jest dodać nowe maszyny do sieci internetowej z normą IPv4. Połączenia z adresem IPv6 są jednak użyteczne tylko wtedy, gdy Twoja strona WWW jest również dostępna z tym samym protokołem. Im więcej stron internetowych będzie dostępnych w IPv6, tym bardziej różne podmioty działające w sieci internetowej będą przełączać swoje urządzenia/maszyny na nowy protokół.
 
-Więcej informacji znajdziesz w artykule [Wikipedia](https://fr.wikipedia.org/wiki/IPv6){.external} dotyczącym protokołu IPv6.
+Więcej informacji znajdziesz w artykule [Wikipedia](https://pl.wikipedia.org/wiki/IPv6){.external} dotyczącym protokołu IPv6.
 
 Nasze pakiety hostingowe są kompatybilne z IPv6 od 2011 roku. Aktywacja tego protokołu była do niedawna opcjonalną opcją podczas konfiguracji. 
 
