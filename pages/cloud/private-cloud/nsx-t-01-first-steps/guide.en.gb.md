@@ -150,7 +150,7 @@ Click `CLOSE EDITING`{.action}.
 
 ![Add route on ovh T1 03](images/05-activate-route-on-ovh-t1-gw03.png){.thumbnail}
 
-Now routing is enabled on the ovh-T1-gw gateway segments.
+Now routing is enabled on the member segments of the **ovh-T1-gw** gateway.
 
 You have just seen the default configuration. You can refer to the other OVHcloud guides for NSX-T to create segments, manage DHCP, perform DNAT port redirection, load balancing, VPN, etc...
 

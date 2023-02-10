@@ -150,7 +150,7 @@ Cliquez sur `CLOSE EDITING`{.action}.
 
 ![Add route on ovh T1 03](images/05-activate-route-on-ovh-t1-gw03.png){.thumbnail}
 
-Maintenant le routage est activé sur les segments.
+Maintenant le routage est activé sur les segments membre de la passerelle **ovh-T1-gw**.
 
 Vous venez de voir la configuration par défaut. Vous pouvez consultez les autres guides OVHcloud concernant NSX-T pour créer des segments, gérer le DHCP, faire de la redirection de port en DNAT, du Load balancing, du VPN, etc...
 
