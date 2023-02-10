@@ -130,7 +130,7 @@ A default SNAT configuration is applied, which allows Internet access from all n
 
 From the `Networking`{.action} tab, click `NAT`{.action} to view the default configuration of NAT rules.
 
-The default rule for the **SNAT** shows that the virtual IP address is used to translate from the networks within the cluster.
+The default rule for **SNAT** shows that the virtual IP address is used to translate from internal networks to the Internet.
 
 ![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
 

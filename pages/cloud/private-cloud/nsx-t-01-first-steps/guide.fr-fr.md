@@ -128,7 +128,7 @@ Une configuration SNAT par défaut est appliquée, ce qui permet l'accès Intern
 
 A partir de l'onglet `Networking`{.action} cliquez sur `NAT`{.action} pour afficher la configuration par défaut des règles de NAT.
 
-La règle par défaut pour le **SNAT** montre que l'on utilise l'adresse IP virtuelle pour faire la translation pour tous les réseaux.
+La règle par défaut pour le **SNAT** montre que l'on utilise l'adresse IP virtuelle pour faire la translation depuis les réseaux internes vers Internet.
 
 ![04 Display default SNAT Configuration 01](images/04-display-default-nat-configuration01.png){.thumbnail}
 
