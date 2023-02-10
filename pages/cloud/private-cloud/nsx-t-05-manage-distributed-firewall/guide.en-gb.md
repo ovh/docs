@@ -6,7 +6,7 @@ section: NSX-T
 order: 05
 ---
 
-**Last updated 08th February 2023**
+**Last updated 10th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -31,7 +31,7 @@ order: 05
 
 ## Overview
 
-The distributed firewall feature in NSX-T allows filtering with all elements in your VMware cluster that are on Overlay or VLAN segments. It should be used normally on east-west connections, but it also works with elements of the VMware cluster that are connected on the north-south gateway (ovh-t0-gateway). The filter type is available between :
+The distributed firewall feature in NSX-T allows filtering with all elements in your VMware cluster that are on Overlay or VLAN segments. It should be used normally on east-west (ovh-T0-gw) connections, but it also works with elements of the VMware cluster that are connected on the north-south gateway (ovh-T1-gw). The filter type is available between :
 
 - All members in one segment and all other members in another segment.
 - Some VMs in a segment and other VMs in the same or another segment.
