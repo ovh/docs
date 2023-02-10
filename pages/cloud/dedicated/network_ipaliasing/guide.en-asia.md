@@ -361,7 +361,7 @@ netplan apply
 ```
 
 
-### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9), Fedora (25 and earlier)
+### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9), and Fedora (25 and earlier)
 
 #### Step 1: Create the config file
 
