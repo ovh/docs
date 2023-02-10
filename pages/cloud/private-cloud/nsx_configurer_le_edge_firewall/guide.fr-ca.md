@@ -4,6 +4,7 @@ slug: configurer-le-nsx-edge-firewall
 excerpt: Créer des règles de pare-feu
 section: NSX
 order: 04
+updated: 2021-11-25
 ---
 
 **Dernière mise à jour le 25/11/2021**

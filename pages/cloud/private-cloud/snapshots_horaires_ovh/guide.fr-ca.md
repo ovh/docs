@@ -5,6 +5,7 @@ excerpt: Comprendre le fonctionnement des snapshots horaires OVHcloud
 legacy_guide_number: '2163263'
 section: Fonctionnalités OVHcloud
 order: 06
+updated: 2022-03-15
 ---
 
 **Dernière mise à jour le 15/03/2022**

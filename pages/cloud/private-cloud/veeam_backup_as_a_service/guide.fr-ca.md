@@ -5,6 +5,7 @@ excerpt: Découvrez comment activer et utiliser l'option Veeam Managed Backup
 legacy_guide_number: '2883711'
 section: Services et options OVHcloud
 order: 06
+updated: 2021-12-07
 ---
 
 **Dernière mise à jour le 7/12/2021**

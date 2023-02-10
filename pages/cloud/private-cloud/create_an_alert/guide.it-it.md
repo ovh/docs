@@ -4,6 +4,7 @@ slug: creare-un-alert
 excerpt: Come impostare un allarme sul tuo client vSphere
 section: Gestione delle macchine virtuali
 order: 09
+updated: 2020-07-08
 ---
 
 **Ultimo aggiornamento: 29/06/2020**

@@ -3,6 +3,7 @@ title: 'Evitar el bloqueo de las máquinas virtuales con la opción Veeam Backup
 slug: evitar-bloqueo-de-maquinas-virtuales-con-veeam-backup
 excerpt: 'Cómo implementar una solución de elusión con el mecanismo VMware DRS'
 section: 'Gestión de las máquinas virtuales'
+updated: 2022-02-22
 ---
 
 > [!primary]

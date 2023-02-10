@@ -3,6 +3,7 @@ title: 'Using the secure interface'
 slug: secure-interface
 excerpt: 'Find out how to use the secure interface to confirm sensitive operations'
 section: 'OVHcloud services and options'
+updated: 2022-10-12
 ---
 
 **Last updated 12th October 2022**

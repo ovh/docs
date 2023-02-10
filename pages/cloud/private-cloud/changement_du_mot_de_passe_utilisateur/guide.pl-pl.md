@@ -3,6 +3,7 @@ title: Aktualizacja hasła użytkownika
 slug: aktualizacja-hasla-uzytkownika
 excerpt: Dowiedz się, jak zmienić hasło użytkownika klienta vSphere w Panelu klienta OVHcloud
 section: Funkcjonalności OVHcloud
+updated: 2021-08-19
 ---
 
 **Ostatnia aktualizacja z dnia 19-08-2021**

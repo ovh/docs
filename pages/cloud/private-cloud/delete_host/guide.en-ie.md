@@ -4,6 +4,7 @@ slug: remove-host-server
 excerpt: 'Find out how to remove a host server from a Private Cloud infrastructure'
 legacy_guide_number: '1442308'
 section: 'OVHcloud Features'
+updated: 2021-03-19
 ---
 
 **Last updated March 19<sup>th</sup> 2021**

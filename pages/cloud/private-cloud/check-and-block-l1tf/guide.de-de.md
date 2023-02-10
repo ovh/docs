@@ -3,6 +3,7 @@ title: 'Sicherheitslücke L1TF überprüfen und blockieren'
 slug: sicherheitsluecke-l1tf-pruefen-blockieren
 excerpt: 'So schließen Sie die Sicherheitslücke L1TF'
 section: Sicherheit
+updated: 2019-02-26
 ---
 
 **Stand 24.04.2019**

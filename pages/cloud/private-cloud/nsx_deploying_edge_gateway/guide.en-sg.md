@@ -4,6 +4,7 @@ slug: how-to-deploy-an-nsx-edge-gateway
 excerpt: Discover how to deploy an NSX Edge Services Gateway with the vSphere interface
 section: NSX
 order: 02
+updated: 2021-11-19
 ---
 
 **Last updated on 19th November 2021**

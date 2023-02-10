@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/extend-disk/'
 excerpt: How to add space to your virtual disk and integrate it in your VM
 section: Verwaltung virtueller Maschinen
+updated: 2022-01-13
 ---
 
 **Last Updated on 13th January 2022**

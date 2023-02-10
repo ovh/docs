@@ -4,6 +4,7 @@ slug: configuracion-ip-maquina-virtual
 excerpt: 'Cómo configurar una IP en una máquina virtual'
 section: 'Gestión de las máquinas virtuales'
 order: 5
+updated: 2020-10-13
 ---
 
 > [!primary]

@@ -5,6 +5,7 @@ excerpt: Utiliser le service d'équilibrage de charge du NSX Edge
 legacy_guide_number: '7766591'
 section: NSX
 order: 05
+updated: 2021-11-29
 ---
 
 **Dernière mise à jour le 29/11/2021**

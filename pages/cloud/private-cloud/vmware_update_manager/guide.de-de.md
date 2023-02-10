@@ -4,6 +4,7 @@ slug: verwendung_des_vmware_update_manager
 excerpt: Verwenden Sie das Tool von VMware, um Ihre Hosts auf dem neuesten Stand zu halten
 section: VMware vSphere Funktionen
 order: 11
+updated: 2021-12-09
 ---
 
 > [!primary]

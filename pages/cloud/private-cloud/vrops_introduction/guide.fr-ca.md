@@ -4,6 +4,7 @@ slug: vrops-introduction
 excerpt: Connectez-vous à vROPS et monitorez votre infrastructure
 section: vRops
 order: 01
+updated: 2022-02-23
 ---
 
 **Dernière mise à jour le 23/02/2022**

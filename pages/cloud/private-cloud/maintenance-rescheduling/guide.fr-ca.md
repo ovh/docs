@@ -3,6 +3,7 @@ title: "Décaler une maintenance programmée sur votre Hosted Private Cloud"
 excerpt: "Découvrez comment décaler une maintenance programmée sur votre service Hosted Private Cloud powered by VMware"
 slug: maintenance-rescheduling
 section: Fonctionnalités OVHcloud
+updated: 2022-11-30
 ---
 
 **Dernière mise à jour le 30/11/2022**

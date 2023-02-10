@@ -4,6 +4,7 @@ excerpt: Descubra o mecanismo de substituição de um host
 slug: os_hosts_sparesuplentes
 section: Funcionalidades da OVHcloud
 order: 04
+updated: 2020-06-29
 ---
 **Última atualização: 26/08/2020**
 

@@ -4,6 +4,7 @@ title: Het gebruik van de VMware Update Manager
 excerpt: ''
 slug: het_gebruik_van_de_vmware_update_manager
 legacy_guide_number: g591
+updated: 2021-12-09
 ---
 
 

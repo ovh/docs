@@ -4,6 +4,7 @@ slug: nsx-edge-nat-configuration
 excerpt: Using NAT rules to redirect traffic
 section: NSX
 order: 06
+updated: 2021-11-26
 ---
 
 **Last updated 26th November 2021**

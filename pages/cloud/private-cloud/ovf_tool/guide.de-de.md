@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/ovf-tool/'
 excerpt: Find out how to export or import virtual machines using the OVF Tool
 section: Verwaltung virtueller Maschinen
+updated: 2022-01-31
 ---
 
 **Last updated 31/01/2022**

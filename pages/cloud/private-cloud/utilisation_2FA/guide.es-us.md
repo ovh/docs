@@ -4,6 +4,7 @@ slug: usar-de-2FA
 excerpt: Cómo instrumentar la doble autenticación para proteger su infraestructura
 section: Funcionalidades de OVHcloud
 order: 05
+updated: 2022-06-10
 ---
 
 **Última actualización: 10/06/2022**

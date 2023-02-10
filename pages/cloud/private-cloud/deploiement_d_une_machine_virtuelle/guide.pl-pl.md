@@ -4,6 +4,7 @@ slug: wdrozenie-maszyny-wirtualnej
 excerpt: Odkryj, jak wdrożyć maszynę wirtualną z poziomu interfejsu vSphere
 section: Zarządzanie wirtualnymi maszynami
 order: 0
+updated: 2020-06-29
 ---
 
 **Ostatnia aktualizacja z dnia 29-06-2020**

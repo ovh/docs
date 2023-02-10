@@ -4,6 +4,7 @@ title: 'Gebruik van een OVF-sjabloon'
 slug: gebruik-ovh-sjabloon
 excerpt: 'Ontdek hoe u een sjabloon kunt toepassen met de vSphere fat-client'
 section: 'OVH diensten en opties'
+updated: 2020-10-12
 ---
 
 **Laatste update 30-05-2018**

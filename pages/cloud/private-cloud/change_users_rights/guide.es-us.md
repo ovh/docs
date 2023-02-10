@@ -2,6 +2,7 @@
 title: Cambiar los permisos de un usuario
 slug: cambiar-los-permisos-de-un-usuario
 section: Funcionalidades de OVHcloud
+updated: 2020-06-29
 ---
 
 **Última actualización: 30/04/2020**

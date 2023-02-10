@@ -3,6 +3,7 @@ title: 'Eliminar un datastore'
 slug: eliminar-un-datastore
 excerpt: 'Cómo eliminar un datastore de un Private Cloud'
 section: 'Funcionalidades de OVHcloud'
+updated: 2020-07-01
 ---
 
 **Última actualización: 24/07/2020**

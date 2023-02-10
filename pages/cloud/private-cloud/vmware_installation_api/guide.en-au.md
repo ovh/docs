@@ -4,6 +4,7 @@ slug: using-sdk-vsphere
 excerpt: Find out how to implement and use the vSphere SDK
 section: VMware vSphere features
 order: 12
+updated: 2020-07-13
 ---
 
 **Last updated 13th July 2020**

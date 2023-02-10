@@ -4,6 +4,7 @@ slug: vsphere-register-vm-vmx
 excerpt: Come eseguire le prime operazioni sulla registrazione delle VM in un nuovo servizio dai datastore precedenti
 section: Funzionalità VMware vSphere
 order: 07
+updated: 2021-03-24
 ---
 
 > [!primary]

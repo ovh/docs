@@ -4,6 +4,7 @@ title: De reserve hosts
 excerpt: Het beheren en monitoren van de reserve hosts op de Hosted Private Cloud?
 slug: de_reserve_hosts
 legacy_guide_number: g860
+updated: 2020-06-29
 ---
 
 

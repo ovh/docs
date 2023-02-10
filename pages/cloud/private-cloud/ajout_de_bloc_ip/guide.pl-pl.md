@@ -5,6 +5,7 @@ excerpt: Jak zamówić blok IP dla swojej usługi Private Cloud
 legacy_guide_number: '7766457'
 section: Funkcjonalności OVHcloud
 order: 01
+updated: 2022-04-06
 ---
 
 **Ostatnia aktualizacja z dnia 06-04-2022**

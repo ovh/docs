@@ -5,6 +5,7 @@ excerpt: Find out how to order an IP block on your Private Cloud
 legacy_guide_number: '7766457'
 section: OVHcloud Features
 order: 01
+updated: 2022-04-06
 ---
 
 **Last updated 6th April 2022**

@@ -6,6 +6,7 @@ section: Tanzu
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/tanzu-ce-install/'
+updated: 2022-11-16
 ---
 
 **Last updated 16th November 2022**

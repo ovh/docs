@@ -4,6 +4,7 @@ slug: spoofguard
 excerpt: Set up policies to detect IP spoofing
 section: NSX
 order: 10
+updated: 2021-02-12
 ---
 
 **Last Updated on 12/02/2021**

@@ -7,6 +7,7 @@ space_key: VS
 space_name: vSphere as a Service
 section: Funzionalità VMware vSphere
 order: 02
+updated: 2020-04-30
 ---
 
 **Ultimo aggiornamento: 29/08/2018**

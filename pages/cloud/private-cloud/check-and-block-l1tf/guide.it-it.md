@@ -3,6 +3,7 @@ title: 'Rilevare e bloccare la vulnerabilità L1TF'
 slug: rilevare-bloccare-vulnerabilita-l1tf
 excerpt: 'Come mitigare la falla di sicurezza L1TF'
 section: Sicurezza
+updated: 2019-02-26
 ---
 
 **Ultimo aggiornamento: 19/08/2019**

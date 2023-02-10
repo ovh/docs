@@ -3,6 +3,7 @@ title: Hosted Private Cloud FAQ
 excerpt: ''
 slug: dedicated_cloud_faq
 legacy_guide_number: g598
+updated: 2022-12-08
 ---
 
 

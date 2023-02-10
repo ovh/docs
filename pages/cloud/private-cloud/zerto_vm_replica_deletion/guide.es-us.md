@@ -3,6 +3,7 @@ title: "Eliminar la copia de una MV del sitio de recuperación Zerto"
 slug: zerto-vm-replica-deletion
 excerpt: Cómo eliminar una MV del sitio de recuperación cuando se elimina del sitio de origen
 section: Servicios y opciones de OVHcloud
+updated: 2021-12-09
 ---
 
 > [!primary]

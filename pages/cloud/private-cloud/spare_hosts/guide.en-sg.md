@@ -5,6 +5,7 @@ excerpt: Find out how the replacement of a host works
 legacy_guide_number: '2883590'
 section: OVHcloud Features
 order: 04
+updated: 2020-06-29
 ---
 
 **Last updated 29th June 2020**

@@ -4,6 +4,7 @@ slug: mozliwosci-techniczne
 excerpt: 'Poznaj możliwości i ograniczenia techniczne rozwiązań Hosted Private Cloud dostarczanych przez OVHcloud'
 section: FAQ
 order: 2
+updated: 2023-02-01
 ---
 
 > [!primary]

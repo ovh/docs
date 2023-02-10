@@ -6,6 +6,7 @@ routes:
 excerpt: Learn two ways to clone an existing virtual machine in vSphere
 section: Zarządzanie wirtualnymi maszynami
 order: 07
+updated: 2022-01-12
 ---
 
 **Last updated 12th January 2022**

@@ -3,6 +3,7 @@ title: "Replikationskopie einer VM vom Zerto Standort löschen"
 slug: zerto-vm-replica-deletion
 excerpt: Erfahren Sie hier, wie Sie nach Löschung einer VM auch deren Replikat entfernen
 section: OVHcloud Dienste und Optionen
+updated: 2021-12-09
 ---
 
 > [!primary]

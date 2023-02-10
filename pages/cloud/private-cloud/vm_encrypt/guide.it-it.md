@@ -4,6 +4,7 @@ slug: vm-encrypt
 excerpt: Come utilizzare la funzionalità di crittografia delle macchine virtuali
 section: Funzionalità VMware vSphere
 order: 08
+updated: 2020-06-29
 ---
 
 **Ultimo aggiornamento: 01/07/2020**

@@ -4,6 +4,7 @@ excerpt: How do you best distribute VMs on a host server to optimise resources?
 slug: how_to_optimise_the_distribution_of_vms_on_a_host_server
 legacy_guide_number: g1442
 section: Resource management
+updated: 2018-03-26
 ---
 
 

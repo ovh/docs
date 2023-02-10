@@ -4,6 +4,7 @@ slug: configuration-ip-machine-virtuelle
 excerpt: 'Apprenez à configurer une IP sur une machine virtuelle'
 section: 'Gestion des machines virtuelles'
 order: 5
+updated: 2020-10-13
 ---
 
 **Dernière mise à jour le 12/10/2020**

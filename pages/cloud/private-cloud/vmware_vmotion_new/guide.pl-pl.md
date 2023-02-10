@@ -5,6 +5,7 @@ excerpt: Przeniesienie wirtualnej maszyny na inny host bez jej wyłączania
 legacy_guide_number: '7767025'
 section: Funkcjonalności VMware vSphere
 order: 04
+updated: 2020-07-10
 ---
 
 **Ostatnia aktualizacja z dnia 11-09-2020**

@@ -3,6 +3,7 @@ title: Optimizar la distribución de las máquinas virtuales en los hosts
 excerpt: ¿Cuál es la mejor forma de repartir las MV en los hosts para optimizar los recursos?
 slug: optimizar_la_distribucion_de_las_maquinas_virtuales_en_los_hosts
 section: Gestión de las máquinas virtuales
+updated: 2018-03-26
 ---
 
 

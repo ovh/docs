@@ -3,6 +3,7 @@ title: 'Checking and blocking the L1TF vulnerability'
 slug: check-block-l1tf-vulnerability
 excerpt: 'Find out how to block the L1TF (L1 Terminal Fault) vulnerability'
 section: Security
+updated: 2019-02-26
 ---
 
 **Last updated 26th February 2019**

@@ -5,6 +5,7 @@ slug: instalar_el_vsphere_client
 legacy_guide_number: g600
 section: Primeros pasos
 order: 2
+updated: 2022-06-24
 ---
 
 > [!primary]

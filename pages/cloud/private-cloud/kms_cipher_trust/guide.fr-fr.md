@@ -4,6 +4,7 @@ slug: kms-cipher-trust
 excerpt: Découvrez comment déployer et les premières étapes de configuration du KMS CipherTrust Manager sur un environnement vSphere
 section: Services et options OVHcloud
 hidden: true
+updated: 2021-11-04
 ---
 
 **Dernière mise à jour le 04/11/2021**

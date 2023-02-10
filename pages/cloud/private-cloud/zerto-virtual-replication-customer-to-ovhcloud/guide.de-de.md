@@ -3,6 +3,7 @@ title: 'Zerto zwischen OVHcloud und einer Drittplattform verwenden'
 slug: zerto-virtual-replication-customer-to-ovhcloud
 excerpt: 'Erfahren Sie hier, wie Sie OVHcloud Zerto mit einer anderen Plattform verbinden'
 section: OVHcloud Dienste und Optionen
+updated: 2022-02-11
 ---
 
 > [!primary]

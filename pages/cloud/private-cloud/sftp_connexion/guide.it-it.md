@@ -4,6 +4,7 @@ slug: connessione-in-sftp
 excerpt: Come accedere al servizio Private Cloud in SFTP
 section: Per iniziare
 order: 3
+updated: 2021-12-28
 ---
 
 **Ultimo aggiornamento: 28/12/2021**
