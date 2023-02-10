@@ -28,10 +28,10 @@ NSX-T is a Software-Defined Networking (SDN)** solution provided by VMware. OVHc
 
 When a customer subscribes to the NSX-T offer and is enabled, a pre-configuration is applied with two gateways:
 
-* **Tier-0 Gateway** : For connections between the cluster and the public INTERNET network, known as north-south traffic.
-* **Tier-1 Gateway**: For communication between cluster virtual segments. This type of connection is called east-west traffic.
+* **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is a **Tier-0 Gateways**.
+* **ovh-T1-gw** : This gateway is in the **Tier-1 Gateways** category. You can create segments (VLANs or Overlay) that will be connected to it. It is connected to **ovh-T0-gw** for connections outside the clusters (Physical and Internet).
 
-The two gateways are interconnected to allow internal networks to communicate outside the cluster.
+New Gateways **Tier-1 gateways** can be created and linked to the **ovh-T0-gw** gateway.
 
 OVHcloud provides a block of 8 public IP addresses, some of which are reserved. The **HA VIP** address is preconfigured, it is used for SNAT by default on future internal segments.
 

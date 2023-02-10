@@ -26,12 +26,13 @@ order: 01
 
 NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. Deux hôtes sont déployés avec sur chacun une machine virtuelle dédiée à NSX-T ce qui permet une redondance en cas de défaillance d'un des hôtes.
 
-Lorsqu'un client souscrit à l'offre NSX-T et quelle est activée une pré-configuration est appliquée avec deux passerelles :
+Lorsqu'un client souscrit à l'offre NSX-T et quelle est activée une pré-configuration est appliquée avec ces deux passerelles :
 
-* **Tier-0 Gateway** : Pour les connexions entre le cluster et le réseau physique (VLAN et Internet), que l'on nomme trafic nord-sud.
-* **Tier-1 Gateway** : Pour les communications entre segments virtuels (overlays) du cluster. Ce type de connexion s'appelle trafic est-ouest.
+* **ovh-T0-gw** : Cette passerelle est le point d'entrée réseau de votre cluster elle préconfiguré avec deux interfaces et une adresse IP virtuelle. Elle est de type **Tier-0 Gateways**.
+* **ovh-T1-gw** : Cette passerelle de type **Tier-1 Gateways** il est possible de créer des segments (VLAN ou Overlay) qui lui seront connectés. Elle est reliée à **ovh-T0-gw** pour les liaisons exterieures aux cluster (Physique et Internet). 
 
-Les deux passerelles sont reliées entre elles afin d'autoriser les réseaux internes à communiquer à l'extérieur du cluster.
+Il est possible de créer de nouvelles passerelles de type **Tier-1 Gateways** et de les relier à la passerelle **ovh-T0-gw**. 
+
 
 OVHcloud fourni un bloc de 8 adresses IP publiques, certaines sont réservées. L'adresse **HA VIP** est préconfigurée, elle est utilisée pour le SNAT par défaut sur les futurs segments internes.
 
