@@ -32,15 +32,15 @@ order: 02
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
-* **VLAN-backed segments** : La communication entre les hôtes et les VM doit se faire au travers de VLANs et d'un switch de niveau 2. Pour que ce VLAN puisse communiquer avec les éléments de NSX-T (Internet et les segments overlay derrière la passerelle **ovh-T1-gw**) vous devrez faire une modification sur la passerelle **ovh-t1-gw**.
+* **VLAN-backed segments** : La communication entre les hôtes et les machines virtuelles se fait au travers de VLANs et d'un switch de niveau 2. Pour que ces segments puissent communiquer avec les éléments de NSX-T (Internet et les autres segments) il faut rajouter une interface sur les passerelles de type **Tier-1 Gateways** comme **ovh-T1-gw**.
 
-* **Overlay-backed segments** : La connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment. Ils doivent être connectés à la passerelle **ovh-T1-gw**.
+* **Overlay-backed segments** : La connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment. Ils doivent être connectés aux passerelles de type **Tier-1 Gateways** comme **ovh-T1-gw**.
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
 * **system-owned-vlan-transport-zone-for-rtep | VLAN** : Zone prévue pour les réseaux étendues RTEP
 * **system-owned-vlan-transport-zone-for-evpn | VLAN** : Zone prévue pour les VPN.
-* **ovh-tz-overlay | VLAN** : Zone pour les segments de type Overlay derrière la passerelle **ovh-t1-gw**
+* **ovh-tz-overlay | VLAN** : Zone pour les segments de type Overlay derrière les passerelles de type **Tier-1 Gateways** comme **ovh-T1-gw**.
 * **ovh-tz-public | VLAN** : Zone connectée au réseau public sur un VLAN unique fourni par OVHcloud.
 * **ovh-tz-vrack | VLAN** : Zone reliée au vRACK Ovhcloud sur lequel il est possible de créer des segments avec un VLAN particulier.
 
