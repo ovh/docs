@@ -46,7 +46,7 @@ $ aws --profile my-profile s3 mb "s3://my-bucket-logs"
 $ aws --profile my-profile s3api put-bucket-acl --bucket my-bucket-logs --grant-write URI=http://acs.amazonaws.com/groups/s3/LogDelivery --grant-read-acp URI=http://acs.amazonaws.com/groups/s3/LogDelivery
 ```
 
-### Check bucket acl
+#### Check the bucket acl configuration
 
 ``` bash
 $ aws --profile my-profile s3api get-bucket-acl --bucket my-bucket-logs
@@ -95,7 +95,7 @@ $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-
 }
 ```
 
-### Check bucket logging parameters
+#### Check bucket logging parameters
 
 ``` bash
 $ aws --profile my-profile s3api get-bucket-logging --bucket my-bucket
@@ -125,7 +125,7 @@ $ aws --profile my-profile s3 ls "s3://my-bucket-logs" --recursive
 2023-01-10 17:42:39       1485 test/2023-01-10-16-12-38-FEE333087AD64973ABF6B62B10ECBF20
 ```
 
-You can download any log:
+Download a log:
 
 ``` bash
 $ aws --profile my-profile s3 cp "s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261" .
