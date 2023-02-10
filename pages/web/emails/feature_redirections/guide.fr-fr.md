@@ -78,8 +78,8 @@ Dans notre exemple, il s'agit d'une **redirection avec copie locale** (voir le [
 Suivez les étapes suivantes :
 
 > [!tab]
->
 > **Etape 1**
+>>
 >> Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovh.com/fr/mail/), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
@@ -89,19 +89,23 @@ Suivez les étapes suivantes :
 >> Cette fenêtre permet de gérer vos redirections mais également d'appliquer des filtres sur l'ensemble des e-mails entrants.<br>
 >>
 > **Etape 3**
+>>
 >> Une fois dans la fenêtre de gestion des **Règles de boîte de réception**, cliquez sur l'icône `+`{.action} en haut à gauche.<br><br>
 >> ![emails](images/emails-all-03.png){.thumbnail}<br><br>
 >>
 > **Etape 4**
+>>
 >> **Nom**: Définissez le nom de votre redirection <br>
 >> **Lorsque le message arrive et remplit toutes ces conditions** : Si votre redirection s'applique à tous les messages, sélectionnez `[Appliquer à tous les messages]`{.action} .<br>
 >>![emails](images/emails-all-04.png){.thumbnail}<br><br>
 >>
 > **Etape 5**
+>>
 >> **Effectuer toutes les opérations suivantes**: C'est ici que vous appliquez la redirection, selectionnez **Transférer, rediriger ou envoyer** puis **Rediriger le message vers...** . 
 >>![emails](images/emails-all-05.png){.thumbnail}<br><br>
 >>
 > **Etape 5**
+>>
 >> Tapez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant **Rediriger le message vers...** puis cliquez sur `Enregistrer`{.action}. Cliquez enfin sur `OK`{.action}(icône de disquette) pour finaliser votre redirection<br>
 >>![emails](images/emails-all-06.png){.thumbnail}<br><br>
 >>
@@ -123,16 +127,18 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 Pour ajouter un alias à votre compte e-mail, suivez les étapes suivantes:
 
 > [!tab]
->
 > **Etape 1**
+>>
 >> Dans le tableau qui s'affiche, vous trouverez une colonne `Alias`.<br><br>
 >> ![emails](images/email-alias012.png){.thumbnail}<br>
 >>
 > **Etape 2**
+>>
 >> Cliquez sur le bouton `...`{.action} puis sur `Configurer les alias`{.action} (ou `Gérer les alias`{.action}).<br><br>
 >> ![emails](images/email-alias02.png){.thumbnail}<br>
 >>
 > **Etape 3**
+>>
 >> Cliquez sur `Ajouter un alias`{.action}, puis saisissez l'adresse que vous avez choisie pour votre alias et validez votre choix.<br><br>
 >> ![emails](images/email-alias03.png){.thumbnail}<br>
 
@@ -143,16 +149,17 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 La méthode pour créer un alias ou une redirection est strictement la même. Il vous suffit de suivre les étapes suivantes :
 
 > [!tab]
->
 > **Etape 1**
 >> Par défaut, vous êtes dans l'onglet `Informations générales`{.action} de votre MX Plan. Cliquez sur l'onglet `Emails`{.action} puis à droite sur le bouton `Gestion des redirections`{.action}.<br><br>
 >> ![emails](images/mxplan-legacy-1.png){.thumbnail}<br>
 >>
 > **Etape 2**
+>>
 >> Le tableau des redirections déjà actives s'affiche. À droite, cliquez sur le bouton `Ajouter une redirection`{.action}.<br><br>
 >> ![emails](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
 > **Etape 3**
+>>
 >> **De l'adresse** : Renseignez ici l'adresse e-mail que vous souhaitez rediriger.<br><br>
 >> **Vers l'adresse**: Renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.<br><br>
 >> **Choisissez un mode de copie**: choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVHcloud** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection)<br> *cf. le [schéma 2](#diagram) au début de ce guide.*<br><br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma 1](#diagram) au début de ce guide.*<br><br>
