@@ -35,8 +35,8 @@ order: 03
 
 We will configure DHCP for : 
 
-* An overlay segment behind the gateway **ovh-t1-gw** 
-* A segment on a VLAN connected to the gateway **ovh-t0-gw**.
+* An overlay segment behind the gateway **ovh-T1-gw** 
+* A segment on a VLAN connected to the gateway **ovh-T0-gw**.
 
 ### Common DHCP configuration for all overlay segments
 

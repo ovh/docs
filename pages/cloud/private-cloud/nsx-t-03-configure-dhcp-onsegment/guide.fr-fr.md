@@ -33,8 +33,8 @@ order: 03
 
 Nous allons configurer le DHCP pour : 
 
-- Un segment en Overlay derrière la passerelle **ovh-t1-gw** 
-- Un segment sur un VLAN connecté à la passerelle **ovh-t0-gw**.
+- Un segment en Overlay derrière la passerelle **ovh-T1-gw** 
+- Un segment sur un VLAN connecté à la passerelle **ovh-T0-gw**.
 
 ### Configuration commune du DHCP pour tous les segments de type overlay
 
@@ -52,7 +52,7 @@ Le serveur DCHP est actif il utilise un réseau en 100.96.0.1/30, n'utilisez pas
 
 ![01 Common DHCP configuration 03](images/01-common-dhcp-configuration03.png){.thumbnail}
 
-### Affectation du DHCP à passerelle **ovh-t1-gateway**
+### Affectation du DHCP à passerelle **ovh-T1-gateway**
 
 Toujours dans l'onglet `Networking`{.action} cliquez sur `Tier-1-Gateways`{.action} à gauche dans la rubrique **Connectivity**.
 
@@ -112,16 +112,14 @@ Les machines virtuelles sur ce segment peuvent maintenant être configurées en 
 
 ### Mise en place du DCHP sur un segment de type VLAN
 
-Sur un segment de type VLAN connecté au travers d'interfaces sur la passerelle **ovh-t0-gw** il n'est pas possible d'utiliser le profil créé pour les segments Overlay. IL est aussi interdit de connecter un nouveau profil sur la passerelle **ovh-t0-gw**.
+Sur un segment de type VLAN connecté au travers d'interfaces sur la passerelle **ovh-T0-gw** il n'est pas possible d'utiliser le profil créé pour les segments Overlay. IL est aussi interdit de connecter un nouveau profil sur la passerelle **ovh-T0-gw**.
 
 Pour pouvoir avoir un serveur DHCP sur ce segment nous allons créer une configuration DHCP avec un nouveau profil directement attaché au segment.
 
 Si vous n'avez pas de segment de type de VLAN, aidez-vous du guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/) pour le crééer avec ces paramètres :
 
 * **Sous-réseau du VLAN** : 192.168.100.0/24.
-* **Adresse IP privée de l'interface pour le premier Edge Node** : 192.168.100.252.
-* **Adresse IP privée de l'interface pour le deuxième Edge Node** : 192.168.100.253.
-* **Future adresse IP virtuelle** : 192.168.100.254.
+* **Gateway and interface IP address** : 192.168.100.254/24.
 
 Allez sur l'onglet `Networking`{.action}, cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity** ensuite cliquez sur les  `trois petits points`{.action} à gauche de votre segment de type VLAN et choisissez `Edit`{.action} dans le menu.
 
