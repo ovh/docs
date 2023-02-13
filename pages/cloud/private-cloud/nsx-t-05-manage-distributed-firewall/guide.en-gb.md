@@ -6,7 +6,7 @@ section: NSX-T
 order: 05
 ---
 
-**Last updated 10th February 2023**
+**Last updated 13th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -181,7 +181,7 @@ Go to the `Security`{.action} tab, select `Distributed Firewall`{.action} and cl
 
 ![06 Create distributed firewall rules 01](images/06-create-distributed-firewall-rules01.png){.thumbnail}
 
-Name your strategy `Isolate vm and segments`{.action}.
+Name your strategy `Isolate vm and segment`{.action}.
 
 ![06 Create distributed firewall rules 02](images/06-create-distributed-firewall-rules02.png){.thumbnail}
 
@@ -193,7 +193,7 @@ Click the `Pen`{.action} icon to the right of **Any** in the **Sources** column.
 
 ![06 Create distributed firewall rules 04](images/06-create-distributed-firewall-rules04.png){.thumbnail}
 
-Select the group `g-segment01`{.action} and click `APPLY`{.action}.
+Stay on the `groups`{.action} tab, check group `g-segment01`{.action} and click `APPLY`{.action}
 
 ![06 Create distributed firewall rules 05](images/06-create-distributed-firewall-rules05.png){.thumbnail}
 
