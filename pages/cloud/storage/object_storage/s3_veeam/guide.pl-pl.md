@@ -5,6 +5,7 @@ section: Configure Object Storage with your solutions
 order: 007
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/veeam/'
+updated: 2022-01-03
 ---
 
 **Last updated on 3rd January 2022**

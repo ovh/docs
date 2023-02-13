@@ -4,6 +4,7 @@ slug: nas/snapshots-api
 excerpt: Come gestire gli snapshot del NAS-HA via API OVHcloud
 section: NAS-HA
 order: 09
+updated: 2022-07-20
 ---
 
 > [!primary]

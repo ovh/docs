@@ -7,6 +7,7 @@ excerpt: Here are the concepts for implementing ACLs on Public Cloud Archive
 section: OpenStack Swift Archive Storage Class Specifics
 order: 040
 order: 040
+updated: 2021-12-15
 ---
 
 **Last updated 15th December 2021**

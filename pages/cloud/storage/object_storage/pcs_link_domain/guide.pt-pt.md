@@ -4,6 +4,7 @@ slug: pcs/link-domain
 excerpt: Saiba como associar um domínio a um container.
 section: OpenStack Swift Storage Class Specifics
 order: 120
+updated: 2021-10-27
 ---
 
 **Última atualização: 27/10/2021**

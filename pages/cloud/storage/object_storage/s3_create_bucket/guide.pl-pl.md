@@ -5,6 +5,7 @@ section: General guides to start
 order: 040
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/create-container/'
+updated: 2022-09-27
 ---
 
 **Last updated September 27<sup>th</sup> 2022**

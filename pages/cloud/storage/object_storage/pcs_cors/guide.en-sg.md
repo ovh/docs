@@ -4,6 +4,7 @@ slug: pcs/cors
 excerpt: Find here the concepts to implement CORS
 section: OpenStack Swift Storage Class Specifics
 order: 050
+updated: 2022-01-03
 ---
 
 **Last updated 3rd January 2022**

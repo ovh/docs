@@ -4,6 +4,7 @@ slug: s3/getting-started-with-object-storage
 excerpt:
 section: General guides to start
 order: 020
+updated: 2022-09-27
 ---
 
 **Last updated September 27<sup>th</sup> 2022**

@@ -4,6 +4,7 @@ slug: pcs/capabilities-and-limitations
 excerpt: Find here the main capacities and limitations for the management of your containers
 section: OpenStack Swift Storage Class Specifics
 order: 080
+updated: 2021-09-23
 ---
 
 **Last updated 23rd September 2021**

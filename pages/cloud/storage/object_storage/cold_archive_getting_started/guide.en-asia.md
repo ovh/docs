@@ -4,6 +4,7 @@ slug: cold-archive/getting-started
 excerpt: This guide shows you how to manage your data with Cold Archive
 section: Cold Archive Storage Class Specifics
 order: 020
+updated: 2022-10-19
 ---
 
 **Last updated 19th October 2022**

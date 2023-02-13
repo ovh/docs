@@ -4,6 +4,7 @@ slug: s3/nextcloud
 excerpt: Learn how to set up storage in Nextcloud to use a S3 Object Storage bucket
 section: Configure Object Storage with your solutions
 order: 120
+updated: 2022-01-03
 ---
 
 **Last updated on 3rd January 2022**

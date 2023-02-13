@@ -4,6 +4,7 @@ excerpt: Configure ownCloud with Object Storage
 slug: pcs/configure-owncloud-with-object-storage
 section: OpenStack Swift Storage Class Specifics
 order: 170
+updated: 2022-05-20
 ---
 
 **Last updated 20th May 2022**

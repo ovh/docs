@@ -4,6 +4,7 @@ slug: netapp/quick-start
 excerpt: Erfahren Sie hier die ersten Schritte mit Ihrem Enterprise File Storage und der OVHcloud API
 section: Enterprise File Storage
 order: 030
+updated: 2021-10-27
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Object Storage - Choosing the right storage class for your needs
 slug: s3/choosing-the-right-storage-class-for-your-needs
 section: General information
 order: 005
+updated: 2022-09-27
 ---
 
 **Last updated September 27<sup>th</sup>2022**

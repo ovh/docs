@@ -4,6 +4,7 @@ slug: nas/get-started
 excerpt: "Découvrez comment gérer un NAS-HA depuis l'espace client OVHcloud"
 section: NAS-HA
 order: 01
+updated: 2021-09-16
 ---
 
 **Dernière mise à jour le 16/09/2021**

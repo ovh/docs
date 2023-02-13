@@ -4,6 +4,7 @@ slug: nas/migration
 excerpt: Find out how to migrate your data from one HA-NAS to another via an NFS share
 section: HA-NAS
 order: 05
+updated: 2021-02-09
 ---
 
 **Last updated 9th February 2021**

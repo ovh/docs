@@ -6,6 +6,7 @@ section: Configure Object Storage with your solutions
 order: 005
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/rclone/'
+updated: 2022-01-03
 ---
 
 **Last updated on 3rd January 2022**

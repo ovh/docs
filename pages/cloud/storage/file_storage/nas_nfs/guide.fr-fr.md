@@ -4,6 +4,7 @@ slug: nas/nfs
 excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un partage NFS
 section: NAS-HA
 order: 03
+updated: 2022-12-06
 ---
 
 **Dernière mise à jour le 06/12/2022**

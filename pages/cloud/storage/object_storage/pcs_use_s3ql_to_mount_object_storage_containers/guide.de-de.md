@@ -4,6 +4,7 @@ slug: pcs/use-s3ql-to-mount-object-storage-containers
 section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1908
 order: 160
+updated: 2021-10-27
 ---
 
 **Letzte Aktualisierung am 21.10.2021**

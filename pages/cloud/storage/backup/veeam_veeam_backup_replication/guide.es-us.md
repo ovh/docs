@@ -3,6 +3,7 @@ title: 'Implementar Veeam Backup & Replication'
 slug: veeam/veeam-backup-replication
 excerpt: 'Cómo instalar un servidor Veeam Backup & Replication con Veeam Enterprise'
 section: 'Veeam Backup & Replication'
+updated: 2022-03-07
 ---
 
 **Última actualización: 08/03/2022**

@@ -4,6 +4,7 @@ slug: nas/nfs
 excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
 section: NAS-HA
 order: 03
+updated: 2022-12-06
 ---
 
 > [!primary]

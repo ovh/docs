@@ -4,6 +4,7 @@ slug: pcs/pcs-syno
 excerpt: Find here how to synchronise a Synology NAS with Object Storage
 section: OpenStack Swift Storage Class Specifics
 order: 150
+updated: 2021-10-27
 ---
 
 

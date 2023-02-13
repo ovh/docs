@@ -4,6 +4,7 @@ slug: pcs/acl
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Object Storage
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 040
+updated: 2022-05-06
 ---
 
 **Dernière mise à jour le 06/05/2022**
