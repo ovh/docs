@@ -4,6 +4,7 @@ slug: postgresql/extensions
 excerpt: List of available PostgreSQL extensions
 section: PostgreSQL - Guides
 order: 020
+updated: 2021-12-22
 ---
 
 **Last updated December 22<sup>th</sup>, 2021**

@@ -6,6 +6,7 @@ section: General guides
 order: 035
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/configure-vrack/'
+updated: 2022-10-26
 ---
 
 **Last updated October 26, 2022**

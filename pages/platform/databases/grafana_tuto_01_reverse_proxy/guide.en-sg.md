@@ -4,6 +4,7 @@ slug: grafana/tutorial-reverse-proxy
 excerpt: "Expose your Grafana to internet through a NGINX reverse proxy"
 section: Grafana - Tutorials
 order: 010
+updated: 2023-02-06
 ---
 
 **Last updated 6th February 2023**

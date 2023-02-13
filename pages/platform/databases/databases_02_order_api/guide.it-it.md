@@ -6,6 +6,7 @@ section: General guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/order-api/'
+updated: 2021-09-03
 ---
 
 **Last updated September 3<sup>rd</sup>, 2021**

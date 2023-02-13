@@ -6,6 +6,7 @@ section: General guides
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration/'
+updated: 2022-04-01
 ---
 
 **Last updated 1<sup>st</sup> April, 2022**

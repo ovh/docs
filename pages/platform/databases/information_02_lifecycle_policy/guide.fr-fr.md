@@ -6,6 +6,7 @@ section: Informations générales
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/lifecycle-policy/'
+updated: 2021-09-15
 ---
 
 **Last updated September 15th, 2021**

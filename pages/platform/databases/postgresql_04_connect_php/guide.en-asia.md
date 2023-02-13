@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for PostgreSQL using the PHP pro
 slug: postgresql/connect-php
 section: PostgreSQL - Guides
 order: 050
+updated: 2022-04-04
 ---
 
 **Last updated 4<sup>th</sup> April, 2022**

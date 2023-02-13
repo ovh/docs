@@ -7,6 +7,7 @@ section: Redis - Tutorials
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/boost-wordpress/'
+updated: 2021-11-22
 ---
 
 **Last updated 22nd November 2021**

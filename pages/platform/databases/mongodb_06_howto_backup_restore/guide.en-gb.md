@@ -4,6 +4,7 @@ slug: mongodb/backups-and-restores-cli
 excerpt: Find out how to back up and restore your Public Cloud Databases for MongoDB database using the CLI
 section: MongoDB - Guides
 order: 070
+updated: 2022-07-27
 ---
 
 **Last updated 27<sup>th</sup> July 2022**

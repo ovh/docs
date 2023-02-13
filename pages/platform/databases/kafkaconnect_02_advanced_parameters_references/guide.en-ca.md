@@ -4,6 +4,7 @@ slug: kafkaconnect/advanced-parameters-references
 excerpt:
 section: Kafka Connect - Guides
 order: 020
+updated: 2023-02-06
 ---
 
 <style>

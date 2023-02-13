@@ -6,6 +6,7 @@ section: MySQL - Guides
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-cli/'
+updated: 2022-03-08
 ---
 
 **Last updated 8th March 2022**
