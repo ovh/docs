@@ -31,24 +31,21 @@ order: 06
 
 # Présentation
 
-Le pare-feu de passerelles permet le filtrage entre les segments internes et l'extérieur du cluster, Il s'applique à 
+Le pare-feu de passerelles permet le filtrage entre les segments internes et le réseau extérieur au cluster en entrée et en sortie. 
 
-- des règles entrantes depuis un réseau Externe au cluster vers des adresses publiques internes.
-- des règles sortantes depuis un réseau interne derrière les passerelles de type **Tier-1 Gateways** vers des réseaux externes à la configuration de NSX-T.
+Il fonctionne sur les passerelles de type nord-sud(Tier-0 Gateways) et est-ouest (Tier-1 Gateways) si la source ou la destination ne se trouve pas à l'intérieur du cluster.
 
-Si vous souhaitez créer des règles de filtrage entre segment interne il sera nécessaire d'utiliser le pare-feu distribué à l'aide de ce guide [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall).
+Si vous souhaitez créer des règles de filtrage entre des segments internes il sera nécessaire d'utiliser le pare-feu distribué à l'aide de ce guide [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall).
 
 ## En pratique
 
-Nous allons créer une règle qui bloque l'accès à tout le réseau externe d'un cluster depuis un segment. 
+Nous allons créer une règle qui bloque l'accès à tout le réseau externe d'un cluster depuis un groupe qui contient un segment. Vous pouvez vous aider de ce guide pour créer des groupes [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall) et de **any** pour la destination.
 
-Nous allons utiliser un groupe pour la source, vous pouvez vous aider de ce guide pour créer des groupes [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall) et de **any** pour la destination.
-
-Allez sur l'onglet `Security`{.action}, Sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}
+Allez sur l'onglet `Security`{.action}, Sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}.
 
 ![01 Create gateway firewall rules 01](images/06-create-distributed-firewall-rules01.png){.thumbnail}
 
-Sélectionnez `pvh-T0-gw`{.action} à droite de **Gateway**, nommez votre stratégie `my policy`{.action} en dessous de la colonne **Name** et cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre stratégie.
+Sélectionnez `ovh-T0-gw`{.action} à droite de **Gateway**, nommez votre stratégie `my policy`{.action} en dessous de la colonne **Name** et cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre stratégie.
 
 ![01 Create gateway firewall rules 02](images/06-create-distributed-firewall-rules02.png){.thumbnail}
 
@@ -64,7 +61,7 @@ Cliquez sur le `stylo`{.action} à gauche de Any dans la colonne **Source**.
 
 ![01 Create gateway firewall rules 05](images/06-create-distributed-firewall-rules05.png){.thumbnail}
 
-Restez dans l'onglet `Group`{.action}, sélectionnez le groupe `g-segment1`{.action} et cliquez sur `APPLY`{.action}
+Restez dans l'onglet `Group`{.action}, sélectionnez le groupe `g-segment1`{.action} et cliquez sur `APPLY`{.action}.
 
 ![01 Create gateway firewall rules 06](images/06-create-distributed-firewall-rules06.png){.thumbnail}
 
