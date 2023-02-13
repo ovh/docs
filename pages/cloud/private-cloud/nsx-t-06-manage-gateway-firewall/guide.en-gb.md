@@ -43,31 +43,31 @@ We will create a rule that blocks access to the entire external network of a clu
 
 Allez sur l'onglet `Security`{.action}, Sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}
 
-![01 Create gateway firewall rules 01](images/06-create-distributed-firewall-rules01.png){.thumbnail}
+![01 Create gateway firewall rules 01](images/01-create-gateway-firewall-rules01.png){.thumbnail}
 
 Select `ovh-T0-gw`{.action} to the right of **Gateway**, name your policy `my policy`{.action} below the **Name** column and click the `vertical suspend points`{.action} to the left of your policy.
 
-![01 Create gateway firewall rules 02](images/06-create-distributed-firewall-rules02.png){.thumbnail}
+![01 Create gateway firewall rules 02](images/01-create-gateway-firewall-rules02.png){.thumbnail}
 
 Click `Add Rule`{.action} in the menu.
 
-![01 Create gateway firewall rules 03](images/06-create-distributed-firewall-rules03.png){.thumbnail}
+![01 Create gateway firewall rules 03](images/01-create-gateway-firewall-rules03.png){.thumbnail}
 
 Name your rule `block segment1 to any`{.action} below the **Name** column.
 
-![01 Create gateway firewall rules 04](images/06-create-distributed-firewall-rules04.png){.thumbnail}
+![01 Create gateway firewall rules 04](images/01-create-gateway-firewall-rules04.png){.thumbnail}
 
 Click on the `pen`{.action} to the left of Any in the **Source** column.
 
-![01 Create gateway firewall rules 05](images/06-create-distributed-firewall-rules05.png){.thumbnail}
+![01 Create gateway firewall rules 05](images/01-create-gateway-firewall-rules05.png){.thumbnail}
 
 Stay in the `Group`{.action} tab, select the group `g-segment1`{.action} and click `APPLY`{.action}.
 
-![01 Create gateway firewall rules 06](images/06-create-distributed-firewall-rules06.png){.thumbnail}
+![01 Create gateway firewall rules 06](images/01-create-gateway-firewall-rules06.png){.thumbnail}
 
 Choose `Drop`{.action} under the **Action** column and click `PUBLISH`{.action}.
 
-![01 Create gateway firewall rules 07](images/06-create-distributed-firewall-rules07.png){.thumbnail}
+![01 Create gateway firewall rules 07](images/01-create-gateway-firewall-rules07.png){.thumbnail}
 
 Your rule is active on the gateway **ovh-T0-gw** it blocks all outgoing traffic from members of the group **g-segment01**.
 

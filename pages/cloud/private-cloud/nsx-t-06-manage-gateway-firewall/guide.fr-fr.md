@@ -43,31 +43,31 @@ Nous allons créer une règle qui bloque l'accès à tout le réseau externe d'u
 
 Allez sur l'onglet `Security`{.action}, Sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}.
 
-![01 Create gateway firewall rules 01](images/06-create-distributed-firewall-rules01.png){.thumbnail}
+![01 Create gateway firewall rules 01](images/01-create-gateway-firewall-rules01.png){.thumbnail}
 
 Sélectionnez `ovh-T0-gw`{.action} à droite de **Gateway**, nommez votre stratégie `my policy`{.action} en dessous de la colonne **Name** et cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre stratégie.
 
-![01 Create gateway firewall rules 02](images/06-create-distributed-firewall-rules02.png){.thumbnail}
+![01 Create gateway firewall rules 02](images/01-create-gateway-firewall-rules02.png){.thumbnail}
 
 Cliquez sur `Add Rule`{.action} dans le menu.
 
-![01 Create gateway firewall rules 03](images/06-create-distributed-firewall-rules03.png){.thumbnail}
+![01 Create gateway firewall rules 03](images/01-create-gateway-firewall-rules03.png){.thumbnail}
 
 Nommez votre règle `block segment1 to any`{.action} en dessous de la colonne **Name**.
 
-![01 Create gateway firewall rules 04](images/06-create-distributed-firewall-rules04.png){.thumbnail}
+![01 Create gateway firewall rules 04](images/01-create-gateway-firewall-rules04.png){.thumbnail}
 
 Cliquez sur le `stylo`{.action} à gauche de Any dans la colonne **Source**.
 
-![01 Create gateway firewall rules 05](images/06-create-distributed-firewall-rules05.png){.thumbnail}
+![01 Create gateway firewall rules 05](images/01-create-gateway-firewall-rules05.png){.thumbnail}
 
 Restez dans l'onglet `Group`{.action}, sélectionnez le groupe `g-segment1`{.action} et cliquez sur `APPLY`{.action}.
 
-![01 Create gateway firewall rules 06](images/06-create-distributed-firewall-rules06.png){.thumbnail}
+![01 Create gateway firewall rules 06](images/01-create-gateway-firewall-rules06.png){.thumbnail}
 
 Choisissez `Drop`{.action} sous la colonne **Action** et cliquez sur `PUBLISH`{.action}
 
-![01 Create gateway firewall rules 07](images/06-create-distributed-firewall-rules07.png){.thumbnail}
+![01 Create gateway firewall rules 07](images/01-create-gateway-firewall-rules07.png){.thumbnail}
 
 Votre règle est active sur la passerelle **ovh-T0-gw** elle bloque tout le trafic sortant depuis les membres du groupe **g-segment01**.
 
