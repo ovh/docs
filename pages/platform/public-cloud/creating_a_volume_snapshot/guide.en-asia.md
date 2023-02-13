@@ -6,7 +6,7 @@ section: Storage
 order: 2
 ---
 
-**Last updated 9th January 2023**
+**Last updated 10th February 2023**
 
 ## Objective
 
@@ -20,7 +20,7 @@ A snapshot of an additional volume serves two general purposes:
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- A [Block storage volume](../create_and_configure_an_additional_disk_on_an_instance/) created in your [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/) project
+- A [Block storage volume](https://docs.ovh.com/asia/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/) created in your [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/) project
 
 ## Instructions
 
@@ -28,7 +28,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-In the row of the volume concerned, click on `...`{.action} and select `Create a snapshot`{.action}. (It is not required to detach the volume from its instance first.)
+In the row of the volume concerned, click on `...`{.action} and select `Create a snapshot`{.action} (It is not required to detach the volume from its instance first). However, if you wish to detach your volume, please consult this [section](https://docs.ovh.com/asia/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-linux) of the corresponding guide for Linux and this [section](https://docs.ovh.com/asia/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-windows) for Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 
@@ -50,15 +50,15 @@ Since a volume snapshot is a clone of the entire disk, it will have the maximum 
 
 Open the section `Volume Snapshot`{.action} in the left-hand navigation bar. After the snapshot is created, it will be added to this table.
 
-Click on the button `...`{.action} to `Delete`{.action} a snapshot or to `Create a volume`{.action} based on the respective snapshot. You can find further information in [this guide](../create-volume-from-backup/).
+Click on the button `...`{.action} to `Delete`{.action} a snapshot or to `Create a volume`{.action} based on the respective snapshot. You can find further information in [this guide](https://docs.ovh.com/asia/en/public-cloud/create-volume-from-backup/).
 
 
 ## Go further
 
-[Creating a volume from a backup](../create-volume-from-backup/)
+[Creating a volume from a backup](https://docs.ovh.com/asia/en/public-cloud/create-volume-from-backup/)
 
-[Creating and configuring an additional disk on an instance](../create_and_configure_an_additional_disk_on_an_instance/)
+[Creating and configuring an additional disk on an instance](https://docs.ovh.com/asia/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/)
 
-[Increasing the size of an additional disk](../increase_the_size_of_an_additional_disk/)
+[Increasing the size of an additional disk](https://docs.ovh.com/asia/en/public-cloud/increase_the_size_of_an_additional_disk/)
 
 Join our community of users on <https://community.ovh.com/en/>.
