@@ -4,6 +4,7 @@ slug: esxi-faq
 excerpt: "Find the most frequently asked questions about the wave of attacks targeting ESXi servers"
 section: 'Security'
 order: 4
+updated: 2023-02-10
 ---
 
 **Last updated 10th February 2023**

@@ -85,6 +85,7 @@
             + [Configuring the firewall on Linux with iptables](cloud/dedicated/firewall-Linux-iptable)
             + [Configuring the firewall on Windows](cloud/dedicated/activate-port-firewall-soft-win)
             + [Securing a server with a Memcached service](cloud/dedicated/memcache_secure)
+            + [ESXi Dedicated Servers - FAQ](cloud/dedicated/faq-esxi)
             + [Find your patch for Meltdown and Spectre](cloud/dedicated/meltdown_spectre_fixes_os)
             + [Information about Meltdown and Spectre vulnerability fixes](cloud/dedicated/meltdown_spectre_fixes)
         + [Server management](bare-metal-cloud-dedicated-servers-managing-servers)
