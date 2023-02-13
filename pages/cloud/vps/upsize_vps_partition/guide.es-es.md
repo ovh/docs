@@ -2,6 +2,7 @@
 title: 'Reparticionar un VPS tras un upgrade'
 slug: reparticionar-vps-tras-upgrade
 section: 'Primeros pasos'
+updated: 2021-05-18
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: Find out how to set up your OVHcloud Connect Provider solution via the 
 slug: occ-provider-manager-setup
 section: Getting started
 order: 3
+updated: 2020-09-28
 ---
 
 **Last updated 28th September 2020**

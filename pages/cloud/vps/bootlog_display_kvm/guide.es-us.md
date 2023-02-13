@@ -3,6 +3,7 @@ title: 'Visualización del registro de inicio en el KVM'
 slug: boot-log
 section: Diagnóstico y modo de rescate
 excerpt: 'Cómo diagnosticar un VPS utilizando los logs de arranque (boot logs)'
+updated: 2021-07-05
 ---
 
 > [!primary]

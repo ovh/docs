@@ -4,6 +4,7 @@ excerpt: Scopri come cercare errori in un file system
 slug: check-file system-vps
 section: Diagnostica e modalità Rescue
 order: 5
+updated: 2021-04-20
 ---
 
 > [!primary]

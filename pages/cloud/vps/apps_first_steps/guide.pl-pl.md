@@ -4,6 +4,7 @@ slug: aplikacje-preinstalowane
 excerpt: Dowiedz się, jak wdrożyć aplikacje zainstalowane na serwerze VPS
 section: 'Pierwsze kroki'
 order: 8
+updated: 2022-08-25
 ---
 
 **Ostatnia aktualizacja z dnia 25/08/2022**

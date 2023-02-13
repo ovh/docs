@@ -4,6 +4,7 @@ excerpt: Découvrez comment rechercher des erreurs dans un système de fichiers 
 slug: check-file-system-vps
 section: Diagnostic et mode Rescue
 order: 5
+updated: 2021-04-20
 ---
 
 **Dernière mise à jour le 20 avril 2021**

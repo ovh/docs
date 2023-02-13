@@ -4,6 +4,7 @@ slug: retrieve-servers-state
 universe: cloud
 excerpt: Retrieve server status
 section: Visualize
+updated: 2022-03-29
 ---
 
 

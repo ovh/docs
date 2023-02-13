@@ -3,6 +3,7 @@ title: 'Tutorial - Einen Minecraft-Server auf einem VPS oder Dedicated Server ei
 slug: minecraft-server-auf-vps
 excerpt: 'Erfahren Sie hier, wie Sie Ihren eigenen Minecraft-Server installieren'
 section: Tutorial
+updated: 2021-06-29
 ---
 
 > [!primary]

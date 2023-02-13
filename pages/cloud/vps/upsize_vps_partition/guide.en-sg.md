@@ -4,6 +4,7 @@ slug: repartitioning-vps-after-upgrade
 excerpt: 'Find out how to increase your storage space following an upgrade'
 section: 'Getting started'
 order: 3
+updated: 2021-05-18
 ---
 
 **Last updated 18th May 2021**

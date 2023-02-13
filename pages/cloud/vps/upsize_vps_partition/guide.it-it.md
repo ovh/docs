@@ -2,6 +2,7 @@
 title: 'Partizionare un VPS in seguito a un upgrade'
 slug: partizionare-vps-in-seguito-a-un-upgrade
 section: 'Per iniziare'
+updated: 2021-05-18
 ---
 
 > [!primary]

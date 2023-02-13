@@ -4,6 +4,7 @@ slug: occ-diagnostics
 excerpt: "Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise en service de OVHcloud Connect"
 section: Premiers pas
 order: 4
+updated: 2021-09-02
 ---
 
 **Dernière mise à jour le 02/09/2021**

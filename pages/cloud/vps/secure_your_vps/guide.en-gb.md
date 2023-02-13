@@ -4,6 +4,7 @@ slug: tips-for-securing-a-vps
 section: 'Getting started'
 excerpt: 'Find out the basics of securing your VPS'
 order: 2
+updated: 2022-05-05
 ---
 
 **Last updated 5th May 2022**

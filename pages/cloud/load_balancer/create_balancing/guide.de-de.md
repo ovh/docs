@@ -3,6 +3,7 @@ title: Lastverteilungstyp
 slug: lastverteilungstyp-lb
 excerpt: Diese Anleitung beschreibt die verschiedenen Lastverteilungsmethoden des OVH Loadbalancers
 section: Konfiguration
+updated: 2018-01-17
 ---
 
 **Stand 22.03.2018**

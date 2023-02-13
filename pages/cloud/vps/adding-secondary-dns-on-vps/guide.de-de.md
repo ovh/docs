@@ -3,6 +3,7 @@ title: 'OVHcloud DNS Server mit einem VPS verwenden'
 slug: sekundaeren-dns-erstellen-vps
 excerpt: Erfahren Sie hier, wie Sie einen sekundären DNS Server für Ihren VPS einrichten
 section: Fortgeschrittene Nutzung
+updated: 2022-01-12
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: "Configurer l'IPv6 sur un serveur VPS"
 slug: configurer-ipv6
 excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
 section: 'Réseau et IP'
+updated: 2022-12-01
 ---
 
 **Dernière mise à jour le 01/12/2022**

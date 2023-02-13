@@ -3,6 +3,7 @@ title: Ativar e utilizar o modo rescue no seu VPS
 slug: rescue
 excerpt: Saiba como ativar e utilizar o modo rescue no seu VPS
 section: Diagnóstico e Modo Rescue
+updated: 2022-05-02
 ---
 
 **Última atualização: 02/05/2022**

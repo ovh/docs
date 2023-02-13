@@ -3,6 +3,7 @@ title: 'Mettere in sicurezza un VPS'
 slug: consigli-sicurezza-vps
 section: 'Per iniziare'
 excerpt: Scopri gli elementi di base per rendere sicuro il tuo VPS
+updated: 2022-05-05
 ---
 
 > [!primary]

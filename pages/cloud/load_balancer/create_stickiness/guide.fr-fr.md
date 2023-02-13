@@ -3,6 +3,7 @@ title: Suivi de connexion
 slug: iplb-stickiness
 excerpt: Configuration du suivi de connexion pour le Load Balancer OVHcloud
 section: Configuration
+updated: 2021-02-05
 ---
 
 **Dernière mise à jour le 28/03/2022**

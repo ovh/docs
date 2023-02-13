@@ -3,6 +3,7 @@ title: 'Configuring a new Windows Server installation'
 slug: windows-first-config
 excerpt: 'Find out how to enable Remote Desktop, ICMP and boot logs'
 section: 'Getting started'
+updated: 2022-05-06
 ---
 
 **Last updated 6th May 2022**

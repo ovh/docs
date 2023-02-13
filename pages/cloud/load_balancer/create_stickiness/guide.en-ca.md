@@ -3,6 +3,7 @@ title: 'Tracking connections'
 slug: iplb-stickiness
 excerpt: 'This guide will show you a number of ways you can track connections on the OVH Load Balancer.'
 section: Configuration
+updated: 2021-02-05
 ---
 
 ## Objective

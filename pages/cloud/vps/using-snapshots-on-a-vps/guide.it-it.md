@@ -4,6 +4,7 @@ excerpt: 'Scopri come abilitare e utilizzare l’opzione Snapshot nello Spazio C
 slug: usare-snapshot-su-un-vps
 section: 'Opzioni di backup'
 order: 1
+updated: 2022-12-02
 ---
 
 > [!primary]

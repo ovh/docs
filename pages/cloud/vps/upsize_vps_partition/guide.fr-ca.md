@@ -4,6 +4,7 @@ slug: repartitionner-vps-suite-upgrade
 excerpt: 'Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS'
 section: 'Premiers pas'
 order: 3
+updated: 2021-05-18
 ---
 
 **Dernière mise à jour le 18/05/2021**
