@@ -4,6 +4,7 @@ slug: installing-popeye
 excerpt: Find out how to sanitize your OVHcloud Managed Kubernetes with Popeye and export the generated report on an OVHcloud Object Storage container
 section: Security
 order: 1
+updated: 2022-04-15
 ---
 
 **Last updated 15th April 2022**

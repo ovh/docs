@@ -3,6 +3,7 @@ title: Using the OVHcloud Managed Kubernetes LoadBalancer
 excerpt: Find out how to use and deploy an OVHcloud Managed Kubernetes LoadBalancer
 slug: using-lb
 section: Getting started
+updated: 2022-10-31
 ---
 
 **Last updated 31st October 2022**

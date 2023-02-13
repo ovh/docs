@@ -4,6 +4,7 @@ slug: cluster-autoscaler-example
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/cluster-autoscaler-example/'
+updated: 2022-05-17
 ---
 
 <style>

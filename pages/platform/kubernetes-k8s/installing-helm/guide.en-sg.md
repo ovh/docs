@@ -4,6 +4,7 @@ slug: installing-helm
 excerpt: 'Find out how to install Helm on OVHcloud Managed Kubernetes'
 section: Tutorials
 order: 4
+updated: 2023-01-11
 ---
 
 **Last updated 11th January 2023**

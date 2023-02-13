@@ -5,6 +5,7 @@ excerpt: 'Find out how to upgrade the Kubernetes version on an OVHcloud Managed 
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/upgrading-kubernetes-version/'
+updated: 2023-01-03
 ---
 
 <style>

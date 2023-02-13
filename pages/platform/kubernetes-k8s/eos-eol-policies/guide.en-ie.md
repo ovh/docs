@@ -3,6 +3,7 @@ title: Managed Kubernetes End-of-Sale, End-of-Service and End-of-Life policies
 excerpt: ''
 slug: eos-eol-policies
 section: Technical resources
+updated: 2022-05-30
 ---
 
 **Last updated May 30<sup>th</sup>, 2022.**

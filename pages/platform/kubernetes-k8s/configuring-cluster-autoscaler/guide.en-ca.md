@@ -4,6 +4,7 @@ slug: configuring-cluster-autoscaler
 excerpt: ''
 section: User guides
 order: 7
+updated: 2022-05-17
 ---
 
 <style>

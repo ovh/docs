@@ -6,6 +6,7 @@ section: Tutorials
 order: 3
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-kubernetes-dashboard/'
+updated: 2022-11-02
 ---
 
 **Last updated November 2<sup>nd</sup>, 2022.**

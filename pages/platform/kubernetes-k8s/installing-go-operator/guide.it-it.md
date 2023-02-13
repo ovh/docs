@@ -10,6 +10,7 @@ category_l2: Managed Kubernetes (K8s)
 category_l3: Operators
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/deploying-go-operator/'
+updated: 2022-04-11
 ---
 
 **Last updated 11th April, 2022.**

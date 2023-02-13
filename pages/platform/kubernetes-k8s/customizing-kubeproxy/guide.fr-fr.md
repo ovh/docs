@@ -5,6 +5,7 @@ excerpt: 'Find out how to customize the Kube-proxy configuration on an OVHcloud 
 section: Network
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/customizing-kubeproxy/'
+updated: 2023-02-08
 ---
 
 <style>
