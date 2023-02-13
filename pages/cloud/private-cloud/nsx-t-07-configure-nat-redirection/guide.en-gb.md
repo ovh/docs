@@ -1,6 +1,6 @@
 ---
-title: mplementing NAT for port redirections
-slug: nsx-t-intersegment-secure
+title: Implementing NAT for port redirections
+slug: nsx-t-configure-nat-redirection
 excerpt: How to Configure NAT to Create Port Redirection
 section: NSX-T
 order: 07
@@ -31,14 +31,61 @@ order: 07
 
 ## Instructions
 
+We will create a redirection rule from the public virtual IP address on port 2222 in TCP to a virtual machine on LINUX on port 22 in TCP. In our example, we will use fictitious IP addresses.
 
+In the NSX-T interface, go to the `Networking`{.action} tab, select `NAT`{.action} in the **Network Services** section, select `ovh-T0-gw | Tier-0`{.action} to the right of **Gateway** and click `ADD NAT RULE`{.action}.
 
+![01 Create DNAT rule 01](images/01-create-dnat-rules01.png){.thumbnail}
+
+Choose this information :
+
+* **Action** : Select `DNAT`{.action}.
+* **Source IP** : Enter the IP address or range of addresses that can use this redirection.
+* **Destination IP** : Public virtual IP address of NSX-T.
+* **Destination PORT** : Listening port on public address like `2222`{.action}.
+* **Translated IP** : IP address of the virtual machine being redirected to.
+
+Then click on the `vertical suspension points`{.action} to the right of **Select Services**.
+
+![01 Create DNAT rule 02](images/01-create-dnat-rules02.png){.thumbnail}
+
+Type `SSH22`{.action} under the **Name** column and click `Set`{.action} under the **Service Entry** column.
+
+![01 Create DNAT rule 03](images/01-create-dnat-rules03.png){.thumbnail}
+
+Click `ADD SERVICE ENTRY`{.action}.
+
+![01 Create DNAT rule 04](images/01-create-dnat-rules04.png){.thumbnail}
+
+Fill in these values :
+
+* **Name** : Type `SSH22`{.action}.
+* **Service Type** : Take `TCP`{.action}.
+* **Source Ports** : Write the number `22`{.action}.
+
+Then click `APPLY`{.action}.
+
+![01 Create DNAT rule 05](images/01-create-dnat-rules05.png){.thumbnail}
+
+Click `SAVE`{.action}.
+
+![01 Create DNAT rule 06](images/01-create-dnat-rules06.png){.thumbnail}
+
+Click `SAVE`{.action} to confirm the creation of the redirection rule.
+
+![01 Create DNAT rule 07](images/01-create-dnat-rules07.png){.thumbnail}
+
+The rule is created and active.
+
+![01 Create DNAT rule 08](images/01-create-dnat-rules08.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
 
 [Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
 
 [Segment management](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+
+[VMware NAT documentation in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
