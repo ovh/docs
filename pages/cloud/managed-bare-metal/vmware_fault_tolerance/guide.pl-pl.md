@@ -6,6 +6,7 @@ routes:
 excerpt: Zapewnienie ciągłości działania wirtualnej maszyny przy użyciu Fault Tolerance
 section: Funkcjonalności VMware vSphere
 order: 06
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

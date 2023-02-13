@@ -7,6 +7,7 @@ excerpt: Find out how to choose between the VMware disk types
 legacy_guide_number: '1441955'
 section: Virtual machine management
 order: 4
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

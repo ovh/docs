@@ -4,6 +4,7 @@ slug: hyperv-network-hg-scale
 excerpt: 'Dowiedz się, jak skonfigurować sieć w systemie Windows Server z Hyper-V w ofercie High Grade & SCALE'
 section: 'Poziom zaawansowany'
 order: 5
+updated: 2021-11-15
 ---
 
 > [!primary]

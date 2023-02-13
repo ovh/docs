@@ -6,6 +6,7 @@ routes:
 excerpt: Find out about the different ways you can log in to vSphere
 section: 'Getting started'
 order: 2
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

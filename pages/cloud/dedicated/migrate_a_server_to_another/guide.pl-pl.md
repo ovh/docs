@@ -4,6 +4,7 @@ slug: migracja-danych-z-jednego-serwera-dedykowanego-na-drugi
 excerpt: Dowiedz się, jak migrować dane z serwera dedykowanego na inny serwer
 section: Pierwsze kroki
 order: 5
+updated: 2021-09-16
 ---
 
 > [!primary]

@@ -6,6 +6,7 @@ routes:
 excerpt: Dowiedz się, jak sklonować wirtualną maszynę przy użyciu vSphere
 section: Zarządzanie wirtualnymi maszynami
 order: 07
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

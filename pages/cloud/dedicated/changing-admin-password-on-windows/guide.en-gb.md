@@ -4,6 +4,7 @@ slug: windows-admin-password-change
 excerpt: 'Find out how to change the admin password on a Windows dedicated server'
 section: 'Server management'
 order: 2
+updated: 2021-01-12
 ---
 
 **Last updated 12th January 2021**

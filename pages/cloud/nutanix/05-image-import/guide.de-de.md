@@ -6,6 +6,7 @@ routes:
 excerpt: Managing ISO images from Prism Central
 section: Erste Schritte
 order: 07
+updated: 2022-03-10
 ---
 
 **Last updated 10th March 2022**

@@ -3,6 +3,7 @@ title: 'RAID por software'
 slug: raid-software
 excerpt: 'Cómo configurar el RAID de un servidor en caso de fallo del disco'
 section: 'RAID y discos'
+updated: 2022-10-11
 ---
 
 **Última actualización: 11/10/2022**

@@ -4,6 +4,7 @@ slug: dedicated-servers-replacing-lost-ssh-key-pair
 excerpt: "Dowiedz się, jak pobrać dostęp SSH do serwera dedykowanego"
 section: 'Diagnostyka i tryb Rescue'
 order: 2
+updated: 2023-02-06
 ---
 
 > [!primary]

@@ -6,6 +6,7 @@ section: Tutorials
 order: 005
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/encrypt-your-objects-with-sse-c/'
+updated: 2022-04-15
 ---
 
 <style>

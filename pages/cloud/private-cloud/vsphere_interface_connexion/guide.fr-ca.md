@@ -4,6 +4,7 @@ slug: connexion-interface-vsphere
 excerpt: Découvrez les différentes façons de se connecter à vSphere
 section: Premiers pas
 order: 2
+updated: 2022-06-24
 ---
 
 **Dernière mise à jour le 24/06/2022**

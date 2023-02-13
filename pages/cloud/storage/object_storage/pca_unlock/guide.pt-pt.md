@@ -4,6 +4,7 @@ slug: pca/unlock
 excerpt: Saiba como descongelar os seus arquivos
 section: OpenStack Swift Archive Storage Class Specifics
 order: 030
+updated: 2022-04-12
 ---
 
 > [!primary]

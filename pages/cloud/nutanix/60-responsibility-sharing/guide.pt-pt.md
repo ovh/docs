@@ -8,6 +8,7 @@ excerpt: "Shared responsibility between OVHcloud and the customer for the use of
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Responsibility sharing
+updated: 2022-04-07
 ---
 
 **Last updated 11th April 2022**

@@ -6,6 +6,7 @@ excerpt: Bereitstellung eines Spare-Hosts in Managed Bare Metal
 slug: die_spare-hosts
 section: OVHcloud Funktionen
 order: 04
+updated: 2020-11-18
 ---
 
 

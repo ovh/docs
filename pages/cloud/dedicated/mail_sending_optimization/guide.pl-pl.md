@@ -3,6 +3,7 @@ title: Zoptymalizuj wysyłkę e-maili
 excerpt: Dowiedz się, jak wysyłać e-maile zmniejszając ryzyko spamu
 slug: optymalizacja-wysylki-emaili
 section: Poziom zaawansowany
+updated: 2022-12-20
 ---
 
 > [!primary]

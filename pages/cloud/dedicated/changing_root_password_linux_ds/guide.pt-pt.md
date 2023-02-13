@@ -3,6 +3,7 @@ title: 'Alterar a palavra-passe root num servidor dedicado'
 slug: alterar-palavra-passe-root-linux-num-servidor-dedicado
 excerpt: 'Saiba como alterar a palavra-passe root do seu servidor dedicado'
 section: 'Diagnóstico e Modo Rescue'
+updated: 2021-02-16
 ---
 
 > [!primary]

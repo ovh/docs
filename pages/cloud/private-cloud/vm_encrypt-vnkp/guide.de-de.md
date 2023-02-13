@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to implement virtual machine encryption with vSphere Native Key Provider
 section: VMware vSphere features
 order: 09
+updated: 2023-01-26
 ---
 
 **Last updated 26th January 2023**

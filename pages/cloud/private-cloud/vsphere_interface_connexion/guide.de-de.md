@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie sich mit vSphere verbinden können
 slug: den_vsphere_client_installieren
 section: Erste Schritte
 order: 2
+updated: 2022-06-24
 ---
 
 > [!primary]

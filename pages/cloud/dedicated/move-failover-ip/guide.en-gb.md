@@ -4,6 +4,7 @@ excerpt: Find out how to move an Additional IP in the Control Panel or via the O
 slug: ip-fo-move
 section: Network management
 order: 7
+updated: 2022-12-20
 ---
 
 **Last updated 20th December 2022**

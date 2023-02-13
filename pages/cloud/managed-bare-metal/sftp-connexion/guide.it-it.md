@@ -6,6 +6,7 @@ routes:
 excerpt: Come accedere al servizio Managed Bare Metal in SFTP
 section: Per iniziare
 order: 3
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

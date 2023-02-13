@@ -7,6 +7,7 @@ excerpt: Migrar a quente uma máquina virtual para um host diferente
 legacy_guide_number: g687
 section: Funcionalidades VMware vSphere
 order: 02
+updated: 2020-11-18
 ---
 
 

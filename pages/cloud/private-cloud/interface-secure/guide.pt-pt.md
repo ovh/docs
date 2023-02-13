@@ -4,6 +4,7 @@ slug: interface-segura
 excerpt: Utilização da interface segura em infraestruturas HDS ou PCI-DSS
 section: Serviços e opções OVHcloud
 order: 04
+updated: 2022-10-12
 ---
 
 **Última atualização: 12/10/2022**

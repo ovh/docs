@@ -3,6 +3,7 @@ title: 'Authorising IP addresses for vCenter access'
 slug: authorise-ip-addresses-vcenter
 excerpt: 'Find out how to manage IP address access restrictions for vCenter'
 section: 'OVHcloud services and options'
+updated: 2023-01-25
 ---
 
 **Last updated 25th January 2023**

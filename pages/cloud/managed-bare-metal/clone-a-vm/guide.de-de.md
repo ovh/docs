@@ -6,6 +6,7 @@ routes:
 excerpt: Sehen Sie hier, wie Sie eine bestehende VM mit vSphere klonen können
 section: Verwaltung virtueller Maschinen
 order: 07
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

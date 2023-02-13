@@ -3,6 +3,7 @@ title: 'Ativar e utilizar o modo rescue'
 excerpt: 'Como ativar e utilizar o modo rescue num servidor dedicado'
 slug: rescue_mode
 section: 'Diagnóstico e Modo Rescue'
+updated: 2023-02-07
 ---
 
 > [!primary]

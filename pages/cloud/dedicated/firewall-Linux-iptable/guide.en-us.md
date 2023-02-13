@@ -4,6 +4,7 @@ excerpt: Find out how to secure a server with iptables
 slug: firewall-iptables
 section: Security
 order: 02
+updated: 2022-10-18
 ---
 
 **Last updated 18th October 2022**

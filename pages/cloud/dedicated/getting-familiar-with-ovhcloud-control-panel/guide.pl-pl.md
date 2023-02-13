@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak zarządzać usługami w Panelu klienta OVHcloud"
 slug: get-familiar-with-ovhcloud-control-panel
 section: Klienci So you Start & Kimsufi
 order: 1
+updated: 2023-01-05
 ---
 
 > [!primary]

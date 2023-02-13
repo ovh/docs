@@ -3,6 +3,7 @@ title: Konfiguration der Network Firewall
 slug: firewall-network
 excerpt: Erfahren Sie hier, wie Sie die Network Firewall konfigurieren
 section: 'Netzwerk & IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

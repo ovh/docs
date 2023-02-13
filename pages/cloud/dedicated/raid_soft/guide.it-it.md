@@ -3,6 +3,7 @@ title: 'Configurare un RAID software'
 slug: raid-software
 excerpt: 'Come ripristinare il volume RAID di un server in seguito al malfunzionamento di un disco'
 section: 'RAID e dischi'
+updated: 2022-10-11
 ---
 
 **Ultimo aggiornamento: 11/10/2022**

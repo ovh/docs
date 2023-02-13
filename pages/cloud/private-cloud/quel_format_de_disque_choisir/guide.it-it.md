@@ -5,6 +5,7 @@ excerpt: Come scegliere tra i diversi tipi di dischi VMware
 legacy_guide_number: '1441955'
 section: Gestione delle macchine virtuali
 order: 04
+updated: 2022-02-02
 ---
 
 **Ultimo aggiornamento: 01/02/2022**

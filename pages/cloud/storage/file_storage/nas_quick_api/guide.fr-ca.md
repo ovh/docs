@@ -4,6 +4,7 @@ slug: nas/quick-api
 excerpt: "Découvrez comment bien débuter avec un service NAS-HA en utilisant l'API OVHcloud"
 section: NAS-HA
 order: 06
+updated: 2022-07-20
 ---
 
 **Dernière mise à jour le 20/07/2022**

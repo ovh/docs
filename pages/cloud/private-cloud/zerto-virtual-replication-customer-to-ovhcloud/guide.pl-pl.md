@@ -3,6 +3,7 @@ title: "Korzystanie z usługi Zerto między OVHcloud a platformą zewnętrzną"
 slug: zerto-virtual-replication-klient-do-ovhcloud
 excerpt: 'Dowiedz się, jak połączyć Zerto OVHcloud z inną platformą'
 section: 'Usługi i opcje OVHcloud'
+updated: 2022-02-11
 ---
 
 > [!primary]

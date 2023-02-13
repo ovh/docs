@@ -3,6 +3,7 @@ title: Optimierung der Verteilung der VM auf den Hosts
 excerpt: Wie kann ich die VM bestmöglich auf den Hosts verteilen, um die Ressourcen zu optimieren?
 slug: optimierung_der_verteilung_der_vm_auf_den_hosts
 section: Ressourcen-Management
+updated: 2018-03-26
 ---
 
 

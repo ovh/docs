@@ -3,6 +3,7 @@ title: How to determine if your dedicated server supports virtual MAC addresses
 slug: network-support-virtual-mac
 excerpt: Find out how to use the OVHcloud API to determine whether the virtual MAC feature is supported on a dedicated server 
 section: Network Management
+updated: 2021-12-09
 ---
 
 **Last updated 9th December 2021**

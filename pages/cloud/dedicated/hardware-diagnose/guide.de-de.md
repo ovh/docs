@@ -3,6 +3,7 @@ title: 'Hardwarefehler auf einem dedizierten Server erkennen'
 slug: diagnose-hardwarefehler-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie mithilfe von Diagnose-Tools Hardwarefehler auf Ihrem Server erkennen'
 section: Diagnose & Rescue Modus
+updated: 2022-12-15
 ---
 
 > [!primary]

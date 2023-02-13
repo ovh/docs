@@ -4,6 +4,7 @@ slug: pcs/acl
 excerpt: Here are the concepts for implementing ACLs in Object Storage
 section: OpenStack Swift Storage Class Specifics
 order: 040
+updated: 2022-05-06
 ---
 
 **Last updated 06th May 2022**

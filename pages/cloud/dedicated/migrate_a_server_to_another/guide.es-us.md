@@ -4,6 +4,7 @@ slug: migrar-datos-de-un-servidor-a-otro
 excerpt: Cómo migrar los datos de un servidor a otro
 section: Primeros pasos
 order: 4
+updated: 2021-09-16
 ---
 
 > [!primary]

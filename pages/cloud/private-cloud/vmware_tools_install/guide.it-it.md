@@ -4,6 +4,7 @@ slug: installare-vmware-tools
 excerpt: 'Come installare VMware Tools su Linux e Windows'
 section: 'Gestione delle macchine virtuali'
 order: 6
+updated: 2022-02-01
 ---
 
 > [!primary]

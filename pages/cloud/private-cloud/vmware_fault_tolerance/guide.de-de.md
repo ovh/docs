@@ -5,6 +5,7 @@ excerpt: Gewährleisten Sie das kontinuierliche Funktionieren Ihrer virtuellen M
 legacy_guide_number: '2163251'
 section: VMware vSphere Funktionen
 order: 06
+updated: 2020-07-07
 ---
 
 **Stand 22.07.2020**

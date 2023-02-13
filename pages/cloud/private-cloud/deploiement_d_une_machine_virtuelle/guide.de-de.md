@@ -4,6 +4,7 @@ slug: virtuelle-maschine-deployen
 excerpt: Hier erfahren Sie, wie Sie eine virtuelle Maschine über das vSphere Interface erstellen.
 section: Verwaltung virtueller Maschinen
 order: 0
+updated: 2020-06-29
 ---
 
 **Stand 31.08.2020**

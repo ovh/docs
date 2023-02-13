@@ -5,6 +5,7 @@ excerpt: Gestionar la política de reinicio con la función HA
 legacy_guide_number: '2163279'
 section: Funcionalidades de VMware vSphere
 order: 02
+updated: 2020-04-30
 ---
 
 **Última actualización: 21/02/2018**

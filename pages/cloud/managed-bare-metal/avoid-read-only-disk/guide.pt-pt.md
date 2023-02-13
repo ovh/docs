@@ -6,6 +6,7 @@ routes:
 excerpt: Evitar a passagem em apenas leitura do disco da sua VM em Linux
 section: Gestão das máquinas virtuais
 order: 10
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

@@ -6,6 +6,7 @@ section: FAQ
 order: 011
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/lifecycle-actions/'
+updated: 2022-12-27
 ---
 
 **Last updated 27th December 2022**

@@ -4,6 +4,7 @@ slug: securiser-un-serveur-dedie
 excerpt: 'Apprenez à sécuriser votre serveur dédié grâce à quelques conseils'
 section: 'Premiers pas'
 order: 2
+updated: 2018-06-20
 ---
 
 **Dernière mise à jour le 2018/06/20**

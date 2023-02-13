@@ -4,6 +4,7 @@ slug: pcs/sync-rclone-object-storage
 excerpt: Cómo sincronizar el Object Storage de OVH con Rclone
 section: OpenStack Swift Storage Class Specifics
 order: 140
+updated: 2021-10-27
 ---
 
 **Última actualización: 22/02/2018**

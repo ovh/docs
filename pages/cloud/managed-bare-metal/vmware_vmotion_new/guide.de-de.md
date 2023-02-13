@@ -6,6 +6,7 @@ routes:
 excerpt: Verlagern Sie Ihre virtuelle Maschine bei laufendem Betrieb auf einen anderen Host (Hot-Swap)
 section: VMware vSphere Funktionen
 order: 4
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

@@ -5,6 +5,7 @@ slug: beveiligen-dedicated-server
 excerpt: 'Tips over het beveiligen van uw dedicated server'
 section: 'Eerste stappen'
 order: 2
+updated: 2018-06-20
 ---
 
 **Laatste update 24-08-2018**

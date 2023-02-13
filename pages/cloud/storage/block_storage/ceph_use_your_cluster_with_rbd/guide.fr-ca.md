@@ -3,6 +3,7 @@ title: Accéder au cluster en utilisant le client rbd
 slug: ceph/use-your-cluster-with-rbd
 excerpt: Ce guide vous présente comment avoir accès à votre cluster en utilisant le client rbd.
 section: Cloud Disk Array
+updated: 2022-06-22
 ---
 
 **Last update 22th June 2022**

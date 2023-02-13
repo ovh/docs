@@ -5,6 +5,7 @@ excerpt: Découvrez comment supprimer un datastore de votre Private Cloud
 legacy_guide_number: '7766789'
 section: Fonctionnalités OVHcloud
 order: 07
+updated: 2020-07-01
 ---
 
 **Dernière mise à jour le 01/07/2020**

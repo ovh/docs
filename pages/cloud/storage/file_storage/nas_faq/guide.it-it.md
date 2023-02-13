@@ -4,6 +4,7 @@ slug: nas/faq
 excerpt: Hai una domanda sul NAS? Ecco le risposte alle domande più frequenti
 section: NAS-HA
 order: 02
+updated: 2021-09-09
 ---
 
 > [!primary]

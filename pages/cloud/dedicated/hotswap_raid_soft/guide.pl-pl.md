@@ -3,6 +3,7 @@ title: 'Wymiana dysku bez wyłączania serwera – Programowa macierz RAID'
 slug: hotswap-raid-soft
 excerpt: 'Dowiedz się, jak przebiega wymiana dysku bez wyłączania serwera w programowej macierzy RAID'
 section: 'RAID & dyski'
+updated: 2016-11-21
 ---
 
 **Ostatnia aktualizacja z dnia 14-10-2019**

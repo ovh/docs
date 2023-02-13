@@ -6,6 +6,7 @@ section: Disaster Recovery Plan
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/disaster-recovery-plan-overview/'
+updated: 2022-06-29
 ---
 
 **Last updated 29th June 2022**

@@ -4,6 +4,7 @@ slug: securiser-acces-vsphere-web
 excerpt: Découvrez comment sécuriser l'accès à votre client vSphere Web
 section: Informations Meltdown et Spectre
 order: 01
+updated: 2020-06-30
 ---
 
 **Dernière mise à jour le 30/06/2020**

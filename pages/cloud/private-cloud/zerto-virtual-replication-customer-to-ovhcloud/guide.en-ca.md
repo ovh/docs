@@ -3,6 +3,7 @@ title: 'Using Zerto between OVHcloud and a third party platform'
 slug: zerto-virtual-replication-customer-to-ovh
 excerpt: 'Learn how to setup Zerto between your OVHcloud Private Cloud and another platform'
 section: 'OVHcloud services and options'
+updated: 2022-02-11
 ---
 
 **Last updated 11th February 2022** 

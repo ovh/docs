@@ -3,6 +3,7 @@ title: Hosted Private Cloud in einem vRack verwenden
 excerpt: Erfahren Sie hier, wie Sie vRack mit Ihrer Hosted Private Cloud verwenden
 slug: hinzufugen_der_dedicated_cloud_zum_vrack_15_und_konfiguration_einer_vm
 section: OVHcloud Funktionen
+updated: 2022-03-28
 ---
 
 > [!primary]

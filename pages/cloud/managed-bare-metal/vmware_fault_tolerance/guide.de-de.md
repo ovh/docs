@@ -6,6 +6,7 @@ routes:
 excerpt: Gewährleisten Sie das kontinuierliche Funktionieren Ihrer virtuellen Maschine mit Fault Tolerance
 section: VMware vSphere Funktionen
 order: 06
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/fr/vps/windows-first-config/'
 excerpt: Découvrez comment activer la connexion au bureau à distance et la réponse ICMP
 section: Premiers pas
+updated: 2022-01-18
 ---
 
 **Derniére mise à jour le 18/01/2022**

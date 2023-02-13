@@ -3,6 +3,7 @@ title: 'Zmiana strefy rozgłaszania bloku IP w sieci vRack'
 slug: zmiana-rozglaszania-bloku-ip-vrack
 excerpt: 'Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack'
 section: vRack
+updated: 2019-03-12
 ---
 
 **Ostatnia aktualizacja z dnia 17-06-2019**

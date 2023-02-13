@@ -4,6 +4,7 @@ slug: self-service-calm
 excerpt: 'Comment activer Self Service (CALM) dans votre Prism Central' 
 section: Utilisation avancée
 order: 06
+updated: 2023-01-16
 ---
 
 **Dernière mise à jour le 16/01/2023**

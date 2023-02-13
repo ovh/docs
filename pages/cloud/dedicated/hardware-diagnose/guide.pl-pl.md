@@ -3,6 +3,7 @@ title: 'Diagnostyka usterek sprzętowych serwera dedykowanego'
 slug: diagnostyka-usterek-sprzetowych-serwera-dedykowanego
 excerpt: 'Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze'
 section: 'Diagnostyka i tryb Rescue'
+updated: 2022-12-15
 ---
 
 > [!primary]

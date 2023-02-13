@@ -4,6 +4,7 @@ slug: how_to_use_vscope
 excerpt: The vScope interface allows you to monitor your infrastructure
 section: OVHcloud services and options
 order: 01
+updated: 2022-01-28
 ---
 
 **Last updated 28th January 2022**

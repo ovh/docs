@@ -4,6 +4,7 @@ excerpt: Découvrez comment associer une adresse e-mail à votre utilisateur vSp
 slug: associer-email-a-un-utilisateur
 legacy_guide_number: '1441987'
 section: Fonctionnalités OVHcloud
+updated: 2020-07-07
 ---
 
 **Dernière mise à jour le 06/07/2020**

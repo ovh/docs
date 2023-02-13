@@ -6,6 +6,7 @@ routes:
 excerpt: Encomendar um bloco IP no seu Managed Bare Metal
 section: Funcionalidades da OVHcloud
 order: 01
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

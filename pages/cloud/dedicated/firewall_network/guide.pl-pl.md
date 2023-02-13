@@ -3,6 +3,7 @@ title: 'Konfiguracja zapory sieciowej Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować reguły firewalla w OVHcloud'
 slug: network-firewall
 section: 'Sieć & IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

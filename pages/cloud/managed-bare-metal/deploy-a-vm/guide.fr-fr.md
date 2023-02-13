@@ -6,6 +6,7 @@ routes:
 excerpt: Découvrez comment déployer une machine virtuelle depuis l'interface vSphere
 section: Gestion des machines virtuelles
 order: 0
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

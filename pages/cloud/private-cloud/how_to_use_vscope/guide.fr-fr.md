@@ -5,6 +5,7 @@ excerpt: "Découvrez comment utiliser l'interface vScope pour surveiller votre i
 legacy_guide_number: '2163183'
 section: Services et options OVHcloud
 order: 01
+updated: 2022-01-28
 ---
 
 **Dernière mise à jour le 28/01/2022**

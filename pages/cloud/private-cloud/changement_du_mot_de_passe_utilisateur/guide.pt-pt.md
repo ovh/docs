@@ -3,6 +3,7 @@ title: Alteração da palavra-passe de utilizador
 slug: alteracao-da-palavra-passe-de-utilizador
 excerpt: Saiba como alterar a palavra-passe de um utilizador cliente vSphere através da Área de Cliente OVHcloud
 section: Funcionalidades da OVHcloud
+updated: 2021-08-19
 ---
 
 **Última atualização: 19/08/2021**

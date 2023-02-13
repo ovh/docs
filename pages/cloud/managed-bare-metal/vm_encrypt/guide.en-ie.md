@@ -5,6 +5,7 @@ routes:
 excerpt: 'Learn how to enable VM encryption'
 slug: vm-encrypt
 section: 'VMware vSphere features'
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

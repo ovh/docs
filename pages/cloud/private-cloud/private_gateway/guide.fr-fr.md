@@ -4,6 +4,7 @@ slug: private-gateway
 excerpt: Découvrez comment activer la Private Gateway sur une infrastructure Hosted Private Cloud
 section: Fonctionnalités OVHcloud
 hidden: true
+updated: 2023-01-06
 ---
 
 **Dernière mise à jour le 06/01/2023**

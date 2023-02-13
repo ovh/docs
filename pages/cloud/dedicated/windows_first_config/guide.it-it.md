@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/it/vps/windows-first-config/'
 excerpt: Come attivare la connessione a desktop remoto e la risposta ICMP
 section: Per iniziare
+updated: 2022-01-18
 ---
 
 > [!primary]

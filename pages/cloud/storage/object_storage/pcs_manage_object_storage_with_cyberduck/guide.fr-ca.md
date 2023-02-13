@@ -6,6 +6,7 @@ excerpt: 'Découvrez comment utiliser votre Object Storage avec Cyberduck'
 slug: pcs/manage-object-storage-with-cyberduck
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 180
+updated: 2021-06-18
 ---
 
 **Dernière mise à jour le 18/06/2021**

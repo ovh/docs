@@ -4,6 +4,7 @@ slug: uzywanie-2FA
 excerpt: Dowiedz się, jak wdrożyć weryfikację dwuetapową, aby chronić Twoją infrastrukturę
 section: Funkcjonalności OVHcloud
 order: 05
+updated: 2022-06-10
 ---
 
 **Ostatnia aktualizacja z dnia 10-06-2022**

@@ -4,6 +4,7 @@ excerpt: Find out how to manage your Enterprise File Storage service in the OVHc
 slug: netapp/control-panel
 section: Enterprise File Storage
 order: 020
+updated: 2022-04-14
 ---
 
 **Last updated 14th April 2022**

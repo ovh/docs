@@ -3,6 +3,7 @@ title: Object Storage Swift - Wykorzystanie Object Storage z rClone
 slug: pcs/sync-rclone-object-storage
 section: OpenStack Swift Storage Class Specifics
 order: 140
+updated: 2021-10-27
 ---
 
 **Ostatnia aktualizacja dnia 2018-01-22**

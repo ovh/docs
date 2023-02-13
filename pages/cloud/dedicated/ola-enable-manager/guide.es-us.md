@@ -4,6 +4,7 @@ slug: ola-manager
 excerpt: 'Activar el servicio OVHcloud Link Aggregation en el área de cliente'
 section: 'Uso avanzado'
 order: 1
+updated: 2022-05-18
 ---
 
 > [!primary]

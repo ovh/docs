@@ -4,6 +4,7 @@ slug: nas/partitions-api
 excerpt: "Aprenda a gerir as partições NAS-HA graças à API OVHcloud"
 section: NAS-HA
 order: 08
+updated: 2022-07-20
 ---
 
 > [!primary]

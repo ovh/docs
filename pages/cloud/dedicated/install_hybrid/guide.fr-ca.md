@@ -3,6 +3,7 @@ title: 'Choisir une grappe de disques pour installer un système d’exploitatio
 slug: install-hybrid
 excerpt: "Découvrez comment choisir une grappe de disques spécifique pour installer votre système d'exploitation"
 section: 'RAID & disques'
+updated: 2018-11-22
 ---
 
 **Dernière mise à jour le 09/11/2018**

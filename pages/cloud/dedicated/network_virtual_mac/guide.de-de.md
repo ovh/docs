@@ -3,6 +3,7 @@ title: 'Virtuelle MAC-Adresse einer Additional IP zuweisen'
 slug: network-virtual-mac
 excerpt: 'Erfahren Sie hier, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Additional IP verbinden'
 section: 'Netzwerk & IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

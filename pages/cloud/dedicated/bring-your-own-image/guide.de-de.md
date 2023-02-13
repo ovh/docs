@@ -3,6 +3,7 @@ title: Bring Your Own Image verwenden
 excerpt: Erfahren Sie hier, wie Sie Ihre eigenen Images bereitstellen
 slug: bringyourownimage
 section: Fortgeschrittene Nutzung
+updated: 2022-11-25
 ---
 
 > [!primary]

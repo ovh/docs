@@ -3,6 +3,7 @@ title: Delete VM replica from Zerto recovery site
 slug: zerto-vm-replica-deletion
 excerpt: Remove a VM replica from a recovery site after deletion on the source site
 section: OVHcloud services and options
+updated: 2021-12-09
 ---
 
 **Last updated 09th December 2021**

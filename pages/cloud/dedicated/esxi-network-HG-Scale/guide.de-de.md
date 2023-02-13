@@ -4,6 +4,7 @@ slug: esxi-network-hg-scale
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf VMware ESXi für die High Grade & SCALE Reihen einrichten'
 section: 'Fortgeschrittene Nutzung'
 order: 6
+updated: 2022-05-09
 ---
 
 > [!primary]

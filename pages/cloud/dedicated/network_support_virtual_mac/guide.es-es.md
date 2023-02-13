@@ -3,6 +3,7 @@ title: Determinar si la funcionalidad de las MAC virtuales es compatible con un 
 slug: network-support-virtual-mac
 excerpt: Cómo determinar si la funcionalidad de las MAC virtuales es compatible con un servidor dedicado a través de la API de OVHcloud
 section: Red e IP
+updated: 2021-12-09
 ---
 
 > [!primary]

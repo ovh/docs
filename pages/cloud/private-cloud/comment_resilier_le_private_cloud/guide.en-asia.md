@@ -4,6 +4,7 @@ slug: how-to-cancel-private-cloud
 excerpt: Learn how to request the termination of a Private cloud infrastructure
 section: OVHcloud Features
 order: 09
+updated: 2020-07-08
 ---
 
 **Last updated 8th July 2020**

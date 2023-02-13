@@ -6,6 +6,7 @@ routes:
 excerpt: Presentation of various advanced tools available for the Nutanix on OVHcloud offer
 section: Uso avanzado
 order: 01
+updated: 2022-03-28
 ---
 
 **Last updated 28th March 2022**

@@ -3,6 +3,7 @@ title: Einen Server mit Memcached-Dienst sichern
 slug: server-mit-memcached-dienst-sichern
 excerpt: In dieser Anleitung erfahren Sie, wie Sie Ihren Memcached-Dienst sichern
 section: Fortgeschrittene Nutzung
+updated: 2018-03-02
 ---
 
 **Stand 05.03.2018**

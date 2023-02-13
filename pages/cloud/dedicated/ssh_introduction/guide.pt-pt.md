@@ -3,6 +3,7 @@ title: Introdução ao SSH
 slug: ssh-introducao
 excerpt: "Saiba como utilizar as ligações SSH para aceder ao servidor"
 section: Introdução
+updated: 2022-06-08
 ---
 
 > [!primary]

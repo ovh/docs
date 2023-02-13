@@ -4,6 +4,7 @@ slug: s3/s3-compliancy
 excerpt:
 section: General information
 order: 010
+updated: 2021-12-08
 ---
 
 **Last updated 8th December 2021**

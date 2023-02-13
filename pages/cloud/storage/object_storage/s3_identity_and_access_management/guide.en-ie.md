@@ -4,6 +4,7 @@ slug: s3/identity-and-access-management
 excerpt:
 section: General guides to start
 order: 030
+updated: 2022-09-27
 ---
 
 **Last updated September 27<sup>th</sup> 2022**

@@ -4,6 +4,7 @@ slug: nas/nfs
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
 section: HA-NAS
 order: 03
+updated: 2022-12-06
 ---
 
 > [!primary]

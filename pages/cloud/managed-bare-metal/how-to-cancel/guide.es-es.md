@@ -6,6 +6,7 @@ routes:
 excerpt: Cómo solicitar la baja de una infraestructura Managed Bare Metal
 section: Funcionalidades de OVHcloud
 order: 09
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

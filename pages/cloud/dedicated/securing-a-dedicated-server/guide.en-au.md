@@ -4,6 +4,7 @@ slug: securing-a-dedicated-server
 excerpt: This guide offers some general tips for securing your server.
 section: Getting started
 order: 2
+updated: 2018-06-20
 ---
 
 **Last updated 20th June 2018**

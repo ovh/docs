@@ -4,6 +4,7 @@ excerpt: 'FAQ sur la solution Entreprise File Storage'
 slug: netapp/faq
 section: Enterprise File Storage
 order: 050
+updated: 2022-03-21
 ---
 
 **Dernière mise à jour le 21/03/2022**

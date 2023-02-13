@@ -3,6 +3,7 @@ title: 'Change the announcement of an IP block in vRack'
 slug: change-anouncement-ip-block-vrack
 excerpt: 'Learn how to change the announcement of an IP block in vRack'
 section: vRack
+updated: 2019-03-12
 ---
 
 **Last updated 12/03/2019**

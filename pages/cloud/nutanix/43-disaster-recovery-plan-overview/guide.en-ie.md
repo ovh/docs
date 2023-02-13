@@ -4,6 +4,7 @@ slug: disaster-recovery-plan-overview
 excerpt: Overview of various Disaster Recovery Plan solutions in Nutanix
 section: Disaster Recovery Plan
 order: 01
+updated: 2022-06-29
 ---
 
 **Last updated 29th June 2022**

@@ -5,6 +5,7 @@ excerpt: Déplacer votre machine virtuelle sur un hôte différent à chaud
 legacy_guide_number: '7767025'
 section: Fonctionnalités VMware vSphere
 order: 04
+updated: 2020-07-10
 ---
 
 **Dernière mise à jour le 30/06/2020**

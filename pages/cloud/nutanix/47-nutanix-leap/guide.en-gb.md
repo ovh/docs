@@ -4,6 +4,7 @@ slug: leap-replication
 excerpt: Implementing advanced replication with Leap
 section: Disaster Recovery Plan
 order: 05
+updated: 2022-07-18
 ---
 
 **Last updated 18th July 2022**

@@ -7,6 +7,7 @@ excerpt: So kehren Sie mithilfe von Snapshots zu einem früheren Zustand Ihrer V
 legacy_guide_number: '7766547'
 section: Verwaltung virtueller Maschinen
 order: 8
+updated: 2020-11-18
 ---
 
 **Letzte Aktualisierung am 18.11.2020**

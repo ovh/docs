@@ -6,6 +6,7 @@ routes:
 excerpt: Come accedere a vSphere con diverse modalità
 section: Per iniziare
 order: 2
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

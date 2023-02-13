@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to restrict Prism Central Web access
 section: Rede e segurança
 order: 05
+updated: 2022-01-11
 ---
 
 **Last updated 11th January 2022**

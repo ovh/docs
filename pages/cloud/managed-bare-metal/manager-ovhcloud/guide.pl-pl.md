@@ -6,6 +6,7 @@ routes:
 excerpt: Odkryj możliwości Panelu klienta Managed Bare Metal
 section: Pierwsze kroki
 order: 1
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

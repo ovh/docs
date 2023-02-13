@@ -3,6 +3,7 @@ title: 'Asignar una MAC virtual a una Additional IP'
 slug: mac-virtual
 excerpt: 'Cómo crear una dirección MAC virtual y asociarle una Additional IP'
 section: 'Red e IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

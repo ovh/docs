@@ -4,6 +4,7 @@ slug: polaczenie-interfejs-vsphere
 excerpt:  Poznaj różne sposoby logowania do vSphere
 section: Pierwsze kroki
 order: 2
+updated: 2022-06-24
 ---
 
 > [!primary]

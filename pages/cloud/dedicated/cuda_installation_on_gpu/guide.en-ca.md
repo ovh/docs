@@ -2,6 +2,7 @@
 title: How to install CUDA on a dedicated GPU server
 slug: install-cuda-serveur-gpu
 section: Server Management
+updated: 2017-12-14
 ---
 
 **Last updated 2018/01/16**

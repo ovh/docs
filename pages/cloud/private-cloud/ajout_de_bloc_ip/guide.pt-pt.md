@@ -4,6 +4,7 @@ slug: adicionar-bloco-ip
 excerpt: Encomendar um bloco IP no seu Hosted Private Cloud
 section: Funcionalidades da OVHcloud
 order: 01
+updated: 2022-04-06
 ---
 
 **Última atualização: 06/04/2022**

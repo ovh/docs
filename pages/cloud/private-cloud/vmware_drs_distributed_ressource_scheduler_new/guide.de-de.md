@@ -4,6 +4,7 @@ slug: vmware-drs-distributed-resource-scheduler
 excerpt: So steuern Sie die Lastverteilung mit der DRS-Funktion
 section: VMware vSphere Funktionen
 order: 03
+updated: 2020-07-07
 ---
 
 **Stand 20.08.2020**

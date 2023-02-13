@@ -4,6 +4,7 @@ slug: cambiar-los-permisos-de-un-usuario
 routes:
     canonical: 'https://docs.ovh.com/es/private-cloud/cambiar-los-permisos-de-un-usuario/'
 section: Funcionalidades de OVHcloud
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

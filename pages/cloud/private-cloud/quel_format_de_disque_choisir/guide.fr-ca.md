@@ -5,6 +5,7 @@ excerpt: Découvrez les différents types de formats de disque
 legacy_guide_number: '1441955'
 section: Gestion des machines virtuelles
 order: 04
+updated: 2022-02-02
 ---
 
 **Dernière mise à jour le 01/02/2022**

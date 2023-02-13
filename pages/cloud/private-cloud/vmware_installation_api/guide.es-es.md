@@ -4,6 +4,7 @@ slug: usar-vsphere-sdk
 excerpt: Instrumentación y uso del conjunto de librerías vSphere SDK
 section: Funcionalidades de VMware vSphere
 order: 12
+updated: 2020-07-13
 ---
 
 **Última actualización: 1/7/2020**

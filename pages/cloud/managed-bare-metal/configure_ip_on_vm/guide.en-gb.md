@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/configure-ip-on-virtual-machine/'
 excerpt: 'This guide will show you how to assign a public or private IP address to a virtual machine'
 section: 'Getting started'
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

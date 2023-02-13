@@ -4,6 +4,7 @@ slug: secnumcloud-vsphere
 excerpt: Découvrez comment prendre en main et configurer votre environnement vSphere SecNumCloud
 section: Fonctionnalités OVHcloud
 hidden: true
+updated: 2021-11-23
 ---
 
 **Dernière mise à jour le 23/11/2021**

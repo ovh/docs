@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie eine Additional IP über Ihr Kundencenter od
 slug: ip-fo-move
 section: Netzwerk & IP
 order: 7
+updated: 2022-12-20
 ---
 
 > [!primary]

@@ -5,6 +5,7 @@ excerpt: 'Frequently asked questions'
 section: Cloud Disk Array
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/faq/'
+updated: 2020-11-05
 ---
 
 **Last update 5th November 2020**

@@ -3,6 +3,7 @@ title: Konfiguracja adresu IP na maszynie wirtualnej
 slug: konfiguracja-ip-vm
 excerpt: Dowiedz się, jak skonfigurować adres IP na maszynie wirtualnej
 section: Pierwsze kroki
+updated: 2020-10-13
 ---
 
 **Ostatnia aktualizacja z dn. 2018-01-03 r.**

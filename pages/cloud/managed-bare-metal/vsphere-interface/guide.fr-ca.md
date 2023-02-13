@@ -6,6 +6,7 @@ routes:
 excerpt: Découvrez les différentes façons de se connecter à vSphere
 section: Premiers pas
 order: 2
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

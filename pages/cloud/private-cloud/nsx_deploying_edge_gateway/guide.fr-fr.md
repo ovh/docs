@@ -5,6 +5,7 @@ excerpt: "Découvrez comment déployer une edge gateway NSX via l'interface vSph
 legacy_guide_number: '7766362'
 section: NSX
 order: 02
+updated: 2021-11-19
 ---
 
 **Dernière mise à jour le 19/11/2021**

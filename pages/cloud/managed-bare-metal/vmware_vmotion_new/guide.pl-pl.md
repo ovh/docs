@@ -6,6 +6,7 @@ routes:
 excerpt: Przeniesienie wirtualnej maszyny na inny host bez jej wyłączania
 section: Funkcjonalności VMware vSphere
 order: 04
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

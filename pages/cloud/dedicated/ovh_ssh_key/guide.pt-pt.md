@@ -3,6 +3,7 @@ title: Como instalar a chave SSH OVHcloud
 slug: ovh-ssh-key
 excerpt: Saiba como instalar e desativar uma chave SSH OVHcloud
 section: SSH e chave SSH
+updated: 2018-02-12
 ---
 
 **Última atualização no dia 12/04/2021**

@@ -4,6 +4,7 @@ slug: ip-block-hinzufuegen
 excerpt: Erfahren Sie hier, wie Sie einen IP-Block für Ihr Hosted Private Cloud Projekt bestellen
 legacy_guide_number: '7766457'
 section: OVHcloud Funktionen
+updated: 2022-04-06
 ---
 
 **Letzte Aktualisierung am 06.04.2022**

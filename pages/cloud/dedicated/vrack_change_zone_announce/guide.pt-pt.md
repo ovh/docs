@@ -3,6 +3,7 @@ title: 'Alterar o anúncio de um bloco IP no vRack'
 slug: alterar-anuncio-bloco-ip-vrack
 excerpt: 'Saiba como alterar o anúncio de um bloco IP no vRack'
 section: vRack
+updated: 2019-03-12
 ---
 
 **Última atualização: 24/04/2019**

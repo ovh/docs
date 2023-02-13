@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to upgrade your Nutanix Cluster
 section: Primeros pasos
 order: 08
+updated: 2022-05-16
 ---
 
 **Last updated 16th May 2022**

@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/private-cloud/usar-template-ovh/'
 excerpt: 'Saiba como usar um template Windows e SQL Server'
 section: 'Serviços e opções OVHcloud'
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie Ihren Enterprise File Storage Dienst über I
 slug: netapp/control-panel
 section: Enterprise File Storage
 order: 020
+updated: 2022-04-14
 ---
 
 > [!primary]

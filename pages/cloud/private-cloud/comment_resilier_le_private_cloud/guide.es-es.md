@@ -4,6 +4,7 @@ slug: dar-de-baja-solucion-hosted-private-cloud
 excerpt: Cómo solicitar la baja de una infraestructura Hosted Private Cloud
 section: Funcionalidades de OVHcloud
 order: 09
+updated: 2020-07-08
 ---
 
 **Última actualización: 18/06/2020**

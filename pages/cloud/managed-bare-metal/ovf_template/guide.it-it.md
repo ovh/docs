@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/it/private-cloud/installazione-template-ovh/'
 excerpt: 'Scopri come installare un template OVF Windows e SQL Server'
 section: 'Servizi e opzioni OVHcloud'
+updated: 2020-11-18
 ---
 
 > [!primary]

@@ -5,6 +5,7 @@ excerpt: Zapewnienie ciągłości działania wirtualnej maszyny przy użyciu Fau
 legacy_guide_number: '2163251'
 section: Funkcjonalności VMware vSphere
 order: 06
+updated: 2020-07-07
 ---
 
 **Ostatnia aktualizacja z dnia 11-09-2020**

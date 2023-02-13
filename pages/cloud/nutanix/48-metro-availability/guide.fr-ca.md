@@ -4,6 +4,7 @@ slug: metro-availability
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
 section: "Plan de Reprise d'Activité"
 order: 06
+updated: 2022-11-15
 ---
 
 **Dernière mise à jour le 15/11/2022**

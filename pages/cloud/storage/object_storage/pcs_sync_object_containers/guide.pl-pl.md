@@ -5,6 +5,7 @@ section: OpenStack Swift Storage Class Specifics
 order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/sync-object-containers/'
+updated: 2022-11-16
 ---
 
 **Last updated 16th November 2022**

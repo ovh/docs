@@ -6,6 +6,7 @@ routes:
 excerpt: Come utilizzare la funzionalità di crittografia delle macchine virtuali
 section: Funzionalità VMware vSphere
 order: 07
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

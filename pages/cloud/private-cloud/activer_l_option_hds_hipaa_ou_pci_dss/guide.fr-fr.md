@@ -4,6 +4,7 @@ slug: activer-l-option-hds-ou-pci-dss
 excerpt: "Découvrez comment activer l'option pour l’hébergement des données de santé ou des données bancaires sur votre offre Hosted Private Cloud"
 section: 'Services et options OVHcloud'
 order: 3
+updated: 2020-05-27
 ---
 
 **Dernière mise à jour le 25 mai 2020**

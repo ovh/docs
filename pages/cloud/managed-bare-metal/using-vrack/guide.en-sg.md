@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to use vRack with a Managed Bare Metal solution
 section: OVHcloud Features
 order: 02
+updated: 2020-11-23
 ---
 
 **Last updated 23rd November 2020**

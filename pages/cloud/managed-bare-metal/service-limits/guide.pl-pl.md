@@ -6,6 +6,7 @@ routes:
 excerpt: 'Poznaj możliwości i ograniczenia techniczne rozwiązań Managed Bare Metal dostarczanych przez OVHcloud'
 section: FAQ
 order: 2
+updated: 2020-10-27
 ---
 
 > [!primary]

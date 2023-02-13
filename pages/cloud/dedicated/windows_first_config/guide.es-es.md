@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/es/vps/windows-first-config/'
 excerpt: Cómo activar la conexión al escritorio remoto y la respuesta ICMP
 section: Primeros pasos
+updated: 2022-01-18
 ---
 
 > [!primary]

@@ -6,6 +6,7 @@ routes:
 excerpt: 'Retrouvez les capacités et limitations techniques des solutions Managed Bare Metal fournies par OVHcloud'
 section: FAQ
 order: 2
+updated: 2020-10-27
 ---
 
 **Dernière mise à jour le 30 novembre 2020**

@@ -4,6 +4,7 @@ excerpt: 'Saiba como instalar as VMware Tools em Linux ou Windows'
 slug: instalar_o_pacote_vmware_tools
 legacy_guide_number: g621
 section: Gestão das máquinas virtuais
+updated: 2022-02-01
 ---
 
 **Última atualização: 01/02/2022**

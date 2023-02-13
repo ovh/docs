@@ -3,6 +3,7 @@ title: 'Optimising the sending of emails'
 slug: optimise-email-sending
 excerpt: 'Find out how to send emails and limit the risk of them being marked as spam'
 section: Advanced
+updated: 2022-12-20
 ---
 
 **Last updated 20th December 2022**

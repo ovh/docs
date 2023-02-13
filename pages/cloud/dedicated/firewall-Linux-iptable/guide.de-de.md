@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
 slug: firewall-iptables
 section: Tutorial
 order: 01
+updated: 2022-10-18
 ---
 
 > [!primary]

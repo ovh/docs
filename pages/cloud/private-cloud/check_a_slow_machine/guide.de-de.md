@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/check_a_slow_machine/'
 section: Verwaltung virtueller Maschinen
 legacy_guide_number: g601
+updated: 2022-01-17
 ---
 
 **Last updated on 17th January 2022**

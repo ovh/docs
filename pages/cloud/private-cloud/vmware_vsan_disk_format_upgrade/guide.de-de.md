@@ -5,6 +5,7 @@ excerpt: "Find out how to update the format of a vSAN disk"
 section: VMware vSphere Funktionen
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/vsan-disk-format-upgrade/'
+updated: 2023-01-19
 ---
 
 **Last updated 19th January 2023**

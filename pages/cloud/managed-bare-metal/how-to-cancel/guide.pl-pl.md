@@ -6,6 +6,7 @@ routes:
 excerpt: Dowiedz się, jak zrezygnować z infrastruktury Managed Bare Metal
 section: Funkcjonalności OVHcloud
 order: 09
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

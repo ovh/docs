@@ -6,6 +6,7 @@ routes:
 excerpt: Learn how to create a cluster and activate EVC mode
 section: Funkcjonalności VMware vSphere
 order: 01
+updated: 2022-02-08
 ---
 
 **Last updated 8th February 2022**

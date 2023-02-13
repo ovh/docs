@@ -5,6 +5,7 @@ excerpt: Find out how to move your virtual machine to a different datastore (hot
 legacy_guide_number: '7767010'
 section: VMware vSphere features
 order: 05
+updated: 2020-07-10
 ---
 
 **Last updated 10th July 2020**
