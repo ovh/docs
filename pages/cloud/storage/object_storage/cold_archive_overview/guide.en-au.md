@@ -4,6 +4,7 @@ slug: cold-archive/overview
 excerpt: Discover the service, understand the capabilities and billing
 section: Cold Archive Storage Class Specifics
 order: 010
+updated: 2023-01-29
 ---
 
 **Last updated 29th January 2023**

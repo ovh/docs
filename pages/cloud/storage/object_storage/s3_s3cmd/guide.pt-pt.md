@@ -6,6 +6,7 @@ section: Tutorials
 order: 130
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/s3cmd/'
+updated: 2022-01-03
 ---
 
 **Last updated on 3rd January 2022**

@@ -3,6 +3,7 @@ title: Object Storage - Endpoints et géo-disponibilité de l’Object Storage
 slug: s3/location
 section: Informations générales
 order: 025
+updated: 2023-01-26
 ---
 
 <style>

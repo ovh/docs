@@ -4,6 +4,7 @@ slug: nas/cifs
 excerpt: Ten przewodnik pokazuje, jak zamontować NAS-HA w systemie Windows Server poprzez CIFS.
 section: NAS-HA
 order: 04
+updated: 2021-11-22
 ---
 
 > [!primary]

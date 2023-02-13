@@ -4,6 +4,7 @@ excerpt: "Descubra os conceitos relacionados com o aprovisionamento, o acompanha
 slug: netapp/performances
 section: Enterprise File Storage
 order: 011
+updated: 2022-11-30
 ---
 
 **Última atualização: 30/11/2022**

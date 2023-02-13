@@ -4,6 +4,7 @@ slug: pca/unlock
 excerpt: Find out how to unfreeze your archives
 section: OpenStack Swift Archive Storage Class Specifics
 order: 030
+updated: 2022-04-12
 ---
 
 **Last updated 12th April 2022**

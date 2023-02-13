@@ -4,6 +4,7 @@ slug: nas/migration
 excerpt: Dowiedz się, jak migrować dane z jednego NAS-HA do innego za pomocą zasobu NFS.
 section: NAS-HA
 order: 05
+updated: 2021-02-09
 ---
 
 > [!primary]

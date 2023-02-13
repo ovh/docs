@@ -6,6 +6,7 @@ routes:
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre les ACL dans Public Cloud Archive
 section: Spécificités de la classe de stockage d'archive OpenStack Swift
 order: 040
+updated: 2021-12-15
 ---
 
 **Dernière mise à jour le 15/12/2021**

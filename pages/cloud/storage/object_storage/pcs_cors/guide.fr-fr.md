@@ -4,6 +4,7 @@ slug: pcs/cors
 excerpt: Retrouvez ici les concepts permettant de mettre en oeuvre CORS.
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 050
+updated: 2022-01-03
 ---
 
 **Dernière mise à jour le 03/01/2022**

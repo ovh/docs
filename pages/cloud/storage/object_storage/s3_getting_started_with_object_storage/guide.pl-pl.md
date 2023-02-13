@@ -6,6 +6,7 @@ section: General guides to start
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-cli/'
+updated: 2022-09-27
 ---
 
 **Last updated September 27<sup>th</sup> 2022**

@@ -4,6 +4,7 @@ slug: netapp/concepts
 excerpt: 'Erfahren Sie hier die Funktionsweise des Angebots Enterprise File Storage'
 section: Enterprise File Storage
 order: 010
+updated: 2022-04-07
 ---
 
 > [!primary]

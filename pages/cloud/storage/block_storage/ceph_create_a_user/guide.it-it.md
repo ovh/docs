@@ -5,6 +5,7 @@ excerpt: This guide shows you how to create a new user
 section: Cloud Disk Array
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/create-a-user/'
+updated: 2018-03-26
 ---
 
 **Last update 26th March 2018**

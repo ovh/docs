@@ -4,6 +4,7 @@ slug: pca/sftp
 excerpt: Cómo gestionar y administrar los archivos de Public Cloud de OVH
 section: OpenStack Swift Archive Storage Class Specifics
 order: 100
+updated: 2022-05-13
 ---
 
 > [!primary]

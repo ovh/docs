@@ -4,6 +4,7 @@ slug: nas/migration
 excerpt: Cómo migrar los datos de un NAS-HA a otro mediante NFS compartido.
 section: NAS-HA
 order: 05
+updated: 2021-02-09
 ---
 
 > [!primary]

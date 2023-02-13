@@ -5,6 +5,7 @@ excerpt: This guide shows you how to access your cluster using rbd client.
 section: Cloud Disk Array
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/use-your-cluster-with-rbd/'
+updated: 2022-06-22
 ---
 
 **Last update 22th June 2022**

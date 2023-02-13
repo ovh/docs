@@ -6,6 +6,7 @@ section: Cold Archive Storage Class Specifics
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/cold-archive/overview/'
+updated: 2023-01-29
 ---
 
 **Last updated 29th January 2023**

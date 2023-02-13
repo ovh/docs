@@ -4,6 +4,7 @@ slug: pca/unlock
 excerpt: Erfahren Sie hier, wie Sie Ihre Archive freigeben
 section: OpenStack Swift Archive Storage Class Specifics
 order: 030
+updated: 2022-04-12
 ---
 
 > [!primary]

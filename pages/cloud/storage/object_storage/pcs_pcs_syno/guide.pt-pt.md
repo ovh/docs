@@ -4,6 +4,7 @@ slug: pcs/pcs-syno
 excerpt: Saiba como sincronizar uma NAS Synology com um container.
 section: OpenStack Swift Storage Class Specifics
 order: 150
+updated: 2021-10-27
 ---
 
 > [!primary]

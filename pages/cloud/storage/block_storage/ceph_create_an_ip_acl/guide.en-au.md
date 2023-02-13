@@ -3,6 +3,7 @@ title: IP ACL creation
 slug: ceph/create-an-ip-acl
 excerpt: This guide shows you how to create an IP ACL to allow access to your ceph cluster.
 section: Cloud Disk Array
+updated: 2018-03-26
 ---
 
 **Last update 26th March 2018**

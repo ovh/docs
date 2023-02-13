@@ -7,6 +7,7 @@ slug: pcs/manage-object-storage-with-cyberduck
 section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1868
 order: 180
+updated: 2021-06-18
 ---
 
 > [!primary]

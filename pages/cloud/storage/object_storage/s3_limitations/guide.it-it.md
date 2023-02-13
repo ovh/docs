@@ -6,6 +6,7 @@ section: General information
 order: 025
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/limitations/'
+updated: 2022-03-31
 ---
 
 **Last updated 31st March 2022**

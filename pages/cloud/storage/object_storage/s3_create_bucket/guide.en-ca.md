@@ -3,6 +3,7 @@ title: Object Storage - Creating a bucket
 slug: s3/create-bucket
 section: General guides to start
 order: 040
+updated: 2022-09-27
 ---
 
 **Last updated September 27<sup>th</sup> 2022**

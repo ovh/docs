@@ -4,6 +4,7 @@ slug: nas/migration
 excerpt: Saiba como migrar os seus dados de uma NAS-HA para outra através de NFS.
 section: NAS-HA
 order: 05
+updated: 2021-02-09
 ---
 
 > [!primary]

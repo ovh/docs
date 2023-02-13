@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak zarządzać usługą Enterprise File Storage w Panelu
 slug: netapp/control-panel
 section: Enterprise File Storage
 order: 020
+updated: 2022-04-14
 ---
 
 > [!primary]

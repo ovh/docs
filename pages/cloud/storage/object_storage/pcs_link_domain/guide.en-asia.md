@@ -4,6 +4,7 @@ slug: pcs/link-domain
 excerpt: Find here how to configure a domain name on your Object Storage container
 section: OpenStack Swift Storage Class Specifics
 order: 120
+updated: 2021-10-27
 ---
 
 **Last updated 27th October 2021**

@@ -3,6 +3,7 @@ title: "Object Storage - Création d'un bucket"
 slug: s3/create-bucket
 section: Guides généraux pour débuter
 order: 040
+updated: 2022-09-27
 ---
 
 **Dernière mise à jour le 27/09/2022**

@@ -5,6 +5,7 @@ slug: pcs/getting-started-with-the-swift-api
 legacy_guide_number: g1916
 section: OpenStack Swift Storage Class Specifics
 order: 010
+updated: 2021-05-25
 ---
 
 > [!primary]

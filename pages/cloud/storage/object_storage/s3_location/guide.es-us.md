@@ -5,6 +5,7 @@ section: General information
 order: 025
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/location/'
+updated: 2023-01-26
 ---
 
 <style>

@@ -4,6 +4,7 @@ slug: cold-archive/overview
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
 section: Spécificités de la classe de stockage Cold Archive
 order: 010
+updated: 2023-01-29
 ---
 
 **Dernière mise à jour le 29/01/2023**

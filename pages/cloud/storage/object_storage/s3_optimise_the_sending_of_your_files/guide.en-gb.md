@@ -4,6 +4,7 @@ slug: s3/optimise-the-sending-of-your-files
 excerpt:
 section: Tutorials
 order: 040
+updated: 2021-12-08
 ---
 
 **Last updated 8th December 2021**

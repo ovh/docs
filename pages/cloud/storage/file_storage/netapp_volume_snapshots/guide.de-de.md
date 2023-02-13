@@ -4,6 +4,7 @@ slug: netapp/volume-snapshots
 excerpt: Erfahren Sie hier, wie Sie Snapshots eines Enterprise File Storage Volumes mit der OVHcloud API verwalten
 section: Enterprise File Storage
 order: 042
+updated: 2021-10-27
 ---
 
 > [!primary]

@@ -6,6 +6,7 @@ routes:
 excerpt: Find here the main curl commands to manage your object containers
 section: OpenStack Swift Storage Class Specifics
 order: 090
+updated: 2021-10-27
 ---
 
 **Last updated 27th October 2021**
