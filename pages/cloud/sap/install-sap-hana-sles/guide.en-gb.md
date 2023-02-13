@@ -4,6 +4,7 @@ slug: sap-installation-sap-hana-sles
 excerpt: This guide provides a general guideline on how to install SAP HANA on a SUSE Linux Enterprise Server
 section: Getting started
 order: 02
+updated: 2022-03-29
 ---
 
 **Last updated 29th March 2022**

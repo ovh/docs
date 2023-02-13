@@ -4,6 +4,7 @@ slug: sap-preparation-sles-pour-sap-hana
 excerpt: Ce guide fournit des directives générales sur la préparation de SLES pour SAP HANA
 section: Premiers pas
 order: 01
+updated: 2022-03-29
 ---
 
 **Dernière mise à jour le 29/03/2022**

@@ -4,6 +4,7 @@ slug: usar-instantaneas-en-un-vps
 excerpt: 'Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud'
 section: 'Opciones de copia de seguridad'
 order: 1
+updated: 2022-12-02
 ---
 
 > [!primary]

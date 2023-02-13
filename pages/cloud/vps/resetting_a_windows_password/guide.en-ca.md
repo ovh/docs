@@ -3,6 +3,7 @@ title: 'Resetting a Windows password'
 slug: resetting-a-windows-password-vps
 excerpt: 'Guide to resetting a Windows password'
 section: Diagnostics and rescue mode
+updated: 2020-11-25
 ---
 
 **Last updated 25th November 2020**

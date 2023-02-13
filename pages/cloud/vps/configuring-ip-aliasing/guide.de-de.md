@@ -3,6 +3,7 @@ title: 'IP-Adresse als Alias konfigurieren'
 slug: ip-aliasing-vps
 excerpt: 'Erfahren Sie hier, wie Sie Additional IPs in Ihre VPS-Konfiguration einbinden'
 section: 'Netzwerk und IP'
+updated: 2022-10-06
 ---
 
 > [!primary]

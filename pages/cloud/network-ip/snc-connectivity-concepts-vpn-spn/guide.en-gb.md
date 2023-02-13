@@ -4,6 +4,7 @@ slug: secnumcloud-connectivity-vpn-spn-concept
 excerpt: 'SNC Connectivity - VPN-SPN'
 section: SecNumCloud Connectivity
 order: 04
+updated: 2021-11-18
 ---
 
 **Last updated 18th November, 2021**

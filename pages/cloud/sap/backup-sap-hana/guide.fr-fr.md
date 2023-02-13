@@ -4,6 +4,7 @@ slug: backup-sap-hana
 excerpt: "Ce guide fournit des instructions générales sur la sauvegarde d'une base de données SAP HANA"
 section: Utilisation avancée
 order: 01
+updated: 2022-03-28
 ---
 
 **Dernière mise à jour le 29/03/2022**

@@ -3,6 +3,7 @@ title: Configurer un service OVH Load Balancer HTTP/HTTPS
 slug: configure-iplb
 excerpt: Configuration d’un service Load Balancer
 section: Configuration
+updated: 2022-09-30
 ---
 
 

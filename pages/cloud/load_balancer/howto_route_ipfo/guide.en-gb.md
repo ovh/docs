@@ -3,6 +3,7 @@ title: 'Routing an Additional IP'
 slug: routing-foip
 excerpt: 'Find out how to route an Additional IP and link it to the OVH Load Balancer'
 section: Configuration
+updated: 2022-10-06
 ---
 
 **Last updated 6th October 2022**

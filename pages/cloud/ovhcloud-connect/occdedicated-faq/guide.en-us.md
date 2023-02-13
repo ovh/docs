@@ -3,6 +3,7 @@ title: FAQ OVHcloud Connect
 slug: ovhcloudconnect-faq
 section: Getting started
 order: 3
+updated: 2020-09-14
 ---
 
 **Last updated 14th September 2020**

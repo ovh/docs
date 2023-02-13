@@ -4,6 +4,7 @@ excerpt: Saiba como encontrar erros num sistema de ficheiros em modo rescue
 slug: check-file-system-vps
 section: Diagnóstico e Modo Rescue
 order: 5
+updated: 2021-04-20
 ---
 
 > [!primary]

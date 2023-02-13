@@ -3,6 +3,7 @@ title: Używanie konsoli KVM z VPS
 excerpt: Dowiedz się, jak uzyskać dostęp do serwera VPS przy użyciu funkcji KVM 
 slug: kvm_na_serwerach_vps
 section: Pierwsze kroki
+updated: 2022-08-30
 ---
 
 > [!primary]

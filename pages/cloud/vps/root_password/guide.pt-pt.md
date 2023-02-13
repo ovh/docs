@@ -3,6 +3,7 @@ title: Como alterar a palavra-passe root de um VPS (Linux)
 slug: root-password
 excerpt: Aprenda a alterar a palavra-passe root do seu VPS
 section: Diagnóstico e Modo Rescue
+updated: 2021-04-20
 ---
 
 **Última atualização: 27/04/2021**

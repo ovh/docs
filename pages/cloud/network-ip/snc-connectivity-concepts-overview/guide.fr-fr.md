@@ -4,6 +4,7 @@ slug: secnumcloud-connectivity-overview-concept
 excerpt: 'Présentation des concepts de SecNumCloud Connectivity'
 section: SecNumCloud Connectivity
 order: 01
+updated: 2021-11-18
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Concepts overview
 slug: overview
 excerpt: 'Concepts overview - OVHcloud Connect'
 section: Concepts
+updated: 2020-09-14
 ---
 
 **Last updated 14th September 2020**

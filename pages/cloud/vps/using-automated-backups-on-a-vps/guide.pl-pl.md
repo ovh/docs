@@ -4,6 +4,7 @@ slug: uzywanie-automatyczne-kopie-zapasowe-vps
 excerpt: 'Dowiedz się, jak włączyć opcję "Automatyczne kopie zapasowe" w Panelu klienta OVHcloud i korzystać z niej'
 section: 'Opcje kopii zapasowych'
 order: 2
+updated: 2022-11-15
 ---
 
 > [!primary]

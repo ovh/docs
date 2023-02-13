@@ -4,6 +4,7 @@ excerpt: 'Come eseguire le prime operazioni su un VPS'
 slug: iniziare-a-utilizzare-vps
 section: 'Per iniziare'
 order: 1
+updated: 2022-03-25
 ---
 
 > [!primary]

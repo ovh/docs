@@ -4,6 +4,7 @@ slug: api
 excerpt: Découvrez comment déployer OVHcloud Connect via les API OVHcloud
 section: Configuration
 order: 2
+updated: 2020-09-14
 ---
 
 **Dernière mise à jour le 07/09/2020**

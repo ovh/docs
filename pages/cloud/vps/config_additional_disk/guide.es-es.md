@@ -4,6 +4,7 @@ excerpt: 'Cómo añadir y configurar espacio de almacenamiento adicional en un V
 slug: config-additional-disk-vps
 section: 'Opciones de copia de seguridad'
 order: 3
+updated: 2021-02-24
 ---
 
 > [!primary]

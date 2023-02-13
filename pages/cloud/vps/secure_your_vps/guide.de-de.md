@@ -3,6 +3,7 @@ title: VPS absichern
 slug: vps-sicherheit
 section: 'Erste Schritte'
 excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS
+updated: 2022-05-05
 ---
 
 > [!primary]

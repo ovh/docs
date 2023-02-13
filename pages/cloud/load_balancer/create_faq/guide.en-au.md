@@ -3,6 +3,7 @@ title: 'Load Balancer FAQ'
 slug: iplb-faq
 excerpt: 'FAQ Load Balancer'
 section: FAQ
+updated: 2022-09-30
 ---
 
 ## How do I configure my Firewall to accept traffic from the OVHcloud Load Balancer?

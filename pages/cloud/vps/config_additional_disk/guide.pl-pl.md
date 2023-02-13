@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak dodać i skonfigurować dodatkową przestrzeń dysko
 slug: config-additional-disk-vps
 section: 'Opcje kopii zapasowych'
 order: 3
+updated: 2021-02-24
 ---
 
 > [!primary]
