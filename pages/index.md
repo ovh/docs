@@ -661,6 +661,7 @@
                 + [MongoDB - Connect with MongoDB Compass](platform/databases/mongodb_07_connect_compass)
                 + [MongoDB - Backups and Restores with the CLI](platform/databases/mongodb_06_howto_backup_restore)
                 + [MongoDB - Configure an Analytics node](platform/databases/mongodb_08_analytics)
+                + [MongoDB - Remote disk migration information](platform/databases/mongodb_09_remote_disk_migration)
             + [Tutorials](public-cloud-databases-mongodb-tutorials)
                 + [MongoDB - Tutorial - Build a NodeJS application connected to OVHcloud Managed MongoDB service](platform/databases/mongodb_tuto_01_connect_nodejs_to_managed_mongodb)
         + [MySQL](public-cloud-databases-mysql)
