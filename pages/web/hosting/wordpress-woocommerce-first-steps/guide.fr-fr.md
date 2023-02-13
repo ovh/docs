@@ -10,7 +10,7 @@ order:
 
 ## Objectif
 
-Ce tutoriel explique comment créer une boutique en ligne avec l'extension open source **WooCommerce** avec le Customer Managment System (CMS) **WordPress**. 
+Découvrez dans ce tutoriel comment créer une boutique en ligne avec l'extension open source **WooCommerce** avec le Customer Managment System (CMS) **WordPress**. 
 
 > [!warning]
 >
@@ -25,7 +25,7 @@ Ce tutoriel explique comment créer une boutique en ligne avec l'extension open 
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
 - Avoir préalablement [installé Wordpress](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) sur votre hébergement web
 
-Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HTTPS avant de poursuivre ce tutoriel à l'aide du guide : [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/).
+Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HTTPS avant de poursuivre ce tutoriel à l'aide du guide [« Passer son site internet en HTTPS grâce au SSL »](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/).
 
 ## En pratique
 
@@ -33,19 +33,19 @@ Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HT
 
 ### Installation
 
-Connectez-vous sur votre interface d'administration en tapant `/wp-admin`  ou `/wp-login` dans votre bare de recherche après l'URL de votre nom de domaine (la redirection se fait automatiquement)&nbsp;:
+Connectez-vous sur votre interface d'administration en tapant `/wp-admin` ou `/wp-login` dans votre bare de recherche après l'URL de votre nom de domaine (la redirection se fait automatiquement)&nbsp;:
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps%5B1%5D.png){.thumbnail}
 
-Sur le menu de gauche, rendez-vous dans «&nbsp;Extensions&nbsp;» puis cliquez sur «&nbsp;Ajouter&nbsp;»&nbsp;:
+Sur le menu de gauche, rendez-vous dans `Extensions`{.action} puis cliquez sur `Ajouter`{.action} :
 
 ![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps%5B2%5D.png){.thumbnail}
 
-Sur la nouvelle page «&nbsp;Ajouter des extensions&nbsp;», saisissez «&nbsp;woocommerce&nbsp;» dans la barre de recherche en haut à droite puis cliquez sur «&nbsp;Installer maintenant&nbsp;» dans l'encadré lié à l'extension **WooCommerce**&nbsp;:
+Sur la nouvelle page `Ajouter des extensions`{.action}, saisissez «&nbsp;woocommerce&nbsp;» dans la barre de recherche en haut à droite puis cliquez sur `Installer maintenant`{.action} dans l'encadré lié à l'extension **WooCommerce**&nbsp;:
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps%5B3%5D.png){.thumbnail}
 
-Cliquez maintenant sur «&nbsp;Activer&nbsp;»&nbsp;:
+Cliquez maintenant sur `Activer`{.action}:
 
 ![Activate WooCommerce](images/wordpress-woocommerce-first-steps%5B4%5D.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Cliquez maintenant sur «&nbsp;Activer&nbsp;»&nbsp;:
 
 #### Méthode 1 (utilisation de l'assistant de configuration)
 
-Si vous n'avez pas encore paramétré votre extension **WooCommerce**, un assistant de configuration vous aide à renseigner les informations relatives à votre site de vente en ligne. Renseignez le formulaire puis cliquez sur «&nbsp;Continuer&nbsp;»&nbsp;:
+Si vous n'avez pas encore paramétré votre extension **WooCommerce**, un assistant de configuration vous aide à renseigner les informations relatives à votre site de vente en ligne. Renseignez le formulaire puis cliquez sur `Continuer`{.action} :
 
 ![Setup Wizard - Store Details](images/wordpress-woocommerce-first-steps%5B5%5D.png){.thumbnail}
 
@@ -83,11 +83,11 @@ Votre boutique en ligne est désormais configurée avec les paramètres généra
 
 #### Méthode 2 (configuration manuelle)
 
-Cliquez sur «&nbsp;Extensions&nbsp;» pour lister les extensions installées puis sur «&nbsp;Extensions installées&nbsp;». La liste de vos extensions s'affiche. Cliquez sur «&nbsp;Réglages&nbsp;» dans le module **WooCommerce**&nbsp;:
+Cliquez sur `Extensions`{.action} pour lister les extensions installées puis sur `Extensions installées`. La liste de vos extensions s'affiche. Cliquez sur `Réglages`{.action} dans le module **WooCommerce**&nbsp;:
 
 ![Setup Wizard - Extension, WooCommerce, Settings](images/wordpress-woocommerce-first-steps%5B11%5D.png){.thumbnail}
 
-Vous avez également accès à ces réglages en cliquant directement sur «&nbsp;WooCommerce&nbsp;» puis sur «&nbsp;Réglages&nbsp;»&nbsp;:
+Vous avez également accès à ces réglages en cliquant directement sur `WooCommerce`{.action} puis sur `Réglages`{.action} :
 
 ![Setup Wizard - WooCommerce, Settings](images/wordpress-woocommerce-first-steps%5B12%5D.png){.thumbnail}
 
@@ -122,7 +122,7 @@ La gestion de produits se fait via un ensemble de sous-rubriques&nbsp;:
 
 #### Expédition
 
-Si vous avez activé les extensions par défaut proposées gratuitement lors de l'installation, vous disposez de l'extension [WooCommerce Shipping](https://woocommerce.com/fr-fr/woocommerce-shipping/){.external}. Dans le cas contraire, vous pouvez procéder à son installation en vous rendant dans le menu «&nbsp;Extensions&nbsp;»
+Si vous avez activé les extensions par défaut proposées gratuitement lors de l'installation, vous disposez de l'extension [WooCommerce Shipping](https://woocommerce.com/fr-fr/woocommerce-shipping/){.external}. Dans le cas contraire, vous pouvez procéder à son installation en vous rendant dans le menu `Extensions`{.action}
 
 - **Zones d'expédition** : permet de définir et configurer des zones d'expédition
 - **Options de livraison** : sert à paramétrer l'application pour tout ce qui est relatif aux frais d'expédition
@@ -146,12 +146,12 @@ Pour géolocaliser vos clients en fonction de leur adresse IP, vous pouvez, dans
 
 #### Avancé
 
-- «&nbsp;Installation des pages&nbsp;» est utile pour modifier les pages vers lesquelles seront redirigés les utilisateurs lors du processus de commande&nbsp;;
-- «&nbsp;API REST&nbsp;» est la rubrique pour permettre de configurer et paramétrer les accès à WooCommerce via son API REST&nbsp;;
-- «&nbsp;Webhook&nbsp;», où vous pouvez gérer vos fonctions de rappel HTTP&nbsp;;
-- «&nbsp;Ancienne API&nbsp;», où il est possible de réactiver l'ancienne API de WooCommerce (désactivée par défaut)&nbsp;;
-- «&nbsp;WooCommerce.com&nbsp;» sert à activer ou désactiver le tracking de l'activité de votre site de vente en ligne par WebCommerce, et d'avoir des suggestions pour des extensions dédiées (la majorité sont payantes)&nbsp;;
-- «&nbsp;Fonctionnalités&nbsp;», page regroupant les fonctionnalités en test sur WooCommerce ou récemment ajoutées.
+- **Installation des pages** : utile pour modifier les pages vers lesquelles seront redirigés les utilisateurs lors du processus de commande&nbsp;;
+- **API REST** : Rubrique permettant de configurer et paramétrer les accès à WooCommerce via son API REST&nbsp;;
+- **Webhook** : gérer vos fonctions de rappel HTTP&nbsp;;
+- **Ancienne API** : réactiver l'ancienne API de WooCommerce (désactivée par défaut)&nbsp;;
+- **WooCommerce.com** : activer ou désactiver le tracking de l'activité de votre site de vente en ligne par WebCommerce, et d'avoir des suggestions pour des extensions dédiées (la majorité sont payantes)&nbsp;;
+- **Fonctionnalités** : page regroupant les fonctionnalités en test sur WooCommerce ou récemment ajoutées.
 
 ## Aller plus loin <a name="go-further"></a>
 
