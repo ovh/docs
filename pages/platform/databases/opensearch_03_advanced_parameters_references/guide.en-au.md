@@ -4,6 +4,7 @@ slug: opensearch/advanced-parameters-references
 excerpt:
 section: OpenSearch - Guides
 order: 030
+updated: 2023-02-06
 ---
 
 <style>

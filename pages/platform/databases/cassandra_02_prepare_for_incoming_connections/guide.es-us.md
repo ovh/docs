@@ -6,6 +6,7 @@ section: Cassandra - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/cassandra/configure-cassandra-instance/'
+updated: 2022-05-12
 ---
 
 **Last updated 12th May 2022**

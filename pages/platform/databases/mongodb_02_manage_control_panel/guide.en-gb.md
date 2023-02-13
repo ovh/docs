@@ -4,6 +4,7 @@ excerpt: Find out how to configure your MongoDB instance to accept incoming conn
 slug: mongodb/managing-service
 section: MongoDB - Guides
 order: 020
+updated: 2022-07-27
 ---
 
 **Last updated 27<sup>th</sup> July 2022**

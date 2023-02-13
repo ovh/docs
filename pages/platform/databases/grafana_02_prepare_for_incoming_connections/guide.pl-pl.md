@@ -6,6 +6,7 @@ section: Grafana - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/configure-grafana-instance/'
+updated: 2022-05-12
 ---
 
 **Last updated 12th May 2022**

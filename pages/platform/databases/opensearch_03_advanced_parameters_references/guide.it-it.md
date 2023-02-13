@@ -6,6 +6,7 @@ section: OpenSearch - Guides
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/advanced-parameters-references/'
+updated: 2023-02-06
 ---
 
 <style>

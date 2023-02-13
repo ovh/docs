@@ -4,6 +4,7 @@ excerpt: Find out how to configure your MySQL instance to accept incoming connec
 slug: mysql/configure-mysql-instance
 section: MySQL - Guides
 order: 020
+updated: 2022-03-08
 ---
 
 **Last updated 8th March 2022**

@@ -6,6 +6,7 @@ section: PostgreSQL - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/extensions/'
+updated: 2021-12-22
 ---
 
 **Last updated December 22<sup>th</sup>, 2021**

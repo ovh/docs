@@ -6,6 +6,7 @@ section: Kafka - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/getting-started/'
+updated: 2022-01-05
 ---
 
 **Last updated 5<sup>th</sup> January 2022**

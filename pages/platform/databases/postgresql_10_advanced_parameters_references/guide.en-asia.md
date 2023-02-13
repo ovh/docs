@@ -4,6 +4,7 @@ slug: postgresql/advanced-parameters-references
 excerpt:
 section: PostgreSQL - Guides
 order: 100
+updated: 2023-02-06
 ---
 
 <style>

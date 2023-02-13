@@ -4,6 +4,7 @@ slug: redis/advanced-parameters-references
 excerpt:
 section: Redis - Guides
 order: 080
+updated: 2023-02-06
 ---
 
 <style>

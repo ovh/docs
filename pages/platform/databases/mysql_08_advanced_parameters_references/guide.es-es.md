@@ -6,6 +6,7 @@ section: MySQL - Guides
 order: 070
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/advanced-parameters-references/'
+updated: 2023-02-06
 ---
 
 <style>

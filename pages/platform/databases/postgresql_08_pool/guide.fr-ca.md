@@ -6,6 +6,7 @@ section: PostgreSQL - Guides
 order: 090
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/pools/'
+updated: 2022-04-08
 ---
 
 **Last Updated 8<sup>th</sup> April 2022**

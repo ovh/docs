@@ -6,6 +6,7 @@ section: General guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/order-terraform/'
+updated: 2022-10-19
 ---
 
 **Last updated October 19<sup>th</sup>, 2022**

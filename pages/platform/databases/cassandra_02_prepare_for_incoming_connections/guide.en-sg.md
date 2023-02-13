@@ -4,6 +4,7 @@ excerpt: Find out how to configure your Cassandra instance to accept incoming co
 slug: cassandra/configure-cassandra-instance
 section: Cassandra - Guides
 order: 020
+updated: 2022-05-12
 ---
 
 **Last updated 12th May 2022**

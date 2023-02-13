@@ -6,6 +6,7 @@ section: Redis - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/'
+updated: 2023-01-19
 ---
 
 **Last updated January 19th, 2023**

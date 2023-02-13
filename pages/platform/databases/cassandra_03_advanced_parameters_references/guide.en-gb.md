@@ -4,6 +4,7 @@ slug: cassandra/advanced-parameters-references
 excerpt:
 section: Cassandra - Guides
 order: 030
+updated: 2023-02-06
 ---
 
 <style>

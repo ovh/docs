@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Python 
 slug: postgresql/connect-python
 section: PostgreSQL - Guides
 order: 060
+updated: 2022-04-04
 ---
 
 **Last updated 4<sup>th</sup> April, 2022**

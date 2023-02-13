@@ -6,6 +6,7 @@ section: Guides généraux
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/'
+updated: 2022-07-27
 ---
 
 **Last updated 27th July 2022**
