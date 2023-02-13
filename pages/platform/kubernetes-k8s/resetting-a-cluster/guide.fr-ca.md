@@ -5,6 +5,7 @@ slug: resetting-a-cluster
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/resetting-a-cluster/'
+updated: 2022-07-27
 ---
 
 **Last updated July 27th, 2022.**

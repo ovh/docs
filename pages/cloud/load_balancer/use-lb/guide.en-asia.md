@@ -3,6 +3,7 @@ title: Managing the Load Balancer from the customer control panel
 slug: usage-loadbalancer
 excerpt: Summary of the main features and Load Balancer ownership through the customer control panel
 section: First steps
+updated: 2022-09-30
 ---
 
 ## Objective

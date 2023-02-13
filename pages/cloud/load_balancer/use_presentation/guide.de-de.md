@@ -4,6 +4,7 @@ slug: einfuehrung-lb
 excerpt: In dieser Anleitung erhalten Sie einen ersten Überblick über die neue OVH Loadbalancer Lösung 
 section: Erste Schritte 
 order: 1
+updated: 2018-01-17
 ---
 
 **Stand 22.03.2018**

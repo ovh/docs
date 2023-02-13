@@ -3,6 +3,7 @@ title: Eine neue Windows Server Installation konfigurieren
 slug: windows-first-config
 excerpt: Erfahren Sie hier, wie Sie Remote-Desktop-Verbindung, ICMP Antwort und Bootlogs aktivieren
 section: Erste Schritte
+updated: 2022-05-06
 ---
 
 > [!primary]

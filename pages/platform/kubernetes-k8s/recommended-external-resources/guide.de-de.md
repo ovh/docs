@@ -5,6 +5,7 @@ slug: recommended-external-resources
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/recommended-external-resources/'
+updated: 2019-07-01
 ---
 
 **Last updated 1<sup>st</sup> July, 2019.**

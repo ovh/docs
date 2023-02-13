@@ -4,6 +4,7 @@ slug: postgresql/concept-high-availability
 excerpt: Learn the concepts of high-availability for PostgreSQL offers
 section: PostgreSQL - Guides
 order: 800
+updated: 2022-05-27
 ---
 
 **Last updated 27<sup>th</sup> May 2022**

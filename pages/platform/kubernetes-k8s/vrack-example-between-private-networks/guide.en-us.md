@@ -3,6 +3,7 @@ title: Working with vRack example - Communicating between different private netw
 slug: vrack-example-between-private-networks
 section: Network
 order: 03
+updated: 2021-07-31
 ---
 
 

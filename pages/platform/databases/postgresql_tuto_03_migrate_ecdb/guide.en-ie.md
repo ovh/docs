@@ -4,6 +4,7 @@ excerpt: Learn how to migrate a PostgreSQL Enterprise Cloud Databases instance t
 slug: postgresql/howto-migrate-ecdb-to-pcd
 section: PostgreSQL - Tutorials
 order: 030
+updated: 2022-03-02
 ---
 
 **Last updated March 2nd 2022**

@@ -3,6 +3,7 @@ title: "Configuration d'un service OVHcloud Load Balancer - Les en-têtes HTTP"
 slug: http-headers
 excerpt: Intégrez vos services web derrière un Load Balancer avec les en-têtes HTTP
 section: Configuration
+updated: 2018-08-03
 ---
 
 **Dernière mise à jour le à 27/07/2022**

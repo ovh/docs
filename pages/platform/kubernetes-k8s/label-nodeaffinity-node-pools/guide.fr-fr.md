@@ -5,6 +5,7 @@ excerpt: 'Find out how to deploy applications to specific Nodes and Nodes Pools,
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/label-nodeaffinity-node-pools/'
+updated: 2021-12-15
 ---
 
 <style>

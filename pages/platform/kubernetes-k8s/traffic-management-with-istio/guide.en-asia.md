@@ -4,6 +4,7 @@ slug: traffic-management-with-istio
 excerpt: Find out how to manage traffic with Istio on OVHcloud Managed Kubernetes
 section: Traffic management
 order: 04
+updated: 2021-09-22
 ---
 
 <style>

@@ -3,6 +3,7 @@ title: 'OVH Load Balancer &#58; HTTP Header'
 slug: http-headers
 excerpt: 'Get HTTP Headers on your services behind OVH Load Balancer'
 section: 'IP management'
+updated: 2018-08-03
 ---
 
 ## Introduction

@@ -3,6 +3,7 @@ title: 'Déployer cPanel sur un VPS'
 slug: cpanel
 excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-installée.'
 section: 'Utilisation avancée'
+updated: 2021-10-14
 ---
 
 **Dernière mise à jour le 14/10/2021**

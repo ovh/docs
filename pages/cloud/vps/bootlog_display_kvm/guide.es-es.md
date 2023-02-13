@@ -3,6 +3,7 @@ title: Mostrar los logs de arranque en el KVM
 slug: boot-log
 excerpt: 'Cómo diagnosticar un VPS utilizando los logs de arranque (boot logs)'
 section: Diagnóstico y modo de rescate
+updated: 2021-07-05
 ---
 
 > [!primary]

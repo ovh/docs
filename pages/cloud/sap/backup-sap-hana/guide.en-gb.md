@@ -4,6 +4,7 @@ slug: backup-sap-hana
 excerpt: This guide provides you with general guidelines on how to backup a SAP HANA database.
 section: Advanced usage
 order: 01
+updated: 2022-03-28
 ---
 
 **Last updated 28th March 2022**

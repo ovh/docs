@@ -6,6 +6,7 @@ section: MongoDB - Guides
 order: 070
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/backups-and-restores-cli/'
+updated: 2022-07-27
 ---
 
 **Last updated 27<sup>th</sup> July 2022**

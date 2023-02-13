@@ -3,7 +3,7 @@ title: 'IP address list for Web Hosting clusters'
 slug: list-of-ip-addresses-of-web-hosting-clusters
 excerpt: 'Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan'
 section: 'Web Hosting configuration'
-order: 3
+order: 01
 ---
 
 **Last updated 20th May 2020**

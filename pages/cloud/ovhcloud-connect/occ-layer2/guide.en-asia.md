@@ -4,6 +4,7 @@ slug: layer2
 excerpt: 'Details about using Layer 2 (L2) with OVHcloud Connect'
 section: Concepts
 order: 2
+updated: 2020-09-14
 ---
 
 **Last updated 14th September 2020**

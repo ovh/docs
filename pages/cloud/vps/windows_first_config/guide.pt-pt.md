@@ -4,6 +4,7 @@ slug: windows-first-config
 excerpt: Saiba como ativar a Remote Desktop Protocol, ICMP e os logs de arranque
 section: Primeiros passos
 order: 7
+updated: 2022-05-06
 ---
 
 > [!primary]

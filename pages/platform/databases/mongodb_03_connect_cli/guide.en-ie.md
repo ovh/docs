@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for MongoDB using the Command Li
 slug: mongodb/connect-cli
 section: MongoDB - Guides
 order: 030
+updated: 2022-07-27
 ---
 
 **Last updated 27<sup>th</sup> July 2022**

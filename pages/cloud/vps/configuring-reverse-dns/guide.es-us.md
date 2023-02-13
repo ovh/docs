@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/us/es/public-cloud/configurar-el-inverso-dns-de-una-instancia/'
 section: "Red e IP"
 order: 3
+updated: 2023-01-05
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: Recommended external resources
 excerpt: ''
 slug: recommended-external-resources
 section: Technical resources
+updated: 2019-07-01
 ---
 
 **Last updated 1<sup>st</sup> July, 2019.**

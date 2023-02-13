@@ -4,6 +4,7 @@ excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Cl
 slug: backup-and-restore-cluster-using-cloudcasa
 section: Storage
 order: 12
+updated: 2022-10-31
 ---
 
 <style>

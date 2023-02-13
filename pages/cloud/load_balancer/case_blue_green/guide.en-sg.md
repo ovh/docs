@@ -3,6 +3,7 @@ title: 'Deploying a blue-green infrastructure'
 slug: blue-green
 excerpt: 'This guide will show you how to deploy a blue-green infrastructure with the OVHcloud Load Balancer'
 section: 'Use case'
+updated: 2022-04-26
 ---
 
 ## Objective

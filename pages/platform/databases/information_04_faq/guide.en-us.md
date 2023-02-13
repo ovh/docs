@@ -3,6 +3,7 @@ title: FAQ Public Cloud databases
 slug: faq
 section: General information
 order: 040
+updated: 2021-08-25
 ---
 
 **Last updated August 25<sup>th</sup>, 2021**

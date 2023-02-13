@@ -5,6 +5,7 @@ slug: persistentvolumes-permission-errors
 section: Diagnostics
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/persistentvolumes-permission-errors/'
+updated: 2021-12-17
 ---
 
 **Last updated  17th December 2021.**

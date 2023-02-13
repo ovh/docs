@@ -6,6 +6,7 @@ section: GPU
 order: 0
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/deploying-gpu-application/'
+updated: 2022-02-16
 ---
 
 <style>

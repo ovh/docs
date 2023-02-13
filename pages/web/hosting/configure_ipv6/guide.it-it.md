@@ -1,74 +1,83 @@
 ---
-title: Configura IPv6 per il tuo sito Web
+title: "Configura un indirizzo IPv6 per il tuo sito Web"
 slug: configurare-ipv6-per-il-tuo-sito
-excerpt: Come rendere il tuo sito Web compatibile con IPv6
+excerpt: "Come rendere il tuo sito Web compatibile con un indirizzo IPv6"
 section: Configurazione dell’hosting
 order: 06
 ---
+
+**Ultimo aggiornamento: 10/02/2023**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 27/07/2020**
+## Obiettivo
 
-## Informazioni generali
+La rete Internet funziona dall'inizio degli anni '90 seguendo lo standard IPv4. Questa norma permette di fornire un indirizzo IP X.X.X.X (o le "X" sono numeri compresi tra 0 e 255) a ciascuna delle macchine collegate alla rete Internet (server, computer, smartphone, tablet, ecc.). Tuttavia, tale norma limita a circa 4 miliardi il numero di dispositivi connessi alla rete Internet, che nel 2022 rappresentava meno di un apparecchio connesso per due persone sulla Terra.
 
-La rete Internet funziona dall'inizio degli anni '90 seguendo lo standard IPv4. Questa norma permette di fornire un indirizzo IP a ogni macchina collegata alla rete Internet: server ma anche computer, smartphone, tablet e qualsiasi altro dispositivo collegato ad Internet. Tale norma comporta un limite importante: permette di identificare poco più di 4 miliardi di apparecchi diversi. O un apparecchio per due persone sulla Terra.
+In seguito, il protocollo **IPv6** è stato introdotto per permettere di connettere alla rete Internet fino a 340 sextitillions di apparecchi. La sua implementazione richiede tempo perché l'intera rete Internet deve integrare questa nuova norma. 
 
-È stato proposto rapidamente un nuovo protocollo: **IPv6**. Permette di identificare più di 340 sextillioni di indirizzi differenti. L'implementazione della rete richiederà tempo a causa di importanti cambiamenti nella rete. 
-
-Essendo raro il numero di IPv4, diventa sempre più difficile aggiungere nuove risorse alla rete Internet. Le connessioni IPv6 sono utili solo se il contenuto è disponibile anche su questo protocollo. In questo modo, maggiore sarà la presenza di siti Web in IPv6 e maggiore sarà l'importanza per ogni attore della rete di migrare su questo protocollo.
+Dato che gli indirizzi IPv4 sono meno disponibili, è più difficile aggiungere nuove macchine sulla rete con lo standard IPv4. Tuttavia, le connessioni con un indirizzo IPv6 sono utili solo se, ad esempio, il tuo sito Web è anche disponibile con lo stesso protocollo. In questo modo, più siti web accessibili in IPv6, più i diversi attori presenti sulla rete Internet trasferiranno i loro dispositivi/macchine su questo nuovo protocollo.
 
 Per maggiori informazioni, consulta l'articolo di [Wikipedia](https://it.wikipedia.org/wiki/IPv6){.external} sul protocollo IPv6.
 
-## Obiettivo
+I nostri hosting Web sono compatibili con IPv6 dal 2011. L'attivazione di questo protocollo è rimasta fino a poco tempo fa un'opzione facoltativa alla configurazione. 
 
-I nostri hosting Web sono compatibili con IPv6 dal 2011. ma l'attivazione di questo protocollo è rimasta fino a poco tempo fa un'opzione facoltativa alla configurazione. 
-
-**Questa guida ti mostra come verificare la compatibilità del tuo sito con l'IPv6 e come configurarlo per assicurarne la compatibilità.**
+**Questa guida ti mostra come verificare la compatibilità del tuo sito con il protocollo IPv6 e come configurarlo con un indirizzo IPv6.**
 
 ## Prerequisiti
 
-- Aver registrato un [dominio](https://www.ovhcloud.com/it/domains/){.external} nello Spazio Cliente OVHcloud
-- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
+- Avere un [dominio](https://www.ovhcloud.com/it/domains/){.external} nello Spazio Cliente OVHcloud
+- Disporre di una [offerta di hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 > [!warning]
->OVHcloud fornisce servizi la cui gestione e configurazione sono sotto la tua completa responsabilità. Pertanto spetta a te garantire che tali servizi funzionino correttamente.
 >
->Questa guida ti mostra come effettuare le operazioni più comuni. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un esperto del settore e/o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza.  Per maggiori informazioni, consulta la sezione “Per saperne di più” di questa guida.
->
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/) o di contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> 
 
-Se il tuo sito non è configurato per IPv6, puoi farlo aggiungendo le informazioni nella zona DNS del tuo dominio. Per permettere ai browser di trovare un indirizzo IPv6 quando richiedono la posizione del tuo sito Web tramite il dominio.
+Se il tuo sito non è configurato per funzionare con un indirizzo IPv6, puoi aggiungere [l'indirizzo IPv6 del tuo hosting condiviso OVHcloud](https://docs.ovh.com/it/hosting/lista-indirizzi-ip-di-cluster-e-hosting-web/) nella zona DNS attiva del tuo dominio. L'obiettivo è permettere ai browser di trovare un indirizzo IPv6 associato al tuo sito Web tramite il tuo dominio.
 
-### Verifica la compatibilità IPv6 del tuo sito
+### Verifica la compatibilità IPv6 del tuo sito Web
 
-Per verificare la compatibilità del tuo sito con IPv6, utilizza il sito [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. che indicherà se il tuo sito risponde al nuovo protocollo IP. In caso contrario, segui questa guida per renderlo compatibile.
+Per verificare se il tuo sito Web utilizza già un indirizzo IPv6, utilizza il sito [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. Ti dirà se il tuo sito Web risponde a questo nuovo protocollo IP. In caso contrario, prosegui nella lettura della guida.
 
-### Step 1: Recuperare l'indirizzo IPv6 del tuo hosting Web
+### Step 1: recuperare l'indirizzo IPv6 del tuo hosting Web
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} e seleziona il tuo servizio.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella sezione `Web Cloud`{.action}, clicca su `Hosting`{.action}, seleziona il nome dell'hosting e clicca sulla scheda `Informazioni generali`{.action}.
 
-Nel riquadro `Informazioni generali`, nella sezione **IPv6**, copia il record e passa allo step successivo.
+Nel riquadro **IPv6**, copia l'record e passa allo step successivo.
 
 ![IPv6](images/ipv6_01.png){.thumbnail}
 
-### Step 2: Configura la zona DNS
+### Step 2: configurare la zona DNS attiva del dominio
 
 > [!warning]
-> La nostra opzione CDN al momento non è compatibile con IPv6. Se configuri un indirizzo IPv6 sul tuo sito Web, i tuoi visitatori non usufruiranno della CDN.
+>
+> Le nostre opzioni CDN sono attualmente incompatibili con gli indirizzi IPv6. Se configuri un indirizzo IPv6 per il tuo sito Web, i tuoi visitatori non usufruiranno della CDN.
+>
+> Inoltre, l'aggiunta, la modifica o l'eliminazione di un record DNS nella zona DNS attiva di un dominio comporta un tempo di propagazione da **4 a 24 ore** per essere pienamente efficace.
+>
 
-Per trovare l'indirizzo IPv6 nel browser è necessario modificare la zona DNS associata. Per creare un record di tipo **AAAA**, consulta la guida [Modificare una zona DNS OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/).
+Per consentire al browser di trovare l'indirizzo IPv6 con il tuo dominio, modifica la zona DNS attiva del tuo dominio. Per creare un record DNS di tipo **AAAA**, consulta la guida "[Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1)".
 
-Clicca sulla scheda `Zona DNS`{.action} e seleziona `Zona DNS`{.action} del dominio. Clicca sul pulsante `Aggiungi un record`{.action} a destra della tabella. Inserisci l'indirizzo IPv6 utilizzando il tipo di record **AAAA** e l'IPv6 recuperato precedentemente nel tuo Spazio Cliente.
+Nella sezione `Web Cloud`{.action}, clicca su `Domini`{.action}. Seleziona il tuo dominio e clicca sulla scheda `Zona DNS`{.action}. Clicca su `Aggiungi un record`{.action} a destra della tabella. 
+
+Inserisci l'indirizzo IPv6 precedentemente copiato utilizzando il tipo di record **AAAA**.
 
 ![IPv6](images/ipv6_02.png){.thumbnail}
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
-[Modifica una zona DNS OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/)
+[Modifica una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

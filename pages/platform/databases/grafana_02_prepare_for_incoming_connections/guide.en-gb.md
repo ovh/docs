@@ -4,6 +4,7 @@ excerpt: Find out how to configure your Grafana instance to accept incoming conn
 slug: grafana/configure-grafana-instance
 section: Grafana - Guides
 order: 020
+updated: 2022-05-12
 ---
 
 **Last updated 12th May 2022**

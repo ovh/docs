@@ -3,6 +3,7 @@ title: Activating and using rescue mode on a VPS
 slug: rescue
 excerpt: Find out how to activate and use rescue mode on a VPS
 section: Diagnostics and rescue mode
+updated: 2022-05-02
 ---
 
 **Last updated 2nd May 2022**

@@ -3,6 +3,7 @@ title: Load balancing methods
 slug: balancing
 excerpt: Find out about the various load balancing methods used by the OVH Load Balancer
 section: Configuration
+updated: 2018-01-17
 ---
 
 **Last updated 17th January 2018**

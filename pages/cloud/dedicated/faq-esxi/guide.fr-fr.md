@@ -4,6 +4,7 @@ slug: esxi-faq
 excerpt: "Retrouvez les questions les plus fréquemment posées sur la vague d'attaques ciblant les serveurs ESXi"
 section: 'Sécurité'
 order: 4
+updated: 2023-02-10
 ---
 
 **Dernière mise à jour le 10/02/2023**

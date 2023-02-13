@@ -3,6 +3,7 @@ title: 'Tutoriales - Cómo crear un servidor Minecraft en un VPS o un servidor d
 slug: crear-servidor-minecraft-en-vps
 excerpt: 'Cómo instalar un servidor Minecraft'
 section: Tutoriales
+updated: 2021-06-29
 ---
 
 > [!primary]

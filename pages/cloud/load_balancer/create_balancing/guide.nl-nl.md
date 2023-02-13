@@ -4,6 +4,7 @@ title: Load balancing methode
 slug: lb-balancing
 excerpt: Ontdek de verschillende methoden voor load balancing die worden gebruikt door de OVH Load Balancer
 section: Configuratie
+updated: 2018-01-17
 ---
 
 **Laatste update 31-01-2018**

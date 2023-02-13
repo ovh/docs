@@ -6,6 +6,7 @@ section: User guides
 order: 6
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/using-cluster-autoscaler/'
+updated: 2022-05-17
 ---
 
 <style>

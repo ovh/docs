@@ -5,6 +5,7 @@ slug: etcd-quota-error
 section: Diagnostics
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/etcd-quota-error/'
+updated: 2022-12-14
 ---
 
 **Last updated 14th December 2022**

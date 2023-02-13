@@ -3,6 +3,7 @@ title: Add IP restrictions on an OVHcloud Managed Kubernetes cluster
 slug: add-ip-restrictions
 excerpt: 'Find out how to add IP restrictions/manage access to the API server of an OVHcloud Managed Kubernetes cluster'
 section: User guides
+updated: 2022-07-28
 ---
 
 **Last updated 28th July 2022**

@@ -4,6 +4,7 @@ slug: using_vrack
 excerpt: ''
 section: Network
 order: 00
+updated: 2021-09-30
 ---
 
 **Last updated 30th September 2021**

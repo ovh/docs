@@ -3,6 +3,7 @@ title: 'Configurer une adresse IP en alias'
 slug: network-ipaliasing-vps
 excerpt: 'Découvrez comment ajouter des adresses Additional IP à votre configuration VPS'
 section: 'Réseau et IP'
+updated: 2022-10-06
 ---
 
 **Dernière mise à jour le 06/10/2022**

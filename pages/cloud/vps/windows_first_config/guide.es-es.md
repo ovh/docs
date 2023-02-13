@@ -3,6 +3,7 @@ title: Configurar una nueva instalación de Windows Server
 slug: windows-first-config
 excerpt: "Cómo activar la conexión al escritorio remoto, la respuesta ICMP y los registros de arranque"
 section: Primeros pasos
+updated: 2022-05-06
 ---
 
 > [!primary]

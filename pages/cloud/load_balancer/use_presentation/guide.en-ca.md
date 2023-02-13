@@ -4,6 +4,7 @@ slug: loadbalancer-introduction
 excerpt: Find out more about the OVHcloud Load Balancer solution 
 section: Getting started 
 order: 1
+updated: 2018-01-17
 ---
 
 **Last updated 17th January 2018**

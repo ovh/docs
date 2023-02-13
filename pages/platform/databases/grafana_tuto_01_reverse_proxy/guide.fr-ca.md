@@ -6,6 +6,7 @@ section: Grafana - Tutoriels
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/tutorial-reverse-proxy/'
+updated: 2023-02-06
 ---
 
 **Last updated 6th February 2023**

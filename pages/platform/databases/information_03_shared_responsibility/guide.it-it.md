@@ -6,6 +6,7 @@ section: General information
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/'
+updated: 2021-09-28
 ---
 
 **Last updated September 28th, 2021**

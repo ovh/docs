@@ -4,6 +4,7 @@ excerpt: Create and use connection pools in your Public Cloud Databases for Post
 slug: postgresql/pools
 section: PostgreSQL - Guides
 order: 090
+updated: 2022-04-08
 ---
 
 **Last Updated 8<sup>th</sup> April 2022**

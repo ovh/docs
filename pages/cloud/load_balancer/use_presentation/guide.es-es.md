@@ -4,6 +4,7 @@ slug: presentacion-load-balancer
 excerpt: Descubra el nuevo Load Balancer de OVH
 section: Primeros pasos
 order: 1
+updated: 2018-01-17
 ---
 
 **Última actualización: 05/03/2018**

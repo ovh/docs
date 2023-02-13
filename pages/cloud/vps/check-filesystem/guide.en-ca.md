@@ -4,6 +4,7 @@ excerpt: Find out how to check a file system for errors in rescue mode
 slug: check-file-system-vps
 section: 'Diagnostics and rescue mode'
 order: 5
+updated: 2021-04-20
 ---
 
 **Last updated 20th April 2021**

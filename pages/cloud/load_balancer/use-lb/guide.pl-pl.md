@@ -3,6 +3,7 @@ title: Zarządzanie usługą Load Balancer z Panelu klienta
 slug: konfiguracja-loadbalancer
 excerpt: Podsumowanie najważniejszych funkcji i rozpoczęcie korzystania z usługi Load Balancer z Panelu klienta
 section: Pierwsze kroki
+updated: 2022-09-30
 ---
 
 **Ostatnia aktualizacja dnia 2018-01-12**

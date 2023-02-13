@@ -3,6 +3,7 @@ title: Changer le  mot de passe root sur un VPS
 slug: root-password
 excerpt: Découvrez ici comment modifier le mot de passe root d’un VPS
 section: Diagnostic et mode Rescue
+updated: 2021-04-20
 ---
 
 **Dernière mise à jour le 27/04/2021**

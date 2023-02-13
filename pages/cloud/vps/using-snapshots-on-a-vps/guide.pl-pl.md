@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak włączyć opcję migawki w Panelu klienta OVHcloud 
 slug: uzywanie-migawki-vps
 section: 'Opcje kopii zapasowych'
 order: 1
+updated: 2022-12-02
 ---
 
 > [!primary]

@@ -2,6 +2,7 @@
 title: 'Zmiana rozmiaru partycji na serwerze VPS po zmianie oferty'
 slug: zmiana-rozmiaru-partycji-vps-upgrade
 section: 'Pierwsze kroki'
+updated: 2021-05-18
 ---
 
 > [!primary]

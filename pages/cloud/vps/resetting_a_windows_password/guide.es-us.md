@@ -3,6 +3,7 @@ title: 'Restaurar una contraseña Windows'
 slug: restaurar-una-contrasena-windows
 excerpt: Guía para restaurar una contraseña en Windows
 section: Diagnóstico y modo de rescate
+updated: 2020-11-25
 ---
 
 > [!primary]

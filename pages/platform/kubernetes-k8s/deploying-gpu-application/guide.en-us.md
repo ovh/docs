@@ -4,6 +4,7 @@ slug: deploying-gpu-application
 excerpt: 'Find out how to deploy a GPU application on OVHcloud Managed Kubernetes'
 section: GPU
 order: 0
+updated: 2022-02-16
 ---
 
 <style>

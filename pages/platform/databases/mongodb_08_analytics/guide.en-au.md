@@ -4,6 +4,7 @@ excerpt: Configure a dedicated Analytics node in your Public Cloud Databases for
 slug: mongodb/analytics-node
 section: MongoDB - Guides
 order: 080
+updated: 2022-09-19
 ---
 
 **Last updated 19<sup>th</sup> September 2022**

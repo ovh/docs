@@ -6,6 +6,7 @@ section: Network
 order: 00
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/using_vrack/'
+updated: 2021-09-30
 ---
 
 **Last updated 30th September 2021**

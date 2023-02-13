@@ -3,6 +3,7 @@ title: Suivi de connexion
 slug: iplb-stickiness
 excerpt: Configuration
 section: Configuration
+updated: 2021-02-05
 ---
 
 

@@ -6,6 +6,7 @@ section: Serverless
 order: 0
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-openfaas/'
+updated: 2020-05-12
 ---
 
 **Last updated May 12<sup>th</sup>, 2020.**

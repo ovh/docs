@@ -3,6 +3,7 @@ title: 'Windows-Passwort zurücksetzen'
 slug: reinitialisierung-windows-passwort
 excerpt: Anleitung zum Zurücksetzen eines Passworts unter Windows
 section: Diagnose & Rescue Modus
+updated: 2020-11-25
 ---
 
 > [!primary]

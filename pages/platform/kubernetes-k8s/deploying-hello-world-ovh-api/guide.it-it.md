@@ -6,6 +6,7 @@ section: Tutorials
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/deploying-hello-world-ovh-api/'
+updated: 2023-01-16
 ---
 
 **Last updated 16th January 2023**

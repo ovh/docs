@@ -3,6 +3,7 @@ title: 'Working with probes'
 slug: probes
 excerpt: 'Find out about the general principles behind probes, and why they are used'
 section: Configuration
+updated: 2019-02-12
 ---
 
 ## Objective
