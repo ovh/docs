@@ -68,11 +68,11 @@ Safety best practices include:
 ### How do I track updates about the ESXiArgs ransomware?
 
 You can follow the progress of the situation, as well as future patches, at [this address](https://blog.ovhcloud.com/ransomware-ciblant-vmware-esxi/).
-We also advise you to follow the [official CERT-FR information](https://www.cert.ssi.gouv.fr/alerte/CERTFR-2023-ALE-015/).
+We also advise you to follow the [NCSC threat reports](https://www.ncsc.gov.uk/section/keep-up-to-date/threat-reports?q=&defaultTypes=report&sort=date%2Bdesc).
 
 ### What are the right reflexes to adopt in case of intrusion on an information system?
 
-We invite you to follow the [CERT-FR recommendations](https://www.cert.ssi.gouv.fr/les-bons-reflexes-en-cas-dintrusion-sur-un-systeme-dinformation/).
+We invite you to follow the [NCSC incident management guidance](https://www.ncsc.gov.uk/collection/incident-management) and the [NCSC guide to ransomware](https://www.ncsc.gov.uk/ransomware/home).
 
 ### Is there a risk of data exfiltration?
 
