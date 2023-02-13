@@ -6,7 +6,7 @@ section: NSX-T
 order: 05
 ---
 
-**Dernière mise à jour le 10/02/2023**
+**Dernière mise à jour le 13/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -31,7 +31,7 @@ order: 05
 
 ## Présentation
 
-La fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. IL doit être utilisé normalement sur les connexions est-ouest (ovh-T1-gw)  mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-T0-gw). Le type de filtrage est disponible entre :
+La fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. Il doit être utilisé normalement sur les connexions est-ouest (ovh-T1-gw)  mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-T0-gw). Le type de filtrage est disponible entre :
 
 - Tous les membres d'un segment et tous les autres membres d'un autre segment.
 - Certaines machines virtuelles d'un segment et d'autres machines virtuelles du même segment ou d'un autre segment.
@@ -182,7 +182,7 @@ Allez sur l'onglet `Security`{.action}, Sélectionnez `Distributed Firewall`{.ac
 
 ![06 Create distributed firewall rules 01](images/06-create-distributed-firewall-rules01.png){.thumbnail}
 
-Nommez votre stratégie `Isolate vm and segments`{.action}.
+Nommez votre stratégie `Isolate vm and segment`{.action}.
 
 ![06 Create distributed firewall rules 02](images/06-create-distributed-firewall-rules02.png){.thumbnail}
 
@@ -194,7 +194,7 @@ Cliquez sur l'icône en forme de `stylo`{.action} à droite de **Any** dans la c
 
 ![06 Create distributed firewall rules 04](images/06-create-distributed-firewall-rules04.png){.thumbnail}
 
-Cochez le groupe `g-segment01`{.action} et cliquez sur `APPLY`{.action}
+Restez sur l'onglet `groups`{.action}, cochez le groupe `g-segment01`{.action} et cliquez sur `APPLY`{.action}
 
 ![06 Create distributed firewall rules 05](images/06-create-distributed-firewall-rules05.png){.thumbnail}
 
