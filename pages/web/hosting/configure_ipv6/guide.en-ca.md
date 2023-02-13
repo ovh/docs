@@ -10,44 +10,44 @@ order: 06
 
 ## Objective
 
-The Internet network has been operating since the early 1990s, following the IPv4 standard. This standard allows you to provide an X.X.X.X IP address (where "X" are numbers between 0 and 255) to each machine connected to the Internet network (servers, computers, smartphones, tablets, etc.). However, this standard limits the number of devices connected to the Internet to around 4 billion, which in 2022 was less than one connected device for every two people on Earth.
+The Internet has been operating since the early 1990s, following the IPv4 standard. This standard provides IP addresses in the format X.X.X.X (in which "X" stands for numbers between 0 and 255) to each device connected to the public network (servers, computers, smartphones, tablets, etc.). However, this protocol limits the number of devices connected to the Internet to around 4 billion, which in 2022 was less than one connected device per two people on Earth.
 
-As a result, the **IPv6** protocol was introduced to allow up to 340 sextillion devices to be connected to the internet. It takes time to deploy because the entire Internet network must incorporate this new standard. 
+For this reason, the **IPv6** protocol was introduced, allowing up to 340 sextillion devices to be connected to the Internet. The broad deployment of IPv6 takes time because the new standard has to be incorporated throughout the entire Internet.
 
-Since IPv4 addresses are now less available, it is more difficult to add new machines to the internet using the IPv4 standard. However, connections with an IPv6 address are only useful if, for example, your website is also available with the same protocol. So the more websites that are accessible via IPv6, the more players on the internet will switch their devices/machines to this new protocol.
+Since less IPv4 addresses are available, it is more difficult to add new devices to the Internet using the IPv4 standard. However, connections with an IPv6 address are only useful if public resources, for example your website, are also available with this protocol. This means that the more websites IPv6 is enabled for, the more important it becomes for everyone concerned to migrate to this new protocol.
 
 For more information, see [Wikipedia](https://en.wikipedia.org/wiki/IPv6){.external}'s article on IPv6.
 
-Our web hosting plans have been IPv6 compatible since 2011. However, until recently, enabling this protocol remained an optional option for the configuration. 
+Our web hosting plans have been compatible with IPv6 since 2011. However, enabling this protocol remained optional for the configuration until recently. 
 
-**This guide explains how to verify if your website is compatible with IPv6 and how to configure it with an IPv6 address.**
+**This guide explains how to verify if your website is available via IPv6 and how to configure your hosting's IPv6 address.**
 
 ## Requirements
 
-- Have a [domain name](https://www.ovhcloud.com/en-ca/domains/){.external} in your OVHcloud Control Panel.
-- Have a [web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/){.external}.
-- Be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+- A [domain name](https://www.ovhcloud.com/en-ca/domains/){.external}
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
-> 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/) and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this tutorial.
-> 
+>
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+>
 
-If your website is not configured to work with an IPv6 address, you can add [the IPv6 address of your OVHcloud shared hosting](https://docs.ovh.com/ca/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/) in your domain name’s active DNS zone. The goal is for web browsers to find an IPv6 address associated with your website via your domain name.
+If your website is not configured to work with an IPv6 address, you can add [the IPv6 address of your OVHcloud web hosting](https://docs.ovh.com/ca/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/) in your domain name’s active DNS zone. The goal is for web browsers to find an IPv6 address associated with your website via your domain name.
 
-### Check your website's IPv6 compatibility
+### Check your website's IPv6 availability
 
-To check if your website already uses an IPv6 address, use [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. It will show you whether your website responds to this new IP protocol. If not, please continue reading our guide.
+To check if your website already uses an IPv6 address, use [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. It will show you whether your website responds to this IP protocol. If not, follow the steps below.
 
-### Step 1: retrieve your Web Hosting plan’s IPv6 address
+### Step 1: Retrieve your web hosting plan’s IPv6 address
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. In the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, select the plan concerned, then go to the `General information`{.action} tab.
 
-In the **IPv6** frame, copy the entry and proceed to the next step.
+In the **IPv6** box, copy the address and proceed to the next step.
 
 ![IPv6](images/ipv6_01.png){.thumbnail}
 
@@ -57,10 +57,10 @@ In the **IPv6** frame, copy the entry and proceed to the next step.
 >
 > Our CDN options are currently incompatible with IPv6 addresses. If you configure an IPv6 address for your website, your visitors will not benefit from the CDN.
 >
-> In addition, adding, modifying or deleting a DNS record in a domain name’s active DNS zone will take between **4 and 24 hours** to propagate fully.
+> Bear in mind that adding, modifying or deleting a DNS record in a domain name’s active DNS zone will take between **4 and 24 hours** to propagate fully.
 >
 
-In order for your browser to find the IPv6 address with your domain name, edit your domain’s active DNS zone. Use our guide “[Edit an OVHcloud DNS zone](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1)” to create a **AAAA** DNS record.
+In order for your browser to find the IPv6 address with your domain name, edit your domain’s active DNS zone. Use our guide “[Editing an OVHcloud DNS zone](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/#edit-your-domain-names-ovhcloud-dns-zone_1)” to create a DNS record of the type **AAAA**.
 
 In the `Web Cloud`{.action} section, click on `Domain names`{.action}. Select your domain name, then go to the `DNS zone`{.action} tab. Click the `Add an entry`{.action} button to the right of the table. 
 
