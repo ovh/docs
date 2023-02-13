@@ -4,6 +4,7 @@ slug: notebooks/definition
 excerpt: Learn how to simply bootstrap an AI Notebook
 section: AI Notebooks - Guides
 order: 02
+updated: 2022-11-24
 ---
 
 **Last updated 24th November, 2022.**

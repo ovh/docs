@@ -4,6 +4,7 @@ slug: training/tensorflow-gpu-examples
 excerpt: Example on how to use Tensorflow library with GPUs
 section: AI Training - Tutorials
 order: 03
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

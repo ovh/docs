@@ -4,6 +4,7 @@ slug: training/build-use-custom-image
 excerpt: Explanations on how to build and use your own custom image
 section: AI Training - Tutorials
 order: 02
+updated: 2023-01-31
 ---
 
 **Last updated 31st January, 2023.**

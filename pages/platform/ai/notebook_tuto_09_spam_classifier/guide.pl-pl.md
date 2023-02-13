@@ -6,6 +6,7 @@ section: AI Notebooks - Tutorials
 order: 09
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-spam-classifier/'
+updated: 2022-11-22
 ---
 
 **Last updated 22nd November, 2022.**

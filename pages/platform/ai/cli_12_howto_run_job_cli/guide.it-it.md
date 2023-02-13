@@ -6,6 +6,7 @@ section: Command Line Interface
 order: 202
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/run-job-cli/'
+updated: 2021-03-25
 ---
 
 **Last updated 25th March, 2021.**

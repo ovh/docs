@@ -4,6 +4,7 @@ slug: activation
 excerpt: Find out how to activate the Data Processing service for your cloud project and what are its implications 
 section: How to
 order: 0
+updated: 2020-03-06
 ---
 
 **Last updated 06<sup>th</sup> March, 2020**

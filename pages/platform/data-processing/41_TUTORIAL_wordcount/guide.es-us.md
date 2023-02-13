@@ -6,6 +6,7 @@ section: Tutorials
 order: 2
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/wordcount-spark/'
+updated: 2021-01-20
 ---
 
 **Last updated 20<sup>th</sup> January, 2021**

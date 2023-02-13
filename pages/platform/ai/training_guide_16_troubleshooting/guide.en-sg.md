@@ -4,6 +4,7 @@ slug: training/debug-jobs
 excerpt: Tutorial about how to debug your jobs
 section: AI Training - Guides
 order: 07
+updated: 2021-10-04
 ---
 
 **Last updated 04th October, 2021.**

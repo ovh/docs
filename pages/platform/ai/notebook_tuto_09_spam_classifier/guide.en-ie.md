@@ -4,6 +4,7 @@ slug: notebooks/tuto-spam-classifier
 excerpt: How to build your Spam classifier thanks to Machine Learning
 section: AI Notebooks - Tutorials
 order: 09
+updated: 2022-11-22
 ---
 
 **Last updated 22nd November, 2022.**

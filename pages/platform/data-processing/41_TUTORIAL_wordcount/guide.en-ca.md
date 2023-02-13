@@ -4,6 +4,7 @@ slug: wordcount-spark
 excerpt: Couting occurences of words in a file is a basic example about how using Apache Spark. Let's find out how !
 section: Tutorials
 order: 2
+updated: 2021-01-20
 ---
 
 **Last updated 20<sup>th</sup> January, 2021**

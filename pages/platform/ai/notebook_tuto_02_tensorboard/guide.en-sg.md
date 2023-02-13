@@ -4,6 +4,7 @@ slug: notebooks/tuto-tensorboard-embedded
 excerpt: How to use tensorboard inside AI Notebooks  
 section: AI Notebooks - Tutorials
 order: 02
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

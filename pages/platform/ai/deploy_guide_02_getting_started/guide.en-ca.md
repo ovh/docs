@@ -4,6 +4,7 @@ slug: deploy/getting-started
 excerpt: Discover AI Deploy and unfold your first application
 section: AI Deploy - Guides
 order: 02
+updated: 2022-11-03
 ---
 
 **Last updated 3rd November, 2022.**

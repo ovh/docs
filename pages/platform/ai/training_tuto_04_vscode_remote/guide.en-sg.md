@@ -4,6 +4,7 @@ slug: training/vscode-remote-code
 excerpt: Tutorial to configure Remote Visual Studio with AI Training
 section: AI Training - Tutorials
 order: 04
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**
