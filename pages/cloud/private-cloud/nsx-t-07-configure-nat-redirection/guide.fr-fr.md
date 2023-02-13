@@ -78,7 +78,7 @@ Cliquez sur `SAVE`{.action} pour valider la création de la règle de redirectio
 
 La règle est créée et active. 
 
-![01 Create DNAT rule 08](images/01-create-dnat-rules07.png){.thumbnail}
+![01 Create DNAT rule 08](images/01-create-dnat-rules08.png){.thumbnail}
 
 
 ## Aller plus loin
