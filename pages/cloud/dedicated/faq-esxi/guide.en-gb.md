@@ -14,7 +14,7 @@ Following a major event on pre-7.0 U3i ESXi servers on February 3rd 2023, a wave
 None of our managed services are affected by this attack. However, many customers use this operating system on their own server.
 We intend at providing our users with all the information and recommendations they need.
 
-These attacks are detected worldwide, particularly in Europe. According to our analyzes, ecosystem experts as well as the authorities, the malware uses the vulnerability CVE-2021-21974 as a compromise vector.
+These attacks are detected worldwide, particularly in Europe. According to our analyses, ecosystem experts as well as the authorities, the malware uses the vulnerability CVE-2021-21974 as a compromise vector.
 Investigations are still ongoing to confirm this hypothesis. Our technical teams are working on the detailed identification of the attack characteristics, while coordinating with our peers from other CERTs and security teams.
 
 **Find below the frequently asked questions about the wave of attacks targeting ESXi servers.**
@@ -33,9 +33,9 @@ However, we don't have all the devices we need to recover all of your data.
 The US National Cybersecurity and Infrastructure Security Agency ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) also made available [a tool](https://github.com/cisagov/ESXiArgs-Recover) to retrieve data from an ESXi server targeted by the ESXiArgs ransomware.<br>
 Using this tool requires advanced system administration skills. We advise you to use it only with knowledge of the facts, since OVHcloud cannot provide you with assistance on its use.
 
-In case of difficulties, we recommend that you contact a [specialist provider](https://partner.ovhcloud.com/en-gb/) or contact our teams by [creating a support ticket](https://www.ovh.com/manager/dedicated/#/support/tickets/new) from your OVHcloud Control Panel.
+In case of difficulties, we recommend that you contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or contact our teams by [creating a support ticket](https://www.ovh.com/manager/dedicated/#/support/tickets/new) from your OVHcloud Control Panel.
 
-### Does OVHcloud have a backup to restore your data?
+### Does OVHcloud have a backup to restore my data?
 
 The Dedicated Server offering is optionally supported by [Backup Storage](https://www.ovhcloud.com/en-gb/bare-metal/backup-storage/). However, the backup is not automatic. More details on how this solution works can be found in our [Use Backup Storage on a Dedicated Server](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/) guide.
 
@@ -51,14 +51,14 @@ When you order your dedicated server, no security protocols are implemented nati
 
 1. Secure access to your dedicated server through [Network Firewall](https://docs.ovh.com/gb/en/dedicated/firewall-network/) or your own firewall system.
 2. Install the VMware ESXi 7.0 U3c version available [via your dedicated server administration interface](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#installing-or-reinstalling-your-dedicated-server)
-3. The inability to connect after installing ESXi 7 comes from VMWare's security system. There are no blocking rules in your firewall rules. It will not be possible to reset the administrator password on VMware.
+3. The inability to connect after installing ESXi 7 comes from VMWare's security system. There are no blocking rules in your firewall. It will not be possible to reset the administrator password on VMware.
 4. [Secure your dedicated server](https://docs.ovh.com/gb/en/dedicated/securing-a-dedicated-server/)
 
 Safety best practices include:
 
 - Updating your ESXi systems immediately.
 - Disabling the OpenSLP service on the server or restricting access to only trusted IP addresses. Find more information about this on [VMware documentation](https://kb.vmware.com/s/article/76372).
-- Updating your antiviral solution regularly.
+- Updating your antivirus solution regularly.
 - Ensuring that access to your servers or network devices is limited, controlled and protected with robust passwords.
 - Backing up your critical data to external drives and backup servers that are protected and isolated from the Internet.
 - Implementing logging solutions to monitor events on your critical servers and network devices.
@@ -70,7 +70,7 @@ Safety best practices include:
 You can follow the progress of the situation, as well as future patches, at [this address](https://blog.ovhcloud.com/ransomware-ciblant-vmware-esxi/).
 We also advise you to follow the [NCSC threat reports](https://www.ncsc.gov.uk/section/keep-up-to-date/threat-reports?q=&defaultTypes=report&sort=date%2Bdesc).
 
-### What are the right reflexes to adopt in case of intrusion on an information system?
+### What are the right responses to adopt in case of intrusion on an information system?
 
 We invite you to follow the [NCSC incident management guidance](https://www.ncsc.gov.uk/collection/incident-management) and the [NCSC guide to ransomware](https://www.ncsc.gov.uk/ransomware/home).
 
@@ -82,6 +82,6 @@ Not to our knowledge on this wave of attack.
 
 Our customers using [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en-gb/hosted-private-cloud/) solutions are not affected by the ransomware. Specifically, the SSL gateway makes it possible to avoid this type of attack by blocking external access to this port (OpenSLP 427).
 
-## Go Further
+## Go further
 
 Talk to our user community at <https://community.ovh.com/en/>
