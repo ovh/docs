@@ -5,6 +5,7 @@ slug: vrack-k8s-custom-gateway
 section: Network
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/vrack-k8s-custom-gateway/'
+updated: 2022-07-25
 ---
 
 <style>

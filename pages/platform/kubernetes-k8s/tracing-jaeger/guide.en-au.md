@@ -4,6 +4,7 @@ slug: tracing-jaeger
 excerpt: 'Find out how to set up distributed tracing on OVHcloud Managed Kubernetes Service with Jaeger.'
 section: Monitoring & Observability
 order: 01
+updated: 2022-03-22
 ---
 
 <style>

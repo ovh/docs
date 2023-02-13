@@ -6,6 +6,7 @@ section: Traffic management
 order: 0
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-nginx-ingress/'
+updated: 2022-06-27
 ---
 
 **Last updated 27th June 2022**

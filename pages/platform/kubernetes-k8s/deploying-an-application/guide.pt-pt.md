@@ -5,6 +5,7 @@ excerpt: 'Find out how to deploy a "Hello World" application on an OVHcloud Mana
 section: Getting started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/deploying-an-application/'
+updated: 2022-05-02
 ---
 
 <style>

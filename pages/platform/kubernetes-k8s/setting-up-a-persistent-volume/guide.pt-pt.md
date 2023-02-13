@@ -6,6 +6,7 @@ section: Storage
 order: 0
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/setting-up-a-persistent-volume/'
+updated: 2022-11-28
 ---
 
 **Last updated 28th November 2022.**

@@ -3,6 +3,7 @@ title: Installing Agones on OVHcloud Managed Kubernetes
 slug: installing-agones
 excerpt: 'Find out how to install Agones on OVHcloud Managed Kubernetes'
 section: Tutorials
+updated: 2022-12-09
 ---
 
 <style>

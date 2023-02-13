@@ -3,6 +3,7 @@ title: Deploying Artifactory on an OVHcloud Managed Kubernetes cluster
 slug: installing-artifactory
 excerpt: 'Find out how to install JFrog Artifactory on an OVHcloud Managed Kubernetes cluster'
 section: Tutorials
+updated: 2022-10-17
 ---
 
 <style>

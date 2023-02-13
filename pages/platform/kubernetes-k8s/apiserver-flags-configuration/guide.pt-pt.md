@@ -5,6 +5,7 @@ excerpt: 'Find out how to configure the managed components of your Kubernetes: C
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/apiserver-flags-configuration/'
+updated: 2022-11-25
 ---
 
 <style>

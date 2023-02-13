@@ -5,6 +5,7 @@ slug: eos-eol-policies
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/eos-eol-policies/'
+updated: 2022-05-30
 ---
 
 **Last updated May 30<sup>th</sup>, 2022.**

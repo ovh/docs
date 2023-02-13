@@ -4,6 +4,7 @@ excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Ve
 slug: backing-up-cluster-with-velero
 section: Storage
 order: 3
+updated: 2023-01-11
 ---
 
 <style>

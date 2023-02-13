@@ -6,6 +6,7 @@ section: Tutorials
 order: 5
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-wordpress/'
+updated: 2021-12-17
 ---
 
 **Last updated December 17, 2021.**

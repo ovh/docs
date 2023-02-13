@@ -6,6 +6,7 @@ section: Monitoring & Observability
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/tracing-jaeger/'
+updated: 2022-03-22
 ---
 
 <style>

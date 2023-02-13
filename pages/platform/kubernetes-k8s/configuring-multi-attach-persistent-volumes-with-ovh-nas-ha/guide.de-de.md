@@ -6,6 +6,7 @@ section: Storage
 order: 4
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/'
+updated: 2021-07-20
 ---
 
 <style>
