@@ -4,6 +4,7 @@ slug: importare-la-tua-immagine
 excerpt: Come importare la tua immagine su Public Cloud
 section: Gestione via OpenStack
 order: 10
+updated: 2020-10-27
 ---
 
 **Ultimo aggiornamento: 27/10/2020**

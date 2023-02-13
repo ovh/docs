@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak skonfigurować dodatkowe klucze SSH dla instancji Pub
 slug: konfiguracja_dodatkowych_kluczy_ssh
 section: Tutoriale
 order: 01
+updated: 2022-02-04
 ---
 
 > [!primary]

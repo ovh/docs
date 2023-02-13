@@ -4,6 +4,7 @@ slug: crear_una_instancia_en_horizon
 excerpt: 'Cómo crear una instancia desde el panel Horizon'
 section: Gestión desde Horizon
 order: 5
+updated: 2022-08-01
 ---
 
 > [!primary]

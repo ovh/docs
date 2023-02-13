@@ -4,6 +4,7 @@ excerpt: "Découvrez comment commander votre projet Public Cloud avec l'API OVHc
 slug: commander-projet-public-cloud-api
 section: Gestion de projets
 order: 1
+updated: 2020-12-09
 ---
 
 **Dernière mise à jour le 22 décembre 2020**

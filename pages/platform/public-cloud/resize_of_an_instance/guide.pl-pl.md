@@ -4,6 +4,7 @@ excerpt: Jak zmienić rozmiar instancji w interfejsie Horizon.
 slug: zmiana_rozmiaru_instancji
 legacy_guide_number: g1778
 section: Zarządzanie w interfejsie Horizon
+updated: 2021-11-22
 ---
 
 > [!primary]

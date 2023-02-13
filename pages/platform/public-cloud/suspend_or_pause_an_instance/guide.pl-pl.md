@@ -4,6 +4,7 @@ slug: wstrzymanie_lub_uspienie_instancji
 legacy_guide_number: g1781
 section: Zarządzanie projektami
 order: 3
+updated: 2021-09-20
 ---
 
 > [!primary]

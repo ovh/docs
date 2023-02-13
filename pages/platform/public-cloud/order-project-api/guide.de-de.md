@@ -4,6 +4,7 @@ excerpt: "Hier erfahren Sie, wie Sie Ihr Public Cloud Projekt mit der OVHcloud A
 slug: public-cloud-api
 section: Erste Schritte
 order: 9
+updated: 2020-12-09
 ---
 
 **Letzte Aktualisierung am 22.12.2020**

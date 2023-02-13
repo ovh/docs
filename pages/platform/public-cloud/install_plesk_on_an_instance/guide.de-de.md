@@ -3,6 +3,7 @@ title: 'Plesk auf einer Instanz installieren'
 slug: plesk-auf-einer-instanz-installieren
 excerpt: 'Erfahren Sie hier, wie Sie Plesk auf Ihrer Public Cloud Instanz einrichten'
 section: 'Tutorials'
+updated: 2018-03-26
 ---
 
 **Letzte Aktualisierung am 15.10.2020**

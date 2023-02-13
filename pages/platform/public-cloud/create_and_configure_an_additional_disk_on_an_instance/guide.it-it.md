@@ -5,6 +5,7 @@ slug: crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza
 legacy_guide_number: g1863
 section: Storage
 order: 1
+updated: 2023-02-09
 ---
 
 > [!primary]

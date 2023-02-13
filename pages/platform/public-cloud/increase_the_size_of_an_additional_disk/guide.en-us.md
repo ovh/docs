@@ -4,6 +4,7 @@ excerpt: 'Find out how to increase the size of an additional volume and enlarge 
 slug: increase_the_size_of_an_additional_disk
 section: Storage
 order: 2
+updated: 2022-03-29
 ---
 
 **Last updated 29th March 2022**

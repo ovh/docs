@@ -4,6 +4,7 @@ excerpt: Como redimensionar uma instância
 slug: redimensionar_uma_instancia
 legacy_guide_number: g1778
 section: Gestão a partir do Horizon
+updated: 2021-11-22
 ---
 
 > [!primary]

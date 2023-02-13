@@ -4,6 +4,7 @@ slug : modifier-une-instance-flex
 excerpt: Apprenez à modifier une instance flex depuis l'interface OpenStack Horizon
 section : Gestion depuis Horizon
 order : 10
+updated: 2021-11-15
 ---
 
 **Dernière mise à jour le 15 Novembre 2021**

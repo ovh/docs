@@ -4,6 +4,7 @@ slug: informacoes-sobre-o-metodo-de-faturacao-cloud
 section: Gestão do projeto
 excerpt: 'Saiba mais sobre o método de faturação dos produtos Public Cloud'
 order: 2
+updated: 2022-08-29
 ---
 
 **Última atualização: 30/08/2022**

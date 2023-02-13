@@ -4,6 +4,7 @@ slug: create_and_configure_an_additional_disk_on_an_instance
 excerpt: 'Find out how to attach a new volume to your Public Cloud instance'
 section: Storage
 order: 1
+updated: 2023-02-09
 ---
 
 **Last updated 9th February 2023**

@@ -3,6 +3,7 @@ title: 'Compartir un objeto con una URL temporal'
 slug: compartir_un_objeto_con_una_direccion_temporal
 excerpt: 'Cómo compartir un objeto sin comunicar información personal'
 section: OpenStack
+updated: 2021-01-11
 ---
 
 **Última actualización: 27/02/2019**

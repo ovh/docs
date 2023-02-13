@@ -4,6 +4,7 @@ slug: activate-windows-licence-private-mode-instance
 excerpt: 'Cómo activar una licencia Windows en una instancia en modo privado'
 section: Primeros pasos
 order: 09
+updated: 2023-01-25
 ---
 
 **Última actualización: 02/02/2023**

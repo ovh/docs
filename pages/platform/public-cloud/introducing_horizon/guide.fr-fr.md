@@ -4,6 +4,7 @@ slug: horizon
 legacy_guide_number: 1776
 section: Gestion depuis Horizon
 order: 01
+updated: 2022-03-16
 ---
 
 **Dernière mise à jour le 16/03/2022**

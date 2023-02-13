@@ -4,6 +4,7 @@ excerpt: "Guided tour of the Public Cloud interface to explore the different sec
 slug: public-cloud-interface
 section: Getting started
 order: 03
+updated: 2021-12-06
 ---
 
 **Last updated 6th December 2021**

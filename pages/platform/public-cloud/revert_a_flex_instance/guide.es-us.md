@@ -4,6 +4,7 @@ slug: modificar-una-instancia-flex
 excerpt: Cómo cambiar una instancia flex desde el panel de control de OpenStack Horizon
 section: Gestión desde Horizon
 order : 8
+updated: 2021-11-15
 ---
 
 **Última actualización: 10/12/2021**

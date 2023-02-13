@@ -4,6 +4,7 @@ excerpt: Uruchomienie instancji na przypisanym woluminie
 slug: uruchomienie_instancji_na_przypisanym_woluminie
 legacy_guide_number: g2064
 section: Zarządzanie w OpenStack CLI
+updated: 2023-01-11
 ---
 
 

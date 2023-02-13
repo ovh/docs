@@ -4,6 +4,7 @@ slug: creation-et-suppression-dun-utilisateur-openstack
 section: 'Gestion de projets'
 excerpt: Découvrez comment créer et supprimer un utilisateur OpenStack depuis votre espace client OVHcloud
 order: 9
+updated: 2022-03-16
 ---
 
 **Dernière mise à jour le 17/03/2022**

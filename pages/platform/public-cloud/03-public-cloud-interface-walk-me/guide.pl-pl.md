@@ -4,6 +4,7 @@ excerpt: "Przewodnik po interfejsie Public Cloud do znajdowania poszczególnych 
 slug: interfejs-public-cloud
 section: Pierwsze kroki
 order: 03
+updated: 2021-12-06
 ---
 
 > [!primary]

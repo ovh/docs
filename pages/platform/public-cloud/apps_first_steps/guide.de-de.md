@@ -3,6 +3,7 @@ title: Erste Schritte mit vorinstallierten Anwendungen
 slug: vorstellige-anwendungen
 excerpt: Erfahren Sie hier, wie Sie vorinstallierte Anwendungen auf Instanzen einrichten
 section: Erste Schritte
+updated: 2021-09-07
 ---
 
 **Letzte Aktualisierung am 07.09.2021**

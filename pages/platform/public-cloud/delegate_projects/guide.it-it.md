@@ -4,6 +4,7 @@ excerpt: Come delegare i diritti di accesso a un progetto Public Cloud ad altri 
 slug: delega_i_diritti_per_gestire_i_tuoi_progetti
 section: Gestione del progetto
 order: 7
+updated: 2022-04-04
 ---
 
 > [!primary]

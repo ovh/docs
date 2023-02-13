@@ -4,6 +4,7 @@ excerpt: "Modifica l'hostname della tua istanza"
 slug: modifica_lhostname_della_tua_istanza
 legacy_guide_number: g1928
 section: Tutorial
+updated: 2018-09-18
 ---
 
 **Ultimo aggiornamento: 26/10/2018**

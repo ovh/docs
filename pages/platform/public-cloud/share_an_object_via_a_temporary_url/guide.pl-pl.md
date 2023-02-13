@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak udostępnić obiekt bez ujawniania danych osobowych'
 slug: udostepnianie_obiektu_za_pomoca_tymczasowego_adresu
 legacy_guide_number: g2007
 section: 'Object Storage'
+updated: 2021-01-11
 ---
 
 **Ostatnia aktualizacja z dnia 10-06-2019**

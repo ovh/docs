@@ -4,6 +4,7 @@ excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partic
 slug: aumentar_el_tamano_de_un_disco_adicional
 order: 6
 section: Almacenamiento
+updated: 2022-03-29
 ---
 
 > [!primary]

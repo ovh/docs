@@ -4,6 +4,7 @@ slug: upgrading-operating-system
 excerpt: Find out how to upgrade your end of life operating system
 section: 'Tutorials'
 order: 14
+updated: 2022-02-07
 ---
 
 **Last updated 7th February 2022**

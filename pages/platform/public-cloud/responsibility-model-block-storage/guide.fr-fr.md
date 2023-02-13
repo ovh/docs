@@ -4,6 +4,7 @@ slug: raci-block-storage-public-cloud
 section: Informations générales
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du Block Storage Public Cloud"
 order: 6
+updated: 2022-12-23
 ---
 
 **Dernière mise à jour le 24/11/2022**

@@ -4,6 +4,7 @@ slug: die-dns-server-einer-instanz-aendern
 excerpt: 'Erfahren Sie hier, wie Sie den vorkonfigurierten DNS-Server einer Public Cloud Instanz anpassen'
 section: 'Netzwerk und IP'
 legacy_guide_number: 1985
+updated: 2021-10-29
 ---
 
 > [!primary]

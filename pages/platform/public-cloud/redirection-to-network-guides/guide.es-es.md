@@ -4,6 +4,7 @@ slug: public-cloud-network-services-redirection
 excerpt: Consulte todas nuestras guías Public Cloud Network services
 section: 'Red e IP'
 order: 00
+updated: 2022-11-02
 ---
 
 **Última actualización: 02/11/2022**

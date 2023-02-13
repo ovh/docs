@@ -3,6 +3,7 @@ title: Erste Schritte mit der Volume-Verwaltung über die OpenStack API
 slug: api-openstack-volumes
 section: OpenStack
 order: 7
+updated: 2021-05-19
 ---
 
 > [!primary]

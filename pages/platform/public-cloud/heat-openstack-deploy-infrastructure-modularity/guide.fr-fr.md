@@ -3,6 +3,7 @@ title: Déployer une infrastructure avec des variables et des sorties formatées
 excerpt: Découvrez comment exploiter les variables d'environnement en utilisant la modularité des gabarits Heat
 slug: deployer-infrastructure-avec-variables-et-sorties-formatees-heat-openstack
 section: Tutoriels
+updated: 2018-06-20
 ---
 
 **Dernière mise à jour le 20/06/2018**

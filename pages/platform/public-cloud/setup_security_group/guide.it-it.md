@@ -4,6 +4,7 @@ excerpt: Come creare un gruppo di sicurezza e configurarlo su un'istanza Public 
 slug: configure-security-group-horizon
 legacy_guide_number: g1925
 section: Gestione da Horizon
+updated: 2021-08-24
 ---
 
 > [!primary]

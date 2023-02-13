@@ -4,6 +4,7 @@ slug: delete_a_project
 excerpt: 'Saiba como eliminar um projeto Public Cloud'
 section: 'Gestão do projeto'
 order: 2
+updated: 2022-10-14
 ---
 
 > [!primary]

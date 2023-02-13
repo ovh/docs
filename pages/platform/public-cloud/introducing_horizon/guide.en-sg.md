@@ -4,6 +4,7 @@ excerpt: Discover the main sections of the Horizon interface
 slug: horizon
 section: Horizon
 order: 01
+updated: 2022-03-16
 ---
 
 **Last updated 16th March 2022**

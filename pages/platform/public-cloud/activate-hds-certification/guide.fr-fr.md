@@ -4,6 +4,7 @@ slug: activer-hds
 excerpt: "Découvrez comment activer l'option pour l’hébergement des données de santé sur votre projet Public Cloud"
 section: 'Gestion de projets'
 order: 9
+updated: 2022-12-01
 ---
 
 **Dernière mise à jour le 01/12/2022**

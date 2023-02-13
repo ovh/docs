@@ -4,6 +4,7 @@ slug: come_utilizzare_la_tua_istanza_public_cloud
 excerpt: Come gestire le istanze Public Cloud dallo Spazio Cliente OVHcloud
 section: 'Per iniziare'
 order: 05
+updated: 2023-01-04
 ---
 
 > [!primary]

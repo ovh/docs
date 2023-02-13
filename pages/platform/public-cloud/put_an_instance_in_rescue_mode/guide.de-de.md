@@ -3,6 +3,7 @@ title: Umstellen einer Instanz auf den Rescue-Modus
 slug: umstellung_einer_instanz_auf_den_rescue-modus
 excerpt: Erfahren Sie hier, wie Sie den Rescue-Modus für Ihre Public Cloud Instanz aktivieren
 section: Verwaltung im OVHcloud Kundencenter
+updated: 2023-01-04
 ---
 
 **Letzte Aktualisierung am 04.01.2023**

@@ -3,6 +3,7 @@ title: 'Transferir el backup de una instancia entre datacenters'
 slug: transferir-backup-de-instancia-entre-datacenters
 section: 'Almacenamiento'
 excerpt: 'Cómo transferir un backup de un datacenter a otro conservando la configuración y el estado de la instancia'
+updated: 2019-03-29
 ---
 
 **Última actualización: 29/03/2019**

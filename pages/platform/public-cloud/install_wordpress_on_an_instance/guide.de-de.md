@@ -3,6 +3,7 @@ title: Installation von WordPress auf einer Instanz
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz für das Hosting von WordPress-Webseiten verwenden
 slug: installation_von_wordpress_auf_einer_instanz
 section: 'Tutorials'
+updated: 2021-10-15
 ---
 
 **Letzte Aktualisierung am 15.10.2021**

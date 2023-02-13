@@ -4,6 +4,7 @@ slug: empezar-con-volúmenes-api-openstack
 legacy_guide_number: 2071
 section: OpenStack
 order: 8
+updated: 2021-05-19
 ---
 
 > [!primary]

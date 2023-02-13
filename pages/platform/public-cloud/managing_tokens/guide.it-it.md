@@ -4,6 +4,7 @@ excerpt: Come utilizzare i token via API Keystone
 slug: gestisci_i_tuoi_token
 legacy_guide_number: g1872
 section: Gestione via OpenStack
+updated: 2020-04-09
 ---
 
 > [!primary]

@@ -5,6 +5,7 @@ slug: configurar-el-inverso-dns-de-una-instancia
 legacy_guide_number: 1940
 section: "Gestión de las instancias desde el área de cliente"
 order: 07
+updated: 2021-11-12
 ---
 
 > [!primary]

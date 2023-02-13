@@ -4,6 +4,7 @@ slug: deleguer-ses-projets
 excerpt: "Découvrez comment déléguer des droits d'accès à un projet Public Cloud à d'autres comptes OVHcloud"
 section: Gestion de projets
 order: 7
+updated: 2022-04-04
 ---
 
 **Dernière mise à jour le 04/04/2022**
