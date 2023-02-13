@@ -178,7 +178,7 @@ Cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
 
 Nous allons maintenant créer une règle sur le pare-feu distribué de blocage entre les deux groupes créés.
 
-Allez sur l'onglet `Security`{.action}, Sélectionnez `Distributed Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}
+Allez sur l'onglet `Security`{.action}, Sélectionnez `Distributed Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}.
 
 ![06 Create distributed firewall rules 01](images/06-create-distributed-firewall-rules01.png){.thumbnail}
 
