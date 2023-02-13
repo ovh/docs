@@ -19,8 +19,6 @@ order: 01
 
 Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos redirections et alias e-mail, par exemple pour renvoyer des e-mails reçus sur une adresse A vers une adresse B.
 
-## FAQ 
-
 ### Qu'est-ce qu'une redirection e-mail ?
 
 Une redirection permet de modifier le trajet initial d'un e-mail vers une ou plusieurs autres adresses e-mail.
@@ -71,7 +69,7 @@ Pour ces deux exceptions, consultez directement le chapitre « [Créer une redir
 > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 > |---|---|
 > |![email](images/mxplan-starter-legacy.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new.png){.thumbnail}<br>Repérez la `Référence serveur` dans le cadre « Résumé »|
-> |Poursuivez la lecture à « [Version historique de l'offre MX Plan](./#version-historique-de-loffre-mx-plan) »|Poursuivez la lecture à  [Créer une redirection](#redirect) ou [Créer un alias](#alias)|
+> |Poursuivez la lecture à « [Version historique de l'offre MX Plan](#mxplanlegacy) »|Poursuivez la lecture à  [Créer une redirection](#redirect) ou [Créer un alias](#alias)|
 
 ### Créer une redirection <a name="redirect"></a>
 
