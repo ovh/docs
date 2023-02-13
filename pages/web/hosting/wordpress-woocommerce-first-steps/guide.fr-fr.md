@@ -33,7 +33,7 @@ Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HT
 
 ### Installation
 
-Connectez-vous sur votre interface d'administration en tapant `/wp-admin` ou `/wp-login` dans votre bare de recherche après l'URL de votre nom de domaine (la redirection se fait automatiquement)&nbsp;:
+Connectez-vous sur votre interface d'administration en tapant `/wp-admin` ou `/wp-login` dans votre barre de recherche après l'URL de votre nom de domaine (la redirection se fait automatiquement)&nbsp;:
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps%5B1%5D.png){.thumbnail}
 
@@ -114,18 +114,18 @@ Cet onglet vous permet de définir les éléments suivants&nbsp;:
 
 La gestion de produits se fait via un ensemble de sous-rubriques&nbsp;:
 
-- **Général** : sert à définir des éléments tels que la page d'accueil qui sera affichée par défaut (boutique, mentions légales, panier, etc.), les unités de mesure, la possibilité ou non de mettre des commentaires à propos des produits ou des notes&nbsp;;
-- **Inventaire** : sert à paramétrer ou non la gestion de votre stock et à configurer le comportement du site web (stock décrémenté lorsqu'un objet est dans le panier, seuils d'alerte, possibilité de masquer les produits qui ne sont plus en stock)&nbsp;;
+- **Général** : sers à définir des éléments tels que la page d'accueil qui sera affichée par défaut (boutique, mentions légales, panier, etc.), les unités de mesure, la possibilité ou non de mettre des commentaires à propos des produits ou des notes&nbsp;;
+- **Inventaire** : sers à paramétrer ou non la gestion de votre stock et à configurer le comportement du site web (stock décrémenté lorsqu'un objet est dans le panier, seuils d'alerte, possibilité de masquer les produits qui ne sont plus en stock)&nbsp;;
 - **Produits téléchargeables** : concerne les cas de mise à disposition de documents à télécharger par les utilisateurs&nbsp;:
 - **Répertoires de téléchargement approuvés** : précise le ou les répertoires sur le serveur où les fichiers seront téléversés&nbsp;:
-- **Avancé&nbsp** : sert à paramétrer plus finement les attributs des produits.
+- **Avancé&nbsp** : sers à paramétrer plus finement les attributs des produits.
 
 #### Expédition
 
 Si vous avez activé les extensions par défaut proposées gratuitement lors de l'installation, vous disposez de l'extension [WooCommerce Shipping](https://woocommerce.com/fr-fr/woocommerce-shipping/){.external}. Dans le cas contraire, vous pouvez procéder à son installation en vous rendant dans le menu `Extensions`{.action}
 
-- **Zones d'expédition** : permet de définir et configurer des zones d'expédition
-- **Options de livraison** : sert à paramétrer l'application pour tout ce qui est relatif aux frais d'expédition
+- **Zones d'expédition** : permets de définir et configurer des zones d'expédition
+- **Options de livraison** : sers à paramétrer l'application pour tout ce qui est relatif aux frais d'expédition
 - **Classes d'expédition** : peuvent être utilisées pour grouper des produits similaires par type d'envoi.
 
 #### Paiements
@@ -138,7 +138,7 @@ Cette rubrique regroupe toutes les fonctionnalités relatives à la gestion des 
 
 #### E-mails
 
-Permet de configurer les *e-mails types* envoyés par l'application (inscription, commandes, annulations de commande, etc.).
+Permets de configurer les *e-mails types* envoyés par l'application (inscription, commandes, annulations de commande, etc.).
 
 #### Intégration
 
