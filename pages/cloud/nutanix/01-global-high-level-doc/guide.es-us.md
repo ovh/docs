@@ -1,5 +1,5 @@
 ---
-title: Documentación general de Nutanix on OVHcloud (EN)
+title: "Nutanix on OVHcloud - Documentación general (EN)"
 slug: high-level-documentation
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/high-level-documentation/'

@@ -1,5 +1,5 @@
 ---
-title: Nutanix on OVHcloud global high-level documentation
+title: "Nutanix on OVHcloud - High-level documentation"
 slug: high-level-documentation
 excerpt: Technical details of the Nutanix on OVHcloud solution
 section: Getting started
