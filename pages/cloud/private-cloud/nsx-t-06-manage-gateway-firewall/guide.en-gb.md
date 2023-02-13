@@ -31,7 +31,7 @@ order: 06
 
 # Overview
 
-Gateway Firewall allows filtering between internal segments and the network outside the cluster in and out. 
+Gateway Firewall allows filtering between internal segments and the network outside the incoming or outgoing cluster.
 
 It works on the North-South (Tier-0 Gateways) and East-West (Tier-1 Gateways) gateways if the source or destination is not inside the cluster.
 
@@ -41,7 +41,7 @@ If you want to create filtering rules between internal segments, you will need t
 
 We will create a rule that blocks access to the entire external network of a cluster from a group that contains a segment. You can use this guide to create [Distributed Firewall Management] groups (https://docs.ovh.com/en/gb/nsx-t-manage-distributed-firewall) and **any** groups for the destination.
 
-Allez sur l'onglet `Security`{.action}, Sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}
+Go to the `Security`{.action} tab, select `Gateway Firewall`{.action} and click `+ ADD POLICY`{.action}.
 
 ![01 Create gateway firewall rules 01](images/01-create-gateway-firewall-rules01.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Name your rule `block segment1 to any`{.action} below the **Name** column.
 
 ![01 Create gateway firewall rules 04](images/01-create-gateway-firewall-rules04.png){.thumbnail}
 
-Click on the `pen`{.action} to the left of Any in the **Source** column.
+Click on the `pen`{.action} to the right of Any in the **Source** column.
 
 ![01 Create gateway firewall rules 05](images/01-create-gateway-firewall-rules05.png){.thumbnail}
 

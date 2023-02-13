@@ -31,7 +31,7 @@ order: 06
 
 # Présentation
 
-Le pare-feu de passerelles permet le filtrage entre les segments internes et le réseau extérieur au cluster en entrée et en sortie. 
+Le pare-feu de passerelles permet le filtrage entre les segments internes et le réseau extérieur au cluster en entrée ou en sortie. 
 
 Il fonctionne sur les passerelles de type nord-sud(Tier-0 Gateways) et est-ouest (Tier-1 Gateways) si la source ou la destination ne se trouve pas à l'intérieur du cluster.
 
@@ -57,7 +57,7 @@ Nommez votre règle `block segment1 to any`{.action} en dessous de la colonne **
 
 ![01 Create gateway firewall rules 04](images/01-create-gateway-firewall-rules04.png){.thumbnail}
 
-Cliquez sur le `stylo`{.action} à gauche de Any dans la colonne **Source**.
+Cliquez sur le `stylo`{.action} à droite de Any dans la colonne **Source**.
 
 ![01 Create gateway firewall rules 05](images/01-create-gateway-firewall-rules05.png){.thumbnail}
 
@@ -65,7 +65,7 @@ Restez dans l'onglet `Group`{.action}, sélectionnez le groupe `g-segment1`{.act
 
 ![01 Create gateway firewall rules 06](images/01-create-gateway-firewall-rules06.png){.thumbnail}
 
-Choisissez `Drop`{.action} sous la colonne **Action** et cliquez sur `PUBLISH`{.action}
+Choisissez `Drop`{.action} sous la colonne **Action** et cliquez sur `PUBLISH`{.action}.
 
 ![01 Create gateway firewall rules 07](images/01-create-gateway-firewall-rules07.png){.thumbnail}
 
