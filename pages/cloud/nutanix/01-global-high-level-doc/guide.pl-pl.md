@@ -1,9 +1,9 @@
 ---
-title: Dokumentacja ogólna programu Nutanix (EN)
+title: Dokumentacja ogólna programu Nutanix on OVHcloud (EN)
 slug: high-level-documentation
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/high-level-documentation/'
-excerpt: Technical details of the Nutanix infrastructure at OVHcloud
+excerpt: Technical details of the Nutanix on OVHcloud solution
 section: Pierwsze kroki
 order: 01
 updated: 2022-12-08

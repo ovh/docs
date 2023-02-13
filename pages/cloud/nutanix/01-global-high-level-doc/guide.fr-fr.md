@@ -1,7 +1,7 @@
 ---
-title: Documentation générale sur Nutanix
+title: Documentation générale sur la solution Nutanix on OVHcloud
 slug: high-level-documentation
-excerpt: "Les détails techniques de l'infrastructure Nutanix chez OVHcloud"
+excerpt: "Les détails techniques de la solution Nutanix on OVHcloud"
 section: Premiers pas
 order: 01
 updated: 2022-12-08
