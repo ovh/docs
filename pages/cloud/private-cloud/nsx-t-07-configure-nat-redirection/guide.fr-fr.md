@@ -40,7 +40,7 @@ Depuis l'interface NSX-T allez sur l'onglet `Networking`{.action}, Sélectionnez
 
 Choisissez ces informations
 
-* **Action** : Séléctionnez `DNAT`{.action}.
+* **Action** : Sélectionnez `DNAT`{.action}.
 * **Source IP** : Saisissez l'adresse IP ou l'étendue des adresses qui pourront utiliser cette redirection.
 * **Destination IP** : Adresse IP virtuelle publique de NSX-T.
 * **Destination PORT** : Port d'écoute sur l'adresse publique comme `2222`{.action}.
