@@ -3,10 +3,10 @@ title: Mise en place du NAT pour des redirections de ports
 slug: nsx-t-manage-distributed-firewall
 excerpt: Comment configurer le NAT pour créer une redirection de port
 section: NSX-T
-order: 08
+order: 07
 ---
 
-**Dernière mise à jour le 07/02/2023**
+**Dernière mise à jour le 13/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 

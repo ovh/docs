@@ -3,10 +3,10 @@ title: mplementing NAT for port redirections
 slug: nsx-t-intersegment-secure
 excerpt: How to Configure NAT to Create Port Redirection
 section: NSX-T
-order: 08
+order: 07
 ---
 
-**Last updated 07th February 2023**
+**Last updated 13th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
