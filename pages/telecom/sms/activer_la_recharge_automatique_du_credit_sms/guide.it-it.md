@@ -3,13 +3,14 @@ title: Gestire i crediti SMS e attivare la ricarica automatica
 slug: attivare-la-ricarica-automatica-del-credito-sms 
 excerpt: Come gestire i tuoi crediti SMS OVHcloud
 section: Gestisci la tua offerta
+updated: 2023-02-09
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 29/08/2022**
+**Ultimo aggiornamento: 09/02/2023**
 
 ## Obiettivo
 
@@ -74,32 +75,26 @@ Infine, compila i campi richiesti:
 
 ![credit sms](images/smscredit03.png){.thumbnail}
 
-### Il trasferimento dei crediti
+### Trasferire crediti SMS
 
 > [!primary]
 >
 > È possibile trasferire i crediti soltanto tra gli account SMS di uno stesso identificativo cliente OVHcloud. Il trasferimento dei crediti tra due diversi identificativi OVHcloud non è consentito.
 >
 
-Il trasferimento dei crediti è consentito solo tramite API.
+Nello Spazio Cliente OVHcloud seleziona uno dei tuoi account SMS e clicca su `Trasferire crediti`{.action} dalla scheda `Home page`{.action}.
 
-> [!success]
-> Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
+![trasferimento di crediti SMS](images/credit-transfer01.png){.thumbnail}
 
-Accedi alla pagina [https://api.ovh.com/](https://api.ovh.com/) e poi utilizza l’API seguente:
+Scegli:
 
-> [!api]
->
-> @api {post} /sms/{serviceName}/transferCredits
->
+- l'account SMS che trasferirà i crediti
+- l'account SMS che riceverà i crediti
+- il numero di stanziamenti da trasferire
 
-A questo punto, è necessario completare i campi seguenti:
+Clicca su `Inviare`{.action} per confermare il trasferimento. Questo è immediato.
 
-- `serviceName`: inserisci il nome dell’account SMS utilizzato per trasferire i crediti
-- `credits`: inserisci il numero di crediti da trasferire
-- `smsAccountTarget`: inserisci il nome dell’account SMS che riceve i crediti
-
-Clicca su `Esegui`{.action} per confermare il trasferimento, che avverrà in modo immediato.
+![trasferimento di crediti SMS](images/credit-transfer02.png){.thumbnail}
 
 ## Per saperne di più
 

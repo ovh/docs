@@ -3,6 +3,7 @@ title: Getting started with SSH
 slug: ssh-introduction
 excerpt: Find out how to use SSH connections to access your server
 section: 'Getting started'
+updated: 2022-06-08
 ---
 
 **Last updated 8th June 2022**

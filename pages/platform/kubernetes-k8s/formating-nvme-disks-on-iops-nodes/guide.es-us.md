@@ -6,6 +6,7 @@ section: Storage
 order: 5
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/formating-nvme-disk-on-iops-nodes/'
+updated: 2020-05-04
 ---
 
 <style>

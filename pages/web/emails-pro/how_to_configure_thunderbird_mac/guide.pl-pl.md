@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguracja konta E-mail Pro w programie Thunderbird na urządzeniu z systemem macOS'
 slug: konfiguracja-thunderbird-emailpro-mac
-routes:
-    canonical: 'https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/'
 excerpt: 'Dowiedz się, jak skonfigurować Twoje konto E-mail Pro w programie Thunderbird na urządzeniu z systemem macOS'
 section: 'Konfiguracja programu pocztowego'
 order: 6

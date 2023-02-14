@@ -4,6 +4,7 @@ slug: python-installer-flask
 excerpt: Découvrez comment installer Flask sur votre hébergement web POWER
 section: Python
 order: 2
+updated: 2021-01-05
 ---
 
 <style>

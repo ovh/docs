@@ -5,6 +5,7 @@ excerpt: 'This guide will show how to enable and manage CephFS on your CDA'
 section: Cloud Disk Array
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/cephfs/'
+updated: 2021-05-31
 ---
 
 **Last update 31st May 2021**

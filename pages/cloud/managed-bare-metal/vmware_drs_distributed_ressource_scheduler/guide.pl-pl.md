@@ -6,6 +6,7 @@ routes:
 excerpt: Dowiedz się, jak kontrolować równoważenie obciążenia dzięki funkcji DRS
 section: Funkcjonalności VMware vSphere
 order: 03
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

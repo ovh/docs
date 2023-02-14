@@ -1,74 +1,83 @@
 ---
-title: 'Configure IPv6 para su sitio web'
+title: "Configure una dirección IPv6 para su sitio web"
 slug: configurar-ipv6-para-su-sitio
-excerpt: Cómo hacer compatible su sitio web con IPv6
-section: 'Configuración del alojamiento'
+excerpt: "Cómo hacer compatible su sitio web con una dirección IPv6"
+section: "Configuración del alojamiento"
 order: 06
 ---
 
+**Última actualización: 10/02/2023**
+
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 27/11/2020**
-
-## Introducción
-
-La red de internet funciona desde principios de los años 90 siguiendo la norma IPv4. Esta norma permite proporcionar una dirección IP a cada máquina conectada a la red de Internet: servidores pero también ordenadores, smartphones, tablets y cualquier otro dispositivo conectado a Internet. Esta norma tiene un límite importante: permite identificar algo más de 4.000 millones de dispositivos diferentes. O un dispositivo para dos personas en la Tierra.
-
-Pronto se propuso un nuevo protocolo: **IPv6**. Permite identificar más de 340 sextillones de direcciones diferentes. Su despliegue lleva tiempo debido a cambios importantes en toda la red de Internet. 
-
-Debido a la escasez de IPv4, cada vez resulta más difícil añadir nuevos recursos a la red de internet. Las conexiones IPv6 solo son útiles si el contenido está también disponible en este protocolo. Así, entre más sitios web tengan IPv6 y más importante será para cada actor de la red migrar a este protocolo.
-
-Para más información, consulte el artículo de [Wikipedia](https://es.wikipedia.org/wiki/IPv6){.external} sobre el protocolo IPv6.
 
 ## Objetivo
 
-Desde 2011, nuestros alojamientos web son compatibles con IPv6. Sin embargo, la activación de este protocolo se ha mantenido hasta hace poco como una opción opcional de configuración. 
+La red de internet funciona desde principios de los años 90 siguiendo la norma IPv4. Esta norma permite proporcionar una dirección IP X.X.X (o "X" son números entre 0 y 255) a cada una de las máquinas conectadas a la red de Internet (servidores, ordenadores, smartphones, tabletas, etc.). Sin embargo, esta norma limita el número de dispositivos conectados a Internet a unos 4.000 millones, menos de un dispositivo conectado para dos personas en la Tierra en 2022.
 
-**Esta guía explica cómo comprobar si el sitio web es compatible con IPv6 y cómo configurarlo para que sea compatible.**
+Como resultado, se introdujo el protocolo **IPv6** para conectar a la red Internet hasta 340 sextillones de dispositivos. Su implementación toma tiempo porque toda la red de Internet debe integrar esta nueva norma. 
+
+Al estar menos disponibles las direcciones IPv4, es más difícil añadir nuevas máquinas a la red de Internet con la norma IPv4. No obstante, las conexiones con una dirección IPv6 solo son útiles si, por ejemplo, su sitio web también está disponible con el mismo protocolo. De este modo, cuanto más sitios web estén disponibles en IPv6, mayor será el número de actores presentes en la red de internet que transferirán sus dispositivos o máquinas a este nuevo protocolo.
+
+Para más información, consulte el artículo de [Wikipedia](https://es.wikipedia.org/wiki/IPv6){.external} sobre el protocolo IPv6.
+
+Nuestros planes de hosting son compatibles con IPv6 desde 2011. Sin embargo, la activación de este protocolo ha sido hasta hace poco una opción opcional de configuración. 
+
+**Descubra cómo comprobar si su sitio web es compatible con el protocolo IPv6 y cómo configurarlo con una dirección IPv6.**
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} en su área de cliente de OVHcloud.
+- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} en el área de cliente de OVHcloud.
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
 > [!warning]
->OVHcloud le ofrece una serie de servicios cuya configuración y gestión recae sobre usted. Por lo tanto, es su responsabilidad asegurarse de que estos servicios funcionen correctamente.
 >
->El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
->
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> 
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> 
 
-Si su sitio no está configurado para IPv6, puede hacerlo añadiendo la información en la zona DNS de su dominio. Permite que los navegadores web encuentren una dirección IPv6 cuando soliciten la ubicación de su sitio web a través del nombre de dominio.
+Si su sitio no está configurado para funcionar con una dirección IPv6, puede añadir [la dirección IPv6 de su alojamiento compartido OVHcloud](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/) a la zona DNS activa de su nombre de dominio. El objetivo es que los navegadores puedan encontrar una dirección IPv6 asociada a su sitio web a través de su nombre de dominio.
 
 ### Comprobar la compatibilidad IPv6 de su sitio web
 
-Para probar si su sitio web es compatible con IPv6, puede utilizar el sitio [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. Indica si el sitio web responde al nuevo protocolo IP. Si no es el caso, siga esta guía para hacerla compatible.
+Para comprobar si su sitio web ya utiliza una dirección IPv6, utilice el sitio web [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. Indica si el sitio web responde al nuevo protocolo IP. Si no es el caso, lea más nuestra guía.
 
-### Etapa 1: Obtener la dirección IPv6 de un alojamiento web
+### Etapa 1: descargar la dirección IPv6 de su alojamiento web
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento.
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Información general`{.action}.
 
-En la sección `Información general`, en el recuadro **IPv6**, copie el registro y vaya al siguiente paso.
+Copie la entrada y vaya al siguiente paso en el marco **IPv6**.
 
 ![IPv6](images/ipv6_01.png){.thumbnail}
 
-### Etapa 2: Configurar la zona DNS
+### Etapa 2: configurar la zona DNS activa de su dominio
 
 > [!warning]
-> Actualmente nuestra opción CDN no es compatible con IPv6. Si configura una dirección IPv6 en su sitio web, sus visitas no se beneficiarán de la CDN.
+>
+> Nuestras opciones CDN son actualmente incompatibles con las direcciones IPv6. Si configura una dirección IPv6 para su sitio web, sus visitas no se beneficiarán de la CDN.
+>
+> Además, la adición, modificación o eliminación de un registro DNS en la zona DNS activa de un dominio conlleva un plazo de propagación de **4 a 24 horas** para ser plenamente efectivo.
+>
 
-Para que su navegador encuentre la dirección IPv6 con su nombre de dominio, debe modificar la zona DNS asociada. Para crear un registro de tipo **AAAA**, consulte nuestra guía [Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/).
+Para que su navegador encuentre la dirección IPv6 con su nombre de dominio, modifique la zona DNS activa de su dominio. Utilice nuestra guía "[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-un-dominio_1)" para crear un registro DNS de tipo **AAAA**.
 
-Haga clic en `Dominios`{.action} y seleccione la `zona DNS`{.action} de su dominio. Haga clic en el botón `Añadir entrada`{.action} a la derecha de la tabla. Debe insertar la dirección IPv6 utilizando el tipo de registro **AAAA** y la IPv6 que se han obtenido anteriormente en el área de cliente.
+En la sección `Web Cloud`{.action}, haga clic en `Dominios`{.action}. Seleccione su dominio y abra la pestaña `Zona DNS`{.action}. Haga clic en el botón `Añadir un registro`{.action} a la derecha de la tabla. 
+
+Introduzca la dirección IPv6 previamente copiada utilizando el tipo de registro **AAAA**.
 
 ![IPv6](images/ipv6_02.png){.thumbnail}
 
-## Más información
+## Más información <a name="go-further"></a>
 
-[Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/)
+[Editar una zona DNS de OVHcloud](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/#editar-la-zona-dns-de-ovhcloud-de-un-dominio_1)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

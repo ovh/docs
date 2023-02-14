@@ -5,7 +5,7 @@ order: 2
 section: Get Started
 ---
 
-**Last updated July 28th, 2022**
+**Last updated 16th January, 2023**
 
 ## Objective
 
@@ -23,7 +23,7 @@ Now that you can send logs, you are maybe wondering how to tell Logs Data Platfo
 
 ### What is a valid log for Logs Data Platform?
 
-Each log received on Logs Data Platform is transformed into a [GELF](http://docs.graylog.org/en/latest/pages/gelf.html){.external} formatted log. What is GELF? A standardized JSON way to send logs. GELF stands for Graylog Extended Log Format. Using this format gives us two advantages, It is directly compatible with Graylog and it is still extensible enough to enrich your logs as you would like to.
+Each log received on Logs Data Platform is transformed into a [GELF](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external} formatted log. What is GELF? A standardized JSON way to send logs. GELF stands for Graylog Extended Log Format. Using this format gives us two advantages, It is directly compatible with Graylog and it is still extensible enough to enrich your logs as you would like to.
 
 This format impose a few conventions that if you don't follow can have many consequences :
 

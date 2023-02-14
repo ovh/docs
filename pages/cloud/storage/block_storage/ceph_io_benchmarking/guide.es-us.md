@@ -3,6 +3,7 @@ title: 'Probar el rendimiento de Cloud Disk Array'
 slug: benchmark-io
 excerpt: 'Cómo hacer un benchmark del rendimiento de la solución de almacenamiento Cloud Disk Array'
 section: 'Cloud Disk Array'
+updated: 2019-05-25
 ---
 
 **Last update 25th May 2019**

@@ -3,6 +3,7 @@ title: FAQ solutions internet OVHcloud
 slug: faq-xdsl-ftth
 section: Premiers pas
 order: 1
+updated: 2022-10-10
 ---
 
 **Dernière mise à jour le 10/10/2022** 

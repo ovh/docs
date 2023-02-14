@@ -4,6 +4,7 @@ excerpt: Saiba como interromper as subscrições da OVHcloud
 slug: how-to-cancel-your-services
 section: Gerir as encomendas, faturas e serviços
 order: 03
+updated: 2022-03-22
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: creer-une-alerte
 excerpt: Paramétrez des alertes sur votre client vSphere
 section: Gestion des machines virtuelles
 order: 09
+updated: 2020-07-08
 ---
 
 **Dernière mise à jour le 29/06/2020**

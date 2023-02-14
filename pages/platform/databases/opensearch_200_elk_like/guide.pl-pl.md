@@ -6,6 +6,7 @@ section: OpenSearch - Guides
 order: 200
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/logstash/'
+updated: 2021-12-17
 ---
 
 **Last updated 17<sup>th</sup> December 2021**

@@ -4,6 +4,7 @@ slug: nas/faq
 excerpt: Tem dúvidas sobre o NAS (Network Attached Storage)? Veja as repostas às perguntas mais frequentes
 section: NAS-HA
 order: 02
+updated: 2021-09-09
 ---
 
 > [!primary]

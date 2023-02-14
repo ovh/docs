@@ -3,6 +3,7 @@ title: Software-RAID
 slug: soft-raid
 excerpt: 'Erfahren Sie hier, wie Sie das RAID Array Ihres Servers im Fall von Störungen oder Festplattenschaden rekonfigurieren'
 section: 'RAID & Festplatten'
+updated: 2022-10-11
 ---
 
 **Letzte Aktualisierung am 11.10.2022**

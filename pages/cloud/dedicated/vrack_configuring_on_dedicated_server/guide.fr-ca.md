@@ -4,6 +4,7 @@ slug: configurer-plusieurs-serveurs-dedies-dans-le-vrack
 excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
 section: 'vRack'
 order: 01
+updated: 2022-05-02
 ---
 
 **Dernière mise à jour le 02/05/2022**

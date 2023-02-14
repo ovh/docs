@@ -4,6 +4,7 @@ slug: instalacja_vmware_tools
 excerpt: 'Dowiedz się, jak wykonać instalację VMware Tools na wirtualnej maszynie'
 section: 'Zarządzanie wirtualnymi maszynami'
 legacy_guide_number: g621
+updated: 2022-02-01
 ---
 
 **Ostatnia aktualizacja z dnia 01/02/2022**

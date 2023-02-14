@@ -7,7 +7,7 @@ section: 'Stockage'
 order: 1
 ---
 
-**Dernière mise à jour le 04/01/2023**
+**Dernière mise à jour le 09/02/2023**
 
 ## Objectif
 
@@ -307,6 +307,85 @@ Dans la dernière fenêtre, cliquez sur `Terminer`{.action} pour formater le dis
 ![format disk](images/format-disk-06.png){.thumbnail}
 
 Le disque sera par la suite disponible en tant que lecteur dans l'explorateur de fichiers.
+
+### Détacher un volume
+
+Si vous souhaitez détacher un volume de votre instance, la meilleure pratique est de démonter le volume du système d'exploitation avant de le détacher de l'instance.
+
+> [!warning]
+>
+> Un message d'erreur peut s'afficher si des logiciels ou processus sont en cours d'exécution sur le disque supplémentaire. Dans ce cas, il est recommandé d'arrêter tous les processus avant de continuer.
+>
+
+#### Sous Linux
+
+Ouvrez une [connexion SSH à votre instance](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) puis utilisez la commande ci-dessous pour lister les disques attachés.
+
+```bash
+~$ admin@server-1:~$ lsblk
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└─vda1 254:1 0 10G 0 part /
+vdb       8:0    0   10G  0 disk
+└─vdb1    8:1    0   10G  0 part /mnt/disk
+```
+
+Démontez la partition en utilisant la commande ci-dessous :
+
+```bash
+~$ admin@server-1:~$ sudo umount /dev/vdb1
+```
+
+Supprimez l'ID de périphérique du fstab pour terminer le processus de démontage. Si ce n'est pas fait, la partition sera remontée après un redémarrage.
+
+```bash
+~$ admin@server-1:~$ sudo nano /etc/fstab
+```
+
+Enregistrez et quittez l'éditeur.
+
+Rendez-vous dans la rubrique `Public Cloud`{.action} de votre espace client OVHcloud et cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage**.
+
+Cliquez sur le bouton `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Cliquez sur `Confirmer`{.action} dans la fenêtre qui s'affiche pour lancer le processus.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+
+#### Sous Windows
+
+Établissez une connexion RDP (Remote Desktop) avec votre instance Windows.
+
+Une fois connecté faites un clic-droit sur le menu `Démarrer`{.action} et ouvrez `Gestion du disque`{.action}.
+
+![gestion des disques](images/start-menu.png){.thumbnail}
+
+Faites un clic-droit sur le volume que vous souhaitez démonter et sélectionnez `Modifier la lettre de lecteur et les chemins d'accès...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Cliquez sur `Supprimer`{.action} pour retirer le disque.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+Cliquez ensuite sur `Oui`{.action} pour confirmer la suppression de la lettre du lecteur de disque.
+
+![confirm remove disk](images/confirmunmounting.png){.thumbnail}
+
+Lorsque vous avez terminé, vous pouvez fermer la fenêtre de gestion de disque.
+
+Rendez-vous dans la rubrique `Public Cloud`{.action} de votre espace client OVHcloud et cliquez sur `Block Storage`{.action} dans le menu de gauche sous **Storage**.
+
+Cliquez sur le bouton `...`{.action} à côté du volume correspondant et sélectionnez `Détacher de l'instance`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Cliquez sur `Confirmer`{.action} dans la fenêtre qui s'affiche pour lancer le processus.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Aller plus loin
 

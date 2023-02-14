@@ -4,6 +4,7 @@ excerpt: 'Saiba como ativar e utilizar a opção Snapshot na Área de Cliente OV
 slug: utilizar-snapshots-num-alojamento-vps
 section: 'Opções de backup'
 order: 1
+updated: 2022-12-02
 ---
 
 > [!primary]

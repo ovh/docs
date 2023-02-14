@@ -3,6 +3,7 @@ title: Available datacenters, worker nodes and persistent storage flavors
 excerpt: ''
 slug: datacenters-nodes-storage-flavors
 section: Technical resources
+updated: 2022-02-16
 ---
 
 **Last updated February 16th, 2022.**

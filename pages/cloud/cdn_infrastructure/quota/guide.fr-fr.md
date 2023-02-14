@@ -4,6 +4,7 @@ slug: quota-cdn
 excerpt: Découvrez comment fonctionne le quota sur votre CDN
 section: Premiers pas
 order: 3
+updated: 2018-02-22
 ---
 
 **Dernière mise à jour le 22/02/2018**

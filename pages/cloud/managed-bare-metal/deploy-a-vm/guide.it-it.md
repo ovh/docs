@@ -6,6 +6,7 @@ routes:
 excerpt: Come attivare una macchina virtuale dall’interfaccia vSphere
 section: Gestione delle macchine virtuali
 order: 0
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

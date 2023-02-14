@@ -4,6 +4,7 @@ slug: iplb-presentazione
 excerpt: 'Scopri il nuovo OVH Load Balancer'
 section: 'Per iniziare'
 order: 1
+updated: 2018-01-17
 ---
 
 **Ultimo aggiornamento: 21/05/2017**

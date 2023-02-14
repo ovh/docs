@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/'
 ---
 
-**Last updated 3rd November, 2022.**
+**Last updated 31st January, 2023.**
 
 > [!primary]
 >
@@ -177,6 +177,13 @@ docker build . -t gradio_app:latest
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **gradio_app:latest**.
+>
+
+> [!warning]
+>
+> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
+>
+> `docker buildx build --platform linux/amd64 ...`
 >
 
 ### Push the image into the shared registry

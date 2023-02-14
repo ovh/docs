@@ -4,6 +4,7 @@ title: 'Begrip van de foutmelding "Controller VM verwijderd"'
 slug: error-controller-nsx
 excerpt: 'Leer wat de foutmelding "Controller VM verwijderd" precies betekent'
 section: NSX
+updated: 2021-11-26
 ---
 
 **Laatste update 28-12-2017**

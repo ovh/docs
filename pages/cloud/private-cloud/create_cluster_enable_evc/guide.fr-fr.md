@@ -4,6 +4,7 @@ slug: create-cluster-enable-evc
 excerpt: "Création d'un cluster et activation du mode EVC"
 section: Fonctionnalités VMware vSphere
 order: 01
+updated: 2022-02-08
 ---
 
 **Dernière mise à jour le 08/02/2022**

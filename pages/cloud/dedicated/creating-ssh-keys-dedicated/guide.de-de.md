@@ -1,9 +1,10 @@
 ---
-title: 'SSH-Schlüssel erzeugen'
+title: "SSH-Schlüssel erstellen und verwenden"
 slug: ssh-schluessel-erzeugen
-excerpt: 'Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden'
+excerpt: "Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden"
 section: 'Sicherheit'
 order: 1
+updated: 2022-03-31
 ---
 
 **Letzte Aktualisierung am 01.04.2022**
@@ -18,7 +19,7 @@ Sie können den öffentlichen Schlüssel auf einem beliebigen Server platzieren 
 
 > [!primary]
 >
-Beachten Sie bitte, dass SSH-Schlüssel bei Servern, auf denen Windows installiert ist, nicht zur Authentifizierung verwendet werden. Für Windows Server müssen Sie weiterhin einen Benutzernamen und ein Kennwort verwenden.
+Beachten Sie, dass SSH-Schlüssel bei Servern, auf denen Windows installiert ist, nicht zur Authentifizierung verwendet werden. Für Windows Server müssen Sie weiterhin einen Benutzernamen und ein Kennwort verwenden.
 >
 
 ## Voraussetzungen
@@ -107,7 +108,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 
-### Erstellen eins SSH-Schlüssels mithilfe von PuTTY (für Windows)
+### Erstellen eines SSH-Schlüssels mithilfe von PuTTY (für Windows)
 
 [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/) ist eine Open Source SSH Client Software mit einer grafischen Benutzeroberfläche, die für Windows und andere Betriebssysteme verfügbar ist. PuTTY bietet Ihnen die Möglichkeit, eine Remoteverbindung mit einem Linux-Server herzustellen. Die dazugehörige Software, PuTTY Key Generator (PuTTYgen), kann zum Erstellen von SSH-Schlüsseln verwendet werden.
 
@@ -186,7 +187,7 @@ Wenn Sie die vollständige Ausgabe kopiert haben, sollte der “Identifier” hi
 > Alle im Abschnitt “Dedicated” gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
 >
 
-### Einen Standardschlüssel festlegen (nur für den Bereich "Dedicated")
+### Einen Standardschlüssel festlegen (nur für den Bereich "Dedicated") <a name="cpsshkey"></a>
 
 Wenn Sie mehrere SSH-Schlüssel in Ihrem Kundencenter hinzugefügt haben, können Sie einen Schlüssel festlegen, der als Standardschlüssel für den Account verwendet werden soll.
 

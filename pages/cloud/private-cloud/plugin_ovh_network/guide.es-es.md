@@ -4,6 +4,7 @@ slug: plugin-ovh-network
 excerpt: Cómo utilizar el plugin OVHcloud Network en la solución Hosted Private Cloud
 section: 'Funcionalidades de OVHcloud'
 order: 03
+updated: 2020-07-01
 ---
 
 **Última actualización: 07/07/2020**

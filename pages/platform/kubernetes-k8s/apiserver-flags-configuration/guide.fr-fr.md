@@ -5,6 +5,7 @@ excerpt: 'Find out how to configure the managed components of your Kubernetes: C
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/apiserver-flags-configuration/'
+updated: 2022-11-25
 ---
 
 <style>
@@ -58,7 +59,7 @@ Log in to the API Explorer using your OVH NIC.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the API Explorer, you will see the available endpoints:
+If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/project/%7bservicename%7d/kube~get) of the API Explorer, you will see the available endpoints:
 
 ![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
 

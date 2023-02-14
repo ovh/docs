@@ -4,6 +4,7 @@ excerpt: "Saiba como navegar na Área de Cliente OVHcloud"
 slug: get-familiar-with-ovhcloud-control-panel
 section: Clientes So you Start & Kimsufi
 order: 1
+updated: 2023-01-05
 ---
 
 > [!primary]

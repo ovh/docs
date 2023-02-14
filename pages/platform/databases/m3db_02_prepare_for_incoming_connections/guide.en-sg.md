@@ -4,6 +4,7 @@ excerpt: Find out how to configure your M3db instance to accept incoming connect
 slug: m3db/configure-m3db-instance
 section: M3db - Guides
 order: 020
+updated: 2022-05-12
 ---
 
 **Last updated 12th May 2022**

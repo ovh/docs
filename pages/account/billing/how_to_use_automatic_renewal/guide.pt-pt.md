@@ -5,6 +5,7 @@ excerpt: Saiba como gerir a renovação dos seus serviços OVHcloud na sua Área
 section: Introdução
 legacy_guide_number: g1271
 order: 01
+updated: 2022-04-07
 ---
 
 > [!primary]

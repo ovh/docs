@@ -3,6 +3,7 @@ title: 'Récupérer et déposer des données sur un serveur dédié via SFTP'
 slug: deposer-et-recuperer-donnees-via-sftp
 excerpt: 'Découvrez comment transférer facilement des données depuis et vers votre serveur dédié'
 section: Tutoriel
+updated: 2021-05-18
 ---
 
 **Dernière mise à jour le 18/05/2021**

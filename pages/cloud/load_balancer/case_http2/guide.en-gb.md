@@ -3,6 +3,7 @@ title: Configuring HTTP/2 on an OVH Load Balancer service
 slug: lb-http2
 excerpt: Configuring HTTP/2 on an OVH Load Balancer service
 section: Use case
+updated: 2018-01-15
 ---
 
 **Last updated 15th January 2018**

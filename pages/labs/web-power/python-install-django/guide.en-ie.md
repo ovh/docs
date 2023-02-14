@@ -4,6 +4,7 @@ slug: python-install-django
 excerpt: Find out how to install Django on your POWER web hosting plan
 section: Python
 order: 1
+updated: 2023-01-05
 ---
 
 <style>

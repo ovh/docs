@@ -6,6 +6,7 @@ section: Monitoring & Observability
 order: 00
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/monitoring-apps-prometheus-grafana/'
+updated: 2022-03-16
 ---
 
 <style>

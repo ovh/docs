@@ -4,6 +4,7 @@ slug: conectar-se-espaco-cliente-ovhcloud
 excerpt: 'Saiba como autenticar-se na sua conta OVHcloud'
 Section: Introdução
 order: 2
+updated: 2021-07-01
 ---
 
 > [!primary]

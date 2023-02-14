@@ -6,6 +6,7 @@ routes:
 excerpt: 'Find out how to proceed after the delivery of your Kimsufi, So You Start or Rise dedicated server'
 section: 'Getting started'
 order: 2
+updated: 2022-12-12
 ---
 
 **Last updated 12th December 2022**

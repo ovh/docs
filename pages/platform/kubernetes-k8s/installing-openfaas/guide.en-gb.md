@@ -4,6 +4,7 @@ slug: installing-openfaas
 excerpt: Find out how to install a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS
 section: Serverless
 order: 0
+updated: 2020-05-12
 ---
 
 **Last updated May 12<sup>th</sup>, 2020.**

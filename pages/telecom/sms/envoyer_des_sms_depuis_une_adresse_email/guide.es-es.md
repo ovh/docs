@@ -3,6 +3,7 @@ title: 'Enviar SMS desde el correo electrónico'
 slug: enviar-sms-desde-correo-electronico
 excerpt: 'Cómo enviar SMS desde una dirección de correo electrónico'
 section: 'Enviar SMS'
+updated: 2020-06-04
 ---
 
 **Última actualización: 30/03/2020**

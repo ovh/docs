@@ -6,6 +6,7 @@ section: Traffic management
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/traffic-management-with-istio/'
+updated: 2021-09-22
 ---
 
 <style>

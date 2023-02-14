@@ -3,6 +3,7 @@ title: Veeam Cloud Connect
 slug: veeam/veeam-cloud-connect
 excerpt: Poznaj ofertę Veeam Cloud Connect
 section: Veeam
+updated: 2021-12-07
 ---
 
 **Ostatnia aktualizacja z dnia 07-12-2021**

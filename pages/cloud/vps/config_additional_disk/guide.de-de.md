@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie auf einem VPS zusätzlichen Speicherplatz hi
 slug: config-additional-disk-vps
 section: Backup Optionen
 order: 3
+updated: 2021-02-24
 ---
 
 > [!primary]

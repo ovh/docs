@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how the OVHGateway works
 section: Netzwerk und Sicherheit
 order: 03
+updated: 2022-12-08
 ---
 
 **Last updated 8th December 2022**

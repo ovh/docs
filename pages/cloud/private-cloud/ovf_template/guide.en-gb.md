@@ -4,6 +4,7 @@ slug: applying-ovh-template
 excerpt: Find out how to deploy a Linux, Windows Server or Windows SQL Server template
 section: Virtual machine management
 order: 02
+updated: 2020-10-12
 ---
 
 **Last updated 12th October 2020**

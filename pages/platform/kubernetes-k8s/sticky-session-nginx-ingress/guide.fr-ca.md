@@ -6,6 +6,7 @@ section: Traffic management
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/sticky-session-nginx-ingress/'
+updated: 2022-06-27
 ---
 
 **Last updated 27th June 2022.**

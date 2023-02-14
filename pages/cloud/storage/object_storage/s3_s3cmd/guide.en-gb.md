@@ -4,6 +4,7 @@ slug: s3/s3cmd
 excerpt: Learn how to configure S3cmd to manage your buckets and objects
 section: Tutorials
 order: 130
+updated: 2022-01-03
 ---
 
 **Last updated on 3rd January 2022**

@@ -6,6 +6,7 @@ routes:
 excerpt: Découvrez les possibilités de votre espace client Managed Bare Metal
 section: Premiers pas
 order: 1
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

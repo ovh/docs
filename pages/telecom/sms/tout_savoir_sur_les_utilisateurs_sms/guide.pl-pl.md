@@ -3,6 +3,7 @@ title: 'Informacje o użytkownikach wiadomości SMS'
 excerpt: 'Poznaj funkcje umożliwiające użytkownikom API wysyłanie wiadomości SMS'
 slug: informacje-o-uzytkownikach-sms
 section: 'Zarządzanie ofertą'
+updated: 2022-08-05
 ---
 
 > [!primary]

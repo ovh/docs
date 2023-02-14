@@ -5,6 +5,7 @@ excerpt: 'Scopri come utilizzare il plugin OVHcloud Network con la soluzione Pri
 legacy_guide_number: '7766560'
 section: 'Funzionalità OVHcloud'
 order: 03
+updated: 2020-07-01
 ---
 
 **Ultimo aggiornamento: 07/07/2020**

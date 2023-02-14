@@ -3,6 +3,7 @@ title: "Utilizar Hyper-V con direcciones Additional IP en un vRack"
 excerpt: Cómo configurar una máquina virtual con Additional IP e Hyper-V en un vRack
 slug: ipfo-vrack-hyperv
 section: vRack 
+updated: 2021-02-25
 ---
 
 > [!primary]

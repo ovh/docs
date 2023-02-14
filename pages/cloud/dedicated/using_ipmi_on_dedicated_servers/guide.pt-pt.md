@@ -4,6 +4,7 @@ slug: usar-ipmi-servidores-dedicados
 excerpt: 'O IPMI permite aceder diretamente ao seu servidor, sem necessidade de usar outro software'
 section: Introdução
 order: 4
+updated: 2022-11-16
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Managing vSAN fault domains'
 slug: vmware-vsan-fault-domain
 excerpt: 'Find out how to manage vSAN fault domains'
 section: 'VMware vSphere features'
+updated: 2021-12-23
 ---
 
 **Last updated 23rd December 2021**

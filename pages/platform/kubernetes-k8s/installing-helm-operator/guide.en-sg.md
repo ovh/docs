@@ -4,6 +4,7 @@ slug: deploying-helm-operator
 excerpt: Learn how to deploy Kubernetes operator on OVHcloud Managed Kubernetes with Helm and the Operator SDK
 section: Operators
 order: 01
+updated: 2022-02-23
 ---
 
 **Last updated 23rd February, 2022.**

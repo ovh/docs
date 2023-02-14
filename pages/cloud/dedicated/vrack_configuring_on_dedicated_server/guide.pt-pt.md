@@ -4,6 +4,7 @@ slug: configurar-varios-servidores-dedicados-no-vrack
 excerpt: 'Aprenda a configurar vários servidores dedicados graças ao vRack'
 section: vRack
 order: 01
+updated: 2022-05-02
 ---
 
 > [!primary]

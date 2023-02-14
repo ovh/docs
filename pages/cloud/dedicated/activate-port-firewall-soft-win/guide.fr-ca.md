@@ -4,6 +4,7 @@ excerpt: Découvrez comment configurer votre pare-feu sous Windows
 slug: firewall-windows
 section: Sécurité
 order: 02
+updated: 2022-01-31
 ---
 
 **Dernière mise à jour le 31/01/2022**

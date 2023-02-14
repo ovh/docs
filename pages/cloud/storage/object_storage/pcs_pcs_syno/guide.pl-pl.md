@@ -4,6 +4,7 @@ slug: pcs/pcs-syno
 excerpt: Tutaj znajdziesz sposób synchronizacji NAS Synology z kontenerem.
 section: OpenStack Swift Storage Class Specifics
 order: 150
+updated: 2021-10-27
 ---
 
 > [!primary]

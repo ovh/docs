@@ -1,12 +1,16 @@
 ---
 title: Automatyczna instalacja strony WWW za pomocą modułu CMS
 slug: hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www
-excerpt: Dowiedz się, jak stworzyć stronę internetową za pomocą modułów OVH
+excerpt: Dowiedz się, jak stworzyć stronę internetową za pomocą modułów OVHcloud
 section: CMS
 order: 01
 ---
 
 **Ostatnia aktualizacja dnia 01-03-2023**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
 ## Wprowadzenie 
 
@@ -18,7 +22,9 @@ Moduły OVHcloud umożliwiają łatwe i szybkie postawienie strony internetowej 
 
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Pusty katalog na hostingu, w którym zostanie zainstalowany moduł.
+- Korzystanie z [kompatybilnej wersji PHP](https://docs.ovh.com/pl/hosting/konfiguracja_php_na_hostingu_www_ovh_2014/) na Twoim hostingu.
+- Posiadanie [poprawnie skonfigurowany plik .ovhconfig](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/)
+- Katalog, w którym zostanie zainstalowany moduł musi być pusty lub nie istnieje.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), skonfigurowana w ramach opcji MultiSite.
 
 ## W praktyce
@@ -132,7 +138,7 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 |CMS|Oficjalna dokumentacja|
 |---|---|
 |WordPress|[Pierwsze kroki z CMS WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
-|PrestaShop|[Jak zacząć z PrestaShop](http://doc.prestashop.com/display/PS17/Getting+Started){.external}|
+|PrestaShop|[Jak zacząć z PrestaShop](https://docs.prestashop-project.org/1.7-documentation/getting-started+Started){.external}|
 |Joomla!|[Jak zaczać z Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
 |Drupal|[Zrozumieć Drupala](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
 
@@ -144,6 +150,14 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 
 [Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
 
+[Zarządzanie CMS](https://docs.ovh.com/pl/hosting/1-click-module-management/)
+
+[Odinstaluj CMS](https://docs.ovh.com/pl/hosting/1-click-module-management/#etap-3-usun-modul)
+
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

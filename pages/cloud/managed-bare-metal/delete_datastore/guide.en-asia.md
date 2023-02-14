@@ -6,6 +6,7 @@ routes:
 excerpt: 'Find out how to remove a datastore from your Managed Bare Metal'
 legacy_guide_number: '7766789'
 section: 'OVHcloud Features'
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

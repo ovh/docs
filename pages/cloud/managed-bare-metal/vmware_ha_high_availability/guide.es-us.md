@@ -6,6 +6,7 @@ routes:
 excerpt: Gestionar la política de reinicio con la función HA
 section: Funcionalidades de VMware vSphere
 order: 02
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

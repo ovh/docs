@@ -3,6 +3,7 @@ title: Tutto sugli utenti SMS
 excerpt: Funzionalità degli utenti API per inviare SMS
 slug: tutto_sugli_utenti_sms
 section: Gestisci la tua offerta
+updated: 2022-08-05
 ---
 
 > [!primary]

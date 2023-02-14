@@ -3,6 +3,7 @@ title: Creating a cluster through Terraform
 slug: creating-a-cluster-through-terraform
 excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
+updated: 2022-04-14
 ---
 
 **Last updated 14th April 2022**

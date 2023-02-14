@@ -4,6 +4,7 @@ slug: die-zwei-Faktor-Authentifizierung-per-SMS-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr OVHcloud Kundencenter absichern können, indem Sie die Zwei-Faktor-Authentifizierung per SMS aktivieren'
 section: Sicherheit
 hidden: true
+updated: 2020-04-15
 ---
 
 **Letzte Aktualisierung am 15.04.2020**

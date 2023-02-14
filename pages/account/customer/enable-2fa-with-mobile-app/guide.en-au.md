@@ -4,6 +4,7 @@ slug: enable-two-factor-authentication-via-mobile-application
 excerpt: 'Find out how to secure your OVHcloud customer account by enabling two-factor authentication via OTP mobile application'
 section: Security
 hidden: true
+updated: 2020-04-16
 ---
 
 **Last updated 24th June 2020**
@@ -16,7 +17,7 @@ Two-factor authentication authentication with a one-time password (OTP) mobile a
 
 ## Requirements
 
-- knowledge of the [two-factor authentication methods offered by OVHcloud](../secure-account-with-2FA/)
+- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/au/en/customer/secure-account-with-2FA/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 - an OTP mobile application installed on your Android or iOS smartphone or tablet
 

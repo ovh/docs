@@ -6,6 +6,7 @@ section: PostgreSQL - Guides
 order: 800
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/concept-high-availability/'
+updated: 2022-05-27
 ---
 
 **Last updated 27<sup>th</sup> May 2022**

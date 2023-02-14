@@ -3,6 +3,7 @@ title: 'Retrieving and uploading data on a dedicated server via SFTP'
 slug: store-retrieve-data-via-sftp
 excerpt: 'Find out how to easily transfer data to and from your dedicated server'
 section: Tutorial
+updated: 2021-05-18
 ---
 
 **Last updated 18th May 2021**

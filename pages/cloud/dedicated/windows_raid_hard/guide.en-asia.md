@@ -3,6 +3,7 @@ title: 'Creating a Windows partition on a server with hardware RAID'
 slug: windows-raid-hard
 excerpt: 'This guide will explain the steps needed to create a Windows partition on a server with hardware RAID.'
 section: 'RAID and disks'
+updated: 2018-07-24
 ---
 
 **Last updated 24th July 2018**

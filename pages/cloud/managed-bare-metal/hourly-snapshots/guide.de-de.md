@@ -6,6 +6,7 @@ routes:
 excerpt: Erfahren Sie hier die Funktionsweise der stündlichen Sicherungen
 section: OVHcloud Funktionen
 order: 06
+updated: 2020-11-30
 ---
 
 > [!primary]

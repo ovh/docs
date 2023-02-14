@@ -4,6 +4,7 @@ slug: nas/nfs
 excerpt: "Come connettersi al tuo NAS-HA utilizzando una condivisione NFS"
 section: NAS-HA
 order: 03
+updated: 2022-12-06
 ---
 
 > [!primary]

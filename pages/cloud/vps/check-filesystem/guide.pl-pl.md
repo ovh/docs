@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak wyszukać błędy w systemie plików w trybie rescue
 slug: check-file-system-vps
 section: Diagnostyka i tryb Rescue
 order: 5
+updated: 2021-04-20
 ---
 
 > [!primary]

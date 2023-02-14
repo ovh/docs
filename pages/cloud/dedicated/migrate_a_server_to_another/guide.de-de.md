@@ -4,6 +4,7 @@ slug: migrieren-von-daten-zwischen-dedizierten-servern
 excerpt: Erfahren Sie hier, wie Sie Daten zwischen zwei dedizierten Servern migrieren können
 section: Erste Schritte
 order: 5
+updated: 2021-09-16
 ---
 
 > [!primary]

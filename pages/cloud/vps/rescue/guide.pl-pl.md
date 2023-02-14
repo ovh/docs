@@ -3,6 +3,7 @@ title: Uruchamianie i korzystanie z trybu Rescue na serwerze VPS
 slug: rescue
 excerpt: Jak włączyć i korzystać z trybu Rescue na serwerze VPS
 section: Diagnostyka i tryb Rescue
+updated: 2022-05-02
 ---
 
 **Ostatnia aktualizacja z dnia 02-05-2022**

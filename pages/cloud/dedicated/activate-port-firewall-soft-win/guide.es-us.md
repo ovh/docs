@@ -4,6 +4,7 @@ excerpt: Cómo configurar un firewall en Windows
 slug: firewall-windows
 section: Tutoriales
 order: 02
+updated: 2022-01-31
 ---
 
 > [!primary]

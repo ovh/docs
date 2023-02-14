@@ -4,6 +4,7 @@ slug: primeros-pasos-con-vps
 excerpt: 'Cómo utilizar un VPS'
 section: 'Primeros pasos'
 order: 1
+updated: 2022-03-25
 ---
 
 > [!primary]

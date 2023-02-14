@@ -6,6 +6,7 @@ section: PostgreSQL - Tutorials
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/tutorial-connect-strapi-to-managed-postgresql/'
+updated: 2021-01-11
 ---
 
 <style>

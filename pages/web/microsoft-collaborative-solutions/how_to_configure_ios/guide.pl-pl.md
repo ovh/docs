@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguracja konta Exchange na urządzeniu iPhone lub iPad'
 slug: exchange_20132016_automatyczna_konfiguracja_z_poziomu_ios_iphone_-_ipad
-routes:
-    canonical: 'https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/'
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail'
 section: 'Konfiguracja na smartfonie/tablecie'
 order: 03

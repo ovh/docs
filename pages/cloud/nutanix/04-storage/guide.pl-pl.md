@@ -6,6 +6,7 @@ routes:
 excerpt: Overview of Storage Management in a Nutanix cluster
 section: Pierwsze kroki
 order: 06
+updated: 2022-02-23
 ---
 
 **Last updated 23rd February 2022**

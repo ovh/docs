@@ -4,6 +4,7 @@ slug: cluster-custom-redeployment
 excerpt: "Redéploiement personnalisé d'un Cluster Nutanix via les outils OVHcloud"
 section: Premiers pas
 order: 05
+updated: 2022-12-13
 ---
 
 **Dernière mise à jour le 13/12/2022**

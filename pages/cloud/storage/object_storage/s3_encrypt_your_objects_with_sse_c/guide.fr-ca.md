@@ -4,6 +4,7 @@ slug: s3/encrypt-your-objects-with-sse-c
 excerpt:
 section: Tutoriels
 order: 005
+updated: 2022-04-15
 ---
 
 <style>

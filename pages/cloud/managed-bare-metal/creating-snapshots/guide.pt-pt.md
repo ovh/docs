@@ -6,6 +6,7 @@ routes:
 excerpt: Volte para um estado anterior das suas VM graças às snapshots
 section: Gestão das máquinas virtuais
 order: 08
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

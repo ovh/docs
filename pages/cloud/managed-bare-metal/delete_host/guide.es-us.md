@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/us/es/private-cloud/eliminar-servidor-host/'
 excerpt: 'Cómo eliminar un servidor host de una infraestructura Managed Bare Metal'
 section: 'Funcionalidades de OVHcloud'
+updated: 2021-03-19
 ---
 
 **Última actualización: 19/03/2021**

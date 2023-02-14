@@ -4,6 +4,7 @@ slug: nutanix-vrack-interconnection
 excerpt: Setting up a two-cluster interconnection through an OVHcloud vRack
 section: Disaster Recovery Plan
 order: 03
+updated: 2022-09-28
 ---
 
 **Last updated 28th September 2022**

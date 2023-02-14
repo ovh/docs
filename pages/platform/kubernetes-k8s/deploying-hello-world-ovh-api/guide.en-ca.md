@@ -4,6 +4,7 @@ slug: deploying-hello-world-ovh-api
 excerpt: 'Find out how to set-up your Kubernetes cluster and deploy a Hello World application inside it with the OVHcloud API'
 section: Tutorials
 order: 1
+updated: 2023-01-16
 ---
 
 **Last updated 16th January 2023**

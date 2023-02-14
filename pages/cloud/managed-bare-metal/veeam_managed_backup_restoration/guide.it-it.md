@@ -6,6 +6,7 @@ routes:
 excerpt: Come ripristinare i backup Veeam Managed Backup tramite le API OVHcloud
 section: Servizi e opzioni OVHcloud
 order: 06
+updated: 2021-03-29
 ---
 
 > [!primary]

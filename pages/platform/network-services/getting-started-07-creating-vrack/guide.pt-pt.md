@@ -11,7 +11,7 @@ order: 07
 >
 
 
-**Última atualização: 02/11/2022**
+**Última atualização: 11/01/2023**
 
 ## Objetivo
 
@@ -159,27 +159,48 @@ A partir das APIv6 OVHcloud, poderá personalizar o conjunto dos parâmetros: in
 
 Depois de criar o vRack, clique novamente em `Private Network`{.action} no menu lateral à esquerda. 
 
-![VLAN criação](images/vrack2021-03.png){.thumbnail}
+![VLAN criação](images/vrack2022-03.png){.thumbnail}
 
 Clique agora em `Criar uma rede privada`{.action}. A página seguinte permite-lhe personalizar vários parâmetros.
 
-![add private network](images/vrack5.png){.thumbnail}
+Na etapa 1, selecione a região na qual deseja criar a rede privada.
+
+![select region](images/vrack5-2022.png){.thumbnail}
+
+Na etapa seguinte, são-lhe apresentadas várias opções:
+
+![create network](images/vrack6-2022.png){.thumbnail}
+
+**Crie um Gateway e ligue-se à rede privada**
+
+Selecione esta opção se pretende criar instâncias apenas com uma rede privada. Para mais informações, consulte os seguintes guias: [Creating a private network with Gateway (EN)](https://docs.ovh.com/pt/publiccloud/network-services/creating-private-network-with-gateway/) e [Criação e conexão a uma primeira instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#etapa-3-criacao-de-uma-instancia).
+
+> [!warning]
+> Se a opção for "cinzenta", isto significa que é incompatível com a região selecionada. Para mais informações, consulte a nossa página sobre a [disponibilidade dos produtos Public Cloud para cada região](https://www.ovhcloud.com/pt/public-cloud/regions-availability/).
+>
+
+**Opções de rede do layer 2**
 
 Se selecionar a opção `Definir um ID de VLAN`, deverá escolher um número de VLAN compreendido entre 2 e 4000.
 
-Se não selecionar a opção `Definir um ID de VLAN`, ficará por defeito na VLAN 0.
+Se não seleccionar esta caixa, o sistema atribuirá um número de VLAN aleatório.
+
+Se deseja definir o número da VLAN para 0, deve passar pela
+[API OVHcloud](#vlansetup).
 
 Caso seja necessário fazer comunicar servidores dedicados OVHcloud com VLAN taggado, consulte o seguinte guia: [Criar várias VLAN no vRack](https://docs.ovh.com/pt/dedicated/criar-vlan-vrack/).
 
+**Opções de distribuição dos endereços DHCP**
+
 O intervalo DHCP predefinido está em 10.0.0.0/16. Para alterar este intervalo IP, deverá obrigatoriamente passar pelas APIv6 OVHcloud.
 
-Valide as diferentes regiões pretendidas, introduza um nome para a sua rede privada e clique em `Criar`{.action} para iniciar a sua criação. 
+Depois de fazer as suas escolhas, clique em `Criar`{.action} para lançar o processo.
 
 > [!primary]
 > A criação da rede privada pode levar alguns minutos.
 >
 
-#### Criar uma VLAN a partir da APIv6 OVHcloud
+#### Criar uma VLAN a partir da APIv6 OVHcloud <a name="vlansetup"></a>
 
 Para criar uma VLAN a partir da APIv6 OVHcloud, clique [aqui](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN), para consultar o guia específico deste método.
 
@@ -194,9 +215,9 @@ Existem duas situações:
 
 ##### **A partir da Área de Cliente OVHcloud**
 
-Consulte o guia: [Criar uma instância a partir da Área de Cliente](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#create-instance). Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
+Consulte o guia: [Criar uma instância a partir da Área de Cliente](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#create-instance). Ao criar uma instância, poderá especificar, na etapa 5, pode escolher um modo de rede e depois uma rede privada na qual possa integrar a sua instância.
 
-![attach new instance](images/vrack6.png){.thumbnail}
+![attach new instance](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > Ao criar uma nova instância, só poderá ligar a sua instância a um vRack a partir da Área de Cliente OVHcloud.

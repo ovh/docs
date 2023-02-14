@@ -4,6 +4,7 @@ slug: restore-backup
 excerpt: Find out how to restore a backup
 section: General guides
 order: 060
+updated: 2022-05-04
 ---
 
 **Last updated May 4th, 2022**

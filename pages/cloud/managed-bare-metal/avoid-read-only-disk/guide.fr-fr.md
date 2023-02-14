@@ -6,6 +6,7 @@ routes:
 excerpt: Eviter le passage en lecture seule du disque de votre VM Linux
 section: Gestion des machines virtuelles
 order: 10
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

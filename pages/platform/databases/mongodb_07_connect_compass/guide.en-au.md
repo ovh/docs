@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for MongoDB using MongoDB Compas
 slug: mongodb/connect-compass
 section: MongoDB - Guides
 order: 060
+updated: 2022-07-27
 ---
 
 **Last updated 27<sup>th</sup> July 2022**

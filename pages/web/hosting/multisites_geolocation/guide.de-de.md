@@ -14,15 +14,15 @@ order: 05
   
 ## Ziel
 
-Suchmaschinen (Google, Bing, Yahoo, ...) verwenden Roboter zur Indexierung und Referenzierung auf allen Webseiten. Sie beziehen sich vorrangig auf geolokalisierte Seiten in dem Land, von dem aus Sie Ihre Suche durchführen.
+Suchmaschinen (Google, Bing, Yahoo, etc.) setzen Roboter ein, um Websiten zu indexieren und Rankings zu erstellen. Bei den Suchergebnissen werden Seiten, die in dem Land von dem aus die Suche erfolgt, geolokalisiert sind, bevorzugt.
 
-**Beispiel**: Wenn Sie über eine Suchmaschine suchen und sich in England befinden, werden die geolokalisierten Websites in England in den Suchergebnissen höher angezeigt als andere Websites.
+**Beispiel**: Wenn Sie über eine Suchmaschine suchen und sich in England befinden, werden in England geolokalisierte Websites in den Suchergebnissen priorisiert angezeigt.
 
 Diese Geolokalisierung basiert auf der IP-Adresse des Hostings, auf dem sich Ihre Website befindet.
 
-Die Geolokalisierungsoption für Ihr Webhosting kann für die Referenzierung (SEO) nützlich sein, wenn Ihre Website hauptsächlich in einem anderen Land als dem Ihres Webhostings aufgerufen wird.
+Die Geolokalisierungsoption für Ihr Webhosting kann für die Suchmaschinenoptimierung (SEO) nützlich sein, wenn Ihre Website hauptsächlich in einem anderen Land als dem Ihres Webhostings aufgerufen wird.
 
-**Diese Anleitung erklärt, wie Sie Ihre Website mithilfe unserer geolokalisierten IP-Adressen geolokalisieren.**
+**Diese Anleitung erklärt, wie Sie Ihre Website mithilfe unserer Länder-IP-Adressen geolokalisieren.**
 
 ## Voraussetzungen
 
@@ -32,28 +32,28 @@ Die Geolokalisierungsoption für Ihr Webhosting kann für die Referenzierung (SE
 
 ## In der praktischen Anwendung
 
-Für Webseiten, die hauptsächlich im Ausland abgerufen und auf unserer Shared Hosting Infrastruktur von OVHcloud gehostet werden, bieten wir eine Geolokalisierungsoption nach IP-Adresse an. Sie ermöglicht eine bessere Referenzierung der Websites in dem Land, in dem sich die mit der Option gewählte IP-Adresse befindet.
+Für Webseiten, die hauptsächlich international abgerufen und auf der OVHcloud Shared Hosting Infrastruktur gehostet werden, bieten wir eine Geolokalisierungsoption nach IP-Adresse an. Sie ermöglicht eine bessere Referenzierung der Websites in dem Land, zu dem die ausgewählte IP-Adresse gehört.
 
-Um die IP-Geolokalisierungsoption zu verwenden, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein.
+Um die IP-Geolokalisierungsoption zu aktivieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein.
 
-Gehen Sie nach dem Login in den Bereich `Web Cloud`{.action}, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus.<br>
-Klicken Sie dann auf den Tab `Multisite`{.action} und anschließend auf den Button `...`{.action} rechts neben Ihrer Domain in der Tabelle. Klicken Sie ` Domain bearbeiten`{.action} ändern.
+Klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus der Liste aus.<br>
+Klicken Sie auf den Tab `Multisite`{.action} und dann auf den Button `...`{.action} rechts neben dem Domainnamen in der Tabelle. Wählen Sie `Domain bearbeiten`{.action}.
 
 ![Hosting-Multisites](images/hosting_multisites.png){.thumbnail}
 
-Setzen Sie im neu geöffneten Fenster einen Haken im Feld `IP des Landes`{.action}, um das Drop-down-Menü anzugeben.
+Setzen Sie im neu geöffneten Fenster einen Haken im Feld `IP des Landes`{.action}, um das Drop-down-Menü zu öffnen.
 
 ![geolokation option](images/geolocation_option.png){.thumbnail}
 
-Wählen Sie aus den 12 angebotenen Ländern die IP-Adresse des Landes aus, für das Sie Ihre Website geolokalisieren möchten: *Tschechische Republik, Finnland, Frankreich, Deutschland, Irland, Italien, Littuanie, Niederlande, Polen, Portugal, Spanien, Vereinigtes Königreich*.
+Wählen Sie aus den 12 angebotenen Ländern die IP-Adresse des Landes aus, für das Sie Ihre Website geolokalisieren möchten: *Tschechische Republik, Finnland, Frankreich, Deutschland, Irland, Italien, Litauen, Niederlande, Polen, Portugal, Spanien, Vereinigtes Königreich*.
 
-Klicken Sie auf `Weiter`{.action} und dann auf im zusammenfassenden Fenster `Bestätigen`{.action}.
+Klicken Sie auf `Weiter`{.action} und im nächsten Fenster auf `Bestätigen`{.action}.
 
 >[!primary]
 >
-> Wenn die aktive DNS-Zone Ihrer Domain vollständig in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, ändert sich automatisch der A-Eintrag in der DNS-Zone Ihrer Domain. Um zu überprüfen, ob die IP-Adresse korrekt aktualisiert wurde, lesen Sie unsere Anleitung zur [Bearbeitung der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+> Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, ändert sich der A-Eintrag in der DNS-Zone Ihres Domainnamens automatisch. Um zu überprüfen, ob die IP-Adresse korrekt aktualisiert wurde, lesen Sie unsere Anleitung zur [Bearbeitung der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
 >
-> Ist das nicht der Fall, müssen Sie die Änderung manuell beim Anbieter vornehmen, der die aktive DNS Zone Ihrer Domain verwaltet. [Hier](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/) finden Sie die Dokumentation, in der alle IP-Adressen unserer Shared Hosting Infrastruktur von OVHcloud aufgeführt sind.
+> Ist das nicht der Fall, müssen Sie die Änderung manuell beim Anbieter vornehmen, der die aktive DNS Zone Ihres Domainnamens verwaltet. [Hier](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/) finden Sie die Dokumentation, in der alle IP-Adressen der OVHcloud Shared Hosting Infrastruktur aufgeführt sind.
 >
 > In jedem Fall ist eine Propagationszeit von **4 bis 24 Stunden** nach der Änderung erforderlich, damit die Änderung im Internet voll wirksam und sichtbar ist.
 >

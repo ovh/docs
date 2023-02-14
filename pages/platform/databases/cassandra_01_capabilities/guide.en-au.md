@@ -4,9 +4,10 @@ slug: cassandra/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
 section: Cassandra - Guides
 order: 010
+updated: 2023-01-19
 ---
 
-**Last updated November 8th, 2022**
+**Last updated January 19th, 2023**
 
 ## Objective
 
@@ -110,14 +111,15 @@ Public Cloud Databases will select the most efficient disk type for your cluster
 ### Features
 
 #### Network
-
 Public as well as private networking (vRack) can be used for all the offers.
-
-When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
 
+##### Private network considerations
+Here are some considerations to take into account when using private network:
 
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
 
 #### Logs and metrics
 
@@ -128,7 +130,6 @@ As of today, you can't export logs and metrics, nor plug them into a remote tool
 - **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
-
 
 ## We want your feedback!
 

@@ -3,6 +3,7 @@ title: 'Configurar um bloco de endereços IP no vRack'
 slug: adicionar-ou-remover-um-bloco-ip-do-vrack
 excerpt: 'Saiba como configurar um bloco de endereços IP públicos no vRack'
 section: vRack
+updated: 2022-07-26
 ---
 
 **Última atualização: 26/07/2022**

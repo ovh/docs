@@ -4,6 +4,7 @@ slug: vsphere-register-vm-vmx
 excerpt: Découvrez comment réenregistrer des VM sur un nouveau service depuis d'anciens datastores
 section: Fonctionnalités VMware vSphere
 order: 07
+updated: 2021-03-24
 ---
 
 **Dernière mise à jour le 22/03/2021**

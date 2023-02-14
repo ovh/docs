@@ -4,6 +4,7 @@ slug: pcs/sync-object-containers
 legacy_guide_number: 1919
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 060
+updated: 2022-11-16
 ---
 
 **Dernière mise à jour le 16/11/2022**

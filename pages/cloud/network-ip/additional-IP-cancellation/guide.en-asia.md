@@ -4,6 +4,7 @@ excerpt: Find out how to cancel an Additional IP service via the OVHcloud API
 slug: cancel-additional-ip
 section: Additional IP
 order: 01
+updated: 2022-12-22
 ---
 
 **Last updated 22nd December 2022**

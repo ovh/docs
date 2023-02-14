@@ -3,6 +3,7 @@ title: 'Cambiar la clave de activación de Windows Server'
 slug: clave-windows
 excerpt: 'Cómo cambiar la clave de activación de Windows Server'
 section: Miscelánea
+updated: 2022-07-07
 ---
 
 **Última actualización: 07/07/2022**

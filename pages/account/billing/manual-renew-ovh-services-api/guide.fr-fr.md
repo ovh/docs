@@ -4,6 +4,7 @@ slug: renouveler-manuellement-service-via-api
 excerpt: 'Découvrez comment renouveler vos services via l’API OVHcloud'
 section: 'Gérer mes services et leur renouvellement'
 order: 02
+updated: 2020-05-05
 ---
 
 **Dernière mise à jour le 25/05/2018**
@@ -18,7 +19,7 @@ Nativement, OVHcloud vous propose le renouvellement automatique de votre offre. 
 ## Prérequis
 
 - Être connecté aux [API OVHcloud](https://api.ovh.com/){.external}.
-- Avoir créé ses identifiants pour l'API OVHcloud(../../api/first-steps-with-ovh-api/).
+- Avoir créé ses identifiants pour l'API OVHcloud(https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
 
 ## En pratique
 

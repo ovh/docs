@@ -4,6 +4,7 @@ slug: manager-ovh-private-cloud
 excerpt: Tutte le funzionalità disponibili nello Spazio Cliente Private Cloud
 section: Per iniziare
 order: 1
+updated: 2021-12-15
 ---
 
 **Ultimo aggiornamento: 17/06/2020**

@@ -3,6 +3,7 @@ title: Ustalenie, czy funkcja wirtualnych adresów MAC jest obsługiwana na serw
 slug: network-support-virtual-mac
 excerpt: Dowiedz się, jak sprawdzić, czy działanie wirtualnych adresów MAC jest obsługiwane na serwerze dedykowanym przez API OVHcloud
 section: Sieć & IP
+updated: 2021-12-09
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: deploiement-d-une-machine-virtuelle
 excerpt: Découvrez comment déployer une machine virtuelle depuis l'interface vSphere
 section: Gestion des machines virtuelles
 order: 0
+updated: 2020-06-29
 ---
 
 **Dernière mise à jour le 29/06/2020**

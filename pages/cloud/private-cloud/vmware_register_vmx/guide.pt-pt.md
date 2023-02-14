@@ -4,6 +4,7 @@ slug: vsphere-register-vm-vmx
 excerpt: Saiba como voltar a registar VM num novo serviço a partir de datastores antigos
 section: Funcionalidades VMware vSphere
 order: 07
+updated: 2021-03-24
 ---
 
 > [!primary]

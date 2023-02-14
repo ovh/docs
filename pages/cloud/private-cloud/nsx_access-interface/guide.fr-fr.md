@@ -4,6 +4,7 @@ slug: acceder-a-l-interface-de-gestion-nsx
 excerpt: Découvrez l'interface de NSX
 section: NSX
 order: 01
+updated: 2021-11-17
 ---
 
 **Dernière mise à jour le 17/11/2021**

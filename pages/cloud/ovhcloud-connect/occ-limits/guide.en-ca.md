@@ -4,6 +4,7 @@ slug: occ-limits
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Connect solution'
 section: Technical resources
 order: 1
+updated: 2022-08-25
 ---
 
 **Last updated 25th August 2022**

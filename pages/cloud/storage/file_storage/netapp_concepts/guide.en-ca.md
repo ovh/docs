@@ -4,6 +4,7 @@ slug: netapp/concepts
 excerpt: Find out the basic concepts of Enterprise File Storage
 section: Enterprise File Storage
 order: 010
+updated: 2022-04-07
 ---
 
 **Last updated 7th April 2022**

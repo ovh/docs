@@ -5,6 +5,7 @@ excerpt: 'Find out how to do some operations on specific Nodes and Nodes Pools, 
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/taint-drain-node-pools/'
+updated: 2021-12-23
 ---
 
 <style>

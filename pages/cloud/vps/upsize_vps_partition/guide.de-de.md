@@ -3,6 +3,7 @@ title: 'VPS-Partitionierung nach einem Upgrade'
 slug: vps-partitionierung-nach-einem-upgrade
 excerpt: Erfahren Sie hier, wie Sie Ihren Speicherplatz nach einem Upgrade vergrößern
 section: 'Erste Schritte'
+updated: 2021-05-18
 ---
 
 **Letzte Aktualisierung am 18.05.2021**

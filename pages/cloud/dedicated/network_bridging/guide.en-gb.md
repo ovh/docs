@@ -3,6 +3,7 @@ title: 'Configuring a network bridge'
 slug: network-bridging
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
 section: 'Network management'
+updated: 2022-12-20
 ---
 
 **Last updated 20th December 2022**

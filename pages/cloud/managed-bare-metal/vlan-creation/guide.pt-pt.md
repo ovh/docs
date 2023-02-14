@@ -4,6 +4,7 @@ slug: criacao-vlan
 excerpt: Saiba como criar VLAN (vRack)
 section: Funcionalidades da OVHcloud
 order: 02
+updated: 2020-11-18
 ---
 
 > [!primary]

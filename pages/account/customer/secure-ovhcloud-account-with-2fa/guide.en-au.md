@@ -3,9 +3,10 @@ title: 'Securing your OVHcloud account with two-factor authentication'
 slug: secure-account-with-2FA
 excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication'
 section: Security
+updated: 2022-07-20
 ---
 
-**Last updated 21st July 2022**
+**Last updated 9th February 2023**
 
 ## Objective
 
@@ -18,7 +19,7 @@ You can enable two-factor authentication (2FA). This is linked to your username-
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
-- an understanding of the [password management recommendations for accessing your account](../manage-password/)
+- an understanding of the [password management recommendations for accessing your account](https://docs.ovh.com/au/en/customer/manage-password/)
 
 ## Instructions
 
@@ -33,8 +34,8 @@ Once you have linked the application to your account, your device no longer need
 
 ### Step 1: Enable your first two-factor authentication method
 
-- [Enabling two-factor authentication via mobile application](../enable-two-factor-authentication-via-mobile-application/)
-- [Enabling two-factor authentication via security key](../enable-two-factor-authentication-via-security-key/)
+- [Enabling two-factor authentication via mobile application](https://docs.ovh.com/au/en/customer/enable-two-factor-authentication-via-mobile-application/)
+- [Enabling two-factor authentication via security key](https://docs.ovh.com/au/en/customer/enable-two-factor-authentication-via-security-key/)
 
 Once you have added your first method, you can also add one or two other methods, so that you have more choice in how you log in to your account.
 
@@ -79,9 +80,7 @@ You can also use one of the security codes provided to you.
 > To avoid the risk of blocking access to your account, please check that you can use one of the following login methods before removing a device:
 > 
 > - via a working device
-> 
 > - via another working method of two-factor authentication 
-> 
 > - via valid security codes
 > 
 
@@ -92,6 +91,15 @@ To remove a device, please log in to the [OVHcloud Control Panel](https://ca.ovh
 Next, click `Security`{.action} (the first step on the image below), then click on the `...`{.action} icon (second step) to the right of the device you want to delete, and finally, click `Remove`{.action} (third step).
 
 ![2FA](images/remove_auth.png){.thumbnail}
+
+You will then be sent a final validation code for the device you want to delete. Enter this code in the window that opens, then click `Confirm`{.action} to complete the deletion.
+
+> [!warning]
+>
+> If you no longer have access to the device you want to delete, you cannot delete it yourself from the OVHcloud Control Panel.
+>
+> In this case, **contact our support teams directly** by following the process described [here](#2FA-deletion).
+>
 
 ### Disable two-factor authentication completely <a name="disable-2fa"></a>
 
@@ -105,7 +113,7 @@ Once you have removed all your devices, disable the emergency codes by clicking 
 
 ![2FA codes](images/disabling-codes.png){.thumbnail}
 
-#### If you no longer have access to your OVHcloud Control Panel
+#### If you no longer have access to your OVHcloud Control Panel <a name="2FA-deletion"></a>
 
 If you no longer have valid devices and if you no longer have valid emergency codes, you can request two-factor authentication to be disabled by contacting our support teams.
 
@@ -128,4 +136,8 @@ As a matter of security, once the access is regain, we recommend that you re-ena
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.

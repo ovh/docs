@@ -4,6 +4,7 @@ slug: login-vsphere-interface
 excerpt: Find out about the different ways you can log in to vSphere
 section: 'Getting started'
 order: 2
+updated: 2022-06-24
 ---
 
 **Last updated 24th June 2022**

@@ -6,6 +6,7 @@ routes:
 excerpt: Neustarteinstellungen mit der HA-Funktion verwalten
 section: VMware vSphere Funktionen
 order: 02
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

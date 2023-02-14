@@ -4,6 +4,7 @@ slug: monitoring-gpu-application
 excerpt: 'Find out how to expose, visualize and monitor GPU metrics on OVHcloud Managed Kubernetes Service'
 section: GPU
 order: 1
+updated: 2021-01-13
 ---
 
 <style>

@@ -3,6 +3,7 @@ title: 'Rozwiązanie problemu z blokadą wirtualnej maszyny podczas korzystania 
 slug: unikanie-vm-freeze-disk-lock-veeam-backup
 excerpt: 'Dowiedz się, jak wdrożyć rozwiązanie, które pozwala uniknąć blokady wirtualnej maszyny za pomocą mechanizmu VMware DRS'
 section: 'Zarządzanie wirtualnymi maszynami'
+updated: 2022-02-22
 ---
 
 > [!primary]

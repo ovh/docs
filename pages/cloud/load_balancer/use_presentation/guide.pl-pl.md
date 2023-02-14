@@ -3,6 +3,7 @@ title: Prezentacja usługi Load Balancer
 slug: lb-prezentacja
 excerpt: Poznaj nowe rozwiązanie Load Balancer 
 section: Pierwsze kroki
+updated: 2018-01-17
 ---
 
 **Ostatnia aktualizacja dnia 2017-01-30**  

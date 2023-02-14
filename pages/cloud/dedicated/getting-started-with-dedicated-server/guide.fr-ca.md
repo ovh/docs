@@ -4,6 +4,7 @@ slug: premiers-pas-serveur-dedie
 excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié'
 section: 'Premiers pas'
 order: 1
+updated: 2022-12-12
 ---
 
 **Dernière mise à jour le 12/12/2022**

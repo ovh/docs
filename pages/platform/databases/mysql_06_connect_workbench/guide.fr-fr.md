@@ -6,6 +6,7 @@ section: MySQL - Guides
 order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-workbench/'
+updated: 2022-03-08
 ---
 
 **Last updated 8th March 2022**
@@ -21,7 +22,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
 - A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MySQL instance](https://docs.ovh.com/fr/publiccloud/databases/mysql/configure-mysql-instance/) to accept incoming connections
+- [Configure your MySQL instance](https://docs.ovh.com/fr/databases/mysql/configure-mysql-instance/) to accept incoming connections
 - A MySQL Workbench stable version installed and public network connectivity (Internet). *This guide was made with MySQL Workbench version 8.0.28*.
 
 ## Concept
@@ -45,27 +46,27 @@ Once you have downloaded and installed it, follow the steps below to set up a re
 
 Click `New Connection`{.action}.
 
-![](images/mysql_06_connect_workbench-20220210111228867.png)
+![workbench welcome](images/mysql_06_connect_workbench-20220210111228867.png)
 
 In the **Setup New Connection** dialog box, fill in the `Parameters`{.action} tab form with the previously collected information.
 
-![](images/mysql_06_connect_workbench-2022021011165750.png)
+![Workbench setup](images/mysql_06_connect_workbench-2022021011165750.png)
 
 Store the password for connection in keychain.
 
-![](images/mysql_06_connect_workbench-2022021011180843.png)
+![Workbench stre password](images/mysql_06_connect_workbench-2022021011180843.png)
 
 Switch to `SSL`{.action} tab and set `Use SSL` to `Require`.
 
-![](images/mysql_06_connect_workbench-20220210111545457.png)
+![Workbench ssl](images/mysql_06_connect_workbench-20220210111545457.png)
 
 Once done, select your new connection.
 
-![](images/mysql_06_connect_workbench-20220210113913361.png)
+![Workbench home](images/mysql_06_connect_workbench-20220210113913361.png)
 
 Congratulations, in the `Schemas`{.action} tab, you will see your databases.
 
-![](images/mysql_06_connect_workbench-20220210114125831.png)
+![Workbench query result](images/mysql_06_connect_workbench-20220210114125831.png)
 
 > [!primary]
 >

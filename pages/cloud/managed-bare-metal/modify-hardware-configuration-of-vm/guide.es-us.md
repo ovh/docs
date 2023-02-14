@@ -6,6 +6,7 @@ excerpt: Cómo escalar su máquina virtual
 slug: cambiar_la_configuracion_del_hardware_de_una_maquina_virtual
 section: Gestión de las máquinas virtuales
 order: 03
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

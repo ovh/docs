@@ -3,6 +3,7 @@ title: 'Mode bridge IP'
 slug: network-bridging
 excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
 section: 'Réseau & IP'
+updated: 2022-12-20
 ---
 
 **Dernière mise à jour le 20/12/2022**

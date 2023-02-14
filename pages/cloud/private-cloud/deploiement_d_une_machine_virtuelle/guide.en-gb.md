@@ -4,6 +4,7 @@ slug: deploying-a-virtual-machine
 excerpt: Find out how to deploy a virtual machine in the vSphere interface
 section: Virtual machine management
 order: 0
+updated: 2020-06-29
 ---
 
 **Last updated 29th June 2020**

@@ -3,6 +3,7 @@ title: Object Storage Swift - Syncing object containers
 slug: pcs/sync-object-containers
 section: OpenStack Swift Storage Class Specifics
 order: 060
+updated: 2022-11-16
 ---
 
 **Last updated 16th November 2022**

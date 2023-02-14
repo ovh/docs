@@ -5,6 +5,7 @@ excerpt: 'Find out how to add IP restrictions/manage access to the API server of
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/add-ip-restrictions/'
+updated: 2022-07-28
 ---
 
 **Last updated 28th July 2022**

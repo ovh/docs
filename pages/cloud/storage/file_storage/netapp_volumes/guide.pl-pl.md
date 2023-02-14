@@ -4,6 +4,7 @@ slug: netapp/volumes
 excerpt: Dowiedz się, jak tworzyć wolumeny OVHcloud Enterprise File Storage i zarządzać nimi za pomocą API OVHcloud
 section: Enterprise File Storage
 order: 040
+updated: 2021-10-27
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Adding an ESXi server to a vSAN cluster'
 slug: vmware-vsan-add-host
 excerpt: 'Find out how to add an ESXi server to an existing vSAN cluster'
 section: 'VMware vSphere features'
+updated: 2021-12-22
 ---
 
 **Last updated 22nd December 2021**

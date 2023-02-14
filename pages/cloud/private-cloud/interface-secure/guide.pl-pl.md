@@ -4,6 +4,7 @@ slug: bezpieczny-interfejs
 excerpt: 'Dowiedz się, jak korzystać z bezpiecznego interfejsu w infrastrukturach HDS lub PCI-DSS'
 section: 'Usługi i opcje OVHcloud'
 order: 04
+updated: 2022-10-12
 ---
 
 **Ostatnia aktualizacja z dnia 12-10-2022**

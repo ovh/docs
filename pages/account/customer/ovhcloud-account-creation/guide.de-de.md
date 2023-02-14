@@ -4,6 +4,7 @@ slug: ovhcloud-account-erstellen
 excerpt: Erfahren Sie hier, wie Sie Ihren OVHcloud Kunden-Account anlegen
 section: 'Erste Schritte'
 order: 1
+updated: 2021-07-01
 ---
 
 > [!primary]

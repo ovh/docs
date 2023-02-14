@@ -4,6 +4,7 @@ slug: gestao-trafego-cdn
 excerpt: 'Saiba como administrar o tráfego na solução CDN da OVH'
 section: Introdução
 order: 3
+updated: 2018-02-22
 ---
 
 **Última atualização: 17/12/2018**

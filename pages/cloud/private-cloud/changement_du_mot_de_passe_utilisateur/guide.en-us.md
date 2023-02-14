@@ -3,6 +3,7 @@ title: Changing the User Password
 excerpt: Learn how to change a vSphere client user's password from your OVHcloud Control Panel
 slug: changing-user-password
 section: OVHcloud Features
+updated: 2021-08-19
 ---
 
 **Last updated 19th August 2021**

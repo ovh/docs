@@ -3,6 +3,7 @@ title: 'Dostosuj swoją chmurę prywatną (Private Cloud) do certyfikacji HDS lu
 slug: aktywuj-opcje-hds-hipp-lub-pci-dss
 excerpt: 'Odkryj, jak dostosować swoją chmurę prywatną do certyfikacji HDS lub PCI DSS'
 section: 'Usługi i opcje OVHcloud'
+updated: 2020-05-27
 ---
 
 **Ostatnia aktualizacja z dnia 01-06-2019**

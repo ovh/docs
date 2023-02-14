@@ -4,6 +4,7 @@ slug: sap-mise-a-jour-sap-hana
 excerpt: "Ce guide fournit des instructions générales sur la mise à jour d'un serveur et d'un client SAP HANA"
 section: Utilisation avancée
 order: 02
+updated: 2022-02-04
 ---
 
 **Dernière mise à jour le 04/02/2022**

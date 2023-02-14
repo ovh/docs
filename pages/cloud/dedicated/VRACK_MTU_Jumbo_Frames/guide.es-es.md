@@ -3,6 +3,7 @@ title: 'Configuración de tramas Jumbo en el vRack'
 slug: 'network-jumbo'
 excerpt: 'Cómo configurar Jumbo frames en el vRack'
 section: 'vRack'
+updated: 2020-08-17
 ---
 
 **Última actualización: 17/6/2020**

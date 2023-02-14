@@ -35,4 +35,4 @@ Jeder OVHcloud E-Mail-Account verfügt über einen dedizierten Speicherplatz. Ei
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
-Folgen Sie unserem Leitfaden [Speicherplatz eines E-Mail-Accounts verwalten](https://docs.ovh.com/de/emails/manage-email-quota/) im Abschnitt "Hosted E-Mail - MX Plan".
+Folgen Sie unserer Anleitung "[Speicherplatz eines E-Mail-Accounts verwalten](https://docs.ovh.com/de/emails/manage-email-quota/)" im Abschnitt "Hosted E-Mail - MX Plan".

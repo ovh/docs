@@ -7,6 +7,7 @@ excerpt: Commander un bloc IP sur votre Managed Bare Metal
 legacy_guide_number: '7766457'
 section: Fonctionnalités OVHcloud
 order: 01
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

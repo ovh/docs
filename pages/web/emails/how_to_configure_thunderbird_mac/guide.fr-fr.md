@@ -2,8 +2,6 @@
 title: 'Configurer son adresse e-mail sur Thunderbird pour Mac OS'
 legacy_guide_number: 1911
 slug: guide-de-configuration-email-pour-thunderbird-mac
-routes:
-    canonical: 'https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/'
 excerpt: 'Découvrez comment configurer votre adresse e-mail MX Plan sur Thunderbird sur Mac OS'
 section: 'Configuration sur ordinateur'
 order: 05

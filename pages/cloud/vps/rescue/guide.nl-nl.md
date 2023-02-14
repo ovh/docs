@@ -4,6 +4,7 @@ title: Reddingsmodus-activatie op een VPS
 slug: rescue
 excerpt: Ontdek hoe u uw VPS in de Reddingsmodus kunt opstarten.
 section: Diagnose en Reddingsmodus
+updated: 2022-05-02
 ---
 
 **Laatste update 22/12/2017**

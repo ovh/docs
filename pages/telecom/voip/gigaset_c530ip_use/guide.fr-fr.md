@@ -4,6 +4,7 @@ slug: utiliser-gigaset-c530ip
 excerpt: 'Découvrez comment utiliser votre téléphone Gigaset C530IP'
 section: 'Gigaset C530IP'
 hidden: true
+updated: 2018-07-03
 ---
 
 **Dernière mise à jour le 03/07/2018**

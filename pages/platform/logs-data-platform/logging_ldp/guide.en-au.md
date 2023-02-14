@@ -5,7 +5,7 @@ order: 20
 section: Logging libraries
 ---
 
-**Last updated 29th July, 2020**
+**Last updated 16th January, 2023**
 
 ## Objective
 
@@ -16,7 +16,7 @@ This guide will show you how to push your logs to Logs Data Platform using Pytho
 This package includes:
 
 - a TCP/TLS handler to send log entries over TCP with TLS support.
-- a formatter to convert logging record into [GELF(1.1)](http://docs.graylog.org/en/latest/pages/gelf.html#gelf-payload-specification){.external}.
+- a formatter to convert logging record into [GELF(1.1)](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification#gelf-payload-specification){.external}.
 - a facility to ensure fields suits the [LDP naming conventions](../field-naming-conventions){.ref}.
 
 

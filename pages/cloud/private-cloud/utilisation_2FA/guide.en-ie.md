@@ -4,6 +4,7 @@ slug: use-2FA
 excerpt: 'Find out how to enable the two-factor authentication to protect your infrastructure'
 section: 'OVHcloud Features'
 order: 5
+updated: 2022-06-10
 ---
 
 **Last updated 10th June 2022**

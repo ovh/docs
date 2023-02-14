@@ -5,6 +5,7 @@ excerpt: Come avviene la sostituzione di un host malfunzionante
 legacy_guide_number: '2883590'
 section: Funzionalità OVHcloud
 order: 04
+updated: 2020-06-29
 ---
 
 **Ultimo aggiornamento: 07/07/2020**

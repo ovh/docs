@@ -4,6 +4,7 @@ slug: api-details
 excerpt: "Détails des fonctionnalités de l’API OVHcloud pour l’offre OVHcloud Load Balancer"
 section: Premiers pas
 order: 03
+updated: 2022-04-04
 ---
 
 **Dernière mise à jour le 04/04/2022**

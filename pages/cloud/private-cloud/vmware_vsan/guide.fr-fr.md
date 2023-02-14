@@ -4,6 +4,7 @@ slug: vmware-vsan
 excerpt: "Utiliser la puissance de l'hyperconvergence avec vSAN"
 section: Fonctionnalités VMware vSphere
 order: 10
+updated: 2022-09-07
 ---
 
 **Dernière mise à jour le 07/09/2022**

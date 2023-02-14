@@ -8,6 +8,7 @@ legacy_guide_number: '1442255'
 space_key: VS
 space_name: vSphere as a Service
 section: 'OVHcloud services and options'
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

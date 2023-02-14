@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/asia/en/private-cloud/configure-ip-on-virtual-machine/'
 excerpt: Learn how to configure an IP address on a virtual machine
 section: Getting started
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

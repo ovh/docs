@@ -1,8 +1,7 @@
 ---
 title: 'Configurer son compte Exchange sur Thunderbird pour Windows'
 slug: exchange-configuration-de-thunderbird
-routes:
-    canonical: 'https://docs.ovh.com/ca/fr/emails/configuration-email-configuration-pour-thunderbird/'
+
 excerpt: 'Retrouvez ici la procédure d’ajout d’un compte Exchange pour Thunderbird'
 section: 'Configuration sur ordinateur'
 order: 04

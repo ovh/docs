@@ -3,6 +3,7 @@ title: Assigning a Virtual MAC to an Additional IP
 slug: network-virtual-mac
 excerpt: This guide will show you how to create a virtual MAC address and assign it to an Additional IP address.
 section: Network Management
+updated: 2022-12-20
 ---
 
 **Last updated 20th December 2022**

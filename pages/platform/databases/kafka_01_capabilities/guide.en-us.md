@@ -4,9 +4,10 @@ slug: kafka/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
 section: Kafka - Guides
 order: 010
+updated: 2023-01-19
 ---
 
-**Last updated November 8th, 2022**
+**Last updated January 19th, 2023**
 
 ## Objective
 
@@ -48,7 +49,6 @@ Please note that Kafka Connect and Kafka Mirrormaker 2 aren't available so far.
 
 Three plans are available:
 
-- *Essential*
 - *Business*
 - *Enterprise*
 
@@ -79,6 +79,7 @@ Here are the node types you can choose from:
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
+| db1-4   | 480       | 2     | 4           |
 | db1-7   | 960       | 2     | 7           |
 | db1-15  | 1920      | 4     | 15          |
 | db1-30  | 3840      | 8     | 30          |
@@ -104,17 +105,19 @@ Also, the performance caracteristics of the various storage offerings may vary d
 Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
 
 ### Features
-
 #### Network
-
-Kafka clusters are reachable through a random port, attributed during cluster creation.
-Once your cluster is in **RUNNING** status, the Service URI will display the port to use.
+Kafka clusters are reachable through a random port, attributed during cluster creation. Once your cluster is in **RUNNING** status, the Service URI will display the port to use.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
-When using private networking, some network ports get created in the private network of your choice. Thus, further operations on that network might suffer from some restrictions - e.g. you won't be able to delete the network if you didn't stop the Public Cloud Databases services first.
+Ingress and Egress traffic are included in the service plans and unmetered.
 
-For both public and private networks, Ingress and Egress traffic are included in the service plans and unmetered.
+##### Private network considerations
+Here are some considerations to take into account when using private network:
+
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+
 
 #### Maximum simultaneous connections
 

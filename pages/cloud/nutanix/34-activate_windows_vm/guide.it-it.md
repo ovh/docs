@@ -6,6 +6,7 @@ routes:
 excerpt: 'Find out how to activate a Windows Server virtual machine installed on a Nutanix by OVHcloud solution with an OVHcloud SPLA licence'
 section: Utilizzo avanzato
 order: 04
+updated: 2022-12-21
 ---
 
 **Last updated 21th December 2022**

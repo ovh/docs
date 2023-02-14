@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguracja konta e-mail Pro na urządzeniu iPhone lub iPad'
 slug: konfiguracja-iphone
-routes:
-    canonical: 'https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/'
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail'
 section: 'Konfiguracja programu pocztowego'
 order: 3

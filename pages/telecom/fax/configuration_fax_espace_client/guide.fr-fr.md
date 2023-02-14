@@ -4,6 +4,7 @@ slug: configuration-fax
 excerpt: Découvrez comment configurer votre ligne Fax depuis votre espace client OVHcloud
 section: Premiers pas
 order: 1
+updated: 2021-04-07
 ---
 
 **Dernière mise à jour le 07/04/2021**

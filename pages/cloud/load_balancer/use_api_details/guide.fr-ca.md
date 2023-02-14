@@ -3,6 +3,7 @@ title: Détails des fonctions API
 slug: api-details
 excerpt: Détails des fonctionnalités de l’API
 section: Premiers pas
+updated: 2022-04-04
 ---
 
 ## Objectif

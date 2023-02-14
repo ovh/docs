@@ -4,6 +4,7 @@ slug: veeam-backup-restoration
 excerpt: Découvrez comment restaurer des sauvegardes Veeam Managed Backup via les API OVHcloud
 section: Services et options OVHcloud
 order: 06
+updated: 2021-03-29
 ---
 
 **Dernière mise à jour le 29/03/2021**

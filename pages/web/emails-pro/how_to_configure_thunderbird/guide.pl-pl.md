@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguracja konta E-mail Pro w programie Thunderbird na urządzeniu z systemem Windows'
 slug: konfiguracja-thunderbird-emailpro-windows
-routes:
-    canonical: 'https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/'
 excerpt: 'Dowiedz się, jak skonfigurować Twoje konto E-mail Pro w programie Thunderbird na urządzeniu z systemem Windows'
 section: 'Konfiguracja programu pocztowego'
 order: 5

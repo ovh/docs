@@ -3,6 +3,7 @@ title: Checking and applying patches for Spectre/Meltdown vulnerabilities on you
 slug: check_patch_spectre_meltdown_vulnerabilities_hosts
 excerpt: Find out how to apply patches for the Spectre and Meltdown vulnerabilities
 section: Meltdown and Spectre information
+updated: 2022-04-30
 ---
 
 ## Objective

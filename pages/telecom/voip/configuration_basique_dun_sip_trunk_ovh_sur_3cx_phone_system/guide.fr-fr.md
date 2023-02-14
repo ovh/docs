@@ -4,6 +4,7 @@ excerpt: "Découvrez comment configurer un SIP Trunk OVHcloud avec l'IPBX 3CX et
 slug: configuration_basique_dun_sip_trunk_ovh_sur_3cx_phone_system
 section: IPBX
 order: O3
+updated: 2022-10-25
 ---
 
 **Dernière mise à jour le 25/10/2022**

@@ -3,6 +3,7 @@ title: 'Adapting your Private Cloud for PCI DSS certifications'
 slug: activate-pci-dss-option
 excerpt: 'Find out how to adapt your Private Cloud for PCI DSS certifications'
 section: 'OVHcloud services and options'
+updated: 2020-05-27
 ---
 
 **Last updated 26/02/2019**

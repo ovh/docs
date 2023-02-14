@@ -3,6 +3,7 @@ title: 'Configurer HTTP/2 sur un service OVHcloud Load Balancer'
 slug: iplb-http2
 excerpt: 'Configuration de HTTP/2 sur un service OVHcloud Load Balancer'
 section: "Cas d'usage"
+updated: 2018-01-15
 ---
 
 **Dernière mise à jour le 01/02/2022**

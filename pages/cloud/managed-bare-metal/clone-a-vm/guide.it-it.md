@@ -6,6 +6,7 @@ routes:
 excerpt: Come copiare una macchina virtuale esistente via vSphere
 section: Gestione delle macchine virtuali
 order: 07
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

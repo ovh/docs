@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguration Ihrer Email Pro Adresse auf Thunderbird für macOS'
 slug: konfiguration-emailpro-thunderbird-mac
-routes:
-    canonical: 'https://docs.ovh.com/de/emails/konfiguration-email-thunderbird-windows/'
 excerpt: 'Hier finden Sie die Informationen zur Konfiguration Ihrer Email Pro Adresse auf Thunderbird für macOS.'
 section: 'Konfiguration des E-Mail-Clients'
 order: 6

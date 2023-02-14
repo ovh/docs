@@ -4,6 +4,7 @@ slug: attiva_la_doppia_autenticazione_via_sms
 excerpt: 'Come proteggere il tuo Spazio Cliente OVHcloud attivando la doppia autenticazione via SMS'
 section: Sicurezza
 hidden: true
+updated: 2020-04-15
 ---
 
 **Ultimo aggiornamento: 15/04/2020**

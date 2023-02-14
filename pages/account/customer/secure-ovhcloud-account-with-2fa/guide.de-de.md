@@ -3,13 +3,14 @@ title: 'Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absich
 slug: Account-mit-2FA-absichern
 excerpt: 'Erfahren Sie hier, wie Sie die Sicherheit Ihres Accounts bei OVHcloud steigern können, indem Sie die Zwei-Faktor-Authentifizierung aktivieren'
 section: Sicherheit
+updated: 2022-07-20
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 03.01.2022**
+**Letzte Aktualisierung am 09.02.2023**
 
 ## Ziel
 
@@ -84,9 +85,7 @@ Auch können Sie einen der Sicherheitscodes verwenden, die Ihnen zur Verfügung 
 > Um den Zugang zu Ihrem Account nicht zu sperren, vergewissern Sie sich vor dem Entfernen eines Peripheriegeräts, dass Sie eine der folgenden Möglichkeiten zur Verfügung haben:
 > 
 > - ein funktionstüchtiges Peripheriegerät;
-> 
 > - eine alternative, funktionierende Methode der Zwei-Faktor-Authentifizierung;
-> 
 > - gültige Sicherheitscodes.
 > 
 
@@ -97,6 +96,15 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 Klicken Sie danach auf `Sicherheit`{.action} (Schritt 1 auf dem Bild unten), dann auf `...`{.action} (Schritt 2) rechts vom Peripheriegerät, das Sie entfernen möchten, und schließlich auf `Löschen`{.action} (Schritt 3).
 
 ![2FA](images/hub2FAc.png){.thumbnail}
+
+Ihnen wird dann ein letzter Validierungscode auf dem Gerät zugesandt, das Sie löschen möchten. Geben Sie diesen Code im angezeigten Fenster ein und klicken Sie anschließend auf `Bestätigen`{.action}, um die Löschung abzuschließen.
+
+> [!warning]
+>
+> Wenn Sie keinen Zugriff mehr auf das Gerät haben, das Sie löschen möchten, können Sie es nicht selbst aus dem OVHcloud Kundencenter entfernen.
+>
+> In diesem Fall **kontaktieren Sie unsere Support-Teams**, indem Sie dem [hier](#2FA-deletion) beschriebenen Prozess folgen.
+>
 
 ### Die Zwei-Faktor-Authentifizierung vollständig deaktivieren <a name="disable-2fa"></a>
 
@@ -110,7 +118,7 @@ Wenn alle Ihre Geräte gelöscht sind, deaktivieren Sie die Notfall-Codes, indem
 
 ![2FA Codes](images/disabling-codes.png){.thumbnail}
 
-#### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben
+#### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben <a name="2FA-deletion"></a>
 
 Wenn keinen Zugriff auf validierte Geräte und auch keine gültigen Notfall-Codes mehr haben, können Sie die Zwei-Faktor-Authentifizierung deaktivieren, indem Sie unsere Support-Teams kontaktieren.
 
@@ -130,5 +138,9 @@ Kontaktieren Sie den OVHcloud Support unter +49 681 906730, sobald Ihre entsprec
 Nach Überprüfung Ihrer Unterlagen kann ein Support-Mitarbeiter die Zwei-Faktor-Authentifizierung manuell aus Ihrem OVHcloud Kunden-Account entfernen.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

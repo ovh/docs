@@ -4,6 +4,7 @@ excerpt: 'Découvrez comment activer et utiliser l’option de sauvegarde automa
 slug: autobackup-vps
 section: Sauvegarde
 order: 2
+updated: 2022-11-15
 ---
 
 **Dernière mise à jour le 15/11/2022**

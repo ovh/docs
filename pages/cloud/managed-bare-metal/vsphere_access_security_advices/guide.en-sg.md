@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/sg/en/private-cloud/securing-access-vsphere-web/'
 excerpt: Find out how to optimise security for your vSphere web client
 section: Getting started
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

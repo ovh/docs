@@ -4,6 +4,7 @@ excerpt: "Apprenez les bases de l'utilisation d'un VPS"
 slug: debuter-avec-vps
 section: 'Premiers pas'
 order: 1
+updated: 2022-03-25
 ---
 
 **Dernière mise à jour le 25/03/2022**

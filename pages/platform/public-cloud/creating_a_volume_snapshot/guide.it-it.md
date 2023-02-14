@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 18/01/2022**
+**Ultimo aggiornamento: 13/01/2023**
 
 ## Obiettivo
 
@@ -38,7 +38,15 @@ A destra del volume interessato, clicca sui tre puntini `...`{.action} e poi su 
 
 Nella nuova finestra, è possibile assegnare un nome diverso allo Snapshot. Leggi le tariffe e clicca su `Crea uno Snapshot`{.action}.
 
-Il tempo di creazione dello Snapshot dipende dalla quantità di dati presenti sul volume.
+Il tempo di creazione dello Snapshot dipende dalla quantità di dati presenti sul volume, dall'utilizzo delle risorse dell'istanza al momento dello Snapshot e da altri fattori specifici dell'host.
+
+Ti consigliamo quindi di effettuare Snapshot al di fuori dei tuoi orari di produzione.
+
+Ecco alcune altre buone pratiche:
+
+- evita di creare Snapshot nelle ore di punta (tra le 04.00 e le 22.00, ora di Parigi)
+- installa l'agente qemu-guest se non lo fai o prova a disattivarlo se necessario;
+- prova a non "sollecitare" troppo il server durante la fase di creazione dello Snapshot (limitazione degli I/O, consumo di RAM, ecc...).
 
 Dato che uno Snapshot di volume è un clone su tutto il disco, avrà la dimensione massima del volume iniziale, indipendentemente dall'allocazione effettiva di spazio disco.
 

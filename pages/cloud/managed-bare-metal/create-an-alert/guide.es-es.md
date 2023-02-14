@@ -6,6 +6,7 @@ routes:
 excerpt: Configurar alertas en el cliente vSphere
 section: Gestión de las máquinas virtuales
 order: 09
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

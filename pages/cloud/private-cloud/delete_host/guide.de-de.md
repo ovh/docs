@@ -4,6 +4,7 @@ slug: host-server-loeschen
 excerpt: 'Erfahren Sie hier, wie Sie einen Host-Server aus Ihrer Private Cloud entfernen'
 legacy_guide_number: '1442308'
 section: OVHcloud Funktionen
+updated: 2021-03-19
 ---
 
 **Letzte Aktualisierung am 19.03.2021**

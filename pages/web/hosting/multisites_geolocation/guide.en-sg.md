@@ -1,5 +1,5 @@
 ---
-title: "Geolocate your website in a specific country"
+title: "Geolocating your website in a specific country"
 excerpt: "Find out how to geolocate your website using our geolocated IP addresses"
 slug: geolocation_on_web_hosting_packages
 section: Optimise your website
@@ -10,7 +10,7 @@ order: 05
   
 ## Objective
 
-Search engines (Google, Bing, Yahoo, ...) use indexing and referencing robots on all websites. They prioritise geolocated sites in the country you are searching from.
+Search engines (Google, Bing, Yahoo, etc.) use robots in order to index and rank websites. They prioritise geolocated sites in the country you are searching from.
 
 **Example**: If you search through a search engine and are located in England, geolocated websites in England will show up higher in search results than other websites.
 
@@ -18,7 +18,7 @@ This geolocation is based on the IP address of the hosting plan where your websi
 
 The geolocation option on your hosting can be useful for SEO if your website is mainly visited in a country different from where your shared hosting is located.
 
-**Find out how to geolocate your website using our geolocated IP addresses.**
+**This guide explains how to geolocate your website using our geolocated IP addresses.**
 
 ## Requirements
 
@@ -28,7 +28,7 @@ The geolocation option on your hosting can be useful for SEO if your website is 
 
 ## Instructions
 
-For websites that are mainly visited abroad and hosted on our OVHcloud shared hosting infrastructure, we offer a geolocation by IP address option. It allows websites to be listed more easily in the country where the IP address you have selected is located.
+For websites hosted on the OVHcloud shared hosting infrastructure which are mainly accessed by international visitors, we offer a geolocation by IP address option. It allows for a better search ranking in the country where the IP address you have selected is located.
 
 To use the IP geolocation option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}.
 
@@ -37,7 +37,7 @@ Then click on the `Multisite`{.action} tab and the `...`{.action} to the right o
 
 ![hosting multisites](images/hosting_multisites.png){.thumbnail}
 
-In the new window that pops up, tick the `Country IP`{.action} box to open the drop-down menu.
+In the window that pops up, tick the `Country IP`{.action} box to open the drop-down menu.
 
 ![geolocation option](images/geolocation_option.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
 
 >[!primary]
 >
-> If your domain name’s active DNS zone is fully managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), the A record in your domain name’s DNS zone will automatically change. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+> If your domain name’s active DNS zone is managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), the A record in your domain name’s DNS zone will automatically change. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](https://docs.ovh.com/sg/en/domains/web_hosting_how_to_edit_my_dns_zone/).
 >
 > Otherwise, you will need to make the change manually with the provider that manages your domain name’s active DNS zone. Find [here](https://docs.ovh.com/sg/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/) the documentation that lists all the IP addresses in our OVHcloud shared hosting infrastructure.
 >
@@ -56,7 +56,7 @@ Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

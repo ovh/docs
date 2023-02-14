@@ -4,6 +4,7 @@ slug: vorstellige-anwendungen
 excerpt: Erfahren Sie hier, wie Sie auf Ihrem VPS vorinstallierte Anwendungen einrichten
 section: 'Erste Schritte'
 order: 6
+updated: 2022-08-25
 ---
 
 > [!primary]

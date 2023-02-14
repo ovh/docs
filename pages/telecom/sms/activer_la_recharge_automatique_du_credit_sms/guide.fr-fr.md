@@ -4,9 +4,10 @@ slug: activer-la-recharge-automatique-du-credit-sms
 excerpt: 'Apprenez comment gérer vos crédits SMS OVHcloud'
 legacy_guide_number: '16254520'
 section: 'Gérer mon offre'
+updated: 2023-02-09
 ---
 
-**Dernière mise à jour le 29/08/2022**
+**Dernière mise à jour le 09/02/2023**
 
 ## Objectif
 
@@ -71,32 +72,26 @@ Enfin, remplissez les champs requis :
 
 ![credit sms](images/smscredit03.png){.thumbnail}
 
-### Le transfert de crédits
+### Tranférer des crédits SMS
 
 > [!primary]
 >
 > Le transfert de crédits n'est possible qu'entre les comptes SMS d'un seul et même compte client OVHcloud. Le transfert de crédits entre deux comptes clients OVHcloud est impossible.
 >
 
-Le transfert de crédits SMS ne peut s'effectuer que via API.
+Dans votre espace client OVHcloud, choisissez l'un de vos comptes SMS puis cliquez sur `Transférer des crédits`{.action} depuis l'onglet `Accueil`{.action}.
 
-> [!success]
-> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)».
+![transfert de crédits SMS](images/credit-transfer01.png){.thumbnail}
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) puis utilisez l'API suivante :
+Choisissez alors :
 
-> [!api]
->
-> @api {post} /sms/{serviceName}/transferCredits
->
+- le compte SMS qui va transférer les crédits ;
+- le compte SMS qui va recevoir les crédits ;
+- le nombre de crédits à transférer.
 
-Vous devrez compléter les trois champs requis :
+Cliquez sur `Envoyer`{.action} pour valider le transfert. Celui-ci est immédiat.
 
-- `serviceName` : renseignez la référence du compte SMS léguant les crédits.
-- `credits` : renseignez le nombre de crédits à transférer
-- `smsAccountTarget` : renseignez la référence du compte SMS recevant les crédits.
-
-Cliquez sur `Execute`{.action} pour valider le transfert. Celui-ci est immédiat.
+![transfert de crédits SMS](images/credit-transfer02.png){.thumbnail}
 
 ## Aller plus loin
 

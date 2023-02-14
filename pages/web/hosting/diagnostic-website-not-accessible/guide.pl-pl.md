@@ -3,7 +3,7 @@ title: "Co zrobić, jeśli moja strona jest niedostępna?"
 slug: blad-serwer-niedostepny
 excerpt: "Zdiagnozuj przyczyny niedostępności Twojej strony WWW"
 section: Diagnostyka
-Order: 01
+order: 01
 ---
 
 > [!primary]

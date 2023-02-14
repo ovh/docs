@@ -5,6 +5,7 @@ excerpt: 'Find out how to install JFrog Artifactory on an OVHcloud Managed Kuber
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-artifactory/'
+updated: 2022-10-17
 ---
 
 <style>

@@ -3,6 +3,7 @@ title: 'Wybór grupy dysków przeznaczoną do instalacji systemu operacyjnego'
 slug: instalacja-dyski-hybrid
 excerpt: 'Dowiedz się, jak wybrać odpowiednią grupę dysków przeznaczoną do instalacji systemu operacyjnego'
 section: 'RAID & dyski'
+updated: 2018-11-22
 ---
 
 **Ostatnia aktualizacja z dnia 06-12-2018**

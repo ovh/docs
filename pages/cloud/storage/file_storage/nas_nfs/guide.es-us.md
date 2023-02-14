@@ -4,6 +4,7 @@ slug: nas/nfs
 excerpt: "Cómo conectarse a un NAS-HA utilizando un recurso compartido por NFS"
 section: NAS-HA
 order: 03
+updated: 2022-12-06
 ---
 
 > [!primary]

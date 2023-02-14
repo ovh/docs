@@ -3,6 +3,7 @@ title: 'FAQ - SAP HANA on OVHcloud'
 slug: faq-sap-hana-ovhcloud
 section: Getting started
 order: 03
+updated: 2022-02-04
 ---
 
 **Last updated 4th February 2022**

@@ -4,6 +4,7 @@ slug: windows-admin-passwort-aendern
 excerpt: 'Erfahren Sie hier, wie Sie das Administrator-Passwort auf einem Windows Dedicated Server ändern'
 section: 'Server Management'
 order: 2
+updated: 2021-01-12
 ---
 
 **Letzte Aktualisierung am 07.01.2021**

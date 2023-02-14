@@ -6,6 +6,7 @@ section: Storage
 order: 4
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backing-up-volumes-using-stash/'
+updated: 2022-09-26
 ---
 
 <style>

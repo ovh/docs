@@ -3,6 +3,7 @@ title: 'Atribuir um endereço MAC virtual a um Additional IP'
 slug: network-virtual-mac
 excerpt: 'Saiba como criar um endereço MAC virtual e como associá-lo a um Additional IP'
 section: 'Redes & IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

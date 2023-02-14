@@ -3,6 +3,7 @@ title: 'Premiers pas avec les API OVHcloud'
 slug: first-steps-with-ovh-api
 excerpt: 'Découvrez comment utiliser les API OVHcloud'
 section: 'Premiers pas'
+updated: 2022-05-30
 ---
 
 **Dernière mise à jour le 30/05/2022**
@@ -44,7 +45,7 @@ Pour utiliser les API sur vos produits, vous devez vous connecter sur ce site gr
 
 > [!primary]
 >
-> Si votre compte OVHcloud est protégé par une [double authentification](../../customer/securiser-son-compte-avec-une-2FA/),  vous devrez également saisir le code généré par SMS ou application OTP ou clé U2F.
+> Si votre compte OVHcloud est protégé par une [double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/),  vous devrez également saisir le code généré par SMS ou application OTP ou clé U2F.
 >
 
 #### Explorer les produits disponibles sur les API

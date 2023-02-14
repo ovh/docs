@@ -17,10 +17,10 @@ OVHcloud offers several types of SSL certificates for [OVHcloud web hosting solu
 There are three types of SSL certificates:
 
 - Domain Validation (DV)
-- Organisation validation (OV)
+- Organisation Validation (OV)
 - Extended Validation (EV)
 
-SSL encryption levels are the same between these three certificate types.
+SSL encryption levels are the same between these certificate types.
 
 The main difference lies in the level of checks that will be carried out by the Certificate Authority (CA) that issues the SSL certificate and attests to its authenticity.
 
@@ -35,7 +35,7 @@ For OVHcloud web hosting plans, the certification authority delivering EV SSL ce
 > Please note that once the order has been initiated and sent to our certificate provider / certification authority Sectigo, **no refund will be possible**.
 >
 
-**Find out how to order an EV SSL certificate and install it on an OVHcloud web hosting plan**
+**Find out how to order an EV SSL certificate and install it on an OVHcloud web hosting plan.**
     
 ## Requirements <a name="requirements"></a>
 
@@ -54,10 +54,10 @@ To check if you are eligible to subscribe to an EV SSL certificate, go to [this 
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/) if you encounter any difficulties. We will not be able to provide you with assistance **for all verification steps directly performed with the Sectigo certification authority**. You can find more information in the [Go further](#go-further) section of this guide.
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) if you encounter any difficulties. We will not be able to provide you with assistance **for all verification steps directly performed with the Sectigo certification authority**. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
-### Step 1: order the EV SSL certificate
+### Step 1: Order the EV SSL certificate
 
 #### 1.1 - For a domain name and a hosting already existing at OVHcloud
 
@@ -108,7 +108,7 @@ Proceed with your order until payment to begin installing your services.
 >
 > You must ensure that you are eligible to subscribe to an EV SSL certificate **before paying for the certificate**.
 >
-> In fact, no refund of the EV SSL will be possible, **even if the verification procedure with Sectigo does not succeed**.
+> No refund of the EV SSL will be possible, **even if the verification procedure with Sectigo does not succeed**.
 >
 
 ### Step 2: Verifications with Sectigo Certification Authority (CA)
@@ -169,7 +169,7 @@ You will only need to [activate HTTPS on your website](https://docs.ovh.com/sg/e
 
 [Activate HTTPS on your website](https://docs.ovh.com/sg/en/hosting/activate-https-website-ssl/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

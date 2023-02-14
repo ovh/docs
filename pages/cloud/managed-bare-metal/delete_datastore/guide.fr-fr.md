@@ -7,6 +7,7 @@ excerpt: Découvrez comment supprimer un datastore de votre Managed Bare Metal
 legacy_guide_number: '7766789'
 section: Fonctionnalités OVHcloud
 order: 07
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

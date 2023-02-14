@@ -3,6 +3,7 @@ title: FAQ SecNumCloud Connectivity
 slug: secnumcloud-connectivity-faq
 section: SecNumCloud Connectivity
 order: 05
+updated: 2022-10-13
 ---
 
 **Last updated 13th October, 2022**

@@ -4,6 +4,7 @@ slug: popc-utilisation
 excerpt: "Découvrez l'interface et les fonctionnalités basiques du logiciel POPC"
 section: POPC
 order: 2
+updated: 2021-06-25
 ---
 
 **Dernière mise à jour le 25/06/2021**

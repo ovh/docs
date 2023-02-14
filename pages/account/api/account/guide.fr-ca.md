@@ -3,6 +3,7 @@ title: Création d'un sous compte OVHcloud et d'un utilisateur via l'API OVH
 excerpt: Création d'un sous compte OVHcloud et d'un utilisateur pour l'accès au manager OVHcloud via l'API
 slug: ovh-api-sub-account
 section: APIv6 OVHcloud
+updated: 2020-01-02
 ---
 
 **Dernière mise à jour le 14 Juillet 2020**
@@ -16,7 +17,7 @@ Ce guide vous permettra aussi d'ajouter un ou des logins a ce sous-compte pour l
 ## Prérequis
 
 * Être connecté aux [API OVHcloud](https://ca.api.ovh.com/){.external}.
-* Avoir [créé ses identifiants pour l'API OVHcloud](../first-steps-with-ovh-api/){.external}.
+* Avoir [créé ses identifiants pour l'API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/){.external}.
 * Avoir un compte client avec un tag Reseller (Contactez votre commercial pour connaitre votre éligibilité le cas échéant).
 
 

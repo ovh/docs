@@ -4,6 +4,7 @@ slug: crear-una-alerta
 excerpt: Configurar alertas en el cliente vSphere
 section: Gestión de las máquinas virtuales
 order: 09
+updated: 2020-07-08
 ---
 
 **Última actualización: 29/06/2020**

@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/federation/'
 excerpt: Learn how to use you Active Directory server as an authentication source for your vSphere users.
 section: 'Funcionalidades VMware vSphere'
+updated: 2022-02-10
 ---
 
 **Last updated 10th February 2022**

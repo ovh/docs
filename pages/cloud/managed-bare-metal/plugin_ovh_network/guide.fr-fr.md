@@ -7,6 +7,7 @@ excerpt: Découvrez comment utiliser le plugin OVH Network sur votre offre Manag
 legacy_guide_number: '7766560'
 section: Fonctionnalités OVHcloud
 order: 03
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

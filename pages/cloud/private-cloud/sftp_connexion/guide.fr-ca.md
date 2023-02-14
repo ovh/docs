@@ -4,6 +4,7 @@ slug: connexion-en-sftp
 excerpt: Apprenez à vous connecter à votre Private Cloud en SFTP
 section: Premiers pas
 order: 3
+updated: 2021-12-28
 ---
 
 **Dernière mise à jour le 28/12/2021**

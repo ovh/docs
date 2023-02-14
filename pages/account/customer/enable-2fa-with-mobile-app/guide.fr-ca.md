@@ -4,6 +4,7 @@ slug: activer-la-double-authentification-par-application-mobile
 excerpt: 'Découvrez comment sécuriser votre espace client OVHcloud en activant la double authentification par application mobile OTP'
 section: Sécurité
 hidden: true
+updated: 2020-04-16
 ---
 
 **Dernière mise à jour le 16/04/2020**

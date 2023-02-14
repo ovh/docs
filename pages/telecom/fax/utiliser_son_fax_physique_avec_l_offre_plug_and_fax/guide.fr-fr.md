@@ -5,6 +5,7 @@ excerpt: Découvrez comment configurer l’offre Plug & Fax pour utiliser un fax
 legacy_guide_number: '8355855'
 section: Premiers pas
 order: 2
+updated: 2021-03-11
 ---
 
 **Dernière mise à jour le 11/03/2021**

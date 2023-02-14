@@ -4,6 +4,7 @@ slug: conect-saml-sso
 excerpt: "Cómo asociar el servicio ADFS a su cuenta de OVHcloud a través de SAML 2.0"
 section: Uso avanzado
 order: 02
+updated: 2022-10-13
 ---
 
 > [!primary]

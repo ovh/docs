@@ -4,6 +4,7 @@ excerpt: Find out how to configure your PostgreSQL instance to accept incoming c
 slug: postgresql/configure-postgresql-instance
 section: PostgreSQL - Guides
 order: 030
+updated: 2022-04-04
 ---
 
 **Last updated 4<sup>th</sup> April, 2022**

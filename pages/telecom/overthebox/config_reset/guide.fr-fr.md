@@ -3,6 +3,7 @@ title: "Réinitialiser la configuration d'une OverTheBox"
 slug: config-reset
 excerpt: "Découvrez comment réinitialiser votre équipement OverTheBox afin de revenir à la configuration par défaut"
 section: "Configurations de l'OverTheBox"
+updated: 2022-11-14
 ---
 
 **Dernière mise à jour le 14/11/2022**

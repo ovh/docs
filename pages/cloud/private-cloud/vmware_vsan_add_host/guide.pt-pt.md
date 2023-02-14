@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/vmware-vsan-add-host/'
 excerpt: 'Find out how to add an ESXi server to an existing vSAN cluster'
 section: 'Funcionalidades VMware vSphere'
+updated: 2021-12-22
 ---
 
 **Last updated 22nd December 2021**

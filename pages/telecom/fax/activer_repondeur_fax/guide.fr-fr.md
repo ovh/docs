@@ -4,6 +4,7 @@ slug: repondeur-fax
 excerpt: Découvrez comment activer le répondeur fax depuis votre espace client OVHcloud
 section: Premiers pas
 order: 3
+updated: 2021-02-25
 ---
 
 **Dernière mise à jour le 25/02/2021**

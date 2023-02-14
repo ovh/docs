@@ -5,6 +5,7 @@ slug: pcs/configure-automatic-object-deletion
 legacy_guide_number: g1950
 section: OpenStack Swift Storage Class Specifics
 order: 070
+updated: 2021-10-27
 ---
 
 **Ultimo aggiornamento: 27/10/2021**

@@ -4,6 +4,7 @@ slug: effectuer-un-changement-de-contact-pour-les-services-voip
 excerpt: "Découvrez comment déléguer la gestion d'un service VoIP à un autre compte OVHcloud."
 legacy_guide_number: '7536701'
 section: Administratif
+updated: 2020-02-26
 ---
 
 **Dernière mise à jour le 26/02/2020**

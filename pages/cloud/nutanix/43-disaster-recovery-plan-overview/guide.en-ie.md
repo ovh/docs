@@ -4,6 +4,7 @@ slug: disaster-recovery-plan-overview
 excerpt: Overview of various Disaster Recovery Plan solutions in Nutanix
 section: Disaster Recovery Plan
 order: 01
+updated: 2022-06-29
 ---
 
 **Last updated 29th June 2022**
@@ -13,7 +14,7 @@ order: 01
 This guide will take you through the possibilities offered by Nutanix clusters installed on OVHcloud infrastructures, for implementing Disaster Recovery Plans (DRPs).
 
 > [!warning]
-> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure  that they function correctly.
 >
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >

@@ -3,6 +3,7 @@ title: Available and planned features
 excerpt: ''
 slug: available-upcoming-features
 section: Technical resources
+updated: 2022-08-11
 ---
 
 **Last updated August 11th, 2022.**

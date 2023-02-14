@@ -3,6 +3,7 @@ title: "Rétablir la synchronisation d'une connexion suite à une coupure"
 slug: retablir-synchronisation-suite-coupure
 excerpt: 'Découvrez comment rétablir la synchronisation de votre ligne xDSL OVH suite à une coupure'
 section: 'Diagnostic et dépannage'
+updated: 2018-09-18
 ---
 
 **Dernière mise à jour le 18/09/2018**

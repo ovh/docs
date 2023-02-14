@@ -4,6 +4,7 @@ excerpt: Cómo gestionar el servicio Enterprise File Storage desde el área de c
 slug: netapp/control-panel
 section: Enterprise File Storage
 order: 020
+updated: 2022-04-14
 ---
 
 > [!primary]

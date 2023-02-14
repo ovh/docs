@@ -3,6 +3,7 @@ title: Sposoby równoważenia obciążenia
 slug: balancing
 excerpt: Poznaj różne sposoby równoważenia obciążenia dostępne w usłudze Load Balancer
 section: Konfiguracja
+updated: 2018-01-17
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-07**

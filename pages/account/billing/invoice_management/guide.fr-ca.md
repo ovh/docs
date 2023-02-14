@@ -3,6 +3,7 @@ title: Gérer mes factures OVHcloud
 slug: gerer-factures-ovh
 excerpt: Découvrez comment gérer vos factures et les paiements liés à celles-ci
 section: Facturation
+updated: 2022-05-12
 ---
 
 **Dernière mise à jour le 12/05/2022**

@@ -5,6 +5,7 @@ routes:
 excerpt: Hier erfahren Sie, wie Sie das vRack mit Ihrem Managed Bare Metal Angebot verwenden
 slug: vrack-essentials
 section: OVHcloud Funktionen
+updated: 2020-11-23
 ---
 
 > [!primary]

@@ -158,7 +158,7 @@ Infine clicca su `Rebuild Instance`{.action}. Questa operazione potrebbe richied
 
 Per sapere come sospendere o mettere in pausa un'istanza, clicca [qui](https://docs.ovh.com/it/public-cloud/sospendi_o_metti_in_pausa_unistanza/) per consultare la guida specifica a questo metodo.
 
-### Accedi alla console dell'istanza
+### Accedi alla console dell'istanza <a name="console"></a>
 
 In caso di perdita dell'accesso all'istanza a causa di una configurazione scorretta o di un blocco del servizio SSH, è possibile riconfigurare l'istanza utilizzando la console VNC.
 

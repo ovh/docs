@@ -5,6 +5,7 @@ routes:
 excerpt: Come collegare un indirizzo di posta elettronica al tuo utente vSphere
 slug: associare-email-a-un-utente-vsphere
 section: Funzionalità OVHcloud
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

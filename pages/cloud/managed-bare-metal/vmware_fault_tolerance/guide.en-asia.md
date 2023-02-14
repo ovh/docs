@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to assure continuous availability of your virtual machine by using Fault Tolerance
 section: VMware vSphere features
 order: 6
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

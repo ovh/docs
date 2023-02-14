@@ -10,7 +10,7 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 18/01/2022**
+**Última atualização: 13/01/2023**
 
 ## Objetivo
 
@@ -38,7 +38,15 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na nova janela, pode atribuir um nome diferente à snapshot. Leia as informações tarifárias e clique em `Criar uma snapshot`{.action}.
 
-O tempo de criação da snapshot depende da quantidade de dados presentes no volume.
+O tempo de criação da snapshot depende da quantidade de dados presentes no volume, da utilização dos recursos da instância no momento da snapshot e de outros fatores específicos ao host.
+
+Recomendamos que efetue as suas snapshots fora das horas de produção.
+
+Eis algumas outras boas práticas:
+
+- evite criar snapshots nas horas de ponta (entre as 04h00 e as 22h00, hora de Paris);
+- instale o agente qemu se não o fez ou tente desativá-lo se necessário;
+- tente não "solicitar" demasiado o servidor durante a fase de criação da snapshot (limitação de I/O, consumo de RAM, etc.).
 
 Uma snapshot de volume é um clone do conjunto do disco, pelo que terá o tamanho máximo do volume de origem, independentemente da atribuição real de espaço em disco.
 

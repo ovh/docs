@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/us/es/private-cloud/cambiar-contrasena-usuario/'
 excerpt: Cómo modificar la contraseña de usuario del cliente vSphere desde el área de cliente de OVHcloud
 section: Funcionalidades de OVHcloud
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

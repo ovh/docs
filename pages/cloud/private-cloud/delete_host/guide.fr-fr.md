@@ -5,6 +5,7 @@ excerpt: "Découvrez comment supprimer un serveur hôte d'une infrastructure Pri
 legacy_guide_number: '1442308'
 section: Fonctionnalités OVHcloud
 order: 08
+updated: 2021-03-19
 ---
 
 **Dernière mise à jour le 19/03/2021**

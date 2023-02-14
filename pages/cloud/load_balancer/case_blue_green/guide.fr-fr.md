@@ -3,6 +3,7 @@ title: Infrastructure Blue-Green
 slug: blue-green
 excerpt: Cas pratique
 section: Cas d'usage
+updated: 2022-04-26
 ---
 
 **Dernière mise à jour le 24/03/2022**

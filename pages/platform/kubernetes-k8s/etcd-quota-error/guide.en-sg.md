@@ -3,6 +3,7 @@ title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
 slug: etcd-quota-error
 section: Diagnostics
+updated: 2022-12-14
 ---
 
 **Last updated 14th December 2022**

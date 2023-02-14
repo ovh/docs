@@ -7,13 +7,13 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/rust-libs/'
 ---
 
-**Last updated 27th July, 2020**
+**Last updated 16th January, 2023**
 
 ## Objective
 
 This guide will show you how to push your logs to Logs Data Platform using Rust.
 
-Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external}) which is widely used. OVHcloud has implemented this system to support the [GELF format](http://docs.graylog.org/en/latest/pages/gelf.html#gelf-payload-specification){.external}:
+Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external}) which is widely used. OVHcloud has implemented this system to support the [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification#gelf-payload-specification){.external}:
 
 - **gelf_logger**: This is a minimal logger.
 - **log4rs-gelf**: Based on _gelf_logger_, this implementation is compatible with the complex configurable framework [log4rs](https://docs.rs/log4rs/*/log4rs/){.external}.

@@ -4,6 +4,7 @@ slug: s3/getting-started-with-object-storage
 excerpt:
 section: Guides généraux pour débuter
 order: 020
+updated: 2022-09-27
 ---
 
 **Dernière mise à jour le 27/09/2022**
@@ -14,7 +15,7 @@ Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs 
 
 ## Prérequis
 
-- Un [projet Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
+- Un [projet Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/create_a_public_cloud_project/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Avoir créé un [utilisateur S3](https://docs.ovh.com/ca/fr/storage/s3/gestion-des-identites-et-des-acces/)
 

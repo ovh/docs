@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie OVHcloud Abonnements beenden
 slug: how-to-cancel-your-services
 section: Verlängerung der Dienste verwalten
 order: 03
+updated: 2022-03-22
 ---
 
 > [!primary]

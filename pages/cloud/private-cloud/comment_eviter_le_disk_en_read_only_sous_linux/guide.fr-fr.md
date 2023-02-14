@@ -4,6 +4,7 @@ slug: comment-eviter-le-disk-en-read-only-sous-linux
 excerpt: Eviter le passage en lecture seule du disque de votre VM Linux
 section: Gestion des machines virtuelles
 order: 10
+updated: 2020-06-25
 ---
 
 **Dernière mise à jour le 25/06/2020**

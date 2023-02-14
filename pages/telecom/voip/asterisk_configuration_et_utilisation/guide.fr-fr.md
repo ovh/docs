@@ -3,6 +3,7 @@ title: 'Asterisk - configuration et utilisation'
 slug: asterisk-configuration-et-utilisation
 legacy_guide_number: '7536698'
 section: IPBX
+updated: 2022-06-17
 ---
 
 > [!warning]

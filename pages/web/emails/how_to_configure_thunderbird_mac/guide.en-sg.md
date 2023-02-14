@@ -1,8 +1,6 @@
 ---
 title: 'Configuring an email address on Thunderbird for macOS'
 slug: configure-email-for-thunderbird-mac
-routes:
-    canonical: 'https://docs.ovh.com/sg/en/emails/configure-email-for-thunderbird-windows/'
 legacy_guide_number: 1297
 excerpt: 'Find out how to configure your email address in Thunderbird'
 section: 'Configure on computer'

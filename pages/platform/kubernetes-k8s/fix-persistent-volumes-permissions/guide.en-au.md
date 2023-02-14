@@ -3,6 +3,7 @@ title: Troubleshooting permission errors when enabling persistence
 excerpt: ''
 slug: persistentvolumes-permission-errors
 section: Diagnostics
+updated: 2021-12-17
 ---
 
 **Last updated  17th December 2021.**

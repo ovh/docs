@@ -4,6 +4,7 @@ slug: nas/cifs
 excerpt: Erfahren Sie hier, wie Sie Ihr HA-NAS unter Windows Server über CIFS mounten können
 section: HA-NAS
 order: 04
+updated: 2021-11-22
 ---
 
 > [!primary]

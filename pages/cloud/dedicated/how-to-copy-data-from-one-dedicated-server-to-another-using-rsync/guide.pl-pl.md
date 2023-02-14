@@ -3,6 +3,7 @@ title: "Kopiowanie danych z serwera na inny serwer za pomocą\_rsync"
 slug: kopiowanie-danych-serwer-rsync
 excerpt: "Dowiedz się, jak w prosty sposób kopiować dane z serwera na inny serwer za pomocą\_rsync"
 section: Tutorial
+updated: 2022-06-17
 ---
 
 ## Wprowadzenie

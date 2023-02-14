@@ -6,6 +6,7 @@ routes:
 excerpt: Entdecken Sie alle Funktionen Ihres Managed Bare Metal Kundencenters
 section: Erste Schritte
 order: 1
+updated: 2020-11-18
 ---
 
 **Letzte Aktualisierung am 05.10.2021**

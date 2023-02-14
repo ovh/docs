@@ -4,6 +4,7 @@ slug: s3/managing-object-lock
 excerpt:
 section: Tutoriels
 order: 110
+updated: 2022-06-02
 ---
 
 **Dernière mise à jour le 02/06/2022**

@@ -6,6 +6,7 @@ section: Redis - Guides
 order: 070
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/acls/'
+updated: 2022-03-08
 ---
 
 **Last updated March 8<sup>th</sup>, 2022**

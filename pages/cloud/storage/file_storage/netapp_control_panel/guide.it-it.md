@@ -4,6 +4,7 @@ excerpt: Come gestire il tuo servizio Enterprise File Storage dallo Spazio Clien
 slug: netapp/control-panel
 section: Enterprise File Storage
 order: 020
+updated: 2022-04-14
 ---
 
 > [!primary]

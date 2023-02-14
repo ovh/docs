@@ -6,6 +6,7 @@ section: PostgreSQL - Guides
 order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/configure-postgresql-instance/'
+updated: 2022-04-04
 ---
 
 **Last updated 4<sup>th</sup> April, 2022**

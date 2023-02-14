@@ -3,6 +3,7 @@ title: Checking a slow machine
 excerpt: 'Troubleshoot performance issues on a VM'
 slug: check_a_slow_machine
 section: Maintenance and monitoring
+updated: 2022-01-17
 ---
 
 **Last updated on 17th January 2022**

@@ -1,12 +1,16 @@
 ---
 title: Instalar un sitio web con un módulo en un clic
 slug: modulos-en-un-clic
-excerpt: Cómo instalar un sitio web con los módulos en un clic de OVH
+excerpt: Cómo instalar un sitio web con los módulos en un clic de OVHcloud
 section: CMS
 order: 01
 ---
 
 **Última actualización: 01/03/2023**
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
 ## Objetivo
 
@@ -17,9 +21,11 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth//).
-- No haber descargado archivos en el directorio en el que vaya a instalar el módulo.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) in your customer account.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Utilizar [una versión de PHP compatible](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/) en su alojamiento web.
+- Haber [configurado correctamente su archivo .ovhconfig](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/).
+- El directorio en el que se instalará el módulo debe estar vacío o no existe actualmente.
 - El dominio (y el subdominio, en su caso) que utilice para el sitio web debe estar declarado como multisitio.
 
 
@@ -142,6 +148,14 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 
 [Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
+[Gestionar su CMS](https://docs.ovh.com/es/hosting/1-click-module-management/)
+
+[Desinstalar su CMS](https://docs.ovh.com/es/hosting/1-click-module-management/#etapa-3-eliminar-el-modulo)
+
 Descubra nuestras [bases de datos Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

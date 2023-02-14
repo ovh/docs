@@ -7,6 +7,7 @@ order: 02
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
+updated: 2022-05-31
 ---
 
 **Dernière mise à jour le 25/05/2022**

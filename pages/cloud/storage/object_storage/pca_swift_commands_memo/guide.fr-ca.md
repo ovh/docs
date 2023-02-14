@@ -4,6 +4,7 @@ slug: pca/swift-commands-memo
 excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneurs d'objets Public Cloud Archive
 section: Spécificités de la classe de stockage d'archive OpenStack Swift
 order: 070
+updated: 2021-09-21
 ---
 
 **Dernière mise à jour le 21/09/2021**

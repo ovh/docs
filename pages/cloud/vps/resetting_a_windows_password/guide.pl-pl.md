@@ -3,6 +3,7 @@ title: 'Reset hasła Windows'
 slug: zresetuj-haso-windows
 excerpt: Przewodnik dotyczący resetowania hasła w systemie Windows
 section: Diagnostyka i tryb Rescue
+updated: 2020-11-25
 ---
 
 > [!primary]

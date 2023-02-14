@@ -4,6 +4,7 @@ slug: konfiguracja-kilku-serwerow-dedykowanych-vrack
 excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vRack'
 section: vRack
 order: 01
+updated: 2022-05-02
 ---
 
 > [!primary]

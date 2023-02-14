@@ -3,7 +3,7 @@ title: "O meu site é lento. O que fazer?"
 excerpt: "Identifique a origem da lentidão do seu website e descubra como resolver esta situação"
 slug: slow-website-fix
 section: Diagnóstico
-order: 01
+order: 09
 ---
 
 **Última atualização: 01/03/2023**

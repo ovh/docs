@@ -4,6 +4,7 @@ slug: enable-two-factor-authentication-via-sms
 excerpt: 'Find out how to secure your OVHcloud customer account by enabling two-factor authentication via SMS'
 section: Security
 hidden: true
+updated: 2020-04-15
 ---
 
 **Last updated 15th April 2020**
@@ -16,7 +17,7 @@ Two-factor authentication via SMS is one of the methods offered by OVHcloud to h
 
 ## Requirements
 
-- knowledge of the [two-factor authentication methods offered by OVHcloud](../secure-account-with-2FA/)
+- knowledge of the [two-factor authentication methods offered by OVHcloud](https://docs.ovh.com/ie/en/customer/secure-account-with-2FA/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - a mobile number for receiving SMS messages
 

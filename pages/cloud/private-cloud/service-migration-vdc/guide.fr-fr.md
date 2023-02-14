@@ -7,6 +7,7 @@ slug: vdc-migration
 section: Premiers pas
 order: 6
 hidden: true
+updated: 2022-11-18
 ---
 <style>
 .ovh-api-main { background:#fff;}

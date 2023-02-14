@@ -7,6 +7,7 @@ slug: vdc-migration
 section: Premiers pas
 order: 6
 hidden: true
+updated: 2020-12-16
 ---
 
 **Dernière mise à jour le 16 décembre 2020**

@@ -5,6 +5,7 @@ excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster-through-terraform/'
+updated: 2022-04-14
 ---
 
 **Last updated 14th April 2022**

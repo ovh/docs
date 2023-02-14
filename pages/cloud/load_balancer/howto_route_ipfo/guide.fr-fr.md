@@ -3,6 +3,7 @@ title: "Routage d'une Additional IP"
 slug: route-ipfo
 excerpt: 'Ce guide vous explique comment utiliser une Additional IP avec le service OVHcloud Load Balancer'
 section: Configuration
+updated: 2022-10-06
 ---
 
 **Dernière mise à jour le 06/10/2022**

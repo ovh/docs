@@ -5,6 +5,7 @@ excerpt: Paramétrez des politiques pour éviter l'usurpation d'IP
 legacy_guide_number: '4816988'
 section: NSX
 order: 10
+updated: 2021-02-12
 ---
 
 **Dernière mise à jour le 02/12/2021**

@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/cold-storage/'
 ---
 
-**Last updated 23rd July, 2020**
+**Last updated 16th January, 2023**
 
 ## Objective
 
@@ -187,7 +187,7 @@ The installation and configuration procedure is described on the related [github
 
 #### Content of the archive
 
-The data you retrieve in the archive is by default in [GELF format](http://docs.graylog.org/en/latest/pages/gelf.html){.external}. It is ordered by the field timestamp and retain all additional fields that you would have add (with your [Logstash collector](../logstash-input){.ref} for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
+The data you retrieve in the archive is by default in [GELF format](https://go2docs.graylog.org/4-x/getting_in_log_data/gelf.html?tocpath=Getting%20in%20Log%20Data%7CLog%20Sources%7CGELF%7C_____0#GELFPayloadSpecification){.external}. It is ordered by the field timestamp and retain all additional fields that you would have add (with your [Logstash collector](../logstash-input){.ref} for example). Since this format is fully compatible with JSON, you can use it right away in any other system.
 
 ```json
  {"_facility":"gelf-rb","_id":11,"_monitoring":"cb1068c485e738655cfe10df5df3a9a185aa8e301b5c8d0747b3502e8fdcc157","_type":"direct","full_message":"monitoring message (11) at 2017-05-17 09:58:08 +0000","host":"shinken","level":1,"short_message":"monitoring msg (11)","timestamp":1.4950150886486998E9}

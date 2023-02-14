@@ -4,6 +4,7 @@ slug: s3/getting-started-with-object-storage
 excerpt:
 section: General guides to start
 order: 020
+updated: 2022-09-27
 ---
 
 **Last updated September 27<sup>th</sup> 2022**
@@ -14,7 +15,7 @@ This guide is designed to familiarise you with the management of your containers
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://docs.ovh.com/us/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - An [S3 user](https://docs.ovh.com/us/en/storage/s3/identity-and-access-management/) already created
 

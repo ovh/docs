@@ -3,6 +3,7 @@ title: Network Bridge einrichten
 slug: network-bridging
 excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang Ihrer virtuellen Maschinen konfigurieren
 section: Netzwerk & IP
+updated: 2022-12-20
 ---
 
 > [!primary]

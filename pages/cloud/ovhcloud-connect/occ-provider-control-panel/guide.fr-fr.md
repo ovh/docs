@@ -4,6 +4,7 @@ excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Provi
 slug: occ-provider-manager-setup
 section: Premiers pas
 order: 3
+updated: 2020-09-28
 ---
 
 **Dernière mise à jour le 28/09/2020**

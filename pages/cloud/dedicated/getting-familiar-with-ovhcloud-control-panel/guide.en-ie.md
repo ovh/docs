@@ -4,6 +4,7 @@ excerpt: Find out how to navigate the OVHcloud Control Panel
 slug: get-familiar-with-ovhcloud-control-panel
 section: So You Start & Kimsufi customers
 order: 1
+updated: 2023-01-05
 ---
 
 **Last updated 5th January 2023**

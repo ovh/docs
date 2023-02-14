@@ -6,9 +6,10 @@ section: Grafana - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/capabilities/'
+updated: 2023-01-19
 ---
 
-**Last updated October 26, 2022**
+**Last updated January 19th, 2023**
 
 ## Objective
 
@@ -35,7 +36,7 @@ Grafana nodes have to be in the same region. Multi-AZ is currently not supported
 
 The Public Cloud Databases offer supports the following Grafana versions:
 
-- Grafana 8.3
+- Grafana 9.1
 
 You can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
 
@@ -49,11 +50,11 @@ The only plan available is *Essential*.
 
 Here is an overview of the *Essential* plan capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes | Network                |
-| ------------ | -------------------------- | ---------------- | ---------------------- |
-| *Essential*  | 1                          | No               | Public                 |
+| Plan         | Number of nodes by default | Additional nodes |
+| ------------ | -------------------------- | ---------------- |
+| *Essential*  | 1                          | No               |
 
-The *Essential* plan offers an automatic backup retention of 2 days and doesn't support private networks (vRack).
+The *Essential* plan offer an automatic backup retention of 2 days. It supports public or private networks (vRack).
 
 #### Nodes and replicas
 
@@ -76,19 +77,18 @@ Here are the node types you can choose from:
 | db1-7   | n/a       | 2     | 7           |
 
 ### Features
-
 #### Network
+Grafana clusters are reachable through a random port, attributed during cluster creation. Once your cluster is in **RUNNING** status, the Service URI will display the port to use.
 
-Grafana clusters are reachable through a random port, attributed during cluster creation.
-Once your cluster is in `RUNNING` status, the Service URI will display the port to use.
+Public as well as private networking (vRack) can be used for all the offers.
 
-Public networking can be used for all the offers.
+Ingress and Egress traffic are included in the service plans and unmetered.
 
-For both public and private networks, Ingress and Egress traffic are included in the service plans and unmetered.
+##### Private network considerations
+Here are some considerations to take into account when using private network:
 
-#### Advanced parameters
-
-We do not currently support Grafana advanced parameters.
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
 
 #### Backups
 

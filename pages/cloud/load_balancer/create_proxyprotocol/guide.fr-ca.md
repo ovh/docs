@@ -4,6 +4,7 @@ slug: proxyprotocol
 universe: cloud
 excerpt: Intégrez vos services TCP derriere un Load Balancer avec le proxyProtocol
 section: Configuration
+updated: 2018-10-12
 ---
 
 

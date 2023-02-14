@@ -1,12 +1,12 @@
 ---
 title: AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit
 slug: deploy/tuto-streamlit-speech-to-text-app
-excerpt: How to create and deploy a Streamlit Application for Speech To Text 
+excerpt: How to create and deploy a Streamlit Application for Speech To Text
 section: AI Deploy - Tutorials
 order: 09
 ---
 
-**Last updated 6th December, 2022.**
+**Last updated 9th February, 2023.**
 
 > [!primary]
 >
@@ -19,7 +19,7 @@ order: 09
 
 ## Objective
 
-The purpose of this documentation is to **Deploy the Speech to Text Application** we have realised in our [blog article](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) using [Streamlit](https://streamlit.io/) and pre-trained models. 
+The purpose of this documentation is to **Deploy the Speech to Text Application** we have realised in our [blog article](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) using [Streamlit](https://streamlit.io/) and pre-trained models.
 
 Deploying your app will allow you to benefit from **very powerful resources** which will make the speech to text application extremely fast. It can also be easily shared, unlike a local application.
 
@@ -38,6 +38,7 @@ To deploy your app, you need:
 - A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users/).
 - [The OVHcloud AI CLI](https://cli.bhs.training.ai.cloud.ovh.net/) **and** [Docker](https://www.docker.com/get-started) installed on your local computer, **or** only an access to a Debian Docker Instance on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 - To deploy your app, you must have the full code of the application, either by cloning the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), or by having followed our [blog article](https://blog.ovhcloud.com/how-to-build-a-speech-to-text-application-with-python-1-3/) that taught you how to build this app step by step.
+- If you want the diarization option (speakers differentiation), you will need an access token. This token will be requested at the launch of the application. To create your token, follow the steps indicated on the [model page](https://huggingface.co/pyannote/speaker-diarization). If the token is not specified, the application will be launched without this feature.
 
 ## Instructions
 
@@ -49,11 +50,11 @@ You are going to follow different steps to deploy your **Streamlit Speech to Tex
 - **(Optional) - Import the models and save them locally** in an *Object Storage (volume)* to speed up the initialization of the app.
 - **Deploy your app**.
 
-*If you have cloned the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), you will not need to rewrite the files (requirements.txt, packages.txt and Dockerfile) since you already have them. In this case, you can go directly to the "Build the Docker image" step, even if it is better to understand the global operation.*
+*If you have cloned the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/speech-to-text), you will not need to rewrite the files (requirements.txt and Dockerfile) since you already have them. In this case, you can go directly to the "Build the Docker image" step, even if it is better to understand the global operation.*
 
 ### Write the requirements.txt file for the application
 
-The `requirements.txt` file will allow us to write all the modules needed by our application. This file will be useful for the `Dockerfile`. 
+The `requirements.txt` file will allow us to write all the modules needed by our application. This file will be useful for the `Dockerfile`.
 Put this file (and the next ones) in the same directory as your python scripts.
 
 ```console
@@ -73,15 +74,6 @@ pyannote.core==4.4
 pydub==0.25.1
 ```
 
-### Write the packages.txt file
-
-Then, you need to write the `packages.txt` file, which contains general system packages:
-
-```console
-libsndfile1-dev
-ffmpeg
-```
-
 ### Write the Dockerfile for the application
 
 A `Dockerfile` is a text document that contains all the commands a user could call on the command line to build an image.
@@ -94,7 +86,7 @@ FROM python:3.8
 
 We recommend that you do not downgrade the version of python. Indeed, according to *pyannote.audio's* [documentation](https://github.com/pyannote/pyannote-audio), only python 3.8+ is officially supported for the moment.
 
-Then, define the home directory and add all your files (python scripts, requirements.txt, packages.txt, and the Dockerfile) to it thanks to the following commands:
+Then, define the home directory and add all your files (python scripts, requirements.txt and the Dockerfile) to it thanks to the following commands:
 
 ```console
 WORKDIR /workspace
@@ -106,8 +98,7 @@ With AI Deploy, `workspace` will be your home directory.
 We can now install our needed system packages. To do this, use `apt-get`, which is a command-line tool which helps in handling packages:
 
 ```console
-RUN apt-get update
-RUN xargs -a packages.txt apt-get install --yes
+RUN apt-get update && apt-get install -y ffmpeg libsndfile1-dev
 ```
 
 Use a `pip install ...` command to install our needed python modules that are in the `requirements.txt` file:
@@ -131,7 +122,7 @@ ENV HOME=/workspace
 
 ### Build the Docker image from the Dockerfile
 
-Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files). 
+Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files).
 
 Once you are in it, launch the following command to build your application image:
 
@@ -144,6 +135,13 @@ docker build . -t streamlit_app:latest
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example, we choose **streamlit_app:latest**.
+>
+
+> [!warning]
+>
+> Please make sure that the docker image you will push in order to run containers using AI products respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
+>
+> `docker buildx build --platform linux/amd64 ...`
 >
 
 ### Push the image into the shared registry
@@ -174,12 +172,12 @@ docker push <shared-registry-address>/streamlit_app:latest
 
 ### Import the models and save them locally (Optional)
 
-As we explained in the blog article, you will considerably reduce the initialization time of the app if you download the models and store them in a local folder. This will allow you not to have to download them again every time you relaunch the application. 
+As we explained in the blog article, you will considerably reduce the initialization time of the app if you download the models and store them in a local folder. This will allow you not to have to download them again every time you relaunch the application.
 
-To do this, we will use **AI Training**. This will allow us to launch a python script from *GitHub* that will **download the models and store them in an OVHcloud volume** named `speech_to_text_app_models`. 
+To do this, we will use **AI Training**. This will allow us to launch a python script from *GitHub* that will **download the models and store them in an OVHcloud volume** named `speech_to_text_app_models`.
 When the models will be downloaded and added to this volume, the status of the job will automatically switch from `Running` to `Done` and the **job will be immediately stopped**. This operation should be quite fast.
 
-*Unfortunately, the diarization model can't be saved anymore since pyannote.audio v2. Make sure you have replaced the `use_auth_token="ACCESS TOKEN GOES HERE"` code line in the app.py file by your own token so it can download the model. If the model fails to be downloaded during the initialization of the app, the diarization option will be disabled.*
+*Unfortunately, the diarization model can't be saved anymore since pyannote.audio v2. The application will load it in the classical way, by using your model access token, which will be requested by the application once launched.*
 
 To launch this **AI Training** job and download the models, use the following OVHcloud's CLI command:
 
@@ -195,14 +193,14 @@ ovhai job run <shared-registry-address>/streamlit_app:latest \
 > `streamlit_app:latest` corresponds to the name of your Docker image.
 >
 > `--volume` allows you to specify what volume you want to add to your job. As mentioned, we add the volume `speech_to_text_app_models` and we put it in `RW` (read and write) mode since we want to add our models to this volume. If you do not have this volume in your Object Storage list, do not worry, it will be created automatically. As you can see, the `--volume` parameter also allows you to get files from a GitHub repository, which in our case contains the script to download the models.
-> 
+>
 > `--bash` allows you to provide commands through which you install the librairies mentioned in your `requirements.txt` file, and run the python script.
 >
 
 When you run this command, an `Info url` will appear. Opening it will allow you to **track the status of the job**.
 Once the *GitHub* repository is recovered, the python script will be launched and the job status will switch to `Running`. Then, you just have to wait for the job to end.
 
-We advise you to **turn on the auto-refresh option** (`Running` status automatically disables it). This will allow you to see when the job will end (job status switches to `Done`). Otherwise, you can refresh the page manually. 
+We advise you to **turn on the auto-refresh option** (`Running` status automatically disables it). This will allow you to see when the job will end (job status switches to `Done`). Otherwise, you can refresh the page manually.
 
 Once the models have been uploaded and the status is `Done`, you can continue.
 

@@ -3,6 +3,7 @@ title: How to use the Bring Your Own Image feature
 excerpt: Find out how to easily deploy your own images on dedicated servers
 slug: bringyourownimage
 section: Advanced use
+updated: 2022-11-25
 ---
 
 **Last updated 25th November 2022**

@@ -4,6 +4,7 @@ slug: pcs/link-domain
 excerpt: Retrouvez ici comment lier un nom de domaine a un conteneur.
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 120
+updated: 2021-10-27
 ---
 
 **Dernière mise à jour le 27/10/2021**

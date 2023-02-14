@@ -6,6 +6,7 @@ routes:
 excerpt: Connect to vROPS and check the basics of your infrastructure
 section: vRops
 order: 01
+updated: 2022-02-23
 ---
 
 **Last updated 23rd February 2022**

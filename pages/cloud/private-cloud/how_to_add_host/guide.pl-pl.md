@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_do_you_add_a_host/'
 section: Pierwsze kroki
 legacy_guide_number: g605
+updated: 2022-02-01
 ---
 
 **Last updated 1st February 2022**

@@ -4,6 +4,7 @@ excerpt: "Scopri i concetti di approvvigionamento, monitoraggio e test delle per
 slug: netapp/performance
 sezione: Enterprise File Storage
 order: 011
+updated: 2022-11-30
 ---
 
 **Ultimo aggiornamento: 30/11/2022**

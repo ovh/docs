@@ -10,7 +10,7 @@ order: 06
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 09/12/2022**
+**Ultimo aggiornamento: 12/01/2023**
 
 ## Obiettivo
 
@@ -48,6 +48,22 @@ Inoltre, dovrai indicare il metodo di ripristino che intendi adottare:
 |---|---|
 |Ripristino dallo Spazio Cliente OVHcloud|Ripristina tutti i dati dello spazio di storage. L’intero contenuto corrente sarà sostituito con quello del backup selezionato.|
 |Ripristino da un software o un’interfaccia Web|Permette di accedere in sola lettura a un backup dello spazio di storage. Questo metodo, più tecnico, consente di recuperare uno o più file di una data anteriore senza sovrascrivere completamente il contenuto dello spazio di storage.|
+
+> [!warning]
+>
+> Per maggiori informazioni sul metodo di **ripristino dallo Spazio Cliente OVHcloud**, verifica che almeno **la metà dello spazio di storage FTP totale** incluso con la tua offerta di hosting sia ancora disponibile.
+> Ad esempio, se disponi di un'offerta di hosting **Performance**, 250 GB devono ancora essere disponibili sui 500 GB messi a disposizione.
+>
+> I nostri sistemi installano il backup sul tuo hosting prima di eliminare il contenuto FTP che verrà sostituito dal ripristino.
+>
+> Per verificare la quota utilizzata sull'hosting, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Accedi alla sezione `Web Cloud`{.action} e clicca su `Hosting`{.action}. Seleziona il nome dell'hosting interessato. 
+>
+> La quota utilizzata compare sulla pagina che appare:
+>
+>![ftp quota](images/check-ftp-quota.png){.thumbnail}
+>
+> Se lo spazio di storage FTP utilizzato è superiore alla metà dello spazio di storage FTP totale della tua offerta di hosting, recupera in locale alcuni elementi voluminosi del tuo sito Web (per farlo, puoi utilizzare [Filezilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)). Eliminali dallo spazio di storage FTP. Questa operazione diminuirà la dimensione dello spazio di storage FTP utilizzato e potrai avviare il ripristino dallo Spazio Cliente OVHcloud.
+>
 
 Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui nella lettura di questa guida nel paragrafo corrispondente:
 
@@ -171,4 +187,8 @@ A questo punto non ti resta che ripristinare i file: recuperali esplorando il co
 
 [Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

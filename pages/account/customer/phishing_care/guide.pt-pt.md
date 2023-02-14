@@ -3,6 +3,7 @@ title: 'Atenção às tentativas de fraude: como reconhecer os emails fraudulent
 slug: fraudes-online-phishing
 excerpt: 'Como reconhecer um e-mail de phishing e o que fazer depois de clicar numa ligação fraudulenta?'
 section: Segurança
+updated: 2020-10-12
 ---
 
 **Última atualização: 12/10/2020**

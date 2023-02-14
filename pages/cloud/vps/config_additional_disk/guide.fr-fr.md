@@ -4,6 +4,7 @@ excerpt: "Découvrez comment ajouter et configurer de l'espace de stockage suppl
 slug: configurer-disque-additionnel
 section: 'Sauvegarde'
 order: 3
+updated: 2021-02-24
 ---
 
 **Dernière mise à jour le 24 février 2021**

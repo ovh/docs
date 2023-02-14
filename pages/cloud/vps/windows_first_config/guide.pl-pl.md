@@ -3,6 +3,7 @@ title: Skonfiguruj nową instalację Windows Server
 slug: windows-first-config
 excerpt: Dowiedz się, jak włączyć Pulpit zdalny, ICMP i logi startowe
 section: Pierwsze kroki
+updated: 2022-05-06
 ---
 
 > [!primary]

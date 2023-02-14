@@ -4,6 +4,7 @@ slug: tanzu-tkgm-installation
 excerpt: Learn how to integrate Tanzu Kubernetes Grid into your Hosted Private Cloud powered by VMware infrastructure 
 section: Tanzu
 order: 03
+updated: 2022-11-10
 ---
 
 **Last updated 10th November 2022**

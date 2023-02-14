@@ -6,7 +6,7 @@ section: 'FTP and SSH'
 order: 06
 ---
 
-**Last updated 09th December 2022**
+**Last updated 12th January 2023**
 
 ## Objective
 
@@ -30,10 +30,10 @@ With an OVHcloud Web Hosting plan, you get a storage space to host your websites
 
 Before you begin, ensure that you can use the restore dates offered to restore your Web Hosting plan’s storage space back to your chosen date:
 
-- same day, at 00:01 (UTC+1)
-- one day ago, at 00:01 (UTC+1)
-- two days ago, at 00:01 (UTC+1)
-- Sunday, at 01:00 (UTC+1)
+- Same day, at 00:01 (UTC+1)
+- One day ago, at 00:01 (UTC+1)
+- Two days ago, at 00:01 (UTC+1)
+- Last Sunday, at 01:00 (UTC+1)
 - Sunday two weeks ago, at 01:00 (UTC+1)
 
 If you want to retrieve a backup from an earlier period, OVHcloud will not be able to provide you with this. We advise taking personal backups of your website in advance, and using those if you would like an earlier backup. 
@@ -44,6 +44,22 @@ You also need to decide which restore method you will use:
 |---|---|
 |Restoring via the OVHcloud Control Panel|Restores the entire content of your storage space. The current content will be fully replaced by the content of the backup you have selected.|
 |Restoring via software or an interface|Gives you read-only access to a backup of the storage space. Although this method is more technical, you can use it to recover one or more files from a previous date, without having to overwrite the entire contents of the storage space.|
+
+> [!warning]
+>
+> Regarding the **restore from OVHcloud Control Panel** method, check that at least **half of the total FTP storage space** included with your hosting plan is still available.
+> For example, if you have a **Performance** hosting plan, 250 GB must still be available out of the 500 GB provided.
+>
+> This is because our robots install the backup on your hosting before deleting the FTP content which will be replaced by the restoration.
+>
+> To check the quota used on your web hosting, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Go to the `Web Cloud`{.action} section and click on `Hosting plans`{.action}. Then choose the name of the hosting concerned. 
+>
+> The quota used appears on the page that appears:
+>
+> ![ftp quota](images/check-ftp-quota.png){.thumbnail}
+>
+> If the FTP storage space used is more than half of the total FTP storage space of your hosting package, retrieve locally some of the large items from your website (you can use [Filezilla](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/)). Then remove them from your FTP storage. This will reduce the size of the FTP storage space you are using and you will then be able to launch your restoration from the OVHcloud Control Panel.
+>
 
 Once you are ready to do so, carry on reading the section of this guide that is relevant to the restore method you have chosen.
 
@@ -63,7 +79,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > [!primary]
 > **Website in maintenance mode**
 > 
-> To determine whether your website has been placed in "maintenance" mode, please refer to our guide [What do I do if I have a 403 forbidden page?](https://docs.ovh.com/gb/en/hosting/diagnostic-403-forbidden/). 
+> To determine whether your website has been placed in "maintenance" mode, please refer to our guide [What do I do if I have a 403 forbidden page?](https://docs.ovh.com/ie/en/hosting/diagnostic-403-forbidden/). 
 > 
 > In this case:
 >
@@ -163,5 +179,9 @@ Once you have connected, you can now restore the files you want. To do this, exp
 [Using FileZilla software with your Web Hosting plan](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/)
 
 [Retrieving the backup of a Web Hosting plan’s database](https://docs.ovh.com/ie/en/hosting/web_hosting_database_export_guide/)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

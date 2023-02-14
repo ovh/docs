@@ -4,6 +4,7 @@ slug: nas/cifs
 excerpt: Decouvrez comment monter un NAS-HA sur Windows Server via CIFS
 section: NAS-HA
 order: 04
+updated: 2021-11-22
 ---
 
 **Dernière mise à jour le 22/11/2021**

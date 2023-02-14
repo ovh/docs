@@ -5,6 +5,7 @@ excerpt: 'Find out what the OVHcloud API provides in order to customize the part
 section: 'RAID e discos'
 routes:
     canonical: 'https://docs.ovh.com/gb/en/dedicated/api-partitioning/'
+updated: 2022-11-29
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->

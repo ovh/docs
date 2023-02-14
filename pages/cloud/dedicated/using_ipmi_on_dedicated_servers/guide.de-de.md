@@ -4,6 +4,7 @@ slug: verwendung-ipmi-dedicated-server
 excerpt: Mit IPMI können Sie sich mit Ihrem Server verbinden, ohne auf externe Software zurückgreifen zu müssen
 section: Erste Schritte
 order: 4
+updated: 2022-11-16
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: interfaccia-sicura
 excerpt: 'Come confermare le operazioni sensibili tramite l’interfaccia sicura su infrastrutture HDS e PCI-DSS'
 section: 'Servizi e opzioni OVHcloud'
 order: 4
+updated: 2022-10-12
 ---
 
 **Ultimo aggiornamento: 12/10/2022**

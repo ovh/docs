@@ -4,6 +4,7 @@ excerpt: Cómo mover una Additional IP desde el área de cliente o a través de 
 slug: ip-fo-move
 section: Red e IP
 order: 7
+updated: 2022-12-20
 ---
 
 > [!primary]

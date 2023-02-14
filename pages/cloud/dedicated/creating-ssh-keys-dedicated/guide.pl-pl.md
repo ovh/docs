@@ -4,6 +4,7 @@ slug: tworzenie-klucze-ssh-dedykowane
 excerpt: 'Dowiedz się, jak utworzyć klucze SSH w celu bezpiecznego łączenia się z serwerem dedykowanym'
 section: 'Pierwsze kroki'
 order: 3
+updated: 2022-03-31
 ---
 
 **Ostatnia aktualizacja: 01-04-2022**
@@ -173,7 +174,7 @@ Jeśli zostały skopiowane całe dane wyjściowe, identyfikator powinien już zn
 > Kluczy zapisanych w sekcji “Dedykowane” można używać również do usług prywatnego serwera wirtualnego (VPS). Informacje o kluczach SSH na potrzeby usług Public Cloud zawiera [ten przewodnik](../../public-cloud/public-cloud-pierwsze-kroki).
 >
 
-### Ustaw domyślny klucz SSH (tylko dla sekcji "Dedykowane")
+### Ustaw domyślny klucz SSH (tylko dla sekcji "Dedykowane") <a name="cpsshkey"></a>
 
 Jeśli dodałeś kilka kluczy SSH do Panelu klienta, można zdefiniować klucz, którego będziesz używał jako klucza domyślnego na koncie.
 

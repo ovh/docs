@@ -3,6 +3,7 @@ title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
 section: Services et options OVHcloud
+updated: 2022-02-11
 ---
 
 **Dernière mise à jour le 11/02/2022**
@@ -161,7 +162,7 @@ L'étape suivante consiste à sélectionner les VM qui vont faire partie du VPG.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_04.png){.thumbnail}
 
-* Cliquez sur la flèche pointant vers la droite pour passer celle si dans le VPG
+* Cliquez sur la flèche pointant vers la droite pour passer celle-ci dans le VPG
 
 Poursuivez en cliquant sur `NEXT`{.action}
 

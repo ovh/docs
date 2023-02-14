@@ -4,6 +4,7 @@ slug: vmware-ha-high-availability
 excerpt: Neustarteinstellungen mit der HA-Funktion verwalten
 section: VMware vSphere Funktionen
 order: 02
+updated: 2020-04-30
 ---
 
 **Stand 31.07.2020**

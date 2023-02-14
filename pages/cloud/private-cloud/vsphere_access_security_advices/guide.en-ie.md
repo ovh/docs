@@ -3,6 +3,7 @@ title: Keeping your vSphere web client secure
 slug: securing-access-vsphere-web
 excerpt: Find out how to optimise security for your vSphere web client
 section: Getting started
+updated: 2020-06-30
 ---
 
 **Last updated 30th June 2020**
