@@ -495,15 +495,15 @@ Finalement, redémarrez votre serveur pour appliquer les modifications.
 
 ### cPanel (sur CentOS 7)
 
-#### Étape 1 : accéder à la section Gestion de WHM IP
+#### Étape 1 : accéder à la section Gestion IP de WHM
 
-Dans l'espace client WHM, cliquez sur "Fonctions IP" et sélectionnez "Ajouter une nouvelle adresse IP"{.action} dans le menu de gauche.
+Dans l'espace client WHM, cliquez sur `IP funtions` et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
 
 ![Ajouter une nouvelle adresse IP](images/Cpanel-1.png){.thumbnail}
 
 #### Étape 2 : Ajouter les informations IP additionnelles
 
-Renseignez votre IP additionnelle sous la forme "xxx.xxx.xxx.xxx" dans le champ "Nouvelle IP ou plage d'IP à ajouter".
+Renseignez votre IP additionnelle sous la forme « xxx.xxx.xxx.xxx » dans le champ « New IP or IP range to add ».
 
 Sélectionnez `255.255.255.255` comme masque de sous-réseau, puis cliquez sur `Envoyer`{.action}.
 
@@ -516,7 +516,7 @@ Sélectionnez `255.255.255.255` comme masque de sous-réseau, puis cliquez sur `
 
 #### Étape 3 : Vérifier la configuration IP actuelle
 
-De retour dans la section "Fonctions IP", cliquez sur "Afficher ou supprimer les adresses IP actuelles"{.actions} pour vérifier que l'adresse IP supplémentaire a été correctement ajoutée.
+De retour dans la section `IP functions`, cliquez sur `Show or Delete Current IP Addresses`{.actions} pour vérifier que l'adresse IP supplémentaire a été correctement ajoutée.
 
 ![check configured IP](images/Cpanel-3.png){.thumbnail}
 
