@@ -516,7 +516,7 @@ Sélectionnez `255.255.255.255` comme masque de sous-réseau, puis cliquez sur `
 
 #### Étape 3 : Vérifier la configuration IP actuelle
 
-De retour dans la section `IP functions`, cliquez sur `Show or Delete Current IP Addresses`{.actions} pour vérifier que l'adresse IP supplémentaire a été correctement ajoutée.
+De retour dans la section `IP functions`, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse IP supplémentaire a été correctement ajoutée.
 
 ![check configured IP](images/Cpanel-3.png){.thumbnail}
 
