@@ -75,7 +75,7 @@ Pour que les deux services puissent communiquer entre eux, ils doivent être « 
 
 #### Utilisation du VLAN ID par défaut
 
-Sur les serveurs dédiés, par défaut, vous êtes sur le VLAN **0**. Si vous souhaitez utiliser cet ID, il sera nécessaire de « tagguer » le réseau privé lié à votre instance avec le VLAN **0**. Pour cela, vous devez passer par [l’API OVHcloud](https://docs.ovh.com/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1).
+Sur les serveurs dédiés, par défaut, vous êtes sur le VLAN **0**. Si vous souhaitez utiliser cet ID, il sera nécessaire de « tagguer » le réseau privé lié à votre instance avec le VLAN **0**. Pour cela, vous devez passer par [l’API OVHcloud](https://docs.ovh.com/ca/fr/publiccloud/network-services/public-cloud-vrack-apiv6/#etape-3-creer-un-vlan-dans-le-vrack_1).
 
 > [!primary]
 > Sur le Public Cloud, vous définissez un VLAN ID unique par réseau privé.
@@ -102,7 +102,7 @@ Par exemple : si vous avez défini le réseau privé lié à votre instance avec
 
 ### Configurer vos interfaces réseau
 
-Configurez ensuite les interfaces réseau sur votre nouvelle instance Public Cloud et votre serveur dédié à l'aide de ce guide : [Configurer plusieurs serveurs dédiés dans le vRack](../configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external}.
+Configurez ensuite les interfaces réseau sur votre nouvelle instance Public Cloud et votre serveur dédié à l'aide de ce guide : [Configurer plusieurs serveurs dédiés dans le vRack](https://docs.ovh.com/ca/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/).
 
 ## Aller plus loin
 
