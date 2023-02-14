@@ -30,13 +30,11 @@ order: 02
 
 ## Présentation
 
-Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
+Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel, il peut être de deux types :
 
 * **VLAN-backed segments** : La communication entre les hôtes et les machines virtuelles se fait au travers de VLANs et d'un switch de couche 2 du modèle OSI. Pour que ces segments puissent communiquer avec les éléments de NSX-T (Internet et les autres segments) il faut rajouter une interface sur les passerelles **Tier-1 Gateways** ou **Tier-0 Gateways**.
 
 * **Overlay-backed segments** : La connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes. Il est obligatoire de rajouter une adresse dans un sous-réseau qui servira pour le routage en dehors de ce segment. Ils doivent être connectés à une passerelle de type **Tier-1 Gateways** comme **ovh-T1-gw**.
-
-
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 

@@ -30,7 +30,7 @@ order: 02
 
 ## Overview
 
-In an NSX-T solution a segment is a virtual level 2 domain (previously named logical switch) it can be of two types :
+In an NSX-T solution a segment is a virtual level 2 domain, it can be of two types :
 
 * **VLAN-backed segments** : Communication between hosts and virtual machines is done through VLANs and a Layer 2 switch of the OSI model. In order for these segments to communicate with the elements of NSX-T (Internet and other segments), an interface must be added to the **Tier-1 Gateways** or **Tier-0 Gateways** gateways.
 
