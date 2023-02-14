@@ -13,16 +13,7 @@ et fonctions sécurité propres à celui-ci.
 Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
 ## 1. Certifications :
--ISO/IEC 27001
--ISO/IEC 27701
--ISO/IEC 27017
--ISO/IEC 27018
--HDS
--SOC 1 type 1
--SOC 2 type 1
--CSA type 1
--C5 type 1
--CISPE
+*ISO/IEC 27001 *ISO/IEC 27701 *ISO/IEC 27017 *ISO/IEC 27018 *HDS *SOC 1 type 1 *SOC 2 type 1 *CSA type 1 *C5 type 1 *CISPE
 
 ## 2. Bonnes pratiques à déployer sur le service
 ### a. Recommandations à la prise en main du service
@@ -41,8 +32,7 @@ Le client n'est pas autorisé à utiliser son service pour scanner d'autres infr
 ## 3. Garanties de service
 ### a. SLA
 Reprise des SLA des conditions particulières par composante du service.
-|**Composant**|**SLA**|**Méthode de calcul**|**Dédommagement**||----------|:-------------:|------:||Serveur Dédié|99,9% minimum (dépends de la gamme)|Nombre total 
-de minutes du mois considéré déduction faite du nombre de minutes d’Indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré.
+|**Composant**|**SLA**|**Méthode de calcul**|**Dédommagement**||----------|:-------------:|------:||------:||Serveur Dédié|99,9% minimum (dépends de la gamme)|Nombre total  de minutes du mois considéré déduction faite du nombre de minutes d’Indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré.
 Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement.|Crédit
 de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranche de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel.|
 
