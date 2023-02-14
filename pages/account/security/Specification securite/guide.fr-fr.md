@@ -33,7 +33,6 @@ Le client n'est pas autorisé à utiliser son service pour scanner d'autres infr
 ### a. SLA
 Reprise des SLA des conditions particulières par composante du service.
 |**Composant**||**SLA**||**Méthode de calcul**||**Dédommagement**|
-|:----------||:-------------:||------:||------:|
 |Serveur Dédié|
 |99,9% minimum (dépends de la gamme)|
 |Nombre total  de minutes du mois considéré déduction faite du nombre de minutes d’Indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré.
