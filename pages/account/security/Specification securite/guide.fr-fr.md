@@ -32,9 +32,13 @@ Le client n'est pas autorisé à utiliser son service pour scanner d'autres infr
 ## 3. Garanties de service
 ### a. SLA
 Reprise des SLA des conditions particulières par composante du service.
-|**Composant**|**SLA**|**Méthode de calcul**|**Dédommagement**||----------|:-------------:|------:||------:||Serveur Dédié|99,9% minimum (dépends de la gamme)|Nombre total  de minutes du mois considéré déduction faite du nombre de minutes d’Indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré.
-Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement.|Crédit
-de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranche de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel.|
+|**Composant**||**SLA**||**Méthode de calcul**||**Dédommagement**|
+|:----------||:-------------:||------:||------:|
+|Serveur Dédié|
+|99,9% minimum (dépends de la gamme)|
+|Nombre total  de minutes du mois considéré déduction faite du nombre de minutes d’Indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré.
+Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement.|
+|Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranche de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel.|
 
 ### b. GTI
 
