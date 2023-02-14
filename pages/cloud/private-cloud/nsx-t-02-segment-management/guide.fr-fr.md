@@ -6,7 +6,7 @@ section: NSX-T
 order: 02
 ---
 
-**Dernière mise à jour le 10/02/2023**
+**Dernière mise à jour le 14/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -32,9 +32,11 @@ order: 02
 
 Dans une solution NSX-T un segment est un domaine de niveau 2 virtuel (nommé précédemment logical switch) il peut être de deux types :
 
-* **VLAN-backed segments** : La communication entre les hôtes et les machines virtuelles se fait au travers de VLANs et d'un switch de niveau 2. Pour que ces segments puissent communiquer avec les éléments de NSX-T (Internet et les autres segments) il faut rajouter une interface sur les passerelles de type **Tier-1 Gateways** comme **ovh-T1-gw**.
+* **VLAN-backed segments** : La communication entre les hôtes et les machines virtuelles se fait au travers de VLANs et d'un switch de couche 2 du modèle OSI. Pour que ces segments puissent communiquer avec les éléments de NSX-T (Internet et les autres segments) il faut rajouter une interface sur les passerelles **Tier-1 Gateways** ou **Tier-0 Gateways**.
 
-* **Overlay-backed segments** : La connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes et les machines virtuelles. Lors de la configuration d'un segment de ce type il est obligatoire de rajouter une adresse dans un sous-réseau pour permettre la communication en dehors de ce segment. Ils doivent être connectés aux passerelles de type **Tier-1 Gateways** comme **ovh-T1-gw**.
+* **Overlay-backed segments** : La connexion se fait à l'aide d'une surcouche logicielle qui établit des tunnels entre les hôtes. Il est obligatoire de rajouter une adresse dans un sous-réseau qui servira pour le routage en dehors de ce segment. Ils doivent être connectés à une passerelle de type **Tier-1 Gateways** comme **ovh-T1-gw**.
+
+
 
 Les segments sont liés à des zones de transports qui sont prédéfinies par OVHcloud. 
 
