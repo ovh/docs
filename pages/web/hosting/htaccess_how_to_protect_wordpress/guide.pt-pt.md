@@ -64,7 +64,7 @@ Da mesma forma, se não estiver habituado a manipular este tipo de ficheiro, fa�
 
 ### Onde estão os ficheiros.htaccess no WordPress?
 
-Tal como indicado na introdução, é possível ter vários ficheiros **.htaccess**no mesmo alojamento web. Cada um destes ficheiros define as regras para o diretório onde se situa, bem como os sub-diretórios que contém.
+Tal como indicado na introdução, é possível ter vários ficheiros **.htaccess** no mesmo alojamento web. Cada um destes ficheiros define as regras para o diretório onde se situa, bem como os sub-diretórios que contém.
 
 A maioria das alterações será efetuada ao nível da **raiz do website**. Instalado por predefinição, o ficheiro **.htaccess** colocado na raiz do site contém as seguintes linhas:
 
@@ -95,7 +95,7 @@ RewriteRule . /index.php [L]
 - **RewriteBase**: indica que a raiz do website é `/`.
 - **RewriteCond**: trata-se de pré-condições para a regra que se segue diretamente. No nosso caso, a primeira condição exclui os URLs que contêm um caminho para um ficheiro real, enquanto a segunda exclui, ela, os sub-diretórios.
 
-### Que posso adicionar num ficheiro **.htaccess**com WordPress?
+### Que posso adicionar num ficheiro **.htaccess** com WordPress?
 
 Existem várias formas de definir e modificar os parâmetros que irão modificar o comportamento do servidor (existem, no entanto, algumas limitações em função do alojamento):
 

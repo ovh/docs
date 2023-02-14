@@ -95,7 +95,7 @@ RewriteRule . /index.php [L]
 - **RewriteBase**: indica che la radice del sito è `/`.
 - **RewriteCond**: si tratta di condizioni preliminari per la regola che segue direttamente. Nel nostro caso, la prima condizione esclude gli URL che contengono un percorso verso un file reale, mentre la seconda esclude, invece, le sottodirectory.
 
-### Cosa posso aggiungere in un file **.htaccess**con WordPress?
+### Cosa posso aggiungere in un file **.htaccess** con WordPress?
 
 Esistono diversi modi per definire e modificare i parametri che cambieranno il comportamento del server (alcune limitazioni esistono tuttavia in funzione dell'hosting):
 
