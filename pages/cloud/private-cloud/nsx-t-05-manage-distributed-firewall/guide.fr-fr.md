@@ -6,7 +6,7 @@ section: NSX-T
 order: 05
 ---
 
-**Dernière mise à jour le 13/02/2023**
+**Dernière mise à jour le 14/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
