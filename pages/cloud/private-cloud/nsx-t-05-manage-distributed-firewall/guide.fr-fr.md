@@ -14,7 +14,7 @@ order: 05
 
 ## Objectif
 
-**Comment administrer le pare-feu distribué**
+**Découvrez la gestion du pare-feu distribué au travers de la création d'une règle qui bloque le trafic entre une machine virtuelle et l'ensemble des machines virtuelles d'un autre segment**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -31,17 +31,19 @@ order: 05
 
 ## Présentation
 
-La fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. Il doit être utilisé normalement sur les connexions est-ouest (ovh-T1-gw)  mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-T0-gw). Le type de filtrage est disponible entre :
-
-- Tous les membres d'un segment et tous les autres membres d'un autre segment.
-- Certaines machines virtuelles d'un segment et d'autres machines virtuelles du même segment ou d'un autre segment.
-- Certains segments vers des machines virtuelles et vice-versa.
+La fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. Il doit être utilisé normalement sur les connexions est-ouest (ovh-T1-gw)  mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-T0-gw). Le filtrage s'applique à partir de la source (vm, segment, réseau, etc...).
 
 Pour simplifier l'administration de NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc..) et de créer des groupes qui contiennent les objets associés aux balises ou des plages d'adresses IP (Cette solution n'est pas à privilégier).
 
 ## En pratique
 
-Nous allons créer et des balises à l'intérieur d'une machine virtuelle et d'un segment, ajouter des groupes qui contiendront ces balises et mettre en place une stratégie de blocage entre deux groupes au travers du pare-feu distribué.
+Nous allons isoler les communication entre une machine virtuelle et l'ensemble des machines virtuelles d'un segment de manière bi-directionnelle en effectuant ces opérations : 
+
+* Création de deux balises, une sur une machine virtuelle et l'autre sur un segment.
+* Création de deux groupes associés l'un contenant la première balise et l'autre la seconde.
+* Création d'une stratégie dans le pare-feu distribué qui contiendra deux règles :
+    * Une règle qui interdira le trafic venant du premier groupe vers le second.
+    * Une autre règle qui interdira le trafic venant du second groupe vers le premier.
 
 ### Création des balises
 
@@ -176,7 +178,7 @@ Cliquez sur `CLOSE`{.action} pour fermer cette fenêtre.
 
 ### Mise en place d'une règle de pare-feu distribué
 
-Nous allons maintenant créer une règle sur le pare-feu distribué de blocage entre les deux groupes créés.
+Nous allons maintenant créer une règle sur le pare-feu distribué de blocage bidirectionnel entre les deux groupes créés.
 
 Allez sur l'onglet `Security`{.action}, Sélectionnez `Distributed Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}.
 
@@ -234,7 +236,7 @@ Choisissez `Drop`{.action} pour supprimer les paquets sur cette règle et clique
 
 ![06 Create distributed firewall rules 14](images/06-create-distributed-firewall-rules14.png){.thumbnail}
 
-Votre règle est active, le trafic entre la machine virtuelle membre du groupe g-vm et le segment membre du group g-segment n'est plus possible.
+Votre règle est active, le trafic entre la machine virtuelle membre du groupe g-vm et le segment membre du group g-segment n'est plus possible dans les deux sens.
 
 ![06 Create distributed firewall rules 14](images/06-create-distributed-firewall-rules14.png){.thumbnail}
 

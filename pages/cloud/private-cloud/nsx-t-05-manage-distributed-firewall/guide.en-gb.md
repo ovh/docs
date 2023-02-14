@@ -15,7 +15,7 @@ order: 05
 
 ## Objectif
 
-**How to administer distributed firewall**
+**Learn how to manage distributed firewall by creating a rule that blocks traffic between a virtual machine and all virtual machines in another segment****
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -31,17 +31,19 @@ order: 05
 
 ## Overview
 
-The distributed firewall feature in NSX-T allows filtering with all elements in your VMware cluster that are on Overlay or VLAN segments. It should be used normally on east-west (ovh-T0-gw) connections, but it also works with elements of the VMware cluster that are connected on the north-south gateway (ovh-T1-gw). The filter type is available between :
-
-- All members in one segment and all other members in another segment.
-- Some VMs in a segment and other VMs in the same or another segment.
-- Some segments to virtual machines and vice versa.
+The distributed firewall feature in NSX-T allows filtering with all elements in your VMware cluster that are on Overlay or VLAN segments. It should be used normally on east-west connections (ovh-T1-gw), but it also works with elements of the VMware cluster that are connected on the north-south gateway (ovh-T0-gw). Filtering applies from the source (vm, segment, network, etc.).
 
 To simplify the administration of NSX-T, it is possible to place tags on your elements (segments, virtual machines, roles, etc..) and create groups that contain the objects associated with the tags or IP address ranges (this solution should not be preferred).
 
 ## Instructions
 
-We will create and tag within a virtual machine and segment, add groups that will contain these tags, and set up a blocking policy between two groups through distributed firewall.
+Nous allons isoler les communication entre une machine virtuelle et l'ensemble des machines virtuelles d'un segment de manière bi-directionnelle en effectuant ces opérations :
+
+* Create two tags, one on a virtual machine and one on a segment.
+* Create two associated groups, one containing the first tag and the other the second.
+* Create a policy in the distributed firewall that will contain two rules:
+    * A rule that will forbid traffic from the first group to the second.
+    * Another rule that will forbid traffic from the second group to the first.
 
 ### Creating tags
 
@@ -175,7 +177,7 @@ Click `CLOSE`{.action} to close this window.
 
 ### Setting up a distributed firewall rule
 
-We will now create a blocking distributed firewall rule between the two groups created.
+We will now create a rule on the two-way blocking distributed firewall between the two groups created.
 
 Go to the `Security`{.action} tab, select `Distributed Firewall`{.action} and click `+ ADD POLICY`{.action}.
 
