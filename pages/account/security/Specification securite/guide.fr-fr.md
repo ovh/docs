@@ -13,7 +13,15 @@ et fonctions sécurité propres à celui-ci.
 Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
 ## 1. Certifications :
-*ISO/IEC 27001 *ISO/IEC 27701 *ISO/IEC 27017 *ISO/IEC 27018 *HDS *SOC 1 type 1 *SOC 2 type 1 *CSA type 1 *C5 type 1 *CISPE
+* ISO/IEC 27001 
+* ISO/IEC 27701 
+* ISO/IEC 27017 
+* ISO/IEC 27018 
+* HDS 
+* SOC 1 type 1 
+* SOC 2 type 1 
+* CSA type 1 
+* C5 type 1 *CISPE
 
 ## 2. Bonnes pratiques à déployer sur le service
 ### a. Recommandations à la prise en main du service
