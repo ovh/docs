@@ -3,10 +3,10 @@ title: 'Configuring the vRack between the Public Cloud and a Dedicated Server'
 slug: vrack-pci-ds
 excerpt: 'This guide will show you how to configure private networking between a Public Cloud instance and a Dedicated Server.'
 section: 'Network Management'
-updated: 2021-10-15
+updated: 2023-02-14
 ---
 
-**Last updated 15th October 2021**
+**Last updated 14th February 2023**
 
 ## Objective
 
@@ -77,9 +77,8 @@ For both services to communicate with each other, they have to be tagged with th
 
 #### Using the default VLAN ID
 
-By default, the VLAN ID for dedicated servers is **0**. To use this VLAN ID, it will be necessary to tag the private network linked to your instance with VLAN **0**. To do this, do not check the `Set VLAN` box when adding a private network to your instance.
+By default, the VLAN ID for dedicated servers is **0**. To use this VLAN ID, it will be necessary to tag the private network linked to your instance with VLAN **0**. To do this, you will need to go through the [OVHcloud APIv6](https://docs.ovh.com/us/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
 
-For more information, consult [this section](https://docs.ovh.com/us/en/public-cloud/public-cloud-vrack/#step-2-create-a-vlan-in-the-vrack_1) of the corresponding guide. 
 
 > [!primary]
 > For Public Cloud, you set a unique VLAN ID per private network.
@@ -93,10 +92,13 @@ To use a different VLAN ID:
 - The private network linked to the Public Cloud instance must be tagged with this VLAN ID.
 - In the network configuration file on the dedicated server, the private network interface should be tagged with this VLAN ID.
 
+In this case, if you tick the `Set a VLAN ID` box, you will need to choose a VLAN ID number between 2 and 4,000.
+
+If you do not tick the box, the system will assign a random VLAN ID number to your private network.
 
 > [!primary]
 > 
-> Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
+> Unlike dedicated servers, there is no need to tag a VLAN directly in the network configuration file of the Public Cloud instance, once the VLAN ID is set in the OVHcloud control panel.
 >
 
 An example: If your instance private network is tagged with VLAN 2, the private network interface on your dedicated server should be tagged with VLAN 2. For more information consult the following guide: [Create multiple VLANs in the vRack](https://docs.ovh.com/us/en/dedicated/multiple-vlans/).
