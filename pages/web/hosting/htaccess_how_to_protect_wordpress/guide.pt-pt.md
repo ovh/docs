@@ -28,7 +28,7 @@ Este tutorial explica-lhe como configurar certas funcionalidades do seu alojamen
 ## Requisitos
 
 - Ter um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) e ter instalado o WordPress.
-- Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla para recuperar e registar os seus dados](https://docs.ovh.com/pt/dedicated/carregar-e-descarregar-dados-atrav%C3%A9s-de-sftp/#utilizar-o-filezilla-para-recuperar-e-registar-os-seus-dados)".
+- Ter capacidade para utilizar um cliente FTP como [FileZilla](https://filezilla-project.org/). Pode consultar o nosso guia "[Utilizar o FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/)".
 
 Os ficheiros **.htaccess** podem ser criados e modificados com editores de texto como:
 
@@ -64,7 +64,7 @@ Da mesma forma, se não estiver habituado a manipular este tipo de ficheiro, fa�
 
 ### Onde estão os ficheiros.htaccess no WordPress?
 
-Tal como indicado na introdução, é possível ter vários ficheiros **.htaccess* no mesmo alojamento web. Cada um destes ficheiros define as regras para o diretório onde se situa, bem como os sub-diretórios que contém.
+Tal como indicado na introdução, é possível ter vários ficheiros **.htaccess**no mesmo alojamento web. Cada um destes ficheiros define as regras para o diretório onde se situa, bem como os sub-diretórios que contém.
 
 A maioria das alterações será efetuada ao nível da **raiz do website**. Instalado por predefinição, o ficheiro **.htaccess** colocado na raiz do site contém as seguintes linhas:
 
@@ -95,7 +95,7 @@ RewriteRule . /index.php [L]
 - **RewriteBase**: indica que a raiz do website é `/`.
 - **RewriteCond**: trata-se de pré-condições para a regra que se segue diretamente. No nosso caso, a primeira condição exclui os URLs que contêm um caminho para um ficheiro real, enquanto a segunda exclui, ela, os sub-diretórios.
 
-### Que posso adicionar num ficheiro **.htaccess* com WordPress?
+### Que posso adicionar num ficheiro **.htaccess**com WordPress?
 
 Existem várias formas de definir e modificar os parâmetros que irão modificar o comportamento do servidor (existem, no entanto, algumas limitações em função do alojamento):
 
@@ -128,8 +128,6 @@ O seu ficheiro **wp-config.php**, presente na raiz do seu website, contém infor
     satisfy all
 </Files>
 ```
-
-Para mais informações, consulte o nosso guia sobre a [restrição do acesso por IP através do ficheiro .htaccess](https://docs.ovh.com/pt/hosting/partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website/).
 
 ### Bloquear um endereço IP
 

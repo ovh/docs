@@ -28,7 +28,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) y haber instalado WordPress.
-- Estar en condiciones de utilizar un cliente FTP como [FileZilla](https://filezilla-project.org/). Puede consultar nuestra guía "[Utilizar FileZilla para recuperar y subir los datos](https://docs.ovh.com/es/dedicated/subir-y-descargar-datos-por-sftp/#utilizar-filezilla-para-recuperar-y-subir-los-datos)".
+- Estar en condiciones de utilizar un cliente FTP como [FileZilla](https://filezilla-project.org/). Puede consultar nuestra guía "[Utilizar FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)".
 
 Los archivos **.htaccess** se pueden crear y modificar con editores de texto como:
 
@@ -128,8 +128,6 @@ El archivo **wp-config.php**, situado en la raíz del sitio web, contiene inform
     satisfy all
 </Files>
 ```
-
-Para más información, consulte nuestra guía sobre la [restricción de acceso por IP a través del archivo .htaccess](https://docs.ovh.com/es/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 ### Bloquear una dirección IP
 

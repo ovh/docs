@@ -128,8 +128,6 @@ Ihre Datei **wp-config.php**, die sich im Wurzelverzeichnis Ihrer Website befind
 </Files>
 ```
 
-Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung "["Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/)".
-
 ### Eine IP-Adresse blockieren
 
 Wenn Sie eine zu sperrende IP-Adresse identifiziert haben, geben Sie diese Zeilen in Ihre **.htaccess**-Datei ein:

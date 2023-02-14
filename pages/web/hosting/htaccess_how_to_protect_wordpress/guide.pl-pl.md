@@ -28,7 +28,7 @@ Tutorial wyjaśnia, jak skonfigurować niektóre funkcjonalności hostingu za po
 ## Wymagania początkowe
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) i zainstalowanie modułu WordPress
-- Możliwość korzystania z klienta FTP takiego jak [FileZilla](https://filezilla-project.org/). Zapoznaj się z naszym przewodnikiem "[Użyj FileZilla do pobierania i upuszczania danych](https://docs.ovh.com/pl/dedicated/przesylanie-i-pobieranie-danych-sftp/#uzyj-programu-filezilla-do-pobierania-i-upuszczania-danych)".
+- Możliwość korzystania z klienta FTP takiego jak [FileZilla](https://filezilla-project.org/). Zapoznaj się z naszym przewodnikiem "[Użyj FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/)".
 
 Pliki **.htaccess** mogą być tworzone i modyfikowane przy pomocy edytorów tekstu, takich jak:
 
@@ -129,11 +129,9 @@ Twój plik **wp-config.php**, obecny na Twojej stronie WWW, zawiera wrażliwe in
 </Files>
 ```
 
-Aby uzyskać więcej informacji na ten temat, zapoznaj się z naszym przewodnikiem dotyczącym ["ograniczenia dostępu przez IP poprzez plik .htaccess"](https://docs.ovh.com/pl/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
-
 ### Zablokuj adres IP
 
-Jeśli zidentyfikowałeś złośliwy adres IP, w pliku **.htaccess* wpisz poniższy wiersz:
+Jeśli zidentyfikowałeś złośliwy adres IP, w pliku **.htaccess**wpisz poniższy wiersz:
 
 ```bash
 <Limit GET POST>

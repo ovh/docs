@@ -116,7 +116,7 @@ Options All -Indexes
 
 ### Protect your configuration file
 
-Your **wp-config.php** file, located at the root of your website, contains sensitive configuration information. Block access to this file by adding the following lines to your **.htaccess* file:
+Your **wp-config.php** file, located at the root of your website, contains sensitive configuration information. Block access to this file by adding the following lines to your **.htaccess** file:
 
 ```bash
 <Files ~ "^.*\.([Hh][Tt][AaPp])">
@@ -126,11 +126,9 @@ Your **wp-config.php** file, located at the root of your website, contains sensi
 </Files>
 ```
 
-For more information on this subject, please refer to our guide "[Protecting your website’s administration interface with a .htaccess file](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)".
-
 ### Block an IP address
 
-If you have identified a malicious IP address, enter the following line in your **.htaccess* file:
+If you have identified a malicious IP address, enter the following line in your **.htaccess** file:
 
 ```bash
 <Limit GET POST>

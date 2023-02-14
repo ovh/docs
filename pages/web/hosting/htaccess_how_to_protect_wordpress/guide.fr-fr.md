@@ -24,7 +24,7 @@ Ce tutoriel vous explique comment configurer certaines fonctionnalités de votre
 ## Prérequis
 
 - Disposer d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/) et avoir installé WordPress.
-- Être en capacité d'utiliser un client FTP tel que [FileZilla](https://filezilla-project.org/). Vous pouvez consulter notre guide « [Utiliser FileZilla pour récupérer et déposer vos données](https://docs.ovh.com/fr/dedicated/deposer-et-recuperer-donnees-via-sftp/#utiliser-filezilla-pour-recuperer-et-deposer-vos-donnees) ».
+- Être en capacité d'utiliser un client FTP tel que [FileZilla](https://filezilla-project.org/). Vous pouvez consulter notre tutoriel « [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) ».
 
 Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs de texte comme :
 
@@ -124,8 +124,6 @@ Votre fichier **wp-config.php**, présent à la racine de votre site web, contie
     satisfy all
 </Files>
 ```
-
-Pour plus de détails sur ce sujet, consultez notre guide sur la [« restriction d'accès par IP via le fichier .htaccess »](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
 
 ### Bloquer une adresse IP
 

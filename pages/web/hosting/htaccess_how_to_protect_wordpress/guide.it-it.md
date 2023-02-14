@@ -28,7 +28,7 @@ Questa guida ti mostra come configurare alcune funzionalità del tuo hosting Web
 ## Prerequisiti
 
 - Disporre di un [hosting Web](https://www.ovhcloud.com/it/web-hosting/) e aver installato WordPress
-- Essere in grado di utilizzare un client FTP come [FileZilla](https://filezilla-project.org/) Consulta la guida [Utilizzare FileZilla per recuperare e salvare i tuoi dati](https://docs.ovh.com/it/dedicated/caricare-e-recuperare-dati-via-sftp/#utilizza-filezilla-per-recuperare-e-salvare-i-tuoi-dati).
+- Essere in grado di utilizzare un client FTP come [FileZilla](https://filezilla-project.org/) Consulta la guida "[Utilizzare FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)".
 
 I file **.htaccess** possono essere creati e modificati con editor di testo come:
 
@@ -95,7 +95,7 @@ RewriteRule . /index.php [L]
 - **RewriteBase**: indica che la radice del sito è `/`.
 - **RewriteCond**: si tratta di condizioni preliminari per la regola che segue direttamente. Nel nostro caso, la prima condizione esclude gli URL che contengono un percorso verso un file reale, mentre la seconda esclude, invece, le sottodirectory.
 
-### Cosa posso aggiungere in un file **.htaccess* con WordPress?
+### Cosa posso aggiungere in un file **.htaccess**con WordPress?
 
 Esistono diversi modi per definire e modificare i parametri che cambieranno il comportamento del server (alcune limitazioni esistono tuttavia in funzione dell'hosting):
 
@@ -128,8 +128,6 @@ Il tuo file **wp-config.php**, presente alla radice del tuo sito Web, contiene i
     satisfy all
 </Files>
 ```
-
-Per maggiori informazioni su questo argomento, consulta la nostra guida sulla ["restrizione di accesso via IP tramite il file.htaccess"](https://docs.ovh.com/it/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
 
 ### Blocca un indirizzo IP
 
