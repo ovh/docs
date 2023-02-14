@@ -6,26 +6,26 @@ section: "Tutoriels"
 order: 
 ---
 
-**Dernière mise à jour le 12/01/2023**
+**Dernière mise à jour le 14/02/2023**
 
 ## Objectif
 
-Découvrez dans ce tutoriel comment créer une boutique en ligne avec l'extension open source **WooCommerce** avec le Customer Managment System (CMS) **WordPress**. 
+Découvrez comment créer une boutique en ligne avec l'extension open source **WooCommerce** avec le Content Management System (CMS) **WordPress**. 
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} ou à [l'éditeur de WooCommerce](https://woocommerce.com/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} ou à [l'éditeur de WooCommerce](https://woocommerce.com/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
-- Avoir préalablement [installé Wordpress](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) sur votre hébergement web
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
+- Avoir préalablement [installé WordPress](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) sur votre hébergement web.
 
-Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HTTPS avant de poursuivre ce tutoriel à l'aide du guide [« Passer son site internet en HTTPS grâce au SSL »](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/).
+Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HTTPS avant de poursuivre ce tutoriel à l'aide du guide « [Passer son site internet en HTTPS grâce au SSL »](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/) ».
 
 ## En pratique
 
@@ -33,57 +33,57 @@ Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HT
 
 ### Installation
 
-Connectez-vous sur votre interface d'administration en tapant `/wp-admin` ou `/wp-login` dans votre barre de recherche après l'URL de votre nom de domaine (la redirection se fait automatiquement)&nbsp;:
+Connectez-vous sur votre interface d'administration en tapant `/wp-admin` ou `/wp-login` dans votre barre de recherche après l'URL de votre nom de domaine (la redirection se fait automatiquement) :
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps%5B1%5D.png){.thumbnail}
 
-Sur le menu de gauche, rendez-vous dans `Extensions`{.action} puis cliquez sur `Ajouter`{.action} :
+Dans le menu de gauche, rendez-vous dans `Extensions`{.action} puis cliquez sur `Ajouter`{.action} :
 
 ![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps%5B2%5D.png){.thumbnail}
 
-Sur la nouvelle page `Ajouter des extensions`{.action}, saisissez «&nbsp;woocommerce&nbsp;» dans la barre de recherche en haut à droite puis cliquez sur `Installer maintenant`{.action} dans l'encadré lié à l'extension **WooCommerce**&nbsp;:
+Sur la nouvelle page `Ajouter des extensions`{.action}, saisissez « woocommerce » dans la barre de recherche en haut à droite puis cliquez sur `Installer maintenant`{.action} dans l'encadré lié à l'extension **WooCommerce** :
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps%5B3%5D.png){.thumbnail}
 
-Cliquez maintenant sur `Activer`{.action}:
+Cliquez maintenant sur `Activer`{.action} :
 
 ![Activate WooCommerce](images/wordpress-woocommerce-first-steps%5B4%5D.png){.thumbnail}
 
 ### Configuration 
 
-#### Méthode 1 (utilisation de l'assistant de configuration)
+#### Méthode n°1 - utilisation de l'assistant de configuration
 
 Si vous n'avez pas encore paramétré votre extension **WooCommerce**, un assistant de configuration vous aide à renseigner les informations relatives à votre site de vente en ligne. Renseignez le formulaire puis cliquez sur `Continuer`{.action} :
 
 ![Setup Wizard - Store Details](images/wordpress-woocommerce-first-steps%5B5%5D.png){.thumbnail}
 
-Sélectionnez ensuite votre (ou vos) domaine(s) d'activité&nbsp;:
+Sélectionnez ensuite votre (ou vos) domaine(s) d'activité :
 
 ![Setup Wizard - Industry](images/wordpress-woocommerce-first-steps%5B6%5D.png){.thumbnail}
 
-Choisissez le type de produits que vous souhaitez vendre sur votre site web (certaines options sont payantes)&nbsp;:
+Choisissez le type de produits que vous souhaitez vendre sur votre site web (certaines options sont payantes) :
 
 ![Setup Wizard - Product Types](images/wordpress-woocommerce-first-steps%5B7%5D.png){.thumbnail}
 
-Puis précisez la nature de votre activité&nbsp;:
+Précisez ensuite la nature de votre activité :
 
 ![Setup Wizard - Business Details](images/wordpress-woocommerce-first-steps%5B8%5D.png){.thumbnail}
 
-Ajoutez des fonctionnalités optionnelles (et gratuites) si vous le souhaitez&nbsp;:
+Ajoutez des fonctionnalités optionnelles (et gratuites) si vous le souhaitez :
 
 ![Setup Wizard - Business Details, free features](images/wordpress-woocommerce-first-steps%5B9%5D.png){.thumbnail}
 
-Enfin, choisissez un thème parmi ceux proposés&nbsp;:
+Enfin, choisissez un thème parmi ceux proposés :
 
 ![Setup Wizard - Choose a theme](images/wordpress-woocommerce-first-steps%5B10%5D.png){.thumbnail}
 
-**WooCommerce** vous sollicite pour créer un compte pour utiliser l'extension **Jetpack**. C'est une extension installée automatiquement en plus de l'extension **WooCommerce**. Cette création est facultative, vous aurez accès aux fonctions limitées de **Jetpack** sans avoir à vous authentifier.
+**WooCommerce** vous sollicite alors pour créer un compte afin d'utiliser l'extension **Jetpack**, extension installée automatiquement en plus de l'extension **WooCommerce**. Cette création de compte est facultative, vous aurez accès aux fonctions limitées de **Jetpack** sans avoir à vous authentifier.
 
 Votre boutique en ligne est désormais configurée avec les paramètres généraux.
 
-#### Méthode 2 (configuration manuelle)
+#### Méthode n°2 - configuration manuelle
 
-Cliquez sur `Extensions`{.action} pour lister les extensions installées puis sur `Extensions installées`. La liste de vos extensions s'affiche. Cliquez sur `Réglages`{.action} dans le module **WooCommerce**&nbsp;:
+Cliquez sur `Extensions`{.action} pour lister les extensions installées puis sur `Extensions installées`. La liste de vos extensions s'affiche. Cliquez sur `Réglages`{.action} dans le module **WooCommerce** :
 
 ![Setup Wizard - Extension, WooCommerce, Settings](images/wordpress-woocommerce-first-steps%5B11%5D.png){.thumbnail}
 
@@ -91,15 +91,15 @@ Vous avez également accès à ces réglages en cliquant directement sur `WooCom
 
 ![Setup Wizard - WooCommerce, Settings](images/wordpress-woocommerce-first-steps%5B12%5D.png){.thumbnail}
 
-La page de réglages comprend plusieurs onglets&nbsp;:
+### Réglages
+
+La page de réglages comprend plusieurs onglets :
 
 ![Setup Wizard - WooCommerce, Settings, Tabs](images/wordpress-woocommerce-first-steps%5B13%5D.png){.thumbnail}
 
-### Réglages
-
 #### Général
 
-Cet onglet vous permet de définir les éléments suivants&nbsp;:
+Cet onglet vous permet de définir les éléments suivants :
 
 - adresse de l'entreprise
 - zones de vente et de livraison
@@ -112,25 +112,25 @@ Cet onglet vous permet de définir les éléments suivants&nbsp;:
 
 #### Produits
 
-La gestion de produits se fait via un ensemble de sous-rubriques&nbsp;:
+La gestion de produits se fait via un ensemble de sous-rubriques :
 
-- **Général** : sers à définir des éléments tels que la page d'accueil qui sera affichée par défaut (boutique, mentions légales, panier, etc.), les unités de mesure, la possibilité ou non de mettre des commentaires à propos des produits ou des notes&nbsp;;
-- **Inventaire** : sers à paramétrer ou non la gestion de votre stock et à configurer le comportement du site web (stock décrémenté lorsqu'un objet est dans le panier, seuils d'alerte, possibilité de masquer les produits qui ne sont plus en stock)&nbsp;;
-- **Produits téléchargeables** : concerne les cas de mise à disposition de documents à télécharger par les utilisateurs&nbsp;:
-- **Répertoires de téléchargement approuvés** : précise le ou les répertoires sur le serveur où les fichiers seront téléversés&nbsp;:
-- **Avancé&nbsp** : sers à paramétrer plus finement les attributs des produits.
+- **Général** : sert à définir des éléments tels que la page d'accueil qui sera affichée par défaut (boutique, mentions légales, panier, etc.), les unités de mesure, la possibilité ou non de mettre des commentaires à propos des produits ou des notes.
+- **Inventaire** : sert à paramétrer ou non la gestion de votre stock et à configurer le comportement du site web (stock décrémenté lorsqu'un objet est dans le panier, seuils d'alerte, possibilité de masquer les produits qui ne sont plus en stock).
+- **Produits téléchargeables** : concerne les cas de mise à disposition de documents à télécharger par les utilisateurs.
+- **Répertoires de téléchargement approuvés** : précise le ou les répertoires sur le serveur où les fichiers seront téléversés.
+- **Avancé** : sert à paramétrer plus finement les attributs des produits.
 
 #### Expédition
 
-Si vous avez activé les extensions par défaut proposées gratuitement lors de l'installation, vous disposez de l'extension [WooCommerce Shipping](https://woocommerce.com/fr-fr/woocommerce-shipping/){.external}. Dans le cas contraire, vous pouvez procéder à son installation en vous rendant dans le menu `Extensions`{.action}
+Si vous avez activé les extensions par défaut proposées gratuitement lors de l'installation, vous disposez de l'extension [WooCommerce Shipping](https://woocommerce.com/fr-fr/woocommerce-shipping/){.external}. Dans le cas contraire, vous pouvez procéder à son installation en vous rendant dans le menu `Extensions`{.action}.
 
-- **Zones d'expédition** : permets de définir et configurer des zones d'expédition
-- **Options de livraison** : sers à paramétrer l'application pour tout ce qui est relatif aux frais d'expédition
+- **Zones d'expédition** : permet de définir et configurer des zones d'expédition.
+- **Options de livraison** : sert à paramétrer l'application pour tout ce qui est relatif aux frais d'expédition.
 - **Classes d'expédition** : peuvent être utilisées pour grouper des produits similaires par type d'envoi.
 
 #### Paiements
 
-Cet onglet sert à activer/désactiver les moyens de paiement que proposés sur votre site web. Reportez-vous à la [documentation officielle](https://woocommerce.com/document/payments/) pour configurer votre ou (vos) moyen(s) de paiement.
+Cet onglet sert à activer/désactiver les moyens de paiement proposés sur votre site web. Reportez-vous à la [documentation officielle](https://woocommerce.com/document/payments/) pour configurer votre ou (vos) moyen(s) de paiement.
 
 #### Comptes et confidentialité
 
@@ -138,7 +138,7 @@ Cette rubrique regroupe toutes les fonctionnalités relatives à la gestion des 
 
 #### E-mails
 
-Permets de configurer les *e-mails types* envoyés par l'application (inscription, commandes, annulations de commande, etc.).
+Permet de configurer les *e-mails types* envoyés par l'application (inscription, commandes, annulations de commande, etc.).
 
 #### Intégration
 
@@ -146,16 +146,25 @@ Pour géolocaliser vos clients en fonction de leur adresse IP, vous pouvez, dans
 
 #### Avancé
 
-- **Installation des pages** : utile pour modifier les pages vers lesquelles seront redirigés les utilisateurs lors du processus de commande&nbsp;;
-- **API REST** : Rubrique permettant de configurer et paramétrer les accès à WooCommerce via son API REST&nbsp;;
-- **Webhook** : gérer vos fonctions de rappel HTTP&nbsp;;
-- **Ancienne API** : réactiver l'ancienne API de WooCommerce (désactivée par défaut)&nbsp;;
-- **WooCommerce.com** : activer ou désactiver le tracking de l'activité de votre site de vente en ligne par WebCommerce, et d'avoir des suggestions pour des extensions dédiées (la majorité sont payantes)&nbsp;;
+- **Installation des pages** : utile pour modifier les pages vers lesquelles seront redirigés les utilisateurs lors du processus de commande.
+- **API REST** : rubrique permettant de configurer et paramétrer les accès à WooCommerce via son API REST.
+- **Webhook** : gérer vos fonctions de rappel HTTP.
+- **Ancienne API** : réactiver l'ancienne API de WooCommerce (désactivée par défaut).
+- **WooCommerce.com** : activer ou désactiver le tracking de l'activité de votre site de vente en ligne par WooCommerce, avoir des suggestions pour des extensions dédiées (la majorité sont payantes).
 - **Fonctionnalités** : page regroupant les fonctionnalités en test sur WooCommerce ou récemment ajoutées.
 
 ## Aller plus loin <a name="go-further"></a>
 
-- le [site officiel WordPress](https://wordpress.org){.external}
-- l'extension [Jetpack](https://jetpack.com/){.external}
-- le site de [WooCommerce](https://woocommerce.com/){.external}
-- le magasin d'[extensions WooCommerce](https://woocommerce.com/products/){.external}
+Quelques liens utiles :
+
+- Le [site officiel WordPress](https://wordpress.org){.external}.
+- L'extension [Jetpack](https://jetpack.com/){.external}
+- Le site de [WooCommerce](https://woocommerce.com/){.external}
+- Le magasin d'[extensions WooCommerce](https://woocommerce.com/products/){.external}
+
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
