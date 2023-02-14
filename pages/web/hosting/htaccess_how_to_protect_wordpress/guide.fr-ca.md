@@ -24,7 +24,7 @@ Ce tutoriel vous explique comment configurer certaines fonctionnalités de votre
 ## Prérequis
 
 - Disposer d'un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) et avoir installé WordPress.
-- Être en capacité d'utiliser un client FTP tel que [FileZilla](https://filezilla-project.org/). Vous pouvez consulter notre tutoriel « [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) ».
+- Être en capacité d'utiliser un client FTP tel que [FileZilla](https://filezilla-project.org/). Vous pouvez consulter notre [tutoriel sur l'utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
 
 Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs de texte comme :
 
