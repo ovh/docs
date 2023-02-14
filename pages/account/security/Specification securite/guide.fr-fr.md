@@ -21,7 +21,8 @@ Elle met aussi en avant des bonnes pratiques qui permettront au client de l'expl
 * SOC 1 type 1 
 * SOC 2 type 1 
 * CSA type 1 
-* C5 type 1 *CISPE
+* C5 type 1 
+* CISPE
 
 ## 2. Bonnes pratiques à déployer sur le service
 ### a. Recommandations à la prise en main du service
@@ -45,6 +46,18 @@ Reprise des SLA des conditions particulières par composante du service.
 | Serveur Dédié | 99,9% minimum (dépends de la gamme) | Nombre total  de minutes du mois considéré déduction faite du nombre de minutes d’Indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranche de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel. |
 
 ### b. GTI
+| **Typologie d'incident** | **temps d'intervention** | **Temps de rétablissement** | **Dédommagement** |
+| --- | --- | --- | --- |
+| Incident niveau 1 : indisponibilité totale du service **détecté par OVHcloud** | 1h | 1h à compter du début de l'intervention | Détection de l'incident par OVHcloud |  Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranche de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel. |
+| Incident niveau 1 : indisponibilité totale du service **signalé par le client** | 1h | 1h à compter du début de l'intervention | Création du ticket par le client | Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranche de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel. |
+| Incident niveau 2 : dégradation substantielle des performances des Serveurs Dédiés | 1h | ∅ | Création du ticket par le client | Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranche de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel. |
+
+## 4. Backups
+### a. technisues
+
+
+### b. Métier
+
 
 
 
