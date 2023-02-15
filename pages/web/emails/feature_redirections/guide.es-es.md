@@ -70,7 +70,7 @@ Para estas dos excepciones, consulte directamente el capítulo "[Crear una redir
 > |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 > |---|---|
 > |![email](images/mxplan-starter-legacy.png){.thumbnail}<br> Encontrar la oferta en el recuadro "Suscripción"|![email](images/mxplan-starter-new.png){.thumbnail}<br>Consulte la `referencia del servidor` en el recuadro "Resumen"|
-> |Continúe leyendo esta guía en el apartado « [Versión histórica de la solución MX Plan](#mxplanlegacy) ».|Continúe leyendo esta guía en el apartado [Crear una redirección](#redirect) o [Crear un alias.](#alias)|
+> |Continúe leyendo esta guía en el apartado "[Versión histórica de la solución MX Plan](#mxplanlegacy)".|Continúe leyendo esta guía en el apartado [Crear una redirección](#redirect) o [Crear un alias.](#alias)|
 
 ### Crear una redirección <a name="redirect"></a>
 
