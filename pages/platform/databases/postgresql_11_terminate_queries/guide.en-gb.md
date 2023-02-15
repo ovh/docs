@@ -13,7 +13,7 @@ updated: 2023-02-15
 
 Queries on a PostgreSQL instance can run indefinitely, and OVHcloud will not stop them automatically. Such queries can lock resources inapropriatly and cause wrong behaviors in your system.
 
-This guide explains how to detect and terminate specific sessions via OVHcloud control panel and Command Line Interface (CLI).
+**This guide explains how to detect and terminate specific sessions via OVHcloud control panel and Command Line Interface (CLI).**
 
 ## Requirements
 
@@ -64,12 +64,12 @@ It will return the list of databases and access privileges. As a example:
            |          |          |             |             | bastien
 ```
 
-If you don't see your user, you will have to grant him on the appropriate database.
+If you don't see your user, you will have to grant him with required access privileges on the appropriate database.
 Otherwise, instructions below will return an error. 
 
-### find long-running queries
+### Find long-running queries
 
-Once your are connected to your database, type for example: 
+Once you are connected to your database, type for example: 
 
 ````
 SELECT * FROM pg_stat_activity WHERE state <> 'idle';
@@ -81,7 +81,7 @@ For more information about statistics, please follow official documentation at <
 
 ### Terminate a specific query
 
-Now that you get the PID, you can terminate a specific query withh the following code:
+Now that you get the PID, you can terminate a specific query with the following code:
 
 ````
 SELECT pg_terminate_backend(pid);
