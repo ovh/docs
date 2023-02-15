@@ -144,8 +144,8 @@ Suite au décommissionnent du service par le client, OVHcloud procède à la lib
 
 
 ## 11. Représentation normalisée HDS
-**Administrateur de la sécurité** : OVHcloud
-**Acteur de service**
+*** Administrateur de la sécurité** : OVHcloud
+*** Acteur de service**
 | **Code** | **Identité** | **Rôle** |
 | --- | --- | --- |
 | OVHcloud | OVHcloud | Opérateur de l'offre certifié HDS |
