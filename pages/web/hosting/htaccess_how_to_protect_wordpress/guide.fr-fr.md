@@ -3,7 +3,7 @@ title: 'Tutoriel - Utiliser le fichier htaccess avec WordPress'
 slug: use-htaccess-with-wordpress
 excerpt: 'Découvrez comment sécuriser votre blog WordPress avec un ou plusieurs fichiers htaccess'
 section: 'Tutoriels'
-order: 
+order: 07
 ---
 
 **Dernière mise à jour le 06/02/2023**
@@ -24,7 +24,7 @@ Ce tutoriel vous explique comment configurer certaines fonctionnalités de votre
 ## Prérequis
 
 - Disposer d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/) et avoir installé WordPress.
-- Être en capacité d'utiliser un client FTP tel que [FileZilla](https://filezilla-project.org/). Vous pouvez consulter notre guide « [Utiliser FileZilla pour récupérer et déposer vos données](https://docs.ovh.com/fr/dedicated/deposer-et-recuperer-donnees-via-sftp/#utiliser-filezilla-pour-recuperer-et-deposer-vos-donnees) ».
+- Être en capacité d'utiliser un client FTP tel que [FileZilla](https://filezilla-project.org/). Vous pouvez consulter notre [tutoriel sur l'utilisation de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/).
 
 Les fichiers **.htaccess** peuvent être créés et modifiés avec des éditeurs de texte comme :
 
@@ -125,8 +125,6 @@ Votre fichier **wp-config.php**, présent à la racine de votre site web, contie
 </Files>
 ```
 
-Pour plus de détails sur ce sujet, consultez notre guide sur la [« restriction d'accès par IP via le fichier .htaccess »](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/).
-
 ### Bloquer une adresse IP
 
 Si vous avez identifié une adresse IP malveillante, voici la ligne à renseigner dans votre fichier **.htaccess** :
@@ -161,6 +159,12 @@ Le répertoire **wp-admin** permet de vous connecter à votre interface d'admini
 - Vous pouvez gérer certains paramètres dans votre fichier **wp-config.php**.
 - Les fichiers **.htaccess** sont particulièrement efficaces pour la gestion des URLs, les redirections et la sécurité de votre site web.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Consultez le [tutoriel disponible sur le site de la Fondation Apache](https://httpd.apache.org/docs/2.4/fr/howto/htaccess.html).
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
