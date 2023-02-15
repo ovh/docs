@@ -8,7 +8,7 @@ updated: 2023-02-14
 **Dernière mise à jour le 14/02/2023**
 
 ## Objectifs
-En complément > [au modèle de responsabilité entre OVHcloud et le client sur le service Serveurs Dédiés] (https://docs.ovh.com/fr/partage-responsabilite/raci-serveurs-dedies/), cette fiche a pour objectif de présenter les particularités 
+En complément [au modèle de responsabilité entre OVHcloud et le client sur le service Serveurs Dédiés](https://docs.ovh.com/fr/partage-responsabilite/raci-serveurs-dedies/), cette fiche a pour objectif de présenter les particularités 
 et fonctions sécurité propres à celui-ci.
 Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
@@ -29,7 +29,7 @@ Elle met aussi en avant des bonnes pratiques qui permettront au client de l'expl
 Une fois le service délivrée et après réception de ses identifiants de connexion à son Serveur Dédié, OVHcloud recommande au client de changer ses identifiants 
 et de procéder au durcissement de son Système d'Exploitation. Des références et guides de durcissement sont présentés dans la section 8.a Fourniture d'image OS 
 et durcissement.
-D'autres guides sont disponibles dans [le corpus documentaire sur les Serveurs Dédiés] (https://docs.ovh.com/fr/dedicated/) pour assister le client à la prise 
+D'autres guides sont disponibles dans [le corpus documentaire sur les Serveurs Dédiés](https://docs.ovh.com/fr/dedicated/) pour assister le client à la prise 
 en main et l'exploitation du service.
 
 ### b. Scan de vulnérabilités
