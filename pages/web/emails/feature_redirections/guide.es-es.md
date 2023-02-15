@@ -58,7 +58,7 @@ Por ejemplo, su dirección de correo electrónico es **john.smith@mydomain.ovh**
 Los capítulos "[crear una redirección](#redirect)" y "[crear un alias](#alias)" se refieren al conjunto de nuestros productos de correo de OVHcloud, **excepto si**:
 
 - Si tiene la versión histórica de la solución MXplan, puede comprobarla en el siguiente cuadro.
-- si tiene un dominio registrado con OVHcloud y no tiene ningún servicio de correo asociado,
+- Si tiene un dominio registrado con OVHcloud y no tiene ningún servicio de correo asociado.
 
 Para estas dos excepciones, consulte directamente el capítulo "[Crear una redirección o un alias en un MX Plan histórico o un dominio sin servicio de correo](#mxplanlegacy)".
 
