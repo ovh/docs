@@ -85,33 +85,33 @@ En nuestro ejemplo, se muestra una **redirección con copia local** (véase el [
 Siga los pasos que se describen haciendo clic en cada pestaña:
 
 > [!tabs]
-> **Etape 1**
+> **Etapa 1**
 >>
 >> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](https://www.ovhcloud.com/es-es/mail/), haga clic en la rueda dentada en la parte superior derecha y, seguidamente, en el menú `Opciones`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
-> **Etape 2**
+> **Etapa 2**
 >> Desde la ventana **Opciones**, en la columna de la izquierda, diríjase a la categoría de **Tratamiento automático** en la sección de **Correo** y haga clic en `Reglas de bandeja de entrada y de almacenamiento`{.action}. <br><br>
 >> ![correo electrónico](images/emails-all-02.png){.thumbnail}<br><br>
 >> Esta ventana permite gestionar las redirecciones y aplicar filtros a todos los mensajes de correo entrante.<br>
 >>
-> **Etape 3**
+> **Etapa 3**
 >>
 >> Una vez en la ventana de gestión de las **Reglas de bandeja de entrada**, haga clic sobre el icono `+`{.action} en la parte superior izquierda.<br><br>
 >> ![correo electrónico](images/emails-all-03.png){.thumbnail}<br><br>
 >>
-> **Etape 4**
+> **Etapa 4**
 >>
 >> **Nombre**: indique el nombre de la redirección. <br>
 >> **Cuando llega el mensaje, cumple todas estas condiciones**: si su redirección se aplica a todos los mensajes, seleccione `[Aplicar a todos los mensajes]`{.action}.<br><br>
 >>![correo electrónico](images/emails-all-04.png){.thumbnail .w-640}<br><br>
 >>
-> **Etape 5**
+> **Etapa 5**
 >>
 >> **Realizar todas las siguientes** operaciones: aquí es donde realiza la redirección, seleccione `Transferir, redirigir o enviar`{.action} y `Redirigir el mensaje a...`{.action}.<br><br>
 >>![correo electrónico](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
-> **Etape 6**
+> **Etapa 6**
 >>
 >> Introduzca a continuación la dirección hacia la que quiere redirigir el correo delante de "**Redirigir el mensaje a...**" y haga clic en `Guardar`{.action}. A continuación, haga clic en `OK`{.action} (en el icono del disquete) para finalizar la redirección.<br><br>
 >>![correo electrónico](images/emails-all-06.png){.thumbnail .w-640}<br><br>
@@ -135,17 +135,17 @@ Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?ac
 Para añadir un alias a su cuenta de correo, siga los pasos descritos haciendo clic en cada pestaña:
 
 > [!tabs]
-> **Etape 1**
+> **Etapa 1**
 >>
 >> Se abrirá una columna llamada `Alias`.<br><br>
 >> ![correo electrónico](images/email-alias012.png){.thumbnail}<br>
 >>
-> **Etape 2**
+> **Etapa 2**
 >>
 >> Haga clic en el botón `...`{.action} y, a continuación, en `Configurar alias`{.action} (o `Gestionar alias`{.action}).<br><br>
 >> ![correo electrónico](images/email-alias02.png){.thumbnail}<br>
 >>
-> **Etape 3**
+> **Etapa 3**
 >>
 >> Haga clic en `Añadir un alias`{.action} e introduzca la dirección que ha elegido para el alias y acepte su elección.<br><br>
 >> ![correo electrónico](images/email-alias03.png){.thumbnail}<br>
@@ -165,16 +165,16 @@ Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?ac
 El método para crear un alias o una redirección es estrictamente el mismo. Siga los pasos que se describen haciendo clic en cada pestaña:
 
 > [!tabs]
-> **Etape 1**
+> **Etapa 1**
 >> Por defecto, estará en la pestaña de `Información general`{.action} de su MX Plan. Haga clic sobre la pestaña `Correo electrónico`{.action} y a continuación en el botón de la derecha `Gestión de las redirecciones`{.action}.<br><br>
 >> ![correo electrónico](images/mxplan-legacy-1.png){.thumbnail}<br>
 >>
-> **Etape 2**
+> **Etapa 2**
 >>
 >> Se mostrará una tabla con las redirecciones activas. Haga clic a la derecha, sobre el botón `Añadir una redirección`{.action}.<br><br>
 >> ![correo electrónico](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
-> **Etape 3**
+> **Etapa 3**
 >>
 >> **De la dirección**: introduzca la dirección de correo electrónico que quiera redirigir.<br><br>
 >> **A la dirección**: introduzca la dirección de destino de la redirección. Puede utilizar una de sus direcciones de correo de OVHcloud o una dirección de correo externo.<br><br>
@@ -190,4 +190,4 @@ El método para crear un alias o una redirección es estrictamente el mismo. Sig
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

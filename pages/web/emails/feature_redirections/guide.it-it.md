@@ -89,33 +89,33 @@ Nel nostro esempio, si tratta di un **reindirizzamento con copia in locale** (ve
 Per seguire gli step descritti, clicca su ciascuna scheda qui sotto:
 
 > [!tabs]
-> **Etape 1**
+> **Passo 1**
 >>
 >> Una volta connesso al tuo indirizzo email tramite la [webmail](https://www.ovhcloud.com/it/mail/), clicca sull'icona a forma di ingranaggio in alto a destra e poi su `Opzioni`{.action}.<br><br>
 >> ![email](images/emails-all-01.png){.thumbnail}<br>
 >>
-> **Etape 2**
+> **Passo 2**
 >> Dalla finestra **Opzioni**, nella colonna di sinistra, vai alla categoria **Elaborazione automatica** della sezione **Posta** e poi clicca su `Regole Posta in arrivo e posta`{.action}. <br><br>
 >> ![email](images/emails-all-02.png){.thumbnail}<br><br>
 >> Questa finestra permette di gestire i reindirizzamenti e applicare filtri su tutte le email in entrata.<br>
 >>
-> **Etape 3**
+> **Passo 3**
 >>
 >> Dalla pagina di gestione **Regole di Posta in arrivo**, clicca sul simbolo`+`{.action} in alto a sinistra.<br><br>
 >> ![email](images/emails-all-03.png){.thumbnail}<br><br>
 >>
-> **Etape 4**
+> **Passo 4**
 >>
 >> **Nome**: definisci il nome del tuo reindirizzamento. <br>
 >> **Quando il messaggio arriva e soddisfa tutte queste condizioni** : se il tuo reindirizzamento si applica a tutti i messaggi, seleziona `[Applica a tutti i messaggi]`{.action}.<br><br>
 >>![email](images/emails-all-04.png){.thumbnail .w-640}<br><br>
 >>
-> **Etape 5**
+> **Passo 5**
 >>
 >> **Esegui tutte le operazioni seguenti**: applica il reindirizzamento, seleziona `Trasferisci, reindirizza o invia`{.action}, quindi `Reindirizza il messaggio verso...`{.action}.<br><br>
 >>![email](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
-> **Etape 6**
+> **Passo 6**
 >>
 >> Dopodiché inserisci l'indirizzo verso cui vuoi reindirizzare l'email davanti a **Reindirizzare il messaggio verso...**. e poi clicca su `Salva`{.action}. Infine clicca su `OK`{.action} (icona del floppy disk) per completare il reindirizzamento.<br><br>
 >>![email](images/emails-all-06.png){.thumbnail .w-640}<br><br>
@@ -138,17 +138,17 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 Per aggiungere un alias al tuo account email, segui gli step descritti cliccando poi su ogni scheda qui sotto:
 
 > [!tabs]
-> **Etape 1**
+> **Passo 1**
 >>
 >> Visualizzi una tabella con la colonna `Alias`.<br><br>
 >> ![email](images/email-alias012.png){.thumbnail}<br>
 >>
-> **Etape 2**
+> **Passo 2**
 >>
 >> Clicca sui tre puntini `...`{.action} e poi su `Configura gli alias`{.action} (o `Gestisci gli alias`{.action}).<br><br>
 >> ![email](images/email-alias02.png){.thumbnail}<br>
 >>
-> **Etape 3**
+> **Passo 3**
 >>
 >> Clicca su `Aggiungi un alias`{.action} e inserisci l'indirizzo che hai scelto per il tuo alias e conferma la tua scelta.<br><br>
 >> ![email](images/email-alias03.png){.thumbnail}<br>
@@ -168,16 +168,16 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 Il metodo per creare un alias o un reindirizzamento è strettamente lo stesso. Per seguire gli step descritti, clicca su ciascuna scheda qui sotto:
 
 > [!tabs]
-> **Etape 1**
+> **Passo 1**
 >> Di default, ti trovi nella scheda `Informazioni generali`{.action} della tua soluzione MXPlan. Clicca sulla scheda `Email`{.action} e poi sul pulsante `Gestisci i reindirizzamenti`{.action} a destra.<br><br>
 >> ![email](images/mxplan-legacy-1.png){.thumbnail}<br>
 >>
-> **Etape 2**
+> **Passo 2**
 >>
 >> Si apre la tabella dei reindirizzamenti già attivi. A destra, clicca su `Aggiungi un reindirizzamento`{.action}.<br><br>
 >> ![email](images/mxplan-legacy-2.png){.thumbnail}<br>
 >>
-> **Etape 3**
+> **Passo 3**
 >>
 >> **Dall'indirizzo**: inserisci qui l'indirizzo email che vuoi reindirizzare.<br><br>
 >> **All'indirizzo**: inserisci qui l'indirizzo di destinazione del tuo reindirizzamento. Può essere uno dei tuoi indirizzi email OVHcloud o un account esterno.<br><br>

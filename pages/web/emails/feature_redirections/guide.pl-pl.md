@@ -194,4 +194,4 @@ Metoda tworzenia aliasu lub przekierowania jest ściśle taka sama. Postępuj zg
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

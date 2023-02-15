@@ -92,7 +92,7 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 > [!tabs]
 > **Etapa 1**
 >>
->> Uma vez ligado ao seu endereço de e-mail através de [webmail](https://www.ovhcloud.com/pt/mail/), clique na roda dentada no canto superior direito e, a seguir, em `Options`{.action}.<br><br>
+>> Uma vez ligado ao seu endereço de e-mail através de [webmail](https://www.ovhcloud.com/pt/mail/), clique na roda dentada no canto superior direito e, a seguir, em `opções`{.action}.<br><br>
 >> ![e-mails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etapa 2**
@@ -192,6 +192,6 @@ O método para criar um alias ou um reencaminhamento é estritamente o mesmo. Si
 > Quando escolhe o modo de cópia "**Conservar uma cópia do e-mail na OVHcloud**", um reencaminhamento do endereço de e-mail para si próprio é automaticamente criado na lista dos reencaminhamentos, materializa esta cópia local.
 > 
 
-## Saiba mais
+## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
