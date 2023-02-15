@@ -67,10 +67,10 @@ Os capítulos "[criar um reencaminhamento](#redirect)" e "[criar um alias](#alia
 Para estas duas exceções, consulte diretamente o capítulo "[Criar um reencaminhamento ou um alias numa oferta MX Plan histórica ou num domínio sem oferta de e-mail](#mxplanlegacy)".
 
 >
-> Consoante a data de ativação da sua oferta MXplan ou se [esta foi migrada recentemente](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/), é possível que disponha da versão histórica ou da nova versão da oferta. Antes de prosseguir, deve identificar esta última.<br> 
+> Consoante a data de ativação da sua oferta MXplan ou se [esta foi migrada recentemente](https://www.ovhcloud.com/pt/web-hosting/mxplan-migration/), é possível que disponha da versão histórica ou da nova versão da oferta. Antes de prosseguir, deve identificar esta última.<br> 
 >
 >
-> Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), na parte `Web Cloud`{.action}. Clique em `Emails`{.action} e escolha o nome do serviço MX Plan em causa. Continue a ler em função da versão que possui:<br>
+> Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na parte `Web Cloud`{.action}. Clique em `Emails`{.action} e escolha o nome do serviço MX Plan em causa. Continue a ler em função da versão que possui:<br>
 >
 > |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 > |---|---|
@@ -92,8 +92,8 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 > [!tabs]
 > **Etapa 1**
 >>
->> Uma vez ligado ao seu endereço de e-mail através de [webmail](https://www.ovhcloud.com/fr/mail/), clique na roda dentada no canto superior direito e, a seguir, em `Options`{.action}.<br><br>
->> ![e-mails](images/emails-all-01.png) {.thumbnail}<br>
+>> Uma vez ligado ao seu endereço de e-mail através de [webmail](https://www.ovhcloud.com/pt/mail/), clique na roda dentada no canto superior direito e, a seguir, em `Options`{.action}.<br><br>
+>> ![e-mails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etapa 2**
 >> Na janela **Opções**, na coluna da esquerda, selecione a categoria **Tratamento automático** da secção **Correio** e clique em `Regras da caixa de receção e de arrumação`{.action}. <br><br>
@@ -113,7 +113,7 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 >>
 > **Etapa 5**
 >>
->> **Efetuar todas as seguintes** operações: é aqui que aplica o reencaminhamento, selecione `Transferir, reencaminhar ou enviar`{.action} e, a seguir, `Reencaminhar o e-mail para...`{.action} .
+>> **Efetuar todas as seguintes** operações: é aqui que aplica o reencaminhamento, selecione `Transferir, reencaminhar ou enviar`{.action} e, a seguir, `Reencaminhar o e-mail para...`{.action}.<br><br>
 >>![emails](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
 > **Etapa 6**
@@ -123,8 +123,8 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 >>
 
 > [!primary]
-> Para aplicar um **reencaminhamento simples** (ver [esquema 1](#diagram) no início deste manual), adicione uma regra suplementar ao seu **reencaminhamento com cópia local** a partir desta janela. Clique em `Adicionar uma ação`{.action} (quadro 1), depois em `Migrar, copiar ou suprimir`{.action} e, por fim, clique em `suprimir a mensagem`{.action}. Esta regra envia os e-mails diretamente para o lixo depois de ter reencaminhado as mensagens para o endereço final.
-> ![e-mails](images/emails-all-07.png) {.thumbnail .w-640}
+> Para aplicar um **reencaminhamento simples** (ver [esquema 1](#diagram) no início deste manual), adicione uma regra suplementar ao seu **reencaminhamento com cópia local** a partir desta janela. Clique em `Adicionar uma ação`{.action} (quadro 1), depois em `Migrar, copiar ou suprimir`{.action} e, por fim, clique em `suprimir a mensagem`{.action}. Esta regra envia os e-mails diretamente para o lixo depois de ter reencaminhado as mensagens para o endereço final.<br><br>
+> ![e-mails](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Criar um alias <a name="alias"></a>
 

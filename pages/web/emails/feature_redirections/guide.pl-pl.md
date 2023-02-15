@@ -91,7 +91,7 @@ Postępuj zgodnie z instrukcjami podanymi w opisanych krokach, klikając kolejno
 > [!tabs]
 > **Etap 1**
 >>
->> Po zalogowaniu się do Twojego konta e-mail przez [webmail](https://www.ovhcloud.com/pl/mail/) kliknij ikonkę koła zębatego w prawym górnym rogu, a następnie kliknij `Options`{.action}.<br><br>>
+>> Po zalogowaniu się do Twojego konta e-mail przez [webmail](https://www.ovhcloud.com/pl/mail/) kliknij ikonkę koła zębatego w prawym górnym rogu, a następnie kliknij `Options`{.action}.<br><br>
 >> ![emaile](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etap 2**
@@ -107,22 +107,22 @@ Postępuj zgodnie z instrukcjami podanymi w opisanych krokach, klikając kolejno
 > **Etap 4**
 >>
 >> **Nazwa**: zdefiniuj nazwę przekierowania. <br>
->> **Kiedy wiadomość przychodzi i spełnia wszystkie te warunki**: jeśli przekierowanie dotyczy wszystkich wiadomości, wybierz `[Zastosuj do wszystkich wiadomości]`{.action}.<br>
+>> **Kiedy wiadomość przychodzi i spełnia wszystkie te warunki**: jeśli przekierowanie dotyczy wszystkich wiadomości, wybierz `[Zastosuj do wszystkich wiadomości]`{.action}.<br><br>
 >>![emails](images/emails-all-04.png){.thumbnail .w-640}<br><br>
 >>
 > **Etap 5**
 >>
->> **Wykonać wszystkie następujące** czynności: w tym przypadku stosujesz przekierowanie, wybierz pozycję `Przekaż, przekieruj lub wyślij`{.action}, a następnie `Przekieruj wiadomość do...`{.action} .
+>> **Wykonać wszystkie następujące** czynności: w tym przypadku stosujesz przekierowanie, wybierz pozycję `Przekaż, przekieruj lub wyślij`{.action}, a następnie `Przekieruj wiadomość do...`{.action}.<br><br>
 >>![emails](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
 > **Etap 6**
 >>
->> Następnie wprowadź adres, na który chcesz przekierować e-mail przed "**Przekierowaniem wiadomości do...**"a następnie kliknij `Zapisz`{.action}. Następnie kliknij `OK`{.action} (ikona dyskietki), aby dokończyć przekierowanie.<br>
+>> Następnie wprowadź adres, na który chcesz przekierować e-mail przed "**Przekierowaniem wiadomości do...**" a następnie kliknij `Zapisz`{.action}. Następnie kliknij `OK`{.action} (ikona dyskietki), aby dokończyć przekierowanie.<br><br>
 >>![emails](images/emails-all-06.png){.thumbnail .w-640}<br><br>
 >>
 
 > [!primary]
-> Aby zastosować **przekierowanie proste** (patrz [schemat 1](#diagram) na początku tego przewodnika), dodaj w tym oknie dodatkową regułę do **przekierowania z kopią lokalną**. Kliknij `Dodaj akcję`{.action} (pole 1), a następnie `Przenieś, skopiuj lub usuń`{.action}, a następnie kliknij `Usuń wiadomość`{.action}. Ta reguła spowoduje umieszczenie wiadomości bezpośrednio w koszu po przekierowaniu jej na adres przekierowania.
+> Aby zastosować **przekierowanie proste** (patrz [schemat 1](#diagram) na początku tego przewodnika), dodaj w tym oknie dodatkową regułę do **przekierowania z kopią lokalną**. Kliknij `Dodaj akcję`{.action} (pole 1), a następnie `Przenieś, skopiuj lub usuń`{.action}, a następnie kliknij `Usuń wiadomość`{.action}. Ta reguła spowoduje umieszczenie wiadomości bezpośrednio w koszu po przekierowaniu jej na adres przekierowania.<br><br>
 > ![emaile](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Utwórz alias <a name="alias"></a>
@@ -157,7 +157,7 @@ Aby dodać alias do konta e-mail, postępuj zgodnie z instrukcjami podanymi poni
 
 W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} znajdujący się po prawej stronie wybranego konta e-mail. Następnie kliknij `Konfiguracja aliasów`{.action} (lub `Zarządzanie aliasami`{.action}).
 
-Kliknij przycisk `...`{.action} po prawej stronie odpowiedniego aliasu w menu zarządzania aliasami. Na koniec kliknij `Usuń alias`{.action}
+Kliknij przycisk `...`{.action} po prawej stronie odpowiedniego aliasu w menu zarządzania aliasami. Na koniec kliknij `Usuń alias`{.action}.
 
 ![emails](images/email-alias04.png){.thumbnail}
 

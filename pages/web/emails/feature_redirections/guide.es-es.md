@@ -51,7 +51,7 @@ Por ejemplo, su dirección de correo electrónico es **john.smith@mydomain.ovh**
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/es/emails/email-pro/)).
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/)).
 
 ## Procedimiento
 
@@ -63,20 +63,20 @@ Los capítulos "[crear una redirección](#redirect)" y "[crear un alias](#alias)
 Para estas dos excepciones, consulte directamente el capítulo "[Crear una redirección o un alias en un MX Plan histórico o un dominio sin servicio de correo](#mxplanlegacy)".
 
 >
-> En función de la fecha de activación de su MXplan o si [esta ha sido migrada recientemente](https://www.ovhcloud.com/es/web-hosting/mxplan-migration/), es posible que disponga de la versión histórica o de la nueva versión del producto. Antes de continuar, es necesario identificarla.<br>
+> En función de la fecha de activación de su MXplan o si [esta ha sido migrada recientemente](https://www.ovhcloud.com/es-es/web-hosting/mxplan-migration/), es posible que disponga de la versión histórica o de la nueva versión del producto. Antes de continuar, es necesario identificarla.<br>
 >
 > Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:<br>
 >
 > |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 > |---|---|
-> |![email](images/mxplan-starter-legacy.png) {.thumbnail}<br> Encontrar la oferta en el recuadro "Suscripción"|[email](images/mxplan-starter-new.png){.thumbnail}<br>Consulte la `referencia del servidor` en el recuadro "Resumen"|
+> |![email](images/mxplan-starter-legacy.png){.thumbnail}<br> Encontrar la oferta en el recuadro "Suscripción"|![email](images/mxplan-starter-new.png){.thumbnail}<br>Consulte la `referencia del servidor` en el recuadro "Resumen"|
 > |Continúe leyendo esta guía en el apartado « [Versión histórica de la solución MX Plan](#mxplanlegacy) ».|Continúe leyendo esta guía en el apartado [Crear una redirección](#redirect) o [Crear un alias.](#alias)|
 
 ### Crear una redirección <a name="redirect"></a>
 
 Las redirecciones no se gestionan desde el área de cliente, sino directamente desde el webmail de la dirección de correo electrónico correspondiente.
 
-Acceda a la dirección <https://www.ovhcloud.com/es/mail/>. Introduzca **la dirección de correo** y la **contraseña** para conectarse.
+Acceda a la dirección <https://www.ovhcloud.com/es-es/mail/>. Introduzca **la dirección de correo** y la **contraseña** para conectarse.
 
 ![correo electrónico](images/webmail.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Siga los pasos que se describen haciendo clic en cada pestaña:
 > [!tabs]
 > **Etape 1**
 >>
->> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](https://www.ovhcloud.com/es/mail/), haga clic en la rueda dentada en la parte superior derecha y, seguidamente, en el menú `Opciones`{.action}.<br><br>
+>> Una vez que se haya conectado a su dirección de correo electrónico a través del [webmail](https://www.ovhcloud.com/es-es/mail/), haga clic en la rueda dentada en la parte superior derecha y, seguidamente, en el menú `Opciones`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etape 2**
@@ -108,19 +108,19 @@ Siga los pasos que se describen haciendo clic en cada pestaña:
 >>
 > **Etape 5**
 >>
->> **Realizar todas las siguientes** operaciones: aquí es donde realiza la redirección, seleccione `Transferir, redirigir o enviar`{.action} y `Redirigir el mensaje a...`{.action}.
+>> **Realizar todas las siguientes** operaciones: aquí es donde realiza la redirección, seleccione `Transferir, redirigir o enviar`{.action} y `Redirigir el mensaje a...`{.action}.<br><br>
 >>![correo electrónico](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
 > **Etape 6**
 >>
->> Introduzca a continuación la dirección hacia la que quiere redirigir el correo delante de "**Redirigir el mensaje a...**" y haga clic en `Guardar`{.action}. A continuación, haga clic en `OK`{.action} (en el icono del disquete) para finalizar la redirección.<br>
+>> Introduzca a continuación la dirección hacia la que quiere redirigir el correo delante de "**Redirigir el mensaje a...**" y haga clic en `Guardar`{.action}. A continuación, haga clic en `OK`{.action} (en el icono del disquete) para finalizar la redirección.<br><br>
 >>![correo electrónico](images/emails-all-06.png){.thumbnail .w-640}<br><br>
 >>
 
 > [!primary]
 >
-> Para aplicar una **redirección simple** (véase el [esquema 1](#diagram) al inicio de esta guía), añada una regla adicional a su **redirección con copia local** desde esta ventana. Haga clic en `Añadir una acción` {.action} (recuadro 1), luego en `Mover, copiar o eliminar`{.action} y luego en `eliminar el mensaje`{.action}. Esta regla mueve el mensaje directamente a la papelera después de haberlo redirigido hacia el correo de redirección.
-> ![emails](images/emails-all-07.png) {.thumbnail .w-640}
+> Para aplicar una **redirección simple** (véase el [esquema 1](#diagram) al inicio de esta guía), añada una regla adicional a su **redirección con copia local** desde esta ventana. Haga clic en `Añadir una acción` {.action} (recuadro 1), luego en `Mover, copiar o eliminar`{.action} y luego en `eliminar el mensaje`{.action}. Esta regla mueve el mensaje directamente a la papelera después de haberlo redirigido hacia el correo de redirección.<br><br>
+> ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Crear un alias <a name="alias"></a>
 
@@ -178,7 +178,7 @@ El método para crear un alias o una redirección es estrictamente el mismo. Sig
 >>
 >> **De la dirección**: introduzca la dirección de correo electrónico que quiera redirigir.<br><br>
 >> **A la dirección**: introduzca la dirección de destino de la redirección. Puede utilizar una de sus direcciones de correo de OVHcloud o una dirección de correo externo.<br><br>
->>> **Elija un modo de copia**: elija si desea: <br> - **Conservar una copia del email en OVHcloud** (recibir el email en su dirección principal y la dirección de redirección)<br> *cf. el [esquema 2](#diagram) al principio de esta guía.*<br><br> - **No conservar copia del email** (reenviar directamente a la dirección de redirección sin que la dirección principal lo reciba) <br> *cf. el [esquema 1](#diagram) al comienzo de esta guía.*<br><br>
+>> **Elija un modo de copia**: elija si desea: <br> - **Conservar una copia del email en OVHcloud** (recibir el email en su dirección principal y la dirección de redirección)<br> *cf. el [esquema 2](#diagram) al principio de esta guía.*<br><br> - **No conservar copia del email** (reenviar directamente a la dirección de redirección sin que la dirección principal lo reciba) <br> *cf. el [esquema 1](#diagram) al comienzo de esta guía.*<br><br>
 >> Haga clic en `Aceptar`{.action} para confirmar la adición de esta redirección.<br><br>
 >> ![correo electrónico](images/mxplan-legacy-3.png){.thumbnail}
 

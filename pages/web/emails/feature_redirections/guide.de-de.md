@@ -101,7 +101,7 @@ Folgen Sie den beschriebenen Schritten, indem Sie nacheinander auf jeden Tab kli
 >>
 > **Schritt 3**
 >>
->> Wenn Sie im Verwaltungsfenster für **Posteingangsregeln** sind, klicken Sie oben links auf das `+`{.action}-Icon.<br><br>
+>> Wenn Sie im Verwaltungsfenster für **Posteingangsregeln** sind, klicken Sie oben links auf das `+`{.action} Icon.<br><br>
 >> ![E-Mails](images/emails-all-03.png){.thumbnail}<br><br>
 >>
 > **Schritt 4**
@@ -123,7 +123,7 @@ Folgen Sie den beschriebenen Schritten, indem Sie nacheinander auf jeden Tab kli
 
 > [!primary]
 >
-> Um eine einfache **Weiterleitung** (siehe [Abbildung 1](#diagram) am Anfang dieser Anleitung) anzuwenden, fügen Sie in diesem Fenster eine zusätzliche Regel zu Ihrer **Weiterleitung mit lokaler** Kopie hinzu. Klicken Sie auf `Aktion hinzufügen`{.action} (Box 1) , dann auf **Verschieben, kopieren oder löschen** und klicken Sie dann auf **Nachricht löschen**. Mit dieser Regel wird die E-Mail direkt im Papierkorb abgelegt, nachdem sie an die Weiterleitungsadresse versendet wurde.
+> Um eine einfache **Weiterleitung** (siehe [Abbildung 1](#diagram) am Anfang dieser Anleitung) anzuwenden, fügen Sie in diesem Fenster eine zusätzliche Regel zu Ihrer **Weiterleitung mit lokaler** Kopie hinzu. Klicken Sie auf `Aktion hinzufügen`{.action} (Box 1) , dann auf **Verschieben, kopieren oder löschen** und klicken Sie dann auf **Nachricht löschen**. Mit dieser Regel wird die E-Mail direkt im Papierkorb abgelegt, nachdem sie an die Weiterleitungsadresse versendet wurde.<br><br>
 > ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Alias erstellen <a name="alias"></a>

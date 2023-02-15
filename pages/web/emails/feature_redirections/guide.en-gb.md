@@ -103,23 +103,23 @@ Follow the steps described by clicking successively on each tab below:
 > **Step 4**
 >>
 >> **Name**: define the name of your redirection. <br>
->> **When the message arrives and meets all of these conditions**: If your redirection applies to all messages, select `[Apply to all messages]`{.action}.<br>
+>> **When the message arrives and meets all of these conditions**: If your redirection applies to all messages, select `[Apply to all messages]`{.action}.<br><br>
 >>![emails](images/emails-all-04.png){.thumbnail .w-640}<br><br>
 >>
 > **Step 5**
 >>
->> **Perform all of the following**: This is where you apply the redirection. Select `Forward, redirect or send`{.action}, then `Redirect the message to...`{.action} .
+>> **Perform all of the following**: This is where you apply the redirection. Select `Forward, redirect or send`{.action}, then `Redirect the message to...`{.action}.<br><br>
 >>![emails](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
 > **Step 6**
 >>
->> Next, type the address you want to redirect the email to in front of **Redirect the message to...** then click `Save`{.action}. Finally, click `OK`{.action} (floppy disk icon) to complete your redirection.<br>
+>> Next, type the address you want to redirect the email to in front of **Redirect the message to...** then click `Save`{.action}. Finally, click `OK`{.action} (floppy disk icon) to complete your redirection.<br><br>
 >>![emails](images/emails-all-06.png){.thumbnail .w-640}<br><br>
 >>
 
 > [!primary]
 >
-> To apply a **simple redirection** (see [diagram 1](#diagram) at the beginning of this guide), add an additional rule to your **redirection with a local** copy in this window. Click `Add action`{.action} (box 1), then `Move, copy, or delete`{.action}, and then click `Delete the message`{.action}. This rule directly moves the email into the trash folder, once the email has been redirected to the redirection email address.
+> To apply a **simple redirection** (see [diagram 1](#diagram) at the beginning of this guide), add an additional rule to your **redirection with a local** copy in this window. Click `Add action`{.action} (box 1), then `Move, copy, or delete`{.action}, and then click `Delete the message`{.action}. This rule directly moves the email into the trash folder, once the email has been redirected to the redirection email address.<br><br>
 > ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Create an alias <a name="alias"></a>

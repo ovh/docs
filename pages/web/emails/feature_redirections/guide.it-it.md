@@ -107,7 +107,7 @@ Per seguire gli step descritti, clicca su ciascuna scheda qui sotto:
 > **Etape 4**
 >>
 >> **Nome**: definisci il nome del tuo reindirizzamento. <br>
->> **Quando il messaggio arriva e soddisfa tutte queste condizioni** : se il tuo reindirizzamento si applica a tutti i messaggi, seleziona `[Applica a tutti i messaggi]`{.action}.<br>
+>> **Quando il messaggio arriva e soddisfa tutte queste condizioni** : se il tuo reindirizzamento si applica a tutti i messaggi, seleziona `[Applica a tutti i messaggi]`{.action}.<br><br>
 >>![email](images/emails-all-04.png){.thumbnail .w-640}<br><br>
 >>
 > **Etape 5**
@@ -117,12 +117,12 @@ Per seguire gli step descritti, clicca su ciascuna scheda qui sotto:
 >>
 > **Etape 6**
 >>
->> Dopodiché inserisci l'indirizzo verso cui vuoi reindirizzare l'email davanti a **Reindirizzare il messaggio verso...**. e poi clicca su `Salva`{.action}. Infine clicca su `OK`{.action} (icona del floppy disk) per completare il reindirizzamento.<br>
+>> Dopodiché inserisci l'indirizzo verso cui vuoi reindirizzare l'email davanti a **Reindirizzare il messaggio verso...**. e poi clicca su `Salva`{.action}. Infine clicca su `OK`{.action} (icona del floppy disk) per completare il reindirizzamento.<br><br>
 >>![email](images/emails-all-06.png){.thumbnail .w-640}<br><br>
 >>
 
 > [!primary]
-> Per applicare un **reindirizzamento semplice** (vedi [schema 1](#diagram) all'inizio di questa guida), aggiungi una regola aggiuntiva al tuo **reindirizzamento con copia in locale** da questa finestra. Clicca su `Aggiungi un'azione`{.action} (riquadro 1) e poi su `Sposta, copia o elimina`{.action} e infine clicca su `Elimina il messaggio`{.action}. Questa regola sposta il messaggio direttamente nel cestino, dopo averlo inoltrato all’altro indirizzo.
+> Per applicare un **reindirizzamento semplice** (vedi [schema 1](#diagram) all'inizio di questa guida), aggiungi una regola aggiuntiva al tuo **reindirizzamento con copia in locale** da questa finestra. Clicca su `Aggiungi un'azione`{.action} (riquadro 1) e poi su `Sposta, copia o elimina`{.action} e infine clicca su `Elimina il messaggio`{.action}. Questa regola sposta il messaggio direttamente nel cestino, dopo averlo inoltrato all’altro indirizzo.<br><br>
 > ![email](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Crea un alias <a name="alias"></a>

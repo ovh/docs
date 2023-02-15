@@ -119,7 +119,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 
 > [!primary]
 >
-> Pour appliquer une **redirection simple** (voir le [schéma 1](#diagram) au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur `Déplacer, copier ou supprimer`{.action} et enfin cliquez sur `supprimer le message`{.action}. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.
+> Pour appliquer une **redirection simple** (voir le [schéma 1](#diagram) au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur `Déplacer, copier ou supprimer`{.action} et enfin cliquez sur `supprimer le message`{.action}. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.<br><br>
 > ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Créer un alias <a name="alias"></a>
