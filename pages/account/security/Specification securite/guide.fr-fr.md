@@ -173,19 +173,9 @@ Suite au décommissionnent du service par le client, OVHcloud procède à la lib
 | WAW | Datacenter Ozarow (PL) | OVHcloud |
 
 **Conformité de la prise en compte des objectifs de sécurité**
-| Légende | Non conforme | Exempté | Certifié HDS | Certifié HDS et qualifié SecNumCloud |
-| --- | --- | --- | --- | --- |
 
-| **RBX1** | **RBX2** | **RBX4** | **RBX356** | **RBX7** | **RBX8** | **RBX8(SNC)** | **GRA** | **SBG3** | **SBG3(SNC)** | **SBG4** | **SBG5** | **SBG5(SNC)** | **BHS** | **ERI** | **LIM** | **WAW** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| A- Sécurité physique et environnementale | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
-| B- Maîtrise des supports matériels | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
-| C - Protection des flux d'information | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
-| D- Maîtrise des accès | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
-| E- Maîtrise des interventions | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
-| F- Robustesse aux usages imprévus? | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
-| G- Continuité ou reprise d'activité | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
-| H- Protection contre des lois extra-européennes | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+![spec HDS](images/spec_HDS.png){.thumbnail}
+
 
 **Commentaire:**
 * Le client choisit les instances (lieux) sur lesquelles il déploie ses serveurs d'hébergement de données de santé. Si le client souhaite déployer sur plusieurs instances (lieux), il devra souscrire plusieurs fois au service.
