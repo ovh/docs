@@ -505,7 +505,7 @@ Dans l'espace client WHM, cliquez sur `IP funtions`{.action} et sélectionnez `A
 
 Renseignez votre adresse Additional IP sous la forme « xxx.xxx.xxx.xxx » dans le champ « New IP or IP range to add ».
 
-Sélectionnez `255.255.255.255` comme masque de sous-réseau puis cliquez sur `Envoyer`{.action}.
+Sélectionnez `255.255.255.255` comme masque de sous-réseau puis cliquez sur `Submit`{.action}.
 
 ![renseigner de nouvelles informations sur la nouvelle adresse IP](images/Cpanel-2.png){.thumbnail}
 

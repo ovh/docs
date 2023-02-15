@@ -5,7 +5,7 @@ excerpt: 'Find out how to add Additional IP addresses to your server configurati
 section: 'Network Management'
 ---
 
-**Last updated 2nd February 2023**
+**Last updated 15th February 2023**
 
 > [!primary]
 >
@@ -513,7 +513,7 @@ Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
 #### Step 3: Check the current IP configuration
 
-Back in the section `IP functions`{.action}, click on `Show or Delete Current IP Addresses`{.actions} to verify that the Additional IP address was added correctly.
+Back in the section `IP functions`{.action}, click on `Show or Delete Current IP Addresses`{.action} to verify that the Additional IP address was added correctly.
 
 ![check configured IP](images/Cpanel-3.png){.thumbnail}
 
