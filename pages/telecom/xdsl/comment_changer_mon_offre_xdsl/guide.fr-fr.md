@@ -5,7 +5,7 @@ section: Gestion de mon offre
 updated: 2023-02-09
 ---
 
-**Dernière mise à jour le 09/02/2023**
+**Dernière mise à jour le 15/02/2023**
 
 ## Objectif
 
@@ -46,6 +46,11 @@ La première colonne du tableau récapitule votre offre actuelle (son nom, son p
 Cliquez sur le bouton `Choisir cette offre`{.action} sous la colonne correspondant à l'offre que vous souhaitez souscrire.
 
 ![choix de l'offre](images/pro-offers2023.png){.thumbnail}
+
+Suivant l'offre choisie, vous devez alors sélectionner les services dont vous disposez et que vous souhaitez conserver.<br>
+Cochez les cases des services à conserver et cliquez sur `Confirmer la sélection des services`{.action}.
+
+![conservation des services](images/services2023.png){.thumbnail}
 
 Lors de la dernière étape, une demande de confirmation apparaîtra afin de valider le changement d'offre.<br>
 Lisez les contrats, cochez la case afin de les accepter puis cliquez sur le bouton `Valider le changement d'offre`{.action}.
