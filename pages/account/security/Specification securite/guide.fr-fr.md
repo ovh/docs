@@ -108,6 +108,7 @@ Liste des systèmes d'exploitation disponibles pour un serveur donné : https://
 Le durcissement des systèmes d'exploitation fourni est celui d'une installation nominale de l’éditeur, pour un durcissement avancé, OVHcloud recommande de se référer aux documentations de chaque éditeur .
 
 | **Editeur** | **Documentation de durcissement** |
+| --- | --- |
 | Debian | https://wiki.debian.org/Hardening |
 | Redhat | https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/overview-of-security-hardening-security-hardening |
 | Ubuntu | https://ubuntu.com/security/certifications/docs/usg |
