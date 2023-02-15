@@ -398,7 +398,7 @@ You now need to start your alias interface:
 ifup eth0:0
 ```
 
-#### For AlmaLinux and RockLinux
+#### For AlmaLinux and Rocky Linux
 
 You need to restart your interface:
 
@@ -494,11 +494,11 @@ Finally, reboot your server to apply the changes.
 
 #### Step 1: Access the WHM IP management section
 
-In the WHM control panel, click on `IP functions` and select `Add a New IP Address`{.action} in the left-hand sidebar.
+In the WHM control panel, click on `IP functions`{.action} and select `Add a New IP Address`{.action} in the left-hand sidebar.
 
 ![Add new IP](images/Cpanel-1.png){.thumbnail}
 
-#### Step 2: Add the additional IP information
+#### Step 2: Add the Additional IP information
 
 Enter your Additional IP in the form `xxx.xxx.xxx.xxx` into the field “New IP or IP range to add”. 
 
@@ -508,12 +508,12 @@ Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
 > [!warning]
 >
-> Please note that if you have more than one IP to configure on the same block and you add them all at once, the WHM system will force you to use the subnet mask `255.255.255.0`. We do not recommend using this configuration, instead, you need to add each IP individually in order to use the proper subnet mask `255.255.255.255`.
+> Please note that if you have more than one IP to configure on the same block and you add them all at once, the WHM system will force you to use the subnet mask `255.255.255.0`. We do not recommend using this configuration. Instead, you need to add each IP individually in order to use the proper subnet mask `255.255.255.255`.
 > 
 
 #### Step 3: Check the current IP configuration
 
-Back in the section `IP functions`, click on `Show or Delete Current IP Addresses`{.actions} to verify that the Additional IP address was added correctly.
+Back in the section `IP functions`{.action}, click on `Show or Delete Current IP Addresses`{.actions} to verify that the Additional IP address was added correctly.
 
 ![check configured IP](images/Cpanel-3.png){.thumbnail}
 
@@ -618,7 +618,7 @@ In the Plesk control panel, choose `Tools & Settings`{.action} from the left-han
 
 Click on `IP Addresses`{.action} under **Tools & Resources**.
 
-#### Step 2: Add the additional IP information
+#### Step 2: Add the Additional IP information
 
 In this section, click on the button `Add IP Address`{.action}.
 

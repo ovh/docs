@@ -618,7 +618,7 @@ In the Plesk control panel, choose `Tools & Settings`{.action} from the left-han
 
 Click on `IP Addresses`{.action} under **Tools & Resources**.
 
-#### Step 2: Add the additional IP information
+#### Step 2: Add the Additional IP information
 
 In this section, click on the button `Add IP Address`{.action}.
 

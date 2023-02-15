@@ -401,7 +401,7 @@ Vous devez maintenant démarrer votre interface alias :
 ifup eth0:0
 ```
 
-#### Pour AlmaLinux et RockLinux
+#### Pour AlmaLinux et Rocky Linux
 
 Vous devez redémarrer votre interface :
 
@@ -497,15 +497,15 @@ Finalement, redémarrez votre serveur pour appliquer les modifications.
 
 #### Étape 1 : accéder à la section Gestion IP de WHM
 
-Dans l'espace client WHM, cliquez sur `IP funtions` et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
+Dans l'espace client WHM, cliquez sur `IP funtions`{.action} et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
 
 ![Ajouter une nouvelle adresse IP](images/Cpanel-1.png){.thumbnail}
 
-#### Étape 2 : Ajouter les informations IP additionnelles
+#### Étape 2 : Ajouter les informations des Additional IP
 
-Renseignez votre IP additionnelle sous la forme « xxx.xxx.xxx.xxx » dans le champ « New IP or IP range to add ».
+Renseignez votre adresse Additional IP sous la forme « xxx.xxx.xxx.xxx » dans le champ « New IP or IP range to add ».
 
-Sélectionnez `255.255.255.255` comme masque de sous-réseau, puis cliquez sur `Envoyer`{.action}.
+Sélectionnez `255.255.255.255` comme masque de sous-réseau puis cliquez sur `Envoyer`{.action}.
 
 ![renseigner de nouvelles informations sur la nouvelle adresse IP](images/Cpanel-2.png){.thumbnail}
 
@@ -516,10 +516,9 @@ Sélectionnez `255.255.255.255` comme masque de sous-réseau, puis cliquez sur `
 
 #### Étape 3 : Vérifier la configuration IP actuelle
 
-De retour dans la section `IP functions`, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse IP supplémentaire a été correctement ajoutée.
+De retour dans la section `IP functions`{.action}, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse Additional IP a été correctement ajoutée.
 
 ![check configured IP](images/Cpanel-3.png){.thumbnail}
-
 
 ### Windows Servers
 
