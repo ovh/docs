@@ -105,7 +105,6 @@ $ aws --profile my-profile s3api get-bucket-logging --bucket my-bucket
 {
     "LoggingEnabled": {
         "TargetBucket": "my-bucket-logs",
-        "TargetGrants": [],
         "TargetPrefix": "test/"
     }
 }
