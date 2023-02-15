@@ -131,6 +131,15 @@ Le premier onglet, par défaut, vous permet de définir les informations stricte
 
 ![New product part 2](images/prestashop_set_up_9.png)
 
+### Pour conclure
+
+Vous pouvez installer rapidement, en 1-click ou manuellement, votre CMS e-commerce et être rapidement opérationnel en configurant catégories et produits.
+
+Prestashop vous permet de régler finalement les détails de chaque produits. 
+
+Vous avez également la possibilité de modifier l'interface (templates, thèmes, logos) dans le menu "Personnaliser".
+
+
 ## Aller plus loin
 
 - le site de [Prestashop](https://www.prestashop.com/)
