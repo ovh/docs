@@ -54,10 +54,18 @@ Reprise des SLA des conditions particulières par composante du service.
 
 ## 4. Backups
 ### a. technisues
+Les sauvegardes techniques sont les sauvegardes réalisées par OVHcloud pour assurer les niveaux de service prévus au contrat. Ces sauvegardes ne sont pas prévues pour être activées à la demande du client. Ces backups ne contiennent aucune donnée métier déposée par les clients sur leurs propres serveurs dédiés.
 
+Ce sont des sauvegardes de configurations des infrastructures qui permettent de délivrer le service  aux clients telles que telles que : configuration des routeurs, configurations vRack, affectation des IP, ...
 
 ### b. Métier
-
+Liste des fonctionnalités et options de backups adaptées au service.
+| **Nom de l'option** | **Granularité** | **RTO** | **RPO** | **Documentation et tutoriels**|
+| --- | --- | --- | --- | --- |
+| -FTP backup ou Backup Storage est un espace de stockage de 500Go mis à disposition du client suite à la sousciption au service.
+-Le service doit être activé par le client.
+-Aucune routine de backup n'est configurée par OVHcloud.
+| Au choix du client | Dépend du choix du client | NA | https://docs.OVHcloud.com/fr/dedicated/services-backup-storage/#ftpftps |
 
 
 
