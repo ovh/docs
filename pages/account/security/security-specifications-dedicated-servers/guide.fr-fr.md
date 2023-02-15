@@ -174,8 +174,7 @@ Suite au décommissionnent du service par le client, OVHcloud procède à la lib
 
 **Conformité de la prise en compte des objectifs de sécurité**
 
-![TAB](images/spec_HDS.png)
-
+![TAB](images/spec_hds.png){.thumbnail}
 
 **Commentaire:**
 * Le client choisit les instances (lieux) sur lesquelles il déploie ses serveurs d'hébergement de données de santé. Si le client souhaite déployer sur plusieurs instances (lieux), il devra souscrire plusieurs fois au service.
@@ -183,42 +182,4 @@ Suite au décommissionnent du service par le client, OVHcloud procède à la lib
 * Objectif C : Dans le cadre de cette offre, OVHcloud fournit exclusivement un matériel informatique conforme à la commande du client. Le client opère ce matériel en complète autonomie. Par conséquent les flux réseau sont complètement opérés par le client, sans aucune intervention d'OVHcloud. C'est la raison pour laquelle cet objectif n'est pas adressé dans le tableau ci-dessus.
 * Objectif D : Dans le cadre de cette offre, OVHcloud ne maîtrise que l'interface de gestion de l'offre (manager OVHcloud) et la fourniture du premier code administrateur du matériel. Le client doit respecter le reste des attentes formalisées dans cet objectif. Nous recommandons au client de mettre en œuvre un système robuste de gestion des accès pour l'ensemble de ses accès métiers.
 * Objectif F : OVHcloud répond à cet objectif de sécurité  dans la limite de sa capacité à agir sur le matériel mis à disposition du client. Nous recommandons au client de mettre en œuvre des processus de maintien en conditions opérationnelles et de sécurité de son matériel à l'état de l'art.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
