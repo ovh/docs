@@ -4,6 +4,7 @@ excerpt: "Descubra las nociones básicas útiles para empezar en el entorno Publ
 slug: public-cloud-essential-information
 section: Primeros pasos
 order: 01
+updated: 2022-02-07
 ---
 
 > [!primary]

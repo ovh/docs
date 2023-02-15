@@ -5,6 +5,7 @@ excerpt: Find out how to restore an instance or create a new one from a backup
 legacy_guide_number: 1882
 section: Management via Control Panel
 order: 2
+updated: 2021-03-19
 ---
 
 **Last updated 19th March 2021**

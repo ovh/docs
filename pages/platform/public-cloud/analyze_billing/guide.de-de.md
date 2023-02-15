@@ -4,6 +4,7 @@ slug: informationen-zu-cloud-abrechnungsoptionen
 excerpt: 'Erfahren Sie mehr über die verschiedenen Abrechnungsoptionen für Public Cloud-Produkte'
 section: 'Projektverwaltung'
 order: 2
+updated: 2022-08-29
 ---
 
 **Letzte Aktualisierung am 30.08.2022**

@@ -4,6 +4,7 @@ slug: condividi_un_oggetto_con_un_indirizzo_temporaneo
 excerpt: 'Come condividere un oggetto senza fornire informazioni personali'
 section: Gestione via OpenStack
 legacy_guide_number: g2007
+updated: 2021-01-11
 ---
 
 **Ultimo aggiornamento: 24/10/2019**

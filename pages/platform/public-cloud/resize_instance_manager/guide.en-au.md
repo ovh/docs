@@ -4,6 +4,7 @@ slug: resize-an-instance-manager
 excerpt: "Find out how to resize an instance in the OVHcloud Manager"
 section: Management via Control Panel
 order: 6
+updated: 2022-08-24
 ---
 
 **Last updated 24th August 2022**

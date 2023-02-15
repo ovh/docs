@@ -4,6 +4,7 @@ slug: upgrade-os
 excerpt: "Saiba como atualizar um sistema operativo em fim de vida"
 section: 'Tutoriais'
 order: 14
+updated: 2022-02-07
 ---
 
 > [!primary]

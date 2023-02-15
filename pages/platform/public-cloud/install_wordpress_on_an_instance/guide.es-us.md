@@ -3,6 +3,7 @@ title: 'Instalar WordPress en una instancia'
 excerpt: Cómo utilizar una instancia de Public Cloud para alojar sitios web WordPress
 slug: instalar_wordpress_en_una_instancia
 section: Tutoriales
+updated: 2021-10-15
 ---
 
 > [!primary]

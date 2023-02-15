@@ -4,6 +4,7 @@ slug: crea_unistanza_con_horizon
 excerpt: 'Come creare un’istanza dall’interfaccia Horizon'
 section: Gestione da Horizon
 legacy_guide_number: g1772
+updated: 2022-08-01
 ---
 
 > [!primary]

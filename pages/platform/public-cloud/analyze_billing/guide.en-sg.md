@@ -4,6 +4,7 @@ slug: information-on-cloud-billing-options
 excerpt: 'Find out more about the different billing options for Public Cloud products'
 section: 'Project management'
 order: 2
+updated: 2022-08-29
 ---
 
 **Last updated 29th August 2022**

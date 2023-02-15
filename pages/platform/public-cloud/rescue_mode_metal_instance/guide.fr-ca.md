@@ -5,6 +5,7 @@ excerpt: 'Découvrez comment activer le mode rescue sur une instance Metal'
 section: Premiers pas
 order: 3
 hidden: true
+updated: 2023-01-04
 ---
 
 **Dernière mise à jour le 04/01/2023**

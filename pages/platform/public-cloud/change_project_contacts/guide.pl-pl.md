@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak zarządzać kontaktami projektu Public Cloud"
 slug: zmiana_kontaktow_projektu
 section: 'Zarządzanie projektami'
 order: 6
+updated: 2022-04-04
 ---
 
 > [!primary]

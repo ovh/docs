@@ -3,6 +3,7 @@ title: Migrar de uma instância Flex para uma instância clássica
 slug: modificar-uma-instancia-flex
 excerpt: Descubra como alterar uma instância Flex a partir da interface OpenStack Horizon
 section: Gestão a partir do Horizon
+updated: 2021-11-15
 ---
 
 > [!primary]

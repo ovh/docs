@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak utworzyć instancję w interfejsie Horizon'
 slug: tworzenie_instancji_w_interfejsie_horizon
 legacy_guide_number: g1772
 section: 'Zarządzanie w interfejsie Horizon'
+updated: 2022-08-01
 ---
 
 > [!primary]

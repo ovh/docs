@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie die Kapazität eines zusätzlichen Volumes 
 slug: ihre_zusatzliche_festplatte_vergroern
 section: Storage
 order: 2
+updated: 2022-03-29
 ---
 
 > [!primary]

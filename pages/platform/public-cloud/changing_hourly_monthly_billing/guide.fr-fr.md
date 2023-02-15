@@ -4,6 +4,7 @@ excerpt: 'Découvrez comment modifier le type de facturation de votre instance P
 slug: changer-type-facturation-public-cloud
 section: 'Gestion de projets'
 order: 5
+updated: 2023-01-23
 ---
 
 **Dernière mise à jour le 23/01/2023**

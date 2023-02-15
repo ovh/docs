@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Token über die Keystone API verwenden'
 slug: token-verwaltung
 legacy_guide_number: g1872
 section: 'OpenStack'
+updated: 2020-04-09
 ---
 
 > [!primary]

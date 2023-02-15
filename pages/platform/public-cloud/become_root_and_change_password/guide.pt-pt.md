@@ -4,6 +4,7 @@ slug: tornar-se_root_e_definir_uma_palavra-passe
 excerpt: 'Saiba como tornar-se o utilizador root e criar uma palavra-passe para a conta root'
 section: Introdução
 order: 08
+updated: 2022-03-24
 ---
 
 **Última atualização: 24/03/2022**

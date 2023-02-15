@@ -4,6 +4,7 @@ excerpt: Descubra como gerir as suas instâncias com a ajuda do cliente Python O
 slug: dar_os_primeiros_passos_com_a_api_nova
 legacy_guide_number: g1935
 section: Gestão via OpenStack
+updated: 2022-10-13
 ---
 
 > [!primary]

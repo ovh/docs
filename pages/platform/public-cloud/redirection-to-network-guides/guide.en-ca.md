@@ -4,6 +4,7 @@ slug: public-cloud-network-services-redirection
 excerpt: 'Find all our our Public Cloud Network Services guides'
 section: 'Networking'
 order: 00
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

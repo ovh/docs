@@ -4,6 +4,7 @@ slug: launch-a-script-when-instance-is-created
 legacy_guide_number: 1932
 section: OpenStack
 order: 9
+updated: 2022-03-18
 ---
 
 **Last updated 18th March 2022**

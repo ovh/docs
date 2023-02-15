@@ -5,6 +5,7 @@ slug: configurer-le-reverse-dns-dune-instance
 legacy_guide_number: 1940
 section: "Gestion depuis l'espace client"
 order: 06
+updated: 2021-11-12
 ---
 
 **Dernière mise à jour le 12/11/2021**

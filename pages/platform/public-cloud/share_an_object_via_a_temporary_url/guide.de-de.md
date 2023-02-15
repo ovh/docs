@@ -4,6 +4,7 @@ slug: ein_objekt_mit_temporarer_adresse_teilen
 excerpt: 'So teilen Sie ein Objekt, ohne persönliche Informationen weiterzugeben'
 section: 'OpenStack'
 legacy_guide_number: g2007
+updated: 2021-01-11
 ---
 
 **Letzte Aktualisierung am 11.01.2021**

@@ -4,6 +4,7 @@ slug: object-storage-redirection
 excerpt: Consulta le nostre guide Object Storage High Performance e Swift
 section: 'Storage'
 order: 00
+updated: 2022-03-14
 ---
 
 **Ultimo aggiornamento: 14/03/2022**

@@ -4,6 +4,7 @@ excerpt: 'Find out how to change the billing rate for your Public Cloud instance
 slug: change-public-cloud-billing-rate
 section: Project management
 order: 4
+updated: 2023-01-23
 ---
 
 **Last updated 23rd January 2023**

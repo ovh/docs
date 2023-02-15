@@ -5,6 +5,7 @@ slug: modifica_i_server_dns_della_tua_istanza
 legacy_guide_number: g1985
 section: Rete
 order: 4
+updated: 2021-10-29
 ---
 
 > [!primary]

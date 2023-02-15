@@ -4,6 +4,7 @@ slug: gestion-des-snapshots-dune-instance-dans-horizon
 legacy_guide_number: 1770
 section: Gestion depuis Horizon
 order: 05
+updated: 2022-01-31
 ---
 
 **Dernière mise à jour le 31/01/2022**

@@ -4,6 +4,7 @@ slug: cambiar-la-contrasena-de-usuario-openstack
 excerpt: 'Cómo cambiar una contraseña de usuario en Horizon'
 section: Gestión desde Horizon
 order: 3
+updated: 2018-03-07
 ---
 
 **Última actualización: 13/06/2018**

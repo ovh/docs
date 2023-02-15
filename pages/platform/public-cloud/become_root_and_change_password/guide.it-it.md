@@ -4,6 +4,7 @@ slug: imposta_una_password_amministratore
 excerpt: "Imparare a usare l'utente root e creare una password per esso"
 section: Tutorial
 order: 08
+updated: 2022-03-24
 ---
 
 **Ultimo aggiornamento: 24/03/2022**

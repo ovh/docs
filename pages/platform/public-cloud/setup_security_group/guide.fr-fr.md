@@ -4,6 +4,7 @@ slug: configure-security-group-horizon
 excerpt: 'Apprenez à créer un groupe de sécurité et à le configurer sur une instance Public Cloud'
 section: Gestion depuis Horizon
 order: 08
+updated: 2021-08-24
 ---
 
 **Dernière mise à jour le 24/08/2021**

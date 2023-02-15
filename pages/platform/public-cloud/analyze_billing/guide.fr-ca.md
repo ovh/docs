@@ -3,6 +3,7 @@ title: 'Informations concernant le mode de facturation cloud'
 slug: information-concernant-le-mode-de-facturation-cloud
 section: 'Gestion de projets'
 excerpt: 'Comprenez le mode de facturation des produits Public Cloud'
+updated: 2022-08-29
 ---
 
 **Dernière mise à jour le 29/08/2022**

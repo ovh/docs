@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihre Umgebungsvariablen für die Nutzung de
 slug: set-openstack-environment-variables
 legacy_guide_number: 1852
 section: 'OpenStack'
+updated: 2021-08-18
 ---
 
 **Letzte Aktualisierung am 18.08.2021**

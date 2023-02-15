@@ -3,6 +3,7 @@ title: 'Passwort eines OpenStack-Benutzers in Horizon ändern'
 excerpt: 'Hier erfahren Sie, wie Sie ein Benutzerpasswort im Horizon-Interface ändern.'
 slug: openstack-benutzerpasswort-aendern
 section: 'Horizon'
+updated: 2018-03-07
 ---
 
 **Stand 16.08.2018**

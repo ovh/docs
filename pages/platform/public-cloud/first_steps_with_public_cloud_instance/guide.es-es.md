@@ -4,6 +4,7 @@ slug: empezar-con-una-instancia-public-cloud
 excerpt: 'Cómo gestionar las instancias de Public Cloud desde el Panel de configuración de OVHcloud'
 section: 'Primeros pasos'
 order: 05
+updated: 2023-01-04
 ---
 
 > [!primary]

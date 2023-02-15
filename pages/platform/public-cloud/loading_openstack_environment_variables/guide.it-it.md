@@ -4,6 +4,7 @@ excerpt: 'Come impostare le variabili d’ambiente per utilizzare l’API  di Op
 slug: set-openstack-environment-variables
 legacy_guide_number: 1852
 section: Gestione via OpenStack
+updated: 2021-08-18
 ---
 
 **Ultimo aggiornamento: 18/08/2021**

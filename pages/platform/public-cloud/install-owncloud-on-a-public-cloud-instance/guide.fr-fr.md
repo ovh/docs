@@ -3,6 +3,7 @@ title: 'Comment installer ownCloud sur une instance de Public Cloud?'
 slug: intaller-owncloud-sur-public-cloud-ubuntu-1804
 excerpt: 'Ce tutoriel vous montrera comment installer ownCloud sur une Instance de Public Cloud exécutant Ubuntu 18.04'
 section: Tutoriels
+updated: 2019-04-10
 ---
 
 **Dernière mise à jour le 6 mai 2019**

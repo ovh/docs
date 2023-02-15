@@ -5,6 +5,7 @@ excerpt: 'Find out how to activate the rescue mode environment on a Metal Instan
 section: Getting started
 order: 3
 hidden: true
+updated: 2023-01-04
 ---
 
 **Last updated 4th January 2023**

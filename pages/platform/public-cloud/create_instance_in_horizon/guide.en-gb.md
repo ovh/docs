@@ -4,6 +4,7 @@ slug: create-an-instance-in-horizon
 excerpt: 'Find out how to create an Instance via the Horizon interface'
 section: Horizon
 order: 03
+updated: 2022-08-01
 ---
 
 **Last updated 1st August 2022**

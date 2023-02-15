@@ -4,6 +4,7 @@ excerpt: 'Aprenda a carregar as suas variáveis de ambiente para utilizar a API 
 slug: set-openstack-environment-variables
 legacy_guide_number: 1852
 section: Gestão via OpenStack
+updated: 2021-08-18
 ---
 
 **Última atualização: 18/08/2021**

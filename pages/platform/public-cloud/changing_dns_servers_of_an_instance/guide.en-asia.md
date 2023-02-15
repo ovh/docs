@@ -5,6 +5,7 @@ excerpt: 'Find out how to change the default DNS servers on a Public Cloud insta
 legacy_guide_number: 1985
 section: Networking
 order: 4
+updated: 2021-10-29
 ---
 
 **Last updated 29th October 2021**
