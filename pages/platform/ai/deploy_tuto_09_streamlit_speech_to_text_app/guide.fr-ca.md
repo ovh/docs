@@ -6,6 +6,7 @@ section: AI Deploy - Tutoriels
 order: 09
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/'
+updated: 2023-02-09
 ---
 
 **Last updated 9th February, 2023.**

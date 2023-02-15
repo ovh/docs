@@ -4,6 +4,7 @@ slug: deploy/tuto-gradio-sketch-recognition
 excerpt: How to build and use a custom Docker image containing a Gradio application
 section: AI Deploy - Tutorials
 order: 05
+updated: 2023-01-31
 ---
 
 **Last updated 31st January, 2023.**

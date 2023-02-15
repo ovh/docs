@@ -6,6 +6,7 @@ section: How to
 order: 4
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/generate-environment/'
+updated: 2020-05-04
 ---
 
 **Last updated 04<sup>th</sup> May, 2020**

@@ -6,6 +6,7 @@ section: AI Training - Tutorials
 order: 01	
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-train-first-ml-model/'
+updated: 2023-01-26
 ---
 
 **Last updated 26th January, 2023.**

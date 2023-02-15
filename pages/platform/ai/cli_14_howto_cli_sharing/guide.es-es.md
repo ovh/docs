@@ -6,6 +6,7 @@ section: Command Line Interface
 order: 204
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/sharing-notebooks/'
+updated: 2021-05-27
 ---
 
 **Last updated 27th May, 2021.**

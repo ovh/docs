@@ -4,6 +4,7 @@ slug: cli/sharing-notebooks
 excerpt: Learn how to share a notebook
 section: Command Line Interface
 order: 204
+updated: 2021-05-27
 ---
 
 **Last updated 27th May, 2021.**

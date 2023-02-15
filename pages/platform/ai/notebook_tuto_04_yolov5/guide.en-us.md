@@ -4,6 +4,7 @@ slug: notebooks/yolov5-example
 excerpt: How to train the YOLOv5 model on a custom dataset with AI Notebooks
 section: AI Notebooks - Tutorials
 order: 04
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

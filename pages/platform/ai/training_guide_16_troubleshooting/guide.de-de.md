@@ -6,6 +6,7 @@ section: AI Training - Guides
 order: 07
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/debug-jobs/'
+updated: 2021-10-04
 ---
 
 **Last updated 04th October, 2021.**

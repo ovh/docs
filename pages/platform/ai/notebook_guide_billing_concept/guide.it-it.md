@@ -6,6 +6,7 @@ section: AI Notebooks - Guides
 order: 5
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/billing/'
+updated: 2022-04-27
 ---
 
 **Last updated 27th April, 2022.**
