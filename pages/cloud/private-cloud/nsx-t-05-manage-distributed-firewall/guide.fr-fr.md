@@ -6,7 +6,7 @@ section: NSX-T
 order: 05
 ---
 
-**Dernière mise à jour le 14/02/2023**
+**Dernière mise à jour le 15/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -33,22 +33,22 @@ order: 05
 
 La fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. Il doit être utilisé normalement sur les connexions est-ouest (ovh-T1-gw)  mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-T0-gw). Le filtrage s'applique à partir de la source (vm, segment, réseau, etc...).
 
-Pour simplifier l'administration de NSX-T il est possible de positionnez des balises sur vos éléments (segments, machines virtuelles, rôles, etc..) et de créer des groupes qui contiennent les objets associés aux balises ou des plages d'adresses IP (Cette solution n'est pas à privilégier).
+Pour simplifier l'administration de NSX-T il est possible de positionnez des marqueurs (tags) sur vos éléments (segments, machines virtuelles, rôles, etc..) et de créer des groupes qui contiennent les objets associés aux marqueurs ou des plages d'adresses IP (Cette solution n'est pas à privilégier).
 
 ## En pratique
 
 Nous allons isoler les communication entre une machine virtuelle et l'ensemble des machines virtuelles d'un segment de manière bi-directionnelle en effectuant ces opérations : 
 
-* Création de deux balises, une sur une machine virtuelle et l'autre sur un segment.
-* Création de deux groupes associés l'un contenant la première balise et l'autre la seconde.
+* Création de deux marqueurs (tag), un sur une machine virtuelle et l'autre sur un segment.
+* Création de deux groupes associés l'un contenant le premier marqueur et l'autre le second.
 * Création d'une stratégie dans le pare-feu distribué qui contiendra deux règles :
     * Une règle qui interdira le trafic venant du premier groupe vers le second.
     * Une autre règle qui interdira le trafic venant du second groupe vers le premier.
 
-### Création des balises
+### Création des marqueurs (tags)
 
 Dans l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur. `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
-Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche du segment que vous voulez baliser et choisissez `Edit`{.action} dans le menu.
+Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche du segment que vous voulez marquer et choisissez `Edit`{.action} dans le menu.
 
 ![01 Create tag on segment 01](images/01-create-tag-on-segment01.png){.thumbnail}
 
@@ -60,11 +60,11 @@ Saisissez `ov1`{.action} à la place de **Scope** et cliquez sur `Add Item(s) ov
 
 ![01 Create tag on segment 02](images/01-create-tag-on-segment02.png){.thumbnail}
 
-Cliquez sur le signe `+`{.action} à gauche de votre balise.
+Cliquez sur le signe `+`{.action} à gauche de votre marqueur
 
 ![01 Create tag on segment 03](images/01-create-tag-on-segment03.png){.thumbnail}
 
-La balise créée est affichée en bas à droite de **Tags**, vous pouvez en créer d'autres en fonction de vos besoins.
+Le marqueur créé est affiché en bas à droite de **Tags**, vous pouvez en créer d'autres en fonction de vos besoins.
 
 Cliquez sur `SAVE`{.action}.
 
@@ -76,7 +76,7 @@ Cliquez sur `CLOSE EDITING`{.action} pour finaliser le balisage de votre segment
 
 Allez sur l'onglet `Inventory`{.action} et cliquez sur `Virtual Machines`{.action} à gauche dans l'inventaire pour afficher la liste des machines virtuelles. 
 
-Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre machine virtuelle que vous voulez baliser et choisissez `Edit`{.action} à l'intérieur du menu.
+Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre machine virtuelle que vous voulez marquer et choisissez `Edit`{.action} à l'intérieur du menu.
 
 ![02 Create tag on vm 01](images/02-create-tag-on-vm01.png){.thumbnail}
 
@@ -88,19 +88,19 @@ Saisissez `ov2`{.action} à la place de **Scope** et cliquez sur `Add Item(s) ov
 
 ![02 Create tag on vm 03](images/02-create-tag-on-vm03.png){.thumbnail}
 
-Cliquez sur le signe `+`{.action} à gauche de votre balise.
+Cliquez sur le signe `+`{.action} à gauche de votre marqueur.
 
 ![02 Create tag on vm 04](images/02-create-tag-on-vm04.png){.thumbnail}
 
-La balise est créée, cliquez sur `SAVE`{.action} pour enregistrer vos modifications.
+Le marqueur est créé, cliquez sur `SAVE`{.action} pour enregistrer vos modifications.
 
 ![02 Create tag on vm 05](images/02-create-tag-on-vm05.png){.thumbnail}
 
-Restez dans l'inventaire et cliquez sur `Tags`{.action} à gauche pour afficher la liste des balises.
+Restez dans l'inventaire et cliquez sur `Tags`{.action} à gauche pour afficher la liste des marqueurs.
 
 ![03 Show tags 01](images/03-show-tags01.png){.thumbnail}
 
-### Ajout de groupes qui contiennent les balises
+### Ajout de groupes qui contiennent les marqueurs (tags)
 
 Toujours dans l'inventaire allez dans `Groups`{.action} à gauche et cliquez sur `ADD GROUP`{.action} pour créer un groupe.
 

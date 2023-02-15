@@ -1,7 +1,7 @@
 ---
-title: Création de VPN
-slug: nsx-t-create-vpn
-excerpt: Comment créer et gérer des VPN
+title: VPN IPSEC avec NSX-T
+slug: nsx-t-ipsec-interconnection
+excerpt: Comment mettre en place un VPN IPSEC
 section: NSX-T
 order: 09
 ---
@@ -14,7 +14,7 @@ order: 09
 
 ## Objectif
 
-**Comment Créer et gérer des VPN entre deux clusters VMware au travers de NSX-T**
+**Comment Créer et gérer des VPN IPSEC entre deux clusters VMware au travers de NSX-T**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
