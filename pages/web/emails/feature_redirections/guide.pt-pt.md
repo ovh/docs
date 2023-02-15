@@ -128,7 +128,7 @@ Siga os passos descritos clicando sucessivamente em cada separador abaixo:
 
 ### Criar um alias <a name="alias"></a>
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`. De seguida, selecione o menu em função da sua oferta de e-mail:
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`{.action}. De seguida, selecione o menu em função da sua oferta de e-mail:
 
 - **Exchange**: na `Microsoft`{.action}, depois em `Exchange`{.action} e selecione a plataforma em causa. Clique no separador `Contas de e-mail`{.action}.
 
