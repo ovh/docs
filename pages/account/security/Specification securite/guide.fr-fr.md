@@ -61,13 +61,27 @@ Ce sont des sauvegardes de configurations des infrastructures qui permettent de 
 ### b. Métier
 Liste des fonctionnalités et options de backups adaptées au service.
 | **Nom de l'option** | **Granularité** | **RTO** | **RPO** | **Documentation et tutoriels**|
-| --- | --- | --- | --- | --- |
 | -FTP backup ou Backup Storage est un espace de stockage de 500Go mis à disposition du client suite à la sousciption au service.        -Le service doit être activé par le client.            -Aucune routine de backup n'est configurée par OVHcloud. | Au choix du client | Dépend du choix du client | NA | https://docs.OVHcloud.com/fr/dedicated/services-backup-storage/#ftpftps |
 | -Backup Storage est une option de stockage supplémentaire, , qui permet d'avoir un espace disque supplémentaire pouvant atteindre 10To pour déposer des sauvegardes. | Au choix du client | dépend du choix du client | NA | https://docs.OVHcloud.com/fr/dedicated/services-backup-storage/#ftpftps |
 
 ## 5. Logs
-| **Source** | **Contenu** | **Lien** |
+| **Source** | **Contenu** | **Liens** |
+| Control Plane (Espace Client) | Logs sur toutes les les interactions réalisées via des appels d'API lancées par les contacts admin, technique ou de facturation et services auxquels ils ont accès. | https://api.OVHcloud.com/console/#/me , voir/me/api/logs , [List of Api calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET),  [List of Api calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET) |
+| Service | Liste des taches lancées sur un serveur donné | https://api.OVHcloud.com/console/#/dedicated/server/%7BserviceName%7D/task~GET |
+| Service | Liste des interventions lancées sur un serveur donné | https://api.OVHcloud.com/console/#/dedicated/server/%7BserviceName%7D/intervention~GET |
+
+Les tâches sont des actions lancées par le client sur un Serveur Dédié : Installation de l'OS, redémarrage de l'OS, activation du mode 'rescue', ...
+
+Les interventions sont des actions réalisées par les équipes OVHcloud dans les Datacentres sur les serveurs physiques : vérification de l'état de équipement ou changement de CPU, RAM ou disque défectueux ...
+
+## 6. API
+| **Nom** | **Capacités** | **Liens** |
 | --- | --- | --- |
+| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de management du service du service | https://api.OVHcloud.com/console/#/dedicated/seed/servverconsole/#/dedicr |
+
+
+
+
 
 
 
