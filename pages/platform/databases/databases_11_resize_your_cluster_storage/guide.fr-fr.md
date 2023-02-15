@@ -1,5 +1,5 @@
 ---
-title: Redimensionnez votre stockage de cluster (EN)
+title: Redimensionnez l'espace de stockage de votre cluster (EN)
 slug: resize-cluster-storage
 excerpt:
 section: Guides généraux
