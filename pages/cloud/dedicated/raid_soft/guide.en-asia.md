@@ -105,7 +105,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-For GPT partitions, the command will return: Disklabel type: dos`.
+For GPT partitions, the command will return: `Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
