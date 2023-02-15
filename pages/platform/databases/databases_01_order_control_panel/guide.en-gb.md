@@ -60,14 +60,13 @@ Take note of the pricing information.
 
 ### Step 5: Size of nodes
 
-Select the number of nodes required for the your cluster:
+Select the number of nodes required for your cluster:
 
 ![Size of nodes](images/databases_01_order_control_panel-20221214083133668.png){.thumbnail}
 
-
 ### Step 6: Configure your options
 
-Depending on the type of database you can adjust the number of nodes in your cluster and add storage space
+Depending on the type of database you can adjust the number of nodes in your cluster and add storage space:
 
 ![Cluster sizing](images/databases_01_order_control_panel-20230215131801790.png){.thumbnail}
 
