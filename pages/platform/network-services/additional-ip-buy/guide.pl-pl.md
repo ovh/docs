@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak zamawiać adresy Additional IP dla swoich instancji"
 slug: buy-additional-ip
 section: Additional IP
 order: 02
+updated: 2023-01-04
 ---
 
 > [!primary]

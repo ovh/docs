@@ -5,6 +5,7 @@ order: 2
 section: Visualize your logs
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/opensearch-dashboards/'
+updated: 2022-06-13
 ---
 
 **Last updated 13th June, 2022**

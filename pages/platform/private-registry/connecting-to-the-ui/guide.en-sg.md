@@ -4,6 +4,7 @@ excerpt: ''
 slug: connecting-to-the-ui
 section: 'Getting started'
 order: 03
+updated: 2021-09-24
 ---
 
 **Last updated 24 September, 2021.**

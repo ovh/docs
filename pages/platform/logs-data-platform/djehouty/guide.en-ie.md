@@ -3,6 +3,7 @@ title: Python 2.x - Push logs with Djehouty
 slug: djehouty
 order: 10
 section: Logging libraries
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

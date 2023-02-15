@@ -3,6 +3,7 @@ title: Using OpenSearch Dashboards with Logs Data Platform
 slug: opensearch-dashboards
 order: 2
 section: Visualize your logs
+updated: 2022-06-13
 ---
 
 **Last updated 13th June, 2022**

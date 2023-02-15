@@ -4,6 +4,7 @@ slug: buy-additional-ip
 excerpt: "Acquista un Additional IP"
 section: Additional IP
 order: 02
+updated: 2023-01-04
 ---
 
 > [!primary]

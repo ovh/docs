@@ -3,6 +3,7 @@ title: The field naming convention
 slug: field-naming-conventions
 order: 2
 section: Get Started
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

@@ -3,6 +3,7 @@ title: Using Grafana with Logs Data Platform
 slug: using-grafana-with-logs
 order: 1
 section: Visualize your logs
+updated: 2022-06-15
 ---
 
 **Last updated 15th June, 2022**

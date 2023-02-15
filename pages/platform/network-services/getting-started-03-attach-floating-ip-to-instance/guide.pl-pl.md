@@ -6,6 +6,7 @@ section: Pierwsze kroki
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/attaching-pci-floating-ip-to-instance/'
+updated: 2022-11-14
 ---
 
 **Last updated 14th November 2022**

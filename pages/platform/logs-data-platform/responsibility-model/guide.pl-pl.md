@@ -6,6 +6,7 @@ section: Get Started
 order: 3
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/responsibility-model/'
+updated: 2023-01-26
 ---
 
 **Last updated January 26th, 2023**

@@ -8,6 +8,7 @@ kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Private Registry
 category_l3: Tutorials
+updated: 2022-04-15
 ---
 
 **Last updated 15th April 2022**

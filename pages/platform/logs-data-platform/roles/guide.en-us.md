@@ -4,6 +4,7 @@ slug: roles
 order: 7
 excerpt: Manage who can have access to your data and what they can do with them.
 section: Features
+updated: 2022-07-28
 ---
 
 **Last updated July 28th, 2022**

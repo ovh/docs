@@ -10,6 +10,7 @@ category_l2: Managed Private Registry
 category_l3: Getting started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/creating-a-private-registry-through-terraform/'
+updated: 2022-08-16
 ---
 
 <style>
