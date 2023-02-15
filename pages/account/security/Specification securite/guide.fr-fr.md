@@ -115,22 +115,97 @@ Le durcissement des systèmes d'exploitation fourni est celui d'une installation
 | Windows | https://docs.microsoft.com/fr-fr/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines |
 
 ### b. Bring Your Own Image
-
-
+Bring Your Own Image est une fonctionnalité qui permet au client d'importer une image de son choix sur un serveur en dehors du catalogue proposé par OVHcloud. 
+Les prérequis et mode d'emploi sont disponibles sur [ce lien](https://docs.ovh.com/fr/dedicated/bringyourownimage/).
 
 ### c. Monitoring OVHcloud
+Un service de monitoring activé par défaut par OVHcloud pour suivre l'état des serveurs des clients via le protocole ICMP. Le client a la possibilité de suivre l'état de ses propres serveurs ou de désactiver ce service via son espace client OVHcloud ou via un appel API.
 
+Le client a également la possibilité d'activer la supervision d'autres services réseaux qui sont désactivés par défaut.
+
+Il appartient au client de suivre les guides de durcissement des éditeurs d'OS et de restreindre les flux ICMP au stricte nécessaire.
+
+Afin de continuer à bénéficier du service de monitoring OVHcloud, le client doit configurer [les règles de filtrage suivantes](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/) sur le pare-feu interne de ses serveurs et sélectionner les autres services dont il souhaite suivre l'état.
+
+OVHcloud propose une fonctionnalité appelée [OVHcloud Link Aggrégation](https://docs.ovh.com/fr/dedicated/ola-manager/), qui peut être activée par les clients et leur permet de bénéficier d'un réseau privé à haut débit et redondé pour ses Serveurs Dédiés.
+
+Si le client active cette fonctionnalité, le monitoring réalisé par OVHcloud sera désactivé.
 
 ## 10. Réversibilité
-
+Afin d'assurer la portabilité et réversibilité des données sur le service, OVHcloud permet au client d'exporter et importer ses données en toute autonomie.
+Les principe de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](https://docs.ovh.com/fr/reversibilite/politique-generale-de-reversibilite/) et ceux spécifiques au service Serveurs Dédiés sont indiqués dans sa [politique spécifique](https://docs.ovh.com/fr/reversibilite/politique-reversibilite-serveurs-dedies/).
 
 ### a. Effacement des données métier
+Suite au décommissionnent du service par le client et avant l'extraction du disque dur du rack, un robot d'effacement applique une procédure d'effacement sécurisée des données basée sur le standard NIST SP 800-88 r1 niveau 'Purge'.
+En cas de contraintes ou limitations techniques sur certaines gammes de disques durs et quand le niveau 'Purge' ne peut s'appliquer, c'est l'effacement au niveau 'Clear' qui s'exécute.
 
 ### b. Effacement des données techniques
-
+Suite au décommissionnent du service par le client, OVHcloud procède à la libération des ressources qui lui sont allouées comme les adresses IP et la suppression des configurations réalisées lors de la livraison du service.
 
 
 ## 11. Représentation normalisée HDS
+**Administrateur de la sécurité** : OVHcloud
+**Acteur de service**
+| **Code** | **Identité** | **Rôle** |
+| --- | --- | --- |
+| OVHcloud | OVHcloud | Opérateur de l'offre certifié HDS |
+
+**Instances des données de santé**
+| **Code** | **Description** | **Acteur** |
+| --- | --- | --- |
+| RBX1 | Datacenter Roubaix 1 (FR) | OVHcloud |
+| RBX2 | Datacenter Roubaix 2 (FR) | OVHcloud |
+| RBX4 | Datacenter Roubaix 4 (FR) | OVHcloud |
+| RBX356 | Datacenter Roubaix 3-5-6 (FR) | OVHcloud |
+| RBX7 | Datacenter Roubaix 7 (FR) | OVHcloud |
+| RBX8 | Datacenter Roubaix 8 (FR) | OVHcloud |
+| RBX8(SNC) | Zone SecNumCloud du datacenter Roubaix 8 (FR) | OVHcloud |
+| GRA | Gravelines (FR) | OVHcloud |
+| SBG3 | Datacenter Strasbourg 3 (FR) | OVHcloud |
+| SBG3(SNC) | Zone SecNumCloud du datacenter Strasbourg 3 (FR | OVHcloud |
+| SBG4 | Datacenter Strasbourg 4 (FR) | OVHcloud |
+| SBG5 | Datacenter Strasbourg 5 (FR) | OVHcloud |
+| SBG5(SNC) | Datacenter Strasbourg 5 (FR) | OVHcloud |
+| BHS | Datacenter Beauharnois (CA) | OVHcloud |
+| ERI | Datacenter Erith (UK) | OVHcloud |
+| LIM | Datacenter Limburg (DE) | OVHcloud |
+| WAW | Datacenter Ozarow (PL) | OVHcloud |
+
+**Conformité de la prise en compte des objectifs de sécurité**
+| Légende | Non conforme | Exempté | Certifié HDS | Certifié HDS et qualifié SecNumCloud |
+| --- | --- | --- | --- | --- |
+
+| **RBX1** | **RBX2** | **RBX4** | **RBX356** | **RBX7** | **RBX8** | **RBX8(SNC)** | **GRA** | **SBG3** | **SBG3(SNC)** | **SBG4** | **SBG5** | **SBG5(SNC)** | **BHS** | **ERI** | **LIM** | **WAW** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A- Sécurité physique et environnementale | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+| B- Maîtrise des supports matériels | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+| C - Protection des flux d'information | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+| D- Maîtrise des accès | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+| E- Maîtrise des interventions | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+| F- Robustesse aux usages imprévus? | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+| G- Continuité ou reprise d'activité | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+| H- Protection contre des lois extra-européennes | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud | OVHcloud |
+
+**Commentaire:**
+* Le client choisit les instances (lieux) sur lesquelles il déploie ses serveurs d'hébergement de données de santé. Si le client souhaite déployer sur plusieurs instances (lieux), il devra souscrire plusieurs fois au service.
+* Objectif B : OVHcloud a pris en compte les risques relatifs à la réallocation des espaces de stockages de ses offres. La copie de données de santé à caractère personnel sur des supports portables est interdite chez OVHcloud. La matérialisation de données de santé à caractère personnel sous format papier ne fait pas partie de la prestation. OVHcloud n'a pas accès au service numérique en santé dans le cadre de cette offre.
+* Objectif C : Dans le cadre de cette offre, OVHcloud fournit exclusivement un matériel informatique conforme à la commande du client. Le client opère ce matériel en complète autonomie. Par conséquent les flux réseau sont complètement opérés par le client, sans aucune intervention d'OVHcloud. C'est la raison pour laquelle cet objectif n'est pas adressé dans le tableau ci-dessus.
+* Objectif D : Dans le cadre de cette offre, OVHcloud ne maîtrise que l'interface de gestion de l'offre (manager OVHcloud) et la fourniture du premier code administrateur du matériel. Le client doit respecter le reste des attentes formalisées dans cet objectif. Nous recommandons au client de mettre en œuvre un système robuste de gestion des accès pour l'ensemble de ses accès métiers.
+* Objectif F : OVHcloud répond à cet objectif de sécurité  dans la limite de sa capacité à agir sur le matériel mis à disposition du client. Nous recommandons au client de mettre en œuvre des processus de maintien en conditions opérationnelles et de sécurité de son matériel à l'état de l'art.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
