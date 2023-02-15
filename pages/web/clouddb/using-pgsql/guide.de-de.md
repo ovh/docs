@@ -6,7 +6,7 @@ section: Erste Schritte
 order: 03
 ---
 
-**Letzte Aktualisierung am 01.03.2023**
+**Letzte Aktualisierung am 15.02.2023**
 
 Sie möchten mit PostgreSQL arbeiten? Dann lesen Sie hier, wie Sie Ihre Datenbanken ganz einfach erstellen und verwalten.
 

@@ -6,7 +6,7 @@ section: Getting started
 order: 03
 ---
 
-**Last updated 1st March 2023**
+**Last updated 15rd February 2023**
 
 Do you want to use PostgreSQL? Learn how to easily manage your databases!
 

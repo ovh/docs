@@ -6,7 +6,7 @@ section: Konfiguration
 order: 05
 ---
 
-**Letzte Aktualisierung am 01.03.2023**
+**Letzte Aktualisierung am 15.02.2023**
 
 ## Ziel
 

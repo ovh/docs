@@ -6,7 +6,7 @@ section: 'Webseitenoptimierung'
 order: 06
 ---
 
-**Letzte Aktualisierung am 01.03.2023**
+**Letzte Aktualisierung am 15.02.2023**
 
 ## Ziel 
 Diese Anleitung richtet sich an Kunden, die die Performance ihrer Webauftritte optimieren möchten.

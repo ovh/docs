@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 03
 ---
 
-**Dernière mise à jour le 01/03/2023**
+**Dernière mise à jour le 15/02/2023**
 
 Vous désirez utiliser PostgreSQL ? Découvrez comment créer et gérer vos bases de données en toute simplicité !
 
