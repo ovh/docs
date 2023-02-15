@@ -25,7 +25,7 @@ Learn how to adjust the storage space of your cluster according to your needs.
 
 ## Instructions
 
-To adjust the storage space of your cluster, you must first log in to the OVHcloud Control panel and open your public cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance, then click the `General Information`{.action} tab.
+To adjust the storage space of your cluster, you must first log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `General Information`{.action} tab.
 
 ![Cluster overview](images/databases_10_resize_your_cluster_storage-20230215132135358.png)
 
