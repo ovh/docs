@@ -7,6 +7,7 @@ slug: vdc-migration
 section: Getting started
 order: 6
 hidden: true
+updated: 2020-12-16
 ---
 
 **Last updated 16th December 2020**

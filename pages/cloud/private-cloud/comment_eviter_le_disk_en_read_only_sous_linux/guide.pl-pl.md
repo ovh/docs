@@ -4,6 +4,7 @@ slug: jak-zapobiec-trybowi-tylko-do-odczytu-na-dysku-z-systemem-linux
 excerpt: Jak zapobiec sytuacji, w której dysk maszyny wirtualnej z systemem Linux przechodzi w tryb tylko do odczytu
 section: Zarządzanie wirtualnymi maszynami
 order: 10
+updated: 2020-06-25
 ---
 
 **Ostatnia aktualizacja z dnia 02-09-2020**

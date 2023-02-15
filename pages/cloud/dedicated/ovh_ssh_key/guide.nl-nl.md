@@ -4,6 +4,7 @@ title: Installatie van de OVHcloud SSH key
 slug: ovh-ssh-key
 excerpt: Deze handleiding beschrijft de installatie van een OVHcloud SSH key om een interventie van onze beheerders toe te staan, met daarna de deactivering ervan. 
 section: SSH en de SSH key
+updated: 2018-02-12
 ---
 
 **Laatste update 12/04/2021**

@@ -6,6 +6,7 @@ section: Tutorials
 order: 4
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-helm/'
+updated: 2023-01-11
 ---
 
 **Last updated 11th January 2023**

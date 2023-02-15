@@ -4,6 +4,7 @@ slug: enable-two-factor-authentication-via-mobile-application
 excerpt: 'Find out how to secure your OVHcloud customer account by enabling two-factor authentication via OTP mobile application'
 section: Security
 hidden: true
+updated: 2020-04-16
 ---
 
 **Last updated 24th June 2020**

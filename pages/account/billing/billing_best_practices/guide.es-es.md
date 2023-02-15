@@ -4,6 +4,7 @@ slug: billing-best-practices
 excerpt: Aquí encontrará los elementos imprescindibles para la correcta gestión de sus facturas, pedidos, formas de pago y cuenta de cliente.
 section: Pedidos, facturas y servicios
 order : 02
+updated: 2022-05-02
 ---
 
 > [!primary]

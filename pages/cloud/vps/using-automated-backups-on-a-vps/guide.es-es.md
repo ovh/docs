@@ -4,6 +4,7 @@ slug: usar-copias-de-seguridad-automatizadas-en-un-vps
 excerpt: 'Cómo activar y usar la opción «Copia de seguridad automatizada» en el panel de control de OVHcloud'
 section: 'Opciones de copia de seguridad'
 order: 2
+updated: 2022-11-15
 ---
 
 > [!primary]

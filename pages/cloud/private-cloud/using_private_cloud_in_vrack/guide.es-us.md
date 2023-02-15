@@ -3,6 +3,7 @@ title: Utilizar el Hosted Private Cloud en un vRack
 excerpt: Cómo utilizar el vRack con la solución Hosted Private Cloud
 slug: hosted-private-cloud-vrack
 section: Servicios y opciones de OVHcloud
+updated: 2022-03-28
 ---
 
 > [!primary]

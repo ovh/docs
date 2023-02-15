@@ -4,6 +4,7 @@ slug: creating-ssh-keys-dedicated
 excerpt: 'Find out how to create SSH keys for a secure connection to your dedicated server'
 section: 'Getting started'
 order: 3
+updated: 2022-03-31
 ---
 
 **Last updated 31st March 2022**
@@ -21,9 +22,9 @@ Please note that SSH keys are not used for authentication on servers running the
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- a [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
-- administrative access (root) via SSH
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
+- Administrative access (root) via SSH
 
 ## Instructions
 
@@ -182,12 +183,12 @@ If you have copied the full output, the identifier after the key should already 
 > Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](../../public-cloud/public-cloud-first-steps).
 >
 
-### Setting a default SSH key (only for the “Dedicated” section)
+### Setting a default SSH key (only for the “Dedicated” section) <a name="cpsshkey"></a>
 
-If you have added multiple SSH keys in your control panel, it is possible to set one key to be used as the default key on the account. 
+If you have added multiple SSH keys in your Control Panel, it is possible to set one key to be used as the default key on the account. 
 
 > [!warning]
-> Please note that once a default key is set, it will also be used as the means connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 
+> Please note that once a default key is set, it will also be used as the means of connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 
 > 
 
 Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.

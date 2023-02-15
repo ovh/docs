@@ -1,7 +1,7 @@
 ---
-title: 'Consulter son compte Exchange depuis l’interface OWA'
+title: 'Consulter son compte E-mail depuis l’interface OWA'
 slug: exchange-2016-guide-utilisation-outlook-web-app
-excerpt: 'Retrouvez ici le detail concernant Outlook Web App pour Exchange '
+excerpt: 'Retrouvez ici le detail concernant Outlook Web App'
 section: "Utilisation d'Outlook Web Application (OWA)"
 order: 01
 ---
@@ -12,7 +12,7 @@ order: 01
 
 Avec OVHcloud Hosted Exchange, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web Application (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/fr/mail/).
 
-**Ce guide explique comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA.**
+**Découvrez comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA.**
 
 ## Prérequis
 

@@ -4,6 +4,7 @@ slug: aktywacja-weryfikacji-dwuetapowej-przez-sms
 excerpt: 'Dowiedz się, jak zabezpieczyć swój panel klienta OVHcloud, aktywując weryfikację dwuetapową przez SMS'
 section: Bezpieczeństwo
 hidden: true
+updated: 2020-04-15
 ---
 
 **Ostatnia aktualizacja z dnia 29-05-2020**

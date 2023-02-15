@@ -4,6 +4,7 @@ slug: nutanix-aos-supported-versions
 excerpt: "Vérifiez les versions de Nutanix AOS supportées par OVHcloud"
 section: Premiers pas
 order: 11
+updated: 2022-11-25
 ---
 
 **Dernière mise à jour le 25/11/2022**

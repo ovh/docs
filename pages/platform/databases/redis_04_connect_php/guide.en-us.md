@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for Redis using the PHP programm
 slug: redis/connect-php
 section: Redis - Guides
 order: 040
+updated: 2022-03-24
 ---
 
 **Last updated 24th March 2022**

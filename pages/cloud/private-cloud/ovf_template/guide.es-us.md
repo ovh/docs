@@ -3,6 +3,7 @@ title: 'Desplegar una plantilla OVF Windows y SQL Server'
 slug: desplegar-plantilla-ovf
 excerpt: 'Cómo desplegar una plantilla OVF Windows y SQL Server'
 section: 'Servicios y opciones de OVHcloud'
+updated: 2020-10-12
 ---
 
 > [!primary]

@@ -4,9 +4,10 @@ slug: enable-automatic-recredit-sms-credit
 excerpt: 'Find out how to manage your OVHcloud SMS credits'
 legacy_guide_number: '16254520'
 section: 'Managing your solution'
+updated: 2023-02-09
 ---
 
-**Last updated 29th August 2022**
+**Last updated 9th February 2023**
 
 ## Objective
 
@@ -72,32 +73,26 @@ Finally, fill in the required fields.
 
 ![credit sms](images/smscredit03.png){.thumbnail}
 
-### Transfer credits
+### Transferring credits
 
 > [!primary]
 >
-> Credit can only be transferred between SMS accounts within the same OVHcloud account. Credit cannot be transferred between two different OVHcloud accounts.
+> SMS credits can only be transferred between SMS accounts within the same OVHcloud account. Credits cannot be transferred between two different OVHcloud accounts.
 >
 
-SMS credits can only be transferred via the API.
+In your OVHcloud Control Panel, choose one of your SMS accounts and click `Transfer Credits`{.action} from the `Home`{.action} tab.
 
-> [!success]
-> If you are not familiar with using the OVHcloud API, please refer to our guide on [Getting started with the OVHcloud API](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
+![sms credits transfer](images/credit-transfer01.png){.thumbnail}
 
-Log in to [https://api.ovh.com/](https://api.ovh.com/), then use the following API call:
+Then choose:
 
-> [!api]
->
-> @api {post} /sms/{serviceName}/transferCredits
->
+- The SMS account that will transfer the credits.
+- The SMS account that will receive the credits.
+- The number of credits to be transferred.
 
-You will need to fill in the following fields.
+Click `Send`{.action} to execute the transfer. This one is immediate.
 
-- `serviceName`: Enter the reference for the SMS account currently holding the credits.
-- `credits`: Enter the number of credits you want to transfer.
-- `smsAccountTarget`: Enter the reference for the SMS account that will receive the credits.
-
-Click `Execute`{.action} to confirm the transfer. The process is immediate.
+![sms credits transfer](images/credit-transfer02.png){.thumbnail}
 
 ## Go further
 

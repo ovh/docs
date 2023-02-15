@@ -4,6 +4,7 @@ slug: modification-des-ressources-d-une-machine-virtuelle
 excerpt: Découvrez comment faire évoluer votre machine virtuelle
 section: Gestion des machines virtuelles
 order: 03
+updated: 2020-06-25
 ---
 
 **Dernière mise à jour le 25/06/2020**

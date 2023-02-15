@@ -4,6 +4,7 @@ excerpt: 'Find out how to send SMS messages with the OVHcloud RESTful API in Nod
 slug: send_sms_with_ovhcloud_api_in_nodejs
 legacy_guide_number: g1651
 section: 'Sending SMS messages'
+updated: 2020-06-18
 ---
 
 **Last updated 18th June 2020**

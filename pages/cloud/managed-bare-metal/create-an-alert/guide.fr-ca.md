@@ -6,6 +6,7 @@ routes:
 excerpt: Paramétrez des alertes sur votre client vSphere
 section: Gestion des machines virtuelles
 order: 09
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

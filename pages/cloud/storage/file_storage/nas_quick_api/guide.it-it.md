@@ -4,6 +4,7 @@ slug: nas/quick-api
 excerpt: Come eseguire le prime operazioni su un servizio NAS-HA utilizzando l'API OVHcloud
 section: NAS-HA
 order: 06
+updated: 2022-07-20
 ---
 
 > [!primary]

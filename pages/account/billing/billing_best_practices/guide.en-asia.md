@@ -4,6 +4,7 @@ slug: billing-best-practices
 excerpt: Find out about the best ways to manage your invoices, orders, payment methods and account
 section: Managing the renewal of services
 order: 02
+updated: 2022-05-02
 ---
 
 **Last updated 18th July 2022**

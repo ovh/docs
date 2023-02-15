@@ -4,6 +4,7 @@ slug: ola-manager
 excerpt: 'Erfahren Sie hier, wie Sie OLA im OVHcloud Kundencenter aktivieren'
 section: 'Fortgeschrittene Nutzung'
 order: 1
+updated: 2022-05-18
 ---
 
 > [!primary]

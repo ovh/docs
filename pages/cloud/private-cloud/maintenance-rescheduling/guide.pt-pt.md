@@ -3,6 +3,7 @@ title: "Desativar uma manutenção programada no seu Hosted Private Cloud"
 excerpt: "Saiba como transferir uma manutenção programada para o seu serviço Hosted Private Cloud powered by VMware"
 slug: maintenance-rescheduling
 section: Funcionalidades da OVHcloud
+updated: 2022-11-30
 ---
 
 > [!primary]

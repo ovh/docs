@@ -6,6 +6,7 @@ excerpt: 'Find out how to install VMware tools on Linux or Windows'
 slug: install_vmware_tools
 section: Virtual machine management
 order: 6
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

@@ -6,6 +6,7 @@ routes:
 excerpt: So steuern Sie die Lastverteilung mit der DRS-Funktion
 section: VMware vSphere Funktionen
 order: 03
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

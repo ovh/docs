@@ -4,6 +4,7 @@ excerpt: ''
 slug: faq_dedicated_cloud
 section: FAQ
 legacy_guide_number: g598
+updated: 2022-12-08
 ---
 
 ## Podczas konfigurowania opcji HA pojawił się błąd: "Erreur HA : Impossible d’effectuer la configuration HA"

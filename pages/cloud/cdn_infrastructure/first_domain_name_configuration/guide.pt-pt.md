@@ -4,6 +4,7 @@ slug: primeira-configuracao-dominio-em-cdn
 excerpt: 'Descubra as boas práticas de configuração de um domínio na CDN da OVH'
 section: Introdução
 order: 2
+updated: 2018-02-21
 ---
 
 **Última atualização: 27/12/2018**

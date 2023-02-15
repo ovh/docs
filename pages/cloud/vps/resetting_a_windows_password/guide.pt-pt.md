@@ -3,6 +3,7 @@ title: 'Reinicializar uma palavra-passe Windows'
 slug: reinicializar-uma-palavra-passe-windows
 excerpt: "Guia de reinicialização de uma palavra-passe em Windows"
 section: Diagnóstico e Modo Rescue
+updated: 2020-11-25
 ---
 
 > [!primary]

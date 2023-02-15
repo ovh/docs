@@ -3,6 +3,7 @@ title: 'Festplatte auf einem Server mit Software-RAID im laufenden Betrieb wechs
 slug: hotswap-software-raid
 excerpt: 'Hier erfahren Sie, wie eine Festplatte auf einem Server mit Software-RAID im laufenden Betrieb ausgetauscht wird.'
 section: 'RAID & Festplatten'
+updated: 2016-11-21
 ---
 
 **Stand 02.09.2019**

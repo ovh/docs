@@ -5,6 +5,7 @@ excerpt: This guide shows you how to change Ceph user rights using the web inter
 section: Cloud Disk Array
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/change-user-rights/'
+updated: 2020-09-21
 ---
 
 **Last update 21st September 2020**

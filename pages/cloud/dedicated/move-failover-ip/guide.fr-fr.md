@@ -4,6 +4,7 @@ excerpt: "Découvrez comment déplacer une Additional IP depuis l'espace client 
 slug: ip-fo-move
 section: 'Réseau & IP'
 order: 7
+updated: 2022-12-20
 ---
 
 **Dernière mise à jour le 20/12/2022**

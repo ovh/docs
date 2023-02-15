@@ -4,6 +4,7 @@ slug: verifier_corriger_failles_spectre_meltdown_hotes
 excerpt: Découvrez comment corriger les vulnérabilités Spectre et Meltdown
 section: Informations Meltdown et Spectre
 order: 02
+updated: 2022-04-30
 ---
 
 ## Objectif

@@ -4,6 +4,7 @@ slug: software-gateway-replacement
 excerpt: Find out how to replace the OVHgateway with another manageable virtual machine
 section: Network & Security
 order: 11
+updated: 2022-12-05
 ---
 
 **Last updated 5th December 2022**
@@ -13,7 +14,7 @@ order: 11
 This guide will explain how to replace the outgoing internet gateway (OVHgateway) with another network operating system that will give you, in addition to internet access, the ability to configure NAT and VPN (Ipsec or SSL VPN).
 
 > [!warning]
-> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure  that they function correctly.
 >
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >

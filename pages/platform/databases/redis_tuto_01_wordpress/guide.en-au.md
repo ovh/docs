@@ -5,6 +5,7 @@ keywords: wordpress, redis, dbaas, cms
 excerpt: Boost the performances of your WordPress CMS with the power of Redis
 section: Redis - Tutorials
 order: 010
+updated: 2021-11-22
 ---
 
 **Last updated 22nd November 2021**

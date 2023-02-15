@@ -4,6 +4,7 @@ slug: advanced-tools
 excerpt: "Présentation de divers outils avancés disponibles pour l'offre Nutanix on OVHcloud"
 section: Utilisation avancée
 order: 01
+updated: 2022-03-28
 ---
 
 **Dernière mise à jour le 28/03/2022**

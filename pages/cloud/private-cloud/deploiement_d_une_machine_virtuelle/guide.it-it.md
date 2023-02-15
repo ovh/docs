@@ -4,6 +4,7 @@ slug: deploy-di-una-macchina-virtuale
 excerpt: Come attivare una macchina virtuale dall’interfaccia vSphere
 section: Gestione delle macchine virtuali
 order: 0
+updated: 2020-06-29
 ---
 
 **Ultimo aggiornamento: 29/06/2020**

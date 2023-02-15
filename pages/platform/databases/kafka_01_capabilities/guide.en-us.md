@@ -4,6 +4,7 @@ slug: kafka/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
 section: Kafka - Guides
 order: 010
+updated: 2023-01-19
 ---
 
 **Last updated January 19th, 2023**
@@ -48,7 +49,6 @@ Please note that Kafka Connect and Kafka Mirrormaker 2 aren't available so far.
 
 Three plans are available:
 
-- *Essential*
 - *Business*
 - *Enterprise*
 
@@ -79,6 +79,7 @@ Here are the node types you can choose from:
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
+| db1-4   | 480       | 2     | 4           |
 | db1-7   | 960       | 2     | 7           |
 | db1-15  | 1920      | 4     | 15          |
 | db1-30  | 3840      | 8     | 30          |

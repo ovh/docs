@@ -4,6 +4,7 @@ slug: vscopeapi
 excerpt: 'Come utilizzare i dati di monitoraggio nelle tue applicazioni tramite l’API vScope'
 section: 'Servizi e opzioni OVHcloud'
 order: 1
+updated: 2020-06-29
 ---
 
 **Ultimo aggiornamento: 25/11/2019**

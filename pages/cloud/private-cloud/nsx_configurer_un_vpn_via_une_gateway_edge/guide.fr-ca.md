@@ -5,6 +5,7 @@ excerpt: Utilisez le service VPN de la NSX Edge Gateway pour interconnecter des 
 legacy_guide_number: '7766647'
 section: NSX
 order: 07
+updated: 2021-11-30
 ---
 
 **Dernière mise à jour le 30/11/2021**

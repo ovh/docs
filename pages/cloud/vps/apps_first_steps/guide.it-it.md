@@ -4,6 +4,7 @@ slug: applicazioni-preinstallallees
 excerpt: Come implementare applicazioni preinstallate sul tuo VPS
 section: 'Per iniziare'
 order: 8
+updated: 2022-08-25
 ---
 
 **Ultimo aggiornamento: 25/08/2022**

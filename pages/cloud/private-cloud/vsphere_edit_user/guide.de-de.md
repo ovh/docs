@@ -3,6 +3,7 @@ title: Eine E-Mail-Adresse mit einem vSphere-Nutzer verbinden
 excerpt: Erfahren Sie hier, wie Sie eine E-Mail-Adresse mit Ihrem Nutzerprofil bei vSphere verbinden können
 slug: e-mail-mit-nutzerprofil-verbinden
 section: OVHcloud Funktionen
+updated: 2020-07-07
 ---
 
 **Letzte Aktualisierung am 06.07.2020**

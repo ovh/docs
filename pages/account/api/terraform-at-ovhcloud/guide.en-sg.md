@@ -4,6 +4,7 @@ excerpt: Find out about useful resources in order to use Terraform with OVHcloud
 slug: terraform-at-ovhcloud
 section: Terraform
 order: 01
+updated: 2023-01-12
 ---
 
 **Last updated 12th January 2023**

@@ -3,6 +3,7 @@ title: Diagnostiquer une VM trop lente
 excerpt: Découvrez comment utiliser vSphere pour résoudre les problèmes de performance d'une VM
 slug: check_a_slow_machine
 section: Gestion des machines virtuelles
+updated: 2022-01-17
 ---
 
 **Dernière mise à jour le 17/01/2022**

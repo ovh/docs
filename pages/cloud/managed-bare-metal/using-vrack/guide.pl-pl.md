@@ -6,6 +6,7 @@ routes:
 excerpt: Dowiedz się, jak korzystać z usługi vRack w ramach usługi Managed Bare Metal
 section: Usługi i opcje OVHcloud
 order: 02
+updated: 2020-11-23
 ---
 
 > [!primary]

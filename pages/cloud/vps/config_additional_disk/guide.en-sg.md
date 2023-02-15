@@ -4,6 +4,7 @@ excerpt: 'Find out how to add and configure additional storage space on a VPS'
 slug: config-additional-disk-vps
 section: 'Backup options'
 order: 3
+updated: 2021-02-24
 ---
 
 **Last updated 24th February 2021**

@@ -7,6 +7,7 @@ excerpt: Retournez à un état précédent de vos VMs à l'aide des snapshots
 legacy_guide_number: '7766547'
 section: Gestion des machines virtuelles
 order: 08
+updated: 2020-11-18
 ---
 
 **Dernière mise à jour le 18/11/2020**

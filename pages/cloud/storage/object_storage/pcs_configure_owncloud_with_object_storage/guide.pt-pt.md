@@ -6,6 +6,7 @@ section: OpenStack Swift Storage Class Specifics
 order: 170
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/configure-owncloud-with-object-storage/'
+updated: 2022-05-20
 ---
 
 **Last updated 20th May 2022**

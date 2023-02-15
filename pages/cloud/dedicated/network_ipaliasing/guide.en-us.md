@@ -3,9 +3,10 @@ title: 'Configuring IP aliasing'
 slug: network-ipaliasing
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
 section: 'Network Management'
+updated: 2022-12-07
 ---
 
-**Last updated 7th December 2022**
+**Last updated 15th February 2023**
 
 > [!primary]
 >
@@ -360,7 +361,7 @@ netplan apply
 ```
 
 
-### CentOS and Fedora (25 and earlier)
+### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9), and Fedora (25 and earlier)
 
 #### Step 1: Create the config file
 
@@ -395,6 +396,14 @@ You now need to start your alias interface:
 
 ```sh
 ifup eth0:0
+```
+
+#### For AlmaLinux and Rocky Linux
+
+You need to restart your interface:
+
+```sh
+systemctl restart NetworkManager
 ```
 
 
@@ -482,41 +491,32 @@ LABEL_1=ens32:0
 Finally, reboot your server to apply the changes.
 
 
-### cPanel (on CentOS 6)
+### cPanel (on CentOS 7)
 
-#### Step 1: Create a backup
+#### Step 1: Access the WHM IP management section
 
-First, make a copy of the config file, so that you can revert at any time:
+In the WHM control panel, click on `IP functions`{.action} and select `Add a New IP Address`{.action} in the left-hand sidebar.
 
-```sh
-cp /etc/ips /etc/ips.bak
-```
+![Add new IP](images/Cpanel-1.png){.thumbnail}
 
-#### Step 2: Edit the config file
+#### Step 2: Add the Additional IP information
 
-You then need to edit the /etc/ips file:
+Enter your Additional IP in the form `xxx.xxx.xxx.xxx` into the field “New IP or IP range to add”. 
 
-```sh
-editor /etc/ips
-```
-Then add the Additional IP to the file:
+Select `255.255.255.255` as your subnet mask, then click on `Submit`{.action}.
 
-```bash
-ADDITIONAL_IP:255.255.255.255:ADDITIONAL_IP
-```
-Next, add the IP in `/etc/ipaddrpool``:
+![enter new IP information](images/Cpanel-2.png){.thumbnail}
 
-```bash
-ADDITIONAL_IP
-```
+> [!warning]
+>
+> Please note that if you have more than one IP to configure on the same block and you add them all at once, the WHM system will force you to use the subnet mask `255.255.255.0`. We do not recommend using this configuration. Instead, you need to add each IP individually in order to use the proper subnet mask `255.255.255.255`.
+> 
 
-#### Step 3: Restart the interface
+#### Step 3: Check the current IP configuration
 
-You now need to restart your interface:
+Back in the section `IP functions`{.action}, click on `Show or Delete Current IP Addresses`{.action} to verify that the Additional IP address was added correctly.
 
-```sh
-/etc/init.d/ipaliases restart
-```
+![check configured IP](images/Cpanel-3.png){.thumbnail}
 
 
 ### Windows Servers
@@ -618,7 +618,7 @@ In the Plesk control panel, choose `Tools & Settings`{.action} from the left-han
 
 Click on `IP Addresses`{.action} under **Tools & Resources**.
 
-#### Step 2: Add the additional IP information
+#### Step 2: Add the Additional IP information
 
 In this section, click on the button `Add IP Address`{.action}.
 

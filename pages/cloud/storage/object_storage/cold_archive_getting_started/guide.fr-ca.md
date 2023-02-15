@@ -4,6 +4,7 @@ slug: cold-archive/getting-started
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
 section: Spécificités de la classe de stockage Cold Archive
 order: 020
+updated: 2022-10-19
 ---
 
 **Dernière mise à jour le 19/01/2023**

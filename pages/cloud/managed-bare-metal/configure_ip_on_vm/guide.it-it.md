@@ -6,6 +6,7 @@ routes:
 excerpt: Come configurare un IP su una macchina virtuale
 section: Gestione delle macchine virtuali
 order: 5
+updated: 2020-11-18
 ---
 
 > [!primary]

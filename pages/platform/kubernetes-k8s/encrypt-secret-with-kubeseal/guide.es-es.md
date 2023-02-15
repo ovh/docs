@@ -6,6 +6,7 @@ section: Security
 order: 2
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/encrypt-secret-with-sealed-secrets-kubeseal/'
+updated: 2022-06-06
 ---
 
 **Last updated 6th June 2022.**

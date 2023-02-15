@@ -3,6 +3,7 @@ title: Global Reversibility Policy
 slug: global-reversibility-policy
 section: Reversibility policies
 order: 1
+updated: 2021-05-05
 ---
 
 **Last updated 5th May 2021**

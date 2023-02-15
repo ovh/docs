@@ -6,6 +6,7 @@ section: Tutorials
 order: 040
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/optimise-the-sending-of-your-files/'
+updated: 2021-12-08
 ---
 
 **Last updated 8th December 2021**

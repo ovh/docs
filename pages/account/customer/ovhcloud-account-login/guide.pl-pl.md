@@ -4,6 +4,7 @@ slug: logowanie-panelu-klienta-ovhcloud
 excerpt: 'Dowiedz się, jak zalogować się do Twojego konta OVHcloud'
 Section: 'Pierwsze kroki'
 order: 2
+updated: 2021-07-01
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Ihre Dienste über die OVHcloud API verlängern'
 slug: dienst-via-api-verlaengern
 excerpt: 'So verlängern Sie Ihre Dienste über die OVHcloud API'
 section: 'Verlängerung der Dienste verwalten'
+updated: 2020-05-05
 ---
 
 **Letzte Aktualisierung am 05.05.2020**

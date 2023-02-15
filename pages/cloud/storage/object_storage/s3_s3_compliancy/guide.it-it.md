@@ -6,6 +6,7 @@ section: General information
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/s3-compliancy/'
+updated: 2021-12-08
 ---
 
 **Last updated 8th December 2021**

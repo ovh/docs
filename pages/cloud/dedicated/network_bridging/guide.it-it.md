@@ -3,6 +3,7 @@ title: 'Modalità bridge IP'
 slug: network-bridging
 excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
 section: 'Rete e IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

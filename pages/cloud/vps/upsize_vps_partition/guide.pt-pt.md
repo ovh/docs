@@ -3,6 +3,7 @@ title: 'Reparticionar um VPS após um upgrade'
 slug: criar-particao-apos-upgrade-vps
 section: Primeiros passos
 order: 5
+updated: 2021-05-18
 ---
 
 > [!primary]

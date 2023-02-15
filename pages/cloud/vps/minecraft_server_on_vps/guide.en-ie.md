@@ -3,6 +3,7 @@ title: 'Tutorial - How to create a Minecraft server on a VPS'
 slug: create-minecraft-server-on-vps
 excerpt: 'Find out how to install your own Minecraft server'
 section: Tutorial
+updated: 2021-06-29
 ---
 
 **Last updated 29th June 2021**

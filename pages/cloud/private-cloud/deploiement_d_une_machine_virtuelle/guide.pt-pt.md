@@ -4,6 +4,7 @@ slug: implementacao-de-uma-maquina-virtual
 excerpt: Saiba como implementar uma máquina virtual através da interface vSphere
 section: Gestão das máquinas virtuais
 order: 0
+updated: 2020-06-29
 ---
 
 **Última atualização: 28/07/2020**

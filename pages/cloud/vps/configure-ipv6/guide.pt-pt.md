@@ -4,6 +4,7 @@ slug: configurar-ipv6
 excerpt: 'Saiba como configurar o IPv6 num VPS da OVHcloud'
 section: 'Rede e IP'
 order: 1
+updated: 2022-12-01
 ---
 
 > [!primary]

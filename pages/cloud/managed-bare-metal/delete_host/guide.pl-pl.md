@@ -6,6 +6,7 @@ routes:
 excerpt: 'Dowiedz się, jak usunąć serwer hosta z infrastruktury Managed Bare Metal'
 legacy_guide_number: '1442308'
 section: 'Funkcjonalności OVHcloud'
+updated: 2021-03-19
 ---
 
 **Ostatnia aktualizacja z dnia 19-03-2021**

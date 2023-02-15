@@ -4,6 +4,7 @@ slug: api
 excerpt: 'Find out how to set up OVHcloud Connect using OVHcloud APIv6'
 section: Configuration
 order: 2
+updated: 2020-09-14
 ---
 
 **Last updated 14th September 2020**

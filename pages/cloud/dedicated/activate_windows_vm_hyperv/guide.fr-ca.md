@@ -3,6 +3,7 @@ title: 'Activer des Machines Windows utilisant Hyper-V sur un Windows Server sou
 slug: activate-windows-vm-hyperv
 excerpt: "Apprenez à créer et activer une machine virtuelle à l'aide de Hyper-V sur un serveur Windows sous licence OVHcloud"
 section: 'Tutoriel'
+updated: 2022-01-06
 ---
 
 **Dernière mise à jour le 06/01/2022**

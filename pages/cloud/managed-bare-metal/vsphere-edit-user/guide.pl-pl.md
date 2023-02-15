@@ -5,6 +5,7 @@ routes:
 excerpt: Dowiedz się, jak powiązać adres e-mail z użytkownikiem vSphere
 slug: powiazanie-adresu-e-mail-z-uzytkownikiem
 section: Funkcjonalności OVHcloud
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

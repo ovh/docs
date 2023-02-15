@@ -4,6 +4,7 @@ slug: quelle-configuration-est-adaptee-a-mes-besoins
 excerpt: 'Découvrez comment choisir et appliquer une configuration sur votre numéro'
 section: 'Numéros ou alias'
 order: 3
+updated: 2022-07-07
 ---
 
 **Dernière mise à jour le 07/07/2022**

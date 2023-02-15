@@ -3,6 +3,7 @@ title: "Wartungsarbeiten auf Ihrer Hosted Private Cloud verschieben"
 excerpt: "Erfahren Sie hier, wie Sie geplante Wartungsarbeiten auf Ihrer Hosted Private Cloud Powered by VMware "
 slug: wartungsarbeiten
 section: OVHcloud Funktionen
+updated: 2022-11-30
 ---
 
 > [!primary]

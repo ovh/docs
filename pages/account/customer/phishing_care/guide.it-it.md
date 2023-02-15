@@ -3,6 +3,7 @@ title: 'Proteggersi dalle truffe: come riconoscere email fraudolente e di phishi
 slug: truffe-frode-phishing
 excerpt: 'Come riconoscere un’email di phishing e cosa fare se si clicca su un link fraudolento'
 section: Sicurezza
+updated: 2020-10-12
 ---
 
 **Ultimo aggiornamento: 12/10/2020**

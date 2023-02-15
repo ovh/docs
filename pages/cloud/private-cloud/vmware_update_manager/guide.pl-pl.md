@@ -5,6 +5,7 @@ slug: korzystanie_z_vmware_update_manager
 section: 'Funkcjonalności VMware vSphere'
 legacy_guide_number: g591
 order: 11
+updated: 2021-12-09
 ---
 
 > [!primary]

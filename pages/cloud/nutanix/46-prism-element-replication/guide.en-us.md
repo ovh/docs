@@ -4,6 +4,7 @@ slug: prism-element-nutanix-replication
 excerpt: How to set up asynchronous or NearSync replication through Prism Element
 section: Disaster Recovery Plan
 order: 04
+updated: 2022-06-29
 ---
 
 **Last updated 29th June 2022**
@@ -13,7 +14,7 @@ order: 04
 This guide details how to set up cluster replication via Prism Element.
 
 > [!warning]
-> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they they function correctly.
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure  that they function correctly.
 >
 > This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en/directory/) or reaching out to [our community](https://community.ovh.com/en/) if you experience any issues.
 >

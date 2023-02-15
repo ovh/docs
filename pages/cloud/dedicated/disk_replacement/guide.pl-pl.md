@@ -3,6 +3,7 @@ title: 'Wymiana uszkodzonego dysku'
 slug: wymiana-dysku
 excerpt: 'Dowiedz się, jak zidentyfikować uszkodzony dysk i zlecić jego wymianę'
 section: 'RAID & dyski'
+updated: 2018-06-21
 ---
 
 **Ostatnia aktualizacja dnia 01/06/2018**

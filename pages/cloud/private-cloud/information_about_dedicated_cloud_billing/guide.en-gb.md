@@ -4,6 +4,7 @@ excerpt: Details about the Hosted Private Cloud billing
 slug: information_about_dedicated_cloud_billing
 legacy_guide_number: g677
 section: Getting started
+updated: 2022-12-08
 ---
 
 

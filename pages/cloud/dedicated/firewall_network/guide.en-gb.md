@@ -2,6 +2,7 @@
 title: 'Configuring the Network Firewall'
 slug: firewall-network
 section: 'Network management'
+updated: 2022-12-20
 ---
 
 **Last updated 20th December 2022**

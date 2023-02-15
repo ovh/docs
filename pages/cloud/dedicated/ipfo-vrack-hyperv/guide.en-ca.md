@@ -3,6 +3,7 @@ title: "Setting up a Virtual Machine using Additional IPs and Hyper-V over a vRa
 excerpt: "How to use Hyper-V with Additional IPs over a vRack"
 slug: foip-vrack-hyperv
 section: vRack
+updated: 2021-02-25
 ---
 
 **Last updated 25th February 2021**

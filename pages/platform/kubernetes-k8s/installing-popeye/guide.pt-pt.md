@@ -6,6 +6,7 @@ section: Security
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-popeye/'
+updated: 2022-04-15
 ---
 
 **Last updated 15th April 2022**

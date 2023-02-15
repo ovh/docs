@@ -4,6 +4,7 @@ excerpt: Saiba como configurar a firewall em Windows
 slug: firewall-windows
 section: Tutoriais
 order: 02
+updated: 2022-01-31
 ---
 
 > [!primary]

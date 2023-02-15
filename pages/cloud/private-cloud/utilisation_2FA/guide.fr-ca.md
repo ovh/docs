@@ -4,6 +4,7 @@ slug: utilisation-2FA
 excerpt: Apprenez à mettre en place la double authentification pour protéger votre infrastructure
 section: Fonctionnalités OVHcloud
 order: 05
+updated: 2022-06-10
 ---
 
 **Dernière mise à jour le 10/06/2022**

@@ -3,6 +3,7 @@ title: 'Configurar a Network Firewall'
 excerpt: 'Saiba como configurar a Network Firewall'
 slug: firewall-network
 section: 'Redes & IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

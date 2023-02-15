@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/zabezpieczenie-dostepu-vsphere/'
 excerpt: 'Dowiedz się, jak zabezpieczyć dostęp do klienta vSphere'
 section: 'Pierwsze kroki'
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja dnia 18-11-2020**

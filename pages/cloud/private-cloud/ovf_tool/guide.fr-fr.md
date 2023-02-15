@@ -4,6 +4,7 @@ slug: ovf-tool
 excerpt: "Découvrez comment exporter ou importer des machines virtuelles via l'outil OVF Tool"
 legacy_guide_number: '2163202'
 section: Outils de migration des Machines Virtuelles
+updated: 2022-01-31
 ---
 
 **Dernière mise à jour le 31/01/2022**

@@ -4,6 +4,7 @@ slug: vsphere-register-vm-vmx
 excerpt: Dowiedz się, jak ponownie zarejestrować wirtualne maszyny w nowej usłudze w starych datastore
 section: Funkcjonalności VMware vSphere
 order: 07
+updated: 2021-03-24
 ---
 
 > [!primary]

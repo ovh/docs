@@ -3,6 +3,7 @@ title: Deploy applications to specific Nodes and Nodes Pools
 slug: label-nodeaffinity-node-pools
 excerpt: 'Find out how to deploy applications to specific Nodes and Nodes Pools, with labels and NodeAffinity, on OVHcloud Managed Kubernetes'
 section: Tutorials
+updated: 2021-12-15
 ---
 
 <style>

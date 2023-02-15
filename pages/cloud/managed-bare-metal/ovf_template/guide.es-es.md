@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/es/private-cloud/desplegar-plantilla-ovf/'
 excerpt: 'Cómo desplegar una plantilla OVF Windows y SQL Server'
 section: 'Servicios y opciones de OVHcloud'
+updated: 2020-11-18
 ---
 
 > [!primary]

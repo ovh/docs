@@ -4,6 +4,7 @@ slug: clone-a-vm
 excerpt: Learn two ways to clone an existing virtual machine in vSphere
 section: Maintenance and monitoring
 order: 07
+updated: 2022-01-12
 ---
 
 **Last updated 12th January 2022**

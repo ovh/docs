@@ -4,6 +4,7 @@ slug: ola-manager
 excerpt: 'Dowiedz się, jak włączyć OVHcloud Link Aggregation w Panelu klienta'
 section: 'Poziom zaawansowany'
 order: 1
+updated: 2022-05-18
 ---
 
 > [!primary]

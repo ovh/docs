@@ -4,6 +4,7 @@ slug: gestion-de-usuarios
 excerpt: 'Cómo añadir usuarios desde su cuenta de OVHcloud'
 section: 'Uso avanzado'
 order: 01
+updated: 2020-05-20
 ---
 
 **Última actualización: 23/06/2020**

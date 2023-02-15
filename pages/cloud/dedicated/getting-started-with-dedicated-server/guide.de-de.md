@@ -4,6 +4,7 @@ slug: erste-schritte-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten'
 section: 'Erste Schritte'
 order: 1
+updated: 2022-12-12
 ---
 
 > [!primary]

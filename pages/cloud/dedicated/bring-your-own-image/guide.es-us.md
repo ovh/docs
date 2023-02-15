@@ -3,6 +3,7 @@ title: Utilizar la funcionalidad Bring Your Own Image
 excerpt: Cómo desplegar las imágenes con Bring Your Own Image
 slug: bringyourownimage
 section: Uso avanzado
+updated: 2022-11-25
 ---
 
 > [!primary]

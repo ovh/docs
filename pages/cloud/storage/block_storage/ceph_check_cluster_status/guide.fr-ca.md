@@ -3,6 +3,7 @@ title: Cluster status
 slug: ceph/check-cluster-status
 excerpt: Ce guide vous présente comment vérifier l'état du Cluster CEPH
 section: Cloud Disk Array
+updated: 2020-12-22
 ---
 
 **Last update 22nd December 2020**

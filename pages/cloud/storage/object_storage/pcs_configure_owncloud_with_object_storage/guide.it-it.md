@@ -5,6 +5,7 @@ slug: pcs/configure-owncloud-with-object-storage
 section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g2000
 order: 170
+updated: 2022-05-20
 ---
 
 

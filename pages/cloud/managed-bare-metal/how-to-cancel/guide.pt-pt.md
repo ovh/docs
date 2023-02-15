@@ -6,6 +6,7 @@ routes:
 excerpt: Saiba como solicitar a rescisão de uma infraestrutura Managed Bare Metal
 section: Funcionalidades da OVHcloud
 order: 09
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

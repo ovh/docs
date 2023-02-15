@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/connect_iso_to_vm/'
 legacy_guide_number: g1438
 section: Introdução
+updated: 2022-01-11
 ---
 
 **Last Updated on 11th January 2022**

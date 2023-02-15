@@ -3,6 +3,7 @@ title: Inviare SMS con l’API OVHcloud in Java
 excerpt: Come inviare SMS con l’API OVHcloud RESTful in Java
 slug: inviare_sms_con_lapi_ovh_in_java
 section: Inviare SMS
+updated: 2020-06-01
 ---
 
 **Ultimo aggiornamento: 18/05/2020**

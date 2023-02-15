@@ -4,6 +4,7 @@ slug: connessione-interfaccia-vsphere
 excerpt: Come accedere a vSphere con diverse modalità
 section: Per iniziare
 order: 2
+updated: 2022-06-24
 ---
 
 > [!primary]

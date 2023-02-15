@@ -4,6 +4,7 @@ slug: mongodb/tutorial-build-nodejs-app-connected-to-managed-mongodb
 excerpt: "Find out how to build a NodeJS application connected to an OVHcloud Managed MongoDB service"
 section: MongoDB - Tutorials
 order: 010
+updated: 2022-07-27
 ---
 
 **Last updated 27<sup>th</sup> July 2022**

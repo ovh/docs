@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/private-cloud/zerto-replicacao-virtual-cliente-para-ovhcloud/'
 excerpt: 'Saiba como configurar uma VPN de modo a ligar uma plataforma Zerto local a uma Managed Bare Metal OVHcloud.'
 section: 'Serviços e opções OVHcloud'
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

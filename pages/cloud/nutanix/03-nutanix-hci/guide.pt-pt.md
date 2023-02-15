@@ -6,6 +6,7 @@ routes:
 excerpt: Presentation of the Nutanix hyperconvergence solution
 section: Primeiros passos
 order: 04
+updated: 2022-02-22
 ---
 
 **Last updated 22nd February 2022**

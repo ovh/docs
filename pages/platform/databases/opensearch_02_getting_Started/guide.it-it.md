@@ -6,6 +6,7 @@ section: OpenSearch - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/getting-started/'
+updated: 2021-12-06
 ---
 
 **Last updated 06<sup>th</sup> December 2021**

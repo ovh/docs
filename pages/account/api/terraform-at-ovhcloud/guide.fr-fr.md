@@ -6,6 +6,7 @@ section: Terraform
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/api/terraform-at-ovhcloud/'
+updated: 2023-01-12
 ---
 
 **Last updated 12th January 2023**

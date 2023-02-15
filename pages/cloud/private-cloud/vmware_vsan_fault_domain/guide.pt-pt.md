@@ -3,6 +3,7 @@ title: 'Gestão de domínios com avarias vSAN'
 slug: vmware-vsan-fault-domain
 excerpt: 'Saiba como gerir os domínios de falha do vSAN'
 section: 'Funcionalidades VMware vSphere'
+updated: 2021-12-23
 ---
 
 > [!primary]

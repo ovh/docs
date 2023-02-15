@@ -3,6 +3,7 @@ title: Creare la prima campagna SMS
 excerpt: Come creare la prima campagna di invio SMS
 slug: la_prima_campagna_sms
 section: Per iniziare
+updated: 2022-08-05
 ---
 
 > [!primary]

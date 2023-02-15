@@ -3,6 +3,7 @@ title: 'Modificare la password amministratore su un server dedicato Windows'
 slug: "modificare-password-admin-su-server-windows"
 excerpt: 'Come impostare una nuova password amministratore su un server Windows'
 section: 'Diagnostica e modalità Rescue'
+updated: 2021-01-12
 ---
 
 **Ultimo aggiornamento: 16/12/2020**

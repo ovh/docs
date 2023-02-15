@@ -4,6 +4,7 @@ slug: configurer-le-firewall-distribue-nsx
 legacy_guide_number: '7766505'
 section: NSX
 order: 08
+updated: 2021-12-01
 ---
 
 **Dernière mise à jour le 01/12/2021**

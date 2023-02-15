@@ -4,13 +4,14 @@ excerpt: 'Come riavviare il tuo server dedicato in modalità Rescue'
 slug: rescue_mode
 legacy_guide_number: g920
 section: 'Diagnostica e modalità Rescue'
+updated: 2023-02-07
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 20/09/2022**
+**Ultimo aggiornamento: 07/02/2023**
 
 ## Obiettivo
 
@@ -152,6 +153,37 @@ Salva la partizione eseguendo il comando seguente, sostituendo `sdbX` con il val
 
 ```bash
 rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Se disponi di datastore di tipo `VMFS 6`, installa manualmente il tool `vmfs6-tools` nell'ambiente della modalità Rescue:
+
+```bash
+rescue-customer:~# apt-get update && apt-get upgrade
+# apt-get install git uuid-dev libfuse-dev pkg-config gcc
+# git clone https://salsa.debian.org/debian/vmfs6-tools.git
+# cd vmfs6-tools
+# make
+# make install
+```
+
+Accedi alla cartella `sbin` per creare la cartella di montaggio:
+
+```bash
+rescue-customer:~# cd /usr/local/sbin/
+# mkdir /mnt/datastore
+```
+
+Leggi le tue partizioni per recuperare il nome della partizione del datastore:
+
+```bash
+rescue-customer:~# fdisk -l
+```
+
+Salva la partizione eseguendo il comando seguente, sostituendo `sdbX` con il valore identificato nello step precedente:
+
+
+```bash
+rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.

@@ -1,7 +1,7 @@
 ---
-title: Ajouter un pied de page pour vos comptes Exchange 
+title: Ajouter un pied de page pour vos comptes E-mail
 slug: exchange-signature-automatique-disclaimer
-excerpt: Retrouvez ici la procedure d’activation d’un pied de page (Disclaimer) sur votre compte Exchange
+excerpt: Découvrez comment créer une signature automatique depuis l’espace client OVHcloud
 section: Fonctionnalités des comptes Exchange
 order: 07
 ---
@@ -19,7 +19,6 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Avoir souscrit une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/) 
-
 
 ## En pratique
 

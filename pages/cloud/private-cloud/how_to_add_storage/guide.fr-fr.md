@@ -3,6 +3,7 @@ title: Comment ajouter de l'espace de stockage ?
 excerpt: Découvrez comment ajouter des capacités de stockage à votre infrastructure.
 slug: additional-storage
 section: Premiers pas
+updated: 2022-02-01
 ---
 
 **Dernière mise à jour le 01/02/2022**

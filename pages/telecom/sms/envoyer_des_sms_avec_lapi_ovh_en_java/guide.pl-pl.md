@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS za pomocą interfejsu API 
 slug: wysylanie-wiadomosci-sms-api-ovh-java
 legacy_guide_number: g1670
 section: 'Wysyłanie wiadomości SMS'
+updated: 2020-06-01
 ---
 
 **Ostatnia aktualizacja z dnia 18-05-2020**

@@ -4,6 +4,7 @@ excerpt: Find out how to order and manage your Public Cloud managed database ser
 slug: order-terraform
 section: Guides généraux
 order: 020
+updated: 2022-10-19
 ---
 
 **Last updated October 19<sup>th</sup>, 2022**

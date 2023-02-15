@@ -5,6 +5,7 @@ excerpt: Find out how to use vRack with an SDDC solution
 legacy_guide_number: '7766915'
 section: OVHcloud Features
 order: 2
+updated: 2022-03-28
 ---
 
 **Last updated 28th March 2022**

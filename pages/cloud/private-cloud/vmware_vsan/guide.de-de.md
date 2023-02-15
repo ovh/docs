@@ -6,6 +6,7 @@ routes:
 excerpt: Use the power of Hyperconvergence with vSAN
 section: VMware vSphere Funktionen
 order: 10
+updated: 2022-09-07
 ---
 
 **Last updated 7th September 2022**

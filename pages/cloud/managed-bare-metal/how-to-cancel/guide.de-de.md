@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/eine-private-cloud-kuendigen/'
 excerpt: Erfahren Sie hier, wie Sie eine Managed Bare Metal Infrastruktur kündigen können
 section: OVHcloud Funktionen
+updated: 2020-11-18
 ---
 
 **Letzte Aktualisierung am 18.11.2020**

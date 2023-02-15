@@ -4,6 +4,7 @@ slug: migrer-un-serveur-dedie-vers-un-autre
 excerpt: "Découvrez comment migrer les données d'un serveur dédié vers un autre"
 section: Premiers pas
 order: 5
+updated: 2021-09-16
 ---
 
 **Dernière mise à jour le 16/09/2021**

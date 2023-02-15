@@ -3,6 +3,7 @@ title: Rescheduling a maintenance on your Hosted Private Cloud
 excerpt: Find out how to postpone a planned maintenance on your Hosted Private Cloud powered by VMware
 slug: maintenance-rescheduling
 section: OVHcloud Features
+updated: 2022-11-30
 ---
 
 **Last updated 30th November 2022**

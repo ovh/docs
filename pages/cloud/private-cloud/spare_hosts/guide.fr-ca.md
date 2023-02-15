@@ -5,6 +5,7 @@ excerpt: Comprendre le mécanisme de remplacement d'hôte
 legacy_guide_number: '2883590'
 section: Fonctionnalités OVHcloud
 order: 04
+updated: 2020-06-29
 ---
 
 **Dernière mise à jour le 07/07/2020**

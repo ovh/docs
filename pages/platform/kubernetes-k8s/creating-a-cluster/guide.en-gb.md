@@ -4,6 +4,7 @@ slug: creating-a-cluster
 excerpt: ''
 section: Getting started
 order: 0
+updated: 2021-09-29
 ---
 
 **Last updated 29th September 2021**

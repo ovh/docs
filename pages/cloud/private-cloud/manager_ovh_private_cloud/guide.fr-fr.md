@@ -4,6 +4,7 @@ slug: manager-ovh-private-cloud
 excerpt: Découvrez les possibilités de votre espace client Hosted Private Cloud
 section: Premiers pas
 order: 1
+updated: 2021-12-15
 ---
 
 **Dernière mise à jour le 15/12/2021**

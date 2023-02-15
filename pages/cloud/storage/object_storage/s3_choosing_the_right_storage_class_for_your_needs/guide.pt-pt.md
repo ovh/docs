@@ -5,6 +5,7 @@ section: General information
 order: 005
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/choosing-the-right-storage-class-for-your-needs/'
+updated: 2022-09-27
 ---
 
 **Last updated September 27<sup>th</sup>2022**

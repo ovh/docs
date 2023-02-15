@@ -4,6 +4,7 @@ slug: securing-nginx-ingress-cert-manager
 excerpt: 'Find out how to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes'
 section: Traffic management
 order: 02
+updated: 2022-06-27
 ---
 
 **Last updated 27th June 2022.**

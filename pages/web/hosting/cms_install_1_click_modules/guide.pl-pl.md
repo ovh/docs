@@ -1,12 +1,16 @@
 ---
 title: Automatyczna instalacja strony WWW za pomocą modułu CMS
 slug: hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www
-excerpt: Dowiedz się, jak stworzyć stronę internetową za pomocą modułów OVH
+excerpt: Dowiedz się, jak stworzyć stronę internetową za pomocą modułów OVHcloud
 section: CMS
 order: 01
 ---
 
-**Ostatnia aktualizacja dnia 26-01-2023**
+**Ostatnia aktualizacja dnia 31-01-2023**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
 ## Wprowadzenie 
 
@@ -145,6 +149,10 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
 
 [Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
+
+[Zarządzanie CMS](https://docs.ovh.com/pl/hosting/1-click-module-management/)
+
+[Odinstaluj CMS](https://docs.ovh.com/pl/hosting/1-click-module-management/#etap-3-usun-modul)
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 

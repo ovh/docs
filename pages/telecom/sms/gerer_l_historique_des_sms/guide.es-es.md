@@ -6,6 +6,7 @@ legacy_guide_number: '8650753'
 space_key: CRSMSFAX
 space_name: SMS
 section: 'Gestionar el servicio'
+updated: 2022-08-05
 ---
 
 > [!primary]

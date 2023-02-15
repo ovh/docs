@@ -3,6 +3,7 @@ title: 'Pojęcie numeru zamówienia lub Purchase Order (PO)'
 slug: purchase-order
 excerpt: 'Zrozumienie i zastosowanie pojęcia numeru zamówienia lub zamówienia w ramach regulowania należności za faktury OVHcloud'
 section: Płatności
+updated: 2022-07-22
 ---
 
 > [!primary]

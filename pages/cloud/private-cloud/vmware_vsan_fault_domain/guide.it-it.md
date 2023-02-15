@@ -3,6 +3,7 @@ title: Gestione dei domini di guasto vSAN
 slug: vmware-vsan-fault-domain
 excerpt: Come gestire i domini di guasto vSAN
 section: Funzionalità VMware vSphere
+updated: 2021-12-23
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: pcs/optimised-method-for-uploading-files-to-object-storage
 section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1951
 order: 130
+updated: 2021-10-27
 ---
 
 **Última atualização: 27/10/2021**

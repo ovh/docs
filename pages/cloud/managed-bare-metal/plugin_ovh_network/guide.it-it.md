@@ -7,6 +7,7 @@ excerpt: 'Scopri come utilizzare il plugin OVHcloud Network con la soluzione Man
 legacy_guide_number: '7766560'
 section: 'Funzionalità OVHcloud'
 order: 03
+updated: 2020-11-18
 ---
 
 **Ultimo aggiornamento: 18/11/2020**

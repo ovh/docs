@@ -3,6 +3,7 @@ title: Configuring MegaRAID for RAID Level 0
 slug: using-the-maximum-amount-of-disk-space
 excerpt: "Find out how to configure RAID 0 in order to use your server's entire disk space"
 section: RAID and disks
+updated: 2022-07-08
 ---
 
 **Last updated 8th July 2022**

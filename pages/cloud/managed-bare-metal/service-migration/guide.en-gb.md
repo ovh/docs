@@ -6,6 +6,7 @@ excerpt: Find out how to manage all aspects of migrating an infrastructure to Ma
 slug: sddc-migration
 section: Getting started
 order: 6
+updated: 2020-11-23
 ---
 
 **Last updated 23rd November 2020**

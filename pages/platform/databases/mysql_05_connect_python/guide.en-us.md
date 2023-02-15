@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for MySQL using the Python progr
 slug: mysql/connect-python
 section: MySQL - Guides
 order: 050
+updated: 2022-03-08
 ---
 
 **Last updated 8th March 2022**

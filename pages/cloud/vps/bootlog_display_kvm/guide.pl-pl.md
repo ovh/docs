@@ -3,6 +3,7 @@ title: Wyświetl logi bootu w KVM
 slug: wyswietlanie-bootlog-w-kvm
 excerpt: 'Dowiedz się, jak zdiagnozować serwer VPS, sprawdzając logi startowe (boot logs)'
 section: Diagnostyka i tryb Rescue
+updated: 2021-07-05
 ---
 
 > [!primary]

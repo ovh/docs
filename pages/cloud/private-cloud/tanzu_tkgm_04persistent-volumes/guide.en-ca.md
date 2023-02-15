@@ -4,6 +4,7 @@ slug: tanzu-tkgm-persistent-volumes
 excerpt: How to deploy an application in Tanzu Kubernetes Grid with persistent volumes
 section: Tanzu
 order: 05
+updated: 2022-11-10
 ---
 
 **Last updated 10th November 2022**

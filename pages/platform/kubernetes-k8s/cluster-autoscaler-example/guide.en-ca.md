@@ -2,6 +2,7 @@
 title: Cluster autoscaler example
 slug: cluster-autoscaler-example
 section: Tutorials
+updated: 2022-05-17
 ---
 
 <style>

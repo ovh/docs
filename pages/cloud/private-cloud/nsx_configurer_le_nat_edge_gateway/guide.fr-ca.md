@@ -5,6 +5,7 @@ excerpt: Redirigez votre trafic à l'aide des règles NAT
 legacy_guide_number: '7766371'
 section: NSX
 order: 06
+updated: 2021-11-26
 ---
 
 **Dernière mise à jour le 26/11/2021**

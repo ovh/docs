@@ -4,13 +4,14 @@ slug: capacidades-tecnicas
 excerpt: 'Encontre as capacidades e limitações técnicas das soluções Hosted Private Cloud fornecidas pela OVHcloud'
 section: FAQ
 order: 2
+updated: 2023-02-01
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 18/08/2021**
+**Última atualização: 01/02/2023**
 
 ## Objetivo
 
@@ -22,12 +23,13 @@ order: 2
 |:-----:|:-----:|:----------:|
 | Número máximo. de PCC por ID de cliente | Número de vCenter ou de packs por organização | Nenhum limite |
 | Número de PCC associados | Ligação do vCenters (Enhanced Link Mode) | 0 (não autorizado) |
+| Número min. datastores por PCC (SLA) | Número de datastores por vCenter para a manutenção do contrato de nível de serviço | 2 |
 | Número min. hosts por PCC (SLA) | Número de hosts por vCenter para a manutenção do contrato de nível de serviço | 2 |
 | Número min. hosts por PCC (sem SLA) | Número mínimo de hosts a utilizar com o vCenter sem contrato de nível de serviço | 0 |
 | Número máximo. de hosts por cluster | Hosts por cluster | 64 |
 | Número máximo. de clusters por vDC | Número de clusters no mesmo datacenter virtual | Nenhum limite |
 | Número máximo. de vDC por PCC | O número de datacenters virtuais (vDC) que os clientes podem adicionar por vCenter | 400 |
-| Número máximo. hosts por PCC | Limites de hosts por vCenter | intervalo **Hosts**: 340 hosts, 70 zpools<br>intervalo **Hybrid**: 241 hosts, 120 zpools<br>gama **BigDS**: 76 hosts, 205 zpools |
+| Número máximo. hosts por PCC | Limites de hosts por vCenter | 231 hosts, 110 zpools |
 | Número máximo. de máquinas virtuais pela SDDC | VMs geridas pelo mesmo vCenter | 25 000 |
 | Número máximo. de máquinas virtuais por host | VMs alojadas no mesmo host físico | 1024 |
 | Número máximo. de endereços IP por PCC | Número máximo. endereços IP públicos que podem ser atribuídos e utilizáveis por vCenter | 1 x /23 |

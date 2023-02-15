@@ -7,6 +7,7 @@ excerpt: Return to a previous VM state using snapshots
 legacy_guide_number: '7766547'
 section: Gestión de las máquinas virtuales
 order: 08
+updated: 2022-01-19
 ---
 
 **Last updated 19th January 2022**

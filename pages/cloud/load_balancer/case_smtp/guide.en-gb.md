@@ -3,6 +3,7 @@ title: 'Configuring SMTP on a Load Balancer service'
 slug: case-smtp
 excerpt: 'Find out how to use SMTP with the OVH Load Balancer'
 section: 'Use case'
+updated: 2018-12-28
 ---
 
 **Last updated 28th December 2018**

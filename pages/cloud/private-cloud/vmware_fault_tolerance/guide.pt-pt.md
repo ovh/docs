@@ -5,6 +5,7 @@ excerpt: Como garantir a continuidade da sua máquina virtual com o serviço Fau
 legacy_guide_number: '2163251'
 section: Funcionalidades VMware vSphere
 order: 06
+updated: 2020-07-07
 ---
 
 **Última atualização: 28/07/2020**

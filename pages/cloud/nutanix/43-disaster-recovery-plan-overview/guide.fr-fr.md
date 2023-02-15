@@ -4,6 +4,7 @@ slug: disaster-recovery-plan-overview
 excerpt: "Aperçu des diverses solutions de Plan de Reprise d'Activité sous Nutanix"
 section: "Plan de Reprise d'Activité"
 order: 01
+updated: 2022-06-29
 ---
 
 **Dernière mise à jour le 29/06/2022**

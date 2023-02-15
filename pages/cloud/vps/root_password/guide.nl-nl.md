@@ -4,6 +4,7 @@ title: Wijziging van uw root-wachtwoord op een VPS
 slug: root-password
 excerpt: Leer hoe u het root-wachtwoord van een VPS kunt wijzigen.
 section: Diagnose en Reddingsmodus
+updated: 2021-04-20
 ---
 
 **Laatste update 27/06/2018**

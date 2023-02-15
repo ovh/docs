@@ -4,6 +4,7 @@ slug: nodejs-install-wikijs
 excerpt: Find out how to install WikiJS on your POWER web hosting plan
 section: Node.js
 order: 4
+updated: 2021-02-04
 ---
 
 

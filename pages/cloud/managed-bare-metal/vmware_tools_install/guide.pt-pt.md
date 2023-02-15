@@ -5,6 +5,7 @@ routes:
 excerpt: 'Saiba como instalar as VMware Tools em Linux ou Windows'
 slug: instalar_o_pacote_vmware_tools
 section: Gestão das máquinas virtuais
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

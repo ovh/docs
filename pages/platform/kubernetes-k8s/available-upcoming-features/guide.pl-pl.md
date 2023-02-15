@@ -5,6 +5,7 @@ slug: available-upcoming-features
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/available-upcoming-features/'
+updated: 2022-08-11
 ---
 
 **Last updated August 11th, 2022.**

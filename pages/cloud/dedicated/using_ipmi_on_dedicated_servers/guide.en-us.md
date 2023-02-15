@@ -4,6 +4,7 @@ slug: use-ipmi-dedicated-servers
 excerpt: Find out how to log on to your server without the use of external software
 section: 'Getting started'
 order: 4
+updated: 2022-11-16
 ---
 
 **Last updated 16th November 2022**

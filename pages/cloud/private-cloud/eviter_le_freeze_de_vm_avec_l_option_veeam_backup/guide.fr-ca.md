@@ -4,6 +4,7 @@ slug: eviter-le-freeze-de-vm-avec-l-option-veeam-backup
 excerpt: Apprenez à mettre en œuvre une solution de contournement avec le mécanisme VMware DRS
 section: Services et options OVHcloud
 order: 07
+updated: 2022-02-22
 ---
 
 **Dernière mise à jour le 22/02/2022**

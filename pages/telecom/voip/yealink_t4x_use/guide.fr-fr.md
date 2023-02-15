@@ -4,6 +4,7 @@ slug: utiliser-yealink-t4x
 excerpt: 'Découvrez comment utiliser votre téléphone Yealink T4X'
 section: 'Yealink T4X'
 hidden: true
+updated: 2018-05-30
 ---
 
 **Dernière mise à jour le 30/05/2018**

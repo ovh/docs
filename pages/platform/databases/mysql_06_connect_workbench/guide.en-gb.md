@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for MySQL using MySQL Workbench
 slug: mysql/connect-workbench
 section: MySQL - Guides
 order: 060
+updated: 2022-03-08
 ---
 
 **Last updated 8th March 2022**
@@ -43,27 +44,27 @@ Once you have downloaded and installed it, follow the steps below to set up a re
 
 Click `New Connection`{.action}.
 
-![](images/mysql_06_connect_workbench-20220210111228867.png)
+![workbench welcome](images/mysql_06_connect_workbench-20220210111228867.png)
 
 In the **Setup New Connection** dialog box, fill in the `Parameters`{.action} tab form with the previously collected information.
 
-![](images/mysql_06_connect_workbench-2022021011165750.png)
+![Workbench setup](images/mysql_06_connect_workbench-2022021011165750.png)
 
 Store the password for connection in keychain.
 
-![](images/mysql_06_connect_workbench-2022021011180843.png)
+![Workbench stre password](images/mysql_06_connect_workbench-2022021011180843.png)
 
 Switch to `SSL`{.action} tab and set `Use SSL` to `Require`.
 
-![](images/mysql_06_connect_workbench-20220210111545457.png)
+![Workbench ssl](images/mysql_06_connect_workbench-20220210111545457.png)
 
 Once done, select your new connection.
 
-![](images/mysql_06_connect_workbench-20220210113913361.png)
+![Workbench home](images/mysql_06_connect_workbench-20220210113913361.png)
 
 Congratulations, in the `Schemas`{.action} tab, you will see your databases.
 
-![](images/mysql_06_connect_workbench-20220210114125831.png)
+![Workbench query result](images/mysql_06_connect_workbench-20220210114125831.png)
 
 > [!primary]
 >

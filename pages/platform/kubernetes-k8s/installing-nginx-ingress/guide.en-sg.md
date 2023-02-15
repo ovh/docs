@@ -4,6 +4,7 @@ slug: installing-nginx-ingress
 excerpt: 'Find out how to install Nginx Ingress on OVHcloud Managed Kubernetes'
 section: Traffic management
 order: 0
+updated: 2022-06-27
 ---
 
 **Last updated 27th June 2022**

@@ -3,6 +3,7 @@ title: Activating and using Veeam Managed Backup
 slug: veeam-backup-as-a-service
 excerpt: Find out how to enable and use the Veeam Managed Backup option to secure your VMs
 section: 'OVHcloud services and options'
+updated: 2021-12-07
 ---
 
 **Last updated 7th December 2021**

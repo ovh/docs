@@ -4,6 +4,7 @@ slug: setting-up-a-persistent-volume
 excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Volumes (PV), attach a Pod to a PVC, change PV reclaim policy and delete created objects'
 section: Storage
 order: 0
+updated: 2022-11-28
 ---
 
 **Last updated 28th November 2022.**

@@ -5,6 +5,7 @@ excerpt: Contratar un bloque de IP en Hosted Private Cloud
 legacy_guide_number: '7766457'
 section: Funcionalidades de OVHcloud
 order: 01
+updated: 2022-04-06
 ---
 
 **Última actualización: 06/04/2022**

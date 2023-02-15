@@ -4,6 +4,7 @@ slug: pca/unlock
 excerpt: Retrouvez ici comment dégeler vos archives
 section: Spécificités de la classe de stockage d'archive OpenStack Swift
 order: 030
+updated: 2022-04-12
 ---
 
 **Dernière mise à jour le 23/09/2021**

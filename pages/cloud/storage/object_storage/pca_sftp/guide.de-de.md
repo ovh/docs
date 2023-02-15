@@ -4,6 +4,7 @@ slug: pca/sftp
 excerpt: Hier erfahren Sie, wie Sie Ihre Public Cloud Archive verwalten und verwalten.
 section: OpenStack Swift Archive Storage Class Specifics
 order: 100
+updated: 2022-05-13
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Modalità di ripartizione'
 slug: iplb-balancing
 excerpt: 'Scopri le diverse modalità di ripartizione del carico dell’OVH Load Balancer'
 section: Configurazione
+updated: 2018-01-17
 ---
 
 **Ultimo aggiornamento: 29/08/2018**

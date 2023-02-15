@@ -6,6 +6,7 @@ routes:
 excerpt: Lernen Sie die verschiedenen Formate von Festplatten kennen
 section: Verwaltung virtueller Maschinen
 order: 04
+updated: 2020-11-18
 ---
 
 **Stand 18.11.2020**

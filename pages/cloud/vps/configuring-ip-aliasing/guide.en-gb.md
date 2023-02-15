@@ -3,6 +3,7 @@ title: Configuring IP aliasing
 slug: network-ipaliasing-vps
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
 section: 'Network management'
+updated: 2022-10-06
 ---
 
 **Last updated 6th October 2022**

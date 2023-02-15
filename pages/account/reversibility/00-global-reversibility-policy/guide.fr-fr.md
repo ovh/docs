@@ -3,6 +3,7 @@ title: Politique générale de réversibilité
 slug: politique-generale-de-reversibilite
 section: Politiques de réversibilité
 order: 1
+updated: 2021-05-05
 ---
 
 **Dernière mise à jour le 05/05/2021**

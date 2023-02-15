@@ -6,6 +6,7 @@ routes:
 excerpt: Utilização e implementação do SDK vSphere
 section: Funcionalidades VMware vSphere
 order: 10
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

@@ -4,6 +4,7 @@ excerpt: Saiba como proteger um servidor com iptables
 slug: firewall-iptables
 section: Tutoriais
 order: 01
+updated: 2022-10-18
 ---
 
 > [!primary]

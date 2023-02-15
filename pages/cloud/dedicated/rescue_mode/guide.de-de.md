@@ -3,13 +3,14 @@ title: 'Rescue-Modus aktivieren und verwenden'
 slug: ovh-rescue
 excerpt: 'Erfahren Sie hier, wie Sie den Rescue-Modus für einen Dedicated Server aktivieren und verwenden'
 section: 'Diagnose & Rescue Modus'
+updated: 2023-02-07
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 20.09.2022**
+**Letzte Aktualisierung am 07.02.2023**
 
 ## Ziel
 
@@ -151,7 +152,38 @@ Mounten Sie nun die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX
 rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
-Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
+Wenn Sie Datastores vom Typ `VMFS 6` haben, installieren Sie manuell das Tool `vmfs6-tools` in der Umgebung des Rescue-Modus:
+
+
+```bash
+rescue-customer:~# apt-get update && apt-get upgrade
+# apt-get install git uuid-dev libfuse-dev pkg-config gcc
+# git clone https://salsa.debian.org/debian/vmfs6-tools.git
+# cd vmfs6-tools
+# make
+# make install
+```
+
+Wechseln Sie in den Ordner `sbin`, um den Mount-Ordner zu erstellen:
+
+```bash
+rescue-customer:~# cd /usr/local/sbin/
+# mkdir /mnt/datastore
+```
+
+Listen Sie anschließend Ihre Partitionen auf, um den Namen der Partition des Datastores abzurufen:
+
+```bash
+rescue-customer:~# fdisk -l
+```
+
+Mounten Sie nun die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX` mit dem im vorherigen Schritt identifizierten Wert:
+
+```bash
+rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
+```
+
+Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte booten`{.action} und starten Sie den Server über die Kommandozeile neu.
 
 ### Windows <a name="windowsrescue"></a>
 

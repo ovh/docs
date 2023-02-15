@@ -4,6 +4,7 @@ slug: configuring-vrack-on-dedicated-servers
 excerpt: 'Find out how to configure the vRack on two or more dedicated servers'
 section: 'vRack'
 order: 01
+updated: 2022-05-02
 ---
 
 **Last updated 2nd May 2022**

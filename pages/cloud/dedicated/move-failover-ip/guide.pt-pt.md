@@ -4,6 +4,7 @@ excerpt: Saiba como migrar um Additional IP a partir da Área de Cliente ou atra
 slug: ip-fo-move
 section: Redes & IP
 order: 7
+updated: 2022-12-20
 ---
 
 > [!primary]

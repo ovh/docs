@@ -4,6 +4,7 @@ slug: nas/partitions-api
 excerpt: Find out how to manage HA-NAS partitions using the OVHcloud API
 section: HA-NAS
 order: 08
+updated: 2022-07-20
 ---
 
 **Last updated 20th July 2022**

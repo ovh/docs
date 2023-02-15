@@ -4,6 +4,7 @@ slug: vsphere-register-vm-vmx
 excerpt: Cómo reregistrar máquinas virtuales en un nuevo servicio desde datastores antiguos
 section: Funcionalidades de VMware vSphere
 order: 07
+updated: 2021-03-24
 ---
 
 > [!primary]

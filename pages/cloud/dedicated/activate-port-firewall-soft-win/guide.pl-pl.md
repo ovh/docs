@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak skonfigurować firewall w systemie Windows
 slug: firewall-windows
 section: Tutoriale
 order: 02
+updated: 2022-01-31
 ---
 
 > [!primary]

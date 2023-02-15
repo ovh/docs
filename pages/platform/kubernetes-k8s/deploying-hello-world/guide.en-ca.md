@@ -4,6 +4,7 @@ slug: deploying-hello-world
 excerpt: 'Find out how to deploy a Hello World application with the OVHcloud Control Panel'
 section: Tutorials
 order: 0
+updated: 2022-02-21
 ---
 
 **Last updated February 21, 2022.**

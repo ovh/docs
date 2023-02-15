@@ -4,6 +4,7 @@ slug: managing-nodes
 excerpt: ''
 section: User guides
 order: 0
+updated: 2022-10-12
 ---
 
 **Last updated 12th October 2022**

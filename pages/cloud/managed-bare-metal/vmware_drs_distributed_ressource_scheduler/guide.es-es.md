@@ -6,6 +6,7 @@ routes:
 excerpt: Aprenda a gestionar el balanceo de carga con la función DRS
 section: Funcionalidades de VMware vSphere
 order: 03
+updated: 2020-11-18
 ---
 
 **Última actualización: 18/11/2020**

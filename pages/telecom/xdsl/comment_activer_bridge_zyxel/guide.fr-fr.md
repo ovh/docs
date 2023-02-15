@@ -3,6 +3,7 @@ title: 'Comment activer le mode bridge sur un modem Zyxel'
 slug: comment-activer-bridge-zyxel
 excerpt: "Découvrez comment activer le mode bridge sur un modem Zyxel afin d'utiliser votre propre routeur"
 section: 'Configurations techniques avancées'
+updated: 2022-12-08
 ---
 
 **Dernière mise à jour le 08/12/2022**

@@ -3,6 +3,7 @@ title: Gestionar las facturas de OVHcloud
 slug: gestionar-facturas-ovh
 excerpt: Cómo gestionar sus facturas y pagos en OVHcloud
 section: Pedidos, facturas y servicios
+updated: 2022-05-12
 ---
 
 > [!primary]

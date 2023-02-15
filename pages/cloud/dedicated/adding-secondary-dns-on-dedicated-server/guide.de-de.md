@@ -3,6 +3,7 @@ title: 'OVHcloud DNS Server mit einem Dedicated Server verwenden'
 slug: sekundaeren-dns-erstellen-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie einen sekundären DNS Server für Ihren Dedicated Server einrichten'
 section: 'Fortgeschrittene Nutzung'
+updated: 2021-01-08
 ---
 
 > [!primary]

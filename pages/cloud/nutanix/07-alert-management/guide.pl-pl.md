@@ -6,6 +6,7 @@ routes:
 excerpt: 'Analysing and modifying alerts and events in a Nutanix cluster'
 section: Pierwsze kroki
 order: 10
+updated: 2022-03-17
 ---
 
 **Last updated 17th March 2022**

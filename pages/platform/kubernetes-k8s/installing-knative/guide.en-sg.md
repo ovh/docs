@@ -4,6 +4,7 @@ slug: installing-knative
 excerpt: Find out how to install Knative on OVHcloud Managed Kubernetes and deploy your first serverless containers
 section: Serverless
 order: 1
+updated: 2023-01-02
 ---
 
 **Last updated 2nd January, 2023.**

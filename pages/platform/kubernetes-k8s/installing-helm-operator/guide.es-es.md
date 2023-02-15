@@ -6,6 +6,7 @@ section: Operators
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/deploying-helm-operator/'
+updated: 2022-02-23
 ---
 
 **Last updated 23rd February, 2022.**

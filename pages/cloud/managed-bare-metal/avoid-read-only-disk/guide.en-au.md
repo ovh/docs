@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to avoid read-only switching on your Linux VM disk
 section: Virtual machine management
 order: 10
+updated: 2020-11-18
 ---
 
 **Last updated 18th November 2020**

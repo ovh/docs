@@ -4,6 +4,7 @@ slug: proteger-um-servidor-dedicado
 excerpt: 'Saiba como proteger o seu servidor dedicado graças a estas dicas'
 section: Introdução
 order: 2
+updated: 2018-06-20
 ---
 
 **Última atualização: 22/08/2018**

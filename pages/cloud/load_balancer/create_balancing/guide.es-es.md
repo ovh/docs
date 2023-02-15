@@ -3,6 +3,7 @@ title: 'Modos de balanceo'
 slug: modos-de-balanceo
 excerpt: 'Modos de balanceo de la carga del Load Balancer de OVH'
 section: Configuración
+updated: 2018-01-17
 ---
 
 **Última actualización: 21/02/2018**

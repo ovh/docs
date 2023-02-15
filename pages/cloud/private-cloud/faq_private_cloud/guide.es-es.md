@@ -4,6 +4,7 @@ excerpt: ''
 slug: faq_dedicated_cloud
 legacy_guide_number: g598
 section: FAQ
+updated: 2022-12-08
 ---
 
 

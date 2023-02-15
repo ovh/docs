@@ -4,6 +4,7 @@ title: 'IPMI gebruiken voor dedicated servers'
 slug: gebruik-ipmi-dedicated-servers
 excerpt: 'Met de IPMI kunt u inloggen op uw server zonder externe software te gebruiken'
 section: 'Aan de slag'
+updated: 2022-11-16
 ---
 
 **Laatste update 16-08-2018**

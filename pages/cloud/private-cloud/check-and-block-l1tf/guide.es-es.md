@@ -3,6 +3,7 @@ title: 'Verificar y mitigar el fallo L1TF'
 slug: verificar-mitigar-fallo-l1tf
 excerpt: 'Cómo protegerse de la vulnerabilidad L1TF'
 section: Seguridad
+updated: 2019-02-26
 ---
 
 **Última actualización: 15/04/2019**

@@ -6,9 +6,13 @@ section: CMS
 order: 01
 ---
 
-**Letzte Aktualisierung am 26.01.2023**
+**Letzte Aktualisierung am 31.01.2023**
 
-## Einleitung 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+## Ziel 
 
 1-Klick-Module ermöglichen die einfache und schnelle Installation einer Website, auch ohne technische Vorkenntnisse. Sie verwenden die gängigsten CMS: WordPress, PrestaShop, Drupal und Joomla!.
 
@@ -23,7 +27,7 @@ order: 01
 - Sie haben ein neues, leeres Verzeichnis erstellt, um Ihr Modul darin zu installieren.
 - Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist als Multisite registriert.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Die Wahl des richtigen CMS
 
@@ -145,6 +149,10 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
+
+[CMS verwalten](https://docs.ovh.com/de/hosting/1-click-module-management/)
+
+[Ihr CMS deinstallieren](https://docs.ovh.com/de/hosting/1-click-module-management/#schritt-3-ihr-modul-loschen)
 
 Entdecken Sie unsere [CloudDB Angebote](https://www.ovh.de/cloud/cloud-databases/){.external}
 

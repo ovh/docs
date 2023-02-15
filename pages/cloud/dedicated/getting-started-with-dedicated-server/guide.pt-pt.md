@@ -4,6 +4,7 @@ slug: primeiros-passos-servidor-dedicado
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado'
 section: Introdução
 order: 1
+updated: 2022-12-12
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: "Intégration d'un Décodeur TV"
 slug: intel-itv1-integration-decodeur-tv
 excerpt: "Configurer votre OverTheBox pour continuer de profiter de vos services de télévision"
 section: "OverTheBox Intel et IT v1"
+updated: 2021-04-14
 ---
 
 **Dernière mise à jour le 14/04/2021**

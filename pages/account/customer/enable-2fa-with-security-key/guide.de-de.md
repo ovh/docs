@@ -4,6 +4,7 @@ slug: die-Zwei-Faktor-Authentifizierung-mit-Sicherheitsschlüssel-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr OVHcloud Kundencenter absichern können, indem Sie die Zwei-Faktor-Authentifizierung per U2F-Sicherheitsschlüssel aktivieren'
 section: Sicherheit
 hidden: true
+updated: 2022-07-08
 ---
 
 > [!primary]

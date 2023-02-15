@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie die Bereitstellung eines Spare-Hosts abläuft
 slug: die_spare-hosts
 section: OVHcloud Funktionen
 order: 04
+updated: 2020-06-29
 ---
 
 

@@ -4,6 +4,7 @@ slug: dedizierten-server-sichern
 excerpt: 'In dieser Anleitung erhalten Sie einige Tipps zur Sicherung Ihres dedizierten Servers.'
 section: 'Erste Schritte'
 order: 2
+updated: 2018-06-20
 ---
 
 **Stand 22.08.2018**

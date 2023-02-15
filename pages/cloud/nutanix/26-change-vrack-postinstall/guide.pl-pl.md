@@ -6,6 +6,7 @@ routes:
 excerpt: Find out how to change the Nutanix cluster vRack
 section: Sieć i bezpieczeństwo
 order: 06
+updated: 2022-01-11
 ---
 
 **Last updated 11th January 2022**

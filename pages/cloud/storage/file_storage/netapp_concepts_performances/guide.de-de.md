@@ -4,6 +4,7 @@ excerpt: "Entdecken Sie die Konzepte für die Bereitstellung, Überwachung und d
 slug: netapp/performances
 section: Enterprise File Storage
 order: 011
+updated: 2022-11-30
 ---
 
 **Letzte Aktualisierung am 30.11.2022**

@@ -6,6 +6,7 @@ section: Redis - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/configure-redis-instance/'
+updated: 2022-03-24
 ---
 
 **Last updated 24th March 2022**

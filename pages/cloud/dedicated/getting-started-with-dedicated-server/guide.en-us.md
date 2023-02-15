@@ -4,6 +4,7 @@ slug: getting-started-dedicated-server
 excerpt: 'Find out how to proceed after the delivery of your dedicated server'
 section: 'Getting started'
 order: 1
+updated: 2022-12-12
 ---
 
 **Last updated 12th December 2022**

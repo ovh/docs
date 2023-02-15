@@ -3,6 +3,7 @@ title: Configuring OVHcloud Secondary DNS on a VPS
 slug: secondary-dns-vps
 excerpt: Find out how to add a secondary DNS server for your domain
 section: Advanced usage
+updated: 2022-01-12
 ---
 
 **Last updated 12th January 2022**

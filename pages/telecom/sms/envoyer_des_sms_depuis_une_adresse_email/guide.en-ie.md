@@ -3,6 +3,7 @@ title: 'Sending SMS messages via an email address'
 slug: send-sms-message-via-email-address
 excerpt: 'Find out how to send SMS messages via an email address'
 section: 'Sending SMS messages'
+updated: 2020-06-04
 ---
 
 **Last updated 04th June 2020**

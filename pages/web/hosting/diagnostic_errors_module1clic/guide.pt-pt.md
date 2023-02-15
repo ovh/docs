@@ -3,7 +3,7 @@ title: Resolver os erros mais frequentes associados aos módulos 1 clique
 slug: erros-frequentes-modulos-em-1-clique
 excerpt: Diagnosticar os casos mais comuns de erros associados à criação de módulos 1 clique
 section: Diagnóstico
-Order: 02
+order: 02
 ---
 
 > [!primary]

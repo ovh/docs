@@ -4,6 +4,7 @@ slug: cassandra/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
 section: Cassandra - Guides
 order: 010
+updated: 2023-01-19
 ---
 
 **Last updated January 19th, 2023**
@@ -129,7 +130,6 @@ As of today, you can't export logs and metrics, nor plug them into a remote tool
 - **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
-
 
 ## We want your feedback!
 

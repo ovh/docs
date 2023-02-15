@@ -3,6 +3,7 @@ title: 'Utiliser le plugin OVHcloud dans vSphere'
 slug: plugin-private-cloud-ovh
 excerpt: "Découvrez comment utiliser le plugin OVHcloud afin d'ajouter des ressources dédiées à votre infrastructure"
 section: 'Fonctionnalités OVHcloud'
+updated: 2021-11-15
 ---
 
 **Dernière mise à jour le 15/11/2021**

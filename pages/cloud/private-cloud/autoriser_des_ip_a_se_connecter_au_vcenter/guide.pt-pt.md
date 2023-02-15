@@ -2,6 +2,7 @@
 title: Autorizar IP a ligar-se ao vCenter
 slug: autorizar-ip-a-ligar-se-ao-vcenter
 section: Funcionalidades da OVHcloud
+updated: 2023-01-25
 ---
 
 **Última atualização: 25/01/2023**

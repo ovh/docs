@@ -4,6 +4,7 @@ slug: nas/manage-acls
 excerpt: Apprenez à gérer les accès au NAS-HA via l'API OVHcloud
 section: NAS-HA
 order: 07
+updated: 2022-07-20
 ---
 
 **Dernière mise à jour le 20/07/2022**

@@ -4,6 +4,7 @@ slug: certyfikat-ssl-cdn
 excerpt: 'Dowiedz się, jak dodać certyfikat SSL do usługi CDN'
 section: 'Pierwsze kroki'
 order: 4
+updated: 2018-02-22
 ---
 
 **Ostatnia aktualizacja dnia 06-12-2018**

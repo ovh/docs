@@ -6,6 +6,7 @@ section: Guides généraux
 order: 040
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/troubleshooting/'
+updated: 2021-09-27
 ---
 
 **Last updated 27th September 2021**

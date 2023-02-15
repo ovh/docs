@@ -5,6 +5,7 @@ excerpt: This guide shows you how to create an IP ACL to allow access to your ce
 section: Cloud Disk Array
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/create-an-ip-acl/'
+updated: 2018-03-26
 ---
 
 **Last update 26th March 2018**

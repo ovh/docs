@@ -4,6 +4,7 @@ slug: nutanix-hci
 excerpt: Presentation of the Nutanix hyperconvergence solution
 section: Getting started
 order: 04
+updated: 2022-02-22
 ---
 
 **Last updated 22nd February 2022**

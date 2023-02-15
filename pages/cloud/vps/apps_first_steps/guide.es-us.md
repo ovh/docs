@@ -4,6 +4,7 @@ slug: aplicaciones-preinstalables
 excerpt: Cómo desplegar aplicaciones preinstaladas en un VPS
 section: 'Primeros pasos'
 order: 7
+updated: 2022-08-25
 ---
 
 **Última actualización: 25/08/2022**

@@ -4,6 +4,7 @@ excerpt: Cómo buscar errores en un sistema de archivos en modo de rescate
 slug: check-file-system-vps
 section: Diagnóstico y modo de rescate
 order: 5
+updated: 2021-04-20
 ---
 
 > [!primary]

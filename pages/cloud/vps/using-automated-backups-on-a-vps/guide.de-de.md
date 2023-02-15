@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Option “Auto
 slug: verwendung-automatische-backups-vps
 section: 'Backup Optionen'
 order: 2
+updated: 2022-11-15
 ---
 
 **Letzte Aktualisierung am 15.11.2022**

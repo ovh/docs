@@ -4,6 +4,7 @@ slug: pcs/swift-commands-memo
 excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneurs d'objets
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 100
+updated: 2022-11-16
 ---
 
 **Dernière mise à jour le 16/11/2022**

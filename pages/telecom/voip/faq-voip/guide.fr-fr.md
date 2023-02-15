@@ -3,6 +3,7 @@ title: FAQ VoIP OVHcloud
 slug: faq-voip
 section: FAQ
 order: 1
+updated: 2021-06-11
 ---
 
 **Dernière mise à jour le 11/06/2021** 

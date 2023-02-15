@@ -4,6 +4,7 @@ slug: pca/rsync
 excerpt: Dowiedz się, jak uzyskać dostęp do Twoich archiwów Public Cloud za pomocą Rsync
 section: OpenStack Swift Archive Storage Class Specifics
 order: 090
+updated: 2020-12-08
 ---
 
 > [!primary]

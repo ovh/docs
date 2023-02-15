@@ -3,6 +3,7 @@ title: RACI Dedicated servers
 slug: raci-dedicated-server
 section: RACI Bare Metal Cloud
 excerpt: RACI between OVHcloud and the customer for Dedicated Servers
+updated: 2021-12-01
 ---
 
 **Last updated December 1st, 2021**

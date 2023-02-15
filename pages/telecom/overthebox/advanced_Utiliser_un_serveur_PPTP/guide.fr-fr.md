@@ -5,6 +5,7 @@ description: 'Utiliser un serveur VPN PPTP derrière OverTheBox'
 slug: utiliser-un-serveur-vnp-pptp
 excerpt: "Afin d'utiliser un serveur VPN PPTP derrière votre OverTheBox, il faut évidement une redirection du port TCP (par défaut le 1723). Cependant, il faut aussi une redirection GRE.  Ce guide vous montre comment effectuer cette dernière manipulation sur l'OverTheBox."
 section: "Configurations techniques avancées"
+updated: 2021-04-13
 ---
 
 ## Explications

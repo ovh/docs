@@ -3,6 +3,7 @@ title: 'Método de repartição'
 slug: iplb-balancing
 excerpt: 'Conheça os diferentes métodos de repartição de carga do Load Balancer OVH'
 section: Configuração
+updated: 2018-01-17
 ---
 
 **Última atualização: 16/05/2018**

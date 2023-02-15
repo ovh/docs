@@ -4,6 +4,7 @@ slug: ola-debian9
 excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Debian 9 Server aktivieren'
 section: 'Fortgeschrittene Nutzung'
 order: 2
+updated: 2022-01-07
 ---
 
 **Letzte Aktualisierung am 25.03.2021**

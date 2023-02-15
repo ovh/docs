@@ -5,6 +5,7 @@ excerpt: Vérifier l'état du protocole SSLv3 sur votre Private Cloud
 legacy_guide_number: '1442264'
 section: Informations Meltdown et Spectre
 order: 04
+updated: 2019-02-15
 ---
 
 **Dernière mise à jour le 15/02/2019**

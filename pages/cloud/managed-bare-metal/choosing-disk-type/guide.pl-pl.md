@@ -6,6 +6,7 @@ routes:
 excerpt: Poznaj różne rodzaje formatów dysku
 section: Zarządzanie wirtualnymi maszynami
 order: 04
+updated: 2020-11-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-11-2020**

@@ -4,6 +4,7 @@ slug: die-wahl-des-festplattenformats
 excerpt: Lernen Sie die verschiedenen Formate von Festplatten kennen
 section: Verwaltung virtueller Maschinen
 order: 04
+updated: 2022-02-02
 ---
 
 **Stand 01.02.2022**

@@ -3,6 +3,7 @@ title: Managing OVHcloud bills
 slug: manage-ovh-bills
 excerpt: Find out how to manage your bills and the payments associated with them
 section: Billing
+updated: 2022-05-12
 ---
 
 **Last updated 12th May 2022**

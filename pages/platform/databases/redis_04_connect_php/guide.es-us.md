@@ -6,6 +6,7 @@ section: Redis - Guides
 order: 040
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-php/'
+updated: 2022-03-24
 ---
 
 **Last updated 24th March 2022**

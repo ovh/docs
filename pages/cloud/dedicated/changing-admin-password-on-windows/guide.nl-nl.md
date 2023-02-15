@@ -4,6 +4,7 @@ title: 'Wijzigen van het admin-wachtwoord op een Windows dedicated server'
 slug: wijzigen-admin-wachtwoord-windows
 excerpt: 'Leer hoe u het admin-wachtwoord op een Windows dedicated server kunt veranderen'
 section: 'Diagnose en Reddingsmodus'
+updated: 2021-01-12
 ---
 
 **Laatste update 27-08-2018**

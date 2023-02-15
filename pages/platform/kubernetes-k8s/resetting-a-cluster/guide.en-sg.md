@@ -3,6 +3,7 @@ title: Resetting an OVHcloud Managed Kubernetes cluster
 excerpt: Find out how to reset an OVHcloud Managed Kubernetes cluster
 slug: resetting-a-cluster
 section: User guides
+updated: 2022-07-27
 ---
 
 **Last updated July 27th, 2022.**

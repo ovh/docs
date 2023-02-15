@@ -3,6 +3,7 @@ title: Gestion des noms de domaines
 slug: ovh-api-domains
 excerpt: Gérez vos noms de domaines avec l'API publique OVHcloud
 section: APIv6 OVHcloud
+updated: 2022-05-03
 ---
 
 **Dernière mise à jour le 03/05/2022**

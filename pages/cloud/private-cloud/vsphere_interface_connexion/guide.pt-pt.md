@@ -4,6 +4,7 @@ excerpt: Descubra as diferentes formas de se ligar ao vSphere
 slug: instalar_o_vsphere_client
 section: Introdução
 order: 2
+updated: 2022-06-24
 ---
 
 > [!primary]

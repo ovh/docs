@@ -4,6 +4,7 @@ slug: convertir-une-ligne-ecofax-perso-en-offre-ecofax-pro
 legacy_guide_number: '8355850'
 section: Premiers pas
 order: 4
+updated: 2021-04-09
 ---
 
 ### Préambule {#préambule}

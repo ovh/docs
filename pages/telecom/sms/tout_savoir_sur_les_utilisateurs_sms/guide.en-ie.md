@@ -4,6 +4,7 @@ excerpt: 'Explore the features for API users to send SMS messages'
 slug: everything_you_need_to_know_about_sms_users
 legacy_guide_number: g2144
 section: 'Managing your solution'
+updated: 2022-08-05
 ---
 
 **Last updated 5th August 2022** 

@@ -3,6 +3,7 @@ title: Utilizar Zerto Virtual Replication entre dos datacenters de OVHcloud
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Esta guía explica cómo implementar Zerto Virtual Replication en su Plan de Recuperación ante desastres entre dos productos Private Cloud.
 section: Servicios y opciones de OVHcloud
+updated: 2022-02-11
 ---
 
 > [!primary]

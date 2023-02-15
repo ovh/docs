@@ -3,6 +3,7 @@ title: 'Gérer vos groupes de téléphonie'
 slug: gestion-des-groupes-de-telephonie
 excerpt: 'Découvrez comment gérer vos groupes de téléphonie et déplacer vos services entre ces groupes'
 section: Administratif
+updated: 2021-06-04
 ---
 
 **Dernière mise à jour le 04/06/2021**

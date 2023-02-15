@@ -4,6 +4,7 @@ slug: s3/limitations
 excerpt: "Retrouvez ici les limites techniques de l'offre S3 Object Storage"
 section: Informations générales
 order: 025
+updated: 2022-03-31
 ---
 
 **Dernière mise à jour le 31/03/2022**

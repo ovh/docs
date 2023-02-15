@@ -4,6 +4,7 @@ slug: configurer-le-dhcp-sur-une-edge-nsx
 excerpt: "Découvrez comment attribuer des IPs à vos machines virtuelles à l'aide du service DHCP"
 section: NSX
 order: 03
+updated: 2021-11-22
 ---
 
 **Dernière mise à jour le 22/11/2021**

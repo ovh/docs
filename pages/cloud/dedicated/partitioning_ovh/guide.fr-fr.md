@@ -3,6 +3,7 @@ title: 'API OVHcloud & Partitionnement'
 slug: api-partitioning
 excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration du partitionnement lors de l'installation de l'OS sur votre serveur"
 section: 'RAID & disques'
+updated: 2022-11-29
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->

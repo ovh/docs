@@ -3,6 +3,7 @@ title: 'Configurer une route statique'
 slug: config-static-route
 excerpt: "Découvrez comment configurer une route statique sur votre équipement OverTheBox afin qu'un flux ne passe pas par le tunnel chiffré"
 section: "Configurations de l'OverTheBox"
+updated: 2021-06-14
 ---
 
 **Dernière mise à jour le 14/06/2021**

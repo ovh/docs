@@ -4,6 +4,7 @@ slug: software-gateway-replacement
 excerpt: "Découvrez comment remplacer la passerelle OVHgateway par une autre machine virtuelle administrable"
 section: "Réseau et sécurité"
 order: 11
+updated: 2022-12-05
 ---
 
 **Dernière mise à jour le 05/12/2022**

@@ -4,6 +4,7 @@ slug: pcs/pcs-syno
 excerpt: Retrouvez ici comment synchroniser un NAS Synology a un conteneur.
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 150
+updated: 2021-10-27
 ---
 
 **Dernière mise à jour le 27/10/2021**

@@ -3,6 +3,7 @@ title: 'Tryb bridge IP'
 slug: network-bridging
 excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
 section: 'Sieć & IP'
+updated: 2022-12-20
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: ip-server-konfiguration
 excerpt: 'Hier erfahren Sie, wie Sie eine IP auf einer virtuellen Maschine konfigurieren'
 section: 'Verwaltung virtueller Maschinen'
 order: 5
+updated: 2020-10-13
 ---
 
 > [!primary]

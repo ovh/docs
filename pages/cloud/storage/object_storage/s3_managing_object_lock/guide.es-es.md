@@ -6,6 +6,7 @@ section: Tutorials
 order: 110
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/managing-object-lock/'
+updated: 2022-06-02
 ---
 
 **Last updated 2<sup>nd</sup> June, 2022**

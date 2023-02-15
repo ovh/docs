@@ -6,6 +6,7 @@ routes:
 excerpt: Saiba como utilizar o plugin OVHcloud Network no serviço Managed Bare Metal
 section: 'Funcionalidades da OVHcloud'
 order: 03
+updated: 2020-11-18
 ---
 
 **Última atualização: 18/11/2020**

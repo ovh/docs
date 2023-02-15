@@ -6,6 +6,7 @@ routes:
 excerpt: Funcionamiento de los snapshots de OVHcloud
 section: Funcionalidades de OVHcloud
 order: 06
+updated: 2020-11-30
 ---
 
 > [!primary]

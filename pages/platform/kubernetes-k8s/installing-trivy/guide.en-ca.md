@@ -4,6 +4,7 @@ slug: installing-trivy
 excerpt: Find out how to scan for vulnerabilities and misconfigurations of your OVHcloud Managed Kubernetes with Trivy
 section: Security
 order: 3
+updated: 2022-06-01
 ---
 
 **Last updated 1st June 2022**

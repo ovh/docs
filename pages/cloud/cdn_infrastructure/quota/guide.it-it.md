@@ -4,6 +4,7 @@ slug: funzionamento-quota-cdn
 excerpt: 'Come funziona la gestione della quota disponibile sulla CDN OVH'
 section: 'Per iniziare'
 order: 3
+updated: 2018-02-22
 ---
 
 **Ultimo aggiornamento: 20/08/2019**

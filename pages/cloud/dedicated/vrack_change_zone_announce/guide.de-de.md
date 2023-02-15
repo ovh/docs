@@ -3,6 +3,7 @@ title: 'IP-Block-Ankündigung im vRack ändern'
 slug: ip-block-ankuendigung-im-vrack-aendern
 excerpt: 'So ändern Sie die IP-Block-Ankündigung im vRack'
 section: vRack
+updated: 2019-03-12
 ---
 
 **Letzte Aktualisierung am 22.07.2019**

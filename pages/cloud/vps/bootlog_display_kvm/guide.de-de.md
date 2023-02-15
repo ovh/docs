@@ -3,6 +3,7 @@ title: Boot-Logs mit KVM anzeigen
 slug: bootlog-in-kvm
 excerpt: 'Erfahren Sie hier, wie Sie die Boot-Logs eines VPS zum Troubleshooting aktivieren'
 section: Diagnose & Rescue Modus
+updated: 2021-07-05
 ---
 
 > [!primary]

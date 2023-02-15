@@ -5,6 +5,7 @@ excerpt: Dowiedz się, jak korzystać z wtyczki OVHcloud Network w usłudze Priv
 legacy_guide_number: '7766560'
 section: Funkcjonalności OVHcloud
 order: 03
+updated: 2020-07-01
 ---
 
 **Ostatnia aktualizacja z dnia 11-09-2020**
