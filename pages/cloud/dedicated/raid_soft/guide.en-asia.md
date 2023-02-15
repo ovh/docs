@@ -5,7 +5,7 @@ excerpt: 'This guide will help you configure your server’s RAID array in the e
 section: 'RAID and disks'
 ---
 
-**Last updated 27th January 2023**
+**Last updated 15th February 2023**
 
 ## Objective
 
@@ -93,7 +93,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 The `fdisk -l` command also allows you to identify your partition type. This is an important information when it comes to rebuilding your RAID in case of a disk failure.
 
-For GPT partitions, it will return `Disklabel type: gpt`:
+For GPT partitions, the command will return: `Disklabel type: gpt`.
 
 ```sh
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
@@ -105,7 +105,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-For MBR partitions, it will return `Disklabel type: dos`.
+For GPT partitions, the command will return: Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
@@ -184,7 +184,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Please note that if you are connected as the user root, you may get the following message when you try to unmount the partition (in our case, where our md4 is mounted in /home):
+> Please note that if you are connected as the user root, you may get the following message when you try to unmount the partition (in our case, where our md4 partition is mounted in /home):
 > 
 > `umount: /home: target is busy`
 >
@@ -298,7 +298,7 @@ Consistency Policy : bitmap
 
 Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command: 
 
-**For GPR partitions**
+**For GPT partitions**
 
 ```sh
 sgdisk -R /dev/sda /dev/sdb 
@@ -318,6 +318,8 @@ Once the disk has been replaced, we need to copy the partition table from a heal
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
+
+The command should be in this format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`
 
 We can now rebuild the RAID array. The following code snippet shows how we can rebulid the `/dev/md4` partition layout with the recently-copied sda partition table: 
 
@@ -379,10 +381,10 @@ mount /dev/md4 /home
 
 ## Go Further
 
-[Hot Swap – Hardware RAID](../hotswap-raid-hard/)
+[Hot Swap – Hardware RAID](https://docs.ovh.com/asia/en/dedicated/hotswap-raid-hard/)
 
-[Hot Swap – Software RAID](../hotswap-raid-soft/)
+[Hot Swap – Software RAID](https://docs.ovh.com/asia/en/dedicated/hotswap-raid-soft/)
 
-[Hardware RAID](../raid-hard/)
+[Hardware RAID](https://docs.ovh.com/asia/en/dedicated/raid-hard/)
 
 Join our community of users on <https://community.ovh.com/en/>.
