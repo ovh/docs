@@ -8,7 +8,7 @@ updated: 2023-02-14
 **Dernière mise à jour le 14/02/2023**
 
 ## Objectifs
-En complément - [au modèle de responsabilité entre OVHcloud et le client sur le service Serveurs Dédiés] (https://docs.ovh.com/fr/partage-responsabilite/raci-serveurs-dedies/), cette fiche a pour objectif de présenter les particularités 
+En complément > [au modèle de responsabilité entre OVHcloud et le client sur le service Serveurs Dédiés] (https://docs.ovh.com/fr/partage-responsabilite/raci-serveurs-dedies/), cette fiche a pour objectif de présenter les particularités 
 et fonctions sécurité propres à celui-ci.
 Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
