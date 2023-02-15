@@ -174,7 +174,7 @@ Suite au décommissionnent du service par le client, OVHcloud procède à la lib
 
 **Conformité de la prise en compte des objectifs de sécurité**
 
-![spec HDS](images/spec_HDS.png){.thumbnail}
+![spec HDS](images/spec_HDS.png)
 
 
 **Commentaire:**
