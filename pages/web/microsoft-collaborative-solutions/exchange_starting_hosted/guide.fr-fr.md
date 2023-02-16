@@ -105,9 +105,15 @@ Maintenant que votre service Hosted Exchange est configuré et fonctionnel, vous
 
 Pour activer ces différentes fonctions, sélectionnez le service Hosted Exchange concerné dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis choisissez parmi les onglets qui s'affichent l'action à effectuer.
 
+![Fonctions collaboratives](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
+
+- [Créer un groupe de contacts](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-utilisation-des-groupes-mailing-list/)
+- [Créer et utiliser un compte partagé](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-utilisation-des-comptes-partages/)
+- [Créer et utiliser des comptes de ressource](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-utilisation-des-comptes-de-ressource/)
+- [Déléguer des droits sur un compte e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-donner-les-droits-full-access-sur-un-compte/)
+
 Pour obtenir de l'aide sur l'une des fonctionnalités, consultez notre documentation accessible depuis ce portail : [https://docs.ovh.com/fr/microsoft-collaborative-solutions/](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}.
 
-![Fonctions collaboratives](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
 
 ## Aller plus loin
 
