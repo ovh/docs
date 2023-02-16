@@ -4,6 +4,7 @@ slug: utiliser-svn
 excerpt: Découvrez comment utiliser SVN en SSH sur votre hebergement web
 section: FTP et SSH
 order: 09
+updated: 2021-01-06
 ---
 
 **Dernière mise à jour le 28/10/2020**

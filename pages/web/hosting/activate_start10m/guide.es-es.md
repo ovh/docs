@@ -4,6 +4,7 @@ slug: activar-start10m
 excerpt: 'Esta guía explica cómo activar su alojamiento web Start 10M'
 section: 'Primeros pasos'
 order: 01
+updated: 2022-09-15
 ---
 
 > [!primary]

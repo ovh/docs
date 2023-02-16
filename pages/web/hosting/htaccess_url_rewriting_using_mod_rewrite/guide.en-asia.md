@@ -4,6 +4,7 @@ excerpt: "This guide explains how to rewrite the URL for accessing your website 
 slug: htaccess_url_rewriting_using_mod_rewrite
 section: Rewriting and authentication
 order: 03
+updated: 2022-12-22
 ---
 
 **Last updated 22nd December 2022** 

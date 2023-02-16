@@ -4,6 +4,7 @@ excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Di
 slug: how_to_change_web_hosting_offer
 section: Webseitenoptimierung
 order: 2
+updated: 2023-01-03
 ---
 
 > [!primary]

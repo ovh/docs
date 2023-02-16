@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i u
 slug: hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony
 section: 'Optymalizacja strony WWW'
 order: 06
+updated: 2022-02-03
 ---
 
 **Ostatnia aktualizacja dnia 03-02-2022**

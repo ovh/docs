@@ -4,6 +4,7 @@ slug: create-your-own-web-page
 excerpt: 'Saiba como criar a primeira página num alojamento gratuito Start 10M'
 section: "Tutoriais"
 order: 01
+updated: 2022-11-22
 ---
 
 > [!primary]

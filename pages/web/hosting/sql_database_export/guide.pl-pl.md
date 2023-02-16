@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hosting
 slug: eksport-bazy-danych
 section: 'Bazy danych'
 order: 03
+updated: 2018-05-19
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-/07**

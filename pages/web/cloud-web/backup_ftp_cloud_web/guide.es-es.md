@@ -3,6 +3,7 @@ title: "Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web"
 slug: backup_ftp_cloud_web
 section: Backups
 order: 01
+updated: 2022-09-13
 ---
 
 **Última actualización: 13/09/2022**

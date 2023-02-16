@@ -4,6 +4,7 @@ slug: install-configure-cecil
 excerpt: "Dowiedz się, jak Cecil pozwala na tworzenie strony statycznej przy użyciu nowoczesnego silnika szablonu (Jamstack)"
 section: 'Tutoriale'
 order: 04
+updated: 2023-01-17
 ---
 
 **Ostatnia aktualizacja z dnia 19-01-2023**

@@ -4,6 +4,7 @@ slug: hosting_condiviso_come_mettere_online_il_tuo_sito
 excerpt: 'Come pubblicare un sito su un hosting Web OVHcloud'
 section: 'Per iniziare'
 order: 06
+updated: 2022-07-21
 ---
 
 > [!primary]

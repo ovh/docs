@@ -4,6 +4,7 @@ excerpt: Cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcl
 slug: 1-click-module-management
 section: CMS
 order: 02
+updated: 2022-09-05
 ---
 
 > [!primary]

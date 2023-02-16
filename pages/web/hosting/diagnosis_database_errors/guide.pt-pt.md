@@ -4,6 +4,7 @@ excerpt: "Diagnosticar os casos mais comuns de erros associados às bases de dad
 slug: erros-frequentes-bases-de-dados
 section: Diagnóstico
 order: 04
+updated: 2022-12-09
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: migrar-site-para-ovh
 excerpt: "Saiba como migrar o seu website, e-mails e o seu domínio para a OVHcloud sem interromper os serviços"
 section: Primeiros passos
 order: 08
+updated: 2022-11-24
 ---
 
 **Última atualização: 24/11/2022**

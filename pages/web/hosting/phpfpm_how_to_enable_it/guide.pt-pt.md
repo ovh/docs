@@ -4,6 +4,7 @@ excerpt: Este guia irá ajudá-lo na ativação do PHP-FPM no seu alojamento web
 slug: ativar_a_otimizacao_do_php_no_seu_alojamento_partilhado_ovh
 section: PHP
 order: 03
+updated: 2022-10-05
 ---
 
 

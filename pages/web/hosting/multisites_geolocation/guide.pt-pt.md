@@ -4,6 +4,7 @@ excerpt: "Descubra como geolocalizar o seu website com os nossos endereços IP g
 slug: geolocalizacao_nos_alojamentos_partilhados
 section: Otimizar o seu site
 order: 05
+updated: 2022-12-22
 ---
 
 > [!primary]

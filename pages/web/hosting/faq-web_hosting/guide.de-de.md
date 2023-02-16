@@ -4,6 +4,7 @@ excerpt: Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen r
 slug: webhosting-faq
 section: Erste Schritte
 order: 05
+updated: 2022-11-28
 ---
 
 > [!primary]

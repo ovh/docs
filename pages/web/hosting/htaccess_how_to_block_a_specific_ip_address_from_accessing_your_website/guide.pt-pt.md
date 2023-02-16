@@ -4,6 +4,7 @@ excerpt: "Descubra as ações possíveis através de um ficheiro .htaccess para 
 slug: partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website
 section: Reescrita e autenticação
 order: 01 
+updated: 2022-09-12
 ---
 
 **Última atualização: 12/09/2022**

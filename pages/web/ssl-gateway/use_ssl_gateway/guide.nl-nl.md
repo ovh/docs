@@ -4,6 +4,7 @@ title: Gebruik van SSL Gateway
 slug: use-ssl-gateway
 legacy_guide_number: 2370
 excerpt: Beveilig verbindingen met uw website
+updated: 2022-12-01
 ---
 
 

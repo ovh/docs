@@ -4,6 +4,7 @@ slug: primeros_pasos_en_un_alojamiento_web
 excerpt: 'Cómo empezar con un alojamiento web'
 section: 'Primeros pasos'
 order: 02
+updated: 2022-11-11
 ---
 
 **Última actualización: 14/11/2022**

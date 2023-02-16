@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verb
 slug: webhosting_optimierung_der_performance_ihrer_webseite
 section: 'Webseitenoptimierung'
 order: 06
+updated: 2022-02-03
 ---
 
 **Letzte Aktualisierung am 03.02.2022**

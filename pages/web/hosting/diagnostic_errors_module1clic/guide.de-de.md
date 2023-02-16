@@ -4,6 +4,7 @@ slug: fehler-bei-1-klick-modulen
 excerpt: Erfahren Sie hier, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können
 section: Diagnose
 order: 02
+updated: 2022-11-08
 ---
 
 > [!primary]

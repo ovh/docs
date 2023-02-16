@@ -4,6 +4,7 @@ slug: modulos-en-un-clic
 excerpt: Cómo instalar un sitio web con los módulos en un clic de OVHcloud
 section: CMS
 order: 01
+updated: 2023-01-31
 ---
 
 **Última actualización: 31/01/2023**

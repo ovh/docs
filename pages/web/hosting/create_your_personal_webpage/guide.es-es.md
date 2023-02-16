@@ -4,6 +4,7 @@ slug: create-your-own-web-page
 excerpt: 'Cómo crear su primera página web en un alojamiento web gratuito Start 10M'
 section: "Tutoriales"
 order: 01
+updated: 2022-11-22
 ---
 
 > [!primary]

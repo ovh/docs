@@ -4,6 +4,7 @@ slug: bledy-frameworki-moduly-za-1-kliknieciem
 excerpt: Zdiagnozuj najczęstsze przypadki błędów związanych z modułami za pomocą 1 kliknięcia
 section: Diagnostyka
 order: 02
+updated: 2022-11-08
 ---
 
 > [!primary]

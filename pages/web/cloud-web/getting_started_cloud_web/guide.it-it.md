@@ -4,6 +4,7 @@ slug: primi-passi-con-un-hosting-cloud-web
 excerpt: Come eseguire le prime operazioni su un Cloud Web
 section: Per iniziare
 order: 01
+updated: 2022-05-04
 ---
 
 > [!primary]

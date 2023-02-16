@@ -4,6 +4,7 @@ excerpt: How to install "Composer" on web hosting packages
 slug: install_composer_on_web_hosting_packages
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 **Last updated 09th December 2022**

@@ -5,6 +5,7 @@ slug: wijzigen-wachtwoord-database
 excerpt: 'Ontdek hoe u het wachtwoord kunt wijzigen voor een database die is gecreëerd als onderdeel van een webhostingplan'
 section: Databases
 order: 02
+updated: 2022-01-26
 ---
 
 **Laatste update 31-05-2018**

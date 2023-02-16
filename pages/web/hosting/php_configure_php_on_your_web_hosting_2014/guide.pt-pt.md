@@ -4,6 +4,7 @@ slug: configurar_o_php_num_alojamento_web_alojamentos_2014_ovh
 excerpt: "Saiba como mudar a versão de PHP do seu alojamento web da OVHcloud"
 section: PHP
 order: 01
+updated: 2022-09-19
 ---
 
 **Última atualização: 19/09/2022**

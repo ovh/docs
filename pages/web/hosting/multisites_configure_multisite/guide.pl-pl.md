@@ -4,6 +4,7 @@ slug: konfiguracja-multisite-na-hostingu
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
 section: 'Pierwsze kroki'
 order: 03
+updated: 2022-11-04
 ---
 
 > [!primary]

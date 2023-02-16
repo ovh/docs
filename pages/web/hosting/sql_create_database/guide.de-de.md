@@ -4,6 +4,7 @@ slug: datenbank-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden'
 section: 'Datenbanken'
 order: 01
+updated: 2022-02-03
 ---
 
 **Letzte Aktualisierung am 03.02.2022**

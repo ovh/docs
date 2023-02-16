@@ -4,6 +4,7 @@ slug: verbindung-ftp-speicher-webhosting
 excerpt: 'Erfahren Sie hier, wie Sie sich mit dem Speicherplatz Ihres OVHcloud Webhostings verbinden'
 section: 'FTP und SSH'
 order: 02
+updated: 2022-10-21
 ---
 
 **Letzte Aktualisierung am 19.01.2022**

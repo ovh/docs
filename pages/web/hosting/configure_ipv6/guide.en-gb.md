@@ -4,6 +4,7 @@ slug: configure-ipv6-for-your-website
 excerpt: "Find out how to make your website available via an IPv6 address"
 section: Web Hosting configuration
 order: 06
+updated: 2023-02-10
 ---
 
 **Last updated 10th February 2023**

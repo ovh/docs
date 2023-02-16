@@ -4,6 +4,7 @@ excerpt: "Questa tutorial ti mostra come riscrivere l'URL di accesso al tuo sito
 slug: htaccess_url_rewriting_using_mod_rewrite
 section: Scrittura e autenticazione
 order: 03
+updated: 2022-12-22
 ---
 
 > [!primary]

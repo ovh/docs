@@ -5,6 +5,7 @@ slug: export-databases
 excerpt: 'Ontdek hoe u een backup van de database van een OVH webhostingplan kunt verkrijgen'
 section: Databases
 order: 03
+updated: 2018-05-19
 ---
 
 **Laatste update 29-06-2018**

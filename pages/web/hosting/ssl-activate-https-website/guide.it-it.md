@@ -4,6 +4,7 @@ slug: attivare-https-su-sito-internet-tramite-certificato-ssl
 excerpt: 'Come abilitare il protocollo HTTPS sul tuo sito grazie al certificato SSL'
 section: SSL
 order: 02
+updated: 2022-10-04
 ---
 
 **Ultimo aggiornamento: 04/10/2022**

@@ -4,6 +4,7 @@ slug: static-site-generator-cecil-use-api
 excerpt: "Find out how to add a call to an external API from your static web page"
 section: Tutorials
 order: 5
+updated: 2023-01-16
 ---
 
 **Last updated 16th January 2023**

@@ -4,6 +4,7 @@ slug: database-overquota
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
 section: Datenbanken
 order: 06
+updated: 2023-01-19
 ---
 
 > [!primary]

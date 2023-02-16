@@ -4,6 +4,7 @@ slug: static-site-generator-cecil-use-api
 excerpt: "Erfahren Sie hier, wie Sie externe APIs von Ihrer statischen Webseite aus aufrufen"
 section: Tutorials
 order: 5
+updated: 2023-01-16
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: Saiba como criar tarefas CRON para automatizar as tarefas programadas n
 slug: alojamento_partilhado_tarefas_agendadas_cron
 section: Tarefas automatizadas (CRON)
 order: 01
+updated: 2022-12-01
 ---
 
 > [!primary]

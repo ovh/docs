@@ -4,6 +4,7 @@ slug: mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-hta
 excerpt: Retrouvez ici toutes les operations possibles avec votre .htaccess autre que la protection de dossier.
 section: Réécriture et authentification
 order: 04
+updated: 2022-10-05
 ---
 
 **Dernière mise à jour le 05/05/2020**

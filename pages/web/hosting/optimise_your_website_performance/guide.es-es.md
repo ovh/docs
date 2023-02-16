@@ -4,6 +4,7 @@ excerpt: 'Cómo analizar la latencia de su sitio web y cómo mejorarla'
 slug: web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web
 section: 'Optimización del sitio web'
 order: 06
+updated: 2022-02-03
 ---
 
 **Última actualización: 03/02/2022**

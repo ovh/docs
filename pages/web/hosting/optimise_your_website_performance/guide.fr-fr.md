@@ -4,6 +4,7 @@ slug: optimisation-performances-site
 excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
 section: 'Optimiser son site'
 order: 06
+updated: 2022-02-03
 ---
 
 **Dernière mise à jour le 03/02/2022**

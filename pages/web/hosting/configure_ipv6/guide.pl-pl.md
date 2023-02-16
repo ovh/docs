@@ -4,6 +4,7 @@ slug: konfiguracja-ipv6-dla-twojej-strony
 excerpt: "Dowiedz się, jak sprawdzić, czy Twoja strona WWW jest kompatybilna z adresem IPv6"
 section: 'Konfiguracja hostingu'
 order: 06
+updated: 2023-02-10
 ---
 
 **Ostatnia aktualizacja z dnia 10-02-2023**

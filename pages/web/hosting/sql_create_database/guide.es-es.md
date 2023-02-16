@@ -4,6 +4,7 @@ slug: crear-base-de-datos
 excerpt: 'Cómo utilizar las bases de datos incluidas en los planes de hosting de OVHcloud'
 section: 'Bases de datos'
 order: 01
+updated: 2022-02-03
 ---
 
 **Última actualización: 03/02/2022**

@@ -4,6 +4,7 @@ slug: configure-ipv6-for-your-website
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website über eine IPv6-Adresse verfügbar machen"
 section: "Webhosting-Konfiguration"
 order: 06
+updated: 2023-02-10
 ---
 
 > [!primary]

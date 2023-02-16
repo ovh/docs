@@ -5,6 +5,7 @@ legacy_guide_number: g1374
 excerpt: 'So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online'
 section: 'Erste Schritte'
 order: 06
+updated: 2022-07-21
 ---
 
 > [!primary]

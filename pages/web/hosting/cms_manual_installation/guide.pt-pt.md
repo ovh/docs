@@ -4,6 +4,7 @@ excerpt: 'Instalar de forma manual o meu CMS'
 slug: partilhado_instalar_manualmente_o_meu_cms
 section: CMS
 order: 03
+updated: 2020-02-04
 ---
 
 **Última atualização: 4 de fevereiro de 2020**

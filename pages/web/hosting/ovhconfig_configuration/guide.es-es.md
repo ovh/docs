@@ -4,6 +4,7 @@ slug: configurar-archivo-ovhconfig
 excerpt: 'Cómo editar el archivo .ovhconfig para configurar un alojamiento web'
 section: 'Configuración del alojamiento'
 order: 03
+updated: 2019-01-03
 ---
 
 **Última actualización: 03/01/2019**

@@ -4,6 +4,7 @@ slug: manage-cloud-web-runtime-software-applications
 excerpt: 'Find out how to manage your Web Hosting plan’s runtime software applications, and complete your projects successfully'
 section: 'Configuring the web hosting plan'
 order: 01
+updated: 2022-07-27
 ---
 
 **Last updated 27th July 2022**

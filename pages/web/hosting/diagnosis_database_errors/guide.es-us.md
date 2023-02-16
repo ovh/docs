@@ -4,6 +4,7 @@ excerpt: Diagnóstico de los errores más comunes relacionados con las bases de 
 slug: error-requentes-base-de-datos
 section: Diagnóstico
 order: 04
+updated: 2022-12-09
 ---
 
 > [!primary]

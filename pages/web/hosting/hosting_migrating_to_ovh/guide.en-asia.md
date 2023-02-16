@@ -4,6 +4,7 @@ slug: migrating-website-to-ovh
 excerpt: Find out how to migrate your website, emails and domain name to OVHcloud without any service interruptions
 section: Getting started
 order: 08
+updated: 2022-11-24
 ---
 
 **Last updated 24th November 2022**

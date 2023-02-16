@@ -5,6 +5,7 @@ slug: wijzigen-wachtwoord-ftp-gebruiker
 excerpt: Leer hoe u het wachtwoord van een FTP-gebruiker op uw OVH-webhosting kunt wijzigen
 section: FTP en SSH
 order: 1
+updated: 2022-08-18
 ---
 
 **Laatste update 23-02-2018**

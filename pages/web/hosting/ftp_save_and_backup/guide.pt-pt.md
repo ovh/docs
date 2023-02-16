@@ -4,6 +4,7 @@ slug: restauracao-ftp-filezilla-area-de-cliente
 excerpt: 'Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web'
 section: FTP e SSH
 order: 06
+updated: 2023-01-12
 ---
 
 > [!primary]

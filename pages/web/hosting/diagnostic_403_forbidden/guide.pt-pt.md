@@ -4,6 +4,7 @@ excerpt: Saiba como repor o seu site online quando apresenta uma página "403 fo
 slug: diagnostico-403-forbidden
 section: Diagnóstico
 order: 08
+updated: 2022-06-16
 ---
 
 > [!primary]

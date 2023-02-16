@@ -4,6 +4,7 @@ slug: contratar-un-ssl-gateway
 excerpt: Proteja las conexiones a su sitio web
 section: 'Getting started'
 order: 01
+updated: 2022-12-01
 ---
 
 
