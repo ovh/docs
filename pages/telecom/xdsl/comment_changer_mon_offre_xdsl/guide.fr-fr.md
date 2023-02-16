@@ -2,10 +2,10 @@
 title: Comment changer mon offre xDSL/FTTH
 slug: comment-changer-mon-offre-xdsl
 section: Gestion de mon offre
-updated: 2023-02-09
+updated: 2023-02-16
 ---
 
-**Dernière mise à jour le 15/02/2023**
+**Dernière mise à jour le 16/02/2023**
 
 ## Objectif
 
@@ -42,8 +42,11 @@ Cliquez ensuite sur `Changer d'offre`{.action} dans le cadre « Informations Gé
 
 La page suivante vous permettra de retrouver les informations nécessaires pour effectuer votre choix d'offre.
 
-La première colonne du tableau récapitule votre offre actuelle (son nom, son prix et les services actifs. Les autres colonnes concernent les offres auxquelles vous pouvez souscrire, compte tenu de votre adresse actuelle.<br>
-Cliquez sur le bouton `Choisir cette offre`{.action} sous la colonne correspondant à l'offre que vous souhaitez souscrire.
+La première colonne du tableau récapitule votre offre actuelle (son nom, son prix et les services actifs). Les autres colonnes concernent les offres auxquelles vous pouvez souscrire, compte tenu de votre adresse actuelle.<br>
+Sélectionnez les options souhaitées (lignes téléphoniques, comptes e-mail, Garantie de Temps de Rétablissement) puis cliquez sur le bouton `Choisir cette offre`{.action} sous la colonne correspondant à l'offre que vous souhaitez souscrire.
+
+> [!primary]
+> Si vous souhaitez conserver les lignes téléphoniques de votre offre actuelle, veillez à ajouter un nombre équivalent de lignes dans votre nouvelle offre.
 
 ![choix de l'offre](images/pro-offers2023.png){.thumbnail}
 
