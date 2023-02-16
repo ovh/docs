@@ -4,6 +4,7 @@ slug: check-logs
 excerpt: Find out how to get your job's logs while the job is running or after it is finished 
 section: Getting started
 order: 1
+updated: 2021-07-14
 ---
 
 **Last updated 14<sup>th</sup> July, 2021**

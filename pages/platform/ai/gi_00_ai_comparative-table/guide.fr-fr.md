@@ -6,6 +6,7 @@ section: Informations générales
 order: 100
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/ai-comparative-tables/'
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

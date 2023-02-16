@@ -4,6 +4,7 @@ slug: submit-cli
 excerpt: Find out how to run your Apache Spark job with the Data Processing platform using the CLI
 section: How to
 order: 7
+updated: 2022-10-11
 ---
 
 **Last updated 11<sup>th</sup> October, 2022**

@@ -6,6 +6,7 @@ section: AI Training - Guides
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/submit-job/'
+updated: 2021-05-18
 ---
 
 **Last updated 18th May, 2021.**

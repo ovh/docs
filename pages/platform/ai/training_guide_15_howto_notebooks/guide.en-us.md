@@ -4,6 +4,7 @@ slug: training/start-use-notebooks
 excerpt: Learn how to start and use notebooks over AI training
 section: AI Training - Guides
 order: 06
+updated: 2021-05-03
 ---
 
 **Last updated 3rd May, 2021.**

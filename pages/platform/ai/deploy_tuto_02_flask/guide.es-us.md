@@ -6,6 +6,7 @@ section: AI Deploy - Tutorials
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-build-use-flask-image/'
+updated: 2023-01-31
 ---
 
 **Last updated 31st January, 2023.**

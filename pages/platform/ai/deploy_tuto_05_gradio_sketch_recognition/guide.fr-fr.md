@@ -6,6 +6,7 @@ section: AI Deploy - Tutoriels
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/'
+updated: 2023-01-31
 ---
 
 **Last updated 31st January, 2023.**

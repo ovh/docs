@@ -4,6 +4,7 @@ slug: cli/overview-cli
 excerpt: Learn how to use the CLI to interact with AI Training
 section: Command Line Interface
 order: 205
+updated: 2021-04-20
 ---
 
 **Last updated 20th April, 2021.**

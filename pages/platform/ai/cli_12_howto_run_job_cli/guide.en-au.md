@@ -4,6 +4,7 @@ slug: cli/run-job-cli
 excerpt: Learn how to run an AI Training job using the CLI
 section: Command Line Interface
 order: 202
+updated: 2021-03-25
 ---
 
 **Last updated 25th March, 2021.**

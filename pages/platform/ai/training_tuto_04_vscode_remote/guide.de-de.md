@@ -6,6 +6,7 @@ section: AI Training - Tutorials
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/vscode-remote-code/'
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

@@ -6,6 +6,7 @@ section: Command Line Interface
 order: 205
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli/'
+updated: 2021-04-20
 ---
 
 **Last updated 20th April, 2021.**

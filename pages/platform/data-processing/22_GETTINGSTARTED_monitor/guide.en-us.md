@@ -4,6 +4,7 @@ slug: monitor
 excerpt: Find out how to monitor your jobs using Grafana and the Apache Spark dashboard
 section: Getting started
 order: 2
+updated: 2020-03-06
 ---
 
 **Last updated 06<sup>th</sup> March, 2020**
