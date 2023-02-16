@@ -34,7 +34,7 @@ Merged all together, this exact syntax is called a URI, for *Uniform Resource Id
 
 ### Standard Connection String format
 
-This is the first format provided by MongoDB since version 1. 
+This is the first format provided by MongoDB since version 1.
 Since MongoDB 3.6, **best practice is to avoid this format**. It will be soon hidden in the OVHcloud Control Panel.
 
 The standard URI connection string has the following format:
@@ -141,7 +141,7 @@ Without having updated the connection string, the client application has dynamic
 
 In summary, the DNS seed list connection string and the underlying SRV records simplify MongoDB cluster integration, limit errors, and facilitate evolution through transparent node management.
 
-# Go further
+## Go further
 
 Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud).
 
