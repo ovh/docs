@@ -3,6 +3,7 @@ title: 'Réparer le bootloader GRUB'
 slug: repairing-the-grub-bootloader
 excerpt: 'Guide de réparation du bootloader GRUB sur une instance'
 section: Tutoriels
+updated: 2020-11-23
 ---
 
 **Dernière mise à jour le 26/09/2022**

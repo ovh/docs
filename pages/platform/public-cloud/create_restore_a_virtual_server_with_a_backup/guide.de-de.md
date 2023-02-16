@@ -3,6 +3,7 @@ title: 'Verwenden von Backups zum Erzeugen oder Wiederherstellen von Instanzen'
 slug: einen-virtuellen-server-aus-einem-backup-erstellen-wiederherstellen
 excerpt: 'Erfahren Sie hier, wie Sie Instanzen aus Backups oder wiederherstellen'
 section: 'Verwaltung im OVHcloud Kundencenter'
+updated: 2021-03-19
 ---
 
 > [!primary]

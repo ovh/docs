@@ -4,6 +4,7 @@ slug: notebooks/billing
 excerpt: Learn how we bill AI Notebooks
 section: AI Notebooks - Guides
 order: 5
+updated: 2022-04-27
 ---
 
 **Last updated 27th April, 2022.**

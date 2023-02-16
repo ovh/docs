@@ -4,6 +4,7 @@ excerpt: Saiba como configurar chaves SSH adicionais para a sua instância Publi
 slug: configurar_as_chaves_ssh_suplementares
 section: Tutoriais
 order: 01
+updated: 2022-02-04
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: public-cloud-network-services-redirection
 excerpt: "Entdecken Sie alle unsere Hilfen zu Public Cloud Network Services"
 section: Storage
 order: 00
+updated: 2022-11-02
 ---
 
 **Stand 02.11.2022**

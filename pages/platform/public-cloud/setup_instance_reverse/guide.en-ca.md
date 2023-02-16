@@ -5,6 +5,7 @@ slug: configure-reverse-dns-instance
 legacy_guide_number: 1940
 section: Management via Control Panel
 order: 7
+updated: 2021-11-12
 ---
 
 **Last updated 12th November 2021**

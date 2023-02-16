@@ -4,6 +4,7 @@ excerpt: 'Find out how to you use the Cinder API client with Openstack'
 slug: get-started-with-openstack-api-volumes
 section: OpenStack
 order: 6
+updated: 2021-05-19
 ---
 
 **Last updated 19th May 2021**

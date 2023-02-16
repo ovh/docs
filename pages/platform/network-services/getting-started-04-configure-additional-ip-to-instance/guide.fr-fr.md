@@ -4,6 +4,7 @@ slug: configure-additional-ip
 excerpt: Découvrez comment ajouter des adresses Additional IP à la configuration de votre instance
 section: Additional IP
 order: 01
+updated: 2023-01-04
 ---
 
 **Dernière mise à jour le 04/01/2023**

@@ -3,6 +3,7 @@ title: Sending Windows Logs with NXLog to Logs Data Platform in 15 minutes or le
 slug: windows-nxlog
 order: 06
 section: Use cases
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

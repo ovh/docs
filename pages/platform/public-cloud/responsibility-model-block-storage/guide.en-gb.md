@@ -4,6 +4,7 @@ slug: raci-block-storage-public-cloud
 section: General information
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Block Storage"
 order: 6
+updated: 2022-12-23
 ---
 
 **Last update 23rd December 2022**

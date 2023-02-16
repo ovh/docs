@@ -4,6 +4,7 @@ slug: creating-volume-snapshot
 excerpt: 'Découvrez comment créer un snapshot d’un disque additionel Public Cloud'
 section: Stockage
 order: 2
+updated: 2023-02-10
 ---
 
 **Dernière mise à jour le 10/02/2023**

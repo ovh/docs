@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie sicheren Zugang zu Ihren Instanzen einrichte
 slug: access_and_security_in_horizon
 legacy_guide_number: g1774
 section: 'Horizon'
+updated: 2021-05-26
 ---
 
 **Letzte Aktualisierung am 26.05.2021**

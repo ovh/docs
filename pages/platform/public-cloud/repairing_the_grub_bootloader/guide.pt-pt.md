@@ -3,6 +3,7 @@ title: 'Reparar o bootloader GRUB'
 slug: reparar-bootloader-grub
 excerpt: Guia de reparação do bootloader GRUB numa instância
 section: Tutoriais
+updated: 2020-11-23
 ---
 
 > [!primary]

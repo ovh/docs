@@ -4,6 +4,7 @@ slug: deploy/apps-deployments
 excerpt: Understand the scaling strategies (static scaling vs autoscaling) of AI Deploy
 section: AI Deploy - Guides
 order: 04
+updated: 2022-11-03
 ---
 
 **Last updated 3rd November, 2022.**

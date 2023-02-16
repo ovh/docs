@@ -4,6 +4,7 @@ slug: training/capabilities
 excerpt: Find out about current capabilities and limitations of AI Training
 section: AI Training - Guides
 order: 01
+updated: 2021-04-20
 ---
 
 **Last updated 20th April, 2021.**

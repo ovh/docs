@@ -5,6 +5,7 @@ slug: set-openstack-environment-variables
 legacy_guide_number: 1852
 section: 'Gestion via OpenStack'
 order: 2
+updated: 2021-08-18
 ---
 
 **Dernière mise à jour le 18/08/2021**

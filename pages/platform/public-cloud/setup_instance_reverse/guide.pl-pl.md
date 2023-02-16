@@ -5,6 +5,7 @@ slug: konfiguracja_rewersu_dns_instancji
 legacy_guide_number: g1940
 section: Zarządzanie w Panelu klienta OVH
 order: 7
+updated: 2021-11-12
 ---
 
 > [!primary]

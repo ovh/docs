@@ -5,6 +5,7 @@ order: 06
 section: Use cases
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/windows-nxlog/'
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

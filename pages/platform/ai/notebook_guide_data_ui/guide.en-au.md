@@ -4,6 +4,7 @@ slug: notebooks/manage-data-ui
 excerpt: Learn how to manage and access data from your Object Storage in your Notebook
 section: AI Notebooks - Guides
 order: 03
+updated: 2022-04-13
 ---
 
 **Last updated 13th April, 2022.**

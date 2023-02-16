@@ -6,6 +6,7 @@ section: 'Getting started'
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/connecting-to-the-ui/'
+updated: 2021-09-24
 ---
 
 **Last updated 24 September, 2021.**

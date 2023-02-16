@@ -4,6 +4,7 @@ slug: gestao-volumes-api-openstack
 legacy_guide_number: 2071
 section: Gestão via OpenStack
 order: 7
+updated: 2021-05-19
 ---
 
 > [!primary]

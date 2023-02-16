@@ -4,6 +4,7 @@ slug: use_object_storage_terraform_backend_state
 excerpt: 'Find out how to use an OVHcloud Standard (Swift) Object Storage as a Terraform Backend to store your Terraform state'
 section: Tutorials
 order: 03
+updated: 2022-07-11
 ---
 
 <style>

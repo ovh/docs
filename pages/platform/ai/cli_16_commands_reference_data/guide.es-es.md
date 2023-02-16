@@ -6,6 +6,7 @@ section: Command Line Interface
 order: 206
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/data-cli/'
+updated: 2021-06-16
 ---
 
 **Last updated 16th June, 2021.**

@@ -4,6 +4,7 @@ excerpt: Come ordinare un progetto Public Cloud con l'API OVHcloud
 slug: ordina-progetto-public-cloud-api
 section: Per iniziare
 order: 9
+updated: 2020-12-09
 ---
 
 **Ultimo aggiornamento: 22/12/2020**

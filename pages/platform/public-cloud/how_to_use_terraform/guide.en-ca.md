@@ -6,6 +6,7 @@ keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
 section: Tutorials
 order: 02
+updated: 2022-05-27
 ---
 
 <style>

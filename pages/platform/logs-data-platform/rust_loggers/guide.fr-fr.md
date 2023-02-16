@@ -3,6 +3,7 @@ title: Rust - Push logs with gelf_logger or log4rs-gelf
 slug: rust-libs
 order: 30
 section: Logging libraries
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

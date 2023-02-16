@@ -4,6 +4,7 @@ slug: horizon
 excerpt: Poznaj najważniejsze sekcje interfejsu Horizon
 section: Zarządzanie w interfejsie Horizon
 order: 01
+updated: 2022-03-16
 ---
 
 > [!primary]

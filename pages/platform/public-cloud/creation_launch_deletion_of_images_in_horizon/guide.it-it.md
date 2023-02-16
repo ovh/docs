@@ -4,6 +4,7 @@ excerpt: 'Crea, carica ed elimina immagini con Horizon'
 slug: crea_carica_ed_elimina_immagini_con_horizon
 legacy_guide_number: g1784
 section: Gestione da Horizon
+updated: 2021-12-30
 ---
 
 > [!primary]

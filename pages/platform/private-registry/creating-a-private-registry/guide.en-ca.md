@@ -4,6 +4,7 @@ excerpt: ''
 slug: creating-a-private-registry
 section: 'Getting started'
 order: 01
+updated: 2022-04-14
 ---
 
 **Last updated 14th April, 2022.**

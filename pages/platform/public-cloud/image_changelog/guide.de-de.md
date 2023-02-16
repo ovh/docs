@@ -4,6 +4,7 @@ slug: changelog-images
 excerpt: Erfahren Sie hier die Änderungen, die an den Images für Public Cloud Instanzen und VPS Reihen vorgenommen wurden
 section: 'Allgemeine Informationen'
 order: 03
+updated: 2021-02-09
 ---
 
 > [!primary]

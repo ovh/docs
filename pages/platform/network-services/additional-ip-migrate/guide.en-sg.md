@@ -4,6 +4,7 @@ excerpt: "Find out how to migrate an Additional IP address to another instance"
 slug: migrate-additional-ip
 section: Additional IP
 order: 04
+updated: 2023-01-04
 ---
 
 **Last updated 4th January 2023**

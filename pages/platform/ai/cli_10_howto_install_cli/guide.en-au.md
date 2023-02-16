@@ -4,6 +4,7 @@ slug: cli/install-client
 excerpt: Learn how to install the CLI to interact with AI Tools
 section: Command Line Interface
 order: 200
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

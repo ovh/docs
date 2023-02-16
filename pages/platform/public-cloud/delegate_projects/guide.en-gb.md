@@ -4,6 +4,7 @@ slug: delegate-projects
 excerpt: Find out how to delegate access rights for a Public Cloud project to other OVHcloud accounts
 section: Project management
 order: 7
+updated: 2022-04-04
 ---
 
 **Last updated 4th April 2022**

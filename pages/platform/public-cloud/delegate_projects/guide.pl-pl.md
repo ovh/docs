@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak delegować uprawnienia dostępu do projektu Public C
 slug: delegowanie_projektow
 order: 7
 section: 'Zarządzanie projektami'
+updated: 2022-04-04
 ---
 
 > [!primary]

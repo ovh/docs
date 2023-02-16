@@ -3,6 +3,7 @@ title: 'FAQ Managed Private Registry (Harbor)'
 slug: managed-private-registry-faq
 section: 'Getting started'
 order: 05
+updated: 2022-05-05
 ---
 
 ## Objective

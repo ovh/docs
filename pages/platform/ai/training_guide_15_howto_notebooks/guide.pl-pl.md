@@ -6,6 +6,7 @@ section: AI Training - Guides
 order: 06
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/start-use-notebooks/'
+updated: 2021-05-03
 ---
 
 **Last updated 3rd May, 2021.**

@@ -3,6 +3,7 @@ title: Zarządzanie regułami firewalla i port security w sieciach korzystający
 slug: firewall_security_pci
 excerpt: Sprawdź działanie grup zabezpieczeń w usłudze Public Cloud
 section: Zarządzanie w OpenStack CLI
+updated: 2022-08-25
 ---
 
 <style>

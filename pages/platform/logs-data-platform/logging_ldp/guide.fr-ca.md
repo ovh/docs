@@ -3,6 +3,7 @@ title: Python 3.x - Push logs with logging-ldp
 slug: logging-ldp
 order: 20
 section: Logging libraries
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

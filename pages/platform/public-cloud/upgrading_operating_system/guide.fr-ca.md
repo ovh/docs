@@ -4,6 +4,7 @@ slug: upgrade-os
 excerpt: "Découvrez comment mettre à jour un système d'exploitation en fin de vie"
 section: 'Tutoriels'
 order: 14
+updated: 2022-02-07
 ---
 
 **Dernière mise à jour le 09/07/2021**

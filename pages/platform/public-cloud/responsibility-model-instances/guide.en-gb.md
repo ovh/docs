@@ -4,6 +4,7 @@ slug: raci-instances-public-cloud
 section: General information
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Instances"
 order: 05
+updated: 2022-12-22
 ---
 
 **Last updated 22nd December 2022**

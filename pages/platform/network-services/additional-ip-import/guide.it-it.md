@@ -4,6 +4,7 @@ excerpt: "Come importare un Additional IP nel tuo progetto Public Cloud"
 slug: import-additional-ip
 section: Additional IP
 order: 03
+updated: 2023-01-04
 ---
 
 **Ultimo aggiornamento 04/01/2023**

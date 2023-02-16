@@ -4,6 +4,7 @@ slug: deploy/tokens
 excerpt: Discover how to create a scoped token and query your AI Deploy app
 section: AI Deploy - Guides
 order: 03
+updated: 2022-11-03
 ---
 
 **Last updated 3rd November, 2022.**

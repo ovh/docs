@@ -6,6 +6,7 @@ excerpt: All the logs of your pods in one place
 section: Use cases
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/kubernetes-fluent-bit/'
+updated: 2022-11-15
 ---
 
 **Last updated 15th November, 2022**

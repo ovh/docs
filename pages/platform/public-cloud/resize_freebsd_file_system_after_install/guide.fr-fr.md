@@ -3,6 +3,7 @@ title: Redimensionner le système de fichiers sur FreeBSD 12
 slug: redimensionner-systeme-de-fichiers-freebsd-12
 excerpt: Découvrez comment redimensionner le système de fichiers d'une instance Public Cloud ou d'un VPS sous FreeBSD 12
 section: Tutoriels
+updated: 2020-10-27
 ---
 
 **Dernière mise à jour le 27/10/2020**

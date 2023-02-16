@@ -5,6 +5,7 @@ excerpt: 'Find out how to regain SSH access to your Public Cloud Instance'
 legacy_guide_number: g2069
 section: Management via Control Panel
 order: 4
+updated: 2022-02-10
 ---
 
 **Last updated 10th February 2022**

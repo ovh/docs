@@ -6,6 +6,7 @@ section: AI Training - Guides
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/resources/'
+updated: 2021-05-03
 ---
 
 **Last updated 3rd May, 2021.**

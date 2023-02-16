@@ -4,6 +4,7 @@ slug: test_disk_speed
 excerpt: 'This guide will show you how to test the number of input/output operations per second (IOPS) that your disks are able to achieve, whether for instances or additional disks.'
 section: Storage
 order: 3
+updated: 2022-01-04
 ---
 
 **Last updated 4th January 2022**

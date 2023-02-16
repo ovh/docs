@@ -5,6 +5,7 @@ slug: configurar_llaves_ssh_adicionales
 legacy_guide_number: g1924
 section: Tutoriales
 order: 01
+updated: 2022-02-04
 ---
 
 > [!primary]

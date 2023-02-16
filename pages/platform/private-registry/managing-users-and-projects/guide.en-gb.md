@@ -4,6 +4,7 @@ excerpt: 'Find out how to manage users and projects in your OVHcloud Managed pri
 slug: managing-users-and-projects
 section: 'Getting started'
 order: 04
+updated: 2022-04-13
 ---
 
 **Last updated 13th April, 2022.**

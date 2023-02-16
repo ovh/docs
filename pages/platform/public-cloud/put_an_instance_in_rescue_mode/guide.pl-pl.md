@@ -4,6 +4,7 @@ excerpt: 'Ten przewodnik zawiera informacje o przełączaniu instancji w tryb ra
 slug: przelaczenie_instancji_w_tryb_rescue
 legacy_guide_number: g2029
 section: 'Zarządzanie w Panelu klienta OVH'
+updated: 2023-01-04
 ---
 
 **Ostatnia aktualizacja z dnia 04-01-2023**

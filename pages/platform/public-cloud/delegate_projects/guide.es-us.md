@@ -4,6 +4,7 @@ excerpt: Cómo transferir permisos de acceso a un proyecto de Public Cloud a otr
 slug: delegar_proyectos
 section: 'Gestión del proyecto'
 order: 7
+updated: 2022-04-04
 ---
 
 > [!primary]

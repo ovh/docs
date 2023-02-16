@@ -6,6 +6,7 @@ section: Concepts
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/capabilities/'
+updated: 2022-12-07
 ---
 
 **Last updated 07<sup>th</sup> December, 2022**

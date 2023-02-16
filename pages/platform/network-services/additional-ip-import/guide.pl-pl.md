@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak zaimportować adres Additional IP do projektu OVHclo
 slug: import-additional-ip
 section: Additional IP
 order: 03
+updated: 2023-01-04
 ---
 
 **Ostatnia aktualizacja: 04-01-2023**

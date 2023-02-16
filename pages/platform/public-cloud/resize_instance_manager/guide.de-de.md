@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in OVHcloud Kunden
 slug: resize-an-instance-manager
 section: Verwaltung im OVHcloud Kundencenter
 order: 06
+updated: 2022-08-24
 ---
 
 > [!primary]

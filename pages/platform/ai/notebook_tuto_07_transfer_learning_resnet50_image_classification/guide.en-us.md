@@ -4,6 +4,7 @@ slug: notebooks/tuto-transfer-learning-resnet
 excerpt: How to use an existing model to do Transfer Learning?
 section: AI Notebooks - Tutorials
 order: 07
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

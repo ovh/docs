@@ -4,6 +4,7 @@ slug: anadir_credito_cloud
 excerpt: 'Cómo añadir créditos o códigos promocionales a su proyecto de Public Cloud'
 section: 'Gestión del proyecto'
 order: 05
+updated: 2022-02-04
 ---
 
 > [!primary]

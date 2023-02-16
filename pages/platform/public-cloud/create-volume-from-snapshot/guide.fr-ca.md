@@ -4,6 +4,7 @@ slug: creer-volume-depuis-sauvegarde
 excerpt: "Découvrez comment créer des disques supplémentaires à partir d'une sauvegarde d'un disque supplémentaire"
 section: 'Stockage'
 order: 4
+updated: 2021-04-06
 ---
 
 **Dernière mise à jour le 02/04/2021**

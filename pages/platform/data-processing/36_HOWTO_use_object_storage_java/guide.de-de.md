@@ -6,6 +6,7 @@ section: How to
 order: 6
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/object-storage-java/'
+updated: 2021-01-20
 ---
 
 **Last updated 20<sup>th</sup> January, 2021**

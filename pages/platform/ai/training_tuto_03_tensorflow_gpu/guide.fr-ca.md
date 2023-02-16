@@ -6,6 +6,7 @@ section: AI Training - Tutoriels
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/tensorflow-gpu-examples/'
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

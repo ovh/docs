@@ -6,6 +6,7 @@ excerpt: If you want to give access to your logs to a software or automatize som
 section: Features
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/tokens-logs-data-platform/'
+updated: 2022-10-13
 ---
 
 **Last updated 13th October, 2022**

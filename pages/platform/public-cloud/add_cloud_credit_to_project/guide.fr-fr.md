@@ -4,6 +4,7 @@ slug: ajouter-du-credit-cloud
 excerpt: 'Découvrez comment ajouter du crédit ou des vouchers à votre projet Public Cloud'
 section: 'Gestion de projets'
 order: 3
+updated: 2022-02-04
 ---
 
 **Dernière mise à jour le 04/02/2022**

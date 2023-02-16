@@ -4,6 +4,7 @@ slug: gestire-istanze-public-cloud
 excerpt: Come gestire le tue istanze attraverso l'interfaccia Horizon
 section: Gestione da Horizon
 order: 04
+updated: 2022-01-25
 ---
 
 > [!primary]
