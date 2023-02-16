@@ -39,9 +39,9 @@ If you want to create filtering rules between internal segments, you will need t
 
 ## Instructions
 
-We will create a rule that blocks access to the entire external network of a cluster from a group that contains a segment. You can use this guide to create [Distributed Firewall Management] groups (https://docs.ovh.com/en/gb/nsx-t-manage-distributed-firewall) and **any** groups for the destination.
+We will create a strategy to improve the visibility and administration of rules based on their usefulness.
 
-To simplify rule administration, we can create policies and group filtering rules.
+Next, we will add a rule within our strategy that blocks access to the entire external network of a cluster from a group that contains a segment (you can use this guide to create groups [Distributed Firewall Management](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall)) and **any** for the destination.
 
 Go to the `Security`{.action} tab, select `Gateway Firewall`{.action} and click `+ ADD POLICY`{.action}.
 
