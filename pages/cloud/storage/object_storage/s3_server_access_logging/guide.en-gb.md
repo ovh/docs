@@ -83,7 +83,7 @@ $ aws --profile my-profile s3api get-bucket-acl --bucket my-bucket-logs
 
 ### Configure bucket logging parameters
 
-Set the logging parameters for a bucket and to specify permissions for who can view and modify the logging parameters.
+Set the logging parameters for a bucket and specify permissions for who can view and modify the logging parameters.
 
 ``` bash
 $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://logging.json
