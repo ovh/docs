@@ -1,11 +1,11 @@
 ---
-title: "Spécifications de sécurité du service Serveurs Dédiés "
+title: "Spécifications de sécurité du service Serveurs Dédiés"
 slug: security-specs-dedicated-servers
 section: Spécifications de sécurité des services
-updated: 2023-02-14
+updated: 2023-02-16
 ---
 
-**Dernière mise à jour le 14/02/2023**
+**Dernière mise à jour le 16/02/2023**
 
 ## Objectif
 
@@ -13,15 +13,15 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 
 ## 1 - Certifications
 
-- ISO/IEC 27001 
-- ISO/IEC 27701 
-- ISO/IEC 27017 
-- ISO/IEC 27018 
-- HDS 
-- SOC 1 type 1 
-- SOC 2 type 1 
-- CSA type 1 
-- C5 type 1 
+- ISO/IEC 27001
+- ISO/IEC 27701
+- ISO/IEC 27017
+- ISO/IEC 27018
+- HDS
+- SOC 1 type 1
+- SOC 2 type 1
+- CSA type 1
+- C5 type 1
 - CISPE
 
 ## 2 - Bonnes pratiques à déployer sur le service
@@ -95,7 +95,7 @@ Les interventions sont des actions réalisées par les équipes OVHcloud dans le
 
 | **Nom** | **Capacités** | **Liens** |
 | --- | --- | --- |
-| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | https://api.ovh.com/console/#/dedicated/seed/servverconsole/#/dedicr |
+| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [API calls for Dedicated Servers](https://api.ovh.com/console/#/dedicated/server) |
 
 ## 7 - Comptes utilisateurs
 
@@ -205,7 +205,7 @@ Suite au décommissionnement du service par le client, OVHcloud procède à la l
 
 **Conformité de la prise en compte des objectifs de sécurité** :
 
-![TAB](images/spec_hds.png){.thumbnail}
+![TAB](images/spec_HDS.PNG){.thumbnail}
 
 **Commentaires :**
 

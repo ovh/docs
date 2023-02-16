@@ -2,7 +2,7 @@
 title: Sécurité
 slug: securite
 excerpt: Politiques de sécurité OVHcloud et bonnes pratiques pour sécuriser votre compte et vos services
-Sections: Politiques de sécurité, Bonnes pratiques
+Sections: Politiques de sécurité, Spécifications de sécurité des services, Bonnes pratiques
 order: 04
 ---
 
