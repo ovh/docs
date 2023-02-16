@@ -4,6 +4,7 @@ slug: zarzadzanie-platnosciami-emailpro
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi E-mail Pro'
 section: 'Pierwsze kroki'
 order: 7
+updated: 2022-02-23
 ---
 
 > [!primary]

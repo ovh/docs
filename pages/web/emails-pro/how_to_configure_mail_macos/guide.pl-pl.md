@@ -3,6 +3,7 @@ title: 'Konfiguracja konta E-mail Pro w aplikacji Mail na urządzeniach z system
 slug: konfiguracja-email-pro-mail-macos
 section: 'Konfiguracja programu pocztowego'
 order: 4
+updated: 2022-06-13
 ---
 
 > [!primary]

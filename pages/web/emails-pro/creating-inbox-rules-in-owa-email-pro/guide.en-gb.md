@@ -4,6 +4,7 @@ slug: creating-inbox-rules-in-owa-email-pro
 excerpt: 'Find out how to create email redirections and filters using Email Pro'
 section: 'Getting started'
 order: 3
+updated: 2020-03-12
 ---
 
 **Last updated 12th March 2020**

@@ -2,6 +2,7 @@
 title: Activity scripts
 slug: integrations-activity
 section: Integrations
+updated: 2021-06-03
 ---
 
 **Last updated 3rd June 2021**

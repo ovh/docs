@@ -5,6 +5,7 @@ slug: configuratie-outlook-2016-mac
 excerpt: Leer hoe u uw Email Pro-account in Outlook 2016 voor Windows kunt configureren
 section: Configuratie van een e-mailclient
 order: 2
+updated: 2020-03-18
 ---
 
 **Laatste update 22-03-2018**

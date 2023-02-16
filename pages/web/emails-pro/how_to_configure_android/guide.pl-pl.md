@@ -4,6 +4,7 @@ slug: konfiguracja-android
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro na urządzeniu z systemem Android przy użyciu aplikacji Gmail'
 section: 'Konfiguracja programu pocztowego'
 order: 5
+updated: 2020-03-18
 ---
 
 **Ostatnia aktualizacja dnia 2020-04-09**

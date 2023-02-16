@@ -5,6 +5,7 @@ slug: configureer-email-pro-macos-mail
 excerpt: Ontdek hoe u uw E-mail Pro-account kunt configureren in Mail van macOS El Capitan, Sierra en High Sierra
 section: Configuratie van een e-mailclient
 order: 4
+updated: 2022-06-13
 ---
 
 **Laatste update 15-02-2018**

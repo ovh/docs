@@ -3,6 +3,7 @@ title: 'Konfiguration von E-Mail Pro auf macOS Mail'
 slug: email-pro-auf-macos-konfigurieren
 section: 'Konfiguration des E-Mail-Clients'
 order: 4
+updated: 2022-06-13
 ---
 
 > [!primary]

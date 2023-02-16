@@ -4,6 +4,7 @@ slug: regles-boite-de-reception-owa-email-pro
 excerpt: "Comment créer des filtres et des redirections e-mail depuis l'interface OWA"
 section: 'Premiers pas'
 order: 3
+updated: 2020-03-12
 ---
 
 **Dernière mise à jour le 26/02/2021**

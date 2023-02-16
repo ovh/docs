@@ -2,6 +2,7 @@
 title: Moving a Java application to Web PaaS
 slug: migration
 section: Java
+updated: 2022-06-02
 ---
 
 **Last updated 2nd June 2022**

@@ -4,6 +4,7 @@ slug: gestion-facturation-emailpro
 excerpt: 'Découvrez comment gérer la facturation de votre service E-mail Pro'
 section: 'Premiers pas'
 order: 7
+updated: 2022-02-23
 ---
 
 **Dernière mise à jour le 24/02/2022**

@@ -2,6 +2,7 @@
 title: Using Solr with the module Search API on Drupal 7.x
 slug: search-api-module
 section: Drupal7
+updated: 2021-05-11
 ---
 
 **Last updated 11th May 2021**

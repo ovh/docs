@@ -3,6 +3,7 @@ title: YAML
 slug: configuration-yaml
 section: Configuration
 order: 3
+updated: 2021-03-31
 ---
 
 **Last updated 31st March 2021**

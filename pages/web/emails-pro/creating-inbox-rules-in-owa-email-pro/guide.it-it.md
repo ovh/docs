@@ -3,6 +3,7 @@ title: "Regole della casella della posta in arrivo dall'interfaccia OWA"
 slug: creating-inbox-rules-in-owa-email-pro
 section: 'Per iniziare'
 order: 3
+updated: 2020-03-12
 ---
 
 **Ultimo aggiornamento: 25/06/2021**

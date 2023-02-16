@@ -4,6 +4,7 @@ slug: mail-konfiguration-windows-10
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account auf der Mail App von Windows 10 einrichten'
 section: 'Konfiguration des E-Mail-Clients'
 order: 7
+updated: 2020-03-18
 ---
 
 **Letzte Aktualisierung am 18.03.2020**

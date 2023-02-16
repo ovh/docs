@@ -2,6 +2,7 @@
 title: Network Storage
 slug: network-storage
 section: Services
+updated: 2021-06-03
 ---
 
 **Last updated 3rd June 2021**

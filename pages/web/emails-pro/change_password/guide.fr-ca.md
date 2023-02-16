@@ -4,6 +4,7 @@ slug: modifier-mot-de-passe-adresse-email
 excerpt: "Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud"
 section: 'Premiers pas'
 order: 03
+updated: 2023-01-03
 ---
 
 **Dernière mise à jour le 03/01/2023**

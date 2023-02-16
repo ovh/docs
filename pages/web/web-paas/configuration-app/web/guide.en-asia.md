@@ -2,6 +2,7 @@
 title: Web
 slug: web
 section: App
+updated: 2021-03-31
 ---
 
 **Last updated 31st March 2021**
