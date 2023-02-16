@@ -2,8 +2,6 @@
 title: "Konfiguracja rewersu DNS na serwerze VPS"
 excerpt: Dowiedz się, jak wdrożyć rewers DNS
 slug: konfiguracja_rewersu_dns_vps
-routes:
-    canonical: 'https://docs.ovh.com/pl/public-cloud/konfiguracja_rewersu_dns_instancji/'
 section: Sieć & IP
 order: 3
 updated: 2023-01-05
@@ -17,7 +15,7 @@ updated: 2023-01-05
 
 ## Wprowadzenie
 
-Rewers **DNS** to uzupełnienie konfiguracji "klasycznej" serwerów DNS, która pozwala na konwersję domeny na adres IP (rekord typu **A**). Dzięki tego typu zapytaniu, adres IP może zostać usunięty w nazwie domeny (rejestracja typu **PTR**). Oznacza to, że zapytania DNS na danym adresie IP będą miały nazwę domeny.
+**Rewers DNS** (*rDNS*) to uzupełnienie konfiguracji "klasycznej" serwerów DNS, która pozwala na konwersję domeny na adres IP (rekord typu **A**). Dzięki tego typu zapytaniu, adres IP może zostać usunięty w nazwie domeny (rejestracja typu **PTR**). Oznacza to, że zapytania DNS na danym adresie IP będą miały nazwę domeny.
 
 Konfiguracja **rewersu DNS** VPS jest szczególnie przydatna przy wysyłaniu e-maili. Ryzyko odrzucenia wiadomości przez system ochrony przed spamem zostanie zmniejszone, jeśli adres IP Twojego serwera poczty wychodzącej zostanie poprawnie rozwiązany w Twojej domenie.
 

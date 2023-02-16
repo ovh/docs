@@ -2,8 +2,6 @@
 title: Configuring the reverse DNS of a VPS
 excerpt: Find out how to set up the reverse DNS resolution
 slug: configure-reverse-dns-vps
-routes:
-    canonical: 'https://docs.ovh.com/asia/en/public-cloud/configure-reverse-dns-instance/'
 section: Network management
 order: 3
 updated: 2023-01-05
@@ -13,7 +11,7 @@ updated: 2023-01-05
 
 ## Objective
 
-Reverse DNS is the complement to "forward" DNS resolution which resolves domain names into IP addresses. With reverse DNS resolution, an IP address can resolve into the domain name (or host name) it is mapped to. This means that DNS queries of the associated IP address will return this domain name.
+Reverse DNS (*rDNS*) is the complement to "forward" DNS resolution which resolves domain names into IP addresses. With reverse DNS resolution, an IP address can resolve into the domain name (or host name) it is mapped to. This means that DNS queries of the associated IP address will return this domain name.
 
 Configuring the reverse DNS resolution for a VPS is especially useful when sending emails. A mail server's validation by spam protection systems will improve if a DNS lookup of the IP address resolves properly.
 
@@ -52,7 +50,7 @@ If the domain name is managed by OVHcloud as its registrar and it uses OVHcloud 
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with a VPS](../getting-started-vps/)
+[Getting started with a VPS](https://docs.ovh.com/asia/en/vps/getting-started-vps/)
 
 [Editing an OVHcloud DNS zone](https://docs.ovh.com/asia/en/domains/web_hosting_how_to_edit_my_dns_zone/)
 
