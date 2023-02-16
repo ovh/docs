@@ -5,7 +5,7 @@ excerpt: 'Apprenez à configurer la baie RAID de votre serveur en cas de panne o
 section: 'RAID & disques'
 ---
 
-**Dernière mise à jour le 15/02/2023**
+**Dernière mise à jour le 16/02/2023**
 
 ## Objectif
 
@@ -187,16 +187,14 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Veuillez noter que si vous êtes connecté en tant qu'utilisateur root, vous pouvez obtenir le message suivant lorsque vous essayez de démonter la partition (dans notre cas, où notre partition md4 est monté dans /home) :
+> Veuillez noter que si vous êtes connecté en tant qu'utilisateur root, vous pouvez obtenir le message suivant lorsque vous essayez de démonter la partition (dans notre cas, où notre partition md4 est montée dans /home) :
 > 
 > `umount: /home: target is busy`
 >
 > Dans ce cas, vous devez vous déconnecter en tant qu'utilisateur root et vous connecter en tant qu'utilisateur local (dans notre cas, `debian`) et utiliser la commande suivante :
 > 
-> 
 > `debian@ns000000:/$ sudo umount /dev/md4`
 >
-> 
 > Si vous ne disposez pas d'utilisateur local, vous devez en créer un.
 
 Le résultat obtenu sera le suivant :
@@ -299,7 +297,7 @@ Consistency Policy : bitmap
 
 ### Reconstruction du RAID
 
-Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain (« sdb » dans cet exemple) à la nouvelle (« sda ») avec la commande suivante : 
+Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain (« sdb » dans cet exemple) dans la nouvelle (« sda ») avec la commande suivante : 
 
 **Pour les partitions GPT**
 
@@ -309,7 +307,7 @@ sgdisk -R /dev/sda /dev/sdb
 
 La commande doit être au format suivant : `sgdisk -R /dev/nouveaudisque /dev/disquesain`
 
-Une fois cette opération effectuée, l’étape suivante consiste à randomiser le GUID du nouveau disque afin d’éviter tout conflit de GUID avec les autres disques :
+Une fois cette opération effectuée, l’étape suivante consiste à rendre aléatoire le GUID du nouveau disque afin d’éviter tout conflit de GUID avec les autres disques :
 
 ```sh
 sgdisk -G /dev/sda
@@ -317,7 +315,7 @@ sgdisk -G /dev/sda
 
 **Pour les partitions MBR**
 
-Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain (« sdb » dans cet exemple) à la nouvelle (« sda ») avec la commande suivante : 
+Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain (« sdb » dans cet exemple) dans la nouvelle (« sda ») avec la commande suivante : 
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
