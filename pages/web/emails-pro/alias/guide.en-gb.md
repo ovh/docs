@@ -4,6 +4,7 @@ slug: emailpro-alias
 excerpt: Find out how to add an alias address to an email account in the OVHcloud Control Panel
 section: 'Getting started'
 order: 4
+updated: 2021-09-20
 ---
 
 **Last updated 20th September 2021**

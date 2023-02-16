@@ -3,6 +3,7 @@ title: One site or many
 slug: bestpractices-oneormany
 section: Best practices
 order: 10
+updated: 2021-05-11
 ---
 
 **Last updated 11th May 2021**

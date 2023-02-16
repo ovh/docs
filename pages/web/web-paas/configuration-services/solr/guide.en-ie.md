@@ -2,6 +2,7 @@
 title: Solr (Search service)
 slug: solr
 section: Services
+updated: 2021-06-03
 ---
 
 **Last updated 12th February 2021**

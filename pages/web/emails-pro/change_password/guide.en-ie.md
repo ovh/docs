@@ -6,6 +6,7 @@ section: Getting started
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/emails/changing-email-address-password/'
+updated: 2023-01-03
 ---
 
 **Last updated 3rd January 2023**

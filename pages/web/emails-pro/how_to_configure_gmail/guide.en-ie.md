@@ -4,6 +4,7 @@ slug: gmail-configuration
 excerpt: 'Find out how to configure an Email Pro account on the Gmail online interface'
 section: 'Email client configuration'
 order: 6
+updated: 2020-03-18
 ---
 
 **Last updated 18th March 2020**

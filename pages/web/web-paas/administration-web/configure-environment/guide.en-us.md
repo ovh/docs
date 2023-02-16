@@ -2,6 +2,7 @@
 title: Configure environments
 slug: configure-environment
 section: Web
+updated: 2022-06-24
 ---
 
 **Last updated 24th June 2022**

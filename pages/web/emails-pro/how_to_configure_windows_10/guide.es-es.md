@@ -4,6 +4,7 @@ slug: configuracion-correo-windows-10
 excerpt: 'Cómo configurar una cuenta Email Pro en la aplicación Correo de Windows 10'
 section: 'Configuración del cliente de correo'
 order: 7
+updated: 2020-03-18
 ---
 
 **Última actualización: 15/06/2018**

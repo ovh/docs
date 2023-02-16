@@ -2,6 +2,7 @@
 title: Configure a project
 slug: configure-project
 section: Web
+updated: 2022-06-24
 ---
 
 **Last updated 24th June 2022**

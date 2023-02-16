@@ -4,6 +4,7 @@ slug: configuration-iphone
 excerpt: "Apprenez à configurer un compte E-mail Pro sur un iPhone ou un iPad, via l'application Mail"
 section: 'Configuration sur smartphone'
 order: 1
+updated: 2021-05-21
 ---
 
 **Dernière mise à jour le 21/05/2020**

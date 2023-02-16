@@ -4,6 +4,7 @@ slug: erstkonfiguration
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
 section: 'Erste Schritte'
 order: 1
+updated: 2020-04-09
 ---
 
 **Letzte Aktualisierung am 22.04.2020**

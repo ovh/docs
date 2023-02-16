@@ -3,6 +3,7 @@ title: HTTP Headers
 slug: development-headers
 section: Development
 order: 5
+updated: 2021-03-26
 ---
 
 **Last updated 26th March 2021**

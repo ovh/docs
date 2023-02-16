@@ -4,6 +4,7 @@ slug: configurazione-posta-windows-10
 excerpt: 'Scopri come configurare un account Email Pro sull’applicazione Posta per Windows 10'
 section: 'Configurazione di un client di posta'
 order: 7
+updated: 2020-03-18
 ---
 
 **Ultimo aggiornamento: 09/04/2020**

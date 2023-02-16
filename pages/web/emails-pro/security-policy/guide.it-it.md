@@ -4,6 +4,7 @@ slug: manage-security-policy-password
 excerpt: Come configurare la politica di sicurezza del tuo servizio di posta elettronica
 section: Per iniziare
 order: 8
+updated: 2022-04-22
 ---
 
 **Ultimo aggiornamento: 22/04/2022**

@@ -4,6 +4,7 @@ slug: konfiguracja-poczta-windows-10
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w aplikacji Poczta na urządzeniu z systemem Windows 10'
 section: 'Konfiguracja programu pocztowego'
 order: 7
+updated: 2020-03-18
 ---
 
 **Ostatnia aktualizacja dnia 2020-04-09**
