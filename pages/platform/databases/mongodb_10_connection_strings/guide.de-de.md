@@ -143,7 +143,7 @@ Without having updated the connection string, the client application has dynamic
 
 In summary, the DNS seed list connection string and the underlying SRV records simplify MongoDB cluster integration, limit errors, and facilitate evolution through transparent node management.
 
-# Go further
+## Go further
 
 Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud).
 

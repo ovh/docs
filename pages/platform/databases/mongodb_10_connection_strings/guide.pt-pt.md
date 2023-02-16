@@ -94,7 +94,7 @@ Click on `Databases`{.action} in the left-hand navigation bar and select your Mo
 
 From the central `Login information` panel, select `mongodbSrv` as **Service** and copy the URI.
 
-![Copy SRV URI from the OVHcloud manager](images/copy-srv-ovhcloud-manager.png){.thumbnail}
+![Copy SRV URI from the OVHcloud manager](images/copy-srv-ovhcloud-control-panel.png){.thumbnail}
 
 ### Test the connection to MongoDB
 
@@ -143,7 +143,7 @@ Without having updated the connection string, the client application has dynamic
 
 In summary, the DNS seed list connection string and the underlying SRV records simplify MongoDB cluster integration, limit errors, and facilitate evolution through transparent node management.
 
-# Go further
+## Go further
 
 Visit our dedicated Discord channel: [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud).
 

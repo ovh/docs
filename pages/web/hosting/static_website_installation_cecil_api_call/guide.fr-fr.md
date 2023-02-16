@@ -3,7 +3,7 @@ title: "Tutoriel - Ajouter du contenu dynamique dans une page web statique gén�
 slug: static-site-generator-cecil-use-api
 excerpt: "Découvrez comment ajouter un appel vers une API externe depuis votre page page web statique"
 section: 'Tutoriels'
-order: 5
+order: 031
 updated: 2023-01-16
 ---
 

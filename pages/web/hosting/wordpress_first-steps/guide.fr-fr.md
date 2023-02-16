@@ -1,9 +1,10 @@
 ---
-title: "Tutoriel - WordPress, premiers pas"
+title: "Tutoriel - Premiers pas sur WordPress"
 slug: wordpress-first-steps
 excerpt: "Découvrez comment créer un site web avec le CMS WordPress"
-section: Tutoriel
-order: 06
+section: Tutoriels
+order: 020
+updated: 2023-02-16
 ---
 
 **Dernière mise à jour le 16/02/2023**
