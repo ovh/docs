@@ -4,6 +4,7 @@ excerpt: Find out how to change a user password in the Horizon interface.
 slug: change-openstack-user-password
 section: Horizon
 order: 06
+updated: 2018-03-07
 ---
 
 **Last updated 07th March 2018**

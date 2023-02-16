@@ -4,6 +4,7 @@ slug: aplikacje-preinstalowane
 excerpt: Dowiedz się, jak wdrożyć aplikacje zainstalowane na Twoich instancjach Public Cloud
 section: Pierwsze kroki
 order: 7
+updated: 2021-09-07
 ---
 
 **Ostatnia aktualizacja z dnia 07/09/2021**

@@ -5,6 +5,7 @@ slug: modificar_su_llave_ssh_en_caso_de_perdida
 legacy_guide_number: g2069
 section: Gestión de las instancias desde el área de cliente
 order: 05
+updated: 2022-02-10
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Come migrare un backup da un datacenter a un altro conservando la conf
 slug: trasferisci_il_backup_di_unistanza_da_un_datacenter_a_un_altro
 section: Gestione via OpenStack
 legacy_guide_number: g1853
+updated: 2019-03-29
 ---
 
 **Ultimo aggiornamento: 02/12/2019**

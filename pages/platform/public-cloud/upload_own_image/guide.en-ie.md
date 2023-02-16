@@ -4,6 +4,7 @@ slug: uploading-your-own-image
 excerpt: Find out how to upload your own image to Public Cloud
 section: 'OpenStack'
 order: 10
+updated: 2020-10-27
 ---
 
 **Last updated 27th October 2020**

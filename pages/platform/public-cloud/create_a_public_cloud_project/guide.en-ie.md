@@ -4,6 +4,7 @@ slug: create_a_public_cloud_project
 excerpt: 'Find out how to create your first Public Cloud project via the OVHcloud Control Panel'
 section: Getting started
 order: 1
+updated: 2021-10-06
 ---
 
 **Last updated 6th October 2021**

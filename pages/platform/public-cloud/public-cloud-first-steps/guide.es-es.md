@@ -4,6 +4,7 @@ slug: public-cloud-primeros-pasos
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
 section: 'Primeros pasos'
 order: 04
+updated: 2023-01-26
 ---
 
 **Última actualización: 26/01/2023**

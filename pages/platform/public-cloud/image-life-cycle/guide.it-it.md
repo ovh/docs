@@ -4,6 +4,7 @@ slug: public-cloud-vps-image-life-cycle
 excerpt: Scopri il ciclo di vita delle immagini fornite per Public Cloud & VPS
 section: 'Per iniziare'
 order: 8
+updated: 2021-09-22
 ---
 
 > [!primary]

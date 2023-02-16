@@ -4,6 +4,7 @@ excerpt: "Cómo gestionar los contactos de un proyecto de Public Cloud"
 slug: cambiar_los_contactos_de_un_proyecto
 section: 'Gestión del proyecto'
 order: 06
+updated: 2022-04-04
 ---
 
 > [!primary]

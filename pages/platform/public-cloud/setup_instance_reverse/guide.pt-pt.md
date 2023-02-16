@@ -5,6 +5,7 @@ slug: configurar_a_reverse_dns_de_uma_instancia
 legacy_guide_number: g1940
 section: Gestão a partir da Área de Cliente OVHcloud
 order: 7
+updated: 2021-11-12
 ---
 
 > [!primary]

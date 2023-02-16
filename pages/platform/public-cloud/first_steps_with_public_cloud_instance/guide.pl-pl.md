@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak zarządzać instancjami Public Cloud w Panelu klient
 slug: rozpoczecie_pracy_z_instancja_public_cloud
 section: 'Pierwsze kroki'
 order: 05
+updated: 2023-01-04
 ---
 
 > [!primary]

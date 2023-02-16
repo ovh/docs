@@ -4,6 +4,7 @@ slug: aplicacoes-pre-instaladas
 excerpt: Saiba como implementar aplicações pré-instaladas nas suas instâncias Public Cloud
 section: Introdução
 order: 7
+updated: 2021-09-07
 ---
 
 **Última atualização: 07/09/2021**

@@ -3,6 +3,7 @@ title: 'Backup einer Instanz von einem Rechenzentrum in ein anderes übertragen'
 slug: instanz-backup-in-anderes-rechenzentrum-uebertragen
 section: 'OpenStack'
 excerpt: 'Erfahren Sie hier, wie Sie Backups transferieren und dabei Zustand und Status der Instanz beibehalten'
+updated: 2019-03-29
 ---
 
 **Letzte Aktualisierung am 29.03.2019**

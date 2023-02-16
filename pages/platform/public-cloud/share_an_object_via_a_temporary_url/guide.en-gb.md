@@ -5,6 +5,7 @@ slug: share_an_object_via_a_temporary_url
 legacy_guide_number: g2007
 section: OpenStack
 order: 8
+updated: 2021-01-11
 ---
 
 **Last updated 11th January 2021**

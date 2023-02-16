@@ -3,6 +3,7 @@ title: Lexique Public Cloud
 slug: introduction-aux-instances-et-autres-notions-cloud
 section: Informations générales
 order: 02
+updated: 2021-12-10
 ---
 
 **Dernière mise à jour le 26/07/2021**

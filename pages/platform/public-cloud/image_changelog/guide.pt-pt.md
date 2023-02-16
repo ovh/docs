@@ -4,6 +4,7 @@ slug: trocelog-imagens
 excerpt:  Descubra as modificações introduzidas nas imagens fornecidas nas soluções Public Cloud e VPS
 section: Introdução
 order: 8
+updated: 2021-02-09
 ---
 
 **Última atualização: 18/01/2021**

@@ -4,6 +4,7 @@ slug: dostep_root_i_zdefiniowanie_hasla
 excerpt: 'Dowiedz się, jak się zalogować jako użytkownik root i ustawić dla niego hasło'
 section: Tutoriale
 order: 08
+updated: 2022-03-24
 ---
 
 **Ostatnia aktualizacja z dnia 24-03-2022**

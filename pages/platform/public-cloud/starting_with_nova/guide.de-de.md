@@ -4,6 +4,7 @@ slug: getting-started-openstack-api
 excerpt: Erfahren Sie hier, wie Sie Ihre Instanzen mithilfe des OpenStack Python Clients verwalten
 section: OpenStack
 order: 3
+updated: 2022-10-13
 ---
 
 > [!primary]

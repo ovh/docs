@@ -5,6 +5,7 @@ excerpt: "Découvrez comment modifier les serveurs DNS par défaut d’une insta
 legacy_guide_number: 1985
 section: Réseau
 order: 4
+updated: 2021-10-29
 ---
 
 **Dernière mise à jour le 29/10/2021**

@@ -4,6 +4,7 @@ slug: use_high_perf_object_storage_terraform_backend_state
 excerpt: 'Find out how to use an OVHcloud High Performance (S3) Object Storage as a Terraform Backend to store your Terraform state'
 section: Tutorials
 order: 04
+updated: 2022-07-12
 ---
 
 <style>

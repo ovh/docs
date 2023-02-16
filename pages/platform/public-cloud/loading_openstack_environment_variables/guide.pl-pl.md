@@ -3,6 +3,7 @@ title: 'Zmienne środowiskowe OpenStack'
 excerpt: 'Zarządzaj środowiskiem OpenStack z linii komend'
 slug: set-openstack-environment-variables
 section: 'Zarządzanie w OpenStack CLI'
+updated: 2021-08-18
 ---
 
 **Ostatnia aktualizacja z dnia 18-08-2021**

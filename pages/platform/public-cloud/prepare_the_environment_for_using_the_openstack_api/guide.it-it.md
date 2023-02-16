@@ -4,6 +4,7 @@ slug: prepare_the_environment_for_using_the_openstack_api
 excerpt: 'Come installare l’ambiente OpenStack per gestire le istanze via API'
 section: Gestione via OpenStack
 legacy_guide_number: g1851
+updated: 2022-03-30
 ---
 
 **Ultimo aggiornamento: 30/03/2022**

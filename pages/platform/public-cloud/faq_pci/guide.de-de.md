@@ -3,6 +3,7 @@ title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
 section: 'Allgemeine Informationen'
 order: 01
+updated: 2022-12-01
 ---
 
 > [!primary]

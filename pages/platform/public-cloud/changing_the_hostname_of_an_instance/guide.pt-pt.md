@@ -4,6 +4,7 @@ slug: modificar-hostname-de-uma-instancia
 excerpt: 'Saiba como modificar o hostname de uma instância Public Cloud'
 legacy_guide_number: 1928
 section: Tutoriais
+updated: 2018-09-18
 ---
 
 **Última atualização: 31/08/2018**

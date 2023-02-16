@@ -4,6 +4,7 @@ excerpt: "Visita guidata dell'interfaccia Public Cloud per scoprire le diverse s
 slug: interfaccia-public-cloud
 section: Per iniziare
 order: 03
+updated: 2021-12-06
 ---
 
 > [!primary]

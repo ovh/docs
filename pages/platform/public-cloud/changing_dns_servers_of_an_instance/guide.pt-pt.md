@@ -5,6 +5,7 @@ slug: modificar_os_servidores_dns_de_uma_instancia
 legacy_guide_number: g1985
 section: Rede
 order: 4
+updated: 2021-10-29
 ---
 
 > [!primary]

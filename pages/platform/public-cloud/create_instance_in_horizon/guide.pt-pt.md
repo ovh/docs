@@ -4,6 +4,7 @@ slug: criar_uma_instancia_na_interface_horizon
 excerpt: 'Saiba como criar uma instância a partir da interface Horizon'
 legacy_guide_number: g1772
 section: Gestão a partir do Horizon
+updated: 2022-08-01
 ---
 
 > [!primary]

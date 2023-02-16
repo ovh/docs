@@ -4,6 +4,7 @@ slug: revert-a-flex-instance
 excerpt: Find out how to revert a flex instance from the OpenStack Horizon interface
 section: Horizon
 order: 10
+updated: 2021-11-15
 ---
 
 **Last updated 15th November 2021**

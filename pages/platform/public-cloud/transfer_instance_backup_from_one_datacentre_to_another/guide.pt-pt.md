@@ -3,6 +3,7 @@ title: 'Transferir a cópia de segurança de uma instância de um datacenter par
 slug: transferir-a-copia-de-seguranca-de-uma-instancia-de-um-datacenter-para-outro
 section: Gestão via OpenStack
 excerpt: 'Saiba como realizar esta operação mantendo a configuração e o estado da instância'
+updated: 2019-03-29
 ---
 
 **Última atualização: 24/04/2019**

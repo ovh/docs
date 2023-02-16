@@ -4,6 +4,7 @@ slug: gerer-instancje-public-cloud
 excerpt: Dowiedz się, jak zarządzać instancjami w interfejsie Horizon
 section: Zarządzanie w interfejsie Horizon
 order: 4
+updated: 2022-01-25
 ---
 
 > [!primary]

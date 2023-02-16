@@ -3,6 +3,7 @@ title: Resizing the file system in FreeBSD 12
 slug: resize-file-system-freebsd-12-instance
 excerpt: Find out how resize the file system of an OVHcloud Public Cloud instance or VPS with FreeBSD 12
 section: Tutorials
+updated: 2020-10-27
 ---
 
 **Last updated 27th October 2020**

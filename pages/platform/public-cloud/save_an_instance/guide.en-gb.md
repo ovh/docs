@@ -4,6 +4,7 @@ slug: back-up-instance
 excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel
 section: Management via Control Panel
 order: 1
+updated: 2023-01-04
 ---
 
 **Last updated 4th January 2023**

@@ -4,6 +4,7 @@ slug: effettuare-snapshot-di-un-istanza
 excerpt: "Come eseguire le prime operazioni su un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
 order: 1
 section: Gestione dallo Spazio Cliente OVHcloud
+updated: 2023-01-04
 ---
 
 > [!primary]

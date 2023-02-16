@@ -3,6 +3,7 @@ title: 'Instalar Plesk en una instancia'
 slug: instalar-plesk-en-una-instancia
 excerpt: 'Cómo instalar Plesk en una instancia de Public Cloud'
 section: Tutoriales
+updated: 2018-03-26
 ---
 
 **Última actualización: 27/03/2019**

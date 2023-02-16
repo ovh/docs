@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak zarządzać instancjami za pomocą klienta Python Ope
 slug: pierwsze_kroki_z_api_nova
 legacy_guide_number: g1935
 section: Zarządzanie w OpenStack CLI
+updated: 2022-10-13
 ---
 
 > [!primary]
