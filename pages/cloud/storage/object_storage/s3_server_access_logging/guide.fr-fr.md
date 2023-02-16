@@ -1,57 +1,58 @@
 ---
 title: Object Storage - Server Access Logging
 slug: s3/server-access-logging
-excerpt: Learn how to configure and use Server Access Logging
+excerpt: Découvrez comment configurer et utiliser Server Access Logging
 section: Tutorials
 order: 130
 ---
 
-**Last updated on 10th February 2022**
+**Dernière mise à jour le 10/02/2022**
 
-## Objective
+## Objectif
 
-Server Access Logging provides detailed records for the requests that are made to a bucket. Server access logs are useful for many applications. For example, access log information can be useful in security and access audits.
+Server Access Logging fourni des enregistrements détaillés des requêtes faites à un bucket. Les journaux d'accès sont utiles pour de nombreuses applications, par exemple pour les audits de sécurité et d'accès.
 
-**This guide explains how to configure and use Server Access Logging.**
+**Ce guide explique comment configurer et utiliser Server Access Logging.**
 
-## Requirements
+## Prérequis
 
-- A bucket
-- A user with the required access rights on the bucket
-- Have installed and configured aws-cli
+- Avoir créé un bucket
+- Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
+- Connaître vos informations d'identification S3 (access_key et secret_access_key).
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/gb/en/storage/object-storage/s3/getting-started-with-object-storage/) guide.
+Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
 
-## Instruction
+## En pratique
 
-### Create a bucket
+### Créer un bucket
 
 ``` bash
 $ aws --profile my-profile s3 mb "s3://my-bucket"
 ```
-### Create a logs bucket
+
+### Créer un bucket de logs
 
 > [!primary]
 >
-> Your target bucket should not have Server Access Logging enabled. You can have logs delivered to any bucket that you own that is in the same Region as the source bucket, including the source bucket itself. However, this would cause an infinite loop of logs and is not recommended. For simpler log management, we recommend that you save access logs in a different bucket.
+> La journalisation des accès à votre bucket cible ne doit pas être activée. Les journaux peuvent être fournis dans n'importe quel bucket que vous possédez qui est situé dans la même Région que le bucket source, y compris le bucket source lui-même. Ce n'est toutefois pas recommandé car cela entraînerait une boucle infinie de journaux. Pour simplifier la gestion des journaux, nous vous recommandons d'enregistrer les journaux d'accès dans un autre bucket.
 >
 
 ``` bash
 $ aws --profile my-profile s3 mb "s3://my-bucket-logs"
 ```
 
-### Configure bucket acl on logs bucket
+### Configurer les *bucket acl* sur le bucket de logs
 
 ``` bash
 $ aws --profile my-profile s3api put-bucket-acl --bucket my-bucket-logs --grant-write URI=http://acs.amazonaws.com/groups/s3/LogDelivery --grant-read-acp URI=http://acs.amazonaws.com/groups/s3/LogDelivery
 ```
 
-#### Check the bucket acl configuration
+#### Vérifier la configuration des *bucket acl*
 
 ``` bash
 $ aws --profile my-profile s3api get-bucket-acl --bucket my-bucket-logs
 ```
-*Sample output*
+*Exemple de sortie*
 ``` json
 {
     "Owner": {
@@ -77,9 +78,9 @@ $ aws --profile my-profile s3api get-bucket-acl --bucket my-bucket-logs
 }
 ```
 
-### Configure bucket logging parameters
+### Configurer les paramètres de journalisation d'un bucket
 
-Set the logging parameters for a bucket and to specify permissions for who can view and modify the logging parameters.
+Définir les paramètres de journalisation pour un bucket et spécifier les autorisations pour ceux qui peuvent voir et modifier les paramètres de journalisation.
 
 ``` bash
 $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://logging.json
@@ -95,12 +96,12 @@ $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-
 }
 ```
 
-#### Check bucket logging parameters
+#### Vérifier les paramètres de journalisation d'un bucket
 
 ``` bash
 $ aws --profile my-profile s3api get-bucket-logging --bucket my-bucket
 ```
-*Sample output*
+*Exemple de sortie*
 ``` json
 {
     "LoggingEnabled": {
@@ -110,36 +111,36 @@ $ aws --profile my-profile s3api get-bucket-logging --bucket my-bucket
 }
 ```
 
-### View logs
+### Visualiser les journaux
 
-After about one hour, the first logs are available:
+Après environ une heure, les premiers journaux sont disponibles:
 
 ``` bash
 $ aws --profile my-profile s3 ls "s3://my-bucket-logs" --recursive
 ```
-*Sample output*
+*Exemple de sortie*
 ``` bash
 2023-01-10 17:39:42       1861 test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 2023-01-10 17:42:39        369 test/2023-01-10-16-12-38-4623ACA1FDEF492DBCD30385DAB48E1D
 2023-01-10 17:42:39       1485 test/2023-01-10-16-12-38-FEE333087AD64973ABF6B62B10ECBF20
 ```
 
-Download a log:
+Télécharger un journal:
 
 ``` bash
 $ aws --profile my-profile s3 cp "s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261" .
 ```
-*Sample output*
+*Exemple de sortie*
 ```
 download: s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261 to ./2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 ```
 
-Then read it:
+Puis, le consulter:
 
 ``` bash
 $ cat ./2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 ```
-*Sample output*
+*Exemple de sortie*
 ```
 1542319462669586:user-5hwhM25pPT6f my-bucket [10/Jan/2023:15:06:28 +0000] 109.190.254.61 1542319462669586:user-5hwhM25pPT6f tx46d5e8a45e5e4bb3975fc-0063bd7ef4 REST.PUT.LOGGING_STATUS - "PUT /?logging HTTP/1.0" 200 - - 200 113 0 "-" "aws-cli/1.24.10 Python/3.6.9 Linux/5.4.0-135-generic botocore/1.26.10" - - SigV4 - AuthHeader my-bucket.s3.training.perf.cloud.ovh.net - -
 1542319462669586:user-5hwhM25pPT6f my-bucket [10/Jan/2023:15:06:47 +0000] 109.190.254.61 1542319462669586:user-5hwhM25pPT6f txd467757a5fac478b9132e-0063bd7f07 REST.GET.LOGGING_STATUS - "GET /?logging HTTP/1.0" 200 - 254 - 11 9 "-" "aws-cli/1.24.10 Python/3.6.9 Linux/5.4.0-135-generic botocore/1.26.10" - - SigV4 - AuthHeader my-bucket.s3.training.perf.cloud.ovh.net - -
@@ -148,7 +149,7 @@ $ cat ./2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 1542319462669586:user-5hwhM25pPT6f my-bucket [10/Jan/2023:15:26:02 +0000] 109.190.254.61 1542319462669586:user-5hwhM25pPT6f tx5b60d66c1d5b4a049674b-0063bd838a REST.GET.LOGGING_STATUS - "GET /?logging HTTP/1.0" 200 - 254 - 18 16 "-" "aws-cli/1.24.10 Python/3.6.9 Linux/5.4.0-135-generic botocore/1.26.10" - - SigV4 - AuthHeader my-bucket.s3.training.perf.cloud.ovh.net - -
 ```
 
-The following list describes the log record fields:
+La liste suivante décrit les champs d'enregistrement d'un journal:
 
 - Bucket Owner: canonical user ID of the source bucket
     - PROJECT_NAME:USER_NAME
@@ -187,12 +188,12 @@ The following list describes the log record fields:
 - Host Header: endpoint used to connect to S3
     - (BUCKET.)STORAGE_DOMAIN
 
-### Check log file acl
+### Vérifier les acl d'un journal
 
 ``` bash
 $ aws --profile my-profile s3api get-object-acl --bucket my-bucket-logs --key test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 ```
-*Sample output*
+*Exemple de sortie*
 ``` json
 {
     "Owner": {
@@ -220,21 +221,21 @@ $ aws --profile my-profile s3api get-object-acl --bucket my-bucket-logs --key te
 }
 ```
 
-### Disable Server Access Logging
+### Désactiver Server Access Logging
 
-Create an empty configuration file:
+Créer un fichier de configuration vide:
 
 ```
 $ cat Documents/logging_disable.json
 {}
 ```
 
-Then configure bucket logging parameters with this empty configuration file:
+Ensuite, configurez les paramètres de journalisation du bucket avec ce fichier de configuration vide:
 
 ```
 $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://logging_disable.json
 ```
 
-## Go further
+## Aller plus loin
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
