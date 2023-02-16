@@ -4,6 +4,7 @@ slug: list-of-ip-addresses-of-web-hosting-clusters
 excerpt: 'Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan'
 section: 'Web Hosting configuration'
 order: 01
+updated: 2021-01-08
 ---
 
 **Last updated 20th July 2020**

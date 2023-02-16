@@ -4,6 +4,7 @@ excerpt: Encontre aqui as anomalias mais frequentes associadas ao seu software F
 slug: partilhando-os-problemas-ftp-recrutamento
 section: FTP e SSH
 order: 04
+updated: 2022-01-05
 ---
 
 > [!primary]

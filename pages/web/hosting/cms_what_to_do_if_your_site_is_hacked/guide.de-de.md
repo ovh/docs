@@ -4,6 +4,7 @@ excerpt: "Erfahren Sie hier, wie Sie Ihre gehackte Website reparieren"
 slug: was_tun_wenn_ihre_wordpress_seite_gehackt_wurde
 section: "Tutorials"
 order: 01
+updated: 2022-11-15
 ---
 
 **Letzte Aktualisierung am 15.11.2022**

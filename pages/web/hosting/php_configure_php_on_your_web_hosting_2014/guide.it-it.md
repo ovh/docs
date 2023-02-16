@@ -4,6 +4,7 @@ slug: configura_php_sul_tuo_hosting_web_condiviso_2014_ovh
 excerpt: "Come configurare una nuova versione di PHP su un hosting Web OVHcloud"
 section: PHP
 order: 01
+updated: 2022-09-19
 ---
 
 **Ultimo aggiornamento: 19/09/2022**

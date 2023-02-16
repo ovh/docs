@@ -4,6 +4,7 @@ slug: modificar_o_ambiente_de_execucao_do_meu_alojamento_web
 excerpt: 'Saiba como alterar a configuração do seu alojamento web da OVH'
 section: Configuração do alojamento
 order: 02
+updated: 2022-12-09
 ---
 
 **Última atualização: 09/12/2022**

@@ -3,6 +3,7 @@ title: "Tworzenie i pobieranie kopii zapasowej przestrzeni FTP na hostingu Cloud
 slug: backup_ftp_cloud_web
 section: Kopie zapasowe (backup)
 order: 01
+updated: 2022-09-13
 ---
 
 **Ostatnia aktualizacja z dnia 13/09/2022**

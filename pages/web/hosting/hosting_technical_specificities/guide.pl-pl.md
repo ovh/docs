@@ -4,6 +4,7 @@ slug: hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www
 excerpt: 'Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu współdzielonego'
 section: 'Konfiguracja hostingu'
 order: 05
+updated: 2022-11-18
 ---
 
 > [!primary]

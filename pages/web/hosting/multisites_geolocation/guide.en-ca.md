@@ -4,6 +4,7 @@ excerpt: "Find out how to geolocate your website using our geolocated IP address
 slug: geolocation_on_web_hosting_packages
 section: Optimise your website
 order: 05
+updated: 2022-12-22
 ---
 
 **Last updated 22nd December 2022** 

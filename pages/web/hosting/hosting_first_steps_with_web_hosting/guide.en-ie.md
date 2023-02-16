@@ -4,6 +4,7 @@ excerpt: Building your website and setting up your email addresses
 slug: get_started_with_a_web_hosting_package
 section: Getting started
 order: 02
+updated: 2022-11-11
 ---
 
 **Last updated 11th November 2022**

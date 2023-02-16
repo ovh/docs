@@ -4,6 +4,7 @@ slug: cms_manually_install_wordpress
 excerpt: "Erfahren Sie hier, wie Sie Ihr WordPress CMS eigenständig installieren"
 section: CMS
 order: 04
+updated: 2022-11-16
 ---
 
 > [!primary]

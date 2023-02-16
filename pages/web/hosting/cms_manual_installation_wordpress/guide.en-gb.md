@@ -4,6 +4,7 @@ excerpt: Find out how to manually install WordPress
 slug: cms_manually_install_wordpress
 section: CMS
 order: 04
+updated: 2022-11-16
 ---
 
 

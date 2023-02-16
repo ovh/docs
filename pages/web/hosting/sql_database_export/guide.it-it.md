@@ -4,6 +4,7 @@ excerpt: 'Come ripristinare il backup di un database di un hosting Web OVH'
 slug: web_hosting_come_esportare_un_database
 section: Database
 order: 03
+updated: 2018-05-19
 ---
 
 **Ultimo aggiornamento: 25/02/2019**

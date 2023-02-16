@@ -4,6 +4,7 @@ slug: configuring-file-ovhconfig
 excerpt: 'This guide explains the.ovhconfig file and how to edit it'
 section: 'Web Hosting configuration'
 order: 03
+updated: 2019-01-03
 ---
 
 **Last updated 3rd January 2019**

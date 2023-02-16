@@ -4,6 +4,7 @@ slug: compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticac
 excerpt: Cómo proteger el acceso a la administración de su sitio web con un archivo .htaccess
 section: Reescritura y autenticación
 order: 02
+updated: 2021-09-20
 ---
 
 > [!primary]

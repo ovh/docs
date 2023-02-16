@@ -4,6 +4,7 @@ excerpt: Come creare il tuo sito utilizzando i moduli in 1 click
 slug: hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi
 section: CMS
 order: 01
+updated: 2023-01-31
 ---
 
 **Ultimo aggiornamento: 31/01/2023**

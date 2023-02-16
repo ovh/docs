@@ -4,6 +4,7 @@ excerpt: Jak ręcznie zainstalować moduł Joomla?
 slug: cms_-_reczna_instalacja_modulu_joomla
 section: CMS
 order: 05
+updated: 2022-12-01
 ---
 
 

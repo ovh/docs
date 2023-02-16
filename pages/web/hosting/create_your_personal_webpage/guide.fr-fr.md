@@ -4,6 +4,7 @@ slug: create-your-own-web-page
 excerpt: 'Apprenez à créer votre première page web sur un hébergement gratuit Start 10M'
 section: "Tutoriels"
 order: 01
+updated: 2022-11-22
 ---
 
 **Dernière mise à jour le 22/11/2022**

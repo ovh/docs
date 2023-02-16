@@ -4,6 +4,7 @@ slug: use-htaccess-with-wordpress
 excerpt: "Find out how to secure your WordPress blog with one or more htaccess files"
 section: 'Tutorials'
 order: 07
+updated: 2023-02-07
 ---
 
 **Last updated 07th February 2023**

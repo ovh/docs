@@ -3,6 +3,7 @@ title: Utilizar o SSL Gateway
 slug: utilizar-o-ssl-gateway
 legacy_guide_number: 2370
 excerpt: Torne as ligacoes para o seu website seguras
+updated: 2022-12-01
 ---
 
 

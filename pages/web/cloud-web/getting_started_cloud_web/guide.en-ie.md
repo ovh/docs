@@ -4,6 +4,7 @@ slug: getting-started-with-cloud-web
 excerpt: Find out how to get started with a Cloud Web hosting plan
 section: Getting started
 order: 01
+updated: 2022-05-04
 ---
 
 **Last updated 4th May 2022***

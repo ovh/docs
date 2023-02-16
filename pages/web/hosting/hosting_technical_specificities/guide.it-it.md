@@ -4,6 +4,7 @@ excerpt: 'Questa guida contiene informazioni e specifiche tecniche degli hosting
 slug: hosting_condiviso_specifiche_tecniche
 section: Configurazione dell’hosting
 order: 05
+updated: 2022-11-18
 ---
 
 > [!primary]

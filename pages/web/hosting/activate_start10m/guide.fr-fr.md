@@ -4,6 +4,7 @@ slug: activer-start10m
 excerpt: 'Découvrez comment activer votre hébergement Start 10M '
 section: 'Premiers pas'
 order: 01
+updated: 2022-09-15
 ---
 
 **Dernière mise à jour le 15/09/2022**

@@ -4,6 +4,7 @@ slug: web_hosting_how_to_get_my_website_online
 excerpt: 'Learn how to publish a website on your OVHcloud web hosting space'
 section: 'Getting started'
 order: 06
+updated: 2022-07-21
 ---
 
 **Last updated 21st July 2022**

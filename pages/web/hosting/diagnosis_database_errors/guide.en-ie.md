@@ -4,6 +4,7 @@ excerpt: Find out how to diagnose the most common cases of database errors
 slug: database-frequent-errors
 section: Troubleshooting
 order: 04
+updated: 2022-12-09
 ---
 
 **Last updated 9th December 2022**

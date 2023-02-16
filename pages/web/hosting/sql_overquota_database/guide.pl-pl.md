@@ -4,6 +4,7 @@ slug: database-overquota
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
 section: 'Bazy danych'
 order: 06
+updated: 2023-01-19
 ---
 
 **Ostatnia aktualizacja z dnia 23-01-2023**

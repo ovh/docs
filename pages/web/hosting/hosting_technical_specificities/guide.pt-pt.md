@@ -4,6 +4,7 @@ slug: especificidades-tecnicas-alojamentos-partilhados
 excerpt: 'Neste guia encontrará as diferentes informações e especificidades técnicas relacionadas com os alojamentos partilhados'
 section: Configuração do alojamento
 order: 05
+updated: 2022-11-18
 ---
 
 > [!primary]

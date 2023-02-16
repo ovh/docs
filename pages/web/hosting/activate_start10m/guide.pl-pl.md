@@ -4,6 +4,7 @@ slug: wlaczanie_start10m
 excerpt: 'Dowiedz się, jak włączyć hosting Start 10M'
 section: 'Pierwsze kroki'
 order: 01
+updated: 2022-09-15
 ---
 
 

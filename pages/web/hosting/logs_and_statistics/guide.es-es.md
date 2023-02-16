@@ -4,6 +4,7 @@ excerpt: Acceso a las estadísticas de su sitio
 slug: web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web
 section: Optimización del sitio web
 order: 04
+updated: 2021-01-05
 ---
 
 > [!primary]

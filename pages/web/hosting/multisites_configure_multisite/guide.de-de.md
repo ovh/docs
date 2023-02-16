@@ -4,6 +4,7 @@ slug: multisites-mehrere-websites-konfigurieren
 excerpt: 'Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden'
 section: 'Erste Schritte'
 order: 03
+updated: 2022-11-04
 ---
 
 > [!primary]

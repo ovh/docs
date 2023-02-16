@@ -4,6 +4,7 @@ excerpt: Find out how to resolve the most common FTP software related issues
 slug: recurring_ftp_problems
 section: FTP and SSH
 order: 04
+updated: 2022-01-05
 ---
 
 **Last updated 5th January 2022**

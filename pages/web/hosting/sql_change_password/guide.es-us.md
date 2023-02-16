@@ -4,6 +4,7 @@ slug: cambiar-contrasena-base-de-datos
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
 section: Bases de datos
 order: 02
+updated: 2022-01-26
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: modificare-password-database
 excerpt: Scopri come modificare la password di un database creata nell'ambito di un piano di hosting Web
 section: Database
 order: 02
+updated: 2022-01-26
 ---
 
 > [!primary]

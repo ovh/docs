@@ -4,6 +4,7 @@ excerpt: 'Saiba como recuperar a cópia de segurança de uma base de dados de um
 slug: partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql
 section: Bases de dados
 order: 03
+updated: 2018-05-19
 ---
 
 **Última atualização: 14/02/2019**

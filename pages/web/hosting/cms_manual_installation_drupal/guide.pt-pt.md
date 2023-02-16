@@ -4,6 +4,7 @@ excerpt: Como instalar manualmente Drupal?
 slug: cms_instalar_manualmente_drupal
 section: CMS
 order: 07
+updated: 2022-12-01
 ---
 
 

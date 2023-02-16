@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie die Ladezeiten Ihres Webhostings mit der CD
 slug: verwendung_des_geocache_boosters_auf_einem_webhosting
 section: 'Webseitenoptimierung'
 order: 03
+updated: 2021-12-23
 ---
 
 > [!primary]

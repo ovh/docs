@@ -4,6 +4,7 @@ slug: website-umstellen-https-ssl
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Website mit einem SSL-Zertifikat auf HTTPS umstellen.'
 section: SSL
 order: 02
+updated: 2022-10-04
 ---
 
 **Stand 04.10.2022**

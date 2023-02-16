@@ -4,6 +4,7 @@ slug: configurer-fichier-ovhconfig
 excerpt: 'Découvrez le fichier .ovhconfig et apprenez à le modifier'
 section: "Configuration de l'hébergement"
 order: 03
+updated: 2019-01-03
 ---
 
 **Dernière mise à jour le 30/11/2020**

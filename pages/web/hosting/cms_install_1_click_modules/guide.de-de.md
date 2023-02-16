@@ -4,6 +4,7 @@ excerpt: So installieren Sie Ihre Website mithilfe unserer 1-Klick-Module
 slug: webhosting_installation_von_webhosting-modulen
 section: CMS
 order: 01
+updated: 2023-01-31
 ---
 
 **Letzte Aktualisierung am 31.01.2023**

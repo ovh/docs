@@ -4,6 +4,7 @@ slug: condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenti
 excerpt: "Come proteggere l'accesso alla gestione del tuo sito con un file .htaccess"
 section: Scrittura e autenticazione
 order: 02
+updated: 2021-09-20
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: create-your-own-web-page
 excerpt: 'Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowym hostingu Start 10M'
 section: "Tutoriale"
 order: 01
+updated: 2022-11-22
 ---
 
 > [!primary]

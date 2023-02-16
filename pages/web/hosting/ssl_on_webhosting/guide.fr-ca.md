@@ -4,6 +4,7 @@ slug: les-certificats-ssl-sur-les-hebergements-web
 excerpt: 'Apprenez à gérer un certificat SSL sur votre hébergement web OVHcloud'
 section: SSL
 order: 01
+updated: 2022-08-01
 ---
 
 **Dernière mise à jour le 01/08/2022**

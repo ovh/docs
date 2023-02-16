@@ -4,6 +4,7 @@ excerpt: How to install Joomla! manually
 slug: cms_manually_install_joomla
 section: CMS
 order: 05
+updated: 2022-12-01
 ---
 
 

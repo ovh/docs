@@ -4,6 +4,7 @@ slug: instalacao_do_composer_nos_alojamentos_partilhados
 excerpt: Saiba como instalar e dar os primeiros passos em Composer
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 > [!primary]

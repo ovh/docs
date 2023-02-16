@@ -4,6 +4,7 @@ slug: creer-base-de-donnees
 excerpt: Apprenez à créer une base de données sur votre hébergement web OVHcloud
 section: Bases de données
 order: 01
+updated: 2022-02-03
 ---
 
 

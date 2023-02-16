@@ -4,6 +4,7 @@ excerpt: Saiba como reforçar a segurança do seu website
 slug: secure-website
 section: Otimizar o seu site
 order: 01
+updated: 2021-12-10
 ---
 
 > [!primary]

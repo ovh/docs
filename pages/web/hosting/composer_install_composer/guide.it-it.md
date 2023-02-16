@@ -4,6 +4,7 @@ slug: installare-di-comporre-sugli-hosting-condivisi
 excerpt: Scopri come installare e fare i primi passi su Composer.
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 > [!primary]

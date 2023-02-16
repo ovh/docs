@@ -4,6 +4,7 @@ slug: utiliser-svn
 excerpt: Ce guide montre la facon d'utiliser svn via l'acces ssh de l'hebergement grace aux cles publique/privée.
 section: FTP et SSH
 order: 09
+updated: 2021-01-06
 ---
 
 **Dernière mise à jour le 28/10/2020**

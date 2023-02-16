@@ -4,6 +4,7 @@ slug: hosting_www_korzystanie_z_svn
 excerpt: Dowiedz się, jak korzystać z SVN przez SSH na Twoim hostingu
 section: FTP i SSH
 order: 09
+updated: 2021-01-06
 ---
 
 **Ostatnia aktualizacja z dnia 28-10-2020**
