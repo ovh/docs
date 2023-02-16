@@ -2,10 +2,10 @@
 title: Comment changer mon offre xDSL/FTTH
 slug: comment-changer-mon-offre-xdsl
 section: Gestion de mon offre
-updated: 2023-02-09
+updated: 2023-02-16
 ---
 
-**Dernière mise à jour le 09/02/2023**
+**Dernière mise à jour le 16/02/2023**
 
 ## Objectif
 
@@ -42,10 +42,18 @@ Cliquez ensuite sur `Changer d'offre`{.action} dans le cadre « Informations Gé
 
 La page suivante vous permettra de retrouver les informations nécessaires pour effectuer votre choix d'offre.
 
-La première colonne du tableau récapitule votre offre actuelle (son nom, son prix et les services actifs. Les autres colonnes concernent les offres auxquelles vous pouvez souscrire, compte tenu de votre adresse actuelle.<br>
-Cliquez sur le bouton `Choisir cette offre`{.action} sous la colonne correspondant à l'offre que vous souhaitez souscrire.
+La première colonne du tableau récapitule votre offre actuelle (son nom, son prix et les services actifs). Les autres colonnes concernent les offres auxquelles vous pouvez souscrire, compte tenu de votre adresse actuelle.<br>
+Sélectionnez les options souhaitées (lignes téléphoniques, comptes e-mail, Garantie de Temps de Rétablissement) puis cliquez sur le bouton `Choisir cette offre`{.action} sous la colonne correspondant à l'offre que vous souhaitez souscrire.
+
+> [!primary]
+> Si vous souhaitez conserver les lignes téléphoniques de votre offre actuelle, veillez à ajouter un nombre équivalent de lignes dans votre nouvelle offre.
 
 ![choix de l'offre](images/pro-offers2023.png){.thumbnail}
+
+Suivant l'offre choisie, vous devez alors sélectionner les services dont vous disposez et que vous souhaitez conserver.<br>
+Cochez les cases des services à conserver et cliquez sur `Confirmer la sélection des services`{.action}.
+
+![conservation des services](images/services2023.png){.thumbnail}
 
 Lors de la dernière étape, une demande de confirmation apparaîtra afin de valider le changement d'offre.<br>
 Lisez les contrats, cochez la case afin de les accepter puis cliquez sur le bouton `Valider le changement d'offre`{.action}.
