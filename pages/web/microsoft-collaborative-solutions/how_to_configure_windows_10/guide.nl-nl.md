@@ -4,6 +4,7 @@ title: Configuratie van uw Exchange-account in de Courrier-app voor Windows 10
 slug: configuratie-courrier-windows-10
 excerpt: Leer hoe u een Exchange-account kunt instellen in Courrier voor Windows 10
 section: Configuratie van Exchange
+updated: 2018-04-04
 ---
 
 **Laatste update 26-03-2018**

@@ -4,6 +4,7 @@ slug: configuration-android
 excerpt: Find out how to configure an MX Plan email address on Android, via the Gmail app
 section: Configure on smartphone
 order: 02
+updated: 2018-03-12
 ---
 
 **Last updated 13th March 2018**

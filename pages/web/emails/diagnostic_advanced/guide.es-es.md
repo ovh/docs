@@ -5,6 +5,7 @@ slug: uso_avanzado_del_correo_de_ovh
 legacy_guide_number: g2117
 section: Diagnóstico
 order: 02
+updated: 2022-07-21
 ---
 
 > [!primary]

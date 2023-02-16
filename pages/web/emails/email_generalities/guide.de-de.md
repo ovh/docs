@@ -4,6 +4,7 @@ slug: allgemeines-zu-shared-e-mails
 excerpt: 'Erfahren Sie hier, wie Sie Ihr MX Plan Angebot verwenden'
 section: 'Erste Schritte'
 order: 01
+updated: 2021-07-19
 ---
 
 > [!primary]

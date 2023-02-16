@@ -4,6 +4,7 @@ title: Toevoegen van een SPF-veld aan de configuratie van uw domeinnaam
 excerpt: Ontdek hoe u een SPF-veld kunt toevoegen aan de configuratie van uw domeinnaam
 slug: het_spf_veld
 section: Geavanceerd gebruik
+updated: 2022-09-12
 ---
 
 **Laatste update 29-01-2018**

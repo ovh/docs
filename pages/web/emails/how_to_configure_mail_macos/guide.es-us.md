@@ -3,6 +3,7 @@ title: 'Configurar una cuenta de correo electrónico en Mail de macOS'
 slug: correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan
 section: Configuración en el ordenador
 order: 03
+updated: 2022-06-13
 ---
 
 > [!primary]

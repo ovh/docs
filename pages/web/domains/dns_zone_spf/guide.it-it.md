@@ -4,6 +4,7 @@ excerpt: 'Come aggiungere un record SPF alla configurazione di un dominio presso
 slug: hosting_condiviso_il_record_spf
 section: 'DNS e zona DNS'
 order: 05
+updated: 2022-09-12
 ---
 
 > [!primary]

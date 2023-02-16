@@ -5,6 +5,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten verwenden'
 section: 'E-Mail Account Funktionen'
 order: 03
 legacy_guide_number: g1596
+updated: 2020-03-19
 ---
 
 **Letzte Aktualisierung am 13.02.2020**

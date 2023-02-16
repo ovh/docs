@@ -4,6 +4,7 @@ slug: dodanie-domeny-exchange
 excerpt: Dowiedz się, jak dodać domenę do platformy Exchange lub E-mail Pro
 section: Pierwsze kroki z Exchange
 order: 04
+updated: 2022-10-07
 ---
 
 > [!primary]

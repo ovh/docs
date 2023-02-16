@@ -4,6 +4,7 @@ slug: manage-email-quota
 excerpt: "Find out how to manage and optimise an email account storage space"
 section: 'Troubleshooting'
 order: 02
+updated: 2022-11-17
 ---
 
 **Last updated 17th November 2022**

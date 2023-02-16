@@ -4,6 +4,7 @@ slug: exchange_20132016_prima_configurazione
 excerpt: 'Scopri come configurare un Hosted Exchange'
 section: 'Iniziare a utilizzare Exchange'
 order: 01
+updated: 2018-01-19
 ---
 
 **Ultimo aggiornamento: 27/06/2018**

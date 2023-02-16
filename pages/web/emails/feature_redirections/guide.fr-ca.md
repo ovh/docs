@@ -5,6 +5,7 @@ legacy_guide_number: 2001
 excerpt: 'Decouvrez dans ce guide comment gérer vos redirections e-mail'
 section: 'Fonctionnalités des adresses e-mail'
 order: 01
+updated: 2020-05-20
 ---
 
 **Dernière mise à jour le 05/05/2020**

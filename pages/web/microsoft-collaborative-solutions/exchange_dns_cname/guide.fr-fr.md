@@ -4,6 +4,7 @@ slug: exchange-ajouter-un-champ-de-type-cname
 excerpt: "Apprenez pourquoi l'ajout d'un champ CNAME peut être requis et comment en ajouter un chez OVHcloud"
 section: 'Premiers pas avec Exchange'
 order: 05
+updated: 2019-03-26
 ---
 
 **Dernière mise à jour le 26/03/2019**

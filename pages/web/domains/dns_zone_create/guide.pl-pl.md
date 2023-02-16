@@ -5,6 +5,7 @@ slug: utworzenie_strefy_dns_dla_zewnetrznej_domeny
 section: 'DNS i strefa DNS'
 order: 2
 legacy_guide_number: g2229
+updated: 2018-08-06
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-07**

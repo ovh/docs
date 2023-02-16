@@ -4,6 +4,7 @@ excerpt: "Erfahren Sie hier, wie Sie bei OVHcloud einen MX-Eintrag zur Konfigura
 slug: webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh
 section: DNS und DNS-Zone
 order: 04
+updated: 2018-05-30
 ---
 
 **Letzte Aktualisierung am 21.09.2022**

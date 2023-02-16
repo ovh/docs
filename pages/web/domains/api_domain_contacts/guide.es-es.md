@@ -6,6 +6,7 @@ section: "API dominios"
 order: 5
 routes:
   canonical: "https://docs.ovh.com/gb/en/domains/api-contact/"
+updated: 2022-05-05
 ---
 
 **Last updated 5th May 2022**

@@ -4,6 +4,7 @@ slug: hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh
 excerpt: 'Dowiedz się, jak dodać rekord MX do strefy DNs domeny'
 section: 'DNS i strefa DNS'
 order: 04
+updated: 2018-05-30
 ---
 
 **Ostatnia aktualizacja dnia 2022-09-21**

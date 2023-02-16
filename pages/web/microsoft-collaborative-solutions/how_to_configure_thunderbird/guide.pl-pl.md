@@ -4,6 +4,7 @@ slug: exchange_20132016_konfiguracja_w_programie_thunderbird
 excerpt: 'Tutaj znajdziesz procedurę dodawania konta Exchange w programie Thunderbird'
 section: 'Konfiguracja komputerowa'
 order: 04
+updated: 2021-08-26
 ---
 
 > [!primary]

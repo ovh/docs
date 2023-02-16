@@ -5,6 +5,7 @@ excerpt: 'Come modificare i server DNS del tuo dominio OVHcloud'
 section: 'DNS e zona DNS'
 order: 7
 legacy_guide_number: g1568
+updated: 2018-10-26
 ---
 
 **Ultimo aggiornamento: 27/06/2019**

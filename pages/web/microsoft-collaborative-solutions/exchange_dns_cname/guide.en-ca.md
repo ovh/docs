@@ -4,6 +4,7 @@ excerpt: Find out about the purpose of a CNAME record, and how to add one at OVH
 slug: exchange-add-cname-record-dns
 section: 'Getting started with Exchange'
 order: 05
+updated: 2019-03-26
 ---
 
 **Last updated 2018/10/05**

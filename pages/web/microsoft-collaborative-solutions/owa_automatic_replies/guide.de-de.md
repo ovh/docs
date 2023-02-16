@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie automatische Antworten in OWA erstellen'
 slug: exchange_2016_einrichten_einer_automatischen_antwort_in_owa
 section: 'Outlook Web App (OWA)'
 order: 02
+updated: 2020-02-26
 ---
 
 **Letzte Aktualisierung am 20.07.2020**

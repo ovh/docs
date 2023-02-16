@@ -5,6 +5,7 @@ legacy_guide_number: 1365
 excerpt: 'Découvrez comment récupérer un en-tête e-mail sur votre client de messagerie'
 section: Diagnostic
 order: 03
+updated: 2021-11-19
 ---
 
 <style>

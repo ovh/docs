@@ -4,6 +4,7 @@ slug: migrazione-indirizzo-email-condiviso-verso-exchange
 excerpt: Come migrare un indirizzo email MX Plan verso un account Email Pro o Exchange
 section: Migrazione account
 order: 02
+updated: 2022-11-22
 ---
 
 **Ultimo aggiornamento: 22/11/2022**

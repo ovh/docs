@@ -4,6 +4,7 @@ slug: guide-dutilisation-mailing-list
 excerpt: 'Find out how to use mailing lists'
 section: 'Email address features'
 order: 03
+updated: 2020-03-19
 ---
 
 **Last updated 19th March 2020**

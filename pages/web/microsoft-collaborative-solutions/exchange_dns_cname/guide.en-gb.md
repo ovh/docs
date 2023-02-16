@@ -4,6 +4,7 @@ slug: exchange_20132016_how_to_add_a_cname_record
 excerpt: 'Find out about the purpose of a CNAME record, and how to add one at OVHcloud'
 section: 'Getting started with Exchange'
 order: 05
+updated: 2019-03-26
 ---
 
 **Last updated 26th March 2019**

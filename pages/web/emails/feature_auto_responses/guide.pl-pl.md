@@ -5,6 +5,7 @@ slug: przewodnik_dotyczacy_aktywacji_autorespondera
 legacy_guide_number: g2052
 section: 'Funkcjonalności kont e-mail'
 order: 02
+updated: 2021-04-20
 ---
 
 > [!primary]

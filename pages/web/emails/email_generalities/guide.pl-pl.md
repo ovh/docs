@@ -5,6 +5,7 @@ slug: hosting_www_informacje_ogolne_o_kontach_e-mail_ovh
 legacy_guide_number: g1474
 section: 'Pierwsze kroki'
 order: 01
+updated: 2021-07-19
 ---
 
 > [!primary]

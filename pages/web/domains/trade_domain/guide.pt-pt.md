@@ -3,6 +3,7 @@ title: 'Alterar o titular de um nome de domínio'
 slug: alteracao-titular-dominio
 excerpt: 'Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio.'
 section: 'Alteração de titular'
+updated: 2021-03-04
 ---
 
 > [!primary]

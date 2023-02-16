@@ -4,6 +4,7 @@ slug: migracao-de-gmail-atraves-de-ovh-mail-migrator
 excerpt: 'Aprenda a migrar as suas contas Gmail para o OVHcloud graças à nossa ferramenta OVH Mail Migrator'
 section: 'Migração de contas'
 order: 04
+updated: 2020-03-09
 ---
 
 **Última atualização: 03/02/2020**

@@ -4,6 +4,7 @@ slug: commander-et-gerer-un-groupe-de-licences-office-365-ovh
 excerpt: Découvez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud.
 section: Office
 order: 02
+updated: 2021-09-09
 ---
 
 **Dernière mise à jour le 22/02/2022**

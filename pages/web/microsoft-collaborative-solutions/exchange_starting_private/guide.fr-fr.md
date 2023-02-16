@@ -4,6 +4,7 @@ slug: exchange-premiers-pas-avec-un-serveur-private
 excerpt: 'Découvrez comment mettre en place votre serveur Private Exchange.'
 section: 'Premiers pas avec Exchange'
 order: 02
+updated: 2020-04-17
 ---
 
 **Dernière mise à jour le 25/03/2020**

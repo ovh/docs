@@ -5,6 +5,7 @@ slug: die_statuscodes_von_smtp-servern
 section: Diagnose
 order: 02
 legacy_guide_number: g2272
+updated: 2022-07-21
 ---
 
 > [!primary]

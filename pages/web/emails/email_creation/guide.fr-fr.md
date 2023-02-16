@@ -4,6 +4,7 @@ slug: creation-dune-adresse-e-mail
 excerpt: 'Découvrez comment créer une adresse e-mail avec votre offre MX Plan'
 section: 'Premiers pas'
 order: 02
+updated: 2022-10-11
 ---
 
 **Dernière mise à jour le 30/09/2022**

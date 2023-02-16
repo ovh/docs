@@ -3,6 +3,7 @@ title: FAQ soluciónes de correo electrónico de OVHcloud
 slug: correo-electronico-faq
 section: 'Primeros pasos'
 order: 07
+updated: 2020-05-05
 ---
 
 **Última actualización: 14/05/2020**

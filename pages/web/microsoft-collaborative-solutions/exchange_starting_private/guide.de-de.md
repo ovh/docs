@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihren Private Exchange Dienst einrichten'
 slug: exchange_die_ersten_schritte_mit_einem_private_server
 section: 'Erste Schritte mit Exchange'
 order: 02
+updated: 2020-04-17
 ---
 
 **Letzte Aktualisierung am 17.04.2020**

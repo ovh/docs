@@ -4,6 +4,7 @@ slug: web_hosting_an_overview_of_ovh_email
 excerpt: 'Find out how to get started with an MX Plan solution'
 section: 'Getting started'
 order: 01
+updated: 2021-07-19
 ---
 
 **Last updated 19th July 2021**

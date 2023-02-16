@@ -5,6 +5,7 @@ slug: delegar-gestion-correo
 excerpt: 'Cómo delegar la gestión de las cuentas de correo de su solución MX Plan'
 section: 'Gestión de la cuenta de correo'
 order: 05
+updated: 2021-10-08
 ---
 
 > [!primary]

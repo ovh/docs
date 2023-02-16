@@ -5,6 +5,7 @@ legacy_guide_number: 1365
 excerpt: Dowiedz się, jak pobrać nagłówek e-mail do klienta poczty elektronicznej
 section: Diagnostyka
 order: 03
+updated: 2021-11-19
 ---
 
 <style>

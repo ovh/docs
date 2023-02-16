@@ -3,6 +3,7 @@ title: FAQ OVHcloud emails
 slug: emails-faq
 section: 'Getting started'
 order: 07
+updated: 2020-05-05
 ---
 
 **Last updated 05th May 2020**

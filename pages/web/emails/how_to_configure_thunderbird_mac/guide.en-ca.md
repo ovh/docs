@@ -5,6 +5,7 @@ legacy_guide_number: 1297
 excerpt: 'Find out how to configure your email address in Thunderbird'
 section: 'Configure on computer'
 order: 05
+updated: 2021-08-26
 ---
 
 **Last updated 26th August 2021**

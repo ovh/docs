@@ -3,6 +3,7 @@ title: 'Résoudre une erreur sur un nom de domaine'
 slug: domain-errors
 section: Tâches courantes
 order: 02
+updated: 2022-09-01
 ---
 
 **Dernière mise à jour le 01/09/2022**

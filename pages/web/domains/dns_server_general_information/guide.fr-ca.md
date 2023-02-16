@@ -4,6 +4,7 @@ slug: generalites-serveurs-dns
 excerpt: 'Apprenez à modifier les serveurs DNS de votre nom de domaine OVHcloud'
 section: 'DNS et zone DNS'
 order: 01
+updated: 2021-02-18
 ---
 
 **Dernière mise à jour le 18 février 2021**

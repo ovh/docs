@@ -4,6 +4,7 @@ excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
 slug: web_hosting_como_editar_mi_zona_dns
 section: 'DNS (servidor y zona)'
 order: 03
+updated: 2022-07-07
 ---
 
 > [!primary]

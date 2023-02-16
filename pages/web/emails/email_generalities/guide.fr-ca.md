@@ -4,6 +4,7 @@ slug: generalites-sur-les-emails-mutualises
 excerpt: 'Découvrez comment bien débuter avec les e-mails de votre hébergement web'
 section: 'Premiers pas'
 order: 01
+updated: 2021-07-19
 ---
 
 **Dernière mise à jour le 05/05/2020**

@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ordner zwischen Exchange Accounts teilen'
 slug: exchange_2016_einen_ordner_via_owa_webmail_freigeben
 section: 'Outlook Web App (OWA)'
 order: 04
+updated: 2020-04-07
 ---
 
 

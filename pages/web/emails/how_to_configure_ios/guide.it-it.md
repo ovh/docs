@@ -4,6 +4,7 @@ excerpt: Come configurare un account email MX Plan su un iPhone o un iPad
 slug: servizio_email_guida_alla_configurazione_su_iphone_ios_91
 section: Configurazione su smartphone
 order: 01
+updated: 2022-07-20
 ---
 
 

@@ -4,6 +4,7 @@ slug: email-adressen-manuell-migrieren
 excerpt: Erfahren Sie hier, wie Sie Ihre E-Mail-Adresse manuell auf eine andere E-Mail-Adresse migrieren.
 section: Migration
 order: 01
+updated: 2021-01-05
 ---
 
 **Letzte Aktualisierung am 05.01.2021**

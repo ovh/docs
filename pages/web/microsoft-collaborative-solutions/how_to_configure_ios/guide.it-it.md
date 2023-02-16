@@ -4,6 +4,7 @@ slug: exchange_20132016_configurazione_automatica_con_ios_iphone-ipad
 excerpt: 'Scopri come configurare un account Exchange su un iPhone o un iPad tramite l’applicazione Mail'
 section: Configurazione su smartphone/tablet
 order: 03
+updated: 2021-05-21
 ---
 
 

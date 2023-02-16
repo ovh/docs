@@ -4,6 +4,7 @@ slug: exchange_2016_how_to_share_a_folder_via_owa
 excerpt: 'Find out how to share folders between Exchange accounts'
 section: 'Outlook Web Application (OWA)'
 order: 04
+updated: 2020-04-07
 ---
 
 **Last updated 7th April 2020**

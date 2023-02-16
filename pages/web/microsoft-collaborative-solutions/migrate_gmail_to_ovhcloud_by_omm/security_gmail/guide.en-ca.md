@@ -2,6 +2,7 @@
 title: 'Authorising less secure connections on Gmail'
 slug: gmail-security
 hidden: true
+updated: 2022-04-06
 ---
 
 **Last updated 06th April 2022**

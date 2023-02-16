@@ -4,6 +4,7 @@ slug: web_hosting_informacion_general_sobre_los_servidores_dns
 excerpt: 'Cómo cambiar los servidores DNS de un dominio registrado en OVHcloud'
 section: 'DNS (servidor y zona)'
 order: 01
+updated: 2021-02-18
 ---
 
 **Última actualización: 05/05/2020**

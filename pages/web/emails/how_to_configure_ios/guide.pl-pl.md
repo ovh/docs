@@ -4,6 +4,7 @@ slug: hosting_www_konfiguracja_na_iphone_ios_91
 excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan na urządzeniu iPhone lub iPad'
 section: Konfiguracja na smartfonie
 order: 01
+updated: 2022-07-20
 ---
 
 > [!primary]

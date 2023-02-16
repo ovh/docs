@@ -5,6 +5,7 @@ slug: hosting_www_dynhost
 section: 'DNS i strefa DNS'
 order: 6
 legacy_guide_number: g2024
+updated: 2018-07-19
 ---
 
 **Ostatnia aktualizacja dnia 2018-08-07**

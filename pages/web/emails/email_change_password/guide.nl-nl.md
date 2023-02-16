@@ -5,6 +5,7 @@ slug: wachtwoord-wijziging-emailadres
 excerpt: 'Leer hoe u het wachtwoord wijzigt van een e-mailadres dat is aangemaakt als onderdeel van het MX Plan-pakket'
 section: 'Beheer uw e-mailadres'
 order: 2
+updated: 2023-01-03
 ---
 
 **Laatste update 22-05-2018**
