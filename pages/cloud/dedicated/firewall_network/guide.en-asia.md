@@ -9,14 +9,14 @@ updated: 2022-12-20
 
 ## Objective
 
-To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Network Firewall. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
+To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** solution: the Network Firewall. This is an option you can use to limit your service's exposure to attacks from the public network.
 
 **This guide will show you how to configure your Network Firewall.**
 
 
 > [!primary]
 >
-> VAC: More information on VAC, our protection system against DDoS attacks, here: <https://www.ovh.com/asia/anti-ddos/>.
+> You can read more information on our Anti-DDoS solution here: <https://www.ovh.com/asia/anti-ddos/>.
 > 
 
 ![VAC in detail](images/vac-inside.png){.thumbnail}

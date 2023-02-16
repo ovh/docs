@@ -1,7 +1,7 @@
 ---
-title: 'Configuring the Network Firewall'
+title: Configuring the Network Firewall
 slug: firewall-network
-section: 'Network management'
+section: Network Management
 updated: 2022-12-20
 ---
 
@@ -16,7 +16,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 > [!primary]
 >
-> You can read more information on our Anti-DDoS solution here: <https://www.ovh.co.uk/anti-ddos/>.
+> You can read more information on our Anti-DDoS solution here: <https://www.ovhcloud.com/en-gb/security/anti-ddos/>.
 > 
 
 ![The VAC in detail](images/vac-inside.png){.thumbnail}
@@ -25,7 +25,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 ## Requirements
 
 - An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Hosted Private Cloud](https://www.ovh.co.uk/private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/en-gb/bare-metal/ip/){.external}, etc.)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
@@ -78,7 +78,7 @@ You can set up to **20 rules per IP**.
 
 > [!warning]
 > Please note that the OVHcloud Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
-> For more information, please refer to the following guides: [Configure the firewall on Windows](https://docs.ovh.com/gb/en/dedicated/firewall-windows/) and [Configuring the firewall on Linux with iptables](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/).
+> For more information, please refer to the following guides: [Configuring the firewall on Windows](https://docs.ovh.com/gb/en/dedicated/firewall-windows/) and [Configuring the firewall on Linux with iptables](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/).
 >
 
 To add a rule, click on `Add a rule`{.action}:
@@ -87,13 +87,13 @@ To add a rule, click on `Add a rule`{.action}:
 
 For each rule you must choose:
 
-- a priority (from 0 to 19, 0 being the first rule to be applied, followed by the others)
-- an action (`Authorise`{.action} or `Refuse`{.action})
-- the protocol
-- an IP (optional)
-- the source port (TCP only)
-- the destination port (TCP only)
-- the TCP options (TCP only)
+- A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others)
+- An action (`Authorise`{.action} or `Refuse`{.action})
+- The protocol
+- An IP (optional)
+- The source port (TCP only)
+- The destination port (TCP only)
+- The TCP options (TCP only)
 
 ![Details on adding a rule](images/ajoutregle4.png){.thumbnail}
 
