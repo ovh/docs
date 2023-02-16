@@ -34,7 +34,7 @@ In the table list, find the session you want to terminate then click the `...`{.
 
 ![Terminate button](images/postgresql-11-terminate.png){.thumbnail}
 
-The query will disappear but if your client application is coded to redo the query after a failure, another query and PID will reappear. 
+The query will disappear but if your client application is coded to redo the query after a failure, another query and PID will reappear.
 
 ### Terminate long-running queries with CLI (psql)
 
@@ -52,9 +52,9 @@ You can terminate a session only when you are the owner of the database.
 
 To verify your roles and grants, run the following command in `psql`:
 
-````bash
+```psql
 \l
-````
+```
 
 It will return the list of databases and access privileges. As an example:
 
@@ -71,11 +71,11 @@ Otherwise, instructions below will return an error.
 
 #### Find long-running queries
 
-Once you are connected to your database, type for example: 
+Once you are connected to your database, type for example:
 
-````bash
+```psql
 SELECT * FROM pg_stat_activity WHERE state <> 'idle';
-````
+```
 
 It will show you a list of queries, and PIDs.
 
@@ -85,14 +85,14 @@ For more information about statistics, please follow the [official documentation
 
 Now that you get the PID, you can terminate a specific query with the following command:
 
-````bash
+```psql
 SELECT pg_terminate_backend(pid);
-````
+```
 
 Where `pid` is the unique identifier found during the previous step.
 This command does not return any result when successful.
 
-As explained here, the query will disappear if you check again the statistics, but if your client application is coded to launch again the query after a failure, another query and PID will reappear. 
+As explained here, the query will disappear if you check again the statistics, but if your client application is coded to launch again the query after a failure, another query and PID will reappear.
 
 ## Go further
 
