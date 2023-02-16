@@ -3,10 +3,10 @@ title: Configuring the OIDC provider on an OVHcloud Managed Kubernetes cluster
 slug: configure-oidc-provider
 excerpt: 'Find out how to configure the OIDC provider of an OVHcloud Managed Kubernetes cluster'
 section: User guides
-updated: 2022-11-24
+updated: 2023-02-14
 ---
 
-**Last updated 24th November 2022**
+**Last updated 14th February 2023**
 
 ## Objective
 
