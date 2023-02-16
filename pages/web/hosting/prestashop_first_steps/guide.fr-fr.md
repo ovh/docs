@@ -6,7 +6,7 @@ section: Tutoriel
 order: 
 ---
 
-**Dernière mise à jour le 02/01/2023**
+**Dernière mise à jour le 16/02/2023**
 
 ## Objectif
 
@@ -107,78 +107,6 @@ Enfin, vérifiez et confirmez les informations relatives à votre installation&n
 Votre site e-commerce est en ligne avec des données par défaut&nbsp;:
 
 ![Prestashop home page](images/prestashop_first_steps_11.png){.thumbnail}
-
-### Installation manuelle
-
-Dans le cas d'une installation manuelle, vous devez :
-
-- vous connectez en SSH sur votre serveur et créer un répertoire dans lequel seront les fichiers Prestashop (`www/` dans l'exemple)
-- configurer votre nom de domaine pour qu'il pointe dans ce répertoire particulier
-- disposer d'une base de données.
-
-#### Récupérer les fichiers d'installation
-
-Rendez vous sur le site de [Prestashop](https://www.prestashop.com/en/download) pour télécharger la dernière version de l'application. La création d'un compte est nécessaire.
-
-Décompressez le fichier ZIP sur votre ordinateur et copiez son contenu sur votre serveur à l'aide d'un client FTP (FileZilla) :
-
-![FTP transfert with FileZilla](images/prestashop_first_steps_12.png){.thumbnail}
-
-Tapez le nom de domaine que vous avez configuré dans votre navigateur pour procéder à l'installation.
-
-Si vous utilisez la version 1.7.×, vous aurez le message suivant vous proposant la mise à jour vers la branche 8.× du CMS. Cliquez sur le bouton "Yes please!" :
-
-![Upgrade the version of Prestashop](images/prestashop_first_steps_13.png){.thumbnail}
-
-Choisissez la langue de votre application et procédez à l'installation en cliquand sur le bouton "Suivant" :
-
-![Choose language](images/prestashop_first_steps_14.png){.thumbnail}
-
-Validez les conditions générales d'utilisation pour pouvoir passer à l'étape suivante :
-
-![Licence agreements](images/prestashop_first_steps_15.png){.thumbnail}
-
-L'outil d'installation vérifie alors si votre hébergement est compatible. Cette page n'est pas nécessairement visible si les conditions pour poursuivre le processus de déploiement sont remplies :
-
-![Check compatibility](images/prestashop_first_steps_16.png){.thumbnail}
-
-L'assistant d'installation vous demander de renseigner quelques informations :
-
-- le nom de votre site ou boutique en ligne
-- votre domaine d'activité
-- le pays où se situe votre entreprise
-- l'activation ou non du SSL (nous vous conseillons de l'activer, pensez à générer votre certificat avant l'installation)
-- votre nom, prénom, adresse mail et mot de passe pour accéder à l'interface d'administation.
-
-![Information about your store and your account](images/prestashop_first_steps_17.png){.thumbnail}
-
-Sur la page suivante, vous avez la possibilité de faire l'installation avec des données de démonstration et de choisir les modules de Prestashop à installer :
-
-![Content of your store](images/prestashop_first_steps_18.png){.thumbnail}
-
-Renseignez sur la page qui suit les informations relatives à votre base de données :
-
-![Configure your database](images/prestashop_first_steps_19.png){.thumbnail}
-
-Avant de passer à l'étape suivante, vous pouvez tester si les informations que vous avez saisies sont correctes :
-
-![The the database connection](images/prestashop_first_steps_20.png){.thumbnail}
-
-L'installation de votre boutique en ligne démarre :
-
-![Installation](images/prestashop_first_steps_21.png){.thumbnail}
-
-À la fin de l'installation, vous êtes invité à récupérer vos accès de connexion (le login et mot de passe que vous avez saisi précédemment).
-
-Vous devez impérativement supprimer le répertoire d'installation sur votre serveur. Vous pouvez le faire en utilisant votre client FTP ou bien dans votre terminal, dans le répertoire qui contient les fichiers Prestashop :
-
-```sh
- rm -rf install/
-```
-
-Votre installation est terminée, vous pouvez allez sur votre site ou sur votre interface d'administation :
-
-![Install completed](images/prestashop_first_steps_22.png){.thumbnail}
 
 ## Aller plus loin
 
