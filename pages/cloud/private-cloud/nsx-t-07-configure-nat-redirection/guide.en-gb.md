@@ -31,7 +31,9 @@ order: 07
 
 ## Instructions
 
-We will create a redirection rule from the public virtual IP address on port 2222 in TCP to a virtual machine on LINUX on port 22 in TCP. In our example, we will use fictitious IP addresses.
+When you deploy your NSX-T solution, a SNAT rule is automatically created by OVHcloud, so you can go online from your segments.
+
+We will add a redirection rule (DNAT) from the public virtual IP address on port 2222 in TCP to a virtual machine on LINUX on port 22 in TCP. In our example, we will use fictitious IP addresses.
 
 In the NSX-T interface, go to the `Networking`{.action} tab, select `NAT`{.action} in the **Network Services** section, select `ovh-T0-gw | Tier-0`{.action} to the right of **Gateway** and click `ADD NAT RULE`{.action}.
 

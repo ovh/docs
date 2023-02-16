@@ -32,14 +32,11 @@ order: 07
 
 ## En pratique
 
-Nous allons créer une règle de redirection depuis l'adresse IP virtuelle publique sur le port 2222 en TCP vers une machine virtuelle sous LINUX sur le port 22 en TCP. Dans notre exemple nous allons utiliser des adresses IP fictives.
+Lors du déploiement de votre solution NSX-T une règle de SNAT est automatiquement créée par OVHcloud pour pouvoir sortir sur internet depuis vos segments.
 
-
+Nous allons rajouter une règle de redirection (DNAT) depuis l'adresse IP virtuelle publique sur le port 2222 en TCP vers une machine virtuelle sous LINUX sur le port 22 en TCP. Dans notre exemple nous allons utiliser des adresses IP fictives.
 
 Depuis l'interface NSX-T allez sur l'onglet `Networking`{.action}, Sélectionnez `NAT`{.action} dans la rubrique **Network Services** sélectionnez `ovh-T0-gw | Tier-0`{.action} à droite de **Gateway** et cliquez sur `ADD NAT RULE`{.action}.
-
-> ![!primary]
-> Dans les règles de NAT vous pouvez voir la règle de SNAT qui est créée par défaut lors du déploiement de NSX-T et qui permet un accès Internet depuis vos réseaux privés.
 
 ![01 Create DNAT rule 01](images/01-create-dnat-rules01.png){.thumbnail}
 
