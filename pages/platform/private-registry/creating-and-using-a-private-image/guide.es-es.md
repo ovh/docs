@@ -6,6 +6,7 @@ section: Tutorials
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/creating-and-using-a-private-image/'
+updated: 2022-04-13
 ---
 
 **Last updated 13th April, 2022.**

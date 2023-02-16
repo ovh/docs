@@ -3,6 +3,7 @@ title: Shipping logs to Logs Data Platform with Filebeat
 slug: filebeat-logs
 order: 01
 section: Use cases
+updated: 2022-06-13
 ---
 
 **Last updated 13th June, 2022**

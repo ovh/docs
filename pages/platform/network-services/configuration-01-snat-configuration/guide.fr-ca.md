@@ -4,6 +4,7 @@ excerpt: Comprendre qu'est-ce que le service SNAT et comment le configurer
 slug: l3-services-snat-configuration
 section: Configuration
 order: 01
+updated: 2022-11-02
 ---
 
 **Dernière mise à jour le 02/11/2022**

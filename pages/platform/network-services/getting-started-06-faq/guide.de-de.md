@@ -6,6 +6,7 @@ section: Erste Schritte
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/faq/'
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

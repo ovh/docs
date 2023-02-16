@@ -6,6 +6,7 @@ section: 'Getting started'
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/creating-a-private-registry/'
+updated: 2022-04-14
 ---
 
 **Last updated 14th April, 2022.**

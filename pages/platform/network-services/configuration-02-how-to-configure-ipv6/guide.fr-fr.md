@@ -4,6 +4,7 @@ slug: ipv6-configuration
 excerpt: 'Tutoriel de configuration du protocole IPv6 sur une instance Public Cloud'
 section: Configuration
 order: 02
+updated: 2022-11-15
 ---
 
 **Dernière mise à jour le 15/11/2022**

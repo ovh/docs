@@ -4,6 +4,7 @@ slug: ipv6-configuration
 excerpt: 'Anleitung zum Konfigurieren von IPv6 auf einer Public Cloud Instanz'
 section: Konfiguration
 order: 02
+updated: 2022-11-15
 ---
 
 > [!primary]

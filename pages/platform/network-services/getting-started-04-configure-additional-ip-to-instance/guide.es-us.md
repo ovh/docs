@@ -4,6 +4,7 @@ slug: configure-additional-ip
 excerpt: Cómo añadir direcciones Additional IP a la configuración de la instancia
 section: Additional IP
 order: 01
+updated: 2023-01-04
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Find out how to activate and configure a vRack on the Public Cloud usi
 slug: public-cloud-vrack-apiv6
 section: Getting started
 order: 08
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

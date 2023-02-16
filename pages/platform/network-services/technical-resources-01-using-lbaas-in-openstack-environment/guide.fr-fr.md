@@ -4,6 +4,7 @@ slug: octavia-lbaas-in-openstack-env-deep-dive
 excerpt: Découvrez comment configurer Octavia LBaaS pour Public Cloud
 section: Ressources techniques
 order: 01
+updated: 2022-11-02
 ---
 
 **Dernière mise à jour le 02/11/2022**

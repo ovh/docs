@@ -6,6 +6,7 @@ excerpt: Deploy in a few minutes one of the most complete alert system.
 section: Use cases
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/elastalert/'
+updated: 2022-07-28
 ---
 
 **Last updated July 28th, 2022**

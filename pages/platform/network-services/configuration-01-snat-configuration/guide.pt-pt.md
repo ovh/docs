@@ -6,6 +6,7 @@ section: Configuração
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/l3-services-snat-configuration/'
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

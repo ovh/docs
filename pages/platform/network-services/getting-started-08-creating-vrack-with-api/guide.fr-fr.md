@@ -4,6 +4,7 @@ excerpt: 'Découvrez comment activer et gérer un vRack Public Cloud depuis les 
 slug: public-cloud-vrack-apiv6
 section: Premiers pas
 order: 08
+updated: 2022-11-02
 ---
 
 **Dernière mise à jour le 02/11/2022**

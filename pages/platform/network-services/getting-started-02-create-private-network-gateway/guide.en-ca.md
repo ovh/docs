@@ -4,6 +4,7 @@ slug: creating-private-network-with-gateway
 excerpt: Discover how to create a Private network with a Gateway
 section: Getting started
 order: 01
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

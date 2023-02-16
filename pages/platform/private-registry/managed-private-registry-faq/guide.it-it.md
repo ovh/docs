@@ -5,6 +5,7 @@ section: 'Getting started'
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/managed-private-registry-faq/'
+updated: 2022-05-05
 ---
 
 ## Objective
