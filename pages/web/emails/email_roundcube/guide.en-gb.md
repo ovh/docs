@@ -3,6 +3,7 @@ title: Using your email account via the RoundCube webmail interface
 slug: roundcube-userguide
 section: 'Getting started'
 order: 05
+updated: 2022-05-31
 ---
 
 **Last updated 31st May 2022**

@@ -3,6 +3,7 @@ title: 'Konfiguracja konta e-mail w aplikacji Mail na urządzeniach macOS'
 slug: konfiguracja-mail-macos
 section: 'Konfiguracja na komputerze'
 order: 03
+updated: 2022-06-13
 ---
 
 > [!primary]

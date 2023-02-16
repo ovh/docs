@@ -4,6 +4,7 @@ slug: correo_guia_de_creacion_de_una_direccion_de_correo_electronico
 excerpt: 'Cómo crear una dirección de correo electrónico en la solución MX Plan'
 section: 'Primeros pasos'
 order: 02
+updated: 2022-10-11
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: exchange_2013_how_to_grant_full_access_permissions_for_an_account
 excerpt: 'Find out how to delegate permissions on your email account to another user'
 section: 'Exchange account features'
 order: 03
+updated: 2020-10-24
 ---
 
 **Last updated 24th October 2020**

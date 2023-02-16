@@ -4,6 +4,7 @@ slug: contratar_y_gestionar_un_grupo_de_licencias_de_office_365_ovh
 excerpt: Esta guía explica cómo contratar una licencia Microsoft 365 y administrarla desde el área de cliente de OVHcloud.
 section: Office
 order: 02
+updated: 2021-09-09
 ---
 
 > [!primary]

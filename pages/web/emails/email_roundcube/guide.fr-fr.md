@@ -3,6 +3,7 @@ title: 'Utiliser son adresse e-mail depuis le webmail RoundCube'
 slug: utilisation-roundcube
 section: 'Premiers pas'
 order: 05
+updated: 2022-05-31
 ---
 
 **Dernière mise à jour le 31/05/2022**

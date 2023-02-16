@@ -4,6 +4,7 @@ slug: delete-email-account
 excerpt: "Dowiedz się, jak usunąć lub zresetować konto e-mail w Twojej usłudze e-mail"
 section: 'Funkcjonalności kont e-mail'
 order: 02
+updated: 2023-01-27
 ---
 
 > [!primary]

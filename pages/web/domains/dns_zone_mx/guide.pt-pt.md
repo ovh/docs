@@ -4,6 +4,7 @@ slug: e-mail-partilhado-manual-de-configuracao-mx-com-zona-dns-ovh
 excerpt: 'Saiba como adicionar um campo MX ao seu domínio da OVHcloud'
 section: 'DNS e zona DNS'
 order: 04
+updated: 2018-05-30
 ---
 
 **Última atualização: 21/09/2022**

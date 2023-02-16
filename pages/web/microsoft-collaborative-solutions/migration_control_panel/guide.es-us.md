@@ -5,6 +5,7 @@ excerpt: 'Cómo migrar una dirección MX Plan a una cuenta Exchange'
 section: Migración de una cuenta
 order: 02
 hidden: true
+updated: 2022-11-22
 ---
 
 **Última actualización: 22/11/2022**

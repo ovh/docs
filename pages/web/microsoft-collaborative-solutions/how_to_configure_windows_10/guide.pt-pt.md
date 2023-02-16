@@ -4,6 +4,7 @@ slug: mail-configuration-windows-10
 excerpt: "Saiba como configurar uma conta Exchange na aplicação Correio para Windows 10"
 section: 'Configuração num computador'
 order: 03
+updated: 2018-04-04
 ---
 
 **Última atualização: 17/05/2018**

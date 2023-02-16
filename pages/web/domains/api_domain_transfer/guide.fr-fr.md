@@ -4,6 +4,7 @@ slug: api-transfer
 excerpt: "Utilisez l'API publique OVHcloud pour transférer vos noms de domaines"
 section: "API domaines"
 order: 09
+updated: 2022-07-21
 ---
 
 **Dernière mise à jour le 21/07/2022**

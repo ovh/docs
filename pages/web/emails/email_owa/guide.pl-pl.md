@@ -4,6 +4,7 @@ slug: korzystanie-owa
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
 section: 'Pierwsze kroki'
 order: 04
+updated: 2020-02-25
 ---
 
 > [!primary]

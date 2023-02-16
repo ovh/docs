@@ -6,6 +6,7 @@ legacy_guide_number: g2052
 section: Gestión de la cuenta de correo
 order: 02
 hidden: true
+updated: 2021-04-20
 ---
 
 > [!primary]

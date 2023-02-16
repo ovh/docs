@@ -4,6 +4,7 @@ slug: exchange-2016-partager-un-calendrier-via-le-webmail-owa
 excerpt: 'Retrouvez ici la procédure de partage d’un calendrier via Exchange'
 section: "Utilisation d'Outlook Web Application (OWA)"
 order: 03
+updated: 2020-02-19
 ---
 
 **Dernière mise à jour le 19/02/2020**

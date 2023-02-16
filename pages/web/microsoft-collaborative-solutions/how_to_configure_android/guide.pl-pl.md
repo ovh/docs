@@ -4,6 +4,7 @@ slug: exchange_20132016_konfiguracja_w_systemie_android
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange na urządzeniach z systemem Android poprzez aplikację Gmail'
 section: 'Konfiguracja na smartfonie/tablecie'
 order: 02
+updated: 2018-03-12
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-29**

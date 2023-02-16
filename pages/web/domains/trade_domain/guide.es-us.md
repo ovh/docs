@@ -3,6 +3,7 @@ title: 'Cómo cambiar el propietario de un nombre de dominio'
 slug: cambio-propietario-dominio
 excerpt: 'En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio.'
 section: 'Cambiar el propietario'
+updated: 2021-03-04
 ---
 
 > [!primary]

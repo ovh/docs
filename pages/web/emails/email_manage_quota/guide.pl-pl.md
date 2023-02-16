@@ -4,6 +4,7 @@ slug: manage-email-quota
 excerpt: "Dowiedz się, jak zarządzać przestrzenią dyskową konta e-mail i jej optymalizować"
 section: 'Diagnostyka'
 order: 02
+updated: 2022-11-17
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: exchange_20132016_configuring_the_solution_for_the_first_time
 excerpt: 'Get started with a Hosted Exchange service'
 section: 'Getting started with Exchange'
 order: 01
+updated: 2018-01-19
 ---
 
 **Last updated 19th January 2018**

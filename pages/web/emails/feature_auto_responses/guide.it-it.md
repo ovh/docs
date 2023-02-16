@@ -5,6 +5,7 @@ slug: servizio_email_configura_una_risposta_automatica
 legacy_guide_number: g2052
 section: Funzionalità degli indirizzi email
 order: 02
+updated: 2021-04-20
 ---
 
 > [!primary]

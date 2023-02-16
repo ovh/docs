@@ -4,6 +4,7 @@ title: Configuratie van Exchange in Outlook 2016 voor Mac
 slug: configuratie-outlook-2016-mac
 excerpt: Leer hoe u uw Exchange-account in Outlook 2016 voor Mac kunt configureren
 section: Configuratie van Exchange
+updated: 2018-06-01
 ---
 
 **Laatste update 22-03-2018**

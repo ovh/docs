@@ -5,6 +5,7 @@ slug: guia_de_ajuda_a_implementacao_de_respostas_automaticas
 legacy_guide_number: g2052
 section: Funcionalidades dos endereços e-mail
 order: 02
+updated: 2021-04-20
 ---
 
 > [!primary]

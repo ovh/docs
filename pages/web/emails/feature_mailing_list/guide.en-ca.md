@@ -5,6 +5,7 @@ excerpt: 'Find out how to use mailing lists'
 section: 'Email address features'
 order: 2
 hidden: true
+updated: 2020-03-19
 ---
 
 **Last updated 5th May 2020**

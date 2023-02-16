@@ -4,6 +4,7 @@ slug: gerer-politique-de-securite-mot-de-passe
 excerpt: 'Découvrez comment gérer la politique de sécurité de votre service e-mail'
 section: 'Premiers pas'
 order: 08
+updated: 2021-08-31
 ---
 
 **Dernière mise à jour le 09/06/2020**

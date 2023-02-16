@@ -4,6 +4,7 @@ slug: reencaminhamento-dominio
 excerpt: "Descubra os diferentes tipos de reencaminhamento e como criar um reencaminhamento para um domínio gerido pela OVHcloud"
 section: Geral
 order: 01
+updated: 2022-10-06
 ---
 
 **Última atualização: 06/10/2022**

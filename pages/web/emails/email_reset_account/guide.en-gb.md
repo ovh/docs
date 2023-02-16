@@ -4,6 +4,7 @@ slug: delete-email-account
 excerpt: Find out how to delete or reset an email account of your email solution
 section: 'Email account features'
 order: 02
+updated: 2023-01-27
 ---
 
 **Last updated 27th January 2023**

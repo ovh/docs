@@ -4,6 +4,7 @@ excerpt: 'W tym przewodniku znajdziesz różne informacje na temat zmiany właś
 slug: zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz
 legacy_guide_number: g1350
 section: 'Zmiana właściciela'
+updated: 2021-03-04
 ---
 
 > [!primary]

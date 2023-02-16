@@ -4,6 +4,7 @@ slug: webhosting_anleitung_zum_transfer_einer_couk_domain
 excerpt: Erfahren Sie hier, wie Sie Domainnamen mit UK-Ländercode zu OVHcloud transferieren
 section: Transfer
 order: 04
+updated: 2022-10-19
 ---
 
 > [!primary]

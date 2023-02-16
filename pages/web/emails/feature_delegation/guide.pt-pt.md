@@ -5,6 +5,7 @@ slug: delegar-gestao-emails
 excerpt: 'Saiba como delegar a gestão das contas de e-mail da sua oferta MX Plan'
 section: 'Funcionalidades dos endereços e-mail'
 order: 05
+updated: 2021-10-08
 ---
 
 > [!primary]

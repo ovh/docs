@@ -2,6 +2,7 @@
 title: 'Cómo autorizar las conexiones poco seguras en Gmail'
 slug: seguridad_gmail
 hidden: true
+updated: 2022-04-06
 ---
 
 **Última atualização: 06/04/2022**

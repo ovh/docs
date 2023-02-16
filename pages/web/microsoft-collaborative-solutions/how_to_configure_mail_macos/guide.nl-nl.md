@@ -4,6 +4,7 @@ title: Configuratie van Exchange in macOS Mail
 slug: exchange-configuratie-mail-mac
 excerpt: Ontdek hoe u uw Exchange-account kunt configureren in Mail van macOS El Capitan, Sierra en High Sierra
 section: Configuratie van een e-mailclient
+updated: 2021-12-28
 ---
 
 **Laatste update 21-02-2018**

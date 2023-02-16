@@ -5,6 +5,7 @@ excerpt: 'Scopri come configurare un account email MX Plan sull’applicazione P
 legacy_guide_number: g2284
 section: Configurazione su computer
 order: 06
+updated: 2018-04-04
 ---
 
 **Ultimo aggiornamento: 19/07/2018**

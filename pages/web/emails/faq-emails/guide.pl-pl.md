@@ -3,6 +3,7 @@ title: FAQ e-mail OVHcloud
 slug: faq-konta-email
 section: Pierwsze kroki
 order: 07
+updated: 2020-05-05
 ---
 
 **Ostatnia aktualizacja z dnia 15-05-2020**

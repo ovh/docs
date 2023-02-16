@@ -5,6 +5,7 @@ slug: hosting_www_przekierowania_e-mail
 legacy_guide_number: g2001
 section: 'Funkcjonalności kont e-mail'
 order: 01
+updated: 2020-05-20
 ---
 
 **Ostatnia aktualizacja z dnia 22-01-2019**

@@ -4,6 +4,7 @@ slug: api
 excerpt: "General presentation of the OVHcloud public API for domain names"
 section: "Domains API"
 order: 01
+updated: 2022-05-05
 ---
 
 **Last updated 5th May 2022**

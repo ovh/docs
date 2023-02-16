@@ -4,6 +4,7 @@ slug: redirection-nom-de-domaine
 excerpt: "Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud"
 section: "Tâches courantes"
 order: 01
+updated: 2022-10-06
 ---
 
 **Dernière mise à jour le 06/10/2022**

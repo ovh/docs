@@ -4,6 +4,7 @@ slug: api-rules
 excerpt: "Description of the technical format of the domain name eligibility rules"
 section: "Domains API"
 order: 06
+updated: 2022-05-05
 ---
 
 **Last updated 5th May 2022**

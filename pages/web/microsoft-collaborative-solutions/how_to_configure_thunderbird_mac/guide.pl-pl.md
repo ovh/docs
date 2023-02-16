@@ -4,6 +4,7 @@ slug: konfiguracja-exchange-thunderbird-mac
 excerpt: 'Tutaj znajdziesz procedurę dodawania konta Exchange w programie Thunderbird'
 section: 'Konfiguracja komputerowa'
 order: 05
+updated: 2021-08-26
 ---
 
 > [!primary]

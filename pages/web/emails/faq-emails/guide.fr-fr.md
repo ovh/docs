@@ -4,6 +4,7 @@ excerpt: 'Retrouvez les questions les plus fréquemment posées sur les e-mails 
 slug: faq-emails
 section: 'Premiers pas'
 order: 07
+updated: 2020-05-05
 ---
 
 **Dernière mise à jour le 15/05/2020**

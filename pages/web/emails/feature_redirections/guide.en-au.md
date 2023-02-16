@@ -5,6 +5,7 @@ legacy_guide_number: 2001
 excerpt: 'Find out how to manage email redirections'
 section: 'Email address features'
 order: 01
+updated: 2020-05-20
 ---
 
 **Last updated 5th May 2020**

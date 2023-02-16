@@ -4,6 +4,7 @@ slug: manage-email-quota
 excerpt: "Erfahren Sie hier, wie Sie den Speicherplatz von E-Mail-Accounts verwalten und optimieren"
 section: 'Diagnose'
 order: 02
+updated: 2022-11-17
 ---
 
 > [!primary]

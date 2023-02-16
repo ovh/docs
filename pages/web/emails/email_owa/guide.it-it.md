@@ -4,6 +4,7 @@ slug: utilizzo-owa
 excerpt: 'Come gestire il tuo indirizzo email dalla Webmail "Outlook on the web"'
 section: 'Per iniziare'
 order: 04
+updated: 2020-02-25
 ---
 
 **Ultimo aggiornamento: 30/08/2021**

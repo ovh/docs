@@ -4,6 +4,7 @@ slug: migrar-sus-direcciones-de-correo-manualmente
 excerpt: Cómo migrar manualmente su dirección de correo a otra dirección de correo
 section: Migración
 order: 01
+updated: 2021-01-05
 ---
 
 **Última actualización: 27/10/2020**

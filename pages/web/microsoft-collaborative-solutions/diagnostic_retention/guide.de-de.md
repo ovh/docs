@@ -4,6 +4,7 @@ slug: email-retention
 excerpt: Erfahren Sie hier, wie Sie gelöschte Elemente Ihres E-Mail-Accounts über Webmail (OWA) wiederherstellen
 section: Troubleshooting
 order: 02
+updated: 2022-02-08
 ---
 
 > [!primary]

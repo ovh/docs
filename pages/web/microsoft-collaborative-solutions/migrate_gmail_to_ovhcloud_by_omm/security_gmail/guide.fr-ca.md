@@ -2,6 +2,7 @@
 title: 'Comment autoriser les connexions moins sécurisées sur Gmail'
 slug: securite-gmail
 hidden: true
+updated: 2022-04-06
 ---
 
 **Dernière mise à jour le 06/04/2022**

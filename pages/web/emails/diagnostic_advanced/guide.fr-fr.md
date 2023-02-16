@@ -5,6 +5,7 @@ legacy_guide_number: 2117
 excerpt: "Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou la réception des e-mails chez OVHcloud"
 section: 'Diagnostic'
 order: 02
+updated: 2022-07-21
 ---
 
 **Dernière mise à jour le 21/07/2022**

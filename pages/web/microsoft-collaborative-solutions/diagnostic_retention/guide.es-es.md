@@ -4,6 +4,7 @@ slug: email-retention
 excerpt: Cómo restaurar elementos eliminados de su cuenta de correo a través del webmail (OWA)
 section: 'Diagnóstico Exchange'
 order: 02
+updated: 2022-02-08
 ---
 
 > [!primary]

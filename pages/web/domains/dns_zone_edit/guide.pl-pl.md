@@ -4,6 +4,7 @@ slug: hosting_www_jak_edytowac_strefe_dns
 excerpt: 'Dowiedz się, jak edytować strefę DNS w Panelu klienta'
 section: 'DNS i strefa DNS'
 order: 03
+updated: 2022-07-07
 ---
 
 > [!primary]

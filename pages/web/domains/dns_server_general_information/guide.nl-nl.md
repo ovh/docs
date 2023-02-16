@@ -5,6 +5,7 @@ slug: gedeelde_hosting_algemene_informatie_over_dns_servers
 excerpt: 'DNS-servers voor een OVH-domeinnaam wijzigen'
 section: 'DNS en DNS-zone'
 order: 01
+updated: 2021-02-18
 ---
 
 **Laatste update 22-05-2018**

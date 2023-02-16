@@ -4,6 +4,7 @@ slug: modificare-password-account-email-mxplan
 excerpt: 'Come modificare la password di un indirizzo email OVHcloud'
 section: 'Per iniziare'
 order: 03
+updated: 2023-01-03
 ---
 
 **Ultimo aggiornamento: 03/01/2023**

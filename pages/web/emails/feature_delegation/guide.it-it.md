@@ -5,6 +5,7 @@ slug: deleguer-gestione-email-altro-identificativo
 excerpt: Come delegare la gestione degli account email della tua soluzione MX Plan
 section: Funzionalità degli indirizzi email
 order: 05
+updated: 2021-10-08
 ---
 
 > [!primary]

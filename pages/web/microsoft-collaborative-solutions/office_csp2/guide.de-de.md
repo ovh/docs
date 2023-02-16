@@ -4,6 +4,7 @@ slug: verwaltung_einer_office_365_reseller_lizenzgruppe_csp2
 excerpt: Erfahren Sie hier, wie Sie einen Office 365 Reseller Dienst (CSP2) bei OVHcloud abonnieren und verwalten
 section: Office
 order: 03
+updated: 2023-01-17
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: encomendar_e_gerir_um_grupo_de_licencas_office_365_revendedor_csp2_ovh
 excerpt: Saiba como subscrever e administrar um serviço Office 365 Revendedores (CSP2) na OVHcloud
 section: Office
 order: 03
+updated: 2023-01-17
 ---
 
 > [!primary]

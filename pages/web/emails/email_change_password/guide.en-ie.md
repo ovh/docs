@@ -4,6 +4,7 @@ slug: changing-email-address-password
 excerpt: "Find out how to change the password for an OVHcloud email account"
 section: Getting started
 order: 03
+updated: 2023-01-03
 ---
 
 **Last updated 3rd January 2023**

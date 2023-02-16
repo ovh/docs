@@ -4,6 +4,7 @@ excerpt: 'Come configurare il tuo server Private Exchange'
 slug: exchange_pirmi_zingsniai_su_private_serveriu
 section: 'Iniziare a utilizzare Exchange'
 order: 02
+updated: 2020-04-17
 ---
 
 **Ultimo aggiornamento: 25/03/2020**

@@ -3,6 +3,7 @@ title: Configurare un indirizzo email su Mail di macOS
 slug: servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan
 section: Configurazione su computer
 order: 03
+updated: 2022-06-13
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: anadir-registro-mx-configuracion-dominio
 excerpt: 'Cómo añadir un registro MX a la configuración de un dominio en OVHcloud'
 section: 'DNS (servidor y zona)'
 order: 03
+updated: 2018-05-30
 ---
 
 **Última actualización: 21/09/2022**

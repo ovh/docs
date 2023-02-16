@@ -4,6 +4,7 @@ slug: glue_record
 excerpt: 'Cómo personalizar los servidores DNS de un dominio en OVHcloud'
 section: 'DNS (servidor y zona)'
 order: 07
+updated: 2018-10-26
 ---
 
 **Última actualización: 05/05/2020**

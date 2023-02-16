@@ -3,6 +3,7 @@ title: 'Configurer son adresse e-mail sur Mail de macOS'
 slug: guide-configuration-mail-de-mac-el-capitan
 section: 'Configuration sur ordinateur'
 order: 03
+updated: 2022-06-13
 ---
 
 **Dernière mise à jour le 13/06/2022**

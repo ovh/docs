@@ -4,6 +4,7 @@ slug: configurazione-outlook-2016-mac
 excerpt: 'Scopri come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Mac'
 section: Configurazione su computer
 order: 02
+updated: 2018-05-31
 ---
 
 **Ultimo aggiornamento: 24/08/2018**

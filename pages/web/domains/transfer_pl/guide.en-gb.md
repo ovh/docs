@@ -7,6 +7,7 @@ hidden: true
 excerpt: 'Find out how to transfer a .pl domain name to OVHcloud'
 section: Transfer
 order: 09
+updated: 2022-10-19
 ---
 
 **Last updated 19th October 2022**

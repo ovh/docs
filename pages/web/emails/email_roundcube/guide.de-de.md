@@ -3,6 +3,7 @@ title: Verwendung Ihres E-Mail-Accounts mit RoundCube Webmail
 slug: webmail_verwendung_von_roundcube
 section: 'E-Mail Clients'
 order: 2
+updated: 2022-05-31
 ---
 
 > [!primary]

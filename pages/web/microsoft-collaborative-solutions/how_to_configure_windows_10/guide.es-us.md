@@ -4,6 +4,7 @@ slug: configuracion-correo-windows-10
 excerpt: 'Cómo configurar una cuenta Exchange en la aplicación Correo de Windows 10'
 section: 'Configuración en el ordenador'
 order: 03
+updated: 2018-04-04
 ---
 
 **Última actualización: 15/06/2018**

@@ -4,6 +4,7 @@ excerpt: Découvrez comment mettre en place une réponse automatique sous OWA
 slug: exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa
 section: "Utilisation d'Outlook Web Application (OWA)"
 order: 02
+updated: 2020-02-26
 ---
 
 **Dernière mise à jour le 03/08/2020**

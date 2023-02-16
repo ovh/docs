@@ -4,6 +4,7 @@ slug: exchange-utilisation-des-comptes-partages
 excerpt: Ajouter et utiliser un compte partagé sur votre offre E-mail Exchange
 section: Fonctionnalités des comptes Exchange
 order: 06
+updated: 2021-06-15
 ---
 
 **Dernière mise à jour le 15/06/2021**

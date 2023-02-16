@@ -4,6 +4,7 @@ title: Configuratie van uw e-mailadres op een iPhone of iPad
 slug: mail-configuratie-ios-iphone-ipad
 excerpt: Leer hoe u een MX Plan e-mailadres op een iPhone of iPad kunt configureren
 section: Apple
+updated: 2022-07-20
 ---
 
 **Laatste update 23-02-2018**

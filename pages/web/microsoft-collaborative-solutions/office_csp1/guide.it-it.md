@@ -4,6 +4,7 @@ slug: ordina_e_gestisci_un_gruppo_di_licenze_office_365_ovh
 excerpt: Questa guida ti mostra come attivare una licenza Microsoft 365 e come gestirlo nello Spazio Cliente OVHcloud.
 section: Office
 order: 02
+updated: 2021-09-09
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: creare-regole-posta-in-arrivo-in-owa
 excerpt: 'Come impostare l’inoltro delle email e creare filtri in OWA'
 section: 'Utilizzo di Outlook Web App (OWA)'
 order: 05
+updated: 2020-03-11
 ---
 
 **Ultimo aggiornamento 11/03/2020**

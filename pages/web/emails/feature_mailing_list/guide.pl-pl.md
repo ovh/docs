@@ -5,6 +5,7 @@ slug: hosting_www_listy_mailingowe
 legacy_guide_number: g1596
 section: 'Funkcjonalności kont e-mail'
 order: 03
+updated: 2020-03-19
 ---
 
 **Ostatnia aktualizacja z dnia 13-02-2020**
