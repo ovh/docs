@@ -4,10 +4,10 @@ excerpt: "Découvrez comment ajouter et configurer de l'espace de stockage suppl
 slug: configurer-disque-additionnel
 section: 'Sauvegarde'
 order: 3
-updated: 2021-02-24
+updated: 2023-02-15
 ---
 
-**Dernière mise à jour le 24 février 2021**
+**Dernière mise à jour le 15/02/2023**
 
 ## Objectif
 
@@ -196,11 +196,11 @@ Si le disque est marqué comme hors connexion, il doit d'abord être initialisé
 
 ##### **Initialiser le disque dans l'outil « Gestion des disques »** <a name="initDiskManagement"></a>
 
- Faites un clic droit sur le disque et sélectionnez `En ligne`{.action}. 
+Faites un clic droit sur le disque et sélectionnez `En ligne`{.action}. 
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 
- Faites un nouveau clic droit sur le disque et sélectionnez cette fois `Initialiser le disque`{.action}.
+Faites un nouveau clic droit sur le disque et sélectionnez cette fois `Initialiser le disque`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win04.png){.thumbnail}
 
@@ -210,7 +210,7 @@ Sélectionnez `MBR`{.action} (Secteur de démarrage principal) dans la nouvelle 
 
 ##### **Initialiser le disque avec DISKPART** <a name="initDiskpart"></a>
 
- Faites un clic droit sur le `Menu Démarrer`{.action} et ouvrez `Exécuter`{.action}.
+Faites un clic droit sur le `Menu Démarrer`{.action} et ouvrez `Exécuter`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win06.png){.thumbnail}
 

@@ -4,14 +4,14 @@ excerpt: 'Saiba como adicionar e configurar espaço de armazenamento adicional n
 slug: config-additional-disk-vps
 section: 'Opções de backup'
 order: 3
-updated: 2021-02-24
+updated: 2023-02-15
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 24/02/2021**
+**Última atualização: 15/02/2023**
 
 ## Objetivo
 
@@ -65,7 +65,7 @@ sdb       8:16   0   50G  0 disk
 
 Neste exemplo, o disco adicional é chamado `sdb`.
 
-Execute o `fdisk` para criar uma partição no disco. Quando for convidado, insira `n` para uma nova partição e aceite os valores predefinidos seguintes, apoiando-se em Entrada (" ↩"). Por fim, utilize o comando `w` para escrever as modificações no disco.
+Execute o `fdisk` para criar uma partição no disco. Quando for convidado, insira `n` para uma nova partição e aceite os valores predefinidos seguintes, apoiando-se em "Enter". Por fim, utilize o comando `w` para escrever as modificações no disco.
 
 ```
 $ sudo fdisk /dev/sdb
