@@ -92,7 +92,7 @@ Click on `Databases`{.action} in the left-hand navigation bar and select your Mo
 
 From the central `Login information` panel, select `mongodbSrv` as **Service** and copy the URI.
 
-![Copy SRV URI from the OVHcloud manager](images/copy-srv-ovhcloud-manager.png){.thumbnail}
+![Copy SRV URI from the OVHcloud manager](images/copy-srv-ovhcloud-control-panel.png){.thumbnail}
 
 ### Test the connection to MongoDB
 
