@@ -3,6 +3,7 @@ title: 'Creating automatic signatures'
 slug: email-automatic-signature-disclaimer
 section: 'Getting started'
 order: 3
+updated: 2020-03-26
 ---
 
 **Last updated 26th March 2020**

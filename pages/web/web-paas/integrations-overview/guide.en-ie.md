@@ -2,6 +2,7 @@
 title: External Integrations
 slug: integrations-overview
 section: Integrations
+updated: 2021-06-02
 ---
 
 **Last updated 2nd June 2021**

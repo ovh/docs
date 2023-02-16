@@ -4,6 +4,7 @@ slug: configuration-android
 excerpt: "Apprenez à configurer un compte E-mail Pro sur Android, via l'application Gmail"
 section: 'Configuration sur smartphone'
 order: 2
+updated: 2020-03-18
 ---
 
 **Dernière mise à jour le 19/03/2020**

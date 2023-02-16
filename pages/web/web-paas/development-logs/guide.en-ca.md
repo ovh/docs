@@ -3,6 +3,7 @@ title: Accessing logs
 slug: development-logs
 section: Development
 order: 5
+updated: 2021-03-26
 ---
 
 **Last updated 26th February 2021**

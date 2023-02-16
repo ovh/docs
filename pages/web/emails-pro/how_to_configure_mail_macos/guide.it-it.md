@@ -3,6 +3,7 @@ title: 'Configurare un account Email Pro su Mail di macOS'
 slug: configurare-email-pro-mail-macos
 section: 'Configurazione di un client di posta'
 order: 4
+updated: 2022-06-13
 ---
 
 > [!primary]

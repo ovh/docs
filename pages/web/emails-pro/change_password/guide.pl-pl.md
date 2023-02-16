@@ -6,6 +6,7 @@ section: 'Pierwsze kroki'
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/'
+updated: 2023-01-03
 ---
 
 **Ostatnia aktualizacja z dnia 03-01-2023**

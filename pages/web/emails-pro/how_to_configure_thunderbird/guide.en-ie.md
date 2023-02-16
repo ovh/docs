@@ -4,6 +4,7 @@ slug: configure-emailpro-for-thunderbird-windows
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for Windows'
 section: 'Email client configuration'
 order: 5
+updated: 2021-08-26
 ---
 
 **Last updated 26th August 2021**

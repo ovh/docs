@@ -4,6 +4,7 @@ slug: emailpro-alias
 excerpt: Dowiedz się, jak dodać alias do konta e-mail w Panelu klienta OVHcloud
 section: Pierwsze kroki
 order: 4
+updated: 2021-09-20
 ---
 
 > [!primary]

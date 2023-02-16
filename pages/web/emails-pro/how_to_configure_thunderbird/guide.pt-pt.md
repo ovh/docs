@@ -4,6 +4,7 @@ slug: configuracao-thunderbird-emailpro-windows
 excerpt: 'Saiba como configurar o seu endereço E-mail Pro no Thunderbird para Windows'
 section: 'Configuração do software cliente de e-mail'
 order: 5
+updated: 2021-08-26
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: 'Reguły skrzynki odbiorczej w interfejsie OWA'
 slug: creating-inbox-rules-in-owa-email-pro
 section: 'Pierwsze kroki'
 order: 3
+updated: 2020-03-12
 ---
 
 **Ostatnia aktualizacja: 25-06-2021**

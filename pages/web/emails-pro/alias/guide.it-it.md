@@ -4,6 +4,7 @@ slug: emailpro-alias
 excerpt: Come aggiungere un alias a un indirizzo email dallo Spazio Cliente OVHcloud
 section: Per iniziare
 order: 4
+updated: 2021-09-20
 ---
 
 > [!primary]

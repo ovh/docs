@@ -3,6 +3,7 @@ title: Variables
 slug: development-variables
 section: Development
 order: 5
+updated: 2022-01-13
 ---
 
 **Last updated 13th January 2022**

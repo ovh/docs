@@ -2,6 +2,7 @@
 title: Health notifications
 slug: integrations-notifications
 section: Integrations
+updated: 2021-05-25
 ---
 
 **Last updated 25th May 2021**

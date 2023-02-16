@@ -4,6 +4,7 @@ slug: manage-security-policy-password
 excerpt: 'Dowiedz się, jak zarządzać polityką bezpieczeństwa usługi e-mail'
 section: 'Pierwsze kroki'
 order: 8
+updated: 2022-04-22
 ---
 
 **Ostatnia aktualizacja z dnia 22-04-2022**

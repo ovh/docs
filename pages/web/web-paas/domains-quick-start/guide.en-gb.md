@@ -3,6 +3,7 @@ title: Quick Start
 slug: domains-quick-start
 section: Domains
 order: 7
+updated: 2021-05-11
 ---
 
 **Last updated 11th May 2021**

@@ -3,6 +3,7 @@ title: Custom Domains - Step by step guide
 slug: domains-steps
 section: Domains
 order: 7
+updated: 2021-06-02
 ---
 
 **Last updated 2nd June 2021**

@@ -4,6 +4,7 @@ slug: configuration-blackberry
 excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur BlackBerry'
 section: 'Configuration sur smartphone'
 order: 3
+updated: 2020-03-19
 ---
 
 **Dernière mise à jour le 19/03/2020**

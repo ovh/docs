@@ -3,6 +3,7 @@ title: 'Reglas de la bandeja de entrada desde la interfaz OWA'
 slug: creating-inbox-rules-in-owa-email-pro
 section: 'Primeros pasos'
 order: 3
+updated: 2020-03-12
 ---
 
 **Última actualización: 26/02/2021**

@@ -4,6 +4,7 @@ slug: konfiguracja-thunderbird-emailpro-windows
 excerpt: 'Dowiedz się, jak skonfigurować Twoje konto E-mail Pro w programie Thunderbird na urządzeniu z systemem Windows'
 section: 'Konfiguracja programu pocztowego'
 order: 5
+updated: 2021-08-26
 ---
 
 > [!primary]
