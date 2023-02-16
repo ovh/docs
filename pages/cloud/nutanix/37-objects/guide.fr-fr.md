@@ -10,7 +10,7 @@ order: 07
 
 ## Objectif
 
-**Ce guide vous montre comment mettre en place Object sur votre cluster Nutanix**
+**Ce guide vous montre comment mettre en place Objects sur votre cluster Nutanix**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -25,6 +25,8 @@ order: 07
 
 
 ## Présentation
+
+Nutanix Objects implemente une solution de stockage compatible S3
 
 
 ## En pratique

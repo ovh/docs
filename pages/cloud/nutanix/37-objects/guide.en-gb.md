@@ -10,7 +10,7 @@ order: 07
 
 ## Objective
 
-**This guide will show you how to set up Object on your Nutanix cluster**
+**This guide will show you how to set up Objects on your Nutanix cluster**
 
 > [!warning]
 > This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
