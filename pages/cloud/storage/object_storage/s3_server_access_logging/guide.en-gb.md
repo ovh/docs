@@ -4,9 +4,10 @@ slug: s3/server-access-logging
 excerpt: Learn how to configure and use Server Access Logging
 section: Tutorials
 order: 130
+updated: 2023-02-16
 ---
 
-**Last updated on 10th February 2022**
+**Last updated on 16th February 2023**
 
 ## Objective
 
