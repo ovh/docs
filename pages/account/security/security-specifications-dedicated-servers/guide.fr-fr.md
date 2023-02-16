@@ -182,7 +182,8 @@ Suite au décommissionnement du service par le client, OVHcloud procède à la l
 | --- | --- | --- |
 | OVHcloud | OVHcloud | Opérateur de l'offre certifiée HDS |
 
-**Instances des données de santé**
+**Instances des données de santé** :
+
 | **Code** | **Description** | **Acteur** |
 | --- | --- | --- |
 | RBX1 | Datacenter Roubaix 1 (FR) | OVHcloud |
