@@ -4,6 +4,7 @@ slug: public-cloud-pierwsze-kroki
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi Public Cloud po utworzeniu projektu'
 section: 'Pierwsze kroki'
 order: 1
+updated: 2023-01-26
 ---
 
 **Ostatnia aktualizacja: 26-01-2023**

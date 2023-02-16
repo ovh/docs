@@ -4,6 +4,7 @@ slug: create-volume-from-backup
 excerpt: Cómo crear discos adicionales a partir de una copia de seguridad de un disco adicional
 section: Almacenamiento
 order: 4
+updated: 2021-04-06
 ---
 
 > [!primary]

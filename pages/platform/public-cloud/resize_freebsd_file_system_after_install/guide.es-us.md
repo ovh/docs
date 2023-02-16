@@ -3,6 +3,7 @@ title: Redimensionar el sistema de archivos en FreeBSD 12
 slug: redimensionar-sistema-de-archivos-freebsd-12
 excerpt: Cómo redimensionar el sistema de archivos de una instancia de Public Cloud o de un VPS con FreeBSD 12
 section: Tutoriales
+updated: 2020-10-27
 ---
 
 **Última actualización: 27/10/2020**

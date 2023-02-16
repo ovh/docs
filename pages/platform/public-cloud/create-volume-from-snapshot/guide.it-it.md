@@ -4,6 +4,7 @@ slug: creare-volume-da-backup
 excerpt: Come creare dischi aggiuntivi a partire da un backup di un disco supplementare
 section: Storage
 order: 4
+updated: 2021-04-06
 ---
 
 > [!primary]

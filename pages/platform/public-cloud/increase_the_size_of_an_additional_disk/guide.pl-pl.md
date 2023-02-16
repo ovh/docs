@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak zwiększyć rozmiar dodatkowego wolumenu i powiększ
 slug: zwiekszenie_rozmiaru_dodatkowego_dysku
 order: 6
 section: 'Zarządzanie w Panelu klienta OVH'
+updated: 2022-03-29
 ---
 
 > [!primary]

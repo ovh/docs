@@ -4,6 +4,7 @@ excerpt: Scopri le nozioni di base per iniziare con il Public Cloud OVH
 slug: public-cloud-essenziale-informazione
 section: Per iniziare
 order: 01
+updated: 2022-02-07
 ---
 
 > [!primary]

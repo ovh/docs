@@ -4,6 +4,7 @@ slug: deploy/tuto-streamlit-eda-iris
 excerpt: How to deploy a Streamlit app for interactive data visualization and prediction
 section: AI Deploy - Tutorials
 order: 07
+updated: 2023-01-31
 ---
 
 **Last updated 31st January, 2023.**

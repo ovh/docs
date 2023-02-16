@@ -4,6 +4,7 @@ slug: creer-une-instance-dans-horizon
 excerpt: "Apprenez à créer une instance depuis l'interface Horizon"
 section: Gestion depuis Horizon
 order: 03
+updated: 2022-08-01
 ---
 
 **Dernière mise à jour le 01/08/2022**

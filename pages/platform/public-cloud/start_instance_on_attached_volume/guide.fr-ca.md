@@ -4,6 +4,7 @@ slug: demarrer-une-instance-sur-un-volume-attache
 legacy_guide_number: 2064
 section: Gestion via OpenStack
 order: 9
+updated: 2023-01-11
 ---
 
 

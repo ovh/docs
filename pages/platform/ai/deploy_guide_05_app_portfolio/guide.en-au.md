@@ -4,6 +4,7 @@ slug: deploy/apps-portfolio
 excerpt: A collection of AI apps that can be easily deployed with AI Deploy
 section: AI Deploy - Guides
 order: 05
+updated: 2023-01-31
 ---
 
 **Last updated 31st January, 2023.**

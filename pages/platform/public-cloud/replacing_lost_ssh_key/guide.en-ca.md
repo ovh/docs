@@ -5,6 +5,7 @@ excerpt: 'This guide explains how to configure the authorized_keys file for the 
 legacy_guide_number: g2069
 section: Management via Control Panel
 order: 4
+updated: 2022-02-10
 ---
 
 **Last updated 10th February 2022**

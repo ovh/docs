@@ -3,6 +3,7 @@ title: 'Zmiana typu rozliczenia z godzinowego na miesięczne dla instancji Publi
 excerpt: 'Dowiedz się, jak zmienić typ rozliczenia za instancję Public Cloud'
 slug: zmiana-typu-rozliczenia
 section: 'Zarządzanie projektami'
+updated: 2023-01-23
 ---
 
 **Ostatnia aktualizacja: 23-01-2023**

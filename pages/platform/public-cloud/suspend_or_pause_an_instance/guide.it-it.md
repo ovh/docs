@@ -4,6 +4,7 @@ slug: sospendi_o_metti_in_pausa_unistanza
 legacy_guide_number: g1781
 section: Gestione del progetto
 order: 3
+updated: 2021-09-20
 ---
 
 > [!primary]

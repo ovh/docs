@@ -5,6 +5,7 @@ excerpt: "Découvrez comment gérer vos instances à l'aide du client Python Ope
 legacy_guide_number: 1935
 section: Gestion via OpenStack
 order: 3
+updated: 2022-10-13
 ---
 
 **Dernière mise à jour le 13 Octobre 2022**

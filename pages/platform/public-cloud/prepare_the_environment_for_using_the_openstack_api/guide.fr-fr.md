@@ -5,6 +5,7 @@ excerpt: "Installez l'environnement OpenStack pour piloter vos instances via API
 legacy_guide_number: 1851
 section: 'Gestion via OpenStack'
 order: 1
+updated: 2022-03-30
 ---
 
 **Dernière mise à jour le 30/03/2022**

@@ -4,6 +4,7 @@ slug: training/jobs
 excerpt: Learn the concept behind AI Training jobs
 section: AI Training - Guides
 order: 03
+updated: 2021-05-18
 ---
 
 **Last updated 18th May, 2021.**

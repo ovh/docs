@@ -6,6 +6,7 @@ section: AI Notebooks - Tutoriels
 order: 08
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-speech-to-text-recognition/'
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

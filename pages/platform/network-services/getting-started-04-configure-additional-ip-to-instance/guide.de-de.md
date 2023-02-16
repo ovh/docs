@@ -4,6 +4,7 @@ slug: configure-additional-ip
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre Instanzen einbinden"
 section: Additional IP
 order: 01
+updated: 2023-01-04
 ---
 
 > [!primary]

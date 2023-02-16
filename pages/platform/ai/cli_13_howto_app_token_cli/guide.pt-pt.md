@@ -6,6 +6,7 @@ section: Command Line Interface
 order: 203
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/app-token-cli/'
+updated: 2021-03-25
 ---
 
 **Last updated 25th March, 2021.**

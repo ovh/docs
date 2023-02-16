@@ -4,6 +4,7 @@ excerpt: "Poznaj podstawowe pojęcia, które mogą być przydatne podczas urucha
 slug: public-cloud-essential-information
 section: Pierwsze kroki
 order: 01
+updated: 2022-02-07
 ---
 
 > [!primary]

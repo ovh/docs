@@ -4,6 +4,7 @@ slug: cloud_guthaben_aufladen
 excerpt: 'Erfahren Sie hier, wie Sie Ihrem Public Cloud Projekt Guthaben oder Gutscheine hinzufügen'
 section: 'Projektverwaltung'
 order: 3
+updated: 2022-02-04
 ---
 
 > [!primary]

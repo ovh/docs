@@ -4,6 +4,7 @@ excerpt: Cómo redimensionar una instancia desde el área de cliente de OVHcloud
 slug: resize-an-instance-manager
 section: 'Gestión de las instancias desde el área de cliente'
 order: 6
+updated: 2022-08-24
 ---
 
 > [!primary]

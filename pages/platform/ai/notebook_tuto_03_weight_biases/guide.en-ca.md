@@ -4,6 +4,7 @@ slug: notebooks/tuto-weights-and-biases
 excerpt: How to use wandb in notebooks  
 section: AI Notebooks - Tutorials
 order: 03
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

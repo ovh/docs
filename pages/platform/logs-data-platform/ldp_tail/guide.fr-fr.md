@@ -4,6 +4,7 @@ slug: ldp-tail
 order: 3
 excerpt: This super-powered tail will follow and format your logs with flying colors.
 section: Features
+updated: 2023-01-16
 ---
 
 **Last updated 16th January, 2023**

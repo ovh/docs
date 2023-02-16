@@ -4,6 +4,7 @@ excerpt: Come configurare chiavi SSH aggiuntive per la tua istanza Public Cloud
 slug: configura_chiavi_ssh_aggiuntive
 section: Tutorial
 order: 01
+updated: 2022-02-04
 ---
 
 > [!primary]

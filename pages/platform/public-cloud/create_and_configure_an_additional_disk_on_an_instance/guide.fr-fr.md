@@ -5,6 +5,7 @@ excerpt: 'Découvrez comment attacher un nouveau volume à votre instance Public
 legacy_guide_number: 1863
 section: 'Stockage'
 order: 1
+updated: 2023-02-09
 ---
 
 **Dernière mise à jour le 09/02/2023**

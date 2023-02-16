@@ -6,6 +6,7 @@ section: How to
 order: 7
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/submit-cli/'
+updated: 2022-10-11
 ---
 
 **Last updated 11<sup>th</sup> October, 2022**

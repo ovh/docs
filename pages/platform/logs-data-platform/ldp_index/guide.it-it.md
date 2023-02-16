@@ -6,6 +6,7 @@ excerpt: Send your logs to the platform with the OpenSearch API.
 section: Features
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/ldp-index/'
+updated: 2022-06-13
 ---
 
 **Last updated 13th June, 2022**

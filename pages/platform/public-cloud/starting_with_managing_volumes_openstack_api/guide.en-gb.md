@@ -4,6 +4,7 @@ slug: get-started-with-openstack-api-volumes
 legacy_guide_number: 2071
 section: OpenStack
 order: 7
+updated: 2021-05-19
 ---
 
 **Last updated 19th May 2021**

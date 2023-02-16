@@ -3,6 +3,7 @@ title: Zmiana instancji flex na instancję klasyczną
 slug: zmiana-instancji-flex
 excerpt: Dowiedz się, jak zmienić instancję flex w interfejsie OpenStack Horizon
 section: Zarządzanie w interfejsie Horizon
+updated: 2021-11-15
 ---
 
 > [!primary]

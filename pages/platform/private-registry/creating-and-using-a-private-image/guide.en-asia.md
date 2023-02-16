@@ -4,6 +4,7 @@ slug: creating-and-using-a-private-image
 excerpt: 'Find out how to create and use an image stored in an OVHcloud Managed Private Registry.'
 section: Tutorials
 order: 01
+updated: 2022-04-13
 ---
 
 **Last updated 13th April, 2022.**

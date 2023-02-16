@@ -6,6 +6,7 @@ section: AI Deploy - Guides
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/'
+updated: 2023-01-31
 ---
 
 **Last updated 31st January, 2023.**

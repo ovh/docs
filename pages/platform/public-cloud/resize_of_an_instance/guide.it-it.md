@@ -5,6 +5,7 @@ slug: ridimensiona_unistanza
 legacy_guide_number: g1778
 section: Gestione da Horizon
 order: 08
+updated: 2021-11-22
 ---
 
 > [!primary]

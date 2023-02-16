@@ -3,6 +3,7 @@ title: 'Alterar a palavra-passe de um utilizador OpenStack no Horizon'
 excerpt: 'Saiba como alterar uma palavra-passe de utilizador na interface Horizon'
 slug: alteracao-da-palavra-passe-de-um-utilizador-openstack
 section: Gestão a partir do Horizon
+updated: 2018-03-07
 ---
 
 **Última atualização: 21/05/2018**

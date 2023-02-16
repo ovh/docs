@@ -4,6 +4,7 @@ excerpt: 'Saiba como criar um grupo de segurança e configurá-lo numa instânci
 slug: configure-security-group-horizon
 legacy_guide_number: g1925
 section: Gestão a partir do Horizon
+updated: 2021-08-24
 ---
 
 > [!primary]

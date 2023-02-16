@@ -4,6 +4,7 @@ excerpt: Find out some basic tips to get started in the Public Cloud environment
 slug: public-cloud-essential-information
 section: Getting started
 order: 01
+updated: 2022-02-07
 ---
 
 **Last updated 7th February 2022**

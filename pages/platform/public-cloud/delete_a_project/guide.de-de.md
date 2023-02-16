@@ -3,6 +3,7 @@ title: 'Ein Public Cloud Projekt löschen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Public Cloud Projekt löschen'
 slug: delete_a_project
 section: 'Projektverwaltung'
+updated: 2022-10-14
 ---
 
 **Letzte Aktualisierung am 14.10.2022**

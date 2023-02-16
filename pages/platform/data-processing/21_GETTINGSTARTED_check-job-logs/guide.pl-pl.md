@@ -6,6 +6,7 @@ section: Getting started
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/data-processing/check-logs/'
+updated: 2021-07-14
 ---
 
 **Last updated 14<sup>th</sup> July, 2021**

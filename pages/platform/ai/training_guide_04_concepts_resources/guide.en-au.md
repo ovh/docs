@@ -4,6 +4,7 @@ slug: training/resources
 excerpt: Learn the resources provided by AI Training jobs
 section: AI Training - Guides
 order: 04
+updated: 2021-05-03
 ---
 
 **Last updated 3rd May, 2021.**

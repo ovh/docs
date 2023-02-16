@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/ca/en/vps/resetting-a-windows-password-vps'
 excerpt: 'Guide to resetting a Windows password'
 section: Tutorials
+updated: 2020-11-25
 ---
 
 **Last updated 25th November 2020**

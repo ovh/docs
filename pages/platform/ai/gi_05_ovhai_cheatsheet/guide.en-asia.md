@@ -4,6 +4,7 @@ slug: cheat-sheet
 excerpt: Find all the useful commands for OVHcloud AI Training ovhai CLI
 section: General information
 order: 107
+updated: 2022-03-14
 ---
 
 **Last updated 14th March, 2022.**

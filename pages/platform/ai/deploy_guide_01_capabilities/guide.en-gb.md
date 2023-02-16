@@ -4,6 +4,7 @@ slug: deploy/capabilities
 excerpt: Discover the capabilities and limitations of AI Deploy
 section: AI Deploy - Guides
 order: 01
+updated: 2022-12-08
 ---
 
 **Last updated 8th December, 2022.**

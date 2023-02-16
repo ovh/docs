@@ -5,6 +5,7 @@ order: 09
 section: Use cases
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/bonfire/'
+updated: 2020-07-27
 ---
 
 **Last updated 27th July, 2020**

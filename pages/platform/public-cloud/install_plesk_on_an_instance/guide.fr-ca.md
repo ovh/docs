@@ -3,6 +3,7 @@ title: 'Installer Plesk sur une instance'
 slug: installer-plesk-sur-une-instance
 excerpt: 'Apprenez à mettre en place Plesk sur votre instance Public Cloud'
 section: Tutoriels
+updated: 2018-03-26
 ---
 
 **Dernière mise à jour le 26/03/2018**

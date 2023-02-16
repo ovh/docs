@@ -4,6 +4,7 @@ excerpt: Find out how to manage your instances using the Python OpenStack client
 slug: starting-with-nova-api
 section: OpenStack
 order: 3
+updated: 2022-10-13
 ---
 
 **Last updated 13th October 2022**

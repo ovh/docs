@@ -4,6 +4,7 @@ slug: users
 excerpt: Learn the concept behind AI Training users
 section: General information
 order: 104
+updated: 2021-03-01
 ---
 
 **Last updated 1st March, 2021.**

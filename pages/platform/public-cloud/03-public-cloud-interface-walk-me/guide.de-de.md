@@ -4,6 +4,7 @@ excerpt: "Erfahren Sie hier, wie Sie das Public Cloud Interface verwenden"
 slug: public-cloud-interface
 section: Erste Schritte
 order: 03
+updated: 2021-12-06
 ---
 
 > [!primary]

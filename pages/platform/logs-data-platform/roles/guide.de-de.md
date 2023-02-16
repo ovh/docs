@@ -6,6 +6,7 @@ excerpt: Manage who can have access to your data and what they can do with them.
 section: Features
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/roles/'
+updated: 2022-07-28
 ---
 
 **Last updated July 28th, 2022**

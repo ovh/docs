@@ -4,6 +4,7 @@ excerpt: Find out how to change the contacts of a Public Cloud project
 slug: change_project_contacts
 section: Project management
 order: 6
+updated: 2022-04-04
 ---
 
 **Last updated 4th April 2022**

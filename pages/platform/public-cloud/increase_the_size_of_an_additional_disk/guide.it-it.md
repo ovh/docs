@@ -4,6 +4,7 @@ excerpt: Come aumentare la dimensione di un volume aggiuntivo e aumentare la sua
 slug: aumenta_la_spazio_del_tuo_disco_aggiuntivo
 order: 6
 section: Storage
+updated: 2022-03-29
 ---
 
 > [!primary]

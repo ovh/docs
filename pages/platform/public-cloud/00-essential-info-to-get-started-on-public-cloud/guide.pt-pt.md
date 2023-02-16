@@ -4,6 +4,7 @@ excerpt: "Descubra as noções de base úteis para começar no ambiente Public C
 slug: public-cloud-principalmente-informacao
 section: Introdução
 order: 01
+updated: 2022-02-07
 ---
 
 > [!primary]

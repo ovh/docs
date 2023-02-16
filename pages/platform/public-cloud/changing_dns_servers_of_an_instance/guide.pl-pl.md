@@ -5,6 +5,7 @@ slug: zmiana_serwerow_dns_instancji
 legacy_guide_number: g1985
 section: Sieć
 order: 4
+updated: 2021-10-29
 ---
 
 > [!primary]

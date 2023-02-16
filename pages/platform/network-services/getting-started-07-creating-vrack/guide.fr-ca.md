@@ -4,6 +4,7 @@ excerpt: 'Découvrez comment configurer un vRack Public Cloud'
 slug: public-cloud-vrack
 section: Premiers pas
 order: 07
+updated: 2023-01-10
 ---
 
 **Dernière mise à jour le 10/01/2023**

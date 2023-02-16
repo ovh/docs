@@ -4,6 +4,7 @@ slug: notebooks/debug-notebooks
 excerpt: Tutorial about how to debug your notebooks
 section: AI Notebooks - Guides
 order: 05
+updated: 2022-04-14
 ---
 
 **Last updated 14th April, 2022.**

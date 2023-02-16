@@ -4,6 +4,7 @@ slug: changelog-images
 excerpt:  Découvrez les modifications apportées dans les images fournies sur les solutions Public Cloud et VPS
 section: 'Informations générales'
 order: 03
+updated: 2021-02-09
 ---
 
 **Dernière mise à jour le 18/01/2020**

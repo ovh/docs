@@ -4,6 +4,7 @@ excerpt: Find out how to configure the SNAT service on Public CLoud
 slug: l3-services-snat-configuration
 section: Configuration
 order: 01
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

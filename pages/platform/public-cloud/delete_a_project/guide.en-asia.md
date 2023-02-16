@@ -4,6 +4,7 @@ slug: delete_a_project
 excerpt: 'Find out how to delete a Public Cloud project'
 section: Project management
 order: 1
+updated: 2022-10-14
 ---
 
 **Last updated 14th October 2022**

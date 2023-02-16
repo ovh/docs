@@ -6,6 +6,7 @@ section: 'Getting started'
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/managing-users-and-projects/'
+updated: 2022-04-13
 ---
 
 **Last updated 13th April, 2022.**
