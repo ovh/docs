@@ -230,7 +230,7 @@ $ cat Documents/logging_disable.json
 {}
 ```
 
-Ensuite, configurez les paramètres de journalisation du bucket avec ce fichier de configuration vide:
+Ensuite, configurer les paramètres de journalisation du bucket avec ce fichier de configuration vide:
 
 ```
 $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://logging_disable.json
