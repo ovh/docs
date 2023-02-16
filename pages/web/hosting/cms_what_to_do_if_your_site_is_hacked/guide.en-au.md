@@ -4,6 +4,7 @@ excerpt: "Learn our tips for repairing your hacked website"
 slug: what_to_do_if_your_wordpress_site_is_hacked
 section: "Tutorials"
 order: 01
+updated: 2022-11-15
 ---
 
 **Last updated 15th November 2022**

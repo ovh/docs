@@ -4,6 +4,7 @@ slug: site-unsafe-connection
 excerpt: How to react to a security error message on your website
 section: Troubleshooting
 order: 03
+updated: 2021-07-08
 ---
 
 **Last updated 08/07/2021**

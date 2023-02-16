@@ -4,6 +4,7 @@ slug: securiser-votre-domaine-avec-dnssec
 excerpt: 'Protégez votre nom de domaine du Cache Poisoning en activant le DNSSEC'
 section: 'Protection et sécurité'
 order: 01
+updated: 2022-10-19
 ---
 
 **Dernière mise à jour le 19/10/2022**

@@ -4,6 +4,7 @@ slug: zmiana-hasla-do-konta-email
 excerpt: 'Dowiedz się, jak zmienić hasło do konta e-mail OVHcloud'
 section: 'Pierwsze kroki'
 order: 03
+updated: 2023-01-03
 ---
 
 **Ostatnia aktualizacja z dnia 03-01-2023**

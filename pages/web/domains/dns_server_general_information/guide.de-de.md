@@ -4,6 +4,7 @@ slug: webhosting_allgemeine_informationen_zu_den_dns_servern
 excerpt: 'Erfahren Sie hier, wie Sie DNS-Server im OVHcloud Kundencenter bearbeiten'
 section: 'DNS und DNS-Zone'
 order: 01
+updated: 2021-02-18
 ---
 
 > [!primary]

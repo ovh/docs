@@ -4,6 +4,7 @@ slug: transfer_wychodzacy_domeny_couk
 excerpt: "Dowiedz się, jak wykonać transfer domeny wychodzącej z domeny UK do innego operatora"
 section: Transfer
 order: 05
+updated: 2022-10-19
 ---
 
 > [!primary]

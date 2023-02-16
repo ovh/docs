@@ -4,6 +4,7 @@ slug: posteingangsregeln-in-owa-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail-Weiterleitungen und Eingangsfilter in OWA verwenden'
 section: 'Outlook Web App (OWA)'
 order: 05
+updated: 2020-03-11
 ---
 
 **Letzte Aktualisierung am 11.03.2020**

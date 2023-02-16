@@ -4,6 +4,7 @@ slug: exchange-outlook-lizenz
 excerpt: Erfahren Sie hier, wie Sie eine Outlook-Lizenz für Ihr OVHcloud Exchange bestellen und aktivieren
 section: Office
 order: 01
+updated: 2022-10-05
 ---
 
 > [!primary]

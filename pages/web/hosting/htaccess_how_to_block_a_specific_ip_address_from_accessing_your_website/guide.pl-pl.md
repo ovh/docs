@@ -4,6 +4,7 @@ slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 excerpt: "Odkryj operacje możliwe przy użyciu pliku .htaccess, w celu zablokowania dostępu do Twojej strony WWW dla niektórych adresów IP"
 section: Przekierowania i uprawnienia dostępu
 order: 01
+updated: 2022-09-12
 ---
 
 **Ostatnia aktualizacja z dnia 12-09-2022**

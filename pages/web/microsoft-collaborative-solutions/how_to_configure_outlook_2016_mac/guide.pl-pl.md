@@ -4,6 +4,7 @@ slug: konfiguracja-outlook-2016-mac
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange w programie Outlook 2016 na urządzeniu Mac'
 section: 'Konfiguracja komputerowa'
 order: 02
+updated: 2018-06-01
 ---
 
 **Ostatnia aktualizacja dnia 2018-03-28**

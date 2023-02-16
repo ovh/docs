@@ -4,6 +4,7 @@ slug: przeniesienie-strony-www-do-ovh
 excerpt: "Dowiedz się, jak migrować Twoją stronę WWW, konta e-mail i domenę do OVHcloud bez przerwy w dostępności usług"
 section: Pierwsze kroki
 order: 08
+updated: 2022-11-24
 ---
 
 **Ostatnia aktualizacja z dnia 2022-11-24**

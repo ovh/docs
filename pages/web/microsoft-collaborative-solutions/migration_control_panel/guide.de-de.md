@@ -4,6 +4,7 @@ slug: migration-e-mail-adresse-auf-exchange
 excerpt: 'Erfahren Sie hier, wie Sie einen MX Plan E-Mail-Account zu E-Mail Pro oder Exchange umziehen'
 section: Account-Migration
 order: 02
+updated: 2022-11-22
 ---
 
 **Letzte Aktualisierung am 22.11.2022**

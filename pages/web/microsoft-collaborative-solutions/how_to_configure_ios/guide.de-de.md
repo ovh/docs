@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account via Mail App auf ein
 slug: exchange_20132016_automatische_konfiguration_in_ios_iphone_-_ipad
 section: Konfiguration auf Smartphone/Tablet
 order: 03
+updated: 2021-05-21
 ---
 
 > [!primary]

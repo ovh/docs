@@ -4,6 +4,7 @@ slug: mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh
 excerpt: Apprenez à ajouter un champ MX à votre nom de domaine chez OVHcloud
 section: DNS et zone DNS
 order: 04
+updated: 2018-05-30
 ---
 
 **Dernière mise à jour le 21/09/2022**

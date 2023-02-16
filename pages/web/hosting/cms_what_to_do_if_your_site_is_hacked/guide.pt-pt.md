@@ -4,6 +4,7 @@ excerpt: "Descubra os nossos conselhos para reparar o seu website pirateado"
 slug: piratagem_do_seu_website_wordpress_conselhos_e_casos_praticos
 section: "Tutoriais"
 order: 01
+updated: 2022-11-15
 ---
 
 **Última atualização: 15/11/2022**

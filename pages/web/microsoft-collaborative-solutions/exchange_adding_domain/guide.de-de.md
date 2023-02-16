@@ -4,6 +4,7 @@ slug: domain-zu-exchange-hinzufugen
 excerpt: "Erfahren Sie hier, wie Sie einen Domainnamen zu Ihrer Exchange Lösung hinzufügen"
 section: 'Erste Schritte mit Exchange'
 order: 04
+updated: 2022-10-07
 ---
 
 > [!primary]

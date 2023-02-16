@@ -4,6 +4,7 @@ slug: creare-database
 excerpt: 'Come creare un database sul tuo hosting Web OVHcloud'
 section: Database
 order: 01
+updated: 2022-02-03
 ---
 
 **Ultimo aggiornamento 03/02/2022**

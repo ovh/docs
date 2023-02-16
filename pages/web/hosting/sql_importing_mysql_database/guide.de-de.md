@@ -4,6 +4,7 @@ excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank 
 slug: webhosting_import_einer_mysql-datenbank
 section: 'Datenbanken'
 order: 04
+updated: 2018-09-25
 ---
  
 **Stand 14.09.2018**

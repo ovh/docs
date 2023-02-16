@@ -4,6 +4,7 @@ excerpt: 'Find out how to retrieve a database backup from your OVHcloud Web Host
 slug: web_hosting_database_export_guide
 section: Databases
 order: 03
+updated: 2018-05-19
 ---
 
 **Last updated 15th June 2018**

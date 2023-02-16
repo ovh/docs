@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się więcej o systemach CMS kompatybilnych z hostingiem WWW'
 slug: hosting_www_reczna_instalacja_modulu_cms
 section: CMS
 order: 03
+updated: 2020-02-04
 ---
 
 **Ostatnia aktualizacja: 04-02-2020**

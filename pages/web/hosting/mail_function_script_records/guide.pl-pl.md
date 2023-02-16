@@ -4,6 +4,7 @@ slug: hosting_www_monitorowanie_automatycznych_e-maili
 excerpt: "Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVHcloud"
 section: Diagnostyka
 order: 10
+updated: 2022-10-12
 ---
 
 **Ostatnia aktualizacja dnia 2022-10-12**

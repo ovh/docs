@@ -5,6 +5,7 @@ excerpt: 'Découvrez comment migrer une adresse e-mail MX Plan vers un compte Ex
 section: 'Migration de comptes'
 order: 02
 hidden: true
+updated: 2022-11-22
 ---
 
 **Dernière mise à jour le 22/11/2022**

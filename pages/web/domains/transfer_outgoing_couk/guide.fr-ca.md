@@ -4,6 +4,7 @@ slug: transfert-sortant-dun-nom-de-domaine-couk
 excerpt: "Découvrez comment effectuer le transfert sortant d’un nom de domaine UK vers un autre registrar"
 section: Transfert
 order: 05
+updated: 2022-10-19
 ---
 
 **Dernière mise à jour le 19/10/2022**

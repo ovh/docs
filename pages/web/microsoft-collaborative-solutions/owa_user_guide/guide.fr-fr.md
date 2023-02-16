@@ -4,6 +4,7 @@ slug: exchange-2016-guide-utilisation-outlook-web-app
 excerpt: 'Retrouvez ici le detail concernant Outlook Web App'
 section: "Utilisation d'Outlook Web Application (OWA)"
 order: 01
+updated: 2021-06-25
 ---
 
 **Dernière mise à jour le 25/06/2021**

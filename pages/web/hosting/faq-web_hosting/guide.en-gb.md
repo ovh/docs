@@ -4,6 +4,7 @@ excerpt: Find the answers to the most frequently asked questions about OVHcloud 
 slug: web-hosting-faq
 section: Getting started
 order: 05
+updated: 2022-11-28
 ---
 
 **Last updated 28th November 2022**

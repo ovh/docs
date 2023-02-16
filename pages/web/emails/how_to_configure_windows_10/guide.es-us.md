@@ -4,6 +4,7 @@ slug: configuracion-correo-windows-10
 excerpt: 'Cómo configurar una cuenta de correo electrónico en la aplicación Correo de Windows'
 section: Configuración en el ordenador
 order: 06
+updated: 2018-04-04
 ---
 
 **Última actualización: 05/05/2020**

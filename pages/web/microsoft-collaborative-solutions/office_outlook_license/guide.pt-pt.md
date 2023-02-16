@@ -4,6 +4,7 @@ slug: exchange_2013_guia_das_licencas_outlook_exchange_2013
 excerpt: Saiba como subscrever uma licença Outlook a partir da plataforma Exchange OVHcloud e instalar
 section: Office
 order: 01
+updated: 2022-10-05
 ---
 
 > [!primary]

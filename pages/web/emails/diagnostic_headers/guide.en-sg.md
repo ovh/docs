@@ -4,6 +4,7 @@ slug: shared_mail_guide_to_view_email_headers
 excerpt: Find out how to view headers in your email client
 section: 'Troubleshooting'
 order: 03
+updated: 2021-11-19
 ---
 
 <style>

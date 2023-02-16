@@ -4,6 +4,7 @@ slug: configuracao-outlook-2016
 excerpt: 'Saiba como configurar uma conta Exchange no Outlook para Windows'
 section: 'Configuração no computador'
 order: 01
+updated: 2021-07-05
 ---
  
 > [!primary]

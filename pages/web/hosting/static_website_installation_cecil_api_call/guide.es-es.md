@@ -4,6 +4,7 @@ slug: static-site-generator-cecil-use-api
 excerpt: "Cómo añadir una llamada a una API externa desde la página web estática"
 section: 'Tutoriales'
 order: 05
+updated: 2023-01-16
 ---
 
 > [!primary]

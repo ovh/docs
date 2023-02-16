@@ -4,6 +4,7 @@ slug: exchange_2013_przyznanie_uprawnien_full_access
 excerpt: 'Dowiedz się, jak zezwolić innym osobom na zarządzanie skrzynką e-mail'
 section: 'Funkcje kont Exchange'
 order: 03
+updated: 2020-10-24
 ---
 
 **Ostatnia aktualizacja z dnia 24/10/2020**

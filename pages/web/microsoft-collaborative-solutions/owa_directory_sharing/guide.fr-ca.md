@@ -4,6 +4,7 @@ slug: exchange-2016-partager-un-dossier-via-le-webmail-owa
 excerpt: Retrouvez ici la procedure de partage d’un dossier depuis votre compte Exchange 
 section: Utilisation d'Outlook Web Application (OWA)
 order: 04
+updated: 2020-04-07
 ---
 **Dernière mise à jour le 07/04/2020**
 

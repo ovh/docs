@@ -4,6 +4,7 @@ slug: konfiguracja-poczta-windows-10
 excerpt: 'Dowiedz się, jak skonfigurować Twoje konto e-mail MX Plan w aplikacji Poczta na urządzeniu z systemem Windows 10'
 section: Konfiguracja na komputerze
 order: 06
+updated: 2018-04-04
 ---
 
 **Ostatnia aktualizacja dnia 2018-04-04**

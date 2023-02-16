@@ -4,6 +4,7 @@ excerpt: Encuentre las respuestas a las preguntas más frecuentes sobre alojamie
 slug: faq-web-hosting
 section: Primeros pasos
 order: 05
+updated: 2022-11-28
 ---
 
 > [!primary]

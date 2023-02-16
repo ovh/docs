@@ -4,6 +4,7 @@ slug: partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao
 excerpt: "Encontre aqui como proteger o acesso à administração do seu site com um ficheiro .htaccess"
 section: Reescrita e autenticação
 order: 02
+updated: 2021-09-20
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: mail-konfiguration-windows-10
 excerpt: 'Hier erfahren Sie, wie Sie Ihren Exchange Account auf der Mail App von Windows 10 einrichten.'
 section: Konfiguration auf computer
 order: 03
+updated: 2018-04-04
 ---
 
 **Stand 29.08.2018**

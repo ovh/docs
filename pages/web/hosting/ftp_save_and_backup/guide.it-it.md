@@ -4,6 +4,7 @@ excerpt: 'Come recuperare un file o l’intero contenuto dello spazio di storage
 slug: web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla
 section: 'FTP e SSH'
 order: 06
+updated: 2023-01-12
 ---
 
 > [!primary]

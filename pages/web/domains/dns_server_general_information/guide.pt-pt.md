@@ -4,6 +4,7 @@ slug: partilhado_generalidades_sobre_os_servidores_dns
 excerpt: 'Saiba como alterar os servidores DNS do seu nome de domínio OVHcloud'
 legacy_guide_number: g2015
 section: DNS e zona DNS
+updated: 2021-02-18
 ---
 
 > [!primary]

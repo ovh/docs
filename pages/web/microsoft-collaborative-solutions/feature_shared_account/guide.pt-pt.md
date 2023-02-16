@@ -4,6 +4,7 @@ slug: exchange-utilizacao-das-contas-partilhas
 excerpt: Adicionar e utilizar uma conta partilhada na sua oferta E-mail Exchange
 section: Funcionalidades das contas Exchange
 order: 06
+updated: 2021-06-15
 ---
 
 **Última atualização: 15/06/2021**

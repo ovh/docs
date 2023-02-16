@@ -4,6 +4,7 @@ excerpt: Come caricare il tuo sito online, quando visualizza una pagina « Index
 slug: diagnostic-index-of
 section: Diagnostica
 order: 07
+updated: 2022-05-10
 ---
 
 > [!primary]

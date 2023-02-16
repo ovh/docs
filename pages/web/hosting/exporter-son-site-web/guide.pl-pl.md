@@ -4,6 +4,7 @@ slug: eksportowanie-witryna-internetowa
 excerpt: 'Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud'
 section: 'Pierwsze kroki'
 order: 04
+updated: 2022-02-03
 ---
 
 **Ostatnia aktualizacja z dnia 03-02-2022**

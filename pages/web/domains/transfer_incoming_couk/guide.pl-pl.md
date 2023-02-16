@@ -4,6 +4,7 @@ slug: uslugi_www_transfer_domeny_couk
 excerpt: 'W tym przewodniku znajdziesz różne informacje dotyczące transferu domeny .uk lub podobnej do OVHcloud'
 section: Transfer
 order: 04
+updated: 2022-10-19
 ---
 
 > [!primary]

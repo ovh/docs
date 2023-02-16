@@ -4,6 +4,7 @@ slug: mail-konfiguration-iphone-ios-91
 excerpt: 'Erfahren Sie hier, wie Sie eine MX Plan Adresse auf iPhone oder iPad einrichten'
 section: 'E-Mail Clients'
 order: 7
+updated: 2022-07-20
 ---
 
 > [!primary]

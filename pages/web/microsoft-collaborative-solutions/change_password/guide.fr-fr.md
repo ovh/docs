@@ -6,6 +6,7 @@ section: 'Premiers pas avec Exchange'
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email'
+updated: 2023-01-03
 ---
 
 **Dernière mise à jour le 03/01/2023**

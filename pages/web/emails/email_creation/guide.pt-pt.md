@@ -5,6 +5,7 @@ slug: e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail
 legacy_guide_number: g1343
 section: Introdução
 order: 02
+updated: 2022-10-11
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: exchange_20132016_anadir_un_registro_cname
 excerpt: 'Cómo y por qué añadir un registro CNAME a un dominio'
 section: 'Primeros pasos con Exchange'
 order: 05
+updated: 2019-03-26
 ---
 
 **Última actualización: 26/03/2019**

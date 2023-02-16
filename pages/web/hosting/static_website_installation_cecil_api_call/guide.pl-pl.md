@@ -4,6 +4,7 @@ slug: static-site-generator-cecil-use-api
 excerpt: "Dowiedz się, jak dodać połączenie do zewnętrznego API na stronie statycznej WWW"
 section: 'Tutoriale'
 order: 05
+updated: 2023-01-16
 ---
 
 > [!primary]

@@ -5,6 +5,7 @@ excerpt: 'Decouvrez dans ce guide comment utiliser les listes de diffusion.'
 section: 'Fonctionnalités des adresses e-mail'
 order: 4
 hidden: true
+updated: 2020-03-19
 ---
 
 **Dernière mise à jour le 05/05/2020**

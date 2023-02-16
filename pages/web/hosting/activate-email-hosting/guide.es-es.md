@@ -4,6 +4,7 @@ slug: activar-correo-hosting-web
 excerpt: 'Cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web'
 section: 'Primeros pasos'
 order: 07
+updated: 2022-11-18
 ---
 
 **Última actualización: 17/08/2020**

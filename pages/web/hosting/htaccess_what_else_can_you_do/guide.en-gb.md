@@ -4,6 +4,7 @@ excerpt: Find out what else you can do with the .htaccess file
 slug: what_else_can_you_do_with_the_htaccess_file
 section: Rewriting and authentication
 order: 04
+updated: 2022-10-05
 ---
 
 

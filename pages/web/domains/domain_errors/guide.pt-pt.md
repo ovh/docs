@@ -3,6 +3,7 @@ title: 'Resolver um erro num domínio'
 slug: domain-errors
 section: Tarefas correntes
 order: 02
+updated: 2022-09-01
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: modifier-mot-de-passe-utilisateur-ftp
 excerpt: "Apprenez à changer le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud"
 section: 'FTP et SSH'
 order: 03
+updated: 2022-08-18
 ---
 
 **Dernière mise à jour le 24/01/2022**

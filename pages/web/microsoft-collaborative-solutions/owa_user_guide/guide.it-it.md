@@ -4,6 +4,7 @@ excerpt: 'Scopri come gestire il tuo indirizzo Exchange utilizzando la Webmail O
 slug: exchange_2016_guida_allutilizzo_di_outlook_web_app
 section: 'Utilizzo di Outlook Web App (OWA)'
 order: 01
+updated: 2021-06-25
 ---
 
 **Ultimo aggiornamento: 25/06/2021**

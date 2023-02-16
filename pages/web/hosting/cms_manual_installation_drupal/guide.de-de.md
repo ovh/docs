@@ -4,6 +4,7 @@ excerpt: Wie funktioniert die manuelle Installation von Drupal?
 slug: cms_manuelle_installation_von_drupal
 section: CMS
 order: 07
+updated: 2022-12-01
 ---
 
 

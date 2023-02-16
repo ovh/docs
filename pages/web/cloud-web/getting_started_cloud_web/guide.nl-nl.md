@@ -4,6 +4,7 @@ title: Aan de slag met een Cloud Web hostingplan
 slug: eerste-stappen-met-cloud-web
 excerpt: Ontdek hoe u kunt starten met een Cloud Web webhostingplan
 section: Eerste stappen
+updated: 2022-05-04
 ---
 
 **Laatste update 11-07-2018**

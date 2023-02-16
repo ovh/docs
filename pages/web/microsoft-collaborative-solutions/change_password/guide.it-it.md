@@ -6,6 +6,7 @@ section: 'Iniziare a utilizzare Exchange'
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/it/emails/modificare-password-account-email-mxplan/'
+updated: 2023-01-03
 ---
 
 **Ultimo aggiornamento: 03/01/2023**

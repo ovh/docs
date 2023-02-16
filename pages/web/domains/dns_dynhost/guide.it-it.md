@@ -4,6 +4,7 @@ slug: hosting_condiviso_dynhost
 excerpt: 'Come impostare un record DNS dinamico (DynHost) sul tuo dominio OVHcloud'
 section: 'DNS e zona DNS'
 order: 06
+updated: 2018-07-19
 ---
 
 **Ultimo aggiornamento: 08/03/2019**

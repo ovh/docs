@@ -3,6 +3,7 @@ title: Korzystanie z usługi SSL Gateway
 slug: korzystanie-ssl-gateway
 legacy_guide_number: 2370
 excerpt: Zabezpiecz połączenie z Twoja stroną internetową
+updated: 2022-12-01
 ---
 
 ## Wprowadzenie

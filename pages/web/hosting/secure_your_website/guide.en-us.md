@@ -4,6 +4,7 @@ excerpt: Learn how to make your website more secure
 slug: secure-website
 section: Optimise your website
 order: 01
+updated: 2021-12-10
 ---
 
 **Last updated 10th December 2021**

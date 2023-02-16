@@ -4,6 +4,7 @@ slug: konfiguration-outlook-2016
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Outlook für Windows einrichten'
 section: 'E-Mail Clients'
 order: 3
+updated: 2021-06-05
 ---
 
 

@@ -4,6 +4,7 @@ slug: web_hosting_how_to_edit_my_dns_zone
 excerpt: 'Find out how to edit an OVHcloud DNS zone via the OVHcloud Control Panel'
 section: 'DNS and DNS Zone'
 order: 03
+updated: 2022-07-07
 ---
 
 **Last updated 7th July 2022**

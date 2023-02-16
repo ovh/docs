@@ -5,6 +5,7 @@ legacy_guide_number: 1297
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Thunderbird für Windows einrichten'
 section: 'E-Mail Clients'
 order: 10
+updated: 2021-08-26
 ---
 
 > [!primary]

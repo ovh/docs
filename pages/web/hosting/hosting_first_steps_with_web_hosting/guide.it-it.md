@@ -4,6 +4,7 @@ excerpt: Come eseguire le prime operazioni su un hosting Web
 slug: configura_il_tuo_hosting_web
 section: Per iniziare
 order: 02
+updated: 2022-11-11
 ---
 
 **Ultimo aggiornamento: 14/11/2022**

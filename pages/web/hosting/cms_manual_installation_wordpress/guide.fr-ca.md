@@ -4,6 +4,7 @@ slug: installer-manuellement-wordpress
 excerpt: "Découvrez comment installer manuellement votre CMS WordPress"
 section: CMS
 order: 04
+updated: 2022-11-16
 ---
 
 **Dernière mise à jour le 15/11/2022**

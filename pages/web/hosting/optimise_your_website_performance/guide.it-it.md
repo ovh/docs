@@ -4,6 +4,7 @@ excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
 slug: web_hosting_ottimizza_le_performance_del_tuo_sito
 section: Ottimizza il tuo sito
 order: 06
+updated: 2022-02-03
 ---
 
 **Ultimo aggiornamento: 03/02/2022**

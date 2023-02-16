@@ -3,6 +3,7 @@ title: "Recuperar o backup do espaço FTP do seu alojamento Cloud Web"
 slug: backup_ftp_cloud_web
 section: Backups
 order: 01
+updated: 2022-09-13
 ---
 
 **Última atualização: 13/09/2022**

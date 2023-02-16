@@ -5,6 +5,7 @@ slug: deleguer-gestion-emails-autre-identifiant
 excerpt: 'Ce guide vous aidera a deleguer la gestion de vos emails a un autre identifiant OVHcloud.'
 section: 'Fonctionnalités des adresses e-mail'
 order: 05
+updated: 2021-10-08
 ---
 
 **Dernière mise à jour le 05/05/2020**

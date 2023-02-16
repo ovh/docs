@@ -4,6 +4,7 @@ excerpt: 'Hosting condiviso: attiva un firewall applicativo'
 slug: hosting_condiviso_attiva_un_firewall_applicativo
 section: Configurazione dell’hosting
 order: 04
+updated: 2021-04-26
 ---
 
 > [!primary]

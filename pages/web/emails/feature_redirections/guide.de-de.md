@@ -5,6 +5,7 @@ slug: webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung
 section: 'E-Mail Account Funktionen'
 order: 01
 legacy_guide_number: g2001
+updated: 2020-05-20
 ---
 
 **Letzte Aktualisierung am 20.05.2020**

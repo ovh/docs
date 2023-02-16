@@ -3,6 +3,7 @@ title: Verwendung von SSL Gateway
 slug: verwendung-von-ssl-gateway
 legacy_guide_number: 2370
 excerpt: Sichern Sie die Verbindungen zu Ihrer Website
+updated: 2022-12-01
 ---
 
 

@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panel
 slug: 1-click-module-management
 section: CMS
 order: 02
+updated: 2022-09-05
 ---
 
 > [!primary]

@@ -5,6 +5,7 @@ slug: web_hosting_optimise_your_website_performance
 legacy_guide_number: g1396
 section: Optimise your website
 order: 06
+updated: 2022-02-03
 ---
 
 **Last updated 3rd February 2022**

@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak przywrócić Twoją stronę WWW online, gdy wyświetl
 slug: diagnostyka-403-forbidden
 section: Diagnostyka
 order: 08
+updated: 2022-06-16
 ---
 
 > [!primary]

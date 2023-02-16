@@ -5,6 +5,7 @@ legacy_guide_number: 1973
 excerpt: Saiba como criar e configurar um filtro no seu endereço de e-mail
 section: Funcionalidades dos endereços e-mail
 order: 04
+updated: 2021-09-27
 ---
 
 > [!primary]

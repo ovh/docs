@@ -4,6 +4,7 @@ slug: ovhconfig-datei-konfigurieren
 excerpt: 'In dieser Anleitung erfahren Sie, wozu die .ovhconfig-Datei verwendet wird und wie Sie diese bearbeiten.'
 section: 'Webhosting-Konfiguration'
 order: 03
+updated: 2019-01-03
 ---
 
 **Stand 03.01.2019** 

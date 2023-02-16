@@ -4,6 +4,7 @@ excerpt: 'Partilhado: ativação da firewall'
 slug: partilhado_ativacao_da_firewall
 section: Configuração do alojamento
 order: 04
+updated: 2021-04-26
 ---
 
 > [!primary]

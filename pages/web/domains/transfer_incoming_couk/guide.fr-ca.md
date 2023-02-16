@@ -4,6 +4,7 @@ slug: transferer-domaine-couk
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine .uk ou assimilé vers OVHcloud'
 section: Transfert
 order: 04
+updated: 2022-10-19
 ---
 
 **Dernière mise à jour le 19/10/2022**

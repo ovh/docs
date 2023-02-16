@@ -4,6 +4,7 @@ slug: erreur-serveur-inaccessible
 excerpt: "Diagnostiquez les causes de l'inaccessibilité de votre site"
 section: Diagnostic
 order: 01
+updated: 2022-08-02
 ---
 
 **Dernière mise à jour le 02/08/2022**

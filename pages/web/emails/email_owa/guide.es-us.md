@@ -4,6 +4,7 @@ slug: uso-outlook-en-la-web
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
 section: 'Primeros pasos'
 order: 04
+updated: 2020-02-25
 ---
 
 **Última actualización: 30/08/2021**

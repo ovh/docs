@@ -4,6 +4,7 @@ slug: exportar-un-sitio-web
 excerpt: 'Cómo exportar un sitio web de OVHcloud'
 section: 'Primeros pasos'
 order: 04
+updated: 2022-02-03
 ---
 
 **Última actualización: 19/01/2022**

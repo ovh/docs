@@ -4,6 +4,7 @@ slug: partilhado_guia_de_utilizacao_do_filezilla
 excerpt: "Encontre aqui um tutorial para a utilização do software Filezilla no seu alojamento partilhado"
 section: FTP e SSH
 order: 01
+updated: 2022-09-13
 ---
 
 **Última atualização: 13/09/2022**

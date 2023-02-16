@@ -4,6 +4,7 @@ excerpt: Find out how to move UK domain names from OVHcloud to a provider of you
 slug: outgoing_couk_domain_name_transfer
 section: Transfer
 order: 05
+updated: 2022-10-19
 ---
 
 **Last updated 19th October 2022**

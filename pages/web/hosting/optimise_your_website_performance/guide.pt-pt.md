@@ -4,6 +4,7 @@ excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
 slug: partilhado_guia_de_otimizacao_das_performances_do_seu_site
 section: Otimizar o seu site
 order: 06
+updated: 2022-02-03
 ---
 
 **Última atualização: 03/02/2022**

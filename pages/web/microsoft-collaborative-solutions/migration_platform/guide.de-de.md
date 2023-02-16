@@ -4,6 +4,7 @@ slug: migration-email-platform
 excerpt: "Erfahren Sie hier, wie Sie E-Mail-Adressen von einem Exchange-Dienst oder einem E-Mail Pro-Dienst zu anderen Exchange-, E-Mail Pro- oder MX Plan-Diensten migrieren"
 section: Account-Migration
 order: 01
+updated: 2021-10-21
 ---
 
 > [!primary]

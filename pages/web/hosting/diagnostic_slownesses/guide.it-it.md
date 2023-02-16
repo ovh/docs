@@ -4,6 +4,7 @@ excerpt: "Individua l'origine delle lentezze del tuo sito Web e scopri come riso
 slug: slow-website-fix
 section: Diagnostica
 order: 09
+updated: 2022-11-17
 ---
 
 **Ultimo aggiornamento: 17/11/2022**

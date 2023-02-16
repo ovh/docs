@@ -4,6 +4,7 @@ slug: datenbank-passwort-aendern
 excerpt: Erfahren Sie hier, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
 section: Datenbanken
 order: 02
+updated: 2022-01-26
 ---
 
 > [!primary]

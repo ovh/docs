@@ -4,6 +4,7 @@ excerpt: 'CMS compatibili con il tuo hosting Web OVHcloud'
 slug: web_hosting_installa_manualmente_il_tuo_cms
 section: CMS
 order: 03
+updated: 2020-02-04
 ---
 
 **Ultimo aggiornamento: 04/02/2020**

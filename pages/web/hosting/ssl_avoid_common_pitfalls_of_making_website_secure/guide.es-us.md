@@ -4,6 +4,7 @@ excerpt: Evitar las trampas del SSL en un sitio web
 slug: evitar_las_trampas_del_ssl_en_un_sitio_web
 section: SSL
 order: 04
+updated: 2022-10-05
 ---
 
 **Última actualización: 05/05/2020**

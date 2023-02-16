@@ -4,6 +4,7 @@ slug: mail-condivisa-guida-configurazione-diuna-email-condivisa-ovh-sull-interfa
 excerpt: 'Come configurare un account MX Plan dall’interfaccia Web di Gmail'
 section: "Configurazione su un'interfaccia online"
 order: 01
+updated: 2021-01-08
 ---
 
 **Ultimo aggiornamento: 08/01/2021**

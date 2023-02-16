@@ -4,6 +4,7 @@ slug: web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio
 excerpt: "Cómo migrar un sitio web, el correo electrónico y el dominio a OVHcloud sin cortes del servicio"
 section: 'Primeros pasos'
 order: 08
+updated: 2022-11-24
 ---
 
 **Última actualización: 24/11/2022**

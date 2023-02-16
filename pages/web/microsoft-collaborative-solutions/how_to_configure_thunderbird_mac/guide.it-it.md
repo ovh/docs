@@ -4,6 +4,7 @@ slug: configurazione-exchange-thunderbird-mac
 excerpt: Come configurare il tuo indirizzo Exchange su Thunderbird per macOS
 section: 'Configurazione al computer'
 order: 05
+updated: 2021-08-26
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: Cómo crear tareas CRON para automatizar las tareas programadas en un a
 slug: web_hosting_tareas_automatizadas_cron
 section: Tareas automatizadas (Cron)
 order: 01
+updated: 2022-12-01
 ---
 
 > [!primary]

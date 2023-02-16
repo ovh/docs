@@ -4,6 +4,7 @@ slug: exchange_20132016_how_to_use_the_groups_feature_mailing_lists
 excerpt: 'Find out how to manage mailing lists in Exchange'
 section: 'Exchange account features'
 order: 02
+updated: 2020-02-26
 ---
 
 **Last updated 26th February 2020**

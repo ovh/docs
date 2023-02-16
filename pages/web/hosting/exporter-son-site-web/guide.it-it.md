@@ -4,6 +4,7 @@ slug: exporter-son-site-web
 excerpt: Come esportare un sito Web OVHcloud
 section: 'Per iniziare'
 order: 04
+updated: 2022-02-03
 ---
 
 **Ultimo aggiornamento: 03/02/2022**

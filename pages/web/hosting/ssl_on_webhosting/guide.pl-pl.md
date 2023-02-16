@@ -4,6 +4,7 @@ slug: certyfikaty-ssl-na-hostingu
 excerpt: 'Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud'
 section: SSL
 order: 01
+updated: 2022-08-01
 ---
 
 > [!primary]

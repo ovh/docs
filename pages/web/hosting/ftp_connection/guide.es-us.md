@@ -4,6 +4,7 @@ slug: conexion-espacio-almacenamiento-ftp-alojamiento-web
 excerpt: 'Cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloud'
 section: 'FTP y SSH'
 order: 02
+updated: 2022-10-21
 ---
 
 **Última actualización: 19/01/2022**

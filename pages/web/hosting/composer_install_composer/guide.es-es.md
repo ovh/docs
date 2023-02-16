@@ -4,6 +4,7 @@ excerpt: Esta guía explica cómo instalar y dar los primeros pasos en Composer
 slug: instalacion_de_composer_en_un_alojamiento_compartido
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 > [!primary]

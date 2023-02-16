@@ -4,6 +4,7 @@ slug: glue_registry
 excerpt: 'Saiba como personalizar os servidores DNS do seu nome de domínio OVHcloud'
 legacy_guide_number: g1568
 section: DNS e zona DNS
+updated: 2018-10-26
 ---
 
 **Última atualização: 05/10/2018**

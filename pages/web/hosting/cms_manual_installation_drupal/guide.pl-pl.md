@@ -4,6 +4,7 @@ excerpt: Jak ręcznie zainstalować moduł Drupal?
 slug: cms_-_reczna_instalacja_modulu_drupal
 section: CMS
 order: 07
+updated: 2022-12-01
 ---
 
 

@@ -4,6 +4,7 @@ slug: start10m-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Start 10M Hosting aktivieren'
 section: 'Erste Schritte'
 order: 01
+updated: 2022-09-15
 ---
 
 > [!primary]

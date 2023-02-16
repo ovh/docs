@@ -4,6 +4,7 @@ slug: erreurs-frequentes-modules-en-1-clic
 excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux créations de modules en 1 clic
 section: Diagnostic
 order: 02
+updated: 2022-11-08
 ---
 
 **Dernière mise à jour le 07/11/2022**

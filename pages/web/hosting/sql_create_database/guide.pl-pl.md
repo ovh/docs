@@ -4,6 +4,7 @@ slug: tworzenie-bazy-danych
 excerpt: 'Dowiedz się, jak korzystać z baz danych zawartych w usłudze hostingu WWW OVHcloud'
 section: 'Bazy danych'
 order: 01
+updated: 2022-02-03
 ---
 
 **Ostatnia aktualizacja: 03-02-2022**

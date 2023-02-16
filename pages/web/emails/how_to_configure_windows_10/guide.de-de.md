@@ -4,6 +4,7 @@ slug: mail-konfiguration-windows-10
 excerpt: 'Hier erfahren Sie, wie Sie Ihre MX Plan E-Mail-Adresse auf der Mail App von Windows 10 einrichten'
 section: 'E-Mail Clients'
 order: 4
+updated: 2018-04-04
 ---
 
 **Stand 29.06.2018**

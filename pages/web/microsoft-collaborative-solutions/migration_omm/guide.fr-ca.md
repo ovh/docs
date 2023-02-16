@@ -4,6 +4,7 @@ slug: migration-comptes-e-mail-ovh-mail-migrator
 excerpt: Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator
 section: Migration de comptes
 order: 03
+updated: 2022-02-14
 ---
 
 **Dernière mise à jour le 2018/10/05**

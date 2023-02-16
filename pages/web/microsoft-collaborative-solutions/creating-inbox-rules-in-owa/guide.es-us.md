@@ -4,6 +4,7 @@ slug: crear-reglas-de-bandeja-de-entrada-en-owa
 excerpt: 'Cómo crear redirecciones y filtros de correo electrónico con OWA'
 section: 'Uso de Outlook Web Application (OWA)'
 order: 05
+updated: 2020-03-11
 ---
 
 **Última actualización: 11/3/2020**

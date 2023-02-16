@@ -4,6 +4,7 @@ slug: hosting_condiviso_guida_allutilizzo_di_filezilla
 excerpt: "Consulta qui una guida all'utilizzo del software Filezilla sul tuo hosting condiviso"
 section: FTP e SSH
 order: 01
+updated: 2022-09-13
 ---
 
 **Ultimo aggiornamento: 13/09/2022**

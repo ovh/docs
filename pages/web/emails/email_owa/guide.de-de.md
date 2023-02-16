@@ -4,6 +4,7 @@ slug: verwendung-owa
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
 section: 'E-Mail Clients'
 order: 1
+updated: 2020-02-25
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: exchange_20132016_configurazione_di_thunderbird
 excerpt: Come configurare il tuo indirizzo Exchange su Thunderbird per Windows
 section: 'Configurazione al computer'
 order: 04
+updated: 2021-08-26
 ---
 
 > [!primary]

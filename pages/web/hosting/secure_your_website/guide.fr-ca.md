@@ -4,6 +4,7 @@ excerpt: Apprenez à renforcer la sécurité de votre site Web
 slug: secure-website
 section: Optimiser son site
 order: 01
+updated: 2021-12-10
 ---
 
 **Dernière mise à jour le 10/12/2021**

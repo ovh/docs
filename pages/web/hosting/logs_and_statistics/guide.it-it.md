@@ -4,6 +4,7 @@ excerpt: Accedi alle statistiche del tuo sito
 slug: hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito
 section: Ottimizza il tuo sito
 order: 04
+updated: 2021-01-05
 ---
 
 > [!primary]

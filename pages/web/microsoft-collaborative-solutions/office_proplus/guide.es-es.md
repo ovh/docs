@@ -4,6 +4,7 @@ slug: office365-proplus-escritorio-remoto
 excerpt: Cómo instalar y utilizar Microsoft 365 apps en un escritorio remoto (RDS) o en un ordenador compartido
 section: Office
 order: 04
+updated: 2021-09-06
 ---
 
 > [!primary]

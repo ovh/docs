@@ -4,6 +4,7 @@ slug: configurar-ipv6-para-su-sitio
 excerpt: "Cómo hacer compatible su sitio web con una dirección IPv6"
 section: "Configuración del alojamiento"
 order: 06
+updated: 2023-02-10
 ---
 
 **Última actualización: 10/02/2023**

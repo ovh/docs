@@ -4,6 +4,7 @@ slug: instalar-manualmente-joomla
 excerpt: Esta guía explica cómo instalar manualmente un CMS Joomla!
 section: CMS
 order: 05
+updated: 2022-12-01
 ---
 
 > [!warning]

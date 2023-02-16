@@ -4,6 +4,7 @@ excerpt: Come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud
 slug: 1-click-module-management
 section: CMS
 order: 02
+updated: 2022-09-05
 ---
 
 > [!primary]

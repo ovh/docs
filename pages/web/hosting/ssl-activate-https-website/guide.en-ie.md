@@ -4,6 +4,7 @@ slug: activate-https-website-ssl
 excerpt: 'Find out how to activate HTTPS on your website with an SSL certificate'
 section: SSL
 order: 02
+updated: 2022-10-04
 ---
 
 **Last updated 4th October 2022**

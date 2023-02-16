@@ -4,6 +4,7 @@ excerpt: Questa guida ti mostra le altre operazioni che possono essere effettuat
 slug: hosting_condiviso_altre_operazioni_possibili_con_il_file_htaccess
 section: Scrittura e autenticazione
 order: 04
+updated: 2022-10-05
 ---
 
 
