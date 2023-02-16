@@ -30,6 +30,7 @@ See our [Getting started with S3 Object Storage](https://docs.ovh.com/gb/en/stor
 ``` bash
 $ aws --profile my-profile s3 mb "s3://my-bucket"
 ```
+
 ### Create a logs bucket
 
 > [!primary]
@@ -52,7 +53,9 @@ $ aws --profile my-profile s3api put-bucket-acl --bucket my-bucket-logs --grant-
 ``` bash
 $ aws --profile my-profile s3api get-bucket-acl --bucket my-bucket-logs
 ```
-*Sample output*
+
+*Sample output* :
+
 ``` json
 {
     "Owner": {
@@ -87,6 +90,7 @@ $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-
 ```
 
 `logging.json`
+
 ```json
 {
   "LoggingEnabled": {
@@ -101,7 +105,9 @@ $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-
 ``` bash
 $ aws --profile my-profile s3api get-bucket-logging --bucket my-bucket
 ```
-*Sample output*
+
+*Sample output* :
+
 ``` json
 {
     "LoggingEnabled": {
@@ -118,7 +124,9 @@ After about one hour, the first logs are available:
 ``` bash
 $ aws --profile my-profile s3 ls "s3://my-bucket-logs" --recursive
 ```
-*Sample output*
+
+*Sample output* :
+
 ``` bash
 2023-01-10 17:39:42       1861 test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 2023-01-10 17:42:39        369 test/2023-01-10-16-12-38-4623ACA1FDEF492DBCD30385DAB48E1D
@@ -130,8 +138,10 @@ Download a log:
 ``` bash
 $ aws --profile my-profile s3 cp "s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261" .
 ```
-*Sample output*
-```
+
+*Sample output* :
+
+```bash
 download: s3://my-bucket-logs/test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261 to ./2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 ```
 
@@ -140,8 +150,10 @@ Then read it:
 ``` bash
 $ cat ./2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 ```
-*Sample output*
-```
+
+*Sample output* :
+
+```bash
 1542319462669586:user-5hwhM25pPT6f my-bucket [10/Jan/2023:15:06:28 +0000] 109.190.254.61 1542319462669586:user-5hwhM25pPT6f tx46d5e8a45e5e4bb3975fc-0063bd7ef4 REST.PUT.LOGGING_STATUS - "PUT /?logging HTTP/1.0" 200 - - 200 113 0 "-" "aws-cli/1.24.10 Python/3.6.9 Linux/5.4.0-135-generic botocore/1.26.10" - - SigV4 - AuthHeader my-bucket.s3.training.perf.cloud.ovh.net - -
 1542319462669586:user-5hwhM25pPT6f my-bucket [10/Jan/2023:15:06:47 +0000] 109.190.254.61 1542319462669586:user-5hwhM25pPT6f txd467757a5fac478b9132e-0063bd7f07 REST.GET.LOGGING_STATUS - "GET /?logging HTTP/1.0" 200 - 254 - 11 9 "-" "aws-cli/1.24.10 Python/3.6.9 Linux/5.4.0-135-generic botocore/1.26.10" - - SigV4 - AuthHeader my-bucket.s3.training.perf.cloud.ovh.net - -
 1542319462669586:user-5hwhM25pPT6f my-bucket [10/Jan/2023:15:08:20 +0000] 109.190.254.61 1542319462669586:user-5hwhM25pPT6f txa4de5d9245774d5699835-0063bd7f64 REST.GET.LOGGING_STATUS - "GET /?logging HTTP/1.0" 200 - 254 - 9 7 "-" "aws-cli/1.24.10 Python/3.6.9 Linux/5.4.0-135-generic botocore/1.26.10" - - SigV4 - AuthHeader my-bucket.s3.training.perf.cloud.ovh.net - -
@@ -193,7 +205,9 @@ The following list describes the log record fields:
 ``` bash
 $ aws --profile my-profile s3api get-object-acl --bucket my-bucket-logs --key test/2023-01-10-16-09-41-8D17C69BFBB64E1FA4BAEE7FCB436261
 ```
-*Sample output*
+
+*Sample output* :
+
 ``` json
 {
     "Owner": {
@@ -225,14 +239,14 @@ $ aws --profile my-profile s3api get-object-acl --bucket my-bucket-logs --key te
 
 Create an empty configuration file:
 
-```
+```bash
 $ cat Documents/logging_disable.json
 {}
 ```
 
 Then configure bucket logging parameters with this empty configuration file:
 
-```
+```bash
 $ aws --profile my-profile s3api put-bucket-logging --bucket my-bucket --bucket-logging-status file://logging_disable.json
 ```
 
