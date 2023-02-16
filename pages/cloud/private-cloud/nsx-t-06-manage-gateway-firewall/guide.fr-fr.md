@@ -6,7 +6,7 @@ section: NSX-T
 order: 06
 ---
 
-**Dernière mise à jour le 13/02/2023**
+**Dernière mise à jour le 16/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -39,7 +39,9 @@ Si vous souhaitez créer des règles de filtrage entre des segments internes il 
 
 ## En pratique
 
-Nous allons créer une règle qui bloque l'accès à tout le réseau externe d'un cluster depuis un groupe qui contient un segment. Vous pouvez vous aider de ce guide pour créer des groupes [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall) et de **any** pour la destination.
+Nous allons créer une règle qui bloque l'accès à tout le réseau externe d'un cluster depuis un groupe qui contient un segment. Vous pouvez vous aider de ce guide pour créer des groupes [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall) et de **any** pour la destination. 
+
+Pour simplifier l'administration des règles nous pouvons créér des stratégies et regrouper des règles de filtrage.
 
 Allez sur l'onglet `Security`{.action}, Sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}.
 

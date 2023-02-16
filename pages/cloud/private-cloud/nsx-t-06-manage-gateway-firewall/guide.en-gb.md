@@ -6,7 +6,7 @@ section: NSX-T
 order: 06
 ---
 
-**Last updated 13th February 2023**
+**Last updated 16th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -40,6 +40,8 @@ If you want to create filtering rules between internal segments, you will need t
 ## Instructions
 
 We will create a rule that blocks access to the entire external network of a cluster from a group that contains a segment. You can use this guide to create [Distributed Firewall Management] groups (https://docs.ovh.com/en/gb/nsx-t-manage-distributed-firewall) and **any** groups for the destination.
+
+To simplify rule administration, we can create policies and group filtering rules.
 
 Go to the `Security`{.action} tab, select `Gateway Firewall`{.action} and click `+ ADD POLICY`{.action}.
 
