@@ -44,7 +44,7 @@ Sur l'écran d'accueil de votre appareil, rendez-vous sur `Réglages`{.action} (
 
 - **Pour iOS 11** : appuyez sur `Comptes et mots de passe`{.action}, puis sur `Ajouter un compte`{.action}. Choisissez finalement `Autre`{.action}, puis `Ajouter un compte Mail`{.action}. Passez ensuite à l'étape 5 du tableau suivant.
 
-- **Pour les versions actuelles** : suivez les instructions du tableau suivant.
+- **Pour les versions iOS 14 et supérieures** : suivez les instructions du tableau suivant.
 
 | | |
 |---|---|

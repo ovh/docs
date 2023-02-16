@@ -46,9 +46,9 @@ No ecrã principal do seu dispositivo, aceda a `Regulações`{.action} (ícone d
 
 - **Para iOS 7, 8, 9 e 10**: aceda a `Mail, Contacts, Calendário`{.action} e depois a `Adicionar uma conta`{.action}. A seguir selecione `Outra`{.action}, depois `Adicionar uma conta de e-mail`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
 
-- **Para iOS 11**: carregue em `Contas e palavras-passe`{.action} e depois em `Adicionar uma conta`{.action}. A seguir selecione `Outra`{.action}, depois `Adicionar uma conta de e-mail`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
+- **Para iOS 11, 12 e 13**: carregue em `Contas e palavras-passe`{.action} e depois em `Adicionar uma conta`{.action}. A seguir selecione `Outra`{.action}, depois `Adicionar uma conta de e-mail`{.action}. Passe em seguida à etapa 5 da tabela seguinte.
 
-- **Para as versões atuais**: siga as instruções da tabela abaixo.
+- **Para iOS versões 14 e superiores**: siga as instruções da tabela abaixo.
 
 | | |
 |---|---|
