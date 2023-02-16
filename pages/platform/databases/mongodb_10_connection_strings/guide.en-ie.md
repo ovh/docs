@@ -96,7 +96,7 @@ From the central "Login information" panel, select "mongodbSrv" as Service and c
 
 ### Test the connection to MongoDB
 
-Open MongoDB Compass and fill in the connection field with the `mongodbSrv connection string you just copied.
+Open MongoDB Compass and fill in the connection field with the `mongodbSrv` connection string you just copied.
 Substitute the username and password by their actual values and click on connect.
 
 ![Connect from MongoDB Compass](images/connect-compass.png){.thumbnail}
