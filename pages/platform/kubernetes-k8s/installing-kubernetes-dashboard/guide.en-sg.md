@@ -4,7 +4,7 @@ slug: installing-kubernetes-dashboard
 excerpt: 'Find out how to install the Kubernetes Dashboard on your OVHcloud Managed Kubernetes Service'
 section: Tutorials
 order: 3
-updated: 2022-11-02
+updated: 2023-02-16
 ---
 
 **Last updated 16th February 2023.**
