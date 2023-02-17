@@ -14,7 +14,7 @@ The OVHcloud AI Training service provides you a container as a service platform,
 
 ## Introduction
 
-AI Training jobs are linked to a Public Cloud project. The whole project is billed at the end of the month, with pay-as-you-go. It means you will only pay for what you consume, based on the compute resources you use (CPus and GPUs) and their running time.
+AI Training jobs are linked to a Public Cloud project. The whole project is billed at the end of the month, with pay-as-you-go. It means you will only pay for what you consume, based on the compute resources you use (CPUs and GPUs) and their running time.
 
 ## AI Training job lifecycle
 
