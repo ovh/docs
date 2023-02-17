@@ -90,7 +90,7 @@ We start one AI Training job, with two CPUs and we keep it running for 10 days t
 - remote storage: nothing
 - duration: 10 days then stopped
 
-Price calculation for compute: 10 (days) x 24 (hours) x 2 (CPU) x 0,03€ (price / CPU) = **14,40 euros**, billed at the end of the month
+Price calculation for compute: 10 (days) x 24 (hours) x 2 (CPU) x 0.03€ (price / CPU) = **14.40 euros**, billed at the end of the month
 
 #### Example 2: one GPU job for 5 hours
 
