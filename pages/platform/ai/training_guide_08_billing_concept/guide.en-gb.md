@@ -24,7 +24,7 @@ During its lifetime, the [AI Training job](https://docs.ovh.com/gb/en/publicclou
 - `INITIALIZING`: the job instance is created and the data is synchronized from the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/gb/en/publiccloud/ai/data/#how-it-works) section.
 - `PENDING`: the job is being started.
 - `RUNNING`: the job is running, you can connect to it. Compute resources (GPUs/CPUs) are allocated to your specific job and data are available.
-- `INTERRUPTING`: the job is still running but an interruption order was received and is about to be processed
+- `INTERRUPTING`: the job is still running but an interruption order was received and is about to be processed.
 - `FINALIZING`: the job instance is deleted and the data is synchronized back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/gb/en/publiccloud/ai/data/#how-it-works) section.
 - `DONE`: the job ended normally.
 - `TIMEOUT`: the job is still running but is about to be interrupted because the timeout was reached.
