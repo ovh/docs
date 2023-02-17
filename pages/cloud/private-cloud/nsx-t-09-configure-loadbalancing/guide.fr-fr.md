@@ -119,29 +119,99 @@ La liste des machines virtuelles a été automatiquement rajoutée au groupe gra
 
 ### Activation du Load Balancer
 
-Allez dans l'onglet `Networking`{.action} et cliquez sur. `Load Balancing`{.action} dans la rubrique **Network Services** à gauche.  
+Allez dans l'onglet `Networking`{.action} et cliquez sur `Load Balancing`{.action} dans la rubrique **Network Services** à gauche.  
 
-Ensuite cliquez sur `ADD LOAD BALANCER`{.action}
+Ensuite positionnez vous sur l'onglet `Load Balancers`{.action} et cliquez sur `ADD LOAD BALANCER`{.action}.
 
-![04 Activte Load Balancer 01](images/04-activate-loadbalancing01.png){.thumbnail}
+![04 Activate Load Balancer 01](images/04-activate-loadbalancing01.png){.thumbnail}
 
+Saisissez `loadbalancer-on-t1`{.action} en dessous de **Name**, sélectionnez sur `ovh-T1-gw`{.action} sous **Attachment**
+et cliquez sur `SAVE`{.action}.
 
+![04 Activate Load Balancer 02](images/04-activate-loadbalancing02.png){.thumbnail}
 
+Cliquez sur `NO`{.action}.
 
+![04 Activate Load Balancer 03](images/04-activate-loadbalancing03.png){.thumbnail}
 
+Le Load balancer est créé et actif sur la passerelle **ovh-T1-gw**.
 
+![04 Activate Load Balancer 04](images/04-activate-loadbalancing04.png){.thumbnail}
 
+### Création du pool de serveurs
 
+Positionnez vous sur l'onglet `Server Pools`{.action} et cliquez sur `ADD SERVER POOL`{.action}.
 
+![05 Add server pool 01](images/05-add-server-pool01.png){.thumbnail}
 
+Saisissez `sp-nginx`{.action} en dessous de **Name** et cliquez sur `Select Members`{.action} sous **Members/Group**.
 
+![05 Add server pool 02](images/05-add-server-pool02.png){.thumbnail}
 
+Cliquez `Select a group`{.action} et choisissez le groupe que vous avez créé `nginx-servers`{.action} ensuite cliquez sur `APPLY`{.action}.
+
+![05 Add server pool 04](images/05-add-server-pool04.png){.thumbnail}
+
+Cliquez sur `SAVE`{.action} pour appliquez vos changements.
+
+![05 Add server pool 05](images/05-add-server-pool05.png){.thumbnail}
+
+Votre pool de serveur est créé avec vos deux machines virtuelles membre du groupe.
+
+![05 Add server pool 06](images/05-add-server-pool06.png){.thumbnail}
+
+### Création du serveur virtuel
+
+Alez sur l'onglet `Virtual Servers`{.action} et cliquez sur `ADD VIRTUAL SERVER`{.action}.
+
+![06 Add virtual Server 01](images/06-add-virtual-server01.png){.thumbnail}
+
+Choisissez `L4 TCP`{.action}.
+
+![06 Add virtual Server 02](images/06-add-virtual-server02.png){.thumbnail}
+
+Choisissez ces options :
+
+* **Name** : Nom de votre virtual server `vs-nginx`{.action}.
+* **IP Address**: Adresse IP en frontal de votre serveur virtuel sur le même réseau que vos machines virtuelles NGINX `192.168.102.3`{.action}.
+* **Port** : Port `80`{.action}.
+* **Load Balancer**: Votre load balancer `loadbalancer-on-t1`{.action}.
+* **Server Pool**: Votre pool de serveur `sp-nginx`{.action}.
+
+Ensuite cliquez sur `SAVE`{.action}.
+
+![06 Add virtual Server 03](images/06-add-virtual-server03.png){.thumbnail}
+
+Votre serveur virtuel est actif si vous vous connecter depuis une machine qui utilise un segment sur une passerelle de type **Tier-1 Gateways** avec cette URL http://192.168.102.3 , le Load Balancer se connectera à l'une des deux machines virtuelles configurées dans votre groupe.
+
+### Ajout de la règle de NAT
+
+Allez sur `NAT`{.action} dans la rubrique **Network Services** à gauche et cliquez sur `ADD NAT RULE`{.action}.
+
+![07 ADD DNAT TO VIRTUAL SERVER 01](images/07-add-dnat-to-virtual-server01.png){.thumbnail}
+
+Saisissez `to-lb-virtual-server`{.action} dans **Name** de votre règle avec ces options :
+
+* **Action** : `DNAT`{.action}.
+* **Destination IP** : Addresse IP virtuelle de votre T0 comme `198.51.100.1`{.action}.
+* **Translated IP** : Adresse Ip de votre serveur virtuel `192.168.102.103`{.action}.
+* **Service  PORT** : Choisir le port prédéfini `HTTP| 80`{.action}.
+
+Ensuite cliquez sur `SAVE`{.action}.
+
+![07 ADD DNAT TO VIRTUAL SERVER 02](images/07-add-dnat-to-virtual-server02.png){.thumbnail}
+
+Votre règle est active si vous cliquez sur http://adresse-ip-virtuelle vous serez connecté à votre serveur virtuel qui  redirigera le flux sur l'un des serveurs membre de votre groupe.
+
+![07 ADD DNAT TO VIRTUAL SERVER 03](images/07-add-dnat-to-virtual-server03.png){.thumbnail}
 
 ## Aller plus loin
 
 [Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
 
 [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+
+[Mise en place du NAT pour des redirections de ports dans NSX-T](https://docs.ovh.com/fr/nsx-t-configure-nat-redirection)
 
 [Documentation VMware sur les Load Balancers NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
 
