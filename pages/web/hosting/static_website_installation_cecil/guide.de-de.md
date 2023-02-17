@@ -3,7 +3,7 @@ title: "Tutorial - Installation und Konfiguration von Cecil, einem Static Site G
 slug: install-configure-cecil
 excerpt: "Erfahren Sie hier, wie Sie mit Cecil Ihre statische Website mithilfe einer modernen Template-Engine erstellen (Jamstack)"
 section: 'Tutorials'
-order: 04
+order: 030
 updated: 2023-01-17
 ---
 

@@ -3,7 +3,7 @@ title: 'Tutorial - Tworzenie strony WWW w OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowym hostingu Start 10M'
 section: "Tutoriale"
-order: 01
+order: 012
 updated: 2023-02-17
 ---
 

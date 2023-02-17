@@ -3,7 +3,7 @@ title: "Casos de uso - Conselhos após a pirataria do seu website"
 excerpt: "Descubra os nossos conselhos para reparar o seu website pirateado"
 slug: piratagem_do_seu_website_wordpress_conselhos_e_casos_praticos
 section: "Tutoriais"
-order: 01
+order: 010
 updated: 2022-11-15
 ---
 
