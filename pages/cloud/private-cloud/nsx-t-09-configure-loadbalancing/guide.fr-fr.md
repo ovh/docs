@@ -61,13 +61,13 @@ Cliquez sur le signe `+`{.action} à coté de votre marqueur pour le rajouter à
 
 Le marqueur apparait , cliquez sur `SAVE`{.action}.
 
-![01 Add tag to VMs 05](images/01-add-tag-to-two-vm04.png){.thumbnail}
+![01 Add tag to VMs 05](images/01-add-tag-to-two-vm05.png){.thumbnail}
 
 cliquez sur les `points de suspensions verticaux`{.action} à gauche de la deuxième machine virtuelle que nous allons marquer et choisissez `Edit`{.action} dans le menu.
 
 ![01 Add tag to VMs 06](images/01-add-tag-to-two-vm06.png){.thumbnail}
 
-Remplacer **Tag** par `load`{.action}, ensuite sélection le Marqueur `Tag: loadlb Scope: nginx`{.action} en dessous.
+Remplacer **Tag** par `load`{.action}, ensuite sélectionnez le Marqueur `Tag: loadlb Scope: nginx`{.action} en dessous.
 
 ![01 Add tag to VMs 07](images/01-add-tag-to-two-vm07.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Restez sur **Inventory**, cliquez sur `Tags`{.action} et cliquez sur le `numéro
 
 ![02 Show member tag 01](images/02-show-members-tag01.png){.thumbnail}
 
-Vous pouvez voir vos deux machines virtuelles qui utilise le même marqueur.
+Vous pouvez voir vos deux machines virtuelles qui utilisent le même marqueur.
 
 ![02 Show member tag 02](images/02-show-members-tag02.png){.thumbnail}
 
@@ -150,15 +150,15 @@ Saisissez `sp-nginx`{.action} en dessous de **Name** et cliquez sur `Select Memb
 
 Cliquez `Select a group`{.action} et choisissez le groupe que vous avez créé `nginx-servers`{.action} ensuite cliquez sur `APPLY`{.action}.
 
-![05 Add server pool 04](images/05-add-server-pool04.png){.thumbnail}
+![05 Add server pool 03](images/05-add-server-pool03.png){.thumbnail}
 
 Cliquez sur `SAVE`{.action} pour appliquez vos changements.
 
-![05 Add server pool 05](images/05-add-server-pool05.png){.thumbnail}
+![05 Add server pool 04](images/05-add-server-pool04.png){.thumbnail}
 
 Votre pool de serveur est créé avec vos deux machines virtuelles membre du groupe.
 
-![05 Add server pool 06](images/05-add-server-pool06.png){.thumbnail}
+![05 Add server pool 05](images/05-add-server-pool05.png){.thumbnail}
 
 ### Création du serveur virtuel
 
@@ -201,7 +201,7 @@ Ensuite cliquez sur `SAVE`{.action}.
 
 ![07 ADD DNAT TO VIRTUAL SERVER 02](images/07-add-dnat-to-virtual-server02.png){.thumbnail}
 
-Votre règle est active si vous cliquez sur http://adresse-ip-virtuelle vous serez connecté à votre serveur virtuel qui  redirigera le flux sur l'un des serveurs membre de votre groupe.
+Votre règle est active si vous cliquez sur http://adresse-ip-virtuelle-t0 vous serez connecté à votre serveur virtuel qui  redirigera le flux sur l'un des serveurs membre de votre groupe.
 
 ![07 ADD DNAT TO VIRTUAL SERVER 03](images/07-add-dnat-to-virtual-server03.png){.thumbnail}
 
