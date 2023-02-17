@@ -44,7 +44,7 @@ On your device’s home screen, go to `Settings`{.action} (cogwheel icon). There
 
 - **For iOS 11, 12 and 13**: Go to `Accounts and passwords`{.action}, then `Add account`{.action}. Choose `Other`{.action}, then `Add Mail Account`{.action}. Then proceed to step 5 of the table below.
 
-- **For iOS versions 14 and above** versions: follow the instructions in the table below.
+- **For iOS versions 14 and above**: Follow the instructions in the table below.
 
 | | |
 |---|---|
