@@ -1024,6 +1024,7 @@
             + [Use cases - What to do if your Website is hacked](web/hosting/cms_what_to_do_if_your_site_is_hacked)
             + [Tutorial - Creating your personal webpage at OVHcloud](web/hosting/create_your_personal_webpage)
             + [Use cases - How to change the domain of an existing website](web/hosting/How_to_change_the_domain_name_of_an_existing_website)
+            + [Tutorial - First steps with Wordpress](web/hosting/wordpress_first-steps)
             + [Tutorial - Installation and configuration of Cecil, a static site generator (SSG) in PHP](web/hosting/static_website_installation_cecil)
             + [Tutorial - Add dynamic content to a static web page generated with Cecil](web/hosting/static_website_installation_cecil_api_call)
         + [Cloud Web hosting plan Tutorials](web-cloud-hosting-tutorials-cloud-web)
