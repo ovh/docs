@@ -4,18 +4,27 @@ slug: create-your-own-web-page
 excerpt: Come creare la tua prima pagina Web su un hosting gratuito Start 10M
 section: "Tutorial"
 order: 012
-updated: 2022-11-22
+updated: 2023-02-17
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/11/2022**
+**Ultimo aggiornamento: 17/02/2023**
 
 ## Obiettivo
 
 Questa guida ti mostra come creare la prima pagina di un sito Web su un hosting Start 10M offerto gratuitamente con l'acquisto di un dominio OVHcloud.
+
+**Scropire come creare la tua prima pagina Web su un hosting gratuito Start 10M**
+
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
+> 
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno [specialista del settore](https://partner.ovhcloud.com/it/). OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) di questa guida.
+>
 
 ## Prerequisiti
 
@@ -417,7 +426,7 @@ Alcuni esempi di siti e applicazioni Web realizzati con Bootstrap:
 - [https://bootstraptaste.com/](https://bootstraptaste.com/)
 - [https://bootstrapthemes.co/](https://bootstrapthemes.co/).
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 Troverai molte risorse sul Web per imparare e migliorare la tua pratica, per copiare elementi interi di codice o porzioni di codice, per aggiungere funzionalità al tuo sito senza rischiare di avere errori o malfunzionamenti. Ecco alcuni siti di riferimento:
 
