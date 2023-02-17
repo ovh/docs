@@ -96,7 +96,7 @@ Price calculation for compute: 10 (days) x 24 (hours) x 2 (CPU) x 0.03€ (price
 
 We start one AI Training job with two GPUs and we keep it running for 5 hours then it is stopped.
 
-- compute resources: 2 x GPU NVIDIA V100s (1,93€ / hour)
+- compute resources: 2 x GPU NVIDIA V100s (1.93€ / hour)
 - remote storage: nothing
 - duration: 5 hours then stopped
 
