@@ -4,18 +4,25 @@ slug: create-your-own-web-page
 excerpt: 'Dowiedz się, jak utworzyć pierwszą stronę internetową na darmowym hostingu Start 10M'
 section: "Tutoriale"
 order: 01
-updated: 2022-11-22
+updated: 2023-02-17
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 22-11-2022**
+**Ostatnia aktualizacja z dnia 17-02-2023**
 
 ## Wprowadzenie
 
 Dowiedz się, jak utworzyć pierwszą stronę internetową na hostingu Start 10M oferowanym bezpłatnie w przypadku zakupu domeny od OVHcloud.
+
+> [!warning]
+>
+> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/). Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#go-further) niniejszego przewodnika.
+>
 
 ## Wymagania początkowe
 
@@ -417,7 +424,7 @@ Przykłady stron WWW i aplikacji wykonanych z Bootstrap:
 - [https://bootstraptaste.com/](https://bootstraptaste.com/)
 - [https://bootstrapthemes.co/](https://bootstrapthemes.co/).
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 W Internecie znajdziesz mnóstwo zasobów do nauki i ulepszania swojej praktyki, kopiowania całych elementów kodu lub części kodu, dodawania funkcji na swojej stronie bez ryzyka błędów lub usterek. Oto kilka punktów odniesienia:
 
