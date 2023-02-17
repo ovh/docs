@@ -86,7 +86,7 @@ The pricing of Object Storage is apart from the AI Training pricing.
 
 We start one AI Training job, with two CPUs and we keep it running for 10 days then it is stopped.
 
-- compute resources: 2 x CPU (0,03€ / hour)
+- compute resources: 2 x CPU (0.03€ / hour)
 - remote storage: nothing
 - duration: 10 days then stopped
 
