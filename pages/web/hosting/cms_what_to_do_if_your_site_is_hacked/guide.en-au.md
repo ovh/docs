@@ -3,7 +3,7 @@ title: "Use cases - What to do if your  Website is hacked"
 excerpt: "Learn our tips for repairing your hacked website"
 slug: what_to_do_if_your_wordpress_site_is_hacked
 section: "Tutorials"
-order: 01
+order: 010
 updated: 2022-11-15
 ---
 
