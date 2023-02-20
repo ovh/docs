@@ -48,7 +48,7 @@ Once you have selected an option, continue following the next steps until you ha
 
 Now that your domain name’s DNS zone has been created, you can edit it. This step is optional, but it may be essential if you want to ensure that any services linked to your domain name do not experience any downtime (e.g. your website and email services).
 
-If you would like to edit this DNS zone, click `Web Cloud`{.action} in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then click `Domain names`{.action} and choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+If you would like to edit this DNS zone, click `Web Cloud`{.action} in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then click `Domain names`{.action} and choose the domain name concerned. Go to the `DNS zone`{.action} tab.
 
 > [!primary]
 >
