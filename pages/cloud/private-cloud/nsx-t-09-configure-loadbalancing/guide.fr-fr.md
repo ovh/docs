@@ -3,7 +3,7 @@ title: Configuration de l'équilibrage de charge
 slug: nsx-t-configure-loadbalancing
 excerpt: Comment configurer l'équilibrage de charge
 section: NSX-T
-order: 07
+order: 09
 ---
 
 **Dernière mise à jour le 20/02/2023**
@@ -119,7 +119,7 @@ Cliquez sur `View Members`{.action} à droite du groupe.
 
 ![03 ADD GROUP 06](images/03-add-group06.png){.thumbnail}
 
-La liste des machines virtuelles a été automatiquement rajoutée au groupe à partir du critère sur votre marqueur.
+La liste des machines virtuelles est automatiquement rajoutée au groupe à partir du critère sur votre marqueur.
 
 ![03 ADD GROUP 07](images/03-add-group07.png){.thumbnail}
 
@@ -131,8 +131,7 @@ Ensuite positionnez-vous sur l'onglet `Load Balancers`{.action} et cliquez sur `
 
 ![04 Activate Load Balancer 01](images/04-activate-loadbalancing01.png){.thumbnail}
 
-Saisissez `loadbalancer-on-t1`{.action} en dessous de **Name**, sélectionnez sur `ovh-T1-gw`{.action} sous **Attachment**
-et cliquez sur `SAVE`{.action}.
+Saisissez `loadbalancer-on-t1`{.action} en dessous de **Name**, sélectionnez sur `ovh-T1-gw`{.action} sous **Attachment** et cliquez sur `SAVE`{.action}.
 
 ![04 Activate Load Balancer 02](images/04-activate-loadbalancing02.png){.thumbnail}
 
@@ -172,7 +171,7 @@ Allez sur l'onglet `Virtual Servers`{.action} et cliquez sur `ADD VIRTUAL SERVER
 
 ![06 Add virtual Server 01](images/06-add-virtual-server01.png){.thumbnail}
 
-Choisissez `L4 TCP`{.action}.
+Prenez `L4 TCP`{.action}.
 
 ![06 Add virtual Server 02](images/06-add-virtual-server02.png){.thumbnail}
 
