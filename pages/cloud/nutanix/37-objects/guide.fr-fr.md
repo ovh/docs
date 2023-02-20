@@ -26,12 +26,20 @@ order: 07
 
 ## Présentation
 
-Nutanix Objects implemente une solution de stockage compatible S3
+Nutanix Objects implemente une solutione **Object Storage** Comptatible S3 sur votre cluster Nutanix en s'appuyant sur Prism Central. Vous pouvez consulter le descritptif sur ce lien [Présentation de Nutanix Objects](https://www.nutanix.com/fr/viewer?type=pdf&path=/content/dam/nutanix/fr/resources/datasheets/ds-objects-fr.pdf).
 
 
 ## En pratique
 
+Nous allons voir comment activer Nutanix Objects dans votre solution Nutanix by OVHcloud et valider son fonctionnement.
 
+### Activation du service iSCSI dans Prism ELEMENT
+
+### Configuration des VLAN dans Prism Central
+
+### Activation d'object dans Prism Central
+
+### Validation et test de bon fonctionnement
 
 ## Aller plus loin <a name="gofurther"></a>
 
