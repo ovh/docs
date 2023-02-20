@@ -17,7 +17,7 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou à [l'éditeur du CMS WordPress](https://wordpress.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 **Découvrez comment créer un site web avec le CMS WordPress.**
@@ -31,7 +31,7 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 
 ## En pratique
 
-Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL]((https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement)) sur le nom de domaine associé à votre site web.
+Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement) sur le nom de domaine associé à votre site web.
 
 Lors de l'installation de votre CMS en 1-clic, vous avez reçu un e-mail contenant les éléments nécessaires à la poursuite de ce tutoriel :
 

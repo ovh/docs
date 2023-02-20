@@ -17,21 +17,21 @@ This tutorial will help you create your first content, organise it, put it onlin
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This tutorial will help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/fr/) or [WordPress CMS editor](https://wordpress.com/fr/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
+> This tutorial will help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ie/) or [WordPress CMS editor](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
 >
 
 **This guide explains how to create a website with WordPress CMS.**
 
 ## Requirements
 
-- You must have a [Web Hosting plan](https://www.ovhcloud.com/fr/web-hosting/) that contains at least one database.
-- You must have [domain name](https://www.ovhcloud.com/fr/domains/)
-- You need [WordPress installed](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) on your web hosting plan
-- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- You must have a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that contains at least one database.
+- You must have [domain name](https://www.ovhcloud.com/en-ie/domains/)
+- You need [WordPress installed](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/) on your web hosting plan
+- You must be logged in to [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
-If this is not already the case, [add an SSL certificate]((https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement)) on the domain name associated with your website before you continue.
+If this is not already the case, [add an SSL certificate](https://docs.ovh.com/ie/en/hosting/activate-https-website-ssl/#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) on the domain name associated with your website before you continue.
 
 When you installed your 1-click CMS, you received an email containing the information you need to follow this tutorial:
 
@@ -182,10 +182,10 @@ Your links will then be built from the slug you entered when you edited your art
 ## Go further <a name="go-further"></a>
 
 - Store your access in a password manager like [KeePass](https://keepass.info/){.external}.
-- Test online the default editor [Gutenberg](https://fr.wordpress.org/gutenberg/){.external}.
+- Test online the default editor [Gutenberg](https://wordpress.org/gutenberg/){.external}.
 - Some resources where to find WordPress themes:
-    - [WordPress Themes](https://wordpress.com/fr/themes){.external}
-    - [TemplaMonster](https://www.templatemonster.com/fr/type/themes-wordpress/){.external}.
+    - [WordPress Themes](https://wordpress.com/themes){.external}
+    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php){.external}.
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, editor of the theme builder Divi.
     - [Elementor](https://elementor.com/){.external}, another theme editor.
 - The official [WordPress] website (https://wordpress.org/){.external}.

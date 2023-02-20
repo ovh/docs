@@ -21,21 +21,21 @@ Mit dieser Anleitung können Sie Ihre ersten Inhalte erstellen, organisieren, on
 >
 > OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/fr/) oder [Herausgeber des CMS WordPress](https://wordpress.com/fr/support/){.external} zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Mehr Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
+> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) oder [Herausgeber des CMS WordPress](https://wordpress.com/support/){.external} zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Mehr Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 >
 
 **Diese Anleitung erklärt, wie Sie eine Website mit dem CMS WordPress erstellen**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/fr/web-hosting/), das mindestens eine Datenbank enthält.
-- Über eine [Domainname](https://www.ovhcloud.com/fr/domains/)
-- Sie haben [WordPress installiert](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) auf Ihrem Webhosting
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} eingeloggt
+- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
+- Über eine [Domainname](https://www.ovhcloud.com/de/domains/)
+- Sie haben [WordPress installiert](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/) auf Ihrem Webhosting
+- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt
 
 ## In der praktischen Anwendung
 
-Ist das nicht bereits der Fall, fügen Sie vor dem Fortfahren [SSL-Zertifikat hinzufügen]((https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement)) für die zu Ihrer Website gehörende Domain ein.
+Ist das nicht bereits der Fall, fügen Sie vor dem Fortfahren [SSL-Zertifikat hinzufügen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren) für die zu Ihrer Website gehörende Domain ein.
 
 Bei der Installation Ihres CMS mit 1-Klick erhalten Sie eine E-Mail mit den notwendigen Informationen zur Weiterführung dieses Tutorials:
 
@@ -186,10 +186,10 @@ Ihre Links werden dann vom Slug aus erstellt, der zuvor beim Bearbeiten Ihrer Ar
 ## Weiterführende Informationen <a name="go-further"></a>
 
 - Speichern Sie Ihre Zugriffe in einem Passwortmanager wie [KeePass](https://keepass.info/){.external}.
-- Testen Sie den Standardeditor [Gutenberg](https://fr.wordpress.org/gutenberg/){.external} online.
+- Testen Sie den Standardeditor [Gutenberg](https://wordpress.org/gutenberg/){.external} online.
 - Einige Ressourcen, um WordPress Themen zu finden:
-    - [WordPress Themes](https://wordpress.com/fr/themes){.external}
-    - [TemplaMonster](https://www.templatemonster.com/fr/type/themes-wordpress/){.external}.
+    - [WordPress Themes](https://wordpress.com/themes){.external}
+    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php){.external}.
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, Herausgeber des Themendatenherstellers Divi.
     - [Elementor](https://elementor.com/){.external}, ein weiterer Themenerleger.
 - Die offizielle Website [WordPress](https://wordpress.org/){.external}.

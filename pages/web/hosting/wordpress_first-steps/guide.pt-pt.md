@@ -21,21 +21,21 @@ Este tutorial vai permitir-lhe criar os seus primeiros conteúdos, organizá-los
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/fr/) ou ao [editor do CMS WordPress](https://wordpress.com/fr/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) ou ao [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
 >
 
 **Descubra como criar um website com o CMS WordPress.**
 
 ## Requisitos
 
-- Ter um plano de [alojamento web](https://www.ovhcloud.com/fr/web-hosting/) que contenha, pelo menos, uma base de dados.
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/fr/domains/)
-- Ter [instalado Wordpress](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) no seu alojamento web.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Ter [instalado Wordpress](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/) no seu alojamento web.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 
 ## Instruções
 
-Se ainda não o fez, e antes de continuar, [adicione um certificado SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement) no domínio associado ao seu website.
+Se ainda não o fez, e antes de continuar, [adicione um certificado SSL](https://docs.ovh.com/pt/hosting/ativar-https-website-certificado-ssl/#1-ativar-o-certificado-ssl-no-alojamento) no domínio associado ao seu website.
 
 Aquando da instalação do seu CMS em 1 clique, recebeu um e-mail com os elementos necessários para a prossecução deste tutorial:
 
@@ -186,10 +186,10 @@ Os seus links serão construídos a partir do slug indicado anteriormente aquand
 ## Quer saber mais? <a name="go-further"></a>
 
 - Armazene os seus acessos num gestor de palavras-passe como [KeePass](https://keepass.info/){.external}.
-- Teste online o editor predefinido [Gutenberg](https://fr.wordpress.org/gutenberg/){.external}.
+- Teste online o editor predefinido [Gutenberg](https://wordpress.org/gutenberg/){.external}.
 - Alguns recursos onde encontrar temas WordPress:
-    - [WordPress Themes](https://wordpress.com/fr/themes){.external}
-    - [TemplaMonster](https://www.templatemonster.com/fr/type/themes-wordpress/){.external}.
+    - [WordPress Themes](https://wordpress.com/themes){.external}
+    - [TemplaMonster](https://www.templatemonster.com/wordpress-themes.php){.external}.
     - [Elegant Themes](https://www.elegantthemes.com/){.external}, editor do projeto temático Divi.
     - [Elementor](https://elementor.com/){.external}, outro editor de temas.
 - O site oficial [WordPress](https://wordpress.org/){.external}.
