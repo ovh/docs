@@ -39,13 +39,13 @@ NSX-T permet l'équilibrage de charge sur une couche de niveau 4 (TCP ou UDP ) o
 Nous allons :
 
 * Activer le Load Balancing sur la passerelle **ovh-T1-gw**.
-* Créer un pool de serveurs à partir de deux machines virtuelles qui ont un WEB NGINX actif sur le port 80.
-* Ajouter un serveur virtuel dans la configuration du Load Balancer qui utilise ce pool de serveurs.
+* Créer un pool de serveurs à partir de deux machines virtuelles qui utilisent serveur un WEB NGINX actif sur le port 80.
+* Ajouter un serveur virtuel dans la configuration du Load Balancer qui contient notre pool de serveurs.
 * Définir une règle de NAT pour faire une redirection vers le serveur virtuel.
 
 ### Création du marqueur (tag) sur les deux machines virtuelles NGINX.
 
-Pour simplifier l'administration du Load Balancer nous allons utiliser un marqueur sur les deux machines virtuelles du futur pool de serveurs.
+Pour simplifier l'administration du Load Balancer nous allons utiliser un marqueur (tag) sur les deux machines virtuelles du futur pool de serveurs.
 
 Dans l'interface NSX-T allez dans l'onglet `Inventory`{.action} et cliquez sur `Virtual Machines`{.action} à gauche.  
 
@@ -53,7 +53,7 @@ Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de 
 
 ![01 Add tag to VMs 01](images/01-add-tag-to-two-vm01.png){.thumbnail}
 
-Remplacer **Tag** par `loadbl`{.action}, ensuite cliquez sur `Add Item(s) loabl`{.action} en dessous.
+Remplacer **Tag** par `loadbl`{.action}, ensuite cliquez sur `Add Item(s) loadbl`{.action} en dessous.
 
 ![01 Add tag to VMs 02](images/01-add-tag-to-two-vm02.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Cliquez sur les `points de suspensions verticaux`{.action} à gauche de la deuxi
 
 ![01 Add tag to VMs 06](images/01-add-tag-to-two-vm06.png){.thumbnail}
 
-Remplacer **Tag** par `load`{.action} et sélectionnez le Marqueur `Tag: loadlb Scope: nginx`{.action} qui vient de s'afficher en dessous.
+Remplacer **Tag** par `load`{.action} et sélectionnez le Marqueur `Tag: loadbl Scope: nginx`{.action} qui vient de s'afficher en dessous.
 
 ![01 Add tag to VMs 07](images/01-add-tag-to-two-vm07.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Cliquez sur `SAVE`{.action} pour ajouter le marqueur à votre machine virtuelle.
 
 ![01 Add tag to VM 09](images/01-add-tag-to-two-vm09.png){.thumbnail}
 
-Restez sur **Inventory**, cliquez sur `Tags`{.action} et cliquez sur le `numéro`{.action} à côté du marqueur créé.
+Restez sur **Inventory**, cliquez sur `Tags`{.action} et cliquez sur le `numéro`{.action} à droite du marqueur créé.
 
 ![02 Show member tag 01](images/02-show-members-tag01.png){.thumbnail}
 
@@ -162,7 +162,7 @@ Cliquez sur `SAVE`{.action} pour appliquer vos changements.
 
 ![05 Add server pool 04](images/05-add-server-pool04.png){.thumbnail}
 
-Votre pool de serveur est créé avec vos deux machines virtuelles membre du groupe.
+Votre pool de serveur est créé avec vos deux machines virtuelles membres du groupe.
 
 ![05 Add server pool 05](images/05-add-server-pool05.png){.thumbnail}
 
@@ -207,7 +207,7 @@ Ensuite cliquez sur `SAVE`{.action}.
 
 ![07 ADD DNAT TO VIRTUAL SERVER 02](images/07-add-dnat-to-virtual-server02.png){.thumbnail}
 
-Votre règle est active si vous cliquez sur http://adresse-ip-virtuelle-t0 vous serez connecté à votre serveur virtuel qui redirigera le flux sur l'un des serveurs membre de votre groupe.
+Votre règle est active si vous cliquez sur http://adresse-ip-virtuelle-t0 vous serez connecté à votre serveur virtuel qui redirigera le flux sur l'un des serveurs de votre groupe.
 
 ![07 ADD DNAT TO VIRTUAL SERVER 03](images/07-add-dnat-to-virtual-server03.png){.thumbnail}
 
