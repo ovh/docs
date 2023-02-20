@@ -27,7 +27,7 @@ For a number of reasons, you may need to create a DNS zone for your domain name 
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. click `Web Cloud`{.action}, then click `Order`{.action}, then `DNS zone`{.action}.
 
-In the page that pops up, enter the domain name you would like to create an OVHcloud DNS for. Then wait a few moments for the tool to carry out its verifications on the domain name.
+In the page that pops up, enter the domain name you would like to create an OVHcloud DNS zone for. Then wait a few moments for the tool to carry out its verifications on the domain name.
 
 If a message appears notifying you that the DNS zone cannot be created, check that the domain name follows the requirements listed above, or ask the person managing it to do this for you. Once you have ensured that the domain name meets all requirements and is correctly configured, try again.
 
