@@ -10,7 +10,7 @@ updated: 2022-12-07
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização no dia 13/12/2022**
+**Última atualização no dia 20/02/2023**
 
 > [!primary]
 >
@@ -345,7 +345,7 @@ De seguida, execute os seguintes comandos para aplicar a configuração:
 # netplan apply
 ```
 
-### CentOS e Fedora (versão 25 e anteriores)
+### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9), e Fedora (versão 25 e anteriores)
 
 #### 1 - Fazer cópia do ficheiro de configuração (*source file*)
 
@@ -382,6 +382,13 @@ Agora, execute este comando para reiniciar a interface:
 ifup eth0:0
 ```
 
+#### Para AlmaLinux e Rocky Linux
+
+Execute este comando para reiniciar a interface:
+
+```sh
+systemctl restart NetworkManager
+```
 
 ### Gentoo
 
@@ -460,40 +467,32 @@ LABEL_1=ens32:0
 ```
 
 
-### cPanel (em CentOS 6)
+### cPanel (em CentOS 7)
 
-#### 1 - Fazer cópia do ficheiro de configuração (*source file*)
+#### 1: aceder à secção gestão IP da WHM
 
-Primeiro, faça uma cópia do ficheiro de configuração para, se necessário, poder reverter o sistema para o estado inicial.
+Na Área de Cliente WHM, clique em `IP funtions`{.action} e selecione `Add a New IP Address`{.action} no menu à esquerda.
 
-```sh
-cp /etc/ips /etc/ips.bak
-```
+![Adicionar um novo endereço IP](images/Cpanel-1.png){.thumbnail}
 
-#### 2 - Alterar o ficheiro de configuração
+#### 2: adicionar as informações dos Adicionais IP
 
-De seguida, altere o ficheiro /etc/ips da seguinte forma:
+Insira o seu endereço Additional IP sob a forma "xxx.xxx.xxx.xxx" no campo "New IP or IP range to add".
 
-```sh
-editor /etc/ips
-```
-Agora adicione o Additional IP:
+Selecione `255.255.255.255` como máscara de sub-rede e clique em `Submit`{.action}.
 
-```bash
-ADDITIONAL_IP:255.255.255.255:ADDITIONAL_IP
-```
-Por fim, acrescente o IP em `/etc/ipaddrpool`:
-```bash
-ADDITIONAL_IP
-```
+![indicar novas informações sobre o novo endereço IP](images/Cpanel-2.png){.thumbnail}
 
-#### 3 - Reiniciar a interface de rede
+> [!warning]
+>
+> Atenção: se tiver vários endereços IP a configurar num bloco e os adicionar ao mesmo tempo, o sistema WHM irá obrigar-lo a utilizar a máscara de sub-rede `255.255.255.0`.Não é recomendado que utilize esta configuração, deve adicionar cada IP individualmente para utilizar a máscara de sub-rede apropriada `255.255.255.255.255`.
+>
 
-Agora, execute este comando para reiniciar a interface:
+#### 3: verificar a configuração IP atual
 
-```sh
-/etc/init.d/ipaliases restart
-```
+De volta para a secção `IP funtions`{.action}, clique em `Show or Delete Current IPs`{.action para verificar que o endereço Additional IP foi corretamente adicionado.
+
+![check configurgured IP](images/Cpanel-3.png){.thumbnail}
 
 ### Windows Server
 
