@@ -1,7 +1,7 @@
 ---
 title: Mise en place de Nutanix Objects
 slug: objects
-excerpt: 'Comment activer Object dans votre cluster Nutanix' 
+excerpt: 'Comment activer Nutanix Objects dans votre cluster' 
 section: Utilisation avancée
 order: 07
 ---
@@ -10,7 +10,7 @@ order: 07
 
 ## Objectif
 
-**Ce guide vous montre comment mettre en place Nutanix Objects sur votre cluster**
+**Ce guide vous montre comment mettre en place Nutanix Objects sur votre cluster.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -26,18 +26,13 @@ order: 07
 
 ## Présentation
 
-Nutanix Objects implémente une solution **Object Storage** Compatible S3 sur votre cluster Nutanix en s'appuyant sur Prism Central. Vous pouvez consulter le descriptif sur ce lien [Présentation de Nutanix Objects](https://www.nutanix.com/fr/viewer?type=pdf&path=/content/dam/nutanix/fr/resources/datasheets/ds-objects-fr.pdf).
-
-https://www.nutanix.com/content/dam/nutanix/resources/datasheets/ds-objects.pdf
-
+Nutanix Objects implémente une solution **Object Storage** Compatible S3 sur votre cluster Nutanix en s'appuyant sur Prism Central. Vous pouvez consulter le descriptif sur ce [lien](https://www.nutanix.com/fr/viewer?type=pdf&path=/content/dam/nutanix/fr/resources/datasheets/ds-objects-fr.pdf).
 
 ## En pratique
 
 Nous allons voir comment activer Nutanix Objects dans votre solution Nutanix by OVHcloud et valider son bon fonctionnement.
 
 ### Activation du service iSCSI dans Prism Element
-
-Avant de pouvoir activer Nutanix Objects il est nécessaire d'avoir une adresse IP configurée dans **ISCSI Data Sercices IP**. Nous allons configurer cette adresse.
 
 A partir de Prism Central, cliquez sur votre `cluster`{.action} dans le Widget **Cluster Quick Access** pour vous connecter à Prism Element.
 
@@ -53,9 +48,7 @@ Faites défiler la fenêtre, saisissez une `adresse IP privée`{.action} non uti
 
 ### Configuration des VLANs dans Prism Central
 
-Vous devez créer deux VLANs supplémentaires dans la configuration de votre cluster et que ces VLANs accèdent à Prism Central et Prism Element pour pouvoir configurer **Nutanix Objects**. 
-
-Il faut activer IPAM sur les deux VLANs pour distribuer des adresses IP.
+Vous devez créer deux VLANs supplémentaires dans la configuration de votre cluster et que ces VLANs accèdent à Prism Central et Prism Element pour pouvoir configurer **Nutanix Objects**. Ces deux VLANs doivent pouvoir distribuer des adresses IP, IPAM sera activé sur les deux VLANs.
 
 A partir de Prism Central allez dans le menu principal et cliquez sur `Subnets`{.action} dans la catégorie **Network & Security**.
 
@@ -72,7 +65,7 @@ Cochez la case `IP Address Management`{.action} et remplissez ces informations :
 * **VLAN ID** : Saisissez votre numéro de VLAN comme `100`{.action}.
 * **Virtual Switch** : Gardez `vs0`{.action}.
 * **Network IP Address / Prefix** : Ecrivez votre sous-réseau `192.168.100.0/24`{.action}.
-* **Gateway IP Address** : Adresse de votre passerelle `192.168.100.254`{.action}.
+* **Gateway IP Address** : Entrez l'adresse votre passerelle `192.168.100.254`{.action}.
 
 Ensuite cliquez sur `Add IP Pool`{.action}.
 
@@ -87,7 +80,7 @@ Ensuite cliquez sur le `bouton de validation bleu`{.action} à droite.
 
 ![02 Create Storage VLAN 04](images/02-create-storage-vlan04.png){.thumbnail}
 
-Faite défiler la fenêtre et saisissez l'adresse du DNS OVHcloud `213.186.33.99`{.action} dans **Domain Name Servers** et cliquez sur `Create`{.action}.
+Faites défiler la fenêtre et saisissez l'adresse du DNS OVHcloud `213.186.33.99`{.action} dans **Domain Name Servers** et cliquez sur `Create`{.action}.
 
 ![02 Create Storage VLAN 05](images/02-create-storage-vlan05.png){.thumbnail}
 
@@ -102,7 +95,7 @@ Cochez la case `IP Address Management`{.action} et remplissez ces informations :
 * **VLAN ID** : Saisissez votre numéro de VLAN comme `101`{.action}.
 * **Virtual Switch** : Gardez `vs0`{.action}.
 * **Network IP Address / Prefix** : Ecrivez votre sous-réseau `192.168.101.0/24`{.action}.
-* **Gateway IP Address** : Adresse de votre passerelle `192.168.101.254`{.action}.
+* **Gateway IP Address** : Entrez l'adresse de votre passerelle `192.168.101.254`{.action}.
 
 Ensuite cliquez sur `Add IP Pool`{.action}.
 
@@ -117,17 +110,17 @@ Ensuite cliquez sur le `bouton de validation bleu`{.action} à droite.
 
 ![03 Create Public VLAN 03](images/03-create-public-vlan03.png){.thumbnail}
 
-Faite défiler la fenêtre et saisissez l'adresse du DNS OVHcloud `213.186.33.99`{.action} dans **Domain Name Servers** et cliquez sur `Create`{.action}.
+Faites défiler la fenêtre et saisissez l'adresse du DNS OVHcloud `213.186.33.99`{.action} dans **Domain Name Servers** et cliquez sur `Create`{.action}.
 
 ![03 Create Public VLAN 04](images/03-create-public-vlan04.png){.thumbnail}
 
-Vos deux VLANs sont créés, vérifiez qu'ils puisent se connecter à Prism Element et Prism Central au travers de votre passerelle. Vous pouvez vous aider de ce guide pour remplacer la passerelle par défaut pour pouvoir utiliser vos VLANs. [Remplacement de la passerelle OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
+Vos deux VLANs sont créés, vérifiez qu'ils puisent se connecter à Prism Element et Prism Central au travers de votre passerelle. Vous pouvez vous aider de ce guide pour remplacer la passerelle par défaut et utiliser vos VLANs. [Remplacement de la passerelle OVHgateway](https://docs.ovh.com/fr/nutanix/software-gateway-replacement/).
 
 ![03 Create Public VLAN 05](images/03-create-public-vlan05.png){.thumbnail}
 
-### Activation d'object dans Prism Central
+### Activation de Nutanix objects dans Prism Central
 
-Faites défiler le menu et cliquez sur `Objects`{.action} dans la rubrique **Services**.
+Allez dans le menu principal, faites le défiler jusqu'a la rubrique **Services** et cliquez sur `Objects`{.action}.
 
 ![04 Activate Object 01](images/04-activate-objects01.png){.thumbnail}
 
@@ -155,7 +148,7 @@ Remplissez ces informations :
 
 * **Object Store Name** : le nom de votre stockage object `nutanix-objects`{.action}.
 * **Domain** : Le nom de domaine qui sera utilisé pour accéder à votre stockage  `mydomain.com`{.action}.
-* **Cluster** : Le `Cluster`{.action}. ou sera installé Nutanix Objects.
+* **Cluster** : Le `Cluster`{.action} qui doit avoir Nutanix Objects activé.
 * **Worker Nodes** : Le nombre de nœuds qu'utilisera votre stockage Object, prenez le nombre `1`{.action}.
 
 Ensuite cliquez sur `Next`{.action}.
@@ -182,13 +175,13 @@ Lorque la validation est finie cliquez sur `Create Object Store`{.action}.
 
 ![04 Activate Object 11](images/04-activate-objects11.png){.thumbnail}
 
-Votre Stockage Object est actif et accessible au travers de l'adresse **192.168.101.1** qui se trouve dans votre VLAN **public-storage**.
+Patientez une vingtaine de minutes pour que votre Stockage Object soit actif et accessible au travers de l'adresse **192.168.101.1** qui se trouve dans votre VLAN **public-storage**.
 
 ![04 Activate Object 12](images/04-activate-objects12.png){.thumbnail}
 
 ### Création d'une Access Keys à votre stockage.
 
-Pour pouvoir utiliser un stockage Objects il est nécessaire de créer des **Access Keys**, 
+Pour pouvoir utiliser un stockage Objects il est nécessaire de créer des **Access Keys** associés.
 
 Allez sur l'onglet `Access Keys`{.action}.
 
@@ -228,7 +221,7 @@ Après avoir installé awscli nous allons créer deux fichiers de configurations
 
 Créez une dossier `.aws`{.action} dans votre dossier %USERPROFILE% sous Windows ou $HOME sous Linux et MacOS.
 
-Créez ensuite un fichier à l'intérieur de votre dossier nommé `credentials`{.action} avec ces données en utilisant vos access_key et secret_access_key.
+Ajoutez le fichier `credentials`{.action} et remplissez le avec ces données :
 
 ```config
 [default]
@@ -236,7 +229,7 @@ aws_access_key_id=votre-acces-key
 aws_secret_access_key=votre-secret-access key
 ```
 
-Ajouter un deuxième fichier nommé `config`{.action} avec ces informations.
+Ensuite ajouter un deuxième fichier nommé `config`{.action} avec ces informations : 
 
 ```config
 [default]
