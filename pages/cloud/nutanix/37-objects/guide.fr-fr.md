@@ -10,7 +10,7 @@ order: 07
 
 ## Objectif
 
-**Ce guide vous montre comment mettre en place Objects sur votre cluster Nutanix**
+**Ce guide vous montre comment mettre en place Nutanix Objects sur votre cluster**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -26,14 +26,14 @@ order: 07
 
 ## Présentation
 
-Nutanix Objects implemente une solution **Object Storage** Comptatible S3 sur votre cluster Nutanix en s'appuyant sur Prism Central. Vous pouvez consulter le descritptif sur ce lien [Présentation de Nutanix Objects](https://www.nutanix.com/fr/viewer?type=pdf&path=/content/dam/nutanix/fr/resources/datasheets/ds-objects-fr.pdf).
+Nutanix Objects implemente une solution **Object Storage** Comptatible S3 sur votre cluster Nutanix en s'appuyant sur Prism Central. Vous pouvez consulter le descriptif sur ce lien [Présentation de Nutanix Objects](https://www.nutanix.com/fr/viewer?type=pdf&path=/content/dam/nutanix/fr/resources/datasheets/ds-objects-fr.pdf).
 
 https://www.nutanix.com/content/dam/nutanix/resources/datasheets/ds-objects.pdf
 
 
 ## En pratique
 
-Nous allons voir comment activer Nutanix Objects dans votre solution Nutanix by OVHcloud et valider son fonctionnement.
+Nous allons voir comment activer Nutanix Objects dans votre solution Nutanix by OVHcloud et valider son bon fonctionnement.
 
 ### Activation du service iSCSI dans Prism Element
 
@@ -43,11 +43,11 @@ A partir de Prism Central, cliquez sur votre `cluster`{.action} dans le Widget *
 
 ![01 Check ISCSI ADDRESS 01](images/01-check-iscsi-address01.png){.thumbnail}
 
-Cliquez sur le nom de votre `cluster`{.action} en haut à gauche à coté du **X**.
+Cliquez sur le nom de votre `cluster`{.action} en haut à gauche à côté du **X**.
 
 ![01 Check ISCSI ADDRESS 02](images/01-check-iscsi-address02.png){.thumbnail}
 
-Faites défiler la fenêtre, saisissez une `adresse IP privée`{.action} non utilisée de votre réseau d'administration dans la rubrique **ISCSI Data Sercices IP**, ensuite cliquez sur `Save`{.action}.
+Faites défiler la fenêtre, saisissez une `adresse IP privée`{.action} non utilisée de votre réseau d'administration dans la rubrique **ISCSI Data Services IP**, ensuite cliquez sur `Save`{.action}.
 
 ![01 Check ISCSI ADDRESS 03](images/01-check-iscsi-address03.png){.thumbnail}
 
@@ -156,7 +156,7 @@ Remplissez ces informations :
 * **Object Store Name** : le nom de votre stockage object `nutanix-objects`{.action}.
 * **Domain** : Le nom de domaine qui sera utilsé pour accéder à votre stockage  `mydomain.com`{.action}.
 * **Cluster** : Le `Cluster`{.action}. ou sera installé Nutanix Objects.
-* **Worker Nodes** : Le nombre de noeud qu'utilisera votre stockage OBject, prenez le nombre `1`{.action}.
+* **Worker Nodes** : Le nombre de noeuds qu'utilisera votre stockage Object, prenez le nombre `1`{.action}.
 
 Ensuite cliquez sur `Next`{.action}.
 
@@ -174,7 +174,7 @@ Ensuite cliquez sur `Save & Continue`{.action}.
 
 ![04 Activate Object 09](images/04-activate-objects09.png){.thumbnail}
 
-Un contrôle de connexion entre les VLAN , Prism Element et Prism Central est effectué.
+Un contrôle de connexion entre les VLANs, Prism Element et Prism Central est effectué.
 
 ![04 Activate Object 10](images/04-activate-objects10.png){.thumbnail}
 
@@ -182,7 +182,7 @@ Lorque la validation est finie cliquez sur `Create Object Store`{.action}.
 
 ![04 Activate Object 11](images/04-activate-objects11.png){.thumbnail}
 
-Votre Stockage Object est actif et est accessible au travers de l'adresse **192.168.101.1** qui se trouve dans votre VLAN **public-storage**.
+Votre Stockage Object est actif et accessible au travers de l'adresse **192.168.101.1** qui se trouve dans votre VLAN **public-storage**.
 
 ![04 Activate Object 12](images/04-activate-objects12.png){.thumbnail}
 
@@ -211,12 +211,12 @@ Cliquez sur `Download Keys`{.action}.
 ![05 Create Access Keys 05](images/05-create-access-key05.png){.thumbnail}
 
 > [!warning]
-> Vos identifiants d'accès sont afffichés dans votre navigateur WEB , prenez soin de noter ces informations (Access Key et secret Key ) avant de fermer cette fenêtre.
+> Vos identifiants d'accès sont affichés dans votre navigateur WEB, prenez soin de noter ces informations (Access Key et secret Key ) avant de fermer cette fenêtre.
 >
 
 ![05 Create Access Keys 06](images/05-create-access-key06.png){.thumbnail}
 
-Votre utilisateur est créé avec ses identifiants, il est possible de regénérer les accès Keys et de créer un nouveau identifiant.
+Votre utilisateur est créé avec ses identifiants, il est possible de regénérer les accès Keys et de créer un nouvel identifiant.
 
 ![05 Create Access Keys 07](images/05-create-access-key07.png){.thumbnail}
 
@@ -226,7 +226,7 @@ Pour valider le bon fonctionnement de notre stockage Object nous allons utiliser
 
 Après avoir installé awscli nous allons créer deux fichiers de configurations sur un ordinateur qui a accès au VLAN public-storage 
 
-Créez une dossier `.aws`{.action}. dans votre dossier %USERPROFILE% sous Windows ou $HOME sous Linux et MacOS.
+Créez une dossier `.aws`{.action} dans votre dossier %USERPROFILE% sous Windows ou $HOME sous Linux et MacOS.
 
 Créez ensuite un fichier à l'intérieur de votre dossier nommé `credentials`{.action} avec ces données en utilisant vos access_key et secret_access_key.
 
@@ -249,15 +249,15 @@ Ensuite utilisez cette commande pour créer un bucket.
 aws --endpoint-url https://192.168.101.1 s3 mb s3://my-bucket --region=us-east-1 --no-verify-ssl
 ```
 
-Le bucket est créé avec un message d'avertissement concernant le certificat SSL, dans un environement de production il faut utiliser un certificat SSL.
+Le bucket est créé avec un message d'avertissement concernant le certificat SSL, dans un environnement de production il faut utiliser un certificat SSL.
 
-Maintenant que le bucket est créé nous allons utiliser un navigateur pour se connecter à l'interface WEB fournie par Nutanix afin de vérifier l'existance de notre bucket.
+Maintenant que le bucket est créé nous allons utiliser un navigateur pour se connecter à l'interface WEB fournie par Nutanix afin de vérifier l'existence de notre bucket.
 
 Au travers d'un navigateur WEB connectez vous à cette URL `https://192.168.101.1`{.action} qui correspond à votre point d'accès **Nutanix Objects** et saisissez vos `identifiants`{.action} (access_key et secret_key). Ensuite cliquez sur `Login`{.action}.
 
 ![06 Connect to WEB interfaces 01](images/06-connect-to-web-interfaces01.png){.thumbnail}
 
-Vous voyez le bucket que vous avez créé en ligne de commande. Vous pouvez pouvez créer et supprimer des bucket ou des objets dans votre interface WEB.
+Vous voyez le bucket que vous avez créé en ligne de commande. Vous pouvez créer et supprimer des buckets ou des objets dans votre interface WEB.
 
 ![06 Connect to WEB interfaces 02](images/06-connect-to-web-interfaces02.png){.thumbnail}
 
