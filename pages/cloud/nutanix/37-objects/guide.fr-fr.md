@@ -154,9 +154,9 @@ Cliquez sur `Create Object Store`{.action}.
 Remplissez ces informations : 
 
 * **Object Store Name** : le nom de votre stockage object `nutanix-objects`{.action}.
-* **Domain** : Le nom de domaine qui sera utilsé pour accéder à votre stockage  `mydomain.com`{.action}.
+* **Domain** : Le nom de domaine qui sera utilisé pour accéder à votre stockage  `mydomain.com`{.action}.
 * **Cluster** : Le `Cluster`{.action}. ou sera installé Nutanix Objects.
-* **Worker Nodes** : Le nombre de noeuds qu'utilisera votre stockage Object, prenez le nombre `1`{.action}.
+* **Worker Nodes** : Le nombre de nœuds qu'utilisera votre stockage Object, prenez le nombre `1`{.action}.
 
 Ensuite cliquez sur `Next`{.action}.
 
@@ -211,7 +211,7 @@ Cliquez sur `Download Keys`{.action}.
 ![05 Create Access Keys 05](images/05-create-access-key05.png){.thumbnail}
 
 > [!warning]
-> Vos identifiants d'accès sont affichés dans votre navigateur WEB, prenez soin de noter ces informations (Access Key et secret Key ) avant de fermer cette fenêtre.
+> Vos identifiants d'accès sont affichés dans votre navigateur WEB, prenez soin de noter ces informations (Access Key et secret Key) avant de fermer cette fenêtre.
 >
 
 ![05 Create Access Keys 06](images/05-create-access-key06.png){.thumbnail}
@@ -222,9 +222,9 @@ Votre utilisateur est créé avec ses identifiants, il est possible de regénér
 
 ### Validation et test de bon fonctionnement
 
-Pour valider le bon fonctionnement de notre stockage Object nous allons utiliser l'outils awscli d'AWS et créer un bucket. Vous pouvez vous aider de ce [guide](https://docs.aws.amazon.com/fr_fr/cli/latest/userguide/getting-started-install.html). Cet outils en ligne de commande est disponible sous Windows, Linux et MacOS.
+Pour valider le bon fonctionnement de notre stockage Object nous allons utiliser l'outils en ligne de commande awscli d'AWS et créer un bucket. Vous pouvez vous aider de ce [guide](https://docs.aws.amazon.com/fr_fr/cli/latest/userguide/getting-started-install.html). Cet outil est disponible sous Windows, Linux et MacOS.
 
-Après avoir installé awscli nous allons créer deux fichiers de configurations sur un ordinateur qui a accès au VLAN public-storage 
+Après avoir installé awscli nous allons créer deux fichiers de configurations sur un ordinateur qui a accès au VLAN public-storage et utiliser la commande aws pour créer un bucket.
 
 Créez une dossier `.aws`{.action} dans votre dossier %USERPROFILE% sous Windows ou $HOME sous Linux et MacOS.
 
