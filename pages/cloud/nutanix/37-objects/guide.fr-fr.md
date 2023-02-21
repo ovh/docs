@@ -26,7 +26,7 @@ order: 07
 
 ## Présentation
 
-Nutanix Objects implemente une solution **Object Storage** Comptatible S3 sur votre cluster Nutanix en s'appuyant sur Prism Central. Vous pouvez consulter le descriptif sur ce lien [Présentation de Nutanix Objects](https://www.nutanix.com/fr/viewer?type=pdf&path=/content/dam/nutanix/fr/resources/datasheets/ds-objects-fr.pdf).
+Nutanix Objects implémente une solution **Object Storage** Compatible S3 sur votre cluster Nutanix en s'appuyant sur Prism Central. Vous pouvez consulter le descriptif sur ce lien [Présentation de Nutanix Objects](https://www.nutanix.com/fr/viewer?type=pdf&path=/content/dam/nutanix/fr/resources/datasheets/ds-objects-fr.pdf).
 
 https://www.nutanix.com/content/dam/nutanix/resources/datasheets/ds-objects.pdf
 
@@ -81,7 +81,7 @@ Ensuite cliquez sur `Add IP Pool`{.action}.
 Saisissez ces informations :
 
 * **Start Address** : Adresse de début de votre étendue comme `192.168.100.10`{.action}.
-* **End Address** : Address de fin de votre étendue comme `192.168.100.200`{.action}.
+* **End Address** : Adresse de fin de votre étendue comme `192.168.100.200`{.action}.
 
 Ensuite cliquez sur le `bouton de validation bleu`{.action} à droite.
 
@@ -91,7 +91,7 @@ Faite défiler la fenêtre et saisissez l'adresse du DNS OVHcloud `213.186.33.99
 
 ![02 Create Storage VLAN 05](images/02-create-storage-vlan05.png){.thumbnail}
 
-Votre premier VLAN est créé nous allons créer le deuxième VLAN, cliquez sur  `Create Subnet`{.action}.
+Votre premier VLAN est créé nous allons créer le deuxième VLAN, cliquez sur `Create Subnet`{.action}.
 
 ![03 Create Public VLAN 01](images/03-create-public-vlan01.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Ensuite cliquez sur `Add IP Pool`{.action}.
 Saisissez ces informations :
 
 * **Start Address** : Adresse de début de votre étendue comme `192.168.101.10`{.action}.
-* **End Address** : Address de fin de votre étendue comme `192.168.101.200`{.action}.
+* **End Address** : Adresse de fin de votre étendue comme `192.168.101.200`{.action}.
 
 Ensuite cliquez sur le `bouton de validation bleu`{.action} à droite.
 
