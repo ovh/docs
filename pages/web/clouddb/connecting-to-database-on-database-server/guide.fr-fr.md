@@ -37,7 +37,7 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 #### Par phpMyAdmin OVHcloud 
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès dans le cadre **« Administration de la base de données »** sous la mention « Interface utilisateur ».
 

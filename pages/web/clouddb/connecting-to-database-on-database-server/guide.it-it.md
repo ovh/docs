@@ -41,7 +41,7 @@ order: 03
 
 ####  Per phpMyAdmin OVHcloud 
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
 
 Dalla scheda `Informazioni generali`, il link di accesso nel riquadro **"Amministrazione del database"** è disponibile nella sezione "Interfaccia utente".
 

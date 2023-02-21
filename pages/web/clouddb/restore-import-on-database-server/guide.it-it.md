@@ -34,7 +34,7 @@ In caso di errore sul database, è necessario essere in grado di ripristinare un
 
 ### Ripristina e importa un database dallo Spazio Cliente
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server. Clicca sulla scheda `Database`.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server. Clicca sulla scheda `Database`.
 
 Al livello della colonna **"Backup"**, la cifra corrisponde al numero di backup disponibili per il tuo database.
 

@@ -23,7 +23,7 @@ With the Web Cloud Databases database servers, you can influence your server’s
 
 ### View general information on your database server
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
 
 You can also view important information on your SQL instance. Please take a few moments to ensure that the information displayed is correct, and corresponds to the instructions below.
 
@@ -48,7 +48,7 @@ You can access your Web Cloud Databases from your OVHcloud web hosting plans or 
 
 In order for your Web Cloud Databases instance to be accessible, you must enter the IP addresses or ranges that can connect to your database.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Databases`{.action} section, then select the Web Cloud Databases instance concerned. Click on the `General information`{.action} tab.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud Databases`{.action} section, then select the Web Cloud Databases instance concerned. Click on the `General information`{.action} tab.
 
 To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
@@ -66,7 +66,7 @@ For an OVHcloud web hosting plan, you can simply tick `Authorise OVHcloud web ho
 
 ### Modify your Web Cloud Databases offer
 
-To modify the solution for your Web Cloud Databases instance, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click the `Web Cloud` tab, and then click `Database`{.action}. Select the name of your database server.
+To modify the solution for your Web Cloud Databases instance, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click the `Web Cloud` tab, and then click `Web Cloud Databases`{.action}. Select the name of your database server.
 
 In the **General information** tab, displayed by default, click on `...`{.action} to the right of “RAM”, then on `Change the amount of RAM`{.action} to access the order for this modification.
 
@@ -89,7 +89,7 @@ Once you have confirmed your contracts, you will be redirected to the purchase o
 
 ### Modifying my database server’s configuration
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your Web Cloud Databases server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
 
 #### MySQL and MariaDB instances
 
@@ -202,7 +202,7 @@ show variables like "version";
 
 This allows you to view the query execution time on your database server in the last 24 hours.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your Web Cloud Databases server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
 
 Go to the `Metrics` tab for your database server. You will find the graph **Query Execution Time Statistics**.
 
@@ -216,7 +216,7 @@ Go to the `Metrics` tab for your database server. You will find the graph **Quer
 
 These logs, labelled **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your Web Cloud Databases server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
 
 In the `General information` tab, you will find the **SFTP** section in the **Connection information** box.
 
@@ -228,7 +228,7 @@ If this file is empty, you do not have any slow queries.
 
 #### Monitoring the RAM used
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your Web Cloud Databases server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **RAM usage statistics**.
 
@@ -238,7 +238,7 @@ Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph *
 
 This graph allows you to track, over the last 24 hours, the load of connections per minute on your database server.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your Web Cloud Databases server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Web Cloud Databases`{.action}. Select the name of your Web Cloud Databases server.
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **Statistics for total connections per minute**.
 

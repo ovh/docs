@@ -34,11 +34,11 @@ En la pestaña `Información general`, en el cuadro `Configuración`, haga clic 
 
 ![Información general](images/web-cloud-databases-activation.png){.thumbnail}
 
-Para finalizar, siga las indicaciones que se ofrecen a continuación para determinar el tipo y la versión de su servidor Web Cloud Databases. A continuación, podrá acceder a ella desde la columna de la izquierda en la `Base de Datos`{.action}.
+Para finalizar, siga las indicaciones que se ofrecen a continuación para determinar el tipo y la versión de su servidor Web Cloud Databases. A continuación, podrá acceder a ella desde la columna de la izquierda en la `Web Cloud Databases`{.action}.
 
 ### Ver la información general del servicio
 
-En la columna izquierda de la sección Web del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+En la columna izquierda de la sección Web del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Web Cloud Databases`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 > [!primary]
 >

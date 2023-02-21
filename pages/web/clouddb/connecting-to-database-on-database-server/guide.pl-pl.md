@@ -41,7 +41,7 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 
 ####  Przez phpMyAdmin OVHcloud 
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
 
 W zakładce `Informacje ogólne` link w polu **"Zarządzanie bazą danych"** znajduje się pod nagłówkiem "Interfejs użytkownika".
 

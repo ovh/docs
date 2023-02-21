@@ -27,7 +27,7 @@ Web Cloud Databases Datenbanken geben Ihnen die Möglichkeit, auf die globalen E
 
 ### Abrufen der allgemeinen Informationen eines Datenbank-Servers
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud Databases`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
 
 Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitten Sie, sich einen Moment Zeit zu nehmen und zu überprüfen, dass die angezeigten Daten korrekt sind bzw. mit den nachfolgenden Angaben übereinstimmen.
 
@@ -52,7 +52,7 @@ Ihre Web Cloud Databases ist über Ihre OVHcloud Webhostings oder/und über das 
 
 Damit auf Ihre Web Cloud Databases Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen.
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende Web Cloud Databases Instanz.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud Databases`{.action} und klicken Sie anschließend auf die entsprechende Web Cloud Databases Instanz.
 
 Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
@@ -70,7 +70,7 @@ Für ein OVHcloud Webhosting können Sie einfach `Den OVHcloud Webhostings den Z
 
 #### Ihren Web Cloud Databases Dienst ändern
 
-Um Ihren Web Cloud Databases Dienst zu bearbeiten, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+Um Ihren Web Cloud Databases Dienst zu bearbeiten, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 
@@ -92,7 +92,7 @@ Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um 
 
 ### Die Konfiguration meines Datenbankservers ändern
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. und wählen Sie den Namen Ihres Web Cloud Databases Servers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. und wählen Sie den Namen Ihres Web Cloud Databases Servers aus. 
 
 #### MySQL und MariaDB Instanzen
 
@@ -205,7 +205,7 @@ show variables like "version";
 
 So können Sie die Ausführungsdauer auf Ihrem Datenbankserver während der letzten 24 Stunden visualisieren.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **Statistiken zur Ausführungsdauer der Anfragen**.
 
@@ -219,7 +219,7 @@ Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die
 
 Diese Logs (**"slow-query.log"**) können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf Datenbanken. Wählen Sie den Namen Ihres Datenbankservers aus.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**.
 
@@ -231,7 +231,7 @@ Wenn diese Datei leer ist, haben Sie keine langsamen Anfragen.
 
 #### Überprüfung der RAM Nutzung
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken zum verwendeten RAM**.
 
@@ -241,7 +241,7 @@ Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik
 
 Diese Anzeige ermöglicht es, die Verbindungslast pro Minute während der letzten 24 Stunden auf Ihrem Datenbankserver zu verfolgen.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Web Cloud Databases`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken der Gesamtzahl der Verbindungen pro Minute**.
 

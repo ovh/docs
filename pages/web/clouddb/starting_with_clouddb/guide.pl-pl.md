@@ -34,11 +34,11 @@ W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.
 
 ![Informacje ogólne](images/web-cloud-databases-activation.png){.thumbnail}
 
-Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej, aby określić typ i wersję Twojego prywatnego Web Cloud Databases. Będzie on dostępny w kolumnie po lewej stronie w `bazie danych`{.action}.
+Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej, aby określić typ i wersję Twojego prywatnego Web Cloud Databases. Będzie on dostępny w kolumnie po lewej stronie w `Web Cloud Databases`{.action}.
 
 ### Wyświetlanie informacji ogólnych o instancji
 
-W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji [Bazy danych](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Web Cloud Databases`, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 > [!primary]
 >

@@ -23,7 +23,7 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ### Créer une base de données
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Dirigez-vous dans l'onglet `Bases de données` et enfin sur `Ajouter une base de données`{.action}
 
@@ -44,7 +44,7 @@ Cliquez sur `Valider`{.action}.
 
 Pour utiliser un serveur de bases de données OVHcloud, il est nécessaire de créer des utilisateurs qui auront des droits spécifiques pour se connecter à une base de données.
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Dirigez-vous dans l'onglet `Utilisateurs et droits` et cliquez sur `Ajouter un utilisateur`{.action}
 
@@ -56,7 +56,7 @@ Renseignez un « nom d'utilisateur  » et un « mot de passe » puis cliquez sur
 
 Pour autoriser un utilisateur à effectuer des actions sur une base de données, il est nécessaire de lui attribuer des droits.
 
-Pour gérer les droits de chaque utilisateur, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données. Cliquez sur l'onglet `Utilisateurs et droits`.
+Pour gérer les droits de chaque utilisateur, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données. Cliquez sur l'onglet `Utilisateurs et droits`.
 
 Cliquez sur le bouton `...`{.action} à droite de l'utilisateur concerné puis sur `Gérer les droits`{.action}.
 
@@ -87,7 +87,7 @@ Voici la description des 3 types de droits proposés :
 > une sauvegarde et de la télécharger de votre côté avant toute suppression.
 > 
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Pour supprimer une base de données sur votre serveur de bases de données, dirigez-vous dans l'onglet `Bases de données` puis cliquez sur le bouton `...`{.action} à droite de la base de données concernée et enfin cliquez sur `Supprimer la base`{.action} .
 

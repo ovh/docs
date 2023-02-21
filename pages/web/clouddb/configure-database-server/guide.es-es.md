@@ -27,7 +27,7 @@ Los servidores Web Cloud Databases le ofrecen la posibilidad de modificar los pa
 
 ### Ver la información general del servidor de bases de datos
 
-Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Bases de datos`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud Databases`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 En dicha pestaña podrá consultar la información más importante relativa al servicio de SQL. Le invitamos a tomarse unos momentos para asegurarse de que la información mostrada es correcta y se corresponde con las indicaciones que se ofrecen a continuación.
 
@@ -52,7 +52,7 @@ Puede acceder a su Web Cloud Databases desde su alojamiento web de OVHcloud o de
 
 Para que sea posible acceder a la instancia Web Cloud Databases, deberá indicar las direcciones IP o rangos de IP autorizados a conectarse a la base de datos.
 
-Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Bases de datos`{.action} y seleccione la instancia Web Cloud Databases correspondiente.
+Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud Databases`{.action} y seleccione la instancia Web Cloud Databases correspondiente.
 
 Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Añadir una dirección IP/máscara`{.action}.
 
@@ -70,7 +70,7 @@ Para un alojamiento web de OVHcloud, solo tiene que marcar `Autorizar a los aloj
 
 ### Modificar su solución Web Cloud Databases
 
-Para cambiar su solución Web Cloud Databases, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
+Para cambiar su solución Web Cloud Databases, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
 En la pestaña **"Información general"** que se muestra por defecto, haga clic en `...`{.action} a la derecha de la indicación "RAM" y luego en `Cambiar la cantidad de RAM`{.action} para acceder al pedido de esta modificación.
 
 ![Web Cloud Databases](images/web-cloud-databases-order-ram01.png){.thumbnail}
@@ -92,7 +92,7 @@ Tras la validación de los contratos, será redirigido a la orden de pedido, don
 
 ### Modificar la configuración de mi servidor de bases de datos
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre de su servidor Web Cloud Databases.
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre de su servidor Web Cloud Databases.
 
 #### Instancia MySQL y MariaDB
 
@@ -205,7 +205,7 @@ show variables like "version";
 
 Para visualizar el tiempo de ejecución de las consultas en el servidor de bases de datos en las últimas 24 horas.
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
 
 Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consultar la gráfica **"Estadísticas del tiempo de ejecución de las consultas"**.
 
@@ -219,7 +219,7 @@ Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consult
 
 Estos logs, denominados **"slow-query.log"**, pueden recuperarse en la raíz del espacio SFTP de su servidor de bases de datos. 
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
 
 En la pestaña `Información general`, encontrará la sección **"SFTP"** en el recuadro **"Información de conexión".**
 
@@ -232,7 +232,7 @@ Si el archivo está vacío, no tiene una petición lenta.
 
 #### Seguimiento de la RAM consumida
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
 
 Acceda a la pestaña `Métricas` del área de cliente. Encontrará el gráfico **"Estadísticas de memoria RAM utilizada"**.
 
@@ -242,7 +242,7 @@ Acceda a la pestaña `Métricas` del área de cliente. Encontrará el gráfico *
 
 Esta gráfica permite realizar un seguimiento, en las últimas 24 horas, de la carga de las conexiones por minuto al servidor de la base de datos.
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
 
 Acceda a la pestaña `Métricas` del área de cliente. Puede consultar el gráfico **"Estadísticas del total de conexiones por minuto"**.
 

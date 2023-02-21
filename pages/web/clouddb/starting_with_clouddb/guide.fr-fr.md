@@ -30,11 +30,11 @@ Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliqu
 
 ![Informations générales](images/web-cloud-databases-activation.png){.thumbnail}
 
-Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur Web Cloud Databases. Il sera ensuite accessible depuis la colonne de gauche dans `Base de données`{.action}.
+Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur Web Cloud Databases. Il sera ensuite accessible depuis la colonne de gauche dans `Web Cloud Databases`{.action}.
 
 ### Visionner les informations générales de l'instance
 
-Dans la barre de services à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
+Dans la barre de services à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la section `Web Cloud Databases`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
 
 > [!primary]
 >
@@ -129,7 +129,7 @@ Les étapes ci-dessous décrivent comme importer une base de données grâce à 
 
 - **Étape 1 : accéder à l'interface d'importation**
 
-Depuis l'onglet `Bases de données`{.action}, cliquez sur le pictogramme en forme de roue dentée puis sur `Importer un fichier`{.action}. Sur la fenêtre qui s'affiche, cochez la case `Importer un nouveau fichier`{.action} puis cliquez sur `Suivant`{.action}.
+Depuis l'onglet `Bases de donées`{.action}, cliquez sur le pictogramme en forme de roue dentée puis sur `Importer un fichier`{.action}. Sur la fenêtre qui s'affiche, cochez la case `Importer un nouveau fichier`{.action} puis cliquez sur `Suivant`{.action}.
 
 ![Web Cloud Databases](images/web-cloud-databases-add-import-step1.png){.thumbnail}
 
