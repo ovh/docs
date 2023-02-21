@@ -4,10 +4,10 @@ slug: database-overquota
 excerpt: "Come agire in caso di saturazione del database"
 section: Database
 order: 06
-updated: 2023-01-19
+updated: 2023-02-16
 ---
 
-**Ultimo aggiornamento: 23/01/2023**
+**Ultimo aggiornamento: 16/02/2023**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -125,15 +125,15 @@ Una volta stabilito se il contenuto delle tue tabelle è necessario per il funzi
 
 Per spostare il database su un database più voluminoso,
 
-Consulta la nostra offerta di database [Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) per scegliere il tuo nuovo servizio di database. 
+Consulta la nostra offerta di database [Web Cloud Databasess](https://www.ovh.it/cloud/cloud-databases/) per scegliere il tuo nuovo servizio di database. 
 
 Consigliamo questa offerta per database voluminosi.
 
 Segui le nostre guide per spostare il contenuto del tuo database precedente verso la nuova:
 
 - [Esporta il tuo database esistente](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/)
-- [Iniziare a utilizzare l'offerta Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
-- [Importare il tuo database precedente nella tua offerta Cloud Database](https://docs.ovh.com/it/clouddb/ripristinare-importare-database/)
+- [Iniziare a utilizzare l'offerta Web Cloud Databasess](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
+- [Importare il tuo database precedente nella tua offerta Web Cloud Databases](https://docs.ovh.com/it/clouddb/ripristinare-importare-database/)
 
 #### Caso n. 2 - Una parte o l'insieme del contenuto della tavola voluminosa non è necessaria al funzionamento del tuo sito
 
