@@ -3,7 +3,7 @@ title: "Tutorial - Installation and configuration of Cecil, a static site genera
 slug: install-configure-cecil
 excerpt: "This tutorial explains how Cecil allows you to create your static website using a modern template engine (Jamstack)"
 section: 'Tutorials'
-order: 04
+order: 030
 updated: 2023-01-17
 ---
 

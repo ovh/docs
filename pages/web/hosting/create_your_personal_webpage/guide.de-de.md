@@ -3,19 +3,25 @@ title: 'Tutorial - Eigene Webseite bei OVHcloud erstellen'
 slug: create-your-own-web-page
 excerpt: 'Erfahren Sie hier, wie Sie Ihre erste Webseite auf einem kostenlosen Start 10M Webhosting erstellen'
 section: "Tutorials"
-order: 01
-updated: 2022-11-22
+order: 012
+updated: 2023-02-17
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.11.2022**
+**Letzte Aktualisierung am 17.02.2023**
 
 ## Ziel
 
 Hier erfahren Sie, wie Sie die Homepage einer Website auf einem Start 10M Hosting erstellen, das Sie kostenlos zu einem Domainnamen bei OVHcloud erhalten.
+
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+>
 
 ## Voraussetzungen
 
@@ -417,7 +423,7 @@ Einige Beispiele für Websites und Webanwendungen mit Bootstrap:
 - [https://bootstraptaste.com/](https://bootstraptaste.com/)
 - [https://bootstrapthemes.co/](https://bootstrapthemes.co/).
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name=“go-further“></a>
 
 Im Web finden Sie viele Wissensressourcen, um Ihre Praxis zu verbessern, ganze Elemente des Codes oder Teile des Codes zu kopieren oder Funktionen zu Ihrer Website hinzuzufügen, ohne Fehler oder Fehlfunktionen zu riskieren. Hier einige Beispiele:
 

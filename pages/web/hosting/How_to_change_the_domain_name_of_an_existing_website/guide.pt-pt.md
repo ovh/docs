@@ -3,7 +3,7 @@ title: "Casos de uso - Como alterar o domínio de um site existente"
 slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Descubra como alterar o nome de domínio de um site existente"
 section: "Tutoriais"
-order: 02
+order: 011
 updated: 2022-10-25
 ---
 

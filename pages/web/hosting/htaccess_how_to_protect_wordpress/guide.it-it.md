@@ -3,7 +3,7 @@ title: "Tutorial - Utilizza il file htaccess con WordPress"
 slug: use-htaccess-with-wordpress
 excerpt: "Come proteggere un blog WordPress con uno o più file htaccess"
 section: Tutorial
-order: 07
+order: 022
 updated: 2023-02-07
 ---
 

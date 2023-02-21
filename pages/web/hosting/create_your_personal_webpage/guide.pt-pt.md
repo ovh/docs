@@ -3,19 +3,26 @@ title: 'Tutorial - Criar a sua página web pessoal na OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Saiba como criar a primeira página num alojamento gratuito Start 10M'
 section: "Tutoriais"
-order: 01
-updated: 2022-11-22
+order: 012
+updated: 2023-02-17
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/11/2022**
+**Última atualização: 17/02/2023**
 
 ## Objetivo
 
 Saiba como criar a primeira página de um site num alojamento Start 10M grátis para qualquer compra de um domínio na OVHcloud.
+
+> [!warning]
+>
+> A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
+>
 
 ## Requisitos
 
@@ -417,7 +424,7 @@ Alguns exemplos de sites e aplicações web realizados com Bootstrap:
 - [https://bootstraptaste.com/](https://bootstraptaste.com/)
 - [https://bootstrapthemes.co/](https://bootstrapthemes.co/).
 
-## Saiba mais
+## ## Quer saber mais? <a name="go-further"></a>
 
 Encontrará muitos recursos na web para aprender e melhorar a sua prática, copiar elementos inteiros de código ou porções de código, adicionar funcionalidades ao seu site sem correr o risco de ter erros ou disfunções. Veja alguns sites de referência:
 

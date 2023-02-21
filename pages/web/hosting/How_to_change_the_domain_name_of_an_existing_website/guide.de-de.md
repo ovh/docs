@@ -3,7 +3,7 @@ title: "Anwendungsbeispiele - Domainnamen einer Website ändern"
 slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Erfahren Sie hier, wie Sie den Domainnamen einer bestehenden Website ändern"
 section: "Tutorials"
-order: 02
+order: 011
 updated: 2022-10-25
 ---
 

@@ -3,7 +3,7 @@ title: "Use cases - How to change the domain of an existing website"
 slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Find out how to change the domain name of an existing website"
 section: "Tutorials"
-order: 02
+order: 011
 updated: 2022-10-25
 ---
 
