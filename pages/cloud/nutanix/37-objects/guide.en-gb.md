@@ -242,7 +242,7 @@ The bucket is created with a warning message about the SSL certificate, in a pro
 
 Now that the bucket is created we will use a browser to connect to the web interface provided by Nutanix in order to check the existence of our bucket.
 
-Using a web browser, connect to this URL `https://192.168.101.1`{.action} which corresponds to your access point **Nutanix Objects** and enter your `credentials`{.action} (access_key and secret_key). Then click on `Login`{.action}.
+Using a web browser, connect to this URL `https://192.168.101.1/objectsbrowser`{.action} which corresponds to your access point **Nutanix Objects** and enter your `credentials`{.action} (access_key and secret_key). Then click on `Login`{.action}.
 
 ![06 Connect to WEB interfaces 01](images/06-connect-to-web-interfaces01.png){.thumbnail}
 

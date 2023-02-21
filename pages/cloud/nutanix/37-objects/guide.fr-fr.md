@@ -246,7 +246,7 @@ Le bucket est créé avec un message d'avertissement concernant le certificat SS
 
 Maintenant que le bucket est créé nous allons utiliser un navigateur pour se connecter à l'interface WEB fournie par Nutanix afin de vérifier l'existence de notre bucket.
 
-Au travers d'un navigateur WEB connectez vous à cette URL `https://192.168.101.1`{.action} qui correspond à votre point d'accès **Nutanix Objects** et saisissez vos `identifiants`{.action} (access_key et secret_key). Ensuite cliquez sur `Login`{.action}.
+Au travers d'un navigateur WEB connectez vous à cette URL `https://192.168.101.1/objectsbrowser`{.action} qui correspond à votre point d'accès **Nutanix Objects** et saisissez vos `identifiants`{.action} (access_key et secret_key). Ensuite cliquez sur `Login`{.action}.
 
 ![06 Connect to WEB interfaces 01](images/06-connect-to-web-interfaces01.png){.thumbnail}
 
