@@ -27,7 +27,7 @@ Una base de datos (también llamada *database*, DB o BD) permite almacenar eleme
 
 ### Crear una base de datos
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
 
 Abra la pestaña `Bases de datos` y haga clic en `Añadir una base de datos.`{.action}
 
@@ -48,7 +48,7 @@ Haga clic en `Aceptar`{.action}.
 
 Para utilizar un servidor de bases de datos de OVHcloud, es necesario crear usuarios que tengan permisos específicos para conectarse a una base de datos.
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
 
 Acceda a la pestaña `Usuarios y permisos` y haga clic en `Añadir un usuario`{.action}
 
@@ -60,7 +60,7 @@ Introduzca un nombre de usuario y una contraseña y haga clic en `Aceptar`{.acti
 
 Para autorizar a un usuario a realizar acciones en una base de datos, es necesario asignarle permisos.
 
-Para administrar los permisos de cada usuario, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos. Haga clic en la pestaña `Usuarios y permisos`.
+Para administrar los permisos de cada usuario, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos. Haga clic en la pestaña `Usuarios y permisos`.
 
 Haga clic en el botón `...`{.action} a la derecha del usuario correspondiente y, seguidamente, en `Gestionar los permisos`{.action}.
 
@@ -90,7 +90,7 @@ La descripción de los tres tipos de derechos propuestos es la siguiente:
 > Por este motivo, se recomienda que se cree y descargue una copia de seguridad de su lado antes de cualquier eliminación.
 > 
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Web Cloud Databases`{.action}. Seleccione el nombre del servidor de bases de datos.
 
 Para eliminar una base de datos en su servidor de bases de datos, abra la pestaña `Bases de datos`, haga clic en el botón `...`{.action} situado a la derecha de la base de datos correspondiente y seleccione `Eliminar la base`{.action}.
 
