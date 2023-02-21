@@ -200,7 +200,7 @@ Click `Download Keys`{.action}.
 ![05 Create Access Keys 05](images/05-create-access-key05.png){.thumbnail}
 
 > [!warning]
->our access credentials are displayed in your web browser. Please note down this information (Access Key and secret Key) before closing this window.
+>Your access credentials are only displayed once in your web browser. Please note down this information (Access Key and secret Key) before closing this windo
 >
 
 ![05 Create Access Keys 06](images/05-create-access-key06.png){.thumbnail}

@@ -204,7 +204,7 @@ Cliquez sur `Download Keys`{.action}.
 ![05 Create Access Keys 05](images/05-create-access-key05.png){.thumbnail}
 
 > [!warning]
-> Vos identifiants d'accès sont affichés dans votre navigateur WEB, prenez soin de noter ces informations (Access Key et secret Key) avant de fermer cette fenêtre.
+> Vos identifiants d'accès sont affichés une seule fois dans votre navigateur WEB, prenez soin de noter ces informations (Access Key et secret Key) avant de fermer cette fenêtre.
 >
 
 ![05 Create Access Keys 06](images/05-create-access-key06.png){.thumbnail}
