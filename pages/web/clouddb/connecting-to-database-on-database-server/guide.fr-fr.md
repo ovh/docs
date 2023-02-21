@@ -6,7 +6,7 @@ section: Configuration
 order: 03
 ---
 
-**Dernière mise à jour le 22/09/2022**
+**Dernière mise à jour le 15/02/2023**
 
 ## Objectif
 
@@ -16,14 +16,14 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 ## Prérequis
 
-- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [CloudDB](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
+> Il est à noter que les offres [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
 > <br> - Il n'y a pas d'accès super utilisateur « root ». 
 > <br> - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
 > 
@@ -37,7 +37,7 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 #### Par phpMyAdmin OVHcloud 
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès dans le cadre **« Administration de la base de données »** sous la mention « Interface utilisateur ».
 
@@ -67,7 +67,7 @@ Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
 > [!warning]
 >
-> Si vous utilisez une offre "Cloud DB"/"SQL Privé", n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](https://docs.ovh.com/fr/clouddb/configurer-optimiser-son-serveur-de-base-de-donnees/#gerer-vos-acces).
+> Si vous utilisez une offre "Web Cloud Databases"/"SQL Privé", n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](https://docs.ovh.com/fr/clouddb/configurer-optimiser-son-serveur-de-base-de-donnees/#gerer-vos-acces).
 >
 
 Afin de vous connecter à votre base de données, assurez-vous de récupérer les informations suivantes :

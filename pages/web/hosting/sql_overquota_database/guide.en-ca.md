@@ -4,10 +4,10 @@ slug: database-overquota
 excerpt: "Find out what to do when your database is saturated"
 section: Databases
 order: 06
-updated: 2023-01-19
+updated: 2023-02-16
 ---
 
-**Last updated 26th January 2023**
+**Last updated 16th February 2023**
 
 ## Objective
 
@@ -121,15 +121,15 @@ Once you have determined whether or not the contents of your tables are necessar
 
 You will need to upgrade your database service to one that includes more space for databases.
 
-Consult our [Private SQL/CloudDB](https://www.ovhcloud.com/en-ca/web-hosting/options/) offer to choose your new database service. 
+Consult our [Private SQL/Web Cloud Databases](https://www.ovhcloud.com/en-ca/web-hosting/options/) offer to choose your new database service. 
 
 We recommend this solution for large databases.
 
 Then follow our guides to move the content from your old database to the new one:
 
 - [Export your existing database](https://docs.ovh.com/ca/en/hosting/web_hosting_database_export_guide/)
-- [First steps with Private SQL/CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
-- [Import your old database into your Private SQL/CloudDB](https://docs.ovh.com/gb/en/clouddb/restore-import-database/)
+- [First steps with Private SQL/Web Cloud Databases](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
+- [Import your old database into your Private SQL/Web Cloud Databases](https://docs.ovh.com/gb/en/clouddb/restore-import-database/)
 
 #### Case 2 - Some or all of the contents of the large table are not necessary for your site to work
 

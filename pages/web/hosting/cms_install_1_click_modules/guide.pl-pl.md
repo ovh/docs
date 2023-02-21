@@ -7,7 +7,7 @@ order: 01
 updated: 2023-01-31
 ---
 
-**Ostatnia aktualizacja dnia 31-01-2023**
+**Ostatnia aktualizacja dnia 15-02-2023**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -92,7 +92,7 @@ Teraz podaj informacje dotyczące logowania do Twojej bazy danych. Istnieje kilk
 
 - baza danych jest już utworzona na Twoim hostingu - wybierz ją z listy i uzupełnij wymagane informacje;
 - baza danych nie została jeszcze utworzona na Twoim hostingu - zastosuj się do wskazówek w celu jej utworzenia, a następnie ponownie dokonaj wyboru;
-- baza danych jest utworzona na instancji CloudDB – wybierz ją z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Instancja SQL oraz hosting muszą być zlokalizowane w tym samym centrum danych;
+- baza danych jest utworzona na instancji Web Cloud Databases – wybierz ją z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Instancja SQL oraz hosting muszą być zlokalizowane w tym samym centrum danych;
 - baza danych jest utworzona na innym hostingu w OVHcloud – wybierz ją z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Baza danych oraz hosting muszą być zlokalizowane w tym samym centrum danych;
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}.

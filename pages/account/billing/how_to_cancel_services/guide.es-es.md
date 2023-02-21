@@ -72,7 +72,7 @@ Haga clic en el tipo de producto que desea dar de baja en la siguiente lista de 
 &emsp;&emsp;[Web Hosting](#hosting)<br />
 &emsp;&emsp;[SSL Sectigo Certificate](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web PaaS powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
 &emsp;&emsp;[Email MX Plan](#mxplan)<br />
 &emsp;&emsp;[Email Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
@@ -192,9 +192,9 @@ Haga clic en el botón `...`{.action} situado a la derecha del servicio que dese
 
 Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
-#### CloudDB <a name="clouddb"></a>
+#### Web Cloud Databases <a name="webclouddatabases"></a>
 
-Para dar de baja su servicio [CloudDB](https://www.ovh.es/cloud/cloud-databases/), conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
+Para dar de baja su servicio [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/), conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 

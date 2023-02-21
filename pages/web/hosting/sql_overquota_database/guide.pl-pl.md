@@ -4,10 +4,10 @@ slug: database-overquota
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
 section: 'Bazy danych'
 order: 06
-updated: 2023-01-19
+updated: 2023-02-16
 ---
 
-**Ostatnia aktualizacja z dnia 23-01-2023**
+**Ostatnia aktualizacja z dnia 16-02-2023**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -125,15 +125,15 @@ Po określeniu, czy zawartość Twoich tabel jest niezbędna czy nie, masz do wy
 
 Musisz zmienić bazę danych na większą bazę danych.
 
-Zapoznaj się z naszą ofertą baz danych [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/), aby wybrać nową usługę baz danych. 
+Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](https://www.ovh.pl/cloud/cloud-databases/), aby wybrać nową usługę baz danych. 
 
 Zalecamy tę ofertę dla dużych baz danych.
 
 Następnie postępuj zgodnie z naszymi przewodnikami, aby przenieść zawartość Twojej starej bazy danych do nowej:
 
 - [Eksport istniejącej bazy danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/)
-- [Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
-- [Import Twojej starej bazy danych do Twojej oferty Cloud Databases](https://docs.ovh.com/pl/clouddb/przywracanie-importowanie-bazy-danych/)
+- [Pierwsze kroki z usługą Web Cloud Databasess](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
+- [Import Twojej starej bazy danych do Twojej oferty Web Cloud Databasess](https://docs.ovh.com/pl/clouddb/przywracanie-importowanie-bazy-danych/)
 
 #### Przypadki nr 2 - Część lub całość zawartości tabeli nie jest konieczna do działania strony
 

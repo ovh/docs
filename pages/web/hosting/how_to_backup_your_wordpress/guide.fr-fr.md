@@ -4,10 +4,10 @@ slug: realize-backup-wordpress
 excerpt: "Découvrez comment sauvegarder le contenu de votre site WordPress et sa base de données"
 section: 'Tutoriels'
 order: 021
-updated: 2023-02-07
+updated: 2023-02-21
 ---
 
-**Dernière mise à jour le 07/02/2023**
+**Dernière mise à jour le 21/02/2023**
 
 ## Objectif
 

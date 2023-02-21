@@ -7,7 +7,7 @@ order: 04
 updated: 2022-11-16
 ---
 
-**Last updated 16th November 2022**
+**Last updated 15rd February 2023**
 
 ## Objective
 
@@ -223,7 +223,7 @@ Enter the information requested for the database:
 - Database name: this name was defined when the database was created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 
 - Username: It is identical to the database name if you are using a database included with your web hosting plan.
-For databases created on CloudDB, please refer to the information in [Step 1.4](#step1-4) of this guide.
+For databases created on Web Cloud Databases, please refer to the information in [Step 1.4](#step1-4) of this guide.
 
 - Password: It was sent to you by email when the database was created. You may have modified it in the meantime.
 

@@ -68,7 +68,7 @@ Click on the type of product to be cancelled in the following list of main OVHcl
 &emsp;&emsp;[Web Hosting](#hosting)<br />
 &emsp;&emsp;[SSL Sectigo Certificate](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web PaaS powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
 &emsp;&emsp;[Email MX Plan](#mxplan)<br />
 &emsp;&emsp;[Email Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
@@ -185,9 +185,9 @@ Next, click on the `...`{.action} button to the right of the service you want to
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
-#### CloudDB <a name="clouddb"></a>
+#### Web Cloud Databases <a name="webclouddatabases"></a>
 
-To cancel your [CloudDB](https://www.ovh.ie/cloud/cloud-databases/ solution, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on your name in the top right-hand corner, then on `Products and services`{.action}.
+To cancel your [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/ solution, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 

@@ -10,7 +10,7 @@ order: 03
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/09/2022**
+**Ultimo aggiornamento: 15/02/2023**
 
 ## Obiettivo
 
@@ -20,14 +20,14 @@ order: 03
 
 ## Prerequisiti
 
-- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 > [!primary]
 >
-> Attenzione: le soluzioni [CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> Attenzione: le soluzioni [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
 > <br> - Attenzione: non sono presenti accessi "root".
 > <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
 >
@@ -41,7 +41,7 @@ order: 03
 
 ####  Per phpMyAdmin OVHcloud 
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
 
 Dalla scheda `Informazioni generali`, il link di accesso nel riquadro **"Amministrazione del database"** è disponibile nella sezione "Interfaccia utente".
 
@@ -70,7 +70,7 @@ Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
 > [!warning]
 >
-> Se utilizzi un'offerta "Cloud DB"/"SQL Privato", non dimenticare di autorizzare il tuo IP utilizzando la guida sulla [configurazione del tuo server database](https://docs.ovh.com/it/clouddb/configurare-ottimizzare-il-tuo-database-server/).
+> Se utilizzi un'offerta "Web Cloud Databases"/"SQL Privato", non dimenticare di autorizzare il tuo IP utilizzando la guida sulla [configurazione del tuo server database](https://docs.ovh.com/it/clouddb/configurare-ottimizzare-il-tuo-database-server/).
 >
 
 Per connetterti al tuo database, assicurati di recuperare queste informazioni:
