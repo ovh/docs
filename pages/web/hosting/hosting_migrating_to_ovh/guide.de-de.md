@@ -7,7 +7,7 @@ order: 08
 updated: 2022-11-24
 ---
 
-**Letzte Aktualisierung am 24.11.2022**
+**Letzte Aktualisierung am 15.02.2023**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -119,7 +119,7 @@ Wenn Ihre Backup-Datei als komprimiertes Archiv vorliegt, entkomprimieren Sie es
 
 > [!primary]
 >
-> OVHcloud bietet auch CloudDB Datenbankserver an. Wenn Sie dieses Angebot mit Ihrer Website verwenden möchten, finden Sie unsere Dokumentation zu diesem Dienst auf unserer dedizierten Seite <https://docs.ovh.com/de/clouddb/>.
+> OVHcloud bietet auch Web Cloud Databases Datenbankserver an. Wenn Sie dieses Angebot mit Ihrer Website verwenden möchten, finden Sie unsere Dokumentation zu diesem Dienst auf unserer dedizierten Seite <https://docs.ovh.com/de/clouddb/>.
 >
 
 Ihre OVHcloud Datenbank muss mit der Konfigurationsdatei Ihrer Website im FTP-Speicherplatz Ihres OVHcloud Hostings verlinkt werden.

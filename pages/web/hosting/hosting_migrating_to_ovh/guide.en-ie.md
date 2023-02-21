@@ -7,7 +7,7 @@ order: 08
 updated: 2022-11-24
 ---
 
-**Last updated 24th November 2022**
+**Last updated 15rd February 2023**
 
 ## Objective
 
@@ -117,7 +117,7 @@ If your backup file is a compressed archive, extract it into an empty folder on 
 
 > [!primary]
 >
-> OVHcloud offers CloudDB database servers. If you would like to use this solution with your website, you can find all of our documentation for this product on our dedicated page: <https://docs.ovh.com/gb/en/clouddb/>.
+> OVHcloud offers Web Cloud Databases database servers. If you would like to use this solution with your website, you can find all of our documentation for this product on our dedicated page: <https://docs.ovh.com/gb/en/clouddb/>.
 >
 
 Your OVHcloud database has to be associated with your website’s configuration file in the FTP storage space of your OVHcloud hosting plan.

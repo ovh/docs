@@ -7,7 +7,7 @@ order: 09
 updated: 2022-11-17
 ---
 
-**Última actualización: 17/11/2022**
+**Última actualización: 15/02/2023**
  
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -159,7 +159,7 @@ phpinfo();
 
 Conéctese a su base de datos siguiendo **el etapa 3** de nuestra guía sobre la [creación de una base de datos compartida](https://docs.ovh.com/es/hosting/crear-base-de-datos/).
 
-Si utiliza una base de datos en una solución **CloudDB**, consulte nuestra guía sobre [la conexión a la base de datos de una solución Cloud DB](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/).
+Si utiliza una base de datos en una solución **Web Cloud Databases**, consulte nuestra guía sobre [la conexión a la base de datos de una solución Web Cloud Databases](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/).
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 

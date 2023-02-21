@@ -8,7 +8,7 @@ section: 'Recursos técnicos'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 29/06/2022**
+**Última atualização: 15/02/2023**
 
 ## Objetivo
 
@@ -21,7 +21,7 @@ As bases de dados geridas pela OVHcloud propõem vários sistemas de gestão de 
 Dispor de, pelo menos, uma das 3 ofertas seguintes:
 
 - Uma das bases de dados incluídas com um [Alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
-- Uma [instance CloudDB](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [Alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Uma [instance Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [Alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
 - Um pack de bases de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/).
 
 ## Instruções
@@ -30,7 +30,7 @@ Dispor de, pelo menos, uma das 3 ofertas seguintes:
 
 Os produtos abrangidos por esta política de fim de vida são:
 
-- Os serviços CloudDB Web Hosting (também conhecidos como serviços SQLP Privado), instâncias SGBD dedicadas acessíveis através da rede Web Hosting ([ver os anúncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Os serviços Web Cloud Databases Web Hosting (também conhecidos como serviços SQLP Privado), instâncias SGBD dedicadas acessíveis através da rede Web Hosting ([ver os anúncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 - Os serviços SharedSQL Web Hosting, bases de dados MySQL disponíveis através da rede Web Hosting ([ver os anúncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 ### Definições e orientações da política de fim de vida

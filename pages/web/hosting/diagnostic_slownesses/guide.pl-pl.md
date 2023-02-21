@@ -7,7 +7,7 @@ order: 09
 updated: 2022-11-17
 ---
 
-**Ostatnia aktualizacja z dnia 17-11-2022**
+**Ostatnia aktualizacja z dnia 15-02-2023**
  
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -159,7 +159,7 @@ phpinfo();
 
 Zaloguj się do bazy danych, postępując zgodnie z **etap 3** w przewodniku [dotyczącym tworzenia wspólnej bazy danych](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/).
 
-Jeśli korzystasz z bazy danych w ofercie **CloudDB**, zapoznaj się z naszym przewodnikiem [dotyczącym połączenia z bazą danych w usłudze Cloud DB](https://docs.ovh.com/pl/clouddb/polaczenie-bazy-danych-serwer-bdd/).
+Jeśli korzystasz z bazy danych w ofercie **Web Cloud Databases**, zapoznaj się z naszym przewodnikiem [dotyczącym połączenia z bazą danych w usłudze Web Cloud Databases](https://docs.ovh.com/pl/clouddb/polaczenie-bazy-danych-serwer-bdd/).
 
 Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 

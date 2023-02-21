@@ -7,7 +7,7 @@ order: 08
 updated: 2022-11-24
 ---
 
-**Dernière mise à jour le 14/11/2022**
+**Dernière mise à jour le 15/02/2023**
 
 ## Objectif
 
@@ -116,7 +116,7 @@ Pour la sauvegarde de votre base de données, [créez une nouvelle base de donn�
 
 > [!primary]
 >
-> OVHcloud propose des serveurs de base de données CloudDB. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble de notre documentation sur ce produit sur notre page dédiée <https://docs.ovh.com/fr/clouddb/>.
+> OVHcloud propose des serveurs de base de données Web Cloud Databases. Si vous souhaitez utiliser cette offre avec votre site web, retrouvez l'ensemble de notre documentation sur ce produit sur notre page dédiée <https://docs.ovh.com/fr/clouddb/>.
 >
 
 Liez ensuite votre base de données OVHcloud avec le fichier de configuration de votre site présent dans l'espace de stockage FTP de votre hébergement OVHcloud.

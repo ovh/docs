@@ -6,7 +6,7 @@ section: Configuration
 order: 02
 ---
 
-**Last updated 23rd June 2022**
+**Last updated 15rd February 2023**
 
 ## Objective
 
@@ -16,7 +16,7 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
@@ -25,7 +25,7 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the SQL instance concerned. Click on the `Databases` tab, then on `Add database`{.action}.
 
-![private-sql](images/private-sql-createdb01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-createdb01.png){.thumbnail}
 
 Fill in the fields by following the criteria listed. You can create a user directly by ticking the **Create User** box.
 
@@ -36,7 +36,7 @@ Fill in the fields by following the criteria listed. You can create a user direc
 
 Finally, click `Confirm`{.action}.
 
-![private-sql](images/private-sql-createdb02.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-createdb02.png){.thumbnail}
 
 ### Adding a user
 
@@ -44,7 +44,7 @@ To use an OVHcloud database server, you need to create users with specific right
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the database name concerned. Next, switch to the `Users and rights` tab and click `Add user`{.action}.
 
-![private-sql](images/private-sql-user01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-user01.png){.thumbnail}
 
 Enter a “username” and a “password”, then click `Confirm`{.action}.
 
@@ -54,7 +54,7 @@ To allow a user to perform actions on a database, it is necessary to assign perm
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the database name concerned. Next, switch to the `Users and rights` tab. Click on the  `...`{.action} button to the right of the user concerned, then on `Manage rights`{.action}.
 
-![private-sql](images/private-sql-rights01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-rights01.png){.thumbnail}
 
 In the left-hand column, **Database**, you will see a list of the databases on your database server.
 
@@ -69,7 +69,7 @@ The 3 types of permissions proposed are described below:
 > 
 > The distribution of rights mentioned above is unique to OVHcloud. This will allow a user with `Administrator` rights to use **DLL** (Data Definition Language) and **DML** (Data Manipulation Language), while a user with `Reading/Writing` rights will only use **DML**.
 
-![private-sql](images/private-sql-rights02.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-rights02.png){.thumbnail}
 
 #### Deleting a database
 
@@ -85,7 +85,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 To delete a database on your database server, go to the `Databases` tab, then click on the `...`{.action} button to the right of the database concerned, then click `Delete the database`{.action}.
 
-![private-sql](images/private-sql-deldb01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-deldb01.png){.thumbnail}
 
 ## Go further
 

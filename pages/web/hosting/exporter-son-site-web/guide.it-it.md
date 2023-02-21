@@ -7,7 +7,7 @@ order: 04
 updated: 2022-02-03
 ---
 
-**Ultimo aggiornamento: 03/02/2022**
+**Ultimo aggiornamento: 15/02/2023**
 
 ## Obiettivo
 
@@ -63,7 +63,7 @@ Per verificare la cartella in cui il tuo sito è ospitato clicca sulla scheda `M
 Per recuperare un backup del tuo database, consulta la nostra guida:
 [Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/){.external}.
 
-Se utilizzi un database **CloudDB** per il tuo sito Web, consulta la sezione dedicata al backup della nostra guida:
+Se utilizzi un database **Web Cloud Databases** per il tuo sito Web, consulta la sezione dedicata al backup della nostra guida:
 [Salvare ed esportare un database sul tuo server di database](https://docs.ovh.com/it/hosting/salvare-esportare-un-database/){.external}.
 
 ### Step 3: recuperare i log del tuo hosting OVHcloud
@@ -105,6 +105,6 @@ Quando hai selezionato il tipo di log nel mese che ti interessa, questi vengono 
 
 [Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/){.external}.
 
-[Inziare a utilizzare CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/){.external}.
+[Inziare a utilizzare Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

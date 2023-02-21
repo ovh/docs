@@ -7,7 +7,7 @@ order: 09
 updated: 2022-11-17
 ---
 
-**Last updated 17th November 2022**
+**Last updated 15rd February 2023**
 
 ## Objective
 
@@ -156,7 +156,7 @@ phpinfo();
 
 Log in to your database by following **step 3** in our guide on [web hosting databases](https://docs.ovh.com/ie/en/hosting/creating-database/).
 
-If you are using a database of a **CloudDB** solution, please refer to our guide on [CloudDB databases](https://docs.ovh.com/ie/en/clouddb/connecting-to-database-on-database-server/).
+If you are using a database of a **Web Cloud Databases** solution, please refer to our guide on [Web Cloud Databases databases](https://docs.ovh.com/ie/en/clouddb/connecting-to-database-on-database-server/).
 
 If the connection is successful, you will land on the following interface:
 

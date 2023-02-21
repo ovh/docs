@@ -11,7 +11,7 @@ updated: 2022-11-08
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 08/11/2022**
+**Última atualização: 15/02/2023**
 
 ## Objetivo
 
@@ -56,7 +56,7 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-As ofertas [Alojamento Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor CloudDB](https://www.ovh.pt/cloud/cloud-databases/).
+As ofertas [Alojamento Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
 
 #### Solução n°2: eliminar uma base de dados não utilizada <a name="delete-database"></a>
 
@@ -150,7 +150,7 @@ Se não dispõe de outras bases de dados e não deseja encomendar uma oferta com
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor CloudDB](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/). Recebeu esta mensagem de erro por e-mail. Isto significa que o utilizador notado durante a instalação não possui direitos suficientes sobre a base de dados ou que os identificadores indicados são incorretos.
+Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor Web Cloud Databases](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/). Recebeu esta mensagem de erro por e-mail. Isto significa que o utilizador notado durante a instalação não possui direitos suficientes sobre a base de dados ou que os identificadores indicados são incorretos.
 
 
 Verifique também as suas credenciais ao [ligar diretamente](../conexao-base-de-dados-servidor-bdd/#instrucoes) ao seu servidor de bases de dados e, de seguida, execute novamente a instalação do seu módulo.
@@ -159,7 +159,7 @@ Verifique também as suas credenciais ao [ligar diretamente](../conexao-base-de-
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor CloudDB](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/). Recebeu esta mensagem de erro por e-mail. Isto significa que o nome do servidor de bases de dados que indicou está incorreto.
+Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor Web Cloud Databases](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/). Recebeu esta mensagem de erro por e-mail. Isto significa que o nome do servidor de bases de dados que indicou está incorreto.
 
 Clique na parte `Web cloud`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), depois no separador `Bases de dados`{.action}.
 

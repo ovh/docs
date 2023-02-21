@@ -7,7 +7,7 @@ order: 04
 updated: 2022-11-16
 ---
 
-**Última actualización: 15/11/2022** 
+**Última actualización: 15/02/2023** 
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -90,7 +90,7 @@ Los CMS necesitan una base de datos para funcionar. Nuestros planes [de hosting]
 
 Utilice nuestra guía para [crear una base de datos desde su plan de hosting](https://docs.ovh.com/es/hosting/crear-base-de-datos/).
 
-Si tiene un servicio CloudDB en MySQL o MariaDB y quiere utilizarlo para instalar manualmente su WordPress, consulte nuestra guía sobre la [creación de una base de datos en un Cloud Databases](https://docs.ovh.com/es/clouddb/crear-bases-de-datos-y-usuarios/#crear-una-base-de-datos).
+Si tiene un servicio Web Cloud Databases en MySQL o MariaDB y quiere utilizarlo para instalar manualmente su WordPress, consulte nuestra guía sobre la [creación de una base de datos en un Cloud Databases](https://docs.ovh.com/es/clouddb/crear-bases-de-datos-y-usuarios/#crear-una-base-de-datos).
 
 Una vez que haya creado la base de datos, deberá descargar los parámetros de conexión (servidor, nombre de la base de datos, nombre de usuario y contraseña) y conservarlos para [el etapa 3](#step3) de esta guía.
 
@@ -233,7 +233,7 @@ Introduzca la información solicitada para la base de datos:
 - Nombre de la base de datos: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 - Identificador: es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web.
-Para las bases de datos creadas en un CloudDB, consulte la información indicada en [el etapa 1.4](#step1-4) de esta guía.
+Para las bases de datos creadas en un Web Cloud Databases, consulte la información indicada en [el etapa 1.4](#step1-4) de esta guía.
 
 - Contraseña: le hemos enviado un mensaje de correo electrónico al crear la base de datos. Es posible que lo hayan cambiado.
 
