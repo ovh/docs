@@ -10,7 +10,7 @@ updated: 2021-10-15
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 22-11-2021**
+**Ostatnia aktualizacja z dnia 20-02-2023**
 
 ## Wprowadzenie
 
@@ -24,7 +24,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 * Utworzenie [instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
 * Aktywowanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/)
 * Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) kompatybilnego z usługą vRack
-* Dostęp do [Panelu klienta OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 * Wybrany zakres prywatnych adresów IP
 
 > [!warning]
@@ -80,9 +80,8 @@ Aby obie usługi mogły się ze sobą komunikować, muszą być « otagowane » 
 
 #### Domyślne wykorzystanie VLAN ID
 
-Domyślnie na serwerach dedykowanych znajdujesz się w sieci VLAN id **0**. Jeśli chcesz użyć tego ID, konieczne będzie « oznakować » sieci prywatnej przypisanej do Twojej instancji za pomocą VLAN ID **0**. W tym celu nie zaznacz kratki `Wybierz ID sieci VLAN` podczas dodawania prywatnej sieci do Twojej instancji.
+Domyślnie na serwerach dedykowanych znajdujesz się w sieci VLAN id **0**. Jeśli chcesz użyć tego ID, konieczne będzie « oznakować » sieci prywatnej przypisanej do Twojej instancji za pomocą VLAN ID **0**. W tym celu przejdź przez stronę [OVHcloud APIv6 (EN)](https://docs.ovh.com/pl/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
 
-Więcej informacji znajdziesz w [tej sekcji](https://docs.ovh.com/pl/public-cloud/public-cloud-vrack/#etap-2-tworzenie-sieci-vlan-w-ramach-uslugi-vrack_1) odpowiedniego przewodnika.
 
 > [!primary]
 > W usłudze Public Cloud możesz zdefiniować unikalną sieć VLAN ID za pomocą sieci prywatnej.
@@ -96,18 +95,20 @@ Jeśli zdecydujesz się korzystać z innego VLAN ID:
 - Sieć prywatna połączona z instancją Public Cloud musi być « oznaczona » tym VLAN ID.
 - W pliku konfiguracyjnym sieci na serwerze dedykowanym, interfejs sieci prywatnej powinien być « oznaczony » tym VLAN ID.
 
+W tym przypadku, jeśli zaznaczysz kratkę "Ustaw identyfikator sieci VLAN", musisz wybrać numer VLAN ID z przedziału od 2 do 4 000.
 
+W przeciwnym razie system przypisze do Twojej sieci prywatnej losowy numer identyfikacyjny sieci VLAN.
 
 > [!primary]
 > 
-> W przeciwieństwie do serwerów dedykowanych, określenie VLAN nie jest konieczne bezpośrednio w instancji Public Cloud.
+> W przeciwieństwie do serwerów dedykowanych, nie ma potrzeby oznaczania sieci VLAN bezpośrednio w pliku konfiguracji sieci instancji Public Cloud, po ustawieniu identyfikatora VLAN w Panelu klienta OVHcloud.
 >
 
 Na przykład: jeśli zdefiniowałeś prywatną sieć przypisaną do Twojej instancji za pomocą VLAN 2, prywatny interfejs sieciowy Twojego serwera dedykowanego musi być « oznaczony » za pomocą VLAN 2. Więcej informacji znajdziesz w przewodniku: [Tworzenie kilku sieci VLAN w prywatnej sieci vRack](https://docs.ovh.com/pl/dedicated/tworzenie-vlan-vrack/).
 
 ### Konfiguracja interfejsów sieciowych
 
-Następnie skonfiguruj interfejsy sieciowe dla nowej instancji Public Cloud i serwera dedykowanego zgodnie z tym przewodnikiem: [Konfiguracja kilku serwerów dedykowanych w sieci vRack](../konfiguracja-kilku-serwerow-dedykowanych-vrack/){.external}.
+Następnie skonfiguruj interfejsy sieciowe dla nowej instancji Public Cloud i serwera dedykowanego zgodnie z tym przewodnikiem: [Konfiguracja kilku serwerów dedykowanych w sieci vRack](https://docs.ovh.com/pl/dedicated/konfiguracja-kilku-serwerow-dedykowanych-vrack/){.external}.
 
 ## Sprawdź również
 

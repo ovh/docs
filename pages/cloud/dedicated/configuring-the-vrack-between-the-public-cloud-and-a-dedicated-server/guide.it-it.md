@@ -10,7 +10,7 @@ updated: 2021-10-15
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/11/2021**
+**Ultimo aggiornamento: 20/02/2023**
 
 ## Obiettivo
 
@@ -24,7 +24,7 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} OVHcloud è una rete 
 * Aver creato un'[istanza Public Cloud OVHcloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/)
 * Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) compatibile con la vRack
-* Avere accesso allo [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 * Una gamma di indirizzi IP privati di tua scelta
 
 > [!warning]
@@ -79,9 +79,7 @@ Per comunicare tra loro, i due servizi devono essere contrassegnati con la stess
 
 #### Utilizzo della VLAN ID predefinito
 
-Sui server dedicati, di default, sei sulla VLAN **0**. Per utilizzare questo ID, sarà necessario « taglare » la rete privata associata alla tua istanza con VLAN **0**. Non spuntare la casella `Definisci l’ID della VLAN` durante l'aggiunta di una rete privata alla tua istanza.
-
-Per maggiori informazioni, consulta [questa sezione](https://docs.ovh.com/it/public-cloud/public-cloud-vrack/#step-2-crea-una-vlan-nella-vrack_1) della guida corrispondente. 
+Sui server dedicati, di default, sei sulla VLAN **0**. Per utilizzare questo ID, sarà necessario « taglare » la rete privata associata alla tua istanza con VLAN **0**. Per farlo, è necessario utilizzare l'[API OVHcloud (EN)](https://docs.ovh.com/it/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
 
 
 > [!primary]
@@ -96,17 +94,20 @@ Se decidi di utilizzare una VLAN ID diversa:
 - La rete privata associata all'istanza Public Cloud deve essere contrassegnata con questo ID.
 - Nel file di configurazione di rete del server dedicato, l'interfaccia di rete privata deve essere « tag » con questo ID.
 
+In questo caso, seleziona la casella `Definisci una VLAN` e scegli un numero di VLAN che varia da 2 a 4000.
+
+Se non selezioni questa casella, il sistema assegnerà un numero di VLAN casuale.
 
 > [!primary]
 > 
-> Diversamente dai server dedicati, non è necessario « taggare » la VLAN direttamente su un'istanza Public Cloud.
+> Diversamente dai server dedicati, non è necessario « taggare » la VLAN direttamente nel file di configurazione di rete dell'istanza Public Cloud, una volta definita la VLAN ID nello Spazio Cliente OVHcloud.
 >
 
 Ad esempio: se hai definito la rete privata associata alla tua istanza con VLAN 2, l'interfaccia di rete privata del tuo server dedicato deve essere « tag » con VLAN 2. Per maggiori informazioni, consulta questa guida: [Creare due o più VLAN nella vRack](https://docs.ovh.com/it/dedicated/creare-vlan-vrack/).
 
 ### Configura le interfacce di rete
 
-Configura le interfacce di rete sulla tua nuova istanza Public Cloud e sul tuo server dedicato utilizzando questa guida: [Configurare diversi server dedicati nella vRack](../configurare-server-dedicati-vrack/){.external}.
+Configura le interfacce di rete sulla tua nuova istanza Public Cloud e sul tuo server dedicato utilizzando questa guida: [Configurare diversi server dedicati nella vRack](https://docs.ovh.com/it/dedicated/configurare-server-dedicati-vrack/){.external}.
 
 ## Per saperne di più
 

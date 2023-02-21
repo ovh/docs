@@ -10,7 +10,7 @@ updated: 2021-10-15
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/11/2021**
+**Última actualización: 20/02/2023**
 
 ## Objetivo
 
@@ -79,9 +79,8 @@ Para que los dos servicios puedan comunicarse entre sí, deben estar « etiqueta
 
 #### Uso de la VLAN ID por defecto
 
-En los servidores dedicados, por defecto está en la VLAN **0**. Si quiere utilizar este ID, deberá « etiquetar » la red privada asociada a su instancia con la VLAN **0**. Para ello, no marque la casilla `Indicar un ID de VLAN` al añadir una red privada a la instancia.
+En los servidores dedicados, por defecto está en la VLAN **0**. Si quiere utilizar este ID, deberá « etiquetar » la red privada asociada a su instancia con la VLAN **0**. Para ello, debe pasar por la [API de OVHcloud (EN)](https://docs.ovh.com/es/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
 
-Para más información, consulte [esta sección](https://docs.ovh.com/es/public-cloud/public-cloud-vrack/#etapa-2-crear-una-vlan-en-el-vrack_1) de la guía correspondiente.
 
 > [!primary]
 > En Public Cloud, puede definir un VLAN ID único por red privada.
@@ -95,17 +94,20 @@ Si decide utilizar un VLAN ID diferente:
 - La red privada asociada a la instancia de Public Cloud debe estar « etiquetada » con este ID.
 - En el archivo de configuración de red del servidor dedicado, la interfaz de red privada debe estar « etiquetada » con este ID.
 
+En ese caso, si marca la casilla `Establecer un VLAN`, deberá elegir un número de VLAN de 2 a 4000.
+
+Si no marca esta casilla, el sistema asignará un número de VLAN aleatorio.
 
 > [!primary]
 > 
-> A diferencia de los servidores dedicados, no es necesario « etiquetar » la VLAN directamente en una instancia de Public Cloud.
+> A diferencia de los servidores dedicados, no es necesario « etiquetar » la VLAN directamente en el archivo de configuración de red de la instancia Public Cloud, una vez que el VLAN ID esté definido en el área de cliente de OVHcloud.
 >
 
 Por ejemplo: si ha definido la red privada asociada a su instancia con VLAN 2, la interfaz de red privada de su servidor dedicado debe estar « etiquetada » con VLAN 2. Para más información, consulte la siguiente guía: [Crear varias VLAN en el vRack](https://docs.ovh.com/es/dedicated/crear-vlan-vrack/).
 
 ### Configurar las interfaces de red
 
-A continuación, configure las interfaces de red en la nueva instancia de Public Cloud y en el servidor dedicado con esta guía: [Configurar varios servidores dedicados en el vRack](../configurar-vrack-en-servidor-dedicado/){.external}.
+A continuación, configure las interfaces de red en la nueva instancia de Public Cloud y en el servidor dedicado con esta guía: [Configurar varios servidores dedicados en el vRack](https://docs.ovh.com/es/dedicated/configurar-vrack-en-servidor-dedicado/){.external}.
 
 ## Más información
 
