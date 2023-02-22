@@ -4,6 +4,7 @@ slug: exchange_20132016_configuracao_de_thunderbird
 excerpt: 'Encontre aqui o procedimento para adicionar uma conta Exchange para Thunderbird'
 section: 'Configuração no computador'
 order: 04
+updated: 2021-08-26
 ---
 
 **Última atualização: 26/08/2021**

@@ -3,6 +3,7 @@ title: 'Proteger un VPS'
 slug: consejos-proteccion-vps
 section: 'Primeros pasos'
 excerpt: 'Descubra los elementos básicos que le permiten proteger su VPS'
+updated: 2022-05-05
 ---
 
 > [!primary]

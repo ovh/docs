@@ -6,6 +6,7 @@ section: MongoDB - Guides
 order: 080
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/analytics-node/'
+updated: 2022-09-19
 ---
 
 **Last updated 19<sup>th</sup> September 2022**

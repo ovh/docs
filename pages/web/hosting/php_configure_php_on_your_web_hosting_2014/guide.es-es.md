@@ -4,6 +4,7 @@ slug: cambiar-version-php-en-alojamiento-web
 excerpt: "Cómo cambiar la versión de PHP de un alojamiento web de OVHcloud"
 section: PHP
 order: 01
+updated: 2022-09-19
 ---
 
 **Última actualización: 19/09/2022**

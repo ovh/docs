@@ -5,6 +5,7 @@ legacy_guide_number: 2117
 excerpt: "Dowiedz się, jak należy zareagować w przypadku problemów z wysyłaniem lub odbieraniem wiadomości e-mail do OVHcloud"
 section: 'Diagnostyka'
 order: 02
+updated: 2022-07-21
 ---
 
 > [!primary]

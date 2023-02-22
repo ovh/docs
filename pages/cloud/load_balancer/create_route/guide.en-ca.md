@@ -3,6 +3,7 @@ title: 'Working with HTTP routes'
 slug: routes
 excerpt: 'Find out how to direct your requests dynamically, to a specific farm'
 section: Configuration
+updated: 2018-04-09
 ---
 
 **Last updated 09th April 2018**

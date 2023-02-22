@@ -4,6 +4,7 @@ slug: instalacja_oprogramowania_composer_na_hostingu_www
 excerpt: Dowiedz się, jak zainstalować i zrobić pierwsze kroki w Composer.
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 > [!primary]

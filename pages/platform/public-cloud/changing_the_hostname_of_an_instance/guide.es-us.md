@@ -4,6 +4,7 @@ slug: cambiar-el-hostname-de-una-instancia
 excerpt: 'Esta guía explica cómo reconfigurar cloud-init para poder cambiar el hostname de una instancia'
 legacy_guide_number: 1928
 section: Tutoriales
+updated: 2018-09-18
 ---
 
 **Última actualización: 20/09/2018**

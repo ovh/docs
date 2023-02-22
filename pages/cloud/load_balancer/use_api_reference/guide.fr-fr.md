@@ -4,6 +4,7 @@ slug: iplb-api-reference
 excerpt: "Description rapide des différentes fonctions de l’API servant à gérer le Load Balancer"
 section: Premiers pas
 order: 04
+updated: 2022-04-04
 ---
 
 **Dernière mise à jour le 04/04/2022**

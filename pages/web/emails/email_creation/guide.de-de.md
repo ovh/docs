@@ -4,6 +4,7 @@ slug: e-mail-adresse-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie einen MX Plan E-Mail-Account erstellen'
 section: 'Erste Schritte'
 order: 02
+updated: 2022-10-11
 ---
 
 > [!primary]

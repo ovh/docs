@@ -4,6 +4,7 @@ slug: creating-volume-snapshot
 excerpt: 'Saiba como criar uma snapshot de um disco adicional Public Cloud'
 section: Armazenamento
 order: 2
+updated: 2023-02-10
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: konfiguration-emailpro-thunderbird-mac
 excerpt: 'Hier finden Sie die Informationen zur Konfiguration Ihrer Email Pro Adresse auf Thunderbird für macOS.'
 section: 'Konfiguration des E-Mail-Clients'
 order: 6
+updated: 2021-08-26
 ---
 
 > [!primary]

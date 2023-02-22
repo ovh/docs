@@ -4,6 +4,7 @@ slug: attivare_start10m
 excerpt: 'Come attivare il piano di hosting Start 10M'
 section: Per iniziare
 order: 01
+updated: 2022-09-15
 ---
 
 > [!primary]

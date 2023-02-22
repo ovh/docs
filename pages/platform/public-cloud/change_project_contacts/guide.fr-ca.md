@@ -4,6 +4,7 @@ excerpt: "Découvrez comment gérer les contacts d'un projet Public Cloud"
 slug: gestion-des-contacts-dun-projet-PCI
 section: 'Gestion de projets'
 order: 6
+updated: 2022-04-04
 ---
 
 **Dernière mise à jour le 04/04/2022**

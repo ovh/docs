@@ -5,6 +5,7 @@ slug: delegation-emails
 excerpt: Erfahren Sie hier, wie Sie die Verwaltung der E-Mail-Accounts Ihres MX Plan Angebots delegieren
 section: E-Mail Account Funktionen
 order: 05
+updated: 2021-10-08
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Learn the basics of using a VPS'
 slug: getting-started-vps
 section: 'Getting started'
 order: 1
+updated: 2022-03-25
 ---
 
 **Last updated 25th March 2022**

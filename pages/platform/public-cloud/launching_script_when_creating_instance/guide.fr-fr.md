@@ -4,6 +4,7 @@ slug: lancer-un-script-lors-de-la-creation-dun-instance
 legacy_guide_number: 1932
 section: Gestion via OpenStack
 order: 13
+updated: 2022-03-18
 ---
 
 

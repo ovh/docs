@@ -4,13 +4,14 @@ excerpt: 'Questa guida contiene informazioni e specifiche tecniche degli hosting
 slug: hosting_condiviso_specifiche_tecniche
 section: Configurazione dell’hosting
 order: 05
+updated: 2022-11-18
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21/11/2022**
+**Ultimo aggiornamento: 15/02/2023**
 
 ## Obiettivo
 
@@ -53,9 +54,9 @@ Per un periodo di 3600 secondi (1 ora), la tua offerta di hosting ti permetterà
 
 ### Connessioni simultanee al database
 
-- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database CloudDB). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovhcloud.com/it/web-hosting/).
+- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database Web Cloud Databases). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovhcloud.com/it/web-hosting/).
 
-- Inoltre è possibile ordinare database **CloudDB** aggiuntivi, che dispongono di opzioni di personalizzazione.
+- Inoltre è possibile ordinare database **Web Cloud Databases** aggiuntivi, che dispongono di opzioni di personalizzazione.
 
     - *max_connections*: 100 di default, con possibilità di passare a 200
 
@@ -65,7 +66,7 @@ Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](htt
 
 #### Connessioni dal server esterno
 
-- Per ragioni di sicurezza, non è consentita la connessione al database di un hosting Web OVHcloud da un server esterno, sia che si tratti di database SQL condivisi oppure CloudDB. Solo i server OVHcloud Web Hosting possono connettersi ai server di database. Qualsiasi altro tipo di connessione genererà il seguente errore: 
+- Per ragioni di sicurezza, non è consentita la connessione al database di un hosting Web OVHcloud da un server esterno, sia che si tratti di database SQL condivisi oppure Web Cloud Databases. Solo i server OVHcloud Web Hosting possono connettersi ai server di database. Qualsiasi altro tipo di connessione genererà il seguente errore: 
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -161,7 +162,7 @@ Questa guida ti mostra come [accedere allo spazio di storage](https://docs.ovh.c
 
 #### Database / SQL
 
-Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (CloudDB), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è effettuato quotidianamente. Questi backup sono accessibili via [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup sono salvati anche su un'altra infrastruttura. Questi dati sono replicati in 3 punti distinti in Francia: Roubaix (RBX), Strasburgo (SBG) e Gravelines (GRA). La politica di mantenimento dei backup è di 30 giorni.
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è effettuato quotidianamente. Questi backup sono accessibili via [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup sono salvati anche su un'altra infrastruttura. Questi dati sono replicati in 3 punti distinti in Francia: Roubaix (RBX), Strasburgo (SBG) e Gravelines (GRA). La politica di mantenimento dei backup è di 30 giorni.
 
 Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/) nella nostra guida.
 

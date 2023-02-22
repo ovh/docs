@@ -6,6 +6,7 @@ keywords: infrastructure, instance, cloud, creation
 excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploiement de votre infrastructure
 section: Tutoriels
 order: 02
+updated: 2022-05-27
 ---
 
 <style>

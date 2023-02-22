@@ -6,9 +6,10 @@ section: User guides
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/managing-nodes-with-api/'
+updated: 2023-02-14
 ---
 
-**Last updated 4th August 2022.**
+**Last updated 14th February 2023.**
 
 ## Objective
 
@@ -64,35 +65,197 @@ If you go to the [Cloud section](https://api.ovh.com/console/#/cloud) of the API
 
 The `GET /cloud/project` API endpoint lists all the available Public Cloud Services associated to your OVHcloud account:
 
-![List your OVHcloud Public Cloud Services](images/kubernetes-quickstart-api-ovh-com-003.png){.thumbnail}
+> [!api]
+>
+> @api {GET} /cloud/project
+> 
+
+**Result:**
+
+```json
+[
+  "a212xxxxxxxxxxxxxxxxx59"
+]
+```
 
 Choose the Public Cloud Service corresponding to your OVHcloud Managed Kubernetes. In this example, we will refer to it as `serviceName`.
 
 The `GET /cloud/project/{serviceName}/kube` API endpoint lists all the available clusters in your chosen project:
 
-![List your OVHcloud Managed Kubernetes clusters](images/kubernetes-quickstart-api-ovh-com-004.png){.thumbnail}
+> [!api]
+>
+> @api {GET} /cloud/project/{serviceName}/kube
+> 
+
+**Result:**
+
+```json
+[
+  "xxxxxxxx-xxxx-4cdf-xxxx-xxxxxxxxxxxx",
+  "xxxxxxxx-xxxx-43f6-xxxx-xxxxxxxxxxxx",
+  "xxxxxxxx-xxxx-4217-xxxx-xxxxxxxxxxxx",
+  "xxxxxxxx-xxxx-458b-xxxx-xxxxxxxxxxxx",
+  "xxxxxxxx-xxxx-4845-xxxx-xxxxxxxxxxxx"
+]
+```
 
 By calling it, you can view a list of your Kubernetes clusters ID. Note down the ID of the cluster you want to use. In this example, we will refer to it as `kubeId`.
 
 
 ## Getting your cluster information
 
-The `GET  /cloud/project/{serviceName}/kube/{kubeId}` API endpoint provides important information about your OVHcloud Managed Kubernetes cluster, including its status and URL.
+The `GET /cloud/project/{serviceName}/kube/{kubeId}` API endpoint provides important information about your OVHcloud Managed Kubernetes cluster, including its status and URL.
 
-![Getting your cluster information in the OVHcloud API](images/kubernetes-quickstart-api-ovh-com-005.png){.thumbnail}
+> [!api]
+>
+> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}
+> 
 
+**Result:**
+
+```json
+{
+  "id": "xxxxxxxx-xxxx-4cdf-xxxx-xxxxxxxxxxxx",
+  "region": "GRA5",
+  "name": "my_kube_cluster",
+  "url": "xxxxxx.c1.gra.k8s.ovh.net",
+  "nodesUrl": "xxxxxx.nodes.c1.gra.k8s.ovh.net",
+  "version": "1.25.4-1",
+  "nextUpgradeVersions": [],
+  "kubeProxyMode": "iptables",
+  "customization": {
+    "apiServer": {
+      "admissionPlugins": {
+        "enabled": [
+          "NodeRestriction"
+        ],
+        "disabled": [
+          "AlwaysPullImages"
+        ]
+      }
+    },
+    "kubeProxy": {
+      "iptables": {},
+      "ipvs": {}
+    }
+  },
+  "status": "READY",
+  "updatePolicy": "ALWAYS_UPDATE",
+  "isUpToDate": true,
+  "controlPlaneIsUpToDate": true,
+  "privateNetworkId": null,
+  "createdAt": "2023-02-09T10:41:13Z",
+  "updatedAt": "2023-02-09T10:45:06Z"
+}
+```
 
 ## Listing node pools
 
-
 The `GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool` API endpoint lists all the available node pools:
 
-![Listing node pools](images/kubernetes-quickstart-api-ovh-com-006.png){.thumbnail}
+> [!api]
+>
+> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
+> 
 
+**Result:**
+
+```json
+[
+  {
+    "id": "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+    "projectId": "xxxxxxx",
+    "name": "nodepool-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+    "flavor": "b2-7",
+    "status": "READY",
+    "sizeStatus": "CAPACITY_OK",
+    "autoscale": false,
+    "monthlyBilled": false,
+    "antiAffinity": false,
+    "desiredNodes": 1,
+    "minNodes": 0,
+    "maxNodes": 100,
+    "currentNodes": 1,
+    "availableNodes": 1,
+    "upToDateNodes": 0,
+    "createdAt": "2022-09-22T06:58:09Z",
+    "updatedAt": "2022-12-15T15:14:33Z",
+    "autoscaling": {
+      "scaleDownUtilizationThreshold": 0.5,
+      "scaleDownUnneededTimeSeconds": 600,
+      "scaleDownUnreadyTimeSeconds": 1200
+    },
+    "template": {
+      "metadata": {
+        "labels": {},
+        "annotations": {},
+        "finalizers": []
+      },
+      "spec": {
+        "unschedulable": false,
+        "taints": []
+      }
+    }
+  },
+  {
+    "id": "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+    "projectId": "xxxxx",
+    "name": "nodepool-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+    "flavor": "b2-7",
+    "status": "READY",
+    "sizeStatus": "CAPACITY_OK",
+    "autoscale": false,
+    "monthlyBilled": false,
+    "antiAffinity": false,
+    "desiredNodes": 0,
+    "minNodes": 0,
+    "maxNodes": 100,
+    "currentNodes": 0,
+    "availableNodes": 0,
+    "upToDateNodes": 0,
+    "createdAt": "2023-01-13T08:52:27Z",
+    "updatedAt": "2023-01-13T08:52:39Z",
+    "autoscaling": {
+      "scaleDownUtilizationThreshold": 0.5,
+      "scaleDownUnneededTimeSeconds": 600,
+      "scaleDownUnreadyTimeSeconds": 1200
+    },
+    "template": {
+      "metadata": {
+        "labels": {},
+        "annotations": {},
+        "finalizers": []
+      },
+      "spec": {
+        "unschedulable": false,
+        "taints": []
+      }
+    }
+  }
+]
+```
 
 ## Create a node pool
 
 Use the `POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool` API endpoint to create a new node pool:
+
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
+> 
+
+**Request:**
+
+```json 
+{
+  "antiAffinity": false,
+  "autoscale": false,
+  "desiredNodes": 1,
+  "flavorName": "b2-7",
+  "monthlyBilled": false,
+  "name": "my-node-pool"
+}
+```
 
 You will need to give it a `flavorName` parameter, with the flavor of the instance you want to create. For this tutorial choose a general purpose node, like the `b2-7` flavor.
 
@@ -100,30 +263,121 @@ If you want your node pool to have at least one node, set the `desiredNodes` to 
 
 The API will return you the new node pool information.
 
-![Create a node pool](images/kubernetes-quickstart-api-ovh-com-007.png)
+**Result:**
 
+```json
+{
+  "id": "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+  "projectId": "",
+  "name": "my-node-pool",
+  "flavor": "b2-7",
+  "status": "INSTALLING",
+  "sizeStatus": "UNDER_CAPACITY",
+  "autoscale": false,
+  "monthlyBilled": false,
+  "antiAffinity": false,
+  "desiredNodes": 1,
+  "minNodes": 0,
+  "maxNodes": 100,
+  "currentNodes": 1,
+  "availableNodes": 0,
+  "upToDateNodes": 1,
+  "createdAt": "2023-02-14T09:39:47Z",
+  "updatedAt": "2023-02-14T09:39:47Z",
+  "autoscaling": {
+    "scaleDownUtilizationThreshold": 0.5,
+    "scaleDownUnneededTimeSeconds": 600,
+    "scaleDownUnreadyTimeSeconds": 1200
+  },
+  "template": {
+    "metadata": {
+      "labels": {},
+      "annotations": {},
+      "finalizers": []
+    },
+    "spec": {
+      "unschedulable": false,
+      "taints": []
+    }
+  }
+}
+```
 
 ## Get information on a node pool
 
-Use the `GET  /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint to get information on a specific node pool:
+Use the `GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint to get information on a specific node pool:
 
-![Get information on a node pool](images/kubernetes-quickstart-api-ovh-com-008.png)
+> [!api]
+>
+> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+> 
 
+**Result:**
+
+```json
+{
+  "id": "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+  "projectId": "xxxx",
+  "name": "nodepool-xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx",
+  "flavor": "b2-7",
+  "status": "READY",
+  "sizeStatus": "CAPACITY_OK",
+  "autoscale": false,
+  "monthlyBilled": false,
+  "antiAffinity": false,
+  "desiredNodes": 1,
+  "minNodes": 0,
+  "maxNodes": 100,
+  "currentNodes": 1,
+  "availableNodes": 1,
+  "upToDateNodes": 0,
+  "createdAt": "2022-09-22T06:58:09Z",
+  "updatedAt": "2022-12-15T15:14:33Z",
+  "autoscaling": {
+    "scaleDownUtilizationThreshold": 0.5,
+    "scaleDownUnneededTimeSeconds": 600,
+    "scaleDownUnreadyTimeSeconds": 1200
+  },
+  "template": {
+    "metadata": {
+      "labels": {},
+      "annotations": {},
+      "finalizers": []
+    },
+    "spec": {
+      "unschedulable": false,
+      "taints": []
+    }
+  }
+}
+```
 
 ## Updating the node pool
 
 To upsize or downsize your node pool, you can use the `PUT /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint, and set the `desiredNodes` to the new pool size. You can also modify some other properties:
 
-![Editing the node pool size](images/kubernetes-quickstart-api-ovh-com-009.png)
+> [!api]
+>
+> @api {PUT} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+> 
 
-
+{
+  "antiAffinity": false,
+  "autoscale": false,
+  "desiredNodes": 4,
+  "flavorName": "b2-7",
+  "monthlyBilled": false,
+  "name": "my-node-pool"
+}
 
 ## Deleting a node pool
 
-To delete a node pool, use the `/DELETE /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint:
+To delete a node pool, use the `DELETE /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` API endpoint:
 
-![Deleting a node pool](images/kubernetes-quickstart-api-ovh-com-010.png)
-
+> [!api]
+>
+> @api {DELETE} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+> 
 
 ## Go further
 

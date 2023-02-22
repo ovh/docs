@@ -4,6 +4,7 @@ slug: pci-vps-image-changelog
 excerpt: Find out what has changed in the images provided for Public Cloud & VPS
 section: 'General information'
 order: 03
+updated: 2021-02-09
 ---
 
 **Last updated 9th February 2021**

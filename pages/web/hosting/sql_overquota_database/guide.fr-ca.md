@@ -4,9 +4,10 @@ slug: database-overquota
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
 section: 'Bases de données'
 order: 06
+updated: 2023-02-16
 ---
 
-**Dernière mise à jour le 26/01/2023**
+**Dernière mise à jour le 16/02/2023**
 
 ## Objectif
 
@@ -120,15 +121,15 @@ Une fois que vous avez déterminé si le contenu de vos tables est nécessaire o
 
 Vous devrez basculer votre base de données sur une base de données plus volumineuse.
 
-Consultez notre offre de bases de données [SQL Privé/CloudDB](https://www.ovhcloud.com/fr-ca/web-hosting/options/) pour choisir votre nouveau service de base de données. 
+Consultez notre offre de bases de données [SQL Privé/Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-hosting/options/) pour choisir votre nouveau service de base de données. 
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
 Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
 
 - [Exporter votre base de données existante](https://docs.ovh.com/ca/fr/hosting/exportation-bases-donnees/)
-- [Premiers pas avec l'offre SQL Privé/CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
-- [Importer votre ancienne base de données dans votre offre SQL Privé/CloudDB](https://docs.ovh.com/fr/clouddb/restaurer-importer-base-de-donnees/)
+- [Premiers pas avec l'offre SQL Privé/Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
+- [Importer votre ancienne base de données dans votre offre SQL Privé/Web Cloud Databases](https://docs.ovh.com/fr/clouddb/restaurer-importer-base-de-donnees/)
 
 #### Cas n°2 - Une partie ou l'ensemble du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site
 

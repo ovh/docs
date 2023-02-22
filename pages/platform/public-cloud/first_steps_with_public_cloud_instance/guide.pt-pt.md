@@ -4,6 +4,7 @@ slug: comecar-com-uma-instancia-public-cloud
 excerpt: 'Saiba como gerir as suas instâncias Public Cloud na Área de Cliente OVHcloud'
 section: Introdução
 order: 05
+updated: 2023-01-04
 ---
 
 > [!primary]

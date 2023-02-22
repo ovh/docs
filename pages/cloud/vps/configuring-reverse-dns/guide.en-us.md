@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/us/en/public-cloud/configure-reverse-dns-instance/'
 section: Network management
 order: 3
+updated: 2023-01-05
 ---
 
 **Last updated 5th January 2023**

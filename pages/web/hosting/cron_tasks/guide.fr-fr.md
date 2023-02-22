@@ -4,6 +4,7 @@ slug: mutualise-taches-automatisees-cron
 excerpt: Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web
 section: Tâches automatisées (CRON)
 order: 01
+updated: 2022-12-01
 ---
 
 **Dernière mise à jour le 01/12/2022**

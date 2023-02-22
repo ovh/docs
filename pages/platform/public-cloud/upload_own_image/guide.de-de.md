@@ -4,6 +4,7 @@ slug: eigenes-image-importieren
 excerpt: Erfahren Sie hier, wie Sie Ihr eigenes Image in der Public Cloud verwenden
 section: 'OpenStack'
 order: 10
+updated: 2020-10-27
 ---
 
 > [!primary]

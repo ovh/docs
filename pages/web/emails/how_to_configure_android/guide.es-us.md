@@ -4,6 +4,7 @@ slug: configuracion-android
 excerpt: 'Cómo configurar una cuenta MX Plan en Android utilizando la aplicación Gmail'
 section: Configuración en el smartphone
 order: 02
+updated: 2018-03-12
 ---
 
 **Última actualización: 05/05/2020**

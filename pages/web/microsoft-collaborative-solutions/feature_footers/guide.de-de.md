@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie automatische Signaturen zu Ihren E-Mail-Acc
 slug: exchange_20132016_automatische_signatur_-_disclaimer
 section: Exchange Account-Funktionen
 order: 07
+updated: 2020-03-26
 ---
 
 

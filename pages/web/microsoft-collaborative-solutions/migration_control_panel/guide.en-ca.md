@@ -5,6 +5,7 @@ excerpt: 'Find out how to migrate an MX Plan email address to an Exchange accoun
 section: 'Account migration'
 order: 02
 hidden: true
+updated: 2022-11-22
 ---
 
 **Last updated 22nd November 2022**

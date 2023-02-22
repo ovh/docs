@@ -4,6 +4,7 @@ slug: installer-manuellement-prestashop
 excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS
 section: CMS
 order: 06
+updated: 2022-12-01
 ---
 
 

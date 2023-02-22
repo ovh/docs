@@ -5,6 +5,7 @@ slug: change_project_contacts
 section: Gestione del progetto
 order: 6
 
+updated: 2022-04-04
 ---
 
 > [!primary]

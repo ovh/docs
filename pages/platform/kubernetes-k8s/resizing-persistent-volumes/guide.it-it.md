@@ -6,6 +6,7 @@ section: Storage
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/resizing-persistent-volumes/'
+updated: 2021-10-19
 ---
 
 <style>

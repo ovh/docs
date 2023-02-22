@@ -3,6 +3,7 @@ title: Travailler avec les sondes
 slug: probes
 excerpt: Découvrez les principes généraux et des cas d'usage pour les sondes
 section: Configuration
+updated: 2019-02-12
 ---
 
 ## Objectif

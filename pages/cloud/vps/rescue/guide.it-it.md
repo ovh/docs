@@ -3,6 +3,7 @@ title: Attiva e utilizza la modalità Rescue su un VPS
 slug: rescue
 excerpt: Come attivare e utilizzare la modalità Rescue sul tuo VPS
 section: Diagnostica e modalità Rescue
+updated: 2022-05-02
 ---
 
 **Ultimo aggiornamento: 02/05/2022**

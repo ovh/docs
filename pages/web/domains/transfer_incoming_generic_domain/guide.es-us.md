@@ -4,6 +4,7 @@ slug: transferir-un-dominio-generico
 excerpt: 'Cómo realizar la transferencia de un dominio a OVHcloud'
 section: 'Operaciones en los dominios'
 order: 01
+updated: 2022-11-18
 ---
 
 > [!primary]

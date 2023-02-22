@@ -4,13 +4,14 @@ excerpt: Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud
 slug: 1-click-module-management
 section: CMS
 order: 02
+updated: 2022-09-05
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 05/09/2022**
+**Última atualização: 15/02/2023**
 
 ## Objetivo
 
@@ -114,7 +115,7 @@ No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a opera
 
 Para eliminar o módulo 1 clique, deve começar por identificar a sua base de dados de forma **segura**. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Bases de dados`{.action}.
 
-Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [CloudDB](https://www.ovh.pt/cloud/cloud-databases/), pode considerar que se trata do seu site.
+Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/), pode considerar que se trata do seu site.
 
 Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da `Pasta raiz`: trata-se do diretório no qual se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
 

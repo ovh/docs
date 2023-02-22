@@ -4,6 +4,7 @@ slug: partilhado_dynhost
 excerpt: 'Saiba como configurar um registo DNS dinâmico (DynHost) para o seu nome de domínio OVHcloud'
 section: 'DNS e zona DNS'
 order: 06
+updated: 2018-07-19
 ---
 
 **Última atualização: 06/06/2018**

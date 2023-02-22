@@ -4,6 +4,7 @@ slug: delete-email-account
 excerpt: "Erfahren Sie hier, wie Sie einen Account Ihrer E-Mail-Lösung löschen oder zurücksetzen"
 section: 'E-Mail Account Funktionen'
 order: 02
+updated: 2023-01-27
 ---
 
 > [!primary]

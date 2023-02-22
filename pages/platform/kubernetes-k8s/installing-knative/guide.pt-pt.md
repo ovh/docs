@@ -6,6 +6,7 @@ section: Serverless
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-knative/'
+updated: 2023-01-02
 ---
 
 **Last updated 2nd January, 2023.**

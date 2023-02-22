@@ -4,6 +4,7 @@ excerpt: Come aggiungere e configurare spazio di storage aggiuntivo su un VPS
 slug: config-additional-disk-vps
 section: Opzioni di backup
 order: 3
+updated: 2021-02-24
 ---
 
 > [!primary]

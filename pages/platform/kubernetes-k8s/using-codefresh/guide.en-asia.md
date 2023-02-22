@@ -3,6 +3,7 @@ title: Using Codefresh with OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to use Codefresh CI/CD with an OVHcloud Managed Kubernetes cluster'
 slug: using-codefresh
 section: Tutorials
+updated: 2019-07-01
 ---
 
 **Last updated 1<sup>st</sup> July, 2019.**

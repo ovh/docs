@@ -4,6 +4,7 @@ excerpt: 'Criação, dar inicio e eliminar imagens no Horizon'
 slug: criacao_dar_inicio_e_eliminar_imagens_no_horizon
 legacy_guide_number: g1784
 section: Gestão a partir do Horizon
+updated: 2021-12-30
 ---
 
 > [!primary]

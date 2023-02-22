@@ -4,6 +4,7 @@ excerpt: Come gestire le tue istanze con il client Python OpenStack
 slug: come_utilizzare_lapi_nova
 legacy_guide_number: g1935
 section: Gestione via OpenStack
+updated: 2022-10-13
 ---
 
 > [!primary]

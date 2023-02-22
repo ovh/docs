@@ -4,9 +4,10 @@ slug: tworzenie-bazy-danych
 excerpt: 'Dowiedz się, jak korzystać z baz danych zawartych w usłudze hostingu WWW OVHcloud'
 section: 'Bazy danych'
 order: 01
+updated: 2022-02-03
 ---
 
-**Ostatnia aktualizacja: 03-02-2022**
+**Ostatnia aktualizacja: 15-02-2023**
 
 ## Wprowadzenie 
 
@@ -106,7 +107,7 @@ Aby sprawdzić, czy są dostępne migawki oraz ich sygnaturę czasową utworzeni
 
 **Zbyt dużo połączeń**
 
-Bazy danych w ramach hostingu WWW mają limit 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeśli mimo tego problem będzie się powtarzać, należy rozważyć podjęcie innych środków, tj. wybór prywatnej bazy danych SQL ([CloudDB](https://www.ovh.pl/cloud/cloud-databases/)) lub [zmianę pakietu hostingu na wyższy](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/). 
+Bazy danych w ramach hostingu WWW mają limit 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeśli mimo tego problem będzie się powtarzać, należy rozważyć podjęcie innych środków, tj. wybór prywatnej bazy danych SQL ([Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/)) lub [zmianę pakietu hostingu na wyższy](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/). 
 
 **Błędy połączenia typu „nie można znaleźć”**
 

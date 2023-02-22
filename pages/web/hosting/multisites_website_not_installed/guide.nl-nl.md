@@ -5,6 +5,7 @@ excerpt: Ontdek hoe u de fout 'Website niet geïnstalleerd' kunt oplossen
 slug: webhosting_error_site_niet_geinstalleerd
 section: Configuratie van het webhostingplan
 order: 2
+updated: 2021-05-18
 ---
 
 **Laatste update 02-03-2018**

@@ -4,6 +4,7 @@ slug: exchange-signature-automatique-disclaimer
 excerpt: Découvrez comment créer une signature automatique depuis l’espace client OVHcloud
 section: Fonctionnalités des comptes Exchange
 order: 07
+updated: 2020-03-26
 ---
 
 **Dernière mise à jour le 26/03/2020**

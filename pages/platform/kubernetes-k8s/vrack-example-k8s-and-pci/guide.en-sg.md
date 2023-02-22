@@ -3,6 +3,7 @@ title: Working with vRack example - Managed Kubernetes and Public Cloud instance
 slug: vrack-example-k8s-and-pci
 section: Network
 order: 02
+updated: 2021-12-21
 ---
 
 **Last updated December 21 2021.**

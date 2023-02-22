@@ -4,6 +4,7 @@ slug: guide-des-redirections-emails
 excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
 section: 'Fonctionnalités des adresses e-mail'
 order: 01
+updated: 2020-05-20
 ---
 
 <style>

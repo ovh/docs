@@ -4,6 +4,7 @@ slug: using-outlook-web-app-email-pro
 legacy_guide_number: g1918
 section: 'Erste Schritte'
 order: 2
+updated: 2021-06-25
 ---
 
 **Letzte Aktualisierung am 26.02.2021**

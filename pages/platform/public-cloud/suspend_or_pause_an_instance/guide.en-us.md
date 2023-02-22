@@ -4,6 +4,7 @@ slug: shelve-or-pause-an-instance
 legacy_guide_number: 1781
 section: Project management
 order: 3
+updated: 2021-09-20
 ---
 
 **Last updated 20th September 2021**

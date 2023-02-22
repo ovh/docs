@@ -6,6 +6,7 @@ section: Command Line Interface
 order: 207
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/'
+updated: 2022-04-13
 ---
 
 **Last updated 13th April, 2022.**

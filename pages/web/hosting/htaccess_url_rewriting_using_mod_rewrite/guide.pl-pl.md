@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak zmienić adres URL dostępu do Twojej strony za pomo
 slug: hosting_www_htaccess_-_generowanie_adresow_za_pomoca_mod_rewrite
 section: 'Przekierowania i uprawnienia dostępu'
 order: 03
+updated: 2022-12-22
 ---
 
 > [!primary]

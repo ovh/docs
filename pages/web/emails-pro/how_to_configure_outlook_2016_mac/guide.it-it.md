@@ -4,6 +4,7 @@ slug: configurazione-outlook-2016-mac
 excerpt: 'Scopri come configurare un account Email Pro su Outlook 2016 per Mac'
 section: 'Configurazione di un client di posta'
 order: 2
+updated: 2020-03-18
 ---
 
 **Ultimo aggiornamento: 09/04/2020**

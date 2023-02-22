@@ -4,6 +4,7 @@ excerpt: Ridimensiona un'istanza dallo Spazio Cliente OVHcloud
 slug: resize-an-instance-manager
 section: Gestione dallo Spazio Cliente OVHcloud
 order: 6
+updated: 2022-08-24
 ---
 
 > [!primary]

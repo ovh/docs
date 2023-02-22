@@ -4,6 +4,7 @@ slug: premiers-pas-avec-visibilite-pro
 excerpt: 'Découvrez comment bien débuter avec la solution Visibilité Pro'
 section: 'Visibilité Pro'
 order: 01
+updated: 2018-09-19
 ---
 
 **Dernière mise à jour le 19/09/2018**

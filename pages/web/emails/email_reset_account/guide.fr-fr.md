@@ -4,6 +4,7 @@ slug: delete-email-account
 excerpt: "Découvrez comment supprimer ou réinitialiser une adresse e-mail sur votre offre e-mail"
 section: 'Fonctionnalités des adresses e-mail'
 order: 02
+updated: 2023-01-27
 ---
 
 **Dernière mise à jour le 22/12/2022**

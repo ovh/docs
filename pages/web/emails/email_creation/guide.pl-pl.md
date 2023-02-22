@@ -4,6 +4,7 @@ slug: przewodnik_na_temat_zakladania_adresu_e-mail
 excerpt: 'Dowiedz się, jak utworzyć konto e-mail w ramach pakietu MX Plan'
 section: 'Pierwsze kroki'
 order: 02
+updated: 2022-10-11
 ---
 
 > [!primary]

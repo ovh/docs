@@ -4,6 +4,7 @@ excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: Getting started
 order: 9
+updated: 2022-11-17
 ---
 
 **Last updated 17th November 2022**

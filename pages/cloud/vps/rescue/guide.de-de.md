@@ -3,6 +3,7 @@ title: Rescue-Modus für einen VPS aktivieren und verwenden
 slug: rescue
 excerpt: Erfahren Sie hier, wie Sie Ihren VPS in den Rescue-Modus versetzen
 section: Diagnose & Rescue Modus
+updated: 2022-05-02
 ---
 
 **Letzte Aktualisierung am 02.05.2022**

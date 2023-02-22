@@ -4,6 +4,7 @@ slug: transfer-generic-domain
 excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
 section: Transfer
 order: 01
+updated: 2022-11-18
 ---
 
 **Last updated 18th November 2022**

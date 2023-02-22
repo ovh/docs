@@ -4,6 +4,7 @@ excerpt: 'Cómo conectarse y utilizar el acceso SSH en un alojamiento web de OVH
 slug: web_hosting_ssh_en_alojamiento_compartido
 section: FTP y SSH
 order: 07
+updated: 2022-01-19
 ---
 
 **Última actualización: 19/01/2022**

@@ -4,6 +4,7 @@ excerpt: 'Poznaj podstawy korzystania z serwera VPS'
 slug: pierwsze-kroki-vps
 section: 'Pierwsze kroki'
 order: 1
+updated: 2022-03-25
 ---
 
 > [!primary]

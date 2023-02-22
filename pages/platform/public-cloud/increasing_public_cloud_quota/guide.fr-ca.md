@@ -5,6 +5,7 @@ slug: increase-public-cloud-quota
 legacy_guide_number: 1904
 section: 'Gestion de projets'
 order: 6
+updated: 2023-01-27
 ---
 
 **Dernière mise à jour le 27/01/2023**

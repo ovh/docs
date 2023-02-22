@@ -3,7 +3,8 @@ title: "Anwendungsbeispiele - Ihre Website ist von einem Hack betroffen"
 excerpt: "Erfahren Sie hier, wie Sie Ihre gehackte Website reparieren"
 slug: was_tun_wenn_ihre_wordpress_seite_gehackt_wurde
 section: "Tutorials"
-order: 01
+order: 010
+updated: 2022-11-15
 ---
 
 **Letzte Aktualisierung am 15.11.2022**

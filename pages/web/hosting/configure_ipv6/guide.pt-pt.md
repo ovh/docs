@@ -4,6 +4,7 @@ slug: configurar-ipv6-para-o-site
 excerpt: "Descubra como tornar o seu website compatível com um endereço IPv6"
 section: Configuração do alojamento
 order: 06
+updated: 2023-02-10
 ---
 
 **Última atualização: 10/02/2023**

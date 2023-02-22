@@ -4,6 +4,7 @@ slug: cancel-job
 excerpt: Find out how to cancel a job running in the Data Processing platform through the OVHcloud Manager
 section: How to
 order: 3
+updated: 2020-03-06
 ---
 
 **Last updated 06<sup>th</sup> March, 2020**

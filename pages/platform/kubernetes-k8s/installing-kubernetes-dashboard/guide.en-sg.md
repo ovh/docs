@@ -4,9 +4,10 @@ slug: installing-kubernetes-dashboard
 excerpt: 'Find out how to install the Kubernetes Dashboard on your OVHcloud Managed Kubernetes Service'
 section: Tutorials
 order: 3
+updated: 2023-02-16
 ---
 
-**Last updated November 2<sup>nd</sup>, 2022.**
+**Last updated 16th February 2023.**
 
 <style>
  pre {
@@ -39,40 +40,20 @@ The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} i
 This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!primary]
-> This tutorial describes the most basic way of using the Dashboard with your OVHcloud Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard){.external} for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/wiki/Access-control){.external}, for more in-depth information.
+> This tutorial describes the most basic way of using the Dashboard with your OVHcloud Managed Kubernetes cluster. Please refer to the [official docs](https://github.com/kubernetes/dashboard){.external} for a deeper understanding, specially on subjects like [access control](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/README.md){.external}, for more in-depth information.
 >
 
 ## Deploy the Dashboard in your cluster
 
 Depending on the version of Kubernetes you are running, you have to choose the right Dashboard version to deploy in order to avoid incompatibilities.
 
-### For Kubernetes 1.15, choose version [v2.0.0-beta4](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-beta4)
-
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta4/aio/deploy/recommended.yaml
-```
-
-### For Kubernetes 1.16, choose version [v2.0.0-rc3](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-rc3)
-
-```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc3/aio/deploy/recommended.yaml
-```
-
-### For Kubernetes 1.17, choose version [v2.0.0-rc7](https://github.com/kubernetes/dashboard/releases/tag/v2.0.0-rc7)
-
-```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc7/aio/deploy/recommended.yaml
-```
-
-### For Kubernetes 1.20, choose version [v2.3.1](https://github.com/kubernetes/dashboard/releases/tag/v2.3.1)
-
-```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 ```
 
 It should display something like this:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-rc7/aio/deploy/recommended.yaml
+<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 namespace/kubernetes-dashboard created
 serviceaccount/kubernetes-dashboard created
 service/kubernetes-dashboard created
@@ -154,7 +135,7 @@ clusterrolebinding.rbac.authorization.k8s.io/admin-user created
 
 ### Create a Secret ServiceAccountToken
 
-In Kubernetes v1.24.0 Secret API objects containing service account tokens are no longer auto-generated for every ServiceAccount. Because of this, we'll need to create it ourselves.
+In Kubernetes **v1.24.0** Secret API objects containing service account tokens are no longer auto-generated for every ServiceAccount. Because of this, we'll need to create it ourselves.
 
 To do this, please copy the following YAML into a `service-account-token.yml` file:
 
@@ -177,7 +158,7 @@ kubectl apply -f service-account-token.yml
 
 It should display something like this:
 
-<pre class="console"><code>$ kubectl apply -f dashboard-cluster-role-binding.yml
+<pre class="console"><code>$ kubectl apply -f service-account-token.yml
 secret/admin-user-token created
 </code></pre>
 
@@ -192,19 +173,19 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 It should display something like:
 
 <pre class="console"><code>$ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user-token | awk '{print $1}')
-Name:         admin-user-token-2kv9s
+Name:         admin-user-token
 Namespace:    kubernetes-dashboard
-Labels:       &lt;none>
+Labels:       <none>
 Annotations:  kubernetes.io/service-account.name: admin-user
-              kubernetes.io/service-account.uid: fa0408f5-bb43-4bf3-976c-0e584e284332
+              kubernetes.io/service-account.uid: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 Type:  kubernetes.io/service-account-token
 
 Data
 ====
-namespace:  20 bytes
-token:      &lt;very_very_long_token>
 ca.crt:     1801 bytes
+namespace:  20 bytes
+token:      <sensitive>
 </code></pre>
 
 Copy the token and store it securely, as it's your key to the Dashboard.
@@ -239,6 +220,6 @@ You will then be taken directly to your Dashboard:
 To remove all resources created by your previous `kubernetes-dashboard` deployment, just execute the following command line:
 
 ```bash
-kubectl delete ns kubernetes-dashboard
+kubectl delete -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 kubectl delete -f dashboard-cluster-role-binding.yml
 ```

@@ -4,6 +4,7 @@ excerpt: 'Découvrez comment activer et utiliser l’option snapshot depuis l’
 slug: snapshot-vps
 section: Sauvegarde
 order: 1
+updated: 2022-12-02
 ---
 
 **Dernière mise à jour le 02/12/2022**

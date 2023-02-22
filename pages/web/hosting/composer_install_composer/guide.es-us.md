@@ -4,6 +4,7 @@ slug: install_composer_on_web_hosting_packages
 excerpt: Esta guía explica cómo instalar y dar los primeros pasos en Composer.
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 **Última actualización: 09/12/2022**

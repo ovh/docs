@@ -4,6 +4,7 @@ slug: debuter-avec-volumes-api-openstack
 legacy_guide_number: 2071
 section: Gestion via OpenStack
 order: 6
+updated: 2021-05-19
 ---
 
 **Dernière mise à jour le 19/05/2021**

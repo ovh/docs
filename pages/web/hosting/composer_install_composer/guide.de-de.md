@@ -4,6 +4,7 @@ slug: composer-installieren-hosting
 excerpt: Erfahren Sie hier, wie Composer installieren und erste Schritte ausführen
 section: PHP
 order: 02
+updated: 2022-12-09
 ---
 
 > [!primary]

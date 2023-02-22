@@ -5,6 +5,7 @@ order: 1
 section: Visualize your logs
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/using-grafana-with-logs/'
+updated: 2022-06-15
 ---
 
 **Last updated 15th June, 2022**

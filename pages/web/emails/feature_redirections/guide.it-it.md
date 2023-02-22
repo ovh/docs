@@ -4,6 +4,7 @@ excerpt: 'Come gestire gli alias e i reindirizzamenti email'
 slug: servizio_email_configura_il_reindirizzamento_delle_tue_email
 section: 'Funzionalità degli indirizzi email'
 order: 01
+updated: 2020-05-20
 ---
 
 <style>

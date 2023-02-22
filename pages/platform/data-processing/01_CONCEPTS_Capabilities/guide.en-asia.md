@@ -4,6 +4,7 @@ slug: capabilities
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
 section: Concepts
 order: 1
+updated: 2022-12-07
 ---
 
 **Last updated 07<sup>th</sup> December, 2022**

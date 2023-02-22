@@ -4,6 +4,7 @@ slug: ipv6-konfigurieren
 excerpt: Erfahren Sie hier, wie Sie IPv6 auf Ihrem OVHcloud VPS konfigurieren'
 section: 'Netzwerk & IP'
 order: 1
+updated: 2022-12-01
 ---
 
 > [!primary]

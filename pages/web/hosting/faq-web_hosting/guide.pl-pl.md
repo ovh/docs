@@ -4,13 +4,14 @@ excerpt: Znajdź najczęściej zadawane pytania dotyczące hostingu stron intern
 slug: web-hosting-faq
 section: Pierwsze kroki
 order: 05
+updated: 2022-11-28
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 28-11-2022**
+**Ostatnia aktualizacja z dnia 15-02-2023**
 
 ## Zarządzanie usługą
  
@@ -60,12 +61,12 @@ Jeśli zrezygnujesz z hostingu lub usuniesz go z hostingu, powiązana z nim ofer
 
 W tym celu przejdź do zakładki `Informacje ogólne`{.action} na Twoim hostingu. W sekcji **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie `Adresy e-mail`. Kliknij polecenie `Odłącz opcję e-mail`{.action} i postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę e-mail, która pozwoli Ci zachować utworzone konta e-mail.
 
-### W przypadku rezygnacji z hostingu Performance, jak zachować powiązaną ofertę CloudDB?
+### W przypadku rezygnacji z hostingu Performance, jak zachować powiązaną ofertę Web Cloud Databases?
 
-Serwery wirtualne **Performance** obejmują usługę CloudDB włączoną za darmo.
-Gdy rezygnujesz lub usuwasz hosting **Performance**, przypisana do hostingu usługa CloudDB jest również wyłączona. Aby zachować usługę CloudDB, należy ją odłączyć przed rezygnacją z hostingu.<br>
+Serwery wirtualne **Performance** obejmują usługę Web Cloud Databases włączoną za darmo.
+Gdy rezygnujesz lub usuwasz hosting **Performance**, przypisana do hostingu usługa Web Cloud Databases jest również wyłączona. Aby zachować usługę Web Cloud Databases, należy ją odłączyć przed rezygnacją z hostingu.<br>
 
-W tym celu kliknij zakładkę `Informacje ogólne`{.action} Twojego hostingu. W sekcji **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie "**Prywatna baza danych**". Kliknij polecenie `Odłącz`{.action} i postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę CloudDB, co pozwoli Ci zachować utworzoną wcześniej usługę CloudDB.
+W tym celu kliknij zakładkę `Informacje ogólne`{.action} Twojego hostingu. W sekcji **Konfiguracja** kliknij przycisk `...`{.action} po prawej stronie "**Prywatna baza danych**". Kliknij polecenie `Odłącz`{.action} i postępuj zgodnie z instrukcjami, aby zamówić niezależną ofertę Web Cloud Databases, co pozwoli Ci zachować utworzoną wcześniej usługę Web Cloud Databases.
 
 ## Diagnostyka
 

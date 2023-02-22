@@ -4,6 +4,7 @@ slug: accelerer-mon-site-web-en-utilisant-le-cdn
 excerpt: 'Améliorez votre site en accélérant son chargement sur votre hébergement Web grâce au CDN'
 section: 'Optimiser son site'
 order: 03
+updated: 2021-12-23
 ---
 
 **Dernière mise à jour le 23/12/2021**

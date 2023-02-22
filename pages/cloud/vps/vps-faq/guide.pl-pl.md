@@ -3,6 +3,7 @@ title: FAQ VPS OVHcloud
 slug: vps-faq
 section: 'Pierwsze kroki'
 order: 1
+updated: 2022-05-05
 ---
 
 > [!primary]

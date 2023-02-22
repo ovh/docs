@@ -4,6 +4,7 @@ excerpt: Backing-up Persistent Volumes using Stash
 slug: backing-up-volumes-using-stash
 section: Storage
 order: 4
+updated: 2022-09-26
 ---
 
 <style>

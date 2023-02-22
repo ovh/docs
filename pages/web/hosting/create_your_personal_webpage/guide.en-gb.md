@@ -3,14 +3,22 @@ title: 'Tutorial - Creating your personal webpage at OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Find out how to create your first webpage with a free Start 10M hosting plan'
 section: "Tutorials"
-order: 01
+order: 012
+updated: 2023-02-17
 ---
 
-**Last updated 22nd November 2022**
+**Last updated 17th February 2023**
 
 ## Objective
 
 Find out how to create the first page of a website on a Start 10M hosting plan, available for free with every domain name purchase from OVHcloud.
+
+
+> [!warning]
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>
 
 ## Requirements
 
@@ -412,7 +420,7 @@ Some examples of websites and web applications made with Bootstrap:
 - [https://bootstraptaste.com/](https://bootstraptaste.com/)
 - [https://bootstrapthemes.co/](https://bootstrapthemes.co/).
 
-## Go further
+## Go further <a name="gofurther"></a>
 
 You will find many resources on the web to learn and improve your practice, to copy entire elements of code or portions of code, to add features to your site without risking errors or malfunctions. Here are some reference sites:
 

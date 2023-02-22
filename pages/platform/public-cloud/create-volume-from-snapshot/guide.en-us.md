@@ -4,6 +4,7 @@ slug: create-volume-from-backup
 excerpt: 'Find out how to create additional disks from a snapshot of an additional disk'
 section: Storage
 order: 3
+updated: 2021-04-06
 ---
 
 **Last updated 6th April 2021**

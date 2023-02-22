@@ -4,6 +4,7 @@ excerpt: Find out how a Floating IP address functions and how to configure it
 slug: attaching-pci-floating-ip-to-instance
 section: Getting started
 order: 02
+updated: 2022-11-14
 ---
 
 **Last updated 14th November 2022**

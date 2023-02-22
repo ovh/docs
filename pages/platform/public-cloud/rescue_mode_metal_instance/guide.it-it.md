@@ -7,6 +7,7 @@ order: 3
 routes:
     canonical: 'https://docs.ovh.com/gb/en/public-cloud/metal-instance-rescue-mode/'
 hidden: true
+updated: 2023-01-04
 ---
 
 **Last updated 4th January 2023**

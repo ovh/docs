@@ -4,6 +4,7 @@ excerpt: 'Pierwsza konfiguracja serwera Private Exchange'
 slug: exchange_pierwsze_kroki_na_serwerze_private
 section: 'Pierwsze kroki z Exchange'
 order: 02
+updated: 2020-04-17
 ---
 
 **Ostatnia aktualizacja z dnia 25-03-2020**

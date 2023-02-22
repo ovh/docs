@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVH
 slug: webhosting_ssh_auf_ihren_webhostings
 section: 'FTP und SSH'
 order: 07
+updated: 2022-01-19
 ---
 
 **Letzte Aktualisierung am 19.01.2022**

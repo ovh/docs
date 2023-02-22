@@ -6,6 +6,7 @@ section: Storage
 order: 2
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backup-restore-pv-volume-snapshot/'
+updated: 2023-01-11
 ---
 
 <style>

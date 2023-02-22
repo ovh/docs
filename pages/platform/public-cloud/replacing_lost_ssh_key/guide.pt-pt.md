@@ -4,6 +4,7 @@ excerpt: Alterar a chave SSH em caso de perda
 slug: alterar_a_chave_ssh_em_caso_de_perda
 legacy_guide_number: g2069
 section: Gestão a partir da Área de Cliente OVHcloud
+updated: 2022-02-10
 ---
 
 > [!primary]

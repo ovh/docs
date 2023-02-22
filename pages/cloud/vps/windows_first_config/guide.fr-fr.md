@@ -3,6 +3,7 @@ title: Configurer une nouvelle installation de Windows Server
 slug: windows-first-config
 excerpt: "Découvrez comment activer les logs de démarrage, l'ICMP et le bureau à distance"
 section: Premiers pas
+updated: 2022-05-06
 ---
 
 **Dernière mise à jour le 06/05/2022**

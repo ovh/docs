@@ -3,6 +3,7 @@ title: FAQ OVHcloud Data Processing
 slug:  data-processing-faq 
 section: Getting started
 order: 3
+updated: 2020-06-16
 ---
 
 **Last updated 16<sup>th</sup> June, 2020**

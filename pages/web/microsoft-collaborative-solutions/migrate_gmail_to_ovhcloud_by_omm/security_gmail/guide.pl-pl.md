@@ -2,6 +2,7 @@
 title: 'Jak zezwolić na mniej bezpieczne połączenia w Gmailu'
 slug: bezpieczenstwo-gmail
 hidden: true
+updated: 2022-04-06
 ---
 
 **Ostatnia aktualizacja z dnia 06-04-2022**

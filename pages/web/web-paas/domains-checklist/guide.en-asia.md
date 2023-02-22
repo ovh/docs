@@ -3,6 +3,7 @@ title: Pre-Launch Checklist
 slug: domains-checklist
 section: Domains
 order: 7
+updated: 2021-05-11
 ---
 
 **Last updated 11th May 2021**

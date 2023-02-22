@@ -4,6 +4,7 @@ slug: notebooks/tuto-first-ml-model-miniconda
 excerpt: How to build your first Machine Learning model thanks to Miniconda
 section: AI Notebooks - Tutorials
 order: 01
+updated: 2022-09-01
 ---
 
 **Last updated 1st September, 2022.**

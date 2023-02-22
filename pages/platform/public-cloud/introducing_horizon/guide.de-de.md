@@ -4,6 +4,7 @@ slug: horizon
 excerpt: Erfahren Sie hier, wie Sie das Horizon Interface verwenden
 section: Horizon
 order: 01
+updated: 2022-03-16
 ---
 
 > [!primary]

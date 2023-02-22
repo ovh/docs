@@ -2,6 +2,7 @@
 title: 'Consentire alle applicazioni meno sicure di accedere al tuo account Gmail'
 slug: sicurezza-gmail
 hidden: true
+updated: 2022-04-06
 ---
 
 **Ultimo aggiornamento: 06/04/2022**

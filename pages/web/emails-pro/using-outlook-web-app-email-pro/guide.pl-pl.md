@@ -3,6 +3,7 @@ title: 'Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange'
 slug: using-outlook-web-app-email-pro
 section: 'Pierwsze kroki'
 order: 2
+updated: 2021-06-25
 ---
 
 **Ostatnia aktualizacja: 25-06-2021**

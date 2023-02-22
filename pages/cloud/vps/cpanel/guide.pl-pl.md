@@ -3,6 +3,7 @@ title: Instalacja cPanel na serwerze VPS
 slug: cpanel
 excerpt: 'Dowiedz się, jak utworzyć instancję VPS przy użyciu wstępnie zainstalowanej aplikacji cPanel'
 section: 'Poziom zaawansowany'
+updated: 2021-10-14
 ---
 
 > [!primary]

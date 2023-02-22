@@ -4,6 +4,7 @@ excerpt: 'Come utilizzare il protocollo SSH per accedere al tuo hosting Web OVHc
 slug: hosting_condiviso_il_protocollo_ssh
 section: FTP e SSH
 order: 07
+updated: 2022-01-19
 ---
 
 

@@ -5,6 +5,7 @@ slug: exchange-configuracion-de-thunderbird
 excerpt: 'Cómo configurar una cuenta Exchange en Thunderbird para Windows'
 section: 'Configuración en el ordenador'
 order: 04
+updated: 2021-08-26
 ---
 
 > [!primary]

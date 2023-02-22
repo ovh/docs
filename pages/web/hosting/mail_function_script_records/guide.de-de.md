@@ -3,7 +3,8 @@ title: 'Automatische E-Mails eines Webhostings verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten'
 slug: webhosting_verwaltung_automatischer_e-mails
 section: 'Diagnose'
-order: 09
+order: 10
+updated: 2022-10-12
 ---
 
 **Letzte Aktualisierung am 12.10.2022**

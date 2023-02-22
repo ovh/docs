@@ -4,6 +4,7 @@ slug: first-configuration-email-pro
 excerpt: 'Find out how to configure your Email Pro solution'
 section: 'Getting started'
 order: 1
+updated: 2020-04-09
 ---
 
 **Last updated 9th April 2020**

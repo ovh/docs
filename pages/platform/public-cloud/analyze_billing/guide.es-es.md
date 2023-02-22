@@ -4,6 +4,7 @@ slug: informacion-sobre-el-tipo-de-facturacion-cloud
 section: 'Gestión del proyecto'
 excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
 order: 02
+updated: 2022-08-29
 ---
 
 **Última actualización: 30/08/2022**

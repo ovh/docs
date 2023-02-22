@@ -4,9 +4,10 @@ slug: create_and_configure_an_additional_disk_on_an_instance
 excerpt: 'Find out how to attach a new volume to your Public Cloud instance'
 section: Storage
 order: 1
+updated: 2023-02-09
 ---
 
-**Last updated 4th January 2023**
+**Last updated 9th February 2023**
 
 ## Objective
 
@@ -63,7 +64,7 @@ The examples below presume you are logged in as a user with elevated permissions
 
 #### Using Linux
 
-Establish an [SSH connection to your instance](../public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+Establish an [SSH connection to your instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -303,6 +304,85 @@ In the last window, click `Finish`{.action} to format the disk.
 ![format disk](images/format-disk-06.png){.thumbnail}
 
 The disk will be available as a drive in File Explorer after the operation.
+
+### Detach a volume
+
+If you wish to detach a volume from your instance, the best practice is to unmount the volume in the operating system before detaching it from the instance.
+
+> [!warning]
+>
+> An error message may appear if you have software or processes running on the additional disk. In this case, it is recommended to stop all processes before continuing.
+> 
+
+#### On Linux
+
+Establish an [SSH connection to your instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/#connect-to-instance), then use the command below to list the attached disks.
+
+```bash
+~$ admin@server-1:~$ lsblk
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└─vda1 254:1 0 10G 0 part /
+vdb       8:0    0   10G  0 disk
+└─vdb1    8:1    0   10G  0 part /mnt/disk
+```
+
+Unmount the partition using the command below:
+
+```bash
+~$ admin@server-1:~$ sudo umount /dev/vdb1
+```
+
+Remove the device ID from the fstab to complete the unmount process, if this is not done, the partition will be mounted right back after a reboot.
+
+```bash
+~$ admin@server-1:~$ sudo nano /etc/fstab
+```
+
+Save and exit the editor.
+
+Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
+
+Click on the `...`{.action} next to the corresponding volume and select `Detach from instance`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Click on `Confirm`{.action} in the pop up window to start the process.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+
+#### On Windows
+
+Establish a remote desktop (RDP) connection to your Windows instance.
+
+Once logged in, right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}.
+
+![disk management](images/start-menu.png){.thumbnail}
+
+Right click on the volume you wish to unmount and select `Change Drive Letter and Paths...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Click on `Remove`{.action} to remove the drive.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+Next, click on `Yes`{.action} to confirm the disk removal.
+
+![confirm remove disk](images/confirmunmounting.png){.thumbnail}
+
+When finished, you can close the Disk Management window.
+
+Go to the `Public Cloud`{.action} section of your OVHcloud Control Panel and click on `Block Storage`{.action} in the left-hand menu under **Storage**.
+
+Click on the `...`{.action} next to the corresponding volume and select `Detach from instance`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Click on `Confirm`{.action} in the pop up window to start the process.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Go further
 

@@ -4,6 +4,7 @@ slug: installer-manuellement-joomla
 excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS WordPress.
 section: CMS
 order: 05
+updated: 2022-12-01
 ---
 
 > [!warning]

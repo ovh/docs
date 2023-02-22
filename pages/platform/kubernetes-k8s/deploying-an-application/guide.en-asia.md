@@ -3,6 +3,7 @@ title: Deploying an application
 slug: deploying-an-application
 excerpt: 'Find out how to deploy a "Hello World" application on an OVHcloud Managed Kubernetes cluster'
 section: Getting started
+updated: 2022-05-02
 ---
 
 <style>

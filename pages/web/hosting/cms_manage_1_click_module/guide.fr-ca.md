@@ -4,6 +4,7 @@ excerpt: Découvrez comment gérer votre module en 1 clic depuis votre espace cl
 slug: 1-click-module-management
 section: CMS
 order: 02
+updated: 2022-09-05
 ---
 
 **Dernière mise à jour le 05/09/2022**

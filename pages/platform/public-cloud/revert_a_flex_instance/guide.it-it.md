@@ -3,6 +3,7 @@ title: Passare da un'istanza flex a un'istanza classica
 slug: modificare-un-istanza-flex
 excerpt: Come modificare un'istanza flex dall'interfaccia OpenStack Horizon
 section: Gestione da Horizon
+updated: 2021-11-15
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Find out how to manage Helm charts in the OVHcloud Managed Private Reg
 slug: using-helm-chart-museum
 section: 'Tutorials'
 order: 03
+updated: 2022-04-14
 ---
 
 **Last updated 14 April, 2022.**

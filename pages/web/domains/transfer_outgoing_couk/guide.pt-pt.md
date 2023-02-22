@@ -4,6 +4,7 @@ slug: transferencia_de_saida_de_um_dominio_couk
 excerpt: "Saiba como transferir um domínio UK para outro registar"
 section: Transferência
 order: 05
+updated: 2022-10-19
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: Find out how to configure your Redis instance to accept incoming connec
 slug: redis/configure-redis-instance
 section: Redis - Guides
 order: 020
+updated: 2022-03-24
 ---
 
 **Last updated 24th March 2022**

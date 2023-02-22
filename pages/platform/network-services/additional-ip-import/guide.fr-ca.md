@@ -4,6 +4,7 @@ slug: import-additional-ip
 excerpt: "Ce guide explique comment importer une Additional IP dans votre projet Public Cloud OVHcloud"
 section: Additional IP
 order: 03
+updated: 2023-01-04
 ---
 
 **Dernière mise à jour le 04/01/2023**

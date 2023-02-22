@@ -6,6 +6,7 @@ section: Traffic management
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-istio/'
+updated: 2022-05-30
 ---
 
 **Last updated 30th May, 2022.**

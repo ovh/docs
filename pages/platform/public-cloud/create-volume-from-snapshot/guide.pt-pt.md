@@ -4,6 +4,7 @@ slug: create-volume-from-backup
 excerpt: Saiba como criar discos adicionais a partir de um backup de um disco suplementar
 section: 'Armazenamento'
 order: 4
+updated: 2021-04-06
 ---
 
 > [!primary]

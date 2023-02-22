@@ -4,6 +4,7 @@ slug: ativar-start10m
 excerpt: 'Saiba como ativar o alojamento Start 10M'
 section: Primeiros passos
 order: 01
+updated: 2022-09-15
 ---
 
 > [!primary]

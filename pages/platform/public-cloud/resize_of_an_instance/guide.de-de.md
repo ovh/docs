@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie die Größe einer Instanz in Horizon ändern
 slug: nderung_der_groe_einer_instanz
 section: 'Horizon'
 order: 08
+updated: 2021-11-22
 ---
 
 > [!primary]

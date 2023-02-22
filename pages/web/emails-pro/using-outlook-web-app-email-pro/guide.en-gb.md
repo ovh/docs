@@ -3,6 +3,7 @@ title: 'Using the Outlook Web App with an Email Pro account'
 slug: using-outlook-web-app-email-pro
 section: 'Getting started'
 order: 2
+updated: 2021-06-25
 ---
 
 **Last updated 25th June 2021**

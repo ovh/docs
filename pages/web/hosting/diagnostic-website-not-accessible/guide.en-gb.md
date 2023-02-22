@@ -4,6 +4,7 @@ slug: server-error-inaccessible
 excerpt: How to diagnose the causes of inaccessibility of your web site
 section: Troubleshooting
 order: 01
+updated: 2022-08-02
 ---
 
 **Last updated 2nd August 2022**

@@ -4,6 +4,7 @@ slug: exchange_2016_compartir_una_carpeta_con_el_webmail_owa
 excerpt: 'Cómo compartir carpetas entre cuentas Exchange'
 section: 'Uso de Outlook Web Application (OWA)'
 order: 04
+updated: 2020-04-07
 ---
 
 

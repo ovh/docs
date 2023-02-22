@@ -3,6 +3,7 @@ title: Zmiana hasła dla użytkownika OpenStack
 slug: zmiana-hasla-horizon
 excerpt: Zmiana hasła użytkownika OpenStack w interfejsie Horizon
 section: Zarządzanie w interfejsie Horizon
+updated: 2018-03-07
 ---
 
 **Ostatnia aktualizacja dnia 2018-01-24**

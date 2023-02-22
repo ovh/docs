@@ -4,6 +4,7 @@ slug: iplb-presentation
 excerpt: Découvrez le service OVHcloud Load Balancer
 section: Premiers pas
 order: 01
+updated: 2018-01-17
 ---
 
 **Dernière mise à jour le 04/04/2022**

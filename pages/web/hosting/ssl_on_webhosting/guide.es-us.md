@@ -4,6 +4,7 @@ slug: gestionar-un-certificado-ssl-en-un-alojamiento-web
 excerpt: 'Operaciones relativas a los certificados SSL en los alojamientos web de OVHcloud'
 section: SSL
 order: 01
+updated: 2022-08-01
 ---
 
 > [!primary]

@@ -6,6 +6,7 @@ section: 'Tutorials'
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/using-helm-chart-museum/'
+updated: 2022-04-14
 ---
 
 **Last updated 14 April, 2022.**

@@ -4,9 +4,10 @@ excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i u
 slug: hosting_www_przewodnik_dotyczacy_optymalizacji_wydajnosci_strony
 section: 'Optymalizacja strony WWW'
 order: 06
+updated: 2022-02-03
 ---
 
-**Ostatnia aktualizacja dnia 03-02-2022**
+**Ostatnia aktualizacja dnia 15-02-2023**
 
 ## Wprowadzenie 
 Ten przewodnik jest przeznaczony dla klientów, którzy chcą poprawić wydajność witryny internetowej.
@@ -216,9 +217,9 @@ Przykład:
 Na przykład klauzuli „HAVING”, która może spowolnić zapytania. Nie używaj też klauzuli „GROUP BY”, o ile nie jest naprawdę niezbędna.
 
 
-#### CloudDB
-Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — CloudDB. Będziesz mieć do dyspozycji więcej zasobów.
-[Sprawdź ofertę CloudDB na naszej stronie](https://www.ovh.pl/cloud/cloud-databases/){.external}.
+#### Web Cloud Databases
+Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — Web Cloud Databases. Będziesz mieć do dyspozycji więcej zasobów.
+[Sprawdź ofertę Web Cloud Databases na naszej stronie](https://www.ovh.pl/cloud/cloud-databases/){.external}.
 
 ## Sprawdź również
 

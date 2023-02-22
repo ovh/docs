@@ -3,6 +3,7 @@ title: Travailler avec les zones
 slug: zones
 excerpt: Utilisez les zones afin d'augmenter la disponibilité et diminuer la latence
 section: Configuration
+updated: 2022-04-04
 ---
 
 

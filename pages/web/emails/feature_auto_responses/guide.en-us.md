@@ -5,6 +5,7 @@ excerpt: 'Find out how to set up automatic email replies'
 section: 'Email address features'
 order: 02
 hidden: true
+updated: 2021-04-20
 ---
 
 **Last updated 20th April 2021**

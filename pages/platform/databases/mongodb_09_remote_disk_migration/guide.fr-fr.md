@@ -6,6 +6,7 @@ section: MongoDB - Guides
 order: 090
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/remote-disk-migration/'
+updated: 2023-02-09
 ---
 
 **Last updated 9<sup>th</sup> February 2023**

@@ -4,6 +4,7 @@ excerpt: Esta guía describe cómo añadir y utilizar las cuentas de recursos co
 slug: exchange_20132016_uso_de_las_cuentas_de_recursos
 section: Funcionalidades de las cuentas Exchange
 order: 05
+updated: 2020-06-05
 ---
 
 **Última actualización: 22 de diciembre de 2020**

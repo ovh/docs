@@ -3,7 +3,8 @@ title: "Gestire l’invio delle email automatiche"
 excerpt: "Come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
 slug: hosting_web_gestisci_linvio_delle_tue_email_automatiche
 section: Diagnostica
-order: 09
+order: 10
+updated: 2022-10-12
 ---
 
 **Ultimo aggiornamento: 12/10/2022**

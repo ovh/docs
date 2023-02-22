@@ -4,6 +4,7 @@ slug: primeros-pasos-correo-compartido
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico MX Plan'
 section: 'Primeros pasos'
 order: 01
+updated: 2021-07-19
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: exportation-bases-donnees
 excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVH"
 section: 'Bases de données'
 order: 03
+updated: 2018-05-19
 ---
 
 **Dernière mise à jour le 11/07/2018**

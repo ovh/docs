@@ -4,6 +4,7 @@ slug: configurer-2fa-exchange
 excerpt: 'Découvrez comment configurer la double authentification sur un compte Exchange'
 section: 'Fonctionnalités des comptes Exchange'
 order: 04
+updated: 2020-03-11
 ---
 
 **Dernière mise à jour le 11/03/2020**

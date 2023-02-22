@@ -4,6 +4,7 @@ slug: object-storage-java
 excerpt: OpenStack Swift and its S3 compatible API is a common way to store the data you want to use for your Apache Spark jobs. Let's find out how to do it in Java!
 section: How to
 order: 6
+updated: 2021-01-20
 ---
 
 **Last updated 20<sup>th</sup> January, 2021**

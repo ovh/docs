@@ -5,6 +5,7 @@ slug: using-lb
 section: Getting started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/using-lb/'
+updated: 2022-10-31
 ---
 
 **Last updated 31st October 2022**

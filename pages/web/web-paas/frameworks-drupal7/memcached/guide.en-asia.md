@@ -2,6 +2,7 @@
 title: Using Memcached with Drupal 7.x
 slug: memcached
 section: Drupal7
+updated: 2021-05-11
 ---
 
 **Last updated 11th May 2021**

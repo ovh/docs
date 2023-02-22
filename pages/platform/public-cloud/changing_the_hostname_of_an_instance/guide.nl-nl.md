@@ -5,6 +5,7 @@ slug: wijzigen-hostnaam-instance
 excerpt: 'Ontdek hoe u de hostnaam van een Public Cloud instance kunt veranderen'
 legacy_guide_number: 1928
 section: Tutorials
+updated: 2018-09-18
 ---
 
 **Laatste update 17-08-2018**

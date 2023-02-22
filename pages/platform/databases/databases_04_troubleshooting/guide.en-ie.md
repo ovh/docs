@@ -4,6 +4,7 @@ excerpt: Troubleshooting tips for Public Cloud Databases
 slug: troubleshooting
 section: General guides
 order: 040
+updated: 2021-09-27
 ---
 
 **Last updated 27th September 2021**

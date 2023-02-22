@@ -5,6 +5,7 @@ slug: using-codefresh
 section: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/using-codefresh/'
+updated: 2019-07-01
 ---
 
 **Last updated 1<sup>st</sup> July, 2019.**

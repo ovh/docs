@@ -4,6 +4,7 @@ excerpt: Scopri come configurare la vRack per le tue istanze Public Cloud
 slug: public-cloud-vrack
 section: Per iniziare
 order: 07
+updated: 2023-01-10
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: become_the_root_user_and_select_a_password
 excerpt: 'This guide will show you how to become the root user and create a password for the root account'
 section: 'Getting started'
 order: 08
+updated: 2022-03-24
 ---
 
 **Last updated 24th March 2022**

@@ -10,24 +10,24 @@ order: 06
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 30/06/2022**
+**Última atualização: 15/02/2023**
 
 ## Objetivo
 
-Os servidores CloudDB oferecem-lhe a possibilidade de agir sobre os parâmetros globais do seu servidor. Além disso, tem a hipótese de visualizar a atividade do servidor. 
+Os servidores Web Cloud Databases oferecem-lhe a possibilidade de agir sobre os parâmetros globais do seu servidor. Além disso, tem a hipótese de visualizar a atividade do servidor. 
 
 **Saiba como configurar e otimizar o servidor de bases de dados.**
 
 ## Requisitos
 
-- Dispor de uma [instância CloudDB](https://www.ovh.pt/cloud/cloud-databases/)  (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/)  (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
 ### Visualizar as informações gerais do servidor de bases de dados
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bases de dados`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud Databases`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
 
 Esta secção apresenta as informações essenciais da instância SQL. Sugerimos que dedique alguns minutos para verificar se estão corretas ou se correspondem às indicações descritas a abaixo.
 
@@ -42,56 +42,56 @@ Esta secção apresenta as informações essenciais da instância SQL. Sugerimos
 |Datacenter|Indica o datacenter onde instância está alojada. Certifique-se de que o datacenter da sua instância é o mesmo do alojamento web OVHcloud em que o seu site se encontra, ou se encontrará, alojado.|
 |Host|Indica o servidor OVHcloud onde a instância foi criada. Esta informação, inerente à infraestrutura da OVHcloud, poderá ser incluída na página sobre o [Estado dos Serviços](https://web-cloud.status-ovhcloud.com/).|
 
-![Informações gerais](images/privatesql01-General-information.png){.thumbnail}
+![Informações gerais](images/web-cloud-databases-General-information.png){.thumbnail}
 
 ## Gerir os seus acessos
 
-O seu CloudDB está acessível a partir dos seus alojamentos web da OVHcloud ou/e a partir da rede pública.
+O seu Web Cloud Databases está acessível a partir dos seus alojamentos web da OVHcloud ou/e a partir da rede pública.
 
 ###### Autorizar um endereço IP
 
-Para que o acesso à sua instância CloudDB funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados.
+Para que o acesso à sua instância Web Cloud Databases funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados.
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bases de dados`{.action} e clique na CloudDB SQL em causa. 
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud Databases`{.action} e clique na Web Cloud Databases SQL em causa. 
 
 Clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
-![clouddb](images/clouddb-add-ip.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-add-ip.png){.thumbnail}
 
 Na janela que se abrir, indique em `IP/máscara`{.action} o endereço IP ou a máscara que pretende autorizar e adicione uma descrição se desejar. Decida se quer dar acesso apenas às bases de dados ou ao SFTP. Por fim, clique em `Validar`{.action}.
 
-![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-add-ip-step2.png){.thumbnail}
 
 #### Autorizar conexões a um alojamento web OVHcloud 
 
 Para um alojamento web da OVHcloud, pode simplesmente selecionar `Autorizar os alojamentos web da OVHcloud a aceder à base de dados`.
 
-![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-add-ip-step3.png){.thumbnail}
 
-### Alterar a sua oferta CloudDB
+### Alterar a sua oferta Web Cloud Databases
 
-Para alterar a sua oferta CloudDB, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados.
+Para alterar a sua oferta Web Cloud Databases, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 No separador **«Informações gerais»**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção «RAM» e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
 
-![clouddb](images/private-sql-order-ram01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-order-ram01.png){.thumbnail}
 
 Escolha o volume de RAM desejado e clique no botão `Seguinte`{.action}. Poderá então escolher a duração desejada.
 
 > [!primary]
 >
-> Um adiamento proporcional será efetuado se lhe faltarem alguns meses antes da expiração. Este pro rata será baseado na data de expiração da sua instância CloudDB e não na da nota de encomenda.
+> Um adiamento proporcional será efetuado se lhe faltarem alguns meses antes da expiração. Este pro rata será baseado na data de expiração da sua instância Web Cloud Databases e não na da nota de encomenda.
 > 
 
 Após a validação dos contratos, será reencaminhado para a ordem de encomenda a fim de pagar pela alteração. Esta última produzirá efeitos em algumas horas.
 
 > [!warning]
 >
-> Se dispõe atualmente de um CloudDB gratuito graças ao seu alojamento Performance, a modificação da oferta fará com que perca a sua gratuidade.
+> Se dispõe atualmente de um Web Cloud Databases gratuito graças ao seu alojamento Performance, a modificação da oferta fará com que perca a sua gratuidade.
 > 
 
 ### Alterar a configuração do servidor de bases de dados
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor CloudDB. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor Web Cloud Databases. 
 
 #### Instância MySQL e MariaDB
 
@@ -99,7 +99,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 No quadro **Configuração geral do MySql**, vai encontrar a configuração definida atualmente para a base de dados. Pode alterá-la diretamente e clicar em `Aplicar`{.action}.
 
-![clouddb](images/private-sql-config02.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-config02.png){.thumbnail}
 
 - **Tmpdir**: Diretório de ficheiros temporários. **/dev/shm** corresponde à memória RAM da instância. **/tmp** corresponde ao disco rígido da instância.
 - **MaxAllowedPacket**: Tamanho máximo dos pacotes.
@@ -158,7 +158,7 @@ Não é possível modificar a configuração de uma instância PostgreSQL.
 
 No entanto, pode ativar extensões nas bases de dados. Para isso, aceda ao separador `Bases de dados` e clique no ícone da tabela junto à base de dados, sob a coluna **«Extensões»**.
 
-![clouddb](images/private-sql-config03.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-config03.png){.thumbnail}
 
 ### Alterar a versão MySQL, PostgreSQL ou MariaDB do servidor de bases de dados
 
@@ -168,7 +168,7 @@ A versão atual surge na linha **«Versão»**.
 
 Para modificar esta versão, clique em `Alterar a versão`{.action}.
 
-![clouddb](images/private-sql-config04.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-config04.png){.thumbnail}
 
 
 #### Como saber a versão exata de PostgreSQL que utilizo?
@@ -205,11 +205,11 @@ show variables like "version";
 
 Isto permite-lhe visualizar o tempo de execução dos pedidos no servidor de bases de dados nas últimas 24 horas.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gráfico **«Estatísticas do tempo de execução dos pedidos»**.
 
-![clouddb](images/private-sql-metrics01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-metrics01.png){.thumbnail}
 
 #### Acesso aos logs «Slow Query»
 
@@ -219,11 +219,11 @@ Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gr
 
 Estes logs, chamados **«slow-query.log»**, podem ser obtidos na raiz do espaço SFTP do servidor de bases de dados. 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
 
 No separador `Informações gerais`, vai encontrar a secção **«SFTP»** no quadro **«Informações de conexão»**.
 
-![clouddb](images/private-sql-SFTP01.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-SFTP01.png){.thumbnail}
 
 Para se conectar em **SFTP**, pode recorrer ao programa Filezilla. Se necessário, consulte o guia: [ «Guia de utilização do FileZilla»](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/).
 
@@ -232,21 +232,21 @@ Se o ficheiro estiver vazio, isso revela a inexistência de pedidos lentos.
 
 #### Acompanhar a RAM consumida
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas de memória RAM utilizada»**.
 
-![clouddb](images/private-sql-metrics02.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-metrics02.png){.thumbnail}
 
 #### Acompanhar o número de conexões por minuto
 
 Este gráfico permite acompanhar, relativamente às últimas 24 horas, o volume de conexões por minuto no servidor de bases de dados.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas do total de conexões por minuto»**.
 
-![clouddb](images/private-sql-metrics03.png){.thumbnail}
+![Web Cloud Databases](images/web-cloud-databases-metrics03.png){.thumbnail}
 
 ### Otimizar as bases de dados
 

@@ -4,6 +4,7 @@ excerpt: Find out how to configure an SPF record for your OVHcloud domain name
 slug: web_hosting_the_spf_record
 section: DNS and DNS Zone
 order: 05
+updated: 2022-09-12
 ---
 
 **Last updated 12th September 2022**

@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak skonfigurować usługę vRack dla instancji Public C
 slug: public-cloud-vrack
 section: Pierwsze kroki
 order: 07
+updated: 2023-01-10
 ---
 
 > [!primary]

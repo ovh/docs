@@ -3,14 +3,22 @@ title: 'Tutoriel - Créer sa page web personnelle chez OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Apprenez à créer votre première page web sur un hébergement gratuit Start 10M'
 section: "Tutoriels"
-order: 01
+order: 012
+updated: 2023-02-17
 ---
 
-**Dernière mise à jour le 22/11/2022**
+**Dernière mise à jour le 17/02/2023**
 
 ## Objectif
 
 Découvre comment créer la première page d'un site web sur un hébergement Start 10M proposé gratuitement pour tout achat d'un nom de domaine chez OVHcloud.
+
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> 
 
 ## Prérequis
 
@@ -412,7 +420,7 @@ Quelques exemples de sites et d'application web réalisés avec Bootstrap :
 - [https://bootstraptaste.com/](https://bootstraptaste.com/)
 - [https://bootstrapthemes.co/](https://bootstrapthemes.co/).
 
-## Aller plus loin
+## Aller plus loin <a name=“go-further“></a>
 
 Vous trouverez beaucoup de ressources sur le web pour apprendre et améliorer votre pratique, pour copier des éléments entiers de code ou des portions de code, pour ajouter des fonctionnalités à votre site sans risquer d'avoir des erreurs ou des dysfonctionnements. Voici quelques sites de référence :
 

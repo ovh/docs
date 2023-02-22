@@ -2,6 +2,7 @@
 title: Debugging
 slug: debug
 section: Nodejs
+updated: 2022-06-02
 ---
 
 **Last updated 2nd June 2022**

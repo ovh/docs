@@ -4,6 +4,7 @@ excerpt: Changing the hostname of an instance
 slug: changing_the_hostname_of_an_instance
 legacy_guide_number: g1928
 section: Tutorials
+updated: 2018-09-18
 ---
 **Last updated 18th September 2018**
 

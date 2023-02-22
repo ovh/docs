@@ -4,6 +4,7 @@ title: Migratie van uw website en e-mails naar OVH
 slug: migreer-website-naar-ovh
 excerpt: Ontdek hoe u uw website en e-mails naar OVH kunt migreren zonder dienstonderbrekingen
 section: Eerste stappen
+updated: 2022-11-24
 ---
 
 **Laatste update 14-02-2018**

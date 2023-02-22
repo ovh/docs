@@ -6,6 +6,7 @@ section: Tutorial
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/load-balancer-with-letsencrypt/'
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

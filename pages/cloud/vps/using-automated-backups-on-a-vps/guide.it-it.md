@@ -4,6 +4,7 @@ slug: usare-backup-automatizzati-su-un-vps
 excerpt: 'Scopri come abilitare e utilizzare l’opzione Backup automatizzato nello Spazio Cliente OVHcloud'
 section: 'Opzioni di backup'
 order: 2
+updated: 2022-11-15
 ---
 
 > [!primary]

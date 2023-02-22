@@ -3,6 +3,7 @@ title: FAQ OVHcloud E-Mails
 slug: e-mails-faq
 section: 'Erste Schritte'
 order: 07
+updated: 2020-05-05
 ---
 
 **Stand 24.08.2020**

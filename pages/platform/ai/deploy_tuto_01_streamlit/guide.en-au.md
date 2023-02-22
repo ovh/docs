@@ -4,6 +4,7 @@ slug: deploy/build-use-streamlit-image
 excerpt: How to build and use a custom Docker image containing a Streamlit application
 section: AI Deploy - Tutorials
 order: 01
+updated: 2023-01-31
 ---
 
 **Last updated 31st January, 2023.**

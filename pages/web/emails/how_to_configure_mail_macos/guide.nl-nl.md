@@ -4,6 +4,7 @@ title: 'Configuratie van uw e-mailadres op Mail van macOS'
 slug: configuratie-mail-macos
 excerpt: 'Leer hoe u een MX Plan-adres kunt configureren in Mail van macOS El Capitan, Sierra, en High Sierra'
 section: Apple
+updated: 2022-06-13
 ---
 
 **Laatste update 21-02-2018**

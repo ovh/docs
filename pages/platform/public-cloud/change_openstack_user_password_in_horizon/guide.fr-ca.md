@@ -4,6 +4,7 @@ excerpt: Découvrez comment modifier un mot de passe utilisateur dans l'interfac
 slug: modification-du-mot-de-passe-dun-utilisateur-openstack
 section: Gestion depuis Horizon
 order: 06
+updated: 2018-03-07
 ---
 
 **Dernière mise à jour le 22/02/2018**

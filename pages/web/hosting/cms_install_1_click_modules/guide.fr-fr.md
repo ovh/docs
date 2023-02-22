@@ -4,9 +4,10 @@ slug: modules-en-1-clic
 excerpt: 'Découvrez comment installer votre site via nos modules en 1 clic'
 section: CMS
 order: 01
+updated: 2023-01-31
 ---
 
-**Dernière mise à jour le 31/01/2023**
+**Dernière mise à jour le 15/02/2023**
 
 ## Objectif
 
@@ -88,7 +89,7 @@ Vous devez à présent renseigner les informations de connexion à votre base de
 
 - la base de données est déjà créée sur votre hébergement : sélectionnez-la dans la liste et complétez les informations demandées ;
 - la base de données n'est pas encore créée sur votre hébergement : suivez les indications afin de créer cette dernière, puis effectuez de nouveau la manipulation ;
-- la base de données est créée sur mon instance CloudDB : sélectionnez-la dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données ;
+- la base de données est créée sur mon instance Web Cloud Databases : sélectionnez-la dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données ;
 - la base de données est créée sur un autre hébergement Web OVHcloud : sélectionnez-la dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données ;
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
@@ -147,11 +148,11 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 
 [Gestion d’une base de données depuis un hébergement mutualisé](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
 
+Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
+
 [Gérer votre CMS](https://docs.ovh.com/fr/hosting/1-click-module-management/)
 
 [Désinstaller votre CMS](https://docs.ovh.com/fr/hosting/1-click-module-management/#etape-3-supprimer-votre-module)
-
-Découvrez nos [offres CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

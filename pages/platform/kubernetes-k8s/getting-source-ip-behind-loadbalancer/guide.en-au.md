@@ -3,6 +3,7 @@ title: Getting the source IP behind the LoadBalancer
 slug: getting-source-ip-behind-loadbalancer
 excerpt: 'Find out how to get the source IP behind the LoadBalancer on OVHcloud Managed Kubernetes'
 section: Tutorials
+updated: 2022-09-14
 ---
 
 <style>

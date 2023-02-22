@@ -5,6 +5,7 @@ slug: reverse-dns-konfigurieren-instanz
 legacy_guide_number: 1940
 section: Verwaltung im OVHcloud Kundencenter
 order: 7
+updated: 2021-11-12
 ---
 
 **Letzte Aktualisierung am 12.11.2021**

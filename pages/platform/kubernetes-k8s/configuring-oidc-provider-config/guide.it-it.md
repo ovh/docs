@@ -5,9 +5,10 @@ excerpt: 'Find out how to configure the OIDC provider of an OVHcloud Managed Kub
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/configure-oidc-provider/'
+updated: 2023-02-14
 ---
 
-**Last updated 24th November 2022**
+**Last updated 14th February 2023**
 
 ## Objective
 
@@ -70,7 +71,7 @@ Log in to the API Explorer using your OVHcloud NIC handle.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the API Explorer, you will see the available endpoints:
+If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/project/%7bservicename%7d/kube~get) of the API Explorer, you will see the available endpoints:
 
 ![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
 

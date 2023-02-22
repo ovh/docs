@@ -6,9 +6,10 @@ section: Guides généraux
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/'
+updated: 2022-07-27
 ---
 
-**Last updated 27th July 2022**
+**Last updated 15th February 2023**
 
 ## Objective
 
@@ -59,13 +60,25 @@ Please visit the [capabilities page](https://docs.ovh.com/fr/publiccloud/databas
 
 Take note of the pricing information.
 
-#### Step 5: Configure your options
+### Step 5: Size of nodes
 
-You can name your database in this step and decide to attach a private network.
+Select the number of nodes required for your cluster:
+
+![Size of nodes](images/databases_01_order_control_panel-20221214083133668.png){.thumbnail}
+
+### Step 6: Configure your options
+
+Depending on the type of database you can adjust the number of nodes in your cluster and add storage space:
+
+![Cluster sizing](images/databases_01_order_control_panel-20230215131801790.png){.thumbnail}
+
+### Step 7: Database service configuration
+
+Define your network configuration:
 
 ![Configure options](images/databases_01_order_control_panel-20220727191850299.png){.thumbnail}
 
-##### **Connecting a private network (optional)**
+#### Connecting a private network (optional)
 
 ![Attach network](images/creation_mongo06.png){.thumbnail}
 
@@ -75,7 +88,7 @@ You can be forwarded to create a private network or subnet by clicking on the re
 
 Please follow [this guide](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/) for detailed instructions.
 
-#### Step 6: Summary and confirmation
+### Step 8: Summary and confirmation
 
 The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
 
@@ -89,6 +102,6 @@ Note that the configuration options might be different, depending on the databas
 
 ## We want your feedback!
 
-Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
+Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.

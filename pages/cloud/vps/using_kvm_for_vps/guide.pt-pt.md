@@ -4,6 +4,7 @@ excerpt: Saiba como aceder ao VPS por meio da funcionalidade KVM
 slug: utilizar_o_kvm_para_um_servidor_vps
 section: Primeiros passos
 order: 6
+updated: 2022-08-30
 ---
 
 > [!primary]

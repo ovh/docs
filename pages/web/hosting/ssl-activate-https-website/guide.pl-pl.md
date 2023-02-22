@@ -4,6 +4,7 @@ slug: aktywacja-https-ssl-na-stronie-WWW
 excerpt: 'Dowiedz się, jak aktywować protokół HTTPS na stronie WWW za pomocą certyfikatu SSL'
 section: SSL
 order: 02
+updated: 2022-10-04
 ---
 
 **Ostatnia aktualizacja z dnia 04-10-2022**

@@ -4,6 +4,7 @@ excerpt: Esegui uno script durante la creazione della tua istanza
 slug: esegui_uno_script_durante_la_creazione_della_tua_istanza
 legacy_guide_number: g1932
 section: Gestione via OpenStack
+updated: 2022-03-18
 ---
 
 **Ultimo aggiornamento: 18/03/2022**

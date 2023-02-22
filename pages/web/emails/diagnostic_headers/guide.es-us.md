@@ -5,6 +5,7 @@ legacy_guide_number: 1365
 excerpt: Cómo recuperar una cabecera de correo electrónico en su cliente de correo
 section: Diagnóstico
 order: 03
+updated: 2021-11-19
 ---
 
 <style>

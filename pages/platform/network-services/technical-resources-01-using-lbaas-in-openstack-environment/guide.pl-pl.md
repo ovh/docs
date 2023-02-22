@@ -6,6 +6,7 @@ section: Zasoby techniczne
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/octavia-lbaas-in-openstack-env-deep-dive/'
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

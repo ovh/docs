@@ -6,6 +6,7 @@ section: Pierwsze kroki
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/creating-private-network-with-gateway/'
+updated: 2022-11-02
 ---
 
 **Last updated 2nd November 2022**

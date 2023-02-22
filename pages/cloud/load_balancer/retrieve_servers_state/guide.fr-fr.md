@@ -3,6 +3,7 @@ title: "Récupération de l’état de santé des serveurs"
 slug: retrieve-servers-state
 excerpt: Récupérer l’état des serveurs
 section: Visualiser
+updated: 2022-03-29
 ---
 
 **Dernière mise à jour le 29/03/2022**

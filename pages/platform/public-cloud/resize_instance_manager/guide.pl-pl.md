@@ -4,6 +4,7 @@ excerpt: 'Jak zmienić rozmiar instancji w Panelu klienta OVHcloud'
 slug: resize-an-instance-manager
 section: 'Zarządzanie w Panelu klienta OVH'
 order: 6
+updated: 2022-08-24
 ---
 
 > [!primary]

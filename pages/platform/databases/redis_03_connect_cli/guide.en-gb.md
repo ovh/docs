@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for Redis using the Command Line
 slug: redis/connect-cli
 section: Redis - Guides
 order: 030
+updated: 2022-03-24
 ---
 
 **Last updated 24th March 2022**

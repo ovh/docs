@@ -4,6 +4,7 @@ slug: notebooks/capabilities
 excerpt: Find out about current features, capabilities and limitations of AI Notebooks
 section: AI Notebooks - Guides
 order: 04
+updated: 2022-04-20
 ---
 
 **Last updated 20th April, 2022.**

@@ -5,6 +5,7 @@ slug: crear_o_restaurar_un_servidor_virtual_a_partir_de_un_snapshot
 legacy_guide_number: g1882
 section: 'Gestión de las instancias desde el área de cliente'
 order: 02
+updated: 2021-03-19
 ---
 
 > [!primary]

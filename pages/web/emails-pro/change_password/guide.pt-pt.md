@@ -6,6 +6,7 @@ section: Introdução
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/pt/emails/alterar-palavra-passe-endereco-email/'
+updated: 2023-01-03
 ---
 
 **Última atualização: 03/01/2023**

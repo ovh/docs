@@ -4,9 +4,10 @@ excerpt: "Individua l'origine delle lentezze del tuo sito Web e scopri come riso
 slug: slow-website-fix
 section: Diagnostica
 order: 09
+updated: 2022-11-17
 ---
 
-**Ultimo aggiornamento: 17/11/2022**
+**Ultimo aggiornamento: 15/02/2023**
  
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -158,7 +159,7 @@ phpinfo();
 
 Accedi al tuo database seguendo **lo step 3** della nostra guida sulla [creazione di un database condiviso](https://docs.ovh.com/it/hosting/creare-database/).
 
-Se utilizzi un database su un'offerta **CloudDB**, consulta la nostra guida su [la connessione al tuo database presente su un'offerta Cloud DB](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/).
+Se utilizzi un database su un'offerta **Web Cloud Databases**, consulta la nostra guida su [la connessione al tuo database presente su un'offerta Web Cloud Databases](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/).
 
 Se la connessione è andata a buon fine, accedi all'interfaccia seguente:
 

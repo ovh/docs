@@ -4,6 +4,7 @@ excerpt: 'Saiba como ativar e utilizar a opção Backup Automático na Área de 
 slug: utilizar-backups-automaticos-num-alojamento-vps
 section: 'Opções de backup'
 order: 2
+updated: 2022-11-15
 ---
 
 > [!primary]

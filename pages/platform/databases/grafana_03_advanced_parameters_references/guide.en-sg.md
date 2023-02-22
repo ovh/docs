@@ -4,6 +4,7 @@ slug: grafana/advanced-parameters-references
 excerpt:
 section: Grafana - Guides
 order: 030
+updated: 2023-02-06
 ---
 
 <style>

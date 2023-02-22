@@ -4,6 +4,7 @@ excerpt: 'Find out how to enable and use the Snapshot option in the OVHcloud Con
 slug: using-snapshots-on-a-vps
 section: 'Backup options'
 order: 1
+updated: 2022-12-02
 ---
 
 **Last updated 2nd December 2022**

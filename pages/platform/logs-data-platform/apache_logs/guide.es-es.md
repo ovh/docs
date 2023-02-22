@@ -6,6 +6,7 @@ excerpt: Get to know what is happening on your websites in real time.
 section: Use cases
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/apache-logs/'
+updated: 2020-07-27
 ---
 
 **Last updated 27th July, 2020**

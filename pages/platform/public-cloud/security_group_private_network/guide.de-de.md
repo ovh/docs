@@ -3,6 +3,7 @@ title: Verwaltung von Firewall-Regeln und Port Security für Netzwerke über die
 slug: firewall_security_pci
 excerpt: Erfahren Sie hier, wie Sicherheitsgruppen in der Public Cloud funktionieren
 section: OpenStack
+updated: 2022-08-25
 ---
 
 <style>

@@ -4,6 +4,7 @@ excerpt: Connect to your Public Cloud Databases for MySQL using MySQL Workbench
 slug: mysql/connect-workbench
 section: MySQL - Guides
 order: 060
+updated: 2022-03-08
 ---
 
 **Last updated 8th March 2022**

@@ -4,6 +4,7 @@ excerpt: "Dowiedz się, jak geolokalizować Twoją stronę WWW za pomocą geolok
 slug: geolokalizacja_na_hostingu_www
 section: Optymalizacja strony WWW
 order: 05
+updated: 2022-12-22
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: bloqueado-por-spam
 excerpt: 'Descubra como proceder se o seu endereço tiver sido bloqueado por spam'
 section: 'Diagnóstico Exchange'
 order: 03
+updated: 2020-04-20
 ---
 
 **Última atualização: 16/03/2020**

@@ -4,6 +4,7 @@ slug: exchange-configuration-sous-windows-phone
 excerpt: Retrouvez ici la procedure de configuration d’un compte Exchange sousWindows Phone
 section: Configuration sur smartphone/tablette
 order: 01
+updated: 2022-12-06
 ---
 
 Avant de réaliser ces manipulations, assurez-vous que le champ SRV de votre nom de domaine est correctement configuré.

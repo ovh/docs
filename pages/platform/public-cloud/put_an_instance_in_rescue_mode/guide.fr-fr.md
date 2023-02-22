@@ -5,6 +5,7 @@ excerpt: 'Ce guide vous explique comment activer le mode rescue pour votre insta
 legacy_guide_number: 2029
 section: "Gestion depuis l'espace client"
 order: 04
+updated: 2023-01-04
 ---
 
 **Dernière mise à jour le 04/01/2023**

@@ -2,6 +2,7 @@
 title: Custom sizing
 slug: size
 section: App
+updated: 2021-05-18
 ---
 
 **Last updated 18th May 2021**

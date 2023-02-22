@@ -4,6 +4,7 @@ slug: mutualise-consulter-les-statistiques-et-les-logs-de-mon-site
 excerpt: 'Découvrez comment consulter les statistiques et logs de votre site internet'
 section: 'Optimiser son site'
 order: 04
+updated: 2021-01-05
 ---
 **Dernière mise à jour le 05/01/2021**
 

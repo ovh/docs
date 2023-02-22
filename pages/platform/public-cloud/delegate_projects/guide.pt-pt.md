@@ -4,6 +4,7 @@ excerpt: "Saiba como delegar direitos de acesso a um projeto Public Cloud noutra
 slug: delegar_os_seus_projetos
 order: 7
 section: Gestão do projeto
+updated: 2022-04-04
 ---
 
 > [!primary]

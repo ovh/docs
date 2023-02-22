@@ -5,6 +5,7 @@ slug: configuratie-courrier-windows-10
 excerpt: 'Leer hoe u een E-mail Pro-account kunt instellen in de Courrier-app voor Windows 10'
 section: 'Configuratie van een e-mailclient'
 order: 7
+updated: 2020-03-18
 ---
 
 **Laatste update 23-03-2018**

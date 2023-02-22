@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Snapshot-Optio
 slug: verwendung-snapshots-vps
 section: 'Backup Optionen'
 order: 1
+updated: 2022-12-02
 ---
 
 > [!primary]

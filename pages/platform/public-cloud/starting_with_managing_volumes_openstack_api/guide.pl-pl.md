@@ -4,6 +4,7 @@ slug: pierwsze-wolumeny-api-openstack
 legacy_guide_number: 2071
 section: Zarządzanie w OpenStack CLI
 order: 6
+updated: 2021-05-19
 ---
 
 > [!primary]

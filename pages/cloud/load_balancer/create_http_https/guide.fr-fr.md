@@ -3,6 +3,7 @@ title: "Configuration d'un service OVHcloud Load Balancer avec HTTP/HTTPS"
 slug: configure-iplb
 excerpt: Configuration d’un service Load Balancer
 section: Configuration
+updated: 2022-09-30
 ---
 
 **Dernière mise à jour le à 04/04/2022**

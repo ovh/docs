@@ -4,6 +4,7 @@ slug: configurazione-thundebird-emailpro-mac
 excerpt: Come configurare il tuo indirizzo Email Pro su Thunderbird per macOS
 section: Configurazione di un client di posta
 order: 6
+updated: 2021-08-26
 ---
 
 > [!primary]

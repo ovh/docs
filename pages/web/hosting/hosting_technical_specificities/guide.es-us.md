@@ -4,6 +4,7 @@ slug: web_hosting_particularidades_tecnicas_de_los_alojamientos_compartidos
 excerpt: 'Esta guía ofrece toda la información relativa a las particularidades técnicas de los alojamientos compartidos'
 section: 'Configuración del alojamiento'
 order: 05
+updated: 2022-11-18
 ---
 
 > [!primary]

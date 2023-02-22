@@ -5,6 +5,7 @@ slug: servizio_email_come_recuperare_gli_header_di_unemail
 legacy_guide_number: g1365
 section: Diagnostica
 order: 03
+updated: 2021-11-19
 ---
 
 <style>

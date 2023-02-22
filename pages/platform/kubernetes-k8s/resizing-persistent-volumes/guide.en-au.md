@@ -4,6 +4,7 @@ slug: resizing-persistent-volumes
 excerpt: 'Find out how to resize Persistent Volumes on OVHcloud Managed Kubernetes'
 section: Storage
 order: 1
+updated: 2021-10-19
 ---
 
 <style>

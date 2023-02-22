@@ -4,13 +4,14 @@ slug: zmiana-hasla-do-bazy-danych
 excerpt: Dowiedz się, jak zmienić hasło do bazy danych utworzonej w ramach pakietu hostingowego
 section: Bazy danych
 order: 02
+updated: 2022-01-26
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 26/01/2022**
+**Ostatnia aktualizacja z dnia 15/02/2023**
 
 ## Wprowadzenie 
 
@@ -48,7 +49,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 - Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Korzystanie z [bazy danych powiązanej z hostingiem](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub z [CloudDB](https://www.ovh.pl/cloud/cloud-databases/).
+- Korzystanie z [bazy danych powiązanej z hostingiem](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub z [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
 - Posiadanie danych dostępowych FTP umożliwiających zalogowanie się do [przestrzeni dyskowej Twojego hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/).
 
 ## W praktyce
@@ -82,7 +83,7 @@ Wyszukaj i otwórz plik konfiguracyjny Twojej strony:
 Możliwe są dwa przypadki:
 
 - Przypadek nr 1: baza danych twojej strony jest częścią Twojego hostingu;
-- Przypadek nr 2: jest zawarta w ofercie *CloudDB*. W tym przypadku należy odnaleźć **nazwę serwera** i **nazwę użytkownika** bazy danych, aby zidentyfikować bazę danych bez ryzyka wystąpienia błędu.
+- Przypadek nr 2: jest zawarta w ofercie *Web Cloud Databases*. W tym przypadku należy odnaleźć **nazwę serwera** i **nazwę użytkownika** bazy danych, aby zidentyfikować bazę danych bez ryzyka wystąpienia błędu.
 
 Aby określić, który przypadek dotyczy Twojej strony WWW, w pliku konfiguracyjnym opisanym w [Etap 1](#step1), zapisz nazwę bazy danych:
 
@@ -99,7 +100,7 @@ Następnie wróć do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=
 
 Jeśli w tej części Twojego Panelu klienta znalazłeś nazwę bazy znajdującej się w pliku konfiguracyjnym, przejdź do [Etap 3](#step3).
 
-W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [CloudDB](https://www.ovh.pl/cloud/cloud-databases/).
+W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
 
 Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *nazwę serwera* oraz *nazwę użytkownika* bazy danych:
 
@@ -110,7 +111,7 @@ Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *
 
 Następnie w części `Bazy danych`{.action} w sekcji `Web Cloud`{.action}. 
 
-W zakładce `Informacje ogólne`{.action} podaj w ofercie [CloudDB](https://www.ovh.pl/cloud/cloud-databases/) nazwę serwera Twojej bazy danych, która zawiera `Nazwa hosta`{.action}.
+W zakładce `Informacje ogólne`{.action} podaj w ofercie [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) nazwę serwera Twojej bazy danych, która zawiera `Nazwa hosta`{.action}.
 
 W tej części Panelu klienta przejdź do zakładki `Użytkownik i uprawnienia`{.action}, aby również znaleźć `Nazwę użytkownika`{.action} Twojej bazy danych.
 
@@ -197,7 +198,7 @@ Ponownie, możliwe są dwa przypadki:
 
 - Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej [hostingowi](https://www.ovhcloud.com/pl/web-hosting/), postępuj zgodnie z tymi [instrukcjami](#case1).
 
-- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej ofertom [CloudDB](https://docs.ovh.com/pl/clouddb/), postępuj zgodnie z tymi [instrukcjami](#case2).
+- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej ofertom [Web Cloud Databases](https://docs.ovh.com/pl/clouddb/), postępuj zgodnie z tymi [instrukcjami](#case2).
 
 #### Przypadek nr 1: baza danych twojej strony jest częścią twojej oferty hostingowej <a name="case1"></a>
 
@@ -213,7 +214,7 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Przypadek nr 2: baza danych strony jest częścią oferty CloudDB <a name="case2"></a>
+#### Przypadek nr 2: baza danych strony jest częścią oferty Web Cloud Databases <a name="case2"></a>
 
 Przejdź do części `Bazy danych`{.action} w Panelu klienta i na odpowiedni serwer, kliknij zakładkę `Użytkownicy i uprawnienia`{.action}:
 

@@ -5,6 +5,7 @@ slug: overdracht-generiek-domein
 excerpt: 'De benodigde stappen voor overdracht van uw generieke domeinnaam naar OVH'
 section: 'Overdrachten (transfers)'
 order: 01
+updated: 2022-11-18
 ---
 
 **Laatste update 10-09-2018**

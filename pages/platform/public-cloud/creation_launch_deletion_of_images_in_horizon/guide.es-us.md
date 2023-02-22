@@ -5,6 +5,7 @@ slug: crear_lanzar_y_eliminar_imagenes_en_horizon
 legacy_guide_number: g1784
 section: Gestión desde Horizon
 order: 7
+updated: 2021-12-30
 ---
 
 > [!primary]

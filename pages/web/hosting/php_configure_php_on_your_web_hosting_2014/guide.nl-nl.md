@@ -5,6 +5,7 @@ slug: php-versie-configureren
 excerpt: "Leer hoe u de PHP-versie op uw OVH webhosting kunt wijzigen"
 section: PHP
 order: 01
+updated: 2022-09-19
 ---
 
 **Laatste update 08-10-2018**

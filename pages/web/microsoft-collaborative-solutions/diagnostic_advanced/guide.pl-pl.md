@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak przeprowadzić automatyczną diagnostykę błędów 
 slug: diagnostyka_exchange_co_zrobic_w_przypadku_bledu
 section: Diagnostyka Exchange
 order: 01
+updated: 2022-10-19
 ---
 
 > [!primary]

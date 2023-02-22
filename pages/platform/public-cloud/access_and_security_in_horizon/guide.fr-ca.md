@@ -5,6 +5,7 @@ slug: access_and_security_in_horizon
 legacy_guide_number: 1774
 section: Gestion depuis Horizon
 order: 07
+updated: 2021-05-26
 ---
 
 **Dernière mise à jour le 26 mai 2021**

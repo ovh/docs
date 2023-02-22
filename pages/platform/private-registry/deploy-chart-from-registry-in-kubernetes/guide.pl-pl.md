@@ -10,6 +10,7 @@ category_l2: Managed Private Registry
 category_l3: Tutorials
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/deploy-chart-from-registry-in-kubernetes/'
+updated: 2022-04-14
 ---
 
 **Last updated 14 April, 2022.**

@@ -4,9 +4,10 @@ excerpt: "Identifique a origem da lentidão do seu website e descubra como resol
 slug: slow-website-fix
 section: Diagnóstico
 order: 09
+updated: 2022-11-17
 ---
 
-**Última atualização: 17/11/2022**
+**Última atualização: 15/02/2023**
  
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -158,7 +159,7 @@ phpinfo();
 
 Aceda à sua base de dados seguindo *** o etapa 3** do nosso manual sobre a [criação de uma base de dados partilhada](https://docs.ovh.com/pt/hosting/criar-base-de-dados/).
 
-Se utiliza uma base de dados numa oferta **CloudDB**, consulte o nosso guia sobre [a ligação à sua base de dados presente numa oferta Cloud DB](https://docs.ovh.com/pt/clouddb/conexao-base-de-dados-servidor-bdd/).
+Se utiliza uma base de dados numa oferta **Web Cloud Databases**, consulte o nosso guia sobre [a ligação à sua base de dados presente numa oferta Web Cloud Databases](https://docs.ovh.com/pt/clouddb/conexao-base-de-dados-servidor-bdd/).
 
 Se a ligação for bem-sucedida, poderá aceder à seguinte interface:
 

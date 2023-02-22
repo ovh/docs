@@ -4,6 +4,7 @@ excerpt: 'Scopri come impostare risposte automatiche con OWA'
 slug: exchange_2016_imposta_una_risposta_automatica_con_owa
 section: 'Utilizzo di Outlook Web App (OWA)'
 order: 02
+updated: 2020-02-26
 ---
 
 **Ultimo aggiornamento: 27/07/2020**

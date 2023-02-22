@@ -3,7 +3,8 @@ title: "Gestionar los mensajes de correo automatizados"
 slug: web_hosting_seguimiento_de_los_mensajes_de_correo_automatizados
 excerpt: "Cómo realizar el seguimiento y la gestión de los emails automatizados enviados desde un alojamiento web de OVHcloud"
 section: Diagnóstico
-order: 09
+order: 10
+updated: 2022-10-12
 ---
 
 **Última actualización: 12/10/2022**

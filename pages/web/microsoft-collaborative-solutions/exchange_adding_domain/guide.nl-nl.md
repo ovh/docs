@@ -4,6 +4,7 @@ title: Toevoeging van een domeinnaam aan uw Exchange
 slug: toevoegen-domein-exchange
 excerpt: Ontdek hoe u een domeinnaam kunt toevoegen aan uw Exchange-dienst
 section: Configuratie van Exchange
+updated: 2022-10-07
 ---
 
 **Laatste update 01-02-2018**

@@ -5,6 +5,7 @@ slug: jak_skonfigurowac_strefe_dnssec_dla_domeny
 legacy_guide_number: g609
 section: Bezpieczeństwo
 order: 01
+updated: 2022-10-19
 ---
 
 > [!primary]

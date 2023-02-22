@@ -3,6 +3,7 @@ title: 'Resolver un error en un dominio'
 slug: domain-errors
 section: Tareas habituales
 order: 02
+updated: 2022-09-01
 ---
 
 > [!primary]

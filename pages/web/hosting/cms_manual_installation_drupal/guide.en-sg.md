@@ -4,6 +4,7 @@ excerpt: How to install Drupal manually
 slug: cms_manually_install_drupal
 section: CMS
 order: 07
+updated: 2022-12-01
 ---
 
 **Last updated 5th May 2020**

@@ -72,7 +72,7 @@ Clicca sul tipo di prodotto da disattivare nella lista delle principali offerte 
 &emsp;&emsp;[Hosting Web](#hosting)<br />
 &emsp;&emsp;[Certificato SSL Sectigo](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web Paas powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
 &emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[E-mail Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
@@ -189,9 +189,9 @@ Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattiv
 
 Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}.
 
-#### CloudDB <a name="clouddb"></a>
+#### Web Cloud Databases <a name="webclouddatabases"></a>
 
-Per disattivare la tua offerta [CloudDB](https://www.ovh.it/cloud/cloud-databases/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
+Per disattivare la tua offerta [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 

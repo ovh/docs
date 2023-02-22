@@ -3,6 +3,7 @@ title: Afficher les logs de boot dans le KVM
 slug: affichage-bootlog-dans-kvm
 excerpt : 'Découvrez comment diagnostiquer un VPS en consultant les logs de démarrage (boot logs)'
 section: Diagnostic et mode Rescue
+updated: 2021-07-05
 ---
 
 **Dernière mise à jour le 05/07/2021**

@@ -4,6 +4,7 @@ slug: layer3
 excerpt: Détails sur le mode Layer 3 (L3) pour OVHcloud Connect
 section: Concepts
 order: 3
+updated: 2020-09-14
 ---
 
 **Dernière mise à jour le 07/09/2020**

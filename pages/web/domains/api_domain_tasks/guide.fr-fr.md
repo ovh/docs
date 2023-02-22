@@ -4,6 +4,7 @@ slug: api-tasks
 excerpt: "Fonctionnement des tâches asynchrones sur les noms de domaines"
 section: "API domaines"
 order: 04
+updated: 2022-05-05
 ---
 
 **Dernière mise à jour le 05/05/2022**

@@ -5,6 +5,7 @@ slug: eerste-configuratie-exchange
 excerpt: Hosted Exchange - de eerste stappen
 section: Configuratie van Exchange
 order: 01
+updated: 2018-01-19
 ---
 
 **Laatste update 01-02-2018**

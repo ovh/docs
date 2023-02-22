@@ -4,6 +4,7 @@ slug: hostname-einer-instanz-aendern
 excerpt: 'So ändern Sie den Hostnamen einer Public Cloud Instanz'
 legacy_guide_number: 1928
 section: 'Tutorials'
+updated: 2018-09-18
 ---
 
 **Letzte Aktualisierung am 15.10.2020**

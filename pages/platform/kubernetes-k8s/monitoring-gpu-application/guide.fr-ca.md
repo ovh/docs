@@ -6,6 +6,7 @@ section: GPU
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/monitoring-gpu-application/'
+updated: 2021-01-13
 ---
 
 <style>

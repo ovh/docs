@@ -3,6 +3,7 @@ title: Exposed APIs, Kubernetes configuration and Feature gates
 excerpt: ''
 slug: exposed-apis-feature-gates
 section: Technical resources
+updated: 2022-05-30
 ---
 
 **Last updated May 30<sup>th</sup>, 2022.**

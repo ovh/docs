@@ -4,13 +4,14 @@ excerpt: Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panel
 slug: 1-click-module-management
 section: CMS
 order: 02
+updated: 2022-09-05
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 05-09-2022**
+**Ostatnia aktualizacja z dnia 15-02-2023**
 
 ## Wprowadzenie 
 
@@ -114,7 +115,7 @@ Zalecamy jednak, abyś przeprowadził operację w oparciu o dokumentację przygo
 
 Aby usunąć moduł za pomocą 1 kliknięcia, należy rozpocząć od zidentyfikowania bazy danych w **sposób** pewny. W tym celu przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij `Web Cloud`{.action}, `Hosting`{.action}, odpowiedni hosting, a następnie zakładkę `Bazy danych`{.action}.
 
-Jeśli w tej części Panelu klienta dysponujesz jedną bazą danych i nie posiadasz rozwiązań [CloudDB](https://www.ovh.pl/cloud/cloud-databases/) , możesz uznać, że chodzi o Twoją stronę WWW.
+Jeśli w tej części Panelu klienta dysponujesz jedną bazą danych i nie posiadasz rozwiązań [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) , możesz uznać, że chodzi o Twoją stronę WWW.
 
 W przeciwnym razie przejdź do zakładki `MultiSite`{.action}. Zapisz nazwę katalogu `Katalog główny`: jest to katalog, w którym znajdują się pliki tworzące moduł za pomocą 1 kliknięcia na serwer FTP.
 

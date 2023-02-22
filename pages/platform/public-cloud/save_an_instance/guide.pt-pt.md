@@ -4,6 +4,7 @@ excerpt: 'Saiba como efetuar o backup de uma instância Public Cloud a partir da
 slug: efetuar_backup_de_uma_instancia
 order: 1
 section: Gestão a partir da Área de Cliente OVHcloud
+updated: 2023-01-04
 ---
 
 > [!primary]

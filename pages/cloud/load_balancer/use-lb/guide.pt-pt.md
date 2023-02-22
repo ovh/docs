@@ -3,6 +3,7 @@ title: Gestão do serviço Load Balancer através da Área de Cliente
 slug: utilizacao-iplb
 excerpt: Resumo das funções principais e utilização inicial do serviço Load Balancer através da Área de Cliente
 section: Primeira Etapa
+updated: 2022-09-30
 ---
 
 ## Objetivo

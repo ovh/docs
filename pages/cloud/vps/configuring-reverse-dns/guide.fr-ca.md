@@ -6,6 +6,7 @@ routes:
     canonical: 'https://docs.ovh.com/ca/fr/public-cloud/configurer-le-reverse-dns-dune-instance/'
 section: "Réseau et IP"
 order: 3
+updated: 2023-01-05
 ---
 
 **Dernière mise à jour le 05/01/2023**

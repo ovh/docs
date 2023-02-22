@@ -4,6 +4,7 @@ slug: cross-service-integration
 excerpt: Find out how to use Cross Service Integration for Public Cloud Databases engines
 section: General guides
 order: 060
+updated: 2022-10-19
 ---
 
 **Last updated October 19th, 2022**

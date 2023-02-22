@@ -4,6 +4,7 @@ slug: create-volume-from-backup
 excerpt: Dowiedz się, jak utworzyć dodatkowe dyski na podstawie kopii zapasowej dodatkowego dysku
 section: 'Przestrzeń dyskowa'
 order: 4
+updated: 2021-04-06
 ---
 
 > [!primary]

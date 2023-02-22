@@ -4,6 +4,7 @@ excerpt: "Diese Anleitung erklärt, wie Sie Ihre Website mithilfe unserer geolok
 slug: geolokalisierung_auf_webhostings
 section: 'Webseitenoptimierung'
 order: 05
+updated: 2022-12-22
 ---
 
 > [!primary]

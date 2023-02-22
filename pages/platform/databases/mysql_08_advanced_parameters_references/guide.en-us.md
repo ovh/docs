@@ -4,6 +4,7 @@ slug: mysql/advanced-parameters-references
 excerpt:
 section: MySQL - Guides
 order: 070
+updated: 2023-02-06
 ---
 
 <style>

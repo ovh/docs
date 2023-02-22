@@ -4,6 +4,7 @@ slug: activate-windows-licence-private-mode-instance
 excerpt: 'Dowiedz się, jak aktywować licencję Windows na instancji w trybie prywatnym'
 section: Pierwsze kroki
 order: 09
+updated: 2023-01-25
 ---
 
 **Ostatnia aktualizacja z dnia 02-02-2023**

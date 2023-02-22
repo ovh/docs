@@ -4,6 +4,7 @@ excerpt: 'Come ottimizzare il tuo sito accelerando la velocità di caricamento d
 slug: guida_allutilizzo_dellacceleratore_geocache_su_un_hosting_web
 section: Ottimizza il tuo sito
 order: 03
+updated: 2021-12-23
 ---
 
 > [!primary]

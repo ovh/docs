@@ -4,6 +4,7 @@ excerpt: 'Cómo gestionar los alias y redirecciones de correo'
 slug: correo_redirecciones_de_correo
 section: 'Gestión de la cuenta de correo'
 order: 1
+updated: 2020-05-20
 ---
 
 <style>

@@ -4,13 +4,14 @@ excerpt: Encuentre las respuestas a las preguntas más frecuentes sobre alojamie
 slug: faq-web-hosting
 section: Primeros pasos
 order: 05
+updated: 2022-11-28
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 28/11/2022**
+**Última actualización: 15/02/2023**
 
 ## Gestión de su producto
 
@@ -60,10 +61,10 @@ Al dar de baja o eliminar el alojamiento compartido, el servicio de correo asoci
 
 Para ello, acceda a la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} situado a la derecha de "**Direcciones de correo**". Haga clic en `Desvincular mi opción de correo`{.action} y siga las instrucciones para contratar una solución de correo independiente que le permitirá conservar sus direcciones de correo ya creadas.
 
-### Al dar de baja un plan de hosting Performance, ¿cómo conservar la solución CloudDB asociada?
+### Al dar de baja un plan de hosting Performance, ¿cómo conservar la solución Web Cloud Databases asociada?
 
-Los alojamientos compartidos **Performance** incluyen una solución CloudDB que se puede activar gratuitamente.
-Al dar de baja o eliminar el alojamiento compartido **Performance**, la solución CloudDB asociada también se dará de baja. Para conservar su Cloud Databases, deberá desvincularlo antes de dar de baja el alojamiento.<br>
+Los alojamientos compartidos **Performance** incluyen una solución Web Cloud Databases que se puede activar gratuitamente.
+Al dar de baja o eliminar el alojamiento compartido **Performance**, la solución Web Cloud Databases asociada también se dará de baja. Para conservar su Cloud Databases, deberá desvincularlo antes de dar de baja el alojamiento.<br>
 
 Para ello, abra la pestaña `Información general`{.action} del alojamiento. En la sección **Configuración**, haga clic en el botón `...`{.action} a la derecha de "**Base de datos privada**". Haga clic en `Desvincular`{.action} y siga las instrucciones para contratar una solución Cloud Databases independiente, lo que le permitirá conservar su Cloud Databases ya creado.
 

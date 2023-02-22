@@ -4,6 +4,7 @@ slug: gestire-motori-esecuzione-hosting-cloud-web
 excerpt: 'Come scegliere i motori di esecuzione del tuo hosting per realizzare al meglio i tuoi progetti'
 section: 'Configurazione dell’hosting'
 order: 01
+updated: 2022-07-27
 ---
 
 > [!primary]
