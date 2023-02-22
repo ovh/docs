@@ -20,17 +20,17 @@ AI Training jobs are linked to a Public Cloud project. The whole project is bill
 
 During its lifetime, the [AI Training job](https://docs.ovh.com/gb/en/publiccloud/ai/training/jobs/) will go through the following statuses:
 
-- `QUEUED`: the job run request is about to be processed.
-- `INITIALIZING`: the job instance is created and the data is synchronized from the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/gb/en/publiccloud/ai/data/#how-it-works) section.
-- `PENDING`: the job is being started.
-- `RUNNING`: the job is running, you can connect to it. Compute resources (GPUs/CPUs) are allocated to your specific job and data are available.
-- `INTERRUPTING`: the job is still running but an interruption order was received and is about to be processed.
-- `FINALIZING`: the job instance is deleted and the data is synchronized back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/gb/en/publiccloud/ai/data/#how-it-works) section.
-- `DONE`: the job ended normally.
-- `TIMEOUT`: the job is still running but is about to be interrupted because the timeout was reached.
-- `INTERRUPTED`: the job is ended and was interrupted.
-- `FAILED`: the job ended with an error, e.g. the process in the job finished with a non 0 exit code, Docker image could not be pulled. For more information, refer to [this section](https://docs.ovh.com/gb/en/publiccloud/ai/training/debug-jobs/#why-has-my-job-failed) of our [Troubleshooting documentation](https://docs.ovh.com/gb/en/publiccloud/ai/training/debug-jobs/).
-- `ERROR`: the job ended due to a backend error. You may reach our support.
+- `QUEUED`: The job run request is about to be processed.
+- `INITIALIZING`: The job instance is created and the data is synchronized from the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/gb/en/publiccloud/ai/data/#how-it-works) section.
+- `PENDING`: The job is being started.
+- `RUNNING`: The job is running, you can connect to it. Compute resources (GPUs/CPUs) are allocated to your specific job and data are available.
+- `INTERRUPTING`: The job is still running but an interruption order was received and is about to be processed.
+- `FINALIZING`: The job instance is deleted and the data is synchronized back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](https://docs.ovh.com/gb/en/publiccloud/ai/data/#how-it-works) section.
+- `DONE`: The job ended normally.
+- `TIMEOUT`: The job is still running but is about to be interrupted because the timeout was reached.
+- `INTERRUPTED`: The job is ended and was interrupted.
+- `FAILED`: The job ended with an error, e.g. the process in the job finished with a non 0 exit code, Docker image could not be pulled. For more information, refer to [this section](https://docs.ovh.com/gb/en/publiccloud/ai/training/debug-jobs/#why-has-my-job-failed) of our [Troubleshooting documentation](https://docs.ovh.com/gb/en/publiccloud/ai/training/debug-jobs/).
+- `ERROR`: The job ended due to a backend error. You may contact our support.
 
 ![image](images/ai.training.lifecycle.png){.thumbnail}
 
@@ -82,25 +82,25 @@ The pricing of Object Storage is apart from the AI Training pricing.
 
 ### Pricing examples
 
-#### Example 1: one CPU job for 10 days
+#### Example 1: One CPU job for 10 days
 
-We start one AI Training job, with two CPUs and we keep it running for 10 days then it is stopped.
+We start one AI Training job with two CPUs and we keep it running for 10 days, then it is stopped.
 
-- compute resources: 2 x CPU (0.03€ / hour)
-- remote storage: nothing
-- duration: 10 days then stopped
+- Compute resources: 2 x CPU (€0.03 / hour)
+- Remote storage: Nothing
+- Duration: 10 days then stopped
 
-Price calculation for compute: 10 (days) x 24 (hours) x 2 (CPU) x 0.03€ (price / CPU) = **14.40 euros**, billed at the end of the month
+Price calculation for compute: 10 (days) x 24 (hours) x 2 (CPU) x €0.03 (price / CPU) = **€14.40**, billed at the end of the month
 
-#### Example 2: one GPU job for 5 hours
+#### Example 2: One GPU job for 5 hours
 
-We start one AI Training job with two GPUs and we keep it running for 5 hours then it is stopped.
+We start one AI Training job with two GPUs and we keep it running for 5 hours, then it is stopped.
 
-- compute resources: 2 x GPU NVIDIA V100s (1.93€ / hour)
-- remote storage: nothing
-- duration: 5 hours then stopped
+- Compute resources: 2 x GPU NVIDIA V100s (€1.93 / hour)
+- Remote storage: Nothing
+- Duration: 5 hours then stopped
 
-Price calculation for compute : 5 (hours) x 2 (GPU) x 1.93€ (price / GPU) = **9.65 euros**, billed at the end of the month
+Price calculation for compute: 5 (hours) x 2 (GPU) x €1.93 (price / GPU) = **€9.65 **, billed at the end of the month
 
 ## Feedback
 
