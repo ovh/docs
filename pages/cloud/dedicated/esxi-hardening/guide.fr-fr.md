@@ -177,6 +177,8 @@ Vérifiez l'ensemble des services actifs au démarrage :
 ```bash
 chkconfig --list|grep on
 ```
+<br/>
+<br/>
 
 **Règles de pare-feu**  
   
@@ -192,8 +194,6 @@ Exemple de modification/ajustement de régle d'accès avec le service `vSphereCl
 ```bash
 esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
-<br/>
-<br/>
 
 Assurez vous que le service soit actif :  
 
