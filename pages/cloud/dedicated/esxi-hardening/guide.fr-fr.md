@@ -50,7 +50,7 @@ Optionnel:
 ### Protection anti-intrusion native
 
 Rappel avec sa définition et son principe de fonctionnement:
-> [!info]
+> [!primary]
 > Le système ESXi embarque un mécanisme de sécurité lié au compte administrateur.  
 > En effet, en cas de plusieurs tentatives d'accès érronées, le compte administrateur est temporairement vérrouillé.  
 > Ceci permet de protéger votre système et ainsi d'éviter les tentatives de connexions malveillantes.  
@@ -82,7 +82,7 @@ Toutes ces informations sont également disponibles à travers l'interface d'adm
 
 Cliquez sur le menu `Host`{.action} et accéder à la section `Monitor`{.action}, puis cliquez sur `Logs`{.action}.
 
-![interface](images/gui_logs_.png).{.thumbnail}
+![interface](images/gui_logs_.png){.thumbnail}
 
 ### Solution Network Firewall
 
@@ -95,7 +95,7 @@ Il est donc recommandé de filtrer les accès légitimes de cette manière :
 La régle 1 (Priority 0) : autorise les accès externes qui auront besoin d'accèder à votre système ESXi.  
 La régle 2 (Priority 1) : bloque tout le reste.  
 
-![Network_Firewall](images/firewall_network_.png).{.thumbnail}
+![Network_Firewall](images/firewall_network_.png){.thumbnail}
 
 
 ### Filtrage sous ESXi
@@ -167,8 +167,8 @@ esxcli network firewall ruleset set -r sshServer -e 0
 chkconfig SSH off
 ```
 
-Vérifiez l'ensemble des services actifs au démarrage 
-:  
+Vérifiez l'ensemble des services actifs au démarrage :  
+
 ```bash
 chkconfig --list|grep on
 ```
@@ -227,4 +227,3 @@ esxcli network firewall refresh
 
 ## Aller plus loin
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-
