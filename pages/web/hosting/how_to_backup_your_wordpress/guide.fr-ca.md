@@ -4,10 +4,10 @@ slug: realize-backup-wordpress
 excerpt: "Découvrez comment sauvegarder le contenu de votre site WordPress et sa base de données"
 section: 'Tutoriels'
 order: 021
-updated: 2023-02-21
+updated: 2023-02-22
 ---
 
-**Dernière mise à jour le 21/02/2023**
+**Dernière mise à jour le 22/02/2023**
 
 ## Objectif
 
@@ -151,8 +151,8 @@ En appliquant ces bonnes pratiques, vous aurez la possibilité de revenir à une
 - [Site officiel de WordPress](https://wordpress.org){.external}
 - [Plus d'informations sur les sauvegardes de votre hébergement web](https://docs.ovh.com/fr/hosting/specificites-techniques-hebergements-mutualises/#informations-sur-les-sauvegardes-automatiques)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
