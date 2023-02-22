@@ -177,8 +177,9 @@ Vérifiez l'ensemble des services actifs au démarrage :
 ```bash
 chkconfig --list|grep on
 ```
-
-
+  
+  
+  
 **Règles de pare-feu**
 
 Afficher les règles de pare-feu existantes :  
