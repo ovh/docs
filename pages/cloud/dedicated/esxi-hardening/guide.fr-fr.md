@@ -176,48 +176,48 @@ Vérifiez l'ensemble des services actifs au démarrage :
 
 ```bash
 chkconfig --list|grep on
-```  
-  
-  
-  
+```
+<br/>
+<br/>
+
 **Règles de pare-feu**  
-  
+<br/>
 Afficher les règles de pare-feu existantes :  
 ```bash
 esxcli network firewall ruleset list
 esxcli system account list
 ```
-  
+<br/>
 Exemple de modification/ajustement de régle d'accès avec le service `vSphereClient` :  
 ```bash
 esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
-  
+<br/>
 Assurez vous que le service soit actif :  
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --enabled true
 ```
-  
+<br/>
 Obtenez le statut du tag `allowedAll` (autorisé pour tous) pour le service :  
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
-  
+<br/>
 Changer le statut du tag en le désactivant :  
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
-  
+<br/>
 Ajouter l'adresse privée légitime 192.168.1.10 :  
 ```bash
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
-  
+<br/>
 Vérifier l'adresse dans la liste d'accès :  
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
-  
+<br/>
 Recharger la configuration avec la nouvelle régle :  
 ```bash
 esxcli network firewall refresh
