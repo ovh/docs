@@ -157,7 +157,6 @@ Exemple avec une adresse privée :
 Désactivez les services inutiles :  
 
 Service SLP
-
 ```bash
 /etc/init.d/slpd stop
 esxcli network firewall ruleset set -r CIMSLP -e 0
@@ -165,7 +164,6 @@ chkconfig slpd off
 ```
 
 Service SSH  
-
 ```bash
 /etc/init.d/SSH stop
 esxcli network firewall ruleset set -r sshServer -e 0
@@ -173,7 +171,6 @@ chkconfig SSH off
 ```
 
 Vérifiez l'ensemble des services actifs au démarrage :  
-
 ```bash
 chkconfig --list|grep on
 ```
@@ -196,6 +193,7 @@ esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
 <br/>
 <br/>
+
 Assurez vous que le service soit actif :  
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --enabled true
