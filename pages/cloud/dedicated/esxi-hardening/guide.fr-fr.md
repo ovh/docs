@@ -53,11 +53,13 @@ Optionnel:
 Rappel avec sa définition et son principe de fonctionnement:  
 
 > [!primary]
+> 
 > Le système ESXi embarque un mécanisme de sécurité lié au compte administrateur.  
 > En effet, en cas de plusieurs tentatives d'accès érronées, le compte administrateur est temporairement vérrouillé.  
 > Ceci permet de protéger votre système et ainsi d'éviter les tentatives de connexions malveillantes.  
 
 > [!warning]
+> 
 > Si ce système se déclenche et que vous souhaitez vous connecter à votre ESXi immédiatement, il vous faudra déverrouiller manuellement le compte administrateur.  
 >
 > Pour cela, il vous sera nécessaire de [redémarrer](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#redemarrage-de-votre-serveur-dedie_1) votre serveur ESXi à travers l'espace client OVHcloud.  
@@ -109,6 +111,7 @@ La régle 2 (Priority 1) : bloque tout le reste.
 >
 
 > [!warning]
+> 
 > La désactivation des services **ssh** et **slp** est fortement conseillée.  
 > Ceci est valable également pour les accès au **shell**.  
 > Ne prévilégiez que le strict nécessaire pour chacun de vos besoins.  
