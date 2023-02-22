@@ -50,7 +50,7 @@ Optionnel:
 
 ### Protection anti-intrusion native
 
-Rappel avec sa définition et son principe de fonctionnement:  
+Rappel avec sa définition et son principe de fonctionnement :  
 
 > [!primary]
 > 
@@ -134,9 +134,9 @@ Selectionnez la `Policy`:
 
 Appliquer/Vérifiez les mêmes paramètres pour le service `slpd`:  
 ![services_slp](images/slpd_.png){.thumbnail}  
-
-
-
+  
+  
+  
 **Règles de pare-feu**
 
 Cliquez sur le menu `Networking`{.action}, puis sur `Firewall rules`{.action} et choisissez `Edit settings`{.action} :
