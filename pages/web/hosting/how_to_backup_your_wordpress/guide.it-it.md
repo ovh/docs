@@ -24,20 +24,20 @@ Su un hosting Web condiviso, sei responsabile dei backup del tuo sito Web. Anche
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a [fornitore specializzato](https://partner.ovhcloud.com/fr/) o [amministratore del CMS WordPress](https://wordpress.com/fr/support/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a [fornitore specializzato](https://partner.ovhcloud.com/it/) o [amministratore del CMS WordPress](https://wordpress.com/support/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
 
 **Questa guida ti mostra come salvare il contenuto del tuo sito WordPress e del suo database.**
 
 ## Prerequisiti
 
-- Disporre di un [hosting Web](https://www.ovhcloud.com/fr/web-hosting/) e aver installato WordPress
+- Disporre di un [hosting Web](https://www.ovhcloud.com/it/web-hosting/) e aver installato WordPress
   
 ## Procedura
 
 Puoi effettuare un backup in due modi: **manualmente** o con **o tramite estensione**.
 
-OVHcloud fornisce un [servizio (non contrattuale) di backup automatico dei dati](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) e la messa a disposizione di questi backup. E' tuttavia vostro compito attuare la vostra politica di ripristino e individuare i punti di ripristino nei momenti che riterrete opportuni.
+OVHcloud fornisce un [servizio (non contrattuale) di backup automatico dei dati](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/) e la messa a disposizione di questi backup. E' tuttavia vostro compito attuare la vostra politica di ripristino e individuare i punti di ripristino nei momenti che riterrete opportuni.
 
 ### Metodo n°1 - Effettuare un backup manuale
 
@@ -45,7 +45,7 @@ Il backup manuale deve essere eseguito in due fasi. Per eseguire questa operazio
 
 #### 1.1 - Salva i file del tuo sito web
 
-Il recupero viene effettuato tramite un client FTP come FileZilla. Per maggiori informazioni, consulta la guida "[Utilizzare FileZilla con il tuo hosting OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)".
+Il recupero viene effettuato tramite un client FTP come FileZilla. Per maggiori informazioni, consulta la guida "[Utilizzare FileZilla con il tuo hosting OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)".
 
 Quando ti connetti sul tuo server tramite FTP, devi recuperare (trascinando/depositando) il contenuto della directory `www` sul lato destro. Questa directory contiene tutti i file e le directory del tuo sito WordPress (configurazione, temi, media, ecc...).
 
@@ -61,7 +61,7 @@ Per esportare il tuo database, accedi all'interfaccia _PHPMyAdmin_ tramite l'URL
 
 > [!success]
 >
-> Consulta la nostra guida su [esportare un database](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/).
+> Consulta la nostra guida su [esportare un database](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/).
 
 ![Accesso PHPMyAdmin - Home](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -153,7 +153,7 @@ Applicando queste best practice, hai la possibilità di tornare a una versione p
 ## Per saperne di più <a name="go-further"></a>
 
 - [Sito ufficiale di WordPress](https://wordpress.org){.external}
-- [Maggiori informazioni sui backup del tuo hosting Web](https://docs.ovh.com/fr/hosting/specificites-techniques-hebergements-mutualises/#informations-sur-les-sauvegardes-automatiques)
+- [Maggiori informazioni sui backup del tuo hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_specifiche_tecniche/#informazioni-sui-backup-automatici_1)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

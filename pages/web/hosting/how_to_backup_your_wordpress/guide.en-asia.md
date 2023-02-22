@@ -20,20 +20,20 @@ On a web hosting plan, you are responsible for your website’s backups. Althoug
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 > 
-> This tutorial will help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/fr/) or [WordPress CMS editor](https://wordpress.com/fr/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this tutorial.
+> This tutorial will help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/asia/) or [WordPress CMS editor](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this tutorial.
 >
 
 **This guide explains how to back up the content of your WordPress website and its database.**
 
 ## Requirements
 
-- A [web hosting plan](https://www.ovhcloud.com/fr/web-hosting/) and WordPress installed
+- A [web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) and WordPress installed
 
 ## Instructions
 
 You can perform a backup in two ways: **manually** or by **using an extension**.
 
-OVHcloud provides an [automatic data backup service (non-contractual)](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/), as well as making these backups available. However, it is your responsibility to set up your own restoration policy and to determine restoration points at times you deem appropriate.
+OVHcloud provides an [automatic data backup service (non-contractual)](https://docs.ovh.com/asia/en/hosting/restoring-ftp-filezilla-control-panel/), as well as making these backups available. However, it is your responsibility to set up your own restoration policy and to determine restoration points at times you deem appropriate.
 
 ### Method 1 - perform a manual backup
 
@@ -41,7 +41,7 @@ Manual backup should be done in two steps. First, you need to back up your websi
 
 #### 1.1 - Back up your website files
 
-Recovery is done via an FTP client like FileZilla. See our guide "[Using FileZilla with your OVHcloud hosting](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)" for more information.
+Recovery is done via an FTP client like FileZilla. See our guide "[Using FileZilla with your OVHcloud hosting](https://docs.ovh.com/asia/en/hosting/web_hosting_filezilla_user_guide/)" for more information.
 
 When you log in to your server via FTP, you will need to retrieve the contents of the `www` directory from the right pane (drag and drop). This directory contains all the files and directories of your WordPress site (configuration, themes, media, etc.).
 
@@ -57,7 +57,7 @@ To export your database, go to the _PHPMyAdmin_ interface via the URL that was s
 
 > [!success]
 >
-> Please refer to our guide on [exporting a database](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/).
+> Please refer to our guide on [exporting a database](https://docs.ovh.com/asia/en/hosting/web_hosting_database_export_guide/).
 
 ![PHPMyAdmin access - Home](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -149,7 +149,6 @@ By applying these best practices, you will have the possibility to return to a h
 ## Go further <a name="go-further"></a>
 
 - [WordPress official website](https://wordpress.org){.external}
-- [More information on backups for your Web Hosting plan](https://docs.ovh.com/fr/hosting/specificites-techniques-hebergements-mutualises/#informations-sur-les-sauvegardes-automatiques)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

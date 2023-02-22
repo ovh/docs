@@ -24,20 +24,20 @@ Auf einem Shared Hosting sind Sie für die Backups Ihrer Website verantwortlich.
 >
 > OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/fr/) oder [Herausgeber des CMS WordPress](https://wordpress.com/fr/support/){.external} zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Mehr Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
+> Wir stellen Ihnen dieses Tutorial zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/) oder [Herausgeber des CMS WordPress](https://wordpress.com/support/){.external} zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Mehr Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
 >
 
 **Diese Anleitung erklärt, wie Sie den Inhalt Ihrer WordPress-Website und deren Datenbank sichern.**
 
 ## Voraussetzungen
 
-- Über ein [Webhosting](https://www.ovhcloud.com/fr/web-hosting/) verfügen und WordPress installiert haben
+- Über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) verfügen und WordPress installiert haben
 
 ## In der praktischen Anwendung
 
 Sie können ein Backup auf zwei Arten durchführen: **manuell** oder über eine **Domainendung**.
 
-OVHcloud stellt einen [nicht vertraglich festgelegten Dienst für die automatische Sicherung von Daten](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) zur Verfügung und stellt diese Backups zur Verfügung. Es liegt jedoch in Ihrer Verantwortung, Ihre eigene Restaurationspolitik zu entwickeln und Wiederherstellungspunkte zu Zeiten zu bestimmen, die Sie für angebracht halten.
+OVHcloud stellt einen [nicht vertraglich festgelegten Dienst für die automatische Sicherung von Daten](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/) zur Verfügung und stellt diese Backups zur Verfügung. Es liegt jedoch in Ihrer Verantwortung, Ihre eigene Restaurationspolitik zu entwickeln und Wiederherstellungspunkte zu Zeiten zu bestimmen, die Sie für angebracht halten.
 
 ### Methode Nr. 1 - manuelle Sicherung durchführen
 
@@ -45,7 +45,7 @@ Das manuelle Backup muss in zwei Schritten erfolgen. Speichern Sie zuerst die PH
 
 #### 1.1 - Sichern Sie die Dateien Ihrer Webseite
 
-Der Abruf erfolgt über einen FTP-Client wie FileZilla. Weitere Informationen finden Sie in unserer Anleitung "[FileZilla mit Ihrem OVHcloud Hosting verwenden](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)".
+Der Abruf erfolgt über einen FTP-Client wie FileZilla. Weitere Informationen finden Sie in unserer Anleitung "[FileZilla mit Ihrem OVHcloud Hosting verwenden](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)".
 
 Wenn Sie sich per FTP mit Ihrem Server verbinden, müssen Sie den Inhalt des Verzeichnisses `www` auf dem rechten Teil abrufen (per Drag & Drop). Dieses Verzeichnis enthält alle Dateien und Verzeichnisse Ihrer WordPress-Website (Konfiguration, Themes, Medien...).
 
@@ -61,7 +61,7 @@ Um Ihre Datenbank zu exportieren, begeben Sie sich über die URL, die Sie bei Be
 
 > [!success]
 >
-> Lesen Sie bitte unsere Anleitung zu [Export einer Datenbank](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/).
+> Lesen Sie bitte unsere Anleitung zu [Export einer Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
 
 ![PHPMyAdmin Zugang - Empfang](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -153,7 +153,7 @@ Wenn Sie diese bewährten Verfahren anwenden, haben Sie die Möglichkeit, zu ein
 ## Weiterführende Informationen <a name="go-further"></a>
 
 - [offizielle Website von WordPress](https://wordpress.org){.external}
-- [Mehr Informationen zu den Sicherungen Ihres Webhostings](https://docs.ovh.com/fr/hosting/specificites-techniques-hebergements-mutualises/#informations-sur-les-sauvegardes-automatiques)
+- [Mehr Informationen zu den Sicherungen Ihres Webhostings](https://docs.ovh.com/de/hosting/technische-eigenschaften-web-hosting/#informationen-zu-den-automatischen-backups_1)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

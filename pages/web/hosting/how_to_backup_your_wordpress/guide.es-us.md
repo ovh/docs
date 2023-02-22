@@ -24,20 +24,20 @@ En un alojamiento web compartido, usted es responsable de las copias de segurida
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/) o con [el editor del CMS WordPress](https://wordpress.com/fr/support/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) o con [el editor del CMS WordPress](https://wordpress.com/support/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 >
 
 **Descubra cómo guardar copia de seguridad del contenido de su sitio web WordPress y su base de datos.**
 
 ## Requisitos
 
-- Disponer de un [alojamiento web](https://www.ovhcloud.com/fr/web-hosting/) y haber instalado WordPress.
+- Disponer de un [alojamiento web](https://www.ovhcloud.com/es/web-hosting/) y haber instalado WordPress.
   
 ## Procedimiento
 
 Puede realizar una copia de seguridad de dos formas: **manualmente** o a través de **mediante una extensión**.
 
-OVHcloud ofrece un [servicio (no contractual) de backup automático de los datos](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/), así como la puesta a disposición de estas copias de seguridad. Sin embargo, es su responsabilidad establecer su propia política de restauración y determinar los puntos de restauración en los momentos que considere oportuno.
+OVHcloud ofrece un [servicio (no contractual) de backup automático de los datos](https://docs.ovh.com/us/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/), así como la puesta a disposición de estas copias de seguridad. Sin embargo, es su responsabilidad establecer su propia política de restauración y determinar los puntos de restauración en los momentos que considere oportuno.
 
 ### Método n°1 - Realizar una copia de seguridad manual
 
@@ -45,7 +45,7 @@ El backup manual debe realizarse en dos pasos. En primer lugar, debe guardar cop
 
 #### 1.1 - Guarde los archivos de su sitio web
 
-La recuperación se realiza a través de un cliente FTP como FileZilla. Para más información, consulte nuestra guía "[Utilizar FileZilla con su alojamiento de OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)".
+La recuperación se realiza a través de un cliente FTP como FileZilla. Para más información, consulte nuestra guía "[Utilizar FileZilla con su alojamiento de OVHcloud](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/)".
 
 Al conectarse al servidor por FTP, deberá cargar (arrastrar/soltar) el contenido del directorio `www` en el panel de la derecha. Este directorio contiene todos los archivos y directorios de su sitio web WordPress (configuración, temas, multimedia, etc.).
 
@@ -61,7 +61,7 @@ Para exportar su base de datos, acceda a la interfaz _PHPMyAdmin_ a través de l
 
 > [!success]
 >
-> No dude en consultar nuestra guía sobre [la exportación de una base de datos](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/).
+> No dude en consultar nuestra guía sobre [la exportación de una base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/).
 
 ![Acceso PHPMyAdmin - Inicio](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -153,7 +153,6 @@ Aplicando estas buenas prácticas, podrá volver a una versión anterior sana.
 ## Más información <a name="go-further"></a>
 
 - [Sitio oficial de WordPress](https://wordpress.org){.external}
-- [Más información sobre las copias de seguridad de su alojamiento web](https://docs.ovh.com/fr/hosting/specificites-techniques-hebergements-mutualises/#informations-sur-les-sauvegardes-automatiques)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 
