@@ -10,9 +10,9 @@ section: 'Utilisation avancée'
 ## Objectif
 
 Cette documentation aura pour but de vous accompagner pour élaborer au mieux la sécurisation pour votre système ESXi.  
-En particulier, nous allons voir comment:<br>
-* limiter l'accès à votre ESXi à une adresse IP ou une plage réseau spécifique.
-* désactiver des services augmentant la surface d'attaque de votre serveur.
+En particulier, nous allons voir comment:  
+* limiter l'accès à votre ESXi à une adresse IP ou une plage réseau spécifique.  
+* désactiver des services augmentant la surface d'attaque de votre serveur.  
 
 Nous nous appuierons pour cela sur les fonctions embarquées que propose VMware, mais aussi celles offertes par OVHcloud.
 
