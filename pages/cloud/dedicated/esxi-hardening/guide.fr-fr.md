@@ -53,7 +53,6 @@ Optionnel:
 Rappel avec sa définition et son principe de fonctionnement:  
 
 > [!primary]
-> 
 > Le système ESXi embarque un mécanisme de sécurité lié au compte administrateur.  
 > En effet, en cas de plusieurs tentatives d'accès érronées, le compte administrateur est temporairement vérrouillé.  
 > Ceci permet de protéger votre système et ainsi d'éviter les tentatives de connexions malveillantes.  
