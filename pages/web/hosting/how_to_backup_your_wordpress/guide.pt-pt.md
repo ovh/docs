@@ -71,7 +71,7 @@ Clique em `Exportação`{.action} no topo da página:
 
 Deixe as escolhas propostas por defeito: método de exportação rápido e formato SQL.
 
-Clique em `Executer`{.action}, e poderá descarregar a sua base de dados completa no formato SQL (Structured Query Language).
+Clique em `Executar`{.action}, e poderá descarregar a sua base de dados completa no formato SQL (Structured Query Language).
 
 ![Acesso PHPMyAdmin - Exportar - Descarregamento](images/how_to_backup_your_wordpress_4.png){.thumbnail}
 
