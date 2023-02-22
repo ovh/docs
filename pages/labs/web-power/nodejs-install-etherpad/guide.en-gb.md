@@ -4,7 +4,7 @@ slug: nodejs-install-etherpad
 excerpt: Find out how to install Etherpad  on your POWER web hosting plan
 section: Node.js
 order: 2
-updated: 2021-02-04
+updated: 2023-02-22
 ---
 
 
@@ -28,7 +28,7 @@ updated: 2021-02-04
  }
 </style>
 
-**Last updated 4th February 2021**
+**Last updated 2th February 2023**
 
 ## Objective
 
