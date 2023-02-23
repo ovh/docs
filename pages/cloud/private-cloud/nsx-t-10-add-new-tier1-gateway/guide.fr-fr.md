@@ -31,19 +31,86 @@ order: 10
 
 ## Présentation
 
-Lors de la livraison de NSX-T par OVHcloud, vous avez sur votre configuration une passerelle de type nord-sud (ovh-T0-gw) et une passerelle de type est-ouest (ovh-T1-gw).
-Il vous est possible de créer des passerelles supplémentaires de type nord-sud ou est-ouest.
+OVHcloud vous fournit NSX-T avec deux passerelles, une passerelle de type nord-sud (ovh-T0-gw) et une passerelle de type est-ouest (ovh-T1-gw). Il vous est possible de créer des passerelles supplémentaires de type est-ouest.
 
 > [!warning]
-> La création d'un passerelle nord-sud est possible mais il certaines options ne sont pas disponible, ne créez pas de passerelles nord-sud elles ne vous servirons à rien.
+> Au travers de votre interface NSX-T il vous est possible de créer des passerelles de type nord-sud, ne le faites pas car certaines options ne sont pas disponibles et vous ne pourrez pas la faire fonctionner correctement. 
+
 
 ## En pratique
 
-Nous allons ajouter une nouvelle passerelle de type est-ouest (Tier-1-Gateways) et la relier à la passerelle nord-sud fourni par OVHcloud (ovh-T0-gw).
+Nous allons ajouter une nouvelle passerelle de type est-ouest (Tier-1-Gateways) et la relier à la passerelle nord-sud fournie par OVHcloud (ovh-T0-gw).
 
 Ensuite nous allons créer un segment et lui attacher une machine virtuelle. 
 
+### Création de la nouvelle passerelle de type est-ouest
 
+Dans l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Tier-1 Gateway`{.action} à gauche.
+
+Ensuite cliquez sur `ADD TIER-1 GATEWAY`{.action}.
+
+![Add tier1-gw 01](images/01-add-tier1-gw01.png){.thumbnail}
+
+Saisissez le nom de votre nouvelle passerelle comme `new-T1-gw`{.action} en dessous de **Name** et choisissez ces paramètres:
+
+* **Linked Tier-0-Gateway** : Votre passerelle nord-sud `ovh-T0-gw`{.action}.
+* **Edge Cluster** : Votre `edgeXXX-X`{.action}.
+* **Fail Over** : `Non Preemptive`{.action}.
+* **Edge Pool Allocation Size** : `Routing`{.action}.
+
+Ensuite cliquez sur la `Flèche vers le bas`{.action} à gauche de **Route Advertissement**  
+
+![Add tier1-gw 02](images/01-add-tier1-gw02.png){.thumbnail}
+
+Activez le `bouton`{.action} à droite de **All Connected Segment & Service Ports** si vous souhaitez vous connecter en dehors de cette passerelle et cliquez sur `SAVE`{.action}.
+
+![Add tier1-gw 03](images/01-add-tier1-gw03.png){.thumbnail}
+
+Cliquez sur `NO`{.action}.
+
+![Add tier1-gw 04](images/01-add-tier1-gw04.png){.thumbnail}
+
+Votre nouvelle passerelle est affichée et nous voyons quelle est connectée à votre passerelle nord-sud (ovh-T0-gw).
+
+![Add tier1-gw 05](images/01-add-tier1-gw05.png){.thumbnail}
+
+Cliquez sur `Network Topology`{.action} dans la barre de menu verticale à gauche pour afficher votre topologie réseau pour faire apparaitre votre nouvelle passerelle **new-T1-gw** reliée à **ovh-T0-gw**.
+
+![Add tier1-gw 06](images/01-add-tier1-gw06.png){.thumbnail}
+
+### Création d'un segment sur votre nouvelle passerelle
+
+Allez sur `Segments`{.action} à gauche et cliquez sur `ADD SEGMENT`{.action}.
+
+![02 Add Segment on new gateway 01](images/02-add-segment-on-new-gw01.png){.thumbnail}
+
+Choisissez ces informations : 
+
+* **Name** : Nom de votre segment `ov3-segment`{.action}.
+* **Connected Gateway** : Votre nouvelle passerelle `new-T1-gw`{.action}.
+* **Transport Zone** : Votre sous-réseau `192.168.120.254`{.action}.
+
+Et cliquez sur `SAVE`{.action}.
+
+![02 Add Segment on new gateway 02](images/02-add-segment-on-new-gw02.png){.thumbnail}
+
+Cliquez sur `NO`{.action}.
+
+![02 Add Segment on new gateway 03](images/02-add-segment-on-new-gw03.png){.thumbnail}
+
+Votre nouveau segment est créé et il est relié à votre nouvelle passerelle **new-T1-gw**. 
+
+![02 Add Segment on new gateway 03](images/02-add-segment-on-new-gw03.png){.thumbnail}
+
+### Affichage d'une configuration complète avec une machine virtuelle sur votre segment.
+
+Le segment créé est de type Overlay mais il est possible d'ajouter un segment de type VLAN et de le connecter à votre nouvelle passerelle.
+
+Aidez-vous de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/) pour ajouter une nouvelle machine virtuelle à votre nouveau segment. 
+
+Ensuite cliquez sur `Network Topology`{.action}.
+
+![03 Display VM on segment in new gw 03](images/03-display-vm-on-segment-in-new-gw01.png){.thumbnail}
 
 ## Aller plus loin
 
