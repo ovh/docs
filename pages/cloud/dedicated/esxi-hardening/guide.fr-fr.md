@@ -42,7 +42,7 @@ Optionnel:
 ## Prérequis
 
 * Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-* Possédez un serveur dédié avec la solution ESXi déployée.
+* Posséder un serveur dédié avec la solution ESXi déployée.
 * Avoir souscrit à une offre compatible avec notre fonctionnalité [Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/) si vous souhaitez l'utiliser pour effectuer le filtrage.
 
 
@@ -65,7 +65,7 @@ Rappel avec sa définition et son principe de fonctionnement :
 > Pour cela, il vous sera nécessaire de [redémarrer](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#redemarrage-de-votre-serveur-dedie_1) votre serveur ESXi à travers l'espace client OVHcloud.  
 > 
 
-Il est possible de consulter l'historique des logs d'accès dans les fichiers suivants à partir d'un shell :  
+Il est possible de consulter l'historique des logs d'accès dans les fichiers suivants à partir d'un shell SSH :  
 
 `/var/run/log/vobd.log` contient les logs qui peuvent être utilisés pour la supervision et la résolution de problèmes :  
 ```
@@ -96,8 +96,8 @@ Cette solution vous permettra de gérer facilement les accès légitimes en comp
 Cette solution vous évitera de verrouiller inopinément votre compte administrateur en cas d'attaque.  
 
 Il est donc recommandé de filtrer les accès légitimes de cette manière :  
-La régle 1 (Priority 0) : autorise les accès externes qui auront besoin d'accèder à votre système ESXi.  
-La régle 2 (Priority 1) : bloque tout le reste.  
+La règle 1 (Priority 0) autorise des réseaux externes de confiance à accèder à votre système ESXi.  
+La règle 2 (Priority 1) bloque tout le reste.  
 
 ![Network_Firewall](images/firewall_network_.png){.thumbnail}
 
@@ -113,6 +113,7 @@ La régle 2 (Priority 1) : bloque tout le reste.
 > [!warning]
 > 
 > La désactivation des services **ssh** et **slp** est fortement conseillée.  
+> Si malgré tout, vous continuez à utilsier le service ssh, restreignez au maximum son uilisation et ses accès.  
 > Ceci est valable également pour les accès au **shell**.  
 > Ne prévilégiez que le strict nécessaire pour chacun de vos besoins.  
 
@@ -120,13 +121,13 @@ La régle 2 (Priority 1) : bloque tout le reste.
 
 **Services**
 
-Cliquez sur le menu `Host`{.action} et accéder à la section `Manage`{.action}, puis cliquez sur `Services`{.action}.
+Cliquez sur le menu `Host`{.action} et accédez à la section `Manage`{.action}, puis cliquez sur `Services`{.action}.  
 
-Sous l'onglet `Name`, faites défiler la liste et faites un clic droit sur `TSM-SSH`{.action}.
+Trouvez dans la liste le service `TSM-SSH` et faites un clic droit sur la ligne associée {.action}.  
 
 Modifiez la `Policy` comme sur l'exemple présenté et choisissez l'option `Start an stop manually`{.action} afin d'éviter que le service ne soit actif au démarrage du serveur.  
 
-Arrêtez le service :  
+Arrêtez le service en cliquant sur `Stop`{.action} :  
 ![services_ssh](images/stop_service.png){.thumbnail}
 
 Selectionnez la `Policy`:  
@@ -139,13 +140,13 @@ Appliquer/Vérifiez les mêmes paramètres pour le service `slpd`:
   
 **Règles de pare-feu**
 
-Cliquez sur le menu `Networking`{.action}, puis sur `Firewall rules`{.action} et choisissez `Edit settings`{.action} :
+Cliquez sur le menu `Networking`{.action}, puis sur `Firewall rules`{.action} et choisissez `Edit settings`{.action}pour chacun des services à protéger :
 
 ![rules](images/firewall_web_.png){.thumbnail}
 
-Éditez la règle pour n'ajouter que la ou les adresses IP, ou encore réseau(x), à pouvoir se connecter à votre système ESXi.  
+Éditez la règle pour n'ajouter que les adresses IP ou les réseaux qui doivent avoir accès à votre système ESXi.  
 
-Exemple avec une adresse privée :
+Exemple aurorisant unqiuement les connexions depuis l'IP 192.168.1.10 :
 
 ![custom](images/custom_fw_rule.png){.thumbnail}
 
@@ -189,22 +190,34 @@ esxcli network firewall ruleset list
 esxcli system account list
 ```
 
-Exemple de modification/ajustement de régle d'accès avec le service `vSphereClient` :  
+Explications sur les modification/ajustement de règle d'accès : 
+  
+Le service `vSphereClient` :  
+Ce service correspond à l'interface web d'administration sur le port sécurisé 443 (https).  
+
+Le service `sshServer` :  
+Ce service correspond à l'activation des accès en ssh sur le port 22.  
+
+Exemple avec le service vSphereClient :  
 
 ```bash
 esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
 
-Assurez vous que le service soit actif :  
+Assurez-vous que la règle de pare-feu soit active :  
 
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --enabled true
 ```
 
-Obtenez le statut du tag `allowedAll` (autorisé pour tous) pour le service :  
+Affichez la liste des IP autorisées pour cette règle :  
 
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
+
+Ruleset        Allowed IP Addresses
+-------------  --------------------
+vSphereClient  All
 ```
 
 Changer le statut du tag en le désactivant :  
@@ -213,19 +226,24 @@ Changer le statut du tag en le désactivant :
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
 
-Ajouter l'adresse privée légitime 192.168.1.10 :  
+Autorisez exclusivement l'adresse IP légitime 192.168.1.10 :  
 
 ```bash
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
 
-Vérifier l'adresse dans la liste d'accès :  
+Vérifiez la présence de l'adresse dans la liste d'accès :  
 
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
+
+Ruleset        Allowed IP Addresses
+-------------  --------------------
+vSphereClient  192.168.1.10
 ```
 
-Recharger la configuration avec la nouvelle régle :  
+
+Recharger la configuration du pare-feu afin de prendre en compte la nouvelle règle :  
 
 ```bash
 esxcli network firewall refresh
