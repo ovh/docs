@@ -74,7 +74,7 @@ Il est possible de consulter l'historique des logs d'accès dans les fichiers su
 2023-02-13T16:22:22.897Z: [UserLevelCorrelator] 410535867us: [esx.audit.account.locked] Remote access for ESXi local user account 'root' has been locked for 900 seconds after 6 failed login attempts.
 ```
 
-`/var/run/log/hostd.log` contient les logs de l'hôte ESXi (tâches, accès à l'interface Web, etc.) :  
+`/var/run/log/hostd.log` contient les logs de l'hôte ESXi (tâches, accès à l'interface WEB, etc.) :  
 ```
 2023-02-21T08:44:19.711Z error hostd[2101004] [Originator@6876 sub=Default opID=esxui-d48c-26a4] [module:pam_lsass]pam_do_authenticate: error [login:root][error code:2]
 2023-02-21T08:44:19.711Z error hostd[2101004] [Originator@6876 sub=Default opID=esxui-d48c-26a4] [module:pam_lsass]pam_sm_authenticate: failed [error code:2]
@@ -82,7 +82,7 @@ Il est possible de consulter l'historique des logs d'accès dans les fichiers su
 2023-02-21T08:44:19.712Z info hostd[2101004] [Originator@6876 sub=Vimsvc.ha-eventmgr opID=esxui-d48c-26a4] Event 175 : Cannot login root@xxx.xxx.xxx.xxx
 ```
 
-Toutes ces informations sont également disponibles à travers l'interface d'administration web :  
+Toutes ces informations sont également disponibles à travers l'interface d'administration WEB :  
 
 Cliquez sur le menu `Host`{.action} et accéder à la section `Monitor`{.action}, puis cliquez sur `Logs`{.action}.
 
@@ -125,28 +125,26 @@ Cliquez sur le menu `Host`{.action} et accédez à la section `Manage`{.action},
 
 Trouvez dans la liste le service `TSM-SSH` et faites un clic droit sur la ligne associée.  
 
-Modifiez la `Policy` comme sur l'exemple présenté et choisissez l'option `Start an stop manually`{.action} afin d'éviter que le service ne soit actif au démarrage du serveur.  
-
 Arrêtez le service en cliquant sur `Stop`{.action} :  
 ![services_ssh](images/stop_service.png){.thumbnail}
 
-Selectionnez la `Policy`:  
+Selectionnez la `Policy` puis la modifiez comme sur l'exemple présenté et choisissez l'option `Start an stop manually`{.action} afin d'éviter que le service ne soit actif au démarrage du serveur.  
 ![services_ssh](images/ssh_disabled_.png){.thumbnail} 
 
-Appliquer/Vérifiez les mêmes paramètres pour le service `slpd`:  
+Appliquez/Vérifiez les mêmes paramètres pour le service `slpd`:  
 ![services_slp](images/slpd_.png){.thumbnail}  
   
   
   
 **Règles de pare-feu**
 
-Cliquez sur le menu `Networking`{.action}, puis sur `Firewall rules`{.action} et choisissez `Edit settings`{.action}pour chacun des services à protéger :
+Cliquez sur le menu `Networking`{.action}, puis sur `Firewall rules`{.action} et choisissez `Edit settings`{.action} pour chacun des services à protéger :
 
 ![rules](images/firewall_web_.png){.thumbnail}
 
 Éditez la règle pour n'ajouter que les adresses IP ou les réseaux qui doivent avoir accès à votre système ESXi.  
 
-Exemple aurorisant unqiuement les connexions depuis l'IP 192.168.1.10 :
+Exemple autorisant uniquement les connexions depuis l'IP 192.168.1.10 :
 
 ![custom](images/custom_fw_rule.png){.thumbnail}
 
@@ -159,7 +157,7 @@ Désactivez les services inutiles :
 
 Service SLP  
 
-```bash
+```
 /etc/init.d/slpd stop
 esxcli network firewall ruleset set -r CIMSLP -e 0
 chkconfig slpd off
@@ -167,7 +165,7 @@ chkconfig slpd off
 
 Service SSH  
 
-```bash
+```
 /etc/init.d/SSH stop
 esxcli network firewall ruleset set -r sshServer -e 0
 chkconfig SSH off
@@ -193,10 +191,10 @@ esxcli system account list
 Explications sur les modification/ajustement de règle d'accès : 
   
 Le service `vSphereClient` :  
-Ce service correspond à l'interface web d'administration sur le port sécurisé 443 (https).  
+Ce service correspond à l'interface WEB d'administration sur le port 443 (HTTPS).  
 
 Le service `sshServer` :  
-Ce service correspond à l'activation des accès en ssh sur le port 22.  
+Ce service correspond aux accès en SSH sur le port 22.  
 
 Exemple avec le service vSphereClient :  
 
@@ -223,29 +221,24 @@ vSphereClient  All
 ```
 
 Changer le statut du tag en le désactivant :  
-```bash
+```
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
 
 Autorisez exclusivement l'adresse IP légitime 192.168.1.10 :  
-```bash
+```
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
 
 Vérifiez la présence de l'adresse dans la liste d'accès :  
-```bash
+```
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
 Résultat :  
-```bash
+```
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  192.168.1.10
-```
-
-Recharger la configuration du pare-feu afin de prendre en compte la nouvelle règle :  
-```bash
-esxcli network firewall refresh
 ```
 
 
