@@ -32,9 +32,9 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 >
-> This feature isn't available on servers of the [Scale](https://www.ovhcloud.com/en-gb/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/) product lines.
+> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-gb/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/).
 > 
-> Please visit the dedicated [configuration page](https://docs.ovh.com/ca/en/dedicated/proxmox-network-hg-scale/)
+> Please visit the dedicated [configuration page](https://docs.ovh.com/gb/en/dedicated/proxmox-network-hg-scale/).
 
 ## Instructions
 
