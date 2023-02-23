@@ -473,13 +473,13 @@ LABEL_1=ens32:0
 
 #### Kror 1: dostęp do sekcji Zarządzanie IP WHM
 
-W Panelu klienta WHM kliknij `IP funtions`{.action} i wybierz `Add a New IP Address`{.action} z menu po lewej stronie.
+W Panelu klienta WHM kliknij `IP Functions`{.action} i wybierz `Add a New IP Address`{.action} z menu po lewej stronie.
 
 ![Dodaj nowy adres IP](images/Cpanel-1.png){.thumbnail}
 
 #### Kror 2: dodaj informacje dotyczące Additional IP
 
-Wpisz swój adres IP additional w formie "xxx.xxx.xxx.xxx" w polu "Nowy IP lub IP range to add".
+Wpisz swój adres IP additional w formie "xxx.xxx.xxx.xxx" w polu "New IP or IP range to add".
 
 Wybierz `255.255.255.255` jako maskę podsieci, po czym kliknij `Submit`{.action}.
 
@@ -492,7 +492,7 @@ Wybierz `255.255.255.255` jako maskę podsieci, po czym kliknij `Submit`{.action
 
 #### Kror 3: Sprawdź aktualną konfigurację IP
 
-W sekcji `IP functions`{.action} kliknij `Show or Delete Current IP Addresses`{.action}, aby sprawdzić, czy adres Additional IP został poprawnie dodany.
+W sekcji `IP Functions`{.action} kliknij `Show or Delete Current IP Addresses`{.action}, aby sprawdzić, czy adres Additional IP został poprawnie dodany.
 
 ![check configured IP](images/Cpanel-3.png){.thumbnail}
 

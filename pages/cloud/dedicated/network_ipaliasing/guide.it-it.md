@@ -1,7 +1,7 @@
 ---
 title: Configurare un Alias IP
 slug: network-ipaliasing
-excerpt: Come aggiungere uno o più Additional IP alla tua configurazione
+excerpt: 'Scopri come aggiungere uno o più Additional IP alla tua configurazione'
 section: Rete e IP
 updated: 2022-12-07
 ---
@@ -473,7 +473,7 @@ LABEL_1=ens32:0
 
 #### Step 1: accedi alla gestione IP di WHM
 
-Nello Spazio Cliente WHM, clicca su `IP funtions`{.action} e seleziona `Add a New IP Address`{.action} nel menu a sinistra.
+Nello Spazio Cliente WHM, clicca su `IP Functions`{.action} e seleziona `Add a New IP Address`{.action} nel menu a sinistra.
 
 ![Aggiungere un nuovo indirizzo IP](images/Cpanel-1.png){.thumbnail}
 
@@ -492,7 +492,7 @@ Seleziona `255.255.255.255` come subnet mask e clicca su `Submit`{.action}.
 
 #### Step 3: verifica la configurazione IP corrente
 
-Di ritorno alla sezione `IP functions`{.action}, clicca su `Show or Delete Current IP Addresses`{.action} per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente.
+Di ritorno alla sezione `IP Functions`{.action}, clicca su `Show or Delete Current IP Addresses`{.action} per verificare che l'indirizzo Additional IP sia stato aggiunto correttamente.
 
 ![check configured IP](images/Cpanel-3.png){.thumbnail}
 

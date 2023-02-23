@@ -1,7 +1,7 @@
 ---
 title: Como configurar um IP alias
 slug: network-ipaliasing
-excerpt: Saiba como adicionar endereços Additional IP à configuração de rede
+excerpt: Descubra como adicionar endereços Additional IP à configuração de rede
 section: Redes & IP
 updated: 2022-12-07
 ---
@@ -471,7 +471,7 @@ LABEL_1=ens32:0
 
 #### 1: aceder à secção gestão IP da WHM
 
-Na Área de Cliente WHM, clique em `IP funtions`{.action} e selecione `Add a New IP Address`{.action} no menu à esquerda.
+Na Área de Cliente WHM, clique em `IP Functions`{.action} e selecione `Add a New IP Address`{.action} no menu à esquerda.
 
 ![Adicionar um novo endereço IP](images/Cpanel-1.png){.thumbnail}
 
@@ -485,12 +485,12 @@ Selecione `255.255.255.255` como máscara de sub-rede e clique em `Submit`{.acti
 
 > [!warning]
 >
-> Atenção: se tiver vários endereços IP a configurar num bloco e os adicionar ao mesmo tempo, o sistema WHM irá obrigar-lo a utilizar a máscara de sub-rede `255.255.255.0`.Não é recomendado que utilize esta configuração, deve adicionar cada IP individualmente para utilizar a máscara de sub-rede apropriada `255.255.255.255.255`.
+> Atenção: se tiver vários endereços IP a configurar num bloco e os adicionar ao mesmo tempo, o sistema WHM irá obrigar-lo a utilizar a máscara de sub-rede `255.255.255.0`.Não é recomendado que utilize esta configuração, deve adicionar cada IP individualmente para utilizar a máscara de sub-rede apropriada `255.255.255.255`.
 >
 
 #### 3: verificar a configuração IP atual
 
-De volta para a secção `IP funtions`{.action}, clique em `Show or Delete Current IPs`{.action para verificar que o endereço Additional IP foi corretamente adicionado.
+De volta para a secção `IP Functions`{.action}, clique em `Show or Delete Current IPs`{.action} para verificar que o endereço Additional IP foi corretamente adicionado.
 
 ![check configurgured IP](images/Cpanel-3.png){.thumbnail}
 

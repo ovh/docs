@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una IP como alias'
 slug: network-ipaliasing
-excerpt: 'Cómo añadir direcciones Additional IP a la configuración de un servidor'
+excerpt: 'Descubra cómo añadir direcciones Additional IP a la configuración de un servidor'
 section: 'Red e IP'
 updated: 2022-12-07
 ---
@@ -475,13 +475,13 @@ Por último, reinicie el servidor para guardar los cambios.
 
 #### Etapa 1: acceder a la sección Gestión IP de WHM
 
-En el área de cliente WHM, haga clic en `IP funtions`{.action} y seleccione `Add a New IP Address`{.action} en el menú de la izquierda.
+En el área de cliente WHM, haga clic en `IP Functions`{.action} y seleccione `Add a New IP Address`{.action} en el menú de la izquierda.
 
 ![Añadir una nueva dirección IP](images/Cpanel-1.png){.thumbnail}
 
 ##### Etapa 2: añadir la información de las Direcciones IP
 
-Introduzca su dirección IP adicional como "xxx.xxx.xxx.xxx" en el campo "Nueva IP o IP range to add".
+Introduzca su dirección IP adicional como "xxx.xxx.xxx.xxx" en el campo "New IP or IP range to add".
 
 Seleccione `255.255.255.255` como máscara de subred y haga clic en `Submit`{.action}.
 
