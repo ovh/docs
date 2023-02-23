@@ -214,40 +214,40 @@ Affichez la liste des IP autorisées pour cette règle :
 
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
-
+```
+Résultat :  
+```bash
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  All
 ```
 
 Changer le statut du tag en le désactivant :  
-
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
 
 Autorisez exclusivement l'adresse IP légitime 192.168.1.10 :  
-
 ```bash
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
 
 Vérifiez la présence de l'adresse dans la liste d'accès :  
-
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
-
+```
+Résultat :  
+```bash
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  192.168.1.10
 ```
 
-
 Recharger la configuration du pare-feu afin de prendre en compte la nouvelle règle :  
-
 ```bash
 esxcli network firewall refresh
 ```
+
 
 ## Aller plus loin
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
