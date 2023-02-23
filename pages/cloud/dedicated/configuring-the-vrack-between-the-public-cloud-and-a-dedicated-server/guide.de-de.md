@@ -77,13 +77,13 @@ Damit beide Dienste miteinander kommunizieren können, müssen sie mit derselben
 
 #### Verwendung der Standard-ID
 
-Die VLAN ID für dedizierte Server ist standardmäßig **0**. Um diese VLAN-ID zu verwenden, müssen Sie das mit Ihrer Instanz verbundene private Netzwerk als VLAN **0** "taggen". Dazu benötigen Sie die [OVHcloud API (EN)](https://docs.ovh.com/de/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1).
+Die VLAN ID für dedizierte Server ist standardmäßig **0**. Um diese VLAN ID zu verwenden, müssen Sie das mit Ihrer Instanz verbundene private Netzwerk als VLAN **0** "taggen". Dazu muss die [OVHcloud API (EN)](https://docs.ovh.com/de/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) verwendet werden.
 
 
 > [!primary]
 > In der Public Cloud definieren Sie eine einzige VLAN ID pro privatem Netzwerk.
 >
-> Sie können nicht dieselbe VLAN-ID in zwei verschiedenen privaten Netzwerken definieren.
+> Sie können nicht dieselbe VLAN ID in zwei verschiedenen privaten Netzwerken definieren.
 
 #### Verwendung einer anderen VLAN ID
 
@@ -92,14 +92,14 @@ Wenn Sie eine andere VLAN ID verwenden möchten:
 - Das mit der Public Cloud Instanz verbundene private Netzwerk muss mit dieser ID "getagt" werden.
 - In der Netzwerkkonfigurationsdatei des Dedicated Servers muss die private Netzwerkschnittstelle mit dieser ID "getagt" werden.
 
-Setzen Sie in diesem Fall einen Haken bei Einen VLAN` definieren, wählen Sie eine VLAN-Nummer von 2 bis 4000.
+Setzen Sie in diesem Fall einen Haken bei `Ein VLAN definieren` und wählen Sie eine Nummer zwischen 2 und 4000.
 
-Wenn Sie dieses Feld nicht ankreuzen, erhält das System eine zufällige VLAN-Nummer.
+Wenn Sie dieses Feld nicht anhaken, erhält das System eine zufällige VLAN ID.
 
 
 > [!primary]
 > 
-> Anders als bei Dedicated Servern ist es nicht notwendig, das VLAN direkt in die Netzwerkkonfigurationsdatei der Public Cloud Instanz zu taggen, sobald die VLAN-ID im OVHcloud Kundencenter definiert ist.
+> Anders als bei Dedicated Servern ist es nicht notwendig, das VLAN direkt in die Netzwerkkonfigurationsdatei der Public Cloud Instanz zu "taggen", sobald die VLAN ID im OVHcloud Kundencenter definiert ist.
 >
 
 Beispiel: Wenn Sie das mit Ihrer Instanz verbundene private Netzwerk mit der VLAN ID 2 definiert haben, muss das private Netzwerkinterface Ihres dedizierten Servers mit VLAN 2 "getagt" werden. Weitere Informationen finden Sie in folgender Anleitung: "[Mehrere VLANs im vRack erstellen](https://docs.ovh.com/de/dedicated/vrack-vlan-erstellen/)".
