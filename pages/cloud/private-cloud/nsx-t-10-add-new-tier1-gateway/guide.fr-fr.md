@@ -26,7 +26,7 @@ order: 10
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX-T** déployé
+- Avoir **NSX-T** déployé.
 
 
 ## Présentation
@@ -35,7 +35,6 @@ OVHcloud vous fournit NSX-T avec deux passerelles, une passerelle de type nord-s
 
 > [!warning]
 > Au travers de votre interface NSX-T il vous est possible de créer des passerelles de type nord-sud, ne le faites pas car certaines options ne sont pas disponibles et vous ne pourrez pas la faire fonctionner correctement. 
-
 
 ## En pratique
 
@@ -78,7 +77,7 @@ Cliquez sur `Network Topology`{.action} dans la barre de menu verticale à gauch
 
 ![Add tier1-gw 06](images/01-add-tier1-gw06.png){.thumbnail}
 
-### Création d'un segment sur votre nouvelle passerelle
+### Ajout d'un segment sur votre nouvelle passerelle
 
 Allez sur `Segments`{.action} à gauche et cliquez sur `ADD SEGMENT`{.action}.
 
