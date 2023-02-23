@@ -1,7 +1,7 @@
 ---
-title: Ajouter une nouvelle passerelle Tier-1 Gateways
+title: Ajouter une nouvelle passerelle Tier-1 Gateway
 slug: nsx-t-add-new-tier1-gateway
-excerpt: Comment ajouter une passerelle de type Tier-1 Gateways
+excerpt: Comment ajouter une passerelle de type Tier-1 Gateway
 section: NSX-T
 order: 10
 ---
@@ -58,7 +58,7 @@ Saisissez le nom de votre nouvelle passerelle comme `new-T1-gw`{.action} en dess
 * **Fail Over** : `Non Preemptive`{.action}.
 * **Edge Pool Allocation Size** : `Routing`{.action}.
 
-Ensuite cliquez sur la `Flèche vers le bas`{.action} à gauche de **Route Advertissement**  
+Ensuite cliquez sur la `Flèche vers le bas`{.action} à gauche de **Route Advertissement**.
 
 ![Add tier1-gw 02](images/01-add-tier1-gw02.png){.thumbnail}
 
@@ -88,7 +88,7 @@ Choisissez ces informations :
 
 * **Name** : Nom de votre segment `ov3-segment`{.action}.
 * **Connected Gateway** : Votre nouvelle passerelle `new-T1-gw`{.action}.
-* **Transport Zone** : Votre sous-réseau `192.168.120.254`{.action}.
+* **Transport Zone** : Votre sous-réseau `192.168.120.254/24`{.action}.
 
 Et cliquez sur `SAVE`{.action}.
 
