@@ -10,7 +10,7 @@ updated: 2022-12-20
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 22.12.2022**
+**Letzte Aktualisierung am 23.02.2023**
 
 > [!primary]
 >
@@ -35,6 +35,11 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
 >
 > Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+>
+> Diese Anleitung gilt nicht für Server der Reihen [Scale](https://www.ovhcloud.com/de/bare-metal/scale/) und [High Grade](https://www.ovhcloud.com/de/bare-metal/high-grade/).
+>
+> Verwenden Sie stattdessen die entsprechende [Konfigurationsanleitung](https://docs.ovh.com/de/dedicated/proxmox-network-hg-scale/).
+
 
 ## In der praktischen Anwendung
 
