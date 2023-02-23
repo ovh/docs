@@ -34,7 +34,7 @@ You can use a CMS (Content Management System) to build your website via an easy-
 
 OVHcloud offers a selection of 4 CMSs as 1-click modules. By using this solution, you will need to choose from this list. If you have already chosen a CMS from the list, you can start following the steps in this tutorial. If have not yet chosen which CMS to use, this [CMS comparison page](https://www.ovhcloud.com/en-gb/web-hosting/uc-cms-comparison/) can help you decide which one would best suit your project.
 
-If you would like to install a CMS that isn’t offered as an OVHcloud 1-click module, you can install it manually on your web hosting plan, provided that the CMS is compatible with your plan (see our web hosting plans [here](https://www.ovhcloud.com/en-gb/web-hosting/).
+If you would like to install a CMS that isn’t offered as an OVHcloud 1-click module, you can install it manually on your web hosting plan, provided that the CMS is compatible with your plan (see our web hosting plans [here](https://www.ovhcloud.com/en-gb/web-hosting/) ).
 
 ![CMS logos](images/CMS_logo.png){.thumbnail}
 
@@ -88,7 +88,7 @@ You must now enter the information required to connect to your database. There a
 
 - **If you have already created a database on your web hosting plan:** select it from the list, and enter the information requested.
 - **If you have not yet created a database on your web hosting plan:** follow the instructions for creating one, then try again.
-- **If you have created a database on another OVHcloud web hosting plan:** select it from the `Databases outside of your web hosting plan`{.action} list, and enter the information requested. The database and web hosting plan must be hosted in the same datacentre.
+- **If you have created a database on another OVHcloud web hosting plan:** select it from the `Databases`{.action} list outside of your web hosting plan, and enter the information requested. The database and web hosting plan must be hosted in the same datacentre.
 
 Once you have entered this information, click `Next`{.action}.
 
