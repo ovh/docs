@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration von IP-Aliasing'
 slug: network-ipaliasing
-excerpt: 'So fügen Sie Additional IPs zu Ihrer Konfiguration hinzu'
+excerpt: 'Erfahren Sie hier, wie Sie Additional IPs zu Ihrer Konfiguration hinzufügen'
 section: 'Netzwerk & IP'
 updated: 2022-12-07
 ---
@@ -21,7 +21,7 @@ updated: 2022-12-07
 
 IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der Sie mehrere IP-Adressen auf einem einzigen Netzwerkinterface verknüpfen können.
 
-**In dieser Anleitung erklären wir Ihnen, wie Sie diese Option konfigurieren.**
+**Diese Anleitung erklärt, wie Sie diese Option konfigurieren.**
 
 ## Voraussetzungen
 
