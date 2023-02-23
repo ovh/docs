@@ -321,7 +321,7 @@ sgdisk -G /dev/sda
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
-Der Befehl muss im folgenden Format sein: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`
+Der Befehl muss im folgenden Format sein: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
 Jetzt können Sie das RAID Array neu konfigurieren. Der nachstehende Code zeigt, wie das Layout der Partition `/dev/md4` mit der zuvor kopierten Partitionstabelle von “sda” wiederhergestellt werden kann: 
 

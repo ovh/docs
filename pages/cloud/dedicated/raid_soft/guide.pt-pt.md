@@ -6,9 +6,13 @@ section: 'RAID e discos'
 updated: 2022-10-11
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 21/02/2023**
 
-## Sumário
+## Objetivo
 
 O RAID (Redundant Array of Independent Disks) é um conjunto de técnicas concebidas para atenuar a perda de dados num servidor através da replicação dos dados em vários discos.
 
@@ -42,7 +46,7 @@ md4 : active raid1 sda4[0] sdb4[1]
 unused devices: <none>
 ```
 
-Este comando mostra as duas matrizes RAID que estão configuradas, sendo que “md4” é a maior partição. Uma partição é composta dois discos, chamados “sda4” e ”sdb4”. “[UU]” significa que todos os discos funcionam normalmente. Um “_” indicará um disco defeituoso.
+Este comando mostra as duas matrizes RAID que estão configuradas, sendo que “md4” é a maior partição. Uma partição é composta dois discos, chamados “sda4” e ”sdb4”. `[UU]` significa que todos os discos funcionam normalmente. Um “`_`” indicará um disco defeituoso.
 
 Embora este comando mostre os volumes RAID, este não indica o tamanho das próprias partições. Para obter esta informação, utilize o seguinte comando:
 
@@ -94,7 +98,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 O comando `fdisk -l` permite-lhe também identificar o seu tipo de partição. Esta é uma informação importante para saber quando se trata de reconstruir o seu RAID em caso de falha de um disco.
 
-Para as partições GPT, o comando voltará: `Disklabel type: gpt`.
+Para as partições **GPT**, o comando voltará: `Disklabel type: gpt`.
 
 ```sh
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
@@ -102,11 +106,11 @@ Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: gpt`
+'Disklabel type: gpt'
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-Para as partições MBR, o comando voltará: `Disklabel type: dos`.
+Para as partições **MBR**, o comando voltará: `Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
@@ -114,7 +118,7 @@ Disk model: QEMU HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: dos`              
+'Disklabel type: dos'             
 Disk identifier: 0x150f6797
 ```
 
@@ -186,7 +190,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Atenção: se estiver conectado como utilizador root, pode obter a seguinte mensagem quando estiver a tentar desmontar a partição (no nosso caso, em que a nossa partição md4 está montada em /home):
+> Atenção: se estiver conectado como utilizador `root`, pode obter a seguinte mensagem quando estiver a tentar desmontar a partição (no nosso caso, em que a nossa partição md4 está montada em /home):
 > 
 > `umount: /home: target is busy`
 >
@@ -304,7 +308,7 @@ Uma vez substituído o disco, copie a tabela de partição a partir de um disco 
 sgdisk -R /dev/sda /dev/sdb 
 ```
 
-O comando deve ter o seguinte formato: `sgdisk -R /dev/novodisco /dev/discosão`
+O comando deve ter o seguinte formato: `sgdisk -R /dev/newdisk /dev/healthydisk`.
 
 
 Uma vez efetuada esta operação, o passo seguinte consiste em tornar aleatório o GUID do novo disco, a fim de evitar qualquer conflito do GUID com os outros discos:
@@ -321,7 +325,7 @@ Uma vez substituído o disco, copie a tabela de partição a partir de um disco 
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
-O comando deve ter o seguinte formato: `sfdisk -d /dev/discosão | sfdisk /dev/novodisco`
+O comando deve ter o seguinte formato: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
 Já pode reconstruir a matriz RAID. O seguinte extrato do código mostra como reconstruir a disposição da partição `/dev/md4` com a tabela de partição “sda” que acaba de copiar: 
 

@@ -6,6 +6,10 @@ section: 'RAID y discos'
 updated: 2022-10-11
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 **Última actualización: 21/02/2023**
 
 ## Objetivo
@@ -94,7 +98,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 El comando `fdisk -l` también le permite identificar su tipo de partición. Esta es una información importante que deberá conocer cuando se trate de reconstruir su RAID en caso de fallo de un disco.
 
-Para las particiones GPT, el comando devolverá: `Disklabel type: gpt`.
+Para las particiones **GPT**, el comando devolverá: `Disklabel type: gpt`.
 
 ```sh
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
@@ -102,11 +106,11 @@ Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: gpt`
+'Disklabel type: gpt'
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-Para las particiones MBR, el comando devolverá: `Disklabel type: dos`.
+Para las particiones **MBR**, el comando devolverá: `Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
@@ -114,7 +118,7 @@ Disk model: QEMU HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: dos`              
+'Disklabel type: dos'            
 Disk identifier: 0x150f6797
 ```
 
@@ -186,7 +190,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Tenga en cuenta que, si está conectado como usuario root, puede obtener el siguiente mensaje cuando intente desmontar la partición (en nuestro caso, la partición md4 está montada en /home):
+> Tenga en cuenta que, si está conectado como usuario `root`, puede obtener el siguiente mensaje cuando intente desmontar la partición (en nuestro caso, la partición md4 está montada en /home):
 > 
 > `umount: /home: target is busy`
 >
@@ -305,7 +309,7 @@ Una vez sustituido el disco, copie la tabla de particiones desde un disco « san
 sgdisk -R /dev/sda /dev/sdb 
 ```
 
-El comando debe tener el siguiente formato: `sgdisk -R /dev/nuevodisco /dev/discosano`
+El comando debe tener el siguiente formato: `sgdisk -R /dev/newdisk /dev/healthydisk`.
 
 Una vez realizada esta operación, podrá aleatoriamente utilizar el GUID del nuevo disco para evitar cualquier conflicto de GUID con el resto de discos:
 
@@ -321,7 +325,7 @@ Una vez sustituido el disco, copie la tabla de particiones desde un disco sano (
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
-El comando debe tener el siguiente formato: `sfdisk -d /dev/discosano | sfdisk /dev/nuovodisco`.
+El comando debe tener el siguiente formato: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
 Ya puede reconstruir el RAID. El siguiente fragmento de código muestra cómo reconstruir la disposición de la partición **/dev/md4** con la tabla de particiones « sda » anteriormente copiada: 
 

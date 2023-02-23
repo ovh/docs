@@ -6,6 +6,10 @@ section: 'RAID & dyski'
 updated: 2022-10-11
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
 **Ostatnia aktualizacja z dnia 21-02-2023**
 
 ## Wprowadzenie
@@ -42,7 +46,7 @@ md4 : active raid1 sda4[0] sdb4[1]
 unused devices: <none>
 ```
 
-Polecenie wskazuje dwie aktualnie skonfigurowane macierze RAID, przy czym “md4” jest największą partycją. Partycja składa się z dwóch dysków o nazwach: “sda4” i “sdb4”. [UU] oznacza, że wszystkie dyski działają prawidłowo. “_” wskazuje wadliwy dysk.
+Polecenie wskazuje dwie aktualnie skonfigurowane macierze RAID, przy czym “md4” jest największą partycją. Partycja składa się z dwóch dysków o nazwach: “sda4” i “sdb4”. [UU] oznacza, że wszystkie dyski działają prawidłowo. “`_`” wskazuje wadliwy dysk.
 
 W poleceniu ukazane są wielkości macierzy RAID, nie podane są jednak rozmiary samych partycji. Informację tę można uzyskać za pomocą polecenia:
 
@@ -94,7 +98,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 Komenda `fdisk -l` pozwala również na zidentyfikowanie partycji. Pamiętaj, że w przypadku awarii dysku możesz odtworzyć RAID.
 
-W przypadku partycji GPT komenda zwróci: `Disklabel type: gpt`.
+W przypadku partycji **GPT** komenda zwróci: `Disklabel type: gpt`.
 
 ```sh
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
@@ -102,11 +106,11 @@ Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: gpt`
+'Disklabel type: gpt'
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-W przypadku partycji MBR polecenie zwróci: `Disklabel type: dos`.
+W przypadku partycji **MBR** polecenie zwróci: `Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
@@ -114,7 +118,7 @@ Disk model: QEMU HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: dos`              
+'Disklabel type: dos'            
 Disk identifier: 0x150f6797
 ```
 
@@ -186,7 +190,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Pamiętaj, że jeśli jesteś zalogowany jako użytkownik root, możesz uzyskać następujący komunikat podczas próby odmontowania partycji (w naszym przypadku, kiedy nasza partycja md4 jest zamontowana w /home):
+> Pamiętaj, że jeśli jesteś zalogowany jako użytkownik `root`, możesz uzyskać następujący komunikat podczas próby odmontowania partycji (w naszym przypadku, kiedy nasza partycja md4 jest zamontowana w /home):
 > 
 > `umount: /home: target is busy`
 >
@@ -304,7 +308,7 @@ Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładz
 sgdisk -R /dev/sda /dev/sdb 
 ```
 
-Polecenie musi mieć następujący format: `sgdisk -R /dev/nowegodysk /dev/przykładziedysk`.
+Polecenie musi mieć następujący format: `sgdisk -R /dev/newdisk /dev/healthydisk`.
 
 Po wykonaniu tej operacji kolejny krok polega na losowym odwzorowaniu GUID nowego dysku, aby uniknąć konfliktu GUID z innymi dyskami:
 
@@ -314,11 +318,13 @@ sgdisk -G /dev/sda
 
 **Dla partycji MBR**
 
+Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładzie dysk “sdb”) do nowego dysku “sda” za pomocą następującego polecenia: 
+
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
-Polecenie musi mieć następujący format: `sfdisk -d /dev/przykładziedysk | sfdisk /dev/nowegodysk`
+Polecenie musi mieć następujący format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
 Teraz możesz odtworzyć macierz RAID. Poniższy fragment kodu pokazuje, jak odtworzyć układ partycji `/dev/md4` za pomocą skopiowanej tablicy partycji “sda”: 
 
@@ -381,6 +387,7 @@ mount /dev/md4 /home
 ## Sprawdź również
 
 * [Wymiana dysku bez wyłączania serwera – Sprzętowa macierz RAID](https://docs.ovh.com/pl/dedicated/hotswap-raid-soft/){.external}
-* [Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
-* [Sprzętowa macierz RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
-* Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+* [Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](https://docs.ovh.com/pl/dedicated/hotswap-raid-soft/){.external}
+* [Sprzętowa macierz RAID (EN)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

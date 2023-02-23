@@ -6,7 +6,11 @@ section: 'RAID e dischi'
 updated: 2022-10-11
 ---
 
-**Ultimo aggiornamento: 11/10/2022**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 21/02/2023**
 
 ## Obiettivo
 
@@ -42,7 +46,7 @@ md4 : active raid1 sda4[0] sdb4[1]
 unused devices: <none>
 ```
 
-Il comando mostra due volumi RAID configurati. La partizione più grande è “md4” ed è composta dai due dischi “sda4” e “ sdb4”. [UU] indica che i dischi funzionano normalmente: in caso di disco difettoso sarebbe infatti presente una “_”.
+Il comando mostra due volumi RAID configurati. La partizione più grande è “md4” ed è composta dai due dischi “sda4” e “ sdb4”. [UU] indica che i dischi funzionano normalmente: in caso di disco difettoso sarebbe infatti presente una “`_`”.
 
 In questo modo è possibile visualizzare i volumi RAID, ma non la dimensione delle partizioni. È possibile ottenere questa informazione utilizzando un altro comando:
 
@@ -94,7 +98,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 Il comando `fdisk -l` ti permette anche di identificare il tuo tipo di partizione. È un'informazione importante da conoscere quando si tratta di ricostruire il tuo RAID in caso di guasto di un disco.
 
-Per le partizioni GPT, il comando restituisce: `Disklabel type: gpt`.
+Per le partizioni **GPT**, il comando restituisce: `Disklabel type: gpt`.
 
 ```sh
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
@@ -102,11 +106,11 @@ Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: gpt`
+'Disklabel type: gpt'
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-Per le partizioni MBR, il comando restituisce: `Disklabel type: dos`.
+Per le partizioni **MBR**, il comando restituisce: `Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
@@ -114,7 +118,7 @@ Disk model: QEMU HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: dos`              
+'Disklabel type: dos'             
 Disk identifier: 0x150f6797
 ```
 
@@ -187,7 +191,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Se sei connesso come utente root, puoi ottenere questo messaggio quando cerchi di smontare la partizione (nel nostro caso, la partizione md4 è montata in /home):
+> Se sei connesso come utente `root`, puoi ottenere questo messaggio quando cerchi di smontare la partizione (nel nostro caso, la partizione md4 è montata in /home):
 > 
 > `umount: /home: target is busy`
 >
@@ -305,7 +309,7 @@ Una volta sostituito il disco, copia la tabella delle partizioni da un disco fun
 sgdisk -R /dev/sda /dev/sdb 
 ```
 
-L'ordine deve essere nel seguente formato: `sgdisk -R /dev/novitàdisco /dev/funzionantedisco`
+L'ordine deve essere nel seguente formato: `sgdisk -R /dev/newdisk /dev/healthydisk`.
 
 Una volta effettuata questa operazione, lo step successivo consiste nel rendere aleatoria la guida del nuovo disco per evitare qualsiasi conflitto di GUID con gli altri dischi:
 
@@ -315,13 +319,15 @@ sgdisk -G /dev/sda
 
 **Per le partizioni MBR**
 
+Una volta sostituito il disco, copia la tabella delle partizioni da un disco funzionante (nell’esempio, “sdb”) in quello nuovo (“sda”) con il comando:
+
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
-L'ordine deve essere nel seguente formato: `sfdisk -d /dev/funzionantedisco | sfdisk /dev/novitàdisco`
+L'ordine deve essere nel seguente formato: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
-A questo punto è possibile ricostruire il volume RAID. Il codice seguente mostra come ricostruire la partizione`/dev/md4` tramite la tabella di “sda” copiata precedentemente: 
+A questo punto è possibile ricostruire il volume RAID. Il codice seguente mostra come ricostruire la partizione `/dev/md4` tramite la tabella di “sda” copiata precedentemente: 
 
 ```sh
 mdadm --add /dev/md4 /dev/sda4
@@ -384,7 +390,7 @@ mount /dev/md4 /home
 
 [Hot Swap – RAID Software](https://docs.ovh.com/it/dedicated/hotswap-raid-soft/){.external}
 
-[Hot Swap - RAID Hardware](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external} (in inglese)
+[Hot Swap - RAID Hardware](https://docs.ovh.com/it/dedicated/hotswap-raid-soft/){.external}
 
 [Gestire il RAID Hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (in inglese)
 
