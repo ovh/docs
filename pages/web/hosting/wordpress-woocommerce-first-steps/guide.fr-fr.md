@@ -3,14 +3,10 @@ title: "Tutoriel - Utiliser WooCommerce avec le CMS WordPress"
 slug: wordpress-woocommerce-first-steps
 excerpt: "Découvrez comment utiliser la solution WooCommerce avec le CMS WordPress"
 section: "Tutoriels"
-order: 
+order: 023
 ---
 
-<<<<<<< HEAD
-**Dernière mise à jour le 17/02/2023**
-=======
-**Dernière mise à jour le 14/02/2023**
->>>>>>> 845bfa59360ca8592e619630f91f5748accc0b8b
+**Dernière mise à jour le 23/02/2023**
 
 ## Objectif
 
@@ -165,7 +161,6 @@ Quelques liens utiles :
 - L'extension [Jetpack](https://jetpack.com/){.external}
 - Le site de [WooCommerce](https://woocommerce.com/){.external}
 - Le magasin d'[extensions WooCommerce](https://woocommerce.com/products/){.external}
-
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
