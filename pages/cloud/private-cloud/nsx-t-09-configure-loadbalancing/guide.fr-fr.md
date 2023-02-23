@@ -6,7 +6,7 @@ section: NSX-T
 order: 09
 ---
 
-**Dernière mise à jour le 20/02/2023**
+**Dernière mise à jour le 23/02/2023**
 
 > [!warning]
 > Les guides concernant NSX-T dans la solution Hosted Private Cloud Powered by VMware ne sont pas définitifs, ils seront modifiés lors de la sortie en version BETA et finalisés quand la version définitive sera prête. 
@@ -27,7 +27,7 @@ order: 09
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 - Avoir **NSX-T** déployé avec deux segment configurés dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
-- Avoir deux machines virtuelles avec le service NGINX activé sur un segment.
+- Avoir deux machines virtuelles avec le service en WEB activé en HTTP sur un segment.
 
 
 ## Présentation
@@ -39,11 +39,11 @@ NSX-T permet l'équilibrage de charge sur une couche de niveau 4 (TCP ou UDP ) o
 Nous allons :
 
 * Activer le Load Balancing sur la passerelle **ovh-T1-gw**.
-* Créer un pool de serveurs à partir de deux machines virtuelles qui utilisent serveur un WEB NGINX actif sur le port 80.
+* Créer un pool de serveurs à partir de deux machines virtuelles qui utilisent serveur un WEB en HTTP actif sur le port 80.
 * Ajouter un serveur virtuel dans la configuration du Load Balancer qui contient notre pool de serveurs.
 * Définir une règle de NAT pour faire une redirection vers le serveur virtuel.
 
-### Création du marqueur (tag) sur les deux machines virtuelles NGINX.
+### Création du marqueur (tag) sur les deux machines virtuelles.
 
 Pour simplifier l'administration du Load Balancer nous allons utiliser un marqueur (tag) sur les deux machines virtuelles du futur pool de serveurs.
 

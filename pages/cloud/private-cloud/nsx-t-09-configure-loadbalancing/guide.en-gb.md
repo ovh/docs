@@ -6,7 +6,7 @@ section: NSX-T
 order: 09
 ---
 
-**Last updated 07th February 2023**
+**Last updated 23th February 2023**
 
 > [!warning]
 > Guides for **NSX-T** in the VMware solution are not final, they will be modified when the BETA version is released and finalised when the final version is ready.
@@ -40,11 +40,11 @@ NSX-T allows load balancing on a layer of level 4 (TCP or UDP) or level 7 (HTTP 
 We will :
 
 * Enable Load Balancing on the gateway **ovh-T1-gw**.
-* Create a server pool from two virtual machines that use a NGINX web server running on port 80.
+* Create a server pool from two virtual machines that use a web server running on port 80.
 * Add a virtual server in the Load Balancer configuration, which contains our server pool.
 * Set a NAT rule to redirect to the virtual server.
 
-### Creating the tag on both NGINX virtual machines.
+### Creating the tag on both virtual machines.
 
 To simplify the administration of the Load Balancer, we will use a tag on the two virtual machines in the future server pool.
 
