@@ -36,6 +36,8 @@ OVHcloud vous fournit NSX-T avec deux passerelles, une passerelle de type nord-s
 > [!warning]
 > Au travers de votre interface NSX-T il vous est possible de créer des passerelles de type nord-sud, ne le faites pas car certaines options ne sont pas disponibles et vous ne pourrez pas la faire fonctionner correctement. 
 
+Pour plus d'informations sur NSX-T chez OVHcloud reportez-vous à ce guide [Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/).
+
 ## En pratique
 
 Nous allons ajouter une nouvelle passerelle de type est-ouest (Tier-1-Gateways) et la relier à la passerelle nord-sud fournie par OVHcloud (ovh-T0-gw).

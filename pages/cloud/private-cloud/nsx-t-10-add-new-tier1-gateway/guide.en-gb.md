@@ -35,6 +35,8 @@ OVHcloud provides you with NSX-T with two gateways, a north-south gateway (ovh-T
 > [!warning]
 > Through your NSX-T interface, you can create North-South gateways. Do not do this because some options are not available and you will not be able to make it work correctly.
 
+For more information on NSX-T at OVHcloud, please refer to this guide [Getting started with NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/).
+
 ## Instructions
 
 We will add a new East-West gateway (Tier-1-Gateways) and link it to the North-South gateway provided by OVHcloud (ovh-T0-gw).
