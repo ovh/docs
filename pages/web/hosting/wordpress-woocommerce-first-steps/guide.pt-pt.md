@@ -133,7 +133,7 @@ Se ativou as extensões predefinidas oferecidas gratuitamente durante a instala�
 - **Opções de entrega**: serve para configurar a aplicação em tudo o que diz respeito às despesas de expedição.
 - **Classes de expedição**: podem ser utilizadas para agrupar produtos similares por tipo de remessa.
 
-#### pagamentos
+#### Pagamentos
 
 Este separador serve para ativar/desativar os métodos de pagamento propostos no seu website. Recorra à [documentação oficial](https://woocommerce.com/document/payments/) para configurar o(s) seu(s) método(s) de pagamento.
 
@@ -141,7 +141,7 @@ Este separador serve para ativar/desativar os métodos de pagamento propostos no
 
 Esta rubrica reúne todas as funcionalidades relativas à gestão das contas e dos dados pessoais.
 
-#### e-mails
+#### E-mails
 
 Permite configurar os *e-mails tipo* enviados pela aplicação (inscrição, comandos, anulações de encomenda, etc.).
 
