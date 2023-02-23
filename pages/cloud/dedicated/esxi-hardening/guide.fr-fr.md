@@ -123,7 +123,7 @@ La règle 2 (Priority 1) bloque tout le reste.
 
 Cliquez sur le menu `Host`{.action} et accédez à la section `Manage`{.action}, puis cliquez sur `Services`{.action}.  
 
-Trouvez dans la liste le service `TSM-SSH` et faites un clic droit sur la ligne associée {.action}.  
+Trouvez dans la liste le service `TSM-SSH` et faites un clic droit sur la ligne associée{.action}.  
 
 Modifiez la `Policy` comme sur l'exemple présenté et choisissez l'option `Start an stop manually`{.action} afin d'éviter que le service ne soit actif au démarrage du serveur.  
 
