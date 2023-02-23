@@ -8,7 +8,7 @@ section: 'Zasoby techniczne'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 15-02-2023**
+**Ostatnia aktualizacja z dnia 23-02-2023**
 
 ## Wprowadzenie
 
@@ -28,7 +28,6 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
 |PostgreSQL 12|Do określenia|Do określenia|Do określenia|
-|Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|Do określenia|Do określenia|Do określenia|
 
 ## Sprawdź również

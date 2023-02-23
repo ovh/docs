@@ -8,7 +8,7 @@ section: 'Recursos técnicos'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 15/02/2023**
+**Última atualização: 23/02/2023**
 
 ## Objetivo
 
@@ -28,7 +28,6 @@ Para mais informações, consulte a [política de fim de vida das bases de dados
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
 |PostgreSQL 12|A definir|A definir|A definir|
-|Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|A definir|A definir|A definir|
 
 ## Quer saber mais?
