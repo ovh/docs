@@ -197,50 +197,49 @@ Le service `sshServer` :
 Ce service correspond aux accès en SSH sur le port 22.  
 
 Exemple avec le service vSphereClient :  
-
 ```bash
 esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
-
+<br>
 Assurez-vous que la règle de pare-feu soit active :  
-
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --enabled true
 ```
-
+<br>
 Affichez la liste des IP autorisées pour cette règle :  
-
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
+<br>
 Résultat :  
 ```bash
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  All
 ```
-
+<br>
 Changer le statut du tag en le désactivant :  
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
-
+<br>
 Autorisez exclusivement l'adresse IP légitime 192.168.1.10 :  
 ```bash
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
-
+<br>
 Vérifiez la présence de l'adresse dans la liste d'accès :  
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
+<br>
 Résultat :  
 ```bash
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  192.168.1.10
 ```
-
+<br>
 
 ## Aller plus loin
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
