@@ -387,7 +387,7 @@ ifup eth0:0
 
 #### Für AlmaLinux und Rocky Linux
 
-Sie müssen Ihre Schnittstelle neu starten :
+Starten Sie das Interface neu:
 
 ```sh
 systemctl restart NetworkManager
@@ -474,7 +474,7 @@ LABEL_1=ens32:0
 
 #### Schritt 1: Zugang zum WHM IP Verwaltungsbereich
 
-Klicken Sie im WHM-Kundencenter auf `IP Funtions`{.action} und wählen Sie im linken Menü `Add a New IP Address`{.action} aus.
+Klicken Sie im WHM-Kundencenter auf `IP functions`{.action} und wählen Sie im Menü links `Add a New IP Address`{.action} aus.
 
 ![Eine neue IP-Adresse hinzufügen](images/Cpanel-1.png){.thumbnail}
 
@@ -488,12 +488,12 @@ Klicken Sie auf `255.255.255.255` als Subnetzmaske und dann auf `Submit`{.action
 
 > [!warning]
 >
-> Achtung: Wenn Sie mehrere IP-Adressen auf einem einzigen Block konfigurieren müssen und alle gleichzeitig hinzufügen, wird Ihnen das WHM System die Verwendung der Subnetzmaske `255.255.255.0` aufzwingen. Die Verwendung dieser Konfiguration wird nicht empfohlen. Um die entsprechende Subnetzmaske `255.255.255.255` verwenden zu können, müssen die IP-Adressen einzeln hinzugefügt werden.
+> Achtung: Wenn Sie mehrere IP-Adressen in einem einzigen Block konfigurieren müssen und alle gleichzeitig hinzufügen, wird Ihnen das WHM-System die Verwendung der Subnetzmaske `255.255.255.0` aufzwingen. Die Verwendung dieser Konfiguration wird nicht empfohlen. Um die entsprechende Subnetzmaske `255.255.255.255` verwenden zu können, fügen Sie die IP-Adressen stattdessen einzeln hinzu.
 >
 
 #### Schritt 3: Aktuelle IP-Konfiguration überprüfen
 
-Zurück im Abschnitt `IP functions`{.action} klicken Sie auf `Show or Delete Current IP Addresses`{.action}, um zu überprüfen, ob die Additional IP Address korrekt hinzugefügt wurde.
+Zurück im Abschnitt `IP functions`{.action} klicken Sie auf `Show or Delete Current IP Addresses`{.action}, um zu überprüfen, ob die Additional IP korrekt hinzugefügt wurde.
 
 ![check konfiguration IP](images/Cpanel-3.png){.thumbnail}
 
