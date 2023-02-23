@@ -1,7 +1,7 @@
 ---
 title: AI Training - Facturation et cycle de vie (EN)
 slug: training/billing
-excerpt: Découvrez comment nous facturons AI Training
+excerpt: Découvrez comment sont facturés les jobs AI Training
 section: AI Training - Guides
 order: 8
 routes:
