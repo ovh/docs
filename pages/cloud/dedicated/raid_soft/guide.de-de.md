@@ -1,27 +1,29 @@
 ---
 title: Software-RAID
 slug: soft-raid
-excerpt: 'Erfahren Sie hier, wie Sie das RAID Array Ihres Servers im Fall von Störungen oder Festplattenschaden rekonfigurieren'
+excerpt: 'Erfahren Sie hier, wie Sie das RAID Array Ihres Servers rekonfigurieren'
 section: 'RAID & Festplatten'
 updated: 2022-10-11
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
+>
 
 **Letzte Aktualisierung am 21.02.2023**
 
 ## Ziel
 
-Das RAID (Redundant Array of Independent Disks) ist ein System, das Datenverlust auf Servern entgegenwirkt, indem es diese Daten auf mehreren Festplatten speichert.
+RAID (Redundant Array of Independent Disks) ist ein System, das Datenverlust auf Servern entgegenwirkt, indem es diese Daten auf mehreren Disks speichert.
 
-Das RAID-Level für OVHcloud Server-Installationen ist standardmäßig RAID-1, was den von Ihren Daten verbrauchten Speicherplatz verdoppelt und somit den nutzbaren Festplattenplatz halbiert.
+Das RAID Level für OVHcloud Server-Installationen ist standardmäßig RAID-1, was den von Ihren Daten verbrauchten Speicherplatz verdoppelt und somit den nutzbaren Platz halbiert.
 
-**Diese Anleitung erklärt, wie Sie das RAID Array Ihres Servers konfigurieren, falls dieses aufgrund von Störungen oder Festplattenschaden neu eingerichtet werden muss.**
+**Diese Anleitung erklärt, wie Sie das RAID Array Ihres Servers konfigurieren, falls dieses aufgrund von Störungen oder Beschädigung neu eingerichtet werden muss.**
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [dedizierten Server](https://www.ovhcloud.com/de/bare-metal/){.external} mit Software-RAID-Konfiguration.
-- Sie haben als Administrator (Root) via SSH Zugriff auf Ihren Server.
-
-## Beschreibung
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) mit Software-RAID-Konfiguration.
+- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH.
 
 ## In der praktischen Anwendung
 
@@ -42,9 +44,9 @@ md4 : active raid1 sda4[0] sdb4[1]
 unused devices: <none>
 ```
 
-Dieser Befehl zeigt, dass aktuell zwei Matrix-RAIDs eingerichtet sind, wobei “md2” die größere Partition ist. Eine Partition besteht aus den drei Festplatten “sda2”, “sdb2” und “sdc2”. [UU] zeigt an, dass alle Festplatten normal funktionieren. Ein “_” würde bedeuten, dass eine Festplatte defekt ist.
+Dieser Befehl zeigt, dass aktuell zwei RAID Arrays eingerichtet sind, wobei "md4" die größte Partition ist. Diese Partition besteht aus zwei Disks: “sda4” und “sdb4”. `[UU]` zeigt an, dass alle Disks normal funktionieren. Ein “`_`” an dieser Stelle bedeutet, dass eine Disk defekt ist.
 
-Dieser Befehl zeigt zwar die RAID-Festplatten an, jedoch nicht die Größe der Partitionen selbst. Diese Information erhalten Sie mit folgendem Befehl:
+Dieser Befehl zeigt zwar die RAID Disks an, jedoch nicht die Größe der Partitionen selbst. Diese Information erhalten Sie mit folgendem Befehl:
 
 ```sh
 fdisk -l
@@ -92,9 +94,9 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 ```
 
-Mit dem `fdisk -l` Befehl können Sie auch Ihren Partitionstyp identifizieren. Dies ist eine wichtige Information, die Sie bei der Rekonstruktion Ihres RAID im Falle eines Festplattenausfalls beachten müssen.
+Mit dem Befehl `fdisk -l` können Sie auch Ihren Partitionstyp identifizieren. Dies ist eine wichtige Information, die Sie bei der Rekonstruktion Ihres RAID im Falle eines Ausfalls beachten müssen.
 
-Für die GPT Partitionen wird der Befehl zurückgegeben: `Disklabel type: gpt`.
+Für **GPT** Partitionen wird zurückgegeben: `Disklabel type: gpt`.
 
 ```sh
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
@@ -102,11 +104,11 @@ Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: gpt`
+'Disklabel type: gpt'
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-Für die MBR Partitionen wird der Befehl zurückgegeben: `Disklabel type: dos`.
+Für **MBR** Partitionen wird zurückgegeben: `Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
@@ -114,15 +116,15 @@ Disk model: QEMU HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: dos`              
+'Disklabel type: dos'              
 Disk identifier: 0x150f6797
 ```
 
 
-Der Befehl zeigt, das `/dev/md2` 888,8 GB und `/dev/md4` 973,5 GB enthält. Durch den Befehl “mount” erhalten Sie das Layout der Festplatte.
+Die Ausgabe zeigt, das `/dev/md2` 888,8 GB und `/dev/md4` 973,5 GB enthält. Über den Befehl “mount” erhalten Sie das Layout der Disk.
 
 ```sh
-# mount
+mount
 
 sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
 proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
@@ -156,7 +158,7 @@ systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=45,pgrp=1,time
 tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3266552k,mode=700,uid=1000,gid=1000)
 ```
 
-Alternativ kann der Befehl `lsblk` eine andere Ansicht zu den Partitionen bieten:
+Alternativ kann mit dem Befehl `lsblk` eine andere Ansicht zu den Partitionen angezeigt werden:
 
 ```sh
 lsblk
@@ -179,22 +181,22 @@ sdb       8:16   0   1.8T  0 disk
   └─md4   9:4    0 973.5G  0 raid1 /home
 ```
 
-Die Festplatten sind aktuell standardmäßig gemountet. Um eine Festplatte aus dem RAID zu entfernen, muss diese zuerst ausgehängt und dann ein Fehler simuliert werden, um sie endgültig zu entfernen. Um `/dev/sda4` aus dem RAID zu entfernen, folgen Sie den nachstehenden Schritten und verwenden Sie zunächst folgenden Befehl:
+Die Disks sind aktuell standardmäßig gemountet. Um eine Disk aus dem RAID zu entfernen, muss diese zuerst ausgehängt und dann ein Fehler simuliert werden, um sie endgültig zu entfernen. Um `/dev/sda4` aus dem RAID zu entfernen, folgen Sie den nachstehenden Schritten und verwenden Sie zunächst folgenden Befehl:
 
 ```sh
 umount /dev/md4
 ```
 
 > [!warning]
-> Bitte beachten Sie, dass Sie, wenn Sie als Root-Benutzer eingeloggt sind, folgende Nachricht erhalten können, wenn Sie versuchen, die Partition zu demontieren (in unserem Fall wird unsere md4 Partition in /home gemountet):
+> Beachten Sie, dass, falls Sie mit dem Account `root` eingeloggt sind, folgende Nachricht erhalten können, wenn Sie versuchen, die Partition zu unmounten (in unserem Fall wird die Partition md4 in /home gemountet):
 > 
 > `umount: /home target is busy`
 >
-> In diesem Fall müssen Sie sich als Root-Benutzer abmelden und sich als lokaler Benutzer anmelden (in diesem Fall `debian`) und folgenden Befehl verwenden:
+> Wechseln Sie in diesem Fall zu einem anderen Root-Benutzer (in diesem Fall `debian`) und verwenden Sie folgenden Befehl:
 > 
 > `debian@ns000000:/$ sudo umount /dev/md4`
 >
-> Wenn Sie keinen lokalen Benutzer haben, erstellen Sie einen.
+> Wenn Sie noch keine anderen User-Accounts haben, erstellen Sie einen.
 
 
 Als Ergebnis erhalten Sie:
@@ -231,7 +233,7 @@ systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=45,pgrp=1,time
 tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=3266552k,mode=700,uid=1000,gid=1000)
 ```
 
-`/dev/md4` ist nicht länger gemountet. Das RAID ist jedoch noch aktiv. Daher ist es notwendig, einen Fehler zu simulieren, um die Festplatte zu entfernen. Dies geschieht über folgenden Befehl:
+`/dev/md4` ist nicht länger gemountet. Das RAID ist jedoch noch aktiv. Daher ist es notwendig, einen Fehler zu simulieren, um die Disk zu entfernen. Dies geschieht über folgenden Befehl:
 
 ```sh
 sudo mdadm --fail /dev/md4 /dev/sda4
@@ -260,7 +262,7 @@ md4: active raid1 sdb4[1]
 unused devices: <none>
 ```
 
-Der nachfolgende Befehl bestätigt, dass die Partition entfernt wurde.
+Die Ausgabe des nachfolgenden Befehls bestätigt, dass die Partition entfernt wurde.
 
 ```sh
 mdadm --detail /dev/md4
@@ -297,17 +299,17 @@ Consistency Policy : bitmap
 
 ### RAID neu einrichten
 
-Wenn die Festplatte ersetzt wurde, kopieren Sie die Partitionstabelle einer funktionsfähigen Festplatte (in unserem Beispiel “sdb”) mit folgendem Befehl in die neue (“sda”): 
+Wenn die Disk ersetzt wurde, kopieren Sie die Partitionstabelle einer funktionsfähigen Disk (in unserem Beispiel “sdb”) zur neuen Disk (“sda”): 
 
-**Für die GPT Partitionen**
+**Für GPT Partitionen**
 
 ```sh
 sgdisk -R /dev/sda /dev/sdb 
 ```
 
-Die Bestellung muss im folgenden Format erfolgen: `sgdisk -R /dev/neuedisk /dev/gesundedisk`.
+Der Befehl muss im folgenden Format sein: `sgdisk -R /dev/newdisk /dev/healthydisk`.
 
-Nach diesem Vorgang wird der nächste Schritt darin bestehen, die GUID für die neue Festplatte zu beliebig zu machen, um Konflikte zwischen GUID und anderen Festplatten zu vermeiden:
+Nach diesem Vorgang ist der nächste Schritt, die GUID für die neue Disk zu randomisieren, um Konflikte mit anderen Disks zu vermeiden:
 
 ```sh
 sgdisk -G /dev/sda
@@ -319,9 +321,9 @@ sgdisk -G /dev/sda
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
 
-Die Bestellung muss im folgenden Format erfolgen: `sfdisk -d dev/gesundedisk | sfdisk /dev/neuedisk`
+Der Befehl muss im folgenden Format sein: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`
 
-Jetzt können Sie das Matrix-RAID erneut einrichten. Der nachstehende Ausschnitt des Codes zeigt, wie das Layout der Partition `/dev/m42` mit der zuvor kopierten Partitionstabelle von “sda” wiederhergestellt werden kann: 
+Jetzt können Sie das RAID Array neu konfigurieren. Der nachstehende Code zeigt, wie das Layout der Partition `/dev/md4` mit der zuvor kopierten Partitionstabelle von “sda” wiederhergestellt werden kann: 
 
 ``sh
 mdadm --add /dev/md4 /dev/sda4
@@ -373,7 +375,7 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-Das RAID wurde neu eingerichtet. Mounten Sie die Partition (in unserem Beispiel `/dev/md4`) mit folgendem Befehl: 
+Das RAID wurde neu eingerichtet. Mounten Sie die Partition (in diesem Beispiel `/dev/md4`) mit folgendem Befehl: 
 
 ```sh
 mount /dev/md4 /home
