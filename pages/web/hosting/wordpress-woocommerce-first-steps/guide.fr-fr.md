@@ -26,7 +26,7 @@ Découvrez comment créer une boutique en ligne avec l'extension open source **W
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/).
 - Avoir préalablement [installé WordPress](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) sur votre hébergement web.
 
-Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HTTPS avant de poursuivre ce tutoriel à l'aide du guide « [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/) ».
+Si ce n'est pas déjà le cas, nous vous recommandons de passer votre site en HTTPS avant de poursuivre ce tutoriel à l'aide du guide « [Passer son site internet en HTTPS grâce au SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/) ».
 
 ## En pratique
 
