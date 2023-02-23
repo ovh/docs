@@ -289,7 +289,7 @@ if (empty($errors)) { // If the $errors array is empty
 
 ### Le fichier JavaScript
 
-Ce fichier permet d'envoyer le contenu du formulaire en AJAX au script PHP.
+Ce fichier permet d'envoyer le contenu du formulaire en AJAX au script PHP et utilise la librairie jQuery.
 
 ```javascript
 $(document).ready(function() {
@@ -314,6 +314,42 @@ $(document).ready(function() {
     });
 });
 ```
+
+Vous pouvez remplacer ce code par le suivant qui ne fait pas appel à jQuery :
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('#sendMessageForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var formData = new FormData(this);
+
+    fetch('scripts/sendMail.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(function(response) {
+      if (response.ok) {
+        return response.text();
+      } else {
+        throw new Error('Error sending message!');
+      }
+    })
+    .then(function(result) {
+      if (result == 'success') {
+        document.querySelector('.output').style.display = 'block';
+        document.querySelector('.output').textContent = 'Message sent!';
+      } else {
+        throw new Error('Error sending message!');
+      }
+    })
+    .catch(function(error) {
+      console.error(error);
+      document.querySelector('.output').textContent = error.message;
+    });
+  });
+});
+```
+
 
 ## Aller plus loin <a name="go-further"></a>
 
