@@ -10,7 +10,7 @@ updated: 2022-12-20
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/12/2022**
+**Ultimo aggiornamento: 23/02/2023**
 
 > [!primary]
 >
@@ -36,6 +36,10 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 >
 > Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
 >
+> Questa guida non si applica ai server di gamma [Scale](https://www.ovhcloud.com/it/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/it/bare-metal/high-grade/).
+>
+> Accedi alla [pagina di configurazione dedicata](https://docs.ovh.com/it/dedicated/proxmox-network-hg-scale/).
+
 
 ## Procedura
 
