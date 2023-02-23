@@ -192,54 +192,72 @@ Explications sur les modification/ajustement de règle d'accès :
   
 Le service `vSphereClient` :  
 Ce service correspond à l'interface WEB d'administration sur le port 443 (HTTPS).  
+<br/>
+<br/>
 
 Le service `sshServer` :  
 Ce service correspond aux accès en SSH sur le port 22.  
+<br/>
+<br/>
 
 Exemple avec le service vSphereClient :  
 ```bash
 esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
-<br>
+<br/>
+<br/>
+
 Assurez-vous que la règle de pare-feu soit active :  
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --enabled true
 ```
-<br>
+<br/>
+<br/>
+
 Affichez la liste des IP autorisées pour cette règle :  
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
-<br>
+<br/>
+<br/>
+
 Résultat :  
 ```bash
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  All
 ```
-<br>
+<br/>
+<br/>
+
 Changer le statut du tag en le désactivant :  
 ```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
-<br>
+<br/>
+<br/>
+
 Autorisez exclusivement l'adresse IP légitime 192.168.1.10 :  
 ```bash
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
-<br>
+<br/>
+<br/>
+
 Vérifiez la présence de l'adresse dans la liste d'accès :  
 ```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
-<br>
+<br/>
+<br/>
+
 Résultat :  
 ```bash
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  192.168.1.10
 ```
-<br>
+
 
 ## Aller plus loin
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
