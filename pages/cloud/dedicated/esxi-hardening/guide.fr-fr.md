@@ -221,21 +221,21 @@ vSphereClient  All
 ```
 
 Changer le statut du tag en le désactivant :  
-```
+```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
 
 Autorisez exclusivement l'adresse IP légitime 192.168.1.10 :  
-```
+```bash
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
 
 Vérifiez la présence de l'adresse dans la liste d'accès :  
-```
+```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
 Résultat :  
-```
+```bash
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  192.168.1.10
