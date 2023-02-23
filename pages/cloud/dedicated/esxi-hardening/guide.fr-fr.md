@@ -192,8 +192,6 @@ Explications sur les modification/ajustement de règle d'accès :
   
 Le service `vSphereClient` :  
 Ce service correspond à l'interface WEB d'administration sur le port 443 (HTTPS).  
-<br/>
-<br/>
 
 Le service `sshServer` :  
 Ce service correspond aux accès en SSH sur le port 22.  
