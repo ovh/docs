@@ -10,7 +10,7 @@ updated: 2022-12-20
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/12/2022**
+**Última atualização: 23/02/2023**
 
 > [!primary]
 >
@@ -35,6 +35,11 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
 >
 > Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+>
+> O presente guia não é aplicável aos servidores das gamas [Scale](https://www.ovhcloud.com/pt/bare-metal/scale/) e [High Grade](https://www.ovhcloud.com/pt/bare-metal/high-grade/).
+>
+> Aceda a [página de configuração dedicada](https://docs.ovh.com/pt/dedicated/proxmox-network-hg-scale/).
+
 
 ## Instruções
 
