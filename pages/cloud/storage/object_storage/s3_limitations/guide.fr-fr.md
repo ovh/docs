@@ -4,10 +4,10 @@ slug: s3/limitations
 excerpt: "Retrouvez ici les limites techniques de l'offre S3 Object Storage"
 section: Informations générales
 order: 025
-updated: 2022-03-31
+updated: 2023-02-23
 ---
 
-**Dernière mise à jour le 31/03/2022**
+**Dernière mise à jour le 23/02/2023**
 
 ## Objectif
 
@@ -38,6 +38,18 @@ Illimité
 ### Nombre maximum de comptes utilisateurs par projet
 
 1000
+
+#### Attribution de noms
+
+- Doit comporter entre 3 et 63 caractères.
+- Doit commencer et se terminer par des caractères alphanumériques minuscules (de a à z et de 0 à 9).
+- Peut comporter les signes de ponctuation suivants : « . » et « - ».
+- Ne peut comporter plusieurs signes de ponctuation à la suite (« .. » ou « -. » ou « .- » ou « -- »).
+- Ne peut ressembler à une adresse IP (192.168.1.1).
+
+> [!warning]
+> Un conteneur pouvant être rendu public via une URL, le nom du conteneur doit être unique, ne se limitant pas à votre projet Public Cloud.
+
 
 ## Aller plus loin
 
