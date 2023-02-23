@@ -92,7 +92,7 @@ Wenn Sie eine andere VLAN ID verwenden möchten:
 - Das mit der Public Cloud Instanz verbundene private Netzwerk muss mit dieser ID "getagt" werden.
 - In der Netzwerkkonfigurationsdatei des Dedicated Servers muss die private Netzwerkschnittstelle mit dieser ID "getagt" werden.
 
-Setzen Sie in diesem Fall einen Haken bei `Ein VLAN definieren` und wählen Sie eine Nummer zwischen 2 und 4000.
+Setzen Sie in diesem Fall einen Haken bei `VLAN-ID festlegen` und wählen Sie eine Nummer zwischen 2 und 4000.
 
 Wenn Sie dieses Feld nicht anhaken, erhält das System eine zufällige VLAN ID.
 

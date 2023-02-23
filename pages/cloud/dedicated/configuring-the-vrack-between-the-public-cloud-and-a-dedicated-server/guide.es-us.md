@@ -94,7 +94,7 @@ Si decide utilizar un VLAN ID diferente:
 - La red privada asociada a la instancia de Public Cloud debe estar « etiquetada » con este ID.
 - En el archivo de configuración de red del servidor dedicado, la interfaz de red privada debe estar « etiquetada » con este ID.
 
-En ese caso, si marca la casilla `Establecer un VLAN`, deberá elegir un número de VLAN de 2 a 4000.
+En ese caso, si marca la casilla `Indicar un ID de VLAN`, deberá elegir un número de VLAN de 2 a 4000.
 
 Si no marca esta casilla, el sistema asignará un número de VLAN aleatorio.
 

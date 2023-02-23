@@ -95,7 +95,7 @@ Jeśli zdecydujesz się korzystać z innego VLAN ID:
 - Sieć prywatna połączona z instancją Public Cloud musi być « oznaczona » tym VLAN ID.
 - W pliku konfiguracyjnym sieci na serwerze dedykowanym, interfejs sieci prywatnej powinien być « oznaczony » tym VLAN ID.
 
-W tym przypadku, jeśli zaznaczysz kratkę "Ustaw identyfikator sieci VLAN", musisz wybrać numer VLAN ID z przedziału od 2 do 4 000.
+W tym przypadku, jeśli zaznaczysz kratkę `Wybierz ID sieci VLAN`, musisz wybrać numer VLAN ID z przedziału od 2 do 4 000.
 
 W przeciwnym razie system przypisze do Twojej sieci prywatnej losowy numer identyfikacyjny sieci VLAN.
 
