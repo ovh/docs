@@ -39,7 +39,7 @@ Illimité
 
 1000
 
-#### Attribution de noms
+### Attribution de noms
 
 - Doit comporter entre 3 et 63 caractères.
 - Doit commencer et se terminer par des caractères alphanumériques minuscules (de a à z et de 0 à 9).
