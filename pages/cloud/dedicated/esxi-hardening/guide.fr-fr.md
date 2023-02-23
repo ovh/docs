@@ -113,7 +113,7 @@ La règle 2 (Priority 1) bloque tout le reste.
 > [!warning]
 > 
 > La désactivation des services **ssh** et **slp** est fortement conseillée.  
-> Si malgré tout, vous continuez à utilsier le service ssh, restreignez au maximum son uilisation et ses accès.  
+> Si malgré tout, vous continuez à utiliser le service ssh, restreignez au maximum son uilisation et ses accès.  
 > Ceci est valable également pour les accès au **shell**.  
 > Ne prévilégiez que le strict nécessaire pour chacun de vos besoins.  
 
