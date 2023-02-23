@@ -388,10 +388,10 @@ mount /dev/md4 /home
 
 ## Quer saber mais?
 
-[Hot Swap – RAID por hardware](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
+[Hot Swap – RAID por hardware (EN)](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
 
-[Hot Swap – RAID por software](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
+[Substituir um disco a quente num servidor com RAID por software](https://docs.ovh.com/pt/dedicated/hotswap-raid-software/){.external}
 
-[RAID por hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+[RAID por hardware (EN)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
