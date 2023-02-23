@@ -4,10 +4,10 @@ slug: deploy/tuto-flask-hugging-face-sentiment-analysis
 excerpt: How to deploy an app to analyse text sentiment with Hugging Face and Flask
 section: AI Deploy - Tutorials
 order: 06
-updated: 2023-01-31
+updated: 2023-02-24
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 24th February, 2023.**
 
 > [!primary]
 >
@@ -66,7 +66,7 @@ Load Hugging Face models:
 
 ```python
 # create a python dictionary for your models d = {<key>: <value>, <key>: <value>, ..., <key>: <value>}
-dictOfModels = {"RoBERTa" : transformers.pipeline("sentiment-analysis", model="siebert/sentiment-roberta-large-english"), "BERT" : transformers.pipeline('sentiment-analysis', model="nlptown/bert-base-multilingual-uncased-sentiment")}
+dictOfModels = {"BERT" : transformers.pipeline('sentiment-analysis', model="nlptown/bert-base-multilingual-uncased-sentiment")}
 # create a list of keys to use them in the select part of the html code
 listOfKeys = []
 for key in dictOfModels :
@@ -117,7 +117,7 @@ if __name__ == '__main__':
 The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ```console
-Flask==1.1.2
+Flask==2.1.0
 
 transformers==4.4.2
 
