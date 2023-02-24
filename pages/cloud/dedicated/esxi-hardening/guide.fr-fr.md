@@ -241,5 +241,42 @@ vSphereClient  192.168.1.10
 ```
 
 
+Toujours si vous souhaitez utiliser le service SSH, nous vous présentons cette fois comment autoriser/ajouter des accès par clé. 
+
+Générez une clé, l'algorythme ECDSA sur 521 bits est à prévilégier pour un maximum de protection :
+```bash
+ssh-keygen -t ecdsa -b 521 -C "key-ecdsa-esxi-host"  -f /path-to-my-key/key-ecdsa
+```
+Le système de verrou fonctionne avec une paire de clé : une publique et une autre privée.
+
+> [!warning]
+> Ne communiquez en aucun cas votre clé privée.
+>
+
+Seule la clé publique devra être communiquée ou envoyée vers les machines vers lesquels vous souhaitez vous connecter.
+```bash
+Generating public/private ecdsa key pair.
+Enter file in which to save the key (/path-to-my-key/key-ecdsa_rsa):
+```
+Renseignez un mot de passe robuste :
+```bash
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /path-to-my-key/key-ecdsa.
+Your public key has been saved in /path-to-my-key/key-ecdsa.pub.
+The key fingerprint is:
+SHA256:******************************************* key-ecdsa-esxi-host
+```
+Transférez la clé publique vers votre hôte ESXi pour qu'elle puisse être déclarée comme étant de confiance :
+```bash
+cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> ~/.ssh/authorized_keys'
+```
+
+
+
 ## Aller plus loin
+
+Encore plus de détails sur les bonnes pratiques de sécurité avec ce [guide](https://core.vmware.com/security-configuration-guide) présenté par WMware.
+
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
