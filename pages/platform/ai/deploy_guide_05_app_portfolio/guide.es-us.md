@@ -39,10 +39,17 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
 | OVHcloud | Sentiment analysis | Analyse text sentiment with Hugging Face models and Flask | [AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask](https://docs.ovh.com/us/es/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/) | [Dockerfile - Sentiment analysis Hugging Face app](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/sentiment-analysis-hugging-face-app/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | **Web interface** - access to the app with the url |
 | OVHcloud | Speech-to-Text | Use Speech-to-Text powers on audio and video | [AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit](https://docs.ovh.com/us/es/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/) | [Dockerfile - Speech-to-Text Streamlit app](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/speech-to-text/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text` | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text` | **Web interface** - access to the app with the url |
 
-If you want to launch these apps from the OVHcloud control panel:
+If you want to launch these apps from the OVHcloud control panel, fill in the name of the docker image in **Step 2 - Application to deploy**.
 
-1. fill in the name of the docker image in **Step 2 - Application to deploy**
-2. set the HTTP port in **Step 5 - Configure your app**
+> [!primary]
+>
+> Each of the following apps launches on port `8080`. You don't need to enter it in the launch command.
+>
+
+> [!primary]
+>
+> By default, an app is launched with `1 GPU`. However, you can customize the resources you wish to use.
+>
 
 ## Build you own apps and models to deploy
 
