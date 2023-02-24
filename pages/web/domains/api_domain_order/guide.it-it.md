@@ -9,7 +9,7 @@ routes:
 updated: 2022-05-05
 ---
 
-**Last updated 5th May 2022**
+**Last updated 24th Feb 2023**
 
 <!-- Reminder to put at the beginning of each page -->
 
@@ -109,9 +109,10 @@ The second step consists in fetching available offers for a domain name.
 >
 > @api {GET} /order/cart/{cartId}/domain
 
-| Parameter | Required | Default | Description         |
-| --------- | -------- | ------- | ------------------- |
-| domain    | yes      | ""      | Desired domain name |
+| Parameter | Required | Default | Description                           |
+| --------- | -------- | ------- | ------------------------------------- |
+| cartId    | yes      | ""      | cartId received from the last command |
+| domain    | yes      | ""      | Desired domain name                   |
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -224,9 +225,9 @@ The following call allows to add the desired domain to the cart:
 | `domain`      | yes      | The desired domain name                                                                                 |
 | `duration`    | no       | Duration of the order. Values higher than P1Y may be used on some extensions, but can never exceed P10Y |
 | `offerId`     | no       | Available offer for the domain. Only one value is allowed, see step above to fetch it (deprecated)      |
-| `quantity`    | no       | Only value "1" is allowed                                                                               |
 | `planCode`    | no       | Represents the order plan for the domain                                                                |
 | `pricingMode` | no       | Represents the offer related to the domain plan                                                         |
+| `quantity`    | no       | Only value "1" is allowed                                                                               |
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -668,8 +669,8 @@ This call also validates the configurations, like owner eligibility for a domain
 
 | Parameter                           | Required | Default | Description                                                                            |
 | ----------------------------------- | -------- | ------- | -------------------------------------------------------------------------------------- |
-| `autoPayWithPreferredPaymentMethod` | yes      | ""      | Used to automatically pay the purchase order with de default payment method of the nic |
-| `waiveRetractationPeriod`           | yes      | ""      | Required for a domain name, it is used to waive your right to retract                  |
+| `autoPayWithPreferredPaymentMethod` | no      | ""      | Used to automatically pay the purchase order with de default payment method of the nic |
+| `waiveRetractationPeriod`           | no      | ""      | Required for a domain name, it is used to waive your right to retract                  |
 
 ## Pay Purchase Order
 
