@@ -9,13 +9,18 @@ updated: 2023-02-06
 
 <style>
 #content table,
-.ovh-documentation table {margin-bottom:10px;overflow:unset !important;}
+.ovh-documentation table {margin-bottom:25px;overflow:unset !important;}
 
 #content tbody,
 .ovh-documentation tbody {display: inline-table !important;width:100% !important;}
 
 #content thead,
 .ovh-documentation thead {display:none}
+
+#content tr:nth-child(2n),
+.ovh-documentation tr:nth-child(2n) {
+  background-color: none !important;
+}
 
 #content td:first-child,
 .ovh-documentation td:first-child {
