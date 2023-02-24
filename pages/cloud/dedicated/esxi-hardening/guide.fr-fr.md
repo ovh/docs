@@ -90,6 +90,11 @@ Cliquez sur le menu `Host`{.action} et accéder à la section `Monitor`{.action}
 
 ### Solution Network Firewall
 
+> [!primary]
+>
+> Pour rappel, Le Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions de ce réseau interne.
+>
+
 Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/).  
 Cette solution vous permettra de gérer facilement les accès légitimes en complément de ceux que vous aurez mis en place à travers votre système ESXi.  
 
