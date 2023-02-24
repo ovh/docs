@@ -19,9 +19,8 @@ updated: 2023-02-06
 
 #content tr:nth-child(2n),
 .ovh-documentation tr:nth-child(2n) {
-  background-color: none !important;
+  background: none !important;
 }
-
 #content td:first-child,
 .ovh-documentation td:first-child {
   background:#efefef;
