@@ -96,7 +96,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 La commande `fdisk -l` vous permet également d'identifier votre type de partition. C'est une information importante à connaître lorsqu'il s'agit de reconstruire votre RAID en cas de défaillance d'un disque.
 
-Pour les partitions GPT, la commande retournera : `Disklabel type: gpt`.
+Pour les partitions **GPT**, la commande retournera : `Disklabel type: gpt`.
 
 ```sh
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
@@ -104,11 +104,11 @@ Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: gpt`
+'Disklabel type: gpt'
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-Pour les partitions MBR, la commande retournera : `Disklabel type: dos`.
+Pour les partitions **MBR**, la commande retournera : `Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
@@ -116,7 +116,7 @@ Disk model: QEMU HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: dos`              
+'Disklabel type: dos'              
 Disk identifier: 0x150f6797
 ```
 
@@ -188,7 +188,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Veuillez noter que si vous êtes connecté en tant qu'utilisateur root, vous pouvez obtenir le message suivant lorsque vous essayez de démonter la partition (dans notre cas, où notre partition md4 est montée dans /home) :
+> Veuillez noter que si vous êtes connecté en tant qu'utilisateur `root`, vous pouvez obtenir le message suivant lorsque vous essayez de démonter la partition (dans notre cas, où notre partition md4 est montée dans /home) :
 > 
 > `umount: /home: target is busy`
 >
