@@ -97,7 +97,7 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-Then [restart your instance](../getting-started-with-power-web-hosting/#restart) and your Flask project will be online.
+Then [restart your instance](https://docs.ovh.com/ie/en/web-power/getting-started-with-power-web-hosting/#restart) and your Flask project will be online.
 
 
 ![Flask](images/python-install-flask-01.png){.thumbnail}
