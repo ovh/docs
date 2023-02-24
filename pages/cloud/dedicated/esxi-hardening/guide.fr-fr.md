@@ -259,7 +259,7 @@ Le système de verrou fonctionne avec une paire de clé : une publique et une au
 > Ne communiquez en aucun cas votre clé privée.
 >
 
-Seule la clé publique devra être communiquée ou envoyée aux les machines vers lesquelles vous souhaitez vous connecter.
+Seule la clé publique devra être communiquée ou envoyée aux machines vers lesquelles vous souhaitez vous connecter.
 ```bash
 Generating public/private ecdsa key pair.
 Enter file in which to save the key (/path-to-my-key/key-ecdsa_rsa):
