@@ -92,7 +92,7 @@ Cliquez sur le menu `Host`{.action} et accéder à la section `Monitor`{.action}
 
 > [!primary]
 >
-> Pour rappel, Le Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions de ce réseau interne.
+> Pour rappel, le Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions de ce réseau interne.
 >
 
 Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/).  
@@ -244,11 +244,12 @@ Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  192.168.1.10
 ```
+<br/>
+<br/>
 
+Toujours si vous souhaitez utiliser le service SSH, nous vous présentons cette fois comment autoriser/ajouter vos accès par clé SSH. 
 
-Toujours si vous souhaitez utiliser le service SSH, nous vous présentons cette fois comment autoriser/ajouter des accès par clé. 
-
-Générez une clé, l'algorythme ECDSA sur 521 bits est à prévilégier pour un maximum de protection :
+Générez les clés, l'algorythme ECDSA sur 521 bits est à prévilégier pour un maximum de protection :
 ```bash
 ssh-keygen -t ecdsa -b 521 -C "key-ecdsa-esxi-host"  -f /path-to-my-key/key-ecdsa
 ```
@@ -258,7 +259,7 @@ Le système de verrou fonctionne avec une paire de clé : une publique et une au
 > Ne communiquez en aucun cas votre clé privée.
 >
 
-Seule la clé publique devra être communiquée ou envoyée vers les machines vers lesquels vous souhaitez vous connecter.
+Seule la clé publique devra être communiquée ou envoyée aux les machines vers lesquelles vous souhaitez vous connecter.
 ```bash
 Generating public/private ecdsa key pair.
 Enter file in which to save the key (/path-to-my-key/key-ecdsa_rsa):
