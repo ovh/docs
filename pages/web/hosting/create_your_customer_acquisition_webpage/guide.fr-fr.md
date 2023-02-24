@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 08
 ---
 
-**Dernière mise à jour le 31/01/2023**
+**Dernière mise à jour le 24/02/2023**
 
 > [!warning]
 >
@@ -281,6 +281,8 @@ if (empty($errors)) { // If the $errors array is empty
     echo 'error';
 }
 ```
+
+Pour vous assurer que le mail que vous envoyez depuis votre serveur ne soit pas considéré comme un spam dans la boîte de destination, reportez vous au guide [« Configurer un enregistrement SPF sur son nom de domaine »](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/).
 
 > [!warning]
 >
