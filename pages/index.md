@@ -691,6 +691,7 @@
                 + [PostgreSQL - Create and use connection pools](platform/databases/postgresql_08_pool)
                 + [PostgreSQL - Advanced parameters references](platform/databases/postgresql_10_advanced_parameters_references)
                 + [PostgreSQL - Concepts - High availability and failure scenarios](platform/databases/postgresql_09_concept_high_availability)
+                + [PostgreSQL - Detect and terminate long-running queries](platform/databases/postgresql_11_terminate_queries)
             + [Tutorials](public-cloud-databases-postgresql-tutorials)
                 + [PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed PostgreSQL service](platform/databases/postgresql_tuto_01_connect_strapi_to_managed_postgresql)
                 + [PostgreSQL - Tutorial - Install Wagtail and connect it to OVHcloud Managed PostgreSQL service](platform/databases/postgresql_tuto_02_connect_wagtail_to_managed_postgresql)
