@@ -19,7 +19,7 @@ Ce guide a pour objectif de vous permettre de configurer la redirection de noms 
 
 ## Prérequis
 
-Vous devez disposer de plusieurs [noms de domaine](https://www.ovhcloud.com/fr/domains/) et d'un [hébergement wejpbathomb](https://www.ovhcloud.com/fr/web-hosting/) sur lequel les faire pointer.
+Vous devez disposer de plusieurs [noms de domaine](https://www.ovhcloud.com/fr/domains/) et d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/) sur lequel les faire pointer.
 
 Vous devez également avoir les accès à votre [manager OVH](https://www.ovh.com/manager/).
 
