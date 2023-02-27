@@ -1,12 +1,12 @@
 ---
-title: "Tutoriel - Créez votre page "
+title: "Tutoriel - Créez votre page d'acquisition clients"
 slug: create_your_customer_acquisition_webpage
 excerpt: "Découvrez comment déployer votre page web contenant un formulaire de contact qui vous permettra de faire de l'acquisition de nouveaux prospects"
 section: 'Tutoriels'
 order: 08
 ---
 
-**Dernière mise à jour le 24/02/2023**
+**Dernière mise à jour le 27/02/2023**
 
 > [!warning]
 >
