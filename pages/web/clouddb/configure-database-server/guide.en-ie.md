@@ -17,7 +17,7 @@ With the Web Cloud Databases database servers, you can influence your server’s
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions

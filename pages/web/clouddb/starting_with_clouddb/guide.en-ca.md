@@ -18,7 +18,7 @@ Your Web Cloud Databases solution is linked to the OVHcloud web hosting network 
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in [Performance web hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in [Performance web hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
