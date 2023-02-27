@@ -2,7 +2,7 @@
 title: NSX Edge NAT configuration
 slug: nsx-edge-nat-configuration
 excerpt: Using NAT rules to redirect traffic
-section: NSX
+section: NSX-v
 order: 06
 updated: 2021-11-26
 ---

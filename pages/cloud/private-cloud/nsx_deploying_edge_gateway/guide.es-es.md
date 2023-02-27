@@ -4,7 +4,7 @@ slug: how-to-deploy-an-nsx-edge-gateway
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/'
 excerpt: Discover how to deploy an NSX Edge Services Gateway with the vSphere interface
-section: NSX
+section: NSX-v
 order: 02
 updated: 2021-11-19
 ---

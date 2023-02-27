@@ -2,7 +2,7 @@
 title: Accéder à l’interface de gestion NSX
 slug: acceder-a-l-interface-de-gestion-nsx
 excerpt: Découvrez l'interface de NSX
-section: NSX
+section: NSX-v
 order: 01
 updated: 2021-11-17
 ---

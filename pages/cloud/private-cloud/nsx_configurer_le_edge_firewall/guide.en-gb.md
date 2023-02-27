@@ -2,7 +2,7 @@
 title: NSX Edge Firewall Configuration
 slug: nsx-edge-firewall-configuration
 excerpt: creating firewall rules  
-section: NSX
+section: NSX-v
 order: 04
 updated: 2021-11-25
 ---

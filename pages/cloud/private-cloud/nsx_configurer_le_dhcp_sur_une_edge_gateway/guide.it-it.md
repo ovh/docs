@@ -4,7 +4,7 @@ slug: setup-dhcp-nsx-edge
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/setup-dhcp-nsx-edge/'
 excerpt: Assign IPs to your VMs through DHCP
-section: NSX
+section: NSX-v
 order: 03
 updated: 2021-11-22
 ---

@@ -2,7 +2,7 @@
 title: NSX Edge Load Balancer Configuration
 slug: nsx-edge-load-balancer-configuration
 excerpt: Simple steps to use the NSX Edge load balancing service
-section: NSX
+section: NSX-v
 order: 05
 updated: 2021-11-29
 ---

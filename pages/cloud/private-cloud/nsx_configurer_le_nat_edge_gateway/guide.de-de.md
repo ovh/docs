@@ -4,7 +4,7 @@ slug: nsx-edge-nat-configuration
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-edge-nat-configuration/'
 excerpt: Using NAT rules to redirect traffic
-section: NSX
+section: NSX-v
 order: 06
 updated: 2021-11-26
 ---

@@ -2,7 +2,7 @@
 title: Setting up DHCP on an NSX Edge Services appliance
 slug: setup-dhcp-nsx-edge
 excerpt: Assign IPs to your VMs through DHCP
-section: NSX
+section: NSX-v
 order: 03
 updated: 2021-11-22
 ---

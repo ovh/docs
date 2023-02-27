@@ -3,7 +3,7 @@ title: Como editar a função HA de uma NSX Edge (EN)
 slug: enable-disable-nsx-edge-after-update
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/enable-disable-nsx-edge-after-update/'
-section: NSX
+section: NSX-v
 order: 10
 updated: 2022-09-14
 ---

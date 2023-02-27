@@ -2,7 +2,7 @@
 title: How to set up NSX groups
 slug: setup-nsx-groups
 excerpt: Create groups to simplify rules management
-section: NSX
+section: NSX-v
 order: 09
 updated: 2021-11-24
 ---
