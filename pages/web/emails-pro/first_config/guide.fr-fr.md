@@ -4,6 +4,7 @@ slug: premiere-configuration
 excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
 section: 'Premiers pas'
 order: 1
+updated: 2020-04-09
 ---
 
 **Dernière mise à jour le 07/04/2020**

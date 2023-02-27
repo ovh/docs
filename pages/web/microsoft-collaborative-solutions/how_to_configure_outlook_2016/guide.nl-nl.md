@@ -4,6 +4,7 @@ title: Configuratie van uw Exchange-account in Outlook 2016 voor Windows
 slug: configuratie-outlook-2016
 excerpt: Leer hoe u uw Exchange-account in Outlook 2016 voor Windows kunt configureren
 section: Configuratie van Exchange
+updated: 2021-07-05
 ---
 
 **Laatste update 22-03-2018**

@@ -4,6 +4,7 @@ excerpt: "Reagowanie w przypadku wiadomości z błędem związanej z bezpieczeń
 slug: blad-strona-nie-bezpieczna
 section: Diagnostyka
 order: 03
+updated: 2021-07-08
 ---
 
 > [!primary]

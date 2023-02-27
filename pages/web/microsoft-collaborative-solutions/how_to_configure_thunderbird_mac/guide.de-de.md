@@ -5,6 +5,7 @@ slug: konfiguration-exchange-thunderbird-mac
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account in Thunderbird für macOS einrichten'
 section: Konfiguration auf computer
 order: 05
+updated: 2021-08-26
 ---
 
 > [!primary]

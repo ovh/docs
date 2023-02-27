@@ -5,6 +5,7 @@ excerpt: 'Saiba como começar a usar a oferta MX Plan'
 section: Introdução
 order: 01
 legacy_guide_number: g1474
+updated: 2021-07-19
 ---
 
 > [!primary]

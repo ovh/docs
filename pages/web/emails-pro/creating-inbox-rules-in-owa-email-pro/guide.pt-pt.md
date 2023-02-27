@@ -3,6 +3,7 @@ title: 'Regras da caixa de entrada a partir da interface OWA'
 slug: creating-inbox-rules-in-owa-email-pro
 section: 'Introdução'
 order: 3
+updated: 2020-03-12
 ---
 
 **Última atualização: 25/06/2021**

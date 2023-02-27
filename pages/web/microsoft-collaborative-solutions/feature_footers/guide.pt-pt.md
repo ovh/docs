@@ -4,6 +4,7 @@ excerpt: 'Saiba como criar assinaturas automáticas nas suas contas de e-mail'
 slug: exchange_20132016_assinatura_automatica_-_disclaimer
 section: 'Funcionalidades das contas Exchange'
 order: 07
+updated: 2020-03-26
 ---
 
 

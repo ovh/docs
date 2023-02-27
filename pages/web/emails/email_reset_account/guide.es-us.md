@@ -4,6 +4,7 @@ slug: delete-email-account
 excerpt: "Cómo eliminar o restaurar una dirección de correo electrónico en un servicio de correo"
 section: 'Gestión de la cuenta de correo'
 order: 02
+updated: 2023-01-27
 ---
 
 > [!primary]

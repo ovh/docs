@@ -4,6 +4,7 @@ slug: restauration-ftp-filezilla-espace-client
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
 section: 'FTP et SSH'
 order: 06
+updated: 2023-01-12
 ---
 
 **Dernière mise à jour le 12/01/2023**

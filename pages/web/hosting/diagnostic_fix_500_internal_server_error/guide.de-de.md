@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwen
 slug: webhosting_bei_einem_fehler_500_internal_server_error
 section: 'Diagnose'
 order: 06
+updated: 2022-07-21
 ---
 
 > [!primary]

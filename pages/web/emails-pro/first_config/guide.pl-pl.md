@@ -4,6 +4,7 @@ slug: pierwsza-konfiguracja-email-pro
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro'
 section: 'Pierwsze kroki'
 order: 1
+updated: 2020-04-09
 ---
 
 **Ostatnia aktualizacja z dnia 07-04-2020**

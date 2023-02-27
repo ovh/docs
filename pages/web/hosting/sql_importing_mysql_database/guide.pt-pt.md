@@ -4,6 +4,7 @@ excerpt: 'Saiba como importar um backup para a base de dados de um alojamento we
 slug: partilhado_guia_de_importacao_de_uma_base_de_dados_mysql
 section: Bases de dados
 order: 04
+updated: 2018-09-25
 ---
 
 **Última atualização: 11/01/2019**

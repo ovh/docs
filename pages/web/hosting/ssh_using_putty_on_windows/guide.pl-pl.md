@@ -4,6 +4,7 @@ excerpt: 'Hosting www: Korzystanie z programu Putty w systemie Windows'
 slug: hosting_www_korzystanie_z_programu_putty_w_systemie_windows
 section: 'FTP i SSH'
 order: 08
+updated: 2022-10-05
 ---
 
 ## Wprowadzenie 

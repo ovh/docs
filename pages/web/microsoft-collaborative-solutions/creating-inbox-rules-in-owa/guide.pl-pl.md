@@ -4,6 +4,7 @@ slug: tworzenie-regul-skrzynki-odbiorczej-w-owa
 excerpt: 'Dowiedz się, jak utworzyć reguły przekierowania e-maili i filtry przy użyciu aplikacji OWA'
 section: 'Korzystanie z Outlook Web Application (OWA)'
 order: 05
+updated: 2020-03-11
 ---
 
 **Ostatnia aktualizacja: 11-03-2020**

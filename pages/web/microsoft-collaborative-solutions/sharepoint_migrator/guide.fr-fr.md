@@ -4,6 +4,7 @@ slug: sharepoint-migration-ovh-sharepoint-migrator
 excerpt: Retrouvez ici la procedure d’utilisation de l’interface OVH Sharepoint Migrator.
 section: SharePoint
 order: 02
+updated: 2022-12-06
 ---
 
 L'outil OSM vous permet de rapatrier le contenu de votre Sharepoint externe vers OVHcloud. La migration se déroule en 3 étapes :

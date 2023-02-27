@@ -4,6 +4,7 @@ slug: configurazione-iphone-ios
 excerpt: 'Come configurare un account Email Pro su un iPhone o un iPad tramite l’applicazione Mail'
 section: 'Configurazione di un client di posta'
 order: 3
+updated: 2021-05-21
 ---
 
 > [!primary]
@@ -46,9 +47,9 @@ Sulla schermata Home del tuo dispositivo clicca su `Impostazioni`{.action} (icon
 
 - **Per iOS 7, 8, 9 e 10**: clicca su `Mail, Contatti, Calendario`{.action}, poi su `Aggiungi account`{.action}. Infine seleziona Altro, poi Aggiungi account Mail. A questo punto, passa allo Step 5 della tabella seguente.
 
-- **Per iOS 11**: clicca su `Account e password`{.action} e poi su `Aggiungi account`{.action}. Infine seleziona Altro, poi Aggiungi account Mail. A questo punto, passa allo Step 5 della tabella seguente.
+- **Per iOS 11, 12 e 13**: clicca su `Account e password`{.action} e poi su `Aggiungi account`{.action}. Infine seleziona Altro, poi Aggiungi account Mail. A questo punto, passa allo Step 5 della tabella seguente.
 
-- **Per le versioni attuali**: seguire le istruzioni riportate nella tabella seguente.
+- **Per le versioni iOS 14 e successive**: seguire le istruzioni riportate nella tabella seguente.
 
 | | |
 |---|---|

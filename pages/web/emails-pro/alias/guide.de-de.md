@@ -4,6 +4,7 @@ slug: emailpro-alias
 excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter eine Alias-Adresse zu einem Mailaccount hinzufügen
 section: 'Erste Schritte'
 order: 4
+updated: 2021-09-20
 ---
 
 > [!primary]

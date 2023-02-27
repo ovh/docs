@@ -4,6 +4,7 @@ slug: guida_al_trasferimento_in_uscita_di_un_dominio_couk
 excerpt: Come effettuare il trasferimento in uscita di un dominio UK verso un altro registrar
 section: Trasferimento
 order: 05
+updated: 2022-10-19
 ---
 
 > [!primary]

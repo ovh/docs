@@ -4,6 +4,7 @@ slug: hosting_www_ssh_na_hostingu
 excerpt: 'Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH'
 section: 'FTP i SSH'
 order: 07
+updated: 2022-01-19
 ---
 
 **Ostatnia aktualizacja z dnia 19/01/2022**

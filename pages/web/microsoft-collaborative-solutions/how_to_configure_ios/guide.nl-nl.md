@@ -4,6 +4,7 @@ title: Configuratie van uw Exchange-account op een iPhone of iPad
 slug: exchange-automatische-configuratie-ios-iphone-ipad
 excerpt: Leer hoe u een Exchange-account kunt configureren op een iPhone of iPad, via de Mail-app
 section: Configuratie van een e-mailclient
+updated: 2021-05-21
 ---
 
 **Laatste update 21-02-2018**

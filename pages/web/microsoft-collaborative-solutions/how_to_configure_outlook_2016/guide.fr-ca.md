@@ -4,6 +4,7 @@ slug: exchange-configuration-outlook-2016-windows
 excerpt: Apprenez à configurer un compte Exchange sur Outlook 2016 pour Windows
 section: Configuration sur ordinateur
 order: 01
+updated: 2021-07-05
 ---
 
 **Dernière mise à jour le 2018/10/05**

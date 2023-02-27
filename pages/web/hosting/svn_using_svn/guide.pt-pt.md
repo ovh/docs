@@ -4,6 +4,7 @@ slug: alojamento_partilhado_utilizar_svn
 excerpt: Saiba como utilizar o SVN em SSH no seu alojamento web
 section: FTP e SSH
 order: 09
+updated: 2021-01-06
 ---
 
 **Última atualização: 28/10/2020**

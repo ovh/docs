@@ -4,6 +4,7 @@ slug: mail-mutualise-guide-configuration-iphone-ios-91
 excerpt: Apprenez à configurer une adresse e-mail MX Plan sur un iPhone ou un iPad, via l'application Mail
 section: Configuration sur smartphone
 order: 01
+updated: 2022-07-20
 ---
 
 **Dernière mise à jour le 20/07/2022**
@@ -36,15 +37,15 @@ Sur l'écran d'accueil de votre appareil, rendez-vous sur `Réglages`{.action} (
 
 - **Pour iOS 7, 8, 9 et 10** : appuyez sur `Mail, Contacts, Calendrier`{.action}, puis sur `Ajouter un compte`{.action}. Choisissez finalement `Autre`{.action}, puis `Ajouter un compte Mail`{.action}. Passez ensuite à l'étape 5 du tableau suivant.
 
-- **Pour iOS 11** : appuyez sur `Comptes et mots de passe`{.action}, puis sur `Ajouter un compte`{.action}. Choisissez finalement `Autre`{.action}, puis `Ajouter un compte Mail`{.action}. Passez ensuite à l'étape 5 du tableau suivant.
+- **Pour iOS 11, 12 et 13** : appuyez sur `Comptes et mots de passe`{.action}, puis sur `Ajouter un compte`{.action}. Choisissez finalement `Autre`{.action}, puis `Ajouter un compte Mail`{.action}. Passez ensuite à l'étape 5 du tableau suivant.
 
-- **Pour les versions actuelles** : suivez les instructions du tableau suivant.
+- **Pour les versions iOS 14 et supérieure** : suivez les instructions du tableau suivant.
 
 | | |
 |---|---|
 |![exchange](images/configuration-mail-ios-step01.gif){.thumbnail}|1. Dans  `Réglages`, allez sur `Mail`. <br><br> 2. Appuyez sur `Comptes`.<br><br> 3. Appuyez sur `Ajouter un compte`.<br><br> 4. Choisissez `Autre` tout en bas.|
 |5. Appuyez sur `Ajouter un compte Mail`.<br><br>6. Saisissez votre **nom**, votre adresse **e-mail**, votre **mot de passe** et une **description** de votre compte.<br><br>7. Appuyez sur `Suivant`.|![exchange](images/configuration-mail-ios-step02.png){.thumbnail}|
-|![exchange](images/configuration-mail-ios-step03-ca.png){.thumbnail}|8. Sélectionnez le type de serveur de réception `IMAP`(recommandé) ou `POP`.<br><br>Dans les sections `SERVEUR DE RECEPTION`et `SERVEUR DE D'ENVOI`, malgré la mention « facultatif », saisissez: <br>- le nom d'hôte **imap.mail.ovh.ca** pour le serveur de réception et **smtp.mail.ovh.ca** pour le serveur d'envoi  <br>- votre **adresse e-mail complète** dans nom d'utilisateur <br>- le mot de passe de votre adresse e-mail|
+|![exchange](images/configuration-mail-ios-step03-ca.png){.thumbnail}|8. Sélectionnez le type de serveur de réception `IMAP`(recommandé) ou `POP`.<br><br>Dans les sections `SERVEUR DE RECEPTION`et `SERVEUR D'ENVOI`, malgré la mention « facultatif », saisissez: <br>- le nom d'hôte **imap.mail.ovh.ca** pour le serveur de réception et **smtp.mail.ovh.ca** pour le serveur d'envoi  <br>- votre **adresse e-mail complète** dans nom d'utilisateur <br>- le mot de passe de votre adresse e-mail|
 
 En fin de configuration, assurez-vous de bien laisser `Mail`{.action} coché afin que l'application puisse utiliser ce compte, puis cliquez sur `Sauvegarder`{.action}.
 

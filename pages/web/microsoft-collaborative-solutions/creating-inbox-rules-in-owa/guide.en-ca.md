@@ -4,6 +4,7 @@ slug: creating-inbox-rules-in-owa
 excerpt: 'Find out how to create email redirections and filters using OWA'
 section: 'Outlook Web Application (OWA)'
 order: 05
+updated: 2020-03-11
 ---
 
 **Last updated 11th March 2020**

@@ -4,6 +4,7 @@ slug: api-transfer
 excerpt: "Use the OVHcloud public API to transfer your domain names"
 section: "Domains API"
 order: 09
+updated: 2022-07-21
 ---
 
 **Last updated 21st July 2022**

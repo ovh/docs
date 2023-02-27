@@ -3,6 +3,7 @@ title: Routes
 slug: configuration-routes
 section: Configuration
 order: 3
+updated: 2021-06-02
 ---
 
 **Last updated 2nd June 2021**

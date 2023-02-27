@@ -3,6 +3,7 @@ title: Hibernate
 slug: frameworks-hibernate
 section: Frameworks
 order: 6
+updated: 2021-05-11
 ---
 
 **Last updated 11th May 2021**

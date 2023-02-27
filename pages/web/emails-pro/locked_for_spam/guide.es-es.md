@@ -4,6 +4,7 @@ slug: blocked-for-spam
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
 section: 'Diagnóstico'
 order: 1
+updated: 2020-04-20
 ---
 
 **Última actualización: 16/3/2020**

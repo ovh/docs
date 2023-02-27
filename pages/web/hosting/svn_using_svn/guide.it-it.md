@@ -4,6 +4,7 @@ slug: hosting_condiviso_come_utilizzare_svn
 excerpt: Scopri come utilizzare SVN in SSH sul tuo hosting Web
 section: FTP e SSH
 order: 09
+updated: 2021-01-06
 ---
 
 **Ultimo aggiornamento: 28/10/2020**

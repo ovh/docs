@@ -136,6 +136,7 @@ public-cloud-databases-redis-guides: Redis - Guides
 public-cloud-databases-redis-tutorials: Redis - Tutorials
 public-cloud-databases-grafana: Grafana
 public-cloud-databases-grafana-guides: Grafana - Guides
+public-cloud-databases-grafana-tutorials: Grafana - Tutorials
 public-cloud-databases-kafka: Kafka
 public-cloud-databases-kafka-guides: Kafka - Guides
 public-cloud-databases-kafka-connect: Kafka Connect
@@ -167,7 +168,7 @@ public-cloud-network-additional-ip: Additional IP
 public-cloud-network-configuration: Configuración
 public-cloud-network-technical-resources: Recursos Técnicos
 public-cloud-network-tutorials: Tutoriales
-web-cloud-clouddb: CloudDB
+web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Primeros pasos
 web-cloud-clouddb-configuration: Configuración
 web-cloud-clouddb-technical-resources: Recursos técnicos
@@ -225,6 +226,7 @@ web-cloud-messaging-sms-advanced-usage: Uso avanzado
 web-cloud-messaging-sms-getting-started: Primeros pasos
 web-cloud-messaging-sms-managing-your-solution: Gestionar un servicio
 web-cloud-messaging-sms-sending-sms-messages: Enviar SMS
+web-cloud-messaging-sms-smpp: SMPP
 web-cloud-phone-and-fax: Teléfono y Fax
 web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Primeros pasos

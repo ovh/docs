@@ -4,6 +4,7 @@ slug: utilisation-putty-windows
 excerpt: Vous trouverez dans ce guide differentes informations et aides concernant l’installation de Putty sur Windows.
 section: FTP et SSH
 order: 08
+updated: 2022-10-05
 ---
 
 Pour l'aide à l'utilisation du SSH sur vos hébergements, le mieux est de consulter [ce guide sur le SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/). Attention l'option SSH n'est disponible qu'à partir des [hébergements PRO](https://www.ovhcloud.com/fr/web-hosting/professional-offer/){.external}.

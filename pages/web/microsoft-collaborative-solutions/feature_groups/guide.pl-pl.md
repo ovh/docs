@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak zarządzać listami wysyłkowymi w programie Exchang
 slug: exchange_20132016_korzystanie_z_grup_wewnetrzne_grupy_dyskusyjne
 section: 'Funkcje kont Exchange'
 order: 02
+updated: 2020-02-26
 ---
 
 **Ostatnia aktualizacja: 26-02-2020**

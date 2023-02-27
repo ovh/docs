@@ -4,6 +4,7 @@ excerpt: Erfahren Sie hier, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben
 slug: webhosting_haufige_ftp-probleme
 section: FTP und SSH
 order: 04
+updated: 2022-01-05
 ---
 
 > [!primary]

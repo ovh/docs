@@ -4,6 +4,7 @@ slug: konfiguration-outlook-2016-mac
 excerpt: 'So konfigurieren Sie Ihre MX Plan E-Mail-Adresse auf Outlook 2016 für macOS'
 section: 'E-Mail Clients'
 order: 4
+updated: 2018-05-31
 ---
 
 **Stand 29.06.2018**

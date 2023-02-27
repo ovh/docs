@@ -2,6 +2,7 @@
 title: Build and deploy
 slug: build
 section: App
+updated: 2021-05-25
 ---
 
 **Last updated 25th May 2021**

@@ -4,6 +4,7 @@ slug: exchange-configuration-thunderbird-mac
 excerpt: 'Find out how to configure your Exchange account in Thunderbird for macOS'
 section: 'Configuration on computer'
 order: 05
+updated: 2021-08-26
 ---
 
 **Last updated 26th August 2021**

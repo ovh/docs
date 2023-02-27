@@ -4,6 +4,7 @@ slug: configuration-thunderbird-45-8-0
 excerpt: 'Retrouvez ici comment configurer votre adresse E-mail Pro sur Thunderbird pour Windows'
 section: 'Configuration sur ordinateur'
 order: 5
+updated: 2021-08-26
 ---
 
 **Dernière mise à jour le 23/08/2021**

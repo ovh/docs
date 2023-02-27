@@ -4,6 +4,7 @@ slug: glue-registry
 excerpt: 'Apprenez à personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
 section: 'DNS et zone DNS'
 order: 07
+updated: 2018-10-26
 ---
 
 **Dernière mise à jour le 27/09/2018**

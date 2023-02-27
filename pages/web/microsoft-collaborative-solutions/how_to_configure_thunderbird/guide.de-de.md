@@ -4,6 +4,7 @@ slug: exchange_20132016_konfiguration_in_thunderbird
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account in Thunderbird für Windows einrichten'
 section: Konfiguration auf computer
 order: 04
+updated: 2021-08-26
 ---
 
 > [!primary]

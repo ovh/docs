@@ -4,6 +4,7 @@ excerpt: In dieser Hilfe wird die Verwendung der Ressourcen-Accounts Ihres Excha
 slug: exchange_20132016_verwendung_der_ressourcen-accounts
 section: Exchange Account-Funktionen
 order: 05
+updated: 2020-06-05
 ---
 
 **Letzte Aktualisierung am 22.12.2020**

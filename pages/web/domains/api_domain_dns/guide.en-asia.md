@@ -4,6 +4,7 @@ slug: api-dns
 excerpt: "Use the OVHcloud public API to configure the DNS of your domain name"
 section: "Domains API"
 order: 08
+updated: 2022-05-05
 ---
 
 **Last updated 5th May 2022**

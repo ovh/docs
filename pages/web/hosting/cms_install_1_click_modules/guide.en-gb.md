@@ -4,6 +4,7 @@ slug: web_hosting_web_hosting_modules
 excerpt: 'Find out how to set up your website using our 1-click modules'
 section: CMS
 order: 01
+updated: 2023-01-31
 ---
 
 **Last updated 31st January 2023**

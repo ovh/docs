@@ -3,6 +3,7 @@ title: Web PaaS powered by Platform.sh
 slug: only-in-english
 excerpt: Dokumentacja dostępna wyłącznie w języku angielskim
 section: Getting started
+updated: 2021-03-30
 ---
 
 ## Dokumentacja dostępna wyłącznie w języku angielskim

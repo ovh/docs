@@ -5,6 +5,7 @@ slug: delegowanie-zarzadzanie-mailami
 excerpt: 'Dowiedz się, jak delegować uprawnienia do zarządzania kontami e-mail w ramach usługi MX Plan'
 section: 'Funkcjonalności kont e-mail'
 order: 05
+updated: 2021-10-08
 ---
 
 > [!primary]

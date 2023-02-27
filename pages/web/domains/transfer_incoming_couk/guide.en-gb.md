@@ -4,6 +4,7 @@ excerpt: 'Find out how to transfer a .uk or related domain name to OVHcloud'
 slug: web_hosting_how_to_transfer_a_couk_domain_name
 section: Transfer
 order: 04
+updated: 2022-10-19
 ---
 
 **Last updated 19th October 2022**

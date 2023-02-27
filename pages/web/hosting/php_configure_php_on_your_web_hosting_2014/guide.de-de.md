@@ -4,6 +4,7 @@ slug: konfiguration_von_php_fur_ein_ovh_webhosting_2014
 excerpt: "Erfahren Sie hier, wie Sie die PHP-Version Ihres OVHcloud Webhostings ändern"
 section: PHP
 order: 01
+updated: 2022-09-19
 ---
 
 > [!primary]

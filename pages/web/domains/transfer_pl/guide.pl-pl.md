@@ -6,6 +6,7 @@ routes:
 excerpt: "Dowiedz się, jak wykonać transfer domeny .pl do OVHcloud"
 section: Transfer
 order: 09
+updated: 2022-10-19
 ---
 
 > [!primary]

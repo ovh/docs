@@ -5,6 +5,7 @@ excerpt: 'Come attivare e utilizzare un certificato SSL sugli hosting Web OVHclo
 section: SSL
 order: 01
 legacy_guide_number: g1594
+updated: 2022-08-01
 ---
 
 > [!primary]

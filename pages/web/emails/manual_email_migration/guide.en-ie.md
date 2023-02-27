@@ -4,6 +4,7 @@ slug: migrate-email-addresses-manually
 excerpt: How to migrate your email address manually to another email address
 section: Migration
 order: 01
+updated: 2021-01-05
 ---
 
 **Last updated 5th January 2021**

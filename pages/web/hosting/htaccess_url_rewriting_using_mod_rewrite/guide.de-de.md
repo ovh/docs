@@ -4,6 +4,7 @@ excerpt: "Diese Anleitung erklärt, wie Sie die Zugriffs-URL mithilfe des mod_re
 slug: htaccess_url_rewriting_using_mod_rewrite
 section: Weiterleitung und Authentifizierung
 order: 03
+updated: 2022-12-22
 ---
 
 > [!primary]

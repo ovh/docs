@@ -5,6 +5,7 @@ legacy_guide_number: g2272
 excerpt: Come reagire in caso di malfunzionamenti durante l'invio o la ricezione delle email in OVHcloud
 section: Diagnostica
 order: 02
+updated: 2022-07-21
 ---
 
 > [!primary]

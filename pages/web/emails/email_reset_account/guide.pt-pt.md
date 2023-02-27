@@ -4,6 +4,7 @@ slug: delete-email-account
 excerpt: "Saiba como eliminar ou reinicializar um endereço de e-mail na sua oferta de e-mail"
 section: 'Funcionalidades dos endereços e-mail'
 order: 02
+updated: 2023-01-27
 ---
 
 > [!primary]

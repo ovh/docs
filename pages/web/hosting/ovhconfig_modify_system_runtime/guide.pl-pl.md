@@ -4,6 +4,7 @@ slug: zmiana_srodowiska_uruchomieniowego_dla_hostingu_www
 excerpt: 'Dowiedz się, jak zmienić konfigurację hostingu OVHcloud'
 section: 'Konfiguracja hostingu'
 order: 03
+updated: 2022-12-09
 ---
 
 **Ostatnia aktualizacja z dnia 09-12-2022**

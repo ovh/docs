@@ -2,6 +2,7 @@
 title: Cron timezone
 slug: timezone
 section: App
+updated: 2021-03-26
 ---
 
 **Last updated 24th March 2021**

@@ -4,6 +4,7 @@ excerpt: "Descubra cómo reescribir la URL de acceso a su sitio web utilizando e
 slug: web_hosting_htaccess_reescritura_de_url_con_mod_rewrite
 section: Reescritura y autenticación
 order: 03
+updated: 2022-12-22
 ---
 
 > [!primary]

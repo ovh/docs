@@ -4,6 +4,7 @@ excerpt: 'Find out how to analyse latency on your website and how to improve it'
 slug: web_hosting_optimise_your_website_performance
 section: Optimise your website
 order: 06
+updated: 2022-02-03
 ---
 
 **Last updated 5th May 2020**

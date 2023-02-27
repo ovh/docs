@@ -4,6 +4,7 @@ excerpt: "Descubra as ações possíveis através de um ficheiro .htaccess para 
 slug: partilhado_htacess_como_impedir_que_certos_ips_acedam_ao_meu_website
 section: Reescrita e autenticação
 order: 01 
+updated: 2022-09-12
 ---
 
 **Última atualização: 12/09/2022**
@@ -26,7 +27,7 @@ Pode criar vários ficheiros ".htaccess" no [espaço FTP](https://docs.ovh.com/p
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [#go-further] deste manual.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste manual.
 >
 
 ## Requisitos

@@ -5,6 +5,7 @@ slug: gedeelde-handleiding-importeren-mysql-databank
 excerpt: 'Ontdek hoe u een backup in de database van een webhostingplan kunt importeren'
 section: Databases
 order: 4
+updated: 2018-09-25
 ---
 
 **Laatste update 21-06-2018**

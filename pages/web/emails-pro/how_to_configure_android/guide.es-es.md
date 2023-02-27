@@ -4,6 +4,7 @@ slug: configuracion-android
 excerpt: 'Cómo configurar una cuenta Email Pro en Android utilizando la aplicación Gmail'
 section: 'Configuración del cliente de correo'
 order: 5
+updated: 2020-03-18
 ---
 
 **Última actualización: 19/03/2020**

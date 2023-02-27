@@ -6,7 +6,7 @@ section: 'Réseau & IP'
 updated: 2022-12-20
 ---
 
-**Dernière mise à jour le 20/12/2022**
+**Dernière mise à jour le 23/02/2023**
 
 > [!primary]
 >
@@ -32,6 +32,10 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 >
 > Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
 >
+> Le présent guide n'est pas applicable aux serveurs des gammes [Scale](https://www.ovhcloud.com/fr-ca/bare-metal/scale/) et [High Grade](https://www.ovhcloud.com/fr-ca/bare-metal/high-grade/).
+>
+> Rendez-vous sur la [page de configuration dédiée](https://docs.ovh.com/ca/fr/dedicated/proxmox-network-hg-scale/).
+
 
 ## En pratique
 

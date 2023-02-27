@@ -4,6 +4,7 @@ slug: configuration-outlook-2016
 excerpt: 'Découvrez comment configurer votre compte E-mail Pro sur Outlook pour Windows'
 section: 'Configuration sur ordinateur'
 order: 1
+updated: 2021-07-05
 ---
 
 **Dernière mise à jour le 05/07/2021**

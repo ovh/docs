@@ -3,6 +3,7 @@ title: 'Delegar permissões numa conta de e-mail'
 slug: emailpro-delegation
 section: Introdução
 order: 5
+updated: 2020-10-24
 ---
 
 **Última atualização: 24/10/2020**

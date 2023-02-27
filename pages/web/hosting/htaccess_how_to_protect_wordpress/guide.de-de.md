@@ -3,7 +3,8 @@ title: "Tutorial - htaccess-Dateien mit WordPress verwenden"
 slug: use-htaccess-with-wordpress
 excerpt: "Erfahren Sie hier, wie Sie Ihre WordPress Website mit einer oder mehreren htaccess-Dateien absichern"
 section: 'Tutorials'
-order: 07
+order: 022
+updated: 2023-02-07
 ---
 
 > [!primary]

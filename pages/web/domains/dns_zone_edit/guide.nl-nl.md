@@ -5,6 +5,7 @@ excerpt: Leer hoe u een OVH DNS-zone vanaf uw Control Panel kunt bewerken
 slug: hosting_hoe_wijzig_ik_mijn_dns_zone
 section: DNS en DNS-zone
 order: 03
+updated: 2022-07-07
 ---
 
 **Laatste update 13-03-2018**

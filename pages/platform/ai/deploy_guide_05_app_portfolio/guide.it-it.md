@@ -6,10 +6,10 @@ section: AI Deploy - Guides
 order: 05
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/'
-updated: 2023-01-31
+updated: 2023-02-24
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 24th February, 2023.**
 
 > [!primary]
 >
@@ -30,19 +30,26 @@ To test **AI Deploy**, you can quickly deploy apps based on those proposed in ou
 
 ### Quick examples
 
-| Owner | Task | Description | Documentation | Dockerfile | Docker image | HTTP port | CLI command | Usage |       
-|-------|------|-------------|---------------|------------|--------------|-----------|-------------|-------|
-| OVHcloud | Hello world | Launch your first API with Flask | [AI Deploy - Getting started](https://docs.ovh.com/it/publiccloud/ai/deploy/getting-started/) | [Dockerfile - Hello world](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/hello-world/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world` | 5000 | `ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world` | **API** - interact with the API with a curl command or a Python script |
-| OVHcloud | EDA and interactive prediction | Explore, analyse iris data and do interactive prediction with Streamlit | [AI Deploy - Tutorial - Deploy an interactive app for EDA and prediction using Streamlit](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-streamlit-eda-iris/) | [Dockerfile - EDA and prediction on iris data](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/eda-classification-iris/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda` | 8501 | `ovhai app run --default-http-port 8501 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda` | **Web interface** - access to the app with the url |
-| OVHcloud | Sketch recognition | Recognize handwritten digits with Gradio | [AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/) | [Dockerfile - Sketch recognition](https://github.com/ovh/ai-training-examples/blob/main/apps/gradio/sketch-recognition/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition` | 8080 (default) | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition` | **Web interface** - access to the app with the url |
-| OVHcloud | Spam classification | Classify spam messages with FastAPI | [AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/) | [Dockerfile - Spam classifier API](https://github.com/ovh/ai-training-examples/blob/main/apps/fastapi/spam-classifier-api/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification` | 8000 | `ovhai app run --default-http-port 8000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification` | **API** - interact with the API with `<app-url>/docs` or curl command |
-| OVHcloud | Sentiment analysis | Analyse text sentiment with Hugging Face models and Flask | [AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/) | [Dockerfile - Sentiment analysis Hugging Face app](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/sentiment-analysis-hugging-face-app/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | 5000 | `ovhai app run --default-http-port 5000 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | **Web interface** - access to the app with the url |
-| OVHcloud | Speech-to-Text | Use Speech-to-Text powers on audio and video | [AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/) | [Dockerfile - Speech-to-Text Streamlit app](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/speech-to-text/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text` | 8501 | `ovhai app run --default-http-port 8501 priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text` | **Web interface** - access to the app with the url |
+| Owner | Task | Description | Documentation | Dockerfile | Docker image | CLI command | Usage |       
+|-------|------|-------------|---------------|------------|--------------|-------------|-------|
+| OVHcloud | Hello world | Launch your first API with Flask | [AI Deploy - Getting started](https://docs.ovh.com/it/publiccloud/ai/deploy/getting-started/) | [Dockerfile - Hello world](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/hello-world/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world` | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/ai-deploy-hello-world` | **API** - interact with the API with a curl command or a Python script |
+| OVHcloud | EDA and interactive prediction | Explore, analyse iris data and do interactive prediction with Streamlit | [AI Deploy - Tutorial - Deploy an interactive app for EDA and prediction using Streamlit](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-streamlit-eda-iris/) | [Dockerfile - EDA and prediction on iris data](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/eda-classification-iris/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda` | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-eda` | **Web interface** - access to the app with the url |
+| OVHcloud | Sketch recognition | Recognize handwritten digits with Gradio | [AI Deploy - Tutorial - Deploy a Gradio app for sketch recognition](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-gradio-sketch-recognition/) | [Dockerfile - Sketch recognition](https://github.com/ovh/ai-training-examples/blob/main/apps/gradio/sketch-recognition/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition` | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/gradio-sketch-recognition` | **Web interface** - access to the app with the url |
+| OVHcloud | Spam classification | Classify spam messages with FastAPI | [AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-fastapi-spam-classifier/) | [Dockerfile - Spam classifier API](https://github.com/ovh/ai-training-examples/blob/main/apps/fastapi/spam-classifier-api/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification` | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification` | **API** - interact with the API with `<app-url>/docs` or curl command |
+| OVHcloud | Sentiment analysis | Analyse text sentiment with Hugging Face models and Flask | [AI Deploy - Tutorial - Deploy an app for sentiment analysis with Hugging Face and Flask](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-flask-hugging-face-sentiment-analysis/) | [Dockerfile - Sentiment analysis Hugging Face app](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/sentiment-analysis-hugging-face-app/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/flask-sentiment-analysis` | **Web interface** - access to the app with the url |
+| OVHcloud | Speech-to-Text | Use Speech-to-Text powers on audio and video | [AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit](https://docs.ovh.com/it/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/) | [Dockerfile - Speech-to-Text Streamlit app](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/speech-to-text/Dockerfile) | `priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text` | `ovhai app run priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/streamlit-speech-to-text` | **Web interface** - access to the app with the url |
 
-If you want to launch these apps from the OVHcloud control panel:
+If you want to launch these apps from the OVHcloud control panel, fill in the name of the docker image in **Step 2 - Application to deploy**.
 
-1. fill in the name of the docker image in **Step 2 - Application to deploy**
-2. set the HTTP port in **Step 5 - Configure your app**
+> [!primary]
+>
+> Each of the following apps launches on port `8080`. You don't need to enter it in the launch command.
+>
+
+> [!primary]
+>
+> By default, an app is launched with `1 GPU`. However, you can customize the resources you wish to use.
+>
 
 ## Build you own apps and models to deploy
 

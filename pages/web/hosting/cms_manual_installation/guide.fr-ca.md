@@ -4,6 +4,7 @@ slug: mutualise-installer-manuellement-mon-cms
 excerpt: Retrouvez ici la demarche pour installer manuellement
 section: CMS
 order: 03
+updated: 2020-02-04
 ---
 
 **Dernière mise à jour le 05/05/2020**

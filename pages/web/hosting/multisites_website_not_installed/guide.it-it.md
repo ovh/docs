@@ -4,6 +4,7 @@ slug: errore-sito-non-installato
 excerpt: Come identificare e risolvere la pagina di errore «Sito non installato»
 section: Diagnostica
 order: 05
+updated: 2021-05-18
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ title: 'Monitoring en beheer van geautomatiseerde e-mails in uw webhosting'
 slug: web_hosting_monitoren_van_automatische_e-mails
 excerpt: 'Ontdek hoe u geautomatiseerde e-mails, die vanuit uw OVHcloud-webhosting worden verzonden, kunt monitoren en beheren'
 section: Diagnostisch
+updated: 2022-10-12
 ---
 
 **Laatste update 22-05-2018**

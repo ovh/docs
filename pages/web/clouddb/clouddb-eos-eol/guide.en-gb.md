@@ -1,10 +1,10 @@
 ---
-title: 'CloudDB EOS and EOL announcements'
+title: 'Web Cloud Databases EOS and EOL announcements'
 slug: clouddb-eos-eol
 section: 'Technical resources'
 ---
 
-**Last updated 21st July 2022**
+**Last updated 23rd February 2023**
 
 ## Objective
 
@@ -23,7 +23,6 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
 |PostgreSQL 12|To be defined|To be defined|To be defined|
-|Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|To be defined|To be defined|To be defined|
 
 ## Go further

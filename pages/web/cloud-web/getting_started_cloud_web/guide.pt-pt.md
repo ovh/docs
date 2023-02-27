@@ -4,6 +4,7 @@ slug: primeiros-passos-com-cloud-web
 excerpt: 'Saiba como começar num plano de alojamento Cloud Web'
 section: Introdução
 order: 01
+updated: 2022-05-04
 ---
 
 > [!primary]

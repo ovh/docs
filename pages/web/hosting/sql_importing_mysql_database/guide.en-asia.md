@@ -4,6 +4,7 @@ slug: web_hosting_guide_to_importing_a_mysql_database
 excerpt: 'Find out how to import a backup into a database on your OVHcloud Web Hosting plan'
 section: Databases
 order: 04
+updated: 2018-09-25
 ---
 
 **Last updated 5th May 2020**

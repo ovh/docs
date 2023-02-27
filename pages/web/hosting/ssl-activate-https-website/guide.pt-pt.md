@@ -4,6 +4,7 @@ slug: ativar-https-website-certificado-ssl
 excerpt: 'Saiba como ativar o HTTPS num website que dispõe de um certificado SSL'
 section: SSL
 order: 02
+updated: 2022-10-04
 ---
 
 **Última atualização: 04/10/2022**

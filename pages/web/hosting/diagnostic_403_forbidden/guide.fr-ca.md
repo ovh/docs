@@ -4,6 +4,7 @@ excerpt: Découvrez comment remettre votre site en ligne quand il affiche une pa
 slug: diagnostic-403-forbidden
 section: Diagnostic
 order: 08
+updated: 2022-06-16
 ---
 
 **Dernière mise à jour le 16/06/2022**

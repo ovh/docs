@@ -4,6 +4,7 @@ slug: configurare-un-multisito-su-un-hosting-web
 excerpt: 'Come condividere il tuo hosting Web tra più siti Internet'
 section: Per iniziare
 order: 03
+updated: 2022-11-04
 ---
 
 > [!primary]

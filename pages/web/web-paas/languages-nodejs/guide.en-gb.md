@@ -3,6 +3,7 @@ title: Node.js
 slug: languages-nodejs
 section: Languages
 order: 4
+updated: 2022-06-02
 ---
 
 **Last updated 2nd June 2022**

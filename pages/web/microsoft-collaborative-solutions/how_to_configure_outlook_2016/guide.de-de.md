@@ -4,6 +4,7 @@ slug: exchange-automatische-konfiguration-auf-outlook-2016
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account in Outlook für Windows einrichten'
 section: Konfiguration auf computer
 order: 01
+updated: 2021-07-05
 ---
  
 > [!primary]

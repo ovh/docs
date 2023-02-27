@@ -5,6 +5,7 @@ slug: configure-emailpro-for-thunderbird-mac
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for macOS'
 section: 'Email client configuration'
 order: 6
+updated: 2021-08-26
 ---
 
 **Last updated 26th August 2021**

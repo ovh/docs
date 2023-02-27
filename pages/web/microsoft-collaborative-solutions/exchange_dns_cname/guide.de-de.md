@@ -4,6 +4,7 @@ excerpt: 'Hier erfahren Sie, wozu ein CNAME-Eintrag notwendig ist und wie Sie di
 slug: exchange_20132016_einen_cname_eintrag_hinzufugen
 section: 'Erste Schritte mit Exchange'
 order: 05
+updated: 2019-03-26
 ---
 
 **Stand 16.07.2019**

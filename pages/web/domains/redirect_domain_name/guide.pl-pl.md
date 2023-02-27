@@ -4,6 +4,7 @@ slug: przekierowanie-domeny
 excerpt: "Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud"
 section: Informacje ogólne
 order: 01
+updated: 2022-10-06
 ---
 
 **Ostatnia aktualizacja z dnia 06-10-2022**

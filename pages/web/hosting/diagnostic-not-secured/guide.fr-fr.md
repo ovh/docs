@@ -4,6 +4,7 @@ slug: erreur-site-non-securise
 excerpt: "Réagir en cas de message d'erreur lié à la sécurité de votre site"
 section: Diagnostic
 order: 03
+updated: 2021-07-08
 ---
 
 **Dernière mise à jour le 08/07/2021**

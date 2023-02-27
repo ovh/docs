@@ -4,6 +4,7 @@ excerpt: Jak ręcznie zainstalować moduł PrestaShop?
 slug: cms_-_reczna_instalacja_modulu_prestashop
 section: CMS
 order: 06
+updated: 2022-12-01
 ---
 
 

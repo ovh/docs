@@ -10,7 +10,7 @@ order: 02
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 23/06/2022**
+**Última atualização: 15/02/2023**
 
 ## Objetivo
 
@@ -20,18 +20,18 @@ Uma base de dados (*database*, «DB» ou «BDD») permite armazenar elementos co
 
 ## Requisitos
 
-- Dispor de uma [instância CloudDB](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
 ### Criar uma base de dados
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 
 Clique no separador `Bases de dados` e em `Adicionar uma base de dados`{.action}.
 
-![sql-privado](images/private-sql-createdb01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-createdb01.png){.thumbnail}
 
 Preencha os campos respeitando os critérios indicados. Pode criar diretamente um utilizador ao selecionar a caixa **«Criar um utilizador»**:
 
@@ -42,17 +42,17 @@ Preencha os campos respeitando os critérios indicados. Pode criar diretamente u
 
 Por fim, clique em `Validar`{.action}.
 
-![sql-privado](images/private-sql-createdb02.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-createdb02.png){.thumbnail}
 
 ### Criar um utilizador
 
 Para utilizar um servidor de bases de dados OVHcloud, é necessário criar utilizadores com permissões específicas de conexão a uma base de dados. 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 
 Clique no separador `Utilizadores e permissões` e, a seguir, em `Adicionar um utilizador`{.action}.
 
-![sql-privado](images/private-sql-user01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-user01.png){.thumbnail}
 
 Depois de introduzir um «nome de utilizador» e uma «palavra-passe», clique em `Validar`{.action}. 
 
@@ -60,11 +60,11 @@ Depois de introduzir um «nome de utilizador» e uma «palavra-passe», clique e
 
 Para autorizar um utilizador a realizar ações numa base de dados, é necessário atribuir-lhe permissões.
 
-Para gerir as permissões de cada utilizador, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados. Clique no separador `Utilizadores e permissões`.
+Para gerir as permissões de cada utilizador, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados. Clique no separador `Utilizadores e permissões`.
 
 Clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Gerir as permissões`{.action}.
 
-![sql-privado](images/private-sql-rights01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-rights01.png){.thumbnail}
 
 Na coluna à esquerda encontrará **Base de dados**, a lista das bases de dados presentes no seu servidor.
 
@@ -79,7 +79,7 @@ Segue-se a descrição dos três tipos de permissões possíveis:
 > 
 > A segmentação das permissões referidas acima é própria da OVHcloud. Assim, um utilizador com permissões de `Administrador` poderá fazer **DLL** (Data Definition Language) e **DML** (Data Manipulation Language), ao passo que um utilizador com permissões de `Leitura/Escrita` só poderá fazer **DML** (Data Manipulation Language).
 
-![sql-privado](images/private-sql-rights02.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-rights02.png){.thumbnail}
 
 #### Eliminar uma base de dados
 
@@ -91,11 +91,11 @@ Segue-se a descrição dos três tipos de permissões possíveis:
 > um backup e o seu respetivo descarregamento antes de qualquer operação de eliminação.
 > 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action}. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
 
 Para eliminar uma base de dados, aceda ao separador `Bases de dados` e clique no botão `...`{.action} à direita da base em causa. Por fim, clique em `Eliminar a base`{.action}.
 
-![sql-privado](images/private-sql-deldb01.png){.thumbnail}
+![web-cloud-databases](images/web-cloud-databases-deldb01.png){.thumbnail}
 
 
 ## Quer saber mais?

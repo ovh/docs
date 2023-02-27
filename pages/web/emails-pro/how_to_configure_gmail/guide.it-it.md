@@ -4,6 +4,7 @@ slug: configurazione-email-pro-su-gmail
 excerpt: 'Come configurare un account Email Pro dall’interfaccia Web di Gmail'
 section: 'Configurazione di un client di posta'
 order: 1
+updated: 2020-03-18
 ---
 
 **Ultimo aggiornamento: 09/04/2020**

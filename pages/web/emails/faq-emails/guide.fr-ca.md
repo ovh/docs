@@ -3,6 +3,7 @@ title: FAQ e-mails OVHcloud
 slug: faq-emails
 section: 'Premiers pas'
 order: 07
+updated: 2020-05-05
 ---
 
 **Dernière mise à jour le 15/05/2020**

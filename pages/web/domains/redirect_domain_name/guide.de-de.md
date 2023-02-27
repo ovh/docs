@@ -4,6 +4,7 @@ slug: domainweiterleitung
 excerpt: "Erfahren Sie hier, wie Sie verschiedene Weiterleitungsarten für einen von OVHcloud verwalteten Domainnamen erstellen"
 section: Allgemeine Verwendung
 order: 01
+updated: 2022-10-06
 ---
 
 > [!primary]

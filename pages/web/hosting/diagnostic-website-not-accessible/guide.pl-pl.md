@@ -4,6 +4,7 @@ slug: blad-serwer-niedostepny
 excerpt: "Zdiagnozuj przyczyny niedostępności Twojej strony WWW"
 section: Diagnostyka
 order: 01
+updated: 2022-08-02
 ---
 
 > [!primary]

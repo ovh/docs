@@ -5,6 +5,7 @@ slug: deleguer-gestion-emails-autre-identifiant
 excerpt: 'Découvrez comment déléguer la gestion des comptes e-mail de votre offre MX Plan'
 section: 'Fonctionnalités des adresses e-mail'
 order: 05
+updated: 2021-10-08
 ---
 
 **Dernière mise à jour le 08/10/2021**

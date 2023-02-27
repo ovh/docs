@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihre Kalender in Exchange freigeben'
 slug: exchange_2016_einen_kalender_via_owa_webmail_freigeben
 section: 'Outlook Web App (OWA)'
 order: 03
+updated: 2020-02-19
 ---
 
 **Letzte Aktualisierung am 19.02.2020**

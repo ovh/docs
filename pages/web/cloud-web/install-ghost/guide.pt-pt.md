@@ -4,6 +4,7 @@ slug: instalar-o-ghost-cloud-web
 excerpt: 'Saiba como instalar um blogue com a plataforma Ghost num alojamento Cloud Web'
 section: Tutoriais
 order: 01
+updated: 2022-05-04
 ---
 
 > [!primary]

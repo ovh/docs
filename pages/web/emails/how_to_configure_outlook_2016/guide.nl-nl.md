@@ -4,6 +4,7 @@ title: Configuratie van uw e-mailadres in Outlook 2016 voor Windows
 slug: configuratie-outlook-2016
 excerpt: Ontdek hoe u uw MX Plan-e-mailadres kunt configureren in Outlook 2016 voor Windows
 section: Outlook
+updated: 2021-06-05
 ---
 
 **Laatste update 22-03-2018**

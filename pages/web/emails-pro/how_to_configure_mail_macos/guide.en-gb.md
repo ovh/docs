@@ -3,6 +3,7 @@ title: 'Configuring your Email Pro account on the macOS Mail app'
 slug: configuring-email-pro-macos-mail
 section: 'Email client configuration'
 order: 5
+updated: 2022-06-13
 ---
 
 **Last updated 13th June 2022**

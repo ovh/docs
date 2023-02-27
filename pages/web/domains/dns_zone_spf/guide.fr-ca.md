@@ -4,6 +4,7 @@ slug: le-champ-spf
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
 section: DNS et zone DNS
 order: 05
+updated: 2022-09-12
 ---
 
 **Dernière mise à jour le 12/09/2022**

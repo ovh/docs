@@ -6,6 +6,7 @@ section: 'Diagnostic'
 order: 02
 routes:
   canonical: "https://docs.ovh.com/fr/emails/manage-email-quota/"
+updated: 2022-11-17
 ---
 
 **Dernière mise à jour le 17/11/2022**

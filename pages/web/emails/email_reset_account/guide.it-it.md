@@ -4,6 +4,7 @@ slug: delete-email-account
 excerpt: Come eliminare o reimpostare un indirizzo email sul servizio di posta
 section: 'Funzionalità degli indirizzi email'
 order: 02
+updated: 2023-01-27
 ---
 
 > [!primary]

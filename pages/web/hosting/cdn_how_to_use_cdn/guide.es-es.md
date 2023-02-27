@@ -4,6 +4,7 @@ excerpt: 'Cómo acelerar la carga de un sitio web en el alojamiento utilizando e
 slug: guia_de_uso_del_acelerador_geocache_en_un_alojamiento_web
 section: 'Optimización del sitio web'
 order: 03
+updated: 2021-12-23
 ---
 
 > [!primary]

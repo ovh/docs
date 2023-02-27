@@ -4,6 +4,7 @@ excerpt: Saiba como adicionar um registo SPF à zona DNS do seu domínio
 slug: partilhado_o_campo_spf
 section: DNS e zona DNS
 order: 05
+updated: 2022-09-12
 ---
 
 > [!primary]

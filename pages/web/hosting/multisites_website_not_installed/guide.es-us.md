@@ -4,6 +4,7 @@ slug: web_hosting_error_sitio_no_instalado
 excerpt: 'Cómo solucionar el error «Sitio no instalado»'
 section: Diagnóstico
 order: 05
+updated: 2021-05-18
 ---
 
 > [!primary]

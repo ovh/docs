@@ -4,6 +4,7 @@ slug: restoring-ftp-filezilla-control-panel
 excerpt: 'Find out how to restore a file or an entire storage space from your Web Hosting plan'
 section: 'FTP and SSH'
 order: 06
+updated: 2023-01-12
 ---
 
 **Last updated 12th January 2023**

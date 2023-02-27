@@ -4,6 +4,7 @@ slug: transfer_wychodzacy_domeny_globalnej_lub_geograficznej
 excerpt: Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora
 section: Transfer
 order: 04
+updated: 2022-12-09
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Web hosting: PuTTY en Windows'
 slug: web_hosting_putty_en_windows
 section: FTP y SSH
 order: 08
+updated: 2022-10-05
 ---
 
 

@@ -4,9 +4,10 @@ slug: creare-database
 excerpt: 'Come creare un database sul tuo hosting Web OVHcloud'
 section: Database
 order: 01
+updated: 2022-02-03
 ---
 
-**Ultimo aggiornamento 03/02/2022**
+**Ultimo aggiornamento 15/02/2023**
 
 ## Obiettivo
 
@@ -106,7 +107,7 @@ Per verificare gli Snapshot disponibili e la relativa data di creazione, clicca 
 
 **Troppe connessioni**
 
-I database di Web Hosting hanno un limite di 30 connessioni simultanee (variabile del sistema *max_connections*). È necessario ottimizzare le richieste SQL per prevenire questo tipo di errore. Se il problema persiste, è necessario prendere in considerazione altre misure, ad esempio passare a un database [CloudDB](https://www.ovh.de/cloud/cloud-databases/) o effettuare l’[upgrade di un piano di hosting](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/). 
+I database di Web Hosting hanno un limite di 30 connessioni simultanee (variabile del sistema *max_connections*). È necessario ottimizzare le richieste SQL per prevenire questo tipo di errore. Se il problema persiste, è necessario prendere in considerazione altre misure, ad esempio passare a un database [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) o effettuare l’[upgrade di un piano di hosting](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/). 
 
 **Errori di connessione o “not found”**
 

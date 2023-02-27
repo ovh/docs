@@ -3,7 +3,8 @@ title: "Przykłady zastosowania - Jak zmienić domenę na istniejącej stronie"
 slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Dowiedz się, jak zmienić nazwę domeny na istniejącej stronie"
 section: "Tutoriale"
-order: 02
+order: 011
+updated: 2022-10-25
 ---
 
 **Ostatnia aktualizacja z dnia 12-09-2022**

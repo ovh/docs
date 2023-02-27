@@ -4,6 +4,7 @@ slug: mail-mutualise-guide-configuration-dun-e-mail-mutualise-ovh-sur-linterface
 excerpt: "Apprenez à configurer une adresse e-mail MX Plan sur l'interface en ligne de Gmail"
 section: 'Configuration sur une interface en ligne'
 order: 01
+updated: 2021-01-08
 ---
 
 **Dernière mise à jour le 08/01/2021**

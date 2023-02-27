@@ -5,6 +5,7 @@ slug: hosting_dynhost
 excerpt: 'Ontdek hoe u een dynamisch DNS-record (DynHost) voor uw OVH domeinnaam kunt configureren'
 section: 'DNS en DNS-zone'
 legacy_guide_number: g2024
+updated: 2018-07-19
 ---
 
 **Laatste update 09-06-2018**

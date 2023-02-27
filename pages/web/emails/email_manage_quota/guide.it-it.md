@@ -4,6 +4,7 @@ slug: manage-email-quota
 excerpt: Come gestire e ottimizzare lo spazio di storage di un indirizzo email
 section: Diagnostica
 order: 02
+updated: 2022-11-17
 ---
 
 > [!primary]

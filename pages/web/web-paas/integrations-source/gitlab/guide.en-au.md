@@ -2,6 +2,7 @@
 title: GitLab
 slug: gitlab
 section: Source
+updated: 2021-05-11
 ---
 
 **Last updated 11th May 2021**

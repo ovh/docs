@@ -4,6 +4,7 @@ slug: konfiguration-outlook-2016
 excerpt: 'Erfahren Sie hier, wie Sie Ihren E-Mail Pro Account in Outlook für Windows einrichten'
 section: 'Konfiguration des E-Mail-Clients'
 order: 2
+updated: 2021-07-05
 ---
 
 > [!primary]

@@ -3,18 +3,26 @@ title: 'Tutorial - Crear una página web personal en OVHcloud'
 slug: create-your-own-web-page
 excerpt: 'Cómo crear su primera página web en un alojamiento web gratuito Start 10M'
 section: "Tutoriales"
-order: 01
+order: 012
+updated: 2023-02-17
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/11/2022**
+**Última actualización: 17/02/2023**
 
 ## Objetivo
 
 Esta guía explica cómo crear la primera página de un sitio web en un alojamiento web Start 10M gratuito para la adquisición de un dominio en OVHcloud.
+
+> [!warning]
+>
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> 
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/). Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de esta guía.
+>
 
 ## Requisitos
 
@@ -416,7 +424,7 @@ Algunos ejemplos de sitios web y aplicaciones realizadas con Bootstrap:
 - [https://bootstraptaste.com/](https://bootstraptaste.com/)
 - [https://bootstrapthemes.co/](https://bootstrapthemes.co/).
 
-## Más información
+## Más información <a name="go-further"></a>
 
 En internet encontrará muchos recursos para aprender y mejorar su práctica, copiar elementos enteros de código o fragmentos de código, añadir funcionalidades a su sitio web sin correr el riesgo de cometer errores o fallos de funcionamiento. A continuación, algunos de los sitios de referencia:
 

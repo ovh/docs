@@ -4,6 +4,7 @@ excerpt: "Descubra como reescrever o URL de acesso ao seu site graças ao mod_re
 slug: partilhado_htaccess_rescrita_de_urls_gracas_ao_mod_write
 section: Reescrita e autenticação
 order: 03
+updated: 2022-12-22
 ---
 
 > [!primary]

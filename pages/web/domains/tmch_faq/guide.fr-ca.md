@@ -5,6 +5,7 @@ slug: faq-tmch-trademark-clearinghouse
 excerpt: Apprenez-en plus sur le TMCH grâce à cette FAQ
 section: Protection et sécurité
 order: 02
+updated: 2022-10-28
 ---
 
 **Dernière mise à jour le 05/05/2020**

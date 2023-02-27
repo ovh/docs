@@ -4,6 +4,7 @@ slug: transfer-einer-generischen-domain
 excerpt: Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren
 section: Transfer
 order: 01
+updated: 2022-11-18
 ---
 
 > [!primary]

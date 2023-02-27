@@ -5,6 +5,7 @@ excerpt: 'Come modificare i server DNS di un dominio OVHcloud'
 legacy_guide_number: g2015
 section: 'DNS e zona DNS'
 order: 01
+updated: 2021-02-18
 ---
 
 > [!primary]

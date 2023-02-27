@@ -3,6 +3,7 @@ title: Risolvere un errore su un dominio
 slug: domain-errors
 section: Operazioni correnti
 order: 02
+updated: 2022-09-01
 ---
 
 > [!primary]

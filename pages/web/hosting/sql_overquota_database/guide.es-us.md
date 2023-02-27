@@ -4,9 +4,10 @@ slug: database-overquota
 excerpt: "Cómo actuar cuando la base de datos está saturada"
 section: 'Bases de datos'
 order: 06
+updated: 2023-02-16
 ---
 
-**Última actualización: 26/01/2023**
+**Última actualización: 16/02/2023**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -124,15 +125,15 @@ Una vez que haya determinado si el contenido de las tablas es necesario para el 
 
 Deberá bascular su base de datos con una base de datos más voluminosa.
 
-Consulte nuestra oferta de bases de datos [SQL Privado/CloudDB](https://www.ovhcloud.com/es/web-hosting/options/) para elegir su nuevo servicio de bases de datos. 
+Consulte nuestra oferta de bases de datos [SQL Privado/Web Cloud Databases](https://www.ovhcloud.com/es/web-hosting/options/) para elegir su nuevo servicio de bases de datos. 
 
 Es recomendable para bases de datos de gran tamaño.
 
 Consulte nuestras guías para mover el contenido de su antigua base de datos a la nueva:
 
 - [Exportar la base de datos existente](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/)
-- [Primeros pasos con SQL Privado/CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/)
-- [Importar su antigua base de datos a su solución SQL Privado/CloudDB](https://docs.ovh.com/es/clouddb/restaurar-importar-base-de-datos/)
+- [Primeros pasos con SQL Privado/Web Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/)
+- [Importar su antigua base de datos a su solución SQL Privado/Web Cloud Databases](https://docs.ovh.com/es/clouddb/restaurar-importar-base-de-datos/)
 
 #### Caso n°2 - No es necesario para el funcionamiento de su sitio web una parte o el conjunto del contenido de la tabla voluminosa
 

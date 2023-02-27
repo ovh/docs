@@ -5,6 +5,7 @@ slug: multisite-configuratie-meerdere-websites
 excerpt: 'Ontdek hoe u verschillende sites op uw hostingplan kunt hosten'
 section: 'Aan de slag'
 order: 1
+updated: 2022-11-04
 ---
 
 **Laatste update 07-09-2018**

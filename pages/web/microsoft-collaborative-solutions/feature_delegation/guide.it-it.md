@@ -4,6 +4,7 @@ excerpt: 'Come assegnare i diritti del tuo email a un altro account'
 slug: exchange_2013_assegna_i_diritti_full_access_a_un_account
 section: Funzionalità degli account Exchange
 order: 03
+updated: 2020-10-24
 ---
 
 **Ultimo aggiornamento: 24/10/2020**

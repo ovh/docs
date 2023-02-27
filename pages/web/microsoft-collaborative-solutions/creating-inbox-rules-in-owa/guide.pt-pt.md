@@ -4,6 +4,7 @@ slug: criar-regras-inbox-no-owa
 excerpt: 'Saiba como redirecionar e-mails e criar filtros através do OWA'
 section: 'Utilização do Outlook Web Application (OWA)'
 order: 05
+updated: 2020-03-11
 ---
 
 **Última atualização 30/04/2020**

@@ -3,6 +3,7 @@ title: 'Direcciones IP de los clusters y alojamientos web'
 slug: lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web
 section: 'Configuración del alojamiento'
 order: 01
+updated: 2021-01-08
 ---
 
 **Última actualización: 08/01/2021**

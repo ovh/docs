@@ -3,6 +3,7 @@ title: User administration
 slug: administration-users
 section: Administration
 order: 11
+updated: 2022-06-24
 ---
 
 **Last updated 24th June 2022**

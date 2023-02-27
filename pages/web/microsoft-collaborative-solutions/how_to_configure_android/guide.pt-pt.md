@@ -4,6 +4,7 @@ excerpt: ''
 slug: exchange_20132016_configuracao_em_android
 section: Configuração no smartphone/tablet
 order: 02
+updated: 2018-03-12
 ---
 
 

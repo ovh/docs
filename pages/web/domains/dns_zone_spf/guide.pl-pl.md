@@ -3,6 +3,7 @@ title: Konfiguracja rekordu SPF w strefie DNS nazwy domeny
 slug: uslugi_www_pole_spf
 excerpt: Zobacz, jak dodać rekord SPF w strefie DNS nazwy domeny na serwerze OVHcloud
 section: Konfiguracja zaawansowana
+updated: 2022-09-12
 ---
 
 > [!primary]

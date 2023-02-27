@@ -5,6 +5,7 @@ slug: mail_partilhado_guia_dos_reencaminhamentos_email
 section: 'Funcionalidades dos endereços e-mail'
 legacy_guide_number: g2001
 order: 01
+updated: 2020-05-20
 ---
 
 **Última atualização: 16/04/2020**

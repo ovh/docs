@@ -4,6 +4,7 @@ slug: pierwsze-kroki-hosting
 excerpt: Zobacz, jak właściwie rozpocząć korzystanie z hostingu
 section: Pierwsze kroki
 order: 02
+updated: 2022-11-11
 ---
 
 **Ostatnia aktualizacja dnia 2022-11-14**

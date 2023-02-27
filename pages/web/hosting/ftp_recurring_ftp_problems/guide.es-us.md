@@ -4,6 +4,7 @@ excerpt: Encuentre aquí las anomalías más frecuentes asociadas a su programa 
 slug: agrupe-los-problemes-ftp-recurrents
 section: FTP y SSH
 order: 04
+updated: 2022-01-05
 ---
 
 > [!primary]

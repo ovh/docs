@@ -4,13 +4,14 @@ slug: database-overquota
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
 section: Datenbanken
 order: 06
+updated: 2023-02-16
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 19.01.2023**
+**Letzte Aktualisierung am 16.02.2023**
 
 ## Ziel
 
@@ -123,15 +124,15 @@ Sobald Sie festgestellt haben, ob der Inhalt der Tabellen für das Funktionieren
 
 Führen Sie ein Upgrade Ihres Datenbankdienstes auf ein Angebot durch, das mehr Speicherplatz für Datenbanken enthält.
 
-Konsultieren Sie unser Angebot [Cloud Databases](https://www.ovh.de/cloud/cloud-databases/), um sich über die Optionen zu informieren. 
+Konsultieren Sie unser Angebot [Web Cloud Databasess](https://www.ovh.de/cloud/cloud-databases/), um sich über die Optionen zu informieren. 
 
 Wir empfehlen diese Lösung für große Datenbanken.
 
 Folgen Sie dann unseren Anleitungen, um den Inhalt Ihrer alten Datenbank auf die neue zu verschieben:
 
 - [Exportieren Sie Ihre bestehende Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/)
-- [Erste Schritte mit Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
-- [Importieren Sie Ihre alte Datenbank nach Cloud Databases](https://docs.ovh.com/de/clouddb/datenbank-importieren/)
+- [Erste Schritte mit Web Cloud Databasess](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
+- [Importieren Sie Ihre alte Datenbank nach Web Cloud Databasess](https://docs.ovh.com/de/clouddb/datenbank-importieren/)
 
 #### Fall 2 - Der Inhalt der großen Tabelle ist nicht oder nur teilweise für das Funktionieren Ihrer Website erforderlich
 

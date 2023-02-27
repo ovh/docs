@@ -4,6 +4,7 @@ slug: api-whois
 excerpt: "Use the OVHcloud public API to configure the display of your contact data in the Whois"
 section: "Domains API"
 order: 07
+updated: 2022-05-05
 ---
 
 **Last updated 5th May 2022**

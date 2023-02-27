@@ -4,6 +4,7 @@ slug: activate-email-web-hosting
 excerpt: Find out how to activate the email addresses included in your Web Hosting plan
 section: Getting started
 order: 07
+updated: 2022-11-18
 ---
 
 **Last updated 17th August 2020**

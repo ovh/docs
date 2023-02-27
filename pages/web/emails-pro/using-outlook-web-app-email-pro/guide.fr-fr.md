@@ -3,6 +3,7 @@ title: 'Consulter son compte E-mail depuis l’interface OWA'
 slug: using-outlook-web-app-email-pro
 section: 'Premiers pas'
 order: 2
+updated: 2021-06-25
 ---
 
 **Dernière mise à jour le 26/02/2021**

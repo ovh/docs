@@ -4,6 +4,7 @@ slug: premiers-pas-avec-cloud-web
 excerpt: Découvrez comment bien débuter avec un hébergement Cloud Web
 section: Premiers pas
 order: 01
+updated: 2022-05-04
 ---
 
 **Dernière mise à jour le 04/05/2022**

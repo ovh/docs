@@ -4,6 +4,7 @@ slug: change-password-database
 excerpt: Find out how to change the password for a database created as part of a Web Hosting plan
 section: Databases
 order: 02
+updated: 2022-01-26
 ---
 
 **Last updated 26th January 2022**

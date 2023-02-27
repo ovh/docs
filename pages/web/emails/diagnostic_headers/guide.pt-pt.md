@@ -5,6 +5,7 @@ legacy_guide_number: 1365
 excerpt: 'Saiba como obter um cabeçalho de e-mail no seu cliente de e-mail'
 section: Diagnóstico
 order: 03
+updated: 2021-11-19
 ---
 
 <style>

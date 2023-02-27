@@ -2,6 +2,7 @@
 title: 'Weniger sichere Verbindungen in Google Mail zulassen'
 slug: gmail-sicherheit
 hidden: true
+updated: 2022-04-06
 ---
 
 **Letzte Aktualisierung am 06.04.2022**

@@ -4,6 +4,7 @@ excerpt: 'Find out how to configure scheduled jobs on your Web Hosting'
 slug: hosting_automated_taskscron
 section: 'Automated tasks (CRON)'
 order: 01
+updated: 2022-12-01
 ---
 
 **Last updated 1st December 2022**

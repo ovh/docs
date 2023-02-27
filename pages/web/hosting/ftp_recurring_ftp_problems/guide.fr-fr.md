@@ -4,6 +4,7 @@ excerpt: "Retrouvez ici les anomalies les plus fréquentes liées à votre logic
 slug: mutualise-les-problemes-ftp-recurrents
 section: FTP et SSH
 order: 04
+updated: 2022-01-05
 ---
 
 **Dernière mise à jour le 05/01/2022**

@@ -4,6 +4,7 @@ slug: guia_de_utilizacao_do_acelerador_geocache_num_alojamento_web
 excerpt: 'Melhore o seu site acelerando o seu carregamento no alojamento Web graças ao CDN'
 section: Otimizar o seu site
 order: 03
+updated: 2021-12-23
 ---
 
 > [!primary]

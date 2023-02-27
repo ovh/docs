@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie mehr über einige der kompatiblen CMS für Webhostings'
 slug: webhosting_manuelle_installation_eines_cms_systems
 section: CMS
 order: 03
+updated: 2020-02-04
 ---
 
 **Letzte Aktualisierung am 04.02.2020**

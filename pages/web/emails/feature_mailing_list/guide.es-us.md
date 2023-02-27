@@ -5,6 +5,7 @@ excerpt: 'Cómo utilizar las listas de difusión'
 section: 'Funcionalidades de las direcciones de correo electrónico'
 order: 4
 hidden: true
+updated: 2020-03-19
 ---
 
 **Última actualización: 05/05/2020**

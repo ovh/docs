@@ -4,6 +4,7 @@ slug: web_hosting_instalar_un_cms_manualmente
 excerpt: 'Instalar un CMS manualmente'
 section: CMS
 order: 03
+updated: 2020-02-04
 ---
 
 **Última actualización: 4/2/2020**

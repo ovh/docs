@@ -4,6 +4,7 @@ slug: premiere-configuration-exchange
 excerpt: Débutez avec un service Hosted Exchange
 section: Premiers pas avec Exchange
 order: 01
+updated: 2018-01-19
 ---
 
 **Dernière mise à jour le 09/01/2018**
