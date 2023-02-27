@@ -161,14 +161,14 @@ Exemple autorisant uniquement les connexions depuis l'IP 192.168.1.10 :
 Désactivez les services inutiles :  
 
 Service SLP  
-```
+```bash
 /etc/init.d/slpd stop
 esxcli network firewall ruleset set -r CIMSLP -e 0
 chkconfig slpd off
 ```
 
 Service SSH  
-```
+```bash
 /etc/init.d/SSH stop
 esxcli network firewall ruleset set -r sshServer -e 0
 chkconfig SSH off
