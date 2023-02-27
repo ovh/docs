@@ -37,7 +37,7 @@ We will configure DHCP for :
 
 First we will create a DCHP server common to all segments in Overlay.
 
-Through the NSX-T interface go to the `Networking`{.action} tab and click on `DHCP`{.action} on the left in the **IP Management** section. Then click `ADD DHCP PROFILE`{.action}.
+Through the NSX-T interface go to the `Networking`{.action} tab and click on `Networking Profiles`{.action} on the left in the **Setting** section. Then go to the `DHCP`{.action} tab and click `ADD DHCP PROFILE`{.action}.
 
 ![01 Common DHCP configuration 01](images/01-common-dhcp-configuration01.png){.thumbnail}
 
