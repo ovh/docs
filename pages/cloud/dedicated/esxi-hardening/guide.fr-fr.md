@@ -92,7 +92,7 @@ Cliquez sur le menu `Host`{.action} et accéder à la section `Monitor`{.action}
 
 > [!primary]
 >
-> Pour rappel, le Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions de ce réseau interne.
+> Pour rappel, le Network Firewall n’est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n’affectent pas les connexions provenant de ce réseau interne.
 >
 
 Nous vous proposons d'activer et d'utiliser notre solution de filtrage [Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/).  
@@ -202,44 +202,42 @@ Le service `sshServer` :
 Ce service correspond aux accès en SSH sur le port 22.  
 
 Exemple avec le service vSphereClient :  
-```bash
+```
 esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
 
 Assurez-vous que la règle de pare-feu soit active :  
-```bash
+```
 esxcli network firewall ruleset set --ruleset-id vSphereClient --enabled true
 ```
 
 Affichez la liste des IP autorisées pour cette règle :  
-```bash
+```
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
-
 Résultat :  
-```bash
+```
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  All
 ```
 
 Changer le statut du tag en le désactivant :  
-```bash
+```
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
 
 Autorisez exclusivement l'adresse IP légitime 192.168.1.10 :  
-```bash
+```
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
 
 Vérifiez la présence de l'adresse dans la liste d'accès :  
-```bash
+```
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
-
 Résultat :  
-```bash
+```
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  192.168.1.10
@@ -247,19 +245,18 @@ vSphereClient  192.168.1.10
 <br/>
 <br/>
 
-Toujours si vous souhaitez utiliser le service SSH, nous vous présentons cette fois comment autoriser/ajouter vos accès par clé SSH. 
+Toujours si vous souhaitez utiliser le service SSH, nous vous expliquons ici comment mettre en place un accès par clé SSH. 
 
-Générez les clés, l'algorythme ECDSA sur 521 bits est à prévilégier pour un maximum de protection :
+Générez les clés sur la machine devant se connecter au serveur ESXi, l'algorithme ECDSA sur 521 bits est à privilégier pour une sécurité maximale :  
 ```bash
 ssh-keygen -t ecdsa -b 521 -C "key-ecdsa-esxi-host"  -f /path-to-my-key/key-ecdsa
 ```
-Le système de verrou fonctionne avec une paire de clé : une publique et une autre privée.
+L'authentification fonctionne avec une paire de clés : une publique et une autre privée.  
 
 > [!warning]
-> Ne communiquez en aucun cas votre clé privée.
+> Ne partagez en aucun cas votre clé privée, celle-ci doit rester sur la machine où elle a été générée.
 >
 
-Seule la clé publique devra être communiquée ou envoyée aux machines vers lesquelles vous souhaitez vous connecter.
 ```bash
 Generating public/private ecdsa key pair.
 Enter file in which to save the key (/path-to-my-key/key-ecdsa_rsa):
@@ -270,19 +267,23 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 Your identification has been saved in /path-to-my-key/key-ecdsa.
 Your public key has been saved in /path-to-my-key/key-ecdsa.pub.
+```
+Seule la clé publique (key-ecdsa.pub) devra être communiquée ou déposée sur les machines auxquelles vous souhaitez vous connecter.
+```bash
 The key fingerprint is:
 SHA256:******************************************* key-ecdsa-esxi-host
 ```
+
 Transférez la clé publique vers votre hôte ESXi pour qu'elle puisse être déclarée comme étant de confiance :
 ```bash
-cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> ~/.ssh/authorized_keys'
+cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> /etc/ssh/keys-root/authorized_keys'
 ```
 
 
 
 ## Aller plus loin
 
-Encore plus de détails sur les bonnes pratiques de sécurité avec ce [guide](https://core.vmware.com/security-configuration-guide) présenté par WMware.
+Vous pourrez trouver encore plus de détails sur les bonnes pratiques de sécurité dans ce [guide](https://core.vmware.com/security-configuration-guide) présenté par WMware.
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
