@@ -2,7 +2,6 @@
 title: Configuring the reverse DNS of a Public Cloud instance
 excerpt: Find out how to set up the reverse DNS resolution
 slug: configure-reverse-dns-instance
-legacy_guide_number: 1940
 section: Management via Control Panel
 order: 7
 ---
@@ -11,7 +10,7 @@ order: 7
 
 ## Objective
 
-Reverse DNS is the complement to "forward" DNS resolution which resolves domain names into IP addresses. With reverse DNS resolution, an IP address can resolve into the domain name (or host name) it is mapped to. This means that DNS queries of the associated IP address will return this domain name.
+Reverse DNS (*rDNS*) is the complement to "forward" DNS resolution which resolves domain names into IP addresses. With reverse DNS resolution, an IP address can resolve into the domain name (or host name) it is mapped to. This means that DNS queries of the associated IP address will return this domain name.
 
 Configuring the reverse DNS resolution for an instance is especially useful when sending emails. A mail server's validation by spam protection systems will improve if a DNS lookup of the IP address resolves properly.
 
@@ -48,7 +47,7 @@ If the domain name is managed by OVHcloud as its registrar and it uses OVHcloud 
 
 ## Go further <a name="gofurther"></a>
 
-[First steps with Public Cloud instances](../public-cloud-first-steps/)
+[First steps with Public Cloud instances](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/)
 
 [Editing an OVHcloud DNS zone](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/)
 

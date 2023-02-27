@@ -2,7 +2,6 @@
 title: "Konfiguracja rewersu DNS instancji Public Cloud"
 excerpt: Dowiedz się, jak wdrożyć rewers DNS
 slug: konfiguracja_rewersu_dns_instancji
-legacy_guide_number: g1940
 section: Zarządzanie w Panelu klienta OVH
 order: 7
 ---
@@ -15,7 +14,7 @@ order: 7
 
 ## Wprowadzenie
 
-Rewers **DNS** to uzupełnienie konfiguracji "klasycznej" serwerów DNS, która pozwala na konwersję domeny na adres IP (rekord typu **A**). Dzięki tego typu zapytaniu, adres IP może zostać usunięty w nazwie domeny (rejestracja typu **PTR**). Oznacza to, że zapytania DNS na danym adresie IP będą miały nazwę domeny.
+**Rewers DNS** (*rDNS*) to uzupełnienie konfiguracji "klasycznej" serwerów DNS, która pozwala na konwersję domeny na adres IP (rekord typu **A**). Dzięki tego typu zapytaniu, adres IP może zostać usunięty w nazwie domeny (rejestracja typu **PTR**). Oznacza to, że zapytania DNS na danym adresie IP będą miały nazwę domeny.
 
 Konfiguracja **rewersu DNS** instancji jest szczególnie przydatna przy wysyłaniu e-maili. Ryzyko odrzucenia wiadomości przez system ochrony przed spamem zostanie zmniejszone, jeśli adres IP Twojego serwera poczty wychodzącej zostanie poprawnie rozwiązany w Twojej domenie.
 
