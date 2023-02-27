@@ -117,8 +117,8 @@ La règle 2 (Priority 1) bloque tout le reste.
 
 > [!warning]
 > 
-> La désactivation des services **ssh** et **slp** est fortement conseillée.  
-> Si malgré tout, vous continuez à utiliser le service ssh, restreignez au maximum son uilisation et ses accès.  
+> La désactivation des services **SSH** et **SLP** est fortement conseillée.  
+> Si malgré tout, vous continuez à utiliser le service SSH, restreignez au maximum son uilisation et ses accès.  
 > Ceci est valable également pour les accès au **shell**.  
 > Ne prévilégiez que le strict nécessaire pour chacun de vos besoins.  
 
@@ -161,7 +161,6 @@ Exemple autorisant uniquement les connexions depuis l'IP 192.168.1.10 :
 Désactivez les services inutiles :  
 
 Service SLP  
-
 ```
 /etc/init.d/slpd stop
 esxcli network firewall ruleset set -r CIMSLP -e 0
@@ -169,7 +168,6 @@ chkconfig slpd off
 ```
 
 Service SSH  
-
 ```
 /etc/init.d/SSH stop
 esxcli network firewall ruleset set -r sshServer -e 0
@@ -177,7 +175,6 @@ chkconfig SSH off
 ```
 
 Vérifiez l'ensemble des services actifs au démarrage :  
-
 ```bash
 chkconfig --list|grep on
 ```
@@ -195,11 +192,12 @@ esxcli system account list
 
 Explications sur les modification/ajustement de règle d'accès : 
   
-Le service `vSphereClient` :  
+* Le service `vSphereClient` :  
 Ce service correspond à l'interface WEB d'administration sur le port 443 (HTTPS).  
 
-Le service `sshServer` :  
+* Le service `sshServer` :  
 Ce service correspond aux accès en SSH sur le port 22.  
+
 
 Exemple avec le service vSphereClient :  
 ```
