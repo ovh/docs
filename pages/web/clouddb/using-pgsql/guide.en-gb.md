@@ -4,6 +4,7 @@ slug: getting-started-with-postgresql
 excerpt: Using Your Databases
 section: Getting started
 order: 03
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**

@@ -7,6 +7,7 @@ links:
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die Web Cloud Databases Lösung verwenden'
 section: 'Erste Schritte'
 order: 01
+updated: 2023-02-15
 ---
 
 > [!primary]

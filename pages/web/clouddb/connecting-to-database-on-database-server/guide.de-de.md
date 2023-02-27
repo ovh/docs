@@ -4,6 +4,7 @@ slug: datenbank-verbindung-auf-bdd
 excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrer Datenbank verbinden können'
 section: Konfiguration
 order: 03
+updated: 2023-02-15
 ---
 
 > [!primary]

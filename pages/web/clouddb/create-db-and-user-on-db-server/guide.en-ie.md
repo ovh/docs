@@ -4,6 +4,7 @@ slug: create-databases-and-users
 excerpt: 'Find out how to create a database on your database server'
 section: Configuration
 order: 02
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**
@@ -16,7 +17,7 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ## Requirements
 
-- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
@@ -46,7 +47,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 ![web-cloud-databases](images/web-cloud-databases-user01.png){.thumbnail}
 
-Enter a “username” and a “password”, then click `Confirm`{.action}.
+Enter a “username” and a “password”, then click `Confirm`{.action}. 
 
 ### Managing user rights
 
@@ -89,7 +90,7 @@ To delete a database on your database server, go to the `Databases` tab, then cl
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

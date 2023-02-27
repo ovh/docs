@@ -4,19 +4,20 @@ slug: configure-optimise-database-server
 excerpt: 'Find out how to configure and optimise your database server'
 section: Configuration
 order: 06
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**
 
 ## Objective
 
-With the Web Cloud Databases database servers, you can influence your server’s global settings. You can also view your server's activity. 
+With the Web Cloud Databases database servers, you can influence your server’s global settings. You can also view your server's activity.
 
 **Find out how to configure and optimise your database server.**
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
@@ -77,14 +78,14 @@ Choose the amount of RAM you want, then click `Next`{.action}. You can then choo
 > [!primary]
 >
 > The remaining term until expiration will be prorated. This pro rata calculation will be based on the expiration date of the Web Cloud Databases instance, not on the date of the purchase order.
-> 
+>
 
 Once you have confirmed your contracts, you will be redirected to the purchase order to pay for this change. It will then be effective within a few hours.
 
 > [!warning]
 >
 > If you currently have a free Web Cloud Databases with your Performance hosting plan, it will no longer be free after modifying the plan.
-> 
+>
 
 
 ### Modifying my database server’s configuration
@@ -133,10 +134,10 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 > 
 > &emsp;&emsp;Default mode of MariaDB 10.2 and higher:
 > <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
-> 
+>
 > &emsp;&emsp;Default mode of MySQL 5.6:
 > <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
->
+> 
 > &emsp;&emsp;Default mode of MySQL 5.7 and higher:
 > <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
 >
@@ -148,11 +149,11 @@ Make the necessary changes, then click `Confirm`{.action}.
 > [!warning]
 >
 > Any changes require a restart of the database server.
->
+> 
 
 #### PostgreSQL instance
 
-You cannot modify the configuration of a PostgreSQL instance. 
+You cannot modify the configuration of a PostgreSQL instance.
 
 However, you can enable extensions for your databases. To do this, go to the `Databases` tab, and click on the table icon for your database in the **Extensions** column.
 
@@ -225,7 +226,6 @@ In the `General information` tab, you will find the **SFTP** section in the **Co
 To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/).
 
 If this file is empty, you do not have any slow queries.
-
 
 #### Monitoring the RAM used
 
@@ -303,7 +303,7 @@ Avoid using **"HAVING"** for example. It increases your requests. Similarly, avo
 
 [IP address list for Web Hosting clusters](https://docs.ovh.com/ie/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

@@ -4,6 +4,7 @@ slug: comecar-com-postgresql
 excerpt: Utilize as suas bases de dados
 section: 'Primeiros passos'
 order: 03
+updated: 2023-02-15
 ---
 
 **Última atualização: 15/02/2023**

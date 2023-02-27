@@ -4,6 +4,7 @@ slug: empezar-con-mysql-y-mariadb
 excerpt: Como utilizar las bases de datos
 section: Primeros pasos
 order: 02
+updated: 2023-02-15
 ---
 
 > [!primary]

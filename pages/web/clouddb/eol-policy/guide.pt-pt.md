@@ -2,6 +2,7 @@
 title: 'Política de fim de vida das bases de dados geridas'
 slug: managed-db-life-cycle-policy
 section: 'Recursos técnicos'
+updated: 2023-02-15
 ---
 
 > [!primary]

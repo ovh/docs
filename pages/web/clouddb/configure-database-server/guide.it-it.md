@@ -4,6 +4,7 @@ slug: configurare-ottimizzare-il-tuo-database-server
 excerpt: Come configurare e ottimizzare il tuo database server
 section: Configurazione
 order: 06
+updated: 2023-02-15
 ---
 
 > [!primary]

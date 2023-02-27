@@ -4,6 +4,7 @@ slug: pierwsze-kroki-z-postgresql
 excerpt: Korzystanie z baz danych
 section: 'Pierwsze kroki'
 order: 03
+updated: 2023-02-15
 ---
 
 **Ostatnia aktualizacja dnia 15-02-2023**
