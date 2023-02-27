@@ -245,15 +245,16 @@ vSphereClient  192.168.1.10
 
 Toujours si vous souhaitez utiliser le service SSH, nous vous expliquons ici comment mettre en place un accès par clé SSH. 
 
-Générez les clés sur la machine devant se connecter au serveur ESXi, l'algorithme ECDSA sur 521 bits est à privilégier pour une sécurité maximale :  
+Générez les clés sur la machine devant se connecter au serveur ESXi, l'algorithme **ECDSA** sur 521 bits est à privilégier pour une sécurité maximale :  
+
+> [!warning]
+> L'authentification fonctionne avec une paire de clés : une publique et une autre privée.  
+> Ne partagez en aucun cas votre clé **privée**, celle-ci doit rester sur la machine où elle a été générée.
+
+Exécutez la commande suivante :  
 ```bash
 ssh-keygen -t ecdsa -b 521 -C "key-ecdsa-esxi-host"  -f /path-to-my-key/key-ecdsa
 ```
-L'authentification fonctionne avec une paire de clés : une publique et une autre privée.  
-
-> [!warning]
-> Ne partagez en aucun cas votre clé privée, celle-ci doit rester sur la machine où elle a été générée.
->
 
 ```bash
 Generating public/private ecdsa key pair.
