@@ -7,7 +7,7 @@ order: 05
 updated: 2023-02-24
 ---
 
-**Last updated 24tht February, 2023.**
+**Last updated 24th February, 2023.**
 
 > [!primary]
 >
