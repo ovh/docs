@@ -6,6 +6,7 @@ section: AI Training - Guides
 order: 8
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/billing/'
+updated: 2023-02-14
 ---
 
 **Last updated 14th February, 2023.**

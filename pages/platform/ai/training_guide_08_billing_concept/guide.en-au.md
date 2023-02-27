@@ -4,6 +4,7 @@ slug: training/billing
 excerpt: Learn how we bill AI Training
 section: AI Training - Guides
 order: 8
+updated: 2023-02-14
 ---
 
 **Last updated 14th February, 2023.**
