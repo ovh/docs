@@ -263,11 +263,11 @@ Renseignez un mot de passe robuste :
 ```bash
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
-Your identification has been saved in /path-to-my-key/key-ecdsa.
-Your public key has been saved in /path-to-my-key/key-ecdsa.pub.
 ```
 Seule la clé publique (key-ecdsa.pub) devra être communiquée ou déposée sur les machines auxquelles vous souhaitez vous connecter.
 ```bash
+Your identification has been saved in /path-to-my-key/key-ecdsa.
+Your public key has been saved in /path-to-my-key/key-ecdsa.pub.
 The key fingerprint is:
 SHA256:******************************************* key-ecdsa-esxi-host
 ```
