@@ -185,7 +185,7 @@ Los enlaces se construirán a partir del slug que haya indicado anteriormente al
 
 ## Más información <a name="go-further"></a>
 
-Almacene sus accesos en un gestor de contraseñas como [KeePass](https://keepass.info/){.external}.
+- Almacene sus accesos en un gestor de contraseñas como [KeePass](https://keepass.info/){.external}.
 - Pruebe online el editor predeterminado [Gutenberg](https://wordpress.org/gutenberg/){.external}.
 - Recursos para encontrar temas WordPress:
     - [WordPress Themes](https://wordpress.com/themes){.external}

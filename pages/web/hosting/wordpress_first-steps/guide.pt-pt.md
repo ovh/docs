@@ -64,7 +64,7 @@ Introduza o login (ou o "nome do administrador") que lhe foi fornecido por e-mai
 
 Os **temas WordPress** são conjuntos de ficheiros que permitem alterar a apresentação do seu website sem alterar o seu conteúdo. Existem muitos temas disponíveis na Internet, gratuitos e pagos, com diferentes temas (websites, blogs, e-commerce, imprensa online, etc.).
 
-Para modificar o tema, clique no menu à esquerda do painel de controlo, clique em `Aparence`{.action} e, a seguir, em `Thmes`{.action}:
+Para modificar o tema, clique no menu à esquerda do painel de controlo, clique em `Aparence`{.action} e, a seguir, em `Themes`{.action}:
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps_3.png){.thumbnail}
 

@@ -12,7 +12,7 @@ updated: 2023-02-17
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
-  
+
 ## Wprowadzenie
 
 Tutorial ten pozwoli Ci na tworzenie pierwszych treści, ich organizację, umieszczenie w Internecie i zmianę motywu Twojej strony WWW za pomocą Content Management System (CMS) **WordPress**. Możesz uruchomić Twoją stronę WWW bez konieczności posiadania wiedzy z zakresu programowania, z szerokim wachlarzem tematów, takich jak firmowa strona WWW, blog czy strona internetowa, która pozwoli Ci poznać Twoją działalność i pasję.
@@ -121,7 +121,7 @@ Wpisz teraz formularz, aby dodać nową kategorię:
 
 ![WordPress - Categories filled](images/wordpress_first_steps_12.png){.thumbnail}
 
-Po podaniu tych informacji kliknij przycisk 'Dodaj nową kategorię`{.action}:
+Po podaniu tych informacji kliknij przycisk `Dodaj nową kategorię`{.action}:
 
 ![WordPress - Categories added](images/wordpress_first_steps_13.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Przejdź do strony `Strony`{.action}:
 > Domyślnie istnieje strona, która jest generowana podczas instalacji **WordPress**. Ze względu na czytelność tej strony usunięto ją z przykładu.
 >
 
-Kliknij na 'Dodaj`{.action}. Wówczas pojawił się redaktor Gutenberg:
+Kliknij na `Dodaj`{.action}. Wówczas pojawił się redaktor Gutenberg:
 
 ![WordPress - Parges, Gutenberg page builder](images/wordpress_first_steps_18.png){.thumbnail}
 
@@ -173,7 +173,7 @@ Możesz powrócić na stronę główną Twojej strony WWW, otrzymasz link do now
 
 Domyślnie linki na Twoich stronach **WordPress** są napisane z składnią typu `parametr=wartość`, `która` jest liczbą całkowitą, która nie jest wyraźna. Modyfikacja zapisu permalinki pozwala na posiadanie adresów URL o bardziej wyraźnym formacie. Adresy URL będą łatwiejsze do odczytania, co poprawi pozycjonowanie Twojej strony www.
 
-Na stronie głównej dashboardu przejdź do `Ustawienia`{.action}, a następnie kliknij `Permalien`{.action}:
+Na stronie głównej dashboardu przejdź do `Ustawienia`{.action}, a następnie kliknij `permalię`{.action}:
 
 ![WordPress - Settings/Permalinks](images/wordpress_first_steps_21.png){.thumbnail}
 
