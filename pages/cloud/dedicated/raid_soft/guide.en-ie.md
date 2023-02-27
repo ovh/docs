@@ -94,7 +94,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 The `fdisk -l` command also allows you to identify your partition type. This is an important information when it comes to rebuilding your RAID in case of a disk failure.
 
-For GPT partitions, the command will return: `Disklabel type: gpt`.
+For **GPT** partitions, the command will return: `Disklabel type: gpt`.
 
 ```sh
 Disk /dev/sdb: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
@@ -102,11 +102,11 @@ Disk model: HGST HUS724020AL
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: gpt`
+'Disklabel type: gpt'
 Disk identifier: F92B6C5B-2518-4B2D-8FF9-A311DED5845F
 ```
 
-For MBR partitions, the command will return: `Disklabel type: dos`.
+For **MBR** partitions, the command will return: `Disklabel type: dos`.
 
 ```sh
 Disk /dev/sda: 2.5 GiB, 2621440000 bytes, 5120000 sectors
@@ -114,7 +114,7 @@ Disk model: QEMU HARDDISK
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
-`Disklabel type: dos`              
+'Disklabel type: dos'            
 Disk identifier: 0x150f6797
 ```
 
@@ -185,7 +185,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Please note that if you are connected as the user root, you may get the following message when you try to unmount the partition (in our case, where our md4 partition is mounted in /home):
+> Please note that if you are connected as the user `root`, you may get the following message when you try to unmount the partition (in our case, where our md4 partition is mounted in /home):
 > 
 > `umount: /home: target is busy`
 >

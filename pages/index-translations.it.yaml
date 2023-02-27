@@ -154,6 +154,7 @@ public-cloud-databases-redis-guides: Redis - Guides
 public-cloud-databases-redis-tutorials: Redis - Tutorials
 public-cloud-databases-grafana: Grafana
 public-cloud-databases-grafana-guides: Grafana - Guides
+public-cloud-databases-grafana-tutorials: Grafana - Tutorials
 public-cloud-databases-kafka: Kafka
 public-cloud-databases-kafka-guides: Kafka - Guides
 public-cloud-databases-kafka-connect: Kafka Connect
@@ -201,7 +202,7 @@ public-cloud-storage-block-storage: Block Storage
 public-cloud-storage-block-storage-cloud-disk-array: Cloud Disk Array
 public-cloud-storage-backup-and-disaster-recovery-solution: Backup and disaster recovery solution
 public-cloud-storage-backup-and-disaster-recovery-solution-veeam: Veeam
-web-cloud-clouddb: CloudDB
+web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Per iniziare
 web-cloud-clouddb-configuration: Configurazione
 web-cloud-clouddb-technical-resources: Risorse tecniche
@@ -259,6 +260,7 @@ web-cloud-messaging-sms-advanced-usage: Utilizzo avanzato
 web-cloud-messaging-sms-getting-started: Per iniziare
 web-cloud-messaging-sms-managing-your-solution: Gestisci la tua soluzione
 web-cloud-messaging-sms-sending-sms-messages: Invio SMS
+web-cloud-messaging-sms-smpp: SMPP
 web-cloud-phone-and-fax: Telefono e Fax
 web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Per iniziare

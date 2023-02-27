@@ -8,54 +8,25 @@ updated: 2023-02-06
 ---
 
 <style>
-table thead {
-  display: none;
+#content table,
+.ovh-documentation table {margin-bottom:25px;overflow:unset !important;}
+
+#content tbody,
+.ovh-documentation tbody {display: inline-table !important;width:100% !important;}
+
+#content thead,
+.ovh-documentation thead {display:none}
+
+#content tr:nth-child(2n),
+.ovh-documentation tr:nth-child(2n) {
+  background: none !important;
 }
-table tr {
-  display: block;
-  margin-bottom: 40px;
-}
-table tr:nth-child(2n) {
-  background:none !important;
-}
-table tr:last-child {
-  margin-bottom: 0;
-}
-table td {
-  border-bottom:none !important;
-  box-shadow:inset 13ch 0 0 rgb(241, 241, 241),inset calc(13ch + 1px) 0 0 #59d2ef;
-  display: block;
-  min-height:46px;
-  position: relative;
-  padding-left:14ch !important;
-}
-table td:last-child {
-  border-bottom:1px solid #59d2ef !important;
-}
-table td:before {
-  color: #000;
-  font-weight: 600 !important;
-  left: 0;
-  padding: 0 1ch;
-  position: absolute;
-}
-table td:nth-child(1):before {
-  content:'Parameter';
-}
-table td:nth-child(2):before {
-  content:'Type';
-}
-table td:nth-child(3):before {
-  content:'Minimum';
-}
-table td:nth-child(4):before {
-  content:'Maximum';
-}
-table td:nth-child(5):before {
-  content:'Values';
-}
-table td:nth-child(6):before {
-  content:'Description';
+#content td:first-child,
+.ovh-documentation td:first-child {
+  background:#efefef;
+  font-weight:600;
+  vertical-align:top;
+  width:11ch;
 }
 </style>
 
@@ -88,13 +59,56 @@ Please refer to this [guide](https://docs.ovh.com/ie/en/publiccloud/databases/ad
 
 Below you can find a summary of every configuration option available for Grafana service:
 
-| Parameter | Value Type | Minimum | Maximum | Values | Description |
-|:---|:---|:---|:---|:---|:---|
-| `smtp_server.from_address` | string | | | | Address used for sending emails |
-| `smtp_server.host` | string | | | | Server hostname or IP |
-| `smtp_server.port` | long | 1 | 65535  | | SMTP server port |
-| `smtp_server.skip_verify` | boolean | | | | Skip verifying server certificate. Defaults to false |
-| `smtp_server.starttls_policy` | string | | | "MandatoryStartTLS", "NoStartTLS", "OpportunisticStartTLS" | Either OpportunisticStartTLS, MandatoryStartTLS or NoStartTLS. Default is OpportunisticStartTLS. |
+| | |
+|---|---|
+| Parameter | `smtp_server.from_address` |
+| Value type | string |
+| Minumum | |
+| Maximum | |
+| Values | |
+| Description | Address used for sending emails |
+
+
+| | |
+|---|---|
+| Parameter | `smtp_server.host` |
+| Value type | string |
+| Minumum | |
+| Maximum | |
+| Values | |
+| Description | Server hostname or IP |
+
+
+| | |
+|---|---|
+| Parameter | `smtp_server.port` |
+| Value type | long |
+| Minumum | 1 |
+| Maximum | 65535  |
+| Values | |
+| Description | SMTP server port |
+
+
+| | |
+|---|---|
+| Parameter | `smtp_server.skip_verify` |
+| Value type | boolean |
+| Minumum | |
+| Maximum | |
+| Values | |
+| Description | Skip verifying server certificate. Defaults to false |
+
+
+| | |
+|---|---|
+| Parameter | `smtp_server.starttls_policy` |
+| Value type | string |
+| Minumum | |
+| Maximum | |
+| Values | "MandatoryStartTLS", "NoStartTLS", "OpportunisticStartTLS" |
+| Description | Either OpportunisticStartTLS, MandatoryStartTLS or NoStartTLS. Default is OpportunisticStartTLS. |
+
+
 
 
 ## Go further

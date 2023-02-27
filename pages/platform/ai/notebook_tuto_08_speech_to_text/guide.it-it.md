@@ -40,7 +40,7 @@ This documentation allows you to test and launch **3 AI Notebooks** allowing you
 
 You can launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) or via the ovhai [CLI](https://docs.ovh.com/it/publiccloud/ai/cli/getting-started-cli/).
 
-Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/speech-to-text/conda).
+Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/speech-to-text/miniconda).
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
@@ -112,9 +112,9 @@ You can then reach your notebook’s URL once the notebook is running.
 
 Once the repository has been cloned, find your notebook by following this path: `ai-training-examples` > `notebooks` > `natural-language-processing` > `speech-to-text`.
 
-1. You can find the first tutorial in the `basics` folder. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/conda/basics/speech-to-text-basics.ipynb).
-2. The second tutorial corresponds to the `advanced` folder. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/conda/advanced/speech-to-text-advanced.ipynb).
-3. The last folder, named `compare-models`, contains the third tutorial. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/conda/compare-models/speech-to-text-compare-models.ipynb).
+1. You can find the first tutorial in the `basics` folder. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/miniconda/basics/speech-to-text-basics.ipynb).
+2. The second tutorial corresponds to the `advanced` folder. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/miniconda/advanced/speech-to-text-advanced.ipynb).
+3. The last folder, named `compare-models`, contains the third tutorial. A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/speech-to-text/miniconda/compare-models/speech-to-text-compare-models.ipynb).
 
 ## Go further
 
