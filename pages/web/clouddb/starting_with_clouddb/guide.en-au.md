@@ -1,6 +1,6 @@
 ---
 title: 'Getting started with the Web Cloud Databases service'
-slug: getting-started-with-clouddb
+slug: getting-started-withclouddb
 excerpt: 'Find out how to get started with the Web Cloud Databases service'
 section: 'Getting started'
 order: 01
@@ -18,14 +18,14 @@ Your Web Cloud Databases solution is linked to the OVHcloud web hosting network 
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in [Performance web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/)).
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in [Performance web hosting plans](https://www.ovhcloud.com/en-au/web-hosting/)).
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
 
 ### Web Cloud Databases server activation included with your Web Hosting plan
 
-If your hosting plan includes the Web Cloud Databases option, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. In the `Web Cloud`{.action} section, click `Hosting plans`{.action} in the left-hand column.
+If your hosting plan includes the Web Cloud Databases option, go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. In the `Web Cloud`{.action} section, click `Hosting plans`{.action} in the left-hand column.
 
 In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Web Cloud Databases**. Then click `Enable`{.action} to start the activation process.
 
@@ -35,7 +35,7 @@ To complete the activation, follow the instructions to determine the type and ve
 
 ### View general information about the instance
 
-In the services bar on the left-hand side of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Web Cloud Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, go to the `Web Cloud Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
 
 > [!primary]
 >
@@ -223,6 +223,6 @@ The log file, named `stdout.log`, is located at the root.
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

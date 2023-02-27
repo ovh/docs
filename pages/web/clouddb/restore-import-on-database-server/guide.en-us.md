@@ -17,8 +17,8 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en/web-hosting/)) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
@@ -30,7 +30,7 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ### Restoring and importing a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the database name concerned. Next, switch to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the database name concerned. Next, switch to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the available backups for your database.
 
@@ -86,7 +86,7 @@ In some cases, the RAM available in your database server may not be sufficient t
 
 #### Importing MySQL or MariaDB databases with phpMyAdmin
 
-To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide](https://docs.ovh.com/ie/en/clouddb/connecting-to-database-on-database-server/#logging-in-to-a-mysql-or-mariadb-database).
+To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide](https://docs.ovh.com/us/en/clouddb/connecting-to-database-on-database-server/#logging-in-to-a-mysql-or-mariadb-database).
 
 Once you have logged in to phpMyAdmin, select your database by clicking on its name.
 
@@ -105,7 +105,7 @@ Keep the default options and click `Run`{.action} to start the import.
 
 #### Exporting a MySQL or MariaDB database from the command line
 
-This action is only possible via [SSH](https://docs.ovh.com/ie/en/hosting/web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan.
+This action is only possible via [SSH](https://docs.ovh.com/us/en/hosting/web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan.
 
 ```bash
 cat database_name.sql | mysql --host=server --user=username --port=port --password=password database_name
@@ -123,7 +123,7 @@ cat database_name.sql | mysql --host=server --user=username --port=port --passwo
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/ie/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/us/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
@@ -133,7 +133,7 @@ In some cases, the RAM available in your database server does not allow you to c
 
 #### Importing a PostgreSQL database from the command line
 
-This action is only possible via [SSH](https://docs.ovh.com/ie/en/hosting/web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan, in stable or higher versions.
+This action is only possible via [SSH](https://docs.ovh.com/us/en/hosting/web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan, in stable or higher versions.
 
 ```bash
 psql --host=server --port=port --user=username --password=password database_name < database_name.sql
@@ -151,7 +151,7 @@ psql --host=server --port=port --user=username --password=password database_name
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/ie/en/hosting/how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/us/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
@@ -159,6 +159,6 @@ psql --host=server --port=port --user=username --password=password database_name
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
