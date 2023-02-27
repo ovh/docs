@@ -4,6 +4,7 @@ slug: getting-started-with-clouddb
 excerpt: 'Find out how to get started with the Web Cloud Databases service'
 section: 'Getting started'
 order: 01
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**
@@ -17,7 +18,7 @@ Your Web Cloud Databases solution is linked to the OVHcloud web hosting network 
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-ie/web-hosting/) (included in [Performance web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in [Performance web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
@@ -28,7 +29,7 @@ If your hosting plan includes the Web Cloud Databases option, go to the [OVHclou
 
 In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Web Cloud Databases**. Then click `Enable`{.action} to start the activation process.
 
-![General information](images/web-cloud-databases-activation.png){.thumbnail}
+![Informations générales](images/web-cloud-databases-activation.png){.thumbnail}
 
 To complete the activation, follow the instructions to determine the type and version of your Web Cloud Databases server. It will then be accessible from the left column in `Web Cloud Databases`{.action}.
 
@@ -155,7 +156,7 @@ Finally, choose whether or not the additional options set out below should apply
 
 ![Web Cloud Databases](images/web-cloud-databases-add-import-step3.png){.thumbnail} 
 
-### Authorise an IP address
+### Authorise an IP address <a name="trustip"></a>
 
 In order for your Web Cloud Databases instance to be accessible, you must enter the IP addresses or ranges that can connect to your database. To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
@@ -170,6 +171,8 @@ In the window that pops up, enter the IP address or mask that you wish to author
 By default, your Web Cloud Databases solution is automatically linked to OVHcloud web hosting plans. However, you can disable access to your Web Cloud Databases database for OVHcloud web hosting plans if you wish.
 
 To do this, click on the `authorised IPs`{.action} tab then on the `Access to OVHcloud web hosting plans`{.action} button.
+
+![Web Cloud Databases](images/web-cloud-databases-add-ip-step3-2022.png){.thumbnail}
 
 ### Link your website to the database
 
@@ -187,7 +190,7 @@ No matter which method you choose to follow, you must have the following five pi
 
 > [!warning]
 >
-> In some rare cases, the `port`{.action} field may not be available in your website’s configuration. If this is the case, you will need to add this field after your server’s host name, separating them with a *:* (e.g.: hostname:port).
+> In some rare cases, the `port`{.action} field may not be available in your website’s configuration. If this is the case, you will need to add this field after your server’s host name, separating them with a *:*, i.e. `hostname:port`.
 >
 
 ![Web Cloud Databases](images/web-cloud-databases-login-information.png){.thumbnail}
@@ -218,7 +221,7 @@ The log file, named `stdout.log`, is located at the root.
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

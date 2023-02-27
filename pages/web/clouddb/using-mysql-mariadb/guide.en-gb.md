@@ -4,6 +4,7 @@ slug: get-started-with-mysql-and-mariadb
 excerpt: Using Your Databases
 section: Getting started
 order: 02
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**

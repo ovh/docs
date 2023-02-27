@@ -4,6 +4,7 @@ slug: getting-started-withclouddb
 excerpt: 'Find out how to get started with the Web Cloud Databases service'
 section: 'Getting started'
 order: 01
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**
