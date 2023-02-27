@@ -200,17 +200,17 @@ Ce service correspond aux accès en SSH sur le port 22.
 
 
 Exemple avec le service vSphereClient :  
-```
+```bash
 esxcli network firewall ruleset list --ruleset-id vSphereClient
 ```
 
 Assurez-vous que la règle de pare-feu soit active :  
-```
+```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --enabled true
 ```
 
 Affichez la liste des IP autorisées pour cette règle :  
-```
+```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
 Résultat :  
@@ -221,17 +221,17 @@ vSphereClient  All
 ```
 
 Changer le statut du tag en le désactivant :  
-```
+```bash
 esxcli network firewall ruleset set --ruleset-id vSphereClient --allowed-all false
 ```
 
 Autorisez exclusivement l'adresse IP légitime 192.168.1.10 :  
-```
+```bash
 esxcli network firewall ruleset allowedip add --ruleset-id vSphereClient --ip-address 192.168.1.10
 ```
 
 Vérifiez la présence de l'adresse dans la liste d'accès :  
-```
+```bash
 esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 ```
 Résultat :  
