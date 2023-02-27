@@ -4,10 +4,10 @@ slug: install_composer_on_web_hosting_packages
 excerpt: Find out how to install and take your first steps with Composer
 section: PHP
 order: 02
-updated: 2022-12-09
+updated: 2023-02-24
 ---
 
-**Last updated 09th December 2022**
+**Last updated 24th February 2023**
 
 ## Objective
 
@@ -16,10 +16,11 @@ updated: 2022-12-09
 **This guide explains how to install Composer and provides an example of usage with a Web Hosting plan.**
 
 > [!warning]
->This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
 >
-If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-au/directory/) and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
-> 
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) or reach out to the OVHcloud community if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+>
 
 ## Requirements
 
@@ -84,6 +85,10 @@ php composer.phar install
 To use this library, you can refer to the documentation, as well as the code, available on [GitHub](https://github.com/ovh/php-ovh){.external}.
 
 
-## Go further
+## Go further <a name="go-further"></a>
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
