@@ -1,6 +1,6 @@
 ---
 title: Implementing NAT for port redirections
-slug: nsx-t-configure-nat-redirection
+slug: nsx-configure-nat-redirection
 excerpt: How to Configure NAT to Create Port Redirection
 section: NSX
 order: 07
@@ -10,7 +10,7 @@ order: 07
 
 ## Objectif
 
-**Comment configurer le NAT pour créer une redirection de port avec NSX-T**
+**Comment configurer le NAT pour créer une redirection de port avec NSX**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -22,15 +22,15 @@ order: 07
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Having **NSX-T** deployed with two segments configured in your NSX-T configuration, you can use this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use this guide [Segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management).
 
 ## Instructions
 
-When you deploy your NSX-T solution, a SNAT rule is automatically created by OVHcloud, so you can go online from your segments.
+When you deploy your NSX solution, a SNAT rule is automatically created by OVHcloud, so you can go online from your segments.
 
 We will add a redirection rule (DNAT) from the public virtual IP address on port 2222 in TCP to a virtual machine on LINUX on port 22 in TCP. In our example, we will use fictitious IP addresses.
 
-In the NSX-T interface, go to the `Networking`{.action} tab, select `NAT`{.action} in the **Network Services** section, select `ovh-T0-gw | Tier-0`{.action} to the right of **Gateway** and click `ADD NAT RULE`{.action}.
+In the NSX interface, go to the `Networking`{.action} tab, select `NAT`{.action} in the **Network Services** section, select `ovh-T0-gw | Tier-0`{.action} to the right of **Gateway** and click `ADD NAT RULE`{.action}.
 
 ![01 Create DNAT rule 01](images/01-create-dnat-rules01.png){.thumbnail}
 
@@ -38,7 +38,7 @@ Choose this information :
 
 * **Action** : Select `DNAT`{.action}.
 * **Source IP** : Enter the IP address or range of addresses that can use this redirection.
-* **Destination IP** : Public virtual IP address of NSX-T.
+* **Destination IP** : Public virtual IP address of NSX.
 * **Destination PORT** : Listening port on public address like `2222`{.action}.
 * **Translated IP** : IP address of the virtual machine being redirected to.
 
@@ -78,11 +78,11 @@ The rule is created and active.
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-first-steps/)
 
-[Segment management](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+[Segment management](https://docs.ovh.com/gb/en/nsx-segment-management/)
 
-[VMware NAT documentation in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
+[VMware NAT documentation in NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

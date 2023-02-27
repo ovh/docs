@@ -1,6 +1,6 @@
 ---
 title: Gestion du pare-feu des passerelles
-slug: nsx-t-manage-gateway-firewall
+slug: nsx-manage-gateway-firewall
 excerpt: Comment administrer le pare-feu des passerelles
 section: NSX
 order: 06
@@ -21,8 +21,8 @@ order: 06
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX-T** déployé avec un segment configuré dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX, vous pouvez vous aider de ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
 
 
 # Présentation
@@ -31,13 +31,13 @@ Le pare-feu de passerelles permet le filtrage entre les segments internes et le 
 
 Il fonctionne sur les passerelles de type nord-sud(Tier-0 Gateways) et est-ouest (Tier-1 Gateways) si la source ou la destination ne se trouve pas à l'intérieur du cluster.
 
-Si vous souhaitez créer des règles de filtrage entre des segments internes il sera nécessaire d'utiliser le pare-feu distribué à l'aide de ce guide [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall).
+Si vous souhaitez créer des règles de filtrage entre des segments internes il sera nécessaire d'utiliser le pare-feu distribué à l'aide de ce guide [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-manage-distributed-firewall).
 
 ## En pratique
 
 Nous allons créer une stratégie afin d'améliorer la visibilité et l'administration des règles en fonction de leurs utilités.
 
-Ensuite nous allons ajouter une règle à l'intérieur de notre stratégie qui bloque l'accès à tout le réseau externe d'un cluster depuis un groupe qui contient un segment (vous pouvez vous aider de ce guide pour créer des groupes [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall)) et de **any** pour la destination. 
+Ensuite nous allons ajouter une règle à l'intérieur de notre stratégie qui bloque l'accès à tout le réseau externe d'un cluster depuis un groupe qui contient un segment (vous pouvez vous aider de ce guide pour créer des groupes [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-manage-distributed-firewall)) et de **any** pour la destination. 
 
 Allez sur l'onglet `Security`{.action}, Sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}.
 
@@ -71,13 +71,13 @@ Votre règle est active sur la passerelle **ovh-T0-gw** elle bloque tout le traf
 
 ## Aller plus loin
 
-[Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segment dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+[Gestion des segment dans NSX](https://docs.ovh.com/fr/nsx-segment-management/)
 
-[Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-t-manage-distributed-firewall).
+[Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-manage-distributed-firewall).
 
-[Documentation VMware sur les pare-feux de passerelles dans NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
+[Documentation VMware sur les pare-feux de passerelles dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

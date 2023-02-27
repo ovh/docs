@@ -1,16 +1,16 @@
 ---
 title: DHCP Configuration
-slug: nsx-t-dhcp-configuration
-excerpt: How to add a DNS forwarder to NSX-T
+slug: nsx-configure-dns-forwarder
+excerpt: How to add a DNS forwarder to NSX
 section: NSX
 order: 04
 ---
 
 **Last updated 27th February 2023**
 
-## Objectif
+## Objective
 
-**How to Configure a DNS Redirector**
+**How to Configure a DNS forwarder**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -18,25 +18,23 @@ order: 04
 > This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
-
-
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- You need to have **NSX-T** deployed with a segment configured in your NSX-T configuration. Use this guide [Segment management in NSX-T](https://docs.ovh.com/en/us/private-cloud/nsx-t-segment-management).
+- You need to have **NSX** deployed with a segment configured in your NSX configuration. Use this guide [Segment management in NSX](https://docs.ovh.com/en/us/private-cloud/nsx-segment-management).
 
 ## Overview
 
-You can use a DNS forwarder in NSX-T that centralises all DNS queries and redirects them to external DNS servers, which reduces network traffic. You can attach the DNS forwarder to the north-south gateway (ovh-T0-gw) or the east-west gateway (ovh-T1-gw), depending on your needs.
+You can use a DNS forwarder in NSX that centralises all DNS queries and redirects them to external DNS servers, which reduces network traffic. You can attach the DNS forwarder to the north-south gateway (ovh-T0-gw) or the east-west gateway (ovh-T1-gw), depending on your needs.
 
 ## Instructions
 
-We will create a DNS redirector and attach it to the north-south gateway (ovh-t0-gw), it will be usable on all segments of NSX-T.
+We will create a DNS redirector and attach it to the north-south gateway (ovh-t0-gw), it will be usable on all segments of NSX.
 
 ### DNS forwarder configuration
 
-Through the NSX-T interface go to the `Networking`{.action} tab and click on `DNS`{.action} on the left in the **IP Management** section. Then click `ADD DNS SERVICE`{.action}.
+Through the NSX interface go to the `Networking`{.action} tab and click on `DNS`{.action} on the left in the **IP Management** section. Then click `ADD DNS SERVICE`{.action}.
 
 ![Configure DNS forwarder 01](images/01-configure-dns-forwarder01.png){.thumbnail}
 
@@ -73,7 +71,7 @@ Your DNS forwarder is active and usable on all your overlay or VLAN segments con
 
 ### Editing the DHCP server to use a DNS forwarder
 
-If you have configured DHCP servers in NSX-T as described in this guide [Configuring DHCP](https://docs.ovh.com/gb/en/nsx-t-dhcp-configuration), you have the option to modify the configuration to use the DNS forwarder in your DHCP configurations.
+If you have configured DHCP servers in NSX as described in this guide [Configuring DHCP](https://docs.ovh.com/gb/en/nsx-dhcp-configuration), you have the option to modify the configuration to use the DNS forwarder in your DHCP configurations.
 
 We will see how to modify the DNS server on the DHCP configuration of one of your segments.
 
@@ -107,13 +105,13 @@ Your segment's DHCP setting now uses the DNS forwarder you created earlier.
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-first-steps/)
 
-[Segment management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+[Segment management in NSX](https://docs.ovh.com/gb/en/nsx-segment-management/)
 
-[DHCP Configuration](https://docs.ovh.com/gb/en/nsx-t-dhcp-configuration)
+[DHCP Configuration](https://docs.ovh.com/gb/en/nsx-dhcp-configuration)
 
-[VMware DNS documentation in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
+[VMware DNS documentation in NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

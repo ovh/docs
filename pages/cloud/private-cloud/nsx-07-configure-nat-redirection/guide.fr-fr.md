@@ -1,6 +1,6 @@
 ---
 title: Mise en place du NAT pour des redirections de ports
-slug: nsx-t-configure-nat-redirection
+slug: nsx-configure-nat-redirection
 excerpt: Comment configurer le NAT pour créer une redirection de port
 section: NSX
 order: 07
@@ -10,7 +10,7 @@ order: 07
 
 ## Objectif
 
-**Comment configurer le NAT pour créer une redirection de port avec NSX-T**
+**Comment configurer le NAT pour créer une redirection de port avec NSX**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -21,18 +21,18 @@ order: 07
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX-T** déployé avec deux segment configurés dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir **NSX** déployé avec deux segment configurés dans votre configuration NSX, vous pouvez vous aider de ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
 - Avoir une machine virtuelle sous linux avec OpenSSH activé sur le port 22
 
 
 ## En pratique
 
-Lors du déploiement de votre solution NSX-T une règle de SNAT est automatiquement créée par OVHcloud pour pouvoir sortir sur internet depuis vos segments.
+Lors du déploiement de votre solution NSX une règle de SNAT est automatiquement créée par OVHcloud pour pouvoir sortir sur internet depuis vos segments.
 
 Nous allons rajouter une règle de redirection (DNAT) depuis l'adresse IP virtuelle publique sur le port 2222 en TCP vers une machine virtuelle sous LINUX sur le port 22 en TCP. Dans notre exemple nous allons utiliser des adresses IP fictives.
 
-Depuis l'interface NSX-T allez sur l'onglet `Networking`{.action}, Sélectionnez `NAT`{.action} dans la rubrique **Network Services** sélectionnez `ovh-T0-gw | Tier-0`{.action} à droite de **Gateway** et cliquez sur `ADD NAT RULE`{.action}.
+Depuis l'interface NSX allez sur l'onglet `Networking`{.action}, Sélectionnez `NAT`{.action} dans la rubrique **Network Services** sélectionnez `ovh-T0-gw | Tier-0`{.action} à droite de **Gateway** et cliquez sur `ADD NAT RULE`{.action}.
 
 ![01 Create DNAT rule 01](images/01-create-dnat-rules01.png){.thumbnail}
 
@@ -40,7 +40,7 @@ Choisissez ces informations :
 
 * **Action** : Sélectionnez `DNAT`{.action}.
 * **Source IP** : Saisissez l'adresse IP ou l'étendue des adresses qui pourront utiliser cette redirection.
-* **Destination IP** : Adresse IP virtuelle publique de NSX-T.
+* **Destination IP** : Adresse IP virtuelle publique de NSX.
 * **Destination PORT** : Port d'écoute sur l'adresse publique comme `2222`{.action}.
 * **Translated IP** : Adresse IP de la machine virtuelle sur lequel la redirection est faites.
 
@@ -80,11 +80,11 @@ La règle est créée et est active.
 
 ## Aller plus loin
 
-[Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segment dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+[Gestion des segment dans NSX](https://docs.ovh.com/fr/nsx-segment-management/)
 
-[Documentation VMware sur le NAT dans NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
+[Documentation VMware sur le NAT dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

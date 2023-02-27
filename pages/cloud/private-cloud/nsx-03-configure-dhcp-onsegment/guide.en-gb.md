@@ -1,6 +1,6 @@
 ---
 title: DHCP Configuration
-slug: nsx-t-dhcp-configuration
+slug: nsx-dhcp-configuration
 excerpt: How to Add a DHCP Server to a Segment
 section: NSX
 order: 03
@@ -8,7 +8,7 @@ order: 03
 
 **Last updated 27th February 2023**
 
-## Objectif
+## Objective
 
 **How to Configure a DHCP Server in a Segment**
 
@@ -19,11 +19,11 @@ order: 03
 >
 
 
-## Prérequis
+## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Having **NSX-T** deployed with two overlay and VLAN segments configured in your NSX-T configuration, you can use this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
+- Having **NSX** deployed with two overlay and VLAN segments configured in your NSX configuration, you can use this guide [Segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management).
 
 
 ## Instructions
@@ -37,7 +37,7 @@ We will configure DHCP for :
 
 First we will create a DCHP server common to all segments in Overlay.
 
-Through the NSX-T interface go to the `Networking`{.action} tab and click on `Networking Profiles`{.action} on the left in the **Setting** section. Then go to the `DHCP`{.action} tab and click `ADD DHCP PROFILE`{.action}.
+Through the NSX interface go to the `Networking`{.action} tab and click on `Networking Profiles`{.action} on the left in the **Setting** section. Then go to the `DHCP`{.action} tab and click `ADD DHCP PROFILE`{.action}.
 
 ![01 Common DHCP configuration 01](images/01-common-dhcp-configuration01.png){.thumbnail}
 
@@ -77,7 +77,7 @@ Click `CLOSE EDITING`{.action}.
 
 ### Setting up DHCP on an Overlay segment
 
-From the NSX-T interface go to the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section.
+From the NSX interface go to the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section.
 
 Go to the `Segments`{.action} section, click on the configuration icon indicated with `three vertical dots`{.action} to the left of your segment and choose `Edit`{.action}.
 
@@ -113,7 +113,7 @@ On a VLAN segment it is not possible to use the profile created for Overlay segm
 
 In order to have a DHCP server on this segment, we will create a DHCP configuration with a new profile directly attached to the segment.
 
-If you do not have a VLAN type segment, use the [Segment Management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/) guide to create it with these settings :
+If you do not have a VLAN type segment, use the [Segment Management in NSX](https://docs.ovh.com/gb/en/nsx-segment-management/) guide to create it with these settings :
 
 * **VLAN Subnet**: 192.168.100.0/24.
 * **Gateway and interface IP address** : 192.168.100.254/24.
@@ -161,9 +161,9 @@ The DHCP server is active on this VLAN segment.
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-first-steps/)
 
-[Segment management in NSX-T](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+[Segment management in NSX](https://docs.ovh.com/gb/en/nsx-segment-management/)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

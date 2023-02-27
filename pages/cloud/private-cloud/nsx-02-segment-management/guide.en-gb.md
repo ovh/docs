@@ -1,6 +1,6 @@
 ---
-title: Segment management in NSX-T
-slug: nsx-t-segment-management
+title: Segment management in NSX
+slug: nsx-segment-management
 excerpt: How to create and use segments
 section: NSX
 order: 02
@@ -10,7 +10,7 @@ order: 02
 
 ## Objective
 
-**Discover the creation and use of segments in the NSX-T and vCenter interface**
+**Discover the creation and use of segments in the NSX and vCenter interface**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -22,13 +22,13 @@ order: 02
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- **NSX-T** deployed.
+- **NSX** deployed.
 
 ## Overview
 
-In an NSX-T solution a segment is a virtual level 2 domain, it can be of two types :
+In an NSX solution a segment is a virtual level 2 domain, it can be of two types :
 
-* **VLAN-backed segments** : Communication between hosts and virtual machines is done through VLANs and a Layer 2 switch of the OSI model. In order for these segments to communicate with the elements of NSX-T (Internet and other segments), an interface must be added to the **Tier-1 Gateways** or **Tier-0 Gateways** gateways.
+* **VLAN-backed segments** : Communication between hosts and virtual machines is done through VLANs and a Layer 2 switch of the OSI model. In order for these segments to communicate with the elements of NSX (Internet and other segments), an interface must be added to the **Tier-1 Gateways** or **Tier-0 Gateways** gateways.
 
 * **Overlay-backed segments**: The connection is made using a software overlay that establishes tunnels between hosts. You must add an address to a subnet that will be used for routing outside this segment. They must be connected to a **Tier-1 Gateways** gateway like **ovh-T1-gw**.
 
@@ -42,11 +42,11 @@ The segments are linked to transport zones that are predefined by OVHcloud.
 
 ## Instructions
 
-### Creating a segment in the NSX-T interface
+### Creating a segment in the NSX interface
 
 We will create an *Overlay-backed segment* connected to **ovh-T1-gw** in a subnet in 192.168.1.0/24 with gateway 192.168.1.254.
 
-From the NSX-T interface go to the `Networking`{.action} tab.
+From the NSX interface go to the `Networking`{.action} tab.
 
 ![01 Create Segment 01](images/01-create-segment01.png)
 
@@ -69,7 +69,7 @@ Then click on `SAVE`{.action} on the right.
 
 ![01 Create Segment 04](images/01-create-segment04.png)
 
-Cliquez sur `NO`{.action}.
+Click `NO`{.action}.
 
 ![01 Create Segment 05](images/01-create-segment05.png)
 
@@ -101,7 +101,7 @@ Click `OK`{.action}.
 
 ![03 Connect Network Card to Segment 04](images/03-connect-network-card-vm-to-segment04.png)
 
-Now that your virtual machine is connected to the segment, go back to the NSX-T interface.
+Now that your virtual machine is connected to the segment, go back to the NSX interface.
 
 Go to the `Networking`{.action} tab, choose `Network Topology`{.action}.
 
@@ -115,7 +115,7 @@ Use the first part of the guide to create a second segment named ov2-segment wit
 
 Then from the **vCenter** console, put two virtual machines on the first segment and two more on the second segment.
 
-Return to the NSX-T interface in `Network Topology`{.action} to bring up the new network configuration.
+Return to the NSX interface in `Network Topology`{.action} to bring up the new network configuration.
 
 ![05 display four VM on two segment02](images/05-display-four-vm-on-two-segment02.png)
 
@@ -123,7 +123,7 @@ Both segments are connected to the gateway **ovh-T1-gw**, routing between the tw
 
 ### Creating a Segment on a VLAN 
 
-Through the NSX-T interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section. Then click `ADD SEGMENT`{.action}.
+Through the NSX interface click on the `Networking`{.action} tab and click on `Segments`{.action} on the left in the **Connectivity** section. Then click `ADD SEGMENT`{.action}.
 
 ![06 Add vlan segment 01](images/06-add-vlan-segment01.png){.thumbnail}
 
@@ -146,7 +146,7 @@ Click `NO`{.action}.
 
 You can route the network from a VLAN segment to the Internet and other segments by creating an interface on the **ovh-T1-gw** gateway. When creating the interface, use the same IP address as the one specified in the segment subnet.
 
-Through the NSX-T interface go to the `Networking`{.action} tab and click on `Tier-1 Gateways`{.action} on the left in the **Connectivity** section.
+Through the NSX interface go to the `Networking`{.action} tab and click on `Tier-1 Gateways`{.action} on the left in the **Connectivity** section.
 
 Then click on the `three vertical suspension points`{.action} and choose `Edit`{.action} from the menu.
 
@@ -200,13 +200,13 @@ Click `OK`{.action} to commit the changes.
 
 ### Displaying a network topology with overlay segments and other segments on VLANs
 
-Go back to the NSX-T interface, go to the `Networking`{.action} tab, and click on `Network Topology`{.action} on the left to view a graphical view of the network. You will see networks of type Overlay and those of type VLAN connected through an INTERFACE on **ovh-t1-gw**.
+Go back to the NSX interface, go to the `Networking`{.action} tab, and click on `Network Topology`{.action} on the left to view a graphical view of the network. You will see networks of type Overlay and those of type VLAN connected through an INTERFACE on **ovh-t1-gw**.
 
 ![09 display network topology vlan overlay01](images/09-display-network-topology-vlan-overlay01.png){.thumbnail}
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-first-steps/)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

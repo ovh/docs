@@ -1,6 +1,6 @@
 ---
 title: Ajouter une nouvelle passerelle Tier-1 Gateway
-slug: nsx-t-add-new-tier1-gateway
+slug: nsx-add-new-tier1-gateway
 excerpt: Comment ajouter une passerelle de type Tier-1 Gateway
 section: NSX
 order: 10
@@ -12,7 +12,7 @@ order: 10
 
 ## Objectif
 
-**Comment ajouter une passerelle est-ouest (Tier-1 Gateway) dans votre configuration NSX-T**
+**Comment ajouter une passerelle est-ouest (Tier-1 Gateway) dans votre configuration NSX**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -23,18 +23,18 @@ order: 10
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX-T** déployé.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir **NSX** déployé.
 
 
 ## Présentation
 
-OVHcloud vous fournit NSX-T avec deux passerelles, une passerelle de type nord-sud (ovh-T0-gw) et une passerelle de type est-ouest (ovh-T1-gw). Il vous est possible de créer des passerelles supplémentaires de type est-ouest.
+OVHcloud vous fournit NSX avec deux passerelles, une passerelle de type nord-sud (ovh-T0-gw) et une passerelle de type est-ouest (ovh-T1-gw). Il vous est possible de créer des passerelles supplémentaires de type est-ouest.
 
 > [!warning]
-> Au travers de votre interface NSX-T il vous est possible de créer des passerelles de type nord-sud, ne le faites pas car certaines options ne sont pas disponibles et vous ne pourrez pas la faire fonctionner correctement. 
+> Au travers de votre interface NSX il vous est possible de créer des passerelles de type nord-sud, ne le faites pas car certaines options ne sont pas disponibles et vous ne pourrez pas la faire fonctionner correctement. 
 
-Pour plus d'informations sur NSX-T chez OVHcloud reportez-vous à ce guide [Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/).
+Pour plus d'informations sur NSX chez OVHcloud reportez-vous à ce guide [Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/).
 
 ## En pratique
 
@@ -44,7 +44,7 @@ Ensuite nous allons créer un segment et lui attacher une machine virtuelle.
 
 ### Création de la nouvelle passerelle de type est-ouest
 
-Dans l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `Tier-1 Gateway`{.action} à gauche.
+Dans l'interface NSX allez dans l'onglet `Networking`{.action} et cliquez sur `Tier-1 Gateway`{.action} à gauche.
 
 Ensuite cliquez sur `ADD TIER-1 GATEWAY`{.action}.
 
@@ -105,7 +105,7 @@ Votre nouveau segment est créé et il est relié à votre nouvelle passerelle *
 
 Le segment créé est de type Overlay mais il est possible d'ajouter un segment de type VLAN et de le connecter à votre nouvelle passerelle.
 
-Aidez-vous de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/) pour ajouter une nouvelle machine virtuelle à votre nouveau segment. 
+Aidez-vous de ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/nsx-segment-management/) pour ajouter une nouvelle machine virtuelle à votre nouveau segment. 
 
 Ensuite cliquez sur `Network Topology`{.action}.
 
@@ -113,11 +113,11 @@ Ensuite cliquez sur `Network Topology`{.action}.
 
 ## Aller plus loin
 
-[Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+[Gestion des segments dans NSX](https://docs.ovh.com/fr/nsx-segment-management/)
 
-[Documentation VMware pour le rajout d'une passerelle Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
+[Documentation VMware pour le rajout d'une passerelle Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

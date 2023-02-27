@@ -1,6 +1,6 @@
 ---
 title: Distributed Firewall Management
-slug: nsx-t-intersegment-secure
+slug: nsx-intersegment-secure
 excerpt: How to administer distributed firewall
 section: NSX
 order: 05
@@ -8,7 +8,7 @@ order: 05
 
 **Last updated 27th February 2023**
 
-## Objectif
+## Objective
 
 **Learn how to manage distributed firewall by creating a rule that blocks traffic between a virtual machine and all virtual machines in another segment****
 
@@ -22,17 +22,17 @@ order: 05
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Having **NSX-T** deployed with two segments configured in your NSX-T configuration, you can use this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use this guide [Segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management).
 
 ## Overview
 
-The distributed firewall feature in NSX-T allows filtering with all elements in your VMware cluster that are on Overlay or VLAN segments. It should be used normally on east-west connections (ovh-T1-gw), but it also works with elements of the VMware cluster that are connected on the north-south gateway (ovh-T0-gw). Filtering applies from the source (vm, segment, network, etc.).
+The distributed firewall feature in NSX allows filtering with all elements in your VMware cluster that are on Overlay or VLAN segments. It should be used normally on east-west connections (ovh-T1-gw), but it also works with elements of the VMware cluster that are connected on the north-south gateway (ovh-T0-gw). Filtering applies from the source (vm, segment, network, etc.).
 
-To simplify the administration of NSX-T, it is possible to place tags on your elements (segments, virtual machines, roles, etc..) and create groups that contain the objects associated with the tags or IP address ranges (this solution should not be preferred).
+To simplify the administration of NSX, it is possible to place tags on your elements (segments, virtual machines, roles, etc..) and create groups that contain the objects associated with the tags or IP address ranges (this solution should not be preferred).
 
 ## Instructions
 
-Nous allons isoler les communication entre une machine virtuelle et l'ensemble des machines virtuelles d'un segment de manière bi-directionnelle en effectuant ces opérations :
+We will isolate communication between a virtual machine and all virtual machines in a segment bi-directionally by performing these operations :
 
 * Create two tags, one on a virtual machine and one on a segment.
 * Create two associated groups, one containing the first tag and the other the second.
@@ -42,7 +42,7 @@ Nous allons isoler les communication entre une machine virtuelle et l'ensemble d
 
 ### Creating tags
 
-In the NSX-T interface go to the `Networking`{.action} tab and click. `Segments`{.action} on the left in **Connectivity**.
+In the NSX interface go to the `Networking`{.action} tab and click. `Segments`{.action} on the left in **Connectivity**.
 Then click on the `three vertical ellipsis`{.action} to the left of the segment you want to tag and choose `Edit`{.action} from the menu.
 
 ![01 Create tag on segment 01](images/01-create-tag-on-segment01.png){.thumbnail}
@@ -236,11 +236,11 @@ Your rule is active, the traffic between the virtual machine member of the g-vm 
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-first-steps/)
 
-[Segment management](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+[Segment management](https://docs.ovh.com/gb/en/nsx-segment-management/)
 
-[VMware Firewall documentation distributed in NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-41CC06DF-1CD4-4233-B43E-492A9A3AD5F6.html)
+[VMware Firewall documentation distributed in NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-41CC06DF-1CD4-4233-B43E-492A9A3AD5F6.html)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

@@ -1,6 +1,6 @@
 ---
 title: Configuration de l'équilibrage de charge
-slug: nsx-t-configure-loadbalancing
+slug: nsx-configure-loadbalancing
 excerpt: Comment configurer l'équilibrage de charge
 section: NSX
 order: 09
@@ -12,7 +12,7 @@ order: 09
 
 ## Objectif
 
-**Comment mettre en place l'équilibrage de charge dans NSX-T avec des serveurs WEB NGINX**
+**Comment mettre en place l'équilibrage de charge dans NSX avec des serveurs WEB NGINX**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -23,14 +23,14 @@ order: 09
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX-T** déployé avec deux segment configurés dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir **NSX** déployé avec deux segment configurés dans votre configuration NSX, vous pouvez vous aider de ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
 - Avoir deux machines virtuelles avec le service en WEB activé en HTTP sur un segment.
 
 
 ## Présentation
 
-NSX-T permet l'équilibrage de charge sur une couche de niveau 4 (TCP ou UDP ) ou de Niveau 7 (HTTP ou HTTPS) grâce à la fonctionnalité du Load Balancing. 
+NSX permet l'équilibrage de charge sur une couche de niveau 4 (TCP ou UDP ) ou de Niveau 7 (HTTP ou HTTPS) grâce à la fonctionnalité du Load Balancing. 
 
 ## En pratique
 
@@ -45,7 +45,7 @@ Nous allons :
 
 Pour simplifier l'administration du Load Balancer nous allons utiliser un marqueur (tag) sur les deux machines virtuelles du futur pool de serveurs.
 
-Dans l'interface NSX-T allez dans l'onglet `Inventory`{.action} et cliquez sur `Virtual Machines`{.action} à gauche.  
+Dans l'interface NSX allez dans l'onglet `Inventory`{.action} et cliquez sur `Virtual Machines`{.action} à gauche.  
 
 Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche de la première machine virtuelle et choisissez `Edit`{.action} dans le menu.
 
@@ -210,13 +210,13 @@ Votre règle est active si vous cliquez sur http://adresse-ip-virtuelle-t0 vous 
 
 ## Aller plus loin
 
-[Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+[Gestion des segments dans NSX](https://docs.ovh.com/fr/nsx-segment-management/)
 
-[Mise en place du NAT pour des redirections de ports dans NSX-T](https://docs.ovh.com/fr/nsx-t-configure-nat-redirection)
+[Mise en place du NAT pour des redirections de ports dans NSX](https://docs.ovh.com/fr/nsx-configure-nat-redirection)
 
-[Documentation VMware sur les Load Balancers NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
+[Documentation VMware sur les Load Balancers NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

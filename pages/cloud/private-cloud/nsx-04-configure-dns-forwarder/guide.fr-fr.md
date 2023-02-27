@@ -1,7 +1,7 @@
 ---
 title: Configuration du redirecteur DNS
-slug: nsx-t-configure-dns-forwarder
-excerpt: Comment ajouter un redirecteur DNS à NSX-T
+slug: nsx-configure-dns-forwarder
+excerpt: Comment ajouter un redirecteur DNS à NSX
 section: NSX
 order: 04
 ---
@@ -21,20 +21,20 @@ order: 04
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX-T** déployé avec un segment configuré dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX, vous pouvez vous aider de ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
 
 # Présentation
 
-Il est possible d'utiliser un redirecteur DNS dans NSX-T qui centralise toutes les requêtes DNS et les redirigent vers des serveurs DNS externes, ce qui permet de réduire le flux réseau. Il est possible d'attacher le redirecteur DNS sur la passerelle nord-sud (ovh-T0-gw) ou la passerelle est-ouest (ovh-T1-gw) en fonction de vos besoins.
+Il est possible d'utiliser un redirecteur DNS dans NSX qui centralise toutes les requêtes DNS et les redirigent vers des serveurs DNS externes, ce qui permet de réduire le flux réseau. Il est possible d'attacher le redirecteur DNS sur la passerelle nord-sud (ovh-T0-gw) ou la passerelle est-ouest (ovh-T1-gw) en fonction de vos besoins.
 
 ## En pratique
 
-Nous allons créer un redirecteur DNS et l'attacher à la passerelle nord-sud (ovh-T0-gw), il sera utilisable sur l'ensemble des segments de NSX-T.
+Nous allons créer un redirecteur DNS et l'attacher à la passerelle nord-sud (ovh-T0-gw), il sera utilisable sur l'ensemble des segments de NSX.
 
 ### Configuration du redirecteur DNS
 
-Au travers de l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur `DNS`{.action} à gauche dans la rubrique **IP Management**. Ensuite cliquez sur `ADD DNS SERVICE`{.action}.
+Au travers de l'interface NSX allez dans l'onglet `Networking`{.action} et cliquez sur `DNS`{.action} à gauche dans la rubrique **IP Management**. Ensuite cliquez sur `ADD DNS SERVICE`{.action}.
 
 ![Configure DNS forwarder 01](images/01-configure-dns-forwarder01.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Votre redirecteur DNS est actif et utilisable sur tous vos segments en Overlay o
 
 ### Modification du serveur DHCP pour utiliser un redirecteur DNS
 
-Si vous avez configuré des serveurs DHCP dans NSX-T comme indiqué dans ce guide [Configuration du DHCP](https://docs.ovh.com/fr/nsx-t-dhcp-configuration), vous avez la possibilité de modifier la configuration pour utiliser le redirecteur DNS dans vos configuration DHCP.
+Si vous avez configuré des serveurs DHCP dans NSX comme indiqué dans ce guide [Configuration du DHCP](https://docs.ovh.com/fr/nsx-dhcp-configuration), vous avez la possibilité de modifier la configuration pour utiliser le redirecteur DNS dans vos configuration DHCP.
 
 Nous allons voir comment modifier le serveur DNS sur la configuration DHCP d'un de vos segments.
 
@@ -105,13 +105,13 @@ Le paramétrage DHCP de votre segment utilise maintenant le redirecteur DNS cré
 
 ## Aller plus loin
 
-[Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segments dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+[Gestion des segments dans NSX](https://docs.ovh.com/fr/nsx-segment-management/)
 
-[Configuration du DHCP](https://docs.ovh.com/fr/nsx-t-dhcp-configuration)
+[Configuration du DHCP](https://docs.ovh.com/fr/nsx-dhcp-configuration)
 
-[Documentation VMware sur le service DNS dans NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
+[Documentation VMware sur le service DNS dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

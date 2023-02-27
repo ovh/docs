@@ -1,7 +1,7 @@
 ---
-title: First step with NSX-T
-slug: nsx-t-first-steps
-excerpt: Discover NSX-T
+title: First step with NSX
+slug: nsx-first-steps
+excerpt: Discover NSX
 section: NSX
 order: 01
 ---
@@ -10,7 +10,7 @@ order: 01
 
 ## Objective
 
-**This guide is an introduction to the NSX-T**
+**This guide is an introduction to the NSX**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -20,9 +20,9 @@ order: 01
 
 ## Overview
 
-NSX-T is a Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud is offering this service in place of NSX-V in its Hosted Private Cloud Powered by VMware solution. For the ALPHA version of NSX-T to work, two hosts are deployed with a dedicated virtual machine for NSX-T on each host, allowing redundancy in the event of one of the hosts failing.
+NSX is a Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud is offering this service in place of NSX-V in its Hosted Private Cloud Powered by VMware solution. For the ALPHA version of NSX to work, two hosts are deployed with a dedicated virtual machine for NSX on each host, allowing redundancy in the event of one of the hosts failing.
 
-When a customer subscribes to the NSX-T offer and is enabled, a pre-configuration is applied with two gateways:
+When a customer subscribes to the NSX offer and is enabled, a pre-configuration is applied with two gateways:
 
 * **ovh-T0-gw** : This gateway is the network entry point for your cluster. It is preconfigured with two interfaces and a virtual IP address. It is of type **Tier-0 Gateways** (North-South).
 * **ovh-T1-gw** : This gateway is in the **Tier-1 Gateways** (East-West) category. You can create segments (VLANs or Overlay) that will be connected to it. It is connected to **ovh-T0-gw** for connections outside the clusters (Physical and Internet).
@@ -40,31 +40,31 @@ OVHcloud provides a block of 8 public IP addresses, some of which are reserved. 
 
 ## Instructions
 
-### Logging in to the NSX-T administration interface
+### Logging in to the NSX administration interface
 
-You can connect to NSX-T from the URL of your cluster, provided by OVHcloud, in the form **https://pcc-xxxxx.ovh.xx**.
+You can connect to NSX from the URL of your cluster, provided by OVHcloud, in the form **https://pcc-xxxxx.ovh.xx**.
 
-From the homepage for your cluster, click the `NSX NSX-T`{.action} icon.
+From the homepage for your cluster, click the `NSX NSX`{.action} icon.
 
-![01 NSX-T Connection 01](images/01-nsxt-connection01.png){.thumbnail}
+![01 NSX Connection 01](images/01-nsxt-connection01.png){.thumbnail}
 
 Enter your credentials and click `LOG IN`{.action}.
 
 > [!warning]
-> To authenticate on the NSX-T interface, you need to use an account provided by OVHcloud followed by your cluster’s FQDN, such as **admin@pcc-xxxxx.ovh.xx**.
+> To authenticate on the NSX interface, you need to use an account provided by OVHcloud followed by your cluster’s FQDN, such as **admin@pcc-xxxxx.ovh.xx**.
 >
 
-![01 NSX-T Connection 02](images/01-nsxt-connection02.png){.thumbnail}
+![01 NSX Connection 02](images/01-nsxt-connection02.png){.thumbnail}
 
-The NSX-T interface appears.
+The NSX interface appears.
 
-![01 NSX-T Connection 03](images/01-nsxt-connection03.png){.thumbnail}
+![01 NSX Connection 03](images/01-nsxt-connection03.png){.thumbnail}
 
 ### Display the default configuration
 
-We will see the network topology configured by default when deploying the **NSX-T** service.
+We will see the network topology configured by default when deploying the **NSX** service.
 
-In the **NSX-T** interface, click on the `Networking`{.action} tab.
+In the **NSX** interface, click on the `Networking`{.action} tab.
 
 ![02 Display network topology 01](images/02-display-network-topology01.png){.thumbnail}
 
@@ -80,7 +80,7 @@ The diagram below shows the network topology from top to bottom:
 - The North-South gateway (**ovh-T0-gw**) that provides the link between The physical network (Internet and VLAN on vRack) and the internal networks (Overlays) of your cluster.
 - The connection between the **ovh-T0-gw** and **ovh-T1-gw** gateways is via IP addresses reserved for this purpose.
 - The East-West gateway (**ovh-T1-gw**) that manages communications between the cluster’s internal networks (overlay segments). You can also make connections with VLANs on vRacks.
--  **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this segment. You can find more information about segments in this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
+-  **ovh-segment-nsxpublic** which is a network segment connected to the OVHcloud public network on a VLAN, it contains the network of public addresses usable for customer configurations. Click the `Rectangle`{.action} below to view this segment. You can find more information about segments in this guide [Segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management).
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
 
@@ -89,7 +89,7 @@ This segment contains two pieces of information :
 * The virtual public IP address **HA VIP**.
 * The VLAN number used on your public network in your vSphere cluster.
 
-Connections through VLANs on the **ovh-T0-gw** gateway do not appear in the NSX-T network topology, even if it exists.
+Connections through VLANs on the **ovh-T0-gw** gateway do not appear in the NSX network topology, even if it exists.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Connections through VLANs on the **ovh-T0-gw** gateway do not appear in the NSX-
 
 We will show you how to display the virtual IP addresses attached to the **ovh-T0-gw** gateway.
 
-Only one virtual IP address is assigned when NSX-T is delivered. It is used for SNAT on the segments attached to the gateway **ovh-T0-gw**.
+Only one virtual IP address is assigned when NSX is delivered. It is used for SNAT on the segments attached to the gateway **ovh-T0-gw**.
 
 
 > ![Primary]
@@ -116,7 +116,7 @@ Click on the `Number`{.action} to the right of **HA VIP Configuration**.
 
 ![03 Display public vip 03](images/03-display-public-vip03.png)){.thumbnail}
 
-You see the public virtual IP address that can be used in your **NSX-T** configurations, click `Close`{.action} to close this window.
+You see the public virtual IP address that can be used in your **NSX** configurations, click `Close`{.action} to close this window.
 
 ![03 Display public vip 03](images/03-display-public-vip04.png)){.thumbnail}
 
@@ -148,7 +148,7 @@ Click `CLOSE EDITING`{.action}.
 
 Now routing is enabled on the member segments of the **ovh-T1-gw** gateway.
 
-You have just seen the default configuration. You can refer to the other OVHcloud guides for NSX-T to create segments, manage DHCP, perform DNAT port redirection, load balancing, VPN, etc...
+You have just seen the default configuration. You can refer to the other OVHcloud guides for NSX to create segments, manage DHCP, perform DNAT port redirection, load balancing, VPN, etc...
 
 ## Go further <a name="gofurther"></a>
 

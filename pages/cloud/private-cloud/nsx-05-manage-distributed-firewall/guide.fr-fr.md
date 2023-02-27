@@ -1,6 +1,6 @@
 ---
 title: Gestion du pare-feu distribué
-slug: nsx-t-manage-distributed-firewall
+slug: nsx-manage-distributed-firewall
 excerpt: Comment administrer le pare-feu distribué
 section: NSX
 order: 05
@@ -21,15 +21,15 @@ order: 05
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX-T** déployé avec deux segment configurés dans votre configuration NSX-T, vous pouvez vous aider de ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management).
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir **NSX** déployé avec deux segment configurés dans votre configuration NSX, vous pouvez vous aider de ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
 
 
 ## Présentation
 
-La fonctionnalité du pare-feu distribué dans NSX-T permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. Il doit être utilisé normalement sur les connexions est-ouest (ovh-T1-gw)  mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-T0-gw). Le filtrage s'applique à partir de la source (vm, segment, réseau, etc...).
+La fonctionnalité du pare-feu distribué dans NSX permet de faire du filtrage avec tous les éléments de votre cluster VMware qui sont sur des segments Overlay ou VLAN. Il doit être utilisé normalement sur les connexions est-ouest (ovh-T1-gw)  mais il fonctionne aussi avec des éléments du cluster VMware qui se trouvent connectés sur la passerelle nord-sud (ovh-T0-gw). Le filtrage s'applique à partir de la source (vm, segment, réseau, etc...).
 
-Pour simplifier l'administration de NSX-T il est possible de positionnez des marqueurs (tags) sur vos éléments (segments, machines virtuelles, rôles, etc..) et de créer des groupes qui contiennent les objets associés aux marqueurs ou des plages d'adresses IP (Cette solution n'est pas à privilégier).
+Pour simplifier l'administration de NSX il est possible de positionnez des marqueurs (tags) sur vos éléments (segments, machines virtuelles, rôles, etc..) et de créer des groupes qui contiennent les objets associés aux marqueurs ou des plages d'adresses IP (Cette solution n'est pas à privilégier).
 
 ## En pratique
 
@@ -43,7 +43,7 @@ Nous allons isoler les communication entre une machine virtuelle et l'ensemble d
 
 ### Création des marqueurs (tags)
 
-Dans l'interface NSX-T allez dans l'onglet `Networking`{.action} et cliquez sur. `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
+Dans l'interface NSX allez dans l'onglet `Networking`{.action} et cliquez sur. `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
 Ensuite cliquez sur les `points de suspensions verticaux`{.action} à gauche du segment que vous voulez marquer et choisissez `Edit`{.action} dans le menu.
 
 ![01 Create tag on segment 01](images/01-create-tag-on-segment01.png){.thumbnail}
@@ -238,11 +238,11 @@ Votre règle est active, le trafic entre la machine virtuelle membre du groupe g
 
 ## Aller plus loin
 
-[Premiers pas avec NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segment dans NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/)
+[Gestion des segment dans NSX](https://docs.ovh.com/fr/nsx-segment-management/)
 
-[Documentation VMware sur le pare-feu distribué dans NSX-T](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-41CC06DF-1CD4-4233-B43E-492A9A3AD5F6.html)
+[Documentation VMware sur le pare-feu distribué dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-41CC06DF-1CD4-4233-B43E-492A9A3AD5F6.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

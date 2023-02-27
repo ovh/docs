@@ -1,6 +1,6 @@
 ---
 title: Load Balancing Configuration
-slug: nsx-t-configure-loadbalancing
+slug: nsx-configure-loadbalancing
 excerpt: How to Configure Load Balancing
 section: NSX
 order: 09
@@ -13,7 +13,7 @@ order: 09
 
 ## Objective
 
-**How to set up load balancing in NSX-T**
+**How to set up load balancing in NSX**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -25,12 +25,12 @@ order: 09
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Having **NSX-T** deployed with two segments configured in your NSX-T configuration, you can use this guide [Segment management in NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-segment-management).
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use this guide [Segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management).
 - two virtual machines with NGINX enabled on one segment
 
 ## Overview
 
-NSX-T allows load balancing on a layer of level 4 (TCP or UDP) or level 7 (HTTP or HTTPS) through the Load Balancing feature.
+NSX allows load balancing on a layer of level 4 (TCP or UDP) or level 7 (HTTP or HTTPS) through the Load Balancing feature.
 
 
 ## Instructions
@@ -46,7 +46,7 @@ We will :
 
 To simplify the administration of the Load Balancer, we will use a tag on the two virtual machines in the future server pool.
 
-In the NSX-T interface go to the `Inventory`{.action} tab and click on `Virtual Machines`{.action} on the left.
+In the NSX interface go to the `Inventory`{.action} tab and click on `Virtual Machines`{.action} on the left.
 
 Then click on the `vertical suspension points`{.action} to the left of the first virtual machine and choose `Edit`{.action} from the menu.
 
@@ -166,7 +166,7 @@ Your server pool is created with your two virtual machines that are members of t
 
 ### Virtual server creation
 
-Your server pool is created with your two virtual machines members of the group.Go to the `Virtual Servers`{.action} tab and click on `ADD VIRTUAL SERVER`{.action}.
+Your server pool is created with your two virtual machines members of the group. Go to the `Virtual Servers`{.action} tab and click on `ADD VIRTUAL SERVER`{.action}.
 
 ![06 Add virtual Server 01](images/06-add-virtual-server01.png){.thumbnail}
 
@@ -186,7 +186,7 @@ Then click `SAVE`{.action}.
 
 ![06 Add virtual Server 03](images/06-add-virtual-server03.png){.thumbnail}
 
-Your virtual server is active if you connect from a machine that uses a segment on a Ggateways of type **Tier****-1 gGateways** with this URL http://192.168.102.3, the Load Balancer will connect to one of the two virtual machines configured in your group.
+Your virtual server is active if you connect from a machine that uses a segment on a gateways of type **Tier****-1 gGateways** with this URL http://192.168.102.3, the Load Balancer will connect to one of the two virtual machines configured in your group.
 
 ### Add NAT rule
 
@@ -211,13 +211,13 @@ Your rule is active if you click on http://virtual-ip-address-on-T0 you will be 
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-first-steps/)
 
-[Segment management](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+[Segment management](https://docs.ovh.com/gb/en/nsx-segment-management/)
 
-[Implementing NAT for port redirections in NSX-T](https://docs.ovh.com/gb/en/nsx-t-configure-nat-redirection)
+[Implementing NAT for port redirections in NSX](https://docs.ovh.com/gb/en/nsx-configure-nat-redirection)
 
-[VMware NSX-T Load Balancer documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
+[VMware NSX Load Balancer documentation](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

@@ -1,7 +1,7 @@
 ---
-title: Premiers pas avec NSX-T
-slug: nsx-t-first-steps
-excerpt: Découvrez NSX-T
+title: Premiers pas avec NSX
+slug: nsx-first-steps
+excerpt: Découvrez NSX
 section: NSX
 order: 01
 ---
@@ -10,7 +10,7 @@ order: 01
 
 ## Objectif
 
-**Ce guide est une introduction à NSX-T dans un cluster Hosted Private Cloud by VMware**
+**Ce guide est une introduction à NSX dans un cluster Hosted Private Cloud by VMware**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -20,9 +20,9 @@ order: 01
 
 ## Présentation
 
-NSX-T est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. Deux hôtes sont déployés avec sur chacun une machine virtuelle dédiée à NSX-T ce qui permet une redondance en cas de défaillance d'un des hôtes.
+NSX est une solution de gestion de réseau logicielle **Sofware Defined networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-V dans son offre Hosted Private Cloud Powered by VMware. Deux hôtes sont déployés avec sur chacun une machine virtuelle dédiée à NSX ce qui permet une redondance en cas de défaillance d'un des hôtes.
 
-Lorsqu'un client souscrit à l'offre NSX-T et quelle est activée une pré-configuration est appliquée avec ces deux passerelles :
+Lorsqu'un client souscrit à l'offre NSX et quelle est activée une pré-configuration est appliquée avec ces deux passerelles :
 
 * **ovh-T0-gw** : Cette passerelle est le point d'entrée réseau de votre cluster elle est préconfigurée avec deux interfaces et une adresse IP virtuelle. Elle est de type **Tier-0 Gateways** (nord-sud).
 * **ovh-T1-gw** : Cette passerelle est dans la catégories des **Tier-1 Gateways** (est-ouest). Il est possible de créer des segments (VLAN ou Overlay) qui lui seront connectés. Elle est reliée à **ovh-T0-gw** pour les liaisons exterieures aux cluster (Physique et Internet). 
@@ -36,35 +36,35 @@ Par défaut les routes ne sont pas activés les segments créés derrière la pa
 ## Prérequis
 
 - Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX-T (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique
 
-### Connexion à l'interface d'administration de NSX-T
+### Connexion à l'interface d'administration de NSX
 
-La connexion à NSX-T se fait à partir de l'URL de votre cluster fourni par OVHcloud de la forme **https://pcc-xxxxx.ovh.xx**.
+La connexion à NSX se fait à partir de l'URL de votre cluster fourni par OVHcloud de la forme **https://pcc-xxxxx.ovh.xx**.
 
-A partir de la page d'accueil de votre cluster cliquez sur l'icône `NSX NSX-T`{.action}.
+A partir de la page d'accueil de votre cluster cliquez sur l'icône `NSX NSX`{.action}.
 
-![01 NSX-T Connection 01](images/01-nsxt-connection01.png){.thumbnail}
+![01 NSX Connection 01](images/01-nsxt-connection01.png){.thumbnail}
 
 Saisissez vos informations d'identifications et cliquez sur `LOG IN`{.action}.
 
 > [!warning]
-> Pour s'authentifier sur l'interface NSX-T, il faut utiliser un compte fourni par OVHcloud suivi du nom FQDN de votre cluster comme **admin@pcc-xxxxx.ovh.xx**. 
+> Pour s'authentifier sur l'interface NSX, il faut utiliser un compte fourni par OVHcloud suivi du nom FQDN de votre cluster comme **admin@pcc-xxxxx.ovh.xx**. 
 >
 
-![01 NSX-T Connection 02](images/01-nsxt-connection02.png){.thumbnail}
+![01 NSX Connection 02](images/01-nsxt-connection02.png){.thumbnail}
 
-L'interface NSX-T s'affiche.
+L'interface NSX s'affiche.
 
-![01 NSX-T Connection 03](images/01-nsxt-connection03.png){.thumbnail}
+![01 NSX Connection 03](images/01-nsxt-connection03.png){.thumbnail}
 
 ### Affichage de la configuration par défaut
 
-Nous allons voir la topologie du réseau configurée par défaut lors du déploiement du service **NSX-T**.
+Nous allons voir la topologie du réseau configurée par défaut lors du déploiement du service **NSX**.
 
-Au travers de l'interface **NSX-T** cliquez sur l'onglet `Networking`{.action}.
+Au travers de l'interface **NSX** cliquez sur l'onglet `Networking`{.action}.
 
 ![02 Display network topology 01](images/02-display-network-topology01.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Le schéma ci-dessous représente la topologie réseau avec ces informations :
 - La passerelle nord-sud (**ovh-T0-gw**) qui assure la liaison entre Le réseau physique (Internet et VLAN sur vRack) et les réseaux internes (Overlays) de votre cluster.
 - La liaison entre les passerelles **ovh-T0-gw** et **ovh-T1-gw** qui se fait au travers d'adresses IP réservées à cet usage.
 - La passerelle est-ouest (**ovh-T1-gw**) qui gère les communications entre les réseaux internes (segments de type overlay) du cluster. Il est aussi possible d'effectuer des connexions avec des VLAN sur des vRacks.
-- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce segment. Vous trouverez plus d'informations concernant les segments dans ce guide [Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management)
+- **ovh-segment-nsxpublic** qui est un segment réseau connecté au réseau public OVHcloud sur un VLAN, il contient le réseau des adresses publiques utilisables pour les configurations clients. Cliquez sur le `Rectangle`{.action} en dessous pour afficher ce segment. Vous trouverez plus d'informations concernant les segments dans ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management)
 
 
 ![02 Display network topology 03](images/02-display-network-topology03.png){.thumbnail}
@@ -90,7 +90,7 @@ Ce segment contient deux informations :
 * L'adresse IP publique virtuelle **HA VIP**.
 * Le numéro VLAN utilisé sur votre réseau public de votre cluster vSphere.
 
-Les connexions au travers de VLAN sur la passerelle **ovh-T0-gw** n'apparaissent pas dans la topologie réseau de NSX-T, même si elle existe.
+Les connexions au travers de VLAN sur la passerelle **ovh-T0-gw** n'apparaissent pas dans la topologie réseau de NSX, même si elle existe.
 
 ![02 Display network topology 04](images/02-display-network-topology04.png){.thumbnail}
 
@@ -98,7 +98,7 @@ Les connexions au travers de VLAN sur la passerelle **ovh-T0-gw** n'apparaissent
 
 Nous allons voir comment afficher les adresses IP virtuelles attachées à la passerelle **ovh-T0-gw**.
 
-Une seule adresse IP virtuelle est affectée lors de la livraison de NSX-T, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-T0-gw**.
+Une seule adresse IP virtuelle est affectée lors de la livraison de NSX, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-T0-gw**.
 
 > ![Primary]
 > Pour l'instant il n'est pas possible de créer de nouvelles adresses IP virtuelles sur la passerelle **ovh-T0-gw**, mais cette fonctionnalité devrait être bientôt disponible.
@@ -116,7 +116,7 @@ Cliquez sur le `Numéro`{.action} à droite de **HA VIP Configuration**.
 
 ![03 Display public vip 03](images/03-display-public-vip03.png){.thumbnail}
 
-Vous voyez l'adresse IP virtuelle publique qui est utilisable dans vos configurations **NSX-T**, cliquez sur `Close`{.action} pour fermer cette fenêtre.
+Vous voyez l'adresse IP virtuelle publique qui est utilisable dans vos configurations **NSX**, cliquez sur `Close`{.action} pour fermer cette fenêtre.
 
 ![03 Display public vip 03](images/03-display-public-vip04.png){.thumbnail}
 
@@ -148,12 +148,12 @@ Cliquez sur `CLOSE EDITING`{.action}.
 
 Maintenant le routage est activé sur les segments membre de la passerelle **ovh-T1-gw**.
 
-Vous venez de voir la configuration par défaut. Vous pouvez consultez les autres guides OVHcloud concernant NSX-T pour créer des segments, gérer le DHCP, faire de la redirection de port en DNAT, du Load balancing, du VPN, etc...
+Vous venez de voir la configuration par défaut. Vous pouvez consultez les autres guides OVHcloud concernant NSX pour créer des segments, gérer le DHCP, faire de la redirection de port en DNAT, du Load balancing, du VPN, etc...
 
 
 
 ## Aller plus loin
 
-[Gestion des segments dans NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-segment-management)
+[Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

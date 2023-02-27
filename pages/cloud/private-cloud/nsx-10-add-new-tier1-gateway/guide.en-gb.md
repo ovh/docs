@@ -1,6 +1,6 @@
 ---
 title: Add a new Tier-1 Gateway
-slug: nsx-t-add-new-tier1-gateway
+slug: nsx-add-new-tier1-gateway
 excerpt: How to add a Tier-1 Gateway
 section: NSX
 order: 10
@@ -12,7 +12,7 @@ order: 10
 
 ## Objective
 
-**How to add an East-West (Tier-1 Gateway) gateway to your NSX-T configuration**
+**How to add an East-West (Tier-1 Gateway) gateway to your NSX configuration**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -24,16 +24,16 @@ order: 10
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Having **NSX-T** deployed.
+- Having **NSX** deployed.
 
 ## Overview
 
-OVHcloud provides you with NSX-T with two gateways, a north-south gateway (ovh-T0-gw) and an east-west gateway (ovh-T1-gw). You can create additional East-West gateways.
+OVHcloud provides you with NSX with two gateways, a north-south gateway (ovh-T0-gw) and an east-west gateway (ovh-T1-gw). You can create additional East-West gateways.
 
 > [!warning]
-> Through your NSX-T interface, you can create North-South gateways. Do not do this because some options are not available and you will not be able to make it work correctly.
+> Through your NSX interface, you can create North-South gateways. Do not do this because some options are not available and you will not be able to make it work correctly.
 
-For more information on NSX-T at OVHcloud, please refer to this guide [Getting started with NSX-T](https://docs.ovh.com/fr/private-cloud/nsx-t-first-steps/).
+For more information on NSX at OVHcloud, please refer to this guide [Getting started with NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/).
 
 ## Instructions
 
@@ -43,7 +43,7 @@ Next, we will create a segment and attach a virtual machine to it.
 
 ### Creation of the new east-west gateway
 
-In the NSX-T interface, go to the `Networking`{.action} tab and click on `Tier-1 Gateway`{.action} on the left.
+In the NSX interface, go to the `Networking`{.action} tab and click on `Tier-1 Gateway`{.action} on the left.
 
 Then click on `ADD TIER-1 GATEWAY`{.action}.
 
@@ -104,7 +104,7 @@ Your new segment is created and connected to your new gateway **new-T1-gw**.
 
 The segment created is of type Overlay but it is possible to add a segment of type VLAN and connect it to your new gateway.
 
-Use this guide [Segment management in NSX-T](https://docs.ovh.com/fr/nsx-t-segment-management/) to add a new virtual machine to your new segment.
+Use this guide [Segment management in NSX](https://docs.ovh.com/fr/nsx-segment-management/) to add a new virtual machine to your new segment.
 
 Then click `Network Topology`{.action}.
 
@@ -112,11 +112,11 @@ Then click `Network Topology`{.action}.
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX-T](https://docs.ovh.com/gb/en/private-cloud/nsx-t-first-steps/)
+[Getting started with NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-first-steps/)
 
-[Segment management](https://docs.ovh.com/gb/en/nsx-t-segment-management/)
+[Segment management](https://docs.ovh.com/gb/en/nsx-segment-management/)
 
-[VMware documentation for adding a Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
+[VMware documentation for adding a Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
