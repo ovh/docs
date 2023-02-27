@@ -154,6 +154,7 @@ public-cloud-databases-redis-guides: Redis - Guides
 public-cloud-databases-redis-tutorials: Redis - Tutorials
 public-cloud-databases-grafana: Grafana
 public-cloud-databases-grafana-guides: Grafana - Guides
+public-cloud-databases-grafana-tutorials: Grafana - Tutorials
 public-cloud-databases-kafka: Kafka
 public-cloud-databases-kafka-guides: Kafka - Guides
 public-cloud-databases-kafka-connect: Kafka Connect
@@ -259,6 +260,7 @@ web-cloud-messaging-sms-advanced-usage: Utilizzo avanzato
 web-cloud-messaging-sms-getting-started: Per iniziare
 web-cloud-messaging-sms-managing-your-solution: Gestisci la tua soluzione
 web-cloud-messaging-sms-sending-sms-messages: Invio SMS
+web-cloud-messaging-sms-smpp: SMPP
 web-cloud-phone-and-fax: Telefono e Fax
 web-cloud-phone-and-fax-fax: Fax
 web-cloud-phone-and-fax-fax-getting-started: Per iniziare

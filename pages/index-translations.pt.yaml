@@ -154,6 +154,7 @@ public-cloud-databases-redis-guides: Redis - Guides
 public-cloud-databases-redis-tutorials: Redis - Tutorials
 public-cloud-databases-grafana: Grafana
 public-cloud-databases-grafana-guides: Grafana - Guides
+public-cloud-databases-grafana-tutorials: Grafana - Tutorials
 public-cloud-databases-kafka: Kafka
 public-cloud-databases-kafka-guides: Kafka - Guides
 public-cloud-databases-kafka-connect: Kafka Connect
