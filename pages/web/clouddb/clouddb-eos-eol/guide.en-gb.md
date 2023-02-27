@@ -2,6 +2,7 @@
 title: 'Web Cloud Databases EOS and EOL announcements'
 slug: clouddb-eos-eol
 section: 'Technical resources'
+updated: 2023-02-23
 ---
 
 **Last updated 23rd February 2023**

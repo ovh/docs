@@ -4,6 +4,7 @@ slug: come-utilizzare-postgresql
 excerpt: Guida all'utilizzo dei tuoi database
 section: Per iniziare
 order: 03
+updated: 2023-02-15
 ---
 
 **Ultimo aggiornamento: 15/02/2023**

@@ -4,6 +4,7 @@ slug: erste-schritte-mit-postgresql
 excerpt: Verwendung Ihrer Datenbanken
 section: Erste Schritte
 order: 03
+updated: 2023-02-15
 ---
 
 **Letzte Aktualisierung am 15.02.2023**

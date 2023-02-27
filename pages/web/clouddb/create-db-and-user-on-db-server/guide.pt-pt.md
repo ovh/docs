@@ -4,6 +4,7 @@ slug: criar-bases-de-dados-e-utilizadores
 excerpt: 'Saiba como criar uma base de dados no servidor de bases de dados.'
 section: Configuração
 order: 02
+updated: 2023-02-15
 ---
 
 > [!primary]

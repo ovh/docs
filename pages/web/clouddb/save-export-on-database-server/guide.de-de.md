@@ -4,6 +4,7 @@ slug: backup-eine-datenbank-exportieren
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Datenbank sichern und exportieren können'
 section: Konfiguration
 order: 04
+updated: 2023-02-15
 ---
 
 > [!primary]

@@ -2,6 +2,7 @@
 title: EOL Policy für Managed Databases
 slug: managed-db-life-cycle-policy
 section: 'Technische Ressourcen'
+updated: 2023-02-15
 ---
 
 > [!primary]
