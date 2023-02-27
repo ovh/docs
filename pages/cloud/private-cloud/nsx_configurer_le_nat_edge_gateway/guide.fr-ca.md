@@ -1,5 +1,5 @@
 ---
-title: Configurer le NAT NSX Edge
+title: Configurer le NAT NSX-v Edge
 slug: configurer-le-nat-nsx-edge
 excerpt: Redirigez votre trafic à l'aide des règles NAT
 legacy_guide_number: '7766371'

@@ -1,5 +1,5 @@
 ---
-title: Konfiguration der NSX Distributed Firewall (EN)
+title: Konfiguration der NSX-v Distributed Firewall (EN)
 slug: nsx-distributed-firewall-configuration
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-distributed-firewall-configuration/'

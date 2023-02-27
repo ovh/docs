@@ -1,5 +1,5 @@
 ---
-title: Configurar os grupos de objetos NSX (EN)
+title: Configurar os grupos de objetos NSX-v (EN)
 slug: setup-nsx-groups
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/setup-nsx-groups/'

@@ -1,5 +1,5 @@
 ---
-title: Konfiguration der NSX NAT (EN)
+title: Konfiguration der NSX-v NAT (EN)
 slug: nsx-edge-nat-configuration
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-edge-nat-configuration/'

@@ -1,5 +1,5 @@
 ---
-title: NSX Edge Firewall Configuration
+title: NSX-v Edge Firewall Configuration
 slug: nsx-edge-firewall-configuration
 excerpt: creating firewall rules  
 section: NSX-v

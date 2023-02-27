@@ -1,5 +1,5 @@
 ---
-title: Configura il DHCP su una Edge NSX (EN)
+title: Configura il DHCP su una Edge NSX-v (EN)
 slug: setup-dhcp-nsx-edge
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/setup-dhcp-nsx-edge/'

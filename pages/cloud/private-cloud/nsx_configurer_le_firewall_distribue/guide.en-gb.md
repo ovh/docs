@@ -1,5 +1,5 @@
 ---
-title: NSX Distributed Firewall Configuration
+title: NSX-v Distributed Firewall Configuration
 slug: nsx-distributed-firewall-configuration
 section: NSX-v
 order: 08

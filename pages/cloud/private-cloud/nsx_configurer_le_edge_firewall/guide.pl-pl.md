@@ -1,5 +1,5 @@
 ---
-title: Skonfiguruj NSX Edge Firewall (EN)
+title: Skonfiguruj NSX-v Edge Firewall (EN)
 slug: nsx-edge-firewall-configuration
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-edge-firewall-configuration/'

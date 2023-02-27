@@ -1,5 +1,5 @@
 ---
-title: Cómo desplegar un NSX Edge Services Gateway (EN)
+title: Cómo desplegar un NSX-v Edge Services Gateway (EN)
 slug: how-to-deploy-an-nsx-edge-gateway
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/'
