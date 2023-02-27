@@ -328,7 +328,7 @@ network-load-balancer-getting-started: Primeros pasos
 network-load-balancer-setting-up: Configuración
 network-load-balancer-use-cases: Casos de uso
 network-load-balancer-viewing-statuses: Consultar los estados
-ifrastructure-as-code-api: API
-ifrastructure-as-code-api-apiv6: APIv6
-ifrastructure-as-code-api-getting-started: Primeros pasos
-ifrastructure-as-code-terraform: Terraform
+infrastructure-as-code-api: API
+infrastructure-as-code-api-apiv6: APIv6
+infrastructure-as-code-api-getting-started: Primeros pasos
+infrastructure-as-code-terraform: Terraform
