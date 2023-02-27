@@ -96,7 +96,7 @@ Sur la droite de votre page, trois liens vous permettent d'effectuer les actions
 - `Prévisualiser`{.action};
 - `Publier`{.action} sur votre site web.
 
-Dans notre **exemple**, cliquez sur `Visualiser`{.action}, puis sur `Prévisualiser dans un nouvel onglet`{.action}. Choisissez le type d'appareil sur lequel faire le rendu (PC, tablette ou smartphone) :
+Dans notre **exemple**, cliquez sur `Prévisualiser`{.action}, puis sur `Prévisualiser dans un nouvel onglet`{.action}. Choisissez le type d'appareil sur lequel faire le rendu (PC, tablette ou smartphone) :
 
 ![WordPress - Preview](images/wordpress_first_steps_10.png){.thumbnail}
 

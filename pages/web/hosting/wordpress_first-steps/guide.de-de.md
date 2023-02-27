@@ -63,11 +63,11 @@ Geben Sie den Login (Username) ein, der Ihnen per E-Mail gesendet wurde, sowie d
 
 **WordPress Themes** sind Konfigurationsdateien, mit denen das Aussehen Ihrer Website ohne Änderung des Inhalts angepasst werden kann. Es gibt viele Themes, die im Web verfügbar sind, kostenfrei und für unterschiedlichen Zwecke (Websites, Blogs, E-Commerce, Online-Presse, etc.).
 
-Um Ihr *Theme* zu ändern, klicken Sie im linken Menü Ihres Dashboards auf `Appearance`{.action} und dann auf `Themes`{.action}:
+Um Ihr *Theme* zu ändern, klicken Sie im linken Menü Ihres Dashboards auf `Design`{.action} und dann auf `Themes`{.action}:
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps_3.png){.thumbnail}
 
-Wählen Sie aus den angebotenen *Themes* eines aus und klicken Sie auf `Activate`{.action}:
+Wählen Sie aus den angebotenen *Themes* eines aus und klicken Sie auf `Aktivieren`{.action}:
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps_4.png){.thumbnail}
 
@@ -77,7 +77,7 @@ Sie können sich das Ergebnis anzeigen lassen, indem Sie den Domainnamen Ihrer W
 
 Mit WordPress können Sie Inhalte erstellen, ohne über Kenntnisse in der Webentwicklung zu verfügen.
 
-Um einen Artikel zu erstellen, gehen Sie in den Bereich `Articles`{.action} im Menü links und klicken Sie dann auf `Add`{.action}:
+Um einen Artikel zu erstellen, gehen Sie in den Bereich `Beiträge`{.action} im Menü links und klicken Sie dann auf `Erstellen`{.action}:
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps_5.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Seit Version 5 bietet **WordPress** ein Interface an, um die Erstellung und Bear
 
 ![WordPress - Gutenberg](images/wordpress_first_steps_6.png){.thumbnail}
 
-Klicken Sie auf `Enter Title`{.action} ein, um einen Titel zu Ihrer Seite hinzuzufügen:
+Klicken Sie auf `Titel hier eingeben`{.action} ein, um einen Titel zu Ihrer Seite hinzuzufügen:
 
 ![WordPress - Gutenberg, add title](images/wordpress_first_steps_7.png){.thumbnail}
 
@@ -99,7 +99,7 @@ Rechts auf der Seite können Sie über drei Links folgende Aktionen ausführen:
 - `Vorschau`{.action} anzeigen
 - `Veröffentlichen`{.action} auf Ihrer Website
 
-Klicken Sie auf `View`{.action} und dann auf `Preview in New Tab`{.action}. Wählen Sie den Gerätetyp aus, für den die Vorschau durchgeführt werden soll (PC, Tablet oder Smartphone):
+Klicken Sie auf `Vorschau`{.action} und dann auf `Vorshau in neuem Tab`{.action}. Wählen Sie den Gerätetyp aus, für den die Vorschau durchgeführt werden soll (PC, Tablet oder Smartphone):
 
 ![WordPress - Preview](images/wordpress_first_steps_10.png){.thumbnail}
 
@@ -107,7 +107,7 @@ Um zum Verwaltungsinterface von **WordPress** zurückzukehren klicken Sie oben l
 
 ### Die Kategorien verwalten
 
-**WordPress** erlaubt es, Kategorien zu definieren und Ihre Artikel mit einer oder mehreren Kategorien zu verbinden. Um die Kategorien Ihrer Website zu verwalten, gehen Sie in den Bereich `Items`{.action} und dann in den Bereich `Categories`{.action}:
+**WordPress** erlaubt es, Kategorien zu definieren und Ihre Artikel mit einer oder mehreren Kategorien zu verbinden. Um die Kategorien Ihrer Website zu verwalten, gehen Sie in den Bereich `Beiträge`{.action} und dann in den Bereich `Kategorien`{.action}:
 
 ![WordPress - Kategorien](images/wordpress_first_steps_11.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Geben Sie nun das Formular ein, um eine neue Kategorie hinzuzufügen:
 
 ![WordPress - Categories filled](images/wordpress_first_steps_12.png){.thumbnail}
 
-Wenn Sie diese Informationen eingegeben haben, klicken Sie auf den Button `Add a new category`{.action}:
+Wenn Sie diese Informationen eingegeben haben, klicken Sie auf den Button `Neue Kategorie erstellen`{.action}:
 
 ![WordPress - Added Categories](images/wordpress_first_steps_13.png){.thumbnail}
 
@@ -130,11 +130,11 @@ Sie können die Hierarchie Ihrer Kategorien verwalten. Eine neue Kategorie kann 
 
 ### Eine Kategorie einem Artikel zuweisen
 
-Um einen Artikel einer oder mehreren Kategorien zuzuweisen klicken Sie auf `Items`{.action}. Sie erhalten die Liste mit allen Artikeln und deren Status. Navigieren Sie über den Titel des Artikels, den Sie klassifizieren möchten, und klicken Sie auf `Quick Edit`{.action}:
+Um einen Artikel einer oder mehreren Kategorien zuzuweisen klicken Sie auf `Beiträge`{.action}. Sie erhalten die Liste mit allen Artikeln und deren Status. Navigieren Sie über den Titel des Artikels, den Sie klassifizieren möchten, und klicken Sie auf `QuickEdit`{.action}:
 
 ![WordPress - Categorize a post](images/wordpress_first_steps_15.png){.thumbnail}
 
-Ändern Sie die Kategorien, indem Sie die in `Categories`{.action} aufgeführten Elemente ankreuzen oder entfernen:
+Ändern Sie die Kategorien, indem Sie die in `Kategorien`{.action} aufgeführten Elemente ankreuzen oder entfernen:
 
 ![WordPress - Set new categories to an existing post](images/wordpress_first_steps_16.png){.thumbnail}
 
@@ -145,9 +145,9 @@ Um einen Artikel einer oder mehreren Kategorien zuzuweisen klicken Sie auf `Item
 
 ### Seiten erstellen
 
-*Pages* sind von Artikeln zu unterscheiden. Sie dienen hauptsächlich dazu, statische Inhalte zu veröffentlichen, die sich im Laufe der Zeit nicht oder nur wenig verändern werden, wie z.B. AGBs oder Seiteninformationen.
+Seiten sind von Artikeln zu unterscheiden. Sie dienen hauptsächlich dazu, statische Inhalte zu veröffentlichen, die sich im Laufe der Zeit nicht oder nur wenig verändern werden, wie z.B. AGBs oder Seiteninformationen.
 
-Gehen Sie auf `Pages`{.action}:
+Gehen Sie auf `Seiten`{.action}:
 
 ![WordPress - GB to Pages](images/wordpress_first_steps_17.png){.thumbnail}
 
@@ -156,7 +156,7 @@ Gehen Sie auf `Pages`{.action}:
 > Die Standardseite, die bei der Installation von **WordPress** erstellt wird, ist aus Gründen der Lesbarkeit aus dem Beispiel entfernt.
 >
 
-Klicken Sie auf `Add`{.action}; dies öffnet den Gutenberg-Editor:
+Klicken Sie auf `Erstellen`{.action}; dies öffnet den Gutenberg-Editor:
 
 ![WordPress - Pages, Gutenberg page builder](images/wordpress_first_steps_18.png){.thumbnail}
 
@@ -172,7 +172,7 @@ Wenn Sie zur Startseite Ihrer Website zurückkehren, sehen Sie den Link zu Ihrer
 
 Die Links zu Ihren in **WordPress** veröffentlichten Webseiten werden mit einer Syntax vom Typ `parameter=wert` erzeugt, wobei der `Wert` aus Zahlen ohne explizite Bedeutung besteht. Die Änderung der Permalink-Schreibweise ermöglicht es, URLs in einem lesbaren Format zu erstellen. Ihre URLs werden damit bezüglich der Seiteninhalte einfacher zu deuten, was gleichzeitig zur SEO Ihrer Website beiträgt.
 
-Gehen Sie auf der Startseite des Dashboards auf den Bereich `Settings`{.action} und dann auf `Permalinks`{.action}:
+Gehen Sie auf der Startseite des Dashboards auf den Bereich `Einstellungen`{.action} und dann auf `Permalinks`{.action}:
 
 ![WordPress - Settings/Permalinks](images/wordpress_first_steps_21.png){.thumbnail}
 
