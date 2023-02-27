@@ -27,13 +27,11 @@ updated: 2023-02-24
 - Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} disposant d'un accès SSH.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-
 ## En pratique
 
 Connectez-vous en SSH à votre hébergement mutualisé à l'aide de notre guide sur [l'utilisation du SSH avec votre hébergement web mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
 Vérifiez que vous utilisez bien une version de PHP compatible en ligne de commande :
-
 
 ```bash
 php --version
@@ -41,13 +39,11 @@ php --version
 
 Si ce n'est pas la bonne version, vous pouvez configurer un alias :
 
-
 ```bash
 alias php='/usr/local/php8.0/bin/php'
 ```
 
 Nous vous recommandons de rester au sein du dossier racine de votre hébergement afin de ne pas rendre accessible publiquement les fichiers de « Composer ». Exécutez ensuite cette commande :
-
 
 ```bash
 curl -sS https://getcomposer.org/installer | php
@@ -55,18 +51,15 @@ curl -sS https://getcomposer.org/installer | php
 
 « Composer » est désormais disponible sur votre hébergement mutualisé.
 
-
 ### Exemples d'utilisation
 
 Si vous souhaitez installer **Symfony 2**, vous pouvez par exemple lancer la commande suivante :
-
 
 ```bash
 php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7.*"
 ```
 
 Vous pouvez également utiliser l'API d'OVHcloud depuis votre hébergement en utilisant le wrapper officiel. Pour cela, ajoutez un fichier nommé *composer.json* contenant la liste des dépendances dont vous avez besoin. Voici un exemple de ce fichier avec le wrapper d'API OVHcloud :
-
 
 ```json
 1. {
@@ -80,13 +73,11 @@ Vous pouvez également utiliser l'API d'OVHcloud depuis votre hébergement en ut
 
 Pour l'installer, lancez la commande suivante dans le même dossier :
 
-
 ```bash
 php composer.phar install
 ```
 
 Pour utiliser cette librairie, référez-vous à la documentation, ainsi qu'au code, disponibles sur [github](https://github.com/ovh/php-ovh){.external}
-
 
 ## Aller plus loin <a name="go-further"></a>
 
