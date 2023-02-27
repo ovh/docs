@@ -176,7 +176,7 @@ chkconfig SSH off
 
 Vérifiez l'ensemble des services actifs au démarrage :  
 ```bash
-chkconfig --list|grep on
+chkconfig --list | grep on
 ```
 <br/>
 <br/>
@@ -253,20 +253,20 @@ Générez les clés sur la machine devant se connecter au serveur ESXi, l'algori
 
 Exécutez la commande suivante :  
 ```bash
-ssh-keygen -t ecdsa -b 521 -C "key-ecdsa-esxi-host"  -f /path-to-my-key/key-ecdsa
+ssh-keygen -t ecdsa -b 521 -C "key-ecdsa-esxi-host" -f /path-to-my-key/key-ecdsa
 ```
 
-```bash
+```
 Generating public/private ecdsa key pair.
 Enter file in which to save the key (/path-to-my-key/key-ecdsa_rsa):
 ```
 Renseignez un mot de passe robuste :
-```bash
+```
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
 Seule la clé publique (key-ecdsa.pub) devra être communiquée ou déposée sur les machines auxquelles vous souhaitez vous connecter.
-```bash
+```
 Your identification has been saved in /path-to-my-key/key-ecdsa.
 Your public key has been saved in /path-to-my-key/key-ecdsa.pub.
 The key fingerprint is:
@@ -282,7 +282,7 @@ cat /path-to-my-key/key-ecdsa.pub | ssh root@esxi-host-ip 'cat >> /etc/ssh/keys-
 
 ## Aller plus loin
 
-Vous pourrez trouver encore plus de détails sur les bonnes pratiques de sécurité dans ce [guide](https://core.vmware.com/security-configuration-guide) présenté par WMware.
+Vous pourrez trouver encore plus de détails sur les bonnes pratiques de sécurité dans ce [guide](https://core.vmware.com/security-configuration-guide) présenté par VMware.
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
