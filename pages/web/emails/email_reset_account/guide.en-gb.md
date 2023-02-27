@@ -40,7 +40,7 @@ Select the tab corresponding to your email solution:
 >>
 >> To check if your MX Plan solution is a legacy or new version, please refer to the table in the "[Identifying your MX Plan solution](#whichmxplan)" section of this guide.<br><br>
 >>
->> Open `Emails`{.action} in the side panel, then choose the name of the MX Plan service concerned. Go to the `Email accounts`{.action}  tab. The window that appears will display the existing email accounts. Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button to the right of the account you want to modify, then click `Disable account`{.action}.<br><br>
+>> Open `Emails`{.action} in the side panel, then choose the name of the MX Plan service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display the existing email accounts. Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button to the right of the account you want to modify, then click `Disable account`{.action}.<br><br>
 >>![email](images/email-mxplan-legacy-reset.png){.thumbnail}<br>
 >>
 > **MX Plan new version**
