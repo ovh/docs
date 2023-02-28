@@ -1,3 +1,0 @@
-LANGUAGES=(de-de en-asia en-au en-ca en-gb en-ie en-sg en-us es-es es-us it-it pl-pl pt-pt)
-TRANSLATE_TITLE='de es it pl pt'
-TRANSLATE_EXCLUDE=('Object Storage' 'Veeam Cloud Connect')
