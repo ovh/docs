@@ -1,5 +1,5 @@
 ---
-title: Manage an S3 bucket with terraform
+title: Manager un bucket S3 avec Terraform
 slug: s3/manage-s3-bucket-with-terraform
 section: Tutorials
 order: 140
@@ -45,7 +45,7 @@ $ export AWS_SECRET_ACCESS_KEY="no_need_to_define_a_secret_key"
 
 ## En pratique
 
-### Manager un S3 bucket avec Terraform @OVHcloud
+### Manager un bucket S3 avec Terraform @OVHcloud
 
 #### Initialisation
 
