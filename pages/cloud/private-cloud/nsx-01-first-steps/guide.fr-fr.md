@@ -98,7 +98,7 @@ Nous allons voir comment afficher les adresses IP virtuelles attachées à la pa
 
 Une seule adresse IP virtuelle est affectée lors de la livraison de NSX, elle sert pour le SNAT sur les segments attachés à la passerelle **ovh-T0-gw**.
 
-> ![primary]
+> [!primary]
 > Il n'est pour le moment pas possible de créer de nouvelles adresses IP virtuelles sur la passerelle **ovh-T0-gw**, mais cette fonctionnalité devrait être bientôt disponible.
 > 
 

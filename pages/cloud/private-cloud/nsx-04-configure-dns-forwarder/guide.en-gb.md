@@ -1,5 +1,5 @@
 ---
-title: DHCP Configuration
+title: Configuring DNS Forwarder in NSX
 slug: nsx-configure-dns-forwarder
 excerpt: Discover how to add a DNS forwarder to NSX
 section: NSX
@@ -25,7 +25,7 @@ You can use a DNS forwarder in NSX that centralises all DNS queries and redirect
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- You need to have **NSX** deployed with a segment configured in your NSX configuration. Use our guide on [segment management in NSX](https://docs.ovh.com/en/us/private-cloud/nsx-segment-management) for more information.
+- You need to have **NSX** deployed with a segment configured in your NSX configuration. Use our guide on [segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management/) for more information.
 
 ## Instructions
 
@@ -70,7 +70,7 @@ Your DNS forwarder is active and usable on all your overlay or VLAN segments con
 
 ### Editing the DHCP server to use a DNS forwarder
 
-If you have configured DHCP servers in NSX as described in our [Configuring DHCP](https://docs.ovh.com/gb/en/private-cloud/nsx-dhcp-configuration) guide, you have the option to modify the configuration to use the DNS forwarder in your DHCP configurations.
+If you have configured DHCP servers in NSX as described in our [Configuring DHCP](https://docs.ovh.com/gb/en/private-cloud/nsx-dhcp-configuration/) guide, you have the option to modify the configuration to use the DNS forwarder in your DHCP configurations.
 
 We will see how to modify the DNS server on the DHCP configuration of one of your segments.
 

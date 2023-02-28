@@ -23,7 +23,7 @@ updated: 2023-02-27
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
-- Having **NSX** deployed with two segments configured in your NSX configuration, you can use our guide on [segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management) for more information.
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use our guide on [segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management/) for more information.
 
 ## Instructions
 

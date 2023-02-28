@@ -96,25 +96,25 @@ We will show you how to display the virtual IP addresses attached to the **ovh-T
 
 Only one virtual IP address is assigned when NSX is delivered. It is used for SNAT on the segments attached to the gateway **ovh-T0-gw**.
 
-> ![primary]
+> [!primary]
 > For now it is not possible to create new virtual IP addresses, but this feature should be available soon.
 > 
 
 Stay on the `Networking`{.action} tab and click on `Tier-0 Gateways`{.action} to the left in the **Connectivity** category.
 
-![03 Display public vip 01](images/03-display-public-vip01.png)){.thumbnail}
+![03 Display public vip 01](images/03-display-public-vip01.png){.thumbnail}
 
 Click the `>`{.action} scroll button to the left of **Name** to view the configuration.
 
-![03 Display public vip 02](images/03-display-public-vip02.png)){.thumbnail}
+![03 Display public vip 02](images/03-display-public-vip02.png){.thumbnail}
 
 Click on the `Number`{.action} to the right of **HA VIP Configuration**.
 
-![03 Display public vip 03](images/03-display-public-vip03.png)){.thumbnail}
+![03 Display public vip 03](images/03-display-public-vip03.png){.thumbnail}
 
 You see the public virtual IP address that can be used in your **NSX** configurations, click `Close`{.action} to close this window.
 
-![03 Display public vip 03](images/03-display-public-vip04.png)){.thumbnail}
+![03 Display public vip 03](images/03-display-public-vip04.png){.thumbnail}
 
 ### NAT Default Configuration Information
 
