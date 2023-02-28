@@ -74,7 +74,7 @@ You can view the result by opening your website in a browser via your domain nam
 
 WordPress allows you to easily create content without having any web development knowledge.
 
-To create an article, go to the `Articles`{.action} section on the left-hand menu, then click on `Add`{.action}:
+To create an article, go to the `Posts`{.action} section on the left-hand menu, then click on `Add new`{.action}:
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps_5.png){.thumbnail}
 
@@ -82,7 +82,7 @@ Since version 5, **WordPress** offers an interface to simplify the writing and f
 
 ![WordPress - Gutenberg](images/wordpress_first_steps_6.png){.thumbnail}
 
-Click `Enter Title`{.action} to add a title to your page:
+Click `Add title`{.action} to add a title to your page:
 
 ![WordPress - Gutenberg, add title](images/wordpress_first_steps_7.png){.thumbnail}
 
@@ -104,7 +104,7 @@ To return to the **WordPress** administration interface, click on the icon in th
 
 ### Manage categories
 
-**WordPress** allows you to define categories and associate your articles with one or more of them. To manage categories for your website, go to the `Items`{.action} section, then to the `Categories`{.action} section:
+**WordPress** allows you to define categories and associate your articles with one or more of them. To manage categories for your website, go to the `Posts`{.action} section, then to the `Categories`{.action} section:
 
 ![WordPress - Categories](images/wordpress_first_steps_11.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Now fill in the form to add a new category:
 
 ![WordPress - Categories filled](images/wordpress_first_steps_12.png){.thumbnail}
 
-Once you have entered this information, click the `Add a new category`{.action} button:
+Once you have entered this information, click the `Add new category`{.action} button:
 
 ![WordPress - Categories added](images/wordpress_first_steps_13.png){.thumbnail}
 
@@ -127,7 +127,7 @@ You can manage the hierarchy of your categories. A new category can be linked to
 
 ### Assign a category to an item
 
-To assign an item to one or more categories, click `Items`{.action}. You will have the list containing all the articles and their statuses. Hover over the title of the item you want to classify and click `Quick Edit`{.action}:
+To assign an item to one or more categories, click `Posts`{.action}. You will have the list containing all the articles and their statuses. Hover over the title of the item you want to classify and click `Quick Edit`{.action}:
 
 ![WordPress - Categorise a post](images/wordpress_first_steps_15.png){.thumbnail}
 
@@ -153,7 +153,7 @@ Go to the `Pages`{.action} page:
 > A default page is generated when you install **WordPress**. For readability, this page was removed from the example.
 >
 
-Click `Add`{.action}. You will see the Gutenberg editor:
+Click `Add new`{.action}. You will see the Gutenberg editor:
 
 ![WordPress - Pages, Gutenberg page builder](images/wordpress_first_steps_18.png){.thumbnail}
 
