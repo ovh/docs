@@ -6,7 +6,7 @@ section: Tutoriel
 order: 
 ---
 
-**Dernière mise à jour le 23/02/2023**
+**Dernière mise à jour le 28/02/2023**
 
 Ce guide a pour objectif de vous permettre de configurer la redirection de noms de domaines alternatifs vers votre nom de domaine principal.
 
@@ -37,7 +37,7 @@ Vous disposez d'un nom de domaine pour votre site lié à votre activité avec u
 
 Enregistrer plusieurs noms de domaine peut aussi vous éviter le [cybersquatting](https://fr.wikipedia.org/wiki/Cybersquattage) de certains noms de domaine. Cette pratique peut vous contraindre à racheter votre nom de domaine à prix plus élevé ou vous exposer à une perte de trafic.
 
-### Rediriger vos noms de domaine
+### Rediriger votre domaine vers un autre domaine
 
 Rendez vous sur votre Manager :
 
@@ -51,23 +51,45 @@ Sélectionnez le nom de domaine que vous souhaitez rediriger vers un autre :
 
 ![Domain names](images/how_to_redirect_your_alternative_domain_name_3.png){.thumbnail}
 
-Puis cliquez sur l'onglet `Zone DNS` :
+Puis allez sur l'onglet `Redirection`{.action} :
 
-![DNS Zone](images/how_to_redirect_your_alternative_domain_name_4.png){.thumbnail}
+![Redirection](images/how_to_redirect_your_alternative_domain_name_4.png){.thumbnail}
 
-Vous avez alors la liste des entrées liées à votre nom de domaine :
+Et cliquez sur `Ajouter une redirection`{.action}. Une fenêtre modale s'ouvre dans laquelle vous serez invité à préciser sur la direction concerne votre nom de domaine ou un sous-domaine particulier :
 
-![DNS entries](images/how_to_redirect_your_alternative_domain_name_5.png){.thumbnail}
+![Add a redirection 1](images/how_to_redirect_your_alternative_domain_name_5.png){.thumbnail}
+
+Choisissez ensuite l'option `vers une adresse web` :
+
+![Add a redirection 1](images/how_to_redirect_your_alternative_domain_name_6.png){.thumbnail}
+
+Puis `avec une redirection visible` :
+
+![Add a redirection 2](images/how_to_redirect_your_alternative_domain_name_7.png){.thumbnail}
+
+Vous pouvez préciser que la redirection sera permanente et rentrez l'URL vers laquelle pointer :
+
+![Add a redirection 2](images/how_to_redirect_your_alternative_domain_name_8.png){.thumbnail}
+
+Un fenêtre récapitulative vous permettra de vérifier vos informations avant validation :
+
+![Add a redirection 3](images/how_to_redirect_your_alternative_domain_name_9.png){.thumbnail}
+
+### Rediriger vos sous-domaines vers un autre domaine
+
+Sur votre manager, dans `Web Cloud` et `Noms de domaine`, cliquez sur l'onglet `Zone DNS`{.action} :
+
+![DNS Zone](images/how_to_redirect_your_alternative_domain_name_10.png){.thumbnail}
 
 La méthode la plus simple consiste à ajouter une entrée `CNAME` pour faire pointer votre nom de domaine vers un autre (`.ovh` vers `.com` dans notre exemple).
 
 Cliquez sur `Ajouter une entrée`{.action} :
 
-![Add an entrie](images/how_to_redirect_your_alternative_domain_name_6.png){.thumbnail}
+![Add an entrie](images/how_to_redirect_your_alternative_domain_name_11.png){.thumbnail}
 
 Dans la fenêtre modale qui s'ouvre, sélectionnez `CNAME` pour ajouter une nouvelle entrée dans votre zone DNS :
 
-![Select CNAME](images/how_to_redirect_your_alternative_domain_name_7.png){.thumbnail}
+![Select CNAME](images/how_to_redirect_your_alternative_domain_name_12.png){.thumbnail}
 
 Dans la fenêtre suivante, vous avez plusieurs champs à renseigner :
 
@@ -75,11 +97,21 @@ Dans la fenêtre suivante, vous avez plusieurs champs à renseigner :
 - TTL, **Time To Live** (à laisser par défaut)
 - Cible, qui est le domaine sur lequel vous voulez pointer.
 
-![Fill the form](images/how_to_redirect_your_alternative_domain_name_8.png){.thumbnail}
+![Fill the form](images/how_to_redirect_your_alternative_domain_name_13.png){.thumbnail}
 
 La fenêtre finale récapitule la demande. Cliquez sur `Confirmer`{.action} pour valider :
 
-![Confirmer](images/how_to_redirect_your_alternative_domain_name_9.png){.thumbnail}
+![Confirmer](images/how_to_redirect_your_alternative_domain_name_14.png){.thumbnail}
+
+> [!warning]
+>
+> Par défaut, il existe un enregistrement TXT avec une cible `"3|welcome"`.
+> Pour permettre au sous-domaine `www` d'être redirigée comme tous les autres sous-domaines, supprimez cette entrée.
+>
+
+Supprimez l'entrée TXT `"3|welcome"` :
+
+![Delete 3|welcome entry](images/how_to_redirect_your_alternative_domain_name_15.png){.thumbnail}
 
 ## Aller plus loin<a name="go-further"></a>
 
