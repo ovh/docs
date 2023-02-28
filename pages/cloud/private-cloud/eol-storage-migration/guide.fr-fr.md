@@ -31,7 +31,7 @@ Nous allons parcourir l'ensemble des étapes de migration de vos données vers u
 
 ### Ajout d'un stockage
 
-Vous pouvez utiliser les nouvelles gammes de stockage et vous bénéficierez de disques full-SSD (vs SSD-accelerated), de cartes réseaux 2x25Gbps (vs 2x10Gbps), d'une meilleure disponibilité et résilience. Cliquez sur ce lien [Datastore NFS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/) pour obtenir plus d'informations.
+Vous pouvez utiliser les nouvelles gammes de stockage et vous bénéficierez de disques full-SSD (vs SSD-accelerated), de cartes réseaux 2x2x25Gbps (vs 2x10Gbps), d'une meilleure disponibilité et résilience. Cliquez sur ce lien [Datastore NFS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/) pour obtenir plus d'informations.
 
 
 Utilisez ce guide pour ajouter un stockage plus important si vous n'avez pas encore souscrit à une offre plus récente [Comment ajouter de l’espace de stockage ?](https://docs.ovh.com/fr/private-cloud/additional-storage/)
