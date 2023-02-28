@@ -87,7 +87,7 @@ Standardmäßig handelt es sich um Ihren Domainnamen gefolgt von `/wp-admin`:
 
 ![Administrator-Anbindung an wp-admin](images/how_to_backup_your_wordpress_5.png){.thumbnail}
 
-Gehen Sie auf der Startseite in den Bereich `Erweiterungen`{.action} und klicken Sie dann auf `Hinzufügen`{.action}:
+Gehen Sie auf der Startseite in den Bereich `Plugins`{.action} und klicken Sie dann auf `Installieren`{.action}:
 
 ![Eine Endung hinzufügen](images/how_to_backup_your_wordpress_6.png){.thumbnail}
 
@@ -127,16 +127,16 @@ Klicken Sie am Ende der Seite auf `Änderungen speichern`{.action}, um zu bestä
 
 ### 2.3 - Führen Sie Ihr erstes Backup durch
 
-Gehen Sie auf den Tab `Sichern/Wiederherstellen`{.action} und klicken Sie auf den Button `Sichern`{.action}:
+Gehen Sie auf den Tab `Sichern/Wiederherstellen`{.action} und klicken Sie auf den Button `Jetzt sichern`{.action}:
 
 ![Seite UpdraftPlus Sichern/Wiederherstellen](images/how_to_backup_your_wordpress_14.png){.thumbnail}
 
-Klicken Sie im angezeigten Fenster erneut auf `Sichern`{.action}:
+Klicken Sie im angezeigten Fenster erneut auf `Jetzt sichern`{.action}:
 
 ![Seite Sicherung/Wiederherstellung von UpdraftModal](images/how_to_backup_your_wordpress_15.png){.thumbnail}
 
 Sobald Ihre Backups abgeschlossen sind, erhalten Sie zwei E-Mails: eines mit dem Inhalt Ihres WordPress, das andere mit der Datenbank Ihrer Website.
-Wenn Sie die E-Mails nicht erhalten, überprüfen Sie bitte die E-Mail-Adresse des von Ihnen verwendeten Accounts (im Bereich `Accounts`{.action}). Überprüfen Sie auch Ihre Ordner "SPAM".
+Wenn Sie die E-Mails nicht erhalten, überprüfen Sie bitte die E-Mail-Adresse des von Ihnen verwendeten Accounts (im Bereich `Benutzer`{.action}). Überprüfen Sie auch Ihre Ordner "SPAM".
 
 ### Wie oft werden Sicherungen durchgeführt?
 
