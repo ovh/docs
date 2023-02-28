@@ -1,16 +1,19 @@
 ---
-title: Configuration du redirecteur DNS
+title: Configuration du redirecteur DNS dans NSX
 slug: nsx-configure-dns-forwarder
-excerpt: Comment ajouter un redirecteur DNS à NSX
+excerpt: Découvrez comment ajouter un redirecteur DNS à NSX
 section: NSX
 order: 04
+updated: 2023-02-27
 ---
 
 **Dernière mise à jour le 27/02/2023**
 
 ## Objectif
 
-**Comment faire pour configurer un redirecteur DNS**
+Il est possible d'utiliser un redirecteur DNS dans NSX. Son rôle est de centraliser toutes les requêtes DNS et de les rediriger vers des serveurs DNS externes, ce qui permet de réduire le flux réseau. Vous pouvez attacher le redirecteur DNS sur la passerelle nord-sud (ovh-T0-gw) ou la passerelle est-ouest (ovh-T1-gw), en fonction de vos besoins.
+
+**Découvrez comment configurer un redirecteur DNS dans NSX.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -20,13 +23,9 @@ order: 04
 
 ## Prérequis
 
-- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX, vous pouvez vous aider de ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
-
-# Présentation
-
-Il est possible d'utiliser un redirecteur DNS dans NSX qui centralise toutes les requêtes DNS et les redirigent vers des serveurs DNS externes, ce qui permet de réduire le flux réseau. Il est possible d'attacher le redirecteur DNS sur la passerelle nord-sud (ovh-T0-gw) ou la passerelle est-ouest (ovh-T1-gw) en fonction de vos besoins.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
+- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
 
 ## En pratique
 
@@ -34,17 +33,17 @@ Nous allons créer un redirecteur DNS et l'attacher à la passerelle nord-sud (o
 
 ### Configuration du redirecteur DNS
 
-Au travers de l'interface NSX allez dans l'onglet `Networking`{.action} et cliquez sur `DNS`{.action} à gauche dans la rubrique **IP Management**. Ensuite cliquez sur `ADD DNS SERVICE`{.action}.
+Dans l'interface NSX, allez dans l'onglet `Networking`{.action} et cliquez sur `DNS`{.action} à gauche dans la rubrique **IP Management**. Cliquez ensuite sur `ADD DNS SERVICE`{.action}.
 
 ![Configure DNS forwarder 01](images/01-configure-dns-forwarder01.png){.thumbnail}
 
 Renseignez ces informations :
 
-* **Name** : Nom de votre service comme `dns-forwarder`.
-* **Tier-0/Tier-1 Gateway** : Votre passerelle Nord-Sud `ovh-T0-gw`.
-* **DNS Service IP** : Adresse IP privée non utilisé dans vos segments comme `192.168.200.1`.
+- **Name** : nom de votre service, par exemple `dns-forwarder`.
+- **Tier-0/Tier-1 Gateway** : votre passerelle Nord-Sud `ovh-T0-gw`.
+- **DNS Service IP** : adresse IP privée non utilisé dans vos segments comme `192.168.200.1`.
 
-Ensuite cliquez sur les `Points de suspensions verticaux`{.action} en dessous de **Default DNS Zone**.
+Cliquez ensuite sur les `trois points verticaux`{.action} en dessous de **Default DNS Zone**.
 
 ![Configure DNS forwarder 02](images/01-configure-dns-forwarder02.png){.thumbnail}
 
@@ -52,16 +51,16 @@ Cliquez sur `Add New Default Zone`{.action}.
 
 ![Configure DNS forwarder 03](images/01-configure-dns-forwarder03.png){.thumbnail}
 
-Remplissez ces valeurs :
+Renseignez ces valeurs :
 
-* **Name** : Nom de la zone comme `cdns.ovh.net`.
-* **DNS Servers** : Serveur DNS OVHcloud `213.186.33.99`.
+- **Name** : nom de la zone, par exemple `cdns.ovh.net`.
+- **DNS Servers** : serveur DNS OVHcloud `213.186.33.99`.
 
-Ensuite cliquez sur `SAVE`{.action}.
+Cliquez ensuite sur `SAVE`{.action}.
 
 ![Configure DNS forwarder 04](images/01-configure-dns-forwarder04.png){.thumbnail}
 
-Cliquez sur `SAVE`{.action}.
+Cliquez à nouveau sur `SAVE`{.action}.
 
 ![Configure DNS forwarder 05](images/01-configure-dns-forwarder05.png){.thumbnail}
 
@@ -71,13 +70,13 @@ Votre redirecteur DNS est actif et utilisable sur tous vos segments en Overlay o
 
 ### Modification du serveur DHCP pour utiliser un redirecteur DNS
 
-Si vous avez configuré des serveurs DHCP dans NSX comme indiqué dans ce guide [Configuration du DHCP](https://docs.ovh.com/fr/nsx-dhcp-configuration), vous avez la possibilité de modifier la configuration pour utiliser le redirecteur DNS dans vos configuration DHCP.
+Si vous avez configuré des serveurs DHCP dans NSX comme indiqué dans notre guide de [configuration du DHCP](https://docs.ovh.com/fr/private-cloud/nsx-dhcp-configuration), vous pouvez modifier la configuration pour utiliser le redirecteur DNS dans vos configurations DHCP.
 
 Nous allons voir comment modifier le serveur DNS sur la configuration DHCP d'un de vos segments.
 
 Restez sur l'onglet `Networking`{.action} et cliquez sur `Segments`{.action} à gauche dans la rubrique **Connectivity**. 
 
-Ensuite cliquez sur les `points de suspensions verticaux`{.action} à coté de votre segment et choisissez dans le menu `Edit`{.action}.
+Cliquez ensuite sur les `trois points verticaux`{.action} à coté de votre segment et cliquez sur `Edit`{.action} dans le menu.
 
 ![Modify DHCP overlay segment 01](images/02-modify-dhcp-overlay-segment01.png){.thumbnail}
 
@@ -85,11 +84,11 @@ Cliquez sur `EDIT DHCP CONFIG`{.action}.
 
 ![Modify DHCP overlay segment 02](images/02-modify-dhcp-overlay-segment02.png){.thumbnail}
 
-Cliquez sur la `croix`{.action} à droite du DNS existant dans l'option **DNS Servers** pour l'enlever de la configuration.
+Cliquez sur la `croix`{.action} à droite du DNS existant dans l'option **DNS Servers**, afin de l'enlever de la configuration.
 
 ![Modify DHCP overlay segment 03](images/02-modify-dhcp-overlay-segment03.png){.thumbnail}
 
-Ajouter dans **DNS Servers** l'adresse IP de votre redirecteur DNS comme `192.168.200.1`{.action} et cliquez sur `APPLY`{.action}.
+Ajoutez, dans **DNS Servers**, l'adresse IP de votre redirecteur DNS, par exemple `192.168.200.1`{.action} et cliquez sur `APPLY`{.action}.
 
 ![Modify DHCP overlay segment 04](images/02-modify-dhcp-overlay-segment04.png){.thumbnail}
 
@@ -107,12 +106,10 @@ Le paramétrage DHCP de votre segment utilise maintenant le redirecteur DNS cré
 
 [Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segments dans NSX](https://docs.ovh.com/fr/nsx-segment-management/)
+[Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management/)
 
-[Configuration du DHCP](https://docs.ovh.com/fr/nsx-dhcp-configuration)
+[Configuration du DHCP](https://docs.ovh.com/fr/private-cloud/nsx-dhcp-configuration/)
 
 [Documentation VMware sur le service DNS dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-

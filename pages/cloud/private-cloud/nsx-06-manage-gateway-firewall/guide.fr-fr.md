@@ -1,16 +1,23 @@
 ---
-title: Gestion du pare-feu des passerelles
+title: Gestion du pare-feu des passerelles dans NSX
 slug: nsx-manage-gateway-firewall
-excerpt: Comment administrer le pare-feu des passerelles
+excerpt: Découvrez comment administrer le pare-feu des passerelles dans NSX
 section: NSX
 order: 06
+updated: 2023-02-27
 ---
 
 **Dernière mise à jour le 27/02/2023**
 
 ## Objectif
 
-**Decouvrer comment administrer le pare-feu des passerelles**
+Le pare-feu de passerelles permet le filtrage entre les segments internes et le réseau extérieur au cluster en entrée ou en sortie. 
+
+Il fonctionne sur les passerelles de type nord-sud (Tier-0 Gateways) et est-ouest (Tier-1 Gateways) si la source ou la destination ne se trouvent pas à l'intérieur du cluster.
+
+Si vous souhaitez créer des règles de filtrage entre des segments internes, il sera nécessaire d'utiliser le pare-feu distribué, en vous aidant de notre guide sur la [gestion du pare-feu distribué](https://docs.ovh.com/fr/private-cloud/nsx-manage-distributed-firewall).
+
+**Découvrez comment administrer le pare-feu des passerelles dans NSX.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -20,30 +27,21 @@ order: 06
 
 ## Prérequis
 
-- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
-- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
-- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX, vous pouvez vous aider de ce guide [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
-
-
-# Présentation
-
-Le pare-feu de passerelles permet le filtrage entre les segments internes et le réseau extérieur au cluster en entrée ou en sortie. 
-
-Il fonctionne sur les passerelles de type nord-sud(Tier-0 Gateways) et est-ouest (Tier-1 Gateways) si la source ou la destination ne se trouve pas à l'intérieur du cluster.
-
-Si vous souhaitez créer des règles de filtrage entre des segments internes il sera nécessaire d'utiliser le pare-feu distribué à l'aide de ce guide [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-manage-distributed-firewall).
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)).
+- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management).
 
 ## En pratique
 
-Nous allons créer une stratégie afin d'améliorer la visibilité et l'administration des règles en fonction de leurs utilités.
+Nous allons créer une stratégie afin d'améliorer la visibilité et l'administration des règles en fonction de leur utilité.
 
-Ensuite nous allons ajouter une règle à l'intérieur de notre stratégie qui bloque l'accès à tout le réseau externe d'un cluster depuis un groupe qui contient un segment (vous pouvez vous aider de ce guide pour créer des groupes [Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-manage-distributed-firewall)) et de **any** pour la destination. 
+Nous allons ensuite ajouter, à l'intérieur de notre stratégie, une règle qui bloque l'accès à tout le réseau externe d'un cluster depuis un groupe qui contient un segment (vous pouvez vous aider du guide sur la [gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-manage-distributed-firewall) pour créer des groupes) et de **any** pour la destination. 
 
-Allez sur l'onglet `Security`{.action}, Sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}.
+Allez sur l'onglet `Security`{.action}, sélectionnez `Gateway Firewall`{.action} et cliquez sur `+ ADD POLICY`{.action}.
 
 ![01 Create gateway firewall rules 01](images/01-create-gateway-firewall-rules01.png){.thumbnail}
 
-Sélectionnez `ovh-T0-gw`{.action} à droite de **Gateway**, nommez votre stratégie `my policy`{.action} en dessous de la colonne **Name** et cliquez sur les `points de suspensions verticaux`{.action} à gauche de votre stratégie.
+Sélectionnez `ovh-T0-gw`{.action} à droite de **Gateway**, nommez votre stratégie `my policy`{.action} en dessous de la colonne **Name** et cliquez sur les ` trois points verticaux`{.action} à gauche de votre stratégie.
 
 ![01 Create gateway firewall rules 02](images/01-create-gateway-firewall-rules02.png){.thumbnail}
 
@@ -55,7 +53,7 @@ Nommez votre règle `block segment1 to any`{.action} en dessous de la colonne **
 
 ![01 Create gateway firewall rules 04](images/01-create-gateway-firewall-rules04.png){.thumbnail}
 
-Cliquez sur le `stylo`{.action} à droite de Any dans la colonne **Source**.
+Cliquez sur le bouton `stylo`{.action} à droite de Any dans la colonne **Source**.
 
 ![01 Create gateway firewall rules 05](images/01-create-gateway-firewall-rules05.png){.thumbnail}
 
@@ -67,18 +65,16 @@ Choisissez `Drop`{.action} sous la colonne **Action** et cliquez sur `PUBLISH`{.
 
 ![01 Create gateway firewall rules 07](images/01-create-gateway-firewall-rules07.png){.thumbnail}
 
-Votre règle est active sur la passerelle **ovh-T0-gw** elle bloque tout le trafic sortant depuis les membres du groupe **g-segment01**.
+Votre règle est active sur la passerelle **ovh-T0-gw**. Elle bloque tout le trafic sortant depuis les membres du groupe **g-segment01**.
 
 ## Aller plus loin
 
 [Premiers pas avec NSX](https://docs.ovh.com/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segment dans NSX](https://docs.ovh.com/fr/nsx-segment-management/)
+[Gestion des segment dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management/)
 
-[Gestion du pare-feu distribué](https://docs.ovh.com/fr/nsx-manage-distributed-firewall).
+[Gestion du pare-feu distribué](https://docs.ovh.com/fr/private-cloud/nsx-manage-distributed-firewall/).
 
 [Documentation VMware sur les pare-feux de passerelles dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
