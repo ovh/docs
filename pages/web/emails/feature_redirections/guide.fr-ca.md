@@ -52,13 +52,13 @@ Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr-ca/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)).
+- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)ou commandée séparément comme solution autonome, telle que [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/)).
 
 ## En pratique
 
 Les chapitres « [créer une redirection](#redirect) » et « [créer un alias](#alias) » concernent l'ensemble de nos offres e-mail OVHcloud, **sauf si** vous possédez un nom de domaine enregistré chez OVHcloud sans offre e-mail attachée.
 
-Pour ces deux exceptions, consultez directement le chapitre « [Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail](#mxplanlegacy) ».
+Pour ces deux exceptions, consultez directement le chapitre « [Créer une redirection ou un alias sur un nom de domaine sans offre e-mail](#mxplanlegacy) ».
 
 ### Créer une redirection <a name="redirect"></a>
 
@@ -144,7 +144,7 @@ Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le men
 
 ![emails](images/email-alias04.png){.thumbnail}
 
-### Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
+### Créer une redirection ou un alias sur un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
 

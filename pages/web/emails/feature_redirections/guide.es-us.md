@@ -52,7 +52,7 @@ Por ejemplo, su dirección de correo electrónico es **john.smith@mydomain.ovh**
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma, como [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/)).
+- Disponer de una solución de correo electrónico de OVHcloud previamente configurada (**MX Plan**, incluida en nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/)) o contratada por separado como solución autónoma, como [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/)).
 
 ## Procedimiento
 

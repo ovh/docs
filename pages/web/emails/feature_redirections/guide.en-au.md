@@ -51,7 +51,7 @@ For example, your email address is **john.smith@mydomain.ovh** and your alias is
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/), a [free Start 10M hosting plan](https://www.ovhcloud.com/en-au/domains/free-web-hosting/), or ordered separately)
+- A preconfigured OVHcloud email solution **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/))
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
