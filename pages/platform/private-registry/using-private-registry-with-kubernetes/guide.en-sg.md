@@ -4,10 +4,10 @@ excerpt: 'Find out how to use images from OVHcloud Managed Private Registry serv
 slug: using-private-registry-with-kubernetes
 section: 'Tutorials'
 order: 02
-updated: 2022-04-13
+updated: 2023-02-28
 ---
 
-**Last updated 13th April, 2022.**
+**Last updated 28th February, 2023.**
 
 <style>
  pre {
@@ -42,9 +42,14 @@ You also need to have a working OVHcloud Managed Private Registry and have follo
 
 We will specifically suppose you have followed the last one and you have a `hello-ovh` image on your private registry.
 
-## Deploying a Secret based on existing Docker credentials
+## Create Kubernetes Secret
 
-### Log in to your OVHcloud Managed Private Registry
+Kubernetes needs to have access to the private registry to pull images from it, so you need to store the private registry credentials in a Kubernetes Secret.
+There are 2 ways to create the registry credentials secret. Chose the solution you prefer.
+
+### 1. Create a Secret based on existing Docker credentials
+
+#### Log in to your OVHcloud Managed Private Registry
 
 In order to pull a private image from your private registry, you must authenticate with it using `docker login`.
 
@@ -52,7 +57,7 @@ In order to pull a private image from your private registry, you must authentica
 docker login [YOUR_PRIVATE_REGISTRY_URL]
 ```
 
-In my private registry:
+For my private registry:
 
 <pre class="console"><code>
   $ docker login 8093ff7x.gra5.container-registry.ovh.net
@@ -69,22 +74,21 @@ View the `config.json` file:
 cat ~/.docker/config.json
 ```
 
-### Creating the Secret
+#### Creating the Secret
 
-Kubernetes needs to have access to the private registry to pull images from it, so you need to store the private registry credentials in a Kubernetes Secret.
 Let's create a Secret of `docker-registry` type.
 
 You will use this Secret to authenticate with your private registry to pull a private image.
 
 If you already ran `docker login`, you can copy that credential into Kubernetes:
 
-```
+```bash
 kubectl create secret generic regcred \
     --from-file=.dockerconfigjson=<path/to/.docker/config.json> \
     --type=kubernetes.io/dockerconfigjson
 ```
 
-In my private registry:
+For my private registry:
 
 <pre class="console"><code>$ kubectl create secret generic regcred \
   --from-file=.dockerconfigjson=/Users/avache/.docker/config.json \
@@ -93,18 +97,52 @@ In my private registry:
   secret/regcred created
 </code></pre>
 
-You can also check the secret has been correctly deployed in your Kubernetes cluster:
+You can check the secret has been correctly deployed in your Kubernetes cluster:
 
 <pre class="console"><code>$ kubectl get secret regcred -o jsonpath="{.data.\.dockerconfigjson}"
 
-ewogICAgICAgICJhdXRocyI6IHsKCQkiaHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEvIjogewogICAgICAgICAgICAgICAgICAgICAgICAiYXV0aCI6ICJjMk55WVd4NU9qaDBhM00wWm01aiIKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAiY3g2ZHMzMGQuZ3JhNy5jb250YWluZXItcmVnaXN0cnkub3ZoLm5ldCI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImF1dGgiOiAiY0hKcGRtRjBaUzExYzJWeU9sQnlhWFpoZEdWVmMyVnlNUT09IgogICAgICAgICAgICAgICAgfQogICAgICAgIH0KfQo=%
+ewogICAgICAgICJhdXRocyI6IHsKCQkiaHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEvIjogewogICAgICAgICAgICAgICAgICAgICAgICAiYXV0aCI6ICJjMk55WVd4NU9qaDBhM00wWm01aiIKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAiY3g2ZHMzMGQuZ3JhNy5jb250YWluZXItcmVnaXN0cnkub3ZoLm5ldCI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImF1dGgiOiAiY0hKcGRtRjBaUzExYzJWeU9sQnlhWFpoZEdWVmMyVnlNUT09IgogICAgICAgICAgICAgICAgfQogICAgICAgIH0KfQo=
 </code></pre>
 
 >[!primary]
 >
 > Secrets are encoded in base64 and automatically decoded when they are attached to a Pod.
 
-### Deploying an image
+### 2. Create a Secret by providing credentials on the command line
+
+Let's create a Secret of `docker-registry` type.
+
+You will use this Secret to authenticate with your private registry to pull a private image:
+
+```bash
+kubectl create secret docker-registry regcred \
+    --docker-server=<your-registry-server> \
+    --docker-username=<your-username> \
+    --docker-password=<your-password>
+```
+
+For my private registry:
+
+<pre class="console"><code>$ kubectl create secret docker-registry regcred \
+    --docker-server=cx6ds30d.gra7.container-registry.ovh.net \
+    --docker-username=private-user \
+    --docker-password=PrivateUser1
+
+  secret/regcred created
+</code></pre>
+
+You can check the secret has been correctly deployed in your Kubernetes cluster:
+
+<pre class="console"><code>$ kubectl get secret regcred -o jsonpath="{.data.\.dockerconfigjson}"
+
+eyJhdXRocyI6eyJjeDZkczMwZC5ncmE3LmNvbnRhaW5lci1yZWdpc3RyeS5vdmgubmV0Ijp7InVzZXJuYW1lIjoicHJpdmF0ZS11c2VyIiwicGFzc3dvcmQiOiJQcml2YXRlVXNlcjEiLCJhdXRoIjoiY0hKcGRtRjBaUzExYzJWeU9sQnlhWFpoZEdWVmMyVnlNUT09In19fQ==
+</code></pre>
+
+>[!primary]
+>
+> Secrets are encoded in base64 and automatically decoded when they are attached to a Pod.
+
+## Deploying an image
 
 The first step to deploy a Docker image in a Kubernetes cluster is to write a YAML manifest. Let's call it `hello-ovh.yaml`:
 
@@ -112,42 +150,42 @@ The first step to deploy a Docker image in a Kubernetes cluster is to write a YA
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-ovh
-  labels:
-    app: hello-ovh
+    name: hello-ovh
+    labels:
+        app: hello-ovh
 spec:
-  type: LoadBalancer
-  ports:
-  - port: 80
-    targetPort: 80
-    protocol: TCP
-    name: http
-  selector:
-    app: hello-ovh
+    type: LoadBalancer
+    ports:
+        - port: 80
+          targetPort: 80
+          protocol: TCP
+          name: http
+    selector:
+        app: hello-ovh
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-ovh-deployment
-  labels:
-    app: hello-ovh
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: hello-ovh
-  template:
-    metadata:
-      labels:
+    name: hello-ovh-deployment
+    labels:
         app: hello-ovh
-    spec:
-      containers:
-      - name: hello-ovh
-        image: [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0
-        ports:
-        - containerPort: 80
-      imagePullSecrets:
-      - name: regcred
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: hello-ovh
+    template:
+        metadata:
+            labels:
+                app: hello-ovh
+        spec:
+            containers:
+                - name: hello-ovh
+                  image: [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0
+                  ports:
+                      - containerPort: 80
+            imagePullSecrets:
+                - name: regcred
 ```
 
 >[!primary]
