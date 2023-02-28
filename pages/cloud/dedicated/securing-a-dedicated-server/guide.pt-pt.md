@@ -1,93 +1,105 @@
 ---
-title: 'Proteger um servidor dedicado'
+title: "Proteger um servidor dedicado"
 slug: proteger-um-servidor-dedicado
-excerpt: 'Saiba como proteger o seu servidor dedicado graças a estas dicas'
+excerpt: "Saiba como proteger o seu servidor dedicado graças a estas dicas"
 section: Introdução
 order: 2
-updated: 2018-06-20
+updated: 2023-02-24
 ---
 
-**Última atualização: 22/08/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 24/02/2023**
 
-Quando encomenda o seu servidor dedicado, não existe nenhum protocolo de segurança implementado de forma nativa. O utilizador é responsável pela proteção do servidor e a OVHcloud não poderá ser responsabilizada por falhas de segurança da sua máquina.
+## Objetivo
 
-**Saiba como proteger o seu servidor dedicado graças a estas dicas.**
+Quando encomendar o seu servidor dedicado, pode escolher uma distribuição ou um sistema operativo a pré-instalar. O servidor está pronto para ser utilizado após a entrega. No entanto, cabe-lhe a si, enquanto administrador, implementar medidas que garantam a segurança e a estabilidade do seu sistema.
+
+**Este manual fornece-lhe alguns conselhos gerais para proteger um servidor baseado em GNU/Linux.**
 
 > [!warning]
+>A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
-> A utilização e a gestão dos serviços OVHcloud são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
->
-> Este manual fornece as instruções necessárias para usar as funcionalidades básicas de um servidor. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”
+>Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
 >
 
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
-- Ter uma ligação via SSH (acesso root) em Linux ou enquanto administrador no Windows.
-
+- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud
+- Ter acesso de administrador (root) ao seu servidor através de SSH
 
 ## Instruções
 
 > [!primary]
 >
-> Manual para utilização geral. Poderá ter de adaptar alguns comandos consoante a distribuição e/ou o sistema operativo que utiliza. Poderá ser-lhe sugerida a utilização de ferramentas de terceiros. Em caso de dúvidas relacionadas com a sua utilização, consulte a documentação oficial.  
+> Tenha em conta que se trata de um guia geral baseado num sistema operativo Ubuntu Server. Algumas encomendas precisam de ser adaptadas à distribuição que utiliza e certos truques convidam-no a utilizar ferramentas de terceiros. Consulte a documentação oficial destas aplicações caso necessite de ajuda.
+>
+> Se configurar o primeiro servidor dedicado da OVHcloud, recomendamos que consulte primeiro o nosso manual sobre [a implementação de um servidor dedicado](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/).
 >
 
-### Atualizar o sistema
+Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas.
 
-Os programadores de sistemas operativos e de sistemas de distribuição propõem atualizações do software frequentes, muitas vezes por razões de segurança. **Atualizar a sua distribuição e o seu sistema operativo é essencial para proteger o seu servidor.**
 
-Trata-se de um processo composto por duas partes que implica a atualização da lista dos pacotes (a lista das aplicações de software instaladas) e dos próprios pacotes.
+### Atualizar o sistema operativo
 
-#### Atualização da lista de pacotes
+Os programadores de distribuições e de sistemas operativos propõem atualizações frequentes de pacotes, muitas vezes por razões de segurança.<br>
+Assegurar a atualização da sua distribuição ou sistema operativo é um ponto essencial para proteger o seu servidor.
 
-Atualize a lista dos pacotes no seu servidor da seguinte forma:
+Esta atualização terá duas etapas.
 
-```sh
-apt-get update
+- A atualização da lista dos pacotes:
+
+```bash
+sudo apt update
 ```
 
-#### Atualização dos pacotes
+- A atualização dos pacotes propriamente dita:
 
-De seguida, atualize os pacotes no seu servidor da seguinte forma:
-
-```sh
-apt-get upgrade
+```bash
+sudo apt upgrade
 ```
 
-Depois de finalizar as atualizações, o seu sistema estará totalmente atualizado. Esta operação deve ser realizada regularmente.
+Esta operação deve ser efetuada regularmente para manter um sistema atualizado.
 
 
-### Alterar a porta de escuta do protocolo SSH
+### Modificar a porta de escuta SSH
 
-Uma das primeiras ações a realizar no seu servidor é a alteração da porta do serviço SSH. Porta predefinida: porta 22. Sugerimos a alteração do valor por predefinição. A maior parte das tentativas de ataques informáticos aos servidores são realizadas por robôs que têm como alvo a porta 22. Assim, o seu servidor será mais difícil de atingir se esta configuração for modificada.
+Uma das primeiras ações a realizar no seu servidor é a configuração da porta de escuta do serviço SSH. Por predefinição, este é definido na **porta 22**, pelo que as tentativas de hack do servidor por robots vão direcionar esta porta prioritariamente.
+A alteração deste parâmetro, em benefício de uma porta diferente, é uma medida simples para reforçar a proteção do seu servidor contra ataques automatizados.
 
-> [!primary]
->
-> Nos exemplos abaixo, utilizaremos o editor de texto Linux **Nano**, mas pode usar qualquer editor de texto que lhe permita editar o ficheiro de configuração.
->
+Para isso, altere o ficheiro de configuração do serviço com o editor de texto à sua escolha (`nano` é utilizado neste exemplo):
 
-Para modificar o ficheiro de configuração do serviço, poderá usar o seguinte comando:
-
-```sh
-nano /etc/ssh/sshd_config
+```bash
+~$ sudo nano /etc/ssh/sshd_config
 ```
 
-De seguida, localize a linha seguinte no ficheiro:
+Deve encontrar as seguintes linhas ou equivalentes:
 
-```sh
-# What ports, IPs and protocols we listen for Port 22
+```console
+# What ports, IPs and protocols we listen for
+Port 22
 ```
 
-Substitua o número **22** por outro à sua escolha, guarde e saia do ficheiro de configuração. **Certifique-se de que não introduziu um número de porta já existente**. De seguida, reinicie o seu servidor.
+Substitua o número **22** pelo número de porta à sua escolha.<br>
+**No entanto, certifique-se de que não indica um número de porta já utilizado no seu sistema**.
+Para uma maior segurança, utilize um número entre 49152 e 65535.<br>
+Registe e saia do ficheiro de configuração.
 
-A partir de agora, quando solicitar uma ligação SSH na sua máquina, deverá indicar a nova porta:
+Reinicie o serviço:
 
-```sh
-ssh root@SeuServidor.ovh.net -p NovaPorta
+```bash
+sudo systemctl restart sshd
+```
+
+Isto deveria ser suficiente para aplicar as alterações. Caso contrário, reinicie o servidor (`~$ sudo reboot`).
+
+Lembre-se de que deve indicar a nova porta a cada pedido de ligação SSH ao seu servidor, por exemplo:
+
+```bash
+ssh username@IPv4_servidor -p NewPortNumber
 ```
 
 > [!warning]
@@ -98,111 +110,151 @@ ssh root@SeuServidor.ovh.net -p NovaPorta
 
 ### Alterar a palavra-passe do utilizador root
 
-Quando um sistema de distribuição ou um sistema operativo é instalado, é automaticamente criada uma palavra-passe para o acesso root. Recomendamos vivamente que o altere para o personalizar. Para isso, abra uma ligação SSH para o seu servidor e introduza o comando abaixo:
-
-```sh
-passwd root
-```
-
-De seguida, deverá inserir a nova palavra-passe duas vezes. Lembre-se de que, por razões de segurança, **a palavra-passe não será apresentada**. Logo, não poderá visualizar os caracteres introduzidos.
-
-Após esta operação, o acesso ao sistema terá que ser efetuado com a nova palavra-passe.
+Recomenda-se vivamente que altere a palavra-passe do utilizador root para não a deixar ao valor predefinido num novo sistema. Para mais informações consulte [este guia](https://docs.ovh.com/pt/dedicated/alterar-palavra-passe-root-linux-num-servidor-dedicado/).
 
 
 ### Criar um utilizador com direitos restritos
 
-Sugerimos a criação de uma conta de utilizador com acesso restrito ao seu servidor para uma utilização diária. Para criar um novo utilizador, execute o seguinte comando:
+Em geral, as tarefas que não exijam privilégios root devem ser realizadas através de um utilizador standard. Para criar um novo utilizador, execute o seguinte comando:
 
-```sh
-adduser Nome_Utilizador_Personalizado
+```bash
+sudo adduser NomeUtilizadorPersonalizado
 ```
 
-De seguida, preencha as informações solicitadas pelo sistema (palavra-passe, nome, etc.).
+De seguida, indique as informações pedidas pelo sistema: palavra-passe, nome, etc.
 
-Este utilizador poderá aceder ao sistema via SSH, usando a palavra-passe definida durante a criação da nova conta. Uma vez ligado ao sistema com os dados de acesso do novo utilizador, poderá efetuar operações com permissões de administrador. Para tal deverá usar o comando:
+O novo utilizador será autorizado a ligar-se em SSH. Ao estabelecer uma ligação, utilize as informações de identificação especificadas.
 
-```sh
+Uma vez ligado, introduza o seguinte comando para efetuar operações que requerem autorizações root:
+
+```bash
 su root
 ```
 
-De seguida, terá que indicar a palavra-passe associada ao utilizador root para validar a ação.
+Introduza a password quando for convidado e a ligação ativa será migrada para o utilizador root.
 
 
 ### Desativar o acesso ao servidor através do utilizador root
 
-O utilizador root é criado por predefinição nos sistemas UNIX, como Linux ou MAC OS. Dispõe de todos os direitos de administração sobre o sistema. Por razões de segurança, não é recomendado tornar o servidor dedicado acessível apenas através deste utilizador. Esta conta pode executar operações irreversíveis no seu servidor.
+O utilizador root é criado por predefinição nos sistemas GNU/Linux. Trata-se do nível de acesso mais elevado a um sistema operativo.<br>
+É desaconselhado e mesmo perigoso deixar o seu servidor acessível apenas em root, pois esta conta pode efetuar operações irreversíveis prejudiciais.
 
-Aconselhamos vivamente que desative o acesso direto dos utilizadores root através do protocolo SSH. Para realizar esta operação, terá que modificar o ficheiro de configuração SSH, através do processo indicado anteriormente para alterar a porta de acesso ao servidor.
+Recomenda-se a desativação do acesso direto dos utilizadores root através do protocolo SSH. Não se esqueça de criar outro utilizador antes de seguir os passos abaixo.
 
-Comece por abrir uma ligação SSH para o seu servidor e introduza o comando abaixo:
+Deve modificar o ficheiro de configuração SSH da mesma forma que o descrito anteriormente:
 
-```sh
-nano /etc/ssh/sshd_config
+```bash
+sudo nano /etc/ssh/sshd_config
 ```
 
-De seguida, localize a secção seguinte e substitua o “yes” por “no” na linha `PermitRootLogin`, tal como indicado abaixo:
+Consulte a secção seguinte:
 
-```sh
+```console
 # Authentication: 
 LoginGraceTime 120
 PermitRootLogin yes 
 StrictModes yes
 ```
 
-Depois de guardar e fechar o ficheiro de configuração, reinicie o serviço SSH para aplicar as alterações através do comando abaixo:
+Substitua **yes** por **no** na linha `PermitRootLogin`.
 
-```sh
-/etc/init.d/ssh restart
+Para que esta modificação seja tida em conta, deve reiniciar o serviço SSH:
+
+```bash
+sudo systemctl restart sshd
 ```
 
-### Instalar e configurar o pacote Fail2ban
+De seguida, as ligações ao seu servidor através do utilizador root (`ssh root@IPv4_servidor`) serão rejeitadas.
 
-Fail2ban é um framework anti-intrusão que permite bloquear endereços de IP desconhecidos usados para penetrar no seu sistema. Este pacote é recomendado para o proteger contra ataques forçados no seu servidor.
+### Configurar firewall interna (iptables)
 
-Para instalar o Fail2ban, utilize o seguinte comando:
+As distribuições GNU/Linux comuns são fornecidas com um serviço de firewall designado iptables. A configuração inicial não tem nenhuma regra predefinida (ativa). Para confirmar o tipo de configuração, deverá executar o comando:
 
-```sh
-apt-get install fail2ban
-```
-
-Depois de instalado, altere o ficheiro de configuração do Fail2ban de acordo com definições do seu sistema. Antes de efetuar qualquer alteração, sugerimos que realize uma cópia de segurança do ficheiro de configuração inserindo o comando abaixo:
-
-```sh
-cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.conf.backup
-```
-
-Agora já pode fazer as modificações ao ficheiro:
-
-```sh
-nano /etc/fail2ban/jail.conf
-```
-
-Após finalizar essas alterações, reinicie o serviço através do seguinte comando:
-
-```sh
-/etc/init.d/fail2ban restart
-```
-
-Para saber mais sobre as funcionalidades do Fail2Ban, não hesite em consultar a [documentação oficial](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} (em inglês) deste software.
-
-
-### Configurar a firewall interna: iptables
-
-A distribuição “básica” inclui uma firewall designada iptables. A configuração inicial não tem nenhuma regra predefinida (ativa). Para confirmar o tipo de configuração, deverá executar o comando:
-
-```sh
+```bash
 iptables -L
 ```
 
-Como tal, recomendamos a criação e o ajustamento das regras da firewall à sua utilização. Para obter mais informações sobre a configuração dos iptables, consulte o [nosso guia](https://docs.ovh.com/pt/dedicated/firewall-iptables/) e a documentação oficial da distribuição Linux.
+Para mais informações sobre iptables, consulte o nosso [guia dedicado](https://docs.ovh.com/pt/dedicated/firewall-iptables/).
 
+Recomendamos que crie e adapte regras de firewall à sua utilização. Para mais informações sobre as várias operações, consulte a documentação oficial da distribuição utilizada.
 
-### Configurar a Network Firewall da OVHcloud
+### Instalar o Fail2ban
 
-Os servidores da OVHcloud incluem uma firewall para proteger o acesso à infraestrutura designada Network Firewall. A configuração deste serviço permite o bloqueio de protocolos antes mesmo de chegarem ao servidor.
+Fail2ban é um framework de prevenção contra as intrusões cujo objetivo é bloquear os endereços IP a partir dos quais bots ou atacantes tentam penetrar no seu sistema.<br>
+Este pacote é recomendado, ou mesmo indispensável em certos casos, para proteger o seu servidor contra ataques do tipo *Brute Force* ou *Denial of Service*.
 
-Poderá também consultar o nosso [manual](https://docs.ovh.com/pt/dedicated/firewall-network/){.external} sobre como configurar a Network Firewall.
+Para instalar o pacote de software, utilize o seguinte comando:
 
+```bash
+sudo apt install fail2ban
+```
+
+Pode personalizar os ficheiros de configuração Fail2ban para proteger os serviços expostos à Internet pública contra as tentativas de ligações repetidas.
+
+Como recomendado pelo Fail2ban, crie um ficheiro de configuração local dos seus serviços copiando o ficheiro "jail.conf":
+
+```bash
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+```
+
+A seguir, abra o ficheiro com um editor de texto:
+
+```bash
+sudo nano /etc/fail2ban/jail.local
+```
+
+Leia as informações no topo do ficheiro, nomeadamente as observações em `[DEFAULT]`.
+
+Os parâmetros `[DEFAULT]` são globais e aplicar-se-ão a todos os serviços definidos para serem ativados (`enabled`) neste ficheiro. 
+
+É importante saber que os parâmetros globais só serão tidos em conta se não existirem valores diferentes definidos nas secções de serviços (`JAILS`) mais abaixo do ficheiro.
+
+Tomemos como exemplo estas linhas em `[DEFAULT]`:
+
+```console
+bantime  = 10m
+maxretry = 5
+enabled = false
+```
+
+Isto significa que um endereço de IP a partir do qual um host tenta conectar-se será bloqueado durante dez minutos após a quinta tentativa de abertura de sessão falhada.<br>
+Além disso, todos os parâmetros especificados pela `[DEFAULT]` e nas secções seguintes permanecem desativados, exceto se a linha `enabled = true` for adicionada para um serviço (listada abaixo `# JAILS`).
+
+A título de exemplo de utilização, o facto de ter as seguintes linhas na secção `[sshd]` só ativará restrições para o serviço OpenSSH:
+
+```console
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+maxretry = 3
+findtime = 5m
+bantime  = 30m
+```
+
+Neste exemplo, se uma tentativa de ligação SSH falhar três vezes em cinco minutos, o período de interdição dos IP será de 30 minutos.
+
+Pode substituir "ssh" pelo número de porta real se o alterou.
+
+A melhor abordagem consiste em ativar o Fail2ban apenas para os serviços que são realmente executados no servidor. Cada parâmetro personalizado adicionado sob `# JAILS` será então prioritário relativamente aos valores predefinidos.
+
+Depois de finalizar as suas modificações, registe o ficheiro e feche o editor.
+
+Reinicie o serviço para se certificar de que ele é executado com as personalizações aplicadas:
+
+```bash
+sudo service fail2ban restart
+```
+
+Fail2ban dispõe de numerosos parâmetros e filtros de personalização, bem como de opções pré-definidas, por exemplo quando deseja adicionar uma camada de proteção a um servidor web Nginx.
+
+Para mais informações e recomendações sobre o Fail2ban, não hesite em consultar [a documentação oficial](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} desta ferramenta.
+
+### Configuração da Network Firewall OVHcloud 
+
+As soluções da OVHcloud incluem a possibilidade de ativar uma firewall no ponto de entrada da infraestrutura, designada Network Firewall. Uma configuração correta desta firewall permite bloquear as ligações antes mesmo que estas cheguem ao seu servidor.
+
+Consulte o guia "[Configurar a Network Firewall](https://docs.ovh.com/pt/dedicated/firewall-network/)" se desejar ativá-la.
 
 ### Proteger o sistema e os dados
 
@@ -215,9 +267,11 @@ A segurança de um sistema também inclui a proteção dos dados. A proteção d
 
 Será necessária uma solução de armazenamento de terceiros para replicar os seus dados e transferi-los para o seu armazenamento.
 
-Para saber mais sobre as nossas soluções de armazenamento, consulte o nosso [manual](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/){.external} sobre armazenamento (versão inglesa).
+Para saber mais sobre as nossas soluções de armazenamento, consulte o nosso [manual](https://docs.ovh.com/pt/dedicated/servicos-backup-storage/){.external} sobre armazenamento.
 
 
 ## Quer saber mais?
+
+[Network Firewall](https://docs.ovh.com/pt/dedicated/firewall-network/)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
