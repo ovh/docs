@@ -64,11 +64,11 @@ Introduza o login (ou o "nome do administrador") que lhe foi fornecido por e-mai
 
 Os **temas WordPress** são conjuntos de ficheiros que permitem alterar a apresentação do seu website sem alterar o seu conteúdo. Existem muitos temas disponíveis na Internet, gratuitos e pagos, com diferentes temas (websites, blogs, e-commerce, imprensa online, etc.).
 
-Para modificar o tema, clique no menu à esquerda do painel de controlo, clique em `Aparence`{.action} e, a seguir, em `Themes`{.action}:
+Para modificar o tema, clique no menu à esquerda do painel de controlo, clique em `Apresentação`{.action} e, a seguir, em `Temas`{.action}:
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps_3.png){.thumbnail}
 
-Escolha um tema entre os propostos e clique em `Ativ`{.action}:
+Escolha um tema entre os propostos e clique em `Activar`{.action}:
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps_4.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Pode visualizar o resultado acedendo ao seu website com o seu domínio.
 
 O WordPress permite-lhe criar facilmente conteúdos sem ter conhecimentos de desenvolvimento web.
 
-Para criar um artigo, aceda à secção `Artigos`{.action}, apresentada no menu à esquerda, e clique em `Acrescentar`{.action}:
+Para criar um artigo, aceda à secção `Artigos`{.action}, apresentada no menu à esquerda, e clique em `Novo Artigo`{.action}:
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps_5.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Desde a versão 5, **WordPress** propõe uma interface para simplificar a redaç
 
 ![WordPress - Gutenberg](images/wordpress_first_steps_6.png){.thumbnail}
 
-Clique em `Introduza o título`{.action} para adicionar um título à sua página :
+Clique em `Adicionar título`{.action} para adicionar um título à sua página :
 
 ![WordPress - Gutenberg, add title](images/wordpress_first_steps_7.png){.thumbnail}
 
@@ -96,11 +96,11 @@ Para adicionar conteúdo, clique no sinal `+`{.action} e escolha o que deseja in
 
 À direita da sua página, existem três ligações que lhe permitem efetuar as seguintes ações:
 
-- `para registar o rascunho`{.action}, uma ação que também pode realizar através da combinação de teclas `Ctrl` + `S` (ou `cmd` + `s`, ou ainda através de um macOS);
+- `Guardar rescunho`{.action}, uma ação que também pode realizar através da combinação de teclas `Ctrl` + `S` (ou `cmd` + `s`, ou ainda através de um macOS);
 - `Pré-visualizar`{.action};
-- `Publier`{.action} no seu website.
+- `Publicar`{.action} no seu website.
 
-No nosso **exemplo**, clique em `Visualizar`{.action} e depois em `Pré-visualizar num novo separador`{.action}. Escolha o tipo de dispositivo no qual deve ser entregue (PC, tablet ou smartphone):
+No nosso **exemplo**, clique em `Pré-visualizar`{.action} e depois em `Pré-vizualizar num novo separador`{.action}. Escolha o tipo de dispositivo no qual deve ser entregue (PC, tablet ou smartphone):
 
 ![WordPress - Preview](images/wordpress_first_steps_10.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Para voltar à interface de administração de **WordPress**, clique no ícone n
 
 ### Gerir as categorias
 
-**WordPress** permite definir categorias e associar os seus artigos a uma ou várias delas. Para gerir as categorias do seu website, aceda à secção `Artigos`{.action} e à secção `Categes`{.action}:
+**WordPress** permite definir categorias e associar os seus artigos a uma ou várias delas. Para gerir as categorias do seu website, aceda à secção `Artigos`{.action} e à secção `Categorias`{.action}:
 
 ![WordPress - Categorias](images/wordpress_first_steps_11.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Introduza o formulário para adicionar uma nova categoria:
 
 ![WordPress - Categories filed](images/wordpress_first_steps_12.png){.thumbnail}
 
-Depois de inserir estas informações, clique no botão `Adicionar uma nova categoria`{.action}:
+Depois de inserir estas informações, clique no botão `Adicionar nova categoria`{.action}:
 
 ![WordPress - Categories added](images/wordpress_first_steps_13.png){.thumbnail}
 
@@ -131,11 +131,11 @@ Tem a possibilidade de gerir a hierarquia das suas categorias. Uma nova categori
 
 ### atribuir uma categoria a um artigo
 
-Para afetar um artigo a uma ou várias categorias, clique em `Artigos`. Disporá da lista que contém todos os artigos e respetivos estatutos. Ultrapasse o título do artigo que deseja classificar e clique em `Modificação rápida`{.action}:
+Para afetar um artigo a uma ou várias categorias, clique em `Artigos`. Disporá da lista que contém todos os artigos e respetivos estatutos. Ultrapasse o título do artigo que deseja classificar e clique em `Edição rápida`{.action}:
 
 ![WordPress - Categorize a post](images/wordpress_first_steps_15.png){.thumbnail}
 
-Pode então modificar as categorias assinalando ou descodificando os elementos listados na coluna `Categes`{.action}:
+Pode então modificar as categorias assinalando ou descodificando os elementos listados na coluna `Categorias`{.action}:
 
 ![WordPress - Set new categories to an existing post](images/wordpress_first_steps_16.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Pode então modificar as categorias assinalando ou descodificando os elementos l
 
 As páginas devem distinguir-se dos artigos. Servem essencialmente para escrever conteúdos que não evoluem ou evoluem pouco tempo como menções legais, condições gerais de utilização, etc.
 
-Aceda à página `Pages`{.action}:
+Aceda à página `Páginas`{.action}:
 
 ![WordPress - GB to pages](images/wordpress_first_steps_17.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Aceda à página `Pages`{.action}:
 > Por predefinição, existe uma página gerada com a instalação de **WordPress**. Por razões de legibilidade, esta página foi retirada do exemplo.
 >
 
-Clique em `Aditer`{.action}. Encontra o editor Gutenberg:
+Clique em `Novo`{.action}. Encontra o editor Gutenberg:
 
 ![WordPress - Pages, Gutenberg page builder](images/wordpress_first_steps_18.png){.thumbnail}
 
@@ -173,7 +173,7 @@ Pode voltar à página inicial do seu website, disporá de um link para a sua no
 
 Por predefinição, os links das suas páginas **WordPress** são escritos com um sintaxe de tipo `parametros=valor`, sendo que o `valor` é número inteiro que não é explícito. A modificação da escrita dos desmaios permite ter URLs com um formato mais explícito. Os seus URLs serão mais legíveis e o referenciamento natural do seu website será melhorado.
 
-Na página inicial do painel de controlo, aceda a `definições`{.action} e depois `Permaliens`{.action}:
+Na página inicial do painel de controlo, aceda a `Opções`{.action} e depois `Ligações permanentes`{.action}:
 
 ![WordPress - Settings/Permalinks](images/wordpress_first_steps_21.png){.thumbnail}
 

@@ -96,7 +96,7 @@ On the right side of your page, you can find three links to do the following:
 - `Preview`{.action}
 - `Publish`{.action} to your website
 
-Click on `View`{.action}, then `Preview in New Tab`{.action}. Choose the type of device to render on (PC, tablet or smartphone).
+Click on `Preview`{.action}, then `Preview in New Tab`{.action}. Choose the type of device to render on (PC, tablet or smartphone).
 
 ![WordPress - Preview](images/wordpress_first_steps_10.png){.thumbnail}
 

@@ -64,7 +64,7 @@ Introduzca el usuario (o el "Nombre del administrador") que le haya proporcionad
 
 **Temas WordPress** son conjuntos de archivos que permiten modificar la presentación del sitio web sin modificar su contenido. Hay muchos temas disponibles en internet, gratis y de pago, con diferentes temáticas (sitios web, blogs, e-commerce, prensa en línea...).
 
-Para cambiar el tema, sitúese en el menú de la izquierda del panel, haga clic en `Aspecto`{.action} y seleccione `Temas`{.action}.
+Para cambiar el tema, sitúese en el menú de la izquierda del panel, haga clic en `Aparienca`{.action} y seleccione `Temas`{.action}.
 
 ![WordPress - Appearance/Temes](images/wordpress_first_steps_3.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Puede consultar el resultado en su sitio web con su dominio.
 
 WordPress le permite crear fácilmente contenido sin tener conocimientos de desarrollo web.
 
-Para crear un artículo, acceda a la sección `Artículos`{.action} del menú de la izquierda y haga clic en `Añadir`{.action}.
+Para crear un artículo, acceda a la sección `Entradas`{.action} del menú de la izquierda y haga clic en `Añadir nueva`{.action}.
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps_5.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Desde la versión 5, **WordPress** propone una interfaz para simplificar la reda
 
 ![WordPress - Gutenberg](images/wordpress_first_steps_6.png){.thumbnail}
 
-Haga clic en `Introduzca el título`{.action} para añadir un título a su página:
+Haga clic en `Escribe un título`{.action} para añadir un título a su página:
 
 ![WordPress - Gutenberg, add title](images/wordpress_first_steps_7.png){.thumbnail}
 
@@ -96,11 +96,11 @@ Para añadir contenido, haga clic en el signo `+`{.action} y seleccione lo que d
 
 A la derecha de su página, puede realizar las siguientes acciones:
 
-- `Guardar el borrado`{.action}, una acción que también puede realizar con la combinación de teclas `Ctrl` + `S` (o `cmd` + `S` en macOS).
-- `Prever`{.action};
+- `Guardar como borrador`{.action}, una acción que también puede realizar con la combinación de teclas `Ctrl` + `S` (o `cmd` + `S` en macOS).
+- `Vista previa`{.action};
 - `Publicar`{.action} en su sitio web.
 
-En nuestro **ejemplo**, haga clic en el botón `Visualizar`{.action} y, seguidamente, en `Prever en una nueva pestaña`{.action}. Elija el tipo de dispositivo a procesar (PC, tablet o smartphone):
+En nuestro **ejemplo**, haga clic en el botón `Vista previa`{.action} y, seguidamente, en `Previsualizar en nueva pestaña`{.action}. Elija el tipo de dispositivo a procesar (PC, tablet o smartphone):
 
 ![WordPress - Preview](images/wordpress_first_steps_10.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Para volver al panel de administración de **WordPress**, haga clic en el icono 
 
 ### Gestionar las categorías
 
-**WordPress** permite definir categorías y asociar sus artículos con una o más de ellas. Para gestionar las categorías de su sitio web, acceda a la sección `Artículos`{.action} y, seguidamente, a la sección `Categorías`{.action}.
+**WordPress** permite definir categorías y asociar sus artículos con una o más de ellas. Para gestionar las categorías de su sitio web, acceda a la sección `Entradas`{.action} y, seguidamente, a la sección `Categorías`{.action}.
 
 ![WordPress - Categories](images/wordpress_first_steps_11.png){.thumbnail}
 
@@ -131,7 +131,7 @@ Puede administrar la jerarquía de las categorías. Una nueva categoría puede v
 
 ### Asociar una categoría a un artículo
 
-Para asignar un artículo a una o más categorías, haga clic en `Artículos` (Posts). Tendrá una lista con todos los artículos y sus estados. Vuelva al título del artículo que desea clasificar y haga clic en `Modificación rápida`{.action} :
+Para asignar un artículo a una o más categorías, haga clic en `Entradas` (Posts). Tendrá una lista con todos los artículos y sus estados. Vuelva al título del artículo que desea clasificar y haga clic en `Edición rápida`{.action} :
 
 ![WordPress - Categorize a post](images/wordpress_first_steps_15.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Acceda a la página `Pages`{.action} :
 > Por defecto, existe una página que se genera al instalar **WordPress**. Por motivos de legibilidad, esta página se ha eliminado del ejemplo.
 >
 
-Haga clic en `Añadir`{.action}. El editor Gutenberg publicó lo siguiente:
+Haga clic en `Añadir nueva`{.action}. El editor Gutenberg publicó lo siguiente:
 
 ![WordPress - Pages, Gutenberg page builder](images/wordpress_first_steps_18.png){.thumbnail}
 
@@ -173,7 +173,7 @@ Puede volver a la página de inicio de su sitio web, dispondrá de un enlace hac
 
 Por defecto, los enlaces de sus páginas **WordPress** se escriben con una sintaxis de tipo `parámetro=valor`, puesto que el `valor` es un número entero que no es explícito. La modificación de la escritura de permalienses permite tener URL con un formato más explícito. Sus URL serán más legibles y mejorará el posicionamiento natural de su sitio web.
 
-En la página de inicio del cuadro de mando, acceda a `Ajustes`{.action} y, seguidamente, a `Permaliens`{.action} :
+En la página de inicio del cuadro de mando, acceda a `Ajustes`{.action} y, seguidamente, a `Enlaces permanentes`{.action} :
 
 ![WordPress - Settings/Permalinks](images/wordpress_first_steps_21.png){.thumbnail}
 

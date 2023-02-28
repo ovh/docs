@@ -64,11 +64,11 @@ Wpisz login (lub "Nazwę administratora") dostarczony przez e-mail oraz "Hasło 
 
 **szablony WordPress** to zbiory plików, które umożliwiają zmianę prezentacji strony www bez modyfikowania jej treści. W Internecie dostępne są liczne tematy, bezpłatne i płatne, z różnymi tematami (strony WWW, blogi, sklepy internetowe, prasa online,...).
 
-Aby zmienić hasło, w menu po lewej stronie dashboardu kliknij `Approply`{.action} a następnie `Tematy`{.action}:
+Aby zmienić hasło, w menu po lewej stronie dashboardu kliknij `Wygląd`{.action} a następnie `Motywy`{.action}:
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps_3.png){.thumbnail}
 
-Wybierz temat spośród zaproponowanych i kliknij na 'Aktywuj{.action}:
+Wybierz temat spośród zaproponowanych i kliknij na `Włącz`{.action}:
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps_4.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Możesz wyświetlić wynik na stronie WWW z nazwą domeny.
 
 WordPress pozwala na łatwe tworzenie treści bez posiadania wiedzy z zakresu programowania.
 
-Aby utworzyć artykuł, przejdź do sekcji `Artykuły`{.action} w menu po lewej stronie, następnie kliknij `Dodaj`{.action}:
+Aby utworzyć artykuł, przejdź do sekcji `Wpisy`{.action} w menu po lewej stronie, następnie kliknij `Dodaj nowy`{.action}:
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps_5.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Od wersji 5 **WordPress** oferuje interfejs umożliwiający prostsze redagowanie
 
 ![WordPress - Gutenberg](images/wordpress_first_steps_6.png){.thumbnail}
 
-Kliknij polecenie `Wpisz tytuł`{.action}, aby dodać tytuł na swojej stronie:
+Kliknij polecenie `Dodaj tytuł`{.action}, aby dodać tytuł na swojej stronie:
 
 ![WordPress - Gutenberg, add title](images/wordpress_first_steps_7.png){.thumbnail}
 
@@ -98,9 +98,9 @@ Z prawej strony Twojej strony możesz wykonać następujące operacje:
 
 - `Zapisz szkic`{.action}, działanie, które możesz również wykonać z kombinezonem klawisza `Ctrl` + `S` (lub `cmd` + `S` z macOS);
 - `Podgląd`{.action};
-- `Publikuj`{.action} na Twojej stronie WWW.
+- `Opublikuj`{.action} na Twojej stronie WWW.
 
-W naszym **przykład** kliknij `Wyświetl`{.action}, następnie `Podgląd w nowej zakładce`{.action}. Wybierz typ urządzenia, na którym wykonasz renderowanie (komputer, tablet lub smartfon):
+W naszym **przykład** kliknij `Podgląd`{.action}, następnie `Podejrzyj w nowej zakladce`{.action}. Wybierz typ urządzenia, na którym wykonasz renderowanie (komputer, tablet lub smartfon):
 
 ![WordPress - Preview](images/wordpress_first_steps_10.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Aby powrócić do interfejsu administracyjnego **WordPress**, w lewym górnym ro
 
 ### Zarządzaj kategoriami
 
-**WordPress** pozwala na zdefiniowanie kategorii i powiązanie artykułów z jedną lub kilkoma z nich. Aby zarządzać kategoriami Twojej strony WWW, przejdź do sekcji `Artykuły`{.action}, a następnie do sekcji `Kategorie`{.action}:
+**WordPress** pozwala na zdefiniowanie kategorii i powiązanie artykułów z jedną lub kilkoma z nich. Aby zarządzać kategoriami Twojej strony WWW, przejdź do sekcji `Wpisy`{.action}, a następnie do sekcji `Kategorie`{.action}:
 
 ![WordPress - Categories](images/wordpress_first_steps_11.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Wpisz teraz formularz, aby dodać nową kategorię:
 
 ![WordPress - Categories filled](images/wordpress_first_steps_12.png){.thumbnail}
 
-Po podaniu tych informacji kliknij przycisk `Dodaj nową kategorię`{.action}:
+Po podaniu tych informacji kliknij przycisk `Utwórz kategorię`{.action}:
 
 ![WordPress - Categories added](images/wordpress_first_steps_13.png){.thumbnail}
 
@@ -131,7 +131,7 @@ Masz możliwość zarządzania hierarchią swoich kategorii. Nowa kategoria moż
 
 ### przypisanie kategorii do artykułu
 
-Aby przypisać artykuł do jednej lub kilku kategorii, kliknij na `artykuł` (Posty). Będziesz mieć listę zawierającą wszystkie artykuły i ich statusy. Przejdź do tematu artykułu, który chcesz sklasyfikować i kliknij na `Szybka zmiana`{.action}:
+Aby przypisać artykuł do jednej lub kilku kategorii, kliknij na `Wpisy` (Posty). Będziesz mieć listę zawierającą wszystkie artykuły i ich statusy. Przejdź do tematu artykułu, który chcesz sklasyfikować i kliknij na `Szybka edycja`{.action}:
 
 ![WordPress - Categorize a post](images/wordpress_first_steps_15.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Przejdź do strony `Strony`{.action}:
 > Domyślnie istnieje strona, która jest generowana podczas instalacji **WordPress**. Ze względu na czytelność tej strony usunięto ją z przykładu.
 >
 
-Kliknij na `Dodaj`{.action}. Wówczas pojawił się redaktor Gutenberg:
+Kliknij na `Dodaj nowy`{.action}. Wówczas pojawił się redaktor Gutenberg:
 
 ![WordPress - Parges, Gutenberg page builder](images/wordpress_first_steps_18.png){.thumbnail}
 
@@ -173,7 +173,7 @@ Możesz powrócić na stronę główną Twojej strony WWW, otrzymasz link do now
 
 Domyślnie linki na Twoich stronach **WordPress** są napisane z składnią typu `parametr=wartość`, `która` jest liczbą całkowitą, która nie jest wyraźna. Modyfikacja zapisu permalinki pozwala na posiadanie adresów URL o bardziej wyraźnym formacie. Adresy URL będą łatwiejsze do odczytania, co poprawi pozycjonowanie Twojej strony www.
 
-Na stronie głównej dashboardu przejdź do `Ustawienia`{.action}, a następnie kliknij `permalię`{.action}:
+Na stronie głównej dashboardu przejdź do `Ustawienia`{.action}, a następnie kliknij `Bezpośrednie odnośniki`{.action}:
 
 ![WordPress - Settings/Permalinks](images/wordpress_first_steps_21.png){.thumbnail}
 

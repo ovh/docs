@@ -64,7 +64,7 @@ Inserisci il login (o il "Nome dell'amministratore") che ti è stato fornito via
 
 I **temi WordPress** sono insiemi di file che permettono di modificare la presentazione del tuo sito Web senza modificarne il contenuto. Esistono numerosi temi disponibili su Internet, gratuiti e a pagamento, con tematiche diverse (siti web, blog, e-commerce, stampa online, ecc...).
 
-Per modificare il tema, vai nel menu a sinistra della dashboard, clicca su `Apparence`{.action} e poi su `Theme`{.action}:
+Per modificare il tema, vai nel menu a sinistra della dashboard, clicca su `Aspetto`{.action} e poi su `Temi`{.action}:
 
 ![WordPress - Appearance/Themes](images/wordpress_first_steps_3.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Per visualizzare il risultato, accedi al tuo sito Web con il tuo dominio.
 
 WordPress ti permette di creare facilmente contenuti senza conoscere lo sviluppo Web.
 
-Per creare un articolo, clicca su `Articoli`{.action} nel menu a sinistra e poi su `Aggiungi`{.action}:
+Per creare un articolo, clicca su `Articoli`{.action} nel menu a sinistra e poi su `Aggiungi nuovo`{.action}:
 
 ![WordPress - Posts/Add New](images/wordpress_first_steps_5.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Dalla versione 5, **WordPress** offre un'interfaccia per semplificare la redazio
 
 ![WordPress - Gutenberg](images/wordpress_first_steps_6.png){.thumbnail}
 
-Clicca su `Inserisci il titolo`{.action} per aggiungere un titolo alla tua pagina:
+Clicca su `Aggiungi titolo`{.action} per aggiungere un titolo alla tua pagina:
 
 ![WordPress - Gutenberg, add title](images/wordpress_first_steps_7.png){.thumbnail}
 
@@ -96,11 +96,11 @@ Per aggiungere contenuto, clicca sul simbolo `+`{.action} e seleziona cosa vuoi 
 
 Sulla destra della tua pagina, tre link ti permettono di effettuare queste operazioni:
 
-- `Salva la bozza`{.action}, operazione che puoi effettuare anche associando `Ctrl` + `S` (o `cmd` + `S` sotto macOS)
-- `Previsualizzare`{.action};
-- `Publier`{.action} sul tuo sito Web
+- `Salva bozza`{.action}, operazione che puoi effettuare anche associando `Ctrl` + `S` (o `cmd` + `S` sotto macOS)
+- `Anteprima`{.action};
+- `Pubblica`{.action} sul tuo sito Web
 
-Nel nostro **esempio**, clicca su `Visualizza`{.action} e poi su `Previsualizza in una nuova scheda`{.action}. Scegli il tipo di dispositivo su cui effettuare il rendering (PC, tablet o smartphone):
+Nel nostro **esempio**, clicca su `Anteprima`{.action} e poi su `Anteprima in una nuova scheda`{.action}. Scegli il tipo di dispositivo su cui effettuare il rendering (PC, tablet o smartphone):
 
 ![WordPress - Preview](images/wordpress_first_steps_10.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Per modificare le categorie, seleziona o deseleziona gli elementi elencati nella
 
 Le pagine devono essere distinte dagli articoli. Sono principalmente utilizzate per scrivere contenuti che non cambieranno nel tempo, come menzioni legali, condizioni generali di utilizzo, ecc.
 
-Accedi alla pagina `Pages`{.action}:
+Accedi alla pagina `Pagine`{.action}:
 
 ![WordPress - GB to page](images/wordpress_first_steps_17.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Accedi alla pagina `Pages`{.action}:
 > Di default, esiste una pagina generata all'installazione di **WordPress**. Per motivi di leggibilità, questa pagina è stata eliminata dall'esempio.
 >
 
-Clicca su `Aggiungi`{.action} A questo punto trovi l'editor Gutenberg:
+Clicca su `Aggiungi nuovo`{.action} A questo punto trovi l'editor Gutenberg:
 
 ![WordPress - Pagine, Gutenberg page builder](images/wordpress_first_steps_18.png){.thumbnail}
 
@@ -173,7 +173,7 @@ Puoi tornare alla home page del tuo sito web e avere un link alla tua nuova pagi
 
 Di default, i link delle tue pagine **WordPress** sono scritti con una sintassi di tipo `parametro=valore`, `valore` è un numero intero che non è esplicito. La modifica della scrittura dei permaliani permette di avere degli URL con un formato più esplicito. I tuoi URL saranno più leggibili e migliorerà il referenziamento naturale del tuo sito Web.
 
-Accedi alla pagina iniziale della dashboard, clicca su `Impostazioni`{.action} e poi su `Permaliens`{.action}:
+Accedi alla pagina iniziale della dashboard, clicca su `Impostazioni`{.action} e poi su `Permalink`{.action}:
 
 ![WordPress - Settings/Permalinks](images/wordpress_first_steps_21.png){.thumbnail}
 
