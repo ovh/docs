@@ -1,5 +1,5 @@
 ---
-title: Gateway-Firewallverwaltung in NSX (EN)
+title: Verwaltung der Gateway Firewall in NSX (EN)
 slug: nsx-manage-gateway-firewall
 excerpt: Learn how to manage gateway firewalls
 section: NSX
