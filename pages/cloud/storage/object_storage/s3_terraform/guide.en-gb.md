@@ -21,7 +21,7 @@ This tutorial will enable you to automate some actions on S3 object storage with
 
 - Have terraform command line installed (see this [tutorial](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) from Hashicorp the company behind Terraform). 
 - Have git command line installed
-- You will need to have set up an account to interact with OVH API : [https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). From the application key created in this tutorial, you will need to export the 4 environment variables :
+- You will need to have set up an account to interact with OVH API (see this [tutorial](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)). From the application keys created, you will need to export the 4 environment variables :
 
 ```bash
 $ export OVH_ENDPOINT=ovh-eu
@@ -71,9 +71,9 @@ $ terraform plan
 
 Now let's have a look at the content of the `main.tf` file:
 
-- The *variable* block defines the region and s3 endpoint that are used to create the bucket. You can update it according to your needs [https://docs.ovh.com/gb/en/storage/object-storage/s3/location/](https://docs.ovh.com/gb/en/storage/object-storage/s3/location/)
+- The *variable* block defines the region and s3 endpoint that are used to create the bucket. You can update it according to your needs : check this [page](https://docs.ovh.com/gb/en/storage/object-storage/s3/location/) to know what region / endpoints are available.
 - The *Providers* block defines 2 providers : ovh and Hashicorp AWS one. The first one is necessary to create the user whose identity / credentials will be used for the latest.
-- The *User / Credential* block defines the user & credential that are visible in the Settings > Users & Roles tab. They are needed to configure the Hashicorp  AWS provider.
+- The *User / Credential* block defines the user & credential that are visible in the Settings > Users & Roles tab. They are needed to configure the Hashicorp AWS provider.
 - The Bucket block define the bucket itself
 - The Output defines the access & secret key that may be useful for CLI usage.
 
