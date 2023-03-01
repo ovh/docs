@@ -1,8 +1,8 @@
 ---
-title: Configurer le Load Balancer NSX Edge
+title: Configurer le Load Balancer NSX-v Edge
 slug: configurer-le-load-balancer-nsx-edge
-excerpt: Utiliser le service d'équilibrage de charge du NSX Edge
-section: NSX
+excerpt: Utiliser le service d'équilibrage de charge du NSX-v Edge
+section: NSX-v
 order: 05
 updated: 2021-11-29
 ---

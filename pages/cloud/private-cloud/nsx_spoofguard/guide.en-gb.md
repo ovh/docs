@@ -2,7 +2,7 @@
 title: Avoid IP spoofing with the SpoofGuard service
 slug: spoofguard
 excerpt: Set up policies to detect IP spoofing
-section: NSX
+section: NSX-v
 order: 10
 updated: 2021-02-12
 ---

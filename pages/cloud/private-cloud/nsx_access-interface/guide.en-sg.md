@@ -1,8 +1,8 @@
 ---
-title: Accessing the NSX interface
+title: Accessing the NSX-v interface
 slug: accessing-NSX-interface
-excerpt: Find out how to use the NSX interface
-section: NSX
+excerpt: Find out how to use the NSX-v interface
+section: NSX-v
 order: 1
 updated: 2021-11-17
 ---

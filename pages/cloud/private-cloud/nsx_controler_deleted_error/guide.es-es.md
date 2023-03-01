@@ -4,7 +4,7 @@ slug: error-controlador-nsx
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/error-controller-nsx/'
 excerpt: 'Find out what the “Controller VM deleted” error message means'
-section: NSX
+section: NSX-v
 updated: 2021-11-26
 ---
 

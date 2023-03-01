@@ -3,7 +3,7 @@ title: Eviter l'usurpation d'IP avec le service SpoofGuard
 slug: spoofguard
 excerpt: Paramétrez des politiques pour éviter l'usurpation d'IP
 legacy_guide_number: '4816988'
-section: NSX
+section: NSX-v
 order: 10
 updated: 2021-02-12
 ---
