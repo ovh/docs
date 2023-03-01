@@ -45,7 +45,7 @@ This first part describes how to create and update policies.
 
 Resources, resource groups and actions needed to create a policy will be described in next sections.
 
-##### API definition
+#### API definition
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
 
@@ -57,7 +57,7 @@ Resources, resource groups and actions needed to create a policy will be describ
 |PUT|/iam/policy/{policyId}|Update an existing policy|
 |DELETE|/iam/policy/{policyId}|Delete the given policy|
 
-##### Retrieve all policies
+#### Retrieve all policies
 
 First, let's see how a policy is built.
 
@@ -108,7 +108,7 @@ Every items in policies are defined by URNs. These URNs are defined by the follo
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-###### **Policy attributes**
+##### **Policy attributes**
 
 - id: Unique identifier of the policy. It follows the UUID format
 - owner: The account that created this policy
@@ -122,7 +122,7 @@ Every items in policies are defined by URNs. These URNs are defined by the follo
 - createdAt: Creation date of the policy
 - updateAt: Last update date of the policy
 
-##### Create a policy
+#### Create a policy
 
 Create a new policy using this API:
 
@@ -228,7 +228,7 @@ Policies apply to users, which can be Accounts, users or user groups.
 
 This section describes how to retrieve or create user for the policy
 
-##### API definition
+#### API definition
 
 <https://api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
 
@@ -245,7 +245,7 @@ This section describes how to retrieve or create user for the policy
 |PUT|/me/identity/group/{group}|Alter a group|
 |DELETE|/me/identity/group/{group}|Delete a group|
 
-##### Create users
+#### Create users
 
 List all the current users related to the account by calling **/me/identity/user**,
 
@@ -274,7 +274,7 @@ To create a new user, call the API with the following body:
 }
 ```
 
-##### Create user groups
+#### Create user groups
 
 List all the current user groups related to the account by calling **/me/identity/group**
 
@@ -305,7 +305,7 @@ To create a new user group, call the API with the following body:
 
 For more information, refer to the [documentation](https://docs.ovh.com/gb/en/customer/managing-users/) for user management.
 
-##### With SSO connection enabled
+#### With SSO connection enabled
 
 If the federation is enabled through the [SSO connection](https://docs.ovh.com/gb/en/customer/connect-saml-sso/), policies only apply to user groups as described in the previous section.
 
@@ -315,7 +315,7 @@ Policies refer to **resources.** The resources are the OVHcloud products subscr
 
 This section describes how to retrieve resources information to use in a policy.
 
-##### API definition
+#### API definition
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
 
@@ -324,7 +324,7 @@ This section describes how to retrieve resources information to use in a policy.
 |GET|/iam/resource|List all resources|
 |GET|/iam/resource/{resourceId}|Retrieve a resource|
 
-##### Example
+#### Example
 
 See all the resources linked to the OVHcloud account by calling **/iam/resource/**
 
@@ -361,7 +361,7 @@ See all the resources linked to the OVHcloud account by calling **/iam/resource
 
 In this exemple, this account has 3 resources available (a VPS, an email domain and a CDN). Each of this resources has a set of attributes to identify them on policies.
 
-##### Resource attributes
+#### Resource attributes
 
 - id: Unique identifier of the resource. It follows the UUID format
 - urn: Resource URN
@@ -374,7 +374,7 @@ In this exemple, this account has 3 resources available (a VPS, an email domain 
 
 To ease the policy management for large number of resources, it's possible to set up a resource group which aggregates several resources to a unique URN
 
-##### API definition
+#### API definition
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
 
@@ -386,7 +386,7 @@ To ease the policy management for large number of resources, it's possible to s
 |PUT|/iam/resourceGroup/{groupId}|Update an existing resource group|
 |DELETE|/iam/resourceGroup/{groupId}|Delete the given resource group|
 
-##### Retrieve a resource group
+#### Retrieve a resource group
 
 List all resource groups by calling **/iam/resourceGroup**
 
@@ -423,7 +423,7 @@ This API can be called with a query-string parameters "details" to expand the re
 
 In the example, we can see that this resource group "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*" has 3 resources. It means that a policy applied to this resource group will be applied on those 3 resources.
 
-###### **Resource group attributes**
+##### **Resource group attributes**
 
 - id: Unique identifier of the resource group. It follows the UUID format.
 - urn: Resource group URN to use on the policy
@@ -436,7 +436,7 @@ In the example, we can see that this resource group "*urn:v1:eu:resourceGroup:aa
 - createdAt: Creation date of the resource group
 - updateAt: Last update date of the resource group
 
-##### Create a resource group
+#### Create a resource group
 
 Create a resource group with this API:
 
@@ -468,7 +468,7 @@ Policies contain a list of **Action** that will be allowed or denied to users
 
 Theses actions are specific to every product, such as rebooting a database, ordering an upgrade, restoring a snapshot, etc.
 
-##### API definition
+#### API definition
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
 
@@ -476,7 +476,7 @@ Theses actions are specific to every product, such as rebooting a database, orde
 | :-: | :-: | :-: |
 |GET|/iam/reference/action|Retrieve all actions|
 
-###### **Example**
+##### **Example**
 
 List all the actions available for policies with the API.
 
@@ -501,22 +501,22 @@ The call to /iam/reference/action API will list **all of the available** actions
 
 It's strongly recommended to specify the **resourceType** as a query-string parameter for this API (see the next section).
 
-##### Action attributes
+#### Action attributes
 
 - action: The action itself
 - description: The action description
 - resourceType: The resource type targeted by this action
 - categories: The categories of this action (CREATE, READ, EDIT, OPERATE, DELETE)
 
-##### Resource types
+#### Resource types
 
-###### **API definition**
+##### **API definition**
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
 |GET|/iam/reference/resource/type|Retrieve all resource types|
 
-###### **Example**
+##### **Example**
 
 Here's a part of the output:
 
