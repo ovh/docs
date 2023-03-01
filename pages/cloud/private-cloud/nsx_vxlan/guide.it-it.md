@@ -4,7 +4,7 @@ slug: nsx-creation-vxlan
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-creation-vxlan/'
 excerpt: Find out how to create VxLANs on the NSX Edge Gateway
-section: NSX
+section: NSX-v
 updated: 2021-12-13
 ---
 
