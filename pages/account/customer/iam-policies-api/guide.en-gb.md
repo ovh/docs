@@ -108,19 +108,19 @@ Every items in policies are defined by URNs. These URNs are defined by the follo
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-##### **Policy attributes**
+#### **Policy attributes**
 
-- id: Unique identifier of the policy. It follows the UUID format
-- owner: The account that created this policy
-- name: The policy name. It's possible to use this name to organize the policies. There is no format to follow (except that the prefix "ovh-" is reserved for OVHcloud policies).
-- readOnly: If true, it indicates that the policy cannot be edited. It often represents policies managed by OVHcloud
-- identities: The identities concerned by the policy. They are specified by a URN. **account:<account-id>** for the account, **user:<account-id>/<username>** for an account user, **group:<account-id>/<username>** for a user group
-- resources: The resources concerned by the policy. They are specified by a URN. **resource** for a resource, **resourceGroup** for a resource group
-- permissions: Can be **allow** or **except**: 
-  - allow: Array of actions allowed for the identities regarding the resources. All actions are denied by default
-  - except: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it's necessary to exclude a specific action that otherwise would be included in the wildcard.
-- createdAt: Creation date of the policy
-- updateAt: Last update date of the policy
+- **id**: Unique identifier of the policy. It follows the UUID format
+- **owner**: The account that created this policy
+- **name**: The policy name. It's possible to use this name to organize the policies. There is no format to follow (except that the prefix "ovh-" is reserved for OVHcloud policies).
+- **readOnly**: If true, it indicates that the policy cannot be edited. It often represents policies managed by OVHcloud
+- **identities**: The identities concerned by the policy. They are specified by a URN. **account:<account-id>** for the account, **user:<account-id>/<username>** for an account user, **group:<account-id>/<username>** for a user group
+- **resources**: The resources concerned by the policy. They are specified by a URN. **resource** for a resource, **resourceGroup** for a resource group
+- **permissions**: Can be **allow** or **except**: 
+  - **allow**: Array of actions allowed for the identities regarding the resources. All actions are denied by default
+  - **except**: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it's necessary to exclude a specific action that otherwise would be included in the wildcard.
+- **createdAt**: Creation date of the policy
+- **updateAt**: Last update date of the policy
 
 #### Create a policy
 
@@ -363,12 +363,12 @@ In this exemple, this account has 3 resources available (a VPS, an email domain 
 
 #### Resource attributes
 
-- id: Unique identifier of the resource. It follows the UUID format
-- urn: Resource URN
-- name: The resource name
-- displayName: The resource name as displayed in the user interface
-- type: The resource type (vps, publiccloud, dnsZone, domain, emailDomain, ...)
-- owner: The resource owner (NIC Handle)
+- **id**: Unique identifier of the resource. It follows the UUID format
+- **urn**: Resource URN
+- **name**: The resource name
+- **displayName**: The resource name as displayed in the user interface
+- **type**: The resource type (vps, publiccloud, dnsZone, domain, emailDomain, ...)
+- **owner**: The resource owner (NIC Handle)
 
 ### Resource Groups
 
@@ -423,18 +423,18 @@ This API can be called with a query-string parameters "details" to expand the re
 
 In the example, we can see that this resource group "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*" has 3 resources. It means that a policy applied to this resource group will be applied on those 3 resources.
 
-##### **Resource group attributes**
+#### **Resource group attributes**
 
-- id: Unique identifier of the resource group. It follows the UUID format.
-- urn: Resource group URN to use on the policy
-- readOnly: Cannot be modified if it's true. The default resource groups are read-only
-- name: The resource group name
-- owner: The resource group owner (NIC Handle)
-- resources: 
-    - If details = false: Array of resources UUID
-    - If details = true: The resources will be expanded with their attributes (as the result we have via the resource API)
-- createdAt: Creation date of the resource group
-- updateAt: Last update date of the resource group
+- **id**: Unique identifier of the resource group. It follows the UUID format.
+- **urn**: Resource group URN to use on the policy
+- **readOnly**: Cannot be modified if it's true. The default resource groups are read-only
+- **name**: The resource group name
+- **owner**: The resource group owner (NIC Handle)
+- **resources**: 
+    - If details = **false**: Array of resources UUID
+    - If details = **true**: The resources will be expanded with their attributes (as the result we have via the resource API)
+- **createdAt**: Creation date of the resource group
+- **updateAt**: Last update date of the resource group
 
 #### Create a resource group
 
@@ -503,10 +503,10 @@ It's strongly recommended to specify the **resourceType** as a query-string para
 
 #### Action attributes
 
-- action: The action itself
-- description: The action description
-- resourceType: The resource type targeted by this action
-- categories: The categories of this action (CREATE, READ, EDIT, OPERATE, DELETE)
+- **action**: The action itself
+- **description**: The action description
+- **resourceType**: The resource type targeted by this action
+- **categories**: The categories of this action (CREATE, READ, EDIT, OPERATE, DELETE)
 
 #### Resource types
 
@@ -532,7 +532,6 @@ Here's a part of the output:
     "publicCloud",
     "voipSmsvn",
     "vps",
-    ...
 ]
 ```
 
