@@ -42,11 +42,11 @@ Accedi alla tua interfaccia di amministrazione digitando `/wp-admin` o `/wp-logi
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps_1.png){.thumbnail}
 
-Nel menu a sinistra, clicca su `Extensions`{.action} e poi su `Aggiungi`{.action}:
+Nel menu a sinistra, clicca su `Plugin`{.action} e poi su `Aggiungi nuovo`{.action}:
 
 ![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps_2.png){.thumbnail}
 
-Nella nuova pagina `Aggiungi estensioni`{.action}, inserisci "Woocommerce" nella barra di ricerca in alto a destra e clicca su `Installa subito`{.action} nel riquadro associato all'estensione **WooCommerce**:
+Nella nuova pagina `Aggiungi plugin`{.action}, inserisci "Woocommerce" nella barra di ricerca in alto a destra e clicca su `Installa adesso`{.action} nel riquadro associato all'estensione **WooCommerce**:
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps_3.png){.thumbnail}
 
@@ -88,11 +88,11 @@ Il tuo e-commerce è stato configurato con i parametri generali.
 
 #### Metodo n°2 - configurazione manuale
 
-Clicca su `Extensions`{.action} per visualizzare le estensioni installate e su `Extensions installate` Visualizzi una lista delle tue estensioni. Clicca su `Regolages`{.action} nel modulo **WooCommerce**:
+Clicca su `Plugin`{.action} per visualizzare le estensioni installate e su `Plugin installati` Visualizzi una lista delle tue estensioni. Clicca su `Impostazioni`{.action} nel modulo **WooCommerce**:
 
 ![Setup Wizard - Estensione, WooCommerce, Settings](images/wordpress-woocommerce-first-steps_11.png){.thumbnail}
 
-Per visualizzare le impostazioni, clicca su `WooCommerce`{.action} > `Responi`{.action}:
+Per visualizzare le impostazioni, clicca su `WooCommerce`{.action} > `Impostazioni`{.action}:
 
 ![Setup Wizard - WooCommerce, Settings](images/wordpress-woocommerce-first-steps_12.png){.thumbnail}
 
@@ -127,7 +127,7 @@ La gestione dei prodotti avviene tramite una serie di sottorubriche:
 
 #### Spedizione
 
-Se hai attivato gratuitamente le estensioni predefinite durante l'installazione, disponi dell'estensione [WooCommerce Shipping](https://woocommerce.com/it-it/woocommerce-shipping/){.external}. In caso contrario, accedi alla sezione `Extensions`{.action} del menu in cui viene ordinata la configurazione del server.
+Se hai attivato gratuitamente le estensioni predefinite durante l'installazione, disponi dell'estensione [WooCommerce Shipping](https://woocommerce.com/it-it/woocommerce-shipping/){.external}. In caso contrario, accedi alla sezione `Plugin`{.action} del menu in cui viene ordinata la configurazione del server.
 
 - **Zone di spedizione**: permette di definire e configurare zone di spedizione.
 - **Opzioni di consegna**: serve a impostare l'applicazione per tutto ciò che riguarda le spese di spedizione.
@@ -137,7 +137,7 @@ Se hai attivato gratuitamente le estensioni predefinite durante l'installazione,
 
 Questa scheda serve ad attivare/disattivare le modalità di pagamento proposte sul tuo sito Web. Accedi alla [documentazione ufficiale](https://woocommerce.com/document/payments/) per configurare la tua modalità di pagamento.
 
-##### Account e confidenzialità
+#### Account e confidenzialità
 
 Questa sezione include tutte le funzionalità relative alla gestione degli account e dei dati personali.
 

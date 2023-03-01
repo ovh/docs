@@ -38,11 +38,11 @@ Log in to your admin interface by typing `/wp-admin` or `/wp-login` in your sear
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps_1.png){.thumbnail}
 
-In the left-hand menu, go to `Extensions`{.action} then click on `Add`{.action}:
+In the left-hand menu, go to `Plugins`{.action} then click on `Add new`{.action}:
 
 ![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps_2.png){.thumbnail}
 
-On the new `Add Extensions`{.action} page, type woocommerce in the search bar in the top right and click `Install Now`{.action} in the **WooCommerce** extension box:
+On the new `Add plugins`{.action} page, type woocommerce in the search bar in the top right and click `Install Now`{.action} in the **WooCommerce** extension box:
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps_3.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Your online store is now configured with the general settings.
 
 #### Method 2 - Manual configuration
 
-Click `Extensions`{.action} to list the installed extensions and then click `Installed Extensions`. You will see a list of your extensions. Click `Settings`{.action} in the **WooCommerce** module:
+Click `Plugins`{.action} to list the installed extensions and then click `Installed plugins`. You will see a list of your extensions. Click `Settings`{.action} in the **WooCommerce** module:
 
 ![Setup Wizard - Extension, WooCommerce, Settings](images/wordpress-woocommerce-first-steps_11.png){.thumbnail}
 
@@ -123,7 +123,7 @@ Product management is done through a set of sub-headings:
 
 #### Shipping
 
-If you enabled the default extensions that were free when you installed, you have the extension [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. Otherwise, you can install it by going to the `Extensions`{.action} menu.
+If you enabled the default extensions that were free when you installed, you have the extension [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. Otherwise, you can install it by going to the `Plugins`{.action} menu.
 
 - **Shipping zones**: allows you to define and configure shipping areas.
 - **Delivery Options**: is used to set up the application for all shipping costs.

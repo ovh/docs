@@ -42,15 +42,15 @@ Zaloguj się do Twojego interfejsu administracyjnego, wpisując `/wp-admin` lub 
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps_1.png){.thumbnail}
 
-W menu po lewej stronie przejdź do `Extensions`{.action}, następnie kliknij `Dodaj`{.action}:
+W menu po lewej stronie przejdź do `Wtyczki`{.action}, następnie kliknij `Dodaj nową`{.action}:
 
 ![Dashboard, Wtyczki, Add new](images/wordpress-woocommerce-first-steps_2.png){.thumbnail}
 
-Na nowej stronie `Dodaj rozszerzenia`{.action}, wprowadź "woocommerce" na pasku wyszukiwania w prawym górnym rogu, następnie kliknij `Zainstaluj teraz`{.action} w ramce rozszerzenia **WooCommerce**:
+Na nowej stronie `Dodaj wtyczki`{.action}, wprowadź "woocommerce" na pasku wyszukiwania w prawym górnym rogu, następnie kliknij `Zainstaluj`{.action} w ramce rozszerzenia **WooCommerce**:
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps_3.png){.thumbnail}
 
-Kliknij na `Aktywuj`{.action}:
+Kliknij na `Włącz`{.action}:
 
 ![Activate WooCommerce](images/wordpress-woocommerce-first-steps_4.png){.thumbnail}
 
@@ -88,7 +88,7 @@ Twój sklep internetowy jest teraz skonfigurowany z parametrami ogólnymi.
 
 #### Metoda nr 2 - konfiguracja ręczna
 
-Kliknij na `Rozszerzenia`{.action}, aby wyświetlić zainstalowane rozszerzenia, a następnie na `Rozszerzenia zainstalowane`. Wyświetli się lista rozszerzeń. Kliknij na `Ustawienia`{.action} w module **WooCommerce** :
+Kliknij na `Wtyczki`{.action}, aby wyświetlić zainstalowane rozszerzenia, a następnie na `Zainstalowane wtyczki`. Wyświetli się lista rozszerzeń. Kliknij na `Ustawienia`{.action} w module **WooCommerce** :
 
 ![Setup Wizard - Rozszerzenie, WooCommerce, Settings](images/wordpress-woocommerce-first-steps_11.png){.thumbnail}
 
@@ -127,7 +127,7 @@ Zarządzanie produktami odbywa się poprzez zestaw podpozycji:
 
 #### Wysyłka
 
-Jeśli włączyłeś domyślne rozszerzenia proponowane za darmo podczas instalacji, korzystasz z rozszerzenia [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. W przeciwnym razie możesz przystąpić do jego instalacji w menu `Extensions`{.action}.
+Jeśli włączyłeś domyślne rozszerzenia proponowane za darmo podczas instalacji, korzystasz z rozszerzenia [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. W przeciwnym razie możesz przystąpić do jego instalacji w menu `Wtyczki`{.action}.
 
 - **Strefy wysyłki**: pozwala na zdefiniowanie i skonfigurowanie obszarów wysyłki.
 - **Opcje dostawy**: służy do konfiguracji aplikacji we wszystkich kwestiach związanych z kosztami wysyłki.

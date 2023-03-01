@@ -42,15 +42,15 @@ Loggen Sie sich in Ihr Administrations-Interface ein, indem Sie in Ihrer Suchlei
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps_1.png){.thumbnail}
 
-Gehen Sie im linken Menü in den Bereich `Erweiterungen`{.action} und klicken Sie auf den Button `Hinzufügen`{.action}:
+Gehen Sie im linken Menü in den Bereich `Plugins`{.action} und klicken Sie auf den Button `Installieren`{.action}:
 
 ![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps_2.png){.thumbnail}
 
-Auf der neuen Seite `Erweiterungen hinzufügen`{.action}, geben Sie "woocommerce" oben rechts in die Suchleiste ein und klicken Sie dann auf `Installieren jetzt`{.action} im zugehörigen Kasten **WooCommerce**:
+Auf der neuen Seite `Installiert plugins`{.action}, geben Sie "woocommerce" oben rechts in die Suchleiste ein und klicken Sie dann auf `Installieren jetzt`{.action} im zugehörigen Kasten **WooCommerce**:
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps_3.png){.thumbnail}
 
-Klicken Sie jetzt auf `aktivieren`{.action}:
+Klicken Sie jetzt auf `Aktivieren`{.action}:
 
 ![WooCommerce Activate](images/wordpress-woocommerce-first-steps_4.png){.thumbnail}
 
@@ -88,7 +88,7 @@ Ihr Webshop ist nun mit den allgemeinen Einstellungen konfiguriert.
 
 #### Methode Nr. 2 - manuelle Konfiguration
 
-Klicken Sie auf `Erweiterungen`{.action}, um die installierten Erweiterungen aufzulisten und dann auf `Installierte Erweiterungen`. Die Liste Ihrer Domainendungen wird angezeigt. Klicken Sie auf `Einstellungen`{.action} im Modul **WooCommerce**:
+Klicken Sie auf `Plugins`{.action}, um die installierten Erweiterungen aufzulisten und dann auf `Installiert plugins`. Die Liste Ihrer Domainendungen wird angezeigt. Klicken Sie auf `Einstellungen`{.action} im Modul **WooCommerce**:
 
 ![Setup Wizard - Extension, WooCommerce, Settings](images/wordpress-woocommerce-first-steps_11.png){.thumbnail}
 
@@ -127,7 +127,7 @@ Die Verwaltung der Produkte erfolgt über eine Reihe von Unterrubriken:
 
 #### Expedition
 
-Wenn Sie die bei der Installation kostenlos verfügbaren Standarddomainendungen aktiviert haben, verfügen Sie über die [WooCommerce Shipping](https://woocommerce.com/de-de/woocommerce-shipping/){.external} Erweiterung. Ist das nicht der Fall, können Sie die Installation in dem Menü `Erweiterungen`{.action} durchführen.
+Wenn Sie die bei der Installation kostenlos verfügbaren Standarddomainendungen aktiviert haben, verfügen Sie über die [WooCommerce Shipping](https://woocommerce.com/de-de/woocommerce-shipping/){.external} Erweiterung. Ist das nicht der Fall, können Sie die Installation in dem Menü `Plugins`{.action} durchführen.
 
 - **Versandgebiete**: ermöglicht die Festlegung und Konfiguration von Versandzonen.
 - **Lieferoptionen**: zur Verwaltung der Anwendung für alle Versandkosten.

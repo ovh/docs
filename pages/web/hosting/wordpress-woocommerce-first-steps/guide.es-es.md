@@ -42,11 +42,11 @@ Conéctese al panel de administración tecleando `/wp-admin` o utilizando el `/w
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps_1.png){.thumbnail}
 
-En el menú de la izquierda, acceda al menú `Extensiones`{.action} y haga clic en `Añadir`{.action}.
+En el menú de la izquierda, acceda al menú `Plugins`{.action} y haga clic en `Añadir nuevo`{.action}.
 
 ![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps_2.png){.thumbnail}
 
-En la nueva página `Añadir extensiones`{.action}, introduzca "woocommerce" en la barra de búsqueda situada en la esquina superior derecha y haga clic en `Instalar ahora`{.action} en el recuadro asociado a la extensión **WooCommerce**:
+En la nueva página ` Añadir plugins`{.action}, introduzca "woocommerce" en la barra de búsqueda situada en la esquina superior derecha y haga clic en `Instalar ahora`{.action} en el recuadro asociado a la extensión **WooCommerce**:
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps_3.png){.thumbnail}
 
@@ -88,7 +88,7 @@ Su tienda online ya está configurada con los parámetros generales.
 
 #### Método n°2 - configuración manual
 
-Haga clic en `Extensions`{.action} para ver las extensiones instaladas y, seguidamente, en `Extensiones instaladas`. Se mostrará una lista de las extensiones. Haga clic en `Ajustes`{.action} en el módulo **WooCommerce** :
+Haga clic en `Plugins`{.action} para ver las extensiones instaladas y, seguidamente, en `Plugins instalados`. Se mostrará una lista de las extensiones. Haga clic en `Ajustes`{.action} en el módulo **WooCommerce** :
 
 ![Setup Wizard - Extensión, WooCommerce, Settings](images/wordpress-woocommerce-first-steps_11.png){.thumbnail}
 
@@ -127,7 +127,7 @@ La gestión de los productos se realiza a través de una serie de subsecciones :
 
 #### Expedición
 
-Si ha activado las extensiones por defecto gratuitas durante la instalación, dispone de la extensión [WooCommerce Shipping](https://woocommerce.com/es-es/woocommerce-shipping/){.external}. Si no es el caso, puede instalarlo accediendo al menú `Extensiones`{.action}.
+Si ha activado las extensiones por defecto gratuitas durante la instalación, dispone de la extensión [WooCommerce Shipping](https://woocommerce.com/es-es/woocommerce-shipping/){.external}. Si no es el caso, puede instalarlo accediendo al menú `Plugins`{.action}.
 
 - **Zonas de expedición**: permite definir y configurar las zonas de envío.
 - **Opciones de entrega**: se utiliza para configurar la aplicación en relación con los gastos de envío.
