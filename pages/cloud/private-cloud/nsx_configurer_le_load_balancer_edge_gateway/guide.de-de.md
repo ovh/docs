@@ -1,5 +1,5 @@
 ---
-title: Konfiguration von NSX-v Edge Loadbalancer (EN)
+title: Konfiguration des NSX-v Edge Load Balancer (EN)
 slug: nsx-edge-load-balancer-configuration
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-edge-load-balancer-configuration/'
