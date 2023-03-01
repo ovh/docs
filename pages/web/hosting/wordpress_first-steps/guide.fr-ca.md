@@ -4,10 +4,10 @@ slug: wordpress-first-steps
 excerpt: "Découvrez comment créer un site web avec le CMS WordPress"
 section: Tutoriels
 order: 020
-updated: 2023-02-16
+updated: 2023-02-17
 ---
 
-**Dernière mise à jour le 16/02/2023**
+**Dernière mise à jour le 17/02/2023**
 
 ## Objectif
 
@@ -17,21 +17,21 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou à [l'éditeur du CMS WordPress](https://wordpress.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) ou à [l'éditeur du CMS WordPress](https://wordpress.com/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 **Découvrez comment créer un site web avec le CMS WordPress.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
-- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/)
-- Avoir [installé Wordpress](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) sur votre hébergement web
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) qui contient au moins une base de données.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
+- Avoir [installé Wordpress](https://docs.ovh.com/ca/fr/hosting/modules-en-1-clic/) sur votre hébergement web
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 
 ## En pratique
 
-Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL](https://docs.ovh.com/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement) sur le nom de domaine associé à votre site web.
+Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL](https://docs.ovh.com/ca/fr/hosting/passer-site-internet-https-ssl/#etape-1-activer-le-certificat-ssl-sur-lhebergement) sur le nom de domaine associé à votre site web.
 
 Lors de l'installation de votre CMS en 1-clic, vous avez reçu un e-mail contenant les éléments nécessaires à la poursuite de ce tutoriel :
 
@@ -190,8 +190,8 @@ Vos liens seront alors construits à partir du slug précédemment renseigné lo
     - [Elementor](https://elementor.com/){.external}, un autre éditeur de thèmes.
 - Le site officiel [WordPress](https://wordpress.org/){.external}.
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
