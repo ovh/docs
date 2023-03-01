@@ -2,7 +2,7 @@
 title: Gerenciamento de firewall distribuído no NSX (EN)
 slug: nsx-manage-distributed-firewall
 excerpt: Learn how to manage the distributed firewall by creating a rule that blocks traffic between a virtual machine and all virtual machines in another segment
-section: NSXName
+section: NSX
 order: 05
 updated: 2023-02-27
 routes:
@@ -22,7 +22,7 @@ To simplify the administration of NSX, it is possible to place tags on your elem
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/pt/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
 ## Requirements

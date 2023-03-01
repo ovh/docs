@@ -31,7 +31,7 @@ The segments are linked to transport zones that are predefined by OVHcloud.
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/de/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
 ## Requirements

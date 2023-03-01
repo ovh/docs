@@ -2,7 +2,7 @@
 title: Configurando o DNS Forwarder no NSX (EN)
 slug: nsx-configure-dns-forwarder
 excerpt: Discover how to add a DNS forwarder to NSX
-section: NSXName
+section: NSX
 order: 04
 updated: 2023-02-27
 routes:
@@ -20,7 +20,7 @@ You can use a DNS forwarder in NSX that centralises all DNS queries and redirect
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/pt/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
 ## Requirements
