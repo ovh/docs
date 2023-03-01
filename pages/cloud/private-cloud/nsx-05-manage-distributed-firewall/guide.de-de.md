@@ -1,5 +1,5 @@
 ---
-title: Verteilte Firewall-Verwaltung in NSX (EN)
+title: Verwaltung der Distributed Firewall in NSX (EN)
 slug: nsx-manage-distributed-firewall
 excerpt: Learn how to manage the distributed firewall by creating a rule that blocks traffic between a virtual machine and all virtual machines in another segment
 section: NSX
