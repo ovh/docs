@@ -212,7 +212,7 @@ Votre règle est désormais active. Si vous cliquez sur `http://adresse-ip-virtu
 
 [Mise en place du NAT pour des redirections de ports dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-configure-nat-redirection)
 
-[Documentation VMware sur les Load Balancers NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
+[Documentation VMware sur les Load Balancers NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

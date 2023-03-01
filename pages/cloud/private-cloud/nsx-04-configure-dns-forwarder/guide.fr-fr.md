@@ -110,6 +110,6 @@ Le paramétrage DHCP de votre segment utilise maintenant le redirecteur DNS cré
 
 [Configuration du DHCP](https://docs.ovh.com/fr/private-cloud/nsx-dhcp-configuration/)
 
-[Documentation VMware sur le service DNS dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
+[Documentation VMware sur le service DNS dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

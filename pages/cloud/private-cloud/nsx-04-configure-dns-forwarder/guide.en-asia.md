@@ -110,6 +110,6 @@ Your segment's DHCP settings now use the DNS forwarder you created earlier.
 
 [DHCP Configuration](https://docs.ovh.com/asia/en/private-cloud/nsx-dhcp-configuration)
 
-[VMware DNS documentation in NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
+[VMware documentation on DNS in NSX](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
 Join our community of users on <https://community.ovh.com/en/>.

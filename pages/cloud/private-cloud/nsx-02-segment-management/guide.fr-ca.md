@@ -204,6 +204,6 @@ Revenez dans l'interface NSX, allez sur l'onglet `Networking`{.action} et clique
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/nsx-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

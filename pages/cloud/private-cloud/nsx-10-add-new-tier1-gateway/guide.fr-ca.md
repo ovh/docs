@@ -32,7 +32,7 @@ OVHcloud vous fournit NSX avec deux passerelles, une passerelle de type nord-sud
 >
 > Ne le faites pas car certaines options ne sont pas disponibles et vous ne pourrez pas faire fonctionner ces passerelles correctement. 
 
-Pour plus d'informations sur NSX chez OVHcloud, consultez le guide « [Premiers pas avec NSX](https://docs.ovh.com/ca/fr/nsx-first-steps/) ».
+Pour plus d'informations sur NSX chez OVHcloud, consultez le guide « [Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/) ».
 
 ## En pratique
 
@@ -103,7 +103,7 @@ Votre nouveau segment est créé et il est relié à votre nouvelle passerelle *
 
 Le segment créé est de type Overlay mais il est possible d'ajouter un segment de type VLAN et de le connecter à votre nouvelle passerelle.
 
-Aidez-vous du guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/nsx-segment-management/) pour ajouter une nouvelle machine virtuelle à votre nouveau segment. 
+Aidez-vous du guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management/) pour ajouter une nouvelle machine virtuelle à votre nouveau segment. 
 
 Cliquez ensuite sur `Network Topology`{.action}.
 
@@ -111,11 +111,11 @@ Cliquez ensuite sur `Network Topology`{.action}.
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/nsx-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/nsx-segment-management/)
+[Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management/)
 
-[Documentation VMware pour le rajout d'une passerelle Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
+[Documentation VMware pour le rajout d'une passerelle Tier-1 Gateway](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

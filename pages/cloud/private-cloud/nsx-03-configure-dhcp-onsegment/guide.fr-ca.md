@@ -23,7 +23,7 @@ updated: 2023-02-27
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
-- Avoir **NSX** déployé avec deux segments de type overlay et VLAN configurés dans votre configuration NSX, vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/nsx-segment-management).
+- Avoir **NSX** déployé avec deux segments de type overlay et VLAN configurés dans votre configuration NSX, vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management).
 
 ## En pratique
 
@@ -112,7 +112,7 @@ Sur un segment de type VLAN il n'est pas possible d'utiliser le profil créé po
 
 Pour pouvoir avoir un serveur DHCP sur ce segment, nous allons créer une configuration DHCP avec un nouveau profil directement attaché au segment.
 
-Si vous n'avez pas de segment de type de VLAN, aidez-vous du guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/nsx-segment-management/) pour le créer avec ces paramètres :
+Si vous n'avez pas de segment de type de VLAN, aidez-vous du guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management/) pour le créer avec ces paramètres :
 
 - **sous-réseau du VLAN** : 192.168.100.0/24 ;
 - **adresse IP de la passerelle et de l'interface** : 192.168.100.254/24.
@@ -160,8 +160,8 @@ Le serveur DHCP est actif sur ce segment de type VLAN.
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/nsx-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/nsx-segment-management/)
+[Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

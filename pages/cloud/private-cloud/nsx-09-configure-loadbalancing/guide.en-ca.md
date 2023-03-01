@@ -212,7 +212,7 @@ Your rule is active. If you click on `http://virtual-ip-address-on-T0` you will 
 
 [Implementing NAT for port redirections in NSX](https://docs.ovh.com/ca/en/private-cloud/nsx-configure-nat-redirection)
 
-[VMware NSX Load Balancer documentation](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
+[VMware NSX Load Balancer documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-D39660D9-278B-4D08-89DF-B42C5400FEB2.html)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

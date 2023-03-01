@@ -83,6 +83,6 @@ The rule is created and active.
 
 [Segment management in NSX](https://docs.ovh.com/gb/en/private-cloud/nsx-segment-management/)
 
-[VMware NAT in NSX documentation](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
+[VMware NAT in NSX documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html)
 
 Join our community of users on <https://community.ovh.com/en/>.

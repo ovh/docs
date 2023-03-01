@@ -84,7 +84,7 @@ La règle est créée et est active.
 
 [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management/)
 
-[Documentation VMware sur le NAT dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
+[Documentation VMware sur le NAT dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

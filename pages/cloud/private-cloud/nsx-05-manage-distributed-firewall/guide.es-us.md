@@ -243,6 +243,6 @@ Your rule is active, the traffic between the virtual machine member of the g-vm 
 
 [Segment management in NSX](https://docs.ovh.com/us/es/private-cloud/nsx-segment-management/)
 
-[VMware Distributed Firewall in NSX documentation](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-41CC06DF-1CD4-4233-B43E-492A9A3AD5F6.html)
+[VMware Distributed Firewall in NSX documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-6AB240DB-949C-4E95-A9A7-4AC6EF5E3036.html)
 
 Join our community of users on <https://community.ovh.com/en/>.

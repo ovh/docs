@@ -115,7 +115,7 @@ Cliquez ensuite sur `Network Topology`{.action}.
 
 [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management/)
 
-[Documentation VMware pour le rajout d'une passerelle Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
+[Documentation VMware pour le rajout d'une passerelle Tier-1 Gateway](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

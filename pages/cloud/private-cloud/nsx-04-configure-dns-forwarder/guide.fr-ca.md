@@ -25,7 +25,7 @@ Il est possible d'utiliser un redirecteur DNS dans NSX. Son rôle est de central
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)).
-- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/nsx-segment-management).
+- Avoir **NSX** déployé avec un segment configuré dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management).
 
 ## En pratique
 
@@ -70,7 +70,7 @@ Votre redirecteur DNS est actif et utilisable sur tous vos segments en Overlay o
 
 ### Modification du serveur DHCP pour utiliser un redirecteur DNS
 
-Si vous avez configuré des serveurs DHCP dans NSX comme indiqué dans notre guide de [configuration du DHCP](https://docs.ovh.com/ca/fr/nsx-dhcp-configuration), vous pouvez modifier la configuration pour utiliser le redirecteur DNS dans vos configurations DHCP.
+Si vous avez configuré des serveurs DHCP dans NSX comme indiqué dans notre guide de [configuration du DHCP](https://docs.ovh.com/ca/fr/private-cloud/nsx-dhcp-configuration), vous pouvez modifier la configuration pour utiliser le redirecteur DNS dans vos configurations DHCP.
 
 Nous allons voir comment modifier le serveur DNS sur la configuration DHCP d'un de vos segments.
 
@@ -104,12 +104,12 @@ Le paramétrage DHCP de votre segment utilise maintenant le redirecteur DNS cré
 
 ## Aller plus loin
 
-[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/nsx-first-steps/)
+[Premiers pas avec NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-first-steps/)
 
-[Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/nsx-segment-management/)
+[Gestion des segments dans NSX](https://docs.ovh.com/ca/fr/private-cloud/nsx-segment-management/)
 
-[Configuration du DHCP](https://docs.ovh.com/ca/fr/nsx-dhcp-configuration/)
+[Configuration du DHCP](https://docs.ovh.com/ca/fr/private-cloud/nsx-dhcp-configuration/)
 
-[Documentation VMware sur le service DNS dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
+[Documentation VMware sur le service DNS dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-A0172881-BB25-4992-A499-14F9BE3BE7F2.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -116,6 +116,6 @@ Then click `Network Topology`{.action}.
 
 [Segment management in NSX](https://docs.ovh.com/es/private-cloud/nsx-segment-management/)
 
-[VMware documentation for adding a Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
+[VMware documentation for adding a Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
 
 Join our community of users on <https://community.ovh.com/en/>.

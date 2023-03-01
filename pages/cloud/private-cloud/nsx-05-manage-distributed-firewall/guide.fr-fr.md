@@ -241,7 +241,7 @@ Votre règle est active, le trafic n'est plus possible dans les deux sens entre 
 
 [Gestion des segments dans NSX](https://docs.ovh.com/fr/private-cloud/nsx-segment-management/)
 
-[Documentation VMware sur le pare-feu distribué dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-41CC06DF-1CD4-4233-B43E-492A9A3AD5F6.html)
+[Documentation VMware sur le pare-feu distribué dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-6AB240DB-949C-4E95-A9A7-4AC6EF5E3036.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

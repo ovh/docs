@@ -75,6 +75,6 @@ Votre règle est active sur la passerelle **ovh-T0-gw**. Elle bloque tout le tra
 
 [Gestion du pare-feu distribué](https://docs.ovh.com/fr/private-cloud/nsx-manage-distributed-firewall/).
 
-[Documentation VMware sur les pare-feux de passerelles dans NSX](https://docs.vmware.com/en/VMware-NSX-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
+[Documentation VMware sur les pare-feux de passerelles dans NSX](https://docs.vmware.com/fr/VMware-NSX-T-Data-Center/3.2/administration/GUID-A52E1A6F-F27D-41D9-9493-E3A75EC35481.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
