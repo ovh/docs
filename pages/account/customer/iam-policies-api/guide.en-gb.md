@@ -9,6 +9,11 @@ updated: 2023-03-01
 
 **Last updated 1st March 2023**
 
+> [!warning]
+>
+> This feature is currently in beta. To join the beta, subscribe here: <https://labs.ovhcloud.com/en/>
+>  
+
 ## Objective
 
 This guide will explain how to provide specific access rights to users of an OVHcloud account.
@@ -115,7 +120,7 @@ Items in policies are defined by URNs. These URNs are defined by the following p
 - **owner**: The account that created this policy.
 - **name**: The policy name. It's possible to use this name to organize the policies. There is no format to follow (except that the prefix "ovh-" is reserved for OVHcloud policies).
 - **readOnly**: If true, it indicates that the policy cannot be edited. It often represents policies managed by OVHcloud.
-- **identities**: The identities concerned by the policy. They are specified by a URN. **account:<account-id>** for the account, **user:<account-id>/<username>** for an account user, **group:<account-id>/<username>** for a user group.
+- **identities**: The identities concerned by the policy. They are specified by a URN. **account**:**account-id** for the account, **user**:**account-id**/**username** for an account user, **group**:**account-id**/**username** for a user group.
 - **resources**: The resources concerned by the policy. They are specified by a URN. **resource** for a resource, **resourceGroup** for a resource group.
 - **permissions**: Can be **allow** or **except**: 
   - **allow**: Array of actions allowed for the identities regarding the resources. All actions are denied by default.
@@ -130,6 +135,7 @@ Create a new policy using this API route:
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
 |POST|/iam/policy|Create a new policy|
+
 For example, create a policy to authorise a user named "*user1*" to do some actions on a VPS:
 
 **create policy example**
@@ -159,7 +165,7 @@ For example, create a policy to authorise a user named "*user1*" to do some acti
 }
 ```
 
-This policy is not for an account but for a user, so the identity URN corresponds to the format "*urn:v1:eu:identity:**user**:<nic-handle>/**<username>***".
+This policy is not for an account but for a user, so the identity URN corresponds to the format "*urn:v1:eu:identity:**user**:**account-id**/**username***".
 
 With this JSON as body for the `POST /iam/policy` call, the policy will be created.
 
@@ -255,7 +261,7 @@ List all the current users related to the account by calling:
 ```json
 [
   "user1",
-  "user2",
+  "user2"
 ]
 ```
 
@@ -368,8 +374,8 @@ In this example, the account has 3 resources available (a VPS, an email domain a
 - **urn**: Resource URN.
 - **name**: The resource name.
 - **displayName**: The resource name as displayed in the user interface.
-- **type**: The resource type (vps, publiccloud, dnsZone, domain, emailDomain, etc.)
-- **owner**: The resource owner (NIC Handle)
+- **type**: The resource type (vps, publicCloudProject, dnsZone, domain, emailDomain, etc.)
+- **owner**: The resource owner (Account ID)
 
 ### Resource Groups
 
@@ -430,7 +436,7 @@ In the example, we can see that this resource group "*urn:v1:eu:resourceGroup:aa
 - **urn**: Resource group URN to use on the policy.
 - **readOnly**: Cannot be modified if `true`. The default resource groups are read-only.
 - **name**: The resource group name.
-- **owner**: The resource group owner (NIC handle).
+- **owner**: The resource group owner (Account ID).
 - **resources**: 
     - If details = **false**: Array of resources UUID.
     - If details = **true**: The resources will be expanded with their attributes (as the result we have via the resource API).
@@ -527,7 +533,7 @@ Here is a part of the output:
     "cloudDB",
     "loadbalancer",
     "mxplanAccount",
-    "publicCloud",
+    "publicCloudProject",
     "voipSmsvn",
     "vps",
 ]
