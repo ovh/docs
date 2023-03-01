@@ -87,7 +87,7 @@ Domyślnie jest to nazwa domeny, po której następuje `/wp-admin`:
 
 ![Dostęp administratora do wp-admin](images/how_to_backup_your_wordpress_5.png){.thumbnail}
 
-Na stronie głównej przejdź do sekcji `Rozszerzenia`{.action}, następnie kliknij `Dodaj`{.action}:
+Na stronie głównej przejdź do sekcji `Wtyczki`{.action}, następnie kliknij `Dodaj nową`{.action}:
 
 ![Dodaj rozszerzenie](images/how_to_backup_your_wordpress_6.png){.thumbnail}
 
@@ -95,7 +95,7 @@ Pobierz rozszerzenie klikając na przycisk `Przeglądaj`{.action}:
 
 ![Prześlij rozszerzenie](images/how_to_backup_your_wordpress_7.png){.thumbnail}
 
-Kliknij polecenie `Zainstaluj teraz`{.action}:
+Kliknij polecenie `Zainstaluj`{.action}:
 
 ![Zainstaluj rozszerzenie](images/how_to_backup_your_wordpress_8.png){.thumbnail}
 
@@ -123,20 +123,20 @@ Kopie zapasowe zostaną wysłane na adres e-mail konta administratora (konto, kt
 
 ![Kopia zapasowa na adres e-mail](images/how_to_backup_your_wordpress_13.png){.thumbnail}
 
-Na dole strony kliknij `Zapisz zmiany{.action}, aby zatwierdzić.
+Na dole strony kliknij `Zapisz zmiany`{.action}, aby zatwierdzić.
 
 #### 2.3 - Wykonaj pierwszą kopię zapasową
 
-Przejdź do zakładki `Kopia zapasowa/przywracanie`{.action} i kliknij na przycisk `Zapisz`{.action}:
+Przejdź do zakładki `Kopia zapasowa/Przywracanie`{.action} i kliknij na przycisk `Utwórz kopię`{.action}:
 
 ![Strona UpdraftPlus Kopia zapasowa/Przywracanie](images/how_to_backup_your_wordpress_14.png){.thumbnail}
 
-W oknie, które się wyświetli kliknij ponownie `Zapisz{.action}:
+W oknie, które się wyświetli kliknij ponownie `Utwórz kopię`{.action}:
 
 ![Strona UpdraftPlus modalny Kopia zapasowa/Przywracanie](images/how_to_backup_your_wordpress_15.png){.thumbnail}
 
 Po utworzeniu kopii zapasowych otrzymasz dwa e-maile: jeden z nich ma zawartość modułu Wordpress, drugi z bazą danych na swojej stronie internetowej.
-Jeśli nie otrzymasz e-maili, sprawdź adres e-mail używanego konta (w sekcji `Konta`{.action}). Sprawdź również swoje foldery "SPAM / Niechciany Poczta".
+Jeśli nie otrzymasz e-maili, sprawdź adres e-mail używanego konta (w sekcji `Użytkownicy`{.action}). Sprawdź również swoje foldery "SPAM / Niechciany Poczta".
 
 ### Jak często wykonywać kopie zapasowe?
 

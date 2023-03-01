@@ -83,7 +83,7 @@ By default, this is your domain name followed by `/wp-admin`:
 
 ![Administrator login access on wp-admin](images/how_to_backup_your_wordpress_5.png){.thumbnail}
 
-On the home page, go to the `Extensions`{.action} section, then click `Add`{.action}:
+On the home page, go to the `Plugins`{.action} section, then click `Add new`{.action}:
 
 ![Add extension](images/how_to_backup_your_wordpress_6.png){.thumbnail}
 
@@ -123,16 +123,16 @@ At the bottom of the page, click `Save changes`{.action} to validate.
 
 #### 2.3 - Perform your first backup
 
-Go back to the `Save/Restore`{.action} tab and click the `Save`{.action} button:
+Go back to the `Backup/Restore`{.action} tab and click the `Backup`{.action} button:
 
 ![Page UpdraftPlus Backup/Restore](images/how_to_backup_your_wordpress_14.png){.thumbnail}
 
-In the window that pops up, click again on `Save`{.action}:
+In the window that pops up, click again on `Backup`{.action}:
 
 ![Page UpdraftPlus modal Backup/Restore](images/how_to_backup_your_wordpress_15.png){.thumbnail}
 
 Once your backups are complete, you will receive two emails: one with the content of your WordPress, the other with the database of your website.
-If you do not receive emails, check the email address of the account you are using (in the `Accounts`{.action} section). Also check your spam/junk mail folders.
+If you do not receive emails, check the email address of the account you are using (in the `Users`{.action} section). Also check your spam/junk mail folders.
 
 ### How often do backups?
 

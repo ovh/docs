@@ -87,7 +87,7 @@ Por predefinição, trata-se do seu nome de domínio seguido de `/wp-admin`:
 
 ![Acesso administrador em wp-admin](images/how_to_backup_your_wordpress_5.png){.thumbnail}
 
-Na página inicial, aceda à secção `Extensões`{.action} e clique em `Aditer`{.action}:
+Na página inicial, aceda à secção `Plugins`{.action} e clique em `Adicionar novo`{.action}:
 
 ![Adicionar uma extensão](images/how_to_backup_your_wordpress_6.png){.thumbnail}
 
@@ -95,7 +95,7 @@ Transfira a extensão ao clicar no botão `Percorrer`{.action}:
 
 ![Fazer upload da extensão](images/how_to_backup_your_wordpress_7.png){.thumbnail}
 
-Clique em `Installer agora`{.action}:
+Clique em `Installar`{.action}:
 
 ![Instalar a extensão](images/how_to_backup_your_wordpress_8.png){.thumbnail}
 
@@ -109,7 +109,8 @@ Uma vez ativada, esta aparecerá na lista das extensões:
 
 #### 2.2 - Configure os seus backups
 
-Na página acima mencionada, clique em `Regulations`{.action} e, na página `UpdraftPlus Backup/Restore`, clique no separador `Regulations`{.action}:
+Na página acima mencionada, clique em `Opções`{.action} e, na página `UpdraftPlus Backup/Restore`, clique no separador `Opções
+`{.action}:
 
 ![Página UpdraftPlus Backup/Restore](images/how_to_backup_your_wordpress_11.png){.thumbnail}
 
@@ -123,20 +124,20 @@ Os backups serão enviados para o endereço de e-mail da conta de administrador 
 
 ![Backup por endereço mail](images/how_to_backup_your_wordpress_13.png){.thumbnail}
 
-No final da página, clique em `Gravar as alterações`{.action} para validar.
+No final da página, clique em `Guardar alterações`{.action} para validar.
 
 #### 2.3 - Efetue o seu primeiro backup
 
-Regresse ao separador `Backup/restaurar`{.action} e clique no botão `Backup`{.action}:
+Regresse ao separador `Backup/Restore`{.action} e clique no botão `Backup Agora`{.action}:
 
 ![Página UpdraftPlus Backup/Restaurar](images/how_to_backup_your_wordpress_14.png){.thumbnail}
 
-Na nova janela, clique em `Backup`{.action}:
+Na nova janela, clique em `Backup Agora`{.action}:
 
 ![Página UpdraftPlus Modal Backup/Restaurar](images/how_to_backup_your_wordpress_15.png){.thumbnail}
 
 Uma vez terminados os seus backups, receberá dois e-mails: um com o conteúdo do seu Wordpress, o outro com a base de dados do seu website.
-Se não receber os e-mails, verifique o endereço de e-mail da conta que utiliza (na secção `Contas`{.action}). Verifique também as pastas "SPAM / Correio indesejável".
+Se não receber os e-mails, verifique o endereço de e-mail da conta que utiliza (na secção `Utilizadores`{.action}). Verifique também as pastas "SPAM / Correio indesejável".
 
 ### Com que frequência efetuar backups?
 

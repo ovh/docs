@@ -87,7 +87,7 @@ Por defecto, se trata de su nombre de dominio seguido de `wp-admin` :
 
 ![Acceso de administrador a wp-admin](images/how_to_backup_your_wordpress_5.png){.thumbnail}
 
-En la página de inicio, acceda a la sección `Extensiones`{.action} y haga clic en `Añadir`{.action}.
+En la página de inicio, acceda a la sección `Plugins`{.action} y haga clic en `Añadir nuevo`{.action}.
 
 ![Añadir una extensión](images/how_to_backup_your_wordpress_6.png){.thumbnail}
 
@@ -123,20 +123,20 @@ Las copias de seguridad se enviarán a la dirección de correo electrónico de l
 
 ![Backup por correo electrónico](images/how_to_backup_your_wordpress_13.png){.thumbnail}
 
-Al final de la página, haga clic en `Guardar los cambios`{.action} para aceptar.
+Al final de la página, haga clic en `Guardar cambios`{.action} para aceptar.
 
 #### 2.3 - Realice su primera copia de seguridad
 
-Vuelva a la pestaña `Guardar/restaurar`{.action} y haga clic en el botón `Guardar`{.action}.
+Vuelva a la pestaña `Copia de seguridad/Restaurar`{.action} y haga clic en el botón `Hacer ahora una copia de seguridad`{.action}.
 
 ![Página Updraft Plus Guardar/Restaurar](images/how_to_backup_your_wordpress_14.png){.thumbnail}
 
-En la nueva ventana, vuelva a hacer clic en el botón `Guardar`{.action}.
+En la nueva ventana, vuelva a hacer clic en el botón `Hacer ahora una copia de seguridad`{.action}.
 
 ![Página UpdraftPlus modal Guardar/Restaurar](images/how_to_backup_your_wordpress_15.png){.thumbnail}
 
 Una vez completadas las copias de seguridad, recibirá dos mensajes de correo electrónico: uno con el contenido de su WordPress y el otro con la base de datos de su sitio web.
-Si no recibe los mensajes de correo, compruebe la dirección de correo electrónico de la cuenta que utiliza (en la sección `Cuentas`{.action}). Compruebe también sus carpetas "SPAM / Correo no deseado".
+Si no recibe los mensajes de correo, compruebe la dirección de correo electrónico de la cuenta que utiliza (en la sección `Usuarios`{.action}). Compruebe también sus carpetas "SPAM / Correo no deseado".
 
 ### ¿Con qué frecuencia se realizan copias de seguridad?
 
