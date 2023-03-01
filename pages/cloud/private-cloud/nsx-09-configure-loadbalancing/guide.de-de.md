@@ -1,5 +1,5 @@
 ---
-title: Load-Balancing-Konfiguration in NSX (EN)
+title: Konfiguration von Load Balancing in NSX (EN)
 slug: nsx-configure-loadbalancing
 excerpt: Learn how to configure Load Balancing
 section: NSX
