@@ -476,7 +476,7 @@ These actions are specific to every product, such as rebooting a database, order
 | :-: | :-: | :-: |
 |GET|/iam/reference/action|Retrieve all actions|
 
-##### **Example**
+#### **Example**
 
 List all the actions available for policies with the API.
 
@@ -508,15 +508,15 @@ It's strongly recommended to specify the **resourceType** as a query-string para
 - **resourceType**: The resource type targeted by this action
 - **categories**: The categories of this action (CREATE, READ, EDIT, OPERATE, DELETE)
 
-#### Resource types
+### Resource types
 
-##### **API definition**
+#### **API definition**
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
 |GET|/iam/reference/resource/type|Retrieve all resource types|
 
-##### **Example**
+#### **Example**
 
 Here's a part of the output:
 
