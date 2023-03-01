@@ -4,10 +4,10 @@ slug: iam-policies-api
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
 section: 'Advanced use'
 order: 03
-updated: 2023-02-28
+updated: 2023-03-01
 ---
 
-**Last updated 28th February 2023**
+**Last updated 1st March 2023**
 
 ## Objective
 
@@ -108,7 +108,7 @@ Every items in policies are defined by URNs. These URNs are defined by the follo
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-#### **Policy attributes**
+#### Policy attributes
 
 - **id**: Unique identifier of the policy. It follows the UUID format
 - **owner**: The account that created this policy
@@ -423,7 +423,7 @@ This API can be called with a query-string parameters "details" to expand the re
 
 In the example, we can see that this resource group "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*" has 3 resources. It means that a policy applied to this resource group will be applied on those 3 resources.
 
-#### **Resource group attributes**
+#### Resource group attributes
 
 - **id**: Unique identifier of the resource group. It follows the UUID format.
 - **urn**: Resource group URN to use on the policy
@@ -476,7 +476,7 @@ These actions are specific to every product, such as rebooting a database, order
 | :-: | :-: | :-: |
 |GET|/iam/reference/action|Retrieve all actions|
 
-#### **Example**
+#### Example
 
 List all the actions available for policies with the API.
 
@@ -510,13 +510,13 @@ It's strongly recommended to specify the **resourceType** as a query-string para
 
 ### Resource types
 
-#### **API definition**
+#### API definition
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
 |GET|/iam/reference/resource/type|Retrieve all resource types|
 
-#### **Example**
+#### Example
 
 Here's a part of the output:
 
