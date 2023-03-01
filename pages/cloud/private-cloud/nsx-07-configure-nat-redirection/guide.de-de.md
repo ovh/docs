@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von NAT für Portumleitungen mit NSX (EN)
+title: Konfigurieren von NAT für Port-Weiterleitungen mit NSX (EN)
 slug: nsx-configure-nat-redirection
 excerpt: Learn how to configure NAT to create port redirections
 section: NSX
