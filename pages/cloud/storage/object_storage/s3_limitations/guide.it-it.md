@@ -9,7 +9,7 @@ routes:
 updated: 2022-03-31
 ---
 
-**Last updated 31st March 2022**
+**Last updated 1st March 2023**
 
 ## Objective
 
@@ -40,6 +40,15 @@ Unlimited
 ### Maximum number of user accounts per project
 
 1,000
+
+### Name assignment
+
+- Must be between 3 and 63 characters long.
+- Must begin and end with lower case alphanumeric characters (a to z and 0 to 9).
+- Must be unique within the same OVHcloud region.
+- May contain the following punctuation marks: "." and "-".
+- Must not contain multiple punctuation marks in a row (".." or " -." or ".-" or " --").
+- Must not look like an IP address (192.168.1.1).
 
 ## Go further
 
