@@ -4,14 +4,14 @@ slug: webhosting-email-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können'
 section: 'Erste Schritte'
 order: 07
-updated: 2022-11-18
+updated: 2023-03-02
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 
 
-**Letzte Aktualisierung am 17.08.2020**
+**Letzte Aktualisierung am 02.03.2023**
 
 ## Ziel 
 
@@ -38,6 +38,9 @@ Im Feld `Konfiguration` sehen Sie `E-Mail-Adressen`. Klicken Sie rechts davon au
 Daraufhin öffnet sich das Aktivierungsfenster. Wählen Sie aus, welchen Domainnamen Sie mit Ihren E-Mail-Adressen verbinden möchten, und bestätigen Sie Ihre Auswahl.
 
 ![Aktivierung der E-Mail-Adressen](images/mail-hosting02.png){.thumbnail}
+
+> [!primary]
+> Wenn Sie mehr Inklusiv-E-Mail-Accounts nutzen möchten, bestellen Sie bitte ein [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} über unserer kommerziellen Seite.
 
 ### Sichern Ihrer E-Mail-Accounts, bevor Ihr Webhosting endet
 
@@ -70,5 +73,9 @@ Klicken Sie im Feld `Konfiguration` auf den Button `...`{.action} rechts neben `
 > Um die Löschung des zu Ihrem Webhosting gehörenden E-Mail-Dienstes zu bestätigen, erhalten Sie einen Bestätigungslink per E-Mail. Klicken Sie auf diesen Link, im die Löschung zu starten.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

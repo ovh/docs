@@ -4,10 +4,10 @@ slug: activer-email-hebergement-web
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
 section: 'Premiers pas'
 order: 07
-updated: 2022-11-18
+updated: 2023-03-02
 ---
 
-**Dernière mise à jour le 17/08/2020**
+**Dernière mise à jour le 02/03/2023**
 
 ## Objectif
 
@@ -50,7 +50,6 @@ Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de
 
 Une offre MX adaptée vous sera proposée à l'achat. Une fois la commande réglée, vos e-mails continueront à fonctionner après suspension de l'hébergement web.
 
- 
 ### Suppression de l'offre e-mail liée à votre hébergement web
 
 Il est possible de supprimer définitivement l'offre e-mail associée à votre hébergement web.
@@ -70,5 +69,9 @@ Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de
 > Pour confirmer la suppression de l'offre e-mail associée à votre hébergement web, un lien de validation vous est envoyé par e-mail. Il est indispensable de cliquer sur ce lien pour que l'opération de suppression soit lancée.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

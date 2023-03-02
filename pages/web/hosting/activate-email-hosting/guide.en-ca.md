@@ -4,10 +4,10 @@ slug: activate-email-web-hosting
 excerpt: Find out how to activate the email addresses included in your Web Hosting plan
 section: Getting started
 order: 07
-updated: 2022-11-18
+updated: 2023-03-02
 ---
 
-**Last updated 17th August 2020**
+**Last updated 02nd March 2023**
 
 ## Objective
 
@@ -34,6 +34,9 @@ In the `Configuration` box, you will see `Email addresses`. Click the `...`{.act
 The activation window appears. Choose the domain name you would like to link your email addresses to, then confirm your choice.
 
 ![email-activation](images/mail-hosting02.png){.thumbnail}
+
+> [!primary]
+> If you would like to get more email accounts included, please order a higher [web hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/){.external} from our webpage.
 
 ### Keeping your email addresses before your Web Hosting plan expires
 
@@ -67,4 +70,8 @@ In the `Configuration` box, click the `...`{.action} button to the right of the 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.
