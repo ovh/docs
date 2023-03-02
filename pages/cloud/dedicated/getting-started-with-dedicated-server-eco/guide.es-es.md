@@ -1,19 +1,17 @@
 ---
 title: Primeros pasos con un servidor dedicado Kimsufi, So you Start o Rise
 slug: getting-started-dedicated-server-eco
-routes:
-    canonical: 'https://docs.ovh.com/es/dedicated/primeros-pasos-servidor-dedicado/'
 excerpt: 'Cómo empezar a utilizar un servidor dedicado Kimsufi, So you Start o Rise'
 section: 'Primeros pasos'
 order: 2
-updated: 2022-12-12
+updated: 2023-02-28
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 12/12/2022**
+**Última actualización: 28/02/2023**
 
 ## Objetivo
 
@@ -137,6 +135,8 @@ No obstante, puede realizar "hard reboot" en cualquier momento desde el [área d
 ### Seguridad de su servidor dedicado
 
 Como se recuerda en el apartado Objetivo de esta guía, usted es el administrador de su servidor dedicado Como tal, usted es responsable de sus datos y de su seguridad. Para más información sobre la seguridad de su servidor, consulte nuestra guía [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/).
+
+Si utiliza un servidor Windows, consulte [esta guía](https://docs.ovh.com/es/dedicated/firewall-windows/).
 
 ### Monitorización OVHcloud
 

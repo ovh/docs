@@ -272,6 +272,8 @@ Para más información sobre este espacio de backup, consulte nuestra guía [Bac
 
 ## Más información
 
+[Configurar el firewall de Windows](https://docs.ovh.com/es/dedicated/vps-firewall-windows/)
+
 [Network Firewall](https://docs.ovh.com/es/dedicated/firewall-de-red/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

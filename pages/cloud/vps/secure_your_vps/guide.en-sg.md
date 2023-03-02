@@ -28,10 +28,6 @@ When you order your VPS, you can choose a distribution or operating system to pr
 - A [Virtual Private Server](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
 - Administrative access (root) via SSH to your server
 
-> [!primary]
->
-> If your server runs Windows, use [this guide](https://docs.ovh.com/sg/en/vps/vps-firewall-windows/) instead.
-
 ## Instructions
 
 > [!primary]
@@ -256,6 +252,8 @@ You can find all information on the available backup solutions for your service 
 ## Go further
 
 [Getting started with a VPS](https://docs.ovh.com/sg/en/vps/getting-started-vps/)
+
+[Configuring the firewall on Windows](https://docs.ovh.com/sg/en/vps/vps-firewall-windows/)
 
 [Network Firewall guide](https://docs.ovh.com/sg/en/dedicated/firewall-network/)
 

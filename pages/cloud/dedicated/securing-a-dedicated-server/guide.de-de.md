@@ -30,17 +30,16 @@ Wenn Sie Ihren Dedicated Server bestellen, können Sie eine Distribution oder ei
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH.
 
-
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf einer Ubuntu Distribution. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen Ihnen gelegentlich, externe Tools zu verwenden. Wenn Sie Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
+> Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf einer Ubuntu Server Distribution. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen Ihnen gelegentlich, externe Tools zu verwenden. Wenn Sie Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
 >
 > Wenn Sie Ihren ersten OVHcloud Server konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines Dedicated Server](https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server/) zu verwenden.
 >
 
-Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen verbunden sind.
+Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen eingeloggt sind.
 
 ### Systemupdate
 
@@ -263,6 +262,8 @@ Für weitere Informationen zu unseren Storage-Angeboten lesen Sie [unsere Anleit
 
 
 ## Weiterführende Informationen
+
+[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/dedicated/vps-firewall-windows/)
 
 [Network Firewall](https://docs.ovh.com/de/dedicated/firewall-network/)
 

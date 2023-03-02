@@ -272,6 +272,8 @@ Więcej informacji o naszych rozwiązaniach do przechowywania kopii zapasowych z
 
 ## Sprawdź również
 
+[Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/vps-firewall-windows/)
+
 [Network Firewall](https://docs.ovh.com/pl/dedicated/network-firewall/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -28,10 +28,6 @@ When you order your dedicated server, you can choose a distribution or operating
 - A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
 - Administrative access (root) via SSH to your server
 
-> [!primary]
->
-> If your server runs Windows, use [this guide](https://docs.ovh.com/gb/en/dedicated/firewall-windows/) instead.
-
 ## Instructions
 
 > [!primary]
@@ -260,6 +256,8 @@ You will need a third-party backup solution to replicate your data and transfer 
 For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/).
 
 ## Go further
+
+[Configuring the firewall on Windows](https://docs.ovh.com/gb/en/dedicated/vps-firewall-windows/)
 
 [Network Firewall guide](https://docs.ovh.com/gb/en/dedicated/firewall-network/)
 

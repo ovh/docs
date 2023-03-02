@@ -62,7 +62,7 @@ Hier können Sie jeweils die Eingangsregeln für `ICMP` und `Remote Desktop` akt
 Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
 
 > [!primary]
-> Um Ihr Windows-System mithilfe von Firewall-Regeln abzusichern, verwenden Sie unsere Anleitung "[Firewall auf einem Windows VPS konfigurieren]()".
+> Um Ihr Windows-System mithilfe von Firewall-Regeln abzusichern, verwenden Sie unsere Anleitung "[Firewall auf einem Windows VPS konfigurieren](https://docs.ovh.com/gb/en/vps/vps-firewall-windows/)".
 >
 
 ### Windows Bootlogs aktivieren (optional)

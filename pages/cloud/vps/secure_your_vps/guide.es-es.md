@@ -259,6 +259,8 @@ En la [página de producto](https://www.ovhcloud.com/es-es/vps/options/) y en la
 
 [Primeros pasos con un VPS](https://docs.ovh.com/es/vps/primeros-pasos-con-vps/) 
 
+[Configurar el firewall de Windows](https://docs.ovh.com/es/vps/vps-firewall-windows/)
+
 [Configurar el firewall de red](https://docs.ovh.com/es/dedicated/firewall-de-red/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

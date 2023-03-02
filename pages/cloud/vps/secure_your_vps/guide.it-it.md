@@ -258,6 +258,8 @@ Tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio 
 
 [Iniziare a utilizzare un VPS](https://docs.ovh.com/it/vps/iniziare-a-utilizzare-vps/) 
 
+[Configura il firewall su Windows](https://docs.ovh.com/it/vps/vps-firewall-windows/)
+
 [Configurare il Network Firewall](https://docs.ovh.com/it/dedicated/firewall-network/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

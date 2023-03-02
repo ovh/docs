@@ -272,6 +272,8 @@ Para saber mais sobre as nossas soluções de armazenamento, consulte o nosso [m
 
 ## Quer saber mais?
 
+[Configurar a firewall em Windows](https://docs.ovh.com/pt/dedicated/vps-firewall-windows/)
+
 [Network Firewall](https://docs.ovh.com/pt/dedicated/firewall-network/)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

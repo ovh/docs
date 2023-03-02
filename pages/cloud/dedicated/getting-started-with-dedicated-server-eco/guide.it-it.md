@@ -1,19 +1,17 @@
 ---
 title: Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise
 slug: getting-started-dedicated-server-eco
-routes:
-    canonical: 'https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/'
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise
 section: 'Per iniziare'
 order: 2
-updated: 2022-12-12
+updated: 2023-02-28
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 12/12/2022**
+**Ultimo aggiornamento: 28/02/2023**
 
 ## Obiettivo
 
@@ -137,6 +135,8 @@ ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio
 ### Protezione del tuo server dedicato
 
 Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida Mettere in sicurezza [un server dedicato](../mettere-in-sicurezza-un-server-dedicato/).
+
+Se utilizzi un server Windows, consulta [questa guida](https://docs.ovh.com/it/dedicated/firewall-windows/).
 
 ### Monitoraggio OVHcloud
 

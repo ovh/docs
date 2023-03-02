@@ -259,6 +259,8 @@ Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twoje
 
 [Pierwsze kroki z serwerem VPS](https://docs.ovh.com/pl/vps/pierwsze-kroki-vps/) 
 
+[Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/vps/vps-firewall-windows/)
+
 [Konfiguracja rozwiązania Network Firewall](https://docs.ovh.com/pl/dedicated/network-firewall/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -152,13 +152,13 @@ Danach werden Verbindungsversuche zu Ihrem Server über den Root-Benutzer (`ssh 
 
 ### Konfiguration der internen Firewall (iptables)
 
-GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der als iptables bezeichnet wird. Er hat standardmäßig keine aktiven Regeln. Sie können dies überprüfen, indem Sie den folgenden Befehl eingeben:
+GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der als *iptables* bezeichnet wird. Er hat standardmäßig keine aktiven Regeln. Sie können dies überprüfen, indem Sie den folgenden Befehl eingeben:
 
 ```bash
 iptables -L
 ```
 
-Weitere Informationen zu Iptables finden Sie in unserer [Anleitung](https://docs.ovh.com/de/vps/firewall-iptables/).
+Weitere Informationen zu *iptables* finden Sie in unserer [Anleitung](https://docs.ovh.com/de/vps/firewall-iptables/).
 
 Wir empfehlen Ihnen, Regeln für diese Firewall zu erstellen und an Ihre Nutzung anzupassen. Weitere Informationen zu den möglichen Einstellungen finden Sie in der offiziellen Dokumentation der verwendeten Distribution.
 
@@ -254,6 +254,8 @@ Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden
 ## Weiterführende Informationen
 
 [Erste Schritte mit einem VPS](https://docs.ovh.com/de/vps/erste-schritte-mit-einem-vps/) 
+
+[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/vps/vps-firewall-windows/)
 
 [Network Firewall](https://docs.ovh.com/de/dedicated/firewall-network/)
 

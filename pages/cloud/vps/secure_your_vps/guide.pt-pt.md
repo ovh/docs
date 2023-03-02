@@ -260,6 +260,8 @@ Na [página do produto](https://www.ovhcloud.com/pt/vps/options/) e nos respetiv
 
 [VPS: primeira utilização](https://docs.ovh.com/pt/vps/instalar-gerir-vps/) 
 
+[Configurar a firewall em Windows](https://docs.ovh.com/pt/vps/vps-firewall-windows/)
+
 [Configurar a Network Firewall](https://docs.ovh.com/pt/dedicated/firewall-network/)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

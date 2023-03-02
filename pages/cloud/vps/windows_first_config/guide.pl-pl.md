@@ -63,6 +63,10 @@ W tej sekcji możesz włączyć odpowiednie reguły "ICMP" i "Remote Desktop" (z
 
 Twój serwer powinien odpowiadać na zapytania wykorzystujące te protokoły.
 
+> [!primary]
+> Aby zabezpieczyć system Windows za pomocą reguł firewalla, zapoznaj się z naszym przewodnikiem "[Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/it/vps/firewall-windows/)".
+>
+
 ### Aktywacja logów startowych (boot log) Windows (opcjonalnie)
 
 Zaloguj się do serwera przez sesję "zdalny pulpit" lub [KVM](https://docs.ovh.com/it/vps/utilizza_il_kvm_sul_tuo_vps/). Otwórz menu Start systemu Windows i kliknij `Uruchom`{.action}.

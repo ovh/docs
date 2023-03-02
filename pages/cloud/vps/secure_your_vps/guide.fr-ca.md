@@ -255,6 +255,8 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 
 [Débuter avec un VPS](https://docs.ovh.com/ca/fr/vps/debuter-avec-vps/)
 
+[Configurer le pare-feu sous Windows](https://docs.ovh.com/ca/fr/vps/vps-firewall-windows/)
+
 [Configurer le Network Firewall](https://docs.ovh.com/ca/fr/dedicated/firewall-network/)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
