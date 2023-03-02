@@ -88,7 +88,7 @@ Cette fenêtre vous invite à ajouter un **champ CNAME** dans la zone DNS du nom
 ![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
 Vous retrouvez ici les valeurs à renseigner dans votre zone DNS. Les **champs MX** correspondent à la réception de vos e-mails. Le **champ SRV** correspond à la configuration automatique de vos adresses e-mail.
 
-Retrouvez les détails de configuration de votre zone DNS concernant votre service e-mail sur notre page [Ajouter un champ MX à la configuration de son nom de domaine](https://docs.ovh.com/fr/domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/).
+Retrouvez les détails de configuration de votre zone DNS concernant votre service e-mail sur notre page « [Ajouter un champ MX à la configuration de son nom de domaine](https://docs.ovh.com/fr/domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ».
 
 ### Ajouter des noms de domaines additionnels (facultatif)
 
