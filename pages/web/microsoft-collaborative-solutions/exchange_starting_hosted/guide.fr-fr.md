@@ -80,7 +80,7 @@ Déterminez le nom de vos adresses e-mail Exchange et ajoutez des informations c
 
 - Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme ou chez un autre prestataire de nom de domaine, vous obtiendrez la fenêtre suivante :<br>
 ![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
-Cette fenêtre vous invite à ajoutez un **champ CNAME** dans la zone DNS du nom de domaine. Cette entrée à pour bute de vérifier que vous gérez bien ce nom de domaine.<br>
+Cette fenêtre vous invite à ajouter un **champ CNAME** dans la zone DNS du nom de domaine. Cette entrée a pour but de vérifier que vous gérez bien ce nom de domaine.<br>
 > [!warning]
 > Sans cette validation par champ CNAME, il est impossible d'utiliser la plateforme avec ce nom de domaine.
 
