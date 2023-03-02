@@ -3,10 +3,10 @@ title: Configurer une nouvelle installation de Windows Server
 slug: windows-first-config
 excerpt: "Découvrez comment activer les logs de démarrage, l'ICMP et le bureau à distance"
 section: Premiers pas
-updated: 2022-05-06
+updated: 2023-02-15
 ---
 
-**Dernière mise à jour le 06/05/2022**
+**Dernière mise à jour le 15/02/2023**
 
 ## Objectif
 
@@ -25,7 +25,7 @@ L'activation des logs de démarrage (*boot logs*) Windows peut être utile pour 
 
 ### Étape 1 : accès au KVM
 
-Pour accéder à la console KVM de votre VPS, consultez le [guide KVM VPS](../utilisation-kvm-sur-vps/).
+Pour accéder à la console KVM de votre VPS, consultez le [guide KVM VPS](https://docs.ovh.com/ca/fr/vps/utilisation-kvm-sur-vps/).
 
 ### Étape 2 : terminer l'installation de Windows
 
@@ -61,7 +61,7 @@ Votre serveur devrait maintenant répondre aux demandes utilisant ces protocoles
 
 ### Activation des logs de démarrage (boot logs) Windows (facultatif)
 
-Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](../utilisation-kvm-sur-vps/). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
+Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](https://docs.ovh.com/ca/fr/vps/utilisation-kvm-sur-vps/). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Dans la nouvelle fenêtre, cochez la case à côté de `Boot log`. Cliquez sur `
 
 Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier .txt. Le chemin du fichier est `C:\Windows\ntbtlog.txt`.
 
-Pour accéder au contenu de ce fichier en mode rescue, veuillez suivre les instructions décrites dans [le guide du mode rescue du VPS](../mode-rescue-vps/).
+Pour accéder au contenu de ce fichier en mode rescue, veuillez suivre les instructions décrites dans [le guide du mode rescue du VPS](https://docs.ovh.com/ca/fr/vps/mode-rescue-vps/).
 
 ## Aller plus loin
 

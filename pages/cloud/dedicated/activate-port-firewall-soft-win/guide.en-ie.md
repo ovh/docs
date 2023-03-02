@@ -1,5 +1,5 @@
 ---
-title: Configure the firewall on Windows
+title: Configuring the firewall on Windows
 excerpt: Find out how to configure your firewall on Windows
 slug: firewall-windows
 section: Security
@@ -35,7 +35,7 @@ To access Windows Firewall, you can follow this order:
 - Click `Start`{.action}.
 - Click `Search`{.action}.
 - Search for "Windows Firewall" in the search bar.
-- Click `Windows Firewall`{.action} .
+- Click `Windows Firewall`{.action}.
 
 Then click `Advanced settings`{.action}.
 

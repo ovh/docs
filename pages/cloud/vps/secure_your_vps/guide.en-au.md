@@ -3,7 +3,7 @@ title: 'Securing a VPS'
 slug: tips-for-securing-a-vps
 section: 'Getting started'
 excerpt: 'Find out the basics of securing your VPS'
-order: 2
+order: 3
 updated: 2022-05-05
 ---
 
@@ -28,13 +28,17 @@ When you order your VPS, you can choose a distribution or operating system to pr
 - A [Virtual Private Server](https://www.ovhcloud.com/en-au/vps/) in your OVHcloud account
 - Administrative access (root) via SSH to your server
 
+> [!primary]
+>
+> If your server runs Windows, use [this guide](https://docs.ovh.com/au/en/vps/vps-firewall-windows/) instead.
+
 ## Instructions
 
 > [!primary]
 >
 > Bear in mind that this is a general guide based on an Ubuntu server OS. Some commands need to be adapted to the distribution or operating system you are using and some tips will advise you to use third-party tools. Please refer to the official documentation for these applications if you require assistance.
 >
-> If you are configuring your first OVHcloud VPS, we recommend to consult our guide on [getting started with a VPS](../getting-started-vps/) before continuing.
+> If you are configuring your first OVHcloud VPS, we recommend to consult our guide on [getting started with a VPS](https://docs.ovh.com/au/en/vps/getting-started-vps/) before continuing.
 >
 
 The following examples presume that you are logged in as a user with elevated permissions.
@@ -95,7 +99,7 @@ ssh username@IPv4_of_your_VPS -p NewPortNumber
 
 ### Changing the password associated with the user "root"
 
-It is strongly recommended that you modify the password of the root user as to not leave it at default value on a new system. Please refer to the information in [this guide](../root-password/) for details.
+It is strongly recommended that you modify the password of the root user as to not leave it at default value on a new system. Please refer to the information in [this guide](https://docs.ovh.com/au/en/vps/root-password/) for details.
 
 ### Creating a user with restricted rights
 
@@ -156,7 +160,7 @@ Common GNU/Linux distributions come with a firewall service named iptables. By d
 iptables -L
 ```
 
-You can learn more about iptables in our [Firewall guide](../../dedicated/firewall-iptables/).
+You can learn more about iptables in our [Firewall guide](https://docs.ovh.com/au/en/vps/firewall-iptables/).
 
 It is recommended that you create and adjust firewall rules according to your needs. For more detailed information on the variety of manipulations that are possible, please refer to the relevant section in the official documentation of the distribution used.
 
@@ -236,7 +240,7 @@ For any additional information and recommendations concerning Fail2ban, please r
 
 OVHcloud solutions include the option of enabling a firewall at the entry point to the infrastructure, called the Network Firewall. Configuring it correctly allows connections to be blocked before they even arrive on your server.
 
-Please refer to the [Network Firewall guide](../../dedicated/firewall-network/) if you would like to activate it.
+Please refer to the [Network Firewall guide](https://docs.ovh.com/au/en/dedicated/firewall-network/) if you would like to activate it.
 
 ### Backing up your system and your data
 
@@ -247,10 +251,12 @@ Securing your data is a key element, which is why OVHcloud offers you several ba
 - The `Snapshot` option allows you to create a manual snapshot.
 - The `Automated Backup` option enables you to keep regular backups of your VPS (excluding additional disks).
 
-You can find all information on the available backup solutions for your service on the [product page](https://www.ovhcloud.com/en-au/vps/options/) and in the [respective guides](../).
+You can find all information on the available backup solutions for your service on the [product page](https://www.ovhcloud.com/en-au/vps/options/) and in the [respective guides](https://docs.ovh.com/au/en/vps/).
 
 ## Go further
 
-[Network Firewall guide](../../dedicated/firewall-network/)
+[Getting started with a VPS](https://docs.ovh.com/au/en/vps/getting-started-vps/)
+
+[Network Firewall guide](https://docs.ovh.com/au/en/dedicated/firewall-network/)
 
 Join our community of users on <https://community.ovh.com/en/>.

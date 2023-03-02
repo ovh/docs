@@ -28,7 +28,7 @@ Pode alugar um servidor Minecraft pré-construído ou configurá-lo você mesmo 
 
 ## Requisitos
 
-- Dispor de um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud,
+- Dispor de um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
 - Ter instalado uma distribuição GNU/Linux no servidor
 - Dispor de um acesso administrador (root) via SSH ao seu servidor
 - Ter uma compreensão básica da administração GNU/Linux

@@ -3,14 +3,14 @@ title: Skonfiguruj nową instalację Windows Server
 slug: windows-first-config
 excerpt: Dowiedz się, jak włączyć Pulpit zdalny, ICMP i logi startowe
 section: Pierwsze kroki
-updated: 2022-05-06
+updated: 2023-02-15
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 06-05-2022**
+**Ostatnia aktualizacja z dnia 15-02-2023**
 
 ## Wprowadzenie
 
@@ -29,7 +29,7 @@ Aktywacja logów startowych (*boot log*) Windows może być przydatna przy diagn
 
 ### Etap 1: dostęp do KVM
 
-Aby uzyskać dostęp do konsoli KVM Twojego serwera VPS, zapoznaj się z [przewodnikiem KVM VPS](../kvm_na_serwerach_vps/).
+Aby uzyskać dostęp do konsoli KVM Twojego serwera VPS, zapoznaj się z [przewodnikiem KVM VPS](https://docs.ovh.com/it/vps/utilizza_il_kvm_sul_tuo_vps/).
 
 ### Etap 2: zakończenie instalacji systemu Windows
 
@@ -65,7 +65,7 @@ Twój serwer powinien odpowiadać na zapytania wykorzystujące te protokoły.
 
 ### Aktywacja logów startowych (boot log) Windows (opcjonalnie)
 
-Zaloguj się do serwera przez sesję "zdalny pulpit" lub [KVM](../kvm_na_serwerach_vps/). Otwórz menu Start systemu Windows i kliknij `Uruchom`{.action}.
+Zaloguj się do serwera przez sesję "zdalny pulpit" lub [KVM](https://docs.ovh.com/it/vps/utilizza_il_kvm_sul_tuo_vps/). Otwórz menu Start systemu Windows i kliknij `Uruchom`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -79,7 +79,7 @@ W nowym oknie zaznacz kratkę obok `Boot log`. Kliknij `OK`{.action}.
 
 Po kolejnym uruchomieniu Twojego serwera logi będą zapisywane w pliku .txt. Droga do pliku to `C:\Windows\ntbtlog.txt`.
 
-Aby uzyskać dostęp do zawartości tego pliku w trybie Rescue, postępuj zgodnie z instrukcjami zawartymi w [przewodniku dotyczącym trybu Rescue serwera VPS](../rescue/).
+Aby uzyskać dostęp do zawartości tego pliku w trybie Rescue, postępuj zgodnie z instrukcjami zawartymi w [przewodniku dotyczącym trybu Rescue serwera VPS](https://docs.ovh.com/pl/vps/rescue/).
 
 ## Sprawdź również
 

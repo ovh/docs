@@ -33,7 +33,7 @@ Para proteger de forma óptima su sistema, su servidor con Windows Server dispon
 
 ## Procedimiento
 
-### 1. acceder al firewall de Windows
+### Paso 1: acceder al firewall de Windows
 
 Para acceder al firewall de Windows, puede seguir el siguiente orden:
 
@@ -46,7 +46,7 @@ A continuación, haga clic en la línea `Configuración avanzada`{.action}.
 
 ![Step1](images/step1.PNG){.thumbnail}
 
-### 2. activar una regla de tráfico entrante
+### Paso 2: activar una regla de tráfico entrante
 
 En la ventana que se muestra, encontrará parámetros como:
 
@@ -58,20 +58,20 @@ Al seleccionar las `Reglas de tráfico entrante`{.action}, se mostrarán todas l
 
 ![Step1](images/step2.PNG){.thumbnail}
 
-### 3. crear una nueva regla 
+### Paso 3: crear una nueva regla 
 
 Para crear una nueva regla, acceda al menú `Acción`{.action} y seleccione `Nueva regla`{.action}.
 Haga clic en la opción `Nueva regla`{.action} situada en el panel derecho.
 
 ![Step3](images/step3.PNG){.thumbnail}
 
-### 4. establecer el tipo de regla a activar
+### Paso 4: establecer el tipo de regla a activar
 
 Se mostrará un asistente que define el tipo de regla que se va a crear. Seleccione la casilla `Puerto`{.action}.
 
 ![Step4](images/step4.PNG){.thumbnail}
 
-### 5. establecer el tipo de puerto a activar
+### Paso 5: establecer el tipo de puerto a activar
 
 A continuación, seleccione el tipo de puerto que desea activar:
 
@@ -88,7 +88,7 @@ A continuación, seleccione el tipo de puerto que desea activar:
 >También puede seleccionar la casilla `Todos los puertos locales`{.action} para activar todos los puertos TCP o UDP en un servidor no seguro. También puede marcar la casilla `Puertos locales específicos`{.action} para determinar qué puerto debe permitirse. 
 >
 
-### 6. autorizar o bloquear la conexión
+### Paso 6: autorizar o bloquear la conexión
 
 Para determinar la acción que se va a ejecutar esta regla, dispondrá de las siguientes opciones: Seleccione la que desee.
 
@@ -100,7 +100,7 @@ Seleccione la opción `Autorizar la conexión`{.action} y haga clic en `Siguient
 
 ![Step6](images/step6.PNG){.thumbnail}
 
-### 7. definir el perfil y el nombre del firewall que se aplicará
+### Paso 7: definir el perfil y el nombre del firewall que se aplicará
 
 A continuación, elija los perfiles que debe utilizar la regla para los perfiles público, de dominio o privado.
 Puede activarlos todos si lo desea.

@@ -18,7 +18,7 @@ updated: 2022-10-18
 Su servidor dedicado está equipado con un cortafuegos. Los cortafuegos crean una barrera entre una red de confianza y una red no fiable.
 Los cortafuegos funcionan estableciendo reglas que regulan el tráfico autorizado y el que está bloqueado. El cortafuegos utilitario desarrollado para los sistemas Linux es iptables.
 
-**Esta guía explica cómo proteger un servidor dedicado de OVH utilizando iptables.**
+**Esta guía explica cómo proteger un servidor dedicado utilizando iptables.**
 
 > [!warning]
 >
