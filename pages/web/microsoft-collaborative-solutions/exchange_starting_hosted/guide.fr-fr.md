@@ -84,7 +84,7 @@ Cette fenêtre vous invite à ajouter un **champ CNAME** dans la zone DNS du nom
 > [!warning]
 > Sans cette validation par champ CNAME, il est impossible d'utiliser la plateforme avec ce nom de domaine.
 
-- Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme, qu'il est géré chez un autre prestataire de nom de domaine, ou si vous avez choisissez de configurer manuellement votre nom de domaine. la fenètre suivante s'affichera :<br>
+- Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme, qu'il est géré chez un autre prestataire de nom de domaine, ou si vous avez choisi de configurer manuellement votre nom de domaine, la fenêtre suivante s'affichera :<br>
 ![email](images/exchange-wizard06.png){.thumbnail .w-640}<br>
 Vous retrouvez ici les valeurs à renseigner dans votre zone DNS. Les **champs MX** correspondent à la réception de vos e-mails. Le **champ SRV** correspond à la configuration automatique de vos adresses e-mail.
 
