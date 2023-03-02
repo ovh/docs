@@ -7,7 +7,7 @@ order: 07
 updated: 2023-03-02
 ---
 
-**Last updated 02nd March 2023**
+**Last updated 2nd March 2023**
 
 ## Objective
 
@@ -41,7 +41,7 @@ The activation window appears. Choose the domain name you would like to link you
 ![email-activation](images/mail-hosting02.png){.thumbnail}
 
 > [!primary]
-> If you would like to get more email accounts included, please order a higher [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} from our webpage.
+> If you would like to have more included email accounts, please order a higher [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} from our webpage.
 
 ### Keeping your email addresses before your Web Hosting plan expires
 
