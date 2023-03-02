@@ -48,7 +48,7 @@ Pour ce faire, en accédant pour la première fois à la gestion de votre servic
 
 Cet assistant de configuration vous permet plusieurs manipulations. Selon votre situation :
 
-#### **Choisir un nom de domaine**
+#### Choisir un nom de domaine
 
 Choisissez un de vos noms de domaine dans la liste ou cochez la case `Mon nom de domaine ne figure pas dans la liste ci-dessous` pour saisir un nom de domaine qui n'est pas géré dans votre espace client **mais que vous pouvez configurer**.
 
