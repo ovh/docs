@@ -47,8 +47,8 @@ Unlimited
 - Must begin and end with lower case alphanumeric characters (a to z and 0 to 9).
 - Must be unique within the same OVHcloud region.
 - May contain the following punctuation marks: "." and "-".
-- May not contain multiple punctuation marks in a row ("." or " -." or ".-" or " --").
-- May not look like an IP address (192.168.1.1).
+- Must not contain multiple punctuation marks in a row (".." or " -." or ".-" or " --").
+- Must not look like an IP address (192.168.1.1).
 
 ## Go further
 
