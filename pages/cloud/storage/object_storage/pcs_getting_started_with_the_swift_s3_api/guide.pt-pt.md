@@ -4,14 +4,14 @@ excerpt: "Saiba como utilizar a API Swift S3"
 slug: pcs/getting-started-with-the-swift-s3-api
 section: OpenStack Swift Storage Class Specifics
 order: 020
-updated: 2021-10-27
+updated: 2023-03-02
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/09/2020**
+**Última atualização: 02/03/2023**
 
 ## Objetivo
 

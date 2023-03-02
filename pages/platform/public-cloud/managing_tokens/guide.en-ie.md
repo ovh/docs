@@ -5,10 +5,10 @@ slug: managing_tokens
 legacy_guide_number: g1872
 section: OpenStack
 order: 6
-updated: 2020-04-09
+updated: 2023-03-02
 ---
 
-**Last updated 9th April 2020**
+**Last updated 2nd March 2023**
 
 ## Objective
 
