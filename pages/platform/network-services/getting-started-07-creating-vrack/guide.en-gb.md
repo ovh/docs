@@ -24,7 +24,7 @@ The OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networ
 
 ## Interfaces
 
-Creating a vRack or adding an instance into the network can be done using the OVHcloud Control Panel, the OVHcloud APIv6, the OpenStack API, or the Horizon interface.
+Creating a vRack or adding an instance into the network can be done using the OVHcloud Control Panel, the OVHcloud APIv6, the OpenStack API, the Horizon interface or terraform
 
 Depending on your technical profile and needs, it is mostly up to you which interface or method to use. For each option, the guide instructions below describe the necessary steps.
 
@@ -118,9 +118,9 @@ To continue the configuration of your vRack in the OVHcloud Control Panel, skip 
 
 To activate and manage a vRack using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) of the corresponding guide.
 
-### Step 2: Creating a VLAN in the vRack
+### Step 2: Creating a private network in the vRack
 
-It is necessary to create a VLAN so that the connected instances can communicate with each other.
+It is necessary to create a private network so that the connected instances can communicate with each other.
 
 With the Public Cloud service, you can create up to 4,000 VLANs within one vRack. This means that you can use each private IP address up to 4,000 times.
 Thus, for example, 192.168.0.10 of VLAN 2 is different from IP 192.168.0.10 of VLAN 42.
@@ -143,7 +143,7 @@ Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 
 > Because OpenStack is not located at the same level, you will not be able to customise VLANs through the Horizon interface or OpenStack APIs.
 >
 
-#### Creating a VLAN in the OVHcloud Control Panel
+#### Creating a private network in the OVHcloud Control Panel
 
 Once a vRack exists, click on `Private Network`{.action} in the left-hand menu under **Network**. 
 
@@ -191,9 +191,40 @@ Once done, click on `Create`{.action} to start the process.
 > Creating the private network may take several minutes.
 >
 
-#### Creating a VLAN with the OVHcloud APIv6 <a name="vlansetup"></a>
+#### Creating a private network with the OVHcloud APIv6 <a name="vlansetup"></a>
 
-To create a VLAN using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) of the corresponding guide.
+To create a private network
+ using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) of the corresponding guide.
+
+#### Creating a private network with Openstack CLI
+In order to create the same private network, we need to create 2 Openstack objects : network and subnet. In the following example we specify the `VLAN_ID` to which we want the network to be part of through `--provider-network-type` and `--provider-segment`. You can remove those parameters, in that case, an available `VLAN_ID` will be used.
+```bash 
+openstack network create --provider-network-type vrack --provider-segment 42 OS_CLI_private_network
+openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.0.0.0/16
+```
+#### Creating a private network with Terraform
+In terraform, you will need to use the openstack provider. You can download an example of complete terraform script in this [repo](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network)
+
+The OVHCloud specific part for vrack integration is the `value_specs` param
+
+```hcl
+resource "openstack_networking_network_v2" "tf_network" {
+  name = "tf_network"
+  admin_state_up = "true"
+  value_specs = {
+    "provider:network_type"    = "vrack"
+    "provider:segmentation_id" = var.vlan_id
+  }
+}
+
+resource "openstack_networking_subnet_v2" "tf_subnet"{
+  name       = "tf_subnet"
+  network_id = openstack_networking_network_v2.tf_network.id
+  cidr       = "10.0.0.0/16"
+  enable_dhcp       = true
+}
+```
+
 
 ### Step 3: Integrating an instance into vRack <a name="instance-integration"></a>
 
