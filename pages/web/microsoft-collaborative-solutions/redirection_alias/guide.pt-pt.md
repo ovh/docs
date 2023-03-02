@@ -2,8 +2,10 @@
 title: 'Utilizar os alias e reencaminhamentos de e-mail'
 excerpt: 'Saiba como gerir os seus alias e reencaminhamentos de e-mail'
 slug: email-redirection-guide
-section: 'Funcionalidades dos endereços e-mail'
+section: 'Funcionalidades das contas Exchange'
 order: 01
+routes:
+  canonical: "https://docs.ovh.com/pt/emails/mail_partilhado_guia_dos_reencaminhamentos_email/"
 updated: 2020-05-20
 ---
 

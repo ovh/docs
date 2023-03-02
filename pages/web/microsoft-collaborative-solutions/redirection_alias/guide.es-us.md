@@ -2,8 +2,10 @@
 title: 'Utilizar los alias y redirecciones de correo'
 excerpt: 'Cómo gestionar los alias y redirecciones de correo'
 slug: email-redirection-guide
-section: 'Gestión de la cuenta de correo'
+section: 'Funcionalidades de las cuentas Exchange'
 order: 1
+routes:
+  canonical: "https://docs.ovh.com/us/es/emails/correo_redirecciones_de_correo/"
 updated: 2020-05-20
 ---
 

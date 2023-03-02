@@ -4,6 +4,8 @@ slug: email-redirection-guide
 excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
 section: 'Fonctionnalités des comptes Exchange'
 order: 01
+routes:
+  canonical: "https://docs.ovh.com/fr/emails/guide-des-redirections-emails/"
 updated: 2020-05-20
 ---
 

@@ -2,8 +2,10 @@
 title: 'E-Mail Alias und Weiterleitung verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail Aliase und Weiterleitungen verwalten'
 slug: email-redirection-guide
-section: 'E-Mail Account Funktionen'
+section: 'Exchange Account-Funktionen'
 order: 01
+routes:
+  canonical: "https://docs.ovh.com/de/emails/webhosting_e-mail_anleitung_zum_einrichten_einer_mail-weiterleitung/"
 updated: 2020-05-20
 ---
 

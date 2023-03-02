@@ -4,14 +4,10 @@ slug: email-redirection-guide
 excerpt: 'Find out how to manage aliases and email redirections'
 section: 'Email address features'
 order: 01
+routes:
+  canonical: "https://docs.ovh.com/ie/en/emails/email-redirection-guide/"
 updated: 2020-05-20
 ---
-
-<style>
-.w-640 {
-  max-width:640px !important;
-}
-</style>
 
 **Last updated 1st February 2023**
 

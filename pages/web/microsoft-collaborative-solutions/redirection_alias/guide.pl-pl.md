@@ -2,8 +2,10 @@
 title: 'Korzystanie z aliasów i przekierowań e-mail'
 excerpt: 'Dowiedz się, jak zarządzać aliasami i przekierowaniami e-mail'
 slug: email-redirection-guide
-section: 'Funkcjonalności kont e-mail'
+section: 'Funkcje kont Exchange'
 order: 01
+routes:
+  canonical: "https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/"
 updated: 2020-05-20
 ---
 

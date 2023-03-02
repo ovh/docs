@@ -2,8 +2,10 @@
 title: 'Using email aliases and redirections'
 slug: email-redirection-guide
 excerpt: 'Find out how to manage aliases and email redirections'
-section: 'Email address features'
+section: 'Exchange account features'
 order: 01
+routes:
+  canonical: "https://docs.ovh.com/gb/en/emails/email-redirection-guide/"
 updated: 2020-05-20
 ---
 

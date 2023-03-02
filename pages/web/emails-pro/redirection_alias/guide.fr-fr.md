@@ -1,9 +1,11 @@
 ---
 title: 'Utiliser les alias et redirections e-mail'
-slug: guide-des-redirections-emails
+slug: email-redirection-guide
 excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
 section: 'Fonctionnalités des adresses e-mail'
 order: 01
+routes:
+  canonical: "https://docs.ovh.com/fr/emails/guide-des-redirections-emails/"
 updated: 2020-05-20
 ---
 
