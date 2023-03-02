@@ -57,6 +57,7 @@ Choisissez un de vos noms de domaine dans la liste ou cochez la case `Mon nom de
 #### Allez-vous utiliser uniquement l'offre Exchange OVH avec ce domaine ?
 
 La question « **Allez-vous utiliser uniquement l'offre Exchange OVH avec ce domaine ?** » va déterminer le type de configuration de votre nom de domaine. 
+
 - Si vous utilisez une offre Exchange seule ou avec d'autres offres **e-mail OVHcloud**, la configuration pourra se faire automatiquement ou manuellement en utilisant uniquement les serveurs e-mail d'OVHcloud.
 - Si vous utilisez votre offre Exchange en complément avec un service e-mail **externe aux offres e-mail OVHcloud**, il vous sera demandé de renseigner l'URL du serveur de réception de votre service e-mails externe sous la mention `Serveur relais (SMTP)`
 
