@@ -4,6 +4,7 @@ slug: objects
 excerpt: 'How to enable Nutanix Objects in your cluster'  
 section: "Advanced use"
 order: 07
+updated: 2023-03-02
 ---
 
 **Last updated 21th February 2023**
