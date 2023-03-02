@@ -71,7 +71,7 @@ Klicken Sie oben auf `Export`{.action}:
 
 Übernehmen Sie die Voreinstellungen zum schnellen Export und SQL-Format.
 
-Klicken Sie auf `Run`{.action}, um die gesamte Datenbank im SQL-Format (Structured Query Language) herunterzuladen.
+Klicken Sie auf `Go`{.action}, um die gesamte Datenbank im SQL-Format (Structured Query Language) herunterzuladen.
 
 ![PHPMyAdmin Zugang - Exportieren - Download](images/how_to_backup_your_wordpress_4.png){.thumbnail}
 
