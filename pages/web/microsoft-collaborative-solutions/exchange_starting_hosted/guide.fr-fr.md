@@ -65,7 +65,7 @@ La question « **Allez-vous utiliser uniquement l'offre Exchange OVH avec ce dom
 #### **Comment souhaitez-vous configurer votre zone DNS ?**
 
 - **Configuration automatique** : Le nom de domaine renseigné sera automatiquement configuré au niveau de sa Zone DNS si ce dernier est géré par OVHcloud sur le même identifiant client que votre service Exchange.
-- **Configuration manuelle** : Le nom de domaine n'est pas géré dans le même espace client que votre plateforme, il est gérer chez un autre prestataire de nom de domaine, ou vous souhaitez simplement réaliser votre configuration vous-même.<br> Vous pourrez alors retrouvez les valeurs à renseignez à la fin du processus de configuration ou dans la sections `Domaines associés`{.action} de votre plateforme 
+- **Configuration manuelle** : Le nom de domaine n'est pas géré dans le même espace client que votre plateforme, il est géré chez un autre prestataire de nom de domaine, ou vous souhaitez simplement réaliser votre configuration vous-même.<br> Vous pourrez alors retrouver les valeurs à renseigner à la fin du processus de configuration, ou dans la section `Domaines associés`{.action} de votre plateforme.
 
 ![email](images/exchange-wizard03.png){.thumbnail}
 
