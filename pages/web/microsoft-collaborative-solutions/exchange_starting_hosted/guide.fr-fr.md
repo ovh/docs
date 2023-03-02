@@ -54,7 +54,7 @@ Choisissez un de vos noms de domaine dans la liste ou cochez la case `Mon nom de
 
 ![email](images/exchange-wizard01.png){.thumbnail}
 
-#### **Allez-vous utiliser uniquement l'offre Exchange OVH avec ce domaine ?**
+#### Allez-vous utiliser uniquement l'offre Exchange OVH avec ce domaine ?
 
 La question « **Allez-vous utiliser uniquement l'offre Exchange OVH avec ce domaine ?** » va déterminer le type de configuration de votre nom de domaine. 
 - Si vous utilisez une offre Exchange seule ou avec d'autres offres **e-mail OVHcloud**, la configuration pourra se faire automatiquement ou manuellement en utilisant uniquement les serveurs e-mail d'OVHcloud.
