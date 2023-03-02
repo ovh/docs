@@ -4,10 +4,10 @@ excerpt: Find out how connections syntax work for MongoDB
 slug: mongodb/connection-strings
 section: MongoDB - Guides
 order: 022
-updated: 2023-02-16
+updated: 2023-03-02
 ---
 
-**Last updated 16<sup>th</sup> February 2023**
+**Last updated March 2nd, 2023**
 
 ## Objective
 
