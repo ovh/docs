@@ -92,7 +92,7 @@ Retrouvez les détails de configuration de votre zone DNS concernant votre servi
 
 ### Ajouter des noms de domaines additionnels (facultatif)
 
-Une fois la première configuration de votre domaine terminée, vous pouvez également configurer des noms de domaines additionnels si vous le souhaitez et si vous ne l'avez pas déjà fait, via l'assistant.
+Une fois la première configuration de votre domaine terminée, vous pouvez également configurer, via l'assistant, des noms de domaines additionnels si vous le souhaitez et si vous ne l'avez pas déjà fait.
 
 > [!warning]
 >
