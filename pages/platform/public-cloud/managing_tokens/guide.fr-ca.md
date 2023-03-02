@@ -5,10 +5,10 @@ slug: gestion-des-tokens
 legacy_guide_number: 1872
 section: 'Gestion via OpenStack'
 order: 9
-updated: 2020-04-09
+updated: 2023-03-02
 ---
 
-**Dernière mise à jour le 16/04/2020**
+**Dernière mise à jour le 02/03/2023**
 
 ## Objectif
 

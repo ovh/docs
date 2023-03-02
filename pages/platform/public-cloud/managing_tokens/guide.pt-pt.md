@@ -4,14 +4,14 @@ excerpt: 'Saiba como utilizar os token através da API Keystone'
 slug: gestao_dos_tokens
 legacy_guide_number: g1872
 section: Gestão via OpenStack
-updated: 2020-04-09
+updated: 2023-03-02
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 16/04/2020**
+**Última atualização: 02/03/2023**
 
 ## Objetivo
 
@@ -145,7 +145,7 @@ export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
 
 
 ```bash
-export token=$ (curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: aplicação/json -de { "auth": { "identity": { "metods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domínio": { "id": "default" }, "password": "'$OS_PASSWORD" }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domínio": { "id": "default" } } } }' | grep’CAPX-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 Este token é agora o elemento de autenticação que será utilizado para o pedido seguinte.

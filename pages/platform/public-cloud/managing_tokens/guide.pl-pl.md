@@ -4,14 +4,14 @@ excerpt: 'Dowiedz się, jak używać tokenów za pomocą API Keystone'
 slug: zarzadzanie_tokenami
 legacy_guide_number: g1872
 section: 'Zarządzanie w OpenStack CLI'
-updated: 2020-04-09
+updated: 2023-03-02
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 16-04-2020**
+**Ostatnia aktualizacja z dnia 02-03-2023**
 
 ## Wprowadzenie
 
