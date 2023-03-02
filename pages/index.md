@@ -12,6 +12,7 @@
         + [Users creation and management](account-and-service-management-account-information-users)
             + [Managing users](account/customer/ovhcloud-users-management)
             + [Enabling SSO connections with your OVHcloud account](account/customer/ovhcloud-account-connect-saml-sso)
+            + [How to use IAM policies using the OVHcloud API](account/customer/iam-policies-api)
         + [FAQ](account-and-service-management-account-information-faq)
             + [OVHcloud account management FAQ](../faq/faq-account-management)
             + [OVHcloud account support FAQ](../faq/faq-support)

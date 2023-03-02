@@ -4,14 +4,14 @@ excerpt: 'Gestión de los tokens'
 slug: gestion_de_los_tokens
 legacy_guide_number: g1872
 section: OpenStack
-updated: 2020-04-09
+updated: 2023-03-02
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 16/04/2020**
+**Última actualización: 02/03/2023**
 
 ## Objetivo
 
@@ -142,7 +142,7 @@ Es la dirección del punto del servicio de object storage que permite buscar inf
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "‘OS_PASSWORD’" } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } } }` | grep '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "‘OS_PASSWORD’" } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } } }` | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 Este token es ahora el elemento de autenticación que se utilizará para la siguiente petición.
