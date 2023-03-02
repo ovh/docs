@@ -40,7 +40,7 @@ Daraufhin öffnet sich das Aktivierungsfenster. Wählen Sie aus, welchen Domainn
 ![Aktivierung der E-Mail-Adressen](images/mail-hosting02.png){.thumbnail}
 
 > [!primary]
-> Wenn Sie mehr Inklusiv-E-Mail-Accounts nutzen möchten, bestellen Sie bitte ein [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} über unserer kommerziellen Seite.
+> Wenn Sie mehr inklusive E-Mail-Accounts nutzen möchten, können Sie ein leistungsfähigeres [Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/){.external} über unsere Webseite auswählen.
 
 ### Sichern Ihrer E-Mail-Accounts, bevor Ihr Webhosting endet
 
