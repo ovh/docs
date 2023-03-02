@@ -1,5 +1,5 @@
 ---
-title: Verwendung der IAM-Richtlinien mit der OVHcloud-API (EN)
+title: Verwendung von IAM-Richtlinien mit der OVHcloud API (EN)
 slug: iam-policies-api
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
 section: 'Advanced use'
