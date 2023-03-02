@@ -66,7 +66,7 @@ Il tool da riga di comando cURL permette di costruire richieste da qualsiasi par
 #### Step 1: Richiesta di creazione di un token
 
 ```bash
-curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: applicazione/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "dominio": { "id": "default" }, "password": "'$OS_PASSWORD' }", "scope": { "project": { "name": "'$OS_TENANT_NAME'", "dominio": { "id": "default" } } } } | python -mjson.tool
+curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
 
 La risposta del server è questa:

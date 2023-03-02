@@ -65,7 +65,7 @@ A ferramenta em linha de comandos cURL permite construir pedidos de todas as pe�
 #### Etapa 1: Pedido de criação de um token
 
 ```bash
-curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: aplicação/json -de { "auth": { "identity": { "metods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domínio": { "id": "default" }, "password": "'$OS_PASSWORD" }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domínio": { "id": "default" } } } }' | python-mjson.tool
+curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
 
 A resposta do servidor é a seguinte:
@@ -75,53 +75,53 @@ A resposta do servidor é a seguinte:
  {
   "token": {
     "is_domain": false,
-    "Metods": [
+    "methods": [
       "password"
     ],
-    "Rodas": [
+    "roles": [
       {
         "id": "9543e89aeb484aee8ec7d01e87223b16",
         "name": "objectstore_operator"
       }
     ],
     "is_admin_project": false,
-    "Projeto": {
-      domínio: {
+    "project": {
+      "domain": {
         "id": "default",
         "name": "Default"
       },
       "id": "<ID OF THE PROJECT>",
       "name": "<NAME OF THE PROJECT>"
     },
-    "Catalog": [
+    "catalog": [
       {
         "endpoints": [
           {
             "url": "https://network.compute.sbg1.cloud.ovh.net/",
-            "Interface": "Internal",
-            "Região": "SBG1",
+            "interface": "internal",
+            "region": "SBG1",
             "region_id": "SBG1",
             "id": "075839111e7a41f1bb458926e5f04cec"
           },
           [...]
         ],
-        "Tipo": "network",
+        "type": "network",
         "id": "0be6ed3dce244b8295ff643739a86809",
-        "name": "neutrão"
+        "name": "neutron"
       },
       [...]
     ],
-    "Extras_at": "2020-01-17T14:53:32.000000Z",
+    "expires_at": "2020-01-17T14:53:32.000000Z",
     "user": {
       "password_expires_at": null,
-      domínio: {
+      "domain": {
         "id": "default",
         "name": "Default"
       },
       "id": "<ID OF THE USER>",
       "name": "<NAME OF THE USER>"
     },
-    "Auditoria_ids": [
+    "audit_ids": [
       "IuNOR-lKQ9GJGQd8taWBnQ"
     ],
     "issued_at": "2020-01-16T14:53:32.000000Z"
@@ -138,7 +138,7 @@ Para o endpoint publicURL, é preciso procurar na secção "object-store" e na r
 
 
 ```bash
-export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
+$ export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
 ```
 
 É o endereço do endpoint do serviço de object storage que vai permitir pedir as informações sobre o objeto.
