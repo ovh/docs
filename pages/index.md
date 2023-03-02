@@ -290,6 +290,7 @@
             + [Technical capabilities](cloud/private-cloud/hpc_limits)
             + [Hosted Private Cloud VMware Lifecycle Policy](cloud/private-cloud/lifecycle_policy)
             + [Hosted Private Cloud VMware Lifecycle Policy - Determine actions to be taken](cloud/private-cloud/lifecycle_actions)
+            + [End-Of-Life management for LV1 and LV2 storage](cloud/private-cloud/eol-storage-migration)
             + [Dedicated Cloud FAQ](cloud/private-cloud/faq_private_cloud)
             + [Migrating a PCC to Hosted Private Cloud](cloud/private-cloud/service-migration)
             + [Migrating an infrastructure to a new vDC](cloud/private-cloud/service-migration-vdc)
