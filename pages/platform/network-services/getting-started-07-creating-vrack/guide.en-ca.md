@@ -96,7 +96,7 @@ You will then be able to use the APIs dedicated to OpenStack as needed:
 
 Terraform can also be used to manage OVHcloud infrastructures.
 
-For that you need to cherry-pick the correct terraform provider & resource. Find more information in our guide on [how to use Terraform](https://docs.ovh.com/ca/en/public-cloud/how-to-use-terraform/).
+For that you need to cherry-pick the correct terraform provider & resource. Find more information in our guide on [using Terraform with OVHcloud](https://docs.ovh.com/ca/en/api/terraform-at-ovhcloud/).
 
 ## Instructions
 
