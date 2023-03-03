@@ -8,7 +8,7 @@ updated: 2023-02-22
 ---
 
 **Last updated 22nd February 2023**
-  
+
 ## Objective
 
 Even taking all precautions, your website remains exposed to a potential malfunction (handling error, accidental overwriting of files, faulty configuration, security breach or hacking) that can result in partial or total loss of your data.<br>

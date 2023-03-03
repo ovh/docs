@@ -8,7 +8,7 @@ updated: 2023-02-22
 ---
 
 **Last updated 22nd February 2023**
-  
+
 ## Objective
 
 Even taking all precautions, your website remains exposed to a potential malfunction (handling error, accidental overwriting of files, faulty configuration, security breach or hacking) that can result in partial or total loss of your data.<br>
@@ -20,7 +20,7 @@ On a web hosting plan, you are responsible for your website’s backups. Althoug
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 **This tutorial explains how to back up the content of your WordPress website and its database.**

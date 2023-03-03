@@ -12,7 +12,7 @@ updated: 2023-02-22
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
-  
+
 ## Obiettivo
 
 Anche prendendo tutte le precauzioni possibili, il tuo sito Web resta esposto ad un potenziale malfunzionamento (errore di manipolazione, schiacciamento accidentale di file, difetto di configurazione, falla di sicurezza o pirateria) che può avere come conseguenza la perdita parziale o totale dei tuoi dati.<br>
@@ -24,7 +24,7 @@ Su un hosting Web condiviso, sei responsabile dei backup del tuo sito Web. Anche
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 > 
-> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a [fornitore specializzato](https://partner.ovhcloud.com/it/) o [amministratore del CMS WordPress](https://wordpress.com/support/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a [fornitore specializzato](https://partner.ovhcloud.com/it/directory/) o [amministratore del CMS WordPress](https://wordpress.com/support/){.external}. OVH non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
 >
 
 **Questa guida ti mostra come salvare il contenuto del tuo sito WordPress e del suo database.**
@@ -155,7 +155,7 @@ Applicando queste best practice, hai la possibilità di tornare a una versione p
 - [Sito ufficiale di WordPress](https://wordpress.org){.external}
 - [Maggiori informazioni sui backup del tuo hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_specifiche_tecniche/#informazioni-sui-backup-automatici_1)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

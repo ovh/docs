@@ -13,7 +13,6 @@ updated: 2023-02-22
 
 **Letzte Aktualisierung am 22.02.2023**
 
-  
 ## Ziel
 
 Auch mit allen Vorsichtsmaßnahmen kann Ihre Website von Fehlfunktionen betroffen sein (versehentliches Überschreiben von Dateien, Konfigurationsfehler, Sicherheitslücken, Hacks). Dies kann teilweise oder vollständig zu Datenverlusten führen.<br>

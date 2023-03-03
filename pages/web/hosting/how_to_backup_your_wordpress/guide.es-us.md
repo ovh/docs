@@ -1,5 +1,5 @@
 ---
-title: "Tutorial - Guardar copia de seguridad de su sitio web WordPress"
+title: "Tutorial - Guardar una copia de seguridad de su sitio web WordPress"
 slug: realize-backup-wordpress
 excerpt: "Descubra cómo realizar el backup del contenido de su sitio web WordPress y de su base de datos"
 section: 'Tutoriales'
@@ -12,7 +12,7 @@ updated: 2023-02-22
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-  
+
 ## Objetivo
 
 Aun tomando todas las precauciones de uso, su sitio web seguirá expuesto a posibles fallos de funcionamiento (error de manipulación, sobrescritura accidental de archivos, fallo de configuración, fallos de seguridad o piratería) que pueden provocar la pérdida parcial o total de sus datos.<br>
@@ -22,9 +22,9 @@ En un alojamiento web compartido, usted es responsable de las copias de segurida
 
 > [!warning]
 >
-La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) o con [el editor del CMS WordPress](https://wordpress.com/support/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con [el editor del CMS WordPress](https://wordpress.com/support/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 >
 
 **Descubra cómo guardar copia de seguridad del contenido de su sitio web WordPress y su base de datos.**
@@ -32,7 +32,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 ## Requisitos
 
 - Disponer de un [alojamiento web](https://www.ovhcloud.com/es/web-hosting/) y haber instalado WordPress.
-  
+
 ## Procedimiento
 
 Puede realizar una copia de seguridad de dos formas: **manualmente** o a través de **mediante una extensión**.
@@ -154,7 +154,7 @@ Aplicando estas buenas prácticas, podrá volver a una versión anterior sana.
 
 - [Sitio oficial de WordPress](https://wordpress.org){.external}
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

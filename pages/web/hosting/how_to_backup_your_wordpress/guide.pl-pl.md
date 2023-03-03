@@ -12,7 +12,7 @@ updated: 2023-02-22
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
-  
+
 ## Wprowadzenie
 
 Twoja strona WWW jest narażona na nieprawidłowe działanie (np. błąd w trakcie operacji, przypadkowe usunięcie plików, nieprawidłowa konfiguracja, luka w zabezpieczeniach lub włamanie), co może spowodować częściową lub całkowitą utratę danych.<br>
@@ -24,7 +24,7 @@ Na hostingu możesz zarządzać kopiami zapasowymi Twojej strony WWW. Nawet jeś
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywa na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub [edytora CMS WordPress](https://wordpress.com/support/){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
 >
 
 **Dowiedz się, jak zapisać zawartość strony WordPress i jej bazy danych.**
@@ -32,7 +32,7 @@ Na hostingu możesz zarządzać kopiami zapasowymi Twojej strony WWW. Nawet jeś
 ## Wymagania początkowe
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) i zainstalowanie WordPressa
-  
+
 ## W praktyce
 
 Możesz wykonać kopię zapasową na dwa sposoby: **ręcznie** lub przez **poprzez rozszerzenie**.
@@ -155,8 +155,8 @@ Stosując te dobre praktyki będziesz miał możliwość powrotu do zdrowej wers
 - [Oficjalna strona WordPress](https://wordpress.org){.external}
 - [Więcej informacji na temat kopii zapasowych Twojego hostingu](https://docs.ovh.com/pl/hosting/hosting_www_informacje_techniczne_zwiazane_z_hostingiem_www/#informacje-o-automatycznych-kopiach-zapasowych_1)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

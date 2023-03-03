@@ -12,7 +12,7 @@ updated: 2023-02-22
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-  
+
 ## Objetivo
 
 Mesmo tomando todas as precauções de utilização, o seu website fica exposto a um potencial problema (erro de manipulação, esmagamento acidental de ficheiros, falha de configuração, falha de segurança ou pirataria) que pode ter como consequência a perda parcial ou total dos seus dados .<br>
@@ -24,7 +24,7 @@ Num alojamento web partilhado, é responsável pelos backups do seu website. Mes
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) ou ao [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou ao [editor do CMS WordPress](https://wordpress.com/support/){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste tutorial.
 >
 
 **Descubra como guardar o conteúdo do seu site WordPress e a sua base de dados.**
@@ -156,7 +156,7 @@ Ao aplicar estas boas práticas, poderá voltar a uma versão anterior saudável
 - [Site oficial da WordPress](https://wordpress.org){.external}
 - [Mais informações sobre os backups do seu alojamento web](https://docs.ovh.com/pt/hosting/especificidades-tecnicas-alojamentos-partilhados/#informacoes-sobre-backups-automaticos_1)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
