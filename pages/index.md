@@ -159,6 +159,8 @@
             + [First steps with pre-installed applications](cloud/vps/apps_first_steps)
             + [Using the KVM for a VPS](cloud/vps/using_kvm_for_vps)
             + [Configuring a new Windows Server installation](cloud/vps/windows_first_config)
+            + [Configuring the firewall on Linux with iptables](cloud/vps/firewall-Linux-iptable)
+            + [Configuring the firewall on Windows](cloud/vps/activate-port-firewall-soft-win)
         + [Backup options](bare-metal-cloud-virtual-private-servers-backups)
             + [Using snapshots on a VPS](cloud/vps/using-snapshots-on-a-vps)
             + [Using automatic backups on a VPS](cloud/vps/using-automated-backups-on-a-vps)
