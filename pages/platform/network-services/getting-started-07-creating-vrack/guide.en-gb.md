@@ -4,10 +4,10 @@ excerpt: 'Find out how to set up vRack for your Public Cloud instances'
 slug: public-cloud-vrack
 section: Getting started
 order: 07
-updated: 2023-01-10
+updated: 2023-03-03
 ---
 
-**Last updated 10th January 2023**
+**Last updated 3rd March 2023**
 
 ## Objective
 
@@ -24,7 +24,7 @@ The OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networ
 
 ## Interfaces
 
-Creating a vRack or adding an instance into the network can be done using the OVHcloud Control Panel, the OVHcloud APIv6, the OpenStack API, the Horizon interface or terraform
+Creating a vRack or adding an instance into the network can be done using the OVHcloud Control Panel, the OVHcloud APIv6, the OpenStack API, the Horizon interface or Terraform.
 
 Depending on your technical profile and needs, it is mostly up to you which interface or method to use. For each option, the guide instructions below describe the necessary steps.
 
@@ -193,8 +193,7 @@ Once done, click on `Create`{.action} to start the process.
 
 #### Creating a private network with the OVHcloud APIv6 <a name="vlansetup"></a>
 
-To create a private network
- using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) of the corresponding guide.
+To create a private network using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) of the corresponding guide.
 
 #### Creating a private network with Openstack CLI
 In order to create the same private network, we need to create 2 Openstack objects : network and subnet. In the following example we specify the `VLAN_ID` to which we want the network to be part of through `--provider-network-type` and `--provider-segment`. You can remove those parameters, in that case, an available `VLAN_ID` will be used.
