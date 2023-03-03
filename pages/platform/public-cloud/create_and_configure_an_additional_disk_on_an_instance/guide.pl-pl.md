@@ -11,7 +11,7 @@ updated: 2023-02-09
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 04-01-2023**
+**Ostatnia aktualizacja z dnia 03-03-2023**
 
 ## Wprowadzenie
 
@@ -311,6 +311,85 @@ W ostatnim oknie kliknij `Zakończ`{.action}, aby sformatować dysk.
 ![format disk](images/format-disk-06.png){.thumbnail}
 
 Dysk będzie następnie dostępny jako dysk w eksploratorze plików.
+
+### Odłącz wolumen
+
+Jeśli chcesz odłączyć wolumen od instancji, najlepszym rozwiązaniem jest odmontowanie wolumenu systemu operacyjnego przed odłączeniem go od instancji.
+
+> [!warning]
+>
+> Wyświetli się komunikat o błędzie, jeśli na dodatkowym dysku uruchomione jest oprogramowanie lub proces. W takim przypadku zaleca się zatrzymanie wszystkich procesów przed kontynuowaniem.
+>
+
+#### Linux
+
+Otwórz [połączenie SSH z Twoją instancją](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
+
+```bash
+~$ admin@server-1:~$ lsblk
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└ vda1 254:1 0 10G 0 part /
+vdb 8:0 0 10G 0 disk
+└ vdb1 8:1 0 10G 0 part /mnt/disk
+```
+
+Rozpocznij partycję, używając polecenia:
+
+```bash
+~$ admin@server-1:~$ sudo umount /dev/vdb1
+```
+
+Usuń ID urządzenia fstab, aby zakończyć proces demontażu. Jeśli nie, partycja zostanie ponownie uruchomiona.
+
+```bash
+~$ admin@server-1:~$ sudo nano /etc/fstab
+```
+
+Zapisz i wyjdź z edytora.
+
+Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage**.
+
+Kliknij przycisk `...`{.action} obok odpowiedniego wolumenu i wybierz `Odłącz instancję`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Kliknij `Zatwierdź`{.action} w oknie, które się wyświetli, aby rozpocząć proces.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+
+#### Windows
+
+Utworzenie połączenia RDP (Remote Desktop) z instancją Windows.
+
+Po zalogowaniu kliknij prawym przyciskiem myszy menu `Rozpocznij`{.action} i otwórz `Zarządzanie dyskami`{.action}.
+
+![zarządzanie dyskami](images/start-menu.png){.thumbnail}
+
+Kliknij prawym przyciskiem myszy wolumen, który chcesz odmontować i wybierz `Zmień literę dysku i ścieżki...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Kliknij `Usuń`{.action}, aby usunąć dysk.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+Następnie kliknij `Tak`{.action}, aby potwierdzić usunięcie litery z dysku.
+
+![ponowny disk](images/confirmunmounting.png){.thumbnail}
+
+Po zakończeniu możesz zamknąć okno zarządzania dyskiem.
+
+Przejdź do sekcji `Public Cloud`{.action} w Twoim Panelu klienta OVHcloud i kliknij `Block Storage`{.action} w menu po lewej stronie w sekcji **Storage**.
+
+Kliknij przycisk `...`{.action} obok odpowiedniego wolumenu i wybierz `Odłącz od instancji`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Kliknij `Potwierdź`{.action} w oknie, które się wyświetli, aby rozpocząć proces.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Sprawdź również
 

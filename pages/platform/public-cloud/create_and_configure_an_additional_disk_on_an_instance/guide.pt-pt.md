@@ -12,7 +12,7 @@ updated: 2023-02-09
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 04/01/2023**
+**Última atualização: 03/03/2023**
 
 ## Objetivo
 
@@ -195,7 +195,7 @@ Registe e saia do editor. O disco deve ser automaticamente montado em cada rein�
 
 Crie uma ligação RDP (Remote Desktop) com a sua instância Windows.
 
-Uma vez ligado, clique com o botão `Iniciar`{.action} e abra a `Gestão dos discos`{.action}.
+Uma vez ligado, clique com o botão `Iniciar`{.action} e abra a `Gestão de Discos`{.action}.
 
 ![disk management](images/start-menu.png){.thumbnail}
 
@@ -312,6 +312,86 @@ Na última janela, clique em `Terminar`{.action} para formatar o disco.
 ![formato disk](images/format-disk-06.png){.thumbnail}
 
 O disco estará disponível como leitor no explorador de ficheiros.
+
+
+### Desassociar um volume
+
+Se deseja desassociar um volume da sua instância, a melhor prática é desmontar o volume do sistema operativo antes de o desassociar da instância.
+
+> [!warning]
+>
+> Pode surgir uma mensagem de erro se os softwares ou processos estiverem a ser executados no disco suplementar. Neste caso, recomenda-se que interrompa todos os processos antes de continuar.
+>
+
+#### Em Linux
+
+Abra uma [ligação SSH à sua instância](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) e utilize o comando abaixo para listar os discos ligados.
+
+```bash
+admin@server-1:~$ lsblk
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└ vda1 254:1 0 10G 0 parte /
+vdb 8:0 0 10G 0 disk
+└ vdb1 8:1 0 10G 0 parte /mnt/disk
+```
+
+Desmonte a partição utilizando o seguinte comando:
+
+```bash
+admin@server-1:~$ sudo umount /dev/vdb1
+```
+
+Elimine o ID do periférico do fstab para terminar o processo de desmontagem. Se não o fizer, a partição será aumentada após uma reinicialização.
+
+```bash
+admin@server-1:~$ sudo nano/etc/fstab
+```
+
+Registe e saia do editor.
+
+Aceda à secção `Public Cloud`{.action} da Área de Cliente OVHcloud e clique em `Block Storage`{.action} no menu à esquerda em **Storage**.
+
+Clique no botão `...`{.action} junto do volume correspondente e selecione `Desassociar a instância`{.action}.
+
+![disk](images/detachinstance.png){.thumbnail}
+
+Clique em `Confirmar`{.action} na nova janela para lançar o processo.
+
+![confirma disk detach](images/confirminstancedetach.png){.thumbnail}
+
+#### Em Windows
+
+Crie uma ligação RDP (Remote Desktop) com a sua instância Windows.
+
+Uma vez ligado, clique com o botão direito do rato no menu `Iniciar`{.action} e abra a `Gestão de Discos`{.action}.
+
+![gestão dos discos](images/start-menu.png){.thumbnail}
+
+clique com o botão direito do rato sobre o volume que pretende desmontar e selecione `Alterar letra e os caminho de unidade...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Clique em `Remover`{.action} para retirar o disco.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+A seguir, clique em `Sim`{.action} para confirmar a eliminação da letra do leitor de disco.
+
+![confirma remove disk](images/confirmunmounting.png){.thumbnail}
+
+Quando tiver terminado, pode fechar a janela de gestão do disco.
+
+Aceda à secção `Public Cloud`{.action} da Área de Cliente OVHcloud e clique em `Block Storage`{.action} no menu à esquerda em **Storage**.
+
+Clique no botão `...`{.action} junto do volume correspondente e selecione `Desassociar a instância`{.action}.
+
+![disk](images/detachinstance.png){.thumbnail}
+
+Clique em `Confirmar`{.action} na nova janela para lançar o processo.
+
+![confirma disk detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Quer saber mais?
 

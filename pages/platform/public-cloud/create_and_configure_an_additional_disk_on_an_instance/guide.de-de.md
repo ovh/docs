@@ -12,7 +12,7 @@ updated: 2023-02-09
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 04.01.2023**
+**Letzte Aktualisierung am 03.03.2023**
 
 ## Ziel
 
@@ -311,6 +311,86 @@ Klicken Sie im letzten Fenster auf `Beenden`{.action}, um die Disk zu formatiere
 ![Disk Format](images/format-disk-06.png){.thumbnail}
 
 Das Volume ist dann als Laufwerk im Dateiexplorer verfügbar.
+
+
+### Volume trennen
+
+Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist es am besten, das Volumen des Betriebssystems vor dem Abtrennen von der Instanz aufzuteilen.
+
+> [!warning]
+>
+> Es kann eine Fehlermeldung angezeigt werden, wenn auf der zusätzlichen Festplatte Software oder Prozesse ausgeführt werden. In diesem Fall wird empfohlen, alle Prozesse zu beenden, bevor sie fortfahren.
+>
+
+#### Unter Linux
+
+Stellen Sie [eine SSH-Verbindung zu Ihrer](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) Instanz her und verwenden Sie den unten stehenden Befehl, um die angehängten Festplatten aufzulisten.
+
+```bash
+~$ admin@server-1.~$ lsblk
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└─ ─ vda1 254:1 0 10G 0 part /
+vdb 8:0 0 10G 0 disk
+└─ ─ vdb1 8:1 0 10G 0 part /mnt/disk
+```
+
+Zerlegen Sie die Partition mit folgendem Befehl:
+
+```bash
+~$ admin@server-1:~$ sudo umount /dev/vdb1
+```
+
+Löschen Sie die Peripherie-ID aus fstab, um den Zerlegungsprozess abzuschließen. Wird dies nicht durchgeführt, wird die Partition nach einem Neustart zurückgesetzt.
+
+```bash
+~$ admin@server-1:~$ sudo nano /etc/fstab
+```
+
+Registrieren und verlassen Sie den Editor.
+
+Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im linken Menü unter `Storage auf `{.action}Block Storage****.
+
+Klicken Sie auf den Button `..`{.action}. neben dem entsprechenden Volume und wählen Sie `Von der Instanz trennen aus`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Klicken Sie `im`{.action} angezeigten Fenster auf Bestätigen, um den Vorgang zu starten.
+
+![Disk Detach](images/confirminstancedetach.png){.thumbnail}
+
+#### Unter Windows
+
+Stellen Sie eine RDP-Verbindung (Remote Desktop) mit Ihrer Windows-Instanz her.
+
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf `Starten`{.action} und `Datenträtgerverwaltung`{.action}.
+
+![Festplattenverwaltung](images/start-menu.png){.thumbnail}
+
+Klicken Sie mit der rechten Maustaste auf das Volume, das Sie demontieren möchten, und wählen Sie `Laufwerkbuchstaben und -pfade ändern...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Klicken Sie auf `Entfernen`{.action}, um die Festplatte zu entfernen.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+Klicken Sie anschließend auf `Ja`{.action}, um die Löschung des Buchstabens aus dem Festplattenlaufwerk zu bestätigen.
+
+![bestätigt remove disk](images/confirmunmounting.png){.thumbnail}
+
+Wenn Sie fertig sind, können Sie das Festplattenverwaltungsfenster schließen.
+
+Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im linken Menü unter `Storage auf `{.action} **Block Storage**.
+
+Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Klicken Sie im angezeigten Fenster auf `Bestätigen`{.action}, um den Vorgang zu starten.
+
+![Disk Detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Weiterführende Informationen
 

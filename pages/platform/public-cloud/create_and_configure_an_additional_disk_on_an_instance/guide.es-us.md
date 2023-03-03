@@ -12,7 +12,7 @@ updated: 2023-02-09
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 04/01/2023**
+**Última actualización: 03/03/2023**
 
 ## Objetivo
 
@@ -312,6 +312,85 @@ En la última ventana, haga clic en `Finalizar`{.action} para dar formato al dis
 ![formato disk](images/format-disk-06.png){.thumbnail}
 
 El disco estará disponible como lector en el explorador de archivos.
+
+### Desvincular un volumen
+
+Si desea desvincular un volumen de su instancia, la mejor práctica es desmontar el volumen del sistema operativo antes de desvincularlo de la instancia.
+
+> [!warning]
+>
+> Se puede mostrar un mensaje de error si se están ejecutando programas o procesos en el disco adicional. En ese caso, se recomienda detener todos los procesos antes de continuar.
+>
+
+#### En Linux
+
+Abra una [conexión SSH a su instancia](https://docs.ovh.com/es/public-cloud/public-cloud-primeros-pasos/#3-crear-una-instancia) y utilice el siguiente comando para mostrar los discos asociados.
+
+```bash
+~$ admin@server-1:~$ lsblk
+
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└vda1 254:1 0 10G 0 part /
+vdb 8:0 0 10G 0 disk
+└ vb1:1 0 10G 0 part /mnt/disk
+```
+
+Desmonte la partición utilizando el siguiente comando:
+
+```bash
+~$ admin@server-1:~$ sudo umount /dev/vdb1
+```
+
+Elimine el ID del dispositivo fstab para finalizar el proceso de desmontaje. Si no se realiza, la partición se recuperará después de un reinicio.
+
+```bash
+~$ admin@server-1:~$ sudo nano /etc/fstab
+```
+
+Guarde y salga del editor.
+
+Acceda a la sección `Public Cloud`{.action} de su área de cliente de OVHcloud y haga clic en `Block Storage`{.action} en el menú de la izquierda, en **Storage**.
+
+Haga clic en el botón `...`{.action} junto al volumen correspondiente y seleccione `Desvincular de la instancia`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Haga clic en `Confirmar`{.action} en la nueva ventana para iniciar el proceso.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+
+#### En Windows
+
+Establezca una conexión RDP (Remote Desktop) con su instancia Windows.
+
+Una vez que se haya conectado, haga clic derecho en el menú `Iniciar`{.action} y abra `Administración de discos`{.action}.
+
+![gestión de discos](images/start-menu.png){.thumbnail}
+
+Haga clic derecho en el volumen que desee desmontar y seleccione `Cambiar la letra y rutas de acceso de unidad...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Haga clic en `Quitar`{.action} para eliminar el disco.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+Haga clic en `Sí`{.action} para confirmar la eliminación de la letra de la unidad de disco.
+
+![confirm remove disk](images/confirmunmounting.png){.thumbnail}
+
+Una vez que haya terminado, puede cerrar la ventana de gestión del disco.
+
+Acceda a la sección `Public Cloud`{.action} de su área de cliente de OVHcloud y haga clic en `Block Storage`{.action} en el menú de la izquierda, en **Storage**.
+
+Haga clic en el botón `...`{.action} junto al volumen correspondiente y seleccione `Desvincular de la instancia`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Haga clic en `Confirmar`{.action} en la nueva ventana para iniciar el proceso.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Más información
 
