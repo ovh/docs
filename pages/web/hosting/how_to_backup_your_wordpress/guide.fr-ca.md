@@ -4,14 +4,14 @@ slug: realize-backup-wordpress
 excerpt: "Découvrez comment sauvegarder le contenu de votre site WordPress et sa base de données"
 section: 'Tutoriels'
 order: 021
-updated: 2023-02-21
+updated: 2023-02-22
 ---
 
-**Dernière mise à jour le 21/02/2023**
+**Dernière mise à jour le 22/02/2023**
 
 ## Objectif
 
-Même en prenant toutes les précautions d'usage, votre site web reste exposé à un potentiel dysfonctionnement (erreur de manipulation, écrasement accidentel de fichiers, défaut de configuration, faille de sécurité ou piratage) qui peut avoir pour conséquence la perte partielle ou totale de vos données .<br>
+Même en prenant toutes les précautions d'usage, votre site web reste exposé à un potentiel dysfonctionnement (erreur de manipulation, écrasement accidentel de fichiers, défaut de configuration, faille de sécurité ou piratage) qui peut avoir pour conséquence la perte partielle ou totale de vos données.<br>
 La sauvegarde régulière des informations de votre site web est une bonne pratique à adopter. Elle vous permettra de revenir à un état antérieur de votre site lorsque vous rencontrez un dysfonctionnement.
 
 Sur un hébergement web mutualisé, vous êtes responsable des sauvegardes de votre site web. Même si OVHcloud propose des sauvegardes (non contractuelles), nous vous recommandons de réaliser également vous-même des sauvegardes régulières et de gérer vos propres supports de sauvegarde (disque dur, clé USB, etc.) pour plus de précautions.
@@ -20,20 +20,20 @@ Sur un hébergement web mutualisé, vous êtes responsable des sauvegardes de vo
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) ou à [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 **Découvrez comment sauvegarder le contenu de votre site WordPress et sa base de données.**
 
 ## Prérequis
 
-- Disposer d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/) et avoir installé WordPress
+- Disposer d'un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) et avoir installé WordPress
 
 ## En pratique
 
 Vous pouvez effectuer une sauvegarde de deux façons : **manuellement** ou par le **biais d'une extension**.
 
-OVHcloud fournit un [service (non contractuel) de sauvegarde automatique des données](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) ainsi que la mise à disposition de ces sauvegardes. Il est toutefois de votre responsabilité de mettre en place votre propre politique de restauration et de déterminer des points de restauration aux moments que vous jugez opportuns.
+OVHcloud fournit un [service (non contractuel) de sauvegarde automatique des données](https://docs.ovh.com/ca/fr/hosting/restauration-ftp-filezilla-espace-client/) ainsi que la mise à disposition de ces sauvegardes. Il est toutefois de votre responsabilité de mettre en place votre propre politique de restauration et de déterminer des points de restauration aux moments que vous jugez opportuns.
 
 ### Méthode n°1 - réaliser une sauvegarde manuelle
 
@@ -41,7 +41,7 @@ La sauvegarde manuelle doit se faire en deux étapes. Vous devez d'abord sauvega
 
 #### 1.1 - Sauvegardez les fichiers de votre site web
 
-La récupération se fait via un client FTP comme FileZilla. Consultez notre guide « [Utiliser FileZilla avec votre hébergement OVHcloud](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) » pour plus d'informations.
+La récupération se fait via un client FTP comme FileZilla. Consultez notre guide « [Utiliser FileZilla avec votre hébergement OVHcloud](https://docs.ovh.com/ca/fr/hosting/mutualise-guide-utilisation-filezilla/) » pour plus d'informations.
 
 Lorsque vous vous connectez sur votre serveur en FTP, vous devez récupérer (en effectuant un glisser/déposer) le contenu du répertoire `www` sur le volet de droite. Ce répertoire contient la totalité des fichiers et répertoires de votre site WordPress (configuration, thèmes, médias, etc.).
 
@@ -57,7 +57,7 @@ Pour exporter votre base de données, rendez-vous sur l'interface _PHPMyAdmin_ v
 
 > [!success]
 >
-> N'hésitez pas à consulter notre guide sur [l'export d'une base de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/).
+> N'hésitez pas à consulter notre guide sur [l'export d'une base de données](https://docs.ovh.com/ca/fr/hosting/exportation-bases-donnees/).
 
 ![Accès PHPMyAdmin - Accueil](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -149,10 +149,10 @@ En appliquant ces bonnes pratiques, vous aurez la possibilité de revenir à une
 ## Aller plus loin <a name="go-further"></a>
 
 - [Site officiel de WordPress](https://wordpress.org){.external}
-- [Plus d'informations sur les sauvegardes de votre hébergement web](https://docs.ovh.com/fr/hosting/specificites-techniques-hebergements-mutualises/#informations-sur-les-sauvegardes-automatiques)
+- [Plus d'informations sur les sauvegardes de votre hébergement web](https://docs.ovh.com/ca/fr/hosting/specificites-techniques-hebergements-mutualises/#informations-sur-les-sauvegardes-automatiques)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
