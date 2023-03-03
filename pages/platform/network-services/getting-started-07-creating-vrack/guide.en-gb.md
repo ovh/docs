@@ -92,6 +92,9 @@ For the purpose of making this guide more accessible, it presents the simplest a
 You may consult the [official OpenStack documentation](https://docs.openstack.org/){.external} if you wish to go further in learning about its use.
 >
 
+### Terraform
+Terraform can also be used to manage OVHcloud infrastructure. For that you need to cherry pick the correct terraform provider & resource. This [page](../../../account/api/terraform-at-ovhcloud/guide.en-gb.md) is a good place to start to learn more !
+
 ## Instructions
 
 ### Step 1: Activating and managing a vRack <a name="activation"></a> <a name="activation"></a>
