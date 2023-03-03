@@ -4,14 +4,14 @@ slug: pierwsze-kroki-z-serwerem-dedykowanym
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego'
 section: 'Pierwsze kroki'
 order: 1
-updated: 2022-12-12
+updated: 2023-03-28
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 12-12-2022**
+**Ostatnia aktualizacja z dnia 28-02-2022**
 
 ## Wprowadzenie
 
@@ -140,7 +140,9 @@ W każdej chwili możesz jednak wykonać "reboot hard" w [Panelu klienta OVHclou
 
 ### Bezpieczeństwo serwera dedykowanego
 
-Zgodnie z informacją w części “Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera dedykowanego. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo. Aby uzyskać więcej informacji na temat bezpieczeństwa serwera, zapoznaj się z naszym przewodnikiem [Zabezpieczenie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/).
+Zgodnie z informacją w części “Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera dedykowanego. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo. Aby uzyskać więcej informacji na temat bezpieczeństwa serwera, zapoznaj się z naszym przewodnikiem [Zabezpieczenie serwera dedykowanego](https://docs.ovh.com/pl/dedicated/porady-zabezpieczanie-serwera-dedykowanego/).
+
+Jeśli korzystasz z serwera Windows, zapoznaj się z [tym przewodnikiem](https://docs.ovh.com/pl/dedicated/firewall-windows/).
 
 ### Monitoring OVHcloud <a name="monitoring-server"></a>
 

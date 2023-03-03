@@ -35,14 +35,14 @@ Firewalls implementieren Regeln, die erlaubten und gesperrten Traffic verwalten.
 
 > [!primary]
 >
-> Diese Anleitung verwendet die Befehle für eine Ubuntu Server Distribution.
+> Diese Anleitung verwendet Befehle für eine Ubuntu Server Distribution.
 >
-> Es handelt sich hierbei eine generelle Vorgehensweise. Möglicherweise müssen aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden. Vereinzelt wird Ihnen geraten, ein Tool eines Drittanbieters zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.  
+> Es handelt sich hierbei um eine generelle Vorgehensweise. Möglicherweise müssen aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden. Vereinzelt wird Ihnen geraten, ein Tool eines Drittanbieters zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.  
 >
 
 ### Schritt 1: Ihr System aktualisieren
 
-Die Entwickler von Distributionen und Betriebssystemen bieten häufig Updates der Softwarepakete an, meistens aus Sicherheitsgründen. **Deswegen ist es für die Sicherheit Ihres Servers äußerst wichtig, Ihre Distribution oder Ihr Betriebssystem immer auf dem neuesten Stand zu halten.**
+Die Entwickler von Distributionen und Betriebssystemen bieten häufig Updates für Softwarepakete an, meist aus Sicherheitsgründen. **Deswegen ist es für die Sicherheit Ihres Servers äußerst wichtig, Ihre Distribution oder Ihr Betriebssystem immer auf dem neuesten Stand zu halten.**
 
 Weitere Informationen finden Sie in unserer [Anleitung zur Sicherung eines Dedicated Servers](https://docs.ovh.com/de/dedicated/dedizierten-server-sichern/).
 

@@ -43,7 +43,7 @@ For the current VPS range, please continue with the next section, **First steps 
 
 At the first installation or when reinstalling from the Control Panel, a user with elevated permissions will be created and you will be sent an email containing the login credentials. The username will be chosen according to the operating system, for example "ubuntu" or "debian".
 
-You can now connect to your VPS via SSH with username and password. (SSH is a secure communication protocol. Find out more in [this guide about SSH on dedicated servers](../../dedicated/ssh-introduction/)). You can access your server through a command line terminal (Linux or MAC) or through third-party software on Windows (we can recommend PuTTy).
+You can now connect to your VPS via SSH with username and password. (SSH is a secure communication protocol. Find out more in [this guide about SSH on dedicated servers](https://docs.ovh.com/ca/en/dedicated/ssh-introduction/)). You can access your server through a command line terminal (Linux or MAC) or through third-party software on Windows (we can recommend PuTTy).
 
 Using PuTTy for example, simply open the application and enter the servername or its IPv4 address to establish a connection. You will be prompted for username and password and then you can proceed with the command line interface (CLI).
 
@@ -75,7 +75,7 @@ passwd: password updated successfully
 
 #### Enabling root logins
 
-Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](../root-password/#enabling-root-login_1).
+Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](https://docs.ovh.com/ca/en/root-password/#enabling-root-login_1).
 
 #### Restarting your VPS (current VPS range) <a name="reboot-current-range"></a>
 
@@ -98,7 +98,7 @@ You can carry out any reinstallations directly in your Control Panel. From the `
 In the popup window, you will be asked to choose:
 
 - An operating system from the drop-down list
-- [An SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
+- [An SSH Key](https://docs.ovh.com/ca/en/dedicated/creating-ssh-keys-dedicated/) (optional)
 
 
 ![VPSnewreinstallation](images/2020panel_01.png){.thumbnail}
@@ -157,7 +157,7 @@ A window will open, and you will be asked to choose:
 
 - Your operating system from the drop-down list
 - The language
-- [An SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
+- [An SSH Key](https://docs.ovh.com/ca/en/dedicated/creating-ssh-keys-dedicated/) (optional)
 
 ![Reinstallation menu](images/reinstall_menu.png){.thumbnail}
 
@@ -174,11 +174,11 @@ A progress bar for the reinstallation will appear in your Control Panel - please
 
 As explained in the "Objective" section of this guide, you are the administrator of your VPS. As such, you are responsible for your data and its security.
 
-Please refer to the guide on [Securing a VPS](../tips-for-securing-a-vps/) for some basic advice.
+Please refer to the guide on [Securing a VPS](https://docs.ovh.com/ca/en/tips-for-securing-a-vps/) for some basic advice.
 
 ### Attaching a domain
 
-Making your VPS available on the web usually includes attaching a domain name to it via DNS. If you manage your domain at OVHcloud, you can refer to our guide on [Editing your DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) for instructions.
+Making your VPS available on the web usually includes attaching a domain name to it via DNS. If you manage your domain at OVHcloud, you can refer to our guide on [Editing your DNS zone](https://docs.ovh.com/ca/en/domains/web_hosting_how_to_edit_my_dns_zone/) for instructions.
 
 ### Securing a domain with an SSL certificate
 
@@ -186,14 +186,14 @@ Once you have configured your VPS, you may want to secure your domain name and y
 
 You can install this SSL certificate manually, directly on the VPS. Please refer to the official documentation of your VPS distribution.
 
-For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.com/ca/en/ssl-gateway/){.external} or our [guide documents](../../ssl-gateway/) for further information.
+For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.com/ca/en/ssl-gateway/){.external} or our [guide documents](https://docs.ovh.com/ca/en/ssl-gateway/) for further information.
 
 ## Go further
 
-[Introduction to SSH](../../dedicated/ssh-introduction/)
+[Introduction to SSH](https://docs.ovh.com/ca/en/dedicated/ssh-introduction/)
 
-[Securing a VPS](../tips-for-securing-a-vps/)
+[Securing a VPS](https://docs.ovh.com/ca/en/tips-for-securing-a-vps/)
 
-[Configuring a new Windows Server installation](../windows-first-config/)
+[Configuring a new Windows Server installation](https://docs.ovh.com/ca/en/windows-first-config/)
 
 Join our community of users on <https://community.ovh.com/en/>.

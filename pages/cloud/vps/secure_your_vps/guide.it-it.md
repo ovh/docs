@@ -1,8 +1,8 @@
 ---
-title: 'Mettere in sicurezza un VPS'
+title: "Mettere in sicurezza un VPS"
 slug: consigli-sicurezza-vps
-section: 'Per iniziare'
-excerpt: Scopri gli elementi di base per rendere sicuro il tuo VPS
+section: "Per iniziare"
+excerpt: "Scopri gli elementi di base per rendere sicuro il tuo VPS"
 updated: 2022-05-05
 ---
 
@@ -34,7 +34,7 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
 >
 > Ricordate che questa guida generale si basa su un sistema operativo Ubuntu Server. Alcuni comandi devono essere adattati alla distribuzione utilizzata e alcuni trucchi ti invitano a utilizzare strumenti di terze parti. In caso di necessità, consulta la documentazione ufficiale relativa a queste applicazioni.
 >
-> Per configurare il tuo primo VPS OVHcloud, consulta la nostra guida [sulla messa in servizio di un VPS](../iniziare-a-utilizzare-vps/).
+> Per configurare il tuo primo VPS OVHcloud, consulta la nostra guida [sulla messa in servizio di un VPS](https://docs.ovh.com/it/vps/iniziare-a-utilizzare-vps/).
 >
 
 Questi esempi presuppongono la connessione come utente con elevate autorizzazioni.
@@ -99,7 +99,7 @@ ssh username@IPv4_of_your_VPS -p NewPortNumber
 
 ### Modifca la password associata all’utente “root”
 
-Ti consigliamo vivamente di modificare la password dell'utente root per non lasciarla al valore predefinito su un nuovo sistema. Per maggiori informazioni, consulta [questa guida](../root-password/).
+Ti consigliamo vivamente di modificare la password dell'utente root per non lasciarla al valore predefinito su un nuovo sistema. Per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/vps/root-password/).
 
 ### Crea un account con diritti utente limitati
 
@@ -161,7 +161,7 @@ Le distribuzioni GNU/Linux correnti sono fornite con un servizio di firewall chi
 iptables -L
 ```
 
-Per maggiori informazioni su iptables, consulta la nostra [guida dedicata](../../dedicated/firewall-iptables/).
+Per maggiori informazioni su iptables, consulta la nostra [guida dedicata](https://docs.ovh.com/it/vps/vps-firewall-iptables/).
 
 Ti consigliamo di creare e adattare le regole del firewall in base alle tue necessità. Per maggiori informazioni sulle diverse operazioni, consulta la documentazione ufficiale della distribuzione utilizzata.
 
@@ -241,7 +241,7 @@ Per maggiori informazioni e raccomandazioni su Fail2ban, consulta [la documentaz
 
 Le soluzioni OVHcloud includono la possibilità di attivare un firewall al punto di ingresso dell'infrastruttura, il Network Firewall. La corretta configurazione di questo firewall permette di bloccare le connessioni prima che arrivino sul tuo server.
 
-Per attivare il Network Firewall, consulta la guida [Configurare il Network Firewall](../../dedicated/firewall-network/).
+Per attivare il Network Firewall, consulta la guida [Configurare il Network Firewall](https://docs.ovh.com/it/dedicated/firewall-network/).
 
 ### Proteggi il tuo sistema e i tuoi dati
 
@@ -252,12 +252,14 @@ La protezione dei dati è un elemento chiave e per questo OVHcloud offre diverse
 - L'opzione `Snapshot` che ti permette di creare un'istantanea manuale.
 - L'opzione di `backup automatico` permette di conservare i backup regolari del VPS (ad eccezione dei dischi supplementari).
 
-Tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio sono disponibili sulla [pagina del prodotto](https://www.ovhcloud.com/it/vps/options/) e nelle [rispettive](../) guide.
+Tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio sono disponibili sulla [pagina del prodotto](https://www.ovhcloud.com/it/vps/options/) e nelle [rispettive](https://docs.ovh.com/it/vps/) guide.
 
 ## Per saperne di più
 
-[Iniziare a utilizzare un VPS](../iniziare-a-utilizzare-vps/) 
+[Iniziare a utilizzare un VPS](https://docs.ovh.com/it/vps/iniziare-a-utilizzare-vps/) 
 
-[Configurare il Network Firewall](../../dedicated/firewall-network/)
+[Configura il firewall su Windows](https://docs.ovh.com/it/vps/vps-firewall-windows/)
+
+[Configurare il Network Firewall](https://docs.ovh.com/it/dedicated/firewall-network/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

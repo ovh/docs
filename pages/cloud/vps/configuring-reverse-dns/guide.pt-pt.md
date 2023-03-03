@@ -2,8 +2,6 @@
 title: "Configurar a reverse DNS de um VPS"
 excerpt: Saiba como implementar a resolução reverse DNS
 slug: configurar_a_reverse_dns_vps
-routes:
-    canonical: 'https://docs.ovh.com/pt/public-cloud/configurar_a_reverse_dns_de_uma_instancia/'
 section: Rede e IP
 order: 3
 updated: 2023-01-05
@@ -17,7 +15,7 @@ updated: 2023-01-05
 
 ## Objetivo
 
-O **Reverse DNS** é o complemento da resolução "clássica" dos DNS que permite converter um nome de domínio num endereço IP (registo do tipo **A**). Graças a um pedido deste tipo, um endereço IP pode ser resolvido em nome de domínio (registo do tipo **PTR**). Isto significa que os pedidos DNS no endereço IP em causa irão devolver um domínio.
+O **Reverse DNS** (*rDNS*) é o complemento da resolução "clássica" dos DNS que permite converter um nome de domínio num endereço IP (registo do tipo **A**). Graças a um pedido deste tipo, um endereço IP pode ser resolvido em nome de domínio (registo do tipo **PTR**). Isto significa que os pedidos DNS no endereço IP em causa irão devolver um domínio.
 
 Configurar a resolução **Reverse DNS** de um VPS é particularmente útil para o envio de e-mails. O risco de as suas mensagens serem rejeitadas por um sistema de proteção contra spam será diminuído se o endereço IP do seu servidor de envio se resolver corretamente em seu nome de domínio.
 
