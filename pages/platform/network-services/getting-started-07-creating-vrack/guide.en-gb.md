@@ -195,16 +195,24 @@ Once done, click on `Create`{.action} to start the process.
 
 To create a private network using the OVHcloud APIv6, please refer to [this section](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) of the corresponding guide.
 
-#### Creating a private network with Openstack CLI
-In order to create the same private network, we need to create 2 Openstack objects : network and subnet. In the following example we specify the `VLAN_ID` to which we want the network to be part of through `--provider-network-type` and `--provider-segment`. You can remove those parameters, in that case, an available `VLAN_ID` will be used.
+#### Creating a private network with the OpenStack CLI
+
+In order to create the same private network, we need to create 2 OpenStack objects : network and subnet.
+
+In the following example we specify the `VLAN_ID` to which we want the network to be part of through `--provider-network-type` and `--provider-segment`.
+
+You can remove those parameters. In that case, an available `VLAN_ID` will be used.
+
 ```bash 
 openstack network create --provider-network-type vrack --provider-segment 42 OS_CLI_private_network
 openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.0.0.0/16
 ```
-#### Creating a private network with Terraform
-In terraform, you will need to use the openstack provider. You can download an example of complete terraform script in this [repo](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network)
 
-The OVHCloud specific part for vrack integration is the `value_specs` param
+#### Creating a private network with Terraform
+
+In Terraform, you will need to use the openstack provider. You can download an example of a complete terraform script in [this repository](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network).
+
+The OVHcloud specific part for vRack integration is the `value_specs` parameter.
 
 ```hcl
 resource "openstack_networking_network_v2" "tf_network" {
@@ -223,7 +231,6 @@ resource "openstack_networking_subnet_v2" "tf_subnet"{
   enable_dhcp       = true
 }
 ```
-
 
 ### Step 3: Integrating an instance into vRack <a name="instance-integration"></a>
 
