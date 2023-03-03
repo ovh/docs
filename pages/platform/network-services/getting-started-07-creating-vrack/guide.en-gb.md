@@ -93,7 +93,10 @@ You may consult the [official OpenStack documentation](https://docs.openstack.or
 >
 
 ### Terraform
-Terraform can also be used to manage OVHcloud infrastructure. For that you need to cherry pick the correct terraform provider & resource. This [page](../../../account/api/terraform-at-ovhcloud/guide.en-gb.md) is a good place to start to learn more !
+
+Terraform can also be used to manage OVHcloud infrastructures.
+
+For that you need to cherry-pick the correct terraform provider & resource. Find more information in our guide on [how to use Terraform](https://docs.ovh.com/gb/en/public-cloud/how-to-use-terraform/).
 
 ## Instructions
 
