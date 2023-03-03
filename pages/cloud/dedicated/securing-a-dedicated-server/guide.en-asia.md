@@ -253,7 +253,7 @@ Securing your data is a key element, which is why OVHcloud offers you 500GB of f
 
 You will need a third-party backup solution to replicate your data and transfer it to your backup storage.
 
-For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/asia/en/dedicated/services-backup-storage/).
+For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/asia/en/dedicated/using-backup-storage/).
 
 ## Go further
 
