@@ -88,8 +88,8 @@ You will then be able to use the APIs dedicated to OpenStack as needed:
 > In some cases, it will be easier to use the OpenStack APIs and in others, Nova, Neutron, etc.
 >
 > Moreover, some features may be missing from the OpenStack API depending on the version of your client and operating system.
-For the purpose of making this guide more accessible, it presents the simplest and most intuitive options.
-You may consult the [official OpenStack documentation](https://docs.openstack.org/){.external} if you wish to go further in learning about its use.
+> For the purpose of making this guide more accessible, it presents the simplest and most intuitive options.
+> You may consult the [official OpenStack documentation](https://docs.openstack.org/){.external} if you wish to go further in learning about its use.
 >
 
 ### Terraform
