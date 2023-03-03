@@ -30,7 +30,7 @@ updated: 2022-12-15
  }
  .small {
      font-size: 0.75em;
- }
+ } 
 </style>
 
 ## Nodes and pods
