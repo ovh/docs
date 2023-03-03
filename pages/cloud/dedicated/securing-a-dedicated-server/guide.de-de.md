@@ -263,7 +263,7 @@ Für weitere Informationen zu unseren Storage-Angeboten lesen Sie [unsere Anleit
 
 ## Weiterführende Informationen
 
-[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/dedicated/vps-firewall-windows/)
+[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/dedicated/firewall-windows/)
 
 [Network Firewall](https://docs.ovh.com/de/dedicated/firewall-network/)
 
