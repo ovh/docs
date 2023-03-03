@@ -1,15 +1,17 @@
 ---
 title: Setting up Nutanix Objects
 slug: objects
-excerpt: 'How to enable Nutanix Objects in your cluster'  
-section: "Advanced use"
+excerpt: "Learn how to enable Nutanix Objects in your cluster"
+section: Advanced use
 order: 07
 updated: 2023-03-02
 ---
 
-**Last updated 21th February 2023**
+**Last updated 2nd March 2023**
 
 ## Objective
+
+Nutanix Objects implements an **Object Storage** S3-compatible solution on your Nutanix cluster, using Prism Central. You can read the description on [this link](https://www.nutanix.com/content/dam/nutanix/resources/datasheets/ds-objects.pdf).
 
 **This guide will show you how to set up Nutanix Objects on your cluster.**
 
@@ -21,26 +23,21 @@ updated: 2023-03-02
 
 ## Requirements
 
-- A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- You must be connected to the cluster via Prism Central
-
-
-## Overview
-
-Nutanix Objects implements an **Object Storage** S3-compatible solution on your Nutanix cluster, using Prism Central. You can read the description on this [link](https://www.nutanix.com/content/dam/nutanix/resources/datasheets/ds-objects.pdf).
+- A Nutanix cluster in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You must be connected to the cluster via Prism Central.
 
 ## Instructions
 
-From Prism Central, click your `cluster`{.action} in the **Cluster Quick Access** Widget to connect to Prism Element.
+From Prism Central, click your cluster in the **Cluster Quick Access** widget to connect to Prism Element.
 
 ![01 Check ISCSI ADDRESS 01](images/01-check-iscsi-address01.png){.thumbnail}
 
-Click on the name of your `cluster`{.action} in the top left-hand corner next to the **X**.
+Click your cluster's name in the top left-hand corner next to the **X**.
 
 ![01 Check ISCSI ADDRESS 02](images/01-check-iscsi-address02.png){.thumbnail}
 
-Scroll down the window, enter an unused `private IP address`{.action} from your management network in the **ISCSI Data Services IP** section, then click `Save`{.action}.
+Scroll down the window, enter an unused private IP address from your management network in the **ISCSI Data Services IP** section, then click `Save`{.action}.
 
 ![01 Check ISCSI ADDRESS 03](images/01-check-iscsi-address03.png){.thumbnail}
 
@@ -48,7 +45,7 @@ Scroll down the window, enter an unused `private IP address`{.action} from your 
 
 You need to create two additional VLANs in your cluster configuration and have these VLANs access Prism Central and Prism Element to configure **Nutanix Objects**. These two VLANs must be able to distribute IP addresses. IPAM will be enabled on both VLANs.
 
-From Prism Central go to the main menu and click on `Subnets`{.action} in the category **Network & Security**.
+From Prism Central, go to the main menu and click on `Subnets`{.action} in the **Network & Security** category.
 
 ![02 Create Storage VLAN 01](images/02-create-storage-vlan01.png){.thumbnail}
 
@@ -56,14 +53,14 @@ Click `Create Subnet`{.action}.
 
 ![02 Create Storage VLAN 02](images/02-create-storage-vlan02.png){.thumbnail}
 
-Check the `IP Address Management`{.action} box and fill in this informations :
+Check the `IP Address Management`{.action} box and fill in this information :
 
-* **Name** : Type `object-storage`{.action}.
-* **Type** : Select `VLAN`{.action}.
-* **VLAN ID** : Type your VLAN number as `100`{.action}.
-* **Virtual Switch** : Keep `vs0`{.action}.
-* **Network IP Address / Prefix** : Write your subnet `192.168.100.0/24`{.action}.
-* **Gateway IP Address** : Enter the address of your gateway `192.168.100.254`{.action}.
+- **Name** : Type `object-storage`.
+- **Type** : Select `VLAN`{.action}.
+- **VLAN ID** : Type your VLAN number as `100`.
+- **Virtual Switch** : Keep `vs0`{.action}.
+- **Network IP Address / Prefix** : Write your subnet `192.168.100.0/24`.
+- **Gateway IP Address** : Enter the address of your gateway `192.168.100.254`.
 
 Then click `Add IP Pool`{.action}.
 
@@ -71,29 +68,29 @@ Then click `Add IP Pool`{.action}.
 
 Enter this information :
 
-* **Start Address** : Start address of your scope as `192.168.100.10`{.action}.
-* **End Address** : End address of your scope as `192.168.100.200`{.action}.
+- **Start Address** : Start address of your scope as `192.168.100.10`.
+- **End Address** : End address of your scope as `192.168.100.200`.
 
-Then click the `blue validation button`{.action} on the right.
+Then click the blue validation button on the right.
 
 ![02 Create Storage VLAN 04](images/02-create-storage-vlan04.png){.thumbnail}
 
-Scroll down and enter the OVHcloud DNS address `213.186.33.99`{.action} in **Domain Name Servers** and click `Create`{.action}.
+Scroll down and enter the OVHcloud DNS address `213.186.33.99` in **Domain Name Servers** and click `Create`{.action}.
 
 ![02 Create Storage VLAN 05](images/02-create-storage-vlan05.png){.thumbnail}
 
-Your first VLAN is created, we will create the second VLAN, click on `Create Subnet`{.action}.
+Your first VLAN is created. We will create the second VLAN, click on `Create Subnet`{.action}.
 
 ![03 Create Public VLAN 01](images/03-create-public-vlan01.png){.thumbnail}
 
 Check the `IP Address Management`{.action} box and fill in this information :
 
-* **Name** : Type `public-storage`{.action}.
-* **Type** : Select `VLAN`{.action}.
-* **VLAN ID** : Type your VLAN number as `101`{.action}.
-* **Virtual Switch** : Gardez `vs0`{.action}.
-* **Network IP Address / Prefix** : Write your subnet `192.168.101.0/24`{.action}.
-* **Gateway IP Address** : Enter your gateway address `192.168.101.254`{.action}.
+- **Name** : Type `public-storage`.
+- **Type** : Select `VLAN`{.action}.
+- **VLAN ID** : Type your VLAN number as `101`.
+- **Virtual Switch** : Keep `vs0`{.action}.
+- **Network IP Address / Prefix** : Write your subnet `192.168.101.0/24`.
+- **Gateway IP Address** : Enter your gateway address `192.168.101.254`.
 
 Then click `Add IP Pool`{.action}.
 
@@ -101,18 +98,18 @@ Then click `Add IP Pool`{.action}.
 
 Enter this information :
 
-* **Start Address** : Start address of your scope as `192.168.101.10`{.action}.
-* **End Address** : End address of your scope as `192.168.101.200`{.action}.
+- **Start Address** : Start address of your scope as `192.168.101.10`.
+- **End Address** : End address of your scope as `192.168.101.200`.
 
-Next, click the `blue validation button`{.action} on the right.
+Next, click the blue validation button on the right.
 
 ![03 Create Public VLAN 03](images/03-create-public-vlan03.png){.thumbnail}
 
-Scroll down and enter the OVHcloud DNS address `213.186.33.99`{.action} in **Domain Name Servers** and click `Create`{.action}.
+Scroll down and enter the OVHcloud DNS address `213.186.33.99` in **Domain Name Servers** and click `Create`{.action}.
 
 ![03 Create Public VLAN 04](images/03-create-public-vlan04.png){.thumbnail}
 
-Your two VLANs are created, make sure they can connect to Prism Element and Prism Central through your gateway. You can use this guide to replace the default gateway and use your VLANs. [OVHgateway replacement](https://docs.ovh.com/gb/en/nutanix/software-gateway-replacement/).
+Your two VLANs are created, make sure they can connect to Prism Element and Prism Central through your gateway. You can use this guide to replace the default gateway and use your VLANs: [OVHgateway replacement](https://docs.ovh.com/gb/en/nutanix/software-gateway-replacement/).
 
 ![03 Create Public VLAN 05](images/03-create-public-vlan05.png){.thumbnail}
 
@@ -144,23 +141,24 @@ Click `Create Object Store`{.action}.
 
 Fill in this information :
 
-* **Object Store Name** : the name of your object storage `nutanix-objects`{.action}.
-* **Domain** : The domain name that will be used to access your storage `mydomain.com`{.action}.
-* **Cluster** : The `Cluster`{.action} that must have Nutanix Objects enabled.
-* **Worker Nodes** : The number of nodes that your Object storage will use, take the number `1`{.action}.
+- **Object Store Name** : the name of your object storage, such as `nutanix-objects`.
+- **Domain** : The domain name that will be used to access your storage, such as `mydomain.com`.
+- **Cluster** : The cluster that must have Nutanix Objects enabled.
+- **Worker Nodes** : The number of nodes that your Object storage will use, select the number `1`.
 
 Then click `Next`{.action}.
 
 ![04 Activate Object 07](images/04-activate-objects07.png){.thumbnail}
 
-Select the VLAN `object-storage`{.action} in **Storage Network** and enter these two addresses `192.168.100.1,192.168.100.2`{.action} in **Object Store Storage Network static IPs (2 IPs required)**, these addresses must not be within the scope of the VLAN DHCP.
+Select the VLAN `object-storage`{.action} in **Storage Network** and enter these two addresses `192.168.100.1,192.168.100.2`{.action} in **Object Store Storage Network static IPs (2 IPs required)**. These addresses must not be within the scope of the VLAN DHCP.
 
 Then click `Next`{.action}.
 
 ![04 Activate Object 08](images/04-activate-objects08.png){.thumbnail}
 
-Select the `public-storage`{.action} VLAN in **Storage Network** and enter this range of four addresses `192.168.101.1-192.168.100.4`{.action} in **Public Network static IPs**, these addresses should not be within the scope of the VLAN DHCP.
-Ensuite cliquez sur `Save & Continue`{.action}.
+Select the `public-storage`{.action} VLAN in **Storage Network** and enter this range of four addresses `192.168.101.1-192.168.100.4`{.action} in **Public Network static IPs**. These addresses should not be within the scope of the VLAN DHCP.
+
+Next, click `Save & Continue`{.action}.
 
 ![04 Activate Object 09](images/04-activate-objects09.png){.thumbnail}
 
@@ -176,9 +174,9 @@ Wait twenty minutes for your Object Storage to be active and accessible through 
 
 ![04 Activate Object 12](images/04-activate-objects12.png){.thumbnail}
 
-### Creating an Access Keys to your storage.
+### Creating an Access Key to your storage
 
-To be able to use an Objects storage it is necessary to create associated **Access Keys**.
+To be able to use an Object storage, it is necessary to create associated **Access Keys**.
 
 Go to the `Access Keys`{.action} tab.
 
@@ -188,7 +186,7 @@ Click `+ Add People`{.action}.
 
 ![05 Create Access Keys 02](images/05-create-access-key02.png){.thumbnail}
 
-Check `Add people not in a directory service`{.action}, type `user@mydomain.com`{.action} in **Email Address and click `Next`{.action}.
+Check `Add people not in a directory service`{.action}, type `user@mydomain.com` in **Email Address** and click `Next`{.action}.
 
 ![05 Create Access Keys 03](images/05-create-access-key03.png){.thumbnail}
 
@@ -201,49 +199,57 @@ Click `Download Keys`{.action}.
 ![05 Create Access Keys 05](images/05-create-access-key05.png){.thumbnail}
 
 > [!warning]
->Your access credentials are only displayed once in your web browser. Please note down this information (Access Key and secret Key) before closing this windo
+>Your access credentials are only displayed once in your web browser. Please note down this information (Access Key and secret Key) before closing this window.
 >
 
 ![05 Create Access Keys 06](images/05-create-access-key06.png){.thumbnail}
 
-Your user is created with their login details. You can regenerate Keys access and create a new login.
+Your user is created with its login details. You can regenerate Access Keys and create a new login.
 
 ![05 Create Access Keys 07](images/05-create-access-key07.png){.thumbnail}
 
 ### Validation and functional testing
 
-To confirm that our Object storage is working properly, we will use the AWS awscli command-line tools and create a bucket. You can use this [guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-options.html). This tool is available on Windows, Linux and MacOS.
+To confirm that our Object storage is working properly, we will use the AWS awscli command-line tool and create a bucket. You can use [this guide](https://docs.ovh.com/gb/en/storage/object-storage/s3/getting-started-with-object-storage/) for more information.
 
-After installing awscli we will create two configuration files on a computer that has access to the public-storage VLAN and use the aws command to create a bucket.
+The awscli tool is available on Windows, Linux and macOS.
 
-Create a `.aws` subfolder {.action} in your %USERPROFILE% folder on Windows or $HOME on Linux and MacOS.
+Use the following command for help:
 
-Add the file `credentials`{.action} and fill it in with this data:
+```bash
+aws s3 help
+```
 
-```config
+After installing awscli, we will create two configuration files on a computer that has access to the public-storage VLAN and use the aws command to create a bucket.
+
+Create a `.aws` subfolder in your `%USERPROFILE%` folder on Windows, or `$HOME` on Linux and macOS.
+
+Add the `credentials` file and fill it in with this data:
+
+```bash
 [default]
 aws_access_key_id=your-access-key
 aws_secret_access_key=secret-access key
 ```
 
-Then add a second file named `config`{.action} with this information :
+Then add a second file named `config` with this information :
 
-```config
+```bash
 [default]
 region=region = us-east-1
 ```
 
 Then use this command to create a bucket.
 
-```config
+```bash
 aws --endpoint-url https://192.168.101.1 s3 mb s3://my-bucket --region=us-east-1 --no-verify-ssl
 ```
 
-The bucket is created with a warning message about the SSL certificate, in a production environment it is necessary to use an SSL certificate.
+The bucket is created with a warning message about the SSL certificate. In a production environment, it is necessary to use an SSL certificate.
 
 Now that the bucket is created we will use a browser to connect to the web interface provided by Nutanix in order to check the existence of our bucket.
 
-Using a web browser, connect to this URL `https://192.168.101.1/objectsbrowser`{.action} which corresponds to your access point **Nutanix Objects** and enter your `credentials`{.action} (access_key and secret_key). Then click on `Login`{.action}.
+Using a web browser, connect to this URL `https://192.168.101.1/objectsbrowser` which corresponds to your **Nutanix Objects** access point and enter your credentials (access_key and secret_key). Then click on `Login`{.action}.
 
 ![06 Connect to WEB interfaces 01](images/06-connect-to-web-interfaces01.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: Mise en place de Nutanix Objects
 slug: objects
-excerpt: 'Découvrez comment activer Nutanix Objects dans votre cluster' 
+excerpt: "Découvrez comment activer Nutanix Objects dans votre cluster"
 section: Utilisation avancée
 order: 07
 updated: 2023-03-02
@@ -32,7 +32,7 @@ Nous allons voir comment activer Nutanix Objects dans votre solution Nutanix by 
 
 ### Activation du service iSCSI dans Prism Element
 
-A partir de Prism Central, cliquez sur votre cluster dans le Widget **Cluster Quick Access** pour vous connecter à Prism Element.
+A partir de Prism Central, cliquez sur votre cluster dans le widget **Cluster Quick Access** pour vous connecter à Prism Element.
 
 ![01 Check ISCSI ADDRESS 01](images/01-check-iscsi-address01.png){.thumbnail}
 
@@ -150,7 +150,7 @@ Renseignez ces informations :
 
 - **Object Store Name** : le nom de votre stockage object, tel que `nutanix-objects`.
 - **Domain** : le nom de domaine qui sera utilisé pour accéder à votre stockage, tel que `mydomain.com`.
-- **Cluster** : le Cluster sur lequel Nutanix Objects doit être activé.
+- **Cluster** : le cluster sur lequel Nutanix Objects doit être activé.
 - **Worker Nodes** : le nombre de nœuds qu'utilisera votre stockage Object, choisissez le nombre `1`.
 
  Cliquez ensuite sur `Next`{.action}.
@@ -211,21 +211,29 @@ Cliquez sur `Download Keys`{.action}.
 
 ![05 Create Access Keys 06](images/05-create-access-key06.png){.thumbnail}
 
-Votre utilisateur est créé avec ses identifiants, il est possible de regénérer les Access Keys et de créer un nouvel identifiant.
+Votre utilisateur est créé avec ses identifiants. Il vous est possible de regénérer les Access Keys et de créer un nouvel identifiant.
 
 ![05 Create Access Keys 07](images/05-create-access-key07.png){.thumbnail}
 
 ### Validation et test de bon fonctionnement
 
-Pour valider le bon fonctionnement de notre stockage Object, nous allons utiliser l'outil en ligne de commande awscli d'AWS et créer un bucket. Vous pouvez vous aider de [ce guide](https://docs.aws.amazon.com/fr_fr/cli/latest/userguide/getting-started-install.html). Cet outil est disponible sous Windows, Linux et MacOS.
+Pour valider le bon fonctionnement de notre stockage Object, nous allons utiliser l'outil en ligne de commande awscli d'AWS et créer un bucket. Vous pouvez vous aider de [ce guide](https://docs.ovh.com/fr/storage/object-storage/s3/getting-started-with-object-storage/). 
+
+Cet outil est disponible sous Windows, Linux et macOS.
+
+Pour obtenir de l'aide sur les commandes, entrez la commande suivante:
+
+```bash
+aws s3 help
+```
 
 Après avoir installé awscli, nous allons créer deux fichiers de configuration sur un ordinateur qui a accès au VLAN public-storage et utiliser la commande aws pour créer un bucket.
 
-Créez un dossier `.aws`{.action} dans votre dossier `%USERPROFILE%` sous Windows ou `$HOME` sous Linux et macOS.
+Créez un dossier `.aws` dans votre dossier `%USERPROFILE%` sous Windows ou `$HOME` sous Linux et macOS.
 
 Ajoutez le fichier `credentials` et remplissez-le avec ces données :
 
-```config
+```bash
 [default]
 aws_access_key_id=votre-access-key
 aws_secret_access_key=votre-secret-accesss-key
@@ -233,14 +241,14 @@ aws_secret_access_key=votre-secret-accesss-key
 
 Ajoutez ensuite un deuxième fichier nommé `config` avec ces informations : 
 
-```config
+```bash
 [default]
 region=region = us-east-1
 ```
 
 Utilisez cette commande pour créer un bucket :
 
-```config
+```bash
 aws --endpoint-url https://192.168.101.1 s3 mb s3://my-bucket --region=us-east-1 --no-verify-ssl
 ```
 
