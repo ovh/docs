@@ -14,11 +14,11 @@ Ce tutoriel a pour objectif de vous permettre de créer votre propre site de ven
 
 ## Prérequis
 
-Vous venez de souscrire à une offre «&nbsp;Hébergement Web&nbsp;» comprenant un nom de domaine et vous permettant d'installer un CMS en un clic, vous pouvez alors suivre ce tutoriel pour mettre en ligne rapidement vos premiers contenus et exploiter votre site.
+Vous venez de souscrire à une offre «&nbsp;Hébergement Web&nbsp;» comprenant un nom de domaine et vous permettant d'installer un CMS en un clic. Vous n'avez pas choisi d'installer de module lors de votre commande, ce tutoriel vous explique les différents modes d'installation qui s'offrent à vous par défaut ou  avancé.
 
-Si vous ne disposez pas encore d'un hébergement, vous pouvez choisir une de notre offres Hébergement web parmi celles incluant la fonctionnalité «&nbsp;CMS en 1-clic&nbsp;». Au moment de l'installation, choisissez «&nbsp;Prestashop&nbsp;» parmi les solutions proposées.
+Si vous ne disposez pas encore d'un hébergement, vous pouvez choisir une de nos offres d'hébergement web parmi celles incluant la fonctionnalité «&nbsp;CMS en 1-clic&nbsp;». Au moment de l'installation, choisissez «&nbsp;Prestashop&nbsp;» parmi les solutions proposées.
 
-Enfin, dans le cas où vous auriez déjà souscrit à une offre mais pas installé WordPress, reportez-vous au guide [Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+Enfin, dans le cas où vous auriez déjà souscrit à une offre mais pas installé Prestashop, reportez-vous au guide [Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
 
 ## En pratique
 
@@ -26,7 +26,7 @@ Enfin, dans le cas où vous auriez déjà souscrit à une offre mais pas install
 
 Le présent document fait référence à la version 1.7 de Prestashop. Le CMS fonctionne sur les versions de PHP allant de la 7.1 à la 7.4. Il est recommandé d'utiliser cette dernière version pour un fonctionnement optimal. Vous trouverez plus de détails sur la page des [prérequis techniques](https://devdocs.prestashop-project.org/1.7/basics/installation/system-requirements/).
 
-Sur votre Manager OVH, rendez-vous sur sur l'inglet «&nbsp;Web Cloud&nbsp;», puis sélectionnez le nom de domaine sur lequel vous souhaitez installer votre solution Prestashop&nbsp;:
+Sur votre Espace client OVHcloud, rendez-vous sur sur l'inglet «&nbsp;Web Cloud&nbsp;», puis sélectionnez le nom de domaine sur lequel vous souhaitez installer votre solution Prestashop&nbsp;:
 
 ![Select your name domaine](images/prestashop_first_steps_1.png){.thumbnail}
 
