@@ -323,7 +323,7 @@ Jeśli chcesz odłączyć wolumen od instancji, najlepszym rozwiązaniem jest od
 
 #### Linux
 
-Otwórz [połączenie SSH z Twoją instancją](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
+Otwórz [połączenie SSH z Twoją instancją](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
 
 ```bash
 ~$ admin@server-1:~$ lsblk

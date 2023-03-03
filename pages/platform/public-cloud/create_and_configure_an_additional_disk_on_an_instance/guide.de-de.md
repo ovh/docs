@@ -324,7 +324,7 @@ Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist es am besten, das Vo
 
 #### Unter Linux
 
-Stellen Sie [eine SSH-Verbindung zu Ihrer](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) Instanz her und verwenden Sie den unten stehenden Befehl, um die angehängten Festplatten aufzulisten.
+Stellen Sie [eine SSH-Verbindung zu Ihrer](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) Instanz her und verwenden Sie den unten stehenden Befehl, um die angehängten Festplatten aufzulisten.
 
 ```bash
 ~$ admin@server-1.~$ lsblk
@@ -350,9 +350,9 @@ Löschen Sie die Peripherie-ID aus fstab, um den Zerlegungsprozess abzuschließe
 
 Registrieren und verlassen Sie den Editor.
 
-Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im linken Menü unter `Storage auf `{.action}Block Storage****.
+Gehen Sie in die Rubrik `Public Cloud`{.action} in Ihrem OVHcloud-Kundenbereich und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
 
-Klicken Sie auf den Button `..`{.action}. neben dem entsprechenden Volume und wählen Sie `Von der Instanz trennen aus`{.action}.
+Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Von der Instanz trennen aus`{.action}.
 
 ![detach disk](images/detachinstance.png){.thumbnail}
 
@@ -382,7 +382,7 @@ Klicken Sie anschließend auf `Ja`{.action}, um die Löschung des Buchstabens au
 
 Wenn Sie fertig sind, können Sie das Festplattenverwaltungsfenster schließen.
 
-Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Public Cloud`{.action} und klicken Sie im linken Menü unter `Storage auf `{.action} **Block Storage**.
+Gehen Sie in die Rubrik `Public Cloud`{.action} in Ihrem OVHcloud-Kundenbereich und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
 
 Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
 

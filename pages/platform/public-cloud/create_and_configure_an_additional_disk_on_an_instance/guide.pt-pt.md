@@ -325,7 +325,7 @@ Se deseja desassociar um volume da sua instância, a melhor prática é desmonta
 
 #### Em Linux
 
-Abra uma [ligação SSH à sua instância](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) e utilize o comando abaixo para listar os discos ligados.
+Abra uma [ligação SSH à sua instância](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#etapa-3-criacao-de-uma-instancia) e utilize o comando abaixo para listar os discos ligados.
 
 ```bash
 admin@server-1:~$ lsblk
