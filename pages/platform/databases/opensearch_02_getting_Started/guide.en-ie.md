@@ -205,7 +205,7 @@ From the *General information* tab from the Public Cloud Databases for OpenSearc
 > - _bulk
 > - _mget
 >
-> Without these permission you will not be able to add the sample data and view the corresponding dashboard.
+> Without these permissions you will not be able to add the sample data and view the corresponding dashboard.
 
 As proposed natively in OpenSearch, we can load sample data to the OpenSearch database:
 
