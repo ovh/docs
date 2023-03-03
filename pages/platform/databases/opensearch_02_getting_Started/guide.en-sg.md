@@ -4,10 +4,10 @@ excerpt: Find out how to set up and manage your Public Cloud Databases for OpenS
 slug: opensearch/getting-started
 section: OpenSearch - Guides
 order: 020
-updated: 2021-12-06
+updated: 2023-03-03
 ---
 
-**Last updated 06<sup>th</sup> December 2021**
+**Last updated March 3rd, 2023**
 
 ## Objectives
 
@@ -197,6 +197,15 @@ From the *General information* tab from the Public Cloud Databases for OpenSearc
 ![First connection to Kibana](images/kibana_first_page.png){.thumbnail}
 
 #### Load sample data
+
+> [!warning]
+> If you have enabled ACLs in a previous step and don't want to disable them, then make sure your user is granted read and write permissions to:
+>
+> - opensearch_dashboards_sample_data_*
+> - _bulk
+> - _mget
+>
+> Without these permission you will not be able to add the sample data and view the corresponding dashboard.
 
 As proposed natively in OpenSearch, we can load sample data to the OpenSearch database:
 
