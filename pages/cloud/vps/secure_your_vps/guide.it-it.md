@@ -161,7 +161,7 @@ Le distribuzioni GNU/Linux correnti sono fornite con un servizio di firewall chi
 iptables -L
 ```
 
-Per maggiori informazioni su iptables, consulta la nostra [guida dedicata](https://docs.ovh.com/it/vps/firewall-iptables/).
+Per maggiori informazioni su iptables, consulta la nostra [guida dedicata](https://docs.ovh.com/it/vps/vps-firewall-iptables/).
 
 Ti consigliamo di creare e adattare le regole del firewall in base alle tue necessità. Per maggiori informazioni sulle diverse operazioni, consulta la documentazione ufficiale della distribuzione utilizzata.
 

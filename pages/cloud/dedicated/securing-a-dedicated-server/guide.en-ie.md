@@ -39,7 +39,7 @@ When you order your dedicated server, you can choose a distribution or operating
 
 ### Updating your system
 
-Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your VPS.
+Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your server.
 
 This update will take place in two steps:
 
@@ -257,7 +257,7 @@ For more information on our backup storage solutions, please see our [backup sto
 
 ## Go further
 
-[Configuring the firewall on Windows](https://docs.ovh.com/ie/en/dedicated/vps-firewall-windows/)
+[Configuring the firewall on Windows](https://docs.ovh.com/ie/en/dedicated/firewall-windows/)
 
 [Network Firewall guide](https://docs.ovh.com/ie/en/dedicated/firewall-network/)
 

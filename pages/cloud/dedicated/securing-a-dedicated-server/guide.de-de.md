@@ -1,7 +1,7 @@
 ---
 title: Einen dedizierten Server absichern
 slug: dedizierten-server-sichern
-excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS
+excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres Dedicated Server
 section: "Erste Schritte"
 order: 2
 updated: 2023-02-24
@@ -44,7 +44,7 @@ Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berec
 ### Systemupdate
 
 Entwickler von Distributionen und Betriebssystemen veröffentlichen häufig Softwarepaket-Updates, sehr oft aus Sicherheitsgründen.<br>
-Regelmäßige Aktualisierung Ihrer Distribution oder Ihres Betriebssystems mittels Herunterladen und Installation von Updates ist somit ein wichtiger Punkt, um Ihren VPS zu sichern. 
+Regelmäßige Aktualisierung Ihrer Distribution oder Ihres Betriebssystems mittels Herunterladen und Installation von Updates ist somit ein wichtiger Punkt, um Ihren Server zu sichern. 
 
 Dieses Update wird in zwei Schritten durchgeführt.
 
@@ -88,7 +88,7 @@ Starten Sie den Dienst neu:
 systemctl restart sshd
 ```
 
-Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den VPS neu starten (`~$ sudo reboot`).
+Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den Server neu starten (`~$ sudo reboot`).
 
 Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine SSH-Verbindung mit Ihrem Server aufbauen, zum Beispiel:
 
@@ -128,7 +128,7 @@ Geben Sie das Passwort ein, wenn Sie dazu aufgefordert werden, und die aktive Ve
 
 ### Deaktivierung des Serverzugangs als Root
 
-Der Root-Benutzer wird standardmäßig auf GNU/Linux-Systemen eingerichtet. Root-Zugriff bedeutet, dass alle Berechtigungen für ein Betriebssystem vorliegen. Es wird nicht empfohlen und kann sogar gefährlich werden, Ihren VPS ausschließlich über den Root-Zugriff zugänglich zu machen, da dieser Account irreversible Operationen durchführen kann.
+Der Root-Benutzer wird standardmäßig auf GNU/Linux-Systemen eingerichtet. Root-Zugriff bedeutet, dass alle Berechtigungen für ein Betriebssystem vorliegen. Es wird nicht empfohlen und kann sogar gefährlich werden, Ihren Server ausschließlich über den Root-Zugriff zugänglich zu machen, da dieser Account irreversible Operationen durchführen kann.
 
 Wir empfehlen Ihnen, den direkten Benutzerzugang als Root über das SSH-Protokoll zu deaktivieren. Denken Sie daran, einen anderen Benutzer zu erstellen, bevor Sie die folgenden Schritte ausführen.
 

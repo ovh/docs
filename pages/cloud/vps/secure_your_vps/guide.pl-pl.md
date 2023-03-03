@@ -162,7 +162,7 @@ Dystrybucje GNU/Linux są dostarczane wraz z zaporą sieciową o nazwie iptables
 iptables -L
 ```
 
-Więcej informacji na temat iptables znajdziesz w naszym [przewodniku](https://docs.ovh.com/pl/vps/firewall-iptables/).
+Więcej informacji na temat iptables znajdziesz w naszym [przewodniku](https://docs.ovh.com/pl/vps/vps-firewall-iptables/).
 
 Zalecamy utworzenie reguł firewalla i dostosowanie ich do Twojego trybu użytkowania. Więcej informacji na temat różnych możliwych operacji znajdziesz w oficjalnej dokumentacji dotyczącej używanej dystrybucji.
 

@@ -64,7 +64,7 @@ Aquí puede activar las respectivas reglas "ICMP" y "Remote Desktop" (escritorio
 El servidor debe responder a las solicitudes que utilicen estos protocolos.
 
 > [!primary]
-> Para proteger su sistema Windows con reglas de firewall, consulte nuestra guía [Configurar el firewall de Windows](https://docs.ovh.com/us/es/vps/firewall-windows/).
+> Para proteger su sistema Windows con reglas de firewall, consulte nuestra guía [Configurar el firewall de Windows](https://docs.ovh.com/us/es/vps/vps-firewall-windows/).
 >
 
 ### Activación de los logs de arranque (boot logs) Windows (opcional)

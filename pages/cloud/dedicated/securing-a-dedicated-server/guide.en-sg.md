@@ -39,7 +39,7 @@ When you order your dedicated server, you can choose a distribution or operating
 
 ### Updating your system
 
-Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your VPS.
+Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your server.
 
 This update will take place in two steps:
 
@@ -253,11 +253,11 @@ Securing your data is a key element, which is why OVHcloud offers you 500GB of f
 
 You will need a third-party backup solution to replicate your data and transfer it to your backup storage.
 
-For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/sg/en/dedicated/services-backup-storage/).
+For more information on our backup storage solutions, please see our [backup storage guide](https://docs.ovh.com/sg/en/dedicated/using-backup-storage/).
 
 ## Go further
 
-[Configuring the firewall on Windows](https://docs.ovh.com/sg/en/dedicated/vps-firewall-windows/)
+[Configuring the firewall on Windows](https://docs.ovh.com/sg/en/dedicated/firewall-windows/)
 
 [Network Firewall guide](https://docs.ovh.com/sg/en/dedicated/firewall-network/)
 

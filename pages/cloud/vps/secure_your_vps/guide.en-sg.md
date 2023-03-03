@@ -156,7 +156,7 @@ Common GNU/Linux distributions come with a firewall service named iptables. By d
 iptables -L
 ```
 
-You can learn more about iptables in our [Firewall guide](https://docs.ovh.com/sg/en/vps/firewall-iptables/).
+You can learn more about iptables in our [Firewall guide](https://docs.ovh.com/sg/en/vps/vps-firewall-iptables/).
 
 It is recommended that you create and adjust firewall rules according to your needs. For more detailed information on the variety of manipulations that are possible, please refer to the relevant section in the official documentation of the distribution used.
 

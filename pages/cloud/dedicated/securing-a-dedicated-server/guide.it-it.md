@@ -269,7 +269,7 @@ Per ulteriori informazioni sulle nostre soluzioni di backup, consulta la guida [
 
 ## Per saperne di più
 
-[Configura il firewall su Windows](https://docs.ovh.com/it/dedicated/vps-firewall-windows/)
+[Configura il firewall su Windows](https://docs.ovh.com/it/dedicated/firewall-windows/)
 
 [Network Firewall](https://docs.ovh.com/it/dedicated/firewall-network/)
 

@@ -268,7 +268,7 @@ Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez 
 
 ## Aller plus loin
 
-[Configurer le pare-feu sous Windows](https://docs.ovh.com/ca/fr/dedicated/vps-firewall-windows/)
+[Configurer le pare-feu sous Windows](https://docs.ovh.com/ca/fr/dedicated/firewall-windows/)
 
 [Network Firewall](https://docs.ovh.com/ca/fr/dedicated/firewall-network/)
 

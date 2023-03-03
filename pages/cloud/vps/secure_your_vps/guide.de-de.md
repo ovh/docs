@@ -158,7 +158,7 @@ GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der al
 iptables -L
 ```
 
-Weitere Informationen zu *iptables* finden Sie in unserer [Anleitung](https://docs.ovh.com/de/vps/firewall-iptables/).
+Weitere Informationen zu *iptables* finden Sie in unserer [Anleitung](https://docs.ovh.com/de/vps/vps-firewall-iptables/).
 
 Wir empfehlen Ihnen, Regeln für diese Firewall zu erstellen und an Ihre Nutzung anzupassen. Weitere Informationen zu den möglichen Einstellungen finden Sie in der offiziellen Dokumentation der verwendeten Distribution.
 

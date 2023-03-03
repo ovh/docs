@@ -159,7 +159,7 @@ Les distributions GNU/Linux courantes sont fournies avec un service de pare-feu 
 iptables -L
 ```
 
-Pour plus d'informations sur iptables, consultez notre [guide dédié](https://docs.ovh.com/fr/vps/firewall-iptables/).
+Pour plus d'informations sur iptables, consultez notre [guide dédié](https://docs.ovh.com/fr/vps/vps-firewall-iptables/).
 
 Il est alors recommandé de créer et d’ajuster à votre utilisation des règles de pare-feu. Pour plus d'informations sur les diverses manipulations possibles, reportez-vous à la documentation officielle de la distribution utilisée.
 

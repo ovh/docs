@@ -58,7 +58,7 @@ Here you can enable the respective `ICMP` and `Remote Desktop` rules (right-clic
 Your server should now be responding to requests using these protocols.
 
 > [!primary]
-> To secure your Windows system with firewall rules, refer to our guide "[Configuring the firewall on Windows](https://docs.ovh.com/asia/en/vps/firewall-windows/)".
+> To secure your Windows system with firewall rules, refer to our guide "[Configuring the firewall on Windows](https://docs.ovh.com/asia/en/vps/vps-firewall-windows/)".
 >
 
 ### Activating Windows boot logs (optional)

@@ -22,7 +22,6 @@ When you order your dedicated server, you can choose a distribution or operating
 > This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
 >
 
-
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
@@ -39,7 +38,7 @@ When you order your dedicated server, you can choose a distribution or operating
 
 ### Updating your system
 
-Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your VPS.
+Developers of distributions and operating systems offer frequent software package updates, very often for security reasons. Ensuring that your distribution or operating system is updated is a key point for securing your server.
 
 This update will take place in two steps:
 
@@ -257,7 +256,7 @@ For more information on our backup storage solutions, please see our [backup sto
 
 ## Go further
 
-[Configuring the firewall on Windows](https://docs.ovh.com/asia/en/dedicated/vps-firewall-windows/)
+[Configuring the firewall on Windows](https://docs.ovh.com/asia/en/dedicated/firewall-windows/)
 
 [Network Firewall guide](https://docs.ovh.com/asia/en/dedicated/firewall-network/)
 

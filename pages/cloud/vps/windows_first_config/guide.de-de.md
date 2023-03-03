@@ -62,7 +62,7 @@ Hier können Sie jeweils die Eingangsregeln für `ICMP` und `Remote Desktop` akt
 Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
 
 > [!primary]
-> Um Ihr Windows-System mithilfe von Firewall-Regeln abzusichern, verwenden Sie unsere Anleitung "[Firewall auf einem Windows VPS konfigurieren](https://docs.ovh.com/gb/en/vps/vps-firewall-windows/)".
+> Um Ihr Windows-System mithilfe von Firewall-Regeln abzusichern, verwenden Sie unsere Anleitung "[Firewall auf einem Windows VPS konfigurieren](https://docs.ovh.com/de/vps/vps-firewall-windows/)".
 >
 
 ### Windows Bootlogs aktivieren (optional)
@@ -81,7 +81,7 @@ Aktivieren Sie im neuen Fenster die Option `Boot log`. Klicken Sie auf `OK`{.act
 
 Bein nächsten Hochfahren des Servers werden die Logs in eine TXT-Datei geschrieben. Der Dateipfad lautet ```C:\Windows\ntbtlog.txt```.
 
-Um die in der Datei gespeicherten Protokolle im Rescue-Modus einzusehen, folgen Sie der [Anleitung zum Rescue-Modus für VPS](https://docs.ovh.com/gb/en/vps/rescue/). 
+Um die in der Datei gespeicherten Protokolle im Rescue-Modus einzusehen, folgen Sie der [Anleitung zum Rescue-Modus für VPS](https://docs.ovh.com/de/vps/rescue/). 
 
 ## Weiterführende Informationen
 

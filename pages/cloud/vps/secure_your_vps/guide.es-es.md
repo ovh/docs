@@ -162,7 +162,7 @@ Las distribuciones GNU/Linux habituales se entregan con un servicio de cortafueg
 iptables -L
 ```
 
-Para más información sobre iptables, consulte nuestra [guía dedicada](https://docs.ovh.com/es/vps/firewall-iptables/).
+Para más información sobre iptables, consulte nuestra [guía dedicada](https://docs.ovh.com/es/vps/vps-firewall-iptables/).
 
 Le recomendamos que cree y adapte las reglas de firewall en función de su uso. Para más información sobre las diversas operaciones posibles, consulte la documentación oficial de la distribución utilizada.
 

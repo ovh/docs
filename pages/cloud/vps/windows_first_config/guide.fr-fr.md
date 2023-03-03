@@ -60,7 +60,7 @@ Vous pouvez activer ici les règles « ICMP » et « Remote Desktop » (bureau �
 Votre serveur devrait maintenant répondre aux demandes utilisant ces protocoles.
 
 > [!primary]
-> Pour sécuriser votre système Windows avec des règles de pare-feu, consultez notre guide « [Configurer le pare-feu sous Windows](https://docs.ovh.com/fr/vps/firewall-windows/) ».
+> Pour sécuriser votre système Windows avec des règles de pare-feu, consultez notre guide « [Configurer le pare-feu sous Windows](https://docs.ovh.com/fr/vps/vps-firewall-windows/) ».
 >
 
 ### Activation des logs de démarrage (boot logs) Windows (facultatif)

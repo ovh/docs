@@ -11,7 +11,7 @@ updated: 2023-02-24
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 2023-02-24**
+**Ostatnia aktualizacja z dnia 24-02-2023**
 
 ## Wprowadzenie
 
@@ -272,7 +272,7 @@ Więcej informacji o naszych rozwiązaniach do przechowywania kopii zapasowych z
 
 ## Sprawdź również
 
-[Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/vps-firewall-windows/)
+[Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/firewall-windows/)
 
 [Network Firewall](https://docs.ovh.com/pl/dedicated/network-firewall/)
 
