@@ -40,9 +40,9 @@ We have released SDKs for several languages, to help you use the API:
 - C#: [https://github.com/ovh/csharp-ovh](https://github.com/ovh/csharp-ovh)
 - PHP: [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh)
 - Perl: [https://github.com/ovh/perl-ovh](https://github.com/ovh/perl-ovh)
-- Swift*: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
+- Swift\*: [https://github.com/ovh/swift-ovh](https://github.com/ovh/swift-ovh)
 
-* Archived since 2019
+\* Archived since 2019
 
 <!-- prettier-ignore -->
 > [!tabs]
