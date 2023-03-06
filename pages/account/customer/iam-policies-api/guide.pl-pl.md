@@ -42,7 +42,7 @@ For instance, we can create a policy to give to a user called John, for a VPS, a
 To set up a policy, you will require:
 
 - An [OVHcloud account](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/).
-- To know [how to manage account users](https://docs.ovh.com/pl/customer/managing-users/).
+- To know [how to manage account users](hhttps://docs.ovh.com/pl/customer/zarzadzanie_uzytkownikami/).
 - Some OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
 
 ## Instructions
