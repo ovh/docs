@@ -4,6 +4,7 @@ slug: ausgehender-transfer-einer-generischen-oder-geografischen-domain
 excerpt: Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren
 section: Transfer
 order: 04
+updated: 2022-12-09
 ---
 
 > [!primary]

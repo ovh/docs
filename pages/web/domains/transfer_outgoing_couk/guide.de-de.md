@@ -4,6 +4,7 @@ slug: transfer-ausgehend-einer-domainnamen-couk
 excerpt: "Erfahren Sie hier, wie Sie Domainnamen mit UK-Ländercode zu einem anderen Provider transferieren"
 section: Transfer
 order: 05
+updated: 2022-10-19
 ---
 
 > [!primary]

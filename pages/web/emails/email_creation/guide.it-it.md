@@ -5,6 +5,7 @@ excerpt: 'Come aggiungere una casella di posta elettronica sulla soluzione MX Pl
 section: 'Per iniziare'
 order: 02
 legacy_guide_number: g1343
+updated: 2022-10-11
 ---
 
 > [!primary]

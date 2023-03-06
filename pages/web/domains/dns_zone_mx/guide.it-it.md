@@ -5,6 +5,7 @@ slug: aggiungere-record-mx-configurazione-dominio
 legacy_guide_number: g2012
 section: 'DNS e zona DNS'
 order: 04
+updated: 2018-05-30
 ---
 
 **Ultimo aggiornamento: 21/09/2022**

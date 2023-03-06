@@ -4,6 +4,7 @@ slug: transferencia_saliente_de_un_dominio_generico_o_geografico
 excerpt: Cómo transferir un dominio de OVHcloud al agente registrador que elija
 section: 'Operaciones en los dominios'
 order: 03
+updated: 2022-12-09
 ---
 
 > [!primary]

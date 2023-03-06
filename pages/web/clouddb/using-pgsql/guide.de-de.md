@@ -4,17 +4,19 @@ slug: erste-schritte-mit-postgresql
 excerpt: Verwendung Ihrer Datenbanken
 section: Erste Schritte
 order: 03
+updated: 2023-02-15
 ---
 
-Sie möchten mit PostgreSQL arbeiten? Dann lesen Sie hier, wie Sie Ihre Datenbanken ganz einfach erstellen und verwalten.
+**Letzte Aktualisierung am 15.02.2023**
 
+Sie möchten mit PostgreSQL arbeiten? Dann lesen Sie hier, wie Sie Ihre Datenbanken ganz einfach erstellen und verwalten.
 
 ## Allgemeine Informationen
 
 ### Voraussetzungen
 
-- Benötigen Sie eine CloudDB Instanz
-- Lesen Sie bitte zunächst die [Anleitung zu CloudDB](../erste-schritte-mit-clouddb/)
+- Benötigen Sie eine Web Cloud Databases Instanz
+- Lesen Sie bitte zunächst die [Anleitung zu Web Cloud Databases](../erste-schritte-mit-clouddb/)
 
 
 ### Was ist eine PostgreSQL Datenbank?
@@ -39,7 +41,7 @@ Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie:
 
 Diese Informationen sind über Ihr [Kundencenter](https://www.ovh.com/manager/web/){.external} einsehbar.
 
-Eine Anleitung finden Sie unter: [Erste Schritte mit CloudDB](../starting_with_clouddb/guide.de-de.md){.ref}
+Eine Anleitung finden Sie unter: [Erste Schritte mit Web Cloud Databases](../starting_with_clouddb/guide.de-de.md){.ref}
 
 
 ### Per Kommandozeile verbinden

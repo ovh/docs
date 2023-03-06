@@ -4,6 +4,7 @@ slug: hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla
 excerpt: 'Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu'
 section: 'FTP i SSH'
 order: 06
+updated: 2023-01-12
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: guide-configuring-mail-on-macos
 excerpt: 'Find out how to configure an email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'
 section: 'Configure on computer'
 order: 03
+updated: 2022-06-13
 ---
 
 **Last updated 13th June 2022**

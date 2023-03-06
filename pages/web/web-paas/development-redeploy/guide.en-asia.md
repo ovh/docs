@@ -3,6 +3,7 @@ title: Re-deploy Operations
 slug: development-redeploy
 section: Development
 order: 5
+updated: 2021-03-30
 ---
 
 ## Objective 

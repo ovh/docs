@@ -5,10 +5,10 @@ slug: managing_tokens
 legacy_guide_number: g1872
 section: OpenStack
 order: 6
-updated: 2020-04-09
+updated: 2023-03-02
 ---
 
-**Last updated 9th April 2020**
+**Last updated 2nd March 2023**
 
 ## Objective
 
@@ -150,7 +150,7 @@ It is the endpoint address of the Object Storage service that lets you to retrie
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 This token is the authentication element to use for the next request

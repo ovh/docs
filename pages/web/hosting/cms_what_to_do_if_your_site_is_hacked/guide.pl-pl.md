@@ -3,7 +3,8 @@ title: "Przykłady zastosowania - Porady po włamaniu się na stronę WWW"
 excerpt: "Dowiedz się, jak naprawić stronę WWW"
 slug: wlamanie_na_strone_z_modulem_wordpress_porady_i_przyklady_zastosowania
 section: "Tutoriale" 
-order: 01
+order: 010
+updated: 2022-11-15
 ---
 
 **Ostatnia aktualizacja z dnia 15/11/2022**

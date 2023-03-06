@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihre Exchange-Adresse mit OWA Webmail verwa
 slug: exchange_2016_verwendung_der_outlook_web_app
 section: 'Outlook Web App (OWA)'
 order: 01
+updated: 2021-06-25
 ---
 
 **Letzte Aktualisierung am 25.06.2021**

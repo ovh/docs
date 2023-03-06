@@ -4,6 +4,7 @@ slug: utilisation-owa
 excerpt: 'Découvrez comment utiliser votre adresse e-mail depuis le webmail OWA'
 section: 'Premiers pas'
 order: 04
+updated: 2020-02-25
 ---
 
 **Dernière mise à jour le 30/08/2021**

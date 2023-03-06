@@ -4,6 +4,7 @@ slug: os_primeiros_passos_com_um_alojamento_web
 excerpt: Saiba como usar e gerir um alojamento web (primeira utilização)
 section: Primeiros passos
 order: 02
+updated: 2022-11-11
 ---
 
 **Última atualização: 14/11/2022**

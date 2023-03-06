@@ -4,6 +4,7 @@ slug: office365-proplus-escritório-a-distância
 excerpt: Saiba como instalar e utilizar Microsoft 365 apps num ambiente de trabalho remoto (RDS) ou num computador partilhado
 section: Office
 order: 04
+updated: 2021-09-06
 ---
 
 > [!primary]

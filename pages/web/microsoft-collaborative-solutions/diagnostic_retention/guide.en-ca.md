@@ -4,6 +4,7 @@ slug: email-retention
 excerpt: Find out how to restore deleted items from your email account via webmail (OWA)
 section: Exchange Diagnostics
 order: 02
+updated: 2022-02-08
 ---
 
 **Last updated 8th February 2022**

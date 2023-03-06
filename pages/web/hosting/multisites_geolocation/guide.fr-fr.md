@@ -4,6 +4,7 @@ slug: geolocaliser-site
 excerpt: "Découvrez comment géolocaliser votre site web à l'aide de nos adresses IP géolocalisées"
 section: Optimiser son site
 order: 05
+updated: 2022-12-22
 ---
 
 **Dernière mise à jour le 14/12/2022** 

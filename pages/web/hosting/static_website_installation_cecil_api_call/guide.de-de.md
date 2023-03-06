@@ -3,7 +3,8 @@ title: "Tutorial - Dynamischen Inhalt auf einer statischen Webseite hinzufügen,
 slug: static-site-generator-cecil-use-api
 excerpt: "Erfahren Sie hier, wie Sie externe APIs von Ihrer statischen Webseite aus aufrufen"
 section: Tutorials
-order: 5
+order: 031
+updated: 2023-01-16
 ---
 
 > [!primary]

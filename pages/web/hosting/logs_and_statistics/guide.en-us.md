@@ -4,6 +4,7 @@ excerpt: Find out how to review statistics and logs of your websites
 slug: shared_view_my_websites_logs_and_statistics
 section: Optimise your website
 order: 04
+updated: 2021-01-05
 ---
 
 **Last updated 5th January 2021**

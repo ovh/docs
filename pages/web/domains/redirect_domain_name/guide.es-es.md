@@ -4,6 +4,7 @@ slug: redireccion-dominio
 excerpt: "Distintos tipos de redirecciones y cómo crear una redirección para un dominio gestionado por OVHcloud"
 section: General
 order: 01
+updated: 2022-10-06
 ---
 
 **Última actualización: 06/10/2022**

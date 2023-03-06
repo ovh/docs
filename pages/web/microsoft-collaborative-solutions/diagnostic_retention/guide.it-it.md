@@ -4,6 +4,7 @@ slug: email-retention
 excerpt: Come ripristinare gli elementi eliminati dal tuo account email tramite la Webmail (OWA)
 section: 'Diagnostica Exchange'
 order: 02
+updated: 2022-02-08
 ---
 
 > [!primary]

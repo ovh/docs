@@ -3,6 +3,7 @@ title: 'Déléguer des droits sur un compte e-mail'
 slug: emailpro-delegation
 section: 'Premiers pas'
 order: 5
+updated: 2020-10-24
 ---
 
 **Dernière mise à jour le 24/10/2020**

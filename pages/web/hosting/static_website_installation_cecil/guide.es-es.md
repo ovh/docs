@@ -3,7 +3,8 @@ title: "Tutorial - Instalación y configuración de Cecil, un generador de sitio
 slug: install-configure-cecil
 excerpt: "Descubra cómo Cecil le permite crear su sitio estático con un motor de plantillas moderno (Jamstack)"
 section: 'Tutoriales'
-order: 04
+order: 030
+updated: 2023-01-17
 ---
 
 **Última actualización: 19/01/2023**

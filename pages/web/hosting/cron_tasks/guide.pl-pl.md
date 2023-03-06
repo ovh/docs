@@ -4,6 +4,7 @@ excerpt: Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych
 slug: hosting_www_automatyczne_zadania_cron
 section: 'CRON -  automatyzacja zadań'
 order: 01
+updated: 2022-12-01
 ---
 
 > [!primary]

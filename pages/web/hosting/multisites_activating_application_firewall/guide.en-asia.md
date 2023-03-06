@@ -4,6 +4,7 @@ excerpt: 'Find out how to activate the application firewall on a Web Hosting pla
 slug: web_hosting_activating_an_application_firewall
 section: 'Web Hosting configuration'
 order: 04
+updated: 2021-04-26
 ---
 
 **Last updated 26th April 2021**

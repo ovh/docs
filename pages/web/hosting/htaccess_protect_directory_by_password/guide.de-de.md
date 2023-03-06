@@ -4,6 +4,7 @@ slug: hosting-htaccess-authentifizierung
 excerpt: Erfahren Sie hier, wie Sie den Zugang zur Verwaltung Ihrer Website mit einer .htaccess Datei schützen.
 section: Weiterleitung und Authentifizierung
 order: 02
+updated: 2021-09-20
 ---
 
 > [!primary]

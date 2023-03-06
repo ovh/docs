@@ -4,6 +4,7 @@ slug: transferer-mon-domaine-generique
 excerpt: "Apprenez comment réaliser le transfert d'un nom de domaine vers OVHcloud"
 section: Transfert
 order: 01
+updated: 2022-11-18
 ---
 
 **Dernière mise à jour le 18/11/2022**

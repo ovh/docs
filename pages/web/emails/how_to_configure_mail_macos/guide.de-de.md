@@ -3,6 +3,7 @@ title: 'Konfiguration Ihrer E-Mail-Adresse auf macOS Mail'
 slug: anleitung-mail-konfiguration-auf-macos
 section: 'E-Mail Clients'
 order: 6
+updated: 2022-06-13
 ---
 
 > [!primary]

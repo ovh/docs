@@ -4,9 +4,10 @@ slug: migrar-site-para-ovh
 excerpt: "Saiba como migrar o seu website, e-mails e o seu domínio para a OVHcloud sem interromper os serviços"
 section: Primeiros passos
 order: 08
+updated: 2022-11-24
 ---
 
-**Última atualização: 24/11/2022**
+**Última atualização: 15/02/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -119,7 +120,7 @@ Para o backup da sua base de dados, [crie uma nova base de dados](https://docs.o
 
 > [!primary]
 >
-> A OVHcloud oferece servidores de base de dados CloudDB. Se pretender utilizar esta oferta com o seu website, consulte toda a nossa documentação sobre este produto na [nossa página dedicada](https://docs.ovh.com/pt/clouddb/).
+> A OVHcloud oferece servidores de base de dados Web Cloud Databases. Se pretender utilizar esta oferta com o seu website, consulte toda a nossa documentação sobre este produto na [nossa página dedicada](https://docs.ovh.com/pt/clouddb/).
 >
 
 De seguida, associe a sua base de dados OVHcloud ao ficheiro de configuração do seu site presente no espaço de armazenamento FTP do seu alojamento OVHcloud.

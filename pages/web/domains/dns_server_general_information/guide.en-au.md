@@ -4,6 +4,7 @@ slug: web_hosting_general_information_about_dns_servers
 excerpt: 'Find out how to modify DNS servers via the OVHcloud Control Panel'
 section: 'DNS and DNS Zone'
 order: 01
+updated: 2021-02-18
 ---
 
 **Last updated 18th February 2021**

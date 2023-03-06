@@ -4,6 +4,7 @@ slug: configurazione-outlook-2016
 excerpt: 'Scopri come configurare un indirizzo email MX Plan su Outlook per Windows'
 section: Configurazione su computer
 order: 01
+updated: 2021-06-05
 ---
 
  

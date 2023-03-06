@@ -2,13 +2,14 @@
 title: 'Polityka wycofania z eksploatacji zarządzanych baz danych'
 slug: managed-db-life-cycle-policy
 section: 'Zasoby techniczne'
+updated: 2023-02-15
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 29/06/2022**
+**Ostatnia aktualizacja z dnia 15/02/2023**
 
 ## Wprowadzenie
 
@@ -21,7 +22,7 @@ Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami da
 Posiadanie co najmniej jednej z 3 poniższych ofert:
 
 - Jedna z baz danych zawartych w ofercie [Hosting WWW](https://www.ovhcloud.com/pl/web-hosting/).
-- Jedna [instancja CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze [Hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Jedna [instancja Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze [Hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
 - Pakiet bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 ## W praktyce
@@ -30,7 +31,7 @@ Posiadanie co najmniej jednej z 3 poniższych ofert:
 
 Produkty objęte tą polityką wycofania z eksploatacji to:
 
-- Usługi CloudDB Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Usługi Web Cloud Databases Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 - Usługi SharedSQL Web Hosting, bazy danych MySQL dostępne za pośrednictwem sieci Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 

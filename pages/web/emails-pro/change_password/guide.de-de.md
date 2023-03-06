@@ -6,6 +6,7 @@ section: Erste Schritte
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/de/emails/passwort-e-mail-adresse-aendern/'
+updated: 2023-01-03
 ---
 
 > [!primary]

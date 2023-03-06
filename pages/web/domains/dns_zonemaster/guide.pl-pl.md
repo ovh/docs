@@ -3,6 +3,7 @@ title: 'Tutorial - Korzystanie z opcji Zonemaster'
 slug: ovhcloud-domain-zonemaster-tutorial
 section: DNS i strefa DNS
 order: 08
+updated: 2022-09-12
 ---
 
 > [!primary]

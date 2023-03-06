@@ -5,6 +5,7 @@ slug: exchange-configuracion-de-thunderbird-mac
 excerpt: 'Cómo configurar una cuenta Exchange en Thunderbird para macOS'
 section: 'Configuración en el ordenador'
 order: 05
+updated: 2021-08-26
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ slug: konfiguracja-gmail
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w interfejsie online programu pocztowego Gmail'
 section: 'Konfiguracja programu pocztowego'
 order: 6
+updated: 2020-03-18
 ---
 
 **Ostatnia aktualizacja dnia 2020-04-09**

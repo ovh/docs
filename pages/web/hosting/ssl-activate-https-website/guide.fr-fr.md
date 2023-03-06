@@ -4,6 +4,7 @@ slug: passer-site-internet-https-ssl
 excerpt: "Découvrez comment passer votre site internet en HTTPS grâce au SSL"
 section: SSL
 order: 02
+updated: 2022-10-04
 ---
 
 **Dernière mise à jour le 04/10/2022**

@@ -4,6 +4,7 @@ slug: zamowienie_grupy_licencji_office_365_ovh
 excerpt: Dowiedz się, jak zamówić licencję Microsoft 365 i zarządzać nią w Panelu klienta OVHcloud.
 section: Office
 order: 02
+updated: 2021-09-09
 ---
 
 > [!primary]

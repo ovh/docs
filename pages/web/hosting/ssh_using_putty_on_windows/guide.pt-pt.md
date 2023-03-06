@@ -4,6 +4,7 @@ excerpt: 'Partilhado: Utilização do Putty em Windows'
 slug: partilhado_utilizacao_do_putty_em_windows
 section: FTP e SSH
 order: 08
+updated: 2022-10-05
 ---
 
 

@@ -4,6 +4,7 @@ slug: emailpro-billing
 excerpt: 'Find out how to manage the billing for your Email Pro service'
 section: 'Getting started'
 order: 7
+updated: 2022-02-23
 ---
 
 **Last updated 23rd February 2022**

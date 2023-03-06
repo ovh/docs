@@ -2,6 +2,7 @@
 title: Swoole
 slug: swoole
 section: Php
+updated: 2022-06-02
 ---
 
 **Last updated 2nd June 2022**

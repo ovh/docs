@@ -4,9 +4,10 @@ slug: database-overquota
 excerpt: "Descubra como agir quando a base de dados está sobrecarregada"
 section: 'Bases de dados'
 order: 06
+updated: 2023-02-16
 ---
 
-**Última atualização: 23/01/2023**
+**Última atualização: 16/02/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -124,15 +125,15 @@ Depois de determinar se o conteúdo das suas tabelas é necessário para o funci
 
 Deverá migrar a sua base de dados para uma base de dados mais volumosa.
 
-Consulte a nossa oferta de bases de dados [Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/) para escolher o seu novo serviço de base de dados. 
+Consulte a nossa oferta de bases de dados [Web Cloud Databasess](https://www.ovh.pt/cloud/cloud-databases/) para escolher o seu novo serviço de base de dados. 
 
 Recomendamos esta oferta para bases de dados volumosas.
 
 De seguida, siga os nossos guias para mover o conteúdo da sua antiga base de dados para a nova:
 
 - [Exportar a sua base de dados existente](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
-- [Primeiros passos com a oferta Cloud Databases](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/)
-- [Importar a sua antiga base de dados para o serviço Cloud Databases](https://docs.ovh.com/pt/clouddb/restaurar-importar-base-de-dados/)
+- [Primeiros passos com a oferta Web Cloud Databasess](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/)
+- [Importar a sua antiga base de dados para o serviço Web Cloud Databasess](https://docs.ovh.com/pt/clouddb/restaurar-importar-base-de-dados/)
 
 #### Caso n.º 2 - Não é necessária uma parte ou a totalidade do conteúdo da tabela volumosa para o funcionamento do seu site
 

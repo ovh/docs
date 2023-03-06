@@ -4,6 +4,7 @@ slug: exchange_20132016_automatyczna_konfiguracja_z_poziomu_ios_iphone_-_ipad
 excerpt: 'Dowiedz się, jak skonfigurować konto Exchange na urządzeniu iPhone lub iPad przy użyciu aplikacji Mail'
 section: 'Konfiguracja na smartfonie/tablecie'
 order: 03
+updated: 2021-05-21
 ---
 
 
@@ -48,9 +49,9 @@ Na ekranie Twojego urządzenia wybierz `Ustawienia`{.action} (ikona koła zębat
 
 - **Dla systemu iOS 7, 8, 9 i 10**: kliknij `Mail, Kontakty, Kalendarz`{.action}, a następnie `Dodaj konto`{.action}. Wybierz `Inne`{.action}, następnie `Dodaj konto Mail`{.action}. Następnie przejdź do etapu 5 poniższej tabeli.
 
-- **Dla systemu iOS 1**: kliknij `Konta i hasła`{.action}, a następnie `Dodaj konto`{.action}. Wybierz`Inne`{.action}, następnie `Dodaj konto Mail`{.action}. Następnie przejdź do etapu 5 poniższej tabeli.
+- **Dla iOS 11, 12 i 13**: kliknij `Konta i hasła`{.action}, a następnie `Dodaj konto`{.action}. Wybierz`Inne`{.action}, następnie `Dodaj konto Mail`{.action}. Następnie przejdź do etapu 5 poniższej tabeli.
 
-- **Dla obecnych** wersji: postępuj zgodnie z instrukcjami z poniższej tabeli.
+- **Dla wersji iOS 14 i nowszych** wersji: postępuj zgodnie z instrukcjami z poniższej tabeli.
 
 | | |
 |---|---|

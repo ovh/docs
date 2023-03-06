@@ -5,8 +5,10 @@ excerpt: 'Find out how to configure the managed components of your Kubernetes: C
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/apiserver-flags-configuration/'
-updated: 2022-11-25
+updated: 2023-02-14
 ---
+
+**Last updated 14th February 2023**
 
 <style>
  pre {
@@ -29,8 +31,6 @@ updated: 2022-11-25
      font-size: 0.75em;
  }
 </style>
-
-**Last updated 25th November 2022**
 
 ## Objective
 

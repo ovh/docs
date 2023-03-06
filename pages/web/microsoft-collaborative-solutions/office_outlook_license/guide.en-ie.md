@@ -4,6 +4,7 @@ slug: exchange-outlook-licence
 excerpt: Find out how to subscribe to an Outlook licence from your OVHcloud Exchange platform and how to activate it
 section: Office
 order: 01
+updated: 2022-10-05
 ---
 
 **Last updated 5th October 2022**

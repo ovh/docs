@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie eine automatische Fehlerdiagnose für Excha
 slug: exchange_diagnose_was_tun_bei_fehlern
 section: Troubleshooting
 order: 01
+updated: 2022-10-19
 ---
 
 > [!primary]

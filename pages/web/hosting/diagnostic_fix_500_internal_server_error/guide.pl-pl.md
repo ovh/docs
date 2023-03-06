@@ -4,6 +4,7 @@ slug: web_hosting_how_to_fix_the_500_internal_server_error
 excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
 section: Diagnostyka
 order: 06
+updated: 2022-07-21
 ---
 
 > [!primary]

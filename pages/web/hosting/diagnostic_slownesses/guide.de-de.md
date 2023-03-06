@@ -4,9 +4,10 @@ excerpt: "Ermitteln Sie den Ursprung der Ladezeiten Ihrer Website und erfahren S
 slug: slow-website-fix
 section: Diagnose
 order: 09
+updated: 2022-11-17
 ---
 
-**Letzte Aktualisierung am 17.11.2022**
+**Letzte Aktualisierung am 15.02.2023**
  
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -158,7 +159,7 @@ phpinfo();
 
 Loggen Sie sich in Ihrer Datenbank ein, indem Sie **Schritt 3** unserer [Anleitung zu Webhosting-Datenbanken](https://docs.ovh.com/de/hosting/datenbank-erstellen/) befolgen.
 
-Wenn Sie eine Datenbank mit **CloudDB** nutzen, lesen Sie unsere Anleitung zur [Datenbankverbindung mit CloudDB](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
+Wenn Sie eine Datenbank mit **Web Cloud Databases** nutzen, lesen Sie unsere Anleitung zur [Datenbankverbindung mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
 
 Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 

@@ -2,6 +2,7 @@
 title: Alternative Node.js install
 slug: nvm
 section: Nodejs
+updated: 2021-03-31
 ---
 
 **Last updated 31st March 2021**

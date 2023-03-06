@@ -1,19 +1,17 @@
 ---
 title: 'Erste Schritte mit einem Kimsufi, So You Start oder Rise Dedicated Server'
 slug: getting-started-dedicated-server-eco
-routes:
-    canonical: 'https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server/'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Kimsufi, So You Start oder Rise Dedicated Server verwalten'
 section: 'Erste Schritte'
 order: 2
-updated: 2022-12-12
+updated: 2023-02-28
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 12.12.2022**
+**Letzte Aktualisierung am 28.02.2023**
 
 ## Ziel
 
@@ -137,6 +135,8 @@ Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter
 ### Absicherung Ihres Dedicated Servers
 
 Wie oben erläutert, sind Sie der Administrator Ihres dedizierten Servers. Als solcher sind Sie für Ihre Daten und deren Sicherheit verantwortlich. Mehr Informationen zur Sicherung Ihres Servers finden Sie in unserer Anleitung zur [Absicherung eines Servers](../dedizierten-server-sichern/).
+
+Wenn Sie Windows Server einsetzen, verwenden Sie [diese Anleitung](https://docs.ovh.com/de/dedicated/firewall-windows/).
 
 ### OVHcloud Monitoring 
 

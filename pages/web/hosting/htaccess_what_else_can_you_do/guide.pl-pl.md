@@ -4,6 +4,7 @@ excerpt: 'Przewodnik ten przedstawia inne operacje, które są możliwe dzięki 
 slug: hosting_www_htaccess_-_inne_operacje
 section: 'Przekierowania i uprawnienia dostępu'
 order: 04
+updated: 2022-10-05
 ---
 
 ## Blokada listowania zawartości katalogu

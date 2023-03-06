@@ -5,6 +5,7 @@ excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
 section: 'Per iniziare'
 order: 01
 legacy_guide_number: g1474
+updated: 2021-07-19
 ---
 
 > [!primary]

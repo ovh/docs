@@ -3,6 +3,7 @@ title: 'Webmail: guida all’utilizzo di RoundCube'
 slug: webmail_guida_allutilizzo_di_roundcube
 section: Per iniziare
 order: 05
+updated: 2022-05-31
 ---
 
 > [!primary]

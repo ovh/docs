@@ -4,6 +4,7 @@ excerpt: Acesso às estatísticas do seu site
 slug: partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site
 section: Otimizar o seu site
 order: 04
+updated: 2021-01-05
 ---
 
 > [!primary]

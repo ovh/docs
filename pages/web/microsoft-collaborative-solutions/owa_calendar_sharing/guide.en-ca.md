@@ -4,6 +4,7 @@ excerpt: 'Find out how to share calendars in Exchange'
 slug: exchange_2016_how_to_share_calendars_via_owa
 section: 'Outlook Web Application (OWA)'
 order: 03
+updated: 2020-02-19
 ---
 
 **Last updated 19th February 2020**

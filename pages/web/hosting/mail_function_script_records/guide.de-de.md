@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie über ein Webhosting versendete automatisch
 slug: webhosting_verwaltung_automatischer_e-mails
 section: 'Diagnose'
 order: 10
+updated: 2022-10-12
 ---
 
 **Letzte Aktualisierung am 12.10.2022**

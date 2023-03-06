@@ -4,6 +4,7 @@ excerpt: In dieser Hilfe wird beschrieben, wie Sie PHP-FPM für Ihr Webhosting a
 slug: die_php-optimierung_beim_ovh_webhosting_aktivieren
 section: PHP
 order: 03
+updated: 2022-10-05
 ---
 
  

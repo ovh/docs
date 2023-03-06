@@ -4,6 +4,7 @@ slug: configurazione-posta-windows-10
 excerpt: 'Scopri come configurare un account Exchange con l’applicazione Posta per Windows 10'
 section: 'Configurazione al computer'
 order: 03
+updated: 2018-04-04
 ---
 
 **Ultimo aggiornamento: 13/07/2018**

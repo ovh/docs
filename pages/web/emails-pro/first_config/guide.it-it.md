@@ -4,6 +4,7 @@ slug: prima-configurazione
 excerpt: 'Come eseguire le prime operazioni sul servizio Email Pro'
 section: 'Per iniziare'
 order: 1
+updated: 2020-04-09
 ---
 
 **Ultimo aggiornamento: 07/04/2020**

@@ -4,6 +4,7 @@ slug: trasferisci_in_uscita_un_dominio_generico_o_geografico
 excerpt: Come effettuare il trasferimento di un dominio OVHcloud verso un altro provider
 section: Trasferimento
 order: 04
+updated: 2022-12-09
 ---
 
 > [!primary]

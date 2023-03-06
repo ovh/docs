@@ -4,9 +4,10 @@ slug: connecting-to-database-on-database-server
 excerpt: 'Find out how to log in to your database'
 section: Configuration
 order: 03
+updated: 2023-02-15
 ---
 
-**Last updated 22nd September 2022**
+**Last updated 15rd February 2023**
 
 ## Objective
 
@@ -16,14 +17,14 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- You must have a [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [CloudDB](https://www.ovh.ie/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
@@ -35,9 +36,9 @@ You can access your database’s content via an interface. There are several way
 > Since MariaDB is a derivative of MySQL, the commands are exactly the same for these 2 types of databases.
 > 
 
-####  With OVHcloud phpMyAdmin 
+####  With OVHcloud phpMyAdmin
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the SQL instance concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the SQL instance concerned.
 
 In the `General information` tab, you will find the access link in the **Database administration** box, under “User interface”.
 
@@ -67,7 +68,7 @@ If the connection succeeds, the next page of phpMyAdmin will appear.
 
 > [!warning]
 >
-> If you use a `Cloud DB` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](https://docs.ovh.com/ie/en/clouddb/configure-optimise-database-server/).
+> If you use a `Web Cloud Databases` or `Private SQL` service, do not forget to authorise your IP address using the guide on [Configuring your database server](https://docs.ovh.com/ie/en/clouddb/configure-optimise-database-server/).
 >
 
 To connect to your database, please ensure that you have the following information:
@@ -136,13 +137,11 @@ To connect to your database, please ensure that you have the following informati
 
 #### Connecting via the command line
 
-
 ```bash
 psql --host=server --port=port --user=username --password=password database_name
 ```
 
 #### Connecting via PHP script
-
 
 ```php
 1. <?php
@@ -179,8 +178,8 @@ You are now connected to your database.
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>. 

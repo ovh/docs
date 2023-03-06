@@ -5,6 +5,7 @@ slug: servizio_email_configura_i_filtri_email_nel_tuo_spazio_cliente_ovh
 legacy_guide_number: g1973
 section: Funzionalità degli indirizzi email
 order: 04
+updated: 2021-09-27
 ---
 
 > [!primary]

@@ -4,6 +4,7 @@ excerpt: 'Saiba como gerir o seu endereço Exchange utilizando o webmail OWA'
 slug: exchange_2016_guia_de_utilizacao_do_outlook_web_app
 section: 'Utilização do Outlook Web Application (OWA)'
 order: 01
+updated: 2021-06-25
 ---
 
 **Última atualização: 25/06/2021**

@@ -4,6 +4,7 @@ slug: mutualise-guide-utilisation-filezilla
 excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hébergement mutualisé"
 section: FTP et SSH
 order: 01
+updated: 2022-09-13
 ---
 
 **Dernière mise à jour le 13/09/2022**

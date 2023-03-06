@@ -4,6 +4,7 @@ slug: mail-configuration-windows-10
 excerpt: "Saiba como configurar um endereço de e-mail MX Plan sobre a aplicação Correio para Windows"
 section: 'Configuração num computador'
 order: 06
+updated: 2018-04-04
 ---
 
 

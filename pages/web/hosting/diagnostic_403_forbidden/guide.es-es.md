@@ -4,6 +4,7 @@ excerpt: Cómo volver a publicar un sitio web cuando este muestre la página 403
 slug: diagnostico-403-forbidden
 section: Diagnóstico
 order: 08
+updated: 2022-06-16
 ---
 
 > [!primary]

@@ -4,9 +4,14 @@ slug: attivare-email-hosting-web
 excerpt: 'Come attivare gli account di posta inclusi nella tua soluzione di hosting Web'
 section: Per iniziare
 order: 07
+updated: 2023-03-02
 ---
 
-**Ultimo aggiornamento: 17/08/2020**
+**Ultimo aggiornamento: 02/03/2023**
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
 ## Obiettivo
 
@@ -33,6 +38,10 @@ Nel riquadro `Configurazione` è disponibile la dicitura `Account email`: clicca
 Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare gli indirizzi email e conferma la scelta effettuata.
 
 ![Attivazione email](images/mail-hosting02.png){.thumbnail}
+
+> [!primary]
+> Per usufruire di più account email inclusi, ordina una [offerta di hosting web](https://www.ovhcloud.com/it/web-hosting/){.external} superiore dalla nostra pagina commerciale.
+
 
 ### Mantieni gli indirizzi email alla scadenza dell’hosting Web
 
@@ -66,7 +75,8 @@ Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrisponde
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo https://community.ovh.com/en/.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

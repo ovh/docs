@@ -4,6 +4,7 @@ slug: encomendar-um-ssl-gateway
 links: 
    - docs/web/ssl-gateway/use_ssl_gateway/
 excerpt: Torne seguras as ligacoes ao seu website
+updated: 2022-12-01
 ---
 
 

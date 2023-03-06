@@ -4,6 +4,7 @@ excerpt: Find out how to set up your Web PaaS solution in the OVHcloud Control P
 slug: web-paas-manager-setup
 section: Getting started
 order: 1
+updated: 2021-07-20
 ---
 
 **Last updated 20th July 2021**

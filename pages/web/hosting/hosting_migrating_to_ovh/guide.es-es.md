@@ -4,9 +4,10 @@ slug: web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio
 excerpt: "Cómo migrar un sitio web, el correo electrónico y el dominio a OVHcloud sin cortes del servicio"
 section: 'Primeros pasos'
 order: 08
+updated: 2022-11-24
 ---
 
-**Última actualización: 24/11/2022**
+**Última actualización: 15/02/2023**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -119,7 +120,7 @@ Para la copia de seguridad de su base de datos, [cree una nueva base de datos](h
 
 > [!primary]
 >
-> OVHcloud ofrece servidores de bases de datos CloudDB. Si desea utilizar esta solución en su sitio web, consulte toda la documentación relativa a este producto en nuestra página dedicada <https://docs.ovh.com/es/clouddb/>.
+> OVHcloud ofrece servidores de bases de datos Web Cloud Databases. Si desea utilizar esta solución en su sitio web, consulte toda la documentación relativa a este producto en nuestra página dedicada <https://docs.ovh.com/es/clouddb/>.
 >
 
 Conecte a continuación su base de datos de OVHcloud con el archivo de configuración de su sitio web, presente en el espacio de almacenamiento FTP de su alojamiento de OVHcloud.

@@ -6,7 +6,7 @@ section: 'Network management'
 updated: 2022-12-20
 ---
 
-**Last updated 20th December 2022**
+**Last updated 23rd February 2023**
 
 > [!primary]
 >
@@ -31,6 +31,10 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+>
+> This guide is not applicable to servers of the ranges [Scale](https://www.ovhcloud.com/en-gb/bare-metal/scale/) and [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/).
+> 
+> Please visit the dedicated [configuration page](https://docs.ovh.com/gb/en/dedicated/proxmox-network-hg-scale/).
 
 ## Instructions
 

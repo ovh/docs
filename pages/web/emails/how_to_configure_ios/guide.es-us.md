@@ -4,6 +4,7 @@ excerpt: 'Cómo configurar una cuenta de correo electrónico en un iPhone o iPad
 slug: correo_guia_de_configuracion_en_iphone_ios_91
 section: Configuración en el smartphone
 order: 01
+updated: 2022-07-20
 ---
 
 > [!primary]
@@ -40,9 +41,9 @@ En la pantalla de bienvenida de su dispositivo, acceda a `Ajustes`{.action} (ico
 
 - **Para iOS 7, 8, 9 y 10**: pulse `Correo electrónico, contactos, Calendario`{.action} y luego `Añadir cuenta`{.action}. A continuación, seleccione `Otra`{.action} y pulse `Añadir cuenta de correo`{.action}. Continúe en el paso 5 de la tabla siguiente.
 
-- **Para iOS 11**: pulse `Cuentas y contraseñas`{.action} y luego `Añadir cuenta`{.action}. A continuación, seleccione `Otra`{.action} y pulse `Añadir cuenta de correo`{.action}. Continúe en el paso 5 de la tabla siguiente.
+- **Para iOS 11, 12 y 13**: pulse `Cuentas y contraseñas`{.action} y luego `Añadir cuenta`{.action}. A continuación, seleccione `Otra`{.action} y pulse `Añadir cuenta de correo`{.action}. Continúe en el paso 5 de la tabla siguiente.
 
-- **Para las versiones actuales**: siga las instrucciones de la tabla siguiente.
+- **Para versiones de iOS 14 y superiores**: siga las instrucciones de la tabla siguiente.
 
 | | |
 |---|---|

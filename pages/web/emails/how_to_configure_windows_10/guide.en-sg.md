@@ -4,6 +4,7 @@ slug: mail-configuration-windows-10
 excerpt: 'Find out how to configure your email address in the Mail app for Windows 10.'
 section: 'Configure on computer'
 order: 06
+updated: 2018-04-04
 ---
 
 **Last updated 5th May 2020**

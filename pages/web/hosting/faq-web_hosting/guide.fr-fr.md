@@ -4,9 +4,10 @@ excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergem
 slug: faq-hebergement
 section: Premiers pas
 order: 05
+updated: 2022-11-28
 ---
 
-**Dernière mise à jour le 03/01/2023**
+**Dernière mise à jour le 15/02/2023**
 
 ## Gestion de votre offre
 
@@ -56,12 +57,12 @@ Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mai
 
 Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Adresses e-mails** ». Cliquez sur `Délier mon option e-mail`{.action} et suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
 
-### Lors d'une résiliation d'un hébergement mutualisé Performance, comment conserver l'offre CloudDB liée ?
+### Lors d'une résiliation d'un hébergement mutualisé Performance, comment conserver l'offre Web Cloud Databases liée ?
 
-Les hébergements mutualisés **Performance** comprennent une offre CloudDB activable gratuitement.
-Lorsque vous résiliez ou supprimez votre hébergement mutualisé **Performance**, l'offre CloudDB qui est attachée est également résiliée. Pour conserver votre CloudDB, il vous faudra le détacher avant la résiliation de l'hébergement.<br>
+Les hébergements mutualisés **Performance** comprennent une offre Web Cloud Databases activable gratuitement.
+Lorsque vous résiliez ou supprimez votre hébergement mutualisé **Performance**, l'offre Web Cloud Databases qui est attachée est également résiliée. Pour conserver votre Web Cloud Databases, il vous faudra le détacher avant la résiliation de l'hébergement.<br>
 
-Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Base de données Privée** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre CloudDB indépendante, ce qui vous permettra de conserver votre CloudDB déjà créé.
+Pour cela, cliquez sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Base de données Privée** ». Cliquez sur `Délier`{.action} et suivez les instructions afin de commander une offre Web Cloud Databases indépendante, ce qui vous permettra de conserver votre Web Cloud Databases déjà créé.
 
 ## Diagnostic
 

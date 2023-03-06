@@ -3,6 +3,7 @@ title: 'Korzystanie z konta e-mail w interfejsie Webmail RoundCube'
 slug: webmail_przewodnik_dotyczacy_interfejsu_roundcube
 section: 'Pierwsze kroki'
 order: 05
+updated: 2022-05-31
 ---
 
 

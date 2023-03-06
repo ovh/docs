@@ -4,6 +4,7 @@ slug: utilisation-cyberduck-mac
 excerpt: Retrouvez dans ce guide de l’aide concernant l’utilisation de l’application Cyberduck.
 section: FTP et SSH
 order: 05
+updated: 2022-12-01
 ---
 
 **Dernière mise à jour le 05/05/2020**

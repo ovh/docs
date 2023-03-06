@@ -4,6 +4,7 @@ slug: hosting_condiviso_guida_al_trasferimento_di_un_dominio_couk
 excerpt: Questa guida ti mostra come trasferire un dominio.uk o equiparato a OVHcloud.
 section: Trasferimento
 order: 04
+updated: 2022-10-19
 ---
 
 > [!primary]

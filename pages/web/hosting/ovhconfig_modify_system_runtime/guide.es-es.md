@@ -4,6 +4,7 @@ slug: cambiar_el_entorno_de_ejecucion_de_un_alojamiento
 excerpt: 'Cómo modificar la configuración de un alojamiento web de OVHcloud'
 section: 'Configuración del alojamiento'
 order: 03
+updated: 2022-12-09
 ---
 
 **Última actualización: 09/12/2022**

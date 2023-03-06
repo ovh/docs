@@ -6,6 +6,7 @@ excerpt: 'Ontdek hoe u via uw Control Panel een OVH DNS-zone voor uw domeinnaam 
 legacy_guide_number: g2229
 section: 'DNS en DNS-zone'
 order: 02
+updated: 2018-08-06
 ---
 
 **Laatste update 06-07-2018**

@@ -3,7 +3,8 @@ title: "Tutorial - Użyj pliku htaccess w systemie WordPress"
 slug: use-htaccess-with-wordpress
 excerpt: "Dowiedz się, jak zabezpieczyć blog WordPress jednym lub kilkoma plikami htaccess"
 section: 'Tutoriale'
-order: 07
+order: 022
+updated: 2023-02-07
 ---
 
 **Ostatnia aktualizacja z dnia 07-02-2023**

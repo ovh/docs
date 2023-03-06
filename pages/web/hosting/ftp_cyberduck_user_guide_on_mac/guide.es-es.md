@@ -4,6 +4,7 @@ excerpt: Esta guía explica cómo utilizar la aplicación Cyberduck.
 slug: web_hosting_guia_de_uso_de_cyberduck_mac
 section: FTP y SSH
 order: 05
+updated: 2022-12-01
 ---
 
 

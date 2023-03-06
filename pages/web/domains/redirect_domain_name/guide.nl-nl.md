@@ -4,6 +4,7 @@ title: Omleiding van een door OVH beheerde domeinnaam
 slug: omleiding-domeinnaam
 excerpt: Lees meer over de verschillende omleidingstypen en hoe u er een kunt maken voor een door OVH beheerde domeinnaam
 section: Algemeen
+updated: 2022-10-06
 ---
 
 **Laatste update 01-02-18**

@@ -4,6 +4,7 @@ slug: exchange-que-verifier-lors-dun-probleme-denvoi-ou-de-reception
 excerpt: 'Découvrez comment réaliser un diagnostic automatisé des erreurs sur les comptes Exchange'
 section: 'Diagnostics Exchange'
 order: 01
+updated: 2022-10-19
 ---
 
 **Dernière mise à jour le 08/07/2022**

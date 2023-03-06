@@ -4,9 +4,10 @@ slug: partilhado_guias_dos_modulos_dos_alojamentos_partilhados
 excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVHcloud
 section: CMS
 order: 01
+updated: 2023-01-31
 ---
 
-**Última atualização: 31/01/2023**
+**Última atualização: 15/02/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -89,7 +90,7 @@ Agora tem que preencher a informação relativa à base de dados. Existem vária
 
 - a base de dados já está criada no seu alojamento: selecione uma das bases de dados indicadas na lista e introduza as informações solicitadas;
 - a base de dados não está criada no seu alojamento: siga as instruções para a criar uma base de dados. Introduza a informação solicitada atrás;
-- a base de dados foi criada na instância CloudDB: selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
+- a base de dados foi criada na instância Web Cloud Databases: selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
 - a base de dados foi criada noutro alojamento Web OVHcloud : selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter;
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}.
@@ -148,11 +149,11 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
 
+Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/){.external}
+
 [Gerir o CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/)
 
 [Desinstalar o seu CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/#etapa-3-eliminar-o-modulo)
-
-Veja a nossa [oferta CloudDB](https://www.ovh.pt/cloud/cloud-databases/){.external}
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

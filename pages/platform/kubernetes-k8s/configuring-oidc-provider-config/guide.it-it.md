@@ -5,10 +5,10 @@ excerpt: 'Find out how to configure the OIDC provider of an OVHcloud Managed Kub
 section: User guides
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/configure-oidc-provider/'
-updated: 2022-11-24
+updated: 2023-02-14
 ---
 
-**Last updated 24th November 2022**
+**Last updated 14th February 2023**
 
 ## Objective
 

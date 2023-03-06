@@ -5,6 +5,7 @@ slug: webhosting_hilfe_zum_export_von_datenbanken
 legacy_guide_number: g1394
 section: 'Datenbanken'
 order: 03
+updated: 2018-05-19
 ---
 
 **Stand 27.11.2018**

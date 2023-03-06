@@ -1,18 +1,19 @@
 ---
-title: 'Anuncios de fin de venta/vida CloudDB'
+title: 'Anuncios de fin de venta/vida Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Recursos técnicos'
+updated: 2023-02-23
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 21/07/2022**
+**Última actualización: 23/02/2023**
 
 ## Objetivo
 
-Los productos cubiertos por estos anuncios de fin de venta y de fin de vida son los servicios CloudDB, instancias SGBD que pueden accederse a través de la red pública o a través de la red Web Hosting.
+Los productos cubiertos por estos anuncios de fin de venta y de fin de vida son los servicios Web Cloud Databases, instancias SGBD que pueden accederse a través de la red pública o a través de la red Web Hosting.
 Para más información, consulte la [política de fin de vida de las bases de datos administradas](../managed-db-life-cycle-policy/).
 
 |Versión|Anuncio de fin de vida|Fin de venta|Fin de soporte|
@@ -28,7 +29,6 @@ Para más información, consulte la [política de fin de vida de las bases de da
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
 |PostgreSQL 12|Por determinar|Por determinar|Por determinar|
-|Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|Por determinar|Por determinar|Por determinar|
 
 ## Más información

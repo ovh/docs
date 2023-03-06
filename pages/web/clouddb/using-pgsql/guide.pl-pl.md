@@ -4,7 +4,10 @@ slug: pierwsze-kroki-z-postgresql
 excerpt: Korzystanie z baz danych
 section: 'Pierwsze kroki'
 order: 03
+updated: 2023-02-15
 ---
+
+**Ostatnia aktualizacja dnia 15-02-2023**
 
 Chcesz korzystać z PostgreSQL? Sprawdź, jak w prosty sposób tworzyć bazy danych i nimi zarządzać!
 
@@ -13,8 +16,8 @@ Chcesz korzystać z PostgreSQL? Sprawdź, jak w prosty sposób tworzyć bazy dan
 
 ### Wymagania
 
-- Posiadanie instancji CloudDB
-- Zapoznanie się z przewodnikiem na temat [CloudDB](../pierwsze-kroki-z-clouddb/)
+- Posiadanie instancji Web Cloud Databases
+- Zapoznanie się z przewodnikiem na temat [Web Cloud Databases](../pierwsze-kroki-z-clouddb/)
 
 ### Czym jest baza danych PostgreSQL?
 PostgreSQL to system zarządzania relacyjnymi bazami danych oraz obiektami (SGBDRO).

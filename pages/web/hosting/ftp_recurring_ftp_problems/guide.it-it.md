@@ -4,6 +4,7 @@ excerpt: Ritrova qui le anomalie più frequenti associate al tuo software FTP
 slug: condividili-problemi-ftp-ricorrenti
 section: FTP e SSH
 order: 04
+updated: 2022-01-05
 ---
 
 > [!primary]

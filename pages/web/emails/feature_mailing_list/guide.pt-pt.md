@@ -5,6 +5,7 @@ slug: email_partilhado_guia_de_utilizacao_de_mailing-lists
 legacy_guide_number: g1596
 section: Funcionalidades dos endereços e-mail
 order: 03
+updated: 2020-03-19
 ---
 
 **Última atualização: 13/02/2020**

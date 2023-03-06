@@ -4,6 +4,7 @@ slug: wechsel_des_domaininhabers
 legacy_guide_number: 1350
 excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
 section: Inhaberwechsel
+updated: 2021-03-04
 ---
 
 > [!primary]

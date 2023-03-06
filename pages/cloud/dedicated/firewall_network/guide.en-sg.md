@@ -9,14 +9,14 @@ updated: 2022-12-20
 
 ## Objective
 
-To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Network Firewall. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
+To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** solution: the Network Firewall. This is an option you can use to limit your service's exposure to attacks from the public network.
 
 **This guide will show you how to configure your Network Firewall.**
 
 
 > [!primary]
 >
-> VAC: More information on VAC, our protection system against DDoS attacks, here: <https://www.ovh.com/asia/anti-ddos/>.
+> You can read more information on our Anti-DDoS solution here: <https://www.ovhcloud.com/en-sg/security/anti-ddos/>.
 > 
 
 ![VAC in detail](images/vac-inside.png){.thumbnail}
@@ -24,9 +24,8 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 ## Requirements
 
-- You must have an OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.com/sg/dedicated-servers/){.external}, [VPS](https://www.ovh.com/sg/vps/){.external}, [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovh.com/sg/private-cloud/){.external},  [Additional IP](https://www.ovhcloud.com/en-sg/bare-metal/ip/){.external}, etc.)
-- You must have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}.
-- You must have basic network skills
+- An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovhcloud.com/en-sg/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/en-sg/vps/){.external}, [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/en-sg/network/additional-ip/){.external}, etc.)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-sg/about/).
@@ -39,7 +38,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 > [!primary]
 >
-> The Network Firewall protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
+> The Network Firewall protects the IPs that are associated with a server. As a result, you need to configure each IP separately. You cannot configure the server as a whole.
 > 
 
 In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
@@ -50,74 +49,70 @@ Next, click the `...`{.action} button to the right of the relevant IPv4 and sele
 
 ![Enabling the Network Firewall](images/firewallcreation2022.png){.thumbnail}
 
-- You will then be asked to confirm:
+You will then be asked to confirm.
 
 ![Confirmation](images/creationvalid.png){.thumbnail}
 
-- You can then `Enable the firewall`{.action} and `Configure the Firewall`{.action} by clicking once more on the gear icon next to the IPv4:
+Then click `Enable the firewall`{.action} (1), and click `Configure the firewall`{.action} (2) to start configuring it.
 
-![Applying the rules in the configuration](images/activationconfig.png){.thumbnail}
+![Enabling the configuration](images/activationconfig.png){.thumbnail}
 
 You can set up to **20 rules per IP**.
 
-
 > [!warning]
 >
-> The firewall is enabled automatically upon each DDoS attack, and cannot be disabled before the attack ends. This is why it is important to keep the firewall rules up to date.
-> As a default setting you do not have any configured rules, so all connections can be set up.
-> If you do have any, remember to check your firewall rules regularly, even if you disable it.
+> The firewall is enabled automatically whenever a DDoS attack is launched, and cannot be disabled before the attack ends. This is why it is important to keep your firewall rules up-to-date.
+> By default, you do not have any configured rules to start with, so all connections can be set up.
+> If you have any, we recommend checking them regularly, even if the firewall is disabled.
 > 
 
 
 > [!primary]
 >
-> - The UDP fragmentation is blocked (DROP) as a default setting. When you enable the Network Firewall, if you use a VPN, remember to correctly configure your maximum transmission unit (MTU). For example, on OpenVPN, you can tick `MTU test`{.action}.
+> - The UDP fragmentation is blocked (DROP) by default. When you enable the Network Firewall, if you use a VPN, remember to configure your maximum transmission unit (MTU) correctly. For example, on OpenVPN, you can tick `MTU test`{.action}.
 > - The Network Firewall is not taken into account within the OVHcloud network, so the rules set up do not affect the connections in this internal network.
 >
 
 
-### Configuring the Network Firewall
+### Configure the Network Firewall
 
 > [!warning]
 > Please note that the OVHcloud Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
-> For more information, please refer to the following guides: [Configure the firewall on Windows](https://docs.ovh.com/sg/en/dedicated/firewall-windows/) and [Configuring the firewall on Linux with iptables](https://docs.ovh.com/sg/en/dedicated/firewall-iptables/).
+> For more information, please refer to the following guides: [Configuring the firewall on Windows](https://docs.ovh.com/sg/en/dedicated/firewall-windows/) and [Configuring the firewall on Linux with iptables](https://docs.ovh.com/sg/en/dedicated/firewall-iptables/).
 >
 
 To add a rule, click on `Add a rule`{.action}:
-
 
 ![Add a rule](images/addarule2022.png){.thumbnail}
 
 For each rule you must choose:
 
-- a priority (from 0 to 19, 0 being the first rule to be applied, followed by the others);
-- an action (`Authorise`{.action} or `Refuse`{.action});
-- the protocol;
-- an IP (optional);
-- the source port (TCP only)
-- the destination port (TCP only)
-- the TCP options (TCP only)
-
+- A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others)
+- An action (`Authorise`{.action} or `Refuse`{.action})
+- The protocol
+- An IP (optional)
+- The source port (TCP only)
+- The destination port (TCP only)
+- The TCP options (TCP only)
 
 ![Details on adding a rule](images/ajoutregle4.png){.thumbnail}
 
 
 > [!primary]
 >
-> - Priority 0: we advise that you authorise the TCP protocol on all the IPs with an `established`{.action} option. The `established`{.action} option enables you to verify that the packet is part of a session that has previously been opened (already started). If you do not authorise it, the server will not receive the TCP protocol feedback from the SYN/ACK requests.
-> - Priority 19: refuses all of the IPv4 protocol if any rules before 19th (the last possible) are not filled in.
+> - Priority 0: we advise authorising TCP protocol on all the IPs with an `established`{.action} option. With the established option, you can verify that the packet is part of a session that has previously been opened (already started). If you do not authorise it, the server will not receive the TCP protocol feedback from the SYN/ACK requests.
+> - Priority 19: we advise to refuse all IPv4 protocol traffic that has not been accepted by any earlier rule.
 > 
-
 
 ### Configuration example
 
-To make sure that only the SSH (22), HTTP (80), HTTPS (443), and UDP (on port 10000) ports are left open when authorising the ICMP, you need to follow the rules below:
+To make sure that only the SSH (22), HTTP (80), HTTPS (443) and UDP (10,000) ports are left open when authorising the ICMP, follow the rules below:
 
 ![Configuration example](images/exemple.png){.thumbnail}
 
-The rules are sorted chronologically from 0 (the first rule read) to 19 (the last). The chain stops being scanned as soon as a rule is applied to the packet.
+The rules are sorted from 0 (the first rule read) to 19 (the last). The chain stops being scanned as soon as a rule is applied to the packet.
 
-For example, a packet for TCP port 80 will be captured by rule 2 and the rules that come after will not be tested. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because OVHcloud does not authorise communication on port 25 in the previous rules.
+For example, a packet for TCP port 80 will be captured by rule 2, and the rules that come after will not be applied. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because the Firewall does not authorise communication on port 25 in the previous rules.
 
 > [!warning]
 > As stated, the configuration above is just an example and should only be used as reference if the rules do not apply to services hosted on your server. It is absolutely necessary to configure the rules in your firewall according to the services hosted on your server. Improper configuration of your firewall rules can cause legitimate traffic to be blocked and server services to be inaccessible. 

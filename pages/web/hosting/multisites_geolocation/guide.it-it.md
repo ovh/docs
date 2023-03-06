@@ -4,6 +4,7 @@ excerpt: "Questa guida ti mostra come geolocalizzare il tuo sito Web utilizzando
 slug: hosting_condiviso_geolocalizza_lip_del_tuo_sito
 section: Ottimizza il tuo sito
 order: 05
+updated: 2022-12-22
 ---
 
 > [!primary]

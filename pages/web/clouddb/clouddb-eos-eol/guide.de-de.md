@@ -1,18 +1,19 @@
 ---
-title: CloudDB - EOL und EOS Ankündigungen
+title: Web Cloud Databases - EOL und EOS Ankündigungen
 slug: clouddb-eos-eol
 section: 'Technische Ressourcen'
+updated: 2023-02-23
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 21.07.2022**
+**Letzte Aktualisierung am 23.02.2023**
 
 ## Ziel
 
-Die von der folgenden Terminierung zu End-of-Life (EOL) und End-of-Sale (EOS) erfassten Produkte sind CloudDB Dienstleistungen d.h. DBMS Instanzen, die über das öffentliche Internet erreichbar sind.
+Die von der folgenden Terminierung zu End-of-Life (EOL) und End-of-Sale (EOS) erfassten Produkte sind Web Cloud Databases Dienstleistungen d.h. DBMS Instanzen, die über das öffentliche Internet erreichbar sind.
 
 Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Databases](../managed-db-life-cycle-policy/).
 
@@ -29,7 +30,6 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
 |PostgreSQL 12|Noch festzulegen|Noch festzulegen|Noch festzulegen|
-|Redis 4.0|2021-09-07|2021-12-15|2022-03-16|
 |Redis 6.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 
 ## Weiterführende Informationen

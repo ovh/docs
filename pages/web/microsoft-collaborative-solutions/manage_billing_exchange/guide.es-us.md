@@ -4,6 +4,7 @@ slug: gestion-de-la-facturacion-exchange
 excerpt: 'Cómo gestionar la facturación de un servicio Exchange'
 section: 'Primeros pasos con Exchange'
 order: 03
+updated: 2020-04-20
 ---
 
 **Última actualización: 20/6/2021**

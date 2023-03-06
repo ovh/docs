@@ -4,6 +4,7 @@ excerpt: 'In dieser Anleitung wird beschrieben, wie Sie Ihren Hosted Exchange Di
 slug: exchange_20132016_konfiguration_der_dienstleistung
 section: 'Erste Schritte mit Exchange'
 order: 01
+updated: 2018-01-19
 ---
 
 **Stand 22.03.2018**

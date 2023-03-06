@@ -1,8 +1,8 @@
 ---
-title: 'Sécuriser un VPS'
+title: "Sécuriser un VPS"
 slug: conseils-securisation-vps
-section: 'Premiers pas'
-excerpt: 'Découvrez les éléments de base vous permettant de sécuriser votre VPS'
+section: "Premiers pas"
+excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre VPS"
 updated: 2022-05-05
 ---
 
@@ -17,14 +17,14 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la sécurité et la responsabilité vous appartiennent.
 > En effet, nous n'avons pas accès aux données hébergés sur ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
-> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](https://marketplace.ovhcloud.com/) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
+> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
 > Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
 - Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
-- Avoir un accès administrateur (root) à votre serveur via SSH
+- Avoir un accès administrateur (*root*) à votre serveur via SSH
 
 ## En pratique
 
@@ -32,7 +32,7 @@ Lorsque vous commandez votre VPS, vous pouvez choisir une distribution ou un sys
 >
 > Gardez à l'esprit qu’il s’agit d’un guide général basé sur un système d’exploitation Ubuntu Server. Certaines commandes nécessitent d’être adaptées à la distribution que vous utilisez et certaines astuces vous invitent à utiliser des outils tiers. Veuillez vous référer à la documentation officielle de ces applications si vous avez besoin d'aide.
 >
-> S'il s'agit de votre première configuration d'un VPS OVHcloud, nous vous invitons à consulter en premier lieu notre guide [Débuter avec un VPS](../debuter-avec-vps/).
+> S'il s'agit de votre première configuration d'un VPS OVHcloud, nous vous invitons à consulter en premier lieu notre guide [Débuter avec un VPS](https://docs.ovh.com/fr/vps/debuter-avec-vps/).
 >
 
 Les exemples suivants supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées.
@@ -97,7 +97,7 @@ ssh nomdutilisateur@IPv4_de_votre_VPS -p NouveauPort
 
 ### Modifier le mot de passe associé à l'utilisateur "root"
 
-Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](../root-password/).
+Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](https://docs.ovh.com/fr/vps/root-password/).
 
 ### Créer un utilisateur avec des droits restreints
 
@@ -159,7 +159,7 @@ Les distributions GNU/Linux courantes sont fournies avec un service de pare-feu 
 iptables -L
 ```
 
-Pour plus d'informations sur iptables, consultez notre [guide dédié](../../dedicated/firewall-iptables/).
+Pour plus d'informations sur iptables, consultez notre [guide dédié](https://docs.ovh.com/fr/vps/vps-firewall-iptables/).
 
 Il est alors recommandé de créer et d’ajuster à votre utilisation des règles de pare-feu. Pour plus d'informations sur les diverses manipulations possibles, reportez-vous à la documentation officielle de la distribution utilisée.
 
@@ -239,7 +239,7 @@ Pour toute information complémentaire et pour des recommandations concernant Fa
 
 Les solutions OVHcloud incluent la possibilité d'activer un pare-feu au point d'entrée de l'infrastructure, appelé Network Firewall. Une configuration correcte de ce pare-feu permet de bloquer les connexions avant même qu'elles n'arrivent sur votre serveur.
 
-Consultez le guide « [Configurer le Network Firewall](../../dedicated/firewall-network/) » si vous souhaitez l'activer.
+Consultez le guide « [Configurer le Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/) » si vous souhaitez l'activer.
 
 ### Sauvegarder votre système et vos données
 
@@ -250,12 +250,14 @@ La sécurisation de vos données est un élément clé, c'est pourquoi OVHcloud 
 - L'option `Snapshot` qui vous permet de créer un instantané manuel.
 - L'option de `Sauvegarde automatique` vous permet de conserver des sauvegardes régulières de votre VPS (à l'exception des disques supplémentaires).
 
-Vous trouverez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit](https://www.ovhcloud.com/fr/vps/options/) et dans les [guides respectifs](../).
+Vous trouverez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit](https://www.ovhcloud.com/fr/vps/options/) et dans les [guides respectifs](https://docs.ovh.com/fr/vps/).
 
 ## Aller plus loin
 
-[Débuter avec un VPS](../debuter-avec-vps/)
+[Débuter avec un VPS](https://docs.ovh.com/fr/vps/debuter-avec-vps/)
 
-[Configurer le Network Firewall](../../dedicated/firewall-network/)
+[Configurer le pare-feu sous Windows](https://docs.ovh.com/fr/vps/vps-firewall-windows/)
+
+[Configurer le Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

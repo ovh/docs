@@ -4,9 +4,10 @@ slug: przeniesienie-strony-www-do-ovh
 excerpt: "Dowiedz się, jak migrować Twoją stronę WWW, konta e-mail i domenę do OVHcloud bez przerwy w dostępności usług"
 section: Pierwsze kroki
 order: 08
+updated: 2022-11-24
 ---
 
-**Ostatnia aktualizacja z dnia 2022-11-24**
+**Ostatnia aktualizacja z dnia 15-02-2023**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -119,7 +120,7 @@ Do tworzenia kopii zapasowej bazy danych [utwórz nową bazę danych](https://do
 
 > [!primary]
 >
-> OVHcloud oferuje serwery baz danych CloudDB. Jeśli chcesz korzystać z tej oferty na swojej stronie internetowej, zapoznaj się z naszą dokumentacją dotyczącą tego produktu na naszej stronie <https://docs.ovh.com/pl/clouddb/>.
+> OVHcloud oferuje serwery baz danych Web Cloud Databases. Jeśli chcesz korzystać z tej oferty na swojej stronie internetowej, zapoznaj się z naszą dokumentacją dotyczącą tego produktu na naszej stronie <https://docs.ovh.com/pl/clouddb/>.
 >
 
 Połącz następnie bazę danych OVHcloud z plikiem konfiguracyjnym Twojej strony WWW dostępnym w przestrzeni dyskowej FTP Twojego hostingu OVHcloud.

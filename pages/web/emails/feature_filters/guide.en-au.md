@@ -5,6 +5,7 @@ legacy_guide_number: 1973
 excerpt: 'Find out how to create and configure filter rules on your email address'
 section: 'Email address features'
 order: 04
+updated: 2021-09-27
 ---
 
 **Last updated 12th August 2020**

@@ -4,6 +4,7 @@ slug: web_hosting_exportacion_de_una_base_de_datos
 excerpt: 'Cómo descargar un backup de la base de datos de un alojamiento web de OVH'
 section: 'Bases de datos'
 order: 03
+updated: 2018-05-19
 ---
 
 **Última actualización: 01/08/2018**

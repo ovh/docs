@@ -4,6 +4,7 @@ slug: mutualise-guide-importation-dune-base-de-donnees-mysql
 excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVHcloud'
 section: 'Bases de données'
 order: 04
+updated: 2018-09-25
 ---
 
 **Dernière mise à jour le 05/05/2020**

@@ -3,6 +3,7 @@ title: Web PaaS powered by Platform.sh
 slug: only-in-english
 excerpt: Available in English only
 section: Getting started
+updated: 2021-03-30
 ---
 
 ## Available in English only

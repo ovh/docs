@@ -4,9 +4,14 @@ slug: activar-correo-hosting-web
 excerpt: 'Cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web'
 section: 'Primeros pasos'
 order: 07
+updated: 2023-03-02
 ---
 
-**Última actualización: 17/08/2020**
+**Última actualización: 02/03/2023**
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
 ## Objetivo
 
@@ -33,6 +38,9 @@ En la columna `Configuración`, vaya a `Direcciones de correo`, haga clic en el 
 Se mostrará la ventana de activación. Seleccione el dominio que quiere utilizar con sus direcciones de correo y confirme la activación.
 
 ![Activar el correo](images/mail-hosting02.png){.thumbnail}
+
+> [!primary]
+> Si desea disfrutar de más cuentas de correo incluidas, puede contratar un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external} superior desde nuestra página comercial.
 
 ### Conservar las direcciones de correo tras la expiración del alojamiento web
 
@@ -66,6 +74,8 @@ En la columna `Configuración`, vaya a `Direcciones de correo`{.action}, haga cl
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

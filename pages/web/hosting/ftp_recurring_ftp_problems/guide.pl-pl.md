@@ -4,6 +4,7 @@ excerpt: Odnajdziesz tutaj najczęstsze nieprawidłowości związane z Twoim opr
 slug: rozdzielenie-problemow-ftp-recents
 section: FTP i SSH
 order: 04
+updated: 2022-01-05
 ---
 
 > [!primary]

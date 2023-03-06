@@ -4,9 +4,10 @@ excerpt: Come creare il tuo sito utilizzando i moduli in 1 click
 slug: hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi
 section: CMS
 order: 01
+updated: 2023-01-31
 ---
 
-**Ultimo aggiornamento: 31/01/2023**
+**Ultimo aggiornamento: 15/02/2023**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -87,7 +88,7 @@ A questo punto, inserisci i dati di accesso al tuo database. Esistono diverse po
 
 - se il database è già creato sul tuo hosting, selezionalo dalla lista e inserisci le informazioni richieste
 - se il database non è ancora stato creato sul tuo hosting, segui le indicazioni per crearlo, poi selezionalo dalla lista e inserisci le informazioni richieste
-- se il database è stato creato sulla tua istanza CloudDB, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
+- se il database è stato creato sulla tua istanza Web Cloud Databases, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
 - se il database è stato creato su un altro hosting Web OVHcloud, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. Il database e lo spazio di hosting devono essere ospitati nello stesso datacenter
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}.

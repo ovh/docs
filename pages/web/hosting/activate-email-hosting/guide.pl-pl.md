@@ -4,9 +4,14 @@ slug: aktywacja-kont-email-zawartych-w-hostingu
 excerpt: Dowiedz się, jak aktywować konta e-mail zawarte w hostingu
 section: 'Pierwsze kroki'
 order: 07
+updated: 2023-03-02
 ---
 
-**Ostatnia aktualizacja dnia 07-09-2020**
+**Ostatnia aktualizacja dnia 02-03-2023**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
 ## Wprowadzenie 
 
@@ -33,6 +38,9 @@ W polu `Konfiguracja` znajduje się wzmianka `Konta e-mail`. Kliknij przycisk `�
 Pojawi się okno aktywacyjne. Wybierz nazwę domeny, z którą chcesz powiązać konta e-mail i potwierdź swój wybór.
 
 ![email-activation](images/mail-hosting02.png){.thumbnail}
+
+> [!primary]
+> Jeśli chcesz korzystać z większej liczby kont e-mail zawartych w ofercie, zachęcamy do zamówienia wyższej [oferty hostingu www](https://www.ovhcloud.com/pl/web-hosting/){.external} na naszej stronie handlowej.
 
 ### Zachowanie kont e-mail przed upływem terminu ważności usługi hostingowej
 
@@ -66,6 +74,8 @@ W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

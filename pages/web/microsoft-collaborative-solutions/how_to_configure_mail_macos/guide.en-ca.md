@@ -3,6 +3,7 @@ title: Configuring your Exchange account on the macOS Mail app
 slug: exchange-configuration-mail-macos
 section: Configuration on computer
 order: 06
+updated: 2021-12-28
 ---
 
 **Last updated 28/12/2021**

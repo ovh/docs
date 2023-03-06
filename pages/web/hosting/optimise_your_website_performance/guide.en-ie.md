@@ -5,9 +5,10 @@ slug: web_hosting_optimise_your_website_performance
 legacy_guide_number: g1396
 section: Optimise your website
 order: 06
+updated: 2022-02-03
 ---
 
-**Last updated 3rd February 2022**
+**Last updated 15rd February 2023**
 
 ## Objective
 This guide is designed for customers who wish to improve the performance of their website.
@@ -219,10 +220,10 @@ Example:
 Avoid using the "HAVING" clause which can slow down queries. You should also avoid using "GROUP BY", unless strictly necessary.
 
 
-#### CloudDB
-If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our CloudDB offer to have more resources available.
+#### Web Cloud Databases
+If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Web Cloud Databases offer to have more resources available.
 
-[See the CloudDB offer on our website](https://www.ovh.ie/cloud/cloud-databases/).
+[See the Web Cloud Databases offer on our website](https://www.ovh.ie/cloud/cloud-databases/).
 
 ## Go further
 
@@ -230,6 +231,6 @@ If despite all the changes and optimisations you did undertake the database is s
 
 [Creating and managing a database in your Web Hosting plan](../creating-database)
 
-[Getting started with the CloudDB service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/)
+[Getting started with the Web Cloud Databases service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/)
 
 Join our community of users on <https://community.ovh.com/en/>.

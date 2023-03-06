@@ -1,8 +1,8 @@
 ---
-title: Configurer le DHCP sur une Edge NSX
+title: Configurer le DHCP sur une Edge NSX-v
 slug: configurer-le-dhcp-sur-une-edge-nsx
 excerpt: "Découvrez comment attribuer des IPs à vos machines virtuelles à l'aide du service DHCP"
-section: NSX
+section: NSX-v
 order: 03
 updated: 2021-11-22
 ---

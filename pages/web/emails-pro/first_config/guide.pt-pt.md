@@ -4,6 +4,7 @@ slug: configuracao-inicial
 excerpt: 'Saiba como configurar o serviço E-mail Pro.'
 section: Introdução
 order: 1
+updated: 2020-04-09
 ---
 
 **Última atualização: 24/04/2020**

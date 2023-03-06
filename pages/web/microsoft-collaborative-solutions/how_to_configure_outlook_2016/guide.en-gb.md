@@ -4,6 +4,7 @@ slug: configuration-outlook-2016
 excerpt: 'Find out how to configure your Exchange account in Outlook for Windows'
 section: Configuration on computer
 order: 01
+updated: 2021-07-05
 ---
  
 **Last updated 5th July 2021**

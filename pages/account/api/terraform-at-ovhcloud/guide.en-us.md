@@ -4,10 +4,10 @@ excerpt: Find out about useful resources in order to use Terraform with OVHcloud
 slug: terraform-at-ovhcloud
 section: Terraform
 order: 01
-updated: 2023-01-12
+updated: 2023-02-28
 ---
 
-**Last updated 12th January 2023**
+**Last updated 28th February 2023**
 
 ## Introduction
 
@@ -76,7 +76,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | S3 users | ovh | [ovh_cloud_project_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_user) with *objectstore_operator* role|
 | Databases | ovh | [cloud_project_database](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_database) and [cloud_project_database_database](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_database_database)|
 | Volume Snapshot | openstack | [openstack_blockstorage_snapshot_v3](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/data-sources/blockstorage_snapshot_v3)|
-| Scheduled Instance Backup | ovh | not available (see this [feature request](https://github.com/ovh/terraform-provider-ovh/issues/330) on ovh provider project)|
+| Scheduled Instance Backup | ovh |[ovh_cloud_project_workflow_backup](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_workflow_backup)|
 | Cloud Archive | openstack | [objectstorage_object_v1](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/objectstorage_object_v1) with [storage_policy](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/objectstorage_container_v1#storage_policy) set to “PCA” in order to create an “archive” swift container |
 
 #### Network

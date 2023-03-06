@@ -4,6 +4,7 @@ slug: hosting_www_informacje_na_temat_serwerow_dns
 excerpt: 'Dowiedz się, jak zmodyfikować serwery DNS Twojej domeny w OVHcloud'
 section: 'DNS i strefa DNS'
 order: 01
+updated: 2021-02-18
 ---
 
 > [!primary]

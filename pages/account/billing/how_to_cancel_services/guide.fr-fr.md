@@ -68,7 +68,7 @@ Cliquez sur le type de produit à résilier dans la liste suivante des principal
 &emsp;&emsp;[Hébergement Web](#hosting)<br />
 &emsp;&emsp;[Certificat SSL Sectigo](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web Paas powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[Web Cloud Databases](#webclouddatabases)<br />
 &emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[E-mail Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
@@ -192,9 +192,9 @@ Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, 
 
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
-#### CloudDB <a name="clouddb"></a>
+#### Web Cloud Databases <a name="webclouddatabases"></a>
 
-Pour résilier votre offre [CloudDB](https://www.ovh.com/fr/cloud-databases/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
+Pour résilier votre offre [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
 

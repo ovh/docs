@@ -4,6 +4,7 @@ slug: mail-configuration-windows-10
 excerpt: "Saiba como configurar uma conta E-mail Pro na aplicação Correio para Windows 10"
 section: 'Configuração num computador'
 order: 04
+updated: 2020-03-18
 ---
 
 **Última atualização: 20/03/2020**

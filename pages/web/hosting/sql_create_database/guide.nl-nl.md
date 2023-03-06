@@ -5,6 +5,7 @@ slug: database-creatie
 excerpt: 'Leer hoe u een database in uw webhostingplan kunt maken'
 section: Databases
 order: 01
+updated: 2022-02-03
 ---
 
 **Laatste update 15-06-2018**

@@ -4,6 +4,7 @@ slug: configuration-iphone
 excerpt: "Apprenez à configurer un compte E-mail Pro sur un iPhone ou un iPad, via l'application Mail"
 section: 'Configuration sur smartphone'
 order: 1
+updated: 2021-05-21
 ---
 
 **Dernière mise à jour le 21/05/2020**
@@ -44,7 +45,7 @@ Sur l'écran d'accueil de votre appareil, rendez-vous sur `Réglages`{.action} (
 
 - **Pour iOS 11** : appuyez sur `Comptes et mots de passe`{.action}, puis sur `Ajouter un compte`{.action}. Choisissez finalement `Autre`{.action}, puis `Ajouter un compte Mail`{.action}. Passez ensuite à l'étape 5 du tableau suivant.
 
-- **Pour les versions actuelles** : suivez les instructions du tableau suivant.
+- **Pour les versions iOS 14 et supérieures** : suivez les instructions du tableau suivant.
 
 | | |
 |---|---|

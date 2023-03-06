@@ -4,6 +4,7 @@ excerpt: 'Find out how to configure your Private Exchange platform'
 slug: getting-started-with-private-exchange
 section: 'Getting started with Exchange'
 order: 02
+updated: 2020-04-17
 ---
 
 **Last updated 17th April 2020**

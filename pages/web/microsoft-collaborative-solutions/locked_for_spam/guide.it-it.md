@@ -4,6 +4,7 @@ slug: blocco-per-spam
 excerpt: 'Cosa fare se il tuo indirizzo email è bloccato per invio di Spam'
 section: 'Diagnostica Exchange'
 order: 03
+updated: 2020-04-20
 ---
 
 **Ultimo aggiornamento: 16/03/2020**

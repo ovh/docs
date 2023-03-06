@@ -1,10 +1,10 @@
 ---
 title: 'Utiliser les alias et redirections e-mail'
 slug: guide-des-redirections-emails
-legacy_guide_number: 2001
-excerpt: 'Découvrez comment gérer vos redirections e-mail'
+excerpt: 'Découvrez comment gérer vos alias et redirections e-mail'
 section: 'Fonctionnalités des adresses e-mail'
 order: 01
+updated: 2020-05-20
 ---
 
 <style>
@@ -18,6 +18,8 @@ order: 01
 ## Objectif
 
 Vous trouverez dans ce guide différentes informations et aides concernant la configuration de vos redirections et alias e-mail, par exemple pour renvoyer des e-mails reçus sur une adresse A vers une adresse B.
+
+**Découvrez comment gérer vos alias et redirections e-mail**
 
 ### Qu'est-ce qu'une redirection e-mail ?
 
@@ -50,7 +52,7 @@ Par exemple, votre adresse e-mail est **john.smith@mydomain.ovh** et votre alias
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/)).
+- Disposer d'une solution e-mail OVHcloud préalablement configurée (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telle que [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)).
 
 ## En pratique
 
@@ -69,7 +71,7 @@ Pour ces deux exceptions, consultez directement le chapitre « [Créer une redir
 > |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 > |---|---|
 > |![email](images/mxplan-starter-legacy.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new.png){.thumbnail}<br>Repérez la `Référence serveur` dans le cadre « Résumé »|
-> |Poursuivez la lecture à « [Version historique de l'offre MX Plan](#mxplanlegacy) »|Poursuivez la lecture à  [Créer une redirection](#redirect) ou [Créer un alias](#alias)|
+> |Poursuivez la lecture à « [Version historique de l'offre MX Plan](#mxplanlegacy) »|Poursuivez la lecture à [Créer une redirection](#redirect) ou [Créer un alias](#alias)|
 
 ### Créer une redirection <a name="redirect"></a>
 
@@ -86,7 +88,7 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > [!tabs]
 > **Etape 1**
 >>
->> Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovh.com/fr/mail/), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
+>> Une fois connecté à votre adresse e-mail via le [webmail](https://www.ovhcloud.com/fr/mail/), cliquez sur la roue crantée en haut à droite puis sur `Options`{.action}.<br><br>
 >> ![emails](images/emails-all-01.png){.thumbnail}<br>
 >>
 > **Etape 2**
@@ -102,22 +104,23 @@ Suivez les étapes décrites en cliquant successivement sur chaque onglet ci-des
 > **Etape 4**
 >>
 >> **Nom** : définissez le nom de votre redirection. <br>
->> **Lorsque le message arrive et remplit toutes ces conditions** : si votre redirection s'applique à tous les messages, sélectionnez `[Appliquer à tous les messages]`{.action}.<br>
+>> **Lorsque le message arrive et remplit toutes ces conditions** : si votre redirection s'applique à tous les messages, sélectionnez `[Appliquer à tous les messages]`{.action}.<br><br>
 >>![emails](images/emails-all-04.png){.thumbnail .w-640}<br><br>
 >>
 > **Etape 5**
 >>
->> **Effectuer toutes les opérations suivantes** : c'est ici que vous appliquez la redirection, selectionnez **Transférer, rediriger ou envoyer** puis **Rediriger le message vers...** . 
+>> **Effectuer toutes les opérations suivantes** : c'est ici que vous appliquez la redirection, selectionnez `Transférer, rediriger ou envoyer`{.action} puis `Rediriger le message vers...`{.action}.<br><br>
 >>![emails](images/emails-all-05.png){.thumbnail .w-640}<br><br>
 >>
 > **Etape 6**
 >>
->> Tapez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant **Rediriger le message vers...** puis cliquez sur `Enregistrer`{.action}. Cliquez enfin sur `OK`{.action} (icône de disquette) pour finaliser votre redirection.<br>
+>> Tapez ensuite l'adresse vers laquelle vous souhaitez rediriger l'e-mail devant «**Rediriger le message vers...**» puis cliquez sur `Enregistrer`{.action}. Cliquez enfin sur `OK`{.action} (icône de disquette) pour finaliser votre redirection.<br><br>
 >>![emails](images/emails-all-06.png){.thumbnail .w-640}<br><br>
 >>
 
 > [!primary]
-> Pour appliquer une **redirection simple** (voir le [schéma 1](#diagram) au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur **Déplacer, copier ou supprimer** et enfin cliquez sur **supprimer le message**. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.
+>
+> Pour appliquer une **redirection simple** (voir le [schéma 1](#diagram) au début de ce guide), ajoutez une règle supplémentaire à votre **redirection avec copie locale** depuis cette fenêtre. Cliquez sur `Ajouter une action`{.action} (cadre 1) puis sur `Déplacer, copier ou supprimer`{.action} et enfin cliquez sur `supprimer le message`{.action}. Cette règle place directement le message dans la corbeille, après avoir redirigé le message vers l'adresse de redirection.<br><br>
 > ![emails](images/emails-all-07.png){.thumbnail .w-640}
 
 ### Créer un alias <a name="alias"></a>
@@ -156,7 +159,7 @@ Cliquez sur le bouton `...`{.action} à droite de l'alias concerné, dans le men
 
 ![emails](images/email-alias04.png){.thumbnail}
 
-#### Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
+### Créer une redirection ou un alias sur une offre MX Plan historique ou un nom de domaine sans offre e-mail <a name="mxplanlegacy"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`. Dirigez-vous dans la sections `Emails`{.action} :
 
@@ -177,14 +180,14 @@ La méthode pour créer un alias ou une redirection est strictement la même. Su
 >> **De l'adresse** : renseignez ici l'adresse e-mail que vous souhaitez rediriger.<br><br>
 >> **Vers l'adresse**: renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.<br><br>
 >> **Choisissez un mode de copie**: choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVHcloud** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection)<br> *cf. le [schéma 2](#diagram) au début de ce guide.*<br><br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma 1](#diagram) au début de ce guide.*<br><br>
->> Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.<br>
->>
+>> Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.<br><br>
 >> ![emails](images/mxplan-legacy-3.png){.thumbnail}
 
 
 > [!primary]
+>
 > Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des redirections, elle matérialise cette copie locale.
-> 
+>
 
 ## Aller plus loin
 

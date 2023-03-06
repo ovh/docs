@@ -1,10 +1,10 @@
 ---
-title: Dostęp do interfejsu zarządzania NSX
+title: Dostęp do interfejsu zarządzania NSX-v
 slug: dostep-interfejs-nsx
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/'
-excerpt: Find out how to use the NSX interface
-section: NSX
+excerpt: Find out how to use the NSX-v interface
+section: NSX-v
 order: 1
 updated: 2021-11-17
 ---

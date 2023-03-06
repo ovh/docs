@@ -3,6 +3,7 @@ title: 'Delegating permissions on an email account'
 slug: emailpro-delegation
 section: 'Getting started'
 order: 5
+updated: 2020-10-24
 ---
 
 **Last updated 24th October 2020**

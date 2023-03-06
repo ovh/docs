@@ -4,6 +4,7 @@ excerpt: 'Przewodnik dotyczący korzystania z programu Cyberduck (MAC)'
 slug: hosting_www_przewodnik_dotyczacy_korzystania_z_programu_cyberduck_mac
 section: 'FTP i SSH'
 order: 05
+updated: 2022-12-01
 ---
 
 ## Wprowadzenie 

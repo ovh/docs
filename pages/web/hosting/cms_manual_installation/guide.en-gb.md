@@ -4,6 +4,7 @@ excerpt: 'Find out more about some of the compatible CMS for Web Hostings'
 slug: hosting_install_your_cms_manually
 section: CMS
 order: 03
+updated: 2020-02-04
 ---
 
 **Last updated 4th February 2020**

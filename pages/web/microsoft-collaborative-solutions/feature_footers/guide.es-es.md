@@ -4,6 +4,7 @@ excerpt: 'Cómo agregar firmas automáticas a sus cuentas de correo electrónico
 slug: exchange_20132016_firma_automatica_disclaimer
 section: Funcionalidades de las cuentas Exchange
 order: 07
+updated: 2020-03-26
 ---
 
 **Última actualización: 26/3/2020**

@@ -4,9 +4,10 @@ slug: installation-de-composer-sur-les-hebergements-mutualises
 excerpt: Découvrez comment installer et faire vos premiers pas sur Composer.
 section: PHP
 order: 02
+updated: 2023-02-24
 ---
 
-**Dernière mise à jour le 09/12/2022**
+**Dernière mise à jour le 24/02/2023**
 
 ## Objectif
 
@@ -18,7 +19,7 @@ order: 02
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 > 
 
 ## Prérequis
@@ -87,6 +88,10 @@ php composer.phar install
 Pour utiliser cette librairie, vous pouvez vous référer à la documentation, ainsi qu'au code, disponibles sur [github](https://github.com/ovh/php-ovh){.external}
 
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
