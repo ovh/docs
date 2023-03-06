@@ -4,7 +4,7 @@ slug: premiere-configuration-exchange
 excerpt: Débutez avec un service Hosted Exchange
 section: Premiers pas avec Exchange
 order: 01
-updated: 2023-03-02
+updated: 2023-03-06
 ---
 
 <style>
@@ -13,7 +13,7 @@ updated: 2023-03-02
 }
 </style>
 
-**Dernière mise à jour le 02/03/2023**
+**Dernière mise à jour le 06/03/2023**
 
 ## Objectif 
 
@@ -59,14 +59,14 @@ Choisissez un de vos noms de domaine dans la liste ou cochez la case `Mon nom de
 
 La question « **Allez-vous utiliser uniquement l'offre Exchange OVH avec ce domaine ?** » va déterminer le type de configuration de votre nom de domaine. 
 
-- Si vous utilisez une offre Exchange seule ou avec d'autres offres **e-mail OVHcloud**, la configuration pourra se faire automatiquement ou manuellement en utilisant uniquement les serveurs e-mail d'OVHcloud.
-- Si vous utilisez votre offre Exchange en complément avec un service e-mail **externe aux offres e-mail OVHcloud**, il vous sera demandé de renseigner l'URL du serveur de réception de votre service e-mails externe sous la mention `Serveur relais (SMTP)`
+- Si vous utilisez une offre Exchange seule ou avec d'autres offres **e-mail OVHcloud**, la configuration pourra se faire automatiquement, ou manuellement en utilisant uniquement les serveurs e-mail d'OVHcloud.
+- Si vous utilisez votre offre Exchange en complément d'un service e-mail **externe aux offres e-mail OVHcloud**, il vous sera demandé de renseigner, sous la mention `Serveur relais (SMTP)`, l'URL du serveur de réception de votre service e-mail externe.
 
 ![email](images/exchange-wizard02.png){.thumbnail}
 
 #### Comment souhaitez-vous configurer votre zone DNS ?
 
-- **Configuration automatique** : Le nom de domaine renseigné sera automatiquement configuré au niveau de sa Zone DNS si ce dernier est géré par OVHcloud sur le même identifiant client que votre service Exchange.
+- **Configuration automatique** : Le nom de domaine renseigné sera automatiquement configuré au niveau de sa Zone DNS, si ce dernier est géré par OVHcloud sur le même identifiant client que votre service Exchange.
 - **Configuration manuelle** : Le nom de domaine n'est pas géré dans le même espace client que votre plateforme, il est géré chez un autre prestataire de nom de domaine, ou vous souhaitez simplement réaliser votre configuration vous-même.<br> Vous pourrez alors retrouver les valeurs à renseigner à la fin du processus de configuration, ou dans la section `Domaines associés`{.action} de votre plateforme.
 
 ![email](images/exchange-wizard03.png){.thumbnail}
@@ -79,9 +79,10 @@ Déterminez le nom de vos adresses e-mail Exchange et ajoutez des informations c
 
 #### **Cas particulier**
 
-- Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme ou chez un autre prestataire de nom de domaine, vous obtiendrez la fenêtre suivante :<br>
+- Si vous configurez votre plateforme Exchange avec un nom de domaine qui n'est pas géré sur le même espace client que cette plateforme, ou chez un autre prestataire de nom de domaine, vous obtiendrez la fenêtre suivante :<br>
 ![email](images/exchange-wizard05.png){.thumbnail .w-640}<br>
 Cette fenêtre vous invite à ajouter un **champ CNAME** dans la zone DNS du nom de domaine. Cette entrée a pour but de vérifier que vous gérez bien ce nom de domaine.<br>
+
 > [!warning]
 > Sans cette validation par champ CNAME, il est impossible d'utiliser la plateforme avec ce nom de domaine.
 
@@ -132,7 +133,8 @@ Une fois vos comptes configurés, il ne reste plus qu’à les utiliser. Pour ce
 
 Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un périphérique comme un smartphone ou une tablette, consultez notre documentation accessible depuis ce portail : [https://docs.ovh.com/fr/microsoft-collaborative-solutions/](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}. Pour une utilisation optimale de votre adresse Exchange sur un logiciel, assurez-vous de sa bonne compatibilité avec le service.
 
-OVHcloud propose des licences Outlook en option avec votre compte e-mail Exchange depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. 
+OVHcloud propose, depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, des licences Outlook en option avec votre compte e-mail Exchange.
+
 Pour y souscrire, consultez notre page « [Obtenir une licence Outlook pour Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-licence-outlook-exchange-2013/) ». 
 
 Vous pouvez également obtenir des licences Office 365 sur la page [https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/){.external}. Nous vous recommandons l'une de ces solutions si vous souhaitez bénéficier du logiciel de messagerie Outlook ou de plus de logiciels de la suite Office, selon vos besoins.
