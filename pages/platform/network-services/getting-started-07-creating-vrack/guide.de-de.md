@@ -28,7 +28,7 @@ Das OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/) ist ein privates Netzw
 
 ## Vorstellung der Interfaces
 
-Ob Sie Ihr vRack neu erstellen oder eine Instanz zum Netzwerk hinzufügen möchten, Sie können dazu das OVHcloud Kundencenter, die OVHcloud APIv6, die OpenStack API, das Horizon-Interface verwenden oder die Terraform.
+Ob Sie Ihr vRack neu erstellen oder eine Instanz zum Netzwerk hinzufügen möchten, Sie können dazu das OVHcloud Kundencenter verwenden, die OVHcloud APIv6, die OpenStack API, das Horizon-Interface oder Terraform.
 
 Je nach Ihrem technischen Profil und Ihren Bedürfnissen müssen Sie entscheiden, welches Interface oder welche Methode Sie verwenden. Für jede Aktion werden nachfolgend die möglichen Vorgehensweisen erklärt.
 
@@ -51,7 +51,7 @@ Dieses umfassende technische Interface erlaubt es Ihnen, fast alle Aktionen in O
 Lesen Sie die [Anleitung zu Horizon](https://docs.ovh.com/de/public-cloud/horizon/), um sich mit dem Interface vertraut zu machen.
 
 > [!primary]
-> Horizon mit Zonenfunktion: Denken Sie daran, Ihre Arbeitszone oben links in Ihrem Interface zu wählen (GRA5, SBG3, BHS1...).
+> Horizon mit Zonenfunktion: Denken Sie daran, Ihre Arbeitszone oben links in Ihrem Interface zu wählen (GRA5, SBG3, BHS1, etc.).
 >
 
 ### OVHcloud APIv6
@@ -95,14 +95,14 @@ Sie können dann bei Bedarf die dedizierten OpenStack APIs verwenden:
 > In einigen Fällen wird es einfacher sein, die OpenStack API zu verwenden, in anderen Fällen die APIs von Nova oder Neutron. 
 >
 > Je nach Version Ihres Clients und Betriebssystems können auch bestimmte Funktionen der OpenStack API fehlen. In dieser Anleitung werden je die einfachsten und intuitivsten Vorgehensweisen erklärt.<br>
-> Sie können auch [die offizielle Dokumentation von OpenStack einsehen](https://docs.openstack.org/xena/){.external}, wenn Sie diese tiefergehend verwenden möchten.
+> Sie können auch [die offizielle Dokumentation von OpenStack einsehen](https://docs.openstack.org/xena/){.external}, wenn Sie die API tiefergehend verwenden möchten.
 >
 
 ### Terraform
 
-Terraform kann auch für die Verwaltung von OVHcloud-Infrastrukturen verwendet werden.
+Terraform kann auch für die Verwaltung von OVHcloud Infrastrukturen verwendet werden.
 
-Dazu müssen Sie den richtigen Terraform-Anbieter und die richtige Terraform-Ressource auswählen. Weitere Informationen finden Sie in unserem Leitfaden zur [Nutzung von Terraform mit Terraform (EN)](https://docs.ovh.com/de/api/terraform-at-ovhcloud/).
+Dazu müssen Sie den richtigen Terraform-Anbieter und die richtige Terraform-Ressource auswählen. Weitere Informationen finden Sie in unserer Anleitung zur [Nutzung von Terraform mit OVHcloud (EN)](https://docs.ovh.com/de/api/terraform-at-ovhcloud/).
 
 ## In der praktischen Anwendung
 
@@ -206,27 +206,27 @@ Wenn Sie Ihre Wahl getroffen haben, klicken Sie auf `Erstellen`{.action}, um den
 
 #### Erstellen eines privaten Netzwerks mit der OVHcloud APIv6 <a name="vlansetup"></a>
 
-Um ein privaten Netzwerks mit der OVHCloud APIv6 zu erstellen, folgen Sie [diesem Abschnitt](https://docs.ovh.com/de/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) der entsprechenden Anleitung.
+Um ein privates Netzwerk mit der OVHCloud APIv6 zu erstellen, folgen Sie [diesem Abschnitt](https://docs.ovh.com/de/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) der entsprechenden Anleitung (EN).
 
+ 
+#### Ein privates Netzwerk über OpenStack CLI erstellen
 
-#### Ein privates Netzwerk über das OpenStack CLI erstellen.
-
-Um das gleiche private Netzwerk zu erstellen, müssen Sie 2 OpenStack-Objekte erstellen: network und subnet.
+Um das gleiche private Netzwerk zu erstellen, müssen Sie 2 OpenStack-Objekte erstellen: *network* und *subnet*.
 
 Im folgenden Beispiel geben wir die `VLAN_ID`, zu der das Netzwerk gehören soll, über `--provider-network-type` und `--provider-segment` an.
 
-Sie können diese Einstellungen entfernen. In diesem Fall wird eine verfügbare `VLAN_ID` verwendet.
+Sie können diese Einstellungen auch entfernen. In diesem Fall wird eine verfügbare `VLAN_ID` verwendet.
 
 ```bash 
 openstack network create --provider-network-type vrack --provider-segment 42 OS_CLI_private_network
 openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.0.0.0/16
 ```
 
-#### Erstellen Sie ein privates Netzwerk über Terraform.
+#### Ein privates Netzwerk über Terraform erstellen
 
-In Terraform muss der Provider openstack verwendet werden. Ein vollständiges Beispiel für ein Terraform-Skript können Sie in [diesem Repository](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network) herunterladen.
+In Terraform muss der Provider *openstack* verwendet werden. Ein vollständiges Beispiel für ein Terraform-Skript können Sie in [diesem Repository](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network) herunterladen.
 
-Der OVHcloud-spezifische Teil für die vRack-Integration ist der Parameter `value_specs`.
+Der bezüglich OVHcloud relevante Part für die vRack-Integration ist der Parameter `value_specs`.
 
 ```hcl
 resource "openstack_networking_network_v2" "tf_network" {
