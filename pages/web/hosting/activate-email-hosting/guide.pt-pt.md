@@ -4,10 +4,14 @@ slug: ativar-e-mail-alojamento-web
 excerpt: 'Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web'
 section: Primeiros passos
 order: 07
-updated: 2022-11-18
+updated: 2023-03-02
 ---
 
-**Última atualização: 02/09/2020**
+**Última atualização: 02/03/2023**
+
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
 ## Objetivo
 
@@ -34,6 +38,9 @@ Na tabela `Configuração`, poderá ver a menção `Endereços de e-mail`. Cliqu
 Aparecerá a janela de ativação. Escolha o nome de domínio ao qual pretende associar os seus endereços de e-mail e valide a sua escolha.
 
 ![Ativação de e-mail](images/mail-hosting02.png){.thumbnail}
+
+> [!primary]
+> Se deseja usufruir de mais contas de e-mail incluídas, convidamos a encomendar uma [oferta de alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} superior a partir da nossa página comercial.
 
 ### Conservação de endereços de e-mail antes da expiração do alojamento web
 
@@ -67,6 +74,9 @@ Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Ender
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
 
