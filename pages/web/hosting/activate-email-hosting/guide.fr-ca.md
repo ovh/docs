@@ -4,10 +4,10 @@ slug: activer-email-hebergement-web
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
 section: 'Premiers pas'
 order: 07
-updated: 2022-11-18
+updated: 2023-03-02
 ---
 
-**Dernière mise à jour le 17/08/2020**
+**Dernière mise à jour le 02/03/2023**
 
 ## Objectif
 
@@ -34,6 +34,9 @@ Dans le cadre `Configuration`, vous trouverez la mention `Adresses e-mails`. Cli
 La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous souhaitez attacher vos adresses e-mail puis validez votre choix.
 
 ![email-activation](images/mail-hosting02.png){.thumbnail}
+
+> [!primary]
+> Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} supérieure depuis notre page commerciale.
 
 ### Conservation de vos adresses e-mail avant expiration de l'hébergement web
 
@@ -67,4 +70,8 @@ Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
