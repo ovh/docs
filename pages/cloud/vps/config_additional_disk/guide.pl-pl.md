@@ -4,14 +4,14 @@ excerpt: "Dowiedz się, jak dodać i skonfigurować dodatkową przestrzeń dysko
 slug: config-additional-disk-vps
 section: 'Opcje kopii zapasowych'
 order: 3
-updated: 2021-02-24
+updated: 2023-02-15
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 24/02/2021**
+**Ostatnia aktualizacja z dnia 15-02-2023**
 
 ## Wprowadzenie
 
@@ -65,7 +65,7 @@ sdb       8:16   0   50G  0 disk
 
 W tym przykładzie dodatkowy dysk jest nazywany `sdb`.
 
-Uruchom `fdisk`, aby utworzyć partycję na dysku. Po zaproszeniu, wprowadź `n` dla nowej partycji i zaakceptuj następujące wartości domyślne, naciskając Enter (" ↩"). Następnie użyj polecenia `w` , aby zapisać zmiany na dysku.
+Uruchom `fdisk`, aby utworzyć partycję na dysku. Po zaproszeniu, wprowadź `n` dla nowej partycji i zaakceptuj następujące wartości domyślne, naciskając "Enter". Następnie użyj polecenia `w` , aby zapisać zmiany na dysku.
 
 ```
 $ sudo fdisk /dev/sdb
@@ -200,11 +200,11 @@ Jeśli dysk jest oznaczony jako niepołączony, musi zostać najpierw zainicjowa
 
 ##### **Zainicjowanie dysku w narzędziu "Zarządzanie dyskami"** <a name="initDiskManagement"></a>
 
- Kliknij prawym przyciskiem myszy na dysk i wybierz `Online`{.action}. 
+Kliknij prawym przyciskiem myszy na dysk i wybierz `Online`{.action}. 
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 
- Kliknij prawym przyciskiem myszy na dysk i wybierz tym razem `Zainicjuj dysk`{.action}.
+Kliknij prawym przyciskiem myszy na dysk i wybierz tym razem `Zainicjuj dysk`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win04.png){.thumbnail}
 
@@ -214,7 +214,7 @@ Wybierz `MBR`{.action} (główny sektor rozruchu) w nowym oknie i kliknij `OK`{.
 
 ##### **Zainstaluj dysk za pomocą DISKPART** <a name="initDiskpart"></a>
 
- Kliknij prawym przyciskiem myszy na `Menu Start`{.action} i otwórz `Uruchom`{.action}.
+Kliknij prawym przyciskiem myszy na `Menu Start`{.action} i otwórz `Uruchom`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win06.png){.thumbnail}
 

@@ -35,7 +35,7 @@ Um Ihr System optimal zu schützen, verfügt Ihr Windows Server über eine integ
 
 ### Schritt 1: Windows Firewall konfigurieren
 
-Um auf die Windows Firewall zuzugreifen, befolgen Sie folgenden Befehl:
+Um auf die Windows Firewall zuzugreifen, führen Sie die folgenden Schritte aus:
 
 - Öffnen Sie `Start`{.action}.
 - Klicken Sie auf `Suchen`{.action}.

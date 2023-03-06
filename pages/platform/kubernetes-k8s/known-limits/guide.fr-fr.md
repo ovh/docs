@@ -5,11 +5,11 @@ slug: known-limits
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/known-limits/'
-updated: 2022-12-15
+updated: 2023-03-03
 ---
 
 
-**Last updated 15th December 2022.**
+**Last updated 3rd March 2023.**
 
 <style>
  pre {
@@ -48,7 +48,7 @@ Note that any operation requested to our services, like node deletions or update
 
 Most worker nodes (be them added manually or through cluster autoscaler) are created within a few minutes, with the exception of GPU worker nodes (t1 and t2 flavors) where ready status can take up to a bit more than one hour.
 
-Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
+Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH into your nodes.
 
 ## Data persistence
 

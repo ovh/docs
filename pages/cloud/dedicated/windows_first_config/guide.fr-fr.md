@@ -1,14 +1,12 @@
 ---
 title: Configurer une nouvelle installation de Windows Server
 slug: windows-first-config
-routes:
-    canonical: 'https://docs.ovh.com/fr/vps/windows-first-config/'
 excerpt: Découvrez comment activer la connexion au bureau à distance et la réponse ICMP
 section: Premiers pas
-updated: 2022-01-18
+updated: 2023-02-14
 ---
 
-**Derniére mise à jour le 18/01/2022**
+**Derniére mise à jour le 14/02/2023**
 
 ## Objectif
 
@@ -25,7 +23,7 @@ Après une nouvelle installation d'un système d'exploitation Windows Server sur
 
 ### Étape 1 : accès au KVM
 
-Pour accéder à la console KVM de votre serveur dédié, consultez le [guide KVM](../utilisation-ipmi-serveurs-dedies/#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents).
+Pour accéder à la console KVM de votre serveur dédié, consultez le [guide KVM](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents).
 
 ### Étape 2 : terminer l'installation de Windows
 
@@ -59,6 +57,30 @@ Vous pouvez activer ici les règles « ICMP » et « Remote Desktop » (bureau �
 
 Votre serveur devrait maintenant répondre aux demandes utilisant ces protocoles.
 
+Pour sécuriser votre système Windows avec des règles de pare-feu, consultez notre guide « [Configurer le pare-feu sous Windows](https://docs.ovh.com/fr/dedicated/firewall-windows/) ».
+
+### Activation des logs de démarrage (boot logs) Windows (facultatif)
+
+L'activation des logs de démarrage (*boot logs*) Windows peut être utile pour les diagnostics d'erreurs du serveur.
+
+Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
+
+![Bootlog](images/windowsboot1.png){.thumbnail}
+
+Entrez "msconfig" et cliquez sur `OK`{.action}.
+
+![Bootlog](images/windowsboot2.png){.thumbnail}
+
+Dans la nouvelle fenêtre, cochez la case à côté de `Boot log`. Cliquez sur `OK`{.action}.
+
+![Bootlog](images/windowsboot3.png){.thumbnail}
+
+Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier .txt. Le chemin du fichier est `C:\Windows\ntbtlog.txt`.
+
+Pour accéder au contenu de ce fichier en mode rescue, veuillez suivre les instructions décrites dans [le guide du mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/).
+
 ## Aller plus loin
+
+[Configurer le pare-feu sous Windows](https://docs.ovh.com/fr/dedicated/firewall-windows/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

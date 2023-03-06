@@ -1,8 +1,8 @@
 ---
-title: 'Proteger un VPS'
+title: "Proteger un VPS"
 slug: consejos-proteccion-vps
-section: 'Primeros pasos'
-excerpt: 'Descubra los elementos básicos que le permiten proteger su VPS'
+section: Primeros pasos
+excerpt: "Descubra los elementos básicos que le permiten proteger su VPS"
 updated: 2022-05-05
 ---
 
@@ -27,7 +27,7 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
 ## Requisitos
 
 - Un [VPS](https://www.ovhcloud.com/es-es/vps/) en su cuenta de OVHcloud.
-- Tener acceso de administrador (root) al servidor por SSH.
+- Tener acceso de administrador (*root*) al servidor por SSH.
 
 ## Procedimiento
 
@@ -35,7 +35,7 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
 >
 > Tenga en cuenta que se trata de una guía general basada en un sistema operativo Ubuntu Server. Tenga en cuenta que algunos comandos deben adaptarse a la distribución que utilice y que algunos consejos le invitan a utilizar herramientas de terceros. Si necesita ayuda, consulte la documentación oficial de estas aplicaciones.
 >
-> Si se trata de su primera configuración de un VPS de OVHcloud, consulte nuestra guía [Primeros pasos con un VPS](../primeros-pasos-con-vps/).
+> Si se trata de su primera configuración de un VPS de OVHcloud, consulte nuestra guía [Primeros pasos con un VPS](https://docs.ovh.com/es/vps/primeros-pasos-con-vps/).
 >
 
 Los siguientes ejemplos implican que está conectado como usuario con permisos muy exigentes.
@@ -53,7 +53,7 @@ Esta actualización consta de dos etapas.
 sudo apt update
 ```
 
-- Actualización de los paquetes propiamente dichos :
+- Actualización de los paquetes propiamente dichos:
 
 ```bash
 sudo apt upgrade
@@ -100,7 +100,7 @@ ssh username@IPv4_of_your_VPS -p NewPortNumber
 
 ### Cambiar la contraseña del usuario root
 
-Le recomendamos encarecidamente que cambie la contraseña del usuario root para evitar que se quede en el valor predeterminado de un nuevo sistema. Para más información, consulte [esta guía](../root-password/).
+Le recomendamos encarecidamente que cambie la contraseña del usuario root para evitar que se quede en el valor predeterminado de un nuevo sistema. Para más información, consulte [esta guía](https://docs.ovh.com/es/vps/root-password/).
 
 ### Crear un usuario con permisos restringidos
 
@@ -162,7 +162,7 @@ Las distribuciones GNU/Linux habituales se entregan con un servicio de cortafueg
 iptables -L
 ```
 
-Para más información sobre iptables, consulte nuestra [guía dedicada](../../dedicated/firewall-iptables/).
+Para más información sobre iptables, consulte nuestra [guía dedicada](https://docs.ovh.com/es/vps/vps-firewall-iptables/).
 
 Le recomendamos que cree y adapte las reglas de firewall en función de su uso. Para más información sobre las diversas operaciones posibles, consulte la documentación oficial de la distribución utilizada.
 
@@ -242,7 +242,7 @@ Para más información y recomendaciones sobre Fail2ban, consulte [la documentac
 
 Las soluciones de OVHcloud incluyen la posibilidad de activar un firewall de red en el punto de entrada de la infraestructura. Una configuración correcta de este cortafuegos permite bloquear las conexiones incluso antes de que lleguen al servidor.
 
-Para activarlo, consulte la guía [Configurar el firewall de red](../../dedicated/firewall-de-red/).
+Para activarlo, consulte la guía [Configurar el firewall de red](https://docs.ovh.com/es/dedicated/firewall-de-red/).
 
 ### Guardar copia de seguridad del sistema y los datos
 
@@ -253,12 +253,14 @@ La protección de sus datos es un elemento clave. Por ese motivo, OVHcloud le of
 - La opción `Snapshot` que permite crear una instantánea manual.
 - La opción de `backup automático` permite conservar copias de seguridad regulares de su VPS (a excepción de los discos adicionales).
 
-En la [página de producto](https://www.ovhcloud.com/es-es/vps/options/) y en las respectivas[ ](../)guías encontrará toda la información sobre las soluciones de backup disponibles para su servicio.
+En la [página de producto](https://www.ovhcloud.com/es-es/vps/options/) y en las [respectivas guías](https://docs.ovh.com/es/vps/) encontrará toda la información sobre las soluciones de backup disponibles para su servicio.
 
 ## Más información
 
-[Primeros pasos con un VPS](../primeros-pasos-con-vps/) 
+[Primeros pasos con un VPS](https://docs.ovh.com/es/vps/primeros-pasos-con-vps/) 
 
-[Configurar el firewall de red](../../dedicated/firewall-de-red/)
+[Configurar el firewall de Windows](https://docs.ovh.com/es/vps/vps-firewall-windows/)
+
+[Configurar el firewall de red](https://docs.ovh.com/es/dedicated/firewall-de-red/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
