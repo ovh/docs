@@ -36,7 +36,7 @@ La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous sou
 ![email-activation](images/mail-hosting02.png){.thumbnail}
 
 > [!primary]
-> Si vous souhaitez bénéficiez davantage de comptes e-mails inclus, nous invitons à commander une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} supérieure depuis notre page commerciale.
+> Si vous souhaitez obtenir davantage de comptes e-mails inclus, nous vous invitons à commander une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} supérieure depuis notre page commerciale.
 
 ### Conservation de vos adresses e-mail avant expiration de l'hébergement web
 
