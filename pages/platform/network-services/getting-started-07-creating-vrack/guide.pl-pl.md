@@ -4,14 +4,14 @@ excerpt: 'Dowiedz się, jak skonfigurować usługę vRack dla instancji Public C
 slug: public-cloud-vrack
 section: Pierwsze kroki
 order: 07
-updated: 2023-01-10
+updated: 2023-03-03
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 11-01-2023**
+**Ostatnia aktualizacja z dnia 03-03-2023**
 
 ## Wprowadzenie
 
@@ -28,7 +28,7 @@ Usługa [vRack](https://www.ovh.pl/rozwiazania/vrack/) to prywatna sieć, która
 
 ## Interfejsy
 
-Tworzenie sieci vRack lub dodawanie instancji do sieci odbywa się przy użyciu Panelu klienta, APIv6 OVHcloud, API OpenStack lub interfejsu Horizon.
+Tworzenie sieci vRack lub dodawanie instancji do sieci odbywa się przy użyciu Panelu klienta, APIv6 OVHcloud, API OpenStack, interfejsu Horizon lub Terraform.
 
 W zależności od profilu technicznego i Twoich potrzeb, do Ciebie należy wybór interfejsu lub metody. Poniższe instrukcje opisują niezbędne etapy dla każdej opcji.
 
@@ -96,6 +96,12 @@ Niniejszy przewodnik prezentuje najprostsze i najbardziej intuicyjne opcje.
 Możesz zapoznać się z [oficjalną dokumentacją OpenStack](https://docs.openstack.org/){.external}, jeśli chcesz dowiedzieć się więcej o jej używaniu.
 >
 
+### Terraform
+
+Terraform umożliwia również zarządzanie infrastrukturą OVHcloud.
+
+W tym celu należy wybrać właściwego dostawcę terraform i zasobów. Więcej informacji zawiera przewodnik [używanie Terraform z OVHcloud (EN)](https://docs.ovh.com/pl/api/terraform-at-ovhcloud/).
+
 ## W praktyce
 
 ### Etap 1: Aktywacja i zarządzanie usługą vRack <a name="activation"></a>
@@ -124,9 +130,9 @@ Aby kontynuować konfigurację vRack, przejdź do sekcji [Tworzenie sieci VLAN w
 
 Aby włączyć i zarządzać usługą vRack za pomocą interfejsu APIv6 OVHcloud, zapoznaj się z [tą częścią](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN), odpowiedniego przewodnika.
 
-### Etap 2: Tworzenie sieci VLAN w ramach usługi vRack
+### Etap 2: Tworzenie sieci prywatnej w ramach usługi vRack
 
-Konieczne jest utworzenie sieci VLAN, aby podłączone instancje mogły komunikować się między sobą.
+Konieczne jest utworzenie sieci prywatnej, aby podłączone instancje mogły komunikować się między sobą.
 
 Dzięki usłudze Public Cloud możesz utworzyć aż do 4 000 sieci VLAN w ramach jednej usługi vRack. Dzięki temu każdy prywatny adres IP może być wykorzystany maksymalnie 4 000 razy.
 Na przykład adres 192.168.0.10 sieci VLAN 2 różni się od adresu IP 192.168.0.10 sieci VLAN 42.
@@ -149,7 +155,7 @@ Za pomocą interfejsu APIv6 OVHcloud możesz spersonalizować wszystkie parametr
 > Ponieważ usługa OpenStack nie jest zlokalizowana na tym samym poziomie, nie będzie możliwe personalizacja sieci VLAN za pośrednictwem interfejsu Horizon ani przez API OpenStack.
 >
 
-#### Tworzenie sieci VLAN w Panelu klienta OVHcloud
+#### Tworzenie sieci prywatnej w Panelu klienta OVHcloud
 
 Po utworzeniu sieci vRack przejdź do sekcji `Private Network`{.action}. 
 
@@ -195,9 +201,46 @@ Po dokonaniu wyboru kliknij `Utwórz`{.action}, aby rozpocząć proces.
 > Utworzenie prywatnej sieci może zająć kilka minut.
 >
 
-#### Tworzenie sieci VLAN za pomocą interfejsu APIv6 OVHcloud <a name="vlansetup"></a>
+#### Tworzenie sieci prywatnej za pomocą interfejsu APIv6 OVHcloud <a name="vlansetup"></a>
 
-Aby utworzyć sieć VLAN przy użyciu interfejsu APIv6 OVHcloud, zapoznaj się z [tą sekcją](https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN), odpowiedniego przewodnika.
+Aby utworzyć sieć VLAN przy użyciu interfejsu APIv6 OVHcloud, zapoznaj się z [tą sekcją](https://docs.ovh.com/pl/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN), odpowiedniego przewodnika.
+
+#### Tworzenie prywatnej sieci za pomocą interfejsu CLI OpenStack
+
+Aby utworzyć tę samą prywatną sieć, musimy utworzyć 2 obiektów OpenStack: network and subnet (sieć i podsieć).
+
+W poniższym przykładzie określamy `VLAN_ID`, do którego chcemy, aby sieć była częścią poprzez `--provider-network-type` i `--provider-segment`.
+
+Możesz usunąć te parametry. W tym przypadku należy użyć dostępnego `VLAN_ID`.
+
+```bash 
+openstack network create --provider-network-type vrack --provider-segment 42 OS_CLI_private_network
+openstack subnet create --dhcp --network OS_CLI_private_network OS_CLI_subnet --subnet-range 10.0.0.0/16
+```
+
+### Tworzenie prywatnej sieci przy użyciu Terraform
+
+Należy skorzystać z usług dostawcy openstack. Przykład kompletnego skryptu terraform możesz pobrać w [to repozytorium](https://github.com/yomovh/tf-at-ovhcloud/tree/main/private_network).
+
+Specyficzną częścią procesu integracji rozwiązania vRack jest parametr `value_specs`.
+
+
+```hcl
+resource "openstack_networking_network_v2" "tf_network" {
+  name = "tf_network"
+  admin_state_up = "true"
+  value_specs = {
+    "provider:network_type" = "vrack"
+    "provider:segmentation_id" = var.vlan_id
+  }
+}
+resource "openstack_networking_subnet_v2" "tf_subnet"{
+  name = "tf_subnet"
+  network_id = openstack_networking_network_v2.tf_network.id
+  cidr = "10.0.0.0/16"
+  enable_dhcp = true
+}
+```
 
 ### Etap 3: Integracja instancji z usługą vRack
 
