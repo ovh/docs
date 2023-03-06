@@ -176,7 +176,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Optimiser les VMs | RA | I |
 | Valider la demande d’un changement de matériel d’infrastructure soumise par OVHcloud | A | R |
 | Planifier les changements demandés par le client | RA | RI |
-| Planifier les changements demandés par le client | RA | RI |
 | Prononcer la recette | RA | C |
 | Déployer les correctifs, mettre à jour et configurer l’ensemble des éléments constitutifs de l’Infrastructure as a Service managée | RI | RA |
 | Réaliser les interventions préventives sur les éléments managés de l’Infrastructure as a Service | A | R |
