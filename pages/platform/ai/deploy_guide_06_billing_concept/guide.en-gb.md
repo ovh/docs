@@ -6,7 +6,7 @@ section: AI Deploy - Guides
 order: 6
 ---
 
-**Last updated 16th February, 2023.**
+**Last updated 7th March, 2023.**
 
 > [!primary]
 >
@@ -34,9 +34,9 @@ During its lifetime, the app will go through the following status:
 - `INITIALIZING`: the app is being started and, if any, the remote data is synchronized. To learn more about data synchronization, please check out the [Data - How it works](https://docs.ovh.com/gb/en/publiccloud/ai/data/#how-it-works) documentation.
 - `RUNNING`: the app is running, you can connect to it and use it. Compute resources (GPUs/CPUs) are allocated to your specific app and HTTP endpoint is available.
 - `SCALING`: the app deployment is scaling up or down, depending of the scaling configuration. While scaling, the app is still available if she was running before.
-- `STOPPING`: the app is stopping, your compute resources are freed, your status is saved.
+- `STOPPING`: the app is stopping, your compute resources are freed. Ephemeral data is deleted.
 - `STOPPED`: the app ended normally. You can restart it whenever you want or delete it.
-- `FAILED`: the app ended in error, e.g. the Docker image does not contains an OVHcloud user and workspace directory.
+- `FAILED`: the app ended in error, e.g. the Docker image is invalid (unreachable, built with linux/arm, ...).
 - `ERROR`: the app ended due to a backend error (issue on OVhcloud side). You may reach our support.
 - `DELETING`: the app is being removed. When it is deleted, you will no longer see it, it will no longer exist.
 - `DELETED`: the app is fully deleted.
@@ -49,20 +49,22 @@ AI Deploy apps are a pay-per-use solution. You only pay for the resources consum
 
 Billing principle is quite simple, you select the amount of compute resource (CPUs or GPUs) you would like to work with and pay only for this.
 
+We **do not provide** a pay-per-call pricing so far.
+
 **Included** in AI Deploy resources:
 
 - AI Deploy managed service (zero infrastructure to manage).
 - Dedicated CPU/GPU compute resources (based on the selected amount).
-- Ephemeral local storage (size depends on the selected compute resources).
-- Workspace storage when app is running.
+- Ephemeral storage when app is running (storage space related to compute resources sizing).
 - Ingress/Egress network traffic.
 - Monitoring tool and live metrics (Grafana).
 
-**Optional** with AI Deploy:
+**Optional**, not included with AI Deploy:
 
 - Remote storage space, based on OVHcloud Object Storage pricing.
-- For this optional Object Storage, Egress traffic.
-- Saved workspace storage. First 10GB are free.
+- For this optional Object Storage, Egress traffic when communicated outside OVHcloud
+- Private Docker registry if any.
+
 
 Visual explanations about paid items:
 
@@ -75,11 +77,11 @@ A more detailed view:
 ### Compute resources details
 
 During the app creation, you can select **compute resources**, known as CPUs or GPUs.
-Their official pricing is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or on the[OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+Their official pricing is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or in the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
 
 Rates for compute are mentioned per hour to facilitate reading of the prices, but the billing granularity remains **per minute**.
 
-Once you select the compute resource, you can specify the scaling strategy:
+Once you select the compute resources, you can specify the scaling strategy:
 
 - **Fixed scaling**: you can specify a fixed amount of replicas, starting at one. Please note that with one replica, you will not benefit from high-availability.
 - **Auto-scaling**: you can specify a minimum and maximum amount of replicas, and a metric that will act as a trigger for scaling up or down (CPU or RAM usage). Each replica will benefit from the compute resource selected before.
@@ -89,25 +91,21 @@ Once you select the compute resource, you can specify the scaling strategy:
 
 #### Ephemeral local storage
 
-Each compute resource (CPU or GPU) comes with local storage, that we can consider ephemeral since this storage space is not saved when you delete an AI Deploy apps.
+Each compute resource (CPU or GPU) comes with local storage, that we can consider ephemeral since this storage space is not saved when you stop or delete an AI Deploy app.
 
 The sizing depends on the selected amount of compute resources, check the details on the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+
+This storage space can be used by your Docker image, for local operations.
 
 #### Remote Object storage
 
 When working with remote data, you pay separately for the storage of this data.
 The pricing of object storage is apart from the app pricing.
 
-#### Workspace storage
-
-If you add data inside  your `/workspace/*`app directory, we will save your data when you stop your app.
-
-This workspace is saved as long as your app is in `STOPPED` state.
-
-- Included: worskpace is included when your app is in "running" and "scaling" state.
-- Paid: the first 10GB are free during 30 consecutive days, then you pay at the price of OVHcloud Object Storage.
-
 ### Pricing examples
+
+For these examples, we will take a pricing as 1,95€ / hour per GPU NVIDIA V100s and 0,03€ / hour per CPU.
+Pricing may vary, please refer to official pricing page.
 
 #### Example 1: a GPU app for 10 hours then deleted
 
@@ -159,4 +157,4 @@ Toal is **15,44 euros**, billed at the end of the month
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
