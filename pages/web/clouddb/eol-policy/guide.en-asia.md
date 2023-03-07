@@ -2,10 +2,10 @@
 title: 'Managed databases EOL policy'
 slug: managed-db-life-cycle-policy
 section: 'Technical resources'
-updated: 2023-02-15
+updated: 2023-03-07
 ---
 
-**Last updated 15rd February 2023**
+**Last updated 7rd March 2023**
 
 ## Objective
 
@@ -27,7 +27,7 @@ At least one of the following 3 solutions:
 
 The products covered by this end-of-life policy are:
 
-- Web Cloud Databases Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/asia/en/hosting/sql_eos_eol/)).
+- Web Cloud Databases Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/asia/en/clouddb/clouddb-eos-eol/)).
 - SharedSQL Web Hosting services, MySQL databases that can be reached through the Web Hosting network ([see announcements](https://docs.ovh.com/asia/en/hosting/sql_eos_eol/)).
 
 ### Definitions and guidelines for the end-of-life policy
