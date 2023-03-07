@@ -290,6 +290,7 @@
             + [Dedicated Cloud FAQ](cloud/private-cloud/faq_private_cloud)
             + [Migrating a PCC to Hosted Private Cloud](cloud/private-cloud/service-migration)
             + [Migrating an infrastructure to a new vDC](cloud/private-cloud/service-migration-vdc)
+            + [Responsibility sharing for the Hosted Private Cloud powered by VMware service](cloud/private-cloud/responsibility-sharing)
         + [Access and Security](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security)
             + [Using Active Directory server as an authentication source (Federation)](cloud/private-cloud/federation)
             + [Keeping your vSphere web client secure](cloud/private-cloud/vsphere_access_security_advices)
