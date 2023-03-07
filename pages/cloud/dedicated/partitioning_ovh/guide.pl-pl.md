@@ -5,7 +5,7 @@ excerpt: 'Find out what the OVHcloud API provides in order to customize the part
 section: 'RAID & dyski'
 routes:
     canonical: 'https://docs.ovh.com/gb/en/dedicated/api-partitioning/'
-updated: 2022-11-29
+updated: 2023-03-08
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
@@ -142,6 +142,7 @@ Of course a partition can be altered, deleted, added and then displayed:
 
 #### API Partition Layout
 
+<!-- markdownlint-disable-next-line MD036 -->
 **Structure**
 
 A partiton layout is a list of partitions. Here is an example of a partition structure:
@@ -176,9 +177,13 @@ A partiton layout is a list of partitions. Here is an example of a partition str
 <!-- markdownlint-disable-next-line MD028 -->
 > [!primary]
 >
-> volumeName: only useful if type lv is set
+> volumeName : two use cases
+>
+> - type lv is set: logical volume name (mandatory)
+> - filesystem is zfs: custom zpool name and its dataset prefixes (optional, zpool name will be automatically generated if not specified)
 >
 
+<!-- markdownlint-disable-next-line MD036 -->
 **Filesystems & LVM + RAID levels Comptibility Matrix**
 
 The following table provides an overview of filesystem compatibility with RAID levels as well as LVM within the context of OVHcloud:
@@ -280,6 +285,7 @@ The following table gives an overview of well known customer errors and how to f
 |Error with MBR partition table: partition `p` cannot end after 2 TiB (`interval stop`) and this server does not support GPT! OVHcloud also needs to add a `cloud-init size` cloud-init partition at the very end of the disk. Therefore all customer partitions must end before (2TiB - `cloud-init size`).|- We need to add a config-drive partition at the end of 1 disk on your dedicated server. The last partition of your partitioning will end after the 2TiB position on disk. So appending a config-drive partition after the last partition will start after 2TiB position on disk and you are trying to apply such partitioning to a server that doesn't support GPT|- Reduce the partition `p` size (or any other partition) so that the total sum of all partitions size is less than 2TiB<br />- Do not define a partition that fills the disk (or partition with size 0 when defined within the [OVHcloud API](https://api.ovh.com/)) on a [customer template](#customertemplates) that will be used for servers with disks bigger than 2TiB that don't support GPT|
 |`/boot` (or `/` if no `/boot` defined) partition cannot be larger than 2097151 MiB on this hardware|- GRUB partition cannot be larger than 2 TiB with this hardware raid controller|- Create a separate `/boot` partition with a size less than 2TiB (1GiB should be enough)|
 |`/boot` (or `/` if no `/boot` defined) partition type cannot be `XFS`|- GRUB partition doesn't support `XFS` filesystem type on this Operating System. This is the case for most of debian-like OSes (debian, proxmox, ubuntu)|- Create a separate `/boot` partition with filesystem other than `XFS`<br />- Don't create a separate `/boot` partition but choose a filesystem other than `XFS` for the `/` partition|
+|`ZFS` partition already exists with zpool name `n`. Either choose another name for the `m` partition or set the same RAID level for all partitions within zpool `n`|Assigning multiple `ZFS` partitions to the same zpool name is possible: it means each dataset will be part of the same zpool. This is possible only if all the datasets (therefore the partitions defined via the API) have the same RAID level|- Set the same RAID level as on the existing `ZFS` partition which will be part of the same zpool<br />- Choose another zpool name: this partition will not be part of the same zpool<br />- Don't provide any zpool name: we will assign a default zpool name and this partition will not be part of the same zpool|
 
 #### Input customer auto-fixing
 
@@ -287,7 +293,7 @@ In order to improve customer experience, reduce [OVHcloud support](https://help.
 
 |Subject|Description|
 |---|---|
-|ZP grouping|All ZFS partitions with the same RAID level will be grouped within the same zpool (ZP) (if possible depending on the size of the disks)|
+|ZP grouping|All ZFS partitions with the same RAID level will be grouped within the same zpool (ZP) if possible depending on the size of the disks and if the same zpool name is provided or no zpool name is provided|
 |LV grouping|All partitions of type `lv` with the same RAID level will be grouped within the same VG (if possible depending on the size of the disks)|
 |VG expanding|In case of LV partitions with a RAID level of 0, the VG will span multiple PPs (therefore PDs) and no SR device will be created|
 |VG Disk fill|Remaining disk space will be filled by a VG (if any LV exists). The size of LVs attached to the VG is not affected.|
