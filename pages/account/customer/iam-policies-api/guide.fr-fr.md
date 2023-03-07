@@ -1,63 +1,63 @@
 ---
-title: "Comment utiliser les politiques IAM via l’API OVHcloud (EN)"
+title: "Comment utiliser les politiques IAM via l’API OVHcloud"
 slug: iam-policies-api
-excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
+excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
 section: 'Utilisation avancée'
 order: 03
-updated: 2023-03-01
+updated: 2023-03-07
 routes:
     canonical: 'https://docs.ovh.com/gb/en/customer/iam-policies-api/'
 ---
 
-**Last updated 1st March 2023**
+**Dernière mise à jour le 07/03/2023**
 
 > [!warning]
 >
-> This feature is currently in beta. To join the beta, subscribe here: <https://labs.ovhcloud.com/en/>
+> Cette fonctionnalité est actuellement en version bêta. Pour rejoindre la version bêta, inscrivez-vous ici : <https://labs.ovhcloud.com/en/>
 >  
 
-## Objective
+## Objectif
 
-This guide will explain how to provide specific access rights to users of an OVHcloud account.
+Ce guide explique comment fournir des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud.
 
-The access management of OVHcloud is based on a "policy" management system. It is possible to write different "policies" that give users access to specific features on the products linked to an OVHcloud account.
+La gestion des accès d'OVHcloud est basée sur un système de gestion de "politiques". Il est possible d'écrire différentes "politiques" qui donnent aux utilisateurs l'accès à des fonctionnalités spécifiques sur les produits liés à un compte OVHcloud.
 
-In details, a policy contains:
+Dans le détail, une politique contient :
 
-- One or more **identities** targeted by this policy. 
-    - It can be account IDs, users or user groups (like the ones used in [federation](https://docs.ovh.com/fr/customer/connect-saml-sso/)). 
-- One or more **resources** impacted by this policy. 
-    - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
-- One or more **actions** allowed or excepted by this policy. 
-    - Actions are the specific rights affected by this policy (reboot the server, create an email account, terminate a product, etc.)
+- Une ou plusieurs **identités** ciblées par cette politique. 
+    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés dans l'[Active Directory Federation Services (ADFS)](https://docs.ovh.com/fr/customer/connect-saml-sso/)). 
+- Une ou plusieurs **ressources** impactées par cette politique. 
+    - Une ressource est un produit OVHcloud qui sera impacté par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.)
+- Une ou plusieurs **actions** autorisées ou exceptées par cette politique. 
+    - Les actions sont les droits spécifiques affectés par cette politique (redémarrer le serveur, créer un compte email, résilier un produit, etc).
 
-For instance, we can create a policy to give to a user called John, for a VPS, access to the action "reboot".
+Par exemple, nous pouvons créer une politique pour donner à un utilisateur appelé John, pour un VPS, l'accès à l'action "reboot".
 
-**This guide explains in detail how these policies can be declared using the OVHcloud API, and how to list the identities, resources and actions available for them.**
+**Décourez en détail comment ces politiques peuvent être déclarées en utilisant l'API d'OVHcloud, et comment lister les identités, ressources et actions disponibles pour celles-ci.**
 
 ![IAM Policies](images/iam_policies.png){.thumbnail}
 
-## Requirements
+## Prérequis
 
-To set up a policy, you will require:
+Pour mettre en place une politique, vous aurez besoin :
 
-- An [OVHcloud account](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/).
-- To know [how to manage account users](https://docs.ovh.com/fr/customer/gestion-utilisateurs/).
-- Some OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
+- D'un [compte client OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
+- Savoir [gérer des comptes utilisateurs](https://docs.ovh.com/fr/customer/gestion-utilisateurs/)
+- Disposer de produits liés à votre compte OVHcloud (Load Balancer, nom de domaine, VPS, etc.)
 
-## Instructions
+## En pratique
 
-### Policies
+### Les politiques
 
-This first part describes how to create and update policies.
+Cette première partie décrit comment créer et mettre à jour des politiques.
 
-Resources, resource groups and actions needed to create a policy will be described in the next sections.
+Les ressources, les groupes de ressources et les actions nécessaires à la création d'une politique seront décrits dans les sections suivantes.
 
-#### API definition
+#### Définition de l'API
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
 
-|**Method**|**Path**|**Description**|
+|**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
 |GET|/iam/policy|Retrieve all policies|
 |POST|/iam/policy|Create a new policy|
@@ -65,13 +65,13 @@ Resources, resource groups and actions needed to create a policy will be describ
 |PUT|/iam/policy/{policyId}|Update an existing policy|
 |DELETE|/iam/policy/{policyId}|Delete the given policy|
 
-#### Retrieve all policies
+#### Récupérer toutes les politiques
 
-The following example shows how a policy is built.
+L'exemple suivant montre comment une politique est construite.
 
-Find all policies, including those pregenerated by OVHcloud, by calling the API endpoint: **/iam/policy**
+Trouvez toutes les politiques, y compris celles pré-générées par OVHcloud, en appelant le point de sortie de l'API : **/iam/policy**
 
-*Example output:*
+*Exemple de sortie :*
 
 **/iam/policy**
 
@@ -103,44 +103,44 @@ Find all policies, including those pregenerated by OVHcloud, by calling the API 
 ]
 ```
 
-In this example, the account "*urn:v1:eu:identity:account:xx1111-ovh*" can do every action (*"action":"\*"*) to the group of resources "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*". This policy is owned by "*xx1111-ovh*" (it corresponds to the admin role, it is created by OVHcloud and cannot be modified).
+Dans cet exemple, le compte "*urn:v1:eu:identity:account:xx1111-ovh*" peut faire toutes les actions (*"action":"\*"*) pour le groupe de ressources "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*". Cette police est détenue par l'idientifiant client OVHcloud "*xx1111-ovh*" (il correspond au rôle d'administrateur, il est créé par OVHcloud et ne peut pas être modifié).
 
-Items in policies are defined by URNs. These URNs are defined by the following pattern:
+Les éléments des politiques sont définis par des URN. Ces URNs sont définis par le modèle suivant :
 
-||**urn**|**:**|**version**|**:**|**plate**|**:**|**type**|**:**|**sub-type**|**:**|**id**|
+||**URN**|**:**|**version**|**:**|**plaque**|**:**|**type**|**:**|**sous-type**|**:**|**id**|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-|**Description**|immutable prefix|:|version of the IAM system|:|Plate where the urn is located|:|Type of the current urn|:|(optional) Subtype for **identity** or **resource** type|:|Unique identifier associated to the urn|
-|**Possible values**|urn|:|v1|:|eu, ca, us|:|identity, resource, resourceGroup|:|<p>For **identity** type: account, user, group</p><p>For **resource** type: any resourceType</p>|:|Alphanumerical value|
+|**Description**|préfixe immuable|:|version du système IAM|:|Plaque où se trouve l'URN|:|Type de l'URN actuelle|:|(optionnel) Sous-type pour les types **identity** ou **resource** |:|Identifiant unique associé à l'URN|
+|**Possible values**|urn|:|v1|:|eu, ca, us|:|identité, resource, resourceGroup|:|<p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p>|:|Valeur alphanumérique|
 |**Account ID Example**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
 |**User group Example**|urn|:|v1|:|eu|;|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-#### Policy attributes
+#### Attributs de la politique
 
-- **id**: Unique identifier of the policy. It follows the UUID format.
-- **owner**: The account that created this policy.
-- **name**: The policy name. It's possible to use this name to organize the policies. There is no format to follow (except that the prefix "ovh-" is reserved for OVHcloud policies).
-- **readOnly**: If true, it indicates that the policy cannot be edited. It often represents policies managed by OVHcloud.
-- **identities**: The identities concerned by the policy. They are specified by a URN. **account**:**account-id** for the account, **user**:**account-id**/**username** for an account user, **group**:**account-id**/**username** for a user group.
-- **resources**: The resources concerned by the policy. They are specified by a URN. **resource** for a resource, **resourceGroup** for a resource group.
-- **permissions**: Can be **allow** or **except**: 
-  - **allow**: Array of actions allowed for the identities regarding the resources. All actions are denied by default.
-  - **except**: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it's necessary to exclude a specific action that otherwise would be included in the wildcard.
-- **createdAt**: Creation date of the policy.
-- **updateAt**: Last update date of the policy.
+- **id**: Identifiant unique de la politique. Il suit le format UUID.
+- **owner**: Le compte qui a créé cette politique.
+- **name**: Le nom de la politique. Il est possible d'utiliser ce nom pour organiser les politiques. Il n'y a pas de format à suivre (sauf que le préfixe "ovh-" est réservé aux politiques OVHcloud).
+- **readOnly**: S'il est vrai, il indique que la politique ne peut pas être modifiée. Il représente souvent les politiques gérées par OVHcloud.
+- **identities**: Les identités concernées par la politique. Elles sont spécifiées par un URN. **account**:**account-id** pour le compte client OVHcloud, **user**:**account-id**/**username** pour le compte utilisateur, **group**:**account-id**/**username** pour un groupe utilisateur.
+- **resources**: The resources concerned by the policy. They are specified by a URN. **resource** pour une ressource, **resourceGroup** pour un groupe de ressources.
+- **permissions**: Peut être **allow** ou **except**: 
+  - **allow**: Tableau des actions autorisées pour les identités concernant les ressources. Toutes les actions sont refusées par défaut.
+  - **except**: Extension du paramètre d'autorisation : **allow**. Tableau d'actions à ne pas autoriser même si elles sont incluses dans les actions **autorisées**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard.
+- **createdAt**: Date de création de la politique.
+- **updateAt**: Dernière mise à jour de la politique.
 
-#### Create a policy
+#### Créer une politique
 
-Create a new policy using this API route:
+Créez une nouvelle politique en utilisant cette API :
 
-|**Method**|**Path**|**Description**|
+|**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
 |POST|/iam/policy|Create a new policy|
 
-For example, create a policy to authorise a user named "*user1*" to do some actions on a VPS:
+Par exemple, créer une politique autorisant l'utilisateur nommé "*user1*" à faire des actions sur un VPS:
 
-**create policy example**
+**Exemple de création de politique**
 
 ```json
 {
@@ -167,11 +167,11 @@ For example, create a policy to authorise a user named "*user1*" to do some acti
 }
 ```
 
-This policy is not for an account but for a user, so the identity URN corresponds to the format "*urn:v1:eu:identity:**user**:**account-id**/**username***".
+Cette politique ne concerne pas un compte mais un utilisateur. L'URN de l'identité correspond donc au format suivant : "*urn:v1:eu:identity:**user**:**account-id**/**username***".
 
-With this JSON as body for the `POST /iam/policy` call, the policy will be created.
+Avec ce JSON comme body pour l'appel `POST /iam/policy`, la politique sera créée.
 
-Check it via `GET /iam/policy`:
+Vérifiez cela avec `GET /iam/policy`:
 
 **GET /iam/policies**
 
@@ -229,34 +229,34 @@ Check it via `GET /iam/policy`:
 ]
 ```
 
-The policy has been created successfully. Now, "***user1***" can **carry out reboots and create snapshots** on the VPS "***urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93***".
+La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes instantanées** sur le VPS "***urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93***".
 
-### Identities
+### Identités
 
-Policies apply to users, which can be accounts, users or user groups.
+Les politiques s'appliquent aux utilisateurs, qui peuvent être des comptes, des utilisateurs ou des groupes d'utilisateurs.
 
-This section describes how to retrieve or create user for the policy.
+Cette section décrit comment récupérer ou créer un utilisateur pour la politique.
 
-#### API definition
+#### Définition de l'API
 
 <https://api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
 
-|**Method**|**Path**|**Description**|
+|**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/me/identity/user|Retrieve all users of this account|
-|POST|/me/identity/user|Create a new user|
-|GET|/me/identity/user/{user}|Get details of this specific user|
-|PUT|/me/identity/user/{user}|Alter a user|
-|DELETE|/me/identity/user/{user}|Delete a user|
-|GET|/me/identity/group|Retrieve all groups of this account|
-|POST|/me/identity/group|Create a new group|
-|GET|/me/identity/group/{group}|Get details of this specific group|
-|PUT|/me/identity/group/{group}|Alter a group|
-|DELETE|/me/identity/group/{group}|Delete a group|
+|GET|/me/identity/user|Récupérer tous les utilisateurs de ce compte|
+|POST|/me/identity/user|Créer un nouvel utilisateur|
+|GET|/me/identity/user/{user}|Obtenir les détails de cet utilisateur spécifique|
+|PUT|/me/identity/user/{user}|Modifier un utilisateur|
+|DELETE|/me/identity/user/{user}|Supprimer un utilisateur|
+|GET|/me/identity/group|Récupérer tous les groupes de ce compte|
+|POST|/me/identity/group|Créer un nouveau groupe|
+|GET|/me/identity/group/{group}|Obtenir les détails de ce groupe spécifique|
+|PUT|/me/identity/group/{group}|Modifier un groupe|
+|DELETE|/me/identity/group/{group}|Supprimer un groupe|
 
-#### Create users
+#### Créer des utilisateur
 
-List all the current users related to the account by calling:
+Listez tous les utilisateurs actuels liés au compte en appelant:
 
 **/me/identity/user**
 
@@ -267,9 +267,9 @@ List all the current users related to the account by calling:
 ]
 ```
 
-These users can be used on policies with the URN format: urn:v1:eu:identity:user:**xx1111-ovh**/**user1**
+Ces utilisateurs peuvent être utilisés sur des politiques avec le format URN: urn:v1:eu:identity:user:**xx1111-ovh**/**user1**
 
-To create a new user, call the API route with the following body:
+Pour créer un nouvel utilisateur, appelez l'API avec le body suivant:
 
 **post /me/identity/user**
 
@@ -283,9 +283,9 @@ To create a new user, call the API route with the following body:
 }
 ```
 
-#### Create user groups
+#### Créer un groupe d'utilisateur
 
-List all the current user groups related to the account by calling:
+Listez tous les groupes actuels liés au compte en appelant:
 
 **/me/identity/group**
 
@@ -298,9 +298,9 @@ List all the current user groups related to the account by calling:
 ]
 ```
 
-These user groups can be used on policies with the URN format: urn:v1:eu:identity:group:**xx1111-ovh**/**admin@mycompany.com**
+Ces groupes utilisateur peuvent être utilisés sur des politiques avec le format URN: urn:v1:eu:identity:group:**xx1111-ovh**/**admin@mycompany.com**
 
-To create a new user group, call the API route with the following body:
+Pour créer un nouveau groupe utilisateur, appelez l'API avec le body suivant:
 
 **post /me/identity/group**
 
@@ -312,30 +312,30 @@ To create a new user group, call the API route with the following body:
 }
 ```
 
-For more information, refer to the [documentation for user management](https://docs.ovh.com/fr/customer/managing-users/).
+Pour plus d'informations, consultez notre [documentation sur la gestion des utilisateurs](https://docs.ovh.com/fr/customer/managing-users/).
 
-#### With SSO connection enabled
+#### Avec une connexion SSO active
 
-If the federation is enabled through the [SSO connection](https://docs.ovh.com/fr/customer/connect-saml-sso/), policies only apply to user groups as described in the previous section.
+Si l'ADFS est activée via la [connexion SSO](https://docs.ovh.com/fr/customer/connect-saml-sso/), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
 
-### Resources
+### Ressources
 
-Policies refer to **resources.** The resources are all OVHcloud products subscribed to by the OVHcloud account that can be controlled by this account.
+Les politiques font référence à des **ressources.** Les ressources correspondent à tous les produits OVHcloud souscrits par le compte OVHcloud pouvant être contrôlés par ce compte.
 
-This section describes how to retrieve resources information to use in a policy.
+Cette section décrit comment récupérer les informations sur les ressources pour les utiliser dans une politique.
 
-#### API definition
+#### Définition de l'API
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
 
-|**Method**|**Path**|**Description**|
+|**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
 |GET|/iam/resource|List all resources|
 |GET|/iam/resource/{resourceId}|Retrieve a resource|
 
-#### Example
+#### Exemple
 
-See all the resources linked to the OVHcloud account by calling:
+Visualisez toutes les ressources liées au compte OVHcloud en appelant :
 
 **/iam/resource**
 
@@ -368,40 +368,40 @@ See all the resources linked to the OVHcloud account by calling:
 ]
 ```
 
-In this example, the account has 3 resources available (a VPS, an email domain and a CDN). Each of this resources has a set of attributes to identify them on policies.
+Dans cet exemple, le compte a trois ressources disponibles (un VPS, un domaine pour sa messagerie et un CDN). Chacune de ces ressources possède un ensemble d'attributs permettant de les identifier sur les politiques.
 
-#### Resource attributes
+#### Attributs des ressources
 
-- **id**: Unique identifier of the resource. It follows the UUID format.
-- **urn**: Resource URN.
-- **name**: The resource name.
-- **displayName**: The resource name as displayed in the user interface.
-- **type**: The resource type (vps, publicCloudProject, dnsZone, domain, emailDomain, etc.)
-- **owner**: The resource owner (Account ID)
+- **id**: Identifiant unique de la ressource. Il suit le format UUID.
+- **urn**: Ressource URN.
+- **name**: Le nom de la ressource.
+- **displayName**: Le nom de la ressource tel qu'il est affiché dans l'interface utilisateur.
+- **type**: Le type de la ressource (vps, publicCloudProject, dnsZone, domain, emailDomain, etc.)
+- **owner**: Le détenteur de la ressource (Account ID)
 
 ### Resource Groups
 
-To ease the policy management for a large number of resources, it is possible to set up a resource group which aggregates several resources to a unique URN.
+Pour faciliter la gestion des politiques pour un grand nombre de ressources, il est possible de mettre en place un groupe de ressources qui regroupe plusieurs ressources sous un URN unique.
 
-#### API definition
+#### Définition de l'API
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
 
-|**Method**|**Path**|**Description**|
+|**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/resourceGroup|Retrieve all resource groups|
-|POST|/iam/resourceGroup|Create a new resource group|
-|GET|/iam/resourceGroup/{groupId}|Retrieve the given resource group|
-|PUT|/iam/resourceGroup/{groupId}|Update an existing resource group|
-|DELETE|/iam/resourceGroup/{groupId}|Delete the given resource group|
+|GET|/iam/resourceGroup|Récupèrer tous les groupes de ressources|
+|POST|/iam/resourceGroup|Créer une nouveau groupe de ressources|
+|GET|/iam/resourceGroup/{groupId}|Récupérer le groupe de ressources donné|
+|PUT|/iam/resourceGroup/{groupId}|Mettre à jour un groupe de ressources existant|
+|DELETE|/iam/resourceGroup/{groupId}|Supprier le groupe de ressources donné|
 
-#### Retrieve a resource group
+#### Récupérer un groupe de ressources
 
-List all resource groups by calling **/iam/resourceGroup**.
+Lister tous les groupes de ressources en appelant **/iam/resourceGroup**.
 
-This API route can be called with a query-string parameter "details" to expand the results with all the attributes of the returned resources.
+Cette API peut être appelé avec une requête-chaîne de paramètres "details" pour développer les résultats avec tous les attributs des ressources retournées.
 
-*Example output:*
+*Exemple de sortie:*
 
 **/iam/resourceGroup**
 
@@ -430,30 +430,30 @@ This API route can be called with a query-string parameter "details" to expand t
 ]
 ```
 
-In the example, we can see that this resource group "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*" has 3 resources. It means that a policy applied to this resource group will be applied on those 3 resources.
+Dans cet exemple, nous pouvons voir que ce groupe de ressources "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*" a 3 ressources. Cela signifie qu'une politique appliquée à ce groupe de ressources sera appliquée sur ces 3 ressources.
 
-#### Resource group attributes
+#### Attributs d'un groupe de ressources
 
-- **id**: Unique identifier of the resource group. It follows the UUID format.
-- **urn**: Resource group URN to use on the policy.
-- **readOnly**: Cannot be modified if `true`. The default resource groups are read-only.
-- **name**: The resource group name.
-- **owner**: The resource group owner (Account ID).
+- **id**: Identifiant unique du groupe de ressources. Il suit le format UUID.
+- **urn**: URN du groupe de ressources à utiliser dans la politique.
+- **readOnly**: Ne peut pas être modifié si `true`. Les groupes de ressources par défaut sont en lecture seule.
+- **name**: Nom du groupe de ressources.
+- **owner**: Détenteur du groupe de ressources (Account ID).
 - **resources**: 
-    - If details = **false**: Array of resources UUID.
-    - If details = **true**: The resources will be expanded with their attributes (as the result we have via the resource API).
-- **createdAt**: Creation date of the resource group.
-- **updateAt**: Last update date of the resource group.
+    - Si details = **false**: Tableau des UUID des ressources.
+    - Si details = **true**: Les ressources seront développées avec leurs attributs (comme le résultat que nous avons via l'API des ressources).
+- **createdAt**: Date de création du groupe de ressources.
+- **updateAt**: Date de la dernière mise à jour du groupe de ressources.
 
-#### Create a resource group
+#### Créer un groupe de ressources
 
-Create a resource group with this API route:
+Créez un groupe de ressources avec l'API suivante:
 
-|**Method**|**Path**|**Description**|
+|**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|POST|/iam/resourceGroup|Create a new resource group|
+|POST|/iam/resourceGroup|Créer un nouveau groupe de ressources|
 
-The following example creates a resource group called "*Test\_Envrionment*" containing 2 resources:
+L'exemple suivant crée un groupe de ressources "*Test\_Envrionment*" contenant 2 ressources:
 
 ```json
 {
@@ -472,23 +472,23 @@ The following example creates a resource group called "*Test\_Envrionment*" cont
 
 ### Action
 
-Policies contain a list of **Actions** that will be allowed or denied to users.
+Les politiques contiennent une liste de **Actions** qui seront autorisées ou refusées aux utilisateurs.
 
-These actions are specific to every product, such as rebooting a database server, ordering an upgrade, restoring a snapshot, etc.
+Ces actions sont spécifiques à chaque produit, comme le redémarrage d'un serveur de base de données, la commande d'une mise à niveau, la restauration d'un snapshot, etc.
 
-#### API definition
+#### Définition de l'API
 
 <https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
 
-|**Method**|**Path**|**Description**|
+|**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/reference/action|Retrieve all actions|
+|GET|/iam/reference/action|Récupérer toutes les actions|
 
-#### Example
+#### Exemple
 
-List all the actions available for policies with the API, for example:
+Liste de toutes les actions disponibles pour les politiques avec l'API, par exemple:
 
-**action example**
+**exemple pour une action**
 
 ```json
 {
@@ -501,30 +501,30 @@ List all the actions available for policies with the API, for example:
 }
 ```
 
-This action is "*vps:apiovh:reboot*", it targets the ability to reboot a VPS.
+Cette action est "*vps:apiovh:reboot*", elle vise la capacité de redémarrer un VPS.
 
-The call to **/iam/reference/action** will list **all of the available** actions (WARNING: This contains a huge amount of items).
+L'appel à **/iam/reference/action** listera **toutes les actions disponibles** (ATTENTION : Ceci contient une quantité énorme d'éléments).
 
-It is strongly recommended to specify the **resourceType** as a query-string parameter for this API call (see the next section).
+Il est fortement recommandé de spécifier le **resourceType** comme paramètre de chaîne de requête pour cet appel d'API (voir la section suivante).
 
-#### Action attributes
+#### attributs de l'action
 
-- **action**: The action itself
-- **description**: The action description
-- **resourceType**: The resource type targeted by this action
-- **categories**: The categories of this action (CREATE, READ, EDIT, OPERATE, DELETE)
+- **action**: L'action elle-même
+- **description**: Description de l'action
+- **resourceType**: Le type de ressource ciblé par l'action
+- **categories**: Les catégories de cette action (CREATE, READ, EDIT, OPERATE, DELETE)
 
-### Resource types
+### Types de ressources
 
-#### API definition
+#### Définition de l'API
 
-|**Method**|**Path**|**Description**|
+|**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/reference/resource/type|Retrieve all resource types|
+|GET|/iam/reference/resource/type|Récupérer tous les types de ressources|
 
-#### Example
+#### Exemple
 
-Here is a part of the output:
+Voici une partie du résultat:
 
 **/iam/reference/resource/type**
 
