@@ -2,7 +2,6 @@
 title: 'Zusätzliches Volume auf einer Instanz erstellen und konfigurieren'
 slug: erstellen_zustzliche_festplatte_public_cloud
 excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrer Public Cloud Instanz hinzufügen'
-legacy_guide_number: 1863
 section: 'Storage'
 order: 1
 updated: 2023-02-09
@@ -194,7 +193,7 @@ Speichern Sie und verlassen Sie den Editor. Nun sollte die Festplatte nach jedem
 
 Stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrer Windows-Instanz her.
 
-Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie das `Festplattenverwaltungstool`{.action}.
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie die `Datenträgerverwaltung`{.action}.
 
 ![disk management](images/start-menu.png){.thumbnail}
 
@@ -288,7 +287,7 @@ DISKPART> online disk
 DiskPart successfully onlined the selected disk.
 ```
 
-##### **Festplattenformatierung** <a name="formatDiskManagement"></a>
+##### **Formatierung der Disk** <a name="formatDiskManagement"></a>
 
 Klicken Sie in der `Datenträgerverwaltung`{.action} mit der rechten Maustaste auf die neue Disk und wählen Sie `Neues einfaches Volume...`{.action}.
 
@@ -313,18 +312,18 @@ Klicken Sie im letzten Fenster auf `Beenden`{.action}, um die Disk zu formatiere
 Das Volume ist dann als Laufwerk im Dateiexplorer verfügbar.
 
 
-### Volume trennen
+### Volume abtrennen
 
-Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist es am besten, das Volumen des Betriebssystems vor dem Abtrennen von der Instanz aufzuteilen.
+Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist die beste Vorgehensweise, es vorher im Betriebssystem auszuhängen.
 
 > [!warning]
 >
-> Es kann eine Fehlermeldung angezeigt werden, wenn auf der zusätzlichen Festplatte Software oder Prozesse ausgeführt werden. In diesem Fall wird empfohlen, alle Prozesse zu beenden, bevor sie fortfahren.
+> Es kann eine Fehlermeldung angezeigt werden, wenn auf der zusätzlichen Disk Software oder Prozesse ausgeführt werden. In diesem Fall wird empfohlen, zunächst alle Prozesse zu beenden.
 >
 
 #### Unter Linux
 
-Stellen Sie [eine SSH-Verbindung zu Ihrer](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) Instanz her und verwenden Sie den unten stehenden Befehl, um die angehängten Festplatten aufzulisten.
+Stellen Sie eine [SSH-Verbindung](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
 
 ```bash
 ~$ admin@server-1.~$ lsblk
@@ -336,59 +335,59 @@ vdb 8:0 0 10G 0 disk
 └─ ─ vdb1 8:1 0 10G 0 part /mnt/disk
 ```
 
-Zerlegen Sie die Partition mit folgendem Befehl:
+Hängen Sie die Partition mit folgendem Befehl aus:
 
 ```bash
 ~$ admin@server-1:~$ sudo umount /dev/vdb1
 ```
 
-Löschen Sie die Peripherie-ID aus fstab, um den Zerlegungsprozess abzuschließen. Wird dies nicht durchgeführt, wird die Partition nach einem Neustart zurückgesetzt.
+Löschen Sie die zugehörige UUID aus der Datei `fstab`, um den Prozess abzuschließen. Wird dies nicht durchgeführt, wird die Partition nach einem Neustart automatisch wieder gemountet.
 
 ```bash
 ~$ admin@server-1:~$ sudo nano /etc/fstab
 ```
 
-Registrieren und verlassen Sie den Editor.
+Speichern Sie die Änderungen und verlassen Sie den Editor.
 
-Gehen Sie in die Rubrik `Public Cloud`{.action} in Ihrem OVHcloud-Kundenbereich und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
-
-Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Von der Instanz trennen aus`{.action}.
-
-![detach disk](images/detachinstance.png){.thumbnail}
-
-Klicken Sie `im`{.action} angezeigten Fenster auf Bestätigen, um den Vorgang zu starten.
-
-![Disk Detach](images/confirminstancedetach.png){.thumbnail}
-
-#### Unter Windows
-
-Stellen Sie eine RDP-Verbindung (Remote Desktop) mit Ihrer Windows-Instanz her.
-
-Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf `Starten`{.action} und `Datenträtgerverwaltung`{.action}.
-
-![Festplattenverwaltung](images/start-menu.png){.thumbnail}
-
-Klicken Sie mit der rechten Maustaste auf das Volume, das Sie demontieren möchten, und wählen Sie `Laufwerkbuchstaben und -pfade ändern...`{.action}.
-
-![unmount disk](images/unmountdisk.png){.thumbnail}
-
-Klicken Sie auf `Entfernen`{.action}, um die Festplatte zu entfernen.
-
-![remove disk](images/changedriveletter.png){.thumbnail}
-
-Klicken Sie anschließend auf `Ja`{.action}, um die Löschung des Buchstabens aus dem Festplattenlaufwerk zu bestätigen.
-
-![bestätigt remove disk](images/confirmunmounting.png){.thumbnail}
-
-Wenn Sie fertig sind, können Sie das Festplattenverwaltungsfenster schließen.
-
-Gehen Sie in die Rubrik `Public Cloud`{.action} in Ihrem OVHcloud-Kundenbereich und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
+Gehen Sie in den Bereich `Public Cloud`{.action} in Ihrem OVHcloud Kundencenter und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
 
 Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
 
 ![detach disk](images/detachinstance.png){.thumbnail}
 
-Klicken Sie im angezeigten Fenster auf `Bestätigen`{.action}, um den Vorgang zu starten.
+Klicken Sie in neuen Fenster auf `Bestätigen`{.action}, um den Vorgang zu starten.
+
+![Disk Detach](images/confirminstancedetach.png){.thumbnail}
+
+#### Unter Windows
+
+Stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrer Windows-Instanz her.
+
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie die `Datenträgerverwaltung`{.action}.
+
+![Datenträgerverwaltung](images/start-menu.png){.thumbnail}
+
+Klicken Sie mit der rechten Maustaste auf das Volume, das Sie aushängen möchten, und wählen Sie `Laufwerkbuchstaben und -pfade ändern...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Klicken Sie auf `Entfernen`{.action}, um die Disk zu entfernen.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+Klicken Sie anschließend auf `Ja`{.action}, um den Löschvorgang zu bestätigen.
+
+![remove disk](images/confirmunmounting.png){.thumbnail}
+
+Wenn Sie fertig sind, können Sie das Datenträgerverwaltungsfenster schließen.
+
+Gehen Sie in den Bereich `Public Cloud`{.action} in Ihrem OVHcloud Kundencenter und klicken Sie auf `Block Storage`{.action} im linken Menü unter **Storage**.
+
+Klicken Sie auf den Button `...`{.action} neben dem entsprechenden Volume und wählen Sie `Instanz trennen`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Klicken Sie im neuen Fenster auf `Bestätigen`{.action}, um den Vorgang zu starten.
 
 ![Disk Detach](images/confirminstancedetach.png){.thumbnail}
 
