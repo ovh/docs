@@ -1,7 +1,7 @@
 ---
 title: Partage de responsabilité - VMware on OVHcloud
 slug: vmware-on-ovhcloud-raci
-section: FAQ
+section: Getting started
 excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit VMware on OVHcloud"
 kb: Hosted Private Cloud
 
