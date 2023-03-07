@@ -5,7 +5,7 @@ section: 'Technical resources'
 updated: 2023-03-07
 ---
 
-**Last updated 7rd March 2023**
+**Last updated 7th March 2023**
 
 ## Objective
 
