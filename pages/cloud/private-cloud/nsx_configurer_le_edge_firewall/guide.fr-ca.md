@@ -1,8 +1,8 @@
 ---
-title: Configurer le NSX Edge Firewall
+title: Configurer le NSX-v Edge Firewall
 slug: configurer-le-nsx-edge-firewall
 excerpt: Créer des règles de pare-feu
-section: NSX
+section: NSX-v
 order: 04
 updated: 2021-11-25
 ---

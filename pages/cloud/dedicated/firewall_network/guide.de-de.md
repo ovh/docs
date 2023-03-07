@@ -29,9 +29,8 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 
 ## Voraussetzungen
 
-- Sie haben eine OVHcloud Dienstleistung abonniert, in der die Option Network Firewall enthalten ist. ([Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/de/vps/){.external}, [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/de/hosted-private-cloud/){.external}, [Floating IPs](https://www.ovhcloud.com/de/bare-metal/ip/){.external}, etc.)
+- Sie haben eine OVHcloud Dienstleistung abonniert, in der die Option Network Firewall enthalten ist ([Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/de/vps/){.external}, [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/de/hosted-private-cloud/){.external}, [Floating IPs](https://www.ovhcloud.com/de/bare-metal/ip/){.external}, etc.).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über grundlegende Kenntnisse der Netzwerkadministration.
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.

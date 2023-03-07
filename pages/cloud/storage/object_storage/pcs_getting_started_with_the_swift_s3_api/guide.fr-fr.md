@@ -4,10 +4,10 @@ excerpt: "Découvrez comment utiliser l'API Swift S3"
 slug: pcs/getting-started-with-the-swift-s3-api
 section: Spécificités de la classe de stockage OpenStack Swift
 order: 020
-updated: 2021-10-27
+updated: 2023-03-02
 ---
 
-**Dernière mise à jour le 22/09/2020**
+**Dernière mise à jour le 02/03/2023**
 
 ## Objectif
 
@@ -69,7 +69,7 @@ user@host:~$ openstack ec2 credentials create
 . openrc.sh
 TMP_FILE=$(mktemp)
 OS_USER_ID=$(curl -s -D $TMP_FILE -X POST "${OS_AUTH_URL}auth/tokens" -H "Content-Type: application/json" -d '{"auth":{"identity":{"methods":["password"],"password":{"user":{"name":"'$OS_USERNAME'","domain":{"id":"default"},"password":"'$OS_PASSWORD'"}}},"scope":{"project":{ "id":"'$OS_TENANT_ID'","domain":{"id":"default"}}}}}' | jq -r '.["token"]["user"]["id"]')
-OS_TOKEN=$(awk '/^X-Subject-Token/ {print $2}' $TMP_FILE |  tr -d "\r")
+OS_TOKEN=$(awk 'BEGIN{IGNORECASE=1} /^X-Subject-Token/ {print $2}' $TMP_FILE |  tr -d "\r")
 curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN" -d '{"tenant_id": "'$OS_TENANT_ID'"}' "${OS_AUTH_URL}users/${OS_USER_ID}/credentials/OS-EC2" | jq .
 {
   "credential": {

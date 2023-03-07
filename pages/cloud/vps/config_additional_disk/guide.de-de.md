@@ -1,23 +1,23 @@
 ---
-title: Zusätzliche Festplatte konfigurieren
-excerpt: Erfahren Sie hier, wie Sie auf einem VPS zusätzlichen Speicherplatz hinzufügen und konfigurieren
+title: Zusätzliche Disk konfigurieren
+excerpt: Erfahren Sie hier, wie Sie auf einem VPS externen Speicherplatz hinzufügen und konfigurieren
 slug: config-additional-disk-vps
 section: Backup Optionen
 order: 3
-updated: 2021-02-24
+updated: 2023-02-15
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 24.02.2021**
+**Letzte Aktualisierung am 15.02.2023**
 
 ## Ziel
 
-Bei den VPS von OVHcloud können Sie einen sicheren Speicherplatz als Dienstoption hinzufügen. Dieser Storage ist von der internen Speicherkapazität der VPS Lösung getrennt, was ihn zu einem sicheren Ort für Ihre Backups oder andere statische Daten macht. Die zusätzliche Festplatte kann nur von der IP-Adresse des Servers aus abgerufen werden, und die darauf enthaltenen Daten bleiben davon unberührt, selbst wenn der VPS neu installiert ist oder Datenverlust erleiden muss.
+Bei den VPS von OVHcloud können Sie einen sicheren Speicherplatz als Dienstoption hinzufügen. Dieser Storage ist von der internen Speicherkapazität der VPS Lösung getrennt, was ihn zu einem sicheren Ort für Ihre Backups oder andere statische Daten macht. Die zusätzliche Disk kann nur von der IP-Adresse des Servers aus abgerufen werden, und die darauf enthaltenen Daten bleiben davon unberührt, selbst wenn der VPS neu installiert ist oder Datenverlust erlitten hat.
 
-**Diese Anleitung erklärt, wie Sie die Option für zusätzliche Festplatten aktivieren und den Speicherplatz zur Verwendung mit dem VPS konfigurieren.**
+**Diese Anleitung erklärt, wie Sie die Option für zusätzliche Disks aktivieren und den Speicherplatz zur Verwendung mit dem VPS konfigurieren.**
 
 ## Voraussetzungen
 
@@ -29,20 +29,20 @@ Bei den VPS von OVHcloud können Sie einen sicheren Speicherplatz als Dienstopti
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Virtual Private Server`{.action} aus.
 
-### Zusätzliche Festplatte bestellen
+### Zusätzliche Disk bestellen
 
-Nachdem Sie Ihren VPS ausgewählt haben, klicken Sie im horizontalen Menü auf den Tab `Zusätzliche Festplatte`{.action}. Klicken Sie auf `Zusätzliche Festplatte bestellen`{.action} und wählen Sie in der angezeigten Auswahl eine Festplattengröße aus.
+Nachdem Sie Ihren VPS ausgewählt haben, klicken Sie im horizontalen Menü auf den Tab `Zusätzliche Festplatte`{.action}. Klicken Sie auf `Zusätzliche Festplatte bestellen`{.action} und wählen Sie in der angezeigten Auswahl die gewünschte Größe aus.
 
 ![adddiskvps](images/disk_vps01.png){.thumbnail}
 
-Beachten Sie die Preisinformationen und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellprozess geführt und erhalten eine Bestätigungsmail, sobald die Festplatte installiert ist.
+Beachten Sie die Preisinformationen und klicken Sie dann auf `Bestellen`{.action}. Sie werden durch den Bestellprozess geführt und erhalten eine Bestätigungsmail, sobald die Disk installiert ist.
 
 ### Neuen Speicherplatz mounten
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Sie sind also verantwortlich für das ordnungsgemäße Funktionieren dieser Systeme.
 >
->Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen hierzu keinen technischen Support bieten.
+>Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen hierzu keinen technischen Support bieten.
 >
 
 #### Auf einem Linux VPS
@@ -63,9 +63,9 @@ sda       8:0    0   80G  0 disk
 sdb       8:16   0   50G  0 disk
 ```
 
-In diesem Beispiel wird die zusätzliche Festplatte als `sdb` bezeichnet.
+In diesem Beispiel wird die zusätzliche Disk als `sdb` bezeichnet.
 
-Führen Sie `fdisk` aus, um eine Partition auf der Festplatte zu erstellen. Wenn Sie dazu aufgefordert werden, geben Sie `n` für eine neue Partition ein und akzeptieren Sie die nachfolgenden Standardwerte, indem Sie Enter ("↩") drücken. Verwenden Sie zuletzt den Befehl `w`, um die Änderungen auf die Festplatte zu schreiben.
+Führen Sie `fdisk` aus, um eine Partition auf der Disk zu erstellen. Wenn Sie dazu aufgefordert werden, geben Sie `n` für eine neue Partition ein und akzeptieren Sie die nachfolgenden Standardwerte, indem Sie die Enter-Taste drücken. Verwenden Sie zuletzt den Befehl `w`, um die Änderungen auf die Disk zu schreiben.
 
 ```
 $ sudo fdisk /dev/sdb
@@ -119,14 +119,14 @@ Creating journal (65536 blocks): done
 Writing superblocks and filesystem accounting information: done  
 ```
 
-Im letzten Schritt wird die Festplatte gemountet:
+Im letzten Schritt wird die Disk gemountet:
 
 ```
 $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
-Anhand der letzten Zeile sehen Sie, dass die zusätzliche Festplatte nun auf `/mnt/disk` gemountet ist:
+Anhand der letzten Zeile sehen Sie, dass die zusätzliche Disk nun auf `/mnt/disk` gemountet ist:
 
 ```
 $ df -h
@@ -151,7 +151,7 @@ tmpfs           385M     0  385M   0% /run/user/1000
 
 > [!primary]
 >
-Die vorherige Anpassung ist nicht persistent, da die Festplatte wieder getrennt wird, wenn der VPS neu gestartet wird. Zur Automatisierung des Mountvorgangs muss die Datei `fstab` geändert werden.
+Die vorherige Anpassung ist nicht persistent, da die Disk wieder getrennt wird, wenn der VPS neu gestartet wird. Zur Automatisierung des Mountvorgangs muss die Datei `fstab` geändert werden.
 >
 
 Ermitteln Sie zunächst die UUID (Block-ID) des Geräts:
@@ -183,29 +183,29 @@ Fügen Sie die folgende Zeile zur Datei hinzu und ersetzen Sie die UUID mit Ihre
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
-Speichern Sie und verlassen Sie den Editor. Nun sollte die Festplatte nach jedem Neustart automatisch gemountet werden.
+Speichern Sie und verlassen Sie den Editor. Nun sollte die Disk nach jedem Neustart automatisch gemountet werden.
 
 #### Auf einem Windows VPS
 
 Wenn ein Windows Betriebssystem auf Ihrem VPS installiert ist, stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrem Server her.
 
-Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie das `Festplattenverwaltungstool`{.action}.
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie das `Disksverwaltungstool`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win01.png){.thumbnail}
 
-Die neue Festplatte wird als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
+Die neue Disk wird als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
 
 ![winmountdiskvps](images/disk_vps_win02.png){.thumbnail}
 
-Wird die Festplatte als Offline angezeigt, muss sie zuerst initialisiert werden. Sie können hierzu das [Windows GUI](#initDiskManagement) oder das [DISKPART Tool](#initDiskpart) verwenden. Falls nicht, [formatieren Sie nun die Festplatte in der Datenträgerverwaltung](#formatDiskManagement).
+Wird die Disk als Offline angezeigt, muss sie zuerst initialisiert werden. Sie können hierzu das [Windows GUI](#initDiskManagement) oder das [DISKPART Tool](#initDiskpart) verwenden. Falls nicht, [formatieren Sie nun die Disk in der Datenträgerverwaltung](#formatDiskManagement).
 
-##### **Initialisierung der Festplatte in der Datenträgerverwaltung** <a name="initDiskManagement"></a>
+##### **Initialisierung der Disk in der Datenträgerverwaltung** <a name="initDiskManagement"></a>
 
- Klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie `Online`{.action}. 
+Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}. 
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 
- Klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie dieses Mal `Festplatte initialisieren`{.action}.
+Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie dieses Mal `Disk initialisieren`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win04.png){.thumbnail}
 
@@ -215,7 +215,7 @@ Wählen Sie `MBR`{.action} im neuen Fenster aus und klicken Sie auf `OK`{.action
 
 ##### **Initialisierung der Festplatte mit DISKPART** <a name="initDiskpart"></a>
 
- Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie `Ausführen`{.action}.
+Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie `Ausführen`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win06.png){.thumbnail}
 
@@ -229,7 +229,7 @@ In der Eingabeaufforderung starten Sie DISKPART:
 C:\> diskpart
 ```
 
-Verwenden Sie folgende Befehle in DISKPART, um die Festplatte als "Online" zu konfigurieren:
+Verwenden Sie folgende Befehle in DISKPART, um die Disk als "Online" zu konfigurieren:
 
 ```
 DISKPART> san
@@ -281,7 +281,7 @@ DISKPART> online disk
 DiskPart successfully onlined the selected disk.
 ```
 
-##### **Festplatte in der Datenträgerverwaltung formatieren** <a name="formatDiskManagement"></a>
+##### **Disk in der Datenträgerverwaltung formatieren** <a name="formatDiskManagement"></a>
 
 Klicken Sie in der `Datenträgerverwaltung`{.action} mit der rechten Maustaste auf die neue Festplatte und wählen Sie `Neues einfaches Volume...`{.action}.
 
@@ -299,9 +299,9 @@ Benennen Sie das Volume (optional) und bestätigen Sie die Formatierungsoptionen
 
 ![winmountdiskvps](images/disk_vps_win11.png){.thumbnail}
 
-Klicken Sie im letzten Fenster auf `Beenden`{.action}, um die Festplatte zu formatieren. Es wird nach der Operation als Laufwerk im Dateiexplorer verfügbar sein.
+Klicken Sie im letzten Fenster auf `Beenden`{.action}, um die Disk zu formatieren. Es wird nach der Operation als Laufwerk im Dateiexplorer verfügbar sein.
 
-### Zusätzliche Festplatte kündigen
+### Zusätzliche Disk kündigen
 
 Im Tab `Start`{.action} scrollen Sie nach unten bis zum Bereich **Zusammenfassung der Optionen**. Klicken Sie `...`{.action} neben "Zusätzliche Festplatten". Klicken Sie Kontextmenü auf `Kündigen`{.action}.
 

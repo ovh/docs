@@ -50,7 +50,7 @@ W przypadku starszego modelu VPS, zapraszamy do dalszej lektury przewodnika po k
 W momencie pierwszej instalacji lub reinstalacji z poziomu panelu klienta, zostanie stworzony profil użytkownika posiadający wszystkie uprawnienia. Jego dane identyfikacyjne zostaną Ci wysłane w wiadomości e-mail.
 Nazwa użytkownika zostanie wygenerowana w zależności od systemu operacyjnego, na przykład “ubuntu” czy “debian”.
 
-Z serwerem VPS będzie można połączyć się za pomocą SSH, używając nazwy użytkownika oraz hasła dostępu. (SSH to szyfrowany protokół komunikacyjny. Aby dowiedzieć się więcej na jego temat, zapraszamy do lektury [przewodnika wprowadzającego do tematyki SSH dla serwerów dedykowanych OVHcloud](../../dedicated/ssh-wprowadzenie/). Dostęp do Twojego serwera odbywa się przez okienko terminala linii poleceń (Linux lub MAC), a w systemie Windows za pomocą oprogramowania innych producentów (zalecamy PuTTy).
+Z serwerem VPS będzie można połączyć się za pomocą SSH, używając nazwy użytkownika oraz hasła dostępu. (SSH to szyfrowany protokół komunikacyjny. Aby dowiedzieć się więcej na jego temat, zapraszamy do lektury [przewodnika wprowadzającego do tematyki SSH dla serwerów dedykowanych OVHcloud](https://docs.ovh.com/pl/dedicated/ssh-wprowadzenie/). Dostęp do Twojego serwera odbywa się przez okienko terminala linii poleceń (Linux lub MAC), a w systemie Windows za pomocą oprogramowania innych producentów (zalecamy PuTTy).
 
 Jeśli korzystasz na przykład z oprogramowania PuTTy, wystarczy, że otworzysz aplikację i wpiszesz nazwę serwera lub jego adres IPv4, aby zainicjować połączenie. Po wpisaniu nazwy użytkownika oraz hasła otrzymasz dostęp do interfejsu linii poleceń CLI (z ang. <i>Command Line Interface</i>).
 
@@ -83,7 +83,7 @@ passwd: password updated successfully
 
 #### Aktywacja połączeń root
 
-Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](../root-password/#wlacz-haslo-root_1).
+Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](https://docs.ovh.com/pl/root-password/#wlacz-haslo-root_1).
 
 #### Restart Twojego serwera VPS (gama aktualna) <a name="reboot-current-range"></a>
 
@@ -106,7 +106,7 @@ Każdą reinstalację możesz przeprowadzić bezpośrednio z poziomu panelu klie
 Po otwarciu się okna będziesz mieć do wyboru:
 
 - jedną spośród proponowanych dystrybucji;
-- [klucz SSH](../../dedicated/tworzenie-klucze-ssh-dedykowane/) (opcjonalnie).
+- [klucz SSH](https://docs.ovh.com/pl/dedicated/tworzenie-klucze-ssh-dedykowane/) (opcjonalnie).
 
 ![Reinstalacja serwera VPS](images/2020panel_01.png){.thumbnail}
 
@@ -123,7 +123,7 @@ W Twoim panelu klienta wyświetli się pasek postępu informujący o stanie zaaw
 
 #### Łączenie z Twoim serwerem VPS (poprzednia gama)
 
-Podczas instalacji (lub reinstalacji) serwera VPS otrzymasz e-mail z hasłem dostępu root. Połączenie będzie realizowane przy użyciu protokołu SSH. szyfrowanego protokołu komunikacyjnego. Aby dowiedzieć się więcej na jego temat, zapraszamy do lektury [przewodnika wprowadzającego do tematyki SSH dla serwerów dedykowanych OVHcloud](../../dedicated/ssh-wprowadzenie/). 
+Podczas instalacji (lub reinstalacji) serwera VPS otrzymasz e-mail z hasłem dostępu root. Połączenie będzie realizowane przy użyciu protokołu SSH. szyfrowanego protokołu komunikacyjnego. Aby dowiedzieć się więcej na jego temat, zapraszamy do lektury [przewodnika wprowadzającego do tematyki SSH dla serwerów dedykowanych OVHcloud](https://docs.ovh.com/pl/dedicated/ssh-wprowadzenie/). 
 
 Dostęp do Twojego serwera odbywa się przez okienko terminala linii poleceń (Linux lub MAC), a w systemie Windows za pomocą oprogramowania innych producentów (zalecamy PuTTy).
 
@@ -165,7 +165,7 @@ Po otwarciu się okna będziesz mieć do wyboru:
 
 - jedną spośród proponowanych dystrybucji;
 - język;
-- [klucz SSH](../../dedicated/tworzenie-klucze-ssh-dedykowane/) (opcjonalnie).
+- [klucz SSH](https://docs.ovh.com/pl/dedicated/tworzenie-klucze-ssh-dedykowane/) (opcjonalnie).
 
 ![Menu z opcjami reinstalacji](images/reinstall_menu.png){.thumbnail}
 
@@ -182,11 +182,11 @@ W Twoim panelu klienta wyświetli się pasek postępu informujący o stanie zaaw
 
 Jak wyjaśniono w sekcji "Cel" niniejszego przewodnika, jesteś administratorem Twojego serwera VPS. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo.
 
-Aby uzyskać podstawowe porady, zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](../porady-zabezpieczenie-vps/).
+Aby uzyskać podstawowe porady, zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](https://docs.ovh.com/pl/porady-zabezpieczenie-vps/).
 
 ### Przypisz domenę
 
-Korzystanie z serwera VPS do edycji strony WWW wiąże się z przypisaniem domeny za pomocą DNS. Jeśli zarządzasz domeną w OVHcloud, zapoznaj się z naszym przewodnikiem dotyczącym [modyfikacji strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/), aby uzyskać instrukcje.
+Korzystanie z serwera VPS do edycji strony WWW wiąże się z przypisaniem domeny za pomocą DNS. Jeśli zarządzasz domeną w OVHcloud, zapoznaj się z naszym przewodnikiem dotyczącym [modyfikacji strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/), aby uzyskać instrukcje.
 
 ### Zabezpiecz swoją domenę certyfikatem SSL
 
@@ -198,10 +198,10 @@ OVHcloud zaproponuje Ci w sposób automatyczny [SSL Gateway](https://www.ovh.pl/
 
 ## Sprawdź również
 
-[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/)
+[Wprowadzenie do protokołów SSH](https://docs.ovh.com/pl/dedicated/ssh-wprowadzenie/)
 
-[Zabezpieczenie serwera VPS](../porady-zabezpieczenie-vps/)
+[Zabezpieczenie serwera VPS](https://docs.ovh.com/pl/porady-zabezpieczenie-vps/)
 
-[Skonfiguruj nową instalację Windows Server](../windows-first-config/)
+[Skonfiguruj nową instalację Windows Server](https://docs.ovh.com/pl/windows-first-config/)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

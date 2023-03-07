@@ -6,10 +6,10 @@ section: MongoDB - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/'
-updated: 2023-01-19
+updated: 2023-03-02
 ---
 
-**Last updated January 19th, 2023**
+**Last updated March 2nd, 2023**
 
 ## Objective
 
@@ -32,9 +32,10 @@ The Public Cloud Databases offer is available in the following regions:
 
 The Public Cloud Databases offer supports the following MongoDB versions:
 
-- MongoDB 4.2
+- MongoDB 4.2 (soon deprecated)
 - MongoDB 4.4
 - MongoDB 5.0
+- MongoDB 6.0
 
 MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
 
@@ -48,7 +49,7 @@ Three plans are available:
 
 - *Essential*
 - *Business*
-- *Enterprise* (coming soon - stay tuned!)
+- *Enterprise*
 
 Here is an overview of the various plans' capabilities:
 
@@ -76,13 +77,15 @@ License cost is included inside the service plans. You cannot bring your own lic
 
 Here are the node types you can choose from:
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | 50        | 2     | 7           |
-| db1-15  | 100       | 4     | 15          |
-| db1-30  | 200       | 8     | 30          |
-| db1-60  | 400       | 16    | 60          |
-| db1-120 | 800       | 32    | 120         |
+| Name    | Cores | Memory | Usable storage          |
+| ------- | ----- | ------ | ----------------------- |
+| db1-2   | 1     | 2 GB   | From 40 GB to 120 GB    |
+| db1-4   | 2     | 4 GB   | From 80 GB to 240 GB    |
+| db1-7   | 2     | 7 GB   | From 160 GB to 480 GB   |
+| db1-15  | 4     | 15 GB  | From 320 GB to 960 GB   |
+| db1-30  | 8     | 30 GB  | From 640 GB to 1.92 TB  |
+| db1-60  | 16    | 60 GB  | From 1.28 TB to 3.84 TB |
+| db1-120 | 32    | 120 GB | From 2.56 TB to 4 TB    |
 
 Right now, all nodes of a given cluster should be of the same type and live in the same regions.
 
@@ -107,6 +110,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 ### Features
 
 #### Network
+
 MongoDB clusters are reachable through default port 27017.
 
 Public as well as private networking (vRack) can be used for all the offers.
@@ -114,6 +118,7 @@ Public as well as private networking (vRack) can be used for all the offers.
 Ingress and Egress traffic are included in the service plans and unmetered.
 
 ##### Private network considerations
+
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
@@ -133,8 +138,8 @@ Here are some considerations to take into account when using private network:
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
 As of today, you can't export Logs and metrics, neither plug them to a remote tool.
 
-**Logs retention :** 1000 lines of logs;
-**Metrics retention :** 1 calendar year.
+- **Logs retention:** 1000 lines of logs;
+- **Metrics retention:** 1 calendar year.
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 
@@ -146,6 +151,8 @@ Creation of users is allowed with the proposed roles :
 - readWriteAnyDatabase
 - userAdminAnyDatabase
 - dbAdminAnyDatabase
+- backup
+- restore
 
 In order to properly manage your MongoDB cluster, some MongoDB users are set up in your clusters by OVHcloud:
 

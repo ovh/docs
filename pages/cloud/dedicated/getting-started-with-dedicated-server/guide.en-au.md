@@ -4,10 +4,11 @@ slug: getting-started-dedicated-server
 excerpt: 'Find out how to proceed after the delivery of your dedicated server'
 section: 'Getting started'
 order: 1
-updated: 2022-12-12
+updated: 2023-03-28
 ---
 
-**Last updated 12th December 2022**
+
+**Last updated 28th February 2023**
 
 ## Objective
 
@@ -136,7 +137,9 @@ However, you can carry out a "hard reboot" at any time in your [OVHcloud Control
 
 ### Securing your dedicated server
 
-As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](../securing-a-dedicated-server/).
+As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](https://docs.ovh.com/au/en/dedicated/securing-a-dedicated-server/).
+
+If your server runs Windows, use [this guide](https://docs.ovh.com/au/en/dedicated/firewall-windows/) instead.
 
 ### OVHcloud Monitoring <a name="monitoring-server"></a> 
 

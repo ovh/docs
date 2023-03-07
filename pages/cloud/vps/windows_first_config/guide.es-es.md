@@ -3,14 +3,14 @@ title: Configurar una nueva instalación de Windows Server
 slug: windows-first-config
 excerpt: "Cómo activar la conexión al escritorio remoto, la respuesta ICMP y los registros de arranque"
 section: Primeros pasos
-updated: 2022-05-06
+updated: 2023-02-15
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 06/05/2022**
+**Última actualización: 15/02/2023**
 
 ## Objetivo
 
@@ -29,7 +29,7 @@ La activación de los logs de arranque (*boot logs*) Windows puede ser útil par
 
 ### Paso 1: acceso al KVM
 
-Para acceder a la consola KVM de su VPS, consulte la [guía KVM VPS](../utilizar_el_kvm_para_los_vps/).
+Para acceder a la consola KVM de su VPS, consulte la [guía KVM VPS](https://docs.ovh.com/es/vps/utilizar_el_kvm_para_los_vps/).
 
 ### Paso 2: finalizar la instalación de Windows
 
@@ -63,9 +63,13 @@ Aquí puede activar las respectivas reglas "ICMP" y "Remote Desktop" (escritorio
 
 El servidor debe responder a las solicitudes que utilicen estos protocolos.
 
+> [!primary]
+> Para proteger su sistema Windows con reglas de firewall, consulte nuestra guía [Configurar el firewall de Windows](https://docs.ovh.com/es/vps/vps-firewall-windows/).
+>
+
 ### Activación de los logs de arranque (boot logs) Windows (opcional)
 
-Conéctese al servidor a través de una sesión de escritorio remoto o de [KVM](../utilizar_el_kvm_para_los_vps/). Abra el menú Iniciar Windows y haga clic en `Ejecutar`{.action}.
+Conéctese al servidor a través de una sesión de escritorio remoto o de [KVM](https://docs.ovh.com/es/vps/utilizar_el_kvm_para_los_vps/). Abra el menú Iniciar Windows y haga clic en `Ejecutar`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -79,7 +83,7 @@ En la nueva ventana, marque la casilla situada junto a `Boot log`. Haga clic en 
 
 La próxima vez que inicie el servidor, los logs se guardarán en un archivo .txt. La ruta del archivo es `C:\Windows\ntbtlog.txt`.
 
-Para acceder al contenido de este archivo en modo de rescate, siga las indicaciones de [la guía del modo de rescate del VPS](../rescue/).
+Para acceder al contenido de este archivo en modo de rescate, siga las indicaciones de [la guía del modo de rescate del VPS](https://docs.ovh.com/es/vps/rescue/).
 
 ## Más información
 

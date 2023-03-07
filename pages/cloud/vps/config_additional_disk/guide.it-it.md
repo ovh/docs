@@ -4,14 +4,14 @@ excerpt: Come aggiungere e configurare spazio di storage aggiuntivo su un VPS
 slug: config-additional-disk-vps
 section: Opzioni di backup
 order: 3
-updated: 2021-02-24
+updated: 2023-02-15
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 24/02/2021**
+**Ultimo aggiornamento: 15/02/2023**
 
 ## Obiettivo
 
@@ -65,7 +65,7 @@ sdb       8:16   0   50G  0 disk
 
 In questo esempio, il disco aggiuntivo è chiamato `sdb`.
 
-Esegui `fdisk` per creare una partizione sul disco. Quando ti viene chiesto, inserisci `n` per una nuova partizione e accetta i valori predefiniti qui sotto premendo Entrata (" ↩"). e utilizza il comando `w` per scrivere le modifiche sul disco.
+Esegui `fdisk` per creare una partizione sul disco. Quando ti viene chiesto, inserisci `n` per una nuova partizione e accetta i valori predefiniti qui sotto premendo "Enter". e utilizza il comando `w` per scrivere le modifiche sul disco.
 
 ```
 $ sudo fdisk /dev/sdb
@@ -201,11 +201,11 @@ Se il disco è marcato come disco "off-connection", deve prima essere avviato. P
 
 ##### **Inizializzare il disco nello strumento "Gestione dei dischi"** <a name="initDiskManagement"></a>
 
- Clicca con il tasto destro sul disco e seleziona `online`{.action}. 
+Clicca con il tasto destro sul disco e seleziona `online`{.action}. 
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 
- Fai un nuovo click con il tasto destro sul disco e seleziona questa volta `Inizializza il disco`{.action}.
+Fai un nuovo click con il tasto destro sul disco e seleziona questa volta `Inizializza il disco`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win04.png){.thumbnail}
 
@@ -215,7 +215,7 @@ Seleziona `MBR`{.action} (settore principale di avvio) nella nuova finestra e cl
 
 ##### **Iniziare il disco con DISKpart** <a name="initDiskpart"></a>
 
- Clicca con il tasto destro sul `Menu Inizia`{.action} e apri `Esegui`{.action}.
+Clicca con il tasto destro sul `Menu Inizia`{.action} e apri `Esegui`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win06.png){.thumbnail}
 

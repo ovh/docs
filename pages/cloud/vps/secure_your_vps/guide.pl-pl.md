@@ -1,8 +1,8 @@
 ---
-title: Zabezpieczenie serwera VPS
+title: "Zabezpieczenie serwera VPS"
 slug: porady-zabezpieczenie-vps
-section: 'Pierwsze kroki'
-excerpt: 'Odkryj podstawowe elementy umożliwiające zabezpieczenie serwera VPS'
+section: "Pierwsze kroki"
+excerpt: "Odkryj podstawowe elementy umożliwiające zabezpieczenie serwera VPS"
 updated: 2022-05-05
 ---
 
@@ -35,7 +35,7 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
 >
 > Pamiętaj, że jest to przewodnik oparty na systemie operacyjnym Ubuntu Server. Niektóre polecenia należy dostosować do używanej dystrybucji, a niektóre z nich wymagają użycia narzędzi zewnętrznych. W razie potrzeby skorzystaj z oficjalnej dokumentacji dotyczącej tych aplikacji.
 >
-> Jeśli skonfigurujesz Twój pierwszy VPS OVHcloud, zapoznaj się [z przewodnikiem dotyczącym uruchomienia serwera VPS](../pierwsze-kroki-vps/).
+> Jeśli skonfigurujesz Twój pierwszy VPS OVHcloud, zapoznaj się [z przewodnikiem dotyczącym uruchomienia serwera VPS](https://docs.ovh.com/pl/vps/pierwsze-kroki-vps/).
 >
 
 Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami.
@@ -100,7 +100,7 @@ ssh username@IPv4_of_your_VPS -p NewPortNumber
 
 ### Zmiana hasła przypisanego do użytkownika "root"
 
-Zdecydowanie zaleca się zmianę hasła użytkownika root, aby nie pozostawiać go w pozycji domyślnej w nowym systemie. Więcej informacji znajdziesz w [tym przewodniku](../root-password/).
+Zdecydowanie zaleca się zmianę hasła użytkownika root, aby nie pozostawiać go w pozycji domyślnej w nowym systemie. Więcej informacji znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/vps/root-password/).
 
 ### Utworzenie użytkownika z ograniczonymi prawami
 
@@ -162,7 +162,7 @@ Dystrybucje GNU/Linux są dostarczane wraz z zaporą sieciową o nazwie iptables
 iptables -L
 ```
 
-Więcej informacji na temat iptables znajdziesz w naszym [przewodniku](../../dedicated/firewall-iptables/).
+Więcej informacji na temat iptables znajdziesz w naszym [przewodniku](https://docs.ovh.com/pl/vps/vps-firewall-iptables/).
 
 Zalecamy utworzenie reguł firewalla i dostosowanie ich do Twojego trybu użytkowania. Więcej informacji na temat różnych możliwych operacji znajdziesz w oficjalnej dokumentacji dotyczącej używanej dystrybucji.
 
@@ -242,7 +242,7 @@ W celu uzyskania dodatkowych informacji oraz uzyskania zaleceń dotyczących Fai
 
 Rozwiązania OVHcloud obejmują możliwość aktywacji firewalla w punkcie wejścia infrastruktury, zwanym Network Firewall. Prawidłowa konfiguracja zapory sieciowej pozwala zablokować połączenia jeszcze przed ich wejściem na Twój serwer.
 
-Sprawdź przewodnik “[Konfiguracja Network Firewall](../../dedicated/network-firewall/)”, jeśli chcesz włączyć tą opcję.
+Sprawdź przewodnik “[Konfiguracja Network Firewall](https://docs.ovh.com/pl/dedicated/network-firewall/)”, jeśli chcesz włączyć tą opcję.
 
 ### Tworzenie kopii zapasowej systemu i danych
 
@@ -253,12 +253,14 @@ Zabezpieczenie danych jest jednym z kluczowych czynników, dlatego OVHcloud ofer
 - Opcja `Snapshot` umożliwia tworzenie zrzutu ręcznego.
 - Opcja automatycznej `kopii zapasowej` pozwala na zachowanie regularnych kopii zapasowych serwera VPS (z wyjątkiem dodatkowych dysków).
 
-Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twojej usługi znajdują się na [stronie produktu](https://www.ovhcloud.com/pl/vps/options/) i w odpowiednich [przewodnikach](../).
+Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twojej usługi znajdują się na [stronie produktu](https://www.ovhcloud.com/pl/vps/options/) i w odpowiednich [przewodnikach](https://docs.ovh.com/pl/vps/).
 
 ## Sprawdź również
 
-[Pierwsze kroki z serwerem VPS](../pierwsze-kroki-vps/) 
+[Pierwsze kroki z serwerem VPS](https://docs.ovh.com/pl/vps/pierwsze-kroki-vps/) 
 
-[Konfiguracja rozwiązania Network Firewall](../../dedicated/network-firewall/)
+[Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/vps/vps-firewall-windows/)
+
+[Konfiguracja rozwiązania Network Firewall](https://docs.ovh.com/pl/dedicated/network-firewall/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

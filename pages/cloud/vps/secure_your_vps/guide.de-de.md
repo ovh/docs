@@ -1,7 +1,7 @@
 ---
-title: VPS absichern
+title: Einen VPS absichern
 slug: vps-sicherheit
-section: 'Erste Schritte'
+section: "Erste Schritte"
 excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS
 updated: 2022-05-05
 ---
@@ -33,9 +33,9 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 
 > [!primary]
 >
-> Denken Sie daran, dass dies eine allgemeine Anleitung ist. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen Ihnen manchmal, Tools Dritter zu verwenden. Wenn Sie Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
+> Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf einer Ubuntu Distribution. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen Ihnen gelegentlich, externe Tools zu verwenden. Wenn Sie Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
 >
-> Wenn Sie Ihren ersten OVHcloud VPS konfigurieren, empfehlen wir Ihnen zunächst unsere Anleitung zur [Ersteinrichtung eines VPS](../erste-schritte-mit-einem-vps/).
+> Wenn Sie Ihren ersten OVHcloud VPS konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines VPS](https://docs.ovh.com/de/vps/erste-schritte-mit-einem-vps/) zu verwenden.
 >
 
 Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen verbunden sind.
@@ -63,7 +63,7 @@ Dieser Vorgang muss regelmäßig durchgeführt werden, um ein System auf dem neu
 
 ### Standard-SSH-Listening-Port ändern
 
-Eine der ersten Aktionen auf Ihrem Server sollte die Konfiguration des Listening-Ports des SSH-Dienstes sein. Er ist standardmäßig auf **Port 22** eingestellt, deshalb zielen Server-Hacking-Versuche von Robotern auf diesen Port. Die Änderung dieser Einstellung mithilfe eines anderen Ports ist eine einfache Maßnahme, um den Schutz Ihres Servers vor automatisierten Angriffen zu verbessern.
+Eine der ersten Aktionen auf Ihrem Server sollte die Konfiguration des Listening-Ports des SSH-Dienstes sein. Er ist standardmäßig auf **Port 22** eingestellt, deshalb zielen Hacking-Attacken von Bots auf diesen Port. Die Änderung dieser Einstellung zu einem individuellen Port ist eine einfache Maßnahme, um den Schutz Ihres Servers vor automatisierten Angriffen zu verbessern.
 
 Ändern Sie hierzu die Konfigurationsdatei des Dienstes mit einem Texteditor Ihrer Wahl (`nano` wird in diesem Beispiel verwendet):
 
@@ -79,7 +79,7 @@ Port 22
 ```
 
 Ersetzen Sie die Nummer **22** mit der Port-Nummer Ihrer Wahl.<br>
-**Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Verwenden Sie aus Sicherheitsgründen eine Zahl zwischen 49152 und 65535. <br>Speichern und schließen Sie die Konfigurationsdatei.
+**Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Um sicher zu gehen, verwenden Sie eine Zahl zwischen 49152 und 65535. <br>Speichern und schließen Sie die Konfigurationsdatei.
 
 Starten Sie den Dienst neu:
 
@@ -97,7 +97,7 @@ username@IPv4_des_VPS -p PortNummer
 
 ### Passwort des Root-Benutzers ändern
 
-Es wird dringend empfohlen, das Passwort des Root-Benutzers so abzuändern, dass es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](../root-password/).
+Es wird dringend empfohlen, das Passwort des Root-Benutzers abzuändern, damit es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/vps/root-password/).
 
 ### Anlegen eines Benutzers mit eingeschränkten Rechten
 
@@ -117,7 +117,7 @@ Wenn Sie mit diesen Login-Daten in Ihrem System eingeloggt sind, geben Sie folge
 su root
 ```
 
-Geben Sie das Passwort ein, wenn Sie dazu eingeladen sind, und die aktive Verbindung wird auf den Root-Benutzer umgestellt.
+Geben Sie das Passwort ein, wenn Sie dazu aufgefordert werden, und die aktive Verbindung wird auf den Root-Benutzer umgestellt.
 
 ### Deaktivierung des Serverzugangs als Root
 
@@ -152,13 +152,13 @@ Danach werden Verbindungsversuche zu Ihrem Server über den Root-Benutzer (`ssh 
 
 ### Konfiguration der internen Firewall (iptables)
 
-GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der als iptables bezeichnet wird. Er hat standardmäßig keine aktiven Regeln. Sie können dies überprüfen, indem Sie den folgenden Befehl eingeben:
+GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der als *iptables* bezeichnet wird. Er hat standardmäßig keine aktiven Regeln. Sie können dies überprüfen, indem Sie den folgenden Befehl eingeben:
 
 ```bash
 iptables -L
 ```
 
-Weitere Informationen zu Iptables finden Sie in unserer [Anleitung](../../dedicated/firewall-iptables/).
+Weitere Informationen zu *iptables* finden Sie in unserer [Anleitung](https://docs.ovh.com/de/vps/vps-firewall-iptables/).
 
 Wir empfehlen Ihnen, Regeln für diese Firewall zu erstellen und an Ihre Nutzung anzupassen. Weitere Informationen zu den möglichen Einstellungen finden Sie in der offiziellen Dokumentation der verwendeten Distribution.
 
@@ -238,7 +238,7 @@ Weitere Informationen und Empfehlungen zu Fail2ban finden Sie in der [offizielle
 
 Bei OVHcloud Diensten besteht die Möglichkeit, am Eingangspunkt der Infrastruktur die so genannte Network Firewall zu aktivieren. Eine korrekte Konfiguration dieser Firewall ermöglicht es, Verbindungen zu blockieren, bevor diese überhaupt auf Ihrem Server ankommen.
 
-Wenn Sie die OVHcloud Network Firewall aktivieren möchten, folgen Sie [dieser Anleitung](../../dedicated/firewall-network/).
+Wenn Sie die OVHcloud Network Firewall aktivieren möchten, folgen Sie [dieser Anleitung](https://docs.ovh.com/de/dedicated/firewall-network/).
 
 ### Ihr System und Ihre Daten sichern
 
@@ -247,14 +247,16 @@ Das Sicherheitskonzept beschränkt sich nicht auf den Schutz eines Systems vor A
 Die Sicherung Ihrer Daten ist ebenso essenziell, deshalb bietet Ihnen OVHcloud mehrere Backup-Optionen als Zusatzdienste:
 
 - Mit der `Snapshot` Option können Sie manuelle Snapshots erstellen.
-- `Automatische Backups` ermöglichen es, regelmäßige Backups Ihres VPS zu speichern (mit Ausnahme zusätzlicher Festplatten).
+- `Automatische Backups` ermöglichen es, regelmäßige Backups Ihres VPS zu speichern (mit Ausnahme zusätzlicher Disks).
 
-Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden Sie auf der [Produktseite](https://www.ovhcloud.com/de/vps/options/) und in den [zugehörigen Anleitungen](../).
+Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden Sie auf der [Produktseite](https://www.ovhcloud.com/de/vps/options/) und in den [zugehörigen Anleitungen](https://docs.ovh.com/de/vps/).
 
 ## Weiterführende Informationen
 
-[Erste Schritte mit einem VPS](../erste-schritte-mit-einem-vps/) 
+[Erste Schritte mit einem VPS](https://docs.ovh.com/de/vps/erste-schritte-mit-einem-vps/) 
 
-[Network Firewall](../../dedicated/firewall-network/)
+[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/vps/vps-firewall-windows/)
+
+[Network Firewall](https://docs.ovh.com/de/dedicated/firewall-network/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

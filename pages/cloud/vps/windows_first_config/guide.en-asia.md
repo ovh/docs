@@ -3,14 +3,14 @@ title: 'Configuring a new Windows Server installation'
 slug: windows-first-config
 excerpt: 'Find out how to enable Remote Desktop, ICMP and boot logs'
 section: 'Getting started'
-updated: 2022-05-06
+updated: 2023-02-15
 ---
 
-**Last updated 6th May 2022**
+**Last updated 15th February 2023**
 
 ## Objective
 
-After a fresh installation of a Windows Server operating system on a VPS, remote access and the ICMP (Internet Control Message Protocol) response might be disabled. However, you can use the OVHcloud KVM to access your VPS and configure the Windows Firewall application to re-enable ICMP and allow connections via Remote Desktop Protocol.<br>Activating Windows boot logs can be helpful for server error diagnostics.
+After a fresh installation of a Windows Server operating system on a VPS, remote access and the ICMP (Internet Control Message Protocol) response might be disabled. However, you can use the OVHcloud KVM to access your VPS and configure the Windows Firewall application to enable ICMP and allow connections via Remote Desktop Protocol.<br>Activating Windows boot logs can be helpful for server error diagnostics.
 
 **This guide explains how to enable ICMP, Remote Desktop Protocol and boot logs on a Windows VPS.**
 
@@ -23,7 +23,7 @@ After a fresh installation of a Windows Server operating system on a VPS, remote
 
 ### Step 1: Log in with KVM
 
-To access the KVM console of your VPS, please follow the [VPS KVM guide](../use-kvm-for-vps/).
+To access the KVM console of your VPS, please follow the [VPS KVM guide](https://docs.ovh.com/asia/en/vps/use-kvm-for-vps/).
 
 ### Step 2: Finish the Windows setup
 
@@ -57,9 +57,13 @@ Here you can enable the respective `ICMP` and `Remote Desktop` rules (right-clic
 
 Your server should now be responding to requests using these protocols.
 
+> [!primary]
+> To secure your Windows system with firewall rules, refer to our guide "[Configuring the firewall on Windows](https://docs.ovh.com/asia/en/vps/vps-firewall-windows/)".
+>
+
 ### Activating Windows boot logs (optional)
 
-Connect to your server via a Remote Desktop or [KVM](../use-kvm-for-vps/) session. Open the Windows start menu and click on `Run`{.action}.
+Connect to your server via a Remote Desktop or [KVM](https://docs.ovh.com/asia/en/vps/use-kvm-for-vps/) session. Open the Windows start menu and click on `Run`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -73,7 +77,7 @@ In the new window, check the box next to `Boot log`. Click on `OK`{.action}.
 
 The next time your server boots, the logs will be saved into a .txt file. The file path is ```C:\Windows\ntbtlog.txt```.
 
-To access the contents of this file in rescue mode, please follow the instructions in the [VPS rescue mode guide](../rescue/).
+To access the contents of this file in rescue mode, please follow the instructions in the [VPS rescue mode guide](https://docs.ovh.com/asia/en/vps/rescue/).
 
 ## Go further
 

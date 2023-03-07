@@ -4,7 +4,7 @@ slug: erste-schritte-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten'
 section: 'Erste Schritte'
 order: 1
-updated: 2022-12-12
+updated: 2023-03-28
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2022-12-12
 >
 
 
-**Letzte Aktualisierung am 12.12.2022**
+**Letzte Aktualisierung am 28.02.2023**
 
 ## Ziel
 
@@ -141,7 +141,9 @@ Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter
 
 ### Absicherung Ihres Dedicated Servers
 
-Wie oben erläutert, sind Sie der Administrator Ihres dedizierten Servers. Als solcher sind Sie für Ihre Daten und deren Sicherheit verantwortlich. Mehr Informationen zur Sicherung Ihres Servers finden Sie in unserer Anleitung zur [Absicherung eines Servers](../dedizierten-server-sichern/).
+Wie oben erläutert, sind Sie der Administrator Ihres dedizierten Servers. Als solcher sind Sie für Ihre Daten und deren Sicherheit verantwortlich. Mehr Informationen zur Sicherung Ihres Servers finden Sie in unserer Anleitung zur [Absicherung eines Servers](https://docs.ovh.com/de/dedicated/dedizierten-server-sichern/).
+
+Wenn Sie Windows Server einsetzen, verwenden Sie [diese Anleitung](https://docs.ovh.com/de/dedicated/firewall-windows/).
 
 ### OVHcloud Monitoring <a name="monitoring-server"></a> 
 
