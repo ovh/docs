@@ -175,7 +175,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Deploy patchs, updates and configurations on softwares, middlewares and IS hosted on the Iaas | RA |  |
 | Optimise VMs | RA | I |
 | Validate material's change request on infrastrcture provided by OVHcloud | A | R |
-| Plan changes requested by the Client | RA | R |
+| Plan changes requested by the Client | RA | RI |
 | Operate acceptance tests | RA | C |
 | Deploy patchs, updates and cofigurations on managed infrastructure elements | RI | RA |
 | Operate preventive interventions on on managed infrastructure elements  | A | R |
