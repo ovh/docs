@@ -314,7 +314,7 @@ Pour plus d'informations, consultez notre [documentation sur la gestion des util
 
 #### Avec une connexion SSO active
 
-Si la férération d'identité est activée via la [connexion SSO](https://docs.ovh.com/fr/customer/connect-saml-sso/), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
+Si la fédération d'identité est activée via la [connexion SSO](https://docs.ovh.com/fr/customer/connect-saml-sso/), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
 
 ### Ressources
 
