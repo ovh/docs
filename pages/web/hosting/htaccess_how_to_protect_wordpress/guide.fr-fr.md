@@ -119,10 +119,9 @@ Options All -Indexes
 Votre fichier **wp-config.php**, présent à la racine de votre site web, contient des informations de configuration sensibles. Empêchez l'accès à ce fichier en ajoutant les lignes suivantes dans votre fichier **.htaccess** :
 
 ```bash
-<Files ~ "^.*\.([Hh][Tt][AaPp])">
+<Files wp-config.php>
     order allow,deny
     deny from all
-    satisfy all
 </Files>
 ```
 
