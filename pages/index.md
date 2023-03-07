@@ -142,6 +142,7 @@
             + [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](cloud/dedicated/ola-enable-debian9)
             + [How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](cloud/dedicated/ola-enable-centos7)
             + [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](cloud/dedicated/ola-enable-w2k19)
+            + [How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](cloud/dedicated/ola-enable-sles15)
         + [vRack](bare-metal-cloud-dedicated-servers-vrack)
             + [Configuring the vRack on your dedicated servers](cloud/dedicated/vrack_configuring_on_dedicated_server)
             + [Configuring Jumbo Frames in vRack](cloud/dedicated/VRACK_MTU_Jumbo_Frames)

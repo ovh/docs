@@ -149,4 +149,6 @@ Pour vérifier que cette agrégation fonctionne, effectuez un ping vers un autre
 
 [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](../ola-w2k19/).
 
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/fr/dedicated/ola-sles15/).
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

@@ -94,4 +94,6 @@ Ce redémarrage peut prendre quelques minutes puisqu’il permet de mettre en pl
 
 [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](../ola-w2k19/).
 
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/ca/fr/dedicated/ola-sles15/).
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
