@@ -23,7 +23,7 @@ La gestion des accès d'OVHcloud est basée sur un système de gestion de « pol
 Dans le détail, une politique contient :
 
 - Une ou plusieurs **identités** ciblées par cette politique. 
-    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés dans l'[Active Directory Federation Services (ADFS)](https://docs.ovh.com/fr/customer/connect-saml-sso/)). 
+    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés avec la [fédération d'identité](https://docs.ovh.com/fr/customer/connect-saml-sso/)). 
 - Une ou plusieurs **ressources** concernées par cette politique. 
     - Une ressource est un produit OVHcloud qui sera concerné par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.)
 - Une ou plusieurs **actions** autorisées ou exclues par cette politique. 
@@ -314,7 +314,7 @@ Pour plus d'informations, consultez notre [documentation sur la gestion des util
 
 #### Avec une connexion SSO active
 
-Si l'ADFS est activée via la [connexion SSO](https://docs.ovh.com/fr/customer/connect-saml-sso/), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
+Si la férération d'identité est activée via la [connexion SSO](https://docs.ovh.com/fr/customer/connect-saml-sso/), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
 
 ### Ressources
 
