@@ -69,7 +69,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Deploy containers on VMs following TKG integration on the infrastructure | RA |  |
 | Install and configure softwares inside containers | RA |  |
 | Supply/import data to containers | RA |  |
-| Specify the project in order to avoid storing persistant data locally (use persistant and shared volumes to store data permanently : NFS volumes or vSAN storage)| RA |  |
+| Specify the project in order to avoid storing persistant data locally (use persistant and shared volumes to store data permanently : NFS volumes or vSAN storage)| A |  |
 | Configure network in order to have a functional IS | RA |  |
 
 ### 3. Service Usage
