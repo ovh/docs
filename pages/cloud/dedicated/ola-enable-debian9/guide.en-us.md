@@ -94,4 +94,6 @@ This restart may take several minutes since it is building the bond interface.  
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
 
+[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/us/en/dedicated/ola-sles15/).
+
 Join our community of users on <https://community.ovh.com/en/>.

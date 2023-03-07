@@ -77,4 +77,6 @@ To test that your NIC team is working, ping another server on the same vRack.  I
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
 
+[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/asia/en/dedicated/ola-sles15/).
+
 Join our community of users on <https://community.ovh.com/en/>.
