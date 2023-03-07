@@ -5,8 +5,6 @@ excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisa
 section: 'Utilisation avancée'
 order: 03
 updated: 2023-03-07
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/customer/iam-policies-api/'
 ---
 
 **Dernière mise à jour le 07/03/2023**
@@ -14,34 +12,34 @@ routes:
 > [!warning]
 >
 > Cette fonctionnalité est actuellement en version bêta. Pour rejoindre la version bêta, inscrivez-vous ici : <https://labs.ovhcloud.com/en/>
->  
+>
 
 ## Objectif
 
 Ce guide explique comment fournir des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud.
 
-La gestion des accès d'OVHcloud est basée sur un système de gestion de "politiques". Il est possible d'écrire différentes "politiques" qui donnent aux utilisateurs l'accès à des fonctionnalités spécifiques sur les produits liés à un compte OVHcloud.
+La gestion des accès d'OVHcloud est basée sur un système de gestion de « politiques ». Il est possible d'écrire différentes politiques qui donnent aux utilisateurs l'accès à des fonctionnalités spécifiques sur les produits liés à un compte OVHcloud.
 
 Dans le détail, une politique contient :
 
 - Une ou plusieurs **identités** ciblées par cette politique. 
     - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés dans l'[Active Directory Federation Services (ADFS)](https://docs.ovh.com/fr/customer/connect-saml-sso/)). 
-- Une ou plusieurs **ressources** impactées par cette politique. 
-    - Une ressource est un produit OVHcloud qui sera impacté par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.)
-- Une ou plusieurs **actions** autorisées ou exceptées par cette politique. 
+- Une ou plusieurs **ressources** concernées par cette politique. 
+    - Une ressource est un produit OVHcloud qui sera concerné par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.)
+- Une ou plusieurs **actions** autorisées ou exclues par cette politique. 
     - Les actions sont les droits spécifiques affectés par cette politique (redémarrer le serveur, créer un compte email, résilier un produit, etc).
 
-Par exemple, nous pouvons créer une politique pour donner à un utilisateur appelé John, pour un VPS, l'accès à l'action "reboot".
+Par exemple, nous pouvons créer une politique pour donner à un utilisateur appelé John, pour un VPS, l'accès à l'action « reboot ».
 
-**Décourez en détail comment ces politiques peuvent être déclarées en utilisant l'API d'OVHcloud, et comment lister les identités, ressources et actions disponibles pour celles-ci.**
+**Découvrez en détail comment ces politiques peuvent être déclarées en utilisant l'API OVHcloud, comment lister les identités, ressources et actions disponibles pour ces politiques.**
 
 ![IAM Policies](images/iam_policies.png){.thumbnail}
 
 ## Prérequis
 
-Pour mettre en place une politique, vous aurez besoin :
+Pour mettre en place une politique, vous aurez besoin des éléments suivants :
 
-- D'un [compte client OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
+- Un [compte client OVHcloud](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/)
 - Savoir [gérer des comptes utilisateurs](https://docs.ovh.com/fr/customer/gestion-utilisateurs/)
 - Disposer de produits liés à votre compte OVHcloud (Load Balancer, nom de domaine, VPS, etc.)
 
@@ -59,17 +57,17 @@ Les ressources, les groupes de ressources et les actions nécessaires à la cré
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/policy|Retrieve all policies|
-|POST|/iam/policy|Create a new policy|
-|GET|/iam/policy/{policyId}|Retrieve the given policy|
-|PUT|/iam/policy/{policyId}|Update an existing policy|
-|DELETE|/iam/policy/{policyId}|Delete the given policy|
+|GET|/iam/policy|Récupérer toutes les politiques|
+|POST|/iam/policy|Créer une nouvelle politique|
+|GET|/iam/policy/{policyId}|Récupérer une politique spécifique|
+|PUT|/iam/policy/{policyId}|Mettre à jour une politique existante|
+|DELETE|/iam/policy/{policyId}|Supprimer une politique spécifique|
 
 #### Récupérer toutes les politiques
 
 L'exemple suivant montre comment une politique est construite.
 
-Trouvez toutes les politiques, y compris celles pré-générées par OVHcloud, en appelant le point de sortie de l'API : **/iam/policy**
+Récupérez toutes les politiques, y compris celles pré-générées par OVHcloud, en appelant le endpoint API suivant : **/iam/policy**
 
 *Exemple de sortie :*
 
@@ -105,12 +103,12 @@ Trouvez toutes les politiques, y compris celles pré-générées par OVHcloud, e
 
 Dans cet exemple, le compte "*urn:v1:eu:identity:account:xx1111-ovh*" peut faire toutes les actions (*"action":"\*"*) pour le groupe de ressources "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*". Cette police est détenue par l'idientifiant client OVHcloud "*xx1111-ovh*" (il correspond au rôle d'administrateur, il est créé par OVHcloud et ne peut pas être modifié).
 
-Les éléments des politiques sont définis par des URN. Ces URNs sont définis par le modèle suivant :
+Les éléments des politiques sont définis par des URN. Ces URN sont définis par le modèle suivant :
 
 ||**URN**|**:**|**version**|**:**|**plaque**|**:**|**type**|**:**|**sous-type**|**:**|**id**|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 |**Description**|préfixe immuable|:|version du système IAM|:|Plaque où se trouve l'URN|:|Type de l'URN actuelle|:|(optionnel) Sous-type pour les types **identity** ou **resource** |:|Identifiant unique associé à l'URN|
-|**Possible values**|urn|:|v1|:|eu, ca, us|:|identité, resource, resourceGroup|:|<p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p>|:|Valeur alphanumérique|
+|**Possible values**|urn|:|v1|:|eu, ca, us|:|identité, ressource, resourceGroup|:|<p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p>|:|Valeur alphanumérique|
 |**Account ID Example**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
 |**User group Example**|urn|:|v1|:|eu|;|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
@@ -120,25 +118,25 @@ Les éléments des politiques sont définis par des URN. Ces URNs sont définis 
 
 - **id**: Identifiant unique de la politique. Il suit le format UUID.
 - **owner**: Le compte qui a créé cette politique.
-- **name**: Le nom de la politique. Il est possible d'utiliser ce nom pour organiser les politiques. Il n'y a pas de format à suivre (sauf que le préfixe "ovh-" est réservé aux politiques OVHcloud).
-- **readOnly**: S'il est vrai, il indique que la politique ne peut pas être modifiée. Il représente souvent les politiques gérées par OVHcloud.
-- **identities**: Les identités concernées par la politique. Elles sont spécifiées par un URN. **account**:**account-id** pour le compte client OVHcloud, **user**:**account-id**/**username** pour le compte utilisateur, **group**:**account-id**/**username** pour un groupe utilisateur.
-- **resources**: The resources concerned by the policy. They are specified by a URN. **resource** pour une ressource, **resourceGroup** pour un groupe de ressources.
+- **name**: Le nom de la politique. Il est possible d'utiliser ce nom pour organiser les politiques. Il n'y a pas de format à suivre (sauf le préfixe « ovh- » qui est réservé aux politiques OVHcloud).
+- **readOnly**: S'il est en « true », il indique que la politique ne peut pas être modifiée. Il représente souvent les politiques gérées par OVHcloud.
+- **identities**: Les identités concernées par la politique. Elles sont spécifiées par un URN. **account**: **account-id** pour le compte client OVHcloud, **user**: **account-id**/**username** pour le compte utilisateur, **group**: **account-id**/**username** pour un groupe utilisateur.
+- **resources**: Les ressources concernées par la politique. Elles sont spécifiées par un URN, **resource** pour une ressource, **resourceGroup** pour un groupe de ressources.
 - **permissions**: Peut être **allow** ou **except**: 
-  - **allow**: Tableau des actions autorisées pour les identités concernant les ressources. Toutes les actions sont refusées par défaut.
-  - **except**: Extension du paramètre d'autorisation : **allow**. Tableau d'actions à ne pas autoriser même si elles sont incluses dans les actions **autorisées**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard.
+    - **allow**: Ensemble des actions autorisées pour les identités concernant les ressources. Toutes les actions sont refusées par défaut.
+    - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **autorisées**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard.
 - **createdAt**: Date de création de la politique.
 - **updateAt**: Dernière mise à jour de la politique.
 
 #### Créer une politique
 
-Créez une nouvelle politique en utilisant cette API :
+Créez une nouvelle politique en utilisant cet appel API :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|POST|/iam/policy|Create a new policy|
+|POST|/iam/policy|Créer une nouvelle politique|
 
-Par exemple, créer une politique autorisant l'utilisateur nommé "*user1*" à faire des actions sur un VPS:
+Par exemple, créez une politique autorisant l'utilisateur nommé "*user1*" à faire des actions sur un VPS :
 
 **Exemple de création de politique**
 
@@ -229,7 +227,7 @@ Vérifiez cela avec `GET /iam/policy`:
 ]
 ```
 
-La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes instantanées** sur le VPS "***urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93***".
+La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots))** sur le VPS "***urn:v1:eu:resource:vps:b96ffed4-3467-4129-b8be-39a3eb3a0a93***".
 
 ### Identités
 
@@ -254,9 +252,9 @@ Cette section décrit comment récupérer ou créer un utilisateur pour la polit
 |PUT|/me/identity/group/{group}|Modifier un groupe|
 |DELETE|/me/identity/group/{group}|Supprimer un groupe|
 
-#### Créer des utilisateur
+#### Créer des utilisateurs
 
-Listez tous les utilisateurs actuels liés au compte en appelant:
+Listez tous les utilisateurs actuels liés au compte en appelant :
 
 **/me/identity/user**
 
@@ -269,7 +267,7 @@ Listez tous les utilisateurs actuels liés au compte en appelant:
 
 Ces utilisateurs peuvent être utilisés sur des politiques avec le format URN: urn:v1:eu:identity:user:**xx1111-ovh**/**user1**
 
-Pour créer un nouvel utilisateur, appelez l'API avec le body suivant:
+Pour créer un nouvel utilisateur, appelez l'API avec le body suivant :
 
 **post /me/identity/user**
 
@@ -283,9 +281,9 @@ Pour créer un nouvel utilisateur, appelez l'API avec le body suivant:
 }
 ```
 
-#### Créer un groupe d'utilisateur
+#### Créer un groupe d'utilisateurs
 
-Listez tous les groupes actuels liés au compte en appelant:
+Listez tous les groupes actuels liés au compte en appelant :
 
 **/me/identity/group**
 
@@ -298,9 +296,9 @@ Listez tous les groupes actuels liés au compte en appelant:
 ]
 ```
 
-Ces groupes utilisateur peuvent être utilisés sur des politiques avec le format URN: urn:v1:eu:identity:group:**xx1111-ovh**/**admin@mycompany.com**
+Ces groupes d'utilisateurs peuvent être utilisés sur des politiques avec le format URN : urn:v1:eu:identity:group:**xx1111-ovh**/**admin@mycompany.com**
 
-Pour créer un nouveau groupe utilisateur, appelez l'API avec le body suivant:
+Pour créer un nouveau groupe d'utilisateurs, appelez l'API avec le body suivant:
 
 **post /me/identity/group**
 
@@ -312,7 +310,7 @@ Pour créer un nouveau groupe utilisateur, appelez l'API avec le body suivant:
 }
 ```
 
-Pour plus d'informations, consultez notre [documentation sur la gestion des utilisateurs](https://docs.ovh.com/fr/customer/managing-users/).
+Pour plus d'informations, consultez notre [documentation sur la gestion des utilisateurs](https://docs.ovh.com/fr/customer/gestion-utilisateurs/).
 
 #### Avec une connexion SSO active
 
@@ -320,7 +318,7 @@ Si l'ADFS est activée via la [connexion SSO](https://docs.ovh.com/fr/customer/c
 
 ### Ressources
 
-Les politiques font référence à des **ressources.** Les ressources correspondent à tous les produits OVHcloud souscrits par le compte OVHcloud pouvant être contrôlés par ce compte.
+Les politiques font référence à des **ressources.** Les ressources correspondent à tous les produits OVHcloud souscrits par le compte OVHcloud et pouvant être contrôlés par ce compte.
 
 Cette section décrit comment récupérer les informations sur les ressources pour les utiliser dans une politique.
 
@@ -379,7 +377,7 @@ Dans cet exemple, le compte a trois ressources disponibles (un VPS, un domaine p
 - **type**: Le type de la ressource (vps, publicCloudProject, dnsZone, domain, emailDomain, etc.)
 - **owner**: Le détenteur de la ressource (Account ID)
 
-### Resource Groups
+### Groupes de ressources
 
 Pour faciliter la gestion des politiques pour un grand nombre de ressources, il est possible de mettre en place un groupe de ressources qui regroupe plusieurs ressources sous un URN unique.
 
@@ -389,17 +387,17 @@ Pour faciliter la gestion des politiques pour un grand nombre de ressources, il 
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/resourceGroup|Récupèrer tous les groupes de ressources|
-|POST|/iam/resourceGroup|Créer une nouveau groupe de ressources|
-|GET|/iam/resourceGroup/{groupId}|Récupérer le groupe de ressources donné|
+|GET|/iam/resourceGroup|Récupérer tous les groupes de ressources|
+|POST|/iam/resourceGroup|Créer un nouveau groupe de ressources|
+|GET|/iam/resourceGroup/{groupId}|Récupérer un groupe de ressources spécifique|
 |PUT|/iam/resourceGroup/{groupId}|Mettre à jour un groupe de ressources existant|
-|DELETE|/iam/resourceGroup/{groupId}|Supprier le groupe de ressources donné|
+|DELETE|/iam/resourceGroup/{groupId}|Supprimer un groupe de ressources spécifique|
 
 #### Récupérer un groupe de ressources
 
-Lister tous les groupes de ressources en appelant **/iam/resourceGroup**.
+Listez tous les groupes de ressources en appelant **/iam/resourceGroup**.
 
-Cette API peut être appelé avec une requête-chaîne de paramètres "details" pour développer les résultats avec tous les attributs des ressources retournées.
+Cette API peut être appelée avec une requête-chaîne de paramètres « details » pour développer les résultats avec tous les attributs des ressources retournées.
 
 *Exemple de sortie:*
 
@@ -440,14 +438,14 @@ Dans cet exemple, nous pouvons voir que ce groupe de ressources "*urn:v1:eu:reso
 - **name**: Nom du groupe de ressources.
 - **owner**: Détenteur du groupe de ressources (Account ID).
 - **resources**: 
-    - Si details = **false**: Tableau des UUID des ressources.
-    - Si details = **true**: Les ressources seront développées avec leurs attributs (comme le résultat que nous avons via l'API des ressources).
+    - Si details = **false** : Ensemble des UUID des ressources.
+    - Si details = **true** : Les ressources seront développées avec leurs attributs (comme le résultat que nous obtenons via l'API des ressources).
 - **createdAt**: Date de création du groupe de ressources.
 - **updateAt**: Date de la dernière mise à jour du groupe de ressources.
 
 #### Créer un groupe de ressources
 
-Créez un groupe de ressources avec l'API suivante:
+Créez un groupe de ressources avec l'API suivante :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -472,7 +470,7 @@ L'exemple suivant crée un groupe de ressources "*Test\_Envrionment*" contenant 
 
 ### Action
 
-Les politiques contiennent une liste de **Actions** qui seront autorisées ou refusées aux utilisateurs.
+Les politiques contiennent une liste des **Actions** qui seront autorisées ou refusées aux utilisateurs.
 
 Ces actions sont spécifiques à chaque produit, comme le redémarrage d'un serveur de base de données, la commande d'une mise à niveau, la restauration d'un snapshot, etc.
 
@@ -486,9 +484,9 @@ Ces actions sont spécifiques à chaque produit, comme le redémarrage d'un serv
 
 #### Exemple
 
-Liste de toutes les actions disponibles pour les politiques avec l'API, par exemple:
+Listez toutes les actions disponibles pour les politiques avec l'API, par exemple :
 
-**exemple pour une action**
+**exemple d'action**
 
 ```json
 {
@@ -503,11 +501,11 @@ Liste de toutes les actions disponibles pour les politiques avec l'API, par exem
 
 Cette action est "*vps:apiovh:reboot*", elle vise la capacité de redémarrer un VPS.
 
-L'appel à **/iam/reference/action** listera **toutes les actions disponibles** (ATTENTION : Ceci contient une quantité énorme d'éléments).
+L'appel à **/iam/reference/action** listera **toutes les actions disponibles** (ATTENTION : cela représente une quantité énorme d'éléments).
 
-Il est fortement recommandé de spécifier le **resourceType** comme paramètre de chaîne de requête pour cet appel d'API (voir la section suivante).
+Il est fortement recommandé de spécifier le **resourceType** comme paramètre de chaîne de requête pour cet appel API (voir la section suivante).
 
-#### attributs de l'action
+#### Attributs de l'action
 
 - **action**: L'action elle-même
 - **description**: Description de l'action
@@ -541,6 +539,6 @@ Voici une partie du résultat:
 ]
 ```
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
