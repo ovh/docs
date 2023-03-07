@@ -1,5 +1,5 @@
 ---
-title: Partage de responsabilité - VMware on OVHcloud
+title: Partage de responsabilité sur Hosted Private Cloud by VMware
 slug: vmware-on-ovhcloud-raci
 section: Getting started
 excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit VMware on OVHcloud"
@@ -7,7 +7,7 @@ kb: Hosted Private Cloud
 
 ---
 
-**Dernière mise à jour le 06/03/2023**
+**Dernière mise à jour le 07/03/2023**
 
 ## Objectif
 
@@ -206,7 +206,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Décommissionner les configurations du PCC et ses options associés au client suite à la rupture du contrat | I | RA |
+| Décommissionner les configurations du Cloud Privé et options associées au client suite à la rupture du contrat | I | RA |
 
 #### 5.2. Destruction des données
 
