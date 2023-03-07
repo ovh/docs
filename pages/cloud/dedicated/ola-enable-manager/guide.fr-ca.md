@@ -4,10 +4,10 @@ slug: ola-manager
 excerpt: 'Découvrez comment activer l’agrégation de liens OVHcloud dans votre espace client.'
 section: 'Utilisation avancée'
 order: 1
-updated: 2022-05-18
+updated: 2023-03-07
 ---
 
-**Dernière mise à jour le 18/05/2022**
+**Dernière mise à jour le 07/03/2023**
 
 ## Objectif
 
@@ -51,6 +51,8 @@ L'opération peut prendre quelques minutes. Une fois celle-ci terminée, l'étap
 
 [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](../ola-w2k19/).
 
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/ca/fr/dedicated/ola-sles15/)
+
 ### Restaurer OLA aux valeurs par défaut
 
 Pour restaurer OLA aux valeurs par défaut, cliquez sur le bouton `...`{.action} à droite de « Mode » dans le cadre **OLA: OVHcloud Link Aggregation**. Cliquez alors sur `Déconfigurer l'agrégation privée`{.action}. Cliquez sur `Confirmer`{.action} dans le menu contextuel.
@@ -66,5 +68,7 @@ L'opération peut prendre quelques minutes.
 [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](../ola-centos7/).
 
 [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](../ola-w2k19/).
+
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/ca/fr/dedicated/ola-sles15/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

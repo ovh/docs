@@ -149,4 +149,6 @@ To test that our bond is working, ping another server on the same vRack. If it w
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
 
+[How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15](https://docs.ovh.com/gb/en/dedicated/ola-sles15/)
+
 Join our community of users on <https://community.ovh.com/en/>.

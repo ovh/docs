@@ -77,4 +77,6 @@ Pour vérifier que votre équipe NIC fonctionne, effectuez un ping vers un autre
 
 [Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](../ola-debian9/).
 
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/ca/fr/dedicated/ola-sles15/).
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
