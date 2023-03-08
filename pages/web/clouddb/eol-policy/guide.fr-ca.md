@@ -29,7 +29,7 @@ Les produits couverts par cette politique de fin de vie sont :
 
 - Les services Web Cloud Databases, instances SGBD dédiées joignables via le réseau public ou via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/ca/fr/clouddb/clouddb-eos-eol/)).
 
-- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/fr/hosting/sql_eos_eol/)).
 
 ### Définitions et lignes directrices de la politique de fin de vie
 
