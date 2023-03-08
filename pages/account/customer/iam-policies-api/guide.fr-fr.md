@@ -101,9 +101,9 @@ Récupérez toutes les politiques, y compris celles pré-générées par OVHclou
 ]
 ```
 
-Dans cet exemple, le compte "*urn:v1:eu:identity:account:xx1111-ovh*" peut faire toutes les actions (*"action":"\*"*) pour le groupe de ressources "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*". Cette police est détenue par l'idientifiant client OVHcloud "*xx1111-ovh*" (il correspond au rôle d'administrateur, il est créé par OVHcloud et ne peut pas être modifié).
+Dans cet exemple, le compte "*urn:v1:eu:identity:account:xx1111-ovh*" peut faire toutes les actions (*"action":"\*"*) pour le groupe de ressources "*urn:v1:eu:resourceGroup:aa0713ab-ed13-4f1a-89a5-32aa0cb936d8*". Cette politique est détenue par l'identifiant client OVHcloud "*xx1111-ovh*" (il correspond au rôle d'administrateur, il est créé par OVHcloud et ne peut pas être modifié).
 
-Les éléments des politiques sont définis par des URN. Ces URN sont définis par le modèle suivant :
+Les éléments des politiques sont définis par des URNs. Ces URNs sont définies par le modèle suivant :
 
 ||**URN**|**:**|**version**|**:**|**plaque**|**:**|**type**|**:**|**sous-type**|**:**|**id**|
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -114,17 +114,17 @@ Les éléments des politiques sont définis par des URN. Ces URN sont définis p
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
-#### Attributs de la politique
+#### Attributs d'une politique
 
 - **id**: Identifiant unique de la politique. Il suit le format UUID.
 - **owner**: Le compte qui a créé cette politique.
-- **name**: Le nom de la politique. Il est possible d'utiliser ce nom pour organiser les politiques. Il n'y a pas de format à suivre (sauf le préfixe « ovh- » qui est réservé aux politiques OVHcloud).
+- **name**: Le nom de la politique. Il est possible d'utiliser ce nom pour organiser les politiques. Il n'y a pas de format à suivre (mis à part le préfixe « ovh- » qui est réservé aux politiques OVHcloud).
 - **readOnly**: S'il est en « true », il indique que la politique ne peut pas être modifiée. Il représente souvent les politiques gérées par OVHcloud.
 - **identities**: Les identités concernées par la politique. Elles sont spécifiées par un URN. **account**: **account-id** pour le compte client OVHcloud, **user**: **account-id**/**username** pour le compte utilisateur, **group**: **account-id**/**username** pour un groupe utilisateur.
 - **resources**: Les ressources concernées par la politique. Elles sont spécifiées par un URN, **resource** pour une ressource, **resourceGroup** pour un groupe de ressources.
-- **permissions**: Peut être **allow** ou **except**: 
+- **permissions**: 
     - **allow**: Ensemble des actions autorisées pour les identités concernant les ressources. Toutes les actions sont refusées par défaut.
-    - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **autorisées**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard.
+    - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **allow**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard.
 - **createdAt**: Date de création de la politique.
 - **updateAt**: Dernière mise à jour de la politique.
 
@@ -368,7 +368,8 @@ Visualisez toutes les ressources liées au compte OVHcloud en appelant :
 
 Dans cet exemple, le compte a trois ressources disponibles (un VPS, un domaine pour sa messagerie et un CDN). Chacune de ces ressources possède un ensemble d'attributs permettant de les identifier sur les politiques.
 
-#### Attributs des ressources
+#### Attributs d'une ressource
+
 
 - **id**: Identifiant unique de la ressource. Il suit le format UUID.
 - **urn**: Ressource URN.
@@ -397,7 +398,7 @@ Pour faciliter la gestion des politiques pour un grand nombre de ressources, il 
 
 Listez tous les groupes de ressources en appelant **/iam/resourceGroup**.
 
-Cette API peut être appelée avec une requête-chaîne de paramètres « details » pour développer les résultats avec tous les attributs des ressources retournées.
+Cette API peut être appelée avec un paramètre query-string « details » pour développer les résultats avec tous les attributs des ressources retournées.
 
 *Exemple de sortie:*
 
@@ -484,7 +485,7 @@ Ces actions sont spécifiques à chaque produit, comme le redémarrage d'un serv
 
 #### Exemple
 
-Listez toutes les actions disponibles pour les politiques avec l'API, par exemple :
+Permet de lister toutes les actions disponibles pour les politiques avec l'API, par exemple :
 
 **exemple d'action**
 
@@ -499,11 +500,11 @@ Listez toutes les actions disponibles pour les politiques avec l'API, par exempl
 }
 ```
 
-Cette action est "*vps:apiovh:reboot*", elle vise la capacité de redémarrer un VPS.
+Cette action est "*vps:apiovh:reboot*", elle vise la capacité à redémarrer un VPS.
 
-L'appel à **/iam/reference/action** listera **toutes les actions disponibles** (ATTENTION : cela représente une quantité énorme d'éléments).
+L'appel à **/iam/reference/action** liste **toutes les actions disponibles** (ATTENTION : cela représente une quantité énorme d'éléments).
 
-Il est fortement recommandé de spécifier le **resourceType** comme paramètre de chaîne de requête pour cet appel API (voir la section suivante).
+Il est fortement recommandé de spécifier le **resourceType** comme paramètre query-string pour cet appel API (voir la section suivante).
 
 #### Attributs de l'action
 
