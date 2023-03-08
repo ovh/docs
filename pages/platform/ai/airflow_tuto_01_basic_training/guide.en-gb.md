@@ -112,7 +112,7 @@ Finally, define the *main* and to start processing and training stages.
 if __name__ == '__main__':
 
     print("_________________________________________________________________")
-    print("You AI Training job is RUNNING. The following device is available:", tf.test.gpu_device_name(), "\n")
+    print("Your AI Training job is RUNNING. The following device is available:", tf.test.gpu_device_name(), "\n")
 
     df = pd.read_csv('bank-additional-full.csv', sep=';')
     print(df.head())
