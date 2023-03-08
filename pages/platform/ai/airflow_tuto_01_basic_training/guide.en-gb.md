@@ -191,7 +191,7 @@ ENV HOME=/workspace
 Launch the following command from the **Dockerfile** directory to build your application image:
 
 ```console
-docker build . -t airflow-basic-model:latest
+docker build . -t airflow-basic-training:latest
 ```
 
 > [!primary]
@@ -213,7 +213,7 @@ docker build . -t airflow-basic-model:latest
 Launch the following **Docker command** to launch your application locally on your computer:
 
 ```console
-docker run --rm -it --user=42420:42420 airflow-basic-model:latest
+docker run --rm -it --user=42420:42420 airflow-basic-training:latest
 ```
 
 > [!warning]
@@ -243,13 +243,13 @@ docker login -u <user> -p <password> <shared-registry-address>
 Push the compiled image into the shared registry:
 
 ```console
-docker tag airflow-basic-model:latest <shared-registry-address>/airflow-basic-model:latest
-docker push <shared-registry-address>/airflow-basic-model:latest
+docker tag airflow-basic-training:latest <shared-registry-address>/airflow-basic-training:latest
+docker push <shared-registry-address>/airflow-basic-training:latest
 ```
 
 > [!primary]
 >
-> We have made the Docker image available to you on a dedicated registry. You can use it in the following way: `priv-registry.gra.training.ai.cloud.ovh.net/ai-training-tutorials/airflow-basic-model:latest`
+> We have made the Docker image available to you on a dedicated registry. You can use it in the following way: `priv-registry.gra.training.ai.cloud.ovh.net/ai-training-tutorials/airflow-basic-training:latest`
 >
 
 Let's get to the heart of the matter: **Apache AirFlow**.
@@ -342,7 +342,7 @@ basic_training_job = AiTrainingRunJobOperator(
       task_id='basic_training_job',
       bearer = os.environ.get('OVH_BEARER', 'bearer'),
       region = 'gra',
-      image = 'priv-registry.gra.training.ai.cloud.ovh.net/ai-training-tutorials/airflow-basic-model',
+      image = 'priv-registry.gra.training.ai.cloud.ovh.net/ai-training-tutorials/airflow-basic-training',
       name = 'basic-training-ai-training-airflow',
       job_resources = {'cpu': 0,'gpu':1 },
       asynchronous = False
@@ -377,7 +377,7 @@ with DAG(
       task_id='basic_training_job',
       bearer = os.environ.get('OVH_BEARER', 'bearer'),
       region = 'gra',
-      image = 'priv-registry.gra.training.ai.cloud.ovh.net/ai-training-tutorials/airflow-basic-model',
+      image = 'priv-registry.gra.training.ai.cloud.ovh.net/ai-training-tutorials/airflow-basic-training',
       name = 'basic-training-ai-training-airflow',
       job_resources = {'cpu': 0,'gpu':1 },
       asynchronous = False
