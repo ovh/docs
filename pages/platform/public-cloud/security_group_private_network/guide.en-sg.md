@@ -3,7 +3,7 @@ title: Managing firewall rules and port security on networks using OpenStack CLI
 slug: firewall_security_pci
 excerpt: Find out how security groups work on Public Cloud
 section: OpenStack
-updated: 2022-08-25
+updated: 2023-03-08
 ---
 
 <style>
@@ -28,7 +28,7 @@ updated: 2022-08-25
  }
 </style>
 
-**Last updated 25th August 2022**
+**Last updated 8th March 2023**
 
 ## Objective
 
@@ -120,7 +120,9 @@ As a consequence, all the network ports (public and private) will allow every co
 
 #### Adding rules
 
-If you want to configure specific rules, you can create a new security group and associate your networking port with it.
+> [!warning]
+> If you want to configure specific rules, you need to create a new security group and associate your network port with it. We advise not changing the default security group. This is to keep access to your instance under all circumstances (e.g. in rescue mode).
+>
 
 Use this command to create the group:
 

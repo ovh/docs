@@ -3,7 +3,7 @@ title: Zarządzanie regułami firewalla i port security w sieciach korzystający
 slug: firewall_security_pci
 excerpt: Sprawdź działanie grup zabezpieczeń w usłudze Public Cloud
 section: Zarządzanie w OpenStack CLI
-updated: 2022-08-25
+updated: 2023-03-08
 ---
 
 <style>
@@ -32,7 +32,7 @@ updated: 2022-08-25
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 25-08-2022**
+**Ostatnia aktualizacja z dnia 08-03-2023**
 
 ## Wprowadzenie
 
@@ -126,7 +126,9 @@ W związku z tym wszystkie porty sieciowe (publiczne i prywatne) umożliwiają k
 
 #### Dodaj reguły
 
-Jeśli chcesz skonfigurować określone reguły, możesz utworzyć nową grupę zabezpieczeń i przypisać do niej port sieciowy.
+> [!warning]
+> Jeśli chcesz skonfigurować określone reguły, utwórz nową grupę zabezpieczeń i przypisz do niej port sieciowy. Zalecamy, abyś nie zmieniał grupy zabezpieczeń "default", aby utrzymać dostęp do instancji w każdych okolicznościach (na przykład w trybie Rescue).
+>
 
 Użyj tego polecenia, aby utworzyć grupę:
 
