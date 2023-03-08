@@ -4,14 +4,14 @@ slug: use-htaccess-with-wordpress
 excerpt: "Erfahren Sie hier, wie Sie Ihre WordPress Website mit einer oder mehreren htaccess-Dateien absichern"
 section: 'Tutorials'
 order: 022
-updated: 2023-02-07
+updated: 2023-03-08
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 07.02.2023**
+**Letzte Aktualisierung am 08.03.2023**
 
 ## Ziel
 
@@ -122,7 +122,7 @@ Options All -Indexes
 Ihre Datei **wp-config.php**, die sich im Wurzelverzeichnis Ihrer Website befindet, enthält sensible Konfigurationsinformationen. Verhindern Sie den Zugriff auf diese Datei, indem Sie folgende Zeilen in Ihrer **.htaccess**-Datei hinzufügen:
 
 ```bash
-<Files ~ "^.*\.([Hh][Tt][AaPp])">
+<Files wp-config.php>
     order allow,deny
     deny from all
     satisfy all

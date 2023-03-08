@@ -4,10 +4,10 @@ slug: use-htaccess-with-wordpress
 excerpt: "Dowiedz się, jak zabezpieczyć blog WordPress jednym lub kilkoma plikami htaccess"
 section: 'Tutoriale'
 order: 022
-updated: 2023-02-07
+updated: 2023-03-08
 ---
 
-**Ostatnia aktualizacja z dnia 07-02-2023**
+**Ostatnia aktualizacja z dnia 08-03-2023**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -123,7 +123,7 @@ Options All -Indexes
 Twój plik **wp-config.php**, obecny na Twojej stronie WWW, zawiera wrażliwe informacje dotyczące konfiguracji. Zablokuj dostęp do tego pliku, dodając następujące wiersze w pliku **.htaccess**:
 
 ```bash
-<Files ~ "^.*\.([Hh][Tt][AaPp])">
+<Files wp-config.php>
     order allow,deny
     deny from all
     satisfy all

@@ -3,11 +3,11 @@ title: 'API OVHcloud & Partitionnement'
 slug: api-partitioning
 excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration du partitionnement lors de l'installation de l'OS sur votre serveur"
 section: 'RAID & disques'
-updated: 2022-11-29
+updated: 2023-03-08
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Dernière mise à jour le 29/11/2022**
+**Dernière mise à jour le 08/03/2023**
 
 ## Objectif
 
@@ -143,6 +143,7 @@ Une partition peut bien sûr être modifiée, supprimée, ajoutée puis affiché
 
 #### Disposition des partitions dans l'API
 
+<!-- markdownlint-disable-next-line MD036 -->
 **Structure**
 
 Une disposition de partition est une liste de partitions. Voici un exemple de structure de partition :
@@ -177,9 +178,12 @@ Une disposition de partition est une liste de partitions. Voici un exemple de st
 <!-- markdownlint-disable-next-line MD028 -->
 > [!primary]
 >
-> volumeName : utile uniquement si le type lv est défini.
+> volumeName : 2 cas d'utilisation :
 >
+> - type lv: le nom du volume logique (obligatoire)
+> - filesystem zfs: le nom du zpool souhaité (optionnel, un nom de zpool sera généré automatiquement sinon)
 
+<!-- markdownlint-disable-next-line MD036 -->
 **Tableau de compatibilité des systèmes de fichiers et des niveaux LVM + RAID**
 
 Le tableau suivant donne une vue d'ensemble de la compatibilité des systèmes de fichiers avec les niveaux RAID et LVM dans le contexte OVHcloud :
@@ -281,6 +285,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 |Error with MBR partition table: partition `p` cannot end after 2 TiB (`interval stop`) and this server does not support GPT! OVHcloud also needs to add a `cloud-init size` cloud-init partition at the very end of the disk. Therefore all customer partitions must end before (2TiB - `cloud-init size`).|- Nous ajoutons systématiquement une partition config-drive à la fin d'un disque sur votre serveur dédié. La dernière partition de votre partitionnement va se terminer après la position 2TiB sur le disque. Donc si nous ajoutons une partition config-drive après la dernière partition, celle-ci devra commencer après la position 2TiB sur le disque d'un serveur qui ne supporte pas GPT|- Réduisez la taille de cette partition de telle sorte que la somme totale de toutes les partitions du disque soit inférieure à 2TiB<br />- Ne définissez jamais de partition comme remplissant un disque (ou partition de taille zéro si définie via l'[API OVHcloud](https://api.ovh.com/)) sur un [template personnalisé](#customertemplates) que vous souhaitez utiliser pour des serveurs ayant des disques plus grands que 2TiB et qui ne supportent pas le GPT|
 |`/boot` (or `/` if no `/boot` defined) partition cannot be larger than 2097151 MiB on this hardware|- La partition qui contient GRUB ne doit pas dépasser 2TiB sur ce type de contrôleur RAID|- Créez une partition `/boot` séparée avec une taille inférieure à 2TiB (1GiB devrait suffire)|
 |`/boot` (or `/` if no `/boot` defined) partition type cannot be `XFS`|- La partition qui contient GRUB ne supporte pas le système de fichiers `XFS` sur ce système d'exploitation. C'est généralement le cas pour les systèmes d'exploitation de la famille debian (debian, proxmox, ubuntu)|- Créez une partition `/boot` séparée avec un système de fichiers autre que `XFS`<br />- Ne créez pas de partition `/boot` séparée, mais choisissez un système de fichier autre que `XFS` pour la partition `/`|
+|`ZFS` partition already exists with zpool name `n`. Either choose another name for the `m` partition or set the same RAID level for all partitions within zpool `n`|Il est possible de définir plusieurs partitions `ZFS` avec un même nom de zpool afin que chaque dataset fasse partie du même zpool. Cela est possible uniquement dans le cas où tous les datasets (et donc les partitions définies dans l'API) ont le même niveau de RAID|- Choisissez le même niveau de RAID que les partitions `ZFS` existantes du zpool concerné<br />- Choisissez un autre nom de zpool: cette partition ne fera pas partie du même zpool<br />- Ne définissez pas de nom de zpool: un nom sera défini automatiquement et cette partition ne fera pas partie du même zpool|
 
 #### Auto-correction des données d'entrée client
 
@@ -288,7 +293,7 @@ Afin d'améliorer l'expérience client, réduire la charge de travail du [suppor
 
 |Sujet|Description|
 |---|---|
-|Regroupement ZP|Toutes les partitions ZFS de même niveau RAID seront regroupées au sein d’un même zpool (ZP) (si possible en fonction de la taille des disques).|
+|Regroupement ZP|Toutes les partitions ZFS de même niveau RAID seront regroupées au sein d’un même zpool (ZP) si possible en fonction de la taille des disques et si aucun nom de zpool n'est spécifié ou que le même nom de zpool est spécifié pour toutes ces partitions.|
 |Regroupement LV|Toutes les partitions de type `lv` ayant le même niveau de RAID seront regroupées au sein d'un même VG (si possible en fonction de la taille des disques).|
 |Expansion VG|Dans le cas de partitions lv de niveau RAID 0, le VG s’étendra sur plusieurs PP (donc PD) et aucun périphérique SR ne sera créé.|
 |VG Remplissage de disque|L'espace disque restant sera comblé par un VG (si un LV existe). La taille des LV contenus dans ce VG n'est pas affectée.|
