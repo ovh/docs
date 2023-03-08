@@ -12,22 +12,18 @@ order:
 
 If you value the data stored in you Block Storage volumes, it worth to organize the backup of this data to prevent the potential impact of any potential issue on this data, being it a human error or cluster incident.
 
-A volume snapshot is a recovery point stored within the same storage cluster as the original volume. Operations will be fast, but in case of incident on the cluster, both volume and snapshotmight be unavailable.
+A volume snapshot is a recovery point stored within the same storage cluster as the original volume. Operations will be fast, but in case of incident on the cluster, both volume and snapshotmight be unavailable. Volume Snapshots creation do not required the volume to be detached from the instance.
 
 A volume backup is an image created out of your volume, which is stored in the Object Storage cluster of the original volume localisation.
-Level of resiliency is ideal and will allow you to quickly react to any incident on your volume, creating another volume from the backup.
+Level of resiliency is ideal and will allow you to quickly react to any incident on your volume, creating another volume from the backup. Volume backup creation requires the volume to be detached from the instance.
 
-A snapshot of volume allows you to quickly restore a given volume based on snapshot's state.
-You can use a snapshot to create 
+Both volume Snapshot and volume Backup allow you to:
 
-Both volume Snapshot and volume Backup allows you to:
+- Create backups of your volume with a few clicks and keep them as long as needed
+- Use the backups to restore your volume state
+- Use the backups as a template to create identical volumes
 
-- You can create backups with a few clicks and keep them as long as needed.
-- You can use the snapshot as a template for identical volumes.
-
-A volume backup is an image of the volume 
-
-**This guide explains how to create a volume snapshot in the OVHcloud Control Panel.**
+**This guide explains how to create a volume snapshot or volume backup in the OVHcloud Control Panel.**
 
 ## Requirements
 
@@ -40,7 +36,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-In the row of the volume concerned, click on `...`{.action} and select `Create a snapshot`{.action} (It is not required to detach the volume from its instance first). However, if you wish to detach your volume, please consult this [section](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-linux) of the corresponding guide for Linux and this [section](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-windows) for Windows.
+In the row of the volume concerned, click on `...`{.action} and select `Create a backup`{.action} (It is not required to detach the volume from its instance first). However, if you wish to detach your volume, please consult this [section](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-linux) of the corresponding guide for Linux and this [section](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-windows) for Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 
