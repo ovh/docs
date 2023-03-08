@@ -81,7 +81,7 @@ Aby go zainstalować, wprowadź następującą komendę do tego samego katalogu:
 php composer.phar install
 ```
 
-Aby korzystać z tej biblioteki, zapoznaj się z dokumentacją oraz kodem dostępnym na stronie [github](https://github.com/ovh/php-ovh){.external}
+Aby korzystać z tej biblioteki, zapoznaj się z dokumentacją oraz kodem dostępnym na stronie [GitHub](https://github.com/ovh/php-ovh){.external}
 
 ## Sprawdź również <a name="go-further"></a>
 

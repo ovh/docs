@@ -1,7 +1,7 @@
 ---
 title: Instalar Composer num alojamento web
 slug: instalacao_do_composer_nos_alojamentos_partilhados
-excerpt: Descruba como instalar e dar os primeiros passos em Composer
+excerpt: Saiba como instalar e dar os primeiros passos em Composer
 section: PHP
 order: 02
 updated: 2023-02-24
@@ -82,7 +82,7 @@ Para o instalar, execute o seguinte comando na mesma pasta:
 php composer.phar install
 ```
 
-Para utilizar esta livraria, consulte a documentação, bem como o código, disponíveis em [github](https://github.com/ovh/php-ovh){.external}
+Para utilizar esta livraria, consulte a documentação, bem como o código, disponíveis em [GitHub](https://github.com/ovh/php-ovh){.external}
 
 ## Quer saber mais? <a name="go-further"></a>
 

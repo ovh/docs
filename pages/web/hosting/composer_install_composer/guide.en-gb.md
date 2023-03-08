@@ -84,7 +84,6 @@ php composer.phar install
 
 To use this library, please refer to the documentation, as well as the code, available on [GitHub](https://github.com/ovh/php-ovh){.external}.
 
-
 ## Go further <a name="go-further"></a>
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).

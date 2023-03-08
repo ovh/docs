@@ -4,14 +4,14 @@ excerpt: How to install "Composer" on web hosting packages
 slug: install_composer_on_web_hosting_packages
 section: PHP
 order: 02
-updated: 2023-02-24
+updated: 2023-03-07
 ---
 
-**Last updated 24th February 2023**
+**Last updated 07th March 2023**
 
 ## Objective
 
-[Composer](https://getcomposer.org/){.external} is a dependency manager created for the PHP language. It allows PHP developers to include external libraries in their programmes. "Composer" allows PHP projects to facilitate library distribution and code maintenance. Since the creation of this tool, many good development practices have been proposed and have improved the libraries of the PHP community. These good practices are documented in the form of [SRP](http://www.php-fig.org/){.external}.
+[Composer](https://getcomposer.org/){.external} is a dependency manager created for the PHP language. It allows PHP developers to include external libraries in their programs. Composer allows PHP projects to facilitate library distribution and code maintenance. Since the creation of this tool, many good development practices have been proposed and have improved the libraries of the PHP community. These good practices are documented in the form of [SRP](http://www.php-fig.org/){.external}.
 
 **This guide explains how to install Composer and provides an example of usage with a Web Hosting plan.**
 
@@ -82,8 +82,7 @@ To install it, run the following command in the same folder:
 php composer.phar install
 ```
 
-To use this library, please refer to the documentation, as well as the code, available on [github](https://github.com/ovh/php-ovh){.external}
-
+To use this library, please refer to the documentation, as well as the code, available on [GitHub](https://github.com/ovh/php-ovh){.external}.
 
 ## Go further <a name="go-further"></a>
 
