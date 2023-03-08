@@ -144,7 +144,7 @@ Wenn Sie bei der Installation die kostenlosen Erweiterungen aktiviert haben, ver
 
 Dieser Tab dient zur Aktivierung/Deaktivierung der auf Ihrer Website verfügbaren Zahlungsarten. Zur Konfiguration Ihrer Zahlungsarten lesen Sie die [offizielle Dokumentation](https://woocommerce.com/document/payments/).
 
-#### Konten und Privatsphäre
+#### Konten und Datenschutz
 
 Dieser Bereich umfasst alle Funktionen zur Verwaltung von Accounts und persönlichen Daten.
 
