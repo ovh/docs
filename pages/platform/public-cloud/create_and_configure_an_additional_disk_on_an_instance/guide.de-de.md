@@ -4,7 +4,7 @@ slug: erstellen_zustzliche_festplatte_public_cloud
 excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrer Public Cloud Instanz hinzufügen'
 section: 'Storage'
 order: 1
-updated: 2023-02-09
+updated: 2023-03-03
 ---
 
 > [!primary]
