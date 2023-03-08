@@ -16,7 +16,7 @@ This article provides you with the steps to update Nutanix clusters firmwares by
 Our services will take over to apply updates firmwares and will restart the node once done.
 
 > [!warning]
-> Before beginning any action, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and create a support request ticket to ask a BIOS update and provide the OVHcloud support teams with the technical elements regarding your cluster.
+> Before beginning any action, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and create a support request ticket to ask a firmware update and provide the OVHcloud support teams with the technical elements regarding your cluster.
 
 **Find out how to update your Nutanix cluster firmware.**
 
@@ -181,7 +181,7 @@ Click again the `...`{.action} button and click `Restart`{.action}.
 
 The server will reboot. Optionally, you can open an IPMI session to follow the reboot of your node.
 
-When the node is booted on `rescue-customer`, update the your support ticket with this information to notify the OVHcloud support teams that they can proceed with the BIOS update.
+When the node is booted on `rescue-customer`, update the your support ticket with this information to notify the OVHcloud support teams that they can proceed with the firmware update.
 
 Our support teams will finish the necessary updates, meaning they will:
 
