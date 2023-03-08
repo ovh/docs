@@ -1,48 +1,49 @@
 ---
-title: "Tutorial - Using WooCommerce with WordPress CMS"
+title: "Tutorial - Using WooCommerce with WordPress"
 slug: wordpress-woocommerce-first-steps
-excerpt: "This guide explains how to use the WooCommerce solution with WordPress CMS"
+excerpt: "Find out how to use the WooCommerce solution with the WordPress CMS"
 section: "Tutorials"
 order: 023
-updated: 2023-02-23
+updated: 2023-03-07
 ---
 
-**Last updated 23th February 2023**
+**Last updated 7th March 2023**
   
 ## Objective
 
-Find out how to create an online store with the open-source extension **WooCommerce** with the Content Management System (CMS) **WordPress**. 
+This tutorial explains how to create an online store with the open-source plugin **WooCommerce** for the Content Management System (CMS) **WordPress**. 
+
 
 > [!warning]
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
-> 
-> This tutorial will help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) at [the publisher of the WordPress CMS](https://wordpress.com/support/){.external} or [the publisher of WooCommerce](https://woocommerce.com/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this tutorial.
+>
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-au/directory/) or the [WordPress support](https://wordpress.com/support/){.external} or [the publisher of WooCommerce](https://woocommerce.com/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- A [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database.
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)  that contains at least one database
 - A [domain name](https://www.ovhcloud.com/en-au/domains/).
-- A [WordPress installed](https://docs.ovh.com/au/en/hosting/web_hosting_web_hosting_modules/) on your web hosting plan beforehand.
+- [WordPress installed](https://docs.ovh.com/au/en/hosting/web_hosting_web_hosting_modules/) on your web hosting plan
 
-If you have not already done so, we recommend that you switch your website to HTTPS before continuing with this tutorial using our guide on "[Activating HTTPS on your website with an SSL certificate](https://docs.ovh.com/au/en/hosting/activate-https-website-ssl/)".
+If one is not already installed, [add an SSL certificate](https://docs.ovh.com/au/en/hosting/activate-https-website-ssl/#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
   
 ## Instructions
   
-**WooCommerce** is an extension of **WordPress**. It installs like any extension.
+**WooCommerce** is an extension for **WordPress** and can be installed like any other plugin.
 
 ### Installation
 
-Log in to your admin interface by typing `/wp-admin` or `/wp-login` in your search bar after your domain name URL (redirection is done automatically):
+Log in to your admin interface by typing `/wp-admin` or `/wp-login` in your address bar after your domain name URL (redirection is done automatically):
 
 ![Admin page of WordPress](images/wordpress-woocommerce-first-steps_1.png){.thumbnail}
 
-In the left-hand menu, go to `Plugins`{.action} then click on `Add new`{.action}:
+In the left-hand menu, go to `Plugins`{.action} then click on `Add New`{.action}:
 
 ![Dashboard, Plugins, Add new](images/wordpress-woocommerce-first-steps_2.png){.thumbnail}
 
-On the new `Add plugins`{.action} page, type woocommerce in the search bar in the top right and click `Install Now`{.action} in the **WooCommerce** extension box:
+On the new `Add Plugins` page, type "woocommerce" in the search bar in the top right and click `Install Now`{.action} in the **WooCommerce** box:
 
 ![Install WooCommerce](images/wordpress-woocommerce-first-steps_3.png){.thumbnail}
 
@@ -52,9 +53,9 @@ Now click on `Activate`{.action}:
 
 ### Configuration 
 
-#### Method #1 - Using the Configuration Wizard
+#### Method 1: Using the configuration wizard
 
-If you have not yet set up your **WooCommerce** extension, a setup wizard will help you fill in the information for your online store. Fill in the form and click `Continue`{.action}:
+If you have not yet set up your **WooCommerce** plugin, a setup wizard will help you fill in the information for your online store. Fill in the form and click `Continue`{.action}:
 
 ![Setup Wizard - Store Details](images/wordpress-woocommerce-first-steps_5.png){.thumbnail}
 
@@ -78,17 +79,17 @@ Finally, choose a theme from the list:
 
 ![Setup Wizard - Choose a theme](images/wordpress-woocommerce-first-steps_10.png){.thumbnail}
 
-**WooCommerce** then prompts you to create an account to use the **Jetpack** extension, which is automatically installed in addition to the **WooCommerce** extension. This account creation is optional, you will have access to the limited functions of **Jetpack** without having to authenticate.
+**WooCommerce** then prompts you to create an account to use the **Jetpack** plugin, which is automatically installed in addition to **WooCommerce**. This account creation is optional, you will have access to the limited functions of **Jetpack** without having to authenticate.
 
 Your online store is now configured with the general settings.
 
-#### Method 2 - Manual configuration
+#### Method 2: Manual configuration
 
-Click `Plugins`{.action} to list the installed extensions and then click `Installed plugins`. You will see a list of your extensions. Click `Settings`{.action} in the **WooCommerce** module:
+Click `Plugins`{.action} to list the installed extensions and then click `Installed plugins`. You will see a list of your plugins. Click `Settings`{.action} in the **WooCommerce** module:
 
 ![Setup Wizard - Extension, WooCommerce, Settings](images/wordpress-woocommerce-first-steps_11.png){.thumbnail}
 
-You can also access these settings by clicking directly on `WooCommerce`{.action} then `Settings`{.action}:
+You can also access these settings by clicking directly on `WooCommerce`{.action}, then `Settings`{.action}:
 
 ![Setup Wizard - WooCommerce, Settings](images/wordpress-woocommerce-first-steps_12.png){.thumbnail}
 
@@ -102,36 +103,36 @@ The settings page has several tabs:
 
 This tab allows you to define the following:
 
-- company address
-- sales and delivery areas
-- default customer location (optional)
-- activate/deactivate taxes
-- coupons
-- monetary data (site currency, display).
+- Company address
+- Sales and delivery areas
+- Default customer location (optional)
+- Activate/deactivate taxes
+- Coupons
+- Monetary data (site currency, display)
 
 ![Setup Wizard - WooCommerce, Settings, General tab](images/wordpress-woocommerce-first-steps_14.png){.thumbnail}
 
 #### Products
 
-Product management is done through a set of sub-headings:
+Product management is done through a set of subcategories:
 
-- **General**: is used to define elements such as the home page that will be displayed by default (shop, legal notices, shopping cart, etc.), units of measure, whether or not to comment on products or notes.
-- **Inventory**: is used to configure or not the management of your stock and to configure the behaviour of the website (decremented stock when an object is in the basket, alert thresholds, possibility to hide products that are no longer in stock).
-- **Downloadable products**: concerns cases where documents are made available for download by users.
-- **Approved Download Directories**: specifies the directory(s) on the server where the files will be uploaded.
-- **Advanced**: is used to set product attributes more finely.
+- **General**: Is used to define elements such as the home page that will be displayed by default (shop, legal notices, shopping cart, etc.), units of measure, whether or not to comment on products or notes.
+- **Inventory**: Is used to configure or not the management of your stock and to configure the behaviour of the website (decremented stock when an object is in the basket, alert thresholds, possibility to hide products that are no longer in stock).
+- **Downloadable products**: Concerns cases where documents are made available for download by users.
+- **Approved download directories**: Specifies directories on the server where the files will be uploaded.
+- **Advanced**: Is used to set product attributes more finely.
 
 #### Shipping
 
-If you enabled the default extensions that were free when you installed, you have the extension [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. Otherwise, you can install it by going to the `Plugins`{.action} menu.
+If you enabled the default extensions that were free when you installed, you have the extension [WooCommerce Shipping](https://woocommerce.com/woocommerce-shipping/){.external}. Otherwise, you can install it by going to the `Extensions`{.action} submenu.
 
-- **Shipping zones**: allows you to define and configure shipping areas.
-- **Delivery Options**: is used to set up the application for all shipping costs.
-- **Shipping Classes**: can be used to group similar products by type of shipment.
+- **Shipping zones**: Allows you to define and configure shipping areas.
+- **Delivery options**: Is used to set up the application for all shipping costs.
+- **Shipping classes**: Can be used to group similar products by type of shipment.
 
 #### Payments
 
-Use this tab to enable/disable the payment methods offered on your website. Please refer to the [official documentation](https://woocommerce.com/document/payments/) to configure your payment method(s).
+Use this tab to enable/disable the payment methods offered on your website. Please refer to the [official documentation](https://woocommerce.com/document/payments/) to configure your payment methods.
 
 #### Accounts and privacy
 
@@ -139,29 +140,29 @@ This section includes all features related to the management of accounts and per
 
 #### Email
 
-Allows you to configure the *standard emails* sent by the application (registration, commands, order cancellations, etc.).
+Allows you to configure the *standard emails* sent by the application (registration, orders, cancellations, etc.).
 
 #### Integration
 
-To geolocate your customers based on their IP address, you can, in this sub-topic, enter the licence key for [MaxMind](https://www.maxmind.com/){.external}, paid geolocation service.
+To geolocate your customers based on their IP addresses, you can enter the licence key for [MaxMind](https://www.maxmind.com/){.external}, a paid geolocation service.
 
 #### Advanced
 
-- **Installing pages**: useful for modifying the pages that users will be redirected to during the ordering process.
-- **REST API**: section that allows you to configure and configure access to WooCommerce via its REST API.
-- **Webhook**: manage your HTTP callback functions.
-- **Ancient API**: reactivate the old WooCommerce API (disabled by default).
-- **WooCommerce.com**: enable or disable tracking of your online sales site activity by WooCommerce, have suggestions for dedicated extensions (the majority are paid).
-- **Features**: a page that lists features that are currently being tested on WooCommerce or recently added.
+- **Installing pages**: Useful for modifying the pages that users will be redirected to during the ordering process.
+- **REST API**: Section that allows you to configure access to WooCommerce via its REST API.
+- **Webhook**: Manage your HTTP callback functions.
+- **Ancient API**: Reactivate the old WooCommerce API (disabled by default).
+- **WooCommerce.com**: Enable or disable tracking of your online sales site activity by WooCommerce, suggestions for dedicated extensions (the majority are paid).
+- **Features**: A page that lists features that are currently being tested on WooCommerce or recently added.
   
 ## Go further <a name="go-further"></a>
 
 Some useful links:
 
-- The [official WordPress website](https://wordpress.org){.external}.
-- The [Jetpack](https://jetpack.com/){.external} extension
-- The [WooCommerce](https://woocommerce.com/){.external}
-- The [WooCommerce extensions shop](https://woocommerce.com/products/){.external}
+- [Official WordPress website](https://wordpress.org){.external}
+- [Jetpack plugin](https://jetpack.com/){.external}
+- [WooCommerce](https://woocommerce.com/){.external}
+- [WooCommerce extensions shop](https://woocommerce.com/products/){.external}
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 
