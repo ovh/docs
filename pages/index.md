@@ -61,6 +61,8 @@
             + [Public Cloud Reversibility Policy](account/reversibility/03-public-cloud-reversibility-policy)
             + [Hosted Private Cloud Reversibility Policy](account/reversibility/02-hosted-private-cloud-reversibility-policy)
             + [Dedicated Servers Reversibility Policy](account/reversibility/01-dedicated-servers-reversibility-policy)
+    + [Responsibility sharing](account-and-service-management-responsibility-sharing)
+        + [RACI for Dedicated servers](account/responsibility-sharing/dedicated-servers)
 + Bare Metal Cloud
     + [Dedicated Servers](bare-metal-cloud-dedicated-servers)
         + [Getting started](bare-metal-cloud-dedicated-servers-getting-started)
