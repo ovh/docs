@@ -4,7 +4,7 @@ slug: nodejs-install-etherpad
 excerpt: Find out how to install Etherpad  on your POWER web hosting plan
 section: Node.js
 order: 2
-updated: 2023-02-22
+updated: 2023-03-08
 ---
 
 
@@ -28,7 +28,7 @@ updated: 2023-02-22
  }
 </style>
 
-**Last updated 2th February 2023**
+**Last updated 8th March 2023**
 
 ## Objective
 
@@ -121,4 +121,4 @@ Clearing minified cache...
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
-**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab.**
+**Join [our Discord](https://discord.gg/ovhcloud) on our web-hosting-power channel to discuss directly with the team and other users of this lab.**
