@@ -506,7 +506,7 @@ L'appel à **/iam/reference/action** liste **toutes les actions disponibles** (A
 
 Il est fortement recommandé de spécifier le **resourceType** comme paramètre query-string pour cet appel API (voir la section suivante).
 
-#### Attributs de l'action
+#### Attributs d'une action
 
 - **action**: L'action elle-même
 - **description**: Description de l'action
