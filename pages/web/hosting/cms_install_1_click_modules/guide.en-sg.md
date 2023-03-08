@@ -88,7 +88,7 @@ You must now enter the information required to connect to your database. There a
 
 - **If you have already created a database on your web hosting plan:** select it from the list, and enter the information requested.
 - **If you have not yet created a database on your web hosting plan:** follow the instructions for creating one, then try again.
-- **If you have created a database on another OVHcloud web hosting plan:** select it from the `Databases outside of your web hosting plan`{.action} list, and enter the information requested. The database and web hosting plan must be hosted in the same datacentre.
+- **If you have created a database on another OVHcloud web hosting plan:** select it from the `Databases`{.action} list outside of your web hosting plan, and enter the information requested. The database and web hosting plan must be hosted in the same datacentre.
 
 Once you have entered this information, click `Next`{.action}.
 
