@@ -2,7 +2,7 @@
 title: Partage de responsabilités
 slug: partage-responsabilite
 excerpt: Partage de responsabilités entre OVHcloud et ses clients
-sections: RACI Bare Metal Cloud, RACI Public Cloud, RACI Microsoft collaborative solutions, RACI Web Cloud
+sections: RACI Bare Metal Cloud, RACI Public Cloud, RACI Microsoft collaborative solutions, RACI Web Cloud, RACI Hosted Private Cloud
 order: 6
 ---
 
@@ -25,4 +25,8 @@ order: 6
 > ### RACI Web Cloud
 > 
 >  - [RACI Email Pro](https://docs.ovh.com/gb/en/emails-pro/responsibility-model/)
->   
+>
+> ### RACI Hosted Private Cloud
+>
+> - [RACI Hosted Private Cloud powered by VMware](https://docs.ovh.com/fr/private-cloud/vmware-raci)
+>

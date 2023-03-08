@@ -1,15 +1,13 @@
 ---
 title: 'Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise'
 slug: getting-started-dedicated-server-eco
-routes:
-    canonical: 'https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/'
 excerpt: 'Découvrez comment procéder après la livraison de votre serveur dédié Kimsufi, So You Start ou Rise'
 section: 'Premiers pas'
 order: 2
-updated: 2022-12-12
+updated: 2023-02-28
 ---
 
-**Dernière mise à jour le 12/12/2022**
+**Dernière mise à jour le 28/02/2023**
 
 ## Objectif
 
@@ -133,6 +131,8 @@ Vous pouvez cependant effectuer un « hard reboot » à tout moment dans votre [
 ### Sécurisation de votre serveur dédié
 
 Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'administrateur de votre serveur dédié. En tant que tel, vous êtes responsable de vos données et de leur sécurité. Pour en savoir plus sur la sécurisation de votre serveur, consultez notre guide « [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/) ».
+
+Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](https://docs.ovh.com/ca/fr/dedicated/firewall-windows/).
 
 ### Monitoring OVHcloud
 

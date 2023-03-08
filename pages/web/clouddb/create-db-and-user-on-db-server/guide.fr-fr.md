@@ -4,6 +4,7 @@ slug: creer-bases-de-donnees-et-utilisateurs
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
 section: Configuration
 order: 02
+updated: 2023-02-15
 ---
 
 **Dernière mise à jour le 15/02/2023**

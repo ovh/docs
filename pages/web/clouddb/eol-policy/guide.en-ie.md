@@ -2,9 +2,10 @@
 title: 'Managed databases EOL policy'
 slug: managed-db-life-cycle-policy
 section: 'Technical resources'
+updated: 2023-03-07
 ---
 
-**Last updated 15rd February 2023**
+**Last updated 7th March 2023**
 
 ## Objective
 
@@ -17,8 +18,8 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 At least one of the following 3 solutions:
 
 - One of the included databases with a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/).
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/) offer)
-- A database pack [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/) offer).
+- A [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) database pack.
 
 ## Instructions
 
@@ -26,8 +27,8 @@ At least one of the following 3 solutions:
 
 The products covered by this end-of-life policy are:
 
-- Web Cloud Databases Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
-- SharedSQL Web Hosting services, MySQL databases that can be reached through the Web Hosting network ([see announcements](https://docs.ovh.com/gb/en/hosting/sql_eos_eol/)).
+- Web Cloud Databases Web Hosting services (also known as Private SQL services), dedicated DBMS instances that can be reached via the Web Hosting network ([see announcements](https://docs.ovh.com/ie/en/clouddb/clouddb-eos-eol/)).
+- SharedSQL Web Hosting services, MySQL databases that can be reached through the Web Hosting network ([see announcements](https://docs.ovh.com/ie/en/hosting/sql_eos_eol/)).
 
 ### Definitions and guidelines for the end-of-life policy
 
@@ -77,8 +78,8 @@ Termination can be done in two ways:
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>. 

@@ -4,10 +4,10 @@ slug: install_composer_on_web_hosting_packages
 excerpt: Esta guía explica cómo instalar y dar los primeros pasos en Composer.
 section: PHP
 order: 02
-updated: 2022-12-09
+updated: 2023-02-24
 ---
 
-**Última actualización: 09/12/2022**
+**Última actualización: 24/02/2023**
 
 ## Objetivo
 
@@ -17,9 +17,9 @@ updated: 2022-12-09
 
 > [!warning]
 >
-> La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+> Ponemos a su disposición esta guía para ayudarle a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) o con el editor del servicio. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 > 
 
 ## Requisitos
@@ -88,6 +88,10 @@ php composer.phar install
 Para utilizar esta librería, puede consultar la documentación y el código, disponibles en [github](https://github.com/ovh/php-ovh){.external}
 
 
-## Más información
+## Más información <a name="go-further"></a>
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

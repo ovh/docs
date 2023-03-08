@@ -4,6 +4,7 @@ slug: demarrez-avec-postgresql
 excerpt: 'Utilisez vos bases de donnees'
 section: 'Premiers pas'
 order: 03
+updated: 2023-02-15
 ---
 
 **Dernière mise à jour le 15/02/2023**

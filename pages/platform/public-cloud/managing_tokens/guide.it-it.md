@@ -4,14 +4,14 @@ excerpt: Come utilizzare i token via API Keystone
 slug: gestisci_i_tuoi_token
 legacy_guide_number: g1872
 section: Gestione via OpenStack
-updated: 2020-04-09
+updated: 2023-03-02
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 16/04/2020**
+**Ultimo aggiornamento: 02/03/2023**
 
 ## Obiettivo
 
@@ -66,7 +66,7 @@ Il tool da riga di comando cURL permette di costruire richieste da qualsiasi par
 #### Step 1: Richiesta di creazione di un token
 
 ```bash
-curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: applicazione/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "dominio": { "id": "default" }, "password": "'$OS_PASSWORD' }", "scope": { "project": { "name": "'$OS_TENANT_NAME'", "dominio": { "id": "default" } } } } | python -mjson.tool
+curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | python -mjson.tool
 ```
 
 La risposta del server è questa:
@@ -146,7 +146,7 @@ E' l'indirizzo del endpoint del servizio di object storage che permetterà di ri
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: applicazione/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "dominio": { "id": "default" }, "password": "'$OS_PASSWORD' }", "scope": { "project": { "name": "'$OS_TENANT_NAME'", "dominio": { "id": "default" } } } } | grep ' rilevX-Subject-Token' | cut -d" " -f2
+export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 Questo token è l'elemento di autenticazione che verrà utilizzato per la richiesta successiva.

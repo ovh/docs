@@ -4,6 +4,7 @@ slug: salvare-esportare-un-database
 excerpt: Come salvare ed esportare il tuo database
 section: Configurazione
 order: 04
+updated: 2023-02-15
 ---
 
 > [!primary]

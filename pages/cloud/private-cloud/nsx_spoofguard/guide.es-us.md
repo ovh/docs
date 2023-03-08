@@ -4,7 +4,7 @@ slug: spoofguard
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/spoofguard/'
 excerpt: Set up policies to detect IP spoofing
-section: NSX
+section: NSX-v
 order: 10
 updated: 2021-02-12
 ---

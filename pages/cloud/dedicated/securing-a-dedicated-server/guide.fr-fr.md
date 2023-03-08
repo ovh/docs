@@ -1,94 +1,103 @@
 ---
-title: 'Sécuriser un serveur dédié'
+title: "Sécuriser un serveur dédié"
 slug: securiser-un-serveur-dedie
-excerpt: 'Apprenez à sécuriser votre serveur dédié grâce à quelques conseils'
-section: 'Premiers pas'
+excerpt: "Découvrez les éléments de base vous permettant de sécuriser votre serveur dédié"
+section: "Premiers pas"
 order: 2
-updated: 2018-06-20
+updated: 2023-02-24
 ---
 
-**Dernière mise à jour le 07/05/2020**
+**Dernière mise à jour le 24/02/2023**
 
 ## Objectif
 
-Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'est implémenté de manière native. Il vous revient donc de le sécuriser. En effet, OVHcloud ne pourra être tenu responsable d'un défaut de sécurisation de votre machine.
+Lorsque vous commandez votre serveur dédié, vous pouvez choisir une distribution ou un système d'exploitation à pré-installer. Le serveur est donc prêt à être utilisé après la livraison. Il vous appartient cependant, en tant qu'administrateur, de mettre en oeuvre des mesures qui garantissent la sécurité et la stabilité de votre système.
 
-**Apprenez à sécuriser votre serveur dédié grâce à quelques conseils.**
+**Ce guide vous propose quelques conseils généraux pour sécuriser un serveur basé sur GNU/Linux.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > [!warning]
->
-> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
->
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> OVHcloud vous met à disposition des services dont la configuration, la sécurité et la responsabilité vous appartiennent.
+> En effet, nous n'avons pas accès aux données hébergés sur ces machines et n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> Nous mettons à disposition ce guide afin de vous accompagner au mieux sur les tâches courantes. Toutefois, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes quant à l’administration, l'utilisation ou la sécurisation de votre serveur.
+> Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
 
-- Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
-- Être connecté en SSH (accès root) sous Linux ou en tant qu'administrateur sous Windows.
+- Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/).
+- Avoir un accès administrateur (*root*) à votre serveur via SSH.
 
 
 ## En pratique
 
 > [!primary]
 >
-> Ce guide est à usage général. Il est possible que vous deviez adapter quelques commandes en fonction de la distribution et/ou du système d'exploitation que vous utilisez. Certains conseils pourront vous suggérer l'utilisation d'outil tiers. En cas de question quant à leur utilisation, veuillez vous référer à leur documentation officielle.  
+> Gardez à l'esprit qu’il s’agit d’un guide général basé sur un système d’exploitation Ubuntu Server. Certaines commandes nécessitent d’être adaptées à la distribution que vous utilisez et certaines astuces vous invitent à utiliser des outils tiers. Veuillez vous référer à la documentation officielle de ces applications si vous avez besoin d'aide.
+>
+> S'il s'agit de votre première configuration d'un serveur dédié OVHcloud, nous vous invitons à consulter en premier lieu notre guide [Premiers pas avec un serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/).
 >
 
-### Mettre à jour votre système
+Les exemples suivants supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées.
 
-Les développeurs de systèmes de distribution et d'exploitation proposent des mises à jour fréquentes de progiciels, très souvent pour des raisons de sécurité. **Garder votre distribution ou votre système d'exploitation à jour est primordial pour la sécurisation de votre serveur.**
 
-Il s'agit d'un processus en deux parties qui implique la mise à jour de la liste des paquets (la liste des applications logicielles installées) et celle des paquets en eux-mêmes.
+### Mettre à jour votre système d'exploitation
 
-#### Mettre à jour la liste des paquets
+Les développeurs de distributions et de systèmes d’exploitation proposent de fréquentes mises à jour de paquets, très souvent pour des raisons de sécurité.<br>
+Faire en sorte que votre distribution ou système d'exploitation est à jour est un point essentiel pour sécuriser votre serveur.
 
-Mettez à jour la liste des paquets sur votre serveur de la manière suivante :
+Cette mise à jour passera par deux étapes.
 
-```sh
-apt-get update
+- La mise à jour de la liste des paquets :
+
+```bash
+sudo apt update
 ```
 
-#### Mettre à jour les paquets
+- La mise à jour des paquets à proprement parler :
 
-Mettez ensuite à jour les paquets sur votre serveur de la manière suivante :
-
-```sh
-apt-get upgrade
+```bash
+sudo apt upgrade
 ```
 
-Une fois les mises à jour terminées, votre système sera entièrement à jour. Cette opération doit être effectuée de manière régulière.
+Cette opération doit être effectuée régulièrement afin de maintenir un système à jour.
 
+### Modifier le port d'écoute SSH par défaut
 
-### Modifier le port d'écoute par défaut du service SSH
+L'une des premières actions à effectuer sur votre serveur est la configuration du port d'écoute du service SSH. Par défaut, celui-ci est défini sur le **port 22** donc les tentatives de hack du serveur par des robots vont cibler ce port en priorité.
+La modification de ce paramètre, au profit d'un port différent, est une mesure simple pour renforcer la protection de votre serveur contre les attaques automatisées.
 
-L'une des premières actions à effectuer sur votre serveur est la configuration du service SSH en changeant son port d'écoute. L’écoute est, par défaut, définie sur le port 22. Nous vous conseillons d'en modifier la valeur par défaut. En effet, la plupart des tentatives de piratage de serveurs sont faites par des robots qui ciblent le port 22 en priorité. Modifier ce paramètre rendra donc votre serveur plus difficile à atteindre.
+Pour cela, modifiez le fichier de configuration du service avec l'éditeur de texte de votre choix (`nano` est utilisé dans cet exemple) :
 
-> [!primary]
->
-> Dans les exemples suivants, nous utiliserons l'éditeur de texte Linux appelé **Nano**, mais vous pouvez utiliser n'importe quel éditeur de texte qui vous permet d'éditer le fichier de configuration.
->
-
-Voici la commande pour modifier le fichier de configuration du service :
-
-```sh
-nano /etc/ssh/sshd_config
+```bash
+~$ sudo nano /etc/ssh/sshd_config
 ```
 
-Repérez ensuite la ligne suivante dans le fichier :
+Vous devriez trouver les lignes suivantes ou équivalentes :
 
-```sh
-# What ports, IPs and protocols we listen for Port 22
+```console
+# What ports, IPs and protocols we listen for
+Port 22
 ```
 
-Remplacez le numéro **22** par celui de votre choix puis sauvegardez et quittez le fichier de configuration. **Assurez-vous de ne pas taper un numéro de port déjà utilisé**. Il vous faut ensuite redémarrer votre serveur.
+Remplacez le nombre **22** par le numéro de port de votre choix.<br>
+**Veillez toutefois à ne pas renseigner un numéro de port déjà utilisé sur votre système**. 
+Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.<br>
+Enregistrez et quittez le fichier de configuration.
 
-Maintenant, lorsque vous demandez une connexion SSH sur votre machine, vous devrez indiquer le nouveau port :
+Redémarrez le service :
 
-```sh
-ssh root@VotreServeur.ovh.net -p NouveauPort
+```bash
+sudo systemctl restart sshd
+```
+
+Cela devrait être suffisant pour appliquer les changements. Dans le cas contraire, redémarrez le serveur (`~$ sudo reboot`).
+
+N'oubliez pas que vous devrez indiquer le nouveau port à chaque demande de connexion SSH à votre serveur, par exemple :
+
+```bash
+ssh nomdutilisateur@IPv4_de_votre_serveur -p NouveauPort
 ```
 
 > [!warning]
@@ -97,113 +106,151 @@ ssh root@VotreServeur.ovh.net -p NouveauPort
 >
 
 
-### Modifier le mot de passe associé à l'utilisateur root
+### Modifier le mot de passe associé à l'utilisateur "root"
 
-Lorsqu'un système de distribution ou d'exploitation est installé, un mot de passe est créé automatiquement pour l'accès root. Nous vous conseillons vivement de le personnaliser en le modifiant. Pour cela, ouvrez une connexion SSH à votre serveur et tapez la commande suivante :
-
-```sh
-passwd root
-```
-
-Vous devrez ensuite entrer votre nouveau mot de passe deux fois. Il convient de noter que, pour des raisons de sécurité, **le mot de passe ne sera pas affiché lors de l’écriture**. Vous ne pourrez donc pas voir les caractères saisis.
-
-Une fois cette opération effectuée, vous devrez entrer le nouveau mot de passe dès votre prochaine connexion sur le système.
-
+Il est fortement recommandé de modifier le mot de passe de l'utilisateur root afin de ne pas le laisser à sa valeur par défaut sur un nouveau système. Pour plus d'informations, consultez [ce guide](https://docs.ovh.com/fr/dedicated/changer-mot-passe-root-linux-sur-serveur-dedie/).
 
 ### Créer un utilisateur avec des droits restreints
 
-Nous vous recommandons de créer un compte utilisateur disposant d'un accès restreint à votre serveur pour une utilisation quotidienne. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
+En général, les tâches qui ne requièrent pas de privilèges root doivent être effectuées via un utilisateur standard. Vous pouvez créer un nouvel utilisateur avec la commande suivante :
 
-```sh
-adduser Nom_Utilisateur_Personnalisé
+```bash
+sudo adduser NomUtilisateurPersonnalisé
 ```
 
-Remplissez ensuite les informations demandées par le système (mot de passe, nom, etc.).
+Renseignez ensuite les informations demandées par le système : mot de passe, nom, etc.
 
-Cet utilisateur sera autorisé à se connecter à votre système en SSH avec le mot de passe indiqué lors de la création du compte. Une fois connecté à votre système avec ces informations d'identification, si vous souhaitez effectuer des opérations nécessitant des droits d'administrateur, il suffira de taper la commande suivante :
+Le nouvel utilisateur sera autorisé à se connecter en SSH. Lors de l'établissement d'une connexion, utilisez les informations d'identification spécifiées.
 
-```sh
+Une fois connecté, tapez la commande suivante pour effectuer des opérations nécessitant des autorisations root :
+
+```bash
 su root
 ```
 
-Vous devez ensuite entrer le mot de passe associé à l'utilisateur root pour valider l'opération.
-
+Entrez le mot de passe lorsque vous y êtes invité et la connexion active sera basculée vers l'utilisateur root.
 
 ### Désactiver l'accès au serveur via l'utilisateur root
 
-L'utilisateur root est créé par défaut sur les systèmes UNIX, comme Linux ou MAC OS. L'utilisateur root dispose de tous les droits d'administration sur votre système. Il est déconseillé, voire dangereux, de laisser votre serveur dédié accessible uniquement via cet utilisateur. Ce compte peut en effet exécuter des opérations irréversibles sur votre serveur.
+L'utilisateur root est créé par défaut sur les systèmes GNU/Linux. Il s'agit du niveau d'accès le plus élevé à un système d'exploitation.<br>
+Il est déconseillé et même dangereux de laisser votre serveur accessible uniquement en root, car ce compte peut effectuer des opérations irréversiblement dommageables.
 
-Nous vous recommandons vivement de désactiver l'accès direct des utilisateurs root via le protocole SSH. Pour effectuer cette opération, vous devez modifier le fichier de configuration SSH de la même manière que vous l'avez fait précédemment pour modifier le port d'accès à votre serveur.
+Il est recommandé de désactiver l'accès direct des utilisateurs root via le protocole SSH. N'oubliez pas de créer un autre utilisateur avant de suivre les étapes ci-dessous.
 
-Pour commencer, ouvrez une connexion SSH à votre serveur et tapez la commande suivante :
+Vous devez modifier le fichier de configuration SSH de la même manière que décrit précédemment :
 
-```sh
-nano /etc/ssh/sshd_config
+```bash
+sudo nano /etc/ssh/sshd_config
 ```
 
-Ensuite, repérez la section suivante et remplacez le « yes » par « no » dans la ligne `PermitRootLogin`, comme indiqué ci-dessous :
+Repérez la section suivante :
 
-```sh
+```console
 # Authentication: 
 LoginGraceTime 120
 PermitRootLogin yes 
 StrictModes yes
 ```
 
-Après avoir enregistré et fermé le fichier de configuration, redémarrez le service SSH pour appliquer les modifications en utilisant la commande suivante :
+Remplacez **yes** par **no** sur la ligne `PermitRootLogin`.
 
-```sh
-/etc/init.d/ssh restart
+Pour que cette modification soit prise en compte, vous devez redémarrer le service SSH :
+
+```bash
+sudo systemctl restart sshd
 ```
 
-### Installer et configurer le paquet Fail2ban
+Par la suite, les connexions à votre serveur via l'utilisateur root (`ssh root@IPv4_de_votre_serveur`) seront rejetées.
 
-Fail2ban est un framework de prévention contre les intrusions dont le but est de bloquer les adresses IP inconnues tentant de pénétrer dans votre système. Ce paquet est recommandé pour vous protéger contre toute attaque par force brute sur votre serveur.
+### Configurer le pare-feu interne (iptables)
 
-Pour installer Fail2ban, utilisez la commande suivante :
+Les distributions GNU/Linux courantes sont fournies avec un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
 
-```sh
-apt-get install fail2ban
-```
-
-Une fois le paquet installé, modifiez le fichier de configuration de ce dernier pour l’adapter à celle de votre système. Avant toute modification, nous vous recommandons de réaliser une sauvegarde du fichier de configuration en tapant la commande suivante :
-
-```sh
-cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.conf.backup
-```
-
-Apportez ensuite vos modifications sur le fichier :
-
-```sh
-nano /etc/fail2ban/jail.conf
-```
-
-Une fois ces modifications terminées, redémarrez le service à l'aide de la commande suivante :
-
-```sh
-/etc/init.d/fail2ban restart
-```
-
-Pour toute demande complémentaire concernant Fail2Ban, consultez la [documentation officielle](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} de cet outil.
-
-
-### Configurer le pare-feu interne : iptables
-
-La distribution nue dispose d’un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
-
-```sh
+```bash
 iptables -L
 ```
 
-Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, consultez [notre guide](https://docs.ovh.com/fr/dedicated/firewall-iptables/) et la documentation officielle de votre distribution Linux.
+Pour plus d'informations sur iptables, consultez notre [guide dédié](https://docs.ovh.com/fr/dedicated/firewall-iptables/).
 
+Il est alors recommandé de créer et d’ajuster à votre utilisation des règles de pare-feu. Pour plus d'informations sur les diverses manipulations possibles, reportez-vous à la documentation officielle de la distribution utilisée.
 
-### Configurer le Network Firewall d’OVHcloud
+### Installer Fail2ban
 
-Les serveurs OVHcloud incluent un pare-feu à l’entrée de l’infrastructure appelé Network Firewall. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
+Fail2ban est un framework de prévention contre les intrusions dont le but est de bloquer les adresses IP depuis lesquelles des bots ou des attaquants tentent de pénétrer dans votre système.<br>
+Ce paquet est recommandé, voire indispensable dans certains cas, pour protéger votre serveur des attaques de types *Brute Force* ou *Denial of Service*.
 
-Nous avons également un [guide](../firewall-network/){.external} pour configurer le Network Firewall.
+Pour installer le package logiciel, utilisez la commande suivante :
 
+```bash
+sudo apt install fail2ban
+```
+
+Vous pouvez personnaliser les fichiers de configuration Fail2ban pour protéger les services exposés à l'Internet public contre les tentatives de connexion répétées.
+
+Comme le recommande Fail2ban, créez un fichier de configuration local de vos services en copiant le fichier "jail" :
+
+```bash
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+```
+
+Ouvrez ensuite le fichier avec un éditeur de texte :
+
+```bash
+sudo nano /etc/fail2ban/jail.local
+```
+
+Prenez soin de lire les informations en haut du fichier, notamment les commentaires sous `[DEFAULT]`.
+
+Les paramètres `[DEFAULT]` sont globaux et s'appliqueront donc à tous les services définis pour être activés (`enabled`) dans ce fichier. 
+
+Il est important de savoir que les paramètres globaux ne seront pris en compte que s'il n'y a pas de valeurs différentes définies dans les sections services (`JAILS`) plus bas dans le fichier.
+
+Prenons pour exemple ces lignes sous `[DEFAULT]` :
+
+```console
+bantime  = 10m
+maxretry = 5
+enabled = false
+```
+
+Cela signifie qu'une adresse IP à partir de laquelle un hôte tente de se connecter sera bloquée pendant dix minutes après la cinquième tentative d'ouverture de session infructueuse.<br>
+De plus, tous les paramètres spécifiés par `[DEFAULT]` et dans les sections suivantes restent désactivés sauf si la ligne `enabled = true` est ajoutée pour un service (listée ci-dessous `# JAILS`).
+
+À titre d’exemple d’utilisation, le fait d’avoir les lignes suivantes dans la section `[sshd]` activera des restrictions uniquement pour le service OpenSSH :
+
+```console
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+maxretry = 3
+findtime = 5m
+bantime  = 30m
+```
+
+Dans cet exemple, si une tentative de connexion SSH échoue trois fois en cinq minutes, la période d’interdiction des IP sera de 30 minutes.
+
+Vous pouvez remplacer "ssh" par le numéro de port réel si vous l'avez modifié.
+
+La meilleure approche consiste à activer Fail2ban uniquement pour les services qui sont réellement exécutés sur le serveur. Chaque paramètre personnalisé ajouté sous `# JAILS` sera alors prioritaire sur les valeurs par défaut.
+
+Une fois vos modifications terminées, enregistrez le fichier et fermez l'éditeur.
+
+Redémarrez le service pour vous assurer qu'il s'exécute avec les personnalisations appliquées :
+
+```bash
+sudo service fail2ban restart
+```
+
+Fail2ban dispose de nombreux paramètres et filtres de personnalisation ainsi que d’options prédéfinies, par exemple lorsque vous souhaitez ajouter une couche de protection à un serveur web Nginx.
+
+Pour toute information complémentaire et pour des recommandations concernant Fail2ban, n'hésitez pas à consulter [la documentation officielle](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} de cet outil.
+
+### Configurer le Network Firewall OVHcloud 
+
+Les solutions OVHcloud incluent la possibilité d'activer un pare-feu au point d'entrée de l'infrastructure, appelé Network Firewall. Une configuration correcte de ce pare-feu permet de bloquer les connexions avant même qu'elles n'arrivent sur votre serveur.
+
+Consultez le guide « [Configurer le Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/) » si vous souhaitez l'activer.
 
 ### Sauvegarder votre système et vos données
 
@@ -216,9 +263,13 @@ La notion de sécurité ne se limite pas uniquement à la protection d’un syst
 
 Vous aurez besoin d'une solution de sauvegarde tierce pour répliquer vos données et les transférer vers votre stockage de sauvegarde.
 
-Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez notre [guide](../services-backup-storage/){.external} de stockage de sauvegarde.
+Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez notre [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/){.external} de stockage de sauvegarde.
 
 
 ## Aller plus loin
+
+[Configurer le pare-feu sous Windows](https://docs.ovh.com/fr/dedicated/firewall-windows/)
+
+[Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

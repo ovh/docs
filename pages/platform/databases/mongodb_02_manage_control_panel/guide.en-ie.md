@@ -4,10 +4,10 @@ excerpt: Find out how to configure your MongoDB instance to accept incoming conn
 slug: mongodb/managing-service
 section: MongoDB - Guides
 order: 020
-updated: 2022-07-27
+updated: 2023-03-02
 ---
 
-**Last updated 27<sup>th</sup> July 2022**
+**Last updated March 2nd, 2023**
 
 ## Objective
 
@@ -64,8 +64,8 @@ Select the `General Information`{.action} tab. In the **Login Information** sect
 
 You can specify the MongoDB connection string using either:
 
-- the Standard Connection String Format *(service: mongodb)*.
-- the DNS Seed List Connection Format *(service: mongodbSrv)*.
+- *Service -> mongoDB* for the Standard Connection String format **(soon deprecated)**.
+- *Service -> mongodbSrv* for the DNS Seed List Connection String format.
 
 ![MongoDB General Information](images/mongodb_02_manage_control_panel-20220727113110757.png){.thumbnail}
 

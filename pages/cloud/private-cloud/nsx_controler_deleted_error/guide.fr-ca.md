@@ -2,7 +2,7 @@
 title: Comprendre l'erreur "VM du contrôleur supprimée"
 slug: erreur-controleur-nsx
 excerpt: Découvrez ce que signifie l'erreur "VM du contrôleur supprimée"
-section: NSX
+section: NSX-v
 order: 11
 updated: 2021-11-26
 ---

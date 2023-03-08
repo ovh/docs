@@ -4,6 +4,7 @@ slug: restore-import-database
 excerpt: 'Find out how to restore and import your database'
 section: Configuration
 order: 05
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**
@@ -16,14 +17,14 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/) (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud-databases/) solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 
@@ -81,7 +82,7 @@ If you wish, tick **Empty the current database** before importing, and **Send an
 
 ### Importing MySQL or MariaDB databases outside the OVHcloud Control Panel
 
-In some cases, the RAM available in your database server does not allow you to carry out the desired import outside the Control Panel. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#restoring-and-importing-a-database-from-the-control-panel).
+In some cases, the RAM available in your database server may not be sufficient to perform the desired import. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#restoring-and-importing-a-database-from-the-control-panel).
 
 #### Importing MySQL or MariaDB databases with phpMyAdmin
 
@@ -128,7 +129,7 @@ cat database_name.sql | mysql --host=server --user=username --port=port --passwo
 
 ### Importing PostgreSQL databases from the OVHcloud Control Panel
 
-In some cases, the RAM available in your database server may not be sufficient to perform the desired import. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#restoring-and-importing-a-database-from-the-control-panel).
+In some cases, the RAM available in your database server does not allow you to carry out the desired import outside the Control Panel. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#restoring-and-importing-a-database-from-the-control-panel).
 
 #### Importing a PostgreSQL database from the command line
 
@@ -156,7 +157,7 @@ psql --host=server --port=port --user=username --password=password database_name
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

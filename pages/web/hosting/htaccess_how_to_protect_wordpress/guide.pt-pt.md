@@ -4,10 +4,10 @@ slug: use-htaccess-with-wordpress
 excerpt: "Descubra como proteger o seu blogue WordPress com um ou vários ficheiros htaccess"
 section: 'Tutoriais'
 order: 022
-updated: 2023-02-07
+updated: 2023-03-08
 ---
 
-**Última atualização: 07/02/2023**
+**Última atualização: 08/03/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -123,7 +123,7 @@ Options All -Indexes
 O seu ficheiro **wp-config.php**, presente na raiz do seu website, contém informações de configuração sensíveis. Impeça o acesso a este ficheiro ao adicionar as seguintes linhas ao seu ficheiro **.htaccess**:
 
 ```bash
-<Files ~ "^.*\.([Hh][Tt][AaPp])">
+<Files wp-config.php>
     order allow,deny
     deny from all
     satisfy all

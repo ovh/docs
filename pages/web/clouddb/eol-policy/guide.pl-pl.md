@@ -2,13 +2,14 @@
 title: 'Polityka wycofania z eksploatacji zarządzanych baz danych'
 slug: managed-db-life-cycle-policy
 section: 'Zasoby techniczne'
+updated: 2023-03-07
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 15/02/2023**
+**Ostatnia aktualizacja z dnia 07-03-2023**
 
 ## Wprowadzenie
 
@@ -30,7 +31,7 @@ Posiadanie co najmniej jednej z 3 poniższych ofert:
 
 Produkty objęte tą polityką wycofania z eksploatacji to:
 
-- Usługi Web Cloud Databases Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Usługi Web Cloud Databases Web Hosting (znane również jako usługi SQLPrive), dedykowane instancje SGBD dostępne poprzez sieć Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/pl/clouddb/clouddb-eos-eol/)).
 
 - Usługi SharedSQL Web Hosting, bazy danych MySQL dostępne za pośrednictwem sieci Web Hosting ([patrz ogłoszenia](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 

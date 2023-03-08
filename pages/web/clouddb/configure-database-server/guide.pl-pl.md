@@ -4,6 +4,7 @@ slug: konfiguracja-optymalizacja-serwera-bazy-danych
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
 section: 'Konfiguracja'
 order: 06
+updated: 2023-02-15
 ---
 
 > [!primary]

@@ -4,14 +4,14 @@ excerpt: 'Cómo añadir y configurar espacio de almacenamiento adicional en un V
 slug: config-additional-disk-vps
 section: 'Opciones de copia de seguridad'
 order: 3
-updated: 2021-02-24
+updated: 2023-02-15
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 24/02/2021**
+**Última actualización: 15/02/2023**
 
 ## Objetivo
 
@@ -65,7 +65,7 @@ sdb       8:16   0   50G  0 disk
 
 En este ejemplo, el disco adicional se llama `sdb`.
 
-Ejecute `fdisk` para crear una partición en el disco. Cuando se le pida, introduzca `n` para una nueva partición y acepte los siguientes valores predeterminados pulsando Entrar (" ↩"). Por último, utilice el comando `w` para escribir los cambios en el disco.
+Ejecute `fdisk` para crear una partición en el disco. Cuando se le pida, introduzca `n` para una nueva partición y acepte los siguientes valores predeterminados pulsando "Enter". Por último, utilice el comando `w` para escribir los cambios en el disco.
 
 ```bash
 $ sudo fdisk /dev/sdb
@@ -204,7 +204,7 @@ Si el disco está marcado como desconectado, primero debe inicializarse. Para el
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 
- Haga clic derecho en el disco y seleccione `Inicializar disco`{.action}.
+Haga clic derecho en el disco y seleccione `Inicializar disco`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win04.png){.thumbnail}
 
@@ -214,7 +214,7 @@ Seleccione `MBR`{.action} (Sector de inicio principal) en la nueva ventana y hag
 
 ##### **Iniciar el disco con DISKPART** <a name="initDiskpart"></a>
 
- Haga clic derecho en el `menú Inicio`{.action} y abra `Ejecutar`{.action}.
+Haga clic derecho en el `menú Inicio`{.action} y abra `Ejecutar`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win06.png){.thumbnail}
 

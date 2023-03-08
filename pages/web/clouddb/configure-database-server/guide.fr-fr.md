@@ -4,6 +4,7 @@ slug: configurer-optimiser-son-serveur-de-base-de-donnees
 excerpt: 'Découvrez comment configurer et optimiser votre serveur de base de données'
 section: 'Configuration'
 order: 06
+updated: 2023-02-15
 ---
 
 **Dernière mise à jour le 15/02/2023**

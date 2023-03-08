@@ -4,6 +4,7 @@ slug: backup-export-database-server
 excerpt: 'Find out how to back up and export your database'
 section: Configuration
 order: 04
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**
@@ -16,18 +17,18 @@ Your database can contain a lot of essential information for your website. It is
 
 ## Requirements
 
-- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
-> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 
 ### Backing up and exporting a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the SQL instance concerned. Next, go to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action} in the services bar, then choose the SQL instance concerned. Next, go to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the number of backups available for your database.
 
@@ -70,6 +71,7 @@ You have two possible export modes. If you do not have a specific need, we recom
 
 ##### 1\.2 Exporting a MySQL or MariaDB database from the command line
 
+
 ```bash
 mysqldump --host=server --user=username --port=port --password=password database_name > database_name.sql
 ```
@@ -102,6 +104,7 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 ##### 2\.2 Exporting a PostgreSQL database with a PHP script
 
+
 ```php
 1. <?php echo "Your database is being backed up.......";
 2. system("PGPASSWORD=password pg_dump --host=server --port=port --user=username --password=password database_name > database_name.sql");
@@ -119,8 +122,8 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 [Restoring and importing a database to your database server](../restore-import-database)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>. 

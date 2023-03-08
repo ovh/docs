@@ -498,7 +498,7 @@ Finalement, redémarrez votre serveur pour appliquer les modifications.
 
 #### Étape 1 : accéder à la section Gestion IP de WHM
 
-Dans l'espace client WHM, cliquez sur `IP funtions`{.action} et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
+Dans l'espace client WHM, cliquez sur `IP Functions`{.action} et sélectionnez `Add a New IP Address`{.action} dans le menu de gauche.
 
 ![Ajouter une nouvelle adresse IP](images/Cpanel-1.png){.thumbnail}
 
@@ -517,7 +517,7 @@ Sélectionnez `255.255.255.255` comme masque de sous-réseau puis cliquez sur `S
 
 #### Étape 3 : Vérifier la configuration IP actuelle
 
-De retour dans la section `IP functions`{.action}, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse Additional IP a été correctement ajoutée.
+De retour dans la section `IP Functions`{.action}, cliquez sur `Show or Delete Current IP Addresses`{.action} pour vérifier que l'adresse Additional IP a été correctement ajoutée.
 
 ![check configured IP](images/Cpanel-3.png){.thumbnail}
 

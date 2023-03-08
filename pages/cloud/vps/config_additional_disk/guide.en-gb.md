@@ -4,10 +4,10 @@ excerpt: 'Find out how to add and configure additional storage space on a VPS'
 slug: config-additional-disk-vps
 section: 'Backup options'
 order: 3
-updated: 2021-02-24
+updated: 2023-02-15
 ---
 
-**Last updated 24th February 2021**
+**Last updated 15th February 2023**
 
 ## Objective
 
@@ -61,7 +61,7 @@ sdb       8:16   0   50G  0 disk
 
 In this example, the additional disk is named `sdb`.
 
-Execute `fdisk` to create a partition on the disk; when prompted, enter `n` for a new partition and accept the subsequent defaults by pressing Enter ("↩"). Finally, use the `w` command to write the changes to the disk.
+Execute `fdisk` to create a partition on the disk; when prompted, enter `n` for a new partition and accept the subsequent defaults by pressing Enter. Finally, use the `w` command to write the changes to the disk.
 
 ```
 $ sudo fdisk /dev/sdb

@@ -2,13 +2,14 @@
 title: 'Política de fim de vida das bases de dados geridas'
 slug: managed-db-life-cycle-policy
 section: 'Recursos técnicos'
+updated: 2023-03-07
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 15/02/2023**
+**Última atualização: 07/03/2023**
 
 ## Objetivo
 
@@ -30,7 +31,7 @@ Dispor de, pelo menos, uma das 3 ofertas seguintes:
 
 Os produtos abrangidos por esta política de fim de vida são:
 
-- Os serviços Web Cloud Databases Web Hosting (também conhecidos como serviços SQLP Privado), instâncias SGBD dedicadas acessíveis através da rede Web Hosting ([ver os anúncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Os serviços Web Cloud Databases Web Hosting (também conhecidos como serviços SQLP Privado), instâncias SGBD dedicadas acessíveis através da rede Web Hosting ([ver os anúncios](https://docs.ovh.com/pt/clouddb/clouddb-eos-eol/)).
 - Os serviços SharedSQL Web Hosting, bases de dados MySQL disponíveis através da rede Web Hosting ([ver os anúncios](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
 ### Definições e orientações da política de fim de vida

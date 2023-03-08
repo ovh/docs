@@ -4,14 +4,14 @@ excerpt: 'Dowiedz się, jak używać tokenów za pomocą API Keystone'
 slug: zarzadzanie_tokenami
 legacy_guide_number: g1872
 section: 'Zarządzanie w OpenStack CLI'
-updated: 2020-04-09
+updated: 2023-03-02
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 16-04-2020**
+**Ostatnia aktualizacja z dnia 02-03-2023**
 
 ## Wprowadzenie
 
@@ -146,7 +146,7 @@ Adres docelowy usługi object storage pozwala na zapytanie informacji o obiekt.
 
 
 ```bash
-export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | grep '^X-Subject-Token' | cut -d" " -f2)
+export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2)
 ```
 
 Ten token jest teraz elementem uwierzytelniającym, który będzie używany dla następnego zapytania.

@@ -30,8 +30,6 @@ Les comptes MX Plan  peuvent être configurés sur différents logiciels de mess
  
 > [!primary]
 >
-> Vous utilisez une version antérieure d'Outlook pour Windows ? Consultez notre documentation pour [Outlook 2013](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2013/){.external} ou pour [Outlook 2010](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2010/){.external}.
->
 > Vous utilisez Outlook 2016 pour Mac ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook 2016 pour Mac](https://docs.ovh.com/ca/fr/emails/configuration-outlook-2016-mac/){.external}.
 >
 

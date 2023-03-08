@@ -4,6 +4,7 @@ slug: connessione-database-server-bdd
 excerpt: Come connettersi al database
 section: Configurazione
 order: 03
+updated: 2023-02-15
 ---
 
 > [!primary]

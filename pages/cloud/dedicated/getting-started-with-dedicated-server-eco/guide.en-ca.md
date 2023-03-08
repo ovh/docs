@@ -1,15 +1,13 @@
 ---
 title: Getting started with a Kimsufi, So You Start or Rise dedicated server
 slug: getting-started-dedicated-server-eco
-routes:
-    canonical: 'https://docs.ovh.com/ie/en/dedicated/getting-started-dedicated-server/'
 excerpt: 'Find out how to proceed after the delivery of your Kimsufi, So You Start or Rise dedicated server'
 section: 'Getting started'
 order: 2
-updated: 2022-12-12
+updated: 2023-02-28
 ---
 
-**Last updated 12th December 2022**
+**Last updated 28th February 2023**
 
 ## Objective
 
@@ -117,7 +115,7 @@ You can learn more about SSH in [this guide](../ssh-introduction/).
 
 Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
 
-Please also refer to our guide on [Configuring a new Windows Server installation](https://docs.ovh.com/ie/en/dedicated/windows-first-config-dedicated/).
+Please also refer to our guide on [Configuring a new Windows Server installation](https://docs.ovh.com/ca/en/dedicated/windows-first-config-dedicated/).
 
 ### Restarting your dedicated server <a name="reboot"></a>
 
@@ -134,6 +132,8 @@ However, you can carry out a "hard reboot" at any time in your [OVHcloud Control
 ### Securing your dedicated server
 
 As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](../securing-a-dedicated-server/).
+
+If your server runs Windows, use [this guide](https://docs.ovh.com/ca/en/dedicated/firewall-windows/) instead.
 
 ### OVHcloud Monitoring
 

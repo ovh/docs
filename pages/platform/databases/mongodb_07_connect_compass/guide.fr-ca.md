@@ -6,10 +6,10 @@ section: MongoDB - Guides
 order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-compass/'
-updated: 2022-07-27
+updated: 2023-03-02
 ---
 
-**Last updated 27<sup>th</sup> July 2022**
+**Last updated March 2nd, 2023**
 
 ## Objective
 

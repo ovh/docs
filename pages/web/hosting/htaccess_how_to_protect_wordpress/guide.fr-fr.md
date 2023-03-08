@@ -4,10 +4,10 @@ slug: use-htaccess-with-wordpress
 excerpt: 'Découvrez comment sécuriser votre blog WordPress avec un ou plusieurs fichiers htaccess'
 section: 'Tutoriels'
 order: 022
-updated: 2023-02-07
+updated: 2023-03-08
 ---
 
-**Dernière mise à jour le 06/02/2023**
+**Dernière mise à jour le 08/03/2023**
 
 ## Objectif
 
@@ -119,10 +119,9 @@ Options All -Indexes
 Votre fichier **wp-config.php**, présent à la racine de votre site web, contient des informations de configuration sensibles. Empêchez l'accès à ce fichier en ajoutant les lignes suivantes dans votre fichier **.htaccess** :
 
 ```bash
-<Files ~ "^.*\.([Hh][Tt][AaPp])">
+<Files wp-config.php>
     order allow,deny
     deny from all
-    satisfy all
 </Files>
 ```
 

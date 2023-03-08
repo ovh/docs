@@ -4,6 +4,7 @@ slug: get-started-with-mysql-and-mariadb
 excerpt: Using Your Databases
 section: Getting started
 order: 02
+updated: 2023-02-15
 ---
 
 **Last updated 15rd February 2023**
@@ -28,7 +29,7 @@ This engine is 100% compatible, and is "freer" than its sibling MySQL. All the b
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - You need to have read the [Web Cloud Databases startup guide](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/).
 
@@ -56,7 +57,7 @@ To log in to your database, make sure that you have:
 
 All this information is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
-Please also read our guide on [Getting started with the Web Cloud Databases service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/).
+Please also read our guide on [getting started with the Web Cloud Databases service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/).
 
 #### Connect via the command line
 
@@ -120,7 +121,7 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 

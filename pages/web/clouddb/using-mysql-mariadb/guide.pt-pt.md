@@ -4,6 +4,7 @@ slug: comecar-com-mysql-e-mariadb
 excerpt: Utilize as suas bases de dados
 section: 'Primeiros passos'
 order: 02
+updated: 2023-02-15
 ---
 
 > [!primary]

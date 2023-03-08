@@ -4,6 +4,7 @@ slug: backup-exportacao-base-de-dados
 excerpt: 'Saiba como fazer o backup e a exportação de uma base de dados'
 section: 'Configuração'
 order: 04
+updated: 2023-02-15
 ---
 
 > [!primary]

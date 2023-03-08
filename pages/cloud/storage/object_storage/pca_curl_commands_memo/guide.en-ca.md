@@ -4,10 +4,10 @@ slug: pca/curl-commands-memo
 excerpt: Find here the main curl commands for managing your Public Cloud Archive object containers
 section: OpenStack Swift Archive Storage Class Specifics
 order: 060
-updated: 2021-10-27
+updated: 2023-03-02
 ---
 
-**Last updated 27th October 2021**
+**Last updated 2nd March 2023**
 
 ## Objective
 
@@ -22,7 +22,7 @@ Load the following environment variables:
 > `export OS_USERNAME=user-xxxxxx`  
 > `export OS_PASSWORD=xxx`  
 > `export OS_TENANT_ID=702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf`  
-> `export OS_AUTH_TOKEN=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "id": "'$OS_TENANT_ID'", "domain": { "id": "default" } } } } }' | grep '^X-Subject-Token' | cut -d" " -f2 | tr -d "\r")`
+> `export OS_AUTH_TOKEN=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "id": "'$OS_TENANT_ID'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2 | tr -d "\r")`
 
 ## Instructions
 
@@ -212,7 +212,7 @@ OS_STORAGE_URL="https://storage.${OS_REGION_NAME,,}.cloud.ovh.net/v1/AUTH_${OS_T
 unset OS_AUTH_TOKEN
 
 get_token(){
-  export OS_AUTH_TOKEN=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "id": "'$OS_TENANT_ID'", "domain": { "id": "default" } } } } }' | grep '^X-Subject-Token' | cut -d" " -f2 | tr -d "\r") && wait
+  export OS_AUTH_TOKEN=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "id": "'$OS_TENANT_ID'", "domain": { "id": "default" } } } } }' | grep -i '^X-Subject-Token' | cut -d" " -f2 | tr -d "\r") && wait
 }
 delete_objects(){
   while : ;

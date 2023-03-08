@@ -7,7 +7,7 @@ order: 025
 updated: 2022-03-31
 ---
 
-**Dernière mise à jour le 31/03/2022**
+**Dernière mise à jour le 01/03/2023**
 
 ## Objectif
 
@@ -38,6 +38,16 @@ Illimité
 ### Nombre maximum de comptes utilisateurs par projet
 
 1000
+
+### Attribution de noms
+
+- Doit comporter entre 3 et 63 caractères.
+- Doit commencer et se terminer par des caractères alphanumériques minuscules (de a à z et de 0 à 9).
+- Doit être unique au sein d'une même région OVHcloud.
+- Peut comporter les signes de ponctuation suivants : « . » et « - ».
+- Ne peut comporter plusieurs signes de ponctuation à la suite (« .. » ou « -. » ou « .- » ou « -- »).
+- Ne peut ressembler à une adresse IP (192.168.1.1).
+
 
 ## Aller plus loin
 

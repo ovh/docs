@@ -51,7 +51,7 @@ Quanto a modelos VPS mais antigos, prossiga a leitura deste guia clicando na seg
 Durante a primeira instalação ou uma reinstalação a partir da Área de Cliente, será criado um utilizador com plenos direitos. Vai receber um e-mail com todos os dados de identificação.
 O nome de utilizador será gerado em função do sistema operativo, por exemplo, «ubuntu» ou «debian». 
 
-Poderá conectar-se ao VPS em SSH com o nome de utilizador e a palavra-passe. O SSH é um protocolo de comunicação segura. Para saber mais, consulte [este guia de introdução ao SSH para os servidores dedicados OVHcloud](../../dedicated/ssh-introducao/). Pode aceder ao servidor através de um terminal de linhas de comando (Linux ou Mac) ou via um programa em Windows (recomendamos o PuTTy).
+Poderá conectar-se ao VPS em SSH com o nome de utilizador e a palavra-passe. O SSH é um protocolo de comunicação segura. Para saber mais, consulte [este guia de introdução ao SSH para os servidores dedicados OVHcloud](https://docs.ovh.com/pt/dedicated/ssh-introducao/). Pode aceder ao servidor através de um terminal de linhas de comando (Linux ou Mac) ou via um programa em Windows (recomendamos o PuTTy).
 
 Ao utilizar o PuTTy, por exemplo, abra simplesmente a aplicação e introduza o nome do servidor ou o endereço IPv4 para estabelecer a ligação. Depois de introduzir o nome de utilizador e a palavra-passe, poderá aceder à interface de linhas de comando (CLI).
 
@@ -84,7 +84,7 @@ passwd: password updated successfully
 
 #### Ativação das ligações root
 
-Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](../root-password/#ativar-a-password-root_1).
+Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](https://docs.ovh.com/pt/root-password/#ativar-a-password-root_1).
 
 #### Reinicialização do VPS (gama atual) <a name="reboot-current-range"></a>
 
@@ -107,7 +107,7 @@ Pode realizar qualquer reinstalação diretamente a partir da Área de Cliente O
 Depois, surge uma janela onde poderá escolher:
 
 - o sistema operativo;
-- uma [chave SSH](../../dedicated/criar-chaves-ssh-dedicadas/) (opcional).
+- uma [chave SSH](https://docs.ovh.com/pt/dedicated/criar-chaves-ssh-dedicadas/) (opcional).
 
 ![Reinstalação do VPS](images/2020panel_01.png){.thumbnail}
 
@@ -124,7 +124,7 @@ Durante a instalação, irá surgir uma barra de progresso. Esta indica o andame
 
 #### Conexão ao VPS (gama antiga)
 
-Após a instalação (ou reinstalação) do VPS, é enviado um e-mail com a palavra-passe de acesso root via SSH. O SSH é um protocolo de comunicação segura. Para saber mais, consulte [este guia de introdução ao SSH para os servidores dedicados OVHcloud](../../dedicated/ssh-introducao/).
+Após a instalação (ou reinstalação) do VPS, é enviado um e-mail com a palavra-passe de acesso root via SSH. O SSH é um protocolo de comunicação segura. Para saber mais, consulte [este guia de introdução ao SSH para os servidores dedicados OVHcloud](https://docs.ovh.com/pt/dedicated/ssh-introducao/).
 
 O acesso ao VPS é feito através do terminal de linhas de comando (Linux ou MAC) ou, no caso dos sistemas Windows, por intermédio de um software de terceiros (por exemplo, PuTTy).
 
@@ -166,7 +166,7 @@ Depois, surge uma janela onde poderá escolher:
 
 - o sistema operativo;
 - o idioma;
-- uma [chave SSH](../../dedicated/criar-chaves-ssh-dedicadas/) (opcional).
+- uma [chave SSH](https://docs.ovh.com/pt/dedicated/criar-chaves-ssh-dedicadas/) (opcional).
 
 ![Menu de opções de reinstalação](images/reinstall_menu.png){.thumbnail}
 
@@ -183,11 +183,11 @@ Durante a instalação, irá surgir uma barra de progresso. Esta indica o andame
 
 Como explicado na secção "Objetivo" deste guia, é o administrador do seu VPS. Enquanto tal, é responsável pelos seus dados e pela sua segurança.
 
-Para obter conselhos de base, consulte o guia [Proteger um VPS](../como-proteger-vps/).
+Para obter conselhos de base, consulte o guia [Proteger um VPS](https://docs.ovh.com/pt/como-proteger-vps/).
 
 ### Associar um domínio
 
-A utilização do seu VPS para a publicação de um website implica normalmente a associação de um nome de domínio via DNS. Se gerir o seu domínio na OVHcloud, consulte o nosso guia sobre a [modificação da sua zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) para obter instruções.
+A utilização do seu VPS para a publicação de um website implica normalmente a associação de um nome de domínio via DNS. Se gerir o seu domínio na OVHcloud, consulte o nosso guia sobre a [modificação da sua zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) para obter instruções.
 
 ### Como proteger um domínio com um certificado SSL
 
@@ -199,10 +199,10 @@ Se preferir uma instalação automática, recomendamos o [SSL Gateway](https://w
 
 ## Quer saber mais?
 
-[Introdução ao SSH](../../dedicated/ssh-introducao/)
+[Introdução ao SSH](https://docs.ovh.com/pt/dedicated/ssh-introducao/)
 
-[Proteger um VPS](../como-proteger-vps/)
+[Proteger um VPS](https://docs.ovh.com/pt/como-proteger-vps/)
 
-[Configurar uma nova instalação do Windows Server](../windows-first-config/)
+[Configurar uma nova instalação do Windows Server](https://docs.ovh.com/pt/windows-first-config/)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

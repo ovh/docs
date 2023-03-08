@@ -1,8 +1,8 @@
 ---
-title: NSX Edge Gateway VPN Configuration 
+title: NSX-v Edge Gateway VPN Configuration 
 slug: nsx-edge-gateway-vpn-configuration
-excerpt: Use the NSX Edge VPN service to connect to remote sites
-section: NSX
+excerpt: Use the NSX-v Edge VPN service to connect to remote sites
+section: NSX-v
 order: 07
 updated: 2021-11-30
 ---

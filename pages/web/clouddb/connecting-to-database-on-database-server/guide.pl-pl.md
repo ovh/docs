@@ -4,6 +4,7 @@ slug: polaczenie-bazy-danych-serwer-bdd
 excerpt: 'Dowiedz się, jak się zalogować do bazy danych'
 section: Konfiguracja
 order: 03
+updated: 2023-02-15
 ---
 
 > [!primary]

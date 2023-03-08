@@ -2,7 +2,6 @@
 title: "Configura il reverse DNS di un'istanza Public Cloud"
 excerpt: Come impostare la risoluzione reverse DNS
 slug: configura_il_reverse_dns_della_tua_istanza
-legacy_guide_number: g1940
 section: Gestione dallo Spazio Cliente OVHcloud
 order: 7
 updated: 2021-11-12
@@ -16,7 +15,7 @@ updated: 2021-11-12
 
 ## Obiettivo
 
-Il **Reverse DNS** è il complemento della risoluzione "classica" dei DNS che permette di convertire un dominio in un indirizzo IP (record di tipo **A**). Una richiesta di questo tipo può essere risolta con il nome di dominio (record di tipo **PTR**). Ciò significa che le richieste DNS sull'indirizzo IP in questione restituiranno un dominio.
+Il **Reverse DNS** (*rDNS*) è il complemento della risoluzione "classica" dei DNS che permette di convertire un dominio in un indirizzo IP (record di tipo **A**). Una richiesta di questo tipo può essere risolta con il nome di dominio (record di tipo **PTR**). Ciò significa che le richieste DNS sull'indirizzo IP in questione restituiranno un dominio.
 
 Configurare la risoluzione **Reverse DNS** di un'istanza è particolarmente utile per l'invio di email. Il rischio che i tuoi messaggi vengano inviati tramite un sistema di protezione dallo Spam diminuirà se l'indirizzo IP del tuo server di posta elettronica si risolve correttamente nel tuo dominio.
 

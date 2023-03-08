@@ -4,6 +4,7 @@ slug: datenbank-importieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank wiederherstellen und importieren'
 section: Konfiguration
 order: 05
+updated: 2023-02-15
 ---
 
 **Letzte Aktualisierung am 15.02.2023**
