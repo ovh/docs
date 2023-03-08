@@ -201,5 +201,4 @@ Votre serveur dédié est à présent prêt à accueillir une base de données S
 Vous pouvez procéder à l'installation SAP HANA. Pour cela, nous vous recommandons de suivre le [guide officiel SAP](https://help.sap.com/docs/SAP_HANA_PLATFORM/2c1988d620e04368aa4103bf26f17727/88e3e9a612bc484cac335725ad0978d3.html).
 
 ## Aller plus loin
-[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15]()<br>
-[Concept - SAP HANA sur un serveur dédié High Grade & SAP AS sur VMware on OVHcloud]()
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/fr/dedicated/ola-sles15/)
