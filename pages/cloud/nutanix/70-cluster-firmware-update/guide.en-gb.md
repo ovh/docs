@@ -32,7 +32,7 @@ Before any action, log in to your Prism Element interface and perform the follow
 
 - Check that the cluster's "**Data Resiliency Status**" is `OK`
 
-This can be verified on the main dashboard of your Prism Element (PE) interface:
+This can be verified on the main dashboard of your Prism Element interface:
 
 ![Prism element - Data Resiliency Status](images/nutanix-cluster-fw-update-01.png){.thumbnail}
 
@@ -55,7 +55,7 @@ A log file called `/home/nutanix/data/logs/ncc-output-latest.log` will be genera
 Please analyze it carefully. If you find errors or fails about cluster or service state, do not continue and contact the OVHcloud support.
 
 > [!primary]
-> It is possible to run ncc checks on the CVM by typing the following command from a terminal.
+> It is possible to run NCC checks on the CVM by typing the following command from a terminal.
 
 ```bash
 ncc health_checks run_all
@@ -210,9 +210,9 @@ To exit the node from maintenance mode, run the following command:
 host.exit_maintenance_mode 192.168.0.1
 ```
 
-![maintenance mode exit](images/nutanix-cluster-fw-update-16.png){.thumbnail}
-
 The host exits from `maintenance` state and goes back to `Normal` state.
+
+![maintenance mode exit](images/nutanix-cluster-fw-update-16.png){.thumbnail}
 
 Migrated VMs from this node automatically move from other nodes to it.
 
