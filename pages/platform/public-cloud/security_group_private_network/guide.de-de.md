@@ -127,7 +127,7 @@ Demnach lassen alle Netzwerk-Ports (öffentlich und privat) jede Verbindung beim
 #### Regeln hinzufügen
 
 > [!warning]
-> Wenn Sie bestimmte Regeln konfigurieren möchten, Sie eine neue Sicherheitsgruppe erstellen und dann Ihren Netzwerk-Port zuweisen. Wir empfehlen Ihnen, die Sicherheitsgruppe "Default" nicht zu ändern, um den Zugriff auf Ihre Instanz unter allen Umständen aufrechtzuerhalten (z. B. im Rescue-Modus).
+> Wenn Sie spezifische Regeln konfigurieren möchten, muss dazu eine neue Sicherheitsgruppe erstellt und dem Netzwerk-Port zugewiesen werden. Wir raten dazu, die Sicherheitsgruppe "Default" nicht zu ändern, um den Zugriff auf Ihre Instanz unter allen Umständen aufrechtzuerhalten (z. B. im Rescue-Modus).
 >
 
 Verwenden Sie diesen Befehl, um die Gruppe zu erstellen:
