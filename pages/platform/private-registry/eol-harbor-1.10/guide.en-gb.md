@@ -117,5 +117,5 @@ First your replication should be in `InProgress` status and then, after waiting 
 >
 > If you run several times the same replications and you have Helm charts, the replication can fail the second time, but it will work.
 
-At last, you must reconfigure your Harbor instance (users, robot accounts, garbage collection, retention rules...).
+Finally, you must reconfigure your Harbor instance (users, robot accounts, garbage collection, retention rules...).
 Once your registry is replicated, change both the Harbor URL and credentials in your CI/CD and deployment platform if not already done.
