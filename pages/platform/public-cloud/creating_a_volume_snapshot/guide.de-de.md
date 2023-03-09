@@ -4,7 +4,7 @@ slug: volume-snapshot-erstellung
 excerpt: 'Erfahren Sie hier, wie Sie einen Snapshot einer Public Cloud Disk erstellen'
 section: Storage
 order: 2
-updated: 2023-02-10
+updated: 2023-03-03
 ---
 
 > [!primary]
