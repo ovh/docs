@@ -2,8 +2,8 @@
 title: Backing-up an OVHcloud Managed Kubernetes cluster using Velero
 excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Velero, including Persistent Volumes
 slug: backing-up-cluster-with-velero
-section: Storage
-order: 3
+section: 'Backup and Restore'
+order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/backing-up-cluster-with-velero/'
 updated: 2023-01-11

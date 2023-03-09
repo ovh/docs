@@ -2,8 +2,8 @@
 title: Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
 excerpt: Find out how to back up and restore your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes
 slug: backup-restore-pv-volume-snapshot
-section: Storage
-order: 2
+section: 'Backup and Restore'
+order: 03
 updated: 2023-01-11
 ---
 
