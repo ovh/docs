@@ -6,10 +6,10 @@ section: Guides généraux
 order: 17
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/backups'
-updated: 2022-04-26
+updated: 2023-03-09
 ---
 
-**Last updated April 26, 2022**
+**Last updated March 9th, 2023**
 
 ## Objective
 
@@ -25,20 +25,20 @@ We back up our managed public cloud databases every 1 (incremental snapshots), 1
 
 * PITR:
 
-Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the retention period of the chosen customer plan.
+Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the retention period of the chosen customer plan for PostgreSQL and MySQL. For MongoDB Enterprise the point in time must be within the last 24 hours.
 
 ## Engine Specifications
 
-Engine | Backup Method(s) | Location | Frequency | RPO | Encrypted
+Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted
 :--- | :--- | :---: | :---: | :---: | :---:
 MongoDB | Backup on object storage | Off-Site | Daily | 24h | Yes
 MongoDB Enterprise | PITR on object storage | Off-site | Continuous | Few minutes | Yes
-PostgreSQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
-MySQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
-Redis | Backup on object storage | On-Site | 2 times a day | 12h | Yes
-OpenSearch | Incremental | On-Site | Hourly | 1h | Yes
-M3 | Backup on object storage | On-Site | Daily | 24h | Yes
-Cassandra | Backup on object storage | On-Site | Daily | 24h | Yes
+PostgreSQL | PITR on object storage | On-Site, Off-Site | Continuous | Few minutes | Yes
+MySQL | PITR on object storage | On-Site, Off-Site | Continuous | Few minutes | Yes
+Redis | Backup on object storage | On-Site, Off-Site | 2 times a day | 12h | Yes
+OpenSearch | Incremental | On-Site, Off-Site | Hourly | 1h | Yes
+M3 | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes
+Cassandra | Backup on object storage | On-Site, Off-Site | Daily | 24h | Yes
 Kafka | N/A | N/A | N/A | N/A | N/A
 
 ## Lexicon
