@@ -4,14 +4,14 @@ slug: volume-snapshot-erstellung
 excerpt: 'Erfahren Sie hier, wie Sie einen Snapshot einer Public Cloud Disk erstellen'
 section: Storage
 order: 2
-updated: 2023-02-10
+updated: 2023-03-03
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 13.01.2023**
+**Letzte Aktualisierung am 03.03.2023**
 
 ## Ziel
 
@@ -33,7 +33,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-Klicken Sie rechts neben dem betreffenden Volume auf `...`{.action} und dann auf `Snapshot erstellen`{.action}. (Es ist nicht notwendig, das Volume zuerst von seiner Instanz zu trennen.)
+Klicken Sie rechts neben dem betreffenden Volume auf `...`{.action} und dann auf `Snapshot erstellen`{.action}. (Es ist nicht notwendig, das Volume zuerst von seiner Instanz zu trennen.) Wenn Sie Ihr Volume jedoch abtrennen möchten, lesen Sie [diesen Abschnitt](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/volume-terren/#unter-linux) der entsprechenden Anleitung für Linux und [diesen Abschnitt](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/volume-terren/#unter-windows) für Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 
