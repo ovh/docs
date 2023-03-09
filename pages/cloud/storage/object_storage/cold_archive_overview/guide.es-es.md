@@ -1,5 +1,5 @@
 ---
-title: Archivo frío - Descripción general (EN)
+title: Cold Archive - Descripción general (EN)
 slug: cold-archive/overview
 excerpt: Discover the service, understand the capabilities and billing
 section: Cold Archive Storage Class Specifics

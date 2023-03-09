@@ -2,14 +2,14 @@
 title: Web Cloud Databases - EOL und EOS Ankündigungen
 slug: clouddb-eos-eol
 section: 'Technische Ressourcen'
-updated: 2023-02-23
+updated: 2023-03-09
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 23.02.2023**
+**Letzte Aktualisierung am 09.03.2023**
 
 ## Ziel
 
@@ -29,7 +29,8 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 |PostgreSQL 9.6|2020-01-21|2021-05-12|2021-11-11|
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
-|PostgreSQL 12|Noch festzulegen|Noch festzulegen|Noch festzulegen|
+|PostgreSQL 12|**2023-03-08**|**2024-05-15**|**2024-11-14**|
+|PostgreSQL 13|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |Redis 6.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 
 ## Weiterführende Informationen

@@ -6,10 +6,10 @@ section: MongoDB - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/'
-updated: 2023-03-02
+updated: 2023-03-09
 ---
 
-**Last updated March 2nd, 2023**
+**Last updated March 9th, 2023**
 
 ## Objective
 
@@ -131,7 +131,7 @@ Here are some considerations to take into account when using private network:
 
 *Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 7 days.
 
-*Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days.
+*Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
 #### Logs and Metrics
 
