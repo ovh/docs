@@ -16,15 +16,15 @@ Ce guide vous présente les étapes de mise à jour des firmwares des clusters N
 Nos services prendront le relais pour appliquer les mises à jour des firmwares et redémarreront le noeud une fois cela fait.
 
 > [!warning]
-> Avant d'entamer toute action, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et créez un ticket de demande d'assistance pour demander une mise à jour du firmware et communiquer aux équipes d'assistance OVHcloud les éléments techniques concernant votre cluster.
+> Avant d'entamer toute action, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et créez un ticket de demande d'assistance pour demander une mise à jour du firmware et communiquer aux équipes d'assistance OVHcloud les éléments techniques concernant votre cluster.
 
 **Découvrez comment mettre à jour le firmware de votre cluster Nutanix.**
 
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Consulter le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Consulter le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 
@@ -142,7 +142,7 @@ Le CVM est à présent arrêté.
 
 ### Redémarrer en mode rescue
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à l'onglet `Hosted Private Cloud`{.action}, choisissez `Nutanix`{.action} et sélectionnez votre cluster.
+Connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à l'onglet `Hosted Private Cloud`{.action}, choisissez `Nutanix`{.action} et sélectionnez votre cluster.
 
 ![Espace client - accès au cluster](images/nutanix-cluster-fw-update-11.png){.thumbnail}
 

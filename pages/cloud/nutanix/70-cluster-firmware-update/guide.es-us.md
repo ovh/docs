@@ -1,6 +1,8 @@
 ---
-title: Updating your Nutanix cluster firmware
+title: Actualización del firmware del cluster Nutanix (EN)
 slug: nutanix-cluster-firmware-update
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-cluster-firmware-update/'
 excerpt: Find out how to update your Nutanix cluster firmware
 section: Upgrade
 order: 02
@@ -16,15 +18,15 @@ This article provides you with the steps to update Nutanix cluster's firmwares b
 Our services will take over to apply updates and firmwares and will restart the node thereafter.
 
 > [!warning]
-> Before following the steps below, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and create a support ticket, requesting a firmware update. Make sure to provide the OVHcloud support teams with all technical information regarding your cluster.
+> Before following the steps below, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) and create a support ticket, requesting a firmware update. Make sure to provide the OVHcloud support teams with all technical information regarding your cluster.
 
 **This guide explains how to update your Nutanix cluster firmware.**
 
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Consulting the guide [First steps to use the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (to familiarise yourself with the OVHcloud API)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- Consulting the guide [First steps to use the OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/) (to familiarise yourself with the OVHcloud API)
 
 ## Instructions
 
@@ -142,7 +144,7 @@ The CVM is now shut down.
 
 ### Reboot to rescue mode
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Hosted Private Cloud`{.action}, choose the `Nutanix`{.action} solution and select your cluster.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), go to the `Hosted Private Cloud`{.action}, choose the `Nutanix`{.action} solution and select your cluster.
 
 ![OVHcloud Control Panel - cluster access](images/nutanix-cluster-fw-update-11.png){.thumbnail}
 
