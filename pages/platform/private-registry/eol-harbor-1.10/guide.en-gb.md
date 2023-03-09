@@ -1,6 +1,6 @@
 ---
 title: 'End Of Life (EOL) Harbor 1.10 - How to replicate and migrate your data to an Harbor 2.x '
-excerpt: 'Find out how to replicate an old private registry (in Harbor 1.1x) to a recent OVhcloud Managed Private Registry (in Harbor 2;x)'
+excerpt: 'Find out how to replicate an old private registry (in Harbor 1.1x) to a recent OVhcloud Managed Private Registry (in Harbor 2.x)'
 slug: eol-harbor-1.10
 section: 'Getting started'
 order: 06
@@ -41,19 +41,19 @@ The Managed Private Registries based on Harbor 1.x will terminate on August, 1st
 
 ## Instructions
 
-1. First, follow the [Creating a private registry](../creating-a-private-registry/) guide to create a new private registry named `my-new-registry` for example, with the latest version of Harbor.
+First, follow the [Creating a private registry](../creating-a-private-registry/) guide to create a new private registry named `my-new-registry` for example, with the latest version of Harbor.
 
 ![My new private registry](images/my-new-registry-02.png)
 
-2. Follow the [Connecting to the UI](../connecting-to-the-ui/) guide to connect to your new private registry. 
+Follow the [Connecting to the UI](../connecting-to-the-ui/) guide to connect to your new private registry. 
 
-3. Now you will configure a replication between your old private registry (in Harbor 1.x) and the new one.
+Now you will configure a replication between your old private registry (in Harbor 1.x) and the new one.
 
 In the `Administration` menu, click on `Registries`{.action}.
 
 ![Create a replication between two registries](images/registries.png){.thumbnail}
 
-4. Click on `New endpoint`{.action} button to create a replication endpoint.
+Click on `New endpoint`{.action} button to create a replication endpoint.
 
 Now fill the form with the following information:
 
@@ -73,11 +73,11 @@ Click on `OK` button to save your information.
 
 ![New private registry endpoint](images/new-registry-endpoint-created.png){.thumbnail}
 
-5. In the `Administration` menu, click on `Replications`{.action}.
+In the `Administration` menu, click on `Replications`{.action}.
 
 ![Replications](images/replications.png){.thumbnail}
 
-6. Click on `New replication rule`{.action} button to create a new rule.
+Click on `New replication rule`{.action} button to create a new rule.
 
 Now fill the form with the following information:
 
@@ -92,13 +92,13 @@ Now fill the form with the following information:
 >
 > **Scheduled**: Replicate the resources periodically by defining a cron job. Note: Deletion operations are not replicated.
 
-![New replicaton rule](images/new-replication-rule.png.png){.thumbnail}
+![New replicaton rule](images/new-replication-rule.png){.thumbnail}
 
 Click on `Save`{.action} button to save your information.
 
 ![Replication rule created](images/replication-rule-created.png){.thumbnail}
 
-7. To run manually a replication rule, select your replication rule and click on `Replicate` button.
+To run manually a replication rule, select your replication rule and click on `Replicate` button.
 
 ![Replication rule](images/replicate-button.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Then, click on `Replicate`{.action} button to run the replication.
 
 ![Replication rule](images/are-you-sure.png){.thumbnail}
 
-8. You should see, in the `Executions` section, the status of the replication.
+You should see, in the `Executions` section, the status of the replication.
 
 First your replication should be in `InProgress` status and then, after waiting several seconds, the status should change to `Succeeded`.
 
@@ -117,5 +117,5 @@ First your replication should be in `InProgress` status and then, after waiting 
 >
 > If you run several times the same replications and you have Helm charts, the replication can fail the second time, but it will work.
 
-9. At last, you must reconfigure your Harbor instance (users, robot accounts, garbage collection, retention rules...).
+At last, you must reconfigure your Harbor instance (users, robot accounts, garbage collection, retention rules...).
 Once your registry is replicated, change both the Harbor URL and credentials in your CI/CD and deployment platform if not already done.
