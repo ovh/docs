@@ -215,4 +215,6 @@ Repeat this process for your other server(s) and assign an unused IP address fro
 
 ## Go further
 
+[Creating multiple vLANs in a vRack](https://docs.ovh.com/ca/en/dedicated/multiple-vlans/).
+
 Join our community of users on <https://community.ovh.com/en/>.
