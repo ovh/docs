@@ -1,5 +1,5 @@
 ---
-title: Kaltes Archiv - Überblick (EN)
+title: Cold Archive - Überblick (EN)
 slug: cold-archive/overview
 excerpt: Discover the service, understand the capabilities and billing
 section: Cold Archive Storage Class Specifics

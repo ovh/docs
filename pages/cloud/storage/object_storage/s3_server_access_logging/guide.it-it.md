@@ -1,5 +1,5 @@
 ---
-title: Archiviazione oggetti - registrazione degli accessi al server (EN)
+title: Object Storage - registrazione degli accessi al server (EN)
 slug: s3/server-access-logging
 excerpt: Learn how to configure and use Server Access Logging
 section: Tutorials
