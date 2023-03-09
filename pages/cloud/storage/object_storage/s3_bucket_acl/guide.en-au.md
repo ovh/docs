@@ -1,16 +1,16 @@
 ---
-title: Bucket ACL
+title: Object Storage - Bucket ACL
 slug: s3/bucket-acl
 section: Tutorials
 order: 150
-updated: 2023-03-01
+updated: 2023-03-09
 ---
 
-**Last updated on 1st March 2023**
+**Last updated on 9th March 2023**
 
 ## Overview
 
-By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, ...etc) are private in OVH S3 Object Storage. Only the resource owner i.e the user account that create it has full control.
+By default, all resources (buckets, objects) and sub-resources (lifecycle configuration, webite configuration, ...etc) are private in OVHcloud S3 Object Storage. Only the resource owner, i.e the user account that creates it, has full control.
 
 Access to private resources can be granted via access policies.
 
@@ -21,7 +21,7 @@ Access policies can be categorized broadly into 2 types :
 
 ### User based
 
-Access policies attached to a specific user are called user policies. A user policy is evaluated using OVH S3 Object Storage IAM permissions and apply only to the specific user it is attached to.
+Access policies attached to a specific user are called user policies. A user policy is evaluated using OVHcloud S3 Object Storage IAM permissions and applies only to the specific user it is attached to.
 
 ### Resource based
 
@@ -35,13 +35,13 @@ Although ACLs are the legacy way to manage permissions, they are still relevant 
 
 #### Bucket policy
 
-Akin to user policies, a bucket policy controls permissions for a bucket and the objects in it. The difference is that whereas user policies control permissions for a specific user to a list of resources, a bucket policy controls permission to a specific bucket and its objects for a list of users.
+Akin to user policies, a bucket policy controls permissions for a bucket and the objects in it. The difference is that whereas user policies control permissions for a specific user to a list of resources, a bucket policy controls permissions to a specific bucket and its objects for a list of users.
 
 ![policies](images/s3_bucket_acl-20230228171656561.png)
 
 > [!warning]
 >
-> Bucket policies is a feature that is not available yet in OVH Object S3 Storage
+> Bucket policies is a feature that is not yet available for OVHcloud S3 Object Storage.
 >
 
 ## Manage permissions with ACLs
@@ -50,29 +50,26 @@ Akin to user policies, a bucket policy controls permissions for a bucket and the
 
 OVHCloud Object Storage supports 2 types of grantees:
 
-- public cloud account user
-- predefined OVHCloud group
+- Public Cloud account users
+- Predefined groups
 
-#### Public cloud account
+#### Public Cloud account
 
-Public cloud account users are identified by a canonical user id. When you grant access rights, the canonical user id is specified by *id=<value>* where *<value>* equals "*<project_name>:<user_name>*".
+Public Cloud account users are identified by a canonical user id. When you grant access rights, the canonical user id is specified by `id=<value>` where `<value>` equals `<project_name>:<user_name>`.
 
-Example: if you have a public cloud project named "*my_project*" and you have created a user named "*storage-user*" then you get *id=my_project:storage-user*
+Example: if you have a Public Cloud project named `my_project` and you have created a user named `storage-user` then you get `id=my_project:storage-user`
 
+#### Predefined groups
 
+Supported predefined user groups are the following and are identified by a URI:
 
-#### Predefined OVHCloud group
-
-Supported predefined user groups are the following and are identified by an uri:
-
-- **log delivery group**: this group contains the applicative users used by OVHCloud services to write server access logs inside bucket
+- **log delivery group**: this group contains the applicative users used by OVHcloud services to write server access logs inside buckets (read our [Server Access Logging](https://docs.ovh.com/au/en/storage/object-storage/s3/server-access-logging/) guide for more information)
 
 ```console
 http://acs.amazonaws.com/groups/s3/LogDelivery
 ```
 
-- **authenticated users group**: this group contain all the OVHCloud public cloud account users  
-
+- **authenticated users group**: this group contains all the OVHcloud Public Cloud account users  
 
 ```console
 http://acs.amazonaws.com/groups/global/AuthenticatedUsers
@@ -106,15 +103,15 @@ Predefined ACLs have a predefined set of grantees and permissions and are a conv
 | public-read | owner has FULL_CONTROL<br>AllUsers group has READ | x | x |  |
 | public-read-write | owner has FULL_CONTROL<br>AllUsers group has READ, WRITE | x | x |  |
 | authenticated-read | owner has FULL_CONTROL<br>AuthenticatedUsers group has READ | x | x |  |
-| bucket-owner-read | object owner has FULL_CONTROL<br>bucket ower has READ |    | x | currently not managed yet |
+| bucket-owner-read | object owner has FULL_CONTROL<br>bucket owner has READ |    | x | currently not managed yet |
 | bucket-owner-full-control | object owner and bucket owner both have FULL_CONTROL |  | x | currently not managed yet |
 | log-delivery-write | LogDelivery group has WRITE, READ_ACP | x |  |  |
 
-### In practice
+### Instructions
 
 #### Set ACL on a bucket
 
-You can set the ACL on a bucket at the creation or afterwards, by calling the put-bucket-acl endpoint.
+You can set the ACL on a bucket at its creation or afterwards, by calling the `put-bucket-acl` endpoint.
 
 Example:
 
@@ -124,11 +121,12 @@ $ aws s3api create-bucket --bucket my-bucket --region gra --acl public-read
 
 In this example, we created a bucket named "my-bucket" using a predefined ACL "public-read".
 
-To verifiy, that ACL are set correctly, you can use the following command to return the ACL:
+To verifiy that ACL are set correctly, you can use the following command to return the ACL:
 
 ```bash
 $ aws s3api get-bucket-acl --bucket my-bucket
 ```
+
 ```json
 {
     "Owner": {
@@ -157,19 +155,20 @@ $ aws s3api get-bucket-acl --bucket my-bucket
 
 
 
-To change the ACL, you can call the put-bucket-acl endpoint by using the AWs cli:
+To change the ACL, you can call the `put-bucket-acl` endpoint by using the AWS cli:
 
 ```bash
 $ aws s3api put-bucket-acl --bucket acl-bucket --grant-write id=po-training:user-yyyyyyyyyy
 ```
 
-Here, we change the ACL to give account user "user-yyyyyyyyyy", the permission to write in the bucket.
+Here, we change the ACL to give account user "user-yyyyyyyyyy" the permission to write in the bucket.
 
-Agian, to verifiy that ACL are set correctly
+Again, to verify that ACL are set correctly:
 
 ```bash
 $ aws s3api get-bucket-acl --bucket my-bucket
 ```
+
 ```json
 {
     "Owner": {
@@ -191,7 +190,7 @@ $ aws s3api get-bucket-acl --bucket my-bucket
 
 #### Set ACL on an object
 
-Similar to bucket level, you can set the ACL on an object at creation or afterwards.
+Similar to bucket level, you can set the ACL on an object at its creation or afterwards.
 
 Example:
 
@@ -201,17 +200,15 @@ $ aws s3api put-object --bucket my-bucket --body file.txt --key file --grant-ful
 
 In this example, we created an object named "file" and we gave "FULL_CONTROL" on that object to account user "user-yyyyyyyyyy".
 
-
-
 ## Best practices
 
-### When to use ACLs
+### When to use ACLs?
 
 #### At object level
 
 As mentioned before, ACLs can be attached at object level.
 
-You might consider the following scenarios when to use object ACL.
+You might consider the following scenarios to use object ACL.
 
 - the bucket owner and the object owner are not the same: in a scenario where the bucket owner has granted another account to write objects inside the bucket, access to those objects must be granted through ACLs
 - permissions vary from individual object to individual object
@@ -220,11 +217,11 @@ You might consider the following scenarios when to use object ACL.
 
 We stongly advise you to use policies instead for a better and more fine grained access control over the bucket and its objects. However, for very basic permission control needs, you might consider using bucket ACLs to grant permissions to the objects and ACLs related to the bucket.
 
-### When to use bucket policies
+### When to use bucket policies?
 
 You might consider using bucket policies if you want to set **cross-account** permissions over the resources related to a specific bucket.
 
-### When to use user policy
+### When to use user policy?
 
 You might consider using user policies if you want to set **cross-resource** permissions for a specific account.
 
@@ -232,9 +229,8 @@ You might consider using user policies if you want to set **cross-resource** per
 >
 > **Important**
 >
-> ACLs and policies can be combined however the principle of least privilege will always be applied which can be summerized as "**allow only if there is an explicit allow and no explicit deny, else, deny all**"
+> ACLs and policies can be combined. However the principle of least privilege will always be applied and can be summerized as "**allow only if there is an explicit allow and no explicit deny, else, deny all**"
 >
-
 
 ## Go further
 

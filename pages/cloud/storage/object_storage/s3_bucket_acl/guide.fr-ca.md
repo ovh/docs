@@ -1,5 +1,5 @@
 ---
-title: Bucket ACL
+title: Object Storage - Bucket ACL
 slug: s3/bucket-acl
 section: Tutoriels
 order: 150
@@ -31,7 +31,7 @@ Une ACL est une liste qui identifie des utilisateurs et les permissions qui leur
 
 Les ACLs peuvent être soit attachées au niveau du bucket, soit au niveau des objets.
 
-Il est à noter que malgré le fait que less ACLs constituent la méthode historique de gestion des permissions, elles sont encore valables et non dépréciées. Cependant, selon la situation, il peut être préférable d'utiliser des politiques utilisateur ou de bucket pour avoir une gestion plus fine des droits.
+Il est à noter que malgré le fait que les ACLs constituent la méthode historique de gestion des permissions, elles sont encore valables et non dépréciées. Cependant, selon la situation, il peut être préférable d'utiliser des politiques utilisateur ou de bucket pour avoir une gestion plus fine des droits.
 
 #### Politique de bucket
 
