@@ -27,13 +27,13 @@ Ce tutoriel va vous permettre d'automatiser et d'orchestrer des actions pour uti
 $ export OVH_ENDPOINT=ovh-eu
 $ export OVH_APPLICATION_KEY=Your_key_application_OVH(or_AK)
 $ export OVH_APPLICATION_SECRET=Your_secret_application_key_OVH(or_AS)
-$ export OVH_CONSUMER_KEY=Your_token(or_CK)  
+$ export OVH_CONSUMER_KEY=Your_token(or_CK)
 ```   
 
 - Un projet Public Cloud. Exportez l'ID dans la variable `TF_VAR_OVH_PUBLIC_CLOUD_PROJECT_ID` :
 
 ```bash
-$ export TF_VAR_OVH_PUBLIC_CLOUD_PROJECT_ID=Your_public_cloud_project_id  
+$ export TF_VAR_OVH_PUBLIC_CLOUD_PROJECT_ID=Your_public_cloud_project_id
 ```
 
 **Si vous n'avez pas la CLI AWS configurée**, vous devez paramétrer les access key S3 et secret keys S3, peu importe leur valeur car elles seront surchargées. Cela est dû à une limitation de Terraform au moment de son initialisation (référez-vous au [ticket Terraform associé](https://github.com/hashicorp/terraform/issues/2430)) :
@@ -71,7 +71,7 @@ $ terraform plan
 
 Regardez à présent le contenu du fichier `main.tf` :
 
-- Le bloc *variable* définit la région et le *s3 endpoint* qui sont utilisés pour créer le bucket. Vous pouvez l'adapter en fonction de votre besoin : [Object Storage - Endpoints et géo-disponibilité de l’Object Storage](https://docs.ovh.com/fr/storage/object-storage/s3/location/).
+- Le bloc *variable* définit la région et le *s3 endpoint* qui sont utilisés pour créer le bucket. Vous pouvez l'adapter en fonction de votre besoin : [Object Storage - Endpoints et géo-disponibilité de l’Object Storage](https://docs.ovh.com/fr/storage/object-storage/s3/location/) to know what region / endpoints are available..
 - Le bloc *Providers* définit 2 providers : celui d'OVHcloud et celui d'Hashicorp AWS. Le premier est nécessaire pour créer les utilisateurs qui seront utilisés par le second.
 - Le bloc *User / Credential* définit les user & credential qui sont visibles dans la table Settings > Users & Roles. Ils sont nécessaires pour la configuration du provider Hashicorp AWS provider.
 - Le bloc Bucket définit le bucket 
@@ -81,7 +81,7 @@ Regardez à présent le contenu du fichier `main.tf` :
 
 ```bash
 $ terraform apply
-```  
+```
 
 Vous pouvez aller dans la Console et vérifier la table « Object Storage ». Votre bucket est créé.
 
