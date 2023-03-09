@@ -4,6 +4,8 @@ excerpt: 'Find out how to replicate an old private registry (in Harbor 1.1x) to 
 slug: eol-harbor-1.10
 section: 'Getting started'
 order: 06
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-registry/eol-harbor-1.10/'
 updated: 2023-03-09
 ---
 
