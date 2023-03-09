@@ -2,10 +2,10 @@
 title: 'Annonces de fin de vente/vie Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Ressources techniques'
-updated: 2023-02-23
+updated: 2023-03-09
 ---
 
-**Dernière mise à jour le 23/02/2023**
+**Dernière mise à jour le 09/03/2023**
 
 ## Objectif
 
