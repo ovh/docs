@@ -87,10 +87,6 @@ El nuevo agente registrador solicitará el código para finalizar la transferenc
 
 En lugar de escribir manualmente el código, le recomendamos que copie y pegue el código, ya que algunos caracteres pueden confundirse fácilmente.
 
-> [!warning]
->
-> Si el dominio está suspendido o caducado, es necesario [crear un tique de asistencia](https://www.ovh.com/manager/dedicated/#/support/tickets/new) desde el área de cliente de OVHcloud.
-
 Una vez recuperado el código de transferencia, **no vuelva a bloquear su dominio a menos que ya no quiera transferirlo**.
 
 ### 3\. iniciar la transferencia al nuevo agente registrador

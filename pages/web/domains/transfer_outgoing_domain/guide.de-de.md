@@ -86,10 +86,6 @@ Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer a
 
 Anstatt den Code manuell einzugeben, empfehlen wir, diesen zu kopieren und einzufügen, da einige Zeichen leicht zu verwechseln sind.
 
-> [!warning]
->
-> Wenn die Domain gesperrt oder abgelaufen ist, muss über Ihr OVHcloud Kundencenter ein [Support-Ticket erstellt werden](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
-
 Sobald der Transfer-Code abgerufen wurde, reaktivieren Sie den Transfer-Schutz **nicht, es sei denn, Sie möchten den Transfer verhindern**.
 
 ### Schritt 3: Transfer zum neuen Registrar beauftragen

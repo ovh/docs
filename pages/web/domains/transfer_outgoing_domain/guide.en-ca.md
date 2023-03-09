@@ -78,10 +78,6 @@ The code will be requested by your new registrar to complete the transfer proces
 
 Make sure to copy and paste the code as opposed to typing it by hand, since some characters are easily confused.
 
-> [!warning]
->
-> If the domain name has been suspended or expired, you will need to [create a support ticket](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) from your OVHcloud Control Panel.
-
 Once the transfer code has been retrieved, **do not lock your domain again unless you no longer wish to transfer it**.
 
 ### Step 3: Launch the transfer at your new registrar
