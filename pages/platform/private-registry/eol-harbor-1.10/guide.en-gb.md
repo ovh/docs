@@ -1,8 +1,8 @@
 ---
-title: 'End Of Life (EOL) Harbor 1.10 - How to replicate and migrate your data to an Harbor 2.x'
-excerpt: 'Find out how to replicate an old private registry (in Harbor 1.1x) to a recent OVhcloud Managed Private Registry (in Harbor 2.x)'
-slug: eol-harbor-1.10
-section: 'Getting started'
+title: "End Of Life (EOL) Harbor 1.10 - How to replicate and migrate your data to Harbor 2.x"
+excerpt: "Find out how to replicate an old private registry (in Harbor 1.1x) to a recent OVHcloud Managed Private Registry (in Harbor 2.x)"
+slug: eol-harbor-v110
+section: "Getting started"
 order: 06
 updated: 2023-03-09
 ---
@@ -33,19 +33,19 @@ updated: 2023-03-09
 
 ## Objective
 
-OVHcloud Managed Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images. 
+The OVHcloud Managed Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images. 
 
-Managed Private Registry is built on Open Source solutions, such as Docker, and the CNCF Harbor project, to guarantee its interoperability. 
+Managed Private Registry is built on Open Source solutions such as Docker and the CNCF Harbor project, to guarantee its interoperability. 
 
-The Managed Private Registries based on Harbor 1.x will terminate on August, 1st 2023. So the aim of this guide is to show you how to create a new private registry (based on Harbor 2.x) and migrate your data from your 1.x private registry to this new one.
+The Managed Private Registries based on Harbor 1.x will terminate on August 1st 2023. The aim of this guide is to show you how to create a new private registry (based on Harbor 2.x) and migrate your data from your 1.x private registry to this new one.
 
 ## Instructions
 
-First, follow the [Creating a private registry](../creating-a-private-registry/) guide to create a new private registry named `my-new-registry` for example, with the latest version of Harbor.
+First, follow the guide [Creating a private registry](https://docs.ovh.com/gb/en/private-registry/creating-a-private-registry/) to create a new private registry named `my-new-registry` for example, with the latest version of Harbor.
 
 ![My new private registry](images/my-new-registry-02.png)
 
-Follow the [Connecting to the UI](../connecting-to-the-ui/) guide to connect to your new private registry. 
+Follow the guide [Connecting to the UI](https://docs.ovh.com/gb/en/private-registry/connecting-to-the-ui/) to connect to your new private registry. 
 
 Now you will configure a replication between your old private registry (in Harbor 1.x) and the new one.
 
@@ -65,11 +65,11 @@ Now fill the form with the following information:
 
 ![New private registry endpoint](images/new-registry-endpoint.png){.thumbnail}
 
-Click on `Test connection`{.action} button to ping the private registry and test your information.
+Click on the button `Test connection`{.action} to ping the private registry and test your information.
 
 ![New private registry endpoint](images/connection-tested-ok.png){.thumbnail}
 
-Click on `OK` button to save your information.
+Click on the button `OK`{.action} to save your information.
 
 ![New private registry endpoint](images/new-registry-endpoint-created.png){.thumbnail}
 
@@ -77,7 +77,7 @@ In the `Administration` menu, click on `Replications`{.action}.
 
 ![Replications](images/replications.png){.thumbnail}
 
-Click on `New replication rule`{.action} button to create a new rule.
+Click on the button `New replication rule`{.action} to create a new rule.
 
 Now fill the form with the following information:
 
@@ -94,28 +94,34 @@ Now fill the form with the following information:
 
 ![New replicaton rule](images/new-replication-rule.png){.thumbnail}
 
-Click on `Save`{.action} button to save your information.
+Click on `Save`{.action} to save your information.
 
 ![Replication rule created](images/replication-rule-created.png){.thumbnail}
 
-To run manually a replication rule, select your replication rule and click on `Replicate` button.
+To run manually a replication rule, select your replication rule and click on the `Replicate`{.action} button.
 
 ![Replication rule](images/replicate-button.png){.thumbnail}
 
-Then, click on `Replicate`{.action} button to run the replication.
+Then click on `Replicate`{.action} to run the replication.
 
 ![Replication rule](images/are-you-sure.png){.thumbnail}
 
-You should see, in the `Executions` section, the status of the replication.
+You should be able to see the status of the replication in the `Executions` section.
 
-First your replication should be in `InProgress` status and then, after waiting several seconds, the status should change to `Succeeded`.
+First your replication should be in the status `InProgress` and then, after waiting several seconds, the status should change to `Succeeded`.
 
 ![Replication rule](images/execution-status.png){.thumbnail}
 ![Replication rule](images/execution-status-success.png){.thumbnail}
 
 > [!primary]
 >
-> If you run several times the same replications and you have Helm charts, the replication can fail the second time, but it will work.
+> If you run the same replications several times and you have Helm charts, the replication can fail the second time but it will work.
 
-Finally, you must reconfigure your Harbor instance (users, robot accounts, garbage collection, retention rules...).
-Once your registry is replicated, change both the Harbor URL and credentials in your CI/CD and deployment platform if not already done.
+Finally, you must reconfigure your Harbor instance (users, robot accounts, garbage collection, retention rules, etc.).
+Once your registry is replicated, change both the Harbor URL and the credentials in your CI/CD and deployment platform if not already done.
+
+## Go further
+
+To have an overview of OVHcloud Managed Private Registry service, you can consult the [OVHcloud Managed Private Registry site](https://docs.ovh.com/gb/en/private-registry/).
+
+Join our community of users on <https://community.ovh.com/en/>.
