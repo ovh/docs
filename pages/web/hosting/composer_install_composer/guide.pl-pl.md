@@ -7,15 +7,15 @@ order: 02
 updated: 2023-02-24
 ---
 
+**Ostatnia aktualizacja z dnia 24-02-2023**
+
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 24-02-2023**
-
 ## Wprowadzenie 
 
-[Composer](https://getcomposer.org/){.external} jest menedżerem zależności stworzonym dla języka PHP. Pozwala deweloperom PHP na umieszczanie w programach zewnętrznych bibliotek. "Komponowanie" umożliwiło projektom PHP uproszczenie dystrybucji bibliotek i utrzymania ich kodu. Poza tym, od momentu utworzenia tego narzędzia, w ramach społeczności PHP udostępniano liczne dobre praktyki rozwoju, które poprawiły biblioteki społeczności PHP. Te dobre praktyki są dokumentowane w formie [PSR](http://www.php-fig.org/){.external}.
+[Composer](https://getcomposer.org/){.external} jest menedżerem zależności stworzonym dla języka PHP. Pozwala deweloperom PHP na umieszczanie w programach zewnętrznych bibliotek. "Composer" umożliwiło projektom PHP ułatwienie dystrybucji bibliotek i utrzymania ich kodu. Poza tym, od momentu utworzenia tego narzędzia, w ramach społeczności PHP udostępniano liczne dobre praktyki rozwoju, które poprawiły biblioteki społeczności PHP. Te dobre praktyki są dokumentowane w formie [PSR](http://www.php-fig.org/){.external}.
 
 **Dowiedz się, jak zainstalować i zrobić pierwsze kroki z Composer**
 
@@ -31,13 +31,11 @@ updated: 2023-02-24
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external} z dostępem SSH
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-
 ## W praktyce
 
 Połącz się z hostingiem za pomocą SSH, korzystając z naszego przewodnika na temat [korzystanie z SSH przy pomocy hostingu www OVHcloud](https://docs.ovh.com/pl/hosting/hosting_www_ssh_na_hostingu/).
 
 Sprawdź, czy używasz kompatybilnej wersji PHP w wierszu poleceń:
-
 
 ```bash
 php —version
@@ -45,32 +43,27 @@ php —version
 
 Jeśli nie jest to prawidłowa wersja, możesz skonfigurować alias:
 
-
 ```bash
 alias php='/usr/local/php8.0/bin/php'
 ```
 
-Zalecamy pozostanie w katalogu głównym Twojego hostingu, aby nie udostępniać publicznie plików "Composer". Należy wpisać to polecenie:
-
+Zalecamy pobyt w katalogu głównym Twojego hostingu, aby nie udostępniać publicznie plików "Composer". Następnie wprowadź następującą komendę:
 
 ```bash
 curl -sS https://getcomposer.org/installer | php
 ```
 
-Gratulacje, "Composer" jest już dostępny na hostingu!
-
+"Composer" jest już dostępny na Twoim hostingu.
 
 ### Przykłady zastosowania
 
-Jeśli chcesz po prostu zainstalować Symfony 2, możesz na przykład uruchomić następujące polecenie:
-
+Jeśli chcesz zainstalować **Symfony 2**, możesz na przykład uruchomić następujące polecenie:
 
 ```bash
 php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7.*"
 ```
 
-Możesz również korzystać z API OVHcloud z poziomu Twojego hostingu za pomocą oficjalnej werappera. W tym celu wystarczy dodać plik o nazwie composer.json, który zawiera listę zależności, których potrzebujesz. Oto przykład tego pliku za pomocą wrappera API OVHcloud:
-
+Możesz również korzystać z API OVHcloud z Twojego hostingu za pomocą oficjalnej werappera. W tym celu dodaj plik o nazwie *composer.json* zawierający listę zależności, których potrzebujesz. Oto przykład tego pliku za pomocą wrappera API OVHcloud:
 
 ```json
 1. {
@@ -82,15 +75,13 @@ Możesz również korzystać z API OVHcloud z poziomu Twojego hostingu za pomoc�
 7. }
 ```
 
-Aby zainstalować domenę, wystarczy uruchomić następujące polecenie w tym samym katalogu:
-
+Aby go zainstalować, wprowadź następującą komendę do tego samego katalogu:
 
 ```bash
 php composer.phar install
 ```
 
-Aby korzystać z tej biblioteki, zapoznaj się z dokumentacją oraz kodem dostępnymi na [github](https://github.com/ovh/php-ovh){.external}
-
+Aby korzystać z tej biblioteki, zapoznaj się z dokumentacją oraz kodem dostępnym na stronie [GitHub](https://github.com/ovh/php-ovh){.external}
 
 ## Sprawdź również <a name="go-further"></a>
 
