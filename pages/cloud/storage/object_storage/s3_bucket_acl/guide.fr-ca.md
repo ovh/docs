@@ -1,81 +1,81 @@
 ---
 title: Bucket ACL
 slug: s3/bucket-acl
-section: Tutorials
+section: Tutoriels
 order: 150
-updated: 2023-03-01
+updated: 2023-03-09
 ---
 
-**Last updated on 1st March 2023**
+**Dernière mise à jour le 09/03/2023**
 
-## Aperçu
+## Objectif
 
-Par défaut, toutes les ressources (buckets, objets) et les sous-ressources (configuration de cycle de vue, configuration de site web, ...etc) sont privées dans OVH Stockage Objet S3. Seul le propriétaire de la ressource càd l'utilisateur du compte qui la créée a le contrôle total dessus.
+Par défaut, toutes les ressources (buckets, objets) et les sous-ressources (configuration de cycle de vue, configuration de site web, ...etc) sont privées dans l'Object Storage S3 OVHcloud. Seul le propriétaire de la ressource, c'est à dire l'utilisateur du compte qui la crée, a le contrôle total dessus.
 
 L'accès aux ressources privées peut être donné via les politiques d'accès.
 
-Les politiques d'accès peuvent être catégorisées en 2 types:
+Les politiques d'accès peuvent être catégorisées en 2 types :
 
-- politique basée sur l'utilisateur
-- politique basée sur la ressource : les politiques de bucket et les ACLs sont des politiques d'accès qui sont attachées directement à une ressource spécifique
+- politique basée sur l'utilisateur ;
+- politique basée sur la ressource : les politiques de bucket et les ACLs sont des politiques d'accès qui sont attachées directement à une ressource spécifique.
 
 ### Politique basée sur l'utilisateur
 
-Les politiques d'accès attachées à un utilisateur spécifique sont appelées politiques utilisateur (user policies). Une politique d'utilisateur est évaluée en se basant sur les permissions définies au niveau de la solution de gestion d'identité (IAM) du produit OVH Stockage Objet S3 et s'applique seulement à l'utilisateur spécifique auquel elle est attachée.
+Les politiques d'accès attachées à un utilisateur spécifique sont appelées politiques utilisateur (*user policies*). Une politique d'utilisateur est évaluée en se basant sur les permissions définies au niveau de la solution de gestion d'identité (IAM) du produit Object Storage S3 OVHcloud et s'applique seulement à l'utilisateur spécifique auquel elle est attachée.
 
 ### Politique basée sur la ressource
 
 #### ACL
 
-Une liste ACL est une liste qui identifie des utilisateurs et les permissions qui leur sont accordées. Les ACLs sont typiquement utilisées pour accorder des permissions basiques de lecture/écriture à d'autres comptes.
+Une ACL est une liste qui identifie des utilisateurs et les permissions qui leur sont accordées. Les ACLs sont typiquement utilisées pour accorder des permissions basiques de lecture/écriture à d'autres comptes.
 
 Les ACLs peuvent être soit attachées au niveau du bucket, soit au niveau des objets.
 
-Il est à noter que malgré le fait ques ACLs constituent la méthode historique de gestion des permissions, elles sont encore valables et non dépréciées. Cependant, selon la situation, il peut être préférable d'utiliser des politiques utilisateur ou de bucket pour avoir une gestion plus fine des droits.
+Il est à noter que malgré le fait que less ACLs constituent la méthode historique de gestion des permissions, elles sont encore valables et non dépréciées. Cependant, selon la situation, il peut être préférable d'utiliser des politiques utilisateur ou de bucket pour avoir une gestion plus fine des droits.
 
 #### Politique de bucket
 
-A l'instar des politiques utilisateur, une politique de bucket contrôle les permissions pour une bucket donné et les objets contenus dedans. La différence étant que les politiques utilisateur contrôlent les permissions d'un utilisateur spécifique à une liste de ressources, une politique de bucket contrôle les permissions sur un bucket spécifique et ses objets pour une liste d'utilisateurs.
+A l'instar des politiques utilisateur, une politique de bucket contrôle les permissions pour une bucket donné et les objets contenus dedans. La différence étant que les politiques utilisateur contrôlent les permissions d'un utilisateur spécifique à une liste de ressources, tandis qu'une politique de bucket contrôle les permissions sur un bucket spécifique et ses objets pour une liste d'utilisateurs.
 
 ![policies](images/s3_bucket_acl-20230228171656561.png)
 
 > [!warning]
 >
-> Les politiques de bucket sont une fonctionnalité qui n'est pas encore disponible sur OVH Object Storage S3
+> Les politiques de bucket sont une fonctionnalité qui n'est pas encore disponible sur la solution Object Storage S3 OVHcloud.
 >
 
 ## Gérer les permissions avec les ACLs
 
 ### Bénéficiaires gérés
 
-OVHCloud Stockage Objet gère 2 types de bénéficiaires:
+La solution Object Storage S3 OVHcloud gère 2 types de bénéficiaires :
 
-- les utilisateurs d'un projet public cloud
-- les groupes d'utilisateurs prédéfinis par OVHCloud
+- les utilisateurs d'un projet Public Cloud ;
+- les groupes d'utilisateurs prédéfinis.
 
-#### Projets Public cloud
+#### Projets Public Cloud
 
-Les utilisateurs d'un projet Public cloud sont identifiés par un identifiant canonique (canonical user id). Quand on accorde des droits d'accès, l'identifiant canonique est spécifié par *id=<valeur>* où *<valeur>* est défini par "*<nom-du-projet>:<nom-utilisateur>*".
+Les utilisateurs d'un projet Public Cloud sont identifiés par un identifiant canonique (canonical user id). Quand on accorde des droits d'accès, l'identifiant canonique est spécifié par `id=<valeur>` où `<valeur>` est défini par `<nom-du-projet>:<nom-utilisateur>`.
 
-Example: si vous avez un projet Public cloud appelé "*my\_project*" et que vous y avez créé un utilisateur appelé "*storage-user*" alors vous obtenez *id=my\_project:storage-user*
+Exemple: si vous avez un projet Public Cloud appelé `my_project` et que vous y avez créé un utilisateur appelé `storage-user`, alors vous obtenez `id=my_project:storage-user`.
 
-#### Groupes OVHCloud prédéfinis
+#### Groupes prédéfinis
 
-Les groupes d'utilisateurs prédéfinis sont les suivants et sont identifiés par une uri:
+Les groupes d'utilisateurs prédéfinis sont les suivants et sont identifiés par une URI:
 
-- **log delivery group**: ce groupe contient les utilisateurs applicatifs utilisés par les services d'OVHCloud pour écrire les journaux d'accès aux serveurs dans les buckets
+- **log delivery group** : ce groupe contient les utilisateurs applicatifs utilisés par les services d'OVHcloud pour écrire les journaux d'accès aux serveurs dans les buckets (voir [Server Access Logging](https://docs.ovh.com/ca/fr/storage/object-storage/s3/server-access-logging/)).
 
 ```console
 http://acs.amazonaws.com/groups/s3/LogDelivery
 ```
 
-- **authenticated users group**: ce groupe contient tous les utilisateurs de tous les projets Public cloud qui sont authentifiés
+- **authenticated users group** : ce groupe contient tous les utilisateurs de tous les projets Public Cloud qui sont authentifiés.
 
 ```console
 http://acs.amazonaws.com/groups/global/AuthenticatedUsers
 ```
 
-- **all users group**: ce groupe contient tous les utilisateurs du monde entier et est équivalent aux utilisateurs anonymes
+- **all users group** : ce groupe contient tous les utilisateurs du monde entier et est équivalent aux utilisateurs anonymes.
 
 ```console
 http://acs.amazonaws.com/groups/global/AllUsers
@@ -101,17 +101,17 @@ Les ACLs prédéfinies sont composées d'un ensemble d'utilisateurs et de permis
 | --- | --- | --- | --- | --- |
 | private | comportement par défaut, le propriétaire de la ressource a la permission FULL_CONTROL | x | x |  |
 | public-read | le propriétaire de la ressource a la permission FULL_CONTROL<br>le groupe AllUsers a la permission READ | x | x |  |
-| public-read-write | le propriétaire de la ressource a la permission FULL_CONTROL<br>le group AllUsers a la permission READ, WRITE | x | x |  |
+| public-read-write | le propriétaire de la ressource a la permission FULL_CONTROL<br>le groupe AllUsers a la permission READ, WRITE | x | x |  |
 | authenticated-read | le propriétaire de la ressource a la permission FULL_CONTROL<br>le groupe AuthenticatedUsers a la permission READ | x | x |  |
-| bucket-owner-read | le propriétaire de l'object a la permission FULL_CONTROL<br>le propriétaire du bucket a la permission READ |    | x | currently not managed yet |
-| bucket-owner-full-control | le propriétaire de l'object et le propriétaire du bucket ont tous les 2 la permission FULL_CONTROL  |  | x | currently not managed yet |
+| bucket-owner-read | le propriétaire de l'object a la permission FULL_CONTROL<br>le propriétaire du bucket a la permission READ |    | x | indisponible pour le moment |
+| bucket-owner-full-control | le propriétaire de l'object et le propriétaire du bucket ont tous les 2 la permission FULL_CONTROL  |  | x | indisponible pour le moment |
 | log-delivery-write | le groupe LogDelivery a les permissions WRITE, READ_ACP | x |  |  |
 
 ### En pratique
 
 #### Configurer les ACLs sur un bucket
 
-Vous pouvez configurer les ACLS sur un bucket à la création de celui-ci ou après la création en appelant le endpoint put-bucket-acl.
+Vous pouvez configurer les ACLS sur un bucket à la création de celui-ci ou après la création en appelant la commande `put-bucket-acl`.
 
 Exemple:
 
@@ -121,11 +121,12 @@ $ aws s3api create-bucket --bucket my-bucket --region gra --acl public-read
 
 Dans cet exemple, nous avons créé un bucket appelé "my-bucket" qui utilise l'ACL prédéfinie "public-read".
 
-Pour vérifier que les ACLs ont été correctement configurées, vous pouvez utiliser la commande suivante qui retourne l'ACL:
+Pour vérifier que les ACLs ont été correctement configurées, vous pouvez utiliser la commande suivante qui retourne l'ACL :
 
 ```bash
 $ aws s3api get-bucket-acl --bucket my-bucket
 ```
+
 ```json
 {
     "Owner": {
@@ -152,7 +153,7 @@ $ aws s3api get-bucket-acl --bucket my-bucket
 }
 ```
 
-Pour changer les ACLs, vous pouvez appeler le endpoint put-bucket-acl en utilisant le client en ligne de commande AWS:
+Pour changer les ACLs, vous pouvez appeler la commande `put-bucket-acl` en utilisant le client en ligne de commande AWS :
 
 ```bash
 $ aws s3api put-bucket-acl --bucket acl-bucket --grant-write id=po-training:user-yyyyyyyyyy
@@ -160,11 +161,12 @@ $ aws s3api put-bucket-acl --bucket acl-bucket --grant-write id=po-training:user
 
 Ici, nous avons changé l'ACL pour donner à l'utilisateur "user-yyyyyyyyyy" la permission d'écrire dans le bucket.
 
-A nouveau, pour vérifier que les ACLs sont correctement configurées:
+A nouveau, pour vérifier que les ACLs sont correctement configurées :
 
 ```bash
 $ aws s3api get-bucket-acl --bucket my-bucket
 ```
+
 ```json
 {
     "Owner": {
@@ -186,7 +188,7 @@ $ aws s3api get-bucket-acl --bucket my-bucket
 
 #### Configurer les ACLs sur un objet
 
-Tout comme au niveau du bucket, vous pouvez configurer les ACLs sur un objet individuel à la création de celui-ci ou après.
+Tout comme au niveau du bucket, vous pouvez configurer les ACLs sur un objet individuel à la création de celui-ci ou après sa création.
 
 Exemple:
 
@@ -197,10 +199,9 @@ $ aws s3api put-object --bucket my-bucket --body file.txt --key file --grant-ful
 Dans cet exemple, nous avons créé un objet nommé "file" et nous avons accordé à l'utilisateur "user-yyyyyyyyyy" la permission "FULL_CONTROL" dessus.
 
 
-
 ## Bonnes pratiques
 
-### Quand utiliser les ACLs
+### Quand utiliser les ACLs ?
 
 #### Au niveau de l'objet
 
@@ -208,19 +209,20 @@ Comme mentionné précédemment, les ACLs peuvent être attachées au niveau de 
 
 Vous pouvez considérer les scénarios suivants pour utiliser les ACLs d'objet:
 
-- le propriétaire du bucket et le propriétaire de l'objet ne sont pas les mêmes : dans un scénario où le propriétaire du bucket a accordé à un autre compte le droit d'écrire des objets à l'intérieur du seau, l'accès à ces objets doit être accordé par des ACLs
-- les permissions varient d'un objet individuel à l'autre
+- le propriétaire du bucket et le propriétaire de l'objet ne sont pas les mêmes : dans un scénario où le propriétaire du bucket a accordé à un autre compte le droit d'écrire des objets à l'intérieur du bucket, l'accès à ces objets doit être accordé par des ACLs ;
+- les permissions varient d'un objet individuel à l'autre ;
 
 #### Au niveau du bucket
-Pour des besoins très basiques de contrôle des permissions, vous pouvez envisager d'utiliser les ACLs du bucket pour accorder des permissions sur kes ressources liées à ce bucket.
+
+Pour des besoins très basiques de contrôle des permissions, vous pouvez envisager d'utiliser les ACLs du bucket pour accorder des permissions sur les ressources liées à ce bucket.
 
 Cependant, nous vous conseillons vivement d'utiliser plutôt des politiques pour un contrôle d'accès plus fin et de meilleure qualité sur le bucket et ses objets.
 
-### Quand utiliser les politiques de bucket
+### Quand utiliser les politiques de bucket ?
 
 Vous pouvez envisager d'utiliser des politiques de bucket si vous souhaitez définir des autorisations **inter-comptes** sur les ressources liées à un bucket spécifique.
 
-### Quand utiliser les politiques d'utilisateur
+### Quand utiliser les politiques d'utilisateur ?
 
 Vous pouvez envisager d'utiliser des politiques utilisateur si vous souhaitez définir des autorisations **inter-ressources** pour un compte spécifique.
 
@@ -228,9 +230,8 @@ Vous pouvez envisager d'utiliser des politiques utilisateur si vous souhaitez d�
 >
 > **Important**
 >
-> Les ACLs et les politiques peuvent être combinées, mais le principe du moindre privilège sera toujours appliqué, ce qui peut être résumé comme suit : **"autoriser uniquement s'il existe une autorisation explicite et aucun refus explicite, sinon, refuser tout".**
+> Les ACLs et les politiques peuvent être combinées mais le principe du moindre privilège sera toujours appliqué, ce qui peut être résumé comme suit : **"autoriser uniquement s'il existe une autorisation explicite et aucun refus explicite. Sinon, refuser tout".**
 >
-
 
 ## Aller plus loin
 
