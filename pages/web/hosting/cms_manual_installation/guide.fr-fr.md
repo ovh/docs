@@ -42,37 +42,37 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 ## En pratique
 
-### Présentation des CMS :
+### Présentation des CMS
 
 Pour vous aider à choisir votre CMS, découvrez ci-après un bref descriptif pour chacun des 4 CMS évoqués ci-dessus.
 
-#### WordPress :
+#### WordPress
 
-**WordPress** est généralement utilisé pour créer un site web ou un blog. Il est basé sur la technologie PHP et comporte une gamme variée d’outils y compris un correcteur orthographique et des plugins pour l'e-commerce, le SEO ou encore la sécurité de votre site web.
+**WordPress** est généralement utilisé pour créer un site web ou un blog. Il est basé sur la technologie PHP et comporte une gamme variée d’outils comme un correcteur orthographique et des plugins pour l'e-commerce, le SEO ou encore la sécurité de votre site web.
 
 Retrouvez plus d'informations sur notre page relative au [module WordPress](https://www.ovhcloud.com/fr/web-hosting/uc-wordpress-website/)
 
 - Site officiel de [WordPress](https://https://wordpress.com/){.external}
 
-#### Joomla! :
+#### Joomla!
 
 **Joomla!** est un CMS qui permet de créer des sites et des applications web performantes.
 
-La communauté **Joomla!** est très grande et peut fournir de l’assistance et des services dans tous les domaines ayant trait à ce CMS (aide, documentation, assistance technique, thèmes, etc.)
+La communauté **Joomla!** est très grande et peut fournir de l’assistance et des services dans tous les domaines concernant ce CMS (aide, documentation, assistance technique, thèmes, etc.)
 
 Retrouvez plus d'informations sur notre page relative au [module Joomla!](https://www.ovhcloud.com/fr/web-hosting/uc-joomla-website/)
 
 - Site officiel de [Joomla!](https://www.joomla.org/){.external}
 
-#### Drupal :
+#### Drupal
 
-**Drupal** est une plate-forme open source gratuite sous PHP créée en 2000. **Drupal** permet de créer rapidement des sites web dynamiques.
+**Drupal** est une plateforme open source gratuite sous PHP créée en 2000. **Drupal** permet de créer rapidement des sites web dynamiques.
 
 Retrouvez plus d'informations sur notre page relative au [module Drupal](https://www.ovhcloud.com/fr/web-hosting/uc-drupal-website/)
 
 - Site officiel de [Drupal](https://www.drupal.org/){.external}
 
-#### PrestaShop :
+#### PrestaShop
 
 CMS créé en 2005 et dédié à la réalisation de sites web E-commerce. En dehors des fonctionnalités courantes des boutiques en ligne, le logiciel peut également être personnalisé avec des modules, des thèmes et des modèles. 
 
@@ -93,7 +93,7 @@ Pour installer un CMS sur votre offre d'[hébergement web](https://www.ovhcloud.
 
 Le « dossier racine » correspond au répertoire dans lequel votre futur CMS sera installé dans votre hébergement. Il est recommandé de choisir un répertoire vide pour éviter les conflits avec vos autres potentiels multisites.
 
-Consultez notre documentation qui décrit [comment ajouter un multisite sur son hébergement web](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/), pour définir le dossier racine à utiliser avec votre CMS.
+Consultez notre documentation qui décrit [comment ajouter un multisite sur son hébergement web](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) pour définir le dossier racine à utiliser avec votre CMS.
 
 > [!primary]
 >
@@ -130,7 +130,7 @@ Retrouvez le lien de téléchargement gratuit ainsi qu'un tutoriel sur son utili
 
 #### 1.4 - Préparer une base de données <a name="step1-4"></a>
 
-Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) en contiennent, à l'execption de [l'hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/).
+Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) en contiennent, à l'exception de [l'hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/).
 
 Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
@@ -202,7 +202,7 @@ Ci-dessous, un exemple avec le CMS *WordPress*:
 
 >[!warning]
 >
-> Nous vous recommandons vivement d'utiliser un « dossier racine » vide afin d'éviter tout conflit avec un autre site. Vérifiez que le dossier de destination ne contient aucun élément avant de déplacer les fichiers.
+> Nous vous recommandons vivement d'utiliser un « dossier racine » vide afin d'éviter tout conflit avec un autre de vos sites web. Vérifiez que le dossier de destination ne contient aucun élément avant de déplacer les fichiers.
 >
 
 >[!primary]
