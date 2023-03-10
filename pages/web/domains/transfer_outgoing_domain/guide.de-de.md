@@ -51,10 +51,10 @@ Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Regis
 >
 > Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
 >
-> - die Webseite der zuständigen TLD-Registry
-> - die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
+> - Die Webseite der zuständigen TLD-Registry
+> - Die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
 > - [Erläuterungen der ICANN zu den EPP-Statuscodes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (um herauszufinden, welche Statuscodes derzeit für Ihre Domain gelten, führen Sie eine *Whois*-Suche aus, vorzugsweise unter Verwendung der Webseite der entsprechenden TLD-Registry)
-> - die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
+> - Die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
 >
 
 ### Schritt 1: Transfer-Schutz der Domain aufheben
@@ -80,7 +80,7 @@ Sie können auch die Seite aktualisieren, falls zu lange keine Änderung eintrit
 
 > [!warning]
 >
-> Beachten Sie, dass es immer möglich ist, den Transfercode Ihres Domainnamens nach Ablauf zu entsperren und wiederherzustellen. Gemäß den Registrierungsregeln muss eine Domain in [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) möglicherweise wiederhergestellt werden, um übertragen zu werden. Wenden Sie sich an Ihren neuen Registrar, um Details zur Übertragung zu erhalten.
+> Beachten Sie, dass es möglich ist, den Transfercode auch nach dem Ablaufdatum Ihres Domainnamens abzurufen. Gemäß den Registry-Regeln muss eine Domain im Status [*redemptionPeriod*](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) unter Umständen wiederhergestellt werden, um übertragen zu werden. Wenden Sie sich an Ihren neuen Registrar, um Details zum individuellen Transferprozess zu erhalten.
 >
 
 Sobald sich der Status der Domain auf `Deaktiviert`{.action} aktualisiert, erscheint unter `Transfer-Schutz` der Link `AUTH/INFO`{.action}. Klicken Sie darauf, um ein Fenster zu öffnen, in dem Ihr AUTH/INFO-Code angezeigt wird (auch als Transferschlüssel, Domainpasswort, AUTH-CODE oder EPP-Code bezeichnet).
