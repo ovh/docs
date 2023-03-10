@@ -89,7 +89,7 @@ Here are a few explanations of the lines:
 
 We now have the confirmation that our API is up and running, let's try to load test it. 
 
-We will simply simulate several curl command. With the tool locust, we can simulate several users and define a number of calls to the API we want per minute. This can be easily done with the locust's interface. But before use this interface, we need to launch the locust and configure the tool. This can be easily done with python. Let's do this !
+We will simply simulate several curl command. With the tool locust, we can simulate several users and define a number of calls per minute to the API. This can be easily done with the locust's interface. But before using this interface, we need to launch the locust and configure the tool. This can be easily done with python. Let's do this !
 
 ### Install locust.io
 
