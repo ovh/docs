@@ -83,7 +83,7 @@ Here are a few explanations of the lines:
  
 - In the first line, we specify that we will use a post method. 
 - We specify the url where the post request will be executed. The `api_url` is the url of your API. It should look something like this: `https://baac2c13-2e69-4d0f-ae6b-dg9eff9be513.app.gra.ai.cloud.ovh.net/`. 
-- We put the token to access our API, generated via our control panel or `ovhai` CLI. We specify it in the header of the request. 
+- We put the token to access our API, generated via our control panel or `ovhai` CLI. We specify it in the header of the request. If you want to know more about generation and utilisation of tokens, you can follow this [tutorial](https://docs.ovh.com/fr/publiccloud/ai/deploy/tokens/). 
 - We specify that our body is in a JSON format.
 - We put in our body the message we want to send to the spam classifier. In your case, the body could be different because it depends of the API. And we hope the spam classifier will send us the probability of each response. The last `| jq` instruction allow us to have a good display of the result in the terminal. 
 
