@@ -199,7 +199,7 @@ Also, we can see an increasing call latency over time. At the end, we can expect
 
 Result interpretation may depend of your needs and performance criterias. We can of course make a new test with more users to see the limits of our APIs, and put several tasks in the `locustfile.py`. 
 
-One thing cannot be seen here: OVHcloud backend scaling. We deployed our app with autoscaling, from 1 replica minimum to 3 replicas maximum.
+One thing cannot be seen here: OVHcloud backend scaling. We deployed our app with autoscaling, from 1 replica minimum to 5 replicas maximum.
 Did we use them ? Were they useful and at maximum capacity?
 
 Let's see the same results in details with the AI Deploy monitoring tool.
