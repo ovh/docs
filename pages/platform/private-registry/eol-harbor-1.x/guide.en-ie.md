@@ -1,13 +1,13 @@
 ---
-title: "End Of Life (EOL) Harbor 1.10 - How to replicate and migrate your data to Harbor 2.x"
-excerpt: "Find out how to replicate an old private registry (in Harbor 1.1x) to a recent OVHcloud Managed Private Registry (in Harbor 2.x)"
-slug: eol-harbor-v110
+title: "End Of Life (EOL) Harbor 1.x - How to replicate and migrate your data to Harbor 2.x"
+excerpt: "Find out how to replicate an old private registry (in Harbor 1.x) to a recent OVHcloud Managed Private Registry (in Harbor 2.x)"
+slug: eol-harbor-v1x
 section: "Getting started"
 order: 06
-updated: 2023-03-09
+updated: 2023-03-10
 ---
 
-**Last updated 09th March, 2023.**
+**Last updated 10th March, 2023.**
 
 <style>
  pre {
@@ -41,11 +41,11 @@ The Managed Private Registries based on Harbor 1.x will terminate on August 1st 
 
 ## Instructions
 
-First, follow the guide [Creating a private registry](https://docs.ovh.com/gb/en/private-registry/creating-a-private-registry/) to create a new private registry named `my-new-registry` for example, with the latest version of Harbor.
+First, follow the guide [Creating a private registry](https://docs.ovh.com/ie/en/private-registry/creating-a-private-registry/) to create a new private registry named `my-new-registry` for example, with the latest version of Harbor.
 
 ![My new private registry](images/my-new-registry-02.png)
 
-Follow the guide [Connecting to the UI](https://docs.ovh.com/gb/en/private-registry/connecting-to-the-ui/) to connect to your new private registry. 
+Follow the guide [Connecting to the UI](https://docs.ovh.com/ie/en/private-registry/connecting-to-the-ui/) to connect to your new private registry. 
 
 Now you will configure a replication between your old private registry (in Harbor 1.x) and the new one.
 
@@ -88,9 +88,11 @@ Now fill the form with the following information:
 
 > [!primary]
 >
-> **Manual**: Replicate the resources manually when needed. Note: Deletion operations are not replicated.
+> **Manual**: Replicate the resources manually when needed.
 >
-> **Scheduled**: Replicate the resources periodically by defining a cron job. Note: Deletion operations are not replicated.
+> **Scheduled**: Replicate the resources periodically by defining a cron job.
+>
+> Note: In both cases, deletion operations are not replicated.
 
 ![New replicaton rule](images/new-replication-rule.png){.thumbnail}
 
@@ -108,7 +110,7 @@ Then click on `Replicate`{.action} to run the replication.
 
 You should be able to see the status of the replication in the `Executions` section.
 
-First your replication should be in the status `InProgress` and then, after waiting several seconds, the status should change to `Succeeded`.
+First your replication should be in the status `InProgress` and then, after waiting a moment (depending on the size of the data to replicate), the status should change to `Succeeded`.
 
 ![Replication rule](images/execution-status.png){.thumbnail}
 ![Replication rule](images/execution-status-success.png){.thumbnail}
@@ -122,6 +124,6 @@ Once your registry is replicated, change both the Harbor URL and the credentials
 
 ## Go further
 
-To have an overview of OVHcloud Managed Private Registry service, you can consult the [OVHcloud Managed Private Registry site](https://docs.ovh.com/gb/en/private-registry/).
+To have an overview of OVHcloud Managed Private Registry service, you can consult the [OVHcloud Managed Private Registry site](https://docs.ovh.com/ie/en/private-registry/).
 
 Join our community of users on <https://community.ovh.com/en/>.
