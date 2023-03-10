@@ -234,7 +234,7 @@ That's it ! On the URL of this app, you can speak to your chatbot ! Try to have 
 
 Here is an example of a discussion with the chatbot : 
 
-![image](images/conversation.png){.thumbnail}
+![image](images/result.jpg){.thumbnail}
 
 
 ## Go further
