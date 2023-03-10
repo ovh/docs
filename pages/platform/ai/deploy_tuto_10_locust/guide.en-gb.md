@@ -13,7 +13,7 @@ order: 10
 The aim of this tutorial is to load test your deployed applications, by gradually query your APIs  with a load testing tool.
 Usually, your challenge is to forecast your compute needs, for example how many CPUs or GPUs will be required for 1000 API calls per hour and acceptable latency.
 
-There are several applications who simulate an amount of users and a amount of requests that you want to simulate. 
+There are several applications to simulate an amount of users and an amount of requests that you want to simulate. 
 
 In this tutorial, we will use one of them and interpret the results.
 
