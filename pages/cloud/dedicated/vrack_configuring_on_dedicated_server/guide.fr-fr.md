@@ -214,4 +214,6 @@ Répétez cette procédure pour vos autres serveurs et attribuez à chacun d'ent
 
 ## Aller plus loin
 
+[Créer plusieurs VLAN dans le vRack](https://docs.ovh.com/fr/dedicated/creer-vlan-vrack/).
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
