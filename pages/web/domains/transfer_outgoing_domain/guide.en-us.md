@@ -4,10 +4,10 @@ slug: outgoing-transfer-of-generic-or-geographical-domain-name
 excerpt: Find out how to move a domain name from OVHcloud to a provider of your choice
 section: Transfer
 order: 04
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
-**Last updated 9th December 2022**
+**Last updated 10th March 2023**
 
 ## Objective
 

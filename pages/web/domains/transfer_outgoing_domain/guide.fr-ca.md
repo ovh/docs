@@ -4,10 +4,10 @@ slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 04
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
-**Dernière mise à jour le 09/12/2022**
+**Dernière mise à jour le 10/03/2023**
 
 ## Objectif
 

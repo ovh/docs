@@ -4,14 +4,14 @@ excerpt: Saiba como transferir um domínio da OVHcloud para o agente de registo 
 slug: transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico
 section: Transferência
 order: 04
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 09/12/2022**
+**Última atualização: 10/03/2023**
 
 ## Objetivo
 
