@@ -103,7 +103,7 @@ You can install it on your personal computer, but keep in mind that load testing
 - Enough compute (CPU).
 - Enough memory (RAM).
 - Low latency connectivity to your API.
-- no "noisy neighbors", meaning no software installed that can compromises your results. imagine your CPU power getting used by video rendering, it will biases your results.
+- no "noisy neighbors", meaning no software installed that can compromise your results. imagine your CPU power getting used by video rendering, it will biases your results.
 
 For all these reasons, a **Cloud instance is recommended**, such as a medium-sized virtual machine. For this tutorial, we will take an OVHcloud instance B2-30.
 
