@@ -166,7 +166,7 @@ class HelloWorldUser(HttpUser):
 
 For your own needs, you will have to change the path, the headers and the body because these are parameters who change from one API to another. 
 
-Once your `locustfile.py` is ready, open the Locust web interface on `<http://you_IP:8089>`. 
+Once your `locustfile.py` is ready, open the Locust web interface on `<http://your_IP:8089>`. 
 
 Web interface should look as below:
 
