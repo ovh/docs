@@ -228,7 +228,7 @@ We can see that our app has scaled few times hasn't reach maximum capacity usage
 
 Here we see that the latency has increased gradually, since we have a spawn rate of two new user per second. API latency was stable with approximately 750ms then peaked to 1.5s. 
 
-Again, interpretation will depends of your needs. Do we need to provide more CPU because the latency is too high ? This question will vary depending of your customers needs. For an anti-spam, adding 1 second it quite big for a company receiving thousands of mails per day, not so disturbing if it's a dozen per day. Let's now take a look at the scaling of our application:
+Again, interpretation will depends on your needs. Do we need to provide more CPU because the latency is too high ? This question will vary depending on your customers need. For an anti-spam, adding 1 second is quite big for a company receiving thousands of mails per day, not so disturbing if it's a dozen per day. Let's now take a look at the scaling of our application:
  
 ![image](images/scaling_spam.png){.thumbnail}
 
