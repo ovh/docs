@@ -36,7 +36,7 @@ ovhai token create -l model=rasabotRW --role operator token-RW-chatbot
 
 Token is now created. Don't forget to save the token to use it later.
 
-Now, if you already have train some models with AI Training by following the tutorial ([Train with AI Training](https://confluence.ovhcloud.tools/x/BIaBDw)), you can skip the next part and go directly [here](#launch-an-ai-notebook).
+Now, if you already have train some rasa models with AI Training by following the tutorial ([Train with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/)), you already have a container with your trained models. You can skip the next part and go directly [here](#Create-and-train-a-chatbot-with-a-jupyter-notebook).
 
 ### Understand storage concepts
 
@@ -47,7 +47,7 @@ For the chatbot, we will create one object storage bucket. This bucket will be f
 
 Now, let's start to create and train our chatbot. To do this, clone the [repo git](https://github.com/ovh/ai-training-examples) and go directly in the folder `notebooks/natural-language-processing/conversational/miniconda/rasa-chatbot/`. Now, let's run the Jupyter notebook !
 
-#### Create and train a chatbot with a Jupyter notebook
+### Create and train a chatbot with a Jupyter notebook
 
  In order to do it you will need to create a Jupyter notebook. You can attach one volume if you want to save the model created. 
 Don't forget to put the model inside the folder `trained-models` before stopping your notebook. Here is the command to run: 
