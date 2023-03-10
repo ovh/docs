@@ -10,9 +10,9 @@ order: 10
 
 ## Objective
 
-The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebook. We will create and train the chatbot with a vscode notebook. We will also propose you to train a chatbot in a jupyter notebook. This notebook has data which is more advanced than a simple chatbot. There is an another tutorial where you can train your chatbot with the tool `AI Training`. Here is the link [how to train a chatbot with AI Training](https://confluence.ovhcloud.tools/display/~victor.vitcheff@corp.ovh.com/Part+2+Train+a+chatbot+with+AI+Training).
+The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebook. We will create and train the chatbot with a vscode notebook. At the end of the tutorial, we will have a model and we can speak to our chatbot. There is an another tutorial where you can train your chatbot with the tool `AI Training`. Here is the link [how to train a chatbot with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/).
 
-We will use the famous open source framework [Rasa](https://rasa.community/) to build the chatbot. The framework [chatette](https://github.com/SimGus/Chatette) has been used to generate some data for rasa in the vscode notebook. 
+We will use the famous open source framework [Rasa](https://rasa.community/) to build the chatbot. 
 
 
 **Requirements**
@@ -36,7 +36,7 @@ ovhai token create -l model=rasabotRW --role operator token-RW-chatbot
 
 Token is now created. Don't forget to save the token to use it later.
 
-Now, if you already have train some rasa models with AI Training by following the tutorial ([Train with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/)), you already have a container with your trained models. You can skip the next part and go directly [here](#Create-and-train-a-chatbot-with-a-jupyter-notebook).
+Now, if you already have train some rasa models with AI Training by following the tutorial ([Train with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/)), you already have a container with your trained models. You can skip the next part and go directly [here](#Create-and-train-a-chatbot-with-a-visual-studio-code-notebook).
 
 ### Understand storage concepts
 
@@ -45,33 +45,55 @@ If you want to know more about data storage concept please fill free to check th
 
 For the chatbot, we will create one object storage bucket. This bucket will be filled over time by our trained model output. The container where the model will be saved don't have to be created. When we will launch our notebook, the container will be automatically created. 
 
-Now, let's start to create and train our chatbot. To do this, clone the [repo git](https://github.com/ovh/ai-training-examples) and go directly in the folder `notebooks/natural-language-processing/conversational/miniconda/rasa-chatbot/`. Now, let's run the Jupyter notebook !
+Now, let's start to create and train our chatbot.
 
-### Create and train a chatbot with a Jupyter notebook
+### Create and train a chatbot with a Visual Studio Code notebook
 
- In order to do it you will need to create a Jupyter notebook. You can attach one volume if you want to save the model created. 
-Don't forget to put the model inside the folder `trained-models` before stopping your notebook. Here is the command to run: 
+ In order to do it you will need to create a vscode notebook. You can attach one volume if you want to save the model created. 
+Don't forget to put the model inside the folder `trained-models` before stopping your notebook. By doing this, your model will be save in your object container even if you delete your notebook. Here is the command to run: 
 
-```bash
-ovhai notebook run conda jupyterlab \
---name jupyter-ovh-chatbot \
+
+``` console
+ovhai notebook run conda vscode \
+--name vscode-ovh-chatbot \
 --framework-version conda-py39-cuda11.2-v22-4 \
---volume <model-output-container>@GRA/:/workspace/trained-models:RW \
+--volume <model-output-container>@GRA:/workspace/trained-models:RW \
 --cpu 10 \
 --token <token> \
+--label model=rasabotRO \
+-s ~/.ssh/id_rsa.pub
 ```
 
-In this notebook I propose to you to create from scratch the chatbot, train it and speak with him. To do this, you will just have to run all the cells in the jupyter notebook. But for this, don't forget to copy the jupyter notebook in the folder `ai-training-examples/notebooks/natural-language-processing/conversational/miniconda/rasa-chatbot/` at the root of your notebook (`workspace`). 
+Few explanations here, line by line:
+- It will launch a notebook with the Python Conda framework an VScode editor.
+- With the name "vscode-ovh-chatbot".
+- We specify a version for the conda framework (Python 3.9). 
+- we attach 1 data volume to the notebook, as explained previously.
+- We request 10 CPUs. The more we add, the more performant it is (but more expensive).
+- we add the token previously created.
+- We labelize this notebook with label "rasabotRO".
+- Optional : the last line is the path to your ssh key on your machine. It is important to setup the key here to connect by remote on VScode. If you don't want to, you can connect directly on the web with the token you create before.
 
-But just before training the notebook, you must install all the dependencies of rasa. So open a terminal and launch this 2 command !
+> [!primary]
+>
+> Note that the repository git don't have to be added because it is already present when you create an AI Notebook. 
+>
+
+Your notebook is ready, you can connect to him. 
+
+But just before training the notebook, you must install all the dependencies of rasa. So open a terminal and launch this command !
 ```console 
-pip install --no-cache-dir -r ~/ai-training-examples/notebooks/natural-language-processing/conversational/miniconda/rasa-chatbot/requirements_rasa.txt
-pip install nest_asyncio
+pip install rasa
 ```
 
-Once you installed all the dependecies, you can run the notebook. 
+Once you installed all the dependecies, you can create and train the chatbot with only one command in your terminal. Run at the root of your directory :
+```console
+rasa init
+```
 
-You've run the jupyter notebook, ok let's speak with him at the end! You can have a small conversation with him, that's great !
+It will create some folders with basic data for rasa chatbot. During the command, you can also train a model and speak with the chatbot at the end. Here is a little example of a conversation with the chatbot. 
+
+![image](images/conversation.png){.thumbnail}
 
 
 ## Go further
@@ -84,7 +106,7 @@ If you want to deploy your model created with the chatbot, you can follow this t
 
 [How to deploy a chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/)
 
-If you want to train a rasa chatbot with the tool AI Training, please look at this tutorial .
+If you want to train a rasa chatbot with the tool AI Training, please look at this tutorial. 
 
 [How to train a chatbot with docker and AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/)
 
