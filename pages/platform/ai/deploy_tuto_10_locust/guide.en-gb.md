@@ -99,7 +99,7 @@ Locust is an open source Python package, that you can install with one line of c
 pip3 install locust
 ```
 
-You can install in on your personal computer, but keep in mind that load testing tools will require four things to **not become the bottleneck in your load test**:
+You can install it on your personal computer, but keep in mind that load testing tools will require four things to **not become the bottleneck in your load test**:
 - Enough compute (CPU).
 - Enough memory (RAM).
 - Low latency connectivity to your API.
