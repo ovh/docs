@@ -42,7 +42,7 @@ Select the right tool for the right test is mandatory. For the next parts, **we 
 Feel free to deploy any app and API that your would like to load test, as long as we can query it via REST queries.
 
 For this tutorial, we will load test a spam classifier API from [AI Deploy app portfolio](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/). 
-This API takes as input text sentences (emails), and as an output will provide a spam probability score. 
+This API takes sentences (emails) as input text, and output a spam probability score. 
 
 You can deploy this API easily from our OVHcloud control panel or OVHcloud CLI. A good strategy is to deploy with autoscaling, with a minimum and maximum replicas. This way we will monitor the growth of used replicas.
 
