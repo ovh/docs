@@ -78,6 +78,11 @@ Sie können auch die Seite aktualisieren, falls zu lange keine Änderung eintrit
 
 ### Schritt 2: Transfer-Code abrufen
 
+> [!warning]
+>
+> Beachten Sie, dass es immer möglich ist, den Transfercode Ihres Domainnamens nach Ablauf zu entsperren und wiederherzustellen. Gemäß den Registrierungsregeln muss eine Domain in [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) möglicherweise wiederhergestellt werden, um übertragen zu werden. Wenden Sie sich an Ihren neuen Registrar, um Details zur Übertragung zu erhalten.
+>
+
 Sobald sich der Status der Domain auf `Deaktiviert`{.action} aktualisiert, erscheint unter `Transfer-Schutz` der Link `AUTH/INFO`{.action}. Klicken Sie darauf, um ein Fenster zu öffnen, in dem Ihr AUTH/INFO-Code angezeigt wird (auch als Transferschlüssel, Domainpasswort, AUTH-CODE oder EPP-Code bezeichnet).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}

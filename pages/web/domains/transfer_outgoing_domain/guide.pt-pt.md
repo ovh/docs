@@ -77,6 +77,11 @@ Clique no cursor e confirme, na nova janela, que pretende eliminar esta proteç�
 
 ### Etapa 2: recuperar o código de transferência
 
+> [!warning]
+>
+> Observe que sempre é possível desbloquear e recuperar o código de transferência do seu nome de domínio após a expiração. De acordo com as regras de registro, um domínio em [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) pode precisar ser restaurado para ser transferido. Entre em contato com seu novo registrador para obter os detalhes da transferência.
+>
+
 Uma vez levantada a proteção contra a transferência, pode recuperar o código de transferência do seu nome de domínio. Para isso, ainda no separador `Informações gerais`{.action}, clique em `AUTH/INFO`{.action} situado ao lado de `Proteção contra a transferência`. Não hesite em atualizar a página caso seja necessário.
 
 Aparecerá uma janela com o seu código AUTH/INFO (também conhecido como código de transferência, palavra-passe de domínio, AUTH-CODE ou EPP-Code).

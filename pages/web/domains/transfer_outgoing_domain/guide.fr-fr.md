@@ -73,6 +73,11 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 
 ### Étape 2 : récupérer le code de transfert
 
+> [!warning]
+>
+> Sachez qu'il est toujours possible de débloquer et récupérer le code de transfert de votre nom de domaine après expiration. Selon les règles du registre, un domaine en [période de rédemption (redemptionPeriod)](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) peut nécessiter d'être restoré pour être transféré. Contactez votre nouveau bureau d'enregistrement pour connaitre des modalités de transfert.
+>
+
 Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine. Pour cela, toujours depuis l'onglet `Informations générales`{.action}, cliquez sur `AUTH/INFO`{.action} situé à côté de `Protection contre le transfert`. N'hésitez pas à actualiser la page si nécessaire.
 
 Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appelé code de transfert, mot de passe de domaine, AUTH-CODE ou EPP-Code).

@@ -77,6 +77,11 @@ Clicca sul cursore e conferma nella nuova finestra che vuoi eliminare questa pro
 
 ### Step 2: recuperare il codice di trasferimento
 
+> [!warning]
+>
+> Tieni presente che è sempre possibile sbloccare e recuperare il codice di trasferimento del tuo nome a dominio dopo la scadenza. Secondo le regole del registro, un dominio in [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) potrebbe richiedere il ripristino per essere trasferito. Contatta il tuo nuovo registrar per i dettagli del trasferimento.
+>
+
 Una volta disattivata la protezione contro il trasferimento, puoi recuperare il codice di trasferimento del tuo dominio. Per fare ciò, vai alla scheda `Informazioni generali`{.action} e clicca su `AUTH/INFO`{.action} accanto alla voce `Richiedi Auth info`. Se necessario, aggiorna la pagina.
 
 A questo punto compare una finestra con il tuo codice AUTH/INFO (anche chiamato codice di trasferimento, password del dominio, AUTH-CODE o EPP-Code).
