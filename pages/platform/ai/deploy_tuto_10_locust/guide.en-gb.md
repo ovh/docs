@@ -234,7 +234,7 @@ Again, interpretation will depends on your needs. Do we need to provide more CPU
 
 We can see that the threshold has be capped at 75% for the autoscaling and this has been respected. On the 5 replicas provided to the application, 4 has been used. 
 
-As a conclusion, both locust and AI Deploy Monitoring are useful to interpret results, but more than tools the most important thing is to define realisting workloads and performance criterias.
+As a conclusion, both locust and AI Deploy Monitoring are useful to interpret results, but more than tools the most important thing is to define realistic workloads and performance criterias.
  
 Last point : while locust is measuring a latency end-to-end (from locust virtual machine here, to the API model deployed), AI Deploy monitoring is only measuring backbone latency (from the query to the answer). That's why latency values are higher on Locust side, reaching 2.5 seconds. 
 
