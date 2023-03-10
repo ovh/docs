@@ -4,10 +4,10 @@ slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 03
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
-**Dernière mise à jour le 09/12/2022**
+**Dernière mise à jour le 10/03/2023**
 
 ## Objectif
 
@@ -75,7 +75,7 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 
 > [!warning]
 >
-> Sachez qu'il est toujours possible de débloquer et récupérer le code de transfert de votre nom de domaine après expiration. Selon les règles du registre, un domaine en [période de rédemption (redemptionPeriod)](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) peut nécessiter d'être restoré pour être transféré. Contactez votre nouveau bureau d'enregistrement pour connaitre les modalités de transfert.
+> Sachez qu'il est toujours possible de débloquer et récupérer le code de transfert de votre nom de domaine après son expiration. Selon les règles du registre, un domaine en [période de rédemption (redemptionPeriod)](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) peut nécessiter d'être restauré pour être transféré. Contactez votre nouveau bureau d'enregistrement pour connaître les modalités de transfert.
 >
 
 Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine. Pour cela, toujours depuis l'onglet `Informations générales`{.action}, cliquez sur `AUTH/INFO`{.action} situé à côté de `Protection contre le transfert`. N'hésitez pas à actualiser la page si nécessaire.
