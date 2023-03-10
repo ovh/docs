@@ -17,7 +17,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou [l'éditeur du CMS WordPress](https://wordpress.com/fr/support/){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 > [!success]
@@ -85,14 +85,14 @@ Pour les bases de données créées sur un Web Cloud Databases, référez-vous a
 > 
 > - Le nom du serveur d'une bases de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
 >
-> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
+> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(sans-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
 >
 
-- *Préfixe des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) de ce guide pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+- *Préfixe des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) de ce tutoriel pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
 Cliquez sur `Soumettre`{.action} pour valider les informations de connexion à la base de données.
 
-Si tout c'est bien passé, la page suivante apparaît :
+Si tout s'est bien passé, la page suivante apparaît :
 
 ![hosting](images/WPafterDB.png){.thumbnail}
 
@@ -122,7 +122,7 @@ L'installation est termninée si la page suivante s'affiche :
 
 ![hosting](images/WPend.png){.thumbnail}
 
-Il ne vous reste plus qu'à cliquer sur le bouton `Se connecter`{.action} pour tester l'accès au « Back-office » de votre nouveau CMS WordPress à l'aide des identifiants Administrateur préalablement créés lors de l'étape 2.3 juste avant.
+Il ne vous reste plus qu'à cliquer sur le bouton `Se connecter`{.action} pour tester l'accès au « Back-office » de votre nouveau CMS WordPress à l'aide des identifiants Administrateur préalablement créés lors de l'étape 2.3 de ce tutoriel.
 
 > [!primary]
 >
