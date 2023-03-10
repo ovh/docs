@@ -164,7 +164,7 @@ class HelloWorldUser(HttpUser):
                          headers=headers, json=body)
 ```
 
-For your own needs, you will have to change the path, the headers and the body because these are parameters who change from one API to other API. 
+For your own needs, you will have to change the path, the headers and the body because these are parameters who change from one API to another. 
 
 Once your `locustfile.py` is ready, open the Locust web interface on `<http://you_IP:8089>`. 
 
