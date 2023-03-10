@@ -784,6 +784,7 @@
                 + [AI Deploy - Tutorial - Deploy an interactive app for EDA and prediction using Streamlit](platform/ai/deploy_tuto_07_streamlit_eda_iris)
                 + [AI Deploy - Tutorial - Deploy and call a spam classifier with FastAPI](platform/ai/deploy_tuto_08_fastapi_spam_classifier)
                 + [AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit](platform/ai/deploy_tuto_09_streamlit_speech_to_text_app)
+                + [AI Deploy - Tutorial - Deploy a rasa chatbot with a simple flask app](platform/ai/deploy_tuto_11_rasa_chatbot_flask)
     + [Data Analytics](public-cloud-data-analytics)
         + [Data Processing](public-cloud-data-analytics-data-processing)
             + [Concepts](public-cloud-data-analytics-data-processing-concepts)
