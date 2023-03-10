@@ -30,7 +30,7 @@ Depending on your preferred programming language and time to spend on this topic
 
 First you can go for SaaS load tester, such as [Gatling.io](https://gatling.io/) or [K6.io](https://k6.io). Nothing to install, easy to start.
 
-A second option is using open source load testing tools. Some tools are only command-like based, such a [hey](https://github.com/rakyll/hey) or [Wrk2](https://github.com/giltene/wrk2), other comes with a web interface like [Locust](https://locust.io/). 
+A second option is using open source load testing tools. Some tools are only command-line based, such as [hey](https://github.com/rakyll/hey) or [Wrk2](https://github.com/giltene/wrk2), other comes with a web interface like [Locust](https://locust.io/). 
 
 Select the right tool for the right test is mandatory. For the next parts, **we will select and use locust**, allowing us to show visual graphs. 
 
