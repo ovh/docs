@@ -46,7 +46,7 @@ This API takes sentences (emails) as input text, and output a spam probability s
 
 You can deploy this API easily from our OVHcloud control panel or OVHcloud CLI. A good strategy is to deploy with autoscaling, with a minimum and maximum replicas. This way we will monitor the growth of used replicas.
 
-Here is the CLI command used to deploy it, with autoscaling going from 1 to 5 nodes and a CPU thresold to 75%:
+Here is the CLI command used to deploy it, with autoscaling going from 1 to 5 replicas and a CPU threshold of 75%:
 
 ```console
 ovhai app run --name spamclassifier --cpu 1 \
