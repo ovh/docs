@@ -6,7 +6,7 @@ section: AI Training -  Tutorials
 order: 07
 ---
 
-**Last updated 9th December, 2022.**
+**Last updated 10th March, 2022.**
 
 ## Objective
 
@@ -164,7 +164,7 @@ Explication of the command :
 - `-m ~/trained-models` : This is to specify the path of where your model is saved. As see before, your model has been trained and is save in this folder. If you have several models in the folder `trained-models`, you can specify the specific name of the model you want to train in this argument. 
 - `--endpoints ~/ai-training-examples/notebooks/natural-language-processing/chatbot/conda/rasa_bot/endpoints.yml` : You specify the way of your endpoints.yml file. This file is used to tell where your model is running and the where the port of your custom actions are running. 
 
-This is a small example of what you can get with this command : 
+This is a small example of a discussion with the bot : 
 
 ![image](images/discussion.png){.thumbnail}
 
