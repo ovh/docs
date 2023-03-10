@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel - Installer manuellement mon CMS sur mon hebergement'
+title: 'Tutoriel - Installer manuellement un CMS sur mon hébergement'
 slug: mutualise-installer-manuellement-mon-cms
 excerpt: 'Découvrez comment installer manuellement un CMS sur votre hébergement'
 section: CMS
@@ -11,13 +11,13 @@ updated: 2023-03-09
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal ou Prestashop en quelques étapes.
+Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Content Management System) tel que WordPress, Joomla!, Drupal ou PrestaShop en quelques étapes.
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> Nous mettons à votre disposition ce tutorial afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou l'éditeur du CMS ue vous aurez choisi d'installer si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 > Pour contacter les différents éditeurs des CMS cités ci-dessus, retrouvez ci-après les liens vers leurs pages officielles respectives :
 >
@@ -44,11 +44,11 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement un CMS (Cont
 
 ### Présentation des CMS
 
-Pour vous aider à choisir votre CMS, découvrez ci-après un bref descriptif pour chacun des 4 CMS évoqués ci-dessus.
+Pour vous aider à choisir votre CMS, découvrez ci-dessous un bref descriptif pour chacun des 4 CMS évoqués ci-dessus.
 
 #### WordPress
 
-**WordPress** est généralement utilisé pour créer un site web ou un blog. Il est basé sur la technologie PHP et comporte une gamme variée d’outils comme un correcteur orthographique et des plugins pour l'e-commerce, le SEO ou encore la sécurité de votre site web.
+**WordPress** est généralement utilisé pour créer un site web ou un blog. Il est basé sur la technologie PHP et comporte une gamme variée d’outils comme un correcteur orthographique ainsi que des plugins pour l'e-commerce, le SEO ou encore la sécurité de votre site web.
 
 Retrouvez plus d'informations sur notre page relative au [module WordPress](https://www.ovhcloud.com/fr/web-hosting/uc-wordpress-website/)
 
@@ -74,7 +74,7 @@ Retrouvez plus d'informations sur notre page relative au [module Drupal](https:/
 
 #### PrestaShop
 
-CMS créé en 2005 et dédié à la réalisation de sites web E-commerce. En dehors des fonctionnalités courantes des boutiques en ligne, le logiciel peut également être personnalisé avec des modules, des thèmes et des modèles. 
+CMS créé en 2005 et dédié à la réalisation de sites web e-commerce. En dehors des fonctionnalités courantes des boutiques en ligne, ce logiciel peut également être personnalisé avec des modules, des thèmes et des modèles. 
 
 Retrouvez plus d'informations sur notre page relative au [module PrestaShop](https://www.ovhcloud.com/fr/web-hosting/uc-prestashop-website/)
 
@@ -82,7 +82,7 @@ Retrouvez plus d'informations sur notre page relative au [module PrestaShop](htt
 
 > [!warning]
 >
-> Quelque soit le CMS que vous choisirez, nous vous rappellons qu'aucune assistance n'est fournie par OVHcloud sur l'utilisation de ces CMS. Si vous éprouvez des difficultés, contactez directement l'éditeur du CMS que vous avez choisi à l'aide des liens indiqués plus haut dans ce tutoriel.
+> Quel que soit le CMS que vous choisirez, nous vous rappellons qu'aucune assistance n'est fournie par OVHcloud sur l'utilisation de ces CMS. Si vous éprouvez des difficultés, contactez directement l'éditeur du CMS que vous avez choisi à l'aide des liens indiqués plus haut dans ce tutoriel.
 >
 
 ### Etape 1 - préparer l'installation <a name="step1"></a>
@@ -134,7 +134,7 @@ Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[héber
 
 Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
-Si vous disposez d'une offre Web Cloud Databases en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre CMS, consultez notre documentation sur la [création d'une base de données sur un Web Cloud Databases](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
+Si vous disposez d'une offre Web Cloud Databases en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre CMS, consultez notre documentation sur la [création d'une base de données sur un service Web Cloud Databases](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/#creer-une-base-de-donnees).
 
 Une fois la base de données créée, récupérez les paramètres de connexion (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et conservez-les pour [l'étape 3](#step3) de ce guide.
 
@@ -156,7 +156,7 @@ Une fois la base de données créée, récupérez les paramètres de connexion (
 
 Rendez-vous sur le site de l'éditeur du CMS que vous avez choisi pour y télécharger les fichiers sources.
 
-Retrouvez ci-après les liens vers les pages de téléchargement des CMS évoqués dans le présent tutoriel :
+Retrouvez ci-dessous les liens vers les pages de téléchargement des CMS évoqués dans le présent tutoriel :
 
 - [WordPress](https://wordpress.org/download/#download-install){.external}
 - [Joomla!](https://downloads.joomla.org/){.external}
@@ -165,7 +165,7 @@ Retrouvez ci-après les liens vers les pages de téléchargement des CMS évoqu�
 
 > [!primary]
 >
-> Sur le site officiel du CMS choisi, récuprez la version PHP ainsi que la version MySQL ou MariaDB requises pour faire fonctionner votre CMS.
+> Sur le site officiel du CMS choisi, récupérez la version PHP ainsi que la version MySQL ou MariaDB requises pour faire fonctionner votre CMS.
 >
 > Configurez ensuite la version de PHP sur votre hébergement web en vous aidant de notre documentation sur [le changement de version PHP d'un hébergement web](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
 >
@@ -183,12 +183,12 @@ Suivez les instructions indiquées par l'éditeur de votre CMS jusqu'à ce que l
 
 >[!primary]
 >
-> Remplacez dans ce qui suit le nom du dossier « **CMS** » par le nom du CMS que vous avez choisi pour plus de facilité. (**WordPress**, **Joomla!**, **Drupal**, **PretaShop**).
+> Pour plus de facilité, remplacez, dans cette étape, le nom du dossier « **CMS** » par le nom du CMS que vous avez choisi. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
 >
 
 Le fichier téléchargé est dans un format **compressé** (zippé). Créez un dossier intitulé « **CMS** » sur votre ordinateur puis **décompressez** le contenu du fichier téléchargé à l'intérieur du dossier « **CMS** ».
 
-Pour cela, ouvrez le dossier dans lequel vous avez téléchargé le fichier compressé, faites un clic-droit sur le fichier en question puis sélectionnez « Extraire tout... ».
+Pour cela, ouvrez le dossier dans lequel vous avez téléchargé le fichier compressé, faites un clic droit sur le fichier en question puis sélectionnez « Extraire tout... ».
 
 Indiquez le dossier « **CMS** » en destination afin d'extraire vos fichiers dans ce dossier.
 
@@ -196,7 +196,7 @@ Indiquez le dossier « **CMS** » en destination afin d'extraire vos fichiers da
 
 Une fois les fichiers décompressés dans votre dossier « **CMS** », [connectez-vous en FTP à votre espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) à l'aide du [client FTP FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) puis copiez les fichiers contenus dans le dossier « **CMS** » dans le « dossier racine » que vous avez défini sur votre hébergement lors de l'[étape 1](#step1) de ce guide.
 
-Ci-dessous, un exemple avec le CMS *WordPress*:
+Ci-dessous, un exemple avec le CMS **WordPress**:
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -226,7 +226,7 @@ Une fois connecté en **SSH**, exécutez les commandes suivantes :
 cd NameOfYourTargetFolder
 ```
 
-- Récupérez les fichiers sources de votre CMS directement depuis votre « dossier racine » à l'aide de la commande correspondant au CMS que vous avez choisi:
+- Récupérez les fichiers sources de votre CMS directement depuis votre « dossier racine » à l'aide de la commande correspondant au CMS que vous avez choisi :
 
 > [!tabs]
 > **WordPress** :
