@@ -1,7 +1,7 @@
 ---
 title: Create a Volume Backup
 slug: volume-backup
-excerpt: 
+excerpt: Discover how to backup your Block Storage volume in the Customer Control Panel
 section: Storage
 order: 
 ---
