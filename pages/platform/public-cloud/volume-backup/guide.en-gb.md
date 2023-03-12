@@ -68,7 +68,8 @@ You will find the list of your Volume Backups in the section `Volume Backup`{.ac
 
 ==
 
-Click on the button `...`{.action} to `Delete`{.action} a snapshot or to `Create a volume`{.action} based on the respective snapshot. You can find further information in [this guide](https://docs.ovh.com/gb/en/public-cloud/create-volume-from-backup/).
+Click on the button `...`{.action} to `Delete`{.action} or to `Create a volume`{.action} based on the respective Volume Snapshot or Volume Backup.
+You can find further information in [this guide](https://docs.ovh.com/gb/en/public-cloud/create-volume-from-backup/).
 
 
 ## Go further
