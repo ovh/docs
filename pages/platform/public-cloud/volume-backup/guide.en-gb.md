@@ -23,7 +23,7 @@ Both Volume Snapshot and Volume Backup allow you to:
 - Use the backups to restore your volume state
 - Use the backups as a template to create identical volumes
 
-**This guide explains how to create a volume snapshot or volume backup in the OVHcloud Control Panel.**
+**This guide explains how to create a backup of your Block Storage volume in the OVHcloud Control Panel.**
 
 ## Requirements
 
