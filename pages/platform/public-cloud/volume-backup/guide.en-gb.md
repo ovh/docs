@@ -54,7 +54,7 @@ Other best practices include:
 - Avoid creating snapshot/backup during peak hours (04:00 AM - 10:00 PM Paris time).
 - Regularly validate you're able to get your data back from your voluma snapshot or volume backup.
 - Install the qemu-guest agent if it is not installed... or try to disable it if necessary.
-- Even if note mandatory, prefer to detach your volume when creating a volume snapshot.
+- Even if not mandatory, prefer to detach your volume when creating a volume snapshot.
 
 Since a volume snapshot / volume backup is a clone of the entire disk, it will have the maximum size of the original volume, regardless of the actual disk space allocation.
 
@@ -64,7 +64,7 @@ You will find the list of your Volume Snapshots in the section `Volume Snapshot`
 
 ==> Insert listing page Volume Backup
 
-You will find the list of your Volume Backups in the section `Volume Backup`{.action} in the left-hand navigation bar. As soon as the Volume Backup creation is requested, it will be added to this table with a status "Creating".
+You will find the list of your Volume Backups in the section `Volume Backup`{.action} in the left-hand navigation bar. As soon as the Volume Backup creation is requested, it will be added to this table.
 
 ==
 
