@@ -34,29 +34,39 @@ Both volume Snapshot and volume Backup allow you to:
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage**.
 
-![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
+==> Insert listing Page Block Storage Screenshot
 
 In the row of the volume concerned, click on `...`{.action} and select `Create a backup`{.action} (It is not required to detach the volume from its instance first). However, if you wish to detach your volume, please consult this [section](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-linux) of the corresponding guide for Linux and this [section](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance/#on-windows) for Windows.
 
-![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
+==> Insert Volume Backup Creation workflow Screenshot
 
-In the popup window, you can enter a different name for the snapshot. Take note of the pricing information, then click on `Take a snapshot`{.action}.
+Coming from Block Storage volume section, the volume concerned is indicated. Otherwise, please select the volume you want to backup.
+Then select the type of backup you want to create: Volume Snapshot or Volume Backup.
+Choosing Volume Snapshot, you will have the possibility to modify the name of the Volume Snapshot to be created before validating `Create the backup`{.action}.
+Choosing Volume Backup, you'll be asked to detach your volume from the instance in order to continue. You'll be then able to modify the name of the Volume Snapshot to be created before validating `Create the backup`{.action}.
 
-The snapshot creation time may take several hours, depending on the amount of data present on the volume, the instance resource utilization at the time of the snapshot and other host-specific factors.
+The backup creation time, being it a volume snapshot or a volume backup, may take several hours, depending on the amount of data present on the volume, as well as the instance resource utilization for the volume snapshot, and other host-specific factors.
 
 We therefore recommend that you perform your snapshots outside of your production hours. 
 
 Other best practices include:
 
-- Avoid creating snapshots during peak hours (04:00 AM - 10:00 PM Paris time).
+- Avoid creating snapshot/backup during peak hours (04:00 AM - 10:00 PM Paris time).
+- Regularly validate you're able to get your data back from your voluma snapshot or volume backup.
 - Install the qemu-guest agent if it is not installed... or try to disable it if necessary.
-- Try not to "solicit" the server too much during the snapshot creation phase (I/O limitation, RAM consumption, etc.).
+- Even if note mandatory, prefer to detach your volume when creating a volume snapshot.
 
-Since a volume snapshot is a clone of the entire disk, it will have the maximum size of the original volume, regardless of the actual disk space allocation.
+Since a volume snapshot / volume backup is a clone of the entire disk, it will have the maximum size of the original volume, regardless of the actual disk space allocation.
 
-![Volume Snapshot](images/volume_snapshot03.png){.thumbnail}
+==> Insert listing page Volume Snapshot
 
-Open the section `Volume Snapshot`{.action} in the left-hand navigation bar. After the snapshot is created, it will be added to this table.
+You will find the list of your Volume Snapshots in the section `Volume Snapshot`{.action} in the left-hand navigation bar. After the snapshot is created, it will be added to this table.
+
+==> Insert listing page Volume Backup
+
+You will find the list of your Volume Backups in the section `Volume Backup`{.action} in the left-hand navigation bar. As soon as the Volume Backup creation is requested, it will be added to this table with a status "Creating".
+
+==
 
 Click on the button `...`{.action} to `Delete`{.action} a snapshot or to `Create a volume`{.action} based on the respective snapshot. You can find further information in [this guide](https://docs.ovh.com/gb/en/public-cloud/create-volume-from-backup/).
 
