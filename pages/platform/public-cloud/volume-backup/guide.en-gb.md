@@ -12,12 +12,12 @@ order:
 
 If you value the data stored in you Block Storage volumes, it worth to organize the backup of this data to prevent the potential impact of any potential issue on this data, being it a human error or cluster incident.
 
-A volume snapshot is a recovery point stored within the same storage cluster as the original volume. Operations will be fast, but in case of incident on the cluster, both volume and snapshotmight be unavailable. Volume Snapshots creation do not required the volume to be detached from the instance.
+A Volume Snapshot is a recovery point stored within the same storage cluster as the original volume. Operations will be fast, but in case of incident on the cluster, both volume and Volume Snapshot might be unavailable. Volume Snapshot creation do not required the volume to be detached from the instance.
 
-A volume backup is an image created out of your volume, which is stored in the Object Storage cluster of the original volume localisation.
-Level of resiliency is ideal and will allow you to quickly react to any incident on your volume, creating another volume from the backup. Volume backup creation requires the volume to be detached from the instance.
+A Volume Backup is an image created out of your volume, which is stored in the Object Storage cluster of the original volume localisation.
+Level of resiliency is ideal and will allow you to quickly react to any incident on your volume, creating another volume from the backup. Volume Backup creation requires the volume to be detached from the instance.
 
-Both volume Snapshot and volume Backup allow you to:
+Both Volume Snapshot and Volume Backup allow you to:
 
 - Create backups of your volume with a few clicks and keep them as long as needed
 - Use the backups to restore your volume state
@@ -40,7 +40,7 @@ In the row of the volume concerned, click on `...`{.action} and select `Create a
 
 ==> Insert Volume Backup Creation workflow Screenshot
 
-Coming from Block Storage volume section, the volume concerned is indicated. Otherwise, please select the volume you want to backup.
+Coming from Block Storage volume section, the volume concerned is indicated. Otherwise, select the volume you want to backup.
 Then select the type of backup you want to create: Volume Snapshot or Volume Backup.
 Choosing Volume Snapshot, you will have the possibility to modify the name of the Volume Snapshot to be created before validating `Create the backup`{.action}.
 Choosing Volume Backup, you'll be asked to detach your volume from the instance in order to continue. You'll be then able to modify the name of the Volume Snapshot to be created before validating `Create the backup`{.action}.
