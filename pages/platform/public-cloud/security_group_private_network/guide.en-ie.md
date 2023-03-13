@@ -3,7 +3,7 @@ title: Managing firewall rules and port security on networks using OpenStack CLI
 slug: firewall_security_pci
 excerpt: Find out how security groups work on Public Cloud
 section: OpenStack
-updated: 2023-03-08
+updated: 2023-03-13
 ---
 
 <style>
@@ -28,7 +28,7 @@ updated: 2023-03-08
  }
 </style>
 
-**Last updated 8th March 2023**
+**Last updated 13th March 2023**
 
 ## Objective
 

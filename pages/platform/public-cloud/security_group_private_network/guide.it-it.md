@@ -3,7 +3,7 @@ title: Gestione delle regole di firewall e port security sulle reti che utilizza
 slug: firewall_security_pci
 excerpt: Scopri come funzionano i gruppi di sicurezza Public Cloud
 section: Gestione via OpenStack
-updated: 2023-03-08
+updated: 2023-03-13
 ---
 
 <style>
@@ -32,7 +32,7 @@ updated: 2023-03-08
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 08/03/2023**
+**Ultimo aggiornamento: 13/03/2023**
 
 ## Obiettivo
 

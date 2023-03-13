@@ -3,7 +3,7 @@ title: Gestion des règles de firewall et port security sur les réseaux utilisa
 slug: firewall_security_pci
 excerpt: Découvrez le fonctionnement des groupes de sécurité sur Public Cloud
 section: Gestion via OpenStack
-updated: 2023-03-08
+updated: 2023-03-13
 ---
 
 <style>
@@ -28,7 +28,7 @@ updated: 2023-03-08
  }
 </style>
 
-**Dernière mise à jour le 25/08/2022**
+**Dernière mise à jour le 13/03/2023**
 
 ## Objectif
 
@@ -123,7 +123,7 @@ En conséquence, tous les ports réseau (publics et privés) permettent chaque c
 #### Ajouter des règles
 
 > [!warning]
-> Si vous souhaitez configurer des règles spécifiques, vous devez créez un nouveau groupe de sécurité et lui associez votre port réseau. Nous vous conseillons de ne pas modifier le groupe de sécurité « default », ceci afin de maintenir l'accès à votre instance en toutes circonstances (par exemple, en mode rescue)."
+> Si vous souhaitez configurer des règles spécifiques, vous devez créez un nouveau groupe de sécurité et lui associer votre port réseau. Nous vous conseillons de ne pas modifier le groupe de sécurité « default », ceci afin de maintenir l'accès à votre instance en toutes circonstances (par exemple en mode rescue).
 >
 
 Utilisez cette commande pour créer le groupe :
