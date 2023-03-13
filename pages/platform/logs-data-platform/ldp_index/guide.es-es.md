@@ -1,7 +1,7 @@
 ---
 title: Using OpenSearch API to send your logs
 slug: ldp-index
-order: 8
+order: 9
 excerpt: Send your logs to the platform with the OpenSearch API.
 section: Features
 routes:

@@ -820,6 +820,7 @@
                 + [OpenSearch made easy with Index As A Service](platform/logs-data-platform/index_as_a_service)
                 + [Follow your logs in real time with ldp-tail](platform/logs-data-platform/ldp_tail)
                 + [Keeping your logs for years with the Cold Storage feature](platform/logs-data-platform/cold_storage)
+                + [Encrypt your Cold Stored logs](platform/logs-data-platform/cold_storage_encryption)
                 + [Using alerts with Logs Data Platform](platform/logs-data-platform/alerting)
                 + [Using tokens to query Logs Data Platform](platform/logs-data-platform/tokens_logs_data_platform)
                 + [Using Roles to share your data](platform/logs-data-platform/roles)
