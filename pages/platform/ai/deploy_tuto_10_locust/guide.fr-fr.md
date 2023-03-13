@@ -1,10 +1,10 @@
 ---
-title: AI Deploy - Tutoriel - Tester la charge de votre application avec Locust
+title: AI Deploy - Tutoriel - Tester la charge de votre application avec Locust (EN)
 slug: deploy/load-test-app
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/load-test-app/'
 excerpt: Découvrez comment tester facilement vos API et trouver leurs limites
-section: AI Deploy - Tutorials
+section: AI Deploy - Tutoriels
 order: 10
 updated: 2023-03-13
 ---
