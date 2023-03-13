@@ -4,14 +4,14 @@ slug: transfer_wychodzacy_domeny_globalnej_lub_geograficznej
 excerpt: Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora
 section: Transfer
 order: 04
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 09-12-2022**
+**Ostatnia aktualizacja z dnia 10-03-2023**
 
 ## Wprowadzenie
 
@@ -77,6 +77,11 @@ Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć
 
 ### Etap 2: pobrać kod transferu
 
+> [!warning]
+>
+> Pamiętaj, że zawsze istnieje możliwość odblokowania i odzyskania kodu transferu nazwy domeny po jej wygaśnięciu. Zgodnie z zasadami rejestru, domena w [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) może wymagać przywrócenia w celu przeniesienia. Skontaktuj się z nowym rejestratorem, aby uzyskać szczegóły przeniesienia.
+>
+
 Po odblokowaniu Twojej domeny do transferu, pobierz jej kod transferu.  W tym celu, w zakładce `Informacje ogólne`{.action}, kliknij przycisk `AUTH/INFO`{.action} znajdujący się obok przycisku `Ochrona przed transferem`. Jeśli to konieczne, odśwież stronę.
 
 Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem transferu, hasłem domeny, AUTH-CODE lub EPP-Code).
@@ -86,10 +91,6 @@ Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem 
 Kod zostanie poproszony przez nowego operatora o zakończenie procesu transferu. Szczegóły możesz sprawdzić u nowego operatora.
 
 Zamiast ręcznie wpisywać kod, zalecamy jego skopiowanie/wklejenie, ponieważ niektóre znaki mogą być łatwo mylone.
-
-> [!warning]
->
-> Jeśli nazwa domeny została zawieszona lub wygasła, konieczne jest utworzenie [zgłoszenia serwisowego](https://www.ovh.com/manager/dedicated/#/support/tickets/new) w Panelu klienta OVHcloud.
 
 Po pobraniu kodu transferu **nie zablokuj ponownie domeny, chyba że nie chcesz jej już przenosić**.
 

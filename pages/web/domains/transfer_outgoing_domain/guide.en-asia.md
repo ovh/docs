@@ -4,10 +4,10 @@ slug: outgoing-transfer-of-generic-or-geographical-domain-name
 excerpt: Find out how to move a domain name from OVHcloud to a provider of your choice
 section: Transfer
 order: 04
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
-**Last updated 9th December 2022**
+**Last updated 10th March 2023**
 
 ## Objective
 
@@ -70,6 +70,11 @@ You can also refresh the page if it seems to take longer.
 
 ### Step 2: Retrieve the transfer code
 
+> [!warning]
+>
+> Note that it is still possible to unlock and retrieve the transfer code of your domain name after its expiration. According to registry rules, a domain in [redemption period](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) may need to be restored so that it can be transferred. Contact your new registrar for transfer details.
+>
+
 Once the status is set to `Disabled`{.action}, a link labelled `AUTH/INFO`{.action} will appear. Clicking on this link will open a window that contains your AUTH/INFO code (also known as transfer key, domain password, AUTH-CODE or EPP-Code).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
@@ -77,10 +82,6 @@ Once the status is set to `Disabled`{.action}, a link labelled `AUTH/INFO`{.acti
 The code will be requested by your new registrar to complete the transfer process. You can verify the details with your provider.
 
 Make sure to copy and paste the code as opposed to typing it by hand, since some characters are easily confused.
-
-> [!warning]
->
-> If the domain name has been suspended or expired, you will need to [create a support ticket](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) from your OVHcloud Control Panel.
 
 Once the transfer code has been retrieved, **do not lock your domain again unless you no longer wish to transfer it**.
 

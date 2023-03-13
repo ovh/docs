@@ -4,14 +4,14 @@ slug: transferencia_saliente_de_un_dominio_generico_o_geografico
 excerpt: Cómo transferir un dominio de OVHcloud al agente registrador que elija
 section: 'Operaciones en los dominios'
 order: 03
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 09/12/2022**
+**Última actualización: 10/03/2023**
 
 ## Objetivo
 
@@ -73,6 +73,11 @@ Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la prot
 
 ### 2\. obtener el código de transferencia
 
+> [!warning]
+>
+> Tenga en cuenta que siempre es posible desbloquear y recuperar el código de transferencia de su nombre de dominio después de su vencimiento. De acuerdo con las reglas del registro, es posible que sea necesario restaurar un dominio en [período de redención] (https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) para transferirlo. Comuníquese con su nuevo registrador para conocer los detalles de la transferencia.
+>
+
 Una vez desbloqueada la protección contra la transferencia, deberá obtener el código de transferencia del dominio. Para ello, en la pestaña `Información general`{.action}, haga clic en el enlace `AUTH/INFO`{.action}, situado junto a `Protección contra la transferencia`. Actualice la página si es necesario.
 
 Se abrirá una ventana en la que podrá consultar su código AUTH/INFO (también llamado código de transferencia, contraseña de dominio, AUTH-CODE o EPP-Code).
@@ -82,10 +87,6 @@ Se abrirá una ventana en la que podrá consultar su código AUTH/INFO (también
 El nuevo agente registrador solicitará el código para finalizar la transferencia. Puede consultar los detalles en el nuevo agente registrador.
 
 En lugar de escribir manualmente el código, le recomendamos que copie y pegue el código, ya que algunos caracteres pueden confundirse fácilmente.
-
-> [!warning]
->
-> Si el dominio está suspendido o caducado, es necesario [crear un tique de asistencia](https://ca.ovh.com/manager/dedicated/#/support/tickets/new) desde el área de cliente de OVHcloud.
 
 Una vez recuperado el código de transferencia, **no vuelva a bloquear su dominio a menos que ya no quiera transferirlo**.
 

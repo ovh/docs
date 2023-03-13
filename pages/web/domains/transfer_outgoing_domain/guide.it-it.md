@@ -4,14 +4,14 @@ slug: trasferisci_in_uscita_un_dominio_generico_o_geografico
 excerpt: Come effettuare il trasferimento di un dominio OVHcloud verso un altro provider
 section: Trasferimento
 order: 04
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 09/12/2022**
+**Ultimo aggiornamento: 10/03/2023**
 
 ## Obiettivo
 
@@ -77,6 +77,11 @@ Clicca sul cursore e conferma nella nuova finestra che vuoi eliminare questa pro
 
 ### Step 2: recuperare il codice di trasferimento
 
+> [!warning]
+>
+> Tieni presente che è sempre possibile sbloccare e recuperare il codice di trasferimento del tuo nome a dominio dopo la scadenza. Secondo le regole del registro, un dominio in [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) potrebbe richiedere il ripristino per essere trasferito. Contatta il tuo nuovo registrar per i dettagli del trasferimento.
+>
+
 Una volta disattivata la protezione contro il trasferimento, puoi recuperare il codice di trasferimento del tuo dominio. Per fare ciò, vai alla scheda `Informazioni generali`{.action} e clicca su `AUTH/INFO`{.action} accanto alla voce `Richiedi Auth info`. Se necessario, aggiorna la pagina.
 
 A questo punto compare una finestra con il tuo codice AUTH/INFO (anche chiamato codice di trasferimento, password del dominio, AUTH-CODE o EPP-Code).
@@ -86,10 +91,6 @@ A questo punto compare una finestra con il tuo codice AUTH/INFO (anche chiamato 
 Il codice verrà richiesto dal tuo nuovo Registrar per completare il processo di trasferimento. Puoi verificare i dettagli presso il tuo nuovo Registrar.
 
 Piuttosto che digitare manualmente il codice, ti consigliamo di copiarlo/incollarlo perché alcuni caratteri possono essere facilmente confondibili.
-
-> [!warning]
->
-> Se il dominio è sospeso o scaduto, è necessario [creare un ticket di assistenza](https://www.ovh.com/manager/dedicated/#/support/tickets/new) dallo Spazio Cliente OVHcloud.
 
 Una volta recuperato il codice di trasferimento, **non bloccate più il vostro dominio a meno che non vogliate trasferirlo**.
 
