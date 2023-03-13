@@ -1,7 +1,7 @@
 ---
 title: Using Roles to share your data
 slug: roles
-order: 7
+order: 8
 excerpt: Manage who can have access to your data and what they can do with them.
 section: Features
 routes:

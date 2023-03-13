@@ -4,10 +4,10 @@ slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
 excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 03
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
-**Dernière mise à jour le 09/12/2022**
+**Dernière mise à jour le 10/03/2023**
 
 ## Objectif
 
@@ -73,6 +73,11 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 
 ### Étape 2 : récupérer le code de transfert
 
+> [!warning]
+>
+> Sachez qu'il est toujours possible de débloquer et récupérer le code de transfert de votre nom de domaine après son expiration. Selon les règles du registre, un domaine en [période de rédemption (redemptionPeriod)](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) peut nécessiter d'être restauré pour être transféré. Contactez votre nouveau bureau d'enregistrement pour connaître les modalités de transfert.
+>
+
 Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine. Pour cela, toujours depuis l'onglet `Informations générales`{.action}, cliquez sur `AUTH/INFO`{.action} situé à côté de `Protection contre le transfert`. N'hésitez pas à actualiser la page si nécessaire.
 
 Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appelé code de transfert, mot de passe de domaine, AUTH-CODE ou EPP-Code).
@@ -82,10 +87,6 @@ Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appel�
 Le code sera demandé par votre nouveau bureau d'enregistrement pour terminer le processus de transfert. Vous pouvez vérifier les détails auprès de votre nouveau bureau d'enregistrement.
 
 Plutôt que de taper manuellement le code, nous vous recommandons de copier/coller celui-ci, car certains caractères peuvent être facilement confondus.
-
-> [!warning]
->
-> Si le nom de domaine est suspendu ou expiré, il est nécessaire de [créer un ticket d'assistance](https://www.ovh.com/manager/dedicated/#/support/tickets/new) depuis votre espace client OVHcloud.
 
 Une fois le code de transfert récupéré, **ne reverrouillez pas votre domaine, sauf si vous ne souhaitez plus le transférer**.
 

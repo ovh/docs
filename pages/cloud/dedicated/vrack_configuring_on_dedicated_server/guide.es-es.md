@@ -11,7 +11,7 @@ updated: 2022-05-02
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 02/02/2022**
+**Última actualización: 02/05/2022**
 
 ## Objetivo
 
@@ -217,5 +217,7 @@ Haga clic en `Aceptar`{.action} para guardar los cambios y reinicie el servidor 
 Repita este procedimiento para los demás servidores y asígnele a cada uno de ellos una dirección IP no utilizada desde su rango privado. A continuación, los servidores podrán comunicarse entre sí en la red privada.
 
 ## Más información
+
+[Crear varias VLAN en el vRack](https://docs.ovh.com/es/dedicated/crear-vlan-vrack/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
