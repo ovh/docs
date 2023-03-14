@@ -91,7 +91,7 @@ Once you have installed all the dependencies, you can create and train the chatb
 rasa init
 ```
 
-It will create some folders with basic data for rasa chatbot. During the command, you can also train a model and speak with the chatbot at the end. Here is a little example of a conversation with the chatbot. 
+It will create some folders with basic data for rasa chatbot. During the command, you can also train a model and speak with the chatbot at the end. Here is a small example of a conversation with the chatbot. 
 
 ![image](images/conversation.png){.thumbnail}
 
