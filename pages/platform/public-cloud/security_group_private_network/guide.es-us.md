@@ -3,7 +3,7 @@ title: Gestión de las reglas de firewall y port security en las redes que utili
 slug: firewall_security_pci
 excerpt: Cómo funcionan los grupos de seguridad en Public Cloud
 section: OpenStack
-updated: 2022-08-25
+updated: 2023-03-13
 ---
 
 <style>
@@ -32,7 +32,7 @@ updated: 2022-08-25
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 26/08/2022**
+**Última actualización: 13/03/2023**
 
 ## Objetivo
 
@@ -126,7 +126,9 @@ En consecuencia, todos los puertos de red (públicos y privados) permiten cada c
 
 #### Añadir reglas
 
-Si desea configurar reglas específicas, puede crear un nuevo grupo de seguridad y asociarle su puerto de red.
+> [!warning]
+> Si desea configurar reglas específicas, debe crear un nuevo grupo de seguridad y asociarle su puerto de red. No obstante, le recomendamos que no modifique el grupo de seguridad "default" para que su instancia siga accesible en cualquier circunstancia (por ejemplo, en modo de rescate).
+>
 
 Utilice este comando para crear el grupo:
 
