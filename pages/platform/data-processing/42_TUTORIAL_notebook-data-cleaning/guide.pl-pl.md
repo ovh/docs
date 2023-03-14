@@ -4,6 +4,8 @@ slug: notebook-spark-data-cleaning
 excerpt: Data cleaning of 2 CSV dataset with aggregation into a single clean Parquet file.
 section: Tutorials
 order: 3
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/data-processing/notebook-spark-data-cleaning/'
 updated: 2023-03-14
 ---
 
@@ -19,8 +21,8 @@ The tutorial presents a simple data cleaning with `Notebooks for Apache Spark`.
 
 ## Requirements 
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Public Cloud project](https://www.ovhcloud.com/pl/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## Instructions
 
@@ -30,7 +32,7 @@ First, download these 2 datasets CSV files locally:
 * [books.csv](https://raw.githubusercontent.com/ovh/data-processing-samples/master/apache_spark_notebook_data_cleaning/books.csv)
 * [ratings.csv](https://raw.githubusercontent.com/ovh/data-processing-samples/master/apache_spark_notebook_data_cleaning/ratings.csv)
 
-Then, from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Object Storage section, locate your S3 bucket and upload your data by clicking `Add object`{.action}.
+Then, from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), go to the Object Storage section, locate your S3 bucket and upload your data by clicking `Add object`{.action}.
 
 Select both files from your computer and add them to the root `/` of your bucket.
 
@@ -40,7 +42,7 @@ Select both files from your computer and add them to the root `/` of your bucket
 
 There are a few information that we will need as inputs of the notebook.
 
-First, and while we're on the container page of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) we will copy the `Endpoint` information and save it.
+First, and while we're on the container page of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) we will copy the `Endpoint` information and save it.
 
 Go back to the Object Storage home page and then to the S3 users tab, copy the user's `access key` and save it.
 
@@ -48,7 +50,7 @@ Finally, click on action "hamburger" at the end of the user row `(...)`{.action}
 
 ### Launch and access a Notebook for Apache Spark
 
-From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Data Processing section and create a new notebook by clicking `Data Processing`{.action} > `Create notebook`{.action}.
+From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), go to the Data Processing section and create a new notebook by clicking `Data Processing`{.action} > `Create notebook`{.action}.
 
 You can then reach the `JupyterLab` URL directly from the notebooks list or from the notebook page.
 
@@ -60,7 +62,7 @@ A preview of this notebook can be found on [GitHub](https://github.com/ovh/data-
 
 ### Go further
 
-- Do you want to create a data cleaning job you could replay based on your notebook? [Here it is](https://docs.ovh.com/gb/en/data-processing/submit-python/).
+- Do you want to create a data cleaning job you could replay based on your notebook? [Here it is](https://docs.ovh.com/pl/data-processing/submit-python/).
 
 ## Feedback
 
