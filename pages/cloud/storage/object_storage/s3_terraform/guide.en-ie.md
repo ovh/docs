@@ -1,12 +1,12 @@
 ---
-title: Manage an S3 bucket with terraform
+title: Object Storage - Manage an S3 bucket with Terraform
 slug: s3/manage-s3-bucket-with-terraform
-section: Tutorials
-order: 140
-updated: 2023-03-09
+section: Configure Object Storage with your solutions
+order: 180
+updated: 2023-03-14
 ---
 
-**Last updated on 9th March 2023**
+**Last updated on 14th March 2023**
 
 ## Objective
 
