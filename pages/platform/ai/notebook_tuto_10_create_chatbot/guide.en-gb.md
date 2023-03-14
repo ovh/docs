@@ -69,7 +69,7 @@ Few explanations here, line by line:
 - With the name "vscode-ovh-chatbot".
 - We specify a version for the conda framework (Python 3.9). 
 - we attach 1 data volume to the notebook, as explained previously.
-- We request 10 CPUs. The more we add, the more performant it is (but more expensive).
+- We request 10 CPUs. The more we add, the more performant it is.
 - we add the token previously created.
 - We labelize this notebook with label "rasabotRO".
 - Optional : the last line is the path to your ssh key on your machine. It is important to setup the key here to connect by remote on VScode. If you don't want to, you can connect directly on the web with the token you create before.
