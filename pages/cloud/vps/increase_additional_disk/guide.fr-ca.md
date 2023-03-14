@@ -17,18 +17,18 @@ Si vous avez atteint la capacité maximale de votre disque additionnel, vous pou
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud.
-- Un [disque additionnel](https://docs.ovh.com/fr/vps/configurer-disque-additionnel/) configuré sur le VPS.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud.
+- Un [disque additionnel](https://docs.ovh.com/ca/fr/vps/configurer-disque-additionnel/) configuré sur le VPS.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Avoir accès à votre VPS en SSH ou en RDP pour l'administration.
 
 ## En pratique
 
-Les étapes ci-dessous supposent que vous avez configuré un disque additionnel en suivant les instructions de [ce guide](https://docs.ovh.com/fr/vps/configurer-disque-additionnel/).
+Les étapes ci-dessous supposent que vous avez configuré un disque additionnel en suivant les instructions de [ce guide](https://docs.ovh.com/ca/fr/vps/configurer-disque-additionnel/).
 
 ### Modifier la taille du disque <a name="extend"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les `Serveurs Privés Virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les `Serveurs Privés Virtuels`{.action}.
 
 Dans le cadre **Résumé des options**, cliquez sur le bouton `...`{.action} dans la section `Disques additionnels`. Sélectionnez `Augmenter la taille du disque`{.action}.
 
@@ -56,7 +56,7 @@ L'augmentation de capacité du disque prendra quelques minutes après la validat
 > [!warning]
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de faire appel à [notre communauté](https://community.ovh.com/) si vous éprouvez des difficultés.
+> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) ou de faire appel à [notre communauté](https://community.ovh.com/) si vous éprouvez des difficultés.
 >
 
 #### Sur un VPS Linux
