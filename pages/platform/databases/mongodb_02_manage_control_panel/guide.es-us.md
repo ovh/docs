@@ -6,10 +6,10 @@ section: MongoDB - Guides
 order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/'
-updated: 2023-03-02
+updated: 2023-03-14
 ---
 
-**Last updated March 2nd, 2023**
+**Last updated March 14th, 2023**
 
 ## Objective
 
