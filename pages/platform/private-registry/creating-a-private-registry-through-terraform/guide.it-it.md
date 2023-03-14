@@ -10,7 +10,7 @@ category_l2: Managed Private Registry
 category_l3: Getting started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-registry/creating-a-private-registry-through-terraform/'
-updated: 2022-08-16
+updated: 2023-03-14
 ---
 
 <style>
@@ -35,7 +35,7 @@ updated: 2022-08-16
  }
 </style>
 
-**Last updated 16th August 2022**
+**Last updated 14th March 2023**
 
 ## Objective
 
@@ -195,9 +195,13 @@ resource "ovh_cloud_project_containerregistry_user" "myuser" {
 }
 ```
 
-In this resources configuration, we ask Terraform to create a private registry, in the GRA region and in the small plan.
+In this resources configuration, we ask Terraform to create a private registry, in the `GRA` region and in the `small` plan.
 
 And we tell Terraform to create a user attached to the registry.
+
+> [!primary]
+>
+> OVHcloud Managed private registries are only available in `GRA` region for the moment and several [others regions are coming](https://github.com/ovh/public-cloud-roadmap/projects/1).
 
 Finally, create a `output.tf` file with the following content:
 
@@ -353,6 +357,19 @@ password = <sensitive>
 registry-url = "https://1ab234c5.gra7.container-registry.ovh.net"
 user = "myuser"
 ```
+
+> [!primary]
+>
+> If after running `terraform apply` command you get an error message `Error: Your query returned no results. Please change your search criteria and try again.`, it means you enter an incorrect `region`.
+> Please fix with a correct region:
+>
+> ```
+> data "ovh_cloud_project_capabilities_containerregistry_filter" "capabilities" {
+  service_name = var.service_name
+  plan_name    = "SMALL"
+  region       = "GRA"
+}
+> ```
 
 Now, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
 As you can see, your registry has been successfuly created:
