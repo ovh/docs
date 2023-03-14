@@ -37,7 +37,7 @@ We provide official MongoDB built-in roles. Please read the [official MongoDB do
 
 In our example, we will create a user called `foo` with the role `userAdmin` on the `bar` database and the role `readWriteAnyDatabase` on any database as its name implies:
 
-![User Creation](images/mongodb_02_manage_control_panel-20230313174020.pngg){.thumbnail}
+![User Creation](images/mongodb_02_manage_control_panel-20230313174020.png){.thumbnail}
 
 Once created or updated, note the password then after a few seconds check to verify the user is ready and with the "Enabled" status in the OVHcloud Control Panel.
 
@@ -96,7 +96,7 @@ You can specify the MongoDB connection string using either:
 
 Select the `Users`{.action} tab to get the username or reset a user password.
 
-![Users tab](images/mongodb_02_manage_control_panel-20230313175812.png.png){.thumbnail}
+![Users tab](images/mongodb_02_manage_control_panel-20230313175812.png){.thumbnail}
 
 ## Go further
 
