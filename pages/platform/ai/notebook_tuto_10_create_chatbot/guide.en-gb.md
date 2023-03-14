@@ -65,7 +65,7 @@ ovhai notebook run conda vscode \
 ```
 
 Few explanations here, line by line:
-- It will launch a notebook with the Python Conda framework an VScode editor.
+- It will launch a notebook with the Python Miniconda framework a Visual Studio Code editor.
 - With the name "vscode-ovh-chatbot".
 - We specify a version for the conda framework (Python 3.9). 
 - we attach 1 data volume to the notebook, as explained previously.
