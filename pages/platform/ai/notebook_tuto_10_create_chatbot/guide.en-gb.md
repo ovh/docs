@@ -79,7 +79,7 @@ Few explanations here, line by line:
 > Note that the **GitHub** repository don't have to be added because it is already present when you create an AI Notebook. 
 >
 
-Your notebook is ready, you can connect to him. 
+Your notebook is ready, you can access it and log in. 
 
 But just before training the notebook, you must install all the dependencies of rasa. So open a terminal and launch this command !
 ```console 
