@@ -49,7 +49,7 @@ Now, let's start to create and train our chatbot.
 
 ### Create and train a chatbot with a Visual Studio Code notebook
 
- In order to do it you will need to create a vscode notebook. You can attach one volume if you want to save the model created. 
+ In order to do it you will need to create a Visual Studio Code notebook. You can attach one volume if you want to save the model created. 
 Don't forget to put the model inside the folder `trained-models` before stopping your notebook. By doing this, your model will be save in your object container even if you delete your notebook. Here is the command to run: 
 
 
