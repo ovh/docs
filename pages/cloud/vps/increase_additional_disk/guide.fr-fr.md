@@ -1,35 +1,36 @@
 ---
-title: "Augmenter la taille d’un disque supplémentaire"
-excerpt: "Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale"
+title: "Augmenter la taille d’un disque additionnel"
+excerpt: "Découvrez comment augmenter la taille d'un volume additionnel et agrandir sa partition principale"
 slug: vps-increase-size-additional-disk
 section: "Sauvegarde"
-updated: 2023-03-10
+updated: 2023-03-14
+order: 4
 ---
 
-**Dernière mise à jour le 10/03/2023**
+**Dernière mise à jour le 14/03/2023**
 
 ## Objectif
 
-Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous pouvez ajouter du stockage en augmentant sa taille.
+Si vous avez atteint la capacité maximale de votre disque additionnel, vous pouvez ajouter du stockage en augmentant sa taille.
 
-Ce guide explique comment augmenter la taille d'un disque supplémentaire et étendre la partition principale en conséquence.
+**Ce guide explique comment augmenter la taille d'un disque additionnel et étendre la partition principale en conséquence.**
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
-- [Disque supplémentaire](https://docs.ovh.com/fr/vps/configurer-disque-additionnel/) configuré sur le VPS
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud.
+- Un [disque additionnel](https://docs.ovh.com/fr/vps/configurer-disque-additionnel/) configuré sur le VPS.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à votre VPS en SSH ou en RDP pour l'administration.
 
-## Instructions
+## En pratique
 
-Les étapes suivantes supposent que vous avez configuré un disque supplémentaire selon [notre guide](https://docs.ovh.com/fr/vps/configurer-disque-additionnel/).
+Les étapes ci-dessous supposent que vous avez configuré un disque additionnel en suivant les instructions de [ce guide](https://docs.ovh.com/fr/vps/configurer-disque-additionnel/).
 
 ### Modifier la taille du disque <a name="extend"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les `Serveurs Privés Virtuels`{.action}.
 
-Dans le cadre **Résumé des options**, cliquez sur `...`{.action} dans la section "Disques additionnels". Sélectionnez `Augmenter la taille du disque`{.action}.
+Dans le cadre **Résumé des options**, cliquez sur le bouton `...`{.action} dans la section `Disques additionnels`. Sélectionnez `Augmenter la taille du disque`{.action}.
 
 ![size-disk-vps](images/increase_disk_vps01.png){.thumbnail}
 
@@ -37,17 +38,17 @@ Choisissez la nouvelle taille de disque dans la fenêtre qui apparaît, puis cli
 
 ![size-disk-vps](images/increase_disk_vps02.png){.thumbnail}
 
-Un message apparaîtra pour confirmer votre demande. Cliquez sur le lien à l'intérieur du message et suivez le processus de commande. (Il est également possible qu'un nouvel onglet de navigation pour la commande se soit ouvert automatiquement.)
+Un message apparaîtra pour confirmer votre demande. Cliquez sur le lien à l'intérieur du message et suivez le processus de commande. Il est possible qu'un nouvel onglet de navigation pour la commande se soit ouvert automatiquement.
 
 ![size-disk-vps](images/increase_disk_vps03.png){.thumbnail}
 
-L'upgrade du disque prendra quelques minutes après la validation du paiement. Vous pouvez vérifier la progression dans l'onglet `Disques additionnel`{.action} : Si la nouvelle taille choisie est affichée, le disque est prêt.
+L'augmentation de capacité du disque prendra quelques minutes après la validation du paiement. Vous pouvez vérifier la progression dans l'onglet `Disques additionnel`{.action} : si la nouvelle taille choisie est affichée, le disque est prêt.
 
 ![size-disk-vps](images/increase_disk_vps04.png){.thumbnail}
 
 > [!warning]
 >
-> Sauvegardez vos données situées sur le disque supplémentaire avant de continuer.
+> Sauvegardez vos données situées sur le disque additionnel avant de continuer.
 >
 
 ### Extension de la partition
@@ -62,7 +63,7 @@ L'upgrade du disque prendra quelques minutes après la validation du paiement. V
 
 > [!primary]
 >
-> Notez que cette section décrit une approche générale des étapes nécessaires, basée sur un système d'exploitation serveur Ubuntu. Certaines commandes peuvent nécessiter une personnalisation pour la distribution que vous utilisez.
+> Notez que cette section décrit une approche générale des étapes nécessaires, basée sur un système d'exploitation Ubuntu Server. Certaines commandes peuvent nécessiter une personnalisation pour la distribution que vous utilisez.
 >
 
 Si une distribution GNU/Linux est installée sur votre VPS, établissez une connexion SSH à votre serveur à partir du terminal de ligne de commande ou en utilisant une application cliente SSH.
@@ -75,9 +76,9 @@ Assurez-vous que le disque n'est pas monté à l'aide de la commande suivante :
 ubuntu@server:~$ sudo umount /mnt/disk
 ```
 
-Remplacez `/mnt/disk` par votre chemin de montage réel vers le disque supplémentaire, si nécessaire.
+Remplacez `/mnt/disk` par votre chemin de montage réel vers le disque additionnel, si nécessaire.
 
-Déterminer les noms des disques et des partitions :
+Déterminez les noms des disques et des partitions :
 
 ```bash
 ubuntu@server:~$ lsblk
@@ -187,20 +188,19 @@ tmpfs           776M  4.0K  776M   1% /run/user/1000
 /dev/sdc1        99G   24K   94G   1% /mnt/disk
 ```
 
-
 #### Sur un VPS Windows
 
 Si un OS Windows est installé sur votre VPS, établissez une connexion RDP (Remote Desktop) avec votre serveur.
 
-Une fois connecté, faites un clic droit sur le bouton `Menu`{.action} Démarrer et ouvrez `Gestion`{.action} des disques.
+Une fois connecté, faites un clic droit sur le bouton `Menu Démarrer`{.action} et ouvrez `Gestion des disques`{.action}.
 
 ![winmountdiskvps](images/increase_disk_vps05.png){.thumbnail}
 
-Le [disque étendu](#extend) affiche la capacité supplémentaire sous forme d'espace non alloué. Faites un clic droit sur le volume de votre disque supplémentaire et sélectionnez `Étendre le volume`{.action} dans le menu contextuel.
+Le [disque étendu](#extend) affiche la capacité supplémentaire sous forme d'espace non alloué. Faites un clic droit sur le volume de votre disque additionnel et sélectionnez `Étendre le volume`{.action} dans le menu contextuel.
 
 ![winmountdiskvps](images/increase_disk_vps06.png){.thumbnail}
 
-Dans l'Assistant Extension de volume, cliquez sur `Suivant`{.action} pour continuer.
+Dans l'assistant d'extension de volume, cliquez sur `Suivant`{.action} pour continuer.
 
 Vous pourrez modifier l'espace disque à cette étape si cela est nécessaire. Cliquez sur `Suivant`{.action}.
 
@@ -208,10 +208,9 @@ Vous pourrez modifier l'espace disque à cette étape si cela est nécessaire. C
 
 Cliquez sur `Terminer`{.action} pour terminer le processus.
 
-Le volume redimensionné inclut désormais l'espace disque supplémentaire.
+Le volume redimensionné inclut désormais l'espace disque additionnel.
 
 ![winmountdiskvps](images/increase_disk_vps08.png){.thumbnail}
-
 
 ## Aller plus loin
 
