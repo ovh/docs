@@ -76,7 +76,7 @@ Few explanations here, line by line:
 
 > [!primary]
 >
-> Note that the repository git don't have to be added because it is already present when you create an AI Notebook. 
+> Note that the **GitHub** repository don't have to be added because it is already present when you create an AI Notebook. 
 >
 
 Your notebook is ready, you can connect to him. 
