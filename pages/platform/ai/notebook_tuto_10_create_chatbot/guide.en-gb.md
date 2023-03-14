@@ -81,7 +81,7 @@ Few explanations here, line by line:
 
 Your notebook is ready, you can access it and log in. 
 
-But just before training the notebook, you must install all the dependencies of rasa. So open a terminal and launch this command !
+But just before training an AI model inside the notebook, you must install all the dependencies of rasa. Open a terminal and launch this command!
 ```console 
 pip install rasa
 ```
