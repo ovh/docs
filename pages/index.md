@@ -158,6 +158,7 @@
             + [Using snapshots on a VPS](cloud/vps/using-snapshots-on-a-vps)
             + [Using automatic backups on a VPS](cloud/vps/using-automated-backups-on-a-vps)
             + [Configuring an additional disk](cloud/vps/config_additional_disk)
+            + [Increasing the size of an additional disk](cloud/vps/increase_additional_disk)
         + [Network and IP management](bare-metal-cloud-virtual-private-servers-network-and-ip-management)
             + [Configuring IPv6 on a VPS](cloud/vps/configure-ipv6)
             + [Configuring the reverse DNS of a VPS](cloud/vps/configuring-reverse-dns)
