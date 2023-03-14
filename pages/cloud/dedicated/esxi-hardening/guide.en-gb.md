@@ -15,25 +15,25 @@ The purpose of this guide is to help you optimise security for your ESXi system.
 
 In particular, this guide explains how to:
 
-- restrict access to your ESXi server to a specific IP address or network range
-- disable services that increase your server's attack surface.
+- Restrict access to your ESXi server to a specific IP address or network range.
+- Disable services that increase your server's attack surface.
 
 We will do this using the on-board features offered by VMware, as well as those offered by OVHcloud.
 
 > [!warning]
 > 
-> Recently, ESXi systems fell victim to a flaw that malicious groups exploited very quickly across public networks.
+> Recently, ESXi systems fell victim to a security flaw that malicious groups exploited very quickly across public networks.
 >
 > You can find more information on this attack in [an additional FAQ](https://docs.ovh.com/gb/en/dedicated/esxi-faq/).
 >
 
-### Security best practices reminder:
+### Security best practices reminder
 
 - Update your ESXi systems regularly.
-- Restrict access only to trusted IP addresses.
+- Restrict access to trusted IP addresses only.
 - Disable unused ports and services.
 - Ensure access to your servers or network equipment is limited, controlled and protected with strong passwords.
-- Back up your critical data in protected, isolated external disks and backup servers.
+- Back up your critical data to protected, isolated external disks and backup servers.
 
 **Optional**:
 
@@ -42,9 +42,9 @@ We will do this using the on-board features offered by VMware, as well as those 
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
-- a dedicated server with the ESXi solution deployed
-- an offer compatible with our [Network Firewall](https://docs.ovh.com/gb/en/dedicated/firewall-network/) feature, if you would like to use it for filtering
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- A dedicated server with the ESXi solution deployed
+- An offer compatible with our [Network Firewall](https://docs.ovh.com/gb/en/dedicated/firewall-network/) feature, if you would like to use it for filtering
 
 ## Instructions
 
@@ -65,7 +65,7 @@ Reminder of its definition and operating principle:
 > To do this, you will need to [reboot](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#restarting-your-dedicated-server_1) your ESXi server via the OVHcloud Control Panel.
 > 
 
-You can view access log history in the following files from an SSH shell:
+You can view the access log history in the following files via SSH:
 
 - `/var/run/log/vobd.log` contains the logs that can be used for monitoring and troubleshooting:
 
@@ -120,7 +120,7 @@ It is recommended that you filter legitimate access in this way:
 > We strongly advise disabling **SSH** and **SLP** services.
 > If you still use the SSH service, restrict its use and access as much as possible.
 > This also applies to **shell** access.
-> Prioritize only what is strictly necessary for each of your needs.
+> Prioritise only what is strictly necessary for each of your needs.
 
 #### Manipulation via the graphical interface
 
@@ -197,8 +197,8 @@ esxcli system account list
 
 > Explanations for changing/adapting access rules:
 > 
-> - The `vSphereClient` service: this service corresponds to the web administration interface on port 443 (HTTPS).
-> - The `sshServer` service: this service corresponds to SSH access on port 22.
+> - The `vSphereClient` service: This service corresponds to the web administration interface on port 443 (HTTPS).
+> - The `sshServer` service: This service corresponds to SSH access on port 22.
 
 Example with the vSphereClient service:
 
