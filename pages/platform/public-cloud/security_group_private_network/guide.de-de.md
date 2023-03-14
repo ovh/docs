@@ -3,7 +3,7 @@ title: Verwaltung von Firewall-Regeln und Port Security für Netzwerke über die
 slug: firewall_security_pci
 excerpt: Erfahren Sie hier, wie Sicherheitsgruppen in der Public Cloud funktionieren
 section: OpenStack
-updated: 2022-08-25
+updated: 2023-03-13
 ---
 
 <style>
@@ -32,7 +32,7 @@ updated: 2022-08-25
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 25.08.2022**
+**Letzte Aktualisierung am 13.03.2023**
 
 ## Ziel
 
@@ -126,7 +126,9 @@ Demnach lassen alle Netzwerk-Ports (öffentlich und privat) jede Verbindung beim
 
 #### Regeln hinzufügen
 
-Wenn Sie bestimmte Regeln konfigurieren möchten, können Sie eine neue Sicherheitsgruppe erstellen und dann Ihren Netzwerk-Port zuweisen.
+> [!warning]
+> Wenn Sie spezifische Regeln konfigurieren möchten, muss dazu eine neue Sicherheitsgruppe erstellt und dem Netzwerk-Port zugewiesen werden. Wir raten dazu, die Sicherheitsgruppe "Default" nicht zu ändern, um den Zugriff auf Ihre Instanz unter allen Umständen aufrechtzuerhalten (z. B. im Rescue-Modus).
+>
 
 Verwenden Sie diesen Befehl, um die Gruppe zu erstellen:
 
