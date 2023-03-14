@@ -95,7 +95,7 @@ It will create some folders with basic data for rasa chatbot. During the command
 
 ![image](images/conversation.png){.thumbnail}
 
-Here, we train a very simple model with small data. There are some frameworks like [chatette](https://github.com/SimGus/Chatette) who generate some data and permits to create more powerful models. 
+Here, we train a very simple model with few data. There are some frameworks like [chatette](https://github.com/SimGus/Chatette) who generate some data and permits to create more powerful models. 
 
 ## Go further
 
