@@ -36,7 +36,7 @@ ovhai token create -l model=rasabotRW --role operator token-RW-chatbot
 
 Token is now created. Don't forget to save the token to use it later.
 
-Now, if you already have train some rasa models with AI Training by following the tutorial ([Train with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/)), you already have a container with your trained models. You can skip the next part and go directly [here](#Create-and-train-a-chatbot-with-a-visual-studio-code-notebook).
+Now, if you already have trained some rasa models with AI Training by following the tutorial ([Train with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/)), you already have created a container with your trained models. You can skip the next part and go directly [here](#Create-and-train-a-chatbot-with-a-visual-studio-code-notebook).
 
 ### Understand storage concepts
 
