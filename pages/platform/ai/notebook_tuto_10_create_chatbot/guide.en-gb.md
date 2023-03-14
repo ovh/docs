@@ -86,7 +86,7 @@ But just before training an AI model inside the notebook, you must install all t
 pip install rasa
 ```
 
-Once you installed all the dependecies, you can create and train the chatbot with only one command in your terminal. Run at the root of your directory :
+Once you have installed all the dependencies, you can create and train the chatbot with only one command in your terminal. Run at the root of your directory:
 ```console
 rasa init
 ```
