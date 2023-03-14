@@ -87,7 +87,7 @@ Télécharger un fichier `file.txt` depuis un bucket :
 $ rclone copy <profile_name>:mybucket/file.txt fichier.txt
 ```
 
-Vous trouverez sur le site officiel de Rclone une documentation précise des actions possibles: [Documentation officielle rClone](https://rclone.org/docs/){.external}.
+Vous trouverez sur le site officiel de Rclone une documentation précise des actions possibles: [Documentation officielle Rclone](https://rclone.org/docs/){.external}.
 
 ## Aller plus loin
 

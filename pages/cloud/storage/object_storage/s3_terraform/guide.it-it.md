@@ -1,14 +1,14 @@
 ---
-title: Gestisci un bucket S3 con terraform (EN)
+title: Object Storage - Gestisci un bucket S3 con Terraform (EN)
 slug: s3/manage-s3-bucket-with-terraform
-section: Tutorials
-order: 140
-updated: 2023-03-09
+section: Configure Object Storage with your solutions
+order: 180
+updated: 2023-03-14
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/s3/manage-s3-bucket-with-terraform/'
 ---
 
-**Last updated on 9th March 2023**
+**Last updated on 14th March 2023**
 
 ## Objective
 
