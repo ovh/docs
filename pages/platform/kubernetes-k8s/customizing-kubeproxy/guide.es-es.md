@@ -247,9 +247,9 @@ Since the version 0.28.1+ of our [OVH Terraform provider](https://registry.terra
 
 The "OVH provider" needs to be configured with a set of credentials:
 
-* an `application_key`
-* an `application_secret`
-* a `consumer_key`
+- an `application_key`
+- an `application_secret`
+- a `consumer_key`
 
 **Why?**
 
@@ -319,11 +319,11 @@ This later method (or a similar alternative) is recommended to avoid storing sec
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API, but other endpoints exist, depending on your needs:
 
-* `ovh-eu` for OVHcloud Europe API
-* `ovh-us` for OVHcloud US API
-* `ovh-ca` for OVHcloud North-America API
+- `ovh-eu` for OVHcloud Europe API
+- `ovh-us` for OVHcloud US API
+- `ovh-ca` for OVHcloud North-America API
 
-Then, create a `variables.tf` file with service_name:
+Then, create a `variables.tf` file with the service_name:
 
 ```bash
 variable service_name {
@@ -374,7 +374,7 @@ Initializing provider plugins...
 - Installed ovh/ovh v0.28.1 (signed by a HashiCorp partner, key ID F56D1A6CBDAAADA5)
 
 Partner and community providers are signed by their developers.
-If you'd like to know more about provider signing, you can read about it here:
+If you’d like to know more about provider signing, you can read about it here:
 https://www.terraform.io/docs/cli/plugins/signing.html
 
 Terraform has created a lock file .terraform.lock.hcl to record the provider
@@ -468,7 +468,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+Note: You didn’t use the -out option to save this plan, so Terraform can’t guarantee to take exactly these actions if you run "terraform apply" now.
 ```
 
 Thanks to the `plan` command, we can check what Terraform wants to create, modify or remove.
