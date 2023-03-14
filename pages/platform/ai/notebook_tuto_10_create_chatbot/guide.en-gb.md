@@ -103,7 +103,7 @@ If you want to use more functionnality about Rasa, please fill free to go into t
 
 [Rasa Open source](https://rasa.com/docs/rasa/)
 
-If you want to deploy your model created with the chatbot, you can follow this tutorial. 
+If you want to deploy your created model with the chatbot, you can follow this tutorial. 
 
 [How to deploy a chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/)
 
