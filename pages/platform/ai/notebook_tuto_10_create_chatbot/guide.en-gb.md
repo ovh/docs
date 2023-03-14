@@ -10,7 +10,7 @@ order: 10
 
 ## Objective
 
-The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebook. We will create and train the chatbot with a vscode notebook. At the end of the tutorial, we will have a model and we can speak to our chatbot. There is an another tutorial where you can train your chatbot with the tool `AI Training`. Here is the link [how to train a chatbot with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/).
+The aim of the tutorial is to understand how to create and train a chatbot model with AI Notebooks. We will create and train the chatbot with a Visual Studio Code notebook. At the end of the tutorial, we will have a model and we can speak to our chatbot. There is an another tutorial where you can train your chatbot with the tool `AI Training`. Here is the link [how to train a chatbot with AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/).
 
 We will use the famous open source framework [Rasa](https://rasa.community/) to build the chatbot. 
 
