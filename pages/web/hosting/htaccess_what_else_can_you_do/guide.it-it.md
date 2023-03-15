@@ -94,17 +94,8 @@ Ad esempio, per utilizzare homepage.html come pagina index, utilizza:
 DirectoryIndex homepage.html
 ```
 
-
-
-
-## Impostare reindirizzamenti
-Per effettuare questa operazione, consulta [questa guida](https://www.ovh.it/g1339.reindirizzamento-dominio#reindirizzamento_web_con_lhtaccess)
-
-
 ## Riscrivere un URL
 Per effettuare questa operazione, consulta [questa guida](https://www.ovh.it/g1971.hosting_condiviso_riscrivi_url_tramite_mod_rewrite_con_file_htaccess)
 
-
 ## 
 Per scoprire di più sul file .htaccess, [clicca qui](https://www.ovh.it/g1967.hosting_condiviso_tutto_sul_file_htaccess)
-

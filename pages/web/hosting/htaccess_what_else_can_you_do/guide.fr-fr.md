@@ -21,15 +21,12 @@ Avant de procéder, il est nécessaire de préciser quelques petites choses par 
 ### Empecher le listage du contenu d'un repertoire
 Pour empécher les internautes de lister l'ensemble des fichiers contenus dans un répertoire en l'absence d'index (.cgi, .html, .php etc ....), créez un fichier .htaccess contenant la ligne ci-dessous :
 
-
 ```bash
 Options -Indexes
 ```
 
-
 ### Rediriger les messages d'erreur
 Si vous voulez utiliser des messages d'erreur personnalisés ou rediriger les erreurs sur une page web, créez un fichier .htaccess contenant des lignes de cette forme :
-
 
 ```bash
 ErrorDocument numéro_d_erreur message_ou_destination
@@ -49,7 +46,6 @@ Remplacez "message_ou_destination" par l'action à effectuer. Pour afficher un s
 
 Vous pouvez également rediriger l'erreur vers un script CGI qui affichera un message, redirigera le visiteur vers un autre fichier selon l'URL qui était demandée au départ (disponible dans la variable d'environnement REQUEST_URI), et/ou vous enverra un mail, etc. Pour cela, rajouter la ligne suivante dans votre fichier .htaccess :
 
-
 ```bash
 Errordocument 404 /cgi-bin/erreur.cgi?type=404
 ```
@@ -60,13 +56,10 @@ Un changement est à faire uniquement si la page est appelée en https (SSL) pou
 ```bash
 Errordocument 401 /~login/error.html
 ```
-
 Si cela ne fonctionne pas, vérifiez que dans les propriétés d'Internet Explorer vous avez, dans l'onglet Avancé, décoché "Afficher des messages d'erreur HTTP simplifiés".
-
 
 ### Specifier un fichier d'index different
 Par défaut, le fichier index d'un répertoire est index.html, index.htm ou index.php. Si vous voulez que ce soit un autre fichier, vous pouvez mettre une ligne de ce type dans votre .htaccess :
-
 
 ```bash
 DirectoryIndex nom_du_fichier
@@ -74,18 +67,12 @@ DirectoryIndex nom_du_fichier
 
 Par exemple, si vous voulez utiliser la page accueil.html comme page d'index, utilisez la ligne suivante :
 
-
 ```bash
 DirectoryIndex accueil.html
 ```
 
-
 ### Faire de la reecriture d'URL
 Vous pouvez pour cela vous rendre sur le lien suivant : [Cliquer ici](../htaccess-reecriture-url-mod-rewrite/)
-
-
-## Le fichier .htaccess
-Tout sur le fichier .htaccess sur le lien suivant : [Cliquer ici](../mutualise-tout-sur-le-fichier-htaccess/)
 
 ## Aller plus loin
 
