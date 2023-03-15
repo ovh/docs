@@ -28,7 +28,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Choisir la gamme de Conteneur Object Storage en fonction des besoins (SWIFT, S3 High Speed, S3 Standard, ...)| RA | I |
 | Renseigner les données à caractère personnel nécessaires pour la souscription au service | RA | I |
-| Choisir la localisation du service en cohérence avec la localisation des instances | RA | I |
+| Choisir la localisation du service| RA | I |
 
 ### 2. Mise à disposition du service
 
