@@ -4,7 +4,7 @@ slug: raci-object-storage-public-cloud
 section: Informations générales
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du Object Storage Public Cloud"
 order: 6
-updated: 2022-12-23
+updated: 2023-03-16
 ---
 
 **Dernière mise à jour le 16/03/2023**
