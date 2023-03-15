@@ -43,7 +43,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Création des identifiants de connexion S3 pour un utilisateur Open stack | RA |  |
+| Créer les identifiants de connexion S3 pour un utilisateur Open stack | RA |  |
 
 
 ### 3. Utilisation du service
