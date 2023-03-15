@@ -11,6 +11,11 @@ updated: 2023-03-14
 
 **Last updated March 14th, 2023**
 
+> [!primary]
+>
+> The Notebooks for Apache Spark feature is in `alpha`. During the alpha-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, while this phase is not complete.
+>
+
 ## Objective
 
 The purpose of this tutorial is to show how to clean data with [Apache Spark](https://spark.apache.org/) inside a [Jupyter Notebook](https://jupyter.org/).
@@ -40,7 +45,11 @@ Select both files from your computer and add them to the root `/` of your bucket
 
 ### Retrieve bucket credentials
 
-There are a few information that we will need as inputs of the notebook.
+> [!warning]
+>
+> Please be aware that notebooks are only available in `public access` during the `alpha` of the Notebooks for Apache Spark feature. As such, be careful of the **data** and the **credentials** you may expose in these notebooks.
+
+There is a few information that we will need as inputs of the notebook.
 
 First, and while we're on the container page of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) we will copy the `Endpoint` information and save it.
 
