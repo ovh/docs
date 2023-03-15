@@ -76,7 +76,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer et monitorer la capacité des serveurs physiques utilisés pour le Service Object Storage |  | RA |
 | Conserver les logs du Service Object Storage|  | RA |
 | Monitorer le bon fonctionnement des dispositifs physiques en support du stockage| I | RA |
-| Créer, modifier, contrôler, restaurer, supprimer les jobs de backups | RA |  |
+| Créer, modifier, contrôler, restaurer, supprimer les backups | RA |  |
 | Réaliser la maintenance des dispositifs de stockage fournis |  | RA |
 
 ##### **3.1.4. Stockage**
