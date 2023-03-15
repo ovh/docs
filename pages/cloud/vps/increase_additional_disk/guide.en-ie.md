@@ -4,6 +4,7 @@ excerpt: "Find out how to increase the size of an additional volume and enlarge 
 slug: vps-increase-size-additional-disk
 section: "Backup options"
 updated: 2023-03-10
+order: 4
 ---
 
 **Last updated 10th March 2022**
