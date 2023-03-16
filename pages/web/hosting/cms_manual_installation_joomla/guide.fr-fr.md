@@ -58,7 +58,7 @@ Si les fichiers sources de Joomla! ont été placés correctement dans votre dos
 
 Sélectionnez la langue, saisissez le nom de votre site web puis cliquez sur `Configuration des données de connexion`{.action}.
 
-#### 2.1 - Configurer les données de connexion à votre Joomla!
+#### 2.2 - Configurer les données de connexion à votre Joomla!
 
 Définissez les accès à votre espace d'administration (Back Office) Joomla! :
 
@@ -71,7 +71,7 @@ Définissez les accès à votre espace d'administration (Back Office) Joomla! :
 
 Vérifiez les éléments renseignés puis cliquez sur `Configuration de la connexion à la base de données`{.action}.
 
-#### 2.1 - Lier votre base de données avec votre Joomla!
+#### 2.3 - Lier votre base de données avec votre Joomla!
 
 Renseignez les informations demandées concernant la base de données :
 
