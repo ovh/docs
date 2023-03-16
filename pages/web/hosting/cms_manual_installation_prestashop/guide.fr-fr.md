@@ -60,7 +60,7 @@ Cliquez sur `No thanks`{.action} si vous souhaitez conserver la version de Prest
 
 Saisissez votre domaine dans la barre de recherche de votre navigateur Internet.
 
-Si les fichiers sources de votre Prestashop ont été placés correctement dans votre dossier racine, la page de Prestashop permettant de sélectionner la langue apparaît :
+Si les fichiers sources de votre PrestaShop ont été placés correctement dans votre dossier racine, la page de PrestaShop permettant de sélectionner la langue apparaît :
 
 ![PrestaShop installation step 2](images/Prestashop-install-select-language.png){.thumbnail}
 
@@ -122,7 +122,7 @@ Pour les bases de données créées sur un Web Cloud Databases, référez-vous a
 > 
 > - Le nom du serveur d'une base de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
 >
-> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `xx1111-XXX.eu.clouddb.ovh.net`, **«xx1111»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
+> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `aa00000-XXX.eu.clouddb.ovh.net`, **«aa00000»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par le reste de la référence de votre service Web Cloud Databases.
 >
 
 - *Préfixe des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
