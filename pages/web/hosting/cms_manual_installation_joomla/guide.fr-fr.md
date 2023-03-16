@@ -54,14 +54,80 @@ Saisissez votre domaine dans la barre de recherche de votre navigateur Internet.
 
 Si les fichiers sources de Joomla! ont été placés correctement dans votre dossier racine, la page Joomla! permettant de sélectionner la langue apparaît :
 
-![hosting](images/.png){.thumbnail}
+![Joomla installation step 1](images/Joomla-install-select-language-1.png){.thumbnail}
 
-Sélectionnez la langue du site puis cliquez sur `Continuer`{.action}.
+Sélectionnez la langue, saisissez le nom de votre site web puis cliquez sur `Configuration des données de connexion`{.action}.
 
+#### 2.1 - Configurer les données de connexion à votre Joomla!
 
-![hosting](images/3157.png){.thumbnail}
+Définissez les accès à votre espace d'administration (Back Office) Joomla! :
+
+![Joomla installation step 2](images/Joomla-install-define-admin-2.png){.thumbnail}
+
+- *Entrer le nom réel de votre Super Utilisateur* : Saisissez votre nom réel.
+- *Définir le nom d'utilisateur de votre compte Super Utilisateur* : Choisissez un nom d'utilisateur qui vous permettra de vous connecter à votre espace d'administration Joomla!.
+- *Définir le mot de passe pour votre compte Super Utilisateur* : Choisissez un mot de passe avec un minimu de **12 caractères**.
+- *Entrer l'adresse e-mail du Super Utilisateur du site web* : Saisissez une adresse mail valide. C'est cette adresse e-mail que Joomla! utilisera pour vous envoyer d'éventuelles notifications.
+
+Vérifiez les éléments renseignés puis cliquez sur `Configuration de la connexion à la base de données`{.action}.
+
+#### 2.1 - Lier votre base de données avec votre Joomla!
+
+Renseignez les informations demandées concernant la base de données :
+
+![Joomla installation step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
+
+Référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour remplir les champs suivants :
+
+- *Selectionner le type de base de données* : Sélectionnez le type de votre base de données parmi les types disponibles pour Joomla!. Si vous utilisez une base de données mutualisée OVHcloud, vous pouvez laisser par défaut la valeur **MySQLi**.
+
+- *Saisissez le nom de l'hôte, généralement "localhost" ou un nom fourni par votre hôte* : renseignez le nom du serveur de votre base de données, présent dans l'e-mail d'installation ou dans votre espace client OVHcloud. 
+
+> [!primary]
+> 
+> - Le nom du serveur d'une bases de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
+>
+> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
+>
+
+- *Saisissez soit un nom d'utilisateur que vous avez créé, soit un nom d'utilisateur fourni par votre hébergeur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
+Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+
+- *Saisissez soit un mot de passe que vous avez créé, soit un mot de passe fourni par votre hébergeur* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayiez modifié entre temps.
+
+- *Entrer le nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Il est identique au nom d'utilisateur de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
+
+- *Saisissez un préfixe de table ou utilisez celui qui est généré de manière aléatoire* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+
+-*Chiffrement de la connexion** : Laissez la valeur **Par défaut**.
+
+Cliquez sur `Installer Joomla`{.action}.
+
+Le message suivant apparaît :
+
+![Joomla installation step 3-1](images/Joomla-install-db-connect-3-1.png){.thumbnail}
+
+Du fait que vous utilisez une base de données présente en dehors d'un hébergement local, vous devrez supprimer le *token* généré aléatoirement lors de l'installation de votre Joomla!.
+
+Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+
+Une fois connecté, rendez-vous dans le dossier **installation** de votre Joomla! puis supprimez uniquement le *token* présent sous la forme d'un fichier **.txt**.
+
+Retournez ensuite dans votre navigateur internet puis cliquez de nouveau sur `Installer Joomla`{.action}.
+
+#### 2.4 - Terminer l'installation
+
+Une fois l'installation terminée, la page suivante apparaît :
+
+![Joomla installation step 4](images/Joomla-install-ending-4.png){.thumbnail}
+
+L'installation est terminée mais vous pouvez ajouter des langues supplémentaires à votre CMS si besoin.
+
+Félicitations, votre Jommla! est prêt à être utilisé et administré.
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Site officiel Joomla!](https://joomla.org){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
