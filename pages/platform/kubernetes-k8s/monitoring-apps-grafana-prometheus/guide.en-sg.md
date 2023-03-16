@@ -4,7 +4,7 @@ slug: monitoring-apps-prometheus-grafana
 excerpt: 'Find out how to monitor and visualize metrics with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service'
 section: Monitoring & Observability
 order: 00
-updated: 2022-03-16
+updated: 2023-03-15
 ---
 
 <style>
@@ -29,7 +29,7 @@ updated: 2022-03-16
  }
 </style>
 
-**Last updated March 16, 2022.**
+**Last updated March 15, 2023.**
 
 ## Objective
 
@@ -83,35 +83,23 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈Happy Helming!⎈
 </code></pre>
 
-You could need to modify some settings. To do this, you can set parameters on the command line (`--set param.name=value`) or create a local `values.yml` based on the values from the chart.
-To get all the possible parameters:
+You need to modify some settings. To do this, inspect the chart to retrieve these values ​​in a file:
 
 ```bash
-helm inspect values prometheus-community/kube-prometheus-stack
+helm inspect values prometheus-community/kube-prometheus-stack > /tmp/kube-prometheus-stack.values
 ```
 
-> [!primary]
->
-> Some default values come from other charts, like Grafana for example: https://github.com/grafana/helm-charts/blob/main/charts/grafana/values.yaml
->
+Open the `/tmp/kube-prometheus-stack.values` file in your favorite editor.
 
-For example, a good practice is to change the default administrator password for Grafana.
-You can find it in the `grafana` section of the default values of the chart with the name `adminPassword`.
-Copy and save the Grafana admin password, you will use it later in this tutorial.
-You need change other parameters, like the service type for example.
-You can create a `/tmp/values.yml` as following to change these parameters:
+Then search into it for `adminPassword` and replace it with the password you want to use for Grafana.
+
+By default, the Grafana password should be like this:
+
 ```yaml
-grafana:
-  adminPassword: <my cool password>
-  service: 
-    type: LoadBalancer
-
-prometheus:
-  prometheusSpec:
-    serviceMonitorSelectorNilUsesHelmValues: false
-  service:
-    type: LoadBalancer
+  adminPassword: prom-operator
 ```
+
+Copy and save the Grafana admin password, you will use it later in this tutorial.
 
 You are now ready to install Prometheus and Grafana.
 
@@ -119,25 +107,15 @@ You are now ready to install Prometheus and Grafana.
 helm install prometheus-community/kube-prometheus-stack \
 --create-namespace --namespace prometheus \
 --generate-name \
---values /tmp/values.yml
-```
-
-Or you can directly set parameters to avoid creating a `values.yml`:
-
-```bash
-helm install prometheus-community/kube-prometheus-stack \
---create-namespace --namespace prometheus \
---generate-name \
+--values /tmp/kube-prometheus-stack.values \
 --set prometheus.service.type=LoadBalancer \
 --set prometheus.prometheusSpec.serviceMonitorSelectorNilUsesHelmValues=false \
---set grafana.adminPAssword=<my cool password>
 --set grafana.service.type=LoadBalancer
 ```
 
-
 > [!primary]
 >
-> You can choose to install or not some components, for example if you don't want Grafana just add `--set grafana.enabled=false` or add the `enabled: false` in the section `grafana` of the `/tmp/values.yml` file.
+> You can only install prometheus without Grafana by setting the following property to false: `--set grafana.enabled=false`
 >
 
 As you can see, a new `prometheus` namespace will be created and we specified that we want to deploy a LoadBalancer in order to access externally to Prometheus and Grafana easily.
@@ -147,8 +125,10 @@ You should have a behavior like this:
 <pre class="console"><code>$ helm install prometheus-community/kube-prometheus-stack \
 --create-namespace --namespace prometheus \
 --generate-name \
---values /tmp/values.yml
-
+--values /tmp/kube-prometheus-stack.values \
+--set prometheus.service.type=LoadBalancer \
+--set prometheus.prometheusSpec.serviceMonitorSelectorNilUsesHelmValues=false \
+--set grafana.service.type=LoadBalancer
 NAME: kube-prometheus-stack-1647417678
 LAST DEPLOYED: Wed Mar 16 09:01:23 2022
 NAMESPACE: prometheus
