@@ -4,7 +4,7 @@ slug: monitoring-apps-prometheus-grafana
 excerpt: 'Find out how to monitor and visualize metrics with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service'
 section: Monitoring & Observability
 order: 00
-updated: 2023-03-15
+updated: 2023-03-16
 ---
 
 <style>
@@ -29,7 +29,7 @@ updated: 2023-03-15
  }
 </style>
 
-**Last updated March 15, 2023.**
+**Last updated March 16, 2023.**
 
 ## Objective
 
