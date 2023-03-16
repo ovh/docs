@@ -64,10 +64,10 @@ Définissez les accès à votre espace d'administration (Back Office) Joomla! :
 
 ![Joomla installation step 2](images/Joomla-install-define-admin-2.png){.thumbnail}
 
-- *Entrer le nom réel de votre Super Utilisateur* : Saisissez votre nom réel.
-- *Définir le nom d'utilisateur de votre compte Super Utilisateur* : Choisissez un nom d'utilisateur qui vous permettra de vous connecter à votre espace d'administration Joomla!.
-- *Définir le mot de passe pour votre compte Super Utilisateur* : Choisissez un mot de passe avec un minimu de **12 caractères**.
-- *Entrer l'adresse e-mail du Super Utilisateur du site web* : Saisissez une adresse mail valide. C'est cette adresse e-mail que Joomla! utilisera pour vous envoyer d'éventuelles notifications.
+- *Entrer le nom réel de votre Super Utilisateur* : saisissez votre nom réel.
+- *Définir le nom d'utilisateur de votre compte Super Utilisateur* : choisissez un nom d'utilisateur qui vous permettra de vous connecter à votre espace d'administration Joomla!.
+- *Définir le mot de passe pour votre compte Super Utilisateur* : choisissez un mot de passe avec un minimu de **12 caractères**.
+- *Entrer l'adresse e-mail du Super Utilisateur du site web* : saisissez une adresse mail valide. C'est cette adresse e-mail que Joomla! utilisera pour vous envoyer d'éventuelles notifications.
 
 Vérifiez les éléments renseignés puis cliquez sur `Configuration de la connexion à la base de données`{.action}.
 
@@ -79,7 +79,7 @@ Renseignez les informations demandées concernant la base de données :
 
 Référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour remplir les champs suivants :
 
-- *Selectionner le type de base de données* : Sélectionnez le type de votre base de données parmi les types disponibles pour Joomla!. Si vous utilisez une base de données mutualisée OVHcloud, vous pouvez laisser par défaut la valeur **MySQLi**.
+- *Selectionner le type de base de données* : sélectionnez le type de votre base de données parmi les types disponibles pour Joomla!. Si vous utilisez une base de données mutualisée OVHcloud, vous pouvez laisser par défaut la valeur **MySQLi**.
 
 - *Saisissez le nom de l'hôte, généralement "localhost" ou un nom fourni par votre hôte* : renseignez le nom du serveur de votre base de données, présent dans l'e-mail d'installation ou dans votre espace client OVHcloud. 
 
@@ -99,7 +99,7 @@ Pour les bases de données créées sur un Web Cloud Databases, référez-vous a
 
 - *Saisissez un préfixe de table ou utilisez celui qui est généré de manière aléatoire* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
--*Chiffrement de la connexion** : Laissez la valeur **Par défaut**.
+-*Chiffrement de la connexion** : laissez la valeur **Par défaut**.
 
 Cliquez sur `Installer Joomla`{.action}.
 
