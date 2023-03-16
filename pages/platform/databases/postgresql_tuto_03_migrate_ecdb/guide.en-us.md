@@ -1,22 +1,22 @@
 ---
-title: PostgreSQL - Tutorial - How to migrate from Enterprise Cloud Databases to Public Cloud Databases
-excerpt: Learn how to migrate a PostgreSQL Enterprise Cloud Databases instance to Public Cloud Databases for PostgreSQL
-slug: postgresql/howto-migrate-ecdb-to-pcd
+title: PostgreSQL - Tutorial - How to migrate an on-premises database to Public Cloud Databases
+excerpt: Learn how to migrate a on-premises PostgreSQL database instance to Public Cloud Databases for PostgreSQL
+slug: postgresql/howto-migrate-on-prem-to-pcd
 section: PostgreSQL - Tutorials
 order: 030
-updated: 2022-03-02
+updated: 2022-03-16
 ---
 
-**Last updated March 2nd 2022**
+**Last updated March 16th, 2023**
 
 ## Objective
 
-**This guide details a procedure to migrate a PostgreSQL instance running on OVHcloud Enterprise Cloud Databases (soon to be EOL) to OVHcloud Public Cloud Databases for PostgreSQL.**
+**This guide details a procedure to migrate a PostgreSQL instance running on-premises to OVHcloud Public Cloud Databases for PostgreSQL.**
 
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/compute/) in your OVHcloud account
-- A PostgreSQL database running on OVHcloud Enterprise Cloud Databases (the "source" instance)
+- A PostgreSQL database running on-premises (the "source" instance)
 - A PostgreSQL database running on OVHcloud Public Cloud Databases (the "target" instance)
 - A PostgreSQL client that can connect to both database instances, source and target.
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
@@ -28,12 +28,7 @@ These guides can help you to meet these requirements:
 
 ## Considerations
 
-> [!warning]
->
-> While the Enterprise Cloud Databases offer granted you super user privilege, Public Cloud Databases for PostgreSQL only grants its user admin level privilege. Thus, any application or administrative task that may have utilized that super user access needs to be adapted so that it requires at most the privilege granted to the default `avnadmin` admin user.
->
-
-- This document outlines an offline migration path for your database, which means you'll have to suspend all the writes from your application and schedule for maintenance for the duration of the migration. Ensure you plan sufficient downtime to carry out all the migration tasks.
+- This document outlines an offline migration path for your database, which means you'll have to suspend all the writes from your application  for the duration of the migration. Ensure you plan sufficient downtime to carry out all the migration tasks.
 - Ensure the source and destination PostgreSQL versions match.
 - Ensure you have good enough bandwidth between the client machine and both source and destination databases.
 - Ensure you choose a [Database plan](https://www.ovhcloud.com/en/public-cloud/prices/#databases) with appropriate compute, storage and memory resources.
@@ -49,8 +44,8 @@ Ensure client applications stop all write activity on the source database side. 
 Use the `pg_dump` command to export the database schema to the client machine, as an SQL plaintext file:
 
 ```bash
-$ pg_dump --file "path/to/dump.sql" --host "xxxxxxxxxxx.prm.clouddb.ovh.net" --port "<write port>" \
-    --username "postgres" --verbose --format=p --schema-only "database-name"
+$ pg_dump --file "path/to/dump.sql" --host "<local network hostname>" --port "<write port>" \
+    --username "postgres" --verbose --format=p --schema-only "<database name>"
 ```
 
 ### Step 3: Export the data
@@ -58,7 +53,7 @@ $ pg_dump --file "path/to/dump.sql" --host "xxxxxxxxxxx.prm.clouddb.ovh.net" --p
 Use the `pg_dump` command to export the database data to the client machine, in a .tar archive file:
 
 ```bash
-$ pg_dump --file "path/to/dump.tar" --host "xxxxxxxxxxx.prm.clouddb.ovh.net" --port "<write port>" \
+$ pg_dump --file "path/to/dump.tar" --host "<local network hostname>" --port "<write port>" \
     --no-owner --username "postgres" --no-password --verbose --format=t --blobs --encoding "UTF8"
 ```
 
