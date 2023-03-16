@@ -115,7 +115,7 @@ helm install prometheus-community/kube-prometheus-stack \
 
 > [!primary]
 >
-> You can only install prometheus without Grafana by setting the following property to false: `--set grafana.enabled=false`
+> You can install only prometheus without Grafana by setting the following property to false: `--set grafana.enabled=false`
 >
 
 As you can see, a new `prometheus` namespace will be created and we specified that we want to deploy a LoadBalancer in order to access externally to Prometheus and Grafana easily.
