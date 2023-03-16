@@ -111,7 +111,7 @@ Du fait que vous utilisez une base de données présente en dehors d'un héberge
 
 Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
-Une fois connecté, rendez-vous dans le dossier **installation** de votre Joomla! puis supprimez uniquement le *token* présent sous la forme d'un fichier **.txt**.
+Une fois connecté, rendez-vous dans le dossier **installation** de votre Joomla! puis supprimez uniquement le *token* indiqué par le message d'alerte. Il est présent sous la forme d'un fichier **.txt**.
 
 Retournez ensuite dans votre navigateur internet puis cliquez de nouveau sur `Installer Joomla`{.action}.
 
@@ -123,7 +123,10 @@ Une fois l'installation terminée, la page suivante apparaît :
 
 L'installation est terminée mais vous pouvez ajouter des langues supplémentaires à votre CMS si besoin.
 
-Félicitations, votre Jommla! est prêt à être utilisé et administré.
+>[!success]
+>
+> Félicitations, votre Joomla! est prêt à être utilisé et administré.
+> 
 
 ## Aller plus loin <a name="go-further"></a>
 
