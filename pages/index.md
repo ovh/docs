@@ -1601,6 +1601,7 @@
     + [API](infrastructure-as-code-api)
         + [Getting started](infrastructure-as-code-api-getting-started)
             + [First Steps with the OVHcloud APIs](account/api/first-steps)
+            + [Exploring the OVHcloud APIs](account/api/console-preview)
         + [APIv6](infrastructure-as-code-api-apiv6)
             + [Manage services](account/api/services)
             + [Manage payment and billing of OVHcloud services](account/api/enterprise-payment)
