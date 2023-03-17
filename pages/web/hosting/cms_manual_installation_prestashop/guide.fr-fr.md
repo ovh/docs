@@ -4,10 +4,10 @@ slug: installer-manuellement-prestashop
 excerpt: "Découvrez comment installer manuellement votre CMS PrestaShop"
 section: CMS
 order: 06
-updated: 2023-03-10
+updated: 2023-03-17
 ---
 
-**Dernière mise à jour le 10/03/2023**
+**Dernière mise à jour le 17/03/2023**
 
 ## Objectif
 
@@ -68,7 +68,7 @@ Sélectionnez la langue du site puis cliquez sur `Suivant`{.action}.
 
 #### 2.2 - Valider les conditions d'utilisation
 
-Lisez les conditions d'utilisation, cochez la case `J'accepte les termes et conditions ci-dessus`{.action} puis cliquez sur `Suivant`{.action}.
+Prenez connaissance des conditions d'utilisation, cochez la case `J'accepte les termes et conditions ci-dessus`{.action} puis cliquez sur `Suivant`{.action}.
 
 ![PrestaShop installation step 3](images/Prestashop-install-licence-agreement-3.png){.thumbnail}
 
@@ -83,7 +83,7 @@ PrestaShop vous demandera une série d'informations sur votre future boutique en
 - *Nom de votre boutique* : Saisissez le nom de votre boutique en ligne
 - *Activité principale* : Sélectionnez votre secteur d'activité parmi les propositions du menu déroulant
 - *Pays* : Sélectionnez votre pays
-- *Activer le SSL* : Cochez **Yes** pour forcer la réécriture de votre URL en « https:// ». Vous devez au préalable disposer d'un certificat SSL actif sur votre hébergement ou votre nom de domaine. Pour plus d'informations sur ce sujet, consulter notre guide sur [la gestion d'un certificat SSL sur votre hébergement web OVHcloud](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
+- *Activer le SSL* : Cochez **Yes** pour forcer la réécriture de votre URL en « https:// ». Vous devez au préalable disposer d'un certificat SSL actif sur votre hébergement ou votre nom de domaine. Pour plus d'informations sur ce sujet, consultez notre guide sur [la gestion d'un certificat SSL sur votre hébergement web OVHcloud](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
 
 **Votre compte**
 
@@ -101,7 +101,7 @@ PrestaShop vous propose d'installer du contenu et des modules pour votre futur s
 
 ![PrestaShop installation step 5](images/Prestashop-install-store-content-5.png){.thumbnail}
 
-Faites vos choix puis cliquez sur `Suivant`{.action}
+Faites vos choix puis cliquez sur `Suivant`{.action}.
 
 #### 2.6 - Lier votre PrestaShop avec votre base de données OVHcloud
 
@@ -114,7 +114,7 @@ Renseignez les informations demandées concernant la base de données :
 - *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 - *Identifiant* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations mentionnées dans **l'étape 1.4** de notre gudie sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations mentionnées dans **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
 - *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
 
@@ -127,18 +127,18 @@ Pour les bases de données créées sur un Web Cloud Databases, référez-vous a
 
 - *Préfixe des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
-- *Supprimer les tables existantes* : **Décochez cette case si vous utiliser déjà votre base de données avec un autre site web**.
+- *Supprimer les tables existantes* : **Décochez cette case si vous utilisez déjà votre base de données avec un autre site web**.
 
 >[!alert]
 >
-> Si vous laissez cocher la case **Supprimer les tables existantes**, cela supprimera toutes les tables déjà présentes dans votre base de données.
+> Si vous laissez cochée la case **Supprimer les tables existantes**, cela supprimera toutes les tables déjà présentes dans votre base de données.
 >
 
 Cliquez sur `Testez dès maintenant la connexion à votre base de données!`{.action} pour vérifier les paramètres saisis :
 
 ![PrestaShop installation step 6-1](images/Prestashop-install-db-config-6-1.png){.thumbnail}
 
-Si le message « Votre base de données est connectée » apparaît, cliquez sur `Suivant`{.action}. Sinon, vérifiez les paramètres que vous avez saisi jusqu'à ce que la connexion fonctionne. Si besoin, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+Si le message « Votre base de données est connectée » apparaît, cliquez sur `Suivant`{.action}. Sinon, vérifiez les paramètres que vous avez saisis jusqu'à ce que la connexion fonctionne. Si besoin, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
 #### 2.7 - Terminer l'installation de PrestaShop
 
@@ -146,7 +146,7 @@ La dernière étape correspond à un résumé de l'installation que vous venez d
 
 ![PrestaShop installation step 7](images/Prestashop-install-resume-7.png){.thumbnail}
 
-Récupérez les identifiants de connexion de votre Prestashop avant de quitter la page.
+Récupérez les identifiants de connexion de votre PrestaShop avant de quitter la page.
 
 >[!warning]
 >
