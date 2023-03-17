@@ -9,6 +9,7 @@
             + [Securing my OVHcloud account and managing my personal information](account/customer/all_about_username)
             + [Managing contacts for your services](account/customer/managing_contacts)
             + [Sharing files with the Plik tool](account/customer/use-plik)
+            + [Exploring the OVHcloud APIs](api-getting-started-ovhcloud-api)
         + [Users creation and management](account-and-service-management-account-information-users)
             + [Managing users](account/customer/ovhcloud-users-management)
             + [Enabling SSO connections with your OVHcloud account](account/customer/ovhcloud-account-connect-saml-sso)
