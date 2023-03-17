@@ -4,7 +4,7 @@ slug: monitoring-apps-prometheus-grafana
 excerpt: 'Find out how to monitor and visualize metrics with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service'
 section: Monitoring & Observability
 order: 00
-updated: 2023-03-16
+updated: 2023-03-17
 ---
 
 <style>
@@ -29,7 +29,7 @@ updated: 2023-03-16
  }
 </style>
 
-**Last updated March 16, 2023.**
+**Last updated March 17, 2023.**
 
 ## Objective
 
@@ -83,39 +83,25 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈Happy Helming!⎈
 </code></pre>
 
-You need to modify some settings. To do this, inspect the chart to retrieve these values ​​in a file:
+To install the Prometheus Operator Helm chart in your OVHcloud Managed Kubernetes cluster, you need to customize some values.
+To do this, you can set parameters on the command line (`--set param.name=value`) or create a local file based on the values from the chart and pass it on the command line (`--values /tmp/kube-prometheus-stack.values`).
+For this tutorial we choosed the first method.
 
-```bash
-helm inspect values prometheus-community/kube-prometheus-stack > /tmp/kube-prometheus-stack.values
-```
-
-Open the `/tmp/kube-prometheus-stack.values` file in your favorite editor.
-
-Then search into it for `adminPassword` and replace it with the password you want to use for Grafana.
-
-By default, the Grafana password should be like this:
-
-```yaml
-  adminPassword: prom-operator
-```
-
-Copy and save the Grafana admin password, you will use it later in this tutorial.
-
-You are now ready to install Prometheus and Grafana.
+To install Prometheus and Grafana:
 
 ```bash
 helm install prometheus-community/kube-prometheus-stack \
 --create-namespace --namespace prometheus \
 --generate-name \
---values /tmp/kube-prometheus-stack.values \
 --set prometheus.service.type=LoadBalancer \
 --set prometheus.prometheusSpec.serviceMonitorSelectorNilUsesHelmValues=false \
 --set grafana.service.type=LoadBalancer
+--set grafana.adminpassword=<my cool password>
 ```
 
 > [!primary]
 >
-> You can install only prometheus without Grafana by setting the following property to false: `--set grafana.enabled=false`
+> You can install only Prometheus without Grafana by setting the following property to false: `--set grafana.enabled=false`
 >
 
 As you can see, a new `prometheus` namespace will be created and we specified that we want to deploy a LoadBalancer in order to access externally to Prometheus and Grafana easily.
@@ -129,6 +115,7 @@ You should have a behavior like this:
 --set prometheus.service.type=LoadBalancer \
 --set prometheus.prometheusSpec.serviceMonitorSelectorNilUsesHelmValues=false \
 --set grafana.service.type=LoadBalancer
+--set grafana.adminpassword=myawesomepassword
 NAME: kube-prometheus-stack-1647417678
 LAST DEPLOYED: Wed Mar 16 09:01:23 2022
 NAMESPACE: prometheus
