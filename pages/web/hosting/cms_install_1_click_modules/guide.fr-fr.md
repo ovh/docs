@@ -66,10 +66,10 @@ Une fois le CMS sélectionné, choisissez entre une installation **rapide** ou *
 - Concernant l'installation  **rapide** (sélectionnée par défaut) : OVHcloud réalise l'installation du CMS et vous communique vos identifiants pour l'administrer par e-mail sur votre adresse e-mail de contact OVHcloud. Il s'agit de la manière la plus facile et la plus rapide pour installer un « module en 1 clic ».
 - Concernant l'installation **avancée** : Vous permet de personnaliser la configuration à appliquer pour l'installation du CMS. Vous devrez renseigner toutes les informations nécessaires au bon fonctionnement du CMS : 
 
-- informations de connexion à votre base de données (serveur, nom d'utilisateur, port, mot de passe, etc.)
-- chemin d'installation dans l'espace de stockage FTP de votre hébergement
-- langue du CMS
-- identifiants administrateur (Nom d'administrateur, mot de passe, adresse e-mail, etc.)
+    - informations de connexion à votre base de données (serveur, nom d'utilisateur, port, mot de passe, etc.)
+    - chemin d'installation dans l'espace de stockage FTP de votre hébergement
+    - langue du CMS
+    - identifiants administrateur (Nom d'administrateur, mot de passe, adresse e-mail, etc.)
 
 #### Installation rapide d'un « module en 1 clic »
 
