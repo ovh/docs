@@ -4,10 +4,10 @@ slug: installer-manuellement-drupal
 excerpt: "Découvrez comment installer manuellement votre CMS Drupal"
 section: CMS
 order: 04
-updated: 2023-03-16
+updated: 2023-03-17
 ---
 
-**Dernière mise à jour le 16/03/2023**
+**Dernière mise à jour le 17/03/2023**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou [l'éditeur du CMS Drupal](https://www.drupal.org/support){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+> Nous mettons à votre disposition ce tutoriel afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou [l'éditeur du CMS Drupal](https://www.drupal.org/support){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Retrouvez plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
 
 > [!success]
@@ -64,7 +64,7 @@ Drupal propose plusieurs niveaux d'installation : une version standard (recomman
 
 ![Drupal installation step 2](images/Drupal-install-profil-2.png){.thumbnail}
 
-Nous vous recommandons d'effectuer une installation **Standard** puis cliquez sur `Enregistrer et continuer`{.action}.
+Nous vous recommandons d'effectuer une installation **Standard**. Cliquez ensuite sur `Enregistrer et continuer`{.action}.
 
 #### 2.3 - Lier votre Drupal et votre base de données
 
@@ -74,14 +74,14 @@ Renseignez les informations demandées concernant la base de données :
 
 Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/)).
 
-- *Type de base de données* : choisissez parmi les choix proposés le type de votre base de données.
+- *Type de base de données* : sélectionnez, parmi les choix proposés, le type de votre base de données.
 
 - *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 - *Utilisateur de la base de données* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-- *Mot de passe de la base de données* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayiez modifié entre temps.
+- *Mot de passe de la base de données* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
 
 **Cliquez sur `Options avancées`{.action} pour découvrir le reste du menu.
 
@@ -94,7 +94,7 @@ Pour les bases de données créées sur un Web Cloud Databases, référez-vous a
 > - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
 >
 
-- *Numéro de port* : si vous utilisez une base de données incluses avec votre hébergement OVHcloud, laissez par défaut **3306**. Si vous utilisez une *Web Cloud Databases*, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour récupérer le bon numéro de port.
+- *Numéro de port* : si vous utilisez une base de données incluse avec votre hébergement OVHcloud, laissez par défaut **3306**. Si vous utilisez un service *Web Cloud Databases*, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour récupérer le bon numéro de port.
 
 - *Préfixe du nom des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
@@ -112,27 +112,27 @@ Une fois l'étape précédente terminée, la page suivante s'affiche :
 
 Renseignez les éléments demandés :
 
--*Nom du site* : saisissez le nom de votre futur site Drupal.
+- *Nom du site* : saisissez le nom de votre futur site Drupal.
 
--*Adresse e-mail du site* : saisissez une adresse e-mail valide qui sera utilisée par votre site Drupal.
+- *Adresse e-mail du site* : saisissez une adresse e-mail valide qui sera utilisée par votre site Drupal.
 
--*Nom d'utilisateur* : définissez un nom d'utilisateur pour vous connecter par la suite à votre espace d'administration Drupal (Back Office).
+- *Nom d'utilisateur* : définissez un nom d'utilisateur pour vous connecter par la suite à votre espace d'administration Drupal (Back Office).
 
--*Mot de passe* et *Confirmer le mot de passe* : définissez le mot de passe qui sera associé à votre nom d'utilisateur pour accéder à votre *Back Office* Drupal.
+- *Mot de passe* et *Confirmer le mot de passe* : définissez le mot de passe qui sera associé à votre nom d'utilisateur pour accéder à votre *Back Office* Drupal.
 
-Poursuivez ensuite sur le bas de la page :
+Poursuivez ensuite vers le bas de la page :
 
 ![Drupal installation step 5-1](images/Drupal-install-configure-site-5-2.png){.thumbnail}
 
--*Adresse e-mail* : saisissez votre adresse e-mail. Idéalement, placez la même adresse que celle choisie plus haut dans le formulaire *Adresse e-mail du site*.
+- *Adresse e-mail* : saisissez votre adresse e-mail. Idéalement, renseignez la même adresse que celle choisie plus haut dans le formulaire *Adresse e-mail du site*.
 
--*Région par défaut* : choisissez le pays où votre site va être le plus consulté.
+- *Région par défaut* : choisissez le pays où votre site va être le plus consulté.
 
 - *Fuseau horaire par défaut* : sélectionnez le fuseau horaire par défaut pour votre site web.
 
 Cliquez sur `Enregistrer et continuer`{.action}.
 
-Si tout c'est bien passé, la page suivante apparaît :
+Si tout s'est bien passé, la page suivante apparaît :
 
 ![Drupal installation step 6](images/Drupal-install-ending-6.png){.thumbnail}
 
