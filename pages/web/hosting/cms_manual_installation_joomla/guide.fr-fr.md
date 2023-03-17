@@ -11,7 +11,7 @@ updated: 2023-03-14
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Content Management System) Joomla! en quelques étapes.
+Vous trouverez ici tous les éléments pour installer manuellement le CMS (Content Management System) Joomla! en quelques étapes.
 
 > [!warning]
 >
@@ -22,7 +22,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 
 > [!success]
 >
-> Pour installer WordPress **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+> Pour installer Joomla! **automatiquement** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consultez notre documentation sur l'[installation d'un module « en un clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
 >
 > Pour installer **manuellement un autre CMS** (WordPress, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 >
@@ -50,9 +50,9 @@ Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installat
 
 #### 2.1 - Se rendre sur votre site Joomla! via votre navigateur
 
-Saisissez votre domaine dans la barre de recherche de votre navigateur Internet.
+Saisissez votre nom de domaine dans la barre de recherche de votre navigateur Internet.
 
-Si les fichiers sources de Joomla! ont été placés correctement dans votre dossier racine, la page Joomla! permettant de sélectionner la langue apparaît :
+Si les fichiers sources de Joomla! ont été placés correctement dans votre dossier racine, la page de sélection de la langue pour Joomla! apparaît :
 
 ![Joomla installation step 1](images/Joomla-install-select-language-1.png){.thumbnail}
 
@@ -64,10 +64,14 @@ Définissez les accès à votre espace d'administration (Back Office) Joomla! :
 
 ![Joomla installation step 2](images/Joomla-install-define-admin-2.png){.thumbnail}
 
+> [!primary]
+>
+> Le terme « Super Utilisateur » désigne la personne qui administre le CMS.
+
 - *Entrer le nom réel de votre Super Utilisateur* : saisissez votre nom réel.
 - *Définir le nom d'utilisateur de votre compte Super Utilisateur* : choisissez un nom d'utilisateur qui vous permettra de vous connecter à votre espace d'administration Joomla!.
-- *Définir le mot de passe pour votre compte Super Utilisateur* : choisissez un mot de passe avec un minimu de **12 caractères**.
-- *Entrer l'adresse e-mail du Super Utilisateur du site web* : saisissez une adresse mail valide. C'est cette adresse e-mail que Joomla! utilisera pour vous envoyer d'éventuelles notifications.
+- *Définir le mot de passe pour votre compte Super Utilisateur* : choisissez un mot de passe avec un minimum de **12 caractères**.
+- *Entrer l'adresse e-mail du Super Utilisateur du site web* : saisissez une adresse e-mail valide. Celle-ci servira à recevoir les notifications envoyées par votre Joomla!.
 
 Vérifiez les éléments renseignés puis cliquez sur `Configuration de la connexion à la base de données`{.action}.
 
@@ -87,19 +91,20 @@ Référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur
 > 
 > - Le nom du serveur d'une base de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
 >
-> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
+> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `aa00000-XXX.eu.clouddb.ovh.net`, **«aa00000»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par le reste de la référence de votre service Web Cloud Databases.
 >
 
-- *Saisissez soit un nom d'utilisateur que vous avez créé, soit un nom d'utilisateur fourni par votre hébergeur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-- *Saisissez soit un mot de passe que vous avez créé, soit un mot de passe fourni par votre hébergeur* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayiez modifié entre temps.
+- *Saisissez soit un nom d'utilisateur que vous avez créé, soit un nom d'utilisateur fourni par votre hébergeur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
+Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+
+- *Saisissez soit un mot de passe que vous avez créé, soit un mot de passe fourni par votre hébergeur* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est également possible que vous l'ayez modifié entre temps, nous vous invitons à le vérifier.
 
 - *Entrer le nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Il est identique au nom d'utilisateur de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 
-- *Saisissez un préfixe de table ou utilisez celui qui est généré de manière aléatoire* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+- *Saisissez un préfixe de table ou utilisez celui qui est généré de manière aléatoire* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
--*Chiffrement de la connexion** : laissez la valeur **Par défaut**.
+- **Chiffrement de la connexion** : laissez la valeur **Par défaut**.
 
 Cliquez sur `Installer Joomla`{.action}.
 
@@ -107,7 +112,7 @@ Le message suivant apparaît :
 
 ![Joomla installation step 3-1](images/Joomla-install-db-connect-3-1.png){.thumbnail}
 
-Du fait que vous utilisez une base de données présente en dehors d'un hébergement local, vous devrez supprimer le *token* généré aléatoirement lors de l'installation de votre Joomla!.
+Du fait que vous utilisiez une base de données présente en dehors d'un hébergement local, vous devrez supprimer le *token* généré aléatoirement lors de l'installation de votre Joomla!.
 
 Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
@@ -121,7 +126,7 @@ Une fois l'installation terminée, la page suivante apparaît :
 
 ![Joomla installation step 4](images/Joomla-install-ending-4.png){.thumbnail}
 
-L'installation est terminée mais vous pouvez ajouter des langues supplémentaires à votre CMS si besoin.
+L'installation est terminée, mais vous pouvez ajouter des langues supplémentaires à votre CMS si besoin.
 
 >[!success]
 >
