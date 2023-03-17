@@ -11,7 +11,7 @@ updated: 2023-03-17
 
 ## Objectif
 
-Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Content Management System) Drupal en quelques étapes.
+Vous trouverez ici tous les éléments pour installer manuellement le CMS (Content Management System) Drupal en quelques étapes.
 
 > [!warning]
 >
@@ -39,7 +39,7 @@ Ce tutoriel a pour objectif de vous aider à installer manuellement le CMS (Cont
 
 Pour installer le CMS **Drupal** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
 
-Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre à l'étape 2 ci-dessous.
+Suivez l'**ensemble des étapes** décrites dans notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre à l'étape 2 ci-dessous.
 
 ### Etape 2 - finaliser l'installation manuelle <a name="step2"></a>
 
@@ -50,9 +50,9 @@ Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installat
 
 #### 2.1 - Se rendre sur votre site Drupal via votre navigateur
 
-Saisissez votre domaine dans la barre de recherche de votre navigateur Internet.
+Saisissez votre nom de domaine dans la barre de recherche de votre navigateur Internet.
 
-Si les fichiers sources de Drupal ont été placés correctement dans votre dossier racine, la page Drupal permettant de sélectionner la langue apparaît :
+Si les fichiers sources de Drupal ont été placés correctement dans votre dossier racine, la page de sélection de la langue pour Drupal apparaît :
 
 ![Drupal installation step 1](images/Drupal-install-language-1.png){.thumbnail}
 
@@ -60,7 +60,11 @@ Sélectionnez la langue du site puis cliquez sur `Enregistrer et continuer`{.act
 
 #### 2.2 - Choisir le type d'installation
 
-Drupal propose plusieurs niveaux d'installation : une version standard (recommandée), une version minimale et une version de présentation :
+Drupal propose plusieurs niveaux d'installation :
+
+- une version standard (recommandée), 
+- une version minimale
+- une version de présentation 
 
 ![Drupal installation step 2](images/Drupal-install-profil-2.png){.thumbnail}
 
@@ -72,18 +76,17 @@ Renseignez les informations demandées concernant la base de données :
 
 ![Drupal installation step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/)).
+Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/)).
 
 - *Type de base de données* : sélectionnez, parmi les choix proposés, le type de votre base de données.
 
 - *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-- *Utilisateur de la base de données* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+- *Utilisateur de la base de données* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web. Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
 - *Mot de passe de la base de données* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
 
-**Cliquez sur `Options avancées`{.action} pour découvrir le reste du menu.
+Cliquez sur `Options avancées`{.action} pour découvrir le reste du menu.
 
 - *Adresse de la base de données/Host* : renseignez le nom du serveur de votre base de données, présent dans l'e-mail d'installation ou dans votre espace client OVHcloud. 
 
@@ -91,12 +94,13 @@ Pour les bases de données créées sur un service Web Cloud Databases, référe
 > 
 > - Le nom du serveur d'une base de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
 >
-> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` où les **« X »** sont à remplacer par la référence de votre service Web Cloud Databases.
+> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `aa00000-XXX.eu.clouddb.ovh.net`, **«aa00000»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par le reste de la référence de votre service Web Cloud Databases.
 >
 
-- *Numéro de port* : si vous utilisez une base de données incluse avec votre hébergement OVHcloud, laissez par défaut **3306**. Si vous utilisez un service *Web Cloud Databases*, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour récupérer le bon numéro de port.
 
-- *Préfixe du nom des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+- *Numéro de port* : si vous utilisez une base de données incluse avec votre hébergement OVHcloud, laissez par défaut **3306**. Si vous utilisez un service *Web Cloud Databases*, référez-vous à **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour récupérer le bon numéro de port.
+
+- *Préfixe du nom des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
 Cliquez sur `Enregistrer et continuer`{.action}.
 
@@ -116,7 +120,7 @@ Renseignez les éléments demandés :
 
 - *Adresse e-mail du site* : saisissez une adresse e-mail valide qui sera utilisée par votre site Drupal.
 
-- *Nom d'utilisateur* : définissez un nom d'utilisateur pour vous connecter par la suite à votre espace d'administration Drupal (Back Office).
+- *Nom d'utilisateur* : définissez un nom d'utilisateur pour vous connecter à votre espace d'administration Drupal (Back Office).
 
 - *Mot de passe* et *Confirmer le mot de passe* : définissez le mot de passe qui sera associé à votre nom d'utilisateur pour accéder à votre *Back Office* Drupal.
 
