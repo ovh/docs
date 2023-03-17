@@ -524,6 +524,7 @@
             + [Restore a backup](platform/databases/databases_06_restore_backup)
             + [Resize your cluster storage](platform/databases/databases_11_resize_your_cluster_storage)
             + [Automated Backups](platform/databases/databases_05_automated_backups)
+            + [Getting started with Kubernetes database operator](platform/databases/databases_12_operator)
         + [MongoDB](public-cloud-databases-mongodb)
             + [Guides](public-cloud-databases-mongodb-guides)
                 + [MongoDB - Capabilities and Limitations](platform/databases/mongodb_01_concept_capabilities)
