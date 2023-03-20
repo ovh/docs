@@ -1,17 +1,21 @@
 ---
-title: RACI pour Object Storage Public Cloud
-slug: raci-object-storage-public-cloud
+title: "Object Storage - Partage des responsabilités (RACI)"
+slug: s3/raci-object-storage-public-cloud
 section: Informations générales
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du Object Storage Public Cloud"
-order: 6
-updated: 2023-03-16
+order: 030
+updated: 2023-03-20
 ---
 
-**Dernière mise à jour le 16/03/2023**
+**Dernière mise à jour le 20/03/2023**
 
 ## Objectif
 
-Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour le service Object Storage Public Cloud. Ce modèle peut aider le client à utiliser au mieux les gammes de services : Standard Object Storage-S3 API, High Performance Object Storage- S3 API et Standard Object Storage-Swift API .
+Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour le service Object Storage Public Cloud. Ce modèle peut aider le client à utiliser au mieux les gammes de services suivantes : 
+
+- Standard Object Storage-S3 API
+- High Performance Object Storage-S3 API
+- Standard Object Storage-Swift API
 
 | Rôles |
 | --- |
@@ -38,13 +42,11 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Produire, acheminer, livrer et maintenir les instances physiques et les bâtiments d’hébergement | I | RA |
 
-
 #### 2.2. Installation du SI client
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Créer les identifiants de connexion S3 pour un utilisateur Open stack | RA |  |
-
+| Créer les identifiants de connexion S3 pour un utilisateur OpenStack | RA |  |
 
 ### 3. Utilisation du service
 
@@ -59,7 +61,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Administrer le service de stockage | I | RA  |
 | Administrer les données | RA |   |
 | Réaliser les backups | RA |  |
-
 
 ##### **3.1.2. Gestion des accès**
 
@@ -94,8 +95,8 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer la sécurité de l'infrastructure de gestion (API, control plane) |   | RA |
 | Gérer la sécurité physique des équipements et infrastructures hébergés | I | RA |
 
-
 ##### **3.1.6. Continuité d'activité**
+
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Réaliser des tests périodiques de restauration de données | RA |  |
@@ -110,8 +111,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Traiter les incidents sur le service (tickets et contacts téléphoniques) | AI | RA |
 | Remplacer les éléments matériels défectueux sur les clusters Object Storage |  | RA |
-
-
 
 ### 4. Réversibilité
 
