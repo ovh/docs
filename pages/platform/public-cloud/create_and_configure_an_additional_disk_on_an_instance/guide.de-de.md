@@ -321,7 +321,7 @@ Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist die beste Vorgehensw
 > Es kann eine Fehlermeldung angezeigt werden, wenn auf der zusätzlichen Disk Software oder Prozesse ausgeführt werden. In diesem Fall wird empfohlen, zunächst alle Prozesse zu beenden.
 >
 
-#### Unter Linux
+#### Unter Linux <a name="linux"></a>
 
 Stellen Sie eine [SSH-Verbindung](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
 
@@ -359,7 +359,7 @@ Klicken Sie in neuen Fenster auf `Bestätigen`{.action}, um den Vorgang zu start
 
 ![Disk Detach](images/confirminstancedetach.png){.thumbnail}
 
-#### Unter Windows
+#### Unter Windows <a name="windows"></a>
 
 Stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrer Windows-Instanz her.
 

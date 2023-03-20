@@ -83,7 +83,7 @@ passwd: password updated successfully
 
 #### Attiva le connessioni root
 
-Per motivi di sicurezza, la connessione con l'utente "root" viene disattivata di default. Per autorizzare questo tipo di connessioni, consulta questa [guida](https://docs.ovh.com/it/root-password/#attiva-la-password-di-root_1).
+Per motivi di sicurezza, la connessione con l'utente "root" viene disattivata di default. Per autorizzare questo tipo di connessioni, consulta questa [guida](https://docs.ovh.com/it/vps/root-password/#attiva-la-password-di-root_1).
 
 #### Riavvio del tuo VPS (gamma attuale) <a name="reboot-current-range"></a>
 
@@ -182,7 +182,7 @@ L’operazione di reinstallazione potrebbe richiedere fino a 30 minuti. Una barr
 
 Come spiegato nella sezione "Obiettivo" di questa guida, in quanto amministratore del tuo VPS. In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza.
 
-Per maggiori informazioni, consulta la guida [Proteggere un VPS](https://docs.ovh.com/it/consigli-sicurezza-vps/).
+Per maggiori informazioni, consulta la guida [Proteggere un VPS](https://docs.ovh.com/it/vps/consigli-sicurezza-vps/).
 
 ### Associa un dominio
 
@@ -200,8 +200,8 @@ Se invece preferisci una soluzione automatica, scegli il servizio [SSL Gateway](
 
 [Introduzione a SSH](https://docs.ovh.com/it/dedicated/introduzione-ssh/)
 
-[Proteggere un VPS](https://docs.ovh.com/it/consigli-sicurezza-vps/)
+[Proteggere un VPS](https://docs.ovh.com/it/vps/consigli-sicurezza-vps/)
 
-[Configura una nuova installazione di Windows Server](https://docs.ovh.com/it/windows-first-config/)
+[Configura una nuova installazione di Windows Server](https://docs.ovh.com/it/vps/windows-first-config/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
