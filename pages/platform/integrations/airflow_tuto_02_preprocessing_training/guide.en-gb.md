@@ -324,11 +324,15 @@ The DAG `ovh_ai_training_preprocessing_training` should run successfully. You ca
 
 ![image](images/airflow-graph-dag.png){.thumbnail}
 
-You can also click on the `Log` button to check AI Training job logs and Machine Learning model evolution.
+You can also click on the `Log` button to check AI Training job logs during data preprocessing part.
 
-![image](images/airflow-task-logs.png){.thumbnail}
+![image](images/airflow-task-preprocessing-logs.png){.thumbnail}
 
-Congratulations! You have trained your first model in an AI Training job with **AirFlow**.
+Finally, you can follow the evolution of Machine Learning model in the second task logs. You are also able to access to Weights & Biases by clicking on the link printed in the logs.
+
+![image](images/airflow-task-training-logs.png){.thumbnail}
+
+Congratulations! You have processed your data and trained your model in AI Training jobs with **AirFlow**.
 
 ## Feedback
 
