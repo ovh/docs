@@ -751,6 +751,7 @@
                 + [AI Notebooks - Tutorial - Use ResNet for image classification](platform/ai/notebook_tuto_07_transfer_learning_resnet50_image_classification)
                 + [AI Notebooks - Tutorial - Use Speech-to-Text powers on audio and video](platform/ai/notebook_tuto_08_speech_to_text)
                 + [AI Notebooks - Tutorial - Build your spam classifier](platform/ai/notebook_tuto_09_spam_classifier)
+                + [AI Notebooks - Tutorial - Create and train a Rasa chatbot](platform/ai/notebook_tuto_10_create_chatbot)
         + [AI Training](public-cloud-ai-and-machine-learning-ai-training)
             + [Guides](public-cloud-ai-and-machine-learning-ai-training-guides)
                 + [AI Training - Capabilities and Limitations](platform/ai/training_guide_01_capabilities)
