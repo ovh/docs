@@ -23,23 +23,22 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Utiliser [une version de PHP compatible](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) sur votre hébergement web OVHcloud.
 - Avoir [configuré correctement votre fichier .ovhconfig](https://docs.ovh.com/fr/hosting/configurer-fichier-ovhconfig/).
-- Le répertoire (dossier racine) où sera installé votre « modules en 1 clic » doit être vide ou actuellement inexistant.
+- Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) sur votre hébergement web OVHcloud.
 
 ## En pratique
 
 ### Étape 1 - choisir correctement son CMS
 
-Un CMS permet de concevoir un site web via une interface facile d'utilisation. Plusieurs types de CMS existent, certains sont préconçus par exemple pour réaliser un site de E-commerce, d'autre pour mettre en place des sites vitrine, des blogs, etc. Vous pourrez ainsi bénéficier d'une structure de site prête à l'emploi et personnalisable (thème, extensions, textes, etc.) à votre convenance.
+Un CMS permet de concevoir un site web via une interface facile d'utilisation. Plusieurs types de CMS existent, certains sont préconçus par exemple pour réaliser un site de E-commerce, d'autres pour mettre en place un site vitrine, un blog, etc. Vous pourrez ainsi bénéficier d'une structure de site prête à l'emploi et personnalisable (thème, extensions, textes, etc.) à votre convenance.
 
 Parmi tous les CMS, OVHcloud en propose 4 en installation automatique avec ses « modules en 1 clic ». 
 
-En utilisant cette solution, vous devrez choisir parmi les 4 CMS cités plus haut. Si votre choix est déjà fait, poursuivez les différentes étapes de ce guide. Dans le cas contraire, consultez notre [comparatif des CMS](https://www.ovhcloud.com/fr/web-hosting/uc-cms-comparison/) pour faire votre choix.
+En utilisant cette solution, vous devrez choisir parmi les 4 CMS cités plus haut. Si votre choix est déjà fait, poursuivez la lecture des différentes étapes de ce guide. Dans le cas contraire, consultez notre [comparatif des CMS](https://www.ovhcloud.com/fr/web-hosting/uc-cms-comparison/) pour faire votre choix.
 
 Si vous souhaitez installer un CMS indisponible via nos « modules en 1 clic », vous pouvez l'installer manuellement sur votre hébergement. Ceci sous réserve que ce CMS soit compatible avec nos offres d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 
 ![Logo des CMS](images/CMS_logo.png){.thumbnail}
-
 
 ### Étape 2 - accéder à la gestion des « modules en 1 clic »
 
@@ -63,9 +62,8 @@ Une fois votre domaine correctement ajouté, essayez à nouveau d'ajouter un « 
 
 Une fois le CMS sélectionné, choisissez entre une installation **rapide** ou **avancée** :
 
-- Concernant l'installation  **rapide** (sélectionnée par défaut) : OVHcloud réalise l'installation du CMS et vous communique vos identifiants pour l'administrer par e-mail sur votre adresse e-mail de contact OVHcloud. Il s'agit de la manière la plus facile et la plus rapide pour installer un « module en 1 clic ».
-- Concernant l'installation **avancée** : Vous permet de personnaliser la configuration à appliquer pour l'installation du CMS. Vous devrez renseigner toutes les informations nécessaires au bon fonctionnement du CMS : 
-
+- Installation  **rapide** (sélectionnée par défaut) : OVHcloud réalise l'installation du CMS et vous communique vos identifiants pour l'administrer par e-mail sur votre adresse e-mail de contact OVHcloud. Il s'agit de la manière la plus facile et la plus rapide pour installer un « module en 1 clic ».
+- Installation **avancée** : elle vous permet de personnaliser la configuration à appliquer pour l'installation du CMS. Vous devrez renseigner toutes les informations nécessaires au bon fonctionnement du CMS : 
     - informations de connexion à votre base de données (serveur, nom d'utilisateur, port, mot de passe, etc.)
     - chemin d'installation dans l'espace de stockage FTP de votre hébergement
     - langue du CMS
@@ -73,7 +71,7 @@ Une fois le CMS sélectionné, choisissez entre une installation **rapide** ou *
 
 #### Installation rapide d'un « module en 1 clic »
 
-Après avoir choisi le nom de domaine de votre CMS, contrôlé le répertoire cible qui apparaît automatiquement après le choix du nom de domaine et pour réaliser cette méthode d'installation, vérifiez que la case `Installation en mode avancé`{.action} n'est pas cochée, puis cliquez directement sur le bouton `Installer`{.action}.
+Choisissez le nom de domaine de votre CMS, contrôlez le répertoire cible qui apparaît automatiquement après le choix du nom de domaine puis vérifiez que la case `Installation en mode avancé`{.action} n'est pas cochée. Enfin, cliquez directement sur le bouton `Installer`{.action}.
 
 > [!warning]
 >
@@ -82,11 +80,11 @@ Après avoir choisi le nom de domaine de votre CMS, contrôlé le répertoire ci
 
 ![Installation rapide d'un module](images/choose_installation.png){.thumbnail}
 
-Une fois l'installation terminée, vous recevrez un e-mail contenant les informations de connexion à l'interface administrateur de votre CMS (Back Office). Connectez-vous à celle-ci pour personnaliser votre site web.
+Une fois l'installation terminée, vous recevrez un e-mail contenant les informations de connexion à l'interface administrateur (*back office*) de votre CMS. Connectez-vous à celle-ci pour personnaliser votre site web.
 
 #### Installation avancée d'un « module en 1 clic »
 
-Pour réaliser cette méthode installation, assurez-vous que la case `Installation en mode avancé`{.action} est cochée, puis cliquez sur le bouton `Suivant`{.action} :
+Pour réaliser cette méthode d'installation, assurez-vous que la case `Installation en mode avancé`{.action} est cochée, puis cliquez sur le bouton `Suivant`{.action} :
 
 ![Installation avancée d'un module](images/advanced_installation.png){.thumbnail}
 
@@ -98,10 +96,10 @@ Renseignez les informations de connexion à votre base de données.
 
 Il existe plusieurs possibilités :
 
-- la base de données est déjà créée sur votre hébergement web: choisissez-la dans le menu déroulant `Sélectionnez la base de données`{.action} puis complétez les informations demandées
-- la base de données n'est pas encore créée sur votre hébergement web : [créez votre base de données incluse avec votre hébergement](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/), retournez ensuite jusqu'au menu déroulant `Sélectionnez la base de données`{.action} puis complétez les informations demandées
-- la base de données est [créée sur mon instance Web Cloud Databases](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/) : sélectionnez dans le menu déroulant `Sélectionnez la base de données`{.action} le choix `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données (datacentre)
-- la base de données est créée sur un autre hébergement Web OVHcloud : sélectionnez dans le menu déroulant `Sélectionnez la base de données`{.action} le choix `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données
+- La base de données est déjà créée sur votre hébergement web: choisissez-la dans le menu déroulant `Sélectionnez la base de données`{.action} puis complétez les informations demandées.
+- La base de données n'est pas encore créée sur votre hébergement web : [créez votre base de données incluse avec votre hébergement](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/), retournez ensuite jusqu'au menu déroulant `Sélectionnez la base de données`{.action} puis complétez les informations demandées.
+- La base de données est [créée sur votre instance Web Cloud Databases](https://docs.ovh.com/fr/clouddb/creer-bases-de-donnees-et-utilisateurs/) : dans le menu déroulant `Sélectionnez la base de données`{.action}, sélectionnez le choix `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données (datacentre).
+- La base de données est créée sur un autre hébergement Web OVHcloud : dans le menu déroulant `Sélectionnez la base de données`{.action}, sélectionnez le choix `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données.
 
 Le reste des informations demandées pour la base de données sont les suivantes :
 
@@ -117,11 +115,11 @@ Le reste des informations demandées pour la base de données sont les suivantes
 - *Nom de la base* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 - *Nom d'utilisateur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans ce [guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)..
+Pour les bases de données créées sur une offre Web Cloud Databases, référez-vous aux informations indiquées dans [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
 
-- *Port* : Placez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases consultez ce [guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
+- *Port* : placez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
 
-- *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayiez modifié entre temps.
+- *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
 
@@ -129,20 +127,19 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 >
 > Si les informations que vous indiquez sont incorrectes, l'installation n'arrivera pas à son terme. Pour éviter cela, nous vous invitons en premier lieu à tester la connexion à votre base de données.
 > 
-> Pour récupérez les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez ce [guide](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+> Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez [ce guide](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 >
-> Pour récupérez les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez ce [guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
+> Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
 >
 
 ##### Configurer le module
 
 Renseignez les informations suivantes pour la configuration du module :
 
-- *nom ou e-mail de l'administrateur :* identifiant que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS (Back Office)
-- *mot de passe :* mot de passe que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS
-- *domaine :* nom de domaine avec lequel vous souhaitez installer votre CMS
-Si besoin, consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
-- *langue :* langue dans laquelle le CMS sera installé
+- *nom ou e-mail de l'administrateur :* identifiant que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS (Back Office).
+- *mot de passe :* mot de passe que vous utiliserez pour vous connecter à l'interface d'administration de votre CMS.
+- *domaine :* nom de domaine avec lequel vous souhaitez installer votre CMS. Si besoin, consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+- *langue :* langue dans laquelle le CMS sera installé.
 - *chemin d’installation :* ce dernier est automatiquement renseigné à la sélection du nom de domaine. Vous pouvez le compléter en y renseignant des sous-répertoires (pour les utilisateurs avertis).
 
 Une fois ces informations complétées, cliquez sur le bouton `Suivant`{.action} :
@@ -156,7 +153,7 @@ Une fois ces informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 ##### Confirmer l'installation
 
-Vérifiez les informations affichées puis de cliquez sur `Valider`{.action} si tout est en ordre :
+Vérifiez les informations affichées puis cliquez sur `Valider`{.action} si tout est en ordre :
 
 ![Validation de l'installation en mode avancé](images/advanced_installation_summary.png){.thumbnail}
 
@@ -168,7 +165,7 @@ Une fois terminée, vous recevrez un e-mail confirmant la bonne installation du 
 
 > [!Warning]
 >
-> Le support d'OVHcloud n'effectue pas d'accompagnement sur l'utilisation des CMS. Nous les proposons uniquement en installation **en 1 clic**.
+> Le support OVHcloud n'effectue pas d'accompagnement sur l'utilisation des CMS. Nous les proposons uniquement en installation **en 1 clic**.
 >
 
 Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS, rapprochez-vous de l'éditeur du CMS que vous avez installé. Vous trouverez auprès de ce dernier de la documentation pour vous accompagner dans votre projet.
