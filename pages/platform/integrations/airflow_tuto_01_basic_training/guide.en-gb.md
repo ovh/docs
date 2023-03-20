@@ -1,9 +1,10 @@
 ---
-title: Apache AirFlow - Basic training
-slug: airflow/basic-training
+title: Tutorial - Create a basic workflow with AI training
+slug: apache-airflow/ai-training-basic-workflow
 excerpt: Train a basic model inside an AI Training job with Apache Airflow
-section: Apache AirFlow - Tutorials
-order: 01
+section: Apache AirFlow
+order: 05
+updated: 2023-03-08
 ---
 
 **Last updated 8th March, 2023.**
@@ -13,6 +14,8 @@ order: 01
 You can now use the **AirFlow** `AiTrainingRunJobOperator` to run an OVHcloud AI Training job.
 
 This guide explains how to run your first training of a Machine Learning model in an AI Training job with [AirFlow](https://airflow.apache.org/).
+
+![image](images/airflow-custom-dag-overview.png){.thumbnail}
 
 > [!primary]
 >
@@ -32,6 +35,8 @@ This guide explains how to run your first training of a Machine Learning model i
 The tutorial is divided into two steps:
 - the development of a Python script to process data and define Machine Learning model
 - the creation and launching of the AirFlow DAG to train the model in an AI Training job
+
+![image](images/airflow-custom-dag-detail.png){.thumbnail}
 
 ### Define the AI model to be implemented
 

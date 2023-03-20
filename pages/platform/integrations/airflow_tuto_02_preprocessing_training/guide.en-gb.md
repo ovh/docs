@@ -1,9 +1,10 @@
 ---
-title: Apache AirFlow - Data preprocessing and model training
-slug: airflow/preprocessing-training
+title: Tutorial - Process data and train AI model with AI training
+slug: apache-airflow/ai-training-preproces-train
 excerpt: Process your data before training your model into two dependent AI Training jobs with Apache Airflow
-section: Apache AirFlow - Tutorials
-order: 02
+section: Apache AirFlow
+order: 06
+updated: 2023-03-20
 ---
 
 **Last updated 20th March, 2023.**
@@ -37,7 +38,7 @@ The tutorial is divided into two steps:
 - the development of Python scripts to process data and then train Machine Learning model
 - the creation and launching of the AirFlow DAG to process the data and train the model in AI Training jobs
 
-### Develop your codes and manage the data
+### Develop your Python scripts and manage the data
 
 This example is based on a existing AI Training tutorial: [Compare models with W&B for audio classification task](https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
 

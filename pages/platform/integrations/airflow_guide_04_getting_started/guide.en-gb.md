@@ -1,9 +1,10 @@
 ---
-title: Apache AirFlow - Getting started
-slug: airflow/getting-started
+title: Getting started with AI Training
+slug: apache-airflow/ai-training-getting-started
 excerpt: Discover how to trigger an AI Training job with a dedicated AirFlow operator
-section: Apache AirFlow - Guides
+section: Apache AirFlow
 order: 04
+updated: 2023-03-08
 ---
 
 **Last updated 8th March, 2023.**
@@ -13,6 +14,8 @@ order: 04
 You can now use the **AirFlow** `AiTrainingRunJobOperator` to run an OVHcloud AI Training job.
 
 This guide explains how to run your first "Hello World" AI Training job with [AirFlow](https://airflow.apache.org/).
+
+![image](images/airflow-custom-dag-overview.png){.thumbnail}
 
 ## Requirements
 
