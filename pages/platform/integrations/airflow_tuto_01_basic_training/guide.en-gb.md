@@ -126,7 +126,6 @@ if __name__ == '__main__':
     model_history = modelTraining(epochs=100, optimizer='adam')
     print("_________________________________________________________________")
     print("The training of the model is completed. \n")
-
 ```
 
 We will now look at the creation of the Docker image.
@@ -249,7 +248,7 @@ docker push <shared-registry-address>/airflow-basic-training:latest
 
 > [!primary]
 >
-> We have made the Docker image available to you on a dedicated registry. You can use it in the following way: `priv-registry.gra.training.ai.cloud.ovh.net/ai-training-tutorials/airflow-basic-training:latest`
+> We have made the Docker image available to you on a dedicated registry. You can use it in the following way: `priv-registry.gra.training.ai.cloud.ovh.net/ai-training-tutorials/airflow-basic-training`
 >
 
 Let's get to the heart of the matter: **Apache AirFlow**.
