@@ -14,6 +14,8 @@ order: 6
 >
 >  - [RACI Public Cloud Instances](https://docs.ovh.com/fr/public-cloud/raci-instances-public-cloud/)
 >
+>  - [RACI Public Cloud Object Storage](https://docs.ovh.com/fr/storage/object-storage/s3/raci-object-storage-public-cloud/)
+>
 >  - [RACI Block Storage](https://docs.ovh.com/fr/public-cloud/raci-block-storage-public-cloud/)
 >
 >  - [RACI Log Data Platform](https://docs.ovh.com/fr/logs-data-platform/responsibility-model/)

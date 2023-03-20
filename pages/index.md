@@ -1458,6 +1458,7 @@
             + [Object Storage - S3 Compliancy](cloud/storage/object_storage/s3_s3_compliancy)
             + [Object Storage - Technical Limitations](cloud/storage/object_storage/s3_limitations)
             + [Object Storage - Endpoints and Object Storage geoavailability](cloud/storage/object_storage/s3_location)
+            + [Object Storage - Shared Responsibility RACI](cloud/storage/object_storage/s3_object_storage_responsibility_model)
         + [General guides to start](storage-object-storage-general-guides-to-start)
             + [Object Storage - Getting started with Object Storage](cloud/storage/object_storage/s3_getting_started_with_object_storage)
             + [Object Storage - Identity and access management](cloud/storage/object_storage/s3_identity_and_access_management)
