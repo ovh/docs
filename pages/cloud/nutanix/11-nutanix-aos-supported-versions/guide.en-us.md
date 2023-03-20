@@ -16,7 +16,7 @@ updated: 2022-11-25
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
+> This guide is designed to assist you as much as possible with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
 ## Requirements
