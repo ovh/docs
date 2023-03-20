@@ -26,13 +26,13 @@ Depuis l'espace client OVHcloud, vous pouvez lancer le déploiement de l'image S
 
 ![install-manager](images/install-manager.png){.thumbnail}
 
-Sélectionnez l'option `Installer à partir d'un template OVH`{.action}.
+Sélectionnez l'option `Installer à partir d'un template OVHcloud`{.action}.
 
 ![select-template](images/select-template.png){.thumbnail width="500" height="500"}
 
 La première étape consiste à renseigner des informations sur le système d'exploitation que vous souhaitez installer.<br>
-&ensp;&thinsp;a. Dans le menu déroulant `Type de système d'exploitation`, sélectionnez `ERP`{.action}<br>
-&ensp;&thinsp;b. Dans le menu `LINUX`, sélectionnez `SUSE Linux Enterprise Server 15 SP3 for SAP Applications - sles-sap15sp3`{.action}.
+&ensp;&thinsp;a. Dans le menu déroulant `Type de système d'exploitation`{.action}, sélectionnez `ERP`{.action}.<br>
+&ensp;&thinsp;b. Dans le menu `LINUX`{.action}, sélectionnez `SUSE Linux Enterprise Server 15 SP3 for SAP Applications - sles-sap15sp3`{.action}.
 
 Nous vous recommandons de réaliser l'installation du système d'exploitation sur la grappe de disque cible `2 X Disk SSD 480 GB, JBOD`{.action}.
 
@@ -71,7 +71,7 @@ Pour le vérifier, vous pouvez lancer la commande ci-dessous et vous obtiendrez 
 
 ```bash
 $ lsblk
- 
+
 NAME          MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
 sda             8:0    0  10.5T  0 disk 
 sdb             8:16   0 447.1G  0 disk
@@ -94,7 +94,7 @@ sdc             8:32   0 447.1G  0 disk
 ```
 
 <ol start="2">
-  <li> Créez un volume physique qui se base sur le RAID des disques de données avec la commande suivante :</li>
+  <li>Créez un volume physique qui se base sur le RAID des disques de données avec la commande suivante :</li>
 </ol>
 
 ```bash
@@ -102,7 +102,7 @@ $ pvcreate /dev/sda
 ```
 
 <ol start="3">
-  <li> Créez un virtual group nommé <code>vg_hana</code> qui s'appuie sur le volume physique précédemment créé.</li>
+  <li>Créez un groupe virtuel nommé <code>vg_hana</code> qui s'appuie sur le volume physique précédemment créé.</li>
 </ol>
 
 ```bash
@@ -110,7 +110,7 @@ vgcreate vg_hana /dev/sda
 ```
 
 <ol start="4">
-  <li> Créez les volumes logiques qui représenteront les partitions pour le système d'exploitation.</li>
+  <li>Créez les volumes logiques qui représenteront les partitions pour le système d'exploitation.</li>
 </ol>
 
 Chaque volume logique représentera un répertoire pour l'installation de votre base de données SAP HANA. 
@@ -135,8 +135,9 @@ $ lvcreate -L<X>G -n lv_hanalog vg_hana
 $ lvcreate -L<X>G -n lv_hanashared vg_hana
 $ lvcreate -L<X>G -n lv_hanabackup vg_hana
 ```
+
 <ol start="5">
-  <li> Une fois les volumes logiques créés, il est nécessaire de les formater dans un format de système de fichiers supporté pour SAP HANA.</li>
+  <li>Une fois les volumes logiques créés, il est nécessaire de les formater dans un format de système de fichiers supporté pour SAP HANA.</li>
 </ol>
 
 Dans ce guide, nous utilisons le format de système de fichiers XFS. Nous vous recommandons de prendre connaissance de la [SAP Note 2972496 - SAP HANA Filesystem Types](https://launchpad.support.sap.com/#/notes/2972496) afin de découvrir les formats supportés pour SAP HANA.
@@ -150,7 +151,7 @@ $ mkfs.xfs /dev/vg_hana/lv_hanabackup
 ```
 
 <ol start="6">
-  <li> Créez les répertoires sur lesquels vont s'appuyer ces volumes logiques.</li>
+  <li>Créez les répertoires sur lesquels vont s'appuyer ces volumes logiques.</li>
 </ol>
 
 ```bash
@@ -158,7 +159,7 @@ $ mkdir -p /hana/data /hana/log /hana/shared /usr/sap /hanabackup
 ```
 
 <ol start="7">
-  <li>Afin de monter ces systèmes de fichiers sur le système d'exploitation, nous allons récupérer leur UUID afin de remplir le fichier <code>/etc/fstab</code>.</li>
+  <li>Afin de monter ces systèmes de fichiers sur le système d'exploitation, vous devez récupérer leur UUID afin de remplir le fichier <code>/etc/fstab</code>.</li>
 </ol>
 
 Pour récupérer chaque UUID des volumes logiques, vous pouvez utiliser ces commandes :
@@ -172,7 +173,7 @@ $ blkid /dev/vg_hana/lv_hanabackup | awk '{print $2}'
 ```
 
 <ol start="8">
-  <li>Ajoutez ce contenu dans le fichier <code>/etc/fstab</code>, en remplaçant les caractères <code><UUID></code> par les valeurs précédemment obtenues.</li>
+  <li>Ajoutez ce contenu dans le fichier <code>/etc/fstab</code>, en remplaçant par les valeurs précédemment obtenues.</li>
 </ol>
 
 ```bash
@@ -204,7 +205,7 @@ $ zypper install -y saptune
 
 <ol start="2">
   <li>En fonction de votre futur système SAP, deux possibilités s'offrent à vous.</li>
-</ol><br>
+</ol>
 &ensp;&thinsp;a. Le premier choix est `HANA` qui correspond à une installation SAP HANA qui hébergera un système SAP Netweaver.<br>
 &ensp;&thinsp;b. Le second choix est `S4HANA-DBSERVER` qui correspond à une installation SAP HANA qui hébergera un système SAP S/4HANA.
 
@@ -243,3 +244,5 @@ Vous pouvez procéder à l'installation SAP HANA. Pour cela, nous vous recommand
 ## Aller plus loin
 
 [Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/fr/dedicated/ola-sles15/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
