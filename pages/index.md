@@ -564,7 +564,7 @@
             + [Tutorials](public-cloud-databases-postgresql-tutorials)
                 + [PostgreSQL - Tutorial - Build a Strapi app connected to OVHcloud Managed PostgreSQL service](platform/databases/postgresql_tuto_01_connect_strapi_to_managed_postgresql)
                 + [PostgreSQL - Tutorial - Install Wagtail and connect it to OVHcloud Managed PostgreSQL service](platform/databases/postgresql_tuto_02_connect_wagtail_to_managed_postgresql)
-                + [PostgreSQL - Tutorial - How to migrate from Enterprise Cloud Databases to Public Cloud Databases](platform/databases/postgresql_tuto_03_migrate_ecdb)
+                + [PostgreSQL - Tutorial - How to migrate an on-premises database to Public Cloud Databases](platform/databases/postgresql_tuto_03_migrate_ecdb)
         + [Redis](public-cloud-databases-redis)
             + [Guides](public-cloud-databases-redis-guides)
                 + [Redis - Capabilities and Limitations](platform/databases/redis_01_capabilities)

@@ -30,7 +30,7 @@ These guides can help you to meet these requirements:
 
 ## Considerations
 
-- This document outlines an offline migration path for your database, which means you'll have to suspend all the writes from your application  for the duration of the migration. Ensure you plan sufficient downtime to carry out all the migration tasks.
+- This document outlines an offline migration path for your database, which means you will have to suspend all the writes from your application for the duration of the migration. Ensure you plan sufficient downtime to carry out all the migration tasks.
 - Ensure the source and destination PostgreSQL versions match.
 - Ensure you have good enough bandwidth between the client machine and both source and destination databases.
 - Ensure you choose a [Database plan](https://www.ovhcloud.com/de/public-cloud/prices/#databases) with appropriate compute, storage and memory resources.
