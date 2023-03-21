@@ -14,7 +14,7 @@ In a previous tutorial, we created and trained a Rasa Chatbot with AI Notebooks:
 Now, the aim of this tutorial is to deploy a chatbot with OVHcloud AI Tools. We also train our chatbot with AI Training. 
 
 We used the famous open source framework [Rasa](https://rasa.community/) to build the chatbot. 
-To deploy our chatbot, we will use the [Flask framework](https://flask.palletsprojects.com/en/2.2.x/) to create a web application frontend. 
+To deploy our chatbot, we will use the [Flask framework](https://flask.palletsprojects.com/en/2.2.x/) to create a web app.
 
 This tutorial objectives are:
 1. Secure our Flask application 
