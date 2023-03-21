@@ -31,9 +31,9 @@ Click on `Emails`{.action} , then click on the solution you want to manage. Clic
 
 On the page that appears, click on the `Security`{.action} tab.
 
-![emailsecurity](images/manage-security02.png){.external}
+![email security](images/manage-security01.png){.external}
 
-Continue to the aspect(s) you want to modify.
+![email security](images/manage-security02.png){.external}
 
 - [Enhance connection security](#enhanced-security): Define whether accounts should lock after a number of unsuccessful log-in attempts.
 - [Add complexity to the security of passwords](#password-complexity): Define a complexity requirement, as well as rules for changing passwords.

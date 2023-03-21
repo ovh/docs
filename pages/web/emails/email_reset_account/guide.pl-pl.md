@@ -86,7 +86,7 @@ W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej ofe
 
 [Pierwsze kroki z usługą Hosted Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_pierwsza_konfiguracja_uslugi/)
 
-[Zarządzanie płatnościami za Twoje konta Email Pro](hhttps://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/)
+[Zarządzanie płatnościami za Twoje konta Email Pro](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/)
 
 [Zarządzanie płatnościami za konta Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/)
 

@@ -189,7 +189,7 @@ You can install this SSL certificate manually, directly on the VPS. Please refer
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/au/en/vps/dedicated/ssh-introduction/)
+[Introduction to SSH](https://docs.ovh.com/au/en/dedicated/ssh-introduction/)
 
 [Securing a VPS](https://docs.ovh.com/au/en/vps/tips-for-securing-a-vps/)
 
