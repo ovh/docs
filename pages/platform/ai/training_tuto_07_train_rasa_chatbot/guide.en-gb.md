@@ -1,19 +1,19 @@
 ---
-title: AI Training - Tutorial - Train a rasa chatbot with docker and AI Training 
+title: AI Training - Tutorial - Train a rasa chatbot inside Docker container 
 slug: training/train-rasa-chatbot
 excerpt: Understand how simple it is to train a chatbot with AI Training.
 section: AI Training -  Tutorials
 order: 07
 ---
 
-**Last updated 10th March, 2022.**
+**Last updated 21th March, 2022.**
 
 ## Objective
 
 The aim of the tutorial is to understand how to train a rasa model with AI Training. 
-Deployment will be performed in the second part of the tutorial, that you can find here : [How to deploy a chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/).
+Deployment will be performed in the second part of the tutorial, that you can find here : [How to deploy a chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/deploy-rasa-chatbot).
 If you want to access the code, you can find it [here](https://github.com/ovh/ai-training-examples/jobs/rasa-chatbot)  
-If you want to create a rasa chatbot with a notebook please follow this tutorial : [Create and train a rasa chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/)
+If you want to create a rasa chatbot with a notebook please follow this tutorial : [Create and train a rasa chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/create-rasa-chatbot)
 
 We will use the famous open source framework [Rasa](https://rasa.community/) to build the chatbot and the framework [chatette](https://github.com/SimGus/Chatette) to generate examples of human sentences. 
 Both of the frameworks are Python packages.
@@ -94,7 +94,7 @@ EXPOSE 5005
 
 CMD rasa train --force --out trained-models
 ```
-This file can be found in the repository git, you don't have to create it. The file is [here](https://github.com/Victor2103/ai-training-examples/jobs/rasa-chatbot/rasa.Dockerfile).
+This file can be found in the repository git, you don't have to create it. The file is [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/rasa-chatbot).
 
 Secondly, we will have to build the Docker image and push it inside your public repository (such as Dockerhub) or in a private directory.
 Here are the two commands to run inside the folder `rasa_bot`:
@@ -196,11 +196,11 @@ If you want to use more functionnality about Rasa, please fill free to go into t
 
 If you want to see how the model is created and train it with AI Notebooks please follow this tutorial.
 
-[How to create and train a rasa chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/)
+[How to create and train a rasa chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/create-rasa-chatbot)
 
 If you want to deploy your model created with the chatbot, you can follow this tutorial. 
 
-[How to deploy a chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/)
+[How to deploy a chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/deploy-rasa-chatbot)
 
 ## Feedback
 
