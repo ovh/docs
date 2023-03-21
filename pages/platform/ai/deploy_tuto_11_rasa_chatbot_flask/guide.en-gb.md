@@ -1,5 +1,5 @@
 ---
-title: AI Deploy - Tutorial - Deploy a rasa chatbot with a simple flask app
+title: AI Deploy - Tutorial - Deploy a rasa chatbot with a simple Flask app
 slug: deploy/deploy-rasa-chatbot
 excerpt: Understand how simple it is to deploy a chatbot with AI deploy.
 section: AI Deploy -  Tutorials
