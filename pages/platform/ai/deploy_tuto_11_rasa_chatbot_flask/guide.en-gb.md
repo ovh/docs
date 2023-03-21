@@ -144,7 +144,7 @@ docker build .  -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest
 docker push <yourdockerhubId>/rasa-chatbot:latest
 ```
 
-Now, that your container is created, let's run our application and deploy our model !
+Now, that your container is created, let's run our application and deploy our model!
 
 ```bash
 ovhai app run --name rasa-back \
