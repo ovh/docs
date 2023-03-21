@@ -92,7 +92,6 @@ ENV HOME=/workspace
 #If you deploy the chatbot you expose at port 5005.
 EXPOSE 5005 
 
-
 CMD rasa train --force --out trained-models
 
 ```
