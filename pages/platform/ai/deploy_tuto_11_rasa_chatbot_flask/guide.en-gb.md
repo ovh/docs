@@ -205,7 +205,7 @@ EXPOSE 5000
 CMD python3 app.py
 ```
 
-Let's now run the app on AI Deploy ! To do so, you will need to create a docker image. Go on the folder `front-end` (`ai-training-examples/apps/flask/conversational-rasa-chatbot/front-end`) and run simply : 
+Let's now run the app on AI Deploy! To do so, you will need to create a Docker image. Go on the folder `front-end` (`ai-training-examples/apps/flask/conversational-rasa-chatbot/front-end`) and run simply:
 
 ```bash
 docker build . -f flask.Dockerfile -t <yourdockerhubId>/flask-app:latest
