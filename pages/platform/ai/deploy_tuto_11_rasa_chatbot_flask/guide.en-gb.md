@@ -173,7 +173,7 @@ Explication of the bash command who run the chatbot (you can found it inside the
 - `--connector socketio`: Specify this connector to enable connection to create a new website.
 - `--credentials "crendentials.yml"`: Specify here the path of the credentials file.
 - `--endpoints "endpoints.yml"`: Specify the path of the `endpoints.yml` file.
-- `rasa run actions` : The custom actions you've made before to launch them and use them. 
+- `rasa run actions`: The custom actions you've made before to launch them and use them.
 
 Now, you can wait that your app is started. Once she is started, you can go on the url and.. nothing special will happen.
 Just a small message with **hello from Rasa 3.2.0** ! 
