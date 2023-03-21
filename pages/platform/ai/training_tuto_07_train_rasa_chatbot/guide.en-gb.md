@@ -141,7 +141,7 @@ Then install all the requirements by running in a terminal:
 pip install -r ~/ai-training-examples/jobs/rasa-chatbot/requirements_rasa.txt 
 ```
 
-Now we can test our model !
+Now we can test our model!
 
 Open two terminals. In one of the terminal we will run one custom action and in the second, we will speak with the chatbot. Here is the command for the first terminal : 
 
