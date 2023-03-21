@@ -238,7 +238,7 @@ Here is an example of a discussion with the chatbot:
 
 ## Go further
 
-If you want to see how the model is created and train it with AI Notebooks please follow this tutorial 
+If you want to see how the model is created and train it with AI Notebooks please follow this tutorial:
 
 [How to create and train a rasa chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/)
   
