@@ -2,8 +2,9 @@
 title: AI Notebooks - Tutorial - Create and train a Rasa chatbot
 slug: notebooks/create-rasa-chatbot
 excerpt: Understand how to create  and train a chatbot with AI Notebooks
-section: AI Notebooks -  Tutorials
+section: AI Notebooks - Tutorials
 order: 10
+hidden: true
 updated: 2023-03-20
 ---
 
