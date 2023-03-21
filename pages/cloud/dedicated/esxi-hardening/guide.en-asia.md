@@ -220,7 +220,7 @@ esxcli network firewall ruleset allowedip list --ruleset-id vSphereClient
 
 Result:
 
-```console
+```
 Ruleset        Allowed IP Addresses
 -------------  --------------------
 vSphereClient  All
