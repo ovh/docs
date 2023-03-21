@@ -93,7 +93,6 @@ ENV HOME=/workspace
 EXPOSE 5005 
 
 CMD rasa train --force --out trained-models
-
 ```
 This file can be found in the repository git, you don't have to create it. The file is [here](https://github.com/Victor2103/ai-training-examples/jobs/rasa-chatbot/rasa.Dockerfile).
 
