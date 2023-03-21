@@ -29,9 +29,9 @@ The security policy management of your E-mail service has 2 aspects:
 
 Click on `Emails`{.action} , then click on the solution you want to manage. Click on the `More` tab, then on `Manage security policy`{.action}.
 
-On the page that appears, click on the `Security`{.action} tab.
+![email security](images/manage-security01.png){.external}
 
-![emailsecurity](images/manage-security02.png){.external}
+![email security](images/manage-security02.png){.external}
 
 Continue to the aspect(s) you want to modify.
 
