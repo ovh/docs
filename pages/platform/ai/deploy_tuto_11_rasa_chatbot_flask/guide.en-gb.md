@@ -236,7 +236,6 @@ Here is an example of a discussion with the chatbot:
 
 ![image](images/result.jpg){.thumbnail}
 
-
 ## Go further
 
 If you want to see how the model is created and train it with AI Notebooks please follow this tutorial 
