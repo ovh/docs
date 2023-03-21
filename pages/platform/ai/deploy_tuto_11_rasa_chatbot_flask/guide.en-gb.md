@@ -171,7 +171,7 @@ Explication of the bash command who run the chatbot (you can found it inside the
 - `--cors "*"`: Enable all cors, our front end application must have access to the model.
 - `--debug`: Print all of the logs for each user connected and disconnected.
 - `--connector socketio`: Specify this connector to enable connection to create a new website.
-- `--credentials "crendentials.yml"`: Specify here the path of the credentials file
+- `--credentials "crendentials.yml"`: Specify here the path of the credentials file.
 - `--endpoints "endpoints.yml"` : Specify the path of the "endpoints.yml file 
 - `rasa run actions` : The custom actions you've made before to launch them and use them. 
 
