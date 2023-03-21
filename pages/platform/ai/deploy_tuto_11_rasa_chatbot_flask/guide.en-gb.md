@@ -36,7 +36,7 @@ Here is the small schema to explain to you how it works:
 
 ## Instructions
 
-We will create two AI apps to deploy the rasa model. First, you will have to create two environments variables for the flask app. Let's do this !
+We will create two AI apps to deploy the rasa model. First, you will have to create two environments variables for the Flask app. Let's do this!
 
 ### Clone our example repository 
 
