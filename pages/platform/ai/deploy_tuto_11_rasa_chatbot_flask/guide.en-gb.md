@@ -185,7 +185,7 @@ For easiness, everything is on the cloned [GitHub repository](https://github.com
 
 * Create the Dockerfile
 
-First, we will need to create the dockerfile. This dockerfile is already created and it is in the folder `front-end`. Here is what she look like : 
+First, we will need to create the Dockerfile. This Dockerfile is already created and it is in the folder `front-end`. Here is what she look like:
 
 ```
 FROM python:3.8
