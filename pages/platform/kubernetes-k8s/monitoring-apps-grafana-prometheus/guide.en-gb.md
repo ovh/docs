@@ -85,7 +85,8 @@ Update Complete. ⎈Happy Helming!⎈
 
 To install the Prometheus Operator Helm chart in your OVHcloud Managed Kubernetes cluster, you need to customize some values.
 To do this, you can set parameters on the command line (`--set param.name=value`) or create a local file based on the values from the chart and pass it on the command line (`--values /tmp/kube-prometheus-stack.values`).
-For this tutorial we choosed the first method.
+
+For this tutorial we choose the first method.
 
 To install Prometheus and Grafana:
 
