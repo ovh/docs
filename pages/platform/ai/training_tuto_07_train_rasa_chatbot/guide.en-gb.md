@@ -122,7 +122,7 @@ Explanation here for the command inside the Dockerfile:
 - **rasa train**: This command will start to train a model with the NLU data you provide. The training launch some component and follow a pipeline defined in your file `config.yml`.
 - ```
 - **--force**: This line is an option for the Rasa train command. It allows to force Rasa to train a model and not only search if the data provided as been already trained. This option will retrain a model even if the data hasn't changed.
-- --out : This argument permits to say how you want to save your model. Here we saved the model in the folder trained-models and in the container <model-output-container>. 
+- **--out**: This argument permits to say how you want to save your model. Here we saved the model in the folder trained-models and in the container `<model-output-container>`.
 
 ### Test your model
 
