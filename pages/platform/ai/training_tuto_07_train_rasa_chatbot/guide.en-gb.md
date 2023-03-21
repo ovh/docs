@@ -66,7 +66,7 @@ After, you will just have to type:
 ovhai data upload GRA <data-to-train-container> data
 ```
 
-Your data will be uploaded and created in the container <data-to-train> and mounted with the prefix `data`. 3 files will be uploaded : the "nlu.yml" file, the "stories.yml" file and the "rules.yml" file. 
+Your data will be uploaded and created in the container <data-to-train> and mounted with the prefix `data`. 3 files will be uploaded : the `nlu.yml` file, the `stories.yml` file and the `rules.yml` file.
 
 Let's now train our model !
 
