@@ -37,7 +37,7 @@ The tutorial presents a chatbot.
 The first step consists to create an AI applicative token. With this token, you will be able to securely access all of your AI services. 
 To do this, launch this command on the terminal once ovhai CLI installed:
 
-``` bash
+```bash
 ovhai token create -l model=rasabotRW --role operator token-RW-chatbot
 ```
 
