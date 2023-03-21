@@ -114,7 +114,7 @@ For simplicity, we will use the ovhai CLI. And with one command line, you will h
 
 If you have already train your chatbot with ***AI Training*** and use the same dockerfile, you don't have to create and push a new image because the two images are the same. In this case, skip the creation of the container and go directly in the creation of the app. 
 
-We will need to create a container to deploy the chatbot. So, let's create a dockerfile, build the container and push it to your personnal docker account. Here is the dockerfile :
+We will need to create a container in order to deploy the chatbot. Let's create a Dockerfile, build the container and push it to your personal docker account. Here is the Dockerfile:
  
 ```
 FROM python:3.8
