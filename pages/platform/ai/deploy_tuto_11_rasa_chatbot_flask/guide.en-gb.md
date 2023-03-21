@@ -10,7 +10,7 @@ order: 11
 
 ## Objective
 
-In a previous tutorial, we created and trained a Rasa Chatbot with AI Notebooks : [How to create and train a chatbot on OVHcloud](https://docs.ovh.com/gb/en/publiccloud/ai/).
+In a previous tutorial, we created and trained a Rasa Chatbot with AI Notebooks: [How to create and train a chatbot on OVHcloud](https://docs.ovh.com/gb/en/publiccloud/ai/).
 Now, the aim of this tutorial is to deploy a chatbot with OVHcloud AI Tools. We also train our chatbot with AI Training. 
 
 We used the famous open source framework [Rasa](https://rasa.community/) to build the chatbot. 
