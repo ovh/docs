@@ -34,7 +34,7 @@ Cependant, nous ne disposons pas de tous les dispositifs nécessaires pour récu
 L'agence nationale américaine pour la cybersécurité et la sécurité des infrastructures ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) a également mis à disposition [un outil](https://github.com/cisagov/ESXiArgs-Recover) pour récupérer les données d'un serveur ESXi ciblé par le ransomware ESXIArgs.<br>
 L'utilisation de cet outil nécessite des compétences avancées en administration de système. Nous vous conseillons de ne l'utiliser qu'en connaissance de cause, OVHcloud ne pouvant vous fournir d'assistance sur son utilisation.
 
-En cas de difficultés, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) ou de contacter nos équipes en [créant un ticket d'assistance](https://www.ovh.com/manager/dedicated/#/support/tickets/new) depuis votre espace client OVHcloud.
+En cas de difficultés, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de contacter nos équipes en [créant un ticket d'assistance](https://www.ovh.com/manager/dedicated/#/support/tickets/new) depuis votre espace client OVHcloud.
 
 ### OVHcloud dispose-t-il d'une sauvegarde pour restaurer vos données ?
 
@@ -51,9 +51,9 @@ Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n’
 ### Comment réinstaller et sécuriser mon serveur dédié ESXi ?
 
 1. Sécurisez l'accès à votre serveur dédié via le [Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/) ou votre propre système de pare-feu.
-2. Installez la version VMware ESXi 7.0 U3c disponible [via votre interface d'administration du serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#installation-ou-reinstallation-de-votre-serveur-dedie)
+2. Installez la version VMware ESXi 7.0 U3c disponible [via votre interface d'administration du serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#installation-ou-reinstallation-de-votre-serveur-dedie).
 3. L'impossibilité de vous connecter après avoir installé ESXi 7 provient du système de sécurité de VMWare. Vos règles de pare-feu ne comportent aucune règle bloquante. Il ne sera pas possible de réinitialiser le mot de passe administrateur sous VMware.
-4. [Sécurisez votre serveur dédié](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/)
+4. [Sécurisez votre serveur dédié](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/).
 
 Voici les bonnes pratiques de sécurité :
 
@@ -85,4 +85,4 @@ Nos clients utilisant les solutions [Hosted Private Cloud powered by VMware](htt
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -157,7 +157,7 @@ Po wprowadzeniu wszystkich publicznych adresów IP w sekcji `Skonfigurowane IP`,
 
 [Wprowadzić weryfikację dwuetapową w Panelu klienta OVHcloud](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
