@@ -60,7 +60,7 @@ If you want to know more about data storage concept please fill free to check th
 For the chatbot, we will create two object storage buckets. One with all the data to train and the other wil be filled over time by our trained model output. The container where the model will be saved don't have to be created. When we will launch our notebook, the container will be automatically created. 
 
 To create the volume in GRA (Gravelines Datacenter), clone the [repo git](https://github.com/ovh/ai-training-examples/) and then go in the folder `jobs/rasa-chatbot`.
-`. After, you will just have to type : 
+After, you will just have to type:
 
 ```bash
 ovhai data upload GRA <data-to-train-container> data
