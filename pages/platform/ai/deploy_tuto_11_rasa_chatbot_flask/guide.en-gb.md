@@ -250,7 +250,7 @@ If you want to use more features about Rasa, please fill free to go into this li
 
 [Rasa Open source](https://rasa.com/docs/rasa/)
 
-If you want to know more about the framework flask please go to this link :
+If you want to know more about the framework flask please go to this link:
  
 [Flask Framework](https://flask.palletsprojects.com/en/2.2.x/)
 
