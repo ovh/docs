@@ -28,7 +28,7 @@ The tutorial presents a chatbot.
 - A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/).
 - [Docker](https://www.docker.com/get-started) installed on your local computer.
 - Make sure you have a Docker Hub [account](https://hub.docker.com/).
-- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
+- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
 ## Instructions
 
