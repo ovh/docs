@@ -41,7 +41,7 @@ We will create two AI apps to deploy the rasa model. First, you will have to cre
 ### Clone our example repository 
 
 Please make sure you have cloned the GitHub repository.
-You can find it here : [repo git](https://github.com/Victor2103/ai-training-examples). 
+You can find it [here](https://github.com/ovh/ai-training-examples).
 
 ### Create environment variables
 
