@@ -160,7 +160,7 @@ Few explanations here, line by line:
 - Il will launch an app in AI Deploy with the name rasa-back
 - We specify that our url is not secure by OVHcloud. The model will be in fact secured with a Json web token. The only person who will access your model is the flask frontend application. This is also why your created environment variables before. If you want to know more about json web token, please refer to <https://jwt.io/>. 
 - The port of the rasa model is 5005. 
-- 4 cpu is sufficient to deploy the model. 
+4 CPUs is sufficient to deploy the model.
 - We will add a volume to get the model file. 
 - In the -e argument, please put the jwt secret key you've generated which is in your `.env` file. 
 - The last line you specify the docker image to load and also the bash command to run inside the docker container.
