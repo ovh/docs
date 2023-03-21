@@ -106,7 +106,8 @@ docker push <yourdockerhubId>/rasa-chatbot:latest
 
 Here I have decided to use my own Docker id. To do this, you must be logged in the terminal. To log in, just run `docker login` inside a terminal and fill with your dockerhub's credentials.
 
-Once your docker image is created and pushed into the repo, you can directly use the ovhai command to create your training of the model. Here is the full command. The training is about 5 minutes. You can change the time of the training if you change the number of gpu or the config file for the rasa training. 
+Once your Docker image is created and pushed into the repository, you can directly use the `ovhai` command to create your model training. Here is the full command. The training is about 5 minutes. You can change the time of the training if you change the number of **GPUs** or the config file for the rasa training.
+
 ```bash
 ovhai job run --name rasa-chatbot \
 --gpu 1 \
