@@ -1,13 +1,13 @@
 ---
-title: Tutorial - Create a basic workflow with AI training
-slug: apache-airflow/ai-training-basic-workflow
+title: Tutorial – AI Training - Train your first ML model
+slug: apache-airflow/ai-training-first-training
 excerpt: Train a basic model inside an AI Training job with Apache Airflow
 section: Apache AirFlow
 order: 05
-updated: 2023-03-08
+updated: 2023-03-27
 ---
 
-**Last updated 8th March, 2023.**
+**Last updated 27th March, 2023.**
 
 ## Objective
 

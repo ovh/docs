@@ -1,13 +1,13 @@
 ---
-title: Tutorial - Process data and train AI model with AI training
-slug: apache-airflow/ai-training-preproces-train
+title: Tutorial – AI Training - Process data then train your AI model
+slug: apache-airflow/ai-training-preprocess-train
 excerpt: Process your data before training your model into two dependent AI Training jobs with Apache Airflow
 section: Apache AirFlow
 order: 06
-updated: 2023-03-20
+updated: 2023-03-27
 ---
 
-**Last updated 20th March, 2023.**
+**Last updated 27th March, 2023.**
 
 ## Objective
 

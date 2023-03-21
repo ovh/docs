@@ -1,13 +1,13 @@
 ---
-title: Getting started with AI Training
-slug: apache-airflow/ai-training-getting-started
+title: Tutorial - AI Training - Launch your first DAG
+slug: apache-airflow/ai-training-hello-world
 excerpt: Discover how to trigger an AI Training job with a dedicated AirFlow operator
 section: Apache AirFlow
 order: 04
-updated: 2023-03-08
+updated: 2023-03-27
 ---
 
-**Last updated 8th March, 2023.**
+**Last updated 27th March, 2023.**
 
 ## Objective
 
