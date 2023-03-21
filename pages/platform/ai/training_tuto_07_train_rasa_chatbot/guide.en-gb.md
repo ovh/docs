@@ -135,7 +135,8 @@ ovhai notebook run conda vscode \
 	--cpu 10 \
 	--token <token> \
 ```
-Then install all the requirements by running in a terminal : 
+
+Then install all the requirements by running in a terminal:
 ```bash 
 pip install -r ~/ai-training-examples/jobs/rasa-chatbot/requirements_rasa.txt 
 ```
