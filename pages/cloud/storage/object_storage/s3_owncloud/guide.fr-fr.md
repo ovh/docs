@@ -28,7 +28,7 @@ Owncloud est une suite de logiciels client-serveur pour créer et utiliser des s
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key).
 
-Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/object-storage/s3/getting-started-with-object-storage/) » pour plus de détails.
 
 ## En pratique
 
