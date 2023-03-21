@@ -179,7 +179,7 @@ Now, you can wait that your app is started. Once she is started, you can go on t
 Just a small message with **hello from Rasa 3.2.0**!
 
 For better interactions, we will now deploy the Flask frontend.
-For easiness, everything is on the cloned Git repository. 
+For easiness, everything is on the cloned [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/flask/conversational-rasa-chatbot).
 
 #### Deploy the front End App
 
