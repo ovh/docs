@@ -200,7 +200,6 @@ RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 
 
-
 EXPOSE 5000
 
 CMD python3 app.py
