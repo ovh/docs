@@ -92,6 +92,6 @@ For more information, please read our documentation on [domains and Dns](https:/
 
 ## Go further
 
-If you would like assistance migrating your server, please contact our network of [OVHcloud partners](https://partner.ovhcloud.com/asia/).
+If you would like assistance migrating your server, please contact our network of [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 Join our community of users on <https://community.ovh.com/en/>.

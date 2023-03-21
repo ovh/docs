@@ -16,7 +16,7 @@ Ce guide a pour objectif de vous montrer comment configurer Veeam pour utiliser 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
@@ -25,7 +25,7 @@ Ce guide a pour objectif de vous montrer comment configurer Veeam pour utiliser 
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Connaître vos informations d'identification S3 (access_key et secret_access_key)
 
-Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/object-storage/s3/getting-started-with-object-storage/) » pour plus de détails.
 
 ## En pratique
 

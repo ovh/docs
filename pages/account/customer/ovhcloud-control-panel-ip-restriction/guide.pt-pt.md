@@ -157,7 +157,7 @@ Depois de inserir todos os endereços IP públicos na secção `IP configurados`
 
 [Implementar uma dupla autenticação na sua Área de Cliente OVHcloud](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
