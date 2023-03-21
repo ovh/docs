@@ -126,7 +126,7 @@ Explanation here for the command inside the Dockerfile:
 
 ### Test your model
 
-So, you've trained your model and you want to see if he is returning good results. Let's go ! To do this, let's create a VScode notebook. You can run this command to be fast :
+Once you have trained your model and you want to see if he is returning good results. Let's go! To do this, let's create a Visual Studio Code notebook. You can run this command to be fast:
 ```bash
 ovhai notebook run conda vscode \
 	--name vscode-ovh-chatbot \
