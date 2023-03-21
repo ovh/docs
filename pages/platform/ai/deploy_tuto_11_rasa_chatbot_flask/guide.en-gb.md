@@ -137,7 +137,8 @@ CMD rasa run -m trained-models --cors "*" --debug --connector socketio --credent
 
 This file can be found in the repository git, you don't have to create it. The file is [here](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/conversational-rasa-chatbot/back-end/rasa.Dockerfile).
 
-Now please run in this folder (`back-end`) the command here to build and push the container : 
+Now please run in this folder (`back-end`) the command here to build and push the container:
+
 ```bash
 docker build .  -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest
 docker push <yourdockerhubId>/rasa-chatbot:latest
