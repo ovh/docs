@@ -19,7 +19,7 @@ To deploy our chatbot, we will use the [Flask framework](https://flask.palletspr
 This tutorial objectives are:
 1. Secure our Flask application 
 2. Deploy our rasa model with AI deploy
-3. Deploy our flask application frontend and speak with the chatbot. 
+3. Deploy Flask application and converse with the chatbot.
 
 Here is the small schema to explain to you how it works :
 
