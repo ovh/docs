@@ -182,7 +182,7 @@ To get the job id of the previous job, just run this command to get the list of 
 ovhai job ls
 ```
 
-More explanation are here : [CLI Reference](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli/).
+More explanation are here: [CLI Reference](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli/).
 
 
 Once you have your model is ready, we must deploy the model to use it. This will be ensure with the tool AI Deploy from the Public Cloud.
