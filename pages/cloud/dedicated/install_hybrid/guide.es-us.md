@@ -25,7 +25,7 @@ OVHcloud le ofrece la posibilidad de contratar [servidores dedicados](https://ww
 
 * Tener un [servidor híbrido de OVHcloud](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
 * Tener acceso a la [API de OVHcloud](https://ca.api.ovh.com/){.external}.
-* Estar conectado al [área de cliente de OVHcloud](https://ca..ovh.com/auth/?action=gotomanager){.external}.
+* Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 > [!warning]
 >

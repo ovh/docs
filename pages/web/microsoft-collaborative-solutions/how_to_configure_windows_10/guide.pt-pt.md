@@ -25,7 +25,7 @@ As contas Exchange podem ser configuradas em vários softwares de e-mail compat�
 
 ## Requisitos
 
-- Dispor de uma oferta [Exchange](hthttps://www.ovhcloud.com/pt/emails/) .
+- Dispor de uma oferta [Exchange](https://www.ovhcloud.com/pt/emails/) .
 - Dispor da aplicação Correio instalada no seu dispositivo.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -67,7 +67,7 @@ Pode efetuar um teste de envio para verificar se a conta está corretamente conf
 
 Depois de configurar o endereço de e-mail, só falta utilizá-lo! Pode desde já enviar e receber mensagens.
 
-A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](hthttps://www.ovhcloud.com/pt/emails/) . Este endereço está disponível em <hthttps://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funções colaborativas](https://www.ovhcloud.com/pt/emails/) . Este endereço está disponível em <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ## Quer saber mais?
 
