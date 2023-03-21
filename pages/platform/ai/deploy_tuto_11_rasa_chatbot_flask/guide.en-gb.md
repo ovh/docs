@@ -52,7 +52,7 @@ The first variable will be the secret key for the Json web token signature to ac
 ```python
 import secrets
 print(secrets.token_urlsafe())
-# Should display something like this : 
+# Should display something like this:
 # dux3BudMxlRSm1GI3IoBEuS7UWVU3nYGJ9l_0Cd3rms
 ```
 
