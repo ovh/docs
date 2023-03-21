@@ -78,7 +78,7 @@ Splitting input data and output data is a good practice, allowing you faster dev
 
 The obvious goal about using object storage and not the local storage of the AI Notebook, is to de-correlate compute and storage, allowing us to stop or delete the notebook while keeping the data safe.
 
-If you want to know more about data storage concept please fill free to check this : [Create an object container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/). 
+If you want to know more about data storage concept please fill free to check this: [Create an object container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/).
 
 For the chatbot deployment, we will create one object storage bucket. It will contain a pre trained model. If you've already train a model before with others tutorials, don't create a new container.
 
