@@ -17,7 +17,7 @@ We used the famous open source framework [Rasa](https://rasa.community/) to buil
 To deploy our chatbot, we will use the [Flask framework](https://flask.palletsprojects.com/en/2.2.x/) to create a web app.
 
 This tutorial objectives are:
-1. Secure our Flask application 
+1. Secure Flask application
 2. Deploy our rasa model with AI deploy
 3. Deploy Flask application and converse with the chatbot.
 
