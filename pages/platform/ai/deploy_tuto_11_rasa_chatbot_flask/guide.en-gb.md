@@ -6,11 +6,11 @@ section: AI Deploy -  Tutorials
 order: 11
 ---
 
-**Last updated 10th March, 2023.**
+**Last updated 21th March, 2023.**
 
 ## Objective
 
-In a previous tutorial, we created and trained a Rasa Chatbot with AI Notebooks: [How to create and train a chatbot on OVHcloud](https://docs.ovh.com/gb/en/publiccloud/ai/).
+In a previous tutorial, we created and trained a Rasa Chatbot with AI Notebooks: [How to create and train a chatbot on OVHcloud](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/create-rasa-chatbot).
 Now, the aim of this tutorial is to deploy a chatbot with OVHcloud AI Tools. We also train our chatbot with AI Training. 
 
 We used the famous open source framework [Rasa](https://rasa.community/) to build the chatbot. 
@@ -238,11 +238,11 @@ Here is an example of a discussion with the chatbot:
 
 If you want to see how the model is created and train it with AI Notebooks please follow this tutorial:
 
-[How to create and train a rasa chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/)
+[How to create and train a rasa chatbot](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/create-rasa-chatbot)
   
 If you want to train a rasa chatbot with the tool AI Training, please look at this tutorial. 
 
-[How to train a chatbot with docker and AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/)
+[How to train a chatbot with docker and AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/training/train-rasa-chatbot)
   
 If you want to use more features about Rasa, please fill free to go into this link. We use Rasa Open Source and not Rasa X. 
 
