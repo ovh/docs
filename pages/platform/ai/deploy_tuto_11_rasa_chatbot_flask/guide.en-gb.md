@@ -165,7 +165,7 @@ Few explanations here, line by line:
 - In the -e argument, please put the jwt secret key you've generated which is in your `.env` file. 
 - The last line you specify the docker image to load and also the bash command to run inside the docker container.
 
-Explication of the bash command who run the chatbot (you can found it inside the dockerfile) :
+Explication of the bash command who run the chatbot (you can found it inside the Dockerfile):
 - `rasa run` : run a specific model to be use with others applications
 - `-m trained-models` : Here, we specify the path to the models trained before. 
 - `--cors "*"` : Enable all cors, our front end application must have access to the model
