@@ -168,7 +168,7 @@ This is a small example of a discussion with the bot :
 ![image](images/discussion.png){.thumbnail}
 
 
-Congrats ! you can test your first rasa model and speak with him. If you have several models in your folder trained-models, you can specify after the option -m the folder and the specific model you want to train. 
+Congrats! you can test your first rasa model and speak with him. If you have several models in your folder `trained-models`, you can specify after the option -m the folder and the specific model you want to train. 
 
 If you're not satisfied about the model because your chatbot doesn't respond very well, you can run this command. It will run the job again and create a new model.
 
