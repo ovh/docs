@@ -88,7 +88,7 @@ To create the volume in GRA (Gravelines Datacenter) in read only, go in the fold
 ovhai data upload GRA <model-output-container> 20221220-094914-yellow-foley.tar.gz
 ```
 
-The model `20221220-094914-yellow-foley.tar.gz` will be added in your container <model-output-container> ! That's it, now you can deploy your chatbot. 
+The model `20221220-094914-yellow-foley.tar.gz` will be added in your container <model-output-container>! That's it, now you can deploy your chatbot.
 
 ### Test it locally (optional)
 
