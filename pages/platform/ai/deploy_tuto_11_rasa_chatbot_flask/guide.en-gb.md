@@ -21,7 +21,7 @@ This tutorial objectives are:
 2. Deploy rasa model with AI deploy
 3. Deploy Flask application and converse with the chatbot.
 
-Here is the small schema to explain to you how it works :
+Here is the small schema to explain to you how it works:
 
 ![image](images/diagramme.png){.thumbnail}
 
