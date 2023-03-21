@@ -169,7 +169,7 @@ Explication of the bash command who run the chatbot (you can found it inside the
 - `rasa run`: run a specific model to be use with others applications
 - `-m trained-models`: Here, we specify the path to the models trained before.
 - `--cors "*"`: Enable all cors, our front end application must have access to the model.
-- `--debug` : Print all of the logs for each user connected and disconnected
+- `--debug`: Print all of the logs for each user connected and disconnected.
 - `--connector socketio` : Specify this connector to enable connection to create a new website
 - `--credentials "crendentials.yml"`: Specify here the path of the credentials file
 - `--endpoints "endpoints.yml"` : Specify the path of the "endpoints.yml file 
