@@ -82,7 +82,7 @@ If you want to know more about data storage concept please fill free to check th
 
 For the chatbot deployment, we will create one object storage bucket. It will contain a pre trained model. If you've already train a model before with others tutorials, don't create a new container.
 
-To create the volume in GRA (Gravelines Datacenter) in read only, go in the folder `ai-training-examples/apps/flask/conversational-rasa-chatbot/back-end/models`. After, you will just have to type : 
+To create the volume in GRA (Gravelines Datacenter) in read only, go in the folder `ai-training-examples/apps/flask/conversational-rasa-chatbot/back-end/models`. After, you will just have to type:
 
 ```bash
 ovhai data upload GRA <model-output-container> 20221220-094914-yellow-foley.tar.gz
