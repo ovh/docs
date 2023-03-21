@@ -97,7 +97,7 @@ CMD rasa train --force --out trained-models
 This file can be found in the repository git, you don't have to create it. The file is [here](https://github.com/Victor2103/ai-training-examples/jobs/rasa-chatbot/rasa.Dockerfile).
 
 Secondly, we will have to build the Docker image and push it inside your public repository (such as Dockerhub) or in a private directory.
-Here are the two commands to run inside the folder rasa_bot :
+Here are the two commands to run inside the folder `rasa_bot`:
 
 ```bash
 docker build .  -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest
