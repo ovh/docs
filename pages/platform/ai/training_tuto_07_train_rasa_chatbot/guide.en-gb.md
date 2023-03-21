@@ -25,7 +25,7 @@ The tutorial presents a chatbot.
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
 - A Public Cloud project created.
 - The ovhai CLI interface installed on your laptop. More information [here](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/).
-- A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
+- A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/).
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Make sure you have a Docker Hub [account](https://hub.docker.com/);
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
