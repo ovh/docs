@@ -44,6 +44,16 @@ M3 | Backup on object storage | On-Site, *Off-Site* | Daily | 24h | Yes
 Cassandra | Backup on object storage | On-Site, *Off-Site* | Daily | 24h | Yes
 Kafka | N/A | N/A | N/A | N/A | N/A
 
+## Off-site backup replication mecanism
+
+For MongoDB, backup data gets shipped directly to the remote region.
+
+For the other engines, backups are first prepared on-site, then replicated to another region. The on-site backup data persists once it gets replicated to the other region.
+
+## Off-site backup location
+
+Public Cloud Databases are currently configured so that services located in `GRA` (Gravelines, France) and `BHS` (Beauharnois, Canada) are configured to use `SBG` (Strasbourg, France) as the region for off-site backups. Other regions, i.e. `DE` (Frankfurt, Germany), `SBG` (Strasbourg, France), `UK` (London, United Kingdom) and `WAW` (Warsaw, Poland) use `GRA` (Gravelines, France) as the region for off-site backups.
+
 ## Lexicon
 
 PITR: Point In Time Recovery
