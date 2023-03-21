@@ -58,7 +58,7 @@ print(secrets.token_urlsafe())
 
 The second one will be the algorithm used for the json web token. The algorithm will use will be H256.
 
-You have your two environnements variables. Time to save it ! create a '.env' file inside the folder `flask_app`. Your .env should look like this : 
+You have your two environnements variables. Time to save it! Create an `.env` file inside the folder `flask_app`. Your `.env` should look like this:
 
 ```
 JWT_SECRET_KEY=your-jwebtoken-generated-before
