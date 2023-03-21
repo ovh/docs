@@ -183,7 +183,7 @@ For easiness, everything is on the cloned [GitHub repository](https://github.com
 
 #### Deploy the front End App
 
-* Create the dockerfile
+* Create the Dockerfile
 
 
 First, we will need to create the dockerfile. This dockerfile is already created and it is in the folder `front-end`. Here is what she look like : 
