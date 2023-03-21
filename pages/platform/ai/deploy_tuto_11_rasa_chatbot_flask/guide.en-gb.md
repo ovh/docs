@@ -230,7 +230,7 @@ ovhai app run --name flask-app \
 <yourdockerhubId>/flask-app:latest 
 ```
 
-That's it ! On the URL of this app, you can speak to your chatbot ! Try to have a simple conversation ! And if you reload the page, you can notice that the chatbot go back to zero. So every user is different on each machine. 
+That's it! On the URL of this app, you can speak to your chatbot. Try to have a simple conversation! And if you reload the page, you can notice that the chatbot go back to zero. So every user is different on each machine.
 
 Here is an example of a discussion with the chatbot : 
 
