@@ -30,7 +30,7 @@ Here is the small schema to explain to you how it works:
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - A Public Cloud project created.
 - The ovhai CLI interface installed on your laptop. More information [here](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/).
-- [Docker](https://www.docker.com/get-started) installed on your local computer
+- [Docker](https://www.docker.com/get-started) installed on your local computer.
 - Make sure you have a Docker Hub [account](https://hub.docker.com/) or another Docker registry.
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
