@@ -176,7 +176,7 @@ Explication of the bash command who run the chatbot (you can found it inside the
 - `rasa run actions`: The custom actions you've made before to launch them and use them.
 
 Now, you can wait that your app is started. Once she is started, you can go on the url and.. nothing special will happen.
-Just a small message with **hello from Rasa 3.2.0** ! 
+Just a small message with **hello from Rasa 3.2.0**!
 
 For better interactions, we will now deploy the Flask frontend.
 For easiness, everything is on the cloned Git repository. 
