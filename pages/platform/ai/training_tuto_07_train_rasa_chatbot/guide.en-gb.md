@@ -116,7 +116,7 @@ ovhai job run --name rasa-chatbot \
 <yourdockerhubId>/rasa-chatbot:latest
 ```
 
-For more explanation about the CLI command for AI Training please click on this link : [CLI Reference](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli/).
+For more explanation about the CLI command for AI Training please click on this link: [CLI Reference](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli/).
 
 Explanation here for the command inside the dockerfile:
 - rasa train : This command will start to train a model with the NLU data you provide. The training launch some component and follow a pipeline defined in your file config.yml. 
