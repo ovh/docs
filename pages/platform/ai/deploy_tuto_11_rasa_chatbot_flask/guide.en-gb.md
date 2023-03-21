@@ -65,7 +65,7 @@ JWT_SECRET_KEY=your-jwebtoken-generated-before
 JWT_ALGORITHM=HS256
 ```
 
-Your environment variables are saved. One more thing to do is to add in the docker-compose.yml file in the image Rasa the JWT_SECRET_KEY value. The value must be the same in the `.env` file. Otherwise, your model will not be able to run. Now, let's test locally our app or let's deploy our chatbot !
+Your environment variables are saved. One more thing to do is to add in the `docker-compose.yml` file in the image Rasa the `JWT_SECRET_KEY` value. The value must be the same in the `.env` file. Otherwise, your model will not be able to run. Now, let's test locally our app or let's deploy our chatbot!
 
 If you have already train a rasa model with OVHcloud, you should already have an object storage container with your trained models. If you don't have this one, please continue this tutorial to create one. Otherwise, you can go directly [here](#test-it-locally-optional).
 
