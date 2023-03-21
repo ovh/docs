@@ -74,7 +74,7 @@ Let's train our model!
 
 To train the model, we will use AI Training. This tool is much more powerful. It will allow you to automate your pipelines and build fine-tuning phases easily.
 
-AI Training allow you to train models directly from your own Docker images.
+AI Training allows you to train models directly from your own Docker images.
 
 First, you need to create a Dockerfile compliant with AI Training. You can find an example here:
 
