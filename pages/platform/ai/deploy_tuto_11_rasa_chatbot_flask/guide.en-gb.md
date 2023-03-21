@@ -110,7 +110,7 @@ docker compose -f flask-docker-compose.yml down
 
 #### Deploy the Rasa model in the Cloud
 
-For simplicity, we will use the ovhai CLI. And with one command line, you will have your model up and running securely with TLS !
+For simplicity, we will use the ovhai CLI. And with one command line, you will have your model up and running securely with TLS!
 
 If you have already train your chatbot with ***AI Training*** and use the same dockerfile, you don't have to create and push a new image because the two images are the same. In this case, skip the creation of the container and go directly in the creation of the app. 
 
