@@ -38,7 +38,7 @@ In this section you will find all information related to your use of the AI Tool
 At a glance, you can see the total amount of your next billing for your consumption with the AI tools.
 You can see more details on the prices of the AI tools in the [documentation](https://www.ovhcloud.com/en-ca/public-cloud/prices/#ai-&-machine-learning).
 
-You can also see some security information about the number of created users and tokens that can use your AI tools.
+You can also see some security information about the number of created users (and tokens) that can use your AI tools.
 
 ## Users & tokens
 
