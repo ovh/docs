@@ -232,7 +232,10 @@ You should now see the examples of **AirFlow DAGs** appearing. You are free to t
 
 To go further and create **your own DAGs**, you can follow the following tutorials.
 
+## Go further
 
+- How to create your first DAG to trigger a "Hello World" AI Training job? Find more information [here](PUT THE LINK_TUTO_1).
+- Do you want to know how to train a ML model inside an AI Training job with Apache Airflow? Refer to this [documentation](PUT THE_LINK_TUTO_2).
 
 ## Feedback
 

@@ -202,6 +202,11 @@ You can also click on the `Log` button to check AI Training job logs.
 
 Congratulations! You have launched your first AI Training job with **AirFlow**.
 
+## Go further
+
+- How to train a ML model inside an AI Training job with Apache Airflow? Find more information [here](PUT THE LINK_TUTO_2).
+- Do you want to process your data before training your model into two dependent AI Training jobs? Do it with AirFlow by following this [tutorial](PUT THE LINK_TUTO_3).
+
 ## Feedback
 
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/KbrKSEettv)!

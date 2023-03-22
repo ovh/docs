@@ -406,6 +406,11 @@ You can also click on the `Log` button to check AI Training job logs and Machine
 
 Congratulations! You have trained your first model in an AI Training job with **AirFlow**.
 
+## Go further
+
+- Do you want to process your data before training your model into two dependent AI Training jobs? Do it with AirFlow by following this [tutorial](PUT THE LINK_TUTO_3).
+- To train ML model and track it with TensorBoard thanks to AI Training and AirFlow, refer to this [documentation](PUT THE_LINK_TUTO_4).
+
 ## Feedback
 
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/KbrKSEettv)!

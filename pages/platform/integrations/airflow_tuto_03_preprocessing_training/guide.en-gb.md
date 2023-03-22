@@ -334,6 +334,11 @@ Finally, you can follow the evolution of Machine Learning model in the second ta
 
 Congratulations! You have processed your data and trained your model in AI Training jobs with **AirFlow**.
 
+## Go further
+
+- How to train ML model and track it with TensorBoard? Do it with AI Training and AirFlow by following to this [documentation](PUT THE_LINK_TUTO_4).
+- Do you want to know how to train a ML model inside an AI Training job with Apache Airflow? Refer to this [documentation](PUT THE_LINK_TUTO_2).
+
 ## Feedback
 
 Please feel free to send us your questions, feedback and suggestions to help our team improve the service on the OVHcloud [Discord server](https://discord.com/invite/KbrKSEettv)!
