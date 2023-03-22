@@ -67,62 +67,133 @@ You can now copy the **Login information** `ssh debian@x.x.x.x` in your terminal
 
 Now that you are connected to your instance, you can check the availability of `docker` and `docker compose`.
 
-- docker
+First, run `docker` command in the terminal.
 
 ![image](images/connexion-docker-instance.png){.thumbnail}
 
-- docker compose
+Then, run `docker compose`.
 
 ![image](images/check-docker-compose.png){.thumbnail}
 
+Everything is working properly, it is time to set up your environment!
+
 ### Set up the environment for AirFlow
+
+To prepare your environment, you will first create a dedicated directory. You will then rely on this [AirFlow documentation](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#) for the deployment.
 
 #### Create a dedicated directory for Airflow
 
-- mkdir airflow-folder
+Go to the root and run the following commands:
 
-- cd airflow-folder
+```console
+pwd
+```
+
+You should have this result:
+
+```console
+/home/debian
+```
+
+Then, create a folder for AirFlow `airflow-folder` and access to this directory:
+
+```console
+mkdir airflow-folder
+cd airflow-folder
+```
 
 #### Fetch docker-compose.yaml file
 
-To deploy Airflow on Docker Compose, you should fetch docker-compose.yaml.
+To deploy AirFlow on **Docker Compose**, you should fetch `docker-compose.yaml` file in your .
 
-- curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.5.2/docker-compose.yaml'
+```console
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.5.2/docker-compose.yaml'
+```
 
+You should see `docker-compose.yaml` file in your `airflow-folder`.
+
+For more information about the content of this fil, check this [documentation](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#fetching-docker-compose-yaml).
+
+Now you have to initialize your environment.
 
 ### Initialize the environment
 
+Before starting AirFlow for the first time, you have to set up the environment. You will need to create the directories and initialize the database.
+
 #### Setting the right Airflow user
 
-- mkdir -p ./dags ./logs ./plugins
+Some directories are mounted in the container, it means that the contents are synchronized between your VM and the container.
 
-- echo -e "AIRFLOW_UID=$(id -u)" > .env
+- `./dags` to put your files DAG files.
+- `./logs` to save the logs from task execution and scheduler.
+- `./plugins` to add your custom plugins here.
+
+To begin with, set the AirFlow user right:
+
+```console
+mkdir -p ./dags ./logs ./plugins
+echo -e "AIRFLOW_UID=$(id -u)" > .env
+```
 
 #### Initialize the database
 
-- docker compose up airflow-init
-few minutes
+Now, you need to run database migrations and create the first user account. Run the following command:
 
+```console
+docker compose up airflow-init
+```
+
+*This operation may take a few minutes...*
+
+Once the initialization is completed, you should see a similar message:
+
+```console
 airflow-folder-airflow-init-1  | User "airflow" created with role "Admin"
 airflow-folder-airflow-init-1  | 2.5.2
 airflow-folder-airflow-init-1 exited with code 0
+```
+
+An AirFlow account has been created with the following credentials:
+
+- user: `airflow`
+- password: `airflow`
+
 
 ### Run AirFlow with Docker
 
-- docker compose up -d
+You can start all services with the `docker compose` command:
 
+> [!primary]
+>
+> You can use the `-d` (**detached mode**) in your command to run containers in the background.
+>
+
+```console
+docker compose up -d
+```
+
+You should see a similar display:
+
+```console
 [+] Running 7/7
- ⠿ Container airflow-folder-redis-1              Healthy                                                                                                                                            12.1s
- ⠿ Container airflow-folder-postgres-1           Healthy                                                                                                                                            12.1s
- ⠿ Container airflow-folder-airflow-init-1       Exited                                                                                                                                             32.1s
- ⠿ Container airflow-folder-airflow-worker-1     Started                                                                                                                                            32.8s
- ⠿ Container airflow-folder-airflow-webserver-1  Started                                                                                                                                            32.9s
- ⠿ Container airflow-folder-airflow-triggerer-1  Started                                                                                                                                            32.7s
- ⠿ Container airflow-folder-airflow-scheduler-1  Started  
+ ⠿ Container airflow-folder-redis-1                Healthy                12.1s
+ ⠿ Container airflow-folder-postgres-1             Healthy                12.1s
+ ⠿ Container airflow-folder-airflow-init-1         Exited                 32.1s
+ ⠿ Container airflow-folder-airflow-worker-1       Started                32.8s
+ ⠿ Container airflow-folder-airflow-webserver-1    Started                32.9s
+ ⠿ Container airflow-folder-airflow-triggerer-1    Started                32.7s
+ ⠿ Container airflow-folder-airflow-scheduler-1    Started                32.9s
+```
 
+In the same terminal you can check the containers status and make sure that no containers are in **unhealthy** status.
 
-- docker ps
+```console
+docker ps
+```
 
+The output should look like this:
+
+```console
 CONTAINER ID   IMAGE                  COMMAND                  CREATED         STATUS                             PORTS                                       NAMES
 3b96788e12dd   apache/airflow:2.5.2   "/usr/bin/dumb-init …"   7 minutes ago   Up 13 seconds (health: starting)   8080/tcp                                    airflow-folder-airflow-triggerer-1
 f1ab964d853a   apache/airflow:2.5.2   "/usr/bin/dumb-init …"   7 minutes ago   Up 13 seconds (health: starting)   8080/tcp                                    airflow-folder-airflow-worker-1
@@ -130,46 +201,38 @@ f1ab964d853a   apache/airflow:2.5.2   "/usr/bin/dumb-init …"   7 minutes ago  
 032c3d265b3e   apache/airflow:2.5.2   "/usr/bin/dumb-init …"   7 minutes ago   Up 13 seconds (health: starting)   8080/tcp                                    airflow-folder-airflow-scheduler-1
 f9ab16d13786   postgres:13            "docker-entrypoint.s…"   9 minutes ago   Up 45 seconds (healthy)            5432/tcp                                    airflow-folder-postgres-1
 8b3359a1d1cd   redis:latest           "docker-entrypoint.s…"   9 minutes ago   Up 45 seconds (healthy)            6379/tcp                                    airflow-folder-redis-1
+```
 
-### Access to AirFlow webserver
+Your **AirFlow webserver** should now be running.
 
-- ipv4:8080 (airflow webserver)
+### Access to AirFlow Webserver
+
+To access to AirFlow webserver, copy the IPv4 from the instance dashboard and open a new tab in your web browser.
+
+You should access to the web server this the following address: `<IPv4>:8080` or `x.x.x.x:8080`.
+
+Here is the page you will see:
+
+![image](images/airflow-webserver-login.png){.thumbnail}
 
 #### Login
 
-- login:password => airflow:airflow
+Login with the created credentials:
+
+- Username: `airflow`
+- Password: `airflow`
+
+![image](images/airflow-webserver-credentials.png){.thumbnail}
 
 #### Test the example DAGs
 
+You should now see the examples of **AirFlow DAGs** appearing. You are free to test them or not!
+
+![image](images/airflow-example-dags.png){.thumbnail}
+
+To go further and create **your own DAGs**, you can follow the following tutorials.
 
 
-
-
-
-
-
-
-
-
-#### Execution of the DAG in Webserver interface
-
-To see the file running, start your AirFlow **webserver** and **scheduler**. Go to http://localhost:8080/home (or your dedicated port for airflow), and you should see the following user interface.
-
-![image](images/airflow-overview-webserver.png){.thumbnail}
-
-The DAG `ovh_ai_training_preprocessing_training` should run successfully. You can check the **Graph** view or **Grid** view by hovering over links and selecting options.
-
-![image](images/airflow-graph-dag.png){.thumbnail}
-
-You can also click on the `Log` button to check AI Training job logs during data preprocessing part.
-
-![image](images/airflow-task-preprocessing-logs.png){.thumbnail}
-
-Finally, you can follow the evolution of Machine Learning model in the second task logs. You are also able to access to Weights & Biases by clicking on the link printed in the logs.
-
-![image](images/airflow-task-training-logs.png){.thumbnail}
-
-Congratulations! You have processed your data and trained your model in AI Training jobs with **AirFlow**.
 
 ## Feedback
 
