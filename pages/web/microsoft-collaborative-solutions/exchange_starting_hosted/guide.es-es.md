@@ -171,4 +171,4 @@ Para más información sobre estas funciones, consulte las guías de OVH sobre l
 
 [Gestionar la facturación de las cuentas Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/)
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
