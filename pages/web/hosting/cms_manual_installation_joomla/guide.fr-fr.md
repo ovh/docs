@@ -98,7 +98,7 @@ Référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur
 - *Saisissez soit un nom d'utilisateur que vous avez créé, soit un nom d'utilisateur fourni par votre hébergeur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 Pour les bases de données créées sur un Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-- *Saisissez soit un mot de passe que vous avez créé, soit un mot de passe fourni par votre hébergeur* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est également possible que vous l'ayez modifié entre temps, nous vous invitons à le vérifier.
+- *Saisissez soit un mot de passe que vous avez créé, soit un mot de passe fourni par votre hébergeur* : vous l'avez vous-même défini lors de la création de votre base de données. Il est également possible que vous l'ayez modifié entre temps, nous vous invitons à le vérifier.
 
 - *Entrer le nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Il est identique au nom d'utilisateur de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 
