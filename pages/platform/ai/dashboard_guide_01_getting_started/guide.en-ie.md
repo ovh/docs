@@ -22,10 +22,14 @@ This guide explains how to get started with OVHcloud AI Dashboard, a consolidate
 
 ## Introduction
 
-**AI Dashboard** is not a product but an overview of all AI products you use, billing information, security information and guide (like this one) that you can read.
-It's accessible via the main menu `AI & Machine Learning` in the `Public Cloud` universe.
+AI Dashboard is accessible via the main menu `AI & Machine Learning` in the `Public Cloud` universe.
 
-![Dashboard menu](images/dashboard-01.png){.thumbnail}
+> [!primary]
+>
+> **AI Dashboard** is not a product but an overview of all AI products you use, billing information, security information and guide (like this one) that you can read.
+>
+
+![Dashboard menu](images/dashboard-01.jpg){.thumbnail}
 
 The following chapters will help you to discover each section of the `AI Dashboard`.
 
