@@ -84,7 +84,7 @@ Munissez-vous des identifiants de votre base de données (au besoin, consultez *
 
 - *Utilisateur de la base de données* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web. Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-- *Mot de passe de la base de données* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
+- *Mot de passe de la base de données* : vous l'avez vous-même défini lors de la création de votre base de données. Il est possible que vous l'ayez modifié entre temps.
 
 Cliquez sur `Options avancées`{.action} pour découvrir le reste du menu.
 
