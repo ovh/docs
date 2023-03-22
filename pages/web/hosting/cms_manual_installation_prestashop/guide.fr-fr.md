@@ -116,7 +116,7 @@ Renseignez les informations demandées concernant la base de données :
 - *Identifiant* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations mentionnées dans **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-- *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
+- *Mot de passe* : vous l'avez vous-même défini lors de la création de votre base de données. Il est possible que vous l'ayez modifié entre temps.
 
 > [!primary]
 > 
