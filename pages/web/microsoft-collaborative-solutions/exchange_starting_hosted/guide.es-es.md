@@ -139,7 +139,7 @@ Si desea configurar su cuenta de correo electrónico en un cliente de correo o u
 
 OVHcloud ofrece, desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), licencias Outlook opcionales con su cuenta de correo Exchange.
 
-Para suscribirse, consulte nuestra página "[Obtener una licencia Outlook para Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-outlook-licence/)". 
+Para suscribirse, consulte nuestra página "[Obtener una licencia Outlook para Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_uso_y_contratacion_de_las_licencias_outlook_exchange_2013/)". 
 
 También puede consultar las licencias Office 365 en la página [https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/). Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 

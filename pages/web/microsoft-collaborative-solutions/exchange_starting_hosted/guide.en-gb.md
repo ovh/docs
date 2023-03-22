@@ -135,7 +135,7 @@ If you would like to configure your email address on an email client or device (
 
 OVHcloud offers optional Outlook licences with your Exchange email account in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
-To subscribe, go to our page on [Getting an Outlook licence for Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-outlook-lizenz/). 
+To subscribe, go to our page on [Getting an Outlook licence for Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-outlook-licence/). 
 
 You can also get Office 365 licences at [https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/). We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
