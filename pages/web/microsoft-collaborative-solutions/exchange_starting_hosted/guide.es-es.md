@@ -4,10 +4,20 @@ excerpt: 'Cómo configurar por primera vez el servicio Hosted Exchange'
 slug: exchange_20132016_primera_configuracion_del_servicio
 section: 'Primeros pasos con Exchange'
 order: 01
-updated: 2018-01-19
+updated: 2023-03-06
 ---
 
-**Última actualización: 27/03/2018**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+<style>
+.w-640 {
+  max-width:640px !important;
+}
+</style>
+
+**Última actualización: 06/03/2023**
 
 ## Objetivo
 
@@ -17,16 +27,16 @@ El servicio Hosted Exchange le permite disfrutar de direcciones de correo electr
 
 ## Requisitos
 
-- Tener contratado un plan [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external}.
+- Tener contratado un plan [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/).
 - Haber recibido el email de confirmación de la instalación de la solución Hosted Exchange.
 - Tener un dominio.
-- Estar conectado al [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
-### 1. Acceder a la gestión del servicio
+### Acceder a la gestión del servicio
 
-Una vez que el servicio Hosted Exchange haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external}.
+Una vez que el servicio Hosted Exchange haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 Para ello, Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione el servicio Hosted Exchange correspondiente.
 
@@ -35,82 +45,130 @@ Para ello, Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y sel
 > El nombre de los servicios Hosted Exchange comienza por «**hosted-**», contiene una parte del ID de cliente y termina por una cifra (1 para el primer servicio Hosted Exchange instalado, 2 para el segundo y así sucesivamente).
 >
 
-### 2. Configurar el servicio por primera vez
+### Configuración del servicio por primera vez
 
-Si todavía no ha utilizado el servicio, deberá configurarlo por primera vez para poder disfrutar de sus nuevas cuentas de correo Exchange.
+Si todavía no ha utilizado el servicio, deberá configurarlo por primera vez. que le permitirá acceder a las nuevas direcciones de correo Exchange.
 
 Para ello, la primera vez que acceda al panel de gestión de su servicio Hosted Exchange, aparecerá un asistente de configuración. Haga clic en `Empezar`{.action} para configurar el servicio.
 
-Este asistente de configuración le permitirá realizar diversas acciones. En función de su caso particular, algunos pasos de esta guía serán opcionales.
+Este asistente de configuración le permitirá realizar diversas acciones. En función de su situación:
 
-|Acción|Descripción|
-|---|---|
-|Elección del dominio|Introduzca el dominio que vaya a utilizar en sus direcciones de correo Exchange. El dominio es una de las partes que componen la dirección de correo electrónico (p. ej., contact@mypersonaldomain.ovh).|
-|Configuración del dominio|Si el dominio está registrado en OVHcloud y es gestionado por el mismo ID de cliente que el servicio Exchange, se configurará automáticamente. En caso contrario, deberá configurarlo manualmente.|
-|Configuración de las cuentas Exchange|Asigne un nombre a sus direcciones de correo Exchange y añada información adicional.|
-|Migración de datos (si procede)|Si desea migrar sus cuentas de correo desde otra solución de OVHcloud (MX Plan o Email Pro), puede realizar la migración desde este asistente. Si utiliza un cliente de correo, deberá volver a configurar sus cuentas.|
+#### Elegir un dominio
 
-### 3. Añadir dominios adicionales (opcional)
+Seleccione uno de sus dominios de la lista o marque la casilla `Mi dominio no aparece en la lista de abajo` para introducir un dominio que no esté gestionado en su área de cliente **pero que pueda configurar**.
 
-Una vez configurado el dominio, también puede configurar dominios adicionales, en caso de que no lo haya hecho a través del asistente de configuración.
+![Correo electrónico](images/exchange-wizard01.png){.thumbnail}
+
+#### ¿Solo va a utilizar el servicio Exchange de OVH con este dominio?
+
+La pregunta "¿**Va a utilizar únicamente la solución Exchange de OVH con este dominio?** " determinará el tipo de configuración del dominio. 
+
+- Si utiliza un servicio Exchange solo o con otros servicios de **correo de OVHcloud**, podrá configurarlo automáticamente o manualmente solo utilizando los servidores de correo de OVHcloud.
+- Si utiliza su servicio Exchange como complemento de un servicio de correo **externo a los productos de correo de OVHcloud**, deberá introducir, bajo la mención `Servidor de relay (SMTP)`, la URL del servidor de recepción de su servicio de correo externo.
+
+![Correo electrónico](images/exchange-wizard02.png){.thumbnail}
+
+#### ¿Cómo quiere configurar su zona DNS?
+
+- **Configuración automática**: Si el dominio está gestionado por OVHcloud y es el mismo ID de cliente que el servicio Exchange, se configurará automáticamente en la zona DNS del dominio.
+- **Configuración manual**: El dominio no se gestiona en el mismo área de cliente que su plataforma, sino que se gestiona con otro proveedor de dominios, o usted mismo quiere realizar la configuración.<br> Una vez finalizado el proceso de configuración, podrá consultar los valores que deberá introducir, o bien en la sección `Dominios asociados`{.action} de su plataforma.
+
+![Correo electrónico](images/exchange-wizard03.png){.thumbnail}
+
+#### **Configuración de las cuentas Exchange**
+
+Asigne un nombre a sus direcciones de correo Exchange y añada información adicional.
+
+![Correo electrónico](images/exchange-wizard04.png){.thumbnail}
+
+#### **Caso particular**
+
+- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, o con otro proveedor de dominio, tendrá la siguiente ventana:<br>
+![Correo electrónico](images/exchange-wizard05.png){.thumbnail .w-640}<br>
+Esta ventana le invita a añadir un **registro CNAME** en la zona DNS del dominio. Este registro permite comprobar que usted gestiona el dominio.<br>
+
+> [!warning]
+> Sin esta validación por registro CNAME, no es posible utilizar la plataforma con este nombre de dominio.
+
+- Si configura su plataforma Exchange con un dominio no gestionado en el mismo área de cliente que esta plataforma, gestionada con otro proveedor de dominio, o si ha optado por configurar manualmente su nombre de dominio, se mostrará la siguiente ventana:<br>
+![Correo electrónico](images/exchange-wizard06.png){.thumbnail .w-640}<br>
+Aquí encontrará los valores que deberá introducir en su zona DNS. Los **registros MX** corresponden a la recepción del correo. El **registro SRV** se corresponde con la configuración automática de las direcciones de correo.
+
+Consulte la configuración de su zona DNS relativa a su servicio de correo en nuestra página "[Añadir un registro MX a la configuración del dominio](https://docs.ovh.com/es/domains/anadir-registro-mx-configuracion-dominio/)".
+
+### Añadir dominios adicionales (opcional)
+
+Una vez que haya configurado por primera vez el dominio, también puede configurar, a través del asistente, dominios adicionales si así lo desea y si todavía no lo ha hecho.
 
 > [!warning]
 >
-> Todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar un nuevo servicio Hosted Exchange para el o los dominios en cuestión.
+> Todas las direcciones creadas en el servicio Exchange se mostrarán en el directorio de las direcciones del servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar un nuevo servicio Hosted Exchange para el o los dominios en cuestión.
 >
 
-Para añadir un nuevo dominio, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external} y abra la pestaña `Dominios asociados`{.action}. Se mostrará una tabla con los dominios ya configurados o que estén siendo configurados en el servicio. Haga clic en el botón `Añadir un dominio`{.action} y siga los pasos que se le indican para añadir el dominio. 
+Para añadir un nuevo dominio, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña `Dominios asociados`{.action}. Se mostrará una tabla con los dominios ya configurados o que estén siendo configurados en el servicio. Haga clic en el botón `Añadir un dominio`{.action} y siga los pasos que se le indican para añadir el dominio.
 
-Para más información, consulte la guía [Añadir un dominio a un servicio Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/anadir-dominio-exchange/){.external}.
+Para más información, consulte la guía [Añadir un dominio a un servicio Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/anadir-dominio-exchange/).
 
 > [!primary]
 >
-> Si es necesario realizar alguna acción concreta para configurar el dominio, se mostrará una etiqueta roja en la columna `Diagnóstico`{.action}. Al hacer clic, se mostrarán las operaciones necesarias. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVHcloud), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. 
+> Si es necesario realizar alguna acción concreta para configurar el dominio, se mostrará una etiqueta roja en la columna `Diagnóstico`{.action}. Al hacer clic, se mostrarán las operaciones necesarias. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVH), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. 
 >
 
-![Añadir un dominio](images/first-steps-hosted-exchange-add-domain.png){.external}
+![Añadir un dominio](images/first-steps-hosted-exchange-add-domain.png)
 
+### Configurar cuentas Exchange adicionales (opcional)
 
-### 4. Configurar cuentas Exchange adicionales (opcional)
+Puede configurar cuentas adicionales si lo desea y si no lo ha hecho ya a través del asistente.
 
-También puede configurar cuentas adicionales, en caso de que no lo haya hecho a través del asistente de configuración.
+Para ello, acceda al servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con las cuentas de correo ya configuradas o que estén siendo configuradas en el servicio.
 
-Para ello, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external} y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con las cuentas de correo ya configuradas o que estén siendo configuradas en el servicio.
-
-La tabla mostrará las cuentas pendientes de configurar con el formato **@configureme.me**. Para configurarlas, haga clic en el icono con forma de lápiz y siga los pasos que se le indican.
+La tabla mostrará las cuentas pendientes de configurar con el formato *@configureme.me*. Para configurarlas, haga clic en el icono con forma de lápiz y siga los pasos que se le indican.
 
 > [!primary]
 >
-> Repita este paso según sea necesario en función del número de cuentas que tenga. Puede contratar nuevas cuentas utilizando el botón `Acciones`{.action} y, a continuación, haga clic en `Contratar cuentas`{.action}.
+> Repita esta operación para cada cuenta que tenga. Puede contratar nuevas contrataciones haciendo clic en el botón `Acciones`{.action} y seleccionando `Contratar cuentas`{.action}.
 >
 
-![Añadir una cuenta de correo](images/first-steps-hosted-exchange-add-account.png){.external}
+![Añadir una cuenta de correo](images/first-steps-hosted-exchange-add-account.png)
 
-### 5. Utilizar las direcciones de correo
+### Utilizar las direcciones de correo
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a él en la dirección <https://www.ovh.es/mail/>, introduciendo las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}, en el apartado relativo a Outlook Web Application (OWA).
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección [https://www.ovhcloud.com/es-es/mail/](https://www.ovhcloud.com/es-es/mail/). Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVH sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/), en el apartado relativo a Outlook Web Application (OWA).
 
-Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}. Para un uso óptimo de su cuenta Exchange, asegúrese de que su software sea compatible con el servicio.
+Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
 
-OVHcloud ofrece licencias de Outlook, que podrá contratar en el [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, disponibles en la página de [Office 365 de OVHcloud](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+OVHcloud ofrece, desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), licencias Outlook opcionales con su cuenta de correo Exchange.
+
+Para suscribirse, consulte nuestra página "[Obtener una licencia Outlook para Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-outlook-licence/)". 
+
+También puede consultar las licencias Office 365 en la página [https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/). Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 > [!primary]
 >
 > Tanto si utiliza un cliente de correo web como uno de escritorio compatible, Exchange sincroniza todos los parámetros de configuración (filtros, firmas, carpetas...).
-> 
 > Así pues, si utiliza Exchange en tres dispositivos y a través de tres modos de conexión distintos (webmail, distintos clientes de correo compatibles), toda su información estará disponible simultáneamente.
 >
 
-### 6. Configurar las funciones de colaboración (opcional)
+### Configuración de las funciones colaborativas (opcional)
 
-Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo, puede activar las funciones de colaboración en su [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external}. Estas funciones permiten crear recursos (salas de reuniones, equipamiento...) y grupos, entre otros. 
+Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo, ya puede activar las funcionalidades de colaboración en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Estas funciones permiten crear recursos (salas de reuniones, equipamiento...) y grupos, entre otros. 
 
-Para activarlas, seleccione su servicio Hosted Exchange en el [área de cliente de OVHcloud](https://ovh.com/auth?action=gotomanager){.external} y abra la pestaña correspondiente a la acción que quiera realizar.
+Para activar las distintas funciones, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña correspondiente a la acción que quiera realizar.
 
-Para más información sobre estas funciones, consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}.
-
-![Funciones colaborativas](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
+Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/).
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+[Crear un grupo de contactos](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_uso_de_los_grupos_listas_de_correo/)
+
+[Crear y utilizar una cuenta compartida](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-uso-de-las-cuentas-compartidas/)
+
+[Crear y utilizar cuentas de recursos](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_uso_de_las_cuentas_de_recursos/)
+
+[Establecer permisos sobre una cuenta de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_dar_permisos_full_access_a_una_cuenta/)
+
+[Compartir una carpeta desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_compartir_una_carpeta_con_el_webmail_owa/)
+
+[Gestionar la facturación de las cuentas Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/)
+
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).
