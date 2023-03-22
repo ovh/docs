@@ -112,7 +112,7 @@ Renseignez les informations demandées :
 - *Identifiant* : définissez l'identifiant Administrateur de votre CMS.
 - *Mot de passe* : définissez un mot de passe pour cet identifiant Administrateur.
 - *Votre adresse de messagerie* : renseignez une adresse e-mail valide.
-- *Vie privée* : cochez cette case pour que les moteurs de recherche référencent votre WordPress.
+- *Vie privée* : décochez cette case pour que les moteurs de recherche référencent votre WordPress.
 
 Cliquez sur `Installer WordPress`{.action} dès que tout est correctement renseigné.
 
