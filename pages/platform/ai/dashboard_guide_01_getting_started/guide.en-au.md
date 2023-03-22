@@ -17,8 +17,8 @@ This guide explains how to get started with OVHcloud AI Dashboard, a consolidate
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 
 ## Introduction
 
@@ -26,7 +26,7 @@ AI Dashboard is accessible via the main menu `AI & Machine Learning` in the `Pub
 
 > [!primary]
 >
-> **AI Dashboard** is not a product but an overview of all AI products you use, billing information, security information and guide (like this one) that you can read.
+> **AI Dashboard** is not a product but an overview of the AI Tools you use as well as an interface where you will find all transversal items such as security access, CLI and billing information, or guides (like this one).
 >
 
 ![Dashboard menu](images/dashboard-01.jpg){.thumbnail}
@@ -37,34 +37,38 @@ The following chapters will help you to discover each section of the `AI Dashboa
 
 ![Dashboard tab](images/dashboard-02.png){.thumbnail}
 
-In this section you will find all information related to your use of the AI Tools: [Object Storage](https://docs.ovh.com/au/en/storage/), [AI Notebooks](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/definition/), [AI Training](https://docs.ovh.com/au/en/publiccloud/ai/training/submit-job/) and [AI Deploy](https://docs.ovh.com/au/en/publiccloud/ai/deploy/getting-started/).
+In this section, you will find information related to your use of the AI Tools with easy access to [AI Notebooks](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/definition/), [AI Training](https://docs.ovh.com/au/en/publiccloud/ai/training/submit-job/) and [AI Deploy](https://docs.ovh.com/au/en/publiccloud/ai/deploy/getting-started/).  
+Listed instances are the ones that are in `RUNNING` and `STOPPED` status.
 
-At a glance, you can see the total amount of your next billing for your consumption with the AI tools.
-You can see more details on the prices of the AI tools in the [documentation](https://www.ovhcloud.com/en-au/public-cloud/prices/#ai-&-machine-learning).
+You can also easily access to your [Object Storages](https://docs.ovh.com/au/en/storage/).
 
-You can also see some security information about the number of created users (and tokens) that can use your AI tools.
+You can find more details on the prices of the AI tools [here](https://www.ovhcloud.com/en-au/public-cloud/prices/#ai-&-machine-learning).
+
+You can also see security information with the number of users and tokens created to use your AI Tools.
 
 ## Users & tokens
 
 ![Users & tokens tab](images/dashboard-03.png){.thumbnail}
 
-In this section you will find all information about the users and tokens you have created.
-You can also manage them (create, update and delete).
-To know how to manage your users and token, please read the guide Manage [AI users and roles](https://docs.ovh.com/au/en/publiccloud/ai/users/).
+In this section, you will find all information about your AI users and tokens.
+You can easily create new Public Cloud users with dedicated AI Tools roles (`AI Platform - Operator` or `AI Platform - Read-Only`) and access to all your Public Cloud users.
+
+You can also manage tokens (create, update and delete) that you can then use with your notebooks, jobs or apps.
+
+To know how to manage your users and token, please read the guide [Manage AI users and roles](https://docs.ovh.com/au/en/publiccloud/ai/users/).
 
 ## Command Line Interface 
 
 ![Command Line Interface](images/dashboard-04.png){.thumbnail}
 
-In this section you will find all information about how to install and use our CLI.
-You have also a list of the useful existing guides on the CLI.
+In this section, you will find all information about how to install, authenticate and use our CLI.
+You will also find a list of all useful guides on the CLI.
 
 ## Documentation
 
 ![Documentation ](images/dashboard-05.png){.thumbnail}
 
-In this section you will find a random list of our guides about AI products.
-You can refresh the list by clicking on the round arrow.
+In this section, you will find a list of our guides about AI products. The list is on shuffle, you can refresh it to get other tutorials by clicking on the round arrow.
 
 ## Go further
 
