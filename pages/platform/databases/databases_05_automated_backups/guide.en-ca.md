@@ -29,7 +29,7 @@ Either you run into a problem or you just want to see what your data looked like
 
 > [!warning]
 >
-> Starting March 6th 2023, on top of on-site backups, free of charge off-site backups are being made available progressively. Until total completion of this rollout, please rely exclusively on the on-site backups for recovery procedures. See the table bellow to know the concerned engines.
+> Starting March 6th 2023, on top of on-site backups, free of charge off-site backups are being made available progressively. Until total completion of this rollout, please rely exclusively on the on-site backups for recovery procedures. See the concerned engines in the table below.
 >
 
 Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted
