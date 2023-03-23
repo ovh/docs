@@ -76,6 +76,8 @@ Choisissez le nom de domaine de votre CMS, contrôlez le répertoire cible qui a
 > [!warning]
 >
 > Le répertoire d'installation de votre « module en 1 clic » doit être vide et vous devez disposer d'au moins une base de données disponible en création sur votre hébergement web OVHcloud pour que l'installation s'effectue.
+>
+> Pour une installation rapide, ne créez pas la base de données au préalable, le robot d'installation s'en chargera.
 > 
 
 ![Installation rapide d'un module](images/choose_installation.png){.thumbnail}
@@ -191,7 +193,7 @@ Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-d
 
 [Désinstaller votre CMS](https://docs.ovh.com/fr/hosting/1-click-module-management/#etape-3-supprimer-votre-module)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
