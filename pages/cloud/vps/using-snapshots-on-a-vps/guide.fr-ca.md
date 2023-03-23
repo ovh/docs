@@ -4,10 +4,10 @@ excerpt: 'Découvrez comment activer et utiliser l’option snapshot depuis l’
 slug: snapshot-vps
 section: Sauvegarde
 order: 1
-updated: 2022-12-02
+updated: 2023-03-20
 ---
 
-**Dernière mise à jour le 02/12/2022**
+**Dernière mise à jour le 20/03/2023**
 
 ## Objectif
 
@@ -54,6 +54,45 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 > [!alert]
 >
 > Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en créer un nouveau avant d'apporter des modifications au système restauré.
+>
+
+### Télécharger un snapshot
+
+Le snapshot en cours peut être récupéré via un lien de téléchargement. Cliquez sur le bouton `...`{.action} à côté de l'option `Snapshot` et choisissez `Télécharger le Snapshot`{.action} dans le menu contextuel.
+
+![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}.
+
+![snapshotvps](images/snapshot_vps04.png){.thumbnail}
+
+Après quelques secondes, un message de succès s'affiche. En dessous, vous pouvez copier la commande complète de téléchargement en un clic.
+
+![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+
+La taille du snapshot et la date d'expiration du lien seront également affichées.
+
+Notez que le lien de téléchargement expirera après **24 heures**.
+
+La commande de téléchargemment utilise un `curl` au format suivant :
+
+```bash
+curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" --output vps-x11x11xyy.vps.ovh.net --fail
+```
+
+Cette commande doit fonctionner depuis n'importe quel terminal de ligne de commande. Cependant, lorsque vous utilisez Windows *PowerShell*, vous devrez ajuster la commande ainsi :
+
+```powershell
+curl -Uri "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" -OutFile vps-x11x11xyy.vps.ovh.net
+```
+
+![snapshotvps](images/snapshot_vps06.png){.thumbnail}
+
+> [!primary]
+>
+> Pour éviter de consommer trop d'espace de stockage, nous vous déconseillons de télécharger les snapshots directement sur le VPS.
 >
 
 ### Bonnes pratiques pour la création d'un snapshot
