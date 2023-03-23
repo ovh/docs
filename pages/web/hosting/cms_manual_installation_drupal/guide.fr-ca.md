@@ -100,7 +100,8 @@ Cliquez sur `Options avancées`{.action} pour découvrir le reste du menu.
 
 - *Numéro de port* : si vous utilisez une base de données incluse avec votre hébergement OVHcloud, laissez par défaut **3306**. Si vous utilisez un service *Web Cloud Databases*, référez-vous à **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour récupérer le bon numéro de port.
 
-- *Préfixe du nom des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+- *Préfixe du nom des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
+
 
 Cliquez sur `Enregistrer et continuer`{.action}.
 
