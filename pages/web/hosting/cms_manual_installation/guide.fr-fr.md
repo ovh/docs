@@ -236,7 +236,7 @@ cd NameOfYourTargetFolder
 - Récupérez les fichiers sources de votre CMS directement depuis votre « dossier racine » à l'aide de la commande correspondant au CMS que vous avez choisi :
 
 > [!tabs]
-> **WordPress** :
+> **WordPress**
 >> 
 >> ```bash
 >> wget http://wordpress.org/latest.tar.gz
@@ -244,7 +244,7 @@ cd NameOfYourTargetFolder
 >>
 >> **latest** permet d'installer automatiquement la dernière version du CMS.
 >>
-> **Joomla!** :
+> **Joomla!**
 >> 
 >> ```bash
 >> wget https://downloads.joomla.org/cms/joomla4/4-2-8/Joomla_4-2-8-Stable-Full_Package.tar.gz
@@ -253,7 +253,7 @@ cd NameOfYourTargetFolder
 >> **Joomla4** et **4-2-8** correspondent, à date, à la dernière version de Joomla! disponible.
 >> Remplacez ces valeurs par celles que vous souhaitez installer.
 >> 
-> **Drupal** :
+> **Drupal**
 >> 
 >> ```bash
 >> wget https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.4.tar.gz
@@ -262,7 +262,7 @@ cd NameOfYourTargetFolder
 >> **8.x-2.4** correspond, à date, à la dernière version de Drupal disponible.
 >> Remplacez cette valeur par celle que vous souhaitez installer.
 >> 
-> **PrestaShop** :
+> **PrestaShop**
 >> 
 >> ```bash
 >> wget https://github.com/PrestaShop/PrestaShop/archive/1.7.8.8.tar.gz
@@ -274,25 +274,25 @@ cd NameOfYourTargetFolder
 - Décompressez les fichiers sources de votre CMS dans votre « dossier racine » à l'aide de la commande correspondant au CMS que vous avez choisi:
 
 > [!tabs]
-> **WordPress** :
+> **WordPress**
 >> 
 >> ```bash
 >> tar xvf latest.tar.gz
 >> ```
 >> 
-> **Joomla!** :
+> **Joomla!**
 >> 
 >> ```bash
 >> tar xvf Joomla_4-2-8-Stable-Full_Package.tar.gz
 >> ```
 >> 
-> **Drupal** :
+> **Drupal**
 >> 
 >> ```bash
 >> tar xvf admin_toolbar-8.x-2.4.tar.gz
 >> ```
 >> 
-> **PrestaShop** :
+> **PrestaShop**
 >> 
 >> ```bash
 >> tar xvf 1.7.8.8.tar.gz
@@ -314,22 +314,22 @@ rmdir ./CMS/
 - Supprimez le fichier compressé correspondant au CMS que vous avez choisi :
 
 > [!tabs]
-> **WordPress** :
+> **WordPress**
 >> ```bash
 >> rm -f latest.tar.gz
 >> ```
 >> 
->  **Joomla!** :
+> **Joomla!**
 >> ```bash
 >> rm -f Joomla_4-2-8-Stable-Full_Package.tar.gz
 >> ```
 >> 
->  **Drupal** :
+> **Drupal**
 >> ```bash
 >> rm -f admin_toolbar-8.x-2.4.tar.gz
 >> ```
 >> 
->  **PrestaShop** :
+> **PrestaShop**
 >> ```bash
 >> rm -f 1.7.8.8.tar.gz
 >> ```
