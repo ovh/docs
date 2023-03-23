@@ -76,7 +76,8 @@ Renseignez les informations demandées concernant la base de données :
 
 ![Drupal installation step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/)).
+Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/)).
+
 
 - *Type de base de données* : sélectionnez, parmi les choix proposés, le type de votre base de données.
 
