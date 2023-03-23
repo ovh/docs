@@ -4,7 +4,6 @@ slug: notebooks/create-rasa-chatbot
 excerpt: Understand how to create  and train a chatbot with AI Notebooks
 section: AI Notebooks - Tutorials
 order: 10
-hidden: true
 updated: 2023-03-20
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/create-rasa-chatbot/'
