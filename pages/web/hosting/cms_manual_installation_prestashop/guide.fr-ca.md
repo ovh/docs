@@ -1,232 +1,171 @@
 ---
-title: Installer manuellement PrestaShop
+title: "Tutoriel - Installer manuellement PrestaShop"
 slug: installer-manuellement-prestashop
-excerpt: Vous trouverez dans ce guide comment installer manuellement votre CMS PrestaShop
+excerpt: "Découvrez comment installer manuellement votre CMS PrestaShop"
 section: CMS
 order: 06
-updated: 2022-12-01
+updated: 2023-03-17
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 17/03/2023**
+
+## Objectif
+
+Vous trouverez ici tous les éléments pour installer manuellement le CMS (Content Management System) PrestaShop en quelques étapes.
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) ou [l'éditeur du CMS PrestaShop](https://www.prestashop.com/en/support){.external} si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+>
 
-PrestaShop. Pour vous aider, chacune des étapes est détaillée. Pour toute demande précise liée au CMS, nous vous invitons à vous rapprocher de l'éditeur du CMS, ou des communautés en rapport avec celui-ci.
+> [!success]
+>
+> Pour installer PrestaShop **automatiquement** depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), consultez notre documentation sur l'[installation d'un module « en un clic »](https://ovhcloud.com/ca/fr/hosting/modules-en-1-clic/).
+>
+> Pour installer **manuellement un autre CMS** (WordPress, Joomla!, Drupal), consultez notre documentation sur l'[installation manuelle d'un CMS](https://ovhcloud.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+>
 
-Si vous souhaitez installer d'autres modules/CMS, consultez le guide [Installer manuellement mon CMS sur mon hebergement](../mutualise-installer-manuellement-mon-cms/){.ref}.
+**Découvrez comment installer manuellement votre CMS PrestaShop**
 
-Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
+## Prérequis
 
-Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) qui contient au moins une base de données.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/)
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 
-*Si vous souhaitez installer PrestaShop de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [Installer son site avec les modules en 1 clic](../modules-en-1-clic/){.ref}
+## En pratique
 
+### Etape 1 - préparer l'installation <a name="step1"></a>
 
-## PrestaShop
+Pour installer le CMS **PrestaShop** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/), quelques préparatifs sont nécessaires.
 
-### Partie 1 &#58; preparation de linstallation
-Pour installer la plateforme  **PrestaShop**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre espace client OVHcloud si nécessaire.*
+Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](https://ovhcloud.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre vers l'étape 2 ci-dessous.
 
-- Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
-- Il est aussi nécessaire d'avoir en votre possession votre identifiant et le mot de passe de la base de données SQL qui vous permettent de vous connecter dans la base de données.
+### Etape 2 - finaliser l'installation manuelle <a name="step2"></a>
 
+> [!success]
+>
+> Avant de continuer l'installation, videz le cache de votre navigateur Internet, afin d'éviter toute erreur.
+>
 
-![hosting](images/3158.png){.thumbnail}
+Si vous n'avez pas téléchargé la dernière version disponible de PrestaShop, la page suivante apparaît :
 
+![PrestaShop installation step 1](images/Prestashop-install-update-version.png){.thumbnail}
 
-### Partie 2 &#58; recuperation des fichiers sources
-- Rendez-vous sur le site du développeur de [PrestaShop](http://www.prestashop.com/){.external} .
+Cliquez sur `No thanks`{.action} si vous souhaitez conserver la version de PrestaShop que vous venez de télécharger ou sur `Yes please!`{.action} si vous souhaitez utilisez la version la plus récente du CMS.
 
-**compressé**  (zippé), il faudra être en mesure de le  **décompresser**  (extraire) sur votre ordinateur. Vous trouverez sur Internet différentes aides à ce sujet.
+#### 2.1 - Se rendre sur votre site PrestaShop via votre navigateur
 
+Saisissez votre domaine dans la barre de recherche de votre navigateur Internet.
 
-![hosting](images/3159.png){.thumbnail}
+Si les fichiers sources de votre PrestaShop ont été placés correctement dans votre dossier racine, la page de PrestaShop permettant de sélectionner la langue apparaît :
 
+![PrestaShop installation step 2](images/Prestashop-install-select-language.png){.thumbnail}
 
-### Partie 3 &#58; mise en place des fichiers sur le FTP
-Ouvrez le dossier dans lequel vous avez téléchargé le dossier compressé.
+Sélectionnez la langue du site puis cliquez sur `Suivant`{.action}.
 
-Réalisez un clic droit sur le dossier en question, puis sélectionnez "Extraire tout...".
+#### 2.2 - Valider les conditions d'utilisation
 
-Indiquez une destination afin d'extraire vos fichiers dans un nouveau dossier.
+Prenez connaissance des conditions d'utilisation, cochez la case `J'accepte les termes et conditions ci-dessus`{.action} puis cliquez sur `Suivant`{.action}.
 
-*De nombreux tutoriels et logiciels de décompression sont disponibles sur internet pour vous aider à réaliser ces manipulations. Consultez-les si vous êtes bloqués à cette étape.*
+![PrestaShop installation step 3](images/Prestashop-install-licence-agreement-3.png){.thumbnail}
 
-Le dossier cible sera intitulé " **prestashop** "
+#### 2.4 - Renseigner les informations de votre boutique en ligne
 
+PrestaShop vous demandera une série d'informations sur votre future boutique en ligne :
 
-![hosting](images/3160.png){.thumbnail}
+![PrestaShop installation step 4](images/Prestashop-install-store-infos-4.png){.thumbnail}
 
-Pour déposer les fichiers de  **PrestaShop**  sur votre hébergement, vous devez tout d'abord vous connecter à celui-ci.
+**Informations à propos de votre boutique**
 
-*Consultez le guide concernant la connexion en FTP sur l'offre mutualisée :* [Se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/){.ref}
+- *Nom de votre boutique* : Saisissez le nom de votre boutique en ligne
+- *Activité principale* : Sélectionnez votre secteur d'activité parmi les propositions du menu déroulant
+- *Pays* : Sélectionnez votre pays
+- *Activer le SSL* : Cochez **Yes** pour forcer la réécriture de votre URL en « https:// ». Vous devez au préalable disposer d'un certificat SSL actif sur votre hébergement ou votre nom de domaine. Pour plus d'informations sur ce sujet, consultez notre guide sur [la gestion d'un certificat SSL sur votre hébergement web OVHcloud](https://ovhcloud.com/ca/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
 
+**Votre compte**
 
-![hosting](images/3161.png){.thumbnail}
+- *Prénom* : Saisissez votre prénom
+- *Nom* : Saisissez votre nom
+- *Adresse e-mail* : Saisissez votre adresse e-mail
+- *Mot de passe de la boutique* : Choisissez un mot de passe pour accéder à l'espace d'administration de votre boutique en ligne (backoffice)
+- *Confirmer mot de passe* : Saisissez à nouveau le mot de passe
 
-Suivez ces étapes pour déposer vos fichiers sur le FTP. Une fois connecté à FileZilla.
+Vérifiez les informations saisies puis cliquez sur `Suivant`{.action}.
 
-Dans la partie "Site local", qui correspond à la liste des fichiers présents sur votre ordinateur, ouvrez le dossier décompressé intitulé "prestashop" dans lequel sont présents les fichiers du CMS.
+#### 2.5 - Installer le contenu par défaut pour votre boutique
 
-Dans la partie "Site distant" qui correspond dans ce cas à votre hébergement mutualisé OVHcloud, ouvrez le dossier "www". C'est dans ce dossier que tous les fichiers du CMS devront être déposés.
+PrestaShop vous propose d'installer du contenu et des modules pour votre futur site de E-commerce :
 
-*Si ce dossier n'existe pas il vous est possible de le créer.*
+![PrestaShop installation step 5](images/Prestashop-install-store-content-5.png){.thumbnail}
 
-*Vos fichiers doivent obligatoirement être déposés dans le dossier "www" sinon la procédure d'installation ne sera pas accessible depuis votre nom de domaine.*
+Faites vos choix puis cliquez sur `Suivant`{.action}.
 
+#### 2.6 - Lier votre PrestaShop avec votre base de données OVHcloud
 
-![hosting](images/3162.png){.thumbnail}
-
-Une fois ces dossiers ouverts :
-
-Dans la partie "Site local", vous retrouvez tous les fichiers nécessaires à l'installation du CMS PrestaShop.
-
-Pour tous les sélectionner, réaliser la combinaison de touche  **CTRL+A** .
-
-Réalisez ensuite le glisser-déposer des fichiers vers la partie "Site distant" dans le dossier "www".
-
-*Il est fort probable que le dossier "www" ne soit pas vide. Il n'est pas obligatoire de supprimer les fichiers présents dedans. Nous reviendrons sur ce point dans la suite de ce guide.*
-
-
-![hosting](images/3163.png){.thumbnail}
-
-Le transfert des fichiers est en cours.
-
-Attendez que la totalité des fichiers soit déposés sur le serveur FTP distant. Cela peut prendre quelques minutes.
-
-Une fois le transfert terminé, assurez-vous que tous les fichiers et les dossiers ont été correctement transférés.
-
-Cette opération conclut la partie consacrée au dépôt des fichiers sur le FTP.
-
-
-![hosting](images/3164.png){.thumbnail}
-
-
-### Partie 4 &#58; lien avec la base de donnees
-- Avant de continuer l'installation, videz le cache de votre navigateur internet, afin d'éviter toute erreur.
-
-Afin de réaliser le lien entre votre base de données et PrestaShop, nous devons suivre les étapes d'installation du CMS. Rendez-vous sur votre nom de domaine.
-
-Sélectionnez la langue "Français (French)" pour l'installation de la boutique PrestaShop.
-
-Cliquez sur "Suivant" pour continuer.
-
-
-![hosting](images/3165.png){.thumbnail}
-
-Cochez "J'accepte les termes et conditions du contrat ci-dessus".
-
-Cliquez ensuite sur "Suivant" pour accéder à l'étape suivante.
-
-
-![hosting](images/3166.png){.thumbnail}
-
-Des informations complémentaires sur la boutique sur le point d'être créée vous sont demandées. Renseignez les champs suivants :
-
-Nom de votre boutique : le nom désiré pour la boutique, cela peut impacter le référencement.
-
-Activité principale : l'activité prédominante de la boutique.
-
-Pays : sélectionnez le pays de votre boutique.
-
-Prénom : le prénom de l'administrateur.
-
-Nom : le nom de l'administrateur.
-
-Adresse e-mail : renseignez une adresse e-mail valide pour l'accès à l'administration de la boutique.
-
-Mot de passe : renseignez le mot de passe pour l'accès à l'administration (minimum 8 caractères).
-
-Confirmation du mot de passe : entrez de nouveau votre mot de passe.
-
-S'inscrire à la newsletter de PrestaShop : cochez la case si vous souhaitez recevoir les newsletters en provenance de l'équipe de PrestaShop.
-
-Cliquez sur "Suivant" pour valider les informations concernant la boutique PrestaShop.
-
-
-![hosting](images/3167.png){.thumbnail}
-
-Munissez-vous des identifiants de votre base de données (une aide à ce sujet est disponible dans le début de ce guide).
+![PrestaShop installation step 6](images/Prestashop-install-db-config-6.png){.thumbnail}
 
 Renseignez les informations demandées concernant la base de données :
 
-Adresse du serveur de la base : renseignez le nom du serveur de votre base de données, indiqué dans le mail d'installation ou dans votre espace client.
+- *Adresse de la base de données* : renseignez le nom du serveur de votre base de données, présent dans l'e-mail d'installation ou dans votre espace client OVHcloud. 
 
-Nom de la base : choisi lors de sa création dans l'espace client.
+- *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
-Identifiant : identique au nom de la base de données.
+- *Identifiant* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
+Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations mentionnées dans **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://ovhcloud.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-Mot de passe de la base : vous a été envoyé par mail lors de la création de la base de données – il est possible que vous l'ayez modifié.
+- *Mot de passe* : vous l'avez vous-même défini lors de la création de votre base de données. Il est possible que vous l'ayez modifié entre temps.
 
-Préfixe des tables : utile pour réaliser plusieurs installations de PrestaShop sur la même base de données. Dans ce cas, il faudra renseigner un préfixe différent pour chacune des installations.
+> [!primary]
+> 
+> - Le nom du serveur d'une base de données incluse avec votre offre d'hébergement Web a généralement cette forme : `NameOfYourDatabase.mysql.db`. 
+>
+> - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `aa00000-XXX.eu.clouddb.ovh.net`, **«aa00000»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par le reste de la référence de votre service Web Cloud Databases.
+>
 
-*Important : les identifiants de la base de données ne sont pas automatiquement envoyés lors de l'installation de l'hébergement. Pour les recevoir, vous devez activer la base de données dans votre espace client.*
+- *Préfixe des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://ovhcloud.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
-Une fois ces informations complétées, vous pouvez tester la connexion à la base de données.
+- *Supprimer les tables existantes* : **Décochez cette case si vous utilisez déjà votre base de données avec un autre site web**.
 
-Cliquez sur "Suivant" pour valider les informations de connexion.
+>[!alert]
+>
+> Si vous laissez cochée la case **Supprimer les tables existantes**, cela supprimera toutes les tables déjà présentes dans votre base de données.
+>
 
-- Ces étapes finalisent la création du lien entre votre base de données et PrestaShop. Ne reste qu'à finaliser l'installation proprement dite.
+Cliquez sur `Testez dès maintenant la connexion à votre base de données!`{.action} pour vérifier les paramètres saisis :
 
+![PrestaShop installation step 6-1](images/Prestashop-install-db-config-6-1.png){.thumbnail}
 
-![hosting](images/3168.png){.thumbnail}
+Si le message « Votre base de données est connectée » apparaît, cliquez sur `Suivant`{.action}. Sinon, vérifiez les paramètres que vous avez saisis jusqu'à ce que la connexion fonctionne. Si besoin, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://ovhcloud.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
+#### 2.7 - Terminer l'installation de PrestaShop
 
-### Finalisation
-Afin de terminer l'installation de la boutique PrestaShop, continuez les étapes d'installation. Laissez l'installation se terminer. Une fois à 100 % une nouvelle fenêtre apparaît.
+La dernière étape correspond à un résumé de l'installation que vous venez de réaliser :
 
+![PrestaShop installation step 7](images/Prestashop-install-resume-7.png){.thumbnail}
 
-![hosting](images/3169.png){.thumbnail}
+Récupérez les identifiants de connexion de votre PrestaShop avant de quitter la page.
 
-L'installation de la boutique PrestaShop est à présent terminée !
+>[!warning]
+>
+> **Par sécurité, il est recommandé de supprimer le dossier d'installation présent sur votre espace FTP.**
+>
+> Pour réaliser cette action, consultez notre guide [« comment se connecter à l'espace de stockage FTP de son hébergement web OVHcloud »](https://ovhcloud.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) et appuyez-vous sur le [forum PrestaShop](https://www.prestashop.com/forums/){.external} pour vous assurer de supprimer les bons fichiers.
+>
 
-Vous pouvez à présent vous identifier et commencer à travailler sur votre boutique en cliquant sur "Gérez votre boutique".
+> [!success]
+>
+> Vous pouvez maintenant démarrer la création du contenu de votre site PrestaShop !
+>
 
-- Attention pour des raisons de sécurité vous devrez supprimer manuellement le dossier "install" présent sur l'hébergement mutualisé dans le dossier "www" afin de pouvoir vous connecter.
+## Aller plus loin <a name="go-further"></a>
 
+[Site officiel PrestaShop](https://prestashop.com)
 
-![hosting](images/3170.png){.thumbnail}
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
-Vous trouverez ici un aperçu du panel d'administration de PrestaShop.
-
-
-![hosting](images/3171.png){.thumbnail}
-
-
-### Informations utiles
-
-**Le support d'OVHcloud ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre PrestaShop.**
-
-Nous vous invitons à consulter les forums dédiés à la solution PrestaShop.
-
-- Voici un lien vers un [forum d'entraide](http://www.prestashop.com/forums/forum/18-forum-francophone/){.external} dédié à ce CMS.
-
-Vous avez mis en place vos fichiers sur le FTP, cependant la page "site en construction" est toujours affichée.
-
-À l'installation de votre hébergement, OVHcloud met en place une page d'attente, le temps que vous déposiez les fichiers de votre site internet.
-
-Si vous déposez simplement vos fichiers dans le dossier  **"www"**  sans supprimer le contenu déposé par OVHcloud, vous risquez de rencontrer ce souci.
-
-Afin de corriger cela, vous devez supprimer ou renommer le fichier "index.html" mis en place par OVHcloud sur votre hébergement.
-
-*Il peut être intéressant de simplement le renommer afin de vous permettre de le réactiver à tout moment et de vous en servir comme page d'attente.*
-
-Autre information utile : les fichiers de votre site doivent être déposés dans le dossier "www" afin d'être pris en compte.
-
-
-![hosting](images/3172.png){.thumbnail}
-
-- Attention, pour des raisons de sécurité vous devrez supprimer manuellement le dossier "install" présent sur l'hébergement mutualisé dans le dossier "www" . Vous pourrez ainsi vous connecter une fois l'installation finalisée.
-
-
-![hosting](images/3173.png){.thumbnail}
-
-
-## Aller plus loin
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
