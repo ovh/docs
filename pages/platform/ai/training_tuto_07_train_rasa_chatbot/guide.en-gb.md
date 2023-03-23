@@ -1,12 +1,13 @@
 ---
 title: AI Training - Tutorial - Train a Rasa chatbot inside a Docker container 
-slug: training/train-rasa-chatbot
+slug: training/tuto-train-rasa-chatbot
 excerpt: Understand how simple it is to train a chatbot with AI Training
 section: AI Training -  Tutorials
 order: 07
+updated: 2023-03-21
 ---
 
-**Last updated 21th March, 2022.**
+**Last updated 21st March, 2023**
 
 ## Objective
 
