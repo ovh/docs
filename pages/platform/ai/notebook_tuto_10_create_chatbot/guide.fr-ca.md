@@ -114,7 +114,7 @@ If you want to use more functionalities of Rasa, please follow this link. We use
 
 If you want to deploy your created model with the chatbot, you can follow this tutorial:
 
-[How to deploy a chatbot](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/deploy-rasa-chatbot)
+[How to deploy a chatbot](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/rasa-chatbot)
 
 If you want to train a Rasa chatbot with the tool AI Training, please refer to this tutorial:
 
