@@ -39,7 +39,8 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 
 Pour installer le CMS **Drupal** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
 
-Suivez l'**ensemble des étapes** décrites dans notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre à l'étape 2 ci-dessous.
+Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre à l'étape 2 ci-dessous.
+
 
 ### Etape 2 - finaliser l'installation manuelle <a name="step2"></a>
 
