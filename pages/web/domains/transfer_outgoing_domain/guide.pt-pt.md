@@ -4,14 +4,14 @@ excerpt: Saiba como transferir um domínio da OVHcloud para o agente de registo 
 slug: transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico
 section: Transferência
 order: 04
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 09/12/2022**
+**Última atualização: 10/03/2023**
 
 ## Objetivo
 
@@ -77,6 +77,11 @@ Clique no cursor e confirme, na nova janela, que pretende eliminar esta proteç�
 
 ### Etapa 2: recuperar o código de transferência
 
+> [!warning]
+>
+> Observe que sempre é possível desbloquear e recuperar o código de transferência do seu nome de domínio após a expiração. De acordo com as regras de registro, um domínio em [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) pode precisar ser restaurado para ser transferido. Entre em contato com seu novo registrador para obter os detalhes da transferência.
+>
+
 Uma vez levantada a proteção contra a transferência, pode recuperar o código de transferência do seu nome de domínio. Para isso, ainda no separador `Informações gerais`{.action}, clique em `AUTH/INFO`{.action} situado ao lado de `Proteção contra a transferência`. Não hesite em atualizar a página caso seja necessário.
 
 Aparecerá uma janela com o seu código AUTH/INFO (também conhecido como código de transferência, palavra-passe de domínio, AUTH-CODE ou EPP-Code).
@@ -86,10 +91,6 @@ Aparecerá uma janela com o seu código AUTH/INFO (também conhecido como códig
 O código será pedido pelo seu novo agente de registo para concluir o processo de transferência. Pode verificar os detalhes junto do seu novo agente de registo.
 
 Em vez de introduzir manualmente o código, recomendamos que o copie/cole, uma vez que alguns caracteres podem ser facilmente confundidos.
-
-> [!warning]
->
-> Se o domínio estiver suspenso ou expirado, é necessário [criar um ticket de assistência](https://www.ovh.com/manager/dedicated/#/support/tickets/new) a partir da Área de Cliente OVHcloud.
 
 Uma vez o código de transferência recuperado, **não bloqueie de novo o seu domínio a menos que já não queira transferi-lo**.
 

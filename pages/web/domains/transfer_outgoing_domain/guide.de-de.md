@@ -4,14 +4,14 @@ slug: ausgehender-transfer-einer-generischen-oder-geografischen-domain
 excerpt: Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren
 section: Transfer
 order: 04
-updated: 2022-12-09
+updated: 2023-03-10
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 09.12.2022**
+**Letzte Aktualisierung am 10.03.2023**
 
 ## Ziel
 
@@ -51,10 +51,10 @@ Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Regis
 >
 > Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
 >
-> - die Webseite der zuständigen TLD-Registry
-> - die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
+> - Die Webseite der zuständigen TLD-Registry
+> - Die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovhcloud.com/de/domains/tld/)
 > - [Erläuterungen der ICANN zu den EPP-Statuscodes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (um herauszufinden, welche Statuscodes derzeit für Ihre Domain gelten, führen Sie eine *Whois*-Suche aus, vorzugsweise unter Verwendung der Webseite der entsprechenden TLD-Registry)
-> - die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
+> - Die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
 >
 
 ### Schritt 1: Transfer-Schutz der Domain aufheben
@@ -78,6 +78,11 @@ Sie können auch die Seite aktualisieren, falls zu lange keine Änderung eintrit
 
 ### Schritt 2: Transfer-Code abrufen
 
+> [!warning]
+>
+> Beachten Sie, dass es möglich ist, den Transfercode auch nach dem Ablaufdatum Ihres Domainnamens abzurufen. Gemäß den Registry-Regeln muss eine Domain im Status [*redemptionPeriod*](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) unter Umständen wiederhergestellt werden, um übertragen zu werden. Wenden Sie sich an Ihren neuen Registrar, um Details zum individuellen Transferprozess zu erhalten.
+>
+
 Sobald sich der Status der Domain auf `Deaktiviert`{.action} aktualisiert, erscheint unter `Transfer-Schutz` der Link `AUTH/INFO`{.action}. Klicken Sie darauf, um ein Fenster zu öffnen, in dem Ihr AUTH/INFO-Code angezeigt wird (auch als Transferschlüssel, Domainpasswort, AUTH-CODE oder EPP-Code bezeichnet).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
@@ -85,10 +90,6 @@ Sobald sich der Status der Domain auf `Deaktiviert`{.action} aktualisiert, ersch
 Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer abzuschließen. Sie können die Details bei Ihrem Provider überprüfen.
 
 Anstatt den Code manuell einzugeben, empfehlen wir, diesen zu kopieren und einzufügen, da einige Zeichen leicht zu verwechseln sind.
-
-> [!warning]
->
-> Wenn die Domain gesperrt oder abgelaufen ist, muss über Ihr OVHcloud Kundencenter ein [Support-Ticket erstellt werden](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
 
 Sobald der Transfer-Code abgerufen wurde, reaktivieren Sie den Transfer-Schutz **nicht, es sei denn, Sie möchten den Transfer verhindern**.
 

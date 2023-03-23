@@ -3,11 +3,11 @@ title: 'OVHcloud API & Partitioning'
 slug: api-partitioning
 excerpt: 'Find out what the OVHcloud API provides in order to customize the partitioning configuration during the server OS installation'
 section: 'RAID and disks'
-updated: 2023-03-08
+updated: 2023-03-10
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Last updated 8th March 2023**
+**Last updated 10th March 2023**
 
 ## Objective
 
@@ -218,11 +218,6 @@ In order to make the OVHcloud API as simple as possible, customers must define a
 |RAID 6|raidz2|3|2|5|
 |RAID 7|raidz3|4|3|7|
 |RAID 10|❌|4|0|4|
-
-> [!warning]
->
-> RAID 7 (raidz3) can only be selected from the OVHcloud API, not from the OVHcloud Control Panel. We are currently working on adding this feature to the OVHcloud Control Panel.
->
 
 ### Partitioning Backend
 

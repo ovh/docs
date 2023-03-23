@@ -68,7 +68,7 @@ Otworzy się nowa zakładka przeglądarki z wszystkimi domenami uprawnionymi do 
 
 ![zmiana właściciela](images/3657.PNG){.thumbnail}
 
-W formularzu szczegółów właściciela wprowadź poprawne informacje we wszystkich obowiązkowych polach. Uważaj na błędy podczas wprowadzania danych i używaj [znaków nie-ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm), jeśli to możliwe. Należy pamiętać, że wszelkie niedokładne lub błędne informacje mogą powodować błąd techniczny, a tym samym opóźnienie w całym procesie wymiany informacji.
+W formularzu szczegółów właściciela wprowadź poprawne informacje we wszystkich obowiązkowych polach. Uważaj na błędy podczas wprowadzania danych i unikaj używania [znaków nie-ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm), jeśli to możliwe. Należy pamiętać, że wszelkie niedokładne lub błędne informacje mogą powodować błąd techniczny, a tym samym opóźnienie w całym procesie wymiany informacji.
 
 Po potwierdzeniu zlecenia wymiany otrzymasz dwa e-maile, które pozwolą na potwierdzenie lub anulowanie zlecenia:
 

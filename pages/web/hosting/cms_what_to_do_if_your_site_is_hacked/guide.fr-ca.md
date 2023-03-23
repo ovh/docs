@@ -80,7 +80,7 @@ Concernant OVHcloud, utilisez notre documentation pour :
 - [Modifier le mot de passe d'accès à l'espace de stockage FTP de votre hébergement Web](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
 - [Changer le mot de passe d'accès à votre base de données](https://docs.ovh.com/ca/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
 
-Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](ttps://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
+Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
 
 > [!warning]
 > 

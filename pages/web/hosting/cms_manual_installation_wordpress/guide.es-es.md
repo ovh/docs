@@ -103,7 +103,7 @@ Una vez que haya creado la base de datos, deberá descargar los parámetros de c
 > Conéctese a la base de datos para identificar los "prefijos" de las tablas que ya están en su interior. para no elegir un "prefijo" de tabla que ya utilice otro sitio web.
 >
 > - Para conectarse a la base de datos asociada a su plan de hosting, consulte [esta guía](https://docs.ovh.com/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin).
-> - Para conectarse a una base de datos en un Cloud Databases, consulte [esta guía](ttps://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/).
+> - Para conectarse a una base de datos en un Cloud Databases, consulte [esta guía](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/).
 >
 
 ### Etapa 2 - iniciar la instalación manual
