@@ -4,10 +4,10 @@ excerpt: 'Find out how to enable and use the Snapshot option in the OVHcloud Con
 slug: using-snapshots-on-a-vps
 section: 'Backup options'
 order: 1
-updated: 2022-12-02
+updated: 2023-03-20
 ---
 
-**Last updated 2nd December 2022**
+**Last updated 20th March 2023**
 
 ## Objective
 
@@ -52,6 +52,47 @@ If you are sure that you would like to reset your VPS to the status of the snaps
 > [!alert]
 >
 > Please note that when you restore a VPS from a snapshot, the snapshot will be deleted. If you wish to keep the same snapshot, you should take a new one before making changes to the restored system.
+>
+
+### Downloading a snapshot
+
+The current snapshot can be retrieved via download link. Click on `...`{.action} next to the option "Snapshot" and choose `Download the snapshot`{.action} from the context menu.
+
+![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+In the popup window, click on `Generate download link`{.action}. 
+
+![snapshotvps](images/snapshot_vps04.png){.thumbnail}
+
+After a few seconds, a success message appears. Below it, you can copy the complete download command with one click.
+
+![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+
+The size of the snapshot and the expiration date of the link will also be displayed.
+
+Note that the download link will expire after **24 hours**.
+
+The download command uses `curl`, in the following format:
+
+```bash
+curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" --output vps-x11x11xyy.vps.ovh.net --fail
+```
+
+It should work from any command line terminal.
+
+When using Windows *PowerShell* however, you will need to adjust the command as follows:
+
+```powershell
+curl -Uri "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" -OutFile vps-x11x11xyy.vps.ovh.net
+```
+
+![snapshotvps](images/snapshot_vps06.png){.thumbnail}
+
+> [!primary]
+>
+We recommend not to download snapshots directly to the VPS, to avoid using up the storage space.
 >
 
 ### Best practice for using snapshots
@@ -126,9 +167,9 @@ Consult our [cPanel auto backup](https://docs.ovh.com/ie/en/vps/cpanel_auto_back
 
 You can install the agent via MSI file, available from the Fedora project website: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Verify that the service is running by using this powershell command:
+Verify that the service is running by using this *PowerShell* command:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName
@@ -138,6 +179,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Go further
 
-[Using automated backups on a VPS](../using-automated-backups-on-a-vps)
+[Using automated backups on a VPS](https://docs.ovh.com/ie/en/vps/using-automated-backups-on-a-vps)
 
 Join our community of users on <https://community.ovh.com/en/>.
