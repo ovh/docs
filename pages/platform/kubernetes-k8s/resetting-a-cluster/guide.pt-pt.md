@@ -8,7 +8,7 @@ routes:
 updated: 2023-03-23
 ---
 
-**Last updated March 23th, 2023.**
+**Last updated March 23rd, 2023.**
 
 <style>
  pre {
@@ -39,10 +39,10 @@ Through the OVHcloud Control Panel and the API, you can reset your OVHcloud Mana
 
 > [!primary]
 >
-> During a reset, all data in the ETCD will be deleted (pods, deployments, services, secrets, CRDs, etc.), all PVC (Persistent Volume Claim) with their PCI cinder volumes and also load balancers.
+> During a reset, all data in the ETCD will be deleted (pods, deployments, services, secrets, CRDs, etc.). Similarly, load balancers and also all PVC (Persistent Volume Claim) with their PCI cinder volumes will be deleted.
 > Nodes will be either deleted or reinstalled (depending on the option you set during the reset).
 
-Whole cluster configuration is resetted but some value can be precise (optional):
+The whole cluster configuration is reset but some values can be defined (optional):
 
 - workerNodesPolicy: reinstall|delete
 - minor_version: for ex. 1.25
@@ -63,7 +63,7 @@ Whole cluster configuration is resetted but some value can be precise (optional)
 
 #### Step 1 - Ask for cluster reset on the OVHcloud Control Panel 
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
@@ -133,7 +133,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 null
 ```
 
-By default, if you don't specify it, the `workerNodesPolicy` option will be equals to `delete`. If you don't want your Nodes deleted but reinstalled instead, you have to specify `"workerNodesPolicy": "reinstall"`.
+By default, if you don't specify it, the `workerNodesPolicy` option will be equivalent to `delete`. If you don't want your Nodes deleted but reinstalled instead, you have to specify `"workerNodesPolicy": "reinstall"`.
 
 > [!primary]
 >
