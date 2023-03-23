@@ -1,9 +1,9 @@
 ---
 title: AI Dashboard - Getting started
-slug: dashboard/getting-started
+slug: dashboard-getting-started
 excerpt: Learn how to use AI Dashboard
-section: AI Dashboard - Guides
-order: 01
+section: General information
+order: 108
 updated: 2023-03-15
 ---
 

@@ -4,6 +4,8 @@ slug: dashboard-getting-started
 excerpt: Learn how to use AI Dashboard
 section: General information
 order: 108
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/dashboard-getting-started/'
 updated: 2023-03-15
 ---
 
@@ -17,8 +19,8 @@ This guide explains how to get started with the OVHcloud AI Dashboard, a consoli
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- A [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
 
 ## Instructions
 
@@ -37,12 +39,12 @@ The following chapters will help you to discover each section of the `AI Dashboa
 
 ![Dashboard tab](images/dashboard-02.png){.thumbnail}
 
-In this section, you will find information related to your use of the AI Tools with easy access to [AI Notebooks](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/definition/), [AI Training](https://docs.ovh.com/us/en/publiccloud/ai/training/submit-job/) and [AI Deploy](https://docs.ovh.com/us/en/publiccloud/ai/deploy/getting-started/).  
+In this section, you will find information related to your use of the AI Tools with easy access to [AI Notebooks](https://docs.ovh.com/es/publiccloud/ai/notebooks/definition/), [AI Training](https://docs.ovh.com/es/publiccloud/ai/training/submit-job/) and [AI Deploy](https://docs.ovh.com/es/publiccloud/ai/deploy/getting-started/).  
 Listed instances are the ones that are in `RUNNING` and `STOPPED` status.
 
-You can also easily access to your [Object Storage](https://docs.ovh.com/us/en/storage/object-storage/).
+You can also easily access to your [Object Storage](https://docs.ovh.com/es/storage/object-storage/).
 
-You can find more details on the prices of the AI tools [here](https://www.ovhcloud.com/en/public-cloud/prices/#ai-&-machine-learning).
+You can find more details on the prices of the AI tools [here](https://www.ovhcloud.com/es-es/public-cloud/prices/#ai-&-machine-learning).
 
 You can also see security information with the number of users and tokens created to use your AI Tools.
 
@@ -56,7 +58,7 @@ You can easily create new Public Cloud users with dedicated AI Tools roles (`AI 
 
 You can also manage tokens (create, update and delete) that you can then use with your notebooks, jobs or apps.
 
-To know how to manage your users and token, please read the following guide: [Manage AI users and roles](https://docs.ovh.com/us/en/publiccloud/ai/users/).
+To know how to manage your users and token, please read the following guide: [Manage AI users and roles](https://docs.ovh.com/es/publiccloud/ai/users/).
 
 ### Command Line Interface 
 

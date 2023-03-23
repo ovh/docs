@@ -1,9 +1,9 @@
 ---
 title: AI Dashboard - Getting started
-slug: dashboard/getting-started
+slug: dashboard-getting-started
 excerpt: Learn how to use AI Dashboard
-section: AI Dashboard - Guides
-order: 01
+section: General information
+order: 108
 updated: 2023-03-15
 ---
 
@@ -40,7 +40,7 @@ The following chapters will help you to discover each section of the `AI Dashboa
 In this section, you will find information related to your use of the AI Tools with easy access to [AI Notebooks](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/definition/), [AI Training](https://docs.ovh.com/au/en/publiccloud/ai/training/submit-job/) and [AI Deploy](https://docs.ovh.com/au/en/publiccloud/ai/deploy/getting-started/).  
 Listed instances are the ones that are in `RUNNING` and `STOPPED` status.
 
-You can also easily access to your [Object Storage](https://docs.ovh.com/au/en/storage/).
+You can also easily access to your [Object Storage](https://docs.ovh.com/au/en/storage/object-storage/).
 
 You can find more details on the prices of the AI tools [here](https://www.ovhcloud.com/en-au/public-cloud/prices/#ai-&-machine-learning).
 
