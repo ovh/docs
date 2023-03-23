@@ -58,15 +58,15 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 
 ### Télécharger un snapshot
 
-Le snapshot actuel peut être récupéré via un lien de téléchargement. Cliquez sur `...`{.action} à côté de l'option "Snapshot" et choisissez `Télécharger le Snapshot`{.action} dans le menu contextuel.
+Le snapshot en cours peut être récupéré via un lien de téléchargement. Cliquez sur le bouton `...`{.action} à côté de l'option `Snapshot` et choisissez `Télécharger le Snapshot`{.action} dans le menu contextuel.
 
 ![snapshotvps](images/snapshot_vps03.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}. 
+Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}.
 
 ![snapshotvps](images/snapshot_vps04.png){.thumbnail}
 
-Après quelques secondes, un message de réussite s'affiche. En dessous, vous pouvez copier la commande complète de téléchargement en un clic.
+Après quelques secondes, un message de succès s'affiche. En dessous, vous pouvez copier la commande complète de téléchargement en un clic.
 
 ![snapshotvps](images/snapshot_vps05.png){.thumbnail}
 
@@ -74,16 +74,14 @@ La taille du snapshot et la date d'expiration du lien seront également affiché
 
 Notez que le lien de téléchargement expirera après **24 heures**.
 
-La commande download utilise `curl` au format suivant :
+La commande de téléchargemment utilise un `curl` au format suivant :
 
 ```bash
 curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
 temp_url_sig=f508cacda60256d5f211ddf3f81130e935f0e4&temp_url_expires=1678247579" —output vps-x11x11xyy.vps.ovh.net —fail
 ```
 
-Il doit fonctionner depuis n'importe quel terminal de ligne de commande.
-
-Cependant, lorsque vous utilisez Windows *PowerShell*, vous devrez ajuster la commande comme suit :
+Cette commande doit fonctionner depuis n'importe quel terminal de ligne de commande. Cependant, lorsque vous utilisez Windows *PowerShell*, vous devrez ajuster la commande ainsi :
 
 ```powershell
 curl -Uri "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78 ?
@@ -94,7 +92,7 @@ temp_url_sig=f508cacda60256d5f211ddf3f81130e935f0e4&temp_url_expires=1678247579"
 
 > [!primary]
 >
-Il est déconseillé de télécharger les snapshots directement sur le VPS, pour éviter de consommer trop d'espace de stockage.
+> Pour éviter de consommer trop d'espace de stockage, nous vous déconseillons de télécharger les snapshots directement sur le VPS.
 >
 
 ### Bonnes pratiques pour la création d'un snapshot
