@@ -38,18 +38,18 @@ Through the OVHcloud Control Panel and the API, you can reset your OVHcloud Mana
 > [!primary]
 >
 > During a reset, all data in the ETCD will be deleted (pods, deployments, services, secrets, CRDs, etc.), all PVC (Persistent Volume Claim) with their PCI cinder volumes and also load balancers.
-> Nodes will be either deleted or reinstalled.
+> Nodes will be either deleted or reinstalled (depending on the option you set during the reset).(depending on the option you set during the reset).
 
 Whole cluster configuration is resetted but some value can be precise (optional):
 
-- nodes_policy: reinstall|delete
+- workerNodesPolicy: reinstall|delete
 - minor_version: for ex. 1.25
-- update_policy: "ALWAYS_UPDATE" by default
+- updatePolicy: "ALWAYS_UPDATE" by default
 - customization: API Server & kube proxy configuration
-- private_network_id: private network openstack UUID
-- private_network_routing_as_default: true|false
-- default_vrack_gateway: gateway IP
-- kube_proxy_mode: ipvs|iptables
+- privateNetworkId: private network openstack UUID
+- privateNetworkConfiguration: true|false
+- defaultVrackGateway: gateway IP
+- kubeProxyMode: ipvs|iptables
 
 ## Requirements
 
@@ -130,6 +130,8 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 ```json
 null
 ```
+
+By default, if you don't specify it, the `workerNodesPolicy` option will be equals to `delete`. If you don't want your Nodes deleted but reinstalled instead, you have to specify `"workerNodesPolicy": "reinstall"`.
 
 > [!primary]
 >
