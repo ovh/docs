@@ -1,12 +1,13 @@
 ---
 title: AI Deploy - Tutorial - Deploy a Rasa chatbot with a simple Flask app
-slug: deploy/deploy-rasa-chatbot
+slug: deploy/rasa-chatbot
 excerpt: Understand how simple it is to deploy a chatbot with AI Deploy
-section: AI Deploy -  Tutorials
+section: AI Deploy - Tutorials
 order: 11
+updated: 2023-03-21
 ---
 
-**Last updated 21th March, 2023.**
+**Last updated 21st March, 2023.**
 
 ## Objective
 
@@ -68,7 +69,7 @@ JWT_ALGORITHM=HS256
 
 Your environment variables are saved. One more thing to do is to add in the `docker-compose.yml` file in the Rasa image the `JWT_SECRET_KEY` value. The value must be the same in the `.env` file. Otherwise, your model will not be able to run. Now, let's test locally our app or let's deploy our chatbot!
 
-If you have already trained a Rasa model with OVHcloud, you should already have an object storage container with your trained models. If you don't have this one, please continue this tutorial to create one. Otherwise, you can go directly [here](#test-it-locally-optional).
+If you have already trained a Rasa model with OVHcloud, you should already have an object storage container with your trained models. If you don't have this one, please continue this tutorial to create one. Otherwise, you can go directly [here](#localtest).
 
 ### Add one object storage 
 
@@ -91,7 +92,7 @@ ovhai data upload GRA <model-output-container> 20221220-094914-yellow-foley.tar.
 
 The model `20221220-094914-yellow-foley.tar.gz` will be added in your container `<model-output-container>`. That's it, now you can deploy your chatbot.
 
-### Test it locally (optional)
+### Test it locally (optional) <a name="localtest"></a>
 
 A good practice is to test your work locally before going to production.
 
