@@ -51,9 +51,9 @@ When you order your dedicated server, no security protocols are implemented nati
 ### How do I reinstall and secure my dedicated ESXi server?
 
 1. Secure access to your dedicated server through [Network Firewall](https://docs.ovh.com/gb/en/dedicated/firewall-network/) or your own firewall system.
-2. Install the VMware ESXi 7.0 U3c version available [via your dedicated server administration interface](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#installing-or-reinstalling-your-dedicated-server)
+2. Install the VMware ESXi 7.0 U3c version available [via your dedicated server administration interface](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#installing-or-reinstalling-your-dedicated-server).
 3. The inability to connect after installing ESXi 7 comes from VMWare's security system. There are no blocking rules in your firewall. It will not be possible to reset the administrator password on VMware.
-4. [Secure your dedicated server](https://docs.ovh.com/gb/en/dedicated/securing-a-dedicated-server/)
+4. [Secure your dedicated server](https://docs.ovh.com/gb/en/dedicated/securing-a-dedicated-server/).
 
 Safety best practices include:
 
@@ -85,4 +85,4 @@ Our customers using [Hosted Private Cloud powered by VMware](https://www.ovhclou
 
 ## Go further
 
-Talk to our user community at <https://community.ovh.com/en/>
+Join our community of users on <https://community.ovh.com/en/>.

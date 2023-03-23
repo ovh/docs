@@ -29,7 +29,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 
 ## Requisitos
 
-- Tener un servicio [Exchange](hhttps://www.ovhcloud.com/es/emails/){.external}.
+- Tener un servicio [Exchange](https://www.ovhcloud.com/es/emails/){.external}.
 - Tener Microsoft Outlook 2016 o posterior instalado en su ordenador.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 - El registro SRV de OVHcloud debe estar correctamente configurado en la zona DNS del dominio. No dude en consultar nuestra guía [Añadir un dominio a un servicio Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/anadir-dominio-exchange/).

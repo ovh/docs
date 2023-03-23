@@ -1,5 +1,5 @@
 ---
-title: AI Deploy - Billing and lifecycle (EN)
+title: AI Deploy - Billing and lifecycle
 slug: deploy/billing
 excerpt: Learn how we bill AI Deploy
 section: AI Deploy - Guides

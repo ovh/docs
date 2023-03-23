@@ -212,7 +212,7 @@ Privilegie a utilização de plugins/temas "oficiais" e mantenha o seu website a
 
 Proteja os seus formulários de contacto com um sistema do tipo "Captcha", para evitar que robôs maliciosos emitam SPAM desta forma. Se a função "mail()" de PHP tiver sido bloqueada no seu alojamento, consulte o [nosso guia](https://docs.ovh.com/pt/hosting/alojamento_partilhado_seguimento_dos_emails_automatizados/) para resolver este bloqueio.
 
-Consulte também o nosso manual sobre [como proteger o seu website](ttps://docs.ovh.com/pt/hosting/secure-website/) para minimizar o risco de novos ataques.
+Consulte também o nosso manual sobre [como proteger o seu website](https://docs.ovh.com/pt/hosting/secure-website/) para minimizar o risco de novos ataques.
 
 ## Quer saber mais? <a name="go-further"></a>
 

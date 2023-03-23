@@ -48,7 +48,7 @@ When we talk about partitioning layout, we are talking about how your data will 
 - disk (physical disk, PD),
 - partition (physical partition, PP),
 - ZFS: vdev (zgroup, ZG), zpool (ZP), ZFS dataset (ZD), ZFS volume (ZV),
-- [software RAID](ttps://docs.ovh.com/us/es/dedicated/raid-software/) (SR),
+- [software RAID](https://docs.ovh.com/us/es/dedicated/raid-software/) (SR),
 - LVM: physical volume (PV), volume group (VG), logical volume (LV),
 - filesystem with a mountpoint (FS)
 

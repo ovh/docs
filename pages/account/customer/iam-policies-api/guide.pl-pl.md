@@ -42,7 +42,7 @@ For instance, we can create a policy to give to a user called John, for a VPS, a
 To set up a policy, you will require:
 
 - An [OVHcloud account](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/).
-- To know [how to manage account users](hhttps://docs.ovh.com/pl/customer/zarzadzanie_uzytkownikami/).
+- To know [how to manage account users](https://docs.ovh.com/pl/customer/zarzadzanie_uzytkownikami/).
 - Some OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
 
 ## Instructions
@@ -312,7 +312,7 @@ To create a new user group, call the API route with the following body:
 }
 ```
 
-For more information, refer to the [documentation for user management](https://docs.ovh.com/pl/customer/managing-users/).
+For more information, refer to the [documentation for user management](https://docs.ovh.com/pl/customer/zarzadzanie_uzytkownikami/).
 
 #### With SSO connection enabled
 

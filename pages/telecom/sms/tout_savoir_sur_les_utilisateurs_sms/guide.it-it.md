@@ -91,7 +91,7 @@ A questo punto saranno disponibili le seguenti impostazioni:
 
 ![sms-users](images/smsusers05-2021.png){.thumbnail}
 
-### Step 4: definisci una restrizione IP per la funzione hhtp2sms
+### Step 4: definisci una restrizione IP per la funzione http2sms
 
 È possibile rendere sicura la funzione http2sms applicando alcune restrizioni IP per ciascun utente API.
 

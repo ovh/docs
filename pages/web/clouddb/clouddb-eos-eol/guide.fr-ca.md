@@ -2,10 +2,10 @@
 title: 'Annonces de fin de vente/vie Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Ressources techniques'
-updated: 2023-03-09
+updated: 2023-03-20
 ---
 
-**Dernière mise à jour le 09/03/2023**
+**Dernière mise à jour le 20/03/2023**
 
 ## Objectif
 
@@ -23,9 +23,10 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 |PostgreSQL 9.6|2020-01-21|2021-05-12|2021-11-11|
 |PostgreSQL 10|2021-08-18|2022-05-11|2022-11-10|
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
-|PostgreSQL 12|**2023-03-08**|**2024-05-15**|**2024-11-14**|
+|PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|À définir|À définir|À définir|
 |Redis 6.0|À définir|À définir|À définir|
+|Redis 7.0|À définir|À définir|À définir|
 
 ## Aller plus loin
 

@@ -50,7 +50,7 @@ $ gpg --list-secret-keys
 -----------------------
 sec   ed25519 2023-03-07 [SC]
       448940C5335D1D278788F4AF67336C97696A1BE0
-uid           [ultimate] John Doe <john@smith.org>
+uid           [ultimate] John Smith <john@smith.org>
 ssb   cv25519 2023-03-07 [E]
 
 sec   rsa3072 2023-03-07 [SC] [expires: 2025-03-06]
@@ -265,7 +265,7 @@ $ ls
 
 $ gpg --output 2022-11-15.zst --decrypt 2022-11-15.zst.pgp 
 gpg: encrypted with 4096-bit RSA key, ID 97B70793B8270D80, created 2022-05-10
-      "John Doe <john.smith@corp.acme.org>"
+      "John Smith <john.smith@corp.acme.org>"
 
 $ ls
 2022-11-15.zst  2022-11-15.zst.pgp
@@ -291,5 +291,5 @@ The Logs Data Platform team will then take care of your request.
 
 - Getting Started: [Quick Start](../quick-start)
 - Documentation: [Guides](../)
-- Community hub: [https://community.ovh.com](https://community.ovh.com/fr/c/Platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

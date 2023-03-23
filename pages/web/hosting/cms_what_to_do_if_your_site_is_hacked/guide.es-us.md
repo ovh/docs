@@ -103,7 +103,7 @@ Si utiliza un CMS como WordPress, Joomla, PrestaShop o Drupal, consulte la docum
 Si tiene dificultades para realizar las acciones que se describen a continuación, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) en ciberseguridad.
 >
 
-Utilice nuestra guía sobre [las estadísticas y logs de su alojamiento web](ttps://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) para buscar los elementos maliciosos introducidos en su sitio web. Puede consultar la información en los logs "web". 
+Utilice nuestra guía sobre [las estadísticas y logs de su alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) para buscar los elementos maliciosos introducidos en su sitio web. Puede consultar la información en los logs "web". 
 
 Comience a buscar a partir de la fecha en la que haya detectado la piratería y vuelva al historial de sus logs.
 

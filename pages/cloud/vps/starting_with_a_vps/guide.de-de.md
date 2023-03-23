@@ -84,7 +84,7 @@ passwd: password updated successfully
 
 #### Aktivierung von Root-Logins
 
-Aus Sicherheitsgründen ist das Verbinden mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](https://docs.ovh.com/de/root-password/#rooterlauben).
+Aus Sicherheitsgründen ist das Verbinden mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](https://docs.ovh.com/de/vps/root-password/#rooterlauben).
 
 #### Neustart Ihres VPS (aktuelle Reihe) <a name="reboot-current-range"></a>
 
@@ -183,7 +183,7 @@ In Ihrem Kundencenter wird ein Ladebalken eingeblendet, der Ihnen den Fortschrit
 
 Wie oben erwähnt, sind Sie der Administrator Ihres VPS. Als solcher sind Sie für Ihre Daten und deren Sicherheit verantwortlich.
 
-Für grundlegende Tipps lesen Sie die Anleitung zur [VPS Sicherheit](https://docs.ovh.com/de/vps-sicherheit/).
+Für grundlegende Tipps lesen Sie die Anleitung zur [VPS Sicherheit](https://docs.ovh.com/de/vps/vps-sicherheit/).
 
 ### Eine Domain zuweisen
 
@@ -201,8 +201,8 @@ OVHcloud bietet auch die SSL Gateway-Lösung zur Automatisierung dieses Prozesse
 
 [SSH Einführung](https://docs.ovh.com/de/dedicated/ssh-einfuehrung/)
 
-[VPS absichern](https://docs.ovh.com/de/vps-sicherheit/)
+[VPS absichern](https://docs.ovh.com/de/vps/vps-sicherheit/)
 
-[Eine neue Windows Server Installation konfigurieren](https://docs.ovh.com/de/windows-first-config/)
+[Eine neue Windows Server Installation konfigurieren](https://docs.ovh.com/de/vps/windows-first-config/)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

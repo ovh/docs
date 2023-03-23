@@ -6,16 +6,15 @@ section: Diagnose & Rescue Modus
 updated: 2022-05-02
 ---
 
-**Letzte Aktualisierung am 02.05.2022**
-
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
+**Letzte Aktualisierung am 02.05.2022**
 
 ## Ziel
 
-Der Rescue-Modus ist ein von OVHcloud bereitgestelltes Werkzeug, um Ihren VPS in einem temporären Betriebssystem zu starten. Sie können es verwenden, um verschiedene Probleme in Ihrem Hauptbetriebssystem zu diagnostizieren und zu beheben.
+Der Rescue-Modus ist ein von OVHcloud bereitgestelltes Werkzeug, um Ihren VPS in einem temporären Betriebssystem zu starten. Sie können ihn verwenden, um verschiedene Probleme in Ihrem Hauptbetriebssystem zu diagnostizieren und zu beheben.
 
 Der Rescue-Modus ist allgemein geeignet für diese Aufgaben:
 
@@ -40,9 +39,10 @@ Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch festzuste
 - Sie haben einen bereits eingerichteten [OVHcloud VPS](https://www.ovhcloud.com/de/vps/){.external} in Ihrem Kunden-Account.
 
 > [!warning]
-> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Datenzugriff auf Ihre Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Implementierung der Dienste auf einem Server haben.
 >
 
 ## In der praktischen Anwendung
@@ -119,8 +119,8 @@ Sobald Ihre Maßnahmen im Rescue-Modus abgeschlossen sind, starten Sie den VPS �
 
 ## Weiterführende Informationen
 
-[Root-Passwort auf einem VPS ändern](../root-password/)
+[Root-Passwort auf einem VPS ändern](https://docs.ovh.com/de/vps/root-password/)
 
-[SSH Einführung](../../dedicated/ssh-einfuehrung/)
+[SSH Einführung](https://docs.ovh.com/de/dedicated/ssh-einfuehrung/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

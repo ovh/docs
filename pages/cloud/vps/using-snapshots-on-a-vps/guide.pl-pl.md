@@ -117,9 +117,9 @@ $ sudo service qemu-guest-agent status
 
 Możesz zainstalować agenta, korzystając z pliku MSI, dostępnego na stronie projektu Fedora <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Sprawdź, czy usługa działa za pomocą poniższej komendy powershell:
+Sprawdź, czy usługa działa za pomocą poniższej komendy *PowerShell*:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName

@@ -63,7 +63,7 @@ If you do not feel comfortable with commands, this way will be more intuitive fo
 
 First, go to the [OVHcloud Public Cloud section](https://www.ovh.com/manager/#/public-cloud/).
 
-Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/asia/en/storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
+Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/asia/en/storage/object-storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
 
 Here you can create the object container that will store your datas. Several `types` and `regions` are available, choose the best parameters for you.
 

@@ -14,7 +14,7 @@ Ce guide a pour but de vous aider à lier et à configurer votre Load Balancer d
 
 Le vRack est un réseau privé dédié qui crée un lien entre tous vos produits cloud. Pour plus d'informations n'hésitez pas à consulter la page sur le [vRack](https://www.ovh.com/fr/solutions/vrack/)
 
-Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons de consulter la [présentation générale du service Load Balancer](https://docs.OVHcloud.com/fr/load-balancer/iplb-presentation/).
+Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons de consulter la [présentation générale du service Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/).
 
 ## Prérequis
 
