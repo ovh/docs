@@ -24,7 +24,7 @@ We will do this using the on-board features offered by VMware, as well as those 
 > 
 > Recently, ESXi systems fell victim to a security flaw that malicious groups exploited very quickly across public networks.
 >
-> You can find more information on this attack in [an additional FAQ](https://docs.ovh.com/ie/en/dedicated/esxi-faq/).
+> You can find more information on this attack in [an additional FAQ](https://docs.ovh.com/gb/en/dedicated/esxi-faq/).
 >
 
 ### Security best practices reminder

@@ -312,7 +312,7 @@ To create a new user group, call the API route with the following body:
 }
 ```
 
-For more information, refer to the [documentation for user management](https://docs.ovh.com/pl/customer/managing-users/).
+For more information, refer to the [documentation for user management](https://docs.ovh.com/pl/customer/zarzadzanie_uzytkownikami/).
 
 #### With SSO connection enabled
 

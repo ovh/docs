@@ -24,7 +24,7 @@ Nous nous appuierons pour cela sur les fonctions embarquées que propose VMware,
 > 
 > Récemment, les systèmes ESXi ont été victimes d'une faille que des groupes malveillants ont exploitée très rapidement à travers les réseaux publics.
 >
-> Vous trouverez plus d'informations sur cette attaque dans [une FAQ complémentaire](https://docs.ovh.com/ca/fr/dedicated/esxi-faq/).
+> Vous trouverez plus d'informations sur cette attaque dans [une FAQ complémentaire](https://docs.ovh.com/fr/dedicated/esxi-faq/).
 >
 
 ### Rappel des bonnes pratiques de sécurité :

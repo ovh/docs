@@ -65,7 +65,7 @@ Zostaniesz przekierowany na stronę konfiguracji. Upewnij się, że adres URL ob
 
 Szczegółowe informacje na temat opcji znajdują się w części ["Tabele opcji"](#options) niniejszego przewodnika. 
 
-Dokumentacja dotycząca aktywacji usługi `ConfigDrive` znajduje się na [tej stronie](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+Dokumentacja dotycząca aktywacji usługi `ConfigDrive` znajduje się na [tej stronie](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 

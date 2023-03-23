@@ -69,7 +69,7 @@ Sie werden auf die Konfigurationsseite weitergeleitet. Vergewissern Sie sich, da
 
 Weitere Informationen zu den Optionen finden Sie im Abschnitt "[Deployment-Optionen](#options)" dieser Anleitung.
 
-Weitere Informationen zur Aktivierung von "ConfigDrive" finden Sie auf [dieser Seite](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+Weitere Informationen zur Aktivierung von "ConfigDrive" finden Sie auf [dieser Seite](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![BYOI](images/byoi-controlpanel03.png){.thumbnail}
 

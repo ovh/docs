@@ -1,5 +1,5 @@
 ---
-title: AI Notebooks - Tutoriel - Créer et entraîner un chatbot Rasa
+title: AI Notebooks - Tutoriel - Créer et entraîner un chatbot Rasa (EN)
 slug: notebooks/create-rasa-chatbot
 excerpt: Découvrez comment créer et entraîner un chatbot avec AI Notebooks
 section: AI Notebooks - Tutoriels
