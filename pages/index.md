@@ -724,6 +724,7 @@
             + [Data - Concept and best practices](platform/ai/gi_02_concepts_data)
             + [FAQ AI training](platform/ai/gi_04_training_FAQ)
             + [ovhai CLI Cheat Sheet](platform/ai/gi_05_ovhai_cheatsheet)
+            + [AI Dashboard - Getting started](platform/ai/gi_06_dashboard_getting_started)
         + [Command Line Interface](public-cloud-ai-and-machine-learning-command-line-interface)
             + [CLI - Installation](platform/ai/cli_10_howto_install_cli)
             + [CLI - Launch an AI notebook](platform/ai/cli_11_cli_getting_started)
