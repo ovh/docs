@@ -185,7 +185,7 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS,
 
 [Comment partager mon hébergement Web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
-[Gestion d’une base de données depuis un hébergement mutualisé](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
+[Gestion d’une base de données depuis un hébergement mutualisé](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/){.external}
 
 Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
 
