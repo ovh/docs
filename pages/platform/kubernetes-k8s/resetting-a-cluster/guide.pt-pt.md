@@ -43,6 +43,7 @@ Through the OVHcloud Control Panel and the API, you can reset your OVHcloud Mana
 > Nodes will be either deleted or reinstalled.
 
 Whole cluster configuration is resetted but some value can be precise (optional):
+
 - nodes_policy: reinstall|delete
 - minor_version: for ex. 1.25
 - update_policy: "ALWAYS_UPDATE" by default
