@@ -15,7 +15,7 @@ updated: 2023-03-21
 
 The aim of the tutorial is to understand how to train a Rasa model with AI Training. 
 
-Deployment will be performed in the second part of the tutorial which you can find here: [How to deploy a chatbot](https://docs.ovh.com/it/publiccloud/ai/deploy/deploy-rasa-chatbot).
+Deployment will be performed in the second part of the tutorial which you can find here: [How to deploy a chatbot](https://docs.ovh.com/it/publiccloud/ai/deploy/rasa-chatbot).
 If you want to access the code, you can find it [here](https://github.com/ovh/ai-training-examples/jobs/rasa-chatbot).
 If you want to create a Rasa chatbot with a notebook, please follow this tutorial: [Create and train a Rasa chatbot](https://docs.ovh.com/it/publiccloud/ai/notebooks/create-rasa-chatbot).
 
@@ -207,7 +207,7 @@ If you want to see how the model is created and trained with AI Notebooks, pleas
 
 If you want to deploy your model created with the chatbot, you can follow this tutorial. 
 
-[How to deploy a chatbot](https://docs.ovh.com/it/publiccloud/ai/deploy/deploy-rasa-chatbot)
+[How to deploy a chatbot](https://docs.ovh.com/it/publiccloud/ai/deploy/rasa-chatbot)
 
 ## Feedback
 

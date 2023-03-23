@@ -3,7 +3,7 @@ title: "Tutoriel - Installer manuellement PrestaShop"
 slug: installer-manuellement-prestashop
 excerpt: "Découvrez comment installer manuellement votre CMS PrestaShop"
 section: CMS
-order: 06
+order: 07
 updated: 2023-03-17
 ---
 

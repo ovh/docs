@@ -65,7 +65,7 @@ Vous serez redirigé vers la page de configuration. Assurez-vous que l'URL de vo
 
 Retrouvez le détail des options dans la partie [« Tableaux des options »](#options) de ce guide.
 
-Concernant l'activation de `ConfigDrive`, retrouver la documentation sur [cette page](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+Concernant l'activation de `ConfigDrive`, retrouver la documentation sur [cette page](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 

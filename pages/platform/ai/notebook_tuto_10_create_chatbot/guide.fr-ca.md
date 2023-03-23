@@ -1,5 +1,5 @@
 ---
-title: AI Notebooks - Tutoriel - Créer et entraîner un chatbot Rasa
+title: AI Notebooks - Tutoriel - Créer et entraîner un chatbot Rasa (EN)
 slug: notebooks/create-rasa-chatbot
 excerpt: Découvrez comment créer et entraîner un chatbot avec AI Notebooks
 section: AI Notebooks - Tutoriels
@@ -114,7 +114,7 @@ If you want to use more functionalities of Rasa, please follow this link. We use
 
 If you want to deploy your created model with the chatbot, you can follow this tutorial:
 
-[How to deploy a chatbot](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/deploy-rasa-chatbot)
+[How to deploy a chatbot](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/rasa-chatbot)
 
 If you want to train a Rasa chatbot with the tool AI Training, please refer to this tutorial:
 

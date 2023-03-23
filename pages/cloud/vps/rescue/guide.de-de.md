@@ -119,7 +119,7 @@ Sobald Ihre Maßnahmen im Rescue-Modus abgeschlossen sind, starten Sie den VPS �
 
 ## Weiterführende Informationen
 
-[Root-Passwort auf einem VPS ändern](https://docs.ovh.com/de/root-password/)
+[Root-Passwort auf einem VPS ändern](https://docs.ovh.com/de/vps/root-password/)
 
 [SSH Einführung](https://docs.ovh.com/de/dedicated/ssh-einfuehrung/)
 
