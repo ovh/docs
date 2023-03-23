@@ -78,7 +78,7 @@ CMS créé en 2005 et dédié à la réalisation de sites web E-commerce. En deh
 
 Retrouvez plus d'informations sur notre page relative au [module PrestaShop](https://www.ovhcloud.com/fr/web-hosting/uc-prestashop-website/)
 
-- Site officiel de [PrestaShop](https://www.drupal.org/){.external}
+- Site officiel de [PrestaShop](https://www.prestashop.com/){.external}
 
 > [!warning]
 >
