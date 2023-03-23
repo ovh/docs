@@ -4,7 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihren Hosted Exchange Dienst konfigurieren'
 slug: exchange_20132016_konfiguration_der_dienstleistung
 section: 'Erste Schritte mit Exchange'
 order: 01
-updated: 2018-01-19
+updated: 2023-03-06
 ---
 
 > [!primary]
