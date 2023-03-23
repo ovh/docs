@@ -4,10 +4,10 @@ excerpt: 'Découvrez comment activer et utiliser l’option snapshot depuis l’
 slug: snapshot-vps
 section: Sauvegarde
 order: 1
-updated: 2022-12-02
+updated: 2023-03-20
 ---
 
-**Dernière mise à jour le 02/12/2022**
+**Dernière mise à jour le 20/03/2023**
 
 ## Objectif
 
@@ -54,6 +54,47 @@ Si vous êtes sûr de vouloir restaurer votre VPS à l'état du snapshot, clique
 > [!alert]
 >
 > Lorsque vous restaurez un VPS à partir d’un snapshot, ce dernier sera supprimé. Si vous souhaitez conserver le même snapshot, vous devez en créer un nouveau avant d'apporter des modifications au système restauré.
+>
+
+### Télécharger un snapshot
+
+Le snapshot actuel peut être récupéré via un lien de téléchargement. Cliquez sur `...`{.action} à côté de l'option "Snapshot" et choisissez `Télécharger le Snapshot`{.action} dans le menu contextuel.
+
+![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, cliquez sur `Générer le lien de téléchargement`{.action}. 
+
+![snapshotvps](images/snapshot_vps04.png){.thumbnail}
+
+Après quelques secondes, un message de réussite s'affiche. En dessous, vous pouvez copier la commande complète de téléchargement en un clic.
+
+![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+
+La taille du snapshot et la date d'expiration du lien seront également affichées.
+
+Notez que le lien de téléchargement expirera après **24 heures**.
+
+La commande download utilise `curl` au format suivant :
+
+```bash
+curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddf3f81130e935f0e4&temp_url_expires=1678247579" —output vps-x11x11xyy.vps.ovh.net —fail
+```
+
+Il doit fonctionner depuis n'importe quel terminal de ligne de commande.
+
+Cependant, lorsque vous utilisez Windows *PowerShell*, vous devrez ajuster la commande comme suit :
+
+```powershell
+curl -Uri "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78 ?
+temp_url_sig=f508cacda60256d5f211ddf3f81130e935f0e4&temp_url_expires=1678247579" -OutFile vps-x11x11xyy.vps.ovh.net
+```
+
+![snapshotvps](images/snapshot_vps06.png){.thumbnail}
+
+> [!primary]
+>
+Il est déconseillé de télécharger les snapshots directement sur le VPS, pour éviter de consommer trop d'espace de stockage.
 >
 
 ### Bonnes pratiques pour la création d'un snapshot
@@ -129,9 +170,9 @@ Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](https://d
 
 Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Vérifiez que le service est en cours d'exécution à l'aide de la commande powershell suivante :
+Vérifiez que le service est en cours d'exécution à l'aide de la commande *PowerShell* suivante :
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName

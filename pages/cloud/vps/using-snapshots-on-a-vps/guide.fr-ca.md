@@ -129,9 +129,9 @@ Consultez notre guide [Sauvegarde automatique - Kernel panic (cPanel)](https://d
 
 Vous pouvez installer l'agent via un fichier MSI, disponible sur le site du projet Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Vérifiez que le service est en cours d'exécution à l'aide de la commande powershell suivante :
+Vérifiez que le service est en cours d'exécution à l'aide de la commande *PowerShell* suivante :
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName
