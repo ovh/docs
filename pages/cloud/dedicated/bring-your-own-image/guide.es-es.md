@@ -69,7 +69,7 @@ El sistema le redirigirá a la página de configuración. Asegúrese de que la U
 
 Consulte los detalles de las opciones en el apartado ["Tablas de opciones"](#options) de esta guía. 
 
-Para activar `ConfigDrive`, consulte la documentación disponible en [esta página](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+Para activar `ConfigDrive`, consulte la documentación disponible en [esta página](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 

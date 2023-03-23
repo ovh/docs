@@ -66,7 +66,7 @@ You will be redirected to the configuration page. Make sure your image URL is in
 
 You can find more details on the options in the "[Deployment options](#options)" section below.
 
-For more information on activating ConfigDrive, please consult the documentation on [this page](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+For more information on activating ConfigDrive, please consult the documentation on [this page](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 
