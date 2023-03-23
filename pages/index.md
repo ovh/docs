@@ -769,6 +769,7 @@
                 + [AI Training - Tutorial - Connect to VSCode via remote](platform/ai/training_tuto_04_vscode_remote)
                 + [AI Training - Tutorial - Use tensorboard inside a job](platform/ai/training_tuto_05_tensorboard)
                 + [AI Training - Tutorial - Compare models with W&B for audio classification task](platform/ai/training_tuto_06_models_comparaison_weights_and_biases)
+                + [AI Training - Tutorial - Train a rasa chatbot with docker and AI Training](platform/ai/training_tuto_07_train_rasa_chatbot)
         + [AI Deploy](public-cloud-ai-and-machine-learning-ai-deploy)
             + [Guides](public-cloud-ai-and-machine-learning-ai-deploy-guides)
                 + [AI Deploy - Capabilities and limitations](platform/ai/deploy_guide_01_capabilities)
