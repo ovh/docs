@@ -1,5 +1,5 @@
 ---
-title: ‚Beherrschen und sichern Sie Ihren dedizierten ESXi Server ab dem ersten Start'
+title: 'Beherrschen und sichern Sie Ihren dedizierten ESXi Server ab dem ersten Start'
 slug: esxi-hardening
 excerpt: 'Entdecken Sie die verschiedenen Möglichkeiten, um Ihren dedizierten ESXi-Server wirksam zu schützen'
 section: 'Sicherheit'
@@ -84,7 +84,7 @@ Sie können die Zugriffs-Logs über einen SSH-Shell in folgenden Dateien einsehe
 2023-02-21T08:44:19.712Z info hostd[2101004] [Originator@6876 sub=Vimsvc.ha-eventmgr opID=esxui-d48c-26a4] Event 175 : Cannot login root@xxx.xxx.xxx.xxx
 ```
 
-Alle Informationen sind auch über das Web-Administrations-Interface verfügbar. Klicken Sie auf das `Host`-Menü {.action} und gehen Sie in den Bereich `Monitor`{.action} und klicken Sie dann auf `Logs`{.action}.
+Alle Informationen sind auch über das Web-Administrations-Interface verfügbar. Klicken Sie auf das `Host`{.action} -Menü und gehen Sie in den Bereich `Monitor`{.action} und klicken Sie dann auf `Logs`{.action}.
 
 ![interface](images/gui_logs_.png){.thumbnail}
 
