@@ -72,7 +72,7 @@ If you have already trained a Rasa model with OVHcloud, you should already have 
 
 ### Add one object storage 
 
-The container we will create contain at least one model. This model will be serve on a platform with AI Deploy.
+The container we will create contain at least one model. This model will be served on a platform with AI Deploy.
 
 We can specify during creation if we want them in read-only, read-write and co.
 Splitting input data and output data is a good practice, allowing you faster development code and avoids risk of deleting data.
