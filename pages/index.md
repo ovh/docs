@@ -82,6 +82,7 @@
             + [Using the IPMI with Dedicated Servers](cloud/dedicated/using_ipmi_on_dedicated_servers)
             + [Migrate data from one dedicated server to another](cloud/dedicated/migrate_a_server_to_another)
             + [Configuring a new Windows Server installation](cloud/dedicated/windows_first_config)
+            + [Dedicated servers - Shared Responsibility](account/responsibility-sharing/dedicated-servers)
         + [Security](bare-metal-cloud-dedicated-servers-security)
             + [Creating SSH keys](cloud/dedicated/creating-ssh-keys-dedicated)
             + [Configuring the firewall on Linux with iptables](cloud/dedicated/firewall-Linux-iptable)
