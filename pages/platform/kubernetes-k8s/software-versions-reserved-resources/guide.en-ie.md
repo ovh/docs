@@ -3,8 +3,6 @@ title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved r
 excerpt: ''
 slug: kubernetes-plugins-software-versions-reserved-resources
 section: Technical resources
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/kubernetes-plugins-software-versions-reserved-resources/'
 updated: 2023-03-24
 ---
 
