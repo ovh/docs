@@ -11,7 +11,7 @@ updated: 2021-12-13
 
 ## Objectif
 
-Le plupart des services créés chez OVHcloud sont gérés par plusieurs contacts. Chacun de ces contacts est associé à un identifiant client. 
+La plupart des services créés chez OVHcloud sont gérés par plusieurs contacts. Chacun de ces contacts est associé à un identifiant client. 
 
 **Apprenez à gérer les contacts de vos services OVHcloud.**
 
