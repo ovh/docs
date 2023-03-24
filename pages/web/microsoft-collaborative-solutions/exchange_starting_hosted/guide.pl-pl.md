@@ -120,7 +120,7 @@ Więcej informacji znajdziesz w dokumentacji [Dodawanie domeny do usługi Exchan
 
 Możesz skonfigurować dodatkowe konta, jeśli chcesz i nie zrobiłeś tego jeszcze za pomocą asystenta.
 
-W tym celu kliknij wybraną usługę Hosted Exchange w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie zakładkę `Konta e-mail`{.action}. W tabeli wyświetlone są nazwy kont aktualnie skonfigurowanych w Twojej usłudze lub które oczekują na konfigurację.
+W tym celu kliknij wybraną usługę Hosted Exchange w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie zakładkę `Konta e-mail`{.action}. W tabeli wyświetlone są nazwy kont aktualnie skonfigurowanych w Twojej usłudze lub które oczekują na konfigurację.
 
 Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@configureme.me*”. Aby przeprowadzić konfigurację kont, kliknij w ikonę ołówka, następnie postępuj zgodnie z poleceniami.
 
