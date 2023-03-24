@@ -111,7 +111,7 @@ Więcej informacji znajdziesz w dokumentacji [Dodawanie domeny do usługi Exchan
 
 > [!primary]
 >
-> Jeśli któraś z domen wymaga wykonania jakiegoś szczególnego działania związanego z jej konfiguracją, w kolumnie `Diagnostyka`{.action} w tabeli zobaczysz czerwony przycisk. Po kliknięciu w czerwony przycisk wyświetlą się modyfikacje, jakie należy przeprowadzić. Jeśli domena nie używa konfiguracji OVHcloud (serwery DNS OVH), wprowadź zmiany w interfejsie do zarządzania konfiguracją Twojej domeny. 
+> Jeśli któraś z domen wymaga wykonania jakiegoś szczególnego działania związanego z jej konfiguracją, w kolumnie `Diagnostyka`{.action} w tabeli zobaczysz czerwony przycisk. Po kliknięciu w czerwony przycisk wyświetlą się modyfikacje, jakie należy przeprowadzić. Jeśli domena nie używa konfiguracji OVHcloud (serwery DNS OVHcloud), wprowadź zmiany w interfejsie do zarządzania konfiguracją Twojej domeny. 
 >
 
 ![Dodanie domeny](images/first-steps-hosted-exchange-add-domain.png)
