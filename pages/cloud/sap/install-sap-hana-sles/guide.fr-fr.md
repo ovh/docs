@@ -2,7 +2,7 @@
 title: SAP HANA on Bare Metal - Installation de SAP HANA sur SLES 15 for SAP
 slug: sap-installation-sap-hana-sles
 excerpt: "Ce guide fournit des instructions pour le déploiement de l'image SLES 15 for SAP sur un serveur dédié OVHcloud et sa préparation pour SAP HANA"
-section: SAP HANA on Bare Metal
+section: Premiers pas
 order: 01
 updated: 2023-03-20
 ---
