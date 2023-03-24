@@ -204,11 +204,13 @@ web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: Zone DNS e DNS
 web-cloud-domains-dns-security: Sicurezza
 web-cloud-domains-domain-names: Domini
+web-cloud-domains-domain-names-general-guides: Guide generali
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Modifica del proprietario di un dominio (trade)
 web-cloud-domains-domain-names-security: Sicurezza
 web-cloud-domains-domain-names-transferring-between-registrars: Trasferimento tra conservatori del registro
 web-cloud-domains-domain-names-troubleshooting: Diagnostica
 web-cloud-domains-domain-names-tutorials: Tutorial
+web-cloud-domains-domain-names-api: API
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Accesso internet
 web-cloud-internet-internet-access-advanced-setup: Configurazione avanzata
