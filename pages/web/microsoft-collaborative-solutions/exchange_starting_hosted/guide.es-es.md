@@ -111,7 +111,7 @@ Para más información, consulte la guía [Añadir un dominio a un servicio Exch
 
 > [!primary]
 >
-> Si es necesario realizar alguna acción concreta para configurar el dominio, se mostrará una etiqueta roja en la columna `Diagnóstico`{.action}. Al hacer clic, se mostrarán las operaciones necesarias. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVH), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. 
+> Si es necesario realizar alguna acción concreta para configurar el dominio, se mostrará una etiqueta roja en la columna `Diagnóstico`{.action}. Al hacer clic, se mostrarán las operaciones necesarias. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVHcloud), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. 
 >
 
 ![Añadir un dominio](images/first-steps-hosted-exchange-add-domain.png)
@@ -133,9 +133,9 @@ La tabla mostrará las cuentas pendientes de configurar con el formato *@configu
 
 ### Utilizar las direcciones de correo
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVH sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/), en el apartado relativo a Outlook Web Application (OWA).
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/), en el apartado relativo a Outlook Web Application (OWA).
 
-Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
+Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
 
 OVHcloud ofrece, desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), licencias Outlook opcionales con su cuenta de correo Exchange.
 
