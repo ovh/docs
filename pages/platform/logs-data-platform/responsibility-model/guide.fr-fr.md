@@ -1,5 +1,5 @@
 ---
-title: Responsibility model
+title: Logs Data Platform - Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: Get Started

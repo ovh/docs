@@ -1,5 +1,5 @@
 ---
-title: Partage de responsabilité (EN)
+title: Public Cloud Databases - Partage des responsabilités (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: Informations générales
