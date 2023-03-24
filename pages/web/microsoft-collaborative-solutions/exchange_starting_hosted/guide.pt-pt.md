@@ -19,7 +19,7 @@ updated: 2023-03-06
 
 **Última atualização: 06/03/2023**
 
-## Sumário
+## Objetivo
 
 O serviço Hosted Exchange permite beneficiar de endereços de e-mail profissionais que facilitam o trabalho colaborativo, graças a funcionalidades tais como a sincronização do calendário e dos contactos.
 
