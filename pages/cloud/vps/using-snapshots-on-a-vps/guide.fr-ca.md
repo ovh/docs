@@ -122,7 +122,7 @@ $ sudo apt-get install qemu-guest-agent
 Redémarrez le vps :
 
 ```
-$ sudo reboot`
+$ sudo reboot
 ```
 
 
