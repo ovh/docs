@@ -133,15 +133,15 @@ As contas que ainda não foram configuradas aparecem na tabela como “*@configu
 
 ### Utilizar os seus endereços de e-mail
 
-As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza o webmail **Outlook Web Application** (OWA). Pode aceder através do endereço <https://www.ovhcloud.com/pt/mail/>, inserindo as credenciais do seu endereço de e-mail. Para mais informações, consulte os manuais da OVHcloud sobre OWA <https://docs.ovh.com/pt/microsoft-collaborative-solutions/>.
+As contas foram configuradas e estão prontas a usar. Para isso, a OVHcloud disponibiliza o webmail **Outlook Web Application** (OWA). Pode aceder através do endereço <https://www.ovhcloud.com/pt/mail/>, inserindo as credenciais do seu endereço de e-mail. Para mais informações, [consulte os manuais da OVHcloud](https://docs.ovh.com/pt/microsoft-collaborative-solutions/).
 
-Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico ou dispositivo externo (smartphone ou tablet), consulte os manuais da OVH sobre as <https://docs.ovh.com/pt/microsoft-collaborative-solutions/>. Para uma utilização otimizada do seu endereço Exchange num software, certifique-se de que seja compatível com o serviço.
+Se quiser, também pode configurar o seu endereço de e-mail num software (cliente) de correio eletrónico ou dispositivo externo (smartphone ou tablet), [consulte os manuais da OVHcloud](https://docs.ovh.com/pt/microsoft-collaborative-solutions/). Para uma utilização otimizada do seu endereço Exchange num software, certifique-se de que seja compatível com o serviço.
 
 A OVHcloud oferece, a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), licenças Outlook como opção com a sua conta de e-mail Exchange.
 
 Para subscrever, consulte a nossa página "[Obter uma licença Outlook para Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_2013_guia_das_licencas_outlook_exchange_2013/)". 
 
-Pode igualmente obter licenças Office 365 na página <https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/>. Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
+Pode igualmente obter [licenças Office 365](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/). Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
 
 > [!primary]
 >
@@ -155,7 +155,7 @@ Agora que o seu serviço Hosted Exchange está configurado e funcional, pode imp
 
 Para ativar estas diferentes funções, selecione o serviço Hosted Exchange na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e escolha entre os separadores que aparecem a ação a efetuar.
 
-Para obter ajuda numa das funcionalidades, consulte a nossa documentação acessível a partir deste portal: <https://docs.ovh.com/pt/microsoft-collaborative-solutions/>.
+Para obter ajuda numa das funcionalidades, consulte a [nossa documentação](https://docs.ovh.com/pt/microsoft-collaborative-solutions/).
 
 ## Saiba mais
 

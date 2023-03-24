@@ -59,9 +59,9 @@ Wählen Sie einen Ihrer Domainnamen aus der Liste aus oder setzen Sie einen Hake
 
 ![E-Mail](images/exchange-wizard01.png){.thumbnail}
 
-#### Werden Sie ausschließlich OVHcloud Exchange mit dieser Domain verwenden?
+#### Werden Sie ausschließlich OVH Exchange mit dieser Domain verwenden?
 
-Die Frage "**Werden Sie ausschließlich das OVHcloud Exchange Angebot für diese Domain verwenden?**" bestimmt den Konfigurationstyp Ihrer Domain. 
+Die Frage "**Werden Sie ausschließlich das OVH Exchange Angebot für diese Domain verwenden?**" bestimmt den Konfigurationstyp Ihrer Domain. 
 
 - Wenn Sie ein Exchange Angebot allein oder zusammen mit anderen **E-Mail-Angeboten von OVHcloud** verwenden, kann die Konfiguration automatisch oder manuell erfolgen, indem Sie ausschließlich die E-Mail-Server von OVHcloud verwenden.
 - Wenn Sie Ihr Exchange Angebot zusätzlich zu einem E-Mail-Dienst **außerhalb des OVHcloud E-Mail Angebots** verwenden, werden Sie aufgefordert, die URL des Empfangsservers Ihres externen E-Mail-Dienstes unter der Rubrik `Relay-Server (SMTP)` anzugeben.

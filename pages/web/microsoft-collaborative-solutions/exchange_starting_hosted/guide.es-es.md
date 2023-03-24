@@ -133,7 +133,7 @@ La tabla mostrará las cuentas pendientes de configurar con el formato *@configu
 
 ### Utilizar las direcciones de correo
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección [https://www.ovhcloud.com/es-es/mail/](https://www.ovhcloud.com/es-es/mail/). Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVH sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/), en el apartado relativo a Outlook Web Application (OWA).
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVH sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/), en el apartado relativo a Outlook Web Application (OWA).
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
 
@@ -141,7 +141,7 @@ OVHcloud ofrece, desde el [área de cliente de OVHcloud](https://www.ovh.com/aut
 
 Para suscribirse, consulte nuestra página "[Obtener una licencia Outlook para Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2013_uso_y_contratacion_de_las_licencias_outlook_exchange_2013/)". 
 
-También puede consultar las licencias Office 365 en la página [https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/). Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+También puede consultar [las licencias Office 365](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/). Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 > [!primary]
 >

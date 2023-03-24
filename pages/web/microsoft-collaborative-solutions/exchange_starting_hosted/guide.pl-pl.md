@@ -133,9 +133,9 @@ Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@conf
 
 ### Korzystanie z kont e-mail
 
-Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia webmail **Outlook Web Application** (OWA). Znajdziesz go pod linkiem <https://www.ovhcloud.com/pl/mail/>. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z naszej dokumentacji dostępnej pod linkiem: <https://docs.ovh.com/pl/microsoft-collaborative-solutions/>.
+Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu OVHcloud udostępnia webmail **Outlook Web Application** (OWA). Znajdziesz go pod linkiem <https://www.ovhcloud.com/pl/mail/>. Aby się zalogować, wpisz dane identyfikacyjne przypisane do Twojego konta e-mail. Jeśli potrzebujesz pomocy w zakresie użytkowania OWA, skorzystaj z [naszej dokumentacji](https://docs.ovh.com/pl/microsoft-collaborative-solutions/).
 
-Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z naszej dokumentacji dostępnej tutaj: <https://docs.ovh.com/pl/microsoft-collaborative-solutions/>. Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
+Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z [naszej dokumentacji](https://docs.ovh.com/pl/microsoft-collaborative-solutions/). Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
 
 OVHcloud oferuje w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) licencje Outlook w opcji z kontem e-mail Exchange.
 
@@ -155,7 +155,7 @@ Po skonfigurowaniu i uruchomieniu usługi Hosted Exchange możesz wprowadzić w 
 
 Aby aktywować te różne funkcje, wybierz odpowiednią usługę Hosted Exchange w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie wybierz jedną z zakładek, które pozwolą Ci przeprowadzić tę operację.
 
-Jeśli potrzebujesz pomocy odnośnie którejś z funkcji, skorzystaj z naszej dokumentacji dostępnej tutaj: <https://docs.ovh.com/pl/microsoft-collaborative-solutions/>.
+Jeśli potrzebujesz pomocy odnośnie którejś z funkcji, skorzystaj z [naszej dokumentacji](https://docs.ovh.com/pl/microsoft-collaborative-solutions/).
 
 ## Sprawdź również
 
