@@ -75,10 +75,7 @@ Une autre solution pour accélérer la restauration d'une machine virtuelle est 
 
 Veeam Enterprise Plus vous permet de sauvegarder et de restaurer des snapshots de vos machines virtuelles. Cela vous assure une restauration rapide en cas d'incident sur votre solution VMware on OVHcloud.
 
-Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, 
-
-
-vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/storage/backup/veeam/veeam-backup-replication/).
+Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, veuillez-vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/storage/backup/veeam/veeam-backup-replication/).
 
 ### Longue durée et archivage (BETA)
 
