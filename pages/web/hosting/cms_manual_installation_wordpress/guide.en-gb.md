@@ -20,13 +20,14 @@ This tutorial will help you install WordPress CMS (Content Management System) ma
 > This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or the [WordPress support](https://wordpress.com/support/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
-
 > [!success]
 >
 > To install WordPress **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), please refer to our documentation on [installing a 1-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/).
 >
 > To manually **install another CMS** (Joomla!, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/).
 >
+
+**Find out how to install your WordPress CMS manually**
 
 ## Requirements
 

@@ -27,6 +27,8 @@ This tutorial will help you install Drupal CMS (Content Management System) manua
 > To manually **install another CMS** (WordPress, Joomla!, PrestaShop), please refer to our documentation on [installing a CMS manually](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/).
 >
 
+**Find out how to install your Drupal CMS manually**
+
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that contains at least one database
@@ -76,7 +78,7 @@ Enter the information requested for the database:
 
 ![Drupal installation step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-Having your database login details ready (if necessary, see **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial), click on `Let's go!`{.action} to continue.
+Having your database login details ready (if necessary, see **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial).
 
 - *Database type*: select your database type from the choices available.
 

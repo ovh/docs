@@ -72,7 +72,7 @@ Prenez connaissance des conditions d'utilisation, cochez la case `J'accepte les 
 
 ![PrestaShop installation step 3](images/Prestashop-install-licence-agreement-3.png){.thumbnail}
 
-#### 2.4 - Renseigner les informations de votre boutique en ligne
+#### 2.3 - Renseigner les informations de votre boutique en ligne
 
 PrestaShop vous demandera une série d'informations sur votre future boutique en ligne :
 
@@ -95,7 +95,7 @@ PrestaShop vous demandera une série d'informations sur votre future boutique en
 
 Vérifiez les informations saisies puis cliquez sur `Suivant`{.action}.
 
-#### 2.5 - Installer le contenu par défaut pour votre boutique
+#### 2.4 - Installer le contenu par défaut pour votre boutique
 
 PrestaShop vous propose d'installer du contenu et des modules pour votre futur site de E-commerce :
 
@@ -103,20 +103,15 @@ PrestaShop vous propose d'installer du contenu et des modules pour votre futur s
 
 Faites vos choix puis cliquez sur `Suivant`{.action}.
 
-#### 2.6 - Lier votre PrestaShop avec votre base de données OVHcloud
+#### 2.5 - Lier votre PrestaShop avec votre base de données OVHcloud
 
 ![PrestaShop installation step 6](images/Prestashop-install-db-config-6.png){.thumbnail}
+
+Munissez-vous des identifiants de votre base de données (au besoin, consultez **l'étape 1.4** du guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/)).
 
 Renseignez les informations demandées concernant la base de données :
 
 - *Adresse de la base de données* : renseignez le nom du serveur de votre base de données, présent dans l'e-mail d'installation ou dans votre espace client OVHcloud. 
-
-- *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-
-- *Identifiant* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
-Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations mentionnées dans **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
-
-- *Mot de passe* : vous l'avez vous-même défini lors de la création de votre base de données. Il est possible que vous l'ayez modifié entre temps.
 
 > [!primary]
 > 
@@ -124,6 +119,13 @@ Pour les bases de données créées sur un service Web Cloud Databases, référe
 >
 > - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `aa00000-XXX.eu.clouddb.ovh.net`, **«aa00000»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par le reste de la référence de votre service Web Cloud Databases.
 >
+
+- *Nom de la base de données* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+- *Identifiant* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
+Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations mentionnées dans **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+
+- *Mot de passe* : vous l'avez vous-même défini lors de la création de votre base de données. Il est possible que vous l'ayez modifié entre temps.
 
 - *Préfixe des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** de notre guide sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
 
@@ -140,7 +142,7 @@ Cliquez sur `Testez dès maintenant la connexion à votre base de données!`{.ac
 
 Si le message « Votre base de données est connectée » apparaît, cliquez sur `Suivant`{.action}. Sinon, vérifiez les paramètres que vous avez saisis jusqu'à ce que la connexion fonctionne. Si besoin, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-#### 2.7 - Terminer l'installation de PrestaShop
+#### 2.6 - Terminer l'installation de PrestaShop
 
 La dernière étape correspond à un résumé de l'installation que vous venez de réaliser :
 

@@ -27,6 +27,8 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 > Pour installer **manuellement un autre CMS** (WordPress, Drupal, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/ca/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 >
 
+**Découvrez comment installer manuellement votre CMS Joomla!**
+
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) qui contient au moins une base de données.
