@@ -55,7 +55,7 @@ Here you can change the billing method for a node or delete a node by clicking o
 
 > [!primary]
 >
-> You can only switch billing method from hourly to monthly billing, not the opposite. 
+> You can only switch from an hourly billing method to a monthly billing method, not vice versa. 
 
 ### Adding nodes to an existing node pool
 
