@@ -3,10 +3,10 @@ title: 'Securing your OVHcloud account with two-factor authentication'
 slug: secure-account-with-2FA
 excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication'
 section: Security
-updated: 2022-07-20
+updated: 2023-03-27
 ---
 
-**Last updated 9th February 2023**
+**Last updated 27th March 2023**
 
 ## Objective
 
@@ -123,7 +123,7 @@ Before contacting us, you must gather the following documents:
 |Private individual|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder<br><br>- One proof of address corresponding to the one registered in the OVHcloud account, less than two months old<br>**If, following a move, you have not updated your address in your OVHcloud Control Panel, you will need to provide:**<br>- A proof of address at the old address<br>- A proof of address at the new address, less than two months old<br>If you are now living with a third party, you will need to provide:<br>- A proof of address in the name of the person hosting you, less than two months old<br>- A certificate of accommodation signed by the person hosting you|
 |Company|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.<br><br>- One proof of address for the company, corresponding to the one registered in the OVHcloud account, less than two months old. |
 
-Once you have gathered your supporting documents, contact our OVHcloud support teams by calling +65 (3) 1638340. 
+Once you have gathered your supporting documents, contact our OVHcloud support teams by calling +65 6962 8979. 
 
 > [!warning]
 >
