@@ -1,5 +1,5 @@
 ---
-title: RACI pour Block Storage Public Cloud
+title: Public Cloud Block Storage - Partage des responsabilités
 slug: raci-block-storage-public-cloud
 section: Informations générales
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du Block Storage Public Cloud"

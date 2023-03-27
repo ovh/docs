@@ -1,5 +1,5 @@
 ---
-title: Hosted Exchange Responsibility model
+title: Hosted Exchange - Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: Getting started with Exchange
