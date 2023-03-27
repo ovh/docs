@@ -5,10 +5,10 @@ slug: kubernetes-plugins-software-versions-reserved-resources
 section: Technical resources
 routes:
     canonical: 'https://docs.ovh.com/gb/en/kubernetes/kubernetes-plugins-software-versions-reserved-resources/'
-updated: 2022-12-21
+updated: 2023-03-24
 ---
 
-**Last updated December 21<sup>st</sup>, 2022.**
+**Last updated March 24<sup>th</sup>, 2023.**
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
 
@@ -58,7 +58,7 @@ The versions installed depends on the Kubernetes version:
 * `1.22`: calico v3.22.5, flannel v0.17.0 (deprecated)
 * `1.23`: calico v3.22.5, flannel v0.17.0
 * `1.24`: calico v3.23.5, flannel v0.17.0
-* `1.25`: calico v3.24.5, flannel v0.20.1
+* `1.25`: calico v3.24.5, flannel v0.17.0
 
 ## CSI (Container Storage Interface)
 
