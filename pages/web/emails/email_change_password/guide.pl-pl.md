@@ -46,26 +46,26 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 >>
 >> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem [Sprawdź ofertę MXplan](#whichmxplan).<br>
 >> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `E-maile`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. <br>
->> Kliknij przycisk, <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień hasło`{.action}.<br><br>
+>> Kliknij przycisk, <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień hasło`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **E-maile MXplan (nowa wersja)**
 >>
 >> Jeśli nie wiesz, jakiego typu jest Twoja oferta MXplan, zapoznaj się z naszym punktem [Sprawdź ofertę MXplan](#whichmxplan).<br>
 >> Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę MX Plan. Przejdź do zakładki `E-maile`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. <br>
->> Kliknij przycisk, po czym <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> kliknij `Zmień`{.action}.<br><br>
+>> Kliknij przycisk, po czym <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> kliknij `Zmień`{.action}.<br><br>
 >>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
 >> Kliknij `E-mail Pro`{.action}, po czym wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
->> Kliknij przycisk, <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień`{.action}.<br><br>
+>> Kliknij przycisk, <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień`{.action}.<br><br>
 >>![email](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Kliknij `Microsoft`{.action} / `Exchange`{.action}, następnie wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail.<br>
->> Kliknij przycisk, <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień`{.action}.<br><br>
+>> Kliknij przycisk, <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a następnie `Zmień`{.action}.<br><br>
 >>![email](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 

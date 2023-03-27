@@ -44,13 +44,13 @@ Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomana
 > **Emails MXplan**
 >>
 >> Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Abra la pestaña `Correo electrónico`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes. <br>
->> Haga clic en el botón <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
+>> Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png) {.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Haga clic en `Microsoft`{.action} / `Exchange`{.action} y seleccione el nombre de la plataforma correspondiente. Abra la pestaña `Cuentas de correo`{.action}. Se abrirá una ventana en la que se mostrarán las cuentas de correo existentes.<br>
->> Haga clic en el botón <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
+>> Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> y seleccione `Editar`{.action}.<br><br>
 >>![Correo electrónico](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 
