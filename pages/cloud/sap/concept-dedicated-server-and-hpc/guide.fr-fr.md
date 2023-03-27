@@ -114,7 +114,7 @@ Une réplication n-tier est structurée de la manière suivrante :
 
 SAP HANA1<sub>(OVHcloud localisation 1)</sub> -> SAP HANA2<sub>(OVHcloud localisation 1)</sub> -> SAP HANA3<sub>(OVHcloud localisation 2)</sub>. 
 
-Pour connaître les étapes de configuration de la réplication, veuillez-vous référer à la documentation sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ca6f4c62c45b4c85a109c7faf62881fc.html?locale=en-US).
+Pour connaître les étapes de configuration de la réplication, veuillez vous référer à la documentation sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ca6f4c62c45b4c85a109c7faf62881fc.html?locale=en-US).
 
 #### Serveurs applicatifs SAP
 
