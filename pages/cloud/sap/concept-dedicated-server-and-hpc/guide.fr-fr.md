@@ -120,7 +120,7 @@ Pour connaître les étapes de configuration de la réplication, veuillez-vous r
 
 Afin de sécuriser votre infrastructure en cas d'incident majeur sur votre localisation OVHcloud principale, nous vous conseillons d'activer la fonctionnalité appelée Zerto pour votre solution VMware on OVHcloud, vous permettant de répliquer vos machines virtuelles sur un autre service VMware on OVHcloud hébergé sur une autre localisation OVHcloud. Avec cette fonctionnalité, vous sécurisez vos serveurs applicatifs SAP sur une autre localisation OVHcloud avec une réplication synchrone. Vous réduisez ainsi le temps de rétablissement du service et la perte de données maximale admissible si vous basculez sur votre localisation secondaire OVHcloud.
 
-Pour découvrir les étapes d'activation de cette fonctionnalité, veuillez-vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/).
+Pour découvrir les étapes d'activation de cette fonctionnalité, veuillez vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/).
 
 > [!warning]
 > Si vous déclenchez une bascule sur votre localisation OVHcloud secondaire à travers Zerto, la base de données SAP HANA doit également basculer, afin d'assurer la performance entre vos serveurs applicatifs SAP et la base de données SAP HANA.
