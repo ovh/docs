@@ -1,258 +1,143 @@
 ---
-title: 'Installing Joomla! manually'
-excerpt: How to install Joomla! manually
+title: "Tutoriel - Installing Joomla! manually"
+excerpt: "Find out how to install Joomla! manually"
 slug: cms_manually_install_joomla
 section: CMS
 order: 05
-updated: 2022-12-01
+updated: 2023-03-27
 ---
 
+**Last updated 27th March 2023**
 
-## Part 1: preparing for installation
+## Objective
 
-## Necessary tools
-To install the Joomla! platform on your shared hosting package, we advise your to get an FTP program such as  FileZilla (it's free).
+This tutorial will help you install Joomla! CMS (Content Management System) manually in just a few steps.
 
-## Necessary credentials
-Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVHcloud customer account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) if necessary.
+ [!warning]
+>
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or the [Joomla! support](https://www.joomla.org/){.external} if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
+>
 
+> [!success]
+>
+> To install Joomla! **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), please refer to our documentation on [installing a 1-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/).
+>
+> To manually **install another CMS** (WordPress, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/).
+>
 
-- Get your FTP ID and password so you can log in to your hosting package. 
-There is an [FTP credentials guide](../modify-ftp-user-password/)
+## Requirements
 
-- You also need to have your SQL database ID and password so you can log in to the database.
-There is a guide showing you [how to get your SQL credentials](../creating-database/)
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that contains at least one database
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
+## Instructions
 
-![joomla](images/3141.png){.thumbnail}
+### Step 1 - Prepare for the installation <a name="step1"></a>
 
+To install the **Joomla!** CMS on your [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), you will need to make some preparations.
 
-## Part 2: get source files
+Follow **all of steps** described in our tutorial on [installing a CMS manually](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) before continuing with step 2 below.
 
-- Go to the [Joomla!](https://downloads.joomla.org/) website to download the CMS. 
+### Step 2 - Finalise manual installation <a name="step2"></a>
 
-There should be a link that lets you download the latest stable version of the CMS
+> [!success]
+>
+> Before you continue with the installation, clear your web browser cache to avoid any errors.
+>
 
+#### 2.1 - Access your Joomla! website via your browser
 
-The file that you download will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
+Enter your domain name into the address bar of your web browser.
 
-![joomla](images/3142.png){.thumbnail}
+If the Joomla! source files have been correctly placed in your root folder, the Joomla! page for selecting the language appears:
 
+![Joomla installation step 1](images/Joomla-install-select-language-1.png){.thumbnail}
 
-## Part 3: Upload your files to your hosting package via FTP
+Select the language, enter the name of your website, and click `Setup Login Data`{.action}.
 
-## - Unzip the file folder
-Open the folder that contains the zipped folder you downloaded. 
+#### 2.2 - Configure your Joomla! connection data!
 
-Right-click on the folder, then select "Extract all...".
+Set access to your Joomla! back office :
 
-Select a destination in order to extract your files to a new folder.
+![Joomla installation step 2](images/Joomla-install-define-admin-2.png){.thumbnail}
 
+> [!primary]
+>
+> “Super User” refers to the person who manages the CMS.
 
-There are a number of tutorials and types of decompression software available online to help with this.
-Check them out if you are stuck at this stage.
+- *Enter the real name of your Super User*: enter your real name.
+- *Set the username for your Super User account*: Choose a username that will allow you to log in to your Joomla! admin panel.
+- *Set password for your Super User account*: choose a password with a minimum of **12 characters**.
+- *Enter the email address of the website Super User*: please enter a valid email address. This will be used to receive notifications sent by Joomla!
 
+Check the information entered, then click on `Setup Database Connection`{.action}.
 
-The target folder will be called "Joomla!"
+#### 2.3 - Link your database with your Joomla!
 
-![joomla](images/3143.png){.thumbnail}
+Enter the information requested for the database:
 
-## Log on to the web hosting package via FTP
-To upload the Joomla! files to your hosting package, you first have to log on. 
+![Joomla installation step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
 
-Follow this guide on [connecting to a hosting package in FTP](../log-in-to-storage-ftp-web-hosting/).
+Having your database login details ready (if necessary, see **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial), click on `Let's go!`{.action} to continue.
 
-![joomla](images/3144.png){.thumbnail}
+- *Select the database type*: select your database type from the types available for Joomla!. If you are using an OVHcloud shared database, you can leave the **MySQLi** value by default.
 
-## Transfer files via FTP
-Follow these steps to upload your files using FTP.
+- *Enter the host name, usually "localhost" or a name provided by your host*: Enter the name of your database server, in the installation email or in your OVHcloud Control Panel.
 
-## Step 1
-Once you are logged in to FileZilla. 
+> [!primary]
+> 
+> - The server name of a database included with your web hosting plan usually has this format: `NameOfYourDatabase.mysql.db`. 
+>
+> - The server name of a Web Cloud Databases database starts with your OVHcloud NIC handle and is in the following format: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where **"XXX"** is to be replaced by the reference of your Web Cloud Databases service.
+>
 
-In the "Local site" section, which refers to the list of files on your computer, open the unzipped file entitled "Joomla!" where your CMS files will be located. 
+- *Either a username you created or a username provided by your host*: It is identical to the database name if you are using a database included with your web hosting plan.
+For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial.
 
-In the "Remote site" section, which refers to your OVHcloud shared hosting package, open the "www" folder. This is the folder that you need to upload your CMS files to. 
+- *Either a password you created or a password provided by your host*: You defined it yourself when you created your database. You may have modified it in the meantime.
 
-If this folder does not exist you can create it.
+- *Enter the database name*: this name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). It is identical to the database username if you are using a database included with your web hosting plan.
 
+- *Enter a table prefix or use the randomly generated one*: if you are installing with a brand new database, enter your preferred “prefix”. If you are using a database that has already been used by another website, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) to avoid entering a table “prefix” that has already been used in your database.
 
-Your files must be uploaded to the "www" folder or you will not be able to access the installation procedure from your domain name.
+- **Connection Encryption**: leave the value **Default**.
 
-![joomla](images/3145.png){.thumbnail}
+Click `Install Joomla`{.action}.
 
-## Step 2
-Once these folders are open:
+The following message appears:
 
-In the "Local site" section, find all the files you need to install the Drupal CMS. 
+![Joomla installation step 3-1](images/Joomla-install-db-connect-3-1.png){.thumbnail}
 
-To select them all just click CTRL+A.
+Since you are using a database that exists outside of a local hosting plan, you will need to delete the *token* generated randomly when you set up your Joomla!.
 
-Then drag and drop the files in to the "Remote site" section in the "www" folder. 
+This file to be deleted is located in your [FTP storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/).
 
-It is very likely that the "www" folder is not empty. You do not have to remove the files that are in it. We will go back to this point later on in the guide.
+Once you have logged in, go to the **installation** folder for your Joomla! then delete only the *token* indicated by the alert message. It is present as a **.txt** file.
 
-![joomla](images/3146.png){.thumbnail}
+Then go back to your web browser and click again on `Install Joomla`{.action}.
 
-## Step 3
-The files have been transferred. 
+### 2.4 - Complete the installation
 
-All the files should be uploaded to the remote FTP server. This could take a few minutes. 
+Once the installation is complete, the following page appears:
 
-Once it is complete, make sure that the files and folders have transferred correctly.
+![Joomla installation step 4](images/Joomla-install-ending-4.png){.thumbnail}
 
-This operation is the final step in uploading files via FTP.
+Installation is complete, but you can add additional languages to your CMS if you need to.
 
-![joomla](images/3147.png){.thumbnail}
+>[!success]
+>
+> Congratulations, your Joomla! is ready for use and administration.
+>
 
+## Go further <a name="go-further"></a>
 
-## Part 4: Linking to the database
+[Joomla! official website](https://joomla.org){.external}
 
-- Before continuing with the installation, clear your browser's cache, to prevent any errors. 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-In order to link your database to Joomla!, you have to follow the CMS install steps:
-
-## Step 1
-Go to your domain name. The installation wizard will run. 
-
-First, enter the Joomla! configuration settings:
-
-Select Language: select the language.
-
-Website name: enter the website name, this could have an impact on your ranking. 
-
-blue]Description: describe the website, this could have an impact on your ranking. 
-
-Site offline: lets you block public access to the website.
-
-Email: choose the ID to use to access the administration console. 
-
-Password: enter the password for accessing the administrative part of the website.
-
-Confirm the password: confirm the password that you entered. 
-
-Click "Next"
-
-![joomla](images/3148.png){.thumbnail}
-
-## Step 2
-Get your database credentials (see the beginning of this guide)
-
-Enter the information requested concerning the database
-
-Database type: select MySQL database.
-
-Server name: enter your database server's name, as stated in the setup email or in your customer account. 
-
-Username: identical to the database name, you can find it in the database installation email. 
-
-Password: you were sent it by email when you created the database - it may have changed since then. 
-
-Database name: chosen when you created it in the customer account.
-
-Table prefix: useful for installing Joomla! lots of times on the same database. In this case, you have to enter a different prefix each time your install. 
-
-Previous installation: if there are tables in the database, those whose prefix is the same as those entered when it was installed will be renamed with the prefix "bak_".
-
-Click "Next" to confirm the information requested.
-
-![joomla](images/3149.png){.thumbnail}
-
-
-## Completion
-
-## Completing the installation steps
-In order to complete the Joomla! installation take the following steps.
-
-## Step 1
-A summary of selected settings will appear. 
-
-Two pieces of information are requested:
-
-
-- Type of website:
-
-
-Select "Simple homepage in English".
-
-
-- Sending configuration 
-
-
-Indicate whether you want to receive the installation information by email, such as the access password to the administration section, defined above.
-
-Click "Install" to continue.
-
-![joomla](images/3150.png){.thumbnail}
-
-## Step 2
-Wait a few minutes for it to install.
-
-![joomla](images/3151.png){.thumbnail}
-
-## Step 3
-For security reasons Joomla! please delete the installation directory.
-
-To do this just click "delete the installation directory".
-
-![joomla](images/3152.png){.thumbnail}
-
-## Step 4
-You will get a message confirming that the directory has been deleted. 
-
-You can now connect to the Joomla! administration section. Log in in the window that opens, where you can also view the homepage set up by Joomla!.
-
-![joomla](images/3153.png){.thumbnail}
-
-## Joomla! administration section.
-For an overview of the Joomla! admin panel, click on the image below.
-
-![joomla](images/3154.png){.thumbnail}
-
-
-## Useful information
-OVHcloud support is not authorised to answer questions about Joomla! configuration.
-
-You can also view the forums dedicated to the Joomla! solution.
-
-
-- Here is the link to the [Joomla!](https://forum.joomla.org/) support forum.
-
-
-
-## Typical error: site under construction
-You have set up your files on FTP, however the "site under construction" page is still displayed. 
-
-When your hosting package was installed, OVHcloud set up a "waiting" page while you were uploading files to your site. 
-
-If you only upload your own files to the "www" folder and do not delete the OVHcloud content first, then you may encounter this problem.
-
-To fix this issue, you will need to remove or rename the "index.html" file that was created by OVHcloud.
-
-It may be useful to simply just rename the file so that you can re-enable it at any time, and use it as your own "waiting" page.
-
-Something else to note: Your website's files must be uploaded to the "www" folder in order for them to display your website.
-
-![joomla](images/3155.png){.thumbnail}
-
-## Typical error: PHP version
-This error is to do with your server's PHP version. 
-
-The cause is simple: the latest version of PHP is not enabled. 
-
-A guide is available detailing how to modify the PHP version on your hosting package:[Modify hosting package PHP version]({legacy}1207)
-
-![joomla](images/3156.png){.thumbnail}
-
-## Typical error: Magic Quotes
-A variable which has not been properly defined is preventing Joomla! from installing. 
-
-Magic Quotes must be Off and, therefore, set to 0 in your configuration file. 
-
-On 2014 solutions, if PHP-FPM is enabled, the Magic Quote variable is disabled by default. For old web hosting packages, you can disable this variable in the .htaccess file. 
-
-There is a guide available on changing PHP variable on the 2014 hosting packages:[Modify web hosting package's PHP version]({legacy}1207)
-
-![joomla](images/3157.png){.thumbnail}
-
+Join our community of users on <https://community.ovh.com/en/>. 

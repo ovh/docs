@@ -52,7 +52,7 @@ Follow **all of steps** described in our tutorial on [installing a CMS manually]
 
 Enter your domain name into the address bar of your web browser.
 
-If the Drupal source files have been correctly placed in your root folder, the WordPress page for selecting the language appears:
+If the Drupal source files have been correctly placed in your root folder, the Drupal page for selecting the language appears:
 
 ![Drupal installation step 1](images/Drupal-install-language-1.png){.thumbnail}
 
@@ -147,7 +147,7 @@ If everything went well, the following page appears:
 
 ## Go further <a name="go-further"></a>
 
-[Site officiel Drupal](https://www.drupal.org/){.external}
+[Drupal official website](https://www.drupal.org/){.external}
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
