@@ -60,7 +60,7 @@ La branche d'API peut être sélectionnée à l'aide du menu déroulant en haut 
 
 ![API](images/api-branches.png){.thumbnail}
 
-#### Selection de la section d'API
+#### Sélection de la section d'API
 
 Après avoir choisi la branche d'API, vous pouvez naviguer dans les différentes sections de la branche sélectionnée. Par défaut, la première section dans l'ordre alphabétique est sélectionnée.
 Les sections sont disponibles dans le menu déroulant à droite du menu permettant de choisir la branche. Il est possible de filtrer la liste des sections en commençant à taper le nom de la section recherchée.
