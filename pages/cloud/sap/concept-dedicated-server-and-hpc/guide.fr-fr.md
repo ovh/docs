@@ -19,16 +19,16 @@ Ce concept vous permet de construire une architecture basée sur une base de don
 | --- | --- |
 | Objectif #1 | Construire une infrastructure SAP aux coûts maîtrisés, basée sur la solution VMware on OVHcloud pour les serveurs applicatifs et des serveurs dédiés pour héberger les bases de données SAP HANA. |
 | Objectif #2 | Aucun besoin de conformité avec les réglementations SecNumCloud qualification ou PCI DSS certification. |
-| Objectif #3 | Une perte de données maximale admissible de 15 minutes |
+| Objectif #3 | Une perte de données maximale admissible de 15 minutes. |
 | Objectif #4 (optionnel) | Une infrastructure SAP disponible sur une seconde localisation OVHcloud qui peut être activée dans le cas d'un incident majeur affectant la localisation OVHcloud principale. Cette seconde localisation OVHcloud propose une perte de données maximale admissible proche de zéro. |
 
 ## Éléments du concept
 
 ### Connectivité réseau
 
-Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez vous référer à la [documentation OVHcloud Connect](https://www.ovhcloud.com/fr/network/ovhcloud-connect/).
+Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez-vous référer à la [documentation OVHcloud Connect](https://www.ovhcloud.com/fr/network/ovhcloud-connect/).
 
-Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX Edge. Pour connaître comment configurer une passerelle VPN NSX Edge avec OVHcloud, veuillez vous référer à [notre documentation](https://docs.ovh.com/fr/private-cloud/configurer-un-vpn-via-une-gateway-edge/).
+Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX Edge. Pour connaître les étapes de configuration d'une passerelle VPN NSX Edge avec OVHcloud, veuillez vous référer à [notre documentation](https://docs.ovh.com/fr/private-cloud/configurer-un-vpn-via-une-gateway-edge/).
 
 Un prérequis pour mettre à jour vos serveurs et pour l'accès du support SAP est de configurer une Additional IP. Un sous-réseau d'adresses IP publiques vous sera attribué et une adresse IP publique de ce sous-réseau sera utilisée comme passerelle sur votre NSX Edge. Retrouvez plus d'informations dans la [documentation Additional IP](https://docs.ovh.com/fr/publiccloud/network-services/buy-additional-ip/).
 
@@ -48,7 +48,7 @@ Cette architecture vous prémunit d'une coupure de service causée par un incide
 
 Les serveurs applicatifs SAP sont hébergés sur la solution VMware on OVHcloud. Nous conseillons de prendre connaissance de la [SAP Note 2161991](https://launchpad.support.sap.com/#/notes/2161991), particulièrement les chapitres 2 et 3, ainsi que la [SAP Note 2015392](https://launchpad.support.sap.com/#/notes/2015392) pour appliquer une configuration conforme entre SAP et les machine virtuelles.
 
-La fonctionnalité Fault Tolerance fournie par VMware garantie la disponibilité de vos serveurs applicatifs SAP en cas de défauts sur l'hôte ESXi. Votre machine virtuelle est automatiquement activée sur un autre membre du cluster VMware. Nous conseillons de l'activier pour vos machines virtuelles qui hébergent le SAP Central Services (SCS), si vous ne gérez pas un cluster SAP pour ce service d'une autre manière. Le Fault Tolerance peut également être activé sur vos serveurs applicatifs SAP hébergeant un service critique.
+La fonctionnalité Fault Tolerance fournie par VMware garantie la disponibilité de vos serveurs applicatifs SAP en cas de défauts sur l'hôte ESXi. Votre machine virtuelle est automatiquement activée sur un autre membre du cluster VMware. Nous conseillons de l'activer pour vos machines virtuelles qui hébergent le SAP Central Services (SCS), si vous ne gérez pas un cluster SAP pour ce service d'une autre manière. Le Fault Tolerance peut également être activé sur vos serveurs applicatifs SAP hébergeant un service critique.
 Cependant, pour être en capacité d'activer le Fault Tolerance, la machine virtuelle ne peut excéder 8 vCPU et 128 GB de mémoire.
 
 Pour les serveurs applicatifs SAP n'hébergeant pas de service critique, nous recommandons de vérifier que la fonctionnalité vSphere HA est activée sur votre cluster VMware. Cette fonctionnalité surveille la santé de chaque hôte ESXi dans le cluster et redémarre automatiquement les machines virtuelles hébergées sur l'hôte ESXi affecté.
@@ -75,7 +75,7 @@ Une autre solution pour accélérer la restauration d'une machine virtuelle est 
 
 Veeam Enterprise Plus vous permet de sauvegarder et de restaurer des snapshots de vos machines virtuelles. Cela vous assure une restauration rapide en cas d'incident sur votre solution VMware on OVHcloud.
 
-Pour en savoir plus sur comment installer un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, veuillez vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/storage/backup/veeam/veeam-backup-replication/).
+Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, veuillez-vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/storage/backup/veeam/veeam-backup-replication/).
 
 ### Longue durée et archivage (BETA)
 
@@ -103,10 +103,10 @@ Comme avec la localisation OVHcloud primaire, nous recommandons d'utiliser OVHcl
 
 Le système de réplication SAP HANA appelé SAP HSR est utilisé pour répliquer les données et la configuration de la localisation OVHcloud 1 (localisation OVHcloud principale) vers votre localisation OVHcloud 2 (localisation OVHcloud secondaire). Cette réplication vous permet de sécuriser vos données sur une autre base de données SAP HANA et ainsi réduire la perte de données maximale admissible.
 
-Pour configurer une réplication SAP HANA, veuillez vous référer à la documentation SAP officielle qui est disponible sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). Cependant, dans le contexte de ce concept avec deux localisations OVHcloud, nous vous conseillons d'activer la compression pour les données et les logs et d'utiliser le mode de réplication ASYNC. Plus d'information sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/92447e0a105c4facad3553b28aaec318.html).
+Pour configurer une réplication SAP HANA, veuillez vous référer à la documentation SAP officielle disponible sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). Cependant, dans le contexte de ce concept avec deux localisations OVHcloud, nous vous conseillons d'activer la compression pour les données et les logs et d'utiliser le mode de réplication ASYNC. Plus d'information sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/92447e0a105c4facad3553b28aaec318.html).
 
 > [!warning]
-> Si vous déclenchez une bascule vers votre autre localisation OVHcloud, vous devriez basculer les serveurs applicatifs SAP également, afin de garantir la performance entre vos serveurs applicatifs SAP et votre base de données SAP HANA.
+> Si vous déclenchez une bascule vers votre autre localisation OVHcloud, vous devriez également basculer les serveurs applicatifs SAP afin de garantir la performance entre vos serveurs applicatifs SAP et votre base de données SAP HANA.
 
 Il est également possible d'ajouter une autre base de données SAP HANA sur la localisation OVHcloud principale sur un second serveur dédié et ainsi réduire la perte de données maximale admissible et le temps de rétablissement du service en cas d'incident matériel sur votre localisation OVHcloud principale.
 
@@ -114,13 +114,13 @@ Une réplication n-tier est structurée de la manière suivrante :
 
 SAP HANA1<sub>(OVHcloud localisation 1)</sub> -> SAP HANA2<sub>(OVHcloud localisation 1)</sub> -> SAP HANA3<sub>(OVHcloud localisation 2)</sub>. 
 
-Pour connaître comment configurer la réplication, veuillez vous référer à la documentation sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ca6f4c62c45b4c85a109c7faf62881fc.html?locale=en-US).
+Pour connaître les étapes de configuration de la réplication, veuillez vous référer à la documentation sur [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ca6f4c62c45b4c85a109c7faf62881fc.html?locale=en-US).
 
 #### Serveurs applicatifs SAP
 
 Afin de sécuriser votre infrastructure en cas d'incident majeur sur votre localisation OVHcloud principale, nous vous conseillons d'activer la fonctionnalité appelée Zerto pour votre solution VMware on OVHcloud, vous permettant de répliquer vos machines virtuelles sur un autre service VMware on OVHcloud hébergé sur une autre localisation OVHcloud. Avec cette fonctionnalité, vous sécurisez vos serveurs applicatifs SAP sur une autre localisation OVHcloud avec une réplication synchrone. Vous réduisez ainsi le temps de rétablissement du service et la perte de données maximale admissible si vous basculez sur votre localisation secondaire OVHcloud.
 
-Pour découvrir comment activer cette fonctionnalité, veuillez vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/).
+Pour découvrir les étapes d'activation de cette fonctionnalité, veuillez vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/).
 
 > [!warning]
 > Si vous déclenchez une bascule sur votre localisation OVHcloud secondaire à travers Zerto, la base de données SAP HANA doit également basculer, afin d'assurer la performance entre vos serveurs applicatifs SAP et la base de données SAP HANA.

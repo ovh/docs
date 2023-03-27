@@ -174,8 +174,8 @@ Trois onglets sont disponibles dans cette vue :
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Gestion d'un nom de domaine via les APIs OVHcloud](https://docs.ovh.com/fr/domains/api/)
+[Gestion d'un nom de domaine via les API OVHcloud](https://docs.ovh.com/fr/domains/api/)
 
-[Comment gérer le compte d'un client OVHcloud via les APIs](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guide en anglais)
+[Comment gérer le compte d'un client OVHcloud via les API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guide en anglais)
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
