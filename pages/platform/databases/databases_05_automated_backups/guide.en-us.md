@@ -4,10 +4,10 @@ slug: backups
 excerpt: Discover the automated backup methods for each engine
 section: General guides
 order: 17
-updated: 2023-03-22
+updated: 2023-03-27
 ---
 
-**Last updated March 22nd, 2023**
+**Last updated March 27th, 2023**
 
 ## Objective
 

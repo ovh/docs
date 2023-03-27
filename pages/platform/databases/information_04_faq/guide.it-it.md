@@ -275,7 +275,7 @@ In case of a failover, your cluster will be in degraded mode:
 
 ### How do you perform backups ?
 
-Backups are performed differently according to the DBMS. See [Automated backups](https://docs.ovh.com/it/it/publiccloud/databases/backups/) for more details.
+Backups are performed differently according to the DBMS. See [Automated backups](https://docs.ovh.com/it/publiccloud/databases/backups/) for more details.
 
 ### Can I perform manual backups ?
 
