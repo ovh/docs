@@ -644,8 +644,8 @@ Avant de continuer, vous pouvez vérifier visuellement, dans le plug-in graphiqu
 
 > [!warning]
 >
-> Attention, ce dernier appel va supprimer l'option Veeam du vDC. Cela entrainera donc la destruction de tous les backup jobs / points de rétention qui seraient encore présents sur l'ancien vDC.<br>
-> N'hésitez donc pas d'abord à utiliser l'appel API « checkBackupJobs » (mentionné dans l'étape n°3 ci-dessus) à plusieurs reprises afin de vous assurer de disposer des backups sur le nouveau vDC.<br>
+> Attention, ce dernier appel va supprimer l'option Veeam du vDC. Cela entraînera donc la destruction de tous les backup jobs / points de rétention qui seraient encore présents sur l'ancien vDC.<br>
+> N'hésitez donc pas à utiliser d'abord l'appel API « checkBackupJobs » (mentionné dans l'étape n°3 ci-dessus) à plusieurs reprises afin de vous assurer de disposer des backups sur le nouveau vDC.<br>
 > Si vous avez le moindre doute, contactez le support OVHcloud afin de contrôler les backup jobs.
 >
 
