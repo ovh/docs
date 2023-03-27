@@ -4,10 +4,10 @@ slug: api-console-exploration
 excerpt: 'Découvrez comment explorer les API OVHcloud'
 section: 'Premiers pas'
 order: 02
-updated: 2023-03-24
+updated: 2023-03-27
 ---
 
-**Dernière mise à jour le 24/03/2023**
+**Dernière mise à jour le 27/03/2023**
 
 ## Objectif
 
