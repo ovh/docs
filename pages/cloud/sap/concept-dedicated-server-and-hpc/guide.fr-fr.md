@@ -34,7 +34,7 @@ Un prérequis pour mettre à jour vos serveurs et pour l'accès du support SAP e
 
 ### Base de données SAP HANA
 
-La base de données SAP HANA est hébergée sur un serveur dédié de la gamme serveur dédié SAP HANA on Bare Metal (références HGR-SAP-1/2/3). Pour découvrir comment déployer une base de données SAP HANA sur un serveur dédié OVHcloud, veuillez-vous référer à [notre documentation](https://docs.ovh.com/fr/sap/sap-installation-sap-hana-sles/).
+La base de données SAP HANA est hébergée sur un serveur dédié de la gamme serveur dédié SAP HANA on Bare Metal (références HGR-SAP-1/2/3). Pour découvrir comment déployer une base de données SAP HANA sur un serveur dédié OVHcloud, veuillez vous référer à [notre documentation](https://docs.ovh.com/fr/sap/sap-installation-sap-hana-sles/).
 
 Pour garantir la restauration de la configuration de SAP HANA (fichiers INI), nous suggérons d'appliquer la valeur `true` pour le paramètre `include_configuration_backup`. Ce paramètre active la sauvegarde de tous les paramètres stockés dans les fichiers INI durant la sauvegarde des données de la base de données SAP HANA.
 
