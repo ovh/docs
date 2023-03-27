@@ -4,14 +4,14 @@ slug: volume-backup
 excerpt: "Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta"
 section: Przestrzeń dyskowa
 order: 3
-updated: 2023-03-21
+updated: 2023-03-27
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 21-03-2023**
+**Ostatnia aktualizacja z dnia 27-03-2023**
 
 ## Wprowadzenie
 
@@ -51,15 +51,15 @@ Jeśli wybrałeś opcję Block Storage, należy podać odpowiedni wolumen. W prz
 
 Wybierz rodzaj kopii zapasowej, którą chcesz utworzyć: **Snapshot wolumenu** lub **Backup** wolumenu.
 
-- Wybierając **wolumen Snapshot**, będziesz mógł zmienić nazwę wolumenu Snapshot, który chcesz utworzyć przed zatwierdzeniem za pomocą przycisku `Utwórz kopię zapasową`{.action}.
-- Wybierając **Wolumen Backup** zostaniesz poproszony o odłączenie wolumenu od instancji, aby móc kontynuować. Przed zatwierdzeniem operacji za pomocą przycisku `Utwórz kopię zapasową`{.action}, będziesz mógł zmienić nazwę utworzonego wolumenu.
+- Wybierając **Volume Snapshot**, będziesz mógł zmienić nazwę wolumenu Snapshot, który chcesz utworzyć przed zatwierdzeniem za pomocą przycisku `Utwórz kopię zapasową`{.action}.
+- Wybierając **Volume Backup** zostaniesz poproszony o odłączenie wolumenu od instancji, aby móc kontynuować. Przed zatwierdzeniem operacji za pomocą przycisku `Utwórz kopię zapasową`{.action}, będziesz mógł zmienić nazwę utworzonego wolumenu.
 
 ![Backup lub Snapshot - tworzenie](images/volumebackup02.png){.thumbnail}
 
 Czas tworzenia kopii zapasowej, niezależnie od tego, czy jest to wolumen Snapshot, czy Backup Wolumenu, może zająć kilka godzin, w zależności od ilości danych zapisanych na woluminie, wykorzystania zasobów instancji do wolumenu Snapshot oraz innych czynników specyficznych dla hosta.
 
 > [!primary]
-
+>
 > **Dobre praktyki:**
 >
 > - wykonuj kopie zapasowe wolumenu poza godzinami produkcji;
@@ -72,7 +72,7 @@ Czas tworzenia kopii zapasowej, niezależnie od tego, czy jest to wolumen Snapsh
 
 Snapshot wolumenu lub Backup wolumen to klon całego dysku. Będzie on miał maksymalny rozmiar oryginalnego wolumenu, bez względu na rzeczywistą alokację przestrzeni dyskowej.
 
-Listę kopii zapasowych wolumenu Snapshot znajdziesz w sekcji `Tom Snapshot`{.action} na pasku po lewej stronie.
+Listę kopii zapasowych wolumenu Snapshot znajdziesz w sekcji `Volume Snapshot`{.action} na pasku po lewej stronie.
 Po utworzeniu wolumenu Snapshot zostanie wyświetlony na tej liście.
 
 ![Snapshot - lista](images/volumebackup03.png){.thumbnail}
@@ -82,7 +82,7 @@ Po otrzymaniu wniosku o utworzenie wolumenu Backup zostaje on dodany do listy.
 
 ![Kopia zapasowa - lista](images/volumebackup04.png){.thumbnail}
 
-Kliknij przycisk `...`{.action}, aby `usunąć`{.action} lub `Utwórz wolumen`{.action} na podstawie wolumenu Snapshot lub odpowiedniego wolumenu Backup.
+Kliknij przycisk `...`{.action}, aby `usun`{.action} lub `Utwórz wolumen`{.action} na podstawie wolumenu Snapshot lub odpowiedniego wolumenu Backup.
 
 Więcej informacji na ten temat znajdziesz w [naszym przewodniku dotyczącym tworzenia wolumenu z kopii zapasowej](https://docs.ovh.com/pl/public-cloud/create-volume-from-backup/).
 

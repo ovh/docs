@@ -4,10 +4,10 @@ slug: volume-backup
 excerpt: Découvrez comment créer une sauvegarde de votre volume Block Storage depuis votre espace client
 section: Stockage
 order: 3
-updated: 2023-03-21
+updated: 2023-03-27
 ---
 
-**Dernière mise à jour le 21/03/2023**
+**Dernière mise à jour le 27/03/2023**
 
 ## Objectif
 
@@ -55,7 +55,7 @@ Sélectionnez ensuite le type de sauvegarde que vous souhaitez créer : **Volume
 Le temps de création de la sauvegarde, qu'il s'agisse d'un Volume Snapshot ou d'un Volume Backup, peut prendre plusieurs heures, en fonction de la quantité de données présentes sur le volume, de l'utilisation des ressources de l'instance pour le Volume Snapshot, ainsi que d'autres facteurs spécifiques au host.
 
 > [!primary]
-
+>
 > **Bonnes pratiques :**
 >
 > - effectuez vos sauvegardes de volume en dehors de vos heures de production ;

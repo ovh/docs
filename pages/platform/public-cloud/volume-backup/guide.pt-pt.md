@@ -4,14 +4,14 @@ slug: volume-backup
 excerpt: "Saiba como criar um backup do volume Block Storage a partir da Área de Cliente"
 section: Armazenamento
 order: 3
-updated: 2023-03-21
+updated: 2023-03-27
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/03/2023**
+**Última atualização: 27/03/2023**
 
 ## Objetivo
 
@@ -52,14 +52,14 @@ Se é originário da secção Block Storage, o volume correspondente é indicado
 De seguida, selecione o tipo de backup que deseja criar: **Volume Snapshot** ou **Volume Backup**.
 
 - Ao escolher o **Volume Snapshot**, terá a possibilidade de modificar o nome do Volume Snapshot a criar antes de validar através do botão `Criar o backup`{.action}.
-- Ao escolher o **Volume Backup**, ser-lhe-á pedido que desassocie o seu volume da instância para que possa continuar. Poderá então alterar o nome do Volume Snapshot a criar antes de validar através do botão `Criar a cópia de segurança`{.action}.
+- Ao escolher o **Volume Backup**, ser-lhe-á pedido que desassocie o seu volume da instância para que possa continuar. Poderá então alterar o nome do Volume Snapshot a criar antes de validar através do botão `Criar o backup`{.action}.
 
 ![Volume Backup ou Snapshot - criação](images/volumebackup02.png){.thumbnail}
 
 O tempo de criação do backup, quer se trate de um Volume Snapshot ou de um Volume Backup, pode levar várias horas, em função da quantidade de dados presentes no volume, da utilização dos recursos da instância para o Volume Snapshot, assim como de outros fatores específicos ao host.
 
 > [!primary]
-
+>
 > **Boas práticas:**
 >
 > - efetue os seus backups de volume fora das horas de produção;

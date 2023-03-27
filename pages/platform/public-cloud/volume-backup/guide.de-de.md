@@ -4,14 +4,14 @@ slug: volume-backup
 excerpt: "Hier erfahren Sie, wie Sie über Ihr Kundencenter ein Backup Ihres Block Storage Volumes erstellen"
 section: Storage
 order: 3
-updated: 2023-03-21
+updated: 2023-03-27
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-***Letzte Aktualisierung am 21.03.2023**
+***Letzte Aktualisierung am 27.03.2023**
 
 ## Ziel
 
@@ -52,14 +52,14 @@ Wenn Sie aus dem Block Storage kommen, wird das betreffende Volume angegeben. We
 Wählen Sie dann den Backup-Typ aus, den Sie erstellen möchten: **Volume Snapshot** oder **Volume Backup**.
 
 - Wenn Sie **Volume Snapshot** auswählen, können Sie den Namen des zu erstellenden Volume Snapshots ändern, bevor Sie über den Button `Backup erstellen bestätigen`{.action}.
-- Wenn Sie **Volume Backup** auswählen, werden Sie aufgefordert, Ihr Volume von der Instanz zu trennen, um fortfahren zu können. Sie können dann den Namen des zu erstellenden Volume Backup ändern, bevor Sie die Sicherung `erstellen`{.action}.
+- Wenn Sie **Volume Backup** auswählen, werden Sie aufgefordert, Ihr Volume von der Instanz zu trennen, um fortfahren zu können. Sie können dann den Namen des zu erstellenden Volume Backup ändern, bevor Sie die Sicherung `Backup erstellen`{.action}.
 
 ![Backup oder Snapshot Volume - Erstellung](images/volumebackup02.png){.thumbnail}
 
 Die Zeit bis zur Erstellung des Backups, ob Volume Snapshot oder Volume Backup, kann abhängig von der Datenmenge auf dem Volume, der Verwendung der Ressourcen der Instanz für das Volume Snapshot sowie anderen hostspezifischen Faktoren mehrere Stunden in Anspruch nehmen.
 
 > [!primary]
-
+>
 > **Best Practices:**
 >
 > - Führen Sie Volume Backups außerhalb Ihrer Produktionsstunden durch.
@@ -82,7 +82,7 @@ Sobald die Erstellung des Volumes eines Backups angefordert wurde, wird es zur L
 
 ![Backup Volume - Liste](images/volumebackup04.png){.thumbnail}
 
-Klicken Sie auf den Button `...`{.action}, um `ein Volume`{.action} aus dem` `{.action} Snapshot Volume oder dem zugehörigen Backup Volume zu löschen oder zu erstellen.
+Klicken Sie auf den Button `...`{.action}, um ein `Volume wiederherstellen`{.action} aus dem `Löschen`{.action} Snapshot Volume oder dem zugehörigen Backup Volume zu löschen oder zu erstellen.
 
 Weitere Informationen zu diesem Thema finden Sie [in unserer Anleitung zur Erstellung eines Volumes über ein Backup](https://docs.ovh.com/de/public-cloud/create-volume-from-backup/).
 

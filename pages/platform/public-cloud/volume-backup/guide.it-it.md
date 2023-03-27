@@ -4,14 +4,14 @@ slug: volume-backup
 excerpt: Come creare un backup del tuo volume Block Storage dallo Spazio Cliente OVHcloud
 section: Storage
 order: 3
-updated: 2023-03-21
+updated: 2023-03-27
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21/03/2023**
+**Ultimo aggiornamento: 27/03/2023**
 
 ## Obiettivo
 
@@ -51,8 +51,8 @@ Se hai scelto Block Storage, indica il volume corrispondente. Altrimenti, selezi
 
 Seleziona il tipo di backup che vuoi creare: **Volume Snapshot** ou **Volume Backup**.
 
-- Scegliendo **Volume Snapshot**, hai la possibilità di modificare il nome del Volume Snapshot da creare prima di confermare cliccando su `Crea il backup`{.action}.
-- Selezionando **Volume Backup**, ti verrà chiesto di scollegare il volume dall'istanza per poter continuare. È possibile modificare il nome del Volume Snapshot da creare prima di confermare il mount `Crea il backup`{.action}.
+- Scegliendo **Volume Snapshot**, hai la possibilità di modificare il nome del Volume Snapshot da creare prima di confermare cliccando su `Creare il backup`{.action}.
+- Selezionando **Volume Backup**, ti verrà chiesto di scollegare il volume dall'istanza per poter continuare. È possibile modificare il nome del Volume Snapshot da creare prima di confermare il mount `Creare il backup`{.action}.
 
 ![Volume Backup o Snapshot - creazione](images/volumebackup02.png){.thumbnail}
 
@@ -82,7 +82,7 @@ Una volta richiesta la creazione del Volume Backup, verrà aggiunto alla lista.
 
 ![Volume Backup - liste](images/volumebackup04.png){.thumbnail}
 
-Clicca sul pulsante `...`{.action} per `Eliminare`{.action} o `Creare un volume`{.action} a partire dal volume Snapshot o dal volume Backup corrispondente.
+Clicca sul pulsante `...`{.action} per `Eliminare`{.action} o `Crea un volume`{.action} a partire dal volume Snapshot o dal volume Backup corrispondente.
 
 Per maggiori informazioni, consulta la [nostra guida sulla creazione di un volume](https://docs.ovh.com/it/public-cloud/creare-volume-da-backup/).
 

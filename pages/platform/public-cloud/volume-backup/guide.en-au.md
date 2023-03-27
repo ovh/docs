@@ -4,10 +4,10 @@ slug: volume-backup
 excerpt: Discover how to back up your Block Storage volume in the OVHcloud Control Panel
 section: Storage
 order: 3
-updated: 2023-03-21
+updated: 2023-03-27
 ---
 
-**Last updated 21st March 2023**
+**Last updated 27th March 2023**
 
 ## Objective
 
@@ -44,8 +44,8 @@ Coming from the Block Storage volume section, the volume concerned is indicated.
 
 Then select the type of backup you want to create: volume snapshot or volume backup.
 
-- Choosing volume snapshot, you will have the possibility to modify the name of the volume snapshot to be created. Then click `Create the backup`{.action}.
-- Choosing volume backup, you will be asked to detach your volume from the instance in order to continue. You will be then able to modify the name of the volume backup to be created. Finally, click `Create the backup`{.action}.
+- Choosing volume snapshot, you will have the possibility to modify the name of the volume snapshot to be created. Then click `Create backup`{.action}.
+- Choosing volume backup, you will be asked to detach your volume from the instance in order to continue. You will be then able to modify the name of the volume backup to be created. Finally, click `Create backup`{.action}.
 
 ![Volume Backup or Snapshot creation](images/volumebackup02.png){.thumbnail}
 

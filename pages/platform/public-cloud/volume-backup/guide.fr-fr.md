@@ -4,10 +4,10 @@ slug: volume-backup
 excerpt: Découvrez comment créer une sauvegarde de votre volume Block Storage depuis votre espace client
 section: Stockage
 order: 3
-updated: 2023-03-21
+updated: 2023-03-27
 ---
 
-**Dernière mise à jour le 21/03/2023**
+**Dernière mise à jour le 27/03/2023**
 
 ## Objectif
 

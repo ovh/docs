@@ -4,14 +4,14 @@ slug: volume-backup
 excerpt: Cómo crear una copia de seguridad de su volumen Block Storage desde el área de cliente
 section: Almacenamiento
 order: 3
-updated: 2023-03-21
+updated: 2023-03-27
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 21/03/2023**
+**Última actualización: 27/03/2023**
 
 ## Objetivo
 
@@ -52,7 +52,7 @@ Si viene desde la sección Block Storage, se indica el volumen correspondiente. 
 Seleccione el tipo de backup que quiera crear: **Volumen Snapshot** o **volumen de backup**.
 
 - Si elige **Volume Snapshot**, podrá cambiar el nombre del volumen Snapshot que quiera crear antes de validar mediante el botón `Crear la copia de seguridad`{.action}.
-- Seleccionando el **volumen de backup**, deberá desvincular el volumen de la instancia para poder continuar. Podrá cambiar el nombre del volumen Snapshot que quiera crear antes de validar el backup utilizando el botón `Crear`{.action} copia de seguridad.
+- Seleccionando el **Volume backup**, deberá desvincular el volumen de la instancia para poder continuar. Podrá cambiar el nombre del volumen Snapshot que quiera crear antes de validar el backup utilizando el botón `Crear la copia de seguridad`{.action}.
 
 ![Volumen de backup o snapshot - creación](images/volumebackup02.png){.thumbnail}
 
@@ -72,12 +72,12 @@ El tiempo de creación de la copia de seguridad, tanto si se trata de un volumen
 
 Un volumen Snapshot o un volumen de backup son clones del conjunto del disco, por lo que tendrá el tamaño máximo del volumen original, independientemente de la asignación real del espacio en disco.
 
-En la columna izquierda, en la columna `Volumen Snapshot`{.action}, encontrará una lista de los Volúmenes Snapshots.
+En la columna izquierda, en la columna `Volume Snapshot`{.action}, encontrará una lista de los Volúmenes Snapshots.
 Una vez creado el volumen Snapshot, aparecerá en esta lista.
 
 ![Volumen Snapshot - Lista](images/volumebackup03.png){.thumbnail}
 
-En la columna izquierda podrá consultar la lista de volúmenes de backup en la sección `Volumen de backup`{.action}.
+En la columna izquierda podrá consultar la lista de volúmenes de backup en la sección `Volume Backup`{.action}.
 Una vez que se ha solicitado la creación del volumen de backup, se añade a la lista.
 
 ![Volumen de backup - Lista](images/volumebackup04.png){.thumbnail}
