@@ -48,7 +48,7 @@ Para ello, no solo nos basaremos en las funciones a bordo que ofrece VMware, sin
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Tener un servidor dedicado con la solución ESXi desplegada.
-- Tener contratado un servicio compatible con nuestra funcionalidad de [Network Firewall](https://docs.ovh.com/us/es/dedicated/firewall-de-red/) si quiere utilizarlo para filtrar.
+- Tener contratado un servicio compatible con nuestra funcionalidad de [Network Firewall](https://docs.ovh.com/es/dedicated/firewall-de-red/) si quiere utilizarlo para filtrar.
 
 ## Procedimiento
 
@@ -66,7 +66,7 @@ Recordatorio de su definición y su principio de funcionamiento:
 > 
 > Si se activa este sistema y desea conectarse a su ESXi inmediatamente, deberá desbloquear manualmente la cuenta de administrador.
 >
-> Para ello, deberá [reiniciar](https://docs.ovh.com/us/es/dedicated/primeros-pasos-servidor-dedicado/#reinicio-del-servidor-dedicado_1) el servidor ESXi desde el área de cliente de OVHcloud.
+> Para ello, deberá [reiniciar](https://docs.ovh.com/es/dedicated/primeros-pasos-servidor-dedicado/#reinicio-del-servidor-dedicado_1) el servidor ESXi desde el área de cliente de OVHcloud.
 > 
 
 Puede consultar el historial de los logs de acceso en los siguientes archivos desde un intérprete de órdenes SSH:
@@ -201,8 +201,8 @@ esxcli system account list
 
 > Explicaciones sobre los cambios/ajustes de las reglas de acceso: 
 > 
-> - Servicio `vSphereClient`\: este servicio corresponde a la interfaz web de administración del puerto 443 (HTTPS).
-> - Servicio `SSHServer`\: este servicio corresponde a los accesos por SSH al puerto 22.
+> - Servicio `vSphereClient`: este servicio corresponde a la interfaz web de administración del puerto 443 (HTTPS).
+> - Servicio `SSHServer`: este servicio corresponde a los accesos por SSH al puerto 22.
 
 Ejemplo de servicio vSphereClient:
 
