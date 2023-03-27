@@ -4,10 +4,10 @@ slug: managing-nodes
 excerpt: ''
 section: User guides
 order: 0
-updated: 2022-10-12
+updated: 2023-03-27
 ---
 
-**Last updated 12th October 2022**
+**Last updated 27th March 2023**
 
 ## Objective
 
@@ -50,6 +50,10 @@ To access the nodes configuration, switch to the *Node pools* tab. Click on the 
 Here you can change the billing method for a node or delete a node by clicking on the respective `...`{.action} button of a node.
 
 ![node pool](images/managing_nodes-03.png){.thumbnail}
+
+> [!primary]
+>
+> You can only switch billing method from hourly to monthly billing, not the opposite. 
 
 ### Adding nodes to an existing node pool
 
