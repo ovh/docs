@@ -1,12 +1,11 @@
 ---
-title: 'Tutorial - Installing WordPress manually'
-excerpt: Find out how to manually install WordPress
+title: "Tutorial - Installing WordPress manually"
+excerpt: "Find out how to  install WordPress manually"
 slug: cms_manually_install_wordpress
 section: CMS
 order: 04
 updated: 2023-03-24
 ---
-
 
 **Last updated 24th March 2023**
 
@@ -40,6 +39,8 @@ This tutorial will help you install WordPress CMS (Content Management System) ma
 ### Step 1 - Prepare for the installation <a name="step1"></a>
 
 To install the **WordPress** CMS on your [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), you will need to make some preparations.
+
+Follow **all of steps** described in our tutorial on [installing a CMS manually](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) before continuing with step 2 below.
 
 ### Step 2 - Finalise the installation <a name="step2"></a>
 
