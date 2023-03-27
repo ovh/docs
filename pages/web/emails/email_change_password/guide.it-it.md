@@ -46,26 +46,26 @@ Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 >>
 >> Se non ricordi il tipo di offerta MXplan, consulta il paragrafo [Identifica la tua offerta MXplan](#whichmxplan).<br>
 >> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. <br>
->> Clicca sul pulsante <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> e poi su `Modifica la password`{.action}.<br><br>
+>> Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> e poi su `Modifica la password`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **Email MXplan (nuova versione)**
 >>
 >> Se non ricordi il tipo di offerta MXplan, consulta il paragrafo [Identifica la tua offerta MXplan](#whichmxplan).<br>
 >> Clicca su `Email`{.action} e poi seleziona il nome del servizio MX Plan. Clicca sulla scheda `Email`{.action}. Visualizzi una finestra con tutti gli account email esistenti. <br>
->> Clicca sul pulsante <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> e poi su `Modifica`{.action}.<br><br>
+>> Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> e poi su `Modifica`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
 >> Clicca su `Email Pro`{.action} e seleziona il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti.<br>
->> Clicca sul pulsante <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> e poi su `Modifica`{.action}.<br><br>
+>> Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> e poi su `Modifica`{.action}.<br><br>
 >>![email](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Clicca su `Microsoft`{.action} / `Exchange`{.action} e poi seleziona il nome della piattaforma. Clicca sulla scheda `Account email`{.action}. Visualizzi una finestra con tutti gli account email esistenti.<br>
->> Clicca sul pulsante <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> e poi su `Modifica`{.action}.<br><br>
+>> Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> e poi su `Modifica`{.action}.<br><br>
 >>![email](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 
