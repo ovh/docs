@@ -28,7 +28,7 @@ Ce concept vous permet de construire une architecture basée sur une base de don
 
 Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez-vous référer à la [documentation OVHcloud Connect](https://www.ovhcloud.com/fr/network/ovhcloud-connect/).
 
-Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX Edge. Pour connaître les étapes de configuration d'une passerelle VPN NSX Edge avec OVHcloud, veuillez-vous référer à [notre documentation](https://docs.ovh.com/fr/private-cloud/configurer-un-vpn-via-une-gateway-edge/).
+Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX Edge. Pour connaître les étapes de configuration d'une passerelle VPN NSX Edge avec OVHcloud, veuillez vous référer à [notre documentation](https://docs.ovh.com/fr/private-cloud/configurer-un-vpn-via-une-gateway-edge/).
 
 Un prérequis pour mettre à jour vos serveurs et pour l'accès du support SAP est de configurer une Additional IP. Un sous-réseau d'adresses IP publiques vous sera attribué et une adresse IP publique de ce sous-réseau sera utilisée comme passerelle sur votre NSX Edge. Retrouvez plus d'informations dans la [documentation Additional IP](https://docs.ovh.com/fr/publiccloud/network-services/buy-additional-ip/).
 
