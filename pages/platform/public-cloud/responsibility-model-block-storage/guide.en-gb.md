@@ -1,5 +1,5 @@
 ---
-title: RACI for Public Cloud Block Storage
+title: Public Cloud Block Storage - Shared responsibilities
 slug: raci-block-storage-public-cloud
 section: General information
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Block Storage"
