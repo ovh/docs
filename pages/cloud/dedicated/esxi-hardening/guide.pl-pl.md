@@ -7,6 +7,10 @@ order: 5
 updated: 2023-03-22
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
 **Ostatnia aktualizacja z dnia 22-03-2023**
 
 ## Wprowadzenie
@@ -24,7 +28,7 @@ W tym celu skorzystamy z pokładowych funkcji oferowanych przez VMware, ale rów
 > 
 > Niedawno systemy ESXi padły ofiarą luki, którą złośliwe grupy bardzo szybko wykorzystywały w sieciach publicznych.
 >
-> Więcej informacji na temat tego ataku można znaleźć w [uzupełniającym FAQ (EN)](https://docs.ovh.com/fr/dedicated/esxi-faq/).
+> Więcej informacji na temat tego ataku można znaleźć w [uzupełniającym FAQ (EN)](https://docs.ovh.com/gb/en/dedicated/esxi-faq/).
 >
 
 ### Przypomnienie dobrych praktyk w zakresie bezpieczeństwa:
