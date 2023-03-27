@@ -24,7 +24,7 @@ Pour protéger de manière optimale votre système, votre serveur sous Windows S
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) sous Windows dans votre compte OVHcloud
+- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) sous Windows dans votre compte OVHcloud.
 - Disposer d'un accès administrateur à votre serveur via un bureau distant sous Windows. 
 
 ## En pratique
@@ -44,7 +44,7 @@ Cliquez ensuite sur la ligne `Configuration avancée`{.action}.
 
 ### Etape 2 : activer une règle de trafic entrant
 
-Dans la fenêtre affichée, vous trouverez des paramètres tels que:
+Dans la fenêtre affichée, vous trouverez des paramètres tels que :
 
 - Règles d’entrée et de sortie
 - Règles de sécurité de la connexion
