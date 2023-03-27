@@ -76,3 +76,81 @@ Enter the information requested for the database:
 
 ![Drupal installation step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
+Having your database login details ready (if necessary, see **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial), click on `Let's go!`{.action} to continue.
+
+- *Database type*: select your database type from the choices available.
+
+- *Database name*: this name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+
+- *Database username*: It is identical to the database name if you are using a database included with your web hosting plan.For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial.
+
+- *Database password*: You defined it yourself when you created your database. You may have modified it in the meantime.
+
+Click on `Advanced Options`{.action} to see the rest of the menu.
+
+- *Host*: The name of your database server, included in the installation email and displayed in your OVHcloud Control Panel. 
+
+> [!primary]
+> 
+> - The server name of a database included with your web hosting plan usually has this format: `NameOfYourDatabase.mysql.db`. 
+>
+> - The server name of a Web Cloud Databases database starts with your OVHcloud NIC handle and is in the following format: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where **"XXX"** is to be replaced by the reference of your Web Cloud Databases service.
+>
+
+- *Port number*: If you are using a database included with your OVHcloud hosting plan, please leave **3306** by default. If you are using a *Web Cloud Databases* service, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) to retrieve the correct port number.
+
+- *Table name prefix*: if you are installing with a brand new database, enter your preferred “prefix”. If you are using a database that has already been used by another website, please refer to **Step 1.4** in the tutorial on [manually installing a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) to avoid entering a table “prefix” that has already been used in your database.
+
+
+Click `Save and Continue`{.action}.
+
+If everything has been done correctly, Drupal will be installed:
+
+![Drupal installation step 4](images/Drupal-install-4.png){.thumbnail}
+
+#### 2.4 - Configure Site Information and Administrator Access
+
+Once the previous step is complete, the following page is displayed:
+
+![Drupal installation step 5-1](images/Drupal-install-configure-site-5-1.png){.thumbnail}
+
+Enter the information requested:
+
+- *Site name*: enter the name of your future Drupal website.
+
+- *Site email address*: enter a valid email address that will be used by your Drupal website.
+
+- *Username*: Enter a username to log in to your Drupal (Back Office) administration panel.
+
+- *Password* and *Confirm password*: set the password that will be associated with your username to access your *Back Office* Drupal.
+
+Then continue to the bottom of the page:
+
+![Drupal installation step 5-1](images/Drupal-install-configure-site-5-2.png){.thumbnail}
+
+- *Email address*: enter your email address. Ideally, enter the same address you entered earlier in the form *Site email address*.
+
+- *Default country*: choose the country where your website will be visited the most.
+
+- *Default time zone*: select the default time zone for your website.
+
+Click `Save and Continue`{.action}.
+
+If everything went well, the following page appears:
+
+![Drupal installation step 6](images/Drupal-install-ending-6.png){.thumbnail}
+
+> [!success]
+>
+> Drupal installation is complete, you can now start creating the content of your Drupal website!
+>
+
+## Go further <a name="go-further"></a>
+
+[Site officiel Drupal](https://www.drupal.org/){.external}
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 
