@@ -55,7 +55,7 @@ Vous pouvez indiquer un nom de serveur qui sera visible via la commande `hostnam
 Une fois ces derniers paramètres configurés, cliquez sur `Valider`{.action} pour lancer l'installation.
 
 > [!warning]
-> L'image SLES 15 for SAP que OVHcloud met à votre disposition est une image sans licence incluse. Suite au déploiement, vous devrez installer votre license SLES 15 for SAP via la commande suivante : 
+> L'image SLES 15 for SAP que OVHcloud met à votre disposition est une image sans licence incluse. Suite au déploiement, vous devrez installer votre licence SLES 15 for SAP via la commande suivante : 
 >
 > `SUSEConnect -r <licence>`
 
@@ -185,7 +185,7 @@ UUID=<UUID>       /hanabackup     xfs     noatime,nodiratime,logbsize=256k 0 0
 ```
 
 <ol start="9">
-  <li>Vous pouvez maintenant exécuter la commande <code>mount -a</code> qui aura pour effet de monter les volumes logiques sur votre système d'exploitation. Ces derniers doivent être visible dans la sortie de la commande <code>df -h</code> avec les tailles que vous avez précédemment configurées.</li>
+  <li>Vous pouvez maintenant exécuter la commande <code>mount -a</code> qui aura pour effet de monter les volumes logiques sur votre système d'exploitation. Ces derniers doivent être visibles dans la sortie de la commande <code>df -h</code> avec les tailles précédemment configurées.</li>
 </ol>
 
 ### Application des paramètres avec SAPtune

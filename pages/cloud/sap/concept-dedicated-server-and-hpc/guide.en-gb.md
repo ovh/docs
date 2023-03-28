@@ -91,7 +91,7 @@ Configure your NSX Edge to route the ingress traffic to your SAProuter.
 
 As this virtual machine is exposed to the Internet, adapt ingress firewall rules to only allow the connection from the SAP IP public range to your SAProuter server. Allow communication from your new SAProuter to your SAP infrastructure for only the needed ports/protocols. All of this information is available on the [SAP Support pages](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html).
 
-### Dual OVHcloud locations (optional)
+### Dual OVHcloud location (optional)
 
 To eliminate the risk of losing a single OVHcloud location deployment, consider adding a secondary OVHcloud location.
 

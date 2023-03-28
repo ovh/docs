@@ -3,10 +3,10 @@ title: FAQ Public Cloud databases
 slug: faq
 section: General information
 order: 040
-updated: 2021-08-25
+updated: 2023-03-21
 ---
 
-**Last updated August 25<sup>th</sup>, 2021**
+**Last updated March 21<sup>st</sup>, 2023**
 
 ## Objective
 
@@ -273,8 +273,7 @@ In case of a failover, your cluster will be in degraded mode:
 
 ### How do you perform backups ?
 
-Backups are performed differently according to the DBMS.
-For MongoDB, a mongodump is executed, encrypted and stored on our infrastructure.
+Backups are performed differently according to the DBMS. See [Automated backups](https://docs.ovh.com/ie/en/publiccloud/databases/backups/) for more details.
 
 ### Can I perform manual backups ?
 
