@@ -1,7 +1,7 @@
 ---
-title: "Setting up your website with a "1-click module" (CMS)"
+title: "Setting up your website with a '1-click module' (CMS)"
 slug: web_hosting_web_hosting_modules
-excerpt: "Find out how to set up your website using our "1-click modules""
+excerpt: "Find out how to set up your website using our '1-click modules'"
 section: CMS
 order: 01
 updated: 2023-03-28
