@@ -62,7 +62,7 @@ As seen before, when restoring a backup you create a new separate database servi
 
 #### Immutable options
 
-For obvious reasons, you cannot change the engine, this option is not offered. Same goes for the engine version, you will be able to update engine version once the new service is running.
+For obvious reasons, you cannot change the engine, this option is not offered. The same goes for the engine version, you will be able to update it once the new service is running.
 
 The region is not modifiable as well, your new service will be on the same region as the old one.
 
@@ -74,7 +74,7 @@ You will find a reminder of all these options in the order summary.
 
 You have to choose a restore point from which the service will be duplicated.
 
-##### Backup
+##### **Backup**
 
 The most common option is to restore from a backup.
 
@@ -98,21 +98,21 @@ When restoring a backup you can select another service plan.
 
 #### Nodes
 
-You could upgrade the node to a bigger flavor.
+You can choose to upgrade the node to a bigger flavor.
 
 ![Node selection](images/node-selection.png){.thumbnail}
 
 > [!primary]
-> The flavor downgrade will soon be offered with the limitation that the targetted flavor must have enough storage to restore the backup.
+> The flavor downgrade will soon be offered. The limitation being that the targeted flavor must have enough storage to restore the backup.
 
 #### Sizing
 
-Additional storage could be ordered while forking the service.
+Additional storage can be ordered while forking the service.
 
 ![Sizing selection](images/sizing-selection.png){.thumbnail}
 
 > [!primary]
-> The storage reduction will soon be offered with the limitation that the targetted total storage must be large enough to restore the backup.
+> The storage reduction will soon be offered. The limitation being that the targeted total storage must be large enough to restore the backup.
 
 #### Options
 
