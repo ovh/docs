@@ -4,14 +4,14 @@ slug: usar-instantaneas-en-un-vps
 excerpt: 'Cómo activar y usar la opción Instantáneas  en el panel de control de OVHcloud'
 section: 'Opciones de copia de seguridad'
 order: 1
-updated: 2022-12-02
+updated: 2023-03-20
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 02/12/2022**
+**Última actualización: 20/03/2023**
 
 
 ## Objetivo
@@ -58,6 +58,45 @@ Si está seguro de que desea restablecer su servidor virtual privado (VPS) al es
 > [!alert]
 > 
 > Tenga en cuenta que, al restaurar un VPS a partir de un snapshot, el snapshot se eliminará. Si desea conservar la misma instantánea, debe tomar una nueva antes de realizar cambios en el sistema restaurado.
+>
+
+### Descargar un snapshot
+
+El snapshot actual puede recuperarse mediante un enlace de descarga. Haga clic en el botón `...`{.action} situado junto a la opción `Snapshot` y seleccione `Descargar el snapshot`{.action} en el menú contextual.
+
+![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+En la nueva ventana, haga clic en `Generar el enlace de descarga`{.action}.
+
+![snapshotvps](images/snapshot_vps04.png){.thumbnail}
+
+Al cabo de unos segundos, se mostrará un mensaje de éxito. Abajo, puede copiar el comando completo de descarga en un clic.
+
+![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+
+También se mostrarán el tamaño del snapshot y la fecha de expiración del enlace.
+
+Tenga en cuenta que el enlace de descarga expirará después de **24 horas**.
+
+La orden de descarga utiliza un `curl` en el siguiente formato:
+
+```bash
+curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" --output vps-x11x11xyy.vps.ovh.net --fail
+```
+
+Este comando debe funcionar desde cualquier terminal de línea de comandos. No obstante, cuando utilice Windows *PowerShell*, deberá ajustar el comando de la siguiente forma:
+
+```powershell
+curl -Uri "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" -OutFile vps-x11x11xyy.vps.ovh.net
+```
+
+![snapshotvps](images/snapshot_vps06.png){.thumbnail}
+
+> [!primary]
+>
+> No obstante, para no consumir demasiado espacio de almacenamiento, le recomendamos que no descargue los snapshots directamente en el VPS.
 >
 
 ### Buenas prácticas para la creación de un snapshot
