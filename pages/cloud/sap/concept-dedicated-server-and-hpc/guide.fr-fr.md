@@ -26,7 +26,7 @@ Ce concept vous permet de construire une architecture basée sur une base de don
 
 ### Connectivité réseau
 
-Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez-vous référer à la [documentation OVHcloud Connect](https://www.ovhcloud.com/fr/network/ovhcloud-connect/).
+Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez vous référer à la [documentation OVHcloud Connect](https://www.ovhcloud.com/fr/network/ovhcloud-connect/).
 
 Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX Edge. Pour connaître les étapes de configuration d'une passerelle VPN NSX Edge avec OVHcloud, veuillez vous référer à [notre documentation](https://docs.ovh.com/fr/private-cloud/configurer-un-vpn-via-une-gateway-edge/).
 
@@ -75,7 +75,7 @@ Une autre solution pour accélérer la restauration d'une machine virtuelle est 
 
 Veeam Enterprise Plus vous permet de sauvegarder et de restaurer des snapshots de vos machines virtuelles. Cela vous assure une restauration rapide en cas d'incident sur votre solution VMware on OVHcloud.
 
-Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, veuillez-vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/storage/backup/veeam/veeam-backup-replication/).
+Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, veuillez vous référer à la [documentation OVHcloud](https://docs.ovh.com/fr/storage/backup/veeam/veeam-backup-replication/).
 
 ### Longue durée et archivage (BETA)
 
@@ -91,7 +91,7 @@ Sur votre NSX Edge, vous devrez configurer une route entrante afin d'acheminer l
 
 Comme cette machine virtuelle est exposée sur Internet, adaptez vos règles de filtrage réseau entrantes pour n'autoriser que la connexion provenant des adresses IP publiques du support SAP. N'autorisez la communication depuis votre SAProuter vers votre infrastructure SAP que sur les ports et protocoles nécessaires. Toutes les informations sont disponibles sur les [pages du support SAP](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html).
 
-### Double localisations OVHcloud (optionnel)
+### Double localisation OVHcloud (optionnel)
 
 Pour éliminer le risque de perte d'une unique localisation OVHcloud, envisagez d'ajouter une seconde localisation OVHcloud.
 
