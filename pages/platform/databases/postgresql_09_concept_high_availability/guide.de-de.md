@@ -107,6 +107,7 @@ No intervention is required from the customer.
 OVHcloud also detects when a whole datacenter is lost. As a user, your cluster will still be visible in API and Control Panel.
 
 Automatic backups are first performed on-site (i.e. in the same region as the service), then replicated off-site, to another datacenter.
+
 In case of a Datacenter failure, the recovery strategy involves creating a new service in another region, either using the fork (from the backup feature) from an automatic backup that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` as previously performed `pg_dump`).
 You will then need to configure the freshly created service (e.g. adding users, IP restrictions, ..) and reconfigure applications consuming the database service to use new services URIs and credentials.
 
@@ -153,10 +154,10 @@ No intervention is required from the customer.
 
 OVHcloud also detects when a whole datacenter is lost. As a user, your cluster will still be visible in API and Control Panel.
 
-Automatic backups are first performed on-site (i.e. in the same region as the service), then replicated off-site, to another datacenter.
-In case of Datacenter failure, the recovery strategy involves creating a new service in another region, either using the fork from backup feature from an automatic backup that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` a previously performed `pg_dump`).
-You will then need to configure the freshly created service (e.g. adding users, IP restrictions, ..) and reconfigure applications consuming the database service to use new services URIs and credentials.
+ Automatic backups are first performed on-site (i.e. in the same region as the service), then replicated off-site, to another datacenter.
 
+In case of a Datacenter failure, the recovery strategy involves creating a new service in another region, either using the fork (from the backup feature) from an automatic backup that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` as previously performed `pg_dump`).
+You will then need to configure the freshly created service (e.g. adding users, IP restrictions, ..) and reconfigure applications consuming the database service to use new services URIs and credentials.
 In both cases the Recovery Time Objective will vary, depending of multiples parameters such as the amount of data to restore, network congestion and latency or node performances. It can go from a few hours up to a few days.
 
 ## We want your feedback!
