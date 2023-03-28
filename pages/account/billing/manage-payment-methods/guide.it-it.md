@@ -3,14 +3,14 @@ title: Gestire i metodi di pagamento
 slug: manage-payment-methods
 excerpt: Come gestire i tuoi metodi di pagamento nello Spazio Cliente OVHcloud
 section: Fatturazione
-updated: 2022-05-18
+updated: 2023-03-28
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 18/05/2022**
+**Ultimo aggiornamento: 28/03/2023**
 
 ## Obiettivo
 
@@ -42,31 +42,42 @@ Questo metodo di pagamento viene utilizzato di default per tutti i rinnovi e ti 
 
 Puoi salvare altri metodi di pagamento, in modo che vengano proposti al momento dei tuoi nuovi ordini o utilizzati di default per i tuoi futuri addebiti.
 
-È possibile salvare 2 metodi di pagamento:
+È possibile salvare 3 metodi di pagamento:
 
+- Prelievo bancario
 - Carta bancaria
 - Account PayPal
 
-Per farlo, clicca su `Aggiungi un metodo di pagamento`.
+Per farlo, clicca su `Aggiungi un metodo di pagamento` e seleziona il metodo di pagamento da utilizzare.
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Scegli il metodo di pagamento da utilizzare: 
-
-![choose-payment-method-no-sepa](images/choose-payment-method-no-sepa.png){.thumbnail}
-
 Segui gli step successivi per il salvataggio del metodo di pagamento. Al primo step, ti viene proposto di selezionare la casella `Una volta confermata, voglio impostare questa modalità di pagamento come predefinita.`{.action}, in modo che sia utilizzata per i futuri acquisti o prelievi automatici.
+
+#### Prelievo bancario
+
+> [!warning]
+>
+> - L'utilizzo del prelievo bancario è possibile solo per i conti clienti francesi, tedeschi e italiani.
+>
+> - Il titolare del conto bancario deve corrispondere al proprietario dell'account OVHcloud.
+
+Per registrare un prelievo sul tuo conto bancario, verrai reindirizzato verso uno spazio che permetterà la registrazione di questo account e la firma elettronica del tuo mandato di prelievo.
+
+![modalità di pagamento SEPA](images/sepa.png){.thumbnail}
+
+Se la tua banca è registrata dal nostro partner, la registrazione del conto bancario sarà immediata. In caso contrario, può essere necessario un periodo di circa 48 ore.
 
 #### Carta bancaria
 
-![credit-card-no-sepa](images/credit-card-no-sepa.png){.thumbnail}
+![credit-card-no-sepa](images/credit-card.png){.thumbnail}
 
 Per salvare una nuova carta bancaria, verrai reindirizzato all'interfaccia sicura del nostro provider di pagamento. Per verificare il numero e la validità della carta inserita verrà effettuato un tentativo di prelievo presso il tuo istituto bancario.<br>
 Non verrà addebitato alcun importo e la tua carta bancaria verrà attivata entro pochi minuti.
 
 #### Account paypal
 
-![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
+![paypal_no_sepa](images/paypal.png){.thumbnail}
 
 Seleziona `Paypal`{.action} come modalità di pagamento. Clicca sul pulsante `Paypal`{.action}. Si aprirà una finestra contestuale per accedere al tuo account Paypal® e registrarlo come metodo di pagamento autorizzato presso OVHcloud.
 

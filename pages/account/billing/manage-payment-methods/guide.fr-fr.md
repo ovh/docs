@@ -4,10 +4,10 @@ slug: manage-payment-methods
 excerpt: Apprenez à ajouter et gérer vos moyens de paiement au sein de l’espace client OVHcloud
 section: Facturation
 order : 02
-updated: 2022-05-18
+updated: 2023-03-28
 ---
 
-**Dernière mise à jour le 09/05/2022**
+**Dernière mise à jour le 28/03/2023**
 
 ## Objectif
 
@@ -44,18 +44,29 @@ Vous avez la possibilité d'enregistrer d'autres moyens de paiement, afin qu'ils
 Il est possible d'enregistrer 3 types de moyens de paiement :
 
 - Carte bancaire
-- Compte bancaire
+- Prélèvement bancaire
 - Compte PayPal
 
-Pour cela, cliquez simplement sur le bouton `Ajouter un moyen de paiement`{.action}.
+Pour cela, cliquez simplement sur le bouton `Ajouter un moyen de paiement`{.action} et choisissez ensuite la méthode de paiement que vous souhaitez utiliser.
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Choisissez la méthode de paiement que vous souhaitez utiliser : 
-
-![choose-payment-method](images/choose-payment-method.png){.thumbnail}
-
 Suivez les étapes successives d'enregistrement du moyen de paiement. A la première étape, il vous est proposé de cocher la case `Je veux sélectionner ce moyen de paiement par défaut dès sa validation`{.action}, afin qu'il soit utilisé pour vos futurs achats ou prélèvements automatiques.
+
+#### Prélèvement bancaire
+
+> [!warning]
+>
+> - L'utilisation du prélèvement bancaire n'est possible que pour les comptes clients français, allemands et italiens.
+>
+> - Le propriétaire du compte bancaire doit être identique au propriétaire du compte OVHcloud.
+
+
+Pour enregistrer un prélèvement sur votre compte bancaire, vous serez redirigé vers un espace permettant l'enregistrement de ce compte et la signature électronique de votre mandat de prélèvement.
+
+![moyen de paiement SEPA](images/sepa.png){.thumbnail}
+
+Si votre établissement bancaire est répertorié par notre partenaire, l'enregistrement du compte bancaire sera immédiat. Dans le cas contraire, un délai de 48 heures environ peut être nécessaire.
 
 #### Carte bancaire
 
@@ -63,26 +74,6 @@ Suivez les étapes successives d'enregistrement du moyen de paiement. A la premi
 
 Pour enregistrer une nouvelle carte bancaire, vous serez redirigé vers l'interface sécurisée de notre prestataire de paiement. Une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte.<br>
 Aucun montant ne sera prélevé et votre carte bancaire sera activée au bout de quelques minutes.
-
-#### Compte bancaire
-
-![bank-account](images/bank-account.png){.thumbnail}
-
-> [!warning]
->
-> L'utilisation du prélèvement SEPA n'est possible que pour les comptes clients français et allemands.
->
-
-En cas d'enregistrement d'un compte bancaire, vous recevrez un e-mail de notre partenaire Yousign&#174;, vous permettant de signer électroniquement votre mandat de prélèvement.
-
-![manage-payment-methods](images/yousign.png){.thumbnail}
-
-> [!primary]
->
-> Tant que cette autorisation n'est pas signée et validée par vos soins, la mention `En cours de validation` sera indiquée à côté de votre compte bancaire, celui-ci ne pouvant alors être pris en compte pour vos paiements.
->
-
-Suite à la réception de votre autorisation de prélèvement SEPA, votre compte bancaire sera validé en tant que moyen de paiement sur votre compte client sous 48 heures environ.
 
 #### Compte paypal
 
