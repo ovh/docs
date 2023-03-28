@@ -112,7 +112,7 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.5.2/docker-compose.y
 
 You should see `docker-compose.yaml` file in your `airflow-folder`.
 
-For more information about the content of this fil, check this [documentation](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#fetching-docker-compose-yaml).
+For more information about the content of this file, check this [documentation](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#fetching-docker-compose-yaml).
 
 Now you have to initialize your environment.
 
@@ -128,7 +128,7 @@ Some directories are mounted in the container, it means that the contents are sy
 - `./logs` to save the logs from task execution and scheduler.
 - `./plugins` to add your custom plugins here.
 
-To begin with, set the AirFlow user right:
+To begin with, set the AirFlow user rights:
 
 ```console
 mkdir -p ./dags ./logs ./plugins
@@ -185,7 +185,7 @@ You should see a similar display:
  ⠿ Container airflow-folder-airflow-scheduler-1    Started                32.9s
 ```
 
-In the same terminal you can check the containers status and make sure that no containers are in **unhealthy** status.
+In the same terminal, you can check the containers status and make sure that no containers are in **unhealthy** status.
 
 ```console
 docker ps
@@ -207,9 +207,9 @@ Your **AirFlow webserver** should now be running.
 
 ### Access to AirFlow Webserver
 
-To access to AirFlow webserver, copy the IPv4 from the instance dashboard and open a new tab in your web browser.
+To access AirFlow webserver, copy the IPv4 from the instance dashboard and open a new tab in your web browser.
 
-You should access to the web server this the following address: `<IPv4>:8080` or `x.x.x.x:8080`.
+ You should access the webserver through the following address: `<IPv4>:8080` or `x.x.x.x:8080`.
 
 Here is the page you will see:
 
@@ -224,9 +224,9 @@ Login with the created credentials:
 
 ![image](images/airflow-webserver-credentials.png){.thumbnail}
 
-#### Test the example DAGs
+#### Test the DAGs examples
 
-You should now see the examples of **AirFlow DAGs** appearing. You are free to test them or not!
+You should now see the examples of **AirFlow DAGs** appearing. Feel free to test them!
 
 ![image](images/airflow-example-dags.png){.thumbnail}
 
