@@ -116,10 +116,10 @@ Le reste des informations demandées pour la base de données sont les suivantes
 
 - *Nom de la base* : ce nom a été défini lors de la création de la base de données dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
+- *Port* : placez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
+
 - *Nom d'utilisateur* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web.
 Pour les bases de données créées sur une offre Web Cloud Databases, référez-vous aux informations indiquées dans [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
-
-- *Port* : placez systématiquement le numéro **3306** (port par défaut) pour une base de données incluse avec votre hébergement web. Pour une base présente sur une instance Web Cloud Databases, consultez [ce guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
 
 - *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
 
