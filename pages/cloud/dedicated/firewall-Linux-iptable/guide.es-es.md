@@ -2,7 +2,7 @@
 title: Configurar el firewall de Linux con iptables
 excerpt: Cómo proteger un servidor con iptables
 slug: firewall-iptables
-section: Tutoriales
+section: Seguridad
 order: 01
 updated: 2022-10-18
 ---

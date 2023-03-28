@@ -2,7 +2,7 @@
 title: Konfiguracja firewalla w systemie Linux z systemem iptables
 excerpt: Dowiedz się, jak zabezpieczyć serwer korzystając z iptables
 slug: firewall-iptables
-section: Tutoriale
+section: Bezpieczeństwo
 order: 01
 updated: 2022-10-18
 ---
