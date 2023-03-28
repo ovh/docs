@@ -48,7 +48,7 @@ Es können drei Zahlungsarten eingetragen werden:
 - Lastschrift
 - PayPal® Konto
 
-Klicken Sie hierfür auf den Knopf `Zahlungsart hinzufügen`{.action} und Wählen Sie die Zahlungsmethode aus, die Sie verwenden möchten.
+Klicken Sie hierfür auf `Zahlungsart hinzufügen`{.action} und wählen Sie die Zahlungsmethode aus, die Sie verwenden möchten.
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
@@ -60,14 +60,14 @@ Folgen Sie den Schritten für die Eintragung der Zahlungsart. Im ersten Schritt 
 >
 > - Die Verwendung der SEPA-Lastschrift ist nur für französische, deutsche und italienische Kunden-Accounts möglich.
 >
-> - Der Inhaber des Bankkontos muss mit dem Inhaber des OVHcloud Accounts identisch sein.
+> - Der Inhaber des Bankkontos muss mit dem Inhaber des OVHcloud Kunden-Accounts identisch sein.
 >
 
-Um eine Lastschrift auf Ihrem Bankkonto zu hinterlegen, werden Sie zu einem Bereich weitergeleitet, der die Registrierung dieses Accounts und die elektronische Signatur Ihrer Lastschriftanweisung erlaubt.
+Um eine Lastschrift von Ihrem Bankkonto zu hinterlegen, werden Sie zu einem Bereich weitergeleitet, der die Registrierung dieses Accounts und die elektronische Signatur Ihrer Lastschriftanweisung erlaubt.
 
 ![Lastschrift SEPA](images/sepa.png){.thumbnail}
 
-Wenn Ihr Bankinstitut von unserem Partner registriert ist, wird die Registrierung des Bankkontos sofort erfolgen. Andernfalls kann eine Frist von etwa 48 Stunden erforderlich sein.
+Wenn Ihr Bankinstitut von unserem Partner bereits registriert ist, wird die Hinterlegung des Bankkontos sofort erfolgen. Andernfalls kann eine Bearbeitungsdauer von etwa 48 Stunden erforderlich sein.
 
 #### Kreditkarte
 
