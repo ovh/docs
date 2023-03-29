@@ -4,14 +4,15 @@ slug: volume-backup
 excerpt: "Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta"
 section: Przestrzeń dyskowa
 order: 3
-updated: 2023-03-27
+hidden: true
+updated: 2023-03-29
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 27-03-2023**
+**Ostatnia aktualizacja z dnia 29-03-2023**
 
 ## Wprowadzenie
 

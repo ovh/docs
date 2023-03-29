@@ -4,14 +4,15 @@ slug: volume-backup
 excerpt: "Saiba como criar um backup do volume Block Storage a partir da Área de Cliente"
 section: Armazenamento
 order: 3
-updated: 2023-03-27
+hidden: true
+updated: 2023-03-29
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 27/03/2023**
+**Última atualização: 29/03/2023**
 
 ## Objetivo
 
