@@ -21,7 +21,7 @@ You can find more information directly on their [website](http://www.rath.org/s3
 ## Prerequisites
 
 - [Configure user](https://docs.ovh.com/au/en/public-cloud/creation-and-deletion-of-openstack-user/)
-- [Add storage space](https://docs.ovh.com/au/en/public-cloud/create_an_object_container/)
+- [Add storage space](https://docs.ovh.com/au/en/storage/object-storage/pcs/create-container/)
 
 ## Instructions
 

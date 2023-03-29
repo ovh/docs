@@ -1,96 +1,82 @@
 ---
-title: Avvia la tua istanza da un volume aggiuntivo
+title: Avvia la tua istanza da un volume aggiuntivo (EN)
 excerpt: Avvia la tua istanza da un volume aggiuntivo
 slug: avvia_la_tua_istanza_da_un_volume_aggiuntivo
-legacy_guide_number: g2064
+routes:
+    canonical: 'https://docs.ovh.com/ca/en/public-cloud/start-instance-on-a-volume/'
 section: Per iniziare
 order: 9
 updated: 2023-01-11
 ---
 
+**Last updated 1st November 2021**
 
-## 
-I server Cloud vengono consegnati con un disco predefinito copiato a partire da un'immagine di sistema (Debian 8, Windows 10, ecc...), ma puoi utilizzare anche dischi aggiuntivi permanenti per archiviare i tuoi dati.
+## Objective
 
-È possibile anche configurare un sistema operativo su un volume in modo che il server Cloud si avvii da questo volume invece che dal disco predefinito.
+Cloud servers come with an original disk that is copied from a system image (Debian 8, Windows 10, etc.). It is also possible to use additional volumes, these are persistent disks that will allow data to be stored.
 
-![](images/img_3704.jpg){.thumbnail}
+It is also possible to deploy an operating system to and from a volume. The cloud server will then start on this volume instead of the original disk.
 
-## Altre funzionalità
-OpenStack ti permette di avviare la tua istanza da un volume, configurandolo in modo che il server Cloud lo utilizzi come disco di avvio.
+**This guide provides you with instructions on how to start an instance on an attached volume.**
 
-Effettuando questa operazione, però, non sarà più possibile utilizzare il disco predefinito, perché il volume prenderà il suo posto.
+![public-cloud](images/3704.png){.thumbnail}
 
-Questa guida ti mostra come evitare di perdere l'accesso al tuo disco predefinito e utilizzarne lo spazio disponibile.
+> [!success]
+>
+> Openstack natively allows you to boot from a volume. 
+> It involves making the volume bootable and starting the instance from this volume.
+> The changes will cause the original disk to disappear as the new volume is taking over.
+> The functionality described in this guide eliminates the need to access the original disk and therefore takes advantage of the volume.
+>
 
+## Requirements
 
-## Requisiti necessari
+- A volume with an installed image
+- [Setting OpenStack environment variables](https://docs.ovh.com/it/public-cloud/set-openstack-environment-variables/){.external}
 
-- [Imposta le variabili d'ambiente OpenStack]({legacy}1852)
-- un volume con un sistema operativo
+### Configuring the volume
 
+#### Making the volume as the priority device in the boot order.
 
+A metadata must be added to the volume so that the instance can prioritize the volume during the boot phase.
 
-
-## Imposta il volume come primario nell'ordine di avvio
-Per fare in modo che il server Cloud possa considerare primario questo disco nella fase di avvio, aggiungi un metadato con questo comando:
-
-
-```
+```bash
 cinder metadata 897ec71d-bae2-4394-b8c1-4d8fd373a725 set boot_from=True
 ```
 
+### Attaching the volume
+Once the volume has been configured with the metadata `boot_from` to `True`, the volume needs to be attached to the instance.
 
-
-
-## Associa il volume
-Una volta configurato il volume con il metadato boot_from a True, associalo alla tua istanza.
-
-
-```
+```bash
 nova volume-attach myinstance01 897ec71d-bae2-4394-b8c1-4d8fd373a72
 ```
 
+### Rebooting the instance
+In order for the instance to start on the volume, it will need to be rebooted.
+<br> This can be done by using `nova stop` and `nova start` commands, or by a forced reboot.
 
-
-
-## 
-Per avviare l'istanza dal disco aggiuntivo, è necessario riavviarla.
-
-Per farlo, utilizza l'azione nova stop e poi nova start, oppure forza il riavvio.
-
-
-```
+```bash
 nova reboot --hard myinstance01
 ```
 
+> [!alert]
+>
+> A "soft" reboot is not sufficient for this task.
+>
 
+To make sure the boot order has been properly set on the volume, you can verify the mount points with the following command:
 
-## Attenzione:
-Un reboot "soft" non è sufficiente perché la modifica diventi effettiva.
-Per verificare il corretto ordine di avvio, controlla i punti di mount.
-
-
-```
+```bash
 $ lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 252:0 0 10G 0 disk
-└─vda1 252:1 0 10G 0 part
-vdb 252:16 0 15G 0 disk
-└─vdb1 252:17 0 15G 0 part /
+NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda    252:0    0  10G  0 disk
+└─vda1 252:1    0  10G  0 part
+vdb    252:16   0  15G  0 disk
+└─vdb1 252:17   0  15G  0 part /
 ```
 
+The mount point **/** is properly mounted from **/dev/vdb1**.
 
-Il punto di mount / è configurato correttamente su /dev/vdb1.
+## Go further
 
-
-## 
-
-- [Aumenta la spazio del tuo disco aggiuntivo]({legacy}1865)
-
-
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.

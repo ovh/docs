@@ -19,7 +19,7 @@ Questa guida ti mostra come configurare un dominio sui tuoi container per facili
 
 ## Requisiti necessari
 
-- [Aggiungi storage al tuo Cloud](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/)
+- [Aggiungi storage al tuo Cloud](https://docs.ovh.com/it/storage/object-storage/pcs/create-container/)
 - un dominio
 
 
@@ -146,9 +146,4 @@ Il nome del tuo container non può contenere questi caratteri:
 - lettere maiuscole
 - sostuituisci auth-ProjectID con auth_ProjectID
 
-
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
 
