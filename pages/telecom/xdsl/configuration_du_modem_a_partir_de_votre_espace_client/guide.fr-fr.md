@@ -3,10 +3,10 @@ title: "Configurer sa box à partir de l'espace client OVHcloud"
 slug: configuration_du_modem_a_partir_de_votre_espace_client
 excerpt: "Découvrez comment paramétrer à distance votre box OVHcloud depuis l'espace client"
 section: 'Configuration de mon offre'
-updated: 2022-12-08
+updated: 2023-03-29
 ---
 
-**Dernière mise à jour le 08/12/2022**
+**Dernière mise à jour le 29/03/2023**
 
 ## Objectif
 
@@ -88,7 +88,7 @@ Personnalisez alors les champs pour modifier la configuration du réseau Wi-Fi. 
 |Activer le Wi-Fi|Utilisez les boutons « Oui » ou « Non » pour activer ou désactiver le réseau Wi-Fi.|
 |Identifiant de réseau ou SSID|Il s'agit du nom de votre réseau Wi-Fi. Celui-ci apparaîtra sur vos appareils lorsque vous afficherez la liste des réseaux disponibles. Vous avez la possibilité de personnaliser ce nom si vous le souhaitez.|
 |Visibilité du réseau|Permet de rendre visible ou de masquer la diffusion du nom du réseau Wi-Fi. Si vous décidez de le masquer, celui-ci n'apparaîtra plus dans la liste des réseaux disponibles sur vos appareils. Pour vous connecter une première fois à ce réseau, vous devrez le paramétrer manuellement sur vos appareils.|
-|Sécurité|Il s'agit du type de sécurité de votre réseau Wi-Fi. Pour une utilisation optimale, nous vous recommandons le `WPA2`. Pour des raisons de sécurité, nous vous déconseillons le `WEP`.|
+|Sécurité|Il s'agit du type de sécurité de votre réseau Wi-Fi. Pour une utilisation optimale, nous vous recommandons le `WPA3` si votre modem le supporte ou le `WPA2`.|
 |Clé Wi-Fi|Permet de changer la clé Wi-Fi par celle de votre choix. Vous devrez également la confirmer.|
 |Canal|Par défaut, le canal est en `Auto` ; la box sélectionne le premier canal disponible. Vous pouvez sélectionner un canal en particulier depuis la liste. Si cela s'avère nécessaire, effectuez plusieurs tests afin de trouver le plus stable et le mieux adapté à votre environnement.|
 
