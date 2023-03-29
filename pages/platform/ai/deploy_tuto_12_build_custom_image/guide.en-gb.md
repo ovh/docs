@@ -26,7 +26,7 @@ This tutorial covers the process of building your own Docker image for AI Deploy
 AI Deploy main goal is to simplify AI models or applications deployment, release them in production, with resiliency and security, in a few seconds.
 Each application is linked to compute resources such as CPUs or GPUs, and can be accessed through an HTTP Endpoint provided by AI Deploy for each app.
 
-In order to be deployed, your model or application **has to be containerized**, inside a Docker image. Containers provide isolation but also flexibility for your deployments.
+In order to be deployed, your model or application **has to be containerised**, inside a Docker image. Containers provide isolation but also flexibility for your deployments.
 The Docker images that you build can be deployed locally, with OVHcloud AI Deploy but also with cloud competitors such as AWS or GCP.
 
 Inside your Docker image, you are free to install almost anything and everything as long as you follow guidelines below.
@@ -44,7 +44,7 @@ AI Deploy accept images from **public** or **private** repositories. In short, w
 Instead of starting from scratch, feel free to start from an existing Docker image, as long as it is compliant with the following guidelines.
 For example, you can start from 'python', from 'alpine' or equivalent.
 
-If you need to work with GPU, please read the next paragraph.
+If you need to work with GPUs, please read the next paragraph.
 
 ### Use specific images with CUDA drivers for GPUs
 
