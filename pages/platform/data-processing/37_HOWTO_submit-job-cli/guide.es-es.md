@@ -58,7 +58,7 @@ consumer_key=my_consumer_key
 Before running your job in the Data Processing platform, you will need to create a container in OVHcloud Object Storage.
 You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/es/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
+Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/es/storage/object-storage/pcs/create-container/){.external} or [Create an object container in Horizon](https://docs.ovh.com/es/storage/object-storage/pcs/create-container/){.external} for more details.
 
 You can also manage your Object storage through command line with the [Openstack Swift API](https://docs.ovh.com/es/storage/object-storage/pcs/getting-started-with-the-swift-api/){.external} 
 
