@@ -552,7 +552,7 @@ Then, you can add the following configuration:
 
 Now, select the `Trigger` button.
 
-![image](airflow-dag-config.png){.thumbnail}
+![image](images/airflow-dag-config.png){.thumbnail}
 
 You can check the **Graph** view or **Grid** view by hovering over links and selecting options.
 
