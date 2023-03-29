@@ -173,7 +173,8 @@ ADD . $foo
 
 Inside your Dockerfile, you will need to expose your model or application so anyone can use it. The easiest way is to expose API via REST endpoint.
 
-Most famous and open source frameworks for exposing API are [Flask]() and [Fast API]()
+Most famous and open source frameworks for exposing API are [Flask](https://flask.palletsprojects.com/) and [FastAPI](https://fastapi.tiangolo.com/).
+
 You can find a basic example in the next chapter, and more advanced tutorials in [AI Deploy documentation](https://docs.ovh.com/gb/en/publiccloud/ai/).
 
 ### Exposing your application with a web frontend
