@@ -2,7 +2,7 @@
 title: 'Exploring the OVHcloud APIs (EN)'
 slug: api-console-exploration
 excerpt: 'Discover how to explore the OVHcloud APIs'
-section: 'Getting started'
+section: 'Primeros pasos'
 order: 02
 updated: 2023-03-27
 routes:
