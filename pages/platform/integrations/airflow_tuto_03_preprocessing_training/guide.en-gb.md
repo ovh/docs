@@ -102,7 +102,7 @@ If you don't want to follow the Docker image building phase, don't worry. We mak
 
 Let's get to the heart of the matter: **Apache AirFlow**.
 
-### Deploy your first AirFlow DAG for AI Training jobs
+### Deploy your AirFlow DAG for AI Training jobs
 
 An Apache AirFlow provider package for `ovhcloud` provider has been created. All classes for this provider package are in `airflow.providers.ovhcloud` Python package.
 
