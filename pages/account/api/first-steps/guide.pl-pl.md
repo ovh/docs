@@ -3,6 +3,7 @@ title: 'Pierwsze kroki z API OVHcloud'
 slug: first-steps-with-ovh-api
 excerpt: 'Dowiedz się, jak korzystać z API OVHcloud'
 section: 'Pierwsze kroki'
+order: 01
 updated: 2022-05-30
 ---
 
