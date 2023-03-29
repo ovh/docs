@@ -4,7 +4,6 @@ slug: volume-backup
 excerpt: Come creare un backup del tuo volume Block Storage dallo Spazio Cliente OVHcloud
 section: Storage
 order: 3
-hidden: true
 updated: 2023-03-29
 ---
 

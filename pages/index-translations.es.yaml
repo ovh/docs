@@ -164,6 +164,7 @@ public-cloud-compute-instance-management-getting-started: Gestión de las instan
 public-cloud-compute-instance-management-control-panel: Gestión de las instancias desde el área de cliente
 public-cloud-compute-instance-management-horizon: Gestión desde Horizon
 public-cloud-compute-instance-management-openstack: Gestión a través de la API OpenStack
+public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutoriales
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Conceptos
