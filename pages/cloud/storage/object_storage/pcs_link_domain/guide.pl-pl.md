@@ -20,7 +20,7 @@ Przewodnik ten wyjaśnia, jak skonfigurować domenę na kontenerach, aby ułatwi
 
 ## Wymagania
 
-- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) (EN)
+- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/pl/storage/object-storage/pcs/create-container/) (EN)
 - Domena
 
 ## W teorii
@@ -145,9 +145,4 @@ W nazwie kontenera nie można używać poniższych znaków:
 - Nie używaj wielkich liter
 - Zamień auth-ProjectID na auth_ProjectID
 
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
 

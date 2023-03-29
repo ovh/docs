@@ -21,7 +21,7 @@ Para beneficiar o mesmo deverá aceder ao website oficial da aplicação
 
 
 ![cyberduck macOS](images/2344.png){.thumbnail}
-Cyberduck é um software para os utilizadores que disponham de um MAC. Se possui uma máquina Windows deverá optar pela utilização do FileZilla: []({legacy}1380)
+Cyberduck é um software para os utilizadores que disponham de um MAC. Se possui uma máquina Windows deverá optar pela utilização do FileZilla: [](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/))
 
 
 ## Interface

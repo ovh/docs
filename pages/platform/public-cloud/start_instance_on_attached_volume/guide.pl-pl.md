@@ -2,92 +2,80 @@
 title: Uruchomienie instancji na przypisanym woluminie
 excerpt: Uruchomienie instancji na przypisanym woluminie
 slug: uruchomienie_instancji_na_przypisanym_woluminie
-legacy_guide_number: g2064
+routes:
+    canonical: 'https://docs.ovh.com/ca/en/public-cloud/start-instance-on-a-volume/'
 section: Zarządzanie w OpenStack CLI
 updated: 2023-01-11
 ---
 
+**Last updated 1st November 2021**
 
-## 
-Serwery cloud są dostarczane z dyskiem domyślnym, który zawiera obraz systemu (Debian 8, Windows 10...). Można korzystać również z dodatkowych woluminów - są to dyski stałe pozwalające na przechowywanie danych. 
+## Objective
 
-Na woluminie można wdrożyć system operacyjny i uruchomić serwer cloud z tego woluminu zamiast z dysku domyślnego.
+Cloud servers come with an original disk that is copied from a system image (Debian 8, Windows 10, etc.). It is also possible to use additional volumes, these are persistent disks that will allow data to be stored.
 
-![](images/img_3704.jpg){.thumbnail}
+It is also possible to deploy an operating system to and from a volume. The cloud server will then start on this volume instead of the original disk.
 
-## Inna funkcjonalność
-OpenStack pozwala na uruchomienie serwera z woluminu. Wystarczy skonfigurować ten wolumin jako wolumin startowy i uruchomić serwer cloud z tego woluminu. 
+**This guide provides you with instructions on how to start an instance on an attached volume.**
 
-Skutkiem ubocznym takiej operacji będzie zniknięcie dysku domyślnego, ponieważ wolumin zajmie jego miejsce. Funkcjonalność opisana w tym przewodniku pozwala na zachowanie dostępu do dysku domyślnego.
+![public-cloud](images/3704.png){.thumbnail}
 
+> [!success]
+>
+> Openstack natively allows you to boot from a volume. 
+> It involves making the volume bootable and starting the instance from this volume.
+> The changes will cause the original disk to disappear as the new volume is taking over.
+> The functionality described in this guide eliminates the need to access the original disk and therefore takes advantage of the volume.
+>
 
-## Wymagania
+## Requirements
 
-- [Pobranie zmiennych środowiskowych OpenStack]({legacy}1852)
-- Wolumin z systemem operacyjnym
+- A volume with an installed image
+- [Setting OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/){.external}
 
+### Configuring the volume
 
+#### Making the volume as the priority device in the boot order.
 
+A metadata must be added to the volume so that the instance can prioritize the volume during the boot phase.
 
-## Oznaczenie woluminu jako priorytetowego w kolejności bootowania
-Do woluminu należy dodać parametr metadata, aby serwer cloud wybierał ten dysk podczas uruchamiania. 
-
-
-```
+```bash
 cinder metadata 897ec71d-bae2-4394-b8c1-4d8fd373a725 set boot_from=True
 ```
 
+### Attaching the volume
+Once the volume has been configured with the metadata `boot_from` to `True`, the volume needs to be attached to the instance.
 
-
-
-## Podłączanie woluminu
-Następnie należy podłączyć wolumin do instancji. 
-
-
-```
+```bash
 nova volume-attach myinstance01 897ec71d-bae2-4394-b8c1-4d8fd373a72
 ```
 
+### Rebooting the instance
+In order for the instance to start on the volume, it will need to be rebooted.
+<br> This can be done by using `nova stop` and `nova start` commands, or by a forced reboot.
 
-
-
-## 
-Aby instancja uruchamiała się z dodatkowego woluminu, należy ją zrestartować. 
-
-Można wykonać polecenia nova stop i nova start, lub wymusić restart.
-
-
-```
+```bash
 nova reboot --hard myinstance01
 ```
 
+> [!alert]
+>
+> A "soft" reboot is not sufficient for this task.
+>
 
+To make sure the boot order has been properly set on the volume, you can verify the mount points with the following command:
 
-## Uwaga
-Restart "soft" nie będzie wystarczający.
-Jeśli chcesz sprawdzić, czy kolejność uruchamiania jest prawidłowa, sprawdź punkty montowania. 
-
-
-```
+```bash
 $ lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 252:0 0 10G 0 disk
-└─vda1 252:1 0 10G 0 part
-vdb 252:16 0 15G 0 disk
-└─vdb1 252:17 0 15G 0 part /
+NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda    252:0    0  10G  0 disk
+└─vda1 252:1    0  10G  0 part
+vdb    252:16   0  15G  0 disk
+└─vdb1 252:17   0  15G  0 part /
 ```
 
+The mount point **/** is properly mounted from **/dev/vdb1**.
 
-Punkt montowania / jest montowany z /dev/vdb1.
+## Go further
 
-
-## 
-
-- [Zwiększenie rozmiaru dodatkowego dysku]({legacy}1865)
-
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Join our community of users on <https://community.ovh.com/en/>.

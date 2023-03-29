@@ -260,4 +260,4 @@ If you want to know more about the Flask framework, please go to this link.
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/go/ovhcloud)
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
