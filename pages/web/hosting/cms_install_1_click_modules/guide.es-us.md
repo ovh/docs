@@ -24,7 +24,7 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 ## Requisitos
 
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) que incluya al menos una base de datos.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 - Utilizar [una versión de PHP compatible](https://docs.ovh.com/us/es/hosting/cambiar-version-php-en-alojamiento-web/) en su alojamiento web.
 - Haber [configurado correctamente su archivo .ovhconfig](https://docs.ovh.com/us/es/hosting/configurar-archivo-ovhconfig/).
 - El directorio (directorio raíz) en el que se instalará el módulo en 1 clic debe estar vacío o no existe actualmente.
@@ -47,7 +47,7 @@ Si quiere instalar un CMS no disponible a través de nuestros "módulos en 1 cli
 
 ### Etapa 2 - acceder a la gestión de "módulos en 1 clic"
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action}, seleccione el alojamiento en el que desea instalar un "módulo en 1 clic" y, seguidamente, haga clic en la pestaña `Módulos en 1 clic`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action}, seleccione el alojamiento en el que desea instalar un "módulo en 1 clic" y, seguidamente, haga clic en la pestaña `Módulos en 1 clic`{.action}.
 
 Aquí encontrará los módulos en 1 clic que haya instalado. Desde ahí podrá gestionar sus módulos en 1 clic e instalar nuevos módulos.
 
@@ -119,7 +119,7 @@ El resto de los datos solicitados para la base de datos son los siguientes:
 > El nombre del servidor de una base de datos Web Cloud Databases comienza por su identificador de cliente de OVHcloud y tiene el siguiente formato: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` donde los **"X"** deben sustituirse por la referencia de su servicio Web Cloud Databases.
 >
 
-- *Nombre de la BD* : este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- *Nombre de la BD* : este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
 - *Puerto* : sitúe sistemáticamente el número **3306** (puerto por defecto) para una base de datos incluida con su alojamiento web. Para una base de datos de una instancia de Web Cloud Databases, consulte [esta guía](https://docs.ovh.com/us/es/clouddb/empezar-con-clouddb/).
 
