@@ -159,7 +159,7 @@ Vérifiez les informations affichées puis cliquez sur `Valider`{.action} si tou
 
 ![Validation de l'installation en mode avancé](images/advanced_installation_summary.png){.thumbnail}
 
-### Étape 4 : personnaliser mon site
+### Étape 4 - personnaliser mon site
 
 L'installation peut prendre une dizaine de minutes.
 
