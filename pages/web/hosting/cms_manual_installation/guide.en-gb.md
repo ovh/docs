@@ -17,9 +17,9 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 >
 > OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
 >
-> This tutorial will help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or the publisher of the CMS that you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or the publisher of the CMS you have chosen to install if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this tutorial.
 >
-> To contact the various CMS publishers listed above, find below the links to their respective official pages:
+> Find below the links to the respective official pages of the CMS mentioned above:
 >
 > - [WordPress](https://wordpress.com/support/){.external}
 > - [Joomla!](https://www.joomla.org/){.external}
@@ -29,10 +29,10 @@ This tutorial will help you install a CMS (Content Management System) like WordP
 
 > [!success]
 >
-> To install your CMS **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), please refer to our documentation on [installing a one-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/).
+> To install your CMS **automatically** from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), please refer to our documentation on [installing a 1-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/).
 >
 
-**Find out how to configure your website by manually installing a CMS.**
+**This tutorial explains how to configure your website by manually installing a CMS.**
 
 ## Requirements
 
@@ -50,9 +50,9 @@ To help you choose your CMS, find below a short description for each of the 4 CM
 
 **WordPress** is typically used to create a website or blog. It is based on PHP technology and includes a range of tools such as a spell checker, as well as plugins for e-commerce, SEO and even your website security.
 
-You can find more information on our [WordPress module](https://www.ovhcloud.com/en-gb/web-hosting/uc-wordpress-website/) page 
+You can find more information on our [WordPress module page](https://www.ovhcloud.com/en-gb/web-hosting/uc-wordpress-website/). 
 
-- Official [WordPress](https://https://wordpress.com/){.external} website 
+- [Official WordPress website](https://https://wordpress.com/){.external}
 
 #### Joomla!
 
@@ -60,36 +60,36 @@ You can find more information on our [WordPress module](https://www.ovhcloud.com
 
 The **Joomla!** community is very large and can provide assistance and services in all areas related to this CMS (help, documentation, technical assistance, themes, etc.)
 
-You can find more information on our [Joomla! module](https://www.ovhcloud.com/en-gb/web-hosting/uc-joomla-website/) page 
+You can find more information on our [Joomla! module page](https://www.ovhcloud.com/en-gb/web-hosting/uc-joomla-website/). 
 
-- Official site of [Joomla!](https://www.joomla.org/){.external}
+- [Official site of Joomla!](https://www.joomla.org/){.external}
 
 #### Drupal
 
 **Drupal** is a free open-source platform under PHP created in 2000. **Drupal** allows you to create dynamic websites quickly.
 
-You can find more information on our [Drupal module](https://www.ovhcloud.com/en-gb/web-hosting/uc-drupal-website/) page 
+You can find more information on our [Drupal module page](https://www.ovhcloud.com/en-gb/web-hosting/uc-drupal-website/). 
 
-- Official [Drupal](https://www.drupal.org/){.external} website 
+- [Official Drupal website](https://www.drupal.org/){.external} 
 
 #### PrestaShop
 
-CMS created in 2005 and dedicated to building e-commerce websites. Apart from the common features of online stores, this software can also be customised with modules, themes and templates. 
+A CMS created in 2005 and dedicated to building e-commerce websites. Apart from the common features of online stores, this software can also be customised with modules, themes and templates. 
 
-You can find more information on our [PrestaShop module](https://www.ovhcloud.com/en-gb/web-hosting/uc-prestashop-website/) page 
+You can find more information on our [PrestaShop module page](https://www.ovhcloud.com/en-gb/web-hosting/uc-prestashop-website/).
 
-- [PrestaShop](https://www.prestashop.com/){.external} official website 
+- [PrestaShop official website](https://www.prestashop.com/){.external} 
 
 > [!warning]
 >
-> Whichever CMS you choose, please note that OVHcloud does not provide support for using these CMSs. If you experience any difficulties, please contact the publisher of the CMS you have chosen directly using the links listed above in this tutorial.
+> Whichever CMS you choose, please note that OVHcloud does not provide support for using the respective software. If you experience any difficulties, please contact the publisher of your chosen CMS directly using the links listed above in this tutorial.
 >
 
-### Step 1 - Prepare for installation <a name="step1"></a>
+### Step 1: Prepare the installation <a name="step1"></a>
 
 To install a CMS on your [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), you will need to make some preparations.
 
-#### 1.1 - Check the “root folder” declaration
+#### 1.1 Check the “root folder” declaration
 
 The “root folder” refers to the directory your future CMS will be installed in on your hosting plan. We recommend choosing an empty directory to avoid conflicts with your other multisite potentials.
 
@@ -100,9 +100,9 @@ Please refer to our documentation, which describes [how to add a multisite on yo
 > If you define a “root folder” name that does not exist on your Web Hosting plan, it will be automatically created in your Web Hosting plan’s FTP storage space.
 >
 
-#### 1.2 - Check the domain name "pointing"
+#### 1.2 Check the domain name resolution
 
-- Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, point to the IP address of your [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- Make sure that the domain name you will use to access your CMS, along with its subdomain “www”, is mapped to the IP address of your [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 To retrieve the IP address of your Web Hosting plan, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section, then select your Web Hosting plan in the `Hosting`{.action} section.<br>
 In the `General information`{.action} box on your right, you will find the IP address of your web hosting plan in the `IPv4`{.action} form.
@@ -111,7 +111,7 @@ If your domain’s active DNS zone is managed in your [OVHcloud Control Panel](h
 
 > [!warning]
 >
-> If you have activated the `CDN`{.action} or `country IP`{.action} options with your domain, use the appropriate IP address by referring to our documentation listing [all shared hosting IP addresses](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/).
+> If you have activated the `CDN`{.action} or `Country IP`{.action} options with your domain, use the appropriate IP address by referring to our documentation listing [all shared hosting IP addresses](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/).
 >
 
 If you are unable to perform these checks, contact the hosting provider for your active DNS zone to update the pointing of your domain name.
@@ -124,11 +124,11 @@ If you are unable to perform these checks, contact the hosting provider for your
 - Get [the information you need to log in to your Web Hosting plan’s FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information).
 - Retrieve access to your Web Hosting plan’s database if it already exists, or create one using our [documentation](https://docs.ovh.com/gb/en/hosting/creating-database/).
 
-#### 1.3 - Install the free FTP client FileZilla
+#### 1.3 Install the free FTP client FileZilla
 
 If you are not already using an FTP client, you can use Filezilla. You can find the free download link and a tutorial on how to use it in our documentation on [using FileZilla with your OVHcloud hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/).
 
-#### 1.4 - Prepare a database <a name="step1-4"></a>
+#### 1.4 Prepare a database <a name="step1-4"></a>
 
 CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/) solutions  include these, with the exception of [the free Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/).
 
@@ -150,9 +150,9 @@ Once you have created the database, retrieve the connection settings (server, da
 > - To connect to a database on a Web Cloud Databases solution, see [this guide](https://docs.ovh.com/gb/en/clouddb/connecting-to-database-on-database-server/).
 >
 
-### Step 2 - start manual installation
+### Step 2: Start the installation
 
-#### 2.1 - Retrieve your CMS source files
+#### 2.1 Retrieve your CMS source files
 
 Go to the CMS publisher’s website to download the source files.
 
@@ -174,7 +174,7 @@ Below are links to the CMS download pages mentioned in this tutorial:
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
-> Then configure the PHP version on your web hosting plan by referring to our guide on [changing PHP versions of a web hosting plan](https://docs.ovh.com/gb/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+> Then configure the PHP version on your web hosting plan by referring to our guide on [Changing a Web Hosting plan’s PHP version](https://docs.ovh.com/gb/en/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
 >
 > If you are already using a PHP version that is equal to or higher than the required PHP version, no changes are required.
 >
@@ -186,22 +186,22 @@ Follow the instructions provided by your CMS publisher until the source files ar
 > If you have other websites hosted on your Web Hosting plan, check that they are compatible with the PHP version you choose for your new CMS.
 >
 
-#### 2.2 - Unzip downloaded source files to new folder
+#### 2.2 Uncompress the downloaded source files to a new folder
 
 >[!primary]
 >
-> To make things easier, in this step, replace the name of the **CMS** folder with the name of the CMS you have chosen for ease of use. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+> To make things easier, replace the name of the **CMS** folder with the name of the CMS you have chosen (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
 >
 
-The downloaded file is in **compressed** (zipped) format. Create a folder named **CMS** on your computer and then **unzip** the contents of the downloaded file into the "**CMS**" folder.
+The downloaded file is in a compressed (zipped) format. Create a folder named **CMS** on your computer and then uncompress the contents of the downloaded file into the **CMS** folder.
 
 To do this, open the folder in which you downloaded the compressed file, right-click on the file in question and then select “Extract all... ”.
 
-Enter the destination "**CMS**" folder to extract your files to that folder.
+Enter the destination **CMS** folder to extract your files to that folder.
 
-#### 2.3 - Move the source files from the "CMS" folder to the "root folder" on your web hosting plan
+#### 2.3 Move the source files from the CMS folder to the root folder of your web hosting plan
 
-Once you have unpacked the files in your "**CMS**" folder, [log in to your storage space via FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) using [FTP FileZilla client](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/) then copy the files in the "**CMS**" folder to the "root folder" you defined on your hosting in [step 1](#step1) of this guide.
+Once you have unpacked the files in your **CMS** folder, [log in to your storage space via FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) using [FTP FileZilla client](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/) and copy the files from the **CMS** folder to the root folder you defined on your hosting in [step 1](#step1) of this guide.
 
 Below is an example with the CMS *WordPress*:
 
@@ -209,7 +209,7 @@ Below is an example with the CMS *WordPress*:
 
 >[!warning]
 >
-> We strongly recommend that you use an empty "root folder" to avoid any conflicts with another of your websites. Ensure that the destination folder does not contain any items before moving the files.
+> We strongly recommend that you use an empty root folder to avoid conflicts with other websites. Ensure that the destination folder does not contain any items before moving the files.
 >
 
 >[!primary]
@@ -218,12 +218,12 @@ Below is an example with the CMS *WordPress*:
 >
 > It may take a few minutes to upload files to your web hosting plan.
 >
-> Once the transfer is complete, check that all the elements in the local "**CMS**" folder have been correctly transferred to the root folder on your Web Hosting plan.
+> Once the transfer is complete, check that all the elements in the local **CMS** folder have been correctly transferred to the root folder on your Web Hosting plan.
 >
 
-**Special Case**: If you have a limited internet speed and/or a hosting plan **Pro** or higher, you can use the **SSH** connection to put your CMS source files in your Web Hosting plan’s storage space. 
+**Special Case**: If you have a limited internet speed and/or a hosting plan **Pro** or higher, you can use **SSH** connection to put your CMS source files in your Web Hosting plan’s storage space. 
 
-To log in to your hosting plan via SSH, please refer to our guide to [logging in via SSH from an OVHcloud shared hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/).
+To log in to your hosting plan via SSH, please refer to our guide on [Accessing a web hosting plan via SSH](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/).
 
 Once you have logged in via **SSH**, run the following commands:
 
@@ -250,8 +250,8 @@ cd NameOfYourTargetFolder
 >> wget https://downloads.joomla.org/cms/joomla4/4-2-8/Joomla_4-2-8-Stable-Full_Package.tar.gz
 >> ```
 >> 
->> **Joomla4** and **4-2-8** are the latest version of Joomla! available.
->> Replace these values with the values you want to install.
+>> **Joomla4** and **4-2-8** are the latest versions of Joomla!.
+>> Replace these values with the version you want to install.
 >> 
 > **Drupal**
 >> 
@@ -259,8 +259,8 @@ cd NameOfYourTargetFolder
 >> wget https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.4.tar.gz
 >> ```
 >> 
->> **8.x-2.4** is the latest version of Drupal available as of the date.
->> Replace this value with the one you want to install.
+>> **8.x-2.4** is the latest version of Drupal available to date.
+>> Replace this value with the version you want to install.
 >> 
 > **PrestaShop**
 >> 
@@ -268,10 +268,10 @@ cd NameOfYourTargetFolder
 >> wget https://github.com/PrestaShop/PrestaShop/archive/1.7.8.8.tar.gz
 >> ```
 >> 
->> **1.7.8.8** is the latest version of PrestaShop available as of the date. Replace this value with the one you want to install.
+>> **1.7.8.8** is the latest version of PrestaShop available to date. Replace this value with the version you want to install.
 >> 
 
-- Unzip the source files of your CMS into your "root folder" using the command corresponding to the CMS you have chosen:
+- Unpack the source files of your CMS into your root folder using the command corresponding to the CMS you have chosen:
 
 > [!tabs]
 > **WordPress**
@@ -299,7 +299,7 @@ cd NameOfYourTargetFolder
 >> ```
 >> 
 
-- A **CMS** folder is created in your "root folder". Move its contents to the base of your "root folder":
+- A **CMS** folder is created in your root folder. Move its contents to the base of your root folder:
 
 ```bash
 mv CMS/* ./
@@ -335,7 +335,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Step 3 - Finalise manual installation <a name="step3"></a>
+### Step 3: Finalise the installation <a name="step3"></a>
 
 > [!success]
 >
@@ -344,12 +344,12 @@ rmdir ./CMS/
 
 From this stage onwards, the procedure will differ depending on which CMS you have chosen beforehand.
 
-To continue with the installation, follow one of the following links by clicking on the guide corresponding to your CMS:
+To continue with the installation, follow the guide corresponding to your CMS:
 
-- [Finalise WordPress installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_wordpress/)
-- [Finalise Joomla! installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla/)
-- [Finalise Drupal installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_drupal/)
-- [Finalise PrestaShop installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_prestashop/)
+- [Finalise a WordPress installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_wordpress/)
+- [Finalise a Joomla! installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla/)
+- [Finalise a Drupal installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_drupal/)
+- [Finalise a PrestaShop installation](https://docs.ovh.com/gb/en/hosting/cms_manually_install_prestashop/)
 
 ## Go further <a name="go-further"></a>
 
