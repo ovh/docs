@@ -163,7 +163,7 @@ In our case, the exact cURL code is:
 
 ```bash
  curl --request POST
-    --url https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.training.ai.cloud.ovh.net
+    --url https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.ai.cloud.ovh.net
     -H "Authorization: Bearer WixOC/dmSoK3d0YSd20UvLMzbSVxMTMosnz6FcBQOQDlqxAsR5BezCVKtYfu18e"
     --header 'Content-Type: application/json'
     --data ' "Elea" '
@@ -186,7 +186,7 @@ import requests
 import json
 from requests.structures import CaseInsensitiveDict
 
-url = "https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.training.ai.cloud.ovh.net"
+url = "https://9b5b651e-8514-43d0-ae68-af801771542f.app.gra.ai.cloud.ovh.net"
 
 headers = CaseInsensitiveDict()
 headers = {'content-type': 'application/json',

@@ -280,7 +280,7 @@ docker tag <image-identifier> <registry>/<image-identifier>
 docker push <registry>/<image-identifier>
 ```
 
-Example: If you want to push an image named `custom-image` inside a registry `registry.gra.training.ai.cloud.ovh.net`:
+Example: If you want to push an image named `custom-image` inside a registry `registry.gra.ai.cloud.ovh.net`:
 
 ```{.console}
 # Add a new registry into OVHcloud AI Tools

@@ -101,9 +101,9 @@ To install the CLI for OVHcloud AI Tools, you can check this and follow the subs
 
 For your information, two regions are available: `bhs` and `gra`.
 
-- **Your cluster location is `gra`:** Go to this [page](https://cli.gra.training.ai.cloud.ovh.net/).
+- **Your cluster location is `gra`:** Go to this [page](https://cli.gra.ai.cloud.ovh.net/).
 
-- **Your cluster location is `bhs`:** Go to this [page](https://cli.bhs.training.ai.cloud.ovh.net/).
+- **Your cluster location is `bhs`:** Go to this [page](https://cli.bhs.ai.cloud.ovh.net/).
 
 You have to choose the zip file corresponding to your operating system. Then unzip your file by running the following command in a terminal:
 

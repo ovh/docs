@@ -359,7 +359,7 @@ You can add `/docs` at the end of the url of your app.
 
 > [!primary]
 >
-> In our example, the url is as follows: `https://ba2ef330-3e95-444a-a81b-7ca83dff5836.app.gra.training.ai.cloud.ovh.net/docs`
+> In our example, the url is as follows: `https://ba2ef330-3e95-444a-a81b-7ca83dff5836.app.gra.ai.cloud.ovh.net/docs`
 >
 
 It provides a complete dashboard for interacting with the API!

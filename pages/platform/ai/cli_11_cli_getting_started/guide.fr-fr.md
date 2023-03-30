@@ -119,8 +119,8 @@ Status:
   Infos:
   Transitioned At:
   Duration:        67s
-  Url:             https://fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e.notebook.gra.training.ai.cloud.ovh.net
-  Monitoring Url:  https://monitoring.gra.training.ai.cloud.ovh.net/d/gpu?var-notebook=fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e&from=1622118974763
+  Url:             https://fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e.notebook.gra.ai.cloud.ovh.net
+  Monitoring Url:  https://monitoring.gra.ai.cloud.ovh.net/d/gpu?var-notebook=fa43cdad-97cc-46e7-ac3b-31dd1d7d5a1e&from=1622118974763
   Transitioned At: 27-05-21 12:37
 ```
 

@@ -40,7 +40,7 @@ You can then choose between two methods to install the `ovhai` CLI.
 You can install the `ovhai` CLI with a single command line.
 
 ``` {.console}
-curl https://cli.gra.training.ai.cloud.ovh.net/install.sh | bash
+curl https://cli.gra.ai.cloud.ovh.net/install.sh | bash
 ```
 
 Once done, go to **Step 2**.
@@ -52,7 +52,7 @@ If you encounter any issue with the automated installation you can also install 
 You can also install the cli by following the link below:
 
 ``` {.console}
-https://cli.gra.training.ai.cloud.ovh.net
+https://cli.gra.ai.cloud.ovh.net
 ```
 
 After downloading the right zip for your platform, unzip it and add it to your `PATH`:
