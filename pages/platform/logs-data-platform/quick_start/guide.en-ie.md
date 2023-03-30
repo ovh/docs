@@ -3,10 +3,10 @@ title: Quick start
 slug: quick-start
 order: 1
 section: Get Started
-updated: 2023-01-16
+updated: 2023-03-30
 ---
 
-**Last updated 16th January, 2023**
+**Last updated 30th March, 2023**
 
 ## Objective
 

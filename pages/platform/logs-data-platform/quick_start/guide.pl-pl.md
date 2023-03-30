@@ -5,10 +5,10 @@ order: 1
 section: Get Started
 routes:
     canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/quick-start/'
-updated: 2023-01-16
+updated: 2023-03-30
 ---
 
-**Last updated 16th January, 2023**
+**Last updated 30th March, 2023**
 
 ## Objective
 
