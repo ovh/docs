@@ -67,7 +67,7 @@ Entrez ensuite le mot de passe root.
 
 #### Pour les connexions via la console VNC intégrée dans votre espace client OVHcloud
 
-Pour commencer, [définissez le mot de passe root](#settingtherootpassword)
+Pour commencer, [définissez le mot de passe root](#settingtherootpassword).
 
 Ensuite, accédez à la console VNC :
 
@@ -81,7 +81,7 @@ Rendez-vous dans l’onglet `console VNC`{.action}. A l'invite de commande, rens
 
 #### Pour les connexions utilisant des terminaux Linux
 
-Pour commencer, [définissez le mot de passe root](#settingtherootpassword)
+Pour commencer, [définissez le mot de passe root](#settingtherootpassword).
 
 Activez ensuite l'authentification root et le mot de passe dans votre fichier **sshd_config** :
 

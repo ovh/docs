@@ -27,7 +27,7 @@ Vous pouvez ajouter un serveur secondaire ou remplacer cette configuration par l
 
 - Disposer d'une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
 - Disposer d’un accès administrateur (root) à l’instance via SSH ou RDP.
-- Des connaissances de base en réseau et administration
+- Des connaissances de base en réseau et administration.
 
 ## En pratique
 
