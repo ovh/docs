@@ -16,7 +16,7 @@ On a Windows system, data redundancy is achieved by mirroring the primary disk t
 
 ## Requirements
 
-- A Windows [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with a software mirror
+- A Windows [dedicated server](https://www.ovhcloud.com/en/bare-metal/) with a software mirror
 - Administrative access to the server via RDP
 
 ## Instructions
@@ -37,7 +37,7 @@ The method to use depends on the partition style of your disks. Follow the instr
 
 At the command prompt, open DiskPart:
 
-```
+```cmd
 C:\Windows\system32> diskpart
 ```
 

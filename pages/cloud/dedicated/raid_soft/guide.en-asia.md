@@ -1,7 +1,7 @@
 ---
 title: 'Configuring software RAID'
 slug: raid-soft
-excerpt: 'This guide will help you configure your server’s RAID array in the event that it needs to be rebuilt due to corruption or disk failure.'
+excerpt: 'Find out how to rebuild your server’s drive configuration after a disk replacement'
 section: 'RAID and disks'
 updated: 2022-10-11
 ---
@@ -10,7 +10,7 @@ updated: 2022-10-11
 
 ## Objective
 
-Redundant Array of Independent Disks (RAID) is a utility that mitigates data loss on a server by replicating data across two or more disks.
+Redundant Array of Independent Disks (RAID) is a technology that mitigates data loss on a server by replicating data across two or more disks.
 
 The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
 

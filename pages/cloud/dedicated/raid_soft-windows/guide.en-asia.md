@@ -16,7 +16,7 @@ On a Windows system, data redundancy is achieved by mirroring the primary disk t
 
 ## Requirements
 
-- A Windows [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with a software mirror
+- A Windows [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) with a software mirror
 - Administrative access to the server via RDP
 
 ## Instructions
@@ -37,7 +37,7 @@ The method to use depends on the partition style of your disks. Follow the instr
 
 At the command prompt, open DiskPart:
 
-```
+```cmd
 C:\Windows\system32> diskpart
 ```
 
@@ -66,7 +66,7 @@ DISKPART> list volume
 ```
 
 
-In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/gb/en/dedicated/disk-replacement/) previously.
+In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/asia/en/dedicated/disk-replacement/) previously.
 
 
 > [!primary]
@@ -197,7 +197,7 @@ DISKPART> list volume
  
 ```
 
-In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/gb/en/dedicated/disk-replacement/) previously.
+In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/asia/en/dedicated/disk-replacement/) previously.
 
 > [!primary]
 >
@@ -407,6 +407,7 @@ DISKPART> list volume
 ```
 
 It is best not to restart the server until the rebuild process is complete.
+
 
 
 ## Go further
