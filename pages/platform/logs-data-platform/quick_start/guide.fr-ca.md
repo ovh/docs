@@ -78,7 +78,7 @@ Logs Data Platform supports several logs formats, each one of them has its own a
 - **Cap'n'Proto**: The most efficient log format. this is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
 - **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](../filebeat-logs){.ref}, [Metricbeat](https://www.elastic.co/beats/metricbeat){.external}, [Winlogbeat](https://www.elastic.co/beats/winlogbeat){.external}).
 
-Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS >= 1.1) or use the plain unsecured ones if you can't use a SSL transport.
+Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS >= 1.2) or use the plain unsecured ones if you can't use a SSL transport.
 
 ||Syslog RFC5424|Gelf|LTSV line|LTSV nul|Cap’n’Proto|Beats|
 |---|---|---|---|---|---|---|
