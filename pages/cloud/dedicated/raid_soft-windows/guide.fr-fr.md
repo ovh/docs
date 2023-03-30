@@ -10,20 +10,20 @@ updated: 2023-03-28
 
 ## Objectif
 
-Sur un système Windows, la redondance des données est assurée par mise en miroir du disque principal sur un second disque. Cette configuration est similaire à une configuration en RAID 1 mais ne concerne que deux disques.
+Sur un système Windows, la redondance des données est assurée par la mise en miroir du disque principal sur un second disque. Cette configuration est similaire à une configuration en RAID 1 mais ne concerne que deux disques.
 
-**Ce guide explique comment reconfigurer le miroir de disque de votre système Windows s'il doit être reconstruit en raison d'une corruption ou d'une panne de disque.**
+**Découvrez comment reconfigurer le miroir de disque de votre système Windows s'il doit être reconstruit en raison d'une corruption ou d'une panne de disque.**
 
 ## Prérequis
 
-- Un serveur [dédié Windows](https://www.ovhcloud.com/fr/bare-metal/) avec un miroir logiciel
+- Un [serveur dédié Windows](https://www.ovhcloud.com/fr/bare-metal/) avec un miroir logiciel
 - Accès administratif au serveur via RDP
 
 ## En pratique
 
 Établissez une connexion RDP (Remote Desktop) avec votre serveur.
 
-Une fois connecté, faites un clic droit sur le bouton `Menu`{.action} Démarrer et ouvrez `Exécuter`{.action}.
+Une fois connecté, faites un clic droit sur le bouton du menu `Démarrer`{.action} et ouvrez `Exécuter`{.action}.
 
 ![Software mirror Windows](images/raid-soft-windows-01.png){.thumbnail}
 
@@ -31,7 +31,7 @@ Renseignez "cmd" et cliquez sur `OK`{.action}.
 
 ![Software mirror Windows](images/raid-soft-windows-02.png){.thumbnail}
 
-La méthode à utiliser dépend du style de partition de vos disques. Suivez les instructions de [cette section](#mbr) pour **MBR** ou passez à la section [suivante](#gpt) pour **GPT**. Si vous n'en êtes pas sûr, exécutez `diskpart` à l'invite de commande et entrez `list disk`. Cochez la colonne "Gpt" dans la sortie.
+La méthode à utiliser dépend du style de partition de vos disques. Suivez les instructions de [cette section](#mbr) pour **MBR** ou passez à la section [suivante](#gpt) pour **GPT**. Si vous n'en êtes pas sûr, exécutez `diskpart` dans l'invite de commande et entrez `list disk`. Cochez la colonne "Gpt" dans la sortie.
 
 ### Reconstruction du miroir (schéma de partition MBR) <a name="mbr"></a>
 
@@ -203,8 +203,6 @@ Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été install�
 > Les sections de code suivantes sont fournies à titre d'illustration uniquement, en fonction de l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions en fonction de votre configuration réelle en remplaçant les valeurs dans les commandes par vos identifiants de disque et de volume.
 >
 
-
-
 #### Retrait du disque remplacé de la configuration
  
 ```console
@@ -363,7 +361,7 @@ Leaving DiskPart...
 
 De retour à l'invite de commande, copiez les fichiers de démarrage de la partition de démarrage (EFI) sur le premier disque (`Disk 0`) vers la partition de démarrage sur le second disque (`Disk 1`).
 
-Tapez les 3 commandes suivantes et exécutez-les chacune avec `Entrée` :
+Tapez les 3 commandes suivantes et exécutez-les chacune avec la touche `Entrer` :
  
 ```cmd
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
