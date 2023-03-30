@@ -17,7 +17,7 @@ Sur un système Windows, la redondance des données est assurée par la mise en 
 ## Prérequis
 
 - Un [serveur dédié Windows](https://www.ovhcloud.com/fr/bare-metal/) avec un miroir logiciel
-- Accès administratif au serveur via RDP
+- Un accès administratif au serveur via RDP
 
 ## En pratique
 
@@ -27,11 +27,11 @@ Une fois connecté, faites un clic droit sur le bouton du menu `Démarrer`{.acti
 
 ![Software mirror Windows](images/raid-soft-windows-01.png){.thumbnail}
 
-Renseignez "cmd" et cliquez sur `OK`{.action}.
+Renseignez `cmd` et cliquez sur `OK`{.action}.
 
 ![Software mirror Windows](images/raid-soft-windows-02.png){.thumbnail}
 
-La méthode à utiliser dépend du style de partition de vos disques. Suivez les instructions de [cette section](#mbr) pour **MBR** ou passez à la section [suivante](#gpt) pour **GPT**. Si vous n'en êtes pas sûr, exécutez `diskpart` dans l'invite de commande et entrez `list disk`. Cochez la colonne "Gpt" dans la sortie.
+La méthode à utiliser dépend du type de partition de vos disques. Suivez les instructions de [cette section](#mbr) pour **MBR** ou passez à la [section suivante](#gpt) pour **GPT**. Si vous n'en êtes pas sûr, exécutez la commande `diskpart` dans l'invite de commande et entrez `list disk`. Vérifiez la colonne « Gpt » dans le résultat fourni.
 
 ### Reconstruction du miroir (schéma de partition MBR) <a name="mbr"></a>
 
@@ -41,9 +41,9 @@ La méthode à utiliser dépend du style de partition de vos disques. Suivez les
 C:\Windows\system32> diskpart
 ```
 
-> [!warning]
+> [!alert]
 >
-> DiskPart exécute les commandes sans émettre d'avertissements ou demander confirmation. Toute modification effectuée dans DiskPart est irréversible. La saisie de commandes alors que le mauvais disque ou volume est sélectionné peut donc entraîner une perte immédiate de données et/ou empêcher le démarrage de votre système. Nous vous recommandons de procéder avec prudence et de vérifier chaque commande.
+> DiskPart exécute les commandes sans émettre d'avertissements ou demander de confirmation. Toute modification effectuée dans DiskPart est irréversible. La saisie de commandes alors que le mauvais disque ou volume est sélectionné peut donc entraîner une perte immédiate de données et/ou empêcher le démarrage de votre système. Nous vous recommandons de procéder avec prudence et de vérifier chaque commande.
 >
 
 #### Liste de tous les disques et volumes
@@ -70,9 +70,8 @@ Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été install�
 
 > [!primary]
 >
-> Les sections de code suivantes sont fournies à titre d'illustration uniquement, en fonction de l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions en fonction de votre configuration réelle en remplaçant les valeurs dans les commandes par vos identifiants de disque et de volume.
+> Les sections de code suivantes sont fournies à titre d'illustration uniquement, en fonction de l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions en fonction de votre configuration réelle, en remplaçant les valeurs dans les commandes par vos identifiants de disque et de volume.
 >
-
 
 #### Retrait du disque remplacé de la configuration
 
@@ -107,9 +106,9 @@ DISKPART> list disk
   Disk 1    Online          447 GB   447 GB
  
 ```
- 
+
 #### Initialisation du disque de remplacement
- 
+
 ```console
 DISKPART> select disk 1
  
@@ -124,9 +123,8 @@ DISKPART> convert dynamic
 DiskPart successfully converted the selected disk to dynamic format.
 
 ```
- 
+
 #### Recréation du miroir entre le premier et le second disque
- 
 
 ```console
 DISKPART> select volume c
@@ -145,10 +143,10 @@ DISKPART> list disk
 * Disk 0    Online          447 GB      0 B   *
   Disk 1    Online          447 GB      0 B   *
 
-```  
+```
 
 Répétez cette étape pour chaque volume existant à partir du `Disk 0` que vous souhaitez mettre en miroir sur le `Disk 1`, en utilisant la lettre de lecteur associée (par exemple, *d*, *e*, *f*, etc.).
- 
+
 L’état du volume sera `Rebuild` au cours du processus, ce qui peut prendre plusieurs heures en fonction des données stockées sur le disque. Vous pouvez vérifier l'état dans DiskPart :
  
 ```console
@@ -170,12 +168,12 @@ Il est préférable de ne pas redémarrer le serveur tant que le processus de re
 C:\Windows\system32> diskpart
 ```
 
-> [!warning]
+> [!alert]
 >
-> DiskPart exécute les commandes sans émettre d'avertissements ou demander confirmation. Toute modification effectuée dans DiskPart est irréversible. La saisie de commandes alors que le mauvais disque ou volume est sélectionné peut donc entraîner une perte immédiate de données et/ou empêcher le démarrage de votre système. Nous vous recommandons de procéder avec prudence et de vérifier chaque commande.
+> DiskPart exécute les commandes sans émettre d'avertissements ou demander de confirmation. Toute modification effectuée dans DiskPart est irréversible. La saisie de commandes alors que le mauvais disque ou volume est sélectionné peut donc entraîner une perte immédiate de données et/ou empêcher le démarrage de votre système. Nous vous recommandons de procéder avec prudence et de vérifier chaque commande.
 >
 
-Afficher tous les disques et volumes :
+Affichez tous les disques et volumes :
 
 ```console
 DISKPART> list disk
@@ -204,7 +202,7 @@ Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été install�
 >
 
 #### Retrait du disque remplacé de la configuration
- 
+
 ```console
 DISKPART> select volume c
   
@@ -247,8 +245,8 @@ DISKPART> list volume
 
 #### Initialisation du disque de remplacement
 
-Sur le nouveau disque, créez des partitions par défaut et obligatoires, reflétant le partitionnement existant du premier disque :
- 
+Sur le nouveau disque, créez les partitions par défaut et obligatoires, reflétant le partitionnement existant du premier disque :
+
 ```console
 DISKPART> select disk 1
  
@@ -362,7 +360,7 @@ Leaving DiskPart...
 De retour à l'invite de commande, copiez les fichiers de démarrage de la partition de démarrage (EFI) sur le premier disque (`Disk 0`) vers la partition de démarrage sur le second disque (`Disk 1`).
 
 Tapez les 3 commandes suivantes et exécutez-les chacune avec la touche `Entrer` :
- 
+
 ```cmd
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
@@ -370,7 +368,7 @@ bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:
 ``` 
 
 Relancez alors DiskPart et exécutez les commandes suivantes :
- 
+
 ```console
 DISKPART> select volume s
  
@@ -404,7 +402,6 @@ DISKPART> list volume
 ```
 
 Il est préférable de ne pas redémarrer le serveur tant que le processus de reconstruction n'est pas terminé.
-
 
 ## Aller plus loin
 
