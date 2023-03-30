@@ -789,6 +789,7 @@
                 + [AI Deploy - Apps portfolio](platform/ai/deploy_guide_05_app_portfolio)
                 + [AI Deploy - Billing and lifecycle](platform/ai/deploy_guide_06_billing_concept)
             + [Tutorials](public-cloud-ai-and-machine-learning-ai-deploy-tutorials)
+                + [AI Deploy - Tutorial - Build & use a custom Docker image](platform/ai/deploy_tuto_12_build_custom_image)
                 + [AI Deploy - Tutorial - Build & use a Streamlit image](platform/ai/deploy_tuto_01_streamlit)
                 + [AI Deploy - Tutorial - Deploy a simple app with Flask](platform/ai/deploy_tuto_02_flask)
                 + [AI Deploy - Tutorial - Deploy an app for audio classification task using Streamlit](platform/ai/deploy_tuto_03_streamlit_sounds_classification)

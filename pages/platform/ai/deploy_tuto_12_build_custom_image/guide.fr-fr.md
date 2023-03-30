@@ -1,10 +1,12 @@
 ---
-title: AI Deploy - Tutorial - Build & use a custom Docker image
+title: AI Deploy - Tutoriel - Créer et utiliser une image Docker personnalisée (EN)
 slug: deploy/build-use-custom-image
-excerpt: Explanations on how to build and use your own custom image
-section: AI Deploy - Tutorials
+excerpt: "Explications sur la construction et l'utilisation de votre propre image personnalisée"
+section: AI Deploy - Tutoriels
 order: 00
 updated: 2023-03-29
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/build-use-custom-image/'
 ---
 
 **Last updated 29th March, 2023.**
@@ -15,9 +17,9 @@ This tutorial covers the process of building your own Docker image for AI Deploy
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - A **Public Cloud** project
-- A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users)
+- A [user for AI Deploy](https://docs.ovh.com/fr/publiccloud/ai/users)
 - [Docker](https://www.docker.com/get-started) installed on a personal computer or a virtual machine
 - Knowledge about building a Docker image (see the [official Getting Started guide](https://docs.docker.com/get-started/))
 
@@ -174,7 +176,7 @@ ADD . $foo
 Inside your Dockerfile, you will need to expose your model or application so anyone can use it. The easiest way is to expose API via REST endpoint.
 The most popular open source frameworks for exposing APIs are [Flask]() and [Fast API]().
 
-You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](https://docs.ovh.com/gb/en/publiccloud/ai/).
+You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](https://docs.ovh.com/fr/publiccloud/ai/).
 
 ### Exposing your application with a web frontend
 
@@ -183,7 +185,7 @@ While an API is useful for automation and code, sometimes you will need to expos
 AI Deploy is fully compliant with multiple frontend frameworks, such as [Streamlit](https://streamlit.io/), [Gradio](https://gradio.app/) or [Taipy](https://www.taipy.io/).
 You can of course also build your own frontend with your favourite tools, such as HTML/CSS.
 
-You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](https://docs.ovh.com/gb/en/publiccloud/ai/).
+You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](https://docs.ovh.com/fr/publiccloud/ai/).
 
 ## Basic example: Write your own Dockerfile and build your image
 
@@ -264,7 +266,7 @@ Pushing your image to a registry is needed in order for AI Deploy to pull it.
 
 AI Deploy provides a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
 
-If you prefer using your own private Docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Tools project](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry) before using it.
+If you prefer using your own private Docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Tools project](https://docs.ovh.com/fr/publiccloud/ai/training/add-private-registry) before using it.
 
 The basic commands to push a Docker image to a registry is:
 
@@ -296,7 +298,7 @@ If you want to know the exact commands to push on the shared registry, please co
 
 ## Go further
 
-- Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/).
+- Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](https://docs.ovh.com/fr/publiccloud/ai/deploy/apps-portfolio/).
 
 ## Feedback
 
