@@ -11,7 +11,7 @@ updated: 2023-03-24
 
 ## Objectif
 
-Vous pouvez utiliser l'authentification SSO (*Single Sign-On*) **unique** pour vous connecter à votre compte OVHcloud. Pour activer ces connexions, votre compte et vos comptes Google Workspace doivent être configurés à l'aide des authentifications SAML (*Security Assertion Markup Language*).
+Vous pouvez utiliser l'authentification SSO (*Single Sign-On*) **unique** pour vous connecter à votre compte OVHcloud. Pour activer ces connexions, votre compte OVHcloud et vos comptes Google Workspace doivent être configurés à l'aide des authentifications SAML (*Security Assertion Markup Language*).
 
 **Ce guide vous explique comment associer votre compte OVHcloud à un service Google Workspace externe.**
 
@@ -126,7 +126,7 @@ Votre Google Workspace est maintenant considéré comme fournisseur d'identité 
 > En effet, votre compte OVHcloud vérifie si l'utilisateur s'authentifiant appartient à un groupe existant sur le compte.
 >
 
-Pour cela, vous devez autoriser les groupes qui seront transmis de Google Workspace vers OVHcloud. Ces groupes sontles même que ceux utilisés pour catégoriser vos utilisateurs.
+Pour cela, vous devez autoriser les groupes qui seront transmis de Google Workspace vers OVHcloud. Ces groupes sont les même que ceux utilisés pour catégoriser vos utilisateurs.
 
 Pour cela, connectez vous sur l'interface d'administration de (https://admin.google.com)[Google Workspace] avec votre compte administrateur
 
