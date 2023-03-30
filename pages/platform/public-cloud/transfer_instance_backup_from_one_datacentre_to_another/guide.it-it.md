@@ -19,7 +19,7 @@ In alcuni casi potresti avere la necessità di spostare le tue istanze da un dat
 ## Prerequisiti
 
 * Disporre di un’[istanza Public Cloud OVHcloud](https://www.ovhcloud.com/it/public-cloud/)
-* Avere accesso in SSH al datacenter (root)
+* Avere accesso in SSH all'istanza/al sistema operativo (root)
 * Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/) (consigliato)
 
 > [!primary]
@@ -31,7 +31,7 @@ I comandi utilizzati in questa guida sono basati sulla CLI OpenStack e non sulle
 
 ### Crea un backup
 
-Per prima cosa accedi al datacenter via SSH e visualizza l’elenco delle istanze esistenti tramite il comando:
+Per prima cosa accedi all'istanza/al sistema operativo via SSH e visualizza l’elenco delle istanze esistenti tramite il comando:
 
 ```
 #root@server:~$ openstack server list
