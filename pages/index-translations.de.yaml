@@ -164,6 +164,7 @@ public-cloud-compute-instance-management-getting-started: Verwaltung von Instanz
 public-cloud-compute-instance-management-control-panel: Verwaltung über das OVHcloud Kundencenter
 public-cloud-compute-instance-management-horizon: Verwaltung über Horizon
 public-cloud-compute-instance-management-openstack: Verwaltung über OpenStack
+public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutorials
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Konzepte

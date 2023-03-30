@@ -4,7 +4,6 @@ slug: volume-backup
 excerpt: "Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta"
 section: Przestrzeń dyskowa
 order: 3
-hidden: true
 updated: 2023-03-29
 ---
 

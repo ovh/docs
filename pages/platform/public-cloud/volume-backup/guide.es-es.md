@@ -4,7 +4,6 @@ slug: volume-backup
 excerpt: Cómo crear una copia de seguridad de su volumen Block Storage desde el área de cliente
 section: Almacenamiento
 order: 3
-hidden: true
 updated: 2023-03-29
 ---
 

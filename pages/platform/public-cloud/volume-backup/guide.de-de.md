@@ -4,7 +4,6 @@ slug: volume-backup
 excerpt: "Erfahren Sie hier, wie Sie über Ihr Kundencenter ein Backup Ihres Block Storage Volumes erstellen"
 section: Storage
 order: 3
-hidden: true
 updated: 2023-03-29
 ---
 
