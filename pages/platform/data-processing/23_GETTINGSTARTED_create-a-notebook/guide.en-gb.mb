@@ -10,13 +10,43 @@ order: 03
 
 ## Objective
 
-The OVHcloud Data Processing Notebooks service provides you Jupyter or VSCode notebooks, linked to an Apache Spark environnement, totally configured with an image that can be propagated to all nodes and executors 
+The OVHcloud Data Processing Notebooks service provides you Jupyter or VSCode notebooks, linked to an Apache Spark environnement totally configured that can be propagated to all nodes and executors 
 without any needed installation. This guide will cover the creation of a new notebook.
 
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a Public Cloud user with `administrator`
+- a Public Cloud user with `administrator` role
+- Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details.)
 
 ## Definition
+**Notebooks** are files which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…). Notebooks are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable files which can be run to perform data analysis. It's vastly used across developer world, especially in the data and artificial intelligence fields.
+
+
+
+The advantage compared to doing your own setup is that everything is already installed for you, and that you pay only for your notebooks while they are running.
+
+Each notebook is linked to a **Public Cloud** project and specifies hardware resources along with a machine learning framework and an editor among those available.
+
+You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [OVHcloud APIv6]
+
+## Instructions
+
+### Step 1
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the 'Public Cloud'{.action} section and select the Public Cloud project concerned.
+
+Access the administration UI for your OVHcloud Data Processing by clicking on `Data Processing`{.action} in the left-hand menu and click on `Créer un notebook`
+
+
+### Step 2
+  
+## Go further
+
+
+
+
+
+
+
+Join our community of users on <https://community.ovh.com/en/>.
