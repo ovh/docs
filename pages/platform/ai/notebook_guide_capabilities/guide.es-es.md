@@ -6,7 +6,7 @@ section: AI Notebooks - Guides
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/capabilities/'
-updated: updated: 2023-03-30
+updated: 2023-03-30
 ---
 
 **Last updated 30th March, 2023.**
