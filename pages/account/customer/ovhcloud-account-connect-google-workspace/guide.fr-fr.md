@@ -126,7 +126,7 @@ Votre Google Workspace est maintenant considéré comme fournisseur d'identité 
 > En effet, votre compte OVHcloud vérifie si l'utilisateur s'authentifiant appartient à un groupe existant sur le compte.
 >
 
-Pour cela, vous devez autoriser les groupes qui seront transmis de Google Workspace vers OVHcloud. Ces groupes sont les même que ceux utilisés pour catégoriser vos utilisateurs.
+Pour cela, vous devez autoriser les groupes qui seront transmis de Google Workspace vers OVHcloud. Ces groupes sont les mêmes que ceux utilisés pour catégoriser vos utilisateurs.
 
 Pour cela, connectez vous sur l'interface d'administration de [Google Workspace](https://admin.google.com) avec votre compte administrateur
 
