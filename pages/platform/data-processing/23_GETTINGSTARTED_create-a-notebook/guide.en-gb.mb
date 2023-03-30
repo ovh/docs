@@ -1,1 +1,22 @@
+---
+title: Data Processing Notebooks - Getting started
+slug: notebooks/definition
+excerpt: Learn how to create an Data Processing Notebook
+section: Getting started
+order: 03
+---
 
+**Last updated 28th March, 2023.**
+
+## Objective
+
+The OVHcloud Data Processing Notebooks service provides you Jupyter or VSCode notebooks, linked to an Apache Spark environnement, totally configured with an image that can be propagated to all nodes and executors 
+without needed any installation. This guide will cover the creation of a new notebook.
+
+## Requirements
+
+- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- a Public Cloud user with `administrator` or `AI Training admin` role, see [here](https://docs.ovh.com/gb/en/publiccloud/ai/users/) for more information
+
+## Definition
