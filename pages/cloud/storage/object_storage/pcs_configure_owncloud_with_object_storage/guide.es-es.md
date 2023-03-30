@@ -1,125 +1,127 @@
 ---
-title: Object Storage Swift - Configurar ownCloud con el Object Storage
+title: Object Storage Swift - Configurar ownCloud con el Object Storage (EN)
 excerpt: Configurar ownCloud con el Object Storage
 section: OpenStack Swift Storage Class Specifics
 slug: pcs/configure-owncloud-with-object-storage
-legacy_guide_number: g2000
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/configure-owncloud-with-object-storage/'
 order: 170
 updated: 2022-05-20
 ---
 
+*Last updated 20th May 2022**
 
-##
-[ownCloud](https://owncloud.org/) es una aplicación de almacenamiento online y gestión de archivos, que ofrece funcionalidades como la sincronización entre varios dispositivos. También permite añadir espacios de almacenamiento externo, como el Object Storage de OpenStack.
+## Objective
 
-Esta guía explica cómo configurar su ownCloud con el Object Storage.
+[ownCloud](https://owncloud.org/) is an online storage and file management application.
+This solution offers several features, including synchronisation between multiple devices. You can also add external storage such as OpenStack Object Storage.
 
-
-## Requisitos
-Para seguir todos los pasos de esta guía, es necesario:
-
-
-- descargar el archivo OpenRC desde el área de cliente de OVHxloud u Horizon;
-- [añadir un espacio de almacenamiento](https://docs.ovh.com/es/public-cloud/anadir_espacios_de_almacenamiento/) específico para ownCloud.
+**This guide explains how to configure your ownCloud with Object Storage.**
 
 
+## Requirements
+
+- The OpenRC file, obtained from the [OVHcloud Control Panel](https://docs.ovh.com/es/public-cloud/creation-and-deletion-of-openstack-user/) or [Horizon](https://docs.ovh.com/es/public-cloud/horizon/)
+- [Storage space](https://docs.ovh.com/es/storage/object-storage/pcs/create-container/) dedicated to ownCloud
 
 
-## Instalación
-Para comenzar, instale ownCloud:
+## Instructions
 
+### Installation
 
-```
-root@instance:~$ apt-get install owncloud
-```
+Firstly you have to install ownCloud:
 
-
-
-## Atención:
-Compruebe que utilice los repositorios correctos para que se instale la última versión de ownCloud.
-A continuación, instale MySQL para tener una base de datos, necesaria para ownCloud:
-
-
-```
-root@instance:~$ apt-get install mysql-server
+```bash
+root@instance:~$ apt install owncloud
 ```
 
+> [!primary]
+>
+> Make sure that the repository you use contains the latest version of ownCloud.
+>
 
+To function, OwnCloud must have a MySQL database. If you do not already have one, install it by running this command:
 
-
-## Configuración
-Una vez haya finalizado el procedimiento de instalación, es necesario configurar la base de datos que utilizará ownCloud.
-
-Conéctese a nuestro servidor MySQL con la contraseña «root» configurada al instalarlo:
-
-
+```bash
+root@instance:~$ apt install mysql-server
 ```
+
+### Configuration
+
+To configure the database that will be used by ownCloud, log in to your MySQL server with the root password defined when the server was installed:
+
+
+```bash
 root@instance:~$ mysql -u root -p
 ```
 
+At this point, you can create a new user and a database dedicated to ownCloud:
 
-A continuación podrá crear un nuevo usuario y una base de datos específica para ownCloud:
-
-
-```
-***** Creación del usuario *****
+```sql
+***** Create user *****
 mysql> CREATE USER 'owncloud'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 
-***** Creación de la base de datos *****
+***** Create database *****
 mysql> CREATE DATABASE `owncloud` ;
 
-***** Asignación de todos los permisos al usuario «owncloud» en la base de datos «owncloud» *****
+***** Grant all privileges on "ownCloud" to the "owncloud" database *****
 mysql> GRANT ALL PRIVILEGES ON `owncloud` . * TO 'owncloud'@'localhost';
 ```
 
+Log in to ownCloud on your browser by entering: `http://serverIP/owncloud`:
 
-A continuación, podrá conectarse a la interfaz de ownCloud desde un navegador escribiendo en la barra de direcciones http://I.P.del.servidor/owncloud.
+![ownCloud](images/img_3325.jpg){.thumbnail}
 
-![](images/img_3325.jpg){.thumbnail}
-Desde esta interfaz, realice las acciones que se indican a continuación.
+In this interface:
 
-Cree una cuenta de administrador.
-
-Introduzca el directorio de los datos (opcional si solo quiere utilizar el Object Storage, en cuyo caso puede dejarlo por defecto).
-
-Introduzca las claves de su base de datos.
-
-Después de aceptar, podrá acceder a su interfaz de ownCloud, desde donde podrá activar la aplicación que permite añadir un soporte de almacenamiento externo.
-
-Para ello, haga clic en el botón «Archivos» en la esquina superior izquierda y seleccione «Aplicaciones».
-
-![](images/img_3327.jpg){.thumbnail}
-
-A continuación, en el menú de las aplicaciones no habilitadas, active la aplicación «External storage support».
-
-![](images/img_3328.jpg){.thumbnail}
-
-Configure la aplicación. Para ello, haga clic en su nombre de usuario en la esquina superior derecha y seleccione «Administración».
-
-![](images/img_3326.jpg){.thumbnail}
-
-En la sección «Almacenamiento externo», añada un almacenamiento de tipo «Almacenamiento de objeto OpenStack».
-
-![](images/img_3329.jpg){.thumbnail}
-
-Introduzca los datos, que encontrará en el archivo OpenRC:
+- Create an administrator account.
+- Enter the data directory (optional, if you just want to use the Object Storage, you can leave the default one).
+- Enter your database credentials.
 
 
-- nombre de usuario Horizon, correspondiente al campo OS_USERNAME en el archivo OpenRC;
-- nombre del contenedor previamente creado para ownCloud;
-- nombre de la región en la que se encuentra el contenedor, correspondiente al campo OS_REGION_NAME;
-- nombre del inquilino, correspondiente al campo OS_TENANT_NAME;
-- contraseña del usuario Horizon;
-- nombre del servicio: swift;
-- URL de identidad de punto final, correspondiente al campo «OS_AUTH_URL», es decir, https://auth.cloud.ovh.net/v3.
+After confirming the operation, you can access your OwnCloud interface and activate the application that allows you to add an external storage support.
+
+To do so, click on `File`{.action} on the top left and select `Applications`{.action}:
+
+![ownCloud](images/img_3327.jpg){.thumbnail}
+
+Then enable the `External storage support`{.action} application from the `Disabled` applications menu.
+
+![ownCloud](images/img_3328.jpg){.thumbnail}
+
+Having done so, configure this application by clicking on your username at the top right and selecting `Admin`{.action}:
+
+![ownCloud](images/img_3326.jpg){.thumbnail}
+
+In the `External storage` menu, select `Add storage`{.action} and `OpenStack Object Storage`{.action}:
+
+![ownCloud](images/img_3329.jpg){.thumbnail}
+
+Enter the details from your OpenRC file:
+
+- Your Horizon username which corresponds to the  "OS_USERNAME" field in the OpenRC file
+- The name of your container which you previously created for ownCloud
+- The region that your container is in: "OS_REGION_NAME"
+- The tenant name, corresponding to the "OS_TENANT_NAME" field
+- Your Horizon password
+- The service name corresponding to "Swift"
+- The endpoint address, corresponding to the "OS_AUTH_URL" field or "https://auth.cloud.ovh.net/v3"
 
 
-La «Clave API» y el «Tiempo de espera de solicitudes HTTP» son opcionales.
+The "API key" and the "Maximum waiting time" are optional.
 
-## Recordatorio:
-El contenedor que ha creado previamente deberá estar dedicado a ownCloud, ya que este configurará metadatos específicos en dicho contenedor.
-Cuando haya introducido todos los datos, y si son correctos, el cuadrado rojo situado a la izquierda del nombre pasará a verde.
+> [!primary]
+>
+> The container that you have created must be entirely dedicated to ownCloud because the application will use metadata.
+>
+> Once you've entered all the information and checked that it is correct, the red box in front of your folder name will turn green and will be available in the `External storage` section of your homepage:
+>
 
-Entonces podrá verlo en la página principal, en la sección «Almacenamiento externo».
 
-![](images/img_3330.jpg){.thumbnail}
+![ownCloud](images/img_3330.jpg){.thumbnail}
+
+
+## Go further
+ 
+Join our community of users on <https://community.ovh.com/en/>.
+

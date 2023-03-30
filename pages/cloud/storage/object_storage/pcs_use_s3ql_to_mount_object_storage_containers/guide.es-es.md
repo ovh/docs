@@ -2,7 +2,6 @@
 title: Object Storage Swift - Montar un contenedor de objetos con S3QL
 slug: pcs/use-s3ql-to-mount-object-storage-containers
 section: OpenStack Swift Storage Class Specifics
-legacy_guide_number: g1908
 order: 160
 updated: 2021-10-27
 ---
@@ -22,7 +21,7 @@ Esta guía explica cómo montar un contenedor de objetos como sistema de archivo
 ## Requisitos
 
 - [Crear y eliminar un usuario de OpenStack](https://docs.ovh.com/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
-- [Añadir espacios de almacenamiento](https://docs.ovh.com/es/storage/horizon_crear_un_contenedor_de_objetos/)
+- [Añadir espacios de almacenamiento](https://docs.ovh.com/es/storage/object-storage/pcs/create-container/)
 
 ## Procedimiento
 

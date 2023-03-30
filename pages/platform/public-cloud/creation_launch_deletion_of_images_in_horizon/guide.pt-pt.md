@@ -23,7 +23,7 @@ Esta operação permite-lhe, por exemplo, importar as suas imagens das antigas m
 
 ## Requisitos
 
-- [Criar um acesso ao Horizon]({legacy}1773)
+- [Criar um acesso ao Horizon](https://docs.ovh.com/pt/public-cloud/horizon/)
 - Aceder ao menu Imagens da interface OpenStack Horizon
 
 ![public-cloud](images/horizon_menu.png){.thumbnail}
@@ -41,10 +41,10 @@ Esta operação permite-lhe, por exemplo, importar as suas imagens das antigas m
 
 Diferentes campos terão de ser preenchidos e alguns deles são obrigatórios (*) e outros facultativos:
 
-- Image name (Nome da imagem) (*)
+- Image name (Nome da imagem) (\*)
 - Image description (Descrição da imagem)
 - Image file (Ficheiro da Imagem) (Envio a partir do seu computador local)
-- Image format (Formato da Imagem) (*):
+- Image format (Formato da Imagem) (\*):
 
 |||
 |---|---|

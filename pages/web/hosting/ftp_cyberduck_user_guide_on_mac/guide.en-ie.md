@@ -21,7 +21,7 @@ To get the application, go to the official Cyberduck website:
 
 
 ![cyberduck macOS](images/2344.png){.thumbnail}
-Cyberduck is an application for Mac users. If you have a machine that uses Windows, use FileZilla instead: []({legacy}1380)
+Cyberduck is an application for Mac users. If you have a machine that uses Windows, use [FileZilla](https://docs.ovh.com/ie/en/hosting/web_hosting_filezilla_user_guide/) instead.
 
 
 ## Interface
