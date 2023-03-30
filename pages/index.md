@@ -119,6 +119,7 @@
             + [AMD SME/SEV on Ubuntu 20](cloud/dedicated/sme_sev_enable_and_use)
         + [RAID and disks](bare-metal-cloud-dedicated-servers-raid-and-disks)
             + [Configuring software RAID](cloud/dedicated/raid_soft)
+            + [Configuring a software mirror (RAID) on Windows](cloud/dedicated/raid_soft-windows)
             + [Managing Hardware RAID](cloud/dedicated/raid_hard)
             + [OVHcloud API & Partitioning](cloud/dedicated/partitioning_ovh)
             + [Creating a Windows partition on a server with hardware RAID](cloud/dedicated/windows_raid_hard)
