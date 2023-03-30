@@ -56,7 +56,7 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez l
 
 ![Choix du module](images/add_a_module.png){.thumbnail}
 
-Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} si besoin.
+Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) si besoin.
 
 Une fois votre domaine correctement ajouté, essayez à nouveau d'ajouter un « module en 1 clic ».
 
