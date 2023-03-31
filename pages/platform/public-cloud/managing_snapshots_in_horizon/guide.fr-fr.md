@@ -50,4 +50,4 @@ Cliquez ensuite sur la flèche déroulante à côté du snapshot à supprimer et
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

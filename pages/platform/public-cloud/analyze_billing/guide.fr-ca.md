@@ -199,4 +199,4 @@ Trois éléments sont facturés pour ce qui concerne le stockage d'archives :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
