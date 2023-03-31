@@ -579,6 +579,8 @@ You can also click on the `Log` button to check the logs of the three tasks.
 
 Congratulations! You have can now access to the app URL to observe the model evolution with **TensorBoard**.
 
+![image](images/tensorboard-overview.png){.thumbnail}
+
 ## Go further
 
 - How to process your data before training your model into two dependent AI Training jobs? Do it with AirFlow by following this [tutorial](PUT THE LINK_TUTO_3).
