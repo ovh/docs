@@ -27,6 +27,8 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 > Pour installer **manuellement un autre CMS** (WordPress, Joomla!, PrestaShop), consultez notre documentation sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 >
 
+**Découvrez comment installer manuellement votre CMS Drupal**
+
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) qui contient au moins une base de données.
@@ -40,7 +42,6 @@ Vous trouverez ici tous les éléments pour installer manuellement le CMS (Conte
 Pour installer le CMS **Drupal** sur votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), quelques préparatifs sont nécessaires.
 
 Suivez l'**ensemble des étapes** décrites dans notre tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) avant de poursuivre à l'étape 2 ci-dessous.
-
 
 ### Etape 2 - finaliser l'installation manuelle <a name="step2"></a>
 
@@ -85,7 +86,6 @@ Munissez-vous des identifiants de votre base de données (au besoin, consultez *
 
 - *Utilisateur de la base de données* : il est identique au nom de la base de données si vous utilisez une base de données incluse avec votre hébergement web. Pour les bases de données créées sur un service Web Cloud Databases, référez-vous aux informations indiquées dans **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
 
-
 - *Mot de passe de la base de données* : vous l'avez vous-même défini lors de la création de votre base de données. Il est possible que vous l'ayez modifié entre temps.
 
 Cliquez sur `Options avancées`{.action} pour découvrir le reste du menu.
@@ -99,12 +99,9 @@ Cliquez sur `Options avancées`{.action} pour découvrir le reste du menu.
 > - Le nom du serveur d'une base de données Web Cloud Databases commence par votre identifiant client OVHcloud et a la forme suivante : `aa00000-XXX.eu.clouddb.ovh.net`, **«aa00000»** correspond à votre identifiant OVHcloud sans le **« -ovh »** et les **« X »** sont à remplacer par le reste de la référence de votre service Web Cloud Databases.
 >
 
-
 - *Numéro de port* : si vous utilisez une base de données incluse avec votre hébergement OVHcloud, laissez par défaut **3306**. Si vous utilisez un service *Web Cloud Databases*, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour récupérer le bon numéro de port.
 
-
 - *Préfixe du nom des tables* : si l'installation se fait avec une toute nouvelle base de données, renseignez le « préfixe » de votre choix. Si vous utilisez une base de données déjà utilisée par un autre site, référez-vous à **l'étape 1.4** du tutoriel sur l'[installation manuelle d'un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) pour ne pas renseigner un « préfixe » de table déjà utilisé dans votre base de données.
-
 
 Cliquez sur `Enregistrer et continuer`{.action}.
 
