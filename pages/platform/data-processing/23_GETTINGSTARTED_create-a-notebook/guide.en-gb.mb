@@ -10,7 +10,7 @@ order: 03
 
 ## Objective
 
-The OVHcloud Data Processing Notebooks service provides you Jupyter or VSCode notebooks, linked to an Apache Spark environnement totally configured that can be propagated to all nodes and executors 
+The OVHcloud Data Processing Notebooks service provides you Jupyter notebooks, linked to an Apache Spark environnement totally configured that can be propagated to all nodes and executors 
 without any needed installation. This guide will cover the creation of a new notebook.
 
 ## Requirements
@@ -50,10 +50,17 @@ Now select the dimensioning necessary for the job:
 (1) Select your notebook 
 (2) Select the cluster size. The dimensioning of the cluster is proposed here as an indication and will be final only when the kernel is selected from JupyterLab.
 
-(3) After configuring your laptop, check in the summary at the top left that all information is correct.
+(3) After configuring your notebook, check in the summary at the top left that all information is correct.
 (4) then click on "create a notebook" to create your notebook. 
 
 ![Create a Notebook 02](images/creating-a-notebook02.png){.thumbnail}
+
+You will be redirected on the notebook dashboard. There you will find information such as the notebook life cycle(1) or the notebook ID(2). 
+To access your note, click on JupyterLab(3).
+
+![Create a Notebook 03](images/creating-a-notebook03.png){.thumbnail}
+
+
 
 
 
