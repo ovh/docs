@@ -36,13 +36,13 @@ This guide explains how to use AirFlow](https://airflow.apache.org/) to orchestr
 ## Instructions
 
 The tutorial is divided into three steps:
-- the development of Python script to train Machine Learning model
-- the creation of Object Storage containers to store Python script and training metrics
-- the creation and launching of the AirFlow DAG to process the data and train the model in AI Training jobs
+- development of Python script to train Machine Learning model
+- creation of Object Storage containers to store Python script and training metrics
+- creation and launching of the AirFlow DAG to process the data and train the model in AI Training jobs
 
 ### Develop your Python code for model training
 
-This example is based on a existing AI Training tutorial to [launch TensorBoard inside a job](https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-tensorboard-inside-job/).
+This example is based on an existing AI Training tutorial to [launch TensorBoard inside a job](https://docs.ovh.com/gb/en/publiccloud/ai/training/tuto-tensorboard-inside-job/).
 
 > [!primary]
 >
@@ -58,21 +58,21 @@ This [Python script](https://github.com/ovh/ai-training-examples/blob/main/jobs/
 > The training of this model will be done in an **AI Training job**. The evolution of this training can be visualized with TensorBoard which will be launched in an **AI Deploy app**.
 >
 
-You have to add the Python code *'train-tensorflow-model.py'* in an object containers before launching the training.
+You have to add the Python code *'train-tensorflow-model.py'* in an object container before launching the training.
 
 ### Create Object Storage containers
 
-You have to create two Object Storage container:
-- `ai_model` - add the following python code `train-tensorflow-model.py`
-- `training_metrics` - empty for the moment. The training metrics will be saved there.
+You have to create two Object Storage containers:
+- `ai_model` - add the following python code `train-tensorflow-model.py`.
+- `training_metrics` - the training metrics will be saved there.
 
 If you want to create it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Object Storage section and [create a new object container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) by clicking `Object Storage` > `Create an object container`.
 
-If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
+If you want to do it with the CLI, just follow [this guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
 
 #### Upload Python file to Object Storage
 
-Create the empty Object Storage container for metrics:
+Create the Object Storage container for your Python script:
 
 ```console
 ovhai data upload GRA ai_model train-tensorflow-model.py
@@ -80,11 +80,16 @@ ovhai data upload GRA ai_model train-tensorflow-model.py
 
 #### Create an empty Object Storage container for metrics
 
-Create the empty Object Storage container for metrics:
+Create the container for metrics:
 
 ```console
 ovhai data upload GRA training_metrics
 ```
+
+> [!primary]
+>
+> The container `training_metrics` should stay empty at first.
+>
 
 Let's get to the heart of the matter: **Apache AirFlow**.
 
@@ -94,7 +99,7 @@ The **AirFlow DAG** will be composed of three tasks based on the `PythonOperator
 
 ![image](images/airflow-custom-dag-detail.png){.thumbnail}
 
-In the next few steps you will see the principal concepts to keep in mind when writing a **DAG** for **OVHcloud AI Tools.** management.
+In the next few steps, you will see the principal concepts to keep in mind when writing a **DAG** for **OVHcloud AI Tools** management.
 
 #### Create a Python file
 
@@ -256,14 +261,14 @@ def deploy_tracking_app(data: str):
 
 #### Create the DAG object
 
-We will now instantiate a **DAG object** to nest the tasks in the pipeline.
+We will now instantiate a **DAG object** to test the tasks in the pipeline.
 
 We pass the following as parameters:
 
-- `dag_id`: it is string which is the unique identifier of the dag.
+- `dag_id`: it is a string which is the unique identifier of the dag.
 - `schedule_interval`: it sets the interval of the next DAG runs created by the scheduler. For more information, refer to this [documentation](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html).
 - `start_date`: it indicates the timestamp from which the scheduler will attempt to backfill.
-- `tags`: it allows you to tag your DAGs and use it for filtering in the UI.
+- `tags`: it allows you to tag your DAGs and use for filtering in the UI.
 
 ```python
 with DAG(
@@ -283,7 +288,7 @@ You will use the `PythonOperator` to create the three distinct tasks:
 - waiting_running_status
 - model_tracking_app
 
-It is now time to define the three tasks to be launched:
+It is now time to define the three tasks to launch:
 
 - **Task 1 - ML model training:**
 
