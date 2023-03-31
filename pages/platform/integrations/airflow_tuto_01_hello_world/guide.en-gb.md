@@ -98,14 +98,14 @@ os.environ["OVH_BEARER"] = "your_bearer"
 
 #### Create a DAG object
 
-We will now instantiate a **DAG object** to nest the tasks in the pipeline.
+We will now instantiate a **DAG object** to test the tasks in the pipeline.
 
 We pass the following as parameters:
 
-- `dag_id`: it is string which is the unique identifier of the dag.
+- `dag_id`: it is a string which is the unique identifier of the dag.
 - `schedule_interval`: it sets the interval of the next DAG runs created by the scheduler. For more information, refer to this [documentation](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html).
 - `start_date`: it indicates the timestamp from which the scheduler will attempt to backfill.
-- `tags`: it allows you to tag your DAGs and use it for filtering in the UI.
+- `tags`: it allows you to tag your DAGs and use for filtering in the UI.
 
 ```python
 with DAG(
