@@ -4,10 +4,10 @@ slug: notebooks/tuto-marine-mammal-sounds-classification
 excerpt: How to classify sounds with AI
 section: AI Notebooks - Tutorials
 order: 06
-updated: 2022-09-01
+updated: 2023-03-31
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 31st March, 2023.**
 
 ## Objective
 
@@ -57,10 +57,11 @@ ovhai data upload <region> <container> <paths>
 
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/sg/en/publiccloud/ai/cli/access-object-storage-data/).
 
-To be able to use the source code below in this article you have to create 2 Object Storage containers mounted as follows:
+To be able to use the source code below in this article you have to create 2 Object Storage containers and a git repository mounted as follows:
 
  - mount point name: `/workspace/data`, permissions: `read & write`
  - mount point name: `/workspace/saved_model`, permissions: `read & write`
+ - mount point name: `/workspace/ai-training-examples`, permissions: `read & write`, Git URL: `https://github.com/ovh/ai-training-examples.git`
 
 `Choose the same region as your object container` > `"One image to rule them all" framework` > `Attach Object Storage containers (the one that contains your dataset)`
 
@@ -69,8 +70,18 @@ If you want to launch it with the CLI, choose the [volume](https://docs.ovh.com/
 ```bash
 ovhai notebook run one-for-all jupyterlab \
   --name <notebook-name> \
-  --gpu <nb-gpus>
+  --gpu <nb-gpus> \
   --volume <container@region/prefix:mount_path:permission>
+```
+
+For example:
+```bash
+ovhai notebook run one-for-all jupyterlab \
+  --name marine-mammal-sounds-classification \
+  --gpu 1 \
+  --volume marine-mammal-sounds@GRA/:/workspace/data:RW:cache \
+  --volume marine-mammal-model@GRA/:/workspace/saved_model:RW:cache \
+  --volume https://github.com/ovh/ai-training-examples.git:/workspace/ai-training-examples:RW
 ```
 
 You can then reach your notebook’s URL once the notebook is running.
