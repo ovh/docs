@@ -41,10 +41,20 @@ Access the administration UI for your OVHcloud Data Processing by clicking on (1
 ![Create a Notebook 00](images/creating-a-notebook00.png){.thumbnail}
 
 On the `Control Panel` the name is randomly choosen, don't forget it.
-Select your framework you want and the area (only 1 avalaible for the moment).
-Select the privacy of your notebook, be careful with your sensitive data when you choose public access.
+Select the (1)framework you want and the (2)area.
+select (3)notebook privacy, be careful with your sensitive data when you choose public access.
 
 ![Create a Notebook 01](images/creating-a-notebook01.png){.thumbnail}
+
+Now select the dimensioning necessary for the job:
+(1) Select your notebook 
+(2) Select the cluster size. The dimensioning of the cluster is proposed here as an indication and will be final only when the kernel is selected from JupyterLab.
+
+(3) After configuring your laptop, check in the summary at the top left that all information is correct.
+(4) then click on "create a notebook" to create your notebook. 
+
+![Create a Notebook 02](images/creating-a-notebook02.png){.thumbnail}
+
 
 
 
