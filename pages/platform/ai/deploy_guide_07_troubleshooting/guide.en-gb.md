@@ -127,7 +127,7 @@ An HTTP endpoint will look like this: `https://<unique_id>.app.gra.ai.cloud.ovh.
 
 Your app will be directly exposed to this HTTP endpoint and linked to a port (by default, port 8080).
 
-Depending on what you deployed, you then just have an API endpoint or a web interface. You can refer to our guide for 
+Depending on what you deployed, you then just have a REST endpoint or a Web interface. You can refer to our [Getting Started guide](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/getting-started/) for full explanations.
 
 ### I'm unable to connect (unauthorized)
 
