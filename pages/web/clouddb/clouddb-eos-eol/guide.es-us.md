@@ -2,14 +2,14 @@
 title: 'Anuncios de fin de venta/vida Web Cloud Databases'
 slug: clouddb-eos-eol
 section: 'Recursos técnicos'
-updated: 2023-03-20
+updated: 2023-04-03
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 20/03/2023**
+**Última actualización: 03/04/2023**
 
 ## Objetivo
 
@@ -30,6 +30,7 @@ Para más información, consulte la [política de fin de vida de las bases de da
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
 |PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|Por determinar|Por determinar|Por determinar|
+|PostgreSQL 14|Por determinar|Por determinar|Por determinar|
 |Redis 6.0|Por determinar|Por determinar|Por determinar|
 |Redis 7.0|Por determinar|Por determinar|Por determinar|
 
