@@ -38,13 +38,13 @@ Restoration of a backup is done by creating a new service and pushing the backup
 
 First you need to go on the overview page of the service you want to restore the backup from.
 
-![Select service](images/service-selection.png){.thumbnail}
+![Select service](images/service-selection-20230331.png){.thumbnail}
 
 ### Step 2: Go to the backup tab
 
 In the tab list click on `Backups`{.action}.
 
-![Service overview](images/service-overview.png){.thumbnail}
+![Service overview](images/service-overview-20230331.png){.thumbnail}
 
 ### Step 3: Select the backup to restore from
 
@@ -54,7 +54,7 @@ Click on the `...`{.action} button corresponding to the chosen backup. Then clic
 > [!warning]
 > The MongoDB service has the option to restore a backup in place, meaning restoring the backup on the same service. This option will rollback ALL data to the state it was in when the backup was done. This can induce data loss.
 
-![Backup tab](images/backup-tab.png){.thumbnail}
+![Backup tab](images/backup-tab-20230331.png){.thumbnail}
 
 ### Step 4: Configure the target service
 
@@ -94,13 +94,13 @@ You will also be offered the ease to choose the most recent date directly.
 
 When restoring a backup you can select another service plan.
 
-![Plan selection](images/plan-selection.png){.thumbnail}
+![Plan selection](images/plan-selection-20230331.png){.thumbnail}
 
 #### Nodes
 
 You can choose to upgrade the node to a bigger flavor.
 
-![Node selection](images/node-selection.png){.thumbnail}
+![Node selection](images/node-selection-20230331.png){.thumbnail}
 
 > [!primary]
 > The flavor downgrade will soon be offered. The limitation being that the targeted flavor must have enough storage to restore the backup.
@@ -118,7 +118,7 @@ Additional storage can be ordered while forking the service.
 
 You can update the network options.
 
-![Options selection](images/option-selection.png){.thumbnail}
+![Options selection](images/option-selection-20230331.png){.thumbnail}
 
 Now click on `Create a fork`{.action} and the new service will be created. Please note that depending on the backup size it can take some time before the service is available.
 
@@ -130,7 +130,7 @@ This new service is now completly independent from the one you forked the backup
 > [!warning]
 > The newly created service does not duplicate IP restrictions nor users which were created on the old service. You will have to recreate those before using your new service.
 
-![Forked service](images/forked-service.png){.thumbnail}
+![Forked service](images/forked-service-20230331.png){.thumbnail}
 
 ## We want your feedback!
 
