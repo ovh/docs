@@ -136,11 +136,18 @@ The `submit_sm` is used by an ESME to submit an SMS to the SMSC for transmission
 | short_message          | 5.2.22   | Yes |
 
 - `source_addr` can be an international number, an alphanumeric number or a shortcode number:
-    - international: those phone numbers are composed of the country identifier and usual number without the first 0 (e.g. +33601020304). They should have `source_addr_ton` = 1 and `source_addr_npi` = 1.
-    - alphanumeric: those phone numbers are composed of letters and numbers (e.g. ovh123). They should have `source_addr_ton` = 3 and `source_addr_npi` = 1.
-    - shortcode: those phone numbers contain between 3 and 8 numbers (e.g. 38069). They should have `source_addr_ton` = 5 and `source_addr_npi` = 1. The shortcode is only set to notify our service that we will have to use one, the real shortcode used to send the sms will be set by the telecom operator.
-
-- `destination_addr` must be an international number (`source_addr_ton` = 1 and `source_addr_npi` = 1).
+    - **alphanumeric**: those phone numbers are composed of letters and numbers (e.g. ovh123).
+        - `source_addr_ton` = 5
+        - `source_addr_npi` = 0
+    - **shortcode**: those phone numbers contain between 3 and 8 numbers (e.g. 38069). The shortcode is only set to notify our service that we will have to use one, the real shortcode used to send the sms will be set by the telecom operator.
+        - `source_addr_ton` = 3
+        - `source_addr_npi` = 1
+    - **international**: those phone numbers are composed of the country identifier and usual number without the first 0 (e.g. 33601020304).
+        - `source_addr_ton` = 1
+        - `source_addr_npi` = 1
+- `destination_addr` must be an international number (e.g. 33600000001).
+    - `source_addr_ton` = 1
+    - `source_addr_npi` = 1
 
 **Optional settings:**
 

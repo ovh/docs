@@ -7,7 +7,7 @@ section: 'Gérer mon offre'
 updated: 2022-08-05
 ---
 
-**Dernière mise à jour le 05/08/2022** 
+**Dernière mise à jour le 05/08/2022**
 
 ## Objectif
 
@@ -125,7 +125,7 @@ Pour obtenir la description d'un code ptt spécifique, vous pouvez utiliser l'AP
 
 Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
 
-Vous retrouverez dans le tableau ci-dessous une liste non-exhaustive des codes ptt principaux.
+Vous retrouverez dans le tableau ci-dessous une liste **non-exhaustive** des codes ptt principaux.
 
 |Code|Description|
 |---|---|
