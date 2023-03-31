@@ -4,10 +4,10 @@ slug: notebooks/tuto-marine-mammal-sounds-classification
 excerpt: How to classify sounds with AI
 section: AI Notebooks - Tutorials
 order: 06
-updated: 2022-09-01
+updated: 2023-03-31
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 31st March, 2023.**
 
 ## Objective
 
