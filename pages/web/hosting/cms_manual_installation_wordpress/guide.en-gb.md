@@ -11,7 +11,7 @@ updated: 2023-03-24
 
 ## Objective
 
-This tutorial will help you install WordPress CMS (Content Management System) manually in just a few steps.
+This tutorial will help you install the WordPress CMS (Content Management System) manually in just a few steps.
 
 > [!warning]
 >
@@ -27,7 +27,7 @@ This tutorial will help you install WordPress CMS (Content Management System) ma
 > To manually **install another CMS** (Joomla!, Drupal, PrestaShop), please refer to our documentation on [installing a CMS manually](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/).
 >
 
-**Find out how to install your WordPress CMS manually**
+**This tutorial explains how to install your WordPress CMS manually.**
 
 ## Requirements
 
@@ -37,20 +37,20 @@ This tutorial will help you install WordPress CMS (Content Management System) ma
 
 ## Instructions
 
-### Step 1 - Prepare for the installation <a name="step1"></a>
+### Step 1: Prepare for the installation <a name="step1"></a>
 
 To install the **WordPress** CMS on your [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), you will need to make some preparations.
 
-Follow **all of steps** described in our tutorial on [installing a CMS manually](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) before continuing with step 2 below.
+Follow **all steps** described in our tutorial on [installing a CMS manually](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) before continuing with step 2 below.
 
-### Step 2 - Finalise the installation <a name="step2"></a>
+### Step 2: Finalise the installation <a name="step2"></a>
 
 > [!success]
 >
 > Before you continue with the installation, clear your web browser cache to avoid any errors.
 >
 
-#### 2.1 - Access your WordPress website via your browser
+#### 2.1 Access your WordPress website via your browser
 
 Enter your domain name into the address bar of your web browser.
 
@@ -60,13 +60,13 @@ If the WordPress source files have been correctly placed in your root folder, th
 
 Select the site language and click `Continue`{.action}.
 
-#### 2.2 - Link your WordPress and your database
+#### 2.2 Link your WordPress to your database
 
 WordPress will ask you to retrieve the login details for your database:
 
 ![hosting](images/WPstart.png){.thumbnail}
 
-Having your database login details ready (if necessary, see **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial), click on `Let's go!`{.action} to continue.
+Have your database login details ready (if necessary, see **Step 1.4** in the [manual installation of a CMS tutorial](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/)). Click on `Let's go!`{.action} to continue.
 
 The following page appears:
 
@@ -76,8 +76,7 @@ Enter the information requested for the database:
 
 - Database name: this name was defined when the database was created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
-- Username: It is identical to the database name if you are using a database included with your web hosting plan.
-For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial.
+- Username: It is identical to the database name if you are using a database included with your web hosting plan. For databases created on Web Cloud Databases, please refer to the information in **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial.
 
 - Password: You defined it yourself when you created your database. You may have modified it in the meantime.
 
@@ -90,7 +89,7 @@ For databases created on Web Cloud Databases, please refer to the information in
 > - The server name of a Web Cloud Databases database starts with your OVHcloud NIC handle and is in the following format: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` where **"XXX"** is to be replaced by the reference of your Web Cloud Databases service.
 >
 
-- Table Prefix: if you are installing WordPress with a new database, you can enter a custom prefix. If you are using a database that is already in use by another website, please refer to **Step 1.4** in the [manual installation of a CMS](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) tutorial to avoid associating WordPress with a table prefix used by another software.
+- Table Prefix: if you are installing WordPress with a new database, you can enter a custom prefix. If you are using a database that is already in use by another website, please refer to **Step 1.4** in the [manual installation of a CMS tutorial](https://docs.ovh.com/gb/en/hosting/hosting_install_your_cms_manually/) to avoid associating WordPress with a table prefix used by another software.
 
 Click `Submit`{.action} to validate the database connection information.
 
@@ -100,7 +99,7 @@ If everything went well, the following page appears:
 
 Click `Launch Installation`{.action}.
 
-#### 2.3 - Configure administrative access to the backend of your WordPress and provide your admin email address
+#### 2.3 Configure administrative access to the backend of your WordPress and provide your admin email address
 
 Once you have set it up, WordPress will ask you for information on your future website and to set up your Administrator account.
 
@@ -118,9 +117,9 @@ Enter the information requested:
 
 Click `Install WordPress`{.action} as soon as you have entered all of the information correctly.
 
-#### 2.4 - Finalise the manual installation and test Administrator access
+#### 2.4 Finalise the manual installation and test Administrator access
 
-Installation is complete if the following page is displayed:
+Installation is complete when the following page is displayed:
 
 ![hosting](images/WPend.png){.thumbnail}
 
