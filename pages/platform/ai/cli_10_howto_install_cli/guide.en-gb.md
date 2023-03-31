@@ -4,10 +4,10 @@ slug: cli/install-client
 excerpt: Learn how to install the CLI to interact with AI Tools
 section: Command Line Interface
 order: 200
-updated: 2022-09-01
+updated: 2023-03-31
 ---
 
-**Last updated 1st September, 2022.**
+**Last updated 31st March, 2023.**
 
 ## Objective
 
@@ -39,8 +39,16 @@ You can then choose between two methods to install the `ovhai` CLI.
 
 You can install the `ovhai` CLI with a single command line.
 
+For bash:
+
 ``` {.console}
 curl https://cli.gra.training.ai.cloud.ovh.net/install.sh | bash
+```
+
+For zsh:
+
+``` {.console}
+curl https://cli.gra.training.ai.cloud.ovh.net/install.sh | zsh
 ```
 
 Once done, go to **Step 2**.
