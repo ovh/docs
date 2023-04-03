@@ -1,6 +1,6 @@
 ---
 title: 'Utilizar una dirección de correo desde Outlook en la Web'
-slug: uso-outlook-en-la-web
+slug: exchange_2016_guia_de_uso_de_outlook_web_app
 excerpt: 'Cómo utilizar una dirección de correo electrónico desde el webmail Outlook en la Web'
 section: 'Primeros pasos'
 order: 04

@@ -1,6 +1,6 @@
 ---
 title: 'Utilizzare un account di posta da "Outlook on the web"'
-slug: utilizzo-owa
+slug: exchange_2016_guida_allutilizzo_di_outlook_web_app
 excerpt: 'Come gestire il tuo indirizzo email dalla Webmail "Outlook on the web"'
 section: 'Per iniziare'
 order: 04

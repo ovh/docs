@@ -1,7 +1,7 @@
 ---
 title: 'Verwendung der Outlook Web App'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Exchange-Adresse mit OWA Webmail verwalten'
-slug: exchange_2016_verwendung_der_outlook_web_app
+slug: verwendung-owa
 section: 'Outlook Web App (OWA)'
 order: 01
 updated: 2021-06-25

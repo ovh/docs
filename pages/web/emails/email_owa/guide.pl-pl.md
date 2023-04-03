@@ -1,6 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail przy użyciu Webmail Outlook Web App (OWA)'
-slug: korzystanie-owa
+slug: exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app
 excerpt: 'Dowiedz się, jak korzystać z konta e-mail przy użyciu Webmail OWA'
 section: 'Pierwsze kroki'
 order: 04

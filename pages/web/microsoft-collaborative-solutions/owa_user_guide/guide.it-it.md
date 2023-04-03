@@ -1,7 +1,7 @@
 ---
 title: 'Guida all’utilizzo di Outlook Web App con un account Exchange'
 excerpt: 'Scopri come gestire il tuo indirizzo Exchange utilizzando la Webmail OWA'
-slug: exchange_2016_guida_allutilizzo_di_outlook_web_app
+slug: utilizzo-owa
 section: 'Utilizzo di Outlook Web App (OWA)'
 order: 01
 updated: 2021-06-25

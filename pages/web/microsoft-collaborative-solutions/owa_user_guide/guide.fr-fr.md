@@ -1,6 +1,6 @@
 ---
 title: 'Consulter son compte E-mail depuis l’interface OWA'
-slug: exchange-2016-guide-utilisation-outlook-web-app
+slug: utilisation-owa
 excerpt: 'Retrouvez ici le detail concernant Outlook Web App'
 section: "Utilisation d'Outlook Web Application (OWA)"
 order: 01

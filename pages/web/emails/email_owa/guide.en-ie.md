@@ -1,6 +1,6 @@
 ---
 title: 'Using the Outlook Web App with an email account'
-slug: using-owa
+slug: exchange_2016_outlook_web_app_user_guide
 excerpt: 'Find out how to manage an email address using OWA webmail'
 section: 'Getting started'
 order: 04
