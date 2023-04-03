@@ -2,7 +2,7 @@
 title: 'Comment finaliser une intervention de maintenance sur serveur dédié'
 slug: esxi-hardening
 excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
-section: 'Sécurité'
+section: 'Diagnostic et mode Rescue'
 order: 5
 updated: 2023-03-07
 ---
