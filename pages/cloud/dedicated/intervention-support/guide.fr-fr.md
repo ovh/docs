@@ -650,8 +650,8 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 - Ouvrir `Network adapters` et selectionner l'adaptateur correspondant à `eth0`
 - Clic droit => Properties > Advanced
 - Repérer `Locally Administered Adress`
-- Renseigner la nouvelles valeur de l'adresse MAC  (chiffres uniquements et sans espaces)
-![win_advanced](images/win_advanced.png){.thumbnail}
+- Renseigner la nouvelles valeur de l'adresse MAC (chiffres uniquements et sans espaces).
+![win_advanced](images/win_advanced_.png){.thumbnail}
 
 #### via WinPE
 
