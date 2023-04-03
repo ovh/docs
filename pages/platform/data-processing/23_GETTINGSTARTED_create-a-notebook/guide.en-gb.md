@@ -76,6 +76,9 @@ Hello World
 ```
 Your code is executed in your browser. You can save your example by clicking in the sub menu `Save`{.action} of the `File` menu.
 
+![Creating a notebook 5](images/Creating-a-notebook05.png){.thumbnail}
+
+
 ### Step 2
   
 ## Go further
