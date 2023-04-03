@@ -11,7 +11,7 @@ updated: 2023-03-10
 
 ## Objective
 
-The purpose of this tutorial is to show how it is possible to train YOLOv7 to recognize **American Sign Language letters**. YOLOv7 is an object detection algorithm. Although closely related to image classification, object detection performs image classification on a more precise scale. Object detection locates and categories features in images.
+The purpose of this tutorial is to show how it is possible to train YOLOv7 to recognize **American Sign Language letters**. YOLOv7 is an object detection algorithm. Although closely related to image classification, object detection performs image classification on a more precise scale. Object detection locates and categorizes features in images.
 
 ![image](images/overview-notebook.png){.thumbnail}
 
@@ -67,7 +67,7 @@ ovhai data upload <region> asl-volov7-model
 
 ### Launch and access Jupyter notebook with Miniconda framework
 
-You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the object storage. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
+You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the Object Storage. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
 
 If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), just follow this [guide](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/definition/).
 

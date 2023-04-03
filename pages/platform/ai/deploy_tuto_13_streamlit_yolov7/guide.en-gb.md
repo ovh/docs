@@ -11,7 +11,7 @@ updated: 2023-03-31
 
 ## Objective
 
-The purpose of this tutorial is to show how to deploy a web service to recognize **Amercian Sign Language letters** using YOLOv7 model.
+The purpose of this tutorial is to show how to deploy a web service to recognize **American Sign Language letters** using YOLOv7 model.
 
 In order to do this, you will use [Streamlit](https://streamlit.io/), a Python framework that turns scripts into a shareable web application. You will also learn how to build and use a custom Docker image for a Streamlit application.
 
@@ -60,7 +60,7 @@ import io
 import os
 ```
 
-Load the **YOLOv7** model and your own weights. Put this function it in **cache**:
+Load the **YOLOv7** model and your own weights. Put this function in **cache**:
 
 ```python
 @st.cache
@@ -175,7 +175,7 @@ pyyaml==6.0
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a `python:3.8` image:
+Your Dockerfile should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from a `python:3.8` image:
 
 ```console
 FROM python:3.8
@@ -200,7 +200,7 @@ Define your default launching command to start the application:
 CMD [ "streamlit" , "run" , "/workspace/main.py", "--server.address=0.0.0.0" ]
 ```
 
-Give correct access rights to **ovhcloud user** (`42420:42420`):
+Give correct access rights to **OVHcloud user** (`42420:42420`):
 
 ```console
 RUN chown -R 42420:42420 /workspace
@@ -242,13 +242,13 @@ Once started, your application should be available on `http://localhost:8501`.
 > **Warning**
 > The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry).
 
-Find the adress of your shared registry by launching this command:
+Find the address of your shared registry by launching this command:
 
 ```console
 ovhai registry list
 ```
 
-Login on the shared registry with your usual openstack credentials:
+Log in to the shared registry with your usual OpenStack credentials:
 
 ```console
 docker login -u <user> -p <password> <shared-registry-address>
