@@ -4,10 +4,10 @@ slug: notebooks/yolov7-sign-language
 excerpt: How to train the YOLOv7 model on a custom dataset with AI Notebooks
 section: AI Notebooks - Tutorials
 order: 11
-updated: 2023-03-10
+updated: 2023-04-03
 ---
 
-**Last updated 31th March, 2023.**
+**Last updated 3rd April, 2023.**
 
 ## Objective
 
@@ -41,7 +41,7 @@ If you want to create it from the [OVHcloud Control Panel](https://www.ovh.com/a
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow this [guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow this [guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data). You have to choose the region, the name of your container and the path where your data is located and use the following commands.
 
 > [!warning]
 >
@@ -102,7 +102,7 @@ You can then reach your notebook’s URL once it is running.
 
 ### Experimenting YOLOv7 notebook
 
-You are know able to train the YOLOv7 model to recognize sign language!
+You are now able to train the YOLOv7 model to recognize sign language!
 
 A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov7/notebook_object_detection_yolov7_asl.ipynb).
 

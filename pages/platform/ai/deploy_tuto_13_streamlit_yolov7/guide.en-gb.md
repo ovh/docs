@@ -4,10 +4,10 @@ slug: deploy/tuto-streamlit-yolov7-sign-language
 excerpt: How to build a sign language recognition app with Streamlit
 section: AI Deploy - Tutorials
 order: 13
-updated: 2023-03-31
+updated: 2023-04-03
 ---
 
-**Last updated 31th March, 2023.**
+**Last updated 3rd April, 2023.**
 
 ## Objective
 
@@ -17,18 +17,18 @@ In order to do this, you will use [Streamlit](https://streamlit.io/), a Python f
 
 For more information on how to train YOLOv7 on a custom dataset, refer to the following [documentation](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov7-sign-language/).
 
-Overview of the Sign Language recognition app:
+Here is an overview of the Sign Language recognition app:
 
 ![Overview](images/overview-streamlit-yolov7-asl.png){.thumbnail}
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an AI Deploy project created inside a Public Cloud project
-- a [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An AI Deploy project created inside a Public Cloud project
+- A [user for AI Deploy](https://docs.ovh.com/gb/en/publiccloud/ai/users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer
-- some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
-- your weights obtained from training YOLOv7 model on the [ASL letters dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1) (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv7](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov7/notebook_object_detection_yolov7_asl.ipynb)
+- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+- Your weights obtained from training YOLOv7 model on the [ASL letters dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1) (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv7](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov7/notebook_object_detection_yolov7_asl.ipynb)
 
 ## Instructions
 
@@ -37,6 +37,7 @@ You are going to follow different steps to build your Streamlit application.
 - More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/).
 - Direct link to the full Python script can be found [here](https://github.com/ovh/ai-training-examples/blob/main/apps/streamlit/sign-language-recognition-yolov7-app/main.py).
 
+> [!warning]
 > **Warning**
 > You must have previously created an `asl-volov7-model` Object Storage container when training your model via [AI Notebooks](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov7-sign-language/).
 >
@@ -215,11 +216,12 @@ Launch the following command from the **Dockerfile** directory to build your app
 docker build . -t yolov7-streamlit-asl-recognition:latest
 ```
 
-> **Note**
-> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
-
-> **Note**
-> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **yolov7-streamlit-asl-recognition:latest**.
+> [!primary]
+> **Notes**
+>
+> - The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
+>
+> - The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **yolov7-streamlit-asl-recognition:latest**.
 
 ### Test it locally (optional)
 
@@ -229,16 +231,18 @@ Launch the following **Docker command** to launch your application locally on yo
 docker run --rm -it -p 8501:8051 --user=42420:42420 yolov7-streamlit-asl-recognition:latest
 ```
 
-> **Note**
-> The `-p 8501:8501` argument indicates that you want to execute a port redirection from the port **8501** of your local machine into the port **8501** of the Docker container. The port **8501** is the default port used by **Streamlit** applications.
-
-> **Note**
-> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behaviour that will occur on **AI Deploy apps**. It executes the Docker container as the specific OVHcloud user (user **42420:42420**).
+> [!primary]
+> **Notes**
+>
+> - The `-p 8501:8501` argument indicates that you want to execute a port redirection from the port **8501** of your local machine into the port **8501** of the Docker container. The port **8501** is the default port used by **Streamlit** applications.
+>
+> - Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behaviour that will occur on **AI Deploy apps**. It executes the Docker container as the specific OVHcloud user (user **42420:42420**).
 
 Once started, your application should be available on `http://localhost:8501`.
 
 ### Push the image into the shared registry
 
+> [!warning]
 > **Warning**
 > The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry).
 
@@ -272,16 +276,16 @@ ovhai app run <shared-registry-address>/yolov7-streamlit-asl-recognition:latest 
 	   --volume asl-volov7-model@GRA/:/workspace/asl-volov7-model:RO
 ```
 
-> **Note**
-> `--default-http-port 8501` indicates that the port to reach on the app URL is the `8501`.
-
-> **Note**
-> `--gpu 1` indicates that we request 4 CPUs for that app.
-
-> **Note**
-> Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
+> [!primary]
+> **Notes**
+>
+> - `--default-http-port 8501` indicates that the port to reach on the app URL is `8501`.
+>
+> - `--gpu 1` indicates that we request 4 CPUs for that app.
+>
+> - Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 
 ## Go further
 
-- You can imagine deploying an app using YOLO models with an other Python framework: **Flask**. Refer to this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/web-service-yolov5/).
+- You can imagine deploying an app using YOLO models with another Python framework: **Flask**. Refer to this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/web-service-yolov5/).
 - Feel free to use **Streamlit** for other AI tasks! Deploy a Speech-to-Text app [here](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/).
