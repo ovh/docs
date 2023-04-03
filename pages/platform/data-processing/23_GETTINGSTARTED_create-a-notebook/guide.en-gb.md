@@ -64,19 +64,26 @@ Once on the notebook, you will be able to choose the size of the cluster. If you
 
 ![Creating a notebook 04](images/Creating-a-notebook04.png){.thumbnail}
 
-Now you can start to enter your code in your code section:
+Now you can start to enter your code in your code section (1):
 ```python
 print("Hello World")
 ```
 
-And run the code by pressing the `▶️`{.action} button:
+And run the code by pressing the `▶️`{.action} button (2):
 
 ```bash
 Hello World
 ```
 Your code is executed in your browser. You can save your example by clicking in the sub menu `Save`{.action} of the `File` menu.
 
-![Creating a notebook 5](images/Creating-a-notebook05.png){.thumbnail}
+![Creating a notebook 05](images/Creating-a-notebook05.png){.thumbnail}
+
+To see all your active kernels, click on the "Terminals and running kernels" menu (3).
+
+To change kernels, click on 'select kernel' (4) and select a new kernel (changing cluster may include additional costs).
+
+At the bottom left, a small summary (5) shows how many kernels are used with which cluster.
+
 
 
 ### Step 2
