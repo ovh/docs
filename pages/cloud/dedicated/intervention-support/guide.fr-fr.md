@@ -1,22 +1,13 @@
 ---
 title: 'Comment finaliser une intervention de maintenance sur serveur dédié'
 slug: esxi-hardening
-excerpt: 'Vous apportez nos retours dexperiences suite aux interventions matériels'
+excerpt: 'Vous apportez nos retours d expériences suite aux interventions matériels'
 section: 'Diagnostic et mode Rescue'
-order: 5
-updated: 2023-03-07
+
 ---
 
 
 
----
-title: 'Comment finaliser une intervention de maintenance sur serveur dédié'
-slug: esxi-hardening
-excerpt: 'Vous apportez nos retours d'experiences suite aux interventions matériels'
-section: 'Diagnostic et mode Rescue'
-order: 5
-updated: 2023-03-07
----
 
 
 ## Objectif
