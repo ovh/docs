@@ -43,7 +43,7 @@ Access the administration UI for your OVHcloud Data Processing by clicking on (1
 
 On the `Control Panel` the name is randomly choosen, don't forget it.
 Select the (1)framework you want and the (2)area.
-select (3)notebook privacy, be careful with your sensitive data when you choose public access.
+Select (3)notebook privacy, be careful with your sensitive data when you choose public access.
 
 ![Create a Notebook 01](images/Creating-a-notebook01.png){.thumbnail}
 
