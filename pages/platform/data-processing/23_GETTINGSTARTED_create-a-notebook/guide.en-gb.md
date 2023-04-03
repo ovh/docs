@@ -74,7 +74,7 @@ And run the code by pressing the `▶️`{.action} button:
 ```bash
 Hello World
 ```
-
+Your code is executed in your browser. You can save your example by clicking in the sub menu `Save`{.action} of the `File` menu.
 
 ### Step 2
   
