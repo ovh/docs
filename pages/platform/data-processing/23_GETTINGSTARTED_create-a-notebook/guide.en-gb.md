@@ -18,7 +18,7 @@ without any needed installation. This guide will cover the creation of a new not
 - a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - a Public Cloud user with `administrator` role
-- Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details.)
+- Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details.
 
 ## Definition
 **Notebooks** are files which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…). Notebooks are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable files which can be run to perform data analysis. It's vastly used across developer world, especially in the data and artificial intelligence fields.
