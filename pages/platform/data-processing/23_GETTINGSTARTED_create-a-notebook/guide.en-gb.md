@@ -38,13 +38,13 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 Access the administration UI for your OVHcloud Data Processing by clicking on (1)`Data Processing`{.action} in the left-hand menu and click on (2)`Créer un notebook`{.action}
 
-![Create a Notebook 00](images/creating-a-notebook00.png){.thumbnail}
+![Create a Notebook 00](images/Creating-a-notebook00.png){.thumbnail}
 
 On the `Control Panel` the name is randomly choosen, don't forget it.
 Select the (1)framework you want and the (2)area.
 select (3)notebook privacy, be careful with your sensitive data when you choose public access.
 
-![Create a Notebook 01](images/creating-a-notebook01.png){.thumbnail}
+![Create a Notebook 01](images/Creating-a-notebook01.png){.thumbnail}
 
 Now select the dimensioning necessary for the job:
 (1) Select your notebook 
