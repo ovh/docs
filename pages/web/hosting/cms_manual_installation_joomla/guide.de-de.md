@@ -36,7 +36,7 @@ Hier finden Sie alle Elemente, um das Content Management System (CMS) Joomla! in
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
-- Über eine [Domainname](https://www.ovhcloud.com/fr/domains/)
+- Über eine [Domainname](https://www.ovhcloud.com/de/domains/)
 - Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt
   
 ## In der praktischen Anwendung
