@@ -25,12 +25,17 @@ En particulier si vos OS sont listés, vous n'aurez plus qu'à suivre la procéd
 
 - Ubuntu
 - CentOS/Alma Linux
-- ESXi
 - SmartOS
 - FreeBSD
-- Proxmox
-- XenServer
 - Gentoo
+
+Virtualisation
+
+- Proxmox (version 6)
+- XenServer
+- ESXi
+- Windows (hyper-V)
+
 
 divers:
 - repérez le nom de vos interfaces réseaux
@@ -325,6 +330,108 @@ root@rescue-bsd:~ # zfs list -t all
 no datasets available
 root@rescue-bsd:~ #
 ```
+### Gentoo
+
+- Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modifier le nouvelles mac-adresses à travers l'OS.
+- booter en mode rescue, et repérer la partition `/` :
+```bash
+root@rescue:~# blkid
+/dev/sda1: UUID="15D6-5706" TYPE="vfat" PARTLABEL="grub" PARTUUID="bf514348-6259-41a4-a73f-ba0c38d45de5"
+/dev/sda2: UUID="15D6-8A6F" TYPE="vfat" PARTLABEL="boot" PARTUUID="7c0cbc80-c09a-4226-b7f2-91689a04250c"
+/dev/sda3: UUID="Q1r3UN-wfmY-QSPI-jIvA-9ybX-IWwk-YNNnUg" TYPE="LVM2_member" PARTLABEL="lvm" PARTUUID="79581bf9-3eb3-4947-9c51-856fb5d72ffa"
+/dev/mapper/vg0-swap: UUID="337409d9-cdc5-4db8-a957-336631d3e7cb" TYPE="swap"
+/dev/mapper/vg0-root: UUID="2b672f12-77be-40c2-a099-487565ffa933" TYPE="xfs"
+root@rescue:~#
+```
+- dans notre exemple, nous voyons que le système utilise `LVM` :
+```bash
+root@rescue:~# lvdisplay
+  --- Logical volume ---
+  LV Path                /dev/vg0/swap
+  LV Name                swap
+  VG Name                vg0
+  LV UUID                X9ttby-08vi-iJVW-aJGP-qnep-PDI9-ohJF6J
+  LV Write Access        read/write
+  LV Creation host, time rescue.ovh.net, 2019-06-03 16:21:38 -0400
+  LV Status              available
+  # open                 0
+  LV Size                128.00 GiB
+  Current LE             32768
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           252:0
+ 
+  --- Logical volume ---
+  LV Path                /dev/vg0/root
+  LV Name                root
+  VG Name                vg0
+  LV UUID                822GLw-DELk-Q1ze-3NJD-1B3W-LT9H-CG8RTO
+  LV Write Access        read/write
+  LV Creation host, time rescue.ovh.net, 2019-06-03 16:21:44 -0400
+  LV Status              available
+  # open                 0
+  LV Size                17.34 TiB
+  Current LE             4545078
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           252:1
+```
+
+- monter la partition `/` identifiée :
+```bash
+root@rescue:~# mount /dev/vg0/root /mnt
+root@rescue:~# ls /mnt
+backups  bin  boot  dev  etc  home  images  images-ear  images-ueba  lib  lib32
+        media  mnt  opt  overlayimages  proc  root  run  sbin  srv  sys  tmp  uploads  usr  var
+```
+
+- Sous Gentoo, les mac-adresses sont présentes dans les 4 fichiers suivants :
+```bash
+root@rescue:~# cat /mnt/etc/systemd/network/
+10-external.link   11-internal.link   50-static.network  51-vrack.network
+root@rescue:~#
+```
+
+- Sauvegarder les fichiers avant de les modifier :
+```bash
+root@rescue:~# cp /mnt/etc/systemd/network/50-static.network /mnt/etc/systemd/network/50-static.network.`date +%s`
+root@rescue:~# cp /mnt/etc/systemd/network/51-vrack.network /mnt/etc/systemd/network/51-vrack.network.`date +%s`
+root@rescue:~# cp /mnt/etc/systemd/network/10-external.link /mnt/etc/systemd/network/10-external.link.`date +%s`
+root@rescue:~# cp /mnt/etc/systemd/network/11-internal.link /mnt/etc/systemd/network/11-internal.link.`date +%s`
+```
+- Mettre à jour les fchiers avec les nouvelles mac-adresses :
+```bash
+root@rescue:~# nano /mnt/etc/systemd/network/50-static.network
+root@rescue:~# nano /mnt/etc/systemd/network/51-vrack.network
+root@rescue:~# nano /mnt/etc/systemd/network/10-external.link
+root@rescue:~# nano /mnt/etc/systemd/network/11-internal.lin
+```
+
+- Demonter les partitions puis reboot :
+```bash
+root@rescue:~# umount /mnt
+root@rescue:~# reboot
+```
+
+#### Retour sur cas pratiques
+
+Dans certaines versions, seul le fichier ` /mnt/etc/udev/rules.d/10-f2c-network.rules` est à modifier :
+```bash
+root@rescue:~# cat /mnt/etc/gentoo-release
+Gentoo Base System release 2.2
+root@rescue:~#
+root@rescue:~# ls /mnt/etc/udev/rules.d/
+10-f2c-network.rules
+root@rescue:~#
+root@rescue:~# cat /mnt/etc/udev/rules.d/10-f2c-network.rules
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{type}=="1", KERNEL=="*", NAME="netpublic0"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{type}=="1", KERNEL=="*", NAME="netprivate0"
+root@rescue:~#
+```
 
 
 ### PROXMOX 6
@@ -456,108 +563,7 @@ Il est nécessaire de vérifier et d'adapter les fichiers suivants :
 `/mnt/etc/sysconfig/network-scripts/interface-rename-data/dynamic-rules.json`
 
 
-### Gentoo
 
-- Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modifier le nouvelles mac-adresses à travers l'OS.
-- booter en mode rescue, et repérer la partition `/` :
-```bash
-root@rescue:~# blkid
-/dev/sda1: UUID="15D6-5706" TYPE="vfat" PARTLABEL="grub" PARTUUID="bf514348-6259-41a4-a73f-ba0c38d45de5"
-/dev/sda2: UUID="15D6-8A6F" TYPE="vfat" PARTLABEL="boot" PARTUUID="7c0cbc80-c09a-4226-b7f2-91689a04250c"
-/dev/sda3: UUID="Q1r3UN-wfmY-QSPI-jIvA-9ybX-IWwk-YNNnUg" TYPE="LVM2_member" PARTLABEL="lvm" PARTUUID="79581bf9-3eb3-4947-9c51-856fb5d72ffa"
-/dev/mapper/vg0-swap: UUID="337409d9-cdc5-4db8-a957-336631d3e7cb" TYPE="swap"
-/dev/mapper/vg0-root: UUID="2b672f12-77be-40c2-a099-487565ffa933" TYPE="xfs"
-root@rescue:~#
-```
-- dans notre exemple, nous voyons que le système utilise `LVM` :
-```bash
-root@rescue:~# lvdisplay
-  --- Logical volume ---
-  LV Path                /dev/vg0/swap
-  LV Name                swap
-  VG Name                vg0
-  LV UUID                X9ttby-08vi-iJVW-aJGP-qnep-PDI9-ohJF6J
-  LV Write Access        read/write
-  LV Creation host, time rescue.ovh.net, 2019-06-03 16:21:38 -0400
-  LV Status              available
-  # open                 0
-  LV Size                128.00 GiB
-  Current LE             32768
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           252:0
- 
-  --- Logical volume ---
-  LV Path                /dev/vg0/root
-  LV Name                root
-  VG Name                vg0
-  LV UUID                822GLw-DELk-Q1ze-3NJD-1B3W-LT9H-CG8RTO
-  LV Write Access        read/write
-  LV Creation host, time rescue.ovh.net, 2019-06-03 16:21:44 -0400
-  LV Status              available
-  # open                 0
-  LV Size                17.34 TiB
-  Current LE             4545078
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           252:1
-```
-
-- monter la partition `/` identifiée :
-```bash
-root@rescue:~# mount /dev/vg0/root /mnt
-root@rescue:~# ls /mnt
-backups  bin  boot  dev  etc  home  images  images-ear  images-ueba  lib  lib32
-        media  mnt  opt  overlayimages  proc  root  run  sbin  srv  sys  tmp  uploads  usr  var
-```
-
-- Sous Gentoo, les mac-adresses sont présentes dans les 4 fichiers suivants :
-```bash
-root@rescue:~# cat /mnt/etc/systemd/network/
-10-external.link   11-internal.link   50-static.network  51-vrack.network
-root@rescue:~#
-```
-
-- Sauvegarder les fichiers avant de les modifier :
-```bash
-root@rescue:~# cp /mnt/etc/systemd/network/50-static.network /mnt/etc/systemd/network/50-static.network.`date +%s`
-root@rescue:~# cp /mnt/etc/systemd/network/51-vrack.network /mnt/etc/systemd/network/51-vrack.network.`date +%s`
-root@rescue:~# cp /mnt/etc/systemd/network/10-external.link /mnt/etc/systemd/network/10-external.link.`date +%s`
-root@rescue:~# cp /mnt/etc/systemd/network/11-internal.link /mnt/etc/systemd/network/11-internal.link.`date +%s`
-```
-- Mettre à jour les fchiers avec les nouvelles mac-adresses :
-```bash
-root@rescue:~# nano /mnt/etc/systemd/network/50-static.network
-root@rescue:~# nano /mnt/etc/systemd/network/51-vrack.network
-root@rescue:~# nano /mnt/etc/systemd/network/10-external.link
-root@rescue:~# nano /mnt/etc/systemd/network/11-internal.lin
-```
-
-- Demonter les partitions puis reboot :
-```bash
-root@rescue:~# umount /mnt
-root@rescue:~# reboot
-```
-
-#### Retour sur cas pratiques
-
-Dans certaines versions, seul le fichier ` /mnt/etc/udev/rules.d/10-f2c-network.rules` est à modifier :
-```bash
-root@rescue:~# cat /mnt/etc/gentoo-release
-Gentoo Base System release 2.2
-root@rescue:~#
-root@rescue:~# ls /mnt/etc/udev/rules.d/
-10-f2c-network.rules
-root@rescue:~#
-root@rescue:~# cat /mnt/etc/udev/rules.d/10-f2c-network.rules
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{type}=="1", KERNEL=="*", NAME="netpublic0"
-SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{type}=="1", KERNEL=="*", NAME="netprivate0"
-root@rescue:~#
-```
 
 ### ESXi
 
