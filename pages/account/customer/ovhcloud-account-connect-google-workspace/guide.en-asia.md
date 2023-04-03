@@ -18,8 +18,8 @@ You can use unique **single sign-on** (SSO) to sign in to your OVHcloud account.
 ## Requirements
 
 - Being an administrator of a Google Workspace service
-- An [OVHcloud account](https://docs.ovh.com/gb/en/customer/create-ovhcloud-account/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud account](https://docs.ovh.com/asia/en/customer/create-ovhcloud-account/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
@@ -84,7 +84,7 @@ Your Google Workspace service now trusts OVHcloud as a service provider. The nex
 
 ### Registering Google Workspace into the OVHcloud account and configuring the connection
 
-To add Google workspace as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+To add Google workspace as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
 Once logged in, click your profile at the top right.
 
@@ -167,7 +167,7 @@ You will then be able to log out of your account and log back in with your Googl
 
 ### Connecting via SSO
 
-On [the OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), enter your [login](https://docs.ovh.com/gb/en/customer/create-ovhcloud-account/#what-is-my-nic-handle) followed by **/idp** without a password and click the `Login`{.action} button.
+On [the OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), enter your [login](https://docs.ovh.com/asia/en/customer/create-ovhcloud-account/#what-is-my-nic-handle) followed by **/idp** without a password and click the `Login`{.action} button.
 
 ![Connection to OVHcloud federation](images/ovhcloud_federation_login_1.png){.thumbnail}
 
@@ -181,12 +181,12 @@ You are now logged in with the same customer ID, but through your Google Workspa
 
 ## Go further
 
-[Creating an OVHcloud account](https://docs.ovh.com/gb/en/customer/create-ovhcloud-account/)
+[Creating an OVHcloud account](https://docs.ovh.com/asia/en/customer/create-ovhcloud-account/)
 
-[Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/gb/en/customer/all-about-your-username/)
+[Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/asia/en/customer/all-about-your-username/)
 
-[Setting and managing your account password](https://docs.ovh.com/gb/en/customer/manage-password/)
+[Setting and managing your account password](https://docs.ovh.com/asia/en/customer/manage-password/)
 
-[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/)
+[Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/asia/en/customer/secure-account-with-2FA/)
 
 Join our community of users on <https://community.ovh.com/en/>.
