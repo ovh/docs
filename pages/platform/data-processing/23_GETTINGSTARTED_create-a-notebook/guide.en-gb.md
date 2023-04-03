@@ -62,7 +62,7 @@ To access your note, click on JupyterLab(3).
 
 Once on the notebook, you will be able to choose the size of the cluster. If you want a reminder of the costs of each driver, refer to the dashboard of your notebook as in the previous part. 
 
-![Creating a notebook 04](images/Creating-a-notebook04.png){.thumbnail}
+![Create a notebook 04](images/Creating-a-notebook04.png){.thumbnail}
 
 Now you can start to enter your code in your code section (1):
 ```python
@@ -76,7 +76,7 @@ Hello World
 ```
 Your code is executed in your browser. You can save your example by clicking in the sub menu `Save`{.action} of the `File` menu.
 
-![Creating a notebook 05](images/Creating-a-notebook05.png){.thumbnail}
+![Create a notebook 05](images/Creating-a-notebook05.png){.thumbnail}
 
 To see all your active kernels, click on the "Terminals and running kernels" menu (3).
 
@@ -86,8 +86,36 @@ At the bottom left, a small summary (5) shows how many kernels are used with whi
 
 
 
-### Step 2
+
+### Stop the Data Processing Notebook
+
+Go back to the OVHcloud Control Panel. In the Data Processing panel you can directly stop the desired notebooks.
+
+![Create a notebook 06](images/Creating-a-notebook06.png){.thumbnail}
   
+### Considerations
+
+- A notebook will run indefinitely until manual interruption, meaning that you will pay for it.
+- When you stop an AI Notebook, you release the compute resources, but we keep the data from your workspace. It will be billed at the price of OVHcloud Object storage.
+- Billing is per minute. Each started minute is due.
+
+## Notebook lifecycle
+
+During its lifetime the Apache Spark Notebook will transition between the following statuses:
+
+> [!primary]
+> * Billing starts once a notebook is `Pending` and ends when its status switches to `Cancelling`.
+> * Only notebooks in states `Pending` and `In service` are included in the resource quota computation.
+
+- `Pending`: The Notebook is starting.
+- `In service`: The Notebook is running and can be accessed from your browser.
+- `Cancelling`: The Notebook is still running, but an interruption order was received.
+- `Stopped`: The Notebook is stopped. Compute resources are released.
+- `Deleted`: The Notebook data is fully deleted, you don't pay anything.
+
+
+### Step 2
+
 ## Go further
 
 
