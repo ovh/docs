@@ -53,16 +53,16 @@ Now select the dimensioning necessary for the job:
 (3) After configuring your notebook, check in the summary at the top left that all information is correct.
 (4) then click on "create a notebook" to create your notebook. 
 
-![Create a Notebook 02](images/creating-a-notebook02.png){.thumbnail}
+![Create a Notebook 02](images/Creating-a-notebook02.png){.thumbnail}
 
 You will be redirected on the notebook dashboard. There you will find information such as the notebook life cycle(1) or the notebook ID(2). 
 To access your note, click on JupyterLab(3).
 
-![Create a Notebook 03](images/creating-a-notebook03.png){.thumbnail}
+![Create a Notebook 03](images/Creating-a-notebook03.png){.thumbnail}
 
 Once on the notebook, you will be able to choose the size of the cluster. If you want a reminder of the costs of each driver, refer to the dashboard of your notebook as in the previous part. 
 
-![Creating a notebook 04](images/creating-a-notebook04.png){.thumbnail}
+![Creating a notebook 04](images/Creating-a-notebook04.png){.thumbnail}
 
 Now you can start to enter your code in your code section:
 ```python
