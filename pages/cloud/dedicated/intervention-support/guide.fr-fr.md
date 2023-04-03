@@ -1,6 +1,6 @@
 ---
 title: 'Comment finaliser une intervention de maintenance sur serveur dédié'
-slug: esxi-hardening
+slug: intervention
 excerpt: 'Vous apportez nos retours d expériences suite aux interventions matériels'
 section: 'Diagnostic et mode Rescue'
 
