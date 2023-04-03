@@ -1,7 +1,7 @@
 ---
-title: Data Processing Notebooks - Getting started
+title: Data Processing Apache Spark Notebooks - Getting started
 slug: Data Processing Apache Spark notebooks/definition
-excerpt: Learn how to create a Data Processing Notebook for Apache Spark
+excerpt: Learn how to create an Apache Spark Notebook
 section: Getting started
 order: 03
 ---
@@ -12,7 +12,7 @@ order: 03
 
 The OVHcloud Data Processing Notebooks service provides you Jupyter notebooks, linked to an Apache Spark environnement totally configured that can be propagated to all nodes and executors 
 without any needed installation.
-This guide will cover the creation of a new notebook.
+This guide will cover the creation of a new Apache Saprk notebook.
 
 ## Requirements
 
@@ -24,13 +24,11 @@ This guide will cover the creation of a new notebook.
 ## Definition
 **Notebooks** are files which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…). Notebooks are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable files which can be run to perform data analysis. It's vastly used across developer world, especially in the data and artificial intelligence fields.
 
-
-
 The advantage compared to doing your own setup is that everything is already installed for you, and that you pay only for your notebooks while they are running.
 
-Each notebook is linked to a **Public Cloud** project and specifies hardware resources along with a machine learning framework and an editor among those available.
+Each notebook is linked to a **Public Cloud** project and specifies hardware resources.
 
-You can create notebooks with the OVHcloud Control Panel (see below in this tutorial) or use the [OVHcloud APIv6]
+You can create notebooks with the OVHcloud Control Panel or use the [OVHcloud APIv6]
 
 ## Instructions
 
@@ -57,11 +55,11 @@ Now select the dimensioning necessary for the job:
 ![Create a Notebook 02](images/Creating-a-notebook02.png){.thumbnail}
 
 You will be redirected on the notebook dashboard. There you will find information such as the notebook life cycle(1) or the notebook ID(2). 
-To access your note, click on JupyterLab(3).
+To access your notebook, click on JupyterLab(3).
 
 ![Create a Notebook 03](images/Creating-a-notebook03.png){.thumbnail}
 
-Once on the notebook, you will be able to choose the size of the cluster. If you want a reminder of the costs of each driver, refer to the dashboard of your notebook as in the previous part. 
+Once on the notebook, you will be able to choose the size of the cluster. if you want to find the cluster costs, refer to the dashboard of your notebook as in the previous part. 
 
 ![Create a notebook 04](images/Creating-a-notebook04.png){.thumbnail}
 
@@ -97,7 +95,7 @@ Go back to the OVHcloud Control Panel. In the Data Processing panel you can dire
 ### Considerations
 
 - A notebook will run indefinitely until manual interruption, meaning that you will pay for it.
-- When you stop an AI Notebook, you release the compute resources, but we keep the data from your workspace. It will be billed at the price of OVHcloud Object storage.
+- When you stop a Apache Spark Notebook, you release the compute resources, but we keep the data from your workspace. It will be billed at the price of OVHcloud Object storage.
 - Billing is per minute. Each started minute is due.
 
 ## Notebook lifecycle
@@ -114,15 +112,8 @@ During its lifetime the Apache Spark Notebook will transition between the follow
 - `Stopped`: The Notebook is stopped. Compute resources are released.
 - `Deleted`: The Notebook data is fully deleted, you don't pay anything.
 
-
 ### Step 2
 
 ## Go further
-
-
-
-
-
-
 
 Join our community of users on <https://community.ovh.com/en/>.
