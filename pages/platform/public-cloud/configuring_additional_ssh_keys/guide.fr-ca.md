@@ -17,7 +17,7 @@ Lors de la création d’une instance, une seule clé SSH peut être configurée
 
 ## Prérequis
 
-- Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
+- Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Avoir accès à votre instance via SSH en tant qu'administrateur (root)
 

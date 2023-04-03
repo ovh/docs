@@ -159,7 +159,7 @@ siptrunk.ovh.net:5060   N       003397232069    1785    Registered  Tue, 24 Mar 
 
 Vous obtenez alors l'information du REGISTER :
 
-![](images/2015-03-24-093012_723x400_scrot.png){.thumbnail}
+![](images/2015-03-24-093012_723x400_scrot2023.png){.thumbnail}
 
 ------------------------------------------------------------------------
 

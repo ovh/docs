@@ -140,22 +140,22 @@ A continuación ofrecemos una lista no exhaustiva de las guías de configuració
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Configuración de una cuenta MXplan en **Windows**:<br>< br>
+>> Configuración de una cuenta MXplan en **Windows**:<br><br>
 >> - [Correo en Windows 10](https://docs.ovh.com/es/emails/configuracion-correo-windows-10/) (incluido con Windows)<br>
 >> - [Outlook para Mxplan](https://docs.ovh.com/es/emails/configuracion-outlook-2016/)
 >> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_thunderbird/) (gratuito)<br>>
->> Configuración de una cuenta MXplan en **macOS**:<br>< br>
+>> Configuración de una cuenta MXplan en **macOS**:<br><br>
 >> - [Mail](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/) (incluido con macOS)<br>
 >> - [Outlook](https://docs.ovh.com/es/emails/configuracion-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_para_thunderbird_en_mac/) (gratuito)<br>
 >>
 > **Exchange**
 >>
->> Configuración de una cuenta Exchange en **Windows** :<br>< br>
+>> Configuración de una cuenta Exchange en **Windows** :<br><br>
 >> - [Correo en Windows 10](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-correo-windows-10/) (incluido con Windows)<br>
 >> - [Outlook](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-outlook-2016/)<br>
 >> - [Thunderbird](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird/) (gratuito)<br>>
->> Configuración de una cuenta Exchange en **macOS**:<br>< br>
+>> Configuración de una cuenta Exchange en **macOS**:<br><br>
 >> - [Mail](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-mail-macos/) (incluido con macOS)<br>
 >> - [Outlook](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-outlook-2016-mac/)<br>
 >> - [Thunderbird](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-configuracion-de-thunderbird-mac/) (gratuito)<br>
@@ -173,12 +173,12 @@ Una vez instalado el cliente de correo, siga las instrucciones que se indican a 
 > **Mail macOS**
 >>
 >> Desde Mail en macOS, cree una carpeta que aparecerá en la sección "En mi Mac" de la columna izquierda. Para ello, consulte la documentación de Apple:<br><br>
->> - [Crear o eliminar buzones de correo en Mail en Mac](https://support.apple.com/es-es/guide/mail/mlhlp1021/15.0/mac/12.0) < br>
+>> - [Crear o eliminar buzones de correo en Mail en Mac](https://support.apple.com/es-es/guide/mail/mlhlp1021/15.0/mac/12.0) <br>
 >>
 > **Thunderbird**
 >>
 >> Desde Windows, macOS o Linux puede mover sus mensajes de correo a una carpeta de la izquierda. Consulte la documentación de Mozilla:<br><br>
->> - [Archivado de mensajes](https://support.mozilla.org/es/kb/mensajes-archivados) < br>
+>> - [Archivado de mensajes](https://support.mozilla.org/es/kb/mensajes-archivados) <br>
 >>
 
 #### Cambiar de plan para aumentar su capacidad <a name="switchingoffer"></a>

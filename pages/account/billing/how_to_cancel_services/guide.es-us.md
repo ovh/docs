@@ -17,7 +17,7 @@ updated: 2022-03-22
 
 Quiere dar de baja uno o varios servicios de OVHcloud. Esta guía explica cómo cancelar la suscripción desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-En primer lugar, consulte la sección "[¿Qué ocurre cuando se da de baja un servicio de OVHcloud?](#consequences)".< br> A continuación, seleccione el producto correspondiente en la sección "[Cómo dar de baja la suscripción?](#terminate)".
+En primer lugar, consulte la sección "[¿Qué ocurre cuando se da de baja un servicio de OVHcloud?](#consequences)".<br> A continuación, seleccione el producto correspondiente en la sección "[Cómo dar de baja la suscripción?](#terminate)".
 
 > [!primary]
 >

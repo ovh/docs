@@ -10,7 +10,7 @@ updated: 2022-08-05
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 05/08/2022** 
+**Ultimo aggiornamento: 05/08/2022**
 
 ## Obiettivo
 
@@ -38,7 +38,7 @@ Un utente API che invia SMS in modo abusivo può essere immediatamente identific
 - I crediti SMS di un utente API possono essere soggetti a restrizioni (quote).
 In questo modo, il proprietario dell’account SMS può ripartire i suoi crediti tra i diversi account di utenti API.
 
-Per gestire al meglio il saldo del tuo account SMS, puoi fissare un limite e una quota agli utenti API. 
+Per gestire al meglio il saldo del tuo account SMS, puoi fissare un limite e una quota agli utenti API.
 
 - La **quota** è la quantità di crediti SMS a disposizione dell’utente API.
 
@@ -128,7 +128,7 @@ Per ottenere la descrizione di un codice ptt specifico, utilizza questa API:
 
 Per maggiori informazioni sull'utilizzo delle API OVHcloud, consulta la nostra guida [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
 
-Nella tabella seguente è riportato un elenco non esaustivo dei codici ptt principali.
+Nella tabella seguente è riportato un elenco **non esaustivo** dei codici ptt principali.
 
 |Codici|Descrizione|
 |---|---|

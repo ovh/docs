@@ -4,10 +4,10 @@ slug: smpp-specifications
 excerpt: 'Découvrez les spécifications techniques du SMPP'
 section: SMPP
 order: 02
-updated: 2023-02-09
+updated: 2023-03-31
 ---
 
-**Dernière mise à jour le 09/02/2023**
+**Dernière mise à jour le 31/03/2023**
 
 ## Objectif
 
@@ -136,10 +136,18 @@ Le `submit_sm` est utilisée par un ESME pour soumettre un SMS au SMSC pour tran
 | short_message          | 5.2.22   | Oui |
 
 - `source_addr` peut être un numéro international, un numéro alphanumérique ou un numéro shortcode :
-    - **international** : ces numéros de téléphone se composent de l'identifiant du pays et du numéro habituel sans le premier 0 (par exemple +33601020304). Ils doivent avoir `source_addr_ton` = 1 et `source_addr_npi` = 1.
-    - alphanumérique : ces numéros de téléphone sont composés de lettres et de chiffres (ex : ovh123). Ils doivent avoir `source_addr_ton` = 3 et `source_addr_npi` = 1.
-    - shortcode: ces numéros de téléphone contiennent entre 3 et 8 numéros (ex : 38069). Ils doivent avoir `source_addr_ton` = 5 et `source_addr_npi` = 1. Le shortcode est seulement là pour avertir notre service que nous allons devoir en utiliser un. Le shortcode réel utilisé pour envoyer le sms sera défini par l'opérateur télécom.
-- `destination_addr` doit être un numéro international (`source_addr_ton` = 1 et `source_addr_npi` = 1).
+    - **alphanumérique** : ces numéros de téléphone sont composés de lettres et de chiffres (ex : ovh123).
+        - `source_addr_ton` = 5
+        - `source_addr_npi` = 0
+    - **shortcode** : ces numéros de téléphone contiennent entre 3 et 8 numéros (ex : 38069). Le shortcode est seulement là pour avertir notre service que nous allons devoir en utiliser un. Le shortcode réel utilisé pour envoyer le sms sera défini par l'opérateur télécom.
+        - `source_addr_ton` = 3
+        - `source_addr_npi` = 1
+    - **international** : ces numéros de téléphone se composent de l'identifiant du pays et du numéro habituel sans le premier 0 (par exemple 33601020304).
+        - `source_addr_ton` = 1
+        - `source_addr_npi` = 1
+- `destination_addr` doit être un numéro international (ex : 33600000001)
+    - `source_addr_ton` = 1
+    - `source_addr_npi` = 1
 
 **Paramètres optionnels :**
 

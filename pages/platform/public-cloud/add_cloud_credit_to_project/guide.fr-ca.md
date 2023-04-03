@@ -7,58 +7,61 @@ order: 4
 updated: 2022-02-04
 ---
 
-**Dernière mise à jour le 22/11/2019**
+**Dernière mise à jour le 04/02/2022**
 
 ## Objectif
 
-Ce guide vous explique comment ajouter du crédit sur votre compte Public Cloud à l’aide d’un voucher ou via la génération d’un bon de commande.
+L'option de « crédit cloud » vous permet d'allouer un montant spécifique à votre projet Public Cloud, qui servira de moyen de paiement par défaut pour la [facturation de votre projet](../information-concernant-le-mode-de-facturation-cloud/).<br>
+Cela signifie que ce crédit cloud est débité en premier et que toute dette sera ensuite payée par les autres moyens de paiement disponibles. N’hésitez pas à consulter les [guides de facturation de Public Cloud](https://docs.ovh.com/ca/fr/billing/) pour en savoir plus sur le sujet.
 
-Celui-ci sera alors utilisé comme moyen de paiement par défaut.
-
-À chaque émission de facture, le montant dû est débité d'abord de votre crédit Cloud, puis successivement de votre compte Digital LaunchPad et de votre compte fidélité. Le soldé débiteur éventuel est enfin réglé à l'aide de votre moyen de paiement enregistré. 
-
-Vous trouverez plus de détails sur ces trois derniers modes de paiement en cliquant, dans votre espace client, sur votre prénom en haut à droite puis en vous rendant dans `Moyens de paiement`{.action}.
-
-Le crédit cloud n'est pas transférable, ni remboursable. Il n'a aucune valeur monétaire et tout crédit non utilisé dans les 13 mois suivant son émission sera perdu.
+**Ce guide vous explique comment ajouter du crédit sur votre compte Public Cloud à l’aide d’un voucher ou via la génération d’un bon de commande.**
 
 ## Prérequis
 
-* Disposer d'un projet Public Cloud.
-
+- Un projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
-### Acheter du crédit
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Ouvrez `Credit and Vouchers`{.action} dans le menu de gauche.
 
-Pour acheter du crédit Public Cloud, rendez-vous dans le menu `Credit and vouchers`{.action} de l'espace Public Cloud de votre espace client, puis cliquez sur `Acheter du crédit Public Cloud`{.action}.
+> [!warning]
+>
+Notez que les crédits ajoutés dans cette section ne peuvent pas être transférés ni remboursés. Il n'ont aucune valeur monétaire et tout crédit non utilisé dans les 13 mois suivant son achat est perdu.
+>
 
+### Ajouter du crédit
 
-![addpubliccloudcredit](images/buycredit1.png){.thumbnail}
+Cliquez sur le bouton `Acheter du crédit cloud`{.action}.
 
-La fenêtre suivante vous permet de renseigner le montant à ajouter.
+![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
 
-![addpubliccloudcredit](images/buycredit2.png){.thumbnail}
+Renseignez le montant (HT) que vous souhaitez ajouter, dans votre devise. Cliquez sur `Générer un bon de commande`{.action} pour valider.
 
-Un lien sera alors généré. Cliquez dessus pour afficher le bon de commande correspondant.
+![addpubliccloudcredit](images/cloudcredit2.png){.thumbnail}
 
-![addpubliccloudcredit](images/buycredit3.png){.thumbnail}
-![addpubliccloudcredit](images/buycredit4.png){.thumbnail}
+Un bon de commande sera alors généré. Cliquez sur le lien dans le cadre vert de notification pour le consulter et initier le paiement.
 
-Une fois celui-ci payé, vous retrouverez votre crédit dans la liste des crédits & vouchers.
+![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
+
+Une fois le paiement effectué, votre crédit apparaîtra dans la liste `Crédits & Vouchers`.
 
 ### Utiliser un voucher
 
-Pour utiliser un voucher, rendez-vous dans le menu `Credit and vouchers`{.action} de l'espace Public Cloud de votre espace client, puis cliquez sur `Ajouter un voucher`{.action}.
+Cliquez sur le bouton `Activer un voucher`{.action}.
 
-![addpubliccloudcredit](images/buycredit6.png){.thumbnail}
+![addpubliccloudcredit](images/voucher1.png){.thumbnail}
 
-Renseignez ensuite le voucher en question.
+Dans la fenêtre qui apparaît, renseignez le code du voucher et cliquez sur `Valider`{.action}.
 
-![addpubliccloudcredit](images/buycredit7.png){.thumbnail}
+![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
-Celui-ci sera alors visible dans la liste des crédits & vouchers.
+Le solde du voucher apparaîtra dans la liste `Crédits & Vouchers`.
 
-Du fait de sa période de validité, le voucher sera toujours utilisé avant le crédit Public Cloud.
+> [!primary]
+>
+Les périodes de validité des vouchers étant généralement plus limitées, le solde du voucher sera utilisé avant le crédit Public Cloud.
+>
 
 ## Aller plus loin
 

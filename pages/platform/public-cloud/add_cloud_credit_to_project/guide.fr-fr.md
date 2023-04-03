@@ -48,7 +48,7 @@ Une fois le paiement effectué, votre crédit apparaîtra dans la liste `Crédit
 
 ### Utiliser un voucher
 
-Cliquez sur le bouton `Activer un voucher`{.action} .
+Cliquez sur le bouton `Activer un voucher`{.action}.
 
 ![addpubliccloudcredit](images/voucher1.png){.thumbnail}
 
@@ -56,7 +56,7 @@ Dans la fenêtre qui apparaît, renseignez le code du voucher et cliquez sur `Va
 
 ![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
-Le solde du voucher apparaîtra dans la liste `Crédits & Vouchers` .
+Le solde du voucher apparaîtra dans la liste `Crédits & Vouchers`.
 
 > [!primary]
 >

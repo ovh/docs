@@ -60,7 +60,7 @@ Une fois la sélection effectuée, cliquez sur `Modifier le modèle`{.action} po
 
 ### Redimensionnement du disque sous Windows
 
-Attention, lors d'un redimensionnement pour une instance Windows, la taille de la partition n'est pas automatiquement mise à jour, il faudra donc étendre celle ci en utilisant le  **gestionnaire de disque**  :
+Attention, lors d'un redimensionnement pour une instance Windows, la taille de la partition n'est pas automatiquement mise à jour, il faudra donc étendre celle ci en utilisant le  **gestionnaire de disque** :
 
 - Faites un clic droit sur le menu `Démarrer`{.action} et lancez le gestionnaire de disque en cliquant sur `Gestion du disque`{.action} :
 
@@ -84,4 +84,4 @@ Cliquez ensuite sur `Terminer`{.action} pour valider votre choix.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

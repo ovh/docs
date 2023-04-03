@@ -89,4 +89,4 @@ Si vous avez atteint le nombre maximum de projets Public Cloud autorisés dans v
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
