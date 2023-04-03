@@ -14,7 +14,7 @@ In dieser Anleitung wird erklärt, wie Sie die Option „Weniger sichere Apps zu
 > [!primary] 
 > 
 Nachfolgend werden Schritte zur Konfiguration von Gmail im Zusammenhang mit dieser Anleitung beschrieben: 
-[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-gmail-mit-ovh-mail-migrator)
+[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](https://docs.ovh.com/de/emails/migration-gmail-mit-ovh-mail-migrator)
 > 
 
 ## In der praktischen Anwendung
@@ -57,4 +57,4 @@ Nach der Validierung zeigt die folgende Meldung an, dass Ihre Auswahl berücksic
 
 ## Weiterführende Informationen
 
-[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-gmail-mit-ovh-mail-migrator)
+[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](https://docs.ovh.com/de/emails/migration-gmail-mit-ovh-mail-migrator)

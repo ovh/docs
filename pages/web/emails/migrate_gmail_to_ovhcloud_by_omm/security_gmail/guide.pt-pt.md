@@ -13,7 +13,7 @@ updated: 2022-04-06
 Este guia explica pormenorizadamente como ativar a opção "autorizar as aplicações menos seguras" na sua conta Gmail.
 
 > [!primary] Esta documentação é uma etapa associada ao guia
-> ["Migrar uma conta Gmail para um endereço de e-mail OVHcloud através do OVH Mail Migrator"](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-de-gmail-atraves-de-ovh-mail-migrator){.external}
+> ["Migrar uma conta Gmail para um endereço de e-mail OVHcloud através do OVH Mail Migrator"](https://docs.ovh.com/pt/emails/migracao-de-gmail-atraves-de-ovh-mail-migrator){.external}
 
 ## Instruções
 
@@ -54,4 +54,4 @@ Depois da validação, a mensagem seguinte indica que a sua escolha foi consider
 
 ## Quer saber mais?
 
-["Migrar um endereço Gmail para um endereço de e-mail OVHcloud através do OVH Mail Migrator"](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-de-gmail-atraves-de-ovh-mail-migrator){.external}
+["Migrar um endereço Gmail para um endereço de e-mail OVHcloud através do OVH Mail Migrator"](https://docs.ovh.com/pt/emails/migracao-de-gmail-atraves-de-ovh-mail-migrator){.external}
