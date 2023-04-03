@@ -1,6 +1,6 @@
 ---
 title: Data Processing Notebooks - Getting started
-slug: Data Processing notebooks/definition
+slug: Data Processing Apache Spark notebooks/definition
 excerpt: Learn how to create a Data Processing Notebook for Apache Spark
 section: Getting started
 order: 03
@@ -60,9 +60,20 @@ To access your note, click on JupyterLab(3).
 
 ![Create a Notebook 03](images/creating-a-notebook03.png){.thumbnail}
 
+Once on the notebook, you will be able to choose the size of the cluster. If you want a reminder of the costs of each driver, refer to the dashboard of your notebook as in the previous part. 
 
+![Creating a notebook 04](images/creating-a-notebook04.png){.thumbnail}
 
+Now you can start to enter your code in your code section:
+```python
+print("Hello World")
+```
 
+And run the code by pressing the `▶️`{.action} button:
+
+```bash
+Hello World
+```
 
 
 ### Step 2
