@@ -1,5 +1,5 @@
 ---
-title: 'Maîtriser et sécuriser votre serveur dédié ESXi dès son premier démarrage'
+title: 'Comment finaliser une intervention de maintenance sur serveur dédié'
 slug: esxi-hardening
 excerpt: 'Découvrez les différents moyens vous permettant de sécuriser efficacement votre serveur dédié ESXi'
 section: 'Sécurité'
