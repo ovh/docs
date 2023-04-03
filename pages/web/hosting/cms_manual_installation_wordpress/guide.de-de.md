@@ -69,7 +69,7 @@ WordPress fragt nun nach den Login-Daten für Ihre Datenbank.
 
 ![hosting](images/WPstart.png){.thumbnail}
 
-Halten Sie sich bitte die Zugangsdaten für Ihre Datenbank bereit (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/)). Klicken Sie auf `Let's go!`{.action}, um fortzufahren.
+Halten Sie sich bitte die Zugangsdaten für Ihre Datenbank bereit (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/)). Klicken Sie auf `Let's go!`{.action}, um fortzufahren.
 
 Folgende Seite wird angezeigt:
 
@@ -80,7 +80,7 @@ Geben Sie die angeforderten Informationen zur Datenbank ein:
 - Database name: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert.
 
 - Database username: Dieser ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden.
-Für Datenbanken, die auf einem Web Cloud Databases erstellt werden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials über die [manuelle Installation eines CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+Für Datenbanken, die auf einem Web Cloud Databases erstellt werden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials über die [manuelle Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
 
 - Database password: Es wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
@@ -93,7 +93,7 @@ Für Datenbanken, die auf einem Web Cloud Databases erstellt werden, lesen Sie d
 > - Der Servername einer Web Cloud Databases Datenbank leitet sich von Ihrer OVHcloud Kundenkennung ab und hat folgendes Format: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei  **XXX** für die Referenz Ihrer Web Cloud Databases steht.
 >
 
-- Table Prefix: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank verwenden, die bereits von einer anderen Website verwendet wird, lesen Sie bitte die Anleitung in **Schritt 1.4** auf der [manuellen Installation eines CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
+- Table Prefix: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank verwenden, die bereits von einer anderen Website verwendet wird, lesen Sie bitte die Anleitung in **Schritt 1.4** auf der [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
 
 Klicken Sie auf `Submit`{.action}, um die Verbindungsinformationen zur Datenbank zu validieren.
 
