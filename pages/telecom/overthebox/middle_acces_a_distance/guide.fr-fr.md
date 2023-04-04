@@ -8,7 +8,10 @@ section: "Configurations de l'OverTheBox"
 updated: 2021-04-13
 ---
 
+**Dernière mise à jour le 13/04/2021**
+
 ## Configuration
+
 - Rendez-vous sur votre espace client partie **OverTheBox** : [https://www.ovhtelecom.fr/manager/#/overTheBox/](https://www.ovhtelecom.fr/manager/#/overTheBox/){.external}
 - Cliquez sur votre service **OverTheBox**
 - Cliquez sur **“ Accès à distance ”**
@@ -22,6 +25,7 @@ Informations à inscrire dans la partie “**Ajouter un accès à distance**” 
 
 
 ## Exemple
+
 Je souhaite pouvoir accéder à mon  **OverTheBox**  via un navigateur web depuis mon IP actuelle, voici ce que je dois configurer :
 
 

@@ -8,6 +8,8 @@ section: "Configurations de l'OverTheBox"
 updated: 2021-04-13
 ---
 
+**Dernière mise à jour le 13/04/2021**
+
 ## Créer une “Traffic Rule”
 
 - Rendez-vous dans **Network > Firewall**

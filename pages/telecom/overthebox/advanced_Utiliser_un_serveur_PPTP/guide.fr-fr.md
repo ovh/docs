@@ -8,13 +8,17 @@ section: "Configurations techniques avancées"
 updated: 2021-04-13
 ---
 
+**Dernière mise à jour le 13/04/2021**
+
 ## Explications
+
 Vous pouvez retrouver la marche à suivre pour effectuer une redirection de port standard via ce guide : [Redirection de port](https://docs.ovh.com/fr/overthebox/redirection-de-port/){.ref}.
 
 Cependant, la configuration d'une redirection GRE sur OverTheBox est quelque peu spécifique. Veuillez suivre la procédure décrite ci-dessous.
 
 
 ## Manipulations
+
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} depuis votre ordinateur connecté au modem principal.
 - Cliquez sur **"Network"**.
 - Cliquez sur **"Firewall"**.

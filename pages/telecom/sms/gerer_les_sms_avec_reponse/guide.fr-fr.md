@@ -6,6 +6,8 @@ section: Gérer mon offre
 updated: 2020-09-14
 ---
 
+**Dernière mise à jour le 14/09/2020**
+
 ### Préambule {#préambule}
 
 Le service de SMS avec réponse vous permet d'envoyer un SMS avec comme expéditeur un numéro court permettant au destinataire d'y répondre. Vous pouvez ainsi gérer un service via un échange de réponse (programmation RDV médical, jeux, etc.).

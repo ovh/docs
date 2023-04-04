@@ -7,6 +7,7 @@ section: Utilisation avancée
 updated: 2018-03-26
 ---
 
+**Dernière mise à jour le 26/03/2018**
 
 ## Principes
 Les requêtes HLR vous permettent de savoir si un numéro de téléphone mobile est valide avant de lui envoyer un SMS.

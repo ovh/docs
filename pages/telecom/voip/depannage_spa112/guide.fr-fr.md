@@ -3,9 +3,10 @@ title: Dépannage SPA112
 slug: depannage-spa112
 section: Cisco SPA112
 hidden: true
-updated: 2020-04-20
+updated: 2018-03-26
 ---
 
+**Dernière mise à jour le 26/03/2018**
 ------------------------------------------------------------------------
 
 Niveau : Débutant

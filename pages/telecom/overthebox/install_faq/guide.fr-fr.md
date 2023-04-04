@@ -7,6 +7,8 @@ section: FAQ
 updated: 2021-05-17
 ---
 
+**Dernière mise à jour le 17/05/2021**
+
 ## FAQ OverTheBox
 
 ### Où puis-trouver des documentations techniques à propos d'OverTheBox ?
