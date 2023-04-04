@@ -1450,7 +1450,6 @@
                 + [FAQ sur la solution Fax OVHcloud](telecom/fax/fax-faq)
                 + [Configuration de votre ligne Fax](telecom/fax/configuration_fax_espace_client)
                 + [Utiliser son fax physique avec l’offre Plug & Fax](telecom/fax/utiliser_son_fax_physique_avec_l_offre_plug_and_fax)
-                + [Convertir une ligne Ecofax Perso en offre Ecofax Pro](telecom/fax/convertir_une_ligne_ecofax_perso_en_offre_ecofax_pro)
                 + [Activation du répondeur Fax EcoFax Pro / Plug & Fax](telecom/fax/activer_repondeur_fax)
             + [Sending and receiving faxes](web-cloud-phone-and-fax-fax-sending-and-receiving-faxes)
                 + [Envoyer des fax et créer des campagnes par e-mail](telecom/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail)
