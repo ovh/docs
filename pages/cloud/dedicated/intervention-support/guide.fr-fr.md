@@ -34,7 +34,7 @@ Virtualisation
 - Windows (hyper-V)
 
 Divers
-- repérer le nom de vos interfaces réseaux
+- Repérer le nom de vos interfaces réseaux
 
 
 > [!warning]
@@ -55,7 +55,7 @@ exemple : pas de ping après remplacement de la carte mère.
 root@rescue:~# mount /dev/my_system_disk /mnt
 ```
 
-Si le fichier `70-persistent-net.rules` n'existe pas (cf repérez le nom de vos interfaces réseaux),  
+Si le fichier `70-persistent-net.rules` n'existe pas (cf repérer le nom de vos interfaces réseaux),  
 
 vérifier dans l'arborescence `/etc/systemd/network/` les fichiers suivants :  
 - `50-default.network`  
@@ -108,7 +108,7 @@ NamePolicy=kernel database onboard slot path mac
 root@rescue:~#
 ```
 
-Sauvegardez les fichiers et éditez-les afin de remplacer l'addresse MAC :
+Sauvegardez les fichiers et éditez-les afin de renseigner la nouvelle valeur de votre addresse MAC :
 ```bash
 root@rescue:~# cp /mnt/etc/systemd/network/50-default.network /mnt/etc/systemd/network/50-default.network.link.bak-`date +%s`
 root@rescue:~# cp /mnt/etc/systemd/network/50-public-interface.link /mnt/etc/systemd/network/50-public-interface.link.bak-`date +%s`
@@ -137,7 +137,7 @@ Dans certain cas, il faut propager la nouvelle adresse MAC dans les fichiers sui
 
 ### CentOS/Alma Linux
 
-Si vous rencontrez un soucis de connectivité réseau.
+Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
 - boot en mode rescue
@@ -158,7 +158,7 @@ Ne pas oublier de démonter la partition `/` avant de redémarrer le serveur.
 
 ### SmartOS
 
-Si vous rencontrez un soucis de connectivité réseau.
+Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
 - boot en mode rescue
@@ -184,7 +184,7 @@ root@rescue:~# zfs set mountpoint="/usbkey" zones/usbkey
 
 ### FreeBSD
 
-Si vous rencontrez un soucis de connectivité réseau.
+Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
 - boot en mode rescue-bsd
@@ -440,9 +440,10 @@ root@rescue:~#
 
 ### PROXMOX 6
 
+Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-Nous voyons l'erreur lors du démarrage du système avec l'ancienne adresse MAC :  
+Nous rencontrons une erreur lors du démarrage du système causé par l'ancienne valeur d'adresse MAC toujours présente :  
 ![proxmox](images/proxmox.jpg){.thumbnail}
 
 
@@ -495,7 +496,9 @@ root@rescue:~#
 
 ### XenServer
 
+Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
+
 l'adresse MAC est configurée en statique et doit être réinitialisée.
 
 - boot en mode rescue et connexion en `chroot` :
