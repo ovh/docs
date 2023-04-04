@@ -1,7 +1,7 @@
 ---
 title: Gestion de la fin de vie des stockages LV1 and LV2
 slug: eol-storage-migration
-excerpt: Déouvrez la marche à suivre pour effectuer une migration de stockage
+excerpt: Découvrez comment effectuer une migration de stockage
 section: FAQ
 order: 05
 hidden: true

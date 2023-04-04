@@ -4,8 +4,8 @@ slug: nutanix-upgrade-prismcentral
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-upgrade-prismcentral/'
 excerpt: Find out how to upgrade your Nutanix Cluster
-section: Primeiros passos
-order: 08
+section: Upgrade
+order: 01
 updated: 2022-05-16
 ---
 

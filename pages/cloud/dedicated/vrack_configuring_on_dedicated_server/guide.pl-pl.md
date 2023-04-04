@@ -218,4 +218,6 @@ Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużyw
 
 ## Sprawdź również
 
+[Tworzenie kilku sieci VLAN w prywatnej sieci vRack](https://docs.ovh.com/pl/dedicated/tworzenie-vlan-vrack/).
+
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

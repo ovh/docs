@@ -75,7 +75,7 @@ passwd: password updated successfully
 
 #### Enabling root logins
 
-Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](https://docs.ovh.com/au/en/root-password/#enabling-root-login_1).
+Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](https://docs.ovh.com/au/en/vps/root-password/#enabling-root-login_1).
 
 #### Restarting your VPS (current VPS range) <a name="reboot-current-range"></a>
 
@@ -98,7 +98,7 @@ You can carry out any reinstallations directly in your Control Panel. From the `
 In the popup window, you will be asked to choose:
 
 - An operating system from the drop-down list
-- [an SSH Key](https://docs.ovh.com/au/en/dedicated/creating-ssh-keys-dedicated/) (optional)
+- [An SSH Key](https://docs.ovh.com/au/en/dedicated/creating-ssh-keys-dedicated/) (optional)
 
 
 ![VPSnewreinstallation](images/2020panel_01.png){.thumbnail}
@@ -175,7 +175,7 @@ A progress bar for the reinstallation will appear in your Control Panel - please
 
 As explained in the "Objective" section of this guide, you are the administrator of your VPS. As such, you are responsible for your data and its security.
 
-Please refer to the guide on [Securing a VPS](https://docs.ovh.com/au/en/tips-for-securing-a-vps/) for some basic advice.
+Please refer to the guide on [Securing a VPS](https://docs.ovh.com/au/en/vps/tips-for-securing-a-vps/) for some basic advice.
 
 ### Attaching a domain
 
@@ -191,8 +191,8 @@ You can install this SSL certificate manually, directly on the VPS. Please refer
 
 [Introduction to SSH](https://docs.ovh.com/au/en/dedicated/ssh-introduction/)
 
-[Securing a VPS](https://docs.ovh.com/au/en/tips-for-securing-a-vps/)
+[Securing a VPS](https://docs.ovh.com/au/en/vps/tips-for-securing-a-vps/)
 
-[Configuring a new Windows Server installation](https://docs.ovh.com/au/en/windows-first-config/)
+[Configuring a new Windows Server installation](https://docs.ovh.com/au/en/vps/windows-first-config/)
 
 Join our community of users on <https://community.ovh.com/en/>.

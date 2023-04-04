@@ -96,6 +96,6 @@ Per maggiori informazioni, leggi la nostra documentazione sui [domini e DNS](htt
 
 ## Per saperne di più
 
-Per maggiori informazioni sulla migrazione del tuo server, contatta [il nostro network di partner](https://partner.ovhcloud.com/it/).
+Per maggiori informazioni sulla migrazione del tuo server, contatta [il nostro network di partner](https://partner.ovhcloud.com/it/directory/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -4,14 +4,12 @@ slug: deploy/capabilities
 excerpt: Discover the capabilities and limitations of AI Deploy
 section: AI Deploy - Guides
 order: 01
-updated: 2022-12-08
+updated: 2023-04-04
 ---
 
-**Last updated 8th December, 2022.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -20,17 +18,6 @@ updated: 2022-12-08
 
 This page provides the technical capabilities and limitations of the Public Cloud AI Deploy offer.
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
-
-## BETA phase
-
-Please note that the AI Deploy offer is currently in BETA Phase, meaning:
-
-- the service is free during BETA phase.
-- the service is not ready for production.
--	there is no official support.
--	there are no contractual agreements (SLA).
--	the General Availability is uncertain.
--	some features are under development. Please check the roadmap link above to follow progress.
 
 ## Capabilities and limitations
 

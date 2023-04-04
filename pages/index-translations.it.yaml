@@ -47,6 +47,7 @@ hosted-private-cloud-nutanix-on-ovhcloud: Nutanix on OVHcloud
 hosted-private-cloud-nutanix-on-ovhcloud-getting-started: Per iniziare
 hosted-private-cloud-nutanix-on-ovhcloud-networking-and-security: Networking e sicurezza
 hosted-private-cloud-nutanix-on-ovhcloud-backup: Backups
+hosted-private-cloud-nutanix-on-ovhcloud-upgrade: Upgrade
 hosted-private-cloud-nutanix-on-ovhcloud-advanced-usage: Utilizzo avanzato
 hosted-private-cloud-nutanix-on-ovhcloud-troubleshooting: Diagnostica
 hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Disaster Recovery Plan
@@ -67,6 +68,7 @@ hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking: Rete
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking-secnumcloud-connectivity: SecNumCloud Connectivity
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-vrops: VMware vROps
 hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
+hosted-private-cloud-sap-ovhcloud-concepts: Concetti
 hosted-private-cloud-sap-ovhcloud-getting-started: Per iniziare
 hosted-private-cloud-sap-ovhcloud-advanced-usage: Utilizzo avanzato
 ovhcloud-labs-data-collector: Data Collector
@@ -163,6 +165,7 @@ public-cloud-compute-instance-management-getting-started: Gestión de las instan
 public-cloud-compute-instance-management-control-panel: Gestione dallo Spazio Cliente OVHcloud
 public-cloud-compute-instance-management-horizon: Gestione via Horizon
 public-cloud-compute-instance-management-openstack: Gestione via API OpenStack
+public-cloud-compute-block-storage: Block Storage
 public-cloud-compute-tutorials: Tutorials
 public-cloud-network: Public Cloud Network Services
 public-cloud-network-concepts: Concetti

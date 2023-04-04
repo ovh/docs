@@ -4,11 +4,10 @@ slug: capabilities
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
 section: Concepts
 order: 1
-updated: 2022-12-07
+updated: 2023-03-08
 ---
 
-**Last updated 07<sup>th</sup> December, 2022**
-
+**Last updated 08<sup>th</sup> March, 2023**
 
 ## Objective 
 
@@ -20,6 +19,7 @@ In this document, we list all the features currently supported by the Data Proce
 
 At this moment, OVHcloud Data Processing supports the following engines:
 
+- Spark 3.3.2 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.3.1 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.3.0 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.2.3 (Scala 2.13.7 and Hadoop 3.3.1)

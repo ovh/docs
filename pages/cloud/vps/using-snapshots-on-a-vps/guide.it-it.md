@@ -4,14 +4,14 @@ excerpt: 'Scopri come abilitare e utilizzare l’opzione Snapshot nello Spazio C
 slug: usare-snapshot-su-un-vps
 section: 'Opzioni di backup'
 order: 1
-updated: 2022-12-02
+updated: 2023-03-20
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 02/12/2022**
+**Ultimo aggiornamento: 20/03/2023**
 
 
 ## Obiettivo
@@ -59,6 +59,46 @@ Se sei certo che desideri ripristinare il tuo VPS allo stato dello snapshot, cli
 >
 > Ricorda che quando ripristina un VPS da un'istantanea, quest'ultima verrà eliminata. Per conservare la stessa istantanea, è necessario ripeterne una prima di apportare modifiche al sistema ripristinato.
 >
+
+### Scarica uno Snapshot
+
+Lo Snapshot in corso può essere recuperato tramite un link di download. Clicca sui tre puntini `...`{.action} in corrispondenza dell'opzione `Snapshot` e seleziona `Scarica lo Snapshot`{.action} nel menu contestuale.
+
+![snapshotvps](images/snapshot_vps03.png){.thumbnail}
+
+Nella nuova finestra, clicca su `Genera il link di download`{.action}.
+
+![snapshotvps](images/snapshot_vps04.png){.thumbnail}
+
+Dopo pochi secondi visualizzi un messaggio di successo. Di seguito, è possibile copiare il comando completo di download in un click.
+
+![snapshotvps](images/snapshot_vps05.png){.thumbnail}
+
+Verranno visualizzate anche la dimensione dello Snapshot e la data di scadenza del link.
+
+Ti ricordiamo che il link di download scadrà dopo **24 ore**.
+
+L'ordine di download utilizza un `curl` nel seguente formato:
+
+```bash
+curl "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" --output vps-x11x11xyy.vps.ovh.net --fail
+```
+
+Il comando deve essere azionato da qualsiasi terminale di linea di comando. Tuttavia, quando utilizzi Windows *PowerShell*, dovrai adattare il comando in questo modo:
+
+```powershell
+curl -Uri "https://storage.sbg.cloud.ovh.net/v1/AUTH_f5fgh4674dd706f15f6ffgf4z667d3f4g5f05/glance/5ceg3f93-8b49-436b-aefe-4185f9fc3f78?
+temp_url_sig=f508cacda60256d5f211ddddf3f81130e935f0e4&temp_url_expires=1678247579" -OutFile vps-x11x11xyy.vps.ovh.net
+```
+
+![snapshotvps](images/snapshot_vps06.png){.thumbnail}
+
+> [!primary]
+>
+> Per evitare di consumare troppo spazio di storage, ti consigliamo di scaricare gli Snapshot direttamente sul VPS.
+>
+
 
 ### Best practice per la creazione di uno Snapshot
 
@@ -117,9 +157,9 @@ $ sudo service qemu-guest-agent status
 
 È possibile installare il software utilizzando un file MSI disponibile sul sito del progetto Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
 
-Per verificare che il servizio sia in esecuzione, esegui questo comando powershell:
+Per verificare che il servizio sia in esecuzione, esegui questo comando *PowerShell*:
 
-```
+```powershell
 PS C:\Users\Administrator> Get-Service QEMU-GA
 
 Status   Name               DisplayName

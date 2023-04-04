@@ -37,7 +37,7 @@ You can access your OVHcloud email accounts using the password associated with t
 > For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. your surname, first name and date of birth). We also recommend renewing your password regularly.
 
 Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the `Emails`{.action} tab. The window that appears will display all email accounts. <br>
-Click the <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
+Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
 ![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
 
 ### Changing the password via webmail

@@ -57,7 +57,7 @@ There is no such thing as a ‘best’ RAID configuration, as they all suit diff
 
 ### Step 2: Set up and configure your server.
 
-Go to the [OVHcloud Control Panel](https://ca..ovh.com/auth/?action=gotomanager){.external}, and set up your server. As a reminder, we’re using Debian 9.4 in this guide. For further information, please refer to our guide on [Getting started with a Dedicated Server](../getting-started-dedicated-server/){.external}.
+Go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, and set up your server. As a reminder, we’re using Debian 9.4 in this guide. For further information, please refer to our guide on [Getting started with a Dedicated Server](../getting-started-dedicated-server/){.external}.
 
 Once you have selected the operating system you want to install, tick `Customise the partition configuration`{.action}.
 

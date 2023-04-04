@@ -110,7 +110,7 @@ Les éléments des politiques sont définis par des URNs. Ces URNs sont définie
 |**Description**|préfixe immuable|:|version du système IAM|:|Plaque où se trouve l'URN|:|Type de l'URN actuelle|:|(optionnel) Sous-type pour les types **identity** ou **resource** |:|Identifiant unique associé à l'URN|
 |**Possible values**|urn|:|v1|:|eu, ca, us|:|identité, ressource, resourceGroup|:|<p>Pour le type **identity** : account, user, group</p><p>Pour le type **resource** : tous les types de ressources</p>|:|Valeur alphanumérique|
 |**Account ID Example**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
-|**User group Example**|urn|:|v1|:|eu|;|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
+|**User group Example**|urn|:|v1|:|eu|:|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 

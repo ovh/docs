@@ -5,14 +5,14 @@ slug: crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza
 legacy_guide_number: g1863
 section: Storage
 order: 1
-updated: 2023-02-09
+updated: 2023-03-03
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 04/01/2023**
+**Ultimo aggiornamento: 03/03/2023**
 
 ## Obiettivo
 
@@ -291,7 +291,7 @@ DiskPart successfully onlined the selected disk.
 
 ##### **Formatura del disco** <a name="formatDiskManagement"></a>
 
-Nello strumento `Gestione dischi`{.action}, clicca con il tasto destro sul nuovo disco e seleziona `Nuovo volume semplice...`{.action}.
+Nello strumento `Gestione disco`{.action}, clicca con il tasto destro sul nuovo disco e seleziona `Nuovo volume semplice...`{.action}.
 
 ![formato disk](images/format-disk-01.png){.thumbnail}
 
@@ -312,6 +312,86 @@ Nell'ultima finestra, clicca su `Terminer`{.action} per formattare il disco.
 ![formato disk](images/format-disk-06.png){.thumbnail}
 
 Il disco sarà successivamente disponibile come lettore nell'esploratore di file.
+
+
+### Scollega un volume
+
+Per scollegare un volume dall'istanza, la migliore pratica è smontare il volume del sistema operativo prima di scollegarlo dall'istanza.
+
+> [!warning]
+>
+> Un messaggio di errore può essere visualizzato se sul disco aggiuntivo sono in corso processi o software. In questo caso, si raccomanda di interrompere tutti i processi prima di continuare.
+>
+
+#### Con Linux
+
+Apri una [connessione SSH alla tua istanza](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) e utilizza il comando qui sotto per visualizzare i dischi associati.
+
+```bash
+~$ admin@server-1:~$ lsblk
+
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+vda 254:0 0 10G 0 disk
+└ ─ vda1 254:1 0 10G 0 part /
+vdb 8:0 0 10G 0 disk
+└ ─ vdb1 8:1 0 10G 0 part /mnt/disk
+```
+
+Per rimuovere la partizione, esegui questo comando:
+
+```bash
+~$ admin@server-1:~$ sudo umount /dev/vdb1
+```
+
+Elimina l'ID della periferica del fstab per completare il processo di rimozione. In caso contrario, la partizione verrà riavviata dopo un riavvio.
+
+```bash
+~$ admin@server-1:~$ sudo nano /etc/fstab
+```
+
+Salva e lascia l'editor.
+
+Accedi alla sezione `Public Cloud`{.action} dello Spazio Cliente e clicca su `Block Storage`{.action} nel menu a sinistra **Storage**.
+
+Clicca sui `...`{.action} in corrispondenza del volume corrispondente e seleziona `Scollega dall'istanza`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Clicca su `Conferma`{.action} nella finestra che appare per avviare il processo.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
+
+#### Con Windows
+
+Installa una connessione RDP (Remote Desktop) con la tua istanza Windows.
+
+Una volta connesso, clicca con il tasto destro sul menu `Avviare`{.action} e apri la `Gestione disco`{.action}.
+
+![gestione dei dischi](images/start-menu.png){.thumbnail}
+
+Fai click con il tasto destro sul volume che vuoi smontare e selezionare `Cambia lettera e percorso di unità...`{.action}.
+
+![unmount disk](images/unmountdisk.png){.thumbnail}
+
+Clicca su `Rimuovi`{.action} per rimuovere il disco.
+
+![remove disk](images/changedriveletter.png){.thumbnail}
+
+Clicca su `Sì`{.action} per confermare l'eliminazione della lettera del disco.
+
+![confirm remove disk](images/confirmunmounting.png){.thumbnail}
+
+Una volta terminata, è possibile chiudere la finestra di gestione del disco.
+
+Accedi alla sezione `Public Cloud`{.action} dello Spazio Cliente e clicca su `Block Storage`{.action} nel menu a sinistra **Storage**.
+
+Clicca sui tre puntini `...`{.action} in corrispondenza del volume corrispondente e seleziona `Scollega dall'istanza`{.action}.
+
+![detach disk](images/detachinstance.png){.thumbnail}
+
+Clicca su `Conferma`{.action} nella finestra che appare per avviare il processo.
+
+![confirm disk detach](images/confirminstancedetach.png){.thumbnail}
 
 ## Per saperne di più
 

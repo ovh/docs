@@ -16,7 +16,7 @@ PHP-FPM está compilado con un sistema de opcode cache, lo que permite minimizar
 Esto permite obtener un rendimiento hasta 7 veces más rápido que el anterior mecanismo en nuestros laboratorios de prueba.
 
 ## En su área de cliente
-Esta guía explica cómo activar el PHP FPM y definir la versión de PHP a través del archivo .ovhconfig. Si lo desea, puede realizar esta operación de forma más sencilla directamente desde el área de cliente. Para ello, puede consultar la siguiente guía: []({legacy}1999)
+Esta guía explica cómo activar el PHP FPM y definir la versión de PHP a través del archivo .ovhconfig. Si lo desea, puede realizar esta operación de forma más sencilla directamente desde el área de cliente. Para ello, puede consultar la [siguiente guía](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/)
 
 Atención: Por motivos de seguridad, con PHP-FPM se deshabilitan las siguientes opciones (deprecadas por PHP):
 

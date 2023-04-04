@@ -4,14 +4,14 @@ slug: composer-installieren-hosting
 excerpt: Erfahren Sie hier, wie Composer installieren und erste Schritte ausführen
 section: PHP
 order: 02
-updated: 2023-02-24
+updated: 2023-03-07
 ---
+
+**Letzte Aktualisierung am 07.03.2023**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 24.02.2023**
 
 ## Ziel 
 
@@ -48,26 +48,24 @@ Wenn es sich nicht um eine korrekte Version handelt, können Sie einen Alias kon
 alias php='/usr/local/php8.0/bin/php'
 ```
 
-Wir empfehlen Ihnen, im Wurzelverzeichnis Ihres Webhostings zu bleiben, um den öffentlichen Zugang zu Ihren Composer-Dateien zu verhindern. Führen Sie diesen Befehl zur Installation von Composer aus:
+Wir empfehlen Ihnen, im Wurzelverzeichnis Ihres Webhostings zu bleiben, damit die Dateien von Composer nicht öffentlich zugänglich sind. Führen Sie anschließend folgenden Befehl aus:
 
 
 ```bash
 curl -sS https://getcomposer.org/installer | php
 ```
 
-Composer ist damit auf Ihrem Webhosting verfügbar.
-
+Composer ist ab sofort für Ihr Webhosting verfügbar.
 
 ### Anwendungsbeispiel
 
-Wenn Sie beispielsweise Symfony 2 auf einfache Weise installieren möchten, können Sie folgenden Befehl ausführen:
-
+Wenn Sie **Symfony 2** installieren möchten, können Sie zum Beispiel folgenden Befehl ausführen:
 
 ```bash
 php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7.*"
 ```
 
-Ebenso können Sie die OVHcloud API über Ihr Webhosting mit dem offiziellen Wrapper verwenden. Legen Sie hierzu einfach eine Datei namens `composer.json` mit einer Dependency-Liste an. Hier ein Beispiel dieser Datei mit dem OVHcloud API Wrapper:
+Sie können auch die OVHcloud API über Ihr Hosting mit dem offiziellen Wrapper verwenden. Fügen Sie hierzu eine Datei mit dem Namen *composer.json* hinzu, die Ihre benötigte Dependency-Liste enthält. Hier ein Beispiel dieser Datei mit dem OVHcloud API Wrapper:
 
 ```json
 1. {
@@ -79,14 +77,13 @@ Ebenso können Sie die OVHcloud API über Ihr Webhosting mit dem offiziellen Wra
 7. }
 ```
 
-Zur Installation verwenden Sie folgenden Befehl vom selben Ordner aus:
-
+Um sie zu installieren starten Sie folgenden Befehl im gleichen Ordner:
 
 ```bash
-php compos.phar install
+php composer.phar install
 ```
 
-Um diese Library zu verwenden, können Sie die Dokumentation und den Code auf [GitHub](https://github.com/ovh/php-ovh){.external} zu Rate ziehen.
+Beachten Sie die Dokumentation zu dieser Library sowie den Code, verfügbar auf [GitHub](https://github.com/ovh/php-ovh){.external}.
 
 
 ## Weiterführende Informationen <a name="go-further"></a>

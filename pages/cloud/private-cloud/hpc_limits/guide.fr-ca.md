@@ -4,10 +4,10 @@ slug: capacites-techniques
 excerpt: 'Retrouvez les capacités et limitations techniques des solutions Hosted Private Cloud fournies par OVHcloud'
 section: FAQ
 order: 2
-updated: 2023-02-01
+updated: 2023-03-23
 ---
 
-**Dernière mise à jour le 01/02/2023**
+**Dernière mise à jour le 23/03/2023**
 
 ## Objectif
 
@@ -25,7 +25,8 @@ updated: 2023-02-01
 | Nombre max. de hosts par cluster | Hosts par cluster | 64 |
 | Nombre max. de clusters par vDC | Nombre de clusters dans le même centre de données virtuel | Aucune limite |
 | Nombre max. de vDC par PCC | Le nombre de data centres virtuels (vDC) que les clients peuvent ajouter par vCenter | 400 |
-| Nombre max. de hosts par PCC | Limites de hosts par vCenter |  231 hosts, 110 zpools |
+| Nombre max. de hosts par PCC | Limites de hosts par vCenter | 231 |
+| Nombre max. de datastores par PCC | Limites de datastores par vCenter | 110 |
 | Nombre max. de machines virtuelles par SDDC | VMs gérées par le même vCenter | 25 000 |
 | Nombre max. de machines virtuelles par host | VMs hébergées sur le même host physique | 1024 |
 | Nombre max. d'adresses IP par PCC | Nombre max. d'adresses IP publiques pouvant être attribuées et utilisables par vCenter | 1 x /23 |

@@ -16,7 +16,7 @@ Abbiamo adattato PHP-FPM alla nostra infrastruttura Web, per consentirti di acce
 I test che abbiamo condotto dimostrano che in questo modo puoi ottenere performance fino a 7 volte più rapide di prima.
 
 ## Nel tuo Spazio Cliente OVH
-Questa guida ti mostra come attivare il PHP FPM e definire la versione di PHP utilizzando il file .ovhconfig. Se preferisci effettuare questa operazione direttamente dal tuo Spazio Cliente OVHcloud, consulta questa guida: []({legacy}1999)
+Questa guida ti mostra come attivare il PHP FPM e definire la versione di PHP utilizzando il file .ovhconfig. Se preferisci effettuare questa operazione direttamente dal tuo Spazio Cliente OVHcloud, consulta [questa guida](https://docs.ovh.com/it/hosting/configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/).
 
 Attenzione: utilizzando PHP-FPM, per ragioni di sicurezza, queste opzioni sono disattivate (disabilitate da PHP):
 

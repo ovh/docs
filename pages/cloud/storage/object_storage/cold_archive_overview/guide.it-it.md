@@ -1,5 +1,5 @@
 ---
-title: Archivio freddo - Panoramica (EN)
+title: Cold Archive - Panoramica (EN)
 slug: cold-archive/overview
 excerpt: Discover the service, understand the capabilities and billing
 section: Cold Archive Storage Class Specifics

@@ -3,6 +3,7 @@ title: Iniziare a utilizzare le API OVHcloud
 slug: first-steps-with-ovh-api
 excerpt: Come utilizzare le API OVHcloud
 section: 'Per iniziare'
+order: 01
 updated: 2022-05-30
 ---
 

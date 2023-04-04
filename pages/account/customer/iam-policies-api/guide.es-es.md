@@ -112,7 +112,7 @@ Items in policies are defined by URNs. These URNs are defined by the following p
 |**Description**|immutable prefix|:|version of the IAM system|:|Plate where the urn is located|:|Type of the current urn|:|(optional) Subtype for **identity** or **resource** type|:|Unique identifier associated to the urn|
 |**Possible values**|urn|:|v1|:|eu, ca, us|:|identity, resource, resourceGroup|:|<p>For **identity** type: account, user, group</p><p>For **resource** type: any resourceType</p>|:|Alphanumerical value|
 |**Account ID Example**|urn|:|v1|:|eu|:|identity|:|account|:|xx1111-ovh|
-|**User group Example**|urn|:|v1|:|eu|;|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
+|**User group Example**|urn|:|v1|:|eu|:|identity|:|group|:|xx1111-ovh/admin@mycompany.com|
 |**VPS Example**|urn|:|v1|:|ca|:|resource|:|vps|:|b96ffed4-3467-4129-b8be-39a3eb3a0a93|
 |**Resource Group Example**|urn|:|v1|:|us|:|resourceGroup|||:|aa0713ab-ed13-4f1a-89a5-32aa0cb936d8|
 
@@ -312,7 +312,7 @@ To create a new user group, call the API route with the following body:
 }
 ```
 
-For more information, refer to the [documentation for user management](https://docs.ovh.com/es/customer/managing-users/).
+For more information, refer to the [documentation for user management](https://docs.ovh.com/es/customer/gestion-de-usuarios/).
 
 #### With SSO connection enabled
 

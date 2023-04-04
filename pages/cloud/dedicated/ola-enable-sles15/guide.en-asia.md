@@ -112,7 +112,7 @@ This time, the file will be blank so add the following content to the file:
 
 ```bash
 BOOTPROTO='none'
-STARTMODE='hotplug'
+STARTMODUS= hotplug'
 LLADDR=0c:42:a1:a7:29:c2
 ```
 

@@ -6,10 +6,10 @@ section: General guides
 order: 17
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/backups'
-updated: 2022-04-26
+updated: 2023-03-27
 ---
 
-**Last updated April 26, 2022**
+**Last updated March 27th, 2023**
 
 ## Objective
 
@@ -25,21 +25,36 @@ We back up our managed public cloud databases every 1 (incremental snapshots), 1
 
 * PITR:
 
-Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the retention period of the chosen customer plan.
+Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the retention period of the chosen customer plan for PostgreSQL and MySQL. For MongoDB Enterprise the point in time must be within the last 24 hours.
 
 ## Engine Specifications
 
-Engine | Backup Method(s) | Location | Frequency | RPO | Encrypted
+> [!warning]
+>
+> Starting March 6th 2023, on top of on-site backups, free of charge off-site backups are being made available progressively. Until total completion of this rollout, please rely exclusively on the on-site backups for recovery procedures. See the concerned engines in the table below.
+>
+
+Engine | Backup Method(s) | Location(s) | Frequency | RPO | Encrypted
 :--- | :--- | :---: | :---: | :---: | :---:
 MongoDB | Backup on object storage | Off-Site | Daily | 24h | Yes
 MongoDB Enterprise | PITR on object storage | Off-site | Continuous | Few minutes | Yes
-PostgreSQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
-MySQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
-Redis | Backup on object storage | On-Site | 2 times a day | 12h | Yes
-OpenSearch | Incremental | On-Site | Hourly | 1h | Yes
-M3 | Backup on object storage | On-Site | Daily | 24h | Yes
-Cassandra | Backup on object storage | On-Site | Daily | 24h | Yes
+PostgreSQL | PITR on object storage | On-Site, *Off-Site* | Continuous | Few minutes | Yes
+MySQL | PITR on object storage | On-Site, *Off-Site* | Continuous | Few minutes | Yes
+Redis | Backup on object storage | On-Site, *Off-Site* | 2 times a day | 12h | Yes
+OpenSearch | Incremental | On-Site, *Off-Site* | Hourly | 1h | Yes
+M3 | Backup on object storage | On-Site, *Off-Site* | Daily | 24h | Yes
+Cassandra | Backup on object storage | On-Site, *Off-Site* | Daily | 24h | Yes
 Kafka | N/A | N/A | N/A | N/A | N/A
+
+## Off-site backup replication mecanism
+
+For MongoDB, backup data gets shipped directly to the remote region.
+
+For the other engines, backups are first prepared on-site, then replicated to another region. The on-site backup data persists once it gets replicated to the other region.
+
+## Off-site backup location
+
+Public Cloud Databases are currently configured so that services located in `GRA` (Gravelines, France) and `BHS` (Beauharnois, Canada) are configured to use `SBG` (Strasbourg, France) as the region for off-site backups. Other regions, i.e. `DE` (Frankfurt, Germany), `SBG` (Strasbourg, France), `UK` (London, United Kingdom) and `WAW` (Warsaw, Poland) use `GRA` (Gravelines, France) as the region for off-site backups.
 
 ## Lexicon
 

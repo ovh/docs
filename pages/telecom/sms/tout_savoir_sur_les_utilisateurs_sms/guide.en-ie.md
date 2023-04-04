@@ -7,7 +7,7 @@ section: 'Managing your solution'
 updated: 2022-08-05
 ---
 
-**Last updated 5th August 2022** 
+**Last updated 5th August 2022**
 
 ## Objective
 
@@ -35,7 +35,7 @@ An API user who sends SMS messages in an abusive manner can then be detected by 
 - An API user can also be subject to restrictions (quotas) for SMS credits.
 This way, the SMS account holder can divide their credits between different API user accounts.
 
-To better manage credit for your SMS accounts, you can set a limit and quota for your API users. 
+To better manage credit for your SMS accounts, you can set a limit and quota for your API users.
 
 - The **quota** is the number of available SMS credits for each API user.
 
@@ -125,7 +125,7 @@ To get a description of a specific ptt code, you can use the following API:
 
 For more information on using OVHcloud APIs, please refer to our guide [Getting started with OVHcloud APIs](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
 
-The table below provides a non-exhaustive list of the main ptt codes.
+The table below provides a **non-exhaustive** list of the main ptt codes.
 
 |Code|Description|
 |---|---|

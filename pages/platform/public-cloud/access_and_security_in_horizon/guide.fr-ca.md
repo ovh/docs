@@ -8,7 +8,7 @@ order: 07
 updated: 2021-05-26
 ---
 
-**Dernière mise à jour le 26 mai 2021**
+**Dernière mise à jour le 26/05/2021**
 
 ## Objectif
 

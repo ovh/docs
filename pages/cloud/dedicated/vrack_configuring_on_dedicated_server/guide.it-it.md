@@ -218,4 +218,6 @@ Ripeti questa procedura per gli altri server e attribuisci a ciascuno di essi un
 
 ## Per saperne di più
 
+[Creare due o più VLAN nella vRack](https://docs.ovh.com/it/dedicated/creare-vlan-vrack/).
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

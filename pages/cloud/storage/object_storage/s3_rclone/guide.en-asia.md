@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Use S3 Object Storage with rClone
+title: Object Storage - Use S3 Object Storage with Rclone
 slug: s3/rclone
 excerpt: Learn how to set up Rclone to synchronize your files to and from S3 Object Storage.
 section: Configure Object Storage with your solutions
@@ -87,7 +87,7 @@ Download a file `file.txt` from a bucket:
 $ rclone copy <remote_name>:mybucket/file.txt fichier.txt
 ```
 
-You will find on the official rClone website a detailed documentation of the possible actions: [Official rClone documentation](https://rclone.org/docs/){.external}.
+You will find on the official Rclone website a detailed documentation of the possible actions: [Official Rclone documentation](https://rclone.org/docs/){.external}.
 
 ## Go further
 

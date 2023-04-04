@@ -69,7 +69,7 @@ Verrai reindirizzato alla pagina di configurazione. Assicurati che l'URL dell'im
 
 Per maggiori informazioni, consulta la sezione ["Tabelle opzioni"](#options) di questa guida. 
 
-Per l'attivazione di `ConfigDrive`, consulta la documentazione su [questa pagina](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+Per l'attivazione di `ConfigDrive`, consulta la documentazione su [questa pagina](https://cloudinit.readthedocs.io/en/22.1_a/topics/datasources/configdrive.html).
 
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 

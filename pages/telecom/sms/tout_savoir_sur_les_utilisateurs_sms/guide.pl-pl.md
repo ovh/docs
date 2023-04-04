@@ -10,7 +10,7 @@ updated: 2022-08-05
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 05-08-2022** 
+**Ostatnia aktualizacja z dnia 05-08-2022**
 
 ## Wprowadzenie
 
@@ -38,7 +38,7 @@ Właściciel konta może wykryć użytkownika API, który wysyła wiadomości SM
 - Na użytkownika API można nałożyć ograniczenia (limity) dotyczące zasileń SMS.
 Dzięki temu właściciel konta SMS może podzielić zasilenia na różne konta użytkowników API.
 
-Aby jak najlepiej zarządzać zasileniami konta SMS, możesz ustalić ograniczenia i limity dla Twoich użytkowników API. 
+Aby jak najlepiej zarządzać zasileniami konta SMS, możesz ustalić ograniczenia i limity dla Twoich użytkowników API.
 
 - **Limit** to ilość zasileń SMS dostępnych dla użytkownika API.
 
@@ -52,7 +52,7 @@ Teraz kliknij kartę `Użytkownicy API`{.action}. Aby dodać użytkownika, klikn
 
 ![sms-users](images/smsusers01e-2021.png){.thumbnail}
 
-Użytkownikowi API można nadać dowolną nazwę. Hasło użytkownika API musi składać się z 8 znaków alfanumerycznych. 
+Użytkownikowi API można nadać dowolną nazwę. Hasło użytkownika API musi składać się z 8 znaków alfanumerycznych.
 
 ### Etap 2: przypisywanie limitu użytkownikowi API
 
@@ -128,7 +128,7 @@ Aby uzyskać opis określonego kodu ptt, możesz użyć następującego API:
 
 Aby uzyskać więcej informacji na temat korzystania z API OVHcloud, zapoznaj się z naszym przewodnikiem [Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
 
-Poniższa tabela zawiera niewyczerpującą listę głównych kodów ptt.
+Poniższa tabela zawiera **niewyczerpującą** listę głównych kodów ptt.
 
 |Status|Opis|
 |---|---|

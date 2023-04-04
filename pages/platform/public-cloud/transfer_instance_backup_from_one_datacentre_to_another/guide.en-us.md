@@ -25,7 +25,7 @@ Before following these steps, it's recommended that you first complete this guid
 You will also need the following:
 
 * a [Public Cloud Instance](https://www.ovhcloud.com/en/public-cloud/){.external} in your OVHcloud account
-* administrative (root) access to your datacentre via SSH
+* administrative (root) access to your instance/operating system via SSH
 
 > [!primary]
 >
@@ -36,7 +36,7 @@ The commands in this guide are based on the OpenStack CLI, as opposed to the `NO
 
 ### Create a backup
 
-First, establish an SSH connection to your datacentre and then run the following command to list your existing Instances:
+First, establish an SSH connection to your instance/OS and then run the following command to list your existing instances:
 
 ```
 #root@server:~$ openstack server list

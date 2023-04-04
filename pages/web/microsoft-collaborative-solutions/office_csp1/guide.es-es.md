@@ -100,7 +100,7 @@ En la pestaña `Licencias`{.action} de su grupo de licencias, haga clic en el bo
 
 #### Dar de baja el grupo de licencias
 
-Para dar de baja su grupo de licencias Microsoft Office 365 CSP1, haga clic en su nombre en la esquina superior derecha del área de cliente de OVHcloud y seleccione el botón `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha del grupo de licencias que desea dar de baja y, seguidamente, `Dar de baja`{.action}.< br>
+Para dar de baja su grupo de licencias Microsoft Office 365 CSP1, haga clic en su nombre en la esquina superior derecha del área de cliente de OVHcloud y seleccione el botón `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha del grupo de licencias que desea dar de baja y, seguidamente, `Dar de baja`{.action}.<br>
 Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 > [!primary]

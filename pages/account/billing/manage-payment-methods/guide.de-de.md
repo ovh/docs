@@ -3,14 +3,14 @@ title: Meine Zahlungsarten verwalten
 slug: zahlungsarten-verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Zahlungsarten in Ihrem OVHcloud Kundencenter hinzufügen und verwalten können
 section: Abrechnung
-updated: 2022-05-18
+updated: 2023-03-28
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 09.05.2022**
+**Letzte Aktualisierung am 28.03.2023**
 
 ## Ziel
 
@@ -45,18 +45,29 @@ Sie haben die Möglichkeit, andere Zahlungsarten zu hinterlegen, damit diese bei
 Es können drei Zahlungsarten eingetragen werden:
 
 - Kreditkarte
-- Bankkonto
+- Lastschrift
 - PayPal® Konto
 
-Klicken Sie hierfür auf den Knopf `Zahlungsart hinzufügen`{.action}.
+Klicken Sie hierfür auf `Zahlungsart hinzufügen`{.action} und wählen Sie die Zahlungsmethode aus, die Sie verwenden möchten.
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Wählen Sie die Zahlungsmethode aus, die Sie verwenden möchten: 
-
-![choose-payment-method](images/choose-payment-method.png){.thumbnail}
-
 Folgen Sie den Schritten für die Eintragung der Zahlungsart. Im ersten Schritt werden Sie aufgefordert, die Option `Zahlungsmittel nach Validierung als Standardzahlungsmittel verwenden`{.action} anzuhaken, damit es für zukünftige Bestellungen oder automatische Lastschriften verwendet werden kann.
+
+#### Lastschrift
+
+> [!warning]
+>
+> - Die Verwendung der SEPA-Lastschrift ist nur für französische, deutsche und italienische Kunden-Accounts möglich.
+>
+> - Der Inhaber des Bankkontos muss mit dem Inhaber des OVHcloud Kunden-Accounts identisch sein.
+>
+
+Um eine Lastschrift von Ihrem Bankkonto zu hinterlegen, werden Sie zu einem Bereich weitergeleitet, der die Registrierung dieses Accounts und die elektronische Signatur Ihrer Lastschriftanweisung erlaubt.
+
+![Lastschrift SEPA](images/sepa.png){.thumbnail}
+
+Wenn Ihr Bankinstitut von unserem Partner bereits registriert ist, wird die Hinterlegung des Bankkontos sofort erfolgen. Andernfalls kann eine Bearbeitungsdauer von etwa 48 Stunden erforderlich sein.
 
 #### Kreditkarte
 
@@ -64,26 +75,6 @@ Folgen Sie den Schritten für die Eintragung der Zahlungsart. Im ersten Schritt 
 
 Um eine neue Kreditkarte zu hinterlegen, werden Sie zum gesicherten Interface unseres Zahlungsdienstleisters weitergeleitet. Es wird eine Testabbuchung bei Ihrem Bankinstitut vorgenommen, um Nummer und Gültigkeit der Karte zu überprüfen.<br>
 Es wird kein Betrag abgebucht und Ihre Kreditkarte wird nach einigen Minuten aktiviert.
-
-#### Bankkonto
-
-![bank-account](images/bank-account.png){.thumbnail}
-
-> [!warning]
->
-> Die Verwendung der SEPA-Lastschrift ist nur für französische und deutsche Kunden-Accounts möglich.
->
-
-Im Falle der Registrierung eines Bankkontos erhalten Sie eine E-Mail von unserem Partner Yousign®, mit der Sie Ihre Lastschriftanweisung elektronisch unterzeichnen können.
-
-![manage-payment-methods](images/yousign.png){.thumbnail}
-
-> [!primary]
->
-> Solange diese Berechtigung nicht von Ihnen unterzeichnet und validiert wurde, wird neben Ihrem Bankkonto der Vermerk `Warten auf Validierung` eingefügt, da dieses dann nicht für Ihre Zahlungen berücksichtigt werden kann.
->
-
-Nach Eingang Ihrer SEPA-Einzugsermächtigung wird Ihr Bankkonto innerhalb von etwa 48 Stunden als Zahlungsmittel auf Ihrem Kunden-Account bestätigt.
 
 #### PayPal® Account
 

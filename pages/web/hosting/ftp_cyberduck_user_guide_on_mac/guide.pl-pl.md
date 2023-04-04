@@ -20,7 +20,7 @@ Aby skorzystać z tego programu, przejdź na oficjalną stronę aplikacji:
 
 
 ![cyberduck macOS](images/2344.png){.thumbnail}
-Cyberduck to aplikacja dla użytkowników korzystających z systemu MAC. Jeśli masz system Windows, skorzystaj z programu FileZilla: []({legacy}1380)
+Cyberduck to aplikacja dla użytkowników korzystających z systemu MAC. Jeśli masz system Windows, skorzystaj z programu FileZilla: [](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/))
 
 
 ## Interfejs

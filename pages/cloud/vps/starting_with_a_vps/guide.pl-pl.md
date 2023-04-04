@@ -83,7 +83,7 @@ passwd: password updated successfully
 
 #### Aktywacja połączeń root
 
-Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](https://docs.ovh.com/pl/root-password/#wlacz-haslo-root_1).
+Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](https://docs.ovh.com/pl/vps/root-password/#wlacz-haslo-root_1).
 
 #### Restart Twojego serwera VPS (gama aktualna) <a name="reboot-current-range"></a>
 
@@ -182,7 +182,7 @@ W Twoim panelu klienta wyświetli się pasek postępu informujący o stanie zaaw
 
 Jak wyjaśniono w sekcji "Cel" niniejszego przewodnika, jesteś administratorem Twojego serwera VPS. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo.
 
-Aby uzyskać podstawowe porady, zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](https://docs.ovh.com/pl/porady-zabezpieczenie-vps/).
+Aby uzyskać podstawowe porady, zapoznaj się z przewodnikiem [Zabezpieczenie serwera VPS](https://docs.ovh.com/pl/vps/porady-zabezpieczenie-vps/).
 
 ### Przypisz domenę
 
@@ -200,8 +200,8 @@ OVHcloud zaproponuje Ci w sposób automatyczny [SSL Gateway](https://www.ovh.pl/
 
 [Wprowadzenie do protokołów SSH](https://docs.ovh.com/pl/dedicated/ssh-wprowadzenie/)
 
-[Zabezpieczenie serwera VPS](https://docs.ovh.com/pl/porady-zabezpieczenie-vps/)
+[Zabezpieczenie serwera VPS](https://docs.ovh.com/pl/vps/porady-zabezpieczenie-vps/)
 
-[Skonfiguruj nową instalację Windows Server](https://docs.ovh.com/pl/windows-first-config/)
+[Skonfiguruj nową instalację Windows Server](https://docs.ovh.com/pl/vps/windows-first-config/)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

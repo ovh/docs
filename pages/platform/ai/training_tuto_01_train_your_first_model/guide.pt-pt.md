@@ -55,7 +55,7 @@ You will follow different steps to export your data, train your model and save i
 
 This step is optional because you may load some open datasets through libraries, commands, etc., so you will not need to upload your own data to the cloud. 
 
-On the other hand, you can upload your data (dataset, python and requirements files, etc.) to the cloud, in the Object Storage. This can be done in two ways: either from the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or via the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/).
+On the other hand, you can upload your data (dataset, python and requirements files, etc.) to the cloud, in the Object Storage. This can be done in two ways: either from the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or via the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/).
 
 **This data can be deleted at any time.**
 
@@ -65,7 +65,7 @@ If you do not feel comfortable with commands, this way will be more intuitive fo
 
 First, go to the [OVHcloud Public Cloud section](https://www.ovh.com/manager/#/public-cloud/).
 
-Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/pt/storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
+Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/pt/storage/object-storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
 
 Here you can create the object container that will store your datas. Several `types` and `regions` are available, choose the best parameters for you.
 
@@ -81,7 +81,7 @@ Once your object container is created, you will see it in the Object Storage lis
 
 #### 1.2 - Upload your data via CLI
 
-To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/) on your computer or on an instance. 
+To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance. 
 
 As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of your object container can be done by the following command:
 
@@ -101,7 +101,7 @@ This `.zip` file can now be accessed from all OVHcloud AI products, either with 
 
 ### Step 2 - Launch your training job and attach your data to its environment
 
-To launch your training job, you can also use the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or the [ovhai CLI](https://cli.bhs.training.ai.cloud.ovh.net/).
+To launch your training job, you can also use the [OVHcloud Control Panel](https://www.ovh.com/manager/#/public-cloud/) or the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/).
 
 #### 2.1 - Launch a training job via UI (Control Panel)
 

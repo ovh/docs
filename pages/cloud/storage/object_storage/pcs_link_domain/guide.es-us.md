@@ -20,7 +20,7 @@ Esta guía explica cómo configurar un dominio en sus contenedores para facilita
 
 Para seguir todos los pasos de esta guía, es necesario:
 
-- [Añadir espacios de almacenamiento](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) (EN)
+- [Añadir espacios de almacenamiento](https://docs.ovh.com/us/es/storage/object-storage/pcs/create-container/) (EN)
 - Tener un dominio registrado
 
 

@@ -1,66 +1,58 @@
 ---
-title: Object Storage Swift - Automatisches Löschen von Objekten konfigurieren
+title: Object Storage Swift - Automatisches Löschen von Objekten konfigurieren (EN)
 excerpt: Automatisches Löschen von Objekten konfigurieren
 slug: pcs/configure-automatic-object-deletion
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/configure-automatic-object-deletion/'
 section: OpenStack Swift Storage Class Specifics
 legacy_guide_number: g1950
 order: 070
 updated: 2021-10-27
 ---
 
+**Last updated 27th October 2021**
 
-## Ziel
-Um Ihnen die Verwaltung Ihres Object Storage zu vereinfachen, können Sie die Lebensdauer gewisser dateien vordefinieren.
+## Objective
 
-So können Sie beispielsweise Backups nur für einen bestimmten Zeitraum aufbewahren.
+To easily manage your Object Storage, you may need to define the lifespan of some of your files. This allows you, for example, to keep some backups only for a specific period.
 
-In diesem Guide erfahren Sie, wie Sie das automatische Löschen von Dateien nach Ablauf einer festgelegten Frist oder zu einem bestimmten Datum konfigurieren.
+**This guide shows you how to set up automatic file deletion after a specified period or on a specific date.**
 
+## Requirements
 
-## Voraussetzungen
+- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Set OpenStack environment variables](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/)
 
-- [Vorbereitung der Umgebung für die Verwendung der OpenStack API]({legacy}1851) mit Swift Client;
-- [Laden der OpenStack Umgebungsvariablen]({legacy}1852).
+## Instructions
 
+There are two ways to delete your objects/files
 
+- After a certain number of seconds
+- On a specific date
 
+### After a certain number of seconds
 
-## In der praktischen Anwendung
-Sie haben hierfür zwei Möglichkeiten zur Bestimmung des Zeitpunktes, zu dem Ihre Dateien gelöscht werden sollen:
-
-- nach Ablauf einer bestimmten Anzahl von Sekunden;
-- zu einem vordefinierten Zeitpunkt.
-
-
-
-
-### Nach Ablauf einer bestimmten Anzahl von Sekunden
-Hierfür müssen Sie den Header X-Delete-After für Ihre Objekte konfigurieren:
-
+To do this, configure your request's X-Delete-After header
 
 ```bash
 root@server:~$ swift copy --header "X-Delete-After: 3600" container test.txt
 ```
 
+The test.txt file will be deleted in an hour.
 
-Die Datei test.txt wird nach Ablauf einer Stunde gelöscht.
+### On a specific date
 
+First, you need to know what the deletion date is in epoch format.
+To help you find the value you need to insert, use a [converter](http://www.epochconverter.com/){.external}.
 
-### Zu einem vordefinierten Zeitpunkt
-Hierfür müssen Sie zunächst einmal den gewünschten Zeitpunkt im Epoch-Format kennen.
-
-Es gibt spezielle [Konverter](http://www.epochconverter.com/), die Ihnen diesen Schritt erleichtern.
-
-Anschließend geben Sie dieses Datum im Header X-Delete-At an:
-
+Then you can enter this date in the X-Delete-At header:
 
 ```bash
-root@server:~$ swift copy --header "X-Delete-At: 1448928000000" container test.txt
+root@server:~$ swift copy --header "X-Delete-At: 1668877261000" container test.txt
 ```
 
+The file will therefore be deleted on the 19th November 2022.
 
-Die Datei test.txt wird am 01. Dezember 2015 gelöscht.
+## Go further
 
-
-## Weiterführende Informationen
-... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

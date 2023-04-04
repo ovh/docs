@@ -202,7 +202,7 @@ csi-cinder-high-speed       cinder.csi.openstack.org   Delete          Immediate
 csi-hostpath-sc (default)   hostpath.csi.k8s.io        Retain          Immediate           false                  2d
 ```
 
-Users should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/support/support-and-issue-filing/tvk-preflight-checks) page to install and run preflight through krew plugin.
+Users should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/krew-plugins/tvk-preflight-checks) page to install and run preflight through krew plugin.
 
 ## Instructions <a name="instructions"></a>
 

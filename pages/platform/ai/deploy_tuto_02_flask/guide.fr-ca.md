@@ -6,14 +6,12 @@ section: AI Deploy - Tutoriels
 order: 02
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-build-use-flask-image/'
-updated: 2023-01-31
+updated: 2023-04-04
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >

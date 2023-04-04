@@ -1,125 +1,126 @@
 ---
-title: Object Storage Swift - Konfiguracja Owncloud dla Object Storage
+title: Object Storage Swift - Konfiguracja Owncloud dla Object Storage (EN)
 excerpt: Konfiguracja Owncloud dla Object Storage
 slug: pcs/configure-owncloud-with-object-storage
 section: OpenStack Swift Storage Class Specifics
-legacy_guide_number: g2000
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/configure-owncloud-with-object-storage/'
 order: 170
 updated: 2022-05-20
 ---
 
+*Last updated 20th May 2022**
 
-##
-[Owncloud](https://owncloud.org/) to aplikacja do przechowywania danych online i zarządzania plikami.
-Proponuje ona funkcjonalności takie jak na przykład synchronizowanie między kilkoma urządzeniami.
-Można również dodawać zewnętrzną przestrzeń dyskową, zwłaszcza Object Storage OpenStack.
+## Objective
 
-Przewodnik ten wyjaśnia, jak skonfigurować aplikację OwnCloud dla Object Storage.
+[ownCloud](https://owncloud.org/) is an online storage and file management application.
+This solution offers several features, including synchronisation between multiple devices. You can also add external storage such as OpenStack Object Storage.
 
-
-## Wymagania
-
-- Pobranie pliku OpenRC z panelu klienta OVHcloud lub z interfejsu Horizon
-- [Dodanie przestrzeni dyskowej](https://docs.ovh.com/pl/public-cloud/dodanie_przestrzeni_dyskowej/) dla aplikacji Owncloud
+**This guide explains how to configure your ownCloud with Object Storage.**
 
 
+## Requirements
+
+- The OpenRC file, obtained from the [OVHcloud Control Panel](https://docs.ovh.com/pl/public-cloud/creation-and-deletion-of-openstack-user/) or [Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
+- [Storage space](https://docs.ovh.com/pl/storage/object-storage/pcs/create-container/) dedicated to ownCloud
 
 
-## Instalacja
-W pierwszej kolejności zainstaluj aplikację OwnCloud:
+## Instructions
 
+### Installation
 
-```
-root@instance:~$ apt-get install owncloud
-```
+Firstly you have to install ownCloud:
 
-
-
-## Uwaga!
-Sprawdź, czy korzystasz z dobrych repozytoriów. Należy zainstalować najnowszą wersję aplikacji OwnCloud.
-Następnie można zainstalować MySQL, aby dysponować bazą danych, której potrzebuje aplikacja OwnCloud:
-
-
-```
-root@instance:~$ apt-get install mysql-server
+```bash
+root@instance:~$ apt install owncloud
 ```
 
+> [!primary]
+>
+> Make sure that the repository you use contains the latest version of ownCloud.
+>
 
+To function, OwnCloud must have a MySQL database. If you do not already have one, install it by running this command:
 
-
-## Konfiguracja
-Po zakończeniu instalacji możemy przejść do konfiguracji bazy danych, która będzie używana przez OwnCloud.
-Logujemy się na serwer MySQL za pomocą hasła root, które skonfigurowaliśmy podczas jego instalacji:
-
-
+```bash
+root@instance:~$ apt install mysql-server
 ```
+
+### Configuration
+
+To configure the database that will be used by ownCloud, log in to your MySQL server with the root password defined when the server was installed:
+
+
+```bash
 root@instance:~$ mysql -u root -p
 ```
 
+At this point, you can create a new user and a database dedicated to ownCloud:
 
-Następnie możemy utworzyć nowego użytkownika i bazę danych dla OwnCloud:
-
-
-```
-**** Tworzenie użytkownika *****
+```sql
+***** Create user *****
 mysql> CREATE USER 'owncloud'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 
-***** Tworzenie bazy danych *****
+***** Create database *****
 mysql> CREATE DATABASE `owncloud` ;
 
-***** Następnie nadajemy użytkownikowi "owncloud" wszystkie uprawnienia do bazy danych "owncloud"
+***** Grant all privileges on "ownCloud" to the "owncloud" database *****
 mysql> GRANT ALL PRIVILEGES ON `owncloud` . * TO 'owncloud'@'localhost';
 ```
 
+Log in to ownCloud on your browser by entering: `http://serverIP/owncloud`:
 
-Po wykonaniu tych czynności możemy zalogować się do interfejsu OwnCloud za pomocą przeglądarki wpisując http://I.P.serwera/owncloud:
+![ownCloud](images/img_3325.jpg){.thumbnail}
 
-![](images/img_3325.jpg){.thumbnail}
+In this interface:
 
-W interfejsie tym można:
-
-- Założyć konto administratora.
-- Podać katalog danych (fakultatywnie, jeśli chcesz używać tylko usługi Object Storage, pozostaw w tym przypadku ustawienie domyślne).
-- Podać dane do bazy danych.
-
-
-Po zaakceptowaniu uzyskasz dostęp do interfejsu OwnCloud.
-W interfejsie tym włączymy aplikację pozwalającą nam na dodanie obsługi zewnętrznej przestrzeni dyskowej.
-Kliknij na przycisk "Plik" w górnym lewym rogu i wybierz "Aplikacja":
-
-![](images/img_3327.jpg){.thumbnail}
-
-Aby włączyć aplikację "External storage support" w menu aplikacji "Wyłączonych":
-
-![](images/img_3328.jpg){.thumbnail}
-
-Teraz możemy przejść do skonfigurowania tej aplikacji. Kliknij na nazwę użytkownika w górnym prawym rogu i na "Administracja":
-
-![](images/img_3326.jpg){.thumbnail}
-
-Wybierz sekcję "Sekcja zewnętrzna" i dodaj typ przechowywania "OpenStack Object Storage":
-
-![](images/img_3329.jpg){.thumbnail}
-
-Należy tu podać informacje z pliku "OpenRC":
-
-- Identyfikator użytkownika Horizon odnoszący się do pola "OS_USERNAME" w pliku "OpenRC"
-- Nazwa kontenera utworzonego wcześniej dla aplikacji Owncloud
-- Nazwa regionu, w którym znajduje się kontener, odnosi się do pola "OS_REGION_NAME"
-- Nazwa dzierżawcy, odnowsząca się do pola "OS_TENANT_NAME"
-- Hasło użytkownika Horizon
-- Nazwa usługi odnosząca się do "swift"
-- Adres punktu dostępowego, odnosi się do pola "OS_AUTH_URL" czyli "https://auth.cloud.ovh.net/v3"
+- Create an administrator account.
+- Enter the data directory (optional, if you just want to use the Object Storage, you can leave the default one).
+- Enter your database credentials.
 
 
-"Klucz API" i "Maksymalny czas oczekiwania" to wartości fakultatywne.
+After confirming the operation, you can access your OwnCloud interface and activate the application that allows you to add an external storage support.
 
-## Przypomnienie
-Kontener, który utworzyłeś musi być dedykowany aplikacji OwnCloud, ponieważ aplikacja ta będzie konfigurować poszczególne metadane dla Twojego kontenera.
-Po wpisaniu wszystkich informacji i sprawdzeniu ich poprawności, czerwony kwadrat przed nazwą katalogu zmieni kolor na zielony. Będzie on dostępny z poziomu Twojej strony głównej w sekcji "Zewnętrzna przestrzeń":
+To do so, click on `File`{.action} on the top left and select `Applications`{.action}:
 
-![](images/img_3330.jpg){.thumbnail}
+![ownCloud](images/img_3327.jpg){.thumbnail}
+
+Then enable the `External storage support`{.action} application from the `Disabled` applications menu.
+
+![ownCloud](images/img_3328.jpg){.thumbnail}
+
+Having done so, configure this application by clicking on your username at the top right and selecting `Admin`{.action}:
+
+![ownCloud](images/img_3326.jpg){.thumbnail}
+
+In the `External storage` menu, select `Add storage`{.action} and `OpenStack Object Storage`{.action}:
+
+![ownCloud](images/img_3329.jpg){.thumbnail}
+
+Enter the details from your OpenRC file:
+
+- Your Horizon username which corresponds to the  "OS_USERNAME" field in the OpenRC file
+- The name of your container which you previously created for ownCloud
+- The region that your container is in: "OS_REGION_NAME"
+- The tenant name, corresponding to the "OS_TENANT_NAME" field
+- Your Horizon password
+- The service name corresponding to "Swift"
+- The endpoint address, corresponding to the "OS_AUTH_URL" field or "https://auth.cloud.ovh.net/v3"
 
 
-##
-[Przewodniki Cloud]({legacy}1785)
+The "API key" and the "Maximum waiting time" are optional.
+
+> [!primary]
+>
+> The container that you have created must be entirely dedicated to ownCloud because the application will use metadata.
+>
+> Once you've entered all the information and checked that it is correct, the red box in front of your folder name will turn green and will be available in the `External storage` section of your homepage:
+>
+
+
+![ownCloud](images/img_3330.jpg){.thumbnail}
+
+
+## Go further
+ 
+Join our community of users on <https://community.ovh.com/en/>.

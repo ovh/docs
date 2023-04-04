@@ -2,7 +2,7 @@
 title: Konfiguracja firewalla w systemie Windows
 excerpt: Dowiedz się, jak skonfigurować firewall w systemie Windows
 slug: firewall-windows
-section: Tutoriale
+section: Bezpieczeństwo
 order: 02
 updated: 2022-01-31
 ---

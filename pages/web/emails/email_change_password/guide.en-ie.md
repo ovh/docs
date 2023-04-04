@@ -47,26 +47,26 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 >>
 >> If you do not know which type of MX Plan solution you have, please read the section [Identify your MX Plan solution](#whichmxplan).<br>
 >> Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the `Emails`{.action} tab. The window that appears will display all email accounts. <br>
->> Click the <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Change password`{.action}.<br><br>
+>> Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Change password`{.action}.<br><br>
 >>![email](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **MX Plan email (new version)**
 >>
 >> If you do not know which type of MX Plan solution you have, please read the section [Identify your MX Plan solution](#whichmxplan).<br>
 >> Click `Emails`{.action}, then choose the name of the MX Plan service concerned. Go to the `Emails`{.action} tab. The window that appears will display all email accounts. <br>
->> Click the <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
+>> Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
 >>![email](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>
 >> Click `Email Pro`{.action}, then choose the name of the service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display all email accounts.<br>
->> Click the <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
+>> Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
 >>![email](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Click `Microsoft`{.action}, then `Exchange`{.action} and choose the name of the service concerned. Go to the `Email accounts`{.action} tab. The window that appears will display all email accounts.<br>
->> Click the <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
+>> Click the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button, then click `Edit`{.action}.<br><br>
 >>![email](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 

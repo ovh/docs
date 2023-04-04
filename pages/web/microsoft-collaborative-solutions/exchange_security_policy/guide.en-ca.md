@@ -33,7 +33,7 @@ To access the security policy of your Exchange service, log in to the [OVHcloud 
 
 On the page that appears, click on the `Security`{.action} tab.
 
-![exchangesecurity](images/manage-security02.png){.external}}
+![exchangesecurity](images/manage-security02.png){.external}
 
 Continue to the aspect(s) you want to modify.
 

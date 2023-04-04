@@ -1,5 +1,5 @@
 ---
-title: Obiektowa pamięć masowa — rejestrowanie dostępu do serwera (EN)
+title: Object Storage — rejestrowanie dostępu do serwera (EN)
 slug: s3/server-access-logging
 excerpt: Learn how to configure and use Server Access Logging
 section: Tutorials

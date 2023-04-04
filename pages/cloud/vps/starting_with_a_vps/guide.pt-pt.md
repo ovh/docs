@@ -84,7 +84,7 @@ passwd: password updated successfully
 
 #### Ativação das ligações root
 
-Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](https://docs.ovh.com/pt/root-password/#ativar-a-password-root_1).
+Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](https://docs.ovh.com/pt/vps/root-password/#ativar-a-password-root_1).
 
 #### Reinicialização do VPS (gama atual) <a name="reboot-current-range"></a>
 
@@ -183,7 +183,7 @@ Durante a instalação, irá surgir uma barra de progresso. Esta indica o andame
 
 Como explicado na secção "Objetivo" deste guia, é o administrador do seu VPS. Enquanto tal, é responsável pelos seus dados e pela sua segurança.
 
-Para obter conselhos de base, consulte o guia [Proteger um VPS](https://docs.ovh.com/pt/como-proteger-vps/).
+Para obter conselhos de base, consulte o guia [Proteger um VPS](https://docs.ovh.com/pt/vps/como-proteger-vps/).
 
 ### Associar um domínio
 
@@ -201,8 +201,8 @@ Se preferir uma instalação automática, recomendamos o [SSL Gateway](https://w
 
 [Introdução ao SSH](https://docs.ovh.com/pt/dedicated/ssh-introducao/)
 
-[Proteger um VPS](https://docs.ovh.com/pt/como-proteger-vps/)
+[Proteger um VPS](https://docs.ovh.com/pt/vps/como-proteger-vps/)
 
-[Configurar uma nova instalação do Windows Server](https://docs.ovh.com/pt/windows-first-config/)
+[Configurar uma nova instalação do Windows Server](https://docs.ovh.com/pt/vps/windows-first-config/)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

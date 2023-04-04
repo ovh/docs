@@ -632,7 +632,7 @@ resource "ovh_cloud_project" "cloud" {
 
 ### Supprimer une infrastructure
 
-Pour supprimer toutes les ressources, vous pouvez entrer la commande suivante:
+Pour supprimer toutes les ressources, vous pouvez entrer la commande suivante :
 
 ```console
 terraform destroy

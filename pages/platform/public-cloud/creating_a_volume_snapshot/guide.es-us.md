@@ -4,14 +4,14 @@ slug: crear-volumenes-snapshot
 excerpt: 'Cómo crear un snapshot de un disco adicional Public Cloud'
 section: Almacenamiento
 order: 2
-updated: 2023-02-10
+updated: 2023-03-03
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 13/01/2023**
+**Última actualización: 03/03/2023**
 
 ## Objetivo
 
@@ -33,7 +33,7 @@ Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?act
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-A la derecha del volumen correspondiente, haga clic en `...`{.action} y, seguidamente, en `Crear un snapshot`{.action} (no es necesario desvincular el volumen de su instancia).
+A la derecha del volumen correspondiente, haga clic en `...`{.action} y, seguidamente, en `Crear un snapshot`{.action} (no es necesario desvincular el volumen de su instancia). No obstante, si desea desvincular su volumen, puede consultar [esta sección](https://docs.ovh.com/us/es/public-cloud/crear_y_configurar_un_disco_adicional_en_una_instancia/desvincular-un-volumen/#en-linux) de la guía correspondiente para Linux y [esta sección](https://docs.ovh.com/us/es/public-cloud/crear_y_configurar_un_disco_adicional_en_una_instancia/desvincular-un-volumen/#en-windows) para Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 

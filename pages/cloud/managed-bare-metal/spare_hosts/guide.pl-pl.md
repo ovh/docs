@@ -30,7 +30,7 @@ Należy oddać host zapasowy. Nie ma możliwości zachowania hosta zapasowego, a
 
 
 ## 
-Po przywróceniu prawidłowego działania hosta i zniknięciu alertów, możesz zwrócić host zapasowy. Wystarczy postępować zgodnie z procedurą opisaną w sekcji "usuwanie hosta" w przewodniku [Jak dodać hosta?]({legacy}605)
+Po przywróceniu prawidłowego działania hosta i zniknięciu alertów, możesz zwrócić host zapasowy. Wystarczy postępować zgodnie z procedurą opisaną w sekcji "usuwanie hosta" w przewodniku [Jak dodać hosta?](https://docs.ovh.com/pl/managed-bare-metal/usuwanie-serwera-hosta/)
 
 
 ## Sprawdź również

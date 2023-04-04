@@ -24,7 +24,7 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/), einem kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
+- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/), einem kostenlosen [Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder auf den relevanten Account über [Webmail](https://www.ovhcloud.com/de/mail/), je nach verwendeter Methode.
 
 > [!primary]
@@ -50,26 +50,26 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 >>
 >> Wenn Sie den Typ Ihres MX Plan Angebots nicht kennen, lesen Sie den Abschnitt zur [Identifikation Ihres MX Plans](#whichmxplan).<br>
 >> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden Dienstes aus. Gehen Sie zum Tab `E-Mails`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
->> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Passwort ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Passwort ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-mxplan-legacy01.png){.thumbnail}<br>
 >>
 > **MX Plan E-Mail (neue Version)**
 >>
 >> Wenn Sie den Typ Ihres MX Plan Angebots nicht kennen, lesen Sie den Abschnitt zur [Identifikation Ihres MX Plans](#whichmxplan).<br>
 >> Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen des betreffenden Dienstes aus. Gehen Sie zum Tab `E-Mails`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt. <br>
->> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **E-Mail Pro**
 >>
 >> Klicken Sie auf `E-Mail Pro`{.action} und wählen Sie den Dienstnamen aus. Gehen Sie zum Tab `E-Mail Accounts`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt.<br>
->> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-emailpro01.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Klicken Sie auf `Microsoft`{.action}, dann `Exchange`{.action} und wählen Sie den Dienstnamen aus. Gehen Sie zum Tab `E-Mail Accounts`{.action}. In diesem Fenster werden die bestehenden E-Mail-Accounts angezeigt.<br>
->> Klicken Sie auf den Button <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
+>> Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> und dann auf `Ändern`{.action}.<br><br>
 >>![E-Mail](images/email-password-exchange01.png){.thumbnail}<br>
 >>
 

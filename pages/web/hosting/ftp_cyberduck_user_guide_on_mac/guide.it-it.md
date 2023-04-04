@@ -14,7 +14,7 @@ Cyberduck è un software MAC che ti permette di pubblicare il tuo sito accedendo
 Per utilizzarlo, vai sul sito ufficiale Cyberduck: [cyberduck.io](https://cyberduck.io/)
 
 ![cyberduck macOS](images/2344.png){.thumbnail}
-Cyberduck è un software MAC. Se utilizzi Windows, ti consigliamo di utilizzare FileZilla: []({legacy}1380)
+Cyberduck è un software MAC. Se utilizzi Windows, ti consigliamo di utilizzare FileZilla: [](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/))
 
 
 ## Interfaccia

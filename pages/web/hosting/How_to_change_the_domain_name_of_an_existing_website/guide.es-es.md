@@ -16,7 +16,7 @@ updated: 2022-10-25
 
 ## Objetivo
 
-Durante la vida de su sitio web, puede necesitar cambiar el nombre de dominio de su sitio web.< br>El caso de uso más habitual es un cambio de nombre de empresa.
+Durante la vida de su sitio web, puede necesitar cambiar el nombre de dominio de su sitio web.<br>El caso de uso más habitual es un cambio de nombre de empresa.
 
 Este tutorial explica los pasos que debe seguir para cambiar el dominio de su sitio web.
 

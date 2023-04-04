@@ -1,276 +1,248 @@
 ---
-title: Installation de SAP HANA sur un serveur SLES
+title: SAP HANA on Bare Metal - Installation de SAP HANA sur SLES 15 for SAP
 slug: sap-installation-sap-hana-sles
-excerpt: "Ce guide fournit des instructions générales sur l'installation de SAP HANA sur un serveur SUSE Linux Enterprise"
+excerpt: "Ce guide fournit des instructions pour le déploiement de l'image SLES 15 for SAP sur un serveur dédié OVHcloud et sa préparation pour SAP HANA"
 section: Premiers pas
-order: 02
-updated: 2022-03-29
+order: 01
+updated: 2023-03-20
 ---
 
-**Dernière mise à jour le 04/02/2022**
+**Dernière mise à jour le 20/03/2023**
 
 ## Objectif
 
-OVHcloud fournit du matériel certifié SAP sur lequel construire une solution SAP HANA.
-
-**Ce guide fournit des instructions générales sur l'installation d'un système SAP HANA sur un serveur SLES15 SP3 hébergé sur du matériel OVHcloud.**
-
-> [!warning]
->
-> Bien que les éléments contenus dans ce guide aient été formulés avec toute la vigilance requise, OVHcloud ne garantit pas et ne déclare pas que les éléments contenus dans ce guide constituent un guide officiel SAP.
->
-> Toutes les tâches d'intégration technique/d'installation/d'administration des solutions SAP doivent être validées par un professionnel SAP.
+Ce guide fournit des instructions pour le déploiement de l'image SUSE Linux Enterprise Server 15 for SAP (SLES for SAP 15) sur un serveur dédié OVHcloud et la préparation de SLES 15 for SAP pour héberger une base de données SAP HANA.
 
 ## Prérequis
 
-Vous devez avoir :
-
-- consulté le [SAP HANA Master Guide](https://help.sap.com/viewer/eb3777d5495d46c5b2fa773206bbfb46/2.0.01/en-US);
-- dimensionné et structuré votre infrastructure SAP HANA et répertoires de données;
-- installé toutes les dernières sources et tous les paquets nécessaires;
-- appliqué tous les processus de fine-tuning requis par SAP.
-
-Reportez-vous à la documentation sur [comment préparer un système SLES OVHcloud pour SAP HANA](../sap-preparation-sles-pour-sap-hana/).
+- Un accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un [serveur dédié HGR-SAP Baremetal](https://www.ovhcloud.com/fr/lp/sap/)
 
 ## En pratique
 
-### Architecture de l'hôte cible
+### Déploiement de l'image SLES 15 for SAP
 
-![architecture de l'hôte cible](images/1-sap-hana-host.png){.thumbnail}
+Depuis l'espace client OVHcloud, vous pouvez lancer le déploiement de l'image SLES 15 for SAP que OVHcloud met à disposition en cliquant sur le bouton `Installer`{.action}.
 
-### Procédure d'installation
+![install-manager](images/install-manager.png){.thumbnail}
 
-Afin d'installer le serveur de base de données SAP HANA, nous allons utiliser l'outil SAP **HANA DataBase LifeCycle Manager** que nous appellerons **HDBLCM** tout au long de ce document.
+Sélectionnez l'option `Installer à partir d'un template OVHcloud`{.action}.
 
-Deux versions du HDBLCM sont disponibles :
+![select-template](images/select-template.png){.thumbnail width="500" height="500"}
 
-- Non-résident (situé sur le support d'installation)
-- Résident (situé dans '/hana/shared/<SID>/HDBLCM')
+La première étape consiste à renseigner des informations sur le système d'exploitation que vous souhaitez installer.<br>
+&ensp;&thinsp;a. Dans le menu déroulant `Type de système d'exploitation`{.action}, sélectionnez `ERP`{.action}.<br>
+&ensp;&thinsp;b. Dans le menu `LINUX`{.action}, sélectionnez `SUSE Linux Enterprise Server 15 SP3 for SAP Applications - sles-sap15sp3`{.action}.
 
-Le HDBLCM « non-résident » vous permet :
+Nous vous recommandons de réaliser l'installation du système d'exploitation sur la grappe de disque cible `2 X Disk SSD 480 GB, JBOD`{.action}.
 
-- d'installer SAP HANA et ses composants;
-- de mettre à jour SAP HANA et ses composants.
+Si vous le désirez, vous avez la possibilité de personnaliser la configuration des partitions.
 
-Le HDBLCM « résident » vous permet de :
+> [!primary]
+> Par défaut, les partitions `/boot` et `/` sont en RAID 1.
 
-- configurer la communication inter-services;
-- configurer la connexion SLD;
-- renommer un système SAP HANA;
-- désinstaller SAP HANA et/ou les composants;
-- procéder à la désinscription de SAP HANA;
-- installer/mettre à jour des composants supplémentaires;
-- ajouter des hôtes supplémentaires.
+![sles-template](images/sles-template.png){.thumbnail width="500" height="500"}
 
-**NB : vous pouvez utiliser HDBLCM via une interface graphique, ligne de commande ou une interface Web.**
+Si vous ne personnalisez pas la configuration des partitions, vous accéderez directement à la dernière étape.
 
-<ol start="1">
-   <li>Téléchargez les dernières sources de SAP HANA à partir <a href=https://launchpad.support.sap.com/#/softwarecenter>du software-center SAP</a>: </li>
-</ol>
+Vous pouvez indiquer un nom de serveur qui sera visible via la commande `hostname`. Vous avez également la possibilité d'[ajouter votre clé SSH](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#ajout-dune-cle-ssh-facultatif).
 
-**NB : il faut toujours utiliser la version HDBLCM correspondante à votre système SAP.**
+> [!primary]
+> Par défaut, une partition swap de 4 GB est créée et respecte les recommandations SAP qui sont indiquées dans la [SAP Note 1999997 - FAQ: SAP HANA Memory](https://launchpad.support.sap.com/#/notes/1999997).
+
+![sles-partitions](images/sles-partitions.png){.thumbnail}
+
+Une fois ces derniers paramètres configurés, cliquez sur `Valider`{.action} pour lancer l'installation.
+
+> [!warning]
+> L'image SLES 15 for SAP que OVHcloud met à votre disposition est une image sans licence incluse. Suite au déploiement, vous devrez installer votre licence SLES 15 for SAP via la commande suivante : 
+>
+> `SUSEConnect -r <licence>`
+
+Une fois l'installation de l'image SLES 15 for SAP réalisée, vous pouvez [vous connecter à votre serveur dédié](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/#connexion-a-votre-serveur_1).
+
+### Préparation des systèmes de fichiers
+
+Nous allons utiliser le concept de *Logical Volume* offrant de nombreux avantages dans la configuration des partitions.
+
+1. Récupérez le nom du disque sur lequel vous installerez votre base de données SAP HANA. Le nom du disque devrait être `sda`.
+
+Pour le vérifier, vous pouvez lancer la commande ci-dessous et vous obtiendrez ce résultat :
+
+```bash
+$ lsblk
+
+NAME          MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+sda             8:0    0  10.5T  0 disk 
+sdb             8:16   0 447.1G  0 disk
+├─sdb1          8:17   0   511M  0 part
+├─sdb2          8:18   0   256M  0 part
+│ └─md2         9:2    0   255M  0 raid1 /boot
+├─sdb3          8:19   0     2G  0 part  [SWAP]
+├─sdb4          8:20   0 444.4G  0 part
+│ └─md4         9:4    0 444.3G  0 raid1
+│   └─vg-root 254:0    0 444.3G  0 lvm   /
+└─sdb5          8:21   0     2M  0 part
+sdc             8:32   0 447.1G  0 disk
+├─sdc1          8:33   0   511M  0 part  /boot/efi
+├─sdc2          8:34   0   256M  0 part
+│ └─md2         9:2    0   255M  0 raid1 /boot
+├─sdc3          8:35   0     2G  0 part  [SWAP]
+└─sdc4          8:36   0 444.4G  0 part
+  └─md4         9:4    0 444.3G  0 raid1
+    └─vg-root 254:0    0 444.3G  0 lvm   /
+```
 
 <ol start="2">
-   <li>Exécutez l'outil SAP HDBLCM : </li>
+  <li>Créez un volume physique qui se base sur le RAID des disques de données avec la commande suivante :</li>
 </ol>
 
 ```bash
-/hana/shared/src/DATA_UNITS/HDB_SERVER_LINUX_X86_64/hdblcm --verify_signature
-SAP HANA Lifecycle Management - SAP HANA Database 2.00.058.00.1634122452
-************************************************************************
-Scanning software locations...
-Detected components:
-   SAP HANA Database (2.00.058.00.1634122452) in /hana/shared/sps/SAP_HANA_DATABASE/server
-   SAP HANA Database Client (2.10.15.1634075415) in /hana/shared/sps/SAP_HANA_CLIENT/client
-Do you want to specify additional components location? (y/n) [n]: n
+$ pvcreate /dev/sda
 ```
 
 <ol start="3">
-   <li>Sélectionnez l'action d'installation : </li>
+  <li>Créez un groupe virtuel nommé <code>vg_hana</code> qui s'appuie sur le volume physique précédemment créé.</li>
 </ol>
 
 ```bash
-Index | Action             | Description
-------------------------------------------------------------------------------------
-1     | HDB (update)       | Update SAP HANA Database version 2.00.057.00.1629894416
-      |                    | xx-hana-ovh (Database Worker (worker))
-2     | install            | Install new system
-3     | extract_components | Extract components
-4     | Exit (do nothing)  |
+vgcreate vg_hana /dev/sda
 ```
 
 <ol start="4">
-   <li>Suivez l'assistant d'installation : </li>
+  <li>Créez les volumes logiques qui représenteront les partitions pour le système d'exploitation.</li>
 </ol>
 
+Chaque volume logique représentera un répertoire pour l'installation de votre base de données SAP HANA. 
+
+Nous vous recommandons de suivre ce tableau pour dimensionner vos volumes logiques.
+
+| Volume logique  |                        Taille                         |
+|-----------------|-------------------------------------------------------|
+| usrsap          |  MIN(32 GB)                                           |
+| hanadata        |  1 x RAM                                              |
+| hanalog         | [RAM ≤ 512 GB ] = 1/2 x RAM<br>[RAM > 512 GB ] = 512GB|
+| hanashared      |  MIN(1 x RAM; 1 TB)                                   |
+| hanabackup      |  hanadata + hanalog                                   |
+
+
+Veuillez remplacer dans chaque ligne les caractères `<X>` par la taille souhaitée en gigaoctet de vos volumes logiques, par exemple 32.
+
 ```bash
-Select additional components for installation: Enter 2,3 to install both server and client
-Enter local hostwork group: leave empty as this is a SCOS deployment
-Select System Usage / Enter Index [4]:
-Index | System Usage | Description
--------------------------------------------------------------------------------
-1     | production   | System is used in a production environment
-2     | test         | System is used for testing, not production
-3     | development  | System is used for development, not production
-4     | custom       | System usage is neither production, test nor development
-Installation path: #please refer to the LVM section of the SLES for SAP HANA cookbook.
-Enter Local host name: #default should pick up the current hostname
-Do you want to add hosts to the system?: #As this is a SCOS deployment, enter ‘n’
-Enter the SAP HANA System ID : # The SAP system ID (SID) is the identifier for the SAP HANA system.
-Do you want to enable data and log volume encryption? [n]: y
-Enter Location of Data Volumes [/hana/data/HDB]:
-Enter Location of Log Volumes [/hana/log/HDB]:
-Restrict maximum memory allocation? [n]: n
-Apply System Size Dependent Resource Limits? (SAP Note 3014176) [y]:
-Enter SAP Host Agent User (sapadm) Password:
-Confirm SAP Host Agent User (sapadm) Password:
-Enter SAP Host Agent User (sapadm) Password:
-Confirm SAP Host Agent User (sapadm) Password:
-Enter System Administrator (hdbadm) Password:
-Confirm System Administrator (hdbadm) Password:
-Enter System Administrator (hdbadm) Password:
-Confirm System Administrator (hdbadm) Password:
-Enter System Administrator Home Directory [/usr/sap/HDB/home]:
-Enter System Administrator Login Shell [/bin/sh]:
-Enter System Administrator User ID [1001]:
-Enter ID of User Group (sapsys) [79]:
-Enter System Database User (SYSTEM) Password:
-Enter System Database User (SYSTEM) Password:
-Enter System Database User (SYSTEM) Password:
-Confirm System Database User (SYSTEM) Password:
-Restart system after machine reboot? [n]: y
+$ lvcreate -L<X>G -n lv_usrsap vg_hana
+$ lvcreate -L<X>G -n lv_hanadata vg_hana
+$ lvcreate -L<X>G -n lv_hanalog vg_hana
+$ lvcreate -L<X>G -n lv_hanashared vg_hana
+$ lvcreate -L<X>G -n lv_hanabackup vg_hana
 ```
 
-> [!primary]
->
-> Sidenote sur le SID : 3 caractères sont autorisés. Lettres **ou** chiffres, le mélange n'est pas autorisé.
->
-> NB : vous pouvez modifier l'ID système après le déploiement, mais cela est plus complexe que de le définir directement.
-> NB2 : cet identifiant doit être unique dans votre écosystème SAP.
->
-> Exemple : HDB
-> Exemple 2 : HD1 #correspond à HANA Development 1
-> Exemple 3 : HP1 #correspond à HANA Production 1
-
-> [!primary]
->
-> Note sur le numéro d'instance : un numéro d'instance SAP est un numéro à deux chiffres compris entre 0 et 97 (98 et 99 sont réservés à des fins de routage).
->
-> Ce numéro permet de différencier les instances entre elles car il est possible d’installer plusieurs instances sur un même serveur.
-
-
 <ol start="5">
-   <li>Vérifiez le résumé de l'installateur : </li>
+  <li>Une fois les volumes logiques créés, il est nécessaire de les formater dans un format de système de fichiers supporté pour SAP HANA.</li>
 </ol>
 
+Dans ce guide, nous utilisons le format de système de fichiers XFS. Nous vous recommandons de prendre connaissance de la [SAP Note 2972496 - SAP HANA Filesystem Types](https://launchpad.support.sap.com/#/notes/2972496) afin de découvrir les formats supportés pour SAP HANA.
+
 ```bash
-Summary before execution:
-=========================
-SAP HANA Database System Installation
-   Installation Parameters
-      SAP HANA System ID: HDB
-      Instance Number: 00
-      Configure Python version: python2
-      Local Host Worker Group: default
-      System Usage: test
-      Do you want to enable data and log volume encryption?: Yes
-      Location of Data Volumes: /hana/data/HDB
-      Location of Log Volumes: /hana/log/HDB
-      SAP HANA Database secure store: ssfs
-      Certificate Host Names: xx-hana-ovh -> xx-hana-ovh
-      System Administrator Home Directory: /usr/sap/HDB/home
-      System Administrator Login Shell: /bin/sh
-      System Administrator User ID: 1001
-      ID of User Group (sapsys): 79
-      SAP HANA Database Client Installation Path: /hana/shared/HDB/hdbclient
-      Remote Execution: ssh
-      Database Isolation: low
-      Verify the authenticity of SAP HANA components: Yes
-      Install Execution Mode: standard
-      Installation Path: /hana/shared
-      Local Host Name: xx-hana-ovh
-   Software Components
-      SAP HANA Database
-         Install version 2.00.057.00.1629894416
-         Location: /hana/shared/src/DATA_UNITS/HDB_SERVER_LINUX_X86_64/server
-      SAP HANA Local Secure Store
-         Do not install
-      SAP HANA AFL (incl.PAL,BFL,OFL)
-         Do not install
-      SAP HANA EML AFL
-         Do not install
-      SAP HANA EPM-MDS
-         Do not install
-      SAP HANA Database Client
-         Install version 2.9.28.1627673934
-         Location: /hana/shared/src/DATA_UNITS/HDB_CLIENT_LINUX_X86_64/client
-      SAP HANA Studio
-         Do not install
-      SAP HANA Smart Data Access
-         Do not install
-      SAP HANA XS Advanced Runtime
-         Do not install
-   Log File Locations
-      Log directory: /var/tmp/hdb_HDB_hdblcm_install_2021-10-20_09.26.04
-      Trace location: /var/tmp/hdblcm_2021-10-20_09.26.04_29443.trc
-Note: Volume encryption will be enabled. You need to back up root keys after the installation.
+$ mkfs.xfs /dev/vg_hana/lv_usrsap
+$ mkfs.xfs /dev/vg_hana/lv_hanadata
+$ mkfs.xfs /dev/vg_hana/lv_hanalog
+$ mkfs.xfs /dev/vg_hana/lv_hanashared
+$ mkfs.xfs /dev/vg_hana/lv_hanabackup
 ```
 
 <ol start="6">
-<li>Appuyez sur « y » pour lancer l'installation : </li>
+  <li>Créez les répertoires sur lesquels vont s'appuyer ces volumes logiques.</li>
 </ol>
 
 ```bash
-Do you want to continue? (y/n):
+$ mkdir -p /hana/data /hana/log /hana/shared /usr/sap /hanabackup
 ```
 
-### Étapes de post-installation
+<ol start="7">
+  <li>Afin de monter ces systèmes de fichiers sur le système d'exploitation, vous devez récupérer leur UUID afin de remplir le fichier <code>/etc/fstab</code>.</li>
+</ol>
 
-<ol start="1">
-   <li>Vérifiez que les processus de base de données HANA sont en cours d'exécution : </li>
+Pour récupérer chaque UUID des volumes logiques, vous pouvez utiliser ces commandes :
+
+```bash
+$ blkid /dev/vg_hana/lv_usrsap | awk '{print $2}'
+$ blkid /dev/vg_hana/lv_hanadata | awk '{print $2}'
+$ blkid /dev/vg_hana/lv_hanalog | awk '{print $2}'
+$ blkid /dev/vg_hana/lv_hanashared | awk '{print $2}'
+$ blkid /dev/vg_hana/lv_hanabackup | awk '{print $2}'
+```
+
+<ol start="8">
+  <li>Ajoutez ce contenu dans le fichier <code>/etc/fstab</code>, en remplaçant par les valeurs précédemment obtenues.</li>
 </ol>
 
 ```bash
-hdbadm@sv-hana:/usr/sap/HDB/HDB00> ./HDB info
-USER          PID     PPID  %CPU        VSZ        RSS COMMAND
-hdbadm       9627     9626   0.0      19052       7676 -sh
-hdbadm      21442     9627   0.0      15432       3928  \_ /bin/sh ./HDB info
-hdbadm      21475    21442   0.0      39048       3752      \_ ps fx -U hdbadm -o user:8,pid:8,ppid:8,pcpu:5,vsz:10,rss:10,args
-hdbadm      28803        1   0.0      23292       3196 sapstart pf=/hana/shared/HDB/profile/HDB_HDB00
-hdbadm      28810    28803   0.0     461388      73236  \_ /usr/sap/HDB/HDB00/sv-hana/trace/hdb.sapHDB_HDB00 -d -nw -f /usr/sap/ HDB/HDB00/sv-hana/daemon.ini pf=/usr/sap/HDB/SYS/profile/HDB_HDB00_sv
-hdbadm      28830    28810   0.7    7645668    4552072      \_ hdbnameserver
-hdbadm      29087    28810   0.1    2548960     184576      \_ hdbcompileserver
-hdbadm      29090    28810   0.1    2793308     214696      \_ hdbpreprocessor
-hdbadm      29137    28810   2.1    9995564    7187052      \_ hdbindexserver -port 30003
-hdbadm      29140    28810   0.6    6072836    1632940      \_ hdbxsengine -port 30007
-hdbadm      29529    28810   0.1    4503448     484688      \_ hdbwebdispatcher
-hdbadm       4905        1   0.0     715972      52900 hdbrsutil  --start --port 30003 --volume 3 --volumesuffix mnt00001/ hdb00003.00003 --identifier 1634742350
-hdbadm       4512        1   0.0     715920      52384 hdbrsutil  --start --port 30001 --volume 1 --volumesuffix mnt00001/ hdb00001 --identifier 1634742319
-hdbadm       4043        1   0.0     569080      31524 /usr/sap/HDB/HDB00/exe/sapstartsrv pf=/hana/shared/HDB/profile/HDB_HDB00  -D -u hdbadm
+UUID=<UUID>       /usr/sap        xfs     noatime,nodiratime,logbsize=256k 0 0
+UUID=<UUID>       /hana/data      xfs     noatime,nodiratime,logbsize=256k 0 0
+UUID=<UUID>       /hana/log       xfs     noatime,nodiratime,logbsize=256k 0 0
+UUID=<UUID>       /hana/shared    xfs     noatime,nodiratime,logbsize=256k 0 0
+UUID=<UUID>       /hanabackup     xfs     noatime,nodiratime,logbsize=256k 0 0
+```
+
+<ol start="9">
+  <li>Vous pouvez maintenant exécuter la commande <code>mount -a</code> qui aura pour effet de monter les volumes logiques sur votre système d'exploitation. Ces derniers doivent être visibles dans la sortie de la commande <code>df -h</code> avec les tailles précédemment configurées.</li>
+</ol>
+
+### Application des paramètres avec SAPtune
+
+SAPtune est un package disponible sur le système d'exploitation SUSE et qui permet d'appliquer les paramètres systèmes en fonction du rôle SAP hébergé sur ce serveur. Pour en découvrir d'avantage sur ce package, nous vous invitons à vous rendre sur la [page de SUSE](https://documentation.suse.com/sles-sap/15-SP2/html/SLES-SAP-guide/cha-tune.html).
+
+> [!primary]
+> Pour rappel, vous devez avoir activé votre licence SLES 15 for SAP sur votre serveur dédié avant de procéder à ces étapes.
+>
+> Nous vous conseillons également de procéder à une mise à jour de votre système d'exploitation avec la commande `zypper update -y`.
+
+1. Installez le package saptune.
+
+```bash
+$ zypper install -y saptune
 ```
 
 <ol start="2">
-   <li>Testez la connexion à la base de données à l'aide de hdbsql (outil de ligne de commande permettant d'exécuter des instructions sur une base de données SAP HANA) : </li>
+  <li>En fonction de votre futur système SAP, deux possibilités s'offrent à vous.</li>
 </ol>
+&ensp;&thinsp;a. Le premier choix est `HANA` qui correspond à une installation SAP HANA qui hébergera un système SAP Netweaver.<br>
+&ensp;&thinsp;b. Le second choix est `S4HANA-DBSERVER` qui correspond à une installation SAP HANA qui hébergera un système SAP S/4HANA.
+
+Pour lancer l'application des paramètres en fonction de votre futur système, lancez la commande suivante :
 
 ```bash
-hdbsql -i 00 -d SystemDb -u SYSTEM
-Password:
-Welcome to the SAP HANA Database interactive terminal.
-hdbsql SYSTEMDB=> SELECT * FROM M_DATABASES;
-DATABASE_NAME,DESCRIPTION,ACTIVE_STATUS,ACTIVE_STATUS_DETAILS,OS_USER,OS_GROUP,RESTART_MODE,FALLBACK_SNAPSHOT_CREATE_TIME
-"SYSTEMDB","SystemDB-HDB-00","YES","","","","DEFAULT",?
-"HDB","HDB-00","YES","","","","DEFAULT",?
+$ saptune solution apply <HANA|S4HANA-DBSERVER>
 ```
 
 <ol start="3">
-   <li>Sauvegardez les clés de chiffrement racine (voir SAP HANA Administration Guide)</li>
-   <li>Installez la licence SAP HANA</li>
-   <li>Installez les outils d'administration (<a href="https://help.sap.com/viewer/a2a49126a5c546a9864aae22c05c3d0e/2.0.02/en-US"> SAP HANA Studio</a>, <a href="https://help.sap.com/viewer/df02d156db744412ad1f9e887aba68ad/2.5.0.0/en-US">SAP HANA Cockpit</a> etc...)</li>
+  <li>Nous recommandons d'activer le service SAPtune au démarrage, l'application des paramètres systèmes recommandés sera ainsi réalisée à chaque démarrage de votre système d'exploitation.</li>
 </ol>
+
+```bash
+$ saptune service enablestart
+```
+
+<ol start="4">
+  <li>Vous pouvez vérifier la bonne application des paramètres avec la commande suivante :</li>
+</ol>
+
+```bash
+saptune solution verify <HANA|S4HANA-DBSERVER>
+```
+
+> [!primary]
+> Si vous souhaitez aller plus loin dans l'étude des paramètres pour SLES 15 et SAP HANA, nous vous recommandons ces deux SAP Notes.
+>
+> - [2578899 - SUSE Linux Enterprise Server 15: Installation Note](https://launchpad.support.sap.com/#/notes/2578899)
+> - [1275776 - Linux: Preparing SLES for SAP environments](https://launchpad.support.sap.com/#/notes/1275776)
+
+Votre serveur dédié est à présent prêt à accueillir une base de données SAP HANA.
+
+Vous pouvez procéder à l'installation SAP HANA. Pour cela, nous vous recommandons de suivre le [guide officiel SAP](https://help.sap.com/docs/SAP_HANA_PLATFORM/2c1988d620e04368aa4103bf26f17727/88e3e9a612bc484cac335725ad0978d3.html).
 
 ## Aller plus loin
 
-Documentation générale sur [comment mettre à jour SAP HANA sur un système SLES OVHcloud](../sap-mise-a-jour-sap-hana/).
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/fr/dedicated/ola-sles15/)
 
-Documentation générale sur [comment sauvegarder SAP HANA sur un système SLES OVHcloud](../backup-sap-hana/).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -18,7 +18,7 @@ Pour des raisons de sécurité, il est possible de configurer et d'utiliser des 
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/).
-- [Être connecté à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
+- [Être connecté à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/).
 
 ## En pratique
 

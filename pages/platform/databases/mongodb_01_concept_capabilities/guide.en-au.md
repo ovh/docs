@@ -4,10 +4,10 @@ slug: mongodb/capabilities
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
 section: MongoDB - Guides
 order: 010
-updated: 2023-03-02
+updated: 2023-03-13
 ---
 
-**Last updated March 2nd, 2023**
+**Last updated March 13th, 2023**
 
 ## Objective
 
@@ -62,7 +62,7 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 #### Nodes
 
 - *Essential*: The cluster supports at most one node.
-- *Business* or *Enterprise*: The cluster can support 3 to 8 nodes.
+- *Business* or *Enterprise*: The cluster can support 3 to 8 nodes including optionally an analytics node.
 
 #### License type
 
@@ -128,7 +128,7 @@ Here are some considerations to take into account when using private network:
 
 *Business* plan clusters are automatically backed up daily during their maintenance window. Backup retention is 7 days.
 
-*Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days.
+*Enterprise* plan clusters are automatically backed up daily during their maintenance window, with [PITR](https://en.wikipedia.org/wiki/Point-in-time_recovery){.external} support. Backup retention is 30 days with PITR capability for the last 24 hours.
 
 #### Logs and Metrics
 
@@ -142,14 +142,27 @@ Please note that if the database instance is deleted, logs and metrics are also 
 
 #### Users and roles
 
-Creation of users is allowed with the proposed roles :
+Creation of users is allowed with the proposed roles:
 
-- readAnyDatabase
-- readWriteAnyDatabase
-- userAdminAnyDatabase
-- dbAdminAnyDatabase
-- backup
-- restore
+| Role                 | Database        |
+| -------------------- | --------------- |
+| backup               | admin           |
+| clusterManager       | admin           |
+| clusterMonitor       | admin           |
+| clusterAdmin         | admin           |
+| dbAdmin              | User configured |
+| dbAdminAnyDatabase   | admin           |
+| dbOwner              | User configured |
+| enableSharding       | User configured |
+| hostManager          | User configured |
+| read                 | User configured |
+| readWrite            | User configured |
+| readWriteAnyDatabase | admin           |
+| readAnyDatabase      | admin           |
+| restore              | admin           |
+| root                 | admin           |
+| userAdmin            | User configured |
+| userAdminAnyDatabase | admin           |
 
 In order to properly manage your MongoDB cluster, some MongoDB users are set up in your clusters by OVHcloud:
 

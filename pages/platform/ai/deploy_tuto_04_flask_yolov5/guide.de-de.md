@@ -6,14 +6,12 @@ section: AI Deploy - Tutorials
 order: 04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/web-service-yolov5/'
-updated: 2023-01-31
+updated: 2023-04-04
 ---
 
-**Last updated 31st January, 2023.**
+**Last updated 4th April, 2023.**
 
 > [!primary]
->
-> AI Deploy is in `beta`. During the beta-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, as this phase is not complete.
 >
 > AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
 >
@@ -33,7 +31,7 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 -   a [user for AI Deploy](https://docs.ovh.com/de/publiccloud/ai/users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
--   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/notebook_object_detection_yolov5.ipynb)
+-   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov5/notebook_object_detection_yolov5_coco.ipynb)
 
 ## Instructions
 
