@@ -45,11 +45,11 @@ You can also access other ports by appending them to the URL.
 
 Job URL for accessing the default port (starting with the job's ID):
 
--   https://00000000-0000-0000-0000-000000000000.job.gra.training.ai.cloud.ovh.net
+-   https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net
 
 Job URL for accessing the port 9000 (starting with the job's ID followed by the port number):
 
--   https://00000000-0000-0000-0000-000000000000-9000.job.gra.training.ai.cloud.ovh.net
+-   https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net
 
 Only the HTTP layer is accessible.
 

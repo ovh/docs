@@ -97,7 +97,7 @@ ovhai job run --ssh-public-keys ~/.ssh/id_rsa.pub <Image> -- bash -c 'sleep inf'
 Verify you can connect to the SSH host by running the following command:
 
 ``` {.bash}
-ssh <job-id>@gra.training.ai.cloud.ovh.net
+ssh <job-id>@gra.ai.cloud.ovh.net
 
 Welcome to OVHcloud AI Training Jobs SSH
 $
