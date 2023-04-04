@@ -8,8 +8,6 @@ section: 'Diagnostic et mode Rescue'
 
 
 
-
-
 ## Objectif
 
 Cette documentation a pour objectif de vous accompagner lors d'une intervention de maintenance effectuée par les équipes OVhcloud.
@@ -697,9 +695,9 @@ ipconfig /all
 
 ### Repérer le nom de vos interfaces réseaux
 
-- Suite au remplacement de la Carte-Mère, le serveur ne peut pas être joignable car le controleur des interfaces réseaux a été renommé par le systeme d'exploiration.
+- Suite au remplacement de la Carte-Mère, le serveur ne peut pas être joignable car le controleur des interfaces réseaux a été renommé par le système d'exploiration.
 
-- boot en rescue, monter la partition `/`, ensuite utiliser le systeme `chroot` :
+- boot en rescue, monter la partition `/`, ensuite utiliser le système `chroot` :
 ```bash
 root@rescue:~# mount /dev/my_disk /mnt
 root@rescue:~# for i in /dev /dev/pts /proc /sys; do mount -B $i /mnt$i; done
