@@ -68,7 +68,7 @@ ovhai job get <job-id>
 
 You can then access your metrics through the `Monitoring Url`.
 
-You are also able to check it from the OVHcloud Control Panel in your job information by clicking on the button `Go to Graph Dasboard`.
+You are also able to check it from the OVHcloud Control Panel in your job information by clicking on the button `Go to Graph Dashboard`.
 
 #### Command line interface (CLI)
 
@@ -94,11 +94,11 @@ You can either choose the number of `GPUs` or `CPUs` for an AI Training job, not
 By default, a job uses one GPU.
 The memory resource is not customisable.
 
-If you chose `GPU`:
+If you choose `GPU`:
 
 - CPU, memory and local storage resources are not customisable but scaled linearly with each additional GPU.
 
-If you chose `CPU`:
+If you choose `CPU`:
 
 - Memory and local storage resource is not customisable but scaled linearly with each additional CPU.
 

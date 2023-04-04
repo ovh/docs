@@ -58,7 +58,7 @@ ovhai notebook get <notebook-id>
 
 You can then access your metrics through the `Monitoring Url`.
 
-You are also able to check it from the OVHcloud Control Panel in your notebook's general information by clicking on the button `Go to Graph Dasboard`.
+You are also able to check it from the OVHcloud Control Panel in your notebook's general information by clicking on the button `Go to Graph Dashboard`.
 
 #### Command line interface (CLI)
 
