@@ -1,5 +1,5 @@
 ---
-title: 'Comment finaliser une intervention de maintenance sur serveur dédié'
+title: 'Comment bien finaliser une intervention de maintenance sur votre serveur dédié'
 slug: intervention
 excerpt: 'Vous apportez nos retours d expériences suite aux interventions matériels'
 section: 'Diagnostic et mode Rescue'
@@ -40,7 +40,7 @@ Divers
 
 
 > [!warning]
-> Il s'agit d'un recueil élaboré suite à de multiples retour d'expérience et de cas figures que nous avons rencontrés.
+> Il s'agit d'un recueil élaboré par nos équipes suite à de multiples retours d'expériences sur différents cas rencontrés.
 >
 
 
@@ -49,15 +49,15 @@ Divers
 ### Ubuntu
 
 Si vous rencontrez un soucis de connectivité réseau.  
-exemple : pas de ping après remplacement de la carte mère
+exemple : pas de ping après remplacement de la carte mère.
 
-- booter en mode rescue
+- boot en mode rescue
 - monter la partition `/`
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
 ```
 
-Si le fichier `70-persistent-net.rules` n'existe pas (cf repérer le nom de vos interfaces réseaux),  
+Si le fichier `70-persistent-net.rules` n'existe pas (cf repérez le nom de vos interfaces réseaux),  
 vérifier `50-default.network` et `50-public-interface.link` dans l'arbo `/etc/systemd/network/`:
 ```bash
 root@rescue:~# cat /mnt/etc/systemd/network/50-default.network
@@ -106,7 +106,7 @@ NamePolicy=kernel database onboard slot path mac
 root@rescue:~#
 ```
 
-Sauvegarder les fichiers et éditer les afin de corriger l'addresse MAC :
+Sauvegardez les fichiers et éditez les afin de corriger l'addresse MAC :
 ```bash
 root@rescue:~# cp /mnt/etc/systemd/network/50-default.network /mnt/etc/systemd/network/50-default.network.link.bak-`date +%s`
 root@rescue:~# cp /mnt/etc/systemd/network/50-public-interface.link /mnt/etc/systemd/network/50-public-interface.link.bak-`date +%s`
@@ -125,8 +125,8 @@ Ne pas oublier de démonter la partition `/` avant de redémarrer le serveur.
 
 #### Retour sur cas pratiques
 
-Dans certain cas, il faut propager la nouvelle adresse MAC dans les fichiers suivants :
-` /mnt/etc/netplan/01-netcfg.yaml`  
+Dans certain cas, il faut propager la nouvelle adresse MAC dans les fichiers suivants :  
+`/mnt/etc/netplan/01-netcfg.yaml`  
 `/mnt/etc/netplan/50-cloud-init.yaml`  
 `/mnt/etc/systemd/network/10-eno1.link`  
 `/mnt/etc/systemd/network/10-eno1.network`  
@@ -136,28 +136,26 @@ Dans certain cas, il faut propager la nouvelle adresse MAC dans les fichiers sui
 
 exemple : pas de ping après remplacement de la carte mère.
 
-- booter en mode rescue
+- boot en mode rescue
 - monter la partition `/`
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
 ```
 
-Vérifier le fichier de configuration `/mnt/etc/sysconfig/network-scripts/ifcfg-eth0`.  
-Sauvegarder les fichiers et éditer les afin de corriger l'adresse MAC :
+Vérifiez le fichier de configuration `/mnt/etc/sysconfig/network-scripts/ifcfg-eth0`.  
+Sauvegardez les fichiers et éditez les afin de corriger l'adresse MAC :
 ```bash
 root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconfig/network-scripts/ifcfg-eth0.`date +%s`
 ```
 
-Renseigner la nouvelle adresse MAC à la ligne `HWADDR=xx.xx.xx.xx.xx.xx`.  
-
+Renseignez la nouvelle adresse MAC à la ligne `HWADDR=xx.xx.xx.xx.xx.xx`.  
 Ne pas oublier de démonter la partition `/` avant de redémarrer le serveur.
-
 
 
 ### SmartOS
 
 exemple : pas de ping après remplacement de la carte mère.
-- booter en mode rescue
+- boot en mode rescue
 ```bash 
 modprobe zfs
 root@rescue:~# zpool import -f zones (zpool import to list the pools)
@@ -166,25 +164,24 @@ root@rescue:~# zfs mount zones/usbkey
 root@rescue:~# cp /mnt/config{,.bak-$(date +"%Y-%m-%d-%H_%M")}
 ```
 
-Renseigner la nouvelle adresse MAC à la ligne `admin_nic`:
+Renseignez la nouvelle adresse MAC à la ligne `admin_nic`:
 ```bash
 root@rescue:~#  vim /mnt/config
 ```
 
-Ne pas oublier de démonter les partitions  avant de redémarrer le serveur en mode `netboot`:
+Ne pas oublier de démonter les partitions avant de redémarrer le serveur en mode `netboot`:
 ```bash
 root@rescue:~# zfs umount -a
 root@rescue:~# zfs set mountpoint="/usbkey" zones/usbkey 
 ```
 
 
-
 ### FreeBSD
 
 exemple : pas de ping après remplacement de la carte mère.
 
-- booter en mode rescue-bsd
-- Faire un `ifconfig` depuis rescue-bsd, on peut voir l'appellation de l'interface :
+- boot en mode rescue-bsd
+- Faire un `ifconfig` depuis rescue-bsd. De cette manière, nous pouvons repérer l'appellation de l'interface :
 ```bash
 root@rescue-bsd:~ # ifconfig
 igb0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
@@ -192,7 +189,7 @@ options=403bb<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,T
 ether xx:xx:xx:xx:xx:xx
 ```
 
-lancer la commmande `gpart show`, nous pouvons repérer les partitions/noms:
+lancez la commmande `gpart show`, nous pouvons repérer et associer les partitions/noms:
 ```bash
 root@rescue-bsd:~ # gpart show
 => 63 3907029105 ada0 MBR (1.8T)
@@ -212,7 +209,7 @@ root@rescue-bsd:~ # gpart show
  3905980416 1048689 4 freebsd-swap (512M)
 ```
 
-Monter la partition qui nous intéresse et nous pourrons modifier l'interface le fichier suivant `/etc/rc.conf` :
+Montez la partition qui nous intéresse et nous pourrons modifier l'interface le fichier suivant `/etc/rc.conf` :
 ```bash
 root@rescue-bsd:~ # zpool import
    pool: zroot
@@ -329,7 +326,7 @@ root@rescue-bsd:~ #
 ### Gentoo
 
 - Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modifier les nouvelles adresses MAC  à travers l'OS.
-- booter en mode rescue, et repérer la partition `/` :
+- boot en mode rescue, et repérer la partition `/` :
 ```bash
 root@rescue:~# blkid
 /dev/sda1: UUID="15D6-5706" TYPE="vfat" PARTLABEL="grub" PARTUUID="bf514348-6259-41a4-a73f-ba0c38d45de5"
@@ -339,7 +336,7 @@ root@rescue:~# blkid
 /dev/mapper/vg0-root: UUID="2b672f12-77be-40c2-a099-487565ffa933" TYPE="xfs"
 root@rescue:~#
 ```
-- dans notre exemple, nous voyons que le système utilise `LVM` :
+- dans notre exemple, nous voyons que le système utilise _LVM_ :
 ```bash
 root@rescue:~# lvdisplay
   --- Logical volume ---
@@ -385,21 +382,21 @@ backups  bin  boot  dev  etc  home  images  images-ear  images-ueba  lib  lib32
         media  mnt  opt  overlayimages  proc  root  run  sbin  srv  sys  tmp  uploads  usr  var
 ```
 
-- Sous Gentoo, les adresse MAV sont présentes dans les 4 fichiers suivants :
+- Sous Gentoo, les adresse MAC sont présentes dans les 4 fichiers suivants :
 ```bash
 root@rescue:~# cat /mnt/etc/systemd/network/
 10-external.link   11-internal.link   50-static.network  51-vrack.network
 root@rescue:~#
 ```
 
-- Sauvegarder les fichiers avant de les modifier :
+- Sauvegardez les fichiers avant de les modifier :
 ```bash
 root@rescue:~# cp /mnt/etc/systemd/network/50-static.network /mnt/etc/systemd/network/50-static.network.`date +%s`
 root@rescue:~# cp /mnt/etc/systemd/network/51-vrack.network /mnt/etc/systemd/network/51-vrack.network.`date +%s`
 root@rescue:~# cp /mnt/etc/systemd/network/10-external.link /mnt/etc/systemd/network/10-external.link.`date +%s`
 root@rescue:~# cp /mnt/etc/systemd/network/11-internal.link /mnt/etc/systemd/network/11-internal.link.`date +%s`
 ```
-- Mettre à jour les fchiers avec les nouvelles mac-adresses :
+- Mettre à jour les fchiers avec les nouvelles adresses MAC :
 ```bash
 root@rescue:~# nano /mnt/etc/systemd/network/50-static.network
 root@rescue:~# nano /mnt/etc/systemd/network/51-vrack.network
@@ -407,7 +404,7 @@ root@rescue:~# nano /mnt/etc/systemd/network/10-external.link
 root@rescue:~# nano /mnt/etc/systemd/network/11-internal.lin
 ```
 
-- Demonter les partitions puis reboot :
+- Demontez les partitions puis reboot :
 ```bash
 root@rescue:~# umount /mnt
 root@rescue:~# reboot
@@ -434,11 +431,11 @@ root@rescue:~#
 
 exemple : pas de ping après remplacement de la carte mère.
 
-Nous voyons l'erreur lors du démarrage, avec l'ancienne adresse MAC :  
+Nous voyons l'erreur lors du démarrage du système avec l'ancienne adresse MAC :  
 ![proxmox](images/proxmox.jpg){.thumbnail}
 
 
-- booter en mode rescue
+- boot en mode rescue
 
 ```bash
 root@rescue:~# cat /mnt/etc/network/interfaces
@@ -478,7 +475,7 @@ Aug  8 14:27:48 s22 kernel: [  102.139437] eth1: renamed from vethRSNNKL
 root@rescue:~#
 ```
 
-Recréer le fichier `70-persistent-net.rules` avec la nouvelle adresse MAC et le nom de l'interface réseau trouvée dans le fichier  `/mnt/etc/network/interfaces` :
+Recréer le fichier `70-persistent-net.rules` avec la nouvelle adresse MAC et le nom de l'interface réseau repérée dans le fichier  `/mnt/etc/network/interfaces` :
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", NAME="enp3s0f0"
@@ -492,7 +489,7 @@ root@rescue:~#
 exemple : pas de ping après remplacement de la carte mère.
 l'adresse MAC est configurée en statique et doit être réinitialisée.
 
-- booter en mode rescue et connexion en `chroot` :
+- boot en mode rescue et connexion en `chroot` :
 ```bash
 root@rescue:~# mount /dev/sda1 /mnt
 root@rescue:~# mount -t proc /proc/ /mnt/proc/
@@ -502,11 +499,11 @@ root@rescue:~# mount -o bind /dev/pts/ /mnt/dev/pts/
 root@rescue:~# chroot /mnt
 ```
 
-- changer la configuration en place pour qu'elle corresponde aux nouveaux paramètres :
+- changez la configuration en place pour qu'elle corresponde aux nouveaux paramètres :
 ```bash
 [root@rescue /]# xe-reset-networking --device=eth0 --mode=static --ip=xx.xx.xx.xx --netmask=255.255.255.0 --gateway=xx.xx.xx.xxx
 ```
-- il vous sera demander de répondre à la question par "yes", ensuite faites "Enter" :
+- il vous sera demandé de répondre à la question par "yes", ensuite faites "Enter" :
 ```bash
 ----------------------------------------------------------------------
 !! WARNING !!
@@ -561,7 +558,7 @@ Il est nécessaire de vérifier et d'adapter les fichiers suivants :
 ### ESXi
 
 - Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modifier les nouvelles adresses MAC à travers le fichier `esxi.conf`.
-- booter en mode rescue afin de monter la partition `/` :
+- boot en mode rescue afin de monter la partition `/` :
 ```bash
 root@rescue:~# mount /dev/sdaX /mnt/
 ```
@@ -609,7 +606,7 @@ root@rescue:/home/ovh/esxi# vim etc/vmware/esx.conf
 > S'il y a une interface vRACK, ne pas oublier de changer la mac-adresse également.
 >
 
-- réaliser une sauvegarde puis démonter la partition `/` :
+- réalisez une sauvegarde puis démontez la partition `/` :
 ```bash
 root@rescue:/home/ovh/esxi# tar -czf $WORKINGDIR/local.tgz etc/
 root@rescue:/home/ovh/esxi# tar -czf /mnt/state.tgz local.tgz
@@ -618,7 +615,7 @@ root@rescue:/home/ovh/esxi# umount /mnt
 
 #### Retour sur cas pratiques
 
-Vérifier l'ordre des déclarations de vos vmnicX :
+Vérifiez l'ordre des déclarations de vos vmnicX :
 exemple fonctionnel :
 ```bash
 root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
@@ -626,12 +623,6 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 /vmkdevmgr/pci/m00008501/alias = "vmnic0"
 /vmkdevmgr/pci/m00008502/alias = "vmnic1"
 ```
-
-
-
-
-
-
 
 
 
@@ -644,7 +635,7 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 #### via IPMI/KVM
 - Connectez-vous en tant qu'administrateur à partir de l'interface IPMI/KVM.
 
-- Presser la combinaison de touches WINDOWS+R, puis à travers l'invite `executer`,  Lancer la commande `devmgmt.msc`:
+- Pressez la combinaison de touches WINDOWS+R, puis à travers l'invite `executer`,  Lancez la commande `devmgmt.msc`:
 ![win_device_manager](images/win_device_manager.png){.thumbnail}
 
 - Ouvrir `Network adapters` et selectionner l'adaptateur correspondant à `eth0`
@@ -667,15 +658,15 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 
 > [!primary]
 > Par défaut, vous serez dans l'arboresence du WinPE
-> N'oublier pas de naviguer sur le lecteur C:\
+> N'oubliez pas de naviguer sur le lecteur C:\
 >
 
-- Repérer le registre `SYSTEM`  
+- Repérez le registre `SYSTEM`  
 ![win_load](images/win_load.png){.thumbnail}
 
-- Il vous sera demandé d'entre un nom, vous pouvez, par exemple, taper `OVH_TEST`.
+- Il vous sera demandé d'entrer un nom, vous pouvez, par exemple, taper `OVH_TEST`.
 
-- Repérer la valeur du registre suivant :
+- Repérez la valeur du registre suivant :
 ```bash
 "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002BE10318}"
 ```
@@ -693,15 +684,12 @@ Vous pouvez vérifier le nom de votre interface à partir d'un prompt via la com
 ipconfig /all
 ```
 
+- Regardez dans les entrées de registre `NetworkAddress` sur le panneau de droite, et changer la valeur par celle de votre nouvelle adresse MAC. Si cette entrée n'existe pas, clic-droit dans une zone vide pour créer une valeur de type `String` avec le nom `NetworkAddress`.
 ![win_regedit_3](images/win_regedit_3.png){.thumbnail}
 
-- Regardez dans les entrées de registre `NetworkAddress` sur le panneau de droite, et changer la valeur par celle de votre nouvelle mac-adresse.
-Si cette entrée n'existe pas, clic-droit dans une zone vide pour créer une valeur de type `String` avec le nom `NetworkAddress`.
 
 - Vous avez besoin de décharger le registre por appliquer les changements récents.
 - Cliquez sur OVH_TEST (crée précédement) ensuite cliquez sur `File` (en haut à gauche) et selectionnez `Unload hive...`
-
-
 
 
 
