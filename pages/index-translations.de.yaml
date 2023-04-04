@@ -207,11 +207,13 @@ web-cloud-domains-dns: DNS
 web-cloud-domains-dns-dns-and-dns-zone: DNS und DNS-Zone
 web-cloud-domains-dns-security: Sicherheit
 web-cloud-domains-domain-names: Domainnamen
+web-cloud-domains-domain-names-general-guides: Allgemeine Verwendung
 web-cloud-domains-domain-names-changing-a-domain-name-owner-trade: Änderung des Inhabers eines Domainnamens
 web-cloud-domains-domain-names-security: Sicherheit
 web-cloud-domains-domain-names-transferring-between-registrars: Transfer zwischen Registrars
 web-cloud-domains-domain-names-troubleshooting: Diagnose
 web-cloud-domains-domain-names-tutorials: Tutorials
+web-cloud-domains-domain-names-api: API
 web-cloud-internet: Internet
 web-cloud-internet-internet-access: Internetzugang
 web-cloud-internet-internet-access-advanced-setup: Erweiterte Einrichtung
