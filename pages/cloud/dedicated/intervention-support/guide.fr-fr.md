@@ -29,7 +29,9 @@ En particulier si vos OS sont listés, vous n'aurez plus qu'à suivre la procéd
 - FreeBSD
 - Gentoo
 
+
 Virtualisation  
+
 - Proxmox (version 6)
 - XenServer
 - ESXi
