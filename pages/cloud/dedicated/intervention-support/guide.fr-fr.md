@@ -28,12 +28,12 @@ En particulier si vos systèmes sont listés, vous n'aurez plus qu'à suivre la 
 
 Virtualisation  
 
-- Proxmox (version 6)
+- Proxmox
 - XenServer
 - ESXi
 - Windows (hyper-V)
 
-Divers
+Divers  
 - Repérer le nom de vos interfaces réseaux
 
 
