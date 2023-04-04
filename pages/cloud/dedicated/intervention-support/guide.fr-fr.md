@@ -17,20 +17,22 @@ Nos interventions de maintenance se limitent uniquement à la partie matériel, 
 Tout ceci dans le but de vous accompagner et faire en sorte qu'il y ait le moins d'impact possible dans le cycle de vie de vos environnements.
 vous retrouverez ici toutes les infos nécessaires, si vos systèmes sont listés, vous n'aurez plus qu'à suivre la procédure correspondante :
 
+**Systèmes d'exploitation**
+
 - Ubuntu
 - CentOS/Alma Linux
 - SmartOS
 - FreeBSD
 - Gentoo
 
-Virtualisation  
+**Virtualisation**  
 
 - Proxmox
 - XenServer
 - ESXi
 - Windows (hyper-V)
 
-Divers
+**Divers**  
 
 - Repérer le nom de vos interfaces réseaux
 
