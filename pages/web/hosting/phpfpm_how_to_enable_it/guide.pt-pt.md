@@ -4,9 +4,10 @@ excerpt: Este guia irá ajudá-lo na ativação do PHP-FPM no seu alojamento web
 slug: ativar_a_otimizacao_do_php_no_seu_alojamento_partilhado_ovh
 section: PHP
 order: 03
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Última atualização: 05/05/2020**
 
 ## O que é o PHP-FPM?
 Nós adaptámos PHP-FPM à nossa infraestrutura Web de forma a podermos tirar beneficio da mesma com o objetivo de acelerar as respostas PHP.

@@ -4,7 +4,7 @@ excerpt: Avoid the common pitfalls of making your website secure with SSL
 slug: avoid_the_common_pitfalls_of_making_your_website_secure_with_ssl
 section: SSL
 order: 04
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
 **Last updated 5th May 2020**

@@ -4,7 +4,7 @@ slug: utilisation-putty-windows
 excerpt: Vous trouverez dans ce guide differentes informations et aides concernant l’installation de Putty sur Windows.
 section: FTP et SSH
 order: 08
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
 **Dernière mise à jour le 05/05/2020**

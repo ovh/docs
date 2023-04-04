@@ -4,9 +4,10 @@ excerpt: 'Hosting condiviso: utilizza Putty su Windows'
 slug: hosting_condiviso_utilizza_putty_su_windows
 section: FTP e SSH
 order: 08
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Ultimo aggiornamento: 05/05/2020**
 
 ## Introduzione
 Su Windows è possibile installare diversi client SSH.
