@@ -4,12 +4,17 @@ slug: deploy/build-use-custom-image
 excerpt: Explanations on how to build and use your own custom image
 section: AI Deploy - Tutorials
 order: 00
-updated: 2023-03-29
+updated: 2023-04-04
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/build-use-custom-image/'
 ---
 
-**Last updated 29th March, 2023.**
+**Last updated 4th April, 2023.**
+
+> [!primary]
+>
+> AI Deploy is covered by **[OVHcloud Public Cloud Special Conditions](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/d2a208c-Conditions_particulieres_OVH_Stack-WE-9.0.pdf)**.
+>
 
 ## Objective
 
