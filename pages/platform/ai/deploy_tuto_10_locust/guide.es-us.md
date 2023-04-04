@@ -61,7 +61,7 @@ ovhai app run --name spamclassifier --cpu 1 \
 --auto-max-replicas 5 \
 --auto-resource-type CPU \
 --auto-resource-usage-threshold 75 \
-priv-registry.gra.training.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
+priv-registry.gra.ai.cloud.ovh.net/ai-deploy-portfolio/fastapi-spam-classification
 ```
 
 ### Verify that your API is up and running with cURL

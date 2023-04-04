@@ -89,7 +89,7 @@ This newly generated token provides read access over all resources tagged with t
 
 #### Operator token
 
-An operator token grants read access along with management access for the matching apps. This means that you can manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](https://docs.ovh.com/pt/publiccloud/ai/cli/install-client/)) or the [AI Training API](https://gra.training.ai.cloud.ovh.net/) by providing this token.
+An operator token grants read access along with management access for the matching apps. This means that you can manage the AI Deploy app lifecycle (start/stop/delete) using either the CLI (more info [here](https://docs.ovh.com/pt/publiccloud/ai/cli/install-client/)) or the [AI Training API](https://gra.ai.cloud.ovh.net/) by providing this token.
 
 This Operator token will be scoped on a specific AI Deploy app and we will use the default `ovh/id` label to do so (since it is reserved, there is only one AI Deploy app that can match this label selector).
 
@@ -125,7 +125,7 @@ You can also directly CURL the AI Deploy app using the token as an `Authorizatio
 
 ```bash
 export TOKEN=<your-token>
-curl "https://<your-app-id>.app.<your-app-region>.training.ai.cloud.ovh.net" -H "Authorization: Bearer $TOKEN"
+curl "https://<your-app-id>.app.<your-app-region>.ai.cloud.ovh.net" -H "Authorization: Bearer $TOKEN"
 
 > Hello, World!
 ```

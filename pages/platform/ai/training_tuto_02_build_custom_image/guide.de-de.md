@@ -150,7 +150,7 @@ The basic commands to push a docker image to a registry is :
     docker tag <image-identifier> <registry>/<image-identifier>
     docker push <registry>/<image-identifier>
 
-Example if you want to push an image named `custom-image` inside a registry `registry.gra.training.ai.cloud.ovh.net` :
+Example if you want to push an image named `custom-image` inside a registry `registry.gra.ai.cloud.ovh.net` :
 
     docker login -u <registry-user> -p <registry-password> my-registry.ai.cloud.ovh.net
     docker tag custom-image:latest my-registry.ai.cloud.ovh.net/custom-image:latest

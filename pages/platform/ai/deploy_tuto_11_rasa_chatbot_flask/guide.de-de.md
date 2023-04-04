@@ -226,7 +226,7 @@ docker push <yourdockerhubId>/flask-app:latest
 
 Once built, let's run the Frontend application with the ovhai CLI. 
 
-But first, get the URL of your backend Rasa chatbot. It will be something like this: **https://259b36ff-fc61-46a5-9a25-8d9a7b9f8ff6.app.gra.training.ai.cloud.ovh.net/**. You can have it with the CLI by listing all of your apps and locating the one you want. 
+But first, get the URL of your backend Rasa chatbot. It will be something like this: **https://259b36ff-fc61-46a5-9a25-8d9a7b9f8ff6.app.gra.ai.cloud.ovh.net/**. You can have it with the CLI by listing all of your apps and locating the one you want. 
 
 Now you can run this command:
 

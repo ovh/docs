@@ -21,7 +21,7 @@ updated: 2021-05-03
 
 ## UI Access
 
-The URL to access the monitoring is built like this : *https://monitoring.`<REGION>`{=html}.training.ai.cloud.ovh.net/d/gpu?var-job=`<JOB-ID>`{=html}*
+The URL to access the monitoring is built like this : *https://monitoring.`<REGION>`{=html}.ai.cloud.ovh.net/d/gpu?var-job=`<JOB-ID>`{=html}*
 
 It can be fetched in the CLI using this command:
 
@@ -55,9 +55,9 @@ Status:
   Stopped At:     
   IP:             10.42.165.21
   Duration:       2s
-  Job Url:        https://xxx.job.console.preprod.training.ai.cloud.ovh.net
+  Job Url:        https://xxx.job.console.preprod.ai.cloud.ovh.net
   SSH Url:        
-  Monitoring Url: https://monitoring.console.preprod.training.ai.cloud.ovh.net/d/gpu?var-job=xxx&from=1618392608000
+  Monitoring Url: https://monitoring.console.preprod.ai.cloud.ovh.net/d/gpu?var-job=xxx&from=1618392608000
   Infos:          
   Data Sync:      
   Sync Progress:  
