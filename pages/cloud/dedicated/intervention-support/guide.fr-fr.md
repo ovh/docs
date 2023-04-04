@@ -1,7 +1,7 @@
 ---
-title: 'Comment bien finaliser une intervention de maintenance sur votre serveur dédié'
+title: 'Comment bien finaliser une intervention de maintenance réalisée sur votre serveur dédié'
 slug: intervention
-excerpt: 'Vous apportez nos retours d expériences suite aux interventions matériels'
+excerpt: 'Vous apportez nos retours d expériences'
 section: 'Diagnostic et mode Rescue'
 
 ---
