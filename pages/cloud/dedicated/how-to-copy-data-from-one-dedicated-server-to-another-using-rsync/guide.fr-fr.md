@@ -3,8 +3,10 @@ title: 'Comment copier des données d’un serveur dédié vers un autre en util
 slug: copier-donnees-serveur-rsync
 excerpt: 'Copiez facilement les données de votre serveur dédié vers un autre grâce à rsync'
 section: Tutoriel
-updated: 2022-06-17
+updated: 2022-02-16
 ---
+
+**Dernière mise à jour le 16/02/2022**
 
 ## Introduction
 

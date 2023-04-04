@@ -6,6 +6,7 @@ section: RAID and disks
 updated: 2022-11-16
 ---
 
+**Last updated 16th November 2022**
 
 ## Requirements
 Hot swapping is only possible on the server ranges mHG, HG, and bHG.

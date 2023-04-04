@@ -7,6 +7,8 @@ order: 4
 updated: 2021-07-21
 ---
 
+**Última atualização: 21/07/2021**
+
 ## Sumário
 
 A palavra-passe da sua Área de Cliente OVHcloud é a chave de acesso a todos os seus serviços e informações. Deve ser suficientemente complexa e regularmente alterada para garantir a segurança.

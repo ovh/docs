@@ -6,6 +6,7 @@ section: RAID & disques
 updated: 2022-11-16
 ---
 
+**Dernière mise à jour le 16/11/2022**
 
 ## Prérequis
 Le remplacement à chaud n'est possible que sur les gammes de serveur mHG, HG, et bHG.

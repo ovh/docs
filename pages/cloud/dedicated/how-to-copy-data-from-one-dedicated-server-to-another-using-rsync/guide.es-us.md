@@ -3,8 +3,10 @@ title: 'Copiar datos de un servidor a otro utilizando rsync'
 slug: copiar-datos-servidor-rsync
 excerpt: 'Cómo copiar fácilmente los datos de un servidor a otro mediante rsync'
 section: Tutoriales
-updated: 2022-06-17
+updated: 2022-02-16
 ---
+
+**Última actualización: 16/02/2022**
 
 ## Introducción
 
