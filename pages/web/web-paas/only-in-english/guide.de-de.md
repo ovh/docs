@@ -6,6 +6,8 @@ section: Getting started
 updated: 2021-03-30
 ---
 
+**Letzte Aktualisierung am 30.03.2021**
+
 ## Nur auf Englisch verfügbar
 
 Die Dokumentation für unser Produkt *Web PaaS powered by Platform.sh* ist aktuell nicht in Ihrer Sprache verfügbar. Bitte lesen Sie die [englische Dokumentation](https://docs.ovh.com/gb/en/web-paas/).

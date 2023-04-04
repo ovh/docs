@@ -6,6 +6,8 @@ order: 4
 updated: 2021-03-31
 ---
 
+**Last updated 31st March 2021**
+
 ## Objective 
 
 This document describes the way for sending emails from your application.
