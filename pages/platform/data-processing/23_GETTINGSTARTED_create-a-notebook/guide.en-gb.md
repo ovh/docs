@@ -20,6 +20,7 @@ This guide will cover the creation of a new Apache Saprk notebook.
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - a Public Cloud user with `administrator` role
 - Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details).
+- [OVHcloud API credentials ](https://docs.ovh.com/gb/en/data-processing/use-api/){external}). 
 
 ## Definition
 **Notebooks** are files which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…). Notebooks are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable files which can be run to perform data analysis. It's vastly used across developer world, especially in the data and artificial intelligence fields.
@@ -32,7 +33,7 @@ You can create notebooks with the OVHcloud Control Panel or use the [OVHcloud AP
 
 ## Instructions
 
-### Step 1
+### Step 1 - OVHcloud Control Panel
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the 'Public Cloud'{.action} section and select the Public Cloud project concerned.
 
 Access the administration UI for your OVHcloud Data Processing by clicking on (1)`Data Processing`{.action} in the left-hand menu and click on (2)`Créer un notebook`{.action}
@@ -83,15 +84,60 @@ To change kernels, click on 'select kernel' (4) and select a new kernel (changin
 
 At the bottom left, a small summary (5) shows how many kernels are used with which cluster.
 
-
-
-
 ### Stop the Data Processing Notebook
 
 Go back to the OVHcloud Control Panel. In the Data Processing panel you can directly stop the desired notebooks.
 
 ![Create a notebook 06](images/Creating-a-notebook06.png){.thumbnail}
-  
+
+
+
+### Step 2 - OVHcloud APIv6
+
+In the OVHcloud APIv6 you can find all the Data Processing endpoints in the “cloud” section. 
+
+![Create a notebook 07](images/Creating-a-notebook07.png){.thumbnail}
+
+Scroll down into the “cloud” section until you reach the /cloud/project/{serviceName}/dataProcessing/notebooks/... endpoints.
+
+Once you have expanded the section, you can try out the endpoints directly in the UI by clicking on them.
+
+>[!primary]
+>
+> The "serviceName" parameter for each endpoint of the `cloud` section requires your Public Cloud project ID.
+
+For further information about an endpoint, the `Response Class` tab under the `Execute`{.action} button shows what the API response will look like. Switch the tabs to display wrapper code examples.
+
+![Create a notebook 08](images/Creating-a-notebook08.png){.thumbnail}
+
+Before creating a notebook, you can list all the existing notebooks linked to your Public Cloud project ID.
+
+![Create a notebook 09](images/Creating-a-notebook09.png){.thumbnail}
+
+To create a new notebook, use the endpoint /cloud/project/{service name}/dataProcessing/notebooks. Specify the public cloud project ID(0) and fill in the other fields.
+Define your `spark` notebook and choose a version(1). Define a name and region for your notebook(2).
+Then click execute to generate the notebook(3).
+
+![Create a notebook 10](images/Creating-a-notebook10.png){.thumbnail}
+
+Finally, you will be able to get several pieces of information including the ID and URL of the notebook. To access it, click on the URL and you will be redirected to the notebook as in step 1. 
+
+![Create a notebook 11](images/Creating-a-notebook11.png){.thumbnail}
+
+You can get notebook information at any time from the endpoint `Get notebook information` by entering the Public Cloud project Id. 
+
+![Create a notebook 12](images/Creating-a-notebook12.png){.thumbnail}
+
+You can also start or stop your laptop from the APIv6. This allows you to free up resources when you don't need them. 
+
+![Create a notebook 13](images/Creating-a-notebook13.png){.thumbnail}
+
+When you are done with your notebook, you can delete it to free the resources it uses. 
+
+![Create a notebook 14](images/Creating-a-notebook14.png){.thumbnail}
+
+When you are done with your notebook, you can delete it to free the resources it uses. 
+
 ### Considerations
 
 - A notebook will run indefinitely until manual interruption, meaning that you will pay for it.
@@ -111,8 +157,6 @@ During its lifetime the Apache Spark Notebook will transition between the follow
 - `Cancelling`: The Notebook is still running, but an interruption order was received.
 - `Stopped`: The Notebook is stopped. Compute resources are released.
 - `Deleted`: The Notebook data is fully deleted, you don't pay anything.
-
-### Step 2
 
 ## Go further
 
