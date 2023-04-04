@@ -151,3 +151,221 @@ Una vez que haya creado la base de datos, deberá descargar los parámetros de c
 > - Para conectarse a la base de datos asociada a su plan de hosting, consulte [esta guía](https://docs.ovh.com/es/hosting/crear-base-de-datos/#acceder-a-la-interfaz-phpmyadmin).
 > - Para conectarse a una base de datos en un databases de Web Cloud, consulte [esta guía](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/).
 >
+
+### Etapa 2 - iniciar la instalación manual
+
+#### 2.1 - Obtener los archivos de origen de su CMS
+
+Acceda a la web del editor del CMS que haya elegido para descargar los archivos de origen.
+
+A continuación se muestran los enlaces a las páginas de descarga de los CMS que figuran en el presente tutorial:
+
+- [WordPress](https://wordpress.org/download/#download-install){.external}
+- [Joomla!](https://downloads.joomla.org/){.external}
+- [Drupal](https://www.drupal.org/download){.external}
+- [Prestashop](https://www.prestashop.com/en/download){.external}
+
+> [!primary]
+>
+> Descargue la versión PHP y la versión MySQL o MariaDB necesarias para hacer funcionar el CMS.
+>
+> Para ello, consulte el enlace a la página oficial del CMS que quiera instalar:
+
+>
+> - [WordPress](https://wordpress.org/about/requirements/){.external}
+> - [Joomla!](https://downloads.joomla.org/technical-requirements){.external}
+> - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
+> - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
+>
+>
+> Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/).
+>
+Si ya utiliza una versión de PHP igual o superior a la necesaria, no es necesario realizar ningún cambio.
+>
+
+Siga las instrucciones del editor de su CMS hasta que los archivos de origen se carguen a su ordenador y continúe leyendo este tutorial.
+
+> [!warning]
+>
+> Si tiene otros sitios web alojados en su plan de hosting, compruebe que son compatibles con la versión de PHP que seleccione para su nuevo CMS.
+>
+
+#### 2.2 - Descomprimir los archivos fuente descargados en una nueva carpeta
+
+>[!primary]
+>
+> Para mayor facilidad, sustituya en este paso el nombre de la carpeta "**CMS**" por el nombre del CMS que haya elegido para mayor facilidad. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
+>
+
+El archivo descargado está en un formato **comprimido** (zippé). Cree una carpeta llamada "**CMS**" en su ordenador y luego **descomprima** el contenido del archivo descargado en la carpeta "**CMS**".
+
+Para ello, abra la carpeta en la que haya descargado el archivo comprimido, haga clic derecho sobre el archivo en cuestión y seleccione "Extraer todo... ".
+
+Indique la carpeta "**CMS**" en la que quiera descargar los archivos desde esta carpeta.
+
+#### 2.3 - Mover los archivos fuente de la carpeta "CMS" al "directorio raíz" de su alojamiento web
+
+Una vez descomprimidos los archivos en su carpeta "**CMS**", [conéctese por FTP al espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) utilizando el [cliente FTP FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/) y, a continuación, copie los archivos contenidos en la carpeta "**CMS**" en la "carpeta raíz" que haya establecido en su alojamiento durante el [etapa 1](#step1) de esta guía.
+
+A continuación, un ejemplo con el CMS *WordPress*:
+
+![hosting](images/wpfl2.png){.thumbnail}
+
+>[!warning]
+>
+> Le recomendamos encarecidamente que utilice una "carpeta raíz" vacía para evitar conflictos con otro de sus sitios web. Compruebe que la carpeta de destino no contenga ningún elemento antes de mover los archivos.
+>
+
+>[!primary]
+>
+Si la "carpeta raíz" que ha definido no se ha creado automáticamente en las acciones descritas en el [etapa 1](#step1), puede crearla a través de FileZilla.
+>
+> El almacenamiento de los archivos en el alojamiento puede tardar unos minutos.
+>
+> Una vez finalizada la transferencia, compruebe que todos los elementos de la carpeta local "**CMS**" se hayan transferido correctamente a la carpeta raíz de su alojamiento web.
+>
+
+**Caso Particular**: Si tiene una velocidad de internet limitada y/o un plan de hosting **Pro** o superior, puede utilizar la conexión **SSH** para colocar los archivos de origen de su CMS en el espacio de almacenamiento de su alojamiento web.
+
+Para conectarse a su alojamiento por SSH, consulte nuestra guía sobre la [conexión por SSH desde un alojamiento compartido de OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/).
+
+Una vez que se haya conectado a **SSH**, ejecute los siguientes comandos:
+
+Acceda a la carpeta raíz en la que quiere instalar su CMS en su alojamiento web:
+
+```bash
+cd NameOfYourTargetFolder
+```
+
+- Consulte los archivos de origen de su CMS directamente desde su "directorio raíz" con el comando correspondiente al CMS que haya elegido:
+
+> [!tabs]
+> **WordPress**
+>> 
+>> ```bash
+>> wget http://wordpress.org/latest.tar.gz
+>> ```
+>>
+>> **latest** permite instalar automáticamente la última versión del CMS.
+>>
+> **Joomla!**
+>> 
+>> ```bash
+>> wget https://downloads.joomla.org/cms/joomla4/4-2-8/Joomla_4-2-8-Stable-Full_Package.tar.gz
+>> ```
+>> 
+>> **Joomla4** y **4-2-8*** coinciden con la última versión de Joomla! disponible.
+>> Sustituya estos valores por los valores que desee instalar.
+>> 
+> **Drupal**
+>> 
+>> ```bash
+>> wget https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.4.tar.gz
+>> ```
+>> 
+>> **8.x-2.4** corresponde a la última versión de Drupal disponible.
+>> Sustituya estos valores por los valores que desee instalar.
+>> 
+> **PrestaShop**
+>> 
+>> ```bash
+>> wget https://github.com/PrestaShop/PrestaShop/archive/1.7.8.8.tar.gz
+>> ```
+>> 
+>> **1.7.8.8** corresponde a la última versión de PrestaShop disponible.
+>> Sustituya estos valores por los valores que desee instalar.
+>> 
+
+- Descomprima los archivos de origen de su CMS en la carpeta raíz utilizando el comando correspondiente al CMS que haya elegido:
+
+> [!tabs]
+> **WordPress**
+>> 
+>> ```bash
+>> tar xvf latest.tar.gz
+>> ```
+>> 
+> **Joomla!**
+>> 
+>> ```bash
+>> tar xvf Joomla_4-2-8-Stable-Full_Package.tar.gz
+>> ```
+>> 
+> **Drupal**
+>> 
+>> ```bash
+>> tar xvf admin_toolbar-8.x-2.4.tar.gz
+>> ```
+>> 
+> **PrestaShop**
+>> 
+>> ```bash
+>> tar xvf 1.7.8.8.tar.gz
+>> ```
+>> 
+
+- En la carpeta raíz se crea una carpeta "**CMS**". Mueva su contenido a la base de su carpeta raíz:
+
+```bash
+mv CMS/* ./
+```
+
+- Elimine la carpeta "**CMS**" ya vacía:
+
+```bash
+rmdir ./CMS/
+```
+
+- Elimine el archivo comprimido correspondiente al CMS que haya elegido:
+
+> [!tabs]
+> **WordPress**
+>> ```bash
+>> rm -f latest.tar.gz
+>> ```
+>> 
+> **Joomla!**
+>> ```bash
+>> rm -f Joomla_4-2-8-Stable-Full_Package.tar.gz
+>> ```
+>> 
+> **Drupal**
+>> ```bash
+>> rm -f admin_toolbar-8.x-2.4.tar.gz
+>> ```
+>> 
+> **PrestaShop**
+>> ```bash
+>> rm -f 1.7.8.8.tar.gz
+>> ```
+>> 
+
+### Etape 3 - Finalizar la instalación manual <a name="step3"></a>
+
+> [!success]
+>
+> Antes de continuar la instalación, vacíe la caché de su navegador de Internet para evitar cualquier error.
+>
+
+A partir de esta etapa, el procedimiento será diferente en función del CMS que haya elegido previamente.
+
+Para continuar con la instalación, siga uno de los siguientes enlaces haciendo clic en la guía correspondiente a su CMS:
+
+- [Finalizar la instalación de WordPress](https://docs.ovh.com/es/hosting/cms_instalar_manualmente_wordpress/)
+- [Finalizar la instalación de Joomla!](https://docs.ovh.com/es/hosting/instalar-manualmente-joomla/)
+- [Finalizar la instalación de Drupal](https://docs.ovh.com/es/hosting/cms_manually_install_drupal/)
+- [Finalizar la instalación de PrestaShop](https://docs.ovh.com/es/hosting/cms_manually_install_prestashop/)
+
+## Más información <a name="go-further"></a>
+
+[Migración de su sitio web y de su correo a OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)
+
+[Publicar un sitio web en internet en un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/)
+
+[Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
