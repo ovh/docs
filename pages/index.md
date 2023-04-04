@@ -1289,7 +1289,6 @@
             + [Setting up an email application on your mobile device](web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-mobile-device)
                 + [Configuring an Exchange account on iPhone and iPad](web/microsoft-collaborative-solutions/how_to_configure_ios)
                 + [Configuring an Exchange account on Android via the Gmail app](web/microsoft-collaborative-solutions/how_to_configure_android)
-                + [Configurer son compte Exchange sur un Windows Phone](web/microsoft-collaborative-solutions/how_to_configure_windows_phone)
             + [Troubleshooting](web-cloud-email-collaborative-solutions-microsoft-exchange-troubleshooting)
                 + [Using Exchange error diagnostics](web/microsoft-collaborative-solutions/diagnostic_advanced)
         + [Microsoft Office](web-cloud-email-collaborative-solutions-microsoft-office)
