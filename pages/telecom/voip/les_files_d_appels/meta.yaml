@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 12ffdd28-20aa-45a0-8040-1248c4e36b7b
 full_slug: voip-files-appels

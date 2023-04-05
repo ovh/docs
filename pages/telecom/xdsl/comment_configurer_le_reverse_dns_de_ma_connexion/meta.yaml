@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 09c90eef-0b00-43ab-863d-708c2c0b9db2
 full_slug: internet-access-reverse-dns

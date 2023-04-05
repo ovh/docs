@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 8ff5970f-c808-481c-b12a-dcd256041584
 full_slug: internet-access-enable-sip

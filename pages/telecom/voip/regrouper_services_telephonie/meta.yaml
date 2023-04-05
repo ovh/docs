@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 163c3f31-1171-4e42-9c79-e9d8021b310f
 full_slug: voip-telephony-groups-management

@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: cb4bf9fa-33d0-43a5-9f99-9fcd3c36b4bb
 full_slug: internet-access-restore-synchronisation-after-outage

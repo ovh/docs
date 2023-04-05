@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 7fecf167-bfd5-4419-a99d-3baee886727e
 full_slug: voip-softphone-sip-register

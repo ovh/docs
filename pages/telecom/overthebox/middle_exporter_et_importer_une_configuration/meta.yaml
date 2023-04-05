@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: a50bc1d7-a633-49f1-b2d3-6a09a72b2e97
 full_slug: overthebox-configuration-export-import
