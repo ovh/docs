@@ -323,6 +323,7 @@ storage-block-storage: Block Storage
 storage-block-storage-cloud-disk-array: Cloud Disk Array
 storage-backup-and-disaster-recovery-solution: Backup et Plan de Reprise d'Activité
 storage-backup-and-disaster-recovery-solution-veeam: Veeam
+storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 network-byoip: Bring your own IP (BYOIP)
 network-additional-ip: Additional IP
 network-ovhcloud-connect: OVHcloud Connect
