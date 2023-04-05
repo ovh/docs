@@ -6,7 +6,7 @@ section: 'Advanced technical configurations'
 updated: 2023-04-03
 ---
 
-**Last updated 3th of April 2023**
+**Last updated 3rd April 2023**
 
 ## Objective
 
