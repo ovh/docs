@@ -101,7 +101,7 @@ Cerca “Modifica le variabili di ambiente relative al sistema” per trovare le
 
 #### Step 2: modifica le impostazioni del sistema
 
-Per personalizzare i parametri, seleziona la scheda `Avanzate`{.action} e clicca su `Variabili d’ambiente...`{.action} .
+Per personalizzare i parametri, seleziona la scheda `Avanzate`{.action} e clicca su `Variabili d’ambiente...`{.action}.
 
 ![Parametri delle performance](images/3_preparation_openstack_environment_windows.png){.thumbnail}
 

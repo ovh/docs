@@ -6,6 +6,8 @@ section: Computer Telephony Integration (CTI)
 updated: 2018-03-26
 ---
 
+**Dernière mise à jour le 26/03/2018**
+
 
 ## Téléchargement
 

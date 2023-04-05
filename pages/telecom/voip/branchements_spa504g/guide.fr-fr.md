@@ -6,8 +6,10 @@ space_key: CRTEL
 space_name: Téléphonie
 section: 'Cisco SPA504g'
 hidden: true
-updated: 2020-04-20
+updated: 2018-03-26
 ---
+
+**Dernière mise à jour le 26/03/2018**
 
 ------------------------------------------------------------------------
 

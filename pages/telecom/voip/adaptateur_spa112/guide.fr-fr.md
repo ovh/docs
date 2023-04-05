@@ -3,8 +3,10 @@ title: Adaptateur SPA112
 slug: adaptateur-spa112
 section: Cisco SPA112
 hidden: true
-updated: 2020-04-20
+updated: 2018-03-26
 ---
+
+**Dernière mise à jour le 26/03/2018**
 
 [![](images/spa112-main.jpg){.thumbnail}](https://www.ovhtelecom.fr/telephonie/telephones/cisco_spa112/){.external-link}
 

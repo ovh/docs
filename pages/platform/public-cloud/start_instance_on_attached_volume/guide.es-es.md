@@ -5,8 +5,10 @@ slug: iniciar_una_instancia_en_un_volumen_asociado
 legacy_guide_number: g2064
 section: 'Primeros pasos'
 order: 07
-updated: 2023-01-11
+updated: 2021-11-01
 ---
+
+**Última actualización: 20/05/2019**
 
 ## 
 Los servidores cloud se entregan con un disco original copiado a partir de una imagen de sistema (Debian 8, Windows 10...), aunque también se pueden utilizar volúmenes adicionales, que son discos persistentes que permiten almacenar datos.

@@ -31,7 +31,7 @@ In questo modo è possibile, ad esempio, importare le immagini delle macchine vi
 
 ## Gestione delle immagini
 
-- - Di default, se non viene creata alcuna immagine, visualizzi la lista delle immagini pubbliche predefinite:
+- Di default, se non viene creata alcuna immagine, visualizzi la lista delle immagini pubbliche predefinite:
 
 ![public-cloud](images/horizon_images.png){.thumbnail}
 

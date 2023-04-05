@@ -3,8 +3,10 @@ title: Information about Meltdown and Spectre vulnerability fixes
 slug: information-about-meltdown-spectre-vulnerability-fixes
 section: Meltdown and Spectre informations
 fullwidth: true
-updated: 2022-11-16
+updated: 2020-07-15
 ---
+
+**Last updated 15th July 2020**
 
 <div id="main-content" class="wiki-content table-meltown-spectre">
    <p><strong>Last update 26. June.&nbsp; at<span class="widont">&nbsp;3:00pm CET<br></span></strong></p>

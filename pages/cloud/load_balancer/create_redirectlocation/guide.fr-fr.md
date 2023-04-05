@@ -3,7 +3,7 @@ title: "Configuration d'un service OVHcloud Load Balancer avec les redirections"
 slug: redirect-location
 excerpt: Intégrez vos services web derrière un Load Balancer avec les redirections
 section: Configuration
-updated: 2021-02-05
+updated: 2022-03-28
 ---
 
 **Dernière mise à jour le à 28/03/2022**

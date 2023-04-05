@@ -6,6 +6,8 @@ section: Getting started
 updated: 2021-03-30
 ---
 
+**Ostatnia aktualizacja z dnia 30-03-2021**
+
 ## Dokumentacja dostępna wyłącznie w języku angielskim
 
 Dokumentacja dotycząca produktu *Web PaaS powered by Platform.sh* nie jest w tym momencie dostępna w Twoim języku.

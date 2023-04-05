@@ -4,9 +4,10 @@ excerpt: Evitar las trampas del SSL en un sitio web
 slug: evitar_las_trampas_del_ssl_en_un_sitio_web
 section: SSL
 order: 04
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Última actualización: 05/05/2020**
 
 ## El contenido mixto
 ¿El sitio web no carga los elementos externos, como los botones de Facebook o Twitter? ¿Las interacciones de la página no funcionan como en HTTP? Es probable que se trate de una cuestión de contenido mixto.

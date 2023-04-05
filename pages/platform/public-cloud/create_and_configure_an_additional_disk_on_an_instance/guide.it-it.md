@@ -49,7 +49,7 @@ Segui gli step di configurazione per selezionare le opzioni di posizione, tipo d
 
 ![create disk](images/avolume02.png){.thumbnail}
 
-Il nuovo disco verrà visualizzato nello Spazio Cliente OVH.
+Il nuovo disco verrà visualizzato nello Spazio Cliente OVHcloud.
 
 ![configura disk](images/avolume03.png){.thumbnail}
 

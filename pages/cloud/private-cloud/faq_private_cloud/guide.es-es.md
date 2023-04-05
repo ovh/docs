@@ -4,9 +4,10 @@ excerpt: ''
 slug: faq_dedicated_cloud
 legacy_guide_number: g598
 section: FAQ
-updated: 2022-12-08
+updated: 2018-03-26
 ---
 
+**Última actualización: 26/03/2018**
 
 ## Al configurar el HA aparece el error: «Cannot complete the configuration of the HA agent on the host».
 Si el error persiste, debe desconfigurar y volver a configurar manualmente el cluster con el HA. Para ello, acceda a las propiedades de su cluster, desmarque la opción HA y acepte los cambios. Una vez finalizada la tarea, puede volver a las propiedades y reactivar la opción HA. Cuando se haya completado la operación, la opción HA estará activa en su cluster.

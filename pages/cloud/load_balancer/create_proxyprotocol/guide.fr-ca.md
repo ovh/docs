@@ -7,6 +7,7 @@ section: Configuration
 updated: 2018-10-12
 ---
 
+**Dernière mise à jour le à 12/10/2018**
 
 ## Introduction
 Le service OVH Load Balancer agit comme un mandataire ou "Proxy". Comme un mandataire humain, il agit comme un intermédiaire, de telle sorte que le client s'adresse au mandataire et le mandataire au fournisseur de service, au nom du client. Dans cette configuration, seul le mandataire connaît à la fois le véritable client (l'utilisateur de votre service) et le véritable fournisseur de service (l'un de vos serveurs).

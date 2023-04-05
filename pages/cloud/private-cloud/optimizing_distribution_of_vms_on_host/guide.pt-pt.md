@@ -5,6 +5,7 @@ slug: otimizar_a_reparticao_das_vms_pelos_hosts
 updated: 2018-03-26
 ---
 
+**Última atualização: 26/03/2018**
 
 ## Configuração proposta pela OVH
 PRO, inclui Dynamic Optimization que permite repartir automaticamente a carga de um cluster entre os diferentes Hosts que fazem parte do mesmo.

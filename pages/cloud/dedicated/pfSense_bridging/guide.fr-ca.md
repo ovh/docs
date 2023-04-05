@@ -1,8 +1,8 @@
 ---
-title : Tutoriel - Configurer le mode bridge sur pfSense
-slug : pfSense-bridging
+title: Tutoriel - Configurer le mode bridge sur pfSense
+slug: pfSense-bridging
 excerpt: 'Apprenez à configurer le mode bridge sur une machine virtuelle Pfsense'
-section : Tutoriel
+section: Tutoriel
 updated: 2022-12-20
 ---
 

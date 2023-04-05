@@ -7,7 +7,10 @@ section: "Configurations de l'OverTheBox"
 updated: 2021-04-13
 ---
 
+**Dernière mise à jour le 13/04/2021**
+
 ## Modifier l'adresse IP d'OverTheBox
+
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external} depuis votre ordinateur connecté au modem principal.
 - Cliquez sur **"Network"**
 - Cliquez sur **"Interfaces"**

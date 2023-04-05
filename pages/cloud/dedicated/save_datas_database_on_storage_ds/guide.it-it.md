@@ -3,8 +3,10 @@ title: 'Eseguire il backup di dati e database su un server di storage'
 slug: eseguire-backup-dati-database-server-storage
 excerpt: 'Come proteggere i tuoi dati in 5 step'
 section: Tutorial
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Ultimo aggiornamento: 12/09/2018**
 
 ## Introduzione 
 

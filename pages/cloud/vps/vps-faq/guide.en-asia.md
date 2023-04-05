@@ -6,6 +6,8 @@ order: 2
 updated: 2022-05-05
 ---
 
+**Last updated 5th May 2022**
+
 ## FAQ VPS
 
 ### What is a VPS, and what is it used for?

@@ -6,6 +6,8 @@ section: Configuration
 updated: 2021-02-05
 ---
 
+**Last updated 5th February 2021**
+
 ## Objective
 
 The [OVH Load Balancer](https://www.ovh.com/ca/en/solutions/load-balancer/){.external} service offers a number of ways of tracking connections to your services.
