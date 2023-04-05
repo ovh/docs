@@ -3,8 +3,10 @@ title: 'Tworzenie kopii danych i baz danych na serwerze Storage'
 slug: tworzenie-kopii-danych-i-baz-danych-na-serwerze-storage
 excerpt: 'Zabezpiecz Twoje dane w 5 krokach'
 section: Tutorial
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Ostatnia aktualizacja z dnia 12-09-2018**
 
 ## Wprowadzenie 
 

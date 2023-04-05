@@ -4,9 +4,10 @@ excerpt: ''
 slug: dedicated_cloud_faq
 legacy_guide_number: g598
 section: FAQ
-updated: 2022-12-08
+updated: 2018-03-26
 ---
 
+**Letzte Aktualisierung am 26.03.2018**
 
 ## Bei der Konfiguration von HA erhalte ich den Fehler: "HA Fehler: Die HA Konfiguration kann nicht durchgeführt werden".
 Wenn dieser Fehler dauerhaft auftritt, dann müssen Sie HA für Ihren Cluster von Hand erst de- und dann wieder rekonfigurieren. Rufen Sie dazu die Eigenschaften Ihres Clusters auf, wählen Sie die HA Option ab und bestätigen Sie die Änderung. Sobald dieser Task abgeschlossen wurde können Sie dann in den Eigenschaften die HA Option wieder reaktivieren. Nachdem der entsprechende Task ausgeführt wurde ist dann die HA Option für Ihren Cluster aktiv.

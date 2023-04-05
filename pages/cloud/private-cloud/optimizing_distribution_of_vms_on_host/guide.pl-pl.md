@@ -5,6 +5,7 @@ slug: optymalizacja_rozdzielenia_vm_na_hostach
 updated: 2018-03-26
 ---
 
+**Ostatnia aktualizacja z dnia 26-03-2018**
 
 ## Konfiguracja proponowana przez OVH
 PRO zawiera funkcję Dynamic Optimization, która pozwala na automatyczne rozdzielanie obciążenia danego klastra pomiędzy poszczególne Hosty. OVH proponuje domyślną konfigurację PRO:

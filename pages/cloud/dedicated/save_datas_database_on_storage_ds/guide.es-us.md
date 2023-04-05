@@ -3,8 +3,10 @@ title: 'Guardar copia de seguridad de la información y las bases de datos en un
 slug: guardar-copia-seguridad-informacion-bases-de-datos-servidor-almacenamiento
 excerpt: 'Cómo crear backups de sus datos en cinco sencillos pasos'
 section: Tutoriales
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Última actualización: 12/09/2018**
 
 ## Introducción
 

@@ -4,9 +4,10 @@ excerpt: ''
 slug: dedicated_cloud_faq
 legacy_guide_number: g598
 section: Getting started
-updated: 2022-12-08
+updated: 2018-03-26
 ---
 
+**Last updated 26th March 2018**
 
 ## When configuring the HA I get the error: "HA Error: Unable to perform configuration"
 If this error persists, you must manually de-configure and then reconfigure the HA cluster. To do this, go to the properties of your cluster, un-check HA and confirm the change. Once the task is completed, you can return to properties and then re-enable HA. Once the activation task is completed, the option will be enabled on your HA cluster.

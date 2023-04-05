@@ -3,8 +3,10 @@ title: 'Backing up data and databases on a Storage Server'
 slug: data-database-backup-on-storage-server
 excerpt: 'Find out how to secure your data in five steps'
 section: Tutorial
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Last updated 12th September 2018**
 
 ## Introduction
 

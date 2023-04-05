@@ -6,6 +6,8 @@ section: FAQ
 updated: 2022-09-30
 ---
 
+**Dernière mise à jour le 26/03/2018**
+
 ## Comment configurer mon Firewall pour accepter le trafic provenant du service Load Balancer OVHcloud ?
 Lors de l'utilisation du Load-Balancer, vos clients ne se connectent pas directement à vos serveurs. Une bonne pratique est de mettre en place un Firewall (Pare-Feu) pour autoriser uniquement le trafic provenant du service Load Balancer OVHcloud.
 

@@ -6,6 +6,7 @@ section: Ressourcen-Management
 updated: 2018-03-26
 ---
 
+**Letzte Aktualisierung am 26.03.2018**
 
 ## Von OVH angebotene Konfiguration
 In PRO enthalten ist die Dynamic Optimization, die eine automatische Verteilung der Last zwischen den verschiedenen Hosts eines Clusters erlaubt.

@@ -6,6 +6,8 @@ order: 1
 updated: 2018-10-09
 ---
 
+**Last updated 9th October 2018**
+
 ## What is OVH Data Collector ?
 
 OVH Data Collector is an easy and ready-to-use solution for managing your legacy data without changing its infrastructure. You can feed your new infrastructure with data from sources such as xls files, SQL databases or directly from APIs.  

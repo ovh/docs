@@ -3,8 +3,10 @@ title: Verwaltung des Loadbalancers über das Kundencenter
 slug: verwendung-lb
 excerpt: Zusammenfassung der wesentlichen Funktionen zur Verwaltung des Loadbalancers über das Kundencenter
 section: Erste Schritte
-updated: 2022-09-30
+updated: 2017-12-01
 ---
+
+**Letzte Aktualisierung am 01.12.2017**
 
 ## Einleitung
 

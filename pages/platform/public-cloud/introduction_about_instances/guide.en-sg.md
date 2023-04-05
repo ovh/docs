@@ -6,6 +6,8 @@ order: 02
 updated: 2021-12-10
 ---
 
+**Last updated 10th December 2021**
+
 ## Introduction
 There are many terms specific to cloud computing that are often ill-defined. This document provides some details on aspects of vocabulary, particularly for **instances**.
 

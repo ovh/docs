@@ -6,6 +6,7 @@ section: Gestión de las máquinas virtuales
 updated: 2018-03-26
 ---
 
+**Última actualización: 26/03/2018**
 
 ## Configuración propuesta por OVH
 PRO incluye la optimización dinámica que permite repartir automáticamente la carga de un cluster enstre los distintos hosts que lo conforman.
