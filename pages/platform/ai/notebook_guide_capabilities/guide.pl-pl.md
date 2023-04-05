@@ -33,11 +33,11 @@ AI Notebooks are Managed Jupyter or VS Code notebooks, linked to compute resourc
 | Preinstalled Machine Learning environments | AI Notebooks comes with a generic Python environment (Conda) or pre-installed ones, such as Pytorch, Tensorflow, FastAI, HuggingFace and more                                                                                                |
 | Easy customization                         | AI Notebooks allows installation of almost any Conda or Pip packages. You can easily customize your environment to suit your needs.                                                                                                          |
 | **Management**                             |                                                                                                                                                                                                                                              |
-| Multiple ways to manage your notebooks     | You can manage your AI Notebooks through OVHcloud Control Panel, API or CLI. Depending on your needs, you can easily automate their creation and deletion as well.                                                                           |
+| Multiple ways to manage your notebooks     | You can manage your AI Notebooks through the OVHcloud Control Panel, API or CLI. Depending on your needs, you can easily automate their creation and deletion as well.                                                                           |
 | Easy start and Stop                        | You can start and stop a notebook in one click. Once stopped, your notebook environment is kept and you can restart it later, without losing your data and experiments.                                                                      |
 | **Compute resources**                      |                                                                                                                                                                                                                                              |
 | Guaranteed compute resources               | Select the amount of CPUs or GPUs required during the creation of the AI Notebooks. Once launched, you will keep these resources as long as your notebook is running.                                                                        |
-| Background execution                       | Your tasks can be executed in background, meaning that closing your Web browser will have no effect on your work.                                                                                                                            |
+| Background execution                       | Your tasks can be executed in the background, meaning that closing your Web browser will have no effect on your work.                                                                                                                            |
 | No maximum runtime                         | Your tasks can last as long as your notebook is running.                                                                                                                                                                                     |
 | Monitoring tools                           | Each AI Notebooks service comes with a native Grafana dashboard, allowing you to keep track and monitor your CPU, GPU, RAM and storage resources.                                                                                            |
 | **Storage**                                |                                                                                                                                                                                                                                              |
@@ -60,7 +60,7 @@ ovhai notebook get <notebook-id>
 
 You can then access your metrics through the `Monitoring Url`.
 
-You are also able to check it from the OVHcloud Control Panel in your notebook's general information by clicking on the button `Go to Graph Dashboard`.
+You are also able to check it from the OVHcloud Control Panel in your notebook's general information by clicking the `Go to Graph Dashboard`{.action} button.
 
 #### Command line interface (CLI)
 
@@ -75,6 +75,7 @@ We continuously improve our offers. You can follow, vote and submit ideas to add
 
 AI Notebooks can be used from any country in the world, as long as you have an OVHcloud account.
 Physically, two datacenters are available:
+
 - `BHS` (Beauharnois, Canada, America)
 - `GRA` (Gravelines, France, Europe)
 
@@ -94,7 +95,7 @@ If you choose `CPU`:
 
 - Memory and local storage resources are not customizable but scaled linearly with each additional CPU.
 
-The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available through our [OVHcloud website](https://www.ovhcloud.com/pl/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](https://www.ovhcloud.com/pl/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
 
 ``` {.console}
 ovhai capabilities flavor list
@@ -124,7 +125,7 @@ This storage space depends on the selected instances during the notebook creatio
 
 ##### **Attached storage**
 
-You can attach data volumes from Public Cloud Object Storage. Object Storage bucked should be in the same region as your AI Notebooks.
+You can attach data volumes from Public Cloud Object Storage. The Object Storage bucket should be in the same region as your AI Notebooks.
 Attached storage allows you to work on several TB of data, while being persistent when you delete your AI Notebooks.
 
 #### Maximum execution time
@@ -147,6 +148,7 @@ With VS Code, you get the capability to use remote connections (from a local com
 OVHcloud AI Notebooks comes with pre-installed AI environments.
 
 List of available AI Environments:
+
 - AutoGluon + MXNet
 - FastAI
 - HuggingFace
@@ -158,6 +160,7 @@ List of available AI Environments:
 - TensorFlow
 
 Quantum environments:
+
 - Atos myQLM
 - Quandela Perceval
 
@@ -165,7 +168,7 @@ Quantum environments:
 
 Each environment can be customized directly with PIP or CONDA (we support almost any package and library).
 
-Limitations:
+**Limitations**:
 
 - You are **not administrator (root)**. You cannot install linux packages (such as *apt-get*).
 

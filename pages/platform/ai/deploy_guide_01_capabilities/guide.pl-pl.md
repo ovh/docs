@@ -32,12 +32,12 @@ AI Deploy allows you to deploy your AI applications and models with compute reso
 | Preinstalled Machine Learning environments | AI Deploy comes with a generic Python environment (Conda) or pre-installed ones, such as Pytorch, Tensorflow, FastAI, HuggingFace and more.                                                                                               |
 | Easy customization                         | AI Deploy allows installation of almost any Conda or Pip packages. You can easily customize your environment to suit your needs. It also allows you to use your own environment by specifying your Docker image.                          |
 | **Management**                             |                                                                                                                                                                                                                                           |
-| Multiple ways to manage your deployed apps | You can manage your AI Deploy apps through OVHcloud Control Panel, API or CLI. Depending on your needs, you can easily automate their creation and deletion as well.                                                                      |
+| Multiple ways to manage your deployed apps | You can manage your AI Deploy apps through the OVHcloud Control Panel, API or CLI. Depending on your needs, you can easily automate their creation and deletion as well.                                                                      |
 | Easy start and Stop                        | You can start and stop an app in one click.                                                                                                                                                                                               |
-| Check the logs of your app                 | You can also check the logs of your deployed app through OVHcloud Control Panel, API or CLI.                                                                                                                                              |
+| Check the logs of your app                 | You can also check the logs of your deployed app through the OVHcloud Control Panel, API or CLI.                                                                                                                                              |
 | **Compute resources**                      |                                                                                                                                                                                                                                           |
 | Guaranteed compute resources               | Select the amount of CPUs or GPUs required during the creation of the AI Deploy app. Once launched, you will keep these resources as long as your app is running.                                                                         |
-| Background execution                       | Your tasks can be executed in background, meaning that closing your Web browser will have no effect on your work.                                                                                                                         |
+| Background execution                       | Your tasks can be executed in the background, meaning that closing your Web browser will have no effect on your work.                                                                                                                         |
 | No maximum runtime                         | Your tasks can last as long as your app is running.                                                                                                                                                                                       |
 | Monitoring tools                           | Each AI Deploy app comes with a native Grafana dashboard, allowing you to keep track and monitor your CPU, GPU, RAM and storage resources.                                                                                                |
 | **Storage**                                |                                                                                                                                                                                                                                           |
@@ -70,7 +70,7 @@ ovhai app get <app-id>
 
 You can then access your metrics through the `Monitoring Url`.
 
-You are also able to check it from the OVHcloud Control Panel in your app information by clicking on the button `Go to Graph Dashboard`.
+You are also able to check it from the OVHcloud Control Panel in your app information by clicking the `Go to Graph Dashboard`{.action} button.
 
 #### API management
 
@@ -118,13 +118,14 @@ If you choose `CPU`:
 
 - Memory and local storage resource is not customisable but scaled linearly with each additional CPU.
 
-The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available through our [OVHcloud website](https://www.ovhcloud.com/pl/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](https://www.ovhcloud.com/pl/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
 
 ``` {.console}
 ovhai capabilities flavor list
 ```
 
 For your information, the current limits are:
+
 - CPU: 12 per app.
 - GPU: 4 per app.
 
@@ -161,7 +162,7 @@ This storage space depends on the selected instances during AI Deploy app deploy
 
 ##### **Attached storage**
 
-You can attach data volumes from Public Cloud Object Storage. Object Storage bucked should be in the same region as your AI Deploy app.
+You can attach data volumes from Public Cloud Object Storage. The Object Storage bucket should be in the same region as your AI Deploy app.
 Attached storage allows you to work on several TB of data, while being persistent when you delete your AI Deploy app.
 
 #### Maximum execution time
@@ -178,7 +179,7 @@ Docker images can be hosted in a public or private registry.
 
 The use of `docker-compose` is not possible.
 
-Please beware that images need to be built with an **AMD architecture**.
+Please be aware that images need to be built with an **AMD architecture**.
 
 #### High-availability
 
