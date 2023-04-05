@@ -22,7 +22,7 @@ Questo sistema è molto simile a quello adottato da alcuni operatori telefonici,
 
 ## Prerequisiti
 
-* Aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/)nel tuo account OVHcloud
+* Aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
 * [Disporre di un’istanza Public Cloud](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/)
 * Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
@@ -128,7 +128,7 @@ Questa soluzione segue la formula "Pay as you go" già descritta, che prevede il
 
 Per le istanze orarie è possibile prenotare un'istanza per liberare le risorse dedicate mantenendo lo stesso indirizzo IP. In questo caso, i dati del tuo disco locale sono archiviati in un'istantanea creata quando un'istanza è riservata/sospesa. Solo l'istantanea verrà fatturata.
 
-Per maggiori informazioni sulla procedura da seguire, consulta questa [guida](https://docs.ovh.com/it/public-cloud/sospendi_o_metti_in_pausa_unistanza/)
+Per maggiori informazioni sulla procedura da seguire, consulta questa [guida](https://docs.ovh.com/it/public-cloud/sospendi_o_metti_in_pausa_unistanza/).
 
 #### Fatturazione mensile
 
