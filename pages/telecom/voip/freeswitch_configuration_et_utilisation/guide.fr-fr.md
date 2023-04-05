@@ -3,8 +3,10 @@ title: 'Freeswitch - configuration et utilisation'
 slug: freeswitch-configuration-et-utilisation
 legacy_guide_number: '7536736'
 section: IPBX
-updated: 2022-06-17
+updated: 2018-03-26
 ---
+
+**Dernière mise à jour le 26/03/2018**
 
 > [!warning]
 > 

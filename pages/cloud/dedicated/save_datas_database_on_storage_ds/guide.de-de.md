@@ -3,10 +3,10 @@ title: 'Backups von Daten und Datenbanken auf einem Storage Server erstellen'
 slug: daten-datenbanken-backup-auf-storage-server
 excerpt: 'Daten-Backup in 5 Schritten'
 section: Tutorial
-updated: 2022-02-09
+updated: 2018-09-12
 ---
 
-**Stand: 12.09.2018**
+**Letzte Aktualisierung am 12.09.2018**
 
 ## Einleitung
 

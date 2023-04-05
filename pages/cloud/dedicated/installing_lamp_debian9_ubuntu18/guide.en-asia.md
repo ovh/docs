@@ -3,8 +3,10 @@ title: 'Setting up a LAMP server in Debian 9 and Ubuntu 18'
 slug: setup-lamp-debian-ubuntu
 excerpt: 'Find out how to set up a LAMP server'
 section: Tutorial
-updated: 2022-07-05
+updated: 2020-08-06
 ---
+
+**Last updated 6th August 2020**
 
 ## Introduction 
 

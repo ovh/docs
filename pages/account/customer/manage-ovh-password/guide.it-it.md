@@ -4,7 +4,7 @@ slug: gestire-la-password
 excerpt: 'Come definire, modificare e gestire la tua password dallo Spazio Cliente'
 section: 'Per iniziare'
 order: 4
-updated: 2021-07-21
+updated: 2019-04-12
 ---
 
 **Ultimo aggiornamento: 4/12/2019**

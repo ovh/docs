@@ -3,8 +3,10 @@ title: 'Comment installer un serveur LAMP sous Debian 9 et Ubuntu 18'
 slug: installer-lamp-debian-ubuntu
 excerpt: 'Laissez-vous guider pour installer un serveur LAMP'
 section: Tutoriel
-updated: 2022-07-05
+updated: 2020-08-06
 ---
+
+**Dernière mise à jour le 06/08/2020**
 
 ## Introduction 
 

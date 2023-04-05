@@ -4,8 +4,10 @@ excerpt: 'Partilhado: guia de utilização do Cyberduck (MAC)'
 slug: partilhado_guia_de_utilizacao_do_cyberduck_mac
 section: FTP e SSH
 order: 05
-updated: 2022-12-01
+updated: 2020-05-05
 ---
+
+**Última atualização: 05/05/2020**
 
 
 ## Apresentação

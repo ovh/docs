@@ -3,8 +3,10 @@ title: Gestionar el servicio Load Balancer desde el área de cliente
 slug: uso-iplb
 excerpt: Principales funcionalidades y toma de contacto con el servicio Load Balancer en el área de cliente
 section: Primeros pasos
-updated: 2022-09-30
+updated: 2017-12-01
 ---
+
+**Última actualización: 01/12/2017**
 
 ## Objetivo
 Esta guía explica los primeros pasos con el servicio Load Balancer y presenta sus principales funcionalidades.

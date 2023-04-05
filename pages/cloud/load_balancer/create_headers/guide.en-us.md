@@ -6,6 +6,7 @@ section: Setting up
 updated: 2018-08-03
 ---
 
+**Last updated 3rd August 2018**
 
 ## Introduction
 With any frontend service like CDN, IP Loadbalancing in front of your services, the IP of your clients is hidden by this service.

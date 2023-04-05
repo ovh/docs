@@ -4,9 +4,10 @@ excerpt: Ten przewodnik pomoże Ci w aktywacji funkcji PHP-FPM na hostingu www O
 slug: aktywacja_optymalizacji_php_na_hostingu_ovh
 section: PHP
 order: 03
-updated: 2022-10-05
+updated: 2020-05-05
 ---
- 
+
+**Ostatnia aktualizacja z dnia 05-05-2020**
 
 ## Czym jest PHP-FPM?
 Dostosowaliśmy PHP-FPM do naszej infrastruktury www, abyś mógł korzystać z tej funkcji do przyspieszenia odpowiedzi PHP. 

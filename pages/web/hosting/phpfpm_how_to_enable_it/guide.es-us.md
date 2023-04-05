@@ -4,8 +4,10 @@ excerpt: Esta guía explica cómo activar PHP-FPM en un alojamiento de OVHcloud 
 slug: activar_la_optimizacion_de_php_en_un_alojamiento_compartido_ovhcloud
 section: PHP
 order: 03
-updated: 2022-10-05
+updated: 2020-05-05
 ---
+
+**Última actualización: 05/05/2020**
 
 
 ## ¿Qué es PHP-FPM?

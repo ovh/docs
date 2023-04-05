@@ -4,9 +4,10 @@ excerpt: In questa guida ti mostriamo come utilizzare Cyberduck
 slug: hosting_condiviso_guida_allutilizzo_di_cyberduck_mac
 section: FTP e SSH
 order: 05
-updated: 2022-12-01
+updated: 2020-05-05
 ---
 
+**Ultimo aggiornamento: 05/05/2020**
 
 ## Introduzione
 Cyberduck è un software MAC che ti permette di pubblicare il tuo sito accedendo al tuo spazio hosting (FTP).

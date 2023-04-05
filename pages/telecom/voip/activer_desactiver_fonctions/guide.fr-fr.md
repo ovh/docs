@@ -5,6 +5,8 @@ section: Lignes téléphoniques
 updated: 2018-03-26
 ---
 
+**Dernière mise à jour le 26/03/2018**
+
 ## Objectif
 
 Vous pouvez, depuis votre téléphone, activer ou désactiver certaines fonctions qui étaient seulement disponibles auparavant depuis votre espace client.

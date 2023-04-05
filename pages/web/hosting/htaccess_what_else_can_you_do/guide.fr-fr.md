@@ -4,8 +4,10 @@ slug: mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-hta
 excerpt: Retrouvez ici toutes les operations possibles avec votre .htaccess autre que la protection de dossier.
 section: Réécriture et authentification
 order: 04
-updated: 2022-10-05
+updated: 2020-05-05
 ---
+
+**Dernière mise à jour le 05/05/2020**
 
 Avant de procéder, il est nécessaire de préciser quelques petites choses par rapport aux fichiers .htaccess. Tout d'abord, il faut savoir qu'il s'agit de fichiers particuliers pour le serveur web, et que ces fichiers n'apparaissent pas dans l'arborescence du répertoire concerné si un internaute fait un accès à un répertoire listable (qui ne contient pas de page index, et dont le listage n'est pas interdit). Ensuite, il faut bien prendre en compte que les paramétrages indiqués par un fichier .htaccess s'appliquent au répertoire où le fichier est installé, ainsi qu'à tout ses sous-répertoires.
 

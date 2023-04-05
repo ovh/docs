@@ -3,8 +3,10 @@ title: 'Fazer o backup das informações e das bases de dados para um servidor d
 slug: backup-informacoes-bases-de-dados-servidor-armazenamento
 excerpt: 'Proteger dados em 5 passos'
 section: Tutoriais
-updated: 2022-02-09
+updated: 2018-09-12
 ---
+
+**Última atualização: 12/09/2018**
 
 ## Introdução 
 

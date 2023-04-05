@@ -7,6 +7,7 @@ excerpt: Sichern Sie die Verbindungen zu Ihrer Website
 updated: 2022-12-01
 ---
 
+**Letzte Aktualisierung am 01.12.2022**
 
 ## Allgemeine Informationen
 

@@ -4,7 +4,7 @@ excerpt: 'Find out how to start an instance on an attached volume'
 slug: start-instance-on-a-volume
 section: Getting started
 order: 6
-updated: 2023-01-11
+updated: 2021-11-01
 ---
 
 **Last updated 1st November 2021**

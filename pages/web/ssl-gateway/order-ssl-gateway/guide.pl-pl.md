@@ -7,6 +7,7 @@ excerpt: Zabezpiecz poaczenia ze swoja strona internetowa
 updated: 2022-12-01
 ---
 
+**Ostatnia aktualizacja z dnia 01-12-2022**
 
 ## Informacje ogolne
 

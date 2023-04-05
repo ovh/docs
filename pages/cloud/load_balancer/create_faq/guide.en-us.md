@@ -3,8 +3,10 @@ title: 'Load Balancer FAQ'
 slug: iplb-faq
 excerpt: 'FAQ Load Balancer'
 section: FAQ
-updated: 2022-09-30
+updated: 2018-03-26
 ---
+
+**Last updated 26th March 2018**
 
 ## How do I configure my Firewall to accept traffic from the OVHcloud Load Balancer?
 When using the Load Balancer, your clients do not connect directly to your servers. A good practice is to setup a firewall to allow only traffic from the OVHcloud Load Balancer service.

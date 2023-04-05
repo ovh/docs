@@ -6,6 +6,7 @@ excerpt: Torne as ligacoes para o seu website seguras
 updated: 2022-12-01
 ---
 
+**Última atualização: 01/12/2022**
 
 ## Generalidades
 

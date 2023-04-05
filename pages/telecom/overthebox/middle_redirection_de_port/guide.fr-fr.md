@@ -7,6 +7,8 @@ section: "Configurations de l'OverTheBox"
 updated: 2021-05-10
 ---
 
+**Dernière mise à jour le 10/05/2021**
+
 ## Prérequis
 
 Afin que la redirection de port fonctionne correctement. Il est impératif que la machine cible de cette redirection possède comme passerelle par défaut l'IP de l' **OverTheBox** .

@@ -4,9 +4,10 @@ excerpt: Evitar os erros comuns de SSL no meu website
 slug: evitar_os_erros_comuns_de_ssl_no_meu_website
 section: SSL
 order: 04
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Última atualização: 05/05/2020**
 
 ## O 'mixed content'
 O seu website não carrega elementos externos, como os botões Facebook ou Twitter? As iterações da sua página não funciona como em HTTP? Tem, provavelmente, um problema de "mixed content".

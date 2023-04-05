@@ -6,6 +6,8 @@ excerpt: Zabezpiecz połączenie z Twoja stroną internetową
 updated: 2022-12-01
 ---
 
+**Ostatnia aktualizacja z dnia 01-12-2022**
+
 ## Wprowadzenie
 
 ### Wymagania

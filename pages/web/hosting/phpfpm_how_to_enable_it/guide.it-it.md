@@ -4,9 +4,10 @@ excerpt: Questa guida ti mostra come attivare PHP-FPM sul tuo hosting condiviso 
 slug: attiva_lottimizzazione_php_sul_tuo_hosting_condiviso_ovh
 section: PHP
 order: 03
-updated: 2022-10-05
+updated: 2020-05-05
 ---
 
+**Ultimo aggiornamento: 05/05/2020**
 
 ## Cos'è PHP-FPM?
 Abbiamo adattato PHP-FPM alla nostra infrastruttura Web, per consentirti di accelerare le risposte PHP.
