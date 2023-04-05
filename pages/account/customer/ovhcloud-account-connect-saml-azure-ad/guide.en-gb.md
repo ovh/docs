@@ -17,7 +17,7 @@ You can use SSO (*Single Sign-On*) to connect to your OVHcloud account. To enabl
 
 ## Requirements
 
-- Being an administrator of an Azure AD service
+- Belong to the **Application Administrator** and **User Administrator** roles of an Azure AD service
 - An [OVHcloud account](https://docs.ovh.com/us/en/customer/create-ovhcloud-account/)
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
@@ -116,6 +116,12 @@ The Azure AD application is now created. Users who want to perform SSO authentic
 
 #### Azure AD application - user assignment
 
+> [!primary]
+>
+> In order for a user to perform an SSO authentication from an Azure AD application, it must be added to that application. It is therefore shown here how to add a user to an Azure AD application.
+> However, it is better to add a user group instead of users if you have Azure AD Premium.
+>
+
 Click on `Users and groups`{.action} from the left hand menu, then to `Add user/group`{.action} from the top bar menu.
 
 Click then on the `Users`{.action} section, select the user to add tot he application, and click on the `Select`{.action} button.
@@ -146,6 +152,8 @@ You can obtain the appropriate metadata file via the following links:
 - [EU region metadata](https://www.ovh.com/auth/sso/saml/sp/metadata.xml)
 - [CA region metadata](https://ca.ovh.com/auth/sso/saml/sp/metadata.xml)
 
+Download the metadata file, it will be necessary later.
+
 ![Azure AD SSO step 5](images/azure_ad_sso_5.png){.thumbnail}
 
 The SAML configuration will be displayed.
@@ -166,7 +174,7 @@ Select `Security groups`{.action}, selecy **Group ID** from the `Source attribut
 
 The **groups** claim should now appear in the list.
 
-Copy and keep the **Claim name** value.
+Copy and keep the **Claim name** value somewhere (i.e a notepad), it will be necessary later.
 
 ![Azure AD SSO step 12](images/azure_ad_sso_12.png){.thumbnail}
 
@@ -194,7 +202,7 @@ Open the `User management`{.action} tab.
 
 ![OVHcloud profile menu](images/ovhcloud_profile_menu.png){.thumbnail}
 
-Click on the `SSO Login`{.action} button.
+Click on the `SSO connection`{.action} button.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
