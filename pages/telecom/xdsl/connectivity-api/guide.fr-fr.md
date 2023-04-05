@@ -326,7 +326,7 @@ La réponse :
 ```
 Nous avons trouvé un seul bâtiment qui est une maison.
 
-#### Recherche une éligibilité cuivre (ADSL, VDSL)
+#### Rechercher une éligibilité cuivre (ADSL, VDSL)
 
 Les cas possibles sont:
 
