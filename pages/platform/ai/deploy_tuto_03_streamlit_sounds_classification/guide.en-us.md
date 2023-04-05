@@ -208,16 +208,22 @@ The `requirements.txt` file will allow us to write all the modules needed to mak
 
 ```console
 streamlit
+tensorflow
+numpy==1.22.4
+pandas
+scikit-learn
+keras
+librosa
 ```
 
 Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/audio-classification-app).
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `one-for-all` OVHcloud image:
+Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `python:3.8` image:
 
 ```console
-ovhcom/ai-training-one-for-all
+python:3.8
 ```
 
 Create the home directory and add your files to it:
