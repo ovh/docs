@@ -49,7 +49,7 @@ Access the administration UI for your OVHcloud Data Processing by clicking on `D
 
 ![Create a Notebook 00](images/Creating-a-notebook00.png){.thumbnail}
 
-In the Control Panel the name is generated automatically, save it for later. Select the framework (1) and the region (2).
+In the Control Panel the name is generated automatically, remember it for later. Select the framework (1) and the region (2).
 
 Then choose the notebook privacy setting (3). Be careful with your sensitive data in case you choose public access.
 
