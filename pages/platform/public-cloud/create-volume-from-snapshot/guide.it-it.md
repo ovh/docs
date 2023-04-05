@@ -27,7 +27,7 @@ Ciò può essere utile nei seguenti casi:
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Disporre di un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} sul proprio account OVHcloud
 - Disco nella stessa Region OpenStack
 - Avere accesso alla tua istanza via SSH come amministratore (root)

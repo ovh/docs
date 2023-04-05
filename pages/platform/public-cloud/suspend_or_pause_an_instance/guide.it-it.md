@@ -4,14 +4,14 @@ slug: sospendi_o_metti_in_pausa_unistanza
 legacy_guide_number: g1781
 section: Gestione del progetto
 order: 3
-updated: 2021-09-20
+updated: 2021-10-01
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 1 Ottobre 2021**
+**Ultimo aggiornamento: 01/10/2021**
 
 ## Obiettivo
 
@@ -200,7 +200,7 @@ Per riattivare l'istanza, esegui questo comando:
 
 ### Mettere in pausa un'istanza <a name="pause-instance"></a>
 
-Questa operazione è possibile solo nell'interfaccia Horizon o tramite l'API Openstack/Nova. Permette di mettere l'istanza in *standby*
+Questa operazione è possibile solo nell'interfaccia Horizon o tramite l'API Openstack/Nova. Permette di mettere l'istanza in *standby*.
 
 #### Dall'interfaccia Horizon 
 

@@ -55,7 +55,7 @@ Per maggiori informazioni sulla procedura da seguire, consulta la guida [Gestire
 
 [Sistema di fatturazione dei servizi Cloud](../analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/)
 
-[Gestire i contatti dei servizi OVHcloud OVH](../../customer/gestisci_i_tuoi_contatti/)
+[Gestire i contatti dei servizi OVHcloud](../../customer/gestisci_i_tuoi_contatti/)
 
 [Delega progetti](../delega_i_diritti_per_gestire_i_tuoi_progetti/)
 

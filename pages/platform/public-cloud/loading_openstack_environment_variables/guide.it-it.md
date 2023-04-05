@@ -17,7 +17,7 @@ L’impostazione delle variabili d’ambiente OpenStack ti consente di utilizzar
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Aver creato un utente OpenStack. A questo proposito, consulta [l’apposita guida](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/)
-- Aver preparato l’ambiente di sviluppo per utilizzare l’API OpenStack A questo proposito, consulta questa guida: [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- Aver preparato l’ambiente di sviluppo per utilizzare l’API OpenStack. A questo proposito, consulta questa guida: [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
 
 ## Procedura
 
@@ -90,7 +90,7 @@ Per impostare le variabili d’ambiente hai quindi due possibilità:
 export OS_PASSWORD="Password dell’utente Horizon"
 ```
 
-- È possibile impostare le variabili direttamente dalle impostazioni di sistema:  Impostazioni >Sistema > Impostazioni di sistema avanzate> Variabili d’ambiente:
+- È possibile impostare le variabili direttamente dalle impostazioni di sistema:  Impostazioni > Sistema > Impostazioni di sistema avanzate> Variabili d’ambiente:
 
 
 ![public-cloud](images/pciopenstackvariables2.png){.thumbnail}

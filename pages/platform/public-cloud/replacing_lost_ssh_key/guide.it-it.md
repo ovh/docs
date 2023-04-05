@@ -23,7 +23,7 @@ Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue
 
 ## Prerequisiti
 
--- Disporre di una [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
+- Disporre di una [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
 - Avere accesso alla tua istanza via SSH in [modalità Rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/)
 - Creare una chiave SSH
 
