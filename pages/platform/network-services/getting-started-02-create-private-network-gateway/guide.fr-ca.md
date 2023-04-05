@@ -2,8 +2,8 @@
 title: Créer un réseau privé avec une Gateway
 slug: creating-private-network-with-gateway
 excerpt: "Découvrez comment créer un réseau Privé avec une Gateway via l'espace client OVHcloud, l'API Openstack ou l'API OVHcloud"
-section : Premiers pas
-order : 01
+section: Premiers pas
+order: 01
 updated: 2022-11-02
 ---
 

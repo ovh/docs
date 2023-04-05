@@ -1,9 +1,9 @@
 ---
-title : Les bonnes pratiques pour la gestion de vos services et de votre compte OVHcloud
-slug : billing-best-practices
-excerpt : Retrouvez ici les éléments indispensables pour la bonne gestion de vos factures, commandes, moyens de paiement et compte client
-section : Gérer mes services et leur renouvellement
-order : 02
+title: Les bonnes pratiques pour la gestion de vos services et de votre compte OVHcloud
+slug: billing-best-practices
+excerpt: Retrouvez ici les éléments indispensables pour la bonne gestion de vos factures, commandes, moyens de paiement et compte client
+section: Gérer mes services et leur renouvellement
+order: 02
 updated: 2022-05-02
 ---
 
