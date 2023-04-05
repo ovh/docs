@@ -1599,6 +1599,12 @@
         + [Veeam](storage-backup-and-disaster-recovery-solution-veeam)
             + [Setting up Veeam Backup & Replication](cloud/storage/backup/veeam_veeam_backup_replication)
             + [Veeam Cloud Connect](cloud/storage/backup/veeam_veeam_cloud_connect)
+        + [Managed Kubernetes - Data Protection](storage-backup-and-disaster-recovery-solution-kubernetes-data-protection)
+            + [Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes](platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio)
+            + [Backing-up an OVHcloud Managed Kubernetes cluster using CloudCasa](platform/kubernetes-k8s/backup-and-restore-cluster-using-cloudcasa)
+            + [Backing up and restoring your Persistent Volume with Volume Snapshots on OVHcloud Managed Kubernetes](platform/kubernetes-k8s/backup-restore-pv-volume-snapshot)
+            + [Backing-up an OVHcloud Managed Kubernetes cluster using Velero](platform/kubernetes-k8s/backing-up-cluster-with-velero)
+            + [Backing-up Persistent Volumes using Stash](platform/kubernetes-k8s/backing-up-volumes-using-stash)
 + Network
     + [Bring your own IP (BYOIP)](network-byoip)
         + [How to use the Bring Your Own IP feature](cloud/network-ip/bring-your-own-IP)
