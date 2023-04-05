@@ -1,7 +1,7 @@
 ---
 title: Ajouter un nom de domaine sur une plateforme e-mail
 slug: ajouter-domaine-exchange
-excerpt : Découvrez comment ajouter un nom de domaine à votre plateforme Exchange
+excerpt: Découvrez comment ajouter un nom de domaine à votre plateforme Exchange
 section: Premiers pas avec Exchange
 order: 04
 updated: 2022-10-07

@@ -3,7 +3,7 @@ title: Cambiar de una instancia flex a una instancia clásica
 slug: modificar-una-instancia-flex
 excerpt: Cómo cambiar una instancia flex desde el panel de control de OpenStack Horizon
 section: Gestión desde Horizon
-order : 8
+order: 8
 updated: 2021-11-15
 ---
 

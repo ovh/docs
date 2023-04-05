@@ -3,7 +3,7 @@ title: Gérer mes moyens de paiement
 slug: manage-payment-methods
 excerpt: Apprenez à ajouter et gérer vos moyens de paiement au sein de l’espace client OVHcloud
 section: Facturation
-order : 02
+order: 02
 updated: 2023-03-28
 ---
 

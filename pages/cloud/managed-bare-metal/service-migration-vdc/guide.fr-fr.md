@@ -2,7 +2,7 @@
 title: Migrer une infrastructure vers un nouveau vDC
 routes:
     canonical: 'https://docs.ovh.com/fr/private-cloud/sddc-migration/'
-excerpt : Découvrez comment gérer tous les aspects de la migration d'une infrastructure vers un vDC
+excerpt: Découvrez comment gérer tous les aspects de la migration d'une infrastructure vers un vDC
 slug: vdc-migration
 section: Premiers pas
 order: 6

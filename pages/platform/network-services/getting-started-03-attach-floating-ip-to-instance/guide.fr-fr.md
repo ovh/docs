@@ -1,5 +1,5 @@
 ---
-title : Attacher une adresse Floating IP à une instance Public Cloud
+title: Attacher une adresse Floating IP à une instance Public Cloud
 excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la configurer
 slug: attaching-pci-floating-ip-to-instance
 section: Premiers pas
