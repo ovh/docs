@@ -3,10 +3,12 @@ title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
 slug: etcd-quota-error
 section: Diagnostics
-updated: 2022-12-14
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/kubernetes/etcd-quota-error/'
+updated: 2023-04-06
 ---
 
-**Last updated 14th December 2022**
+**Last updated 06th April 2023**
 
 ## Objective
 
@@ -121,6 +123,12 @@ We have found that the following resources can sometimes be generated continuous
 kubectl get backups.velero.io -A | wc -l
 ```
 
+- `podvolumebackups.velero.io`
+
+```bash
+kubectl get podvolumebackups.velero.io -A | wc -l
+```
+
 - `ingress.networking.k8s.io`
 
 ```bash
@@ -139,10 +147,10 @@ kubectl get ingress.extensions -A | wc -l
 kubectl get authrequests.dex.coreos.com -A | wc -l
 ```
 
-- `podvolumebackups`
+- `reportchangerequest.kyverno.io
 
 ```bash
-kubectl get podvolumebackups -A | wc -l
+kubectl get reportchangerequest.kyverno.io -A | wc -l
 ```
 
 If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.  
