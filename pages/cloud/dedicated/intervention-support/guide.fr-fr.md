@@ -435,7 +435,7 @@ root@rescue:~#
 ```
 
 
-### PROXMOX 6
+### Proxmox
 
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
