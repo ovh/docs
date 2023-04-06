@@ -2,7 +2,7 @@
 title: Enabling Google Workspace SSO connections with your OVHcloud account
 slug: connect-saml-sso-googleworkspace
 excerpt: "Learn how to associate your Google Workspace service with your OVHcloud account via SAML 2.0"
-section: Advanced Usage
+section: 'Advanced use'
 order: 02
 updated: 2023-03-30
 ---
