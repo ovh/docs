@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 48909ab8-9619-43d6-8c84-1e0f3195b2e7
 full_slug: internet-access-reusing-wifi-zyxel-overthebox

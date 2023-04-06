@@ -21,7 +21,7 @@ Por motivos de seguridad, es posible configurar y utilizar reglas de filtrado qu
 
 ## Requisitos
 
-- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/).
+- Un [proyecto de Public Cloud](https://www.ovhcloud.com/es/public-cloud/)
 - [Estar conectado a Horizon](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
 
 ## Procedimiento

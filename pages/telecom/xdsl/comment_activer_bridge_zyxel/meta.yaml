@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 118290d7-5ada-431d-a4bb-9d2819f1708b
 full_slug: internet-access-enable-bridge-zyxel

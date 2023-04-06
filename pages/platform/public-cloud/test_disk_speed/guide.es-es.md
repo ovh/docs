@@ -22,7 +22,7 @@ Es probable que desee comprobar la velocidad de sus discos, ya sea para comparar
 
 ## Requisitos
 
-- Tener una [instancia Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
+- Tener una [instancia Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
 - Tener acceso administrativo (root) a esta instancia por SSH (solo para Linux).
 
 

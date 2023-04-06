@@ -6,6 +6,10 @@ section: Tutoriales
 updated: 2018-03-26
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
 **Última actualización: 27/03/2019**
 
 ## Objetivo
@@ -23,7 +27,7 @@ Plesk es un panel de control de servidores fácil de usar que puede instalarse e
 
 ## Requisitos
 
-- [Crear una instancia desde el área de cliente de OVHdloud](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
+- [Crear una instancia desde el área de cliente de OVHcloud](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
 - [Conectarse como usuario root y establecer una contraseña](../conectarse_como_usuario_root_y_establecer_una_contrasena/).
 
 ## Procedimiento

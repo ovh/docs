@@ -7,6 +7,10 @@ order: 8
 updated: 2021-11-15
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
 **Última actualización: 10/12/2021**
 
 ## Objetivo
@@ -18,7 +22,7 @@ Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proc
 ## Requisitos
 
 - Tener una [instancia de Public Cloud de OVHcloud](../public-cloud-primeros-pasos/#3-crear-una-instancia) de tipo *flex*.
-- [Crear un acceso a Horizon](https://docs.ovh.com/us/es/public-cloud/horizon/)
+- [Crear un acceso a Horizon](https://docs.ovh.com/us/es/public-cloud/horizon/).
 
 ## Procedimiento
 

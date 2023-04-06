@@ -42,7 +42,7 @@ Introduzca un nombre para la copia de seguridad en la página siguiente. Lea la 
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Una vez completada la copia de seguridad, esta estará disponible en la sección `Instance Backup`{.action} .
+Una vez completada la copia de seguridad, esta estará disponible en la sección `Instance Backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 

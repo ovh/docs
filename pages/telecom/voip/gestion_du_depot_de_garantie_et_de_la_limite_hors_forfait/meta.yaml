@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: f262930b-9c76-4005-94e4-4f41fd2032ca
 full_slug: voip-deposit-out-of-pocket-limit

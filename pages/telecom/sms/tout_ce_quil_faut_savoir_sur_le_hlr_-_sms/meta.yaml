@@ -1,2 +1,10 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
+- es-us
 id: abefb0bf-6507-4090-8493-add4ffaba9e5
 full_slug: sms-hlr

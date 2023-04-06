@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: bb1af14b-a4da-4b9d-891a-5bbc93201d24
 full_slug: voip-softphone-sip-register-linphone

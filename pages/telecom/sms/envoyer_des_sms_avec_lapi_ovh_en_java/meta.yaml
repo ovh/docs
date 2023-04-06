@@ -1,2 +1,10 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
+- es-us
 id: 1b042b44-a2a4-4baf-bd13-b774c387892b
 full_slug: sms-sending-via-api-java

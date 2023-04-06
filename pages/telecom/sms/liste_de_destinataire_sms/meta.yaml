@@ -1,2 +1,10 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
+- es-us
 id: b265bc43-1cfb-491f-8388-879e50822a2c
 full_slug: sms-managing-recipients-lists

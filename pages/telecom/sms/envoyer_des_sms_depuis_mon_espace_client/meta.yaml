@@ -1,2 +1,10 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
+- es-us
 id: fc50ffbb-002c-412c-a8b8-ccb392fe8836
 full_slug: sms-sending-from-control-panel

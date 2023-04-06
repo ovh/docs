@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 1f204ed8-de0f-49b0-b63d-5748a4207171
 full_slug: voip-getting-started-gigaset-c530ip

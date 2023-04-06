@@ -6,10 +6,10 @@ section: AI Deploy - Tutorials
 order: 03
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/'
-updated: 2023-04-04
+updated: 2023-04-06
 ---
 
-**Last updated 4th April, 2023.**
+**Last updated 6th April, 2023.**
 
 > [!primary]
 >
@@ -209,17 +209,22 @@ if __name__ == '__main__':
 The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ```console
-streamlit
+streamlit==1.20.*
+tensorflow==2.12.0
+numpy==1.22.4
+pandas==1.5.3
+scikit-learn==1.2.*
+librosa==0.10.*
 ```
 
 Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/audio-classification-app).
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `one-for-all` OVHcloud image:
+Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `python:3.8` image:
 
 ```console
-ovhcom/ai-training-one-for-all
+python:3.8
 ```
 
 Create the home directory and add your files to it:

@@ -94,4 +94,4 @@ La instancia tendrá estado de `Reinstalación` hasta que el proceso haya finali
 
 [Guardar una copia de seguridad de una instancia](../guardar_copia_de_seguridad_de_una_instancia/)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

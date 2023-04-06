@@ -1,2 +1,10 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
+- es-us
 id: f308db6b-f0d4-4996-a89b-cbdb9f5e459a
 full_slug: sms-api-cookbook
