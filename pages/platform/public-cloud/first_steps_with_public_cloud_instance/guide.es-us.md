@@ -137,7 +137,7 @@ A continuación, abra la pestaña `Consola VNC`{.action}.
 
 La consola VNC proporciona acceso directo a su instancia. Para que este acceso funcione, es necesario configurar primero un nombre de usuario y una contraseña en la instancia. 
 
-Para más información, consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](../public-cloud-primeros-pasos/#connect-to-instance) a ella.
+Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#4-conectarse-a-una-instancia) para obtener más información.
 
 ## Más información
 

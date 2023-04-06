@@ -8,6 +8,10 @@ order: 03
 updated: 2023-01-04
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
 **Última actualización: 04/01/2023**
 
 ## Objetivo
@@ -22,7 +26,7 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 
 * Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud
 * Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
-* Tener acceso a la instancia por SSH como administrador (usuario raíz).
+* Tener acceso a la instancia por SSH como administrador (usuario raíz)
 
 ## Procedimiento
 

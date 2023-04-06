@@ -7,11 +7,11 @@ order: 08
 updated: 2022-03-24
 ---
 
-**Última actualización: 24/03/2022**
-
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
+
+**Última actualización: 24/03/2022**
 
 ## Objetivo
 
@@ -71,7 +71,7 @@ A continuación escriba la contraseña root.
 
 #### Para las conexiones desde la consola VNC del área de cliente de OVHcloud
 
-En primer lugar, [establezca la contraseña root](#settingtherootpassword)
+En primer lugar, [establezca la contraseña root](#settingtherootpassword).
 
 A continuación, acceda a la consola VNC:
 
@@ -85,9 +85,9 @@ Vaya a la pestaña `Consola VNC`{.action}. Escribe tu nombre de usuario como **r
 
 #### Para conexiones con terminales Linux
 
-En primer lugar, [establezca la contraseña root](#settingtherootpassword)
+En primer lugar, [establezca la contraseña root](#settingtherootpassword).
 
-Permite la autenticación del usuario root con contraseña en su archivo **sshd_config** :
+Permite la autenticación del usuario root con contraseña en su archivo **sshd_config**:
 
 ```bash
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
@@ -105,9 +105,9 @@ Una vez hecho esto, debería poder acceder al servidor con el usuario root y la 
 
 #### Para las conexiones que utilizan Putty
 
-En primer lugar, [establezca la contraseña root](#settingtherootpassword)
+En primer lugar, [establezca la contraseña root](#settingtherootpassword).
 
-Permite la autenticación del usuario root con contraseña en su archivo **sshd_config** :
+Permite la autenticación del usuario root con contraseña en su archivo **sshd_config**:
 
 ```bash
 ~$ sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
