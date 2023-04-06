@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 0fdcb5e8-b3bf-4639-91c5-08d7c6fd5b4c
 full_slug: overthebox-using-vnp-pptp-server

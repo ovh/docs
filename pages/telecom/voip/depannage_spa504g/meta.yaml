@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: b8c99f56-e7a4-4503-9b04-8c212bd39ab1
 full_slug: voip-troubleshooting-cisco-spa504g

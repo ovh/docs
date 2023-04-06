@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 3ff5d053-7071-48ea-8adc-06f64f05dbdb
 full_slug: voip-troubleshooting-gigaset-c530ip

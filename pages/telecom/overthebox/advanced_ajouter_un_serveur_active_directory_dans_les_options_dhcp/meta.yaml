@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: c88f0204-557f-4f82-bf49-4d9b2899f6d5
 full_slug: overthebox-adding-active-directory-server-dhcp

@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: 15650dce-7aae-457c-b1c0-6fac4625724d
 full_slug: overthebox-upgrade-configuration

@@ -1,2 +1,4 @@
+disable_languages:
+- fr-ca
 id: bbc29194-1329-4120-8a3c-03587f689d20
 full_slug: overthebox-configuration-reset

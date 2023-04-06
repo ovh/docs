@@ -1,2 +1,9 @@
+disable_languages:
+- fr-ca
+- en-ca
+- en-asia
+- en-au
+- en-sg
+- en-us
 id: 34fefe61-0822-4f6f-b814-43d3ac6661dd
 full_slug: internet-access-connectivity-api
