@@ -145,7 +145,7 @@ kubectl get ingress.extensions -A | wc -l
 kubectl get authrequests.dex.coreos.com -A | wc -l
 ```
 
-- `reportchangerequest.kyverno.io
+- `reportchangerequest.kyverno.io`
 
 ```bash
 kubectl get reportchangerequest.kyverno.io -A | wc -l
