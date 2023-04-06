@@ -693,7 +693,7 @@ ipconfig /all
 ```
 
 - regardez dans les entrées de registre `NetworkAddress` sur le panneau de droite, et changez la valeur par celle de votre nouvelle adresse MAC. Si cette entrée n'existe pas, clic-droit dans une zone vide pour créer une valeur de type `String` avec le nom `NetworkAddress`.  
-![win_regedit_3](images/win_regedit_3.png){.thumbnail}
+![win_regedit_3](images/win_regedit_3_edited.png){.thumbnail}
 
 
 - vous avez besoin de décharger le registre pour appliquer les changements récents.
