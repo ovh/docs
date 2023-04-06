@@ -69,4 +69,4 @@ Los períodos de validez de los códigos promocionales suelen ser más limitados
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
