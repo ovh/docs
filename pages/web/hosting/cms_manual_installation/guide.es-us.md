@@ -91,7 +91,7 @@ Más información en nuestra página relativa a [PrestaShop](https://www.ovhclou
 
 ### Etapa 1 - preparar la instalación <a name="step1"></a>
 
-Para instalar un CMS en su [plan de hosting](https://www.ovhcloud.com/fr/web-hosting/), es necesario realizar algunos preparativos.
+Para instalar un CMS en su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/), es necesario realizar algunos preparativos.
 
 #### 1.1 - Comprobar la declaración de la "carpeta raíz"
 
