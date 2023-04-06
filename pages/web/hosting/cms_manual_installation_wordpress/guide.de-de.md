@@ -15,7 +15,7 @@ updated: 2023-04-03
 
 ## Ziel
 
-Dieses Tutorial hilft Ihnen bei der manuellen Installation eines WordPress CMS (Content Management System) in wenigen Schritten.
+Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation eines WordPress CMS (Content Management System).
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
@@ -30,7 +30,7 @@ Dieses Tutorial hilft Ihnen bei der manuellen Installation eines WordPress CMS (
 > Um ein **anderes CMS manuell** zu installieren (Joomla!, Drupal, PrestaShop), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
 >
 
-**Erfahren Sie hier, wie Sie Ihr WordPress CMS eigenständig installieren**
+**Dieses Tutorial erklärt, wie Sie Ihr WordPress CMS eigenständig installieren.**
 
 ## Voraussetzungen
 
@@ -40,36 +40,36 @@ Dieses Tutorial hilft Ihnen bei der manuellen Installation eines WordPress CMS (
 
 ## In der praktischen Anwendung
 
-### Schritt 1 - Installation vorbereiten <a name="step1"></a> 
+### Schritt 1: Installation vorbereiten <a name="step1"></a> 
 
 Um das CMS **WordPress** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu installieren, sind einige Vorbereitungen erforderlich.
 
-Folgen Sie der **Alle Schritte** in unserer Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), bevor Sie mit Schritt 2 fortfahren.
+Führen Sie zunächst **alle Schritte** in unserer Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/) aus, bevor Sie mit Schritt 2 fortfahren.
 
-### Schritt 2 - Manuelle Installation abschließen <a name="step2"></a>
+### Schritt 2: Manuelle Installation abschließen <a name="step2"></a>
 
 > [!success]
 >
 > Bevor Sie mit der Installation fortfahren, leeren Sie den Cache Ihres Browsers, um Fehler zu vermeiden.
 >
 
-#### 2.1 - WordPress im Browser öffnen
+#### 2.1 WordPress im Browser öffnen
 
 Geben Sie Ihren Domainnamen in die Adresszeile Ihres Webbrowsers ein.
 
-Wenn die Quelldateien korrekt im Wurzelverzeichnis platziert wurden, erscheint die Seite, auf der die Sprache für WordPress ausgewählt werden kann:
+Wenn die Quelldateien korrekt im Wurzelverzeichnis platziert wurden, erscheint die Seite zur Auswahl der Sprache für WordPress.
 
 ![hosting](images/WPselectlangue.png){.thumbnail}
 
 Wählen Sie die Sprache für die Website aus und klicken Sie auf `Weiter`{.action}.
 
-#### 2.2 - Ihre WordPress mit Ihrer Datenbank verbinden
+#### 2.2 WordPress mit Ihrer Datenbank verbinden
 
 WordPress fragt nun nach den Login-Daten für Ihre Datenbank.
 
 ![hosting](images/WPstart.png){.thumbnail}
 
-Halten Sie sich bitte die Zugangsdaten für Ihre Datenbank bereit (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/)). Klicken Sie auf `Let's go!`{.action}, um fortzufahren.
+Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/)). Klicken Sie auf `Let's go!`{.action}, um fortzufahren.
 
 Folgende Seite wird angezeigt:
 
@@ -79,23 +79,22 @@ Geben Sie die angeforderten Informationen zur Datenbank ein:
 
 - Database name: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert.
 
-- Database username: Dieser ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden.
-Für Datenbanken, die auf einem Web Cloud Databases erstellt werden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials über die [manuelle Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
+- Database username: Dieser ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
 
 - Database password: Es wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
-- Database Host: Der Servername Ihrer Datenbank, ebenfalls in der Installationsmail enthalten und einsehbar in Ihrem OVHcloud Kundencenter. 
+- Database host: Der Servername Ihrer Datenbank, ebenfalls in der Installationsmail enthalten und einsehbar in Ihrem OVHcloud Kundencenter. 
 
 > [!primary]
 > 
-> - Der Servername einer Datenbank, die in einem Webhosting inklusive ist, hat im Allgemeinen folgendes Format: `DatenbankName.mysql.db`. 
+> - Der Servername einer Datenbank, die in einem Webhosting inklusive ist, hat regulär folgendes Format: `DatenbankName.mysql.db`. 
 >
-> - Der Servername einer Web Cloud Databases Datenbank leitet sich von Ihrer OVHcloud Kundenkennung ab und hat folgendes Format: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei  **XXX** für die Referenz Ihrer Web Cloud Databases steht.
+> - Der Servername einer Web Cloud Databases Datenbank leitet sich von Ihrer OVHcloud Kundenkennung ab und hat folgendes Format: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei  **XXX** für die Referenz Ihrer Web Cloud Databases Instanz steht.
 >
 
-- Table Prefix: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank verwenden, die bereits von einer anderen Website verwendet wird, lesen Sie bitte die Anleitung in **Schritt 1.4** auf der [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
+- Table prefix: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank eingeben, die bereits von einer anderen Website verwendet wird, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
 
-Klicken Sie auf `Submit`{.action}, um die Verbindungsinformationen zur Datenbank zu validieren.
+Klicken Sie auf `Submit`{.action}, um die Verbindungsinformationen zur Datenbank zu bestätigen.
 
 Wenn alle Eingaben korrekt waren, erscheint folgende Seite:
 
@@ -103,7 +102,7 @@ Wenn alle Eingaben korrekt waren, erscheint folgende Seite:
 
 Klicken Sie auf `Run the installation`{.action}.
 
-#### 2.3 - Administrator-Zugang zum Backend von WordPress einrichten
+#### 2.3 Administrator-Zugang zum Backend von WordPress einrichten
 
 Nach der Installation fragt WordPress nach Informationen zu Ihrer künftigen Website, und erstellt Ihren Administrator-Zugang.
 
@@ -119,9 +118,9 @@ Geben Sie die angeforderten Informationen ein:
 - Your Email: Geben Sie eine gültige E-Mail-Adresse ein.
 - Search engine visibility: Haken Sie diese Option an, um Ihre Website von Suchmaschinenreferenzierungen auszuschließen.
 
-Klicken Sie auf `Install WordPress`{.action}, sobald alles korrekt angegeben ist.
+Klicken Sie auf `Install WordPress`{.action}, sobald alles korrekt eingegeben ist.
 
-#### 2.4 - Die manuelle Installation abschließen und den Administrator-Zugang testen
+#### 2.4 Die manuelle Installation abschließen und den Administrator-Zugang testen
 
 Die Installation ist vollständig, wenn folgende Seite angezeigt wird:
 
@@ -133,7 +132,7 @@ Klicken Sie auf den Button `Log in`{.action}, um den Zugriff auf den Verwaltungs
 >
 > Die OVHcloud Teams bieten keinen Support für externe Software wie WordPress und können Ihnen nicht bei der Verwendung oder Konfiguration Ihres WordPress CMS weiterhelfen.
 >
-> Wenden Sie sich für Unterstützung an die Community für WordPress.
+> Wenden Sie sich für Unterstützung an die WordPress Community.
 >
 
 Wenn Sie eingeloggt sind, erscheint folgende Seite:
