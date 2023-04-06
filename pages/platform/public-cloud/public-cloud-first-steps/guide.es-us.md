@@ -9,6 +9,10 @@ updated: 2023-01-26
 
 **Última actualización: 26/01/2023**
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
 Las instancias del servicio Public Cloud de OVHcloud requieren un enfoque diferente al de los VPS o los servidores dedicados.
@@ -210,7 +214,7 @@ Cuando haya terminado, haga clic en `Siguiente`{.acción} para configurar su red
 
 ![configure network](images/network-selection.png){.thumbnail}
 
-En función del uso previsto de sus instancias, puede seleccionar el **Modo público* o **Modo privado**.
+En función del uso previsto de sus instancias, puede seleccionar el **Modo público** o **Modo privado**.
 
 El modo público es el modelo de red clásico. Permite que las instancias tendrán un puerto de red público conectado. Asociada al vRack, cada instancia posee una IP pública y una IP privada.
 
