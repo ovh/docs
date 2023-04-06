@@ -3,8 +3,6 @@ title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
 slug: etcd-quota-error
 section: Diagnostics
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/etcd-quota-error/'
 updated: 2023-04-06
 ---
 
