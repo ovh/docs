@@ -171,7 +171,7 @@ Instalacja może zająć kilkadziesiąt minut.
 
 Po zakończeniu otrzymasz e-mail z potwierdzeniem poprawnej instalacji CMS-a. W tym e-mailu zostaniesz poproszony o zalogowanie się do interfejsu administracyjnego Twojego CMS-a. W ten sposób będziesz mógł zmienić temat Twojej strony WWW i opublikować jej pierwsze treści.
 
-> [!Warning]
+> [!warning]
 >
 > Pomoc techniczna OVHcloud nie wiąże się z korzystaniem z CMS-ów. Oferujemy je tylko w trybie instalacji **za 1 kliknięciem**.
 >
@@ -199,7 +199,7 @@ Jeśli chcesz uzyskać pomoc w zakresie funkcji Twojego CMS-a, skontaktuj się z
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

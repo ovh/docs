@@ -170,7 +170,7 @@ A instalação pode demorar cerca de dez minutos.
 
 Uma vez terminado, receberá um e-mail a confirmar a instalação do CMS. Por favor, aceda à interface de gestão do CMS. Assim, poderá alterar o tema do seu website e publicar os seus primeiros conteúdos.
 
-> [!Warning]
+> [!warning]
 >
 > O suporte da OVHcloud não efetua acompanhamento sobre a utilização dos CMS. Propomos-as apenas em instalação **em 1 clique**.
 >
@@ -198,7 +198,7 @@ Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databas
 
 [Desinstalar o seu CMS](https://docs.ovh.com/pt/hosting/1-click-module-management/#etapa-3-eliminar-o-modulo)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

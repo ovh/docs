@@ -164,7 +164,7 @@ The installation can take up to ten minutes.
 
 Once it has finished, you will receive an email confirming that your CMS has been set up correctly. This email will prompt you to log in to your CMS admin interface. This way, you can edit your website’s appearance, and publish your first pieces of content on it.
 
-> [!Warning]
+> [!warning]
 >
 > OVHcloud support does not provide assistance for using any CMS. The 1-click installation process is a free, noncontractual service to help install them. 
 >

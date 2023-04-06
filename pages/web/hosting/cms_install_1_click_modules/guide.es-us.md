@@ -15,7 +15,7 @@ updated: 2023-03-28
 
 ## Objetivo
 
-Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin necesidad de conocimientos técnicos). Los "módulos en 1 clic" son en realidad **C**onent **M**anagement **S**ystem **(CMS)**. OVHcloud ofrece la instalación de los CMS más conocidos: *WordPress*, *Joomla!*, *Drupal* y *PrestaShop*.
+Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin necesidad de conocimientos técnicos). Los "módulos en 1 clic" son en realidad **C**ontent **M**anagement **S**ystem **(CMS)**. OVHcloud ofrece la instalación de los CMS más conocidos: *WordPress*, *Joomla!*, *Drupal* y *PrestaShop*.
 
 **Descubra cómo instalar su sitio web a través de nuestros "módulos en 1 clic".**
 
@@ -71,7 +71,7 @@ Una vez seleccionado el CMS, elija entre una instalación **rápida** o **avanza
 - Instalación **avanzada**: le permite personalizar la configuración de la instalación del CMS. Introduzca toda la información necesaria para el buen funcionamiento del CMS: 
     - información de conexión a la base de datos (servidor, nombre de usuario, puerto, contraseña, etc.)
     - ruta de instalación en el espacio de almacenamiento FTP del alojamiento
-    - Idioma del CMS
+    - idioma del CMS
     - identificadores de administrador (nombre de administrador, contraseña, dirección de correo electrónico, etc.)
 
 #### Instalación rápida de un "módulo en 1 clic"
@@ -144,9 +144,9 @@ Si los datos introducidos son incorrectos, la instalación no llegará a su fin.
 Introduzca la siguiente información para la configuración del módulo:
 
 - *nombre o correo electrónico del administrador :* Identificador que utilizará para conectarse al panel de administración de su CMS (Back Office).
-- *Contraseña :* contraseña que utilizará para conectarse al panel de administración de su CMS.
+- *contraseña :* contraseña que utilizará para conectarse al panel de administración de su CMS.
 - *dominio :* nombre de dominio con el que quiere instalar su CMS. Si lo necesita, consulte nuestra guía [Cómo alojar varios sitios web en un mismo hosting](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/).
-- Idioma :* Idioma en el que se instalará el CMS.
+- *idioma :* Idioma en el que se instalará el CMS.
 - *Ruta de instalación :* Este se indica automáticamente al seleccionar el dominio. Puede completarlo introduciendo subdirectorios (para usuarios expertos).
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action} :
@@ -170,7 +170,7 @@ La instalación puede tardar unos diez minutos.
 
 Una vez finalizado, recibirá un mensaje de correo electrónico confirmando la instalación del CMS. Este mensaje le invitará a conectarse al panel de administración de su CMS. Así podrá cambiar el tema de su sitio web y publicar en él sus primeros contenidos.
 
-> [!Warning]
+> [!warning]
 >
 > El soporte de OVHcloud no ayuda a los CMS. Los ofrecemos únicamente en instalación **en 1 clic**.
 >
