@@ -1,7 +1,7 @@
 ---
-title: Enable Azure AD SSO connections with your OVHcloud account
+title: Enabling Azure AD SSO connections with your OVHcloud account
 slug: connect-saml-sso-azure-ad
-excerpt: "Find out how to link your Azure AD to your OVHcloud account using SAML 2.0"
+excerpt: "Find out how to associate your Azure Active Directory to your OVHcloud account using SAML 2.0"
 section: 'Advanced use'
 order: 02
 updated: 2023-04-05
@@ -11,9 +11,9 @@ updated: 2023-04-05
 
 ## Objective
 
-You can use SSO (*Single Sign-On*) to connect to your OVHcloud account. To enable these connections, your account and your Azure AD have to be configured using Security Assertion Markup Language SAML (*Security Assertion Markup Language*).
+You can use SSO (*Single Sign-On*) to connect to your OVHcloud account. To enable these connections, your account and your Azure AD have to be configured using SAML (*Security Assertion Markup Language*).
 
-**This guide explains how to link your OVHcloud account to an external Azure AD.**
+**This guide explains how to associate your OVHcloud account with an external Azure AD.**
 
 ## Requirements
 
@@ -25,7 +25,7 @@ You can use SSO (*Single Sign-On*) to connect to your OVHcloud account. To enabl
 
 > [!primary]
 >
-> In order for a service provider (i.e. your OVHcloud account) to perform an SSO connection with an identity provider (i.e. your Azure AD), the essential part is to establish a mutual trust relationship.
+> In order for a service provider (i.e. your OVHcloud account) to establish an SSO connection with an identity provider (i.e. your Azure AD), the essential part is to establish a mutual trust relationship by registering the SSO connection in both services.
 >
 
 ### Azure AD Users and Groups
@@ -40,31 +40,31 @@ To start, go to your Azure AD dashboard.
 
 ![Azure AD Doshboard](images/azure_ad_dashboard.png){.thumbnail}
 
-Then click on `Users`{.action} from the left hand menu.
+Then click on `Users`{.action} from the left-hand menu.
 
 ![Azure AD Menu User](images/azure_ad_menu_user.png){.thumbnail}
 
 Create as many users as you need, or you can just check your users clicking on them.
 
-For this example, the user **John Smith** will bu used.
+For this example, the user **John Smith** will be used.
 
 ![Azure AD User](images/azure_ad_user.png){.thumbnail}
 
-When an SSO authentication is performed, **John Smith**'s identity will be provided from Azure AD to the OVHcloud account. However, it is necessary that this identity contains at least one group. If no group exists, let's look at how to create one to add **John Smith** to it.
+When an SSO authentication is performed, **John Smith**'s identity will be provided by Azure AD to the OVHcloud account. However, it is necessary that this identity contains at least one group. If no group exists, let's look at how to create one to add **John Smith** to it.
 
 #### Azure AD Groups
 
-Then click on `Groups`{.action} from the left hand menu.
+Click on `Groups`{.action} from the left-hand menu.
 
 ![Azure AD Menu Groups](images/azure_ad_menu_groups.png){.thumbnail}
 
-Click on `New group`{.action} from the top bar menu, and fill in all the necessary information.
+Click on `New group`{.action} in the top menu, and fill in all the necessary information.
 
 For this example, the group **manager@ovhcloudsaml** will be used.
 
 ![Azure AD Group step 1](images/azure_ad_group_1.png){.thumbnail}
 
-Click on the `Create`{.action} button, all information about this group will be displayed.
+Click on the `Create`{.action} button to display all information about this group.
 
 ![Azure AD Group step 2](images/azure_ad_group_2.png){.thumbnail}
 
@@ -72,17 +72,17 @@ Now, users who will be used for SSO authentication must be added to a group.
 
 In this example, let's link the user **John Smith** with the group **manager@ovhcloudsaml**.
 
-In the selected group interface, click on `Members`{.action} from the left hand menu, then to `Add members`{.action} from the top bar menu.
+In the selected group interface, click on `Members`{.action} from the left-hand menu, then click `Add members`{.action} in the top menu.
 
 ![Azure AD Group User Assignment step 1](images/azure_ad_group_user_assignment_1.png){.thumbnail}
 
-Select the user to be added to group, then click on the `Select`{.action} button.
+Select the user to be added to this group, then click on the `Select`{.action} button.
 
 ![Azure AD Group User Assignment step 2](images/azure_ad_group_user_assignment_2.png){.thumbnail}
 
 Now we have a user assigned to a group.
 
-In order to perform an SSO authentication, an Azure AD application must be created.
+In order to perform SSO authentications, an Azure AD application must be created.
 
 SSO must be configured on this application.
 
@@ -90,21 +90,21 @@ SSO must be configured on this application.
 
 First of all, it is necessary to create an application if one does not yet exist.
 
-#### Azure AD create application
+#### Create an Azure AD application
 
-Click on `Enterprise applications`{.action} from the left hand menu.
+Click on `Enterprise applications`{.action} from the left-hand menu.
 
 ![Azure AD Menu Applications](images/azure_ad_menu_applications.png){.thumbnail}
 
-Click on `New application`{.action} from the top menu.
+Click on `New application`{.action} in the top menu.
 
 ![Azure AD Applications step 1](images/azure_ad_applications_1.png){.thumbnail}
 
-Click on `Create your own application`{.action} from the top menu.
+Click on `Create your own application`{.action} in the top menu.
 
 ![Azure AD Applications step 2](images/azure_ad_applications_2.png){.thumbnail}
 
-Select the `Non-gallery`{.action} from the left hand menu, and click on the `Create`{.action} button.
+Select the `Non-gallery`{.action} from the left-hand menu, and click on the `Create`{.action} button.
 
 ![Azure AD Applications step 3](images/azure_ad_applications_3.png){.thumbnail}
 
@@ -112,28 +112,30 @@ The details of the application will then be displayed.
 
 ![Azure AD Applications step 4](images/azure_ad_applications_4.png){.thumbnail}
 
-The Azure AD application is now created. Users who want to perform SSO authentication via this application must now be added to it.
+The Azure AD application is now created. Users who want to perform SSO authentications via this application must now be added to it.
 
-#### Azure AD application - user assignment
+#### Azure AD application - User assignment
 
 > [!primary]
 >
 > In order for a user to perform an SSO authentication from an Azure AD application, it must be added to that application. It is therefore shown here how to add a user to an Azure AD application.
-> However, it is better to add a user group instead of users if you have Azure AD Premium.
+>
+> However, it is better to add a user group instead of users if you have **Azure AD Premium**.
 >
 
-Click on `Users and groups`{.action} from the left hand menu, then to `Add user/group`{.action} from the top bar menu.
+Click on `Users and groups`{.action} from the left-hand menu, then click `Add user/group`{.action} in the top menu.
 
-Click then on the `Users`{.action} section, select the user to add tot he application, and click on the `Select`{.action} button.
+Click then on the `Users`{.action} section, select the user to add to the application, and click on the `Select`{.action} button.
 
 ![Azure AD Application User Assignment step 1](images/azure_ad_application_user_assignment_1.png){.thumbnail}
 
 ![Azure AD Application User Assignment step 2](images/azure_ad_application_user_assignment_2.png){.thumbnail}
 
 The application is created, a user has been assigned, all that remains is to set up the SSO via SAML.
+
 #### Azure AD application SSO
 
-Get back to the overview via the `Overview`{.action} button from the left hand bar, then click on the `Set up single sign on`{.action} section.
+Get back to the overview via the `Overview`{.action} button from the left-hand menu, then click on the `Set up single sign on`{.action} section.
 
 ![Azure AD SSO step 1](images/azure_ad_sso_1.png){.thumbnail}
 
@@ -141,7 +143,7 @@ Click on the `SAML`{.action} section.
 
 ![Azure AD SSO step 2](images/azure_ad_sso_2.png){.thumbnail}
 
-Click on `Upload metadata file`{.action} from the top menu bar.
+Click on `Upload metadata file`{.action} in the top menu.
 
 ![Azure AD SSO step 3](images/azure_ad_sso_3.png){.thumbnail}
 
@@ -164,17 +166,17 @@ In the `Attributes & Claims`{.action} section, click on the `Edit`{.action} butt
 
 ![Azure AD SSO step 9](images/azure_ad_sso_9.png){.thumbnail}
 
-Click on `Add a group claim`{.action} from the top bar menu.
+Click on `Add a group claim`{.action} in the top menu.
 
 ![Azure AD SSO step 10](images/azure_ad_sso_10.png){.thumbnail}
 
-Select `Security groups`{.action}, selecy **Group ID** from the `Source attribute`{.action} selecter and click on the `Save`{.action} button.
+Select `Security groups`{.action}, and **Group ID** from the `Source attribute`{.action} and click on the `Save`{.action} button.
 
 ![Azure AD SSO step 11](images/azure_ad_sso_11.png){.thumbnail}
 
 The **groups** claim should now appear in the list.
 
-Copy and keep the **Claim name** value somewhere (i.e a notepad), it will be necessary later.
+Copy and save the **Claim name** value somewhere (i.e a notepad), it will be necessary later.
 
 ![Azure AD SSO step 12](images/azure_ad_sso_12.png){.thumbnail}
 
@@ -188,7 +190,7 @@ Use this link to download the Azure AD application metadata file in order to use
 
 Adding your Azure AD application as a trusted identity provider is done in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) where you can provide the identity provider metadata.
 
-#### OVHcloud trust establishing
+#### Establish OVHcloud trust
 
 [Log in](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and click on your profile in the top-right corner.
 
@@ -210,7 +212,7 @@ Fill in the **Group Attribute Name** field with the Azure AD application groups 
 
 Fill in the XML metadata of your Azure AD application from the file saved before.
 
-Click on the  `Confirm`{.action} button.
+Click on the `Confirm`{.action} button.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
 
