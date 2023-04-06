@@ -6,7 +6,12 @@ section: Getting started
 order: 03
 ---
 
-**Last updated 28th March, 2023.**
+**Last updated April 6th, 2023.**
+
+> [!primary]
+>
+> The Notebooks for Apache Spark feature is in `alpha`. During the alpha-testing phase, the infrastructure’s availability and data longevity are not guaranteed. Please do not use this service for applications that are in production, while this phase is not complete.
+>
 
 ## Objective
 
