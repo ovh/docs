@@ -138,7 +138,7 @@ Ouvrez l'onglet `Gestion des utilisateurs`{.action}.
 
 ![Profil menu OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
 
-Cliquez sur le bouton `Login SSO`{.action}.
+Cliquez sur le bouton `Connexion SSO`{.action}.
 
 ![OVHcloud connexion SSO étape 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 

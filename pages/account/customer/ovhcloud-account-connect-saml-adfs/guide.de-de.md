@@ -142,7 +142,7 @@ Klicken Sie auf Ihren Namen, um auf die Verwaltungsseite Ihres Profils zuzugreif
 
 ![OVHcloud Menüprofil](images/ovhcloud_profile_menu.png){.thumbnail}
 
-Klicken Sie auf den Button `SSO Login`{.action}.
+Klicken Sie auf den Button `SSO connection`{.action}.
 
 ![OVHcloud SSO-Verbindung Schritt 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
