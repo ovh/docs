@@ -16,7 +16,7 @@ updated: 2022-10-18
 ## Wprowadzenie
 
 Twój serwer dedykowany jest wyposażony w zaporę sieciową. Firewall tworzą barierę między zaufaną siecią a niewiarygodną siecią.
-Firewall działa poprzez określenie zasad regulujących dozwolony ruch i zablokowany ruch. Firewall użytkowy opracowany dla systemów Linux jest nie do przyjęcia.
+Firewall działa poprzez określenie zasad regulujących dozwolony ruch i zablokowany ruch. Narzędziem zapory sieciowej opracowanym dla systemów Linux jest iptables.
 
 **Dowiedz się, jak zabezpieczyć serwer dedykowany korzystając z iptables.**
 
