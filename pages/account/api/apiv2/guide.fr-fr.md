@@ -12,29 +12,43 @@ updated: 2023-03-20
 
 Les API disponibles sur [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.external} vous permettent d'acheter, gérer, mettre à jour et configurer des produits OVHcloud sans utiliser une interface graphique comme l'espace client.
 
-Une nouvelle branche des API OVHcloud est disponible sous le préfixe **/v2** sur [https://eu.api.ovh.com/v2](https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2){.external}. Ce guide a pour but de présenter les grands principes de cette nouvelle API et les différences avec la première version.
+Historiquement, les API d'OVHcloud sont disponibles sous la branche **/1.0** correspondant à la première version de l'API que nous avons publié. 
+
+Une nouvelle branche des API OVHcloud est disponible sous le préfixe **/v2** sur [https://eu.api.ovh.com/v2](https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2){.external}. 
+
+Cette nouvelle branche regroupera des nouvelles routes d'API, retravaillée sous un nouveau format, et deviendra la branche d'API principale pour les nouveaux développements de fonctionnalités de produits OVHcloud. La branche **/1.0** continuera d'exister en parallèle de la branche **/v2**, mais ne contiendra pas la même fonctionnalité. En tant que client, vous pourrez consommer des API de la branche **/1.0** et **/v2** simultannément dans vos programmes, tout en conservant la même authentification, et les mêmes outils pour appeler l'API. Afin de standardiser le nommage de nos branches d'API, la branche **/1.0** est également disponible à travers l'alias **/v1**.
+
+La branche **/v2** introduit des nouveaux principes d'exposition et de consommation (qui diffèrent de la branche **/v1**), et ce guide a pour vocation de vous les présenter.
 
 ## Principes
 
 ### Gestion des versions
 
-Cette nouvelle branche d'API utilise un système de versionnement incluant une version majeure et une version mineure pour la gestion de ses spécifications.
-Cela permet de distinguer les changements mineurs des changements majeurs ou cassants dans les schémas de l'API. De plus, un résumé des changements (*CHANGELOG*) accompagne la publication de chaque nouvelle version majeure afin d'avoir une vue détaillée des modifications apportées.
+La branche */v2* de l'API utilise un système de versionnement pour la gestion de ses spécifications: c'est à dire que chaque modification dans les routes d'API (paramètres d'entrées, retour attendus, ...) feront l'objet d'une nouvelle version.
+Ces versions (qui sont différentes de la version contenue dans le nom de branche de l'API) contiendront deux numéros qui s'incrémentent: la version majeure et la version mineure. Cela permet de distinguer les changements mineurs des changements majeurs/cassants dans les schémas de l'API: les changements mineurs (non-cassants) incrémente la version mineure, tandis que les changements cassants incrémentent la version majeure.
 
-L'APIv2 est conçue pour pouvoir exposer plusieurs versions majeures en parallèle. Cela signifie que des applications utilisant une version spécifique de l'API continueront de fonctionner après la sortie d'une nouvelle version majeure.
+Un résumé des changements (*CHANGELOG*) accompagne la publication de chaque nouvelle version afin d'avoir une vue détaillée des modifications apportées.
 
-Au moment de la publication d'une nouvelle version majeure, la version précédent celle-ci restera active pendant une période de 6 mois afin de vous laisser le temps d'adapter vos applications.
+La branche *v2* de l'API est conçue pour pouvoir exposer plusieurs versions majeures en parallèle. Cela signifie que des applications utilisant une version spécifique de l'API continueront de fonctionner après la sortie d'une nouvelle version majeure.
+
+En tant que client, vous aurez la responsabilité de choisir la version que vous utiliserez: vous devrez indiquer quelle version majeure de la spécification sera utilisée avec votre compte.
+
+Au moment de la publication d'une nouvelle version majeure, la version majeure précédent celle-ci restera active pendant une période définie dans le *CHANGELOG* afin de vous laisser le temps d'adapter vos applications.
+Avant la fin de la période de disponibilité de la version majeure précédente, vous devrez vous assurer que vos applications utilisant l'API OVHcloud sont toujours compatibles, et faire le changement de version majeure dans votre espace client. Si vous ne le faites pas, vous serez migré automatiquement sur la dernière version majeure à la fin de la période de disponibilité de votre version majeure courante. 
 
 #### Sélectionner une version majeure spécifique de l'API
 
 Une page spécifique sera prochainement disponible dans l'espace client OVHcloud pour sélectionner la version majeure de l'API utilisée.
 
-Il est cependant déjà possible de pointer sur une version majeure directement dans les appels à l'API en utilisant l'en-tête `X-Schemas-Version`:
+Vous aurez probablement le besoin de tester vos applications avec la nouvelle version majeure avant de faire le changement dans votre espace client.
+Pour cela, vous pouvez indiquer la version majeure à utiliser avec l'en-tête `X-Schemas-Version` dans vos appels API:
 ```bash
 curl -X GET -H "X-Schemas-Version: 1.0" https://eu.api.ovh.com/v2/iam/policy
 ```
 
-Si cet en-tête n'est pas fourni lors d'un appel à l'API, la dernière version majeure est utilisée par défaut.
+Si cet en-tête n'est pas fourni lors d'un appel à l'API, la version majeure de votre compte est utilisée par défaut.
+
+Nous conseillons de n'utiliser cet en-tête que lors de vos phases de validation: en effet, son utilisation dans vos applications en production nécessiteront une maintenance de votre côté le jour où cette version majeure ne sera plus disponible. Lors de la sortie d'une nouvelle version majeure, nous ferons une évaluation de l'impact de cette nouvelle version sur votre utilisation de l'API, et vous enverrons un rapport détaillé. Si vous n'êtes pas impacté par les changements cassants, nous vous proposerons de basculer directement sur la nouvelle version majeure. Dans ce cas, si vous utilisez l'en-tête dans vos applications, la bascule ne pourra être effectuée sans maintenance sur votre application.
 
 #### Récupérer les versions disponibles via la console
 
