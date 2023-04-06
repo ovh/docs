@@ -17,23 +17,20 @@ Nos interventions de maintenance se limitent uniquement à la partie matériel, 
 Tout ceci dans le but de vous accompagner et faire en sorte qu'il y ait le moins d'impact possible dans le cycle de vie de vos environnements.
 vous retrouverez ici toutes les infos nécessaires, si vos systèmes sont listés, vous n'aurez plus qu'à suivre la procédure correspondante :
 
-**Systèmes d'exploitation**
-
 - Ubuntu
 - CentOS/Alma Linux
 - SmartOS
 - FreeBSD
 - Gentoo
 
-**Virtualisation**  
+Virtualisation  
 
 - Proxmox
 - XenServer
 - ESXi
 - Windows (hyper-V)
 
-**Divers**  
-
+Divers  
 - Repérer le nom de vos interfaces réseaux
 
 
@@ -49,13 +46,14 @@ vous retrouverez ici toutes les infos nécessaires, si vos systèmes sont listé
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue.
+- boot en mode rescue
 - monter la partition `/`
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
 ```
 
-Si le fichier `70-persistent-net.rules` n'existe pas, vérifier dans l'arborescence `/etc/systemd/network/` les fichiers suivants :  
+Si le fichier `70-persistent-net.rules` n'existe pas (cf repérer le nom de vos interfaces réseaux),  
+Vérifier dans l'arborescence `/etc/systemd/network/` les fichiers suivants :  
 - `50-default.network`  
 - `50-public-interface.link`  
 
@@ -106,7 +104,7 @@ NamePolicy=kernel database onboard slot path mac
 root@rescue:~#
 ```
 
-- sauvegardez les fichiers et éditez-les afin de renseigner la nouvelle valeur de votre adresse MAC :
+- sauvegardez les fichiers et éditez-les afin de renseigner la nouvelle valeur de votre addresse MAC :
 ```bash
 root@rescue:~# cp /mnt/etc/systemd/network/50-default.network /mnt/etc/systemd/network/50-default.network.link.bak-`date +%s`
 root@rescue:~# cp /mnt/etc/systemd/network/50-public-interface.link /mnt/etc/systemd/network/50-public-interface.link.bak-`date +%s`
@@ -138,7 +136,7 @@ Dans certain cas, il faut propager la nouvelle adresse MAC dans les fichiers sui
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue.
+- boot en mode rescue
 - monter la partition `/`
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
@@ -159,7 +157,7 @@ root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconf
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue.
+- boot en mode rescue
 ```bash 
 modprobe zfs
 root@rescue:~# zpool import -f zones (zpool import to list the pools)
@@ -185,10 +183,10 @@ root@rescue:~# zfs set mountpoint="/usbkey" zones/usbkey
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue-bsd.
+- boot en mode rescue-bsd
 - éxécutez la commande `ifconfig` depuis l'invite du rescue-bsd.
 
-De cette manière, nous pourrons repérer l'appellation de votre interface réseau :
+De cette manière, nous pouvons repérer l'appellation de votre interface réseau :
 ```bash
 root@rescue-bsd:~ # ifconfig
 igb0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
@@ -196,7 +194,7 @@ options=403bb<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,T
 ether xx:xx:xx:xx:xx:xx
 ```
 
-- éxécutez la commmande `gpart show`, nous pourrons repérer et associer les partitions/noms :
+- éxécutez la commmande `gpart show`, nous pouvons repérer et associer les partitions/noms :
 ```bash
 root@rescue-bsd:~ # gpart show
 => 63 3907029105 ada0 MBR (1.8T)
@@ -442,10 +440,10 @@ Si vous rencontrez un soucis de connectivité réseau.
 exemple : pas de ping après remplacement de la carte mère.
 
 Nous rencontrons une erreur lors du démarrage du système causé par l'ancienne valeur d'adresse MAC toujours présente :  
-![proxmox](images/proxmox.jpg){.thumbnail}
+![proxmox](images/proxmox_edited.jpg){.thumbnail}
 
 
-- boot en mode rescue.
+- boot en mode rescue
 ```bash
 root@rescue:~# cat /mnt/etc/network/interfaces
 # This file describes the network interfaces available on your system
@@ -574,7 +572,7 @@ Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modif
 root@rescue:~# mount /dev/sdaX /mnt/
 ```
 
-- sauvegardez le fichier `state.tgz.
+- sauvegardez le fichier `state.tgz
 ```bash
 root@rescue:~# ls /mnt/state.tgz
 root@rescue:~# cp /mnt/state.tgz /mnt/state.tgz.`date +%s`
@@ -587,7 +585,7 @@ root@rescue:~# WORKINGDIR=/home/ovh/esxi
 root@rescue:~# cd $WORKINGDIR
 ```
 
-- extraire le contenu de `state.tgz` vers `$WORKINGDIR`, pour ensuite extraire le contenu de `local.tgz`.
+- extraire le contenu de `state.tgz` vers `$WORKINGDIR`, pour ensuite extraire le contenu de `local.tgz`
 - editez le fichier `esx.conf` obtenu :
 ```bash
 root@rescue:/home/ovh/esxi# tar xf /mnt/state.tgz -C $WORKINGDIR
@@ -607,7 +605,7 @@ root@rescue:/home/ovh/esxi# vim etc/vmware/esx.conf
 
 - mettre à jour l'adresse MAC de l'interface principale :
 > [!warning]
-> ne pas changer l'adresse MAC virtuelle.
+> ne pas changer l'adresse MAC virtuelle
 >
 
 ```bash
@@ -648,32 +646,32 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 #### via IPMI/KVM
 - connectez-vous en tant qu'administrateur à partir de l'interface IPMI/KVM.
 - pressez la combinaison de touches WINDOWS+R, puis à travers l'invite `executer`,  Lancez la commande `devmgmt.msc`:  
-![win_device_manager](images/win_device_manager.png){.thumbnail}
+![win_device_manager](images/win_device_manager_edited.png){.thumbnail}
 
-- ouvrir `Network adapters` et selectionner l'adaptateur correspondant à `eth0`.
+- ouvrir `Network adapters` et selectionner l'adaptateur correspondant à `eth0`
 - clic-droit > Properties > Advanced
-- repérez `Locally Administered Adress`.
-- renseignez la nouvelle valeur de l'adresse MAC (chiffres uniquement, sans espaces).  
-![win_advanced](images/win_advanced_.png){.thumbnail}
+- repérez `Locally Administered Adress`
+- renseignez la nouvelle valeur de l'adresse MAC (chiffres uniquements, sans espaces).  
+![win_advanced](images/win_advanced_edited.png){.thumbnail}
 
 
 #### via WinPE
 
-- boot en mode `WinPE`.
-- lancez la commande `regedit` via l'invite de command `run`.
+- boot en mode `WinPE`
+- lancez la commande `regedit` via l'invite de command `run`
 - chargez la base de registre local à travers celle disponible dans `WinPE` puis cliquez sur `HKEY_LOCAL_MACHINE` :  
-![win_regedit_1](images/win_regedit_1.png){.thumbnail}
+![win_regedit_1](images/win_regedit_1_edited.png){.thumbnail}
 
-- ensuite cliquez sur `Load Hive...`.  
-![win_regedit_2](images/win_regedit_2.png){.thumbnail}
+- ensuite cliquez sur `Load Hive...`  
+![win_regedit_2](images/win_regedit_2_edited.png){.thumbnail}
 
 > [!primary]
-> Par défaut, vous serez dans l'arboresence du WinPE.
-> N'oubliez pas de naviguer sur le lecteur C:\.
+> Par défaut, vous serez dans l'arboresence du WinPE
+> N'oubliez pas de naviguer sur le lecteur C:\
 >
 
-- repérez le registre `SYSTEM`.  
-![win_load](images/win_load.png){.thumbnail}
+- repérez le registre `SYSTEM`  
+![win_load](images/win_load_edited.png){.thumbnail}
 
 - il vous sera demandé d'entrer un nom, vous pouvez, par exemple, choisir `OVH_TEST`.
 
@@ -683,7 +681,7 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 ```
 
 > [!warning]
-> Tant que nous sommes sous WinPE, la valeur `CurrentControlSet` devrait être égale à `CurrentSet001`.
+> Tant que nous sommes sous WinPE, la valeur `CurrentControlSet` devrait être égale à `CurrentSet001`
 >
 
 Vous devriez voir plusieurs sous-clés nommées comme ceci : 0000,0001, etc...
@@ -727,7 +725,7 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:x
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="private"
 ```
 
-- allez dans le repertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`.
+- allez dans le repertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`
 - éditez le fichier `/etc/default/grub` et modifez la ligne commençant par `GRUB_CMDLINE_LINUX` pour obtenir ceci :
 ```bash
 GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
