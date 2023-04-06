@@ -1,180 +1,180 @@
 ---
-title: "Installation Ihrer Website mit einem '1-Klick-Modul' (CMS)"
-excerpt: "Diese Anleitung erklärt, wie Sie Ihre Website mithilfe unserer '1-Klick-Module' installieren."
+title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
+excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
 slug: webhosting_installation_von_webhosting-modulen
 section: CMS
 order: 01
 updated: 2023-03-28
 ---
 
-**Letzte Aktualisierung am 28.03.2023**
-
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
+
+**Letzte Aktualisierung am 28.03.2023**
+
 ## Ziel 
 
-"1-Klick-Module" ermöglichen die einfache und schnelle Installation einer Website (ohne technisches Fachwissen). Bei den "1-Klick-Modulen" handelt es sich in Wirklichkeit um **C**ontent **M**anagement **S**ystem **(CMS)**. OVHcloud bietet die Installation der bekanntesten CMS an: *WordPress*, *Joomla!*, *Drupal* und *PrestaShop*.
+1-Klick-Module ermöglichen die einfache und schnelle Installation einer Website, auch ohne technische Vorkenntnisse. Es handelt sich hierbei um ein **C**ontent **M**anagement **S**ystem (**CMS**). OVHcloud bietet einen vereinfachten Installationsprozess der populärsten CMS an: *WordPress*, *Joomla!*, *Drupal* und *PrestaShop*.
 
-**Diese Anleitung erklärt, wie Sie Ihre Website über unsere "1-Klick-Module" installieren.**
+**Diese Anleitung erklärt, wie Sie Ihre Website mithilfe von 1-Klick-Modulen installieren.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrYmmPbMl4I?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/)mit mindestens einer Datenbank.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verwenden eine [kompatible PHP-Version](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/) auf Ihrem Webhosting. 
 - Ihre [.ovhconfig-Datei ist korrekt konfiguriert](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/).
-- Das Verzeichnis (Wurzelverzeichnis), in dem Ihr "1-Klick-Modul" installiert wird, muss leer sein oder derzeit nicht vorhanden sein.
-- Der Domainname (und gegebenenfalls die Subdomain), die für Ihre Website verwendet wird, muss auf Ihrem OVHcloud Webhosting als [Multisite](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) angegeben werden.
+- Das Verzeichnis (Wurzelverzeichnis), in dem Ihr 1-Klick-Modul installiert wird, muss leer sein oder noch nicht vorhanden.
+- Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist auf Ihrem OVHcloud Webhosting als [Multisite](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) deklariert.
 
 ## In der praktischen Anwendung
 
-### Schritt 1 - Korrektes CMS auswählen
+### Schritt 1: Ein CMS auswählen
 
-Mit einem CMS können Sie Ihre Website über ein einfach zu verwendendes Interface erstellen. Es gibt verschiedene Arten von CMS, von denen einige vorkonzipiert sind, um zum Beispiel eine E-Commerce Seite zu erstellen, andere für die Einrichtung einer Vitrine, eines Blogs usw... Sie können so von einer gebrauchsfertigen und personalisierbaren Websitestruktur profitieren (Thema, Erweiterungen, Texte usw.), die Ihnen am besten passt.
+Mit einem CMS können Sie Ihre Website über ein einfach zu verwendendes Interface einrichten. Es gibt verschiedene Arten von CMS, von denen einige beispielsweise konzipiert sind, um eine E-Commerce Seite zu erstellen, andere für die Einrichtung strukturierter Seiten wie etwa Blogs. So können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Gestaltung, Erweiterungen, Text etc.).
 
-Von allen CMS bietet OVHcloud 4 als automatische Installation mit seinen "1-Klick-Modulen" an. 
+OVHcloud bietet 4 CMS als automatische Installation über 1-Klick-Modul an. 
 
-Wenn Sie diese Lösung verwenden, wählen Sie aus den oben aufgeführten 4 CMS. Wenn Sie bereits eine Auswahl getroffen haben, lesen Sie die verschiedenen Schritte in dieser Anleitung. Ist das nicht der Fall, ziehen Sie Ihre Wahl in unserem [Vergleich der CMS](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/) zu.
+Wählen Sie aus den oben aufgeführten 4 CMS aus und folgen dann den Schritten in dieser Anleitung. Sie können unsere [Übersichtsseite für CMS](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/) verwenden, um Ihre Auswahl zu erleichtern.
 
-Wenn Sie ein nicht erreichbares CMS über unsere "1-Klick-Module" installieren möchten, können Sie es manuell auf Ihrem Hosting installieren. Dies unter der Voraussetzung, dass dieses CMS mit unseren [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angeboten kompatibel ist.
+Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) kompatibel ist.
 
 ![CMS-Logos](images/CMS_logo.png){.thumbnail}
 
-### Schritt 2 - Auf die Verwaltung der "1 Klick Module" zugreifen
+### Schritt 2: Zugang zur Verwaltung der 1-Klick-Module
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action}. Klicken Sie auf `Hosting-Pakete`{.action}, wählen Sie das Hosting-Angebot aus, auf dem Sie ein "1-Klick-Modul" installieren möchten, und klicken Sie dann auf den Tab `1-Klick-Module`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann auf den Tab `1-Klick-Module`{.action}.
 
-Dort finden Sie alle bereits installierten 1-Klick-Module. Dort können Sie Ihre 1-Klick-Module verwalten und neue installieren.
+Hier können Sie die bereits installierten 1-Klick-Module verwalten und neue Module installieren.
 
 ![Zugang zur Verwaltung der 1-Klick-Module](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
-## Schritt 3 - "1 Klick Modul" hinzufügen
+## Schritt 3: 1-Klick-Modul hinzufügen
 
-Klicken Sie im Tab `1-Klick-Module`{.action} Ihres Hostings auf den Button `Ein Modul hinzufügen`{.action}, um ein neues "1 Klick Modul" hinzuzufügen.
+Klicken Sie im Tab `1-Klick-Module`{.action} Ihres Hostings auf den Button `Ein Modul hinzufügen`{.action}.
 
-Wählen Sie im angezeigten Fenster das gewünschte CMS aus und wählen Sie die Domain aus, mit der Sie Ihre Website installieren möchten:
+Wählen Sie im neu angezeigten Fenster das gewünschte CMS aus und dann den Domainnamen, mit dem Sie Ihre Website installieren möchten.
 
 ![Modulauswahl](images/add_a_module.png){.thumbnail}
 
-Wenn Ihre Domain nicht in der Liste steht, gehen Sie in den Tab `Multisite`{.action}, um diese hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung [Wie kann ich ein Webhosting mit mehreren Websites teilen](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}.
+Wenn der Domainname nicht in der Liste steht, gehen Sie in zum Tab `Multisite`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)".
 
-Wenn Ihre Domain korrekt hinzugefügt wurde, versuchen Sie erneut, ein "1-Klick-Modul" hinzuzufügen.
+Anschließend versuchen Sie erneut, ein Modul zu installieren.
 
-Wenn Sie das CMS ausgewählt haben, wählen Sie zwischen einer Installation **schnell** oder **Experten-Modus**:
+Sie haben nun die Wahl zwischen einer **einfachen Installation** oder der **Installation im Experten-Modus**.
 
-- Installation **schnell** (standardmäßig ausgewählt): OVHcloud führt die Installation des CMS durch und teilt Ihnen Ihre Zugangsdaten mit, um es per E-Mail an Ihre OVHcloud-Kontaktadresse zu verwalten. Dies ist die einfachste und schnellste Art und Weise, ein "1-Klick-Modul"zu installieren.
-- Installation **Experten-Modus**: So können Sie die für die Installation des CMS anzuwendende Konfiguration anpassen. Geben Sie alle für das reibungslose Funktionieren des CMS notwendigen Informationen ein: 
-    - Verbindungsinformationen zu Ihrer Datenbank (Server, Benutzername, Port, Passwort usw.)
-    - Installationspfad im FTP Speicherplatz Ihres Hostings
+- **Einfache Installation** (Standardeinstellung): OVHcloud führt die Installation des CMS durch und sendet Ihnen Ihre Zugangsdaten per E-Mail an Ihre OVHcloud Kontaktadresse. Dies ist die schnellste Art, ein 1-Klick-Modul zu installieren.
+- **Installation im Experten-Modus**: Sie können die Installationseinstellungen anpassen. Geben Sie hierzu die Informationen ein, die für das korrekte Funktionieren des CMS mit Ihrer Datenbank notwendig sind: 
+    - Verbindungsinformationen zu Ihrer Datenbank (Server, Benutzername, Port, Passwort)
+    - Installationspfad im FTP-Speicherplatz Ihres Hostings
     - Sprache des CMS
-    - Administrator-Kennungen (Administratorname, Passwort, E-Mail-Adresse usw.)
+    - Administrationsdaten (Administratorname, Passwort, E-Mail-Adresse)
 
-#### Schnelle Installation eines "1 Klick Moduls"
+#### Einfache Installation eines Moduls
 
-Wählen Sie den Domainnamen für Ihr CMS aus, überprüfen Sie das Zielverzeichnis, das nach der Wahl des Domainnamens automatisch erscheint, und überprüfen Sie, dass in dem Feld `Installation im Experten-Modus`{.action} kein Haken gesetzt wurde. Klicken Sie anschließend direkt auf den Button `Installieren`{.action}.
+Wählen Sie den Domainnamen für Ihr CMS aus. Überprüfen Sie das Zielverzeichnis, das nach der Wahl des Domainnamens automatisch erscheint, und stellen Sie sicher, dass bei `Installation im Experten-Modus`{.action} kein Haken gesetzt ist. Klicken Sie anschließend auf den Button `Installieren`{.action}.
 
 > [!warning]
 >
-> Das Installationsverzeichnis Ihres "1-Klick-Moduls" muss leer sein und Sie müssen über mindestens eine Datenbank verfügen, die auf Ihrem OVHcloud Webhosting eingerichtet werden kann, damit die Installation durchgeführt werden kann.
+> Das Installationsverzeichnis Ihres 1-Klick-Moduls muss leer sein und Ihr OVHcloud Webhosting muss über mindestens eine Datenbank verfügen, damit die Installation durchgeführt werden kann.
 >
-> Für eine schnelle Installation erstellen Sie im Voraus keine Datenbank, der Installationsroboter übernimmt dies.
+> Wenn Sie nicht den Experten-Modus verwenden, erstellen Sie die Datenbank nicht im Voraus, da der Installationsroboter dies ausführt.
 >
 
 ![Einfache Installation eines Moduls](images/choose_installation.png){.thumbnail}
 
-Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit den Login-Informationen zum Administrator-Interface (*back office*) Ihres CMS. Verbinden Sie sich mit dieser, um Ihre Website zu personalisieren.
+Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Daten. Damit können Sie sich in das Administrator-Interface (Backend) Ihres CMS einloggen.
 
-#### Eigentumsrechte Installation der Module
+#### Erweiterte Installation eines Moduls
 
-Um die Eigentumsanlage durchzuführen, vergewis Sie sich, im Feld `Installation im Experten-Modus`{.action}, und klicken Sie anschließend auf `Weiter`{.action}:
+Um die erweiterte Installation durchzuführen, vergewissern Sie sich, dass im Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie anschließend auf `Weiter`{.action}:
 
 ![Erweiterte Installation eines Moduls](images/advanced_installation.png){.thumbnail}
 
 ###### Datenbank auswählen
 
-Geben Sie die Verbindungsinformationen zu Ihrer Datenbank ein. 
+Geben Sie die Verbindungsdaten zu Ihrer Datenbank ein. 
 
 ![Datenbank für erweiterte Installation](images/advanced_installation_database.png){.thumbnail}
 
 Es gibt mehrere Möglichkeiten:
 
-- Die Datenbank ist bereits auf Ihrem Webhosting eingerichtet: Wählen Sie die gewünschte Datenbank im Drop-down-Menü aus `Wählen Sie die Datenbank aus`{.action} und geben Sie die angeforderten Informationen ein.
-- Die Datenbank ist noch nicht auf Ihrem Webhosting erstellt: [Erstellen Sie Ihre Inklusiv-Datenbank mit Ihrem Hosting](https://docs.ovh.com/de/hosting/datenbank-erstellen/), gehen Sie dann zum Drop-down-Menü `Wählen Sie die Datenbank aus`{.action} und geben Sie die angeforderten Informationen ein.
-- Die Datenbank ist [auf Ihrer Cloud Databases Webinstanz erstellt](https://docs.ovh.com/de/clouddb/datenbank-und-benutzer-erstellen/): Wählen Sie die gewünschte im Drop-down-Menü aus `Wählen Sie die Datenbank aus`{.action}, wählen Sie die Option `Datenbank außerhalb Ihres Webhostings`{.action} und vervollständigen Sie die angeforderten Informationen. Die Instanz und das Webhosting müssen im gleichen Rechenzentrum (Datacenter) gehostet werden.
-- Die Datenbank wird auf einem anderen OVHcloud Webhosting eingerichtet: Wählen Sie im Drop-down-Menü die Datenbank `Wählen Sie die Datenbank aus`{.action}, wählen Sie die Option `Datenbank außerhalb Ihres Webhostings`{.action} und vervollständigen Sie die angeforderten Informationen. Die Datenbank und das Webhosting müssen im gleichen Rechenzentrum gehostet werden.
+- Die Datenbank ist bereits auf Ihrem Webhosting erstellt: Wählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
+- Die Datenbank ist noch nicht auf Ihrem Webhosting erstellt: [Erstellen Sie Ihre Datenbank auf dem Hosting](https://docs.ovh.com/de/hosting/datenbank-erstellen/), w0,ählen Sie Ihre Datenbank unter `Wählen Sie die Datenbank aus`{.action} und geben Sie die erforderlichen Informationen ein.
+- Die Datenbank befindet sich auf einer [Instanz von Web Cloud Databases](https://docs.ovh.com/de/clouddb/datenbank-und-benutzer-erstellen/): Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Instanz und das Webhosting müssen im gleichen Rechenzentrum gehostet werden.
+- Die Datenbank wurde auf einem anderen OVHcloud Webhosting eingerichtet: Wählen Sie unter `Wählen Sie die Datenbank aus`{.action} die Option `Datenbank außerhalb Ihres Webhostings`{.action} und tragen Sie die Verbindungsdaten Ihrer Datenbank ein. Die Datenbank und das Webhosting mit dem neuen Modul müssen im gleichen Rechenzentrum gehostet werden.
 
 Für die Datenbank sind folgende Angaben erforderlich:
 
-- *Adresse des Servers*: Geben Sie den Namen des Servers Ihrer Datenbank ein, der sich in der Installations-E-Mail oder in Ihrem OVHcloud Kundencenter befindet. 
+- *Adresse des Servers*: Geben Sie den Servernamen Ihrer Datenbank ein, den Sie in der E-Mail zur Installation oder in Ihrem OVHcloud Kundencenter finden können. 
 
 > [!primary]
 > 
-> - Der Name des Servers einer Datenbank, der bei Ihrem Webhosting Angebot inklusive ist, hat im Allgemeinen folgende Form: `nameOfYourDatabase.mysql.db`. 
+> - Der Servername einer inklusiven Datenbank eines Webhostings hat im Allgemeinen folgende Form: `Datenbankname.mysql.db`. 
 >
-> - Der Name des Servers einer Web Cloud Databases Datenbank beginnt mit Ihrer OVHcloud Kundenkennung und hat folgende Form: `OVHID(without-ovh)-XXX.eu.clouddb.ovh.net` wobei die **"X"** durch die Referenz Ihres Web Cloud Databases zu ersetzen sind.
+> - Der Name des Servers einer Datenbank von Web Cloud Databases beginnt mit Ihrer OVHcloud Kundenkennung und hat folgende Form: `OVHID(ohne-ovh)-XXX.eu.clouddb.ovh.net` wobei **XXX** mit der Referenz Ihrer Datenbank zu ersetzen ist.
 >
 
-- *Name der Datenbank*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert.
+- *Name der Datenbank*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) festgelegt.
 
-- *Port*: Legen Sie systematisch die Nummer **3306** (standardmäßiger Port) für eine Datenbank bei Ihrem Webhosting ein. Eine Datenbank auf einer Cloud Databases Webinstanz finden Sie in [dieser Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+- *Port*: Geben Sie die Nummer **3306** (Standard-Port) für eine Webhosting-Datenbank ein. Für Datenbanken auf einer Web Cloud Databases Instanz folgen Sie [dieser Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
 
-- *Benutzername*: Der Name der Datenbank ist identisch, wenn Sie eine Datenbank verwenden, die in Ihrem Webhosting enthalten ist.
-Für Datenbanken, die auf einem Web Cloud Databases Angebot erstellt werden, lesen Sie die Informationen in [dieser Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+- *Benutzername*: Er ist identisch für Datenbanken, die in einem Webhosting inklusive sind. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, folgen Sie [dieser Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
 
-- *Passwort*: wurde Ihnen bei der Erstellung der Datenbank per E-Mail zugesandt. Es ist möglich, dass Sie es inzwischen geändert haben.
+- *Passwort*: Das Passwort wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
 Wenn Sie alle Informationen eingegeben haben, klicken Sie auf den Button `Weiter`{.action}.
 
 > [!warning]
 >
-> Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation nicht abgeschlossen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
+> Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
 > 
-> Um die Login-Daten zu Ihrer Datenbank zu erhalten, die Ihr Webhosting enthält, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
+> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu erfahren, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
 >
-> Um die Login-Daten zu Ihrer auf einer Cloud Databases Web-Instanz erstellten Datenbank abzurufen, lesen Sie [diese Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+> Um die Login-Daten zu einer auf Web Cloud Databases erstellten Datenbank zu erfahren, lesen Sie [diese Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
 >
 
-##### Modul konfigurieren
+##### Konfiguration des Moduls
 
-Geben Sie die folgenden Informationen für die Konfiguration des Moduls ein:
+Geben Sie die folgenden Informationenein, um das Modul zu konfigurieren:
 
-- *Name oder E-Mail-Adresse des Administrators:* Kennung, die Sie verwenden, um sich mit dem Verwaltungsinterface Ihres CMS zu verbinden (Back Office).
-- *Passwort:* Passwort, das Sie verwenden, um sich mit dem Verwaltungsinterface Ihres CMS zu verbinden.
-- *Domain:* Domainname, mit dem Sie Ihr CMS installieren möchten Wenn nötig lesen Sie unsere Anleitung [Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/).
+- *Name oder E-Mail-Adresse des Administrators:* Kennung, die Sie verwenden, um sich mit der Verwaltungsoberfläche Ihres CMS zu verbinden (Backend).
+- *Passwort:* Passwort, das Sie verwenden, um sich mit der Verwaltungsoberfläche Ihres CMS zu verbinden.
+- *Domain:* Domainname, mit dem Sie Ihr CMS installieren möchten. Lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/)" um mehr zu erfahren.
 - *Sprache:* Sprache, in der das CMS installiert wird.
-- *Installationspfad:* wird bei der Auswahl der Domain automatisch angegeben. Ergänzen Sie diese mit Unterverzeichnissen (für fortgeschrittene Benutzer).
+- *Installationspfad:* Wird bei der Auswahl des Domainnamens automatisch ausgewählt. Ergänzen Sie ihn mit Unterverzeichnissen, falls gewünscht (für fortgeschrittene Benutzer).
 
 Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
 
 > [!warning]
 >
-> Die in dem angegebenen Installationspfad angegebene Enddatei muss vollständig leer sein, damit die Installation erfolgreich ist.
+> Das Verzeichnis am Ende des Installationspfads muss leer sein, damit die Installation ausgeführt werden kann.
 >
 
 ![Modulkonfiguration für die erweiterte Installation](images/advanced_installation_configuration.png){.thumbnail}
 
-##### Die Installation bestätigen
+##### Installation bestätigen
 
-Überprüfen Sie die angezeigten Informationen und klicken Sie dann auf `Bestätigen`{.action}, wenn alles in Ordnung ist:
+Im letzten Schritt der erweiterten Installation überprüfen Sie die eingegebenen Informationen und klicken dann auf `Bestätigen`{.action}.
 
 ![Bestätigung der Installation im Experten-Modus](images/advanced_installation_summary.png){.thumbnail}
 
-### Schritt 4: meine Seite personalisieren
+### Schritt 4: Ihre Website personalisieren
 
 Die Installation kann etwa zehn Minuten dauern.
 
-Nach Abschluss erhalten Sie eine E-Mail zur Bestätigung der korrekten Installation des CMS. In dieser E-Mail können Sie sich mit dem Verwaltungsinterface Ihres CMS verbinden. So können Sie das Thema Ihrer Website ändern und Ihre ersten Inhalte veröffentlichen.
+Nach Abschluss erhalten Sie eine E-Mail zur Bestätigung der Installation des CMS. Sie erhalten darin auch die Login-Daten, um sich mit dem Verwaltungsinterface Ihres CMS zu verbinden. Anschließend können Sie das Aussehen Ihrer Website ändern und Ihre ersten Inhalte veröffentlichen.
 
 > [!warning]
 >
-> Der OVHcloud Support bietet keine Unterstützung bei der Verwendung von CMS. Wir bieten sie nur als Installation an **mit 1 Klick**.
+> Der OVHcloud Support bietet keine Unterstützung bei der Verwendung von CMS. Die automatische Installation über die Module ist eine unverbindliche Komfort-Option.
 >
 
-Wenn Sie Hilfe bei den Funktionen Ihres CMS benötigen, wenden Sie sich an den Herausgeber des von Ihnen installierten CMS. Dort finden Sie Dokumentation, um Sie bei Ihrem Projekt zu unterstützen.
+Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die offizielle Website des CMS-Anbieters. Dort finden Sie zusätzliche Dokumentation und Hilfen, um Sie bei Ihrem Projekt zu unterstützen.
 
 |CMS|Dokumentation|
 |---|---|
@@ -187,11 +187,11 @@ Wenn Sie Hilfe bei den Funktionen Ihres CMS benötigen, wenden Sie sich an den H
 
 [Finden Sie das richtige CMS für Ihre Website](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external}
 
-[Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
+[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
 
-Entdecken Sie unsere [Web Cloud Databases Angebote](https://www.ovh.de/cloud/cloud-databases/){.external}
+Entdecken Sie unsere [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/){.external}
 
 [CMS verwalten](https://docs.ovh.com/de/hosting/1-click-module-management/)
 
