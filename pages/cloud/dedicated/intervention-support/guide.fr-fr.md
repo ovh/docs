@@ -646,7 +646,7 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 2 méthodes 
 #### via IPMI/KVM
 - connectez-vous en tant qu'administrateur à partir de l'interface IPMI/KVM.
-- pressez la combinaison de touches WINDOWS+R, puis à travers l'invite `executer`,  Lancez la commande `devmgmt.msc`:  
+- pressez la combinaison de touches WINDOWS+R, puis à travers l'invite `executer`, puis exécuter la commande `devmgmt.msc`:  
 ![win_device_manager](images/win_device_manager_edited.png){.thumbnail}
 
 - ouvrir `Network adapters` et selectionner l'adaptateur correspondant à `eth0`
