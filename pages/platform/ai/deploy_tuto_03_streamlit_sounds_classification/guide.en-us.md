@@ -207,13 +207,12 @@ if __name__ == '__main__':
 The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ```console
-streamlit
-tensorflow
+streamlit==1.20.*
+tensorflow==2.12.0
 numpy==1.22.4
-pandas
-scikit-learn
-keras
-librosa
+pandas==1.5.3
+scikit-learn==1.2.*
+librosa==0.10.*
 ```
 
 Here we will mainly discuss how to write the `app.py` code, the `requirements.txt` file and the `Dockerfile`. If you want to see the whole code, please refer to the [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/audio-classification-app).
