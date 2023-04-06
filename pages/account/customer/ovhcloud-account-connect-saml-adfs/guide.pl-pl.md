@@ -1,7 +1,7 @@
 ---
-title: Włącz połączenia SSO z Twoim kontem OVHcloud
-slug: connect-saml-sso
-excerpt: "Dowiedz się, jak powiązać usługę ADFS z Twoim kontem OVHcloud przez SAML 2.0"
+title: Włącz połączenia Active Directory Federation Services (AD FS) SSO z Twoim kontem OVHcloud
+slug: connect-saml-sso-adfs
+excerpt: "Dowiedz się, jak powiązać usługę Active Directory Federation Services (AD FS) z Twoim kontem OVHcloud przez SAML 2.0"
 section: Poziom zaawansowany
 order: 02
 updated: 2022-10-13
@@ -15,13 +15,13 @@ updated: 2022-10-13
 
 ## Wprowadzenie
 
-Do zalogowania się do konta OVHcloud możesz użyć **unikalnego** uwierzytelnienia SSO (*Single Sign-On*). Aby włączyć te połączenia, Twoje konto oraz usługi ADFS (*Active Directory Federation Services*) muszą być skonfigurowane za pomocą uwierzytelniania SAML (*Security Assertion Markup Language*).
+Do zalogowania się do konta OVHcloud możesz użyć **unikalnego** uwierzytelnienia SSO (*Single Sign-On*). Aby włączyć te połączenia, Twoje konto oraz usługi AD FS (*Active Directory Federation Services*) muszą być skonfigurowane za pomocą uwierzytelniania SAML (*Security Assertion Markup Language*).
 
 **Niniejszy przewodnik wyjaśnia, jak powiązać Twoje konto OVHcloud z zewnętrzną Active Directory.**
 
 ## Wymagania początkowe
 
-- Usługi ADFS (Active Directory Federation Services) muszą być wykonywane na serwerze
+- Usługi AD FS (Active Directory Federation Services) muszą być wykonywane na serwerze
 - Posiadanie [konta OVHcloud](https://docs.ovh.com/pl/customer/tworzenie-konta-ovhcloud/)
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
@@ -29,12 +29,12 @@ Do zalogowania się do konta OVHcloud możesz użyć **unikalnego** uwierzytelni
 
 > [!primary]
 >
-> Aby usługodawca (tzn. Twoje konto OVHcloud) mógł nawiązać połączenie SSO z dostawcą tożsamości (tzn. usługą ADFS), należy przede wszystkim nawiązać relację zaufania.
+> Aby usługodawca (tzn. Twoje konto OVHcloud) mógł nawiązać połączenie SSO z dostawcą tożsamości (tzn. usługą AD FS), należy przede wszystkim nawiązać relację zaufania.
 >
 
-### Budowa zaufania ADFS
+### Budowa zaufania AD FS
 
-Twój ADFS działa jako dostawca tożsamości. Zlecenia uwierzytelnienia Twojego konta OVHcloud zostaną przyjęte tylko wtedy, gdy zostanie ono uznane za zaufaną organizację trzecią.
+Twój AD FS działa jako dostawca tożsamości. Zlecenia uwierzytelnienia Twojego konta OVHcloud zostaną przyjęte tylko wtedy, gdy zostanie ono uznane za zaufaną organizację trzecią.
 
 W kontekście Active Directory oznacza to, że należy go dodać jako `Relying Party Trust`.
 
@@ -44,15 +44,15 @@ W menedżerze serwerów otwórz menu `Tools`{.action} i wybierz `AD FS Managemen
 
 Kliknij `Relying Party Trusts`{.action}.
 
-![ADFS Menu](images/adfs_menu.png){.thumbnail}
+![AD FS Menu](images/adfs_menu.png){.thumbnail}
 
 Następnie kliknij `Add Relying Party Trust...`{.action}.
 
-![Menu zatwierdzeń ADFS](images/adfs_relying_party_trusts_menu.png){.thumbnail}
+![Menu zatwierdzeń AD FS](images/adfs_relying_party_trusts_menu.png){.thumbnail}
 
 Wybierz `Claims aware`{.action} i zatwierdź przyciskiem `Start`{.action}.
 
-![ADFS dodanie zatwierdzenia - etap 1](images/adfs_add_relying_party_trust_1.png){.thumbnail}
+![AD FS dodanie zatwierdzenia - etap 1](images/adfs_add_relying_party_trust_1.png){.thumbnail}
 
 Możesz wprowadzić ręcznie informacje dotyczące zaufanego podmiotu trzeciego lub zaimportować je z pliku metadanych.
 
@@ -67,23 +67,23 @@ Wybierz `Import data about the relying party from a file`{.action} i wybierz Tw�
 
 Następnie kliknij przycisk `Next`{.action}.
 
-![ADFS - dodanie zatwierdzenia - etap 2](images/adfs_add_relying_party_trust_2.png){.thumbnail}
+![AD FS - dodanie zatwierdzenia - etap 2](images/adfs_add_relying_party_trust_2.png){.thumbnail}
 
 Wprowadź nazwę wyświetlacza dla zaufanej strony trzeciej i kliknij przycisk `Next`{.action}.
 
-![ADFS - dodanie zatwierdzenia - etap 3](images/adfs_add_relying_party_trust_3.png){.thumbnail}
+![AD FS - dodanie zatwierdzenia - etap 3](images/adfs_add_relying_party_trust_3.png){.thumbnail}
 
 Kliknij `Next`{.action} w oknie kontroli dostępu.
 
-![ADFS - dodanie zatwierdzenia - etap 4](images/adfs_add_relying_party_trust_4.png){.thumbnail}
+![AD FS - dodanie zatwierdzenia - etap 4](images/adfs_add_relying_party_trust_4.png){.thumbnail}
 
 Kliknij `Next`{.action}, aby kontynuować.
 
-![ADFS - dodanie zatwierdzenia - etap 5](images/adfs_add_relying_party_trust_5.png){.thumbnail}
+![AD FS - dodanie zatwierdzenia - etap 5](images/adfs_add_relying_party_trust_5.png){.thumbnail}
 
-Kliknij przycisk `Close`{.action} w ostatnim oknie. Zatwierdzenie przez OVHcloud jako zaufaną organizację trzecią zostało dodane do Twojego ADFS.
+Kliknij przycisk `Close`{.action} w ostatnim oknie. Zatwierdzenie przez OVHcloud jako zaufaną organizację trzecią zostało dodane do Twojego AD FS.
 
-![Zatwierdzenia ADFS](images/adfs_relying_party_trusts.png){.thumbnail}
+![Zatwierdzenia AD FS](images/adfs_relying_party_trusts.png){.thumbnail}
 
 > [!primary]
 >
@@ -94,15 +94,15 @@ Kliknij przycisk `Close`{.action} w ostatnim oknie. Zatwierdzenie przez OVHcloud
 
 Kliknij pozycję OVHcloud w części "Relying Party Trusts".
 
-![Mapa zatwierdzenia ADFS etap 1](images/adfs_relying_party_trusts_mapping_1.png){.thumbnail}
+![Mapa zatwierdzenia AD FS etap 1](images/adfs_relying_party_trusts_mapping_1.png){.thumbnail}
 
 Następnie kliknij `Edit Claim Issuance Policy...`{.action}.
 
-![Mapa zatwierdzenia ADFS etap 2](images/adfs_relying_party_trusts_mapping_2.png){.thumbnail}
+![Mapa zatwierdzenia AD FS etap 2](images/adfs_relying_party_trusts_mapping_2.png){.thumbnail}
 
 Kliknij przycisk `Add Rule...`{.action}.
 
-![Mapa zatwierdzenia ADFS etap 3](images/adfs_relying_party_trusts_mapping_3.png){.thumbnail}
+![Mapa zatwierdzenia AD FS etap 3](images/adfs_relying_party_trusts_mapping_3.png){.thumbnail}
 
 Kliknij `Next`{.action}.
 
@@ -116,19 +116,19 @@ Wybierz `Active Directory` jako `Attribute store`.
 
 Po zakończeniu kliknij przycisk `Finish`{.action}.
 
-![Mapa zatwierdzenia ADFS etap 4](images/adfs_relying_party_trusts_mapping_4.png){.thumbnail}
+![Mapa zatwierdzenia AD FS etap 4](images/adfs_relying_party_trusts_mapping_4.png){.thumbnail}
 
-![Mapa zatwierdzenia ADFS etap 5](images/adfs_relying_party_trusts_mapping_5.png){.thumbnail}
+![Mapa zatwierdzenia AD FS etap 5](images/adfs_relying_party_trusts_mapping_5.png){.thumbnail}
 
 Kliknij przycisk `Apply`{.action} i zatwierdź `OK`{.action}.
 
 ![Mapa zatwierdzenia etapu 6](images/adfs_relying_party_trusts_mapping_6.png){.thumbnail}
 
-Po utworzeniu tabeli korelacji Twoja usługa ADFS stała się zaufana OVHcloud jako dostawca usług. Kolejnym krokiem jest sprawdzenie, czy konto OVHcloud zaufa użytkownikowi ADFS.
+Po utworzeniu tabeli korelacji Twoja usługa AD FS stała się zaufana OVHcloud jako dostawca usług. Kolejnym krokiem jest sprawdzenie, czy konto OVHcloud zaufa użytkownikowi AD FS.
 
 ### Budowa zaufania do konta OVHcloud i konfiguracja połączenia
 
-Opcja dodawania ADFS jako zaufanego dostawcy danych jest dostępna w [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w którym możesz dostarczyć metadane dostawcy tożsamości.
+Opcja dodawania AD FS jako zaufanego dostawcy danych jest dostępna w [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w którym możesz dostarczyć metadane dostawcy tożsamości.
 
 [Zaloguj się](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i kliknij swój profil w prawym górnym rogu.
 
@@ -146,11 +146,11 @@ Kliknij przycisk `SSO connection`{.action} .
 
 ![Etap 1 OVHcloud logowania SSO](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Wpisz metadane XML Twojej usługi ADFS. W tym przypadku pole `Nazwa atrybutu grupy` jest opcjonalne. Kliknij na `Zatwierdź`{.action}.
+Wpisz metadane XML Twojej usługi AD FS. W tym przypadku pole `Nazwa atrybutu grupy` jest opcjonalne. Kliknij na `Zatwierdź`{.action}.
 
 ![Etap 2 OVHcloud logowania SSO](images/ovhcloud_user_management_connect_sso_2.png){.thumbnail}
 
-Odszukaj ADFS jako dostawcę danych, a także grupy domyślne.
+Odszukaj AD FS jako dostawcę danych, a także grupy domyślne.
 
 ![Etap 3 OVHcloud logowania SSO](images/ovhcloud_user_management_connect_sso_3.png){.thumbnail}
 
@@ -164,7 +164,7 @@ Przycisk `...`{.action} pozwala na aktualizację lub usunięcie certyfikatu SSO 
 
 ![Etap 6 OVHcloud logowania SSO](images/ovhcloud_user_management_connect_sso_6.png){.thumbnail}
 
-Usługa ADFS jest obecnie uważana za zaufanego dostawcę tożsamości. Jednocześnie należy dodać grupy do konta OVHcloud.
+Usługa AD FS jest obecnie uważana za zaufanego dostawcę tożsamości. Jednocześnie należy dodać grupy do konta OVHcloud.
 
 > [!warning]
 > Jeśli spróbujesz zalogować się przez SSO, prawdopodobnie wyświetli się komunikat błędu `Not in valid groups`.
@@ -172,15 +172,15 @@ Usługa ADFS jest obecnie uważana za zaufanego dostawcę tożsamości. Jednocze
 > Twoje konto OVHcloud sprawdza, czy użytkownik loguje się do grupy istniejącej na koncie.
 >
 
-Aby to zrobić, sprawdź informacje zebrane w atrybucie "Group" zwróconym przez usługę ADFS.
+Aby to zrobić, sprawdź informacje zebrane w atrybucie "Group" zwróconym przez usługę AD FS.
 
 Weźmy na przykład użytkownika "John Doe" z Active Directory, jak pokazano na poniższym obrazku.
 
-![Użytkownik ADFS](images/adfs_user.png){.thumbnail}
+![Użytkownik AD FS](images/adfs_user.png){.thumbnail}
 
-Sprawdź tabelę korelacji w ADFS:
+Sprawdź tabelę korelacji w AD FS:
 
-![Mapowanie zatwierdzenia części zaufania ADFS](images/adfs_relying_party_trusts_mapping_4.png){.thumbnail}
+![Mapowanie zatwierdzenia części zaufania AD FS](images/adfs_relying_party_trusts_mapping_4.png){.thumbnail}
 
 W tym przykładzie atrybut "Group" zwrócony przez Active Directory dla użytkownika "John Doe" jest "title". Odpowiada to "job title", który jest `manager@<my-domain>.com`.
 
@@ -199,17 +199,17 @@ Oznacza to, że należy dodać grupę `manager@<my-domain>.com` do Twojego konta
 
 Dodaj konto klikając przycisk `Zgłoś grupę`{.action} i wypełniając pola:
 
-![Grupy zarządzania użytkownikami ADFS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
+![Grupy zarządzania użytkownikami AD FS](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 
-![Grupy zarządzania użytkownikami ADFS](images/ovhcloud_user_management_groups_2.png){.thumbnail}
+![Grupy zarządzania użytkownikami AD FS](images/ovhcloud_user_management_groups_2.png){.thumbnail}
 
 Następnie możesz sprawdzić, czy grupa została dodana do Twojego konta OVHcloud w sekcji `Grupy`:
 
-![Grupy zarządzania użytkownikami ADFS](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+![Grupy zarządzania użytkownikami AD FS](images/ovhcloud_user_management_groups_3.png){.thumbnail}
 
 Po zalogowaniu się z użytkownikiem Active Directory "John Doe" Twoje konto OVHcloud potwierdzi rolę "REGULAR" określoną przez jego grupę.
 
-Następnie będziesz mógł wylogować się ze swojego konta i ponownie zalogować się z ADFS jako dostawcą danych.
+Następnie będziesz mógł wylogować się ze swojego konta i ponownie zalogować się z AD FS jako dostawcą danych.
 
 ### Logowanie przez SSO
 
@@ -217,11 +217,11 @@ Na [stronie logowania OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![Połączenie z federacją OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 
-Zostaniesz przekierowany na stronę logowania ADFS. Wprowadź login/hasło użytkownika Active Directory LDAP, następnie kliknij przycisk `Sign in`{.action}.
+Zostaniesz przekierowany na stronę logowania AD FS. Wprowadź login/hasło użytkownika Active Directory LDAP, następnie kliknij przycisk `Sign in`{.action}.
 
-![OVHcloud Federacja Logiczna Przekierowania ADFS](images/ovhcloud_federation_login_2.png){.thumbnail}
+![OVHcloud Federacja Logiczna Przekierowania AD FS](images/ovhcloud_federation_login_2.png){.thumbnail}
 
-Teraz jesteś zalogowany tym samym identyfikatorem klienta, ale za pomocą użytkownika Active Directory oraz SSO ADFS.
+Teraz jesteś zalogowany tym samym identyfikatorem klienta, ale za pomocą użytkownika Active Directory oraz SSO AD FS.
 
 ![Federacja Informacji o Użytkownikach OVHcloud](images/ovhcloud_user_infos_federation.png){.thumbnail}
 
