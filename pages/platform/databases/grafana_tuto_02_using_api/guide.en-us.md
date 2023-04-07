@@ -11,7 +11,7 @@ updated: 2023-04-06
 
 ## Objective
 
-Using the Grafana is not obvious and already clearly documented.
+Using the Grafana's API is not obvious and already clearly documented.
 This tutorial explains how to configure Grafana to use API and how make call to the exposed API.
 
 ## Requirements
