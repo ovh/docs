@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Instalar Joomla! manualmente"
-slug: instalar-manualmente-joomla
+slug: cms_manually_install_joomla
 excerpt: "Descubra cómo  instalar manualmente un CMS Joomla!"
 section: CMS
 order: 05
@@ -142,8 +142,8 @@ La instalación ha finalizado, pero puede añadir más idiomas al CMS si es nece
 
 [Sitio Oficial Joomla!](https://joomla.org){.external}
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
