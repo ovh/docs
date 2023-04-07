@@ -119,7 +119,7 @@ Visualizzi questo messaggio:
 
 Se utilizzi un database presente al di fuori di un hosting locale, dovrai eliminare il *token* generato casualmente durante l'installazione del tuo Joomla!.
 
-Questo file da eliminare si trova nel tuo [spazio di archiviazione FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Questo file da eliminare si trova nel tuo [spazio di archiviazione FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
 
 Una volta connesso, accedi alla cartella **installazione** del tuo Joomla! poi elimina solo il *token* indicato dal messaggio di alert. è presente come file*.txt**.
 

@@ -119,7 +119,7 @@ Surge a seguinte mensagem:
 
 Uma vez que utiliza uma base de dados presente fora de um alojamento local, deverá eliminar o * token* gerado automaticamente aquando da instalação do seu Joomla!
 
-Este ficheiro a eliminar encontra-se no seu [espaço de armazenamento FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Este ficheiro a eliminar encontra-se no seu [espaço de armazenamento FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
 Uma vez ligado, aceda à pasta **instalação** do seu Joomla! e elimine apenas o * token* indicado pela mensagem de alerta. Está presente sob a forma de um ficheiro **.txt**.
 
