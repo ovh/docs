@@ -1,229 +1,161 @@
 ---
-title: 'CMS: installa manualmente Drupal'
-excerpt: Come fai a installare manualmente Drupal?
+title: "Tutorial - Installare manualmente Drupal"
+excerpt: "Questa guida ti mostra come installare manualmente il tuo CMS Drupal"
 slug: cms_installa_manualmente_drupal
 section: CMS
 order: 07
-updated: 2022-12-01
+updated: 2023-04-07
 ---
 
+**Ultimo aggiornamento: 07/04/2023**
 
-## Parte 1: preparazione all’installazione
-Software
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+  
+## Obiettivo
 
-Per installare il CMS Drupal sulla tua offerta di hosting condiviso, ti consigliamo di utilizzare un client FTP come FileZilla (gratuito).
+Qui trovi tutti gli elementi per installare manualmente il CMS (Content Management System) Drupal in pochi step.
 
-## [b]Credenziali[/b]
-Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
+> 
+> Mettiamo a tua disposizione questo tutorial per supportarti nelle operazioni più frequenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a uno specialista del settore (https://partner.ovhcloud.com/it/) o [amministratore del CMS Drupal](https://www.drupal.org/support){.external}. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni, consulta la sezione ["Per saperne di più"](#go-further) di questo tutorial.
+>
 
+> [!success]
+>
+> Per installare Drupal **automaticamente** dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), consulta la nostra guida sull'[installazione di un modulo "in un click"](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+>
+> Per installare **manualmente un altro CMS** (WordPress, Joomla!, PrestaShop), consulta la nostra guida sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/).
+>
 
-- Recupera le credenziali FTP per accedere al tuo hosting Web.
+**Questa guida ti mostra come installare manualmente il tuo CMS Drupal**
+  
+## Prerequisiti
 
-- Assicurati di avere a disposizione le credenziali per accedere al tuo database SQL.
-Per recuperare le tue credenziali SQL, consulta questa guida:[]({legacy}1909)
+- Disporre di un'offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/) che contiene almeno un database.
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+  
+## Procedura
 
+### Step 1 - preparare l'installazione <a name="step1"></a>
 
+Per installare il CMS **Drupal** sulla tua offerta di [hosting web](https://www.ovhcloud.com/it/web-hosting/), sono necessari alcuni preparativi.
 
-## Parte 2: recupero dei file sorgente
+Segui **gli step** descritti nel nostro tutorial sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/) prima di proseguire allo Step 2.
 
-- Accedi al sito di [Drupal](http://www.drupal.it/).
+### Step 2 - finalizzare l'installazione manuale <a name="step2"></a>
 
+> [!success]
+>
+> Prima di continuare l'installazione, svuota la cache del tuo browser per evitare errori.
+>
 
+#### 2.1 - Accedi al tuo sito Drupal attraverso il tuo browser
 
-![drupal](images/3234.png){.thumbnail}
-In genere, il link disponibile ti permette di scaricare l'ultima versione stabile del CMS.
-Nel nostro esempio, la versione utilizzata è la 7.41.
-Il file scaricato generalmente è compresso (.zip). Per aprirlo e installarlo è necessario decomprimerlo.
+Inserisci il dominio nella barra di ricerca del browser
 
+Se i file sorgente di Drupal sono stati inseriti correttamente nella cartella root, la pagina di selezione della lingua per Drupal appare:
 
-## Parte 3: configurazione dei file sull'hosting via FTP
+![Drupal Installstep 1](images/Drupal-install-language-1.png){.thumbnail}
 
-- Decomprimi la cartella:
+Seleziona la lingua del sito e clicca su `Save and Continue`{.action}.
 
+#### 2.2 - Scegli il tipo di installazione
 
-Apri la cartella in cui hai scaricato il file compresso.
+Drupal propone diversi livelli di installazione:
 
-Clicca con il tasto destro, seleziona Estrai tutto... o Estrai qui e indica la cartella di destinazione dei tuoi file.
+- una versione standard (consigliata), 
+- una versione minima
+- una versione di presentazione 
 
-Se hai bisogno di aiuto, segui i numerosi tutorial online e scarica uno dei tanti programmi per decomprimere file .zip disponibili su Internet.
+![Drupal Installstep 2](images/Drupal-install-profil-2.png){.thumbnail}
 
-La cartella di destinazione si chiamerà Drupal-xxx (xxx spesso è sostituito dal numero della versione).
+Ti consigliamo di installare questi strumenti **Standard**. Clicca su `Save and Continue`{.action}.
 
-![drupal](images/3233.png){.thumbnail}
+#### 2.3 - Associa il tuo Drupal al tuo database
 
-- Accedi al tuo hosting Web via FTP
+Inserisci le informazioni richieste relative al database:
 
+![Drupal Installstep 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-Accedi al tuo hosting e salva i file di Drupal.
+Recupera le credenziali del tuo database (se necessario, consulta **lo Step 1.4** della guida sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/)).
 
-Se hai bisogno di aiuto per accedere in FTP alla tua soluzione di hosting condiviso, consulta la guida []({legacy}1374)
+- *Database type*: scegli tra le opzioni proposte il tipo del tuo database.
 
-- Trasferisci i tuoi file via FTP
+- *Database name*: questo nome è stato definito durante la creazione del database nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
+- *Database username*: è identico al nome del database se utilizzi un database incluso con il tuo hosting Web. Per i database creati su un servizio Web Cloud Databases, consulta le informazioni indicate nello **Step 1.4** del tutorial sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/).
 
-Per salvare i tuoi file sull'FTP, segui questi step.
+- *Database password*: l'hai definito tu stesso durante la creazione del tuo database. È possibile che tu l'abbia modificato nel frattempo.
 
-## Step 1
-Apri FileZilla.
+Clicca su `Advanced Options`{.action} per scoprire il resto del menu.
 
-Nella sezione Sito locale, che contiene l'elenco dei file presenti sul tuo pc, apri la cartella decompressa Drupal-xxx in cui sono presenti i file del tuo CMS.
-Nella sezione Sito remoto, che corrisponde in questo caso al tuo hosting condiviso OVHcloud, apri la cartella www in cui dovrai salvare tutti i file del CMS.
-Se questa cartella non esiste, puoi crearla.
-Per poter effettuare l'installazione dal tuo dominio, i tuoi file devono necessariamente essere salvati nella cartella "www".
+- *Host*: inserisci il nome del server del database presente nell'email di installazione o nello Spazio Cliente OVHcloud. 
 
-## Step 2
-Una volta che hai aperto le cartelle:
+> [!primary]
+> 
+> - Il nome del server di un database incluso con la tua offerta di hosting Web ha questa forma: `NameOfYourDatabase.mysql.db` 
+>
+> - Il nome del server di un database Web Cloud Database inizia con il tuo identificativo cliente OVHcloud e viene mostrato come segue: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa0000"** corrisponde al tuo identificativo OVHcloud senza il **"-ovh"** e i **"X"** sono sostituiti dal resto del riferimento del tuo servizio Web Cloud Databases.
+>
 
-Nella sezione Sito locale trovi i file necessari all'installazione di Drupal.
+- *Port number*: se utilizzi un database incluso con il tuo hosting OVHcloud, lascia per default **3306**. Se utilizzi un servizio Web Cloud Databases, fai riferimento allo **step 1.4** del tutorial sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/) per recuperare il numero di porta corretto.
 
-Selezionali tutti premendo i tasti CTRL+A.
+- *Table name prefix*: se l'installazione avviene con un nuovo database, inserisci il "prefisso" che preferisci. Se utilizzi un database già utilizzato da un altro sito, fai riferimento allo **step 1.4** del tutorial sull'[installazione manuale di un CMS](https://docs.ovh.com/it/hosting/web_hosting_installa_manualmente_il_tuo_cms/) per non inserire un "prefisso" di tavolo già utilizzato nel tuo database.
 
-Trascina i tuoi file nella cartella "www" della sezione Sito remoto.
+Clicca su `Save and Continue`{.action}.
 
-![drupal](images/3199.png){.thumbnail}
-È molto probabile che la cartella "www" non sia vuota. Non è obbligatorio eliminare i file presenti al suo interno.
+Se tutto è stato realizzato correttamente, l'installazione di Drupal si avvia:
 
-## Step 3
-Attendi qualche minuto fino al completo trasferimento dei file sul server FTP remoto.
+![Drupal Installstep 4](images/Drupal-install-4.png){.thumbnail}
 
-Al termine dell'operazione, assicurati che tutti i file e le cartelle siano state spostate correttamente.
+#### 2.4 - Configura le informazioni del sito e l'accesso "Amministratore"
 
-![drupal](images/3200.png){.thumbnail}
+Una volta completato lo step precedente, visualizzi la pagina seguente:
 
+![Drupal Installstep 5-1](images/Drupal-install-configure-site-5-1.png){.thumbnail}
 
-## Step 1 - Installa Drupal
-Inserisci il tuo dominio nella barra degli indirizzi del tuo browser.
-Si apre questa pagina:
+Inserisci gli elementi richiesti:
 
-Seleziona Standard
-Install with commonly used features pre-configured. e clicca su Save and continue.
+- *Site name*: inserisci il nome del tuo futuro sito Drupal.
 
-![drupal](images/3219.png){.thumbnail}
+- *Site email address*: inserisci un indirizzo email valido che verrà utilizzato dal tuo sito Drupal.
 
+- *Username*: inserisci un nome utente per accedere al tuo spazio di amministrazione Drupal (Back Office).
 
-## Step 2 - Scegli una lingua
-La lingua di installazione predefinita è l'inglese. Per modificarla, clicca su Learn how to install Drupal in other languages, scegli il pacchetto della tua lingua e ricarica la pagina. A questo punto, seleziona "Italian (italiano)" e clicca su Save and continue.
+- *Password* e *Confirm password*: definisci la password associata al tuo nome utente per accedere al tuo *Back Office* Drupal.
 
-![drupal](images/3218.png){.thumbnail}
+Prosegui nella lettura di questa guida in basso:
 
+![Drupal Installstep 5-1](images/Drupal-install-configure-site-5-2.png){.thumbnail}
 
-## Step 3 - Imposta il database
-Recupera le credenziali del tuo database (se hai bisogno di aiuto, consulta la guida[]({legacy}1374)).
+- *Email address*: inserisci il tuo indirizzo email. Idealmente inserisci lo stesso indirizzo indicato sopra nel form *Indirizzo email del sito*.
 
-Inserisci le informazioni del tuo database:
+- *Default country*: scegli il paese in cui il tuo sito sarà più visitato.
 
-Seleziona MySQL, MariaDB o equivalente.
+- *Default time zone*: seleziona il fuso orario di default per il tuo sito Web.
 
+Clicca su `Save and Continue`{.action}.
 
-- Nome database: il nome scelto al momento della sua creazione nello Spazio Cliente OVHcloud.
+Se tutto è andato a buon fine, visualizzi la pagina seguente:
 
-- Nome utente database: uguale al nome del database.
+![Drupal Installstep 6](images/Drupal-install-ending-6.png){.thumbnail}
 
-- Password database: se non l'hai modificata, la password che hai ricevuto per email durante al momento della creazione del tuo database.
+> [!success]
+>
+> L'installazione di Drupal è terminata, puoi avviare la creazione del contenuto del tuo sito Drupal!
+>
+  
+## Per saperne di più <a name="go-further"></a>
 
-- Clicca poi su OPZIONI AVANZATE".
-
-
-
-![drupal](images/3202.png){.thumbnail}
-
-- Host database: il nome del server del tuo database, indicato nell'email di installazione o nel tuo Spazio Cliente OVHcloud. Generalmente finisce per .mysql.db.
-
-- Porta database: lascia vuoto questo campo.
-
-- Prefisso tabella: utile per realizzare più installazioni di Drupal o altri CMS utilizzando lo stesso database. In questo caso, è necessario inserire un prefisso diverso per ognuna delle installazioni. Nel dubbio, lascia il campo vuoto.
-
-
-
-![drupal](images/3203.png){.thumbnail}
-Importante: le credenziali del database non vengono inviate automaticamente durante l'installazione dell'hosting. Per riceverle, attiva il database nel tuo Spazio Cliente OVHcloud.
-Clicca su Salva e continua per confermare le informazioni di accesso al tuo database.
-
-
-## Step 4 - Progressione dell'installazione
-Se hai inserito correttamente le informazioni del tuo database, l'installazione si avvia.
-Altrimenti, ripeti l'operazione.
-
-
-- Attendi il completamento dell'installazione.
-
-
-
-![drupal](images/3190.png){.thumbnail}
-
-
-## Step 5 - Configura sito
-Inserisci le informazioni del tuo CMS Drupal.
-
-- Nome del sito: il nome del tuo dominio.
-
-- Indirizzo e-mail del sito: l'indirizzo che utilizzerà il tuo sito per inviare i messaggi agli iscritti.
-
-- Nome utente: il nome dell'account amministratore del tuo sito (nel nostro esempio, admin).
-
-- Indirizzo e-mail: l'indirizzo che sarà associato al tuo account amministratore.
-
-- Password: la password del tuo account amministratore.
-
-- Conferma la password: inserisci di nuovo la tua password.
-
-
-
-![drupal](images/3206.png){.thumbnail}
-
-- Paese predefinito: scegli il Paese e la lingua del tuo sito.
-- Fuso orario predefinito: inserisci il fuso orario del tuo sito.
-
-- Seleziona le opzioni Controlla automaticamente gli aggiornamenti disponibili e Ricevi le notifiche per e-mail.
-
-- Clicca su Salva e continua.
-
-
-
-![drupal](images/3207.png){.thumbnail}
-
-
-## Step 6 - Finalizzazione
-Il tuo CMS Drupal è installato!
-Clicca su Visita il nuovo sito.
-
-![drupal](images/3208.png){.thumbnail}
-Costruisci il tuo sito con il tuo CMS Drupal!
-
-![drupal](images/3209.png){.thumbnail}
-
-
-## Supporto Drupal
-Se hai bisogno di aiuto per utilizzare il tuo CMS, ti consigliamo di consultare i forum dedicati alla soluzione e la pagina del [supporto ](https://www.drupal.org/support).
-Il supporto OVHcloud non risponde alle domande relative alla configurazione del tuo CMS.
-Se hai bisogno di aiuto, consulta la guida []({legacy}2053) disponibile online.
-
-
-## Errori comuni
-
-- Errore "OVHcloud - Sito in costruzione"
-
-
-Hai configurato i tuoi file sul tuo server FTP, ma continui a visualizzare la pagina "Sito in construzione" di OVHcloud.
-
-Quando installi il tuo hosting, OVHcloud realizza una pagina di attesa per permetterti di caricare i file del tuo sito.
-
-Se salvi i file nella cartella www ma non elimini il contenuto inserito da OVHcloud, potrebbe verificarsi questo problema.
-
-Per risolverlo, elimina o rinomina il file "index.html" che OVHcloud ha salvato sul tuo hosting.
-
-Se rinomini semplicemente il file, puoi riattivarlo in qualsiasi momento per utilizzarlo come pagina di attesa.
-
-Altre informazioni utili: per essere presi in carico, i file del tuo sito devono trovarsi nella cartella "www".
-
-![drupal](images/3217.png){.thumbnail}
-
-- Errore con la versione di PHP
-
-
-È un errore che riguarda la versione PHP del tuo server.
-
-La causa è semplice: l'ultima versione di PHP non è stata attivata.
-
-Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud]({legacy}1207)
-
+[Sito ufficiale Drupal](https://www.drupal.org/){.external}
+ 
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+ 
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+ 
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
