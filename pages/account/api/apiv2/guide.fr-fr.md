@@ -14,9 +14,9 @@ Les API disponibles sur [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.exte
 
 Historiquement, les API d'OVHcloud sont disponibles sous la branche **/1.0** correspondant à la première version de l'API que nous avons publié. 
 
-Une nouvelle branche des API OVHcloud est disponible sous le préfixe **/v2** sur [https://eu.api.ovh.com/v2](https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2){.external}. 
+Une nouvelle branche des API OVHcloud est disponible sous le préfixe **/v2** sur [https://eu.api.ovh.com/v2](https://api.ovh.com/console-preview/?branch=v2){.external}. 
 
-Cette nouvelle branche regroupera des nouvelles routes d'API, retravaillée sous un nouveau format, et deviendra la branche d'API principale pour les nouveaux développements de fonctionnalités de produits OVHcloud. La branche **/1.0** continuera d'exister en parallèle de la branche **/v2**, mais ne contiendra pas la même fonctionnalité. En tant que client, vous pourrez consommer des API de la branche **/1.0** et **/v2** simultannément dans vos programmes, tout en conservant la même authentification, et les mêmes outils pour appeler l'API. Afin de standardiser le nommage de nos branches d'API, la branche **/1.0** est également disponible à travers l'alias **/v1**.
+Cette nouvelle branche regroupera des nouvelles routes d'API, retravaillées sous un nouveau format, et deviendra la branche d'API principale pour les nouveaux développements de fonctionnalités de produits OVHcloud. La branche **/1.0** continuera d'exister en parallèle de la branche **/v2**, mais ne contiendra pas la même fonctionnalité. En tant que client, vous pourrez consommer des API de la branche **/1.0** et **/v2** simultanément dans vos programmes, tout en conservant la même authentification, et les mêmes outils pour appeler l'API. Afin de standardiser le nommage de nos branches d'API, la branche **/1.0** est également disponible à travers l'alias **/v1**.
 
 La branche **/v2** introduit des nouveaux principes d'exposition et de consommation (qui diffèrent de la branche **/v1**), et ce guide a pour vocation de vous les présenter.
 
@@ -25,7 +25,7 @@ La branche **/v2** introduit des nouveaux principes d'exposition et de consommat
 ### Gestion des versions
 
 La branche */v2* de l'API utilise un système de versionnement pour la gestion de ses spécifications: c'est à dire que chaque modification dans les routes d'API (paramètres d'entrées, retour attendus, ...) feront l'objet d'une nouvelle version.
-Ces versions (qui sont différentes de la version contenue dans le nom de branche de l'API) contiendront deux numéros qui s'incrémentent: la version majeure et la version mineure. Cela permet de distinguer les changements mineurs des changements majeurs/cassants dans les schémas de l'API: les changements mineurs (non-cassants) incrémente la version mineure, tandis que les changements cassants incrémentent la version majeure.
+Ces versions (qui sont différentes de la version contenue dans le nom de branche de l'API) contiendront deux numéros qui s'incrémentent: la version majeure et la version mineure. Cela permet de distinguer les changements mineurs des changements majeurs/cassants dans les schémas de l'API: les changements mineurs (non-cassants) incrémentent la version mineure, tandis que les changements cassants incrémentent la version majeure.
 
 Un résumé des changements (*CHANGELOG*) accompagne la publication de chaque nouvelle version afin d'avoir une vue détaillée des modifications apportées.
 
