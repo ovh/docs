@@ -21,31 +21,31 @@ Aquí encontrará todos los elementos necesarios para instalar manualmente el CM
 >
 La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 > 
-> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/) o [el editor del CMS Joomla!](https://www.joomla.org/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
+> Ponemos a su disposición este tutorial para ayudarle lo mejor posible en tareas habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) o [el editor del CMS Joomla!](https://www.joomla.org/){.external}. Nosotros no podremos asistirle. Más información en la sección ["Más información"](#go-further) de este tutorial.
 >
 
 > [!success]
 >
-> Para instalar Joomla! **automáticamente** desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), consulte nuestra documentación sobre la [instalación de un módulo en un clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+> Para instalar Joomla! **automáticamente** desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), consulte nuestra documentación sobre la [instalación de un módulo en un clic](https://docs.ovh.com/us/es/hosting/modulos-en-un-clic/).
 >
-> Para **instalar otro CMS** (WordPress, Drupal, PrestaShop), consulte nuestra documentación sobre la instalación manual de un CMS (https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+> Para **instalar otro CMS** (WordPress, Drupal, PrestaShop), consulte nuestra documentación sobre la instalación manual de un CMS (https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/).
 >
 
 **Descubra cómo instalar manualmente su CMS Joomla!**
   
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) que contenga al menos una base de datos.
-- Disponer de un [dominio](https://www.ovhcloud.com/fr/domains/)
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) que contenga al menos una base de datos.
+- Disponer de un [dominio](https://www.ovhcloud.com/es/domains/)
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
   
 ## Procedimiento
 
 ### Etapa 1 - preparar la instalación <a name="step1"></a>
 
-Para instalar el CMS **Joomla!** en su [plan de hosting](https://www.ovhcloud.com/fr/web-hosting/), es necesario realizar algunos preparativos.
+Para instalar el CMS **Joomla!** en su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/), es necesario realizar algunos preparativos.
 
-Siga el **conjunto de etapas** descritos en nuestro tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) antes de continuar en el siguiente etapa 2.
+Siga el **conjunto de etapas** descritos en nuestro tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/) antes de continuar en el siguiente etapa 2.
 
 ### Etapa 2 - Finalizar la instalación manual <a name="step2"></a>
 
@@ -87,7 +87,7 @@ Introduzca la información solicitada para la base de datos:
 
 ![Joomla instalando step 3](images/Joomla-install-db-connect-3.png){.thumbnail}
 
-Para completar los siguientes campos, consulte la información indicada en el **etapa 1.4** del tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/):
+Para completar los siguientes campos, consulte la información indicada en el **etapa 1.4** del tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/):
 
 - *Select the database type*: seleccione el tipo de la base de datos entre los tipos disponibles para Joomla. Si utiliza una base de datos en alojamiento compartido de OVHcloud, puede dejar por defecto el valor **MySQLi**.
 
@@ -101,13 +101,13 @@ Para completar los siguientes campos, consulte la información indicada en el **
 >
 
 -*Either a username you created or a username provided by your host* : es idéntico al nombre de la base de datos si utiliza una base de datos incluida con su alojamiento web.
-Para las bases de datos creadas en una Web Cloud Databases, consulte la información indicada en **el etapa 1.4** de la guía sobre la [instalación manual de un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/).
+Para las bases de datos creadas en una Web Cloud Databases, consulte la información indicada en **el etapa 1.4** de la guía sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/).
 
 -*Either a password you created or a password provided by your host* : se ha establecido usted mismo al crear la base de datos. También es posible que la haya modificado. Por favor, compruebe que la haya modificado.
 
--*Enter the database name*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Es idéntico al nombre de usuario de la base de datos si utiliza una base de datos incluida con su alojamiento web.
+-*Enter the database name*: este nombre se ha establecido al crear la base de datos en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Es idéntico al nombre de usuario de la base de datos si utiliza una base de datos incluida con su alojamiento web.
 
--*Enter a table prefix or use the randomly generated one*: si la instalación se realiza con una nueva base de datos, introduzca el prefijo que prefiera. Si utiliza una base de datos ya utilizada en otro sitio web, puede consultar el **etapa 1.4** de la guía sobre la [instalación manual de un CMS](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/) para evitar que se introduzca un "prefijo" de tabla que ya utiliza su base de datos.
+-*Enter a table prefix or use the randomly generated one*: si la instalación se realiza con una nueva base de datos, introduzca el prefijo que prefiera. Si utiliza una base de datos ya utilizada en otro sitio web, puede consultar el **etapa 1.4** de la guía sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/) para evitar que se introduzca un "prefijo" de tabla que ya utiliza su base de datos.
 
 - **Connection Encryption**: deje el valor **Default**.
 
