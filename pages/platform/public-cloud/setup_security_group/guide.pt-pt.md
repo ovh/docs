@@ -21,7 +21,7 @@ Por razões de segurança, é possível configurar e utilizar regras de filtrage
 
 ## Requisitos
 
-- Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/).
+- Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/)
 - [Ter acesso à interface Horizon](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/)
 
 ## Instruções

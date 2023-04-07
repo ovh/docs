@@ -24,7 +24,7 @@ O acesso ao Horizon e às API OpenStack efetua-se através de combinações iden
 ## Requisitos
 
 - Um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 > [!primary]
 >

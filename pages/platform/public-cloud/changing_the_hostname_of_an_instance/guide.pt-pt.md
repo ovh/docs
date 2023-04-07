@@ -7,6 +7,10 @@ section: Tutoriais
 updated: 2018-09-18
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 31/08/2018**
 
 ## Sumário
@@ -17,7 +21,7 @@ O módulo cloud-init permite configurar a [instância Public Cloud](https://www.
 
 > [!warning]
 >
-> A utilização e a gestão dos serviços OVH são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
+> A utilização e a gestão dos serviços OVHcloud são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
 > Este manual explica como implementar algumas de medidas para tornar o seu sistema mais seguro. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
 >
@@ -79,6 +83,6 @@ sudo cat /etc/hosts
 127.0.0.1 localhost
 ```
 
-## Quer saber mais? 
+## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH.](https://community.ovh.com/en/)
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
