@@ -75,6 +75,43 @@ Also some extensions may require disconnecting the client connection and reconne
 | `uuid-ossp`                    | <https://www.postgresql.org/docs/current/uuid-ossp.html>               |                                                                                                                                                 |
 | `wal2json`                     | <https://github.com/eulerto/wal2json>                                  | PostgreSQL 10 and newer                                                                                                                         |
 
+## Install an extension
+
+You can list available extensions
+
+```sql
+defaultdb=> SELECT * FROM pg_available_extensions;                                                                                                                                        
+             name             | default_version | installed_version |                                                      comment
+------------------------------+-----------------+-------------------+--------------------------------------------------------------------------------------------------------------------
+ address_standardizer         | 3.2.4           |                   | Used to parse an address into constituent elements. Generally used to support geocoding address normalization step.
+ address_standardizer_data_us | 3.2.4           |                   | Address Standardizer US dataset example
+ aiven_extras                 | 1.1.8           |                   | aiven_extras
+ aiven_gatekeeper             | 1.0.0           |                   | Aiven standard security library
+ [...]
+(71 rows)
+```
+
+Install an available extension:
+
+```sql
+defaultdb=> CREATE EXTENSION IF NOT EXISTS extension_name
+CREATE EXTENSION
+```
+
+Check installed extensions:
+
+```sql
+defaultdb=> \dx
+                     List of installed extensions
+     Name     | Version |    Schema    |         Description          
+--------------+---------+--------------+------------------------------
+ aiven_extras | 1.1.8   | aiven_extras | aiven_extras
+ pg_cron      | 1.4-1   | public       | Job scheduler for PostgreSQL
+ plpgsql      | 1.0     | pg_catalog   | PL/pgSQL procedural language
+
+ -- In this example, aiven_extras and pg_cron are installed. plpgsql is installed by default.
+```
+
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
