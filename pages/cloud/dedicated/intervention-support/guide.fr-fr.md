@@ -10,7 +10,7 @@ section: 'Diagnostic et mode Rescue'
 
 ## Objectif
 
-Cette documentation a pour objectif de vous accompagner dès lors qu'une intervention de maintenance a été effectuée par les équipes OVhcloud.
+Cette documentation a pour objectif de vous accompagner dès lors qu'une intervention de maintenance a été effectuée par les équipes OVHcloud.
 
 Nos interventions de maintenance se limitent uniquement à la partie matériel, et nous vous proposons si besoin ce support relatif à vos références en lien avec vos systèmes installés : Systèmes d'exploitation, Hyperviseur, etc...
 
