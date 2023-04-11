@@ -28,6 +28,7 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 |PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
 |PostgreSQL 13|À définir|À définir|À définir|
 |PostgreSQL 14|À définir|À définir|À définir|
+|PostgreSQL 15|À définir|À définir|À définir|
 |Redis 6.0|À définir|À définir|À définir|
 |Redis 7.0|À définir|À définir|À définir|
 
