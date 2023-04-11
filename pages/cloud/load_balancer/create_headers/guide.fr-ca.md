@@ -100,7 +100,7 @@ La suite de ce guide vous propose quelques bonnes pratiques de configuration pou
 1. # Trust X-Forwarded-For headers from the OVHcloud Load Balancer
 2. # See https://www.ovh.com/manager/sunrise/iplb/index.html#/iplb for an up to date list
 3. RemoteIPHeader X-Forwarded-For
-4. RemoteIPInternalProxy 10.108.0.0/16
+4. RemoteIPInternalProxy 10.108.0.0/14
 ```
 
 - Remplacez les variables `%h` par `%a` dans les directives `LogFormat` de la configuration Apache
