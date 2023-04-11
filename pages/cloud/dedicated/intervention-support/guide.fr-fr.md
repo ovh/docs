@@ -36,7 +36,7 @@ Divers
 
 
 > [!warning]
-> Il s'agit d'un recueil élaboré par nos équipes suite à de multiples retours venant de différents cas rencontrés.
+> Il s'agit d'un recueil élaboré par nos équipes suite à de multiples retours sur expérience venant de différents cas rencontrés.
 >
 
 
@@ -47,13 +47,13 @@ Divers
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue
+- boot en mode rescue.
 - monter la partition `/`
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
 ```
 
-Si le fichier `70-persistent-net.rules` n'existe pas (cf repérer le nom de vos interfaces réseaux),  
+Si le fichier `70-persistent-net.rules` n'existe pas (reportez vous au chapitre : repérer le nom de vos interfaces réseaux),  
 Vérifier dans l'arborescence `/etc/systemd/network/` les fichiers suivants :  
 - `50-default.network`  
 - `50-public-interface.link`  
@@ -137,7 +137,7 @@ Dans certain cas, il faut propager la nouvelle adresse MAC dans les fichiers sui
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue
+- boot en mode rescue.
 - monter la partition `/`
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
@@ -158,7 +158,7 @@ root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconf
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue
+- boot en mode rescue.
 ```bash 
 modprobe zfs
 root@rescue:~# zpool import -f zones (zpool import to list the pools)
@@ -184,7 +184,7 @@ root@rescue:~# zfs set mountpoint="/usbkey" zones/usbkey
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue-bsd
+- boot en mode rescue-bsd.
 - éxécutez la commande `ifconfig` depuis l'invite du rescue-bsd.
 
 De cette manière, nous pouvons repérer l'appellation de votre interface réseau :
@@ -332,8 +332,8 @@ root@rescue-bsd:~ #
 
 ### Gentoo
 
-Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modifier les nouvelles adresses MAC à travers l'OS.
-- boot en mode rescue, et repérez la partition `/` :
+Suite au remplacement de la carte mère, le tooling rescue n'arrive pas à modifier les nouvelles adresses MAC à travers l'OS.
+- boot en mode rescue, puis repérez la partition `/` :
 ```bash
 root@rescue:~# blkid
 /dev/sda1: UUID="15D6-5706" TYPE="vfat" PARTLABEL="grub" PARTUUID="bf514348-6259-41a4-a73f-ba0c38d45de5"
@@ -444,7 +444,7 @@ Nous rencontrons une erreur lors du démarrage du système causé par l'ancienne
 ![proxmox](images/proxmox_edited.jpg){.thumbnail}
 
 
-- boot en mode rescue
+- boot en mode rescue.
 ```bash
 root@rescue:~# cat /mnt/etc/network/interfaces
 # This file describes the network interfaces available on your system
@@ -573,7 +573,7 @@ Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modif
 root@rescue:~# mount /dev/sdaX /mnt/
 ```
 
-- sauvegardez le fichier `state.tgz
+- sauvegardez le fichier `state.tgz` 
 ```bash
 root@rescue:~# ls /mnt/state.tgz
 root@rescue:~# cp /mnt/state.tgz /mnt/state.tgz.`date +%s`
@@ -615,7 +615,7 @@ root@rescue:/home/ovh/esxi# vim etc/vmware/esx.conf
 /net/pnic/child[0001]/name = "vmnic1"
 ```
 
-> [!wariing]
+> [!warning]
 > S'il y a une interface vRACK, ne pas oublier de changer l'adresse MAC également.
 >
 
@@ -650,7 +650,7 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 ![win_device_manager](images/win_device_manager_edited.png){.thumbnail}
 
 - ouvrir `Network adapters` et selectionner l'adaptateur correspondant à `eth0`
-- clic-droit > Properties > Advanced
+- clic-droit sur `Properties`{.action} puis sur `Advanced`{.action}.
 - repérez `Locally Administered Adress`
 - renseignez la nouvelle valeur de l'adresse MAC (chiffres uniquements, sans espaces).  
 ![win_advanced](images/win_advanced_edited.png){.thumbnail}
@@ -663,11 +663,11 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 - chargez la base de registre local à travers celle disponible dans `WinPE` puis cliquez sur `HKEY_LOCAL_MACHINE` :  
 ![win_regedit_1](images/win_regedit_1_edited.png){.thumbnail}
 
-- ensuite cliquez sur `Load Hive...`  
+- ensuite cliquez sur `Load Hive...`{.action}  
 ![win_regedit_2](images/win_regedit_2_edited.png){.thumbnail}
 
 > [!primary]
-> Par défaut, vous serez dans l'arboresence du WinPE
+> Par défaut, vous serez dans l'arboresence du WinPE.
 > N'oubliez pas de naviguer sur le lecteur C:\
 >
 
