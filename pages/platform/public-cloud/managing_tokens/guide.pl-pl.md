@@ -189,4 +189,4 @@ Istnieje wiele bibliotek w różnych językach. Aby uzyskać więcej informacji,
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

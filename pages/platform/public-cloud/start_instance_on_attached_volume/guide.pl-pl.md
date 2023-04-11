@@ -1,5 +1,5 @@
 ---
-title: Uruchomienie instancji na przypisanym woluminie
+title: Uruchomienie instancji na przypisanym woluminie (EN)
 excerpt: Uruchomienie instancji na przypisanym woluminie
 slug: uruchomienie_instancji_na_przypisanym_woluminie
 routes:

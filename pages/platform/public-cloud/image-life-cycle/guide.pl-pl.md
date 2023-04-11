@@ -46,4 +46,4 @@ Ta strona zawiera dokumentację roadmapu *End of Life* lub EOL obrazów OVHcloud
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
