@@ -113,5 +113,5 @@ With RealIP module.
 
 ```nginx
 1. real_ip_header X-Forwarded-For;
-2. set_real_ip_from 10.108.0.0/16;
+2. set_real_ip_from 10.108.0.0/14;
 ```
