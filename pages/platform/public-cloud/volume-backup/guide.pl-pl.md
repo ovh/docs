@@ -96,4 +96,4 @@ Więcej informacji na ten temat znajdziesz w [naszym przewodniku dotyczącym two
 
 [Zwiększ rozmiar dodatkowego dysku](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
