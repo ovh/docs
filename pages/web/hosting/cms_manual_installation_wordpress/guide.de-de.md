@@ -69,7 +69,7 @@ WordPress fragt nun nach den Login-Daten für Ihre Datenbank.
 
 ![hosting](images/WPstart.png){.thumbnail}
 
-Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/)). Klicken Sie auf `Let's go!`{.action}, um fortzufahren.
+Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/) verwenden). Klicken Sie auf `Let's go!`{.action}, um fortzufahren.
 
 Folgende Seite wird angezeigt:
 
