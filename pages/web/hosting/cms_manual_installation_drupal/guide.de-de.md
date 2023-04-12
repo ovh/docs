@@ -1,236 +1,162 @@
 ---
-title: 'Manuelle Installation von Drupal'
-excerpt: Wie funktioniert die manuelle Installation von Drupal?
+title: "Tutorial - Manuelle Installation von Drupal"
+excerpt: "Erfahren Sie hier, wie Sie Ihr Drupal CMS eigenständig installieren"
 slug: cms_manuelle_installation_von_drupal
 section: CMS
-order: 07
-updated: 2022-12-01
+order: 06
+updated: 2023-04-03
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Teil 1: Installation vorbereiten 
-Benötigte Tools
 
-Bevor Sie das CMS Drupal auf Ihrem Webhosting installieren, empfehlen wir Ihnen den Download einer FTP-Software, etwa FileZilla (kostenlos).
+**Letzte Aktualisierung am 03.04.2023**
 
-## Für die Installation benötigte Daten
-Sie sollten Ihre Kundenkennung (nic-handle) und Ihr Passwort bereithalten, um sich nötigenfalls in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen zu können.
+## Ziel
 
+Dieses Tutorial hilft Ihnen Schritt für Schritt bei der manuellen Installation des Content Management System (CMS) Drupal.
 
-- Halten Sie auch Ihr FTP-Login und das Passwort bereit, mit denen Sie sich in Ihr Webhosting einloggen können.
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Dieses Tutorial soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) oder den [Herausgeber von Drupal](https://www.drupal.org/support){.external} zu kontaktieren. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
+>
 
-- Außerdem brauchen Sie auch die Kennung und das Passwort für Ihre SQL-Datenbank.
-Die Hilfe zu Login/Passwort für SQL finden Sie hier:[]({legacy}1909)
+> [!success]
+>
+> Um Drupal **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/).
+>
+> Um ein **anderes CMS manuell** zu installieren (Joomla!, WordPress, PrestaShop), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
+>
 
 
+**Dieses Tutorial erklärt, wie Sie Ihr Drupal CMS manuell installieren.**
+ 
+## Voraussetzungen
 
-## Teil 2: Download des Programmpakets
+- Sie verfügen über ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/), das mindestens eine Datenbank enthält.
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+  
+## In der praktischen Anwendung
 
-- Gehen Sie auf die Seite von [Drupal](http://www.drupalcenter.de/).
+### Schritt 1: Installation vorbereiten <a name="step1"></a>
 
+Um das CMS **Drupal** auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu installieren sind einige Vorbereitungen erforderlich.
 
+Führen Sie zunächst **alle Schritte** in unserer Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/) aus, bevor Sie mit Schritt 2 fortfahren.
 
-![drupal](images/3234.png){.thumbnail}
-Hier steht die neueste stabile Version des Programms zum Download bereit.
-In unserem Beispiel handelt es sich um Version 7.41.
-In der Regel handelt es sich dabei um komprimierte (gezippte) Dateien, die Sie dekomprimieren (extrahieren) müssen. Im Internet finden Sie zahlreiche Hilfen zum Thema.
+### Schritt 2: Manuelle Installation abschließen <a name="step2"></a>
 
+> [!success]
+>
+> Bevor Sie mit der Installation fortfahren, leeren Sie den Cache Ihres Browsers, um Fehler zu vermeiden.
+>
 
-## Teil 3: Upload von Drupal auf das Webhosting per FTP
+#### 2.1 Drupal im Browser öffnen
 
-- Ordner dekomprimieren
+Geben Sie Ihren Domainnamen in die Suchleiste Ihres Webbrowsers ein.
 
+Wenn die Quelldateien korrekt im Wurzelverzeichnis platziert wurden, erscheint die Seite zur Auswahl der Sprache für Drupal:
 
-Öffnen Sie den Ordner, in dem Sie den Download gespeichert haben.
+![Drupal installation step 1](images/Drupal-install-language-1.png){.thumbnail}
 
-Machen Sie einen Rechtsklick auf den heruntergeladenen Ordner und wählen Sie "Alle extrahieren..." (oder Hier extrahieren).
+Wählen Sie die Sprache der Website aus und klicken Sie auf `Save and Continue`{.action}.
 
-Wählen Sie einen Zielordner aus, in den die Dateien extrahiert werden sollen.
+#### 2.2 Installationstyp auswählen
 
-Im Internet finden Sie zahlreiche Hilfen und Programme zur Dekomprimierung, die Ihnen im Falle von Problemen weiterhelfen.
+Drupal bietet mehrere Installationsebenen an:
 
-Der Zielordner wird "Drupal-xxx" heißen (anstatt xxx steht in der Regel die Versionsbezeichnung).
+- Standardversion (empfohlen)
+- Minimale Version
+- Präsentationsversion
 
-![drupal](images/3233.png){.thumbnail}
+![Drupal installation step 2](images/Drupal-install-profil-2.png){.thumbnail}
 
-- FTP-Verbindung zum Webhosting
+Wir empfehlen, die **Standard**-Installation durchzuführen. Klicken Sie dann auf `Save and Continue`{.action}.
 
+#### 2.3 Drupal mit Ihrer Datenbank verbinden
 
-Um die Drupal Ordner auf Ihrem Webhosting ablegen zu können, müssen Sie sich zunächst mit diesem verbinden.
+Geben Sie die angeforderten Informationen zur Datenbank ein:
 
-Eine Anleitung zur Herstellung einer FTP-Verbindung zu Ihrem Webhosting finden Sie hier:[]({legacy}1374)
+![Drupal installation step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-- Dateiübertragung per FTP
+Halten Sie die Zugangsdaten für Ihre Datenbank bereit. (Sie können bei Bedarf **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/) verwenden).
 
+- *Database type*: Wählen Sie aus den angebotenen Optionen den Typ Ihrer Datenbank aus.
 
-Übertragen Sie Ihre Dateien per FTP in nur drei Schritten:
+- *Database name*: Dieser Name wurde bei der Erstellung der Datenbank im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) definiert.
 
-## Schritt 1
-Öffnen Sie FileZilla.
+- *Database username*: Dieser ist identisch mit dem Datenbanknamen, wenn Sie eine im Webhosting inkludierte Datenbank verwenden. Für Datenbanken, die mit Web Cloud Databases erstellt wurden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
 
-Unter "Lokal" (linker Bereich) finden Sie alle Dateien auf Ihrem Rechner. Öffnen Sie hier den dekomprimierten Ordner "Drupal-xxx", in dem sich alle Dateien Ihres CMS befinden.
+- *Database password*: Es wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
-Unter "Server" (rechter Bereich) finden Sie die Dateien Ihres OVHcloud Webhostings. Öffnen Sie hier das "www" Verzeichnis. In dieses Verzeichnis müssen Sie alle Dateien des CMS ablegen.
-Falls dieses Verzeichnis noch nicht existiert, können Sie es jetzt erstellen.
-Die Dateien müssen in jedem Fall im "www" Verzeichnis abgelegt werden. Andernfalls kann die Installation von Ihrem Domainnamen aus nicht gestartet werden.
+Klicken Sie auf `Advanced Options`{.action}, um den Rest des Menüs zu finden.
 
-## Schritt 2
-Wenn diese Ordner geöffnet sind:
+- *Host*: Der Servername Ihrer Datenbank, ebenfalls in der Installationsmail enthalten und einsehbar in Ihrem OVHcloud Kundencenter.
 
-Unter "Lokal" (linker Bereich) finden Sie alle für die Installation des CMS Drupal notwendigen Dateien.
+> [!primary]
+> 
+> - Der Servername einer Datenbank, die in einem Webhosting inklusive ist, hat regulär folgendes Format: `DatenbankName.mysql.db`. 
+>
+> - Der Servername einer Web Cloud Databases Datenbank leitet sich von Ihrer OVHcloud Kundenkennung ab und hat folgendes Format: `aa00000-XXX.eu.clouddb.ovh.net` wobei **"aa00000"** für Ihre OVHcloud Kundenkennung (ohne **"-ovh"**) und **XXX** für die Referenz Ihrer Web Cloud Databases Instanz steht.
+>
 
-Mit Strg+A können Sie alle Dateien auswählen.
+- *Port number*: Wenn Sie eine Datenbank verwenden, die in einem Webhosting inklusive ist, belassen Sie den Port bei **3306**. Wenn Sie Web Cloud Databases verwenden, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), um die richtige Port-Nummer abzurufen.
 
-Verschieben Sie anschließend alle Dateien per Drag&Drop in das "www" Verzeichnis auf dem "Server" (rechter Bereich).
+- *Table name prefix*: Wenn die Installation mit einer neuen Datenbank erfolgt, geben Sie ein Präfix Ihrer Wahl ein. Wenn Sie eine Datenbank eingeben, die bereits von einer anderen Website verwendet wird, lesen Sie die Informationen in **Schritt 1.4** des Tutorials zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/), um kein in Ihrer Datenbank bereits verwendetes Tabellenpräfix einzugeben.
 
-![drupal](images/3199.png){.thumbnail}
-Höchstwahrscheinlich ist das "www" Verzeichnis nicht leer. Die darin enthaltenen Dateien müssen aber nicht unbedingt gelöscht werden. Auf diesen Punkt kommen wir später noch einmal zurück.
+Klicken Sie auf `Save and Continue`{.action}.
 
-## Schritt 3
-Die Dateien werden nun übertragen.
+Wenn alles korrekt eingegeben wurde, startet die Drupal-Installation:
 
-Warten Sie, bis alle Dateien auf den FTP-Server verschoben sind. Das kann einige Minuten dauern.
+![Drupal installation step 4](images/Drupal-install-4.png){.thumbnail}
 
-Wenn die Dateiübertragung abgeschlossen ist, überprüfen Sie, ob alle Dateien und Ordner korrekt verschoben wurden.
+#### 2.4 Die Informationen der Website und den Administrator-Zugang konfigurieren
 
-Damit ist der Upload der Drupal-Dateien auf Ihr Webhosting beendet.
+Sobald der vorherige Schritt abgeschlossen ist, wird folgende Seite angezeigt:
 
-![drupal](images/3200.png){.thumbnail}
+![Drupal installation step 5-1](images/Drupal-install-configure-site-5-1.png){.thumbnail}
 
+Geben Sie die angeforderten Informationen ein:
 
-## Schritt 1 - Installation von Drupal
-Öffnen Sie einen Browser und geben Sie den Namen Ihrer Domain ein.
+- *Site name*: Geben Sie den Namen Ihrer zukünftigen Drupal-Website ein.
 
-Wenn Sie auf Ihrer Webseite sind,
-wählen Sie "Standard
-Install with commonly used features pre-configured." und klicken Sie dann auf "Save and continue".
+- *Site email address*: Geben Sie eine gültige E-Mail-Adresse an, die von Ihrer Drupal-Seite verwendet wird.
 
-![drupal](images/3219.png){.thumbnail}
+- *Username*: Legen Sie die Administrator-Kennung fest, um sich mit Ihrem Drupal-Verwaltungsbereich (Backend) zu verbinden.
 
+- *Password* und *Confirm password*: Legen Sie ein Passwort für Ihre Kennung fest, um sich mit Ihrem Drupal-Verwaltungsbereich (Backend) zu verbinden.
 
-## Schritt 2 - Sprachwahl
-Wählen Sie die gewünschte Sprache für die Installation und klicken Sie auf "Save and continue".
+Gehen Sie dann zum Ende der Seite:
 
-![drupal](images/3218.png){.thumbnail}
+![Drupal installation step 5-1](images/Drupal-install-configure-site-5-2.png){.thumbnail}
 
+- *Email address*: Geben Sie Ihre E-Mail-Adresse ein. Nutzen Sie idealerweise die gleiche Adresse wie zuvor für *Site email address*.
 
-## Schritt 3 - Verbindung zur Datenbank
-Halten Sie Login und Passwort für Ihre Datenbank bereit (eine Hilfe zum Thema finden Sie hier: []({legacy}1374)).
+- *Default country*: Wählen Sie das Land, von dem aus Ihre Website am häufigsten aufgerufen wird.
 
-Machen Sie alle erforderliche Angaben zur Datenbank:
+- *Default time zone*: Wählen Sie die Standardzeitzone für Ihre Website.
 
-Wählen Sie "MySQL, MariaDB oder equivalent".
+Klicken Sie auf `Save and Continue`{.action}.
 
+Wenn alle Eingaben korrekt waren, erscheint folgende Seite:
 
-- Datenbankname: bei der Erstellung im Kundencenter ausgewählt.
+![Drupal installation step 6](images/Drupal-install-ending-6.png){.thumbnail}
 
-- Datenbankbenutzer: identisch mit dem Datenbanknamen.
+> [!success]
+>
+> Die Installation von Drupal ist abgeschlossen, Sie können nun mit der Erstellung des Inhalts Ihrer Drupal Website beginnen!
+>
 
-- Datenbankpasswort: wurde Ihnen nach der Erstellung Ihrer Datenbank per E-Mail zugeschickt. Falls Sie das Passwort seitdem geändert haben, denken Sie daran, dieses zu verwenden.
+## Weiterführende Informationen <a name="go-further"></a>
 
-- Klicken Sie dann auf "ERWEITERTE OPTIONEN".
-
-
-
-![drupal](images/3202.png){.thumbnail}
-
-- Datenbankhost: Geben Sie hier den Server an, auf dem Ihre Datenbank läuft. Sie finden die Angabe in der Installationsmail Ihrer Datenbank oder in Ihrem Kundencenter. Der Hostname endet meist auf ".mysql.db".
-
-- Datenbankport: Lassen Sie dieses Feld leer.
-
-- Tabellenpräfix: Wenn die Datenbank für mehrere Anwendungen genutzt wird, müssen Sie für jede Installation ein anderes Präfix angeben. Wenn Sie unsicher sind, lassen Sie dieses Feld leer.
-
-
-
-![drupal](images/3203.png){.thumbnail}
-Bitte beachten Sie: Login und Passwort für die Datenbank werden Ihnen nicht automatisch bei der Installation eines Hostings zugeschickt. Sie müssen zuerst die Datenbank in Ihrem Kundencenter aktivieren.
-Klicken Sie dann auf "Speichern und fortfahren", um die Verbindung zur Datenbank herzustellen.
-
-
-## Schritt 4 - Überprüfung und Abschluss der Installation
-Wenn alle Angaben zur Datenbank korrekt waren, wird die Installation nun gestartet. Andernfalls müssen Sie alle Daten erneut eingeben.
-
-
-- Nun müssen Sie nur noch abwarten, bis die Installation abgeschlossen ist.
-
-
-
-![drupal](images/3190.png){.thumbnail}
-
-
-## Schritt 5 - Konfiguration von Drupal
-Dann tragen Sie Daten für die Verwaltung Ihres Drupal ein.
-
-- Name der Website: Geben Sie hier Ihren Domainnamen an.
-
-- E-Mail-Adresse der Webseite: Geben Sie die E-Mail-Adresse an, über die Ihre Webseite automatische Nachrichten verschicken soll.
-
-- Benutzername: Geben Sie hier den Namen des Admin-Kontos Ihrer Webseite an. In unserem Beispiel ist das "admin".
-
-- E-Mail-Adresse: Geben Sie hier die E-Mail-Adresse für das Admin-Konto an.
-
-- Passwort: Geben Sie hier das Passwort für das Admin-Konto an.
-
-- Passwort bestätigen: Wiederholen Sie das Passwort.
-
-
-Scrollen Sie nach unten.
-
-![drupal](images/3206.png){.thumbnail}
-
-- Standardland: Wählen Sie Land/Sprache der Webseite.
-- Standard-Zeizone: Wählen Sie die Zeitzone der Webseite.
-
-- Automatisch auf Aktualisierungen überprüfen & E-Mail Benachrichtigung empfangen: Wir empfehlen Ihnen, diese Optionen zu aktivieren, um die Stabilität und Sicherheit Ihrer Seite zu verbessern.
-
-- Klicken Sie anschließend auf "Speichern und fortfahren"
-
-
-
-![drupal](images/3207.png){.thumbnail}
-
-
-## Schritt 6 - Fertigstellung
-Ihr CMS Drupal ist nun vollständig installiert.
-Klicken Sie auf "Besuchen Sie Ihre neue Website".
-
-![drupal](images/3208.png){.thumbnail}
-Jetzt müssen Sie Drupal nur noch einsetzen und Ihre Webseite ganz nach Ihren Wünschen gestalten.
-
-![drupal](images/3209.png){.thumbnail}
-
-
-## Drupal Support
-Wir empfehlen Ihnen, bei Problemen jeglicher Art das [Drupal Forum](http://www.drupalcenter.de/) zu besuchen.
-Der Kundendienst von OVHcloud ist leider nicht berechtigt, Anfragen bezüglich der Konfiguration Ihres Drupal zu bearbeiten.
-Unter folgendem Link finden Sie aber eine Nutzungsanleitung: []({legacy}2053).
-
-
-## Häufige Fehler
-
-- Fehler "OVHcloud - Seite wird erstellt"
-
-
-Sie haben alle Dateien auf den FTP-Server verschoben, aber trotzdem wird weiterhin angezeigt "Seite wird erstellt".
-
-Bei der Installation Ihres Hosting richtet OVHcloud eine vorläufige Seite ein, bis Sie Ihre Webseite selbst gestalten.
-
-Wenn Sie Ihre Dateien im "www" Verzeichnis ablegen, ohne zuvor die von OVHcloud hinterlegten Inhalte zu löschen, kann es zu diesem Fehler kommen.
-
-Um diesen Fehler zu beheben, müssen Sie die von OVHcloud auf Ihrem Hosting erstellte Datei "index.html" löschen oder umbenennen.
-
-Es kann sinnvoll sein, die Datei lediglich umzubennen. So können Sie sie später jederzeit erneut als vorläufige Seite verwenden.
-
-Noch ein Hinweis: Die Dateien Ihrer Webseite müssen immer im "www" Verzeichnis abgelegt werden. Andernfalls werden Sie nicht erfasst.
-
-![drupal](images/3217.png){.thumbnail}
-
-- Fehler bei der PHP-Version
-
-
-Hier handelt es sich um einen Fehler bei der PHP-Version Ihres Servers.
-
-Der Grund ist einfach: Die neueste Version von PHP ist nicht aktiviert.
-
-Wie Sie die PHP-Version auf Ihrem Webhosting ändern können, erfahren Sie hier:[Konfiguration von PHP für ein OVHcloud Webhosting 2014]({legacy}1207)
-
+[Offizielle Website Drupal](https://www.drupal.org/){.external}
+ 
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+ 
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+ 
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
