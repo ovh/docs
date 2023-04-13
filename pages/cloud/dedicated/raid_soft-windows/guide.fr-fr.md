@@ -37,7 +37,7 @@ La méthode à utiliser dépend du type de partition de vos disques. Suivez les 
 
 À l'invite de commande, ouvrez DiskPart :
 
-```powershell
+```
 C:\Windows\system32> diskpart
 ```
 
@@ -164,7 +164,7 @@ Il est préférable de ne pas redémarrer le serveur tant que le processus de re
 
 À l'invite de commande, ouvrez DiskPart :
 
-```cmd
+```
 C:\Windows\system32> diskpart
 ```
 
@@ -173,7 +173,7 @@ C:\Windows\system32> diskpart
 > DiskPart exécute les commandes sans émettre d'avertissements ou demander de confirmation. Toute modification effectuée dans DiskPart est irréversible. La saisie de commandes alors que le mauvais disque ou volume est sélectionné peut donc entraîner une perte immédiate de données et/ou empêcher le démarrage de votre système. Nous vous recommandons de procéder avec prudence et de vérifier chaque commande.
 >
 
-Affichez tous les disques et volumes :
+#### Liste de tous les disques et volumes
 
 ```console
 DISKPART> list disk
@@ -361,7 +361,7 @@ De retour à l'invite de commande, copiez les fichiers de démarrage de la parti
 
 Tapez les 3 commandes suivantes et exécutez-les chacune avec la touche `Entrer` :
 
-```cmd
+```
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:
