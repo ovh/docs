@@ -4,19 +4,19 @@ slug: postgresql/extensions
 excerpt: List of available PostgreSQL extensions
 section: PostgreSQL - Guides
 order: 020
-updated: 2021-12-22
+updated: 2023-04-11
 ---
 
-**Last updated December 22<sup>th</sup>, 2021**
+**Last updated April 11<sup>th</sup>, 2023**
 
 ## List of available extensions
 
-Public Cloud Databases for PostgreSQL come with a set of supported extenions.
+Public Cloud Databases for PostgreSQL come with a set of supported extensions.
 
-You cannot install unsupported ones, since it's  managed and industrialized services. Reach us if an extension is missing for your project, we may study his implementation.
+You cannot install unsupported ones, since they are managed and industrialized services. Contact us if an extension is missing for your project, we may consider the implementation.
 
-Please note that some of the extensions have dependencies and they need to be created in the proper order. 
-Also some extensions may require disconnecting the client connection and reconnecting before they are fully available.
+Please note that some of the extensions have dependencies and they need to be created in the proper order.
+Also some extensions may require disconnecting the client and reconnecting before they are fully available.
 
 | Extension Name                 | Link                                                                   | Notes                                                                                                                                           |
 | ------------------------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -73,9 +73,9 @@ Also some extensions may require disconnecting the client connection and reconne
 | `uuid-ossp`                    | <https://www.postgresql.org/docs/current/uuid-ossp.html>               |                                                                                                                                                 |
 | `wal2json`                     | <https://github.com/eulerto/wal2json>                                  | PostgreSQL 10 and newer                                                                                                                         |
 
-## Install an extension
+## Installing an extension
 
-You can list available extensions
+You can list available extensions:
 
 ```sql
 defaultdb=> SELECT * FROM pg_available_extensions;                                                                                                                                        
@@ -89,7 +89,7 @@ defaultdb=> SELECT * FROM pg_available_extensions;
 (71 rows)
 ```
 
-Install an available extension
+Install an available extension:
 
 ```sql
 defaultdb=> CREATE EXTENSION IF NOT EXISTS extension_name
