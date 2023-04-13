@@ -11,7 +11,7 @@ updated: 2023-04-06
 
 ## Objective
 
-You can use **single sign-on** (SSO) to connect to your OVHcloud account. To enable these connections, your account and your Active Directory Federation Services (AD FS) have to be configured using Security Assertion Markup Language (SAML) authentications.
+You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To enable these connections, your account and your Active Directory Federation Services (AD FS) have to be using SAML (*Security Assertion Markup Language*) authentications.
 
 **This guide explains how to link your OVHcloud account to an external Active Directory.**
 

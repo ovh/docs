@@ -11,7 +11,7 @@ updated: 2023-03-30
 
 ## Objective
 
-You can use unique **single sign-on** (SSO) to sign in to your OVHcloud account. To enable these connections, your account and Google Workspace accounts have to be configured using Security Assertion Markup Language (SAML) authentication.
+You can use **Single Sign-On** (SSO) to sign in to your OVHcloud account. To enable these connections, your account and Google Workspace accounts have to be using SAML (*Security Assertion Markup Language*) authentication.
 
 **This guide explains how to associate your OVHcloud account with an external Google Workspace service.**
 
