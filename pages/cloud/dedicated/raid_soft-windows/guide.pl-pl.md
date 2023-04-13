@@ -1,41 +1,45 @@
 ---
-title: Configuring a software mirror (RAID) on Windows
+title: Konfiguracja programowego lustra (RAID) w systemie Windows
 slug: dedicated-servers-mirror-soft-raid-windows
-excerpt: "Find out how to rebuild your server’s drive configuration after a disk replacement"
-section: RAID and disks
+excerpt: "Dowiedz się, jak odbudować konfigurację dysków Twojego serwera po wymianie dysku"
+section: RAID & dyski
 updated: 2023-03-28
 ---
 
-**Last updated 28th March 2023**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
-## Objective
+**Ostatnia aktualizacja z dnia 28-03-2023**
 
-On a Windows system, data redundancy is achieved by mirroring the primary disk to a second one. This is similar to a RAID 1 configuration but only involves two disks.
+## Wprowadzenie
 
-**This guide explains how to reconfigure the disk mirror of your Windows system if it needs to be rebuilt due to corruption or disk failure.**
+W systemie Windows redundancja danych jest zapewniona przez mirrroring dysku głównego na drugim dysku. Konfiguracja ta jest podobna do konfiguracji w RAID 1, ale dotyczy tylko dwóch dysków.
 
-## Requirements
+**Dowiedz się, jak przekonfigurować ponownie lustro dysku w systemie Windows, jeśli ma zostać zrekonstruowane z powodu uszkodzenia lub uszkodzenia dysku.**
 
-- A Windows [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) with a software mirror
-- Administrative access to the server via RDP
+## Wymagania początkowe
 
-## Instructions
+- Serwer [dedykowany Windows](https://www.ovhcloud.com/pl/bare-metal/) z oprogramowaniem lustrzanym
+- Dostęp administracyjny do serwera przez RDP
 
-Establish a remote desktop (RDP) connection to your server.
+## W praktyce
 
-Once logged in, right-click on the `Start Menu`{.action} button and open `Run`{.action}.
+Zarządzaj połączeniem RDP (Remote Desktop) z Twoim serwerem.
+
+Po zalogowaniu kliknij prawym przyciskiem myszy przycisk w menu `Start`{.action} i otwórz `Uruchom`{.action}.
 
 ![Software mirror Windows](images/raid-soft-windows-01.png){.thumbnail}
 
-Enter "cmd" and click on `OK`{.action}.
+Wpisz `cmd` i kliknij `OK`{.action}.
 
 ![Software mirror Windows](images/raid-soft-windows-02.png){.thumbnail}
 
-The method to use depends on the partition style of your disks. Follow the instructions in [this section](#mbr) for **MBR** or skip to the [subsequent section](#gpt) for **GPT**. If you are unsure, run `diskpart` at the command prompt and enter `list disk`. Check the "Gpt" column in the output.
+Metoda zależy od typu partycji dysków. Postępuj zgodnie z instrukcjami z [tej sekcji](#mbr) dla **MBR** lub przejdź do następnej [sekcji](#gpt) dla **GPT**. Jeśli nie jesteś tego pewien, wprowadź komendę `diskpart` w wierszu poleceń i wprowadź `list disk`. Sprawdź kolumnę "Gpt" w dostarczonym wyniku.
 
-### Rebuilding the mirror (MBR partion scheme) <a name="mbr"></a>
+### Rekonstrukcja lustra (schemat partycji MBR) <a name="mbr"></a>
 
-At the command prompt, open DiskPart:
+W wierszu poleceń otwórz DiskPart:
 
 ```
 C:\Windows\system32> diskpart
@@ -43,10 +47,10 @@ C:\Windows\system32> diskpart
 
 > [!alert]
 >
-> DiskPart executes commands without issuing warnings or asking for confirmation. Any changes done in DiskPart are irreversible. Entering commands while the wrong disk or volume is selected may therefore cause immediate data loss and/or prevent your system from booting. We recommend to proceed with caution and double-check each command.
+> DiskPart wykonuje polecenia bez wysyłania ostrzeżeń lub prośby o potwierdzenie. Wszelkie zmiany wprowadzone w DiskPart są nieodwracalne. Wprowadzanie poleceń po wybraniu nieprawidłowego dysku lub wolumenu może spowodować natychmiastową utratę danych i/lub uniemożliwić uruchomienie systemu. Zalecamy ostrożność i sprawdzanie każdego zamówienia.
 >
 
-#### Listing all disks and volumes
+#### Lista wszystkich dysków i wolumenów
 
 ```console
 DISKPART> list disk
@@ -65,17 +69,15 @@ DISKPART> list volume
 
 ```
 
-
-In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/asia/en/dedicated/disk-replacement/) previously.
+W tym przykładzie `Disk 1` to dysk zapasowy, który został zainstalowany w celu zastąpienia wadliwego `Disk M0`, który wcześniej został [fizycznie usunięty](https://docs.ovh.com/pl/dedicated/wymiana-dysku/).
 
 
 > [!primary]
 >
-> The following code sections are for the purpose of illustration only, based on the example output above. You will need to adjust the instructions according to your actual configuration by replacing the values in the commands with your disk and volume identifiers.
+> Poniższe sekcje kodu podane są wyłącznie jako ilustracja, w zależności od przykładu wyjściowego. Należy dostosować instrukcje do rzeczywistej konfiguracji, zastępując wartości w poleceniach danymi identyfikacyjnymi dysku i wolumenu.
 >
 
-
-#### Removing the replaced disk from the configuration
+#### Usunięcie zastąpionego dysku z konfiguracji
 
 ```console
 DISKPART> select volume c
@@ -108,9 +110,9 @@ DISKPART> list disk
   Disk 1    Online          447 GB   447 GB
  
 ```
- 
-#### Initialising the replacement disk
- 
+
+#### Uruchomienie zapasowego dysku
+
 ```console
 DISKPART> select disk 1
  
@@ -125,9 +127,8 @@ DISKPART> convert dynamic
 DiskPart successfully converted the selected disk to dynamic format.
 
 ```
- 
-#### Recreating the mirror between the first and the second disk
- 
+
+#### Odtworzenie lustra między pierwszym i drugim dyskiem
 
 ```console
 DISKPART> select volume c
@@ -148,9 +149,10 @@ DISKPART> list disk
 
 ``` 
 
-Repeat this step for each existing volume from `Disk 0` that you want to mirror on `Disk 1`, using the associated drive letter (i.e. *d*, *e*, *f*, etc.).
+Powtórz ten etap dla każdego istniejącego wolumenu z dysku `Disk 0`, który chcesz umieścić w lustrze na dysku `Disk 1`, używając odpowiedniego litery dysku (np. *d*, *e*, *f*, itp.).
+
+Stan wolumenu będzie `Rebuild` w trakcie procesu, co może zająć kilka godzin w zależności od danych zapisanych na dysku. Możesz sprawdzić status w DiskPart:
  
-The volume state will be `Rebuild` during the process, which may take several hours depending on the data stored on the disk. You can check the status in DiskPart:
  
 ```console
 DISKPART> list volume
@@ -161,11 +163,11 @@ DISKPART> list volume
 
 ```
 
-It is best not to restart the server until the rebuild process is complete.
+Najlepiej nie uruchamiać ponownie serwera, jeśli proces odbudowy nie zostanie zakończony.
 
-### Rebuilding the mirror (GPT partition scheme) <a name="gpt"></a>
+### Rekonstrukcja lustra (schemat partycji GPT) <a name="gpt"></a>
 
-At the command prompt, open DiskPart:
+W wierszu poleceń otwórz DiskPart:
 
 ```
 C:\Windows\system32> diskpart
@@ -173,10 +175,10 @@ C:\Windows\system32> diskpart
 
 > [!alert]
 >
-> DiskPart executes commands without issuing warnings or asking for confirmation. Any changes done in DiskPart are irreversible. Entering commands while the wrong disk or volume is selected may therefore cause immediate data loss and/or prevent your system from booting. We recommend to proceed with caution and double-check each command.
+> DiskPart wykonuje polecenia bez wysyłania ostrzeżeń lub prośby o potwierdzenie. Wszelkie zmiany wprowadzone w DiskPart są nieodwracalne. Wprowadzanie poleceń po wybraniu nieprawidłowego dysku lub wolumenu może spowodować natychmiastową utratę danych i/lub uniemożliwić uruchomienie systemu. Zalecamy ostrożność i sprawdzanie każdego zamówienia.
 >
 
-#### Listing all disks and volumes
+#### Lista wszystkich dysków i wolumenów
 
 ```console
 DISKPART> list disk
@@ -197,17 +199,15 @@ DISKPART> list volume
  
 ```
 
-In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/asia/en/dedicated/disk-replacement/) previously.
+W tym przykładzie `Disk 1` to dysk zapasowy, który został zainstalowany w celu zastąpienia wadliwego `Disk M0`, który wcześniej został [fizycznie usunięty](https://docs.ovh.com/pl/dedicated/wymiana-dysku/).
 
 > [!primary]
 >
-> The following code sections are for the purpose of illustration only, based on the example output above. You will need to adjust the instructions according to your actual configuration by replacing the values in the commands with your disk and volume identifiers.
+> Poniższe sekcje kodu podane są wyłącznie jako ilustracja, w zależności od przykładu wyjściowego. Należy dostosować instrukcje do rzeczywistej konfiguracji, zastępując wartości w poleceniach danymi identyfikacyjnymi dysku i wolumenu.
 >
 
+#### Usunięcie zastąpionego dysku z konfiguracji
 
-
-#### Removing the replaced disk from the configuration
- 
 ```console
 DISKPART> select volume c
   
@@ -248,10 +248,10 @@ DISKPART> list volume
  
 ```
 
-#### Initialising the replacement disk
+#### Uruchomienie zapasowego dysku
 
-On the new disk, create default and mandatory partitions, reflecting the existing partitioning of the first disk:
- 
+Utwórz na nowym dysku domyślne i obowiązkowe partycje, odzwierciedlając istniejące partycje pierwszego dysku:
+
 ```console
 DISKPART> select disk 1
  
@@ -302,7 +302,7 @@ DISKPART> list partition
 
 ```
 
-#### Recreating the mirror between the first and the second disk 
+#### Odtworzenie lustra między pierwszym i drugim dyskiem 
 
 ```console
 DISKPART> select volume c
@@ -322,9 +322,9 @@ DISKPART> list disk
 
 ```
 
-Repeat this step for each existing volume from `Disk 0` that you want to mirror on `Disk 1`, using the associated drive letter (i.e. *d*, *e*, *f*, etc.).
+Powtórz ten etap dla każdego istniejącego wolumenu z dysku `Disk 0`, który chcesz umieścić w lustrze na dysku `Disk 1`, używając odpowiedniego litery dysku (np. *d*, *e*, *f*, itp.).
 
-#### Recreating the boot environment and setting boot options for the second disk
+#### Odtworzenie środowiska do inicjalizacji i zdefiniowanie opcji inicjalizacji drugiego dysku
 
 ```console
 DISKPART> select disk 0
@@ -362,18 +362,18 @@ DISKPART> exit
 Leaving DiskPart...
 ```
 
-Back at the command prompt, copy the boot files from the boot (EFI) partition on first disk (`Disk 0`) to the boot partition on the second disk (`Disk 1`).
+Wróć do wiersza poleceń, skopiuj pliki uruchamiania partycji startowej (EFI) na pierwszy dysk (`Disk 0`) do partycji startowej na drugim dysku (`Disk 1`).
 
-Type the following 3 commands and execute each one with `Enter`:
- 
+Wpisz 3 poniższe polecenia i wykonaj je za pomocą przycisku `Wpisz`:
+
 ```
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:
 ``` 
 
-Then launch DiskPart again and run the following commands:
- 
+Włącz następnie DiskPart i wprowadź następujące polecenia:
+
 ```console
 DISKPART> select volume s
  
@@ -393,7 +393,8 @@ DiskPart successfully removed the drive letter or mount point.
 
 ```
 
-The volume state will be `Rebuild` during the process, which may take several hours depending on the data stored on the disk. You can check the status in DiskPart:
+Stan wolumenu będzie `Rebuild` w trakcie procesu, co może zająć kilka godzin w zależności od danych zapisanych na dysku. Możesz sprawdzić status w DiskPart:
+
 
 ```console
 DISKPART> list volume
@@ -406,10 +407,8 @@ DISKPART> list volume
 
 ```
 
-It is best not to restart the server until the rebuild process is complete.
+Najlepiej nie uruchamiać ponownie serwera, jeśli proces odbudowy nie zostanie zakończony.
 
+## Sprawdź również
 
-
-## Go further
-
-Join our community of users on <https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

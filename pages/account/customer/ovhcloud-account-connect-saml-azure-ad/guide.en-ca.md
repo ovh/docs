@@ -18,8 +18,8 @@ You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To ena
 ## Requirements
 
 - Belong to the **Application Administrator** and **User Administrator** roles of an Azure AD service
-- An [OVHcloud account](https://docs.ovh.com/gb/en/customer/create-ovhcloud-account/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud account](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
@@ -188,11 +188,11 @@ Use this link to download the Azure AD application metadata file in order to use
 
 ### Establishing OVHcloud account trust and configuring the connection
 
-Adding your Azure AD application as a trusted identity provider is done in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) where you can provide the identity provider metadata.
+Adding your Azure AD application as a trusted identity provider is done in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) where you can provide the identity provider metadata.
 
 #### Establish OVHcloud trust
 
-[Log in](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and click on your profile in the top-right corner.
+[Log in](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and click on your profile in the top-right corner.
 
 ![OVHcloud top menu](images/ovhcloud_top_menu.png){.thumbnail}
 
@@ -244,7 +244,7 @@ The created group should appear on the list.
 
 ### Connect via SSO
 
-On the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), enter your [NIC handle](https://docs.ovh.com/gb/en/customer/create-ovhcloud-account/#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
+On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), enter your [NIC handle](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 
@@ -260,7 +260,7 @@ Enter the Azure AD application user password and click on the `Sign In`{.action}
 
 ![Azure AD Login step 3](images/azure_ad_login_3.png){.thumbnail}
 
-You are now logged in with the same [NIC handle](https://docs.ovh.com/gb/en/customer/create-ovhcloud-account/#what-is-my-nic-handle), but via your Active Directory user and using your Azure AD application SSO.
+You are now logged in with the same [NIC handle](https://docs.ovh.com/ca/en/customer/create-ovhcloud-account/#what-is-my-nic-handle), but via your Active Directory user and using your Azure AD application SSO.
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 
