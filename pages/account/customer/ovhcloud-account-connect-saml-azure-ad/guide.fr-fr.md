@@ -12,9 +12,9 @@ updated: 2023-04-05
 
 ## Objectif
 
-Vous pouvez utiliser le **SSO** (*Single Sign-On*) pour vous connecter à votre compte OVHcloud. Pour activer ces connexions, votre compte et votre Azure AD doivent être configurés à l'aide de SAML (*Security Assertion Markup Language*).
+Vous pouvez utiliser le **SSO** (*Single Sign-On*) pour vous connecter à votre compte OVHcloud. Pour activer ces connexions, votre compte et votre Azure AD (Active Directory) doivent être configurés à l'aide de SAML (*Security Assertion Markup Language*).
 
-**Ce guide vous explique comment associer votre compte OVHcloud à un Azure AD externe.**
+**Découvrez comment associer votre compte OVHcloud à un Azure AD externe.**
 
 ## Prérequis
 
@@ -77,7 +77,7 @@ Dans l’interface du groupe sélectionné, cliquez sur `Members`{.action} dans 
 
 ![Azure AD Group User Assignment étape 1](images/azure_ad_group_user_assignment_1.png){.thumbnail}
 
-Sélectionnez l'utilisateur à ajouter à ce groupe, puis cliquez sur le bouton `Select`{.action}.
+Sélectionnez l'utilisateur à ajouter dans ce groupe, puis cliquez sur le bouton `Select`{.action}.
 
 ![Azure AD Group User Assignment étape 2](images/azure_ad_group_user_assignment_2.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Cliquez sur `Upload metadata file`{.action} dans le menu du haut.
 
 ![Azure AD SSO étape 3](images/azure_ad_sso_3.png){.thumbnail}
 
-Cliquez sur le bouton `Select a file`{.action} icon , sélectionnez le fichier de métadonnées OVH Service Provider et cliquez sur le bouton `Add`{.action} .
+Cliquez sur l'icône du bouton `Select a file`{.action} , sélectionnez le fichier de métadonnées OVH Service Provider et cliquez sur le bouton `Add`{.action} .
 
 Vous pouvez obtenir le fichier de métadonnées approprié via les liens suivants :
 
@@ -177,7 +177,7 @@ Sélectionnez `Security groups`{.action} et **Group ID** dans `Source attribute`
 
 La revendication de **groups** doit maintenant apparaître dans la liste.
 
-Copiez et enregistrez la valeur du **Claim name** quelque part (c'est-à-dire un bloc-notes), vous en aurez besoin ultérieurement.
+Copiez et enregistrez la valeur du **Claim name** quelque part (un bloc-notes par exemple), vous en aurez besoin ultérieurement.
 
 ![Azure AD SSO étape 12](images/azure_ad_sso_12.png){.thumbnail}
 
@@ -193,7 +193,7 @@ L'ajout de votre application Azure AD en tant que fournisseur d'identité approu
 
 #### Établir la confiance OVHcloud
 
-[Connectez](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)-vous et cliquez sur votre profil en haut à droite.
+[Connectez-vous sur votre espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur votre profil en haut à droite.
 
 ![Top menu OVHcloud](images/ovhcloud_top_menu.png){.thumbnail}
 
@@ -201,11 +201,11 @@ Cliquez sur votre nom pour accéder à la page de gestion de votre profil.
 
 ![Informations utilisateur OVHcloud](images/ovhcloud_user_infos.png){.thumbnail}
 
-Ouvrez l'onglet `User management`{.action}.
+Ouvrez l'onglet `Gestion des utilisateurs`{.action}.
 
 ![Profil menu OVHcloud](images/ovhcloud_profile_menu.png){.thumbnail}
 
-Cliquez alors sur le bouton `SSO connection`{.action}.
+Cliquez alors sur le bouton `Connexion SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
@@ -213,29 +213,29 @@ Complétez le champ **Group Attribute Name** avec la valeur de **Claim name** de
 
 Remplissez les métadonnées XML de votre application Azure AD à partir du fichier enregistré précédemment.
 
-Cliquez sur le bouton `Confirmer`{.action}.
+Cliquez sur le bouton `Valider`{.action}.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
 
 L'ajout de votre application Azure AD en tant que fournisseur d'identité est donc établie mais vous devez quand même ajouter des groupes à votre compte OVHcloud.
 
 > [!warning]
-> Si vous essayez à ce stade de vous connecter via SSO, un message d'erreur "`Not in valid groups`" s'affichera probablement.
+> Si vous essayez à ce stade de vous connecter via SSO, un message d'erreur «`Not in valid groups`» s'affichera probablement.
 >
-> En effet, votre compte OVHcloud vérifie si l'utilisateur authentifiant appartient à un groupe existant sur le compte.
+> En effet, votre compte OVHcloud vérifie si l'utilisateur authentifié appartient à un groupe existant sur le compte.
 >
 
-Pour résoudre cette situation, vérifiez l'attribut "Group" retourné par votre application Azure AD : le champ **Object Id**.
+Pour résoudre cette situation, vérifiez l'attribut «Group» retourné par votre application Azure AD : le champ **Object Id**.
 
 #### Déclaration des groupes OVHcloud
 
 ![Azure AD Group étape 2](images/azure_ad_group_2.png){.thumbnail}
 
-Ajoutez-le en cliquant sur le bouton `Declare a group`{.action}.
+Ajoutez-le en cliquant sur le bouton `Declarer un groupe`{.action}.
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 1](images/ovhcloud_sso_menu_1.png){.thumbnail}
 
-Complétez les champs, puis cliquez sur le bouton `Confirm`{.action}.
+Complétez les champs, puis cliquez sur le bouton `Valider`{.action}.
 
 ![Groupes de gestion des utilisateurs Ovhcloud étape 2](images/ovhcloud_sso_menu_2.png){.thumbnail}
 
@@ -245,7 +245,7 @@ Le groupe créé doit apparaître sur la liste.
 
 ### Connexion via SSO
 
-Sur la page [OVHcloud login](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
+Sur [la page de connexion OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](https://docs.ovh.com/fr/customer/creer-compte-ovhcloud/#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 
