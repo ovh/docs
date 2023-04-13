@@ -200,7 +200,7 @@ Click on your name to access your profile management page.
 
 ![OVHcloud user infos](images/ovhcloud_user_infos.png){.thumbnail}
 
-Open the `User management`{.action} tab.
+Open the `User management`{.action}} tab.
 
 ![OVHcloud profile menu](images/ovhcloud_profile_menu.png){.thumbnail}
 
