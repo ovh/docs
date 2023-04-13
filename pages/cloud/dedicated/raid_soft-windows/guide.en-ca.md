@@ -37,11 +37,11 @@ The method to use depends on the partition style of your disks. Follow the instr
 
 At the command prompt, open DiskPart:
 
-```cmd
+```
 C:\Windows\system32> diskpart
 ```
 
-> [!warning]
+> [!alert]
 >
 > DiskPart executes commands without issuing warnings or asking for confirmation. Any changes done in DiskPart are irreversible. Entering commands while the wrong disk or volume is selected may therefore cause immediate data loss and/or prevent your system from booting. We recommend to proceed with caution and double-check each command.
 >
@@ -167,16 +167,16 @@ It is best not to restart the server until the rebuild process is complete.
 
 At the command prompt, open DiskPart:
 
-```cmd
+```
 C:\Windows\system32> diskpart
 ```
 
-> [!warning]
+> [!alert]
 >
 > DiskPart executes commands without issuing warnings or asking for confirmation. Any changes done in DiskPart are irreversible. Entering commands while the wrong disk or volume is selected may therefore cause immediate data loss and/or prevent your system from booting. We recommend to proceed with caution and double-check each command.
 >
 
-Display all disks and volumes:
+#### Listing all disks and volumes
 
 ```console
 DISKPART> list disk
@@ -366,7 +366,7 @@ Back at the command prompt, copy the boot files from the boot (EFI) partition on
 
 Type the following 3 commands and execute each one with `Enter`:
  
-```cmd
+```
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:

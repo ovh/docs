@@ -1,41 +1,41 @@
 ---
-title: Configuring a software mirror (RAID) on Windows
+title: Configurer un miroir logiciel (RAID) sous Windows
 slug: dedicated-servers-mirror-soft-raid-windows
-excerpt: "Find out how to rebuild your server’s drive configuration after a disk replacement"
-section: RAID and disks
+excerpt: "Découvrez comment reconstruire la configuration des disques de votre serveur après un remplacement de disque"
+section: RAID & disques
 updated: 2023-03-28
 ---
 
-**Last updated 28th March 2023**
+**Dernière mise à jour le 28/03/2023**
 
-## Objective
+## Objectif
 
-On a Windows system, data redundancy is achieved by mirroring the primary disk to a second one. This is similar to a RAID 1 configuration but only involves two disks.
+Sur un système Windows, la redondance des données est assurée par la mise en miroir du disque principal sur un second disque. Cette configuration est similaire à une configuration en RAID 1 mais ne concerne que deux disques.
 
-**This guide explains how to reconfigure the disk mirror of your Windows system if it needs to be rebuilt due to corruption or disk failure.**
+**Découvrez comment reconfigurer le miroir de disque de votre système Windows s'il doit être reconstruit en raison d'une corruption ou d'une panne de disque.**
 
-## Requirements
+## Prérequis
 
-- A Windows [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) with a software mirror
-- Administrative access to the server via RDP
+- Un [serveur dédié Windows](https://www.ovhcloud.com/fr-ca/bare-metal/) avec un miroir logiciel
+- Un accès administratif au serveur via RDP
 
-## Instructions
+## En pratique
 
-Establish a remote desktop (RDP) connection to your server.
+Établissez une connexion RDP (Remote Desktop) avec votre serveur.
 
-Once logged in, right-click on the `Start Menu`{.action} button and open `Run`{.action}.
+Une fois connecté, faites un clic droit sur le bouton du menu `Démarrer`{.action} et ouvrez `Exécuter`{.action}.
 
 ![Software mirror Windows](images/raid-soft-windows-01.png){.thumbnail}
 
-Enter "cmd" and click on `OK`{.action}.
+Renseignez `cmd` et cliquez sur `OK`{.action}.
 
 ![Software mirror Windows](images/raid-soft-windows-02.png){.thumbnail}
 
-The method to use depends on the partition style of your disks. Follow the instructions in [this section](#mbr) for **MBR** or skip to the [subsequent section](#gpt) for **GPT**. If you are unsure, run `diskpart` at the command prompt and enter `list disk`. Check the "Gpt" column in the output.
+La méthode à utiliser dépend du type de partition de vos disques. Suivez les instructions de [cette section](#mbr) pour **MBR** ou passez à la [section suivante](#gpt) pour **GPT**. Si vous n'en êtes pas sûr, exécutez la commande `diskpart` dans l'invite de commande et entrez `list disk`. Vérifiez la colonne « Gpt » dans le résultat fourni.
 
-### Rebuilding the mirror (MBR partion scheme) <a name="mbr"></a>
+### Reconstruction du miroir (schéma de partition MBR) <a name="mbr"></a>
 
-At the command prompt, open DiskPart:
+À l'invite de commande, ouvrez DiskPart :
 
 ```
 C:\Windows\system32> diskpart
@@ -43,10 +43,10 @@ C:\Windows\system32> diskpart
 
 > [!alert]
 >
-> DiskPart executes commands without issuing warnings or asking for confirmation. Any changes done in DiskPart are irreversible. Entering commands while the wrong disk or volume is selected may therefore cause immediate data loss and/or prevent your system from booting. We recommend to proceed with caution and double-check each command.
+> DiskPart exécute les commandes sans émettre d'avertissements ou demander de confirmation. Toute modification effectuée dans DiskPart est irréversible. La saisie de commandes alors que le mauvais disque ou volume est sélectionné peut donc entraîner une perte immédiate de données et/ou empêcher le démarrage de votre système. Nous vous recommandons de procéder avec prudence et de vérifier chaque commande.
 >
 
-#### Listing all disks and volumes
+#### Liste de tous les disques et volumes
 
 ```console
 DISKPART> list disk
@@ -65,17 +65,15 @@ DISKPART> list volume
 
 ```
 
-
-In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/asia/en/dedicated/disk-replacement/) previously.
+Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été installé pour remplacer le `Disk M0` défectueux qui avait été [physiquement retiré](https://docs.ovh.com/ca/fr/dedicated/remplacement-disque/) précédemment.
 
 
 > [!primary]
 >
-> The following code sections are for the purpose of illustration only, based on the example output above. You will need to adjust the instructions according to your actual configuration by replacing the values in the commands with your disk and volume identifiers.
+> Les sections de code suivantes sont fournies à titre d'illustration uniquement, en fonction de l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions en fonction de votre configuration réelle, en remplaçant les valeurs dans les commandes par vos identifiants de disque et de volume.
 >
 
-
-#### Removing the replaced disk from the configuration
+#### Retrait du disque remplacé de la configuration
 
 ```console
 DISKPART> select volume c
@@ -108,9 +106,9 @@ DISKPART> list disk
   Disk 1    Online          447 GB   447 GB
  
 ```
- 
-#### Initialising the replacement disk
- 
+
+#### Initialisation du disque de remplacement
+
 ```console
 DISKPART> select disk 1
  
@@ -125,9 +123,8 @@ DISKPART> convert dynamic
 DiskPart successfully converted the selected disk to dynamic format.
 
 ```
- 
-#### Recreating the mirror between the first and the second disk
- 
+
+#### Recréation du miroir entre le premier et le second disque
 
 ```console
 DISKPART> select volume c
@@ -146,11 +143,11 @@ DISKPART> list disk
 * Disk 0    Online          447 GB      0 B   *
   Disk 1    Online          447 GB      0 B   *
 
-``` 
+```
 
-Repeat this step for each existing volume from `Disk 0` that you want to mirror on `Disk 1`, using the associated drive letter (i.e. *d*, *e*, *f*, etc.).
- 
-The volume state will be `Rebuild` during the process, which may take several hours depending on the data stored on the disk. You can check the status in DiskPart:
+Répétez cette étape pour chaque volume existant à partir du `Disk 0` que vous souhaitez mettre en miroir sur le `Disk 1`, en utilisant la lettre de lecteur associée (par exemple, *d*, *e*, *f*, etc.).
+
+L’état du volume sera `Rebuild` au cours du processus, ce qui peut prendre plusieurs heures en fonction des données stockées sur le disque. Vous pouvez vérifier l'état dans DiskPart :
  
 ```console
 DISKPART> list volume
@@ -161,11 +158,11 @@ DISKPART> list volume
 
 ```
 
-It is best not to restart the server until the rebuild process is complete.
+Il est préférable de ne pas redémarrer le serveur tant que le processus de reconstruction n'est pas terminé.
 
-### Rebuilding the mirror (GPT partition scheme) <a name="gpt"></a>
+### Reconstruction du miroir (schéma de partition GPT) <a name="gpt"></a>
 
-At the command prompt, open DiskPart:
+À l'invite de commande, ouvrez DiskPart :
 
 ```
 C:\Windows\system32> diskpart
@@ -173,10 +170,10 @@ C:\Windows\system32> diskpart
 
 > [!alert]
 >
-> DiskPart executes commands without issuing warnings or asking for confirmation. Any changes done in DiskPart are irreversible. Entering commands while the wrong disk or volume is selected may therefore cause immediate data loss and/or prevent your system from booting. We recommend to proceed with caution and double-check each command.
+> DiskPart exécute les commandes sans émettre d'avertissements ou demander de confirmation. Toute modification effectuée dans DiskPart est irréversible. La saisie de commandes alors que le mauvais disque ou volume est sélectionné peut donc entraîner une perte immédiate de données et/ou empêcher le démarrage de votre système. Nous vous recommandons de procéder avec prudence et de vérifier chaque commande.
 >
 
-#### Listing all disks and volumes
+#### Liste de tous les disques et volumes
 
 ```console
 DISKPART> list disk
@@ -197,17 +194,15 @@ DISKPART> list volume
  
 ```
 
-In this example, `Disk 1` is a replacement drive that has been installed in order to replace the defective `Disk M0` which had been [physically removed](https://docs.ovh.com/asia/en/dedicated/disk-replacement/) previously.
+Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été installé pour remplacer le `Disk M0` défectueux qui avait été [physiquement retiré](https://docs.ovh.com/ca/fr/dedicated/remplacement-disque/) précédemment.
 
 > [!primary]
 >
-> The following code sections are for the purpose of illustration only, based on the example output above. You will need to adjust the instructions according to your actual configuration by replacing the values in the commands with your disk and volume identifiers.
+> Les sections de code suivantes sont fournies à titre d'illustration uniquement, en fonction de l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions en fonction de votre configuration réelle en remplaçant les valeurs dans les commandes par vos identifiants de disque et de volume.
 >
 
+#### Retrait du disque remplacé de la configuration
 
-
-#### Removing the replaced disk from the configuration
- 
 ```console
 DISKPART> select volume c
   
@@ -248,10 +243,10 @@ DISKPART> list volume
  
 ```
 
-#### Initialising the replacement disk
+#### Initialisation du disque de remplacement
 
-On the new disk, create default and mandatory partitions, reflecting the existing partitioning of the first disk:
- 
+Sur le nouveau disque, créez les partitions par défaut et obligatoires, reflétant le partitionnement existant du premier disque :
+
 ```console
 DISKPART> select disk 1
  
@@ -302,7 +297,7 @@ DISKPART> list partition
 
 ```
 
-#### Recreating the mirror between the first and the second disk 
+#### Recréation du miroir entre le premier et le second disque 
 
 ```console
 DISKPART> select volume c
@@ -322,9 +317,9 @@ DISKPART> list disk
 
 ```
 
-Repeat this step for each existing volume from `Disk 0` that you want to mirror on `Disk 1`, using the associated drive letter (i.e. *d*, *e*, *f*, etc.).
+Répétez cette étape pour chaque volume existant à partir du `Disk 0` que vous souhaitez mettre en miroir sur le `Disk 1`, en utilisant la lettre de lecteur associée (par exemple, *d*, *e*, *f*, etc.).
 
-#### Recreating the boot environment and setting boot options for the second disk
+#### Recréation de l'environnement d'initialisation et définition des options d'initialisation du second disque
 
 ```console
 DISKPART> select disk 0
@@ -362,18 +357,18 @@ DISKPART> exit
 Leaving DiskPart...
 ```
 
-Back at the command prompt, copy the boot files from the boot (EFI) partition on first disk (`Disk 0`) to the boot partition on the second disk (`Disk 1`).
+De retour à l'invite de commande, copiez les fichiers de démarrage de la partition de démarrage (EFI) sur le premier disque (`Disk 0`) vers la partition de démarrage sur le second disque (`Disk 1`).
 
-Type the following 3 commands and execute each one with `Enter`:
- 
+Tapez les 3 commandes suivantes et exécutez-les chacune avec la touche `Entrer` :
+
 ```
 robocopy s:\ t:\ * /e /copyall /xf BCD.* /xd "System Volume Information"
 bcdedit /export t:\EFI\Microsoft\Boot\BCD
 bcdedit /store t:\EFI\Microsoft\Boot\BCD /set {bootmgr} device partition=t:
 ``` 
 
-Then launch DiskPart again and run the following commands:
- 
+Relancez alors DiskPart et exécutez les commandes suivantes :
+
 ```console
 DISKPART> select volume s
  
@@ -393,7 +388,7 @@ DiskPart successfully removed the drive letter or mount point.
 
 ```
 
-The volume state will be `Rebuild` during the process, which may take several hours depending on the data stored on the disk. You can check the status in DiskPart:
+L’état du volume sera `Rebuild` au cours du processus, ce qui peut prendre plusieurs heures en fonction des données stockées sur le disque. Vous pouvez vérifier l'état dans DiskPart :
 
 ```console
 DISKPART> list volume
@@ -406,10 +401,8 @@ DISKPART> list volume
 
 ```
 
-It is best not to restart the server until the rebuild process is complete.
+Il est préférable de ne pas redémarrer le serveur tant que le processus de reconstruction n'est pas terminé.
 
+## Aller plus loin
 
-
-## Go further
-
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
