@@ -6,10 +6,10 @@ section: MongoDB - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/capabilities/'
-updated: 2023-03-13
+updated: 2023-04-14
 ---
 
-**Last updated March 13th, 2023**
+**Last updated April 14th, 2023**
 
 ## Objective
 
@@ -61,6 +61,9 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
 
+> [!primary]
+> Be aware that you will be able to upgrade your plan but will not be able to downgrade it afterwards.
+
 #### Nodes
 
 - *Essential*: The cluster supports at most one node.
@@ -107,6 +110,8 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. receive a second email alert once cluster is reaching 90% storage capacity;
 3. have his database instance moved in "read-only" mode, meaning no more writes can be done.
 
+See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/fr/publiccloud/databases/handling-disk-full/) for more information.
+
 ### Features
 
 #### Network
@@ -124,6 +129,12 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - **DHCP must be enabled** in your private network in order to launch MongoDB clusters in the said private network.
 - When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
+
+##### Authorised IPs
+
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable. ##### Authorised IPs
+
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable.
 
 #### Backups
 
