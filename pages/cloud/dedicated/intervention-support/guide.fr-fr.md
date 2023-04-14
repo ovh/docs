@@ -46,10 +46,11 @@ Divers
 ### Ubuntu
 
 Si vous rencontrez un soucis de connectivité réseau.  
-exemple : pas de ping après remplacement de la carte mère.
+exemple : pas de ping après le remplacement de la carte mère.
 
-- boot en mode rescue.
+- rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique).
 - monter la partition `/`
+
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
 ```
@@ -106,7 +107,7 @@ NamePolicy=kernel database onboard slot path mac
 root@rescue:~#
 ```
 
-- sauvegardez les fichiers et éditez-les afin de renseigner la nouvelle valeur de votre addresse MAC :
+- sauvegardez les fichiers et éditez-les afin de renseigner la nouvelle valeur de votre adresse MAC :
 ```bash
 root@rescue:~# cp /mnt/etc/systemd/network/50-default.network /mnt/etc/systemd/network/50-default.network.link.bak-`date +%s`
 root@rescue:~# cp /mnt/etc/systemd/network/50-public-interface.link /mnt/etc/systemd/network/50-public-interface.link.bak-`date +%s`
@@ -121,7 +122,7 @@ MACAddress=xx:xx:xx:xx:xx:xx
 root@rescue:~#
 ```
 
-- ne pas oublier de démonter la partition `/` avant de redémarrer le serveur.
+- n'oubliezpas de démonter la partition `/` avant de redémarrer le serveur.
 
 
 #### Retour sur cas pratiques
@@ -138,7 +139,7 @@ Dans certain cas, il faut propager la nouvelle adresse MAC dans les fichiers sui
 Si vous rencontrez un soucis de connectivité réseau.  
 exemple : pas de ping après remplacement de la carte mère.
 
-- boot en mode rescue
+- rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique).
 - monter la partition `/`
 ```bash
 root@rescue:~# mount /dev/my_system_disk /mnt
@@ -151,15 +152,15 @@ root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconf
 ```
 
 - renseignez la nouvelle adresse MAC à la ligne `HWADDR=xx.xx.xx.xx.xx.xx`.  
-- ne pas oublier de démonter la partition `/` avant de redémarrer le serveur.
+- n'oubliez pas de démonter la partition `/` avant de redémarrer le serveur.
 
 
 ### SmartOS
 
 Si vous rencontrez un soucis de connectivité réseau.  
-exemple : pas de ping après remplacement de la carte mère.
+exemple : pas de ping après le remplacement de la carte mère.
 
-- boot en mode rescue
+- rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique).
 ```bash 
 modprobe zfs
 root@rescue:~# zpool import -f zones (zpool import to list the pools)
@@ -173,7 +174,7 @@ root@rescue:~# cp /mnt/config{,.bak-$(date +"%Y-%m-%d-%H_%M")}
 root@rescue:~#  vim /mnt/config
 ```
 
-- ne pas oublier de démonter les partitions avant de redémarrer le serveur en mode `netboot` :
+- n'oubliez pas de démonter les partitions avant de redémarrer le serveur en mode `netboot` :
 ```bash
 root@rescue:~# zfs umount -a
 root@rescue:~# zfs set mountpoint="/usbkey" zones/usbkey 
@@ -183,12 +184,12 @@ root@rescue:~# zfs set mountpoint="/usbkey" zones/usbkey
 ### FreeBSD
 
 Si vous rencontrez un soucis de connectivité réseau.  
-exemple : pas de ping après remplacement de la carte mère.
+exemple : pas de ping après le remplacement de la carte mère.
 
-- boot en mode rescue-bsd
+- redémarer le serveur en mode rescue-bsd.
 - éxécutez la commande `ifconfig` depuis l'invite du rescue-bsd.
 
-De cette manière, nous pouvons repérer l'appellation de votre interface réseau :
+De cette manière, vous pouvez repérer l'appellation de votre interface réseau :
 ```bash
 root@rescue-bsd:~ # ifconfig
 igb0: flags=8843<UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST> metric 0 mtu 1500
@@ -196,7 +197,7 @@ options=403bb<RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,T
 ether xx:xx:xx:xx:xx:xx
 ```
 
-- éxécutez la commmande `gpart show`, nous pouvons repérer et associer les partitions/noms :
+- éxécutez la commmande `gpart show`, vous pouvez repérer et associer les partitions/noms :
 ```bash
 root@rescue-bsd:~ # gpart show
 => 63 3907029105 ada0 MBR (1.8T)
@@ -216,7 +217,7 @@ root@rescue-bsd:~ # gpart show
  3905980416 1048689 4 freebsd-swap (512M)
 ```
 
-- montez la partition qui nous intéresse, nous pourrons ainsi modifier l'interface via le fichier `/etc/rc.conf` :
+- montez la partition qui vous intéresse, wous pourrez ainsi modifier l'interface via le fichier `/etc/rc.conf` :
 ```bash
 root@rescue-bsd:~ # zpool import
    pool: zroot
@@ -264,7 +265,9 @@ root@rescue-bsd:~ #
 ```
 
 - sauvegarder les fichiers et éditer-les afin de corriger l'adresse MAC.  
+
 Dans le cas présenté, nous devons modifier les 3 instances de `em0` par `ibg0` à partir du fichier de configuration associé :
+
 ```bash
 root@rescue-bsd:~ # mount /dev/ada0s1 /mnt/
 root@rescue-bsd:~ #
@@ -307,7 +310,9 @@ ipv6_defaultrouter="2001:41d0:0001:c1ff:ff:ff:ff:ff"
 mysql_enable="YES"
 root@rescue-bsd:~ #
 ```
+
 - démontez les partitions ZFS :
+
 ```bash
 root@rescue-bsd:~ # zfs unmount /tmp/rootClient/
 root@rescue-bsd:~ # zfs get mountpoint zroot/ROOT/default
@@ -333,8 +338,10 @@ root@rescue-bsd:~ #
 
 ### Gentoo
 
-Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modifier les nouvelles adresses MAC à travers l'OS.
-- boot en mode rescue, et repérez la partition `/` :
+Suite au remplacement de la carte mère, il est impossible de modifier les nouvelles adresses MAC à travers l'OS via le mode rescue.
+
+- rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique), et repérez la partition `/` :
+
 ```bash
 root@rescue:~# blkid
 /dev/sda1: UUID="15D6-5706" TYPE="vfat" PARTLABEL="grub" PARTUUID="bf514348-6259-41a4-a73f-ba0c38d45de5"
@@ -345,7 +352,8 @@ root@rescue:~# blkid
 root@rescue:~#
 ```
 
-Dans notre exemple, nous voyons que le système utilise _LVM_ :
+Dans notre exemple, le système utilise _LVM_ :
+
 ```bash
 root@rescue:~# lvdisplay
   --- Logical volume ---
@@ -383,7 +391,8 @@ root@rescue:~# lvdisplay
   Block device           252:1
 ```
 
-- montez la partition `/` identifiée :
+- monter la partition `/` identifiée :
+
 ```bash
 root@rescue:~# mount /dev/vg0/root /mnt
 root@rescue:~# ls /mnt
@@ -392,6 +401,7 @@ backups  bin  boot  dev  etc  home  images  images-ear  images-ueba  lib  lib32
 ```
 
 Sous Gentoo, les adresses MAC sont présentes dans les 4 fichiers suivants :
+
 ```bash
 root@rescue:~# cat /mnt/etc/systemd/network/
 10-external.link   11-internal.link   50-static.network  51-vrack.network
@@ -405,7 +415,9 @@ root@rescue:~# cp /mnt/etc/systemd/network/51-vrack.network /mnt/etc/systemd/net
 root@rescue:~# cp /mnt/etc/systemd/network/10-external.link /mnt/etc/systemd/network/10-external.link.`date +%s`
 root@rescue:~# cp /mnt/etc/systemd/network/11-internal.link /mnt/etc/systemd/network/11-internal.link.`date +%s`
 ```
-- mettre à jour les fchiers avec les nouvelles adresses MAC :
+
+- mettez à jour les fchiers avec les nouvelles adresses MAC :
+
 ```bash
 root@rescue:~# nano /mnt/etc/systemd/network/50-static.network
 root@rescue:~# nano /mnt/etc/systemd/network/51-vrack.network
@@ -413,7 +425,8 @@ root@rescue:~# nano /mnt/etc/systemd/network/10-external.link
 root@rescue:~# nano /mnt/etc/systemd/network/11-internal.lin
 ```
 
-- démontez les partitions puis reboot :
+- démontez les partitions, puis faites un *reboot* :
+
 ```bash
 root@rescue:~# umount /mnt
 root@rescue:~# reboot
@@ -439,13 +452,13 @@ root@rescue:~#
 ### Proxmox 
 
 Si vous rencontrez un soucis de connectivité réseau.  
-exemple : pas de ping après remplacement de la carte mère.
+exemple : pas de ping après le remplacement de la carte mère.
 
 Nous rencontrons une erreur lors du démarrage du système causé par l'ancienne valeur d'adresse MAC toujours présente :  
 ![proxmox](images/proxmox_edited.jpg){.thumbnail}
 
+- rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique).
 
-- boot en mode rescue
 ```bash
 root@rescue:~# cat /mnt/etc/network/interfaces
 # This file describes the network interfaces available on your system
@@ -485,6 +498,7 @@ root@rescue:~#
 ```
 
 - créer de nouveau le fichier `70-persistent-net.rules` avec la nouvelle adresse MAC et le nom de l'interface réseau repérée dans le fichier  `/mnt/etc/network/interfaces` :
+
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", NAME="enp3s0f0"
@@ -495,11 +509,12 @@ root@rescue:~#
 ### XenServer
 
 Si vous rencontrez un soucis de connectivité réseau.  
-exemple : pas de ping après remplacement de la carte mère.
+exemple : pas de ping après le remplacement de la carte mère.
 
 l'adresse MAC est configurée en statique et doit être réinitialisée.
 
-- boot en mode rescue et connexion en `chroot` :
+- rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique) et utiliser la commande `chroot` :
+
 ```bash
 root@rescue:~# mount /dev/sda1 /mnt
 root@rescue:~# mount -t proc /proc/ /mnt/proc/
@@ -510,10 +525,13 @@ root@rescue:~# chroot /mnt
 ```
 
 - changez la configuration en place pour qu'elle corresponde aux nouveaux paramètres :
+
 ```bash
 [root@rescue /]# xe-reset-networking --device=eth0 --mode=static --ip=xx.xx.xx.xx --netmask=255.255.255.0 --gateway=xx.xx.xx.xxx
 ```
+
 - il vous sera demandé de répondre à la question par "yes", ensuite faites "Enter" :
+
 ```bash
 ----------------------------------------------------------------------
 !! WARNING !!
@@ -548,6 +566,7 @@ Running in chroot, ignoring request.
 ```
 
 - tapez "exit" pour sortir du mode `chroot` puis démonter toutes les partitions :
+
 ```bash
 root@rescue:~# umount /mnt/sys
 root@rescue:~# umount /mnt/proc
@@ -560,6 +579,7 @@ root@rescue:~# umount /mnt
 #### Retour sur cas pratiques
 
 Il est nécessaire de vérifier et d'adapter les fichiers suivants :  
+
 - `/mnt/etc/sysconfig/network-scripts/interface-rename-data/static-rules.conf`  
 - `/mnt/etc/sysconfig/network-scripts/interface-rename-data/dynamic-rules.json`
 
@@ -568,19 +588,30 @@ Il est nécessaire de vérifier et d'adapter les fichiers suivants :
 
 ### ESXi
 
-Suite au remplacement de la Carte Mère, le tooling rescue n'arrive pas à modifier les nouvelles adresses MAC à travers le fichier `esxi.conf`.
-- boot en mode rescue afin de monter la partition `/` :
+Suite au remplacement de la carte mère, il est impossible demodifier les nouvelles adresses MAC à travers le fichier `esxi.conf` viale mode rescue.
+
+> [!warning]
+>
+> La procédure décrite ci-dessous ne concerne que les versions 6.5 ou inférieurs.
+> Au delà de cette version, le fichier state.tgz est crypté, il n'est donc plus possible de la suivre.
+> Il vous faudra réaliser une réinitialisation du réseau depuis l'interface d'administration via votre KVM ou IPMI.
+>
+
+- rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique) afin de monter la partition `/` :
+
 ```bash
 root@rescue:~# mount /dev/sdaX /mnt/
 ```
 
-- sauvegardez le fichier `state.tgz
+- sauvegardez le fichier `state.tgz`
+
 ```bash
 root@rescue:~# ls /mnt/state.tgz
 root@rescue:~# cp /mnt/state.tgz /mnt/state.tgz.`date +%s`
 ```
 
 - créez un environnement de travail :  
+
 ```bash
 root@rescue:~# mkdir /home/ovh/esxi
 root@rescue:~# WORKINGDIR=/home/ovh/esxi
@@ -589,25 +620,29 @@ root@rescue:~# cd $WORKINGDIR
 
 - extraire le contenu de `state.tgz` vers `$WORKINGDIR`, pour ensuite extraire le contenu de `local.tgz`
 - editez le fichier `esx.conf` obtenu :
+
 ```bash
 root@rescue:/home/ovh/esxi# tar xf /mnt/state.tgz -C $WORKINGDIR
 root@rescue:/home/ovh/esxi# tar xf /home/ovh/esxi/local.tgz -C $WORKINGDIR
 root@rescue:/home/ovh/esxi# vim etc/vmware/esx.conf
 ```
 
-- repérez et modifez l'addresse MAC pour `vmkernelnic` :
+- repérez et modifiez l'addresse MAC pour `vmkernelnic` :
+
 ```bash
 /net/vmkernelnic/child[0000]/mac = "XX:XX:XX:XX:XX:XX"
 ```
 
 - identifez sur quelle interface l'adresse IP principale est utilisée :
+
 ```bash
 /net/vswitch/child[0000]/uplinks/child[0000]/pnic = "vmnicX"
 ```
 
-- mettre à jour l'adresse MAC de l'interface principale :
+- mettez à jour l'adresse MAC de l'interface principale :
+
 > [!warning]
-> ne pas changer l'adresse MAC virtuelle
+> ne changer pas l'adresse MAC virtuelle
 >
 
 ```bash
@@ -616,11 +651,12 @@ root@rescue:/home/ovh/esxi# vim etc/vmware/esx.conf
 /net/pnic/child[0001]/name = "vmnic1"
 ```
 
-> [!wariing]
+> [!warning]
 > S'il y a une interface vRACK, ne pas oublier de changer l'adresse MAC également.
 >
 
-- réalisez une sauvegarde puis démontez la partition `/` :
+- faites une sauvegarde puis démontez la partition `/` :
+
 ```bash
 root@rescue:/home/ovh/esxi# tar -czf $WORKINGDIR/local.tgz etc/
 root@rescue:/home/ovh/esxi# tar -czf /mnt/state.tgz local.tgz
@@ -632,6 +668,7 @@ root@rescue:/home/ovh/esxi# umount /mnt
 
 Vérifiez l'ordre des déclarations de vos vmnicX :
 exemple fonctionnel :
+
 ```bash
 root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 /vmkdevmgr/pci/m00008901/alias = "vmhba0"
@@ -642,29 +679,35 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 
 ### Windows (Hyper-V)
 
-- Suite au remplacement de la Carte-Mère, le serveur ne peut pas être joignable tant que vous n'avez pas manuellement changé les adresses MAC à travers le Gestionnaire de périphériques.
+- Suite au remplacement de la carte mère, le serveur ne peut pas être joignable tant que vous n'avez pas manuellement changé les adresses MAC à travers le **Gestionnaire de périphériques**.
 
-2 méthodes 
+Il existe 2 méthodes 
+
 #### via IPMI/KVM
-- connectez-vous en tant qu'administrateur à partir de l'interface IPMI/KVM.
-- pressez la combinaison de touches WINDOWS+R, puis à travers l'invite `run`, exécutez la commande `devmgmt.msc`:  
+
+- connectez-vous en tant qu'administrateur à partir de l'interface [IPMI/KVM](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/).
+- ouvrez l’utilitaire `Exécuter`{.action} (touche de logo Windows + `R`{.action}), puis à travers l'invite `run`, exécutez la commande `devmgmt.msc`:
+
 ![win_device_manager](images/win_device_manager_edited.png){.thumbnail}
 
 - ouvrir `Network adapters` et selectionner l'adaptateur correspondant à `eth0`
-- clic-droit > Properties > Advanced
+- faites un clic-droit sur `Properties` > `Advanced`
 - repérez `Locally Administered Adress`
-- renseignez la nouvelle valeur de l'adresse MAC (chiffres uniquements, sans espaces).  
+- renseignez la nouvelle valeur de l'adresse MAC (chiffres uniquements, sans espaces).
+
 ![win_advanced](images/win_advanced_edited.png){.thumbnail}
 
 
 #### via WinPE
 
-- boot en mode `WinPE`
+- rédemarrer le serveur en mode `WinPE`
 - lancez la commande `regedit` via l'invite de command `run`
 - chargez la base de registre local à travers celle disponible dans `WinPE` puis cliquez sur `HKEY_LOCAL_MACHINE` :  
+
 ![win_regedit_1](images/win_regedit_1_edited.png){.thumbnail}
 
 - ensuite cliquez sur `Load Hive...`  
+
 ![win_regedit_2](images/win_regedit_2_edited.png){.thumbnail}
 
 > [!primary]
@@ -672,12 +715,14 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 > N'oubliez pas de naviguer sur le lecteur C:\
 >
 
-- repérez le registre `SYSTEM`  
+- repérez le registre `SYSTEM`
+
 ![win_load](images/win_load_edited.png){.thumbnail}
 
 - il vous sera demandé d'entrer un nom, vous pouvez, par exemple, choisir `OVH_TEST`.
 
 - repérez la valeur du registre suivant :
+
 ```bash
 "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002BE10318}"
 ```
@@ -689,12 +734,14 @@ root@rescue:/home/ovh/esxi# cat etc/vmware/esx.conf | grep "/vmkdevmgr/pci"
 Vous devriez voir plusieurs sous-clés nommées comme ceci : 0000,0001, etc...
 
 - vous devez cliquer sur chaque sous-clés pour vérifier la valeur `DriverDesc` qui doit correspondre à votre interface réseau.
-- vous pouvez vérifier le nom de votre interface à partir d'un prompt via la commande suivante :
+- vous pouvez vérifier le nom de votre interface à partir d'un terminal via la commande suivante :
+
 ```bash
 ipconfig /all
 ```
 
-- regardez dans les entrées de registre `NetworkAddress` sur le panneau de droite, et changez la valeur par celle de votre nouvelle adresse MAC. Si cette entrée n'existe pas, clic-droit dans une zone vide pour créer une valeur de type `String` avec le nom `NetworkAddress`.  
+- regardez dans les entrées de registre `NetworkAddress` sur le panneau de droite, et changez la valeur par celle de votre nouvelle adresse MAC. Si cette entrée n'existe pas, faites un clic-droit dans une zone vide pour créer une valeur de type `String` avec le nom `NetworkAddress`.
+
 ![win_regedit_3](images/win_regedit_3_edited.png){.thumbnail}
 
 
@@ -702,12 +749,12 @@ ipconfig /all
 - cliquez sur OVH_TEST (crée précédement), ensuite cliquez sur `File` (en haut à gauche) et selectionnez `Unload hive...`
 
 
-
 ### Repérer le nom de vos interfaces réseaux
 
 Suite au remplacement de la Carte-Mère, le serveur ne peut pas être joignable car le controleur des interfaces réseaux a été renommé par le système d'exploiration.
 
-- boot en rescue, monter la partition `/`, ensuite utilisez le système `chroot` :
+- rédemarer votre serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique), monter la partition `/`, ensuite utilisez la commande `chroot` :
+
 ```bash
 root@rescue:~# mount /dev/my_disk /mnt
 root@rescue:~# for i in /dev /dev/pts /proc /sys; do mount -B $i /mnt$i; done
@@ -715,12 +762,14 @@ root@rescue:~# chroot /mnt
 ```
 
 - vérifiez si les interfaces ont été modifiées, regardez dans les logs `var/log/messages` ou `var/log/kern.log` si l'interface a été renommée :
+
 ```bash
 Oct  9 22:25:49 node1 kernel: [    5.479916] ixgbe 0000:03:00.1 eno4: renamed from eth1
 Oct  9 22:25:49 node1 kernel: [    5.504285] ixgbe 0000:03:00.0 eno3: renamed from eth0
 ```
 
 - vérifiez votre fichier de configuration `/mnt/etc/udev/rules.d/70-persistent.-net.rules` et remplacez les nouvelles valeurs (adresses MAC) si nécessaire :
+
 ```bash
 root@rescue:~# cat /mnt/etc/udev/rules.d/70-persistent-net.rules
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="public"
@@ -728,17 +777,20 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:x
 ```
 
 - allez dans le repertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`
-- éditez le fichier `/etc/default/grub` et modifez la ligne commençant par `GRUB_CMDLINE_LINUX` pour obtenir ceci :
+- éditez le fichier `/etc/default/grub` et modifiez la ligne commençant par `GRUB_CMDLINE_LINUX` pour obtenir ceci :
+
 ```bash
 GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
 ```
 
 - exécutez la commande :
+
 ```bash
 root@rescue:~# grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-- sortir de l'envrionnement `chroot` en lançant la commande `exit` et démontez toutes les partitions :
+- sortir de l'envrionnement `chroot` en utilisant la commande `exit` et démontez toutes les partitions :
+
 ```bash
 root@rescue:~# umount /mnt/sys
 root@rescue:~# umount /mnt/proc
