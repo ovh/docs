@@ -40,7 +40,7 @@ The Public Cloud Databases offer supports the following PostgreSQL versions:
 - PostgreSQL 14
 - PostgreSQL 15
 
-Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/gb/en/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions. You can, additionally, follow EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
+Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/asia/en/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions. You can, additionally, follow EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
 
 ### PostgreSQL connectors
 
@@ -95,7 +95,7 @@ Right now, all nodes of a given cluster should be of the same type and distribut
 
 #### Flexible storage
 
-You can increased the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](https://docs.ovh.com/gb/en/publiccloud/databases/resize-cluster-storage/) for more information.
+You can increased the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](https://docs.ovh.com/asia/en/publiccloud/databases/resize-cluster-storage/) for more information.
 
 #### Node template upgrade
 
@@ -119,7 +119,7 @@ We try hard to avoid "disk full" situations that could be harmful to cluster hea
 2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
 3. You then have the ability to upgrade to a higher service plan with more storage.
 
-See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/gb/en/publiccloud/databases/handling-disk-full/) for more information.
+See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/asia/en/publiccloud/databases/handling-disk-full/) for more information.
 
 ### Features
 
@@ -149,7 +149,7 @@ So for example on a server with 7 GB memory, you will get approximately 200 conn
 
 #### Advanced parameters
 
-You can customize your PostgreSQL further through the use of advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/advanced-parameters-references/) for more information about which ones are supported.
+You can customize your PostgreSQL further through the use of advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/asia/en/publiccloud/databases/postgresql/advanced-parameters-references/) for more information about which ones are supported.
 
 #### Backups
 
