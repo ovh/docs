@@ -58,7 +58,7 @@ Es necesario:
 
 #### Configurar el hipervisor
 
-Todo está en el archivo `/etc/network/interfaces` :
+Todo está en el archivo `/etc/network/interfaces`:
 
 ````bash
 vi /etc/network/interfaces
@@ -259,4 +259,4 @@ iface ens18 inet static
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

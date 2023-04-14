@@ -6,6 +6,10 @@ section: vRack
 updated: 2022-02-24
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 **Última actualización: 24/02/2022**
 
 ## Objetivo
@@ -193,4 +197,4 @@ Por último, haga clic en `Aceptar`{.action} para guardar los cambios y reinicie
 
 [Configurar varios servidores dedicados en el vRack](../configurar-vrack-en-servidor-dedicado/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
