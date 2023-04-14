@@ -4,10 +4,10 @@ slug: list-of-ip-addresses-of-web-hosting-clusters
 excerpt: 'Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan'
 section: 'Web Hosting configuration'
 order: 01
-updated: 2021-01-08
+updated: 2023-04-14
 ---
 
-**Last updated 20th May 2020**
+**Last updated 14th April 2023**
 
 ## Objective
 
@@ -980,5 +980,9 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 [Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl)
 
 [Optimise your website’s performance](../web_hosting_optimise_your_website_performance)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

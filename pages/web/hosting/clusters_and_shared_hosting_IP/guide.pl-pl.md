@@ -3,10 +3,14 @@ title: 'Lista adresów IP klastrów i hostingów WWW'
 slug: lista-adresow-ip-klastrow-i-hostingow-www
 section: 'Konfiguracja hostingu'
 order: 01
-updated: 2021-01-08
+updated: 2023-04-14
 ---
 
-**Ostatnia aktualizacja z dnia 08-01-2021**
+**Ostatnia aktualizacja z dnia 14-04-2023**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
 ## Wprowadzenie 
 
@@ -952,4 +956,8 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

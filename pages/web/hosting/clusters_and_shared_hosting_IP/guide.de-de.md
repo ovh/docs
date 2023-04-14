@@ -4,10 +4,14 @@ excerpt: 'Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu v
 slug: verzeichnis-der-ip-adressen-web-hosting-cluster
 section: 'Webhosting-Konfiguration'
 order: 01
-updated: 2021-01-08
+updated: 2023-04-14
 ---
 
 **Letzte Aktualisierung am 08.01.2021**
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
 ## Ziel 
 
@@ -977,5 +981,9 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 [Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl)
 
 [Optimierung der Performance Ihrer Website](../webhosting_optimierung_der_performance_ihrer_webseite)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

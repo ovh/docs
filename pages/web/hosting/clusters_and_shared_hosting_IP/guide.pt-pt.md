@@ -3,12 +3,16 @@ title: 'Lista dos endereços IP dos clusters e alojamentos web'
 slug: lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web
 section: Configuração do alojamento
 order: 01
-updated: 2021-01-08
+updated: 2023-04-14
 ---
 
-**Última atualização: 08/01/2021**
+**Última atualização: 14/04/2023**
 
-## Sumário
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+## Objetivo
 
 Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assim, poderá nomeadamente encontrar o endereço IP a indicar nas zonas DNS em função:
 
@@ -952,4 +956,8 @@ Se precisa do endereço IP da **porta de saída** (gateway) do alojamento, deve 
 
 ## Quer saber mais?
 
-Ou fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+ 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
