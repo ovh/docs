@@ -6,10 +6,10 @@ section: PostgreSQL - Guides
 order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/'
-updated: 2023-01-19
+updated: 2023-04-14
 ---
 
-**Last updated January 19th, 2023**
+**Last updated April 14th, 2023**
 
 ## Objective
 
@@ -36,13 +36,13 @@ Database nodes have to be in the same region. Multi-AZ is currently not supporte
 
 The Public Cloud Databases offer supports the following PostgreSQL versions:
 
-- PostgreSQL 10
 - PostgreSQL 11
 - PostgreSQL 12
 - PostgreSQL 13
 - PostgreSQL 14
+- PostgreSQL 15
 
-You can follow EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
+Please refer to the [DBMS lifecycle policy guide](https://docs.ovh.com/gb/en/publiccloud/databases/lifecycle-policy/) for recommendations on version upgrades and end of life announcements of major versions. You can, additionally, follow EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
 
 ### PostgreSQL connectors
 
@@ -66,6 +66,9 @@ Here is an overview of the various plans' capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
+> [!primary]
+> Be aware that you will be able to upgrade your plan but will not be able to downgrade it afterwards.
+
 #### Nodes and replicas
 
 - **Essential**: the cluster can support at most one node.
@@ -81,21 +84,30 @@ More information on <https://www.postgresql.org/about/licence/>.
 
 Here are the node types you can choose from:
 
-| Name    | Disk (GB) | Cores | Memory (GB) |
-| ------- | --------- | ----- | ----------- |
-| db1-7   | 160       | 2     | 7           |
-| db1-15  | 320       | 4     | 15          |
-| db1-30  | 640       | 8     | 30          |
-| db1-60  | 1280      | 16    | 60          |
-| db1-120 | 2560      | 32    | 120         |
+| Name    | Storage                 | vCore | Memory (GB) |
+| ------- | ----------------------- | ----- | ----------- |
+| db1-4   | From 80 GB to 240 GB    | 1     | 4           |
+| db1-7   | From 160 GB to 480 GB   | 2     | 7           |
+| db1-15  | From 320 GB to 960 GB   | 4     | 15          |
+| db1-30  | From 640 GB to 1.92 TB  | 8     | 30          |
+| db1-60  | From 1.28 TB to 3.84 TB | 16    | 60          |
+| db1-120 | From 2.56 TB to 7.68 TB | 32    | 120         |
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
+
+#### Flexible storage
+
+You can increased the storage of your cluster up to the maximum allowed for a given reference. Please refer to the [Resize your cluster storage guide](https://docs.ovh.com/gb/en/publiccloud/databases/resize-cluster-storage/) for more information.
+
+#### Node template upgrade
+
+You can upgrade the node template of your cluster to scale your hardware resources up. This operation causes no interruption of service but be aware that you will not be able to downgrade the node template afterwards.
 
 #### Disk type
 
 The type of storage available may vary according to the region your cluster lives in: see [Availability of Public Cloud products](https://www.ovhcloud.com/it/public-cloud/regions-availability/) for more information about block storage type availability depending on region. Thus, your cluster may be backed by e.g. *High Speed* or *High Speed Gen2* block storage.
 
-Also, the performance caracteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/it/public-cloud/block-storage/) for more information about those performance caracteristics.
+Also, the performance characteristics of the various storage offerings may vary depending on e.g. the storage size your cluster uses: *High Speed* may offer better iops than *High Speed Gen2* for some disk sizes. See [Block Storage documentation](https://www.ovhcloud.com/it/public-cloud/block-storage/) for more information about those performance characteristics.
 
 Public Cloud Databases will select the most efficient disk type for your cluster depending on your cluster parameters.
 
@@ -105,8 +117,11 @@ The disk size listed above is the total disk size of the underlying machine. How
 
 We try hard to avoid "disk full" situations that could be harmful to cluster health. Therefore:
 
-1. When reaching 97% capacity, the customer will have his database instance moved in "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
-2. You then have the ability to upgrade to a higher service plan with more storage.
+1. When reaching a concerning level of disk usage, a warning email is sent.
+2. When reaching a concerning level of disk usage, the service is moved in the "DISK_FULL" state, and "read-only" mode, meaning no more writes can be done.
+3. You then have the ability to upgrade to a higher service plan with more storage.
+
+See the [Handling «Disk Full» situations documentation](https://docs.ovh.com/gb/en/publiccloud/databases/handling-disk-full/) for more information.
 
 ### Features
 
@@ -123,7 +138,9 @@ Here are some considerations to take into account when using private network:
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from outside subnet, Openstack IP gateway must be enabled in the subnet use for the Database service. The customer is responsible for any other custom network setup.
 
+##### Authorised IPs
 
+Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic, until then your service will be unreachable. 
 
 #### Maximum simultaneous connections
 
@@ -134,7 +151,7 @@ So for example on a server with 7 GB memory, you will get approximately 200 conn
 
 #### Advanced parameters
 
-We do not currently support PostgreSQL advanced parameters.
+You can customize your PostgreSQL further through the use of advanced parameters. See the [Advanced parameters references documentation](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/advanced-parameters-references/) for more information about which ones are supported.
 
 #### Backups
 
@@ -146,7 +163,7 @@ We do not currently support PostgreSQL advanced parameters.
 
 #### Logs and metrics
 
-Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
+Logs and metrics are available through the Control Panel and the API.
 As of today, you can't export logs and metrics, nor plug them into a remote tool.
 
 - **Logs retention**: 1000 lines of logs
