@@ -26,7 +26,7 @@ In certain cases — like replacing a datastore or scaling it up to a higher cap
 
 > [!warning]
 >
-> Please note that you cannot remove the  **two 300 GB or 1.2 TB datastores** included in your pack. For security reasons, the removal request will also be blocked if you have virtual machines (VMs) on the datastore concerned (they will be listed in the confirmation window).
+> For security reasons, the removal request will be blocked if you have virtual machines (VMs) on the datastore concerned (they will be listed in the confirmation window).
 > 
 
 

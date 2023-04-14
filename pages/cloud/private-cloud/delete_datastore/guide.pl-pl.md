@@ -25,7 +25,7 @@ W niektórych przypadkach może zaistnieć potrzeba usunięcia datastore z Twoje
 
 > [!warning]
 >
-> Uwaga, nie jest możliwe usunięcie **dwóch przestrzeni datastore o pojemności 300 GB lub 1,2 TB** zawartych w pakiecie. Ze względów bezpieczeństwa żądanie usunięcia datastora nie zostanie zrealizowane, jeśli na wybranej przestrzeni dyskowej znajdują się Twoje wirtualne maszyny (ich lista znajduje się w oknie potwierdzenia usunięcia datastore).
+> Ze względów bezpieczeństwa żądanie usunięcia datastora nie zostanie zrealizowane, jeśli na wybranej przestrzeni dyskowej znajdują się Twoje wirtualne maszyny (ich lista znajduje się w oknie potwierdzenia usunięcia datastore).
 > 
 
 
