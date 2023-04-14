@@ -45,8 +45,9 @@ The Apache Spark dashboard for your job will then start automatically.
 
 >[!warning]
 >
-> The `/cloud/project/{serviceName}/dataProcessing/metrics` endpoint is now deprecated and won't be supported from the 20th of July 2023
-> Once the feature will be removed, you won't be able to get your token, access the metrics of your jobs or use the Grafana dashboard that is currently provided
+> The endpoint `/cloud/project/{serviceName}/dataProcessing/metrics` is deprecated and will no longer be supported after the 20th of July 2023.
+>
+> Once the feature is removed, you will not be able to get your token, access the metrics of your jobs or use the Grafana dashboard that is currently provided.
 >
 
 After you submit a job to the Data Processing platform, follow these steps to monitor your job using a Grafana dashboard. 
