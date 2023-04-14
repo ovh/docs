@@ -1,5 +1,5 @@
 ---
-title: Activer les connexions SSO de Google Workspace avec votre compte OVHcloud
+title: Activer les connexions Azure SSO avec votre compte OVHcloud
 slug: connect-saml-sso-azure-ad
 excerpt: "Découvrez comment associer votre Azure Active Directory à votre compte OVHcloud en utilisant SAML 2.0"
 section: Utilisation avancée
@@ -8,7 +8,6 @@ updated: 2023-04-05
 ---
 
 **Dernière mise à jour le 05/04/2023**
-
 
 ## Objectif
 
