@@ -72,7 +72,7 @@ post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast AD
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-Per configurare due Additional IP, il file /etc/network/interfaces.d/50-cloud-init deve essere di questo tipo:
+Per configurare due Additional IP, il file `/etc/network/interfaces.d/50-cloud-init` deve essere di questo tipo:
 
 ```bash
 auto eth0
@@ -146,7 +146,7 @@ post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast AD
 pre-down /sbin/ifconfig eth0:0 down
 ```
 
-Per configurare due Additional IP, il file /etc/network/interfaces deve essere di questo tipo:
+Per configurare due Additional IP, il file `/etc/network/interfaces` deve essere di questo tipo:
 
 ```bash
 auto eth0
@@ -460,7 +460,7 @@ cp /etc/sysconfig/network/ifcfg-ens32 /etc/sysconfig/network/ifcfg-ens32.bak
 
 #### Step 2: modifica il file sorgente
 
-Ora è possibile modificare il file /etc/sysconfig/network/ifcfg-ens32 in questo modo:
+Ora è possibile modificare il file `/etc/sysconfig/network/ifcfg-ens32` in questo modo:
 
 ```bash
 IPADDR_1=ADDITIONAL_IP

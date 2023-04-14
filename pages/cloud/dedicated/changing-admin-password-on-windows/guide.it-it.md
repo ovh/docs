@@ -6,11 +6,11 @@ section: 'Diagnostica e modalità Rescue'
 updated: 2021-01-12
 ---
 
-**Ultimo aggiornamento: 16/12/2020**
-
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
+
+**Ultimo aggiornamento: 16/12/2020**
 
 ## Obiettivo
 
@@ -49,7 +49,8 @@ Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](../res
 
 ### Step 2: esegui il mount della partizione di sistema
 
-Accedi al tuo server via SSH. Se necessario, consulta la guida d'>Trattandosi di un server Windows, le partizioni saranno intitolate "Microsoft LDM data".
+Accedi al tuo server via SSH. Se necessario, consulta la guida [Introduzione a SSH](../introduzione-ssh/)
+<br>Trattandosi di un server Windows, le partizioni saranno intitolate "Microsoft LDM data".
 
 ```
 # fdisk -l

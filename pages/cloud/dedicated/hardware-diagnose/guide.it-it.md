@@ -14,7 +14,7 @@ updated: 2022-12-15
 
 ## Obiettivo
 
-Con il passare del tempo, l’usura di un server può causare malfunzionamenti dovuti a problemi di tipo hardware. Per questo motivo, i server dedicati OVH sono dotati di numerosi strumenti di diagnostica che permettono di individuare i componenti hardware difettosi.
+Con il passare del tempo, l’usura di un server può causare malfunzionamenti dovuti a problemi di tipo hardware. Per questo motivo, i server dedicati OVHcloud sono dotati di numerosi strumenti di diagnostica che permettono di individuare i componenti hardware difettosi.
 
 **Questa guida ti mostra come diagnosticare problemi hardware su un server.**
 
