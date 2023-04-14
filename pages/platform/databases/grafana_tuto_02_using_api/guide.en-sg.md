@@ -3,7 +3,7 @@ title: Grafana - Tutorial - How to use the Grafana API
 slug: grafana/tutorial-using-api
 excerpt: "Learn how to use the Grafana API"
 section: Grafana - Tutorials
-order: 010
+order: 011
 updated: 2023-04-06
 ---
 
@@ -11,14 +11,14 @@ updated: 2023-04-06
 
 ## Objective
 
-Using the Grafana's API is not obvious and already clearly documented.
-This tutorial explains how to configure Grafana to use API and how make call to the exposed API.
+Using the Grafana API is not obvious and already clearly documented.
+This tutorial explains how to configure Grafana to use the API and how make calls to the exposed API.
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- A Grafana database running on your OVHcloud Public Cloud project. [This guide](https://docs.ovh.com/ie/en/publiccloud/databases/getting-started/) can help you to create a managed Grafana. 
+- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A Grafana database running on your OVHcloud Public Cloud project (see [this guide](https://docs.ovh.com/sg/en/publiccloud/databases/getting-started/) to create a managed Grafana)
 
 ## Instructions
 
@@ -32,11 +32,11 @@ Create a new service account `sa-editor` with the role `Editor`:
 
 ![Grafana service accounts creation](images/service-account-creation.png){.thumbnail}
 
-Click on the `Add service account token`{.action}:
+Click on `Add service account token`{.action}:
 
 ![Grafana service accounts token button](images/add-service-account-token-button.png){.thumbnail}
 
-Enter the name of the desired token, `grafana-sa-token-editor`, and click on the `Generate token`{.action}:
+Enter the name of the desired token, `grafana-sa-token-editor`, and click on `Generate token`{.action}:
 
 ![Grafana service accounts token generation](images/generate-sa-token.png){.thumbnail}
 
@@ -58,13 +58,14 @@ You are ready to use this token with the Grafana API.
 
 > [!primary]
 >
-> Detailed instructions on how to use the API and the possible actions can be found in the official documentation: https://grafana.com/docs/grafana/latest/developers/http_api/
+> Detailed instructions on how to use the API and the possible actions can be found in the official documentation: <https://grafana.com/docs/grafana/latest/developers/http_api/>
 
 > [!warning]
 > 
-> Don't forget to set the `Authorised IP addresses` in the Grafana configuration. See [Configure your Grafana instance to accept incoming connections documentation](https://docs.ovh.com/sg/en/publiccloud/databases/grafana/configure-grafana-instance/) guide for more details.
+> Don't forget to set the `Authorised IP addresses` in the Grafana configuration. See our guide on [Configuring your Grafana instance to accept incoming connections](https://docs.ovh.com/sg/en/publiccloud/databases/grafana/configure-grafana-instance/) for more details.
 
-To send a request to the API you must use the previously created token and set it in the request header as a 'Bearer token':
+To send a request to the API you must use the previously created token and set it in the request header as a "Bearer token":
+
 ```bash
 export GRAFANA_API_TOKEN=042footoken420
 
@@ -94,7 +95,7 @@ curl -H "Authorization: Bearer $GRAFANA_API_TOKEN" https://grafana-xxxxxxxxx-yyy
 
 ```
 
-Here it is, you can now use all the power of the Grafana's APIs.
+Here it is, you can now use all the power of the Grafana API.
 
 ## We want your feedback!
 
