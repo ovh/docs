@@ -28,7 +28,7 @@ O protocolo de comunicação SSH (Secure Shell) é a ferramenta principal para e
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud.
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) ou um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
 - Uma aplicação cliente SSH (em linha de comandos ou em interface gráfica)
 
 > [!primary]

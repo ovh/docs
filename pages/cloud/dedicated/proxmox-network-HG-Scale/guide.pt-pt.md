@@ -28,7 +28,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos Additional IP em modo bridged 
 
 - Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
 - Dispor de [Additional IP](https://www.ovhcloud.com/pt/bare-metal/ip/)
-* Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+* Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 > [!warning]
 >

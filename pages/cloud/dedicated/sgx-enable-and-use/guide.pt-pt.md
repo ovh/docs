@@ -6,11 +6,11 @@ section: 'Utilização avançada'
 updated: 2022-08-31
 ---
 
-**Última atualização: 31/08/2022**
-
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
+
+**Última atualização: 31/08/2022**
 
 ## Sumário
 
@@ -124,7 +124,7 @@ Pode verificar se o estado está agora ativado:
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
-#### Passo 3 Instalar a pilha de software SGX <a name="sgx-softwares"></a>
+#### Passo 3 - Instalar a pilha de software SGX <a name="sgx-softwares"></a>
 
 Agora iremos instalar o driver Intel e o SDK para poder desenvolver e executar aplicações SGX.
 
