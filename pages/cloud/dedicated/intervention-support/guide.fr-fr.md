@@ -15,7 +15,7 @@ Cette documentation a pour objectif de vous accompagner dès lors qu'une interve
 Nos interventions de maintenance se limitent uniquement à la partie matériel, et nous vous proposons si besoin ce support relatif à vos références en lien avec vos systèmes installés : Systèmes d'exploitation, Hyperviseur, etc...
 
 Tout ceci dans le but de vous accompagner et faire en sorte qu'il y ait le moins d'impact possible dans le cycle de vie de vos environnements.
-vous retrouverez ici toutes les infos nécessaires, si vos systèmes sont listés, vous n'aurez plus qu'à suivre la procédure correspondante :
+Vous retrouverez ici toutes les infos nécessaires, si vos systèmes sont listés, vous n'aurez plus qu'à suivre la procédure correspondante :
 
 - Ubuntu
 - CentOS/Alma Linux
@@ -122,7 +122,7 @@ MACAddress=xx:xx:xx:xx:xx:xx
 root@rescue:~#
 ```
 
-- n'oubliezpas de démonter la partition `/` avant de redémarrer le serveur.
+- n'oubliez pas de démonter la partition `/` avant de redémarrer le serveur.
 
 
 #### Retour sur cas pratiques
@@ -137,7 +137,7 @@ Dans certain cas, il faut propager la nouvelle adresse MAC dans les fichiers sui
 ### CentOS/Alma Linux
 
 Si vous rencontrez un soucis de connectivité réseau.  
-exemple : pas de ping après remplacement de la carte mère.
+exemple : pas de ping après le remplacement de la carte mère.
 
 - rédemarer le serveur en [mode rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/#en-pratique).
 - monter la partition `/`
@@ -692,7 +692,7 @@ Il existe 2 méthodes
 
 - ouvrir `Network adapters` et selectionner l'adaptateur correspondant à `eth0`
 - faites un clic-droit sur `Properties` > `Advanced`
-- repérez `Locally Administered Adress`
+- repérez `Locally Administered Address`
 - renseignez la nouvelle valeur de l'adresse MAC (chiffres uniquements, sans espaces).
 
 ![win_advanced](images/win_advanced_edited.png){.thumbnail}
