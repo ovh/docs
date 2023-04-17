@@ -11,7 +11,7 @@ updated: 2022-10-13
 
 ## Objectif
 
-Vous pouvez utiliser l'authentification SSO (*Single Sign-On*) **unique** pour vous connecter à votre compte OVHcloud. Pour activer ces connexions, votre compte et vos services AD FS (*Active Directory Federation Services*) doivent être configurés à l'aide des authentifications SAML (*Security Assertion Markup Language*).
+Vous pouvez utiliser l'authentification **SSO** (*Single Sign-On*) pour vous connecter à votre compte OVHcloud. Pour activer ces connexions, votre compte et vos services AD FS (*Active Directory Federation Services*) doivent être configurés à l'aide des authentifications SAML (*Security Assertion Markup Language*).
 
 **Ce guide vous explique comment associer votre compte OVHcloud à un Active Directory externe.**
 

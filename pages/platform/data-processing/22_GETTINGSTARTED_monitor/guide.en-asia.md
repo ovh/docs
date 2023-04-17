@@ -7,7 +7,7 @@ order: 2
 updated: 2020-03-06
 ---
 
-**Last updated 06<sup>th</sup> March, 2020**
+**Last updated 14<sup>th</sup> April, 2023**
 
 ## Objective
 
@@ -43,7 +43,14 @@ The Apache Spark dashboard for your job will then start automatically.
 
 ### Grafana Dashboard
 
-After you submit a job to the Data Processing platform, follow these steps to monitor your job using a Grafana dashboard.
+>[!warning]
+>
+> The endpoint `/cloud/project/{serviceName}/dataProcessing/metrics` is deprecated and will no longer be supported after the 20th of July 2023.
+>
+> Once the feature is removed, you will not be able to get your token, access the metrics of your jobs or use the Grafana dashboard that is currently provided.
+>
+
+After you submit a job to the Data Processing platform, follow these steps to monitor your job using a Grafana dashboard. 
 
 - Find your job in the list of jobs in the Data Processing page in the OVHcloud Manager.
 - Click on the name of the job to open its dashboard.
