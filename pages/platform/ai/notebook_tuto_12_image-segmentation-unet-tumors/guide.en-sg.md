@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Tutorial - Brain tumor segmentation using U-Net
 slug: notebooks/tuto-image-segmentation-unet-brain-tumors
-excerpt: How to convert Speech to Text using AI Notebooks
+excerpt: Implementing a Convolutional Neural Network for Brain Tumor Segmentation in Medical Imaging
 section: AI Notebooks - Tutorials
 order: 12
 updated: 2023-04-13
@@ -31,6 +31,7 @@ At the end of this tutorial, you will have learnt the principal methods to **seg
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
+- A [Kaggle](https://www.kaggle.com/) account to download the dataset
 
 ## Instructions
 
@@ -96,9 +97,10 @@ You can then reach your notebook’s URL once the notebook is running.
 
 Once our [AI examples repository](https://github.com/ovh/ai-training-examples/) has been cloned in your environment, find your notebook by following this path: `ai-training-examples` > `notebooks` > `computer-vision` > `image-segmentation` > `tensorflow` > `brain-tumor-segmentation-unet` > `notebook_image_segmentation_unet.ipynb`.
 
-A preview of this notebook can be found on GitHub [here](####PUT LINK ONCE AVAILABLE####).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-segmentation/tensorflow/brain-tumor-segmentation-unet/notebook_image_segmentation_unet.ipynb).
 
 ## Go further
+
 There are many other tasks that exist in the computer vision field. Check our other tutorials to learn how to:
 
 - [Use Transfer Learning with ResNet50 for image classification](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/resnet50/notebook-resnet-transfer-learning-image-classification.ipynb)
