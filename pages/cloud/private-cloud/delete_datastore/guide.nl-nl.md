@@ -27,7 +27,7 @@ In sommige gevallen kan het handig zijn om een datastore uit uw cluster te verwi
 
 > [!warning]
 >
-> Let op: het is niet mogelijk om de bij uw pakket inbegrepen **twee 300 GB of 1.2 TB datastores** te verwijderen. Om veiligheidsredenen zal het verwijderingsverzoek ook afgewezen worden als er virtuele machines (VM's) aanwezig zijn in de betreffende datastore (u vindt de lijst in het validatievenster).
+> Om veiligheidsredenen zal het verwijderingsverzoek afgewezen worden als er virtuele machines (VM's) aanwezig zijn in de betreffende datastore (u vindt de lijst in het validatievenster).
 > 
 
 

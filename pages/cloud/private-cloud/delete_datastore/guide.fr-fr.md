@@ -27,7 +27,7 @@ Dans certains cas, il peut être utile de supprimer un datastore de votre cluste
 
 > [!warning]
 >
-> Attention, il n'est pas possible de supprimer les **deux datastores de 300 Go ou 1,2 To** inclus dans votre pack. Pour des raisons de sécurité, la demande de suppression échouera également si vous avez des machines virtuelles (VM) présentes sur le datastore concerné (vous trouverez la liste dans la fenêtre de validation).
+> Pour des raisons de sécurité, la demande de suppression échouera si vous avez des machines virtuelles (VM) présentes sur le datastore concerné (vous trouverez la liste dans la fenêtre de validation).
 > 
 
 
