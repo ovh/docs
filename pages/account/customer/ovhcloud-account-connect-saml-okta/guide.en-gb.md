@@ -1,23 +1,23 @@
 ---
-title: Enabling OKTA SSO connections with your OVHcloud account
+title: Enabling Okta SSO connections with your OVHcloud account
 slug: connect-saml-sso-okta
-excerpt: "Learn how to associate your OKTA service with your OVHcloud account via SAML 2.0"
+excerpt: "Learn how to associate your Okta service with your OVHcloud account via SAML 2.0"
 section: 'Advanced use'
 order: 02
-updated: 2023-03-30
+updated: 2023-04-18
 ---
 
-**Last updated 30th March 2023**
+**Last updated 18th April 2023**
 
 ## Objective
 
-You can use unique **single sign-on** (SSO) to sign in to your OVHcloud account. To enable these connections, your account and OKTA accounts have to be configured using Security Assertion Markup Language (SAML) authentication.
+You can use unique **single sign-on** (SSO) to sign in to your OVHcloud account. To enable these connections, your account and Okta accounts have to be configured using Security Assertion Markup Language (SAML) authentication.
 
-**This guide explains how to associate your OVHcloud account with an external OKTA service.**
+**This guide explains how to associate your OVHcloud account with an external Okta service.**
 
 ## Requirements
 
-- Being an administrator of a OKTA service
+- Being an administrator of a Okta service
 - An [OVHcloud account](https://docs.ovh.com/gb/en/customer/create-ovhcloud-account/)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
@@ -25,16 +25,16 @@ You can use unique **single sign-on** (SSO) to sign in to your OVHcloud account.
 
 > [!primary]
 >
-> In order for a service provider (i.e. your OVHcloud account) to establish an SSO connection with an identity provider (i.e. your OKTA service), the key is to establish a mutual trust relationship by registering the SSO connection in both services.
+> In order for a service provider (i.e. your OVHcloud account) to establish an SSO connection with an identity provider (i.e. your Okta service), the key is to establish a mutual trust relationship by registering the SSO connection in both services.
 >
 
-### Registering OVHcloud into OKTA
+### Registering OVHcloud into Okta
 
-Your OKTA acts as an identity provider. Requests to authenticate your OVHcloud account will only be accepted if you have first declared it as a trusted third party.
+Your Okta service acts as an identity provider. Requests to authenticate your OVHcloud account will only be accepted if you have first declared it as a trusted third party.
 
 This means that it must be added as `Applications`.
 
-Log in to the OKTA administration interface with your administrator account.
+Log in to the Okta administration interface with your administrator account.
 
 Go to `Applications`{.action} then again `Applications`{.action}.
 
@@ -73,15 +73,15 @@ Then open the application and go to the "Assignments" tab and assign users or gr
 
 ![Assign users](images/OKTA_add_user.png){.thumbnail}
 
-Before going to the next section, go to the "Sign On" tab, and access to the **Metadata URL** and save the XML provided
+Before going to the next section, go to the "Sign On" tab, and access to the **Metadata URL** and save the provided XML file
 
 ![Retrieve metadata](images/OKTA_retrieve_metadata.png){.thumbnail}
 
-Your OKTA service now trusts OVHcloud as a service provider. The next step is to ensure that the OVHcloud account trusts your OKTA as an identity provider.
+Your Okta service now trusts OVHcloud as a service provider. The next step is to ensure that the OVHcloud account trusts your Okta as an identity provider.
 
-### Registering OKTA into the OVHcloud account and configuring the connection
+### Registering Okta into the OVHcloud account and configuring the connection
 
-To add OKTA as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+To add Okta as a trusted identity provider, you need to provide the identity provider metadata in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 Once logged in, click your profile at the top right.
 
@@ -99,11 +99,11 @@ Click the `SSO connection`{.action} button.
 
 ![OVHcloud SSO connection step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Fill in the XML metadata of your OKTA service. Enter `groups` as the "Group Attribute Name". Click `Confirm`{.action}.
+Fill in the XML metadata of your Okta service. Enter `groups` as the "Group Attribute Name". Click `Confirm`{.action}.
 
 ![OVHcloud SSO connection step 2](images/ovhcloud_add_federation.png){.thumbnail}
 
-Now you need to retrieve your OKTA as identity provider, as well as default groups.
+Now you need to retrieve your Okta as identity provider, as well as default groups.
 
 ![OVHcloud SSO connection step 3](images/ovhcloud_add_federation_success.png){.thumbnail}
 
@@ -115,7 +115,7 @@ The `...`{.action} button allows you to update or delete the SSO, and view its d
 
 ![OVHcloud SSO connection step 5](images/ovhcloud_user_management_connect_sso_5.png){.thumbnail}
 
-Your OKTA is now considered a trusted identity provider. However, you still need to add groups to your OVHcloud account.
+Your Okta service is now considered a trusted identity provider. However, you still need to add groups to your OVHcloud account.
 
 > [!warning]
 > If you try to connect via SSO at this point, you will probably receive a `Not in valid groups` error message.
@@ -123,24 +123,24 @@ Your OKTA is now considered a trusted identity provider. However, you still need
 > That is because your OVHcloud account checks whether the authenticating user belongs to an existing group on the account.
 >
 
-You must then assign **roles** to OKTA user groups at OVHcloud. Otherwise, your OVHcloud account does not know what the user is allowed to do and, by default, no rights are assigned.
+You must then assign **roles** to Okta user groups at OVHcloud. Otherwise, your OVHcloud account does not know what the user is allowed to do and, by default, no rights are assigned.
 
 From the OVHcloud Control Panel, add a group by clicking the `Declare a group`{.action} button and filling in the fields:
 
-- **Group name**: Group name within OKTA
+- **Group name**: Group name within Okta
 - **Role**: Level of rights granted to this group
 
-![OKTA User Management Groups](images/ovhcloud_user_management_groups_1.png){.thumbnail}
+![Okta User Management Groups](images/ovhcloud_user_management_groups_1.png){.thumbnail}
 
-![OKTA User Management Groups](images/ovhcloud_user_management_groups_2.png){.thumbnail}
+![Okta User Management Groups](images/ovhcloud_user_management_groups_2.png){.thumbnail}
 
 You can then verify that the group is added to your OVHcloud account in the "Groups" section:
 
-![OKTA User Management Groups](images/ovhcloud_user_management_groups_3.png){.thumbnail}
+![Okta User Management Groups](images/ovhcloud_user_management_groups_3.png){.thumbnail}
 
 When you later log in with a user from the **Intern** group, your OVHcloud account will recognise that the user has the role "UNPRIVILEGED" specified by his group.
 
-You will then be able to log out of your account and log back in with your OKTA as an identity provider.
+You will then be able to log out of your account and log back in with your Okta as an identity provider.
 
 ### Connecting via SSO
 
@@ -148,11 +148,11 @@ On [the OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=h
 
 ![Connection to OVHcloud federation](images/ovhcloud_federation_login_1.png){.thumbnail}
 
-You are then redirected to your OKTA login page. Enter the login and password for a user of your OKTA, then click the `Sign in`{.action} button.
+You are then redirected to your Okta login page. Enter the login and password for a user of your Okta, then click the `Sign in`{.action} button.
 
-![OVHcloud Federation login Redirection OKTA](images/OKTA_login.png){.thumbnail}
+![OVHcloud Federation login Redirection Okta](images/OKTA_login.png){.thumbnail}
 
-You are now logged in with the same customer ID, but through your OKTA user.
+You are now logged in with the same customer ID, but through your Okta user.
 
 ![OVHcloud User Info Federation](images/ovhcloud_user_infos_federation.png){.thumbnail}
 
