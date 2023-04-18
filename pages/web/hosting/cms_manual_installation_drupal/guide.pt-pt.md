@@ -1,5 +1,5 @@
 ---
-title: "Tutorial - Instalar manualmente O Drupal"
+title: "Tutorial - Instalar manualmente Drupal"
 excerpt: "Descubra como instalar manualmente o seu CMS Drupal"
 slug: cms_instalar_manualmente_drupal
 section: CMS
