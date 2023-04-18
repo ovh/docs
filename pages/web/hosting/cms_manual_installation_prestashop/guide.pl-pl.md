@@ -154,7 +154,8 @@ Ostatni etap to podsumowanie instalacji, którą właśnie przeprowadziłeś:
 
 Pobierz dane do logowania modułu PrestaShop przed opuszczeniem strony.
 
->[!warning]
+> [!warning]
+
 >
 > **Ze względów bezpieczeństwa zalecamy usunięcie folderu instalacyjnego z przestrzeni FTP.**
 >
