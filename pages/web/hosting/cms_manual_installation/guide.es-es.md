@@ -216,7 +216,7 @@ A continuación, un ejemplo con el CMS *WordPress*:
 > Le recomendamos encarecidamente que utilice una "carpeta raíz" vacía para evitar conflictos con otro de sus sitios web. Compruebe que la carpeta de destino no contenga ningún elemento antes de mover los archivos.
 >
 
->[!primary]
+> [!primary]
 >
 Si la "carpeta raíz" que ha definido no se ha creado automáticamente en las acciones descritas en el [etapa 1](#step1), puede crearla a través de FileZilla.
 >
