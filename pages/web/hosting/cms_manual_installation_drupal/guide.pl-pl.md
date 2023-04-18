@@ -45,7 +45,8 @@ Tutaj znajdziesz wszystkie elementy, które pozwolą Ci ręcznie zainstalować C
 
 Aby zainstalować CMS **Drupal** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), potrzebne są jakieś przygotowania.
 
-Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym[Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) i przejdź do etapu 2 poniżej.
+Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) i przejdź do etapu 2 poniżej.
+
 
 ### Etap 2 - zakończenie ręcznej instalacji <a name="step2"></a>
 
