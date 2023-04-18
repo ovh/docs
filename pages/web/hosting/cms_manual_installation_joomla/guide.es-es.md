@@ -15,7 +15,7 @@ updated: 2023-04-07
   
 ## Objetivo
 
-Aquí encontrará todos los elementos necesarios para instalar manualmente el CMS ( content management system) Joomla. en pocos pasos.
+Aquí encontrará todos los elementos necesarios para instalar manualmente el CMS (content management system) Joomla! en pocos pasos.
 
 > [!warning]
 >
