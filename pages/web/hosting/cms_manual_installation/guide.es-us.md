@@ -133,7 +133,7 @@ Si todavía no utiliza un cliente FTP, puede utilizar Filezilla. Consulte la pá
 
 #### 1.4 - Preparar una base de datos <a name="step1-4"></a>
 
-Los CMS necesitan una base de datos para funcionar. Nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) contienen, a excepción de [el alojamiento gratuito Start 10M](https://www.ovhcloud.com/es/domains/free-web-hosting/).
+Los CMS necesitan una base de datos para funcionar. Nuestros [planes de hosting](https://www.ovhcloud.com/es/web-hosting/) contienen.
 
 Utilice nuestra guía para [crear una base de datos desde su plan de hosting](https://docs.ovh.com/us/es/hosting/crear-base-de-datos/).
 
