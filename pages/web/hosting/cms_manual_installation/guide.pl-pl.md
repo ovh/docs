@@ -211,7 +211,7 @@ Przykład systemu CMS *WordPress*:
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
->[!warning]
+> [!warning]
 >
 > Zalecamy użycie pustego katalogu głównego, aby uniknąć konfliktu z innymi Twoimi stronami WWW. Przed przeniesieniem plików sprawdź, czy folder docelowy nie zawiera żadnych elementów.
 >
