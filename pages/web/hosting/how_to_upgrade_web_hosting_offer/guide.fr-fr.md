@@ -4,10 +4,10 @@ excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'h
 slug: how_to_change_web_hosting_offer
 section: Optimiser son site
 order: 02
-updated: 2023-01-03
+updated: 2023-04-18
 ---
 
-**Dernière mise à jour le 15/02/2023**
+**Dernière mise à jour le 18/04/2023**
 
 ## Objectif
 
@@ -50,7 +50,7 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 > Par exemple, vous ne pourrez pas passer d'une formule *Performance 2* à une formule *Pro* en une seule opération.
 > Vous devrez **d'abord** faire évoluer votre hébergement depuis la formule *Performance 2* vers l'offre *Performance 1* **puis** vers l'offre *Pro*.
 
-Avant de réaliser votre changement vers une gamme inférieure, vérifiez les 6 éléments suivants:
+Avant de réaliser votre changement vers une gamme inférieure, vérifiez les 7 éléments suivants:
 
 #### 1 - Nombre de sites
 
@@ -106,9 +106,15 @@ Pour passer votre hébergement sur une offre [Perso](https://www.ovhcloud.com/fr
 
 Dans la partie `Emails`{.action} de votre espace client, sélectionnez l'offre concernée puis cliquez sur `...`{.action} à droite de `Offre`{.action}. Cliquez enfin sur `Changer d'offre`{.action}.
 
+#### 7 - Utilisateurs FTP
+
+Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre propose suffisamment d'utilisateurs FTP.
+
+Le nombre d'utilisateurs FTP est visible dans votre espace client OVHcloud. Rendez-vous dans la partie `Web Cloud`{.action} puis sélectionnez l'hébergement concerné dans la section `Hébergements`{.action} sur votre gauche. Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. Un tableau s'affiche sur la partie basse avec tous les utilisateurs FTP créés pour votre hébergement web.
+
 #### Finalisation
 
-Une fois ces 6 éléments vérifiés, vous pouvez réaliser votre [changement d'offre](#modify).
+Une fois ces 7 éléments vérifiés, vous pouvez réaliser votre [changement d'offre](#modify).
 
 ### Cas particuliers
 
