@@ -205,7 +205,7 @@ Indica la cartella "**CMS**" per estrarre i tuoi file da questa cartella.
 
 ### 2.3 - Sposta i file sorgente della cartella "CMS" sulla cartella root del tuo hosting Web
 
-Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tuo spazio di archiviazione](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) con l'aiuto del [client FTP FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/) e copia i file contenuti nella cartella "**CMS**" nella "cartella root" definita sul tuo hosting durante lo step 1](#step1) di questa guida.
+Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tuo spazio di archiviazione](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) con l'aiuto del [client FTP FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/) e copia i file contenuti nella cartella "**CMS**" nella "cartella root" definita sul tuo hosting durante lo [step 1](#step1) di questa guida.
 
 Di seguito, un esempio con il CMS *WordPress*:
 
