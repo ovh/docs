@@ -216,7 +216,7 @@ Przykład systemu CMS *WordPress*:
 > Zalecamy użycie pustego katalogu głównego, aby uniknąć konfliktu z innymi Twoimi stronami WWW. Przed przeniesieniem plików sprawdź, czy folder docelowy nie zawiera żadnych elementów.
 >
 
->[!primary]
+> [!primary]
 >
 > Jeśli "katalog główny", który zdefiniowałeś nie został utworzony automatycznie podczas operacji opisanych w [etap 1](#step1), możesz go utworzyć za pomocą FileZilla.
 >
