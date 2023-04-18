@@ -135,7 +135,8 @@ W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapozna
 
 - *Drop existing tables*: **Usuń zaznaczenie, jeśli korzystasz już z bazy danych na innej stronie WWW**.
 
->[!alert]
+> [!alert]
+
 >
 > Jeśli zaznaczysz kratkę **Drop existing tables**, usunie to wszystkie tabele już istniejące w Twojej bazie danych.
 >
