@@ -45,8 +45,9 @@ We are going to follow different steps to deploy our **brain tumor segmentation 
 
 - **Write the requirements.txt** that contains the required libraries that need to be installed so that our application can work.
 - **Write the `Dockerfile`** that contains all the commands to launch our image segmentation app.
-- **Build the Docker image** from the Dockerfile
 - **Upload the dataset and the model's weights to an Object Storage** *(volume)* to be able to use these datas within the app's environment.
+- **Build the Docker image** from the Dockerfile.
+- **Push the image into a registry.**
 - **Deploy your app**.
 
 *If you have cloned the [app's repository](LINKKKK APP CODE), you will not need to rewrite the files (`requirements.txt` and `Dockerfile`) since you already have them. In this case, you can go directly to the "Build the Docker image" step, even if it is better to understand the global process.*
@@ -105,6 +106,64 @@ Finally, give correct access rights to **OVHcloud user** (`42420:42420`):
 RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 ```
+
+### Upload the dataset and the model's weights in an Object Storage
+
+In order to use our trained model on the dataset images, we need to create two container objects, one for the model's weights, one for the BraTS2020 dataset. We can either upload the dataset as a `.zip` file (4GB), which will be unzipped by the app's python code, when the Streamlit application is started, or the whole dataset, but which is much heavier to upload (40GB), but will not require an unzip step. In this tutorial, we will upload the `.zip` format.
+
+> [!warning]
+>
+> If your model's weights and/or your .zip are in a folder, be careful to add only the files, and not their folders. Otherwise, the path to these resources will no longer be directly attached to the root `/workspace`. The name of the folder must be specified before the name of the file, which means that you will need to adapt the application code, especially the places where the resource paths are mentioned (`variables.py` and `dataset_unzip()` function from `utils.py`).
+>
+
+You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](https://www.ovh.com/manager/#/public-cloud/) or with the [OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/).
+
+#### Upload data via UI (Control Panel)
+
+If you do not feel comfortable with commands, this way will be more intuitive for you.
+
+First, go to the [OVHcloud Public Cloud section](https://www.ovh.com/manager/#/public-cloud/).
+
+Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
+
+Here you can create the object container that will store the dataset and the model's weights. Several `types` and `regions` are available, choose the best parameters for you.
+
+We advise you to separate your data by creating a container dedicated to the model weights and one for the dataset.
+
+We will name our object containers `BraTS2020_dataset_zip` and `BraTS2020_model_weights`.
+
+Once your object containers are created, you will see them in the Object Storage list. By clicking on them, you will be able to click the `Add Objects` button, which will allow you to upload your data to the cloud.
+
+#### 1.2 - Upload data via CLI
+
+To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance.
+
+As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of an object container can be done by the following command:
+
+```console
+ovhai data upload <region> <container> <paths>
+```
+
+Here are the commands that we will enter:
+
+- Upload the dataset (`.zip`):
+```console
+ovhai data upload GRA BraTS2020_dataset_zip brats20-dataset-training-validation.zip 
+```
+
+- Upload the model's weights:
+```console
+ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.index
+ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.data-00000-of-00001
+```
+
+> [!warning]
+>
+> Be careful to upload the 2 files obtained during the training of your model.
+> Weight files names can change for you. Make sure that the variable `best_weights_path`, of the file `variables.py`, indicates the path of your model's weights. Change it if necessary.
+>
+
+Once your data is uploaded, it can be accessed from all OVHcloud AI tools, either with read-only (RO) or read-write (RW) permissions.
 
 ### Build the Docker image from the Dockerfile
 
@@ -172,58 +231,6 @@ docker tag tumor_seg_streamlit_app:latest <shared-registry-address>/tumor_seg_st
 docker push <shared-registry-address>/tumor_seg_streamlit_app:latest
 ```
 
-### Upload the dataset and the model's weights in an Object Storage
-
-In order to use our trained model on the dataset images, we need to create two container objects, one for the model's weights, one for the BraTS2020 dataset. We can either upload the dataset as a `.zip` file (4GB), which will be unzipped by the app's python code, when the Streamlit application is started, or the whole dataset, but which is much heavier to upload (40GB), but will not require an unzip step.
-
-> [!warning]
->
-> If your model's weights and/or your .zip are in a folder, be careful to add only the files, and not their folders. Otherwise, the path to these resources will no longer be directly attached to the root `/workspace`. The name of the folder must be specified before the name of the file, which means that you will need to adapt the application code, especially the places where the resource paths are mentioned (`variables.py` and `dataset_unzip()` function from `utils.py`). 
->
-
-You can upload your data to the cloud either by using the [OVHcloud Control Panel (UI)](https://www.ovh.com/manager/#/public-cloud/) or with the [OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/).
-
-#### Upload data via UI (Control Panel)
-
-If you do not feel comfortable with commands, this way will be more intuitive for you.
-
-First, go to the [OVHcloud Public Cloud section](https://www.ovh.com/manager/#/public-cloud/).
-
-Then, select the Object Storage section (in the Storage category) and [create a new object container](https://docs.ovh.com/gb/en/storage/object-storage/pcs/create-container/) by clicking `Storage` > `Object Storage` > `Create an object container`.
-
-Here you can create the object container that will store the dataset and the model's weights. Several `types` and `regions` are available, choose the best parameters for you. 
-
-We advise you to separate your data by creating a container dedicated to the model weights and one for the dataset.
-
-We will name our object containers `BraTS2020_dataset_zip` and `BraTS2020_model_weights`.
-
-Once your object containers are created, you will see them in the Object Storage list. By clicking on them, you will be able to click the `Add Objects` button, which will allow you to upload your data to the cloud.
-
-#### 1.2 - Upload data via CLI
-
-To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance. 
-
-As in the Control Panel, you will have to specify the `region`, the `name of your container` and the `path` where your data will be located. The creation of an object container can be done by the following command:
-
-```console
-ovhai data upload <region> <container> <paths>
-```
-
-Here are the commands that we will enter:
-
-- Upload the dataset (`.zip`): 
-```console
-ovhai data upload GRA BraTS2020_dataset_zip brats20-dataset-training-validation.zip 
-```
-
-- Upload the model's weights:
-```console
-ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.index
-ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.data-00000-of-00001
-```
-
-Once your data is uploaded, it can be accessed from all OVHcloud AI tools, either with read-only (RO) or read-write (RW) permissions.
-
 ### Launch the AI Deploy app
 
 The following command starts a new app running your Streamlit application:
@@ -233,7 +240,7 @@ ovhai app run <shared-registry-address>/tumor_seg_streamlit_app:latest \
       --gpu 1 \
       --default-http-port 8501 \
       --volume BraTS2020_model_weights@GRA/:/workspace/weights:RO:cache \
-      --volume BraTS2020_zip_dataset@GRA/:/workspace/BraTS2020_zip_dataset:RO:cache
+      --volume BraTS2020_dataset_zip@GRA/:/workspace/BraTS2020_dataset_zip:RO:cache
 ```
 
 > [!primary]
