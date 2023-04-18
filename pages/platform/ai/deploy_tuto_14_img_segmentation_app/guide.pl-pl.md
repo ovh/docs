@@ -167,6 +167,12 @@ ovhai data upload GRA BraTS2020_model_weights model_.26-0.025329.m5.data-00000-o
 
 Once your data is uploaded, it can be accessed from all OVHcloud AI tools, either with read-only (RO) or read-write (RW) permissions.
 
+> [!warning]
+>
+> Before continuing, be sure to modify the `samples_test` list in the `variables.py` file.
+> Indeed, this list must contain the patients of the test set, which were not used for the training of the model. This list will not be the same for you, since the patients were randomly shuffled. It is therefore important that you replace it with your own test samples list!
+>
+
 ### Build the Docker image from the Dockerfile
 
 Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files).
@@ -252,7 +258,7 @@ ovhai app run <shared-registry-address>/tumor_seg_streamlit_app:latest \
 >
 > - `--gpu 1` indicates that we request 1 GPU for that app.
 >
-> `--volume` allows us to specify what volume we want to add to our job. As mentioned, we add the **BraTS2020 dataset and weights** volumes, which we put in `RO:cache` mode. RO stands for Read-Only, which means that we will only be able to read the data from these volumes and not modify them. Since all our volumes are in RO mode, a good idea is to cache our data, which will allow faster initialization of apps connected to these same volumes. 
+> - `--volume` allows us to specify what volume we want to add to our job. As mentioned, we add the **BraTS2020 dataset and weights** volumes, which we put in `RO:cache` mode. RO stands for Read-Only, which means that we will only be able to read the data from these volumes and not modify them. Since all our volumes are in RO mode, a good idea is to cache our data, which will allow faster initialization of apps connected to these same volumes. 
 >
 > - Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 
