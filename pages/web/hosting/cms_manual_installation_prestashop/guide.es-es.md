@@ -135,7 +135,7 @@ Para las bases de datos creadas en un servicio Web Cloud Databases, consulte la 
 
 - *Drop existing tables*: **Desmarque esta casilla si ya utiliza su base de datos con otro sitio web**.
 
->[!alert]
+> [!alert]
 >
 Si marca la casilla **Drop existing tables**, se eliminarán todas las tablas que ya haya en la base de datos.
 >
