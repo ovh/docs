@@ -1,9 +1,6 @@
 ---
 title: Apache Spark Overview
-slug: overview-spark
 excerpt: Introduction to Apache Spark 
-section: Supported computing engines
-order: 0
 updated: 2020-03-06
 ---
 

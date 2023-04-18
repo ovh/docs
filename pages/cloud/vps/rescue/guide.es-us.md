@@ -1,8 +1,6 @@
 ---
 title: Activar y utilizar el modo de rescate en un VPS
-slug: rescue
 excerpt: Cómo reiniciar un VPS en modo de rescate.
-section: Diagnóstico y modo de rescate
 updated: 2022-05-02
 ---
 
@@ -116,8 +114,8 @@ Una vez que haya completado sus acciones en el modo de rescate, reinicie el VPS 
 
 ## Más información
 
-[Cambiar la contraseña «root» de un VPS](../root-password/)
+[Cambiar la contraseña «root» de un VPS](/pages/cloud/vps/root_password)
 
-[Introducción al SSH](../../dedicated/introduccion-ssh/)
+[Introducción al SSH](/pages/cloud/dedicated/ssh_introduction)
 
 Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

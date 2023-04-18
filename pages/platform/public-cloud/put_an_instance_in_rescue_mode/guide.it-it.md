@@ -1,9 +1,7 @@
 ---
 title: 'Riavvia la tua istanza in modalità di ripristino (Rescue mode)'
 excerpt: 'Come riavviare un’istanza in modalità di ripristino (Rescue mode)'
-slug: riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode
 legacy_guide_number: g2029
-section: Gestione dallo Spazio Cliente OVHcloud
 updated: 2023-01-04
 ---
 
@@ -25,7 +23,7 @@ Se non riesci ad accedere alla tua istanza a causa di una configurazione non cor
 
 > [!alert]
 >
-> Ad oggi, la modalità Rescue per le istanze Metal non è disponibile nello Spazio Cliente OVHcloud. Per maggiori informazioni, consulta la guida dedicata al [Rescue mode per le istanze Metal](https://docs.ovh.com/it/public-cloud/metal-instance-rescue-mode/).
+> Ad oggi, la modalità Rescue per le istanze Metal non è disponibile nello Spazio Cliente OVHcloud. Per maggiori informazioni, consulta la guida dedicata al [Rescue mode per le istanze Metal](/pages/platform/public-cloud/rescue_mode_metal_instance).
 
 ### Attiva la modalità di ripristino
 

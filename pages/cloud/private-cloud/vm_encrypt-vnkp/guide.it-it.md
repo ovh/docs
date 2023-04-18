@@ -1,11 +1,8 @@
 ---
 title: Enabling virtual machine encryption with vSphere Native Key Provider (EN)
-slug: vm-encrypt-vnkp
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/vm-encrypt-vnkp/'
+    canonical: '/pages/cloud/private-cloud/vm_encrypt-vnkp/'
 excerpt: Find out how to implement virtual machine encryption with vSphere Native Key Provider
-section: VMware vSphere features
-order: 09
 updated: 2023-01-26
 ---
 
@@ -72,7 +69,7 @@ Encryption management rights have been changed, as can be seen in the `Encryptio
 
 We will create the encryption key **vSphere Native Key Provider**. This key can be used to encrypt files on a virtual machine. If you want to add a virtual device **vTPM**, it is mandatory to encrypt the VM.
 
-Log in to the **vSphere** interface. If you need help with this, please refer to our guide on Accessing the vSphere interface (https://docs.ovh.com/it/private-cloud/connessione-interfaccia-vsphere/).
+Log in to the **vSphere** interface. If you need help with this, please refer to our guide on Accessing the vSphere interface (/pages/cloud/private-cloud/vsphere_interface_connexion).
 
 Click on the root of the `cluster`{.action} in the top left-hand corner, then click on the `Configure`{.action} tab and choose `Key Providers`{.action}.
 

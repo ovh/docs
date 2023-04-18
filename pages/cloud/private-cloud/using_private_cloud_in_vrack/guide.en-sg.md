@@ -1,10 +1,7 @@
 ---
 title: Using Private Cloud within a vRack
-slug: using-private-cloud-with-vrack
 excerpt: Find out how to use vRack with an SDDC solution
 legacy_guide_number: '7766915'
-section: OVHcloud Features
-order: 2
 updated: 2022-03-28
 ---
 
@@ -45,7 +42,7 @@ In the vSphere client, you can find vRack-capable VLANs in the `Networks` sectio
 
 ![vlan](images/vRackVsphere.png){.thumbnail}
 
-You can change their settings or create them again by following [this guide](../creation-vlan-vxlan/).
+You can change their settings or create them again by following [this guide](/pages/cloud/private-cloud/creation_vlan-vxlan/).
 
 You can then assign these *Distributed Port Groups* to the network interfaces of your virtual machines.
 

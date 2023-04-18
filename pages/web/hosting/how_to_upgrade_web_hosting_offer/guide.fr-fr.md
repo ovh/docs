@@ -1,9 +1,6 @@
 ---
 title: "Faire évoluer son offre d'hébergement web"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement OVHcloud"
-slug: how_to_change_web_hosting_offer
-section: Optimiser son site
-order: 02
 updated: 2023-01-03
 ---
 
@@ -11,7 +8,7 @@ updated: 2023-01-03
 
 ## Objectif
 
-Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de [l'offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
+Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](/pages/web/emails/feature_mailing_list) (à partir de [l'offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
 
 **Découvrez comment faire évoluer votre offre d'hébergement OVHcloud sans interruption.**
 
@@ -54,7 +51,7 @@ Avant de réaliser votre changement vers une gamme inférieure, vérifiez les 6 
 
 #### 1 - Nombre de sites
 
-L'offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ne permet pas d'avoir plus d'un nom de domaine sur le [multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) de votre hébergement.
+L'offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ne permet pas d'avoir plus d'un nom de domaine sur le [multisite](/pages/web/hosting/multisites_configure_multisite) de votre hébergement.
 
 Avant de passer de l'offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à l'offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml), vérifiez donc que votre hébergement ne comporte qu'un seul site.
 
@@ -70,7 +67,7 @@ Suite à la suppression de données sur vos bases, pensez à recalculer le quota
 
 #### 3 - Web Cloud Databases
 
-Si vous utilisez l'offre [Web Cloud Databases](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
+Si vous utilisez l'offre [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
 Cliquez sur le bouton `...`{.action} dans la partie `Bases de données privée`{.action} puis sur `Délier`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
@@ -79,12 +76,12 @@ Cette action vous permettra de commander une offre Web Cloud Databases indépend
 
 Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre SQL privé avant de passer sur l'offre *Pro* : 
 
-1. Sauvegardez vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique).<br>
+1. Sauvegardez vos données en suivant les instructions de ce [guide](/pages/web/clouddb/save-export-on-database-server#en-pratique).<br>
 2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### 4 - Espace FTP
 
-Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre propose suffisamment [d'espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) pour que l'import des fichiers de votre hébergement actuel soit possible.
+Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre propose suffisamment [d'espace de stockage FTP](/pages/web/hosting/ftp_connection) pour que l'import des fichiers de votre hébergement actuel soit possible.
 
 Le quota utilisé sur votre hébergement FTP est visible dans la partie `Hébergements`{.action} de votre espace client. Cliquez sur l'onglet `Informations générales`{.action}, vous retrouverez le quota sous `Espace Disque`.
 
@@ -92,7 +89,7 @@ Le quota utilisé sur votre hébergement FTP est visible dans la partie `Héberg
 
 #### 5 - Adresses e-mail
 
-Vérifiez également que votre nouvelle offre propose un nombre suffisant d'adresses e-mail disponibles. Dans le cas contraire, supprimez les adresses superflues, après les avoir [sauvegardées](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) si nécessaire.
+Vérifiez également que votre nouvelle offre propose un nombre suffisant d'adresses e-mail disponibles. Dans le cas contraire, supprimez les adresses superflues, après les avoir [sauvegardées](/pages/web/emails/manual_email_migration) si nécessaire.
 
 Si vous souhaitez conserver le même nombre de boîtes e-mail, avant de passer votre hébergement sur une offre inférieure, vous pouvez également commander une nouvelle offre de messagerie **MX Plan**. Dans la partie `Emails`{.action} de votre espace client, cliquez sur l'offre concernée puis sur le bouton  `...`{.action} à droite de `Offre`. Cliquez enfin sur `Changer d'offre`{.action}.
 
@@ -100,7 +97,7 @@ Si vous souhaitez conserver le même nombre de boîtes e-mail, avant de passer v
 
 #### 6 - Mailing lists
 
-La fonctionnalité [Mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) est en option sur les hébergements [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) et [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml).
+La fonctionnalité [Mailing lists](/pages/web/emails/feature_mailing_list) est en option sur les hébergements [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) et [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml).
 
 Pour passer votre hébergement sur une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), vous devrez donc dans un premier temps en supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
@@ -114,7 +111,7 @@ Une fois ces 6 éléments vérifiés, vous pouvez réaliser votre [changement d'
 
 #### Vous possédez une offre Start 10M <a name="start10m"></a>
 
-Dans le cadre d'un changement de l'offre [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
+Dans le cadre d'un changement de l'offre [Start10M](/pages/web/hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
 
 Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
@@ -158,9 +155,9 @@ Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
+[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web/hosting/logs_and_statistics)
 
-[Optimisation des performances de votre site](https://docs.ovh.com/fr/hosting/optimisation-performances-site/)
+[Optimisation des performances de votre site](/pages/web/hosting/optimise_your_website_performance)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

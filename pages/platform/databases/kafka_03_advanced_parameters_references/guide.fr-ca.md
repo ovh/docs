@@ -1,11 +1,8 @@
 ---
 title: Kafka - Références des paramètres avancés (EN)
-slug: kafka/advanced-parameters-references
 excerpt:
-section: Kafka - Guides
-order: 030
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/kafka/advanced-parameters-references/'
+    canonical: '/pages/platform/databases/kafka_03_advanced_parameters_references'
 updated: 2023-02-06
 ---
 
@@ -41,7 +38,7 @@ This guide lists all the supported advanced parameters that allow you to configu
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account   
-- A database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ca/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)   
+- A database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)   
 - Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) or to the [OVHcloud API](https://api.ovh.com/console/)   
 
 
@@ -54,11 +51,11 @@ This guide lists all the supported advanced parameters that allow you to configu
 
 ### Using the OVHcloud Control Panel
 
-Please refer to this [guide](https://docs.ovh.com/ca/fr/publiccloud/databases/advanced-configuration/#using-the-ovhcloud-control-panel) to find out how to change your advanced parameters from the OVHcloud Control Panel.
+Please refer to this [guide](/pages/platform/databases/databases_03_advanced_configuration#using-the-ovhcloud-control-panel) to find out how to change your advanced parameters from the OVHcloud Control Panel.
 
 ### Using API
 
-Please refer to this [guide](https://docs.ovh.com/ca/fr/publiccloud/databases/advanced-configuration/#using-api) to find out how to change your advanced parameters from the OVHcloud API.
+Please refer to this [guide](/pages/platform/databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
 
 
 ### Advanced parameters for Kafka

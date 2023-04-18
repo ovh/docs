@@ -1,9 +1,6 @@
 ---
 title: 'Cambiar los servidores DNS de un dominio en OVHcloud'
-slug: web_hosting_informacion_general_sobre_los_servidores_dns
 excerpt: 'Cómo cambiar los servidores DNS de un dominio registrado en OVHcloud'
-section: 'DNS (servidor y zona)'
-order: 01
 updated: 2021-02-18
 ---
 
@@ -19,7 +16,7 @@ updated: 2021-02-18
 
 La sigla DNS, que significa **D**omain **N**ame **S**ystem, es un conjunto de elementos que permiten hacer coincidir un dominio con una dirección IP.
 
-Para más información, consulte la guía [Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/#understanddns).
+Para más información, consulte la guía [Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit#understanddns).
 
 ### Servidores DNS 
 
@@ -57,7 +54,7 @@ Tenga en cuenta los siguientes aspectos:
 
 - Al cambiar el servidor DNS (p. ej. El contenido de la antigua configuración DNS externa (DNS externo) no se replica automáticamente en la nueva. Asegúrese de que su nueva zona DNS incluye todos los registros DNS necesarios para que los servicios asociados a su dominio funcionen correctamente (por ejemplo, su sitio web y sus direcciones de correo).
 
-- Si quiere modificar un único elemento de la configuración DNS actual (por ejemplo, un registro DNS), le recomendamos que edite la zona DNS en la siguiente guía: "[Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/){.external}".
+- Si quiere modificar un único elemento de la configuración DNS actual (por ejemplo, un registro DNS), le recomendamos que edite la zona DNS en la siguiente guía: "[Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit){.external}".
 
 - Algunas organizaciones, los registros, que gestionan las extensiones de dominios, tienen requisitos especiales relativos a los servidores DNS (cantidad de servidores de nombres, valor de los registros...). En caso de duda, consulte con el registro responsable del dominio.
 
@@ -106,6 +103,6 @@ Una vez que haya realizado los cambios, deberá esperar a que se apliquen. Ocurr
 
 ## Más información
 
-[ Modificación de una zona](../web_hosting_como_editar_mi_zona_dns/){.external} DNS de OVHcloud.
+[ Modificación de una zona](/pages/web/domains/dns_zone_edit){.external} DNS de OVHcloud.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,9 +1,7 @@
 ---
 title: 'Passar uma instância em modo de rescue'
 excerpt: 'Passar uma instância em modo de rescue'
-slug: passar_uma_instancia_em_modo_de_rescue
 legacy_guide_number: g2029
-section: Gestão a partir da Área de Cliente OVHcloud
 updated: 2023-01-04
 ---
 
@@ -27,7 +25,7 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 
 > [!alert]
 >
-> Atualmente, o modo rescue para as instâncias Metal não está acessível através da Área de Cliente OVHcloud. Para mais informações, consulte o nosso guia dedicado ao [modo rescue para as instâncias Metal](https://docs.ovh.com/pt/public-cloud/metal-instance-rescue-mode/).
+> Atualmente, o modo rescue para as instâncias Metal não está acessível através da Área de Cliente OVHcloud. Para mais informações, consulte o nosso guia dedicado ao [modo rescue para as instâncias Metal](/pages/platform/public-cloud/rescue_mode_metal_instance).
 
 ### Ativar o modo rescue
 

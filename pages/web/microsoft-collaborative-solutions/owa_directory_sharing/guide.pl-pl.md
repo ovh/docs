@@ -1,9 +1,6 @@
 ---
 title: 'Współdzielenie folderów w interfejsie OWA'
-slug: exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa
 excerpt: 'Dowiedz się, jak współdzielić foldery między kontami Exchange'
-section: 'Korzystanie z Outlook Web Application (OWA)'
-order: 04
 updated: 2020-04-07
 ---
 
@@ -100,10 +97,10 @@ Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https:
 
 ## Sprawdź również
 
-[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Delegowanie uprawnień do konta Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/)
+[Delegowanie uprawnień do konta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Exchange: współdzielenie kalendarza w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[Exchange: współdzielenie kalendarza w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

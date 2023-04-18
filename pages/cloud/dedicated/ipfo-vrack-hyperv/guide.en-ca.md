@@ -1,8 +1,6 @@
 ---
 title: "Setting up a Virtual Machine using Additional IPs and Hyper-V over a vRack"
 excerpt: "How to use Hyper-V with Additional IPs over a vRack"
-slug: foip-vrack-hyperv
-section: vRack
 updated: 2021-02-25
 ---
 
@@ -27,7 +25,7 @@ updated: 2021-02-25
 
 ## Instructions
 
-This guide assumes that you have already installed Windows Server, connected via Remote Desktop, and have already assigned your dedicated server and IP block to a vRack. For more information on these steps please refer to steps 1 through 4 on our guide: [Configuring the vRack on your dedicated servers](../configuring-vrack-on-dedicated-servers).
+This guide assumes that you have already installed Windows Server, connected via Remote Desktop, and have already assigned your dedicated server and IP block to a vRack. For more information on these steps please refer to steps 1 through 4 on our guide: [Configuring the vRack on your dedicated servers](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server).
 
 ### Installing Hyper-V
 

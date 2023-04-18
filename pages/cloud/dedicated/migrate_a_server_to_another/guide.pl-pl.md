@@ -1,9 +1,6 @@
 ---
 title: Migracja danych z jednego serwera dedykowanego na drugi
-slug: migracja-danych-z-jednego-serwera-dedykowanego-na-drugi
 excerpt: Dowiedz się, jak migrować dane z serwera dedykowanego na inny serwer
-section: Pierwsze kroki
-order: 5
 updated: 2021-09-16
 ---
 
@@ -49,8 +46,8 @@ Jeśli wymagana jest zmiana wersji systemu operacyjnego lub oprogramowania, upew
 
 Migracja danych zazwyczaj wiąże się z skopiowaniem plików z jednego serwera na inny. Istnieje kilka rozwiązań:
 
-- Najprostszym sposobem jest użycie odpowiedniego oprogramowania, takiego jak [SFTP](https://docs.ovh.com/pl/dedicated/przesylanie-i-pobieranie-danych-sftp/).
-- Inną możliwością jest [synchronizacja obu serwerów ze sobą](https://docs.ovh.com/pl/dedicated/kopiowanie-danych-serwer-rsync/).
+- Najprostszym sposobem jest użycie odpowiedniego oprogramowania, takiego jak [SFTP](/pages/cloud/dedicated/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
+- Inną możliwością jest [synchronizacja obu serwerów ze sobą](/pages/cloud/dedicated/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync).
 
 ### Korzystanie z backup storage (dostępne tylko w OVHcloud i So you Start)
 
@@ -65,7 +62,7 @@ Opcja [Backup Storage](https://www.ovhcloud.com/pl/bare-metal/backup-storage/) u
 
 Możesz zezwolić na dostęp do usługi backup storage z Twojego nowego serwera. W ten sposób zyskujesz dostęp do bramki umożliwiającej transfer danych.
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korzystanie z Backup Storage na serwerze dedykowanym](https://docs.ovh.com/pl/dedicated/usluga-backup-storage/#korzystanie-z-backup-storage){.external}.
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korzystanie z Backup Storage na serwerze dedykowanym](/pages/cloud/dedicated/services_backup_storage#korzystanie-z-backup-storage){.external}.
 
 ### Przeniesienie adresu Additional IP (dostępnego tylko w OVHcloud i So you Start)
 
@@ -81,7 +78,7 @@ Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korz
 Jeśli reputacja Twoich adresów IP jest ważna, zalecamy korzystanie z adresów [Additional IP](https://www.ovhcloud.com/pl/bare-metal/ip/), które możesz zachować w przypadku migracji.
 
 Po otrzymaniu tych adresów IP wystarczy je przenieść na nowy serwer.
-W tym celu zapoznaj się z naszym przewodnikiem: [Przenieś Additional IP](https://docs.ovh.com/pl/dedicated/ip-fo-move/).
+W tym celu zapoznaj się z naszym przewodnikiem: [Przenieś Additional IP](/pages/cloud/dedicated/move-failover-ip).
 
 > [!alert]
 >

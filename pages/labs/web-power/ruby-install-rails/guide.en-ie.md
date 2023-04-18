@@ -1,9 +1,6 @@
 ---
 title: Install Rails on your POWER web hosting plan
-slug: ruby-install-rails
 excerpt: Find out how to install Rails on your POWER web hosting plan
-section: Ruby
-order: 1
 updated: 2021-02-04
 ---
 
@@ -43,7 +40,7 @@ This guide will explain how to do it.
 - A [Ruby](https://labs.ovh.com/managed-ruby) POWER web hosting plan
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
-If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](/pages/labs/web-power/getting-started) guide before going further.
 
 ## Instructions
 
@@ -60,10 +57,10 @@ Let's suppose you have the default configuration for Ruby hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
 
 
-[Connect via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
+[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting.
 
 Delete your `DocumentRoot` to initiate it with rails (don't forget to export your `gempath` or your bundle install will fail):
 
@@ -96,7 +93,7 @@ development:
   check_yarn_integrity: false
 ```
 
-Then [restart your instance](../getting-started-with-power-web-hosting/#restart) and your Rails will be online.
+Then [restart your instance](/pages/labs/web-power/getting-started#restart) and your Rails will be online.
 
 
 ![Rails](images/ruby-install-rails-01.png){.thumbnail}

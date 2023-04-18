@@ -1,9 +1,6 @@
 ---
 title: Checking a job's logs 
-slug: check-logs
 excerpt: Find out how to get your job's logs while the job is running or after it is finished 
-section: Getting started
-order: 1
 updated: 2021-07-14
 ---
 
@@ -13,7 +10,7 @@ updated: 2021-07-14
 
 This guide will help you to check your job's logs while your job is running or after your job is finished. 
 
-To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
+To read an introduction about Data Processing service you can visit [Data Processing Overview](/pages/platform/data-processing/00_CONCEPTS_Overview){.external}.
 
 ## Requirements 
 
@@ -50,7 +47,7 @@ To see your logs in the manager, you need to follow these steps:
 
 ### With the Data Processing CLI
 
-If you are using the [ovh-spark-submit CLI](https://github.com/ovh/data-processing-spark-submit){.external} (see [How to launch jobs through the CLI](../submit-cli){.external}), then you do not have to take action.
+If you are using the [ovh-spark-submit CLI](https://github.com/ovh/data-processing-spark-submit){.external} (see [How to launch jobs through the CLI](/pages/platform/data-processing/37_HOWTO_submit-job-cli){.external}), then you do not have to take action.
 
 The logs will appear in the standard output while your job is running.
 
@@ -69,7 +66,7 @@ The logs will appear in the standard output while your job is running.
 
 ### With the OVHcloud API
 
-An other way to read your job's logs is to use the OVH cloud API by calling the endpoint to GET a job's logs (see [How to use the OVHcloud API](../use-api){.external})
+An other way to read your job's logs is to use the OVH cloud API by calling the endpoint to GET a job's logs (see [How to use the OVHcloud API](/pages/platform/data-processing/38_HOWTO_use-with-ovh-api){.external})
 
 To get the logs you have to use the `GET` on the `/cloud/project/{serviceName}/dataProcessing/jobs/{jobId}/logs` endpoint (where the service name is your Public Cloud project ID).
 This endpoint can take a query parameter which is `from`. This parameter allows you to specify the date from which you want to retrieve the logs. Its default value is 1970-01-01T00:00:00 UTC.
@@ -159,6 +156,6 @@ With this token you should be able to list and to download the logs files of you
 
 ## Go further
 
-To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at the [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at the [Data Processing documentations page](/au/en/data-processing/).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

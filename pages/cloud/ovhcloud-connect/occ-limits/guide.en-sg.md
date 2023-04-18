@@ -1,9 +1,6 @@
 ---
 title: Technical capabilities and limitations
-slug: occ-limits
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Connect solution'
-section: Technical resources
-order: 1
 updated: 2022-08-25
 ---
 

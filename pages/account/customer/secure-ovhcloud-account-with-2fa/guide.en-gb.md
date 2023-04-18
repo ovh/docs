@@ -1,8 +1,6 @@
 ---
 title: 'Securing your OVHcloud account with two-factor authentication'
-slug: secure-account-with-2FA
 excerpt: 'Find out how to improve security for your OVHcloud account by enabling two-factor authentication'
-section: Security
 updated: 2022-07-20
 ---
 
@@ -19,7 +17,7 @@ You can enable two-factor authentication (2FA). This is linked to your username-
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - a smartphone (for the SMS method), a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
-- an understanding of the [password management recommendations for accessing your account](https://docs.ovh.com/gb/en/customer/manage-password/)
+- an understanding of the [password management recommendations for accessing your account](/pages/account/customer/manage-ovh-password)
 
 ## Instructions
 
@@ -35,9 +33,9 @@ Once you have linked the application to your account, your device no longer need
 
 ### Step 1: Enable your first two-factor authentication method
 
-- [Enabling two-factor authentication via SMS](https://docs.ovh.com/gb/en/customer/enable-two-factor-authentication-via-sms/)
-- [Enabling two-factor authentication via mobile application](https://docs.ovh.com/gb/en/customer/enable-two-factor-authentication-via-mobile-application/)
-- [Enabling two-factor authentication via security key](https://docs.ovh.com/gb/en/customer/enable-two-factor-authentication-via-security-key/)
+- [Enabling two-factor authentication via SMS](/pages/account/customer/enable-2fa-with-sms)
+- [Enabling two-factor authentication via mobile application](/pages/account/customer/enable-2fa-with-mobile-app)
+- [Enabling two-factor authentication via security key](/pages/account/customer/enable-2fa-with-security-key)
 
 Once you have added your first method, you can also add one or two other methods, so that you have more choice in how you log in to your account.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Installare manualmente un CMS'
 excerpt: 'CMS compatibili con il tuo hosting Web OVHcloud'
-slug: web_hosting_installa_manualmente_il_tuo_cms
-section: CMS
-order: 03
 updated: 2020-02-04
 ---
 
@@ -35,7 +32,7 @@ I nostri servizi di hosting Web sono compatibili con alcuni dei più diffusi sis
 >
 >Con pochi click è possibile installare automaticamente un CMS dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).  Per farlo, prosegui nella lettura di questa guida: 
 >
->[Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)
+>[Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules)
 >
 
 
@@ -52,7 +49,7 @@ Il supporto OVHcloud non è autorizzato a rispondere alle domande relative alla 
 
 Se hai bisogno di aiuto, consulta i forum dedicati a [WordPress](https://wordpress.org/support/).
 
-- Guida all’installazione di WordPress [CMS: installa manualmente WordPress](../cms_installa_manualmente_wordpress)
+- Guida all’installazione di WordPress [CMS: installa manualmente WordPress](/pages/web/hosting/cms_manual_installation_wordpress)
 
 ![cms](images/3379.png){.thumbnail}
 
@@ -67,7 +64,7 @@ Il supporto OVHcloud non è autorizzato a rispondere alle domande relative alla 
 
 Se hai bisogno di aiuto, consulta i forum dedicati a[ Joomla!](http://forum.joomla.org/). 
 
-- Guida all’installazione di Joomla!: [CMS: installa manualmente Joomla!](../cms_installa_manualmente_joomla)
+- Guida all’installazione di Joomla!: [CMS: installa manualmente Joomla!](/pages/web/hosting/cms_manual_installation_joomla)
 
 ![cms](images/3380.png){.thumbnail}
 
@@ -85,7 +82,7 @@ Il supporto OVHcolud non risponde alle domande relative alla configurazione del 
 Se hai bisogno di aiuto, consulta i forum dedicati a
 [ PrestaShop](https://www.prestashop.com/forums/).
 
-- Guida all’installazione di PrestaShop: [CMS: installa manualmente PrestaShop](../cms_installa_manualmente_prestashop/)
+- Guida all’installazione di PrestaShop: [CMS: installa manualmente PrestaShop](/pages/web/hosting/cms_manual_installation_prestashop)
 
 ![cms](images/3381.png){.thumbnail}
 
@@ -100,7 +97,7 @@ Il supporto OVHcolud non risponde alle domande relative alla configurazione di D
 Se hai bisogno di aiuto, consulta i forum dedicati a [Drupal](https://www.drupal.org).
 
 
--  Guida all’installazione di Drupal: [ CMS: installa manualmente Drupal](../cms_installa_manualmente_drupal/)
+-  Guida all’installazione di Drupal: [ CMS: installa manualmente Drupal](/pages/web/hosting/cms_manual_installation_drupal)
 
 
 
@@ -111,11 +108,11 @@ Se hai bisogno di aiuto, consulta i forum dedicati a [Drupal](https://www.drupal
 
 ## Per saperne di più 
 
-[Migrare un sito e un servizio di posta in OVHcloud](../migrare-un-sito-in-ovh/){.external}
+[Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Mettere online un sito Internet su un hosting Web](../hosting_condiviso_come_mettere_online_il_tuo_sito/){.external}
+[Mettere online un sito Internet su un hosting Web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Ospitare più siti su uno stesso hosting](../configurare-un-multisito-su-un-hosting-web/){.external}
+[Ospitare più siti su uno stesso hosting](/pages/web/hosting/multisites_configure_multisite){.external}
 
 Consulta le nostre [soluzioni di hosting di siti Web](https://www.ovhcloud.com/it/web-hosting/){.external}
 

@@ -1,9 +1,6 @@
 ---
 title: 'Ativar o alojamento gratuito Start 10M'
-slug: ativar-start10m
 excerpt: 'Saiba como ativar o alojamento Start 10M'
-section: Primeiros passos
-order: 01
 updated: 2022-09-15
 ---
 
@@ -28,7 +25,7 @@ Com o [Start10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.externa
 
 ## Requisitos
 
-- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, desassociado de qualquer alojamento Web e sem nenhum [MX Plan](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/) associado.
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} no seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, desassociado de qualquer alojamento Web e sem nenhum [MX Plan](/pages/web/emails/email_generalities) associado.
 - Ter acesso ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -49,7 +46,7 @@ Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao s
 >
 > Se a zona DNS não for gerida na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, deverá efetuar as modificações manualmente na sua zona DNS externa.
 >
-> Para mais informações, consulte o nosso guia sobre [a edição de uma zona DNS da OVHcloud](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).
+> Para mais informações, consulte o nosso guia sobre [a edição de uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit).
 >
 
 | Escolha                                       	| Descrição                                                                                                               								|
@@ -72,15 +69,15 @@ Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao s
 
 Na **etapa 4**, deverá ler os contratos e validar a encomenda.
 
-Depois de validar a encomenda, receberá um e-mail com as informações de [ligação FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external} ao seu alojamento Start 10M.
+Depois de validar a encomenda, receberá um e-mail com as informações de [ligação FTP](/pages/web/hosting/ftp_connection){.external} ao seu alojamento Start 10M.
 
-Consulte o guia de [criação de uma conta E-mail MX Plan](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external} para beneficiar do endereço de e-mail incluído com o seu alojamento Start 10M.
+Consulte o guia de [criação de uma conta E-mail MX Plan](/pages/web/emails/email_creation){.external} para beneficiar do endereço de e-mail incluído com o seu alojamento Start 10M.
 
 ## Quer saber mais?
 
-[Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/){.external}
+[Aceder ao espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_connection){.external}
 
-[Criar um endereço de e-mail com a oferta MX Plan](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}
+[Criar um endereço de e-mail com a oferta MX Plan](/pages/web/emails/email_creation){.external}
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

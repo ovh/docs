@@ -1,8 +1,6 @@
 ---
 title: POWER Web Hosting
-slug: only-in-english
 excerpt: Dokumentacja dostępna wyłącznie w języku angielskim
-section: Getting started
 ---
 
 ## Dokumentacja dostępna wyłącznie w języku angielskim

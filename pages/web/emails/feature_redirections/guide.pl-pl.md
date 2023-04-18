@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z aliasów i przekierowań e-mail'
 excerpt: 'Dowiedz się, jak zarządzać aliasami i przekierowaniami e-mail'
-slug: hosting_www_przekierowania_e-mail
-section: 'Funkcjonalności kont e-mail'
-order: 01
 updated: 2020-05-20
 ---
 

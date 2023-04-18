@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Manuelle Installation von WordPress"
-slug: cms_manually_install_wordpress
 excerpt: "Erfahren Sie hier, wie Sie Ihr WordPress CMS eigenständig installieren"
-section: CMS
-order: 04
 updated: 2022-11-16
 ---
 
@@ -25,9 +22,9 @@ Dieses Tutorial hilft Ihnen bei der manuellen Installation eines WordPress CMS (
 
 > [!success]
 >
-> Um WordPress **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/).
+> Um WordPress **automatisch** in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu installieren, lesen Sie unsere Anleitung zur [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules).
 >
-> Um ein **anderes CMS manuell** zu installieren (Joomla!, Drupal, PrestaShop), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](https://docs.ovh.com/de/hosting/webhosting_manuelle_installation_eines_cms_systems/).
+> Um ein **anderes CMS manuell** zu installieren (Joomla!, Drupal, PrestaShop), lesen Sie unsere Anleitung zur [manuellen Installation eines CMS](/pages/web/hosting/cms_manual_installation).
 >
 
 ## Voraussetzungen
@@ -46,7 +43,7 @@ Um das CMS **WordPress** auf Ihrem [Webhosting](https://www.ovhcloud.com/de/web-
 
 Das Wurzelverzeichnis (*root folder*) ist der Ordner des Hostings, in dem Ihr CMS installiert wird. Es wird empfohlen, ein leeres Verzeichnis zu wählen, um Konflikte mit Ihren anderen Multisites zu vermeiden.
 
-Verwenden Sie unsere Anleitung zur [Einrichtung mehrerer Websites auf einem Webhosting](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) um das Wurzelverzeichnis für WordPress anzulegen.
+Verwenden Sie unsere Anleitung zur [Einrichtung mehrerer Websites auf einem Webhosting](/pages/web/hosting/multisites_configure_multisite) um das Wurzelverzeichnis für WordPress anzulegen.
 
 > [!primary]
 >
@@ -60,11 +57,11 @@ Verwenden Sie unsere Anleitung zur [Einrichtung mehrerer Websites auf einem Webh
 Um die IP-Adresse Ihres Webhostings abzurufen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus.<br>
 Sie finden im Bereich `Allgemeine Informationen`{.action} die IP-Adresse Ihres Webhostings unter `IPv4`{.action}.
 
-Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, vergleichen Sie die IP-Adresse Ihres Hostings mit der IP-Adresse in der DNS-Zone Ihres Domainnamens. Sie finden mehr Informationen hierzu in unserer Dokumentation zur Verwaltung von [OVHcloud DNS-Zonen](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/).
+Wenn die aktive DNS-Zone Ihres Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, vergleichen Sie die IP-Adresse Ihres Hostings mit der IP-Adresse in der DNS-Zone Ihres Domainnamens. Sie finden mehr Informationen hierzu in unserer Dokumentation zur Verwaltung von [OVHcloud DNS-Zonen](/pages/web/domains/dns_zone_edit).
 
 > [!warning]
 >
-> Wenn Sie eine der Optionen `CDN`{.action} oder `IP des Landes`{.action} für Ihren Domainnamen aktiviert haben, ermitteln Sie die korrekte IP-Adresse für Ihr Hosting mithilfe des [Verzeichnis von IP-Adressen für die Webhosting Cluster](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/).
+> Wenn Sie eine der Optionen `CDN`{.action} oder `IP des Landes`{.action} für Ihren Domainnamen aktiviert haben, ermitteln Sie die korrekte IP-Adresse für Ihr Hosting mithilfe des [Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web/hosting/clusters_and_shared_hosting_IP).
 >
 
 Sollten Sie diese Überprüfungen nicht durchführen können, kontaktieren Sie den Verwalter Ihrer DNS-Zone, um den Zoneneintrag Ihres Domainnamens zu aktualisieren.
@@ -74,20 +71,20 @@ Sollten Sie diese Überprüfungen nicht durchführen können, kontaktieren Sie d
 > Alle Änderungen in Ihrer DNS-Zone haben eine Propagationszeit von 4 bis 24 Stunden.
 >
 
-- Halten Sie die für die [Verbindung mit dem FTP-Bereich Ihres Webhostings](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) notwendigen Informationen bereit.
-- Halten Sie die für die Datenbankverbindung Ihres Webhostings notwendigen Informationen bereit oder erstellen Sie eine Datenbank mithilfe unserer [Dokumentation](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
+- Halten Sie die für die [Verbindung mit dem FTP-Bereich Ihres Webhostings](/pages/web/hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) notwendigen Informationen bereit.
+- Halten Sie die für die Datenbankverbindung Ihres Webhostings notwendigen Informationen bereit oder erstellen Sie eine Datenbank mithilfe unserer [Dokumentation](/pages/web/hosting/sql_create_database).
 
 #### 1.3 - Installieren des FTP Client "Filezilla" 
 
-Den Download-Link sowie eine Anleitung zur Nutzung finden Sie in unserem Tutorial: [FileZilla mit Ihrem OVHcloud Hosting nutzen](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/).
+Den Download-Link sowie eine Anleitung zur Nutzung finden Sie in unserem Tutorial: [FileZilla mit Ihrem OVHcloud Hosting nutzen](/pages/web/hosting/ftp_filezilla_user_guide).
 
 #### 1.4 - Datenbank erstellen <a name="step1-4"></a> 
 
 Ein CMS benötigt eine Datenbank, um zu funktionieren. Sie sind in unseren [Webhosting Angeboten](https://www.ovhcloud.com/de/web-hosting/) enthalten, mit Ausnahme des kostenlosen [Start 10M Hostings](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 
-Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank](https://docs.ovh.com/de/hosting/datenbank-erstellen/).
+Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank](/pages/web/hosting/sql_create_database).
 
-Wenn Sie über eine MySQL- oder MariaDB-Datenbank in Web Cloud Databases verfügen und diese für die manuelle Installation Ihres WordPress verwenden möchten, lesen Sie unsere [Dokumentation zu Web Cloud Databases](https://docs.ovh.com/de/clouddb/datenbank-und-benutzer-erstellen/#datenbank-erstellen).
+Wenn Sie über eine MySQL- oder MariaDB-Datenbank in Web Cloud Databases verfügen und diese für die manuelle Installation Ihres WordPress verwenden möchten, lesen Sie unsere [Dokumentation zu Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server#datenbank-erstellen).
 
 Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Server, Name der Datenbank, Benutzername und Passwort) ab und speichern Sie diese für [Schritt 3](#step3) dieser Anleitung.
 
@@ -95,12 +92,12 @@ Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Ser
 >
 > Wenn Sie Ihr WordPress mit einer bereits existierenden Datenbank installieren möchten, können Sie die Informationen zur Datenbankverbindung direkt in den Konfigurationsdateien der Website einsehen, die die Datenbank verwendet.
 >
-> Wenn es sich dabei um ein CMS handelt, können Sie [diese Anleitung](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/#schritt-3-passwort-der-datenbank-ihrer-website-in-ihrer-konfigurationsdatei-andern) verwenden, um die Konfigurationsdateien in Ihrem [FTP Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) zu identifizieren.
+> Wenn es sich dabei um ein CMS handelt, können Sie [diese Anleitung](/pages/web/hosting/sql_change_password#schritt-3-passwort-der-datenbank-ihrer-website-in-ihrer-konfigurationsdatei-andern) verwenden, um die Konfigurationsdateien in Ihrem [FTP Speicherplatz](/pages/web/hosting/ftp_connection) zu identifizieren.
 >
 > Loggen Sie sich anschließend in Ihre Datenbank ein, um die "Präfixe" der bereits enthaltenen Tabellen zu identifizieren. Stellen Sie sicher, bereits vorhandene Tabellenpräfixe nicht für Ihre neue Website zu verwenden.
 >
-> - Um sich mit der Datenbank des Webhostings zu verbinden, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/datenbank-erstellen/#schritt-3-datenbank-verwalten).
-> - Um sich mit einer Web Cloud Databases Datenbank zu verbinden, lesen Sie [diese Anleitung](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/).
+> - Um sich mit der Datenbank des Webhostings zu verbinden, lesen Sie [diese Anleitung](/pages/web/hosting/sql_create_database#schritt-3-datenbank-verwalten).
+> - Um sich mit einer Web Cloud Databases Datenbank zu verbinden, lesen Sie [diese Anleitung](/pages/web/clouddb/connecting-to-database-on-database-server).
 >
 
 ### Schritt 2 - Manuelle Installation starten
@@ -115,7 +112,7 @@ Gehen Sie auf die offizielle [WordPress Website](https://wordpress.org/download/
 >
 > Beachten Sie auf der Download-Seite die für den Betrieb von WordPress erforderliche PHP-Version und MySQL- oder MariaDB-Version.
 >
-> Konfigurieren Sie anschließend die PHP-Version auf Ihrem Webhosting mithilfe unserer Anleitung zur [Änderung der PHP-Version eines Webhostings](https://docs.ovh.com/de/hosting/konfiguration_von_php_fur_ein_ovh_webhosting_2014/).
+> Konfigurieren Sie anschließend die PHP-Version auf Ihrem Webhosting mithilfe unserer Anleitung zur [Änderung der PHP-Version eines Webhostings](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).
 >
 > Wenn Ihre Konfiguration bereits die Mindestvoraussetzung für die PHP-Version erfüllt, ist keine Änderung erforderlich.
 >
@@ -135,7 +132,7 @@ Geben Sie das Verzeichnis **WordPress** als Ziel für das Entpacken Ihrer Dateie
 
 #### 2.3 - Die Quelldateien vom lokalen Ordner zum Wurzelverzeichnis auf Ihrem Webhosting verschieben
 
-Sobald die Dateien in den Ordner "**WordPress**" entkomprimiert wurden, loggen sie sich in den [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) ein, indem Sie den [Filezilla-Client verwenden](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/). Kopieren Sie die Dateien im Ordner "**WordPress**" in das Wurzelverzeichnis aus [Schritt 1](#step1) dieser Anleitung.
+Sobald die Dateien in den Ordner "**WordPress**" entkomprimiert wurden, loggen sie sich in den [FTP-Speicherplatz](/pages/web/hosting/ftp_connection) ein, indem Sie den [Filezilla-Client verwenden](/pages/web/hosting/ftp_filezilla_user_guide). Kopieren Sie die Dateien im Ordner "**WordPress**" in das Wurzelverzeichnis aus [Schritt 1](#step1) dieser Anleitung.
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
@@ -155,7 +152,7 @@ Sobald die Dateien in den Ordner "**WordPress**" entkomprimiert wurden, loggen s
 
 **Sonderfall**: Wenn Sie begrenzte Internetgeschwindigkeit haben und über ein Webhosting-Angebot **Pro** oder höher verfügen, können Sie auch eine **SSH**-Verbindung nutzen, um die WordPress Quelldateien direkt auf den Speicherplatz Ihres Webhostings herunterzuladen. 
 
-Um sich über SSH mit Ihrem Hosting zu verbinden, lesen Sie unsere Anleitung [SSH-Zugang Ihres Webhostings verwenden](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/).
+Um sich über SSH mit Ihrem Hosting zu verbinden, lesen Sie unsere Anleitung [SSH-Zugang Ihres Webhostings verwenden](/pages/web/hosting/ssh_on_webhosting).
 
 Wenn Sie über **SSH** eingeloggt sind, führen Sie die nachfolgenden Befehle aus.
 

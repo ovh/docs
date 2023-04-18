@@ -1,9 +1,6 @@
 ---
 title: Installer Strapi sur votre hébergement web POWER
-slug: nodejs-installer-strapi
 excerpt: Découvrez comment installer Strapi sur votre hébergement web POWER
-section: Node.js
-order: 6
 updated: 2021-02-04
 ---
 
@@ -41,7 +38,7 @@ Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y dép
 - Disposer de l'offre d'hébergement web POWER [Node.js](https://labs.ovh.com/managed-nodejs).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](/pages/labs/web-power/getting-started) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
@@ -53,9 +50,9 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration).
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration).
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
+[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER.
 
 Effacez le répertoire `www` et installez ensuite Strapi :
 
@@ -85,7 +82,7 @@ RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
-[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS sur Strapi sera alors en ligne.
+[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre CMS sur Strapi sera alors en ligne.
 
 ![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
 

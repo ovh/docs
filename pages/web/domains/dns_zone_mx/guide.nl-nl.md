@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: Toevoeging van een MX-veld aan de configuratie van uw domeinnaam
-slug: dns-zone-mx-configuratie-handleiding
 excerpt: Ontdek hoe u een MX-veld kunt toevoegen aan de configuratie van uw domeinnaam
-section: DNS en DNS-zone
-order: 04
 updated: 2018-05-30
 ---
 
@@ -64,7 +61,7 @@ Als er al MX-records zijn en u deze wilt vervangen, klikt u op het tandwielpicto
 
 Als u een record wilt toevoegen, klikt u op `Record toevoegen`{.action} en selecteert u vervolgens `MX`{.action}. Vul de vereiste informatie in, naargelang de e-mailoplossing die u hebt besteld:
 
-- **Als u een OVH-e-mailoplossing hebt**: raadpleeg de informatie in [Stap 2: Kennis van de OVH MX-configuratie](https://docs.ovh.com/nl/domains/dns-zone-mx-configuratie-handleiding/#stap-2-kennis-van-de-ovh-mx-configuratie){.external}.
+- **Als u een OVH-e-mailoplossing hebt**: raadpleeg de informatie in [Stap 2: Kennis van de OVH MX-configuratie](/pages/web/domains/dns_zone_mx#stap-2-kennis-van-de-ovh-mx-configuratie){.external}.
 
 - **Als u een e-mailoplossing van een andere serviceprovider gebruikt**: raadpleeg de informatie van uw serviceprovider.
 
@@ -77,8 +74,8 @@ Nadat u de informatie hebt ingevoerd, voltooit u de stappen en klikt u op `Beves
 
 ## Verder
 
-[Algemene informatie over DNS-servers](https://docs.ovh.com/nl/domains/gedeelde_hosting_algemene_informatie_over_dns_servers/){.external}
+[Algemene informatie over DNS-servers](/pages/web/domains/dns_server_general_information){.external}
 
-[Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}
+[Wijziging van een OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

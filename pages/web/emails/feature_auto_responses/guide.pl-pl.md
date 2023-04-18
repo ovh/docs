@@ -1,10 +1,7 @@
 ---
 title: 'Tworzenie autorespondera dla konta e-mail'
 excerpt: 'Dowiedz się, jak zainstalować autoresponder e-mail'
-slug: przewodnik_dotyczacy_aktywacji_autorespondera
 legacy_guide_number: g2052
-section: 'Funkcjonalności kont e-mail'
-order: 02
 updated: 2021-04-20
 ---
 
@@ -29,7 +26,7 @@ W przypadku Twojej nieobecności w biurze możesz utworzyć autoresponder e-mail
 
 > [!primary]
 >
-> Jeśli Twoje konto e-mail znajduje się w ofercie [**Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplan, utwórz autoresponder w interfejsie Webmail korzystając z dokumentacji ["Instalacja autorespondera z poziomu interfejsu OWA"](../../microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
+> Jeśli Twoje konto e-mail znajduje się w ofercie [**Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplan, utwórz autoresponder w interfejsie Webmail korzystając z dokumentacji ["Instalacja autorespondera z poziomu interfejsu OWA"](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Utworzenie autorespondera
 

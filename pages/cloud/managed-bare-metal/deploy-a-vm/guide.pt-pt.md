@@ -1,11 +1,8 @@
 ---
 title: Implementação de uma máquina virtual
-slug: implementacao-de-uma-maquina-virtual
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/implementacao-de-uma-maquina-virtual/'
+    canonical: '/pages/cloud/private-cloud/deploiement_d_une_machine_virtuelle'
 excerpt: Saiba como implementar uma máquina virtual através da interface vSphere
-section: Gestão das máquinas virtuais
-order: 0
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ A partir da interface vSphere, pode implementar máquinas virtuais de várias fo
 ## Requisitos
 
 - Ter um produto [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
-- Estar ligado à [interface vSphere](../instalar_o_vsphere_client/).
+- Estar ligado à [interface vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 
 ## Instruções
 
@@ -34,8 +31,8 @@ Clique com o botão direito do rato no cluster à sua escolha e clique em `New V
 
 Tem várias possibilidades no momento de criação de uma máquina virtual:
 
-- A criação a partir de um ISO, que estará no seu datastore e que poderá ter importado seguindo [o manual de ligação em SFTP](../ligacao_por_sftp/).
-- Também é possível implementar uma máquina virtual a partir de um template seu ou de um [template OVHcloud](../usar-template-ovhcloud/).
+- A criação a partir de um ISO, que estará no seu datastore e que poderá ter importado seguindo [o manual de ligação em SFTP](/pages/cloud/managed-bare-metal/sftp-connexion).
+- Também é possível implementar uma máquina virtual a partir de um template seu ou de um [template OVHcloud](/pages/cloud/managed-bare-metal/ovf_template).
 - Pode clonar uma máquina virtual já existente (tenha em conta o risco de conflito de endereços IP).
 - É possível clonar uma máquina virtual em template, para uma implementação mais rápida das suas próximas máquinas virtuais.
 - É possível clonar um template noutro template para, por exemplo, ter o template em diferentes datastores e não sofrer diminuições de desempenhos aquando de uma implementação massiva.

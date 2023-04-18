@@ -1,9 +1,6 @@
 ---
 title: 'Imposta risposte automatiche con OWA'
 excerpt: 'Scopri come impostare risposte automatiche con OWA'
-slug: exchange_2016_imposta_una_risposta_automatica_con_owa
-section: 'Utilizzo di Outlook Web App (OWA)'
-order: 02
 updated: 2020-02-26
 ---
 
@@ -58,10 +55,10 @@ Nel secondo riquadro dell’editor è possibile digitare un messaggio alternativ
 
 ## Per saperne di più
 
-[Guida all’utilizzo di Outlook Web App con un account Exchange](../exchange_2016_guida_allutilizzo_di_outlook_web_app/)
+[Guida all’utilizzo di Outlook Web App con un account Exchange](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Concedere autorizzazioni di accesso a un account Exchange](../exchange_2013_assegna_i_diritti_full_access_a_un_account/)
+[Concedere autorizzazioni di accesso a un account Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Condividere calendari in OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa/)
+[Condividere calendari in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Partecipa alla nostra community di utenti all’indirizzo <https://community.ovh.com/en/>.

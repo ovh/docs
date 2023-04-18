@@ -1,9 +1,6 @@
 ---
 title: 'Guardar y exportar una base de datos en un servidor de bases de datos'
-slug: guardar-exportar-una-base-de-datos
 excerpt: 'Cómo realizar el backup y la exportación de la base de datos'
-section: 'Configuración'
-order: 04
 updated: 2023-02-15
 ---
 
@@ -65,7 +62,7 @@ Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el b
 
 ##### 1\.1 Exportar mi base de datos MySQL o MariaDB desde phpMyAdmin OVHcloud
 
-Para exportar su base de datos directamente desde phpMyAdmin, es necesario conectarse previamente. Para ello, consulte la guía ["Conectarse a una base de datos".](../coneccion-base-de-datos-servidor-bdd).
+Para exportar su base de datos directamente desde phpMyAdmin, es necesario conectarse previamente. Para ello, consulte la guía ["Conectarse a una base de datos".](/pages/web/clouddb/connecting-to-database-on-database-server).
 
 Una vez conectado a phpMyAdmin, haga clic en el nombre de la base de datos que quiere exportar y, seguidamente, en la pestaña `Exportar`{.action}.
 
@@ -91,7 +88,7 @@ mysqldump —host=servidor —user=usuario —port=puerto —contraseña=contras
 
 > [!warning]
 >
-> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](https://docs.ovh.com/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
+> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
@@ -117,13 +114,13 @@ pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña 
 
 > [!warning]
 >
-> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](https://docs.ovh.com/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
+> - Si desea evitar que un tercero acceda a este archivo de datos sensibles, consulte la guía Proteger el acceso a él: [Proteger el panel de administración del sitio web con un archivo .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Esta acción solo es posible desde un alojamiento de OVHcloud compartido.
 >
 
 ## Más información
 
-[Restaurar e importar una base de datos en su servidor de bases de datos](../restaurar-importar-base-de-datos)
+[Restaurar e importar una base de datos en su servidor de bases de datos](/pages/web/clouddb/restore-import-on-database-server)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

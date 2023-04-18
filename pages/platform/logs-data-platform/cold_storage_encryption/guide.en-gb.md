@@ -1,9 +1,6 @@
 ---
 title: Encrypt your Cold Stored logs
-slug: cold-storage-encryption
-order: 5
 excerpt: Secure your Cold Stored logs by encrypting them with your PGP public key
-section: Features
 updated: 2023-03-10
 ---
 
@@ -11,7 +8,7 @@ updated: 2023-03-10
 
 ## Objective
 
-With the [Cold Storage feature](../cold-storage) you can generate daily archives for your log streams.
+With the [Cold Storage feature](/pages/platform/logs-data-platform/cold_storage) you can generate daily archives for your log streams.
 
 On top of that, you can secure these archives by encrypting them with one or more of your PGP public keys. Only the owner of the private keys will be able to decrypt and see the archives content.
 
@@ -19,7 +16,7 @@ On top of that, you can secure these archives by encrypting them with one or mor
 
 This is what you need to get started:
 
-- A stream with cold storage enabled. You can follow this [Cold Storage tutorial](../cold-storage) to set it up.
+- A stream with cold storage enabled. You can follow this [Cold Storage tutorial](/pages/platform/logs-data-platform/cold_storage) to set it up.
 - An existing PGP keypair, or a machine with the `gpg` binary to generate a new PGP keypair.
 
 ## Instructions
@@ -226,7 +223,7 @@ Now that you added your PGP public key to your Logs Data Platform account, you c
 
 For this, go to the `Data Stream` tab, pick the stream for which you want cold storage encryption, click the `...`{.action} button and then click`Edit`{.action}.
 
-- Ensure the `Enable long-term storage` option is checked. You can refer to the [Cold Storage feature](../cold-storage) documentation to know about each of its fields.
+- Ensure the `Enable long-term storage` option is checked. You can refer to the [Cold Storage feature](/pages/platform/logs-data-platform/cold_storage) documentation to know about each of its fields.
 - Check the `Encrypt archives with my PGP encryption keys` option
 - Select each PGP encryption key you want your archive to be encrypted with
 - Click on `Save`{.action}
@@ -254,7 +251,7 @@ In this archives list, you can see a `PGP encryption keys` column.
 
 #### Download and decrypt your archives
 
-Once your encrypted archives are available, you can retrieve them [following this tutorial](../cold-storage/#retrieving-the-archives).
+Once your encrypted archives are available, you can retrieve them [following this tutorial](/pages/platform/logs-data-platform/cold_storage#retrieving-the-archives).
 To decrypt a given archive, you can use `gpg` on a machine on which your private key is present:
 
 ```shell-session
@@ -287,7 +284,7 @@ The Logs Data Platform team will then take care of your request.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start)
-- Documentation: [Guides](../)
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start)
+- Documentation: [Guides](/gb/en/logs-data-platform/)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/en/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

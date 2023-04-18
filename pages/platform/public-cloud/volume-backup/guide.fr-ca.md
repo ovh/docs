@@ -1,9 +1,6 @@
 ---
 title: "Créer une sauvegarde d'un volume"
-slug: volume-backup
 excerpt: Découvrez comment créer une sauvegarde de votre volume Block Storage depuis votre espace client
-section: Stockage
-order: 3
 updated: 2023-03-29
 ---
 
@@ -31,7 +28,7 @@ Le Volume Snapshot et le Volume Backup vous permettent de :
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Un volume [Block storage](https://docs.ovh.com/ca/fr/public-cloud/creer-et-configurer-un-disque-supplementaire-sur-une-instance/) créé dans votre projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/)
+- Un volume [Block storage](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) créé dans votre projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/)
 
 ## En pratique
 
@@ -39,7 +36,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Ouvrez ensuite le menu `Block Storage`{.action} dans la barre de navigation à gauche sous **Storage**.
 
-A droite du volume concerné, cliquez sur le bouton `...`{.action} puis sur `Créer une sauvegarde`{.action}. Il n'est pas nécessaire de détacher d'abord le volume de son instance. Cependant, si vous souhaitez détacher votre volume de son instance, consultez cette [section](https://docs.ovh.com/ca/fr/public-cloud/creer-et-configurer-un-disque-supplementaire-sur-une-instance/#sous-linux) du guide correspondant pout Linux, et cette [section](https://docs.ovh.com/ca/fr/public-cloud/creer-et-configurer-un-disque-supplementaire-sur-une-instance/#sous-windows) pour Windows.
+A droite du volume concerné, cliquez sur le bouton `...`{.action} puis sur `Créer une sauvegarde`{.action}. Il n'est pas nécessaire de détacher d'abord le volume de son instance. Cependant, si vous souhaitez détacher votre volume de son instance, consultez cette [section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-linux) du guide correspondant pout Linux, et cette [section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-windows) pour Windows.
 
 ![Volume Backup - création](images/volumebackup01.png){.thumbnail}
 
@@ -80,16 +77,16 @@ Dès que la création du Volume Backup a été demandée, il est ajouté à la l
 
 Cliquez sur le bouton `...`{.action} pour `Supprimer`{.action} ou `Créer un volume`{.action} à partir du Volume Snapshot ou du Volume Backup correspondant.
 
-Retrouvez plus d’informations à ce sujet dans [notre guide sur la création d'un volume depuis une sauvegarde](https://docs.ovh.com/ca/fr/public-cloud/creer-volume-depuis-sauvegarde/).
+Retrouvez plus d’informations à ce sujet dans [notre guide sur la création d'un volume depuis une sauvegarde](/pages/platform/public-cloud/create-volume-from-snapshot).
 
 ![Créer un volume depuis un backup](images/volumebackup05.png){.thumbnail}
 
 ## Aller plus loin
 
-[Créer un volume à partir d’une sauvegarde](https://docs.ovh.com/ca/fr/public-cloud/creer-volume-depuis-sauvegarde/)
+[Créer un volume à partir d’une sauvegarde](/pages/platform/public-cloud/create-volume-from-snapshot)
 
-[Créer et configurer un disque supplementaire sur une instance](https://docs.ovh.com/ca/fr/public-cloud/creer-et-configurer-un-disque-supplementaire-sur-une-instance/)
+[Créer et configurer un disque supplementaire sur une instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
-[Augmenter la taille d’un disque supplémentaire](https://docs.ovh.com/ca/fr/public-cloud/augmenter-la-taille-dun-disque-supplementaire/)
+[Augmenter la taille d’un disque supplémentaire](/pages/platform/public-cloud/increase_the_size_of_an_additional_disk)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

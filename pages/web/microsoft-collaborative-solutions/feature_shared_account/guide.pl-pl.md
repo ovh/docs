@@ -1,9 +1,6 @@
 ---
 title: Tworzenie i korzystanie z konta współdzielonego
-slug: exchange-korzystanie-z-kont-współdzielonych
 excerpt: Dodaj i użyj konta współdzielonego w Twojej usłudze E-mail Exchange
-section: Funkcje kont Exchange
-order: 06
 updated: 2021-06-15
 ---
 
@@ -103,12 +100,12 @@ W programie Outlook możesz odnaleźć konto współdzielone w kolumnie po lewej
 
 ## Sprawdź również
 
-[Sprawdź konto Exchange w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Sprawdź konto Exchange w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Delegowanie uprawnień na konto Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/)
+[Delegowanie uprawnień na konto Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Współdzielenie kalendarza przez webmail OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[Współdzielenie kalendarza przez webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Dodaj stopkę strony dla kont Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczny_podpis_-_disclaimer/)
+[Dodaj stopkę strony dla kont Exchange](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

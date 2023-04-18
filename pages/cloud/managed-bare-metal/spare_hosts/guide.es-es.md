@@ -1,11 +1,8 @@
 ---
 title: Host de sustitución
-slug: los_hosts_de_spare
 routes:
-    canonical: 'https://docs.ovh.com/es/private-cloud/los_hosts_de_spare/'
+    canonical: '/pages/cloud/private-cloud/spare_hosts'
 excerpt: Cómo sustituir un host
-section: Funcionalidades de OVHcloud
-order: 04
 updated: 2020-11-18
 ---
 
@@ -29,7 +26,7 @@ En caso de fallo en uno de los hosts que componen su infraestructura, OVHcloud e
 
 Una vez entregado el host, recibirá un mensaje de correo electrónico con toda la información necesaria y su dirección IP, para que así pueda encontrarlo fácilmente en su interfaz vSphere.
 
-Por defecto, el servicio HA ([High Availability](../vmware-ha-high-availability)) de VMware está activado en su cluster. Si este servicio permanece activado, las máquinas virtuales se reiniciarán automáticamente. En caso de que el servicio DRS (Distributed Ressources Scheduler) esté activado y configurado en modo «Fully automated», la carga en los hosts del cluster se repartirá de forma automática.
+Por defecto, el servicio HA ([High Availability](/pages/cloud/managed-bare-metal/vmware_ha_high_availability)) de VMware está activado en su cluster. Si este servicio permanece activado, las máquinas virtuales se reiniciarán automáticamente. En caso de que el servicio DRS (Distributed Ressources Scheduler) esté activado y configurado en modo «Fully automated», la carga en los hosts del cluster se repartirá de forma automática.
 
 > [!warning]
 > 
@@ -40,7 +37,7 @@ Por defecto, el servicio HA ([High Availability](../vmware-ha-high-availability)
 
 Una vez que el host original vuelva a estar operativo, podrá devolver cualquiera de los dos hosts (el de sustitución o el original).
 
-Le recomendamos que nos devuelva el host original para que podamos realizar un diagnóstico más preciso de la incidencia y evitar así fallos futuros. Si devuelve el host original, podrá conservar el host de sustitución. Para más información, consulte la guía [Eliminar un servidor host](../eliminar-servidor-host/).
+Le recomendamos que nos devuelva el host original para que podamos realizar un diagnóstico más preciso de la incidencia y evitar así fallos futuros. Si devuelve el host original, podrá conservar el host de sustitución. Para más información, consulte la guía [Eliminar un servidor host](/pages/cloud/managed-bare-metal/delete_host).
 
 Una vez retirado el host original, OVHcloud podrá recuperarlo automáticamente.
 

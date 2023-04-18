@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en Outlook para Windows'
-slug: configuracion-outlook-2016
 excerpt: 'Cómo configurar una cuenta MX Plan en Outlook para Windows'
-section: Configuración en el ordenador
-order: 01
 updated: 2021-06-05
 ---
 
@@ -36,7 +33,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
  
 > [!primary]
 >
-> Si utiliza Outlook 2016 para Mac, consulte nuestra guía [Configurar una cuenta de correo en Outlook 2016 para Mac](https://docs.ovh.com/es/emails/configuracion-outlook-2016-mac/){.external}.
+> Si utiliza Outlook 2016 para Mac, consulte nuestra guía [Configurar una cuenta de correo en Outlook 2016 para Mac](/pages/web/emails/how_to_configure_outlook_2016-mac/){.external}.
 >
 
 ## Procedimiento
@@ -70,11 +67,11 @@ En una configuración en **POP**, los valores son los siguientes:
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, no dude en consultar nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/).
+OVHcloud también ofrece una aplicación web que permite acceder a su dirección de correo electrónico desde un navegador de internet. y está disponible en la dirección <https://www.ovh.es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico. Si tiene cualquier duda sobre su uso, no dude en consultar nuestra guía [Consultar su cuenta Exchange desde la interfaz OWA](/pages/web/microsoft-collaborative-solutions/owa_user_guide).
 
 ### Obtener una copia de seguridad de su dirección de correo
 
-Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar desde Windows**" en nuestra guía [Migrar manualmente su dirección de correo electrónico](https://docs.ovh.com/es/emails/migrar-sus-direcciones-de-correo-manualmente/#exportar-desde-windows).
+Si necesita realizar alguna operación que pueda provocar la pérdida de los datos de su cuenta de correo, le recomendamos que realice una copia de seguridad previa de la cuenta de correo. Para ello, consulte el apartado "**Exportar desde Windows**" en nuestra guía [Migrar manualmente su dirección de correo electrónico](/pages/web/emails/manual_email_migration#exportar-desde-windows).
 
 
 ### Modificar los parámetros existentes
@@ -94,8 +91,8 @@ La ventana está dividida en dos partes, **Correo entrante** y **Correo saliente
 
 ## Más información
 
-[Configurar una cuenta Email Pro en Outlook 2016 para Windows](https://docs.ovh.com/es/emails-pro/configuracion-outlook-2016/){.external}
+[Configurar una cuenta Email Pro en Outlook 2016 para Windows](/pages/web/emails-pro/how_to_configure_outlook_2016){.external}
 
-[Configurar una cuenta Exchange en Outlook 2016 para Windows](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-outlook-2016/){.external}
+[Configurar una cuenta Exchange en Outlook 2016 para Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Moving an Additional IP
 excerpt: Find out how to move an Additional IP in the Control Panel or via the OVHcloud API
-slug: ip-fo-move
-section: Network Management
-order: 7
 updated: 2022-12-20
 ---
 
@@ -40,7 +37,7 @@ With this technology, you can switch IP addresses from one solution to another i
 
 > [!warning]
 > If the Additional IP address or one of the block IP addresses has a virtual MAC attached, the target server must support the vMAC functionality.
-> See [this guide](https://docs.ovh.com/ie/en/dedicated/network-support-virtual-mac/) for details.
+> See [this guide](/pages/cloud/dedicated/network_support_virtual_mac) for details.
 >
 > Otherwise, the virtual MACs must be removed from the Additional IPs before the transfer.
 

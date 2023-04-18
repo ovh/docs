@@ -1,9 +1,6 @@
 ---
 title: Instalar Joomla! manualmente
-slug: instalar-manualmente-joomla
 excerpt: Esta guía explica cómo instalar manualmente un CMS Joomla!
-section: CMS
-order: 05
 updated: 2022-12-01
 ---
 
@@ -16,13 +13,13 @@ updated: 2022-12-01
 
 Si necesita ayuda, puede hacerlo en todos los pasos. Si desea más información sobre el CMS, puede ponerse en contacto con el editor del CMS o con las comunidades asociadas al CMS.
 
-Si desea instalar otros módulos o CMS, consulte [esta guía](https://docs.ovh.com/es/hosting/web_hosting_instalar_un_cms_manualmente/).
+Si desea instalar otros módulos o CMS, consulte [esta guía](/pages/web/hosting/cms_manual_installation).
 
 Los CMS son [sistemas de gestión de contenidos](https://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos){.external}, por lo general necesitan una plataforma de alojamiento que incluya un servidor FTP, una base de datos y un dominio.
 
 Todos estos elementos se encuentran en [nuestros productos](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 
-*Si desea instalar Joomla! de forma automática desde el área de cliente, puede consultar la [siguiente guía](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).* 
+*Si desea instalar Joomla! de forma automática desde el área de cliente, puede consultar la [siguiente guía](/pages/web/hosting/cms_install_1_click_modules).* 
 
 
 ## Joomla!
@@ -63,7 +60,7 @@ La carpeta de destino se titulará " **Joomla** "
 
 Para subir los archivos de **Joomla!**  en su alojamiento, deberá conectarse a él en primer lugar.
 
-*Consulte nuestra guía para [conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/)*
+*Consulte nuestra guía para [conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection)*
 
 
 ![hosting](images/3144.png){.thumbnail}
@@ -228,7 +225,7 @@ Se trata de un error relativo a la versión PHP del servidor.
 
 La causa es simple: la última versión de PHP no ha sido activada.
 
-*Consulte nuestra guía sobre la [modificación de la versión PHP del servicio compartido](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/).*
+*Consulte nuestra guía sobre la [modificación de la versión PHP del servicio compartido](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).*
 
 
 ![hosting](images/3156.png){.thumbnail}
@@ -239,7 +236,7 @@ Magic Quotes debe estar en Off y, por tanto, a 0 en su archivo de configuración
 
 En los nuevos productos 2014, si PHP-FPM está activado, la variable Magic Quote está desactivada por defecto. Para los antiguos productos compartidos, puede desactivar esta variable en el archivo .htaccess.
 
-*Consulte nuestra guía sobre la [modificación de la versión PHP del servicio compartido](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/).*
+*Consulte nuestra guía sobre la [modificación de la versión PHP del servicio compartido](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014).*
 
 ![hosting](images/3157.png){.thumbnail}
 

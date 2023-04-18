@@ -1,9 +1,6 @@
 ---
 title: 1-Klick-Module verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten
-slug: 1-click-module-management
-section: CMS
-order: 02
 updated: 2022-09-05
 ---
 
@@ -27,8 +24,8 @@ updated: 2022-09-05
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), auf dem Sie 1-Klick-Module installieren können (ausgenommen lediglich das kostenlose [Start10M Angebot](https://docs.ovh.com/de/hosting/start10m-aktivieren/)).
-- Sie haben ein 1-Klick-Modul auf Ihrem Hosting erstellt (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/)).
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), auf dem Sie 1-Klick-Module installieren können (ausgenommen lediglich das kostenlose [Start10M Angebot](/pages/web/hosting/activate_start10m)).
+- Sie haben ein 1-Klick-Modul auf Ihrem Hosting erstellt (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/hosting/cms_install_1_click_modules)).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -109,7 +106,7 @@ Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modu
 
 > [!warning]
 >
-> Daten-Backups sind ein Bestandteil der Operationen, die für die [Absicherung Ihrer Webseiten](https://docs.ovh.com/de/hosting/website-absichern/) notwendig sind. Wir empfehlen Ihnen, Backups Ihrer Daten regelmäßig auf einen lokalen Datenträger wie einen USB-Stick oder eine externe Festplatte zu [importieren](https://docs.ovh.com/de/hosting/website-exportieren/).
+> Daten-Backups sind ein Bestandteil der Operationen, die für die [Absicherung Ihrer Webseiten](/pages/web/hosting/secure_your_website) notwendig sind. Wir empfehlen Ihnen, Backups Ihrer Daten regelmäßig auf einen lokalen Datenträger wie einen USB-Stick oder eine externe Festplatte zu [importieren](/pages/web/hosting/exporter-son-site-web).
 >
 
 #### Schritt 1: Die zu Ihrem Modul gehörige Datenbank identifizieren <a name="step1"></a>
@@ -120,7 +117,7 @@ Wenn Sie über eine einzige Datenbank in diesem Teil Ihres Kundencenters verfüg
 
 Andernfalls gehen Sie zum Tab `Multisite`{.action}. Notieren Sie den Namen des `Wurzelverzeichnis`: Dieses Verzeichnis enthält die Dateien, aus denen Ihr 1-Klick-Modul auf dem FTP-Server besteht.
 
-Loggen Sie sich anschließend in den [FTP-Bereich](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Multisite`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
+Loggen Sie sich anschließend in den [FTP-Bereich](/pages/web/hosting/ftp_connection) Ihres Hostings ein. Öffnen Sie das entsprechende `Wurzelverzeichnis` aus dem Tab `Multisite`{.action} und suchen Sie die Konfigurationsdatei Ihres Moduls:
 
 - WordPress: **“wp-config.php“** (Der Name der Datenbank erscheint unter der Überschrift **“DB_NAME“**).
 - Joomla!: **“configuration.php“** (Der Name der Datenbank wird unter dem Eintrag **“public $db“** angezeigt).
@@ -129,7 +126,7 @@ Loggen Sie sich anschließend in den [FTP-Bereich](https://docs.ovh.com/de/hosti
 
 #### Schritt 2: Ihr Modul sichern
 
-Folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/hosting/website-exportieren/), um Dateien vom FTP-Bereich Ihres Hostings als auch Datenbanken zu exportieren und zu sichern.
+Folgen Sie den Anweisungen in [dieser Anleitung](/pages/web/hosting/exporter-son-site-web), um Dateien vom FTP-Bereich Ihres Hostings als auch Datenbanken zu exportieren und zu sichern.
 
 #### Schritt 3: Ihr Modul löschen
 
@@ -144,7 +141,7 @@ Klicken Sie dann auf den Button `...`{.action} rechts neben der Zeile für Ihr M
 
 > [!warning]
 >
-> Die Löschung Ihres 1-Klick-Moduls **beinhaltet nicht die Löschung der Datenbank**. Wenn Sie die Installation eines neuen CMS starten, ohne zuvor die bestehende Datenbank gelöscht zu haben (und Ihr Hosting erlaubt nicht die automatische Erstellung einer neuen Datenbank), erscheint die Nachricht “[Beim Laden der Informationen ist ein Fehler aufgetreten (You need at least one free database)](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/#beim-laden-der-informationen-ist-ein-fehler-aufgetreten-sie-benotigen-mindestens-eine-freie-datenbank)“ in Ihrem Kundencenter.
+> Die Löschung Ihres 1-Klick-Moduls **beinhaltet nicht die Löschung der Datenbank**. Wenn Sie die Installation eines neuen CMS starten, ohne zuvor die bestehende Datenbank gelöscht zu haben (und Ihr Hosting erlaubt nicht die automatische Erstellung einer neuen Datenbank), erscheint die Nachricht “[Beim Laden der Informationen ist ein Fehler aufgetreten (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#beim-laden-der-informationen-ist-ein-fehler-aufgetreten-sie-benotigen-mindestens-eine-freie-datenbank)“ in Ihrem Kundencenter.
 >
 > Wenn Sie über ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) verfügen oder bereits vier Datenbanken auf Ihrem [Pro Hosting](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance Hosting](https://www.ovhcloud.com/de/web-hosting/performance-offer/) erstellt haben, müssen Sie **ZUERST** die im [ersten Schritt](#step1) identifizierte Datenbank löschen, um ein neues 1-Klick-Modul erstellen zu können.
 >
@@ -155,7 +152,7 @@ Um die Löschung Ihres Moduls abzuschließen, gehen Sie in im [OVHcloud Kundence
 
 ### Bewährte Praktiken
 
-Sichern Sie Ihre Seite entsprechend den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/hosting/website-absichern/).
+Sichern Sie Ihre Seite entsprechend den Anweisungen in [dieser Anleitung](/pages/web/hosting/secure_your_website).
 
 Fügen Sie den Formularen Ihrer Website CAPTCHA-Verifizierungen hinzu.
 
@@ -168,7 +165,7 @@ Installieren Sie auf Ihrer Seite keine Plugins oder Templates, die nicht auf der
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Die häufigsten Fehler bei 1-Klick-Modulen beheben](https://docs.ovh.com/de/hosting/fehler-bei-1-klick-modulen/).
+[Die häufigsten Fehler bei 1-Klick-Modulen beheben](/pages/web/hosting/diagnostic_errors_module1clic).
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

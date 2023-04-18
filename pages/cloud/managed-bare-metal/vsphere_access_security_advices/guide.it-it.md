@@ -1,10 +1,8 @@
 ---
 title: Best practice di sicurezza per il client vSphere Web
-slug: sicurezza-accesso-vsphere-web
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/sicurezza-accesso-vsphere-web/'
+    canonical: '/pages/cloud/private-cloud/vsphere_access_security_advices'
 excerpt: Come proteggere l’accesso al client vSphere Web
-section: Per iniziare
 updated: 2020-11-18
 ---
 

@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van uw E-mail Pro op Android via de Gmail-app
-slug: configuratie-android
 excerpt: Leer hoe u een E-mail Pro-account kunt configureren op Android, via de Gmail-app
-section: Configuratie van een e-mailclient
-order: 5
 updated: 2020-03-18
 ---
 
@@ -85,8 +82,8 @@ OVH biedt een webapplicatie met [teamwerk-functies](https://www.ovh.com/nl/email
 
 ## Verder
 
-[Configuratie van het e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan op een iPhone of iPad](https://docs.ovh.com/nl/emails/configuratie-android/){.external}.
+[Configuratie van het e-mailadres dat is opgenomen in MX Plan of in een webhostingsplan op een iPhone of iPad](/pages/web/emails/how_to_configure_android){.external}.
 
-[Configuratie van uw Exchange-account op Android via de Gmail-app](https://docs.ovh.com/nl/microsoft-collaborative-solutions/configuratie-android/){.external}.
+[Configuratie van uw Exchange-account op Android via de Gmail-app](/pages/web/microsoft-collaborative-solutions/how_to_configure_android){.external}.
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com){.external}.

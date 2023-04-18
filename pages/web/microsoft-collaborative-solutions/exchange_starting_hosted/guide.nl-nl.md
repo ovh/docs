@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: Aan de slag met Hosted Exchange
-slug: eerste-configuratie-exchange
 excerpt: Hosted Exchange - de eerste stappen
-section: Configuratie van Exchange
-order: 01
 updated: 2018-01-19
 ---
 
@@ -62,7 +59,7 @@ Als u klaar bent met het configureren van uw domein, kunt u ook aanvullende dome
 
 Om een nieuwe domeinnaam toe te voegen, selecteert u de betreffende [Hosted Exchange](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in uw OVH Control Panel en klikt u op `Verwante domeinen`{.action}. U ziet een tabel met alle domeinnamen die momenteel zijn geconfigureerd of die binnenkort moeten worden geconfigureerd voor uw dienst. Om nieuwe toe te voegen, klikt u op de knop `Domeinnaam toevoegen`{.action} en volgt u vervolgens de verschillende stappen van het proces.
 
-Raadpleeg deze handleiding over het [toevoegen van een domeinnaam aan een Exchange-dienst](https://docs.ovh.com/nl/microsoft-collaborative-solutions/toevoegen-domein-exchange/){.external} voor meer informatie.
+Raadpleeg deze handleiding over het [toevoegen van een domeinnaam aan een Exchange-dienst](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain){.external} voor meer informatie.
 
 > [!primary]
 >

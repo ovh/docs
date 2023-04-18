@@ -1,9 +1,6 @@
 ---
 title: 'Deploying a GPU instance'
-slug: deploying-a-gpu-instance
 excerpt: 'Find out how to deploy a GPU instance on Linux or Windows'
-section: Management via Control Panel
-order: 5
 updated: 2019-12-06
 ---
 

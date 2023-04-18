@@ -1,8 +1,6 @@
 ---
 title: "Gérer le téléphone Plug & Phone d'une ligne SIP"
-slug: commander-associer-ou-changer-un-telephone
 excerpt: 'Apprenez à gérer le téléphone Plug & Phone de votre ligne SIP OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2023-01-04
 ---
 
@@ -80,7 +78,7 @@ Sur la page qui s'affiche, dans la partie « Commander un équipement », sél
 
 > [!primary]
 >
-> Retrouvez plus d'informations sur le déroulement d'un renvoi ou d'un échange d'un téléphone sur notre guide « [Déroulement d’un RMA](https://docs.ovh.com/fr/voip/deroulement-d-un-rma/) ».
+> Retrouvez plus d'informations sur le déroulement d'un renvoi ou d'un échange d'un téléphone sur notre guide « [Déroulement d’un RMA](/pages/telecom/voip/deroulement_d_un_rma) ».
 > 
 
 ### Rattacher votre ligne à un téléphone Plug & Phone <a name="rattacher-telephone"></a>
@@ -114,6 +112,6 @@ Sur la page qui s'affiche, dans la partie « Détacher la ligne d'un Plug & Pho
 
 ## Aller plus loin
 
-[Déroulement d’un RMA](https://docs.ovh.com/fr/voip/deroulement-d-un-rma/)
+[Déroulement d’un RMA](/pages/telecom/voip/deroulement_d_un_rma)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

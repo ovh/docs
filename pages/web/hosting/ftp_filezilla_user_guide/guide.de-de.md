@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - FileZilla mit Ihrem OVHcloud Hosting nutzen"
-slug: webhosting_hilfe_zur_verwendung_von_filezilla
 excerpt: "Verwendung der FileZilla Software mit Ihrem Webhosting"
-section: FTP und SSH
-order: 01
 updated: 2022-09-13
 ---
 
@@ -18,7 +15,7 @@ updated: 2022-09-13
 
 FileZilla ist ein FTP-Client, der für mehrere Betriebssystemen (Windows, macOS etc.) kostenlos zur Verfügung steht.
 
-Sie können damit Dateien bzw. Ihre Websiten online stellen, indem Sie sich im [FTP-Bereich Ihres Hostings einloggen](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/).
+Sie können damit Dateien bzw. Ihre Websiten online stellen, indem Sie sich im [FTP-Bereich Ihres Hostings einloggen](/pages/web/hosting/ftp_connection).
 
 **In dieser Anleitung erfahren Sie, wie Sie FileZilla mit Ihrem Webhosting verwenden.**
 
@@ -135,7 +132,7 @@ Diese Nachricht entsteht durch einen Fehler beim eingegebenen Login/Passwort.
 Überprüfen Sie Ihre Zugangsdaten, um sicherzustellen, dass diese korrekt sind. Nötigenfalls können Sie das Passwort des FTP-Zugangs für Ihr Hosting direkt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ändern.
 
 > [!success]
-> Sie finden genauere Informationen dazu in der [Anleitung zur Änderung des FTP-Passworts](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/).
+> Sie finden genauere Informationen dazu in der [Anleitung zur Änderung des FTP-Passworts](/pages/web/hosting/ftp_change_password).
 
 Im folgenden Fall wird der Fehler aufgrund eines falschen Hostnamens generiert:
 
@@ -218,7 +215,7 @@ Sie können die Option “Recurse into subdirectories” aktivieren, um nicht nu
 >
 > Unabhängig von einer Aktion Ihrerseits kann Ihr Hosting automatisch deaktiviert werden, wenn unsere Sicherheitssysteme schädliche oder nicht autorisierte Dateien auf Ihrem Hosting erkennen.
 >
-> [Sichern Sie dann Ihre Dienste](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/) und korrigieren Sie dabei die Sicherheitslücken, die in der per E-Mail erhaltenen Blockierungsbenachrichtigung erwähnt werden.
+> [Sichern Sie dann Ihre Dienste](/pages/web/hosting/diagnostic_403_forbidden) und korrigieren Sie dabei die Sicherheitslücken, die in der per E-Mail erhaltenen Blockierungsbenachrichtigung erwähnt werden.
 >
 
 Klicken Sie anschließend auf `Server`{.action} und wählen Sie `Enter custom command`{.action} (diese Option kann auch als `Enter FTP command`{.action} bezeichnet sein).
@@ -284,7 +281,7 @@ Wenn Sie mit der rechten Maustaste auf das Icon klicken, können Sie den Verglei
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-Sie finden [hier unsere Anleitung zur Behebung von Fehlern bei der Verwendung eines FTP-Programms](https://docs.ovh.com/de/hosting/webhosting_haufige_ftp-probleme/).
+Sie finden [hier unsere Anleitung zur Behebung von Fehlern bei der Verwendung eines FTP-Programms](/pages/web/hosting/ftp_recurring_ftp_problems).
 
 Im Allgemeinen finden Sie [hier alle unsere Hilfen zu Webhostings](https://docs.ovh.com/de/hosting/).
 

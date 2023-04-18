@@ -1,11 +1,8 @@
 ---
 title: VMware HA (High Availability)
-slug: vmware-ha-high-availability
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/vmware-ha-high-availability/'
+    canonical: '/pages/cloud/private-cloud/vmware_ha_high_availability'
 excerpt: Zarządzanie polityką restartowania przy użyciu funkcji HA
-section: Funkcjonalności VMware vSphere
-order: 02
 updated: 2020-11-18
 ---
 
@@ -21,7 +18,7 @@ Główną funkcją usługi **VMware HA** (High Availability) w razie awarii sprz
 
 ## Wymagania początkowe
 
-- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/).
+- Dostęp do [interfejsu vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 - Posiadanie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}
 
 ## W praktyce
@@ -93,7 +90,7 @@ W razie usterki magazynu danych ze statusem APD (All Path Down) możesz określi
 
 ##### Monitoring maszyn wirtualnych
 
-Monitoring maszyn wirtualnych jest dostępny po zainstalowaniu narzędzia [VMware tools](https://docs.ovh.com/gb/en/managed-bare-metal/install_vmware_tools/).
+Monitoring maszyn wirtualnych jest dostępny po zainstalowaniu narzędzia [VMware tools](/pages/cloud/managed-bare-metal/vmware_tools_install).
 W razie braku reakcji ze strony **tools** (zapytania o dostępność) maszyna wirtualna zostanie automatycznie zrestartowana. Możliwa jest zaawansowana konfiguracja tej funkcji (np. odstępów czasu restartu).
 
 ![Surveillande de VM](images/HAparam5.PNG){.thumbnail}

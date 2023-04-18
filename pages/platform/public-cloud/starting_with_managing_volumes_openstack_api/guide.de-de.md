@@ -1,8 +1,5 @@
 ---
 title: Erste Schritte mit der Volume-Verwaltung über die OpenStack API
-slug: api-openstack-volumes
-section: OpenStack
-order: 7
 updated: 2021-05-19
 ---
 
@@ -21,8 +18,8 @@ Um Ihre Operationen für die Public Cloud zu automatisieren, können Sie die Ope
 
 ## Voraussetzungen
 
-- [Vorbereitung der Umgebung für die Verwendung der OpenStack API](../prepare_the_environment_for_using_the_openstack_api/) durch Installation des *python-cinderclient* und des *python-novaclient*
-- [Laden der OpenStack Umgebungsvariablen](../set-openstack-environment-variables/)
+- [Vorbereitung der Umgebung für die Verwendung der OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) durch Installation des *python-cinderclient* und des *python-novaclient*
+- [Laden der OpenStack Umgebungsvariablen](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## In der praktischen Anwendung
 

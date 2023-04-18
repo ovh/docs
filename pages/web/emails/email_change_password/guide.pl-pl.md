@@ -1,9 +1,6 @@
 ---
 title: 'Zmiana hasła do konta e-mail'
-slug: zmiana-hasla-do-konta-email
 excerpt: 'Dowiedz się, jak zmienić hasło do konta e-mail OVHcloud'
-section: 'Pierwsze kroki'
-order: 03
 updated: 2023-01-03
 ---
 
@@ -115,11 +112,11 @@ W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej ofe
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MXplan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+[Pierwsze kroki z usługą MXplan](/pages/web/emails/email_generalities)
 
-[Pierwsze kroki z usługą E-mail Pro](https://docs.ovh.com/pl/emails-pro/pierwsza-konfiguracja-email-pro/)
+[Pierwsze kroki z usługą E-mail Pro](/pages/web/emails-pro/first_config)
 
-[Pierwsze kroki z usługą Hosted Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_pierwsza_konfiguracja_uslugi/)
+[Pierwsze kroki z usługą Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 

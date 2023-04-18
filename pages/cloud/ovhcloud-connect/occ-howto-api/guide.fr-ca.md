@@ -1,9 +1,6 @@
 ---
 title: Configuration de OVHcloud Connect depuis les APIv6 OVHcloud
-slug: api
 excerpt: Découvrez comment déployer OVHcloud Connect via les API OVHcloud
-section: Configuration
-order: 2
 updated: 2020-09-14
 ---
 
@@ -18,12 +15,12 @@ La mise en place de l'offre OVHcloud Connect peut se faire directement depuis le
 ## Prérequis
 
 > [!warning]
-> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/) et configurer vos équipements réseau en accord avec celles-ci.
+> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/cloud/ovhcloud-connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
 * Posséder une offre [OVHcloud Connect](https://www.ovh.com/fr/solutions/ovhcloud-connect/) dans votre compte OVHcloud.
 * Être connecté aux [API OVHcloud](https://ca.api.ovh.com/){.external}.
-* Avoir [créé vos credentials pour l'utilisation des API OVHcloud](../../api/first-steps-with-ovh-api/).
+* Avoir [créé vos credentials pour l'utilisation des API OVHcloud](/pages/account/api/first-steps).
 
 ## En pratique
 

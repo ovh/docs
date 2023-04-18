@@ -1,9 +1,6 @@
 ---
 title: Fortgeschrittene Operationen mit .htaccess Dateien
 excerpt: In dieser Hilfe erfahren Sie, welche anderen Operationen mit .htaccess-Dateien möglich sind
-slug: webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich
-section: 'Weiterleitung und Authentifizierung'
-order: 04
 updated: 2020-05-05
 ---
 

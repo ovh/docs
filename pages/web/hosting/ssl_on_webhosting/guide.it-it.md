@@ -1,9 +1,6 @@
 ---
 title: 'Gestire un certificato SSL su un hosting Web'
-slug: i_certificati_ssl_sugli_hosting_web_ovh
 excerpt: 'Come attivare e utilizzare un certificato SSL sugli hosting Web OVHcloud'
-section: SSL
-order: 01
 legacy_guide_number: g1594
 updated: 2022-08-01
 ---
@@ -50,7 +47,7 @@ A questo punto, tre stati potrebbero apparire:
 
 |Stato|Descrizione|
 |---|---|
-|Attivo|Sul multisito è già attivo un certificato SSL. Se il tuo sito non è disponibile in HTTPS, consulta la nostra guida [Attivare HTTPS su un sito Internet tramite il certificato SSL](../attivare-https-su-sito-internet-tramite-certificato-ssl/){.external}.|
+|Attivo|Sul multisito è già attivo un certificato SSL. Se il tuo sito non è disponibile in HTTPS, consulta la nostra guida [Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web/hosting/ssl-activate-https-website){.external}.|
 |Da generare|Sul multisito è stato attivato un certificato SSL ma tecnicamente non è ancora abilitato. In questo caso, è necessario rigenerarlo in modo che includa i nuovi domini del multisito.|
 |Disattivo|Sul multisito non è attivo nessun certificato SSL. Per attivarlo, segui le indicazioni descritte qui sotto.|
 
@@ -82,7 +79,7 @@ Prima di procedere con questa configurazione, assicurati che lo step precedente 
 > - Configura la zona DNS del dominio dichiarato su multisito, dalla sezione `Domini`{.action}, nella scheda `Zona DNS`{.action}. Modifica o aggiungi un record di tipo `A` corrispondente al tuo record multisito e inserisci l'indirizzo IP del tuo hosting nella `Cible`.
 > ![managessl](images/manage-ssl-arecord02.png){.thumbnail}
 >
-> Per maggiori informazioni, consulta le nostre guide [sulla configurazione di un record multisito](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/) o su [la configurazione di una zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/).
+> Per maggiori informazioni, consulta le nostre guide [sulla configurazione di un record multisito](/pages/web/hosting/multisites_configure_multisite) o su [la configurazione di una zona DNS](/pages/web/domains/dns_zone_edit).
 
 Gli hosting Web OVHcloud permettono di attivare diversi tipi di [certificati SSL](https://www.ovhcloud.com/it/web-hosting/options/ssl/){.external}:
 
@@ -148,6 +145,6 @@ Nella nuova pagina, conferma l’eliminazione: l’operazione diventerà effetti
 
 ## Per saperne di più
 
-[Attivare HTTPS su un sito Internet tramite il certificato SSL](../attivare-https-su-sito-internet-tramite-certificato-ssl/){.external}
+[Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web/hosting/ssl-activate-https-website){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

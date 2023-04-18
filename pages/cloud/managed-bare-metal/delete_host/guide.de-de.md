@@ -1,11 +1,9 @@
 ---
 title: 'Host-Server löschen'
-slug: host-server-loeschen
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/host-server-loeschen/'
+    canonical: '/pages/cloud/private-cloud/delete_host'
 excerpt: 'So löschen Sie einen Host-Server aus Ihrer Managed Bare Metal Infrastruktur'
 legacy_guide_number: '1442308'
-section: 'OVHcloud Funktionen'
 updated: 2021-03-19
 ---
 

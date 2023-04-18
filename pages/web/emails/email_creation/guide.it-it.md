@@ -1,9 +1,6 @@
 ---
 title: 'Creare un account email con MX Plan'
-slug: servizio_email_guida_alla_creazione_di_un_indirizzo_email
 excerpt: 'Come aggiungere una casella di posta elettronica sulla soluzione MX Plan'
-section: 'Per iniziare'
-order: 02
 legacy_guide_number: g1343
 updated: 2022-10-11
 ---
@@ -30,7 +27,7 @@ Una soluzione email MX Plan è stata appena creata per usufruire di indirizzi em
 > **Casi particolari**
 >
 > - Se disponi di un hosting Start 10M, prima di creare un indirizzo email è necessario attivarlo. Questa operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, selezionando il dominio interessato.
-> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}. Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](https://docs.ovh.com/it/hosting/attivare-email-hosting-web/).
+> - Prima di continuare la lettura di questa guida, è necessario attivare il servizio di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}. Per farlo, consulta la guida [Attiva gli indirizzi email inclusi nel tuo hosting Web](/pages/web/hosting/activate-email-hosting).
 
 ## Procedura <a name="instructions"></a>
 
@@ -78,7 +75,7 @@ Ripeti questa operazione per tutti gli account che vuoi creare, in base al numer
 
 Accedi alla [pagina di connessione](https://www.ovhcloud.com/it/mail/){.external}, inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni sull'utilizzo della Webmail Outlook on the web (OWA), consulta la guida all'utilizzo di un indirizzo [email dalla Webmail Outlook on the web](https://docs.ovh.com/it/emails/utilizzo-owa/){.external}.
+Se è la prima volta che esegui l’accesso da questo indirizzo email, ti verrà chiesto di selezionare la lingua dell’interfaccia utente e definire il fuso orario della tua area geografica. Quando effettui il login, si apre di default la casella della posta in arrivo. Per maggiori informazioni sull'utilizzo della Webmail Outlook on the web (OWA), consulta la guida all'utilizzo di un indirizzo [email dalla Webmail Outlook on the web](/pages/web/emails/email_owa){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -90,7 +87,7 @@ Dalla nuova versione MXplan, si parla di *reinizializzazione dell'account* quand
 
 > [!warning]
 >
-> Prima di eliminare account email, assicurati che non siano utilizzati. Potrebbe essere necessario eseguire un backup di questi account. Se necessario, consulta la guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/) che ti descriverà come esportare i dati di un account dal tuo Spazio Cliente OVHcloud o da un client di posta.
+> Prima di eliminare account email, assicurati che non siano utilizzati. Potrebbe essere necessario eseguire un backup di questi account. Se necessario, consulta la guida [Migrare manualmente il tuo indirizzo email](/pages/web/emails/manual_email_migration) che ti descriverà come esportare i dati di un account dal tuo Spazio Cliente OVHcloud o da un client di posta.
 
 Nella scheda `Account email`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza dell'account da eliminare e poi clicca su `Reimposta questo account`{.action}.
 
@@ -129,7 +126,7 @@ Ripeti questa operazione per tutti gli account che vuoi creare, in base al numer
 
 Accedi alla [pagina di connessione](https://www.ovhcloud.com/it/mail/){.external}, inserisci le tue credenziali e clicca sul pulsante `Connessione`{.action}.
 
-Si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external}.
+Si apre di default la casella della posta in arrivo. Per maggiori informazioni consulta la guida all’[utilizzo di un account di posta da RoundCube](/pages/web/emails/email_roundcube){.external}.
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -139,7 +136,7 @@ Per consultare le tue email da un client di posta, consulta la sezione [Consulta
 
 > [!warning]
 >
-> Prima di eliminare account email, assicurati che non siano utilizzati. Potrebbe essere necessario eseguire un backup di questi account. Se necessario, consulta la guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/) che ti descriverà come esportare i dati di un account dal tuo Spazio Cliente OVHcloud o da un client di posta.
+> Prima di eliminare account email, assicurati che non siano utilizzati. Potrebbe essere necessario eseguire un backup di questi account. Se necessario, consulta la guida [Migrare manualmente il tuo indirizzo email](/pages/web/emails/manual_email_migration) che ti descriverà come esportare i dati di un account dal tuo Spazio Cliente OVHcloud o da un client di posta.
 
 Dalla scheda `Account email`{.action}, clicca sui tre puntini `...`{.action} a destra dell'account da eliminare e poi clicca su `Elimina l'account`{.action}
 
@@ -152,24 +149,24 @@ Configura l’account email sul tuo dispositivo (ad esempio, smartphone o tablet
 > [!tabs]
 > **Windows**
 >>
->> - [Posta su Windows 10](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_dellapp_posta_di_windows_10/)
->> - [Outlook](https://docs.ovh.com/it/emails/configurazione-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/it/emails/email_condivisa_guida_alla_configurazione_di_thundebird/)
+>> - [Posta su Windows 10](/pages/web/emails/how_to_configure_windows_10)
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>
 > **Apple**
 >>
->> - [Mail di macOS](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/)
->> - [Mail per iPhone o iPad](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_iphone_ios_91/)
->> - [Outlook Mac OS](https://docs.ovh.com/it/emails/configurazione-outlook-2016-mac/)
->> - [Thunderbird](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_thunderbird_su_mac/)
+>> - [Mail di macOS](/pages/web/emails/how_to_configure_mail_macos)
+>> - [Mail per iPhone o iPad](/pages/web/emails/how_to_configure_ios)
+>> - [Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016-mac/)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac)
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/it/emails/configurazione-android-6/)
+>> - [Android](/pages/web/emails/how_to_configure_android)
 >>
 > **Altro**
 >>
->> - [Interfaccia Gmail](https://docs.ovh.com/it/emails/mail-condivisa-guida-configurazione-diuna-email-condivisa-ovh-sull-interfaccia-di-gmail/)
+>> - [Interfaccia Gmail](/pages/web/emails/how_to_configure_gmail)
 >>
 
 Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
@@ -192,7 +189,7 @@ Se non conosci i parametri necessari alla configurazione dell’account email, e
 
 > [!warning]
 >
-> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](../) o rivolgiti al fornitore del servizio.
+> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](/it/emails/) o rivolgiti al fornitore del servizio.
 >
 
 ## Per saperne di più

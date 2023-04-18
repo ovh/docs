@@ -1,9 +1,6 @@
 ---
 title: 'Manuelle Installation von Drupal'
 excerpt: Wie funktioniert die manuelle Installation von Drupal?
-slug: cms_manuelle_installation_von_drupal
-section: CMS
-order: 07
 updated: 2022-12-01
 ---
 
@@ -232,5 +229,5 @@ Hier handelt es sich um einen Fehler bei der PHP-Version Ihres Servers.
 
 Der Grund ist einfach: Die neueste Version von PHP ist nicht aktiviert.
 
-Wie Sie die PHP-Version auf Ihrem Webhosting ändern können, erfahren Sie hier:[Konfiguration von PHP für ein OVHcloud Webhosting 2014]({legacy}1207)
+Wie Sie die PHP-Version auf Ihrem Webhosting ändern können, erfahren Sie hier:[Konfiguration von PHP für ein OVHcloud Webhosting 2014](/pages/web/hosting/cms_manual_installation_drupal%7Blegacy%7D1207)
 

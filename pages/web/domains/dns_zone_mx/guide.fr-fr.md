@@ -1,9 +1,6 @@
 ---
 title: Ajouter un champ MX à la configuration de son nom de domaine
-slug: mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh
 excerpt: Apprenez à ajouter un champ MX à votre nom de domaine chez OVHcloud
-section: DNS et zone DNS
-order: 04
 updated: 2018-05-30
 ---
 
@@ -66,7 +63,7 @@ Pour vérifier plus rapidement si des champs MX existent déjà, sélectionnez, 
 
 Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau, puis choisissez `MX`{.action}. Remplissez les informations demandées en fonction de la solution e-mail choisie :
 
-- **si vous disposez d'une solution e-mail OVHcloud** : reportez-vous aux informations données à l'[étape 2 : « connaître la configuration MX OVHcloud »](https://docs.ovh.com/fr/domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/#etape-2-connaitre-la-configuration-mx-dovh){.external} ;
+- **si vous disposez d'une solution e-mail OVHcloud** : reportez-vous aux informations données à l'[étape 2 : « connaître la configuration MX OVHcloud »](/pages/web/domains/dns_zone_mx#etape-2-connaitre-la-configuration-mx-dovh){.external} ;
 
 - **si vous disposez d'une autre solution e-mail** : reportez-vous aux informations communiquées par votre fournisseur de service e-mail.
 
@@ -79,9 +76,9 @@ Une fois les informations complétées, finalisez les étapes, puis cliquez sur 
 
 ## Aller plus loin
 
-[Généralités sur les serveurs DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/){.external}
+[Généralités sur les serveurs DNS](/pages/web/domains/dns_server_general_information){.external}
 
-[Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}
+[Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

@@ -1,9 +1,6 @@
 ---
 title: "Gestion des règles d'éligibilité"
-slug: api-rules
 excerpt: "Description du format technique des règles d'éligibilité aux noms de domaine"
-section: "API domaines"
-order: 06
 updated: 2022-05-05
 ---
 
@@ -13,20 +10,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](../api).
+> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
 
 <!-- Begin TOC -->
 
 ## Sommaire
 
-- [Introduction](../api)
-- [Commander un nom de domaine](../api-order)
-- [Gestion des tâches](../api-tasks)
-- [Gestion des contacts d'un nom de domaine](../api-contact)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Commander un nom de domaine](/pages/web/domains/api_domain_intro-order)
+- [Gestion des tâches](/pages/web/domains/api_domain_intro-tasks)
+- [Gestion des contacts d'un nom de domaine](/pages/web/domains/api_domain_contacts)
 - **Gestion des règles d'éligibilité**
-- [Configurer l'affichage de ses données dans le Whois](../api-whois)
-- [Configurer les DNS de son nom de domaine](../api-dns)
-- [Transférer un nom de domaine](../api-transfer)
+- [Configurer l'affichage de ses données dans le Whois](/pages/web/domains/api_domain_intro-whois)
+- [Configurer les DNS de son nom de domaine](/pages/web/domains/api_domain_dns)
+- [Transférer un nom de domaine](/pages/web/domains/api_domain_intro-transfer)
 <!-- End TOC -->
 
 <!-- Rappel à mettre au début de chaque page CA/US/AU/ASIA/SG (API CA) -->
@@ -507,7 +504,7 @@ Partons d'un exemple n'imposant qu'une seule règle pour la commande d'un nom de
 >> }
 >> ```
 
-Avec cette règle, lors de la commande, le domaine doit obligatoirement avoir une [configuration](../api-order/#configurations-management) ayant pour label `ACCEPT_CONDITIONS` avec une valeur booléenne à `true`, `1` ou `"1"`.
+Avec cette règle, lors de la commande, le domaine doit obligatoirement avoir une [configuration](/pages/web/domains/api_domain_intro-order/#configurations-management) ayant pour label `ACCEPT_CONDITIONS` avec une valeur booléenne à `true`, `1` ou `"1"`.
 
 ### Les opérateurs "and" et "or"
 
@@ -2830,7 +2827,7 @@ En _body_ de requête, nous retrouvons les objets suivants.
 
 > [!primary]
 >
-> Pour plus d'informations sur les différents types de contact, veuillez consulter la [documentation associée](../api-contact).
+> Pour plus d'informations sur les différents types de contact, veuillez consulter la [documentation associée](/pages/web/domains/api_domain_contacts).
 
 Chacun de ces objets est optionnel. Si le moteur de règles a besoin de l'un deux pour vérifier une règle, une erreur sera retournée.
 Une particularité existe pour les actions `trade` et `transfer` : si un objet requis est manquant, celui-ci sera récupéré automatiquement depuis le service actuellement existant.

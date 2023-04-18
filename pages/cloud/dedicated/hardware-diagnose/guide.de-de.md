@@ -1,8 +1,6 @@
 ---
 title: 'Hardwarefehler auf einem dedizierten Server erkennen'
-slug: diagnose-hardwarefehler-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie mithilfe von Diagnose-Tools Hardwarefehler auf Ihrem Server erkennen'
-section: Diagnose & Rescue Modus
 updated: 2022-12-15
 ---
 
@@ -21,7 +19,7 @@ Mit der Zeit kann es bei Ihrem Server zu Hardwarefehlern kommen, die Fehlfunktio
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
-- Sie haben den Server im [Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/) gestartet.
+- Sie haben den Server im [Rescue-Modus](/pages/cloud/dedicated/rescue_mode) gestartet.
 
 ## In der praktischen Anwendung
 

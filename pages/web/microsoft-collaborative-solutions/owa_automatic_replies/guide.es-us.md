@@ -1,9 +1,6 @@
 ---
 title: 'Crear respuestas automáticas en OWA'
 excerpt: 'Cómo configurar respuestas automáticas en OWA'
-slug: exchange_2016_crear_un_contestador_con_el_webmail_owa
-section: 'Uso de Outlook Web Application (OWA)'
-order: 02
 updated: 2020-02-26
 ---
 
@@ -59,10 +56,10 @@ Puede escribir un mensaje alternativo para los remitentes externos en el segundo
 
 ## Más información
 
-[Usar Outlook en la web (OWA) con una cuenta de Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app/)
+[Usar Outlook en la web (OWA) con una cuenta de Exchange](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Delegar permisos en una cuenta de Exchange](../exchange_2013_dar_permisos_full_access_a_una_cuenta/)
+[Delegar permisos en una cuenta de Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
+[Compartir calendarios en OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

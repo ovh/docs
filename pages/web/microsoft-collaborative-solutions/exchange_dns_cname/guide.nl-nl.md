@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Creatie van een CNAME-record om een gekoppeld domein toe te voegen
-slug: exchange-toevoegen-van-een-cname-record
 excerpt: Lees meer over het doel van een CNAME-record en hoe u er een toevoegt bij OVH
-section: Configuratie van Exchange
 updated: 2019-03-26
 ---
 

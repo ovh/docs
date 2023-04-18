@@ -1,9 +1,6 @@
 ---
 title: Korzystanie z usługi Hosted Private Cloud w ramach usługi vRack
-slug: hosted-private-cloud-vrack
 excerpt: Dowiedz się, jak korzystać z usługi vRack w ramach usługi Hosted Private Cloud
-section: Usługi i opcje OVHcloud
-order: 02
 updated: 2022-03-28
 ---
 
@@ -47,7 +44,7 @@ W panelu klienta vSphere możesz odnaleźć kompatybilne sieci *VLANs* vRack w r
 
 ![vlan](images/vRackVsphere.png){.thumbnail}
 
-Możesz zmienić lub utworzyć nowe parametry, postępując zgodnie z instrukcjami dotyczącymi [tworzenia sieci VxLAN](../tworzenie-vlan-vxlan/).
+Możesz zmienić lub utworzyć nowe parametry, postępując zgodnie z instrukcjami dotyczącymi [tworzenia sieci VxLAN](/pages/cloud/private-cloud/creation_vlan).
 
 Następnie będziesz mógł przypisać te *grupy* serwerów do interfejsów sieciowych Twoich wirtualnych maszyn.
 

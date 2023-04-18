@@ -1,8 +1,6 @@
 ---
 title: Utilizza la funzionalità Bring Your Own Image
 excerpt: Scopri come creare le tue immagini grazie a Bring Your Own Image
-slug: bringyourownimage
-section: Utilizzo avanzato
 updated: 2022-11-25
 ---
 
@@ -27,7 +25,7 @@ Oltre ai requisiti e ai limiti indicati in appresso, è necessario assicurarsi c
 - Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per la sezione ["Implementazione dallo Spazio Cliente"](#viacontrolpanel) di questa guida.
 - Essere connesso alle [API OVHcloud](https://api.ovh.com/){.external} per la sezione ["Implementazione via API"](#viaapi) di questa guida.
-- Aver generato i [credenziali per utilizzare l'APIv6](https://docs.ovh.com/it/api/first-steps-with-ovh-api/) per la sezione ["Implementazione via API"](#viaapi) di questa guida.
+- Aver generato i [credenziali per utilizzare l'APIv6](/pages/account/api/first-steps) per la sezione ["Implementazione via API"](#viaapi) di questa guida.
 - La dimensione della tua immagine deve essere inferiore alla quantità della RAM del tuo server meno 3GiB.
 
 > [!warning]
@@ -113,7 +111,7 @@ Una volta completati i campi, esegui il deploy cliccando su `Execute`{.action}.
 
 ### Verifica l'installazione
 
-Per monitorare lo sviluppo della tua immagine, utilizza la chiamata API qui sotto o tramite KVM / [IPMI](../utilizzo-ipmi-server-dedicati/).
+Per monitorare lo sviluppo della tua immagine, utilizza la chiamata API qui sotto o tramite KVM / [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 > [!api]
 >

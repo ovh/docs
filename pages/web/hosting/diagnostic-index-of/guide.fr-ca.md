@@ -1,9 +1,6 @@
 ---
 title: Que faire en cas de page « Index of » ?
 excerpt: Découvrez comment remettre votre site en ligne quand il affiche une page « Index of »
-slug: diagnostic-index-of
-section: Diagnostic
-order: 07
 updated: 2022-05-10
 ---
 
@@ -33,7 +30,7 @@ Lorsqu’une configuration `Multisite` n’est pas correctement paramétrée, vo
 
 ### Comprendre l'origine de la page « Index of »
 
-Votre nom de domaine est connecté via la partie `Multisite`{.action} de votre hébergement à un répertoire (un `Dossier racine`) sur votre [serveur FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Votre nom de domaine est connecté via la partie `Multisite`{.action} de votre hébergement à un répertoire (un `Dossier racine`) sur votre [serveur FTP](/pages/web/hosting/ftp_connection).
 
 La page **Index of** indique que le répertoire concerné ne contient pas de fichier **index.php** ou **index.html**. Un fichier de ce type constitue le « *point d'entrée* » de votre site.
 
@@ -41,13 +38,13 @@ Pour afficher votre site web, vous devrez donc, depuis la partie `Multisite`{.ac
 
 > [!primary]
 >
-> Si vous souhaitez relier temporairement votre domaine à un `Dossier racine` ne contenant pas de fichier **index.php** ou **index.html**, il vous est possible d'interdire l'affichage de la liste des dossiers de votre site en suivant ce [guide](https://docs.ovh.com/ca/fr/hosting/mutualise-htaccess-les-autres-operations-realisables-avec-des-fichiers-htaccess/#empecher-le-listage-du-contenu-dun-repertoire). Vous pouvez également protéger l'accès à vos dossiers par un [mot de passe](https://docs.ovh.com/ca/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/).
+> Si vous souhaitez relier temporairement votre domaine à un `Dossier racine` ne contenant pas de fichier **index.php** ou **index.html**, il vous est possible d'interdire l'affichage de la liste des dossiers de votre site en suivant ce [guide](/pages/web/hosting/htaccess_what_else_can_you_do#empecher-le-listage-du-contenu-dun-repertoire). Vous pouvez également protéger l'accès à vos dossiers par un [mot de passe](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
 > Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/en-ca/directory/), si vous éprouvez des difficultés à mettre en place cette configuration. En effet, nos équipes support ne seront pas en mesure de vous fournir une assistance sur toute modification de la programmation interne de votre site.
 
 ### Résoudre le cas le plus courant d’une page « Index of »
 
-Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par [FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/). Hors, votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre `Multisite`{.action}.
+Vous avez importé les fichiers de votre site **mydomain.ovh** dans le dossier `www` de votre hébergement par [FTP](/pages/web/hosting/ftp_connection). Hors, votre nom de domaine n'est pas relié à ce dossier dans la colonne `Dossier racine` de votre `Multisite`{.action}.
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
@@ -65,7 +62,7 @@ Dans la fenêtre qui s'affiche :
 
 > [!primary]
 >
-> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre [serveur FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre [serveur FTP](/pages/web/hosting/ftp_connection).
 >
 
 Dans la fenêtre suivante, cliquez sur `Valider`{.action}.
@@ -80,11 +77,11 @@ Vérifiez enfin que votre site s'affiche correctement. Dans le cas contraire, re
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](https://docs.ovh.com/ca/fr/hosting/erreurs-frequentes-modules-en-1-clic/)
+[Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web/hosting/diagnostic_errors_module1clic)
 
-[Résoudre l’erreur « Site non installé »](https://docs.ovh.com/ca/fr/hosting/erreur-site-non-installe/)
+[Résoudre l’erreur « Site non installé »](/pages/web/hosting/multisites_website_not_installed)
 
-[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/ca/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/)
+[Partager son hébergement entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 

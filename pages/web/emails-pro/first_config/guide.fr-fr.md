@@ -1,9 +1,6 @@
 ---
 title: 'Premiers pas avec la solution E-mail Pro'
-slug: premiere-configuration
 excerpt: 'Découvrez comment réaliser la configuration de votre solution E-mail Pro'
-section: 'Premiers pas'
-order: 1
 updated: 2020-04-09
 ---
 
@@ -86,7 +83,7 @@ La colonne `Diagnostic`{.action} vous permet de contrôler la configuration DNS 
 
 - **Configuration automatique lors de l'ajout d'un nom de domaine OVHcloud** : si vous venez juste d'effectuer la modification, l’affichage dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} peut prendre quelques heures.
 
-- **Configuration manuelle pour un nom de domaine non géré par OVHcloud** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser. <br>*Pour un enregistrement CNAME*, aidez-vous de notre guide « [Créer un champ CNAME à l’ajout d’un domaine associé](../../microsoft-collaborative-solutions/exchange-ajouter-un-champ-de-type-cname/) ». <br>*Pour un enregistrement MX*, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](../../domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ». <br>*Pour un enregistrement SRV*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille rouge. Vous pouvez vous aider du guide « [Éditer une zone DNS OVHcloud](../../domains/editer-ma-zone-dns/) » pour ajouter cet enregistrement.
+- **Configuration manuelle pour un nom de domaine non géré par OVHcloud** : cliquez sur la pastille rouge afin de découvrir les modifications à réaliser. <br>*Pour un enregistrement CNAME*, aidez-vous de notre guide « [Créer un champ CNAME à l’ajout d’un domaine associé](../../microsoft-collaborative-solutions/exchange-ajouter-un-champ-de-type-cname/) ». <br>*Pour un enregistrement MX*, aidez-vous de notre guide « [Ajouter un champ MX à la configuration de son nom de domaine](../../domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ». <br>*Pour un enregistrement SRV*, complétez votre zone DNS à l'aide des informations données lorsque vous cliquez sur la pastille rouge. Vous pouvez vous aider du guide « [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) » pour ajouter cet enregistrement.
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -121,7 +118,7 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external} et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 
-Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](../). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
+Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](/fr/emails-pro/). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
 
 |Type de serveur|Nom du serveur|Type de sécurité|Port|
 |---|---|---|---|
@@ -137,16 +134,16 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 ## Aller plus loin
 
-[Consulter son compte depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/)
+[Consulter son compte depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Règles de boîte de réception depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/regles-boite-de-reception-owa/)
+[Règles de boîte de réception depuis l’interface OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa)
 
 [Ajouter un alias sur son compte e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-ajouter-un-alias-sur-un-e-mail-depuis-le-manager/)
 
-[Ajouter un pied de page pour vos comptes e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-signature-automatique-disclaimer/)
+[Ajouter un pied de page pour vos comptes e-mail](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
-[Gérer la facturation de vos comptes E-mail Pro](https://docs.ovh.com/fr/emails-pro/gestion-facturation-emailpro/)
+[Gérer la facturation de vos comptes E-mail Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Gérer la politique de sécurité d’un service e-mail](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/)
+[Gérer la politique de sécurité d’un service e-mail](/pages/web/microsoft-collaborative-solutions/exchange_security_policy)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

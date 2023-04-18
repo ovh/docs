@@ -1,10 +1,7 @@
 ---
 title: Criar filtros para os seus endereços de e-mail
-slug: email-hosting-configuring-filters
 legacy_guide_number: 1973
 excerpt: Saiba como criar e configurar um filtro no seu endereço de e-mail
-section: Funcionalidades dos endereços e-mail
-order: 04
 updated: 2021-09-27
 ---
 
@@ -38,7 +35,7 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção “Subscrição”.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção "Resumo".|
-|Consulte este manual a partir da secção "[Na prática](#oldmxplan)".|Consulte o nosso manual "[Regras da caixa de entrada a partir da interface OWA](https://docs.ovh.com/pt/microsoft-collaborative-solutions/criar-regras-inbox-no-owa/)".|
+|Consulte este manual a partir da secção "[Na prática](#oldmxplan)".|Consulte o nosso manual "[Regras da caixa de entrada a partir da interface OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa)".|
 
 ## Prática <a name="oldmxplan"></a>
 
@@ -81,7 +78,7 @@ Primeira escolha (em cabeçalho):
 
 Segunda escolha (regra):
 
-- **spf:** Indique um valor do [registo SPF](https://docs.ovh.com/pt/domains/partilhado_o_campo_spf/) a ter em conta, por exemplo: ".. sem registo SPF ... ".
+- **spf:** Indique um valor do [registo SPF](/pages/web/domains/dns_zone_spf) a ter em conta, por exemplo: ".. sem registo SPF ... ".
 - **contém:** exemplo: "... contém ... ".
 - **não contém:** exemplo: "... não contém ... ".
 
@@ -142,8 +139,8 @@ Se o assumpto da mensagem contiver a palavra "money" **e o** remetente da mensag
 
 ## Saiba mais
 
-[Primeiros passos com a oferta MX Plan](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/)
+[Primeiros passos com a oferta MX Plan](/pages/web/emails/email_generalities)
 
-[Regras da caixa de entrada a partir da interface OWA](https://docs.ovh.com/pt/emails/criar-regras-inbox-no-owa/)
+[Regras da caixa de entrada a partir da interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

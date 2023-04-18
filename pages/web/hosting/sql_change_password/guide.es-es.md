@@ -1,9 +1,6 @@
 ---
 title: Cambiar la contraseña de la base de datos de un alojamiento web
-slug: cambiar-contrasena-base-de-datos
 excerpt: Cómo cambiar la contraseña de una base de datos creada en un plan de hosting
-section: Bases de datos
-order: 02
 updated: 2022-01-26
 ---
 
@@ -17,15 +14,15 @@ updated: 2022-01-26
 
 La mayoría de los sitios web utilizan una **base de datos** para almacenar sus artículos, comentarios o direcciones de correo electrónico de sus usuarios.
 
-La conexión a esta base de datos es posible gracias a un **archivo de configuración** que se encuentra en el [espacio de almacenamiento de archivos](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) del alojamiento. que contiene la información que permite al sitio web "identificarse" con el **servidor de la base de datos**.
+La conexión a esta base de datos es posible gracias a un **archivo de configuración** que se encuentra en el [espacio de almacenamiento de archivos](/pages/web/hosting/ftp_connection) del alojamiento. que contiene la información que permite al sitio web "identificarse" con el **servidor de la base de datos**.
 
 Por lo tanto, siempre debe cambiar la contraseña de una base de datos:
 
-- En el [archivo de configuración](https://docs.ovh.com/es/hosting/1-click-module-management/#etapa-1-identificar-la-base-de-datos-asociada-a-su-modulo) de su sitio web a través del [espacio FTP de su alojamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/);
+- En el [archivo de configuración](/pages/web/hosting/cms_manage_1_click_module#etapa-1-identificar-la-base-de-datos-asociada-a-su-modulo) de su sitio web a través del [espacio FTP de su alojamiento](/pages/web/hosting/ftp_connection);
 
 - **Y** en el servidor que contiene la base de datos desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
-Mientras no se realice el cambio **en estos dos lugares**, el sitio web mostrará un "[error al conectar a la base de datos](https://docs.ovh.com/es/hosting/error-requentes-base-de-datos/#error-al-conectar-a-la-base-de-datos)".
+Mientras no se realice el cambio **en estos dos lugares**, el sitio web mostrará un "[error al conectar a la base de datos](/pages/web/hosting/diagnosis_database_errors#error-al-conectar-a-la-base-de-datos)".
 
 Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
 
@@ -50,7 +47,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Utilizar una [base de datos asociada a su plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o a un [servidor Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/).
-- Disponer de las claves FTP para conectarse al [espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) del alojamiento.
+- Disponer de las claves FTP para conectarse al [espacio de almacenamiento](/pages/web/hosting/ftp_connection) del alojamiento.
 
 ## Procedimiento
 
@@ -64,9 +61,9 @@ A continuación, abra la pestaña `FTP-SSH`{.action} y acceda al espacio que con
 
 > [!primary]
 >
-> Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/).
+> Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](/pages/web/hosting/ftp_change_password).
 >
-> Si desea conectarse por otro método, consulte esta [guía](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+> Si desea conectarse por otro método, consulte esta [guía](/pages/web/hosting/ftp_connection).
 >
 
 Abra la `Carpeta raíz` anteriormente indicada.
@@ -119,7 +116,7 @@ En el área de cliente de OVHcloud, abra la pestaña `Usuario y permisos`{.actio
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/es/customer/gestionar-su-contrasena/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](/pages/account/customer/manage-ovh-password).
 >
 
 Seleccione la nueva contraseña de la base de datos y nócelo. Deberá cumplir las siguientes condiciones:
@@ -230,11 +227,11 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 ## Más información <a name="gofurther"></a>
 
-[Web hosting: guía de uso de FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)
+[Web hosting: guía de uso de FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrasena/)
+[Establecer y gestionar la contraseña de su cuenta](/pages/account/customer/manage-ovh-password)
 
-[Resolver los errores más frecuentes asociados a las bases de datos](https://docs.ovh.com/es/hosting/error-requentes-base-de-datos/)
+[Resolver los errores más frecuentes asociados a las bases de datos](/pages/web/hosting/diagnosis_database_errors)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

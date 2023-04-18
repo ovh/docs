@@ -1,9 +1,6 @@
 ---
 title: Zmiana rozmiaru instancji
 excerpt: 'Jak zmienić rozmiar instancji w Panelu klienta OVHcloud'
-slug: resize-an-instance-manager
-section: 'Zarządzanie w Panelu klienta OVH'
-order: 6
 updated: 2022-08-24
 ---
 
@@ -57,7 +54,7 @@ W nowej zakładce przewiń stronę do sekcji **Model**, aby wybrać wybrany mode
 Jeśli Twój dysk jest równy lub mniejszy niż 50 GB, możesz przejść do elastycznej `instancji`{.action}.
 
 > [!warning]
-> Uwaga: w przypadku edycji instancji typu *flex* nie można przejść na instancję klasyczną w Panelu klienta. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [Zmiana instancji flex na instancję klasyczną](https://docs.ovh.com/pl/public-cloud/zmiana-instancji-flex/).
+> Uwaga: w przypadku edycji instancji typu *flex* nie można przejść na instancję klasyczną w Panelu klienta. Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem dotyczącym [Zmiana instancji flex na instancję klasyczną](/pages/platform/public-cloud/revert_a_flex_instance).
 >
 
 Po dokonaniu wyboru kliknij `Zmień model`{.action}, aby potwierdzić wybór.

@@ -1,9 +1,6 @@
 ---
 title: "Commander un nom de domaine"
-slug: api-order
 excerpt: "Utilisez l'API publique OVHcloud pour commander vos noms de domaines"
-section: "API domaines"
-order: 02
 updated: 2022-05-05
 ---
 
@@ -13,20 +10,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](../api).
+> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
 
 <!-- Begin TOC -->
 
 ## Sommaire
 
-- [Introduction](../api)
+- [Introduction](/pages/web/domains/api_domain_intro)
 - **Commander un nom de domaine**
-- [Gestion des tâches](../api-tasks)
-- [Gestion des contacts d'un nom de domaine](../api-contact)
-- [Gestion des règles d'éligibilité](../api-rules)
-- [Configurer l'affichage de ses données dans le Whois](../api-whois)
-- [Configurer les DNS de son nom de domaine](../api-dns)
-- [Transférer un nom de domaine](../api-transfer)
+- [Gestion des tâches](/pages/web/domains/api_domain_intro-tasks)
+- [Gestion des contacts d'un nom de domaine](/pages/web/domains/api_domain_contacts)
+- [Gestion des règles d'éligibilité](/pages/web/domains/api_domain_intro-rules)
+- [Configurer l'affichage de ses données dans le Whois](/pages/web/domains/api_domain_intro-whois)
+- [Configurer les DNS de son nom de domaine](/pages/web/domains/api_domain_dns)
+- [Transférer un nom de domaine](/pages/web/domains/api_domain_intro-transfer)
 <!-- End TOC -->
 
 ## L'API de commande
@@ -571,12 +568,12 @@ Voici la liste exhaustive des différentes configurations requises pour un nom d
 > Or cette API est en incapacité de décrire ce genre de règle.
 >
 > Pour cela, il existe d'autres API afin de décrire les informations nécessaires à un nom de domaine de manière précise.
-> Ces APIs correspondant à un usage avancé, et étant utilisées également en dehors de la commande (comme pour la mise à jour d'un contact), elles sont décrites en détail dans la section [Gestion des règles](../api-rules).
+> Ces APIs correspondant à un usage avancé, et étant utilisées également en dehors de la commande (comme pour la mise à jour d'un contact), elles sont décrites en détail dans la section [Gestion des règles](/pages/web/domains/api_domain_intro-rules).
 
 > [!primary]
 >
 > Ici, le `OWNER_CONTACT` représente une API de "ressource", à savoir `/me/contact` ou plus précisement `/domain/contact`.
-> Les APIs permettant de créer ces contacts sont décrites dans la section [Gestion des contacts](../api-contact).
+> Les APIs permettant de créer ces contacts sont décrites dans la section [Gestion des contacts](/pages/web/domains/api_domain_contacts).
 
 ### CRUD des configurations sur le produit
 

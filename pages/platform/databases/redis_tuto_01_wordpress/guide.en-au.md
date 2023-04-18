@@ -1,10 +1,7 @@
 ---
 title: Redis - Boost your CMS (from the example of WordPress)
-slug: redis/boost-wordpress
 keywords: wordpress, redis, dbaas, cms
 excerpt: Boost the performances of your WordPress CMS with the power of Redis
-section: Redis - Tutorials
-order: 010
 updated: 2021-11-22
 ---
 
@@ -200,11 +197,11 @@ As seen using Redis cache you will see a performance gain for your CMS. It will 
 
 [OVHcloud documentation on managed Public Cloud Databases](https://docs.ovh.com/au/en/publiccloud/databases/)
 
-[Redis capabilities](https://docs.ovh.com/au/en/publiccloud/databases/redis/capabilities/)
+[Redis capabilities](/pages/platform/databases/redis_01_capabilities)
 
-[How to connect to Redis with CLI](https://docs.ovh.com/au/en/publiccloud/databases/redis/connect-cli/)
+[How to connect to Redis with CLI](/pages/platform/databases/redis_03_connect_cli)
 
-[How to connect to Redis with PHP](https://docs.ovh.com/au/en/publiccloud/databases/redis/connect-php/)
+[How to connect to Redis with PHP](/pages/platform/databases/redis_04_connect_php)
 
 [Redis Roadmap](https://github.com/ovh/public-cloud-roadmap/projects/2?card_filter_query=label%3Aredis)
 

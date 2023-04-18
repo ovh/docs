@@ -1,9 +1,6 @@
 ---
 title: Reregister VMs in a new PCC
-slug: vsphere-register-vm-vmx
 excerpt: Find out how to reregister VMs on a new service from old datastores
-section: VMware vSphere features
-order: 07
 updated: 2021-03-24
 ---
 
@@ -22,7 +19,7 @@ Following an incident, some virtual machines may no longer appear in your vSpher
 
 ## Instructions
 
-In your [vSphere interface](../login-vsphere-interface/), go to the `Storage`{.action} view.
+In your [vSphere interface](/pages/cloud/private-cloud/vsphere_interface_connexion), go to the `Storage`{.action} view.
 
 ![storage view](images/register-vmx-01.png){.thumbnail}
 
@@ -40,7 +37,7 @@ Fill in the information required, then click `Finish`{.action}.
 
 You will need to repeat these same operations for each datastore, and for each VM that needs to be reregistered.
 
-Check the settings of your VMs (name, [portgroup](../creation-vlan-vxlan/), etc...) by right-clicking on each one and then selecting `Edit Settings`{.action}.
+Check the settings of your VMs (name, [portgroup](/pages/cloud/private-cloud/creation_vlan-vxlan/), etc...) by right-clicking on each one and then selecting `Edit Settings`{.action}.
 
 ![change](images/register-vmx-06.png){.thumbnail}
 

@@ -1,8 +1,6 @@
 ---
 title: POWER Web Hosting
-slug: only-in-english
 excerpt: Nur auf Englisch verfügbar
-section: Getting started
 ---
 
 ## Nur auf Englisch verfügbar

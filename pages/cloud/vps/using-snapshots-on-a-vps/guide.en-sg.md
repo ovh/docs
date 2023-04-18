@@ -1,9 +1,6 @@
 ---
 title: 'Using snapshots on a VPS'
 excerpt: 'Find out how to how enable and use the Snapshot option in the OVHcloud Control Panel'
-slug: using-snapshots-on-a-vps
-section: 'Backup options'
-order: 1
 updated: 2023-03-20
 ---
 
@@ -161,7 +158,7 @@ $ sudo service qemu-guest-agent status
 
 ##### **Kernel issues on Cpanel**
 
-Consult our [cPanel auto backup](https://docs.ovh.com/sg/en/vps/cpanel_auto_backup/) guide to find out how to fix issues with cPanel servers getting stuck during an OVHcloud automated backup.
+Consult our [cPanel auto backup](/pages/cloud/vps/cpanel_auto_backup/) guide to find out how to fix issues with cPanel servers getting stuck during an OVHcloud automated backup.
 
 ##### **Windows**
 

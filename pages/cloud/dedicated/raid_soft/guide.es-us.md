@@ -1,8 +1,6 @@
 ---
 title: 'RAID por software'
-slug: raid-software
 excerpt: 'Cómo configurar el RAID de un servidor en caso de fallo del disco'
-section: 'RAID y discos'
 updated: 2022-10-11
 ---
 
@@ -388,10 +386,10 @@ mount /dev/md4 /home
 
 ## Más información
 
-[Sustituir un disco en caliente en un servidor con RAID por software](https://docs.ovh.com/us/es/dedicated/hotswap-raid-soft/){.external}
+[Sustituir un disco en caliente en un servidor con RAID por software](/pages/cloud/dedicated/hotswap_raid_soft){.external}
 
-[Hot Swap - RAID Hardware (EN)](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
+[Hot Swap - RAID Hardware (EN)](/pages/cloud/dedicated/hotswap_raid_hard){.external}
 
-[RAID por hardware](https://docs.ovh.com/us/es/dedicated/raid-hardware/)
+[RAID por hardware](/pages/cloud/dedicated/raid_hard)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

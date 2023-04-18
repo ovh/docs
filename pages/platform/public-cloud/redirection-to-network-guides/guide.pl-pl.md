@@ -1,9 +1,6 @@
 ---
 title: 'Wszystkie nasze przewodniki dotyczące sieci Public Cloud'
-slug: public-cloud-network-services-redirection
 excerpt: "Poznaj wszystkie nasze przewodniki dotyczące sieci Public Cloud"
-section: 'Sieć'
-order: 00
 updated: 2022-11-02
 ---
 

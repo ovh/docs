@@ -1,9 +1,6 @@
 ---
 title: 'Accessing a web hosting plan via SSH'
-slug: web_hosting_ssh_on_web_hosting_packages
 excerpt: 'Find out how to connect and use SSH access on an OVHcloud web hosting plan'
-section: 'FTP and SSH'
-order: 07
 updated: 2022-01-19
 ---
 
@@ -106,8 +103,8 @@ Depending on the PHP version you want to use, the runtime environment may need t
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/)
+[Modifying the configuration of a Web Hosting plan](/pages/web/hosting/ovhconfig_modify_system_runtime)
 
-[Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/configuring-file-ovhconfig/)
+[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web/hosting/ovhconfig_configuration)
 
 Join our community of users on <https://community.ovh.com/en/>.

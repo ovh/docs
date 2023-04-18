@@ -1,9 +1,6 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
-slug: suivi-emails-automatises
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-section: Diagnostic
-order: 10
 updated: 2022-10-12
 ---
 
@@ -148,7 +145,7 @@ Une purge est obligatoire dans ce cas pour effacer les SPAM en attente d'envoi.
 
 Pour corriger cette situation, vous devez effectuer au moins les actions suivantes :
 
-- Analysez les [logs de votre hébergement](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) pour identifier les failles de sécurité et les fichiers infectés.
+- Analysez les [logs de votre hébergement](/pages/web/hosting/logs_and_statistics) pour identifier les failles de sécurité et les fichiers infectés.
 - Supprimez ou corrigez le(s) fichier(s)/module(s) malveillant(s).
 - Pour les CMS (Wordpress, Joomla, Prestashop, Drupal, ...), mettez à jour le CMS, le(s) plugin(s) et le thème associés.
 - Sécurisez vos formulaires de contact avec un « captcha ».
@@ -218,11 +215,11 @@ $mail->Password = "YourEmailPassword";
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Consulter les logs de votre hébergement](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
+[Consulter les logs de votre hébergement](/pages/web/hosting/logs_and_statistics)
 
-[Corriger la page « 403 Forbidden » qui s'affiche sur votre site](https://docs.ovh.com/ca/fr/hosting/diagnostic-403-forbidden/)
+[Corriger la page « 403 Forbidden » qui s'affiche sur votre site](/pages/web/hosting/diagnostic_403_forbidden)
 
-[Restaurer l'espace de stockage FTP de votre hébergement](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/)
+[Restaurer l'espace de stockage FTP de votre hébergement](/pages/web/hosting/ftp_save_and_backup)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/).
 

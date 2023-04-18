@@ -1,9 +1,6 @@
 ---
 title: 'Web hosting: Instalar un CMS manualmente'
 excerpt: Instalar un CMS manualmente
-slug: web_hosting_instalar_un_cms_manualmente
-section: CMS
-order: 03
 updated: 2020-02-04
 ---
 

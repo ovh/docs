@@ -1,11 +1,8 @@
 ---
 title: Encrypt your Secret for OVHcloud Managed Kubernetes with Sealed Secrets (Kubeseal)
-slug: encrypt-secret-with-sealed-secrets-kubeseal
 excerpt: Find out how to encrypt your Kubernetes Secrets in order to store them in Git with Sealed Secrets (Kubeseal)
-section: Security
-order: 2
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/encrypt-secret-with-sealed-secrets-kubeseal/'
+    canonical: '/pages/platform/kubernetes-k8s/encrypt-secret-with-kubeseal'
 updated: 2022-06-06
 ---
 
@@ -23,8 +20,7 @@ updated: 2022-06-06
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -83,7 +79,7 @@ Read more about [Sealed Secrets](https://engineering.bitnami.com/articles/sealed
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 ## Instructions
 

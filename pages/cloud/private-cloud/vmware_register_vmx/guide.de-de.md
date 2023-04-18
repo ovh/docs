@@ -1,9 +1,6 @@
 ---
 title: VMs in einer PCC re-registrieren
-slug: vsphere-register-vm-vmx
 excerpt: Erfahren Sie hier, wie Sie VMs betriebsunfähiger Datastores in einem neuen Dienst registrieren
-section: VMware vSphere Funktionen
-order: 07
 updated: 2021-03-24
 ---
 
@@ -26,7 +23,7 @@ Nach einem Dienstausfall erscheinen virtuelle Maschinen nicht mehr in Ihrem vSph
 
 ## In der praktischen Anwendung
 
-Gehen Sie im [vSphere Interface](../den_vsphere_client_installieren/) in die Ansicht `Storage`{.action}.
+Gehen Sie im [vSphere Interface](/pages/cloud/private-cloud/vsphere_interface_connexion) in die Ansicht `Storage`{.action}.
 
 ![Storage](images/register-vmx-01.png){.thumbnail}
 
@@ -44,7 +41,7 @@ Füllen Sie die erforderlichen Informationen aus und klicken Sie auf `Finish`{.a
 
 Diese Operationen sind auf jedem Datastore und für jede neu zu registrierende VM zu wiederholen.
 
-Überprüfen Sie die Einstellungen Ihrer VMs (Name, [Portgroup](../vxlan-erstellung/) etc.), indem Sie mit der rechten Maustaste auf jede Ihrer VMs klicken und dann auf `Edit Settings`{.action}.
+Überprüfen Sie die Einstellungen Ihrer VMs (Name, [Portgroup](/pages/cloud/private-cloud/creation_vlan) etc.), indem Sie mit der rechten Maustaste auf jede Ihrer VMs klicken und dann auf `Edit Settings`{.action}.
 
 ![Ändern](images/register-vmx-06.png){.thumbnail}
 

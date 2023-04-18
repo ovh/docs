@@ -1,9 +1,7 @@
 ---
 title: 'Carregar as variáveis de ambiente OpenStack'
 excerpt: 'Aprenda a carregar as suas variáveis de ambiente para utilizar a API do OpenStack'
-slug: set-openstack-environment-variables
 legacy_guide_number: 1852
-section: Gestão via OpenStack
 updated: 2021-08-18
 ---
 
@@ -16,8 +14,8 @@ Carregar as variáveis de ambiente OpenStack no seu computador permitirá usar a
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter criado um utilizador OpenStack. Consulte [o respetivo guia](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/).
-- Ter preparado o ambiente para usar o OpenStack. Para isso, consulte o seguinte guia: [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
+- Ter criado um utilizador OpenStack. Consulte [o respetivo guia](/pages/platform/public-cloud/create_and_delete_a_user).
+- Ter preparado o ambiente para usar o OpenStack. Para isso, consulte o seguinte guia: [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
 
 ## Instruções
 
@@ -44,7 +42,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Como indicado em [este guia](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/), a palavra-passe só é visível uma vez, no momento da sua criação.
+Como indicado em [este guia](/pages/platform/public-cloud/create_and_delete_a_user), a palavra-passe só é visível uma vez, no momento da sua criação.
 
 Se se tiver esquecido da palavra-passe, terá de voltar a criá-la.
 

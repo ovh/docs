@@ -1,11 +1,8 @@
 ---
 title: Cambiar los recursos de una máquina virtual
 routes:
-    canonical: 'https://docs.ovh.com/es/private-cloud/cambiar_la_configuracion_del_hardware_de_una_maquina_virtual/'
+    canonical: '/pages/cloud/private-cloud/modify_hardware_configuration_of_vm'
 excerpt: Cómo escalar su máquina virtual
-slug: cambiar_la_configuracion_del_hardware_de_una_maquina_virtual
-section: Gestión de las máquinas virtuales
-order: 03
 updated: 2020-11-18
 ---
 

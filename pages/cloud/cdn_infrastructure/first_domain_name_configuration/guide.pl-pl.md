@@ -1,9 +1,6 @@
 ---
 title: 'Pierwsza konfiguracja domeny'
-slug: pierwsza-konfiguracja-domeny-na-cdn
 excerpt: 'Poznaj dobre praktyki konfiguracji domeny w Twojej usłudze CDN'
-section: 'Pierwsze kroki'
-order: 2
 updated: 2018-02-21
 ---
 

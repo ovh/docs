@@ -1,8 +1,6 @@
 ---
 title: 'Passar de uma faturação à hora para uma faturação ao mês'
 excerpt: 'Saiba como modificar o tipo de faturação da sua instância Public Cloud'
-slug: mudar-tipo-faturacao-public-cloud
-section: 'Gestão do projeto'
 updated: 2023-01-23
 ---
 
@@ -57,7 +55,7 @@ Substitua "InstanceID" pelo ID da instância correspondente. Este identificador 
 
 ### Desde a API OVHcloud
 
-Aceda à [interface API OVHcloud](https://eu.api.ovh.com/) conforme o [guia apropriado](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/) e siga os passos abaixo.
+Aceda à [interface API OVHcloud](https://eu.api.ovh.com/) conforme o [guia apropriado](/pages/account/api/first-steps) e siga os passos abaixo.
 
 Utilize a seguinte chamada:
 

@@ -1,11 +1,9 @@
 ---
 title: Weryfikacja maszyny w przypadku spowolnienia w działaniu (EN)
 excerpt: 'Troubleshoot performance issues on a VM'
-slug: weryfikacja_maszyny_w_przypadku_spowolnienia_w_dzialaniu
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/check_a_slow_machine/'
+    canonical: '/pages/cloud/private-cloud/check_a_slow_machine'
 legacy_guide_number: g601
-section: Zarządzanie wirtualnymi maszynami
 updated: 2022-01-17
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Concepts - Réseau Public Cloud
-slug: networking-concepts
 excerpt: "Découvrez quels sont les concepts de base du Public Cloud Networking"
-section: Concepts
-order: 01
 updated: 2022-11-02
 ---
 
@@ -121,7 +118,7 @@ Le Public Cloud Load Balancer reste entièrement privé, il a donc besoin d'un s
 
 ![PCI Networking](images/netcon4.png){.thumbnail}
 
-Pour en savoir plus, consultez notre guide [Load Balancer](https://docs.ovh.com/fr/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/) .
+Pour en savoir plus, consultez notre guide [Load Balancer](/pages/platform/network-services/getting-started-01-create-lb-service) .
 
 ### Adresses IP publiques
 
@@ -145,7 +142,7 @@ Par exemple, vous pouvez appliquer un concept de cloud hybride basé sur un mél
 
 Veuillez noter que l'Additional IP ne peut être utilisée qu'avec des instances en [mode public](#publicmode), par opposition à l'utilisation d'une adresse Floating IP.
 
-Apprenez-en plus sur les Additional IP et Floating IP sur la [page concept dédiée](https://docs.ovh.com/fr/publiccloud/network-services/additional-ip-vs-floating-ip/).
+Apprenez-en plus sur les Additional IP et Floating IP sur la [page concept dédiée](/pages/platform/network-services/concepts-02-additional-ip-vs-floating-ip).
 
 ## Aller plus loin
 

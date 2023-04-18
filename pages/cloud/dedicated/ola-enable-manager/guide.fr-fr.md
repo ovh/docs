@@ -1,9 +1,6 @@
 ---
 title: 'Configurer l’agrégation de liens OLA dans votre espace client'
-slug: ola-manager
 excerpt: 'Découvrez comment activer l’agrégation de liens OVHcloud dans votre espace client.'
-section: 'Utilisation avancée'
-order: 1
 updated: 2023-03-07
 ---
 
@@ -45,13 +42,13 @@ Vérifiez que vos deux interfaces, ou groupes d'interfaces, sont bien sélection
 
 L'opération peut prendre quelques minutes. Une fois celle-ci terminée, l'étape suivante consiste à configurer les interfaces dans votre système d'exploitation via une liaison NIC ou une équipe NIC. Pour connaître la méthode à appliquer, consultez les guides suivants qui la détaillent pour les systèmes d'exploitation les plus populaires :
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](../ola-debian9/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](../ola-centos7/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](../ola-w2k19/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
-[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/fr/dedicated/ola-sles15/).
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](/pages/cloud/dedicated/ola-enable-sles15).
 
 ### Restaurer OLA aux valeurs par défaut
 
@@ -63,12 +60,12 @@ L'opération peut prendre quelques minutes.
 
 ## Aller plus loin
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](../ola-debian9/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](../ola-centos7/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](../ola-w2k19/).
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
-[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](https://docs.ovh.com/fr/dedicated/ola-sles15/).
+[Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans SLES 15](/pages/cloud/dedicated/ola-enable-sles15).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

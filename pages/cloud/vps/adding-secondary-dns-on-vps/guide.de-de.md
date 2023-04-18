@@ -1,8 +1,6 @@
 ---
 title: 'OVHcloud DNS Server mit einem VPS verwenden'
-slug: sekundaeren-dns-erstellen-vps
 excerpt: Erfahren Sie hier, wie Sie einen sekundären DNS Server für Ihren VPS einrichten
-section: Fortgeschrittene Nutzung
 updated: 2022-01-12
 ---
 
@@ -57,7 +55,7 @@ Die durchzuführende Aktion hängt davon ab, wo das DNS Ihres Domainnamens verwa
 
 - Wenn der Domainname derzeit von einem externen Registrar verwaltet wird **oder** externe DNS-Server verwendet, loggen Sie sich in die Verwaltungsoberfläche Ihres DNS-Anbieters ein und fügen Sie der DNS-Zone einen Eintrag des Typs TXT mit der Subdomain "ownercheck", sowie dem Wert aus [Schritt 1](#retrievecode) hinzu.
 
-- Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und** die DNS-Server von OVHcloud verwendet werden, fügen Sie den TXT-Eintrag im Bereich `Web Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) hinzu. Folgen Sie den Anweisungen in unserer Anleitung zum [Bearbeiten der DNS Zone](../../domains/webhosting_bearbeiten_der_dns_zone/), falls Sie mit dieser Vorgehensweise nicht nicht vertraut sind.
+- Wenn der Domainname von OVHcloud als Registrar verwaltet wird **und** die DNS-Server von OVHcloud verwendet werden, fügen Sie den TXT-Eintrag im Bereich `Web Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) hinzu. Folgen Sie den Anweisungen in unserer Anleitung zum [Bearbeiten der DNS Zone](/pages/web/domains/dns_zone_edit), falls Sie mit dieser Vorgehensweise nicht nicht vertraut sind.
 
 ![Sekundärer DNS](images/sec-04.png){.thumbnail}
 

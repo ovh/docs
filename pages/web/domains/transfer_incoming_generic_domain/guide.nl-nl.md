@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Een domeinnaam overdragen naar OVH'
-slug: overdracht-generiek-domein
 excerpt: 'De benodigde stappen voor overdracht van uw generieke domeinnaam naar OVH'
-section: 'Overdrachten (transfers)'
-order: 01
 updated: 2022-11-18
 ---
 
@@ -77,7 +74,7 @@ Nu uw domeinnaam is gedeblokkeerd en u uw transfercode hebt, kunt u uw domeinnaa
 
 Wanneer u wordt gevraagd om uw transfercode (overdrachtscode) op te geven, voert u deze in het vakje naast uw domeinnaam in. Als u de transfercode niet hebt, kunt u in een later stadium een vakje aanvinken met het label `Transfercode invoeren`{.action}. We raden u echter sterk aan ervoor te zorgen dat u de code bij de hand hebt voordat u verder gaat.
 
-U kunt uw bestelling ook voltooien met een [webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external} en andere OVH oplossingen. Deze stappen kunnen interessant voor u zijn, als u ook van plan bent om uw diensten te migreren naar OVH. De handleiding [Migratie van uw website en e-mails naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external} kan u hierbij helpen.
+U kunt uw bestelling ook voltooien met een [webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external} en andere OVH oplossingen. Deze stappen kunnen interessant voor u zijn, als u ook van plan bent om uw diensten te migreren naar OVH. De handleiding [Migratie van uw website en e-mails naar OVH](/pages/web/hosting/hosting_migrating_to_ovh){.external} kan u hierbij helpen.
 
 > [!warning]
 >
@@ -134,6 +131,6 @@ Om dit te doen, blijft u in uw `OVH Control Panel`{.action}, klikt u op `Domeine
 
 ## Verder
 
-[Migratie van uw website en e-mails naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}.
+[Migratie van uw website en e-mails naar OVH](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com/en/){.external}.

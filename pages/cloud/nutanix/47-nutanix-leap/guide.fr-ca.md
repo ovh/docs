@@ -1,9 +1,6 @@
 ---
 title: Réplication avancée avec Leap
-slug: leap-replication
 excerpt: "Mise en place de réplications avancées avec Leap"
-section: Plan de Reprise d'Activité
-order: 05
 updated: 2022-07-18
 ---
 
@@ -34,7 +31,7 @@ Nutanix Leap permet :
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté à vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters, par exemple à l'aide de ces technologies :
-    - via un VPN IPsec comme détaillé dans le guide « [Interconnexion IPsec entre deux sites](https://docs.ovh.com/ca/fr/nutanix/ipsec-interconnection/) »;
+    - via un VPN IPsec comme détaillé dans le guide « [Interconnexion IPsec entre deux sites](/pages/cloud/nutanix/44-ipsec-interconnection) »;
     - ou via une connexion [vRack](https://www.ovh.com/ca/fr/solutions/vrack/).
 - **Prism Central** a besoin de plus de ressources en fonction du mode :
     - Single Mode : 4Go de RAM supplémentaires.
@@ -56,7 +53,7 @@ Notre plan de reprise d'activité au travers de **Nutanix Leap** sera mis en pla
 
 Avant d'activer **Nutanix Leap**, il est nécessaire de rajouter une adresse IP pour les connexions iSCSI sur chacun des clusters.
 
-Par le biais de **Prism Central**, connectez-vous à **Prism Element** sur le cluster se trouvant en France. Vous pouvez utiliser le guide [Hyperconvergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/) pour vous aider.
+Par le biais de **Prism Central**, connectez-vous à **Prism Element** sur le cluster se trouvant en France. Vous pouvez utiliser le guide [Hyperconvergence Nutanix](/pages/cloud/nutanix/03-nutanix-hci) pour vous aider.
 
 En haut à gauche du tableau de bord de **Prism Element**, cliquez sur `Le nom du cluster`{.action}.
 
@@ -506,9 +503,9 @@ La machine virtuelle membre du plan de reprise d'activité va démarrer sur le c
 
 ## Aller plus loin
 
-[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/ca/fr/nutanix/disaster-recovery-plan-overview/)
+[Plan de reprise d'activité sur Nutanix](/pages/cloud/nutanix/43-disaster-recovery-plan-overview)
 
-[Interconnexion IPsec entre deux sites](https://docs.ovh.com/ca/fr/nutanix/ipsec-interconnection/)
+[Interconnexion IPsec entre deux sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
 [OVHcloud vRack](https://www.ovh.com/ca/fr/solutions/vrack/)
 

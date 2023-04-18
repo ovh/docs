@@ -1,11 +1,8 @@
 ---
 title: "Manage Contacts of a Domain Name"
-slug: api-contact
 excerpt: "Use the OVHcloud public API to manage contacts for your domain names"
-section: "Domeny API"
-order: 5
 routes:
-  canonical: "https://docs.ovh.com/gb/en/domains/api-contact/"
+  canonical: "/pages/web/domains/api_domain_contacts"
 updated: 2022-05-05
 ---
 
@@ -15,20 +12,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](../api) page if needed.
+> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](/pages/web/domains/api_domain_intro) page if needed.
 
 <!-- Begin TOC -->
 
 ## Table of Contents
 
-- [Introduction](../api)
-- [Order a Domain Name](../api-order)
-- [Tasks Management](../api-tasks)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Order a Domain Name](/pages/web/domains/api_domain_intro-order)
+- [Tasks Management](/pages/web/domains/api_domain_intro-tasks)
 - **Manage Contacts of a Domain Name**
-- [Managing Eligibility Rules](../api-rules)
-- [Configure the Display of Contact Data in the Whois](../api-whois)
-- [Configure the DNS of your Domain Name](../api-dns)
-- [Transfer a Domain Name](../api-transfer)
+- [Managing Eligibility Rules](/pages/web/domains/api_domain_intro-rules)
+- [Configure the Display of Contact Data in the Whois](/pages/web/domains/api_domain_intro-whois)
+- [Configure the DNS of your Domain Name](/pages/web/domains/api_domain_dns)
+- [Transfer a Domain Name](/pages/web/domains/api_domain_intro-transfer)
 <!-- End TOC -->
 
 ## Contact Types
@@ -42,7 +39,7 @@ For most extensions, there are 3 different contacts which can be configured on t
 
 - **Administrator**: contact managing the domain (owner and technical contacts management). They are the main contact points of the registrar.
 - **Technical**: contact managing the technical side of the domain (in particular, the DNS zone).
-- **Owner**: physical or legal person owning the domain name, sometimes called the **registrant**. They are constrained by [eligibility rules](../api-rules). They are legally responsible of the domain name.
+- **Owner**: physical or legal person owning the domain name, sometimes called the **registrant**. They are constrained by [eligibility rules](/pages/web/domains/api_domain_intro-rules). They are legally responsible of the domain name.
 
 For example, John contacts a web agency to create his small company's website. In this case, the web agency will organize contacts as follows:
 
@@ -115,7 +112,7 @@ Nichandle information may be retrieved and changed with these API routes.
 ### Nichandle Change on a Domain Service
 
 In this section, we will see how a Nic (admin, tech or billing) can be updated on a given domain name.
-It works in the same way as any other OVHcloud service. More details explaining the workflow, as well as how to do this, can be found on [this page](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+It works in the same way as any other OVHcloud service. More details explaining the workflow, as well as how to do this, can be found on [this page](/pages/account/customer/managing_contacts).
 
 Using the following API route, we are going to initiate a "task" which will allow the former and the new Nic to accept or refuse the change.
 
@@ -171,7 +168,7 @@ The following API routes can be used to handle domain contacts.
 
 > [!primary]
 >
-> The update payload of a contact (PUT) must always satisfy [eligibility rules](../api-rules).
+> The update payload of a contact (PUT) must always satisfy [eligibility rules](/pages/web/domains/api_domain_intro-rules).
 
 > [!primary]
 >
@@ -192,7 +189,7 @@ The simplest situation is the one of gTLDs, regulated by ICANN. In that case, an
 As a consequence, these fields are read-only if the contact is associated to at least a domain name.
 Changing the owner on a gTLD is free.
 
-For the other extensions, the [eligibility rules](../api-rules) API will return each field status.
+For the other extensions, the [eligibility rules](/pages/web/domains/api_domain_intro-rules) API will return each field status.
 For the sake of consistency, we still consider that an email address change is an owner change.
 
 > [!primary]
@@ -220,7 +217,7 @@ This process consists in two main steps.
 
 #### Owner Change Order
 
-The following steps are described with more details in the [domain name order](../api-order) documentation page.
+The following steps are described with more details in the [domain name order](/pages/web/domains/api_domain_intro-order) documentation page.
 
 ##### Step 1: Owner change information fetch
 
@@ -389,7 +386,7 @@ This task can be found using the following API route:
 >
 > @api {POST} /domain/{serviceName}/task
 
-More details about task management can be seen [on this page](../api-tasks).
+More details about task management can be seen [on this page](/pages/web/domains/api_domain_intro-tasks).
 
 The `DomainTrade` task is in charge of sending emails to the former and to the new owners, to confirm that the process can take place.
 These emails contain a validation link (secured with a private token).

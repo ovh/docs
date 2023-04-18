@@ -1,9 +1,7 @@
 ---
 title: 'Usuarios de la API'
-slug: usuarios-de-sms
 excerpt: 'Descubra las funcionalidades de los usuarios de la API de SMS'
 legacy_guide_number: g2144
-section: 'Gestionar el servicio'
 updated: 2022-08-05
 ---
 
@@ -101,7 +99,7 @@ Puede introducir hasta 5 direcciones IP públicas diferentes por usuario para en
 
 ![Restricciones por IP](images/smsusers06-2021.png){.thumbnail}
 
-Para más información sobre la función http2sms, consulte la guía [Enviar SMS desde una URL](https://docs.ovh.com/es/sms/enviar-sms-desde-una-url).
+Para más información sobre la función http2sms, consulte la guía [Enviar SMS desde una URL](/pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms).
 
 ### 5. Especificar una URL de callback
 
@@ -126,7 +124,7 @@ Para obtener la descripción de un código ptt específico, puede utilizar la si
 > @api {GET} /sms/ptts
 >
 
-Para más información sobre el uso de las API de OVHcloud, consulte nuestra guía [Primeros pasos con la API de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
+Para más información sobre el uso de las API de OVHcloud, consulte nuestra guía [Primeros pasos con la API de OVHcloud](/pages/account/api/first-steps).
 
 En la siguiente tabla encontrará una lista **no exhaustiva** de los códigos ptt principales.
 

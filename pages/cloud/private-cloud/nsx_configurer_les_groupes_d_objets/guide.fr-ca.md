@@ -1,10 +1,7 @@
 ---
 title: Configurer les groupes d’objets NSX-v
-slug: configurer-les-groupes-d-objets-nsx
 excerpt: Regrouper plusieurs objets en un seul pour éclaircir vos interfaces
 legacy_guide_number: '7766837'
-section: NSX-v
-order: 09
 updated: 2021-11-24
 ---
 
@@ -22,7 +19,7 @@ Créer des groupes d'objets permet de limiter le nombre de règles et de simplif
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/) afin de recevoir des identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)).
-- Avoir déployé une [NSX Edge Services Gateway](https://docs.ovh.com/ca/fr/private-cloud/comment-deployer-une-nsx-edge-gateway/).
+- Avoir déployé une [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway).
 
 ## En pratique
 

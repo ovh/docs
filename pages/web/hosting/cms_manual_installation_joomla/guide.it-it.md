@@ -1,9 +1,6 @@
 ---
 title: 'CMS: installa manualmente Joomla!'
 excerpt: Come fai a installare manualmente Joomla!?
-slug: cms_installa_manualmente_joomla
-section: CMS
-order: 05
 updated: 2022-12-01
 ---
 
@@ -222,7 +219,7 @@ Altre informazioni utili: per essere presi in carico, i file del tuo sito devono
 
 La causa è semplice: l'ultima versione di PHP non è stata attivata.
 
-Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud]({legacy}1207)
+Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud](/pages/web/hosting/cms_manual_installation_joomla%7Blegacy%7D1207)
 
 ![joomla](images/3156.png){.thumbnail}
 
@@ -233,9 +230,9 @@ Magic Quotes deve essere Off, cioè a 0 nel tuo file di configurazione.
 
 Nelle nuove offerte 2014, Magic Quote è disattivata di default se PHP-FPM è attivato. Nelle vecchie offerte du hosting condiviso, è possibile disattivare la variabile nel file .htaccess.
 
-Per modificare la versione PHP del tuo hosting coindiviso 2014, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud]({legacy}1207).
+Per modificare la versione PHP del tuo hosting coindiviso 2014, consulta la guida [Configura PHP sul tuo Hosting Web OVHcloud](/pages/web/hosting/cms_manual_installation_joomla%7Blegacy%7D1207).
 
-Per modificare la versione PHP su una vecchia offerta, consulta la guida []]({legacy}1175).
+Per modificare la versione PHP su una vecchia offerta, consulta la guida []](/pages/web/hosting/cms_manual_installation_joomla%7Blegacy%7D1175).
 
 ![joomla](images/3157.png){.thumbnail}
 

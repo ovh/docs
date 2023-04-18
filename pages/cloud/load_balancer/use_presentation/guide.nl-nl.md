@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Introductie tot de OVH Load Balancer
-slug: lb-introductie
 excerpt: Ontdek de nieuwe OVH Load Balancer
-section: Aan de slag 
 updated: 2018-01-17
 ---
 

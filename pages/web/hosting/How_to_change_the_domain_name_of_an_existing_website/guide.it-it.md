@@ -1,9 +1,6 @@
 ---
 title: "Casi d’uso - Come cambiare il dominio di un sito esistente"
-slug: how_to_change_the_domain_name_for_an_existing_website
 excerpt: "Questa guida ti mostra come modificare il dominio di un sito esistente"
-section: "Tutorial"
-order: 011
 updated: 2022-10-25
 ---
 
@@ -47,7 +44,7 @@ Per modificare il dominio di accesso al tuo sito Web, segui diversi step in un o
 
 ### Step 1 - Dichiarare il nuovo dominio sul tuo hosting condiviso <a name="step1"></a>
 
-Dichiarare il vostro nuovo dominio con la nostra documentazione sull'[aggiunta di un multisito sul vostro hosting condiviso](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/). Assegna un sottodominio alla `www` per esempio, aggiungendo `www.NewDomain.tld` sul tuo sito oltre a `NewDomain.tld`.
+Dichiarare il vostro nuovo dominio con la nostra documentazione sull'[aggiunta di un multisito sul vostro hosting condiviso](/pages/web/hosting/multisites_configure_multisite). Assegna un sottodominio alla `www` per esempio, aggiungendo `www.NewDomain.tld` sul tuo sito oltre a `NewDomain.tld`.
 
 Per superare lo Step 1 sono necessarie diverse condizioni:
 
@@ -56,7 +53,7 @@ Per superare lo Step 1 sono necessarie diverse condizioni:
 
 > [!warning]
 >
-> Se attivate le opzioni **IP del paese** o **CDN** con il vostro nuovo dominio, utilizzate il giusto indirizzo IP con la nostra documentazione che censisce [l'insieme degli indirizzi IP dei nostri hosting condivisi](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/).
+> Se attivate le opzioni **IP del paese** o **CDN** con il vostro nuovo dominio, utilizzate il giusto indirizzo IP con la nostra documentazione che censisce [l'insieme degli indirizzi IP dei nostri hosting condivisi](/pages/web/hosting/multisites_configure_multisite).
 >
 > Per visualizzare il numero del cluster in cui si trova il tuo hosting, accedi alla sezione `Web cloud`{.action}, clicca su `Hosting plans`{.action}, seleziona il tuo hosting e poi la scheda `FTP-SSH`{.action}. Visualizzerai il numero del cluster nel form **Server FTP e SFTP**: `ftp.cluster0XX.ovh.net` (dove le `X` rappresentano il numero di cluster).
 >
@@ -64,8 +61,8 @@ Per superare lo Step 1 sono necessarie diverse condizioni:
 > **Certificati SSL**
 >
 > Se il dominio inizialmente utilizzato per accedere al tuo sito dispone di un certificato SSL, consulta le nostre due guide per effettuare o verificare le azioni descritte proprio sotto questi due link:
-> - [Gestire un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/)
-> - [Attiva il protocollo HTTPS sul tuo sito Web con il certificato SSL](https://docs.ovh.com/it/hosting/attivare-https-su-sito-internet-tramite-certificato-ssl/)
+> - [Gestire un certificato SSL su un hosting Web](/pages/web/hosting/ssl_on_webhosting)
+> - [Attiva il protocollo HTTPS sul tuo sito Web con il certificato SSL](/pages/web/hosting/ssl-activate-https-website)
 >
 > Per il certificato SSL *Let's Encrypt* gratuito, è sufficiente attivare l'opzione `SSL` **da subito** per il nuovo dominio tramite la scheda `Multisito`{.action} del tuo hosting. Clicca su `Azioni`{.action} aggiungi i tuoi multisiti `Rigenera il certificato SSL`{.action}. La rigenerazione richiederà almeno due ore per essere effettuata.
 >
@@ -95,7 +92,7 @@ La maggior parte dei siti utilizza database per funzionare. che viene generalmen
 >
 > Attenzione: le operazioni descritte nello Step 2 sono estremamente sensibili e, se non eseguite con cautela, possono avere gravi conseguenze per il tuo sito Web. In caso di dubbio, non provi nulla e rivolgiti a [uno specialista](https://partner.ovhcloud.com/it/).
 >
-> Prima di effettuare qualsiasi operazione, ti consigliamo di recuperare una [backup del tuo spazio di storage FTP](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/) e una [backup del tuo database](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/). per ripristinare il sito in caso di operazioni errate.
+> Prima di effettuare qualsiasi operazione, ti consigliamo di recuperare una [backup del tuo spazio di storage FTP](/pages/web/hosting/ftp_save_and_backup) e una [backup del tuo database](/pages/web/hosting/sql_database_export). per ripristinare il sito in caso di operazioni errate.
 >
 
 Seguiremo due tipi di sito Web: 
@@ -115,13 +112,13 @@ I CMS sono sviluppati da organizzazioni terze non gestite da OVHcloud. Di seguit
 - Drupal: L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, consulta le pagine ufficiali [drupal.org](https://drupal.org){.external} o [drupal.fr](https://drupal.fr){.external}.
 - PrestaShop: L'editor di questo software non offre, alla data, la documentazione necessaria per modificare il dominio di accesso al tuo sito Web. A questo proposito, ti invitiamo a contattare direttamente l'editor. Per maggiori informazioni, clicca [qui](https://help-center.prestashop.com){.external} per accedere alla pagina ufficiale.
 
-Ti ricordiamo che anche per questi CMS è possibile effettuare modifiche direttamente [in database](https://docs.ovh.com/it/hosting/creare-database/). È necessario modificare l'URL di accesso al tuo sito nella tabella prevista a tal fine.
+Ti ricordiamo che anche per questi CMS è possibile effettuare modifiche direttamente [in database](/pages/web/hosting/sql_create_database). È necessario modificare l'URL di accesso al tuo sito nella tabella prevista a tal fine.
 
 Per gli altri CMS non preinstallati automaticamente da OVHcloud, ti consigliamo di contattare i loro rispettivi supporti per eseguire questa riscrittura in totale sicurezza. 
 
 #### Caso n. 2: il tuo sito web è un sito "fatto case"
 
-Per riscrivere i tuoi URL con il tuo nuovo dominio, [collegati al database del tuo sito](https://docs.ovh.com/it/hosting/creare-database/) e sostituisci il tuo vecchio dominio con il nuovo nella tabella corrispondente. 
+Per riscrivere i tuoi URL con il tuo nuovo dominio, [collegati al database del tuo sito](/pages/web/hosting/sql_create_database) e sostituisci il tuo vecchio dominio con il nuovo nella tabella corrispondente. 
 
 Ricordati di verificare nel tuo file `.htaccess` se le riscritture dell'URL non devono essere aggiornate con il tuo nuovo dominio.
 
@@ -134,24 +131,24 @@ Se hai contattato un provider per creare il tuo sito, contattalo per effettuare 
 
 ### Step 3 - Rimuovi il vecchio dominio <a name="step3"></a>
 
-Per evitare "*Duplicate-content*" e quando il tuo nuovo dominio è pienamente operativo con il tuo sito, dovrai eliminare la dichiarazione in multisiti per il tuo vecchio dominio utilizzando la guida sulla gestione dei [multisiti sul tuo hosting condiviso](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/).
+Per evitare "*Duplicate-content*" e quando il tuo nuovo dominio è pienamente operativo con il tuo sito, dovrai eliminare la dichiarazione in multisiti per il tuo vecchio dominio utilizzando la guida sulla gestione dei [multisiti sul tuo hosting condiviso](/pages/web/hosting/multisites_configure_multisite).
 
 > [!warning]
 >
 > Ricordati di occuparti del tuo certificato SSL *Sectigo EV*, *Sectigo DV* o *Custom* come specificato nello Step 1](#step1).
 >
 
-Una volta che il dominio precedente è stato rimosso dalla scheda multisito e registrato in OVHcloud, è possibile reindirizzarlo tramite un [reindirizzamento visibile permanente 301](https://docs.ovh.com/it/domains/reindirizzamento-dominio/). In questo modo i tuoi visitatori vengono automaticamente reindirizzati verso il tuo sito visualizzando il nuovo dominio nella barra degli indirizzi/URL del browser.
+Una volta che il dominio precedente è stato rimosso dalla scheda multisito e registrato in OVHcloud, è possibile reindirizzarlo tramite un [reindirizzamento visibile permanente 301](/pages/web/domains/redirect_domain_name). In questo modo i tuoi visitatori vengono automaticamente reindirizzati verso il tuo sito visualizzando il nuovo dominio nella barra degli indirizzi/URL del browser.
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Elenco degli IP dei nostri hosting condivisi](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/)
+[Elenco degli IP dei nostri hosting condivisi](/pages/web/hosting/multisites_configure_multisite)
 
-[Gestire un certificato SSL su un hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/)
+[Gestire un certificato SSL su un hosting Web](/pages/web/hosting/ssl_on_webhosting)
 
-[Attiva il protocollo HTTPS sul tuo sito Web grazie al certificato SSL](https://docs.ovh.com/it/hosting/attivare-https-su-sito-internet-tramite-certificato-ssl/)
+[Attiva il protocollo HTTPS sul tuo sito Web grazie al certificato SSL](/pages/web/hosting/ssl-activate-https-website)
 
-[Reindirizzare un dominio](https://docs.ovh.com/it/domains/reindirizzamento-dominio/)
+[Reindirizzare un dominio](/pages/web/domains/redirect_domain_name)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

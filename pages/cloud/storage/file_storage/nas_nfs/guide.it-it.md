@@ -1,9 +1,6 @@
 ---
 title: "Installazione di un NAS-HA tramite condivisione NFS"
-slug: nas/nfs
 excerpt: "Come connettersi al tuo NAS-HA utilizzando una condivisione NFS"
-section: NAS-HA
-order: 03
 updated: 2022-12-06
 ---
 
@@ -30,8 +27,8 @@ Il servizio NAS-HA OVHcloud ti permette di gestire uno storage di file accessibi
 - Disporre di una soluzione [NAS-HA OVHcloud](https://www.ovhcloud.com/it/storage-solutions/nas-ha/)
 - Disporre di un servizio OVHcloud associato a un indirizzo IP pubblico (Hosted Private Cloud, server dedicato, VPS, istanza Public Cloud, ecc...)
 - Disporre di un sistema operativo compatibile con NFS sul server
-- [Aver creato una partizione sul tuo servizio con il protocollo NFS attivo](https://docs.ovh.com/it/storage/file-storage/nas/get-started/#partition)
-- [Avere un record ACL per l'indirizzo IP del server](https://docs.ovh.com/it/storage/file-storage/nas/get-started/#addaccess)
+- [Aver creato una partizione sul tuo servizio con il protocollo NFS attivo](/pages/cloud/storage/file_storage/nas_get_started#partition)
+- [Avere un record ACL per l'indirizzo IP del server](/pages/cloud/storage/file_storage/nas_get_started#addaccess)
 - Avere accesso amministrativo (root) al server via SSH o GUI
 
 ## Procedura

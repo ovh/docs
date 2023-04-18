@@ -1,7 +1,5 @@
 ---
 title: Information System Security Policy (ISSP)
-slug: issp
-section: Security policies
 updated: 2022-07-21
 ---
 

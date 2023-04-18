@@ -1,9 +1,6 @@
 ---
 title: 'Aggiungi credito Cloud al tuo progetto'
 excerpt: 'Come aggiungere credito o voucher al tuo progetto Public Cloud'
-slug: aggiungi_credito_cloud_al_tuo_progetto
-section: Gestione del progetto
-order: 3
 updated: 2022-02-04
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-02-04
 
 ## Obiettivo
 
-L'opzione di "credito Cloud" ti permette di assegnare un importo specifico al tuo progetto Public Cloud, che servirà come metodo di pagamento predefinito per la [fatturazione del progetto](../analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/).<br>
+L'opzione di "credito Cloud" ti permette di assegnare un importo specifico al tuo progetto Public Cloud, che servirà come metodo di pagamento predefinito per la [fatturazione del progetto](/pages/platform/public-cloud/analyze_billing).<br>
 Questo significa che il credito Cloud viene addebitato per primo e che il debito viene successivamente saldato con gli altri metodi di pagamento disponibili. Per saperne di più, consulta le [guide alla fatturazione del Public Cloud](https://docs.ovh.com/it/billing/).
 
 **Questa guida ti mostra come aggiungere credito al tuo account Public Cloud tramite l’utilizzo di un voucher oppure generando un buono d’ordine.**

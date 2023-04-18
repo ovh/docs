@@ -15,7 +15,7 @@ A lista dos contactos dos seus serviços está disponível na secção `Contacto
 
 #### Truques e dicas
 
-Se pretender saber mais sobre a gestão dos contactos, consulte este manual pormenorizado: [Como gerir os contactos (gestores) dos serviços OVHcloud](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+Se pretender saber mais sobre a gestão dos contactos, consulte este manual pormenorizado: [Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account/customer/managing_contacts).
 
 ### Como alterar as minhas informações de faturação?
 
@@ -34,7 +34,7 @@ Se não renovar o serviço antes dessa data, este será simplesmente suspenso e 
 
 Consulte o estado dos seus serviços e administre a sua renovação na rubrica `Os meus serviços`{.action}, na Área de Cliente.
 Faça login e renove manualmente os seus serviços na página <https://eu.ovh.com/pt/cgi-bin/order/renew.cgi>
-Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/).
+Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Como ativar a renovação automática?
 
@@ -43,7 +43,7 @@ Aceda à secção `Produtos e serviços`{.action} que pode ser acedida diretamen
 #### Truques e dicas
 
 Antes de ativar a renovação automática, configure um método de pagamento. Em caso de pagamento pendente, os serviços serão suspensos ao fim de 7 dias.
-Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/).
+Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Como desativar a renovação automática?
 
@@ -54,7 +54,7 @@ Para rescindir um serviço, consulte a página [Como rescindir um serviço?](#ca
 #### Truques e dicas
 
 A renovação automática permite evitar interrupções de serviço. Além disso, receberá notificações por e-mail antes de cada renovação.
-Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/).
+Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Como adicionar um método de pagamento?
 
@@ -100,7 +100,7 @@ As soluções que beneficiam de renovação automática são renovadas no primei
 #### Truques e dicas
 
 Pode alterar a frequência de renovação dos serviços subscritos a partir do painel de controlo, clicando nas iniciais do seu nome e clicando em `Serviços`{.action}, na Área de Cliente.
-Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/).
+Se quiser saber mais, pode consultar este manual pormenorizado: [Gerir a renovação dos serviços](/pages/account/billing/how_to_use_automatic_renewal).
 
 ### Que método de pagamento é utilizado para pagar o serviço?
 
@@ -129,7 +129,7 @@ Se não registou um método de pagamento, mas dispõe de serviços com renovaç�
 #### Truques e dicas
 
 Tenha à mão o seu ID de cliente e palavra-passe OVHcloud. Vai precisar destas credenciais para pagar as suas faturas.
-Também pode consultar este manual pormenorizado: [Gerir as minhas faturas OVHcloud - Pagar o montante pendente](https://docs.ovh.com/pt/billing/gerir-faturas-ovhcloud/#pagar-o-montante-pendente).
+Também pode consultar este manual pormenorizado: [Gerir as minhas faturas OVHcloud - Pagar o montante pendente](/pages/account/billing/invoice_management#pagar-o-montante-pendente).
 
 ### Como verificar o estado do meu pagamento?
 
@@ -152,7 +152,7 @@ A rescisão ficará efetiva quando o período de validade ou de compromisso do s
 #### Conselhos e dicas
 
 Em caso de erro de encomenda, tem a possibilidade de exercer o seu direito de retratação nas condições correspondentes. Para mais informações, consulte a FAQ “Como anular a minha encomenda?”
-Para mais informações sobre a rescisão dos nossos produtos e serviços, clique [aqui](https://docs.ovh.com/pt/billing/how-to-cancel-your-services/).
+Para mais informações sobre a rescisão dos nossos produtos e serviços, clique [aqui](/pages/account/billing/how_to_cancel_services).
 
 ### Como personalizar a referência do meu produto/serviço na minha fatura?
 
@@ -165,7 +165,7 @@ Esta faturação compreende, por um lado, os recursos pagos antecipadamente e, p
 
 #### Truques e dicas:
 
-Se quiser saber mais, pode consultar este manual pormenorizado: [Informação relativa às opções de faturação cloud](https://docs.ovh.com/pt/public-cloud/informacoes-sobre-o-metodo-de-faturacao-cloud/).
+Se quiser saber mais, pode consultar este manual pormenorizado: [Informação relativa às opções de faturação cloud](/pages/platform/public-cloud/analyze_billing).
 
 ### Como consultar o livro razão?
 

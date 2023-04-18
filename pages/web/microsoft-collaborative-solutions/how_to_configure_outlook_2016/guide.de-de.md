@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration von Exchange mit Outlook für Windows'
-slug: exchange-automatische-konfiguration-auf-outlook-2016
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Exchange Account in Outlook für Windows einrichten'
-section: Konfiguration auf computer
-order: 01
 updated: 2021-07-05
 ---
  
@@ -30,11 +27,11 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 - Sie verfügen über einen [Exchange Account](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}.
 - Microsoft Outlook ist auf Ihrem Gerät installiert.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
-- Der OVHcloud SRV-Eintrag muss in der DNS-Zone der Domain korrekt konfiguriert sein. Lesen Sie hierzu unsere Anleitung "[Eine Domain zu Ihrer Exchange Dienstleistung hinzufügen](../domain-zu-exchange-hinzufugen/)".
+- Der OVHcloud SRV-Eintrag muss in der DNS-Zone der Domain korrekt konfiguriert sein. Lesen Sie hierzu unsere Anleitung "[Eine Domain zu Ihrer Exchange Dienstleistung hinzufügen](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain)".
 
 > [!primary]
 >
-> Sie verwenden Outlook 2016 für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration von Exchange auf Outlook 2016 für Mac](../konfiguration-outlook-2016-mac/)
+> Sie verwenden Outlook 2016 für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration von Exchange auf Outlook 2016 für Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac)
 >
 
 ## In der praktischen Anwendung
@@ -74,17 +71,17 @@ Exchange Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingeric
 
 Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-Ihre Exchange E-Mail-Adresse sowie alle kollaborativen Funktionen sind ebenfalls über das [OWA Interface](https://www.ovh.de/mail/) verfügbar. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](../exchange_2016_verwendung_der_outlook_web_app/) heranziehen.
+Ihre Exchange E-Mail-Adresse sowie alle kollaborativen Funktionen sind ebenfalls über das [OWA Interface](https://www.ovh.de/mail/) verfügbar. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web/microsoft-collaborative-solutions/owa_user_guide) heranziehen.
 
 ### Backup Ihrer E-Mail-Adresse
 
-Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](../../emails/email-adressen-manuell-migrieren/#uber-windows-exportieren)".
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](/pages/web/emails/manual_email_migration#uber-windows-exportieren)".
 
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Konfiguration Ihrer MX Plan Adresse mit Outlook für Windows](../../emails/konfiguration-outlook-2016/)
+[Konfiguration Ihrer MX Plan Adresse mit Outlook für Windows](/pages/web/emails/how_to_configure_outlook_2016)
 
-[Konfiguration von E-Mail Pro auf Outlook 2016 für Windows](../../emails-pro/konfiguration-outlook-2016/)
+[Konfiguration von E-Mail Pro auf Outlook 2016 für Windows](/pages/web/emails-pro/how_to_configure_outlook_2016)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

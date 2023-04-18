@@ -1,9 +1,6 @@
 ---
 title: Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en SLES 15
-slug: ola-sles15
 excerpt: 'Activar OVHcloud Link Aggregation en su servidor SLES 15'
-section: 'Uso avanzado'
-order: 4
 updated: 2023-03-07
 ---
 
@@ -21,7 +18,7 @@ La tecnología OVHcloud Link Aggregation (OLA) está diseñada por nuestros equi
 
 ## Requisitos
 
-- [Haber configurado su ID de cliente para la funcionalidad de OVHcloud Link Aggregation desde el área de cliente de OVHcloud](https://docs.ovh.com/us/es/dedicated/ola-manager/)
+- [Haber configurado su ID de cliente para la funcionalidad de OVHcloud Link Aggregation desde el área de cliente de OVHcloud](/pages/cloud/dedicated/ola-enable-manager)
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
@@ -139,12 +136,12 @@ También puede comprobar los parámetros utilizados en su interfaz ifcfg-bond0 u
 
 ## Más información
 
-[Configurar la agregación de enlaces OLA en el área de cliente](https://docs.ovh.com/us/es/dedicated/ola-manager/).
+[Configurar la agregación de enlaces OLA en el área de cliente](/pages/cloud/dedicated/ola-enable-manager).
 
-[Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en Debian 9](https://docs.ovh.com/us/es/dedicated/ola-debian9/).
+[Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en Debian 9](/pages/cloud/dedicated/ola-enable-debian9).
 
-[Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en CentOS 7](https://docs.ovh.com/us/es/dedicated/ola-centos7/).
+[Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en CentOS 7](/pages/cloud/dedicated/ola-enable-centos7).
 
-[Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en Windows Server 2019](https://docs.ovh.com/us/es/dedicated/ola-w2k19/).
+[Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en Windows Server 2019](/pages/cloud/dedicated/ola-enable-w2k19).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

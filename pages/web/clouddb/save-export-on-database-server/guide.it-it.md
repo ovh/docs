@@ -1,9 +1,6 @@
 ---
 title: Salvare ed esportare un database sul tuo server di database
-slug: salvare-esportare-un-database
 excerpt: Come salvare ed esportare il tuo database
-section: Configurazione
-order: 04
 updated: 2023-02-15
 ---
 
@@ -68,7 +65,7 @@ Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} a
 
 ##### 1\.1 Esportare il mio database MySQL o MariaDB da phpMyAdmin OVHcloud 
 
-Per esportare il tuo database direttamente da phpMyAdmin, è necessario effettuare l'accesso. Per effettuare questa operazione, consulta la guida ["Connettersi a un database"](../connessione-database-server-bdd).
+Per esportare il tuo database direttamente da phpMyAdmin, è necessario effettuare l'accesso. Per effettuare questa operazione, consulta la guida ["Connettersi a un database"](/pages/web/clouddb/connecting-to-database-on-database-server).
 
 Una volta connesso a phpMyAdmin, clicca sul nome del database da esportare e poi sulla scheda `Esporta`{.action} in alto.
 
@@ -93,7 +90,7 @@ mysqldump —host=server —user=utente —port=port —password=password nome_d
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/)
+> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](/pages/web/hosting/htaccess_protect_directory_by_password)
 > - Questa azione è possibile solo da un hosting OVHcloud condiviso.
 >
 
@@ -118,13 +115,13 @@ pg_dump —host=server —port=port —user=utente —password=password nome_dat
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/)
+> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](/pages/web/hosting/htaccess_protect_directory_by_password)
 > - Questa azione è possibile solo da un hosting OVHcloud condiviso.
 >
 
 ## Per saperne di più
 
-[Ripristinare e importare un database sul tuo server di database](../ripristinare-importare-database)
+[Ripristinare e importare un database sul tuo server di database](/pages/web/clouddb/restore-import-on-database-server)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

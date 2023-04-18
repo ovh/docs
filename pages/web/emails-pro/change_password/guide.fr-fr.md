@@ -1,11 +1,8 @@
 ---
 title: "Modifier le mot de passe d'une adresse e-mail"
-slug: changing-email-address-password
 excerpt: "Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud"
-section: 'Premiers pas'
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email'
+    canonical: '/pages/web/emails/email_change_password'
 updated: 2023-01-03
 ---
 
@@ -36,4 +33,4 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 
 ## En pratique
 
-Suivez notre guide [Modifier le mot de passe d'une adresse e-mail](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/) dans la rubrique « E-mails mutualisés - MX Plan ».
+Suivez notre guide [Modifier le mot de passe d'une adresse e-mail](/pages/web/emails/email_change_password) dans la rubrique « E-mails mutualisés - MX Plan ».

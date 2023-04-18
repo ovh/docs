@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja dynamicznego DNS dla domeny'
 excerpt: 'Dowiedz się, jak skonfigurować dynamiczny rekord DNS (DynHost) dla Twojej domeny'
-slug: hosting_www_dynhost
-section: 'DNS i strefa DNS'
-order: 6
 legacy_guide_number: g2024
 updated: 2018-07-19
 ---
@@ -51,7 +48,7 @@ Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Identyfikator poja
 
 ### Etap 2: tworzenie dynamicznego rekordu DNS (DynHost)
 
-Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynamicznie. Rekord DynHost nie może już istnieć w strefie DNS OVHcloud Twojej domeny jako rekord „A”. Aby zweryfikować rekord, i w razie potrzeby go usunąć, zapoznaj się z informacjami zawartymi w przewodniku [Modyfikacja DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
+Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynamicznie. Rekord DynHost nie może już istnieć w strefie DNS OVHcloud Twojej domeny jako rekord „A”. Aby zweryfikować rekord, i w razie potrzeby go usunąć, zapoznaj się z informacjami zawartymi w przewodniku [Modyfikacja DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
 Gdy jesteś gotowy, aby utworzyć rekord DynHost, przejdź ponownie na stronę główną w zakładce `DynHost`{.action}, a następnie kliknij przycisk `Dodaj wpis DynHost`{.action}. W oknie, które się wyświetla, wprowadź wymagane informacje:
 

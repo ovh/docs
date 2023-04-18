@@ -1,9 +1,6 @@
 ---
 title: 'Todas nuestras guías Object Storage'
-slug: object-storage-redirection
 excerpt: Consulte todas nuestras guías Object Storage High Performance y Swift
-section: 'Almacenamiento'
-order: 00
 updated: 2022-03-14
 ---
 

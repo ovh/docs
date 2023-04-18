@@ -1,7 +1,5 @@
 ---
 title: Comment activer mes lignes téléphoniques ? (Offres ADSL/VDSL/FTTH)
-slug: comment-activer-mes-lignes-telephoniques-offre-adsl-vdsl
-section: Premiers pas
 updated: 2020-11-02
 ---
 

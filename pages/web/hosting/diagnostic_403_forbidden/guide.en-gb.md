@@ -1,9 +1,6 @@
 ---
 title: What do I do if I have a 403 forbidden page?
 excerpt: How to get your website back online if it displays a 403 forbidden page
-slug: diagnostic-403-forbidden
-section: Troubleshooting
-order: 08
 updated: 2022-06-16
 ---
 
@@ -28,14 +25,14 @@ It may also be the case that our security robots have temporarily blocked access
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- having the [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
+- having the [login details](/pages/web/hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 ### Step 1: Analyse the situation
 
-If the page "**403 forbidden**" appeared following an incorrect modification of your site, restore all or part of your [hosting storage space](../restoring-ftp-filezilla-control-panel/) to an earlier date.
+If the page "**403 forbidden**" appeared following an incorrect modification of your site, restore all or part of your [hosting storage space](/pages/web/hosting/ftp_save_and_backup) to an earlier date.
 
 If the backups available do not allow you to restore access to your site, contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/).
 
@@ -49,8 +46,8 @@ First, verify the security of your devices and services:
 
 - Perform security updates;
 - Also check that an antivirus software is installed, update it and run a complete scan. If you do not have such software, consult a [specialised service provider](https://partner.ovhcloud.com/en-gb/directory/) before installing it;
-- Change all your personal passwords, including the ones of your email accounts, in accordance with these [best practices](https://docs.ovh.com/gb/en/customer/manage-password/#generate-a-strong-password);
-- Change the passwords for all of your OVHcloud services, including your [databases](../change-password-database/) and access to your [FTP storage space](../modify-ftp-user-password/).
+- Change all your personal passwords, including the ones of your email accounts, in accordance with these [best practices](/pages/account/customer/manage-ovh-password#generate-a-strong-password);
+- Change the passwords for all of your OVHcloud services, including your [databases](../change-password-database/) and access to your [FTP storage space](/pages/web/hosting/ftp_change_password).
 
 > [!warning]
 >
@@ -67,14 +64,14 @@ First, take note of the date on which the OVHcloud email regarding the deactivat
 
 #### Case no. 1: Your Web Hosting plan has been disabled for less than two weeks
 
-If your Web Hosting plan was closed less than two weeks ago and only contains one website, restore your storage space following the instructions in this [guide](../restoring-ftp-filezilla-control-panel/#restore-the-storage-space-via-the-ovh-control-panel).
+If your Web Hosting plan was closed less than two weeks ago and only contains one website, restore your storage space following the instructions in this [guide](/pages/web/hosting/ftp_save_and_backup#restore-the-storage-space-via-the-ovh-control-panel).
 
-If your Web Hosting plan was closed less than two weeks ago and contains multiple websites, only restore the folder(s) containing the suspicious files as described in this [guide](../restoring-ftp-filezilla-control-panel/#restore-a-file-using-a-software-program-or-interface).
+If your Web Hosting plan was closed less than two weeks ago and contains multiple websites, only restore the folder(s) containing the suspicious files as described in this [guide](/pages/web/hosting/ftp_save_and_backup#restore-a-file-using-a-software-program-or-interface).
 
 > [!warning]
 >
 > Restoring your storage space alone will not be enough to correct potential security vulnerabilities already present on your site.
-> To identify these security vulnerabilities, you can analyse your hosting system’s ["web logs"](https://docs.ovh.com/gb/en/hosting/shared_view_my_websites_logs_and_statistics/#logs), or contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/) to perform a security audit on your solutions.
+> To identify these security vulnerabilities, you can analyse your hosting system’s ["web logs"](/pages/web/hosting/logs_and_statistics#logs), or contact a [specialised service provider](https://partner.ovhcloud.com/en-gb/) to perform a security audit on your solutions.
 >
 
 #### Case no. 2: Your Web Hosting plan has been disabled for more than two weeks
@@ -92,10 +89,10 @@ If your Web Hosting plan was closed more than two weeks ago, contact a [speciali
 
 > [!primary]
 >
-> If you want to install the **FileZilla** software to manipulate your website files, follow the instructions in this [guide](../web_hosting_filezilla_user_guide/).
+> If you want to install the **FileZilla** software to manipulate your website files, follow the instructions in this [guide](/pages/web/hosting/ftp_filezilla_user_guide).
 >
 
-Open the FileZilla application, then [log in to your FTP storage space](../web_hosting_filezilla_user_guide/#ftp-connection). Click on `Server`{.action} in the menu bar then on `Enter custom command`{.action} (the button may be differently labelled, depending on which version of FileZilla you are using):
+Open the FileZilla application, then [log in to your FTP storage space](/pages/web/hosting/ftp_filezilla_user_guide#ftp-connection). Click on `Server`{.action} in the menu bar then on `Enter custom command`{.action} (the button may be differently labelled, depending on which version of FileZilla you are using):
 
 ![command_filezilla1](images/command_filezilla1.png){.thumbnail}
 
@@ -113,7 +110,7 @@ The response "**200 Permissions changed on /**" confirms that the change was suc
 
 In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud`{.action} section, then open `Hosting plans`{.action} and switch to the `FTP-SSH`{.action} tab of the Web Hosting plan concerned.
 
-Click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](../log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer). Click on the `Advanced`{.action} button and then click the `Go`{.action} button next to "Send arbitrary FTP commands to the FTP server".
+Click on the `FTP Explorer`{.action} button and log in to your storage space, following the instructions in this [guide](/pages/web/hosting/ftp_connection#1-log-in-via-ftp-explorer). Click on the `Advanced`{.action} button and then click the `Go`{.action} button next to "Send arbitrary FTP commands to the FTP server".
 
 ![net2ftp](images/net2ftp.png){.thumbnail}
 
@@ -125,11 +122,11 @@ The response "**200 Permissions changed on /**" confirms that the change was suc
 
 ## Go further <a name="gofurther"></a>
 
-[What to do if your WordPress site is hacked](../what_to_do_if_your_wordpress_site_is_hacked/)
+[What to do if your WordPress site is hacked](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked)
 
-[Activating the application firewall](../web_hosting_activating_an_application_firewall/)
+[Activating the application firewall](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Changing a Web Hosting plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/)
+[Changing a Web Hosting plan’s PHP version](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

@@ -1,9 +1,6 @@
 ---
 title: Logging in to the vSphere interface
-slug: login-vsphere-interface
 excerpt: Find out about the different ways you can log in to vSphere
-section: 'Getting started'
-order: 2
 updated: 2022-06-24
 ---
 
@@ -16,7 +13,7 @@ updated: 2022-06-24
 ## Requirements
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/) to receive login credentials.
-- IP addresses added in the `Security`{.action} tab of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). For more information, please read our guide on [Authorising IP addresses for vCenter access](https://docs.ovh.com/ie/en/private-cloud/authorise-ip-addresses-vcenter/).
+- IP addresses added in the `Security`{.action} tab of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). For more information, please read our guide on [Authorising IP addresses for vCenter access](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter).
 
 ## Instructions
 

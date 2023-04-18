@@ -1,8 +1,5 @@
 ---
 title: Python
-slug: languages-python
-section: Languages
-order: 4
 updated: 2022-06-02
 ---
 
@@ -145,7 +142,7 @@ def application(env, start_response):
 
 Your app container comes with pip pre-installed.
 To add global dependencies (packages available as commands),
-add them to the `dependencies` in your [app configuration](../configuration-app):
+add them to the `dependencies` in your [app configuration](/pages/web/web-paas/configuration-app):
 
 ```yaml 
 location=".platform.app.yaml"
@@ -165,7 +162,7 @@ hooks:
 ```
 ## Connect to services
 
-The following examples show how to access various [services](../configuration-services) with Python.
+The following examples show how to access various [services](/pages/web/web-paas/configuration-services) with Python.
 For more information on configuring a given service, see the page for that service.
 
 > [!tabs]      

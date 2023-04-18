@@ -1,9 +1,6 @@
 ---
 title: 'Créer une adresse e-mail avec son offre MX Plan'
-slug: creation-dune-adresse-e-mail
 excerpt: 'Découvrez comment créer une adresse e-mail avec votre offre MX Plan'
-section: 'Premiers pas'
-order: 02
 updated: 2022-10-11
 ---
 
@@ -25,7 +22,7 @@ Vous venez d'acquérir une solution e-mail MX Plan. Celle-ci vous permet de bén
 > **Cas particuliers**
 >
 > - Concernant l’hébergement gratuit Start 10M : il est impératif de l’activer au préalable afin de pouvoir créer une adresse e-mail. Vous pouvez effectuer cette opération depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, en vous positionnant sur le nom de domaine concerné.
-> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](https://docs.ovh.com/fr/hosting/activer-email-hebergement-web/) ».
+> - Dans le cadre d'un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}, il est nécessaire d'activer votre offre MX Plan incluse avant de poursuivre la lecture de cette documentation. Pour cela, consultez notre guide « [Activer les adresses e-mail incluses dans votre hébergement web](/pages/web/hosting/activate-email-hosting) ».
 
 ## En pratique <a name="instructions"></a>
 
@@ -72,7 +69,7 @@ Réalisez cette étape autant de fois que nécessaire, selon le nombre de compte
 
 Accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail Outlook Web Access (OWA), aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](../utilisation-owa/){.external} ».
+Lors d'une première connexion au webmail, vous êtes invité à définir la langue de l'interface ainsi que le fuseau horaire sur lequel vous vous trouvez. Votre boîte de réception s'affiche ensuite. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail Outlook Web Access (OWA), aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail Outlook Web Access (OWA)](/pages/web/emails/email_owa){.external} ».
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -84,7 +81,7 @@ Depuis la nouvelle version MXplan, on parle de *réinitialisation de compte* lor
 
 > [!warning]
 >
-> Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne sont pas utilisés. Une sauvegarde de ces comptes peut s'avérer nécessaire. Au besoin, consultez le guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
+> Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne sont pas utilisés. Une sauvegarde de ces comptes peut s'avérer nécessaire. Au besoin, consultez le guide [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration) qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à supprimer, puis cliquez sur `Réinitialiser ce compte`{.action}.
 
@@ -123,7 +120,7 @@ Réalisez cette étape autant de fois que nécessaire, selon le nombre de compte
 
 Accédez à la page « [Connexion au webmail](https://www.ovh.com/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](../utilisation-roundcube/){.external} ».
+Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail OWA, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](/pages/web/emails/email_roundcube){.external} ».
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -133,7 +130,7 @@ Pour consulter vos e-mails depuis un logiciel de messagerie, référez-vous la r
 
 > [!warning]
 >
-> Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne sont pas utilisés. Une sauvegarde de ces comptes peut s'avérer nécessaire. Au besoin, consultez le guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
+> Avant de supprimer des comptes e-mail, assurez-vous qu'ils ne sont pas utilisés. Une sauvegarde de ces comptes peut s'avérer nécessaire. Au besoin, consultez le guide [Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration) qui vous décrira comment exporter les données d'un compte depuis votre espace client ou un logiciel de messagerie.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à supprimer, puis cliquez sur `Supprimer le compte`{.action}
 
@@ -146,24 +143,24 @@ Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un sm
 > [!tabs]
 > **Windows**
 >>
->> - [Courrier sur Windows 10](https://docs.ovh.com/fr/emails/configuration-courrier-sur-windows-10/)
->> - [Outlook](https://docs.ovh.com/fr/emails/configuration-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/fr/emails/configuration-email-configuration-pour-thunderbird/)
+>> - [Courrier sur Windows 10](/pages/web/emails/how_to_configure_windows_10)
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>
 > **Apple**
 >>
->> - [Mail de macOS](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/)
->> - [Mail pour iPhone ou iPad](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/)
->> - [Outlook Mac OS](https://docs.ovh.com/fr/emails/configuration-outlook-2016-mac/)
->> - [Thunderbird](https://docs.ovh.com/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/)
+>> - [Mail de macOS](/pages/web/emails/how_to_configure_mail_macos)
+>> - [Mail pour iPhone ou iPad](/pages/web/emails/how_to_configure_ios)
+>> - [Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016-mac/)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac)
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/fr/emails/configuration-android-6/)
+>> - [Android](/pages/web/emails/how_to_configure_android)
 >>
 > **Autre**
 >>
->> - [Interface Gmail](https://docs.ovh.com/fr/emails/mail-mutualise-guide-configuration-dun-e-mail-mutualise-ovh-sur-linterface-de-gmail/)
+>> - [Interface Gmail](/pages/web/emails/how_to_configure_gmail)
 >>
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
@@ -186,7 +183,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](../) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
+> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/fr/emails/) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 >
 
 ## Aller plus loin

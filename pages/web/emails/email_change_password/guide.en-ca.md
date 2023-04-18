@@ -1,9 +1,6 @@
 ---
 title: "Changing the password of an email account"
-slug: changing-email-address-password
 excerpt: "Find out how to change the password for an OVHcloud email account"
-section: Getting started
-order: 03
 updated: 2023-01-03
 ---
 
@@ -87,7 +84,7 @@ In the new window that opens, enter your current password first. Then enter your
 
 ## Go further
 
-[Getting started with the MX Plan solution](https://docs.ovh.com/ca/en/emails/web_hosting_an_overview_of_ovh_email/)
+[Getting started with the MX Plan solution](/pages/web/emails/email_generalities)
 
 [Getting started with the Hosted Exchange solution](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/configuring-exchange/)
 

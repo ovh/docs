@@ -1,11 +1,8 @@
 ---
 title: Configurar HYCU Backup (EN)
-slug: hycu-backup
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/hycu-backup/'
+    canonical: '/pages/cloud/nutanix/40-hycu-backup'
 excerpt: Installing HYCU Backup on a Nutanix cluster
-section: Backups
-order: 01
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Backups
@@ -34,7 +31,7 @@ HYCU for Nutanix is a backup software available for Nutanix.
 - You must be connected to the cluster via Prism Central. 
 - A Public Cloud project with a High Performance Object Storage type storage bucket, with a user with read and write permissions for this bucket. You can find more information on how to create a Public Cloud project and how to use the High Performance Object Storage service on the following pages:
     - [Creating your first OVHcloud Public Cloud project](https://docs.ovh.com/us/es/public-cloud/crear_su_primer_proyecto_de_public_cloud/)
-    - [Getting started with S3 High Performance](https://docs.ovh.com/us/es/storage/object-storage/s3/getting-started-with-object-storage/).
+    - [Getting started with S3 High Performance](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage).
 - 60 GB of storage, 8 GB of memory and 8 cores on your Nutanix Cluster.
 
 ## Instructions
@@ -665,7 +662,7 @@ The database is restored into a new database.
 
 ## Go further <a name="gofurther"></a>
 
-[Nutanix Hyper-Convergence](https://docs.ovh.com/us/es/nutanix/nutanix-hci/)
+[Nutanix Hyper-Convergence](/pages/cloud/nutanix/03-nutanix-hci)
 
 [HYCU Home Page](https://www.hycu.com/)
 

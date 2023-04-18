@@ -1,11 +1,8 @@
 ---
 title: Zmiana vRack klastra Nutanix (EN)
-slug: nutanix-change-vrack
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-change-vrack/'
+    canonical: '/pages/cloud/nutanix/26-change-vrack-postinstall'
 excerpt: Find out how to change the Nutanix cluster vRack
-section: Sieć i bezpieczeństwo
-order: 06
 updated: 2022-01-11
 ---
 

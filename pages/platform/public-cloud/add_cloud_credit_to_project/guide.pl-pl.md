@@ -1,9 +1,6 @@
 ---
 title: 'Korzystanie z vouchera'
-slug: korzystanie-z-vouchera
 excerpt: 'Dowiedz się, jak dodać zasilenie lub vouchery do Twojego projektu Public Cloud'
-section: 'Informacje wprowadzające'
-order: 3
 updated: 2022-02-04
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-02-04
 
 ## Wprowadzenie
 
-Opcja zasilenia konta cloud pozwala na przyznanie określonej kwoty na Twój projekt Public Cloud, który będzie służył jako domyślna metoda płatności przy [rozliczaniu projektu](../analizowanie_platnosci_i_zarzadzanie_nimi/).<br>
+Opcja zasilenia konta cloud pozwala na przyznanie określonej kwoty na Twój projekt Public Cloud, który będzie służył jako domyślna metoda płatności przy [rozliczaniu projektu](/pages/platform/public-cloud/analyze_billing).<br>
 Oznacza to, że wszystkie zobowiązania z tytułu zasilenia konta cloud zostaną opłacone za pomocą innych dostępnych środków płatniczych. Więcej informacji na ten temat znajdziesz w [przewodnikach dotyczących płatności za usługę Public Cloud](https://docs.ovh.com/pl/billing/).
 
 **Z tego przewodnika dowiesz się, jak zasilić konto Public Cloud za pomocą vouchera lub poprzez wygenerowanie zamówienia.**

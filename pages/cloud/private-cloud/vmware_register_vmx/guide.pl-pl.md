@@ -1,9 +1,6 @@
 ---
 title: Rekord VM na nowym PCC
-slug: vsphere-register-vm-vmx
 excerpt: Dowiedz się, jak ponownie zarejestrować wirtualne maszyny w nowej usłudze w starych datastore
-section: Funkcjonalności VMware vSphere
-order: 07
 updated: 2021-03-24
 ---
 
@@ -27,7 +24,7 @@ W wyniku incydentu wirtualne maszyny nie wyświetlają się już w katalogu vSph
 
 ## W praktyce
 
-W [interfejsie vSphere](../polaczenie-interfejs-vsphere/) umieść widok `Storage`{.action}.
+W [interfejsie vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion) umieść widok `Storage`{.action}.
 
 ![przestrzeń dyskowa](images/register-vmx-01.png){.thumbnail}
 
@@ -45,7 +42,7 @@ Uzupełnij wymagane informacje i kliknij `Finish`{.action}.
 
 Te same operacje są powtarzane na każdym datastore i dla każdej VM do ponownego zapisywania.
 
-Sprawdź parametry swoich wirtualnych maszyn (nazwa, [portgroup](../creation-vlan/), itp..) klikając prawym przyciskiem myszy na każdym z nich, a następnie wybierając `Edit Settings`{.action}.
+Sprawdź parametry swoich wirtualnych maszyn (nazwa, [portgroup](/pages/cloud/private-cloud/creation_vlan), itp..) klikając prawym przyciskiem myszy na każdym z nich, a następnie wybierając `Edit Settings`{.action}.
 
 ![zmień ustawienia](images/register-vmx-06.png){.thumbnail}
 

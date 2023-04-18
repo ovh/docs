@@ -1,8 +1,6 @@
 ---
 title: 'Deploying a blue-green infrastructure'
-slug: blue-green
 excerpt: 'This guide will show you how to deploy a blue-green infrastructure with the OVH Load Balancer'
-section: 'Use case'
 updated: 2019-02-25
 ---
 
@@ -58,7 +56,7 @@ The diagram below gives a general idea of the architecture:
 
 ### Infrastructure A.
 
-This infrastructure is made up of a server farm that will later be associated with a front-end of your IP Load Balancer. This farm will expose an HTTP, TCP or UDP service to the front-end. It also balances loads by sending the front-end’s incoming traffic to the servers. For more detail on the role of various component of the OVH Load Balancer service, you can read the following guide: [Introduction to the OVH Load Balancer](../loadbalancer-introduction/).
+This infrastructure is made up of a server farm that will later be associated with a front-end of your IP Load Balancer. This farm will expose an HTTP, TCP or UDP service to the front-end. It also balances loads by sending the front-end’s incoming traffic to the servers. For more detail on the role of various component of the OVH Load Balancer service, you can read the following guide: [Introduction to the OVH Load Balancer](/pages/cloud/load_balancer/use_presentation).
 
 In our scenario, we will declare a farm of servers for the HTTP service. Please note that you can create as many farms (as well as TCP and/or UDP services) as are required for your final service to be exposed to your customers.
 

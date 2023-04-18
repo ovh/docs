@@ -1,8 +1,5 @@
 ---
 title: All you have to know about the Logstash Collector on Logs Data Platform!
-slug: logstash-input
-order: 1
-section: Features
 updated: 2021-07-30
 ---
 
@@ -16,7 +13,7 @@ This guide will demonstrate how to deploy a personalized Logstash having a speci
 
 ## Requirements
 
-If you are new to Logs Data Platform, completion of the [Quick Start Tutorial](../quick-start){.ref} is highly recommended.
+If you are new to Logs Data Platform, completion of the [Quick Start Tutorial](/pages/platform/logs-data-platform/quick_start){.ref} is highly recommended.
 
 The following links can help you get a headstart on Logstash in order to get started with the basics:
 
@@ -124,7 +121,7 @@ To host this collector in the Logs Data Platform, you will need to configure it 
 - Fill the main port of your input. We need to know which port you will use in your input configuration. We will put **4000** for now. This is also a setting you can change later.
 - If you want to restrict the Logstash to specific IP Adresses, you can use the **Trusted Networks** field to firewall your instances. Add every IP Adress or subnet you want to allow, separated by comma. Leave it empty to allow any IP to contact it. Your collector will have a public IP Adress, you can use this feature to prevent people to send you false information in it.
 - Select one of the stream you have to attach this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream.
-- Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](../twitter){.ref}).
+- Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](/pages/platform/logs-data-platform/twitter){.ref}).
 
 ![logstash_creation](images/logstash_created.png){.thumbnail}
 
@@ -361,7 +358,7 @@ Here are some links to help you go further with Logstash
 
 - [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html){.external}
 - [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html){.external}
-- [Logstash + Groks + Filebeat = Awesome](../filebeat-logs){.ref}
+- [Logstash + Groks + Filebeat = Awesome](/pages/platform/logs-data-platform/filebeat_logs){.ref}
 - [Grok Constructor](http://grokconstructor.appspot.com/do/match){.external}
 - [A Ruby regular expression editor](https://rubular.com/){.external}
 
@@ -369,7 +366,7 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/ca/fr/logs-data-platform/){.ref}
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

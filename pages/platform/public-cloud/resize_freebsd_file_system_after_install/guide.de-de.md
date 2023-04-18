@@ -1,8 +1,6 @@
 ---
 title: Dateisystem auf FreeBSD 12 anpassen
-slug: freebsd-12-datei-skalieren
 excerpt: Erfahren Sie hier, wie Sie das Dateisystem einer Public Cloud Instanz oder eines VPS unter FreeBSD 12 anpassen
-section: Tutorials
 updated: 2020-10-27
 ---
 
@@ -19,7 +17,7 @@ In dieser Anleitung erfahren Sie, wie Sie Ihr Dateisystem nach der Installation 
 ## Voraussetzungen
 
 - Sie haben eine Instanz mit FreeBSD 12 in Ihrem [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) oder einen [VPS](https://www.ovhcloud.com/de/vps/) mit FreeBSD 12
-- Sie haben die Instanz / den VPS kürzlich installiert oder [angepasst](../nderung_der_groe_einer_instanz/)
+- Sie haben die Instanz / den VPS kürzlich installiert oder [angepasst](/pages/platform/public-cloud/resize_of_an_instance)
 
 > [!primary]
 >

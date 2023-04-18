@@ -1,10 +1,7 @@
 ---
 title: 'Utiliser le SSL Gateway'
-slug: utiliser-le-ssl-gateway
 legacy_guide_number: 2370
 excerpt: 'Sécurisez les connexions vers votre site web'
-section: Utilisation
-order: 01
 updated: 2022-12-01
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: 'Alterar a palavra-passe de um utilizador OpenStack no Horizon'
 excerpt: 'Saiba como alterar uma palavra-passe de utilizador na interface Horizon'
-slug: alteracao-da-palavra-passe-de-um-utilizador-openstack
-section: Gestão a partir do Horizon
 updated: 2018-03-07
 ---
 
@@ -11,7 +9,7 @@ updated: 2018-03-07
 
 ## Sumário
 
-No guia [Criar um acesso à interface Horizon](https://docs.ovh.com/pt/public-cloud/horizon/){.external}, explica-se como criar e eliminar um utilizador OpenStack e gerir uma palavra-passe de acesso.
+No guia [Criar um acesso à interface Horizon](/pages/platform/public-cloud/introducing_horizon){.external}, explica-se como criar e eliminar um utilizador OpenStack e gerir uma palavra-passe de acesso.
 
 Com a ajuda da interface Horizon, é possível definir uma palavra-passe para cada utilizador. Atenção: a alteração da palavra-passe de uma conta de utilizador implica a anulação dos ID ativos no momento da modificação.
 

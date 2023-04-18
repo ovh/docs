@@ -1,8 +1,5 @@
 ---
 title: FAQ VPS OVHcloud
-slug: vps-faq
-section: 'Erste Schritte'
-order: 2
 updated: 2022-05-05
 ---
 
@@ -68,7 +65,7 @@ Wenn Sie garantierte Ressourcen ohne Kenntnisse in der Serveradministration nutz
 Die Verbindung zu Ihrem VPS muss per SSH hergestellt werden. Hierfür verwenden Sie die IP Adresse, den Benutzernamen und das Passwort, die Ihnen per E-Mail nach der Bestellung zugesandt werden.<br>
 Verwenden Sie die Anwendung PuTTY von einem Windows-Rechner aus. Über einen Linux-Rechner kann die SSH-Verbindung direkt über Terminal hergestellt werden.
 
-Alle Details finden Sie in "[Erste Schritte mit einem VPS](../erste-schritte-mit-einem-vps/)".
+Alle Details finden Sie in "[Erste Schritte mit einem VPS](/pages/cloud/vps/starting_with_a_vps)".
 
 ### Kann ich mehrere Websites auf einem VPS hosten?
 
@@ -82,7 +79,7 @@ Sie können hierzu folgende Dienstoptionen verwenden: das manuelle Backup (Snaps
 ### Wie kann ich meinen VPS schützen?
 
 Ein VPS wird im "Rohzustand" ausgeliefert, in dem keine Sicherheitskonfiguration vorhanden ist. Die Absicherung des VPS sollte daher Priorität haben.
-Lesen Sie hierzu die Anleitung "[VPS absichern](../vps-sicherheit/)".
+Lesen Sie hierzu die Anleitung "[VPS absichern](/pages/cloud/vps/secure_your_vps)".
 
 ### Welche Bandbreite ist meinem VPS zugewiesen? Ist sie garantiert?
 

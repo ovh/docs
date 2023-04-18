@@ -1,9 +1,6 @@
 ---
 title: 'Crear reglas de la bandeja de entrada en OWA'
-slug: crear-reglas-de-bandeja-de-entrada-en-owa
 excerpt: 'Cómo crear redirecciones y filtros de correo electrónico con OWA'
-section: 'Uso de Outlook Web Application (OWA)'
-order: 05
 updated: 2020-03-11
 ---
 
@@ -104,10 +101,10 @@ Tenga en cuenta que no es posible declarar falsos positivos de correo no deseado
 
 ## Más información
 
-[Crear respuestas automáticas en OWA](../exchange_2016_crear_un_contestador_con_el_webmail_owa/)
+[Crear respuestas automáticas en OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
+[Compartir calendarios en OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Usar Outlook Web App con una cuenta de correo electrónico](../exchange_2016_guia_de_uso_de_outlook_web_app/)
+[Usar Outlook Web App con una cuenta de correo electrónico](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

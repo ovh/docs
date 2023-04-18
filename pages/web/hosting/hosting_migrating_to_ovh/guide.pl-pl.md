@@ -1,9 +1,6 @@
 ---
 title: Przeniesienie strony WWW i kont e-mail do OVHcloud
-slug: przeniesienie-strony-www-do-ovh
 excerpt: "Dowiedz się, jak migrować Twoją stronę WWW, konta e-mail i domenę do OVHcloud bez przerwy w dostępności usług"
-section: Pierwsze kroki
-order: 08
 updated: 2022-11-24
 ---
 
@@ -81,14 +78,14 @@ Po zatwierdzeniu płatności rozpocznie się instalacja hostingu. Na adres e-mai
 
 ### Etap 2: utworzyć i wstępnie skonfigurować strefę DNS dla Twojej domeny w OVHcloud <a name="step2"></a>
 
-Po utworzeniu hostingu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie utwórz strefę DNS dla Twojej domeny **bez wpisywania jej na listę "www"**. Zapoznaj się z naszym przewodnikiem [dotyczącym tworzenia strefy DNS w OVHcloud](https://docs.ovh.com/pl/domains/utworzenie_strefy_dns_dla_zewnetrznej_domeny/).
+Po utworzeniu hostingu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie utwórz strefę DNS dla Twojej domeny **bez wpisywania jej na listę "www"**. Zapoznaj się z naszym przewodnikiem [dotyczącym tworzenia strefy DNS w OVHcloud](/pages/web/domains/dns_zone_create).
 
-Po utworzeniu strefy DNS zaloguj się do jej zarządzania, korzystając z naszego przewodnika "[Edycja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/)". Jeśli nie są obecne, wprowadź następujące wpisy:
+Po utworzeniu strefy DNS zaloguj się do jej zarządzania, korzystając z naszego przewodnika "[Edycja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit)". Jeśli nie są obecne, wprowadź następujące wpisy:
 
 - Twoja domena bez "www", do celu typu "MX": "mx1.mail.ovh.net.".
 - Twoja domena bez "www", do celu typu "MX": "mx2.mail.ovh.net.".
 - Twoja domena bez "www", do celu typu "MX": "mx3.mail.ovh.net.".
-- Twoja domena bez "www" na adres IP "A" na hostingu OVHcloud. Aby uzyskać poprawny adres IP, zapoznaj się z naszym przewodnikiem dotyczącym adresów IP [IP różnych klastrów hostingowych](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/).
+- Twoja domena bez "www" na adres IP "A" na hostingu OVHcloud. Aby uzyskać poprawny adres IP, zapoznaj się z naszym przewodnikiem dotyczącym adresów IP [IP różnych klastrów hostingowych](/pages/web/hosting/clusters_and_shared_hosting_IP).
 - Twoja domena **z** z "www", do Twojej domeny bez "www", przy użyciu wpisu typu "CNAME".
 
 **Przykład**: W przypadku domeny "domain.tld" należy podać następujący tekst:
@@ -110,13 +107,13 @@ Operacje te wykonywane są wyłącznie na dotychczasowym hostingu. Skontaktuj si
 
 ### Etap 4: zaimportować kopię zapasową Twojej strony WWW do hostingu OVHcloud <a name="step4"></a>
 
-Aby zaimportować kopię zapasową przestrzeni dyskowej FTP poprzedniego dostawcy, [zaloguj się do przestrzeni FTP Twojego hostingu OVHcloud](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) i przesłać kopię zapasową do katalogu głównego "www" (lub innego katalogu głównego, który wcześniej utworzyłeś).
+Aby zaimportować kopię zapasową przestrzeni dyskowej FTP poprzedniego dostawcy, [zaloguj się do przestrzeni FTP Twojego hostingu OVHcloud](/pages/web/hosting/ftp_connection) i przesłać kopię zapasową do katalogu głównego "www" (lub innego katalogu głównego, który wcześniej utworzyłeś).
 
-Zalecamy użycie programu [FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/) do pobrania kopii zapasowej FTP z Twojego hostingu.
+Zalecamy użycie programu [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) do pobrania kopii zapasowej FTP z Twojego hostingu.
 
 Jeśli Twój plik kopii zapasowej jest skompresowany (zaznaczony), rozpakuj go na komputerze przed przesłaniem plików na hosting OVHcloud.
 
-Do tworzenia kopii zapasowej bazy danych [utwórz nową bazę danych](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/), a następnie [zaimportuj kopię zapasową do nowej bazy danych](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/).
+Do tworzenia kopii zapasowej bazy danych [utwórz nową bazę danych](/pages/web/hosting/sql_create_database), a następnie [zaimportuj kopię zapasową do nowej bazy danych](/pages/web/hosting/sql_importing_mysql_database).
 
 > [!primary]
 >
@@ -128,10 +125,10 @@ W tym celu zastąp dane do logowania do starej bazy danych informacjami pochodz�
 
 > [!success]
 >
-> Aby połączyć nową bazę danych, jeśli korzystasz z Content Management System (CMS), takiego jak WordPress, Joomla!, Drupal lub PrestaShop, znajdziesz informacje dotyczące plików konfiguracyjnych w pliku konfiguracyjnym w **etap 4** w przewodniku ["zmiana hasła do bazy danych"](https://docs.ovh.com/pl/hosting/zmiana-hasla-do-bazy-danych/).
+> Aby połączyć nową bazę danych, jeśli korzystasz z Content Management System (CMS), takiego jak WordPress, Joomla!, Drupal lub PrestaShop, znajdziesz informacje dotyczące plików konfiguracyjnych w pliku konfiguracyjnym w **etap 4** w przewodniku ["zmiana hasła do bazy danych"](/pages/web/hosting/sql_change_password).
 >
 
-Zarządzaj zewnętrzną domeną na hostingu OVHcloud za pomocą naszego przewodnika "[zarządzanie stronami podpiętymi w opcji MultiSite](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/)". Proszę podać nazwę katalogu głównego wybranego na początku [etap 4](#step4). Przypominamy, że jest to folder, w którym umieściłeś pliki na przestrzeni FTP.
+Zarządzaj zewnętrzną domeną na hostingu OVHcloud za pomocą naszego przewodnika "[zarządzanie stronami podpiętymi w opcji MultiSite](/pages/web/hosting/multisites_configure_multisite)". Proszę podać nazwę katalogu głównego wybranego na początku [etap 4](#step4). Przypominamy, że jest to folder, w którym umieściłeś pliki na przestrzeni FTP.
 
 > [!warning]
 >
@@ -154,12 +151,12 @@ Po propagacji DNS stroną, która będzie się wyświetlać z Twoją domeną, b�
 
 ### Etap 5: stwórz konta e-mail w identyczny sposób w OVHcloud <a name="step5"></a>
 
-Skorzystaj z naszego przewodnika dotyczącego [tworzenia kont e-mail "MX Plan"](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/) i przypisz do konta e-mail hostowane u Twojego dostawcy.
+Skorzystaj z naszego przewodnika dotyczącego [tworzenia kont e-mail "MX Plan"](/pages/web/emails/email_creation) i przypisz do konta e-mail hostowane u Twojego dostawcy.
 
 Jeśli wybrałeś rozwiązanie "Email Pro" lub "Exchange", zapoznaj się z naszą dokumentacją dotyczącą tworzenia kont e-mail:
 
-- Dla "Email-Pro": <https://docs.ovh.com/pl/emails-pro/pierwsza-konfiguracja-email-pro/>
-- W przypadku "Exchange": <https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_pierwsza_konfiguracja_uslugi/>
+- Dla "Email-Pro": </pages/web/emails-pro/first_config>
+- W przypadku "Exchange": </pages/web/microsoft-collaborative-solutions/exchange_starting_hosted>
 
 ### Etap 6: zadeklarować serwery e-mail OVHcloud w strefie DNS domeny <a name="step6"></a>
 
@@ -185,7 +182,7 @@ Po propagacji DNS, wszystkie nowe e-maile są otrzymywane z nowych adresów e-ma
 
 Aby przenieść zawartość poprzednich kont, masz do wyboru dwie opcje.
 
-**Wariant 1**: użyj naszego narzędzia [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}, które pozwala na skopiowanie zawartości kont e-mail zarejestrowanych u dotychczasowego operatora do kont stworzonych w OVHcloud. Zapoznaj się z naszym przewodnikiem "[Przeniesienie kont e-mail poprzez OVH Mail Migrator](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/)".
+**Wariant 1**: użyj naszego narzędzia [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external}, które pozwala na skopiowanie zawartości kont e-mail zarejestrowanych u dotychczasowego operatora do kont stworzonych w OVHcloud. Zapoznaj się z naszym przewodnikiem "[Przeniesienie kont e-mail poprzez OVH Mail Migrator](/pages/web/microsoft-collaborative-solutions/migration_omm)".
 
 Zalecamy nie używać `Typ serwera`{.action} **POP** w części `Konto źródłowe`{.action}. Protokół usuwa e-maile ze starego serwera i wysyła je do docelowego serwera OVHcloud. Nie będziesz już mógł porównać zawartości starego adresu i nowego konta e-mail.
 
@@ -210,7 +207,7 @@ Po zakończeniu migracji Twoich poprzednich kont e-mail do OVHcloud możesz pono
 
 #### Dla kont e-mail "MX Plan": 
 
-- Wszystkie parametry konfiguracji znajdziesz w naszym przewodniku "[Informacje ogólne na temat e-maili MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/#2-skorzystaj-z-wybranego-programu)". Znajdziesz tam również linki do przewodników dotyczących konfiguracji dla głównych programów pocztowych.
+- Wszystkie parametry konfiguracji znajdziesz w naszym przewodniku "[Informacje ogólne na temat e-maili MX Plan](/pages/web/emails/email_generalities#2-skorzystaj-z-wybranego-programu)". Znajdziesz tam również linki do przewodników dotyczących konfiguracji dla głównych programów pocztowych.
 
 #### Dla kont "Email-Pro":
 
@@ -236,21 +233,21 @@ Zastąp aktualne serwery DNS Twojej domeny dwoma serwerami DNS zadeklarowanymi w
 Po zakończeniu propagacji DNS przetestuj Twoją stronę WWW i sprawdź wysyłkę i odbiór e-maili z Twoich kont e-mail.
 Jeśli wszystko jest w porządku, odblokuj domenę i pobierz jej "kod transferu", "EPP" lub "AuthCode" z dotychczasowego operatora.
 
-Przenieś domenę w naszym przewodniku dotyczącym [transferu domeny do OVHcloud](https://docs.ovh.com/pl/domains/przeniesienie-domeny-globalnej/).
+Przenieś domenę w naszym przewodniku dotyczącym [transferu domeny do OVHcloud](/pages/web/domains/transfer_incoming_generic_domain).
 
 Po zakończeniu transferu danych i usług zrezygnuj ze starych usług u poprzedniego dostawcy.
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Informacje ogólne na temat e-maili na hostingu](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/).
+[Informacje ogólne na temat e-maili na hostingu](/pages/web/emails/email_generalities).
 
-[Informacje ogólne na temat serwerów DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/).
+[Informacje ogólne na temat serwerów DNS](/pages/web/domains/dns_server_general_information).
 
-[Tworzenie konta e-mail na hostingu](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/).
+[Tworzenie konta e-mail na hostingu](/pages/web/emails/email_creation).
 
-[Import bazy danych MySQL](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/)
+[Import bazy danych MySQL](/pages/web/hosting/sql_importing_mysql_database)
 
-[Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/).
+[Zarządzanie bazą danych na hostingu](/pages/web/hosting/sql_create_database).
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

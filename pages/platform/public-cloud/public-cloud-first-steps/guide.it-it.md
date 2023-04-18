@@ -1,9 +1,6 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
-slug: primi-passi-public-cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-section: Per iniziare
-order: 1
 updated: 2023-01-26
 ---
 
@@ -146,7 +143,7 @@ A prescindere dal metodo utilizzato per creare le chiavi SSH, ora disponi di una
 
 > [!primary]
 >
-Le chiavi SSH salvate ti consentono di creare più rapidamente le tue istanze. Per cambiare le coppie di chiavi e aggiungere utenti in un secondo momento, consulta la guida [Configura chiavi SSH aggiuntive](../configura_chiavi_ssh_aggiuntive).
+Le chiavi SSH salvate ti consentono di creare più rapidamente le tue istanze. Per cambiare le coppie di chiavi e aggiungere utenti in un secondo momento, consulta la guida [Configura chiavi SSH aggiuntive](/pages/platform/public-cloud/configuring_additional_ssh_keys).
 >
 
 Accedi allo Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. A questo punto clicca su `Chiavi SSH`{.action} nella barra di navigazione a sinistra sotto alla voce “Project Management”.
@@ -245,12 +242,12 @@ Un utente con privilegi elevati viene creato automaticamente sull’istanza. Il 
 
 > [!primary]
 >
-In caso di problemi di connessione, ad esempio errori relativi alle chiavi SSH, consulta la guida[Sostituisci la tua chiave SSH in caso di perdita](../sostituisci_la_tua_chiave_ssh_in_caso_di_perdita/).
+In caso di problemi di connessione, ad esempio errori relativi alle chiavi SSH, consulta la guida[Sostituisci la tua chiave SSH in caso di perdita](/pages/platform/public-cloud/replacing_lost_ssh_key).
 >
 
 > [!primary]
 >
-Se hai creato un'istanza senza chiave SSH tramite l'API OVHcloud o l'interfaccia Openstack Horizon, puoi aggiungere una chiave SSH alla tua istanza solo attraverso [modalità rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/), seguendo le istruzioni descritte in [questa sezione della guida appropriata](../sostituisci_la_tua_chiave_ssh_in_caso_di_perdita/#procedura).
+Se hai creato un'istanza senza chiave SSH tramite l'API OVHcloud o l'interfaccia Openstack Horizon, puoi aggiungere una chiave SSH alla tua istanza solo attraverso [modalità rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode), seguendo le istruzioni descritte in [questa sezione della guida appropriata](/pages/platform/public-cloud/replacing_lost_ssh_key#procedura).
 >
 
 #### Connettersi a un’istanza Linux da Linux/Mac
@@ -356,12 +353,12 @@ Se visualizzi un messaggio relativo al certificato, clicca su `Sì`{.action}. Qu
 
 ## Per saperne di più
 
-[Effettuare lo Snapshot di un’istanza](../effettuare-snapshot-di-un-istanza/)
+[Effettuare lo Snapshot di un’istanza](/pages/platform/public-cloud/save_an_instance)
 
-[Aumenta la quota del tuo Public Cloud](../increase-public-cloud-quota/)
+[Aumenta la quota del tuo Public Cloud](/pages/platform/public-cloud/increasing_public_cloud_quota)
 
-[Passare dalla fatturazione oraria a quella mensile](../cambiare-tipo-fatturazione-public-cloud/)
+[Passare dalla fatturazione oraria a quella mensile](/pages/platform/public-cloud/changing_hourly_monthly_billing)
 
-[Configurare chiavi SSH aggiuntive](../configura_chiavi_ssh_aggiuntive/)
+[Configurare chiavi SSH aggiuntive](/pages/platform/public-cloud/configuring_additional_ssh_keys)
 
 Partecipa alla nostra community di utenti all’indirizzo <https://community.ovh.com/en/>.

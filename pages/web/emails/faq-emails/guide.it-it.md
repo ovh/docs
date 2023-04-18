@@ -1,8 +1,5 @@
 ---
 title: FAQ email OVHcloud
-slug: faq-emails
-section: Per iniziare
-order: 07
 updated: 2020-05-05
 ---
 
@@ -22,16 +19,16 @@ Dopo aver inviato un’email sul tuo account email, ricevi un messaggio di error
 Puoi anche verificare che il tuo dominio consegni le e-mail al posto giusto. Per farlo, accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona la zona DNS del tuo dominio e consulta i record MX applicati. Questi record devono essere in questo formato “mx\*.mail.ovh.net.” (sostituisci l’asterisco * con una cifra tra 0 e 3).
 Se i record MX sono diversi, è possibile che tu disponga di un servizio di posta elettronica di un operatore diverso da OVHcloud.
 
-**Consigli e suggerimenti**: Se non riesci ad accedere alla tua Webmail, è probabile che la tua password sia errata. Verifica la tua password e, se necessario, modificala dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} prima di effettuare nuovamente il login. Per questa procedura, consulta la [nostra guida](../modificare-password-account-email-mxplan/).
+**Consigli e suggerimenti**: Se non riesci ad accedere alla tua Webmail, è probabile che la tua password sia errata. Verifica la tua password e, se necessario, modificala dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} prima di effettuare nuovamente il login. Per questa procedura, consulta la [nostra guida](/pages/web/emails/email_change_password).
 
 ### Come configurare il tuo indirizzo email e utilizzarlo con la Webmail? 
 
 È possibile configurare il tuo account email su un client di posta come Outlook, Thunderbird, Mail di Mac, ecc.
-Per seguire la procedura, puoi consultare le nostre guide disponibili [qui](../).
+Per seguire la procedura, puoi consultare le nostre guide disponibili [qui](/it/emails/).
 
 Attraverso la [Webmail](https://www.ovh.com/it/mail/){.external} è possibile accedere in qualsiasi momento alla tua casella di posta elettronica, da qualsiasi dispositivo connesso. Una volta creato il tuo account email, clicca qui per accedervi.
 
-**Consigli e suggerimenti**: Se configuri il tuo account email su un client di posta, ti consigliamo di configurarlo con il protocollo IMAP. In questo modo, le email rimarranno salvate sul server e potrai consultarle ovunque dalla [Webmail](https://www.ovh.it/mail/){.external}. Per conoscere la procedura, consulta [la nostra documentazione](../informazioni-generali-email-condivise/).
+**Consigli e suggerimenti**: Se configuri il tuo account email su un client di posta, ti consigliamo di configurarlo con il protocollo IMAP. In questo modo, le email rimarranno salvate sul server e potrai consultarle ovunque dalla [Webmail](https://www.ovh.it/mail/){.external}. Per conoscere la procedura, consulta [la nostra documentazione](/pages/web/emails/email_generalities).
 
 ### Come gestire i servizi di posta? 
 
@@ -49,7 +46,7 @@ Ti ricordiamo che in entrambi i casi è necessario inserire l’identificativo c
 Per limitare la ricezione di SPAM, è possibile impostare filtri sulle email (chiamati “Filtri” nella soluzione MX Plan), per eliminare o spostare email nella cartella “posta indesiderata” fin dal loro arrivo.
 Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Email` e seleziona il tuo dominio. Clicca sulla scheda `Email`{.action} e, nella colonna `Filtro`{.action}, clicca sul pulsante di azione.
 
-Se nello Spazio Cliente non è presente la colonna `Filtro`{.action}, è necessario creare i filtri seguendo le regole di gestione della posta in arrivo di [ Webmail](https://www.ovh.com/it/mail/){.external}. Per maggiori dettagli, consulta questa guida: [Regole della posta in arrivo dall’interfaccia OWA](../../microsoft-collaborative-solutions/creare-regole-posta-in-arrivo-in-owa/).
+Se nello Spazio Cliente non è presente la colonna `Filtro`{.action}, è necessario creare i filtri seguendo le regole di gestione della posta in arrivo di [ Webmail](https://www.ovh.com/it/mail/){.external}. Per maggiori dettagli, consulta questa guida: [Regole della posta in arrivo dall’interfaccia OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa).
 
 **Consigli e suggerimenti**: Se imposti un filtro sulla ricezione di SPAM, è probabile che alcune email legittime vengano considerate come SPAM. Queste email vengono chiamate “falsi positivi”. In tal caso, ti invitiamo a creare una richiesta di assistenza dal tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} per informarci. In questo modo potremo fare il necessario per fare in modo che queste email non vengano considerate come SPAM anche in futuro. 
 

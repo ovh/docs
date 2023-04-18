@@ -1,8 +1,6 @@
 ---
 title: 'Routing an Additional IP'
-slug: routing-foip
 excerpt: 'Find out how to route an Additional IP and link it to the OVH Load Balancer'
-section: Configuration
 updated: 2022-10-06
 ---
 
@@ -21,7 +19,7 @@ For more information on Additional IPs, you can consult our [webpage](https://ww
 
 The OVH Load Balancer solution offers load balancing features for a range of different protocols: HTTP, HTTPS, TCP and UDP. When you link it to an Additional IP, you can switch over your existing infrastructure to a Load Balancer without disturbing or interrupting services for your customers. Effectively, you will not need to change the IP address any longer if you are still using the Additional IP, so you will not need to wait for your DNS zone to propagate any changes.
 
-For more information on the OVH Load Balancer solution, you can read our [Introduction to the OVH Load Balancer](https://docs.ovh.com/sg/en/load-balancer/loadbalancer-introduction/){.external}.
+For more information on the OVH Load Balancer solution, you can read our [Introduction to the OVH Load Balancer](/pages/cloud/load_balancer/use_presentation){.external}.
 
 **This guide will explain how to use the Additional IP with the OVH Load Balancer service.**
 

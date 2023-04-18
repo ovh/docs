@@ -1,9 +1,6 @@
 ---
 title: 'Modyfikacja strefy DNS'
-slug: hosting_www_jak_edytowac_strefe_dns
 excerpt: 'Dowiedz się, jak edytować strefę DNS w Panelu klienta'
-section: 'DNS i strefa DNS'
-order: 03
 updated: 2022-07-07
 ---
 
@@ -23,7 +20,7 @@ Na przykład, jeśli chcesz uzyskać dostęp do strony *mojadomena.ovh*, Twoje z
 
 W związku z operacjami, które przeprowadzasz w Panelu klienta, ważne jest rozróżnienie **serwerów DNS** i **strefy DNS**. To na poziomie **serwera DNS** jest skonfigurowana **strefa DNS**. 
 
-Informacje dotyczące **serwerów DNS** oraz ich modyfikacja znajdziesz w przewodniku "[Zmiana serwerów DNS domeny OVHcloud](../hosting_www_informacje_na_temat_serwerow_dns/)".
+Informacje dotyczące **serwerów DNS** oraz ich modyfikacja znajdziesz w przewodniku "[Zmiana serwerów DNS domeny OVHcloud](/pages/web/domains/dns_server_general_information)".
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -124,7 +121,7 @@ Innymi słowy, rekord DNAME wskazuje, że *dname.mydomain.ovh* i *xxx.mydomain.o
 > Rejestracja DNAME jest zazwyczaj stosowana w przypadku zmiany nazwy firmy. Można go również uruchomić, jeśli użytkownik dysponuje kilkoma rozszerzeniami domen (.fr, .net, .com, .info, ...).
 >
 
-- **NS** (**N**ame **S**erver): Definiuje serwery DNS przypisane do strefy DNS. Na przykład, jeśli wpisy NS Twojej strefy DNS wyświetlają serwery *dns19.ovh.net* i *ns19.ovh.net*, użyj ich w zakładce `Serwery DNS`{.action} w Panelu klienta OVHcloud. Więcej informacji znajdziesz w przewodniku "[Zmiana serwerów DNS domeny OVHcloud](../hosting_www_informacje_na_temat_serwerow_dns/)".
+- **NS** (**N**ame **S**erver): Definiuje serwery DNS przypisane do strefy DNS. Na przykład, jeśli wpisy NS Twojej strefy DNS wyświetlają serwery *dns19.ovh.net* i *ns19.ovh.net*, użyj ich w zakładce `Serwery DNS`{.action} w Panelu klienta OVHcloud. Więcej informacji znajdziesz w przewodniku "[Zmiana serwerów DNS domeny OVHcloud](/pages/web/domains/dns_server_general_information)".
 
 > [!warning]
 >
@@ -133,7 +130,7 @@ Innymi słowy, rekord DNAME wskazuje, że *dname.mydomain.ovh* i *xxx.mydomain.o
 
 #### Zapisy e-mail
 
-- **MX** (**M**ail e**X**changer): Powiąż domenę z serwerem e-mail. Na przykład adres *10 mx1.mail.ovh.net* odpowiada jednemu z serwerów e-mail OVHcloud, gdy korzystasz z usługi e-mail OVHcloud. Istnieje prawdopodobieństwo, że Twój dostawca poczty e-mail dysponuje kilkoma serwerami e-mail: należy utworzyć kilka pól MX. Zapoznaj się z naszą dokumentacją "[Dodaj pole MX do konfiguracji domeny](../hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/)".
+- **MX** (**M**ail e**X**changer): Powiąż domenę z serwerem e-mail. Na przykład adres *10 mx1.mail.ovh.net* odpowiada jednemu z serwerów e-mail OVHcloud, gdy korzystasz z usługi e-mail OVHcloud. Istnieje prawdopodobieństwo, że Twój dostawca poczty e-mail dysponuje kilkoma serwerami e-mail: należy utworzyć kilka pól MX. Zapoznaj się z naszą dokumentacją "[Dodaj pole MX do konfiguracji domeny](/pages/web/domains/dns_zone_mx)".
 
 > [!warning]
 >
@@ -141,7 +138,7 @@ Innymi słowy, rekord DNAME wskazuje, że *dname.mydomain.ovh* i *xxx.mydomain.o
 > Jeśli dysponujesz już usługami e-mail u innego dostawcy i dodajesz jednocześnie (nie zastępując) serwery e-mail nowego dostawcy, istnieje ryzyko, że obie strony będą losowo otrzymywać e-maile od jednego lub kilku dostawców.
 > 
 
-- **SPF** (**S**ender **P**olicy **F**ramework): Pozwala zapobiegać przypadkom podszywania się pod adresy e-mail używające Twojej domeny (*spoofing*). Na przykład rejestracja `v=spf1 zawiera:mx.ovh.com ~all` wskazuje, że jedynie serwery poczty elektronicznej powiązane z Twoją ofertą mail OVHCloud mogą być uznane za zgodne z prawem przez serwer poczty przychodzącej. Możesz wprowadzić ten wpis w formie pola TXT lub w systemie automatycznej konfiguracji. Aby dowiedzieć się więcej, zapoznaj się z naszą dokumentacją "[Dodaj pole SPF do konfiguracji domeny](../uslugi_www_pole_spf/)".
+- **SPF** (**S**ender **P**olicy **F**ramework): Pozwala zapobiegać przypadkom podszywania się pod adresy e-mail używające Twojej domeny (*spoofing*). Na przykład rejestracja `v=spf1 zawiera:mx.ovh.com ~all` wskazuje, że jedynie serwery poczty elektronicznej powiązane z Twoją ofertą mail OVHCloud mogą być uznane za zgodne z prawem przez serwer poczty przychodzącej. Możesz wprowadzić ten wpis w formie pola TXT lub w systemie automatycznej konfiguracji. Aby dowiedzieć się więcej, zapoznaj się z naszą dokumentacją "[Dodaj pole SPF do konfiguracji domeny](/pages/web/domains/dns_zone_spf)".
 
 - **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Pozwala sprawdzić autentyczność domeny nadawcy i zapewnić integralność wysłanego e-maila. Wpis DKIM ma postać klucza składającego się z kilku znaków. Klucz DKIM jest dostarczany przez dostawcę poczty elektronicznej (jeśli jest on proponowany przez dostawcę). Możesz go podać w postaci pola TXT.
 
@@ -270,10 +267,10 @@ W związku z tym nie będziesz mógł utworzyć pola CNAME dla *subdomeny-mając
 
 ## Sprawdź również
 
-[Informacje na temat serwerów DNS](../hosting_www_informacje_na_temat_serwerow_dns/){.external}.
+[Informacje na temat serwerów DNS](/pages/web/domains/dns_server_general_information){.external}.
 
-[Dodawanie rekordu SPF podczas konfiguracji domeny](../uslugi_www_pole_spf/){.external}.
+[Dodawanie rekordu SPF podczas konfiguracji domeny](/pages/web/domains/dns_zone_spf){.external}.
 
-[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](../jak_skonfigurowac_strefe_dnssec_dla_domeny/){.external}.
+[Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](/pages/web/domains/dns_dnssec){.external}.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

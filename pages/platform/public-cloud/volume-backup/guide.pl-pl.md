@@ -1,9 +1,6 @@
 ---
 title: "Tworzenie kopii zapasowej wolumenu"
-slug: volume-backup
 excerpt: "Dowiedz się, jak utworzyć kopię zapasową wolumenu Block Storage w Panelu klienta"
-section: Przestrzeń dyskowa
-order: 3
 updated: 2023-03-29
 ---
 
@@ -35,7 +32,7 @@ Wolumen Snapshot oraz Backup Wolumenu pozwalają na:
 ## Wymagania początkowe
 
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Wolumen [Block storage](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/) utworzony w Twoim projekcie [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
+- Wolumen [Block storage](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) utworzony w Twoim projekcie [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
 
 ## W praktyce
 
@@ -43,7 +40,7 @@ Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Następnie otwórz menu `Block Storage`{.action} na pasku nawigacji po lewej stronie w **usłudze Storage**.
 
-Po prawej stronie wybranego wolumenu kliknij przycisk `...`{.action} a następnie `Utwórz kopię zapasową`{.action}. Nie ma potrzeby odłączania najpierw wolumenu od instancji. Jeśli jednak chcesz odłączyć wolumen od instancji, sprawdź tę [sekcję](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/#linux) odpowiedniego przewodnika dla systemu Linux i tę [sekcję](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/#windows) dla systemu Windows.
+Po prawej stronie wybranego wolumenu kliknij przycisk `...`{.action} a następnie `Utwórz kopię zapasową`{.action}. Nie ma potrzeby odłączania najpierw wolumenu od instancji. Jeśli jednak chcesz odłączyć wolumen od instancji, sprawdź tę [sekcję](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#linux) odpowiedniego przewodnika dla systemu Linux i tę [sekcję](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#windows) dla systemu Windows.
 
 ![Backup - tworzenie](images/volumebackup01.png){.thumbnail}
 
@@ -84,16 +81,16 @@ Po otrzymaniu wniosku o utworzenie wolumenu Backup zostaje on dodany do listy.
 
 Kliknij przycisk `...`{.action}, aby `usun`{.action} lub `Utwórz wolumen`{.action} na podstawie wolumenu Snapshot lub odpowiedniego wolumenu Backup.
 
-Więcej informacji na ten temat znajdziesz w [naszym przewodniku dotyczącym tworzenia wolumenu z kopii zapasowej](https://docs.ovh.com/pl/public-cloud/create-volume-from-backup/).
+Więcej informacji na ten temat znajdziesz w [naszym przewodniku dotyczącym tworzenia wolumenu z kopii zapasowej](/pages/platform/public-cloud/create-volume-from-snapshot).
 
 ![Tworzenie wolumenu z kopii zapasowej](images/volumebackup05.png){.thumbnail}
 
 ## Sprawdź również
 
-[Tworzenie wolumenu z kopii zapasowej](https://docs.ovh.com/pl/public-cloud/create-volume-from-backup/)
+[Tworzenie wolumenu z kopii zapasowej](/pages/platform/public-cloud/create-volume-from-snapshot)
 
-[Tworzenie i konfigurowanie dodatkowego dysku dla instancji](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)
+[Tworzenie i konfigurowanie dodatkowego dysku dla instancji](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
-[Zwiększ rozmiar dodatkowego dysku](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)
+[Zwiększ rozmiar dodatkowego dysku](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

@@ -1,11 +1,8 @@
 ---
 title: Eine VM klonen (EN)
-slug: eine-vm-klonen
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/clone-a-vm/'
+    canonical: '/pages/cloud/private-cloud/clone_a_vm'
 excerpt: Learn two ways to clone an existing virtual machine in vSphere
-section: Verwaltung virtueller Maschinen
-order: 07
 updated: 2022-01-12
 ---
 

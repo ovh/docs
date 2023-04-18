@@ -1,14 +1,11 @@
 ---
 title: SPN - Présentation du concept
-slug: secnumcloud-connectivity-spn-concept
 excerpt: 'Présentation du concept de SPN au sein de la solution SecNumCloud Connectivity'
-section: SecNumCloud Connectivity
-order: 02
 updated: 2022-10-10
 ---
 
 > [!primary]
-> Une version en langue anglaise de cette page est disponible [ici](https://docs.ovh.com/gb/en/network-ip/secnumcloud-connectivity-spn-concept/).
+> Une version en langue anglaise de cette page est disponible [ici](/pages/cloud/network-ip/snc-connectivity-concepts-spn).
 >
 
 **Dernière mise à jour le 10/10/2022**

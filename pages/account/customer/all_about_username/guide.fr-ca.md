@@ -1,9 +1,6 @@
 ---
 title: 'Sécuriser mon compte OVHcloud et gérer mes informations personnelles'
-slug: tout-savoir-sur-identifiant-client
 excerpt: "Découvrez comment optimiser la sécurité de votre compte OVHcloud, gérer vos informations personnelles et déléguer l'accès à votre compte."
-section: 'Premiers pas'
-order: 3
 updated: 2021-07-01
 ---
 
@@ -22,11 +19,11 @@ L'espace client OVHcloud vous permet aussi de gérer vos données personnelles e
 
 ## Prérequis
 
-- Avoir créé [votre compte OVHcloud](https://docs.ovh.com/ca/fr/customer/creer-compte-ovhcloud)
+- Avoir créé [votre compte OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 > [!primary]
-> En cas de difficultés de connexion à votre compte, consultez la partie « [Je ne parviens pas à me connecter](https://docs.ovh.com/ca/fr/customer/se-connecter-espace-client-ovhcloud/#login-failure) » de notre guide « [Se connecter à l'espace client OVHcloud](https://docs.ovh.com/ca/fr/customer/se-connecter-espace-client-ovhcloud/)».
+> En cas de difficultés de connexion à votre compte, consultez la partie « [Je ne parviens pas à me connecter](/pages/account/customer/ovhcloud-account-login#login-failure) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account/customer/ovhcloud-account-login)».
 >
 
 ## En pratique
@@ -45,11 +42,11 @@ Les bonnes pratiques listées ci-dessous sont à mettre en application dès la c
 
 La sécurité de vos services et données dépend de l'efficacité de votre mot de passe. Celui-ci doit être **complexe, unique et renouvelé régulièrement**.
 
-Retrouvez toutes nos recommandations sur les mots de passe sur notre guide « [Modifier le mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/) ».
+Retrouvez toutes nos recommandations sur les mots de passe sur notre guide « [Modifier le mot de passe de votre compte](/pages/account/customer/manage-ovh-password) ».
 
 #### Sauvegarder votre mot de passe
 
-Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gestionnaire de mots de passe](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#utiliser-un-gestionnaire-de-mots-de-passe).
+Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gestionnaire de mots de passe](/pages/account/customer/manage-ovh-password#utiliser-un-gestionnaire-de-mots-de-passe).
 
 > [!primary]
 > Les logiciels **Keepass** et **Bitwarden** sont des gestionnaires de mots de passe gratuits et libres de droits.
@@ -76,7 +73,7 @@ Cliquez alors, dans le cadre `Mon profil` sur le bouton `...`{.action} puis sur 
 
 La double authentification permet de renforcer la sécurité de votre compte OVHcloud.
 
-Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/) ».
+Vous trouverez tous les détails pour l'activer sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa) ».
 
 > [!primary]
 > L'activation de la double authentification sur votre compte OVHcloud est un prérequis obligatoire pour être en conformité avec [l'hébergement des données de santé en France (HDS)](https://www.ovhcloud.com/fr-ca/enterprise/certification-conformity/hds/).
@@ -153,22 +150,22 @@ Ainsi, non seulement votre propre accès au compte restera sécurisé par la dou
 
 En tant qu'utilisateur principal du compte, vous restez gestionnaire des utilisateurs et de leurs droits.
 
-Pour en savoir davantage, consultez le [guide sur la gestion des utilisateurs](https://docs.ovh.com/fr/customer/gestion-utilisateurs/).
+Pour en savoir davantage, consultez le [guide sur la gestion des utilisateurs](/pages/account/customer/ovhcloud-users-management).
 
 ## Que faire en cas de suspicion d'usurpation d'identité ?
 
-Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/#modifier-votre-mot-de-passe) et de [sécuriser celui-ci via une double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/).
+Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](/pages/account/customer/manage-ovh-password#modifier-votre-mot-de-passe) et de [sécuriser celui-ci via une double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 Si vous constatez une activité suspecte sur votre compte, [contactez le support OVHcloud](https://www.ovhcloud.com/fr-ca/contact/) afin que nos équipes vous assistent dans les démarches à entreprendre.
 
 ## Aller plus loin
 
-[Modifier le mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/)
+[Modifier le mot de passe de votre compte](/pages/account/customer/manage-ovh-password)
 
-[Sécuriser son compte OVHcloud avec la double authentification](https://docs.ovh.com/ca/fr/customer/securiser-son-compte-avec-une-2FA/)
+[Sécuriser son compte OVHcloud avec la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[Se connecter à l'espace client OVHcloud](https://docs.ovh.com/ca/fr/customer/se-connecter-espace-client-ovhcloud/)
+[Se connecter à l'espace client OVHcloud](/pages/account/customer/ovhcloud-account-login)
 
-[En cas d'échec de connexion à l'espace client](https://docs.ovh.com/ca/fr/customer/se-connecter-espace-client-ovhcloud/#login-failure)
+[En cas d'échec de connexion à l'espace client](/pages/account/customer/ovhcloud-account-login#login-failure)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -1,9 +1,6 @@
 ---
 title: 'Crear una cuenta de OVHcloud'
-slug: crear-cuenta-ovhcloud
 excerpt: 'Cómo crear una cuenta de OVHcloud'
-Section: 'Primeros pasos'
-order: 1
 updated: 2021-07-01
 ---
 
@@ -36,7 +33,7 @@ Para crear una cuenta de OVHcloud, acceda a [esta página](https://ca.ovh.com/au
 |---|---|
 |Nombre y apellidos|Introduzca aquí **imperativamente** un nombre y un nombre habituales.|
 |Correo|Introduzca una dirección de correo electrónico **válida a la que actualmente tiene acceso**.<br><br>Evite utilizar una dirección de correo electrónico asociada a un dominio que gestione desde el área de cliente. En caso de corte en este dominio, no recibiría nuestras notificaciones.|
-|Contraseña|Su contraseña debe ser única (creada y utilizada únicamente por su cuenta de OVHcloud) y ser suficientemente compleja.<br><br>Consulte los consejos de [nuestra guía sobre la gestión de la contraseña](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/#generar-una-contrasena-adecuada) para crear una contraseña eficaz.|
+|Contraseña|Su contraseña debe ser única (creada y utilizada únicamente por su cuenta de OVHcloud) y ser suficientemente compleja.<br><br>Consulte los consejos de [nuestra guía sobre la gestión de la contraseña](/pages/account/customer/manage-ovh-password#generar-una-contrasena-adecuada) para crear una contraseña eficaz.|
 
 Una vez completado el primer formulario, recibirá un código de uso único en la dirección de correo electrónico que haya introducido. Este código le permitirá validar su dirección de correo electrónico. Introdúzcalo en las casillas previstas a tal efecto.
 
@@ -77,14 +74,14 @@ Su ID de cliente se muestra en la parte superior derecha con su nombre y direcci
 
 ## Más información
 
-Una vez que haya creado su cuenta de OVHcloud, le recomendamos que siga nuestras [recomendaciones sobre la seguridad de su cuenta y la gestión de sus datos personales](https://docs.ovh.com/us/es/customer/todo-sobre-el-id-de-cliente/).
+Una vez que haya creado su cuenta de OVHcloud, le recomendamos que siga nuestras [recomendaciones sobre la seguridad de su cuenta y la gestión de sus datos personales](/pages/account/customer/all_about_username).
 
 Consulte también nuestras guías para:
 
-[Conectarse al área de cliente de OVHcloud](https://docs.ovh.com/us/es/customer/conectarse-area-de-cliente-ovhcloud)
+[Conectarse al área de cliente de OVHcloud](/pages/account/customer/ovhcloud-account-login)
 
-[Cambiar la contraseña de su cuenta de OVHcloud](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/)
+[Cambiar la contraseña de su cuenta de OVHcloud](/pages/account/customer/manage-ovh-password)
 
-[Proteger su cuenta de OVHcloud con la doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/)
+[Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

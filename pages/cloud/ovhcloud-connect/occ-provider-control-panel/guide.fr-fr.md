@@ -1,9 +1,6 @@
 ---
 title: Mise en service de OVHcloud Connect Provider depuis l’espace client OVHcloud
 excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Provider depuis votre espace client OVHcloud
-slug: occ-provider-manager-setup
-section: Premiers pas
-order: 3
 updated: 2020-09-28
 ---
 
@@ -18,7 +15,7 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 ## Prérequis
 
 > [!warning]
-> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/) et configurer vos équipements réseau en accord avec celles-ci.
+> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Connect](/pages/cloud/ovhcloud-connect/occ-limits) et configurer vos équipements réseau en accord avec celles-ci.
 >
 
 - Avoir commandé une [offre OVHcloud Connect Provider](https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/)

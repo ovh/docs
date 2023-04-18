@@ -1,10 +1,8 @@
 ---
 title: Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster
-slug: upgrading-kubernetes-version
 excerpt: 'Find out how to upgrade the Kubernetes version on an OVHcloud Managed Kubernetes cluster'
-section: User guides
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/upgrading-kubernetes-version/'
+    canonical: '/pages/platform/kubernetes-k8s/upgrading-kubernetes-version'
 updated: 2023-03-28
 ---
 
@@ -92,6 +90,6 @@ The upgrading process can take several minutes (around 5 minutes per node in you
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/de/public-cloud/kubernetes/).
 
-To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
+To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/de/kubernetes/).
 
 Join our [community of users](https://community.ovh.com/en/).

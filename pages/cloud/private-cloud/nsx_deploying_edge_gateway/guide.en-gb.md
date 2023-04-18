@@ -1,9 +1,6 @@
 ---
 title: How to deploy an NSX-v Edge Services Gateway
-slug: how-to-deploy-an-nsx-edge-gateway
 excerpt: Discover how to deploy an NSX-v Edge Services Gateway with the vSphere interface
-section: NSX-v
-order: 02
 updated: 2021-11-19
 ---
 

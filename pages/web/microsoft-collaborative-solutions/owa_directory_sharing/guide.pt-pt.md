@@ -1,9 +1,6 @@
 ---
 title: 'Partilhar uma pasta através do webmail OWA'
 excerpt: 'Saiba como partilhar pastas entre contas Exchange'
-slug: exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa
-section: 'Utilização do Outlook Web Application (OWA)'
-order: 04
 updated: 2020-04-07
 ---
 
@@ -101,11 +98,11 @@ Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/ma
 
 ## Saiba mais
 
-[Guia de utilização do Outlook Web App](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+[Guia de utilização do Outlook Web App](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Atribuir permissões a uma conta Exchange](../exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
+[Atribuir permissões a uma conta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Partilhar calendários em OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Partilhar calendários em OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
 

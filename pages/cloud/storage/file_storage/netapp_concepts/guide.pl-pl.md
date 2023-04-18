@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Koncepcje
-slug: netapp/concepts
 excerpt: "Sprawdź zasady działania oferty Enterprise File Storage"
-section: Enterprise File Storage
-order: 010
 updated: 2022-04-07
 ---
 
@@ -49,7 +46,7 @@ Możesz zamówić jedną lub kilka przestrzeni dyskowych między 1TiB i 29TiB na
 
 Po zamówieniu usługi Enterprise File Storage od 1 do 29 TB za pośrednictwem konta OVHcloud otrzymujesz pojemność NetApp&#174;.
 
-Konto OVHcloud jest domyślnie kontaktem administracyjnym, technicznym i księgowym dla usługi. Więcej informacji znajdziesz w naszym przewodniku ["Zarządzanie kontaktami swoich usług"](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+Konto OVHcloud jest domyślnie kontaktem administracyjnym, technicznym i księgowym dla usługi. Więcej informacji znajdziesz w naszym przewodniku ["Zarządzanie kontaktami swoich usług"](/pages/account/customer/managing_contacts).
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
@@ -75,7 +72,7 @@ Po uruchomieniu usługi Enterprise File Storage możesz utworzyć jeden lub kilk
 > - Wielkość wolumenu jest skalowalna, zarówno w górę, jak i w dół.
 >
 
-Więcej informacji znajdziesz w przewodniku ["Zarządzanie wolumenami"](https://docs.ovh.com/pl/storage/file-storage/netapp/volumes/).
+Więcej informacji znajdziesz w przewodniku ["Zarządzanie wolumenami"](/pages/cloud/storage/file_storage/netapp_volumes).
 
 ### Zasada działania właściwych organów
 
@@ -90,7 +87,7 @@ Reguły te składają się z adresu IP źródłowego Twojej sieci w formacie x.x
 > Możesz utworzyć jedną lub kilka reguł na wolumen.
 >
 
-Więcej informacji znajdziesz w przewodniku ["Zarządzanie ACL wolumenu"](https://docs.ovh.com/pl/storage/file-storage/netapp/volume-acl/).
+Więcej informacji znajdziesz w przewodniku ["Zarządzanie ACL wolumenu"](/pages/cloud/storage/file_storage/netapp_volume_acl).
 
 ### Zasada działania snapshotów
 
@@ -106,7 +103,7 @@ Zobserwowane dzienne zużycie snapshotów to od 1 do 5% pojemności wolumenu dla
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
-Więcej informacji znajdziesz w przewodniku ["Zarządzanie snapshotami wolumenu"](https://docs.ovh.com/pl/storage/file-storage/netapp/volume-snapshots/).
+Więcej informacji znajdziesz w przewodniku ["Zarządzanie snapshotami wolumenu"](/pages/cloud/storage/file_storage/netapp_volume_snapshots).
 
 ### Ograniczenia oferty Enterprise File Storage dla fazy testów zewnętrznych (Beta)
 

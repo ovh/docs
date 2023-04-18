@@ -1,9 +1,6 @@
 ---
 title: Retrieving your Nutanix installation status information
-slug: nutanix-cluster-information
 excerpt: Find out how to retrieve essential information on the status of your Nutanix cluster
-section: Troubleshooting
-order: 01
 updated: 2022-03-14
 ---
 
@@ -102,7 +99,7 @@ Once the report has been downloaded, you can then send it to our teams along wit
 - [Node serial number](#node-sn)
 
 > [!primary]
-> Use the [Plik tool](https://plik.ovhcloud.com/#/) to upload your report and send it to us as a download link. You can find more information on using the Plik tool in [this guide](https://docs.ovh.com/ie/en/customer/plik/).
+> Use the [Plik tool](https://plik.ovhcloud.com/#/) to upload your report and send it to us as a download link. You can find more information on using the Plik tool in [this guide](/pages/account/customer/use-plik).
 >
 
 #### Receiving NCC report by email <a name="email"></a>
@@ -202,7 +199,7 @@ nutanix@CVMN's password:
 ```
 
 > [!primary]
-> Use the [Plik tool](https://plik.ovhcloud.com/#/) tool to upload your .zip files and send them to us as download links. You can find more information on using the Plik tool in [this guide](https://docs.ovh.com/ie/en/customer/plik/).
+> Use the [Plik tool](https://plik.ovhcloud.com/#/) tool to upload your .zip files and send them to us as download links. You can find more information on using the Plik tool in [this guide](/pages/account/customer/use-plik).
 >
 
 ## Go further <a name="gofurther"></a>

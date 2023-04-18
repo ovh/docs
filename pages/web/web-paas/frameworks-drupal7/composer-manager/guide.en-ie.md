@@ -1,7 +1,5 @@
 ---
 title: Composer manager
-slug: composer-manager
-section: Drupal7
 updated: 2021-05-11
 ---
 

@@ -1,9 +1,6 @@
 ---
 title:  Przenieś Additional IP
 excerpt: Dowiedz się, jak przenieść Additional IP z Panelu klienta lub poprzez API OVHcloud
-slug: ip-fo-move
-section: Sieć & IP
-order: 7
 updated: 2022-12-20
 ---
 
@@ -45,7 +42,7 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 
 > [!warning]
 > Jeśli adres Additional IP lub jeden z adresów IP bloku, ma przypisany wirtualny adres MAC, serwer docelowy musi obsługiwać funkcje wirtualnych adresów MAC.
-> Zapoznaj się [z tym przewodnikiem](https://docs.ovh.com/pl/dedicated/network-support-virtual-mac/).
+> Zapoznaj się [z tym przewodnikiem](/pages/cloud/dedicated/network_support_virtual_mac).
 >
 > W przeciwnym razie wirtualne adresy MAC muszą zostać usunięte z adresów Additional IP przed przeniesieniem.
 

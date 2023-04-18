@@ -1,8 +1,6 @@
 ---
 title: 'Instalar Plesk en una instancia'
-slug: instalar-plesk-en-una-instancia
 excerpt: 'Cómo instalar Plesk en una instancia de Public Cloud'
-section: Tutoriales
 updated: 2018-03-26
 ---
 
@@ -23,8 +21,8 @@ Plesk es un panel de control de servidores fácil de usar que puede instalarse e
 
 ## Requisitos
 
-- [Crear una instancia desde el área de cliente de OVHdloud](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
-- [Conectarse como usuario root y establecer una contraseña](../conectarse_como_usuario_root_y_establecer_una_contrasena/).
+- [Crear una instancia desde el área de cliente de OVHdloud](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia/).
+- [Conectarse como usuario root y establecer una contraseña](/pages/platform/public-cloud/become_root_and_change_password).
 
 ## Procedimiento
 

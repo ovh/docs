@@ -1,11 +1,8 @@
 ---
 title: ovhai CLI Cheat Sheet
-slug: cheat-sheet
 excerpt: Find all the useful commands for OVHcloud AI Training ovhai CLI
-section: General information
-order: 107
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cheat-sheet/'
+    canonical: '/pages/platform/ai/gi_05_ovhai_cheatsheet'
 updated: 2022-03-14
 ---
 

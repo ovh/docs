@@ -1,8 +1,6 @@
 ---
 title: Reimpostare una password Windows
-slug: reimpostare-una-password-windows
 excerpt: Guida alla reimpostazione di una password con Windows
-section: Diagnostica e modalità Rescue
 updated: 2020-11-25
 ---
 
@@ -18,7 +16,7 @@ updated: 2020-11-25
 
 ## Prerequisiti
 
-- Il VPS deve essere in modalità Rescue (per maggiori informazioni, consulta [Attiva la modalità Rescue su un VPS](../rescue)).
+- Il VPS deve essere in modalità Rescue (per maggiori informazioni, consulta [Attiva la modalità Rescue su un VPS](/pages/cloud/vps/rescue)).
 
 ## Procedura
 
@@ -46,7 +44,7 @@ chntpw -u Administrator SAM
 
 Clicca su `1`{.action} e `Inserisci`{.action} per cancellare la password. Premi `q`{.action} per uscire dall'ordine di modifica della password. Poi clicca su `y`{.action} per scrivere le modifiche.
 
-A questo punto, è possibile rimuovere il VPS dalla modalità Rescue. (Per maggiori informazioni, consulta la guida [Attiva la modalità Rescue su un VPS](../rescue))
+A questo punto, è possibile rimuovere il VPS dalla modalità Rescue. (Per maggiori informazioni, consulta la guida [Attiva la modalità Rescue su un VPS](/pages/cloud/vps/rescue))
 
 Alla vostra prossima connessione, non sarete obbligati a inserire una password per la sessione di cui avete fatto la modifica della password.
 

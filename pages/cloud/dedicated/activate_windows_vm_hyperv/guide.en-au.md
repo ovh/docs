@@ -1,8 +1,6 @@
 ---
 title: 'Activating Windows Machines using Hyper-V on an OVHcloud licensed Windows Server'
 excerpt: 'Find out how to create and activate a VM using Hyper-V on a Windows Server licensed by OVHcloud'
-slug: activate-windows-vm-hyperv
-section: 'Tutorial'
 updated: 2022-01-06
 ---
 
@@ -158,7 +156,7 @@ C:\Users\Administrator> DISM.exe /Online /Set-Edition:ServerStandard /ProductKey
 
 > [!primary]
 > 
-> This license (N69G4-B89J2-4G8F4-WWYCC-J464C) belongs to our current KMS validation license repository for Windows Server 2019 Standard. You can grab each of our current license keys from the following guide: [Changing a Windows Server product key](../windows-key)
+> This license (N69G4-B89J2-4G8F4-WWYCC-J464C) belongs to our current KMS validation license repository for Windows Server 2019 Standard. You can grab each of our current license keys from the following guide: [Changing a Windows Server product key](/pages/cloud/dedicated/windows_key)
 >
 
 Reboot your VM, then do the following to set the KMS server and activate Windows.

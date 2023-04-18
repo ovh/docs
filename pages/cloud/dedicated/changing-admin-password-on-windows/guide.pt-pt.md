@@ -1,8 +1,6 @@
 ---
 title: 'Alterar a palavra-passe administrador num servidor dedicado Windows'
-slug: "alterar-palavra-passe-admin-windows"
 excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor dedicado Windows'
-section: 'Diagnóstico e Modo Rescue'
 updated: 2021-01-12
 ---
 
@@ -14,7 +12,7 @@ updated: 2021-01-12
 
 ## Objetivo
 
-Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma palavra-passe de acesso administrador. Para maior segurança, sugerimos a alteração da mesma, conforme as indicações apresentadas no manual [Proteger um servidor dedicado](../proteger-um-servidor-dedicado/). Se perdeu a palavra-passe admin, deverá reinicializá-la em modo rescue.
+Quando instalar ou reiniciar um sistema operativo Windows, irá receber uma palavra-passe de acesso administrador. Para maior segurança, sugerimos a alteração da mesma, conforme as indicações apresentadas no manual [Proteger um servidor dedicado](/pages/cloud/dedicated/securing-a-dedicated-server). Se perdeu a palavra-passe admin, deverá reinicializá-la em modo rescue.
 
 **Este manual explica-lhe como alterar a palavra-passe "admin" do seu servidor através das configurações de modo rescue disponíveis para um sistema operativo Windows.**
 
@@ -45,11 +43,11 @@ Concluída a alteração, clique em `...`{.action} à direita de "Estado" na zon
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Para mais informações sobre o modo rescue, consulte [este guia](../rescue_mode/).
+Para mais informações sobre o modo rescue, consulte [este guia](/pages/cloud/dedicated/rescue_mode).
 
 ### 2 - Montar a partição do sistema
 
-Ligue-se ao seu servidor através de SSH. Se necessário, consulte o guia de [introdução ao SSH](../ssh-introducao/). Como se trata de um servidor Windows, as partições serão intituladas "Microsoft LDM data".
+Ligue-se ao seu servidor através de SSH. Se necessário, consulte o guia de [introdução ao SSH](/pages/cloud/dedicated/ssh_introduction). Como se trata de um servidor Windows, as partições serão intituladas "Microsoft LDM data".
 
 ```
 # fdisk -l
@@ -305,7 +303,7 @@ Concluída a alteração, clique em `...`{.action} à direita de "Estado" na zon
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
-Para mais informações sobre o modo rescue, consulte [este guia](../rescue_mode/).
+Para mais informações sobre o modo rescue, consulte [este guia](/pages/cloud/dedicated/rescue_mode).
 
 #### Etapa 2: eliminar a password atual
 
@@ -340,8 +338,8 @@ Consulte este manual na [etapa 5: definir uma nova password (IPMI)](./#5-definir
 
 ## Quer saber mais?
 
-[Ativar e utilizar o modo rescue](../rescue_mode/)
+[Ativar e utilizar o modo rescue](/pages/cloud/dedicated/rescue_mode)
 
-[Como utilizar o IPMI com servidores dedicados](../usar-ipmi-servidores-dedicados/)
+[Como utilizar o IPMI com servidores dedicados](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

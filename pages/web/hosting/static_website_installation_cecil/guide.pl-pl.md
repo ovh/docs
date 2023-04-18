@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Instalacja i konfiguracja Cecil, generatora stron statycznych (SSG) w PHP"
-slug: install-configure-cecil
 excerpt: "Dowiedz się, jak Cecil pozwala na tworzenie strony statycznej przy użyciu nowoczesnego silnika szablonu (Jamstack)"
-section: 'Tutoriale'
-order: 030
 updated: 2023-01-17
 ---
 
@@ -25,15 +22,15 @@ Strona www zawierająca statyczne strony internetowe gwarantuje lepszy czas ład
 
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec tych oferowanych domyślnie w naszych pakietach hostingowych.
 - Zapoznanie się z wprowadzaniem wiersza poleceń.
-- Możliwość przesyłania plików przez FTP z klientem, takim jak [FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
-- Ustawienie strefy DNS w celu przekierowania domeny (lub subdomeny) na hosting. Jest to przydatne, jeśli chcesz hostować kilka stron WWW na [MultiSite](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) na Twoim hostingu.
+- Możliwość przesyłania plików przez FTP z klientem, takim jak [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide).
+- Ustawienie strefy DNS w celu przekierowania domeny (lub subdomeny) na hosting. Jest to przydatne, jeśli chcesz hostować kilka stron WWW na [MultiSite](/pages/web/hosting/multisites_configure_multisite) na Twoim hostingu.
 - Zainstaluj wcześniej [Composer](https://getcomposer.org/){.external} z plikiem `composer.phar` w katalogu głównym hostingu lub w katalogu docelowym Twojej domeny.
 
 ## W praktyce
 
 [hosting współdzielony](https://www.ovhcloud.com/pl/web-hosting/) pozwala na zgłaszanie domen lub subdomen w opcji MultiSite. Do wdrożenia Twojej strony WWW z systemem **Cecil** konieczna jest domena lub subdomena.
 
-Aby pomóc Ci w zadeklarowaniu domeny lub subdomeny w opcji MultiSite na Twoim hostingu, wejdź na naszą stronę "[Udostępnienie hostingu między kilkoma stronami](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/)".
+Aby pomóc Ci w zadeklarowaniu domeny lub subdomeny w opcji MultiSite na Twoim hostingu, wejdź na naszą stronę "[Udostępnienie hostingu między kilkoma stronami](/pages/web/hosting/multisites_configure_multisite)".
 
 ### Utwórz katalog, w którym będą Twoje pliki
 
@@ -96,7 +93,7 @@ Teraz możesz zobaczyć wynik wyświetlając nazwę Twojej domeny:
 
 Aby zobaczyć wynik Twojej strony w przeglądarce, zmień wskazanie Twojej domeny lub subdomeny w katalogu `_site` utworzonym poprzednio podczas instalacji **Cecil**.
 
-Jeśli Twoja domena lub subdomena jest zainstalowana w OVHcloud, zapoznaj się z naszymi przewodnikami dotyczącymi [konfiguracji DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/) i uruchomienia [MultiSite na Twoim hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/).
+Jeśli Twoja domena lub subdomena jest zainstalowana w OVHcloud, zapoznaj się z naszymi przewodnikami dotyczącymi [konfiguracji DNS](/pages/web/domains/dns_zone_edit) i uruchomienia [MultiSite na Twoim hostingu](/pages/web/hosting/multisites_configure_multisite).
 
 ### Konfiguracja strony
 
@@ -220,4 +217,4 @@ Korzystanie z silnika szablonu, bardzo popularnego wśród deweloperów WWW, poz
 
 Un [przewodnik na temat formatu Markdown](https://www.markdownguide.org/){.external}
 
-Nasz [Przewodnik dotyczący korzystania z FileZilla](https://docs.ovh.com/pl/hosting/hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/)
+Nasz [Przewodnik dotyczący korzystania z FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)

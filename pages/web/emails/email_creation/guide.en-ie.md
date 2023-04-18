@@ -1,9 +1,6 @@
 ---
 title: 'Creating an email address with an MX Plan solution'
-slug: hosted_email_how_to_set_up_an_email_address
 excerpt: 'Find out how to create an email address with an MX Plan solution'
-section: 'Getting started'
-order: 02
 updated: 2022-10-11
 ---
 
@@ -24,8 +21,8 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 >
 > **Special cases**
 >
-> - Regarding the free Start 10M hosting solution, you will need to [activate it](https://docs.ovh.com/ie/en/hosting/activate-start10m/) in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by selecting the domain name concerned.
-> - For [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, you will need to activate your MX Plan package before continuing to follow this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](https://docs.ovh.com/ie/en/hosting/activate-email-web-hosting/).
+> - Regarding the free Start 10M hosting solution, you will need to [activate it](/pages/web/hosting/activate_start10m) in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by selecting the domain name concerned.
+> - For [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, you will need to activate your MX Plan package before continuing to follow this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web/hosting/activate-email-hosting).
 
 ## Instructions <a name="instructions"></a>
 
@@ -72,7 +69,7 @@ Repeat this step as necessary according to the number of accounts to create.
 
 On the [Webmail login page](https://www.ovhcloud.com/en-ie/mail/){.external}, enter your email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via Outlook Web App (OWA) webmail, use our guide ["Using the Outlook Web App with an email account"](https://docs.ovh.com/ie/en/emails/using-owa/){.external}.
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via Outlook Web App (OWA) webmail, use our guide ["Using the Outlook Web App with an email account"](/pages/web/emails/email_owa){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -84,7 +81,7 @@ With a new MXplan service, deleting an account is referred to as *resetting an a
 
 > [!warning]
 >
-> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/), which explains how to export account data from your Control Panel or email software.
+> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](/pages/web/emails/manual_email_migration), which explains how to export account data from your Control Panel or email software.
 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Reset this account`{.action}.
 
@@ -123,7 +120,7 @@ Repeat this step as necessary according to the number of accounts to create.
 
 On the [Webmail login page](https://www.ovhcloud.com/en-ie/mail/){.external}, enter your email address and password. Then click the `Login`{.action} button.
 
-Your inbox will then appear. You can find more information in our guide on [Using your email account via the RoundCube webmail interface](https://docs.ovh.com/ie/en/emails/roundcube-userguide/).
+Your inbox will then appear. You can find more information in our guide on [Using your email account via the RoundCube webmail interface](/pages/web/emails/email_roundcube).
 
 ![email](images/mxplan-creation-legacy-step4.png){.thumbnail}
 
@@ -133,7 +130,7 @@ To view your emails using an email client, please refer to the section ["View an
 
 > [!warning]
 >
-> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](https://docs.ovh.com/ie/en/emails/migrate-email-addresses-manually/), which explains how to export account data from your Control Panel or email software.
+> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](/pages/web/emails/manual_email_migration), which explains how to export account data from your Control Panel or email software.
 
 In the `Emails`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Disable account`{.action}
 
@@ -147,23 +144,23 @@ You will need to configure your email address on the device you want to use (e.g
 > **Windows**
 >>
 >> - [Mail on Windows 10](https://docs.ovh.com/ie/en/emails/mail-configuration-windows-10/)
->> - [Outlook](https://docs.ovh.com/ie/en/emails/configuration-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/ie/en/emails/configure-email-for-thunderbird-windows/)
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>
 > **Apple**
 >>
->> - [macOS email](https://docs.ovh.com/ie/en/emails/guide-configuring-mail-on-macos/)
->> - [Mail for iPhone or iPad](https://docs.ovh.com/ie/en/emails/email_hosting_iphone_ios_91_configuration/)
->> - [Outlook Mac OS](https://docs.ovh.com/ie/en/emails/configuration-outlook-2016-mac/)
->> - [Thunderbird](https://docs.ovh.com/ie/en/emails/configure-email-for-thunderbird-mac/)
+>> - [macOS email](/pages/web/emails/how_to_configure_mail_macos)
+>> - [Mail for iPhone or iPad](/pages/web/emails/how_to_configure_ios)
+>> - [Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016-mac/)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac)
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/ie/en/emails/configuration-android/)
+>> - [Android](/pages/web/emails/how_to_configure_android)
 >>
 > **Other**
 >>
->> - [Gmail interface](https://docs.ovh.com/ie/en/emails/gmail-configuration/)
+>> - [Gmail interface](/pages/web/emails/how_to_configure_gmail)
 >>
 
 If you just need the information required to configure your email address, the settings to use are listed below:
@@ -186,7 +183,7 @@ If you just need the information required to configure your email address, the s
 
 > [!warning]
 >
-> If you have any problems configuring your email address on your device, we recommend using our [configuration guides](../) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
+> If you have any problems configuring your email address on your device, we recommend using our [configuration guides](/ie/en/emails/) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
 >
 
 ## Go further

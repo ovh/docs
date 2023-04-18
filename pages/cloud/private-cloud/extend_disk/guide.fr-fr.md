@@ -1,8 +1,6 @@
 ---
 title: Etendre un volume dans vSphere et dans un OS
-slug: extend-disk
 excerpt: "Découvrez comment augmenter la taille d'un disque virtuel et l'intégrer à votre VM"
-section: Gestion des machines virtuelles
 updated: 2022-01-13
 ---
 
@@ -74,7 +72,7 @@ Le disque est maintenant étendu et prêt à l'usage.
 >
 > Pour les VM sous Linux, nous utilisons un utilitaire de partition. Il existe de multiples produits et nous n'en avons aucun à recommander en particulier. L'utilisation de [GParted LiveCD](http://gparted.sourceforge.net/livecd.php) ne signifie pas que nous recommandons son utilisation.
 > 
-> Pour créer une librairie d'ISOs et monter un ISO sur une VM, consultez notre guide pour [Connecter une image ISO à une VM](https://docs.ovh.com/fr/private-cloud/connect_iso_to_vm/).
+> Pour créer une librairie d'ISOs et monter un ISO sur une VM, consultez notre guide pour [Connecter une image ISO à une VM](/pages/cloud/private-cloud/how_to_connect_an_iso_image_to_a_vm).
 
 
 Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.
@@ -85,7 +83,7 @@ Sur la gauche de votre écran, naviguez vers la VM à modifier, faites un clic-d
 
 ![EDIT](images/en10vm.png){.thumbnail}
 
-Connectez l'image ISO de l'utilitaire à la VM ([Connecter une image ISO à une VM](https://docs.ovh.com/fr/private-cloud/connect_iso_to_vm/)).<br> 
+Connectez l'image ISO de l'utilitaire à la VM ([Connecter une image ISO à une VM](/pages/cloud/private-cloud/how_to_connect_an_iso_image_to_a_vm)).<br> 
 Trouvez le disque à étendre et modifiez la valeur de sa taille (dans notre exemple, changement de 20 à 70 GB).<br>
 
 ![EDIT](images/en11hdd.png){.thumbnail}

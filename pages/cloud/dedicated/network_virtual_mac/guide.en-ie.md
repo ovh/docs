@@ -1,8 +1,6 @@
 ---
 title: Assigning a Virtual MAC to an Additional IP
-slug: network-virtual-mac
 excerpt: This guide will show you how to create a virtual MAC address and assign it to an Additional IP address.
-section: Network Management
 updated: 2022-12-20
 ---
 
@@ -16,10 +14,10 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) that supports [virtual MACs](https://docs.ovh.com/ie/en/dedicated/network-support-virtual-mac/)
+- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) that supports [virtual MACs](/pages/cloud/dedicated/network_support_virtual_mac)
 - An [Additional IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/){.external} or an Additional IP block (RIPE)
 - Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} or to the [OVHcloud API](https://api.ovh.com/).
-- Your server must support virtual MACs. To determine this, consult [this guide](https://docs.ovh.com/ie/en/dedicated/network-support-virtual-mac/).
+- Your server must support virtual MACs. To determine this, consult [this guide](/pages/cloud/dedicated/network_support_virtual_mac).
 
 > [!warning]
 > This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ie/about/).
@@ -27,7 +25,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-ie/compare/) for more information.
 
 > [!primary]
-> If you are not familiar with using the OVHcloud API, please refer to our guide on [First steps with the OVHcloud APIs](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [First steps with the OVHcloud APIs](/pages/account/api/first-steps).
 
 ## Instructions
 

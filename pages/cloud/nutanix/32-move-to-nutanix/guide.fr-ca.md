@@ -1,9 +1,6 @@
 ---
 title: "Migration vers Nutanix via l'outil Nutanix Move"
-slug: move-to-nutanix
 excerpt: "Installer, configurer et utiliser l'outil de migration Move"
-section: Utilisation avancée
-order: 02
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Advanced usage
@@ -119,7 +116,7 @@ Cliquez sur `Download`{.action} à droite de `Move QCOW2 file for AHV`.
 
 ![Download Move](images/DownloadMove.PNG){.thumbnail}
 
-Importez l'image téléchargée de **Nutanix Move** dans le cluster. Pour plus d'informations sur l'importation d'images, consultez notre guide sur l'[importation d'images](https://docs.ovh.com/fr/nutanix/image-import/).
+Importez l'image téléchargée de **Nutanix Move** dans le cluster. Pour plus d'informations sur l'importation d'images, consultez notre guide sur l'[importation d'images](/pages/cloud/nutanix/05-image-import).
 
 #### Installation de la machine virtuelle **Move**
 

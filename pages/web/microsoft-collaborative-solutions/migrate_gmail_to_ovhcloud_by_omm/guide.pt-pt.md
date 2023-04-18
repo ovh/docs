@@ -1,9 +1,6 @@
 ---
 title: 'Migrar uma conta Gmail para uma conta de e-mail OVHcloud através do OVH Mail Migrator'
-slug: migracao-de-gmail-atraves-de-ovh-mail-migrator
 excerpt: 'Aprenda a migrar as suas contas Gmail para o OVHcloud graças à nossa ferramenta OVH Mail Migrator'
-section: 'Migração de contas'
-order: 04
 updated: 2020-03-09
 ---
 
@@ -79,7 +76,7 @@ A janela de progresso da migração (indicada a seguir) será então apresentada
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-Se isso acontecer, vá à caixa de entrada da sua conta Gmail e verifique se recebeu o e-mail com o assunto **"Alerta de segurança crítico"**. Trata-se de uma medida de segurança implementada pela Gmail. Para resolver esta situação, observe o guia: [Como autorizar as conexões menos seguras no Gmail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-de-gmail-atraves-de-ovh-mail-migrator/seguridad_gmail){.external}
+Se isso acontecer, vá à caixa de entrada da sua conta Gmail e verifique se recebeu o e-mail com o assunto **"Alerta de segurança crítico"**. Trata-se de uma medida de segurança implementada pela Gmail. Para resolver esta situação, observe o guia: [Como autorizar as conexões menos seguras no Gmail](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_ommseguridad_gmail){.external}
 
 Depois de ter **autorizado as "conexões menos seguras"** no Gmail, pode reiniciar a migração.
 
@@ -166,7 +163,7 @@ A janela de progresso da migração aparece. Pode deixá-la aberta para acompanh
 
 ## Quer saber mais?
 
-[Como autorizar as conexões menos seguras no Gmail](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-de-gmail-atraves-de-ovh-mail-migrator/seguridad_gmail){.external}.
+[Como autorizar as conexões menos seguras no Gmail](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_ommseguridad_gmail){.external}.
 
 Fale com a nossa comunidade de utilizadores: [](https://community.ovh.com/en/){.external}.
 

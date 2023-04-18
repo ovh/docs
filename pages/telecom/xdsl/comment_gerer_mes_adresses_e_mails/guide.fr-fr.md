@@ -1,8 +1,6 @@
 ---
 title: 'Activer les adresses e-mail incluses dans votre offre FTTH/xDSL'
-slug: comment-gerer-mes-adresses-e-mails
 excerpt: 'Découvrez comment activer les adresses e-mail incluses dans votre offre FTTH/xDSL et comment y accéder'
-section: 'Gestion de mes options'
 updated: 2022-10-10
 ---
 

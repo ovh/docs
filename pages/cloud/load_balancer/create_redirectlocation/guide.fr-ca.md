@@ -1,9 +1,7 @@
 ---
 title: Travailler avec les redirections
-slug: redirect-location
 universe: cloud
 excerpt: Intégrez vos services web derrière un Load Balancer avec les Redirections
-section: Configuration
 updated: 2021-02-05
 ---
 

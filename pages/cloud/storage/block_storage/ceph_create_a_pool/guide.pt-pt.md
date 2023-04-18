@@ -1,10 +1,8 @@
 ---
 title: Criação de pool (EN)
-slug: ceph/create-a-pool
 excerpt: This guide shows you how to create a pool using the web interface.
-section: Cloud Disk Array
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/block-storage/ceph/create-a-pool/'
+    canonical: '/pages/cloud/storage/block_storage/ceph_create_a_pool'
 updated: 2018-03-26
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Automatische E-Mails eines Webhostings verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten'
-slug: webhosting_verwaltung_automatischer_e-mails
-section: 'Diagnose'
-order: 10
 updated: 2022-10-12
 ---
 
@@ -152,7 +149,7 @@ In diesem Fall ist ein Löschen erforderlich, um SPAM-Nachrichten, die noch auf 
 
 Um diesen Zustand zu beheben, müssen Sie mindestens folgende Aktionen ausführen:
 
-- Analysieren Sie die [Logs Ihres Hostings](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/), um Sicherheitslücken und infizierte Dateien zu identifizieren.
+- Analysieren Sie die [Logs Ihres Hostings](/pages/web/hosting/logs_and_statistics), um Sicherheitslücken und infizierte Dateien zu identifizieren.
 - Löschen oder korrigieren Sie die Dateien mit Schadcode und betroffene Module.
 - Aktualisieren Sie bei der Nutzung eines CMS (WordPress, Joomla, PrestaShop, Drupal etc.) die zugehörigen Plugins und das zugehörige Thema.
 - Sichern Sie Ihre Kontaktformulare mit einem "Captcha" ab.
@@ -222,11 +219,11 @@ $mail->Password = "IhrPasswort";
 
 ## Weiterführende Informationen <a name="go-further"></a> 
 
-[Die Logs Ihres Hostings einsehen](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/)
+[Die Logs Ihres Hostings einsehen](/pages/web/hosting/logs_and_statistics)
 
-[Fehler "403 Forbidden" einer Webseite korrigieren](https://docs.ovh.com/de/hosting/diagnose-403-forbidden/)
+[Fehler "403 Forbidden" einer Webseite korrigieren](/pages/web/hosting/diagnostic_403_forbidden)
 
-[FTP-Speicherplatz Ihres Hostings wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/)
+[FTP-Speicherplatz Ihres Hostings wiederherstellen](/pages/web/hosting/ftp_save_and_backup)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

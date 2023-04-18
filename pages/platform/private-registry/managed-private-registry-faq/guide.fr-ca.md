@@ -1,10 +1,7 @@
 ---
 title: 'FAQ Managed Private Registry (Harbor)'
-slug: managed-private-registry-faq
-section: 'Getting started'
-order: 05
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-registry/managed-private-registry-faq/'
+    canonical: '/pages/platform/private-registry/managed-private-registry-faq'
 updated: 2023-03-16
 ---
 

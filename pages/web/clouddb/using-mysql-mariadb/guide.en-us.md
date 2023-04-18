@@ -1,9 +1,6 @@
 ---
 title: Getting started with MySQL and MariaDB
-slug: get-started-with-mysql-and-mariadb
 excerpt: Using Your Databases
-section: Getting started
-order: 02
 updated: 2023-02-15
 ---
 
@@ -31,7 +28,7 @@ This engine is 100% compatible, and is "freer" than its sibling MySQL. All the b
 
 - A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
-- You need to have read the [Web Cloud Databases startup guide](https://docs.ovh.com/us/en/clouddb/getting-started-with-clouddb/).
+- You need to have read the [Web Cloud Databases startup guide](/pages/web/clouddb/starting_with_clouddb).
 
 ## Instructions
 
@@ -57,7 +54,7 @@ To log in to your database, make sure that you have:
 
 All this information is available in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
-Please also read our guide on [getting started with the Web Cloud Databases service](https://docs.ovh.com/us/en/clouddb/getting-started-with-clouddb/).
+Please also read our guide on [getting started with the Web Cloud Databases service](/pages/web/clouddb/starting_with_clouddb).
 
 #### Connect via the command line
 
@@ -116,7 +113,7 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 > [!primary]
 >
-> In some cases, the RAM available in your Web Cloud Databases instance may not be sufficient to perform the desired export or import. If this is the case, we recommend using the OVHcloud tool in the OVHcloud Control Panel. See the [Getting started with Web Cloud Databases service](https://docs.ovh.com/us/en/clouddb/getting-started-with-clouddb/) documentation if necessary.
+> In some cases, the RAM available in your Web Cloud Databases instance may not be sufficient to perform the desired export or import. If this is the case, we recommend using the OVHcloud tool in the OVHcloud Control Panel. See the [Getting started with Web Cloud Databases service](/pages/web/clouddb/starting_with_clouddb) documentation if necessary.
 >
 
 ## Go further

@@ -1,9 +1,6 @@
 ---
 title: 'Usare backup automatizzati su un VPS'
-slug: usare-backup-automatizzati-su-un-vps
 excerpt: 'Scopri come abilitare e utilizzare l’opzione Backup automatizzato nello Spazio Cliente OVHcloud'
-section: 'Opzioni di backup'
-order: 2
 updated: 2022-11-15
 ---
 
@@ -228,6 +225,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Per saperne di più
 
-[Usare snapshot su un VPS](../usare-snapshot-su-un-vps)
+[Usare snapshot su un VPS](/pages/cloud/vps/using-snapshots-on-a-vps)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

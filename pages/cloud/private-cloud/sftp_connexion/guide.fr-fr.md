@@ -1,9 +1,6 @@
 ---
 title: Se connecter en SFTP
-slug: connexion-en-sftp
 excerpt: Apprenez à vous connecter à votre Private Cloud en SFTP
-section: Premiers pas
-order: 3
 updated: 2021-12-28
 ---
 

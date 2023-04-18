@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Installatie van de OVHcloud SSH key 
-slug: ovh-ssh-key
 excerpt: Deze handleiding beschrijft de installatie van een OVHcloud SSH key om een interventie van onze beheerders toe te staan, met daarna de deactivering ervan. 
-section: SSH en de SSH key
 updated: 2018-02-12
 ---
 
@@ -17,7 +15,7 @@ In bepaalde gevallen kan de interventie van een OVHcloud beheerder op uw dedicat
 
 ## Vereisten
 
-- [Verbonden zijn met SSH](https://docs.ovh.com/nl/dedicated/ssh-introductie/){.external} (root access).
+- [Verbonden zijn met SSH](/pages/cloud/dedicated/ssh_introduction){.external} (root access).
 
 ## Instructies
 
@@ -119,6 +117,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Ga verder 
 
-[Introductie tot SSH](https://docs.ovh.com/fr/dedicated/ssh-introduction/){.external}
+[Introductie tot SSH](/pages/cloud/dedicated/ssh_introduction){.external}
 
 Ga in gesprek met onze communitygebruikers via <https://community.ovh.com>.

@@ -1,9 +1,6 @@
 ---
 title: Cómo dar de baja sus servicios de OVHcloud
 excerpt: Cómo interrumpir las suscripciones a OVHcloud
-slug: how-to-cancel-your-services
-section: Pedidos, facturas y servicios
-order: 03
 updated: 2022-03-22
 ---
 
@@ -46,7 +43,7 @@ Para poder dar de baja el servicio, deberá estar **seguro** de que:
 >
 > La rescisión sólo podrá aplicarse si se cumplen las siguientes condiciones:
 >
-> * usted es el "contacto administrador" del servicio (para más información, consulte [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/#definicion));
+> * usted es el "contacto administrador" del servicio (para más información, consulte [esta guía](/pages/account/customer/managing_contacts#definicion));
 > * el servicio no se renueva manualmente;
 > * el servicio no se suspende, en particular debido a un defecto de regularización de una factura.
 >
@@ -107,7 +104,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Para dar de baja su servicio [Managed bare metal](https://www.ovhcloud.com/es-es/managed-bare-metal/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/managed-bare-metal/dar-de-baja-solucion-managed-bare-metal/).
+Para dar de baja su servicio [Managed bare metal](https://www.ovhcloud.com/es-es/managed-bare-metal/), siga las indicaciones de esta [guía](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### Servidor NAS-HA <a name="nas"></a>
 
@@ -137,7 +134,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Para dar de baja su servicio [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/private-cloud/dar-de-baja-solucion-hosted-private-cloud/).
+Para dar de baja su servicio [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -153,9 +150,9 @@ Cada servicio [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) puede
 
 ![public cloud instance deleite](images/pci-deletion.png){.thumbnail}
 
-El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](https://docs.ovh.com/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
+El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](/pages/platform/public-cloud/analyze_billing)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
 
-También puede [consultar su consumo actual](https://docs.ovh.com/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
+También puede [consultar su consumo actual](/pages/platform/public-cloud/analyze_billing#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -219,23 +216,23 @@ Recibirá por correo electrónico un mensaje con el procedimiento de cierre de s
 
 #### Email Pro <a name="emailpro"></a>
 
-Para dar de baja su servicio [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/emails-pro/gestion-facturacion-emailpro/#eliminar-cuentas).
+Para dar de baja su servicio [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/), siga las indicaciones de esta [guía](/pages/web/emails-pro/manage_billing_emailpro#eliminar-cuentas).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#eliminar-cuentas).
+Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/), siga las indicaciones de esta [guía](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-cuentas).
 
 #### Private Exchange <a name="private"></a>
 
-Para dar de baja su solución [Private Exchange](https://www.ovhcloud.com/es-es/emails/private-exchange/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#eliminar-cuentas_1).
+Para dar de baja su solución [Private Exchange](https://www.ovhcloud.com/es-es/emails/private-exchange/), siga las indicaciones de esta [guía](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-cuentas_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Para dar de baja la solución [Office 365 csp 1](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/contratar_y_gestionar_un_grupo_de_licencias_de_office_365_ovh/#anadir-una-licencia-a-un-grupo-existente).
+Para dar de baja la solución [Office 365 csp 1](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/), siga las indicaciones de esta [guía](/pages/web/microsoft-collaborative-solutions/office_csp1#anadir-una-licencia-a-un-grupo-existente).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Para dar de baja la solución [Office 365 csp 2](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/contratar-y-gestionar-un-grupo-de-licencias-office-365-revendedor-csp2-ovh/#gestionar-las-suscripciones).
+Para dar de baja la solución [Office 365 csp 2](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/), siga las indicaciones de esta [guía](/pages/web/microsoft-collaborative-solutions/office_csp2#gestionar-las-suscripciones).
 
 #### SharePoint <a name="sharepoint"></a>
 
@@ -286,6 +283,6 @@ Por último, haga clic en `Confirmar la cancelación`{.action}.
 
 ## Más información <a name="gofurther"></a>
 
-[Gestionar la renovación de los servicios](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/)
+[Gestionar la renovación de los servicios](/pages/account/billing/how_to_use_automatic_renewal)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

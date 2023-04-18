@@ -1,10 +1,8 @@
 ---
 title: Add IP restrictions on an OVHcloud Managed Kubernetes cluster
-slug: add-ip-restrictions
 excerpt: 'Find out how to add IP restrictions/manage access to the API server of an OVHcloud Managed Kubernetes cluster'
-section: User guides
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/add-ip-restrictions/'
+    canonical: '/pages/platform/kubernetes-k8s/add-ip-restrictions'
 updated: 2022-07-28
 ---
 
@@ -67,7 +65,7 @@ The "OVH provider" needs to be configured with a set of credentials:
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](https://docs.ovh.com/de/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow our [First steps with the OVHcloud APIs](/pages/account/api/first-steps) tutorial.
 
 Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
 

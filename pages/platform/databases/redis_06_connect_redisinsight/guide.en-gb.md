@@ -1,9 +1,6 @@
 ---
 title: Redis - Connect with RedisInsight
 excerpt: Connect to your Public Cloud Databases for Redis using RedisInsight
-slug: redis/connect-redisinsight
-section: Redis - Guides
-order: 060
 updated: 2022-03-24
 ---
 
@@ -19,14 +16,14 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your Redis instance](https://docs.ovh.com/fr/publiccloud/databases/redis/configure-redis-instance/) to accept incoming connections
+- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your Redis instance](/pages/platform/databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 - A RedisInsight stable version installed and public network connectivity (Internet). This guide was made in RedisInsight 1.11.1
 
 ## Concept
 
 A Redis instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Redis - Connect with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-php/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Redis - Connect with CLI](/pages/platform/databases/redis_03_connect_cli) or by using programming languages, such as [PHP](/pages/platform/databases/redis_04_connect_php).
 
 Another way is to interact directly using the GUI: RedisInsight.
 

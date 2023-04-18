@@ -1,9 +1,6 @@
 ---
 title: Gérer le renouvellement de mes services
-slug: renouvellement-automatique-ovh
 excerpt: Apprenez à gérer le renouvellement de vos services OVHcloud dans votre espace client
-section: Gérer mes services et leur renouvellement
-order: 01
 updated: 2022-04-07
 ---
 
@@ -26,7 +23,7 @@ Vous avez la possibilité d'administrer le renouvellement et la résiliation de 
 
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ;
 - Posséder des services OVHcloud actifs ;
-- Être [contact facturation](https://docs.ovh.com/fr/customer/gestion-des-contacts/#definition) de vos services OVHcloud.
+- Être [contact facturation](/pages/account/customer/managing_contacts#definition) de vos services OVHcloud.
 
 ## En pratique
 
@@ -36,11 +33,11 @@ Mais il est également possible de paramétrer certains produits (Domaines, Héb
 
 Nous vous recommandons de lire les guides suivants, ainsi que de vous concentrer sur les opérations que vous souhaitez effectuer :
 
-- [Afficher les statuts de renouvellement de vos services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#afficher-les-statuts-de-renouvellement-de-vos-services) : ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration ;
+- [Afficher les statuts de renouvellement de vos services](/pages/account/billing/how_to_use_automatic_renewal#afficher-les-statuts-de-renouvellement-de-vos-services) : ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration ;
 
-- [Gérer le renouvellement de vos services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-chez-ovhcloud) : ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance ;
+- [Gérer le renouvellement de vos services](/pages/account/billing/how_to_use_automatic_renewal#le-renouvellement-chez-ovhcloud) : ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance ;
 
-- [Gérer vos moyens de paiement.](https://docs.ovh.com/fr/billing/manage-payment-methods) : ce guide vous permet de vérifier que vous disposez d'un moyen de paiement enregistré pour les futurs renouvellements. Vous pouvez également ajouter et supprimer des moyens de paiement si nécessaire.
+- [Gérer vos moyens de paiement.](/pages/account/billing/manage-payment-methods) : ce guide vous permet de vérifier que vous disposez d'un moyen de paiement enregistré pour les futurs renouvellements. Vous pouvez également ajouter et supprimer des moyens de paiement si nécessaire.
 
 ### Accéder au paramétrage de vos services
 
@@ -66,11 +63,11 @@ Vos critères de filtrage seront alors affichés au dessus du tableau. Voici un 
 
 Par défaut, à la souscription, vos services sont paramétrés en **renouvellement automatique**. Ce mode vous permet de vous assurer que vos services soient systématiquement reconduits à échéance. De plus, si vous avez enregistré un moyen de paiement sur votre compte client, vos factures seront automatiquement prélevées sur celui-ci.
 
-Si vous n'avez enregistré aucun [moyen de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/), une facture vous sera adressée par e-mail. Il vous suffira alors de la régler en ligne.
+Si vous n'avez enregistré aucun [moyen de paiement](/pages/account/billing/manage-payment-methods), une facture vous sera adressée par e-mail. Il vous suffira alors de la régler en ligne.
 
 Pour les services ayant une fréquence de renouvellement automatique supérieure à 1 mois (3 mois, 6 mois, 12 mois), un rappel vous est également envoyé par e-mail le mois précédent, récapitulant les services allant être renouvelés prochainement.
 
-Si vous ne souhaitez pas prolonger l'un de ces services, il vous suffit alors [de le résilier dans votre espace client](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
+Si vous ne souhaitez pas prolonger l'un de ces services, il vous suffit alors [de le résilier dans votre espace client](/pages/account/billing/how_to_cancel_services).
 
 ### Le renouvellement manuel
 
@@ -82,7 +79,7 @@ Si vous choisissez ce mode, vous recevrez plusieurs relances par e-mail avant é
 >
 > Si vous n'effectuez pas de paiement pour un service en renouvellement manuel, celui-ci sera suspendu à sa date d'expiration puis supprimé au bout de quelques jours.
 >
-> En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécessaire d'en demander la [résiliation](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
+> En revanche, si vous ne souhaitez pas conserver ce service, il n'est pas nécessaire d'en demander la [résiliation](/pages/account/billing/how_to_cancel_services).
 >
 
 ### Gérer le renouvellement de vos services <a name="renewal-management"></a>
@@ -120,7 +117,7 @@ Cette action est proposée pour les services paramétrés en renouvellement auto
 
 > [!warning]
 >
-> Pour plus d'informations sur la résiliation des services OVHcloud, suivez les [instructions de ce guide](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
+> Pour plus d'informations sur la résiliation des services OVHcloud, suivez les [instructions de ce guide](/pages/account/billing/how_to_cancel_services).
 >
 
 #### Régler ma facture
@@ -145,8 +142,8 @@ Le tableau ci-dessous détaille les actions groupées possibles.
 
 ## Aller plus loin
 
-[Informations concernant le mode de facturation Public Cloud](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)
+[Informations concernant le mode de facturation Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Gérer la facturation de vos comptes Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/)
+[Gérer la facturation de vos comptes Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,9 +1,6 @@
 ---
 title: "Transfer domeny .uk do innego operatora"
-slug: transfer_wychodzacy_domeny_couk
 excerpt: "Dowiedz się, jak wykonać transfer domeny wychodzącej z domeny UK do innego operatora"
-section: Transfer
-order: 05
 updated: 2022-10-19
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-10-19
 
 ## Wprowadzenie
 
-Proces zmiany operatora domeny *najwyższego poziomu* (*top-level domain*, lub **TLD**) dla domeny najwyższego poziomu **UK** (**.uk**) różni się od tego wyszczególnionego w naszym [przewodniku transferu domen globalnychKET](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/). Poniższe instrukcje dotyczą następujących rozszerzeń:
+Proces zmiany operatora domeny *najwyższego poziomu* (*top-level domain*, lub **TLD**) dla domeny najwyższego poziomu **UK** (**.uk**) różni się od tego wyszczególnionego w naszym [przewodniku transferu domen globalnychKET](/pages/web/domains/transfer_outgoing_domain). Poniższe instrukcje dotyczą następujących rozszerzeń:
 
 - .uk
 - .co.uk
@@ -33,9 +30,9 @@ Proces zmiany operatora domeny *najwyższego poziomu* (*top-level domain*, lub *
 >
 > Jeśli domena ma pozostać zarejestrowana w OVHcloud, ale została zmieniona w sposób umożliwiający zarządzanie domeną lub jej własność, transfer wychodzący z domeny nie jest właściwą procedurą.
 >
-> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/).
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](/pages/account/customer/managing_contacts).
 >
-> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](https://docs.ovh.com/pl/domains/zmiana_wlasciciela_domeny_globalnej_com_net_org_info_biz/).
+> Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](/pages/web/domains/trade_domain).
 >
 
 ## Wymagania początkowe
@@ -47,7 +44,7 @@ Proces zmiany operatora domeny *najwyższego poziomu* (*top-level domain*, lub *
 
 > [!primary]
 >
-> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](../../customer/zarzadzanie_kontaktami/#przypadek-wlasciciela-domeny).
+> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](/pages/account/customer/managing_contacts#przypadek-wlasciciela-domeny).
 >
 > Jeśli domena wygasła na **mniej niż 90 dni**, nadal może być przeniesiona. Prosimy o kontakt z naszym zespołem pomocy technicznej poprzez utworzenie wniosku o wsparcie w Panelu client OVHcloud, aby odblokować nazwę domeny do transferu.
 >
@@ -86,6 +83,6 @@ Skontaktuj się z nowym dostawcą, aby uzyskać więcej informacji oraz wszelkie
 
 ## Sprawdź również
 
-[Transfer domeny do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/)
+[Transfer domeny do innego operatora](/pages/web/domains/transfer_outgoing_domain)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

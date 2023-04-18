@@ -1,9 +1,6 @@
 ---
 title: Erste Schritte mit Ihrem Webhosting
-slug: erste-schritte-mit-webhosting
 excerpt: So starten Sie mit Ihrem Webhosting
-section: 'Erste Schritte'
-order: 02
 updated: 2022-11-11
 ---
 
@@ -38,7 +35,7 @@ Im Kundencenter stellt OVHcloud seinen Kunden ein Tool zur Verfügung, mit dem e
 
 - **Eine bestehende Website zu OVHcloud migrieren**
 
-Die Migration einer Website kann sich als knifflig erweisen. Vor allem, wenn es sich um eine aktive Website handelt und Sie die Unterbrechung des Dienstes vermeiden möchten. Daher enthält die vorliegende Anleitung nur einige der Schritte, die für eine Migration erforderlich sind. Für den kompletten Migrationsprozess einer Website lesen Sie bitte die Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}.
+Die Migration einer Website kann sich als knifflig erweisen. Vor allem, wenn es sich um eine aktive Website handelt und Sie die Unterbrechung des Dienstes vermeiden möchten. Daher enthält die vorliegende Anleitung nur einige der Schritte, die für eine Migration erforderlich sind. Für den kompletten Migrationsprozess einer Website lesen Sie bitte die Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 ### Schritt 2: Ihre Website installieren
 
@@ -56,7 +53,7 @@ Um die Installation des 1-Klick-Moduls zu starten, wählen Sie Ihr bevorzugtes C
 
 Wenn die Installation erfolgreich durchgeführt wurde, erhalten Sie eine Bestätigungs-E-Mail mit den Zugangsdaten für die Verwaltung Ihrer Website. Sie können dann die nachfolgenden Schritte durchführen.
 
-Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie einen Blick in unsere Dokumentation: [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}.
+Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie einen Blick in unsere Dokumentation: [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 #### Die schnelle Lösung in wenigen Klicks – keine technischen Kenntnisse erforderlich
 
@@ -77,13 +74,13 @@ Nachdem die Datenbank angelegt wurde, gehen Sie für die Installation des 1-Klic
 
 Geben Sie die erforderlichen Informationen ein, um die Installation des Moduls zu starten. Wenn Sie die E-Mail erhalten haben, mit der die Installation bestätigt wird, können Sie die nachfolgenden Schritte vornehmen.
 
-Weitere Informationen zur Installation eines Moduls im Experten-Modus finden Sie in unserer Dokumentation: [Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}.
+Weitere Informationen zur Installation eines Moduls im Experten-Modus finden Sie in unserer Dokumentation: [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 #### Die manuelle Lösung – technische Kenntnisse erforderlich
 
 Verwenden Sie diese Lösung, wenn Sie eine Website ohne den Einsatz der OVHcloud Module erstellen oder migrieren möchten. Hierzu benötigen Sie die Dateien der Website, die Sie installieren möchten. Loggen Sie sich manuell in Ihren Storage ein, um dort die Dateien der Website hochzuladen und letztere anschließend, sofern möglich, mit einer vorher angelegten Datenbank zu verknüpfen.
 
-Es gibt keine allgemeingültige Vorgehensweise, da Websites sehr unterschiedlich sein können. Anhand der folgenden Dokumentation können wir Ihnen jedoch die Aktionen aufzeigen, die in Ihrem OVHcloud Webhosting durchgeführt werden: [Webhosting: Meine Seite online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/){.external} und [Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}. Wenn Ihre Website manuell auf Ihrem Webhosting installiert wurde, können Sie die nachfolgenden Schritte durchführen.
+Es gibt keine allgemeingültige Vorgehensweise, da Websites sehr unterschiedlich sein können. Anhand der folgenden Dokumentation können wir Ihnen jedoch die Aktionen aufzeigen, die in Ihrem OVHcloud Webhosting durchgeführt werden: [Webhosting: Meine Seite online stellen](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} und [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}. Wenn Ihre Website manuell auf Ihrem Webhosting installiert wurde, können Sie die nachfolgenden Schritte durchführen.
 
 ### Schritt 3: Ihre E-Mail-Adressen anlegen
 
@@ -93,7 +90,7 @@ Dieser Schritt ist optional, wenn Sie die in Ihrem [Webhosting](https://www.ovhc
 
 Geben Sie die erforderlichen Informationen ein, um Ihre E-Mail-Adresse zu erstellen. Wiederholen Sie diesen Schritt, um mehrere E-Mail-Adressen anzulegen. Wenn Sie Ihre E-Mail-Adressen zu OVHcloud migrieren möchten, empfehlen wir Ihnen unser Tool [OVH Mail Migrator](https://omm.ovh.net/){.external} zu verwenden, das Sie bei der Migration unterstützt. 
 
-Weitere Informationen zum Anlegen einer E-Mail-Adresse oder über die Migration Ihrer Dienstleistungen zu OVHcloud finden Sie in den folgenden Dokumentationen: [Eine E-Mail-Adresse erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external} und [Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}.
+Weitere Informationen zum Anlegen einer E-Mail-Adresse oder über die Migration Ihrer Dienstleistungen zu OVHcloud finden Sie in den folgenden Dokumentationen: [Eine E-Mail-Adresse erstellen](/pages/web/emails/email_creation){.external} und [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 ### Schritt 4: Die Konfiguration Ihrer Domain überprüfen oder anpassen
 
@@ -135,7 +132,7 @@ Um auf die DNS-Zone Ihrer Domain zuzugreifen, gehen Sie zum Bereich `Domainnamen
 
 - **Ihre Dienstleistungen (Websites und E-Mail-Adressen) zu OVHcloud migrieren**
 
-In diesem Fall können Änderungen Ihrer DNS-Zone zu einer Nichtverfügbarkeit Ihrer Dienste führen, wenn diese Änderungen nicht zum richtigen Zeitpunkt durchgeführt werden. Folgen Sie hierzu den entsprechenden Schritten unserer Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external} und bearbeiten Sie die DNS Server Ihrer Domain erst am Ende des Prozesses.
+In diesem Fall können Änderungen Ihrer DNS-Zone zu einer Nichtverfügbarkeit Ihrer Dienste führen, wenn diese Änderungen nicht zum richtigen Zeitpunkt durchgeführt werden. Folgen Sie hierzu den entsprechenden Schritten unserer Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external} und bearbeiten Sie die DNS Server Ihrer Domain erst am Ende des Prozesses.
 
 > [!primary]
 >
@@ -152,18 +149,18 @@ Wenn Sie Hilfe bei der Nutzung der Funktionalitäten Ihrer Website benötigen, g
 
 Sie können nun auch Ihre E-Mail-Adressen verwenden. Dafür stellt OVHcloud Ihnen eine Webanwendung (Webmail) zur Verfügung: RoundCube. Diese App ist über die Adresse <https://www.ovhcloud.com/de/mail/> erreichbar, auf der Sie die Login-Daten für Ihre von OVHcloud angelegte E-Mail-Adresse eingeben.
 
-Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfen Sie bitte einen Blick in unsere Anleitung: [Verwendung von RoundCube](https://docs.ovh.com/de/emails/webmail_verwendung_von_roundcube/){.external}. Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die jeweilige Anleitung unter <https://docs.ovh.com/de/emails/>.
+Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfen Sie bitte einen Blick in unsere Anleitung: [Verwendung von RoundCube](/pages/web/emails/email_roundcube){.external}. Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die jeweilige Anleitung unter <https://docs.ovh.com/de/emails/>.
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVHcloud](../migration-ihrer-website-zu-ovh/){.external}
+[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Meine Seite online stellen](../webhosting_meine_seite_online_stellen/){.external}
+[Meine Seite online stellen](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Installation Ihrer Website mit 1-Klick-Modulen](../webhosting_installation_von_webhosting-modulen/){.external}
+[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Eine E-Mail-Adresse erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}
+[Eine E-Mail-Adresse erstellen](/pages/web/emails/email_creation){.external}
 
-[Verwendung von RoundCube](https://docs.ovh.com/de/emails/webmail_verwendung_von_roundcube/){.external}
+[Verwendung von RoundCube](/pages/web/emails/email_roundcube){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

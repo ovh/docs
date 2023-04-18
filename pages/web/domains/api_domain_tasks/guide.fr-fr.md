@@ -1,9 +1,6 @@
 ---
 title: "Gestion des tâches"
-slug: api-tasks
 excerpt: "Fonctionnement des tâches asynchrones sur les noms de domaines"
-section: "API domaines"
-order: 04
 updated: 2022-05-05
 ---
 
@@ -13,20 +10,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](../api).
+> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
 
 <!-- Begin TOC -->
 
 ## Sommaire
 
-- [Introduction](../api)
-- [Commander un nom de domaine](../api-order)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Commander un nom de domaine](/pages/web/domains/api_domain_intro-order)
 - **Gestion des tâches**
-- [Gestion des contacts d'un nom de domaine](../api-contact)
-- [Gestion des règles d'éligibilité](../api-rules)
-- [Configurer l'affichage de ses données dans le Whois](../api-whois)
-- [Configurer les DNS de son nom de domaine](../api-dns)
-- [Transférer un nom de domaine](../api-transfer)
+- [Gestion des contacts d'un nom de domaine](/pages/web/domains/api_domain_contacts)
+- [Gestion des règles d'éligibilité](/pages/web/domains/api_domain_intro-rules)
+- [Configurer l'affichage de ses données dans le Whois](/pages/web/domains/api_domain_intro-whois)
+- [Configurer les DNS de son nom de domaine](/pages/web/domains/api_domain_dns)
+- [Transférer un nom de domaine](/pages/web/domains/api_domain_intro-transfer)
 <!-- End TOC -->
 
 ## Gestion des tâches

@@ -1,9 +1,6 @@
 ---
 title: Aumenta la dimensione di un disco aggiuntivo
 excerpt: Come aumentare la dimensione di un volume aggiuntivo e aumentare la sua partizione principale
-slug: aumenta_la_spazio_del_tuo_disco_aggiuntivo
-order: 6
-section: Storage
 updated: 2022-03-29
 ---
 
@@ -22,13 +19,13 @@ Se hai raggiunto la capacità massima del tuo disco aggiuntivo, aggiungi spazio 
 ## Prerequisiti
 
 - Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo progetto Public Cloud.
-- Disporre di un [disco aggiuntivo](../crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/) creato nel tuo progetto.
+- Disporre di un [disco aggiuntivo](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 - Avere accesso amministrativo (root) alla tua istanza via SSH (Linux) o RDP (Windows).
 
 ## Procedura
 
-Per gli step successivi, è necessario aver già configurato un disco aggiuntivo in base alle intrusioni della [nostra guida](../crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/).
+Per gli step successivi, è necessario aver già configurato un disco aggiuntivo in base alle intrusioni della [nostra guida](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance).
 
 ### Modifica la dimensione del disco
 
@@ -166,6 +163,6 @@ Il volume ridimensionato include lo spazio disco aggiuntivo.
 
 ## Per saperne di più
 
-[Crea e configura un disco aggiuntivo sulla tua istanza](../crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/)
+[Crea e configura un disco aggiuntivo sulla tua istanza](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -1,11 +1,8 @@
 ---
 title: 'Using email aliases and redirections'
-slug: email-redirection-guide
 excerpt: 'Find out how to manage aliases and email redirections'
-section: 'Exchange account features'
-order: 01
 routes:
-  canonical: "https://docs.ovh.com/us/en/emails/email-redirection-guide/"
+  canonical: "/pages/web/emails/feature_redirections"
 updated: 2020-05-20
 ---
 
@@ -52,4 +49,4 @@ For example, your email address is **john.smith@mydomain.ovh** and your alias is
 
 ## Instructions
 
-Follow our guide [Using email aliases and redirections](https://docs.ovh.com/us/en/emails/email-redirection-guide/) in the "Hosted email - MX Plan" section.
+Follow our guide [Using email aliases and redirections](/pages/web/emails/feature_redirections) in the "Hosted email - MX Plan" section.

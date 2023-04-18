@@ -2,7 +2,6 @@
 deprecated: true
 title: Het gebruik van de VMware Update Manager
 excerpt: ''
-slug: het_gebruik_van_de_vmware_update_manager
 legacy_guide_number: g591
 updated: 2021-12-09
 ---
@@ -13,7 +12,7 @@ Wij zullen u de Update Manager plug-in geven op de vSphere Client.
 
 U moet hiervoor reeds de vSphere Client geïnstalleerd hebben op uw machine:
 
--[Install the vSphere client]({legacy}600)
+-[Install the vSphere client](/pages/cloud/private-cloud/vmware_update_manager%7Blegacy%7D600)
 
 ## BELANGRIJK!!!
 Als de RDP-verbinding is geleverd bij het maken van uw account, zal het niet nodig zijn om de Update Manager te installeren.

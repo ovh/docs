@@ -1,9 +1,6 @@
 ---
 title: Object Storage Swift - Crea un container Object Storage
-slug: pcs/create-container
 excerpt: Come creare i container Object Storage dallo Spazio Cliente OVHcloud
-section: OpenStack Swift Storage Class Specifics
-order: 110
 updated: 2021-10-27
 ---
 
@@ -32,7 +29,7 @@ Il primo step è la creazione di un container che raggrupperà i tuoi file.
 
 Se utilizzi Horizon:
 
-- Aver creato un [utente OpenStack](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/)
+- Aver creato un [utente OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
 
 ## Procedura
 
@@ -72,7 +69,7 @@ Assegna un nome al container e clicca su `Aggiungi il container`{.action}:
 > - [ _ ]  
 > - e non dovete utilizzare maiuscole.  
 >
-> Per maggiori informazioni, consulta la guida [Associare un container a un dominio](https://docs.ovh.com/it/storage/configura_un_dominio_su_un_container_del_tuo_object_storage/).
+> Per maggiori informazioni, consulta la guida [Associare un container a un dominio](/pages/cloud/storage/object_storage/pcs_link_domain).
 >
 
 ![container name](images/create-container-20211005111805966.png)
@@ -106,7 +103,7 @@ Assegna un nome al tuo container.
 > - [ _ ]  
 > - Non è necessario utilizzare maiuscole  
 >
-> Per maggiori informazioni, consulta la guida [Associare un container a un dominio](https://docs.ovh.com/it/storage/configura_un_dominio_su_un_container_del_tuo_object_storage/).
+> Per maggiori informazioni, consulta la guida [Associare un container a un dominio](/pages/cloud/storage/object_storage/pcs_link_domain).
 >
 
 Seleziona la politica di accesso del container e clicca su `Next`{.action}

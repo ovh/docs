@@ -1,8 +1,6 @@
 ---
 title: 'Festplatte auf einem Server mit Software-RAID im laufenden Betrieb wechseln'
-slug: hotswap-software-raid
 excerpt: 'Hier erfahren Sie, wie eine Festplatte auf einem Server mit Software-RAID im laufenden Betrieb ausgetauscht wird.'
-section: 'RAID & Festplatten'
 updated: 2016-11-21
 ---
 
@@ -204,11 +202,11 @@ Wenn Sie mit diesen Aktionen fertig sind, überprüfen Sie erneut den RAID-Statu
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
 >>> Personalities : [linear] [raid0] [raid1] [raid10] [raid6] [raid5] [raid4] [multipath] [faulty]
->>> md2 : active raid1 sda2[0] sdb2[1](F)
+>>> md2 : active raid1 sda2[0] sdb2[1](/pages/cloud/dedicated/hotswap_raid_softF)
 >>>       3885385728 blocks super 1.2 [2/1] [U_]
 >>>       bitmap: 0/29 pages [0KB], 65536KB chunk
 
->>> md1 : active raid1 sdb1[2](F) sda1[0]
+>>> md1 : active raid1 sdb1[2](/pages/cloud/dedicated/hotswap_raid_softF) sda1[0]
 >>>       20971456 blocks [2/1] [U_]
 
 >>> unused devices: <none>
@@ -241,7 +239,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/){.external}.
+Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](/pages/cloud/dedicated/raid_soft){.external}.
 
 ### Windows
 
@@ -293,7 +291,7 @@ Sie können das Blinken der Festplatte deaktivieren, indem Sie im Befehl “on�
 
 Führen Sie diese Aktion über das Interface “**Datenträgerverwaltung**” Ihres Windows Servers aus.
 
-Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/){.external}.
+Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](/pages/cloud/dedicated/raid_soft){.external}.
 
 ## Weiterführende Informationen
 

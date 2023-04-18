@@ -2,7 +2,6 @@
 deprecated: true
 title: De reserve hosts
 excerpt: Het beheren en monitoren van de reserve hosts op de Hosted Private Cloud?
-slug: de_reserve_hosts
 legacy_guide_number: g860
 updated: 2020-06-29
 ---
@@ -23,10 +22,10 @@ OVH verstrekt de reserve host om het verlies van resources te voorkomen. Zodra d
 
 
 ## 
-U moet de reserve host retourneren. Het is niet mogelijk om een ​​reserve host te bewaren, noch om het om te zetten in een in rekening gebrachte host. Als u uw defecte host wilt vervangen, kunt u de handleiding [Een host vervangen]({legacy}861) raadplegen.
+U moet de reserve host retourneren. Het is niet mogelijk om een ​​reserve host te bewaren, noch om het om te zetten in een in rekening gebrachte host. Als u uw defecte host wilt vervangen, kunt u de handleiding [Een host vervangen](/pages/cloud/private-cloud/spare_hosts%7Blegacy%7D861) raadplegen.
 
 
 ## 
 Wanneer de situatie weer normaal is op uw host, en de verschillende waarschuwingsberichten verdwenen zijn, kunt u de reserve host retourneren.
-Volg de procedure vermeld in de paragraaf "Verwijdering van een host" van de handleiding [Hoe een host toevoegen?]({legacy}605)
+Volg de procedure vermeld in de paragraaf "Verwijdering van een host" van de handleiding [Hoe een host toevoegen?](/pages/cloud/private-cloud/spare_hosts%7Blegacy%7D605)
 

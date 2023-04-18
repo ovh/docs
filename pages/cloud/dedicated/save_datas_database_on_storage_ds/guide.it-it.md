@@ -1,8 +1,6 @@
 ---
 title: 'Eseguire il backup di dati e database su un server di storage'
-slug: eseguire-backup-dati-database-server-storage
 excerpt: 'Come proteggere i tuoi dati in 5 step'
-section: Tutorial
 updated: 2018-09-12
 ---
 
@@ -68,7 +66,7 @@ Non esiste un sistema RAID migliore di un altro: ognuno risponde a necessità di
 
 ### Step 2: installa e configura il server
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e installa il tuo server (come già detto nella parte iniziale di questa guida, utilizzeremo Debian 9.4). Per maggiori informazioni, consulta la nostra guida [Iniziare a utilizzare un server dedicato](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/#installa-o-reinstalla-il-tuo-server-dedicato_1){.external}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e installa il tuo server (come già detto nella parte iniziale di questa guida, utilizzeremo Debian 9.4). Per maggiori informazioni, consulta la nostra guida [Iniziare a utilizzare un server dedicato](/pages/cloud/dedicated/getting-started-with-dedicated-server#installa-o-reinstalla-il-tuo-server-dedicato_1){.external}.
 
 Una volta selezionato il sistema operativo, spunta la casella `Personalizza la configurazione delle partizioni`{.action} e clicca su `Seguente`{.action}.
 

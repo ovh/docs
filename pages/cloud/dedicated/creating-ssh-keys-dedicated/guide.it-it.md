@@ -1,9 +1,6 @@
 ---
 title: 'Creare una chiave SSH'
-slug: creare-chiave-ssh-dedicata
 excerpt: 'Come generare una chiave SSH per connettersi in modo sicuro a un server dedicato'
-section: 'Per iniziare'
-order: 4
 updated: 2022-03-31
 ---
 
@@ -171,7 +168,7 @@ Se hai copiato per intero il risultato, l’identificativo che segue la chiave d
 
 > [!primary]
 >
-> Qualsiasi chiave salvata nella sezione “Dedicato” potrà essere utilizzata anche per il tuo VPS. Per le chiavi SSH relative ai servizi Public Cloud, consulta [questa guida](../../public-cloud/primi-passi-public-cloud).
+> Qualsiasi chiave salvata nella sezione “Dedicato” potrà essere utilizzata anche per il tuo VPS. Per le chiavi SSH relative ai servizi Public Cloud, consulta [questa guida](/pages/platform/public-cloud/public-cloud-first-steps).
 >
 
 ### Imposta una chiave SSH predefinita (solo per la l'universo "Dedicated") <a name="cpsshkey"></a>

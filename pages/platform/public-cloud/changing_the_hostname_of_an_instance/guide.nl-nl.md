@@ -1,10 +1,8 @@
 ---
 deprecated: true
 title: 'Wijzigen van de hostnaam van een Public Cloud instance'
-slug: wijzigen-hostnaam-instance
 excerpt: 'Ontdek hoe u de hostnaam van een Public Cloud instance kunt veranderen'
 legacy_guide_number: 1928
-section: Tutorials
 updated: 2018-09-18
 ---
 
@@ -27,7 +25,7 @@ Met de Cloud-init module kunt u uw [Public Cloud instance](https://www.ovh.com/n
 ## Vereisten
 
 - U moet een [Public Cloud-instance](https://www.ovh.com/nl/public-cloud/instances/){.external} hebben aangemaakt. 
-- [U verbonden zijn in SSH](https://docs.ovh.com/nl/public-cloud/eerste-login/){.external} (root) met de instance.
+- [U verbonden zijn in SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-4-connecting-to-your-instance/){.external} (root) met de instance.
 
 
 ## Instructie

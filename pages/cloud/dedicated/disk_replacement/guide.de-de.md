@@ -1,8 +1,6 @@
 ---
 title: 'Eine defekte Festplatte austauschen'
-slug: disk-replacement
 excerpt: 'In dieser Anleitung erklären wir Ihnen, wie Sie eine defekte Festplatte erkennen und deren Austausch beantragen.'
-section: 'Diagnose & Rescue Modus'
 updated: 2018-06-21
 ---
 
@@ -46,7 +44,7 @@ Sollten Sie durch eine E-Mail-Benachrichtigung oder eine Überprüfung Ihrerseit
 
 #### Server mit Software-RAID
 
-Falls Sie einen Server mit Software-RAID besitzen, erfahren Sie in der Anleitung [Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/){.external}, wie Sie die auf Ihrem Server installierten Festplatten finden.
+Falls Sie einen Server mit Software-RAID besitzen, erfahren Sie in der Anleitung [Software-RAID](/pages/cloud/dedicated/raid_soft){.external}, wie Sie die auf Ihrem Server installierten Festplatten finden.
 
 Wenn Ihnen der Zugriffspfad zu Ihren Festplatten bekannt ist, können Sie diese mithilfe des Befehls `smartctl` folgendermaßen überprüfen:
 
@@ -90,7 +88,7 @@ Die Seriennummer finden Sie in unserem Beispiel also in folgender Zeile:
 
 #### Server mit Hardware-RAID
 
-Falls Sie einen Server mit Hardware RAID besitzen, lesen Sie unsere Anleitung [Managing Hardware RAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} und folgen Sie den Vorgaben für Ihren RAID-Controller-Typ, um die Zugriffspfade zu Ihren Festplatten zu identifizieren.
+Falls Sie einen Server mit Hardware RAID besitzen, lesen Sie unsere Anleitung [Managing Hardware RAID - EN](/pages/cloud/dedicated/raid_hard){.external} und folgen Sie den Vorgaben für Ihren RAID-Controller-Typ, um die Zugriffspfade zu Ihren Festplatten zu identifizieren.
 
 Wenn Ihnen der Zugriffspfad zu Ihren Festplatten bekannt ist, können Sie diese mithilfe des Befehls `smartctl` folgendermaßen überprüfen:
 
@@ -122,7 +120,7 @@ Dabei ist die RAID-Nummer anzugeben (/dev/sg0 = RAID 1, /dev/sg1 = RAID 2 etc.)
 
 #### Server mit NVMe-Festplatte
 
-Bei einer NVMe-Festplatte muss der Server in den [Rescue-pro](https://docs.ovh.com/de/dedicated/ovh-rescue/){.external}-Modus versetzt werden, in dem das Tool **nvme-cli** standardmäßig installiert ist.
+Bei einer NVMe-Festplatte muss der Server in den [Rescue-pro](/pages/cloud/dedicated/rescue_mode){.external}-Modus versetzt werden, in dem das Tool **nvme-cli** standardmäßig installiert ist.
 
 Verwenden Sie in diesem Fall den Befehl `nvme list`, um die Seriennummern Ihrer Festplatten in Erfahrung zu bringen:
 
@@ -141,7 +139,7 @@ root@rescue:~# nvme list
 
 Den Austausch einer Ihrer Festplatten können Sie ganz bequem durch die Erstellung einer Support-Anfrage über Ihr [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} anfordern. Sie können den Vorgang beschleunigen, indem Sie uns alle mit den Tests verbundenen Daten mitteilen. Hier eine Zusammenfassung der von uns benötigten Informationen:
 
-- **die Seriennummer sowohl der zu ersetzenden Festplatte als auch aller weiteren intakten Festplatten**. Wie Sie die Seriennummer der zu ersetzenden Festplatte in Erfahrung bringen, sehen Sie in [dieser Anleitung](https://docs.ovh.com/de/dedicated/find-disk-serial-number/){.external} (Englisch). Sollten Sie aus irgendeinem Grund die Seriennummer der Festplatte nicht abrufen können, geben Sie dies bitte im Ticket an und teilen Sie uns die Seriennummern der nicht zu ersetzenden Festplatten mit. 
+- **die Seriennummer sowohl der zu ersetzenden Festplatte als auch aller weiteren intakten Festplatten**. Wie Sie die Seriennummer der zu ersetzenden Festplatte in Erfahrung bringen, sehen Sie in [dieser Anleitung](/pages/cloud/dedicated/how_to_find_hdd_serial){.external} (Englisch). Sollten Sie aus irgendeinem Grund die Seriennummer der Festplatte nicht abrufen können, geben Sie dies bitte im Ticket an und teilen Sie uns die Seriennummern der nicht zu ersetzenden Festplatten mit. 
 
 Wie oben bereits erläutert, benötigen wir idealerweise die Seriennummern aller Festplatten. Diese werden dem Techniker im Rechenzentrum mitgeteilt, um Fehler beim Austausch zu vermeiden.
 
@@ -200,16 +198,16 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Wenn Sie über einen Hardware-RAID verfügen, wird sich der RAID selbst wiederherstellen. Bitte beachten Sie: Hierfür darf die standardmäßig aktivierte Funktion *auto-rebuild* nicht manuell von Ihnen deaktiviert worden sein. Bitte beachten Sie auch, dass der Resynchronisationsprozess einige Minuten in Anspruch nehmen kann und die Lese-/Schreibperformance Ihres RAID in dieser Zeit eingeschränkt sein kann.
 
-Wenn Sie über einen Software-RAID verfügen, muss die Resynchronisation Ihrer Festplatten manuell gestartet werden. Wie das geht, erfahren Sie in unserer Anleitung zum Thema [Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/){.external}.
+Wenn Sie über einen Software-RAID verfügen, muss die Resynchronisation Ihrer Festplatten manuell gestartet werden. Wie das geht, erfahren Sie in unserer Anleitung zum Thema [Software-RAID](/pages/cloud/dedicated/raid_soft){.external}.
 
 
 ## Weiterführende Informationen
 
-[Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/)
+[Software-RAID](/pages/cloud/dedicated/raid_soft)
 
-[Hardware-Raid - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/)
+[Hardware-Raid - EN](/pages/cloud/dedicated/raid_hard)
 
-[Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/)
+[Rescue-Modus](/pages/cloud/dedicated/rescue_mode)
 
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: 'Como alterar a chave de produto do Windows Server'
 excerpt: 'Saiba como alterar o código de ativação do Windows Server'
-slug: windows-key
-section: Diversos
 updated: 2022-07-07
 ---
 

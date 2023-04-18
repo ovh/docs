@@ -1,8 +1,5 @@
 ---
 title: 'Criar assinaturas automáticas'
-slug: email-automatic-signature-disclaimer
-section: Introdução
-order: 6
 updated: 2020-03-26
 ---
 
@@ -24,4 +21,4 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 
 ## Instruções
 
-Siga o nosso guia [O que fazer em caso de conta bloqueada por spam?](https://docs.ovh.com/pt/microsoft-collaborative-solutions/bloqueado-por-spam/) {.external} na rubrica "Soluções colaborativas Microsoft".
+Siga o nosso guia [O que fazer em caso de conta bloqueada por spam?](/pages/web/microsoft-collaborative-solutions/locked_for_spam) {.external} na rubrica "Soluções colaborativas Microsoft".

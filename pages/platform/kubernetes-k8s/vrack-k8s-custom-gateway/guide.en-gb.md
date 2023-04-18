@@ -1,8 +1,6 @@
 ---
 title: Using a custom gateway on an OVHcloud Managed Kubernetes cluster
 excerpt: Find out how to use use a custom gateway on an OVHcloud Managed Kubernetes working with vRack private network.
-slug: vrack-k8s-custom-gateway
-section: Network
 updated: 2022-07-25
 ---
 
@@ -18,8 +16,7 @@ updated: 2022-07-25
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -58,9 +55,9 @@ At the end of this tutorial you should have the following flow:
 
 ## Pre-requisites
 
-- A [Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account.
-- The [OpenStack API CLI](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) installed.
-- Be familiar with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- A [Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) in your OVHcloud account.
+- The [OpenStack API CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) installed.
+- Be familiar with the [OVHcloud API](/pages/account/api/first-steps).
 - The JSON parser tool [jq](https://stedolan.github.io/jq/){.external} installed.
 
 ## Initialization
@@ -141,7 +138,7 @@ EXAMPLE
 
 ## Create Private Network
 
-> Important: Assuming that your PCI project is added to your [vRack](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/).
+> Important: Assuming that your PCI project is added to your [vRack](/pages/platform/network-services/getting-started-07-creating-vrack).
 
 We are using the OVHcloud API to create the private network. For this tutorial, we are using the two regions GRA9 and GRA11.
 
@@ -453,7 +450,7 @@ To proceed with the freshly created Kubernetes cluster, you must get the Kubecon
 >> >
 >> > @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/kubeconfig
 
-To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](https://docs.ovh.com/gb/en/kubernetes/configuring-kubectl/) tutorial, or simply add the `--kubeconfig` flag in your `kubectl` commands.
+To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) tutorial, or simply add the `--kubeconfig` flag in your `kubectl` commands.
 
 ## Test
 

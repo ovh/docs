@@ -1,11 +1,8 @@
 ---
 title: "Protezione dell'accesso Web a Prism Central (EN)"
-slug: nutanix-prism-web-ui-security
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-prism-web-ui-security/'
+    canonical: '/pages/cloud/nutanix/25-secure-prism-web-access'
 excerpt: Find out how to restrict Prism Central Web access
-section: Rete e Sicurezza
-order: 05
 updated: 2022-01-11
 ---
 

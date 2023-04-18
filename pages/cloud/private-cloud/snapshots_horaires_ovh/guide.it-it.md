@@ -1,10 +1,7 @@
 ---
 title: Snapshot orari OVHcloud
-slug: snapshot-orari-ovh
 excerpt: Come funziona lo Snapshot orario OVHcloud
 legacy_guide_number: '2163263'
-section: Funzionalità OVHcloud
-order: 06
 updated: 2022-03-15
 ---
 
@@ -85,7 +82,7 @@ Si tratta di una sicurezza normalmente utilizzata da OVHcloud, gli Snapshot orar
 
 Si tratta di una sicurezza aggiuntiva per uso interno installata sui datastore che deve essere utilizzata solo come ultima risorsa per prevenire una possibile perdita di dati.
 
-Ti consigliamo di utilizzare una soluzione completa di backup, come il servizio [Veeam Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external-link} o qualsiasi altro sistema che effettui un backup completo delle tue macchine virtuali.
+Ti consigliamo di utilizzare una soluzione completa di backup, come il servizio [Veeam Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service){.external-link} o qualsiasi altro sistema che effettui un backup completo delle tue macchine virtuali.
 
 ## Per saperne di più
 

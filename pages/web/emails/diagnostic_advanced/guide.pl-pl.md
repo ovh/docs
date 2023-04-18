@@ -1,10 +1,7 @@
 ---
 title: 'Wysyłanie lub otrzymywanie e-maili niemożliwe'
-slug: zaawansowane_korzystanie_z_e-maili_ovh
 legacy_guide_number: 2117
 excerpt: "Dowiedz się, jak należy zareagować w przypadku problemów z wysyłaniem lub odbieraniem wiadomości e-mail do OVHcloud"
-section: 'Diagnostyka'
-order: 02
 updated: 2022-07-21
 ---
 
@@ -23,7 +20,7 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 
 > [!primary]
 >
-> Jeśli masz dodatkowe pytania, które nie są poruszone w tym przewodniku, zapoznaj się z naszym [FAQ E-mail](https://docs.ovh.com/pl/emails/faq-konta-email/).
+> Jeśli masz dodatkowe pytania, które nie są poruszone w tym przewodniku, zapoznaj się z naszym [FAQ E-mail](/pages/web/emails/faq-emails).
 
 ## Wymagania początkowe
 
@@ -36,7 +33,7 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 
 Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli Twoja usługa e-mail jest przypisana do hostingu, sprawdź, czy oferta nie wygasła. Informacje te możesz sprawdzić bezpośrednio w Panelu klienta. Podobnie Twoja domena musi być aktywna.
 
-Sprawdź, czy jesteś na bieżąco z [płatnościami](https://docs.ovh.com/pl/billing/zarzadzanie-fakturami-ovhcloud/#pay-bills) i [odnawianiem](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#renewal-management) usług.
+Sprawdź, czy jesteś na bieżąco z [płatnościami](/pages/account/billing/invoice_management#pay-bills) i [odnawianiem](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) usług.
 
 Sprawdź, czy Twoje usługi działają poprawnie:
 
@@ -70,11 +67,11 @@ Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmien
 
 W jaki sposób zmienić hasło do konta e-mail:
 
-- W przypadku oferty **MXplan** zapoznaj się z naszym przewodnikiem [Zmiana hasła do konta e-mail MX Plan](https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/)
+- W przypadku oferty **MXplan** zapoznaj się z naszym przewodnikiem [Zmiana hasła do konta e-mail MX Plan](/pages/web/emails/email_change_password)
 
 - W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
 
-- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-2fa-exchange/).
+- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
 ### Masz problem z utrzymaniem usługi?
 
@@ -86,7 +83,7 @@ Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-clou
 
 ### Czy wskazanie domeny do mojej usługi e-mail jest poprawne?
 
-Sprawdź, czy Twoja domena wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem [Dodaj pole MX do konfiguracji domeny](https://docs.ovh.com/pl/domains/hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/).
+Sprawdź, czy Twoja domena wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem [Dodaj pole MX do konfiguracji domeny](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
@@ -125,7 +122,7 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 |502|Zamówienie nie zostało zrealizowane|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
 |503|Serwer napotkał złą sekwencję poleceń|Powodem tego problemu jest problem z uwierzytelnianiem. Upewnij się, że jesteś uwierzytelniony na serwerze SMTP podczas konfiguracji programu pocztowego.|
 |504|Parametr zamówienia nie został zrealizowany|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
-|535|błąd podczas logowania|Informacje użytkownika/hasło są niewidoczne lub wysyłka jest potencjalnie zablokowana na Twoim koncie e-mail. Sprawdź stan Twojego konta e-mail w Panelu klienta OVHcloud. Zmiana hasła może odblokować wysyłkę, jeśli konto zostało zablokowane ze względu na spam, zapoznaj się z naszym przewodnikiem [Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](https://docs.ovh.com/pl/microsoft-collaborative-solutions/blokada-za-spam/), aby uzyskać więcej informacji|
+|535|błąd podczas logowania|Informacje użytkownika/hasło są niewidoczne lub wysyłka jest potencjalnie zablokowana na Twoim koncie e-mail. Sprawdź stan Twojego konta e-mail w Panelu klienta OVHcloud. Zmiana hasła może odblokować wysyłkę, jeśli konto zostało zablokowane ze względu na spam, zapoznaj się z naszym przewodnikiem [Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](/pages/web/microsoft-collaborative-solutions/locked_for_spam), aby uzyskać więcej informacji|
 |550|Operacja nie została wykonana: skrzynka pocztowa niedostępna|Docelowy serwer poczty elektronicznej nie mógł sprawdzić używanego adresu e-mail. Jest to najczęściej spowodowane nieprawidłowym adresem e-mail docelowym, ale może również oznaczać, że docelowy serwer poczty elektronicznej ma problemy z zaporą lub połączeniem. Sprawdź adres e-mail odbiorcy i/lub spróbuj ponownie|
 |551|Użytkownik nielokalny|Jest to powszechnie stosowane jako strategia zapobiegania spamowi. Wiadomo, że przekazywanie poczty nie jest dozwolone z jakiegokolwiek powodu, aby przekazać wiadomość do innego serwera niż twój. Skontaktuj się z dostawcą usług|
 |552|Polecenie połączenia zostało przerwane: przekroczona przestrzeń dyskowa|Użytkownik, z którym próbowałeś się skontaktować, nie ma już dostępnej przestrzeni na otrzymywanie wiadomości. Niestety, jedynym rozwiązaniem jest kontakt z odbiorcą za pomocą innej metody|
@@ -135,6 +132,6 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 
 ## Sprawdź również
 
-[FAQ E-mail](https://docs.ovh.com/pl/emails/faq-konta-email/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

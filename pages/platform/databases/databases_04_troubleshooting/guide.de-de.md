@@ -1,11 +1,8 @@
 ---
 title: Troubleshooting
 excerpt: Troubleshooting tips for Public Cloud Databases
-slug: troubleshooting
-section: General guides
-order: 040
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/troubleshooting/'
+    canonical: '/pages/platform/databases/databases_04_troubleshooting'
 updated: 2021-09-27
 ---
 

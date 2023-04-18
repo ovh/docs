@@ -1,9 +1,6 @@
 ---
 title: "Configurer le reverse DNS d'une instance Public Cloud"
 excerpt: Découvrez comment mettre en place la résolution reverse DNS
-slug: configurer-le-reverse-dns-dune-instance
-section: "Gestion depuis l'espace client"
-order: 06
 updated: 2021-11-12
 ---
 
@@ -41,11 +38,11 @@ Vous pouvez également éditer le reverse directement via l'icône de la colonne
 
 > [!primary]
 >
-Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.
+Si la modification ne fonctionne pas comme prévu, vérifiez que le champ `A` est bien configuré dans la zone DNS de votre nom de domaine. Attention, la modification de la [zone DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns) peut prendre jusqu'à 24 heures si vous n'avez modifié que récemment le champ `A`.
 >
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Créer une première instance Public Cloud et s’y connecter](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
+[Créer une première instance Public Cloud et s’y connecter](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

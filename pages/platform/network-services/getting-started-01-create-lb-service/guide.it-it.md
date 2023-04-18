@@ -1,11 +1,8 @@
 ---
 title: Getting started with Load Balancer on Public Cloud (EN)
-slug: getting-started-with-load-balancer-public-cloud
 excerpt: Discover how to launch a Load Balancer on Public Cloud
-section: Per iniziare
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/getting-started-with-load-balancer-public-cloud/'
+    canonical: '/pages/platform/network-services/getting-started-01-create-lb-service'
 updated: 2022-11-02
 ---
 
@@ -20,7 +17,7 @@ Our new Load Balancer as a Service (LBaaS) solution is based on [OpenStack Octav
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
-- Using the [OpenStack command line environment](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- Using the [OpenStack command line environment](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 - The [OpenStack Command Line Interface](https://docs.openstack.org/newton/user-guide/common/cli-install-openstack-command-line-clients.html){.external} tool installed on your working environment
 
 ## Instructions
@@ -41,7 +38,7 @@ openstack router add subnet my_router my_subnet
 openstack router set --external-gateway Ext-Net my_router
 ```
 
-You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](https://docs.ovh.com/it/publiccloud/network-services/public-cloud-vrack/#instance-integration). List the addresses of your instances in your network with the following command:
+You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](/pages/platform/network-services/getting-started-07-creating-vrack#instance-integration). List the addresses of your instances in your network with the following command:
 
 ```bash
 openstack server list

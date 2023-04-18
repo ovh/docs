@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Konzepte
-slug: netapp/concepts
 excerpt: 'Erfahren Sie hier die Funktionsweise des Angebots Enterprise File Storage'
-section: Enterprise File Storage
-order: 010
 updated: 2022-04-07
 ---
 
@@ -49,7 +46,7 @@ Sie können für Ihren Kunden-Account einen oder mehrere Storage-Einheiten zwisc
 
 Wenn Sie über Ihren OVHcloud Kunden-Account einen Enterprise File Storage zwischen 1 und 29 TiB bestellen, erhalten Sie einen NetApp&#174; Capacity Pool.
 
-Ihr Kunden-Account ist standardmäßig der Admin-, Tech- und Rechnungskontakt des Dienstes. Weitere Informationen finden Sie in unserer Anleitung zur [Kontaktverwaltung Ihrer Dienste](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/).
+Ihr Kunden-Account ist standardmäßig der Admin-, Tech- und Rechnungskontakt des Dienstes. Weitere Informationen finden Sie in unserer Anleitung zur [Kontaktverwaltung Ihrer Dienste](/pages/account/customer/managing_contacts).
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
@@ -75,7 +72,7 @@ Sobald Ihr Enterprise File Storage in Betrieb ist, können Sie ein oder mehrere 
 > - Die Größe eines Volumes kann sowohl nach oben und nach unten angepasst werden.
 >
 
-Weitere Informationen finden Sie in der Anleitung ["Volumes verwalten"](https://docs.ovh.com/de/storage/file-storage/netapp/volumes/).
+Weitere Informationen finden Sie in der Anleitung ["Volumes verwalten"](/pages/cloud/storage/file_storage/netapp_volumes).
 
 ### Funktionsweise der ACL
 
@@ -90,7 +87,7 @@ Diese Regeln bestehen aus einer Quell-IP Ihres Netzwerks im x.x.x.x/x Format und
 > Sie können eine oder mehrere Regeln pro Volume erstellen.
 >
 
-Weitere Informationen finden Sie in der Anleitung ["Volume ACLs verwalten"](https://docs.ovh.com/de/storage/file-storage/netapp/volume-acl/).
+Weitere Informationen finden Sie in der Anleitung ["Volume ACLs verwalten"](/pages/cloud/storage/file_storage/netapp_volume_acl).
 
 ### Funktionsprinzip von Snapshots
 
@@ -106,7 +103,7 @@ Der festgestellte tägliche Verbrauch der Snapshots liegt für viele Anwendungen
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
-Weitere Informationen finden Sie in der Anleitung ["Volume Snapshots verwalten"](https://docs.ovh.com/de/storage/file-storage/netapp/volume-snapshots/).
+Weitere Informationen finden Sie in der Anleitung ["Volume Snapshots verwalten"](/pages/cloud/storage/file_storage/netapp_volume_snapshots).
 
 ### Begrenzung des Dienstes für die externe Testphase (Beta)
 

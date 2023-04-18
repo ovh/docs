@@ -1,9 +1,6 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
-slug: public-cloud-first-steps
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-section: 'Getting started'
-order: 1
 updated: 2023-01-26
 ---
 
@@ -142,7 +139,7 @@ Regardless of the method that was used to create the SSH keys, you will now have
 
 > [!primary]
 >
-Stored SSH keys are useful for a faster creation of your instances. To change key pairs and add users afterwards, please refer to the guide on [Configuring additional SSH keys](../configuring_additional_ssh_keys/).
+Stored SSH keys are useful for a faster creation of your instances. To change key pairs and add users afterwards, please refer to the guide on [Configuring additional SSH keys](/pages/platform/public-cloud/configuring_additional_ssh_keys).
 >
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `SSH Keys`{.action} in the left-hand navigation bar under "Project Management".
@@ -241,12 +238,12 @@ A user with elevated permissions is automatically created on the instance. The u
 
 > [!primary]
 >
-If you encounter issues with your connection, i.e. errors regarding your SSH keys, please refer to the guide on [Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/).
+If you encounter issues with your connection, i.e. errors regarding your SSH keys, please refer to the guide on [Replacing your lost SSH key pair](/pages/platform/public-cloud/replacing_lost_ssh_key).
 >
 
 > [!primary]
 >
-If you have created an instance without an SSH key, via the OVHcloud API or the OpenStack Horizon interface, you can only add an SSH key to your instance via [rescue mode](https://docs.ovh.com/sg/en/public-cloud/put_an_instance_in_rescue_mode/) by following the instructions set out in [this section of the appropriate guide](../replacing_your_lost_ssh_key_pair/#instructions).
+If you have created an instance without an SSH key, via the OVHcloud API or the OpenStack Horizon interface, you can only add an SSH key to your instance via [rescue mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode) by following the instructions set out in [this section of the appropriate guide](/pages/platform/public-cloud/replacing_lost_ssh_key#instructions).
 >
 
 #### Connecting to a Linux OS instance from Linux OS / Mac
@@ -352,12 +349,12 @@ If a certificate message appears, click on `Yes`{.action}. Next, enter username 
 
 ## Go further
 
-[Backing up an instance](../back-up-instance/)
+[Backing up an instance](/pages/platform/public-cloud/save_an_instance)
 
-[Increasing Public Cloud quota](../increase-public-cloud-quota/)
+[Increasing Public Cloud quota](/pages/platform/public-cloud/increasing_public_cloud_quota)
 
-[Switching from hourly to monthly billing](../change-public-cloud-billing-rate/)
+[Switching from hourly to monthly billing](/pages/platform/public-cloud/changing_hourly_monthly_billing)
 
-[Configuring additional SSH keys](../configuring_additional_ssh_keys/)
+[Configuring additional SSH keys](/pages/platform/public-cloud/configuring_additional_ssh_keys)
 
 Join our community of users on <https://community.ovh.com/en/>.

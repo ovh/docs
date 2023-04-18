@@ -1,9 +1,7 @@
 ---
 title: 'Den Inhaber einer Domain ändern'
-slug: wechsel_des_domaininhabers
 legacy_guide_number: 1350
 excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
-section: Inhaberwechsel
 updated: 2021-03-04
 ---
 
@@ -15,12 +13,12 @@ updated: 2021-03-04
 
 ## Ziel
 
-Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. **Inhaber** bedeutet in diesem Zusammenhang eine Person, die über die Nutzungsrechte an diesem Domainnamen verfügt. (Es kann sich dabei auch um ein Unternehmen handeln.) Unter einem **Inhaberwechsel** versteht man eine rechtsverbindliche Änderung dieser Daten. Zum Beispiel ist der Inhaberwechsel das obligatorische Verfahren bei einer Namensänderung eines Unternehmens.
+Neben der Angabe von [Kontakten](/pages/account/customer/managing_contacts) erfordert die Registrierung eines Domainnamens die Angabe von Informationen zu dessen Inhaber. **Inhaber** bedeutet in diesem Zusammenhang eine Person, die über die Nutzungsrechte an diesem Domainnamen verfügt. (Es kann sich dabei auch um ein Unternehmen handeln.) Unter einem **Inhaberwechsel** versteht man eine rechtsverbindliche Änderung dieser Daten. Zum Beispiel ist der Inhaberwechsel das obligatorische Verfahren bei einer Namensänderung eines Unternehmens.
 
 > [!primary]
 >Bei dieser Operation wird Ihre Domain nicht auf einen anderen OVHcloud-Kundenaccount umgezogen.
 >
->Hierzu müssen Sie die [Kontaktverwaltung](../../customer/verwaltung-der-kontakte/) der Domain anpassen.
+>Hierzu müssen Sie die [Kontaktverwaltung](/pages/account/customer/managing_contacts) der Domain anpassen.
 
 **Diese Anleitung erklärt die notwendigen Schritte zum Inhaberwechsel eines Domainnamens.**
 
@@ -28,7 +26,7 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 - Ihr Domainname ist bei OVHcloud registriert.
-- Sie sind der [Administratorkontakt](../../customer/verwaltung-der-kontakte/) des entsprechenden Domainnamens.
+- Sie sind der [Administratorkontakt](/pages/account/customer/managing_contacts) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des aktuellen Inhabers des Domainnamens, den Inhaberwechsel durchzuführen.
 
 ## In der praktischen Anwendung
@@ -85,7 +83,7 @@ Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werd
 
 > [!warning]
 >
-> Sobald der Inhaber geändert wurde, kann der Domainname für 60 Tage nicht [an einen anderen Registrar übertragen werden](../ausgehender-transfer-einer-generischen-oder-geografischen-domain/). 
+> Sobald der Inhaber geändert wurde, kann der Domainname für 60 Tage nicht [an einen anderen Registrar übertragen werden](/pages/web/domains/transfer_outgoing_domain). 
 
 ### Aktualisierung der Inhaberinformationen <a name="updateownerinformation"></a>
 
@@ -99,6 +97,6 @@ Für diese Aktion müssen die Änderungen nicht per E-Mail bestätigt werden.
 
 ## Weiterführende Informationen
 
-[Verwaltung der Kontakte Ihrer Dienstleistungen](../../customer/verwaltung-der-kontakte/)
+[Verwaltung der Kontakte Ihrer Dienstleistungen](/pages/account/customer/managing_contacts)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

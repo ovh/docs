@@ -1,8 +1,6 @@
 ---
 title: 'Configurare un RAID software'
-slug: raid-software
 excerpt: 'Come ripristinare il volume RAID di un server in seguito al malfunzionamento di un disco'
-section: 'RAID e dischi'
 updated: 2022-10-11
 ---
 
@@ -388,10 +386,10 @@ mount /dev/md4 /home
 
 ## Per saperne di più
 
-[Hot Swap – RAID Software](https://docs.ovh.com/it/dedicated/hotswap-raid-soft/){.external}
+[Hot Swap – RAID Software](/pages/cloud/dedicated/hotswap_raid_soft){.external}
 
-[Hot Swap - RAID Hardware](https://docs.ovh.com/it/dedicated/hotswap-raid-soft/){.external}
+[Hot Swap - RAID Hardware](/pages/cloud/dedicated/hotswap_raid_soft){.external}
 
-[Gestire il RAID Hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (in inglese)
+[Gestire il RAID Hardware](/pages/cloud/dedicated/raid_hard){.external} (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

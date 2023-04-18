@@ -1,9 +1,6 @@
 ---
 title: 'Usuwanie projektu Public Cloud'
 excerpt: 'Dowiedz się, jak usunąć projekt Public Cloud'
-slug: delete_a_project
-section: 'Zarządzanie projektami'
-order: 2
 updated: 2022-10-14
 ---
 
@@ -60,8 +57,8 @@ Po wprowadzeniu i potwierdzeniu hasła, Twój projekt wejdzie w fazę usuwania.
 
 ## Sprawdź również
 
-[Utwórz Twój pierwszy projekt Public Cloud](https://docs.ovh.com/pl/public-cloud/create_a_public_cloud_project/)
+[Utwórz Twój pierwszy projekt Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
 
-[Utwórz pierwszą instancję Public Cloud i połącz się z nią](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
+[Utwórz pierwszą instancję Public Cloud i połącz się z nią](/pages/platform/public-cloud/public-cloud-first-steps)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

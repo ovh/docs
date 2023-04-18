@@ -1,9 +1,6 @@
 ---
 title: 'Gérer et utiliser les mailing lists'
-slug: guide-dutilisation-mailing-list
 excerpt: 'Decouvrez dans ce guide comment utiliser les listes de diffusion.'
-section: 'Fonctionnalités des adresses e-mail'
-order: 4
 hidden: true
 updated: 2020-03-19
 ---

@@ -1,8 +1,6 @@
 ---
 title: 'Bearbeiten der OVHcloud DNS-Zone'
 excerpt: 'Erfahren Sie hier, wie Sie eine DNS-Zone über Ihr Kundencenter bearbeiten'
-slug: webhosting_bearbeiten_der_dns_zone
-section: 'DNS und DNS-Zone'
 updated: 2022-07-07
 ---
 
@@ -23,7 +21,7 @@ Wenn Sie zum Beispiel auf die Website *mydomain.ovh* zugreifen möchten, wird Ih
 
 Aufgrund der Änderungen, die Sie im Kundencenter vornehmen müssen, ist es wichtig, die **DNS Server** und die **DNS-Zone** zu unterscheiden. Die DNS-Zone wird auf der Ebene des **DNS Servers** konfiguriert. 
 
-Informationen zu den **DNS Servern** finden Sie in [unserer Anleitung](../webhosting_allgemeine_informationen_zu_den_dns_servern/).
+Informationen zu den **DNS Servern** finden Sie in [unserer Anleitung](/pages/web/domains/dns_server_general_information).
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -125,7 +123,7 @@ Der DNAME-Eintrag bewirkt also, dass *dname.mydomain.ovh* und *xxx.mydomain.ovh*
 > Der DNAME-Eintrag wird etwa für Änderungen von Unternehmensbezeichnungen verwendet. Er kann auch verwendet werden, wenn ein Benutzer über mehrere Domainendungen (.de, .net, .com, .info, etc.) verfügt, um diese einfach weiterzuleiten.
 >
 
-- **NS** (**N**ame **S**erver): Legt die zu Ihrer DNS-Zone gehörenden DNS Server fest. Wenn zum Beispiel die NS-Einträge Ihrer DNS-Zone die Server *dns19.ovh.net* und *ns19.ovh.net* anzeigen, müssen Sie diese im Tab `DNS Server`{.action} Ihres Kundencenters verwenden. Weitere Informationen finden Sie in unserer Anleitung zu [DNS Servern](../webhosting_allgemeine_informationen_zu_den_dns_servern/).
+- **NS** (**N**ame **S**erver): Legt die zu Ihrer DNS-Zone gehörenden DNS Server fest. Wenn zum Beispiel die NS-Einträge Ihrer DNS-Zone die Server *dns19.ovh.net* und *ns19.ovh.net* anzeigen, müssen Sie diese im Tab `DNS Server`{.action} Ihres Kundencenters verwenden. Weitere Informationen finden Sie in unserer Anleitung zu [DNS Servern](/pages/web/domains/dns_server_general_information).
 
 > [!warning]
 >
@@ -135,7 +133,7 @@ Der DNAME-Eintrag bewirkt also, dass *dname.mydomain.ovh* und *xxx.mydomain.ovh*
 #### E-Mail Einträge
 
 - **MX** (**M**ail e**X**changer): Verbindet einen Domainnamen mit einem E-Mail-Server. Die Adresse *10 mx1.mail.ovh.net* entspricht beispielsweise einem der OVHcloud E-Mail-Server, wenn Sie ein OVHcloud E-Mail-Angebot haben. Ihr E-Mail-Anbieter verfügt wahrscheinlich über mehrere E-Mail-Server. Es müssen daher mehrere MX-Einträge erstellt werden.
-Lesen Sie dazu die Anleitung zum [Hinzufügen eines MX-Eintrags](../webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/).
+Lesen Sie dazu die Anleitung zum [Hinzufügen eines MX-Eintrags](/pages/web/domains/dns_zone_mx).
 
 > [!warning]
 >
@@ -143,7 +141,7 @@ Lesen Sie dazu die Anleitung zum [Hinzufügen eines MX-Eintrags](../webhosting_e
 > Wenn Sie bereits über E-Mail-Dienste bei einem anderen E-Mail-Anbieter verfügen und gleichzeitig die E-Mail-Server Ihres neuen E-Mail-Anbieters hinzufügen (ohne diese zu ersetzen), besteht die Gefahr, dass Sie Ihre E-Mails zufällig bei einem Ihrer beiden Anbieter empfangen.
 > 
 
-- **SPF** (**S**ender **P**olicy **F**ramework): Damit kann potenzieller Identitätsdmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHCloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben. Weitere Informationen finden Sie in der Anleitung zum [SPF-Eintrag](../webhosting_spf-eintrag/).
+- **SPF** (**S**ender **P**olicy **F**ramework): Damit kann potenzieller Identitätsdmissbrauch bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag `v=spf1 include:mx.ovh.com ~all` fest, dass nur die zu Ihrem OVHCloud E-Mail-Dienst gehörenden Server vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben. Weitere Informationen finden Sie in der Anleitung zum [SPF-Eintrag](/pages/web/domains/dns_zone_spf).
 
 - **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Ermöglicht die Überprüfung der Authentizität der Domain des Absenders und die Sicherstellung der Integrität der versandten E-Mail. Der DKIM-Eintrag ist ein aus mehreren Zeichen bestehender Schlüssel. Der DKIM-Schlüssel wird von Ihrem E-Mail-Anbieter bereitgestellt (falls diese Funktion angeboten wird). Sie können ihn in einem TXT-Eintrag eingeben.
 
@@ -270,10 +268,10 @@ Aus diesem Grund und in diesem speziellen Fall können Sie keinen CNAME-Eintrag 
 
 ## Weiterführende Informationen
 
-[DNS-Server ändern](../webhosting_allgemeine_informationen_zu_den_dns_servern/)
+[DNS-Server ändern](/pages/web/domains/dns_server_general_information)
 
-[Einen SPF-Eintrag hinzufügen](../webhosting_spf-eintrag/)
+[Einen SPF-Eintrag hinzufügen](/pages/web/domains/dns_zone_spf)
 
-[DNSSEC](../sichern_sie_ihre_domain_mit_dnssec_ab/)
+[DNSSEC](/pages/web/domains/dns_dnssec)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

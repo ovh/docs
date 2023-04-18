@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van uw e-mailadres in de Courrier-app voor Windows 10
-slug: configuratie-courrier-windows-10
 excerpt: Ontdek hoe u uw MX Plan-e-mailadres kunt instellen in Courrier voor Windows
-section: Windows
 updated: 2018-04-04
 ---
 
@@ -23,7 +21,7 @@ Deze handleiding legt uit hoe u uw MX Plan-e-mailadres kunt instellen in de Cour
 
 > [!primary]
 >
-> Gebruikt u een vorige versie van Windows? Raadpleeg onze handleidingen: [Configuratie van uw e-mailadres in de Courrier-app voor Windows 8](https://docs.ovh.com/nl/emails/ovh_e-mail_handleiding_configuratie_op_windows_8/){.external}.
+> Gebruikt u een vorige versie van Windows? Raadpleeg onze handleidingen: [Configuratie van uw e-mailadres in de Courrier-app voor Windows 8](/pages/web/emails/how_to_configure_windows_10){.external}.
 >
 
 ## Instructies
@@ -90,8 +88,8 @@ OVH heeft ook een web-app die u kunt gebruiken om vanuit uw browser toegang te k
  
 ## Verder
 
-[Configuratie van uw E-mail Pro-account in de Courrier-app voor Windows](https://docs.ovh.com/nl/emails-pro/configuratie-courrier-windows-10/){.external}
+[Configuratie van uw E-mail Pro-account in de Courrier-app voor Windows](/pages/web/emails-pro/how_to_configure_windows_10){.external}
 
-[Configuratie van uw Exchange-account in de Courrier-app voor Windows](https://docs.ovh.com/nl/microsoft-collaborative-solutions/configuratie-courrier-windows-10/){.external}
+[Configuratie van uw Exchange-account in de Courrier-app voor Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10){.external}
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

@@ -1,9 +1,6 @@
 ---
 title: Cold Archive - Overview
-slug: cold-archive/overview
 excerpt: Discover the service, understand the capabilities and billing
-section: Cold Archive Storage Class Specifics
-order: 010
 updated: 2023-01-29
 ---
 
@@ -82,7 +79,7 @@ You can track the different steps of your data by the status of your bucket 
 
 ## Network, upload and retrieval performances  
 
-Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of request per second on bucket, maximum size per object / mpu / part, etc) are available [here](https://docs.ovh.com/asia/en/storage/object-storage/s3/limitations/).
+Cold Archive is a service based on Object Storage - S3 API. Performance and limitations (number of buckets, account, maximum bandwidth per connection, number of request per second on bucket, maximum size per object / mpu / part, etc) are available [here](/pages/cloud/storage/object_storage/s3_limitations).
 
 To upload your data, the maximum bandwidth is **1 Gbps per logical connection** and the number of connections that can be used in parallel is **unlimited**.
 
@@ -145,7 +142,7 @@ It is possible to start archiving a container with less than 1 TB of data, but t
 
 ## Go further
 
-Operate your lifecycle and learn how to create buckets, archive, retrieve data, list metadata, reading [this guide](https://docs.ovh.com/asia/en/storage/object-storage/cold-archive/getting-started/).
+Operate your lifecycle and learn how to create buckets, archive, retrieve data, list metadata, reading [this guide](/pages/cloud/storage/object_storage/cold_archive_getting_started).
 
 [All the Object Storage documentation](https://docs.ovh.com/asia/en/storage/object-storage/).
 

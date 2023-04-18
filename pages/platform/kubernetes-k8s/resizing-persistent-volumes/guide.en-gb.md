@@ -1,9 +1,6 @@
 ---
 title: Resizing Persistent Volumes
-slug: resizing-persistent-volumes
 excerpt: 'Find out how to resize Persistent Volumes on OVHcloud Managed Kubernetes'
-section: Storage
-order: 1
 updated: 2021-10-19
 ---
 
@@ -19,8 +16,7 @@ updated: 2021-10-19
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -42,9 +38,9 @@ Since Kubernetes 1.11, support for expanding PersistentVolumeClaims (PVCs) is en
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
-You also need to know how PVs are handled on OVHcloud Managed Kubernetes service, please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) guide.
+You also need to know how PVs are handled on OVHcloud Managed Kubernetes service, please refer to the [Persistent Volumes on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/persistent-volumes-on-ovh-managed-kubernetes) guide.
 
 > [!warning]
 > When a __Persistent Volumes__ resource is created inside a Managed Kubernetes cluster, an associated Public Cloud __Block Storage__ volume is automatically created with it.
@@ -417,6 +413,6 @@ mysql> SHOW TABLES;
 
 Now you can expand the Persistent Volumes on your OVHcloud Managed Kubernetes cluster, and adapt them to the live of your data.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/gb/en/kubernetes/).
 
 Join our [community of users](https://community.ovh.com/en/).

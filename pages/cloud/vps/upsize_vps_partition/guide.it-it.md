@@ -1,7 +1,5 @@
 ---
 title: 'Partizionare un VPS in seguito a un upgrade'
-slug: partizionare-vps-in-seguito-a-un-upgrade
-section: 'Per iniziare'
 updated: 2021-05-18
 ---
 
@@ -23,7 +21,7 @@ updated: 2021-05-18
 ## Prerequisiti
 
 - Avere un accesso amministratore al VPS (Windows)
-- Aver riavviato il server in [Rescue mode](https://docs.ovh.com/it/vps/rescue/)(Linux)
+- Aver riavviato il server in [Rescue mode](/pages/cloud/vps/rescue)(Linux)
 
 ## Procedura
 

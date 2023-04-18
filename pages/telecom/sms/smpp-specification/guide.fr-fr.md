@@ -1,9 +1,6 @@
 ---
 title: Spécifications techniques du SMPP
-slug: smpp-specifications
 excerpt: 'Découvrez les spécifications techniques du SMPP'
-section: SMPP
-order: 02
 updated: 2023-03-31
 ---
 
@@ -384,4 +381,4 @@ La version du protocole est le 3.4.
 
 [Documentation technique SMPP](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)
 
-[Gestion d'un compte SMS SMPP](https://docs.ovh.com/fr/sms/smpp-control-panel/)
+[Gestion d'un compte SMS SMPP](/pages/telecom/sms/smpp-control-panel)

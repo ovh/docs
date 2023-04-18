@@ -1,9 +1,6 @@
 ---
 title: "Ogranicz dostęp przez IP do Panelu klienta OVHcloud"
-slug: ovhcloud-control-panel-ip-restriction
 excerpt: "Dowiedz się, jak zabezpieczyć Twoje konto OVHcloud ograniczając dostęp do adresów IP"
-section: Bezpieczeństwo
-order: 03
 updated: 2022-12-12
 ---
 
@@ -18,7 +15,7 @@ updated: 2022-12-12
 OVHcloud daje do Twojej dyspozycji opcje służące zwiększeniu bezpieczeństwa Twojego Panelu klienta OVHcloud i Twoich usług.
 
 W szczególności możesz ograniczyć dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) do niektórych adresów IP.
-Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [weryfikację dwuetapową](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/), pozwala na optymalne zabezpieczenie Twojego panelu klienta OVHcloud przed ewentualnymi próbami włamania.
+Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [weryfikację dwuetapową](/pages/account/customer/secure-ovhcloud-account-with-2fa), pozwala na optymalne zabezpieczenie Twojego panelu klienta OVHcloud przed ewentualnymi próbami włamania.
 
 **Dowiedz się, jak zabezpieczyć konto OVHcloud ograniczając dostęp do adresów IP**
 
@@ -30,7 +27,7 @@ Uruchomienie tej opcji, w połączeniu z zabezpieczeniem Twojego konta przez [we
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
+- Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](/pages/account/customer/manage-ovh-password).
   
 ## W praktyce
 
@@ -155,7 +152,7 @@ Po wprowadzeniu wszystkich publicznych adresów IP w sekcji `Skonfigurowane IP`,
 
 ## Sprawdź również
 
-[Wprowadzić weryfikację dwuetapową w Panelu klienta OVHcloud](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)
+[Wprowadzić weryfikację dwuetapową w Panelu klienta OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

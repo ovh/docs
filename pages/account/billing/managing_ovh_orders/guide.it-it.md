@@ -1,8 +1,6 @@
 ---
 title: Gestire gli ordini OVHcloud
-slug: gestire-ordini-ovh
 excerpt: Come monitorare i tuoi ordini dallo Spazio Cliente OVHcloud
-section: Gestione di ordini, fatture e servizi
 updated: 2022-05-06
 ---
 
@@ -40,7 +38,7 @@ Il buono d'ordine viene creato al momento dell'ordine. Elenca i prodotti ordinat
 |---|---|
 |1|Numero, data di creazione e data di scadenza del buono d'ordine. Se è scaduto, dovrai inoltrare nuovamente l'ordine.|
 |2|I tuoi dati di fatturazione. Devi essere identificato per visualizzare e pagare il tuo buono d'ordine.|
-|3|Metodi di pagamento registrati sul tuo account cliente. Per maggiori informazioni, consulta la guida [Gestire i metodi di pagamento](https://docs.ovh.com/it/billing/manage-payment-methods/).|
+|3|Metodi di pagamento registrati sul tuo account cliente. Per maggiori informazioni, consulta la guida [Gestire i metodi di pagamento](/pages/account/billing/manage-payment-methods).|
 |4|Metodi di pagamento disponibili. Verrai proposto solo per i metodi di pagamento autorizzati nel paese di origine dell'account o quelli associati al tipo di account registrato.|
 
 È possibile recuperare il buono d'ordine in qualsiasi momento direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), come spiegato di seguito.
@@ -99,7 +97,7 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 > Il diritto di recesso riguarda soltanto i privati e si applica solo ai nuovi ordini. Non è quindi applicabile nei seguenti casi:
 >
 > - rinnovi;
-> - se il tuo account cliente OVHcloud è di [tipo diverso da Privato](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#modifica-il-tipo-di-account).
+> - se il tuo account cliente OVHcloud è di [tipo diverso da Privato](/pages/account/customer/all_about_username#modifica-il-tipo-di-account).
 >
 > Inoltre, il diritto di recesso non si applica agli ordini non pagati, in quanto questi vengono automaticamente annullati quando scade il buono d'ordine.
 >

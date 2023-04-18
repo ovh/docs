@@ -1,9 +1,6 @@
 ---
 title: Como rescindir os seus serviços OVHcloud
 excerpt: Saiba como interromper as subscrições da OVHcloud
-slug: how-to-cancel-your-services
-section: Gerir as encomendas, faturas e serviços
-order: 03
 updated: 2022-03-22
 ---
 
@@ -46,7 +43,7 @@ Isto implica que, antes de qualquer rescisão, deve ter a **certeza**:
 >
 > A rescisão só pode ser aplicada se estiverem preenchidas as seguintes condições:
 >
-> * é o "contacto administrador" do serviço (para mais informações, consulte [este guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/#definicao));
+> * é o "contacto administrador" do serviço (para mais informações, consulte [este guia](/pages/account/customer/managing_contacts#definicao));
 > * o serviço não está em renovação manual;
 > * o serviço não é suspenso, nomeadamente devido a uma falta de regularização de uma fatura.
 >
@@ -104,7 +101,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Para rescindir a sua oferta [Managed bare metal](https://www.ovhcloud.com/pt/managed-bare-metal/), siga as instruções deste [guia](https://docs.ovh.com/pt/managed-bare-metal/como-rescindir-o-managed-bare-metal/).
+Para rescindir a sua oferta [Managed bare metal](https://www.ovhcloud.com/pt/managed-bare-metal/), siga as instruções deste [guia](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### Servidor NAS-HA <a name="nas"></a>
 
@@ -134,7 +131,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Para rescindir a sua oferta [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), siga as instruções deste [guia](https://docs.ovh.com/pt/private-cloud/como-rescindir-o-hosted-private-cloud/).
+Para rescindir a sua oferta [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), siga as instruções deste [guia](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -150,9 +147,9 @@ Cada serviço [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) pode ser
 
 ![public cloud instance deleet](images/pci-deletion.png){.thumbnail}
 
-O Public Cloud da OVHcloud baseia-se no princípio do *Pay as you go* (mais pormenores na nossa página de [informações sobre o modo de faturação Public Cloud](https://docs.ovh.com/pt/public-cloud/informacoes-sobre-o-metodo-de-faturacao-cloud/)). No final do mês, apenas paga pelo tempo de utilização efetivo dos recursos.
+O Public Cloud da OVHcloud baseia-se no princípio do *Pay as you go* (mais pormenores na nossa página de [informações sobre o modo de faturação Public Cloud](/pages/platform/public-cloud/analyze_billing)). No final do mês, apenas paga pelo tempo de utilização efetivo dos recursos.
 
-Também pode [consultar o seu consumo atual](https://docs.ovh.com/pt/public-cloud/informacoes-sobre-o-metodo-de-faturacao-cloud/#consultar-o-consumo-atual) a partir da Área de Cliente OVHcloud e ser alertado por e-mail quando a projeção do seu consumo ultrapassar um determinado limite.
+Também pode [consultar o seu consumo atual](/pages/platform/public-cloud/analyze_billing#consultar-o-consumo-atual) a partir da Área de Cliente OVHcloud e ser alertado por e-mail quando a projeção do seu consumo ultrapassar um determinado limite.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -216,15 +213,15 @@ Receberá então um e-mail com o procedimento de encerramento do seu MX Plan, qu
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Para rescindir a sua oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/), siga as instruções deste [guia](https://docs.ovh.com/pt/emails-pro/gestao-faturacao-emailpro/#eliminar-contas).
+Para rescindir a sua oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/), siga as instruções deste [guia](/pages/web/emails-pro/manage_billing_emailpro#eliminar-contas).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Para rescindir a sua oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/), siga as instruções deste [guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/#eliminar-contas).
+Para rescindir a sua oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/), siga as instruções deste [guia](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-contas).
 
 #### Private Exchange <a name="private"></a>
 
-Para rescindir a sua oferta [Private Exchange](https://www.ovhcloud.com/pt/emails/private-exchange/), siga as instruções deste [guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/gestao-faturacao-exchange/#eliminar-contas_1).
+Para rescindir a sua oferta [Private Exchange](https://www.ovhcloud.com/pt/emails/private-exchange/), siga as instruções deste [guia](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-contas_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
@@ -232,7 +229,7 @@ Para rescindir a sua oferta [Office 365 csp 1](https://www.ovhcloud.com/pt/colla
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Para rescindir a sua oferta [Office 365 csp 2](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/reseller/), siga as instruções deste [guia](https://docs.ovh.com/pt/microsoft-collaborative-solutions/encomendar_e_gerir_um_grupo_de_licencas_office_365_revendedor_csp2_ovh/#gerir-as-suas-subscricoes).
+Para rescindir a sua oferta [Office 365 csp 2](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/reseller/), siga as instruções deste [guia](/pages/web/microsoft-collaborative-solutions/office_csp2#gerir-as-suas-subscricoes).
 
 #### Sharepoint <a name="sharepoint"></a>
 
@@ -275,6 +272,6 @@ Por fim, clique em `Confirmar a anulação`{.action}.
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/)
+[Gerir a renovação dos serviços](/pages/account/billing/how_to_use_automatic_renewal)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

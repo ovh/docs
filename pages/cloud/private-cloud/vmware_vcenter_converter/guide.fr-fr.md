@@ -1,8 +1,6 @@
 ---
 title: VMware vCenter Converter
-slug: vmware-vcenter-converter
 legacy_guide_number: '7766516'
-section: Outils de migration des Machines Virtuelles
 updated: 2018-03-26
 ---
 

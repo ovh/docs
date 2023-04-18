@@ -1,10 +1,8 @@
 ---
 title: Changing user rights
-slug: change-users-rights
 routes:
-    canonical: 'https://docs.ovh.com/us/en/private-cloud/change-users-rights/'
+    canonical: '/pages/cloud/private-cloud/change_users_rights'
 excerpt: Find out how to manage user permissions for the vSphere client
-section: OVHcloud Features
 updated: 2020-11-18
 ---
 

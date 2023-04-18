@@ -1,8 +1,5 @@
 ---
 title: "Backup des FTP-Speicherplatzes Ihres Cloud Web Hostings abrufen"
-slug: backup_ftp_cloud_web
-section: Backups
-order: 01
 updated: 2022-09-13
 ---
 
@@ -23,7 +20,7 @@ Ihr Cloud Web Hosting verfügt über einen Speicherplatz, in dem Sie Ihre Websit
 > 
 > Die von OVHcloud angebotenen Backups für Cloud Web Hostings sind nicht vertraglich festgelegt. Sie werden zur Ergänzung Ihrer eigenen Backup-Ressourcen für Notsituationen bereitgestellt. Wir empfehlen Ihnen, regelmäßig Ihre eigenen Sicherheitsbackups durchzuführen, um Datenverluste zu vermeiden.
 > 
-> Wenn Sie ein Sicherheitsbackup für eine Website erstellen, die eine Datenbank verwendet, erstellen Sie auch ein Backup dieser Datenbank. Lesen Sie dazu unsere Anleitung zum [Abrufen eines Backups Ihrer Datenbank](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
+> Wenn Sie ein Sicherheitsbackup für eine Website erstellen, die eine Datenbank verwendet, erstellen Sie auch ein Backup dieser Datenbank. Lesen Sie dazu unsere Anleitung zum [Abrufen eines Backups Ihrer Datenbank](/pages/web/hosting/sql_database_export).
 > 
 
 **In dieser Anleitung erfahren Sie, wie Sie ein FTP-Backup Ihres Cloud Web Hostings abrufen und wiederherstellen.**
@@ -86,7 +83,7 @@ Die heruntergeladene Datei ist im Format *.tar.gz*.
 
 ### Backup wiederherstellen
 
-Sobald Ihre Dateien heruntergeladen wurden, können Sie sich [auf Ihrem FTP-Speicherplatz einloggen](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/), zum Beispiel mit der FTP-Software [Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/), und dann die betreffenden Dateien des Hostings mit denen aus dem Backup ersetzen.
+Sobald Ihre Dateien heruntergeladen wurden, können Sie sich [auf Ihrem FTP-Speicherplatz einloggen](/pages/web/hosting/ftp_connection), zum Beispiel mit der FTP-Software [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide), und dann die betreffenden Dateien des Hostings mit denen aus dem Backup ersetzen.
 
 > [!primary]
 >
@@ -95,9 +92,9 @@ Sobald Ihre Dateien heruntergeladen wurden, können Sie sich [auf Ihrem FTP-Spei
 
 ## Weiterführende Informationen 
 
-[Mit dem Speicherplatz Ihres Webhostings verbinden](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)
+[Mit dem Speicherplatz Ihres Webhostings verbinden](/pages/web/hosting/ftp_connection)
 
-[Verwendung von Filezilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
+[Verwendung von Filezilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

@@ -1,7 +1,5 @@
 ---
 title: Example- Discord
-slug: discord
-section: Activity
 updated: 2021-05-11
 ---
 
@@ -13,11 +11,11 @@ updated: 2021-05-11
 
 The following example activity script will post a message to a Discord channel every time it is triggered.
 
-To use it, paste it as-is into a `.js` file and then add it as a new [script integration](../#installing).  Be sure to specify which events it should trigger on using the `--events` switch, and if desired which `--environments` you want.
+To use it, paste it as-is into a `.js` file and then add it as a new [script integration](/pages/web/web-paas/integrations-activity#installing).  Be sure to specify which events it should trigger on using the `--events` switch, and if desired which `--environments` you want.
 
 Second, create a new Discord webhook through your Discord administrative interface.  [Discord's documentation](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks) explains how to do so.  You can name the bot however you wish, and specify the channel to which it should post messages.  Once it's created, click the "Copy Webhook URL" button to get the URL.
 
-Third, add that URL to your project as a [variable](../../development-variables) named `DISCORD_URL`.
+Third, add that URL to your project as a [variable](/pages/web/web-paas/development-variables) named `DISCORD_URL`.
 
 ```bash
 webpaas variable:create --level project --name DISCORD_URL --value <Long Discord URL here>

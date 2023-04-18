@@ -1,9 +1,6 @@
 ---
 title: Host de substituição
 excerpt: Descubra o mecanismo de substituição de um host
-slug: os_hosts_sparesuplentes
-section: Funcionalidades da OVHcloud
-order: 04
 updated: 2020-06-29
 ---
 **Última atualização: 26/08/2020**
@@ -24,7 +21,7 @@ Para garantir a continuidade de serviço em caso de avaria de um dos hosts, a OV
 
 Assim que este host for entregue, receberá um e-mail indicando-lhe todas as informações sobre este host, assim como o seu endereço IP que lhe permite encontrá-lo facilmente na sua interface vSphere.
 
-Por predefinição, o serviço HA ([High Availability](../vmware-ha-high-availability)) de VMware é ativado no seu cluster. Se o tiver deixado ativo, as suas máquinas virtuais irão reiniciar automaticamente. Se o serviço DRS (Distributed Ressources Scheduler) for ativado e configurado em modo “fully automated”, a repartição da carga nos hosts do seu cluster será igualmente efetuada de forma automática.
+Por predefinição, o serviço HA ([High Availability](/pages/cloud/private-cloud/vmware_ha_high_availability)) de VMware é ativado no seu cluster. Se o tiver deixado ativo, as suas máquinas virtuais irão reiniciar automaticamente. Se o serviço DRS (Distributed Ressources Scheduler) for ativado e configurado em modo “fully automated”, a repartição da carga nos hosts do seu cluster será igualmente efetuada de forma automática.
 
 > [!warning]
 > 
@@ -35,7 +32,7 @@ Por predefinição, o serviço HA ([High Availability](../vmware-ha-high-availab
 
 Uma vez o host original novamente funcional (depois de reparado), poderá devolver um dos dois hosts (host de substituição ou host original).
 
-Recomendamos que nos devolva o host original para que lhe possamos aplicar uma série de testes após esse incidente (para evitar eventuais novas avarias). Assim, poderá conservar o host de substituição. Para isso, pode consultar o manual [Eliminar um servidor host](../eliminacao-servidor-host/)
+Recomendamos que nos devolva o host original para que lhe possamos aplicar uma série de testes após esse incidente (para evitar eventuais novas avarias). Assim, poderá conservar o host de substituição. Para isso, pode consultar o manual [Eliminar um servidor host](/pages/cloud/private-cloud/delete_host)
 
 A OVHcloud poderá recuperar automaticamente o host original assim que este for retirado.
 

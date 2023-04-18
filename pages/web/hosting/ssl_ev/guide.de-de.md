@@ -1,9 +1,6 @@
 ---
 title: "EV SSL-Zertifikat für Ihre Website verwenden"
-slug: ssl-ev
 excerpt: "Erfahren Sie hier, wie Sie ein EV SSL-Zertifikat für Ihr OVHcloud Webhosting bestellen und installieren"
-section: SSL
-order: 03
 updated: 2022-12-13
 ---
  
@@ -17,7 +14,7 @@ updated: 2022-12-13
 
 Secure Socket Layer (SSL) Zertifikate erlauben es, Verbindungen von oder zu Ihrer Website zu verschlüsseln. So wird verhindert, dass unbefugte Personen oder Roboter auf ausgehende und eingehende Anfragen von Ihrer Website zugreifen können.
 
-OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für die [Webhostings](https://www.ovhcloud.com/de/web-hosting/) an, wie in unserer Anleitung "[SSL-Zertifikat auf einem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/)" beschrieben. SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
+OVHcloud bietet verschiedene Arten von SSL-Zertifikaten für die [Webhostings](https://www.ovhcloud.com/de/web-hosting/) an, wie in unserer Anleitung "[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web/hosting/ssl_on_webhosting)" beschrieben. SSL-Zertifikate sind für die Sicherheit Ihrer Website unentbehrlich.
 
 Es gibt drei Arten von SSL-Zertifikaten:
 
@@ -66,7 +63,7 @@ Sie können über [diese Adresse](https://help.sectigostore.com/support/solution
 
 #### 1.1 - Für eine bereits bei OVHcloud existierende Domain und Hosting
 
-Lesen Sie unsere Anleitung "[SSL-Zertifikat auf Ihrem Webhosting verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/)" und wählen Sie im Bestellvorgang das **EV SSL-Zertifikat** aus.
+Lesen Sie unsere Anleitung "[SSL-Zertifikat auf Ihrem Webhosting verwalten](/pages/web/hosting/ssl_on_webhosting)" und wählen Sie im Bestellvorgang das **EV SSL-Zertifikat** aus.
 
 Geben Sie die von **Sectigo** angeforderten Informationen ein, bevor Ihnen das EV SSL-Zertifikat ausgestellt wird. 
 
@@ -162,7 +159,7 @@ Sobald die Überprüfung durch Sectigo abgeschlossen ist, werden Sie telefonisch
 
 Sobald Sectigo alle Überprüfungen durchgeführt hat, erstellen ihre Dienste das EV SSL-Zertifikat und übermitteln die für dessen Installation auf dem Hosting erforderlichen Informationen an OVHcloud.
 
-Sie müssen nur noch [Ihre Website auf HTTPS umstellen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/), um Ihr EV SSL-Zertifikat vollständig zu nutzen.
+Sie müssen nur noch [Ihre Website auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website), um Ihr EV SSL-Zertifikat vollständig zu nutzen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
@@ -170,9 +167,9 @@ Sie müssen nur noch [Ihre Website auf HTTPS umstellen](https://docs.ovh.com/de/
 
 [Beschreibung der von Sectigo durchgeführten Überprüfungen](https://help.sectigostore.com/support/solutions/articles/22000218717-extended-validation-ev-){.external}
 
-[SSL-Zertifikate auf Webhostings verwalten](https://docs.ovh.com/de/hosting/ssl-zertifikate-auf-webhostings-verwalten/)
+[SSL-Zertifikate auf Webhostings verwalten](/pages/web/hosting/ssl_on_webhosting)
 
-[Ihre Website auf HTTPS umstellen](https://docs.ovh.com/de/hosting/website-umstellen-https-ssl/)
+[Ihre Website auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

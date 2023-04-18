@@ -1,12 +1,9 @@
 ---
 title: Configuración de NAT para redirecciones de puertos con NSX (EN)
-slug: nsx-configure-nat-redirection
 excerpt: Learn how to configure NAT to create port redirections
-section: NSX
-order: 07
 updated: 2023-02-27
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-configure-nat-redirection/'
+    canonical: '/pages/cloud/private-cloud/nsx-07-configure-nat-redirection'
 ---
 
 **Last updated 27th February 2023**
@@ -25,7 +22,7 @@ routes:
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials.
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Having **NSX** deployed with two segments configured in your NSX configuration, you can use our guide on [segment management in NSX](https://docs.ovh.com/es/private-cloud/nsx-segment-management/) for more information.
+- Having **NSX** deployed with two segments configured in your NSX configuration, you can use our guide on [segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management) for more information.
 
 ## Instructions
 
@@ -81,9 +78,9 @@ The rule is created and active.
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX](https://docs.ovh.com/es/private-cloud/nsx-first-steps/)
+[Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-[Segment management in NSX](https://docs.ovh.com/es/private-cloud/nsx-segment-management/)
+[Segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
 [VMware NAT in NSX documentation](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-7AD2C384-4303-4D6C-A44A-DEF45AA18A92.html)
 

@@ -1,8 +1,6 @@
 ---
 title: 'Caricare e recuperare dati su un server dedicato tramite il protocollo SFTP'
-slug: caricare-e-recuperare-dati-via-sftp
 excerpt: 'Come trasferire dati da un server dedicato a un computer personale e viceversa'
-section: Tutorial
 updated: 2021-05-18
 ---
 
@@ -34,9 +32,9 @@ OVHcloud non potrà fornirti assistenza.
 
 ### Utilizza FileZilla per recuperare e salvare i tuoi dati
 
-Il protocollo SFTP può essere utilizzato per trasferire file tramite una connessione sicura (SSH). In questo scenario esistono due possibilità: accedendo al server con un accesso regolare o accedendo in [modalità Rescue](../rescue_mode/).
+Il protocollo SFTP può essere utilizzato per trasferire file tramite una connessione sicura (SSH). In questo scenario esistono due possibilità: accedendo al server con un accesso regolare o accedendo in [modalità Rescue](/pages/cloud/dedicated/rescue_mode).
 
-Di default, un server che utilizza un sistema operativo GNU/Linux avrà un accesso SSH attraverso la porta 22. Questa porta può essere già stata modificata (ad esempio, seguendo la [nostra guida per proteggere un server dedicato](../mettere-in-sicurezza-un-server-dedicato/)).
+Di default, un server che utilizza un sistema operativo GNU/Linux avrà un accesso SSH attraverso la porta 22. Questa porta può essere già stata modificata (ad esempio, seguendo la [nostra guida per proteggere un server dedicato](/pages/cloud/dedicated/securing-a-dedicated-server)).
 
 #### **Se hai accesso al tuo server**
 
@@ -56,7 +54,7 @@ Lo stato di avanzamento del trasferimento dei dati viene mostrato in fondo all'i
 
 #### **Se il tuo server è in modalità Rescue**
 
-In modalità Rescue è necessario eseguire il mount della partizione. Per effettuare questa operazione, segui le indicazioni fornite in [questa guida](../rescue_mode/).
+In modalità Rescue è necessario eseguire il mount della partizione. Per effettuare questa operazione, segui le indicazioni fornite in [questa guida](/pages/cloud/dedicated/rescue_mode).
 
 Una volta salita la partizione, utilizza il client FileZilla come descritto sopra utilizzando la porta 22 per connettersi al tuo server.
 
@@ -71,8 +69,8 @@ Se hai creato correttamente il punto di mount, i dati si trovano nella directory
 
 ## Per saperne di più
 
-[Attivare e utilizzare il Rescue mode](../rescue_mode/)
+[Attivare e utilizzare il Rescue mode](/pages/cloud/dedicated/rescue_mode)
 
-[Mettere in sicurezza un server dedicato](../mettere-in-sicurezza-un-server-dedicato/)
+[Mettere in sicurezza un server dedicato](/pages/cloud/dedicated/securing-a-dedicated-server)
 
 Contatta la nostra community di utenti all’indirizzo <https://community.ovh.com/en/>.

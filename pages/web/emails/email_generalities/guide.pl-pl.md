@@ -1,10 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą MX Plan'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan'
-slug: hosting_www_informacje_ogolne_o_kontach_e-mail_ovh
 legacy_guide_number: g1474
-section: 'Pierwsze kroki'
-order: 01
 updated: 2021-07-19
 ---
 
@@ -58,7 +55,7 @@ W oknie, które się wyświetla, wprowadź wymagane informacje:
 |Imię|Wprowadź imię.|
 |Nazwisko|Wprowadź nazwisko.|
 |Nazwa, która będzie się wyświetlać.|Wpisz nazwę nadawcy, która będzie się wyświetlać podczas wysyłki wiadomości e-mail przy użyciu tego konta.|
-|Hasło|[Wpisz hasło](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/) i potwierdź je. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.|
+|Hasło|[Wpisz hasło](/pages/account/customer/manage-ovh-password) i potwierdź je. Ze względów bezpieczeństwa zalecamy nie używać dwa razy tego samego hasła. Najlepiej wybrać hasło nie mające żadnego związku z Twoimi danymi osobistymi (należy unikać używania imienia, nazwiska, daty urodzenia, etc.) i regularnie je zmieniać.|
 
 Po uzupełnieniu pól kliknij `Dalej`{.action}, a następnie sprawdź informacje, które wyświetlą się w podsumowaniu. Jeśli są prawidłowe, kliknij `Zatwierdź`{.action}. Wykonaj czynności tego etapu tyle razy, ile to konieczne, w zależności od liczby kont, które posiadasz.
 
@@ -72,7 +69,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz
 
 Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovh.pl/mail/), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web App (OWA)](https://docs.ovh.com/pl/emails/korzystanie-owa/).
+Podczas pierwszego logowania do interfejsu Webmail zostaniesz poproszony o określenie języka interfejsu oraz Twojej strefy czasowej. Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail OWA, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail Outlook Web App (OWA)](/pages/web/emails/email_owa).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -82,9 +79,9 @@ Aby używać Twojego konta e-mail w programie zewnętrznym, skonfiguruj to konto
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/pl/emails/konfiguracja-poczta-windows-10/)|[Outlook Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/)|[Mail macOS (najnowsza wersja)](https://docs.ovh.com/pl/emails/konfiguracja-mail-macos/)|[Android (najnowsza wersja)](https://docs.ovh.com/pl/emails/konfiguracja-android/)|
-|[Thunderbird na Windows](https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016-mac/)|[E-mail na iPhone lub iPad](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/)|
-|||[Thunderbird na Mac](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac/)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[Mail macOS (najnowsza wersja)](/pages/web/emails/how_to_configure_mail_macos)|[Android (najnowsza wersja)](/pages/web/emails/how_to_configure_android)|
+|[Thunderbird na Windows](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016-mac/)|[E-mail na iPhone lub iPad](/pages/web/emails/how_to_configure_ios)|
+|||[Thunderbird na Mac](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
 Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
@@ -104,7 +101,7 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
 > [!warning]
 >
-> Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
+> Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](/pl/emails/) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
 >
 
 #### Zaawansowane funkcje
@@ -115,7 +112,7 @@ Chcesz zwiększyć bezpieczeństwo dostępu do Twoich kont e-mail.
 
 Możesz to zrobić, ustawiając politykę bezpieczeństwa Twojego rozwiązania MX Plan.
 
-Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie polityką bezpieczeństwa usługi e-mail](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/).
+Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie polityką bezpieczeństwa usługi e-mail](/pages/web/microsoft-collaborative-solutions/exchange_security_policy).
 
 ##### **Przekierowania**
 
@@ -125,33 +122,33 @@ W tym celu należy utworzyć przekierowanie.
 
 Możesz to zrobić na dwa sposoby:
 
-- utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/#przyklad-1-przekierowanie-e-maili-na-inny-adres).
+- utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa#przyklad-1-przekierowanie-e-maili-na-inny-adres).
 
-- utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/#nowa-wersja-uslugi-mx-plan_1).
+- utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web/emails/feature_redirections#nowa-wersja-uslugi-mx-plan_1).
 
 ##### **Autoresponder**
 
 Musisz wyjechać na urlop lub nie będziesz mieć dostępu do swojego konta e-mail przez pewien czas.
 
-Następnie możesz utworzyć automatyczną skrzynkę głosową. Zapoznaj się z naszym przewodnikiem [Automatyczna sekretarka w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
+Następnie możesz utworzyć automatyczną skrzynkę głosową. Zapoznaj się z naszym przewodnikiem [Automatyczna sekretarka w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ##### **Delegacje**
 
 Chcesz wysłać wiadomość e-mail z Twojego osobistego adresu e-mail **zamiast** lub **z innego adresu** e-mail Twojej domeny.
 
-W tym celu skonfiguruj delegowanie odpowiedniego adresu e-mail. Zapraszamy do zapoznania się z naszym przewodnikiem Delegowanie [uprawnień do konta](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/).
+W tym celu skonfiguruj delegowanie odpowiedniego adresu e-mail. Zapraszamy do zapoznania się z naszym przewodnikiem Delegowanie [uprawnień do konta](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ##### **Mailing-lists**
 
 Chcesz regularnie wysyłać newsletter do swoich kontaktów.
 
-W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie listami mailingowymi](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) i korzystanie z nich".
+W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie listami mailingowymi](/pages/web/emails/feature_mailing_list) i korzystanie z nich".
 
 ##### **Stopka strony**
 
 Chcesz zastosować globalny podpis do wszystkich adresów e-mail Twojej domeny.
 
-Opcja "Stopka strony" pozwala na konfigurację, która jest dostępna w panelu klienta. Zapraszamy do zapoznania się z naszym przewodnikiem [Tworzenie automatycznych podpisów](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczny_podpis_-_disclaimer/).
+Opcja "Stopka strony" pozwala na konfigurację, która jest dostępna w panelu klienta. Zapraszamy do zapoznania się z naszym przewodnikiem [Tworzenie automatycznych podpisów](/pages/web/microsoft-collaborative-solutions/feature_footers).
 
 ### Poprzednia wersja usługi MX Plan <a name="oldmxplan"></a>
 
@@ -188,7 +185,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. W tym celu możesz
 
 Zaloguj się na stronie [Logowanie do interfejsu Webmail](https://www.ovh.pl/mail/), po czym wprowadź odpowiedni adres e-mail oraz hasło. Kliknij następnie przycisk `Logowanie`{.action}.
 
-Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/).
+Wyświetli się wówczas Twoja skrzynka odbiorcza. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](/pages/web/emails/email_roundcube).
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
@@ -198,9 +195,9 @@ Aby używać Twojego konta e-mail w programie zewnętrznym, skonfiguruj to konto
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10](https://docs.ovh.com/pl/emails/konfiguracja-poczta-windows-10/)|[Outlook Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/)|[Mail macOS (najnowsza wersja)](https://docs.ovh.com/pl/emails/konfiguracja-mail-macos/)|[Android (najnowsza wersja)](https://docs.ovh.com/pl/emails/konfiguracja-android/)|
-|[Thunderbird na Windows](https://docs.ovh.com/pl/emails/konfiguracja_konta_e-mail_w_programie_thunderbird/)|[Outlook Mac OS](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016-mac/)|[E-mail na iPhone lub iPad](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_na_iphone_ios_91/)|
-|||[Thunderbird na Mac](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_konta_e-mail_w_programie_thunderbird_mac/)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[Mail macOS (najnowsza wersja)](/pages/web/emails/how_to_configure_mail_macos)|[Android (najnowsza wersja)](/pages/web/emails/how_to_configure_android)|
+|[Thunderbird na Windows](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016-mac/)|[E-mail na iPhone lub iPad](/pages/web/emails/how_to_configure_ios)|
+|||[Thunderbird na Mac](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
 Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
@@ -220,7 +217,7 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
 > [!warning]
 >
-> Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
+> Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](/pl/emails/) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
 
 #### Zaawansowane funkcje
 
@@ -228,30 +225,30 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
 Chcesz przekierować Twoje e-maile na innego adresata, utworzyć alias lub systematycznie utworzyć kopię innego konta e-mail.
 
-W tym celu należy utworzyć przekierowanie. Zapraszamy do zapoznania się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/#poprzednia-wersja-uslugi-mx-plan).
+W tym celu należy utworzyć przekierowanie. Zapraszamy do zapoznania się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web/emails/feature_redirections#poprzednia-wersja-uslugi-mx-plan).
 
 ##### **Autoresponder**
 
 Musisz wyjechać na urlop lub nie będziesz mieć dostępu do swojego konta e-mail przez pewien czas.
 
-Następnie możesz użyć automatycznej autorespondera na Twoim koncie e-mail. Zapraszamy do zapoznania się z naszym przewodnikiem [Utwórz autoresponder dla konta e-mail](https://docs.ovh.com/pl/emails/przewodnik_dotyczacy_aktywacji_autorespondera/).
+Następnie możesz użyć automatycznej autorespondera na Twoim koncie e-mail. Zapraszamy do zapoznania się z naszym przewodnikiem [Utwórz autoresponder dla konta e-mail](/pages/web/emails/feature_auto_responses).
 
 ##### **Delegacje**
 
 Chcesz **przekazać całą usługę e-mail jednej domeny innemu kontu OVHcloud** lub **przekazać jedno lub kilka kont e-mail innemu kontu OVHcloud**, aby na przykład umożliwić posiadaczowi tego innego konta OVHcloud zmianę hasła do konta e-mail.
 
-Zapraszamy do zapoznania się z naszym przewodnikiem [Delegowanie zarządzania e-mailami innej osobie](https://docs.ovh.com/fr/emails/deleguer-gestion-emails-autre-identifiant/).
+Zapraszamy do zapoznania się z naszym przewodnikiem [Delegowanie zarządzania e-mailami innej osobie](/pages/web/emails/feature_delegation).
 
 ##### **Mailing-lists**
 
 Chcesz regularnie wysyłać newsletter do swoich kontaktów.
 
-W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie listami mailingowymi](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) i korzystanie z nich.
+W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie listami mailingowymi](/pages/web/emails/feature_mailing_list) i korzystanie z nich.
 
 ## Sprawdź również
 
 Trwa migracja historycznych ofert MX Plan do nowych ofert MX Plan. Jeśli chcesz najpierw poprosić o migrację Twojej oferty, zapoznaj się z informacjami na [tej stronie](https://www.ovh.pl/mxplan-migration/#accordion_6001-4).
 
-Jeśli Twoje potrzeby się zmienią i chcesz korzystać z dodatkowych funkcji, możesz również [przenieść adres e-mail MX Plan na konto E-mail Pro lub Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/migracja-adres-e-mail-na-hostingu-na-exchange/).
+Jeśli Twoje potrzeby się zmienią i chcesz korzystać z dodatkowych funkcji, możesz również [przenieść adres e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web/microsoft-collaborative-solutions/migration_control_panel).
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

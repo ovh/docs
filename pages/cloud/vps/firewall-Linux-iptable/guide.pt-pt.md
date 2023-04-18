@@ -1,8 +1,6 @@
 ---
 title: Configurar a firewall em Linux com iptables
 excerpt: Saiba como proteger um servidor com iptables
-slug: vps-firewall-iptables
-section: Primeiros passos
 updated: 2023-02-27
 ---
 
@@ -44,7 +42,7 @@ As firewalls funcionam definindo regras que regulem o tráfego autorizado e o qu
 
 Os programadores de sistemas operativos e de sistemas de distribuição propõem atualizações do software frequentes, muitas vezes por razões de segurança. **Atualizar a sua distribuição e o seu sistema operativo é essencial para proteger o seu servidor.**
 
-Para mais informações, consulte o nosso manual sobre a [segurança de um VPS](https://docs.ovh.com/pt/vps/como-proteger-vps/).
+Para mais informações, consulte o nosso manual sobre a [segurança de um VPS](/pages/cloud/vps/secure_your_vps).
 
 ### Etapa 2: instalar a firewall iptables em Ubuntu
 
@@ -138,7 +136,7 @@ As opções funcionam da seguinte forma:
 > [!warning]
 > Em caso de perda de acesso ao seu servidor, poderá sempre utilizar a ferramenta KVM/IPMI para aceder novamente e modificar a sua configuração ou eliminar as suas regras.
 >
-> Para mais informações sobre o acesso a esta ferramenta, consulte [este guia](https://docs.ovh.com/pt/vps/utilizar_o_kvm_para_um_servidor_vps/).  
+> Para mais informações sobre o acesso a esta ferramenta, consulte [este guia](/pages/cloud/vps/using_kvm_for_vps).  
 > 
 
 ### Etapa 6: controlar o tráfego por endereço IP

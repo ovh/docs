@@ -1,9 +1,6 @@
 ---
 title: HA-NAS über NFS mounten
-slug: nas/nfs
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
-section: HA-NAS
-order: 03
 updated: 2022-12-06
 ---
 
@@ -31,8 +28,8 @@ OVHcloud HA-NAS ermöglicht Ihnen die Verwaltung eines über Netzwerk zugänglic
 - Sie haben ein [OVHcloud HA-NAS](https://www.ovhcloud.com/de/storage-solutions/nas-ha/) in Ihrem Kunden-Account.
 - Sie verfügen über einen OVHcloud Dienst, dem eine öffentliche IP-Adresse zugeordnet ist (Hosted Private Cloud, Dedicated Server, VPS, Public Cloud Instanz, etc.).
 - Auf Ihrem zugreifenden Server ist ein mit NFS kompatibles Betriebssystem installiert.
-- [Sie haben auf dem Dienst eine Partition mit aktiviertem NFS-Protokoll erstellt](https://docs.ovh.com/de/storage/file-storage/nas/get-started/#partition).
-- [Sie haben einen ACL-Eintrag für die IP-Adresse des Servers angelegt](https://docs.ovh.com/de/storage/file-storage/nas/get-started/#addaccess).
+- [Sie haben auf dem Dienst eine Partition mit aktiviertem NFS-Protokoll erstellt](/pages/cloud/storage/file_storage/nas_get_started#partition).
+- [Sie haben einen ACL-Eintrag für die IP-Adresse des Servers angelegt](/pages/cloud/storage/file_storage/nas_get_started#addaccess).
 - Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder GUI.
 
 ## In der praktischen Anwendung

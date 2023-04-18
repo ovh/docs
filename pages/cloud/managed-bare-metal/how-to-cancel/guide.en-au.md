@@ -1,11 +1,8 @@
 ---
 title: How to cancel your Managed Bare Metal offer 
-slug: how-to-cancel-managed-bare-metal
 routes:
-    canonical: 'https://docs.ovh.com/au/en/private-cloud/how-to-cancel-private-cloud/'
+    canonical: '/pages/cloud/private-cloud/comment_resilier_le_private_cloud'
 excerpt: Learn how to request the termination of a Managed Bare Metal infrastructure
-section: OVHcloud Features
-order: 09
 updated: 2020-11-18
 ---
 

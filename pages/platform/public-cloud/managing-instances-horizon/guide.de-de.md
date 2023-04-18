@@ -1,9 +1,6 @@
 ---
 title: Die ersten Schritte mit Ihrer Public Cloud Instanz
-slug: erste_schritte_mit_ihrer_public_cloud_instanz_horizon
 excerpt: "Erfahren Sie hier, wie Sie Ihre Instanzen über das Horizon-Interface verwalten"
-section: Horizon
-order: 04
 updated: 2022-01-25
 ---
 
@@ -21,8 +18,8 @@ Zusätzlich zum OVHcloud Kundencenter können Sie Ihre OVHcloud Public Cloud Pro
 
 ## Voraussetzungen
 
-- Sie haben eine Public Cloud Instanz über Ihr [OVHcloud Kundencenter](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/) oder über das [Horizon-Interface](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_in_horizon/) erstellt.
-- Sie haben einen [SSH-Schlüssel erstellt](https://docs.ovh.com/de/public-cloud/create-ssh-keys/).
+- Sie haben eine Public Cloud Instanz über Ihr [OVHcloud Kundencenter](/pages/platform/public-cloud/public-cloud-first-steps) oder über das [Horizon-Interface](/pages/platform/public-cloud/create_instance_in_horizon) erstellt.
+- Sie haben einen [SSH-Schlüssel erstellt](/pages/platform/public-cloud/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen/).
 
 ## In der praktischen Anwendung
 
@@ -47,7 +44,7 @@ Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instance
 
 **Launch Instance** 
 
-Mit dieser Option können Sie eine Instanz erstellen. Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_in_horizon/).
+Mit dieser Option können Sie eine Instanz erstellen. Weitere Informationen finden Sie in [dieser Anleitung](/pages/platform/public-cloud/create_instance_in_horizon).
 
 **Delete Instances**
 
@@ -61,7 +58,7 @@ In diesem Menü können Sie die folgenden Aktionen auf einer oder mehreren Insta
 - Shut Off Instances: Mit dieser Option können eine oder mehrere Instanzen gesperrt werden.
 - Soft Reboot Instances: Mit dieser Option können Sie einen Software-Neustart auf einer oder mehreren Instanzen durchführen.
 
-**Create Snapshot**: Mit dieser Option können Sie einen Snapshot Ihrer Instanz erstellen. Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/verwaltung_der_speicherauszuge_snapshots_einer_instanz_in_horizon/).
+**Create Snapshot**: Mit dieser Option können Sie einen Snapshot Ihrer Instanz erstellen. Weitere Informationen finden Sie in [dieser Anleitung](/pages/platform/public-cloud/managing_snapshots_in_horizon).
 
 ### Instanz bearbeiten
 
@@ -69,9 +66,9 @@ Wählen Sie im Verwaltungsinterface der Instanz die gewünschte Option aus der D
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface: Mit dieser Option können Sie über das VLAN eine oder mehrere private Interfaces zu Ihrer Instanz hinzufügen. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#ein-privates-interface-hinzufugen_1) der vRack-Anleitung.
-- Detach Interface: Mit dieser Option können Sie ein Interface löschen, das zu einer Instanz gehört. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#loschung-eines-interfaces) der vRack-Anleitung.
-- Edit Instance: Mit dieser Option können Sie den Namen der Instanz und die [Sicherheitsgruppen ändern](https://docs.ovh.com/de/public-cloud/configure-security-group-horizon/).
+- Attach Interface: Mit dieser Option können Sie über das VLAN eine oder mehrere private Interfaces zu Ihrer Instanz hinzufügen. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/platform/network-services/getting-started-07-creating-vrack#ein-privates-interface-hinzufugen_1) der vRack-Anleitung.
+- Detach Interface: Mit dieser Option können Sie ein Interface löschen, das zu einer Instanz gehört. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/platform/network-services/getting-started-07-creating-vrack#loschung-eines-interfaces) der vRack-Anleitung.
+- Edit Instance: Mit dieser Option können Sie den Namen der Instanz und die [Sicherheitsgruppen ändern](/pages/platform/public-cloud/setup_security_group).
 
 > [!warning]
 > Die rot markierten Optionen geben an, ob während des Vorgangs Datenverlust möglich ist. Stellen Sie sicher, dass Sie immer über ein Backup Ihrer Daten verfügen, bevor Sie Änderungen an Ihrer Instanz vornehmen.
@@ -158,7 +155,7 @@ Klicken Sie abschließend auf `Rebuild Instance`{.action}. Diese Operation kann 
 
 ### Aussetzen oder Pausieren einer Instanz (Shelve or pause an instance)
 
-Um zu erfahren, wie Sie eine Instanz aussetzen oder pausieren, klicken Sie [hier](https://docs.ovh.com/de/public-cloud/aussetzen_oder_pausieren_einer_instanz/), um die Anleitung zu diesen Funktionen einzusehen.
+Um zu erfahren, wie Sie eine Instanz aussetzen oder pausieren, klicken Sie [hier](/pages/platform/public-cloud/suspend_or_pause_an_instance), um die Anleitung zu diesen Funktionen einzusehen.
 
 ### Zugriff auf die Konsole einer Instanz <a name="console"></a>
 
@@ -167,7 +164,7 @@ Bei Verlust des Zugangs zu Ihrer Instanz aufgrund einer fehlerhaften Konfigurati
 > [!primary]
 >
 > Sie können direkt über die VNC-Konsole auf Ihre Instanz zugreifen. Sie müssen jedoch zuerst ein Passwort für den Root-Benutzer konfigurieren.
-> Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/root-rechte_erlangen_und_passwort_festlegen/).
+> Weitere Informationen finden Sie in [dieser Anleitung](/pages/platform/public-cloud/become_root_and_change_password).
 > Die VNC-Konsole kann auch als erster Diagnose-Ansatz bei einer Fehlfunktion verwendet werden, indem die Bootphase Ihrer Instanz analysiert wird.
 > 
 

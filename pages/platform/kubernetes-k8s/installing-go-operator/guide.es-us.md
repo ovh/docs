@@ -1,15 +1,12 @@
 ---
 title: Deploying a Kubernetes Operator written in Golang on OVHcloud Managed Kubernetes
-slug: deploying-go-operator
 excerpt: Learn how to deploy Kubernetes operator written in Golang on OVHcloud Managed Kubernetes and the Operator SDK
-section: Operators
-order: 02
 kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Kubernetes (K8s)
 category_l3: Operators
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/deploying-go-operator/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-go-operator'
 updated: 2022-04-11
 ---
 
@@ -70,7 +67,7 @@ As we can see in the tutorial below, the capability of the developed operator de
 
 ## Requirements
 
-This tutorial assumes that you already have a Kubernetes cluster managed by OVHcloud, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial assumes that you already have a Kubernetes cluster managed by OVHcloud, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 ## Instructions
 
@@ -1211,7 +1208,7 @@ docker build -t myregistryid.xxx1.container-registry.ovh.net/example/nginx-go-op
 </code></pre>
 
 Then, push the image to your favorite registry.
-In order to create a private registry, you can follow the [how to create an OVHcloud private registry](../../private-registry/creating-a-private-registry/) tutorial.
+In order to create a private registry, you can follow the [how to create an OVHcloud private registry](/pages/platform/private-registry/creating-a-private-registry) tutorial.
 
 ```bash
 docker login [YOUR_PRIVATE_REGISTRY_URL]
@@ -1417,7 +1414,7 @@ deployment.apps "nginx-go-operator-controller-manager" deleted
 
 ## What’s next
 
-To go deeper on Kubernetes operators topic, follow others [Kubernetes tutorials](../) in the `Operators` section.
+To go deeper on Kubernetes operators topic, follow others [Kubernetes tutorials](/us/es/kubernetes/) in the `Operators` section.
 
 ## Go further
 

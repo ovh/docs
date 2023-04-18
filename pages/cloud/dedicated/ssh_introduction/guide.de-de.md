@@ -1,8 +1,6 @@
 ---
 title: Einführung in SSH
-slug: ssh-einfuehrung
 excerpt: Erfahren Sie hier, wie Sie SSH-Verbindungen verwenden, um auf Ihren Server zuzugreifen
-section: Erste Schritte
 updated: 2022-06-08
 ---
 
@@ -40,7 +38,7 @@ Das Kommunikationsprotokoll SSH (*Secure Shell*) ist das meistgenutzte Verfahren
 
 Es gibt mehrere Methoden, um eine Verbindung zu einem Remote-Host mittels SSH zu authentifizieren.
 Die folgenden Anweisungen beziehen sich auf die Authentifizierungsmethode über Benutzername und Passwort.<br>
-Sie können auch SSH-Schlüssel konfigurieren, um gesicherte Verbindungen ohne Passwort zu aktivieren. Weitere Informationen dazu finden Sie in unserer [Anleitung zu SSH-Schlüsseln](https://docs.ovh.com/de/dedicated/ssh-schluessel-erzeugen/).
+Sie können auch SSH-Schlüssel konfigurieren, um gesicherte Verbindungen ohne Passwort zu aktivieren. Weitere Informationen dazu finden Sie in unserer [Anleitung zu SSH-Schlüsseln](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 Die Login-Daten (Benutzername und Passwort) werden Ihnen per E-Mail gesendet, immer wenn eine Installation oder Reinstallation eines Servers über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erfolgt.
 
@@ -49,9 +47,9 @@ Zum Verbindungsaufbau wird zweitens die IPv4-Adresse oder der Hostname des Serve
 
 Beachten Sie auch unsere Anleitungen zu den ersten Schritten:
 
-- Mit einem [Dedicated Server](https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server/).
-- Mit einem [Dedicated Server der Produktlinie **Eco**](https://docs.ovh.com/de/dedicated/getting-started-dedicated-server-eco/).
-- Mit einem [VPS](https://docs.ovh.com/de/vps/erste-schritte-mit-einem-vps/).
+- Mit einem [Dedicated Server](/pages/cloud/dedicated/getting-started-with-dedicated-server).
+- Mit einem [Dedicated Server der Produktlinie **Eco**](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco).
+- Mit einem [VPS](/pages/cloud/vps/starting_with_a_vps).
 
 ### Verbindung von einer GNU/Linux Distribution oder macOS 
 
@@ -173,10 +171,10 @@ Weitere Informationen finden Sie in den offiziellen FAQ und der Dokumentation zu
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[SSH-Schlüssel erstellen](https://docs.ovh.com/de/dedicated/ssh-schluessel-erzeugen/)
+[SSH-Schlüssel erstellen](/pages/cloud/dedicated/creating-ssh-keys-dedicated)
 
-[Rescue-Modus Dedicated Server](https://docs.ovh.com/de/dedicated/ovh-rescue/)
+[Rescue-Modus Dedicated Server](/pages/cloud/dedicated/rescue_mode)
 
-[VPS Rescue-Modus](https://docs.ovh.com/de/vps/rescue/)
+[VPS Rescue-Modus](/pages/cloud/vps/rescue)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

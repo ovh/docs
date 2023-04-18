@@ -1,9 +1,6 @@
 ---
 title: 'CMS, como instalar manualmente PrestaShop'
 excerpt: Como instalar manualmente o PrestaShop?
-slug: cms_como_instalar_manualmente_prestashop
-section: CMS
-order: 06
 updated: 2022-12-01
 ---
 
@@ -18,10 +15,10 @@ Assegura-se que possui o Nichandle e a palavra-passe associada para poder ligar-
 
 
 - Obtenha o seu identificador e palavra-passe de acesso FTP para se ligar ao espaço de armazenamento do seu serviço de alojamento partilhado OVHcloud.
-Um guia para obtenção dos dados de acesso FTP está à disposição:[prestashop]({legacy}1374)
+Um guia para obtenção dos dados de acesso FTP está à disposição:[prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 - É necessário possuir um identificador e palavra-passe da base de dados SQL que lhe permita a ligação a uma base de dados.
-Um guia para obtenção dos dados de acesso à base de dados está à disposição:[prestashop]({legacy}1374)
+Um guia para obtenção dos dados de acesso à base de dados está à disposição:[prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 
 ![prestashop](images/3158.png){.thumbnail}
@@ -57,7 +54,7 @@ A pasta terá o nome "prestashop"
 ## Ligação ao espaço de alojamento através de FTP
 Para colocar os ficheiros de PrestaShop no seu alojamento, deverá ligar-se ao mesmo.
 
-Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[prestashop]({legacy}1374)
+Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 ![prestashop](images/3161.png){.thumbnail}
 
@@ -210,7 +207,7 @@ Encontrará aqui uma pré-visualização do painel de administração PrestaShop
 
 ## Informações úteis
 O suporte da OVHcloud não está habilitado para responder às suas questões sobre configuração e utilização de PrestaShop.
-Está no entanto disponível um guia para o ajudar na utilização: [prestashop]({legacy}2053)..
+Está no entanto disponível um guia para o ajudar na utilização: [prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D2053)..
 
 Convidamo-lo a consultar o [fórum do PrestaShop](https://www.prestashop.com/forums/forum/202-forum-em-portugues/).
 

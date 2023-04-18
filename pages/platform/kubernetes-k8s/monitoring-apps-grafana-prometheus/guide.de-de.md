@@ -1,11 +1,8 @@
 ---
 title: Monitoring apps with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service
-slug: monitoring-apps-prometheus-grafana
 excerpt: 'Find out how to monitor and visualize metrics with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service'
-section: Monitoring & Observability
-order: 00
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/monitoring-apps-prometheus-grafana/'
+    canonical: '/pages/platform/kubernetes-k8s/monitoring-apps-grafana-prometheus'
 updated: 2023-03-17
 ---
 
@@ -39,9 +36,9 @@ In this tutorial we will show you how to monitor your applications/workloads on 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart guide](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart guide](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
 ## Instructions
 
@@ -242,6 +239,6 @@ release "kube-prometheus-stack-1647417678" uninstalled
 
 Prometheus and Grafana are very powerful monitoring tools, but also have alerting systems. Don't hesitate to dig in, to create alerts for example.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](/de/kubernetes/).
 
 Join our [community of users](https://community.ovh.com/en/).

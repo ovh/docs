@@ -1,8 +1,5 @@
 ---
 title: PHP
-slug: languages-php
-section: Languages
-order: 4
 updated: 2022-06-02
 ---
 
@@ -179,7 +176,7 @@ because the dependencies aren't yet present.
 To resolve this, you have two options:
 
 - Have your script `include` dependencies instead of `require` and fail gracefully if the dependencies aren't there.
-- Enable preloading with a variable that [isn't available during the build](../development-variables/#setting-variables). Then preloading happens only on deploy.
+- Enable preloading with a variable that [isn't available during the build](/pages/web/web-paas/development-variables/#setting-variables). Then preloading happens only on deploy.
 
 ## FFI
 
@@ -237,7 +234,7 @@ $ php-fpm-status --socket=unix://$SOCKET --path=/-/status --full
 
 ## Accessing services
 
-To access various [services](../configuration-services) with PHP, see the following examples.
+To access various [services](/pages/web/web-paas/configuration-services) with PHP, see the following examples.
 The individual service pages have more information on configuring each service.
 
 > [!tabs]      

@@ -1,9 +1,7 @@
 ---
 title: 'Tworzenie, uruchamianie i usuwanie obrazów w interfejsie Horizon'
 excerpt: 'Tworzenie, uruchamianie i usuwanie obrazów w interfejsie Horizon'
-slug: tworzenie_uruchamianie_i_usuwanie_obrazow_w_interfejsie_horizon
 legacy_guide_number: g1784
-section: 'Zarządzanie w interfejsie Horizon'
 updated: 2021-12-30
 ---
 
@@ -22,7 +20,7 @@ Dodawanie spersonalizowanych obrazów jest możliwe w interfejsie OpenStack Hori
 
 ## Wymagania początkowe
 
-- [Dostep do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
+- [Dostep do interfejsu Horizon](/pages/platform/public-cloud/introducing_horizon)
 - Przejście do menu Obrazy w interfejsie OpenStack Horizon
 
 ![public-cloud](images/horizon_menu.png){.thumbnail}

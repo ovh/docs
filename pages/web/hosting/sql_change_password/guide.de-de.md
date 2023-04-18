@@ -1,9 +1,6 @@
 ---
 title: Passwort einer Webhosting-Datenbank ändern
-slug: datenbank-passwort-aendern
 excerpt: Erfahren Sie hier, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
-section: Datenbanken
-order: 02
 updated: 2022-01-26
 ---
 
@@ -17,15 +14,15 @@ updated: 2022-01-26
 
 Die meisten Websites verwenden eine **Datenbank**, um ihre Artikel, Kommentare oder E-Mail-Adressen zu speichern.
 
-Die Verbindung zu dieser Datenbank wird durch eine **Konfigurationsdatei** im [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings ermöglicht. Sie enthält die Login-Daten, die es Ihrer Website erlauben, sich bei ihrem **Datenbank-Server** anzumelden.
+Die Verbindung zu dieser Datenbank wird durch eine **Konfigurationsdatei** im [FTP-Speicherplatz](/pages/web/hosting/ftp_connection) Ihres Hostings ermöglicht. Sie enthält die Login-Daten, die es Ihrer Website erlauben, sich bei ihrem **Datenbank-Server** anzumelden.
 
 Die Änderung des Passworts einer Datenbank muss deshalb immer an zwei Orten durchgeführt werden:
 
-- In der [Konfigurationsdatei](https://docs.ovh.com/de/hosting/1-click-module-management/#schritt-1-die-zu-ihrem-modul-gehorige-datenbank-identifizieren) Ihrer Website, im [FTP-Bereich Ihres Hostings](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/).
+- In der [Konfigurationsdatei](/pages/web/hosting/cms_manage_1_click_module#schritt-1-die-zu-ihrem-modul-gehorige-datenbank-identifizieren) Ihrer Website, im [FTP-Bereich Ihres Hostings](/pages/web/hosting/ftp_connection).
 
 - **Und** auf dem Server, der die entsprechende Datenbank enthält, über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-Bis diese Änderung **an beiden Stellen** durchgeführt wurde, wird auf Ihrer Seite ein Verbindungsfehler “[Error establishing a database connection](https://docs.ovh.com/de/hosting/datenbanken-fehler-beheben/#verbindungsfehler-error-establishing-a-database-connection)“ angezeigt.
+Bis diese Änderung **an beiden Stellen** durchgeführt wurde, wird auf Ihrer Seite ein Verbindungsfehler “[Error establishing a database connection](/pages/web/hosting/diagnosis_database_errors#verbindungsfehler-error-establishing-a-database-connection)“ angezeigt.
 
 Wenn Sie das Passwort Ihrer Datenbank ändern möchten, müssen daher die in dieser Anleitung **beschriebenen Operationen vollständig** durchgeführt werden. Bei Zweifeln an den durchzuführenden Aktionen wenden Sie sich an Ihren Webmaster oder kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
 
@@ -49,7 +46,7 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritte
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder einen [Web Cloud Databases Dienst](https://www.ovh.de/cloud-databases/).
-- Sie verfügen über die FTP-Zugangsdaten, um sich auf dem [Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings einzuloggen.
+- Sie verfügen über die FTP-Zugangsdaten, um sich auf dem [Speicherplatz](/pages/web/hosting/ftp_connection) Ihres Hostings einzuloggen.
 
 ## In der praktischen Anwendung
 
@@ -63,9 +60,9 @@ Klicken Sie anschließend auf den Tab `FTP-SSH`{.action} und greifen Sie auf den
 
 > [!primary]
 >
-> Wenn Sie das Passwort Ihres FTP-Speicherplatzes ändern möchten, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/).
+> Wenn Sie das Passwort Ihres FTP-Speicherplatzes ändern möchten, lesen Sie [diese Anleitung](/pages/web/hosting/ftp_change_password).
 >
-> Wenn Sie sich mit einer anderen Methode verbinden möchten, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/).
+> Wenn Sie sich mit einer anderen Methode verbinden möchten, lesen Sie [diese Anleitung](/pages/web/hosting/ftp_connection).
 >
 
 Öffnen Sie das oben identifizierte `Wurzelverzeichnis`.
@@ -118,7 +115,7 @@ Gehen Sie in diesem Bereich Ihres Kundencenters auf den Tab `Benutzer und Rechte
 
 > [!primary]
 >
-> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/customer/Passwort-verwalten/).
+> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](/pages/account/customer/manage-ovh-password).
 >
 
 Legen Sie das neue Passwort Ihrer Datenbank fest und speichern Sie es. Es muss folgende Bedingungen erfüllen:
@@ -229,11 +226,11 @@ Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definier
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
+[Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Passwortverwaltung](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Passwortverwaltung](/pages/account/customer/manage-ovh-password)
 
-[Die häufigsten Datenbankfehler beheben](https://docs.ovh.com/de/hosting/datenbanken-fehler-beheben/)
+[Die häufigsten Datenbankfehler beheben](/pages/web/hosting/diagnosis_database_errors)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

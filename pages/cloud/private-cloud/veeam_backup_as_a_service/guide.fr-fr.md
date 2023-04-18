@@ -1,10 +1,7 @@
 ---
 title: Activer et utiliser Veeam Managed Backup
-slug: veeam-backup-as-a-service
 excerpt: Découvrez comment activer et utiliser l'option Veeam Managed Backup
 legacy_guide_number: '2883711'
-section: Services et options OVHcloud
-order: 06
 updated: 2021-12-07
 ---
 
@@ -21,11 +18,11 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 ## Prérequis
 
 * Posséder une offre [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
-* [Donner le droit « Ajout de ressources »](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+* [Donner le droit « Ajout de ressources »](/pages/cloud/private-cloud/change_users_rights){.external} pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 * Être connecté au client vSphere.
-* Avoir activé la [haute disponibilité (HA)](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability){.external}.
-* Avoir activé le [Distributed Ressource Scheduler (DRS)](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler-new){.external} sur le ou les clusters.
-* Mettre en place la [gestion des licences Windows](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#licences-windows){.external} sur le Private Cloud.
+* Avoir activé la [haute disponibilité (HA)](/pages/cloud/private-cloud/vmware_ha_high_availability){.external}.
+* Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/cloud/private-cloud/vmware_drs_distributed_ressource_scheduler_new){.external} sur le ou les clusters.
+* Mettre en place la [gestion des licences Windows](/pages/cloud/private-cloud/facturation_private_cloud#licences-windows){.external} sur le Private Cloud.
 
 ## En pratique
 

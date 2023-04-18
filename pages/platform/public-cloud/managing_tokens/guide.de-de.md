@@ -1,9 +1,7 @@
 ---
 title: Token-Verwaltung
 excerpt: 'Erfahren Sie hier, wie Sie Token über die Keystone API verwenden'
-slug: token-verwaltung
 legacy_guide_number: g1872
-section: 'OpenStack'
 updated: 2023-03-02
 ---
 

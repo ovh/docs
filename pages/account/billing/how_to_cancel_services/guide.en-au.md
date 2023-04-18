@@ -1,9 +1,6 @@
 ---
 title: How to cancel your OVHcloud services
 excerpt: Find out how to discontinue your OVHcloud subscriptions
-slug: how-to-cancel-your-services
-section: Managing the renewal of services
-order: 03
 updated: 2022-03-22
 ---
 
@@ -42,7 +39,7 @@ This means that, before any termination, you must be **certain** that:
 >
 > Termination can only be applied if the following conditions are met:
 >
-> - You are the "administrative contact" for the service (for more information, see [this guide](https://docs.ovh.com/au/en/customer/managing-contacts/#definition)).
+> - You are the "administrative contact" for the service (for more information, see [this guide](/pages/account/customer/managing_contacts#definition)).
 > - The service is not manually renewed.
 > - The service is not suspended, particularly because an invoice has not been paid.
 >
@@ -88,7 +85,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en-au/managed-bare-metal/) solution, follow the instructions in this [guide](https://docs.ovh.com/au/en/managed-bare-metal/how-to-cancel-managed-bare-metal/).
+To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en-au/managed-bare-metal/) solution, follow the instructions in this [guide](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### Load Balancer <a name="iplb"></a>
 
@@ -110,7 +107,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en-au/hosted-private-cloud/), follow the instructions in this [guide](https://docs.ovh.com/au/en/private-cloud/how-to-cancel-private-cloud/).
+To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en-au/hosted-private-cloud/), follow the instructions in this [guide](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -126,9 +123,9 @@ Each [Public Cloud](https://www.ovhcloud.com/en-au/public-cloud/) service can be
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
-OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (more details are available on our information page about the [Public Cloud billing method](https://docs.ovh.com/au/en/public-cloud/information-on-cloud-billing-options/)). At the end of the month, you only pay for the effective resource usage time.
+OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (more details are available on our information page about the [Public Cloud billing method](/pages/platform/public-cloud/analyze_billing)). At the end of the month, you only pay for the effective resource usage time.
 
-You can also [view your current resource usage](https://docs.ovh.com/au/en/public-cloud/information-on-cloud-billing-options/#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
+You can also [view your current resource usage](/pages/platform/public-cloud/analyze_billing#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -191,6 +188,6 @@ Finally, click on `Confirm cancellation`{.action}.
 
 ## Go further <a name="gofurther"></a>
 
-[Managing renewal for OVHcloud services](https://docs.ovh.com/au/en/billing/how-to-use-automatic-renewal-at-ovh/)
+[Managing renewal for OVHcloud services](/pages/account/billing/how_to_use_automatic_renewal)
 
 Join our community of users on <https://community.ovh.com/en/>.

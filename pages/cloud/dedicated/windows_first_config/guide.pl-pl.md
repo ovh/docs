@@ -1,8 +1,6 @@
 ---
 title: Skonfiguruj nową instalację Windows Server
-slug: windows-first-config
 excerpt: Dowiedz się, jak aktywować połączenie ze zdalnym pulpitem i odpowiedź ICMP
-section: Pierwsze kroki
 updated: 2023-02-14
 ---
 
@@ -27,7 +25,7 @@ Po ponownym zainstalowaniu systemu operacyjnego Windows Server na serwerze zdaln
 
 ### Etap 1: dostęp do KVM
 
-Aby uzyskać dostęp do konsoli KVM Twojego serwera, zapoznaj się z [przewodnikiem KVM](https://docs.ovh.com/pl/dedicated/uzywanie-ipmi-serwery-dedykowane/#korzystanie-z-kvm-przez-przegladarke-internetowa-tylko-dla-najnowszych-serwerow).
+Aby uzyskać dostęp do konsoli KVM Twojego serwera, zapoznaj się z [przewodnikiem KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#korzystanie-z-kvm-przez-przegladarke-internetowa-tylko-dla-najnowszych-serwerow).
 
 ### Etap 2: zakończenie instalacji systemu Windows
 
@@ -62,14 +60,14 @@ W tej sekcji możesz włączyć odpowiednie reguły "ICMP" i "Remote Desktop" (z
 Twój serwer powinien odpowiadać na zapytania wykorzystujące te protokoły.
 
 > [!primary]
-> Aby zabezpieczyć system Windows za pomocą reguł firewalla, zapoznaj się z naszym przewodnikiem "[Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/firewall-windows/)".
+> Aby zabezpieczyć system Windows za pomocą reguł firewalla, zapoznaj się z naszym przewodnikiem "[Konfiguracja firewalla w systemie Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)".
 >
 
 ### Aktywacja logów startowych (boot log) Windows (opcjonalnie)
 
 Aktywacja logów startowych (*boot log*) Windows może być przydatna przy diagnostyce błędów serwera.
 
-Zaloguj się do serwera przez sesję "zdalny pulpit" lub [KVM](https://docs.ovh.com/pl/dedicated/uzywanie-ipmi-serwery-dedykowane/#korzystanie-z-kvm-przez-przegladarke-internetowa-tylko-dla-najnowszych-serwerow). Otwórz menu Start systemu Windows i kliknij `Uruchom`{.action}.
+Zaloguj się do serwera przez sesję "zdalny pulpit" lub [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#korzystanie-z-kvm-przez-przegladarke-internetowa-tylko-dla-najnowszych-serwerow). Otwórz menu Start systemu Windows i kliknij `Uruchom`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -83,10 +81,10 @@ W nowym oknie zaznacz kratkę obok `Boot log`. Kliknij `OK`{.action}.
 
 Po kolejnym uruchomieniu Twojego serwera logi będą zapisywane w pliku .txt. Droga do pliku to `C:\Windows\ntbtlog.txt`.
 
-Aby uzyskać dostęp do zawartości tego pliku w trybie Rescue, postępuj zgodnie z instrukcjami zawartymi w [przewodniku dotyczącym trybu Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/).
+Aby uzyskać dostęp do zawartości tego pliku w trybie Rescue, postępuj zgodnie z instrukcjami zawartymi w [przewodniku dotyczącym trybu Rescue](/pages/cloud/dedicated/rescue_mode).
 
 ## Sprawdź również
 
-[Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/firewall-windows/)
+[Konfiguracja firewalla w systemie Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

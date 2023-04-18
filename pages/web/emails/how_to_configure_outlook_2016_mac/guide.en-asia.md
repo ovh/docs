@@ -1,9 +1,6 @@
 ---
 title: 'Configuring your email address in Outlook for macOS'
-slug: configuration-outlook-2016-mac
 excerpt: 'Find out how to configure your email address in Outlook 2016 for macOS'
-section: 'Configure on computer'
-order: 02
 updated: 2018-05-31
 ---
 
@@ -23,7 +20,7 @@ You can configure email addresses on email clients, if they are compatible. This
 
 > [!primary]
 >
-> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your email address in Outlook 2016 for Windows](../configuration-outlook-2016/).
+> Are you using Outlook 2016 for Windows? Read our guide: [Configuring your email address in Outlook 2016 for Windows](/pages/web/emails/how_to_configure_outlook_2016).
 >
 
 ## Instructions

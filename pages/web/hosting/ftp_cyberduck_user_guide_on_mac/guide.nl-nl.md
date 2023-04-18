@@ -3,7 +3,6 @@ deprecated: true
 title: 'Webhosting: Handleiding voor het gebruik van Cyberduck (MAC)'
 excerpt: 'Webhosting: Handleiding voor het gebruik van Cyberduck (MAC)'
 id: '1598'
-slug: webhosting_handleiding_voor_het_gebruik_van_cyberduck_mac
 legacy_guide_number: g1598
 updated: 2022-12-01
 ---

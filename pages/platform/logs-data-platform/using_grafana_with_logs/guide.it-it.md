@@ -1,10 +1,7 @@
 ---
 title: Using Grafana with Logs Data Platform
-slug: using-grafana-with-logs
-order: 1
-section: Visualize your logs
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/using-grafana-with-logs/'
+    canonical: '/pages/platform/logs-data-platform/using_grafana_with_logs'
 updated: 2022-06-15
 ---
 
@@ -19,7 +16,7 @@ updated: 2022-06-15
 
 This is what you need to know to get you started:
 
-- you are already sending logs on a stream you own [see the quick start tutorial](../quick-start){.ref}
+- you are already sending logs on a stream you own [see the quick start tutorial](/pages/platform/logs-data-platform/quick_start){.ref}
 - Your have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster).
 
 After some training you will be able to create this kind of dashboard:
@@ -90,7 +87,7 @@ If you want to know what you can do with Grafana and OpenSearch, read the [offic
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/it/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

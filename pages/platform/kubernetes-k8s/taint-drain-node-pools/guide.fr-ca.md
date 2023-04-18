@@ -1,10 +1,8 @@
 ---
 title: Taint, cordon and drain specific Nodes and Nodes Pools
-slug: taint-drain-node-pools
 excerpt: 'Find out how to do some operations on specific Nodes and Nodes Pools, like taint, drain and cordon, on OVHcloud Managed Kubernetes'
-section: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/taint-drain-node-pools/'
+    canonical: '/pages/platform/kubernetes-k8s/taint-drain-node-pools'
 updated: 2021-12-23
 ---
 
@@ -70,7 +68,7 @@ For these use cases, and other ones as well, you can do operations on Nodes. And
 
 ### Cluster creation
 
-Follow the [cluster creation](../label-nodeaffinity-node-pools/#cluster-creation) step by step guide.
+Follow the [cluster creation](/pages/platform/kubernetes-k8s/label-nodeaffinity-node-pools#cluster-creation) step by step guide.
 
 ### Second node pool creation
 
@@ -116,7 +114,7 @@ Wait until its status changes to `OK`.
 
 ### Check everything is correctly configured
 
-To do some operations on your Nodes, through `kubectl` CLI, we invite you to follow our guide to [configuring default settings](../configuring-kubectl/).
+To do some operations on your Nodes, through `kubectl` CLI, we invite you to follow our guide to [configuring default settings](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster).
 
 When you can access the cluster through `kubectl` command, let's display our node pools:
 
@@ -417,6 +415,6 @@ Thanks to the `-o wide` option, you can verify that your Pod is running on `seco
 
 In this tutorial you saw how to do some operations on Nodes, taint, drain, cordon, uncordon and how to deploy Pods on particular nodes in your OVHcloud Managed Kubernetes cluster.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/ca/fr/kubernetes/).
 
 Join our [community of users](https://community.ovh.com/en/).

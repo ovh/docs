@@ -1,9 +1,6 @@
 ---
 title: SPN Connector Concept
-slug: secnumcloud-connectivity-spn-connector-concept
 excerpt: 'SecNumCloud Connectivity - SPN Connector Concept'
-section: SecNumCloud Connectivity
-order: 03
 updated: 2021-11-18
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Activating and using rescue mode on a VPS
-slug: rescue
 excerpt: Find out how to activate and use rescue mode on a VPS
-section: Diagnostics and rescue mode
 updated: 2022-05-02
 ---
 
@@ -113,8 +111,8 @@ Once you have completed your actions in rescue mode, reboot the VPS again in 'no
 
 ## Go further
 
-[Changing your root password on a VPS](../root-password/)
+[Changing your root password on a VPS](/pages/cloud/vps/root_password)
 
-[Introduction to SSH](../../dedicated/ssh-introduction/)
+[Introduction to SSH](/pages/cloud/dedicated/ssh_introduction)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: 'cPanel auf einem VPS installieren'
-slug: cpanel-installieren
 excerpt: 'So instanziieren Sie einen VPS mit cPanel-Template'
-section: 'Fortgeschrittene Nutzung'
 updated: 2021-10-14
 ---
 
@@ -67,7 +65,7 @@ Anschließend sollten Sie sich mit dem Root-Benutzer in WHM oder über SSH einlo
 
 Wir empfehlen weitere Schritte, um WHM und den VPS vor unbefugtem Zugriff zu sichern. Sie können dazu den [Empfehlungen von cPanel](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/) folgen.
 
-Weiterhin ist empfehlenswert, die [OVHcloud Firewall](../../dedicated/firewall-network/) zu konfigurieren und eine [Backup-Lösung](../vps-sicherheit/) für den VPS einzurichten.
+Weiterhin ist empfehlenswert, die [OVHcloud Firewall](../../dedicated/firewall-network/) zu konfigurieren und eine [Backup-Lösung](/pages/cloud/vps/secure_your_vps) für den VPS einzurichten.
 
 
 ## Weiterführende Informationen

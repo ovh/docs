@@ -1,10 +1,7 @@
 ---
 title: "Débuter avec l’API OpenStack"
-slug: debuter-avec-lapi-nova
 excerpt: "Découvrez comment gérer vos instances à l'aide du client Python OpenStack"
 legacy_guide_number: 1935
-section: Gestion via OpenStack
-order: 3
 updated: 2022-10-13
 ---
 
@@ -25,8 +22,8 @@ Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos ins
 
 ## Prérequis
 
-- [Préparer l'environnement pour utiliser l'API OpenStack](../prepare_the_environment_for_using_the_openstack_api/)
-- [Charger les variables d'environnement OpenStack](../set-openstack-environment-variables/)
+- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Charger les variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 
 ## En pratique

@@ -1,9 +1,6 @@
 ---
 title: 'Primeros pasos con la solución Email Pro'
-slug: primera-configuracion
 excerpt: 'Cómo configurar por primera vez la solución Email Pro'
-section: 'Primeros pasos'
-order: 1
 updated: 2020-04-09
 ---
 
@@ -86,7 +83,7 @@ En la columna `Diagnóstico`{.action}, podrá ver si la configuración DNS del n
 
 - **Configuración automática al añadir un nombre de dominio de OVHcloud**: si acaba de realizar el cambio, pueden pasar algunas horas antes de que se muestre en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
-- **Configuración manual de un nombre dominio no gestionado por OVHcloud**: haga clic en la señal roja para ver los cambios que debe realizar. <br>*Para un registro CNAME*, consulte nuestra guía <br>*Para un registro MX*, consulte nuestra guía <br>*Para un registro SRV*, complete la zona DNS con la ayuda de la información proporcionada al hacer clic en la señal roja. Puede consultar la guía « [Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/) » para añadir este registro.
+- **Configuración manual de un nombre dominio no gestionado por OVHcloud**: haga clic en la señal roja para ver los cambios que debe realizar. <br>*Para un registro CNAME*, consulte nuestra guía <br>*Para un registro MX*, consulte nuestra guía <br>*Para un registro SRV*, complete la zona DNS con la ayuda de la información proporcionada al hacer clic en la señal roja. Puede consultar la guía « [Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit) » para añadir este registro.
 
 ![emailpro](images/first_config_email_pro_configure_domain_update.png){.thumbnail}
 
@@ -121,7 +118,7 @@ Una vez introducida toda la información, haga clic en el botón `Siguiente`{.ac
 
 Una vez configuradas las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición una aplicación en internet (*webmail*). Puede acceder a ella en la dirección [webmail](https://www.ovh.com/es/mail/){.external}, donde deberá introducir las credenciales de su dirección de correo electrónico.
 
-Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](../). A continuación, se indican los parámetros necesarios para configurar una cuenta E-mail Pro:
+Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](/es/emails-pro/). A continuación, se indican los parámetros necesarios para configurar una cuenta E-mail Pro:
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
 |---|---|---|---|
@@ -137,16 +134,16 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 
 ## Más información
 
-[Usar Outlook Web App con una cuenta de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_2016_guia_de_uso_de_outlook_web_app/)
+[Usar Outlook Web App con una cuenta de correo](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Crear reglas de la bandeja de entrada en OWA](https://docs.ovh.com/es/microsoft-collaborative-solutions/crear-reglas-de-bandeja-de-entrada-en-owa/)
+[Crear reglas de la bandeja de entrada en OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa)
 
 [Añadir un alias a una cuenta de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/email-alias/)
 
-[Crear firmas automáticas](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_firma_automatica_disclaimer/)
+[Crear firmas automáticas](/pages/web/microsoft-collaborative-solutions/feature_footers)
 
-[Gestionar la facturación de sus cuentas Email Pro](https://docs.ovh.com/es/emails-pro/gestion-facturacion-emailpro/)
+[Gestionar la facturación de sus cuentas Email Pro](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Configurar la política de seguridad de un servicio de correo](https://docs.ovh.com/es/microsoft-collaborative-solutions/configurar-politica-seguridad-exchange/)
+[Configurar la política de seguridad de un servicio de correo](/pages/web/microsoft-collaborative-solutions/exchange_security_policy)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

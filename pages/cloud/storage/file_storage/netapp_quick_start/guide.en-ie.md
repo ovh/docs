@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - API Quickstart
-slug: netapp/quick-start
 excerpt: Getting started with Enterprise File Storage using the OVHcloud API
-section: Enterprise File Storage
-order: 030
 updated: 2021-10-27
 ---
 
@@ -25,7 +22,7 @@ You're able to choose file volume size, manage accesses using ACLs or create sna
 
 - An Enterprise File Storage service
 - You should be logged in to the [OVHcloud API](https://api.ovh.com)
-- Basic understanding of how to [mount a NFS volume](https://docs.ovh.com/ie/en/storage/file-storage/nas/nfs/)
+- Basic understanding of how to [mount a NFS volume](/pages/cloud/storage/file_storage/nas_nfs)
 
 ## Instructions
 

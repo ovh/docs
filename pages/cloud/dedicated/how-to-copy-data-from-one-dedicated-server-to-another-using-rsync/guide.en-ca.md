@@ -1,8 +1,6 @@
 ---
 title: 'Copying data from one dedicated server to another using rsync'
-slug: copy-data-server-rsync
 excerpt: 'Copy your data easily from one server to another with rsync'
-section: Tutorial
 updated: 2022-02-16
 ---
 

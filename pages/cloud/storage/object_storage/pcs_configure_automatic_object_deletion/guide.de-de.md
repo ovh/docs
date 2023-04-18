@@ -1,12 +1,9 @@
 ---
 title: Object Storage Swift - Automatisches Löschen von Objekten konfigurieren (EN)
 excerpt: Automatisches Löschen von Objekten konfigurieren
-slug: pcs/configure-automatic-object-deletion
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/object-storage/pcs/configure-automatic-object-deletion/'
-section: OpenStack Swift Storage Class Specifics
+    canonical: '/pages/cloud/storage/object_storage/pcs_configure_automatic_object_deletion'
 legacy_guide_number: g1950
-order: 070
 updated: 2021-10-27
 ---
 
@@ -20,8 +17,8 @@ To easily manage your Object Storage, you may need to define the lifespan of som
 
 ## Requirements
 
-- [Prepare the environment to use the OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Set OpenStack environment variables](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/)
+- [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Set OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instructions
 

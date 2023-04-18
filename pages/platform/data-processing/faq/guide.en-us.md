@@ -1,8 +1,5 @@
 ---
 title: FAQ OVHcloud Data Processing
-slug:  data-processing-faq 
-section: Getting started
-order: 3
 updated: 2020-06-16
 ---
 
@@ -33,7 +30,7 @@ There are many uses for this type of solution, but it is most often used to proc
 
 ### Who can use Data processing? Is it necessary to be a data expert?
 
-No matter your level of expertise in Python or Java programming, the Data Processing solution is fully usable. To facilitate its use, OVHcloud provides you with the Apache Spark framework and tutorials directly accessible in [the guides](../).
+No matter your level of expertise in Python or Java programming, the Data Processing solution is fully usable. To facilitate its use, OVHcloud provides you with the Apache Spark framework and tutorials directly accessible in [the guides](/us/en/data-processing/).
 
 
 ### From which countries can customers order the Data Processing solution?
@@ -60,12 +57,12 @@ For each node, you can define the amount of vCores and Memory (RAM).
 
 ### What is the supported Apache spark version?
 
-For more information, we invite you to read [the following guide](../capabilities/).
+For more information, we invite you to read [the following guide](/pages/platform/data-processing/01_CONCEPTS_Capabilities).
 
 
 ### What kind of languages or program are supported by Data Processing?
 
-For more information, we invite you to read [the following guide](../capabilities/).
+For more information, we invite you to read [the following guide](/pages/platform/data-processing/01_CONCEPTS_Capabilities).
 
 
 ### Does OVHcloud plan other data processing tools?
@@ -75,12 +72,12 @@ In the short term, there are no plans for OVHcloud to deploy a new tool.
 
 ### What are the the Data Processing product limitations?
 
-For more information, we invite you to read [the following guide](../capabilities/).
+For more information, we invite you to read [the following guide](/pages/platform/data-processing/01_CONCEPTS_Capabilities).
 
 
 ### How to launch a job with the Data Processing solution?
 
-It is possible to launch a job via Control Panel, API and CLI. For more information, we invite you to read [our documentation](../).
+It is possible to launch a job via Control Panel, API and CLI. For more information, we invite you to read [our documentation](/us/en/data-processing/).
 
 
 ### Where to put the data to process?
@@ -140,6 +137,6 @@ OVHcloud builds a cluster, deploys it and monitors it. A great breakthrough, rig
 
 ## Go further
 
-To learn more about using Data Processing and how to create a cluster and process your data, we invite you to look at [Data Processing documentation page](../).
+To learn more about using Data Processing and how to create a cluster and process your data, we invite you to look at [Data Processing documentation page](/us/en/data-processing/).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

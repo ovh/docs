@@ -1,9 +1,6 @@
 ---
 title: 'CMS: installa manualmente PrestaShop'
 excerpt: Come fai a installare manualmente PrestaShop?
-slug: cms_installa_manualmente_prestashop
-section: CMS
-order: 06
 updated: 2022-12-01
 ---
 
@@ -18,10 +15,10 @@ Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al t
 
 
 - Recupera le credenziali FTP per accedere al tuo hosting Web.
-Per recuperare gli identificativi FTP, consulta la guida [prestashop]({legacy}1374)
+Per recuperare gli identificativi FTP, consulta la guida [prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 - Assicurati di avere a disposizione le credenziali per accedere al tuo database SQL.
-Per recuperare le tue credenziali SQL, consulta la guida [prestashop]({legacy}1374)
+Per recuperare le tue credenziali SQL, consulta la guida [prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 
 ![prestashop](images/3158.png){.thumbnail}
@@ -55,7 +52,7 @@ La cartella di destinazione si chiamerà PrestaShop.
 ## - Accedi al tuo hosting Web via FTP
 Accedi al tuo hosting e salva i file di PrestaShop.
 
-Se hai bisogno di aiuto per accedere in FTP alla tua soluzione di hosting condiviso, consulta la guida [prestashop]({legacy}1374)
+Se hai bisogno di aiuto per accedere in FTP alla tua soluzione di hosting condiviso, consulta la guida [prestashop](/pages/web/hosting/cms_manual_installation_prestashop%7Blegacy%7D1374)
 
 ![prestashop](images/3161.png){.thumbnail}
 

@@ -1,9 +1,6 @@
 ---
 title: 'Dodanie rekordu MX w konfiguracji domeny'
-slug: hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh
 excerpt: 'Dowiedz się, jak dodać rekord MX do strefy DNs domeny'
-section: 'DNS i strefa DNS'
-order: 04
 updated: 2018-05-30
 ---
 
@@ -66,7 +63,7 @@ Aby sprawdzać szybciej, czy rekordy MX już istnieją, za pomocą filtra znajdu
 
 Kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli, następnie wybierz `MX`{.action}. Wpisz wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
 
-- **jeśli używasz rozwiązania poczty elektronicznej OVHcloud**: wykorzystaj informacje opisane w [etapie 2: znajomość konfiguracji MX OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_konfiguracja_serwerow_mx_w_strefie_dns_ovh/#etap-2-znajomosc-konfiguracji-mx-ovh){.external};
+- **jeśli używasz rozwiązania poczty elektronicznej OVHcloud**: wykorzystaj informacje opisane w [etapie 2: znajomość konfiguracji MX OVHcloud](/pages/web/domains/dns_zone_mx#etap-2-znajomosc-konfiguracji-mx-ovh){.external};
 
 - **jeśli używasz innego rozwiązania**: wykorzystaj informacje podane przez dostawcę Twojej usługi.
 
@@ -79,9 +76,9 @@ Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.a
 
 ## Sprawdź również
 
-[Informacje na temat serwerów DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/){.external}
+[Informacje na temat serwerów DNS](/pages/web/domains/dns_server_general_information){.external}
 
-[Modyfikacja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
+[Modyfikacja strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
 

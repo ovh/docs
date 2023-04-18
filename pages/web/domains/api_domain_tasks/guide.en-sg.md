@@ -1,9 +1,6 @@
 ---
 title: "Tasks Management"
-slug: api-tasks
 excerpt: "How asynchronous tasks on domain names work"
-section: "Domains API"
-order: 04
 updated: 2022-05-05
 ---
 
@@ -13,20 +10,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](../api) page if needed.
+> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](/pages/web/domains/api_domain_intro) page if needed.
 
 <!-- Begin TOC -->
 
 ## Table of Contents
 
-- [Introduction](../api)
-- [Order a Domain Name](../api-order)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Order a Domain Name](/pages/web/domains/api_domain_intro-order)
 - **Tasks Management**
-- [Manage Contacts of a Domain Name](../api-contact)
-- [Managing Eligibility Rules](../api-rules)
-- [Configure the Display of Contact Data in the Whois](../api-whois)
-- [Configure the DNS of your Domain Name](../api-dns)
-- [Transfer a Domain Name](../api-transfer)
+- [Manage Contacts of a Domain Name](/pages/web/domains/api_domain_contacts)
+- [Managing Eligibility Rules](/pages/web/domains/api_domain_intro-rules)
+- [Configure the Display of Contact Data in the Whois](/pages/web/domains/api_domain_intro-whois)
+- [Configure the DNS of your Domain Name](/pages/web/domains/api_domain_dns)
+- [Transfer a Domain Name](/pages/web/domains/api_domain_intro-transfer)
 <!-- End TOC -->
 
 <!-- Reminder to put at the beginning of each CA/US/AU/ASIA/SG page (API CA) -->

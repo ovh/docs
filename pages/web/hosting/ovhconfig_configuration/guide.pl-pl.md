@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja pliku .ovhconfig na hostingu'
-slug: konfiguracja-pliku-ovhconfig
 excerpt: 'Poznaj plik .ovhconfig i dowiedz się, jak go modyfikować'
-section: 'Konfiguracja hostingu'
-order: 03
 updated: 2019-01-03
 ---
 
@@ -28,7 +25,7 @@ Możesz zmienić plik .ovhconfig na dwa sposoby:
 
 - **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. W tym przewodniku opiszemy tylko tę metodę.
 
-- **za pomocą asystenta konfiguracji w Panelu klienta**: to rozwiązanie jest mniej techniczne i wymaga zalogowania do Panelu klienta, gdzie możesz wybrać zmiany, które chcesz przeprowadzić. Skorzystaj z instrukcji zawartych w przewodniku OVH: [Zmiana konfiguracji hostingu](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/){.external}.
+- **za pomocą asystenta konfiguracji w Panelu klienta**: to rozwiązanie jest mniej techniczne i wymaga zalogowania do Panelu klienta, gdzie możesz wybrać zmiany, które chcesz przeprowadzić. Skorzystaj z instrukcji zawartych w przewodniku OVH: [Zmiana konfiguracji hostingu](/pages/web/hosting/ovhconfig_modify_system_runtime){.external}.
 
 Kontynuuj lekturę przewodnika, jeśli chcesz zmodyfikować ręcznie plik .ovhconfig. 
 
@@ -36,9 +33,9 @@ Kontynuuj lekturę przewodnika, jeśli chcesz zmodyfikować ręcznie plik .ovhco
 
 #### Etap 1: zaloguj się do przestrzeni dyskowej
 
-Przygotuj główny identyfikator FTP, hasło oraz adres serwera FTP. Następnie, przy użyciu tych informacji, zaloguj się do Twojej przestrzeni dyskowej. Jeśli potrzebujesz pomocy, skorzystaj z dokumentacji zatytułowanej [Logowanie do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/#2-logowanie-do-przestrzeni-dyskowej){.external}.
+Przygotuj główny identyfikator FTP, hasło oraz adres serwera FTP. Następnie, przy użyciu tych informacji, zaloguj się do Twojej przestrzeni dyskowej. Jeśli potrzebujesz pomocy, skorzystaj z dokumentacji zatytułowanej [Logowanie do przestrzeni dyskowej](/pages/web/hosting/hosting_how_to_get_my_website_online#2-logowanie-do-przestrzeni-dyskowej){.external}.
 
-**Jeśli nie posiadasz wskazanych wyżej informacji**, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Znajdziesz tam informacje potrzebne do zalogowania się. Jeśli nie posiadasz hasła FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
+**Jeśli nie posiadasz wskazanych wyżej informacji**, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Znajdziesz tam informacje potrzebne do zalogowania się. Jeśli nie posiadasz hasła FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](/pages/web/hosting/ftp_change_password){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -75,7 +72,7 @@ Wpisz wartości zmiennych odpowiadające konfiguracji, którą chcesz zastosowa�
 |app.engine.version|Pozwala wybrać wersję PHP używaną przez hosting spośród [wersji oferowanych przez OVHcloud](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/){.external}. Wpisz wybraną przez Ciebie wersję.|
 |http.firewall|Pozwala włączyć lub wyłączyć [zaporę ogniową dostarczaną wraz z hostingiem OVHcloud](https://www.ovhcloud.com/pl/web-hosting/options/){.external}. Wpisz „security”, aby go włączyć lub „none”, aby go wyłączyć.|
 |environment|Pozwala zarządzać mechanizmem pamięci podręcznej dla plików statycznych Twojej strony WWW, a także przetwarzaniem błędów PHP. Wpisz „production”, aby zmaksymalizować buforowanie i ukryć błędy PHP lub „development”, aby pamięć podręczna nie była stosowana a błędy PHP były wyświetlane.|
-|container.image|Pozwala modyfikować środowisko wykonawcze wykorzystywane przez hosting. Wpisz nazwę wybranego silnika. Wykaz silników możesz znaleźć w naszej dokumentacji: [Dostępne opcje konfiguracji środowiska uruchomieniowego](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/#dostepne-opcje-konfiguracji-srodowiska-uruchomieniowego_1){.external}.|
+|container.image|Pozwala modyfikować środowisko wykonawcze wykorzystywane przez hosting. Wpisz nazwę wybranego silnika. Wykaz silników możesz znaleźć w naszej dokumentacji: [Dostępne opcje konfiguracji środowiska uruchomieniowego](/pages/web/hosting/ovhconfig_modify_system_runtime#dostepne-opcje-konfiguracji-srodowiska-uruchomieniowego_1){.external}.|
 
 > [!warning]
 >
@@ -153,7 +150,7 @@ Gdy plik.ovhconfig zostanie zmodyfikowany, wystarczy tylko przesłać go na swoj
 
 Jeśli zainstalowałeś na Twoim hostingu kilka stron WWW, z pewnością skonfigurowałeś kilka różnych katalogów dla domen w opcji MultiSite. Możesz chcieć z różnych powodów używać różnych wersji PHP dla różnych stron MultiSite.
 
-W tym celu utwórz plik .ovhconfig dla jednej lub kilku stron MultiSite zawierających wybraną wersję PHP. Jeśli potrzebujesz pomocy, zapoznaj się z opisem operacji zawartym w sekcji [Modyfikacja pliku .ovhconfig](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/#modyfikacja-pliku-ovhconfig){.external}. Podczas pobierania i importowania pliku .ovhconfig do Twojej przestrzeni dyskowej zwróć uwagę, aby znalazł się on w katalogu głównym MultiSite. Możesz odnaleźć katalog główny Twoich stron MultiSite w Panelu klienta, w zakładce `MultiSite`{.action} wybranego hostingu.
+W tym celu utwórz plik .ovhconfig dla jednej lub kilku stron MultiSite zawierających wybraną wersję PHP. Jeśli potrzebujesz pomocy, zapoznaj się z opisem operacji zawartym w sekcji [Modyfikacja pliku .ovhconfig](/pages/web/hosting/ovhconfig_configuration#modyfikacja-pliku-ovhconfig){.external}. Podczas pobierania i importowania pliku .ovhconfig do Twojej przestrzeni dyskowej zwróć uwagę, aby znalazł się on w katalogu głównym MultiSite. Możesz odnaleźć katalog główny Twoich stron MultiSite w Panelu klienta, w zakładce `MultiSite`{.action} wybranego hostingu.
 
 > [!warning]
 >

@@ -1,9 +1,6 @@
 ---
 title: 'Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?'
-slug: blocked-for-spam
 excerpt: 'Erfahren Sie hier, wie Sie vorgehen, wenn Ihre E-Mail-Adresse wegen Spamverdachts blockiert ist'
-section: Troubleshooting
-order: 1
 updated: 2020-04-20
 ---
 
@@ -22,4 +19,4 @@ Wenn Sie eine E-Mail erhalten haben, die darauf hinweist, dass eine Ihrer E-Mail
 
 ## In der praktischen Anwendung
 
-Folgen Sie unserer Anleitung [Was tun bei einem gesperrten Spam-Account?](https://docs.ovh.com/de/microsoft-collaborative-solutions/blocked-wegen-spam/){.external} im Bereich "Microsoft Collaboration Lösungen".
+Folgen Sie unserer Anleitung [Was tun bei einem gesperrten Spam-Account?](/pages/web/microsoft-collaborative-solutions/locked_for_spam){.external} im Bereich "Microsoft Collaboration Lösungen".

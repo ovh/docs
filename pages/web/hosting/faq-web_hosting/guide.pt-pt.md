@@ -1,9 +1,6 @@
 ---
 title: FAQ Web Hosting
 excerpt: Encontre aqui as questões mais comuns sobre os alojamentos web da OVHcloud
-slug: faq-alojamento
-section: Primeiros passos
-order: 05
 updated: 2022-11-28
 ---
 
@@ -25,35 +22,35 @@ Para configurar o seu alojamento, comece por aceder à [Área de Cliente OVHclou
 
 Para gerir as suas palavras-passe, antes de mais tem de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se tiver esquecido o ID ou a palavra-passe, clique em `Perdeu o identificador ou a palavra-passe?`{.action}, na janela de login. Receberá um e-mail para dar início a um processo de reinicialização.
 
-Também pode consultar o guia [Definir e gerir a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/).
+Também pode consultar o guia [Definir e gerir a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password).
 
 Depois de aceder à Área de Cliente:
 
-- Para alterar a palavra-passe do seu espaço FTP, siga as instruções [deste manual](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/).
-- Para alterar a palavra-passe da base de dados, siga as instruções [deste manual](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-base-de-dados/).
-- Para alterar a palavra-passe do seu endereço de e-mail MX Plan, siga as instruções [deste manual](https://docs.ovh.com/pt/emails/alterar-palavra-passe-endereco-email/).
+- Para alterar a palavra-passe do seu espaço FTP, siga as instruções [deste manual](/pages/web/hosting/ftp_change_password).
+- Para alterar a palavra-passe da base de dados, siga as instruções [deste manual](/pages/web/hosting/sql_change_password).
+- Para alterar a palavra-passe do seu endereço de e-mail MX Plan, siga as instruções [deste manual](/pages/web/emails/email_change_password).
 
 ### Como pôr o meu site em linha? 
 
 Para colocar o seu site online, deverá dispor de um [domínio](https://www.ovhcloud.com/pt/domains/) correspondente ao endereço Web a partir do qual o seu site estará acessível (exemplo: *meudominio.com*). Também precisará de um [alojamento](https://www.ovhcloud.com/pt/web-hosting/) para instalar o seu site.
 
-Para seguir os passos necessários para construir o seu website, consulte esta [página](https://www.ovhcloud.com/pt/web-hosting/uc-website/) e siga as instruções do guia [Publicar um website no seu alojamento web](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/).
+Para seguir os passos necessários para construir o seu website, consulte esta [página](https://www.ovhcloud.com/pt/web-hosting/uc-website/) e siga as instruções do guia [Publicar um website no seu alojamento web](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
-**Truques e dicas**: Para o ajudar a criar o seu site, a OVHcloud permite-lhe instalar no seu alojamento um software de assistência à criação de sites (WordPress, PrestaShop, Joomla! e Drupal), graças à funcionalidade [Módulos 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
+**Truques e dicas**: Para o ajudar a criar o seu site, a OVHcloud permite-lhe instalar no seu alojamento um software de assistência à criação de sites (WordPress, PrestaShop, Joomla! e Drupal), graças à funcionalidade [Módulos 1 clique](/pages/web/hosting/cms_install_1_click_modules).
 
 ### Como transferir o meu site e os meus e-mails para os servidores OVHcloud? 
 
-Consulte o guia [Como migrar um site e e-mails para a OVH?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/).
+Consulte o guia [Como migrar um site e e-mails para a OVH?](/pages/web/hosting/hosting_migrating_to_ovh).
 
 ### Como alojar vários sites num alojamento partilhado?
 
-Consulte o guia [Partilhar o alojamento entre vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/).
+Consulte o guia [Partilhar o alojamento entre vários sites](/pages/web/hosting/multisites_configure_multisite).
 
 ### Como mudar de fórmula de alojamento?
 
 Para encomendar a fórmula de alojamento web mais adaptada às suas necessidades, pode consultar as nossas ofertas em [esta página](https://www.ovhcloud.com/pt/web-hosting/).
 
-Uma vez selecionada a opção, siga as instruções do nosso manual ["Fazer evoluir o seu plano de alojamento web"](https://docs.ovh.com/pt/hosting/how_to_change_web_hosting_offer/).
+Uma vez selecionada a opção, siga as instruções do nosso manual ["Fazer evoluir o seu plano de alojamento web"](/pages/web/hosting/how_to_upgrade_web_hosting_offer).
 
 ### Como conservar a oferta de e-mail associada ao meu alojamento partilhado aquando de uma rescisão?
 
@@ -87,9 +84,9 @@ Consulte os [eventos em curso na nossa infraestrutura](https://www.status-ovhclo
 
 Aquando da instalação do seu alojamento, a OVHcloud implementa esta página de espera sob a forma de um ficheiro **index.html** contido na pasta `www` do seu servidor FTP.
 
-Este ficheiro é automaticamente desativado durante a criação do seu [módulo 1 clique](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
+Este ficheiro é automaticamente desativado durante a criação do seu [módulo 1 clique](/pages/web/hosting/cms_install_1_click_modules).
 
-Se escolheu instalar o seu site [de forma manual](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/), [ligue-se ao seu espaço FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) para que o possa denominar em **index.html.old**.
+Se escolheu instalar o seu site [de forma manual](/pages/web/hosting/cms_manual_installation), [ligue-se ao seu espaço FTP](/pages/web/hosting/ftp_connection) para que o possa denominar em **index.html.old**.
 
 ### O que fazer se o meu site for apresentado num endereço web do tipo "xxxx.cluster0xx.hosting.ovh.net"?
 
@@ -112,7 +109,7 @@ De seguida, elimine a base de dados a partir do separador do mesmo nome situado 
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
  
-Reinicie a sua instalação no domínio pretendido, utilizando a funcionalidade [Módulo 1 clique](https://docs.ovh.com/pt/hosting/1-click-module-management/).
+Reinicie a sua instalação no domínio pretendido, utilizando a funcionalidade [Módulo 1 clique](/pages/web/hosting/cms_manage_1_click_module).
 
 #### Cenário 2: o seu site apresenta-se com um endereço web do tipo "xxxx.cluster0xx.hosting.ovh.net" na sequência de uma modificação
 
@@ -125,15 +122,15 @@ Se o website aparecer com este URL após uma manipulação, volte-o para o estad
 > Durante o restauro, o conteúdo do seu espaço FTP ou da sua base de dados é substituído por um backup. De seguida, não poderá recuperar os dados presentes no servidor FTP ou os da base de dados antes do restauro.
 >
 
-Para restaurar o código fonte do seu site, consulte o nosso manual [Restaurar o espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/).
+Para restaurar o código fonte do seu site, consulte o nosso manual [Restaurar o espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_save_and_backup).
 
-Se o seu site tiver uma base de dados, consulte o nosso manual [Importar um backup para a base de dados de um alojamento web](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/#restaurar-um-backup-a-partir-da-area-de-cliente).
+Se o seu site tiver uma base de dados, consulte o nosso manual [Importar um backup para a base de dados de um alojamento web](/pages/web/hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente).
 
 ### O que fazer se o meu webmail for redirecionado para o webmail OVHcloud?
 
 ![webmail](images/webmail.png){.thumbnail}
 
-Esta anomalia indica uma configuração errada dos [servidores DNS](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/) ou da [zona DNS](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) associados ao seu domínio.
+Esta anomalia indica uma configuração errada dos [servidores DNS](/pages/web/domains/dns_server_general_information) ou da [zona DNS](/pages/web/domains/dns_zone_edit) associados ao seu domínio.
 
 O caso mais comum é o seguinte: encomendou separadamente o seu nome de domínio e o seu alojamento, pelo que não estão ligados entre si através da sua zona DNS.
 
@@ -143,11 +140,11 @@ De seguida, tome nota dos servidores DNS indicados e aceda ao separador `Zona DN
 
 Compare os `Alvo` das entradas do tipo `NS` indicadas no separador `Zona DNS`{.action} com os `Servidores DNS` indicados no separador do mesmo nome:
 
-- Se os elementos forem idênticos, substitua o alvo `213.186.33.5` pelo código de quatro números indicado no separador `Informações gerais` com a menção `IPv4` (para mais informações sobre as operações a efetuar, siga as instruções [deste guia](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#instrucoes)).
+- Se os elementos forem idênticos, substitua o alvo `213.186.33.5` pelo código de quatro números indicado no separador `Informações gerais` com a menção `IPv4` (para mais informações sobre as operações a efetuar, siga as instruções [deste guia](/pages/web/domains/dns_zone_edit#instrucoes)).
 
-- Se os elementos não forem idênticos mas os `Servidores DNS` indicados no separador do mesmo nome aparecerem na [lista](https://docs.ovh.com/pt/hosting/lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/), efetue uma reinicialização de acordo com as instruções [deste manual](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/#reinicializar-os-servidores-dns).
+- Se os elementos não forem idênticos mas os `Servidores DNS` indicados no separador do mesmo nome aparecerem na [lista](/pages/web/hosting/clusters_and_shared_hosting_IP), efetue uma reinicialização de acordo com as instruções [deste manual](/pages/web/domains/dns_server_general_information#reinicializar-os-servidores-dns).
 
-- Se os elementos não forem idênticos e os `Servidores DNS` indicados no separador do mesmo nome não aparecerem [nesta lista](https://docs.ovh.com/pt/hosting/lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/), contacte o seu Webmaster ou procure um fornecedor especializado através da página dos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+- Se os elementos não forem idênticos e os `Servidores DNS` indicados no separador do mesmo nome não aparecerem [nesta lista](/pages/web/hosting/clusters_and_shared_hosting_IP), contacte o seu Webmaster ou procure um fornecedor especializado através da página dos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 ### O que fazer se o meu website apresentar um erro "A página não se redirige corretamente"?
 
@@ -162,9 +159,9 @@ Compare os `Alvo` das entradas do tipo `NS` indicadas no separador `Zona DNS`{.a
 
 Restaure o seu site para o estado anterior :
 
-- Para restaurar o código fonte do seu site, consulte o nosso manual [Restaurar o espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/).
+- Para restaurar o código fonte do seu site, consulte o nosso manual [Restaurar o espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_save_and_backup).
 
-- Se o seu site tiver uma base de dados, consulte o nosso manual [Restaurar um backup da sua base de dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/#restaurar-um-backup-a-partir-da-area-de-cliente).
+- Se o seu site tiver uma base de dados, consulte o nosso manual [Restaurar um backup da sua base de dados](/pages/web/hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente).
 
 Se os restauros não lhe permitem restabelecer o acesso ao seu site, contacte o seu Webmaster ou procure um fornecedor especializado no site dos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
@@ -172,7 +169,7 @@ Se os restauros não lhe permitem restabelecer o acesso ao seu site, contacte o 
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-Se ativou a [opção CDN](https://docs.ovh.com/pt/hosting/guia_de_utilizacao_do_acelerador_geocache_num_alojamento_web/) do seu alojamento, desative o modo *Manutenção* no seu site WordPress ou PrestaShop.
+Se ativou a [opção CDN](/pages/web/hosting/cdn_how_to_use_cdn) do seu alojamento, desative o modo *Manutenção* no seu site WordPress ou PrestaShop.
 
 Se não ativou esta opção nem utilizou o modo *Maintenance*, contacte o seu Webmaster ou procure um fornecedor especializado no site dos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
@@ -180,7 +177,7 @@ Se não ativou esta opção nem utilizou o modo *Maintenance*, contacte o seu We
 
 ![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
 
-Esta mensagem indica que o tipo de pedido HTTP que pretende realizar no seu site é proibido por um período de tempo limitado. Nesta situação, [verifique os logs](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/) do seu site para determinar quais os pedidos que provocaram este bloqueio.
+Esta mensagem indica que o tipo de pedido HTTP que pretende realizar no seu site é proibido por um período de tempo limitado. Nesta situação, [verifique os logs](/pages/web/hosting/logs_and_statistics) do seu site para determinar quais os pedidos que provocaram este bloqueio.
 
 Para o ajudar a corrigir estas anomalias, contacte o seu Webmaster ou um dos nossos [parceiros](https://partner.ovhcloud.com/pt/directory/).
 
@@ -190,7 +187,7 @@ Para o ajudar a corrigir estas anomalias, contacte o seu Webmaster ou um dos nos
 
 Esta mensagem indica que o endereço IP que utiliza para se ligar ao seu site está bloqueado por um período de tempo limitado. 
 
-Nesta situação, [verifique os logs](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/) do seu site, para determinar quais os pedidos que provocaram este bloqueio.<br>
+Nesta situação, [verifique os logs](/pages/web/hosting/logs_and_statistics) do seu site, para determinar quais os pedidos que provocaram este bloqueio.<br>
 Verifique também que o computador não está infetado com vírus.<br>
 Por fim, pode contactar um dos nossos parceiros (https://partner.ovhcloud.com/pt/directory/), para que este verifique o código informático do seu site.
 
@@ -207,7 +204,7 @@ Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentad
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[FAQ - E-mails partilhados MX Plan](https://docs.ovh.com/pt/emails/faq-emails/)
+[FAQ - E-mails partilhados MX Plan](/pages/web/emails/faq-emails)
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

@@ -2,7 +2,6 @@
 deprecated: true
 title: Glue Registry
 excerpt: Waarvoor dient een Glue Registry
-slug: glue_registry
 legacy_guide_number: g1568
 updated: 2018-10-26
 ---

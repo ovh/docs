@@ -1,9 +1,6 @@
 ---
 title: 'All our Object Storage guides'
-slug: object-storage-redirection
 excerpt: 'Find all our High Performance and Swift Object Storage guides'
-section: 'Storage'
-order: 00
 updated: 2022-03-14
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Getting started with Public Cloud Databases via API
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
-slug: order-api
-section: General guides
-order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/order-api/'
+    canonical: '/pages/platform/databases/databases_02_order_api'
 updated: 2021-09-03
 ---
 
@@ -19,7 +16,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 ## Requirements
 
-- access to the [OVHcloud API](https://api.ovh.com/){.external} (create your credentials by consulting [this guide](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/))
+- access to the [OVHcloud API](https://api.ovh.com/){.external} (create your credentials by consulting [this guide](/pages/account/api/first-steps))
 - a [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 
 ## Instructions
@@ -124,11 +121,11 @@ You’ll find the cluster connection information in your Control Panel; you can 
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/us/es/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](/pages/platform/databases/mongodb_01_concept_capabilities)
 
-[Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/us/es/publiccloud/databases/mongodb/managing-service/)
+[Managing a MongoDB service from the OVHcloud Control Panel](/pages/platform/databases/mongodb_02_manage_control_panel)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 

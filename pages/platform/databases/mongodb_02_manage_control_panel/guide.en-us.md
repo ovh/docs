@@ -1,9 +1,6 @@
 ---
 title: MongoDB - Configure your MongoDB instance to accept incoming connections
 excerpt: Find out how to configure your MongoDB instance to accept incoming connections
-slug: mongodb/managing-service
-section: MongoDB - Guides
-order: 020
 updated: 2023-03-14
 ---
 
@@ -19,7 +16,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/us/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
 
 ## Instructions
 
@@ -100,7 +97,7 @@ Select the `Users`{.action} tab to get the username or reset a user password.
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/us/en/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](/pages/platform/databases/mongodb_01_concept_capabilities)
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodb) to find how to connect to your database with several languages.
 

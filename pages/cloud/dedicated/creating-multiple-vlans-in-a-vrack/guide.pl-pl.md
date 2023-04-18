@@ -1,8 +1,6 @@
 ---
 title: 'Tworzenie kilku sieci VLAN w prywatnej sieci vRack'
-slug: tworzenie-vlan-vrack
 excerpt: 'Dowiedz się, jak utworzyć kilka sieci VLAN w prywatnej sieci vRack'
-section: vRack
 updated: 2022-02-24
 ---
 
@@ -10,7 +8,7 @@ updated: 2022-02-24
 
 ## Wprowadzenie
 
-[Podstawowa konfiguracja vRack](https://docs.ovh.com/pl/dedicated/konfiguracja-kilku-serwerow-dedykowanych-vrack/){.external} umożliwia utworzenie jednej sieci VLAN. W tej konfiguracji możesz użyć każdego adresu IP tylko jeden raz. Tymczasem dzięki wersji 2.0 konfiguracji vRack możesz utworzyć do 4 000 lokalnych wirtualnych sieci w ramach jednej sieci vRack. Oznacza to, że możesz wykorzystać każdy adres IP do 4 000 razy.
+[Podstawowa konfiguracja vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external} umożliwia utworzenie jednej sieci VLAN. W tej konfiguracji możesz użyć każdego adresu IP tylko jeden raz. Tymczasem dzięki wersji 2.0 konfiguracji vRack możesz utworzyć do 4 000 lokalnych wirtualnych sieci w ramach jednej sieci vRack. Oznacza to, że możesz wykorzystać każdy adres IP do 4 000 razy.
 
 **Niniejszy przewodnik wyjaśnia, jak utworzyć kilka sieci VLAN w prywatnej sieci vRack.**
 
@@ -22,7 +20,7 @@ updated: 2022-02-24
 - Dostęp do wybranego zakresu Twoich prywatnych adresów IP
 - Połączenie przez SSH z identyfikatorem root (Linux)
 - Połączenie z kontem administratora (Windows)
-- Ukończona [konfiguracja vRack](https://docs.ovh.com/pl/dedicated/konfiguracja-kilku-serwerow-dedykowanych-vrack/){.external}
+- Ukończona [konfiguracja vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
 > [!warning]
 > Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
@@ -197,6 +195,6 @@ Na koniec kliknij przycisk `OK`{.action}, aby zapisać modyfikacje, po czym zres
 
 ## Sprawdź również
 
-[Konfiguracja kilku serwerów dedykowanych w sieci vRack](https://docs.ovh.com/pl/dedicated/konfiguracja-kilku-serwerow-dedykowanych-vrack/){.external}
+[Konfiguracja kilku serwerów dedykowanych w sieci vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

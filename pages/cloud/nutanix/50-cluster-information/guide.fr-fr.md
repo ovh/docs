@@ -1,9 +1,6 @@
 ---
 title: Récupérer les informations de statut de votre installation Nutanix
-slug: nutanix-cluster-information
 excerpt: Découvrez comment récupérer les informations essentielles sur le statut de votre cluster Nutanix
-section: Diagnostic
-order: 01
 updated: 2022-03-14
 ---
 
@@ -102,7 +99,7 @@ Une fois le rapport téléchargé, vous pourrez alors le transmettre à nos équ
 - [numéro de série du Node](#node-sn)).
 
 > [!primary]
-> Utilisez l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser votre rapport et nous le transmettre sous la forme d'un lien de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/fr/customer/plik/).
+> Utilisez l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser votre rapport et nous le transmettre sous la forme d'un lien de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](/pages/account/customer/use-plik).
 >
 
 #### Recevoir le rapport NCC par e-mail <a name="email"></a>
@@ -202,7 +199,7 @@ nutanix@CVMN's password:
 ```
 
 > [!primary]
-> Utilisez l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser vos fichiers .zip et nous les transmettre sous la forme de liens de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/fr/customer/plik/).
+> Utilisez l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser vos fichiers .zip et nous les transmettre sous la forme de liens de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](/pages/account/customer/use-plik).
 >
 
 ## Aller plus loin <a name="gofurther"></a>

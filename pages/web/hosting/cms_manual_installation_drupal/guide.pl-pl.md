@@ -1,9 +1,6 @@
 ---
 title: CMS - ręczna instalacja modułu Drupal
 excerpt: Jak ręcznie zainstalować moduł Drupal?
-slug: cms_-_reczna_instalacja_modulu_drupal
-section: CMS
-order: 07
 updated: 2022-12-01
 ---
 
@@ -231,5 +228,5 @@ Chodzi o błąd dotyczący wersji PHP serwera.
 
 Przyczyna jest prosta: najnowsza wersja PHP nie została włączona.
 
-Udostępniamy przewodnik na temat zmiany wersji PHP na hostingu www:[Zmiana wersji PHP na hostingu]({legacy}1207)
+Udostępniamy przewodnik na temat zmiany wersji PHP na hostingu www:[Zmiana wersji PHP na hostingu](/pages/web/hosting/cms_manual_installation_drupal%7Blegacy%7D1207)
 

@@ -1,9 +1,6 @@
 ---
 title: Firewall auf einem Windows Server konfigurieren
 excerpt: Erfahren Sie hier, wie Sie Ihre Windows Firewall konfigurieren
-slug: firewall-windows
-section: Sicherheit
-order: 02
 updated: 2022-01-31
 ---
 

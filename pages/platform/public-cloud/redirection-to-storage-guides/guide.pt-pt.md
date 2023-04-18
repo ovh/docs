@@ -1,9 +1,6 @@
 ---
 title: 'Todos os nossos guias Object Storage'
-slug: object-storage-redirection
 excerpt: Encontre o conjunto dos nossos guias Object Storage High Performance e Swift
-section: 'Armazenamento'
-order: 00
 updated: 2022-03-14
 ---
 

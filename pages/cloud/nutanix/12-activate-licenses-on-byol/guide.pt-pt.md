@@ -1,11 +1,8 @@
 ---
 title: "Gestão das licenças no seu cluster da oferta Nutanix on OVHcloud BYOL (EN)"
-slug: activate-licence-on-nutanix-byol
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/activate-licence-on-nutanix-byol/'
+    canonical: '/pages/cloud/nutanix/12-activate-licenses-on-byol'
 excerpt: 'How to add and remove licences in a Nutanix cluster with the BYOL offer'
-section: Primeiros passos
-order: 12
 updated: 2022-11-16
 ---
 

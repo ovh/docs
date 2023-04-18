@@ -1,9 +1,6 @@
 ---
 title: Configuration of OVHcloud Connect using OVHcloud APIv6
-slug: api
 excerpt: 'Find out how to set up OVHcloud Connect using OVHcloud APIv6'
-section: Configuration
-order: 2
 updated: 2020-09-14
 ---
 
@@ -18,11 +15,11 @@ Configuring the OVHcloud Connect solution can be done via API.
 ## Requirements
 
 > [!warning]
-> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/) and configure your network devices accordingly.
+> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/cloud/ovhcloud-connect/occ-limits) and configure your network devices accordingly.
 >
 
 - an [OVHcloud Connect service](https://www.ovh.com.au/solutions/ovhcloud-connect/)
-- access to the [OVHcloud APIv6](https://ca.api.ovh.com/){.external} (create your credentials by consulting [this guide](../../api/first-steps-with-ovh-api/))
+- access to the [OVHcloud APIv6](https://ca.api.ovh.com/){.external} (create your credentials by consulting [this guide](/pages/account/api/first-steps))
 
 ## Instructions
 

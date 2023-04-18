@@ -1,8 +1,5 @@
 ---
 title: 'Public Cloud Glossary'
-slug: introduction-to-instances-and-other-cloud-based-terms
-section: General information
-order: 02
 updated: 2021-12-10
 ---
 

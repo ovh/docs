@@ -1,11 +1,8 @@
 ---
 title: VMware Fault Tolerance
-slug: vmware-fault-tolerance
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/vmware-fault-tolerance/'
+    canonical: '/pages/cloud/private-cloud/vmware_fault_tolerance'
 excerpt: Garantizar la continuidad de su máquina virtual con Fault Tolerance
-section: Funcionalidades de VMware vSphere
-order: 06
 updated: 2020-11-18
 ---
 

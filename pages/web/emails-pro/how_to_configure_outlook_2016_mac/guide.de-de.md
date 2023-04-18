@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration von E-Mail Pro auf Outlook 2016 für Mac'
-slug: konfiguration-outlook-2016-mac
 excerpt: 'So konfigurieren Sie Ihren E-Mail Pro Account auf Outlook 2016 für Mac'
-section: 'Konfiguration des E-Mail-Clients'
-order: 2
 updated: 2020-03-18
 ---
 
@@ -29,7 +26,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 > [!primary]
 >
-> Sie verwenden Outlook 2016 für Windows? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Windows](https://docs.ovh.com/de/emails-pro/konfiguration-outlook-2016/){.external}
+> Sie verwenden Outlook 2016 für Windows? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Windows](/pages/web/emails-pro/how_to_configure_outlook_2016){.external}
 >
 
 ## In der praktischen Anwendung
@@ -85,8 +82,8 @@ OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf Outlook 2016 für Mac](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/)
+[Konfiguration Ihrer E-Mail-Adresse aus dem MX Plan Angebot oder einem Webhosting Angebot auf Outlook 2016 für Mac](/pages/web/emails/how_to_configure_outlook_2016-mac/)
 
-[Konfiguration von Exchange auf Outlook 2016 für Mac](https://docs.ovh.com/de/microsoft-collaborative-solutions/konfiguration-outlook-2016-mac/)
+[Konfiguration von Exchange auf Outlook 2016 für Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

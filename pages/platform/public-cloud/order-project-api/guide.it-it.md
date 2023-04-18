@@ -1,9 +1,6 @@
 ---
 title: Ordina un progetto Public Cloud tramite l'API OVHcloud
 excerpt: Come ordinare un progetto Public Cloud con l'API OVHcloud
-slug: ordina-progetto-public-cloud-api
-section: Per iniziare
-order: 9
 updated: 2020-12-09
 ---
 
@@ -22,8 +19,8 @@ La creazione di un progetto è il primo step per l'implementazione di [istanze P
 ## Prerequisiti
 
 - Disporre delle credenziali OVHcloud valide
-- Disporre di una [modalità di pagamento](https://docs.ovh.com/it/billing/manage-payment-methods/) valida e registrata sul tuo account OVHcloud
-- Familiarizzare con il [funzionamento dell'APIv6 OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/)
+- Disporre di una [modalità di pagamento](/pages/account/billing/manage-payment-methods) valida e registrata sul tuo account OVHcloud
+- Familiarizzare con il [funzionamento dell'APIv6 OVHcloud](/pages/account/api/first-steps)
 
 ## Procedura
 

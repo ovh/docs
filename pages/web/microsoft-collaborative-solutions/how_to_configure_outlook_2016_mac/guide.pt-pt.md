@@ -1,9 +1,6 @@
 ---
 title: 'Configurar uma conta Exchange no Outlook 2016 para Mac'
-slug: configuracao-outlook-2016-mac
 excerpt: 'Saiba como configurar uma conta Exchange no Outlook 2016 para Mac'
-section: 'Configuração no computador'
-order: 02
 updated: 2018-06-01
 ---
 
@@ -23,9 +20,9 @@ As contas Exchange podem ser usadas com vários softwares de e-mail (desde que s
 
 > [!primary]
 >
-> Se utiliza uma versão anterior do Outlook para Mac, consulte o nosso manual [Configurar uma conta Exchange no Outlook 2011 para Mac](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-microsoft-outlook-2011-mac/){.external} (versão em francês).
+> Se utiliza uma versão anterior do Outlook para Mac, consulte o nosso manual [Configurar uma conta Exchange no Outlook 2011 para Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac){.external} (versão em francês).
 >
-> Se utilizar o Outlook 2016 para Windows, consulte o nosso manual [Configurar uma conta Exchange no Outlook 2016 para Windows](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configuracao-outlook-2016/){.external}.
+> Se utilizar o Outlook 2016 para Windows, consulte o nosso manual [Configurar uma conta Exchange no Outlook 2016 para Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}.
 >
 
 ## Instruções
@@ -64,8 +61,8 @@ A OVHcloud disponibiliza uma aplicação web que tem [funcionalidades de colabor
 
 ## Quer saber mais?
 
-[Configurar um endereço de e-mail no Outlook 2016 para Mac ](https://docs.ovh.com/pt/emails/configuracao-outlook-2016-mac/){.external}
+[Configurar um endereço de e-mail no Outlook 2016 para Mac ](/pages/web/emails/how_to_configure_outlook_2016-mac/){.external}
 
-[Configurar uma conta Email Pro no Outlook 2016 para Mac](https://docs.ovh.com/pt/emails-pro/configuracao-outlook-2016-mac/){.external}
+[Configurar uma conta Email Pro no Outlook 2016 para Mac](/pages/web/emails-pro/how_to_configure_outlook_2016-mac/){.external}
 
 Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

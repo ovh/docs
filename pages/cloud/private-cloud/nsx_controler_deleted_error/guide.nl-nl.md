@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Begrip van de foutmelding "Controller VM verwijderd"'
-slug: error-controller-nsx
 excerpt: 'Leer wat de foutmelding "Controller VM verwijderd" precies betekent'
-section: NSX-v
 updated: 2021-11-26
 ---
 
@@ -19,12 +17,12 @@ In uw NSX-interface kunt u het bericht *Controller VM removed* tegenkomen.
 ## Vereisten
 
 - U moet beschikken over de NSX-optie.
-- U moet een gebruiker met [NSX-toegangspermissies - FR](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} hebben aangemaakt.
+- U moet een gebruiker met [NSX-toegangspermissies - FR](/pages/cloud/private-cloud/change_users_rights){.external} hebben aangemaakt.
 
 
 ## Instructies
 
-In uw [NSX-interface - EN](https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/), onder de sectie `Installatie`{.action}, kan de *Controller VM verwijderd* -foutmelding verschijnen onder de naam van de controller:
+In uw [NSX-interface - EN](/pages/cloud/private-cloud/nsx_access-interface), onder de sectie `Installatie`{.action}, kan de *Controller VM verwijderd* -foutmelding verschijnen onder de naam van de controller:
 
 ![Controller VM verwijderd -foutmelding](images/controllervmdeleted.JPG)
 

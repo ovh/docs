@@ -1,9 +1,6 @@
 ---
 title: 'Activer une licence Windows pour une instance en mode privé'
-slug: activate-windows-licence-private-mode-instance
 excerpt: 'Découvrez comment activer une license Windows sur une instance en mode privé'
-section: Premiers pas
-order: 09
 updated: 2023-01-25
 ---
 
@@ -18,11 +15,11 @@ Dans ce cas, vous devez activer la licence manuellement afin d'avoir accès à t
 
 ## Prérequis
 
-- Posséder un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/) dans votre compte OVHcloud
+- Posséder un [projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- [Avoir créé un utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
+- [Avoir créé un utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
 
-Nous vous recommandons de consulter le guide « [Accéder à l’interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/) » pour vous familiariser à Horizon.
+Nous vous recommandons de consulter le guide « [Accéder à l’interface Horizon](/pages/platform/public-cloud/introducing_horizon) » pour vous familiariser à Horizon.
 
 ## En pratique
 
@@ -30,7 +27,7 @@ Nous vous recommandons de consulter le guide « [Accéder à l’interface Horiz
 
 #### Depuis l'interface Horizon
 
-Connectez-vous à l’interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) en suivant la méthode indiquée dans la [première partie de ce guide](https://docs.ovh.com/fr/publiccloud/network-services/public-cloud-vrack/#interface-horizon).
+Connectez-vous à l’interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) en suivant la méthode indiquée dans la [première partie de ce guide](/pages/platform/network-services/getting-started-07-creating-vrack#interface-horizon).
 
 Connectez-vous bien sur votre zone de travail :
 
@@ -52,8 +49,8 @@ Sélectionnez votre interface et validez :
 
 Avant de poursuivre, il est recommandé de consulter ces guides :
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/).
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 Rassemblez tout d'abord toutes les informations nécessaires :
 
@@ -183,6 +180,6 @@ slmgr.vbs -dli
 
 ## Aller plus loin
 
-[Découvrez comment corriger la clé d’activation de votre Windows Server](https://docs.ovh.com/fr/dedicated/windows-key/).
+[Découvrez comment corriger la clé d’activation de votre Windows Server](/pages/cloud/dedicated/windows_key).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

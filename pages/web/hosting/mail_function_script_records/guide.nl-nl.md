@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Monitoring en beheer van geautomatiseerde e-mails in uw webhosting'
-slug: web_hosting_monitoren_van_automatische_e-mails
 excerpt: 'Ontdek hoe u geautomatiseerde e-mails, die vanuit uw OVHcloud-webhosting worden verzonden, kunt monitoren en beheren'
-section: Diagnostisch
 updated: 2022-10-12
 ---
 
@@ -41,7 +39,7 @@ De `E-mailscripts`{.action}-pagina bevat verschillende soorten informatie, die u
 
 |Informatie|Details|
 |---|---|
-|Service status|Toont de huidige status van een dienst die geautomatiseerde e-mails verzendt vanuit uw webhosting. Een status in een groen vakje betekent dat e-mailverzending operationeel is, terwijl een status in een rood vakje betekent dat e-mails niet langer worden verzonden. Afhankelijk van deze status, varieert de manier waarop e-mail wordt verzonden. Raadpleeg voor meer informatie hierover het gedeelte [Verzending van geautomatiseerde e-mails beheren](https://docs.ovh.com/nl/hosting/web_hosting_monitoren_van_automatische_e-mails/#verzendstatus-beheren-voor-geautomatiseerde-e-mails){.external} in de handleiding.|
+|Service status|Toont de huidige status van een dienst die geautomatiseerde e-mails verzendt vanuit uw webhosting. Een status in een groen vakje betekent dat e-mailverzending operationeel is, terwijl een status in een rood vakje betekent dat e-mails niet langer worden verzonden. Afhankelijk van deze status, varieert de manier waarop e-mail wordt verzonden. Raadpleeg voor meer informatie hierover het gedeelte [Verzending van geautomatiseerde e-mails beheren](/pages/web/hosting/mail_function_script_records#verzendstatus-beheren-voor-geautomatiseerde-e-mails){.external} in de handleiding.|
 |Stuur foutmeldingen naar|Ontvang dagelijks foutmeldingen op een e-mailadres van uw keuze. U kunt hiervoor een e-mailadres instellen door op de knop `Ontvanger wijzigen`{.action} te klikken. Dit rapport bevat e-mails die zijn verzonden vanuit uw webhosting en naar OVHcloud zijn teruggestuurd, omdat ze geen ontvanger konden bereiken. Door op de knop `E-mails met foutmeldingen`{.action} te klikken, kunt u ook op elk gewenst moment rapporten lezen via uw OVHcloud Control Panel.|
 |Totaal aantal verzonden e-mails|Geeft het totale aantal geautomatiseerde e-mails weer dat is verzonden sinds de creatie van uw OVHcloud-webhosting.|
 |Vandaag verzonden e-mails |Toont het totale aantal geautomatiseerde e-mails dat alleen vandaag is verzonden.|

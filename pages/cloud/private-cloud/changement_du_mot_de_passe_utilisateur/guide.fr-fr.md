@@ -1,8 +1,6 @@
 ---
 title: Changement du mot de passe utilisateur
-slug: changement-du-mot-de-passe-utilisateur
 excerpt: Découvrez comment modifier le mot de passe d'un utilisateur du client vSphere depuis votre espace client OVHcloud
-section: Fonctionnalités OVHcloud
 updated: 2021-08-19
 ---
 
@@ -17,7 +15,7 @@ La gestion des autorisations et mots de passe des utilisateurs du client vSphere
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
-- Disposer d'un compte utilisateur créé depuis l'espace client OVHcloud. Pour plus d'informations, consultez [ce guide](../manager-ovh-private-cloud/#utilisateurs).
+- Disposer d'un compte utilisateur créé depuis l'espace client OVHcloud. Pour plus d'informations, consultez [ce guide](/pages/cloud/private-cloud/manager_ovh_private_cloud#utilisateurs).
 
 ## En pratique
 
@@ -55,10 +53,10 @@ Renseignez alors un nouveau mot de passe et confirmez-le.
 
 ## Aller plus loin
 
-[Présentation de l’espace client Private Cloud OVHcloud](../manager-ovh-private-cloud/)
+[Présentation de l’espace client Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud)
 
-[Changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/)
+[Changer les droits d'un utilisateur](/pages/cloud/private-cloud/change_users_rights)
 
-[Définir et gérer le mot de passe de votre compte OVHcloud](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Définir et gérer le mot de passe de votre compte OVHcloud](/pages/account/customer/manage-ovh-password)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

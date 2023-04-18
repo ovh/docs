@@ -1,10 +1,7 @@
 ---
 title: 'Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali'
 excerpt: "Scopri come ottimizzare la sicurezza del tuo account OVHcloud, gestire le tue informazioni personali e delegare l'accesso al tuo account."
-slug: tutto_sullidentificativo_cliente_ovh
 legacy_guide_number: g2123
-section: 'Per iniziare'
-order: 3
 updated: 2021-07-01
 ---
 
@@ -25,11 +22,11 @@ Lo Spazio Cliente OVHcloud ti permette di gestire i tuoi dati personali e di del
 
 ## Prerequisiti
 
-- Aver creato [il tuo account OVHcloud](https://docs.ovh.com/it/customer/creare-account-ovhcloud/)
+- Aver creato [il tuo account OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!primary]
-> In caso di difficoltà di connessione al tuo account, consulta la sezione "[Non riesco a connettermi](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#login-failure)" della nostra guida [Accedere allo Spazio Cliente OVHcloud](https://docs.ovh.com/it/customer/accedere-spazio-cliente-ovhcloud/).
+> In caso di difficoltà di connessione al tuo account, consulta la sezione "[Non riesco a connettermi](/pages/account/customer/all_about_username#login-failure)" della nostra guida [Accedere allo Spazio Cliente OVHcloud](/pages/account/customer/ovhcloud-account-login).
 >
 
 ## Procedura
@@ -48,11 +45,11 @@ Le best practice da applicare al momento della creazione dell'account OVHcloud p
 
 La sicurezza dei tuoi servizi e dati dipende dall'efficacia della tua password. Il sistema deve essere **complesso, unico e rinnovato regolarmente**.
 
-Per maggiori informazioni sulle password, consulta la guida [Modificare la password del tuo account](https://docs.ovh.com/it/customer/gestire-la-password/).
+Per maggiori informazioni sulle password, consulta la guida [Modificare la password del tuo account](/pages/account/customer/manage-ovh-password).
 
 #### Salva la password
 
-Se non l'hai ancora fatto, salva la password in un [gestore di password](https://docs.ovh.com/it/customer/gestire-la-password/#utilizza-un-software-per-la-gestione-di-password).
+Se non l'hai ancora fatto, salva la password in un [gestore di password](/pages/account/customer/manage-ovh-password#utilizza-un-software-per-la-gestione-di-password).
 
 > [!primary]
 > I software **Keepass** e **Bitwarden** sono gestioni di password gratuite e senza diritti.
@@ -79,7 +76,7 @@ Clicca quindi, nel riquadro Il `tuo profilo` sul pulsante `...`{.action} e poi s
 
 La doppia autenticazione permette di aumentare la sicurezza del tuo account OVHcloud.
 
-Per maggiori informazioni, consulta la nostra guida [Proteggere un account OVHcloud con la doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/).
+Per maggiori informazioni, consulta la nostra guida [Proteggere un account OVHcloud con la doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 > [!primary]
 > L'attivazione della doppia autenticazione sul tuo account OVHcloud è un prerequisito obbligatorio per essere in conformità con [l'hosting dei dati sanitari in Francia (HDS)](https://www.ovhcloud.com/it/enterprise/certification-conformity/hds/).
@@ -156,26 +153,26 @@ In questo modo, non solo il tuo accesso al tuo account resterà protetto dalla d
 
 Come utente principale dell'account, mantieni il controllo degli utenti e dei loro diritti.
 
-Per maggiori informazioni, consulta la [guida sulla gestione degli utenti](https://docs.ovh.com/it/customer/gestisci_gli_utenti/).
+Per maggiori informazioni, consulta la [guida sulla gestione degli utenti](/pages/account/customer/ovhcloud-users-management).
 
 #### Gestisci i contatti
 
-È possibile delegare la gestione amministrativa **o** tecnica **o** di fatturazione di uno o più servizi del tuo account a un altro identificativo cliente. Per saperne di più, consulta [la guida sulla gestione dei contatti](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+È possibile delegare la gestione amministrativa **o** tecnica **o** di fatturazione di uno o più servizi del tuo account a un altro identificativo cliente. Per saperne di più, consulta [la guida sulla gestione dei contatti](/pages/account/customer/managing_contacts).
 
 ### Che fare in caso di sospetta usurpazione d’identità?
 
-Se ricevi una email che indica un accesso sconosciuto al tuo Spazio Cliente, ti consigliamo di [modificare immediatamente la password del tuo account](https://docs.ovh.com/it/customer/gestire-la-password/#modifica-la-password) e di [proteggerlo tramite l’attivazione della doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/).
+Se ricevi una email che indica un accesso sconosciuto al tuo Spazio Cliente, ti consigliamo di [modificare immediatamente la password del tuo account](/pages/account/customer/manage-ovh-password#modifica-la-password) e di [proteggerlo tramite l’attivazione della doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
 Se riscontri un'attività sospetta sul tuo account, [contatta il supporto OVHcloud](https://www.ovhcloud.com/it/contact/) al +39 02 5560 0423 affinché i nostri team ti assistano nei passi da compiere.
 
 ## Per saperne di più
 
-[Modifica la password del tuo account](https://docs.ovh.com/it/customer/gestire-la-password/)
+[Modifica la password del tuo account](/pages/account/customer/manage-ovh-password)
 
-[Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/)
+[Rendere sicuro il tuo account OVHcloud con la doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa)
 
-[Accedi allo Spazio Cliente OVHcloud](https://docs.ovh.com/it/customer/accedere-spazio-cliente-ovhcloud)
+[Accedi allo Spazio Cliente OVHcloud](/pages/account/customer/ovhcloud-account-login)
 
-[Se la connessione allo Spazio Cliente OVH non funziona](https://docs.ovh.com/it/customer/accedere-spazio-cliente-ovhcloud/#login-failure)
+[Se la connessione allo Spazio Cliente OVH non funziona](/pages/account/customer/ovhcloud-account-login#login-failure)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

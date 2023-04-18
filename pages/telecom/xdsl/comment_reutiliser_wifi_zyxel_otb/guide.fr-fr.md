@@ -1,8 +1,6 @@
 ---
 title: "Comment réutiliser le WiFi d'un modem Zyxel avec OverTheBox"
-slug: comment-reutiliser-wifi-zyxel-otb
 excerpt: "Découvrez comment réutiliser le WiFi d'un modem Zyxel avec votre OverTheBox"
-section: "Intégration avec les offres OverTheBox d'OVHcloud"
 updated: 2021-02-16
 ---
 

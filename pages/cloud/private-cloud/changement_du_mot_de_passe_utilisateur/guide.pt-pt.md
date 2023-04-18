@@ -1,8 +1,6 @@
 ---
 title: Alteração da palavra-passe de utilizador
-slug: alteracao-da-palavra-passe-de-utilizador
 excerpt: Saiba como alterar a palavra-passe de um utilizador cliente vSphere através da Área de Cliente OVHcloud
-section: Funcionalidades da OVHcloud
 updated: 2021-08-19
 ---
 
@@ -17,7 +15,7 @@ A gestão das autorizações e palavras-passe dos utilizadores cliente vSphere r
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Dispor de uma conta de utilizador criada a partir da Área de Cliente OVHcloud. Para mais informações, [consulte este manual](../manager-ovh-private-cloud/#utilizadores)
+- Dispor de uma conta de utilizador criada a partir da Área de Cliente OVHcloud. Para mais informações, [consulte este manual](/pages/cloud/private-cloud/manager_ovh_private_cloud#utilizadores)
 
 ## Instruções
 
@@ -56,8 +54,8 @@ Indique uma palavra-passe nova e confirme-a.
 
 ## Quer saber mais?
 
-[Apresentação da Área de Cliente Private Cloud OVHcloud](../manager-ovh-private-cloud/)
+[Apresentação da Área de Cliente Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud)
 
-[Definir e gerir a palavra-passe da sua conta OVHcloud](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/)
+[Definir e gerir a palavra-passe da sua conta OVHcloud](/pages/account/customer/manage-ovh-password)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

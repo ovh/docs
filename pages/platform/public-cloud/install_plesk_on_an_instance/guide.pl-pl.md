@@ -1,9 +1,7 @@
 ---
 title: 'Instalacja Pleska na instancji'
-slug: instalacja_pleska_na_instancji
 excerpt: 'Dowiedz się, jak wdrożyć Plesk na instancji Public Cloud'
 legacy_guide_number: g1998
-section: Tutoriale
 updated: 2018-03-26
 ---
 
@@ -24,8 +22,8 @@ Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowan
 
 ## Wymagania początkowe
 
-- [Utworzenie instancji w Panelu klienta OVHcloud](../tworzenie_instancji_w_panelu_klienta_ovh/)
-- [Dostęp root i zdefiniowanie hasła](../dostep_root_i_zdefiniowanie_hasla/)
+- [Utworzenie instancji w Panelu klienta OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji/)
+- [Dostęp root i zdefiniowanie hasła](/pages/platform/public-cloud/become_root_and_change_password)
 
 ## W praktyce
 

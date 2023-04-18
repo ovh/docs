@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Rendi disponibili i tuoi dati salvati su Public Cloud Archive
-slug: pca/unlock
 excerpt: Come sbloccare i tuoi archivi
-section: OpenStack Swift Archive Storage Class Specifics
-order: 030
 updated: 2022-04-12
 ---
 
@@ -24,8 +21,8 @@ Per i dati raramente consultati, è necessaria una richiesta di sblocco che comp
 - Dallo Spazio Cliente OVHcloud:
     - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 - Via python-swiftclient:
-    - [Preparare l'ambiente di sviluppo per utilizzare l'API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/) installando python-swiftclient.
-    - [Impostare le variabili d'ambiente OpenStack](https://docs.ovh.com/it/public-cloud/set-openstack-environment-variables/).
+    - [Preparare l'ambiente di sviluppo per utilizzare l'API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) installando python-swiftclient.
+    - [Impostare le variabili d'ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## Procedura
 
@@ -41,7 +38,7 @@ Una volta avviato il processo, la data e l'ora di disponibilità dell'archivio s
 
 ![tempo prima del ritiro](images/unfreeze_result.png){.thumbnail}
 
-Il tuo file sarà disponibile al download al termine di questo periodo. Il download può essere avviato direttamente dal browser o tramite [un client Swift/SFTP/SCP](https://docs.ovh.com/it/storage/pca/sftp/).
+Il tuo file sarà disponibile al download al termine di questo periodo. Il download può essere avviato direttamente dal browser o tramite [un client Swift/SFTP/SCP](/pages/cloud/storage/object_storage/pca_sftp).
 
 ### Rendi liberi i tuoi oggetti tramite python-swiftclient
 

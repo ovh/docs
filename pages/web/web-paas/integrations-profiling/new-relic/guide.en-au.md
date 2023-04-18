@@ -1,7 +1,5 @@
 ---
 title: New Relic
-slug: new-relic
-section: Profiling
 updated: 2021-05-11
 ---
 
@@ -17,9 +15,9 @@ Web PaaS supports [New Relic APM](https://newrelic.com/products/application-moni
 
 The configuration for New Relic varies a bit by language. See the pages below for language-specific instructions.
 
-- [Java](java)
+- [Java](/pages/web/web-paas/integrations-profilingnew-relic/java)
 
-- [Node.js](nodejs)
+- [Node.js](/pages/web/web-paas/integrations-profilingnew-relic/nodejs)
 
-- [PHP](php)
+- [PHP](/pages/web/web-paas/integrations-profilingnew-relic/php)
 

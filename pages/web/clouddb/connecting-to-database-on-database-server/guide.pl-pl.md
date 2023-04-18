@@ -1,9 +1,6 @@
 ---
 title: 'Logowanie do bazy danych Twojego serwera baz danych'
-slug: polaczenie-bazy-danych-serwer-bdd
 excerpt: 'Dowiedz się, jak się zalogować do bazy danych'
-section: Konfiguracja
-order: 03
 updated: 2023-02-15
 ---
 
@@ -72,7 +69,7 @@ Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona 
 
 > [!warning]
 >
-> Jeśli korzystasz z oferty "Web Cloud Databases"/"Prywatny SQL", pamiętaj, aby zezwolić na IP w przewodniku dotyczącym [konfiguracji serwera bazy danych](https://docs.ovh.com/pl/clouddb/konfiguracja-optymalizacja-serwera-bazy-danych/).
+> Jeśli korzystasz z oferty "Web Cloud Databases"/"Prywatny SQL", pamiętaj, aby zezwolić na IP w przewodniku dotyczącym [konfiguracji serwera bazy danych](/pages/web/clouddb/configure-database-server).
 >
 
 Aby zalogować się do bazy danych, upewnij się, że pobrałeś następujące informacje:

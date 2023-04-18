@@ -1,8 +1,6 @@
 ---
 title: 'Tryb bridge IP'
-slug: network-bridging
 excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
-section: 'Sieć & IP'
 updated: 2022-12-20
 ---
 
@@ -38,7 +36,7 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 >
 > Niniejszy przewodnik nie ma zastosowania do serwerów z oferty [Scale](https://www.ovhcloud.com/pl/bare-metal/scale/) i [High Grade](https://www.ovhcloud.com/pl/bare-metal/high-grade/).
 >
-> Przejdź do [dedykowana strona konfiguracji](https://docs.ovh.com/pl/dedicated/proxmox-network-hg-scale/).
+> Przejdź do [dedykowana strona konfiguracji](/pages/cloud/dedicated/proxmox-network-HG-Scale).
 
 
 ## W praktyce

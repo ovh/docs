@@ -1,9 +1,6 @@
 ---
 title: "Changing the password of an email account"
-slug: changing-email-address-password
 excerpt: "Find out how to change the password for an OVHcloud email account"
-section: Getting started
-order: 03
 updated: 2023-01-03
 ---
 
@@ -34,4 +31,4 @@ You can access your OVHcloud email accounts using the password associated with t
 
 ## Instructions
 
-Follow our guide [Changing the password of an email account](https://docs.ovh.com/ca/en/emails/changing-email-address-password/) in the "Hosted email - MX Plan" section.
+Follow our guide [Changing the password of an email account](/pages/web/emails/email_change_password) in the "Hosted email - MX Plan" section.

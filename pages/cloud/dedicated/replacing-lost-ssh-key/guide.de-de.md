@@ -1,9 +1,6 @@
 ---
 title: "Ersetzen Ihres SSH-Schlüsselpaars bei Verlust"
-slug: dedicated-servers-replacing-lost-ssh-key-pair
 excerpt: "Erfahren Sie hier, wie Sie den SSH-Zugriff auf Ihren Dedicated Server wiederherstellen"
-section: Diagnose & Rescue Modus
-order: 2
 updated: 2023-02-06
 ---
 
@@ -15,9 +12,9 @@ updated: 2023-02-06
 
 ## Ziel
 
-Wenn Sie [SSH-Schlüssel verwenden](https://docs.ovh.com/de/dedicated/ssh-schluessel-erzeugen/), um sich mit Ihrem dedizierten Server zu verbinden, kann der Verlust Ihres privaten SSH-Schlüssels den vollständigen Verlust des Zugangs zu Ihrem Server bedeuten.
+Wenn Sie [SSH-Schlüssel verwenden](/pages/cloud/dedicated/creating-ssh-keys-dedicated), um sich mit Ihrem dedizierten Server zu verbinden, kann der Verlust Ihres privaten SSH-Schlüssels den vollständigen Verlust des Zugangs zu Ihrem Server bedeuten.
 
-Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/) mit Ihrem Server verbinden. Dieser Modus ermöglicht den Login mit einem provisorischen Passwort, um Zugriff auf Ihre Dateien zu erhalten.
+Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](/pages/cloud/dedicated/rescue_mode) mit Ihrem Server verbinden. Dieser Modus ermöglicht den Login mit einem provisorischen Passwort, um Zugriff auf Ihre Dateien zu erhalten.
 
 **Diese Anleitung erklärt, wie Sie Ihre SSH-Schlüssel ersetzen, wenn Sie den Zugriff auf Ihren Server verloren haben.**
 
@@ -38,7 +35,7 @@ Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](https://docs
 
 Um auf Ihren Server im Rescue-Modus zuzugreifen, muss zuerst der aktuell genutzte SSH-Schlüssel deaktiviert werden.
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie zum Bereich `SSH-Schlüssel`{.action}. Folgen hierzu Sie bei Bedarf unserer Anleitung zu [SSH-Schlüsseln](https://docs.ovh.com/de/dedicated/ssh-schluessel-erzeugen/#cpsshkey).
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie zum Bereich `SSH-Schlüssel`{.action}. Folgen hierzu Sie bei Bedarf unserer Anleitung zu [SSH-Schlüsseln](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
 
 Da der im Kundencenter hinterlegte öffentliche Schlüssel ohne den zugehörigen privaten Schlüssel nutzlos ist, können Sie diesen einfach entfernen. Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> in der Zeile des Schlüssels und wählen Sie `Schlüssel löschen`{.action}.
 
@@ -48,11 +45,11 @@ Klicken Sie im Popup-Fenster auf `Bestätigen`{.action}.
 
 ### Schritt 2: Ein neues Schlüsselpaar erstellen
 
-Erstellen Sie auf Ihrem Gerät ein neues SSH-Schlüsselpaar, wie im ersten Teil der Dokumentation zu [SSH-Schlüsseln](https://docs.ovh.com/de/dedicated/ssh-schluessel-erzeugen/) beschrieben.
+Erstellen Sie auf Ihrem Gerät ein neues SSH-Schlüsselpaar, wie im ersten Teil der Dokumentation zu [SSH-Schlüsseln](/pages/cloud/dedicated/creating-ssh-keys-dedicated) beschrieben.
 
 ### Schritt 3: Im Rescue-Modus auf den Server zugreifen und den Schlüssel ersetzen
 
-Folgen Sie den Anweisungen in der [Anleitung zum Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/), um sich mit Ihrem Server zu verbinden und Ihre Partitionen zu mounten.
+Folgen Sie den Anweisungen in der [Anleitung zum Rescue-Modus](/pages/cloud/dedicated/rescue_mode), um sich mit Ihrem Server zu verbinden und Ihre Partitionen zu mounten.
 
 Sobald Sie Zugriff auf Ihre Dateien haben, öffnen Sie die relevante Datei "authorized_keys" mit einem Texteditor. Diese Datei speichert SSH-Schlüssel und befindet sich im Verzeichnis `home` des Benutzers, mit dem Sie sich auf dem Server einloggen. (Ersetzen Sie "USER_NAME" mit Ihrem verwendeten Benutzernamen.)
 
@@ -71,12 +68,12 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== neu@sshkey
 
 Sie können die nun obsolete "alte" Schlüsselzeichenfolge aus der Datei löschen. Speichern Sie die Änderungen und schließen Sie den Editor.
 
-Stellen Sie den Boot-Modus wieder auf "normal" um und starten Sie den Server in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu. Folgen Sie bei Bedarf der [Anleitung zum Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/).
+Stellen Sie den Boot-Modus wieder auf "normal" um und starten Sie den Server in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu. Folgen Sie bei Bedarf der [Anleitung zum Rescue-Modus](/pages/cloud/dedicated/rescue_mode).
 
 Sie haben jetzt mit Ihrem neuen SSH-Schlüsselpaar wieder Zugriff auf den Server.
 
 ## Weiterführende Informationen
 
-[Root-Passwort auf einem Dedicated Server ändern](https://docs.ovh.com/de/dedicated/root-passwort-aendern-linux-dedicated-server/)
+[Root-Passwort auf einem Dedicated Server ändern](/pages/cloud/dedicated/changing_root_password_linux_ds)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

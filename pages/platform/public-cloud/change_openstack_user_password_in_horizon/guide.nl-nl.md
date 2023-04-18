@@ -2,8 +2,6 @@
 deprecated: true
 title: Wijziging van het wachtwoord van een OpenStack-gebruiker in Horizon
 excerpt: Leer hoe u een gebruikerswachtwoord in de Horizon-interface kunt wijzigen.
-slug: wijziging-wachtwoord-openstack-gebruiker
-section: Vanaf de Horizon-interface
 updated: 2018-03-07
 ---
 
@@ -12,7 +10,7 @@ updated: 2018-03-07
 
 ## Introductie
 
-In onze handleiding over [configuratie van gebruikerstoegang tot Horizon](https://docs.ovh.com/fr/public-cloud/horizon/){.external}, leggen we uit hoe u OpenStack-gebruikers kunt aanmaken en verwijderen en hoe u een toegangswachtwoord kunt genereren.
+In onze handleiding over [configuratie van gebruikerstoegang tot Horizon](/pages/platform/public-cloud/introducing_horizon){.external}, leggen we uit hoe u OpenStack-gebruikers kunt aanmaken en verwijderen en hoe u een toegangswachtwoord kunt genereren.
 
 Met behulp van het Horizon-panel kunt u ook wachtwoorden instellen voor elke gebruiker. Houd er rekening mee, dat wanneer u een gebruikerswachtwoord wijzigt, het vorige wachtwoord onmiddellijk wordt geannuleerd.
 

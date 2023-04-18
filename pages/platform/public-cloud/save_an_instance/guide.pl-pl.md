@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie kopii zapasowej instancji'
-slug: kopia_zapasowa_instancji
 excerpt: 'Dowiedz się, jak utworzyć kopię zapasową instancji Public Cloud w Panelu klienta OVHcloud'
-section: 'Zarządzanie w Panelu klienta OVH'
-order: 1
 updated: 2023-01-04
 ---
 
@@ -91,10 +88,10 @@ Kopie zapasowe instancji są zarządzane w sekcji `Instance Backup`{.action} w P
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
-Dowiedz się, jak w [tym przewodniku](https://docs.ovh.com/pl/public-cloud/tworzenie_przywracanie_serwera_wirtualnego_na_podstawie_kopii_zapasowej/) wykorzystać kopie zapasowe do klonowania lub przywracania instancji.
+Dowiedz się, jak w [tym przewodniku](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) wykorzystać kopie zapasowe do klonowania lub przywracania instancji.
 
 ## Sprawdź również
 
-[Tworzenie/ przywracanie serwera wirtualnego na podstawie kopii zapasowej](https://docs.ovh.com/pl/public-cloud/tworzenie_przywracanie_serwera_wirtualnego_na_podstawie_kopii_zapasowej/)
+[Tworzenie/ przywracanie serwera wirtualnego na podstawie kopii zapasowej](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

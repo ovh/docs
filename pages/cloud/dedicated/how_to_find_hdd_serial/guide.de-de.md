@@ -1,8 +1,6 @@
 ---
 title: 'Seriennummer einer Festplatte ermitteln'
-slug: find-disk-serial-number
 excerpt: 'Hier erfahren Sie, wie Sie die Seriennummer einer Festplatte ermitteln, um diese auszutauschen.'
-section: 'Diagnose & Rescue Modus'
 updated: 2018-08-21
 ---
 
@@ -73,7 +71,7 @@ Das Gerät wird über das Betriebssystem erkannt und wie folgt angezeigt: `/dev/
 
 ### Seriennummer einer Festplatte ermitteln (Hardware-RAID)
 
-Für eine detaillierte Übersicht der Befehle sowie die Vorgehensweise beim Testen Ihrer Festplatten lesen Sie folgende [Anleitung (LSI Raid Controller)](https://docs.ovh.com/gb/en/dedicated/raid-hard/#using-the-lsi-raid-controller_1){.external} (Englisch).
+Für eine detaillierte Übersicht der Befehle sowie die Vorgehensweise beim Testen Ihrer Festplatten lesen Sie folgende [Anleitung (LSI Raid Controller)](/pages/cloud/dedicated/raid_hard#using-the-lsi-raid-controller_1){.external} (Englisch).
 
 
 #### MegaRaid-Controller
@@ -163,7 +161,7 @@ Die ID des RAID-Geräts wird wie folgt angezeigt: `/dev/sda` = 1\. RAID, `/dev/s
 
 Der LSI-RAID-Controller verwendet ein Modul namens `sg-map`, das Geräte in der Form `/dev/sgX` abbildet (“X” ist hierbei die Nummer des Geräts).
 
-Um zu ermitteln, welche Festplatte zu einem bestimmten “sg”-Gerät gehört, folgen Sie dieser [Anleitung](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (Englisch).
+Um zu ermitteln, welche Festplatte zu einem bestimmten “sg”-Gerät gehört, folgen Sie dieser [Anleitung](/pages/cloud/dedicated/raid_hard){.external} (Englisch).
 
 Wenn Sie das Gerät ermittelt haben, das mit der Festplatte, die Sie analysieren möchten, verbunden ist, verwenden Sie folgenden Befehl:
 

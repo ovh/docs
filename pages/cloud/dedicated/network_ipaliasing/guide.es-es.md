@@ -1,8 +1,6 @@
 ---
 title: 'Configurar una IP como alias'
-slug: network-ipaliasing
 excerpt: 'Descubra cómo añadir direcciones Additional IP a la configuración de un servidor'
-section: 'Red e IP'
 updated: 2022-12-07
 ---
 

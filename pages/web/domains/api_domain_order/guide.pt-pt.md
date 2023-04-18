@@ -1,11 +1,8 @@
 ---
 title: "Order a Domain Name"
-slug: api-order
 excerpt: "Use the OVHcloud public API to order your domain names"
-section: "API domínios"
-order: 2
 routes:
-  canonical: "https://docs.ovh.com/gb/en/domains/api-order/"
+  canonical: "/pages/web/domains/api_domain_intro-order/"
 updated: 2022-05-05
 ---
 
@@ -15,20 +12,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](../api) page if needed.
+> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](/pages/web/domains/api_domain_intro) page if needed.
 
 <!-- Begin TOC -->
 
 ## Table of Contents
 
-- [Introduction](../api)
+- [Introduction](/pages/web/domains/api_domain_intro)
 - **Order a Domain Name**
-- [Tasks Management](../api-tasks)
-- [Manage Contacts of a Domain Name](../api-contact)
-- [Managing Eligibility Rules](../api-rules)
-- [Configure the Display of Contact Data in the Whois](../api-whois)
-- [Configure the DNS of your Domain Name](../api-dns)
-- [Transfer a Domain Name](../api-transfer)
+- [Tasks Management](/pages/web/domains/api_domain_intro-tasks)
+- [Manage Contacts of a Domain Name](/pages/web/domains/api_domain_contacts)
+- [Managing Eligibility Rules](/pages/web/domains/api_domain_intro-rules)
+- [Configure the Display of Contact Data in the Whois](/pages/web/domains/api_domain_intro-whois)
+- [Configure the DNS of your Domain Name](/pages/web/domains/api_domain_dns)
+- [Transfer a Domain Name](/pages/web/domains/api_domain_intro-transfer)
 <!-- End TOC -->
 
 ## Order API
@@ -572,12 +569,12 @@ Below is the exhaustive list of required configurations for a domain name.
 > However, this API can not describe such constraints.
 >
 > In order to handle these cases, there are other API routes to send required data in a more precise way.
-> These routes correspond to an advanced usage, and may be used outside of the order process (such as contact update), so they are described in section [Rules Management](../api-rules).
+> These routes correspond to an advanced usage, and may be used outside of the order process (such as contact update), so they are described in section [Rules Management](/pages/web/domains/api_domain_intro-rules).
 
 > [!primary]
 >
 > Here, the `OWNER_CONTACT` represents a "resource" API, namely `/me/contact`, or more precisely `/domain/contact`.
-> The API routes used to create these contacts are described in section [Contact Management](../api-contact).
+> The API routes used to create these contacts are described in section [Contact Management](/pages/web/domains/api_domain_contacts).
 
 ### CRUD on Product Configurations
 

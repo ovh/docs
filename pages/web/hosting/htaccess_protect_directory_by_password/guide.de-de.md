@@ -1,9 +1,6 @@
 ---
 title: Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen
-slug: hosting-htaccess-authentifizierung
 excerpt: Erfahren Sie hier, wie Sie den Zugang zur Verwaltung Ihrer Website mit einer .htaccess Datei schützen.
-section: Weiterleitung und Authentifizierung
-order: 02
 updated: 2021-09-20
 ---
 
@@ -29,20 +26,20 @@ Es kann notwendig sein, den Zugang zu einem Teil Ihrer Website mittels Zugangsda
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie verfügen über die [Login-Daten](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
+- Sie verfügen über die [Login-Daten](/pages/web/hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Die hier vorgeschlagene Lösung ist nur eine von mehreren technischen Möglichkeiten, um einen Administratorbereich auf Ihrer Seite einzurichten. Sie können auch die von [OVHcloud](https://www.ovhcloud.com/de/) angebotene [1-Klick-Modul Funktion](../webhosting_installation_von_webhosting-modulen/) verwenden.
+> Die hier vorgeschlagene Lösung ist nur eine von mehreren technischen Möglichkeiten, um einen Administratorbereich auf Ihrer Seite einzurichten. Sie können auch die von [OVHcloud](https://www.ovhcloud.com/de/) angebotene [1-Klick-Modul Funktion](/pages/web/hosting/cms_install_1_click_modules) verwenden.
 >
 > Kontaktieren Sie für Anfragen zur Erstellung oder Programmierung Ihrer Website unsere [User Community](https://community.ovh.com/en/) oder einen [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Wir werden Sie bei diesen Fragen nicht unterstützen können.
 >
 
 ### Schritt 1: Dateipfad erstellen
 
-Loggen Sie sich in den [Speicherplatz Ihres Hostings](../verbindung-ftp-speicher-webhosting/) ein und öffnen Sie das [Wurzelverzeichnis](../multisites-mehrere-websites-konfigurieren/#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen).<br>
+Loggen Sie sich in den [Speicherplatz Ihres Hostings](../verbindung-ftp-speicher-webhosting/) ein und öffnen Sie das [Wurzelverzeichnis](/pages/web/hosting/multisites_configure_multisite#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen).<br>
 Erstellen Sie hier eine Datei namens "crypter.php".
 
 ![root_folder](images/root_folder.png){.thumbnail}
@@ -71,7 +68,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Wenn Sie über ein Webhosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, loggen Sie sich via [SSH](../webhosting_ssh_auf_ihren_webhostings/) in Ihrem Hosting ein. Führen Sie folgenden Befehl aus:
+Wenn Sie über ein Webhosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, loggen Sie sich via [SSH](/pages/web/hosting/ssh_on_webhosting) in Ihrem Hosting ein. Führen Sie folgenden Befehl aus:
 
 ```bash
 php crypter.php
@@ -119,9 +116,9 @@ Require valid-user
 
 > [!warning]
 >
-> In diesem Beispiel muss Ihr “ihr_ftp_login“ durch Ihren [FTP-Benutzer](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) ersetzt werden. Im Bereich `Hosting-Pakete`{.action} finden Sie diesen im Tab `FTP-SSH`{.action} des betreffenden Hostings.
+> In diesem Beispiel muss Ihr “ihr_ftp_login“ durch Ihren [FTP-Benutzer](/pages/web/hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) ersetzt werden. Im Bereich `Hosting-Pakete`{.action} finden Sie diesen im Tab `FTP-SSH`{.action} des betreffenden Hostings.
 >
-> Ersetzen Sie gegebenenfalls im unten stehenden Beispiel “wurzelverzeichnis“ mit dem Namen des Ordners, [der die Dateien Ihrer Website enthält](../multisites-mehrere-websites-konfigurieren/#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen).
+> Ersetzen Sie gegebenenfalls im unten stehenden Beispiel “wurzelverzeichnis“ mit dem Namen des Ordners, [der die Dateien Ihrer Website enthält](/pages/web/hosting/multisites_configure_multisite#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen).
 >
 
 #### Zugriff auf eine oder mehrere Dateien blockieren
@@ -148,7 +145,7 @@ Require valid-user
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Alles über die Datei .htaccess](../webhosting_alles_uber_die_datei_htaccess/)
+[Alles über die Datei .htaccess](/de/hosting/webhosting_alles_uber_die_datei_htaccess/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

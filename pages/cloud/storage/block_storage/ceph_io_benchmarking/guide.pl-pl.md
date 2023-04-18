@@ -1,8 +1,6 @@
 ---
 title: 'Benchmark - ewaluacja wydajności przestrzeni dyskowej'
-slug: ceph-io-benchmarking
 excerpt: 'Dowiedz się, jak przeprowadzić ewaluację wydajności Cloud Disk Array'
-section: 'Cloud Disk Array'
 updated: 2019-05-25
 ---
 

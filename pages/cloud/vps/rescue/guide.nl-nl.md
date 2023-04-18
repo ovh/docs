@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Reddingsmodus-activatie op een VPS
-slug: rescue
 excerpt: Ontdek hoe u uw VPS in de Reddingsmodus kunt opstarten.
-section: Diagnose en Reddingsmodus
 updated: 2022-05-02
 ---
 
@@ -51,6 +49,6 @@ U kunt nu verbinding maken met de Reddingsmodus van uw VPS via SSH. Nadat uw con
 
 ## Ga verder
 
-[Introductie tot SSH](https://docs.ovh.com/nl/dedicated/ssh-introductie/){.external}
+[Introductie tot SSH](/pages/cloud/dedicated/ssh_introduction){.external}
 
 Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en/> .

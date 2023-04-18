@@ -1,8 +1,6 @@
 ---
 title: 'Rilevare e bloccare la vulnerabilità L1TF'
-slug: rilevare-bloccare-vulnerabilita-l1tf
 excerpt: 'Come mitigare la falla di sicurezza L1TF'
-section: Sicurezza
 updated: 2019-02-26
 ---
 
@@ -53,7 +51,7 @@ Il processo di mitigazione, descritto in [questo articolo](https://kb.vmware.com
 
 ### 1. Aggiornamento
 
-OVHcloud si occupa dell’aggiornamento del vCenter, ma l’applicazione del software correttivo sugli host ESXi è di responsabilità dell’utente. La patch è disponibile nell’[Update Manager](https://docs.ovh.com/it/private-cloud/usare_vmware_update_manager/){.external-link}.
+OVHcloud si occupa dell’aggiornamento del vCenter, ma l’applicazione del software correttivo sugli host ESXi è di responsabilità dell’utente. La patch è disponibile nell’[Update Manager](/pages/cloud/private-cloud/vmware_update_manager){.external-link}.
 
 Per visualizzare la lista completa delle patch rilasciate per gli host ESXi, consulta le [raccomandazioni sulla sicurezza di VMware](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 

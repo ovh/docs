@@ -1,12 +1,9 @@
 ---
 title: AI Deploy - Dépannage (EN)
-slug: deploy/debug-apps
 excerpt: Find here all the most popular questions and answers to troubleshoot your issues
-section: AI Deploy - Guides
-order: 05
 updated: 2023-03-30
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/debug-apps/'
+    canonical: '/pages/platform/ai/deploy_guide_07_troubleshooting'
 ---
 
 **Last updated 30th March, 2023.**
@@ -18,18 +15,18 @@ This page gives you a few hints on how to debug your apps if you encounter some 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- A [**Public Cloud** project](https://docs.ovh.com/fr/public-cloud/create_a_public_cloud_project/)
+- A [**Public Cloud** project](/pages/platform/public-cloud/create_a_public_cloud_project)
 
 ## Building your app
 
 ### Best practices and mandatory guidelines to build your app
 
-When you are deploying your own applications and models, some guidelines must be followed. We detail them in the guide [AI Deploy - Build & use custom Docker image](https://docs.ovh.com/fr/publiccloud/ai/deploy/build-use-custom-image/).
+When you are deploying your own applications and models, some guidelines must be followed. We detail them in the guide [AI Deploy - Build & use custom Docker image](/pages/platform/ai/deploy_tuto_12_build_custom_image).
 Be particularly cautious about image requirements such as OVHcloud user and Docker architecture used. Otherwise, your deployment will end in `FAILED` status.
 
 ### Apps examples to follow
 
-If you need some official examples, please follow this guide where we share the source code: [AI Deploy - Apps portfolio](https://docs.ovh.com/fr/publiccloud/ai/deploy/apps-portfolio/).
+If you need some official examples, please follow this guide where we share the source code: [AI Deploy - Apps portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
 
 ### Test your app locally and in the cloud 
 
@@ -53,12 +50,12 @@ This way, you will imitate the OVHcloud user. Once validated locally, you can de
 
 ### My deployment has failed
 
-An AI Deploy app has a workflow in multiple steps, the `FAILED` status being one of them. This state happens when OVHcloud is unable to deploy your app, meaning the infrastructure side (backend) is working fine but something is broken on the image side. You can find more details about AI Deploy workflow on the [AI Deploy - Billing and lifecycle](https://docs.ovh.com/fr/publiccloud/ai/deploy/billing/) page.
+An AI Deploy app has a workflow in multiple steps, the `FAILED` status being one of them. This state happens when OVHcloud is unable to deploy your app, meaning the infrastructure side (backend) is working fine but something is broken on the image side. You can find more details about AI Deploy workflow on the [AI Deploy - Billing and lifecycle](/pages/platform/ai/deploy_guide_06_billing_concept) page.
 
 Main items to troubleshoot:
 
 - Typography in your repository name, image or version name. Test deploying your image locally first.
-- Your Docker image is not following mandatory guidelines, such as OVHcloud user. See [AI Deploy - Build & use custom Docker image](https://docs.ovh.com/fr/publiccloud/ai/deploy/build-use-custom-image/).
+- Your Docker image is not following mandatory guidelines, such as OVHcloud user. See [AI Deploy - Build & use custom Docker image](/pages/platform/ai/deploy_tuto_12_build_custom_image).
 - Your Docker image is in a private registry and you did not authorize OVHcloud to access it.
 - You have reached your quotas in terms of CPUs or GPUs. You can check them via the OVHcloud Control Panel (Project Management / Quotas) or via the `ovhai CLI` command `ovhai me`.
 
@@ -85,14 +82,14 @@ In an ideal situation, for a Docker image of approximately 1GB, without external
 ### My deployed app does not scale
 
 AI Deploy provides manual scaling and autoscaling, allowing you to scale up or down based on triggers such as CPU or RAM usages.
-Find more information on the official documentation about [scaling strategies](https://docs.ovh.com/fr/publiccloud/ai/deploy/apps-deployments/).
+Find more information on the official documentation about [scaling strategies](/pages/platform/ai/deploy_guide_04_scaling_strategies).
 
 If your app does not scale:
 
 - Check if you deployed your app with manual or autoscaling.
 - Verify triggers (CPU or RAM usage) and their value. By default the value is at 75%.
 - Open the Monitoring dashboard of your app (Grafana dashboard is provided for each app) and check if the threshold has been reached. 
-- Refer to the following load-testing tutorial which also provides a dashboard example to follow your scaling: [AI Deploy - How to load test your application with Locust](https://docs.ovh.com/fr/publiccloud/ai/deploy/load-test-app/).
+- Refer to the following load-testing tutorial which also provides a dashboard example to follow your scaling: [AI Deploy - How to load test your application with Locust](/pages/platform/ai/deploy_tuto_10_locust).
 
 
 ### My deployed app is very slow
@@ -117,7 +114,7 @@ If your app crashed and you are using `ovhai CLI`, you can get more information 
 
 ### My data is not synchronized back
 
-AI Deploy does not synchronize back your remote data. Please follow [official guidelines to build & use custom Docker image](https://docs.ovh.com/fr/publiccloud/ai/deploy/build-use-custom-image/).
+AI Deploy does not synchronize back your remote data. Please follow [official guidelines to build & use custom Docker image](/pages/platform/ai/deploy_tuto_12_build_custom_image).
 
 ## Connectivity
 
@@ -129,7 +126,7 @@ An HTTP endpoint will look like this: `https://<unique_id>.app.gra.ai.cloud.ovh.
 
 Your app will be directly exposed to this HTTP endpoint and linked to a port (by default, port 8080).
 
-Depending on what you deployed, you then just have a REST endpoint or a Web interface. You can refer to our [Getting Started guide](https://docs.ovh.com/fr/publiccloud/ai/deploy/getting-started/) for full explanations.
+Depending on what you deployed, you then just have a REST endpoint or a Web interface. You can refer to our [Getting Started guide](/pages/platform/ai/deploy_guide_02_getting_started) for full explanations.
 
 ### I'm unable to connect (unauthorized)
 
@@ -140,7 +137,7 @@ While unrestricted access means that everyone is authorized, a secured access wi
 - An AI user. It can be seen as a user and password restriction. Quite simple but not a lot of granularity.
 - An AI token (preferred solution). A token is very effective since you can link them with labels. For example, a token for a specific app ID, for a team, ...
 
-If you selected a restricted access, don't forget to [generate an applicative token](https://docs.ovh.com/fr/publiccloud/ai/deploy/tokens/). 
+If you selected a restricted access, don't forget to [generate an applicative token](/pages/platform/ai/deploy_guide_03_tokens). 
 
 ### I need more than one port to be exposed
 
@@ -159,7 +156,7 @@ The AI Deploy pricing model is quite simple compared to competitors. You pay for
 
 Prices are shown statically on our [official website](http://www.ovhcloud.com), inside our Public Cloud section. For a dynamic estimation, use the OVHcloud Control Panel. An estimation will be available before launching a deployment.
 
-Also, for more detailed information, please refer to our [AI Deploy - Billing and lifecycle](https://docs.ovh.com/fr/publiccloud/ai/deploy/billing/) page.
+Also, for more detailed information, please refer to our [AI Deploy - Billing and lifecycle](/pages/platform/ai/deploy_guide_06_billing_concept) page.
 
 ### I'm unable to get a "pay per call" deployment
 

@@ -1,9 +1,6 @@
 ---
 title: 'Habilitar HTTPS en un sitio web con certificado SSL'
-slug: activar-https-en-un-sitio-web-con-ssl
 excerpt: 'Cómo activar el protocolo HTTPS en un sitio web que dispone de un certificado SSL'
-section: SSL
-order: 02
 updated: 2022-10-04
 ---
 
@@ -49,7 +46,7 @@ Para activar el certificado SSL en un alojamiento web, conéctese al [área de c
 |Activar un certificado SSL en el alojamiento web|Una vez que haya elegido el certificado SSL más adecuado en función de sus necesidades, OVHcloud lo instalará en su alojamiento.|
 |Activar el certificado SSL en el multisitio correspondiente|El sitio web en el que quiera activar el protocolo HTTPS debe estar configurado como multisitio en el alojamiento web. Asimismo, asegúrese de que el certificado SSL está activado para el multisitio.|
 
-Para más información sobre estas dos acciones, consulte nuestra guía [Gestionar un certificado SSL en un alojamiento web](../gestionar-un-certificado-ssl-en-un-alojamiento-web/){.external}. Si ha contratado recientemente su alojamiento web con OVHcloud, es posible que este último ya tenga un certificado SSL instalado y que la conexión SSL para el multisitio ya esté activa.
+Para más información sobre estas dos acciones, consulte nuestra guía [Gestionar un certificado SSL en un alojamiento web](/pages/web/hosting/ssl_on_webhosting){.external}. Si ha contratado recientemente su alojamiento web con OVHcloud, es posible que este último ya tenga un certificado SSL instalado y que la conexión SSL para el multisitio ya esté activa.
 
 Para comprobarlo, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña **Información general**. En el panel **Configuración**, consulte la información que aparece bajo el epígrafe **Certificado SSL**. Si se indica «Sí», significa que hay un certificado SSL instalado en el alojamiento web. 
 
@@ -59,7 +56,7 @@ A continuación, abra la pestaña `Multisitio`{.action}. Aparecerá una tabla en
 
 ![Sitio web en HTTPS](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-Si tiene dificultades para comprobar si el certificado SSL está instalado en su alojamiento web y/o está activo en el multisitio correspondiente, consulte la guía [Gestionar un certificado SSL en un alojamiento web](../gestionar-un-certificado-ssl-en-un-alojamiento-web/){.external}.
+Si tiene dificultades para comprobar si el certificado SSL está instalado en su alojamiento web y/o está activo en el multisitio correspondiente, consulte la guía [Gestionar un certificado SSL en un alojamiento web](/pages/web/hosting/ssl_on_webhosting){.external}.
 
 ### 2. Comprobar el entorno técnico
 

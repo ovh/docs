@@ -1,8 +1,5 @@
 ---
 title: FAQ VPS OVHcloud
-slug: vps-faq
-section: 'Pierwsze kroki'
-order: 2
 updated: 2022-05-05
 ---
 
@@ -71,7 +68,7 @@ Jeśli chcesz korzystać z gwarantowanych zasobów bez znajomości administrowan
 Połączenie z serwerem VPS będzie realizowane za pomocą protokołu SSH, przy użyciu adresu IP, nazwy użytkownika i hasła przesłanego e-mailem po otrzymaniu zamówienia.
 Na komputerze z systemem Windows zalecane jest logowanie się przy użyciu programu Putty. Połączenie można wykonać bezpośrednio na urządzeniu z poziomu komputera Linux.
 
-Szczegóły znajdziesz w przewodniku ["Pierwsze kroki z serwerem VPS"](../pierwsze-kroki-vps/).
+Szczegóły znajdziesz w przewodniku ["Pierwsze kroki z serwerem VPS"](/pages/cloud/vps/starting_with_a_vps).
 
 ### Czy mogę zainstalować kilka stron WWW na jednym serwerze VPS?
 
@@ -85,7 +82,7 @@ W tym celu możesz skorzystać z następujących opcji: ręczna kopia zapasowa (
 ### Jak zabezpieczyć serwer VPS?
 
 VPS jest dostarczany jako "goły" i nie ma na nim żadnej konfiguracji bezpieczeństwa. To pierwsza rzecz, którą musisz zrobić w recepcji
-W tym celu zapoznaj się z przewodnikiem ["Zabezpieczenie serwera VPS"](../porady-zabezpieczenie-vps/).
+W tym celu zapoznaj się z przewodnikiem ["Zabezpieczenie serwera VPS"](/pages/cloud/vps/secure_your_vps).
 
 ### Jaka jest przepustowość przypisana do mojego VPS? Czy jest gwarantowana?
 

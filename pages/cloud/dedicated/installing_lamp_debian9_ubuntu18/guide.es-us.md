@@ -1,8 +1,6 @@
 ---
 title: 'Configuración de un servidor LAMP en Debian 9 y Ubuntu 18'
 excerpt: 'Averigüe cómo configurar un servidor LAMP'
-slug: configuracion-lamp-debian-ubuntu
-section: Tutoriales
 updated: 2020-08-06
 ---
 
@@ -38,7 +36,7 @@ Estas tecnologías forman una pila, que usted puede utilizar para alojar sitio w
 
 Si usted esta usando una distribucion Debian o Ubuntu, le recomendamos que reinstale su servidor desde cero (si es posible). Tenga en cuenta que esta accion podra **eliminar todo la informacion.**
 
-Conecte via SSH como usuario root. Si usted no esta seguro de como hacer, puede encontar la informacion en esta guia [Introducción al SSH](../introduccion-ssh).
+Conecte via SSH como usuario root. Si usted no esta seguro de como hacer, puede encontar la informacion en esta guia [Introducción al SSH](/pages/cloud/dedicated/ssh_introduction).
 
 Una vez que haya instalado el sistema operativo, le recomendamos que lo actulice:
 

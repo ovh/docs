@@ -1,11 +1,8 @@
 ---
 title: MySQL - Capabilities and Limitations
-slug: mysql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
-section: MySQL - Guides
-order: 010
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/capabilities/'
+    canonical: '/pages/platform/databases/mysql_01_capabilities'
 updated: 2023-01-19
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: Apache Spark Overview
-slug: overview-spark
 excerpt: Introduction to Apache Spark 
-section: Supported computing engines
-order: 0
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/data-processing/overview-spark/'
+    canonical: '/pages/platform/data-processing/00_CONCEPTS_Overview-spark/'
 updated: 2020-03-06
 ---
 

@@ -1,11 +1,8 @@
 ---
 title: CLI - Commandes principales pour les données (EN)
-slug: cli/data-cli
 excerpt: Découvrez les principales commandes pour gérer vos données sur votre object storage avec la CLI ovhai
-section: Command Line Interface
-order: 206
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/data-cli/'
+    canonical: '/pages/platform/ai/cli_16_commands_reference_data'
 updated: 2021-06-16
 ---
 
@@ -17,7 +14,7 @@ This guide covers the basic commands needed to manipulate your data on object st
 
 ## Requirements
 
-- a working `ovhai` CLI. See our guide on [how to install ovhai CLI](https://docs.ovh.com/fr/publiccloud/ai/cli/install-client).
+- a working `ovhai` CLI. See our guide on [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 ## Instructions
 

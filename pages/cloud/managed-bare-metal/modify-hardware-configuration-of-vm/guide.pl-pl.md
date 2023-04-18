@@ -1,11 +1,8 @@
 ---
 title: Zmiana zasobów przypisanych do maszyny wirtualnej
-slug: zmiana_konfiguracji_sprzetowej_wirtualnej_maszyny
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/zmiana_konfiguracji_sprzetowej_wirtualnej_maszyny/'
+    canonical: '/pages/cloud/private-cloud/modify_hardware_configuration_of_vm'
 excerpt: Dowiedz się, jak wprowadzić zmiany w maszynie wirtualnej
-section: Zarządzanie wirtualnymi maszynami
-order: 03
 updated: 2020-11-18
 ---
 

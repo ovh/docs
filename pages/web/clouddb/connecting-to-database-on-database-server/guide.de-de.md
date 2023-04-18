@@ -1,9 +1,6 @@
 ---
 title: 'Mit der Datenbank Ihres Datenbankservers verbinden'
-slug: datenbank-verbindung-auf-bdd
 excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrer Datenbank verbinden können'
-section: Konfiguration
-order: 03
 updated: 2023-02-15
 ---
 
@@ -71,7 +68,7 @@ Wenn die Verbindung erfolgreich ist, erscheint die phpMyAdmin-Startseite.
 
 > [!warning]
 >
-> Wenn Sie Web Cloud Databases oder SQL Private für Datenbanken einsetzen, vergessen Sie nicht, Ihrer IP-Adresse mithilfe der Anleitung [Konfiguration Ihres Datenbankservers](https://docs.ovh.com/de/clouddb/konfigurieren-ihres-datenbank-servers/) den Zugriff zu erlauben.
+> Wenn Sie Web Cloud Databases oder SQL Private für Datenbanken einsetzen, vergessen Sie nicht, Ihrer IP-Adresse mithilfe der Anleitung [Konfiguration Ihres Datenbankservers](/pages/web/clouddb/configure-database-server) den Zugriff zu erlauben.
 >
 
 Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie die folgenden Informationen:

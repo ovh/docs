@@ -1,11 +1,8 @@
 ---
 title: OpenSearch made easy with Index As A Service
-slug: index-as-a-service
-order: 2
 excerpt: Use the power of OpenSearch without managing a cluster.
-section: Features
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/index-as-a-service/'
+    canonical: '/pages/platform/logs-data-platform/index_as_a_service'
 updated: 2022-10-13
 ---
 
@@ -19,7 +16,7 @@ OpenSearch is one of the main components of the Logs Data Platform, regarded as 
 
 This is what you need to know to get you started:
 
-- You have created a [Logs Data Platform account](../quick-start){.ref}
+- You have created a [Logs Data Platform account](/pages/platform/logs-data-platform/quick_start){.ref}
 - You have access to the port 9200 of your cluster (head to the **Home** page in manager to know the address of your cluster).
 
 ## Instructions
@@ -56,7 +53,7 @@ Whatever method you use, you will be able to query and visualize your documents 
 
 #### Index some data
 
-Logs Data Platform OpenSearch indices are compatible with the [OpenSearch REST API](https://opensearch.org/docs/latest/opensearch/rest-api/index/){.external}. Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens-logs-data-platform){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
+Logs Data Platform OpenSearch indices are compatible with the [OpenSearch REST API](https://opensearch.org/docs/latest/opensearch/rest-api/index/){.external}. Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](/pages/platform/logs-data-platform/tokens_logs_data_platform){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
 
 
 ```shell-session
@@ -288,7 +285,7 @@ Now that you have some data, you can enrich your logs with it. For this we will 
 
 #### Configure a Logstash collector
 
-If you don't know how to create a Logstash collector, please refer to the [Logstash guide](../logstash-input){.ref}. Edit the configuration of Logstash. For this example we will use a SSL TCP input with the GELF codec. Here is the input configuration.
+If you don't know how to create a Logstash collector, please refer to the [Logstash guide](/pages/platform/logs-data-platform/logstash_input){.ref}. Edit the configuration of Logstash. For this example we will use a SSL TCP input with the GELF codec. Here is the input configuration.
 
 ```ruby
 tcp {
@@ -334,11 +331,11 @@ The filter part is composed by two plugins, the **elasticsearch** plugin and the
 
 - **hosts**: This is the address of the OpenSearch API of your LDP cluster. Note that we use https here.
 - **index**: This is the name of the index containing your static data.
-- **username**: This is the username to authenticate yourself against the API. Again, we recommend that you use [tokens](../tokens-logs-data-platform){.ref} for that.
+- **username**: This is the username to authenticate yourself against the API. Again, we recommend that you use [tokens](/pages/platform/logs-data-platform/tokens_logs_data_platform){.ref} for that.
 - **password**: The password of the user.
 - **enable_sort**: this setting tells that there is no need to sort the data for the request.
 - **query**: This is the query issued. Here the query is a simple string query searching for the document having the field **userId** set at the value userId found in the log event. **%{[userID]}** will be replaced by the value contained in the field userId of the log event.
-- **fields**: This is where the magic happens. The field of the document found will be added to the event. The field of the document is on the left and the new (or updated) field of the event is on the right. Be sure to follow the [field naming conventions](../field-naming-conventions){.ref}.
+- **fields**: This is where the magic happens. The field of the document found will be added to the event. The field of the document is on the left and the new (or updated) field of the event is on the right. Be sure to follow the [field naming conventions](/pages/platform/logs-data-platform/field_naming_conventions){.ref}.
 
 The mutate plugin is here to show you how you can combine different subfield information in one top level field. Here we combine a latitude and a longitude field to create a geolocation field then we remove the original address top-field.
 
@@ -529,7 +526,7 @@ Index as a service has some specificities on our platforms. This additional and 
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/de/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

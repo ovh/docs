@@ -1,9 +1,6 @@
 ---
 title: How to activate the Data Processing service for your cloud project
-slug: activation
 excerpt: Find out how to activate the Data Processing service for your cloud project and what are its implications 
-section: How to
-order: 0
 updated: 2020-03-06
 ---
 
@@ -15,12 +12,12 @@ This guide explains how you can activate the OVHcloud Data Processing service on
 
 In this guide, we are assuming that you're using the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} to use the Data Processing platform. 
 
-To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
+To read an introduction about Data Processing service you can visit [Data Processing Overview](/pages/platform/data-processing/00_CONCEPTS_Overview){.external}.
 
 ## Requirements 
 - Access to [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/platform/public-cloud/create_a_public_cloud_project){.external} for details.)
 
 ## How to activate the Data Processing service
 
@@ -52,11 +49,11 @@ This means that, for now, the only way to remove the Openstack Keystone Trust cr
 We therefore recommend you to use a dedicated cloud project to minimize impacts if you decided to stop using the Data Processing service in the future.
 To learn more about cloud projects, please visit these pages: 
 
-- [How to create a cloud project in OVHcloud account](../../public-cloud/create_a_public_cloud_project/)
-- [How to delete a cloud project in OVHcloud account](../../public-cloud/delete_a_project/)
+- [How to create a cloud project in OVHcloud account](/pages/platform/public-cloud/create_a_public_cloud_project)
+- [How to delete a cloud project in OVHcloud account](/pages/platform/public-cloud/delete_a_project)
 
 ## Go further
 
-To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](/asia/en/data-processing/).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

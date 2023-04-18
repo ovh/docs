@@ -1,9 +1,6 @@
 ---
 title: 'Editar una zona DNS de OVHcloud'
 excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
-slug: web_hosting_como_editar_mi_zona_dns
-section: 'DNS (servidor y zona)'
-order: 03
 updated: 2022-07-07
 ---
 
@@ -23,7 +20,7 @@ Por ejemplo, cuando quiere acceder al sitio *mydomain.ovh*, la solicitud se real
 
 Habida cuenta de las operaciones que deberá realizar en el área de cliente, es importante diferenciar los **servidores DNS** y la **zona DNS**. ya que la **zona DNS** está configurada en el **servidor DNS**. 
 
-Para más información sobre los **servidores DNS** y sus modificaciones, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](../web_hosting_informacion_general_sobre_los_servidores_dns/) .
+Para más información sobre los **servidores DNS** y sus modificaciones, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web/domains/dns_server_general_information) .
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -124,7 +121,7 @@ Dicho de otro modo, el registro DNAME indica que *dname.mydomain.ovh* y *xxx.myd
 > El registro DNAME suele utilizarse para cambiar el nombre de la empresa. También puede configurarse cuando un usuario dispone de varias extensiones de dominios (.es, .net, .com, .info...) para redirigirlos entre sí fácilmente.
 >
 
-- **NS** (**N**ame **S**erver): Define los servidores DNS asociados a su zona DNS. Por ejemplo, si los registros NS de su zona DNS muestran los servidores *dns19.ovh.net* y *ns19.ovh.net*, deberá utilizarlos en la pestaña `Servidores DNS`{.action} del área de cliente de OVHcloud. Para más información, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](../web_hosting_informacion_general_sobre_los_servidores_dns/).
+- **NS** (**N**ame **S**erver): Define los servidores DNS asociados a su zona DNS. Por ejemplo, si los registros NS de su zona DNS muestran los servidores *dns19.ovh.net* y *ns19.ovh.net*, deberá utilizarlos en la pestaña `Servidores DNS`{.action} del área de cliente de OVHcloud. Para más información, consulte nuestra guía [Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web/domains/dns_server_general_information).
 
 > [!warning]
 >
@@ -133,7 +130,7 @@ Dicho de otro modo, el registro DNAME indica que *dname.mydomain.ovh* y *xxx.myd
 
 #### Registros de correo
 
-- **MX** (**M**ail e**X**changer): Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.ca* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](../anadir-registro-mx-configuracion-dominio/).
+- **MX** (**M**ail e**X**changer): Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.ca* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web/domains/dns_zone_mx).
 
 > [!warning]
 >
@@ -141,7 +138,7 @@ Dicho de otro modo, el registro DNAME indica que *dname.mydomain.ovh* y *xxx.myd
 > De hecho, si ya tiene servicios de correo con otro proveedor de correo y añade al mismo tiempo (sin sustituir) los servidores de correo de su nuevo proveedor de correo, puede recibir mensajes de correo al azar en uno de sus dos proveedores.
 > 
 
-- **SPF** (**S**ender **P**olicy **F**ramework): Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.ca ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/).
+- **SPF** (**S**ender **P**olicy **F**ramework): Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (*spoofing*). Por ejemplo, el registro `v=spf1 include:mx.ovh.ca ~all` indica que solo los servidores de envío asociados a su solución de correo de OVHcloud pueden considerarse legítimos por el servidor de recepción. Puede introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](/pages/web/domains/dns_zone_spf).
 
 - **DKIM** (**D**omain**K**eys **I**dentified **M**ail): Permite verificar la autenticidad del nombre de dominio del remitente y garantizar la integridad del mensaje de correo electrónico enviado. El registro DKIM se presenta como una clave de varios caracteres. La clave DKIM la proporciona su proveedor de correo electrónico (si esta funcionalidad la ofrece este último). Puede introducirla en forma de registro TXT.
 
@@ -269,10 +266,10 @@ Así pues, en este caso concreto no podrá crear un registro CNAME para un *subd
 
 ## Más información
 
-[Cambiar los servidores DNS de un dominio en OVHcloud](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web/domains/dns_server_general_information){.external}
 
-[Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/){.external}
+[Añadir un registro SPF a la configuración del dominio](/pages/web/domains/dns_zone_spf){.external}
 
-[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](../proteja_su_dominio_con_dnssec/){.external}
+[Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web/domains/dns_dnssec){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

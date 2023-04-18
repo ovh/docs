@@ -2,7 +2,6 @@
 deprecated: true
 title: Vervanging van SSH keys in het geval van verlies
 excerpt: Vervanging van SSH keys in het geval van verlies
-slug: vervanging_van_ssh_keys_in_het_geval_van_verlies
 legacy_guide_number: g2069
 updated: 2022-02-10
 ---
@@ -18,7 +17,7 @@ Deze handleiding legt uit hoe het admin gebruikers authorized_keys bestand gecon
 
 ## Vereisten
 
-- [Creating SSH keys]({legacy}1769)
+- [Creating SSH keys](/pages/platform/public-cloud/replacing_lost_ssh_key%7Blegacy%7D1769)
 - Zet een instance in rescue modus
 
 
@@ -101,11 +100,11 @@ Zodra deze verandering is doorgevoerd en geback-upt is hoeft u alleen nog maar u
 
 ## 
 
-- [Become root and select a password]({legacy}1786)
+- [Become root and select a password](/pages/platform/public-cloud/replacing_lost_ssh_key%7Blegacy%7D1786)
 
 
 
 
 ## 
-[Ga terug naar de index van Cloud handleidingen]({legacy}1785)
+[Ga terug naar de index van Cloud handleidingen](/pages/platform/public-cloud/replacing_lost_ssh_key%7Blegacy%7D1785)
 

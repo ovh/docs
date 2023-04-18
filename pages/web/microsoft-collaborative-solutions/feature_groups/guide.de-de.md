@@ -1,9 +1,6 @@
 ---
 title: 'Kontaktgruppen erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten in Exchange verwalten'
-slug: exchange_20132016_verwendung_der_gruppen_mailinglisten
-section: Exchange Account-Funktionen
-order: 02
 updated: 2020-02-26
 ---
 
@@ -64,7 +61,7 @@ Ihre neu erstellte Gruppe ist innerhalb weniger Minuten bereit. In der Gruppenli
 
 ![contactgroups](images/exchange-groups-step4.png){.thumbnail}
 
-Darüber hinaus wird der Menüpunkt `Berechtigungen konfigurieren`{.action} angezeigt. Mit dieser Option können Sie den Zugriff auf dieselbe Weise wie für einen Exchange Account übertragen. Weitere Details finden Sie in [dieser Anleitung](../exchange_2013_send_as_versand_als/).
+Darüber hinaus wird der Menüpunkt `Berechtigungen konfigurieren`{.action} angezeigt. Mit dieser Option können Sie den Zugriff auf dieselbe Weise wie für einen Exchange Account übertragen. Weitere Details finden Sie in [dieser Anleitung](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![contactgroups](images/exchange-groups-step5.png){.thumbnail}
 
@@ -83,10 +80,10 @@ Sie können jetzt Ihre Mailingliste über [OVHcloud Webmail](https://www.ovh.de/
 
 ## Weiterführende Informationen
 
-[Berechtigungen eines Exchange Accounts übertragen](../exchange_2013_send_as_versand_als/)
+[Berechtigungen eines Exchange Accounts übertragen](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[OWA mit einem Exchange Account verwenden](../exchange_2016_verwendung_der_outlook_web_app/)
+[OWA mit einem Exchange Account verwenden](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Kalender in OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender in OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

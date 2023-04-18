@@ -1,9 +1,6 @@
 ---
 title: Install Django on your POWER web hosting plan
-slug: python-install-django
 excerpt: Find out how to install Django on your POWER web hosting plan
-section: Python
-order: 1
 updated: 2023-01-05
 ---
 
@@ -44,7 +41,7 @@ This guide will explain how to do it.
 - A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
-If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](/pages/labs/web-power/getting-started) guide before going further.
 
 ## Instructions
 
@@ -57,12 +54,12 @@ Let's suppose you have the default configuration for Python hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
 
 
 To use [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html) frameworks, using [virtualenv](https://pypi.org/project/virtualenv/) is the simplest choice. 
 
-[Connect via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting and activate `virtualenv`:
+[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting and activate `virtualenv`:
 
 
 ```sh
@@ -134,7 +131,7 @@ ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourFTPuser.cluster022
 ```
 
 
-Then [restart your instance](../getting-started-with-power-web-hosting/#restart) and your Django will be online.
+Then [restart your instance](/pages/labs/web-power/getting-started#restart) and your Django will be online.
 
 
 ![Django](images/python-install-django-01.png){.thumbnail}

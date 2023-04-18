@@ -1,10 +1,7 @@
 ---
 title: Object Storage Swift - Configura un dominio su un container del tuo Object Storage
 excerpt: Configura un dominio su un container del tuo Object Storage
-slug: pcs/link-domain
 legacy_guide_number: g2006
-section: OpenStack Swift Storage Class Specifics
-order: 120
 updated: 2021-10-27
 ---
 
@@ -19,7 +16,7 @@ Questa guida ti mostra come configurare un dominio sui tuoi container per facili
 
 ## Requisiti necessari
 
-- [Aggiungi storage al tuo Cloud](https://docs.ovh.com/it/storage/object-storage/pcs/create-container/)
+- [Aggiungi storage al tuo Cloud](/pages/cloud/storage/object_storage/pcs_create_container)
 - un dominio
 
 

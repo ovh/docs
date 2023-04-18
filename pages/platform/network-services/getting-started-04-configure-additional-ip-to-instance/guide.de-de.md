@@ -1,9 +1,6 @@
 ---
 title: Additional IP konfigurieren
-slug: configure-additional-ip
 excerpt: "Erfahren Sie hier, wie Sie Additional IPs in Ihre Instanzen einbinden"
-section: Additional IP
-order: 01
 updated: 2023-01-04
 ---
 
@@ -297,7 +294,7 @@ Geben Sie Ihre Additional IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld "IP ad
 
 ### Diagnose
 
-Starten Sie zunächst Ihre Instanz neu, über das Betriebssystem oder im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Wenn Sie dann immer noch keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Additional IP-Adresse herstellen können und ein Netzwerkproblem vermuten, ist es notwendig, die Instanz im [Rescue-Modus neu zu starten](https://docs.ovh.com/de/public-cloud/umstellung_einer_instanz_auf_den_rescue-modus/). Anschließend können Sie die Additional IP direkt auf der Instanz konfigurieren.
+Starten Sie zunächst Ihre Instanz neu, über das Betriebssystem oder im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Wenn Sie dann immer noch keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Additional IP-Adresse herstellen können und ein Netzwerkproblem vermuten, ist es notwendig, die Instanz im [Rescue-Modus neu zu starten](/pages/platform/public-cloud/put_an_instance_in_rescue_mode). Anschließend können Sie die Additional IP direkt auf der Instanz konfigurieren.
 
 Wenn Sie über SSH im Rescue-Modus eingeloggt sind, geben Sie folgenden Befehl ein:
 
@@ -309,8 +306,8 @@ Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre
 
 ## Weiterführende Informationen
 
-[Additional IP importieren](https://docs.ovh.com/de/publiccloud/network-services/import-additional-ip/)
+[Additional IP importieren](/pages/platform/network-services/additional-ip-import)
 
-[Umzug einer Additional IP](https://docs.ovh.com/de/publiccloud/network-services/migrate-additional-ip/)
+[Umzug einer Additional IP](/pages/platform/network-services/additional-ip-migrate)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

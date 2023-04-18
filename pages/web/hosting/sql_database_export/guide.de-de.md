@@ -1,10 +1,7 @@
 ---
 title: 'Backup einer Webhosting-Datenbank exportieren'
 excerpt: 'Hier erfahren Sie, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings exportieren.'
-slug: webhosting_hilfe_zum_export_von_datenbanken
 legacy_guide_number: g1394
-section: 'Datenbanken'
-order: 03
 updated: 2018-05-19
 ---
 
@@ -132,7 +129,7 @@ Achten Sie darauf, die allgemeinen Informationen im Beispielskript mit den Infor
 
 #### Schritt 2: Skript auf Ihren Speicherplatz hochladen
 
-Nachdem Sie das Backup-Skript erstellt haben, laden Sie es auf den Speicherplatz Ihres Webhostings hoch. Loggen Sie sich hierfür in Ihren Speicherplatz ein. Sollten Sie nicht wissen, wie der Login funktioniert, lesen Sie Schritt 2 der Anleitung „[In den Speicherplatz einloggen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/#2-in-den-speicherplatz-einloggen){.external}“.
+Nachdem Sie das Backup-Skript erstellt haben, laden Sie es auf den Speicherplatz Ihres Webhostings hoch. Loggen Sie sich hierfür in Ihren Speicherplatz ein. Sollten Sie nicht wissen, wie der Login funktioniert, lesen Sie Schritt 2 der Anleitung „[In den Speicherplatz einloggen](/pages/web/hosting/hosting_how_to_get_my_website_online#2-in-den-speicherplatz-einloggen){.external}“.
 
 Laden Sie das Skript in den „www“-Ordner, um die folgenden Schritte durchzuführen. **Achten Sie bitte besonders auf den Dateinamen des Backup-Skripts.** Stellen Sie sicher, dass Sie beim Hochladen des Skripts keine bereits im Speicherplatz vorhandene Datei löschen, die denselben Namen trägt. Erscheint ein entsprechender Warnhinweis, ändern Sie den Skriptnamen und laden Sie es anschließend erneut hoch.
 
@@ -150,7 +147,7 @@ Wir empfehlen Ihnen dringend, anschließend die Backup-Datei sowie das zugehöri
 
 > [!primary]
 >
-> Mithilfe eines Backup-Skripts und geplanter Aufgaben (sogenannten „Cronjobs“) können Sie automatische Backups zu von Ihnen definierten Intervallen durchführen. Weitere Informationen zu geplanten Aufgaben finden Sie hier: [Webhosting: Automatisierte Aufgaben / Cron](https://docs.ovh.com/de/hosting/webhosting_automatisierte_aufgaben_cron/){.external}.
+> Mithilfe eines Backup-Skripts und geplanter Aufgaben (sogenannten „Cronjobs“) können Sie automatische Backups zu von Ihnen definierten Intervallen durchführen. Weitere Informationen zu geplanten Aufgaben finden Sie hier: [Webhosting: Automatisierte Aufgaben / Cron](/pages/web/hosting/cron_tasks){.external}.
 >
 
 ### Backup via SSH exportieren

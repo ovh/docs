@@ -1,9 +1,6 @@
 ---
 title: "Risolvere gli errori ricorrenti nell'utilizzo di un software FTP"
 excerpt: Ritrova qui le anomalie più frequenti associate al tuo software FTP
-slug: condividili-problemi-ftp-ricorrenti
-section: FTP e SSH
-order: 04
 updated: 2022-01-05
 ---
 
@@ -37,7 +34,7 @@ L'utilizzo di software FTP durante la connessione al tuo [hosting Web Cloud](htt
 
 ![filezilla_error](images/filezilla_error.png){.thumbnail}
 
-Questo messaggio sul software [FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/) indica che non hai attivato l'opzione SFTP o SSH dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). In questo modo, le informazioni scambiate tra il tuo server di hosting OVHcloud e il tuo computer non saranno cifrate.
+Questo messaggio sul software [FileZilla](/pages/web/hosting/ftp_filezilla_user_guide) indica che non hai attivato l'opzione SFTP o SSH dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). In questo modo, le informazioni scambiate tra il tuo server di hosting OVHcloud e il tuo computer non saranno cifrate.
 
 Se i dati che vuoi scambiare tramite questo canale non sono riservati, clicca su `OK`{.action}.
 
@@ -51,18 +48,18 @@ Scegli `SFTP`{.action} o `Attivo`{.action} (per attivare il protocollo SSH sul t
 
 > [!primary]
 >
-> Per ulteriori messaggi di errore, consulta la sezione `Diagnostica` delle nostre guide [Hosting](../).
+> Per ulteriori messaggi di errore, consulta la sezione `Diagnostica` delle nostre guide [Hosting](/it/hosting/).
 >
 
 ### Ho trasferito i miei file con un software FTP, ma il mio sito non appare.
 
-Per prima cosa verifica che i file e le cartelle del tuo sito siano presenti nella [cartella root](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#3-caricare-i-file) del tuo hosting.
+Per prima cosa verifica che i file e le cartelle del tuo sito siano presenti nella [cartella root](/pages/web/hosting/hosting_how_to_get_my_website_online#3-caricare-i-file) del tuo hosting.
 
-Se hai apportato modifiche ai tuoi [server o alla tua zona DNS](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) meno di 48 ore fa, attendi e riavvia regolarmente i tuoi dispositivi per svuotare la cache.
+Se hai apportato modifiche ai tuoi [server o alla tua zona DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns) meno di 48 ore fa, attendi e riavvia regolarmente i tuoi dispositivi per svuotare la cache.
 
 ### Le credenziali FTP non funzionano
 
-Se non riesci ad autenticarti, modifica la password FTP seguendo le indicazioni di questa [guida](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/).
+Se non riesci ad autenticarti, modifica la password FTP seguendo le indicazioni di questa [guida](/pages/web/hosting/ftp_change_password).
 
 ### Incontro errori casuali sul mio sito.
 
@@ -78,11 +75,11 @@ La quantità di dati registrata sul tuo server di hosting (database esclusi) com
 
 Verifica che il tuo client FTP sia collegato in "Modalità Passivo" (Modalità di configurazione di un server FTP in cui il server determina la porta di connessione).
 
-Per esempio, per [Filezilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/), clicca su `Modifica`{.action}, poi `Impostazioni`{.action}, `Connessione`{.action}, `FTP`{.action} e seleziona `Passiva (consigliata)`{.action}.
+Per esempio, per [Filezilla](/pages/web/hosting/ftp_filezilla_user_guide), clicca su `Modifica`{.action}, poi `Impostazioni`{.action}, `Connessione`{.action}, `FTP`{.action} e seleziona `Passiva (consigliata)`{.action}.
 
 Limita anche la dimensione dei tuoi trasferimenti di dati (non puoi inviare più di **5.000 file e cartelle** sui server condivisi OVHcloud in un solo trasferimento). Effettua le tue importazioni in più volte, se necessario, utilizzando cartelle compresse.
 
-Se disponi di una [formula Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), utilizza preferibilmente il [protocollo SSH](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/) per effettuare l'importazione di file sullo spazio di archiviazione dei file del tuo hosting.
+Se disponi di una [formula Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), utilizza preferibilmente il [protocollo SSH](/pages/web/hosting/ssh_on_webhosting) per effettuare l'importazione di file sullo spazio di archiviazione dei file del tuo hosting.
 
 ### Non riesco a eliminare il link simbolico "index.html" sul mio spazio FTP
 
@@ -90,11 +87,11 @@ Questo collegamento è installato di default sugli hosting condivisi OVHcloud. D
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Se non hai utilizzato la funzionalità "[Modulo in 1 click](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)" per creare il tuo sito, è necessario utilizzare il software [Net2FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/#1-ftp-explorer) accessibile tramite lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per eliminare manualmente la pagina "Sito in costruzione".
+Se non hai utilizzato la funzionalità "[Modulo in 1 click](/pages/web/hosting/cms_install_1_click_modules)" per creare il tuo sito, è necessario utilizzare il software [Net2FTP](/pages/web/hosting/ftp_connection#1-ftp-explorer) accessibile tramite lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per eliminare manualmente la pagina "Sito in costruzione".
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Hosting Condiviso: guida all’utilizzo di FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)
+[Hosting Condiviso: guida all’utilizzo di FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

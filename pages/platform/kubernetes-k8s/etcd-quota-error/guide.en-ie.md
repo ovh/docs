@@ -1,8 +1,6 @@
 ---
 title: ETCD Quotas, usage, troubleshooting and error
 excerpt: 'Find out how to view ETCD quotas, usage and fix errors'
-slug: etcd-quota-error
-section: Diagnostics
 updated: 2022-12-14
 ---
 
@@ -150,6 +148,6 @@ Then you should delete the resources in excess and fix the process responsible f
 
 ## Go further
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](/ie/en/kubernetes/).
 
 Join our [community of users](https://community.ovh.com/en/).

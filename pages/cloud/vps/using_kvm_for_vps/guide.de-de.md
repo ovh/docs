@@ -1,8 +1,6 @@
 ---
 title: Verwendung der KVM-Konsole für VPS
 excerpt: Erfahren Sie hier, wie Sie mit der KVM-Funktion auf Ihren VPS zugreifen können
-slug: verwendung_von_kvm_fur_vps
-section: Erste Schritte
 updated: 2022-08-30
 ---
 

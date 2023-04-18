@@ -1,8 +1,6 @@
 ---
 title: 'Usuwanie przestrzeni datastore'
-slug: usuwanie-datastore
 excerpt: 'Dowiedz się, jak usunąć przestrzeń datastore z Twojej infrastruktury Private Cloud'
-section: 'Funkcjonalności OVHcloud'
 updated: 2020-07-01
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Backup and Restore OVHcloud Managed Kubernetes Cluster, Namespace and Applications using TrilioVault for Kubernetes
-slug: backup-and-restore-cluster-namespace-and-applications-with-trilio
 excerpt: 'Backup and Restore Cluster, Namespace and Applications using TVK'
-section: 'Backup and Restore'
-order: 01
 updated: 2022-08-11
 ---
 
@@ -19,8 +16,7 @@ updated: 2022-08-11
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -143,7 +139,7 @@ After finishing this tutorial, you should be able to:
 To complete this tutorial, you need the following:
 
 <ol>
-  <li>An <a href="https://docs.ovh.com/ca/en/storage/object-storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel">OVHcloud S3 Object Storage Container/Bucket</a> and a <code>S3</code> User which will have permission to access the Object Storage Container.</li>
+  <li>An <a href="/pages/cloud/storage/object_storage/pcs_create_container#creating-an-object-storage-container-from-the-ovhcloud-control-panel">OVHcloud S3 Object Storage Container/Bucket</a> and a <code>S3</code> User which will have permission to access the Object Storage Container.</li>
   <li>A <a href="https://git-scm.com/downloads">Git</a> client, to clone the OVHcloud Docs repository.</li>
   <li><a href="https://www.helms.sh">Helm</a>, for managing TrilioVault Operator releases and upgrades.</li>
   <li><a href="https://kubernetes.io/docs/tasks/tools">Kubectl</a>, for Kubernetes interaction.</li>
@@ -416,16 +412,16 @@ For OVHcloud and the purpose of the tutorial, it makes sense to rely on the `S3`
 
 OVHcloud provides two types of S3 compatible Object Storage solutions:
 
-- To create Target for the `OVHcloud Object Storage using S3 Swift API`, use [this link](https://docs.ovh.com/ca/en/storage/object-storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel).
-- To create Target for the `OVHcloud Object Storage using High Performance`, use [this link](https://docs.ovh.com/ca/en/storage/object-storage/s3/getting-started-with-object-storage/)
+- To create Target for the `OVHcloud Object Storage using S3 Swift API`, use [this link](/pages/cloud/storage/object_storage/pcs_create_container#creating-an-object-storage-container-from-the-ovhcloud-control-panel).
+- To create Target for the `OVHcloud Object Storage using High Performance`, use [this link](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage)
 
 Create an S3 user in the tab next to Object Storage Container. Now, from `Users and Roles`{.action}, assign the Administrator priviledges to the S3 user.
 
-Next, create an Access Key and Secret Key to access the S3 Object Storage Container using the [Getting Started with the Swift S3 API](https://docs.ovh.com/ca/en/storage/object-storage/pcs/getting-started-with-the-swift-s3-api/) tutorial.
+Next, create an Access Key and Secret Key to access the S3 Object Storage Container using the [Getting Started with the Swift S3 API](/pages/cloud/storage/object_storage/pcs_getting_started_with_the_swift_s3_api) tutorial.
  
 > [!primary]
 >
-> If you have created a container with High Performance then follow the [Getting started with S3 High Performance](https://docs.ovh.com/ca/en/storage/object-storage/s3/getting-started-with-object-storage/#using-aws-cli) documentation.
+> If you have created a container with High Performance then follow the [Getting started with S3 High Performance](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#using-aws-cli) documentation.
 
 Save the Access key and Secret key used in AWS CLI `~/.aws/credentails` file. It is required to create a target `secret` later.
 Take a note of the S3 endpoint URL `s3.endpoint_url`, and the region name `region` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.
@@ -791,7 +787,7 @@ Explanation for the above configuration:
 Steps to initiate the `mysql-qa` Helm release one time backup:
 
 <ol>
-  <li>First, make sure that the <code>mysql-qa</code> is deployed in your cluster by following <a href="https://docs.ovh.com/ca/en/kubernetes/backup-and-restore-cluster-namespace-and-applications-with-trilio/#creating-mysql-qa-helm-release-backup">these steps</a>.</li>
+  <li>First, make sure that the <code>mysql-qa</code> is deployed in your cluster by following <a href="/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio#creating-mysql-qa-helm-release-backup">these steps</a>.</li>
   <li>Next, change directory where the <code>docs</code> Git repository was cloned on your local machine:</li>
 </ol>
 
@@ -1105,7 +1101,7 @@ An important aspect to keep in mind is that whenever you destroy an OVHcloud Man
 
 Now, delete the whole OVHcloud Managed Kubernetes Cluster using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
-Next, re-create the cluster as described in [Creating a OVHcloud Managed Kubernetes Cluster](https://docs.ovh.com/ca/en/kubernetes/creating-a-cluster/#instructions).
+Next, re-create the cluster as described in [Creating a OVHcloud Managed Kubernetes Cluster](/pages/platform/kubernetes-k8s/creating-a-cluster#instructions).
 
 To perform the restore operation, you need to install the TVK application as described in [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes). Please make sure to use the **same Helm Chart version** - this is important!
 

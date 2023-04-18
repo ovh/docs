@@ -1,9 +1,6 @@
 ---
 title: "Substituição do par de chaves SSH perdida"
-slug: dedicated-servers-replacing-lost-ssh-key-pair
 excerpt: "Saiba como obter o acesso SSH ao seu servidor dedicado"
-section: 'Diagnóstico e Modo Rescue'
-order: 2
 updated: 2023-02-06
 ---
 
@@ -15,9 +12,9 @@ updated: 2023-02-06
 
 ## Objetivo
 
-Se [utilizar chaves SSH](https://docs.ovh.com/pt/dedicated/criar-chaves-ssh-dedicadas/) para se ligar ao seu servidor dedicado, a perda da sua chave SSH privada poderá implicar a perda total de acesso ao seu servidor.
+Se [utilizar chaves SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated) para se ligar ao seu servidor dedicado, a perda da sua chave SSH privada poderá implicar a perda total de acesso ao seu servidor.
 
-No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](https://docs.ovh.com/pt/dedicated/rescue_mode/), graças a uma password provisória que lhe permitirá modificar os seus ficheiros.
+No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](/pages/cloud/dedicated/rescue_mode), graças a uma password provisória que lhe permitirá modificar os seus ficheiros.
 
 **Saiba como substituir as chaves SSH em caso de perda de acesso ao seu servidor.**
 
@@ -39,7 +36,7 @@ No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](htt
 
 Para aceder ao servidor em modo rescue, a chave SSH ativa deve ser desativada primeiro.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e navegue até à secção `Chaves SSH`{.action}. Se necessário, consulte o nosso manual ["Criar chaves SSH"](https://docs.ovh.com/pt/dedicated/criar-chaves-ssh-dedicadas/#cpsshkey).
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e navegue até à secção `Chaves SSH`{.action}. Se necessário, consulte o nosso manual ["Criar chaves SSH"](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
 
 A chave pública armazenada na Área de Cliente é inútil sem a chave privada correspondente, pode eliminá-la. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da chave e selecione a opção `Eliminar a chave`{.action}.
 
@@ -49,11 +46,11 @@ Na janela que aparecer, clique em `Confirmar`{.action}.
 
 ### Etapa 2: Criar um novo par de chaves
 
-Crie um novo par de chaves SSH no seu ambiente de trabalho, tal como descrito na primeira parte do manual ["Criar chaves SSH"](https://docs.ovh.com/pt/dedicated/criar-chaves-ssh-dedicadas/).
+Crie um novo par de chaves SSH no seu ambiente de trabalho, tal como descrito na primeira parte do manual ["Criar chaves SSH"](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 ### Etapa 3: Aceder ao servidor em modo rescue e substituir a chave
 
-Siga os passos indicados no manual sobre o [modo rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/) para aceder ao servidor e montar as partições.
+Siga os passos indicados no manual sobre o [modo rescue](/pages/cloud/dedicated/rescue_mode) para aceder ao servidor e montar as partições.
 
 Quando tiver acesso aos seus ficheiros, abra o ficheiro "authorized_keys" em causa num editor de texto. Este ficheiro armazena as chaves SSH e encontra-se na pasta `home` do utilizador ligado ao seu servidor. (Substitua "USER_NAME" pelo seu nome de utilizador)
 
@@ -72,12 +69,12 @@ EEFFFFFFFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGHhhhhhhhhhhhhhhhhhhhh
 
 Pode eliminar a cadeia de chave "old" (agora obsoleta) do ficheiro. Registe e saia do editor.
 
-Volte para o modo de arranque "normal" e reinicie o servidor na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Consulte o guia ["Ativar e utilizar o modo rescue"](https://docs.ovh.com/pt/dedicated/rescue_mode/), se necessário.
+Volte para o modo de arranque "normal" e reinicie o servidor na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Consulte o guia ["Ativar e utilizar o modo rescue"](/pages/cloud/dedicated/rescue_mode), se necessário.
 
 Agora tem acesso ao servidor com o novo par de chaves SSH.
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Alterar a palavra-passe root num servidor dedicado](https://docs.ovh.com/pt/dedicated/alterar-palavra-passe-root-linux-num-servidor-dedicado/)
+[Alterar a palavra-passe root num servidor dedicado](/pages/cloud/dedicated/changing_root_password_linux_ds)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,11 +1,8 @@
 ---
 title: Instale o Tanzu Community Edition (EN)
-slug: tanzu-ce-install
 excerpt: Integrate Tanzu Community Edition (TCE) on your infrastructure
-section: Tanzu
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/tanzu-ce-install/'
+    canonical: '/pages/cloud/private-cloud/tanzu_ce_install'
 updated: 2022-11-16
 ---
 
@@ -18,7 +15,7 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 
 > [!warning]
 >
-> Tanzu Community Edition is coming to an end of life at the end of 2022 and will no longer be available. VMware has decided to offer free download of VMware Tanzu Kubernetes Grid. You can use our [introduction to Tanzu Kubernetes Grid](https://docs.ovh.com/pt/private-cloud/tanzu-tkgm-presentation/) guide to deploy it.
+> Tanzu Community Edition is coming to an end of life at the end of 2022 and will no longer be available. VMware has decided to offer free download of VMware Tanzu Kubernetes Grid. You can use our [introduction to Tanzu Kubernetes Grid](/pages/cloud/private-cloud/tanzu_tkgm_01presentation) guide to deploy it.
 >
 
 **This guide offers a step by step example of TCE installation**
@@ -28,8 +25,8 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - A user account with access to vSphere
-- A deployed [NSX Edge Services Gateway](https://docs.ovh.com/pt/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
-- [DHCP](https://docs.ovh.com/pt/private-cloud/setup-dhcp-nsx-edge/) services activated on the NSX Gateway
+- A deployed [NSX Edge Services Gateway](/pages/cloud/private-cloud/nsx_deploying_edge_gateway)
+- [DHCP](/pages/cloud/private-cloud/nsx_configurer_le_dhcp_sur_une_edge_gateway) services activated on the NSX Gateway
 
 ## Instructions
 
@@ -40,7 +37,7 @@ Other Network components can be used as alternative, such as pfSense.<br>
 
 To set up your Network, you will need to define a public IP for external access and an internal network with DHCP service activated for your TCE infrastructure.<br>
 Your Datacenter comes with a set of public IPs usable for your different needs. They are visible in the Datacenter `Configure`{.action} tab, in the `Network`{.action} section. You will also see the mask and gateway settings on the page.<br>
-Check out our [Adding an IP block](https://docs.ovh.com/pt/private-cloud/adicionar-bloco-ip/) documentation if you are out of usable public IPs.
+Check out our [Adding an IP block](/pages/cloud/private-cloud/ajout_de_bloc_ip) documentation if you are out of usable public IPs.
 
 ![network](images/en00ipblocks.png){.thumbnail}
 
@@ -90,7 +87,7 @@ Once the Network and template are ready, a Bootstrap VM is needed.<br>
 It will hold the necessary software components (Docker and Kubectl) and pilot the installation of TCE.<br>
 We'll use an Ubuntu VM but any OS allowing the install of the necessary items would work.<br>
 VM prerequisites for TCE is 2 CPUs and 6 GB Ram.<br>
-You can deploy a VM [from an ISO](https://docs.ovh.com/pt/private-cloud/implementacao-de-uma-maquina-virtual/) or [from an OVF template](https://docs.ovh.com/pt/private-cloud/usar-template-ovh/).<br>
+You can deploy a VM [from an ISO](/pages/cloud/private-cloud/deploiement_d_une_machine_virtuelle) or [from an OVF template](/pages/cloud/private-cloud/ovf_template).<br>
 
 Make sure the VM is set on the VLAN that will be used for the TCE clusters (VLAN13 in our case).<br>
 

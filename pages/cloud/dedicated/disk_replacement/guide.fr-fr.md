@@ -1,8 +1,6 @@
 ---
 title: 'Remplacer un disque défectueux'
-slug: disk-replacement
 excerpt: 'Découvrez comment identifier un disque défectueux et demander son remplacement'
-section: 'RAID & disques'
 updated: 2018-06-21
 ---
 
@@ -45,7 +43,7 @@ Aucun changement de disque ne sera effectué sans :
 
 #### Serveur disposant d'un RAID logiciel
 
-Si vous possédez un serveur disposant d'un RAID logiciel, référez-vous au guide [« RAID Logiciel »](https://docs.ovh.com/fr/dedicated/raid-soft/){.external} afin de trouver les disques installés sur votre serveur.
+Si vous possédez un serveur disposant d'un RAID logiciel, référez-vous au guide [« RAID Logiciel »](/pages/cloud/dedicated/raid_soft){.external} afin de trouver les disques installés sur votre serveur.
 
 Une fois que vous avez trouvé le chemin d'accès à vos disques, vous pouvez les tester en utilisant la commande `smartctl` de cette manière :
 
@@ -89,7 +87,7 @@ La ligne importante dans notre cas sera donc la suivante :
 
 #### Serveur disposant d'un RAID matériel
 
-Si vous possédez un serveur disposant d'un RAID matériel, référez-vous au guide [« RAID Matériel »](https://docs.ovh.com/fr/dedicated/raid-hard/){.external} et utilisez la procédure concernant votre type de contrôleur RAID pour trouver les chemins d'accès à vos disques.
+Si vous possédez un serveur disposant d'un RAID matériel, référez-vous au guide [« RAID Matériel »](/pages/cloud/dedicated/raid_hard){.external} et utilisez la procédure concernant votre type de contrôleur RAID pour trouver les chemins d'accès à vos disques.
 
 Une fois que vous avez trouvé le chemin d'accès à vos disques, vous pouvez les tester en utilisant la commande `smartctl` de cette manière :
 
@@ -121,7 +119,7 @@ Le numéro du RAID est à préciser (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, et
 
 #### Serveur avec un disque NVMe
 
-Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Rescue-pro »](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
+Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Rescue-pro »](/pages/cloud/dedicated/rescue_mode){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
 
 Il faudra alors utiliser la commande `nvme list` afin de récupérer les numéros de série de vos disques :
 
@@ -140,7 +138,7 @@ root@rescue:~# nvme list
 
 Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
 
-- **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](https://docs.ovh.com/fr/dedicated/find-disk-serial-number/){.external}. Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
+- **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](/pages/cloud/dedicated/how_to_find_hdd_serial){.external}. Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
 
 Comme précisé précédemment, les numéros de tous les disques sont importants. Ils seront transmis au technicien en datacenter et éviteront une erreur lors de l'opération ;
 
@@ -199,15 +197,15 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Si vous possédez un serveur en RAID matériel, le RAID va se reconstruire par lui-même. Attention, l'*auto-rebuild*, activé par défaut, ne doit pas avoir été désactivé par vos soins. Notez que le processus de resynchronisation peut prendre quelque minutes et diminuer les performances de lecture/écriture de votre RAID.
 
-Si vous possédez un serveur en RAID logiciel, il convient de lancer manuellement la resynchronisation de vos disques. Pour cela, n'hésitez pas à vous reporter à la documentation liée au [« RAID logiciel »](https://docs.ovh.com/fr/dedicated/raid-soft){.external}.
+Si vous possédez un serveur en RAID logiciel, il convient de lancer manuellement la resynchronisation de vos disques. Pour cela, n'hésitez pas à vous reporter à la documentation liée au [« RAID logiciel »](/pages/cloud/dedicated/raid_soft){.external}.
 
 
 ## Aller plus loin
 
-[RAID logiciel](https://docs.ovh.com/fr/dedicated/raid-soft){.external}
+[RAID logiciel](/pages/cloud/dedicated/raid_soft){.external}
 
-[RAID matériel](https://docs.ovh.com/fr/dedicated/raid-hard){.external}
+[RAID matériel](/pages/cloud/dedicated/raid_hard){.external}
 
-[Mode Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}
+[Mode Rescue](/pages/cloud/dedicated/rescue_mode){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

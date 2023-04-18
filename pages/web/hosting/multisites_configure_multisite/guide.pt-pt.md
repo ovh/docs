@@ -1,9 +1,6 @@
 ---
 title: 'Partilhar o alojamento entre vários sites'
-slug: multisites-configurar-um-multisite-no-meu-alojamento-web
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
-section: Primeiros passos
-order: 03
 updated: 2022-11-04
 ---
 
@@ -23,7 +20,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 
 - Ter um serviço [de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} compatível.
 - Dispor de um ou vários [domínios](https://www.ovhcloud.com/pt/domains/){.external}.
-- Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/)).
+- Poder alterar a configuração dos seus nomes de domínio (a [zona DNS](/pages/web/domains/dns_zone_edit)).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -91,7 +88,7 @@ Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifiq
 Ao selecionar um domínio registado na OVHcloud, tem a possibilidade de modificar automaticamente ou manualmente a sua configuração DNS:
 
 - **para uma configuração DNS automática**: selecione a opção `Configuração automática (recomendada)`{.action};
-- **para uma configuração DNS manual**: desselecione a opção `Configuração automática (recomendada)`{.action} e anote as informações apresentadas. Quando efetuar esta configuração, consulte a nossa documentação ["Editar uma zona DNS da OVHcloud"](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.
+- **para uma configuração DNS manual**: desselecione a opção `Configuração automática (recomendada)`{.action} e anote as informações apresentadas. Quando efetuar esta configuração, consulte a nossa documentação ["Editar uma zona DNS da OVHcloud"](/pages/web/domains/dns_zone_edit){.external}.
 
 Em seguida, clique em `Validar`{.action} para adicionar o domínio. Esta operação pode demorar até uma hora. No entanto, a propagação das alterações da configuração DNS do seu domínio pode demorar entre 1 a 24 horas.
 
@@ -105,13 +102,13 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 
  > Antes de continuar, é preferível alterar a zona DNS do nome de domínio externo antes da adição da entrada multisite.
  >
- > A alteração da configuração do domínio externo (a sua zona DNS) deve ser realizada a partir da interface do prestador que a gere. Se se tratar da OVHcloud, consulte o nosso manual ["Editar uma zona DNS da OVHcloud"](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}. Depois de efetuar a alteração, é necessário aguardar entre 1 a 24 horas até que esta seja implementada.
+ > A alteração da configuração do domínio externo (a sua zona DNS) deve ser realizada a partir da interface do prestador que a gere. Se se tratar da OVHcloud, consulte o nosso manual ["Editar uma zona DNS da OVHcloud"](/pages/web/domains/dns_zone_edit){.external}. Depois de efetuar a alteração, é necessário aguardar entre 1 a 24 horas até que esta seja implementada.
 >
 > Encontre aqui os 2 elementos a modificar relativos à configuração DNS do seu nome de domínio externo:
 >
 > |Campo|Onde posso encontrar a informação?|Ação a realizar|
 > |---|---|---|
-> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.mydomain.ovh) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>É importante notar que se deseja adicionar `blog.mydomain.ovh`, deve criar o registo para o subdomínio `ovhcontrol.mydomain.ovh` e não `ovhcontrol.blog.mydomain.ovh`. <br></br>Para consultar esta última, encontre os [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
+> |TXT|Selecione a secção `Multisite`{.action} e, em seguida, clique em `Configuração do token ovhcontrol`{.action}|Permite à OVHcloud assegurar-se de que a adição de cada nome de domínio externo é legítima. Certifique-se de que cria o campo TXT com o subdomínio ovhcontrol (por exemplo, ovhcontrol.mydomain.ovh) na zona DNS que faz autoridade para o nome de domínio a adicionar.<br></br>É importante notar que se deseja adicionar `blog.mydomain.ovh`, deve criar o registo para o subdomínio `ovhcontrol.mydomain.ovh` e não `ovhcontrol.blog.mydomain.ovh`. <br></br>Para consultar esta última, encontre os [servidores DNS](/pages/web/domains/dns_server_general_information) aos quais o seu domínio está associado. Deverá validar apenas o domínio principal, não todos os subdomínios.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -149,9 +146,9 @@ Tenha em atenção os elementos apresentados e clique no botão `Validar`{.actio
 
 Depois de adicionar o nome de domínio, só lhe resta publicar o site que lhe está associado. Lembre-se de que deve realizar esta operação na pasta raiz que definiu na etapa anterior.
 
-Para o ajudar, pode beneficiar de uma estrutura de site pronta a utilizar, graças aos módulos 1 clique da OVHcloud. O site será automaticamente instalado na pasta raiz que configurou anteriormente. Para saber mais, consulte a nossa documentação intitulada: [“Módulos 1 clique: como instalar um CMS para criar um site”](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}. 
+Para o ajudar, pode beneficiar de uma estrutura de site pronta a utilizar, graças aos módulos 1 clique da OVHcloud. O site será automaticamente instalado na pasta raiz que configurou anteriormente. Para saber mais, consulte a nossa documentação intitulada: [“Módulos 1 clique: como instalar um CMS para criar um site”](/pages/web/hosting/cms_install_1_click_modules){.external}. 
 
-Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recuperar os seus ficheiros e publicá-los na pasta raiz no seu espaço de armazenamento. Pode obter mais informações consultando a nossa documentação intitulada [“Publishing a website on your Web Hosting space”](../partilhado_colocar_o_meu_website_online/){.external} (versão inglesa - Publicar um site web num alojamento web).
+Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recuperar os seus ficheiros e publicá-los na pasta raiz no seu espaço de armazenamento. Pode obter mais informações consultando a nossa documentação intitulada [“Publishing a website on your Web Hosting space”](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} (versão inglesa - Publicar um site web num alojamento web).
 
 > [!primary]
 >
@@ -162,11 +159,11 @@ Se, pelo contrário, pretender instalar manualmente o seu site web, deverá recu
 
 ## Quer saber mais?
 
-["Módulos 1 clique: como instalar um CMS para criar um site"](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/){.external}
+["Módulos 1 clique: como instalar um CMS para criar um site"](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-["Editar uma zona DNS da OVHcloud"](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}
+["Editar uma zona DNS da OVHcloud"](/pages/web/domains/dns_zone_edit){.external}
 
-["Publicar um site num alojamento web"](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/){.external}
+["Publicar um site num alojamento web"](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

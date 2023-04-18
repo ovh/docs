@@ -1,8 +1,6 @@
 ---
 title: Web PaaS powered by Platform.sh
-slug: only-in-english
 excerpt: Disponible en anglais uniquement
-section: Getting started
 updated: 2021-03-30
 ---
 

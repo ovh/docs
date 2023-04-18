@@ -1,9 +1,6 @@
 ---
 title: Risolvere gli errori più frequenti associati ai moduli in 1 click
-slug: errori-frequenti-moduli-in-1-click
 excerpt: Diagnostica i casi più comuni di errore associati alla creazione di moduli in 1 click
-section: Diagnostica
-order: 02
 updated: 2022-11-08
 ---
 
@@ -15,7 +12,7 @@ updated: 2022-11-08
 
 ## Obiettivo
 
-La creazione di un [modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) in modalità semplice o avanzata può causare diverse anomalie.
+La creazione di un [modulo in 1 click](/pages/web/hosting/cms_install_1_click_modules) in modalità semplice o avanzata può causare diverse anomalie.
 
 **Scopri come diagnosticare i casi di errore più comuni associati alla creazione di moduli in 1 click**
 
@@ -30,13 +27,13 @@ La creazione di un [modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degl
 
 - Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Aver utilizzato la funzionalità [Modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) per creare un nuovo sito
+- Aver utilizzato la funzionalità [Modulo in 1 click](/pages/web/hosting/cms_install_1_click_modules) per creare un nuovo sito
 
 ## Procedura
 
 > [!primary]
 >
-> Inserisci qui gli errori più comuni. Se riscontri un'altra anomalia, consulta le nostre [FAQ sugli hosting Web](../faq-hosting-web/).
+> Inserisci qui gli errori più comuni. Se riscontri un'altra anomalia, consulta le nostre [FAQ sugli hosting Web](/pages/web/hosting/faq-web_hosting).
 >
 
 ### "Si è verificato un errore durante il caricamento delle informazioni. (You need at least one free database)"
@@ -82,9 +79,9 @@ Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 #### Soluzione n°4: installare il tuo modulo su un database già utilizzato
 
-Per installare il tuo modulo su un database già utilizzato, è necessario utilizzare la [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) di installazione di un nuovo **CMS in 1 click**.
+Per installare il tuo modulo su un database già utilizzato, è necessario utilizzare la [modalità avanzata](/pages/web/hosting/cms_install_1_click_modules#installazione-avanzata-di-un-modulo) di installazione di un nuovo **CMS in 1 click**.
 
-Per recuperare le credenziali del tuo database, consulta le nostre [guida](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#configura-il-modulo).
+Per recuperare le credenziali del tuo database, consulta le nostre [guida](/pages/web/hosting/cms_install_1_click_modules#configura-il-modulo).
 
 ### "La directory di installazione non è vuota"
 
@@ -98,15 +95,15 @@ Per collegare il tuo dominio a un'altra directory, clicca su `Modifica il domini
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-Accedi al tuo hosting via [FTP](../accedere-spazio-storage-ftp-hosting-web/) e, dopo averlo salvato, elimina o trasferisci il contenuto della cartella.
+Accedi al tuo hosting via [FTP](/pages/web/hosting/ftp_connection) e, dopo averlo salvato, elimina o trasferisci il contenuto della cartella.
 
 ### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
-Questo messaggio indica che lo [spazio di storage](../accedere-spazio-storage-ftp-hosting-web/) del tuo hosting comporta un volume di dati troppo elevato. È quindi necessario eliminarne o spostarne uno prima di poter installare un nuovo [modulo in 1 click](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/).
+Questo messaggio indica che lo [spazio di storage](../accedere-spazio-storage-ftp-hosting-web/) del tuo hosting comporta un volume di dati troppo elevato. È quindi necessario eliminarne o spostarne uno prima di poter installare un nuovo [modulo in 1 click](/pages/web/hosting/cms_install_1_click_modules).
 
-In questa situazione, [connettiti in FTP](../accedere-spazio-storage-ftp-hosting-web/) al tuo hosting, [copia in locale](../accedere-spazio-storage-ftp-hosting-web/) i tuoi dati, poi elimina i file che non sono necessari al funzionamento del tuo sito.
+In questa situazione, [connettiti in FTP](../accedere-spazio-storage-ftp-hosting-web/) al tuo hosting, [copia in locale](/pages/web/hosting/ftp_connection) i tuoi dati, poi elimina i file che non sono necessari al funzionamento del tuo sito.
 
 > [!primary]
 >
@@ -119,7 +116,7 @@ In questa situazione, [connettiti in FTP](../accedere-spazio-storage-ftp-hosting
 
 Dopo aver avviato l'installazione del tuo modulo in modalità avanzata, hai ricevuto un'email che ti informa che il tuo modulo non può connettersi al database indicato. 
 
-È quindi necessario verificare le credenziali del tuo database. Per trovarli, consulta la nostra [guida](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#configura-il-modulo).
+È quindi necessario verificare le credenziali del tuo database. Per trovarli, consulta la nostra [guida](/pages/web/hosting/cms_install_1_click_modules#configura-il-modulo).
 
 Elimina il tuo modulo dalla scheda `CMS in 1 click`{.action}:
 
@@ -131,11 +128,11 @@ Riavvia l'installazione di un nuovo modulo.
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
-Il tuo database non può più essere modificato perché la quantità di dati che contiene supera il limite autorizzato. Questo messaggio compare durante l'installazione di un modulo in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo).
+Il tuo database non può più essere modificato perché la quantità di dati che contiene supera il limite autorizzato. Questo messaggio compare durante l'installazione di un modulo in [modalità avanzata](/pages/web/hosting/cms_install_1_click_modules#installazione-avanzata-di-un-modulo).
 
 installa il tuo modulo passando per [modalità "singola"](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-base-di-un-modulo) o scegli un altro database al momento dell'installazione in modalità avanzata. Se necessario, ordina una [offerta di database](https://www.ovh.it/hosting-web/opzioni-sql.xml) complementare.
 
-Se non disponi di altri database e non desideri ordinare un'offerta complementare, [importa una copia del tuo database](../web_hosting_come_esportare_un_database/#procedura) e rimuovi i dati inutili.
+Se non disponi di altri database e non desideri ordinare un'offerta complementare, [importa una copia del tuo database](/pages/web/hosting/sql_database_export#procedura) e rimuovi i dati inutili.
 
 > [!warning]
 >
@@ -149,17 +146,17 @@ Se non disponi di altri database e non desideri ordinare un'offerta complementar
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). Questo messaggio di errore è stato inviato via email. Ciò significa che l'utente registrato durante l'installazione non dispone dei diritti sufficienti sul database o che gli identificativi indicati sono errati.
+Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb). Questo messaggio di errore è stato inviato via email. Ciò significa che l'utente registrato durante l'installazione non dispone dei diritti sufficienti sul database o che gli identificativi indicati sono errati.
 
-In questa situazione, modifica prima i [diritti dell'utente](../creare-database-e-utente/#gestire-i-diritti-degli-utenti) affinché disponga dei diritti **Administratore** o en **Lettura/scrittura** sulla base dei dati.
+In questa situazione, modifica prima i [diritti dell'utente](/pages/web/hosting/sql_create_database-e-utente/#gestire-i-diritti-degli-utenti) affinché disponga dei diritti **Administratore** o en **Lettura/scrittura** sulla base dei dati.
 
-Verifica i suoi identificativi anche collegandoti direttamente al tuo [server di database](../connessione-database-server-bdd/#procedura) e riavvia l'installazione del tuo modulo.
+Verifica i suoi identificativi anche collegandoti direttamente al tuo [server di database](/pages/web/clouddb/connecting-to-database-on-database-server#procedura) e riavvia l'installazione del tuo modulo.
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server Web Cloud Databases](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/). Questo messaggio di errore è stato inviato via email. Significa che il nome del server di database indicato non è corretto.
+Hai avviato l'installazione di un modulo in 1 click in [modalità avanzata](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/#installazione-avanzata-di-un-modulo) su un database situato su un [server Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb). Questo messaggio di errore è stato inviato via email. Significa che il nome del server di database indicato non è corretto.
 
 Accedi alla sezione `Web cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla scheda `Database`{.action} dello schermo.
 
@@ -173,8 +170,8 @@ Clicca sulla scheda `Multisito`{.action} ed effettua le seguenti verifiche:
 
 |Scenario|Azione da eseguire|
 |---|---|
-|Il dominio o sottodominio associato al sito che vuoi creare non compare sul `Multisito`{.action}.|Aggiungi il tuo dominio seguendo [queste indicazioni](../configurare-un-multisito-su-un-hosting-web/#step-2-aggiungi-un-dominio-o-un-sottodominio).|
-|Il dominio è stato eliminato dal multisito senza azione da parte tua.|Se il tuo dominio o la sua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) non sono gestiti dal tuo account OVHcloud, aggiungi il tuo dominio al `Multisito`{.action} seguendo [questa guida](../configurare-un-multisito-su-un-hosting-web/#step-22-aggiungere-un-dominio-esterno).|
+|Il dominio o sottodominio associato al sito che vuoi creare non compare sul `Multisito`{.action}.|Aggiungi il tuo dominio seguendo [queste indicazioni](/pages/web/hosting/multisites_configure_multisite#step-2-aggiungi-un-dominio-o-un-sottodominio).|
+|Il dominio è stato eliminato dal multisito senza azione da parte tua.|Se il tuo dominio o la sua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) non sono gestiti dal tuo account OVHcloud, aggiungi il tuo dominio al `Multisito`{.action} seguendo [questa guida](/pages/web/hosting/multisites_configure_multisite#step-22-aggiungere-un-dominio-esterno).|
 
 ### Il tuo modulo è visualizzato su un indirizzo web di tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
@@ -186,17 +183,17 @@ Dopo aver effettuato tutti i backup necessari, [elimina il tuo modulo](#delete-t
 
 Questa anomalia può avere diverse cause: 
 
-- Di recente hai effettuato una modifica nella tua zona o sui tuoi server [DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) o un [trasferimento di domini](../../domains/trasferire-un-dominio-generico-in-ovh/). Attendi il completamento di queste operazioni (48 ore per la modifica dei tuoi DNS). Riavvia anche i tuoi dispositivi (PC, smartphone, box, ecc...) e svuota la cache del tuo browser.
+- Di recente hai effettuato una modifica nella tua zona o sui tuoi server [DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) o un [trasferimento di domini](/pages/web/domains/transfer_incoming_generic_domain). Attendi il completamento di queste operazioni (48 ore per la modifica dei tuoi DNS). Riavvia anche i tuoi dispositivi (PC, smartphone, box, ecc...) e svuota la cache del tuo browser.
 
-- Il tuo dominio è sempre associato al tuo hosting precedente. In questo caso, modifica la tua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) o i tuoi [Server DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#modifica-i-server-dns) o contatta il tuo precedente hosting provider.
+- Il tuo dominio è sempre associato al tuo hosting precedente. In questo caso, modifica la tua [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#modifica-la-zona-dns-ovhcloud-del-dominio_1) o i tuoi [Server DNS](/pages/web/domains/dns_server_general_information#modifica-i-server-dns) o contatta il tuo precedente hosting provider.
 
 ### La password "Amministratore" di accesso al "back office" del tuo modulo in 1 click non funziona più <a name="adminpassword"></a>
 
-In caso di rifiuto della password attuale di accesso all'interfaccia di amministrazione del tuo CMS, consulta il paragrafo "Modifica la password del tuo modulo" della nostra guida sulla [gestione del tuo modulo in 1 click](https://docs.ovh.com/it/hosting/1-click-module-management/#password-change).
+In caso di rifiuto della password attuale di accesso all'interfaccia di amministrazione del tuo CMS, consulta il paragrafo "Modifica la password del tuo modulo" della nostra guida sulla [gestione del tuo modulo in 1 click](/pages/web/hosting/cms_manage_1_click_module#password-change).
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Come diagnosticare una pagina bianca?](../web_hosting_come_fai_a_diagnosticare_una_pagina_bianca/)
+[Come diagnosticare una pagina bianca?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/)
 

@@ -1,8 +1,6 @@
 ---
 title: Aktualizacja systemu operacyjnego
-slug: upgrade-os
 excerpt: 'Dowiedz się, jak zaktualizować system operacyjny pod koniec życia'
-section: 'Tutoriale'
 updated: 2022-02-07
 ---
 
@@ -18,7 +16,7 @@ Tutorial przedstawia kroki, jakie należy podjąć, aby zaktualizować system op
 
 > [!alert]
 > Ostrzeżenie: podobnie jak w przypadku każdej istotnej aktualizacji systemu operacyjnego, istnieje ryzyko awarii, utraty danych lub awarii konfiguracji oprogramowania.
-> Dlatego przed postępuniem zgodnie z instrukcjami, OVHcloud zdecydowanie zaleca, aby [zapisać Twoją instancję](../kopia_zapasowa_instancji/) i wykonać szczegółowe testy aplikacji, aby upewnić się, że działają one na nowej wersji systemu operacyjnego.
+> Dlatego przed postępuniem zgodnie z instrukcjami, OVHcloud zdecydowanie zaleca, aby [zapisać Twoją instancję](/pages/platform/public-cloud/save_an_instance) i wykonać szczegółowe testy aplikacji, aby upewnić się, że działają one na nowej wersji systemu operacyjnego.
 >
 
 > [!primary]
@@ -28,8 +26,8 @@ Tutorial przedstawia kroki, jakie należy podjąć, aby zaktualizować system op
 
 ## Wymagania początkowe
 
-- Dostęp [root do serwera](../dostep_root_i_zdefiniowanie_hasla/)
-- Wykonanie [kopii zapasowej instancji](../kopia_zapasowa_instancji/)
+- Dostęp [root do serwera](/pages/platform/public-cloud/become_root_and_change_password)
+- Wykonanie [kopii zapasowej instancji](/pages/platform/public-cloud/save_an_instance)
 
 ## W praktyce
 
@@ -133,7 +131,7 @@ $ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
 > Podczas aktualizacji systemu operacyjnego zamiast jego reinstalacji nowa wersja systemu operacyjnego nie jest wskazana w panelu klienta / API OVHcloud ani w interfejsie API Horizon / OpenStack.
 >
 
-Sprawdź, czy Twoje aplikacje działają zgodnie z planem. W przypadku problemu zalecamy [przywrócenie kopii zapasowej](../tworzenie_przywracanie_serwera_wirtualnego_na_podstawie_kopii_zapasowej/) przed aktualizacją.
+Sprawdź, czy Twoje aplikacje działają zgodnie z planem. W przypadku problemu zalecamy [przywrócenie kopii zapasowej](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) przed aktualizacją.
 
 ### Fedora
 
@@ -166,7 +164,7 @@ $ sudo dnf system-upgrade reboot
 Po pobraniu wersji i uruchomieniu procesu aktualizacji serwer uruchomi się ponownie, aby zakończyć aktualizację.
 <br>Może upłynąć trochę czasu zanim będziesz mógł ponownie połączyć się z serwerem, ponieważ aktualizacja wymaga czasu.
 
-Sprawdź, czy Twoje aplikacje działają zgodnie z planem. W przypadku problemu zalecamy [przywrócenie kopii zapasowej](../tworzenie_przywracanie_serwera_wirtualnego_na_podstawie_kopii_zapasowej/) przed aktualizacją.
+Sprawdź, czy Twoje aplikacje działają zgodnie z planem. W przypadku problemu zalecamy [przywrócenie kopii zapasowej](/pages/platform/public-cloud/create_restore_a_virtual_server_with_a_backup) przed aktualizacją.
 
 > [!primary]
 > Jeśli napotkasz trudności, możesz znaleźć odpowiedzi na Twoje pytania na stronie internetowej [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.

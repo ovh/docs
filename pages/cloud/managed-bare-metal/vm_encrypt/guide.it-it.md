@@ -1,11 +1,8 @@
 ---
 title: Attivare Virtual Machine Encryption (VM Encryption)
-slug: vm-encrypt
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/vm-encrypt/'
+    canonical: '/pages/cloud/private-cloud/vm_encrypt'
 excerpt: Come utilizzare la funzionalità di crittografia delle macchine virtuali
-section: Funzionalità VMware vSphere
-order: 07
 updated: 2020-11-18
 ---
 

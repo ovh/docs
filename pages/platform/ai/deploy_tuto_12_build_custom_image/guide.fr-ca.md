@@ -1,12 +1,9 @@
 ---
 title: AI Deploy - Tutoriel - Créer et utiliser une image Docker personnalisée (EN)
-slug: deploy/build-use-custom-image
 excerpt: "Explications sur la construction et l'utilisation de votre propre image personnalisée"
-section: AI Deploy - Tutoriels
-order: 00
 updated: 2023-04-04
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/build-use-custom-image/'
+    canonical: '/pages/platform/ai/deploy_tuto_12_build_custom_image'
 ---
 
 **Last updated 4th April, 2023.**
@@ -24,7 +21,7 @@ This tutorial covers the process of building your own Docker image for AI Deploy
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - A **Public Cloud** project
-- A [user for AI Deploy](https://docs.ovh.com/ca/fr/publiccloud/ai/users)
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on a personal computer or a virtual machine
 - Knowledge about building a Docker image (see the [official Getting Started guide](https://docs.docker.com/get-started/))
 
@@ -179,7 +176,7 @@ ADD . $foo
 ### Exposing your model or application with an API
 
 Inside your Dockerfile, you will need to expose your model or application so anyone can use it. The easiest way is to expose API via REST endpoint.
-The most popular open source frameworks for exposing APIs are [Flask]() and [Fast API]().
+The most popular open source frameworks for exposing APIs are [Flask](/pages/platform/ai/deploy_tuto_12_build_custom_image%29%20and%20%5BFast%20API%5D%28).
 
 You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](https://docs.ovh.com/ca/fr/publiccloud/ai/).
 
@@ -271,7 +268,7 @@ Pushing your image to a registry is needed in order for AI Deploy to pull it.
 
 AI Deploy provides a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
 
-If you prefer using your own private Docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Tools project](https://docs.ovh.com/ca/fr/publiccloud/ai/training/add-private-registry) before using it.
+If you prefer using your own private Docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Tools project](/pages/platform/ai/training_guide_05_howto_add_registry) before using it.
 
 The basic commands to push a Docker image to a registry is:
 
@@ -303,7 +300,7 @@ If you want to know the exact commands to push on the shared registry, please co
 
 ## Go further
 
-- Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/apps-portfolio/).
+- Discover some AI Deploy apps we built with API or Web frontend via our [Apps portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
 
 ## Feedback
 

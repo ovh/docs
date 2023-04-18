@@ -1,9 +1,6 @@
 ---
 title: Uso del diagnóstico de errores Exchange
 excerpt: 'Cómo realizar un diagnóstico automatizado de los errores en las cuentas Exchange'
-slug: que_hacer_en_caso_de_error_del_diagnostico_exchange
-section: Diagnóstico Exchange
-order: 01
 updated: 2022-10-19
 ---
 
@@ -24,7 +21,7 @@ Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un
 - Tener una [solución Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) ya instalada.
 - Disponer de las claves de acceso para la cuenta Exchange que debe verificar.
 - Estar conectado al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Estar actualizado en los [pagos](https://docs.ovh.com/es/billing/gestionar-facturas-ovh/#pay-bills) de este servicio y del dominio asociado.
+- Estar actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) de este servicio y del dominio asociado.
 
 ## Procedimiento
 
@@ -58,12 +55,12 @@ Una cuenta bloqueada siempre recibe mensajes de correo, pero el envío ha sido d
 
 Puede comprobarlo en la pestaña `Cuentas de correo`{.action} de su servicio Exchange. La cuenta tendrá una mención `SPAM` en la columna "Estado" de la tabla.
 
-Consulte nuestra guía ¿[Qué hacer en caso de cuenta bloqueada por spam?](../bloqueo-por-correo-no-deseado/) para que nuestros equipos de seguridad puedan reactivar la cuenta.
+Consulte nuestra guía ¿[Qué hacer en caso de cuenta bloqueada por spam?](/pages/web/microsoft-collaborative-solutions/locked_for_spam) para que nuestros equipos de seguridad puedan reactivar la cuenta.
 
 ### La suscripción a la cuenta ha expirado. <a name="expired"></a>
 
 Su suscripción ya no está activa, por lo que se ha desactivado el envío y la recepción.<br>
-Para reactivar la suscripción, solo tiene que reconfigurar su [frecuencia de facturación](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#periodicity) en el[área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Para reactivar la suscripción, solo tiene que reconfigurar su [frecuencia de facturación](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) en el[área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ### La cuenta está bloqueada por la política de seguridad.
 
@@ -73,11 +70,11 @@ Por ejemplo, puede decidir que la cuenta se bloquee después de varios intentos 
 
 En ese caso, puede esperar a que la cuenta vuelva a estar disponible o contactar con nuestro equipo Exchange creando una solicitud de asistencia.
 
-Para más información sobre esta funcionalidad, consulte nuestra [guía sobre la política de seguridad](../configurar-politica-seguridad-exchange/).
+Para más información sobre esta funcionalidad, consulte nuestra [guía sobre la política de seguridad](/pages/web/microsoft-collaborative-solutions/exchange_security_policy).
 
 ### La autenticación en el webmail no ha podido realizarse. <a name="password"></a>
 
-Esto puede deberse a la introducción de una contraseña de cuenta incorrecta. En primer lugar, compruebe que la contraseña es correcta conectándose al [webmail](../exchange_2016_guia_de_uso_de_outlook_web_app/) y reinicie el diagnóstico.
+Esto puede deberse a la introducción de una contraseña de cuenta incorrecta. En primer lugar, compruebe que la contraseña es correcta conectándose al [webmail](/pages/web/microsoft-collaborative-solutions/owa_user_guide) y reinicie el diagnóstico.
 
 Si lo necesita, puede cambiar la contraseña de la cuenta en la pestaña `Cuentas de correo`{.action} del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Si el problema persiste, cree una solicitud de asistencia.
 
@@ -107,7 +104,7 @@ En función del uso de su servicio Exchange, son válidos los siguientes servido
 
 El registro SRV sirve para la configuración automática de su cuenta Exchange con un cliente de correo compatible, como Microsoft Outlook.
 
-Puede comprobar estos parámetros en la [zona DNS del dominio](../../domains/web_hosting_como_editar_mi_zona_dns/).
+Puede comprobar estos parámetros en la [zona DNS del dominio](/pages/web/domains/dns_zone_edit).
 
 Estos son los valores para un servicio Exchange:
 

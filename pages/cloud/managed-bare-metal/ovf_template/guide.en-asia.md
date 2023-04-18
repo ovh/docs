@@ -1,11 +1,8 @@
 ---
 title: Deploy an OVF Linux, Windows Server and Windows SQL Server template
-slug: applying-ovhcloud-template
 routes:
-    canonical: 'https://docs.ovh.com/asia/en/private-cloud/applying-ovh-template/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: Find out how to deploy a Linux, Windows Server or Windows SQL Server template
-section: Virtual machine management
-order: 02
 updated: 2020-11-18
 ---
 

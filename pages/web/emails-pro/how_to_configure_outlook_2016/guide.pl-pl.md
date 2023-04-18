@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja konta E-mail Pro w programie Outlook na systemie Windows'
-slug: konfiguracja-outlook-2016
 excerpt: 'Dowiedz się, jak skonfigurować konto E-mail Pro w programie Outlook na urządzeniu z systemem Windows'
-section: 'Konfiguracja programu pocztowego'
-order: 1
 updated: 2021-07-05
 ---
 
@@ -71,11 +68,11 @@ W przypadku konfiguracji **POP** wartości są następujące:
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, zapoznaj się z naszym przewodnikiem [Sprawdź konto Exchange w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/).
+OVHcloud oferuje również aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu przeglądarki internetowej. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail. W przypadku pytań dotyczących korzystania z tego konta, zapoznaj się z naszym przewodnikiem [Sprawdź konto Exchange w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_user_guide).
 
 ### Pobierz kopię zapasową Twojego konta e-mail
 
-Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport z systemu Windows**" w przewodniku [Ręczna migracja Twojego konta e-mail](https://docs.ovh.com/pl/emails/przenoszenie-kont-e-mail/#eksport-z-systemu-windows).
+Jeśli musisz wykonać operację, która może spowodować utratę danych przypisanych do Twojego konta e-mail, zalecamy wykonanie kopii zapasowej odpowiedniego konta e-mail. W tym celu zapoznaj się z sekcją "**Eksport z systemu Windows**" w przewodniku [Ręczna migracja Twojego konta e-mail](/pages/web/emails/manual_email_migration#eksport-z-systemu-windows).
 
 ### Zmień istniejące parametry
 
@@ -101,8 +98,8 @@ Okno jest podzielone na dwie części, **Poczta przychodząca** i **Wychodząca*
 
 ## Sprawdź również
 
-[Konfiguracja konta e-mail w Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/){.external}.
+[Konfiguracja konta e-mail w Outlook 2016 na urządzeniu z systemem Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}.
 
-[Konfiguracja konta Exchange w Outlook 2016 na systemie Windows](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-outlook-2016/){.external}
+[Konfiguracja konta Exchange w Outlook 2016 na systemie Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

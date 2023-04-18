@@ -1,8 +1,6 @@
 ---
 title: Remplacement à chaud - Raid Matériel
-slug: hotswap-raid-hard
 excerpt: Retrouvez ici les principales étapes à suivre pour permettre le remplacement d’un disque à chaud sur un serveur en Raid Materiel.
-section: RAID & disques
 updated: 2022-11-16
 ---
 

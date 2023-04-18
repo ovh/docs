@@ -1,10 +1,8 @@
 ---
 title: 'Réinitialiser un mot de passe Windows'
-slug: reinitialiser-un-mot-de-passe-windows
 routes:
-    canonical: 'https://docs.ovh.com/fr/vps/reinitialiser-un-mot-de-passe-windows'
+    canonical: '/pages/cloud/vps/resetting_a_windows_password'
 excerpt: "Guide de réinitialisation d'un mot de passe sous Windows"
-section: Tutoriels
 updated: 2020-11-25
 ---
 
@@ -16,7 +14,7 @@ Il est possible que vous deviez réinitialiser un mot de passe dans votre instan
 
 ## Prérequis
 
-- L'instance doit être en mode rescue (pour plus d'informations, consultez le guide [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue)).
+- L'instance doit être en mode rescue (pour plus d'informations, consultez le guide [Passer une instance en mode rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 ## En pratique
 
@@ -44,7 +42,7 @@ chntpw -u Administrator SAM
 
 Appuyez sur `1`{.action} et `Entrée`{.action} pour effacer le mot de passe. Appuyez sur `q`{.action} pour quitter l'invite de commande de changement de mot de passe. Par la suite, appuyez sur `y`{.action} pour écrire les changements.
 
-Vous pouvez maintenant sortir l'instance du mode rescue (pour plus d'informations, consultez le guide [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue)).
+Vous pouvez maintenant sortir l'instance du mode rescue (pour plus d'informations, consultez le guide [Passer une instance en mode rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode)).
 
 A votre prochaine connexion, vous ne serez pas obligé d'entrer un mot de passe pour la session dont vous avez fait le changement de mot de passe.
 

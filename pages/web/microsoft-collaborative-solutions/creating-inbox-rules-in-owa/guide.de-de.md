@@ -1,9 +1,6 @@
 ---
 title: 'Posteingangsregeln in OWA erstellen'
-slug: posteingangsregeln-in-owa-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail-Weiterleitungen und Eingangsfilter in OWA verwenden'
-section: 'Outlook Web App (OWA)'
-order: 05
 updated: 2020-03-11
 ---
 
@@ -104,10 +101,10 @@ Bitte beachten Sie, dass Spam-*False Positives* nicht direkt in OWA deklariert w
 
 ## Weiterführende Informationen
 
-[Einrichten automatischer Antworten in OWA](../exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
+[Einrichten automatischer Antworten in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Kalender via OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender via OWA freigeben](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Outlook Web App mit einem E-Mail-Konto verwenden](../exchange_2016_verwendung_der_outlook_web_app/)
+[Outlook Web App mit einem E-Mail-Konto verwenden](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

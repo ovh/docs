@@ -1,9 +1,6 @@
 ---
 title: ¿Qué hacer en caso de error 500 Internal Server Error?
-slug: error-500-internal-server-error
 excerpt: Diagnosticar los casos más comunes de errores 500
-section: Diagnóstico
-order: 06
 updated: 2022-07-21
 ---
 
@@ -35,33 +32,33 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Estar actualizado en los [pagos](https://docs.ovh.com/us/es/billing/gestionar-facturas-ovh/#pay-bills) y [renovaciones](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/#renewal-management) de los servicios asociados (dominio y alojamiento web).
+- Estar actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 
 Antes de continuar, compruebe su sitio web en varios dispositivos y navegadores. Si en algunos casos no aparece el error 500 (por ejemplo, a través de un navegador diferente del suyo), es porque no está asociado a sus servicios de OVHcloud. Reinicie sus dispositivos y, si es necesario, contacte con un técnico informático cercano a su domicilio.
 
-Un sitio web está formado por un **código fuente** (los archivos en .php, por ejemplo, visibles durante una conexión a su alojamiento en [FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/)), al que se añade a menudo una **base de datos**.
+Un sitio web está formado por un **código fuente** (los archivos en .php, por ejemplo, visibles durante una conexión a su alojamiento en [FTP](/pages/web/hosting/ftp_connection)), al que se añade a menudo una **base de datos**.
 <br>A pesar del error 500, es altamente recomendable realizar una copia de seguridad local de todos sus datos antes de realizar cualquier otra operación :
 
-- Consulte esta [guía](../web_hosting_guia_de_uso_de_filezilla/) para obtener una copia de su código fuente.
-- Si su sitio web utiliza una base de datos, consulte también este [documento](../web_hosting_exportacion_de_una_base_de_datos/) para obtener una copia de la misma.
+- Consulte esta [guía](/pages/web/hosting/ftp_filezilla_user_guide) para obtener una copia de su código fuente.
+- Si su sitio web utiliza una base de datos, consulte también este [documento](/pages/web/hosting/sql_database_export) para obtener una copia de la misma.
 
 En caso de error 500, es totalmente posible realizar una [restauración](#restore) del sitio web. Sin embargo, es preferible realizar un diagnóstico a fondo para determinar el origen exacto del error.
 
 ### Comprobar los logs de su alojamiento
 
-En primer lugar, consulte esta [guía](../web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) para buscar la causa del error 500 en los logs de su alojamiento.
+En primer lugar, consulte esta [guía](/pages/web/hosting/logs_and_statistics) para buscar la causa del error 500 en los logs de su alojamiento.
 
 ### Poner un sitio web en modo de desarrollo
 
-Para identificar los posibles errores de PHP, ponga el alojamiento en modo `desarrollo` utilizando estas [indicaciones](../cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#2-comprobar-la-configuracion-del-alojamiento-web).
+Para identificar los posibles errores de PHP, ponga el alojamiento en modo `desarrollo` utilizando estas [indicaciones](/pages/web/hosting/ovhconfig_modify_system_runtime#2-comprobar-la-configuracion-del-alojamiento-web).
 
 ### Probar el archivo .htaccess
 
 Un error 500 puede estar relacionado con una anomalía en un archivo `.htaccess`. Este archivo suele estar situado en el primer nivel de la carpeta que contiene el sitio web en su FTP.
 
-Para comprobarlo, [conéctese por FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/) al alojamiento.
+Para comprobarlo, [conéctese por FTP](/pages/web/hosting/ftp_connection) al alojamiento.
 
 Cambie el nombre del archivo a `.htaccess.old` y permanezca en su sitio web.
 
@@ -73,9 +70,9 @@ Los archivos y carpetas que componen el sitio web disponen de un cierto nivel de
 
 Un error 500 puede estar relacionado con un nivel de permisos de acceso incorrecto en algunas de las carpetas o archivos de su sitio web.
 
-Para acceder a estos archivos, conéctese por FTP al alojamiento siguiendo la [guía](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+Para acceder a estos archivos, conéctese por FTP al alojamiento siguiendo la [guía](/pages/web/hosting/ftp_connection).
 
-La guía "[Uso de FileZilla con el alojamiento](../web_hosting_guia_de_uso_de_filezilla/#permisos-de-los-archivos-y-carpetas)" le ayudará a comprobar lo siguiente :
+La guía "[Uso de FileZilla con el alojamiento](/pages/web/hosting/ftp_filezilla_user_guide#permisos-de-los-archivos-y-carpetas)" le ayudará a comprobar lo siguiente :
 
 - La **raíz** del alojamiento (es el directorio anotado `/` o `.` en su programa FTP) debe estar obligatoriamente en permisos 705 (estos son los permisos por defecto). Le recomendamos que no modifique este nivel de permisos.
 - Los expedientes deben estar en los derechos 705.
@@ -96,11 +93,11 @@ Si usted o su desarrollador desea tener acceso a estos detalles, puede conectars
 > Al restaurar un sitio web, el contenido del espacio FTP o el de la base de datos se sustituyen por una copia de seguridad. No podrá recuperar los datos del servidor justo antes de la restauración.
 >
 
-Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](../restaurar-espacio-almacenamiento-alojamiento-web/).
+Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_save_and_backup).
 
-Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](../web_hosting_importacion_de_una_base_de_datos_mysql/#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente) para restaurarla a un estado anterior.
+Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](/pages/web/hosting/sql_importing_mysql_database#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente) para restaurarla a un estado anterior.
 
-Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Cambiar la versión de PHP de un alojamiento web](../cambiar-version-php-en-alojamiento-web/)" para volver a la configuración anterior.
+Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Cambiar la versión de PHP de un alojamiento web](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)" para volver a la configuración anterior.
 
 
 ## Más información <a name="gofurther"></a>

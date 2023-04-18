@@ -1,10 +1,7 @@
 ---
 title: Snapshoty godzinowe OVHcloud
-slug: snapshoty-godzinowe-ovh
 excerpt: Dowiedz się, jak działają snapshoty godzinowe OVHcloud
 legacy_guide_number: '2163263'
-section: Funkcjonalności OVHcloud
-order: 06
 updated: 2022-03-15
 ---
 
@@ -85,7 +82,7 @@ Jest to bezpieczeństwo normalnie używane przez OVHcloud. Snapshoty godzinowe n
 
 Jest to dodatkowy system bezpieczeństwa do użytku wewnętrznego wprowadzony w przypadku datastore, który ma być stosowany tylko w ostateczności, aby zapobiec utracie danych.
 
-Zalecamy użycie pełnego rozwiązania do tworzenia kopii zapasowych, takiego jak usługa [Veeam Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external-link} lub inny system realizujący kopię zapasową wirtualnych maszyn.
+Zalecamy użycie pełnego rozwiązania do tworzenia kopii zapasowych, takiego jak usługa [Veeam Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service){.external-link} lub inny system realizujący kopię zapasową wirtualnych maszyn.
 
 ## Sprawdź również
 

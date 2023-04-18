@@ -1,8 +1,6 @@
 ---
 title: Gerir as encomendas da OVHcloud
-slug: gerir-as-encomendas-ovh
 excerpt: Saiba como gerir as suas encomendas da OVHcloud
-section: Gerir as encomendas, faturas e serviços
 updated: 2022-05-06
 ---
 
@@ -40,7 +38,7 @@ A nota de encomenda é criada quando efetua a encomenda. Indica os produtos enco
 |---|---|
 |1|Número, data de criação e data de expiração da nota de encomenda. Se o prazo expirou, deverá efetuar novamente a encomenda.|
 |2|As suas informações de faturação. Deve estar identificado para apresentar e pagar a sua nota de encomenda.|
-|3|Métodos de pagamento registados na sua conta de cliente. Para mais informações, consulte o guia [Gerir os meus métodos de pagamento](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/).|
+|3|Métodos de pagamento registados na sua conta de cliente. Para mais informações, consulte o guia [Gerir os meus métodos de pagamento](/pages/account/billing/manage-payment-methods).|
 |4|Métodos de pagamento disponíveis. Apenas serão sugeridos os métodos de pagamento autorizados no país de origem da conta ou os relacionados com o tipo de conta registada.|
 
 Pode consultar a sua nota de encomenda a qualquer momento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), conforme explicado abaixo.
@@ -97,7 +95,7 @@ O artigo 12 das [Condições Gerais de Serviço](https://www.ovh.pt/suporte/docu
 > O direito de retração só diz respeito aos particulares e só se aplica às novas encomendas. Assim, não pode invocá-lo:
 >
 > - renovações;
-> - se a sua conta de cliente OVHcloud é de [outro tipo que não Particer](https://docs.ovh.com/pt/customer/saber_tudo_sobre_o_identificador_de_cliente/#modificar-o-tipo-de-conta).
+> - se a sua conta de cliente OVHcloud é de [outro tipo que não Particer](/pages/account/customer/all_about_username#modificar-o-tipo-de-conta).
 >
 > Além disso, o direito de retratação não se aplica às encomendas não pagas, uma vez que estas são automaticamente anuladas quando a nota de encomenda expira.
 >

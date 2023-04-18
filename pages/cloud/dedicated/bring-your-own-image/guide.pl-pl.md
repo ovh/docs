@@ -1,8 +1,6 @@
 ---
 title: Korzystanie z funkcji Bring Your Own Image
 excerpt: Dowiedz się, jak tworzyć obrazy za pomocą Bring Your Own Image
-slug: bringyourownimage
-section: Poziom zaawansowany
 updated: 2022-11-25
 ---
 
@@ -23,7 +21,7 @@ Oprócz wymagań i ograniczeń wymienionych poniżej, należy upewnić się, że
 - Posiadanie [serwera dedykowanego OVHcloud](https://www.ovhcloud.com/pl/bare-metal/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części ["Wdrażanie w Panelu klienta"](#viacontrolpanel) niniejszego przewodnika.
 - Dostęp do [API OVHcloud](https://api.ovh.com/){.external} w części ["Wdrażanie przez API"](#viaapi) niniejszego przewodnika.
-- Wygenerowanie [credentials do korzystania z APIv6](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/) w części ["Wdrażanie przez API"](#viaapi) tego przewodnika.
+- Wygenerowanie [credentials do korzystania z APIv6](/pages/account/api/first-steps) w części ["Wdrażanie przez API"](#viaapi) tego przewodnika.
 - Rozmiar obrazu musi być mniejszy niż ilość pamięci RAM serwera minus 3GiB.
 
 > [!warning]
@@ -110,7 +108,7 @@ Po uzupełnieniu pól uruchom wdrożenie, klikając `Execute`{.action}.
 
 ### Sprawdź wdrażanie
 
-Możesz śledzić wdrażanie obrazu za pomocą następującego wywołania API lub za pomocą KVM / [IPMI](../uzywanie-ipmi-serwery-dedykowane/).
+Możesz śledzić wdrażanie obrazu za pomocą następującego wywołania API lub za pomocą KVM / [IPMI](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 > [!api]
 >

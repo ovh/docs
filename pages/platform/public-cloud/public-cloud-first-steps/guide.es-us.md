@@ -1,9 +1,6 @@
 ---
 title: 'Crear y conectarse a una instancia de Public Cloud'
-slug: public-cloud-primeros-pasos
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
-section: 'Primeros pasos'
-order: 04
 updated: 2023-01-26
 ---
 
@@ -142,7 +139,7 @@ Una vez creadas las claves SSH por cualquiera de los métodos anteriormente desc
 
 > [!primary]
 >
-Guardar sus claves SSH le permitirá crear sus instancias más rápidamente. Para modificar los pares de claves y añadir usuarios posteriormente, consulte nuestra guía [Configurar llaves SSH adicionales](../configurar_llaves_ssh_adicionales/).
+Guardar sus claves SSH le permitirá crear sus instancias más rápidamente. Para modificar los pares de claves y añadir usuarios posteriormente, consulte nuestra guía [Configurar llaves SSH adicionales](/pages/platform/public-cloud/configuring_additional_ssh_keys).
 >
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Haga clic en `SSH Keys`{.action}, en la sección «Project Management» del menú de la izquierda.
@@ -241,12 +238,12 @@ Se creará automáticamente un usuario con permisos superiores en la instancia. 
 
 > [!primary]
 >
-Si tiene problemas con la conexión a través de sus claves SSH, consulte nuestra guía [Modificar su llave SSH en caso de pérdida](../modificar_su_llave_ssh_en_caso_de_perdida/).
+Si tiene problemas con la conexión a través de sus claves SSH, consulte nuestra guía [Modificar su llave SSH en caso de pérdida](/pages/platform/public-cloud/replacing_lost_ssh_key).
 >
 
 > [!primary]
 >
-Si ha creado una instancia sin llave SSH, a través de la API OVHcloud o la interfaz Openstack Horizon, solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](https://docs.ovh.com/us/es/public-cloud/poner_una_instancia_en_modo_de_rescate/) siguiendo las instrucciones descritas en [esta sección de la guía adecuada](../modificar_su_llave_ssh_en_caso_de_perdida/#procedimiento).
+Si ha creado una instancia sin llave SSH, a través de la API OVHcloud o la interfaz Openstack Horizon, solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta sección de la guía adecuada](/pages/platform/public-cloud/replacing_lost_ssh_key#procedimiento).
 >
 
 #### Conexión a una instancia Linux en Linux o Mac
@@ -352,12 +349,12 @@ Si aparece un mensaje de certificado, acéptelo. A continuación, introduzca el 
 
 ## Más información
 
-[Guardar una copia de seguridad de una instancia](../guardar_copia_de_seguridad_de_una_instancia/)
+[Guardar una copia de seguridad de una instancia](/pages/platform/public-cloud/save_an_instance)
 
-[Aumentar el límite de Public Cloud](../increase-public-cloud-quota/)
+[Aumentar el límite de Public Cloud](/pages/platform/public-cloud/increasing_public_cloud_quota)
 
-[Cambiar de facturación por horas a mensual](../cambiar-modalidad-facturacion-public-cloud/)
+[Cambiar de facturación por horas a mensual](/pages/platform/public-cloud/changing_hourly_monthly_billing)
 
-[Configurar llaves SSH adicionales](../configurar_llaves_ssh_adicionales/)
+[Configurar llaves SSH adicionales](/pages/platform/public-cloud/configuring_additional_ssh_keys)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

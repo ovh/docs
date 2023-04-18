@@ -1,11 +1,8 @@
 ---
 title: Jaki format dysku wybrać
-slug: jaki-format-dysku-wybrac
 routes:
-    canonical: 'https://docs.ovh.com/pl/private-cloud/jaki-format-dysku-wybrac/'
+    canonical: '/pages/cloud/private-cloud/quel_format_de_disque_choisir'
 excerpt: Poznaj różne rodzaje formatów dysku
-section: Zarządzanie wirtualnymi maszynami
-order: 04
 updated: 2020-11-18
 ---
 

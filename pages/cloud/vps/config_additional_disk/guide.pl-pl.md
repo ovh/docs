@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguracja dodatkowego dysku'
 excerpt: "Dowiedz się, jak dodać i skonfigurować dodatkową przestrzeń dyskową na serwerze VPS"
-slug: config-additional-disk-vps
-section: 'Opcje kopii zapasowych'
-order: 3
 updated: 2023-02-15
 ---
 

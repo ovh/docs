@@ -1,8 +1,6 @@
 ---
 title: Overview of OVH Data Collector
 excerpt: Let's get an insight of what Data Collector is.
-section: Getting started
-order: 1
 updated: 2018-10-09
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: "Redirigir un dominio gestionado por OVHcloud"
-slug: redireccion-dominio
 excerpt: "Distintos tipos de redirecciones y cómo crear una redirección para un dominio gestionado por OVHcloud"
-section: General
-order: 01
 updated: 2022-10-06
 ---
 
@@ -47,7 +44,7 @@ Existen diversas formas de realizar estas acciones:
 > Esté atento a las operaciones que vaya a realizar o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/) en el posicionamiento, si es necesario.
 >
 > Atención: una redirección creada desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) no permite redirigir una URL en `https://` a otro dominio o URL. 
-> Para crear este tipo de redirección, debe pasar obligatoriamente por [una reescritura de URL](https://docs.ovh.com/es/hosting/web_hosting_htaccess_reescritura_de_url_con_mod_rewrite/) a través de un fichero ".htaccess", por ejemplo.
+> Para crear este tipo de redirección, debe pasar obligatoriamente por [una reescritura de URL](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite) a través de un fichero ".htaccess", por ejemplo.
 >
 
 ### Redirigir un dominio desde el área de cliente
@@ -65,7 +62,7 @@ Hay tres opciones de redirección disponibles en el [área de cliente de OVHclou
 > La pestaña `Redirección`{.action} presenta una cuarta opción que permite hacer que su dominio apunte rápidamente a los registros DNS A, AAAA y CNAME.<br>
 > Debido a que no se trata de una "redirección", esta opción no se explicará en esta guía.
 >
-> Para más información sobre los registros DNS, consulte nuestra documentación sobre los [registros DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/).
+> Para más información sobre los registros DNS, consulte nuestra documentación sobre los [registros DNS](/pages/web/domains/dns_zone_edit).
 >
 
 A continuación se describen los tres tipos de redirecciones, que se explican paso a paso.
@@ -389,13 +386,13 @@ Esta variable se puede utilizar cuando mueve temporalmente archivos a otro sitio
 
 ## Más información <a name="go-further"></a>
 
-[Bloquear el acceso a mi sitio web para algunas direcciones IP a través de un archivo ".htaccess"](https://docs.ovh.com/es/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+[Bloquear el acceso a mi sitio web para algunas direcciones IP a través de un archivo ".htaccess"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
-[Proteger el panel de administración de su sitio web a través de ".htaccess"](https://docs.ovh.com/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
+[Proteger el panel de administración de su sitio web a través de ".htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password).
 
-[Reescribir las URLs utilizando el "mod_rewrite"](https://docs.ovh.com/es/hosting/web_hosting_htaccess_reescritura_de_url_con_mod_rewrite/).
+[Reescribir las URLs utilizando el "mod_rewrite"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
-[Cómo editar mi zona DNS ?](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/)
+[Cómo editar mi zona DNS ?](/pages/web/domains/dns_zone_edit)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
 

@@ -1,8 +1,6 @@
 ---
 title: Determinare se la funzionalità dei MAC virtuali è supportata su un server dedicato
-slug: network-support-virtual-mac
 excerpt: "Scopri come determinare se la funzionalità dei MAC virtuali è supportata su un server dedicato tramite l'API OVHcloud"
-section: Rete e IP
 updated: 2021-12-09
 ---
 
@@ -26,7 +24,7 @@ Il supporto di questa funzionalità è un prerequisito per tutte le azioni relat
 - Essere connesso all'[API OVHcloud](https://api.ovh.com/){.external}.
 
 > [!primary]
-> Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida Iniziare a utilizzare le [API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
+> Se non conosci l'utilizzo dell'API OVHcloud, consulta la nostra guida Iniziare a utilizzare le [API OVHcloud](/pages/account/api/first-steps).
 
 ## Procedura
 
@@ -57,6 +55,6 @@ Una lista con un record "vmac / supported" che sarà "true" o "false" (valore bo
 
 ## Per saperne di più
 
-[Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/)
+[Iniziare a utilizzare le API OVHcloud](/pages/account/api/first-steps)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

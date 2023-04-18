@@ -1,9 +1,6 @@
 ---
 title: Utilisation de Putty sur Windows
-slug: utilisation-putty-windows
 excerpt: Vous trouverez dans ce guide differentes informations et aides concernant l’installation de Putty sur Windows.
-section: FTP et SSH
-order: 08
 updated: 2020-05-05
 ---
 
@@ -31,7 +28,7 @@ Vous aurez également besoin de vos identifiants FTP
 - Login FTP .
 - Mot de passe FTP .
 
-Vous pouvez retrouver ces informations de connexion sur votre espace client, partie FTP, ou en suivant [ce guide](../connexion-espace-stockage-ftp-hebergement-web/).
+Vous pouvez retrouver ces informations de connexion sur votre espace client, partie FTP, ou en suivant [ce guide](/pages/web/hosting/ftp_connection).
 
 
 ### Lancement de Putty
@@ -55,7 +52,7 @@ Il est normal à cette étape si vous ne voyez pas les caractères que vous tape
 
 
 ### Utilisation du SSH.
-Pour l'utilisation du SSH il faut maintenant vous diriger vers [ce guide](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.ref}.
+Pour l'utilisation du SSH il faut maintenant vous diriger vers [ce guide](/pages/web/hosting/ssh_on_webhosting){.ref}.
 
 ## Aller plus loin
 

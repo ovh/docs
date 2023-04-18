@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Dynamischen Inhalt auf einer statischen Webseite hinzufügen, die mit Cecil erstellt wurde"
-slug: static-site-generator-cecil-use-api
 excerpt: "Erfahren Sie hier, wie Sie externe APIs von Ihrer statischen Webseite aus aufrufen"
-section: Tutorials
-order: 031
 updated: 2023-01-16
 ---
 
@@ -29,7 +26,7 @@ In dieser Anleitung erfahren Sie, wie Sie das Web-Entwicklungstool [Cecil](https
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit SSH-Zugang. Über diesen Zugriff können Sie eine oder mehrere Alternativlösungen online installieren, ergänzend zu den Webhosting-Standarddiensten.
 - Sie sind mit der Befehlszeileneingabe vertraut.
-- Sie haben die Anwendung **Cecil** auf Ihrem Hosting installiert und konfiguriert (gemäß unseres Tutorials zur [Installation und Konfiguration von Cecil](https://docs.ovh.com/de/hosting/install-configure-cecil/)).
+- Sie haben die Anwendung **Cecil** auf Ihrem Hosting installiert und konfiguriert (gemäß unseres Tutorials zur [Installation und Konfiguration von Cecil](/pages/web/hosting/static_website_installation_cecil)).
 
 ## In der praktischen Anwendung
 
@@ -45,7 +42,7 @@ Die Schritte sind dabei wie folgt:
 
 ### Eine neue Seite erstellen
 
-Loggen Sie sich zunächst via SSH auf Ihrem Webhosting ein. Folgen Sie der Anleitung "[Installation und Konfiguration von Cecil](https://docs.ovh.com/de/hosting/install-configure-cecil/)", um Ihre **Cecil** Anwendung in einem dedizierten Verzeichnis zu installieren.
+Loggen Sie sich zunächst via SSH auf Ihrem Webhosting ein. Folgen Sie der Anleitung "[Installation und Konfiguration von Cecil](/pages/web/hosting/static_website_installation_cecil)", um Ihre **Cecil** Anwendung in einem dedizierten Verzeichnis zu installieren.
 
 Erstellen Sie ein neues Verzeichnis wechseln Sie zu diesem:
 

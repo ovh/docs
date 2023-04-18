@@ -1,9 +1,6 @@
 ---
 title: 'Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren'
-slug: datenbank-importieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank wiederherstellen und importieren'
-section: Konfiguration
-order: 05
 updated: 2023-02-15
 ---
 
@@ -86,7 +83,7 @@ In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglich
 
 #### MySQL oder MariaDB Datenbank über phpMyAdmin importieren
 
-Um Ihre Datenbank direkt über phpMyAdmin zu importieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](https://docs.ovh.com/de/clouddb/datenbank-verbindung-auf-bdd/#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
+Um Ihre Datenbank direkt über phpMyAdmin zu importieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](/pages/web/clouddb/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
 
 Wenn Sie in phpMyAdmin eingeloggt sind, wählen Sie die Datenbank aus, indem Sie auf ihren Namen klicken.
 
@@ -105,7 +102,7 @@ Lassen Sie die Standardoptionen aktiviert und klicken Sie auf `Ausführen`{.acti
 
 #### MySQL oder MariaDB Datenbank über die Kommandozeile importieren
 
-Diese Aktion ist nur über [SSH](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
+Diese Aktion ist nur über [SSH](/pages/web/hosting/ssh_on_webhosting) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 
 ```bash
 cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --password=passwort datenbankname
@@ -123,7 +120,7 @@ cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --pa
 
 > [!warning]
 >
-> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
+> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 
@@ -133,7 +130,7 @@ In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglich
 
 #### PostgreSQL Datenbank über die Kommandozeile importieren
 
-Diese Aktion ist nur über [SSH](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich (ab Version "stable").
+Diese Aktion ist nur über [SSH](/pages/web/hosting/ssh_on_webhosting) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich (ab Version "stable").
 
 ```bash
 psql --host=server --port=port --user=benutzername --password=passwort datenbankname < datenbankname.sql
@@ -151,7 +148,7 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 
 > [!warning]
 >
-> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/de/hosting/hosting-htaccess-authentifizierung/).
+> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](/pages/web/hosting/htaccess_protect_directory_by_password).
 > - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 

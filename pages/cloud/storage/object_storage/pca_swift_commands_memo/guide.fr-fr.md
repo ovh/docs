@@ -1,9 +1,6 @@
 ---
 title: Cloud Archive Swift - Mémo de commandes Swift
-slug: pca/swift-commands-memo
 excerpt: Retrouvez ici les principales commandes swift pour gérer vos conteneurs d'objets Public Cloud Archive
-section: Spécificités de la classe de stockage d'archive OpenStack Swift
-order: 070
 updated: 2021-09-21
 ---
 
@@ -19,8 +16,8 @@ Le swiftclient OpenStack vous permet d’interagir avec vos conteneurs et objets
 
 ## Prérequis
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/) en installant python-swiftclient.
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) en installant python-swiftclient.
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## En pratique
 
@@ -193,7 +190,7 @@ swift copy -d /<conteneur_de_destination> <conteneur> <objet>
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo/) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes curl](/pages/cloud/storage/object_storage/pca_curl_commands_memo) pour l'upload du manifest.
 >
 
 Sur un LargeObject, la commande `swift copy` renvoie une **erreur 413** :
@@ -310,7 +307,7 @@ sys	0m0,091s
 > [!primary]
 >
 > Dans cet exemple, le LargeObject à été uploadé en mode SLO.
-> Consultez la documentation [Mémo de commandes curl](https://docs.ovh.com/fr/storage/pca/curl-commands-memo/) pour l'upload du manifest.
+> Consultez la documentation [Mémo de commandes curl](/pages/cloud/storage/object_storage/pca_curl_commands_memo) pour l'upload du manifest.
 >
 
 ```bash

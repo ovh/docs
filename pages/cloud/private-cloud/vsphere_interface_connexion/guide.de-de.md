@@ -1,9 +1,6 @@
 ---
 title: Verbindung mit dem vSphere Interface
 excerpt: Erfahren Sie hier, wie Sie sich mit vSphere verbinden können
-slug: den_vsphere_client_installieren
-section: Erste Schritte
-order: 2
 updated: 2022-06-24
 ---
 
@@ -20,7 +17,7 @@ updated: 2022-06-24
 ## Voraussetzungen
 
 - Sie sind Administrator-Kontakt für Ihre [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
-- Sie haben IP-Adressen im Bereich `Sicherheit`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) hinzugefügt. Weitere Informationen finden Sie in unserer Anleitung [IP-Autorisierung für vCenter](https://docs.ovh.com/de/private-cloud/verbindung-von-ip-zum-vcenter-erlauben/).
+- Sie haben IP-Adressen im Bereich `Sicherheit`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) hinzugefügt. Weitere Informationen finden Sie in unserer Anleitung [IP-Autorisierung für vCenter](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter).
 
 ## In der praktischen Anwendung
 

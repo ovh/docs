@@ -1,10 +1,7 @@
 ---
 title: 'Envoi ou réception des e-mails impossible'
-slug: utilisation-avancee-des-e-mails
 legacy_guide_number: 2117
 excerpt: "Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou la réception des e-mails chez OVHcloud"
-section: 'Diagnostic'
-order: 02
 updated: 2022-07-21
 ---
 
@@ -18,7 +15,7 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 
 > [!primary]
 >
-> Si vous avez d'autres questions qui ne sont pas traitées par ce guide, n'hésitez pas à consulter notre [FAQ E-mail](https://docs.ovh.com/fr/emails/faq-emails/).
+> Si vous avez d'autres questions qui ne sont pas traitées par ce guide, n'hésitez pas à consulter notre [FAQ E-mail](/pages/web/emails/faq-emails).
 
 ## Prérequis
 
@@ -31,7 +28,7 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 
 Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail active. Si votre offre e-mail est associée à une offre d'hébergement, vérifiez que celle-ci n'est pas expirée. Vous pouvez vérifier cette information directement dans l'espace client. De la même façon, votre nom de domaine doit lui aussi être actif.
 
-Commencez par vérifier que vous êtes à jour dans les [paiements](https://docs.ovh.com/fr/billing/gerer-factures-ovh/#pay-bills) et [renouvellements](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#renewal-management) de vos services.
+Commencez par vérifier que vous êtes à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de vos services.
 
 Voici comment vérifier que vos services sont bien opérationnels :
 
@@ -65,11 +62,11 @@ Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifie
 
 Voici comment modifier le mot de passe d'une adresse e-mail :
 
-- Pour une offre **MXplan**, consultez notre guide [Modifier le mot de passe d’une adresse e-mail MX Plan](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/)
+- Pour une offre **MXplan**, consultez notre guide [Modifier le mot de passe d’une adresse e-mail MX Plan](/pages/web/emails/email_change_password)
 
 - Pour une offre **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action}, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
 
-- Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configurer-2fa-exchange/).
+- Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
 ### Y a-t-il un incident ou une maintenance en cours sur mon service ?
 
@@ -81,7 +78,7 @@ Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur
 
 ### Le pointage du nom de domaine vers mon service e-mail est-il correct ?
 
-Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail OVHcloud. Pour cela, des enregistrements de type MX doivent être configurés dans votre zone DNS. <br>Référez-vous à notre guide [Ajouter un champ MX à la configuration de son nom de domaine](https://docs.ovh.com/fr/domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/).
+Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail OVHcloud. Pour cela, des enregistrements de type MX doivent être configurés dans votre zone DNS. <br>Référez-vous à notre guide [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
@@ -120,7 +117,7 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 |502|Commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
 |503|Le serveur a rencontré une mauvaise séquence de commandes|Cela est généralement dû un problème d'authentification, assurez-vous d'être bien authentifié sur le serveur SMTP au niveau de la configuration de votre logiciel de messagerie|
 |504|Paramètre de commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
-|535|Echec lors de l'authentification|Les informations utilisateur/mot de passe sont erronées ou l'envoi est potentiellement bloqué sur votre adresse e-mail. Vérifiez l'état de votre adresse e-mail depuis votre espace client OVHcloud. Un changement de mot de passe peut débloquer l'envoi si le compte à été bloqué pour spam. Consultez notre guide [Que faire en cas de compte bloqué pour spam ?](https://docs.ovh.com/fr/microsoft-collaborative-solutions/bloque-pour-spam/) pour plus d'informations.|
+|535|Echec lors de l'authentification|Les informations utilisateur/mot de passe sont erronées ou l'envoi est potentiellement bloqué sur votre adresse e-mail. Vérifiez l'état de votre adresse e-mail depuis votre espace client OVHcloud. Un changement de mot de passe peut débloquer l'envoi si le compte à été bloqué pour spam. Consultez notre guide [Que faire en cas de compte bloqué pour spam ?](/pages/web/microsoft-collaborative-solutions/locked_for_spam) pour plus d'informations.|
 |550|Action demandée non effectuée : boîte aux lettres indisponible|Le serveur de messagerie de destination n'a pas pu vérifier l'adresse e-mail utilisée. Ceci est le plus souvent causé par une adresse e-mail de destination invalide, mais peut également signifier que le serveur de messagerie de destination a des problèmes de pare-feu ou de connectivité. Vérifier l'adresse e-mail du destinataire, et/ou réessayez à nouveau|
 |551|Utilisateur non local|Ceci est en général utilisé comme une stratégie de prévention contre le spam. Il est indiqué que le relais de courrier n'est pas autorisé pour une raison quelconque à relayer votre message vers un autre serveur que le vôtre. Veuillez contacter votre fournisseur de service|
 |552|Action de messagerie demandée interrompue : espace de stockage dépassé|L'utilisateur que vous avez essayé de contacter n'a plus d'espace disponible pour recevoir des messages. Malheureusement, la seule solution est de contacter le destinataire via une autre méthode|
@@ -130,6 +127,6 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 
 ## Aller plus loin
 
-[FAQ E-mail](https://docs.ovh.com/fr/emails/faq-emails/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

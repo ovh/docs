@@ -1,8 +1,6 @@
 ---
 title: "DNS Server einer Public Cloud Instanz ändern"
-slug: die-dns-server-einer-instanz-aendern
 excerpt: 'Erfahren Sie hier, wie Sie den vorkonfigurierten DNS-Server einer Public Cloud Instanz anpassen'
-section: 'Netzwerk und IP'
 legacy_guide_number: 1985
 updated: 2021-10-29
 ---
@@ -34,9 +32,9 @@ Sie können einen sekundären Server hinzufügen oder diese Konfiguration durch 
 
 ## In der praktischen Anwendung
 
-Verbinden Sie sich über SSH mit Ihrer Instanz. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance).
+Verbinden Sie sich über SSH mit Ihrer Instanz. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
 
-Wechseln Sie zum Root-Benutzer. Falls nötig lesen Sie unsere [Anleitung zu diesem Thema](https://docs.ovh.com/de/public-cloud/root-rechte_erlangen_und_passwort_festlegen/).
+Wechseln Sie zum Root-Benutzer. Falls nötig lesen Sie unsere [Anleitung zu diesem Thema](/pages/platform/public-cloud/become_root_and_change_password).
 
 ### Debian / Ubuntu
 
@@ -137,7 +135,7 @@ DNS configuration:
 
 ### Windows
 
-Loggen Sie sich über eine Remote-Verbindung (RDP) oder mit der VNC-Konsole auf der Instanz ein. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance).
+Loggen Sie sich über eine Remote-Verbindung (RDP) oder mit der VNC-Konsole auf der Instanz ein. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
 
 Öffnen Sie die `Netzwerkeinstellungen`{.action}.
 
@@ -159,10 +157,10 @@ In PowerShell kann mit dem Befehl `nslookup` überprüft werden, welche DNS-Serv
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Eine erste Public Cloud Instanz erstellen und sich damit verbinden](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/)
+[Eine erste Public Cloud Instanz erstellen und sich damit verbinden](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Root-Rechte erlangen und Passwort festlegen](https://docs.ovh.com/de/public-cloud/root-rechte_erlangen_und_passwort_festlegen/)
+[Root-Rechte erlangen und Passwort festlegen](/pages/platform/public-cloud/become_root_and_change_password)
 
-[Hostname einer Public Cloud Instanz ändern](https://docs.ovh.com/de/public-cloud/hostname-einer-instanz-aendern/)
+[Hostname einer Public Cloud Instanz ändern](/pages/platform/public-cloud/changing_the_hostname_of_an_instance)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

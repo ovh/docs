@@ -1,10 +1,7 @@
 ---
 title: "Récupérer l'en-tête d'un e-mail"
-slug: recuperation-des-entetes-e-mails
 legacy_guide_number: 1365
 excerpt: 'Découvrez comment récupérer un en-tête e-mail sur votre client de messagerie'
-section: Diagnostic
-order: 03
 updated: 2021-11-19
 ---
 
@@ -90,7 +87,7 @@ Subject: Hello my friend
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
-- Le champ `Received-SPF` affiche le résultat du contrôle [SPF](https://docs.ovh.com/fr/domains/le-champ-spf/) effectué sur le nom de domaine de l'expéditeur. L'argument `client-ip` permet notamment de relever l'adresse IP du serveur qui a servi à expédier l'e-mail. 
+- Le champ `Received-SPF` affiche le résultat du contrôle [SPF](/pages/web/domains/dns_zone_spf) effectué sur le nom de domaine de l'expéditeur. L'argument `client-ip` permet notamment de relever l'adresse IP du serveur qui a servi à expédier l'e-mail. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 </code></pre>
@@ -192,6 +189,6 @@ Pour afficher l'en-tête dans l'interface webmail <Outlook.com>, consultez la ru
 
 ## Aller plus loin
 
-[FAQ E-mail](https://docs.ovh.com/fr/emails/faq-emails/)
+[FAQ E-mail](/pages/web/emails/faq-emails)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

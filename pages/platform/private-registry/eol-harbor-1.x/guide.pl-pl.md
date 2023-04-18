@@ -1,11 +1,8 @@
 ---
 title: "End Of Life (EOL) Harbor 1.x - How to replicate and migrate your data to Harbor 2.x"
 excerpt: "Find out how to replicate an old private registry (in Harbor 1.x) to a recent OVHcloud Managed Private Registry (in Harbor 2.x)"
-slug: eol-harbor-v1x
-section: 'Getting started'
-order: 06
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-registry/eol-harbor-v1x/'
+    canonical: '/pages/platform/private-registry/eol-harbor-1.x'
 updated: 2023-03-10
 ---
 
@@ -43,11 +40,11 @@ The Managed Private Registries based on Harbor 1.x will terminate on August 1st 
 
 ## Instructions
 
-First, follow the guide [Creating a private registry](https://docs.ovh.com/pl/private-registry/creating-a-private-registry/) to create a new private registry named `my-new-registry` for example, with the latest version of Harbor.
+First, follow the guide [Creating a private registry](/pages/platform/private-registry/creating-a-private-registry) to create a new private registry named `my-new-registry` for example, with the latest version of Harbor.
 
 ![My new private registry](images/my-new-registry-02.png)
 
-Follow the guide [Connecting to the UI](https://docs.ovh.com/gb/en/private-registry/connecting-to-the-ui/) to connect to your new private registry. 
+Follow the guide [Connecting to the UI](/pages/platform/private-registry/connecting-to-the-ui) to connect to your new private registry. 
 
 Now you will configure a replication between your old private registry (in Harbor 1.x) and the new one.
 

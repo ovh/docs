@@ -1,12 +1,9 @@
 ---
 title: Agregar una nueva puerta de enlace de nivel 1 en NSX (EN)
-slug: nsx-add-new-tier1-gateway
 excerpt: Learn how to add an east-west (Tier-1 Gateway) gateway to your NSX configuration
-section: NSX
-order: 10
 updated: 2023-02-27
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-add-new-tier1-gateway/'
+    canonical: '/pages/cloud/private-cloud/nsx-10-add-new-tier1-gateway'
 ---
 
 **Last updated 27th February 2023**
@@ -33,7 +30,7 @@ OVHcloud provides you with NSX with two gateways, a north-south gateway (ovh-T0-
 > Through your NSX interface, you can create north-south gateways. 
 > We strongly advise you not to do it because some options are not available and you will not be able to make such a gateway work correctly.
 
-For more information on NSX at OVHcloud, please refer to our [Getting started with NSX](https://docs.ovh.com/es/private-cloud/nsx-first-steps/) guide.
+For more information on NSX at OVHcloud, please refer to our [Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps) guide.
 
 ## Instructions
 
@@ -104,7 +101,7 @@ Your new segment is created and connected to your new **new-T1-gw** gateway.
 
 The segment created is of type Overlay but it is possible to add a segment of type VLAN and connect it to your new gateway.
 
-Use our guide on [segment management in NSX](https://docs.ovh.com/es/private-cloud/nsx-segment-management/) to add a new virtual machine to your new segment.
+Use our guide on [segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management) to add a new virtual machine to your new segment.
 
 Then click `Network Topology`{.action}.
 
@@ -112,9 +109,9 @@ Then click `Network Topology`{.action}.
 
 ## Go further <a name="gofurther"></a>
 
-[Getting started with NSX](https://docs.ovh.com/es/private-cloud/nsx-first-steps/)
+[Getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-[Segment management in NSX](https://docs.ovh.com/es/private-cloud/nsx-segment-management/)
+[Segment management in NSX](/pages/cloud/private-cloud/nsx-02-segment-management)
 
 [VMware documentation for adding a Tier-1 Gateway](https://docs.vmware.com/en/VMware-NSX-T-Data-Center/3.2/administration/GUID-EEBA627A-0860-477A-95A7-7645BA562D62.html)
 

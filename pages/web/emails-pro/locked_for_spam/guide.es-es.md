@@ -1,9 +1,6 @@
 ---
 title: '¿Qué hacer con una cuenta bloqueada debido a correo no deseado?'
-slug: blocked-for-spam
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
-section: 'Diagnóstico'
-order: 1
 updated: 2020-04-20
 ---
 
@@ -22,4 +19,4 @@ Si recibe un mensaje de correo electrónico indicándole que una de sus direccio
 
 ## Procedimiento
 
-Siga nuestra guía [Qué hacer en caso de cuenta bloqueada por spam?](https://docs.ovh.com/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/){.external} en la sección "Soluciones colaborativas de Microsoft".
+Siga nuestra guía [Qué hacer en caso de cuenta bloqueada por spam?](/pages/web/microsoft-collaborative-solutions/locked_for_spam){.external} en la sección "Soluciones colaborativas de Microsoft".

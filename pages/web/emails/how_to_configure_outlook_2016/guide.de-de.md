@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse mit Outlook für Windows'
-slug: konfiguration-outlook-2016
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Outlook für Windows einrichten'
-section: 'E-Mail Clients'
-order: 3
 updated: 2021-06-05
 ---
 
@@ -37,7 +34,7 @@ MX Plan Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingericht
 
 > [!primary]
 >
-> Sie verwenden Outlook 2016 für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Mac](https://docs.ovh.com/de/emails/konfiguration-outlook-2016-mac/){.external}.
+> Sie verwenden Outlook 2016 für Mac? Die zugehörige Dokumentation finden Sie hier: [Konfiguration Ihrer E-Mail-Adresse auf Outlook 2016 für Mac](/pages/web/emails/how_to_configure_outlook_2016-mac/){.external}.
 >
 
 ## In der praktischen Anwendung
@@ -71,11 +68,11 @@ Für eine **POP** Konfiguration verwenden Sie die folgenden Werte:
 
 Sobald Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie können ab sofort E-Mails versenden und empfangen.
 
-OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können: <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](../../microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/) heranziehen.
+OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser auf Ihre E-Mail-Adresse zugreifen können: <https://www.ovh.de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden. Bei Fragen zu dessen Verwendung können Sie unsere Anleitung zur [Outlook Web App](/pages/web/microsoft-collaborative-solutions/owa_user_guide) heranziehen.
 
 ### Backup Ihrer E-Mail-Adresse
 
-Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](../email-adressen-manuell-migrieren/#uber-windows-exportieren)".
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Lesen Sie hierzu den Abschnitt zu **Windows** in unserer Anleitung "[E-Mail-Adresse manuell migrieren](/pages/web/emails/manual_email_migration#uber-windows-exportieren)".
 
 
 ### Bestehende Einstellungen ändern
@@ -95,8 +92,8 @@ Das Fenster ist in zwei Bereiche unterteilt, für **eingehende** und **ausgehend
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Konfiguration von E-Mail Pro auf Outlook 2016 für Windows](../../emails-pro/konfiguration-outlook-2016/)
+[Konfiguration von E-Mail Pro auf Outlook 2016 für Windows](/pages/web/emails-pro/how_to_configure_outlook_2016)
 
-[Konfiguration von Exchange auf Outlook 2016 für Windows](../../microsoft-collaborative-solutions/exchange-automatische-konfiguration-auf-outlook-2016/)
+[Konfiguration von Exchange auf Outlook 2016 für Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

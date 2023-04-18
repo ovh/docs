@@ -1,9 +1,6 @@
 ---
 title: Creating a cluster
-slug: creating-a-cluster
 excerpt: ''
-section: Getting started
-order: 0
 updated: 2021-09-29
 ---
 
@@ -36,19 +33,19 @@ Choose the minor version of Kubernetes.
 
 > [!primary]
 > We recommend to always use the last stable version. 
-> Please read our [End of life / end of support](../eos-eol-policies/) page to understand our version policy.
+> Please read our [End of life / end of support](/pages/platform/kubernetes-k8s/eos-eol-policies) page to understand our version policy.
 >
 
 ![Choose the minor version of Kubernetes](images/creating-a-cluster3.png){.thumbnail}
 
-You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please read our guide [Using the vRack](../using_vrack/).
+You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please read our guide [Using the vRack](/pages/platform/kubernetes-k8s/using-vrack).
 
 ![Choose a private network for this cluster](images/creating-a-cluster4.png){.thumbnail}
 
 Now you can configure the default node pool. A node pool is a group of nodes sharing the same configuration, allowing you a lot of flexibility in your cluster management. 
 
 > [!primary]
-> You can read the [Managing node pools](../managing-nodes/) guide for more information on node pools.
+> You can read the [Managing node pools](/pages/platform/kubernetes-k8s/managing-nodes) guide for more information on node pools.
 >
 
 ![Node pool](images/creating-a-cluster5.png){.thumbnail}
@@ -78,6 +75,6 @@ The cluster creation is now in progress. It should be available within a few min
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en-ca/public-cloud/kubernetes/).
 
-To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/) .
+To deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) .
 
 Join our community of users on <https://community.ovh.com/en/>.

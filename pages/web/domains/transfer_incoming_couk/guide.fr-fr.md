@@ -1,9 +1,6 @@
 ---
 title: 'Transférer un nom de domaine .uk vers OVHcloud'
-slug: transferer-domaine-couk
 excerpt: 'Vous trouverez dans ce guide différentes informations concernant le transfert d’un nom de domaine .uk ou assimilé vers OVHcloud'
-section: Transfert
-order: 04
 updated: 2022-10-19
 ---
 
@@ -19,9 +16,9 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 >
 > Si le nom de domaine en cours de modification est actuellement enregistré chez OVHcloud, le transfert entrant de domaine n'est pas la procédure appropriée. Cette procédure s’applique uniquement au changement de nom de domaine enregistré (OVHcloud).
 >
-> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
+> Pour transférer la gestion de votre nom de domaine vers un autre compte client OVHcloud, la méthode adéquate est un **changement de contacts**. La procédure est décrite dans [ce guide](/pages/account/customer/managing_contacts).
 >
-> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](https://docs.ovh.com/fr/domains/changement-proprietaire-domaine/).
+> Si vous devez également changer le **propriétaire** du nom de domaine, vous devez le faire **avant** de changer les contacts du nom de domaine. Pour cela, suivez les instructions décrites dans notre documentation sur le [changement de propriétaire des noms de domaine](/pages/web/domains/trade_domain).
 >
 
 > [!warning]
@@ -97,6 +94,6 @@ Le transfert étant gratuit, la date d'expiration du domaine suite à son transf
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Transférer son nom de domaine vers OVHcloud](https://docs.ovh.com/fr/domains/transferer-mon-domaine-generique/)
+[Transférer son nom de domaine vers OVHcloud](/pages/web/domains/transfer_incoming_generic_domain)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -1,9 +1,7 @@
 ---
 title: Récupérer l’état de santé des serveurs
-slug: retrieve-servers-state
 universe: cloud
 excerpt: Recuperer l’etat des serveurs
-section: Visualiser
 updated: 2022-03-29
 ---
 

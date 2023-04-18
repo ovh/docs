@@ -1,9 +1,6 @@
 ---
 title: "SAP HANA on Bare Metal et serveurs applicatifs SAP sur VMware on OVHcloud"
-slug: sap-hana-dedicated-server-sap-as-hpc
 excerpt: "Cette page vous présente une architecture hybride utilisant un serveur dédié HGR-SAP et la solution VMware on OVHcloud"
-section: "Concepts"
-order: 01
 updated: 2023-03-15
 ---
 
@@ -28,13 +25,13 @@ Ce concept vous permet de construire une architecture basée sur une base de don
 
 Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez vous référer à la [documentation OVHcloud Connect](https://www.ovhcloud.com/fr-ca/network/ovhcloud-connect/).
 
-Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX Edge. Pour connaître les étapes de configuration d'une passerelle VPN NSX Edge avec OVHcloud, veuillez vous référer à [notre documentation](https://docs.ovh.com/ca/fr/private-cloud/configurer-un-vpn-via-une-gateway-edge/).
+Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX Edge. Pour connaître les étapes de configuration d'une passerelle VPN NSX Edge avec OVHcloud, veuillez vous référer à [notre documentation](/pages/cloud/private-cloud/nsx_configurer_un_vpn_via_une_gateway_edge).
 
-Un prérequis pour mettre à jour vos serveurs et pour l'accès du support SAP est de configurer une Additional IP. Un sous-réseau d'adresses IP publiques vous sera attribué et une adresse IP publique de ce sous-réseau sera utilisée comme passerelle sur votre NSX Edge. Retrouvez plus d'informations dans la [documentation Additional IP](https://docs.ovh.com/ca/fr/publiccloud/network-services/buy-additional-ip/).
+Un prérequis pour mettre à jour vos serveurs et pour l'accès du support SAP est de configurer une Additional IP. Un sous-réseau d'adresses IP publiques vous sera attribué et une adresse IP publique de ce sous-réseau sera utilisée comme passerelle sur votre NSX Edge. Retrouvez plus d'informations dans la [documentation Additional IP](/pages/platform/network-services/additional-ip-buy).
 
 ### Base de données SAP HANA
 
-La base de données SAP HANA est hébergée sur un serveur dédié de la gamme serveur dédié SAP HANA on Bare Metal (références HGR-SAP-1/2/3). Pour découvrir comment déployer une base de données SAP HANA sur un serveur dédié OVHcloud, veuillez vous référer à [notre documentation](https://docs.ovh.com/ca/fr/sap/sap-installation-sap-hana-sles/).
+La base de données SAP HANA est hébergée sur un serveur dédié de la gamme serveur dédié SAP HANA on Bare Metal (références HGR-SAP-1/2/3). Pour découvrir comment déployer une base de données SAP HANA sur un serveur dédié OVHcloud, veuillez vous référer à [notre documentation](/pages/cloud/sap/install-sap-hana-sles).
 
 Pour garantir la restauration de la configuration de SAP HANA (fichiers INI), nous suggérons d'appliquer la valeur `true` pour le paramètre `include_configuration_backup`. Ce paramètre active la sauvegarde de tous les paramètres stockés dans les fichiers INI durant la sauvegarde des données de la base de données SAP HANA.
 
@@ -75,7 +72,7 @@ Une autre solution pour accélérer la restauration d'une machine virtuelle est 
 
 Veeam Enterprise Plus vous permet de sauvegarder et de restaurer des snapshots de vos machines virtuelles. Cela vous assure une restauration rapide en cas d'incident sur votre solution VMware on OVHcloud.
 
-Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, veuillez vous référer à la [documentation OVHcloud](https://docs.ovh.com/ca/fr/storage/backup/veeam/veeam-backup-replication/).
+Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, veuillez vous référer à la [documentation OVHcloud](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
 
 ### Longue durée et archivage (BETA)
 
@@ -120,7 +117,7 @@ Pour connaître les étapes de configuration de la réplication, veuillez vous r
 
 Afin de sécuriser votre infrastructure en cas d'incident majeur sur votre localisation OVHcloud principale, nous vous conseillons d'activer la fonctionnalité appelée Zerto pour votre solution VMware on OVHcloud, vous permettant de répliquer vos machines virtuelles sur un autre service VMware on OVHcloud hébergé sur une autre localisation OVHcloud. Avec cette fonctionnalité, vous sécurisez vos serveurs applicatifs SAP sur une autre localisation OVHcloud avec une réplication synchrone. Vous réduisez ainsi le temps de rétablissement du service et la perte de données maximale admissible si vous basculez sur votre localisation secondaire OVHcloud.
 
-Pour découvrir les étapes d'activation de cette fonctionnalité, veuillez vous référer à la [documentation OVHcloud](https://docs.ovh.com/ca/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/).
+Pour découvrir les étapes d'activation de cette fonctionnalité, veuillez vous référer à la [documentation OVHcloud](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service).
 
 > [!warning]
 > Si vous déclenchez une bascule sur votre localisation OVHcloud secondaire à travers Zerto, la base de données SAP HANA doit également basculer, afin d'assurer la performance entre vos serveurs applicatifs SAP et la base de données SAP HANA.
@@ -139,8 +136,8 @@ Pour garantir la continuité de la connexion avec le support SAP, nous recommand
 - [Ajoutez de la flexibilité à vos applications avec Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/)
 - [2161991 - VMware vSphere configuration guideline](https://launchpad.support.sap.com/#/notes/2161991)
 - [2015392 - VMware recommendations for latency-sensitive SAP applications](https://launchpad.support.sap.com/#/notes/2015392)
-- [Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud](https://docs.ovh.com/ca/fr/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)
-- [Installer Veeam Backup & Replication](https://docs.ovh.com/ca/fr/storage/backup/veeam/veeam-backup-replication/)
+- [Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)
+- [Installer Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication)
 - [Installer un SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

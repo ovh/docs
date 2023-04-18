@@ -1,9 +1,6 @@
 ---
 title: Using OpenSearch API to send your logs
-slug: ldp-index
-order: 9
 excerpt: Send your logs to the platform with the OpenSearch API.
-section: Features
 updated: 2022-06-13
 ---
 
@@ -12,7 +9,7 @@ updated: 2022-06-13
 
 ## Overview
 
-OpenSearch is the star component of our platform, making it possible to use [OpenSearch indexes](../index-as-a-service){.ref} to store your documents. The OpenSearch indexes are quite flexible, but they are not part of the log pipeline. If you want to also use the [Websocket live-tail](../ldp-tail){.ref}, or the [Alerting system](../alerting){.ref} or the [Cold Storage](../cold-storage){.ref} feature, and have automatic retention management, then you will need to use the log pipeline. Thanks to our OpenSearch log endpoint, it shall enable you to send logs using the HTTP OpenSearch API. Moreover, the endpoint supports also [OpenSearch Ingest](https://opensearch.org/docs/latest/opensearch/rest-api/ingest-apis/index/){.external}, meaning you can use advanced processing on your logs before they are sent in the pipeline. There is no additional cost for this feature, all you need is a [stream](../quick-start){.ref}.
+OpenSearch is the star component of our platform, making it possible to use [OpenSearch indexes](../index-as-a-service){.ref} to store your documents. The OpenSearch indexes are quite flexible, but they are not part of the log pipeline. If you want to also use the [Websocket live-tail](../ldp-tail){.ref}, or the [Alerting system](../alerting){.ref} or the [Cold Storage](../cold-storage){.ref} feature, and have automatic retention management, then you will need to use the log pipeline. Thanks to our OpenSearch log endpoint, it shall enable you to send logs using the HTTP OpenSearch API. Moreover, the endpoint supports also [OpenSearch Ingest](https://opensearch.org/docs/latest/opensearch/rest-api/ingest-apis/index/){.external}, meaning you can use advanced processing on your logs before they are sent in the pipeline. There is no additional cost for this feature, all you need is a [stream](/pages/platform/logs-data-platform/quick_start){.ref}.
 
 
 ## OpenSearch endpoint
@@ -24,7 +21,7 @@ The OpenSearch endpoint is a dedicated index where you can send a JSON document.
 $ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud"}'
 ```
 
-Replace the `<user>`, `<password>` and `<ldp-cluster>` with your Logs Data Platform username, password and cluster. You can also use [tokens](../tokens-logs-data-platform){.ref} in place of your credentials.  Sending this payload will result in this log:
+Replace the `<user>`, `<password>` and `<ldp-cluster>` with your Logs Data Platform username, password and cluster. You can also use [tokens](/pages/platform/logs-data-platform/tokens_logs_data_platform){.ref} in place of your credentials.  Sending this payload will result in this log:
 
 ![simple\_log](images/one_field.png){.thumbnail}
 
@@ -42,7 +39,7 @@ This will create the following log:
 
 The system used the reserved fields associated with GELF to create the message and the source fields.
 
-Logs Data Platform will also detect any typed field in the original data and convert them accordingly to our [field naming convention](../field-naming-conventions){.ref}. This last example illustrates it:
+Logs Data Platform will also detect any typed field in the original data and convert them accordingly to our [field naming convention](/pages/platform/logs-data-platform/field_naming_conventions){.ref}. This last example illustrates it:
 
 ```shell-session
 $ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud" , "short_message" : "Hello OS input", "host" : "OVHcloud_doc", "numeric_field" : 43.5  }'
@@ -53,13 +50,13 @@ The numeric field **numeric_field** will be detected as a number and will be suf
 ![gelf\_convention](images/gelf_convention.png){.thumbnail}
 
 
-The OpenSearch input will also flatten any sub-object or array sent through it and supports also ingest pipelines, they are used for example with [Filebeat integrations](../filebeat-logs){.ref}
+The OpenSearch input will also flatten any sub-object or array sent through it and supports also ingest pipelines, they are used for example with [Filebeat integrations](/pages/platform/logs-data-platform/filebeat_logs){.ref}
 
 
 ## Use case: Vector
 
 
-[Vector](https://vector.dev/){.external} is a fast and lightweigth log forwarder written in Rust. This software is quite similar to [Logstash](../logstash-input){.ref} or [Fluent Bit](../kubernetes-fluent-bit){.ref}. It takes logs from a source, apply a transformation on them and send them in a format compatible with the configured output module.
+[Vector](https://vector.dev/){.external} is a fast and lightweigth log forwarder written in Rust. This software is quite similar to [Logstash](../logstash-input){.ref} or [Fluent Bit](/pages/platform/logs-data-platform/kubernetes_fluent_bit){.ref}. It takes logs from a source, apply a transformation on them and send them in a format compatible with the configured output module.
 
 The vector integrations are numerous with more than 20 sources supported, more than 25 transforms and 30 sinks supported. It supports OpenSearch as a sink thanks to its Elasticsearch compability. We will use the simplest configuration to make it work from a **journald** source to our OpenSearch endpoint. Don't hesitate to check the [documentation](https://vector.dev/docs/about/what-is-vector/){.external} to explore all the possibilities.
 
@@ -108,7 +105,7 @@ The final part is the [Elasticsearch sink](https://vector.dev/docs/reference/sin
 - the **endpoint** configuration must be replaced with your assigned cluster
 - the **bulk.index** must be set to "ldp-logs", our special OpenSearch logs index
 - the **auth.strategy** must be set to "basic".
-- **auth.user** and **auth.password** must be set to the username of the Logs Data Platform account and its associated password. Note that you can use [tokens](../tokens-logs-data-platform){.ref} in place of your credentials.
+- **auth.user** and **auth.password** must be set to the username of the Logs Data Platform account and its associated password. Note that you can use [tokens](/pages/platform/logs-data-platform/tokens_logs_data_platform){.ref} in place of your credentials.
 
 Once configured and launched you will immediately see this type of logs in Graylog:
 
@@ -121,7 +118,7 @@ The logs from journald arrived fully parsed and ready to be explored. Use differ
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/asia/en/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

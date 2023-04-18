@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van uw e-mailadres in Outlook 2016 voor Windows
-slug: configuratie-outlook-2016
 excerpt: Ontdek hoe u uw MX Plan-e-mailadres kunt configureren in Outlook 2016 voor Windows
-section: Outlook
 updated: 2021-06-05
 ---
 
@@ -23,7 +21,7 @@ De MX Plan-adressen kunnen worden geconfigureerd met compatibele e-mailsoftware.
 
 > [!primary]
 >
-> Gebruikt u Outlook 2016 voor Mac? Raadpleeg onze handleidingen: [Configuratie van een e-mailadres in Outlook 2016 voor Mac](https://docs.ovh.com/nl/emails/configuratie-outlook-2016-mac/){.external}.
+> Gebruikt u Outlook 2016 voor Mac? Raadpleeg onze handleidingen: [Configuratie van een e-mailadres in Outlook 2016 voor Mac](/pages/web/emails/how_to_configure_outlook_2016-mac/){.external}.
 >
 
 ## Instructies
@@ -94,8 +92,8 @@ OVH heeft ook een web-app die u kunt gebruiken om vanuit uw browser toegang te k
 
 ## Verder
 
-[Configuratie van uw E-mail Pro-account in Outlook 2016 voor Windows](https://docs.ovh.com/nl/emails-pro/configuratie-outlook-2016/){.external}
+[Configuratie van uw E-mail Pro-account in Outlook 2016 voor Windows](/pages/web/emails-pro/how_to_configure_outlook_2016){.external}
 
-[Configuratie van uw Exchange-account in Outlook 2016 voor Windows](https://docs.ovh.com/nl/microsoft-collaborative-solutions/configuratie-outlook-2016/){.external}
+[Configuratie van uw Exchange-account in Outlook 2016 voor Windows](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016){.external}
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: Meine Zahlungsarten verwalten
-slug: zahlungsarten-verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Zahlungsarten in Ihrem OVHcloud Kundencenter hinzufügen und verwalten können
-section: Abrechnung
 updated: 2023-03-28
 ---
 
@@ -105,7 +103,7 @@ Wenn Sie eine Ihrer Zahlungsarten nicht mehr verwenden möchten, dann können Si
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Wenn Sie alle Ihre Zahlungsarten löschen möchten, müssen alle Ihre Dienstleistungen [auf manuelle Verlängerung](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/) umgestellt werden.
+Wenn Sie alle Ihre Zahlungsarten löschen möchten, müssen alle Ihre Dienstleistungen [auf manuelle Verlängerung](/pages/account/billing/how_to_use_automatic_renewal) umgestellt werden.
 
 #### Löschen einer Zahlungsart über die OVHCloud API
 
@@ -127,7 +125,7 @@ Löschen Sie anschließend die Zahlungsart mithilfe der im vorigen Schritt erhal
 
 > [!primary]
 >
-> Mehr Informationen finden Sie in der Einführung zur [Verwendung der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
+> Mehr Informationen finden Sie in der Einführung zur [Verwendung der OVHcloud API](/pages/account/api/first-steps).
 >
 > Falls Sie Schwierigkeiten haben, Ihre Zahlungsarten über die OVHcloud API zu identifizieren, verwenden Sie die Funktion `Beschreibung ändern`{.action} im [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie auf dazu `...`{.action} rechts neben der Zahlungsart im Bereich [Meine Zahlungsarten](#payment_methods).
 >
@@ -138,7 +136,7 @@ Löschen Sie anschließend die Zahlungsart mithilfe der im vorigen Schritt erhal
 
 Der Prepaid-Account ist in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbar. Damit können Sie in Ihrem Kunden-Account im Voraus Guthaben aufladen und es für die Bezahlung Ihrer Bestellungen und Verlängerungsrechnungen verwenden.
 
-Wenn Sie Ihren Account regelmäßig aufladen, stellen Sie damit sicher, dass die [automatische Verlängerung](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/) Ihrer Dienstleistungen nie wegen Zahlungsausfalls unterbrochen wird.
+Wenn Sie Ihren Account regelmäßig aufladen, stellen Sie damit sicher, dass die [automatische Verlängerung](/pages/account/billing/how_to_use_automatic_renewal) Ihrer Dienstleistungen nie wegen Zahlungsausfalls unterbrochen wird.
 
 Gehen Sie dazu in den Bereich `Zahlungsarten` Ihres Kundencenters:
 

@@ -1,9 +1,6 @@
 ---
 title: AI Training - Tutorial - Compare models with W&B for audio classification task
-slug: training/tuto-models-comparaison-weights-and-biases
 excerpt: Compare 2 models by running 2 jobs in parallel. See which one performs best on your data!
-section: AI Training - Tutorials
-order: 06
 updated: 2023-01-31
 ---
 
@@ -61,7 +58,7 @@ The basic principles for using Weights & Biases can be found [here](https://gith
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au);
 - An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account;
-- A [user for AI Training](https://docs.ovh.com/au/en/publiccloud/ai/users/);
+- A [user for AI Training](/pages/platform/ai/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer;
 - Make sure you have a Docker Hub [account](https://hub.docker.com/);
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
@@ -103,14 +100,14 @@ cd ai-training-examples/jobs/weights-and-biases/audio-classification-models-comp
 
 It's a zip file (`audio_files.zip`)! We are going to push it into an object container named `spoken-digit`.
 
-If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the Object Storage section and [create a new object container](https://docs.ovh.com/au/en/storage/object-storage/pcs/create-container/) by clicking `Object Storage` > `Create an object container`.
+If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the Object Storage section and [create a new object container](/pages/cloud/storage/object_storage/pcs_create_container) by clicking `Object Storage` > `Create an object container`.
 
 > [!primary]
 >
 > In the OVHcloud Control Panel, you can upload files but not folders. For instance, you can upload a .zip file to optimize the bandwidth, then unzip it later when accessing it through a JupyterLab. You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than through your browser).
 >
 
-If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/au/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow [this guide](/pages/platform/ai/cli_17_how_to_cli_data_notebooks). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```console
 ovhai data upload <region> <container> <paths>
@@ -309,14 +306,14 @@ docker push <your-docker-id>/audio-classification-models:latest
 
 > [!primary]
 >
-> Here we will use the [ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/run-job-cli/). If you wish to do this from the OVHcloud Control Panel, refer to this [documentation](https://docs.ovh.com/au/en/publiccloud/ai/training/submit-job/).
+> Here we will use the [ovhai CLI](/pages/platform/ai/cli_12_howto_run_job_cli). If you wish to do this from the OVHcloud Control Panel, refer to this [documentation](/pages/platform/ai/training_guide_02_howto_submit_job).
 >
 
 Jobs are launched in two stages. First, the **data processing jobs** are launched. Once they are `Done`, the **training jobs** can be executed.
 
 > [!primary]
 >
-> To find out more about how jobs work and their status, check this [documentation](https://docs.ovh.com/au/en/publiccloud/ai/training/jobs/).
+> To find out more about how jobs work and their status, check this [documentation](/pages/platform/ai/training_guide_03_concepts_jobs).
 >
 
 #### Data processing
@@ -485,8 +482,8 @@ However, it takes longer to train and consumes **more computing resources**.
 
 ## Go further
 
-- To build an app to classify audios, refer to this [tutorial](https://docs.ovh.com/au/en/publiccloud/ai/deploy/tuto-streamlit-sounds-classification/).
-- Do you want to know how to build and use custom Docker image with AI Training? [Here it is](https://docs.ovh.com/au/en/publiccloud/ai/training/build-use-custom-image/).
+- To build an app to classify audios, refer to this [tutorial](/pages/platform/ai/deploy_tuto_03_streamlit_sounds_classification).
+- Do you want to know how to build and use custom Docker image with AI Training? [Here it is](/pages/platform/ai/training_tuto_02_build_custom_image).
 
 ## Feedback
 

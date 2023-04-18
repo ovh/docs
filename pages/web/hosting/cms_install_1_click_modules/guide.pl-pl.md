@@ -1,9 +1,6 @@
 ---
 title: Automatyczna instalacja strony WWW za pomocą modułu CMS
-slug: hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www
 excerpt: Dowiedz się, jak stworzyć stronę internetową za pomocą modułów OVHcloud
-section: CMS
-order: 01
 updated: 2023-01-31
 ---
 
@@ -23,8 +20,8 @@ Moduły OVHcloud umożliwiają łatwe i szybkie postawienie strony internetowej 
 
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Korzystanie z [kompatybilnej wersji PHP](https://docs.ovh.com/pl/hosting/konfiguracja_php_na_hostingu_www_ovh_2014/) na Twoim hostingu.
-- Posiadanie [poprawnie skonfigurowany plik .ovhconfig](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/)
+- Korzystanie z [kompatybilnej wersji PHP](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) na Twoim hostingu.
+- Posiadanie [poprawnie skonfigurowany plik .ovhconfig](/pages/web/hosting/ovhconfig_configuration)
 - Katalog, w którym zostanie zainstalowany moduł musi być pusty lub nie istnieje.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), skonfigurowana w ramach opcji MultiSite.
 
@@ -60,7 +57,7 @@ W wyświetlonym oknie wybierz CMS, a następnie domenę, na której chcesz posta
 
 Jeśli wybranej domeny nie ma na liście, przejdź do zakładki `MultiSite`{.action}, aby ją dodać i ponownie spróbuj dodać moduł.
 
-Dowiedz się więcej o dodawaniu domeny w opcji MultiSite z tego przewodnika [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}.
+Dowiedz się więcej o dodawaniu domeny w opcji MultiSite z tego przewodnika [Jak rozdzielić hosting WWW na wiele stron](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 Po wybraniu domeny, wybierz prosty lub zaawansowany tryb instalacji:
 
@@ -111,7 +108,7 @@ Teraz podaj poniższe informacje potrzebne do skonfigurowania modułu:
 - *nazwa lub e-mail administratora:* chodzi o login, którego będziesz używać do logowania się do interfejsu administratora wojego CMS-a;
 - *hasło:* hasło, którego będziesz używać do logowania się do interfejsu administratora Twojego CMS-a;
 - *domena:* domena przypisana do strony WWW, którą chcesz zainstalować;
-Dowiedz się więcej o dodawaniu domeny w opcji MultiSite z tego przewodnika [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
+Dowiedz się więcej o dodawaniu domeny w opcji MultiSite z tego przewodnika [Jak rozdzielić hosting WWW na wiele stron](/pages/web/hosting/multisites_configure_multisite){.external}
 - *język:* język wybranego CMS-a;
 - *ścieżka instalacji:* jest ona wpisywana automatycznie podczas wyboru domeny. Możesz ją uzupełnić dopisując katalogi podrzędne.
 
@@ -147,13 +144,13 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 
 [Porównanie rozwiązań CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}
 
-[Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
+[Jak rozdzielić hosting WWW na wiele stron](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
+[Zarządzanie bazą danych na hostingu](/pages/web/hosting/sql_create_database){.external}
 
-[Zarządzanie CMS](https://docs.ovh.com/pl/hosting/1-click-module-management/)
+[Zarządzanie CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Odinstaluj CMS](https://docs.ovh.com/pl/hosting/1-click-module-management/#etap-3-usun-modul)
+[Odinstaluj CMS](/pages/web/hosting/cms_manage_1_click_module#etap-3-usun-modul)
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 

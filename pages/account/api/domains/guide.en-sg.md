@@ -1,18 +1,16 @@
 ---
 title: Manage Domain Names
-slug: ovh-api-domains
 excerpt: Manage your domain names using the OVHcloud public API
-section: APIv6
 updated: 2022-05-03
 ---
 
 **Last updated 3rd May 2022**
 
-- [Introduction](https://docs.ovh.com/sg/en/domains/api)
-- [Order a Domain Name](https://docs.ovh.com/sg/en/domains/api-order)
-- [Tasks Management](https://docs.ovh.com/sg/en/domains/api-tasks)
-- [Manage Contacts of a Domain Name](https://docs.ovh.com/sg/en/domains/api-contact)
-- [Managing Eligibility Rules](https://docs.ovh.com/sg/en/domains/api-rules)
-- [Configure the Display of Contact Data in the Whois](https://docs.ovh.com/sg/en/domains/api-whois)
-- [Configure the DNS of your Domain Name](https://docs.ovh.com/sg/en/domains/api-dns)
-- [Transfer a Domain Name](https://docs.ovh.com/sg/en/domains/api-transfer)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Order a Domain Name](/pages/web/domains/api_domain_intro-order)
+- [Tasks Management](/pages/web/domains/api_domain_intro-tasks)
+- [Manage Contacts of a Domain Name](/pages/web/domains/api_domain_contacts)
+- [Managing Eligibility Rules](/pages/web/domains/api_domain_intro-rules)
+- [Configure the Display of Contact Data in the Whois](/pages/web/domains/api_domain_intro-whois)
+- [Configure the DNS of your Domain Name](/pages/web/domains/api_domain_dns)
+- [Transfer a Domain Name](/pages/web/domains/api_domain_intro-transfer)

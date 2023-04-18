@@ -1,9 +1,6 @@
 ---
 title: 'Using Private Registry with OVHcloud Managed Kubernetes'
 excerpt: 'Find out how to use images from OVHcloud Managed Private Registry service on OVHcloud Managed Kubernetes clusters'
-slug: using-private-registry-with-kubernetes
-section: 'Tutorials'
-order: 02
 updated: 2023-02-28
 ---
 
@@ -21,8 +18,7 @@ updated: 2023-02-28
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   color: #ccc;
+   b   color: #ccc;
    font-family: monospace !important;
    font-size: 0.75em;
  }
@@ -36,9 +32,9 @@ In this tutorial we are going to guide you in using images from OVHcloud Managed
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../../kubernetes/deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
-You also need to have a working OVHcloud Managed Private Registry and have followed the guides on [creating a private registry](../creating-a-private-registry/), [connecting to the UI](../connecting-to-the-ui/), [managing users and projects](../managing-users-and-projects/) and [creating and using private images](../creating-and-using-a-private-image/).
+You also need to have a working OVHcloud Managed Private Registry and have followed the guides on [creating a private registry](../creating-a-private-registry/), [connecting to the UI](../connecting-to-the-ui/), [managing users and projects](../managing-users-and-projects/) and [creating and using private images](/pages/platform/private-registry/creating-and-using-a-private-image).
 
 We will specifically suppose you have followed the last one and you have a `hello-ovh` image on your private registry.
 
@@ -214,6 +210,6 @@ Our Pod is correctly running, so Kubernetes has pulled the image from your priva
 
 ## Go further
 
-To have an overview of OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](../).
+To have an overview of OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](/ca/en/private-registry/).
 
 Join our community of users on <https://community.ovh.com/en/>.

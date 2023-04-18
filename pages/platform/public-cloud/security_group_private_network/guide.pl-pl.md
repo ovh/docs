@@ -1,8 +1,6 @@
 ---
 title: Zarządzanie regułami firewalla i port security w sieciach korzystających OpenStack CLI
-slug: firewall_security_pci
 excerpt: Sprawdź działanie grup zabezpieczeń w usłudze Public Cloud
-section: Zarządzanie w OpenStack CLI
 updated: 2023-03-13
 ---
 
@@ -18,8 +16,7 @@ updated: 2023-03-13
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -44,8 +41,8 @@ Platforma OpenStack zarządza bezpieczeństwem zapory sieciowej, łącząc regu�
 
 ## Wymagania początkowe
 
-- [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Pobieranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/set-openstack-environment-variables/)
+- [Przygotowanie środowiska do korzystania z API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Pobieranie zmiennych środowiskowych OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## W praktyce
 

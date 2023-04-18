@@ -1,8 +1,6 @@
 ---
 title: 'Replacing a defective disk'
-slug: disk-replacement
 excerpt: 'Find out how to identify a defective disk, and request a replacement'
-section: 'Diagnostics and rescue mode'
 updated: 2018-06-21
 ---
 
@@ -47,7 +45,7 @@ If you receive an email alert, or notice any signs that you might have a faulty 
 
 #### Servers using soft RAID
 
-If you have a server that uses soft RAID, please refer to the [software RAID](../raid-soft/) guide to find the disks installed on your server.
+If you have a server that uses soft RAID, please refer to the [software RAID](/pages/cloud/dedicated/raid_soft) guide to find the disks installed on your server.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
@@ -91,7 +89,7 @@ In this case, the line to look out for is as follows:
 
 #### Servers using hard RAID
 
-If you have a server that uses hard RAID, please refer to the [hardware RAID](../raid-hard/){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
+If you have a server that uses hard RAID, please refer to the [hardware RAID](/pages/cloud/dedicated/raid_hard){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
@@ -123,7 +121,7 @@ You will need to specify the RAID number (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAI
 
 #### Servers with NVMe disks
 
-If you have an NVMe disk, you will need to put the server into [rescue mode](../ovh-rescue/){.external}, on which the **nvme-cli** tool is installed by default.
+If you have an NVMe disk, you will need to put the server into [rescue mode](/pages/cloud/dedicated/rescue_mode){.external}, on which the **nvme-cli** tool is installed by default.
 
 You will then need to use the `nvme list` command, and retrieve your disks’ serial numbers:
 
@@ -136,7 +134,7 @@ root@rescue:~# nvme list
 ```
 
 #### Check S.M.A.R.T logs in rescue mode
-You can check S.M.A.R.T logs in web panel of rescue mode.To check how you can use rescue mode please follow [this guide](../ovh-rescue/){.external}
+You can check S.M.A.R.T logs in web panel of rescue mode.To check how you can use rescue mode please follow [this guide](/pages/cloud/dedicated/rescue_mode){.external}
 
 
 
@@ -146,7 +144,7 @@ You can check S.M.A.R.T logs in web panel of rescue mode.To check how you can us
 
 To request a disk replacement, you simply need to create a ticket through your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
 
-- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](../find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
+- **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](/pages/cloud/dedicated/how_to_find_hdd_serial){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
 
 As a reminder, it’s important to include the serial numbers of all the disks. They will be sent to the datacentre technician, and this will avoid any mistakes being made as the replacement operation is carried out.
 
@@ -162,9 +160,9 @@ As a reminder, it’s important to include the serial numbers of all the disks. 
 > This replacement type is only possible for [FS-48T](https://www.ovh.co.uk/dedicated_servers/storage/1901fs03.xml){.external}, [STOR-72T](https://www.ovh.co.uk/dedicated_servers/storage/1801fs09.xml){.external}, [FS-MAX](https://www.ovh.co.uk/dedicated_servers/storage/1801fs05.xml){.external}, [mHG](https://www.ovh.co.uk/dedicated_servers/hg/1801mhg03.xml){.external}(2019 range only), [HG](https://www.ovh.co.uk/dedicated_servers/hg/1801hg03.xml){.external} and [BHG](https://www.ovh.co.uk/dedicated_servers/hg/1801bhg03.xml){.external} 
 > 
 
-If you are hot-swapping a disk on a server with a MegaRAID card you can refer to our [Hot Swap - Hardware RAID](../hotswap-raid-hard/){.external} guide. 
+If you are hot-swapping a disk on a server with a MegaRAID card you can refer to our [Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard){.external} guide. 
 
-While if you are hot-swapping a disk using software RAID (with a LSI card) please refer to our [Hot Swap - Software RAID](../hotswap-raid-soft/){.external} guide 
+While if you are hot-swapping a disk using software RAID (with a LSI card) please refer to our [Hot Swap - Software RAID](/pages/cloud/dedicated/hotswap_raid_soft){.external} guide 
 
 
 > [!primary]
@@ -176,16 +174,16 @@ While if you are hot-swapping a disk using software RAID (with a LSI card) pleas
 
 If you have a server that uses hard RAID, then the RAID will rebuild itself. Please note that *auto-rebuild* is enabled by default. For it to work, please ensure that you have not disabled it. The resync process will take a few minutes, and may decrease your RAID’s read/write performance.
 
-If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](../raid-soft/){.external} guide.
+If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](/pages/cloud/dedicated/raid_soft){.external} guide.
 
 
 ## Go further
 
-[Software RAID](../raid-soft/)
+[Software RAID](/pages/cloud/dedicated/raid_soft)
 
-[Hardware RAID](../raid-hard)
+[Hardware RAID](/pages/cloud/dedicated/raid_hard)
 
-[Rescue Mode](../ovh-rescue/)
+[Rescue Mode](/pages/cloud/dedicated/rescue_mode)
 
 
 Join our community of users on <https://community.ovh.com/en/>.

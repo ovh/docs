@@ -1,9 +1,6 @@
 ---
 title: Alterar a palavra-passe da base de dados de um alojamento web
-slug: alterar-palavra-passe-base-de-dados
 excerpt: Saiba como alterar a palavra-passe de uma base de dados criada num serviço de alojamento web
-section: Bases de dados
-order: 02
 updated: 2022-01-26
 ---
 
@@ -17,15 +14,15 @@ updated: 2022-01-26
 
 A maior parte dos websites utiliza uma **base de dados** para armazenar artigos, comentários ou endereços de e-mail dos seus utilizadores.
 
-A ligação a esta base de dados é possível graças a um **ficheiro de configuração** contido no [espaço de armazenamento de ficheiros](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento. Contém as informações que permitem ao seu site "identificar-se" junto do seu **servidor de base de dados**.
+A ligação a esta base de dados é possível graças a um **ficheiro de configuração** contido no [espaço de armazenamento de ficheiros](/pages/web/hosting/ftp_connection) do seu alojamento. Contém as informações que permitem ao seu site "identificar-se" junto do seu **servidor de base de dados**.
 
 Por isso, a alteração da palavra-passe de uma base de dados deve ser sempre efetuada:
 
-- No [ficheiro de configuração](https://docs.ovh.com/pt/hosting/1-click-module-management/#etapa-1-identificar-a-base-de-dados-do-modulo) do seu site através do [espaço FTP do seu alojamento](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/);
+- No [ficheiro de configuração](/pages/web/hosting/cms_manage_1_click_module#etapa-1-identificar-a-base-de-dados-do-modulo) do seu site através do [espaço FTP do seu alojamento](/pages/web/hosting/ftp_connection);
 
 - **E** no servidor que contém a base de dados através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-Enquanto esta alteração não for efetuada **nestes dois locais**, o seu site irá apresentar um "[erro de ligação à base de dados](https://docs.ovh.com/pt/hosting/erros-frequentes-bases-de-dados/#error-establishing-a-database-connection)".
+Enquanto esta alteração não for efetuada **nestes dois locais**, o seu site irá apresentar um "[erro de ligação à base de dados](/pages/web/hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
 Assim, para alterar a palavra-passe da base de dados, é imperativo que realize **o conjunto das operações** indicadas neste guia. Se tiver dúvidas sobre as operações a realizar, contacte o seu webmaster ou um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
 
@@ -50,7 +47,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 - Ter um [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Utilizar uma [base de dados associada à sua oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) ou a um [Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/).
-- Ter acesso às credenciais FTP para aceder ao [espaço de armazenamento do alojamento](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+- Ter acesso às credenciais FTP para aceder ao [espaço de armazenamento do alojamento](/pages/web/hosting/ftp_connection).
 
 ## Instruções
 
@@ -64,9 +61,9 @@ A seguir, clique no separador `FTP-SSH`{.action} e aceda ao espaço que contém 
 
 > [!primary]
 >
-> Se pretender alterar a palavra-passe do seu espaço FTP, consulte este [guia](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/).
+> Se pretender alterar a palavra-passe do seu espaço FTP, consulte este [guia](/pages/web/hosting/ftp_change_password).
 >
-> Para aceder através de outro método, consulte este [guia](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+> Para aceder através de outro método, consulte este [guia](/pages/web/hosting/ftp_connection).
 >
 
 Abra a `Pasta raiz` identificada acima.
@@ -119,7 +116,7 @@ Ainda nesta parte da sua Área de Cliente, aceda ao separador `Utilizador e perm
 
 > [!primary]
 >
-> Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/).
+> Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](/pages/account/customer/manage-ovh-password).
 >
 
 Escolha a nova palavra-passe da sua base de dados e anote-a. Deverá respeitar as seguintes condições:
@@ -230,11 +227,11 @@ Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Et
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Partilhado: Guia de utilização do FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/)
+[Partilhado: Guia de utilização do FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
-[Definir e gerir a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/)
+[Definir e gerir a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password)
 
-[Resolver os erros mais frequentes associados às bases de dados](https://docs.ovh.com/pt/hosting/erros-frequentes-bases-de-dados/)
+[Resolver os erros mais frequentes associados às bases de dados](/pages/web/hosting/diagnosis_database_errors)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

@@ -1,10 +1,7 @@
 ---
 title: Snapshots horaires OVHcloud
-slug: snapshots-horaires-ovh
 excerpt: Comprendre le fonctionnement des snapshots horaires OVHcloud
 legacy_guide_number: '2163263'
-section: Fonctionnalités OVHcloud
-order: 06
 updated: 2022-03-15
 ---
 
@@ -81,7 +78,7 @@ Il s'agit là d'une sécurité normalement à usage interne d'OVHcloud, les snap
 
 Il s'agit d'une sécurité supplémentaire à usage interne mise en place sur les datastores ne devant servir qu'en dernier recours afin de prévenir une perte de donnée éventuelle.
 
-Nous vous recommandons l'utilisation d'une solution complète de sauvegarde comme notre service [Veeam Backup](https://docs.ovh.com/fr/private-cloud/veeam-backup-as-a-service/){.external-link} ou tout autre système réalisant un backup complet de vos machines virtuelles.
+Nous vous recommandons l'utilisation d'une solution complète de sauvegarde comme notre service [Veeam Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service){.external-link} ou tout autre système réalisant un backup complet de vos machines virtuelles.
 
 ## Aller plus loin
 

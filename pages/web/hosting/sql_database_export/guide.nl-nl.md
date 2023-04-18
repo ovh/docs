@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Een backup van een webhosting-database ophalen'
-slug: export-databases
 excerpt: 'Ontdek hoe u een backup van de database van een OVH webhostingplan kunt verkrijgen'
-section: Databases
-order: 03
 updated: 2018-05-19
 ---
 
@@ -131,7 +128,7 @@ Zorg ervoor dat u de generieke informatie in dit script vervangt door de feiteli
 
 #### Stap 2: Upload het script naar de opslagruimte
 
-Nadat het backup-script correct is gegenereerd, moet u het uploaden naar de opslagruimte van uw webhostingplan. Om dit te doen, moet u inloggen op uw opslagruimte. Als u niet weet hoe u dit moet doen, raadpleegt u de instructies in stap 2 van de documentatie, "[Aanmelden bij uw opslagruimte](https://docs.ovh.com/nl/hosting/mijn-website-online-zetten/){.external}".
+Nadat het backup-script correct is gegenereerd, moet u het uploaden naar de opslagruimte van uw webhostingplan. Om dit te doen, moet u inloggen op uw opslagruimte. Als u niet weet hoe u dit moet doen, raadpleegt u de instructies in stap 2 van de documentatie, "[Aanmelden bij uw opslagruimte](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}".
 
 Om de volgende stappen uit te voeren, moet u het script downloaden naar de map "www". **We raden u aan bijzonder attent te zijn op de naam van het backup-script-bestand.** Pas op dat u een bestaand bestand met dezelfde naam niet overschrijft in uw opslagruimte wanneer u het script uploadt. Als er een waarschuwingsbericht verschijnt, wijzigt u de naam van het script dat u zojuist hebt gemaakt en probeert u het opnieuw te uploaden.
 
@@ -149,7 +146,7 @@ Als laatste stap raden we u ten zeerste aan het backup-bestand en het script uit
 
 > [!primary]
 >
-> Het gebruik van een backup-script en geplande taken (ook wel 'CRON'-taken genoemd) is een manier om automatische backups te organiseren met het interval van uw keuze. U kunt meer te weten komen over geplande taken in onze handleiding: [Een geplande taak (CRON) instellen in uw webhostingruimte](https://docs.ovh.com/nl/hosting/hosting_geautomatiseerde_takencron/){.external}.
+> Het gebruik van een backup-script en geplande taken (ook wel 'CRON'-taken genoemd) is een manier om automatische backups te organiseren met het interval van uw keuze. U kunt meer te weten komen over geplande taken in onze handleiding: [Een geplande taak (CRON) instellen in uw webhostingruimte](/pages/web/hosting/cron_tasks){.external}.
 >
 
 ### Een backup herstellen via een SSH-commando

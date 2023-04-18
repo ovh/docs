@@ -1,7 +1,5 @@
 ---
 title: "Politique de sécurité du système d'information (PSSI)"
-slug: pssi
-section: Politiques de sécurité
 updated: 2022-07-21
 ---
 

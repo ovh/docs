@@ -1,11 +1,8 @@
 ---
 title: 'Zmiana hasła do konta e-mail'
-slug: changing-email-address-password
 excerpt: 'Dowiedz się, jak zmienić hasło do konta e-mail OVHcloud'
-section: 'Pierwsze kroki'
-order: 03
 routes:
-    canonical: 'https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/'
+    canonical: '/pages/web/emails/email_change_password'
 updated: 2023-01-03
 ---
 
@@ -36,4 +33,4 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 
 ## W praktyce
 
-Postępuj zgodnie z naszym przewodnikiem [Zmiana hasła do konta e-mail](https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/) w sekcji "Konta e-mail na hostingu - MX Plan".
+Postępuj zgodnie z naszym przewodnikiem [Zmiana hasła do konta e-mail](/pages/web/emails/email_change_password) w sekcji "Konta e-mail na hostingu - MX Plan".

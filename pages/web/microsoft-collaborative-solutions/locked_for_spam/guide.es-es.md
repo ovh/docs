@@ -1,9 +1,6 @@
 ---
 title: '¿Qué hacer con una cuenta bloqueada debido a correo no deseado?'
-slug: bloqueo-por-correo-no-deseado
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
-section: 'Diagnóstico Exchange'
-order: 03
 updated: 2020-04-20
 ---
 

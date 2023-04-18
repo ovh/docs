@@ -1,7 +1,6 @@
 ---
 deprecated: true
 title: OVH handleiding voor het gebruik van de automatische verlenging
-slug: ovh_handleiding_voor_het_gebruik_van_de_automatische_verlenging
 legacy_guide_number: g1271
 updated: 2022-04-07
 ---

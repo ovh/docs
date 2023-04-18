@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Conceitos
-slug: netapp/concepts
 excerpt: "Descubra os princípios de funcionamento da oferta Enterprise File Storage"
-section: Enterprise File Storage
-order: 010
 updated: 2022-04-07
 ---
 
@@ -49,7 +46,7 @@ Pode encomendar um ou vários espaços de armazenamento entre 1TiB e 29TiB na su
 
 Quando encomenda, através da sua conta OVHcloud, um serviço Enterprise File Storage entre 1 e 29 TB, recebe uma capacidade pool NetApp&#174;.
 
-A conta OVHcloud é por predefinição o contacto administrador, técnico e faturação do serviço. Para mais informações, consulte o nosso manual ["Como gerir os contactos (gestores) dos serviços OVHcloud"](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+A conta OVHcloud é por predefinição o contacto administrador, técnico e faturação do serviço. Para mais informações, consulte o nosso manual ["Como gerir os contactos (gestores) dos serviços OVHcloud"](/pages/account/customer/managing_contacts).
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
@@ -75,7 +72,7 @@ Uma vez a oferta Enterprise File Storage em serviço, pode criar um ou vários v
 > - O tamanho de um volume é escalável, tanto em alta como em baixa.
 >
 
-Para mais informações, consulte o guia ["Gerir volumes"](https://docs.ovh.com/pt/storage/file-storage/netapp/volumes/).
+Para mais informações, consulte o guia ["Gerir volumes"](/pages/cloud/storage/file_storage/netapp_volumes).
 
 ### Princípio de funcionamento dos ACL
 
@@ -90,7 +87,7 @@ Estas regras são constituídas por um endereço de IP source da sua rede em for
 > Pode criar uma ou várias regras por volume.
 >
 
-Para mais informações, consulte o guia ["Gerir os ACL de um volume"](https://docs.ovh.com/pt/storage/file-storage/netapp/volume-acl/).
+Para mais informações, consulte o guia ["Gerir os ACL de um volume"](/pages/cloud/storage/file_storage/netapp_volume_acl).
 
 ### Princípio de funcionamento das snapshots
 
@@ -106,7 +103,7 @@ O consumo diário das snapshots varia entre 1 % e 5 % da capacidade do volume pa
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
-Para mais informações, consulte o guia ["Gerir as snapshots de um volume"](https://docs.ovh.com/pt/storage/file-storage/netapp/volume-snapshots/).
+Para mais informações, consulte o guia ["Gerir as snapshots de um volume"](/pages/cloud/storage/file_storage/netapp_volume_snapshots).
 
 ### Limites da oferta Enterprise File Storage para a fase de testes externos (Beta)
 

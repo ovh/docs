@@ -1,9 +1,6 @@
 ---
 title: AI Deploy - Capabilities and limitations
-slug: deploy/capabilities
 excerpt: Discover the capabilities and limitations of AI Deploy
-section: AI Deploy - Guides
-order: 01
 updated: 2023-04-04
 ---
 
@@ -59,7 +56,7 @@ ovhai capabilities
 
 ##### **Scaling**
 
-AI Deploy offers the possibility to choose between two [scaling strategies](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-deployments/): **static** or **automatic**.
+AI Deploy offers the possibility to choose between two [scaling strategies](/pages/platform/ai/deploy_guide_04_scaling_strategies): **static** or **automatic**.
 
 If you choose `static scaling`:
 
@@ -85,7 +82,7 @@ Attached storage allows you to work on several TB of data, while being persisten
 
 #### Permitted deployment
 
-AI Deploy authorizes the deployment of your own Docker images or applications from the [OVHcloud portfolio](https://docs.ovh.com/gb/en/publiccloud/ai/deploy/apps-portfolio/).
+AI Deploy authorizes the deployment of your own Docker images or applications from the [OVHcloud portfolio](/pages/platform/ai/deploy_guide_05_app_portfolio).
 
 Docker images can be hosted in a public or private registry.
 
@@ -154,7 +151,7 @@ API endpoints to manage your AI Deploy apps can be found here:
 
 #### Command line interface (CLI)
 
-AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/){.external}.
+AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli){.external}.
 
 ## Go further
 

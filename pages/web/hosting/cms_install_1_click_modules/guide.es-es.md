@@ -1,9 +1,6 @@
 ---
 title: Instalar un sitio web con un módulo en un clic
-slug: modulos-en-un-clic
 excerpt: Cómo instalar un sitio web con los módulos en un clic de OVHcloud
-section: CMS
-order: 01
 updated: 2023-01-31
 ---
 
@@ -24,8 +21,8 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) in your customer account.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Utilizar [una versión de PHP compatible](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/) en su alojamiento web.
-- Haber [configurado correctamente su archivo .ovhconfig](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/).
+- Utilizar [una versión de PHP compatible](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014) en su alojamiento web.
+- Haber [configurado correctamente su archivo .ovhconfig](/pages/web/hosting/ovhconfig_configuration).
 - El directorio en el que se instalará el módulo debe estar vacío o no existe actualmente.
 - El dominio (y el subdominio, en su caso) que utilice para el sitio web debe estar declarado como multisitio.
 
@@ -111,7 +108,7 @@ Para configurar el módulo, introduzca los siguientes datos:
 - **Nombre o dirección de correo electrónico del administrador:** Identificador que utilizará para conectarse al panel de administración de su CMS.
 - **Contraseña:** Contraseña que utilizará para conectarse al panel de administración de su CMS.
 - **Dominio:** Dominio en el que desea instalar su sitio web.
-Para más información, consulte la guía [Utilizar un mismo plan de hosting para varios sitios web](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/).
+Para más información, consulte la guía [Utilizar un mismo plan de hosting para varios sitios web](/pages/web/hosting/multisites_configure_multisite).
 - **Idioma:** Idioma en el que se instalará el CMS.
 - **Ruta de instalación:** Este parámetro se completa automáticamente al seleccionar el dominio. También puede completar la ruta introduciendo subdirectorios.
 
@@ -147,11 +144,11 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 
 [Elegir un CMS para crear un sitio web](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/){.external}
 
-[Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
+[Gestionar una base de datos desde un alojamiento compartido](/pages/web/hosting/sql_create_database){.external}
 
-[Gestionar su CMS](https://docs.ovh.com/es/hosting/1-click-module-management/)
+[Gestionar su CMS](/pages/web/hosting/cms_manage_1_click_module)
 
-[Desinstalar su CMS](https://docs.ovh.com/es/hosting/1-click-module-management/#etapa-3-eliminar-el-modulo)
+[Desinstalar su CMS](/pages/web/hosting/cms_manage_1_click_module#etapa-3-eliminar-el-modulo)
 
 Descubra nuestras [bases de datos Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
 

@@ -1,9 +1,6 @@
 ---
 title: 'Hosting condiviso: utilizza Putty su Windows'
 excerpt: 'Hosting condiviso: utilizza Putty su Windows'
-slug: hosting_condiviso_utilizza_putty_su_windows
-section: FTP e SSH
-order: 08
 updated: 2020-05-05
 ---
 
@@ -20,7 +17,7 @@ Prima di iniziare, recupera le credenziali FTP che ti serviranno per accedere al
 - Password FTP
 
 Queste informazioni sono disponibili nella cartella di configurazione. Accedi alla sezione FTP o segui le istruzioni qui sotto
-[guida](../accedere-spazio-storage-ftp-hosting-web/).
+[guida](/pages/web/hosting/ftp_connection).
 
 
 ## Avvia Putty

@@ -1,9 +1,6 @@
 ---
 title: Gestire il rinnovo dei servizi OVHcloud
-slug: imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh
 excerpt: Come visualizzare e amministrare il rinnovo delle tue soluzioni dallo Spazio Cliente OVHcloud
-section: Fatturazione
-order: 1
 legacy_guide_number: g1271
 updated: 2022-04-07
 ---
@@ -31,7 +28,7 @@ Puoi gestire il rinnovo e l’annullamento dei tuoi servizi dallo Spazio Cliente
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di servizi OVHcloud attivi
-- Essere [contatto fatturazione](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/#definizione) dei servizi OVHcloud
+- Essere [contatto fatturazione](/pages/account/customer/managing_contacts#definizione) dei servizi OVHcloud
 
 ## Procedura
 
@@ -41,11 +38,11 @@ ma è anche possibile configurare alcuni prodotti (Domini, Hosting, VPS, Server 
 
 Ti consigliamo di leggere queste guide e concentrarti sulle operazioni che vuoi effettuare:
 
-- [Visualizza lo stato del rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#accedere-alle-impostazioni-dei-servizi) : questa guida ti aiuta a verificare se i tuoi servizi sono rinnovati automaticamente. permette inoltre di ottenere la data di rinnovo o di scadenza.
+- [Visualizza lo stato del rinnovo dei servizi](/pages/account/billing/how_to_use_automatic_renewal#accedere-alle-impostazioni-dei-servizi) : questa guida ti aiuta a verificare se i tuoi servizi sono rinnovati automaticamente. permette inoltre di ottenere la data di rinnovo o di scadenza.
 
-- [Gestire il rinnovo dei servizi](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#gestire-il-rinnovo-dei-servizi-ovhcloud) : questa guida ti mostra come attivare o disattivare il rinnovo automatico, modificare la frequenza di pagamento di un servizio e pagare i rinnovi prima della scadenza.
+- [Gestire il rinnovo dei servizi](/pages/account/billing/how_to_use_automatic_renewal#gestire-il-rinnovo-dei-servizi-ovhcloud) : questa guida ti mostra come attivare o disattivare il rinnovo automatico, modificare la frequenza di pagamento di un servizio e pagare i rinnovi prima della scadenza.
 
-- [Gestire i metodi di pagamento](https://docs.ovh.com/it/billing/manage-payment-methods/) : questa guida ti mostra come utilizzare un metodo di pagamento registrato per rinnovare i tuoi servizi. Se necessario, è possibile aggiungere o rimuovere metodi di pagamento.
+- [Gestire i metodi di pagamento](/pages/account/billing/manage-payment-methods) : questa guida ti mostra come utilizzare un metodo di pagamento registrato per rinnovare i tuoi servizi. Se necessario, è possibile aggiungere o rimuovere metodi di pagamento.
 
 ### Accedere alle impostazioni dei servizi
 
@@ -71,11 +68,11 @@ I criteri di filtraggio verranno visualizzati sopra la tabella. Ecco un esempio 
 
 Al momento della sottoscrizione, il **rinnovo automatico** è attivato di default per garantire la continuità dei servizi dopo la data di scadenza. Inoltre, se hai salvato un metodo di pagamento sul tuo account, l’importo delle tue fatture sarà prelevato automaticamente.
 
-Se non hai salvato alcun [metodo di pagamento](https://docs.ovh.com/it/billing/manage-payment-methods/), riceverai una fattura via email. e potrai effettuare il pagamento online.
+Se non hai salvato alcun [metodo di pagamento](/pages/account/billing/manage-payment-methods), riceverai una fattura via email. e potrai effettuare il pagamento online.
 
 Per i servizi con una frequenza di rinnovo automatico superiore a 1 mese (3 mesi, 6 mesi, 12 mesi), riceverai un’email di promemoria un mese prima, insieme a una lista di servizi che saranno rinnovati in seguito.
 
-Se non vuoi rinnovare uno di questi servizi, è sufficiente [disattivarlo dal tuo Spazio Cliente](https://docs.ovh.com/it/billing/how-to-cancel-your-services/).
+Se non vuoi rinnovare uno di questi servizi, è sufficiente [disattivarlo dal tuo Spazio Cliente](/pages/account/billing/how_to_cancel_services).
 
 ### Il rinnovo manuale
 
@@ -125,7 +122,7 @@ Questa azione è consentita per i servizi impostati con il rinnovo automatico. I
 
 > [!warning]
 >
-> Per maggiori informazioni sulla disattivazione dei servizi OVHcloud, segui le indicazioni di questa [guida](https://docs.ovh.com/it/billing/how-to-cancel-your-services/).
+> Per maggiori informazioni sulla disattivazione dei servizi OVHcloud, segui le indicazioni di questa [guida](/pages/account/billing/how_to_cancel_services).
 >
 
 #### Salda l’importo dovuto
@@ -150,8 +147,8 @@ La tabella seguente illustra tutte le azioni in blocco possibili.
 
 ## Per saperne di più
 
-[Sistema di fatturazione dei servizi Cloud](https://docs.ovh.com/it/public-cloud/analizza_i_tuoi_consumi_e_gestisci_la_tua_fatturazione/)
+[Sistema di fatturazione dei servizi Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Gestire la fatturazione di un account Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/gestisci-fatturazione-exchange/)
+[Gestire la fatturazione di un account Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

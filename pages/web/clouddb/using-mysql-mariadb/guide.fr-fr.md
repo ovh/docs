@@ -1,9 +1,6 @@
 ---
 title: 'Démarrez avec MySQL et MariaDB'
-slug: demarrez-avec-mysql-et-mariadb
 excerpt: 'Utilisez vos bases de données'
-section: 'Premiers pas'
-order: 02
 updated: 2023-02-15
 ---
 
@@ -31,7 +28,7 @@ Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL
 
 - Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/)(incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/))
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Avoir consulté le [guide de démarrage de Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
+- Avoir consulté le [guide de démarrage de Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 ## En pratique
 
@@ -57,7 +54,7 @@ Afin de vous connecter à votre base, assurez-vous de :
 
 Toutes ces informations sont disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
+Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
 #### Connexion en ligne de commande
 
@@ -116,7 +113,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 
 > [!primary]
 >
-> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil fourni par OVHcloud dans votre espace client. Reportez-vous à la documentation « [Premiers pas avec le service Web Cloud Databases ](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#importation-dune-base-de-donnees) » si nécessaire.
+> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil fourni par OVHcloud dans votre espace client. Reportez-vous à la documentation « [Premiers pas avec le service Web Cloud Databases ](/pages/web/clouddb/starting_with_clouddb#importation-dune-base-de-donnees) » si nécessaire.
 >
 
 ## Aller plus loin

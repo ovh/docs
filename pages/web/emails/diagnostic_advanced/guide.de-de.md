@@ -1,9 +1,6 @@
 ---
 title: 'E-Mails können nicht gesendet oder empfangen werden'
 excerpt: 'Erfahren Sie hier die Vorgehensweise, wenn Sende- oder Empfangsprobleme über OVHcloud auftreten'
-slug: die_statuscodes_von_smtp-servern
-section: Diagnose
-order: 02
 legacy_guide_number: g2272
 updated: 2022-07-21
 ---
@@ -23,7 +20,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 
 > [!primary]
 >
-> Wenn Sie weitere Fragen haben, die nicht in dieser Anleitung behandelt werden, lesen Sie bitte unsere [E-Mail FAQ](../e-mails-faq/).
+> Wenn Sie weitere Fragen haben, die nicht in dieser Anleitung behandelt werden, lesen Sie bitte unsere [E-Mail FAQ](/pages/web/emails/faq-emails).
 
 ## Voraussetzungen
 
@@ -36,7 +33,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 
 Damit Ihre E-Mails funktionieren, benötigen Sie ein aktives E-Mail-Angebot. Wenn Ihre E-Mail-Accounts Teil eines Webhosting-Angebots sind, überprüfen Sie, dass es nicht abgelaufen ist. Sie können das direkt im Kundencenter überprüfen. Die zugehörige Domain muss ebenfalls aktiv sein.
 
-Überprüfen Sie zunächst, dass Sie keine ausstehenden [Zahlungen](https://docs.ovh.com/de/billing/ovh-rechnungen-verwalten/#pay-bills) und [Verlängerungen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#renewal-management) Ihrer Dienstleistungen haben.
+Überprüfen Sie zunächst, dass Sie keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) Ihrer Dienstleistungen haben.
 
 Befolgen Sie diese Schritte, um sicherzustellen, dass Ihre relevanten Dienste in Betrieb sind:
 
@@ -70,11 +67,11 @@ Stellen Sie sicher, dass Sie das richtige Passwort haben. Sie können es nötign
 
 So ändern Sie das Passwort einer E-Mail-Adresse:
 
-- Für ein **MXplan** Angebot lesen Sie unsere [Anleitung Passwort einer MX Plan E-Mail-Adresse ändern](../passwort-e-mail-adresse-aendern/)
+- Für ein **MXplan** Angebot lesen Sie unsere [Anleitung Passwort einer MX Plan E-Mail-Adresse ändern](/pages/web/emails/email_change_password)
 
 - Für ein **E-Mail Pro** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `E-Mail Pro`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie im Tab `E-Mail-Accounts`{.action} auf `...`{.action} und dann auf `Passwort ändern`{.action}.
 
-- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie im Tab `E-Mail-Accounts`{.action} auf `...`{.action} und dann auf `Passwort ändern`{.action}. <br> Überprüfen Sie, ob die Zwei-Faktor-Authentifizierung aktiviert ist mithilfe unserer Anleitung zur [Zwei-Faktor-Authentifizierung für Exchange](../../microsoft-collaborative-solutions/2fa-exchange-konfigurieren/).
+- Für ein **Exchange** Angebot gehen Sie in den Bereich `Web Cloud`{.action}, klicken Sie auf `Microsoft`{.action}, klicken Sie dann auf `Exchange`{.action} und wählen Sie Ihren Dienst aus. Klicken Sie im Tab `E-Mail-Accounts`{.action} auf `...`{.action} und dann auf `Passwort ändern`{.action}. <br> Überprüfen Sie, ob die Zwei-Faktor-Authentifizierung aktiviert ist mithilfe unserer Anleitung zur [Zwei-Faktor-Authentifizierung für Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
 ### Ist mein Dienst von einer Störung oder Wartung betroffen?
 
@@ -86,7 +83,7 @@ Sie können alle aktuellen Tasks auf <https://web-cloud.status-ovhcloud.com/> ü
 
 ### Ist die Domain korrekt mit meinem E-Mail-Dienst verbunden?
 
-Überprüfen Sie, ob Ihre Domain korrekt auf die OVHcloud E-Mail-Server verweist. Hierzu müssen MX-Einträge in Ihrer DNS-Zone konfiguriert werden. <br>Lesen Sie dazu unsere Anleitung "[Einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](../../domains/webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/)".
+Überprüfen Sie, ob Ihre Domain korrekt auf die OVHcloud E-Mail-Server verweist. Hierzu müssen MX-Einträge in Ihrer DNS-Zone konfiguriert werden. <br>Lesen Sie dazu unsere Anleitung "[Einen MX-Eintrag zur Konfiguration Ihrer Domain hinzufügen](/pages/web/domains/dns_zone_mx)".
 
 ![DNS Zone](images/DNS.png){.thumbnail}
 
@@ -125,7 +122,7 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 |502|Command not implemented|Die beim Versand der E-Mail mit Ihrem SMTP-Server verwendeten Einstellungen oder Optionen werden erkannt, in der Konfiguration jedoch deaktiviert. Bitte kontaktieren Sie Ihren Dienstleister.|
 |503|Server encountered bad sequence of commands|Dies ist in der Regel auf ein Authentifizierungsproblem zurückzuführen. Vergewissern Sie sich, dass Sie in Bezug auf die Konfiguration Ihrer E-Mail-Software am SMTP-Server authentifiziert sind.|
 |504|Command parameter not implemented|Die beim Versand der E-Mail mit Ihrem SMTP-Server verwendeten Einstellungen oder Optionen werden erkannt, sind in der Konfiguration jedoch deaktiviert. Bitte kontaktieren Sie Ihren Dienstleister.|
-|535|Authentication failed|Die Benutzer-/Passwort-Informationen sind falsch oder der Versand von dieser E-Mail-Adresse ist blockiert. Überprüfen Sie den Zustand Ihrer E-Mail-Adresse über Ihr OVHcloud Kundencenter. Wenn der Account wegen Spam gesperrt wurde, können Sie den Versand durch eine Passwortänderung wieder entsperren. Weitere Informationen finden Sie in unserer Anleitung [Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?](https://docs.ovh.com/de/microsoft-collaborative-solutions/blocked-wegen-spam/).
+|535|Authentication failed|Die Benutzer-/Passwort-Informationen sind falsch oder der Versand von dieser E-Mail-Adresse ist blockiert. Überprüfen Sie den Zustand Ihrer E-Mail-Adresse über Ihr OVHcloud Kundencenter. Wenn der Account wegen Spam gesperrt wurde, können Sie den Versand durch eine Passwortänderung wieder entsperren. Weitere Informationen finden Sie in unserer Anleitung [Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?](/pages/web/microsoft-collaborative-solutions/locked_for_spam).
 |550|Requested action not performed: mailbox unavailable|Der Empfänger-Server konnte die verwendete E-Mail-Adresse nicht überprüfen. Dies wird meist durch eine ungültige Ziel-E-Mail-Adresse verursacht, kann aber auch bedeuten, dass der Server Probleme mit der Firewall oder der Konnektivität hat. Überprüfen Sie die E-Mail-Adresse des Empfängers, und/oder versuchen Sie es erneut.|
 |551|User not local or invalid address – Relay denied|Dies wird typischerweise als Strategie zur Vermeidung von Spam verwendet. Es besagt, dass das Mail-Relay aus irgendeinem Grund nicht berechtigt ist, Ihre Nachricht an einen anderen Server als den Ihren weiterzuleiten. Bitte kontaktieren Sie Ihren Dienstleister.|
 |552|Requested mail actions aborted – Exceeded storage allocation|Der Empfängeraccount hat keinen Speicherplatz mehr für den Empfang von Nachrichten. Leider besteht die einzige Lösung darin, den Empfänger über eine andere Methode zu kontaktieren.|
@@ -135,6 +132,6 @@ Im Folgenden finden Sie von Servern häufig verwendete negative SMTP-Antwortcode
 
 ## Weiterführende Informationen
 
-[E-Mail FAQ](../e-mails-faq/)
+[E-Mail FAQ](/pages/web/emails/faq-emails)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

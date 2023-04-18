@@ -1,11 +1,8 @@
 ---
 title: Deploying a Kubernetes Operator based on Helm on OVHcloud Managed Kubernetes
-slug: deploying-helm-operator
 excerpt: Learn how to deploy Kubernetes operator on OVHcloud Managed Kubernetes with Helm and the Operator SDK
-section: Operators
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/deploying-helm-operator/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-helm-operator'
 updated: 2022-02-23
 ---
 
@@ -23,8 +20,7 @@ updated: 2022-02-23
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -66,7 +62,7 @@ As we can see in the tutorial below, the capability of the developed operator de
 
 ## Requirements
 
-This tutorial assumes that you already have a Kubernetes cluster managed by OVHcloud, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial assumes that you already have a Kubernetes cluster managed by OVHcloud, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 ## Instructions
 
@@ -580,7 +576,7 @@ WORKDIR ${HOME}
 ```
 
 Then, build the image and push it to your favorite registry.
-In order to create a private registry, you can follow the [how to create an OVHcloud private registry](../../private-registry/creating-a-private-registry/) tutorial.
+In order to create a private registry, you can follow the [how to create an OVHcloud private registry](/pages/platform/private-registry/creating-a-private-registry) tutorial.
 
 ```bash
 docker login [YOUR_PRIVATE_REGISTRY_URL]
@@ -866,7 +862,7 @@ kubectl delete crds/ovhnginxs.tutorials.ovhcloud.com
 
 ## What’s next
 
-To go deeper on the Kubernetes operators topic, follow the other [Kubernetes tutorials](../) in the `Operators` section.
+To go deeper on the Kubernetes operators topic, follow the other [Kubernetes tutorials](/us/es/kubernetes/) in the `Operators` section.
 
 ## Go further
 

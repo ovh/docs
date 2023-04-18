@@ -1,9 +1,6 @@
 ---
 title: Managing persistent volumes in Tanzu Kubernetes Grid
-slug: tanzu-tkgm-persistent-volumes
 excerpt: How to deploy an application in Tanzu Kubernetes Grid with persistent volumes
-section: Tanzu
-order: 05
 updated: 2022-11-10
 ---
 
@@ -24,7 +21,7 @@ updated: 2022-11-10
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - A user account with access to vSphere
-- You need to have deployed the **Workload** **TKG** cluster using the [Tanzu Management Cluster Grid administration guide](https://docs.ovh.com/asia/en/private-cloud/tanzu-tkgm-management).
+- You need to have deployed the **Workload** **TKG** cluster using the [Tanzu Management Cluster Grid administration guide](/pages/cloud/private-cloud/tanzu_tkgm_03manage).
 
 ## Introduction
 
@@ -42,7 +39,7 @@ You can create additional Storage Classes for each *WorkLoad* cluster.
 
 ## Instructions
 
-We will connect to a *WorkLoad* cluster from the console of the **Bootstrap** virtual machine. You can use the [Tanzu Management Cluster Grid administration](https://docs.ovh.com/asia/en/private-cloud/tanzu-tkgm-management) guide to create and manage a workload cluster.
+We will connect to a *WorkLoad* cluster from the console of the **Bootstrap** virtual machine. You can use the [Tanzu Management Cluster Grid administration](/pages/cloud/private-cloud/tanzu_tkgm_03manage) guide to create and manage a workload cluster.
 
 From the **Bootstrap** virtual machine console, run this command to view the contexts that can be used on this cluster:
 
@@ -213,11 +210,11 @@ Go back to the `Datacenter`{.action} at the root of the datacenters, click on th
 
 ## Go further <a name="gofurther"></a>
 
-[Introduction to Tanzu Kubernetes Grid at OVHcloud](https://docs.ovh.com/asia/en/private-cloud/tanzu-tkgm-installation)
+[Introduction to Tanzu Kubernetes Grid at OVHcloud](/pages/cloud/private-cloud/tanzu_tkgm_02installation)
 
-[Installing Tanzu Kubernetes Grid](https://docs.ovh.com/asia/en/private-cloud/tanzu-tkgm-installation)
+[Installing Tanzu Kubernetes Grid](/pages/cloud/private-cloud/tanzu_tkgm_02installation)
 
-[Managing Tanzu Management Cluster Grid](https://docs.ovh.com/asia/en/private-cloud/tanzu-tkgm-management)
+[Managing Tanzu Management Cluster Grid](/pages/cloud/private-cloud/tanzu_tkgm_03manage)
 
 [Introducing VMware Tanzu Kubernetes Grid](https://tanzu.vmware.com/kubernetes-grid)
 

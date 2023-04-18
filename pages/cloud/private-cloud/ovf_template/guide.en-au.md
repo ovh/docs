@@ -1,9 +1,6 @@
 ---
 title: Deploy an OVF Linux, Windows Server and Windows SQL Server template
-slug: applying-ovh-template
 excerpt: Find out how to deploy a Linux, Windows Server or Windows SQL Server template
-section: Virtual machine management
-order: 02
 updated: 2020-10-12
 ---
 

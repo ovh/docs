@@ -1,9 +1,6 @@
 ---
 title: Como gerir o seu módulo em 1 clique?
 excerpt: Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud
-slug: 1-click-module-management
-section: CMS
-order: 02
 updated: 2022-09-05
 ---
 
@@ -29,7 +26,7 @@ Os módulos 1 clique permitem a instalação fácil e rápida de um software on-
 ## Requisitos
 
 - Ter um [serviço de alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/) que permite a instalação de um módulo 1 clique.
-- Ter criado um módulo 1 clique no alojamento (Se ainda não o fez, siga as instruções deste [manual](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/)).
+- Ter criado um módulo 1 clique no alojamento (Se ainda não o fez, siga as instruções deste [manual](/pages/web/hosting/cms_install_1_click_modules)).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
@@ -108,7 +105,7 @@ No entanto, se encontrar dificuldades, recomendamos vivamente que efetue a opera
 
 > [!warning]
 >
-> O backup dos seus dados faz parte das operações essenciais à [segurança dos seus websites](https://docs.ovh.com/pt/hosting/secure-website/). Sugerimos que importe regularmente e **antes de eliminar** o backup dos seus dados para um suporte local, como uma pen USB ou um disco rígido externo, de acordo com as instruções deste [manual](https://docs.ovh.com/pt/hosting/exportar-o-seu-website/).
+> O backup dos seus dados faz parte das operações essenciais à [segurança dos seus websites](/pages/web/hosting/secure_your_website). Sugerimos que importe regularmente e **antes de eliminar** o backup dos seus dados para um suporte local, como uma pen USB ou um disco rígido externo, de acordo com as instruções deste [manual](/pages/web/hosting/exporter-son-site-web).
 >
 
 #### Etapa 1: identificar a base de dados do módulo <a name="step1"></a>
@@ -119,7 +116,7 @@ Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e nã
 
 Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da `Pasta raiz`: trata-se do diretório no qual se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
 
-Aceda ao [espaço FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) do seu alojamento. Abra a `Pasta raiz` encontrada anteriormente no separador `Multisite`{.action} e procure o ficheiro de configuração do seu módulo:
+Aceda ao [espaço FTP](/pages/web/hosting/ftp_connection) do seu alojamento. Abra a `Pasta raiz` encontrada anteriormente no separador `Multisite`{.action} e procure o ficheiro de configuração do seu módulo:
 
 - Para WordPress : **"wp-config.php"** (o nome da base de dados aparece com a menção **"DB_NAME"**).
 - Para Joomla! : **"configuration.php"** (o nome da base de dados aparece com a menção **"public $db"**).
@@ -128,7 +125,7 @@ Aceda ao [espaço FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazena
 
 #### Etapa 2: guardar o seu módulo
 
-Para guardar o seu site, siga as instruções deste [guia](https://docs.ovh.com/pt/hosting/exportar-o-seu-website/) para recuperar os seus ficheiros no espaço FTP do seu alojamento e a sua base de dados.
+Para guardar o seu site, siga as instruções deste [guia](/pages/web/hosting/exporter-son-site-web) para recuperar os seus ficheiros no espaço FTP do seu alojamento e a sua base de dados.
 
 #### Etapa 3: eliminar o módulo
 
@@ -143,7 +140,7 @@ A seguir, clique no botão `...`{.action} à direita da linha que designa o seu 
 
 > [!warning]
 >
-> A eliminação do módulo 1 clique **não levará automaticamente à eliminação da base de dados**. Se ativar a instalação de um novo CMS sem eliminar previamente a base de dados do anterior (e o alojamento não permitir a criação automática de uma nova base de dados), aparecerá a mensagem "[Ocorreu um erro aquando do carregamento das informações (You need at least one free database)](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/#ocorreu-um-erro-aquando-do-carregamento-das-informacoes-you-need-at-least-one-free-database)" na sua Área de Cliente.
+> A eliminação do módulo 1 clique **não levará automaticamente à eliminação da base de dados**. Se ativar a instalação de um novo CMS sem eliminar previamente a base de dados do anterior (e o alojamento não permitir a criação automática de uma nova base de dados), aparecerá a mensagem "[Ocorreu um erro aquando do carregamento das informações (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#ocorreu-um-erro-aquando-do-carregamento-das-informacoes-you-need-at-least-one-free-database)" na sua Área de Cliente.
 >
 > Se dispõe de uma subscrição [Hosting Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ou se já criou quatro bases de dados sobre o seu alojamento [Hosting Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Hosting Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), deverá eliminar a base de dados identificada [no passo 1](#step1) **ANTES** de poder criar um novo módulo 1 clique.
 >
@@ -154,7 +151,7 @@ Antes de reiniciar a instalação de um novo módulo, verifique que as tarefas d
 
 ### Boas práticas
 
-Para proteger o seu site, siga as instruções deste [guia](https://docs.ovh.com/pt/hosting/secure-website/).
+Para proteger o seu site, siga as instruções deste [guia](/pages/web/hosting/secure_your_website).
 
 Adicione ferramentas de teste do tipo CAPTCHA aos formulários do seu site.
 
@@ -167,7 +164,7 @@ Não instale no seu site plugins ou templates que não foram recomendados pelas 
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Resolver os erros mais frequentes associados aos módulos 1 clique](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/).
+[Resolver os erros mais frequentes associados aos módulos 1 clique](/pages/web/hosting/diagnostic_errors_module1clic).
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

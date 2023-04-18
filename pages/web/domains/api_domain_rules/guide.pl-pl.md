@@ -1,11 +1,8 @@
 ---
 title: "Managing Eligibility Rules"
-slug: api-rules
 excerpt: "Description of the technical format of the domain name eligibility rules"
-section: "Domeny API"
-order: 6
 routes:
-  canonical: "https://docs.ovh.com/gb/en/domains/api-rules/"
+  canonical: "/pages/web/domains/api_domain_intro-rules/"
 updated: 2022-05-05
 ---
 
@@ -15,20 +12,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](../api) page if needed.
+> To follow this guide, make sure you are connected to OVHcloud API. You may find more information on the [API introduction](/pages/web/domains/api_domain_intro) page if needed.
 
 <!-- Begin TOC -->
 
 ## Table of Contents
 
-- [Introduction](../api)
-- [Order a Domain Name](../api-order)
-- [Tasks Management](../api-tasks)
-- [Manage Contacts of a Domain Name](../api-contact)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Order a Domain Name](/pages/web/domains/api_domain_intro-order)
+- [Tasks Management](/pages/web/domains/api_domain_intro-tasks)
+- [Manage Contacts of a Domain Name](/pages/web/domains/api_domain_contacts)
 - **Managing Eligibility Rules**
-- [Configure the Display of Contact Data in the Whois](../api-whois)
-- [Configure the DNS of your Domain Name](../api-dns)
-- [Transfer a Domain Name](../api-transfer)
+- [Configure the Display of Contact Data in the Whois](/pages/web/domains/api_domain_intro-whois)
+- [Configure the DNS of your Domain Name](/pages/web/domains/api_domain_dns)
+- [Transfer a Domain Name](/pages/web/domains/api_domain_intro-transfer)
 <!-- End TOC -->
 
 ## Introduction
@@ -502,7 +499,7 @@ Let's start with an example imposing only one rule for ordering a domain name. T
 >> }
 >> ```
 
-With this rule, when ordering, the domain must have a [configuration](../api-order/#configurations-management) labelled `ACCEPT_CONDITIONS` with a boolean value of `true`, `1` or `"1"`.
+With this rule, when ordering, the domain must have a [configuration](/pages/web/domains/api_domain_intro-order/#configurations-management) labelled `ACCEPT_CONDITIONS` with a boolean value of `true`, `1` or `"1"`.
 
 ### The operators "and" and "or"
 
@@ -777,9 +774,7 @@ This rule indicates that the `ACCEPT_CONDITIONS` configuration is mandatory (con
 
 #### Example on a contact
 
-Let's now take the more concrete example explained at the beginning of this section: organisation name is required for a business/associative contact (`legalForm` other than `individual`).
-
-<!-- prettier-ignore -->
+Let's now take the more concrete example explained at the beginning of this <!-- prettier-ignore -->
 > [!tabs]
 > Hide
 >> Click "Show" to see the JSON
@@ -2823,7 +2818,7 @@ The request body is a JSON that can contain the following objects:
 
 > [!primary]
 >
-> For more information on the contact types, please consult the [relevant documentation](../api-contact)
+> For more information on the contact types, please consult the [relevant documentation](/pages/web/domains/api_domain_contacts)
 
 Each of these objects is optional. If the rule engine needs one of them to check a rule, an error will be returned.
 A special feature of the `trade` and `transfer` actions is that if a required object is missing, it will be retrieved automatically from the currently existing service.

@@ -1,8 +1,6 @@
 ---
 title: Eine neue Windows Server Installation konfigurieren
-slug: windows-first-config
 excerpt: Erfahren Sie hier, wie Sie Remote-Desktop-Verbindung, ICMP Antwort und Bootlogs aktivieren
-section: Erste Schritte
 updated: 2023-02-15
 ---
 
@@ -27,7 +25,7 @@ Nach der Neuinstallation eines Windows Server Betriebssystems auf einem VPS kön
 
 ### Schritt 1: KVM Zugang
 
-Um auf die KVM-Konsole Ihres VPS zuzugreifen, folgen Sie [unserer Anleitung](https://docs.ovh.com/de/vps/verwendung_von_kvm_fur_vps/).
+Um auf die KVM-Konsole Ihres VPS zuzugreifen, folgen Sie [unserer Anleitung](/pages/cloud/vps/using_kvm_for_vps).
 
 ### Schritt 2: Die Installation von Windows abschließen
 
@@ -62,12 +60,12 @@ Hier können Sie jeweils die Eingangsregeln für `ICMP` und `Remote Desktop` akt
 Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
 
 > [!primary]
-> Um Ihr Windows-System mithilfe von Firewall-Regeln abzusichern, verwenden Sie unsere Anleitung "[Firewall auf einem Windows VPS konfigurieren](https://docs.ovh.com/de/vps/vps-firewall-windows/)".
+> Um Ihr Windows-System mithilfe von Firewall-Regeln abzusichern, verwenden Sie unsere Anleitung "[Firewall auf einem Windows VPS konfigurieren](/pages/cloud/vps/activate-port-firewall-soft-win)".
 >
 
 ### Windows Bootlogs aktivieren (optional)
 
-Loggen Sie sich via Remote-Desktop-Verbindung oder [KVM](https://docs.ovh.com/de/vps/verwendung_von_kvm_fur_vps/) auf dem Server ein. Öffnen Sie das Windows Startmenü und klicken Sie auf `Run`{.action}.
+Loggen Sie sich via Remote-Desktop-Verbindung oder [KVM](/pages/cloud/vps/using_kvm_for_vps) auf dem Server ein. Öffnen Sie das Windows Startmenü und klicken Sie auf `Run`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -81,7 +79,7 @@ Aktivieren Sie im neuen Fenster die Option `Boot log`. Klicken Sie auf `OK`{.act
 
 Bein nächsten Hochfahren des Servers werden die Logs in eine TXT-Datei geschrieben. Der Dateipfad lautet ```C:\Windows\ntbtlog.txt```.
 
-Um die in der Datei gespeicherten Protokolle im Rescue-Modus einzusehen, folgen Sie der [Anleitung zum Rescue-Modus für VPS](https://docs.ovh.com/de/vps/rescue/). 
+Um die in der Datei gespeicherten Protokolle im Rescue-Modus einzusehen, folgen Sie der [Anleitung zum Rescue-Modus für VPS](/pages/cloud/vps/rescue). 
 
 ## Weiterführende Informationen
 

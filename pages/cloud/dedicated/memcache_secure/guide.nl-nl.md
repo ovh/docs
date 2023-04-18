@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Beveiliging van een server met Memcached
-slug: server-beveiliging-met-memcached
 excerpt: Leer hoe u uw Memcached dienst beveiligt
-section: Geavanceerd gebruik
 updated: 2018-03-02
 ---
 

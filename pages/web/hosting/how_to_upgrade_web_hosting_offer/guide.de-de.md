@@ -1,9 +1,6 @@
 ---
 title: Webhosting-Dienst anpassen
 excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Dienstes ändern"
-slug: how_to_change_web_hosting_offer
-section: Webseitenoptimierung
-order: 2
 updated: 2023-01-03
 ---
 
@@ -15,7 +12,7 @@ updated: 2023-01-03
 
 ## Ziel 
 
-Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erlaubt es Ihnen, [die Kapazitäten Ihrer Webhosting Dienste](https://www.ovhcloud.com/de/web-hosting/) zu erhöhen, um über mehr Rechenleistung, Speicherplatz, Datenbanken, E-Mail-Adressen zu verfügen. Zusätzliche Funktionen wie [Mailinglisten](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) (ab [Pro Dienst](https://www.ovhcloud.com/de/web-hosting/professional-offer/)) oder [Private SQL](https://www.ovhcloud.com/de/web-hosting/options/private-sql/) (inkludiert in Webhostings der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/)) werden mit einem Upgrade ebenfalls verfügbar.
+Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erlaubt es Ihnen, [die Kapazitäten Ihrer Webhosting Dienste](https://www.ovhcloud.com/de/web-hosting/) zu erhöhen, um über mehr Rechenleistung, Speicherplatz, Datenbanken, E-Mail-Adressen zu verfügen. Zusätzliche Funktionen wie [Mailinglisten](/pages/web/emails/feature_mailing_list) (ab [Pro Dienst](https://www.ovhcloud.com/de/web-hosting/professional-offer/)) oder [Private SQL](https://www.ovhcloud.com/de/web-hosting/options/private-sql/) (inkludiert in Webhostings der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/)) werden mit einem Upgrade ebenfalls verfügbar.
 
 **Diese Anleitung erklärt, wie Sie Ihr OVHcloud Hosting-Abonnement ohne Dienstunterbrechung skalieren können.**
 
@@ -59,7 +56,7 @@ Bevor Sie Ihre Umstellung auf eine niedrigere Reihe vornehmen, überprüfen Sie 
 
 #### 1 - Anzahl der Websites
 
-Mit dem Angebot [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) können Sie auf Ihrem Hosting nur einen Domainnamen mit [Multisite](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) verwenden.
+Mit dem Angebot [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) können Sie auf Ihrem Hosting nur einen Domainnamen mit [Multisite](/pages/web/hosting/multisites_configure_multisite) verwenden.
 
 Bevor Sie vom [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) zu [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
 
@@ -75,7 +72,7 @@ Nachdem Sie Ihre Datenbanken gelöscht haben, denken Sie daran, die genutzte Quo
 
 #### 3 - Web Cloud Databases
 
-Wenn Sie die in Ihrem Hosting der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthaltene [Web Cloud Databases](https://docs.ovh.com/de/hosting/erste-schritte-mit-clouddb/#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers) verwenden und Ihr Hosting auf [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) umstellen möchten, gehen Sie in den Bereich `Hosting-Pakete`{.action} Ihres Kundencenters.<br>
+Wenn Sie die in Ihrem Hosting der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthaltene [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers) verwenden und Ihr Hosting auf [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) umstellen möchten, gehen Sie in den Bereich `Hosting-Pakete`{.action} Ihres Kundencenters.<br>
 Klicken Sie im Bereich `Konfiguration`{.action} auf den Button `...`{.action} und dann auf `Abtrennen`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
@@ -84,12 +81,12 @@ Mit dieser Aktion können Sie einen Web Cloud Databases Dienst bestellen, der un
 
 Wenn Sie diese Daten nicht speichern möchten, können Sie auch einfach den Private SQL löschen, bevor Sie zum *Pro* Angebot wechseln.
 
-1. Speichern Sie Ihre Daten gemäß den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/hosting/backup-eine-datenbank-exportieren/).<br>
+1. Speichern Sie Ihre Daten gemäß den Anweisungen in [dieser Anleitung](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Löschen Sie Ihren Web Cloud Databases Server über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie hierzu oben rechts auf Ihren Namen und dann auf der `Dienstverwaltung`{.action}. Klicken Sie dann rechts in der betreffenden Zeile auf `...`{.action} und dann auf `Mein SQL Private Hosting kündigen`{.action}.
 
 #### 4 - FTP Bereich
 
-Bevor Sie Ihr Webhosting auf ein kleineres Angebot umstellen, stellen Sie sicher, dass im [gewünschten Angebot ausreichend FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) zur Verfügung steht, damit die Dateien Ihres aktuellen Webhostings importiert werden können.
+Bevor Sie Ihr Webhosting auf ein kleineres Angebot umstellen, stellen Sie sicher, dass im [gewünschten Angebot ausreichend FTP-Speicherplatz](/pages/web/hosting/ftp_connection) zur Verfügung steht, damit die Dateien Ihres aktuellen Webhostings importiert werden können.
 
 Das auf Ihrem FTP-Hosting verwendete Quota ist im Bereich `Hosting-Pakete`{.action} Ihres Kundencenters einsehbar. Sie finden die Quota-Anzeige im Tab `Allgemeine Informationen`{.action} unter `Speicherplatz`.
 
@@ -97,7 +94,7 @@ Das auf Ihrem FTP-Hosting verwendete Quota ist im Bereich `Hosting-Pakete`{.acti
 
 #### 5 - E-Mail-Adressen
 
-Überprüfen Sie außerdem, dass Ihr neues Angebot eine ausreichende Anzahl verfügbarer E-Mail-Accounts bietet. Falls nicht, löschen Sie die überflüssigen Accounts, nachdem Sie diese gegebenenfalls [gesichert haben](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/).
+Überprüfen Sie außerdem, dass Ihr neues Angebot eine ausreichende Anzahl verfügbarer E-Mail-Accounts bietet. Falls nicht, löschen Sie die überflüssigen Accounts, nachdem Sie diese gegebenenfalls [gesichert haben](/pages/web/emails/manual_email_migration).
 
 Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, können Sie vor der Umstellung Ihres Hostings auf ein niedrigeres Angebot auch ein neues **MX Plan E-Mail-Angebot bestellen**. Klicken Sie im Bereich `E-Mails`{.action} in Ihrem Kundencenter auf das betreffende Angebot und dann auf den Button `...`{.action} rechts neben `Angebot`. Klicken Sie anschließend auf `Zu einem anderen Angebot wechseln`{.action}.
 
@@ -105,7 +102,7 @@ Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, können Sie vo
 
 #### 6 - Mailinglisten
 
-Die [Mailinglisten-Funktion](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) ist optional bei den [Basic Hostings](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/).
+Die [Mailinglisten-Funktion](/pages/web/emails/feature_mailing_list) ist optional bei den [Basic Hostings](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/).
 
 Um Ihr Hosting auf ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umzustellen, müssen Sie zunächst Mailinglisten entfernen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) bestellen.
 
@@ -119,7 +116,7 @@ Wenn Sie alle Punkte überprüft haben, können Sie [Ihr Angebot wechseln](#modi
 
 #### Sie besitzen ein Start 10M Angebot <a name="start10m"></a>
 
-Sie können das [Start 10M](https://docs.ovh.com/de/hosting/start10m-aktivieren/) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](https://www.ovhcloud.com/de/web-hosting/).
+Sie können das [Start 10M](/pages/web/hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](https://www.ovhcloud.com/de/web-hosting/).
 
 Folgen [Sie diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 
@@ -163,9 +160,9 @@ Folgen [Sie diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Statistiken und Logs eines Webhostings einsehen](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/)
+[Statistiken und Logs eines Webhostings einsehen](/pages/web/hosting/logs_and_statistics)
 
-[Optimierung der Performance Ihrer Webseite](https://docs.ovh.com/de/hosting/webhosting_optimierung_der_performance_ihrer_webseite/)
+[Optimierung der Performance Ihrer Webseite](/pages/web/hosting/optimise_your_website_performance)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

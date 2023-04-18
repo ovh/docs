@@ -1,10 +1,7 @@
 ---
 title: 'Korzystanie z list mailingowych i zarządzanie nimi'
 excerpt: 'Z tego przewodnika dowiesz się, jak korzystać z list mailingowych'
-slug: hosting_www_listy_mailingowe
 legacy_guide_number: g1596
-section: 'Funkcjonalności kont e-mail'
-order: 03
 updated: 2020-03-19
 ---
 

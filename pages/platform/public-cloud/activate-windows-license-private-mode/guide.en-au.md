@@ -1,9 +1,6 @@
 ---
 title: 'Activating a Windows licence for an instance in private mode'
-slug: activate-windows-licence-private-mode-instance
 excerpt: 'Find out how to activate a Windows licence on an instance in private mode'
-section: Getting started
-order: 3
 updated: 2023-01-25
 ---
 
@@ -18,11 +15,11 @@ In this case, you must activate the licence manually to access all Windows servi
 
 ## Requirements
 
-- A [Public Cloud project](https://docs.ovh.com/au/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
+- A [Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- An [OpenStack user account](https://docs.ovh.com/au/en/public-cloud/creation-and-deletion-of-openstack-user/)
+- An [OpenStack user account](/pages/platform/public-cloud/create_and_delete_a_user)
 
-We recommend that you read our guide on [Accessing the Horizon interface](https://docs.ovh.com/au/en/public-cloud/horizon/) to familiarise yourself with Horizon.
+We recommend that you read our guide on [Accessing the Horizon interface](/pages/platform/public-cloud/introducing_horizon) to familiarise yourself with Horizon.
 
 ## Instructions
 
@@ -30,7 +27,7 @@ We recommend that you read our guide on [Accessing the Horizon interface](https:
 
 #### Via Horizon 
 
-Log in to the [Horizon](https://horizon.cloud.ovh.net/auth/login/) interface using the method listed in the [first part of this guide](https://docs.ovh.com/au/en/publiccloud/network-services/public-cloud-vrack/#horizon).
+Log in to the [Horizon](https://horizon.cloud.ovh.net/auth/login/) interface using the method listed in the [first part of this guide](/pages/platform/network-services/getting-started-07-creating-vrack#horizon).
 
 Choose the proper work zone.
 
@@ -52,8 +49,8 @@ Select your interface and confirm.
 
 Before continuing, we recommend reading these guides:
 
-- [Preparing an environment for using the OpenStack API](https://docs.ovh.com/au/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/). 
-- [Setting OpenStack environment variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/).
+- [Preparing an environment for using the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api). 
+- [Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 First, retrieve all the necessary information:
 
@@ -183,6 +180,6 @@ slmgr.vbs -dli
 
 ## Go further
 
-[Find out how to change the activation key of your Windows Server](https://docs.ovh.com/au/en/dedicated/windows-key/).
+[Find out how to change the activation key of your Windows Server](/pages/cloud/dedicated/windows_key).
 
 Join our community of users on <https://community.ovh.com/en/>.

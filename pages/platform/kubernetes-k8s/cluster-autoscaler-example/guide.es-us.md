@@ -1,9 +1,7 @@
 ---
 title: Cluster autoscaler example
-slug: cluster-autoscaler-example
-section: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/cluster-autoscaler-example/'
+    canonical: '/pages/platform/kubernetes-k8s/cluster-autoscaler-example'
 updated: 2022-05-17
 ---
 
@@ -37,15 +35,15 @@ During the day-to-day life of your cluster, you may want to dynamically adjust t
 
 ## Before you begin
 
-This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial assumes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-It also assumes that you have read the [Using the cluster autoscaler](../using-cluster-autoscaler/) guide.
+It also assumes that you have read the [Using the cluster autoscaler](/pages/platform/kubernetes-k8s/using-cluster-autoscaler) guide.
 
 ## Enabling the autoscaling on the node pool
 
 The easiest way to enable the autoscaler is using the Kubernetes API, for example using `kubectl`.
 
-As explained in the [How nodes and node pools work](../managing-nodes/) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (groups of nodes sharing the same configuration).
+As explained in the [How nodes and node pools work](/pages/platform/kubernetes-k8s/managing-nodes) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (groups of nodes sharing the same configuration).
 
 Autoscale is configured on a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools.
 
@@ -57,7 +55,7 @@ You can activate the autoscaler on several node pools, each of which can have a 
 > 
 > A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload. 
 
-When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb) or directly [using the Kubernetes API](../managing-nodes/).
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb) or directly [using the Kubernetes API](/pages/platform/kubernetes-k8s/managing-nodes).
 
 To list node pools, you can use:
 
@@ -353,9 +351,9 @@ prime-numbers-5ffd8d7b84-8xzqm   1/1     Running   0          8m3s
 prime-numbers-5ffd8d7b84-sn296   1/1     Running   0          8m3s
 </code></pre>
 
-The autoscaler will detect that the nodes are under the value `scale-down-utilization-threshold` parameter (the node utilization level, defined as sum of requested resources divided by capacity, below which a node can be considered for  scale down, [by default 0.5](../configuring-cluster-autoscaler/)), and marks the nodes 2 and 3 as unneeded. 
+The autoscaler will detect that the nodes are under the value `scale-down-utilization-threshold` parameter (the node utilization level, defined as sum of requested resources divided by capacity, below which a node can be considered for  scale down, [by default 0.5](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler)), and marks the nodes 2 and 3 as unneeded. 
 
-After some minutes according to the value of `scale-down-unneeded-time` (parameter that sets how long a node should be unneeded before it is eligible for scale down, [10 minutes by default](../configuring-cluster-autoscaler/)), the node will be deleted and the cluster will be scaled down.
+After some minutes according to the value of `scale-down-unneeded-time` (parameter that sets how long a node should be unneeded before it is eligible for scale down, [10 minutes by default](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler)), the node will be deleted and the cluster will be scaled down.
 
 After 10 minutes we are back to 2 nodes:
 
@@ -393,6 +391,6 @@ In this tutorial we have seen how to enable the autoscaler on a node pool on you
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/us/es/kubernetes/).
 
 Join our [community of users](https://community.ovh.com/en/).

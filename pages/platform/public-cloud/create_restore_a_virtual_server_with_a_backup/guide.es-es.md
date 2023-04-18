@@ -1,10 +1,7 @@
 ---
 title: 'Crear o restaurar un servidor virtual a partir de un snapshot'
 excerpt: 'Crear o restaurar un servidor virtual a partir de un snapshot'
-slug: crear_o_restaurar_un_servidor_virtual_a_partir_de_un_snapshot
 legacy_guide_number: g1882
-section: 'Gestión de las instancias desde el área de cliente'
-order: 02
 updated: 2021-03-19
 ---
 
@@ -16,7 +13,7 @@ updated: 2021-03-19
 
 ## Objetivo
 
-Desde el área de cliente de OVHcloud podrá crear [copias de seguridad de sus instancias](../guardar_copia_de_seguridad_de_una_instancia/) en pocos clics y automatizar el proceso.
+Desde el área de cliente de OVHcloud podrá crear [copias de seguridad de sus instancias](/pages/platform/public-cloud/save_an_instance) en pocos clics y automatizar el proceso.
 Quizá necesite, en algún momento, restaurar su instancia utilizando un snapshot, por ejemplo, por haber configurado de manera incorrecta su instancia. Existen dos razones principales por las que puede utilizar estas copias de seguridad de instancias:
 
 - Crear una instancia basada en la copia de seguridad para duplicar la instancia de origen. Por ejemplo, si configura una infraestructura de balanceo de carga (load balancing).
@@ -26,7 +23,7 @@ Quizá necesite, en algún momento, restaurar su instancia utilizando un snapsho
 
 ## Requisitos
 
-- Disponer de un snapshot de una instancia de Public Cloud. Para ello, consulte [la guía dedicada a la creación de un snapshot](../guardar_copia_de_seguridad_de_una_instancia/).
+- Disponer de un snapshot de una instancia de Public Cloud. Para ello, consulte [la guía dedicada a la creación de un snapshot](/pages/platform/public-cloud/save_an_instance).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
@@ -53,11 +50,11 @@ Algunos elementos están predefinidos:
 
 Asigne un nombre a la nueva instancia, la llave SSH, el vRack y el período de facturación y haga clic en el botón `Crear la instancia`{.action}.
 
-Para más información sobre la creación de una instancia, consulte [la presente guía](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
+Para más información sobre la creación de una instancia, consulte [la presente guía](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia/).
 
 > [!primary]
 >
-> Para crear una instancia en un datacenter diferente al del snapshot, habrá que transferirla a la zona correspondiente. Remítase entonces a la guía que explica sobre cómo [transferir un snapshot de una instancia entre datacenters](../transferir-backup-de-instancia-entre-datacenters/).
+> Para crear una instancia en un datacenter diferente al del snapshot, habrá que transferirla a la zona correspondiente. Remítase entonces a la guía que explica sobre cómo [transferir un snapshot de una instancia entre datacenters](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 >
 
 ### Restaurar una instancia a partir de un snapshot
@@ -90,8 +87,8 @@ La instancia tendrá estado de `Reinstalación` hasta que el proceso haya finali
 
 ## Más información
 
-[Creación y conexión a una primera instancia de Public Cloud](../empezar-con-una-instancia-public-cloud/)
+[Creación y conexión a una primera instancia de Public Cloud](/pages/platform/public-cloud/first_steps_with_public_cloud_instance)
 
-[Guardar una copia de seguridad de una instancia](../guardar_copia_de_seguridad_de_una_instancia/)
+[Guardar una copia de seguridad de una instancia](/pages/platform/public-cloud/save_an_instance)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

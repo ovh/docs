@@ -1,11 +1,8 @@
 ---
 title: 'Como utilizar a API de vScope'
-slug: vscopeapi
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/vscopeapi/'
+    canonical: '/pages/cloud/private-cloud/how-to-use-vscope-api'
 excerpt: 'A API vScope permite-lhe utilizar os dados de monitorização nas suas aplicações'
-section: 'Serviços e opções OVHcloud'
-order: 1
 updated: 2020-11-18
 ---
 

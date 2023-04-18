@@ -1,12 +1,9 @@
 ---
 title: "Redimensionnez l'espace de stockage de votre cluster (EN)"
-slug: resize-cluster-storage
 excerpt:
-section: Guides généraux
-order: 110
 updated: 2023-02-15
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/resize-cluster-storage/'
+    canonical: '/pages/platform/databases/databases_11_resize_your_cluster_storage'
 ---
 
 **Last updated 15th February 2023**

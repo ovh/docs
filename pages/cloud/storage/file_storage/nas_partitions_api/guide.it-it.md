@@ -1,9 +1,6 @@
 ---
 title: NAS-HA - Gestione delle partizioni tramite API
-slug: nas/partitions-api
 excerpt: Come gestire le partizioni NAS-HA tramite l'API OVHcloud
-section: NAS-HA
-order: 08
 updated: 2022-07-20
 ---
 
@@ -23,7 +20,7 @@ Il servizio NAS-HA OVHcloud ti permette di gestire uno storage di file accessibi
 ## Prerequisiti
 
 - Un servizio [NAS-HA OVHcloud](https://www.ovh.it/nas/)
-- Consulta la nostra guida sui [primi passi con l'API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/) per familiarizzare con l'APIv6 OVHcloud
+- Consulta la nostra guida sui [primi passi con l'API OVHcloud](/pages/account/api/first-steps) per familiarizzare con l'APIv6 OVHcloud
 
 ## Procedura
 
@@ -284,8 +281,8 @@ Per eliminare una partizione, utilizza questa pagina:
 
 ## Per saperne di più
 
-[Eseguire il mount di un NAS tramite NFS](https://docs.ovh.com/it/storage/file-storage/nas/nfs/)
+[Eseguire il mount di un NAS tramite NFS](/pages/cloud/storage/file_storage/nas_nfs)
 
-[Configura il tuo NAS su Windows Server tramite CIFS](https://docs.ovh.com/it/storage/file-storage/nas/cifs/)
+[Configura il tuo NAS su Windows Server tramite CIFS](/pages/cloud/storage/file_storage/nas_cifs)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

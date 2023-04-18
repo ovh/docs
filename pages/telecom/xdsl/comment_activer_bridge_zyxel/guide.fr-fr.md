@@ -1,8 +1,6 @@
 ---
 title: 'Comment activer le mode bridge sur un modem Zyxel'
-slug: comment-activer-bridge-zyxel
 excerpt: "Découvrez comment activer le mode bridge sur un modem Zyxel afin d'utiliser votre propre routeur"
-section: 'Configurations techniques avancées'
 updated: 2022-12-08
 ---
 
@@ -24,7 +22,7 @@ Le mode bridge est utile si vous souhaitez que votre modem ne se comporte plus c
 
 > [!primary]
 >
-> Ce guide ne concerne que les modems de marque Zyxel. Pour activer le mode bridge sur un modem Thomson ou Technicolor, l'activation se fait depuis l'espace client OVHcloud. Pour cela, vous pouvez consulter le guide [Configurer sa box à partir de l’espace client OVHcloud](../configuration_du_modem_a_partir_de_votre_espace_client/)
+> Ce guide ne concerne que les modems de marque Zyxel. Pour activer le mode bridge sur un modem Thomson ou Technicolor, l'activation se fait depuis l'espace client OVHcloud. Pour cela, vous pouvez consulter le guide [Configurer sa box à partir de l’espace client OVHcloud](/pages/telecom/xdsl/configuration_du_modem_a_partir_de_votre_espace_client)
 >
 
 ### Étape 1 : Accéder à l'outil de configuration à distance
@@ -85,7 +83,7 @@ Validez le changement, le bridge est désormais activé sur les ports LAN 1, 2 e
 
 ### Étape 5 : Revenir en mode routeur
 
-Pour revenir en mode routeur suivez le guide [Redémarrer ou réinitialiser une box OVHcloud](../redemarrer-reinitialiser-modem-adsl-ovh/#reinitialiser-votre-box-ovh_1) pour réinitialiser votre modem Zyxel et rétablir sa configuration par défaut.
+Pour revenir en mode routeur suivez le guide [Redémarrer ou réinitialiser une box OVHcloud](/pages/telecom/xdsl/restart_reboot_modem#reinitialiser-votre-box-ovh_1) pour réinitialiser votre modem Zyxel et rétablir sa configuration par défaut.
 
 ## Aller plus loin
 

@@ -1,9 +1,6 @@
 ---
 title: Como evitar a passagem para o modo leitura apenas do disco da sua VM em Linux
-slug: como-evitar-a-passagem-para-o-modo-leitura-apenas-do-disco-da-sua-VM-em-Linux
 excerpt: Evitar a passagem em apenas leitura do disco da sua VM em Linux
-section: Gestão das máquinas virtuais
-order: 10
 updated: 2020-06-25
 ---
 

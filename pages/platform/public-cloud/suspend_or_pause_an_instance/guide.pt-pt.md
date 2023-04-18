@@ -1,9 +1,6 @@
 ---
 title: Suspender ou colocar em pausa uma instância
-slug: suspender_ou_colocar_em_pausa_uma_instancia
 legacy_guide_number: g1781
-section: Gestão do projeto
-order: 3
 updated: 2021-09-20
 ---
 
@@ -25,9 +22,9 @@ updated: 2021-09-20
 
 ## Requisitos
 
-- uma [instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) sobre faturação à **hora**
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} o à [interface Horizon](https://docs.ovh.com/pt/public-cloud/horizon/)
-- Conhecimento da [API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/) e das [variáveis OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/)
+- uma [instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) sobre faturação à **hora**
+- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} o à [interface Horizon](/pages/platform/public-cloud/introducing_horizon)
+- Conhecimento da [API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) e das [variáveis OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instruções
 
@@ -92,8 +89,8 @@ Para ver o snapshot, no menu `Compute`{.action}, clique em `Images`{.action}.
 
 Antes de continuar, recomendamos que consulte os seguintes guias:
 
-- [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/)
+- [Preparar o ambiente para utilizar a API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 Quando o ambiente estiver pronto, utilize o seguinte comando:
 

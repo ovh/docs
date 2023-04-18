@@ -1,9 +1,6 @@
 ---
 title: 'Konfiguration von E-Mail Pro'
-slug: erstkonfiguration
 excerpt: 'Erfahren Sie hier, wie Sie Ihre E-Mail Pro Lösung einrichten'
-section: 'Erste Schritte'
-order: 1
 updated: 2020-04-09
 ---
 
@@ -133,17 +130,17 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 
 ## Weiterführende Informationen
 
-[Verwendung der Outlook Web App](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/)
+[Verwendung der Outlook Web App](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
 [Posteingangsregeln in OWA erstellen](https://docs.ovh.com/de/microsoft-collaborative-solutions/email-alias/)
 
 [Einen Alias zu einem E-Mail-Account hinzufügen](https://docs.ovh.com/de/microsoft-collaborative-solutions/email-alias/)
 
-[Einrichten einer automatischen Antwort in OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
+[Einrichten einer automatischen Antwort in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
 
-[Die Abrechnung Ihrer E-Mail Pro Accounts verwalten](https://docs.ovh.com/de/emails-pro/verwaltung-der-abrechnung-emailpro/)
+[Die Abrechnung Ihrer E-Mail Pro Accounts verwalten](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](https://docs.ovh.com/de/microsoft-collaborative-solutions/passwort-sicherheitseinstellungen-verwalten/)
+[Sicherheitseinstellungen eines E-Mail-Dienstes verwalten](/pages/web/microsoft-collaborative-solutions/exchange_security_policy)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

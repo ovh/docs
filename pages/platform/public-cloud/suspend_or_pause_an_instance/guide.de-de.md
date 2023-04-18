@@ -1,9 +1,6 @@
 ---
 title: Aussetzen oder Pausieren einer Instanz
-slug: aussetzen_oder_pausieren_einer_instanz
 legacy_guide_number: g1781
-section: 'Projektverwaltung'
-order: 3
 updated: 2021-09-20
 ---
 
@@ -21,9 +18,9 @@ Bei der Konfiguration einer hochverfügbaren Infrastruktur müssen Sie mögliche
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) mit **stündlicher** Abrechnung.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder das [Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/).
-- Sie haben Kenntnisse der [OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/) und der [OpenStack Variablen](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/).
+- Sie verfügen über eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) mit **stündlicher** Abrechnung.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder das [Horizon Interface](/pages/platform/public-cloud/introducing_horizon).
+- Sie haben Kenntnisse der [OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) und der [OpenStack Variablen](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## In der praktischen Anwendung
 
@@ -88,8 +85,8 @@ Um den Snapshot anzuzeigen, klicken Sie im Menü `Compute`{.action} auf `Images`
 
 Bevor Sie fortfahren, empfehlen wir Ihnen folgende Anleitungen:
 
-- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Konfigurieren der OpenStack-Umgebungsvariablen](https://docs.ovh.com/de/public-cloud/set-openstack-environment-variables/)
+- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Konfigurieren der OpenStack-Umgebungsvariablen](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 Sobald Ihre Umgebung bereit ist, geben Sie in der Kommandozeile Folgendes ein:
 

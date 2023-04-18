@@ -1,8 +1,6 @@
 ---
 title: Configurer un miroir logiciel (RAID) sous Windows
-slug: dedicated-servers-mirror-soft-raid-windows
 excerpt: "Découvrez comment reconstruire la configuration des disques de votre serveur après un remplacement de disque"
-section: RAID & disques
 updated: 2023-03-28
 ---
 
@@ -65,7 +63,7 @@ DISKPART> list volume
 
 ```
 
-Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été installé pour remplacer le `Disk M0` défectueux qui avait été [physiquement retiré](https://docs.ovh.com/fr/dedicated/disk-replacement/) précédemment.
+Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été installé pour remplacer le `Disk M0` défectueux qui avait été [physiquement retiré](/pages/cloud/dedicated/disk_replacement) précédemment.
 
 
 > [!primary]
@@ -194,7 +192,7 @@ DISKPART> list volume
  
 ```
 
-Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été installé pour remplacer le `Disk M0` défectueux qui avait été [physiquement retiré](https://docs.ovh.com/fr/dedicated/disk-replacement/) précédemment.
+Dans cet exemple, le `Disk 1` est un disque de remplacement qui a été installé pour remplacer le `Disk M0` défectueux qui avait été [physiquement retiré](/pages/cloud/dedicated/disk_replacement) précédemment.
 
 > [!primary]
 >

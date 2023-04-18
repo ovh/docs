@@ -1,9 +1,6 @@
 ---
 title: Transferring a domain name to another registrar
-slug: outgoing-transfer-of-generic-or-geographical-domain-name
 excerpt: Find out how to move a domain name from OVHcloud to a provider of your choice
-section: Transfer
-order: 04
 updated: 2023-03-10
 ---
 
@@ -21,9 +18,9 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 >
 > If the domain name in question should stay registered at OVHcloud but modified in terms of its management or ownership, an outgoing domain transfer is not the appropriate procedure.
 >
-> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](https://docs.ovh.com/asia/en/customer/managing-contacts/).
+> To transfer the domain name management to another OVHcloud customer account, a **change of contacts** must be made instead. The procedure is described in [this guide](/pages/account/customer/managing_contacts).
 >
-> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](https://docs.ovh.com/asia/en/domains/how-to-change-domain-name-holder/) instructions.
+> If you also need to change the **domain name holder**, you should do so **before** you change the domain name contacts. To do this, use our [change of ownership for domain names](/pages/web/domains/trade_domain) instructions.
 >
 
 ## Requirements
@@ -98,7 +95,7 @@ You can contact your provider for more information about this process.
 
 ## Go further
 
-[Transferring a .uk domain name to another registrar](https://docs.ovh.com/asia/en/domains/outgoing_couk_domain_name_transfer/)
+[Transferring a .uk domain name to another registrar](/pages/web/domains/transfer_outgoing_couk)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/).
 

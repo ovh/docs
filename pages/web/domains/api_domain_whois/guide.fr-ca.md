@@ -1,9 +1,6 @@
 ---
 title: "Configurer l'affichage de ses données dans le Whois"
-slug: api-whois
 excerpt: "Utilisez l'API publique OVHcloud pour configurer l'affichage de vos données dans le Whois"
-section: "API domaines"
-order: 07
 updated: 2022-05-05
 ---
 
@@ -13,20 +10,20 @@ updated: 2022-05-05
 
 > [!primary]
 >
-> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](../api).
+> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
 
 <!-- Begin TOC -->
 
 ## Sommaire
 
-- [Introduction](../api)
-- [Commander un nom de domaine](../api-order)
-- [Gestion des tâches](../api-tasks)
-- [Gestion des contacts d'un nom de domaine](../api-contact)
-- [Gestion des règles d'éligibilité](../api-rules)
+- [Introduction](/pages/web/domains/api_domain_intro)
+- [Commander un nom de domaine](/pages/web/domains/api_domain_intro-order)
+- [Gestion des tâches](/pages/web/domains/api_domain_intro-tasks)
+- [Gestion des contacts d'un nom de domaine](/pages/web/domains/api_domain_contacts)
+- [Gestion des règles d'éligibilité](/pages/web/domains/api_domain_intro-rules)
 - **Configurer l'affichage de ses données dans le Whois**
-- [Configurer les DNS de son nom de domaine](../api-dns)
-- [Transférer un nom de domaine](../api-transfer)
+- [Configurer les DNS de son nom de domaine](/pages/web/domains/api_domain_dns)
+- [Transférer un nom de domaine](/pages/web/domains/api_domain_intro-transfer)
 <!-- End TOC -->
 
 <!-- Rappel à mettre au début de chaque page CA/US/AU/ASIA/SG (API CA) -->

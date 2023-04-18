@@ -1,9 +1,6 @@
 ---
 title: "Passwort eines E-Mail-Accounts ändern"
-slug: passwort-e-mail-adresse-aendern
 excerpt: "Erfahren Sie hier, wie Sie das Passwort eines OVHcloud E-Mail-Accounts ändern"
-section: Erste Schritte
-order: 03
 updated: 2023-01-03
 ---
 
@@ -119,11 +116,11 @@ In der dieser Tabelle finden Sie die notwendigen Informationen zur Identifizieru
 
 ## Weiterführende Informationen
 
-[Erste Schritte mit MX Plan](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/)
+[Erste Schritte mit MX Plan](/pages/web/emails/email_generalities)
 
-[Erste Schritte mit E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/)
+[Erste Schritte mit E-Mail Pro](/pages/web/emails-pro/first_config)
 
-[Erste Schritte mit Hosted Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_der_dienstleistung/)
+[Erste Schritte mit Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote einsehen](https://www.ovhcloud.com/de/support-levels/).
 

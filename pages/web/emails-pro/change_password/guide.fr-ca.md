@@ -1,9 +1,6 @@
 ---
 title: "Modifier le mot de passe d'une adresse e-mail"
-slug: modifier-mot-de-passe-adresse-email
 excerpt: "Découvrez comment modifier le mot de passe d'une adresse e-mail OVHcloud"
-section: 'Premiers pas'
-order: 03
 updated: 2023-01-03
 ---
 
@@ -85,9 +82,9 @@ Sur la nouvelle fenêtre qui apparaît, commencez par renseigner votre mot de pa
 
 ## Aller plus loin
 
-[Premiers pas avec la solution MXplan](https://docs.ovh.com/ca/fr/emails/generalites-sur-les-emails-mutualises/)
+[Premiers pas avec la solution MXplan](/pages/web/emails/email_generalities)
 
-[Premiers pas avec la solution Hosted Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/premiere-configuration-exchange/)
+[Premiers pas avec la solution Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 

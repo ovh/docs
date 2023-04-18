@@ -1,9 +1,6 @@
 ---
 title: OpenSearch - Getting started
 excerpt: Find out how to set up and manage your Public Cloud Databases for OpenSearch
-slug: opensearch/getting-started
-section: OpenSearch - Guides
-order: 020
 updated: 2023-03-03
 ---
 
@@ -69,7 +66,7 @@ Please note that attaching to a private network is a feature we are currently wo
 
 #### Step 6: Review and confirm
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/account/api/first-steps).
 
 ![Confirm order](images/creation_opensearch06.png){.thumbnail}
 
@@ -181,7 +178,7 @@ Please enter the name of the index that you want to create.
 #### Automatic backups
 
 OVHcloud performs daily backups for your Public Cloud Databases for the OpenSearch service.
-To find them, switch to the `Backups`{.action} tab. Backups will be created automatically, and retention time depends on the service plan. Please visit the [Public Cloud Databases for OpenSearch capabilities page](https://docs.ovh.com/ie/en/publiccloud/databases/opensearch/capabilities/) for detailed information on each plan's properties.
+To find them, switch to the `Backups`{.action} tab. Backups will be created automatically, and retention time depends on the service plan. Please visit the [Public Cloud Databases for OpenSearch capabilities page](/pages/platform/databases/opensearch_01_capabilities) for detailed information on each plan's properties.
 
 ![Backups](images/configure_backup.png){.thumbnail}
 
@@ -329,7 +326,7 @@ We can execute the same commands as we did with cURL:
 
 You service is now configured. To go further, 
 
-[OpenSearch capabilities](https://docs.ovh.com/ie/en/publiccloud/databases/opensearch/capabilities/)
+[OpenSearch capabilities](/pages/platform/databases/opensearch_01_capabilities)
 
 [OpenSearch Official documentation](https://opensearch.org/docs/latest){.external}
 

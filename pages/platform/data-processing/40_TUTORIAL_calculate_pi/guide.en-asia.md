@@ -1,9 +1,6 @@
 ---
 title: Python - Calculating π number with Apache Spark
-slug: pi-spark
 excerpt: Calculting π number is a basic example about how to use Apache Spark. Let’s find out how to do it !
-section: Tutorials
-order: 1
 updated: 2021-01-20
 ---
 
@@ -23,8 +20,8 @@ This probabilty can be estimated by picking a high number of random points and t
 ## Requirements 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details.)
-- Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/platform/public-cloud/create_a_public_cloud_project){.external} for details.)
+- Data Processing activated (see [How to activate the Data Processing service](/pages/platform/data-processing/30_HOWTO_activate_project){.external} for details.)
 
 
 ## 1. Naive method
@@ -116,7 +113,7 @@ spark.stop()
 ### Step 2 : Create an environment.yml file
 
 All Python jobs launched via Data Processing require a conda environment.yml file in order to manage libraries used and versions.
-You can find how to generate them here: [How to submit a Python job on the Data Processing platform using the OVHcloud manager](../job-submit-form){.external} . 
+You can find how to generate them here: [How to submit a Python job on the Data Processing platform using the OVHcloud manager](/pages/platform/data-processing/32_HOWTO_fill-job-submit-form){.external} . 
 
 
 Both files must be placed in the same object container.
@@ -137,7 +134,7 @@ dependencies:
 
 You are now ready to submit this job.
 
-A detailed version about how to deploy a job in Python is explained on the guide [How to submit a job in Python](../submit-python){.external}.
+A detailed version about how to deploy a job in Python is explained on the guide [How to submit a job in Python](/pages/platform/data-processing/31_HOWTO_submit-python-ui){.external}.
 
 Briefly, inside OVHcloud Data Processing control panel, click on "start a new job" then:
 

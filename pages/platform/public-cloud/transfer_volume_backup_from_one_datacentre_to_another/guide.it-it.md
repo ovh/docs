@@ -1,9 +1,7 @@
 ---
 title: Trasferisci il backup di un disco aggiutivo da un datacenter a un altro
 excerpt: Trasferisci il backup di un disco aggiutivo da un datacenter a un altro
-slug: trasferisci_il_backup_di_un_disco_aggiutivo_da_un_datacenter_a_un_altro
 legacy_guide_number: g1941
-section: Storage
 updated: 2021-01-19
 ---
 
@@ -24,7 +22,7 @@ In alcuni casi, potresti avere bisogno di trasferire i tuoi dischi aggiuntivi da
 
 - Disporre di un'[istanza Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} attiva nel tuo account OVHcloud
 - Avere accesso in SSH al datacenter (root)
-- Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](../prepare_the_environment_for_using_the_openstack_api/){.external} (consigliato)
+- Aver consultato la guida [Preparare l’ambiente per utilizzare l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api){.external} (consigliato)
 
 
 > [!primary]
@@ -189,6 +187,6 @@ root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c
 
 ## Per saperne di più
 
-[Trasferire il backup di un’istanza tra datacenter](https://docs.ovh.com/it/public-cloud/trasferisci_il_backup_di_unistanza_da_un_datacenter_a_un_altro/){.external}.
+[Trasferire il backup di un’istanza tra datacenter](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

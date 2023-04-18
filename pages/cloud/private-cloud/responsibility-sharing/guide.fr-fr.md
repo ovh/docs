@@ -1,7 +1,5 @@
 ---
 title: "Partage de responsabilité sur le service Hosted Private Cloud by VMware"
-slug: vmware-raci
-section: Premiers pas
 excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit VMware on OVHcloud"
 updated: 2023-03-07
 ---

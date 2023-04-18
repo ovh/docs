@@ -1,9 +1,6 @@
 ---
 title: Troubleshooting common errors setting up OVHcloud Connect
-slug: occ-diagnostics
 excerpt: Find out how to resolve the most common errors associated with setting up OVHcloud Connect
-section: Getting started
-order: 4
 updated: 2021-09-02
 ---
 
@@ -114,7 +111,7 @@ If you have ordered a 10 Gbps link, the SFP will be: 10GBase-LR.
 speed 10000
 ```
 
-For more information, please read the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/)
+For more information, please read the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/cloud/ovhcloud-connect/occ-limits)
 
 #### Disabling auto-negotiation
 

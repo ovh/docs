@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Configuratie van uw e-mailadres in Outlook 2016 voor Mac
-slug: configuratie-outlook-2016-mac
 excerpt: Ontdek hoe u uw e-mailadres kunt configureren in Outlook 2016 voor Mac
-section: Outlook
 updated: 2018-05-31
 ---
 
@@ -23,7 +21,7 @@ Ontdek hoe u uw e-mailadres kunt configureren in Outlook 2016 voor Mac
 
 > [!primary]
 >
-> Gebruikt u Outlook 2016 voor Windows? Raadpleeg onze handleidingen: [Configuratie van uw e-mailadres in Outlook 2016 voor Windows](https://docs.ovh.com/nl/emails/configuratie-outlook-2016/){.external}.
+> Gebruikt u Outlook 2016 voor Windows? Raadpleeg onze handleidingen: [Configuratie van uw e-mailadres in Outlook 2016 voor Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}.
 >
 
 ## Instructies
@@ -81,8 +79,8 @@ OVH biedt ook een web-app die u kunt gebruiken om uw e-mail vanuit een webbrowse
 
 ## Verder
 
-[Configuratie van uw E-mail Pro-account in Outlook 2016 voor Mac](https://docs.ovh.com/nl/emails-pro/configuratie-outlook-2016-mac/){.external}.
+[Configuratie van uw E-mail Pro-account in Outlook 2016 voor Mac](/pages/web/emails-pro/how_to_configure_outlook_2016-mac/){.external}.
 
-[Configuratie van uw Exchange-account in Outlook 2016 voor Mac](https://docs.ovh.com/nl/microsoft-collaborative-solutions/configuratie-outlook-2016-mac/){.external}.
+[Configuratie van uw Exchange-account in Outlook 2016 voor Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016-mac/){.external}.
 
 Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

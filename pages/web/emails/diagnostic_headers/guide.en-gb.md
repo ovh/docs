@@ -1,9 +1,6 @@
 ---
 title: 'Retrieving email headers'
-slug: shared_mail_guide_to_view_email_headers
 excerpt: Find out how to view headers in your email client
-section: 'Troubleshooting'
-order: 03
 updated: 2021-11-19
 ---
 
@@ -89,7 +86,7 @@ Subject: Hello my friend
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
-- The `Received-SPF` field displays the result of the [SPF](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/) check performed on the sender's domain name. You can use the `client-ip` argument to find the IP address of the server that sent the email. 
+- The `Received-SPF` field displays the result of the [SPF](/pages/web/domains/dns_zone_spf) check performed on the sender's domain name. You can use the `client-ip` argument to find the IP address of the server that sent the email. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
 </code></pre>
@@ -190,6 +187,6 @@ To view the header in the <Outlook.com> webmail interface, see the [Outlook Web 
 
 ## Go further
 
-[Email FAQ](https://docs.ovh.com/gb/en/emails/emails-faq/)
+[Email FAQ](/pages/web/emails/faq-emails)
 
 Join our community of users on <https://community.ovh.com/en/>.

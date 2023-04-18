@@ -1,11 +1,8 @@
 ---
 title: Disaster Recovery Plan a Nutanix (EN)
-slug: disaster-recovery-plan-overview
 excerpt: Overview of various Disaster Recovery Plan solutions in Nutanix
-section: Disaster Recovery Plan
-order: 01
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/nutanix/disaster-recovery-plan-overview/'
+    canonical: '/pages/cloud/nutanix/43-disaster-recovery-plan-overview'
 updated: 2022-06-29
 ---
 
@@ -47,7 +44,7 @@ To do this, you can use various methods such as:
 
 ![Interconnection with IPsec diagram](images/ipsecinterconnection.png){.thumbnail}
 
-An example of an IPsec interconnection in this guide: [IPsec interconnection between two sites](https://docs.ovh.com/it/nutanix/ipsec-interconnection/)
+An example of an IPsec interconnection in this guide: [IPsec interconnection between two sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
 ### Nutanix solutions for implementing a disaster recovery plan
 
@@ -56,7 +53,7 @@ Some solutions are available with **Prism Element**:
 - **Async DR**: replication between two remote **storage containers** is only done once per hour. If a problem occurs, it is possible to lose one hour of data (RPO 1 hour) but the restart can be done manually in one minute.
 - **NearSync DR**: replication occurs several times per hour. You can sync between 1 and 15 minutes, depending on the licence you have (RPO between 1 and 15 minutes).
 
-Details of these solutions can be found in our documentation on [asynchronous or NearSync replication through Prism Element](https://docs.ovh.com/it/nutanix/prism-element-nutanix-replication/)
+Details of these solutions can be found in our documentation on [asynchronous or NearSync replication through Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
 The management of disaster recovery plans can be improved via third-party tools or a Nutanix solution called **Leap** through **Prism Central**.
 
@@ -65,8 +62,8 @@ The management of disaster recovery plans can be improved via third-party tools 
 
 ## Go further
 
-[IPsec interconnection between two sites](https://docs.ovh.com/it/nutanix/ipsec-interconnection/)
+[IPsec interconnection between two sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
-[Asynchronous or *NearSync* replication through Prism Element](https://docs.ovh.com/it/nutanix/prism-element-nutanix-replication/)
+[Asynchronous or *NearSync* replication through Prism Element](/pages/cloud/nutanix/46-prism-element-replication)
 
 Join our community of users on <https://community.ovh.com/en/>.

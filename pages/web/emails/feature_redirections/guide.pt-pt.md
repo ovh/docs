@@ -1,9 +1,6 @@
 ---
 title: 'Utilizar os alias e reencaminhamentos de e-mail'
 excerpt: 'Saiba como gerir os seus alias e reencaminhamentos de e-mail'
-slug: mail_partilhado_guia_dos_reencaminhamentos_email
-section: 'Funcionalidades dos endereços e-mail'
-order: 01
 updated: 2020-05-20
 ---
 

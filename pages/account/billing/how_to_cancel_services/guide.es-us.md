@@ -1,9 +1,6 @@
 ---
 title: Cómo dar de baja sus servicios de OVHcloud
 excerpt: Cómo interrumpir las suscripciones a OVHcloud
-slug: how-to-cancel-your-services
-section: Pedidos, facturas y servicios
-order: 03
 updated: 2022-03-22
 ---
 
@@ -46,7 +43,7 @@ Para poder dar de baja el servicio, deberá estar **seguro** de que:
 >
 > La rescisión sólo podrá aplicarse si se cumplen las siguientes condiciones:
 >
-> * usted es el "contacto administrador" del servicio (para más información, consulte [esta guía](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/));
+> * usted es el "contacto administrador" del servicio (para más información, consulte [esta guía](/pages/account/customer/managing_contacts));
 > * el servicio no se renueva manualmente;
 > * el servicio no se suspende, en particular debido a un defecto de regularización de una factura.
 >
@@ -97,7 +94,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Para dar de baja su servicio [Managed bare metal](https://www.ovhcloud.com/es/managed-bare-metal/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/managed-bare-metal/dar-de-baja-solucion-managed-bare-metal/).
+Para dar de baja su servicio [Managed bare metal](https://www.ovhcloud.com/es/managed-bare-metal/), siga las indicaciones de esta [guía](/pages/cloud/managed-bare-metal/how-to-cancel).
 
 #### Servidor NAS-HA <a name="nas"></a>
 
@@ -127,7 +124,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Para dar de baja su servicio [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](https://docs.ovh.com/us/es/private-cloud/dar-de-baja-solucion-hosted-private-cloud/).
+Para dar de baja su servicio [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](/pages/cloud/private-cloud/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -143,9 +140,9 @@ Cada servicio [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) puede el
 
 ![public cloud instance deleite](images/pci-deletion.png){.thumbnail}
 
-El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](https://docs.ovh.com/us/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
+El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](/pages/platform/public-cloud/analyze_billing)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
 
-También puede [consultar su consumo actual](https://docs.ovh.com/us/es/public-cloud/informacion-sobre-el-tipo-de-facturacion-cloud/#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
+También puede [consultar su consumo actual](/pages/platform/public-cloud/analyze_billing#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -193,7 +190,7 @@ Recibirá por correo electrónico un mensaje con el procedimiento de cierre de s
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/), siga las indicaciones de esta [guía](https://docs.ovh.com/es/microsoft-collaborative-solutions/gestion-de-la-facturacion-exchange/#eliminar-cuentas).
+Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/), siga las indicaciones de esta [guía](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-cuentas).
 
 ### Soluciones trasversas <a name="transversal"></a>
 
@@ -222,6 +219,6 @@ Por último, haga clic en `Confirmar la cancelación`{.action}.
 
 ## Más información <a name="gofurther"></a>
 
-[Gestionar la renovación de los servicios](https://docs.ovh.com/us/es/billing/renovacion-automatica-ovh/)
+[Gestionar la renovación de los servicios](/pages/account/billing/how_to_use_automatic_renewal)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

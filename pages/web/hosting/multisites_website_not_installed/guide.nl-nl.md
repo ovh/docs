@@ -2,9 +2,6 @@
 deprecated: true
 title: Het oplossen van de fout 'Website niet geïnstalleerd'
 excerpt: Ontdek hoe u de fout 'Website niet geïnstalleerd' kunt oplossen
-slug: webhosting_error_site_niet_geinstalleerd
-section: Configuratie van het webhostingplan
-order: 2
 updated: 2021-05-18
 ---
 
@@ -44,9 +41,9 @@ Zoek naar de betreffende domeinnaam in de tabel. Er zijn verschillende uitkomste
 
 |Mogelijke uitkomsten: |Wat te doen|
 |---|---|
-|Het domein wordt weergegeven in de tabel|Dit betekent dat het correct is toegevoegd als multisite aan uw webhosting.  Als u dit binnen de laatste 15 minuten hebt toegevoegd, wacht dan even tot de 'Website niet geïnstalleerd'-pagina wordt gesloten. Als de pagina open blijft, gaat u naar [Stap 2: Controleer de DNS-configuratie van de domeinnaam](https://docs.ovh.com/nl/hosting/webhosting_error_site_niet_geinstalleerd/#stap-2-wijzig-de-dns-configuratie-va-uw-domeinnaam){.external}.|
-|Het domein is niet meer weergegeven in de tabel|Als u de domeinnaam hebt toegevoegd maar deze niet meer in de tabel staat, hebt u mogelijk niet alle stappen voltooid die nodig zijn om deze aan uw webhostingplan toe te voegen, of hebt u deze mogelijk per ongeluk verwijderd. In dit geval raden we aan onze handleiding over het [hosten van meerdere websites op uw webhostingplan](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external} te raadplegen, en ervoor te zorgen dat u alle stappen hebt gevolgd toen u uw domeinnaam heeft toegevoegd.|
-|Het domein wordt niet weergegeven in de tabel|U hebt deze domeinnaam nog niet als multisite op uw OVH-webhostingplan toegevoegd. Om de domeinnaam toe te voegen, volgt u onze handleiding over het [hosten van meerdere websites op uw webhostingplan](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.|
+|Het domein wordt weergegeven in de tabel|Dit betekent dat het correct is toegevoegd als multisite aan uw webhosting.  Als u dit binnen de laatste 15 minuten hebt toegevoegd, wacht dan even tot de 'Website niet geïnstalleerd'-pagina wordt gesloten. Als de pagina open blijft, gaat u naar [Stap 2: Controleer de DNS-configuratie van de domeinnaam](/pages/web/hosting/multisites_website_not_installed#stap-2-wijzig-de-dns-configuratie-va-uw-domeinnaam){.external}.|
+|Het domein is niet meer weergegeven in de tabel|Als u de domeinnaam hebt toegevoegd maar deze niet meer in de tabel staat, hebt u mogelijk niet alle stappen voltooid die nodig zijn om deze aan uw webhostingplan toe te voegen, of hebt u deze mogelijk per ongeluk verwijderd. In dit geval raden we aan onze handleiding over het [hosten van meerdere websites op uw webhostingplan](/pages/web/hosting/multisites_configure_multisite){.external} te raadplegen, en ervoor te zorgen dat u alle stappen hebt gevolgd toen u uw domeinnaam heeft toegevoegd.|
+|Het domein wordt niet weergegeven in de tabel|U hebt deze domeinnaam nog niet als multisite op uw OVH-webhostingplan toegevoegd. Om de domeinnaam toe te voegen, volgt u onze handleiding over het [hosten van meerdere websites op uw webhostingplan](/pages/web/hosting/multisites_configure_multisite){.external}.|
 
 Als u alle hierboven genoemde acties hebt voltooid maar de pagina 'Website niet geïnstalleerd' nog steeds wordt weergegeven, gaat u naar de onderstaande stap.
 
@@ -83,14 +80,14 @@ Er zijn verschillende uitkomsten mogelijk:
 |Mogelijke uitkomsten: |Wat te doen|
 |---|---|
 |De targets zijn correct|Dit betekent dat uw domeinnaam correct is geconfigureerd. Als u uw DNS-configuratie binnen 24 uur hebt geconfigureerd, wacht dan totdat de wijziging volledig is doorgevoerd.|
-|De targets zijn niet correct|De configuratie van uw domein moet worden gewijzigd. Als het de OVH-configuratie gebruikt, raden we u aan de handleiding [‘Wijziging van een OVH DNS-zone’](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external} te volgen. Volg in het andere geval de instructies van de gebruikersinterface van uw provider. Wanneer het bewerken is voltooid, is een propagatietijd van maximaal 24 uur vereist voordat de wijziging is doorgevoerd.|
+|De targets zijn niet correct|De configuratie van uw domein moet worden gewijzigd. Als het de OVH-configuratie gebruikt, raden we u aan de handleiding [‘Wijziging van een OVH DNS-zone’](/pages/web/domains/dns_zone_edit){.external} te volgen. Volg in het andere geval de instructies van de gebruikersinterface van uw provider. Wanneer het bewerken is voltooid, is een propagatietijd van maximaal 24 uur vereist voordat de wijziging is doorgevoerd.|
 
 Afhankelijk van de genomen acties in stap 1 en 2, en rekening houdend met de gemelde vertragingen, wordt de ‘Website niet geïnstalleerd’-melding niet langer weergegeven.
 
 ## Verder 
 
-[Het hosten van meerdere websites op uw webhostingplan](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.
+[Het hosten van meerdere websites op uw webhostingplan](/pages/web/hosting/multisites_configure_multisite){.external}.
 
-[Wijziging van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
+[Wijziging van een OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}.
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com){.external}.

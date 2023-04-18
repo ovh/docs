@@ -1,7 +1,5 @@
 ---
 title: Autoryzacja IP, które mogą łączyć się z vCenter
-slug: autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter
-section: Funkcjonalności OVHcloud
 updated: 2023-01-25
 ---
 

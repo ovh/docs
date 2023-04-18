@@ -1,8 +1,6 @@
 ---
 title: 'Programowa macierz RAID'
-slug: raid-soft
 excerpt: 'Dowiedz się, jak odbudować macierz RAID Twojego serwera w przypadku awarii lub uszkodzenia dysku'
-section: 'RAID & dyski'
 updated: 2022-10-11
 ---
 
@@ -386,8 +384,8 @@ mount /dev/md4 /home
 
 ## Sprawdź również
 
-* [Wymiana dysku bez wyłączania serwera – Sprzętowa macierz RAID](https://docs.ovh.com/pl/dedicated/hotswap-raid-soft/){.external}
-* [Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](https://docs.ovh.com/pl/dedicated/hotswap-raid-soft/){.external}
-* [Sprzętowa macierz RAID (EN)](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+* [Wymiana dysku bez wyłączania serwera – Sprzętowa macierz RAID](/pages/cloud/dedicated/hotswap_raid_soft){.external}
+* [Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](/pages/cloud/dedicated/hotswap_raid_soft){.external}
+* [Sprzętowa macierz RAID (EN)](/pages/cloud/dedicated/raid_hard){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,8 +1,6 @@
 ---
 title: 'Diagnostyka usterek sprzętowych serwera dedykowanego'
-slug: diagnostyka-usterek-sprzetowych-serwera-dedykowanego
 excerpt: 'Dowiedz się, jak korzystać z narzędzi diagnostycznych do identyfikacji usterek sprzętowych na Twoim serwerze'
-section: 'Diagnostyka i tryb Rescue'
 updated: 2022-12-15
 ---
 
@@ -21,7 +19,7 @@ Eksploatacja serwera może z czasem powodować jego fizyczne uszkodzenia, a to z
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/)
-- Uruchomienie serwera w [trybie Rescue](https://docs.ovh.com/pl/dedicated/ovh-rescue/)
+- Uruchomienie serwera w [trybie Rescue](/pages/cloud/dedicated/rescue_mode)
 
 ## W praktyce
 

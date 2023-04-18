@@ -1,8 +1,6 @@
 ---
 title: 'Modifier les musiques et sonneries de votre ligne'
-slug: modifier-musiques-sonneries-ligne
 excerpt: 'Apprenez à modifier les musiques et les sonneries de votre ligne OVHcloud'
-section: 'Lignes téléphoniques'
 updated: 2022-06-22
 ---
 
@@ -63,7 +61,7 @@ Il existe certaines règles et informations à prendre en considération concern
 > La création des fichiers-sons est à votre charge. OVHcloud ne sera pas en mesure de créer ces fichiers pour vous.
 > Vous pouvez faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) mais sachez qu'il est également possible de créer des fichiers-sons par vos propres moyens :
 > 
-> - Soit en laissant un message sur le répondeur de votre ligne OVHcloud puis en le téléchargeant. Plus d'informations sur [notre guide d'utilisation du répondeur](https://docs.ovh.com/fr/voip/configurer-consulter-repondeur-ligne-ovh/).
+> - Soit en laissant un message sur le répondeur de votre ligne OVHcloud puis en le téléchargeant. Plus d'informations sur [notre guide d'utilisation du répondeur](/pages/telecom/voip/configurer-consulter-repondeur-ligne-ovh).
 > - Soit via le logiciel open source et gratuit [Audacity](https://www.audacityteam.org/){.external}.
 >
 

@@ -1,8 +1,5 @@
 ---
 title: Working with vRack example - Managed Kubernetes and Public Cloud instances
-slug: vrack-example-k8s-and-pci
-section: Network
-order: 02
 updated: 2021-12-21
 ---
 
@@ -20,8 +17,7 @@ updated: 2021-12-21
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -46,23 +42,23 @@ Concretely, we are going to install an OVHcloud Managed Kubernetes cluster and a
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](/pages/platform/kubernetes-k8s/deploying-hello-world).
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](/pages/platform/kubernetes-k8s/installing-helm) tutorial.
 
-It also supposes that you already have followed the [Using vRack](../using_vrack/) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.
+It also supposes that you already have followed the [Using vRack](/pages/platform/kubernetes-k8s/using-vrack) guide to activate the vRack on your Public Cloud project and put your OVHcloud Managed Kubernetes cluster inside the vRack.
 
 
 ## Instructions
 
 ### Setting up the vRack
 
-First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. Once you have created a vRack and added it into a Private Network, you can continue. 
+First of all, we will need to set up vRack Private Network for our Public Cloud. To do it, we follow the [Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack) guide. Once you have created a vRack and added it into a Private Network, you can continue. 
 
 ![Setting-up the vRack](images/vrack-example-01.png){.thumbnail}
 
 > [!warning]
-> As explained in the [Known limits](../known-limits/) guide, the following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
+> As explained in the [Known limits](/pages/platform/kubernetes-k8s/known-limits) guide, the following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
 >
 
 ```bash
@@ -73,7 +69,7 @@ First of all, we will need to set up vRack Private Network for our Public Cloud.
 
 ### Setting up the Managed Kubernetes
 
-Then we create a Kubernetes cluster, as explained in the [Create a cluster](../creating-a-cluster/) guide. Integrating a cluster into a vRack Private Network must be done at the third step on cluster creation, when we can choose an existing private network for the cluster:
+Then we create a Kubernetes cluster, as explained in the [Create a cluster](/pages/platform/kubernetes-k8s/creating-a-cluster) guide. Integrating a cluster into a vRack Private Network must be done at the third step on cluster creation, when we can choose an existing private network for the cluster:
 
 ![Choose a private network for this cluster](images/vrack-example-02.png){.thumbnail}
 
@@ -85,7 +81,7 @@ In the Managed Kubernetes Service Dashboard, we can see the cluster, with the ch
 
 ### Setting up the PCI
 
-Now we can create a new Public Cloud instance inside the vRack, by following the [Integrating an instance into vRack](../../public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1) guide.
+Now we can create a new Public Cloud instance inside the vRack, by following the [Integrating an instance into vRack](/pages/platform/network-services/getting-started-07-creating-vrack#step-3-integrating-an-instance-into-vrack_1) guide.
 
 We are going to create an Ubuntu instance:
 
@@ -334,7 +330,7 @@ pod "mysql-client" deleted
 
 ### Setting up WordPress
 
-Now we have set up the database, we can deploy WordPress on the Kubernetes cluster. We are following a similar process as in our [Installing WordPress](../installing-wordpress) tutorial, but adapting it to use an external database.
+Now we have set up the database, we can deploy WordPress on the Kubernetes cluster. We are following a similar process as in our [Installing WordPress](/pages/platform/kubernetes-k8s/installing-wordpress) tutorial, but adapting it to use an external database.
 
 #### Pre-requisites
 

@@ -1,8 +1,6 @@
 ---
 title: 'Konfiguracja zapory sieciowej Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować reguły firewalla w OVHcloud'
-slug: network-firewall
-section: 'Sieć & IP'
 updated: 2022-12-20
 ---
 
@@ -84,7 +82,7 @@ Do dyspozycji masz **20 reguł dla każdego adresu IP**.
 
 > [!warning]
 > Network Firewall OVHcloud nie może być używany do otwierania portów na serwerze. Aby otworzyć porty na serwerze, musisz przejść przez firewall systemu operacyjnego zainstalowanego na serwerze<br>
-> Więcej informacji znajdziesz w przewodnikach: [Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/firewall-windows/) i [Konfiguracja firewalla w systemie Linux z systemem Iptables](https://docs.ovh.com/pl/dedicated/firewall-iptables/).
+> Więcej informacji znajdziesz w przewodnikach: [Konfiguracja firewalla w systemie Windows](/pages/cloud/dedicated/activate-port-firewall-soft-win) i [Konfiguracja firewalla w systemie Linux z systemem Iptables](/pages/cloud/dedicated/firewall-Linux-iptable).
 >
 
 Dodawanie reguły odbywa się przez kliknięcie po prawej stronie `Dodaj regułę`{.action}.

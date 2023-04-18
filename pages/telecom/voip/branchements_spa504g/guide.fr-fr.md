@@ -1,10 +1,8 @@
 ---
 title: 'Branchements SPA504G'
-slug: branchements-spa504g
 legacy_guide_number: '7536686'
 space_key: CRTEL
 space_name: Téléphonie
-section: 'Cisco SPA504g'
 hidden: true
 updated: 2018-03-26
 ---

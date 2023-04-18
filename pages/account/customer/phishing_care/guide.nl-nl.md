@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Pas op voor oplichting - herken frauduleuze e-mail en phishing'
-slug: herken-phishing
 excerpt: 'Hoe kunt u een phishing-bericht identificeren, en wat te doen als u op een frauduleuze link hebt geklikt?'
-section: Veiligheid
 updated: 2020-10-12
 ---
 

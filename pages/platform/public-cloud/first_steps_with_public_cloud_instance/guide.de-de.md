@@ -1,9 +1,6 @@
 ---
 title: Public Cloud Instanzen verwalten
 excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Instanzen im OVHcloud Kundencenter verwalten
-slug: die_ersten_schritte_mit_ihrer_public_cloud_instanz
-section: 'Erste Schritte'
-order: 05
 updated: 2023-01-04
 ---
 
@@ -22,7 +19,7 @@ Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](https://www.ovh.
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
-- Sie haben eine [Public Cloud Instanz](../public-cloud-erste-schritte/) in Ihrem Projekt erstellt.
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps) in Ihrem Projekt erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -59,30 +56,30 @@ Diese Aktionen sind auch auf der Instanzverwaltungsseite verfügbar, wenn Sie au
 
 Klicken Sie auf `Bearbeiten`{.action}.
 
-Die neue Seite zeigt eine modifizierte Ansicht der Optionen zur [Erstellung von Instanzen](../public-cloud-erste-schritte/), in der Sie die folgenden Elemente bearbeiten können.
+Die neue Seite zeigt eine modifizierte Ansicht der Optionen zur [Erstellung von Instanzen](/pages/platform/public-cloud/public-cloud-first-steps), in der Sie die folgenden Elemente bearbeiten können.
 
 - **Instanz-Name ändern**: Sie können der Instanz einen Namen geben, um die Identifikation zu vereinfachen.
 - **Image ändern**: Sie können ein anderes Betriebssystem für die Instanz auswählen. (Beachten Sie, dass bei der Reinstallation einer Instanz alle darauf liegenden Daten gelöscht werden.)
-- **Modell ändern**: Sie können auf einen anderen Instanz-Typ wechseln. Weitere Informationen zu diesen Optionen finden Sie in [dieser Anleitung](../public-cloud-erste-schritte/#schritt-3-instanz-erstellen).
-- **Abrechnungszeitraum ändern**: Sie können die Abrechnungsart der Instanz von stündlicher auf monatliche Abrechnung ändern. Weitere Informationen finden Sie in [dieser Anleitung](../abrechnungsart-aendern-public-cloud/).
+- **Modell ändern**: Sie können auf einen anderen Instanz-Typ wechseln. Weitere Informationen zu diesen Optionen finden Sie in [dieser Anleitung](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen).
+- **Abrechnungszeitraum ändern**: Sie können die Abrechnungsart der Instanz von stündlicher auf monatliche Abrechnung ändern. Weitere Informationen finden Sie in [dieser Anleitung](/pages/platform/public-cloud/changing_hourly_monthly_billing).
 
 #### Backup einer Instanz erstellen
 
 Klicken Sie auf `Backup erstellen`{.action}.
 
-Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstellen](../ein_backup_einer_instanz_erstellen/)". 
+Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstellen](/pages/platform/public-cloud/save_an_instance)". 
 
 #### Ein automatisches Backup einer Instanz erstellen
 
 Klicken Sie auf `Automatisches Backup erstellen`{.action}.
 
-Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstellen](../ein_backup_einer_instanz_erstellen/#automatisches-backup-einer-instanz-erstellen)".
+Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstellen](/pages/platform/public-cloud/save_an_instance#automatisches-backup-einer-instanz-erstellen)".
 
 #### Instanz anhalten (*suspend*)
 
 Klicken Sie auf `Anhalten`{.action}.
 
-Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](../aussetzen_oder_pausieren_einer_instanz/#anhalten-einer-instanz-suspend_1).
+Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](/pages/platform/public-cloud/suspend_or_pause_an_instance#anhalten-einer-instanz-suspend_1).
 
 Klicken Sie auf `Starten`{.action}, um die Instanz zu reaktivieren.
 
@@ -90,7 +87,7 @@ Klicken Sie auf `Starten`{.action}, um die Instanz zu reaktivieren.
 
 Klicken Sie auf `Neustart im Rescue-Modus`{.action}.
 
-Dies aktiviert den Rescue-Modus der Instanz. Um detaillierte Informationen zu erhalten, lesen Sie unsere Anleitung zum [Rescue-Modus](../umstellung_einer_instanz_auf_den_rescue-modus/).
+Dies aktiviert den Rescue-Modus der Instanz. Um detaillierte Informationen zu erhalten, lesen Sie unsere Anleitung zum [Rescue-Modus](/pages/platform/public-cloud/put_an_instance_in_rescue_mode).
 
 #### Instanz neu starten
 
@@ -107,7 +104,7 @@ Bestätigen Sie die Anfrage zum Neustart im angezeigten Fenster.
 
 Klicken Sie auf `Aussetzen`{.action}.
 
-Dadurch wird die Instanz in den Zustand "*shelved*" versetzt, hier als `Ausgesetzt` angezeigt. Genauere Informationen zu den Aussetzungszuständen einer Instanz finden Sie in unserer Anleitung "[Aussetzen oder Pausieren einer Instanz](../aussetzen_oder_pausieren_einer_instanz/#aussetzen-einer-instanz-shelve)".
+Dadurch wird die Instanz in den Zustand "*shelved*" versetzt, hier als `Ausgesetzt` angezeigt. Genauere Informationen zu den Aussetzungszuständen einer Instanz finden Sie in unserer Anleitung "[Aussetzen oder Pausieren einer Instanz](/pages/platform/public-cloud/suspend_or_pause_an_instance#aussetzen-einer-instanz-shelve)".
 
 Klicken Sie auf `Reaktivieren`{.action}, um den Status `Aktiviert` der Instanz wiederherzustellen.
 
@@ -137,12 +134,12 @@ Wechseln Sie dann vom Dashboard zum Tab `VNC-Konsole`{.action}.
 
 Die VNC-Konsole bietet direkten Zugriff auf Ihre Instanz. Damit dieser Zugang funktioniert, müssen Sie zuerst einen Benutzernamen und ein Passwort auf der Instanz konfigurieren. 
 
-Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](../public-cloud-erste-schritte/#connect-to-instance)".
+Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance)".
 
 ## Weiterführende Informationen
 
-[Erste Public Cloud Instanz erstellen und auf dieser einloggen](../public-cloud-erste-schritte/)
+[Erste Public Cloud Instanz erstellen und auf dieser einloggen](/pages/platform/public-cloud/public-cloud-first-steps)
 
-[Einführung in Horizon](../horizon/)
+[Einführung in Horizon](/pages/platform/public-cloud/introducing_horizon)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

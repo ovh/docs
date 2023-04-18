@@ -1,11 +1,9 @@
 ---
 title: Verificar uma máquina virtual em caso de lentidão (EN)
 excerpt: 'Troubleshoot performance issues on a VM'
-slug: verificar_uma_maquina_virtual_em_caso_de_lentidao
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/check_a_slow_machine/'
+    canonical: '/pages/cloud/private-cloud/check_a_slow_machine'
 legacy_guide_number: g601
-section: Gestão das máquinas virtuais
 updated: 2022-01-17
 ---
 

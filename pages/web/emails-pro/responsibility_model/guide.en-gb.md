@@ -1,9 +1,6 @@
 ---
 title: Email Pro - Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
-slug: responsibility-model
-section: Getting started
-order: 9
 updated: 2022-11-17
 ---
 
@@ -173,6 +170,6 @@ This shared model can help relieve the customer’s operational burden.
 
 ## Go further
 
-[All our Email Pro documentation](../)
+[All our Email Pro documentation](/gb/en/emails-pro/)
 
 Join our community of users on <https://community.ovh.com/en/>.

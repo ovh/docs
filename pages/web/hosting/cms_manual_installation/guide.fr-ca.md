@@ -1,9 +1,6 @@
 ---
 title: 'Tutoriel - Installer manuellement un CMS sur mon hébergement'
-slug: mutualise-installer-manuellement-mon-cms
 excerpt: 'Découvrez comment installer manuellement un CMS sur votre hébergement'
-section: CMS
-order: 03
 updated: 2023-03-09
 ---
 

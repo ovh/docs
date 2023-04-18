@@ -1,10 +1,7 @@
 ---
 title: 'Sharing an object via a temporary URL'
 excerpt: 'Find out how to share an object via a temporary URL'
-slug: share_an_object_via_a_temporary_url
 legacy_guide_number: g2007
-section: OpenStack
-order: 8
 updated: 2021-01-11
 ---
 

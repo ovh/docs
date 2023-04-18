@@ -1,10 +1,8 @@
 ---
 title: Getting the source IP behind the LoadBalancer
-slug: getting-source-ip-behind-loadbalancer
 excerpt: 'Find out how to get the source IP behind the LoadBalancer on OVHcloud Managed Kubernetes'
-section: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/getting-source-ip-behind-loadbalancer/'
+    canonical: '/pages/platform/kubernetes-k8s/getting-source-ip-behind-loadbalancer'
 updated: 2022-09-14
 ---
 
@@ -20,8 +18,7 @@ updated: 2022-09-14
    margin-bottom: 5px;
  }
  pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
+   b   font-family: monospace !important;
    font-size: 0.75em;
    color: #ccc;
  }
@@ -34,7 +31,7 @@ updated: 2022-09-14
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and you have deployed there an application using the OVHcloud Managed Kubernetes LoadBalancer. If you want to know more on those topics, please look at the [using the OVHcloud Managed Kubernetes LoadBalancer](../using-lb/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and you have deployed there an application using the OVHcloud Managed Kubernetes LoadBalancer. If you want to know more on those topics, please look at the [using the OVHcloud Managed Kubernetes LoadBalancer](/pages/platform/kubernetes-k8s/using-lb) documentation.
 
 > [!warning]
 > When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.

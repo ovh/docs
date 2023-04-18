@@ -1,9 +1,6 @@
 ---
 title: "Nutanix on OVHcloud - Documentation générale"
-slug: high-level-documentation
 excerpt: "Les détails techniques de la solution Nutanix on OVHcloud"
-section: Premiers pas
-order: 01
 updated: 2022-12-08
 ---
 
@@ -68,7 +65,7 @@ La passerelle OVHgateway est de conception légère, elle utilise 1 vCPU, 1 GB d
 
 La bande passante pour accéder à Internet est de 1 Gb/s.
 
-Pour remplacer cette machine virtuelle par un autre système d'exploitation réseau, consultez ce guide : [Remplacement de l'OVHgateway](https://docs.ovh.com/ca/fr/nutanix/software-gateway-replacement/).
+Pour remplacer cette machine virtuelle par un autre système d'exploitation réseau, consultez ce guide : [Remplacement de l'OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 ### Prism Central Access
 

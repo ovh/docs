@@ -1,8 +1,6 @@
 ---
 title: 'OVHcloud DNS Server mit einem Dedicated Server verwenden'
-slug: sekundaeren-dns-erstellen-dedicated-server
 excerpt: 'Erfahren Sie hier, wie Sie einen sekundären DNS Server für Ihren Dedicated Server einrichten'
-section: 'Fortgeschrittene Nutzung'
 updated: 2021-01-08
 ---
 
@@ -81,6 +79,6 @@ Nachdem Sie den TXT-Eintrag erfolgreich zur DNS-Zone des Domainnamens hinzugefü
 
 ## Weiterführende Informationen
 
-[OVHcloud DNS-Zone bearbeiten](../../domains/webhosting_bearbeiten_der_dns_zone/)
+[OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

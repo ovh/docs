@@ -1,9 +1,6 @@
 ---
 title: Getting started with Web PaaS
 excerpt: Find out how to set up your Web PaaS solution in the OVHcloud Control Panel
-slug: web-paas-manager-setup
-section: Getting started
-order: 1
 updated: 2021-07-20
 ---
 
@@ -106,7 +103,7 @@ The Web PaaS CLI installer will provide further instructions and provide a **URL
 The next step is to add SSH keys to your user account.
 
 - If you would like to use an existing local key, enter the command `webpaas ssh-key:add` in the Web PaaS CLI. Your public key can be added in the Wizard or in the `Account`{.action} settings of your Web PaaS Management Console.
-- If you need to create a new key pair, we recommend to follow the steps in the [SSH guide](../development-ssh/).
+- If you need to create a new key pair, we recommend to follow the steps in the [SSH guide](/pages/web/web-paas/development-ssh/).
 
 #### Downloading the project
 
@@ -115,12 +112,12 @@ The final step to get started with a project is to downlad it in order to work o
 
 ## Go further
 
-[Configuring the CLI](../development-cli/)
+[Configuring the CLI](/pages/web/web-paas/development-cli/)
 
-[Using SSH](../development-ssh/)
+[Using SSH](/pages/web/web-paas/development-ssh/)
 
-[Using YAML](../configuration-yaml/)
+[Using YAML](/pages/web/web-paas/configuration-yaml/)
 
-[Managing Web PaaS from the OVHcloud Control Panel](../web-paas-managing-service/)
+[Managing Web PaaS from the OVHcloud Control Panel](/pages/web/web-paas/control-panel-managing-the-service)
 
 Join our community of users on <https://community.ovh.com/en/>.

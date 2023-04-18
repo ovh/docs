@@ -1,9 +1,6 @@
 ---
 title: 'Conectarse al espacio de almacenamiento de un alojamiento web'
-slug: conexion-espacio-almacenamiento-ftp-alojamiento-web
 excerpt: 'Cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloud'
-section: 'FTP y SSH'
-order: 02
 updated: 2022-10-21
 ---
 
@@ -56,7 +53,7 @@ Entre esa información se encuentran los datos necesarios para conectarse a su e
 - **Servidor SSH**: Es la dirección del servidor que permite acceder al espacio de almacenamiento utilizando un terminal por SSH.
 - **Login principal**: Usuario (S)FTP principal creado en el alojamiento. Puede consultar todos los usuarios (S)FTP del alojamiento en la columna "Usuario" de la tabla.
 
-Si ha perdido la contraseña de un usuario FTP o SSH, haga clic en el botón con forma de lápiz o el botón `···`{.action} (en función del plan de hosting) y seleccione `Cambiar la contraseña`{.action}. Si necesita ayuda, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/).
+Si ha perdido la contraseña de un usuario FTP o SSH, haga clic en el botón con forma de lápiz o el botón `···`{.action} (en función del plan de hosting) y seleccione `Cambiar la contraseña`{.action}. Si necesita ayuda, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password).
 
 ![Conexión FTP](images/connect-ftp-step2.png){.thumbnail}
 
@@ -118,14 +115,14 @@ Si se conecta en línea de comandos, sustituya los elementos «sshlogin», «ssh
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Si los datos son correctos, podrá interactuar con su espacio de almacenamiento. Si lo necesita, consulte nuestra guía [Web hosting: SSH en alojamiento compartido](../web_hosting_ssh_en_alojamiento_compartido/).
+Si los datos son correctos, podrá interactuar con su espacio de almacenamiento. Si lo necesita, consulte nuestra guía [Web hosting: SSH en alojamiento compartido](/pages/web/hosting/ssh_on_webhosting).
 
 ![Conexión FTP](images/connect-ftp-step5.png){.thumbnail}
 
 ## Más información
 
-[Cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/){.external}
+[Cambiar la contraseña de un usuario FTP](/pages/web/hosting/ftp_change_password){.external}
 
-[Web hosting: SSH en alojamiento compartido](../web_hosting_ssh_en_alojamiento_compartido/){.external}
+[Web hosting: SSH en alojamiento compartido](/pages/web/hosting/ssh_on_webhosting){.external}
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

@@ -1,9 +1,6 @@
 ---
 title: Utiliser TypeScript sur votre hébergement web POWER
-slug: nodejs-using-typescript
 excerpt: Découvrez comment utiliser TypeScript sur votre hébergement web POWER
-section: Node.js
-order: 7
 updated: 2021-02-04
 ---
 
@@ -40,7 +37,7 @@ Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y dép
 - Disposer de l'offre d'hébergement web POWER [Node.js](https://labs.ovh.com/managed-nodejs).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](/pages/labs/web-power/getting-started) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 

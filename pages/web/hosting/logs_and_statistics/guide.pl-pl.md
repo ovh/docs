@@ -1,9 +1,6 @@
 ---
 title: 'Hosting: Statystyki i logi strony'
 excerpt: Dostęp do statystyk strony www
-slug: hosting_statystyki_i_logi_strony
-section: Optymalizacja strony WWW
-order: 04
 updated: 2021-01-05
 ---
 
@@ -46,7 +43,7 @@ Kliknij przycisk `Utwórz nowego użytkownika`{.action} w sekcji `Administracja 
 
 > [!warning] 
 >
-> Jeśli włączyłeś oddzielne logi w [pozycji MultiSite](../konfiguracja-multisite-na-hostingu/#etap-2-dodanie-domeny-lub-subdomeny), użytkownicy utworzeni tutaj nie mogą uzyskać dostępu do statystyk dla tego wpisu MultiSite.
+> Jeśli włączyłeś oddzielne logi w [pozycji MultiSite](/pages/web/hosting/multisites_configure_multisite#etap-2-dodanie-domeny-lub-subdomeny), użytkownicy utworzeni tutaj nie mogą uzyskać dostępu do statystyk dla tego wpisu MultiSite.
 >
 
 ### Statystyki odwiedzin
@@ -81,7 +78,7 @@ Dostępne są różne typy logów:
 - Logi CGI: przeprowadzone wywołania skryptów cgi.bin.
 - Logi out: statystyki hostingu w zakresie wywołań zewnętrznych.
 - Logi SSH: te logi przedstawiają różne połączenia zrealizowane za pomocą protokołu SSH.
-- Logi CRON: wynik wykonywania zaplanowanych zadań ([Zadania zautomatyzowane (CRON) na Twoim hostingu](../hosting_www_automatyczne_zadania_cron/)).
+- Logi CRON: wynik wykonywania zaplanowanych zadań ([Zadania zautomatyzowane (CRON) na Twoim hostingu](/pages/web/hosting/cron_tasks)).
 
 ### Obciążenie hostingu
 

@@ -1,9 +1,6 @@
 ---
 title: 'Posteingangsregeln in OWA erstellen'
-slug: posteingangsregeln-in-owa-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie E-Mail-Weiterleitungen und Eingangsfilter in OWA verwenden'
-section: Erste Schritte
-order: 05
 updated: 2020-03-12
 ---
 
@@ -20,4 +17,4 @@ Um über einen Webbrowser von überall aus auf einen Account zuzugreifen, stellt
 <br>Unsere [Webmail](https://www.ovh.de/mail/)-Verbindungsseite ist der einzige Zugriffspunkt auf das jeweilige OWA Interface für alle aktiven E-Mail-Accounts in MX Plan, [Email Pro](https://www.ovhcloud.com/de/emails/email-pro/) und [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/).
 
 
-Weitere Informationen zur Erstellung von Posteingangsregeln finden Sie in [dieser Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/posteingangsregeln-in-owa-erstellen/).
+Weitere Informationen zur Erstellung von Posteingangsregeln finden Sie in [dieser Anleitung](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa).

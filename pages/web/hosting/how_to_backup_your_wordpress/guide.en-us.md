@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Backing up your WordPress website"
-slug: realize-backup-wordpress
 excerpt: "Find out how to back up the content of your WordPress website and its database"
-section: 'Tutorials'
-order: 021
 updated: 2023-02-22
 ---
 
@@ -27,13 +24,13 @@ On a web hosting plan, you are responsible for your website’s backups. Althoug
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) with [WordPress installed](https://docs.ovh.com/us/en/hosting/web_hosting_web_hosting_modules/)
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) with [WordPress installed](/pages/web/hosting/cms_install_1_click_modules)
 
 ## Instructions
 
 You can perform a backup in two ways: **manually** or by **using a plugin**.
 
-OVHcloud provides an [automatic data backup service](https://docs.ovh.com/us/en/hosting/restoring-ftp-filezilla-control-panel/) (non-contractual) and makes these backups available. However, it is your responsibility to set up your own restoration policy and to determine restoration points at times you deem appropriate.
+OVHcloud provides an [automatic data backup service](/pages/web/hosting/ftp_save_and_backup) (non-contractual) and makes these backups available. However, it is your responsibility to set up your own restoration policy and to determine restoration points at times you deem appropriate.
 
 ### Method 1: Perform a manual backup
 
@@ -41,7 +38,7 @@ Manual backups should be done in two steps. First, you need to back up your webs
 
 #### 1.1 Back up your website files
 
-Retrieving your data is done via an FTP client like FileZilla. See our tutorial "[Using FileZilla with your OVHcloud hosting](https://docs.ovh.com/us/en/hosting/web_hosting_filezilla_user_guide/)" for more information.
+Retrieving your data is done via an FTP client like FileZilla. See our tutorial "[Using FileZilla with your OVHcloud hosting](/pages/web/hosting/ftp_filezilla_user_guide)" for more information.
 
 When you are logged in to your server via FTP, you will need to retrieve the contents of the `www` directory from the right pane (drag and drop). This directory contains all the files and directories of your WordPress site (configuration, themes, media, etc.).
 
@@ -57,7 +54,7 @@ To export your database, go to the *PHPMyAdmin* interface via the URL that was s
 
 > [!success]
 >
-> Please refer to our guide on [exporting a database](https://docs.ovh.com/us/en/hosting/web_hosting_database_export_guide/).
+> Please refer to our guide on [exporting a database](/pages/web/hosting/sql_database_export).
 
 ![PHPMyAdmin access - Home](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -149,7 +146,7 @@ By applying these best practices, you will have the possibility to restore the w
 ## Go further <a name="go-further"></a>
 
 - [WordPress official website](https://wordpress.org){.external}
-- [More information on backups for your web hosting plan](https://docs.ovh.com/us/en/hosting/technical-specifications-web-hosting/#automatic-backup-information_1)
+- [More information on backups for your web hosting plan](/pages/web/hosting/hosting_technical_specificities#automatic-backup-information_1)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 

@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Faça o backup do seu site WordPress"
-slug: realize-backup-wordpress
 excerpt: "Descubra como guardar o conteúdo do WordPress e a base de dados do seu website"
-section: 'Tutoriais'
-order: 021
 updated: 2023-02-22
 ---
 
@@ -37,7 +34,7 @@ Num alojamento web partilhado, é responsável pelos backups do seu website. Mes
 
 Pode efetuar um backup de duas formas: **manualmente** ou **através de uma extensão**.
 
-A OVHcloud oferece um [serviço (não contratual) de backup automático de dados](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/), assim como a disponibilização destes backups. No entanto, é da sua responsabilidade implementar a sua própria política de restauro e determinar os pontos de restauro nos momentos que considere oportunos.
+A OVHcloud oferece um [serviço (não contratual) de backup automático de dados](/pages/web/hosting/ftp_save_and_backup), assim como a disponibilização destes backups. No entanto, é da sua responsabilidade implementar a sua própria política de restauro e determinar os pontos de restauro nos momentos que considere oportunos.
 
 ### Método n°1 - realizar um backup manual
 
@@ -45,7 +42,7 @@ O backup manual deve ser feito em duas etapas. Primeiro, deve guardar os ficheir
 
 #### 1.1 - Salvaguarde os ficheiros do seu website
 
-A recuperação faz-se através de um cliente FTP como o FileZilla. Para mais informações, consulte o nosso manual "[Utilizar o FileZilla com o seu alojamento OVHcloud](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/)".
+A recuperação faz-se através de um cliente FTP como o FileZilla. Para mais informações, consulte o nosso manual "[Utilizar o FileZilla com o seu alojamento OVHcloud](/pages/web/hosting/ftp_filezilla_user_guide)".
 
 Quando se liga ao seu servidor através de FTP, deve recuperar (arrastando/largando) o conteúdo do diretório `www` na parte direita. Este diretório contém a totalidade dos ficheiros e diretórios do seu site WordPress (configuração, temas, media, etc.).
 
@@ -61,7 +58,7 @@ Para exportar a sua base de dados aceda à interface _PHPMyAdmin_ através do UR
 
 > [!success]
 >
-> Não hesite em consultar o nosso guia sobre a [exportação de uma base de dados](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/).
+> Não hesite em consultar o nosso guia sobre a [exportação de uma base de dados](/pages/web/hosting/sql_database_export).
 
 ![Acesso PHPMyAdmin - Página inicial](images/how_to_backup_your_wordpress_2.png){.thumbnail}
 
@@ -154,7 +151,7 @@ Ao aplicar estas boas práticas, poderá voltar a uma versão anterior saudável
 ## Quer saber mais? <a name="go-further"></a>
 
 - [Site oficial da WordPress](https://wordpress.org){.external}
-- [Mais informações sobre os backups do seu alojamento web](https://docs.ovh.com/pt/hosting/especificidades-tecnicas-alojamentos-partilhados/#informacoes-sobre-backups-automaticos_1)
+- [Mais informações sobre os backups do seu alojamento web](/pages/web/hosting/hosting_technical_specificities#informacoes-sobre-backups-automaticos_1)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

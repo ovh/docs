@@ -1,9 +1,6 @@
 ---
 title: 'IPv6 auf einer Public Cloud Instanz konfigurieren'
-slug: ipv6-configuration
 excerpt: 'Anleitung zum Konfigurieren von IPv6 auf einer Public Cloud Instanz'
-section: Konfiguration
-order: 02
 updated: 2022-11-15
 ---
 
@@ -25,7 +22,7 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 > [!primary]
 > 
-> Floating IP und Gateway sind derzeit nicht mit IPv6 kompatibel. Sie können IPv6 nur mit Instanzen im [Public Mode](#https://docs.ovh.com/de/publiccloud/network-services/networking-concepts/#publicmode) verwenden.
+> Floating IP und Gateway sind derzeit nicht mit IPv6 kompatibel. Sie können IPv6 nur mit Instanzen im [Public Mode](#/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode) verwenden.
 >
 
 ## Voraussetzungen
@@ -203,7 +200,7 @@ Sie haben IPv6 konfiguriert, aber es funktioniert dennoch nicht?
 
 Mit einem einfachen Mittel lässt sich herausfinden, ob der Fehler in der durchgeführten Konfigurierung, oder im Netzwerk von OVHcloud liegt.
 
-Zunächst [stellen Sie Ihre Instanz auf den Rescuemodus "rescue-pro" um](https://docs.ovh.com/de/public-cloud/umstellung_einer_instanz_auf_den_rescue-modus/).
+Zunächst [stellen Sie Ihre Instanz auf den Rescuemodus "rescue-pro" um](/pages/platform/public-cloud/put_an_instance_in_rescue_mode).
 
 Nutzen Sie nun die nachfolgenden Befehle, um Ihre IP-Adresse nicht-persistent zu konfigurieren, wobei Sie die Platzhalter mit Ihren Spezifikationen ersetzen:
 

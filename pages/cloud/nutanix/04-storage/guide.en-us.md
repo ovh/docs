@@ -1,9 +1,6 @@
 ---
 title: Storage overview on Nutanix
-slug: storage
 excerpt: Overview of Storage Management in a Nutanix cluster
-section: Getting started
-order: 06
 updated: 2022-02-23
 ---
 
@@ -114,7 +111,7 @@ The **Volume Group** will then appear in the list.
 
 ## Go further <a name="gofurther"></a>
 
-[Presentation of a Nutanix cluster](https://docs.ovh.com/us/en/nutanix/nutanix-hci/)
+[Presentation of a Nutanix cluster](/pages/cloud/nutanix/03-nutanix-hci)
 
 [Nutanix storage documentation](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
 

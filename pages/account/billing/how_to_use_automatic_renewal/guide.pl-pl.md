@@ -1,10 +1,7 @@
 ---
 title: Zarządzanie odnawianiem usług
-slug: przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh
 excerpt: Dowiedz się, jak zarządzać odnawianiem usług OVHcloud w Panelu klienta
 legacy_guide_number: g1271
-section: Pierwsze kroki
-order: 1
 updated: 2022-04-07
 ---
 
@@ -31,7 +28,7 @@ Odnawianiem i rezygnacją z usług możesz zarządzać w Panelu klienta.
 
 - Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl);
 - Posiadanie aktywnych usług OVHcloud;
-- Posiadanie [kontaktu księgowego](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/#definicja) za usługi OVHcloud.
+- Posiadanie [kontaktu księgowego](/pages/account/customer/managing_contacts#definicja) za usługi OVHcloud.
 
 ## W praktyce
 
@@ -41,11 +38,11 @@ Możesz również skonfigurować niektóre produkty (Domeny, Hosting, VPS, Serwe
 
 Przejdź do opisu operacji, którą chcesz wykonać:
 
-- [Wyświetl status odnowienia Twoich usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#wyswietlenie-statusu-odnowienia-uslug): niniejszy przewodnik pomaga w sprawdzeniu, czy Twoje usługi są odnawiane automatycznie. Możesz również otrzymać datę odnowienia lub wygaśnięcia usługi;
+- [Wyświetl status odnowienia Twoich usług](/pages/account/billing/how_to_use_automatic_renewal#wyswietlenie-statusu-odnowienia-uslug): niniejszy przewodnik pomaga w sprawdzeniu, czy Twoje usługi są odnawiane automatycznie. Możesz również otrzymać datę odnowienia lub wygaśnięcia usługi;
 
-- [Zarządzanie odnawianiem usług](https://docs.ovh.com/pl/billing/przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/): niniejszy przewodnik wyjaśnia, jak włączyć lub wyłączyć automatyczne odnawianie usług, zmienić częstotliwość płatności za usługę oraz zapłacić za odnowienie usługi przed ich terminem;
+- [Zarządzanie odnawianiem usług](/pages/account/billing/how_to_use_automatic_renewal): niniejszy przewodnik wyjaśnia, jak włączyć lub wyłączyć automatyczne odnawianie usług, zmienić częstotliwość płatności za usługę oraz zapłacić za odnowienie usługi przed ich terminem;
 
-- [Zarządzanie sposobami płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/): niniejszy przewodnik wyjaśnia, czy dysponujesz sposobem płatności zarejestrowanym dla przyszłych odnowień. W razie potrzeby możesz również dodawać i usuwać sposoby płatności.
+- [Zarządzanie sposobami płatności](/pages/account/billing/manage-payment-methods): niniejszy przewodnik wyjaśnia, czy dysponujesz sposobem płatności zarejestrowanym dla przyszłych odnowień. W razie potrzeby możesz również dodawać i usuwać sposoby płatności.
 
 ### Uzyskiwanie dostępu do konfiguracji usług
 
@@ -71,11 +68,11 @@ Kryteria filtrowania zostaną wyświetlone nad tabelą. Oto przykład filtra umo
 
 Podczas rejestracji usługi są domyślnie ustawione na **odnawianie automatyczne**. Dzięki tej opcji masz pewność, że Twoje usługi będą automatycznie odnawiane z dniem wygaśnięcia. Ponadto jeśli na koncie klienta masz ustawiony sposób płatności, należności za faktury będą pobierane automatycznie.
 
-Jeśli nie masz zarejestrowanego żadnego [sposobu płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/), otrzymasz e-mail z fakturą. Wówczas wystarczy ją opłacić online.
+Jeśli nie masz zarejestrowanego żadnego [sposobu płatności](/pages/account/billing/manage-payment-methods), otrzymasz e-mail z fakturą. Wówczas wystarczy ją opłacić online.
 
 W przypadku usług, które odnawiają się automatycznie rzadziej niż co miesiąc (co 3, 6, 12 miesięcy), w miesiącu poprzedzającym odnowienie zostaje wysłana wiadomość e-mail z przypomnieniem i podsumowaniem usług, które zostaną odnowione w najbliższym czasie.
 
-Jeśli nie chcesz przedłużać którejś z tych usług, wystarczy [zrezygnować z niej w Panelu klienta](https://docs.ovh.com/pl/billing/how-to-cancel-your-services/).
+Jeśli nie chcesz przedłużać którejś z tych usług, wystarczy [zrezygnować z niej w Panelu klienta](/pages/account/billing/how_to_cancel_services).
 
 ### Odnowienie ręczne
 
@@ -125,7 +122,7 @@ To działanie jest dostępne w przypadku usług z opcją odnawiania automatyczne
 
 > [!warning]
 >
-> Więcej informacji na temat rezygnacji z usług OVHcloud znajdziesz w [instrukcji zawartych w tym przewodniku](https://docs.ovh.com/pl/billing/how-to-cancel-your-services/).
+> Więcej informacji na temat rezygnacji z usług OVHcloud znajdziesz w [instrukcji zawartych w tym przewodniku](/pages/account/billing/how_to_cancel_services).
 >
 
 #### Opłać fakturę
@@ -150,8 +147,8 @@ W poniższej tabeli przedstawiono możliwe działania zbiorcze.
 
 ## Sprawdź również
 
-[Rozliczanie należności za usługę Public Cloud](https://docs.ovh.com/pl/public-cloud/analizowanie_platnosci_i_zarzadzanie_nimi/)
+[Rozliczanie należności za usługę Public Cloud](/pages/platform/public-cloud/analyze_billing)
 
-[Zarządzanie fakturowaniem kont Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/)
+[Zarządzanie fakturowaniem kont Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

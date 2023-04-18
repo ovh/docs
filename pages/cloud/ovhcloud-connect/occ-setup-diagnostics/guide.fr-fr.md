@@ -1,9 +1,6 @@
 ---
 title: "Résoudre les erreurs fréquentes lors de la mise en service de OVHcloud Connect"
-slug: occ-diagnostics
 excerpt: "Découvrez comment résoudre les erreurs les plus fréquentes liées à la mise en service de OVHcloud Connect"
-section: Premiers pas
-order: 4
 updated: 2021-09-02
 ---
 
@@ -114,7 +111,7 @@ Si vous avez commandé un lien 10 Gbit/s, le SFP sera: 10GBase-LR. Utilisez la c
 speed 10000
 ```
 
-Pour plus d'informations, consultez les [capacités et limites techniques de l'offre OVHcloud Connect](../occ-limits/)
+Pour plus d'informations, consultez les [capacités et limites techniques de l'offre OVHcloud Connect](/pages/cloud/ovhcloud-connect/occ-limits)
 
 #### Désactiver l'auto-négociation
 

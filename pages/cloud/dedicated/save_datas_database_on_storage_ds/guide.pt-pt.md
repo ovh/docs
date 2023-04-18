@@ -1,8 +1,6 @@
 ---
 title: 'Fazer o backup das informações e das bases de dados para um servidor de armazenamento'
-slug: backup-informacoes-bases-de-dados-servidor-armazenamento
 excerpt: 'Proteger dados em 5 passos'
-section: Tutoriais
 updated: 2018-09-12
 ---
 
@@ -70,7 +68,7 @@ Não há um RAID melhor que o outro: todos eles respondem a necessidades diferen
 
 ### 2 - Instalar e configurar o servidor
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e instale o seu servidor. Tal como indicado anteriormente, iremos utilizar o Debian 9.4. Para obter mais informações, consulte o nosso manual que explica os [Primeiros passos com um servidor dedicado](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/){.external}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e instale o seu servidor. Tal como indicado anteriormente, iremos utilizar o Debian 9.4. Para obter mais informações, consulte o nosso manual que explica os [Primeiros passos com um servidor dedicado](/pages/cloud/dedicated/getting-started-with-dedicated-server){.external}.
 
 Depois de selecionar o sistema para a instalação, selecione a opção `Personalizar a configuração das partições`{.action}.
 

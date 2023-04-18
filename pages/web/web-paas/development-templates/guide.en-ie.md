@@ -1,8 +1,5 @@
 ---
 title: Project templates
-slug: development-templates
-section: Development
-order: 5
 updated: 2021-05-11
 ---
 
@@ -17,7 +14,7 @@ You can click the **Deploy on Web PaaS** button to launch a new project using a 
 
 ## C#/.NET Core
 
-View the [C#/.NET Core documentation](../languages-dotnet).
+View the [C#/.NET Core documentation](/pages/web/web-paas/languages-dotnet).
 
 
 ### ASP.NET Core  
@@ -36,7 +33,7 @@ View the [C#/.NET Core documentation](../languages-dotnet).
 
 ## Go
 
-View the [Go documentation](../languages-go).
+View the [Go documentation](/pages/web/web-paas/languages-go).
 
 
 ### Hugo  
@@ -105,7 +102,7 @@ View the [Go documentation](../languages-go).
 
 ## Java
 
-View the [Java documentation](../languages-java).
+View the [Java documentation](/pages/web/web-paas/languages-java).
 
 
 ### Quarkus  
@@ -321,7 +318,7 @@ View the [Java documentation](../languages-java).
 
 ## Lisp
 
-View the [Lisp documentation](../languages-lisp).
+View the [Lisp documentation](/pages/web/web-paas/languages-lisp).
 
 
 ### Lisp Hunchentoot  
@@ -339,7 +336,7 @@ View the [Lisp documentation](../languages-lisp).
 
 ## Node.js
 
-View the [Node.js documentation](../languages-nodejs).
+View the [Node.js documentation](/pages/web/web-paas/languages-nodejs).
 
 
 ### strapi  
@@ -501,7 +498,7 @@ View the [Node.js documentation](../languages-nodejs).
 
 ## PHP
 
-View the [PHP documentation](../languages-php).
+View the [PHP documentation](/pages/web/web-paas/languages-php).
 
 
 ### Gatsby with Drupal  
@@ -800,7 +797,7 @@ View the [PHP documentation](../languages-php).
 
 ## Python
 
-View the [Python documentation](../languages-python).
+View the [Python documentation](/pages/web/web-paas/languages-python).
 
 
 ### Django 2  
@@ -913,7 +910,7 @@ View the [Python documentation](../languages-python).
 
 ## Ruby
 
-View the [Ruby documentation](../languages-ruby).
+View the [Ruby documentation](/pages/web/web-paas/languages-ruby).
 
 
 ### Ruby on Rails  

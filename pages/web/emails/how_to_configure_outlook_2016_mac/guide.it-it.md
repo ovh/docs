@@ -1,9 +1,6 @@
 ---
 title: 'Configurare un account email su Outlook per macOS'
-slug: configurazione-outlook-2016-mac
 excerpt: 'Scopri come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Mac'
-section: Configurazione su computer
-order: 02
 updated: 2018-05-31
 ---
 
@@ -23,7 +20,7 @@ Scopri come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Mac.
 
 > [!primary]
 >
-> Se utilizzi Outlook 2016 per Windows, consulta la nostra guida per [Configurare un indirizzo email su Outlook 2016 per Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016/){.external}.
+> Se utilizzi Outlook 2016 per Windows, consulta la nostra guida per [Configurare un indirizzo email su Outlook 2016 per Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}.
 >
 
 ## Procedura
@@ -81,8 +78,8 @@ OVHcloud propone un’applicazione Web con [funzionalità collaborative](https:/
 
 ## Per saperne di più
 
-[Configurare un account Email Pro su Outlook 2016 per Mac](https://docs.ovh.com/it/emails-pro/configurazione-outlook-2016-mac/){.external}.
+[Configurare un account Email Pro su Outlook 2016 per Mac](/pages/web/emails-pro/how_to_configure_outlook_2016-mac/){.external}.
 
-[Configurare un account Exchange su Outlook 2016 per Mac](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-exchange-outlook-2016-mac/){.external}.
+[Configurare un account Exchange su Outlook 2016 per Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

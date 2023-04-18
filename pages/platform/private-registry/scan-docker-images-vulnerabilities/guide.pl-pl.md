@@ -1,15 +1,12 @@
 ---
 title: 'Scanning Docker images for vulnerabilities with OVHcloud Managed Private Registry'
 excerpt: 'Find out how to scan Docker images for vulnerabilities with OVHcloud Managed Private Registry'
-slug: scan-docker-images-vulnerabilities
-section: 'Tutorials'
-order: 04
 kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Private Registry
 category_l3: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-registry/scan-docker-images-vulnerabilities/'
+    canonical: '/pages/platform/private-registry/scan-docker-images-vulnerabilities'
 updated: 2022-04-15
 ---
 
@@ -43,7 +40,7 @@ OVHcloud Managed Private Registry service is a composite cloud-native registry w
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Private Registry and you have followed the guides on [creating a private registry](../creating-a-private-registry/), [connecting to the UI](../connecting-to-the-ui/), [managing users and projects](../managing-users-and-projects/) and [creating and using private images](../creating-and-using-a-private-image/).
+This tutorial presupposes that you already have a working OVHcloud Managed Private Registry and you have followed the guides on [creating a private registry](../creating-a-private-registry/), [connecting to the UI](../connecting-to-the-ui/), [managing users and projects](../managing-users-and-projects/) and [creating and using private images](/pages/platform/private-registry/creating-and-using-a-private-image).
 
 You should have at least one image in your Private Registry:
 
@@ -116,6 +113,6 @@ For that, select the scheduling and click on the `Save`{.action} button.
 
 ## Go further
 
-To have an overview of OVHcloud Managed Private Registry service, you can consult the [OVHcloud Managed Private Registry site](../).
+To have an overview of OVHcloud Managed Private Registry service, you can consult the [OVHcloud Managed Private Registry site](/pl/private-registry/).
 
 Join our community of users on <https://community.ovh.com/en/>.

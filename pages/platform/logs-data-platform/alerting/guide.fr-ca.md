@@ -1,9 +1,6 @@
 ---
 title: Using alerts with Logs Data Platform
-slug: alerting
-order: 6
 excerpt: With the alerting feature you don't even need to watch your logs, our platform does it for you.
-section: Features
 updated: 2022-07-28
 ---
 
@@ -19,9 +16,9 @@ This guide will help you to configure and use alerts on a particular field. We w
 
 In order to understand this guide you should read the following tutorials:
 
-- [Quick start of Logs Data Platform](../quick-start){.ref}.
-- [Logstash collector on Logs Data Platform](../logstash-input){.ref}.
-- [The Filebeat tutorial](../filebeat-logs){.ref}.
+- [Quick start of Logs Data Platform](/pages/platform/logs-data-platform/quick_start){.ref}.
+- [Logstash collector on Logs Data Platform](/pages/platform/logs-data-platform/logstash_input){.ref}.
+- [The Filebeat tutorial](/pages/platform/logs-data-platform/filebeat_logs){.ref}.
 
 ## Instructions
 
@@ -46,7 +43,7 @@ Don't hesitate to jump to the alert configuration part if you only need to know 
 
 ### Use case&#58; Alerts for a website powered by an Apache Server
 
-For this tutorial, we will configure the 3 alerts that we can use for a website. These 3 alerts can help you to react immediately in the case of a failure, detect unexpected problems or verify that all your websites are working correctly. But before going into the alerting feature itself, we need to configure our Apache Logging format to include all the information we need. We will also use [Filebeat](../filebeat-logs){.ref} to send our logs to Logs Data Platform.
+For this tutorial, we will configure the 3 alerts that we can use for a website. These 3 alerts can help you to react immediately in the case of a failure, detect unexpected problems or verify that all your websites are working correctly. But before going into the alerting feature itself, we need to configure our Apache Logging format to include all the information we need. We will also use [Filebeat](/pages/platform/logs-data-platform/filebeat_logs){.ref} to send our logs to Logs Data Platform.
 
 #### Apache Server Configuration
 
@@ -64,7 +61,7 @@ We will use the [Filebeat Apache format](https://www.elastic.co/guide/en/beats/f
 </VirtualHost>
 ```
 
-The configuration is inspired by the one you can find in [this tutorial](../apache-logs){.ref}.
+The configuration is inspired by the one you can find in [this tutorial](/pages/platform/logs-data-platform/apache_logs){.ref}.
 
 #### Filebeat configuration
 
@@ -205,7 +202,7 @@ You will then receive an email with the messages included. You can then directly
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/ca/fr/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

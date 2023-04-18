@@ -1,9 +1,6 @@
 ---
 title: Erste Schritte mit MySQL und MariaDB
-slug: erste-schritte-mit-mysql-und-mariadb
 excerpt: Verwendung Ihrer Datenbanken
-section: Erste Schritte
-order: 02
 updated: 2023-02-15
 ---
 
@@ -35,7 +32,7 @@ Das System ist 100% kompatibel und gilt insgesamt als „freier“ als das origi
 
 - Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (auch enthalten in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/)).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben die [Anleitung zum Start mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) befolgt.
+- Sie haben die [Anleitung zum Start mit Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb) befolgt.
 
 ## In der praktischen Anwendung
 
@@ -61,7 +58,7 @@ Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie:
 
 Diese Informationen sind über Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehbar.
 
-Die Anleitung finden Sie unter: [Erste Schritte mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
+Die Anleitung finden Sie unter: [Erste Schritte mit Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb).
 
 #### Per Kommandozeile verbinden
 
@@ -121,7 +118,7 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 > [!primary]
 >
-> In manchen Fällen kann es sein, dass das in Ihrer Web Cloud Databases Instanz verfügbare RAM nicht den gewünschten Export oder Import durchführen kann. Ist das der Fall, empfehlen wir Ihnen die Verwendung des OVHcloud Tools im Kundencenter. Folgen Sie dazu der Anleitung "[Erste Schritte mit Web Cloud Databases](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/#datenbank-importieren)", falls erforderlich.
+> In manchen Fällen kann es sein, dass das in Ihrer Web Cloud Databases Instanz verfügbare RAM nicht den gewünschten Export oder Import durchführen kann. Ist das der Fall, empfehlen wir Ihnen die Verwendung des OVHcloud Tools im Kundencenter. Folgen Sie dazu der Anleitung "[Erste Schritte mit Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#datenbank-importieren)", falls erforderlich.
 >
 
 ## Weiterführende Informationen

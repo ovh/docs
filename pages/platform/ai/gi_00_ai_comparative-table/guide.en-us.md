@@ -1,9 +1,6 @@
 ---
 title: Comparative tables between AI Notebooks, AI Training, AI Deploy
-slug: ai-comparative-tables
 excerpt: "Discover the main differences between each of the OVHcloud AI tools' bricks"
-section: General information
-order: 100
 updated: 2022-09-01
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 'Primeros pasos con la solución de correo electrónico OVHcloud'
-slug: primeros-pasos-correo-compartido
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico OVHcloud'
-section: 'Primeros pasos'
-order: 01
 updated: 2021-07-19
 ---
 
@@ -67,7 +64,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-La primera vez que se conecte al webmail deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](../uso-outlook-en-la-web/){.external}.
+La primera vez que se conecte al webmail deberá seleccionar el idioma de la interfaz y la zona horaria en la que se encuentra. A continuación se abrirá la bandeja de entrada. Para más información, consulte nuestra guía [Utilizar una dirección de correo desde Outlook en la Web](/pages/web/emails/email_owa){.external}.
 
 ![Correo electrónico](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -77,7 +74,7 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
-|[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](../configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
+|[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](/pages/web/emails/how_to_configure_gmail){.external}|
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
@@ -97,7 +94,7 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 > [!warning]
 >
-> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](../) o contacte con el editor de la aplicación que utilice.
+> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](/us/es/emails/) o contacte con el editor de la aplicación que utilice.
 >
 
 ### Versión histórica de la solución MX Plan
@@ -135,7 +132,7 @@ Una vez que haya creado las direcciones de correo, ya puede empezar a usarlas. P
 
 Vaya a la [página de conexión al webmail](https://www.ovh.com/world/es/mail/){.external} e introduzca su dirección de correo y contraseña. Haga clic en el botón `Conexión`{.action}.
 
-A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](https://docs.ovh.com/es/emails/webmail_guia_de_uso_de_roundcube/){.external}.
+A continuación, podrá consultar su bandeja de entrada. Para más información, consulte nuestra [Guía de uso de Roundcube](/pages/web/emails/email_roundcube){.external}.
 
 ![Correo electrónico](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
@@ -145,7 +142,7 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
-|[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](../configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
+|[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](/pages/web/emails/how_to_configure_gmail){.external}|
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
@@ -165,7 +162,7 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 > [!warning]
 >
-> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](../) o contacte con el editor de la aplicación que utilice.
+> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](/us/es/emails/) o contacte con el editor de la aplicación que utilice.
 >
 
 ## Más información

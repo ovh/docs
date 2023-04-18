@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Toevoeging van een domeinnaam aan uw Exchange
-slug: toevoegen-domein-exchange
 excerpt: Ontdek hoe u een domeinnaam kunt toevoegen aan uw Exchange-dienst
-section: Configuratie van Exchange
 updated: 2022-10-07
 ---
 
@@ -90,7 +88,7 @@ Nadat het domein is toegevoegd als gekoppeld domein, controleert u of de configu
 
 - **Als u bij het toevoegen van het domein hebt gekozen voor automatische configuratie**: het kan een paar uur duren voordat het op het Control Panel verschijnt.
 
-- **Als u een niet-OVH-domeinnaam hebt ingevoerd**: klik op het rode omlijnde vak om de wijzigingen die u moet aanbrengen te bekijken. Als deze domeinnaam de OVH-configuratie (de DNS-servers) niet gebruikt, moet u de wijzigingen uitvoeren in de interface die u gebruikt om de configuratie van uw domeinnaam te beheren. Als u de CNAME-record wilt wijzigen, kunt u meer informatie vinden aan de hand van deze [documentatie](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange-toevoegen-van-een-cname-record/){.external}.
+- **Als u een niet-OVH-domeinnaam hebt ingevoerd**: klik op het rode omlijnde vak om de wijzigingen die u moet aanbrengen te bekijken. Als deze domeinnaam de OVH-configuratie (de DNS-servers) niet gebruikt, moet u de wijzigingen uitvoeren in de interface die u gebruikt om de configuratie van uw domeinnaam te beheren. Als u de CNAME-record wilt wijzigen, kunt u meer informatie vinden aan de hand van deze [documentatie](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname){.external}.
 
 > [!primary]
 >
@@ -113,6 +111,6 @@ OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/
 
 ## Verder
 
-[Creatie van een CNAME-record voor het toevoegen van een gekoppeld domein](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange-toevoegen-van-een-cname-record/){.external}.
+[Creatie van een CNAME-record voor het toevoegen van een gekoppeld domein](/pages/web/microsoft-collaborative-solutions/exchange_dns_cname){.external}.
 
 Ga in gesprek met andere communitygebruikers op [https://community.ovh.com](https://community.ovh.com){.external}.

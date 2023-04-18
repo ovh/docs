@@ -1,7 +1,5 @@
 ---
 title: Einen VPS absichern
-slug: vps-sicherheit
-section: "Erste Schritte"
 excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS
 updated: 2022-05-05
 ---
@@ -35,7 +33,7 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 >
 > Beachten Sie, dass dies eine allgemeine Anleitung ist, basierend auf einer Ubuntu Distribution. Einige Befehle müssen an die von Ihnen verwendete Distribution oder das Betriebssystem angepasst werden. Wir empfehlen Ihnen gelegentlich, externe Tools zu verwenden. Wenn Sie Hilfe benötigen, lesen Sie die offizielle Dokumentation dieser Anwendungen.
 >
-> Wenn Sie Ihren ersten OVHcloud VPS konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines VPS](https://docs.ovh.com/de/vps/erste-schritte-mit-einem-vps/) zu verwenden.
+> Wenn Sie Ihren ersten OVHcloud VPS konfigurieren, empfehlen wir, zum Einstieg unsere Anleitung zur [Ersteinrichtung eines VPS](/pages/cloud/vps/starting_with_a_vps) zu verwenden.
 >
 
 Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen verbunden sind.
@@ -97,7 +95,7 @@ username@IPv4_des_VPS -p PortNummer
 
 ### Passwort des Root-Benutzers ändern
 
-Es wird dringend empfohlen, das Passwort des Root-Benutzers abzuändern, damit es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/vps/root-password/).
+Es wird dringend empfohlen, das Passwort des Root-Benutzers abzuändern, damit es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/vps/root_password).
 
 ### Anlegen eines Benutzers mit eingeschränkten Rechten
 
@@ -158,7 +156,7 @@ GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der al
 iptables -L
 ```
 
-Weitere Informationen zu *iptables* finden Sie in unserer [Anleitung](https://docs.ovh.com/de/vps/vps-firewall-iptables/).
+Weitere Informationen zu *iptables* finden Sie in unserer [Anleitung](/pages/cloud/vps/firewall-Linux-iptable).
 
 Wir empfehlen Ihnen, Regeln für diese Firewall zu erstellen und an Ihre Nutzung anzupassen. Weitere Informationen zu den möglichen Einstellungen finden Sie in der offiziellen Dokumentation der verwendeten Distribution.
 
@@ -238,7 +236,7 @@ Weitere Informationen und Empfehlungen zu Fail2ban finden Sie in der [offizielle
 
 Bei OVHcloud Diensten besteht die Möglichkeit, am Eingangspunkt der Infrastruktur die so genannte Network Firewall zu aktivieren. Eine korrekte Konfiguration dieser Firewall ermöglicht es, Verbindungen zu blockieren, bevor diese überhaupt auf Ihrem Server ankommen.
 
-Wenn Sie die OVHcloud Network Firewall aktivieren möchten, folgen Sie [dieser Anleitung](https://docs.ovh.com/de/dedicated/firewall-network/).
+Wenn Sie die OVHcloud Network Firewall aktivieren möchten, folgen Sie [dieser Anleitung](/pages/cloud/dedicated/firewall_network).
 
 ### Ihr System und Ihre Daten sichern
 
@@ -253,10 +251,10 @@ Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden
 
 ## Weiterführende Informationen
 
-[Erste Schritte mit einem VPS](https://docs.ovh.com/de/vps/erste-schritte-mit-einem-vps/) 
+[Erste Schritte mit einem VPS](/pages/cloud/vps/starting_with_a_vps) 
 
-[Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/vps/vps-firewall-windows/)
+[Firewall auf einem Windows Server konfigurieren](/pages/cloud/vps/activate-port-firewall-soft-win)
 
-[Network Firewall](https://docs.ovh.com/de/dedicated/firewall-network/)
+[Network Firewall](/pages/cloud/dedicated/firewall_network)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

@@ -1,8 +1,6 @@
 ---
 title: ProxyProtocol get Source IP
-slug: proxyprotocol
 excerpt: Get real visitor IP using OVH Load Balancer with ProxyProtocol
-section: Setting up
 updated: 2018-10-12
 ---
 

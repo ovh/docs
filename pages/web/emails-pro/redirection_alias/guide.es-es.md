@@ -1,11 +1,8 @@
 ---
 title: 'Utilizar los alias y redirecciones de correo'
 excerpt: 'Cómo gestionar los alias y redirecciones de correo'
-slug: email-redirection-guide
-section: 'Gestión de la cuenta de correo'
-order: 1
 routes:
-  canonical: "https://docs.ovh.com/es/emails/correo_redirecciones_de_correo/"
+  canonical: "/pages/web/emails/feature_redirections"
 updated: 2020-05-20
 ---
 
@@ -52,4 +49,4 @@ Por ejemplo, su dirección de correo electrónico es **john.smith@mydomain.ovh**
 
 ## Procedimiento
 
-Siga nuestra guía [Utilizar los alias y redirecciones de correo](https://docs.ovh.com/es/emails/correo_redirecciones_de_correo/) en la sección "Correo electrónico".
+Siga nuestra guía [Utilizar los alias y redirecciones de correo](/pages/web/emails/feature_redirections) en la sección "Correo electrónico".

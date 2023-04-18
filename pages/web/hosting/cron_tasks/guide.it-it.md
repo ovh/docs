@@ -1,9 +1,6 @@
 ---
 title: Crea task automatizzati (CRON) sul tuo hosting Web
-slug: hosting_web_task_automatizzaticron
 excerpt: Scopri come creare task CRON per automatizzare le operazioni pianificate su un hosting Web
-section: Operazioni automatiche (CRON)
-order: 01
 updated: 2022-12-01
 ---
 
@@ -109,7 +106,7 @@ Ti consigliamo di utilizzare percorsi di accesso assoluti ai file dei tuoi scrip
 
 Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, visualizzerai la categoria di log intitolata "CRON".
 
-Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'offerta condivisa"](../hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/) per maggiori dettagli.
+Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'offerta condivisa"](/pages/web/hosting/logs_and_statistics) per maggiori dettagli.
 
 ##### **Esempio di log**
 
@@ -150,8 +147,8 @@ Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'of
 
 ## Per saperne di più
 
-[Configurare il file .ovhconfig di un hosting Web](../configurare-file-ovhconfig/)
+[Configurare il file .ovhconfig di un hosting Web](/pages/web/hosting/ovhconfig_configuration)
 
-[Utilizza l'accesso SSH di un hosting Web](../hosting_condiviso_il_protocollo_ssh/)
+[Utilizza l'accesso SSH di un hosting Web](/pages/web/hosting/ssh_on_webhosting)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

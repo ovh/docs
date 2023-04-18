@@ -1,9 +1,6 @@
 ---
 title: Sich per SFTP verbinden
 excerpt: Sehen Sie hier, wie Sie sich per SFTP mit Ihrer Private Cloud verbinden können
-slug: verbindung_per_sftp
-section: Erste Schritte
-order: 3
 updated: 2021-12-28
 ---
 

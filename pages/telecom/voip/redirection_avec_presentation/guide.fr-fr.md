@@ -1,9 +1,6 @@
 ---
 title: "Configurer une redirection d'appels"
-slug: creer-redirection-avec-presentation
 excerpt: "Découvrez comment configurer une redirection d'appels sur votre numéro alias OVHcloud"
-section: 'Numéros ou alias'
-order: 4
 updated: 2022-07-07
 ---
 
@@ -18,12 +15,12 @@ Cette configuration permet notamment la réception d'appels sur votre numéro pr
 
 > [!primary]
 >
-> Pour obtenir plus de détails sur la différence entre un **numéro alias** et une **ligne SIP**, consultez notre [FAQ](https://docs.ovh.com/fr/voip/faq-voip/#ligne-ou-numero).
+> Pour obtenir plus de détails sur la différence entre un **numéro alias** et une **ligne SIP**, consultez notre [FAQ](/pages/telecom/voip/faq-voip#ligne-ou-numero).
 >
 
 ## Prérequis
 
-- Disposer d'un [numéro alias fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'un [numéro porté](../demander-la-portabilite-de-mon-numero) depuis un autre opérateur.
+- Disposer d'un [numéro alias fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'un [numéro porté](/pages/telecom/voip/demander_la_portabilite_de_mon_numero) depuis un autre opérateur.
 - Disposer d'[une ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 

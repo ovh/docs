@@ -1,8 +1,6 @@
 ---
 title: Mise en route de votre vSphere SecNumCloud
-slug: secnumcloud-vsphere
 excerpt: Découvrez comment prendre en main et configurer votre environnement vSphere SecNumCloud
-section: Fonctionnalités OVHcloud
 hidden: true
 updated: 2021-11-23
 ---
@@ -21,7 +19,7 @@ tout en maintenant le niveau de sécurité.
 * Posséder une offre [Hosted Private Cloud SecNumCloud](https://www.ovh.com/fr/private-cloud/){.external}.
 * Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 * Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}.
-* Avoir [créé ses identifiants pour l'API OVHCloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/){.external}.
+* Avoir [créé ses identifiants pour l'API OVHCloud](/pages/account/api/first-steps){.external}.
 
 ## En pratique
 
@@ -44,7 +42,7 @@ Vous devrez autoriser des adresses IP à se connecter au vCenter.
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Autoriser des IP à se connecter au vCenter](../autoriser-des-ip-a-se-connecter-au-vcenter/)
+* [Autoriser des IP à se connecter au vCenter](/pages/cloud/private-cloud/autoriser_des_ip_a_se_connecter_au_vcenter)
 
 ### Etape 2 : configuration avancée de la sécurité
 
@@ -62,7 +60,7 @@ Pour cela, effectuez les actions suivantes :
 * L'utilisateur « **admin** » doit aussi disposer de l'autorisation « **token validator** ».
 * Si nécessaire, pour modifier l'utilisateur, cliquez sur le bouton `...`{.action} , puis sur `Modifier`{.action}.
 
-N'hésitez pas à consulter notre guide [Présentation de l’espace client Hosted Private Cloud OVHcloud](../manager-ovh-private-cloud/).
+N'hésitez pas à consulter notre guide [Présentation de l’espace client Hosted Private Cloud OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
 Accédez à l’interface sécurisée du service, exemple : https://pcc-192-0-2-1.ovh.com/secure/ (attention à ne pas oublier le “/” final de l’adresse).
 
@@ -128,7 +126,7 @@ Si vous ne confirmez pas cette opération avant l'expiration, elle sera annulée
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Valider une opération avec un token](../interface-secure/#valider-une-operation-avec-un-jeton)
+* [Valider une opération avec un token](/pages/cloud/private-cloud/interface-secure#valider-une-operation-avec-un-jeton)
 
 A l'issue de cette étape, vous serez en capacité d'ouvrir une session sur l'interface vSphere et valider toutes les opérations sensibles sur l'infrastructure lors les prochaines étapes.
 
@@ -138,7 +136,7 @@ La mise en place d'un VPN est nécessaire pour vous permettre de vous connecter 
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Configurer un VPN IPSec via une Gateway Edge](../configurer-un-vpn-via-une-gateway-edge/#ipsec-vpn)
+* [Configurer un VPN IPSec via une Gateway Edge](/pages/cloud/private-cloud/nsx_configurer_un_vpn_via_une_gateway_edge#ipsec-vpn)
 
 ### Etape 4 : activer la private gateway
 
@@ -148,7 +146,7 @@ A l'issue de cette étape, la connexion au vCenter et aux API vSphere ne pourra 
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Activer la Private Gateway](../private-gateway/)
+* [Activer la Private Gateway](/pages/cloud/private-cloud/private_gateway)
 
 ### Etape 5 : mettre en place le KMS pour le chiffrement
 
@@ -158,11 +156,11 @@ Le prérequis est d'avoir un KMS compatible avec la solution VMware vSphere.
 
 Le guide suivant vous décrit comment déployer la solution KMS Thales :
 
-* [Mise en route du KMS CipherTrust Manager](../kms-cipher-trust/)
+* [Mise en route du KMS CipherTrust Manager](/pages/cloud/private-cloud/kms_cipher_trust)
 
 Configurez alors le KMS dans vSphere en vous aidant du guide suivant :
 
-* [Activation du chiffrement des machines virtuelles (VM Encryption)](../vm-encrypt/)
+* [Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/cloud/private-cloud/vm_encrypt)
 
 ### Etape  6: vérification de la conformité SecNumCloud
 

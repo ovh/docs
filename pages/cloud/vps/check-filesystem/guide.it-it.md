@@ -1,9 +1,6 @@
 ---
 title: Verifica il file system su un VPS
 excerpt: Scopri come cercare errori in un file system
-slug: check-file system-vps
-section: Diagnostica e modalità Rescue
-order: 5
 updated: 2021-04-20
 ---
 
@@ -32,7 +29,7 @@ updated: 2021-04-20
 
 #### VPS GNU/Linux
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](../rescue/).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](/pages/cloud/vps/rescue).
 
 Sulle gamme precedenti di VPS, le tue partizioni saranno automaticamente installate in modalità Rescue. Per verificarlo, esegui questo comando:
 
@@ -74,7 +71,7 @@ $ fsck /dev/sdb1 -f
 
 Le istruzioni sopra riportate non si applicano generalmente a un VPS Windows, in quanto la verifica del file system non supporta NTFS. È possibile effettuare una verifica di coerenza NTFS sulle partizioni.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](../rescue/).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](/pages/cloud/vps/rescue).
 
 Sulle gamme precedenti di VPS, le tue partizioni saranno automaticamente installate in modalità Rescue. Per verificarlo, esegui il comando:
 
@@ -108,6 +105,6 @@ $ ntfsfix /dev/sdb1
 
 ## Per saperne di più
 
-[Attiva la modalità Rescue su un VPS](../rescue/)
+[Attiva la modalità Rescue su un VPS](/pages/cloud/vps/rescue)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

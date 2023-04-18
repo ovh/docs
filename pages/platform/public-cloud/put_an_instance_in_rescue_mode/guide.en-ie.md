@@ -1,10 +1,7 @@
 ---
 title: 'Putting an instance in rescue mode'
-slug: put_an_instance_in_rescue_mode
 excerpt: 'Find out how to activate rescue mode for your Public Cloud instance'
 legacy_guide_number: g2029
-section: Management via Control Panel
-order: 3
 updated: 2023-01-04
 ---
 
@@ -28,7 +25,7 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 
 > [!alert]
 >
-> To date, rescue mode for Metal instances cannot be accessed via the OVHcloud Control Panel. For more information, please refer to our guide on [rescue mode for Metal instances](https://docs.ovh.com/ie/en/public-cloud/metal-instance-rescue-mode/).
+> To date, rescue mode for Metal instances cannot be accessed via the OVHcloud Control Panel. For more information, please refer to our guide on [rescue mode for Metal instances](/pages/platform/public-cloud/rescue_mode_metal_instance).
 
 ### Step 1: Activating rescue mode
 

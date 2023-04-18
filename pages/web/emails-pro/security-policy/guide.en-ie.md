@@ -1,12 +1,9 @@
 ---
 title: 'Managing the security policy of an email service'
-slug: manage-security-policy-password
 excerpt: 'Find out how to manage the security policy of your email service'
-section: 'Getting started'
-order: 8
 updated: 2022-04-22
 ---
 
 **Last updated 22nd April 2022**
 
-To read this guide, go to the [Managing the security policy of an email service](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/manage-security-policy-password/){.external} page of our [Exchange](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/){.external} guides.
+To read this guide, go to the [Managing the security policy of an email service](/pages/web/microsoft-collaborative-solutions/exchange_security_policy){.external} page of our [Exchange](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/){.external} guides.

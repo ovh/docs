@@ -1,8 +1,6 @@
 ---
 title: 'Résoudre une interruption ou des lenteurs de navigation'
-slug: resoudre-interruption-lenteurs-navigation
 excerpt: 'Découvrez comment rétablir votre accès à Internet ou identifier un élément perturbateur'
-section: 'Diagnostic et dépannage'
 updated: 2021-02-16
 ---
 
@@ -24,9 +22,9 @@ Une interruption ou des lenteurs de navigation sur Internet peuvent être occasi
 
 Avant de débuter, assurez-vous qu'aucun élément plus global ne perturbe votre connexion Internet. Pour cela, vérifiez que :
 
-- **le service jusqu'à votre modem est fonctionnel** : l'état des voyants de celui-ci peut vous fournir une indication. Pour cela, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/){.external} » ;
+- **le service jusqu'à votre modem est fonctionnel** : l'état des voyants de celui-ci peut vous fournir une indication. Pour cela, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](/pages/telecom/xdsl/interruption_de_service){.external} » ;
 
-- **le service n'est pas dégradé suite à une saturation de votre connexion** : il est possible que votre connexion fonctionne correctement mais qu'un élément relié à votre modem accapare le débit disponible. Reportez-vous alors aux instructions décrites dans notre documentation « [Vérifier si son lien xDSL est saturé](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/){.external} » ;
+- **le service n'est pas dégradé suite à une saturation de votre connexion** : il est possible que votre connexion fonctionne correctement mais qu'un élément relié à votre modem accapare le débit disponible. Reportez-vous alors aux instructions décrites dans notre documentation « [Vérifier si son lien xDSL est saturé](/pages/telecom/xdsl/verifier-lien-xdsl-sature){.external} » ;
 
 - **aucun incident sur votre ligne n'est en cours** : un incident plus global pourrait perturber votre accès. Rendez-vous donc sur la page <https://www.ovhtelecom.fr/xdsl/incident/#/> ou sur notre site [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/){.external} ;
 
@@ -122,9 +120,9 @@ Si un triangle jaune est positionné sur l'icône de connexion (Wi-Fi ou câble)
 
 Plusieurs causes peuvent expliquer cet état. Nous vous conseillons alors de :
 
-- vérifier si votre modem est toujours connecté à Internet. Pour cela, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/){.external} » ;
+- vérifier si votre modem est toujours connecté à Internet. Pour cela, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](/pages/telecom/xdsl/interruption_de_service){.external} » ;
 - vous assurer que la clef Wi-Fi utilisée est correcte. Tentez de vous connecter de nouveau en renseignant la bonne clef ;
-- redémarrer votre modem ainsi que votre ordinateur. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
+- redémarrer votre modem ainsi que votre ordinateur. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVHcloud](/pages/telecom/xdsl/restart_reboot_modem){.external} ».
 
 ![browsingoutage](images/xdsl-browsing-outage-step6.png){.thumbnail}
 
@@ -132,7 +130,7 @@ Plusieurs causes peuvent expliquer cet état. Nous vous conseillons alors de :
 
 > [!primary]
 >
-> Si vous n'utilisez pas une connexion Wi-Fi, poursuivez dès à présent vers la vérification suivante : « [3. Vérifier la configuration réseau de votre modem](https://docs.ovh.com/fr/xdsl/resoudre-interruption-lenteurs-navigation/#3-verifier-la-configuration-reseau-de-votre-modem){.external} ».
+> Si vous n'utilisez pas une connexion Wi-Fi, poursuivez dès à présent vers la vérification suivante : « [3. Vérifier la configuration réseau de votre modem](/pages/telecom/xdsl/resoudre-interruption-lenteurs-navigation#3-verifier-la-configuration-reseau-de-votre-modem){.external} ».
 >
 
 Votre connexion Wi-Fi n'est toujours pas fonctionnelle ? Deux vérifications peuvent ici vous permettre de rétablir votre accès.

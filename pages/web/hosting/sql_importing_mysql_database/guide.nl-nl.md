@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Een backup importeren in de database van een webhostingplan'
-slug: gedeelde-handleiding-importeren-mysql-databank
 excerpt: 'Ontdek hoe u een backup in de database van een webhostingplan kunt importeren'
-section: Databases
-order: 4
 updated: 2018-09-25
 ---
 
@@ -141,7 +138,7 @@ Zorg ervoor dat u de generieke informatie in dit script vervangt door de feiteli
 
 #### Stap 2: Upload het script en de backup naar de opslagruimte
 
-Nadat het backup-script correct is gegenereerd, moet u het uploaden en het backup-bestand dat u wilt importeren naar de opslagruimte van uw webhostingplan. Om dit te doen, moet u inloggen op uw opslagruimte. Als u niet weet hoe u dit moet doen, raadpleegt u de instructies in stap 2 van de documentatie, "[Aanmelden bij uw opslagruimte](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space){.external}".
+Nadat het backup-script correct is gegenereerd, moet u het uploaden en het backup-bestand dat u wilt importeren naar de opslagruimte van uw webhostingplan. Om dit te doen, moet u inloggen op uw opslagruimte. Als u niet weet hoe u dit moet doen, raadpleegt u de instructies in stap 2 van de documentatie, "[Aanmelden bij uw opslagruimte](/pages/web/hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}".
 
 Om de volgende stappen uit te voeren, moet u het script en het backup-bestand uploaden naar de map "www". **We raden u aan bijzonder attent te zijn op de naam van het importscript.** Pas op dat u een bestaand bestand met dezelfde naam niet overschrijft in uw opslagruimte wanneer u het script uploadt. Als er een waarschuwingsbericht verschijnt, wijzigt u de naam van het script dat u zojuist hebt gemaakt en probeert u het opnieuw te uploaden.
 

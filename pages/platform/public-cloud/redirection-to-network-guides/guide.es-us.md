@@ -1,9 +1,6 @@
 ---
 title: 'Todas nuestras guías de red de Public Cloud'
-slug: public-cloud-network-services-redirection
 excerpt: Consulte todas nuestras guías Public Cloud Network services
-section: 'Red e IP'
-order: 00
 updated: 2022-11-02
 ---
 

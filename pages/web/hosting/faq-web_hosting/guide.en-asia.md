@@ -1,9 +1,6 @@
 ---
 title: Web Hosting FAQ
 excerpt: Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans
-slug: web-hosting-faq
-section: Getting started
-order: 05
 updated: 2022-11-28
 ---
 
@@ -15,41 +12,41 @@ updated: 2022-11-28
 
 To configure your hosting, first log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). In the `Hosting plans` section, you can manage your SSL certificates, the PHP version, the CDN option, the multisite, databases, etc.
 
-**Tips and tricks**: To help you configure your hosting, please check the `Getting started` section [here](https://docs.ovh.com/asia/en/hosting/get_started_with_a_web_hosting_package/).
+**Tips and tricks**: To help you configure your hosting, please check the `Getting started` section [here](/pages/web/hosting/hosting_first_steps_with_web_hosting).
 
 ### How do I manage my passwords?
 
 To manage your passwords, first log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). If you have forgotten your username or password, click on `Forgotten your username or password`{.action} in the login window. You will be sent an email with the reset procedure.
 
-You can also refer to our guide [Setting and managing an account password](https://docs.ovh.com/asia/en/customer/manage-password/).
+You can also refer to our guide [Setting and managing an account password](/pages/account/customer/manage-ovh-password).
 
 Once you have logged in to your Control Panel:
 
-- To change the password on your FTP space, follow the instructions in this [guide](https://docs.ovh.com/asia/en/hosting/modify-ftp-user-password/).
-- To change your database password, follow the instructions in this [guide](https://docs.ovh.com/asia/en/hosting/change-password-database/).
-- To change the password for your MX Plan email address, follow the instructions in this [guide](https://docs.ovh.com/asia/en/emails/changing-email-address-password/).
+- To change the password on your FTP space, follow the instructions in this [guide](/pages/web/hosting/ftp_change_password).
+- To change your database password, follow the instructions in this [guide](/pages/web/hosting/sql_change_password).
+- To change the password for your MX Plan email address, follow the instructions in this [guide](/pages/web/emails/email_change_password).
 
 ### How do I put my website online? 
 
 To put your website online, you need to have a [domain name](https://www.ovhcloud.com/asia/domains/) corresponding to the web address from which your website will be accessible (e.g.: *mydomain.com*). You will also need a [Web Hosting](https://www.ovhcloud.com/asia/web-hosting/) plan to set up your website on.
 
-To follow the steps required to build your website, go to this [page](https://www.ovhcloud.com/asia/web-hosting/uc-website/), then follow the instructions in our guide on [Publishing a website on your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/web_hosting_how_to_get_my_website_online/).
+To follow the steps required to build your website, go to this [page](https://www.ovhcloud.com/asia/web-hosting/uc-website/), then follow the instructions in our guide on [Publishing a website on your Web Hosting plan](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
-**Tips and tricks**: To help you create your website, OVHcloud allows you to install website creation support software (WordPress, PrestaShop, Joomla! and Drupal) on your hosting plan, with the [1-click modules](https://docs.ovh.com/asia/en/hosting/web_hosting_web_hosting_modules/) feature.
+**Tips and tricks**: To help you create your website, OVHcloud allows you to install website creation support software (WordPress, PrestaShop, Joomla! and Drupal) on your hosting plan, with the [1-click modules](/pages/web/hosting/cms_install_1_click_modules) feature.
 
 ### How do I change my hosting plan?
 
 To order the web hosting plan that best suits your needs, you can view our web hosting plans at [this page](https://www.ovhcloud.com/asia/web-hosting/).
 
-Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](https://docs.ovh.com/asia/en/hosting/how_to_change_web_hosting_offer/).
+Once you have made your choice, follow the instructions in our guide [Changing your web hosting plan offer](/pages/web/hosting/how_to_upgrade_web_hosting_offer).
 
 ### How do I transfer my website and emails to OVHcloud servers? 
 
-Read our guide on [Migrating your website and emails to OVHcloud](https://docs.ovh.com/asia/en/hosting/migrating-website-to-ovh/).
+Read our guide on [Migrating your website and emails to OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh).
 
 ### How do I host multiple websites on my Web Hosting plan? 
 
-See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/asia/en/hosting/multisites-configuring-multiple-websites/).
+See our guide [Hosting multiple websites on your Web Hosting plan](/pages/web/hosting/multisites_configure_multisite).
 
 ### How do I keep the email offer linked to my hosting plan when cancelling?
 
@@ -76,9 +73,9 @@ Then check out the [current events on our infrastructure](https://www.status-ovh
 
 When you install a Web Hosting plan, OVHcloud implements this page as an **index.html** file, contained in your FTP server’s root folder `www`.
 
-This file is automatically disabled when you create your [1-click module](https://docs.ovh.com/asia/en/hosting/web_hosting_web_hosting_modules/).
+This file is automatically disabled when you create your [1-click module](/pages/web/hosting/cms_install_1_click_modules).
 
-If you have chosen [to install your website manually](https://docs.ovh.com/asia/en/hosting/hosting_install_your_cms_manually/), [log in to your FTP space](https://docs.ovh.com/asia/en/hosting/log-in-to-storage-ftp-web-hosting/) and rename it to `index.html.old`.
+If you have chosen [to install your website manually](/pages/web/hosting/cms_manual_installation), [log in to your FTP space](/pages/web/hosting/ftp_connection) and rename it to `index.html.old`.
 
 ### What do I do if my website appears on a xxxxx.cluster0xx.hosting.ovh.net-type website?
 
@@ -101,7 +98,7 @@ Then delete its database from the database tab on the right-hand side of your sc
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
  
-Finally, retry the installation on the domain name you want, using the [1-click module](https://docs.ovh.com/asia/en/hosting/1-click-module-management/) feature.
+Finally, retry the installation on the domain name you want, using the [1-click module](/pages/web/hosting/cms_manage_1_click_module) feature.
 
 #### Scenario 2: Your website is displayed with a xxxxx.cluster0xx.hosting.ovh.net web address because it was modified
 
@@ -114,15 +111,15 @@ If your website appears with this URL following a change, restore it to its prev
 > During a restore, the contents of your FTP space or database are replaced by a backup. As a result, you will not be able to retrieve any data stored on the FTP server or  database before the restoration date.
 >
 
-To restore your website’s source code, please refer to our guide on [Restoring your Web Hosting plan’s storage space](https://docs.ovh.com/asia/en/hosting/restoring-ftp-filezilla-control-panel/).
+To restore your website’s source code, please refer to our guide on [Restoring your Web Hosting plan’s storage space](/pages/web/hosting/ftp_save_and_backup).
 
-If your website has a database, please refer to our guide on [Restoring a backup of your database](https://docs.ovh.com/asia/en/hosting/web_hosting_guide_to_importing_a_mysql_database/#restore-a-backup-from-the-control-panel).
+If your website has a database, please refer to our guide on [Restoring a backup of your database](/pages/web/hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
 
 ### What do I do if my website redirects to the OVHcloud webmail?
 
 ![webmail](images/webmail.png){.thumbnail}
 
-This anomaly indicates an incorrect configuration in the [DNS servers](https://docs.ovh.com/asia/en/domains/web_hosting_general_information_about_dns_servers/) or the [DNS zone](https://docs.ovh.com/asia/en/domains/web_hosting_how_to_edit_my_dns_zone/) associated with your domain name.
+This anomaly indicates an incorrect configuration in the [DNS servers](/pages/web/domains/dns_server_general_information) or the [DNS zone](/pages/web/domains/dns_zone_edit) associated with your domain name.
 
 The most common case is: If you have ordered your domain name and Web Hosting plan separately, they will not be linked via their DNS zone.
 
@@ -132,11 +129,11 @@ Then note down the DNS servers listed and go to the `DNS zone`{.action} tab.
 
 Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} tab with the servers listed in the `DNS servers`{.action} tab:
 
-- If the elements are identical, replace target `213.186.33.5` with the four-number code noted in the `General information` tab under `IPv4` (for more details on how to make changes, follow the instructions in [this guide](https://docs.ovh.com/asia/en/domains/web_hosting_how_to_edit_my_dns_zone/#instructions)).
+- If the elements are identical, replace target `213.186.33.5` with the four-number code noted in the `General information` tab under `IPv4` (for more details on how to make changes, follow the instructions in [this guide](/pages/web/domains/dns_zone_edit#instructions)).
 
-- If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](https://docs.ovh.com/asia/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/), perform a reset as described in [this guide](https://docs.ovh.com/asia/en/domains/web_hosting_general_information_about_dns_servers/#resetting-dns-servers).
+- If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](/pages/web/hosting/clusters_and_shared_hosting_IP), perform a reset as described in [this guide](/pages/web/domains/dns_server_general_information#resetting-dns-servers).
 
-- If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](https://docs.ovh.com/asia/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/), contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) via the [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/) page.
+- If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](/pages/web/hosting/clusters_and_shared_hosting_IP), contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) via the [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/) page.
 
 ### What do I do if my website displays a page does not redirect correctly error?
 
@@ -151,9 +148,9 @@ Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} 
 
 Restore your website to its previous state:
 
-- To restore your website’s source code, please refer to our guide [Restoring your Web Hosting plan’s storage space](https://docs.ovh.com/asia/en/hosting/restoring-ftp-filezilla-control-panel/).
+- To restore your website’s source code, please refer to our guide [Restoring your Web Hosting plan’s storage space](/pages/web/hosting/ftp_save_and_backup).
 
-- If your website has a database, please refer to our guide [Importing a backup into a Web Hosting plan database](https://docs.ovh.com/asia/en/hosting/web_hosting_guide_to_importing_a_mysql_database/#restore-a-backup-from-the-control-panel).
+- If your website has a database, please refer to our guide [Importing a backup into a Web Hosting plan database](/pages/web/hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
 
 If the restores do not allow you to restore access to your site, contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) on the [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/) website.
 
@@ -161,7 +158,7 @@ If the restores do not allow you to restore access to your site, contact your we
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-If you have enabled the [CDN option](https://docs.ovh.com/asia/en/hosting/guide_to_using_the_geocache_accelerator_on_a_web_hosting_package/) on your Web Hosting plan, disable *Maintenance* mode on your WordPress or PrestaShop website.
+If you have enabled the [CDN option](/pages/web/hosting/cdn_how_to_use_cdn) on your Web Hosting plan, disable *Maintenance* mode on your WordPress or PrestaShop website.
 
 If you have not enabled this option or used *Maintenance* mode, please contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/asia/directory/) via the [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/) website.
 
@@ -169,7 +166,7 @@ If you have not enabled this option or used *Maintenance* mode, please contact y
 
 ![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
 
-This message indicates that the type of HTTP request you are trying to make on your website is prohibited for a limited time. In this situation, [examine your website’s logs](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/) to determine which requests caused this block.
+This message indicates that the type of HTTP request you are trying to make on your website is prohibited for a limited time. In this situation, [examine your website’s logs](/pages/web/hosting/logs_and_statistics) to determine which requests caused this block.
 
 To help you correct these anomalies, contact your webmaster or one of our [partners](https://partner.ovhcloud.com/asia/directory/).
 
@@ -179,7 +176,7 @@ To help you correct these anomalies, contact your webmaster or one of our [partn
 
 This message indicates that the IP address you use to log on to your website is blocked for a limited time. 
 
-In this situation, [review the logs](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/) of your site, to determine which queries caused this block.<br>
+In this situation, [review the logs](/pages/web/hosting/logs_and_statistics) of your site, to determine which queries caused this block.<br>
 Also, make sure your computer is not infected with a virus.<br>
 You can also contact one of our [partners](https://partner.ovhcloud.com/asia/directory/) to check your website’s source code.
 
@@ -196,7 +193,7 @@ You have no action to take in this situation. Even if your domain appears in [in
 
 ## Go further <a name="gofurther"></a>
 
-[FAQ - MX Plan shared emails](https://docs.ovh.com/asia/en/emails/emails-faq/)
+[FAQ - MX Plan shared emails](/pages/web/emails/faq-emails)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 

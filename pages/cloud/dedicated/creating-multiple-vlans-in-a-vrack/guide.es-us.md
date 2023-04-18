@@ -1,8 +1,6 @@
 ---
 title: 'Crear varias VLAN en el vRack'
-slug: crear-vlan-vrack
 excerpt: 'Cómo crear varias VLAN en el vRack'
-section: vRack
 updated: 2022-02-24
 ---
 
@@ -10,7 +8,7 @@ updated: 2022-02-24
 
 ## Objetivo
 
-La [configuración estándar del vRack](../configurar-vrack-en-servidor-dedicado/){.external} solo le permite crear una VLAN. Esto significa que solo es posible utilizar cada IP una única vez. Sin embargo, la versión 2.0 del vRack permite crear hasta 4000 redes locales virtuales en un mismo vRack, de forma que cada IP puede utilizarse hasta 4000 veces.
+La [configuración estándar del vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external} solo le permite crear una VLAN. Esto significa que solo es posible utilizar cada IP una única vez. Sin embargo, la versión 2.0 del vRack permite crear hasta 4000 redes locales virtuales en un mismo vRack, de forma que cada IP puede utilizarse hasta 4000 veces.
 
 **Esta guía explica cómo crear varias VLAN en el vRack.**
 
@@ -22,7 +20,7 @@ La [configuración estándar del vRack](../configurar-vrack-en-servidor-dedicado
 - Tener acceso al rango de direcciones IP privadas elegido.
 - Estar conectado por SSH con el usuario root (Linux).
 - Estar conectado con la cuenta de administrador (Windows).
-- Haber terminado de [configurar el vRack](../configurar-vrack-en-servidor-dedicado/){.external}.
+- Haber terminado de [configurar el vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}.
 
 > [!warning]
 > Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
@@ -191,6 +189,6 @@ Por último, haga clic en `Aceptar`{.action} para guardar los cambios y reinicie
 
 ## Más información
 
-[Configurar varios servidores dedicados en el vRack](../configurar-vrack-en-servidor-dedicado/){.external}
+[Configurar varios servidores dedicados en el vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.

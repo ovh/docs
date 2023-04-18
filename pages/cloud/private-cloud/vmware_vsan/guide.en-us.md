@@ -1,9 +1,6 @@
 ---
 title: Using VMware Hyperconvergence with vSAN
-slug: vmware-vsan
 excerpt: Use the power of Hyperconvergence with vSAN
-section: VMware vSphere features
-order: 10
 updated: 2022-09-07
 ---
 
@@ -25,7 +22,7 @@ Find out how to use the power of Hyperconvergence for your virtual machines with
 >
 > The **vSAN Data-At-Rest Encryption** and **vSAN Data-In-Transit Encryption** encryption options are not supported by default on vSAN clusters. If you would like to implement these solutions, please contact your **Technical Account Manager**.
 > 
-> Encryption is still possible at the VM and its data level, as described in the guide [Enabling VM Encryption with vSphere Native Key Provider](https://docs.ovh.com/us/en/private-cloud/vm-encrypt-vnkp/).
+> Encryption is still possible at the VM and its data level, as described in the guide [Enabling VM Encryption with vSphere Native Key Provider](/pages/cloud/private-cloud/vm_encrypt-vnkp/).
 >
 
 ## Instructions

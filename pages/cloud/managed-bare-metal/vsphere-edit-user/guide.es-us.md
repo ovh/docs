@@ -1,10 +1,8 @@
 ---
 title: Asociar una dirección de correo electrónico a un usuario vSphere
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/asociar-direccion-correo-electronico-a-usuario-vsphere/'
+    canonical: '/pages/cloud/private-cloud/vsphere_edit_user'
 excerpt: Cómo asociar una dirección de correo electrónico a un usuario vSphere
-slug: asociar-direccion-correo-electronico-a-usuario-vsphere
-section: Funcionalidades de OVHcloud
 updated: 2020-11-18
 ---
 

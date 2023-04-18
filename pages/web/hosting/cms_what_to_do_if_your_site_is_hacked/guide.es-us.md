@@ -1,9 +1,6 @@
 ---
 title: "Casos de uso - Asesoramiento sobre la piratería de su sitio web"
 excerpt: "Descubra nuestros consejos para reparar su sitio web pirateado"
-slug: pirateo_de_su_sitio_web_wordpress_consejos_y_casos_practicos
-section: "Tutoriales"
-order: 010
 updated: 2022-11-15
 ---
 
@@ -79,12 +76,12 @@ Una vez que haya pirateado un sitio web, modifique todas las contraseñas relaci
 
 En cuanto a OVHcloud, utilice nuestra documentación para:
 
-- [Cambiar la contraseña de acceso a su ID de cliente de OVHcloud](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/).
-- [Proteger el acceso a su área de cliente de OVHcloud con doble autenticación](https://docs.ovh.com/us/es/customer/proteger-su-cuenta-con-una-2FA/).
-- [Cambiar la contraseña de acceso al espacio de almacenamiento FTP de su alojamiento web](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-usuario-ftp/).
-- [Cambiar la contraseña de acceso a la base de datos](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-base-de-datos/).
+- [Cambiar la contraseña de acceso a su ID de cliente de OVHcloud](/pages/account/customer/manage-ovh-password).
+- [Proteger el acceso a su área de cliente de OVHcloud con doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa).
+- [Cambiar la contraseña de acceso al espacio de almacenamiento FTP de su alojamiento web](/pages/web/hosting/ftp_change_password).
+- [Cambiar la contraseña de acceso a la base de datos](/pages/web/hosting/sql_change_password).
 
-También le recomendamos que utilice un [gestor de contraseñas](https://docs.ovh.com/us/es/customer/gestionar-su-contrasena/#utilizar-un-gestor-de-contrasenas).
+También le recomendamos que utilice un [gestor de contraseñas](/pages/account/customer/manage-ovh-password#utilizar-un-gestor-de-contrasenas).
 
 > [!warning]
 > 
@@ -103,7 +100,7 @@ Si utiliza un CMS como WordPress, Joomla, PrestaShop o Drupal, consulte la docum
 Si tiene dificultades para realizar las acciones que se describen a continuación, contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) en ciberseguridad.
 >
 
-Utilice nuestra guía sobre [las estadísticas y logs de su alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) para buscar los elementos maliciosos introducidos en su sitio web. Puede consultar la información en los logs "web". 
+Utilice nuestra guía sobre [las estadísticas y logs de su alojamiento web](/pages/web/hosting/logs_and_statistics) para buscar los elementos maliciosos introducidos en su sitio web. Puede consultar la información en los logs "web". 
 
 Comience a buscar a partir de la fecha en la que haya detectado la piratería y vuelva al historial de sus logs.
 
@@ -123,7 +120,7 @@ Suba los fallos de seguridad en su sitio web y, al mismo tiempo, enumere los arc
 >
 > Varios sitios web (no gestionados por OVHcloud) le permiten obtener información sobre las IP maliciosas. Puede utilizar uno de ellos para recuperar información como el proveedor de la IP, su geolocalización, el gestor, etc.
 >
-> Si está absolutamente seguro de que se trata de una IP maliciosa, puede bloquearle el acceso a su alojamiento siguiendo nuestra documentación sobre las [restricciones de acceso a través del archivo ".htaccess"](https://docs.ovh.com/us/es/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+> Si está absolutamente seguro de que se trata de una IP maliciosa, puede bloquearle el acceso a su alojamiento siguiendo nuestra documentación sobre las [restricciones de acceso a través del archivo ".htaccess"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 > 
 
 ### Etapa 4 - eliminar los elementos maliciosos y corregir los fallos de seguridad
@@ -143,9 +140,9 @@ En función de la fecha de hackeo de su sitio web (menos de 14 días), OVHcloud 
 
 Para ello, consulte nuestras 3 guías sobre el tema:
 
-- [Restaurar el espacio de almacenamiento FTP de su alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/)
-- [Descargar la copia de seguridad SQL de su base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/)
-- [Importar la copia de seguridad SQL en la base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/)
+- [Restaurar el espacio de almacenamiento FTP de su alojamiento web](/pages/web/hosting/ftp_save_and_backup)
+- [Descargar la copia de seguridad SQL de su base de datos](/pages/web/hosting/sql_database_export)
+- [Importar la copia de seguridad SQL en la base de datos](/pages/web/hosting/sql_importing_mysql_database)
 
 Ajuste al máximo las fechas de restauración de su espacio de almacenamiento FTP y su base de datos SQL.
 
@@ -157,7 +154,7 @@ Ajuste al máximo las fechas de restauración de su espacio de almacenamiento FT
 Si el alojamiento está "desactivado", también se desactivarán los robots de restauración automática disponibles desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 > Deberá restaurar el sitio web "manualmente", eliminar los elementos maliciosos residuales y corregir todos los fallos de seguridad presentes en el snapshot. Realice esta acción **antes** de reactivar el alojamiento.
 >
-> Para reactivar el alojamiento web, siga las indicaciones del apartado 4 de esta [guía](https://docs.ovh.com/us/es/hosting/diagnostico-403-forbidden/).
+> Para reactivar el alojamiento web, siga las indicaciones del apartado 4 de esta [guía](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Su sitio web debería reaparecer si estas acciones se han realizado correctamente.
@@ -166,8 +163,8 @@ Su sitio web debería reaparecer si estas acciones se han realizado correctament
 
 Para ello, consulte nuestras 2 guías:
 
-- [Restaurar el espacio de almacenamiento FTP de su alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/)
-- [Importar la copia de seguridad SQL en la base de datos](https://docs.ovh.com/us/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/)
+- [Restaurar el espacio de almacenamiento FTP de su alojamiento web](/pages/web/hosting/ftp_save_and_backup)
+- [Importar la copia de seguridad SQL en la base de datos](/pages/web/hosting/sql_importing_mysql_database)
 
 >[!warning]
 >
@@ -176,7 +173,7 @@ Para ello, consulte nuestras 2 guías:
 >
 Si el alojamiento está en estado "desactivado", realice una restauración "manual" del sitio web, elimine los elementos maliciosos residuales y corrija todos los fallos de seguridad presentes en el backup. Realice esta acción **antes** de reactivar el alojamiento..
 >
-> Para reactivar el alojamiento web, siga las indicaciones del apartado 4 de esta [guía](https://docs.ovh.com/us/es/hosting/diagnostico-403-forbidden/).
+> Para reactivar el alojamiento web, siga las indicaciones del apartado 4 de esta [guía](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Su sitio web debería reaparecer si estas acciones se han realizado correctamente.
@@ -185,7 +182,7 @@ Su sitio web debería reaparecer si estas acciones se han realizado correctament
 
 Deberá eliminar manualmente los archivos y códigos maliciosos detectados anteriormente en [el paso 2] (#step2) de esta guía y corregir los fallos de seguridad de su sitio web.
 
-Para conectarse al espacio de almacenamiento de su alojamiento, consulte [nuestra guía](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) sobre el asunto.
+Para conectarse al espacio de almacenamiento de su alojamiento, consulte [nuestra guía](/pages/web/hosting/ftp_connection) sobre el asunto.
 
 > [!warning]
 >
@@ -194,7 +191,7 @@ Para conectarse al espacio de almacenamiento de su alojamiento, consulte [nuestr
 >
 Si su alojamiento está en estado "desactivado", elimine los elementos maliciosos residuales y corrija todos los fallos de seguridad presentes en la copia de seguridad **antes** de reactivar el alojamiento.
 >
-> Para reactivar el alojamiento web, siga las indicaciones del apartado 4 de esta [guía](https://docs.ovh.com/us/es/hosting/diagnostico-403-forbidden/).
+> Para reactivar el alojamiento web, siga las indicaciones del apartado 4 de esta [guía](/pages/web/hosting/diagnostic_403_forbidden).
 >
 
 Su sitio web debería reaparecer si estas acciones se han realizado correctamente.
@@ -205,24 +202,24 @@ Actualice su sitio web al nivel de su código fuente, de los parámetros de segu
 
 Compruebe los permisos de acceso FTP CHMOD para cada una de sus carpetas y archivos alojados en su espacio de almacenamiento.
 Por defecto, le recomendamos que utilice al máximo los permisos "CHMOD" **705** para las carpetas y **604** para los archivos.
-Para más información sobre los permisos CHMOD, consulte la sección "Información útil" de nuestro [tutorial sobre el uso del cliente FTP Filezilla](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/#useful-information).
+Para más información sobre los permisos CHMOD, consulte la sección "Información útil" de nuestro [tutorial sobre el uso del cliente FTP Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
 
 Si utiliza un CMS (WordPress, Joomla, PrestaShop, Drupal...), actualice sus plugins, su tema y el CMS en sí mismo.
 Apueste por utilizar plugins o temas "oficiales" y mantenga actualizado su sitio web con la mayor regularidad posible y de forma completa.
 
-Proteja sus formularios de contacto al menos con un sistema de tipo "Captcha", para evitar que robots maliciosos emitan spam por este medio. Si la función "mail()" de PHP también ha sido bloqueada en su alojamiento, consulte [nuestra guía](https://docs.ovh.com/us/es/hosting/web_hosting_seguimiento_de_los_mensajes_de_correo_automatizados/) sobre este asunto para solucionar el bloqueo.
+Proteja sus formularios de contacto al menos con un sistema de tipo "Captcha", para evitar que robots maliciosos emitan spam por este medio. Si la función "mail()" de PHP también ha sido bloqueada en su alojamiento, consulte [nuestra guía](/pages/web/hosting/mail_function_script_records) sobre este asunto para solucionar el bloqueo.
 
-Consulte nuestra guía sobre cómo proteger su sitio web (https://docs.ovh.com/us/es/hosting/secure-website/) para reducir al mínimo el riesgo de que se produzca una nueva piratería.
+Consulte nuestra guía sobre cómo proteger su sitio web (/pages/web/hosting/secure_your_website) para reducir al mínimo el riesgo de que se produzca una nueva piratería.
 
 ## ## Más información <a name="go-further"></a>
 
-[Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/)
+[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection)
 
-[Modificar la configuración de un alojamiento web](https://docs.ovh.com/us/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento//)
+[Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime/)
 
-[Activar el firewall de aplicación](https://docs.ovh.com/us/es/hosting/web_hosting_activating_an_application_firewall/)
+[Activar el firewall de aplicación](/pages/web/hosting/multisites_activating_application_firewall)
 
-[Optimizar el rendimiento de su sitio web](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_optimizacion_del_rendimiento_de_un_sitio_web/)
+[Optimizar el rendimiento de su sitio web](/pages/web/hosting/optimise_your_website_performance)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/).
 

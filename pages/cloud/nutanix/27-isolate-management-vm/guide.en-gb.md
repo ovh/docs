@@ -1,9 +1,6 @@
 ---
 title: Isolating management machines from production
-slug: nutanix-isolate-management-machines
 excerpt: Find out how to isolate management machines from production
-section: Network & Security
-order: 07
 updated: 2022-01-11
 ---
 

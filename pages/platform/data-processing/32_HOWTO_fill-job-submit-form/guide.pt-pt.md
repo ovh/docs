@@ -1,11 +1,8 @@
 ---
 title: How to fill the job submit form in the Data Processing page from the OVHcloud Manager
-slug: job-submit-form
 excerpt: Find out how to fill the job submit form from the Data Processing page in the OVHcloud Manager
-section: How to
-order: 2
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/data-processing/job-submit-form/'
+    canonical: '/pages/platform/data-processing/32_HOWTO_fill-job-submit-form'
 updated: 2020-03-06
 ---
 
@@ -17,13 +14,13 @@ This guide will help you to understand the different parameters that you can set
 
 In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} to use the Data Processing platform. 
 
-To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
+To read an introduction about Data Processing service you can visit [Data Processing Overview](/pages/platform/data-processing/00_CONCEPTS_Overview){.external}.
 
 ## Requirements 
 
 - Access to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](/pages/platform/public-cloud/create_a_public_cloud_project){.external} for details.)
 - Your application must be uploaded into a container in your Object Storage.
 - For the Spark engine, your application can either be :
   - a JAR file, if you're using Java or Scala
@@ -94,7 +91,7 @@ For Apache Spark, for example, you will also have to :
 
 ## Go further
 
-To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](/pt/data-processing/).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
 

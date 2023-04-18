@@ -1,9 +1,6 @@
 ---
 title: 'Einrichten von Auto-Antworten für E-Mails'
 excerpt: 'Erfahren Sie, wie Sie einen E-Mail-Responder einrichten'
-slug: einrichten_von_auto-antworten
-section: 'E-Mail Account Funktionen'
-order: 02
 legacy_guide_number: g2052
 updated: 2021-04-20
 ---
@@ -29,7 +26,7 @@ Mit diesem OVHcloud Feature können Sie einen automatischen E-Mail-Responder ein
 
 > [!primary]
 >
-> Wenn Ihre E-Mail-Adresse Teil eines [**Exchange Dienstes**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro Dienstes**](https://www.ovhcloud.com/de/emails/email-pro/) ist oder der Bereich für Auto-Antworten in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung "[Einrichten einer automatischen Antwort in OWA](../../microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)" heranziehen.
+> Wenn Ihre E-Mail-Adresse Teil eines [**Exchange Dienstes**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro Dienstes**](https://www.ovhcloud.com/de/emails/email-pro/) ist oder der Bereich für Auto-Antworten in Ihrem Kundencenter fehlt, können Sie automatische Antworten stattdessen über Ihr OWA-Webmail erstellen, indem Sie die Anleitung "[Einrichten einer automatischen Antwort in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)" heranziehen.
 
 ### Anlegen des Responders
 

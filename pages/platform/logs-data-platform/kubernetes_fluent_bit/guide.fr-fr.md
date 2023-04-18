@@ -1,9 +1,6 @@
 ---
 title: Kubernetes Logging with Fluent Bit in a nutshell
-slug: kubernetes-fluent-bit
-order: 09
 excerpt: All the logs of your pods in one place
-section: Use cases
 updated: 2022-11-15
 ---
 
@@ -18,7 +15,7 @@ updated: 2022-11-15
 Note that in order to complete this tutorial, you should have at least:
 
 - [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [Created at least one Stream and get its token.](../quick-start){.ref}
+- [Created at least one Stream and get its token.](/pages/platform/logs-data-platform/quick_start){.ref}
 - A working kubernetes cluster with some pods already logging to stdout.
 - 15 minutes.
 
@@ -172,7 +169,7 @@ data:
     [PARSER]
         Name   apache_error
         Format regex
-        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
+        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](/pages/platform/logs-data-platform/kubernetes_fluent_bit?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
 
     [PARSER]
         Name   nginx
@@ -316,7 +313,7 @@ And that's it. Your kubernetes activity is now perfectly logged in one place. Ha
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/fr/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

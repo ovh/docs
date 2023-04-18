@@ -1,9 +1,6 @@
 ---
 title: Iniziare a utilizzare un hosting Web
 excerpt: Come eseguire le prime operazioni su un hosting Web
-slug: configura_il_tuo_hosting_web
-section: Per iniziare
-order: 02
 updated: 2022-11-11
 ---
 
@@ -38,7 +35,7 @@ Nello Spazio Cliente OVHcloud è disponibile uno strumento che permette di insta
 
 - **Migrare in OVHcloud un sito Web esistente**
 
-La migrazione di un sito può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione e su cui non è possibile un'interruzione di servizio. In questo senso, la nostra guida descrive solo alcuni degli step da effettuare per trasferire i tuoi servizi. Per conoscere il processo completo, consulta la guida [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
+La migrazione di un sito può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione e su cui non è possibile un'interruzione di servizio. In questo senso, la nostra guida descrive solo alcuni degli step da effettuare per trasferire i tuoi servizi. Per conoscere il processo completo, consulta la guida [Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 ### Step 2: installa il tuo sito
 
@@ -56,7 +53,7 @@ Per avviare l’operazione, scegli il CMS da installare assicurandoti che la cas
 
 Attendi di ricevere l'email di conferma dell'installazione con le informazioni necessarie per effettuare l’accesso all’interfaccia di gestione del sito. A questo punto, passa agli step successivi.
 
-Per maggiori informazioni su questa soluzione, consulta la nostra guida: [Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+Per maggiori informazioni su questa soluzione, consulta la nostra guida: [Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules){.external}
 
 #### Soluzione rapida in pochi click (competenze tecniche non necessarie)
 
@@ -77,13 +74,13 @@ Una volta creato il database, seleziona la scheda `CMS in 1 click`{.action} e cl
 
 Inserisci le informazioni richieste e poi avvia il processo di installazione. Attendi di ricevere l'email di conferma dell'installazione con le informazioni necessarie per effettuare l’accesso all’interfaccia di gestione del sito.
 
-Per maggiori informazioni su questa soluzione, consulta la nostra guida: [Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+Per maggiori informazioni su questa soluzione, consulta la nostra guida: [Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules){.external}
 
 #### Soluzione manuale (competenze tecniche necessarie)
 
 Questa soluzione permette di creare o migrare un sito Internet senza utilizzare i moduli OVHcloud. Prima di iniziare, assicurati di avere a disposizione i file del sito da installare: dovrai connetterti manualmente al tuo spazio di storage per effettuarne l’upload e, se possibile, associare il sito a un database precedentemente creato.
 
-I siti Internet sono molto diversi tra loro e non esiste quindi una procedura universale ma, in caso di necessità, puoi consultare le nostre guide ​[Mettere online il tuo sito](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/){.external} e [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}. Una volta completata l’installazione, passa agli step successivi.
+I siti Internet sono molto diversi tra loro e non esiste quindi una procedura universale ma, in caso di necessità, puoi consultare le nostre guide ​[Mettere online il tuo sito](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} e [Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}. Una volta completata l’installazione, passa agli step successivi.
 
 ### Step 3: crea i tuoi account email
 
@@ -93,7 +90,7 @@ Se non intendi utilizzare gli account email inclusi nel tuo piano di [hosting](h
 
 Segui la procedura indicata e ripeti l’operazione per creare altri account. Per migrare i tuoi account email in OVHcloud, ti consigliamo di utilizzare il nostro tool [OVH Mail Migrator](https://omm.ovh.net/){.external}. 
 
-Per maggiori informazioni sulla creazione di un account email o la migrazione dei tuoi servizi in OVHcloud, consulta le nostre guide [Creare un indirizzo email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} e [Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
+Per maggiori informazioni sulla creazione di un account email o la migrazione dei tuoi servizi in OVHcloud, consulta le nostre guide [Creare un indirizzo email](/pages/web/emails/email_creation){.external} e [Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}.
 
 ### Step 4: verifica o modifica la configurazione del tuo dominio
 
@@ -152,20 +149,20 @@ Per maggiori informazioni sulle funzionalità disponibili, consulta la documenta
 
 A questo punto non ti resta che utilizzare i tuoi account di posta. OVHcloud fornisce l'applicazione online RoundCube, disponibile all'indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external}. Per accedervi, inserisci le credenziali associate all’indirizzo di posta creato in OVHcloud.
 
-Per maggiori informazioni su questo servizio, consulta la nostra [guida all’utilizzo di RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external}. Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: <https://docs.ovh.com/it/emails/>.
+Per maggiori informazioni su questo servizio, consulta la nostra [guida all’utilizzo di RoundCube](/pages/web/emails/email_roundcube){.external}. Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: <https://docs.ovh.com/it/emails/>.
 
 ## Per saperne di più
 
-[Migrare un sito e un servizio di posta in OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+[Migrare un sito e un servizio di posta in OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Mettere online un sito](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/){.external}
+[Mettere online un sito](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/){.external}
+[Installare i moduli in 1 click OVHcloud](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Creare un indirizzo email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external}
+[Creare un indirizzo email](/pages/web/emails/email_creation){.external}
 
-[Utilizzare RoundCube](https://docs.ovh.com/it/emails/webmail_guida_allutilizzo_di_roundcube/){.external}
+[Utilizzare RoundCube](/pages/web/emails/email_roundcube){.external}
 
-[Certificati SSL sugli hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/){.external}
+[Certificati SSL sugli hosting Web](/pages/web/hosting/ssl_on_webhosting){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

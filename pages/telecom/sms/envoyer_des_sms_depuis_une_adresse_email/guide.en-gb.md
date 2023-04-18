@@ -1,8 +1,6 @@
 ---
 title: 'Sending SMS messages via an email address'
-slug: send-sms-message-via-email-address
 excerpt: 'Find out how to send SMS messages via an email address'
-section: 'Sending SMS messages'
 updated: 2020-06-04
 ---
 
@@ -88,7 +86,7 @@ You should see a result similar to the image below. By default, once you send yo
 > If you would like to use a short number that enables replies, enter senderForResponse=1 as a sender.
 >
 
-You can refer to the following guide for any specifics about SMS users: [Everything you need to know about SMS users](../everything_you_need_to_know_about_sms_users/)
+You can refer to the following guide for any specifics about SMS users: [Everything you need to know about SMS users](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms)
 
 
 ### Step 2: Fill out the optional fields.

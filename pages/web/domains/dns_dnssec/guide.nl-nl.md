@@ -2,7 +2,6 @@
 deprecated: true
 title: Beveilig uw domein met DNSSEC
 excerpt: ''
-slug: beveilig_uw_domein_met_dnssec
 legacy_guide_number: g609
 updated: 2022-10-19
 ---

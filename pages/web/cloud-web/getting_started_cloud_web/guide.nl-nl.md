@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Aan de slag met een Cloud Web hostingplan
-slug: eerste-stappen-met-cloud-web
 excerpt: Ontdek hoe u kunt starten met een Cloud Web webhostingplan
-section: Eerste stappen
 updated: 2022-05-04
 ---
 
@@ -103,7 +101,7 @@ We raden u ten zeerste aan om extra voorzichtig te zijn wanneer u de volgende in
 > Als u een domeinnaam hebt toegevoegd die als extern wordt beschouwd, moet u een TXT-record met de naam **ovhcontrol** toevoegen aan zijn DNS-configuratie. Op deze manier kan OVH ervoor zorgen dat de toevoeging van het domein wordt goedgekeurd. Daarom is het toevoegen van dit TXT-record een essentiële stap. Als u dit niet doet, wordt de toevoeging van uw domein geannuleerd. 
 >
 
-Herhaal deze stap als u verschillende domeinnamen aan uw Cloud Web hostingplan wilt toevoegen. Raadpleeg de volgende handleiding voor meer informatie over het toevoegen van een domeinnaam als multisite: [Het hosten van meerdere websites op uw webhostingplan](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.
+Herhaal deze stap als u verschillende domeinnamen aan uw Cloud Web hostingplan wilt toevoegen. Raadpleeg de volgende handleiding voor meer informatie over het toevoegen van een domeinnaam als multisite: [Het hosten van meerdere websites op uw webhostingplan](/pages/web/hosting/multisites_configure_multisite){.external}.
 
 ![cloudweb](images/cloud-web-first-steps-step3.png){.thumbnail}
 
@@ -117,7 +115,7 @@ Door onze 1-klik modules te gebruiken, krijgt u een kant-en-klaar website-sjablo
 
 Als u een 1-klik module selecteert, klikt u op de `1-klik modules`{.action} op de Cloud Web-website en klikt u vervolgens op `Module toevoegen`{.action}. U kunt vervolgens kiezen of u het wilt installeren in de 'basismodus' (niet-aanpasbaar) of 'geavanceerd' (aanpasbaar).
 
-Voor meer informatie over onze OVH 1-klik-modules kunt u onze handleiding raadplegen: [Installatie van een website met 1-klik modules](https://docs.ovh.com/nl/hosting/1-klik-modules/){.external}.
+Voor meer informatie over onze OVH 1-klik-modules kunt u onze handleiding raadplegen: [Installatie van een website met 1-klik modules](/pages/web/hosting/cms_install_1_click_modules){.external}.
 
 > [!primary]
 >
@@ -132,7 +130,7 @@ Of u nu een volledig nieuwe website bouwt of een bestaande website migreert - ha
 
 Als u ervoor hebt gekozen uw website handmatig in te stellen, moet u alle website- of applicatiebestanden hebben die u in uw hostingplan zou willen instellen. Als u databases op uw Cloud Web hostingplan hebt gemaakt, moet u ook hun gegevens en inloggegevens bij de hand hebben. Als u een website migreert, zorg er dan voor dat u een backup-kopie maakt van al uw websitebestanden.
 
-Er is geen algemene procedure, omdat het aantal projecten sterk kan variëren. Ons document [Migratie naar het web](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external} kan ons echter helpen met de procedures.
+Er is geen algemene procedure, omdat het aantal projecten sterk kan variëren. Ons document [Migratie naar het web](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} kan ons echter helpen met de procedures.
 
 ### Stap 6: Creëer uw e-mailadressen
 
@@ -140,7 +138,7 @@ Nu u uw project hebt opgezet in uw Cloud Web hostingplan, kunt u beginnen met he
 
 Om een of meer e-mailadressen aan te maken, klikt u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} op `E-mails`{.action} in de dienstenbalk aan de linkerkant en kiest u vervolgens de domeinnaam die aan uw Cloud Web hostingplan is gekoppeld.
 
-Om een nieuw e-mailadres aan te maken, klikt u op `Creëer e-mailadres`{.action} en volgt u de weergegeven stappen. Raadpleeg zo nodig onze handleidingen: [Creatie van een e-mailadres met MX Plan](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external}.
+Om een nieuw e-mailadres aan te maken, klikt u op `Creëer e-mailadres`{.action} en volgt u de weergegeven stappen. Raadpleeg zo nodig onze handleidingen: [Creatie van een e-mailadres met MX Plan](/pages/web/emails/email_creation){.external}.
 
 ![cloudweb](images/cloud-web-first-steps-step5.png){.thumbnail}
 
@@ -148,7 +146,7 @@ Om een nieuw e-mailadres aan te maken, klikt u op `Creëer e-mailadres`{.action}
 
 Bij deze stap dient uw website op uw Cloud Web hosting te zijn geïnstalleerd en uw e-mailadressen zijn aangemaakt. Als uw e-mailadressen niet werken, kan dit zijn omdat uw domeinnaam niet correct is geconfigureerd. Als dit het geval is, of als u niet zeker weet waar de fout zit, raden we u aan deze stap te volgen.
 
-Houd er echter rekening mee dat als u bezig bent met het migreren van uw diensten naar OVH, de wijzigingen die aan de DNS zijn gekoppeld mogelijk ertoe leiden dat uw diensten niet meer beschikbaar zijn als ze niet op het juiste moment worden voltooid. Zoals beschreven in onze handleiding over het [migreren van uw website en e-mails naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}, moet u er rekening mee houden dat u de DNS-servers van uw domein moet bewerken als een laatste deel van het proces.
+Houd er echter rekening mee dat als u bezig bent met het migreren van uw diensten naar OVH, de wijzigingen die aan de DNS zijn gekoppeld mogelijk ertoe leiden dat uw diensten niet meer beschikbaar zijn als ze niet op het juiste moment worden voltooid. Zoals beschreven in onze handleiding over het [migreren van uw website en e-mails naar OVH](/pages/web/hosting/hosting_migrating_to_ovh){.external}, moet u er rekening mee houden dat u de DNS-servers van uw domein moet bewerken als een laatste deel van het proces.
 
 #### 1. De DNS-records van OVH kennen 
 
@@ -174,7 +172,7 @@ Lees de onderstaande instructies om te zien waar u de wijzigingen moet aanbrenge
 
 |Gebruikte DNS-configuratie |Waar worden de wijzigingen aangebracht?|
 |---|---|
-|OVH|Ga in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} naar het gedeelte `Domeinen`{.action} voor de betreffende domeinnaam. Verifieer en wijzig de nodige informatie in de tab DNS-zone. Als u verdere hulp nodig heeft, kunt u onze handleiding over het [bewerken van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external} lezen.|
+|OVH|Ga in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} naar het gedeelte `Domeinen`{.action} voor de betreffende domeinnaam. Verifieer en wijzig de nodige informatie in de tab DNS-zone. Als u verdere hulp nodig heeft, kunt u onze handleiding over het [bewerken van een OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external} lezen.|
 |Verder|Via de interface van de serviceprovider die de DNS-configuratie van uw domeinnaam beheert. Neem contact op met uw serviceprovider als u problemen ondervindt bij het maken van deze wijzigingen.|
 
 Nadat u de DNS-configuratie van uw domeinnaam hebt gewijzigd, moet u een maximum van 24 uur toestaan voordat de wijzigingen volledig worden doorgevoerd en effectief zijn. Als u meerdere domeinnamen als multisite aan uw Cloud Web hostingplan hebt toegevoegd, moet u deze twee wijzigingen aanbrengen voor elk van uw domeinnamen. 
@@ -189,20 +187,20 @@ Als u hulp wilt bij de functionaliteit van uw website, raden we u aan naar de we
 
 U hoeft nu alleen nog maar uw e-mailadressen te gebruiken. Hiervoor stelt OVH een online dienst ter beschikking (webmail): RoundCube. Deze is toegankelijk op het adres: <https://www.ovh.nl/mail/> waar u uw inloggegevens dient in te voeren voor uw bij OVH aangemaakte e-mailadres.
 
-Raadpleeg onze gids voor meer informatie over het gebruik van RoundCube: [Gebruik van RoundCube](https://docs.ovh.com/nl/emails/webmail_roundcube_gebruikershandleiding/){.external}. Indien u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: <https://docs.ovh.com/nl/emails/>.
+Raadpleeg onze gids voor meer informatie over het gebruik van RoundCube: [Gebruik van RoundCube](/pages/web/emails/email_roundcube){.external}. Indien u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: <https://docs.ovh.com/nl/emails/>.
 
 ## Verder
 
-[Mijn website verhuizen naar OVH](https://docs.ovh.com/nl/hosting/migreer-website-naar-ovh/){.external}
+[Mijn website verhuizen naar OVH](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Mijn website online zetten](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}
+[Mijn website online zetten](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
-[Een website installeren met 1-klik-modules](https://docs.ovh.com/nl/hosting/1-klik-modules/){.external}
+[Een website installeren met 1-klik-modules](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Het hosten van meerdere websites op uw webhostingplan](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}
+[Het hosten van meerdere websites op uw webhostingplan](/pages/web/hosting/multisites_configure_multisite){.external}
 
-[Hoe maak ik een e-mailadres aan](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external}
+[Hoe maak ik een e-mailadres aan](/pages/web/emails/email_creation){.external}
 
-[Gebruik van RoundCube](https://docs.ovh.com/nl/emails/webmail_roundcube_gebruikershandleiding/){.external}
+[Gebruik van RoundCube](/pages/web/emails/email_roundcube){.external}
 
 Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en/>.

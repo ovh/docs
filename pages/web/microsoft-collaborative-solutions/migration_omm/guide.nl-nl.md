@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: Migratie van e-mailaccounts met OVH Mail Migrator
-slug: exchange-migratie-van-e-mailaccounts-met-ovh-mail-migrator
 excerpt: Ontdek hoe u uw e-mailaccounts naar OVH kunt migreren met behulp van onze OVH Mail Migrator-tool
-section: Accountmigratie
 updated: 2022-02-14
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: Konfiguracja konta e-mail w programie Outlook na urządzeniu macOS
-slug: konfiguracja-outlook-2016-mac
 excerpt: Dowiedz się, jak skonfigurować konto e-mail MX Plan w programie Outlook 2016 na urządzeniu Mac
-section: Konfiguracja na komputerze
-order: 02
 updated: 2018-05-31
 ---
 
@@ -23,7 +20,7 @@ Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych progra
 
 > [!primary]
 >
-> Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/){.external}.
+> Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook 2016 na urządzeniu z systemem Windows](/pages/web/emails/how_to_configure_outlook_2016){.external}.
 >
 
 ## W praktyce
@@ -81,6 +78,6 @@ OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego 
 
 ## Sprawdź również
 
-[Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu Mac](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-outlook-2016-mac/){.external}
+[Konfiguracja konta Exchange w programie Outlook 2016 na urządzeniu Mac](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016-mac/){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

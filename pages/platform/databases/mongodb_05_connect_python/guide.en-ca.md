@@ -1,9 +1,6 @@
 ---
 title: MongoDB - Connect with Python
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Python programming language
-slug: mongodb/connect-python
-section: MongoDB - Guides
-order: 050
 updated: 2022-07-27
 ---
 
@@ -21,14 +18,14 @@ You can find an example on the [Github examples repository](https://github.com/o
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ca/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MongoDB instance](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/managing-service/) to accept incoming connections
+- A MongoDB database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your MongoDB instance](/pages/platform/databases/mongodb_02_manage_control_panel) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.5.
 
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/connect-cli).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](/pages/platform/databases/mongodb_03_connect_cli).
 
 Another way is to interact directly using a programming language, such as Python.
 Python is one of the major programming languages in the world, especially in the Data ecosystem.
@@ -178,9 +175,9 @@ Congratulations! Everything is working properly.
 
 ## Go further
 
-[MongoDB capabilities](https://docs.ovh.com/ca/en/publiccloud/databases/mongodb/capabilities/)
+[MongoDB capabilities](/pages/platform/databases/mongodb_01_concept_capabilities)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 

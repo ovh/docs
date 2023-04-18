@@ -1,12 +1,9 @@
 ---
 title: 'Erste Schritte mit Web Cloud Databases'
-slug: erste-schritte-mit-clouddb
 links:
     - docs/cloud/clouddb/utilisation-mysql-mariadb/
     - docs/cloud/clouddb/utilisation-pgsql/
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die Web Cloud Databases Lösung verwenden'
-section: 'Erste Schritte'
-order: 01
 updated: 2023-02-15
 ---
 

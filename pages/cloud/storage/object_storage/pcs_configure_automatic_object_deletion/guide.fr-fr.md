@@ -1,10 +1,7 @@
 ---
 title: Object Storage Swift - Configurer la suppression automatique des objets
 excerpt: 'Découvrez comment configurer la suppression automatique des fichiers après une période donnée ou à une date précise'
-slug: pcs/configure-automatic-object-deletion
-section: Spécificités de la classe de stockage OpenStack Swift
 legacy_guide_number: g1950
-order: 070
 updated: 2021-10-27
 ---
 
@@ -18,8 +15,8 @@ Pour gérer facilement votre Object Storage, vous pouvez avoir besoin de défini
 
 ## Prérequis
 
-- [Préparer l'environnement pour utiliser l'API OpenStack](https://docs.ovh.com/fr/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Charger les variables d’environnement OpenStack](https://docs.ovh.com/fr/public-cloud/set-openstack-environment-variables/)
+- [Préparer l'environnement pour utiliser l'API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Charger les variables d’environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## En pratique
 

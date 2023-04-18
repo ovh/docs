@@ -1,9 +1,6 @@
 ---
 title: Cluster creation and EVC activation
-slug: create-cluster-enable-evc
 excerpt: Learn how to create a cluster and activate EVC mode
-section: VMware vSphere features
-order: 01
 updated: 2022-02-08
 ---
 
@@ -41,7 +38,7 @@ Click `OK`{.action} when done.
 
 > [!warning]
 >
-> vSAN requires vSAN compatible hosts. Find more details [here](https://docs.ovh.com/asia/en/private-cloud/control-panel-ovh-private-cloud/) on how to order them if needed.
+> vSAN requires vSAN compatible hosts. Find more details [here](/pages/cloud/private-cloud/manager_ovh_private_cloud) on how to order them if needed.
 > 
 
 ### DRS

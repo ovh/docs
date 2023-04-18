@@ -1,9 +1,6 @@
 ---
 title: "Konfiguracja rewersu DNS na serwerze VPS"
 excerpt: Dowiedz się, jak wdrożyć rewers DNS
-slug: konfiguracja_rewersu_dns_vps
-section: Sieć & IP
-order: 3
 updated: 2023-01-05
 ---
 
@@ -45,11 +42,11 @@ Rewers możesz również edytować bezpośrednio na ikonie kolumny **Reverse** t
 
 > [!primary]
 >
-Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` jest poprawnie skonfigurowane w strefie DNS Twojej domeny. Uwaga, modyfikacja [strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/) może trwać do 24 godzin, jeśli ostatnio zmieniłeś pole `A`.
+Jeśli modyfikacja nie działa zgodnie z oczekiwaniami, sprawdź, czy pole `A` jest poprawnie skonfigurowane w strefie DNS Twojej domeny. Uwaga, modyfikacja [strefy DNS](/pages/web/domains/dns_zone_edit) może trwać do 24 godzin, jeśli ostatnio zmieniłeś pole `A`.
 >
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Pierwsze kroki z serwerem VPS](https://docs.ovh.com/pl/vps/pierwsze-kroki-vps/)
+[Pierwsze kroki z serwerem VPS](/pages/cloud/vps/starting_with_a_vps)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

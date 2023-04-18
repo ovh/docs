@@ -1,9 +1,6 @@
 ---
 title: MongoDB - Remote disk migration information
 excerpt: Everything you need to know about the remote disk migration 
-slug: mongodb/remote-disk-migration
-section: MongoDB - Guides
-order: 090
 updated: 2023-02-09
 ---
 

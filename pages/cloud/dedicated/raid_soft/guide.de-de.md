@@ -1,8 +1,6 @@
 ---
 title: Software-RAID
-slug: soft-raid
 excerpt: 'Erfahren Sie hier, wie Sie das RAID Array Ihres Servers rekonfigurieren'
-section: 'RAID & Festplatten'
 updated: 2022-10-11
 ---
 
@@ -384,10 +382,10 @@ mount /dev/md4 /home
 
 ## Weiterführende Informationen
 
-[Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external} (Englisch)
+[Hot Swap – Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard){.external} (Englisch)
 
-[Hot Swap – Software RAID](https://docs.ovh.com/de/dedicated/hotswap-software-raid/){.external}
+[Hot Swap – Software RAID](/pages/cloud/dedicated/hotswap_raid_soft){.external}
 
-[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (Englisch)
+[Hardware RAID](/pages/cloud/dedicated/raid_hard){.external} (Englisch)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

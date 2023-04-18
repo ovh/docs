@@ -1,8 +1,5 @@
 ---
 title: Node.js
-slug: languages-nodejs
-section: Languages
-order: 4
 updated: 2022-06-02
 ---
 
@@ -14,7 +11,7 @@ updated: 2022-06-02
 
 Node.js is a popular asynchronous JavaScript runtime.
 Deploy scalable Node.js apps of all sizes on Web PaaS.
-You can also develop a microservice architecture mixing JavaScript and other apps with [multi-app projects](../configuration-app).
+You can also develop a microservice architecture mixing JavaScript and other apps with [multi-app projects](/pages/web/web-paas/configuration-app).
 
 ## Supported versions
 
@@ -28,7 +25,7 @@ You can also develop a microservice architecture mixing JavaScript and other app
 |  16 |  
 
 
-To use a specific version in a container with a different language, [use a version manager](./nvm).
+To use a specific version in a container with a different language, [use a version manager](/pages/web/web-paas/languages-nodejs/nvm).
 
 ## Deprecated versions
 
@@ -49,7 +46,7 @@ To use Node.js on Web PaaS and Node.js together, configure the `.platform.app.ya
 ### 1. Specify the version
 
 Choose a version from the [list above](#supported-versions)
-and add it to your [app configuration](../configuration-app):
+and add it to your [app configuration](/pages/web/web-paas/configuration-app):
 
 
 ```yaml   
@@ -143,7 +140,7 @@ web:
 ## Dependencies
 
 By default, Web PaaS assumes you're using npm as a package manager.
-If you have a `package.json` file in your code, the default [build flavor is run](../configuration-app/build/#build):
+If you have a `package.json` file in your code, the default [build flavor is run](/pages/web/web-paas/configuration-app/build/#build):
 
 ```bash
 npm prune --userconfig .npmrc && npm install --userconfig .npmrc
@@ -184,7 +181,7 @@ hooks:
 
 ## Connecting to services
 
-The following examples show how to use Node.js to access various [services](../configuration-services).
+The following examples show how to use Node.js to access various [services](/pages/web/web-paas/configuration-services).
 To configure a given service, see the page dedicated to that service.
 
 > [!tabs]      

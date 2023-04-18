@@ -1,9 +1,6 @@
 ---
 title: 'Configuring IPv6 on a Public Cloud instance'
-slug: ipv6-configuration
 excerpt: 'Configuration tutorial for IPv6 on a Public Cloud instance'
-section: Configuration
-order: 02
 updated: 2022-11-15
 ---
 
@@ -21,7 +18,7 @@ By default, only the IPv4 address is configured.
 
 > [!primary]
 > 
-> Floating IP and Gateway currently do not support IPv6. You can only use IPv6 with instances in [Public Mode](https://docs.ovh.com/ie/en/publiccloud/network-services/networking-concepts/#publicmode).
+> Floating IP and Gateway currently do not support IPv6. You can only use IPv6 with instances in [Public Mode](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode).
 >
 
 
@@ -200,7 +197,7 @@ Have you configured your IPv6, but found that nothing works?
 
 There is a simple operation to determine whether the error is in your configuration, or on the OVHcloud network.
 
-Firstly, [put your instance into rescue-pro mode](https://docs.ovh.com/ie/en/public-cloud/put_an_instance_in_rescue_mode/).
+Firstly, [put your instance into rescue-pro mode](/pages/platform/public-cloud/put_an_instance_in_rescue_mode).
 
 Next, use the template commands below to configure your IP non-persistently, replacing ‘YOUR_IPV6’, ‘IPV6_PREFIX’, etc. with your own details:
 

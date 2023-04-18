@@ -1,8 +1,6 @@
 ---
 title: 'Añadir un registro SPF a la configuración del dominio'
 excerpt: 'Cómo añadir un registro SPF a la configuración de un dominio en OVHcloud'
-slug: web_hosting_el_registro_spf
-section: 'DNS (servidor y zona)'
 updated: 2022-09-12
 ---
 
@@ -219,8 +217,8 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.ca ~all"
 
 ## Más información
 
-[Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/){.external}.
+[Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
-[Cambiar los servidores DNS de un dominio de OVHcloud](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}.
+[Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web/domains/dns_server_general_information){.external}.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

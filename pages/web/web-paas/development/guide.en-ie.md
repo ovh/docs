@@ -1,9 +1,6 @@
 ---
 title: Development
-slug: development
-section: Development
 hidden: true
-order: 5
 updated: 2021-03-26
 ---
 

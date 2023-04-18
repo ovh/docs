@@ -1,9 +1,6 @@
 ---
 title: Dateisystem auf einem VPS überprüfen
 excerpt: Erfahren Sie hier, wie Sie ein Dateisystem im Rescue-Modus auf Fehler überprüfen
-slug: check-file-system-vps
-section: Diagnose & Rescue Modus
-order: 5
 updated: 2021-04-20
 ---
 
@@ -33,7 +30,7 @@ updated: 2021-04-20
 
 #### VPS mit GNU/Linux
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](../rescue/).
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](/pages/cloud/vps/rescue).
 
 Bei älteren VPS Diensten werden die Partitionen im Rescue-Modus automatisch erstellt. Sie können dies mit folgendem Befehl überprüfen:
 
@@ -75,7 +72,7 @@ $ fsck /dev/sdb1 -f
 
 Die obigen Anweisungen gelten in der Regel nicht für einen Windows VPS, da die Überprüfung des Dateisystems nicht für NTFS funktioniert. Sie können jedoch eine NTFS-Konsistenzüberprüfung der Partitionen durchführen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](../rescue/).
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](/pages/cloud/vps/rescue).
 
 Bei älteren VPS Diensten werden die Partitionen im Rescue-Modus automatisch erstellt. Sie können dies mit folgendem Befehl überprüfen:
 
@@ -108,6 +105,6 @@ $ ntfsfix /dev/sdb1
 
 ## Weiterführende Informationen
 
-[Rescue-Modus für einen VPS aktivieren](../rescue/)
+[Rescue-Modus für einen VPS aktivieren](/pages/cloud/vps/rescue)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

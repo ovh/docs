@@ -1,9 +1,6 @@
 ---
 title: "Usuń konto e-mail"
-slug: delete-email-account
 excerpt: "Dowiedz się, jak usunąć lub zresetować konto e-mail w Twojej usłudze e-mail"
-section: 'Funkcjonalności kont e-mail'
-order: 02
 updated: 2023-01-27
 ---
 
@@ -34,7 +31,7 @@ Chcesz:
 OVHcloud oferuje 3 rozwiązania poczty elektronicznej. Pojęcie usunięcia konta różni się w zależności od wybranej oferty.
 
 - **E-mail MXplan**: oferta ta jest sprzedawana w formie pakietu kilku kont e-mail. Po usunięciu konta, uruchomisz lokalizację dla pakietu. 
-- **Email Pro** i **Hosted Exchange**: obie te oferty są na zamówienie. możesz zamówić indywidualny abonament na konto e-mail. Jeśli chcesz usunąć konto e-mail, musisz wykonać **reset**. Po zresetowaniu konta e-mail możesz ponownie użyć tego konta do utworzenia nowego konta e-mail. Możesz również [zrezygnować z subskrypcji](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/#usuwanie-kont) tego konta, jeśli chcesz go definitywnie usunąć.
+- **Email Pro** i **Hosted Exchange**: obie te oferty są na zamówienie. możesz zamówić indywidualny abonament na konto e-mail. Jeśli chcesz usunąć konto e-mail, musisz wykonać **reset**. Po zresetowaniu konta e-mail możesz ponownie użyć tego konta do utworzenia nowego konta e-mail. Możesz również [zrezygnować z subskrypcji](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#usuwanie-kont) tego konta, jeśli chcesz go definitywnie usunąć.
 
 ### Usuń lub zresetuj konto e-mail
 
@@ -58,13 +55,13 @@ Wybierz kartę odpowiadającą Twojej usłudze e-mail:
 > **Email Pro**
 >>
 >> Kliknij `E-mail Pro`{.action}, następnie wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Pojawi się okno, w którym widoczne są istniejące konta e-mail. Kliknij na przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które chcesz zmienić, po czym kliknij przycisk `Zresetuj to konto`{.action}.<br><br>
->> Po zresetowaniu konta, jeśli chcesz go definitywnie usunąć, należy go rozwiązać. W tym celu zapoznaj się z naszym przewodnikiem [Zarządzanie płatnościami za Twoje konta Email-Pro](https://docs.ovh.com/pl/emails-pro/zarzadzanie-platnosciami-emailpro/)<br><br>
+>> Po zresetowaniu konta, jeśli chcesz go definitywnie usunąć, należy go rozwiązać. W tym celu zapoznaj się z naszym przewodnikiem [Zarządzanie płatnościami za Twoje konta Email-Pro](/pages/web/emails-pro/manage_billing_emailpro)<br><br>
 >>![email](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Kliknij na `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz odpowiednią platformę. Przejdź do zakładki `Konta e-mail`{.action}. Kliknij na przycisk <i class="icons-elipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie konta, które ma zostać zmienione, a następnie kliknij na `Zresetuj`{.action}.<br><br>>
->> Po zresetowaniu konta, jeśli chcesz go definitywnie usunąć, należy go rozwiązać. W tym celu zapoznaj się z naszym przewodnikiem [Zarządzanie płatnościami za Twoje konta Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/).<br><br>
+>> Po zresetowaniu konta, jeśli chcesz go definitywnie usunąć, należy go rozwiązać. W tym celu zapoznaj się z naszym przewodnikiem [Zarządzanie płatnościami za Twoje konta Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange).<br><br>
 >>![email](images/exchange-reset.png){.thumbnail}<br>
 >>
 
@@ -80,15 +77,15 @@ W poniższej tabeli znajdziesz informacje niezbędne do identyfikacji Twojej ofe
 
 ## Sprawdź również
 
-[Pierwsze kroki z usługą MXplan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+[Pierwsze kroki z usługą MXplan](/pages/web/emails/email_generalities)
 
-[Pierwsze kroki z usługą E-mail Pro](https://docs.ovh.com/pl/emails-pro/pierwsza-konfiguracja-email-pro/)
+[Pierwsze kroki z usługą E-mail Pro](/pages/web/emails-pro/first_config)
 
-[Pierwsze kroki z usługą Hosted Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_pierwsza_konfiguracja_uslugi/)
+[Pierwsze kroki z usługą Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
-[Zarządzanie płatnościami za Twoje konta Email Pro](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/)
+[Zarządzanie płatnościami za Twoje konta Email Pro](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
-[Zarządzanie płatnościami za konta Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/zarzadzanie-fakturowanie-exchange/)
+[Zarządzanie płatnościami za konta Exchange](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 

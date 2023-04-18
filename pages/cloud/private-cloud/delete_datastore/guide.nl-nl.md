@@ -1,10 +1,8 @@
 ---
 deprecated: true
 title: 'Verwijdering van een datastore'
-slug: verwijderen-datastore
 excerpt: 'Ontdek hoe u een datastore van uw Private Cloud kunt verwijderen'
 legacy_guide_number: '7766789'
-section: 'OVH functies'
 updated: 2020-07-01
 ---
 

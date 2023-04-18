@@ -1,12 +1,9 @@
 ---
 title: "AI Deploy - Tutoriel - Créer un service web pour reconnaître la langue des signes avec YOLOv7 (EN)"
-slug: deploy/tuto-streamlit-yolov7-sign-language
 excerpt: "Découvez comment construire une application de reconnaissance de la langue des signes avec Streamlit"
-section: AI Deploy - Tutoriels
-order: 13
 updated: 2023-04-03
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/deploy/tuto-streamlit-yolov7-sign-language/'
+    canonical: '/pages/platform/ai/deploy_tuto_13_streamlit_yolov7'
 ---
 
 **Last updated 3rd April, 2023.**
@@ -17,7 +14,7 @@ The purpose of this tutorial is to show how to deploy a web service to recognize
 
 In order to do this, you will use [Streamlit](https://streamlit.io/), a Python framework that turns scripts into a shareable web application. You will also learn how to build and use a custom Docker image for a Streamlit application.
 
-For more information on how to train YOLOv7 on a custom dataset, refer to the following [documentation](https://docs.ovh.com/ca/fr/publiccloud/ai/notebooks/yolov7-sign-language/).
+For more information on how to train YOLOv7 on a custom dataset, refer to the following [documentation](/pages/platform/ai/notebook_tuto_11_yolov7).
 
 Here is an overview of the Sign Language recognition app:
 
@@ -27,7 +24,7 @@ Here is an overview of the Sign Language recognition app:
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - An AI Deploy project created inside a Public Cloud project
-- A [user for AI Deploy](https://docs.ovh.com/ca/fr/publiccloud/ai/users)
+- A [user for AI Deploy](/pages/platform/ai/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - Your weights obtained from training YOLOv7 model on the [ASL letters dataset](https://public.roboflow.com/object-detection/american-sign-language-letters/1) (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv7](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov7/notebook_object_detection_yolov7_asl.ipynb)
@@ -41,7 +38,7 @@ You are going to follow different steps to build your Streamlit application.
 
 > [!warning]
 > **Warning**
-> You must have previously created an `asl-volov7-model` Object Storage container when training your model via [AI Notebooks](https://docs.ovh.com/ca/fr/publiccloud/ai/notebooks/yolov7-sign-language/).
+> You must have previously created an `asl-volov7-model` Object Storage container when training your model via [AI Notebooks](/pages/platform/ai/notebook_tuto_11_yolov7).
 >
 > Check that this container contains your **YOLOv7 custom weights**. They will be necessary for the deployment of the app!
 
@@ -246,7 +243,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 > **Warning**
-> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/ca/fr/publiccloud/ai/training/add-private-registry).
+> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 
 Find the address of your shared registry by launching this command:
 
@@ -289,5 +286,5 @@ ovhai app run <shared-registry-address>/yolov7-streamlit-asl-recognition:latest 
 
 ## Go further
 
-- You can imagine deploying an app using YOLO models with another Python framework: **Flask**. Refer to this [tutorial](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/web-service-yolov5/).
-- Feel free to use **Streamlit** for other AI tasks! Deploy a Speech-to-Text app [here](https://docs.ovh.com/ca/fr/publiccloud/ai/deploy/tuto-streamlit-speech-to-text-app/).
+- You can imagine deploying an app using YOLO models with another Python framework: **Flask**. Refer to this [tutorial](/pages/platform/ai/deploy_tuto_04_flask_yolov5).
+- Feel free to use **Streamlit** for other AI tasks! Deploy a Speech-to-Text app [here](/pages/platform/ai/deploy_tuto_09_streamlit_speech_to_text_app).

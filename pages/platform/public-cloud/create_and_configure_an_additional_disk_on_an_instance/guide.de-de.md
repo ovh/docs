@@ -1,9 +1,6 @@
 ---
 title: 'Zusätzliches Volume auf einer Instanz erstellen und konfigurieren'
-slug: erstellen_zustzliche_festplatte_public_cloud
 excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrer Public Cloud Instanz hinzufügen'
-section: 'Storage'
-order: 1
 updated: 2023-03-03
 ---
 
@@ -71,7 +68,7 @@ Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Recht
 
 #### Unter Linux
 
-Stellen Sie eine [SSH-Verbindung](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
+Stellen Sie eine [SSH-Verbindung](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -323,7 +320,7 @@ Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist die beste Vorgehensw
 
 #### Unter Linux <a name="linux"></a>
 
-Stellen Sie eine [SSH-Verbindung](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
+Stellen Sie eine [SSH-Verbindung](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
 
 ```bash
 ~$ admin@server-1.~$ lsblk

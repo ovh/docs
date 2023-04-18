@@ -1,9 +1,7 @@
 ---
 title: Esegui uno script durante la creazione della tua istanza
 excerpt: Esegui uno script durante la creazione della tua istanza
-slug: esegui_uno_script_durante_la_creazione_della_tua_istanza
 legacy_guide_number: g1932
-section: Gestione via OpenStack
 updated: 2022-03-18
 ---
 
@@ -18,8 +16,8 @@ In alcuni casi, può essere utile eseguire uno script durante la creazione della
 
 ## Prerequisiti
 
-- [Prepara il tuo ambiente di sviluppo per utilizzare l'API OpenStack](https://docs.ovh.com/it/public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Imposta le variabili d'ambiente OpenStack](https://docs.ovh.com/it/public-cloud/set-openstack-environment-variables/)
+- [Prepara il tuo ambiente di sviluppo per utilizzare l'API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Imposta le variabili d'ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Procedura
 

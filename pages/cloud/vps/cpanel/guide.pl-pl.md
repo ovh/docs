@@ -1,8 +1,6 @@
 ---
 title: Instalacja cPanel na serwerze VPS
-slug: cpanel
 excerpt: 'Dowiedz się, jak utworzyć instancję VPS przy użyciu wstępnie zainstalowanej aplikacji cPanel'
-section: 'Poziom zaawansowany'
 updated: 2021-10-14
 ---
 
@@ -76,7 +74,7 @@ Należy teraz mieć możliwość logowania się do WHM i SSH, używając użytko
 
 Zalecamy podjęcie wszelkich niezbędnych kroków w celu zabezpieczenia WHM i VPS. W tym celu zalecamy zapoznanie się z zaleceniami [cPanel tutaj](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Zapoznaj się również z naszym przewodnikiem dotyczącym [zabezpieczenia serwera VPS](../porady-zabezpieczenie-vps/#tworzenie-kopii-zapasowej-systemu-i-danych), korzystania z [naszych rozwiązań do tworzenia kopii zapasowych](../) oraz konfiguracji [Network Firewall](../../dedicated/network-firewall/).
+Zapoznaj się również z naszym przewodnikiem dotyczącym [zabezpieczenia serwera VPS](../porady-zabezpieczenie-vps/#tworzenie-kopii-zapasowej-systemu-i-danych), korzystania z [naszych rozwiązań do tworzenia kopii zapasowych](../) oraz konfiguracji [Network Firewall](/pages/cloud/dedicated/firewall_network).
 
 ## Sprawdź również
 

@@ -1,9 +1,6 @@
 ---
 title: "Löschen eines E-Mail-Accounts"
-slug: delete-email-account
 excerpt: "Erfahren Sie hier, wie Sie einen Account Ihrer E-Mail-Lösung löschen oder zurücksetzen"
-section: 'E-Mail Account Funktionen'
-order: 02
 updated: 2023-01-27
 ---
 
@@ -33,7 +30,7 @@ Sie möchten:
 OVHcloud bietet 3 E-Mail-Lösungen an. Das Konzept der Löschung von Accounts variiert je nach ausgewähltem Dienst.
 
 - **MX Plan**: Dieses Angebot enthält eine bestimmte Anzahl an E-Mail-Accounts als Gesamtpaket. Wenn Sie einen E-Mail-Account löschen, wird der "Slot" dieses Accounts freigegeben.
-- **E-Mail Pro** und **Hosted Exchange**: Jedes dieser Angebote besteht aus dem Dienst selbst und individuell abgerechneten E-Mail-Accounts. Wenn Sie einen E-Mail-Account löschen möchten, müssen Sie diesen zuerst **zurücksetzen**. Wenn Sie Ihren E-Mail-Account zurückgesetzt haben, können Sie diesen erneut verwenden, um eine neue E-Mail-Adresse zu erstellen. Um diesen Account endgültig zu löschen, muss sein [Abonnement gekündigt werden](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen).
+- **E-Mail Pro** und **Hosted Exchange**: Jedes dieser Angebote besteht aus dem Dienst selbst und individuell abgerechneten E-Mail-Accounts. Wenn Sie einen E-Mail-Account löschen möchten, müssen Sie diesen zuerst **zurücksetzen**. Wenn Sie Ihren E-Mail-Account zurückgesetzt haben, können Sie diesen erneut verwenden, um eine neue E-Mail-Adresse zu erstellen. Um diesen Account endgültig zu löschen, muss sein [Abonnement gekündigt werden](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#accounts-entfernen).
 
 ### E-Mail-Account löschen oder zurücksetzen
 
@@ -57,13 +54,13 @@ Wählen Sie den Tab für Ihren E-Mail-Dienst aus:
 > **E-Mail Pro**
 >>
 >> Öffnen Sie `E-Mail Pro`{.action} in der Seitenleiste und wählen Sie den Namen des betreffenden Dienstes aus. Wechseln Sie zum Tab `E-Mail Accounts`{.action}. Im daraufhin angezeigten Fenster werden die vorhandenen E-Mail-Accounts angezeigt. Klicken Sie auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Diesen Account zurücksetzen`{.action}.<br><br>
->> Wenn Sie Ihren Account nach dem Zurücksetzen endgültig löschen möchten, müssen Sie ihn kündigen. Lesen Sie hierzu unsere Anleitung zur [Verwaltung der Abrechnung Ihrer E-Mail Pro Accounts](https://docs.ovh.com/de/emails-pro/verwaltung-der-abrechnung-emailpro/).<br><br>
+>> Wenn Sie Ihren Account nach dem Zurücksetzen endgültig löschen möchten, müssen Sie ihn kündigen. Lesen Sie hierzu unsere Anleitung zur [Verwaltung der Abrechnung Ihrer E-Mail Pro Accounts](/pages/web/emails-pro/manage_billing_emailpro).<br><br>
 >>![E-Mail](images/emailpro-reset.png){.thumbnail}<br>
 >>
 > **Exchange**
 >>
 >> Öffnen Sie `Microsoft`{.action} und dann `Exchange`{.action} in der Seitenleiste und wählen Sie den Namen des betreffenden Dienstes aus. Wechseln Sie zum Tab `E-Mail Accounts`{.action}. Klicken Sie auf den <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> Button rechts neben dem zu bearbeitenden Account, und klicken Sie dann auf `Zurücksetzen`{.action}.<br><br>
->> Wenn Sie Ihren Account nach dem Zurücksetzen endgültig löschen möchten, müssen Sie ihn kündigen. Lesen Sie hierzu unsere Anleitung zur [Verwaltung der Abrechnung Ihrer Exchange Accounts](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/).<br><br>
+>> Wenn Sie Ihren Account nach dem Zurücksetzen endgültig löschen möchten, müssen Sie ihn kündigen. Lesen Sie hierzu unsere Anleitung zur [Verwaltung der Abrechnung Ihrer Exchange Accounts](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange).<br><br>
 >>![E-Mail](images/exchange-reset.png){.thumbnail}<br>
 >>
 
@@ -78,15 +75,15 @@ In der dieser Tabelle finden Sie die notwendigen Informationen zur Identifizieru
 
 ## Weiterführende Informationen
 
-[Erste Schritte mit MX Plan](https://docs.ovh.com/de/emails/allgemeines-zu-shared-e-mails/)
+[Erste Schritte mit MX Plan](/pages/web/emails/email_generalities)
 
-[Erste Schritte mit E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/)
+[Erste Schritte mit E-Mail Pro](/pages/web/emails-pro/first_config)
 
-[Erste Schritte mit Hosted Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_der_dienstleistung/)
+[Erste Schritte mit Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
-[Verwaltung der Abrechnung Ihrer E-Mail Pro Accounts](https://docs.ovh.com/de/emails-pro/verwaltung-der-abrechnung-emailpro/)
+[Verwaltung der Abrechnung Ihrer E-Mail Pro Accounts](/pages/web/emails-pro/manage_billing_emailpro)
 
-[Verwaltung der Abrechnung Ihrer Exchange Accounts](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/)
+[Verwaltung der Abrechnung Ihrer Exchange Accounts](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange)
 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote einsehen](https://www.ovhcloud.com/de/support-levels/).
 

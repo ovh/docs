@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: 'Het hosten van meerdere websites op uw webhostingplan'
-slug: multisite-configuratie-meerdere-websites
 excerpt: 'Ontdek hoe u verschillende sites op uw hostingplan kunt hosten'
-section: 'Aan de slag'
-order: 1
 updated: 2022-11-04
 ---
 
@@ -33,7 +30,7 @@ In de onderstaande tabel staan alle domeinen die aan uw webhostingplan zijn toeg
 
 > [!primary]
 >
-> Als u uw website migreert en mogelijk dienstuitval wilt vermijden, kunt u Stap 4: [Zet uw website online](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/#stap-4-zet-uw-website-online){.external} als tweede stap volgen.
+> Als u uw website migreert en mogelijk dienstuitval wilt vermijden, kunt u Stap 4: [Zet uw website online](/pages/web/hosting/multisites_configure_multisite#stap-4-zet-uw-website-online){.external} als tweede stap volgen.
 >
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
@@ -44,11 +41,11 @@ Om een nieuw domein aan uw webhostingplan toe te voegen, klikt u op de knop `Dom
 
 - **Toevoegen van een OVH-geregistreerd domein**:
 
-Selecteer een domein in de lijst: alleen de domeinen die de OVH-configuratie gebruiken en zijn ingevoerd als contacten met uw NIC handle worden weergegeven. Kies er een uit de lijst en klik op `Volgende`{.action}. U kunt direct naar stap 3.1 gaan: [Toevoegen van een OVH domein](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/#stap-31-toevoegen-van-een-ovh-geregistreerd-domein){.external}.
+Selecteer een domein in de lijst: alleen de domeinen die de OVH-configuratie gebruiken en zijn ingevoerd als contacten met uw NIC handle worden weergegeven. Kies er een uit de lijst en klik op `Volgende`{.action}. U kunt direct naar stap 3.1 gaan: [Toevoegen van een OVH domein](/pages/web/hosting/multisites_configure_multisite#stap-31-toevoegen-van-een-ovh-geregistreerd-domein){.external}.
 
 - **Voeg een externe domeinnaam toe**
 
-Als de domeinnaam niet in de lijst staat, wordt deze als extern beschouwd (naar uw NIC handle of naar OVH). Als dat het geval is, selecteert u `Een extern domein toevoegen`{.action} en klikt u op `Volgende`{.action}. Ga vervolgens naar stap 3.2: [Toevoegen van een extern domein](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/#stap-32-toevoegen-van-een-externe-domeinnaam){.external}.
+Als de domeinnaam niet in de lijst staat, wordt deze als extern beschouwd (naar uw NIC handle of naar OVH). Als dat het geval is, selecteert u `Een extern domein toevoegen`{.action} en klikt u op `Volgende`{.action}. Ga vervolgens naar stap 3.2: [Toevoegen van een extern domein](/pages/web/hosting/multisites_configure_multisite#stap-32-toevoegen-van-een-externe-domeinnaam){.external}.
 
 ![multisite](images/add-multisite-step1.png){.thumbnail}
 
@@ -56,7 +53,7 @@ Als de domeinnaam niet in de lijst staat, wordt deze als extern beschouwd (naar 
 
 > [!primary]
 >
-> Deze stap is alleen van toepassing als u ‘Een OVH-geregistreerd domein toevoegen’ hebt geselecteerd. Voor een niet-OVH-geregistreerde domeinnaam volgt u de handleiding van Stap 3.2: [Toevoegen van een niet-OVH-geregistreerde domeinnaam](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/#stap-32-toevoegen-van-een-externe-domeinnaam){.external}.
+> Deze stap is alleen van toepassing als u ‘Een OVH-geregistreerd domein toevoegen’ hebt geselecteerd. Voor een niet-OVH-geregistreerde domeinnaam volgt u de handleiding van Stap 3.2: [Toevoegen van een niet-OVH-geregistreerde domeinnaam](/pages/web/hosting/multisites_configure_multisite#stap-32-toevoegen-van-een-externe-domeinnaam){.external}.
 >
 
 Pas nu de opties voor het toevoegen van het domein aan. Afhankelijk van het door u gekozen [OVH-webhostingsplan](https://www.ovhcloud.com/nl/web-hosting/){.external}, zijn sommige van de voorgestelde opties mogelijk niet beschikbaar.
@@ -79,17 +76,17 @@ Nadat u deze informatie hebt ingevoerd, klikt u op `Volgende`{.action}. Controle
 Als u een OVH domein hebt geselecteerd, kunt u de DNS-configuratie automatisch of handmatig configureren.
 
 - **Automatische DNS-configuratie**: vink het vakje aan in het veld `Automatische configuratie (aanbevolen)`{.action}.
-- **Handmatige DNS-configuratie**: Deselecteer het vakje in het veld `Automatische configuratie (aanbevolen)`{.action}. De informatie die moet worden gewijzigd, wordt vervolgens weergegeven. Als u de configuratie zelf wilt maken, lees dan de bijbehorende handleiding [Bewerking van de OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}.
+- **Handmatige DNS-configuratie**: Deselecteer het vakje in het veld `Automatische configuratie (aanbevolen)`{.action}. De informatie die moet worden gewijzigd, wordt vervolgens weergegeven. Als u de configuratie zelf wilt maken, lees dan de bijbehorende handleiding [Bewerking van de OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}.
 
 Klik op `Bevestigen`{.action} om het domein toe te voegen. Dit kan tot een uur in beslag nemen. Het kan 4 tot 24 uur duren voordat de wijziging volledig is doorgevoerd.
 
-Nadat het domein is toegevoegd, gaat u naar Stap 4: [Zet een website online](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/#stap-4-zet-uw-website-online){.external}.
+Nadat het domein is toegevoegd, gaat u naar Stap 4: [Zet een website online](/pages/web/hosting/multisites_configure_multisite#stap-4-zet-uw-website-online){.external}.
 
 ### Stap 3.2: Toevoegen van een externe domeinnaam 
 
 > [!primary]
 >
-> U hoeft deze stap alleen te volgen als u ‘Niet-OVH-geregistreerd domein toevoegen’ hebt geselecteerd (domeinen geregistreerd bij een andere provider dan OVH, die u niet kunt beheren via uw OVH Control Panel). Als u een OVH domein wilt toevoegen, raadpleegt u stap 3.1: [Toevoegen van een OVH domein](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/#stap-31-toevoegen-van-een-ovh-geregistreerd-domein){.external}.
+> U hoeft deze stap alleen te volgen als u ‘Niet-OVH-geregistreerd domein toevoegen’ hebt geselecteerd (domeinen geregistreerd bij een andere provider dan OVH, die u niet kunt beheren via uw OVH Control Panel). Als u een OVH domein wilt toevoegen, raadpleegt u stap 3.1: [Toevoegen van een OVH domein](/pages/web/hosting/multisites_configure_multisite#stap-31-toevoegen-van-een-ovh-geregistreerd-domein){.external}.
 >
 
 Pas nu de opties voor het toevoegen van het domein aan. Sommige opties in uw OVH webhostingplan kunnen niet onmiddellijk worden ingeschakeld nadat u uw domeinnaam hebt toegevoegd. U kunt de opties niet inschakelen totdat u de multisite-instellingen hebt gewijzigd nadat het domein is toegevoegd.
@@ -113,7 +110,7 @@ Controleer de weergegeven informatie en klik vervolgens op de knop `Bevestigen`{
 > U moet deze wijzigingen uitvoeren voordat uw domein kan worden toegevoegd. Als u dit niet doet, wordt de toevoeging van uw domein geannuleerd.
 >
 
-Bewerk de configuratie van het domein (de DNS-zone) via de interface van de provider die het domein beheert. Als de provider OVH is, lees dan de bijbehorende handleiding [Bewerken van de OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}. Nadat u uw domein hebt geconfigureerd, kan het tussen 4 en 24 uur duren alvorens de wijzigingen volledig zijn doorgevoerd.
+Bewerk de configuratie van het domein (de DNS-zone) via de interface van de provider die het domein beheert. Als de provider OVH is, lees dan de bijbehorende handleiding [Bewerken van de OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}. Nadat u uw domein hebt geconfigureerd, kan het tussen 4 en 24 uur duren alvorens de wijzigingen volledig zijn doorgevoerd.
 
 De elementen die moeten worden aangepast in de DNS-configuratie:
 
@@ -126,9 +123,9 @@ De elementen die moeten worden aangepast in de DNS-configuratie:
 
 Nadat u uw domeinnaam hebt toegevoegd, hoeft u alleen nog maar uw website online te zetten. Ter herinnering: maak deze wijziging in de hoofdmap die u in de vorige stap hebt opgegeven.
 
-Om u hierbij te helpen, kunt u OVH 1-klik modules gebruiken, die u een kant-en-klare websitestructuur bieden. De website wordt vervolgens automatisch geïnstalleerd in de eerder geconfigureerde hoofdmap. U kunt meer informatie vinden over onze 1-klik modules in onze handleiding: [Installatie van een site met 1-klik modules](https://docs.ovh.com/nl/hosting/1-klik-modules/){.external}. 
+Om u hierbij te helpen, kunt u OVH 1-klik modules gebruiken, die u een kant-en-klare websitestructuur bieden. De website wordt vervolgens automatisch geïnstalleerd in de eerder geconfigureerde hoofdmap. U kunt meer informatie vinden over onze 1-klik modules in onze handleiding: [Installatie van een site met 1-klik modules](/pages/web/hosting/cms_install_1_click_modules){.external}. 
 
-Als u uw website echter handmatig wilt installeren, verzamelt u alle gerelateerde bestanden en plaatst u ze online in de bijbehorende hoofdmap in uw opslagruimte. Raadpleeg onze handleiding [Publiceren van een website op uw webhosting](https://docs.ovh.com/nl/hosting/mijn-website-online-zetten/){.external} voor meer informatie over het handmatig installeren van uw site.
+Als u uw website echter handmatig wilt installeren, verzamelt u alle gerelateerde bestanden en plaatst u ze online in de bijbehorende hoofdmap in uw opslagruimte. Raadpleeg onze handleiding [Publiceren van een website op uw webhosting](/pages/web/hosting/hosting_how_to_get_my_website_online){.external} voor meer informatie over het handmatig installeren van uw site.
 
 > [!primary]
 >
@@ -139,10 +136,10 @@ Als u uw website echter handmatig wilt installeren, verzamelt u alle gerelateerd
 
 ## Verder
 
-[Installatie van een site met 1-klik modules](https://docs.ovh.com/nl/hosting/1-klik-modules/){.external}
+[Installatie van een site met 1-klik modules](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Wijziging van mijn OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external}
+[Wijziging van mijn OVH DNS-zone](/pages/web/domains/dns_zone_edit){.external}
 
-[Publiceren van een website op uw webhosting](https://docs.ovh.com/nl/hosting/mijn-website-online-zetten/){.external}
+[Publiceren van een website op uw webhosting](/pages/web/hosting/hosting_how_to_get_my_website_online){.external}
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com/en/){.external}

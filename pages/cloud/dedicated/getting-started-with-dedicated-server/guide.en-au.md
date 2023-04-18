@@ -1,9 +1,6 @@
 ---
 title: 'Getting started with a dedicated server'
-slug: getting-started-dedicated-server
 excerpt: 'Find out how to proceed after the delivery of your dedicated server'
-section: 'Getting started'
-order: 1
 updated: 2023-03-28
 ---
 
@@ -26,7 +23,7 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 > [!primary]
 >
-> If your server is of the **Eco** product line, go to [this guide](../getting-started-dedicated-server-eco/) instead.
+> If your server is of the **Eco** product line, go to [this guide](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco/) instead.
 
 ## Instructions
 
@@ -42,7 +39,7 @@ In the popup window, select one of the installation options:
 
 - `Install from an OVHcloud template`{.action}: You can select the OS and customise the server configuration.
 - `Install one of your templates`{.action}: In order to apply a customised template, you need to have saved at least one server configuration. To do this, check the option `Save this installation` in step 4 of the installation process.
-- `Install from custom image`{.action}: This allows you to install an external image on the server. Please refer to the [BYOI guide](../bringyourownimage/) to learn about the settings of this functionality.
+- `Install from custom image`{.action}: This allows you to install an external image on the server. Please refer to the [BYOI guide](/pages/cloud/dedicated/bring-your-own-image) to learn about the settings of this functionality.
 
 > [!primary]
 >
@@ -87,7 +84,7 @@ In the new window, enter an ID (a name of your choice) and the key itself (of ty
 
 ![Customise the partition configuration](images/SSH_12.png){.thumbnail}
 
-For a detailed explanation on how to generate SSH keys, please refer to [this guide](../creating-ssh-keys-dedicated/).
+For a detailed explanation on how to generate SSH keys, please refer to [this guide](/pages/cloud/dedicated/creating-ssh-keys-dedicated).
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -115,13 +112,13 @@ ssh root@IPv4_of_your_server
 ssh ubuntu@reference_name_of_your_server
 ```
 
-You can learn more about SSH in [this guide](../ssh-introduction/).
+You can learn more about SSH in [this guide](/pages/cloud/dedicated/ssh_introduction).
 
 #### Windows
 
 Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
 
-Please also refer to our guide on [Configuring a new Windows Server installation](https://docs.ovh.com/au/en/dedicated/windows-first-config-dedicated/).
+Please also refer to our guide on [Configuring a new Windows Server installation](/pages/cloud/dedicated/windows_first_config).
 
 ### Restarting your dedicated server <a name="reboot"></a>
 
@@ -137,9 +134,9 @@ However, you can carry out a "hard reboot" at any time in your [OVHcloud Control
 
 ### Securing your dedicated server
 
-As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](https://docs.ovh.com/au/en/dedicated/securing-a-dedicated-server/).
+As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. You can learn more about securing your server in [this guide](/pages/cloud/dedicated/securing-a-dedicated-server).
 
-If your server runs Windows, use [this guide](https://docs.ovh.com/au/en/dedicated/firewall-windows/) instead.
+If your server runs Windows, use [this guide](/pages/cloud/dedicated/activate-port-firewall-soft-win) instead.
 
 ### OVHcloud Monitoring <a name="monitoring-server"></a> 
 
@@ -157,7 +154,7 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 
 Click on `Confirm`{.action} to update your monitoring configuration.
 
-You can find more information about OVHcloud Monitoring in [this guide](../monitoring-ip-ovh/).
+You can find more information about OVHcloud Monitoring in [this guide](/pages/cloud/dedicated/network_ip_monitoring).
 
 ### Network configuration
 
@@ -167,35 +164,35 @@ Network bridging is the action taken by network equipment to create an aggregate
 
 The Network Bridge configuration is most commonly used in the context of virtualisation, to allow each Virtual Machine to have its own public IP address.
 
-For more information on network bridging, please refer to our guide: [Network Bridging](../network-bridging/).
+For more information on network bridging, please refer to our guide: [Network Bridging](/pages/cloud/dedicated/network_bridging).
 
 #### IP aliasing
 
 IP aliasing is the process of associating two or more IP addresses to the same network interface. This allows your server to establish multiple connections to a network, each serving a different purpose.
 
-For detailed instructions on how to configure IP aliasing, please refer to [this guide](../network-ipaliasing).
+For detailed instructions on how to configure IP aliasing, please refer to [this guide](/pages/cloud/dedicated/network_ipaliasing).
 
 #### IPv6 configuration
 
-All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](../network-ipv6/).
+All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](/pages/cloud/dedicated/network_ipv6).
 
 ### Rescue mode
 
 For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
-Please refer to the [rescue mode guide](../ovh-rescue/).
+Please refer to the [rescue mode guide](/pages/cloud/dedicated/rescue_mode).
 
 ### Access using IPMI
 
 OVHcloud deploys all dedicated servers with an IPMI (Intelligent Platform Management Interface) console which runs in your browser or from a Java applet, and enables you to connect directly to your server even if it has no network connection. This makes it a useful tool for troubleshooting issues that may have taken your server offline.
 
-For more information, please refer to our guide: [Using the IPMI with dedicated servers](../use-ipmi-dedicated-servers).
+For more information, please refer to our guide: [Using the IPMI with dedicated servers](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers).
 
 ### Backup storage
 
 OVHcloud dedicated servers have an access-controlled storage space as a gratuitous service option. It is best used as a complementary backup option in case the server itself suffers data loss.
 
-To activate and use the backup storage, please refer to [this guide](../using-backup-storage/).
+To activate and use the backup storage, please refer to [this guide](/pages/cloud/dedicated/services_backup_storage).
 
 ## Go further
 

@@ -1,9 +1,6 @@
 ---
 title: How to create a VLAN
-slug: creation-vlan
 excerpt: Find out how to create VLANs in your vRack
-section: OVHcloud Features
-order: 02
 updated: 2022-02-07
 ---
 

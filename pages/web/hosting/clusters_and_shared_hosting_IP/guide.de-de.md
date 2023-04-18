@@ -1,9 +1,6 @@
 ---
 title: 'Verzeichnis von IP-Adressen für die Webhosting Cluster'
 excerpt: 'Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu verwenden ist'
-slug: verzeichnis-der-ip-adressen-web-hosting-cluster
-section: 'Webhosting-Konfiguration'
-order: 01
 updated: 2021-01-08
 ---
 
@@ -972,10 +969,10 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 ## Weiterführende Informationen
 
-[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/)
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web/hosting/multisites_configure_multisite)
 
-[Website mit SSL-Zertifikat auf HTTPS umstellen](../website-umstellen-https-ssl)
+[Website mit SSL-Zertifikat auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website)
 
-[Optimierung der Performance Ihrer Website](../webhosting_optimierung_der_performance_ihrer_webseite)
+[Optimierung der Performance Ihrer Website](/pages/web/hosting/optimise_your_website_performance)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,9 +1,7 @@
 ---
 title: How to connect an ISO image to a VM
 excerpt: How do you connect an ISO image to a virtual machine?
-slug: connect_iso_to_vm
 legacy_guide_number: g1438
-section: Getting started
 updated: 2022-01-11
 ---
 

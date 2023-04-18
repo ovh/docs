@@ -1,9 +1,6 @@
 ---
 title: 'Migrating a Gmail account to an OVHcloud email account via the OVH Mail Migrator'
-slug: migrate-gmail-via-ovh-mail-migrator
 excerpt: 'Find out how to migrate your Gmail accounts to OVHcloud using our OVH Mail Migrator tool'
-section: 'Account migration'
-order: 04
 updated: 2020-03-09
 ---
 
@@ -79,7 +76,7 @@ The migration tracking window (below) will then appear. You can leave it open to
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-If it appears, go to your Gmail account mailbox and check if you have received an email with the subject **“Critical security alert”**. This is a security measure put in place by Gmail. To resolve this situation, follow our guide on [authorising less secure connections on Gmail](../migrate-gmail-via-ovh-mail-migrator/gmail-security).
+If it appears, go to your Gmail account mailbox and check if you have received an email with the subject **“Critical security alert”**. This is a security measure put in place by Gmail. To resolve this situation, follow our guide on [authorising less secure connections on Gmail](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_ommgmail-security).
 
 After you have **authorised less secure connections** on Gmail, you will need to relaunch the migration.
 
@@ -166,6 +163,6 @@ The migration tracking window will then open. You can leave it open to track the
 
 ## Go further
 
-[Authorising less secure connections on Gmail](../migrate-gmail-via-ovh-mail-migrator/gmail-security)
+[Authorising less secure connections on Gmail](/pages/web/microsoft-collaborative-solutions/migrate_gmail_to_ovhcloud_by_ommgmail-security)
 
 Join our community of users on <https://community.ovh.com/en/>.

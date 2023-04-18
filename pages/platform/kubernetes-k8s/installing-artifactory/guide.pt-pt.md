@@ -1,10 +1,8 @@
 ---
 title: Deploying Artifactory on an OVHcloud Managed Kubernetes cluster
-slug: installing-artifactory
 excerpt: 'Find out how to install JFrog Artifactory on an OVHcloud Managed Kubernetes cluster'
-section: Tutorials
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/kubernetes/installing-artifactory/'
+    canonical: '/pages/platform/kubernetes-k8s/installing-artifactory'
 updated: 2022-10-17
 ---
 
@@ -39,8 +37,8 @@ updated: 2022-10-17
 ## Requirements 
 
 - An OVHcloud Managed Kubernetes cluster
-- The Helm client installed and configured. For more information, follow this OVHcloud tutorial: [Installing Helm on OVHcloud Managed Kubernetes](../installing-helm/).
-- The `kubectl` client installed and configured. For more information, follow this OVHcloud tutorial: [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](../configuring-kubectl/)
+- The Helm client installed and configured. For more information, follow this OVHcloud tutorial: [Installing Helm on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/installing-helm).
+- The `kubectl` client installed and configured. For more information, follow this OVHcloud tutorial: [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](/pages/platform/kubernetes-k8s/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster)
 
 ## Instructions
 
@@ -232,6 +230,6 @@ For more details on how to use the JFrog Artifactory, read the [official documen
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../).
+To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/pt/kubernetes/).
 
 Join our [community of users](https://community.ovh.com/en/).

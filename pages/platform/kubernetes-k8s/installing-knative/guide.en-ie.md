@@ -1,9 +1,6 @@
 ---
 title: Run Serverless containers on OVHcloud Managed Kubernetes with Knative
-slug: installing-knative
 excerpt: Find out how to install Knative on OVHcloud Managed Kubernetes and deploy your first serverless containers
-section: Serverless
-order: 1
 updated: 2023-01-02
 ---
 
@@ -65,7 +62,7 @@ Knative reached the 1.0 milestone. To celebrate this achievement, in this tutori
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/platform/kubernetes-k8s/deploying-hello-world) documentation.
 
 ## Instructions
 
@@ -302,7 +299,7 @@ kubectl patch configmap/config-domain \
   --patch '{"data":{"knative.my-website.com":""}}'
 ```
 
-For more information about DNS on OVHcloud, please read our guide on [how to configure a DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+For more information about DNS on OVHcloud, please read our guide on [how to configure a DNS zone](/pages/web/domains/dns_zone_edit).
 
 ### Deploying an application
 

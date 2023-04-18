@@ -1,9 +1,6 @@
 ---
 title: "Gérer l'espace de stockage d'un compte e-mail"
-slug: manage-email-quota
 excerpt: "Découvrez comment gérer et optimiser l'espace de stockage d'une adresse e-mail "
-section: 'Diagnostic'
-order: 02
 updated: 2022-11-17
 ---
 
@@ -122,24 +119,24 @@ Vous trouverez ci-dessous une liste non-exhaustive des guides de configuration p
 > **Emails (MXplan)**
 >>
 >> Configuration d'un compte MXplan sur **Windows** :<br><br>
->> - [Courrier sur Windows 10](https://docs.ovh.com/ca/fr/emails/configuration-courrier-sur-windows-10/) (inclus avec Windows)<br>
->> - [Outlook pour Mxplan](https://docs.ovh.com/ca/fr/emails/configuration-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/ca/fr/emails/configuration-email-configuration-pour-thunderbird/) (gratuit)<br><br>
+>> - [Courrier sur Windows 10](/pages/web/emails/how_to_configure_windows_10) (inclus avec Windows)<br>
+>> - [Outlook pour Mxplan](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows) (gratuit)<br><br>
 >> Configuration d'un compte MXplan sur **macOS** :<br><br>
->> - [Mail](https://docs.ovh.com/ca/fr/emails/guide-configuration-mail-de-mac-el-capitan/) (inclus avec macOS)<br>
->> - [Outlook](https://docs.ovh.com/ca/fr/emails/configuration-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/ca/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/) (gratuit)<br>
+>> - [Mail](/pages/web/emails/how_to_configure_mail_macos) (inclus avec macOS)<br>
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016-mac/)<br>
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac) (gratuit)<br>
 >>
 > **Exchange**
 >>
 >> Configuration d'un compte Exchange sur **Windows** :<br><br>
->> - [Courrier sur Windows 10](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-courrier-windows-10/) (inclus avec Windows)<br>
->> - [Outlook](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-windows/)<br>
->> - [Thunderbird](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird/) (gratuit)<br><br>
+>> - [Courrier sur Windows 10](/pages/web/microsoft-collaborative-solutions/how_to_configure_windows_10) (inclus avec Windows)<br>
+>> - [Outlook](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016)<br>
+>> - [Thunderbird](/pages/web/microsoft-collaborative-solutions/how_to_configure_thunderbird) (gratuit)<br><br>
 >> Configuration d'un compte Exchange sur **macOS** :<br><br>
->> - [Mail](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-mail-macos/) (inclus avec macOS)<br>
->> - [Outlook](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-outlook-2016-mac/)<br>
->> - [Thunderbird](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird-mac/) (gratuit)<br>
+>> - [Mail](/pages/web/microsoft-collaborative-solutions/how_to_configure_mail_macos) (inclus avec macOS)<br>
+>> - [Outlook](/pages/web/microsoft-collaborative-solutions/how_to_configure_outlook_2016_mac)<br>
+>> - [Thunderbird](/pages/web/microsoft-collaborative-solutions/how_to_configure_thunderbird-mac/) (gratuit)<br>
 >>
 
 Une fois votre logiciel de messagerie installé, suivez les instructions ci-dessous pour préparer le dossier d'archive sur votre logiciel de messagerie.
@@ -169,7 +166,7 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 > [!tabs]
 > **Emails (MXplan)**
 >>
->> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50 Go](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/) ». 
+>> Si la capacité de votre compte e-mail est déjà à son maximum de 5 Go, vous pouvez opter pour une migration vers une offre [**Hosted Exchange** de 50 Go](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/). Pour cela, nous vous invitons à commander l'offre qui vous convient et suivre notre documentation « [Migrer une adresse e-mail MX Plan vers un compte Exchange](/pages/web/microsoft-collaborative-solutions/migration_control_panel) ». 
 >>
 > **Exchange**
 >>
@@ -180,11 +177,11 @@ Sélectionnez, dans le menu ci-dessous, l'offre actuelle de votre compte e-mail 
 
 ## Aller plus loin
 
-[Migrer une adresse e-mail MX Plan vers un compte Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/)
+[Migrer une adresse e-mail MX Plan vers un compte Exchange](/pages/web/microsoft-collaborative-solutions/migration_control_panel)
 
-[Migrer manuellement votre adresse e-mail](https://docs.ovh.com/ca/fr/emails/migrer-ses-adresses-email-manuellement/)
+[Migrer manuellement votre adresse e-mail](/pages/web/emails/manual_email_migration)
 
-[Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/migration-email-platform/)
+[Migrer vos adresses e-mail d’une plateforme e-mail OVHcloud vers une autre](/pages/web/microsoft-collaborative-solutions/migration_platform)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 

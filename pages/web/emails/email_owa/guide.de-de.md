@@ -1,9 +1,6 @@
 ---
 title: "E-Mail-Accounts über Outlook Web App (OWA) verwenden"
-slug: verwendung-owa
 excerpt: 'So verwenden Sie Ihre E-Mail-Adressen über OWA Webmail'
-section: 'E-Mail Clients'
-order: 1
 updated: 2020-02-25
 ---
 
@@ -21,4 +18,4 @@ Um über einen Webbrowser von überall aus auf einen Account zuzugreifen, stellt
 
 Unser [Webmail](https://www.ovh.de/mail/) ist die gemeinsame Loginseite zum jeweiligen Interface für alle aktiven E-Mail-Accounts von MX Plan, [Email Pro](https://www.ovhcloud.com/de/emails/email-pro/) und [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/).
 
-Weitere Informationen zu den allgemeinen Funktionen von OWA finden Sie in [dieser Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_verwendung_der_outlook_web_app/).
+Weitere Informationen zu den allgemeinen Funktionen von OWA finden Sie in [dieser Anleitung](/pages/web/microsoft-collaborative-solutions/owa_user_guide).

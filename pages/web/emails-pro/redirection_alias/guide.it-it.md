@@ -1,11 +1,8 @@
 ---
 title: 'Utilizzare gli alias e i reindirizzamenti email'
 excerpt: 'Come gestire gli alias e i reindirizzamenti email'
-slug: email-redirection-guide
-section: 'Funzionalità degli indirizzi email'
-order: 01
 routes:
-  canonical: "https://docs.ovh.com/it/emails/servizio_email_configura_il_reindirizzamento_delle_tue_email/"
+  canonical: "/pages/web/emails/feature_redirections"
 updated: 2020-05-20
 ---
 
@@ -62,4 +59,4 @@ Ad esempio, il tuo indirizzo email è **john.smith@mydomain.ovh** e il tuo alias
 
 ## Procedura
 
-Seguite la nostra guida [Utilizzare gli alias e i reindirizzamenti email](https://docs.ovh.com/it/emails/servizio_email_configura_il_reindirizzamento_delle_tue_email/) nella sezione "Hosted email - MX Plan".
+Seguite la nostra guida [Utilizzare gli alias e i reindirizzamenti email](/pages/web/emails/feature_redirections) nella sezione "Hosted email - MX Plan".

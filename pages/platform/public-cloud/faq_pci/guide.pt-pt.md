@@ -1,8 +1,5 @@
 ---
 title: FAQ Public Cloud OVHcloud
-slug: public-cloud-faq
-section: Introdução
-order: 3
 updated: 2022-12-01
 ---
 
@@ -18,25 +15,25 @@ updated: 2022-12-01
 
 A ligação faz-se graças a um par de chaves SSH a configurar aquando da criação da sua instância Public Cloud.
 
-Sugerimos que consulte o guia [Criação e conexão a uma primeira instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/).
+Sugerimos que consulte o guia [Criação e conexão a uma primeira instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps).
 
 ### Perdi ou desejo mudar a minha chave SSH, como fazer?
 
 Se já não pode ligar-se após a perda da sua chave privada, deverá alterar a chave pública da sua instância passando esta última em modo "Rescue".
 
-Pode consultar o guia [Alterar a chave SSH em caso de perda](https://docs.ovh.com/pt/public-cloud/alterar_a_chave_ssh_em_caso_de_perda/).
+Pode consultar o guia [Alterar a chave SSH em caso de perda](/pages/platform/public-cloud/replacing_lost_ssh_key).
 
 ### Quais são as possibilidades de backup da minha instância?
 
 Na Área de Cliente OVHcloud, pode criar uma cópia de segurança a qualquer momento. que lhe permite restaurar a sua instância numa configuração anterior ou criar uma nova instância.
 
-Pode consultar o guia [Criar uma cópia de segurança de uma instância](https://docs.ovh.com/pt/public-cloud/efetuar_backup_de_uma_instancia/).
+Pode consultar o guia [Criar uma cópia de segurança de uma instância](/pages/platform/public-cloud/save_an_instance).
 
 ### Como criar e gerir utilizadores OpenStack?  
 
 Para poder utilizar as API Horizon ou OpenStack, deverá criar um utilizador OpenStack. Pode criar um número ilimitado.
 
-Sugerimos que consulte o guia [Criar e eliminar um utilizador OpenStack](https://docs.ovh.com/pt/public-cloud/criar-e-eliminar-um-utilizador-openstack/).
+Sugerimos que consulte o guia [Criar e eliminar um utilizador OpenStack](/pages/platform/public-cloud/create_and_delete_a_user).
 
 ### Como funciona a faturação do Public Cloud?
 
@@ -44,7 +41,7 @@ A faturação ocorre entre o dia 1 e dia 5 de cada mês e tem em conta o consumo
 Tenha em conta que todas as instâncias são faturadas até serem eliminadas da Área de Cliente OVHcloud.
 Pode seguir o seu consumo graças a projeções obtidas através do histórico das suas utilizações. Além isso, também é possível escolher uma faturação separada para cada projeto Public Cloud, o que permite uma eventual refaturação junto da sua empresa.
 
-Para passar de um modo de faturação para outro, consulte o nosso manual [Passar de uma faturação à hora para uma faturação ao mês](https://docs.ovh.com/pt/public-cloud/mudar-tipo-faturacao-public-cloud/).
+Para passar de um modo de faturação para outro, consulte o nosso manual [Passar de uma faturação à hora para uma faturação ao mês](/pages/platform/public-cloud/changing_hourly_monthly_billing).
 
 ### Como fazer evoluir as minhas instâncias no caso de ter necessidade de mais ou menos recursos?
 
@@ -59,7 +56,7 @@ Sim, as imagens cloud fornecidas pela OVHcloud integram os scripts cloud-init qu
 
 Pode criar, quando desejar e de forma ilimitada, instâncias de Backup dos seus servidores. Estas cópias de segurança são armazenadas e faturadas da mesma forma que as imagens em "Private Image". Através das API OpenStack, terá a possibilidade de as descarregar da infraestrutura OVHcloud ou para outros projetos.
 
-Pode consultar o guia [Criar uma cópia de segurança de uma instância](https://docs.ovh.com/pt/public-cloud/efetuar_backup_de_uma_instancia/).
+Pode consultar o guia [Criar uma cópia de segurança de uma instância](/pages/platform/public-cloud/save_an_instance).
 
 ### Posso aumentar, de forma dinâmica, o tamanho de um volume continuando a escrever no disco?
 
@@ -73,7 +70,7 @@ Sim, o limite é de 25 volumes adicionais por instância.
 
 A OVHcloud protege toda a sua infraestrutura graças à sua solução anti-DDoS exclusiva. Além disso, tem a possibilidade de adicionar os grupos de segurança OpenStack: este equivalente de firewall é gerido diretamente ao nível da infraestrutura da OpenStack, além das suas instâncias.
 
-Pode consultar o guia [Configurar um grupo de segurança](https://docs.ovh.com/pt/public-cloud/configure-security-group-horizon/).
+Pode consultar o guia [Configurar um grupo de segurança](/pages/platform/public-cloud/setup_security_group).
 
 Estas proteções, associadas às que pode aplicar aos seus servidores, irão permitir-lhe otimizar a fiabilidade da sua implementação.
 
@@ -82,13 +79,13 @@ Estas proteções, associadas às que pode aplicar aos seus servidores, irão pe
 O Public Cloud integra uma solução SDN (software-defined network). que permite criar redes privadas de forma dinâmica e ligá-las às instâncias a partir da Área de Cliente ou através da API.
 Estas redes privadas baseiam-se na tecnologia vRack da OVHcloud comum aos outros serviços da empresa, tais como o Private Cloud ou os servidores dedicados. Assim, oferece a possibilidade de fazer comunicar o conjunto dos seus elementos de infraestrutura na OVHcloud, de forma isolada e segura.
 
-Sugerimos que consulte o guia [Configuração do vRack Public Cloud](https://docs.ovh.com/pt/publiccloud/network-services/public-cloud-vrack/).
+Sugerimos que consulte o guia [Configuração do vRack Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack).
 
 A rede privada dispõe por predefinição das proteções de rede nativas do Openstack. que incluem diferentes mecanismos como a proteção contra o spoofing de IP.<br>
 Do lado das instâncias, isto pode traduzir-se em bloqueios de pacotes de rede consoante a sua utilização (pfSense, router, protocolo CARP, etc..).
 
 Dependendo das suas necessidades, terá de desativar a função de `Port Security` na porta ou na rede privada.
-Pode consultar o guia de [gestão das regras de firewall e port security nas redes que utilizam OpenStack CLI](https://docs.ovh.com/pt/public-cloud/firewall_security_pci/).
+Pode consultar o guia de [gestão das regras de firewall e port security nas redes que utilizam OpenStack CLI](/pages/platform/public-cloud/security_group_private_network).
 
 Também pode consultar todos os detalhes sobre [documentação OpenStack](https://docs.openstack.org/developer/dragonflow/specs/mac_spoofing.html) ou sobre [superuser.openstack.org](https://superuser.openstack.org/articles/managing-port-level-security-openstack/).
 
@@ -96,7 +93,7 @@ Também pode consultar todos os detalhes sobre [documentação OpenStack](https:
 
 Os IP públicos são atribuídos automaticamente às instâncias e não podem ser alterados. Para obter o controlo sobre o IP público de uma instância, aconselhamos que utilize um endereço Additional IP. Desta forma, qualquer que seja o endereço público atribuído automaticamente à instância, tem a possibilidade de adicionar um ou vários Additional IP à sua instância.
 
-Para mais informações, consulte o guia [Adicionar um Additional IP](https://docs.ovh.com/pt/publiccloud/network-services/buy-additional-ip/).
+Para mais informações, consulte o guia [Adicionar um Additional IP](/pages/platform/network-services/additional-ip-buy).
 
 ### Como verificar se a minha instância é vulnerável à falha MDS?
 
@@ -108,7 +105,7 @@ cat /sys/devices/system/cpu/vulnerabilities/mds
 
 Se o resultado for `Vulnerable`, não tenha medo nenhum, o hipervisor subjacente protege-o.
 
-No entanto, é possível mitigar esta falha diretamente na sua instância fazendo um "hard" reboot da sua instância, quer [através da Área de Cliente OVHcloud](https://docs.ovh.com/pt/public-cloud/comecar-com-uma-instancia-public-cloud/), quer com um comando como este:
+No entanto, é possível mitigar esta falha diretamente na sua instância fazendo um "hard" reboot da sua instância, quer [através da Área de Cliente OVHcloud](/pages/platform/public-cloud/first_steps_with_public_cloud_instance), quer com um comando como este:
 
 ```bash
 openstack server reboot --hard $serverID

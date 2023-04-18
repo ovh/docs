@@ -1,9 +1,6 @@
 ---
 title: 'Configurar una cuenta Exchange en la aplicación Correo de Windows 10'
-slug: configuracion-correo-windows-10
 excerpt: 'Cómo configurar una cuenta Exchange en la aplicación Correo de Windows 10'
-section: 'Configuración en el ordenador'
-order: 03
 updated: 2018-04-04
 ---
 
@@ -62,6 +59,6 @@ OVHcloud ofrece una aplicación web que tiene [funciones colaborativas](https://
 
 ## Más información
 
-[Configurar una cuenta de correo electrónico en la aplicación Correo de Windows 10](https://docs.ovh.com/us/es/emails/configuracion-correo-windows-10/){.external}
+[Configurar una cuenta de correo electrónico en la aplicación Correo de Windows 10](/pages/web/emails/how_to_configure_windows_10){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

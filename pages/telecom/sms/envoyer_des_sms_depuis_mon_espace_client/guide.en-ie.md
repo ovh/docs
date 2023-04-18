@@ -1,8 +1,6 @@
 ---
 title: Sending SMS messages via the OVHcloud Control Panel
-slug: send_sms_messages_via_control_panel
 excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
-section: Sending SMS messages
 updated: 2022-08-05
 ---
 
@@ -40,10 +38,10 @@ For further information on how to create a sender, please refer to [Step 3: Choo
 You can also send SMS messages to multiple recipients. There are two methods for doing this:
 
 - Via a list of recipients in .csv format, via the “Manage recipients” button.
-For further information on this, you can refer to our [guide on SMS recipient lists](../list_of_sms_recipients/).
+For further information on this, you can refer to our [guide on SMS recipient lists](/pages/telecom/sms/liste_de_destinataire_sms).
 
 - By creating an address book (3). You can do this directly via the OVHcloud Control Panel, or import one as a .csv or .txt file.
-Feel free to refer to our [guide on managing SMS address books](../manage-sms-address-books/) for further information.
+Feel free to refer to our [guide on managing SMS address books](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms) for further information.
 
 ### Step 2: Compose your SMS message.
 

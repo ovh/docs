@@ -1,10 +1,8 @@
 ---
 title: 'Einen ESXi-Server in einem vSAN-Cluster hinzufügen (EN)'
-slug: vmware-vsan-add-host
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/vmware-vsan-add-host/'
+    canonical: '/pages/cloud/private-cloud/vmware_vsan-add-host/'
 excerpt: 'Find out how to add an ESXi server to an existing vSAN cluster'
-section: 'VMware vSphere Funktionen'
 updated: 2021-12-22
 ---
 
@@ -18,7 +16,7 @@ This guide explains how to add a new ESXi server storage to an existing vSAN clu
 
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
-- A deployed [vSan Datastore](https://docs.ovh.com/de/private-cloud/vmware-vsan/)
+- A deployed [vSan Datastore](/pages/cloud/private-cloud/vmware_vsan)
 
 ## Instructions
 

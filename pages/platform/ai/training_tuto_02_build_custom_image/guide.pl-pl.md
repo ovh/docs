@@ -1,11 +1,8 @@
 ---
 title: AI Training - Tutorial -  Build & use custom Docker image
-slug: training/build-use-custom-image
 excerpt: Explanations on how to build and use your own custom image
-section: AI Training - Tutorials
-order: 02
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/build-use-custom-image/'
+    canonical: '/pages/platform/ai/training_tuto_02_build_custom_image'
 updated: 2023-01-31
 ---
 
@@ -19,7 +16,7 @@ This tutorial covers the process of building your own job image for specific nee
 
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](https://docs.ovh.com/pl/publiccloud/ai/users)
+-   a [user for AI Training](/pages/platform/ai/gi_01_manage_users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building an image and a [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
@@ -142,7 +139,7 @@ Pushing your image to a registry is needed in order for AI Training to pull it.
 
 AI Training provides a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
 
-If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Training project](https://docs.ovh.com/pl/publiccloud/ai/training/add-private-registry) before using it.
+If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Training project](/pages/platform/ai/training_guide_05_howto_add_registry) before using it.
 
 The basic commands to push a docker image to a registry is :
 
@@ -164,8 +161,8 @@ A full **Dockerfile** example about building a **Jupyter** notebook image with *
 
 ## Go further
 
-- You can also build a custom Docker image to deploy a **Streamlit** app. [Here it is](https://docs.ovh.com/pl/publiccloud/ai/deploy/build-use-streamlit-image/).
-- You can imagine deploying a Docker image for data processing and training tasks. Refer to this [tutorial](https://docs.ovh.com/pl/publiccloud/ai/training/tuto-models-comparaison-weights-and-biases/).
+- You can also build a custom Docker image to deploy a **Streamlit** app. [Here it is](/pages/platform/ai/deploy_tuto_01_streamlit).
+- You can imagine deploying a Docker image for data processing and training tasks. Refer to this [tutorial](/pages/platform/ai/training_tuto_06_models_comparaison_weights_and_biases).
 
 ## Feedback
 

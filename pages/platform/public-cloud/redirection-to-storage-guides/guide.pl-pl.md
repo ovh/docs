@@ -1,9 +1,6 @@
 ---
 title: 'Wszystkie nasze przewodniki Object Storage'
-slug: object-storage-redirection
 excerpt: "Poznaj wszystkie nasze przewodniki Object Storage High Performance i Swift"
-section: 'Object Storage'
-order: 00
 updated: 2022-03-14
 ---
 

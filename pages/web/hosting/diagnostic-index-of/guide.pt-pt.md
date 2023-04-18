@@ -1,9 +1,6 @@
 ---
 title: O que fazer em caso de página « Index of »?
 excerpt: Saiba como repor o seu site online quando exibe uma página « Index of ».
-slug: diagnostico-index-of
-section: Diagnóstico
-order: 07
 updated: 2022-05-10
 ---
 
@@ -37,7 +34,7 @@ Se uma configuração `Multisite` não estiver corretamente configurada, é poss
 
 ### Compreender a origem da página "Index of"
 
-O seu nome de domínio está ligado através da parte `Multisite`{.action} do seu alojamento a um diretório (um "`Pasta raiz`") no seu servidor [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+O seu nome de domínio está ligado através da parte `Multisite`{.action} do seu alojamento a um diretório (um "`Pasta raiz`") no seu servidor [FTP](/pages/web/hosting/ftp_connection).
 
 A página **Index of** indica que o diretório em causa não contém nenhum ficheiro **index.php** ou **index.html**. Um ficheiro deste tipo constitui o "*ponto de entrada*" do seu site.
 
@@ -45,13 +42,13 @@ Para apresentar o seu website, deverá, a partir da parte `Multisite`{.action} d
 
 > [!primary]
 >
-> Se pretender associar temporariamente o seu domínio a uma `Pasta raiz` que não contém um ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [guia](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/). Pode também proteger o acesso às suas pastas com uma [palavra-passe](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/).
+> Se pretender associar temporariamente o seu domínio a uma `Pasta raiz` que não contém um ficheiro **index.php** ou **index.html**, pode proibir a apresentação da lista de pastas do seu site seguindo este [guia](/pages/web/hosting/htaccess_what_else_can_you_do). Pode também proteger o acesso às suas pastas com uma [palavra-passe](/pages/web/hosting/htaccess_protect_directory_by_password).
 >
 > Se precisar de ajuda, recomendamos que recorra a um [[prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/)](https://partner.ovhcloud.com/pt/directory/). As nossas equipas de suporte não poderão fornecer-lhe assistência relativamente a qualquer alteração da programação interna do seu site.
 
 ### Resolver o caso mais comum de uma página "Index of"
 
-Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento por [FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/). Se o domínio não estiver associado a esta pasta, consulte a coluna `Pasta raiz` do `Multisite`{.action}.
+Importou os ficheiros do seu site **mydomain.ovh** para a pasta `www` do seu alojamento por [FTP](/pages/web/hosting/ftp_connection). Se o domínio não estiver associado a esta pasta, consulte a coluna `Pasta raiz` do `Multisite`{.action}.
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
@@ -69,7 +66,7 @@ Na nova janela:
 
 > [!primary]
 >
-> A utilização do diretório `www` como `Pasta raiz` não é, em caso algum, obrigatória. Pode instalar o seu site noutra pasta do seu [servidor FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+> A utilização do diretório `www` como `Pasta raiz` não é, em caso algum, obrigatória. Pode instalar o seu site noutra pasta do seu [servidor FTP](/pages/web/hosting/ftp_connection).
 >
 
 Na janela seguinte, clique em `Validar`{.action}.
@@ -84,11 +81,11 @@ Por fim, verifique se o seu site está a aparecer corretamente. Caso contrário,
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Resolver os erros mais frequentes associados aos módulos 1 clique](https://docs.ovh.com/pt/hosting/erros-frequentes-modulos-em-1-clique/)
+[Resolver os erros mais frequentes associados aos módulos 1 clique](/pages/web/hosting/diagnostic_errors_module1clic)
 
-[Resolver o erro “Site não instalado”](https://docs.ovh.com/pt/hosting/alojamento_web_erro_de_site_nao_instalado/)
+[Resolver o erro “Site não instalado”](/pages/web/hosting/multisites_website_not_installed)
 
-[Partilhar o alojamento entre vários sites](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/)
+[Partilhar o alojamento entre vários sites](/pages/web/hosting/multisites_configure_multisite)
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

@@ -1,9 +1,6 @@
 ---
 title: Enterprise File Storage - Concetti
-slug: netapp/concepts
 excerpt: "Scopri i principi di funzionamento dell'offerta Enterprise File Storage"
-section: Enterprise File Storage
-order: 010
 updated: 2022-04-07
 ---
 
@@ -49,7 +46,7 @@ Puoi ordinare uno o più spazi di storage tra 1TiB e 29TiB sul tuo account.
 
 Quando ordini un servizio Enterprise File Storage tra 1 e 29 TB tramite il tuo account OVHcloud, ricevi una capacity pool NetApp&#174;.
 
-L'account OVHcloud è di default il contatto amministratore, tecnico e di fatturazione del servizio. Per maggiori informazioni, consulta la nostra guida ["Gestire i contatti dei servizi OVHcloud"](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+L'account OVHcloud è di default il contatto amministratore, tecnico e di fatturazione del servizio. Per maggiori informazioni, consulta la nostra guida ["Gestire i contatti dei servizi OVHcloud"](/pages/account/customer/managing_contacts).
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.png)
 
@@ -75,7 +72,7 @@ Una volta attivata la soluzione Enterprise File Storage, è possibile creare uno
 > - La dimensione di un volume è scalabile, sia verso l'alto che verso il basso.
 >
 
-Per maggiori informazioni, consulta la guida ["Gestire i tuoi volumi"](https://docs.ovh.com/it/storage/file-storage/netapp/volumes/).
+Per maggiori informazioni, consulta la guida ["Gestire i tuoi volumi"](/pages/cloud/storage/file_storage/netapp_volumes).
 
 ### Principio di funzionamento delle ACL
 
@@ -90,7 +87,7 @@ Queste regole sono costituite da un indirizzo IP sorgente della tua rete in form
 > È possibile creare una o più regole per volume.
 >
 
-Per maggiori informazioni, consulta la guida ["Gestire le ACL di un volume"](https://docs.ovh.com/it/storage/file-storage/netapp/volume-acl/).
+Per maggiori informazioni, consulta la guida ["Gestire le ACL di un volume"](/pages/cloud/storage/file_storage/netapp_volume_acl).
 
 ### Principio di funzionamento degli Snapshot
 
@@ -106,7 +103,7 @@ Il consumo giornaliero constatato degli Snapshot è compreso tra l'1 e il 5% del
 
 ![Enterprise File Storage 4](images/Netapp_Concept_4.png)
 
-Per maggiori informazioni, consulta la guida ["Gestire gli Snapshot di un volume"](https://docs.ovh.com/it/storage/file-storage/netapp/volume-snapshots/).
+Per maggiori informazioni, consulta la guida ["Gestire gli Snapshot di un volume"](/pages/cloud/storage/file_storage/netapp_volume_snapshots).
 
 ### Limiti dell'offerta Enterprise File Storage per la fase di test esterni (Beta)
 

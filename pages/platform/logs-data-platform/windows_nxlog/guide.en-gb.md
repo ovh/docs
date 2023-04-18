@@ -1,8 +1,5 @@
 ---
 title: Sending Windows Logs with NXLog to Logs Data Platform in 15 minutes or less
-slug: windows-nxlog
-order: 06
-section: Use cases
 updated: 2023-01-16
 ---
 
@@ -17,7 +14,7 @@ At OVHcloud, we love Microsoft products too. So it is important for us to provid
 For this tutorial you will need to have completed the following steps :
 
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
-- [To create at least one Stream and get its token.](../quick-start){.ref}
+- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/quick_start){.ref}
 
 ## NXLog
 
@@ -118,7 +115,7 @@ If you want to go further, don't hesitate to fly to the [NXlog documentation](ht
 
 ## Getting Help
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/gb/en/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

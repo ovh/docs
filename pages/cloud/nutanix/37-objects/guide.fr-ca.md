@@ -1,9 +1,6 @@
 ---
 title: Mise en place de Nutanix Objects
-slug: objects
 excerpt: "Découvrez comment activer Nutanix Objects dans votre cluster"
-section: Utilisation avancée
-order: 07
 updated: 2023-03-02
 ---
 
@@ -116,7 +113,7 @@ Faites défiler la fenêtre, saisissez l'adresse du DNS OVHcloud `213.186.33.99`
 ![03 Create Public VLAN 04](images/03-create-public-vlan04.png){.thumbnail}
 
 Vos deux VLANs sont maintenant créés. Vérifiez qu'ils peuvent se connecter à Prism Element et Prism Central au travers de votre passerelle.<br> 
-Vous pouvez vous aider du [guide de remplacement de la passerelle OVHgateway](https://docs.ovh.com/ca/fr/nutanix/software-gateway-replacement/) pour remplacer la passerelle par défaut et utiliser vos VLANs.
+Vous pouvez vous aider du [guide de remplacement de la passerelle OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement) pour remplacer la passerelle par défaut et utiliser vos VLANs.
 
 ![03 Create Public VLAN 05](images/03-create-public-vlan05.png){.thumbnail}
 
@@ -217,7 +214,7 @@ Votre utilisateur est créé avec ses identifiants. Il vous est possible de reg�
 
 ### Validation et test de bon fonctionnement
 
-Pour valider le bon fonctionnement de notre stockage Object, nous allons utiliser l'outil en ligne de commande awscli d'AWS et créer un bucket. Vous pouvez vous aider de [ce guide](https://docs.ovh.com/ca/fr/storage/object-storage/s3/getting-started-with-object-storage/). 
+Pour valider le bon fonctionnement de notre stockage Object, nous allons utiliser l'outil en ligne de commande awscli d'AWS et créer un bucket. Vous pouvez vous aider de [ce guide](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage). 
 
 Cet outil est disponible sous Windows, Linux et macOS.
 

@@ -1,9 +1,6 @@
 ---
 title: Creare un backup di un volume
-slug: volume-backup
 excerpt: Come creare un backup del tuo volume Block Storage dallo Spazio Cliente OVHcloud
-section: Storage
-order: 3
 updated: 2023-03-29
 ---
 
@@ -35,7 +32,7 @@ Il Volume Snapshot e il Volume Backup ti permettono di:
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Un volume [Block Storage](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/) creato nel tuo progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/)
+- Un volume [Block Storage](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) creato nel tuo progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/)
 
 ## Procedura
 
@@ -43,7 +40,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Apri il menu `Block Storage`{.action} nella barra di navigazione a sinistra con **Storage**.
 
-A destra del volume, clicca sul pulsante `...`{.action} poi su `Crea un backup`{.action}. Non è necessario scollegare il volume dell'istanza Se vuoi scollegare il tuo volume dall'istanza, consulta questa [sezione](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/#con-linux) della guida corrispondente per Linux e questa [sezione](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/#con-windows) per Windows.
+A destra del volume, clicca sul pulsante `...`{.action} poi su `Crea un backup`{.action}. Non è necessario scollegare il volume dell'istanza Se vuoi scollegare il tuo volume dall'istanza, consulta questa [sezione](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-linux) della guida corrispondente per Linux e questa [sezione](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-windows) per Windows.
 
 ![Volume Backup - creazione](images/volumebackup01.png){.thumbnail}
 
@@ -84,16 +81,16 @@ Una volta richiesta la creazione del Volume Backup, verrà aggiunto alla lista.
 
 Clicca sul pulsante `...`{.action} per `Eliminare`{.action} o `Crea un volume`{.action} a partire dal volume Snapshot o dal volume Backup corrispondente.
 
-Per maggiori informazioni, consulta la [nostra guida sulla creazione di un volume](https://docs.ovh.com/it/public-cloud/creare-volume-da-backup/).
+Per maggiori informazioni, consulta la [nostra guida sulla creazione di un volume](/pages/platform/public-cloud/create-volume-from-snapshot).
 
 ![Crea un volume da un backup](images/volumebackup05.png){.thumbnail}
 
 ## Per saperne di più
 
-[Creare un volume a partire da un backup](https://docs.ovh.com/it/public-cloud/creare-volume-da-backup/)
+[Creare un volume a partire da un backup](/pages/platform/public-cloud/create-volume-from-snapshot)
 
-[Creare e configurare un disco aggiuntivo su un'istanza](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/)
+[Creare e configurare un disco aggiuntivo su un'istanza](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
-[Aumenta la dimensione di un disco aggiuntivo](https://docs.ovh.com/it/public-cloud/aumenta_la_spazio_del_tuo_disco_aggiuntivo/)
+[Aumenta la dimensione di un disco aggiuntivo](/pages/platform/public-cloud/increase_the_size_of_an_additional_disk)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

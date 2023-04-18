@@ -1,10 +1,8 @@
 ---
 title: 'Usar um template OVF Windows e SQL Server'
-slug: usar-template-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/pt/private-cloud/usar-template-ovh/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: 'Saiba como usar um template Windows e SQL Server'
-section: 'Serviços e opções OVHcloud'
 updated: 2020-11-18
 ---
 

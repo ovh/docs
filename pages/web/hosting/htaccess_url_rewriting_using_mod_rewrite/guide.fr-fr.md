@@ -1,9 +1,6 @@
 ---
 title: "Tutoriel - Réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess"
-slug: htaccess-reecriture-url-mod-rewrite
 excerpt: "Découvrez comment réécrire l'URL d'accès à votre site grâce au mod_rewrite via le fichier .htaccess"
-section: Réécriture et authentification
-order: 03
 updated: 2022-12-22
 ---
 
@@ -49,7 +46,7 @@ Le fichier « .htaccess » dans lequel vous allez configurer le « **mod_rewrite
 
 Les paramètres définis dans un fichier « .htaccess » s'appliquent au répertoire où il est présent ainsi qu'à tous ses sous-répertoires.
 
-Pour éditer (ou créer) des répertoires, connectez-vous à l'espace FTP de votre hébergement. Au besoin, aidez-vous du guide « [Accéder à mon espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) ».
+Pour éditer (ou créer) des répertoires, connectez-vous à l'espace FTP de votre hébergement. Au besoin, aidez-vous du guide « [Accéder à mon espace de stockage](/pages/web/hosting/ftp_connection) ».
 
 Retrouvez ci-après quelques exemples parmi les plus courants d'utilisation du « **mod_rewrite** » d'Apache. Certains d'entre eux peuvent également favoriser le référencement SEO de votre site web.
 
@@ -93,7 +90,7 @@ Cette réécriture d'URL peut favoriser le référencement SEO de votre site web
 
 Lorsque vous utilisez un hébergement mutualisé OVHcloud, votre nom de domaine (par exemple **domain.tld**) est déclaré en `Multisites` pour afficher le contenu d'un dossier cible que l'on appelle aussi `dossier racine`. Vous pouvez personnaliser le nom de ce `dossier racine`.
 
-Consultez notre guide sur la [configuration d'un multisite sur un hébergement mutualisé](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) si vous souhaitez plus d'informations sur le sujet.
+Consultez notre guide sur la [configuration d'un multisite sur un hébergement mutualisé](/pages/web/hosting/multisites_configure_multisite) si vous souhaitez plus d'informations sur le sujet.
 
 Certains utilisateurs ne placent pas leur site web directement à la base du `dossier racine`. Ils créent alors un sous-dossier (par exemple : **MyWebsite**) dans leur `dossier racine` pour y placer leur site web.
 
@@ -116,7 +113,7 @@ Dans notre exemple, cela force l'adresse de votre site à être de type **http:/
 
 Les certificats SSL permettent de chiffrer les échanges effectués en HTTP avec votre site web. Cela empêche des personnes ou des robots malveillants de collecter les données échangées entre le site et le visiteur, comme des coordonnées bancaires par exemple.
 
-Si vous ne disposez pas d'un certificat SSL, consultez notre guide sur la [gestion d'un certificat SSL sur un hébergement mutualisé OVHcloud](https://docs.ovh.com/fr/hosting/les-certificats-ssl-sur-les-hebergements-web/).
+Si vous ne disposez pas d'un certificat SSL, consultez notre guide sur la [gestion d'un certificat SSL sur un hébergement mutualisé OVHcloud](/pages/web/hosting/ssl_on_webhosting).
 
 Certains de vos visiteurs peuvent oublier de saisir l'URL d'accès à votre site en **https://** : cela représente un risque non négligeable pour les données échangées entre votre site web et leurs navigateurs Internet.
 
@@ -132,9 +129,9 @@ Dans notre exemple, toutes les requêtes effectuées avec une URL en « **http:/
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Bloquer l'accès à mon site web pour certaines adresses IP via un fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-bloquer-certaines-ip-au-niveau-de-mon-site/)
+[Bloquer l'accès à mon site web pour certaines adresses IP via un fichier .htaccess](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Protéger l'interface d'administration de votre site par un fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/)
+[Protéger l'interface d'administration de votre site par un fichier .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 

@@ -1,8 +1,6 @@
 ---
 title: "Récupérer le numéro de série d'un disque dur"
-slug: find-disk-serial-number
 excerpt: "Découvrez comment récupérer le numéro de série d'un disque dur pour remplacer celui-ci"
-section: 'RAID & disques'
 updated: 2018-08-21
 ---
 
@@ -73,7 +71,7 @@ Le périphérique sera détecté par le système d'exploitation et affiché comm
 
 ### Récupérer le numéro de série d'un disque (RAID matériel)
 
-Pour un aperçu détaillé de ces commandes et de la façon de tester vos disques durs, reportez-vous à [ce guide (contrôleur RAID LSI)](../raid-hard/){.external}.
+Pour un aperçu détaillé de ces commandes et de la façon de tester vos disques durs, reportez-vous à [ce guide (contrôleur RAID LSI)](/pages/cloud/dedicated/raid_hard){.external}.
 
 
 #### Contrôleur MegaRaid
@@ -163,7 +161,7 @@ L'ID du périphérique RAID sera affiché comme suit: `/dev/sda` = 1er RAID, `/d
 
 Le contrôleur RAID LSI utilise un module appelé `sg-map` qui mappe les périphériques dans `/dev/sgX`, « X » correspondant au numéro définissant le périphérique.
 
-Vous pouvez vous référer à [ce guide (contrôleur RAID LSI)](../raid-hard/){.external} pour déterminer quel disque dur correspond à un périphérique « sg » désigné.
+Vous pouvez vous référer à [ce guide (contrôleur RAID LSI)](/pages/cloud/dedicated/raid_hard){.external} pour déterminer quel disque dur correspond à un périphérique « sg » désigné.
 
 Une fois que vous avez trouvé ce périphérique lié au disque dur que vous voulez analyser, utilisez la commande suivante :
 

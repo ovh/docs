@@ -1,10 +1,8 @@
 ---
 title: 'Installare un template OVF Windows e SQL Server'
-slug: installazione-template-ovhcloud
 routes:
-    canonical: 'https://docs.ovh.com/it/private-cloud/installazione-template-ovh/'
+    canonical: '/pages/cloud/private-cloud/ovf_template'
 excerpt: 'Scopri come installare un template OVF Windows e SQL Server'
-section: 'Servizi e opzioni OVHcloud'
 updated: 2020-11-18
 ---
 

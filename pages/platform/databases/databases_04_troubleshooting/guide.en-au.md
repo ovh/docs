@@ -1,9 +1,6 @@
 ---
 title: Troubleshooting
 excerpt: Troubleshooting tips for Public Cloud Databases
-slug: troubleshooting
-section: General guides
-order: 040
 updated: 2021-09-27
 ---
 

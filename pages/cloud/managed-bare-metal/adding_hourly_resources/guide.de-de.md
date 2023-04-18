@@ -1,10 +1,8 @@
 ---
 title: 'Stündliche Ressourcen hinzufügen'
-slug: stuendliche-ressourcen-hinzufuegen
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/stuendliche-ressourcen-hinzufuegen/'
 excerpt: 'Erfahren Sie hier, wie Sie stündlich abgerechnete Ressourcen hinzufügen'
-section: OVHcloud Funktionen
 updated: 2020-12-15
 ---
 

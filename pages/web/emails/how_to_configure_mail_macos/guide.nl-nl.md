@@ -1,9 +1,7 @@
 ---
 deprecated: true
 title: 'Configuratie van uw e-mailadres op Mail van macOS'
-slug: configuratie-mail-macos
 excerpt: 'Leer hoe u een MX Plan-adres kunt configureren in Mail van macOS El Capitan, Sierra, en High Sierra'
-section: Apple
 updated: 2022-06-13
 ---
 
@@ -94,9 +92,9 @@ OVH heeft ook een web-app die u kunt gebruiken om vanuit uw browser toegang te k
 
 ## Verder
 
-[Configuratie van E-mail Pro in macOS Mail](https://docs.ovh.com/nl/emails-pro/configureer-email-pro-macos-mail/){.external}.
+[Configuratie van E-mail Pro in macOS Mail](/pages/web/emails-pro/how_to_configure_mail_macos){.external}.
 
-[Configuratie van Exchange in macOS Mail](https://docs.ovh.com/nl/microsoft-collaborative-solutions/exchange-configuratie-mail-mac/){.external}.
+[Configuratie van Exchange in macOS Mail](/pages/web/microsoft-collaborative-solutions/how_to_configure_mail_macos){.external}.
 
 
 Ga in gesprek met andere communityleden op [https://community.ovh.com](https://community.ovh.com){.external}.

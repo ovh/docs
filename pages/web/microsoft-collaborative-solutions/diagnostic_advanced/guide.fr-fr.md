@@ -1,9 +1,6 @@
 ---
 title: "Utilisation du diagnostic d'erreurs Exchange"
-slug: exchange-que-verifier-lors-dun-probleme-denvoi-ou-de-reception
 excerpt: 'Découvrez comment réaliser un diagnostic automatisé des erreurs sur les comptes Exchange'
-section: 'Diagnostics Exchange'
-order: 01
 updated: 2022-10-19
 ---
 
@@ -20,7 +17,7 @@ Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de cause
 - Disposer d'une [solution Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/hosted-exchange/) déjà installée
 - Disposer des informations d'identification pour le compte Exchange à vérifier
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être à jour dans les [paiements](https://docs.ovh.com/fr/billing/gerer-factures-ovh/#pay-bills) de ce service et du nom de domaine lié.
+- Être à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) de ce service et du nom de domaine lié.
 
 ## En pratique
 
@@ -54,12 +51,12 @@ Un compte bloqué reçoit toujours des e-mails mais l'envoi a été désactivé 
 
 Vous pouvez le vérifier dans l'onglet `Comptes e-mail`{.action} de votre service Exchange. Le compte aura une mention `SPAM` dans la colonne « statut » du tableau.
 
-Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](../bloque-pour-spam/) pour permettre à nos équipes de sécurité de réactiver le compte.
+Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](/pages/web/microsoft-collaborative-solutions/locked_for_spam) pour permettre à nos équipes de sécurité de réactiver le compte.
 
 ### L'abonnement au compte est expiré <a name="expired"></a>
 
 Votre abonnement n'étant plus actif, l'envoi et la réception ont été désactivés.<br>
-Pour réactiver votre abonnement, il suffit de reconfigurer sa [périodicité de facturation](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#periodicity) dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Pour réactiver votre abonnement, il suffit de reconfigurer sa [périodicité de facturation](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ### Le compte est bloqué par la politique de sécurité
 
@@ -69,11 +66,11 @@ Vous pouvez, par exemple, décider que le compte sera verrouillé après plusieu
 
 Dans ce cas, vous pouvez attendre que le compte soit de nouveau disponible ou contacter nos équipes Exchange en créant une demande d'assistance.
 
-Pour plus d'informations sur cette fonctionnalité, consultez notre [guide sur la politique de sécurité](../gerer-politique-de-securite-mot-de-passe/).
+Pour plus d'informations sur cette fonctionnalité, consultez notre [guide sur la politique de sécurité](/pages/web/microsoft-collaborative-solutions/exchange_security_policy).
 
 ### L'authentification au webmail a échoué <a name="password"></a>
 
-Cela peut être dû à la saisie d'un mot de passe de compte incorrect. Vérifiez d'abord que le mot de passe est correct, en vous connectant au [webmail](../exchange-2016-guide-utilisation-outlook-web-app/), puis redémarrez le diagnostic.
+Cela peut être dû à la saisie d'un mot de passe de compte incorrect. Vérifiez d'abord que le mot de passe est correct, en vous connectant au [webmail](/pages/web/microsoft-collaborative-solutions/owa_user_guide), puis redémarrez le diagnostic.
 
 Si nécessaire, vous pouvez modifier le mot de passe du compte concerné dans l'onglet `Comptes e-mail`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Si le problème persiste, créez une demande d'assistance.
 
@@ -103,7 +100,7 @@ En fonction de l'utilisation de votre service Exchange, les serveurs MX suivants
 
 L'enregistrement SRV sert à la configuration automatique de votre compte Exchange avec un logiciel de messagerie compatible tel que Microsoft Outlook.
 
-Vous pouvez vérifier ces paramètres dans la [zone DNS de votre domaine](../../domains/editer-ma-zone-dns/).
+Vous pouvez vérifier ces paramètres dans la [zone DNS de votre domaine](/pages/web/domains/dns_zone_edit).
 
 Voici les valeurs pour un service Exchange:
 

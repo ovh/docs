@@ -1,8 +1,6 @@
 ---
 title: Revertierung einer Flex-Instanz
-slug: revertieren-einer-flex-instanz
 excerpt: Erfahren Sie hier, wie Sie eine Flex-Instanz über OpenStack Horizon zurücksetzen können
-section: Horizon
 updated: 2021-11-15
 ---
 
@@ -22,8 +20,8 @@ Wenn sich Ihre Infrastruktur weiterentwickelt, müssen Sie unter Umständen den 
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) mit der Flex-Option.
-- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/horizon/).
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) mit der Flex-Option.
+- Sie haben Zugriff auf das [Horizon Interface](/pages/platform/public-cloud/introducing_horizon).
 
 ## In der praktischen Anwendung
 
@@ -63,7 +61,7 @@ Mit dem Abschluss der Prozedur ist die Instanz in ein klassisches Modell mit ein
 
 Falls Sie wieder zu einem Flex-Modell wechseln möchten, können Sie dies tun, indem Sie die gleichen Schritte wie [oben](#flavorchoice) ausführen und ein Flex-Modell anstelle eines klassischen Modells auswählen. 
 
-Alternativ können Sie auch im OVHcloud Kundencenter [die Konfiguration der Instanz bearbeiten](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/#die-konfiguration-einer-instanz-bearbeiten).
+Alternativ können Sie auch im OVHcloud Kundencenter [die Konfiguration der Instanz bearbeiten](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#die-konfiguration-einer-instanz-bearbeiten).
 
 ## Weiterführende Informationen
 

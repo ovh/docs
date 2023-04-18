@@ -1,10 +1,7 @@
 ---
 deprecated: true
 title: "De PHP-versie van uw webhosting bewerken"
-slug: php-versie-configureren
 excerpt: "Leer hoe u de PHP-versie op uw OVH webhosting kunt wijzigen"
-section: PHP
-order: 01
 updated: 2022-09-19
 ---
 
@@ -63,14 +60,14 @@ Er zijn twee manieren om de PHP-versie van uw webhosting te wijzigen:
 
 - **Via een configuratiewizard uit uw OVH Control Panel**: deze optie is minder technisch en vereist inloggen op uw Control Panel, waar u een nieuwe PHP-versie kunt kiezen. Volg hiervoor de instructies in de OVH handleiding: [De configuratie van uw webhosting bewerken](https://docs.ovh.com/nl/hosting/bewerking-omgeving-webhosting-configuratie/){.external}.
 
-- **Het handmatig bewerken van een bestand in uw opslagruimte**: deze optie is meer technisch en vereist inloggen op uw opslagruimte, waar u het .ovhconfig-bestand kunt bewerken. Volg hiervoor de instructies in de OVH handleiding: [Configuratie van het .config-bestand op uw webhosting](https://docs.ovh.com/nl/hosting/ovhconfig-bestand-bewerken/){.external}.
+- **Het handmatig bewerken van een bestand in uw opslagruimte**: deze optie is meer technisch en vereist inloggen op uw opslagruimte, waar u het .ovhconfig-bestand kunt bewerken. Volg hiervoor de instructies in de OVH handleiding: [Configuratie van het .config-bestand op uw webhosting](/pages/web/hosting/ovhconfig_configuration){.external}.
 
-Voor de meest geavanceerde techneuten is de wijziging van de PHP-versie via een .htaccess-bestand niet langer mogelijk op de nieuwste [OVH webhostingplannen](https://www.ovhcloud.com/nl/web-hosting/){.external}. Het beïnvloeden van de PHP-versie via instellingen in het .htaccess-bestand wordt niet langer ondersteund door onze infrastructuren. Het is absoluut noodzakelijk dat u het .ovhconfig-bestand gebruikt. De bijbehorende procedure is te vinden in de handleiding [Configuratie van het .config-bestand op uw webhosting](https://docs.ovh.com/nl/hosting/ovhconfig-bestand-bewerken/){.external}.
+Voor de meest geavanceerde techneuten is de wijziging van de PHP-versie via een .htaccess-bestand niet langer mogelijk op de nieuwste [OVH webhostingplannen](https://www.ovhcloud.com/nl/web-hosting/){.external}. Het beïnvloeden van de PHP-versie via instellingen in het .htaccess-bestand wordt niet langer ondersteund door onze infrastructuren. Het is absoluut noodzakelijk dat u het .ovhconfig-bestand gebruikt. De bijbehorende procedure is te vinden in de handleiding [Configuratie van het .config-bestand op uw webhosting](/pages/web/hosting/ovhconfig_configuration){.external}.
 
 ## Verder
 
 [De configuratie van uw webhosting bewerken](https://docs.ovh.com/nl/hosting/bewerking-omgeving-webhosting-configuratie/){.external}
 
-[Configuratie van het .config-bestand op uw webhosting](https://docs.ovh.com/nl/hosting/ovhconfig-bestand-bewerken/){.external}
+[Configuratie van het .config-bestand op uw webhosting](/pages/web/hosting/ovhconfig_configuration){.external}
 
 Ga in gesprek met onze communitygebruikers via <https://community.ovh.com/en/>.

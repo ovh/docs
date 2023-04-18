@@ -1,8 +1,6 @@
 ---
 title: Intégration CTI de la téléphonie OVHcloud aux CRM et ERP - exemple avec SugarCRM
 excerpt: Ce guide montre un exemple de remontée de fiche avec le CRM SugarCRM
-slug: integration-cti-ovh-aux-crm-erp-avec-sugarcrm
-section: Computer Telephony Integration (CTI)
 updated: 2018-03-26
 ---
 
@@ -46,7 +44,7 @@ Avec les fonctionnalités CTI d'OVHcloud, il est possible de coupler la téléph
 
 > [!primary]
 >
-> Pour plus d'informations sur le fonctionnement des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/) ».
+> Pour plus d'informations sur le fonctionnement des API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) ».
 >
 
 ### Étape 1 : création du token

@@ -1,8 +1,6 @@
 ---
 title: 'Backups von Daten und Datenbanken auf einem Storage Server erstellen'
-slug: daten-datenbanken-backup-auf-storage-server
 excerpt: 'Daten-Backup in 5 Schritten'
-section: Tutorial
 updated: 2018-09-12
 ---
 
@@ -69,7 +67,7 @@ Kein RAID-Typ ist grundsätzlich besser als die anderen. Alle erfüllen bestimmt
 
 ### Schritt 2: Server installieren und konfigurieren
 
-Gehen Sie in Ihr [OVHcloud Kundencenter ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und installieren Sie Ihren Server. Wie bereits erwähnt, verwenden wir Debian 9.4. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit einem Dedicated Server](https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server/#ihren-dedizierten-server-installieren-oder-reinstallieren_1){.external}.
+Gehen Sie in Ihr [OVHcloud Kundencenter ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und installieren Sie Ihren Server. Wie bereits erwähnt, verwenden wir Debian 9.4. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit einem Dedicated Server](/pages/cloud/dedicated/getting-started-with-dedicated-server#ihren-dedizierten-server-installieren-oder-reinstallieren_1){.external}.
 
 Wenn Sie das Betriebssystem für die Installation ausgewählt haben, setzen Sie einen Haken in dem Feld `Konfiguration der Partitionen anpassen`{.action}.
 

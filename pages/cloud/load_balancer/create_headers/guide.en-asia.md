@@ -1,8 +1,6 @@
 ---
 title: OVH Load Balancer - HTTP Header
-slug: http-headers
 excerpt: Get HTTP Headers on your services behind OVH Load Balancer
-section: Setting up
 updated: 2018-08-03
 ---
 

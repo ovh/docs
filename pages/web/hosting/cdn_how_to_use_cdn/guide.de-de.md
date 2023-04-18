@@ -1,9 +1,6 @@
 ---
 title: 'Ihre Webseiten mit CDN beschleunigen'
 excerpt: 'Erfahren Sie hier, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern'
-slug: verwendung_des_geocache_boosters_auf_einem_webhosting
-section: 'Webseitenoptimierung'
-order: 03
 updated: 2021-12-23
 ---
 
@@ -64,7 +61,7 @@ Haken Sie "CDN aktivieren" an, klicken Sie auf `Weiter`{.action} und dann auf `B
 > 
 > Wenn dem Webhosting unter `Multisite`{.action} eine externe Domain hinzugefügt wurde, müssen Sie die IP-Adresse des CDN Ihres Hostings in der DNS-Zone des Domainnamens angeben.
 >
-> Im [Verzeichnis von IP-Adressen für die Webhosting Cluster](../verzeichnis-der-ip-adressen-web-hosting-cluster) finden Sie die spezifische IP-Adresse des CDN Ihres Clusters.
+> Im [Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web/hosting/clusters_and_shared_hosting_IP) finden Sie die spezifische IP-Adresse des CDN Ihres Clusters.
 
  
 **Warum kann ich mit der CDN-Option nicht von geolokalisierten IPs profitieren?**    
@@ -180,7 +177,7 @@ Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`
 
 > [!warning]
 >
-> Vor der Installation eines OVHcloud [1-Klick-Moduls](../webhosting_installation_von_webhosting-modulen/) muss WAF deaktiviert werden, um eine Blockierung der Installation des Moduls zu vermeiden.
+> Vor der Installation eines OVHcloud [1-Klick-Moduls](/pages/web/hosting/cms_install_1_click_modules) muss WAF deaktiviert werden, um eine Blockierung der Installation des Moduls zu vermeiden.
 
 > [!primary]
 >  

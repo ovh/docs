@@ -1,8 +1,5 @@
 ---
 title: Lisp
-slug: languages-lisp
-section: Languages
-order: 4
 updated: 2022-06-02
 ---
 
@@ -72,7 +69,7 @@ runtime:
 
 ## Web PaaS variables
 
-Web PaaS exposes relationships and other configuration as [environment variables](../development-variables).
+Web PaaS exposes relationships and other configuration as [environment variables](/pages/web/web-paas/development-variables).
 To get the `PORT` environment variable (the port on which your web application is supposed to listen):
 
 ```lisp

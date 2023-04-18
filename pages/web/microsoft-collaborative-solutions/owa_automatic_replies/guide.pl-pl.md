@@ -1,9 +1,6 @@
 ---
 title: 'Tworzenie odpowiedzi automatycznych w interfejsie OWA'
 excerpt: 'Dowiedz się, jak skonfigurować odpowiedzi automatyczne w interfejsie OWA'
-slug: exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa
-section: 'Korzystanie z Outlook Web Application (OWA)'
-order: 02
 updated: 2020-02-26
 ---
 
@@ -59,10 +56,10 @@ Alternatywną wiadomość dla nadawców zewnętrznych można wprowadzić w drugi
 
 ## Sprawdź również
 
-[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](/pages/web/microsoft-collaborative-solutions/owa_user_guide)
 
-[Delegowanie uprawnień do konta Exchange](../exchange_2013_przyznanie_uprawnien_full_access/)
+[Delegowanie uprawnień do konta Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Exchange: współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[Exchange: współdzielenie kalendarza w interfejsie OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

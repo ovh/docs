@@ -1,9 +1,6 @@
 ---
 title: 'Utilizar o Outlook Web App com uma conta Exchange'
 excerpt: 'Saiba como gerir o seu endereço Exchange utilizando o webmail OWA'
-slug: exchange_2016_guia_de_utilizacao_do_outlook_web_app
-section: 'Utilização do Outlook Web Application (OWA)'
-order: 01
 updated: 2021-06-25
 ---
 
@@ -122,7 +119,7 @@ Preencha a informação solicitada consoante a regra que pretende que seja execu
 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Para instruções mais detalhadas sobre como criar regras inbox, consulte o nosso guia: [Criar regras inbox no OWA](../criar-regras-inbox-no-owa/).
+Para instruções mais detalhadas sobre como criar regras inbox, consulte o nosso guia: [Criar regras inbox no OWA](/pages/web/microsoft-collaborative-solutions/creating-inbox-rules-in-owa).
 
 #### Bloquear um remetente
 
@@ -186,7 +183,7 @@ Preencha a informação solicitada dependendo da ação que deseja ver concluíd
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Para instruções mais detalhadas sobre como criar respostas automáticas, consulte o nosso guia: [Criar respostas automáticas no OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa/).
+Para instruções mais detalhadas sobre como criar respostas automáticas, consulte o nosso guia: [Criar respostas automáticas no OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Adicionar assinatura
 
@@ -200,7 +197,7 @@ No lado esquerdo da nova página, clique em `Assinatura e-mail`{.action}. Na ár
 
 Componha a sua assinatura eletrónica no editor de texto. Pode especificar se deseja incluir a assinatura por defeito apenas nos novos e-mails ou também nas respostas e reencaminhamentos efetuados. Quando terminar, clique em `Guardar`{.action} para confirmar.
 
-Para mais instruções sobre como criar assinaturas automáticas através da utilização de modelos padronizados, consulte o nosso guia: [Criar assinaturas automáticas](../exchange_20132016_assinatura_automatica_-_disclaimer/).
+Para mais instruções sobre como criar assinaturas automáticas através da utilização de modelos padronizados, consulte o nosso guia: [Criar assinaturas automáticas](/pages/web/microsoft-collaborative-solutions/feature_footers).
 
 ### Aceder à secção de opções
 
@@ -221,12 +218,12 @@ A desativação destes cookies pode afetar a estabilidade do webmail.
 
 ## Saiba mais
 
-[Criar respostas automáticas no OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa/)
+[Criar respostas automáticas no OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
-[Partilhar uma pasta através do webmail OWA](../exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa/)
+[Partilhar uma pasta através do webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Partilhar calendários em OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+[Partilhar calendários em OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
-[Utilização de grupos de difusão (mailing lists)](../exchange_20132016_utilizacao_de_grupos_de_difusao_mailing_list/)
+[Utilização de grupos de difusão (mailing lists)](/pages/web/microsoft-collaborative-solutions/feature_groups)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

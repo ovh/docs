@@ -1,9 +1,6 @@
 ---
 title: Getting started with Public Cloud Databases
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
-slug: getting-started
-section: General guides
-order: 010
 updated: 2023-02-15
 ---
 
@@ -84,11 +81,11 @@ If you already have a private subnet available, check the box **Private** and se
 
 You can be forwarded to create a private network or subnet by clicking on the respective links. You will have to start the database order process anew in that case.
 
-Please follow [this guide](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/) for detailed instructions.
+Please follow [this guide](/pages/platform/network-services/getting-started-07-creating-vrack) for detailed instructions.
 
 ### Step 8: Summary and confirmation
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/account/api/first-steps).
 
 ![Confirm order](images/databases_01_order_control_panel-20220727192153640.png){.thumbnail}
 

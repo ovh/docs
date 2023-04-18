@@ -1,9 +1,6 @@
 ---
 title: OVHcloud AntiSpam - Best Practices und Entsperren einer IP-Adresse
-slug: antispam-best-practices
 excerpt: Erfahren Sie hier unsere AntiSpam-Maßnahmen und wie Sie eine gesperrte IP-Adresse freigeben können
-section: Diagnose & Rescue Modus
-order: 04
 updated: 2022-10-17
 ---
 
@@ -58,7 +55,7 @@ Identifizieren Sie die Problemursache, beheben Sie sie und entsperren Sie dann I
 - Beenden Sie den Versand von E-Mails (zum Beispiel: jegliche E-Mail-Software wie qmail, Postfix, Sendmail usw. abschalten).
 - Überprüfen Sie die Warteschlange der E-Mails (zum Beispiel: qmHandle für qmail, postqueue -p für Postfix) und leeren Sie diese.
 - Analysieren Sie Ihre Logs mithilfe der **Message-ID** im Sperralarm.  
-- Wenn Sie den Versand von SPAM oder missbräuchlicher E-Mails bestätigen können, beheben Sie dessen Ursache, **bevor** Sie die IP-Adresse entsperren. In diesem Leitfaden erfahren Sie mehr über [*best practices* (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices) beim Versand von E-Mails. 
+- Wenn Sie den Versand von SPAM oder missbräuchlicher E-Mails bestätigen können, beheben Sie dessen Ursache, **bevor** Sie die IP-Adresse entsperren. In diesem Leitfaden erfahren Sie mehr über [*best practices* (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) beim Versand von E-Mails. 
 
 Wenn das Problem gelöst ist, können Sie Ihre IP-Adresse entsperren, indem Sie die folgenden Schritte ausführen.
 
@@ -93,7 +90,7 @@ Sobald die Bearbeitung abgeschlossen ist, wird Ihre IP entsperrt.
 
 #### Entsperren Sie Ihre IP-Adresse über die OVHcloud API
 
-Verbinden Sie sich mit dem [API-Interface von OVHcloud](https://eu.api.ovh.com/) und folgen Sie den nachstehenden Schritten. Weitere Informationen zur Verwendung der OVHcloud API finden Sie in unserer Anleitung "[Erste Schritte mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)".
+Verbinden Sie sich mit dem [API-Interface von OVHcloud](https://eu.api.ovh.com/) und folgen Sie den nachstehenden Schritten. Weitere Informationen zur Verwendung der OVHcloud API finden Sie in unserer Anleitung "[Erste Schritte mit der OVHcloud API](/pages/account/api/first-steps)".
 
 Rufen Sie zunächst die Liste der IPs jedes OVHcloud Dienstes ab (Hosted Private Cloud / VPS / Public Cloud / Dedicated Server):
 
@@ -218,7 +215,7 @@ Die IP-Adresse wird nun entsperrt. Es kann einige Minuten dauern, bis die Operat
 
 ### False Positives
 
-In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [RFC (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#rfc) und den [*Best Practices* (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices) entsprechen.
+In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [RFC (EN)](/pages/cloud/dedicated/antispam_best_practices#rfc) und den [*Best Practices* (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) entsprechen.
 
 
 ## Weiterführende Informationen

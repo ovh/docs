@@ -1,9 +1,6 @@
 ---
 title: 'Deploying a Helm chart from your private registry in Kubernetes'
 excerpt: 'Find out how to deploy a Helm chart from your OVHcloud Private Registry in a Kubernetes cluster'
-slug: deploy-chart-from-registry-in-kubernetes
-section: 'Tutorials'
-order: 04
 kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Private Registry
@@ -41,9 +38,9 @@ This guide will explain how to deploy a Helm chart from your OVHcloud Managed Pr
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../../kubernetes/deploying-hello-world/) documentation. You will need to have Helm installed on your cluster (see the [installing helm](../../kubernetes/installing-helm/) guide for more information).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../../kubernetes/deploying-hello-world/) documentation. You will need to have Helm installed on your cluster (see the [installing helm](/pages/platform/kubernetes-k8s/installing-helm) guide for more information).
 
-You also need to have a working OVHcloud Managed Private Registry and have followed the guide on [managing Helm charts in the OVHcloud Managed Private Registry](../using-helm-chart-museum/).
+You also need to have a working OVHcloud Managed Private Registry and have followed the guide on [managing Helm charts in the OVHcloud Managed Private Registry](/pages/platform/private-registry/using-helm-chart-museum).
 
 You should have at least one wordpress Helm chart in your Private Registry:
 
@@ -112,7 +109,7 @@ persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
 
 In this step you are going to deploy a chart from your OVHcloud Managed Private Registry into an OVHcloud Managed Kubernetes cluster (or any other Kubernetes cluster).
 
-As indicated in the *Before you begin* section, you need to have `helm` installed in your cluster and a working `helm` CLI in your workstation (see the [installing Helm](../../kubernetes/installing-helm/) guide for more information if needed).
+As indicated in the *Before you begin* section, you need to have `helm` installed in your cluster and a working `helm` CLI in your workstation (see the [installing Helm](/pages/platform/kubernetes-k8s/installing-helm) guide for more information if needed).
 
 Run the command `helm version` to make sure the `helm` CLI is correctly installed locally.
 
@@ -235,6 +232,6 @@ wordpress-mariadb-0          1/1     Running   0          85s
 
 ## Go further
 
-To have an overview of the OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](../).
+To have an overview of the OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](/ie/en/private-registry/).
 
 Join our community of users on <https://community.ovh.com/en/>.

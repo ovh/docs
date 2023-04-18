@@ -1,9 +1,6 @@
 ---
 title: Créer une alerte
-slug: creer-une-alerte
 excerpt: Paramétrez des alertes sur votre client vSphere
-section: Gestion des machines virtuelles
-order: 09
 updated: 2020-07-08
 ---
 
@@ -18,7 +15,7 @@ Il est possible de créer une alerte sur tous les éléments de votre Private Cl
 ## Prérequis
 
 - Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+- Être connecté à votre [interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion).
 
 ## En pratique
 

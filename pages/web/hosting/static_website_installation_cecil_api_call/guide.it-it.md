@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Aggiungere contenuto dinamico in una pagina Web statica generata con Cecil"
-slug: static-site-generator-cecil-use-api
 excerpt: "Come aggiungere una chiamata verso un'API esterna dalla tua pagina Web statica"
-section: Tutorial
-order: 031
 updated: 2023-01-16
 ---
 
@@ -30,7 +27,7 @@ Questa guida ti mostra come utilizzare il generatore del sito [Cecil](https://ce
 
 - Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che include un accesso SSH Questo accesso permette di installare, da riga di comando, una o più soluzioni alternative a quelle proposte di default nelle nostre offerte di hosting Web.
 - Aver familiarità con l'inserimento da riga di comando
-- Aver installato e configurato l'applicazione **Cecil** sul tuo hosting (consulta [la nostra guida sull'installazione e la configurazione di Cecil](https://docs.ovh.com/it/hosting/install-configure-cecil/))
+- Aver installato e configurato l'applicazione **Cecil** sul tuo hosting (consulta [la nostra guida sull'installazione e la configurazione di Cecil](/pages/web/hosting/static_website_installation_cecil))
 
 ## Procedura
 
@@ -46,7 +43,7 @@ Gli step sono i seguenti:
 
 ### Crea una nuova pagina
 
-Prepara il tuo ambiente di sviluppo accedendo in SSH sul tuo hosting Web e consulta la guida [Installare e configurare Cecil](https://docs.ovh.com/it/hosting/install-configure-cecil/) per installare la tua applicazione **Cecil** in una directory dedicata.
+Prepara il tuo ambiente di sviluppo accedendo in SSH sul tuo hosting Web e consulta la guida [Installare e configurare Cecil](/pages/web/hosting/static_website_installation_cecil) per installare la tua applicazione **Cecil** in una directory dedicata.
 
 Crea una directory e inserisci:
 

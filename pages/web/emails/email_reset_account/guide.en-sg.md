@@ -1,9 +1,6 @@
 ---
 title: Deleting an email account
-slug: delete-email-account
 excerpt: Find out how to delete or reset an email account of your email solution
-section: 'Email account features'
-order: 02
 updated: 2023-01-27
 ---
 
@@ -35,7 +32,7 @@ Open `Emails`{.action} in the side panel, then choose the name of the MX Plan se
 
 ## Go further
 
-[Getting started with MX Plan](https://docs.ovh.com/sg/en/emails/web_hosting_an_overview_of_ovh_email/)
+[Getting started with MX Plan](/pages/web/emails/email_generalities)
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

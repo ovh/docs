@@ -1,9 +1,6 @@
 ---
 title: 'First steps with pre-installed applications'
-slug: pre-installed-applications
 excerpt: Find out how to deploy pre-installed applications on your VPS
-section: 'Getting started'
-order: 8
 updated: 2022-08-25
 ---
 
@@ -23,7 +20,7 @@ OVHcloud offers VPS customers pre-installed application images for quick and eas
 
 ### Install your chosen pre-installed application
 
-Using the [OVHcloud Control Panel](../getting-started-vps/) / API, install your chosen application on your VPS.
+Using the [OVHcloud Control Panel](/pages/cloud/vps/starting_with_a_vps) / API, install your chosen application on your VPS.
 
 #### cPanel
 
@@ -50,7 +47,7 @@ No further steps are necessary to complete the first configuration of this appli
 > [!faq]
 >
 > Can I use my own nameservers?
->> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide](../../domains/glue_registry/#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
+>> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide](/pages/web/domains/glue_registry#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
 > Why set root password?
 >> WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you log in to WHM you must use the root user and the password you have set.
 > Where is my licence for cPanel?
@@ -93,7 +90,7 @@ This section only applies to WordPress, Drupal, Joomla! and PrestaShop installat
     - personaldomain.ovh
     - www.personaldomain.ovh
 
-If your domain is registered with OVHcloud you can follow [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/).
+If your domain is registered with OVHcloud you can follow [this guide](/pages/web/domains/dns_zone_edit).
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
 <ol start="2">

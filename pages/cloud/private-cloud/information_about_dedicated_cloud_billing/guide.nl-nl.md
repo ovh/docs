@@ -2,7 +2,6 @@
 deprecated: true
 title: Informatie over de Hosted Private Cloud factuur
 excerpt: Details over hoe de Hosted Private Cloud facturering werkt.
-slug: informatie_over_de_dedicated_cloud_factuur
 legacy_guide_number: g677
 updated: 2022-12-08
 ---

@@ -1,9 +1,6 @@
 ---
 title: "Geolocating your website in a specific country"
 excerpt: "Find out how to geolocate your website using our geolocated IP addresses"
-slug: geolocation_on_web_hosting_packages
-section: Optimise your website
-order: 05
 updated: 2022-12-22
 ---
 
@@ -48,9 +45,9 @@ Click `Next`{.action} and then click `Confirm`{.action} from the summary window.
 
 >[!primary]
 >
-> If your domain name’s active DNS zone is managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), the A record in your domain name’s DNS zone will automatically change. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](https://docs.ovh.com/au/en/domains/web_hosting_how_to_edit_my_dns_zone/).
+> If your domain name’s active DNS zone is managed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), the A record in your domain name’s DNS zone will automatically change. You can check that the IP address has been updated using our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit).
 >
-> Otherwise, you will need to make the change manually with the provider that manages your domain name’s active DNS zone. Find [here](https://docs.ovh.com/au/en/hosting/list-of-ip-addresses-of-web-hosting-clusters/) the documentation that lists all the IP addresses in our OVHcloud shared hosting infrastructure.
+> Otherwise, you will need to make the change manually with the provider that manages your domain name’s active DNS zone. Find [here](/pages/web/hosting/clusters_and_shared_hosting_IP) the documentation that lists all the IP addresses in our OVHcloud shared hosting infrastructure.
 >
 > In any case, you will need to wait between **4 and 24 hours** for the changes to propagate fully, and be visible on the internet.
 >

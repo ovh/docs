@@ -1,9 +1,6 @@
 ---
 title: Installation of OVHcloud Connect Provider from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Provider solution via the OVHcloud Control Panel
-slug: occ-provider-manager-setup
-section: Getting started
-order: 3
 updated: 2020-09-28
 ---
 
@@ -18,7 +15,7 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 ## Requirements
 
 > [!warning]
-> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/) and configure your network devices accordingly.
+> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](/pages/cloud/ovhcloud-connect/occ-limits) and configure your network devices accordingly.
 >
 
 - An [OVHcloud Connect Provider solution](https://www.ovhcloud.com/en-ca/network-security/ovhcloud-connect/)

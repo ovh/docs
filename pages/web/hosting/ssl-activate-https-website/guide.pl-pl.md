@@ -1,9 +1,6 @@
 ---
 title: 'Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL'
-slug: aktywacja-https-ssl-na-stronie-WWW
 excerpt: 'Dowiedz się, jak aktywować protokół HTTPS na stronie WWW za pomocą certyfikatu SSL'
-section: SSL
-order: 02
 updated: 2022-10-04
 ---
 
@@ -49,7 +46,7 @@ Aktywacja certyfikatu SSL na Twoim hostingu jest wykonywana w [Panelu klienta](h
 |Aktywacja certyfikatu SSL na hostingu|Umożliwia OVHcloud instalację certyfikatu SSL na Twoim hostingu. Wybierz jeden z typów certyfikatów. Upewnij się, że wybierasz certyfikat najbardziej odpowiedni dla Twojego projektu.|
 |Aktywacja SSL na stronie w opcji MultiSite|Strona WWW, na której chcesz aktywować HTTPS musi być skonfigurowana na Twoim hostingu jako „MultiSite”. Upewnij się, że certyfikat SSL jest aktywny dla tego hostingu. |
 
-Dokładny opis realizacji tych dwóch operacji dostępny jest w naszej dokumentacji [Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/){.external}. Jeśli właśnie wykupiłeś hosting w OVHcloud, możliwe, że jest już na nim zainstalowany bezpłatny certyfikat SSL oraz że jest on już aktywny dla stron w opcji MultiSite.
+Dokładny opis realizacji tych dwóch operacji dostępny jest w naszej dokumentacji [Zarządzanie certyfikatem SSL na hostingu](/pages/web/hosting/ssl_on_webhosting){.external}. Jeśli właśnie wykupiłeś hosting w OVHcloud, możliwe, że jest już na nim zainstalowany bezpłatny certyfikat SSL oraz że jest on już aktywny dla stron w opcji MultiSite.
 
 Aby to sprawdzić, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Pod napisem „Certyfikat SSL” powinna pojawić się informacja „Tak” wskazująca, że certyfikat SSL jest zainstalowany na Twoim hostingu. 
 
@@ -59,7 +56,7 @@ Przejdź następnie do zakładki MultiSite. Tabela, która się wyświetla zawie
 
 ![https na stronie www](images/activate-https-website-ssl-step3.png){.thumbnail}
 
-Jeśli nie udało Ci się potwierdzić, że certyfikat SSL jest zainstalowany na Twoim hostingu i/lub że jest aktywny w wybranej opcji MultiSite, skorzystaj z naszej dokumentacji: [Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/){.external}.
+Jeśli nie udało Ci się potwierdzić, że certyfikat SSL jest zainstalowany na Twoim hostingu i/lub że jest aktywny w wybranej opcji MultiSite, skorzystaj z naszej dokumentacji: [Zarządzanie certyfikatem SSL na hostingu](/pages/web/hosting/ssl_on_webhosting){.external}.
 
 ### Etap 2: weryfikacja środowiska technicznego
 

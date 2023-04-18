@@ -1,11 +1,9 @@
 ---
 title: 'Datastore löschen'
-slug: datastore-loeschen
 routes:
-    canonical: 'https://docs.ovh.com/de/private-cloud/datastore-loeschen/'
+    canonical: '/pages/cloud/private-cloud/delete_datastore'
 excerpt: 'So löschen Sie einen Datastore Ihrer Managed Bare Metal'
 legacy_guide_number: '7766789'
-section: 'OVHcloud Funktionen'
 updated: 2020-11-18
 ---
 

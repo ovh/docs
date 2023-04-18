@@ -1,11 +1,8 @@
 ---
 title: Déploiement d’une machine virtuelle
-slug: deploiement-d-une-machine-virtuelle
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/deploiement-d-une-machine-virtuelle/'
+    canonical: '/pages/cloud/private-cloud/deploiement_d_une_machine_virtuelle'
 excerpt: Découvrez comment déployer une machine virtuelle depuis l'interface vSphere
-section: Gestion des machines virtuelles
-order: 0
 updated: 2020-11-18
 ---
 
@@ -20,7 +17,7 @@ Depuis votre interface vSphere, vous pouvez déployer des machines virtuelles de
 ## Prérequis
 
 - Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+- Être connecté à votre [interface vSphere](/pages/cloud/managed-bare-metal/vsphere-interface).
 
 ## En pratique
 
@@ -34,8 +31,8 @@ Faites un clic-droit sur le cluster de votre choix et cliquez sur `Nouvelle mach
 
 Vous avez plusieurs possibilité lors de la création d’une machine virtuelle :
 
-- La création depuis un ISO, qui sera dans votre datastore et que vous aurez pu importer en suivant [le guide de connexion en SFTP](../connexion-en-sftp/)
-- Vous pouvez également déployer une machine virtuelle depuis un template que vous pouvez avoir ou un [template OVHcloud](../deploiement-template-ovhcloud/)
+- La création depuis un ISO, qui sera dans votre datastore et que vous aurez pu importer en suivant [le guide de connexion en SFTP](/pages/cloud/managed-bare-metal/sftp-connexion)
+- Vous pouvez également déployer une machine virtuelle depuis un template que vous pouvez avoir ou un [template OVHcloud](/pages/cloud/managed-bare-metal/ovf_template)
 - Vous pouvez cloner une machine virtuelle déjà existante (attention toutefois au risque de conflit d’adresses IP).
 - Vous pouvez cloner une machine virtuelle en template, en vue d’un déploiement plus rapide de vos prochaines machines virtuelles.
 - Vous pouvez cloner un template en un autre template pour, par exemple, avoir le template sur différents datastores et ne pas subir de baisse de performances lors d’un déploiement massif.

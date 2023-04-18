@@ -1,11 +1,8 @@
 ---
 title: CLI - Manage access tokens
-slug: cli/app-token-cli
 excerpt: Learn how to create Application tokens with the ovhai CLI
-section: Command Line Interface
-order: 203
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/cli/app-token-cli/'
+    canonical: '/pages/platform/ai/cli_13_howto_app_token_cli'
 updated: 2021-03-25
 ---
 
@@ -17,7 +14,7 @@ This guide covers the creation of application tokens for AI Training.
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](https://docs.ovh.com/pt/publiccloud/ai/cli/install-client)
+-   a working `ovhai` CLI [how to install ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli)
 
 ## Instructions
 

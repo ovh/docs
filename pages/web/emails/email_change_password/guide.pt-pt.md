@@ -1,9 +1,6 @@
 ---
 title: 'Alterar a palavra-passe de um endereço de e-mail'
-slug: alterar-palavra-passe-endereco-email
 excerpt: 'Saiba como alterar a palavra-passe de um endereço de e-mail da OVHcloud'
-section: Introdução
-order: 03
 updated: 2023-01-03
 ---
 
@@ -115,11 +112,11 @@ Na tabela abaixo, encontrará as informações necessárias para identificar a s
 
 ## Quer saber mais?
 
-[Primeiros passos com a solução MXplan](https://docs.ovh.com/pt/emails/partilhado_generalidades_e-mail_partilhado_ovh/)
+[Primeiros passos com a solução MXplan](/pages/web/emails/email_generalities)
 
-[Primeiros passos com a solução E-mail Pro](https://docs.ovh.com/pt/emails-pro/configuracao-inicial/)
+[Primeiros passos com a solução E-mail Pro](/pages/web/emails-pro/first_config)
 
-[Primeiros passos com a solução Hosted Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/exchange_20132016_a_primeira_configuracao_do_servico/)
+[Primeiros passos com a solução Hosted Exchange](/pages/web/microsoft-collaborative-solutions/exchange_starting_hosted)
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

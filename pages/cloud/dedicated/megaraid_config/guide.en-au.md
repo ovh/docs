@@ -1,8 +1,6 @@
 ---
 title: Configuring MegaRAID for RAID Level 0
-slug: using-the-maximum-amount-of-disk-space
 excerpt: "Find out how to configure RAID 0 in order to use your server's entire disk space"
-section: RAID and disks
 updated: 2022-07-08
 ---
 
@@ -115,10 +113,10 @@ MegaCli -LDInfo -Lall -a0 | grep -i size
 
 ## Go further
 
-[Hot Swap – Hardware RAID](../hotswap-raid-hard/)
+[Hot Swap – Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
 
-[Hot Swap – Software RAID](../hotswap-raid-soft/)
+[Hot Swap – Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
 
-[Hardware RAID](../raid-hard/)
+[Hardware RAID](/pages/cloud/dedicated/raid_hard)
 
 Join our community of users on <https://community.ovh.com/en/>

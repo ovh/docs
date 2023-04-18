@@ -1,10 +1,7 @@
 ---
 title: Rust - Push logs with gelf_logger or log4rs-gelf
-slug: rust-libs
-order: 30
-section: Logging libraries
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/logs-data-platform/rust-libs/'
+    canonical: '/pages/platform/logs-data-platform/rust_loggers'
 updated: 2023-01-16
 ---
 
@@ -24,7 +21,7 @@ Those loggers will:
 - serialize log entries using the serde_gelf crate.
 - bufferize the result into memory.
 - batch send over network using TCP/TLS.
-- a facility to ensure fields suits the [LDP naming conventions](../field-naming-conventions){.ref}.
+- a facility to ensure fields suits the [LDP naming conventions](/pages/platform/logs-data-platform/field_naming_conventions){.ref}.
 
 ## Requirements
 
@@ -32,7 +29,7 @@ To complete this guide you will need:
 
 - Rust, we recommend the Nightly version.
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick-start){.ref}
+- [To create at least one Stream and get its token.](/pages/platform/logs-data-platform/quick_start){.ref}
 
 ## gelf_logger
 
@@ -152,7 +149,7 @@ You could also look at the [generated API documentation](https://docs.rs/log4rs-
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/pl/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

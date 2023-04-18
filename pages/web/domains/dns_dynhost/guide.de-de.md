@@ -1,9 +1,6 @@
 ---
 title: 'Dynamisches DNS für eine Domain konfigurieren'
-slug: verwendung-dynhost
 excerpt: 'Hier erfahren Sie, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihre OVHcloud Domain konfigurieren.'
-section: 'DNS und DNS-Zone'
-order: 06
 updated: 2018-07-19
 ---
 
@@ -50,7 +47,7 @@ Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{
 
 ### Schritt 2: Dynamischen DNS-Eintrag (DynHost) erstellen
 
-Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A-Eintrag in der OVHcloud DNS-Zone Ihrer Domain vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, lesen Sie bitte die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}“.
+Im zweiten Schritt erstellen Sie den DNS-Eintrag, der dynamisch aktualisiert werden soll. Zur Erinnerung: Dieser darf nicht als A-Eintrag in der OVHcloud DNS-Zone Ihrer Domain vorhanden sein. Um den Eintrag zu überprüfen und wenn nötig zu löschen, lesen Sie bitte die Anleitung „[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit){.external}“.
 
 Gehen Sie für die Erstellung des DynHost-Eintrags nun zurück auf den Tab `DynHost`{.action} und klicken Sie auf den Button `DynHost hinzufügen`{.action}. Geben Sie im angezeigten Fenster die notwendigen Informationen ein.
 

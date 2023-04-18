@@ -1,11 +1,8 @@
 ---
 title: 'Configuring vRack on the Public Cloud using the OVHcloud API (EN)'
 excerpt: 'Find out how to activate and configure a vRack on the Public Cloud using the OVHcloud API'
-slug: public-cloud-vrack-apiv6
-section: Primeros pasos
-order: 08
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/network-services/public-cloud-vrack-apiv6/'
+    canonical: '/pages/platform/network-services/getting-started-07-creating-vrack-apiv6/'
 updated: 2022-11-02
 ---
 
@@ -20,16 +17,16 @@ The [vRack](https://www.ovh.com/world/es/soluciones/vrack/) is a private network
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
-- An [OpenStack user account](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
+- An [OpenStack user account](/pages/platform/public-cloud/create_and_delete_a_user)
 - Basic networking knowledge
-- Consulting the guide [Configuring the vRack on Public Cloud](https://docs.ovh.com/us/es/publiccloud/network-services/public-cloud-vrack/) (to understand the different methods to manage the vRack with the Public Cloud)
-- Consulting the guide [First steps to use the OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/) (to familiarise yourself with the OVHcloud API)
+- Consulting the guide [Configuring the vRack on Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack) (to understand the different methods to manage the vRack with the Public Cloud)
+- Consulting the guide [First steps to use the OVHcloud API](/pages/account/api/first-steps) (to familiarise yourself with the OVHcloud API)
 
 ## Instructions
 
 ### Step 1: Activating and managing a vRack
 
-Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/)) and follow these steps:
+Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/account/api/first-steps)) and follow these steps:
 
 #### Creating the cart
 
@@ -118,7 +115,7 @@ Once the free order has been validated, it may take a few minutes for the vRack 
 
 Once the vRack is active, you will need to integrate your Public Cloud project(s) into the vRack.
 
-Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/)).
+Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](/pages/account/api/first-steps)).
 
 In case the project ID is unknown, the calls below allow you to retrieve it.
 
@@ -189,7 +186,7 @@ Using the OVHcloud APIv6, you can customise all settings: IP range (10.0.0.0/16 
 >
 > Unlike dedicated servers, there is no need to tag a VLAN directly on a Public Cloud instance.
 >
-> To learn more about this topic, please refer to the guide [Creating multiple vLANs in a vRack](https://docs.ovh.com/us/es/dedicated/crear-vlan-vrack/)
+> To learn more about this topic, please refer to the guide [Creating multiple vLANs in a vRack](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack)
 
 > [!warning]
 > vRack is managed at the OVHcloud infrastructure level, meaning you can only administrate it in the OVHcloud Control Panel and the OVHcloud APIv6.
@@ -513,8 +510,8 @@ You will need to fill in at least the following fields:
 
 ## Go further
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/us/es/publiccloud/network-services/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
-[First steps with the OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/)
+[First steps with the OVHcloud API](/pages/account/api/first-steps)
 
 Join our community of users on <https://community.ovh.com/en/>.

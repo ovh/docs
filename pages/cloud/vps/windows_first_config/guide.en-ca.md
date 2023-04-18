@@ -1,8 +1,6 @@
 ---
 title: 'Configuring a new Windows Server installation'
-slug: windows-first-config
 excerpt: 'Find out how to enable Remote Desktop, ICMP and boot logs'
-section: 'Getting started'
 updated: 2023-02-15
 ---
 
@@ -23,7 +21,7 @@ After a fresh installation of a Windows Server operating system on a VPS, remote
 
 ### Step 1: Log in with KVM
 
-To access the KVM console of your VPS, please follow the [VPS KVM guide](https://docs.ovh.com/ca/en/vps/use-kvm-for-vps/).
+To access the KVM console of your VPS, please follow the [VPS KVM guide](/pages/cloud/vps/using_kvm_for_vps).
 
 ### Step 2: Finish the Windows setup
 
@@ -58,12 +56,12 @@ Here you can enable the respective `ICMP` and `Remote Desktop` rules (right-clic
 Your server should now be responding to requests using these protocols.
 
 > [!primary]
-> To secure your Windows system with firewall rules, refer to our guide "[Configuring the firewall on Windows](https://docs.ovh.com/ca/en/vps/vps-firewall-windows/)".
+> To secure your Windows system with firewall rules, refer to our guide "[Configuring the firewall on Windows](/pages/cloud/vps/activate-port-firewall-soft-win)".
 >
 
 ### Activating Windows boot logs (optional)
 
-Connect to your server via a Remote Desktop or [KVM](https://docs.ovh.com/ca/en/vps/use-kvm-for-vps/)) session. Open the Windows start menu and click on `Run`{.action}.
+Connect to your server via a Remote Desktop or [KVM](/pages/cloud/vps/using_kvm_for_vps)) session. Open the Windows start menu and click on `Run`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
@@ -77,7 +75,7 @@ In the new window, check the box next to `Boot log`. Click on `OK`{.action}.
 
 The next time your server boots, the logs will be saved into a .txt file. The file path is ```C:\Windows\ntbtlog.txt```.
 
-To access the contents of this file in rescue mode, please follow the instructions in the [VPS rescue mode guide](https://docs.ovh.com/ca/en/vps/rescue/).
+To access the contents of this file in rescue mode, please follow the instructions in the [VPS rescue mode guide](/pages/cloud/vps/rescue).
 
 ## Go further
 

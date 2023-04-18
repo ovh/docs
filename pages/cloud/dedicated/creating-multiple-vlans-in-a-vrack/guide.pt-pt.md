@@ -1,8 +1,6 @@
 ---
 title: 'Criar várias VLAN no vRack'
-slug: criar-vlan-vrack
 excerpt: 'Saiba como criar várias VLAN no vRack'
-section: vRack
 updated: 2022-02-24
 ---
 
@@ -10,7 +8,7 @@ updated: 2022-02-24
 
 ## Sumário
 
-A [configuração standard do vRack](https://docs.ovh.com/pt/dedicated/configurar-varios-servidores-dedicados-no-vrack/){.external} permite-lhe criar uma única VLAN. Isto significa que só pode utilizar um endereço de IP de cada vez. No entanto, com a versão 2.0 da configuração do vRack, pode criar até 4000 redes locais virtuais num único vRack. Assim, só pode utilizar cada endereço de IP até 4000 vezes.
+A [configuração standard do vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external} permite-lhe criar uma única VLAN. Isto significa que só pode utilizar um endereço de IP de cada vez. No entanto, com a versão 2.0 da configuração do vRack, pode criar até 4000 redes locais virtuais num único vRack. Assim, só pode utilizar cada endereço de IP até 4000 vezes.
 
 **Este manual explica-lhe como criar várias VLAN no vRack.**
 
@@ -22,7 +20,7 @@ A [configuração standard do vRack](https://docs.ovh.com/pt/dedicated/configura
 - Ter acesso ao intervalo de endereços de IP privados escolhidos.
 - Ter acesso root ao servidor via SSH (Linux).
 - Estar ligado com uma conta de administrador (Windows).
-- Ter finalizado a [configuração do vRack](https://docs.ovh.com/pt/dedicated/configurar-varios-servidores-dedicados-no-vrack/){.external}.
+- Ter finalizado a [configuração do vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}.
 
 > [!warning]
 > Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
@@ -197,6 +195,6 @@ Finalmente, clique no botão `OK`{.action} para guardar as alterações e reinic
 
 ## Quer saber mais?
 
-[Configurar vários servidores dedicados no vRack](https://docs.ovh.com/pt/dedicated/configurar-varios-servidores-dedicados-no-vrack/){.external}
+[Configurar vários servidores dedicados no vRack](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

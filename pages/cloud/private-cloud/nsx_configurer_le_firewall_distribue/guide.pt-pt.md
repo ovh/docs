@@ -1,10 +1,7 @@
 ---
 title: Configurar a firewall distribuída NSX-v (EN)
-slug: nsx-distributed-firewall-configuration
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/nsx-distributed-firewall-configuration/'
-section: NSX-v
-order: 08
+    canonical: '/pages/cloud/private-cloud/nsx_configurer_le_firewall_distribue'
 updated: 2021-12-01
 ---
 
@@ -12,7 +9,7 @@ updated: 2021-12-01
 
 ## Objective
 
-As does the [NSX Edge Firewall](https://docs.ovh.com/pt/private-cloud/nsx-edge-firewall-configuration/), the distibuted firewall restricts or allows network traffic based on rules applied to network nodes or groups.
+As does the [NSX Edge Firewall](/pages/cloud/private-cloud/nsx_configurer_le_edge_firewall), the distibuted firewall restricts or allows network traffic based on rules applied to network nodes or groups.
 
 The distributed firewall optimizes traffic and bandwidth consumption by applying rules to packets before they are sent to the Edge firewall. 
 

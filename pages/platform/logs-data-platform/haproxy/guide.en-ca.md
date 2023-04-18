@@ -1,8 +1,5 @@
 ---
 title: Supervising your HAProxy deployment with Logs Data Platform
-slug: haproxy
-order: 05
-section: Use cases
 excerpt: Monitor and analyze your web applications with HAProxy and Logs Data Platform.
 updated: 2020-07-27
 ---
@@ -29,9 +26,9 @@ This guide will show you two ways to forward your HAProxy logs to the Logs Data 
 
 For this tutorial, you should have read the following ones to fully understand what's next:
 
-- [Starting with Logs Data Platform.](../quick-start){.ref}
-- [Field Naming conventions of Logs Data Platform.](../field-naming-conventions){.ref}
-- [How to setup a Logstash input?](../logstash-input){.ref}
+- [Starting with Logs Data Platform.](/pages/platform/logs-data-platform/quick_start){.ref}
+- [Field Naming conventions of Logs Data Platform.](/pages/platform/logs-data-platform/field_naming_conventions){.ref}
+- [How to setup a Logstash input?](/pages/platform/logs-data-platform/logstash_input){.ref}
 
 ## Instructions
 
@@ -95,7 +92,7 @@ For both methods you will need our SSL certificate to enable TLS communication. 
 
 ### Exploit a dedicated Logstash Data-Gathering tool
 
-Once you have activated the tcp or http logs of your HAProxy instance, you must then send them and transform them. For this part of the tutorial you will need your own dedicated Logstash collector. Logstash is one of the most powerful tool to transform logs. Create a Logstash data-gathering tool as described in the [Logstash tutorial](../logstash-input){.ref}, and configure the port **1514** (or the port of your choice) as the exposed port.
+Once you have activated the tcp or http logs of your HAProxy instance, you must then send them and transform them. For this part of the tutorial you will need your own dedicated Logstash collector. Logstash is one of the most powerful tool to transform logs. Create a Logstash data-gathering tool as described in the [Logstash tutorial](/pages/platform/logs-data-platform/logstash_input){.ref}, and configure the port **1514** (or the port of your choice) as the exposed port.
 
 ![edit\_logstash](images/logstash_edit.png){.thumbnail}
 
@@ -339,7 +336,7 @@ output.elasticsearch:
 
 ```
 
-In this configuration you have to replace the token by your X-OVH-TOKEN value of your destination stream. Note that you also got to indicate the username and password or your [token](../tokens-logs-data-platform){.ref}. Don't change the destination index **ldp-logs**. Start your filebeat and head to Logs Data Platform to start analyzing your logs.
+In this configuration you have to replace the token by your X-OVH-TOKEN value of your destination stream. Note that you also got to indicate the username and password or your [token](/pages/platform/logs-data-platform/tokens_logs_data_platform){.ref}. Don't change the destination index **ldp-logs**. Start your filebeat and head to Logs Data Platform to start analyzing your logs.
 
 ```shell-session
 $ sudo systemctl enable filebeat
@@ -347,7 +344,7 @@ $ sudo systemctl start filebeat
 
 ### Dashboard and alerts
 
-Here is an example of a dashboard that you can craft from the HAProxy logs. HAProxy logs give you a lot of information about your application and infrastructure. It's up to you to exploit them in whichever way suits you best. You can also configure some [alerts](../alerting){.ref} to warn you when a backend is down or is not responding properly.
+Here is an example of a dashboard that you can craft from the HAProxy logs. HAProxy logs give you a lot of information about your application and infrastructure. It's up to you to exploit them in whichever way suits you best. You can also configure some [alerts](/pages/platform/logs-data-platform/alerting){.ref} to warn you when a backend is down or is not responding properly.
 
 ![dashboard\_1](images/dashboard_1.png){.thumbnail}
 ![dashboard\_2](images/dashboard_2.png){.thumbnail}
@@ -355,7 +352,7 @@ Here is an example of a dashboard that you can craft from the HAProxy logs. HAPr
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/ca/en/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

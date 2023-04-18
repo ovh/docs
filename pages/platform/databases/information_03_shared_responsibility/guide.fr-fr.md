@@ -1,11 +1,8 @@
 ---
 title: Public Cloud Databases - Partage des responsabilités (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
-slug: responsibility-model
-section: Informations générales
-order: 030
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/'
+    canonical: '/pages/platform/databases/information_03_shared_responsibility'
 updated: 2021-09-28
 ---
 

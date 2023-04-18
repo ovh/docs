@@ -1,8 +1,6 @@
 ---
 title: 'Envoyer des SMS avec l’API OVHcloud en C#'
-slug: envoyer_des_sms_avec_lapi_ovh_en_c
 excerpt: 'Découvrez comment envoyer des SMS avec l’api OVHcloud en C#'
-section: 'Envoyer des SMS'
 updated: 2022-11-21
 ---
 
@@ -26,7 +24,7 @@ Les SMS sont largement utilisés pour diffuser des informations pratiques, suivr
 
 Nous implémenterons l'appel au Webservice directement dans le code. Dans un but de lisibilité et de simplicité, la partie de consommation de l'API n'est pas factorisée ni implémentée complètement (deserialisation json, etc.).
 
-Pour l'implémentation de l'appel au Webservice, nous vous conseillons de lire notre guide sur les [premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
+Pour l'implémentation de l'appel au Webservice, nous vous conseillons de lire notre guide sur les [premiers pas avec les API OVHcloud](/pages/account/api/first-steps).
 
 Dans ce guide nous appellerons deux méthodes :
 

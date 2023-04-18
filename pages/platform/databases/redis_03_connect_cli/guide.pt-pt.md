@@ -1,11 +1,8 @@
 ---
 title: Redis - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for Redis using the Command Line Interface (CLI)
-slug: redis/connect-cli
-section: Redis - Guides
-order: 030
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-cli/'
+    canonical: '/pages/platform/databases/redis_03_connect_cli'
 updated: 2022-03-24
 ---
 
@@ -21,8 +18,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt);
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account;
-- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pt/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your Redis instance](https://docs.ovh.com/pt/publiccloud/databases/redis/configure-redis-instance/) to accept incoming connections
+- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](/pages/platform/databases/databases_01_order_control_panel) can help you to meet this requirement)
+- [Configure your Redis instance](/pages/platform/databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
 
 ## Concept
 
@@ -117,9 +114,9 @@ In case the user doesn't have the right privilege, you will get a *NOPERM* respo
 
 ## Go further
 
-[Redis capabilities and limitations](https://docs.ovh.com/pt/publiccloud/databases/redis/capabilities/)
+[Redis capabilities and limitations](/pages/platform/databases/redis_01_capabilities)
 
-[Configuring vRack for Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-vrack/)
+[Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack)
 
 Visit the [Github examples repository](https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/redis) to find how to connect to your database with several languages.
 

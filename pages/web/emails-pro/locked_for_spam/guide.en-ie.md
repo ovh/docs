@@ -1,9 +1,6 @@
 ---
 title: 'What to do if your account is blocked for spam'
-slug: blocked-for-spam
 excerpt: 'Find out what to do if your email address has been blocked for spam'
-section: Diagnostics
-order: 1
 updated: 2020-04-20
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: Object Storage - Creando un cubo (EN)
-slug: s3/create-bucket
-section: General guides to start
-order: 040
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/create-container/'
+    canonical: '/pages/cloud/storage/object_storage/s3_create_bucket'
 updated: 2022-09-27
 ---
 
@@ -16,8 +13,8 @@ updated: 2022-09-27
 
 > [!primary]
 >
-> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](https://docs.ovh.com/us/es/storage/object-storage/pcs/create-container/)
-> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](https://docs.ovh.com/us/es/storage/pca/creacion-de-contenedor/).
+> - If you are interested in storage class ***Standard object storage - SWIFT API***, please follow this [guide](/pages/cloud/storage/object_storage/pcs_create_container)
+> - If you are interested in storage class ***Cloud Archive - SWIFT API***, please follow this [guide](/pages/cloud/storage/object_storage/pca_create_container).
 >
 
 ## Requirements

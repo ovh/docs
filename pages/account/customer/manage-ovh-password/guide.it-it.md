@@ -1,9 +1,6 @@
 ---
 title: 'Impostare e gestire la password di un account OVHcloud'
-slug: gestire-la-password
 excerpt: 'Come definire, modificare e gestire la tua password dallo Spazio Cliente'
-section: 'Per iniziare'
-order: 4
 updated: 2019-04-12
 ---
 
@@ -46,7 +43,7 @@ Esistono diversi modi efficaci per creare una password, come il **metodo fonetic
 
 In rete sono inoltre disponibili numerosi strumenti gratuiti che permettono di generare password del tutto sicure, difficili da decifrare e semplici da ricordare.
 
-Per maggiori informazioni sulla sicurezza delle password, consulta la sezione [Per saperne di più](https://docs.ovh.com/it/customer/gestire-la-password/#per-saperne-di-piu_2){.external} di questa guida.
+Per maggiori informazioni sulla sicurezza delle password, consulta la sezione [Per saperne di più](/pages/account/customer/manage-ovh-password#per-saperne-di-piu_2){.external} di questa guida.
 
 ### Utilizza un software per la gestione di password 
 

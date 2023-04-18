@@ -1,9 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Use Speech-to-Text powers on audio and video
-slug: notebooks/tuto-speech-to-text-recognition
 excerpt: How to convert Speech to Text using AI Notebooks
-section: AI Notebooks - Tutorials
-order: 08
 updated: 2022-09-01
 ---
 
@@ -36,7 +33,7 @@ This documentation allows you to test and launch **3 AI Notebooks** allowing you
 
 ## Instructions
 
-You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or via the ovhai [CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/getting-started-cli/).
+You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or via the ovhai [CLI](/pages/platform/ai/cli_11_cli_getting_started).
 
 Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/speech-to-text/miniconda).
 
@@ -116,7 +113,7 @@ Once the repository has been cloned, find your notebook by following this path: 
 
 ## Go further
 
-- With NLP, you can do **sentiment analysis**. For more information, click [here](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/tuto-hugging-face-sentiment-analysis/).
+- With NLP, you can do **sentiment analysis**. For more information, click [here](/pages/platform/ai/notebook_tuto_05_hugging_face_sentiment_analysis).
 
 ## Feedback
 

@@ -1,8 +1,6 @@
 ---
 title: 'Instalacja Veeam Backup & Replication'
-slug: veeam/veeam-backup-replication
 excerpt: 'Dowiedz się, jak zainstalować serwer Veeam Backup & Replication z Veeam Enterprise'
-section: Veeam
 updated: 2022-03-07
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Activating and using Veeam Managed Backup
-slug: veeam-backup-as-a-service
 excerpt: Find out how to enable and use the Veeam Managed Backup option to secure your VMs
-section: 'OVHcloud services and options'
 updated: 2021-12-07
 ---
 
@@ -20,9 +18,9 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private C
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- a user account with access to vSphere and the permission ["Add resources"](../change-users-rights/) for the pertinent data centre
-- [vSphere High Availability (HA)](../vmware-ha-high-availability) enabled
-- [Distributed Resource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler) enabled
+- a user account with access to vSphere and the permission ["Add resources"](/pages/cloud/private-cloud/change_users_rights) for the pertinent data centre
+- [vSphere High Availability (HA)](/pages/cloud/private-cloud/vmware_ha_high_availability) enabled
+- [Distributed Resource Scheduler (DRS)](/pages/cloud/private-cloud/vmware_drs_distributed_ressource_scheduler_new) enabled
 - Windows SPLA Licensing enabled
 
 ## Instructions

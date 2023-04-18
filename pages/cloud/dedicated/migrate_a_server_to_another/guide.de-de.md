@@ -1,9 +1,6 @@
 ---
 title: Migrieren von Daten von einem Dedicated Server auf einen anderen
-slug: migrieren-von-daten-zwischen-dedizierten-servern
 excerpt: Erfahren Sie hier, wie Sie Daten zwischen zwei dedizierten Servern migrieren können
-section: Erste Schritte
-order: 5
 updated: 2021-09-16
 ---
 
@@ -48,8 +45,8 @@ Wenn eine Änderung von Betriebssystem- oder Software-Versionen erforderlich ist
 
 Bei der Datenmigration wird in der Regel das Kopieren von Dateien von einem Server auf einen anderen erforderlich. Hierfür gibt es mehrere Möglichkeiten:
 
-- Die einfachste Methode ist die Verwendung eines geeigneten Programms wie [SFTP](https://docs.ovh.com/de/dedicated/daten-via-sftp-exportieren-und-ablegen/).
-- Die andere Option besteht darin, beide Server miteinander zu [synchronisieren](https://docs.ovh.com/de/dedicated/kopieren-daten-server-rsync/).
+- Die einfachste Methode ist die Verwendung eines geeigneten Programms wie [SFTP](/pages/cloud/dedicated/comment-deposer-ou-recuperer-des-donnees-sur-un-serveur-dedie-via-sftp).
+- Die andere Option besteht darin, beide Server miteinander zu [synchronisieren](/pages/cloud/dedicated/how-to-copy-data-from-one-dedicated-server-to-another-using-rsync).
 
 ### Verwendung des Backup Storage (nur verfügbar für OVHcloud und So you Start)
 
@@ -64,7 +61,7 @@ Mit der Option [Backup Storage](https://www.ovhcloud.com/de/bare-metal/backup-st
 
 Sie können Zugriff auf den Backup Storage von Ihrem neuen Server aus erlauben. So verfügen Sie über ein Gateway zum Datentransfer.
 
-Weitere Informationen dazu finden Sie in unserer Anleitung "[Backup Storage auf einem Dedicated Server verwenden](https://docs.ovh.com/de/dedicated/dienste-storage-backup/)".
+Weitere Informationen dazu finden Sie in unserer Anleitung "[Backup Storage auf einem Dedicated Server verwenden](/pages/cloud/dedicated/services_backup_storage)".
 
 ### Migration einer Additional IP (nur verfügbar für OVHcloud und So you Start)
 
@@ -80,7 +77,7 @@ Weitere Informationen dazu finden Sie in unserer Anleitung "[Backup Storage auf 
 Wenn IP-Adressen-Reputation für Sie wichtig ist, empfehlen wir Ihnen dringend die Verwendung von [Additional IPs](https://www.ovhcloud.com/de/bare-metal/ip/), da diese bei einer Migration beibehalten werden können.
 
 Wenn Sie diese IP-Adressen in Ihrem Kunden-Account haben, können Sie diese einfach auf den neuen Server umziehen.
-Lesen Sie hierzu unsere Anleitung: [Eine Additional IP umziehen](https://docs.ovh.com/de/dedicated/ip-fo-move/).
+Lesen Sie hierzu unsere Anleitung: [Eine Additional IP umziehen](/pages/cloud/dedicated/move-failover-ip).
 
 > [!alert]
 >

@@ -1,8 +1,6 @@
 ---
 title: 'vRack zwischen Public Cloud und Dedicated Server einrichten'
-slug: vrack-zwischen-public-cloud-dedicated-server-einrichten
 excerpt: 'Erfahren Sie hier, wie Sie ein privates Netzwerk zwischen Public Cloud Instanzen und Dedicated Servern einrichten'
-section: vRack
 updated: 2021-10-15
 ---
 
@@ -20,7 +18,7 @@ OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein private
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) (kompatibel mit vRack) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
@@ -35,7 +33,7 @@ OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein private
 
 ### Public Cloud Projekt zum vRack hinzufügen
 
-Nachdem Ihr [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/create_a_public_cloud_project/) fertig konfiguriert ist, muss es zum vRack hinzugefügt werden. Dies kann auf zwei Arten geschehen.
+Nachdem Ihr [Public Cloud Projekt](/pages/platform/public-cloud/create_a_public_cloud_project) fertig konfiguriert ist, muss es zum vRack hinzugefügt werden. Dies kann auf zwei Arten geschehen.
 
 #### Option 1: Einen neuen vRack Dienst bestellen, wenn Sie noch keinen verwenden (kostenlos).
 
@@ -53,7 +51,7 @@ Wählen Sie in der Liste der verfügbaren Dienstleistungen das Projekt aus, das 
 
 ![Projekt zum vRack hinzufügen](images/addprojectvrack.png){.thumbnail}
 
-#### Option 2: Im Public Cloud Interface ein [neues vRack erstellen oder ein bestehendes hinzufügen](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#schritt-1-vrack-aktivieren-und-verwalten).
+#### Option 2: Im Public Cloud Interface ein [neues vRack erstellen oder ein bestehendes hinzufügen](/pages/platform/network-services/getting-started-07-creating-vrack#schritt-1-vrack-aktivieren-und-verwalten).
 
 
 ### Instanz in das vRack integrieren
@@ -65,11 +63,11 @@ Es können zwei Situationen auftreten:
 
 #### Fälle einer neuen Instanz
 
-Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden: [Erstellen Ihrer ersten Public Cloud-Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
+Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden: [Erstellen Ihrer ersten Public Cloud-Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
 
 #### Im Fall einer bereits bestehenden Instanz
 
-Sie können eine bestehende Instanz einem privaten Netzwerk zuweisen. Weitere Informationen finden Sie in [diesem Abschnitt](https://docs.ovh.com/de/public-cloud/public-cloud-vrack/#im-fall-einer-bestehenden-instanz_2) der zugehörigen Anleitung.
+Sie können eine bestehende Instanz einem privaten Netzwerk zuweisen. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/platform/network-services/getting-started-07-creating-vrack#im-fall-einer-bestehenden-instanz_2) der zugehörigen Anleitung.
 
 ### VLAN ID erstellen
 
@@ -77,7 +75,7 @@ Damit beide Dienste miteinander kommunizieren können, müssen sie mit derselben
 
 #### Verwendung der Standard-ID
 
-Die VLAN ID für dedizierte Server ist standardmäßig **0**. Um diese VLAN ID zu verwenden, müssen Sie das mit Ihrer Instanz verbundene private Netzwerk als VLAN **0** "taggen". Dazu muss die [OVHcloud API (EN)](https://docs.ovh.com/de/publiccloud/network-services/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) verwendet werden.
+Die VLAN ID für dedizierte Server ist standardmäßig **0**. Um diese VLAN ID zu verwenden, müssen Sie das mit Ihrer Instanz verbundene private Netzwerk als VLAN **0** "taggen". Dazu muss die [OVHcloud API (EN)](/pages/platform/network-services/getting-started-07-creating-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) verwendet werden.
 
 
 > [!primary]
@@ -102,11 +100,11 @@ Wenn Sie dieses Feld nicht anhaken, erhält das System eine zufällige VLAN ID.
 > Anders als bei Dedicated Servern ist es nicht notwendig, das VLAN direkt in die Netzwerkkonfigurationsdatei der Public Cloud Instanz zu "taggen", sobald die VLAN ID im OVHcloud Kundencenter definiert ist.
 >
 
-Beispiel: Wenn Sie das mit Ihrer Instanz verbundene private Netzwerk mit der VLAN ID 2 definiert haben, muss das private Netzwerkinterface Ihres dedizierten Servers mit VLAN 2 "getagt" werden. Weitere Informationen finden Sie in folgender Anleitung: "[Mehrere VLANs im vRack erstellen](https://docs.ovh.com/de/dedicated/vrack-vlan-erstellen/)".
+Beispiel: Wenn Sie das mit Ihrer Instanz verbundene private Netzwerk mit der VLAN ID 2 definiert haben, muss das private Netzwerkinterface Ihres dedizierten Servers mit VLAN 2 "getagt" werden. Weitere Informationen finden Sie in folgender Anleitung: "[Mehrere VLANs im vRack erstellen](/pages/cloud/dedicated/creating-multiple-vlans-in-a-vrack)".
 
 ### Netzwerkinterfaces konfigurieren
 
-Konfigurieren Sie anschließend die Netzwerkinterfaces auf Ihrer neuen Public Cloud Instanz und Ihrem Dedicated Server mithilfe dieser Anleitung: "[Mehrere dedizierte Server im vRack konfigurieren](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/)".
+Konfigurieren Sie anschließend die Netzwerkinterfaces auf Ihrer neuen Public Cloud Instanz und Ihrem Dedicated Server mithilfe dieser Anleitung: "[Mehrere dedizierte Server im vRack konfigurieren](/pages/cloud/dedicated/vrack_configuring_on_dedicated_server)".
 
 ## Weiterführende Informationen
 

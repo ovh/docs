@@ -1,9 +1,6 @@
 ---
 title: Using tokens to query Logs Data Platform
-slug: tokens-logs-data-platform
-order: 7
 excerpt: If you want to give access to your logs to a software or automatize some tasks depending on your logs. You will maybe need to access them through the API. The most secure way to do this is to use tokens.
-section: Features
 updated: 2022-10-13
 ---
 
@@ -15,7 +12,7 @@ With Logs Data Platform, there are 3 ways to query your logs.
 
 - The [Graylog Web Interface](https://gra1.logs.ovh.com){.external}
 - The [Graylog API](https://gra1.logs.ovh.com/api/api-browser/global/index.html#!/search47universal47relative/searchRelative){.external}
-- The [OpenSearch API](https://opensearch.org/docs/latest/opensearch/query-dsl/index/){.external} located at the port 9200 of your cluster (find its address in the **Home** Page) against your [alias](../opensearch-dashboards/){.ref}.
+- The [OpenSearch API](https://opensearch.org/docs/latest/opensearch/query-dsl/index/){.external} located at the port 9200 of your cluster (find its address in the **Home** Page) against your [alias](/pages/platform/logs-data-platform/opensearch_dashboards){.ref}.
 
 So you can pop up a [Grafana](../using-grafana-with-logs){.ref} or even [a terminal Dashboard for Graylog](https://github.com/Graylog2/cli-dashboard){.external}.
 
@@ -215,8 +212,8 @@ The only place you cannot use your token is the Graylog Web Interface.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
+- Documentation: [Guides](/us/en/logs-data-platform/){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
 

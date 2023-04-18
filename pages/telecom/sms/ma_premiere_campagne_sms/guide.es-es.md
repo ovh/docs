@@ -1,8 +1,6 @@
 ---
 title: Crear una campaña de SMS
-slug: crear-una-campana-sms
 excerpt: Cómo crear una campaña de envío de SMS
-section: Primeros pasos
 updated: 2022-08-05
 ---
 
@@ -41,7 +39,7 @@ Para añadir una lista de contactos, abra la pestaña `Contactos`{.action} y hag
 
 ![firstsms](images/firstsms03.png){.thumbnail}
 
-En [esta guía](../lista-de-destinatarios-sms/) se explica cómo hacerlo.
+En [esta guía](/pages/telecom/sms/liste_de_destinataire_sms) se explica cómo hacerlo.
 
 #### Añadir una agenda de contactos
 
@@ -51,7 +49,7 @@ Para añadir una agenda de contactos, abra la pestaña `Contactos`{.action} y ha
 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
-Para más información sobre las agendas de contactos, consulte [esta guía](../agenda-de-contactos-de-sms/).
+Para más información sobre las agendas de contactos, consulte [esta guía](/pages/telecom/sms/gerer_mes_carnets_dadresses_sms).
 
 ### 2. Crear un remitente
 
@@ -61,7 +59,7 @@ Sin embargo, en algunos casos puede ser más apropiado utilizar un remitente alf
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-Para ello, consulte el apartado de la guía «[Enviar SMS desde el área de cliente](../enviar-sms-desde-el-area-de-cliente/#3-elegir-el-remitente-del-sms)» relativo a la elección de remitentes.
+Para ello, consulte el apartado de la guía «[Enviar SMS desde el área de cliente](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#3-elegir-el-remitente-del-sms)» relativo a la elección de remitentes.
 
 ### 3. El envío de una campaña de SMS
 
@@ -69,7 +67,7 @@ La pestaña `Mensaje y campaña`{.action} le permitirá acceder a las opciones d
 
 ![firstsms](images/firstsms02.png){.thumbnail}
 
-Para enviar un SMS unitario desde el área de cliente, consulte [la guía correspondiente](../enviar-sms-desde-el-area-de-cliente/).
+Para enviar un SMS unitario desde el área de cliente, consulte [la guía correspondiente](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client).
 
 Para enviar una campaña de SMS, haga clic en `Gestión de campañas`{.action} y seleccione `Crear una campaña`{.action}.
 
@@ -89,6 +87,6 @@ Haga clic en el botón `Enviar`{.action} para enviar o planificar la campaña.
 
 ## Más información
 
-Consulte [nuestra guía relativa a la gestión del historial de SMS](../historial-de-envios/).
+Consulte [nuestra guía relativa a la gestión del historial de SMS](/pages/telecom/sms/gerer_l_historique_des_sms).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

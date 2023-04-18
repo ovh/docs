@@ -1,9 +1,6 @@
 ---
 title: "Tutorial - Dodaj dynamiczne treści do statycznej strony internetowej generowanej przez Cecil"
-slug: static-site-generator-cecil-use-api
 excerpt: "Dowiedz się, jak dodać połączenie do zewnętrznego API na stronie statycznej WWW"
-section: 'Tutoriale'
-order: 031
 updated: 2023-01-16
 ---
 
@@ -30,7 +27,7 @@ Tutorial wyjaśnia, jak używać generatora strony [Cecil](https://cecil.app){.e
 
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) z dostępem SSH Dostęp ten pozwala na zainstalowanie w wierszu poleceń jednego lub kilku rozwiązań alternatywnych wobec rozwiązań oferowanych domyślnie w naszej ofercie hostingu.
 - Zaznajomiony z wprowadzaniem wiersza poleceń.
-- Instalacja i skonfigurowanie aplikacji **Cecil** na Twoim hostingu (zapoznaj się z naszym tutorialem [dotyczącym instalacji i konfiguracji Cecil](https://docs.ovh.com/pl/hosting/install-configure-cecil/)).
+- Instalacja i skonfigurowanie aplikacji **Cecil** na Twoim hostingu (zapoznaj się z naszym tutorialem [dotyczącym instalacji i konfiguracji Cecil](/pages/web/hosting/static_website_installation_cecil)).
 
 ## W praktyce
 
@@ -46,7 +43,7 @@ Etapy te są następujące:
 
 ### Stwórz nową stronę
 
-Przygotuj środowisko, logując się przez SSH na hostingu i postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Instalacja i konfiguracja Cecil](https://docs.ovh.com/pl/hosting/install-configure-cecil/)", aby zainstalować aplikację **Cecil** w dedykowanym katalogu.
+Przygotuj środowisko, logując się przez SSH na hostingu i postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Instalacja i konfiguracja Cecil](/pages/web/hosting/static_website_installation_cecil)", aby zainstalować aplikację **Cecil** w dedykowanym katalogu.
 
 Stwórz katalog i umieszczaj go w:
 

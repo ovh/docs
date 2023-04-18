@@ -1,9 +1,6 @@
 ---
 title: Utilisation Cyberduck (MAC)
-slug: utilisation-cyberduck-mac
 excerpt: Retrouvez dans ce guide de l’aide concernant l’utilisation de l’application Cyberduck.
-section: FTP et SSH
-order: 05
 updated: 2020-05-05
 ---
 

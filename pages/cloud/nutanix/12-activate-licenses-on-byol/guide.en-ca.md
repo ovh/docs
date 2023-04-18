@@ -1,9 +1,6 @@
 ---
 title: Managing licences for a Nutanix on OVHcloud BYOL offer
-slug: activate-licence-on-nutanix-byol
 excerpt: 'How to add and remove licences in a Nutanix cluster with the BYOL offer'
-section: Getting started
-order: 12
 updated: 2022-11-16
 ---
 

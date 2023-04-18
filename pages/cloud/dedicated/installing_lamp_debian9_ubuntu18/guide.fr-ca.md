@@ -1,8 +1,6 @@
 ---
 title: 'Comment installer un serveur LAMP sous Debian 9 et Ubuntu 18'
-slug: installer-lamp-debian-ubuntu
 excerpt: 'Laissez-vous guider pour installer un serveur LAMP'
-section: Tutoriel
 updated: 2020-08-06
 ---
 
@@ -46,7 +44,7 @@ Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre br
 
 Sur une distribution Debian ou Ubuntu récente, nous vous conseillons de réinstaller totalement votre serveur si cela est possible sur votre machine. Attention, cette action **effacera totalement vos données**.
 
-Connectez-vous en SSH en tant qu'administrateur « root ». N'hésitez pas à vous reporter au [guide SSH](../ssh-introduction/){.external}.
+Connectez-vous en SSH en tant qu'administrateur « root ». N'hésitez pas à vous reporter au [guide SSH](/pages/cloud/dedicated/ssh_introduction){.external}.
 
 Une fois le système installé, il convient de le mettre à jour : 
 

@@ -1,10 +1,8 @@
 ---
 title: Comment configurer le reverse DNS de ma connexion
-slug: comment-configurer-le-reverse-dns-de-ma-connexion
 legacy_guide_number: '7962659'
 space_key: CRXDSL
 space_name: XDSL
-section: Configuration de mon offre
 updated: 2022-06-02
 ---
 
@@ -23,7 +21,7 @@ Par exemple, dans le cadre d'utilisation d'un serveur mail, si l'e-mail est envo
 - Un accès xDSL ou fibre OVHcloud.
 
 Il est également possible de configurer les Reverse DNS des blocs IP fournis en option sur nos accès.<br>
-Retrouvez plus d'informations sur notre guide « [Commander et gérer un bloc IP /29](../comment-commander-et-gerer-un-bloc-ip-29/) ».
+Retrouvez plus d'informations sur notre guide « [Commander et gérer un bloc IP /29](/pages/telecom/xdsl/comment_commander_et_gerer_un_bloc_ip_29) ».
 
 ## En pratique
 
@@ -61,7 +59,7 @@ ovhtelecom.fr has address 198.27.92.21
 
 Dans les deux cas, nous voyons que le nom de domaine pointe bien vers notre adresse IP 198.27.92.21.<br>
 
-Si ce n'est pas le cas, nous vous invitons à vous rapprocher de votre bureau d'enregistrement afin de configurer votre nom de domaine. Si OVHcloud est votre bureau d'enregistrement, consultez le guide « [Editer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) ».
+Si ce n'est pas le cas, nous vous invitons à vous rapprocher de votre bureau d'enregistrement afin de configurer votre nom de domaine. Si OVHcloud est votre bureau d'enregistrement, consultez le guide « [Editer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) ».
 
 Nous pouvons maintenant passer à l'étape suivante qui est la configuration de notre Reverse DNS de l'adresse 198.27.92.21.
 

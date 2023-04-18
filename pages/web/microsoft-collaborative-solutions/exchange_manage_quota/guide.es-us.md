@@ -1,11 +1,8 @@
 ---
 title: Gestionar el espacio de almacenamiento de una cuenta de correo
-slug: manage-email-quota
 excerpt: "Cómo gestionar y optimizar el espacio de almacenamiento de una dirección de correo"
-section: 'Diagnóstico'
-order: 02
 routes:
-  canonical: "https://docs.ovh.com/es/emails/manage-email-quota/"
+  canonical: "/pages/web/emails/email_manage_quota"
 updated: 2022-11-17
 ---
 
@@ -29,4 +26,4 @@ Cada cuenta de correo de OVHcloud dispone de un espacio de almacenamiento dedica
 
 ## Procedimiento <a name="instructions"></a>
 
-Siga nuestra guía [Gestionar el espacio de almacenamiento de una cuenta de correo](https://docs.ovh.com/us/es/emails/manage-email-quota/) en la sección "Correo electrónico".
+Siga nuestra guía [Gestionar el espacio de almacenamiento de una cuenta de correo](/pages/web/emails/email_manage_quota) en la sección "Correo electrónico".

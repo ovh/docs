@@ -1,9 +1,6 @@
 ---
 title: 'Konfigurieren Ihres Datenbankservers'
-slug: konfigurieren-ihres-datenbank-servers
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
-section: Konfiguration
-order: 06
 updated: 2023-02-15
 ---
 
@@ -226,7 +223,7 @@ Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **V
 
 ![Web Cloud Databases](images/web-cloud-databases-SFTP01.png){.thumbnail}
 
-Um sich via **SFTP** einzuloggen, können Sie den Client von FileZilla verwenden. Diese Anleitung kann Ihnen dabei helfen: [Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
+Um sich via **SFTP** einzuloggen, können Sie den Client von FileZilla verwenden. Diese Anleitung kann Ihnen dabei helfen: [Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_guide)
 
 Wenn diese Datei leer ist, haben Sie keine langsamen Anfragen.
 
@@ -303,7 +300,7 @@ Verwenden Sie beispielsweise nicht **"HAVING"**. Dies erhöht die Zahl der Abfra
 
 ## Weiterführende Informationen
 
-[Verzeichnis von IP-Adressen für die Webhosting Cluster](https://docs.ovh.com/de/hosting/verzeichnis-der-ip-adressen-web-hosting-cluster/)
+[Verzeichnis von IP-Adressen für die Webhosting Cluster](/pages/web/hosting/clusters_and_shared_hosting_IP)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

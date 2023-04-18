@@ -2,9 +2,6 @@
 deprecated: true
 title: 'Exchange 2013: Outlook Exchange 2013 licentie handleiding'
 excerpt: 'Exchange 2013: Outlook Exchange 2013 licentie handleiding'
-slug: exchange_2013_outlook_exchange_2013_licentie_handleiding
-section: Office
-order: 01
 updated: 2022-10-05
 ---
 

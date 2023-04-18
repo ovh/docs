@@ -1,9 +1,6 @@
 ---
 title: Public Cloud Network Services - FAQ
-slug: faq
 excerpt: Frequently Asked Questions on Public Cloud Network Services
-section: Getting started
-order: 03
 updated: 2022-11-02
 ---
 
@@ -82,7 +79,7 @@ We don't support this mode currently. For the moment, Gateway supports only sing
 
 ### Can the L3 virtual router (Gateway) help me if I would like to have a gateway to access the Internet for all my VMs in my vRack?
 
-Yes, that's exactly the use case for Gateway (L3 router with SNAT option). Currently, only instances in **private mode** of networking that are connected to a single-region private network are supported. For more information, please refer to our [concept guide on Public Cloud Networking](https://docs.ovh.com/gb/en/publiccloud/network-services/networking-concepts/).
+Yes, that's exactly the use case for Gateway (L3 router with SNAT option). Currently, only instances in **private mode** of networking that are connected to a single-region private network are supported. For more information, please refer to our [concept guide on Public Cloud Networking](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts).
 
 ### Will Gateway be provided with a public IP and port?
 

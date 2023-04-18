@@ -1,9 +1,6 @@
 ---
 title: 'Creating an email address with an MX Plan solution'
-slug: hosted_email_how_to_set_up_an_email_address
 excerpt: 'Find out how to create an email address with an MX Plan solution'
-section: 'Getting started'
-order: 02
 updated: 2022-10-11
 ---
 
@@ -56,7 +53,7 @@ Repeat this step as necessary according to the number of accounts to create.
 
 On the [Webmail login page](https://www.ovhcloud.com/asia/mail/){.external}, enter your email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via Outlook Web App (OWA) webmail, use our guide ["Using the Outlook Web App with an email account"](https://docs.ovh.com/asia/en/emails/using-owa/){.external}.
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via Outlook Web App (OWA) webmail, use our guide ["Using the Outlook Web App with an email account"](/pages/web/emails/email_owa){.external}.
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -68,7 +65,7 @@ With a new MXplan service, deleting an account is referred to as *resetting an a
 
 > [!warning]
 >
-> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](https://docs.ovh.com/asia/en/emails/migrate-email-addresses-manually/), which explains how to export account data from your Control Panel or email software.
+> Before deleting email accounts, make sure they are not used. You may need to back up these accounts. If required, please refer to our guide on [Migrating your email address manually](/pages/web/emails/manual_email_migration), which explains how to export account data from your Control Panel or email software.
 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the account you want to delete, then click `Reset this account`{.action}.
 
@@ -81,24 +78,24 @@ You will need to configure your email address on the device you want to use (e.g
 > [!tabs]
 > **Windows**
 >>
->> - [Mail on Windows 10](https://docs.ovh.com/asia/en/emails/mail-configuration-windows-10/)
->> - [Outlook](https://docs.ovh.com/asia/en/emails/configuration-outlook-2016/)
->> - [Thunderbird](https://docs.ovh.com/asia/en/emails/configure-email-for-thunderbird-windows/)
+>> - [Mail on Windows 10](/pages/web/emails/how_to_configure_windows_10)
+>> - [Outlook](/pages/web/emails/how_to_configure_outlook_2016)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)
 >>
 > **Apple**
 >>
->> - [macOS email](https://docs.ovh.com/asia/en/emails/guide-configuring-mail-on-macos/)
->> - [Mail for iPhone or iPad](https://docs.ovh.com/asia/en/emails/email_hosting_iphone_ios_91_configuration/)
->> - [Outlook Mac OS](https://docs.ovh.com/asia/en/emails/configuration-outlook-2016-mac/)
->> - [Thunderbird](https://docs.ovh.com/asia/en/emails/configure-email-for-thunderbird-mac/)
+>> - [macOS email](/pages/web/emails/how_to_configure_mail_macos)
+>> - [Mail for iPhone or iPad](/pages/web/emails/how_to_configure_ios)
+>> - [Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016-mac/)
+>> - [Thunderbird](/pages/web/emails/how_to_configure_thunderbird_mac)
 >>
 > **Android**
 >>
->> - [Android](https://docs.ovh.com/asia/en/emails/configuration-android/)
+>> - [Android](/pages/web/emails/how_to_configure_android)
 >>
 > **Other**
 >>
->> - [Gmail interface](https://docs.ovh.com/asia/en/emails/gmail-configuration/)
+>> - [Gmail interface](/pages/web/emails/how_to_configure_gmail)
 >>
 
 If you just need the information required to configure your email address, the settings to use are listed below:
@@ -121,7 +118,7 @@ If you just need the information required to configure your email address, the s
 
 > [!warning]
 >
-> If you have any problems configuring your email address on your device, we recommend using our [configuration guides](../) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
+> If you have any problems configuring your email address on your device, we recommend using our [configuration guides](/asia/en/emails/) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
 >
 
 ## Go further

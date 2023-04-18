@@ -1,8 +1,6 @@
 ---
 title: Gestire i crediti SMS e attivare la ricarica automatica
-slug: attivare-la-ricarica-automatica-del-credito-sms 
 excerpt: Come gestire i tuoi crediti SMS OVHcloud
-section: Gestisci la tua offerta
 updated: 2023-02-09
 ---
 
@@ -43,7 +41,7 @@ Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle lo
 >
 > Un SMS può contenere un numero limitato di caratteri in base alla codifica. Per maggiori dettagli sulla codifica e i caratteri autorizzati, consulta questa guida: 
 > 
-> [Inviare SMS dallo Spazio Cliente OVHcloud](../inviare_sms_dallo_spazio_cliente/#step--2-scrivi-il-tuo-sms)
+> [Inviare SMS dallo Spazio Cliente OVHcloud](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step--2-scrivi-il-tuo-sms)
 >
 
 ### Ricarica automatica

@@ -1,11 +1,8 @@
 ---
 title: AI Training - Suivre vos ressources cloud (EN)
-slug: training/resources
 excerpt: Faites le suivi des ressources cloud utilisées par vos jobs AI Training
-section: AI Training - Guides
-order: 04
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/ai/training/resources/'
+    canonical: '/pages/platform/ai/training_guide_04_concepts_resources'
 updated: 2021-05-03
 ---
 
