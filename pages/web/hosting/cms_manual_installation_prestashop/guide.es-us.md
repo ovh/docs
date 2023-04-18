@@ -154,7 +154,7 @@ El último paso consiste en un resumen de la instalación que acaba de realizar:
 
 Consulte las claves de conexión de su PrestaShop antes de abandonar la página.
 
->[!warning]
+> [!warning]
 >
 > **Por seguridad, le recomendamos que elimine la carpeta de instalación presente en su espacio FTP.**
 >
