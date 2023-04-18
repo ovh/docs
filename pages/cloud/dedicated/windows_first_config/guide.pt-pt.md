@@ -20,7 +20,7 @@ Após uma nova instalação de um sistema operativo Windows Server num servidor 
 
 ## Requisitos
 
-- Uma distribuição Windows instalada num [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/).
+- Uma distribuição Windows instalada num [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções

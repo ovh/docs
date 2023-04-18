@@ -28,7 +28,7 @@ Para proteger ao máximo o seu sistema, o seu servidor Windows Server dispõe da
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) Windows na sua conta OVHcloud
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) Windows na sua conta OVHcloud.
 - Dispor de um acesso de administrador ao seu servidor através de um escritório distante em Windows. 
 
 ## Instruções

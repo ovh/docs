@@ -102,11 +102,11 @@ Ligue-se ao [api.ovh.com](https://api.ovh.com/) e utilize a seguinte chamada:
 
 Introduza os campos da seguinte forma:
 
-- `serviceName`\: o nome do seu servidor dedicado
-- `ovos`\: assinalar se necessário
-- `ftp`\: assinalar se necessário
-- `ipBlock`\: indique o IP que terá acesso sob a forma `1.2.3.4/32`
-- `nfs`\: assinalar se necessário
+- `serviceName`: o nome do seu servidor dedicado
+- `cifs`: assinalar se necessário
+- `ftp`: assinalar se necessário
+- `ipBlock`: indique o IP que terá acesso sob a forma `1.2.3.4/32`
+- `nfs`: assinalar se necessário
 
 ![apiamendress](images/aclapi01.png){.thumbnail}
 
@@ -163,11 +163,11 @@ Para guardar um único ficheiro, pode utilizar o comando seguinte:
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **FolderLocation**\: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
-* **File**\: o nome do ficheiro que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
+* **File**: o nome do ficheiro que pretende guardar.
 
 Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
 
@@ -177,11 +177,11 @@ Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu dire
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FolderName**\: o caminho de acesso ao diretório que pretende guardar.
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **ArchiveName**\: o nome do diretório que pretende guardar.
+* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **ArchiveName**: o nome do diretório que pretende guardar.
 
 Para descarregar um ficheiro de arquivo a partir do seu Backup Storage, pode utilizar o seguinte comando:
 
@@ -191,18 +191,167 @@ Para descarregar um ficheiro de arquivo a partir do seu Backup Storage, pode uti
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FtpUsername**\: o seu nome de utilizador FTP.
-* **FtpPassword**\: a sua palavra-passe FTP.
-* **HostName**\: o nome do seu Backup Storage.
-* **LocalFolder**\: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro
-* **File**\: o caminho de acesso do ficheiro a descarregar
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua palavra-passe FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **LocalFolder**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro
+* **File**: o caminho de acesso do ficheiro a descarregar
 
 ##### Curl (para Linux)
 
 > [!primary]
 >
-> Para utilizar FTPS, deve alterar o nome do Backup Storage. Por exemplo, se o nome do Backup Storage for "ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net", deverá alterá-lo para "ftpback-rbxX-YYY.mybackup.ovh.net". Também terá de adicionar o argumento nm\` ao comando abaixo.
+> Para utilizar FTPS, deve alterar o nome do Backup Storage. Por exemplo, se o nome do Backup Storage for "ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net", deverá alterá-lo para "ftpback-rbxX-YYY.mybackup.ovh.net". Também terá de adicionar o argumento \-ssl\` ao comando abaixo.
 >
+
+Para guardar um único ficheiro, pode utilizar o seguinte comando:
+
+```sh
+# curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+* **File** : o nome do ficheiro que pretende guardar.
+* **FtpUsername** : o seu nome de utilizador FTP.
+* **FtpPassword** : a sua password FTP.
+* **HostName** : o nome do seu Backup Storage.
+* **FolderLocation** : o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
+
+Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
+
+```sh
+# tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua password FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro
+* **ArchiveName**: o nome do diretório que pretende guardar.
+
+Para descarregar um ficheiro de arquivo a partir do seu Backup Storage, pode utilizar o seguinte comando:
+
+```sh
+# cd /LocalFolder
+# curl -u FtpUsername:FtpPassword ftp://HostName/File 
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua password FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **LocalFolder**: o nome do diretório local no qual pretende gravar o ficheiro.
+* **File**: o caminho de acesso do ficheiro a descarregar.
+
+##### lftp (para Linux)
+
+> [!primary]
+>
+> lftp utiliza FTP+SSL/TLS por predefinição. Por isso, deve alterar o nome do seu Backup Storage. Por exemplo, se o seu nome for "ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net", deverá alterá-lo para "ftpback-rbxX-YYY.mybackup.ovh.net".
+>
+
+Para guardar um único ficheiro, pode utilizar o seguinte comando:
+
+```sh
+# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+* **File**: o nome do ficheiro que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua password FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
+
+Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
+
+```sh
+# tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua password FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **FolderLocation**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro
+* **ArchiveName**: o nome do diretório que pretende guardar.
+
+Para descarregar um ficheiro de arquivo a partir do seu Backup Storage, pode utilizar o seguinte comando:
+
+
+```sh
+# cd /LocalFolder
+# lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+* **FtpUsername**: o seu nome de utilizador FTP.
+* **FtpPassword**: a sua password FTP.
+* **HostName**: o nome do seu Backup Storage.
+* **LocalFolder**: o nome do diretório local no qual pretende gravar o ficheiro.
+* **File**: o caminho de acesso do ficheiro a descarregar
+ 
+##### Filezilla (para Windows)
+
+Depois de instalar o FileZilla no seu servidor, poderá configurá-lo para se ligar ao Backup Storage utilizando as informações de identificação FTP que lhe foram enviadas quando ativou a sua opção de backup. Para se poder ligar, precisará do nome e da palavra-passe do Backup Storage.
+
+#### NFS
+
+Em primeiro lugar, certifique-se de que autorizou o acesso dos seus blocos de IP ao armazenamento e que estes podem utilizar o protocolo NFS. Dependendo do seu sistema operativo Linux, é possível que tenha de instalar o cliente NFS e iniciar o serviço NFS/portmap.
+
+Depois de instalar o cliente NFS e o serviço portmap, pode montar a partilha NFS como uma partição normal, tal como indicado abaixo:
+
+```sh
+# mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+
+* **HostName**: o nome do seu Backup Storage.
+* **ServiçoName**: o nome do seu servidor (exemplo: "ns0000000.ip-123-123-123.net").
+* **FolderMount**: o diretório onde pretende montar o NFS.
+
+Depois de montar a partilha, pode utilizar comandos tais como **cp** e \ rsync\`, tal como o faria com um diretório normal.
+
+#### CIFS
+
+##### Windows
+
+Ligue-se ao seu servidor, abra a linha de comandos e introduza o comando seguinte:
+
+```sh
+net use z: \\HostName\ServiceName
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+* **HostName**: o nome do seu Backup Storage.
+* **ServiçoName**: o nome do seu servidor (exemplo: "ns0000000.ip-123-123-123.net").
+
+
+##### Linux
+
+Abra uma ligação SSH ao seu servidor e introduza o comando seguinte:
+
+```sh
+# mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
+```
+
+O exemplo de código acima contém variáveis que deverá substituir pelos seus próprios valores.
+
+* **HostName**: o nome do seu Backup Storage.
+* **ServiçoName**: o nome do seu servidor (exemplo: "ns0000000.ip-123-123-123.net").
+* **FolderMount**: o diretório onde pretende estabelecer a partilha (já deve existir).
 
 ## Quer saber mais?
 

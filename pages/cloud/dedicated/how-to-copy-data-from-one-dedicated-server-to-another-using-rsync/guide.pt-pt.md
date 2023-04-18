@@ -6,6 +6,10 @@ section: Tutoriais
 updated: 2022-02-16
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 16/02/2022**
 
 ## Introdução
@@ -111,8 +115,11 @@ Tendo em conta os elementos indicados previamente, o comando de transferência s
 rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --exclude="Other_Folder_name" YourLocalFolder/ login@server:/DestinationFolder/
 ```
 
-## Conclusão
+### Conclusão
 
 Neste tutorial, explicámos como copiar os dados de um servidor dedicado para outro graças ao rsync.
 
-Para obter mais informações, não hesite em partilhar a sua experiência com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+

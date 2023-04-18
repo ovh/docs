@@ -141,7 +141,7 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
-O ficheiro de configuração da rede do seu servidor encontra-se em /etc/sysconfig/network-scripts/ifcfg-eth0. Use a linha de comandos para localizar o ficheiro, abri-lo e editá-lo.
+O ficheiro de configuração da rede do seu servidor encontra-se em `/etc/sysconfig/network-scripts/ifcfg-eth0`. Use a linha de comandos para localizar o ficheiro, abri-lo e editá-lo.
 
 #### Passo 3: Corrigir o ficheiro de configuração de rede
 
@@ -191,7 +191,7 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
-O ficheiro de configuração da rede do seu servidor encontra-se em`/etc/rc.conf`. Use a linha de comandos para localizar o ficheiro, abri-lo e editá-lo.
+O ficheiro de configuração da rede do seu servidor encontra-se em `/etc/rc.conf`. Use a linha de comandos para localizar o ficheiro, abri-lo e editá-lo.
 
 #### Passo 3: Corrigir o ficheiro de configuração de rede
 

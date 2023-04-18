@@ -167,4 +167,4 @@ iface ens18 inet static
 
 ## Saiba mais
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
