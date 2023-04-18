@@ -216,7 +216,7 @@ Di seguito, un esempio con il CMS *WordPress*:
 > Ti consigliamo vivamente di utilizzare una "cartella radice" vuota per evitare qualsiasi conflitto con un altro dei tuoi siti Web. Verifica che la cartella di destinazione non contenga elementi prima di spostare i file.
 >
 
->[!primary]
+> [!primary]
 >
 > Se la cartella root definita non è stata creata automaticamente durante le azioni descritte nello [step 1](#step1), puoi crearla via FileZilla.
 >
