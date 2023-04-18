@@ -111,7 +111,7 @@ Faça as suas escolhas e clique em `Next`{.action}.
 
 ![PrestaShop instalação step 6](images/Prestashop-install-db-config-6.png){.thumbnail}
 
-Tenha consigo os dados de acesso à sua base de dados (se necessário, consulte ***a etapa 1.4** do guia sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/)).
+Tenha consigo os dados de acesso à sua base de dados (se necessário, consulte **a etapa 1.4** do guia sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/)).
 
 Insira as informações solicitadas relativas à base de dados:
 
