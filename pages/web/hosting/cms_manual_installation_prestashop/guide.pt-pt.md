@@ -154,7 +154,7 @@ A última etapa corresponde a um resumo da instalação que acabou de realizar:
 
 Obtenha as credenciais de acesso do PrestaShop antes de sair da página.
 
->[!warning]
+> [!warning]
 >
 > ** Por razões de segurança, recomendamos que elimine a pasta de instalação presente no seu espaço FTP.**
 >
