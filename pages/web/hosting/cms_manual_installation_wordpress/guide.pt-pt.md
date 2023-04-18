@@ -70,7 +70,8 @@ O WordPress vai pedir-lhe que obtenha os dados de acesso à sua base de dados:
 
 ![hosting](images/WPstart.png){.thumbnail}
 
-Tenha consigo as credenciais da sua base de dados (se necessário, consulte ***a etapa 1.4** do tutorial para a[instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/). Depois clique em `Let's go !`{.action} para continuar.
+Tenha consigo as credenciais da sua base de dados (se necessário, consulte ***a etapa 1.4** do tutorial para a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/). Depois clique em `Let's go !`{.action} para continuar.
+
 
 Surge a seguinte página:
 
