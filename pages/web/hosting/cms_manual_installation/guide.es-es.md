@@ -340,7 +340,7 @@ rmdir ./CMS/
 >> ```
 >> 
 
-### Etape 3 - Finalizar la instalación manual <a name="step3"></a>
+### Etapa 3 - Finalizar la instalación manual <a name="step3"></a>
 
 > [!success]
 >
