@@ -26,14 +26,14 @@ Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH
 
 ### Ce que vous devez savoir
 
-*     Avoir des notions d'administration Linux.
+*     Avoir des notions d'administration Linux
 *     Savoir installer de nouveaux paquets 
 *     Savoir se connecter en SSH
 
 
 ### Ce que vous devez avoir
 
-*     Posséder au moins deux serveurs dédiés OVHcloud fonctionnant sous une distribution GNU/Linux.
+*     Posséder au moins deux serveurs dédiés OVHcloud fonctionnant sous une distribution GNU/Linux
 *     Disposer d'un accès *root* sur la machine source
 *     Disposer d'un accès *SSH* sur la machine de destination
 

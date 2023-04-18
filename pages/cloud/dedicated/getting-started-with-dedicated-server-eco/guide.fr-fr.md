@@ -138,7 +138,7 @@ Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](https://docs.ovh
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). L'option se situe dans la section `État des services`.
 
-![Monitoring](images/monitoring-your-server.png){.thumbnail}
+![Monitoring](images/monitoring-your-service.png){.thumbnail}
 
 Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vous avez trois options pour le comportement du monitoring :
 

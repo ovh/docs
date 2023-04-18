@@ -134,14 +134,18 @@ Dans cet exemple, `/dev/sda` est le premier RAID et `/dev/sdb` est le second.
 
 Dans certaines situations, vous pouvez recevoir ce résultat :
 
-```
- /dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'
- ```
- Vous devez alors remplacer `megaraid` par `sat+megaraid` comme suit :
- 
- ```
- smartctl -d sat+megaraid,N -a /dev/sdX
- ```
+> [!primary]
+>
+> Dans certaines situations, vous pouvez recevoir ce résultat :
+>
+> ```
+> /dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'
+> ```
+> Vous devez alors remplacer `megaraid` par `sat+megaraid` comme suit :
+>
+> ```
+> smartctl -d sat+megaraid,N -a /dev/sdX
+> ```
 
 > [!warning]
 >

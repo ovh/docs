@@ -25,7 +25,7 @@ Le protocole de communication SSH (Secure Shell) est l'outil principal pour éta
 ## Prérequis
 
 - Avoir un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) ou un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud.
-- Une application cliente SSH (en ligne de commande ou en interface graphique)
+- Une application cliente SSH (en ligne de commande ou en interface graphique).
 
 > [!primary]
 > Ce guide ne s'applique pas aux installations standard de serveurs Windows car celles-ci reposent sur le protocole de Bureau à distance (*Remote Desktop Protocol*) pour les connexions. Les connexions SSH sont cependant utilisées pour le mode rescue OVHcloud. Retrouvez plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
