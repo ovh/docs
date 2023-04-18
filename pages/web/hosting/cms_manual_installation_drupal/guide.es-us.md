@@ -103,7 +103,7 @@ Haga clic en `Advanced Options`{.action} para descubrir el resto del menú.
 > El nombre del servidor de una base de datos Web Cloud Databases comienza por su identificador de cliente de OVHcloud y tiene el siguiente formato: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa0000"** corresponde a su identificador OVHcloud sin el **"-ovh"** y los **"X"** se sustituyen por el resto de la referencia de su servicio Web Cloud Databases.
 >
 
-- *Port number*: si utiliza una base de datos incluida con su alojamiento de OVHcloud, deje el predeterminado **3306**. Si utiliza un servicio Web Cloud Databases, consulte el **etapa 1.4** del tutorial en el (instalación manual de un CMS)(https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/) para obtener el número de puerto correcto.
+- *Port number*: si utiliza una base de datos incluida con su alojamiento de OVHcloud, deje el predeterminado **3306**. Si utiliza un servicio Web Cloud Databases, consulte el **etapa 1.4** del tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/) para obtener el número de puerto correcto.
 
 - *Table name prefix* : si la instalación se realiza con una nueva base de datos, introduzca el prefijo que prefiera. Si utiliza una base de datos ya utilizada en otro sitio web, puede consultar el **etapa 1.4** del tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/) para no indicar un "prefijo" de tabla que ya haya utilizado en su base de datos.
 
