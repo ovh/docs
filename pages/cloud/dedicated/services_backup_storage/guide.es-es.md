@@ -73,7 +73,7 @@ A continuación, podrá acceder al Backup Storage de su servidor desde el bloque
 
 #### Editar o eliminar un acceso al backup
 
-Una vez activado el servicio, podrá ver su tabla ACL en la pestaña `Backup Storage`{.action}. Haga clic en `..`{.action} a la derecha de un bloque IP para abrir el menú de acceso.
+Una vez activado el servicio, podrá ver su tabla ACL en la pestaña `Backup Storage`{.action}. Haga clic en `...`{.action} a la derecha de un bloque IP para abrir el menú de acceso.
 
 ![Añadir la regla de acceso](images/backup-storage05.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Para comprobar que su dirección IP está autorizada, utilice la siguiente llama
 
 ### Restaurar la contraseña
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón ¿Ha olvidado `la contraseña?`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `¿Ha olvidado la contraseña?`{.action}.
 
 Al hacer clic en `Confirmar`{.action} en la ventana que aparece, se enviará un mensaje de correo electrónico con la contraseña a la dirección de correo electrónico que haya guardado en su cuenta de administrador. Siga las instrucciones que contiene para restaurar la contraseña.
 

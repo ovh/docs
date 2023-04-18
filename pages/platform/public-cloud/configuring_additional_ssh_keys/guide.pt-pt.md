@@ -23,7 +23,7 @@ Ao criar uma instância, pode ser configurada uma única chave SSH para a ligaç
 
 - Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Ter acesso à instância via SSH enquanto administrador (root)
+- Ter acesso à instância via SSH enquanto administrador (root).
 
 ## Instruções
 

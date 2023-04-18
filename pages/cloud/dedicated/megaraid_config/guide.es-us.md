@@ -84,7 +84,7 @@ Haga clic en `Siguiente`{.action} y, seguidamente, en `Confirmar`{.action}.
 
 ![MegaRAID](images/rescue_mode_raid0_3.png){.thumbnail}
 
-Una vez que haya realizado los cambios, haga clic en `..`{.action} a la derecha de "Estado" en el cuadro titulado **Estado de los servicios.** 
+Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha de "Estado" en el cuadro titulado **Estado de los servicios.** 
 
 Haga clic en el botón `Reiniciar`{.action} y el servidor se reiniciará en modo de rescate. Esta operación puede tardar unos minutos. 
 

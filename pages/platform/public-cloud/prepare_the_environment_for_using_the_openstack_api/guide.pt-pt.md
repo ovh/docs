@@ -7,6 +7,10 @@ section: Gestão via OpenStack
 updated: 2022-03-30
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 30/03/2022**
 
 ## Sumário
@@ -176,4 +180,4 @@ nova help
 
 [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/set-openstack-environment-variables/).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

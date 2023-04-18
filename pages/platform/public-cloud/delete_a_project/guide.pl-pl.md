@@ -15,7 +15,7 @@ updated: 2022-10-14
 
 ## Wprowadzenie
 
-Jeśli nie potrzebujesz już [projektu Public Cloud](https://www.ovhcloud.com/pl/public-cloud/), możesz go usunąć bezpośrednio z [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Jeśli nie potrzebujesz już [projektu Public Cloud](https://www.ovhcloud.com/pl/public-cloud/), możesz go usunąć bezpośrednio z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Po usunięciu projektu Public Cloud wystawiana jest faktura zawierająca kwotę pozostającą do zapłaty.
 
@@ -30,7 +30,7 @@ Po usunięciu projektu, zasoby, które on zawiera są nieodwracalnie utracone. O
 ## Wymagania początkowe
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 

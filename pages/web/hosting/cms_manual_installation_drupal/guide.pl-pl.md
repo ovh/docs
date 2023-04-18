@@ -1,235 +1,162 @@
 ---
-title: CMS - ręczna instalacja modułu Drupal
-excerpt: Jak ręcznie zainstalować moduł Drupal?
+title: "Tutorial - Ręczna instalacja modułu Drupal"
+excerpt: "Dowiedz się, jak ręcznie zainstalować CMS Drupal"
 slug: cms_-_reczna_instalacja_modulu_drupal
 section: CMS
 order: 07
-updated: 2022-12-01
+updated: 2023-04-07
 ---
 
+**Ostatnia aktualizacja z dnia 07-04-2023**
 
-## Część 1: przygotowanie instalacji  
-Niezbędne narzędzia
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+  
+## Wprowadzenie
 
-Aby móc zainstalować platformę Drupal na hostingu www, skorzystaj z programu FTP takiego jak FileZilla (program darmowy).
+Tutaj znajdziesz wszystkie elementy, które pozwolą Ci ręcznie zainstalować CMS (Content Management System) Drupal.
 
-## Dane niezbędne do instalacji
-Sprawdź, czy posiadasz identyfikator klienta (nic-handle) i hasło, aby móc się zalogować do panelu klienta.
+> [!warning]
+>
+> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy do Twojej dyspozycji niniejszy tutorial, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/) lub [producenta CMS Drupal](https://www.drupal.org/support){.external}. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego tutoriala.
+>
 
+> [!success]
+>
+> Aby zainstalować Drupal **automatycznie** z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu za pomocą jednego kliknięcia](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+>
+> Aby zainstalować **ręcznie inny CMS** (WordPress, Joomla!, PrestaShop), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
+>
 
-- Musisz posiadać dane do logowania do FTP, aby zalogować się do hostingu.
+**Dowiedz się, jak ręcznie zainstalować CMS Drupal**
+  
+## Wymagania początkowe
 
-- Musisz również posiadać dane do bazy danych SQL, dzięki którym będziesz mógł się połączyć z bazą danych.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[]({legacy}1909)
+- Posiadanie oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+  
+## W praktyce
 
+### Etap 1 - przygotowanie instalacji <a name="step1"></a>
 
+Aby zainstalować CMS **Drupal** na Twoim [hostingu](https://www.ovhcloud.com/pl/web-hosting/), potrzebne są jakieś przygotowania.
 
-## Część 2: pobranie plików źródłowych
+Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym [Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) i przejdź do etapu 2 poniżej.
 
-- Przejdź na stronę modułu [Drupal](https://www.drupal.org/).
 
+### Etap 2 - zakończenie ręcznej instalacji <a name="step2"></a>
 
+> [!success]
+>
+> Przed kontynuowaniem instalacji, usuń cache przeglądarki internetowej, aby uniknąć błędów.
+>
 
-![drupal](images/3234.png){.thumbnail}
-Na stronie tej znajduje się link pozwalający na pobranie najnowszej stabilnej wersji modułu.
-W naszym przykładzie jest to wersja 7.41.
-Pobrane pliki są spakowane. Należy je rozpakować na swoim komputerze. W Internecie odnajdziesz pomoc na ten temat.
+#### 2.1 - Przejście na stronę Drupal przy użyciu przeglądarki
 
+Wpisz nazwę domeny na pasku wyszukiwania przeglądarki internetowej.
 
-## Część 3: umieszczenie plików na FTP
-Rozpakowywanie plików
+Jeśli pliki źródłowe Drupal zostały poprawnie umieszczone w katalogu głównym, wyświetli się strona z listą wyboru języka dla Drupal:
 
-Otwórz katalog, w którym umieściłeś spakowane pliki w postaci katalogu. 
+![Drupal instalacja step 1](images/Drupal-install-language-1.png){.thumbnail}
 
-Kliknij prawym przyciskiem na ten katalog i wybierz "Extract here".
+Wybierz język strony i kliknij na `Save and Continue`{.action}.
 
-Wskaż lokalizację, w której chcesz rozpakować pliki. 
+#### 2.2 - Wybierz typ instalacji
 
-W Internecie dostępne są liczne przewodniki związane z tą operacją. Skorzystaj z nich, jeśli na tym etapie napotkasz problem. 
+Drupal oferuje kilka poziomów instalacji:
 
-Katalog docelowy będzie nosił nazwę "Drupal-xxx".
+- wersja standardowa (zalecana), 
+- wersja minimalna
+- wersja prezentacji 
 
-![drupal](images/3233.png){.thumbnail}
-Logowanie na hosting www przez FTP
+![Drupal instalacja step 2](images/Drupal-install-profil-2.png){.thumbnail}
 
-Aby umieścić pliki modułu Drupal na hostingu, należy najpierw zalogować się na ten hosting. 
+Zalecamy przeprowadzenie instalacji **Standard**. Następnie kliknij polecenie `Save and Continue`{.action}.
 
-Udostępniamy przewodnik na temat połączenia FTP w ofercie hostingu www:
-[]({legacy}1374)
-Transfer plików przez FTP
+#### 2.3 - Powiązanie systemu Drupal z bazą danych
 
-Postępuj zgodnie z opisanymi poniżej etapami, aby umieścić pliki na serwerze FTP.
+Wpisz wymagane informacje dotyczące bazy danych:
 
-## Etap 1
-Po zalogowaniu do programu FileZilla:
+![Drupal instalacja step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-W części "Adres lokalny", która zawiera listę plików znajdujących się na Twoim komputerze, otówrz rozpakowany katalog o nazwie "Drupal-xxx", w którym znajdują się pliki modułu.
+Przygotuj dane dostępowe do bazy danych (w razie potrzeby sprawdź **etap 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
 
-W części "Serwer zdalny", która odnosi się do hostingu www OVHcloud, otwórz katalog "www". W tym katalogu zostaną umieszczone wszystkie pliki modułu.
-Jeśli taki katalog nie istnieje, możesz go utworzyć.
-Pliki muszą zostać obowiązkowo umieszczone w katalogu "www". W przeciwnym razie procedura instalacji nie będzie dostępna z poziomu nazwy domeny.
+- *Database type*: wybierz rodzaj bazy danych spośród zaproponowanych rozwiązań.
 
-## Etap 2
-Po otwarciu tych katalogów:
+- *Database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-W części "Adres lokalny" odnajdziesz wszystkie pliki niezbędne do instalacji modułu CMS Drupal.
+- *Database username*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu. W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku **etap 1.4** w sprawie [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
 
-Aby zaznaczyć wszystkie pliki, skorzystaj z połączenia klawiszy CTRL+A.
+- *Database password*: zdefiniowałeś ją podczas tworzenia bazy danych. Możliwe, że zmieniłeś ją w międzyczasie.
 
-Następnie skorzystaj z funkcji przeciągnij i upuść do części "Serwer zdalny" do katalogu "www".
+Kliknij `Advanced Options`{.action}, aby wyświetlić resztę menu.
 
-![drupal](images/3199.png){.thumbnail}
-Możliwe, że katalog "www" nie jest pusty. Nie trzeba usuwać plików z tego katalogu. Powrócimy do tego tematu w dalszej części tego przewodnika.
+- *Host*: wprowadź nazwę serwera Twojej bazy danych, zawartą w e-mailu instalacyjnym lub w Panelu klienta. 
 
-## Etap 3
-Trwa przenoszenie plików.
+> [!primary]
+> 
+> - Nazwa serwera bazy danych zawartej w ofercie hostingu WWW ma zazwyczaj taką formę: `NameOfYourDatabase.mysql.db`. 
+>
+> - Nazwa serwera bazy danych Cloud Databases zaczyna się od Twojego identyfikatora klienta OVHcloud i ma następującą formę: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** odnosi się do twojego identyfikatora OVHcloud bez **"-ovh"**, a **"X"** należy zastąpić pozostałą częścią odniesienia do usługi Web Cloud Databases.
+>
 
-Poczekaj, aż wszystkie pliki zostaną umieszczone na zdalnym serwerze FTP. Operacja ta może zająć kilka minut. 
+- *Port number*: jeśli korzystasz z bazy danych zawartej w Twoim hostingu OVHcloud, pozostaw domyślną bazę danych **3306**. Jeśli korzystasz z usługi Web Cloud Databases, sprawdź **etap 1.4** tutoriala w panelu [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/), aby uzyskać poprawny numer portu.
 
-Po przeniesieniu plików, upewnij się, że wszystkie pliki i katalogi zostały poprawnie przeniesione. 
+- *Table name prefix*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli korzystasz z bazy danych wykorzystywanej już przez inną stronę WWW, sprawdź **etap 1.4** tutoriala w panelu [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/), aby nie wpisywać prefiksu tabeli używanego już w bazie danych.
 
-Ta operacja kończy część poświęconą umieszczaniu plików na FTP.
+Kliknij polecenie `Save and Continue`{.action}.
 
-![drupal](images/3200.png){.thumbnail}
+Jeśli wszystko zostało poprawnie zrealizowane, Drupal zostanie uruchomiony:
 
+![Drupal instalacja step 4](images/Drupal-install-4.png){.thumbnail}
 
-## Etap 1 - Instalacja modułu Drupal
-Otwórz przeglądarkę internetową i wpisz nazwę swojej domeny. 
+#### 2.4 - Skonfiguruj informacje o stronie WWW i dostęp "Administrator"
 
-Pojawi się taka strona.
+Po zakończeniu poprzedniego etapu wyświetli się następująca strona:
 
-Zaznacz "Standard
-Install with commonly used features pre-configured." i kliknij na "Save and continue", aby kontynuować.
+![Drupal instalacja step 5-1](images/Drupal-install-configure-site-5-1.png){.thumbnail}
 
-![drupal](images/3219.png){.thumbnail}
+Wpisz wymagane elementy:
 
+- *Site name*: wprowadź nazwę Twojej przyszłej strony Drupal.
 
-## Etap 2 - Wybór języka
-Wybierz język instalacji "Polski" i kliknij na "Save and continue".
+- *Site email address*: wprowadź poprawny adres e-mail, który będzie używany przez Twoją stronę WWW Drupal.
 
-![drupal](images/3218.png){.thumbnail}
+- *Username*: zdefiniuj nazwę użytkownika, aby zalogować się do Twojej przestrzeni administracyjnej Drupal (Back Office).
 
+- *Password* i *Confirm password*: zdefiniuj hasło, które będzie przypisane do Twojej nazwy użytkownika i uzyskaj dostęp do Twojej usługi *Back Office* Drupal.
 
-## Etap 3 - Połączenie z bazą danych
-Przygotuj dane do logowania do bazy danych (pomoc w tym zakresie jest dostępna tutaj: []({legacy}1374)).
+Następnie przejdź do dołu strony:
 
-Wpisz dane dotyczące bazy danych:
+![Drupal instalacja step 5-1](images/Drupal-install-configure-site-5-2.png){.thumbnail}
 
-Zaznacz "MySQL, MariaDB lub równoważne".
+- *Email address*: wprowadź Twój adres e-mail. W idealnym przypadku wprowadź ten sam adres, który został wskazany powyżej w formularzu *Adres e-mail strony*.
 
+- *Default country*: wybierz kraj, w którym najczęściej odwiedzana będzie Twoja strona.
 
-- Nazwa bazy danych: Wybrana w panelu klienta podczas zakładania bazy danych.
+- *Default time zone*: wybierz domyślną strefę czasową dla swojej strony www.
 
-- Nazwa użytkownika bazy: Taka sama jak nazwa bazy danych.
+Kliknij polecenie `Save and Continue`{.action}.
 
-- Hasło użytkownika bazy: Zostało wysłane e-mailem po utworzeniu bazy danych - możliwe, że już je zmieniłeś. 
+Jeśli wszystko przebiegło pomyślnie, wyświetli się następna strona:
 
-- Kliknij na "ZAAWANSOWANE USTAWIENIA".
+![Drupal instalacja step 6](images/Drupal-install-ending-6.png){.thumbnail}
 
+> [!success]
+>
+> Instalacja Drupal'a została zakończona. Możesz teraz rozpocząć tworzenie zawartości Twojej strony Drupal!
+>
+  
+## Sprawdź również <a name="go-further"></a>
 
-
-![drupal](images/3202.png){.thumbnail}
-
-- Host bazy danych: Wpisz nazwę serwera bazy danych wskazaną w e-mailu instalacyjnym i w panelu klienta. Nazwa ta kończy się zazwyczaj ".mysql.db".
-
-- Port bazy danych: Pozostaw puste.
-
-- Prefiks tabeli: Opcja użyteczna w przypadku chęci zainstalowania kilku modułów Drupal na jednej bazie danych. W takim przypadku należy wpisać inny prefiks dla każdej instalacji. W przypadku wątpliwości, pozostaw puste.
-
-
-
-![drupal](images/3203.png){.thumbnail}
-Ważne:  Dane do bazy danych nie są wysyłane automatycznie po zainstalowaniu hostingu. Aby je otrzymać, należy założyć bazę danych w panelu klienta.
-Kliknij na "Zachowaj i kontynuuj", aby kontynuować.
-
-
-## Etap 4 - Postępy
-Jeśli wpisałeś prawidłowo dane dotyczące bazy danych, rozpocznie się instalacja. W przeciwnym razie należy wpisać prawidłowe dane.
-
-
-- Poczekaj na zakończenie instalacji.
-
-
-
-![drupal](images/3190.png){.thumbnail}
-
-
-## Etap 5 - Konfiguracja aspektów administracyjnych
-Wpisz ustawienia administracyjne modułu CMS Drupal.
-
-
-- Nazwa witryny: Wskaż nazwę domeny.
-
-- Adres e-mail witryny: Wskaż adres e-mail, który będzie wykorzystywany do wysyłania wiadomości do Twoich abonentów. 
-
-- Nazwa użytkownika: Wskaż nazwę konta administratora Twojej strony. W naszym przykładzie jest to "admin".
-
-- Adres e-mail: Wskaż adres e-mail przypisany do konta administratora.
-
-- Hasło: Wskaż hasło do konta administratora.
-
-- Potwierdzenie hasła: Wpisz to samo hasło.
-
-
-
-![drupal](images/3206.png){.thumbnail}
-
-- Domyślny kraj: Wybierz kraj/język dla strony.
-- Domyślna sterfa czasowa: Wybierz strefę czasową dla strony.
-
-- Powiadomienia o nowych wersjach: Zalecamy włączenie tych opcji, w celu zwiększenia stabilności i bezpieczeństwa strony.
-
-- Kliknij na "Zachowaj i kontynuuj".
-
-
-
-![drupal](images/3207.png){.thumbnail}
-
-
-## Etap 6 - Zakończenie
-CMS Drupal został zainstalowany. Kliknij na "Odwiedź swoją nową stronę".
-
-![drupal](images/3208.png){.thumbnail}
-Teraz wystarczy korzystać z modułu Drupal i zbudować stronę.
-
-![drupal](images/3209.png){.thumbnail}
-
-
-## Wsparcie dla modułu Drupal
-Odwiedź forum modułu Drupal.
-
-- Oto strona [pomocy dla modułu ](https://www.drupal.org/support).
-
-
-Pomoc OVHcloud nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji modułu Drupal.
-Udostępniamy przewodnik na ten temat: []({legacy}2053).
-
-
-## Klasyczne błędy
-
-- Błąd "OVHcloud - strona w budowie"
-
-
-Umieściłeś pliki na FTP, ale nadal wyświetla się informacja "strona w budowie".
-
-Po zainstalowaniu hostingu, OVHcloud umieszcza na nim stronę tymczasową.
-
-Jeśli umieścisz pliki w katalogu "www" i nie usuniesz treści umieszczonych przez OVHcloud, pojawi się ten problem. 
-
-Aby to poprawić, usuń plik "index.html" umieszczony przez OVHcloud lub zmień jego nazwę.
-
-Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako tymczasową stronę główną.
-
-Inna użyteczna informacja: pliki strony muszą zostać umieszczone w katalogu "www", aby były brane pod uwagę.
-
-![drupal](images/3217.png){.thumbnail}
-
-- Błąd dotyczący wersji PHP
-
-
-Chodzi o błąd dotyczący wersji PHP serwera. 
-
-Przyczyna jest prosta: najnowsza wersja PHP nie została włączona.
-
-Udostępniamy przewodnik na temat zmiany wersji PHP na hostingu www:[Zmiana wersji PHP na hostingu]({legacy}1207)
-
+[Oficjalna strona Drupal](https://www.drupal.org/){.external}
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

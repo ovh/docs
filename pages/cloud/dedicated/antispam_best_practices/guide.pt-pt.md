@@ -218,7 +218,7 @@ O endereço IP está a ser desbloqueado e a operação pode levar alguns minutos
 
 ### Em caso de falsos positivos
 
-Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificado e descoberto que o **ID da mensagem*** está associado a um e-mail legítimo, deve assegurar-se que os seus e-mails estão em conformidade com [RFC (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#rfc) e [boas práticas (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices)
+Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificado e descoberto que o **ID da mensagem*** está associado a um e-mail legítimo, deve assegurar-se que os seus e-mails estão em conformidade com [RFC (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#rfc) e [boas práticas (EN)](https://docs.ovh.com/ie/en/dedicated/antispam-best-practices/#bestpractices).
 
 
 ## Quer saber mais?

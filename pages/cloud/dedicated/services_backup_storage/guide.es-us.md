@@ -120,7 +120,7 @@ Para comprobar que su dirección IP está autorizada, utilice la siguiente llama
 
 ### Restaurar la contraseña
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón ¿Ha olvidado `la contraseña?`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Acceda a la sección  `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `¿Ha olvidado la contraseña?`{.action}.
 
 Al hacer clic en `Confirmar`{.action} en la ventana que aparece, se enviará un mensaje de correo electrónico con la contraseña a la dirección de correo electrónico que haya guardado en su cuenta de administrador. Siga las instrucciones que contiene para restaurar la contraseña.
 

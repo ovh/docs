@@ -1665,6 +1665,7 @@
             + [First Steps with the OVHcloud APIs](account/api/first-steps)
             + [Exploring the OVHcloud APIs](account/api/console-preview)
         + [APIv6](infrastructure-as-code-api-apiv6)
+            + [OVHcloud API v2 - Operating principles](account/api/apiv2)
             + [Manage services](account/api/services)
             + [Manage payment and billing of OVHcloud services](account/api/enterprise-payment)
             + [How to manage a customer’s account via OVHcloud API](account/api/api_right_delegation)

@@ -30,7 +30,7 @@ No obstante, podrá conectarse al servidor utilizando el [modo de rescate de OVH
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) en su cuenta de OVHcloud
+- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) en su cuenta de OVHcloud.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento

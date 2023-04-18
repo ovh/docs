@@ -23,14 +23,14 @@ Zmiana tych kontaktów pozwala na oddzielenie zarządzania technicznego i księg
 ## Wymagania początkowe
 
 - Posiadanie projektu [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Kontakt administracyjny i księgowy w tym samym oddziale OVHcloud
 
 ## W praktyce
 
 ### Zmień kontakty
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz projekt `Public Cloud`{.action}. Kliknij `Contacts and Rights`{.action} w sekcji **Project Management**.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz projekt `Public Cloud`{.action}. Kliknij `Contacts and Rights`{.action} w sekcji **Project Management**.
 
 Na tej stronie możesz sprawdzić kontakty administratora i księgowości przypisane do Twojego projektu.
 

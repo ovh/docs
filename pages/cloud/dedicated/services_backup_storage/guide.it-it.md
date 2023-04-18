@@ -68,7 +68,7 @@ Seleziona il blocco IP che vuoi autorizzare. Seleziona il(i) protocollo(i) da au
 
 ![Aggiungere un accesso backup](images/backup-storage04.png){.thumbnail}
 
-Conferma cliccando su `Terminer`{.action}.
+Conferma cliccando su `Termina`{.action}.
 
 A questo punto è possibile accedere al Backup Storage del server utilizzando il blocco IP selezionato.
 

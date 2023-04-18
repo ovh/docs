@@ -10,7 +10,7 @@ updated: 2021-11-15
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 10/12/2021**
+**Ostatnia aktualizacja z dnia 10-12-2021**
 
 ## Wprowadzenie
 
@@ -22,7 +22,7 @@ Dzięki stale zmieniającej się infrastrukturze możesz zwiększyć przestrzeń
 
 ## Wymagania
 
-- Posiadanie [instancji Public Cloud](../public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) typu *flex*.
+- Posiadanie [instancji Public Cloud](../public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) typu *flex*
 - [Utworzenie dostępu do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/horizon/)
 
 ## W praktyce
@@ -63,7 +63,7 @@ Po zakończeniu procesu Twoja instancja zostanie przeniesiona na model klasyczny
 
 Jeśli chcesz zmienić model *flex*, możesz to zrobić wykonując te same kroki, o których mowa [powyżej](#flavorchoice), wybierając szablon *flex* zamiast klasycznego szablonu. 
 
-Możesz również [edycja-konfiguracji-instancji]((https://docs.ovh.com/pl/public-cloud/rozpoczecie_pracy_z_instancja_public_cloud/#edycja-konfiguracji-instancji) w Panelu klienta.
+Możesz również [edycja-konfiguracji-instancji](https://docs.ovh.com/pl/public-cloud/rozpoczecie_pracy_z_instancja_public_cloud/#edycja-konfiguracji-instancji) w Panelu klienta.
 
 ## Sprawdź również
  

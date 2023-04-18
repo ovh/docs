@@ -27,7 +27,7 @@ Pode ser necessário alterar a palavra-passe root (ou a do utilizador admin/sudo
 ## Requisitos
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}.
-- Ter dados de acesso recebidos por e-mail após a instalação (se estes ainda estiverem válidos)
+- Ter dados de acesso recebidos por e-mail após a instalação (se estes ainda estiverem válidos).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} (para utilizar o modo rescue).
 
 > [!warning]
