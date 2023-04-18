@@ -151,7 +151,7 @@ Una volta creato il database, recupera i parametri di connessione (server, nome 
 > Accedi al tuo database per censire i "prefissi" delle tabelle già presenti all'interno. per non scegliere un "prefisso" da tavolo già utilizzato da un altro sito.
 >
 > - Per connetterti al tuo database associato alla tua offerta di hosting Web, consulta [questa guida](https://docs.ovh.com/it/hosting/creare-database/#accedi-allinterfaccia-phpmyadmin).
-> - Per connetterti a un database presente su un Web Cloud Databases, consulta [questa guida](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/).
+> - Per connetterti a un database presente su un Web Cloud Databases, consulta [questa guida](https://help.ovhcloud.com/csm/it-web-cloud-db-connecting-database-server?id=kb_article_view&sysparm_article=KB0051461).
 >
 
 ### Step 2 - Avvia l'installazione manuale
