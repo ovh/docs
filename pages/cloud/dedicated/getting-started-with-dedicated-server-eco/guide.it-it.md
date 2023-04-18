@@ -134,7 +134,7 @@ ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio
 
 ### Protezione del tuo server dedicato
 
-Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida Mettere in sicurezza [un server dedicato](../mettere-in-sicurezza-un-server-dedicato/).
+Come spiegato nella parte iniziale di questa guida, in quanto amministratore del tuo server dedicato In quanto tale, sei responsabile dei tuoi dati e della loro sicurezza. Per maggiori informazioni sulla sicurezza del tuo server, consulta la guida [Mettere in sicurezza un server dedicato](../mettere-in-sicurezza-un-server-dedicato/).
 
 Se utilizzi un server Windows, consulta [questa guida](https://docs.ovh.com/it/dedicated/firewall-windows/).
 
@@ -190,7 +190,7 @@ Tutti i server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6. Per 
 
 Per risolvere qualsiasi problema, riavvia il server in modalità Rescue dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). È importante identificare i problemi del server in questa modalità, per escludere i problemi legati al software prima di contattare il nostro team di supporto.
 
-Consulta la guida Attiva [e utilizza la modalità Rescue](../rescue_mode).
+Consulta la guida [Attivare e utilizzare il Rescue mode](../rescue_mode).
 
 ### Accesso con l'IPMI
 
@@ -201,7 +201,7 @@ Consulta la guida Attiva [e utilizza la modalità Rescue](../rescue_mode).
 
 OVHcloud implementa tutti i server dedicati con una console IPMI (Intelligent Platform Management Interface) che si esegue nel browser o da un'applet Java e ti permette di connetterti direttamente al tuo server anche se non dispone di connessione di rete. che è uno strumento utile per risolvere i problemi che hanno potuto mettere il tuo server online.
 
-Per maggiori informazioni, consulta la guida Utilizzare [l'IPMI sui server dedicati](../utilizzo-ipmi-server-dedicati/).
+Per maggiori informazioni, consulta la guida [Utilizzare l'IPMI sui server dedicati](../utilizzo-ipmi-server-dedicati/).
 
 ### Backup Storage
 
