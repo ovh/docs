@@ -37,7 +37,7 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
 
 - Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
 - Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter acesso à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Ter acesso [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
   
 ## Instruções
 
