@@ -89,7 +89,7 @@ Introduzca la información solicitada para la base de datos:
 
 Para completar los siguientes campos, consulte la información indicada en el **etapa 1.4** del tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/):
 
-- *Select the database type*: seleccione el tipo de la base de datos entre los tipos disponibles para Joomla. Si utiliza una base de datos en alojamiento compartido de OVHcloud, puede dejar por defecto el valor **MySQLi**.
+- *Select the database type*: seleccione el tipo de la base de datos entre los tipos disponibles para Joomla!. Si utiliza una base de datos en alojamiento compartido de OVHcloud, puede dejar por defecto el valor **MySQLi**.
 
 - *Enter the host name, usually "localhost" or a name provided by your host*: introduzca el nombre del servidor de la base de datos, en el mensaje de correo electrónico de instalación o en el área de cliente de OVHcloud.
 
