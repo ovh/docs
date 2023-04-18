@@ -154,7 +154,8 @@ L'ultimo step corrisponde al riepilogo dell'installazione che hai appena realizz
 
 Recupera le credenziali di accesso del tuo PrestaShop prima di lasciare la pagina.
 
->[!warning]
+> [!warning]
+
 >
 > **Per motivi di sicurezza, ti consigliamo di eliminare la cartella di installazione presente sul tuo spazio FTP.**
 >
