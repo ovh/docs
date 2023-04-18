@@ -105,7 +105,8 @@ Consulte nuestra guía sobre [cómo añadir un multisitio a un alojamiento web](
 
 #### 1.2 - Comprobar el "puntero" del nombre de dominio
 
-- Asegúrese de que el dominio que utilizará para acceder al CMS y al subdominio en "www" apuntan a la dirección IP de su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
+- Asegúrese de que el dominio que utilizará para acceder al CMS y el subdominio en "www" apuntan a la dirección IP de su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
+
 
 Para obtener la dirección IP de su plan de hosting, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action} y seleccione su plan de hosting en la sección `Alojamientos`{.action}.<br>
 En el recuadro `Información general`{.action}, a su derecha, encontrará la dirección IP de su alojamiento web en el formulario `IPv4`{.action}.
