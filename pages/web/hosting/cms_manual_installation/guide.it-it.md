@@ -211,7 +211,7 @@ Di seguito, un esempio con il CMS *WordPress*:
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
->[!warning]
+> [!warning]
 >
 > Ti consigliamo vivamente di utilizzare una "cartella radice" vuota per evitare qualsiasi conflitto con un altro dei tuoi siti Web. Verifica che la cartella di destinazione non contenga elementi prima di spostare i file.
 >
