@@ -197,7 +197,7 @@ Siga as instruções indicadas pelo editor do seu CMS até que os ficheiros de o
 > Para maior facilidade, neste passo, substitua o nome da pasta "**CMS**" pelo nome do CMS que escolheu para maior facilidade. (**WordPress**, **Joomla!**, **Drupal**, **PrestaShop**).
 >
 
-O ficheiro descarregado está no formato **compressado** (zippé). Crie uma pasta intitulada "**CMS**" no seu computador e **descomprima** o conteúdo do ficheiro carregado no interior da pasta "**CMS**".
+O ficheiro descarregado está no formato **compressado** (*zipped*). Crie uma pasta intitulada "**CMS**" no seu computador e **descomprima** o conteúdo do ficheiro carregado no interior da pasta "**CMS**".
 
 Para isso, abra a pasta onde carregou o ficheiro comprimido, clique com o botão direito do rato no ficheiro em questão e selecione "Extrair tudo... ".
 
