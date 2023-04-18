@@ -211,7 +211,7 @@ A continuación, un ejemplo con el CMS *WordPress*:
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
->[!warning]
+> [!warning]
 >
 > Le recomendamos encarecidamente que utilice una "carpeta raíz" vacía para evitar conflictos con otro de sus sitios web. Compruebe que la carpeta de destino no contenga ningún elemento antes de mover los archivos.
 >
