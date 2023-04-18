@@ -45,7 +45,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 Para instalar el CMS **PrestaShop** en su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/), es necesario realizar algunos preparativos.
 
-Siga el **conjunto de etapas** descritos en nuestro tutorial sobre la[instalación manual de un CMS](https://docs.ovh.com/es/hosting/web_hosting_instalar_un_cms_manualmente/) antes de continuar en el siguiente paso 2.
+Siga el **conjunto de etapas** descritos en nuestro tutorial sobre la [instalación manual de un CMS](https://docs.ovh.com/es/hosting/web_hosting_instalar_un_cms_manualmente/) antes de continuar en el siguiente paso 2.
 
 ### Etapa 2 - Finalizar la instalación manual <a name="step2"></a>
 
