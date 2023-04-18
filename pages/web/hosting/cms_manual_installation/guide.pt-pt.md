@@ -211,7 +211,7 @@ Abaixo, um exemplo com o CMS *WordPress*:
 
 ![hosting](images/wpfl2.png){.thumbnail}
 
->[!warning]
+> [!warning]
 >
 > Recomendamos vivamente que utilize uma "pasta raiz" vazia para evitar qualquer conflito com outro website. Verifique que a pasta de destino não contém nenhum elemento antes de mover os ficheiros.
 >
