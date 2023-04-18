@@ -1,246 +1,179 @@
 ---
-title: CMS - ręczna instalacja modułu PrestaShop
-excerpt: Jak ręcznie zainstalować moduł PrestaShop?
+title: "Tutorial - Ręczna instalacja PrestaShop"
+excerpt: "Dowiedz się, jak ręcznie zainstalować CMS PrestaShop"
 slug: cms_-_reczna_instalacja_modulu_prestashop
 section: CMS
-order: 06
-updated: 2022-12-01
+order: 07
+updated: 2023-04-07
 ---
 
+**Ostatnia aktualizacja z dnia 07-04-2023**
 
-## Część 1: przygotowanie instalacji 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+  
+## Wprowadzenie
 
-## Niezbędne narzędzia
-Aby móc zainstalować platformę PrestaShop na hostingu www, skorzystaj z programu FTP takiego jak FileZilla (program darmowy).
+Tutaj znajdziesz wszystkie elementy do ręcznego zainstalowania systemu CMS (Content Management System) PrestaShop.
 
-## Dane niezbędne do instalacji
-Sprawdź, czy posiadasz identyfikator klienta (nic-handle) i hasło, aby móc się zalogować do panelu klienta.
+> [!warning]
+>
+> OVHcloud oddaje do Twojej dyspozycji usługi, których konfiguracja, zarządzanie i odpowiedzialność spoczywają na Ciebie. W związku z tym należy zapewnić ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub [edytora CMS PrestaShop](https://www.prestashop.com/en/support){.external}. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
+>
 
+> [!success]
+>
+> Aby zainstalować PrestaShop **automatycznie** z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), zapoznaj się z naszą dokumentacją dotyczącą [instalacji modułu "za jednym kliknięciem"](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+>
+> Aby zainstalować **ręcznie inny CMS** (WordPress, Joomla!, Drupal), zapoznaj się z naszą dokumentacją dotyczącą [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
+>
 
-- Musisz posiadać dane do logowania do FTP, aby zalogować się do hostingu.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do FTP:[prestashop]({legacy}1374)
+**Dowiedz się, jak ręcznie zainstalować CMS PrestaShop**
+  
+## Wymagania początkowe
 
-- Musisz również posiadać dane do bazy danych SQL, dzięki którym będziesz mógł się połączyć z bazą danych.
-Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[prestashop]({legacy}1374)
+- Posiadanie oferty[hostingu](https://www.ovhcloud.com/pl/web-hosting/), która zawiera co najmniej jedną bazę danych.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+  
+## W praktyce
 
+### Etap 1 - przygotowanie instalacji <a name="step1"></a>
 
-![prestashop](images/3158.png){.thumbnail}
+Aby zainstalować CMS **PrestaShop** na Twoim hostingu [hosting www](https://www.ovhcloud.com/pl/web-hosting/), konieczne są pewne przygotowania.
 
+Postępuj zgodnie z **wszystkie etapy** opisane w tutorialu dotyczącym[Ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) i przejdź do etapu 2 poniżej.
 
-## Część 2: pobranie plików źródłowych
+### Etap 2 - zakończenie ręcznej instalacji <a name="step2"></a>
 
-- Przejdź na stronę producenta modułu [PrestaShop](http://www.prestashop.com/).
+> [!success]
+>
+> Przed kontynuowaniem instalacji, usuń cache przeglądarki internetowej, aby uniknąć błędów.
+>
 
-Na stronie tej znajduje się link pozwalający na pobranie najnowszej stabilnej wersji modułu.
+Jeśli nie pobrałeś najnowszej dostępnej wersji PrestaShop, pojawi się następująca strona:
 
+![PrestaShop installation step 1](images/Prestashop-install-update-version.png){.thumbnail}
 
-Pobrane pliki są spakowane. Należy je rozpakować na swoim komputerze. W Internecie odnajdziesz pomoc na ten temat.
+Kliknij `No thanks`{.action}, jeśli chcesz zachować wersję PrestaShop, którą właśnie przesłałeś lub na `Yes please!`{.action}, jeśli chcesz korzystać z najnowszej wersji CMS-a.
 
-![prestashop](images/3159.png){.thumbnail}
+#### 2.1 - Przejdź na stronę PrestaShop za pomocą przeglądarki
 
+Wpisz swoją domenę na pasku wyszukiwania przeglądarki internetowej.
 
-## Część 3: umieszczenie plików na FTP
+Jeśli pliki źródłowe Twojego PrestaShop zostały poprawnie umieszczone w katalogu głównym, wyświetli się strona PrestaShop, na której można wybrać język:
 
-## Rozpakowywanie plików
-Otwórz katalog, w którym umieściłeś spakowane pliki w postaci katalogu. 
+![PrestaShop installation step 2](images/Prestashop-install-select-language.png){.thumbnail}
 
-Kliknij prawym przyciskiem na ten katalog i wybierz "Extract to".
+Wybierz język strony i kliknij na `Next`{.action}.
 
-Wskaż lokalizację, w której chcesz rozpakować pliki. 
+#### 2.2 - Zatwierdź warunki korzystania z usługi
 
-W Internecie dostępne są liczne przewodniki związane z tą operacją. Skorzystaj z nich, jeśli na tym etapie napotkasz problem. 
+Zapoznaj się z warunkami korzystania, zaznacz kratkę `I agree to the above terms and conditions`{.action} i kliknij `Next`{.action}.
 
-Katalog docelowy będzie nosił nazwę "prestashop".
+![PrestaShop installation step 3](images/Prestashop-install-licence-agreement-3.png){.thumbnail}
 
-![prestashop](images/3160.png){.thumbnail}
+#### 2.3 - Wpisz dane dotyczące sklepu online
 
-## Logowanie na hosting www przez FTP
-Aby umieścić pliki modułu PrestaShop na hostingu, należy najpierw zalogować się na ten hosting. 
+PrestaShop poprosi Cię o zestaw informacji dotyczących Twojego przyszłego sklepu internetowego:
 
-Udostępniamy przewodnik na temat połączenia FTP w ofercie hostingu www:
-[prestashop]({legacy}1374)
+![PrestaShop instalacja step 4](images/Prestashop-install-store-infos-4.png){.thumbnail}
 
-![prestashop](images/3161.png){.thumbnail}
+**Informacje o sklepie**
 
-## Transfer plików przez FTP
-Postępuj zgodnie z opisanymi poniżej etapami, aby umieścić pliki na serwerze FTP.
+- *Shop name*: Wpisz nazwę sklepu internetowego
+- *Main activity*: Wybierz swój sektor spośród propozycji z rozwijanego menu
+- *Country*: Wybierz kraj
+- *Enable SSL*: Zaznacz **Yes**, aby zmienić adres URL na "https://". Musisz posiadać aktywny certyfikat SSL na Twoim hostingu lub domenie. Aby uzyskać więcej informacji na ten temat, zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania certyfikatem SSL na Twoim hostingu OVHcloud](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/).
 
-## Etap 1
-Po zalogowaniu do programu FileZilla:
+**Twoje konto**
 
-W części "Adres lokalny", która zawiera listę plików znajdujących się na Twoim komputerze, otówrz rozpakowany katalog o nazwie "prestashop", w którym znajdują się pliki modułu.
+- *First name*: Wpisz swoje imię
+- *Last name*: Wpisz swoje nazwisko
+- *E-mail address*: Wpisz swój adres e-mail
+- *Shop password*: Wybierz hasło do panelu administracyjnego sklepu online (backoffice)
+- *Re-type to confirm*: Wpisz ponownie hasło
 
-W części "Serwer zdalny", która odnosi się do hostingu www OVHcloud, otwórz katalog "www". W tym katalogu zostaną umieszczone wszystkie pliki modułu. 
+Sprawdź wprowadzone informacje i kliknij na `Next`{.action}.
 
-Jeśli taki katalog nie istnieje, możesz go utworzyć.
+#### 2.4 - Zainstaluj domyślną zawartość Twojego sklepu
 
-Pliki muszą zostać obowiązkowo umieszczone w katalogu "www". W przeciwnym razie procedura instalacji nie będzie dostępna z poziomu nazwy domeny.
+PrestaShop proponuje zainstalowanie treści i modułów dla przyszłej strony e-commerce:
 
-![prestashop](images/3162.png){.thumbnail}
+![PrestaShop instalacja step 5](images/Prestashop-install-store-content-5.png){.thumbnail}
 
-## Etap 2
-Po otwarciu tych katalogów:
+Dokonaj wyboru i kliknij na `Next`{.action}.
 
-W części "Adres lokalny" odnajdziesz wszystkie pliki niezbędne do instalacji modułu CMS PrestaShop.
+#### 2.5 - Powiązanie PrestaShop z bazą danych OVHcloud
 
-Aby zaznaczyć wszystkie pliki, skorzystaj z połączenia klawiszy CTRL+A.
+![PrestaShop instalacja step 6](images/Prestashop-install-db-config-6.png){.thumbnail}
 
-Następnie skorzystaj z funkcji przeciągnij i upuść do części "Serwer zdalny" do katalogu "www".
+Przygotuj dane dostępowe do bazy danych (w razie potrzeby sprawdź **etap 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
 
-Możliwe, że katalog "www" nie jest pusty. Nie trzeba usuwać plików z tego katalogu. Powrócimy do tego tematu w dalszej części tego przewodnika.
+Wpisz wymagane informacje dotyczące bazy danych:
 
-![prestashop](images/3163.png){.thumbnail}
+- *Database server address*: wprowadź nazwę serwera Twojej bazy danych, zawartą w e-mailu instalacyjnym lub w Panelu klienta. 
 
-## Etap 3
-Trwa przenoszenie plików.
+> [!primary]
+> 
+> - Nazwa serwera bazy danych zawartej w ofercie hostingu WWW ma zazwyczaj taką formę: `NameOfYourDatabase.mysql.db`. 
+>
+> - Nazwa serwera bazy danych Cloud Databases zaczyna się od Twojego identyfikatora klienta OVHcloud i ma następującą formę: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** odnosi się do twojego identyfikatora OVHcloud bez **"-ovh"**, a **"X"** należy zastąpić pozostałą częścią odniesienia do usługi Web Cloud Databases.
+>
 
-Poczekaj, aż wszystkie pliki zostaną umieszczone na zdalnym serwerze FTP. Operacja ta może zająć kilka minut. 
+- *Database name*: nazwa ta została zdefiniowana podczas tworzenia bazy danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Po przeniesieniu plików, upewnij się, że wszystkie pliki i katalogi zostały poprawnie przeniesione. 
+- *Database login*: nazwa bazy danych jest identyczna, jeśli korzystasz z bazy danych zawartej w Twoim hostingu.
+W przypadku baz danych utworzonych w ramach usługi WWW Cloud Databases, zapoznaj się z informacjami podanymi w przewodniku ["Ręczna instalacja CMS"](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/) w punkcie **etap 1.4**) .
 
-Ta operacja kończy część poświęconą umieszczaniu plików na FTP.
+- *Database password*: zdefiniowałeś ją podczas tworzenia bazy danych. Możliwe, że zmieniłeś ją w międzyczasie.
 
-![prestashop](images/3164.png){.thumbnail}
+- *Tables prefix*: jeśli instalacja jest wykonywana z nową bazą danych, wprowadź odpowiedni prefiks. Jeśli korzystasz z bazy danych wykorzystywanej już przez inną stronę WWW, zapoznaj się z **krokiem 1.4** w naszym przewodniku dotyczącym [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/), aby nie wprowadzić prefiksu tabeli już używanego w Twojej bazie danych.
 
+- *Drop existing tables*: **Usuń zaznaczenie, jeśli korzystasz już z bazy danych na innej stronie WWW**.
 
-## Część 4: połączenie z bazą danych
+> [!alert]
 
-## Etapy instalacji modułu PrestaShop
+>
+> Jeśli zaznaczysz kratkę **Drop existing tables**, usunie to wszystkie tabele już istniejące w Twojej bazie danych.
+>
 
-- Przed kontynuowaniem instalacji wyczyść cache swojej przeglądarki internetowej, aby uniknąć ewentualnych błędów. 
+Kliknij polecenie `Test your database connection now!`{.action} w celu sprawdzenia wprowadzonych parametrów:
 
+![PrestaShop instalacja step 6-1](images/Prestashop-install-db-config-6-1.png){.thumbnail}
 
-Aby połączyć bazę danych z modułem  PrestaShop, należy przejść przez etapy instalacji modułu.
+Jeśli pojawi się komunikat "Twoja baza danych", kliknij przycisk `Next`{.action}. W przeciwnym razie sprawdź ustawienia, które wprowadziłeś, aż połączenie zacznie działać. W razie potrzeby sprawdź **etap 1.4** tutoriala w sprawie [ręczna instalacja CMS](https://docs.ovh.com/pl/hosting/hosting_www_reczna_instalacja_modulu_cms/).
 
-## Etap 1
-W przeglądarce wpisz nazwę swojej domeny. 
+#### 2.6 - Zakończ instalację PrestaShop
 
-Wybierz język "Polski (Polish)" dla instalacji sklepu PrestaShop.
+Ostatni etap to podsumowanie instalacji, którą właśnie przeprowadziłeś:
 
-Kliknij na "Następny", aby kontynuować.
+![PrestaShop instalacja step 7](images/Prestashop-install-resume-7.png){.thumbnail}
 
-![prestashop](images/3165.png){.thumbnail}
+Pobierz dane do logowania modułu PrestaShop przed opuszczeniem strony.
 
-## Etap 2
-Zaznacz  "Zgadzam się z powyższymi warunkami".
+> [!warning]
 
-Kliknij na "Następny", aby przejść do kolejnego etapu.
+>
+> **Ze względów bezpieczeństwa zalecamy usunięcie folderu instalacyjnego z przestrzeni FTP.**
+>
+> Aby wykonać tę operację, zapoznaj się z naszym przewodnikiem ["Jak zalogować się do przestrzeni dyskowej FTP hostingu OVHcloud"](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) i naciśnij [forum PrestaShop](https://www.prestashop.com/forums/){.external}, aby upewnić się, że usuniesz odpowiednie pliki.
+>
 
-![prestashop](images/3166.png){.thumbnail}
+> [!success]
+>
+> Możesz teraz rozpocząć tworzenie zawartości strony PrestaShop!
+>
+  
+## Sprawdź również <a name="go-further"></a>
 
-## Etap 3
-Zostaniesz poproszony o dodatkowe informacje na temat sklepu. Wypełnij poniższe pola:
-
-Nazwa sklepu: Nazwa sklepu, może mieć wpływ na pozycjonowanie.
-
-Główna działalność: Główna działalność sklepu.
-
-Kraj: Wybierz kraj, w którym działa sklep.
-
-Imię: Imię administratora.
-
-Nazwisko: Nazwisko administratora.
-
-Adres e-mail: Wpisz prawidłowy adres e-mail, aby mieć dostęp do administrowania sklepem.
-
-Hasło: Wpisz hasło dostępowe do administrowania sklepem (minimum 8 znaków). 
-
-Potwierdzenie hasła: Ponownie wpisz hasło.
-
-Zapisz się do newslettera PrestaShop: Zaznacz to pole, jeśli chcesz otrzymywać biuletyny wysyłane przez PrestaShop.
-
-Kliknij na "Następny", aby zatwierdzić te informacje.
-
-![prestashop](images/3167.png){.thumbnail}
-
-## Etap 4
-Pobierz dane do połączenia z bazą danych (informacje na ten temat są dostępne na początku tego przewodnika). 
-
-Wpisz informacje dotyczące bazy danych;
-
-Adres serwera bazy danych: Wpisz nazwę serwera bazy danych wskazany w e-mailu instalacyjnym oraz w panelu klienta.
-
-Nazwa bazy danych: Wybrana podczas zakładania w panelu klienta.
-
-Użytkownik bazy danych: Identyczny z nazwą bazy danych.
-
-Hasło bazy danych: Zostało wysłane w e-mailu po założeniu bazy danych. Można je zmienić. 
-
-Prefix tabel: Opcja użyteczna w przypadku instalowania kilku modułów PrestaShop na jednej bazie danych. W tym przypadku należy podać inny prefiks dla każdej instalacji. 
-
-Ważne: Dane do bazy danych nie są wysyłane automatycznie po zainstalowaniu hostingu. Aby je otrzymać, należy założyć bazę danych w panelu klienta.
-
-Po uzupełnieniu tych informacji możesz przetestować połączenie z bazą danych. 
-
-Kliknij na przycisk "Następny", aby zatwierdzić wpisane informacje.
-
-
-- Etapy te kończą tworzenie powiązania między bazą danych i modułem PrestaShop. Wystarczy dokończyć instalację.
-
-
-
-![prestashop](images/3168.png){.thumbnail}
-
-
-## Zakończenie
-
-## Zakończenie instalacji
-Aby dokończyć instalowanie sklepu PrestaShop, kontynuuj etapy instalacji.
-
-## Etap 1
-Po zakończeniu instalacji pojawi się nowe okno.
-
-![prestashop](images/3169.png){.thumbnail}
-
-## Etap 2
-Instalacja została zakończona!
-
-Możesz teraz się zalogować i rozpocząć pracę ze sklepem klikając na "Zarządzaj sklepem". 
-
-
-- Uwaga: Ze względów bezpieczeństwa należy ręcznie usunąć katalog 
-"install" znajdujący się w katalogu "www".
-
-
-![prestashop](images/3170.png){.thumbnail}
-
-## Część administracyjna sklepu PrestaShop
-Tak wygląda panel administracyjny sklepu PrestaShop.
-
-![prestashop](images/3171.png){.thumbnail}
-
-
-## Użyteczne informacje
-Pomoc OVHcloud nie będzie w stanie zapewnić Ci wsparcia w zakresie konfiguracji sklepu PrestaShop.
-Udostępniamy przewodnik na ten temat: [prestashop]({legacy}2053).
-
-Zachęcamy do korzystania z forum rozwiązania PrestaShop.
-
-
-- Oto link do [forum](http://www.prestashop.com/forums/) tego modułu.
-
-
-
-## Klasyczny błąd: strona w budowie
-Umieściłeś pliki na FTP, ale nadal wyświetla się informacja "strona w budowie".
-
-Po zainstalowaniu hostingu, OVHcloud umieszcza na nim stronę tymczasową.
-
-Jeśli umieścisz pliki w katalogu "www" i nie usuniesz treści umieszczonych przez OVHcloud, pojawi się ten problem. 
-
-Aby to poprawić, usuń plik "index.html" umieszczony przez OVHcloud lub zmień jego nazwę.
-
-Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako tymczasową stronę główną.
-
-Inna użyteczna informacja: pliki strony muszą zostać umieszczone w katalogu "www", aby były brane pod uwagę.
-
-![prestashop](images/3172.png){.thumbnail}
-
-## Klasyczny błąd: katalog "install" nie został usunięty.
-
-- Uwaga: Ze względów bezpieczeństwa należy ręcznie usunąć katalog 
-"install" znajdujący się w katalogu "www".
-
-
-![prestashop](images/3173.png){.thumbnail}
-
+[Oficjalna strona PrestaShop](https://prestashop.com)
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

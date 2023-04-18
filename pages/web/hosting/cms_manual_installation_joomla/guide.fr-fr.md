@@ -115,7 +115,7 @@ Le message suivant apparaît :
 
 Du fait que vous utilisez une base de données présente en dehors d'un hébergement local, vous devrez supprimer le *token* généré aléatoirement lors de l'installation de votre Joomla!.
 
-Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](https://docs.ovh.com/ca/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Ce fichier à supprimer se trouve dans votre [espace de stockage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
 Une fois connecté, rendez-vous dans le dossier **installation** de votre Joomla! puis supprimez uniquement le *token* indiqué par le message d'alerte. Il est présent sous la forme d'un fichier **.txt**.
 

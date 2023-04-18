@@ -1,241 +1,177 @@
 ---
-title: 'CMS, como instalar manualmente PrestaShop'
-excerpt: Como instalar manualmente o PrestaShop?
+title: "Tutorial - Instalar manualmente o PrestaShop"
+excerpt: "Descubra como instalar manualmente o CMS PrestaShop"
 slug: cms_como_instalar_manualmente_prestashop
 section: CMS
-order: 06
-updated: 2022-12-01
+order: 07
+updated: 2023-04-07
 ---
 
+**Última atualização: 07/04/2023**
 
-## Parte 1: preparação da instalação
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+  
+## Objetivo
 
-## Ferramentas necessárias
-Para instalar a sua plataforma PrestaShop no seu alojamento partilhado, sugerimos o uso do cliente FTP FileZilla (gratuito).
+Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Content Management System) PrestaShop em algumas etapas.
 
-## Identificadores de acesso necessários para a instalação
-Assegura-se que possui o Nichandle e a palavra-passe associada para poder ligar-se ao seu Espaço Cliente OVHcloud, se necessário.
+> [!warning]
+>
+> A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) ou [editor do CMS PrestaShop](https://www.prestashop.com/en/support){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção ["Quer saber mais?"](#go-further) deste manual.
+>
 
+> [!success
+>
+> Para instalar o PrestaShop **automaticamente** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), consulte o nosso manual sobre a [instalação de um módulo "num clique"](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
+>
+> Para instalar **manualmente um outro CMS** (WordPress, Joomla!, Drupal), consulte o nosso manual sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/).
+>
 
-- Obtenha o seu identificador e palavra-passe de acesso FTP para se ligar ao espaço de armazenamento do seu serviço de alojamento partilhado OVHcloud.
-Um guia para obtenção dos dados de acesso FTP está à disposição:[prestashop]({legacy}1374)
+**Descubra como instalar manualmente o seu CMS PrestaShop**
+  
+## Requisitos
 
-- É necessário possuir um identificador e palavra-passe da base de dados SQL que lhe permita a ligação a uma base de dados.
-Um guia para obtenção dos dados de acesso à base de dados está à disposição:[prestashop]({legacy}1374)
+- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+  
+## Instruções
 
+### Etapa 1 - preparar a instalação <a name="step1"></a>
 
-![prestashop](images/3158.png){.thumbnail}
+Para instalar o CMS **PrestaShop** na sua oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), são necessários alguns preparativos.
 
+Siga **os passos indicados** no nosso manual sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/) e siga o passo 2 abaixo.
 
-## Parte 2: recuperação dos ficheiros "fonte" da instalação
+### Etapa 2 - finalizar a instalação manual <a name="step2"></a>
 
-- Aceda ao site oficial [PrestaShop](http://www.prestashop.com/).
+> [!success]
+>
+> Antes de continuar a instalação, esvazie a cache do seu browser para evitar qualquer erro.
+>
 
- Aí encontrará, geralmente, o link para fazer o download da última versão estável do CMS para o seu computador.
+Se não descarregou a última versão disponível do PrestaShop, aparecerá a seguinte página:
 
+![PrestaShop installation step 1](images/Prestashop-install-update-version.png){.thumbnail}
 
-O ficheiro que vai obter estará, geralmente, comprimido (em formato zip, certamente). Será necessário poder descomprimir esse ficheiro no seu computador. Encontrará na Internet vários tutoriais para ajuda com essa operação.
+Clique em `No thanks`{.action} se deseja conservar a versão do PrestaShop que acabou de descarregar ou em `Yes please!`{.action} se deseja utilizar a versão mais recente do CMS.
 
-![prestashop](images/3159.png){.thumbnail}
+#### 2.1 - Aceder ao seu site PrestaShop através do seu browser
 
+Introduza o seu domínio na barra de pesquisa do seu browser.
 
-## Parte 3: colocação dos ficheiros no seu espaço de armazenamento através de FTP
+Se os ficheiros de origem do seu PrestaShop foram corretamente colocados na sua pasta raiz, a página do PrestaShop que permite selecionar o idioma aparece:
 
-## Descompressão da pasta de ficheiros
-Abra a pasta na qual guardou o ficheiro comprimido.
+![PrestaShop installation step 2](images/Prestashop-install-select-language.png){.thumbnail}
 
-Clique com o botão do lado direito do rato e escolha "Extrair tudo".
+Selecione a língua do site e clique em `Next`{.action}.
 
-Indique um destino a fim de descomprimir os ficheiros para esse destino.
+#### 2.2 - Validar as condições de utilização
 
-Vários tutoriais e softwares de descompressão estão disponíveis na Internet para o ajudar com estas ações:
+Leia atentamente as condições de utilização, selecione a opção `I agree to the above terms and conditions`{.action} e clique em `Next`{.action}.
 
-A pasta terá o nome "prestashop"
+![PrestaShop installation step 3](images/Prestashop-install-licence-agreement-3.png){.thumbnail}
 
-![prestashop](images/3160.png){.thumbnail}
+#### 2.3 - Insira as informações da sua loja online
 
-## Ligação ao espaço de alojamento através de FTP
-Para colocar os ficheiros de PrestaShop no seu alojamento, deverá ligar-se ao mesmo.
+O PrestaShop irá pedir-lhe uma série de informações sobre a sua futura loja online:
 
-Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[prestashop]({legacy}1374)
+![PrestaShop instalação step 4](images/Prestashop-install-store-infos-4.png){.thumbnail}
 
-![prestashop](images/3161.png){.thumbnail}
+**Informações sobre a sua loja**
 
-## Transferência dos ficheiros através de FTP
-Siga estas etapas para colocar os seus ficheiros no espaço FTP.
+- *Shop name*: Introduza o nome da sua loja online
+- *Main activity*: Selecione o seu sector de atividade entre as propostas do menu pendente
+- *Country*: Selecione o seu país
+- *Enable SSL*: Assinale **Yes** para forçar a reescrita do seu URL em "https://". Deve dispor previamente de um certificado SSL ativo no seu alojamento ou domínio. Para mais informações, consulte o nosso guia sobre [gestão de um certificado SSL no seu alojamento web da OVHcloud](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/).
 
-## Etapa 1
-Uma vez já ligado através de FileZilla:
+**A sua conta**
 
+- *First name*: Introduza o seu nome
+- *Last name*: Introduza o seu nome
+- *E-mail address*: Introduza o seu endereço de e-mail
+- *Shop password*: Escolha uma palavra-passe para aceder ao espaço de administração da sua loja online (backoffice)
+- *Re-type to confirm*: Introduza novamente a password
 
-- Na secção "Site local", que corresponde aos ficheiros presentes no seu computador local, abra a pasta que descomprimiu com o nome "prestashop" e na qual estão presentes os ficheiros do CMS.
+Verifique as informações introduzidas e clique em `Next`{.action}.
 
+#### 2.4 - Instalar o conteúdo predefinido para a sua loja
 
-Na secção "Site Distante/remoto", que corresponde ao espaço de alojamento OVHcloud, abra a pasta "www". É nessa pasta que deverão ser colocados todos os ficheiros do CMS.
+O PrestaShop propõe-lhe instalar conteúdos e módulos para o seu futuro site de E-commerce:
 
-Se a pasta não existir, terá  a possibilidade de a criar.
+![PrestaShop instalação step 5](images/Prestashop-install-store-content-5.png){.thumbnail}
 
-Os seus ficheiros devem estar obrigatoriamente na pasta "www". Se não o fizer, o procedimento de instalação não estará diretamente acessível através do seu nome de domínio.
+Faça as suas escolhas e clique em `Next`{.action}.
 
-![prestashop](images/3162.png){.thumbnail}
+#### 2.5 - Associar o seu PrestaShop com a sua base de dados OVHcloud
 
-## Etapa 2
-Uma vez abertas as pastas:
+![PrestaShop instalação step 6](images/Prestashop-install-db-config-6.png){.thumbnail}
 
-Na secção "Site local" encontrará os ficheiros necessários à instalação do CMS Joomla!.
+Tenha consigo os dados de acesso à sua base de dados (se necessário, consulte **a etapa 1.4** do guia sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/)).
 
-Para selecionar todos os ficheiros, use CTRL+A.
+Insira as informações solicitadas relativas à base de dados:
 
-Arraste e largue, de seguida, os ficheiros na secção "Site Distante/Remoto" dentro da pasta "www".
+- *Database server address*: indique o nome do servidor da base de dados, presente no e-mail de instalação ou na Área de Cliente OVHcloud. 
 
-É muito provável que a sua pasta "www" não esteja vazia. Vamos abordar esse assunto mais adiante neste guia.
+> [!primary]
+> 
+> - O nome do servidor de uma base de dados incluída no serviço de alojamento web tem esta forma: `NameOfYourDatabase.mysql.db`. 
+>
+> - O nome do servidor de uma base de dados Web Cloud Databases começa pelo seu identificador de cliente OVHcloud e tem a seguinte forma: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** corresponde ao seu identificador OVHcloud sem o **"-ovh"** e os **"X"** devem ser substituídos pelo resto da referência do seu serviço Web Cloud Databases.
+>
 
-![prestashop](images/3163.png){.thumbnail}
+- *Database name*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-## Etapa 3
-A transferência de ficheiros está em curso.
+- *Database login*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web.
+Para as bases de dados criadas num serviço Web Cloud Databases, consulte as informações mencionadas no **etapa 1.4** do nosso guia sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/).
 
-Aguarde até que todos os ficheiros sejam colocados no servidor FTP. Isso poderá levar alguns minutos.
+- *Database password*: definiu-o durante a criação da sua base de dados. É possível que a tenha modificado entretanto.
 
-Uma vez que a transferência esteja concluída, assegure-se que todos os ficheiros e as pastas foram corretamente transferidos.
+- *Tables prefix* : se a instalação for efetuada com uma nova base de dados, insira o "prefixo" à sua escolha. Se utilizar uma base de dados já utilizada por outro website, consulte o **etapa 1.4** do nosso guia sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/) para não introduzir um "prefixo" de tabela já utilizado na sua base de dados.
 
-Esta operação é a última da parte consagrada à transferência de ficheiros para o espaço FTP.
+- *Drop existing tables*: **Desmarque esta caixa se já utiliza a sua base de dados com outro website**.
 
-![prestashop](images/3164.png){.thumbnail}
+> [!alert]
+>
+> Se deixar a opção selecionada **Drop existing tables**, eliminará todas as tabelas já existentes na sua base de dados.
+>
 
+Clique em `Test your database connection now!`{.action} para verificar os parâmetros introduzidos:
 
-## Parte 4: ligação com a base de dados
+![PrestaShop instalação step 6-1](images/Prestashop-install-db-config-6-1.png){.thumbnail}
 
-## - Antes de continuar a instalação, limpe a cache do seu browser a fim de evitar eventuais erros.
-Para estabelecer a ligação entre o PrestaShop e a sua base de dados, devemos seguir as etapas de instalação do CMS.
+Se aparecer a mensagem "A sua base de dados está ligada", clique em `Next`{.action}. Caso contrário, verifique os parâmetros que introduziu até que a ligação funcione. Caso seja necessário, consulte o **etapa 1.4** do tutorial para a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/).
 
-## Etapa 1
-Aceda ao seu domínio.
+#### 2.6 - Terminar a instalação do PrestaShop
 
-Selecione a linguagem "Português" para a instalação da sua loja PrestaShop.
+A última etapa corresponde a um resumo da instalação que acabou de realizar:
 
-Clique em "Seguinte" para continuar.
+![PrestaShop instalação step 7](images/Prestashop-install-resume-7.png){.thumbnail}
 
-![prestashop](images/3165.png){.thumbnail}
+Obtenha as credenciais de acesso do PrestaShop antes de sair da página.
 
-## Etapa 2
-Marque a opção "Eu aceito os termos e condições do contrato".
+> [!warning]
+>
+> ** Por razões de segurança, recomendamos que elimine a pasta de instalação presente no seu espaço FTP.**
+>
+> Para realizar esta ação, consulte o nosso guia ["como aceder ao espaço de armazenamento FTP do alojamento web da OVHcloud"](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) e apoie-se no [fórum PrestaShop](https://www.prestashop.com/forums/){.external} para garantir que elimina os ficheiros corretos.
+>
 
-Clique de seguida em "Seguinte" para aceder à etapa seguinte.
+> [!success]
+>
+> Pode desde já iniciar a criação do conteúdo do seu site PrestaShop!
+>
+  
+## Quer saber mais? <a name="go-further"></a>
 
-![prestashop](images/3166.png){.thumbnail}
-
-## Etapa 3
-Serão pedidas informações complementares sobre a loja no ponto em que a está a criar.
-Introduza os seguintes campos:
-
-Nome da sua loja: o nome desejado para a loja, pode influenciar o referenciamento.
-
-Atividade principal: a atividade predominante da loja.
-
-País: selecione o país da sua loja.
-
-Nome: o nome do administrador.
-
-Apelido: o apelido do administrador.
-
-Endereço de e-mail: introduza um endereço de e-mail válido para o acesso à administração da loja.
-
-Password: introduza a password para aceder a administração da loja (mínimo 8 caracteres).
-
-Confirmação da password: volte a introduzir a password.
-
-Inscrever-se na newsledtter da PrestaShop: "marque a casa" se desejar receber as newsletter provenientes da equipa do PrestaShop.
-
-Clique em "Seguinte" para validar as informações relativas à loja PrestaShop.
-
-![prestashop](images/3167.png){.thumbnail}
-
-## Etapa 4
-Muna-se dos identificadores da sua base de dados (ajuda no inicio deste guia).
-
-Introduza as informações pedidas relativas à base de dados:
-
-Nome do servidor: introduza o nome do servidor da sua base de dados indicado no e-mail de instalação ou no seu Espaço Cliente.
-
-Nome da base de dados: escolhida aquando da sua criação no seu Espaço Cliente.
-
-Nome do utilizador: idêntico ao nome da base de dados, encontra-a no e-mail de instalação da base de dados.
-
-Password: defina no seu Espaço Cliente.
-
-Prefixo das tabelas: útil para efetuar várias instalações de PrestaShop numa mesma base de dados. Neste caso deve introduzir um prefixo diferente para cada uma das instalações.
-
-Importante: os identificadores da base de dados não são enviados aquando da instalação do alojamento. Para os receber deve ativar a base de dados no seu Espaço Cliente.
-
-Após todas as informações terem sido preenchidas, deve testar a ligação à base de dados.
-
-Clique em "Seguinte" para validar as informações de ligação.
-
-
-- Estas etapas terminam a criação do link da sua base de dados e do PrestaShop. Somente resta a finalização da instalação propriamente dita.
-
-
-
-![prestashop](images/3168.png){.thumbnail}
-
-
-## Finalização
-
-## Finalização das etapas de instalação
-A fim de terminar a instalação do PrestaShop, continue as etapas de instalação
-
-## Etapa 1
-Deixar que a instalação termine. Após estar a 100% será apresentada uma nova janela.
-
-![prestashop](images/3169.png){.thumbnail}
-
-## Etapa 2
-A instalação da loja PrestaShop está terminada!
-
-Poderá desde já identificar-se e começar a trabalhar na sua loja ao clicar em "Gerir a minha loja". 
-
-
-- Atenção: Por razões de segurança deverá eliminar manualmente a pasta "install" presente no alojamento na pasta "www" para se poder ligar.
-
-
-
-![prestashop](images/3170.png){.thumbnail}
-
-## Visualização da parte de administração do PrestaShop
-Encontrará aqui uma pré-visualização do painel de administração PrestaShop.
-
-![prestashop](images/3171.png){.thumbnail}
-
-
-## Informações úteis
-O suporte da OVHcloud não está habilitado para responder às suas questões sobre configuração e utilização de PrestaShop.
-Está no entanto disponível um guia para o ajudar na utilização: [prestashop]({legacy}2053)..
-
-Convidamo-lo a consultar o [fórum do PrestaShop](https://www.prestashop.com/forums/forum/202-forum-em-portugues/).
-
-## Erro clássico: site em construção
-Colocou os seus ficheiros, através de FTP mas, continua a ver "Página em construção" numa página padrão criada pela OVHcloud aquando da instalação do seu alojamento.
-
-Se colocar o seu conteúdo na pasta "www" sem ter eliminado o conteúdo padrão adicionado pela OVHcloud, encontrará esse caso.
-
-Para corrigir o problema:
-
-
-- elimine ou altere o nome do ficheiro "index.html".
-
-
-Poderá ser interessante apenas mudar o nome para que, caso necessário, possa mais tarde colocar o site em manutenção.
-
-Outra informação útil: Os ficheiros do seu website deverão ser colocados na pasta "www" para que sejam tomados em conta.
-
-![prestashop](images/3172.png){.thumbnail}
-
-## Erro clássico: esqueceu-se de eliminar a pasta "install"
-
-- Atenção: Por razões de segurança deverá eliminar manualmente a pasta "install" presente no alojamento na pasta "www" para se poder ligar.
-
-
-
-![prestashop](images/3173.png){.thumbnail}
-
+[Sítio oficial PrestaShop](https://prestashop.com)
+ 
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+ 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

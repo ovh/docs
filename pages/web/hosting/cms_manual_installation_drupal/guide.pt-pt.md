@@ -1,237 +1,161 @@
 ---
-title: 'CMS, instalar manualmente Drupal'
-excerpt: Como instalar manualmente Drupal?
+title: "Tutorial - Instalar manualmente Drupal"
+excerpt: "Descubra como instalar manualmente o seu CMS Drupal"
 slug: cms_instalar_manualmente_drupal
 section: CMS
 order: 07
-updated: 2022-12-01
+updated: 2023-04-07
 ---
 
+**Última atualização: 07/04/2023**
 
-## Parte 1: preparação de instalação
-Ferramentas necessárias
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+  
+## Objetivo
 
-Para instalar o CMS Drupal no seu alojamento partilhado, aconselhamos a utilização de um cliente FTP como FileZilla (gratuito)
+Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Content Management System) Drupal em apenas alguns passos.
 
-## Dados de autenticação necessários para a instalação
-Assegure-se que possui o seu identificador de cliente (NIC-Handle) e a sua palavra-passe para poder estabelecer ligação ao seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), se necessário.
+> [!warning]
+>
+> A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Colocamos à sua disposição este tutorial para o acompanhar o melhor possível em tarefas comuns. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/) ou [editor do CMS Drupal](https://www.drupal.org/support){.external}. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further) deste tutorial.
+>
 
+> [!success]
+>
+> Para instalar o Drupal **automaticamente** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), consulte o nosso manual sobre a [instalação de um módulo "num clique"](https://docs.ovh.com/pt/hosting/partilhado_guias_dos_modulos_dos_alojamentos_partilhados/).
+>
+> Para instalar **manualmente um outro CMS** (WordPress, Joomla!, PrestaShop), consulte o nosso manual sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/).
+>
 
-- Obtenha o seu identificador e a palavra-passe FTP que lhe permite estabelecer ligação ao seu servidor de armazenamento dos seus ficheiros.
+**Descubra como instalar manualmente o seu CMS Drupal**
+  
+## Requisitos
 
-- É também necessário ter os dados de ligação SQL que permitem estabelecer ligação à base de dados.
-Está à disposição um guia de ajuda na obtenção dos dados de ligação SQL :[]({legacy}1909)
+- Ter um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que contenha, pelo menos, uma base de dados.
+- Dispor de um [nome de domínio](https://www.ovhcloud.com/pt/domains/)
+- Ter acesso [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+  
+## Instruções
 
+### Etapa 1 - preparar a instalação <a name="step1"></a>
 
+Para instalar o CMS **Drupal** na sua oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), são necessários alguns preparativos.
 
-## Parte 2: recuperação dos ficheiros fonte de instalação
+Siga os **passos indicados** no nosso manual sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/) antes de avançar com o passo 2 abaixo.
 
-- Aceda ao site oficial de [Drupal](http://drupalfr.org/).
+### Etapa 2 - finalizar a instalação manual <a name="step2"></a>
 
+> [!success]
+>
+> Antes de continuar a instalação, esvazie a cache do seu browser para evitar qualquer erro.
+>
 
+#### 2.1 - Aceder ao seu site Drupal através do seu browser
 
-![drupal](images/3234.png){.thumbnail}
-Encontrará aí, geralmente, um link para poder fazer o download da mais recente versão estável do CMS para o seu computador.
-No nosso exemplo, usamos a versão 7.41.
-O ficheiro que vai obter estará, geralmente, comprimido (em formato zip, comummente). Será necessário poder descomprimir esse ficheiro no seu computador. Encontrará na Internet vários tutoriais para ajuda com essa operação.
+Introduza o seu domínio na barra de pesquisa do seu browser.
 
+Se os ficheiros de origem do Drupal foram corretamente colocados na sua pasta raiz, a página de seleção da língua para o Drupal aparece:
 
-## Parte 3: colocação dos ficheiros no seu espaço de armazenamento através de FTP
-Descompressão da pasta de ficheiros
+![Drupal instalação step 1](images/Drupal-install-language-1.png){.thumbnail}
 
-Abra a pasta na qual guardou o ficheiro comprimido.
+Selecione a língua do site e clique em `Save and Continue`{.action}.
 
-Clique com o botão do lado direito do rato e escolha "Extrair tudo" ou "Extrair aqui".
+#### 2.2 - Escolher o tipo de instalação
 
-Indique um destino a fim de descomprimir os ficheiros para esse destino.
+O Drupal oferece vários níveis de instalação:
 
-Vários tutoriais e softwares de descompressão estão disponíveis na Internet para o ajudar com estas ações.
+- uma versão standard (recomendada), 
+- uma versão mínima
+- uma versão de apresentação 
 
-A pasta terá o nome "Drupal-xxx" ("xxx" corresponde à versão de Drupal)
+![Drupal instalação step 2](images/Drupal-install-profil-2.png){.thumbnail}
 
-![drupal](images/3233.png){.thumbnail}
-Ligação ao espaço de alojamento através de FTP
+Recomendamos que efetue uma instalação **Standard**. A seguir, clique em `Save and Continue`{.action}.
 
+#### 2.3 - Associar o seu Drupal e a sua base de dados
 
-Para colocar os ficheiros de WordPress no seu alojamento, deverá ligar-se ao mesmo.
+Insira as informações solicitadas relativas à base de dados:
 
-Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[]({legacy}1374)
-Transferência dos ficheiros através de FTP
+![Drupal instalação step 3](images/Drupal-install-db-config-3.png){.thumbnail}
 
-Siga estas etapas para colocar os seus ficheiros no espaço FTP.
+Tenha consigo os dados de acesso à sua base de dados (se necessário, consulte **a etapa 1.4** do guia sobre a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/)).
 
-## Etapa 1
-Uma vez já ligado através de FileZilla:
+- *Database type*: selecione o tipo de base de dados das opções disponíveis.
 
+- *Database name*: este nome foi definido durante a criação da base de dados na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-- Na secção "Site local", que corresponde aos ficheiros presentes no seu computador local, abra a pasta que descomprimiu com o nome "Drupal-xxx" e na qual estão presentes os ficheiros do CMS.
+- *Database username*: é idêntico ao nome da base de dados se utiliza uma base de dados incluída no seu alojamento web. Para as bases de dados criadas num serviço Web Cloud Databases, consulte as informações indicadas **etapa 1.4** do tutorial para a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/).
 
+- *Database password*: definiu-o durante a criação da sua base de dados. É possível que a tenha modificado entretanto.
 
-Na secção "Site Distante/remoto", que corresponde ao espaço de alojamento OVHcloud, abra a pasta "Drupal-xxx". É nessa pasta que deverão ser colocados todos os ficheiros do CMS.
-Se a pasta não existir, terá  a possibilidade de a criar
-Os seus ficheiros devem estar obrigatoriamente na pasta "www". Se não o fizer, o procedimento de instalação não estará diretamente acessível através do seu nome de domínio.
+Clique em `Advanced Options`{.action} para descobrir o resto do menu.
 
-## Etapa 2
-Uma vez abertas as pastas:
+- *Host*: indique o nome do servidor da base de dados, presente no e-mail de instalação ou na Área de Cliente OVHcloud. 
 
+> [!primary]
+> 
+> - O nome do servidor de uma base de dados incluída no serviço de alojamento web tem esta forma: `NameOfYourDatabase.mysql.db`. 
+>
+> - O nome do servidor de uma base de dados Web Cloud Databases começa pelo seu identificador de cliente OVHcloud e tem a seguinte forma: `aa00000-XXX.eu.clouddb.ovh.net`, **"aa00000"** corresponde ao seu identificador OVHcloud sem o **"-ovh"** e os **"X"** devem ser substituídos pelo resto da referência do seu serviço Web Cloud Databases.
+>
 
-Na secção "Site local" encontrará os ficheiros necessários à instalação do CMS Drupal.
+- *Número de porta*: se utiliza uma base de dados incluída com o seu alojamento OVHcloud, deixe-o de forma padrão **3306**. Se utiliza um serviço *Web Cloud Databases*, consulte o **etapa 1.4** do tutorial para a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/) para obter o número de porta correto.
 
-Para selecionar todos os ficheiros, use CTRL+A.
+- *Table name prefix*: se a instalação for efetuada com uma nova base de dados, insira o "prefixo" à sua escolha. Se utilizar uma base de dados já utilizada por outro website, consulte o **etapa 1.4** do tutorial para a [instalação manual de um CMS](https://docs.ovh.com/pt/hosting/partilhado_instalar_manualmente_o_meu_cms/) para não introduzir um "prefixo" de tabela já utilizado na sua base de dados.
 
-Arraste e largue, de seguida, os ficheiros na secção "Site Distante/Remoto" dentro da pasta "www".
+Clique em `Save and Continue`{.action}.
 
-![drupal](images/3199.png){.thumbnail}
-É muito provável que a sua pasta "www" não esteja vazia. Vamos abordar esse assunto mais adiante neste guia.
+Se tudo foi feito corretamente, a instalação do Drupal é iniciada:
 
-## Etapa 3
-A transferência de ficheiros está em curso.
+![Drupal instalação step 4](images/Drupal-install-4.png){.thumbnail}
 
-Aguarde até que todos os ficheiros sejam colocados no servidor FTP. Isso poderá levar alguns minutos.
+#### 2.4 - Configurar as informações do site e o acesso "Administrador"
 
-Uma vez que a transferência esteja concluída, assegure-se que todos os ficheiros e as pastas foram corretamente transferidos.
+Uma vez terminado o passo anterior, aparecerá a seguinte página:
 
-Esta operação é a última da parte consagrada à transferência de ficheiros para o espaço FTP.
+![Drupal instalação step 5-1](images/Drupal-install-configure-site-5-1.png){.thumbnail}
 
-![drupal](images/3200.png){.thumbnail}
+Introduza os elementos solicitados:
 
+- *Site name*: : introduza o nome do seu futuro site Drupal.
 
-## Etapa 1 - Instalação de Drupal
-Aceda ao seu nome de domínio através de um browser.
+- *Site email address*: introduza um endereço de e-mail válido que será utilizado pelo seu site Drupal.
 
-Esta página aparecerá.
+- *Username*: defina um nome de utilizador para se ligar ao seu espaço de administração Drupal (Back Office).
 
-Selecione "Standard
-Install with commonly used features pre-configured." e, depois, clique em "Save and continue"para continuar.
+- *Password* e *Confirm password*: defina a password que será associada ao seu nome de utilizador para aceder ao seu *Back Office* Drupal.
 
-![drupal](images/3219.png){.thumbnail}
+De seguida, clique no final da página:
 
+![Drupal instalação step 5-1](images/Drupal-install-configure-site-5-2.png){.thumbnail}
 
-## Etapa 2 - Escolha do idioma
-Selecione o idioma que deseja para a instalação e clique em "Save and continue".
+- *Email address*: introduza o seu endereço de e-mail. Idealmente, introduza o mesmo endereço que o escolhido acima no formulário *Endereço de e-mail do site*.
 
-![drupal](images/3218.png){.thumbnail}
+- *Default country*: escolha o país onde o seu site será o mais consultado.
 
+- *Default time zone*: selecione o fuso horário predefinido para o seu website.
 
-## Estapa 3 - Ligação à base de dados
-Muna-se dos seus dados de autenticação no servidor de base de dados.
-Está à disposição ajuda relativa a essa tarefa no seguinte guia: []({legacy}1374))
+Clique em `Save and Continue`{.action}.
 
+Se tudo correr bem, aparecerá a seguinte página:
 
-Introduza as informações solicitadas para a base de dados:
+![Drupal instalação step 6](images/Drupal-install-ending-6.png){.thumbnail}
 
-Marque a opção "MySQL, MariaDB ou equivalente"
+> [!success]
+>
+> A instalação do Drupal está terminada. Agora pode iniciar a criação do conteúdo do seu site Drupal!
+>
+  
+## Quer saber mais? <a name="go-further"></a>
 
-Nome da base de dados: O que escolheu no seu Espaço Cliente aquando da criação da base de dados que vai usar para o seu site Drupal;
-
-Nome de utilizador: igual ao nome da base de dados;
-
-Palavra-passe: se não a modificou, é a que definiu no seu Espaço Cliente quando criou a base de dados;
-
-
-- Clique de seguida em "OPÇÕES AVANÇADAS".
-
-
-
-![drupal](images/3202.png){.thumbnail}
-
-- Endereço do servidor de base de dados: Introduza o nome do servidor de base de dados que vê no seu Espaço Cliente ou no email de instalação da base de dados;
-
-
-Prefixo das tabelas: útil para realizar várias instalações de Drupal na mesma base dados. Nesses casos, será necessário criar um prefixo diferente para cada uma das instalações.
-
-Em caso de dúvida, deixe esse campo vazio.
-
-![drupal](images/3203.png){.thumbnail}
-Importante: os dados de acesso da base de dados não são enviados de forma automática após a criação do alojamento. Para os receber, tem de criar uma base de dados a partir da sua área de cliente.
-Clique em "Gravar e continuar" para prosseguir e validar as informações de ligação à base de dados.
-
-
-## Etapa 4 - Progressão
-Se introduziu corretamente as diferentes informações necessárias para a base de dados, a instalação irá ser iniciada.
-Senão, será necessário refazer a etapa. introduzindo os dados corretos.
-
-
-- Basta aguardar algum tempo e a instalação seja concluída.
-
-
-
-![drupal](images/3190.png){.thumbnail}
-
-
-## Etapa 5 - Configuração do utilizador "Administrador" de Drupal
-Introduza as informações solicitadas em relação à administração do seu site Drupal. A descrição das informações é sugestiva:
-
-Nome do site : Indique o seu nome de domínio;
-
-Nome de utilizador: O nome do utilizador que administrará o seu site;
-
-Endereço de email: Introduza o email do administrador. Deve ser um email válido e existente;
-
-
-- Palavra-passe: Indique a palavra-passe que vai ser usada pelo administrador do site;
-- Confirmar a palavra-passe : A mesma coisa que o campo anterior;
-
-
-Desça um pouco mais até ao fundo da página
-
-![drupal](images/3206.png){.thumbnail}
-
-- País, definição padrão: Escolha o país/idioma do site.
-- Fuso horário, definição padrão: Escolha o fuso horário do seu site.
-
-- Atualizações automáticas & envio de notificação por email: Aconselhamos a ativação destas opções com vista a aumentar a estabilidade e a segurança do seu site.
-
-
-
-Clique em "Gravar e continuar" para prosseguir.
-
-![drupal](images/3207.png){.thumbnail}
-
-
-## Etapa 6 - Finalização
-O seu CMS Drupal está agora instalado.
-
-Clique em "Visite o seu novo site".
-
-![drupal](images/3208.png){.thumbnail}
-Apenas tem agora de utilizar Drupal e construir o seu site.
-
-![drupal](images/3209.png){.thumbnail}
-
-
-## Suporte Drupal
-Convidamo-lo a consultar o site dedicado à [ferramenta Drupal](https://www.drupal.org/support/). se necessitar de ajuda na sua utilização.
-O suporte da OVHcloud não está habilitado para responder às suas questões sobre configuração e utilização de Drupal.
-Está no entanto disponível um guia para o ajudar na utilização: []({legacy}2053).
-
-
-## Erros Clássicos
-Erro clássico: site em construção
-
-
-Colocou os seus ficheiros, através de FTP mas, continua a ver "Página em construção" numa página padrão criada pela OVHcloud aquando da instalação do seu alojamento.
-
-
-Se colocar o seu conteúdo na pasta "www" sem ter eliminado o conteúdo padrão adicionado pela OVHcloud, encontrará esse caso.
-
-Para corrigir o problema:
-
-
-- elimine ou altere o nome do ficheiro "index.html".
-
-Poderá ser interessante apenas mudar o nome para que, caso necessário, possa mais tarde colocar o site em manutenção.
-
-
-Outra informação útil: os ficheiros sdo seu site devem ser colocados na pasta 'www' a fim de poderem ser tidos em consideração.
-
-![drupal](images/3217.png){.thumbnail}
-Erro Clássico: versão de PHP
-
-Trata-se de um erro relativo à versão de PHP do seu servidor.
-
-A causa é simples: a última versão de PHP não foi ativada.
-
-
-Tem à sua disposição um guia para o ajudar a alterar a versão de PHP em uso no seu alojamento:[aqui]({legacy}1207)
-
+[Site oficial Drupal](https://www.drupal.org/){.external}
+ 
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+ 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
