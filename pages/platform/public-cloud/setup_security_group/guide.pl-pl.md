@@ -21,7 +21,7 @@ Ze względów bezpieczeństwa możesz konfigurować i używać reguł filtrowani
 
 ## Wymagania początkowe
 
-- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
+- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/)
 - [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/)
 
 ## W praktyce
@@ -105,4 +105,4 @@ Aby usunąć grupę zabezpieczeń, zaznacz ją w odpowiednim polu po lewej stron
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
