@@ -77,7 +77,7 @@ Defina los accesos a su espacio de administración (*Back Office*) Joomla! :
 -*Enter the real name of your Super User* : escriba su nombre real.
 -*Set the username for your Super User account* : elija un nombre de usuario para conectarse al área de administración Joomla!.
 -*Set password for your Super User account* : elija una contraseña con un mínimo de **12 caracteres**.
--*Enter the email address of the website Super User* : introduzca una dirección de correo electrónico válida. Esta será utilizada para recibir las notificaciones enviadas por Joomla.
+-*Enter the email address of the website Super User* : introduzca una dirección de correo electrónico válida. Esta será utilizada para recibir las notificaciones enviadas por Joomla!.
 
 Compruebe los datos introducidos y haga clic en `Setup Database Connection`{.action}.
 
