@@ -216,7 +216,7 @@ Abaixo, um exemplo com o CMS *WordPress*:
 > Recomendamos vivamente que utilize uma "pasta raiz" vazia para evitar qualquer conflito com outro website. Verifique que a pasta de destino não contém nenhum elemento antes de mover os ficheiros.
 >
 
->[!primary]
+> [!primary]
 >
 > Se a pasta raiz que definiu não tiver sido criada automaticamente durante as ações descritas na [etapa 1](#step1), pode criá-la através do FileZilla.
 >
