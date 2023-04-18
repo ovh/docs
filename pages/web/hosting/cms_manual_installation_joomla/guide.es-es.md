@@ -121,7 +121,7 @@ Si utiliza una base de datos externa al alojamiento local, deberá eliminar el *
 
 El archivo que desea eliminar se encuentra en su [espacio de almacenamiento FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 
-Una vez conectado, acceda a la carpeta **instalación** de su Joomla. y elimine únicamente el *token* indicado por el mensaje de alerta. Está presente como archivo **.txt**.
+Una vez conectado, acceda a la carpeta **instalación** de su Joomla! y elimine únicamente el *token* indicado por el mensaje de alerta. Está presente como archivo **.txt**.
 
 Vuelva al navegador de internet y vuelva a hacer clic en `Install Joomla`{.action}.
 
