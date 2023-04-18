@@ -28,8 +28,8 @@ Tal pode ser útil nos seguintes casos:
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Dispor de uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
-- Ter acesso de administrador (root) à sua instância através de SSH
+- Dispor de uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
+- Ter acesso de administrador (root) à sua instância através de SSH.
 
 > [!warning]
 > Esta funcionalidade não está atualmente disponível para as instâncias Metal.

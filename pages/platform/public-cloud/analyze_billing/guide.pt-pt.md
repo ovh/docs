@@ -7,6 +7,10 @@ order: 2
 updated: 2022-08-29
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 30/08/2022**
 
 ## Introdução
@@ -21,9 +25,9 @@ Este sistema é semelhante ao de certas operadoras que faturam ao final do mês 
 
 ## Requisitos
 
-* um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) criado na sua conta OVHcloud;
+* um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) criado na sua conta OVHcloud
 * uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}
-* ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+* ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Princípio geral
 
@@ -137,7 +141,7 @@ Para as instâncias horários, é possível suspender (*shelve*) uma instância 
 > Este processo só está funcional para as instâncias faturadas à hora, não pára a faturação da sua instância, mas reduz os seus custos.
 >
 
-Para mais informações sobre o procedimento a seguir, consulte este [guia](https://docs.ovh.com/pt/public-cloud/suspender_ou_colocar_em_pausa_uma_instancia/)
+Para mais informações sobre o procedimento a seguir, consulte este [guia](https://docs.ovh.com/pt/public-cloud/suspender_ou_colocar_em_pausa_uma_instancia/).
 
 #### Preço mensal
 
