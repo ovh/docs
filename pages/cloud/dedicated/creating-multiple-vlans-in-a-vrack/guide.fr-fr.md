@@ -200,7 +200,7 @@ Ensuite, faites un clic droit sur l’interface VLAN, puis cliquez sur `Properti
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
 
-Effectuez un double clic sur `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action} :
+Effectuez un double clic sur `Internet Protocol Version 4 (TCP/IPv4)`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 

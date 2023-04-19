@@ -21,7 +21,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} dans votre espace client OVHcloud.
 - Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 > [!primary]
 >
@@ -118,7 +118,7 @@ Pour en savoir plus sur SSH, consultez notre guide « [Introduction au SSH](../s
 
 #### Windows
 
-Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (root). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**Remote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
+Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (root). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**emote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
 
 Consultez également notre guide « [Configurer une nouvelle installation de Windows Server](https://docs.ovh.com/fr/dedicated/windows-first-config/) ».
 
@@ -144,7 +144,7 @@ Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](https://docs.ovh
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). L'option se situe dans la section `État des services`.
 
-![Monitoring](images/monitoring-your-server.png){.thumbnail}
+![Monitoring](images/monitoring-your-service.png){.thumbnail}
 
 Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vous avez trois options pour le comportement du monitoring :
 

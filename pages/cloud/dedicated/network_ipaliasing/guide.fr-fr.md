@@ -32,7 +32,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 - Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, un [VPS](https://www.ovh.com/fr/vps/){.external} ou une [instance Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external}.
 - Avoir une ou plusieurs [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/){.external}.
-- Être connecté en SSH au serveur (accès root) ou via remote desktop pour Windows
+- Être connecté en SSH au serveur (accès root) ou via remote desktop pour Windows.
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
@@ -43,7 +43,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 > [!primary]
 >  
->Si vous souhaitez utiliser une distribution récente, la procédure adéquate pour configurer votre interface réseau peut nécessiter des adaptations. Si vous rencontrez des difficultés, nous vous recommandons de consulter la documentation relative à votre système d’exploitation. 
+>Si vous souhaitez utiliser une distribution récente, la procédure adéquate pour configurer votre interface réseau peut nécessiter des adaptations. Si vous rencontrez des difficultés, nous vous recommandons de consulter la documentation relative à votre système d’exploitation.
 
 
 Voici les configurations pour les distributions et les systèmes d’exploitation principaux.

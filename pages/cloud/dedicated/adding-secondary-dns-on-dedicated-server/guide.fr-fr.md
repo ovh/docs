@@ -67,7 +67,7 @@ Les domaines ajoutés seront répertoriés dans cet onglet et peuvent être supp
 
 Il est nécessaire de confirmer votre autorisation à gérer le domaine concerné avant de pouvoir l'ajouter au DNS secondaire OVHcloud. Cela s'effectue via une recherche DNS automatisée sur le sous-domaine *ownercheck.votrenomdedomaine*. Une chaîne unique de caractères est générée à cette fin et affichée dans l'espace client OVHcloud.
 
-- Si le domaine est géré par un bureau d'enregistrement externe ou utilise des serveurs DNS externes à ce stade, connectez-vous à l'espace client de votre fournisseur DNS et ajoutez un enregistrement TXT avec le sous-domaine « ownercheck » et la valeur fournie à l'étape 2 de l'[Ajout de domaine"](#ajoutdomaine).
+- Si le domaine est géré par un bureau d'enregistrement externe ou utilise des serveurs DNS externes à ce stade, connectez-vous à l'espace client de votre fournisseur DNS et ajoutez un enregistrement TXT avec le sous-domaine « ownercheck » et la valeur fournie à l'étape 2 de ["l'Ajout de domaine"](#ajoutdomaine).
 
 - Si le domaine est géré par OVHcloud en tant que serveur d'enregistrement et qu'il utilise des serveurs DNS OVHcloud, fermez la fenêtre en cliquant préalablement sur `Annuler`{.action}. Vous pouvez ensuite suivre les instructions de [ce guide](../../domains/editer-ma-zone-dns/) pour ajouter l'enregistrement TXT dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
