@@ -4,7 +4,7 @@ excerpt: Find out how to change the subscription offer for your OVHcloud Web Hos
 slug: how_to_change_web_hosting_offer
 section: Optimise your website
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 **Last updated 30th January 2023**

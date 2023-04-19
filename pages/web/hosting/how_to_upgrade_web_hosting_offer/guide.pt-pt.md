@@ -4,7 +4,7 @@ excerpt: "Saiba como alterar a fórmula de subscrição da sua oferta de alojame
 slug: how_to_change_web_hosting_offer
 section: Otimizar o seu site
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 > [!primary]

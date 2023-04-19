@@ -4,7 +4,7 @@ excerpt: Come modificare la formula di abbonamento della tua offerta di hosting 
 slug: how_to_change_web_hosting_offer
 section: Ottimizza il tuo sito
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 > [!primary]
