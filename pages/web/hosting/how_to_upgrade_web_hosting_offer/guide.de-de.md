@@ -4,14 +4,14 @@ excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Di
 slug: how_to_change_web_hosting_offer
 section: Webseitenoptimierung
 order: 2
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.02.2023**
+**Letzte Aktualisierung am 19.04.2023**
 
 ## Ziel 
 
@@ -110,6 +110,16 @@ Die [Mailinglisten-Funktion](https://docs.ovh.com/de/emails/webhosting_e-mail_ve
 Um Ihr Hosting auf ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umzustellen, müssen Sie zunächst Mailinglisten entfernen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) bestellen.
 
 Wählen Sie im Bereich `E-Mails`{.action} in Ihrem Kundencenter den betreffenden Dienst aus und klicken Sie dann auf `...`{.action} rechts neben `Angebot`{.action}. Klicken Sie anschließend auf `Zu einem anderen Angebot wechseln`{.action}.
+
+#### 7 - FTP Benutzer
+
+Bevor Sie Ihr Hosting auf ein niedrigeres Angebot umstellen, stellen Sie sicher, dass das neue Angebot genügend FTP-Benutzer bietet.
+
+Die Anzahl der FTP-Benutzer ist in Ihrem OVHcloud Kundencenter sichtbar. Gehen Sie in den Bereich `Web Cloud`{.action} und wählen Sie das betreffende Hosting im Bereich `Hosting-Pakete`{.action} links aus. Klicken Sie auf der angezeigten Seite auf den Tab `FTP-SSH`{.action}. Im unteren Teil der folgenden Seite enthält eine Tabelle alle für Ihr Webhosting erstellten FTP-Benutzer.
+
+Um FTP-Benutzer zu löschen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts neben dem FTP-Benutzer, den Sie löschen möchten, und dann `Löschen`{.action}.
+
+![FTP-Deletion](images/userFTP.png){.thumbnail}
 
 #### Finalisation
 

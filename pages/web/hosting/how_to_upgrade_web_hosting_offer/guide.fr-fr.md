@@ -114,7 +114,6 @@ Le nombre d'utilisateurs FTP est visible dans votre espace client OVHcloud. Rend
 
 Pour supprimer des utilisateurs FTP, cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP que vous souhaitez supprimer puis sur `Supprimer`{.action}.
 
-
 ![user FTP deletion](images/userFTP.png){.thumbnail} 
 
 #### Finalisation

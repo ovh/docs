@@ -127,6 +127,16 @@ Aby zmienić dotychczasowy hosting na ofertę [Perso](https://www.ovhcloud.com/p
 
 W części `E-maile`{.action} w Panelu klienta wybierz odpowiednią ofertę, a następnie kliknij `...`{.action} po prawej stronie `Usługa`{.action}. Na koniec kliknij polecenie `Zmień ofertę`{.action}.
 
+#### 7 - Użytkownicy FTP
+
+Przed przełączeniem hostingu na niższą ofertę, upewnij się, że nowa oferta zawiera wystarczającą liczbę użytkowników FTP.
+
+Liczba użytkowników FTP jest widoczna w Twoim Panelu klienta OVHcloud. Przejdź do sekcji `Web Cloud`{.action} i wybierz odpowiedni hosting w sekcji `Hosting`{.action} po lewej stronie. Na stronie, która się wyświetla kliknij zakładkę `FTP-SSH`{.action}. W dolnej części następnej strony, tabela zawiera listę wszystkich użytkowników FTP utworzonych dla Twojego hostingu.
+
+Aby usunąć użytkowników FTP, kliknij przycisk `...`{.action} po prawej stronie użytkownika FTP, który chcesz usunąć, a następnie kliknij na `Usuń`{.action}.
+
+[user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Zakończenie
 
 Po sprawdzeniu 6 elementów możesz wykonać [zmianę oferty](#modify).

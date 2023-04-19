@@ -113,6 +113,16 @@ Per attivare un servizio di hosting su un'offerta [Personale](https://www.ovhclo
 
 Nella sezione `Email`{.action} del tuo Spazio Cliente, seleziona l'offerta e clicca su `...`{.action} a destra di `Servizio`{.action} Infine clicca su `Modifica offerta`{.action}.
 
+#### 7 - Utenti FTP
+
+Prima di passare a un'offerta inferiore, assicurati che la nuova offerta offra sufficienti utenti FTP.
+
+Il numero di utenti FTP è visibile nello Spazio Cliente OVHcloud. Accedi alla sezione `Web Cloud`{.action} e seleziona l'hosting interessato nella sezione `Hosting`{.action} sulla tua sinistra. Nella nuova pagina clicca sulla scheda `FTP-SSH`{.action}. Nella parte inferiore della pagina successiva, una tabella elenca tutti gli utenti FTP creati per il tuo hosting Web.
+
+Per rimuovere utenti FTP, clicca sul pulsante `...`{.action} a destra dell'utente FTP che vuoi eliminare e poi su `Elimina`{.action}.
+
+![user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Finalizzazione
 
 Una volta verificati questi 6 elementi, è possibile [cambiare offerta](#modify).

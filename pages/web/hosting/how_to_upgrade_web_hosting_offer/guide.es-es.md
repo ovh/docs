@@ -111,6 +111,16 @@ Para migrar a un plan de hosting [Personal](https://www.ovhcloud.com/es-es/web-h
 
 En la sección `Correo electrónico`{.action} del área de cliente, seleccione el servicio correspondiente y haga clic en `...`{.action} a la derecha del `Producto`{.action}. Haga clic en `Cambiar de plan`{.action}.
 
+#### 7 - Usuarios FTP
+
+Antes de cambiar el alojamiento a un plan inferior, asegúrese de que el nuevo plan incluye suficientes usuarios FTP.
+
+Puede consultar el número de usuarios FTP en el área de cliente de OVHcloud. Acceda a la sección `Web Cloud`{.action} y seleccione el alojamiento correspondiente en la sección `Alojamientos`{.action} de la columna izquierda. A continuación, abra la pestaña `FTP-SSH`{.action}. En la parte inferior de la página siguiente, una tabla muestra todos los usuarios FTP creados para el alojamiento web.
+
+Para eliminar usuarios FTP, haga clic en el botón `...`{.action} a la derecha del usuario FTP que desea eliminar y, seguidamente, haga clic en `Eliminar`{.action}.
+
+![user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Finalización
 
 Una vez que haya comprobado estos 6 elementos, puede realizar el [cambio de producto](#modify).

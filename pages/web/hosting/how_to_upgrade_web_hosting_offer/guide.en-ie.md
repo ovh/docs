@@ -106,6 +106,16 @@ To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-ie/web-h
 
 In the `Emails`{.action} section of your Control Panel, select the solution concerned, then click on `...`{.action} to the right of `Solution`{.action}. Next, click `Change solution`{.action}.
 
+#### 7 - FTP users
+
+Before switching your hosting plan to a lower plan, ensure that the new plan has enough FTP users.
+
+You can view the number of FTP users in your OVHcloud Control Panel. Go to the `Web Cloud`{.action} section, then select the plan concerned in the `Hosting`{.action} section on the left-hand side. On the page that appears, click on the `FTP-SSH`{.action} tab. In the lower part of the next page, a table lists all FTP users created for your Web Hosting plan.
+
+To delete FTP users, click the `...`{.action} to the right of the FTP user you want to delete, then `Delete`{.action}.
+
+![user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Completion
 
 Once you have checked these 6 elements, you can [change your plan](#modify).

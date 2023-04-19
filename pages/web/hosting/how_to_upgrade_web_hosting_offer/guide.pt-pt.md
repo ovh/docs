@@ -109,6 +109,16 @@ Para passar o seu alojamento numa oferta [Perso](https://www.ovhcloud.com/pt/web
 
 Na parte `E-mails`{.action}, selecione o serviço em causa e clique em `...`{.action} à direita de `Oferta`. Finalmente, clique em `Mudar de oferta`{.action}.
 
+#### 7 - Utilizadores FTP
+
+Antes de migrar o seu alojamento para uma oferta inferior, certifique-se de que a nova oferta inclui um número suficiente de utilizadores FTP.
+
+O número de utilizadores FTP é visível na sua Área de Cliente OVHcloud. Aceda à secção `Web Cloud`{.action} e selecione o alojamento em causa na secção `Alojamentos`{.action} à esquerda. Na página que aparece, clique no separador `FTP-SSH`{.action}. Na parte inferior da página seguinte, uma tabela lista todos os utilizadores FTP criados para o seu alojamento web.
+
+Para eliminar utilizadores FTP, clique no botão `...`{.action} à direita do utilizador FTP que deseja eliminar e, a seguir, `Eliminar`{.action}.
+
+![user FTP deletion](images/userFTP.png){.thumbnail}
+
 #### Finalização
 
 Depois de verificar estes 6 elementos, pode realizar a sua [alteração da oferta](#modify).
