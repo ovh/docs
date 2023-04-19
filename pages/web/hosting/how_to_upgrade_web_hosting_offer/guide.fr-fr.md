@@ -108,9 +108,14 @@ Dans la partie `Emails`{.action} de votre espace client, sélectionnez l'offre c
 
 #### 7 - Utilisateurs FTP
 
-Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre propose suffisamment d'utilisateurs FTP.
+Avant de basculer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre propose suffisamment d'utilisateurs FTP.
 
-Le nombre d'utilisateurs FTP est visible dans votre espace client OVHcloud. Rendez-vous dans la partie `Web Cloud`{.action} puis sélectionnez l'hébergement concerné dans la section `Hébergements`{.action} sur votre gauche. Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. Un tableau s'affiche sur la partie basse avec tous les utilisateurs FTP créés pour votre hébergement web.
+Le nombre d'utilisateurs FTP est visible dans votre espace client OVHcloud. Rendez-vous dans la partie `Web Cloud`{.action} puis sélectionnez l'hébergement concerné dans la section `Hébergements`{.action} sur votre gauche. Sur la page qui s'affiche, cliquez sur l'onglet `FTP-SSH`{.action}. Dans la partie inférieure de la page suivante, un tableau liste tous les utilisateurs FTP créés pour votre hébergement web.
+
+Pour supprimer des utilisateurs FTP, cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP que vous souhaitez supprimer puis sur `Supprimer`{.action}.
+
+
+![user FTP deletion](images/userFTP.png){.thumbnail} 
 
 #### Finalisation
 
