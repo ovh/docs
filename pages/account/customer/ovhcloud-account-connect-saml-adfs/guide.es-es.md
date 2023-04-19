@@ -65,7 +65,7 @@ Puede obtener el archivo de metadatos adecuado a través de los siguientes enlac
 
 Seleccione `Import data about the relying party from a file`{.action} y seleccione su archivo de metadatos.
 
-Haga clic en el botón `Next`{.action} .
+Haga clic en el botón `Next`{.action}.
 
 ![AD FS - Añadir una aprobación - etapa 2](images/adfs_add_relying_party_trust_2.png){.thumbnail}
 

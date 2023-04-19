@@ -225,7 +225,7 @@ Já está conectado com o mesmo identificador de cliente, mas através do utiliz
 
 ![Federação das informações utilizadores OVHcloud](images/ovhcloud_user_infos_federation.png){.thumbnail}
 
-## Saiba mais
+## Quer saber mais?
 
 [Criar uma conta OVHcloud](https://docs.ovh.com/pt/customer/criar-conta-ovhcloud/)
 
@@ -235,4 +235,4 @@ Já está conectado com o mesmo identificador de cliente, mas através do utiliz
 
 [Proteger a sua conta OVHcloud com a dupla autenticação](https://docs.ovh.com/pt/customer/proteger-a-sua-conta-com-uma-2FA/)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -11,7 +11,7 @@ updated: 2023-04-05
 
 ## Objective
 
-You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To enable these connections, your account and your Azure AD have to be configured using SAML (*Security Assertion Markup Language*).
+You can use **Single Sign-On** (SSO) to connect to your OVHcloud account. To enable these connections, your account and your Azure AD have to be configured using SAML (*Security Assertion Markup Language*) authentications.
 
 **This guide explains how to associate your OVHcloud account with an external Azure AD.**
 
