@@ -235,4 +235,4 @@ Teraz jesteś zalogowany tym samym identyfikatorem klienta, ale za pomocą użyt
 
 [Zabezpieczenie konta OVHcloud za pomocą weryfikacji dwuetapowej](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
