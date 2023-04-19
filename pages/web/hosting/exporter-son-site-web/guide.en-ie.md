@@ -94,7 +94,7 @@ When you have selected the log types and month you want to view, the logs are ar
 
 ## Go further
 
-[Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/)
+[Logging in to your Web Hosting plan’s storage space](/ie/en/web/hosting/log-in-to-storage-ftp-web-hosting/)
 
 [Modifying a FTP user password](/pages/web/hosting/ftp_change_password)
 

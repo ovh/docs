@@ -255,6 +255,6 @@ No resources found in default namespace.
 
 ## Go further
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](/asia/en/kubernetes/).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 Join our [community of users](https://community.ovh.com/en/).

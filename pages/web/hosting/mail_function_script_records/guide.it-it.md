@@ -18,7 +18,7 @@ Le email automatiche sono messaggi inviati tramite script. Generalmente utilizza
 >
 > Questa guida ti mostra come utilizzare la funzione "mail()" di PHP per inviare messaggi da script siti sul tuo [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/).
 >
-> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](https://docs.ovh.com/it/emails/).
+> Per gestire gli indirizzi email inclusi nella soluzione MX Plan o nella soluzione di [hosting web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, consulta la nostra guida sugli [email condivisi - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]

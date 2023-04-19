@@ -50,6 +50,6 @@ Prenez connaissance de ces dernières et cochez la case d'acceptation des contra
 
 ## Aller plus loin
 
-[Documentation Public Cloud](/fr/public-cloud/)
+[Documentation Public Cloud](/products/public-cloud-compute)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -22,7 +22,7 @@ The access management of OVHcloud is based on a "policy" management system. It i
 In details, a policy contains:
 
 - One or more **identities** targeted by this policy. 
-    - It can be account IDs, users or user groups (like the ones used in [federation](https://docs.ovh.com/es/customer/connect-saml-sso/)). 
+    - It can be account IDs, users or user groups (like the ones used in [federation](/products/customer-connect-saml-sso)). 
 - One or more **resources** impacted by this policy. 
     - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
 - One or more **actions** allowed or excepted by this policy. 
@@ -313,7 +313,7 @@ For more information, refer to the [documentation for user management](/pages/ac
 
 #### With SSO connection enabled
 
-If the federation is enabled through the [SSO connection](https://docs.ovh.com/es/customer/connect-saml-sso/), policies only apply to user groups as described in the previous section.
+If the federation is enabled through the [SSO connection](/products/customer-connect-saml-sso), policies only apply to user groups as described in the previous section.
 
 ### Resources
 

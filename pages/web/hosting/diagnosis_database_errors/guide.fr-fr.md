@@ -284,7 +284,7 @@ Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](http
 
 ### Connexion impossible sur une base de données Cloud Databases
 
-Disposer d'un serveur [Cloud Databases](https://docs.ovh.com/fr/clouddb/) vous permet de vous [connecter à vos bases de données](/pages/web/clouddb/connecting-to-database-on-database-server) depuis votre ordinateur ou un serveur extérieur à l'infrastructure d'OVHcloud.
+Disposer d'un serveur [Cloud Databases](/products/web-cloud-clouddb) vous permet de vous [connecter à vos bases de données](/pages/web/clouddb/connecting-to-database-on-database-server) depuis votre ordinateur ou un serveur extérieur à l'infrastructure d'OVHcloud.
 
 Si cette connexion s'avère impossible, commencez par vérifier que vous avez bien [autorisé votre adresse IP publique](/pages/web/clouddb/starting_with_clouddb#autoriser-une-adresse-ip) à se connecter au serveur de bases de données.
 

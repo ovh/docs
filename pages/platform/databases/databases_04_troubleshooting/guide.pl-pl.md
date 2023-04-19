@@ -25,7 +25,7 @@ If you are unable to connect to Public Cloud Databases, please ensure the follow
 - **Correct Service URI syntax is used :** be sure to copy the exact Service URI provided in your Control Panel to avoid syntax issues. Connect to the default port for each DBMS.  
 - **Up-to-date client and/or coding framework :** each DBMS client provides compatibility matrix for software versions. Be sure to follow official DBMS prerequisites, such as Linux package versions, PHP or Python versions, ...
 
-To help you through your connection journey, we detail the exact procedures in our [Public Cloud Database documentation](https://docs.ovh.com/pl/publiccloud/databases/). Don't hesitate to browse the guides for more details.
+To help you through your connection journey, we detail the exact procedures in our [Public Cloud Database documentation](/products/public-cloud-databases). Don't hesitate to browse the guides for more details.
 
 ### Public Cloud Databases - lost password
 
@@ -35,7 +35,7 @@ If you forget your password, you have two solutions:
 - **Regenerate password :** in the Control Panel, select the `users`{.action} tab in your database service. For the desired user, on the right side of the table line you will find an action button. Select `Regenerate password`{.action} Once regenerated, the new password will be shown in your web browser. Please copy it and store it securely. Tips : by doing this, ALL existing connections made with this user will be stopped. You will have to modify the password in all scripts using this user.
 - **Create a new user :** in the control panel, select the `users`{.action} tab in your database service. Create a new user with the desired roles. A password will be generated and will be shown in your web browser. Please copy and store it securely.
 
-To help you through user management, please feel free to read our guides for more details in the [Public Cloud Database documentation](https://docs.ovh.com/pl/publiccloud/databases/).
+To help you through user management, please feel free to read our guides for more details in the [Public Cloud Database documentation](/products/public-cloud-databases).
 
 ### Public Cloud Databases - running out of storage
 
@@ -85,6 +85,6 @@ To troublesoot an outage :
 
 ## Go further
 
-[Public Cloud Databases documentation](https://docs.ovh.com/pl/publiccloud/databases/),
+[Public Cloud Databases documentation](/products/public-cloud-databases),
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.

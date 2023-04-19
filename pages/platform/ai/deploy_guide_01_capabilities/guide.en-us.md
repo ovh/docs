@@ -155,7 +155,7 @@ AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OV
 
 ## Go further
 
-Browse the full [AI Deploy documentation](https://docs.ovh.com/us/en/publiccloud/ai/) to further understand the main concepts and get started.
+Browse the full [AI Deploy documentation](/products/public-cloud-ai-and-machine-learning) to further understand the main concepts and get started.
 
 ## We want your feedback!
 

@@ -170,6 +170,6 @@ This shared model can help relieve the customer’s operational burden.
 
 ## Go further
 
-[All our Email Pro documentation](/gb/en/emails-pro/)
+[All our Email Pro documentation](/products/web-cloud-email-collaborative-solutions-email-pro)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -85,7 +85,7 @@ To do this, please refer to our dedicated guide: [Moving an Additional IP](/page
 
 Once the data is available on the new server, you may need to modify your DNS configuration, for example if the primary IP address was used.
 
-For more information, please read our documentation on [domains and Dns](https://docs.ovh.com/ca/en/domains/).
+For more information, please read our documentation on [domains and Dns](/products/web-cloud-domains-domain-names).
 
 ## Go further
 

@@ -40,7 +40,7 @@ Follow these steps to ensure that your relevant services are up and running:
 
 If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc.) or smartphone (iOS, Android, etc.), and you experience a sending or receiving technical issue, check the configuration settings according to your email solution and the email client or application you are using.
 
-Go to the [Hosted email](https://docs.ovh.com/au/en/emails/) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
+Go to the [Hosted email](/products/web-cloud-email-collaborative-solutions-mx-plan) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
 
 ### Are emails functional from webmail?
 

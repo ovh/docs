@@ -26,9 +26,9 @@ Es posible acceder a las cuentas de correo de su solución de OVHcloud mediante 
 >
 > Al cambiar la contraseña de una dirección de correo, también deberá modificarla en todos los dispositivos en los que esté configurada la dirección de correo. No dude en consultar nuestras guías de configuración para su cliente de correo desde la página de inicio de su solución de correo:
 >
-> - [MXplan](https://docs.ovh.com/es/emails/)
-> - [Email Pro](https://docs.ovh.com/es/emails-pro/)
-> - [Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## Procedimiento

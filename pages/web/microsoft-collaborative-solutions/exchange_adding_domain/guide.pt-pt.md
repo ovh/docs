@@ -110,7 +110,7 @@ Relembramos que todos os endereços criados no seu serviço poderão visualizar 
 
 Depois de configurar as contas, só precisa de as utilizar. Para isso, a OVHcloud coloca à sua disposição o **webmail** acessível no endereço <https://www.ovh.com/pt/mail/>. Para otimizar a utilização do seu endereço num software, certifique-se de que este é compatível com o serviço. 
 
-Se pretender configurar o seu endereço de e-mail num software de correio eletrónico ou periférico, como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte os nossos documentos acessíveis a partir das páginas [Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/) e [E-mail Pro](https://docs.ovh.com/pt/emails-pro/).
+Se pretender configurar o seu endereço de e-mail num software de correio eletrónico ou periférico, como um smartphone ou um tablet, ou obter ajuda relativamente às funcionalidades do seu serviço de e-mail, consulte os nossos documentos acessíveis a partir das páginas [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) e [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 Pode adquirir licenças Outlook na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e licenças Office 365 na página <https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/>. Caso pretenda usufruir do software de correio eletrónico Outlook ou de outros programas da suite Office, recomendamos uma destas soluções.
 

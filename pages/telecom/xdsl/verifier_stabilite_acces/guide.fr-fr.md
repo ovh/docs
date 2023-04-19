@@ -81,7 +81,7 @@ Il n'y donc pas eu de coupure sur l'accès concerné pendant cet intervalle. En 
 
 Si un accès remonte plus de cinq reconnexions sur une même tranche de 24h, sans que celles-ci ne soient consécutives à des actions intentionnelles sur le modem (rédémarrage ou réinitialisation), il est alors légitime de considérer cet accès comme instable. 
 
-Si vous constatez des reconnexions fréquentes sur l'un de vos accès xDSL ou FTTH, nous vous conseillons de faire le point sur votre [desserte interne](../la-desserte-interne/) et de consulter nos guides de [diagnostic et dépannage](/fr/xdsl/).
+Si vous constatez des reconnexions fréquentes sur l'un de vos accès xDSL ou FTTH, nous vous conseillons de faire le point sur votre [desserte interne](../la-desserte-interne/) et de consulter nos guides de [diagnostic et dépannage](/products/web-cloud-internet-internet-access).
 
 > [!primary]
 >

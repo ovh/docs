@@ -48,7 +48,7 @@ Scegli `SFTP`{.action} o `Attivo`{.action} (per attivare il protocollo SSH sul t
 
 > [!primary]
 >
-> Per ulteriori messaggi di errore, consulta la sezione `Diagnostica` delle nostre guide [Hosting](/it/hosting/).
+> Per ulteriori messaggi di errore, consulta la sezione `Diagnostica` delle nostre guide [Hosting](/products/web-cloud-hosting).
 >
 
 ### Ho trasferito i miei file con un software FTP, ma il mio sito non appare.

@@ -40,7 +40,7 @@ Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro.
 Para resolver esta anomalia, deverá:
 
 1. determinar o alojamento ao qual está ligado o seu nome de domínio, para que possa intervir no bom servidor;
-2. criar, ativar ou renovar um [certificado SSL](../os-certificados-ssl-nos-alojamentos-web/) para o seu nome de domínio no alojamento em causa.
+2. criar, ativar ou renovar um [certificado SSL](/pt/web/hosting/os-certificados-ssl-nos-alojamentos-web/) para o seu nome de domínio no alojamento em causa.
 
 ### Etapa 1: verificar o alojamento associado ao seu domínio
 

@@ -415,6 +415,6 @@ Thanks to the `-o wide` option, you can verify that your Pod is running on `seco
 
 In this tutorial you saw how to do some operations on Nodes, taint, drain, cordon, uncordon and how to deploy Pods on particular nodes in your OVHcloud Managed Kubernetes cluster.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/de/kubernetes/).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 Join our [community of users](https://community.ovh.com/en/).

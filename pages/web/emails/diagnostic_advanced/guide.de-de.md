@@ -47,11 +47,11 @@ Befolgen Sie diese Schritte, um sicherzustellen, dass Ihre relevanten Dienste in
 
 Wenn Sie ein E-Mail-Programm auf Ihrem Computer (Outlook, Mac Mail, Thunderbird etc.) oder Ihrem Smartphone (iOS, Android etc.) verwenden und bei Versand oder Empfang Probleme haben, überprüfen Sie die Konfigurationseinstellungen je nach Ihrem E-Mail-Angebot und dem verwendeten E-Programm.
 
-- Überprüfen Sie bei einem **MXplan** Angebot im Bereich [Hosted E-Mail - MX Plan](https://docs.ovh.com/de/emails/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `E-Mail-Clients` .
+- Überprüfen Sie bei einem **MXplan** Angebot im Bereich [Hosted E-Mail - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `E-Mail-Clients` .
 
-- Überprüfen Sie bei einem **E-Mail Pro** Angebot im Bereich [E-Mail Pro](https://docs.ovh.com/de/emails-pro/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `Konfiguration des E-Mail-Clients`.
+- Überprüfen Sie bei einem **E-Mail Pro** Angebot im Bereich [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Abschnitt `Konfiguration des E-Mail-Clients`.
 
-- Für ein **Exchange** Angebot überprüfen Sie im Bereich [Microsoft Collaborative Solutions](https://docs.ovh.com/de/microsoft-collaborative-solutions/) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Bereich `Konfiguration des Exchange E-Mail-Clients` oder Ihres Smartphones in `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets`
+- Für ein **Exchange** Angebot überprüfen Sie im Bereich [Microsoft Collaborative Solutions](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) unserer **Web Cloud**-Anleitungen die Konfiguration Ihres E-Mail-Programms im Bereich `Konfiguration des Exchange E-Mail-Clients` oder Ihres Smartphones in `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets`
 
 ### Sind die E-Mails über das Webmail-Interface funktionsfähig?
 

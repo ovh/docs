@@ -47,11 +47,11 @@ Sprawdź, czy Twoje usługi działają poprawnie:
 
 Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy Mac, Thunderbird, itp.) lub na smartfonie (iOS, Android, etc.) i masz problemy z wysyłaniem lub odbieraniem wiadomości, sprawdź parametry konfiguracji zgodnie z Twoją ofertą e-mail oraz używanym oprogramowaniem poczty lub aplikacją.
 
-- W przypadku oferty **MXplan** w sekcji [E-maile na hostingu - MX Plan](https://docs.ovh.com/pl/emails/) w przewodnikach **Web Cloud**.
+- W przypadku oferty **MXplan** w sekcji [E-maile na hostingu - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) w przewodnikach **Web Cloud**.
 
-- W przypadku oferty **E-mail Pro**, w sekcji [E-mail Pro](https://docs.ovh.com/pl/emails-pro/), przewodników **Web Cloud**, sprawdź konfigurację oprogramowania pocztowego w sekcji `Konfiguracja programu pocztowego`.
+- W przypadku oferty **E-mail Pro**, w sekcji [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro), przewodników **Web Cloud**, sprawdź konfigurację oprogramowania pocztowego w sekcji `Konfiguracja programu pocztowego`.
 
-- W przypadku oferty **Exchange**, w sekcji [Rozwiązania do pracy zespołowej Microsoft](https://docs.ovh.com/pl/microsoft-collaborative-solutions/) w przewodnikach **Web Cloud** sprawdź konfigurację programu pocztowego w sekcji `Konfiguracja programu pocztowego Exchange` lub smartphonie w `Konfiguracja konta Exchange na smartfonie/tablecie`
+- W przypadku oferty **Exchange**, w sekcji [Rozwiązania do pracy zespołowej Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) w przewodnikach **Web Cloud** sprawdź konfigurację programu pocztowego w sekcji `Konfiguracja programu pocztowego Exchange` lub smartphonie w `Konfiguracja konta Exchange na smartfonie/tablecie`
 
 ### Czy e-maile działają w interfejsie Webmail?
 

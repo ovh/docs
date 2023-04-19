@@ -118,7 +118,7 @@ Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}
 
 Une fois vos comptes configurés, il ne vous reste plus qu'à les utiliser ! Pour cela, OVHcloud met à disposition un applicatif en ligne (une *webapp*). Ce dernier est accessible à l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external} et vous devrez y renseigner les identifiants relatifs à votre adresse e-mail.
 
-Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](/fr/emails-pro/). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
+Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil, comme un _smartphone_ ou une tablette, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-email-pro). Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre compte E-mail Pro, retrouvez ci-dessous les paramètres à utiliser :
 
 |Type de serveur|Nom du serveur|Type de sécurité|Port|
 |---|---|---|---|

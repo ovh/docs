@@ -45,7 +45,7 @@ In this step, choose an appropriate service plan. If needed, you will be able to
 
 ![Choose plan](images/kafka_solution_business.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/pt/publiccloud/databases/) of your selected database type for detailed information on each plan's properties.
+Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on each plan's properties.
 
 Click `Next`{.action} to continue.
 
@@ -63,7 +63,7 @@ You can increase the number of nodes and choose the node template in this step. 
 
 ![Order nodes](images/kafka_features.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/pt/publiccloud/databases/) of your selected database type for detailed information on hardware resources and other properties of the database installation.
+Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on hardware resources and other properties of the database installation.
 
 Take note of the pricing information and click `Next`{.action} to continue.
 

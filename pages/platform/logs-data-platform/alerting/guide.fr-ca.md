@@ -203,6 +203,6 @@ You will then receive an email with the messages included. You can then directly
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
-- Documentation: [Guides](/ca/fr/logs-data-platform/){.ref}
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

@@ -147,6 +147,6 @@ If you consider that we should prioritize the possible customization of other au
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](/es/kubernetes/) .
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s) .
 
 Join our [community of users](https://community.ovh.com/en/).

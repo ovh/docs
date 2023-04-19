@@ -94,7 +94,7 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 > [!warning]
 >
-> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](/us/es/emails/) o contacte con el editor de la aplicación que utilice.
+> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-mx-plan) o contacte con el editor de la aplicación que utilice.
 >
 
 ### Versión histórica de la solución MX Plan
@@ -162,7 +162,7 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 > [!warning]
 >
-> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](/us/es/emails/) o contacte con el editor de la aplicación que utilice.
+> Si necesita ayuda para configurar la dirección de correo en su dispositivo, consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-mx-plan) o contacte con el editor de la aplicación que utilice.
 >
 
 ## Más información

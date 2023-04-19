@@ -192,7 +192,7 @@ Depois de instalar e proteger o VPS, é necessário garantir a segurança do seu
 
 O certificado SSL pode ser instalado manualmente pelo utilizador no VPS. Para tal, consulte os manuais do sistema operativo ou do software de gestão do VPS.
 
-Se preferir uma instalação automática, recomendamos o [SSL Gateway](https://www.ovh.pt/ssl-gateway/). Para mais informação, consulte a [página do produto](https://www.ovh.pt/ssl-gateway/){.external} ou o [manual](https://docs.ovh.com/pt/ssl-gateway/){.external} relativo a esta oferta.
+Se preferir uma instalação automática, recomendamos o [SSL Gateway](https://www.ovh.pt/ssl-gateway/). Para mais informação, consulte a [página do produto](https://www.ovh.pt/ssl-gateway/){.external} ou o [manual](/products/web-cloud-ssl-gateway){.external} relativo a esta oferta.
 
 ## Quer saber mais?
 

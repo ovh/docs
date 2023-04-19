@@ -22,7 +22,7 @@ You can also check that your domain name is delivering emails to the right place
 
 ### How do I set up my email address and use it with webmail? 
 
-You can configure your email account to use an email client like Outlook, Thunderbird, Mac Mail, etc. To do this, we have created guides to help you set up your email address. You can find them on [this page](/asia/en/emails/). 
+You can configure your email account to use an email client like Outlook, Thunderbird, Mac Mail, etc. To do this, we have created guides to help you set up your email address. You can find them on [this page](/products/web-cloud-email-collaborative-solutions-mx-plan). 
 
 With [webmail](https://www.ovh.com/asia/mail/), you can access your inbox at any time from any connected device. Once you have created your email account, you can log in here to access it. 
 

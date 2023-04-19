@@ -860,7 +860,7 @@ kubectl delete crds/ovhnginxs.tutorials.ovhcloud.com
 
 ## What’s next
 
-To go deeper on the Kubernetes operators topic, follow the other [Kubernetes tutorials](/gb/en/kubernetes/) in the `Operators` section.
+To go deeper on the Kubernetes operators topic, follow the other [Kubernetes tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s) in the `Operators` section.
 
 ## Go further
 

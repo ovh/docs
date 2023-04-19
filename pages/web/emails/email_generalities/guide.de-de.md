@@ -100,7 +100,7 @@ Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihres E-Mail-Accounts ben
 
 > [!warning]
 >
-> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts auf Ihrem Ger채t haben, verwenden Sie unsere [Konfigurationsanleitungen](/de/emails/) oder wenden Sie sich an den Anbieter der Software oder des Ger채ts.
+> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts auf Ihrem Ger채t haben, verwenden Sie unsere [Konfigurationsanleitungen](/products/web-cloud-email-collaborative-solutions-mx-plan) oder wenden Sie sich an den Anbieter der Software oder des Ger채ts.
 >
 
 #### Erweiterte Funktionen
@@ -212,7 +212,7 @@ Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihrer E-Mail-Adresse ben�
 
 > [!warning]
 >
-> Sollten Sie Schwierigkeiten bei der Konfiguration der E-Mail-Adresse auf Ihrem Ger채t haben, verwenden Sie unsere [Konfigurationsanleitungen](/de/emails/) oder wenden Sie sich an den Anbieter der Software oder des Ger채ts.
+> Sollten Sie Schwierigkeiten bei der Konfiguration der E-Mail-Adresse auf Ihrem Ger채t haben, verwenden Sie unsere [Konfigurationsanleitungen](/products/web-cloud-email-collaborative-solutions-mx-plan) oder wenden Sie sich an den Anbieter der Software oder des Ger채ts.
 >
 
 #### Erweiterte Funktionen

@@ -285,7 +285,7 @@ Ao clicar direito no ícone, pode alterar o método de comparação. Ser-lhe-á 
 
 A seguir, encontrará o link para o nosso manual para [corrigir erros recorrentes durante a utilização de um programa FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-De forma mais geral, consulte [o conjunto dos nossos guias relativos aos alojamentos partilhados](https://docs.ovh.com/pt/hosting/).
+De forma mais geral, consulte [o conjunto dos nossos guias relativos aos alojamentos partilhados](/products/web-cloud-hosting).
 
 Não hesite em consultar a [página oficial do Filezilla](https://filezilla-project.org/).
 

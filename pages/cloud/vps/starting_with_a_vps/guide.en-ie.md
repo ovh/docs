@@ -187,7 +187,7 @@ Once you have configured your VPS, you may want to secure your domain name and y
 
 You can install this SSL certificate manually, directly on the VPS. Please refer to the official documentation of your VPS distribution.
 
-For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.ie/ssl-gateway/){.external} or our [guide documents](https://docs.ovh.com/gb/en/ssl-gateway/) for further information.
+For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.ie/ssl-gateway/){.external} or our [guide documents](/products/web-cloud-ssl-gateway) for further information.
 
 ## Go further
 

@@ -24,7 +24,7 @@ Se os registos MX forem diferentes, é porque é possível que tenha um serviço
 ### Como configurar o meu endereço de e-mail e utilizá-lo com o webmail? 
 
 Pode configurar a sua conta de e-mail em programas como o Outlook, o Thunderbird, o Mail (em Mac)...
-Disponibilizamos guias que o ajudarão nesse processo. Aceda a eles [aqui](https://docs.ovh.com/pt/emails/).
+Disponibilizamos guias que o ajudarão nesse processo. Aceda a eles [aqui](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Graças ao [webmail](https://www.ovh.pt/mail/){.external}, pode aceder a qualquer momento à sua caixa de e-mails, a partir de qualquer aparelho conectado. Depois de criar a sua conta de e-mail, aceda a ela a partir deste endereço.
 

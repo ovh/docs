@@ -8,7 +8,7 @@ updated: 2022-03-14
 
 ## Objective
 
-Explore our High Performance and Swift Object Storage guides on [this page](https://docs.ovh.com/au/en/storage/).
+Explore our High Performance and Swift Object Storage guides on [this page](/products/storage-backup).
 
 ## Go further
 

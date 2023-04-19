@@ -39,7 +39,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 > [!primary]
 >
-> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHcloud dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](https://docs.ovh.com/pl/hosting/).
+> Jeśli po wykonaniu tej operacji Twoja strona WWW nie wyświetla się poprawnie, zapoznaj się z przewodnikami OVHcloud dotyczącymi hostingu współdzielonego w sekcji [Diagnostyka](/products/web-cloud-hosting).
 >
 
 ### Dostęp do interfejsu administratora

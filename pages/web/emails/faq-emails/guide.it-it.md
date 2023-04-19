@@ -24,7 +24,7 @@ Se i record MX sono diversi, è possibile che tu disponga di un servizio di post
 ### Come configurare il tuo indirizzo email e utilizzarlo con la Webmail? 
 
 È possibile configurare il tuo account email su un client di posta come Outlook, Thunderbird, Mail di Mac, ecc.
-Per seguire la procedura, puoi consultare le nostre guide disponibili [qui](/it/emails/).
+Per seguire la procedura, puoi consultare le nostre guide disponibili [qui](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Attraverso la [Webmail](https://www.ovh.com/it/mail/){.external} è possibile accedere in qualsiasi momento alla tua casella di posta elettronica, da qualsiasi dispositivo connesso. Una volta creato il tuo account email, clicca qui per accedervi.
 

@@ -48,7 +48,7 @@ Wybierz `SFTP`{.action} lub `Aktywny`{.action} (aby aktywować protokół SSH na
 
 > [!primary]
 >
-> W przypadku innych wiadomości o błędzie sprawdź sekcję `Diagnostyka` naszych przewodników dotyczących [Hosting](/pl/hosting/).
+> W przypadku innych wiadomości o błędzie sprawdź sekcję `Diagnostyka` naszych przewodników dotyczących [Hosting](/products/web-cloud-hosting).
 >
 
 ### Przeniosłem pliki za pomocą programu FTP, ale moja strona nie wyświetla się.

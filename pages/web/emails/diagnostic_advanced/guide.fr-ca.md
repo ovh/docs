@@ -42,9 +42,9 @@ Voici comment vérifier que vos services sont bien opérationnels :
 
 Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception, vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messagerie ou application utilisé.
 
-- Pour une offre **E-mail**, dans la section [E-mails](https://docs.ovh.com/ca/fr/emails/) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
+- Pour une offre **E-mail**, dans la section [E-mails](/products/web-cloud-email-collaborative-solutions-mx-plan) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
 
-- Pour une offre **Exchange**, dans la section [Solutions collaboratives Microsoft](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`
+- Pour une offre **Exchange**, dans la section [Solutions collaboratives Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`
 
 ### Les e-mails sont-ils fonctionnels depuis le webmail ?
 

@@ -280,7 +280,7 @@ En effectuant un clic-droit sur l'icône, vous pouvez changer le mode de compara
 
 Vous trouverez ci-après le lien vers notre documentation pour [résoudre les erreurs récurrentes lors de l'utilisation d'un logiciel FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-Plus généralement, retrouvez [l'ensemble de nos guides relatifs aux hébergements mutualisés](https://docs.ovh.com/ca/fr/hosting/).
+Plus généralement, retrouvez [l'ensemble de nos guides relatifs aux hébergements mutualisés](/products/web-cloud-hosting).
 
 N'hésitez pas à consulter la [page officielle de Filezilla](https://filezilla-project.org/).
 

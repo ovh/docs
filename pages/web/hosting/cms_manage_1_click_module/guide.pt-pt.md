@@ -39,7 +39,7 @@ A seguir, clique no botão `...`{.action} à direita da linha relativa ao módul
 
 > [!primary]
 >
-> Se o website não for apresentado corretamente após esta operação, consulte os guias OVHcloud relativos aos alojamentos partilhados na secção [Diagnóstico](https://docs.ovh.com/pt/hosting/).
+> Se o website não for apresentado corretamente após esta operação, consulte os guias OVHcloud relativos aos alojamentos partilhados na secção [Diagnóstico](/products/web-cloud-hosting).
 >
 
 ### Aceder à interface de administrador

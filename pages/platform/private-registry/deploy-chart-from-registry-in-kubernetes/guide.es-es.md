@@ -234,6 +234,6 @@ wordpress-mariadb-0          1/1     Running   0          85s
 
 ## Go further
 
-To have an overview of the OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](/es/private-registry/).
+To have an overview of the OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](/products/public-cloud-containers-orchestration-managed-private-registry).
 
 Join our community of users on <https://community.ovh.com/en/>.

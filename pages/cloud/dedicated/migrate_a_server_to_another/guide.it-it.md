@@ -89,7 +89,7 @@ Per farlo, consulta la nostra guida: [Trasferisci un Additional IP](/pages/cloud
 
 Una volta che i dati saranno disponibili sul nuovo server, potrebbe essere necessario modificare la configurazione DNS, ad esempio se l'indirizzo IP principale è stato utilizzato.
 
-Per maggiori informazioni, leggi la nostra documentazione sui [domini e DNS](https://docs.ovh.com/it/domains/).
+Per maggiori informazioni, leggi la nostra documentazione sui [domini e DNS](/products/web-cloud-domains-domain-names).
 
 ## Per saperne di più
 

@@ -190,7 +190,7 @@ Sauvegardez cette modification.
 A nouveau, deux cas sont possibles : 
 
 - Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à votre [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), suivez ces [instructions](#case1).
-- Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à votre offre [Web Cloud Databases](https://docs.ovh.com/fr/clouddb/), suivez ces [instructions](#case2).
+- Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à votre offre [Web Cloud Databases](/products/web-cloud-clouddb), suivez ces [instructions](#case2).
 
 #### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement <a name="case1"></a>
 

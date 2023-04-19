@@ -176,7 +176,7 @@ ADD . $foo
 Inside your Dockerfile, you will need to expose your model or application so anyone can use it. The easiest way is to expose API via REST endpoint.
 The most popular open source frameworks for exposing APIs are [Flask](/pages/platform/ai/deploy_tuto_12_build_custom_image%29%20and%20%5BFast%20API%5D%28).
 
-You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](https://docs.ovh.com/gb/en/publiccloud/ai/).
+You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](/products/public-cloud-ai-and-machine-learning).
 
 ### Exposing your application with a web frontend
 
@@ -185,7 +185,7 @@ While an API is useful for automation and code, sometimes you will need to expos
 AI Deploy is fully compliant with multiple frontend frameworks, such as [Streamlit](https://streamlit.io/), [Gradio](https://gradio.app/) or [Taipy](https://www.taipy.io/).
 You can of course also build your own frontend with your favourite tools, such as HTML/CSS.
 
-You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](https://docs.ovh.com/gb/en/publiccloud/ai/).
+You can find a basic example in the section below, and more advanced tutorials in our [AI Deploy documentation](/products/public-cloud-ai-and-machine-learning).
 
 ## Basic example: Write your own Dockerfile and build your image
 

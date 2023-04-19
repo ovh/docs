@@ -61,7 +61,7 @@ Po zakończeniu procesu Twoja instancja zostanie przeniesiona na model klasyczny
 
 Jeśli chcesz zmienić model *flex*, możesz to zrobić wykonując te same kroki, o których mowa [powyżej](#flavorchoice), wybierając szablon *flex* zamiast klasycznego szablonu. 
 
-Możesz również [edycja-konfiguracji-instancji]((/pages/platform/public-cloud/first_steps_with_public_cloud_instance#edycja-konfiguracji-instancji) w Panelu klienta.
+Możesz również [edycja-konfiguracji-instancji](/pages/platform/public-cloud/revert_a_flex_instance(/pages/platform/public-cloud/first_steps_with_public_cloud_instance#edycja-konfiguracji-instancji) w Panelu klienta.
 
 ## Sprawdź również
  

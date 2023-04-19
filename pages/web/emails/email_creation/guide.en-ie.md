@@ -183,7 +183,7 @@ If you just need the information required to configure your email address, the s
 
 > [!warning]
 >
-> If you have any problems configuring your email address on your device, we recommend using our [configuration guides](/ie/en/emails/) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
+> If you have any problems configuring your email address on your device, we recommend using our [configuration guides](/products/web-cloud-email-collaborative-solutions-mx-plan) or contacting the publisher of the application you are using, because you may need to make a change that is specific to the application.
 >
 
 ## Go further

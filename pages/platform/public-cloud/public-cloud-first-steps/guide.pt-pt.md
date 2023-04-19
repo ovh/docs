@@ -211,7 +211,7 @@ Em função da utilização prevista das suas instâncias, pode selecionar o **M
 
 O modo Public é o modelo de rede clássico, permite que as suas instâncias tenham uma porta de rede pública ligada. Associada ao vrack, cada instância possui um IP público e um IP privado.
 
-O modo privado oferece-lhe a possibilidade de afetar as suas instâncias apenas a uma rede privada. As instâncias deste modo só podem ser expostas à rede pública através de um serviço Gateway ou Load Balancer com Floating IP. Para mais informações, consulte o nosso manual sobre as [soluções de rede para o Public Cloud da OVHcloud](https://docs.ovh.com/pt/publiccloud/network-services/).
+O modo privado oferece-lhe a possibilidade de afetar as suas instâncias apenas a uma rede privada. As instâncias deste modo só podem ser expostas à rede pública através de um serviço Gateway ou Load Balancer com Floating IP. Para mais informações, consulte o nosso manual sobre as [soluções de rede para o Public Cloud da OVHcloud](/products/public-cloud-network).
 
 Depois de escolher o modo escolhido, selecione uma rede privada para associar a sua instância ou clique em `Criar uma nova rede privada`{.action} para criar uma nova.
 

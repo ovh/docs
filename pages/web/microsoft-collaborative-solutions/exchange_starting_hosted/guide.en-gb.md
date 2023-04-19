@@ -126,9 +126,9 @@ The accounts that have not yet been configured configuration will appear in the 
 
 ### Use your email addresses
 
-Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web Application** (OWA) webmail app. You can access this via the following address: <https://www.ovhcloud.com/en-gb/mail/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/).
+Once you have configured your accounts, you can now start using them. To do this, OVHcloud offers the **Outlook Web Application** (OWA) webmail app. You can access this via the following address: <https://www.ovhcloud.com/en-gb/mail/>. To log in, enter your email address credentials. If you require any assistance using OWA, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
-If you would like to configure your email address on an email client or mobile device (e.g. a smartphone or tablet), please refer to [our documentation](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/). To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
+If you would like to configure your email address on an email client or mobile device (e.g. a smartphone or tablet), please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 
 OVHcloud offers optional Outlook licences with your Exchange email account in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
@@ -148,7 +148,7 @@ Now that your Hosted Exchange service is configured and functional, you can set 
 
 To enable these features, select the Hosted Exchange service concerned in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then choose which action to perform from the tabs that appear.
 
-For assistance with these features, please refer to [our documentation](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/).
+For assistance with these features, please refer to [our documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ## Go further
 

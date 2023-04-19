@@ -287,6 +287,6 @@ The Logs Data Platform team will then take care of your request.
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start)
-- Documentation: [Guides](/de/logs-data-platform/)
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/de/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

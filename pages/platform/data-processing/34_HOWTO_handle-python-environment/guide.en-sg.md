@@ -63,6 +63,6 @@ Do not hesitate to reuse this environment file. Also, feel free to add or remove
 
 ## Go further
 
-To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](/sg/en/data-processing/).
+To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](/products/public-cloud-data-analytics-data-processing).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

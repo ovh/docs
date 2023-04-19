@@ -43,7 +43,7 @@ Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), cl
 
 > [!primary]
 >
-> For any other error messages, see the `Troubleshooting` section of our [Web Hosting guides](/gb/en/hosting/).
+> For any other error messages, see the `Troubleshooting` section of our [Web Hosting guides](/products/web-cloud-hosting).
 >
 
 ### I transferred my files with FTP software, but my website does not appear.

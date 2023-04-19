@@ -118,7 +118,7 @@ Una vez introducida toda la información, haga clic en el botón `Siguiente`{.ac
 
 Una vez configuradas las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición una aplicación en internet (*webmail*). Puede acceder a ella en la dirección [webmail](https://www.ovh.com/es/mail/){.external}, donde deberá introducir las credenciales de su dirección de correo electrónico.
 
-Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](/es/emails-pro/). A continuación, se indican los parámetros necesarios para configurar una cuenta E-mail Pro:
+Para configurar su dirección de correo electrónico en un cliente de correo o en un dispositivo (_teléfono inteligente_ o tableta), consulte nuestras [guías de configuración](/products/web-cloud-email-collaborative-solutions-email-pro). A continuación, se indican los parámetros necesarios para configurar una cuenta E-mail Pro:
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
 |---|---|---|---|

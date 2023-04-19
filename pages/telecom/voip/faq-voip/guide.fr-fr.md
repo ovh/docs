@@ -27,7 +27,7 @@ Dans une entreprise, le schéma classique est d'avoir, au minimum, un numéro al
 * Vous pouvez même envisager de combiner ces fonctionnalités en utilisant la configuration « [Contact Center Solution](/pages/telecom/voip/contact-center-solution) ».
 
 Pour déterminer quelle configuration de numéro alias est la plus adaptée à votre entreprise, consultez notre guide « [Choisir et appliquer une configuration pour un numéro](/pages/telecom/voip/quelle_configuration_est_adaptee_a_mes_besoins) ».
-<br> Un guide par configuration est également disponible dans la [rubrique « Numéros ou alias » de nos guides](/fr/voip/).
+<br> Un guide par configuration est également disponible dans la [rubrique « Numéros ou alias » de nos guides](/products/web-cloud-phone-and-fax-voip).
 
 ### Comment utiliser mon répondeur ?
 

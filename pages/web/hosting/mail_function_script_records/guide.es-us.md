@@ -18,7 +18,7 @@ Los emails automatizados son mensajes enviados a través de scripts. Generalment
 >
 > Esta guía se refiere principalmente a los mensajes de correo enviados desde scripts situados en su [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) mediante la función "mail()" de PHP.
 >
-> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, consulte nuestra documentación sobre los [MX Plan](https://docs.ovh.com/us/es/emails/).
+> Si quiere gestionar las direcciones de correo electrónico incluidas en su MX Plan o en su plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, consulte nuestra documentación sobre los [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]

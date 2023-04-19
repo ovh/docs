@@ -89,7 +89,7 @@ Para isso, consulte o nosso guia sobre: [Migrar um Additional IP](/pages/cloud/d
 
 Uma vez os dados disponíveis no novo servidor, poderá ter de alterar a sua configuração DNS, por exemplo, se o endereço IP principal tiver sido utilizado.
 
-Para mais informações queira ler a nossa documentação sobre [domínios e DNS](https://docs.ovh.com/pt/domains/).
+Para mais informações queira ler a nossa documentação sobre [domínios e DNS](/products/web-cloud-domains-domain-names).
 
 ## Saiba mais
 

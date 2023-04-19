@@ -168,7 +168,7 @@ Il n'y a pas de résiliation possible avant échéance sur les offres [SSL secti
 
 Une offre MX Plan n'est pas soumise à un abonnement périodique. Elle ne peut donc pas faire l'objet d'une résiliation mais, si tel est votre souhait, vous pouvez supprimer votre offre.
 
-Pour supprimer votre offre [MX Plan](https://docs.ovh.com/ca/fr/emails/), connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
+Pour supprimer votre offre [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur votre nom en haut à droite puis sur le bouton `Produits et services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Supprimer immédiatement le MX Plan`{.action}.
 

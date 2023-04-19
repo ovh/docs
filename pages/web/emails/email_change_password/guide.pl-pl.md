@@ -24,9 +24,9 @@ Konta e-mail w ramach Twojej usługi OVHcloud są dostępne za pomocą przypisan
 >
 > Po zmianie hasła do Twojego konta e-mail wprowadź tę zmianę na wszystkich urządzeniach, na których skonfigurowałeś konto. Zapoznaj się z naszymi przewodnikami dotyczącymi konfiguracji Twojego programu pocztowego na stronie głównej Twojej usługi e-mail:
 >
-> - [MXplan](https://docs.ovh.com/pl/emails/)
-> - [E-mail Pro](https://docs.ovh.com/pl/emails-pro/)
-> - [Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## W praktyce

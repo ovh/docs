@@ -187,7 +187,7 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
 > [!warning]
 >
-> Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](/pl/emails/) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
+> Jeśli masz trudności z konfiguracją konta e-mail na Twoim urządzeniu, [skorzystaj z naszych przewodników dotyczących konfiguracji](/products/web-cloud-email-collaborative-solutions-mx-plan) lub skontaktuj się z producentem aplikacji, której używasz, aby uzyskać informację o sposobie postępowania.
 >
 
 ## Sprawdź również

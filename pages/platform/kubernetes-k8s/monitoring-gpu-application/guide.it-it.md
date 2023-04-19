@@ -421,6 +421,6 @@ release "video-analytics-demo-0-1641911286" uninstalled
 
 Prometheus and Grafana are very powerful monitoring tools, but also have alerting systems. Don't hesitate to dig in order to create alerts for example.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](/it/kubernetes/).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 Join our [community of users](https://community.ovh.com/en/).

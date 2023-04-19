@@ -190,7 +190,7 @@ Again, two cases are possible:
 
 - If your database is located in the section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) that is dedicated to your [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), follow [these instructions](#case1).
 
-- If your database is located in the section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) dedicated to your [Web Cloud Databases solutions](https://docs.ovh.com/gb/en/clouddb/), follow [these instructions](#case2).
+- If your database is located in the section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) dedicated to your [Web Cloud Databases solutions](/products/web-cloud-clouddb), follow [these instructions](#case2).
 
 #### Case 1: Your website’s database is part of your hosting plan <a name="case1"></a>
 

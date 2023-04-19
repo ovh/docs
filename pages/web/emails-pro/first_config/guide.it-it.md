@@ -119,7 +119,7 @@ Dopo aver completato tutti i campi clicca su `Continua`{.action}, verifica la co
 
 Una volta creati gli account non ti resta che utilizzarli. Per accedervi OVHcloud mette a disposizione un’applicazione online (*webapp*), accessibile all’indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} usando le credenziali associate al tuo indirizzo di posta elettronica.
 
-Per configurare l’account su un altro client di posta o dispositivi come _smartphone_ e tablet, [è possibile trovare alcune informazioni utili nelle nostre guide disponibili online](/it/emails-pro/). Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
+Per configurare l’account su un altro client di posta o dispositivi come _smartphone_ e tablet, [è possibile trovare alcune informazioni utili nelle nostre guide disponibili online](/products/web-cloud-email-collaborative-solutions-email-pro). Se non conosci i parametri necessari alla configurazione dell’account email, ecco i valori da utilizzare:
 
 |Tipo di server|Nome del server|Tipo di sicurezza|Porta|
 |---|---|---|---|

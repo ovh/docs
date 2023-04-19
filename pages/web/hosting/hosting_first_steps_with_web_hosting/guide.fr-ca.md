@@ -170,11 +170,11 @@ Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consul
 
 [Migrer mon site chez OVHcloud](/pages/web/hosting/hosting_migrating_to_ovh){.external}
 
-[Mettre mon site en ligne](../mettre-mon-site-en-ligne/){.external}
+[Mettre mon site en ligne](/ca/fr/web/hosting/mettre-mon-site-en-ligne/){.external}
 
 [Installer son site avec les modules en 1 clic](/pages/web/hosting/cms_install_1_click_modules){.external}
 
-[Comment créer une adresse e-mail](../../emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail_1){.external}
+[Comment créer une adresse e-mail](/ca/fr/web/emails/generalites-sur-les-emails-mutualises/#etape-2-creer-vos-adresses-e-mail_1){.external}
 
 [Utilisation de RoundCube](/pages/web/microsoft-collaborative-solutions/owa_user_guide){.external}
 

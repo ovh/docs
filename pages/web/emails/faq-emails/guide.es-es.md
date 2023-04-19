@@ -22,7 +22,7 @@ También puede comprobar si el dominio está entregando los mensajes en el desti
  
 ### ¿Cómo configurar mi dirección de correo electrónico y utilizarla con el webmail? 
 
-Puede configurar su cuenta de correo con clientes como Outlook, Thunderbird o Mail de Mac, entre otros. OVHcloud pone a su disposición diferentes guías para ayudarle a configurar su dirección de correo. Puede consultar nuestras guías en la [siguiente página](/es/emails/). 
+Puede configurar su cuenta de correo con clientes como Outlook, Thunderbird o Mail de Mac, entre otros. OVHcloud pone a su disposición diferentes guías para ayudarle a configurar su dirección de correo. Puede consultar nuestras guías en la [siguiente página](/products/web-cloud-email-collaborative-solutions-mx-plan). 
 
 Gracias al [webmail](https://www.ovh.es/mail/){.external}, podrá acceder a su correo en cualquier momento, desde cualquier dispositivo. Una vez que haya creado su cuenta de correo, haga clic aquí para acceder a ella. 
 

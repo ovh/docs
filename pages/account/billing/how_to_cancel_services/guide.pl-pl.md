@@ -198,7 +198,7 @@ Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
 Oferta MX Plan nie jest objęta abonamentem okresowym. Nie może ona zatem zostać rozwiązana, ale jeśli tak jest Twoje życzenie, możesz usunąć swoją ofertę.
 
-Aby usunąć ofertę [MX Plan](https://docs.ovh.com/pl/emails/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
+Aby usunąć ofertę [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Produkty i usługi`{.action}.
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi, którą chcesz zrezygnować, a następnie `Usuń natychmiast MX Plan`{.action}.
 

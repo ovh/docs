@@ -8,7 +8,7 @@ updated: 2022-03-14
 
 ## Objectif
 
-Découvrez nos guides Object Storage High Perf et Swift sur [cette page](https://docs.ovh.com/fr/storage/).
+Découvrez nos guides Object Storage High Perf et Swift sur [cette page](/products/storage-backup).
 
 ## Aller plus loin
 

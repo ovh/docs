@@ -133,7 +133,7 @@ You can also refer to our [GitHub repository](https://github.com/ovh/ai-training
 
 > [!primary]
 >
-> You will find all the **codes** and **documentation** needed to deploy each app [here](https://docs.ovh.com/ie/en/publiccloud/ai/).
+> You will find all the **codes** and **documentation** needed to deploy each app [here](/products/public-cloud-ai-and-machine-learning).
 >
 
 Here are some examples of AI apps we propose:

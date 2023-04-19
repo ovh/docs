@@ -211,11 +211,11 @@ Todos los parámetros de configuración se encuentran en la guía "[Información
 
 #### Para las cuentas "Email-Pro":
 
-Consulte todas nuestras guías de configuración en `Configuración en el ordenador` y `Configuración en smartphone` de [nuestra documentación sobre la solución Email-Pro](https://docs.ovh.com/es/emails-pro/).
+Consulte todas nuestras guías de configuración en `Configuración en el ordenador` y `Configuración en smartphone` de [nuestra documentación sobre la solución Email-Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 #### Para las cuentas de correo "Exchange":
 
-Consulte todas nuestras guías de ayuda a la configuración en `Configuración Exchange en ordenador` y `Configuración Exchange en smartphone` de [nuestra documentación sobre Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/).
+Consulte todas nuestras guías de ayuda a la configuración en `Configuración Exchange en ordenador` y `Configuración Exchange en smartphone` de [nuestra documentación sobre Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ### Etapa 9: sustituir los servidores DNS activos de su dominio por los de OVHcloud <a name="step9"></a>
 

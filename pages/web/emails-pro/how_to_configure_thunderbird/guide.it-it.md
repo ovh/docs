@@ -25,7 +25,7 @@ Gli account Email Pro possono essere configurati su client di posta compatibili,
 
 ## Prerequisiti
 
-- Disporre di un account email [Email Pro](https://docs.ovh.com/it/emails-pro/)
+- Disporre di un account email [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
 - Aver installato il software Thunderbird sul tuo Windows
 - Disporre delle credenziali associate all’indirizzo email da configurare
  

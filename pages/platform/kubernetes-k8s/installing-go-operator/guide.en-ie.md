@@ -1412,7 +1412,7 @@ deployment.apps "nginx-go-operator-controller-manager" deleted
 
 ## What’s next
 
-To go deeper on Kubernetes operators topic, follow others [Kubernetes tutorials](/ie/en/kubernetes/) in the `Operators` section.
+To go deeper on Kubernetes operators topic, follow others [Kubernetes tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s) in the `Operators` section.
 
 ## Go further
 

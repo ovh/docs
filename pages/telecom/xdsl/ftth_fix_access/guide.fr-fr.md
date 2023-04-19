@@ -19,7 +19,7 @@ Vous n’avez actuellement pas accès à Internet ou rencontrez une dégradation
 
 > [!primary]
 >
-> Ce guide s'adresse uniquement aux clients disposant d'un [accès internet fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. Si vous disposez d'un accès internet xDSL OVHcloud, reportez-vous aux documentations xDSL correspondantes [accessibles depuis ce lien](https://docs.ovh.com/fr/xdsl/){.external}.
+> Ce guide s'adresse uniquement aux clients disposant d'un [accès internet fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. Si vous disposez d'un accès internet xDSL OVHcloud, reportez-vous aux documentations xDSL correspondantes [accessibles depuis ce lien](/products/web-cloud-internet-internet-access){.external}.
 >
 
 ## En pratique

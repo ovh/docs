@@ -96,7 +96,7 @@ If you just need the information required to configure your email accounts, the 
 
 > [!warning]
 >
-> If you have any problems configuring your email address on your device, we recommend using [our configuration guides](/gb/en/emails/) or getting in touch with the publishers of the application you are using, because you may need to make a change that is specific to the application.
+> If you have any problems configuring your email address on your device, we recommend using [our configuration guides](/products/web-cloud-email-collaborative-solutions-mx-plan) or getting in touch with the publishers of the application you are using, because you may need to make a change that is specific to the application.
 >
 
 #### Advanced features
@@ -212,7 +212,7 @@ If you just need the information required to configure your email accounts, the 
 
 > [!warning]
 >
-> If you have any problems configuring your email accounts on your device, we recommend using [our configuration guides](/gb/en/emails/) or contacting the publishers of the application you are using, because you may need to make a change that is specific to the application.
+> If you have any problems configuring your email accounts on your device, we recommend using [our configuration guides](/products/web-cloud-email-collaborative-solutions-mx-plan) or contacting the publishers of the application you are using, because you may need to make a change that is specific to the application.
 
 #### Advanced features
 

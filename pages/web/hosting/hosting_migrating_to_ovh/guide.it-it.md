@@ -211,11 +211,11 @@ Una volta migrati i vecchi indirizzi email in OVHcloud, è possibile riconfigura
 
 #### Per gli account "Email-Pro":
 
-- Consulta le nostre guide all'aiuto alla configurazione nelle sezioni `Configurazione su computer` e `Configurazione su smartphone` de [la nostra guida sull'offerta Email-Pro](https://docs.ovh.com/it/emails-pro/).
+- Consulta le nostre guide all'aiuto alla configurazione nelle sezioni `Configurazione su computer` e `Configurazione su smartphone` de [la nostra guida sull'offerta Email-Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 #### Per gli account email "Exchange":
 
-- Tutte le nostre guide all'aiuto alla configurazione sono disponibili nelle sezioni `Configurazione di Exchange sul computer` e `Configurazione di Exchange su smartphone` di [la nostra guida sull'offerta Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/).
+- Tutte le nostre guide all'aiuto alla configurazione sono disponibili nelle sezioni `Configurazione di Exchange sul computer` e `Configurazione di Exchange su smartphone` di [la nostra guida sull'offerta Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ### Step 9: sostituire i server DNS attivi del tuo dominio con quelli di OVHcloud <a name="step9"></a>
 

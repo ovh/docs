@@ -110,7 +110,7 @@ Ti ricordiamo che tutti gli indirizzi creati sul tuo servizio saranno in grado d
 
 Una volta completata la configurazione, puoi iniziare a utilizzare i tuoi account. OVHcloud mette a tua disposizione la **Webmail** accessibile all'indirizzo <https://www.ovh.com/it/mail/>. Per un utilizzo ottimale del tuo indirizzo di posta su un software, assicurati che sia compatibile con il servizio. 
 
-Per configurare un account email su un client di posta o un dispositivo come smartphone o tablet o ottenere assistenza sulle funzionalità del tuo servizio di posta, consulta la documentazione disponibile sulle pagine [Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/) ed [Email Pro](https://docs.ovh.com/it/emails-pro/).
+Per configurare un account email su un client di posta o un dispositivo come smartphone o tablet o ottenere assistenza sulle funzionalità del tuo servizio di posta, consulta la documentazione disponibile sulle pagine [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) ed [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 Le licenze Outlook sono disponibili nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e le licenze Office 365 sono disponibili alla pagina <https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/>. Per utilizzare un client di posta Outlook o una o più applicazioni della suite Office, ti consigliamo di optare per una di queste soluzioni.
 

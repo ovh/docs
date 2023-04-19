@@ -89,7 +89,7 @@ W tym celu zapoznaj się z naszym przewodnikiem: [Przenieś Additional IP](/page
 
 Po udostępnieniu danych na nowym serwerze może być konieczna zmiana konfiguracji DNS, na przykład w przypadku użycia głównego adresu IP.
 
-Więcej informacji znajdziesz w naszej dokumentacji dotyczącej [domeny i DNS](https://docs.ovh.com/pl/domains/).
+Więcej informacji znajdziesz w naszej dokumentacji dotyczącej [domeny i DNS](/products/web-cloud-domains-domain-names).
 
 ## Sprawdź również
 

@@ -191,7 +191,7 @@ Una volta installato e reso sicuro il VPS, è utile proteggere anche il tuo domi
 
 Questo tipo di certificato può essere installato manualmente direttamente sul VPS. Per eseguire questa operazione, fai riferimento alla documentazione ufficiale della distribuzione utilizzata.
 
-Se invece preferisci una soluzione automatica, scegli il servizio [SSL Gateway](https://www.ovh.it/ssl-gateway/) offerto da OVHcloud e consulta la nostra [pagina commerciale](https://www.ovh.it/ssl-gateway/){.external} e le nostre [guide](https://docs.ovh.com/it/ssl-gateway/){.external} per utilizzarlo.
+Se invece preferisci una soluzione automatica, scegli il servizio [SSL Gateway](https://www.ovh.it/ssl-gateway/) offerto da OVHcloud e consulta la nostra [pagina commerciale](https://www.ovh.it/ssl-gateway/){.external} e le nostre [guide](/products/web-cloud-ssl-gateway){.external} per utilizzarlo.
 
 ## Per saperne di più
 

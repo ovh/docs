@@ -39,7 +39,7 @@ A continuación, haga clic en el botón `..`{.action} a la derecha de la línea 
 
 > [!primary]
 >
-> Si su sitio web no aparece correctamente debido a esta operación, consulte las guías de OVHcloud relativas a los alojamientos compartidos en la sección [Diagnóstico](https://docs.ovh.com/es/hosting/).
+> Si su sitio web no aparece correctamente debido a esta operación, consulte las guías de OVHcloud relativas a los alojamientos compartidos en la sección [Diagnóstico](/products/web-cloud-hosting).
 >
 
 ### Acceder al panel de administración

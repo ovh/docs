@@ -195,7 +195,7 @@ Di nuovo, sono possibili due casi:
 
 - Se il database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata al tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), segui queste [istruzioni](#case1).
 
-- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [Web Cloud Databases](https://docs.ovh.com/it/clouddb/), segui queste [istruzioni](#case2).
+- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [Web Cloud Databases](/products/web-cloud-clouddb), segui queste [istruzioni](#case2).
 
 #### Caso 1: il database del tuo sito fa parte della tua offerta di hosting <a name="case1"></a>
 

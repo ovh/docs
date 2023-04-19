@@ -13,7 +13,7 @@ updated: 2022-02-04
 ## Wprowadzenie
 
 Opcja zasilenia konta cloud pozwala na przyznanie określonej kwoty na Twój projekt Public Cloud, który będzie służył jako domyślna metoda płatności przy [rozliczaniu projektu](/pages/platform/public-cloud/analyze_billing).<br>
-Oznacza to, że wszystkie zobowiązania z tytułu zasilenia konta cloud zostaną opłacone za pomocą innych dostępnych środków płatniczych. Więcej informacji na ten temat znajdziesz w [przewodnikach dotyczących płatności za usługę Public Cloud](https://docs.ovh.com/pl/billing/).
+Oznacza to, że wszystkie zobowiązania z tytułu zasilenia konta cloud zostaną opłacone za pomocą innych dostępnych środków płatniczych. Więcej informacji na ten temat znajdziesz w [przewodnikach dotyczących płatności za usługę Public Cloud](/products/account-and-service-management-managing-billing-payments-and-services).
 
 **Z tego przewodnika dowiesz się, jak zasilić konto Public Cloud za pomocą vouchera lub poprzez wygenerowanie zamówienia.**
 

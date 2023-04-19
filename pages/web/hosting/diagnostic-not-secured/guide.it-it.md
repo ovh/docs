@@ -40,7 +40,7 @@ In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di e
 Per risolvere questa anomalia, è necessario:
 
 1. determinare l'hosting al quale è associato il tuo dominio, per intervenire sul server giusto;
-2. creare, attivare o rinnovare un [certificato SSL](../i_certificati_ssl_sugli_hosting_web_ovh/) per il tuo dominio sull'hosting in questione.
+2. creare, attivare o rinnovare un [certificato SSL](/it/web/hosting/i_certificati_ssl_sugli_hosting_web_ovh/) per il tuo dominio sull'hosting in questione.
 
 ### Step 1: verifica l'hosting associato al tuo dominio
 

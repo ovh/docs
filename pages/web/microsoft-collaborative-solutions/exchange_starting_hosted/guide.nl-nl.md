@@ -85,9 +85,9 @@ U ziet een tabel met alle accounts die momenteel zijn geconfigureerd of die binn
 
 ### Stap 5: Maak gebruik van uw e-mailadressen 
 
-Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken! Om dit te doen, biedt OVH de **Outlook Web Application** (OWA) webmail-app. U kunt dit via het volgende adres openen: [https://www.ovh.nl/mail/](https://www.ovh.nl/mail/){.external}. Voer uw e-mailadresgegevens in om u in te loggen. Als u hulp nodig heeft bij het gebruik van OWA, raadpleeg dan onze documentatie via deze link: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}.
+Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken! Om dit te doen, biedt OVH de **Outlook Web Application** (OWA) webmail-app. U kunt dit via het volgende adres openen: [https://www.ovh.nl/mail/](https://www.ovh.nl/mail/){.external}. Voer uw e-mailadresgegevens in om u in te loggen. Als u hulp nodig heeft bij het gebruik van OWA, raadpleeg dan onze documentatie via deze link: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
-Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst.
+Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst.
 
 OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en Office 365-licenties op de pagina: [https://www.ovhcloud.com/nl/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/nl/collaborative-tools/microsoft-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
 
@@ -103,7 +103,7 @@ Nu uw Hosted Exchange-dienst is geconfigureerd en volledig functioneel is, kunt 
 
 Om deze functies in te schakelen, selecteert u de verwante Hosted Exchange-dienst in uw OVH Control Panel en kiest u vervolgens uit de tabbladen die aangeven welke actie zal worden uitgevoerd.
 
-Als u hulp nodig heeft bij het gebruik van de functies, raadpleeg dan onze documentatie via deze link: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}.
+Als u hulp nodig heeft bij het gebruik van de functies, raadpleeg dan onze documentatie via deze link: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 ![Teamwerkfuncties](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
 

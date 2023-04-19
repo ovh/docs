@@ -18,7 +18,7 @@ Automatische E-Mails sind Nachrichten, die über Skripte versendet werden, gewö
 >
 > Diese Anleitung betrifft hauptsächlich E-Mails, die über Skripte auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit der "mail()"-Funktion von PHP versendet werden.
 >
-> Wenn Sie die E-Mail-Accounts Ihres MX Plans oder Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} verwalten möchten, lesen Sie unsere Dokumentation zu [Hosted E-Mail - MX Plan](https://docs.ovh.com/de/emails/).
+> Wenn Sie die E-Mail-Accounts Ihres MX Plans oder Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} verwalten möchten, lesen Sie unsere Dokumentation zu [Hosted E-Mail - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan).
 >
 
 > [!success]

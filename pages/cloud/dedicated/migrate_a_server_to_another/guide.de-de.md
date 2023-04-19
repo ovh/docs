@@ -88,7 +88,7 @@ Lesen Sie hierzu unsere Anleitung: [Eine Additional IP umziehen](/pages/cloud/de
 
 Sobald die Daten auf dem neuen Server verfügbar sind, müssen Sie möglicherweise Ihre DNS-Konfiguration ändern, zum Beispiel, wenn die Haupt-IP-Adresse für die Erreichbarkeit Ihrer Dienste verwendet wurde.
 
-Weitere Informationen finden Sie in unserer Dokumentation zu [Domains und DNS](https://docs.ovh.com/de/domains/).
+Weitere Informationen finden Sie in unserer Dokumentation zu [Domains und DNS](/products/web-cloud-domains-domain-names).
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 

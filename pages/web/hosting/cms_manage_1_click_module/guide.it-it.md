@@ -39,7 +39,7 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 
 > [!primary]
 >
-> Se il tuo sito non appare correttamente a seguito di questa operazione, consulta le guide OVHcloud relative agli hosting condivisi nella sezione [Diagnostica](https://docs.ovh.com/it/hosting/).
+> Se il tuo sito non appare correttamente a seguito di questa operazione, consulta le guide OVHcloud relative agli hosting condivisi nella sezione [Diagnostica](/products/web-cloud-hosting).
 >
 
 ### Accedi all'interfaccia amministratore

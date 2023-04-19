@@ -668,7 +668,7 @@ The database is restored into a new database.
 
 [HYCU documentation](https://support.hycu.com/hc/en-us/sections/115001018365-Product-documentation)
 
-[OVHcloud Load Balancer documentation](https://docs.ovh.com/gb/en/load-balancer/)
+[OVHcloud Load Balancer documentation](/products/network-load-balancer)
 
 [Our OVHcloud Object Storage solutions](https://www.ovhcloud.com/de/public-cloud/object-storage/)
 

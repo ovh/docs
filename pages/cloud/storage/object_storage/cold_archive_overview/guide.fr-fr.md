@@ -144,7 +144,7 @@ Il est possible de commencer à archiver un bucket avec moins de 1 To de donnée
 
 Exploitez votre cycle de vie et apprenez à créer un bucket, archiver, récupérer des données, répertorier les métadonnées, en suivant [ce guide](/pages/cloud/storage/object_storage/cold_archive_getting_started) .
 
-[Toute la documentation Object Storage](https://docs.ovh.com/fr/storage/object-storage/).
+[Toute la documentation Object Storage](/products/storage-object-storage).
 
 Rendez-vous sur notre chaîne Discord dédiée : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) . Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
 

@@ -118,7 +118,7 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVHcloud offers an online application (a *web app*), available [here](https://www.ovh.co.uk/mail/), and you will need to enter your email credentials.
 
-If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](https://docs.ovh.com/gb/en/emails-pro/). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](/products/web-cloud-email-collaborative-solutions-email-pro). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|

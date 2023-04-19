@@ -192,7 +192,7 @@ Sobald Sie Ihren VPS eingerichtet haben, können Sie auch Ihre Domain und Ihre W
 
 Sie können das SSL-Zertifikat manuell auf dem VPS installieren. Bitte beachten Sie dazu die offizielle Dokumentation Ihrer VPS Distribution.
 
-OVHcloud bietet auch die SSL Gateway-Lösung zur Automatisierung dieses Prozesses an. Weitere Informationen finden Sie auf der [Produktseite](https://www.ovh.com/de/ssl-gateway/){.external} oder in unseren [Anleitungen](https://docs.ovh.com/de/ssl-gateway/).
+OVHcloud bietet auch die SSL Gateway-Lösung zur Automatisierung dieses Prozesses an. Weitere Informationen finden Sie auf der [Produktseite](https://www.ovh.com/de/ssl-gateway/){.external} oder in unseren [Anleitungen](/products/web-cloud-ssl-gateway).
 
 ## Weiterführende Informationen
 

@@ -42,11 +42,11 @@ Voici comment vérifier que vos services sont bien opérationnels :
 
 Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception, vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messagerie ou application utilisé.
 
-- Pour une offre **MXplan**, dans la section [E-mails mutualisés - MX Plan](https://docs.ovh.com/fr/emails/) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
+- Pour une offre **MXplan**, dans la section [E-mails mutualisés - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
 
-- Pour une offre **E-mail Pro**, dans la section [E-mail Pro](https://docs.ovh.com/fr/emails-pro/), de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
+- Pour une offre **E-mail Pro**, dans la section [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro), de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration sur ordinateur` ou de votre smartphone dans `Configuration sur smartphone`.
 
-- Pour une offre **Exchange**, dans la section [Solutions collaboratives Microsoft](https://docs.ovh.com/fr/microsoft-collaborative-solutions/) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`
+- Pour une offre **Exchange**, dans la section [Solutions collaboratives Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`
 
 ### Les e-mails sont-ils fonctionnels depuis le webmail ?
 

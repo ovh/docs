@@ -24,9 +24,9 @@ Les comptes e-mail de votre offre OVHcloud sont accessibles grâce au mot de pas
 >
 > Lorsque vous modifiez le mot de passe de votre adresse e-mail, vous devrez également répercuter ce changement sur tous les appareils où l’adresse e-mail a été configurée. N'hésitez pas à consulter nos guides de configurations pour votre logiciel de messagerie depuis la page d'accueil de votre offre e-mail:
 >
-> - [MXplan](https://docs.ovh.com/fr/emails/)
-> - [E-mail Pro](https://docs.ovh.com/fr/emails-pro/)
-> - [Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## En pratique

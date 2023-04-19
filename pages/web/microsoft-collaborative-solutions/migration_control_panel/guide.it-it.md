@@ -164,7 +164,7 @@ Per modificare la configurazione, clicca sulla casellina rossa e esegui l'operaz
 
 A questo punto non ti resta che utilizzare i tuoi account email migrati. OVHcloud mette a disposizione un'applicazione online (_Web app_) accessibile all'indirizzo <https://www.ovh.com/it/mail/>. inserendo le credenziali associate al tuo indirizzo email.
 
-Se hai configurato uno degli account migrati su un client di posta elettronica (come Outlook), è necessario impostarlo nuovamente. Le informazioni di connessione al server OVHcloud sono cambiate in seguito alla migrazione. Per maggiori informazioni sulle operazioni da effettuare, consulta la nostra documentazione nelle sezioni delle guide dedicate a [Email Pro](../../emails-pro/) e [Hosted Exchange](/it/microsoft-collaborative-solutions/). Se non sei in grado di riconfigurare l'account nell'immediato, l'accesso tramite l'applicazione online è sempre possibile.
+Se hai configurato uno degli account migrati su un client di posta elettronica (come Outlook), è necessario impostarlo nuovamente. Le informazioni di connessione al server OVHcloud sono cambiate in seguito alla migrazione. Per maggiori informazioni sulle operazioni da effettuare, consulta la nostra documentazione nelle sezioni delle guide dedicate a [Email Pro](../../emails-pro/) e [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Se non sei in grado di riconfigurare l'account nell'immediato, l'accesso tramite l'applicazione online è sempre possibile.
 
 ### Organizzazione del contenuto dei tuoi indirizzi email in seguito a una migrazione <a name="content-after-migration"></a>
 
@@ -184,8 +184,8 @@ Inoltre, è possibile migrare manualmente i tuoi indirizzi email verso il nuovo 
 
 [Gestire i contatti dei servizi](/pages/account/customer/managing_contacts){.external} .
 
-[Guide Email Pro](/it/emails-pro/){.external}.
+[Guide Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
 
-[Guide Exchange](/it/microsoft-collaborative-solutions/){.external}.
+[Guide Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

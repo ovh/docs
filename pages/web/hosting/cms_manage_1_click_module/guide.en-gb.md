@@ -34,7 +34,7 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 > [!primary]
 >
-> If your website does not display properly after this, please refer to the OVHcloud Web Hosting guides in the [Troubleshooting](https://docs.ovh.com/gb/en/hosting/) section.
+> If your website does not display properly after this, please refer to the OVHcloud Web Hosting guides in the [Troubleshooting](/products/web-cloud-hosting) section.
 >
 
 ### Access the administrator interface

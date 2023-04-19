@@ -110,7 +110,7 @@ Le défaut est alors probablement issu de la connexion à Internet. Contactez vo
 ##### **Si OVHcloud est votre fournisseur d'accès à Internet**
 
 Commencez par consulter la [carte des incidents](https://status.isp.ovh.net/) pour vérifier si un incident générique est en cours.<br>
-Si aucun incident générique n'est en cours dans votre zone géographique, consultez la section « Diagnostic et dépannage » de [nos guides xDSL / FTTH](https://docs.ovh.com/fr/xdsl/) pour effectuer un premier diagnostic de votre accès à Internet.<br>
+Si aucun incident générique n'est en cours dans votre zone géographique, consultez la section « Diagnostic et dépannage » de [nos guides xDSL / FTTH](/products/web-cloud-internet-internet-access) pour effectuer un premier diagnostic de votre accès à Internet.<br>
 Les guides suivants vous seront utiles :
 
 - [Dépanner son accès Internet fibre](/pages/telecom/xdsl/ftth_fix_access)

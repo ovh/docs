@@ -195,7 +195,7 @@ De nuevo, existen dos posibles situaciones:
 
 - Si la base de datos se encuentra en la sección dedicado al [alojamiento web](https://www.ovhcloud.com/es-es/web-hosting/) del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), siga estas [instrucciones](#case1).
 
-- Si su base de datos se encuentra en la sección de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) dedicada a sus productos de [Web Cloud Databases](https://docs.ovh.com/es/clouddb/), siga estas [instrucciones](#case2).
+- Si su base de datos se encuentra en la sección de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) dedicada a sus productos de [Web Cloud Databases](/products/web-cloud-clouddb), siga estas [instrucciones](#case2).
 
 #### Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting <a name="case1"></a>
 

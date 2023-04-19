@@ -191,7 +191,7 @@ Po zainstalowaniu i zabezpieczeniu Twojego serwera VPS, masz możliwość zabezp
 
 Certyfikat SSL możesz zainstalować ręcznie, bezpośrednio na serwerze VPS. W tym celu skonsultuj oficjalne materiały informacyjne odnoszące się do używanej przez Ciebie dystrybucji.
 
-OVHcloud zaproponuje Ci w sposób automatyczny [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Zachęcamy do odwiedzenia [strony komercyjnej](https://www.ovh.pl/ssl-gateway/){.external} lub zapoznania się z [dokumentacją](https://docs.ovh.com/pl/ssl-gateway/){.external} dotyczącą tej oferty.
+OVHcloud zaproponuje Ci w sposób automatyczny [SSL Gateway](https://www.ovh.pl/ssl-gateway/). Zachęcamy do odwiedzenia [strony komercyjnej](https://www.ovh.pl/ssl-gateway/){.external} lub zapoznania się z [dokumentacją](/products/web-cloud-ssl-gateway){.external} dotyczącą tej oferty.
 
 ## Sprawdź również
 

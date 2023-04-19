@@ -24,7 +24,7 @@ Wenn die MX-Einträge abweichen, verwenden Sie möglicherweise ein E-Mail-Angebo
 ### Wie kann ich meine E-Mail-Adresse einrichten und mit dem Webmail verwenden? 
 
 Sie können Ihre E-Mail-Adresse auf einem E-Mail-Client wie Outlook, Thunderbird, Mac Mail etc. einrichten.
-Hierzu stellen wir Ihnen Anleitungen zur Einrichtung Ihrer E-Mail-Adresse zur Verfügung. Diese finden Sie [hier](/de/emails/).
+Hierzu stellen wir Ihnen Anleitungen zur Einrichtung Ihrer E-Mail-Adresse zur Verfügung. Diese finden Sie [hier](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Dank [Webmail](https://www.ovh.com/de/mail/){.external} können Sie jederzeit und von jedem beliebigen Gerät aus auf Ihren E-Mail-Dienst zugreifen. Nachdem Sie Ihren E-Mail-Account erstellt haben, können Sie sich hier einloggen, um auf diesen zuzugreifen.
 

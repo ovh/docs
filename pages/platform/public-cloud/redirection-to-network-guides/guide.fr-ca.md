@@ -8,7 +8,7 @@ updated: 2022-11-02
 
 ## Objectif
 
-Découvrez nos guides réseau Public Cloud sur [cette page](https://docs.ovh.com/ca/fr/publiccloud/network-services/).
+Découvrez nos guides réseau Public Cloud sur [cette page](/products/public-cloud-network).
 
 ## Aller plus loin
 

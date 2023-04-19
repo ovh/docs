@@ -278,7 +278,7 @@ By right-clicking on the icon, you can change the comparison mode. You have the 
 
 Consult our documentation for [resolving recurring errors when using FTP software](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-Generally, find all our [guides related to shared hosting here](https://docs.ovh.com/gb/en/hosting/).
+Generally, find all our [guides related to shared hosting here](/products/web-cloud-hosting).
 
 Do not hesitate to consult the [official page of FileZilla](https://filezilla-project.org/).
 

@@ -16,7 +16,7 @@ updated: 2022-11-28
 
 Um Ihr Webhosting zu konfigurieren, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Im Bereich `Hosting-Pakete` können Sie unter anderem Ihre SSL Zertifikate, die PHP Version, die CDN Option, die Multisite, die Datenbanken usw. verwalten.
 
-**Tipps und Tricks**: Um Ihnen bei der Konfiguration Ihres Hostings zu helfen, lesen Sie die Rubrik **Erste Schritte**, die Sie [hier](https://docs.ovh.com/de/hosting/) finden.
+**Tipps und Tricks**: Um Ihnen bei der Konfiguration Ihres Hostings zu helfen, lesen Sie die Rubrik **Erste Schritte**, die Sie [hier](/products/web-cloud-hosting) finden.
 
 ### Wie verwalte ich meine Passwörter?
 
@@ -69,7 +69,7 @@ Klicken Sie hierzu auf den Tab `Allgemeine Informationen`{.action} Ihres Hosting
 
 > [!warning]
 >
-> Falls Sie eine nicht in dieser FAQ aufgeführte Unregelmäßigkeit feststellen, beachten Sie die Hilfen der Kategorie **Diagnose** in unserer [Dokumentation](https://docs.ovh.com/de/hosting/).
+> Falls Sie eine nicht in dieser FAQ aufgeführte Unregelmäßigkeit feststellen, beachten Sie die Hilfen der Kategorie **Diagnose** in unserer [Dokumentation](/products/web-cloud-hosting).
 >
 
 ### Was tun, wenn mein Webhosting nicht korrekt funktioniert? 

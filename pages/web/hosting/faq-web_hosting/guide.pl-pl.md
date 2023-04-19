@@ -16,7 +16,7 @@ updated: 2022-11-28
 
 W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W sekcji `Hosting` możesz zarządzać certyfikatami SSL, wersjami PHP, opcją CDN, stronami podpiętymi w opcji MultiSite, bazami danych, itp.
 
-**Wskazówki i porady**: Aby pomóc Ci w skonfigurowaniu Twojego hostingu, zapoznaj się z sekcją "*Pierwsze kroki*", którą zobaczysz [tutaj](https://docs.ovh.com/pl/hosting/).
+**Wskazówki i porady**: Aby pomóc Ci w skonfigurowaniu Twojego hostingu, zapoznaj się z sekcją "*Pierwsze kroki*", którą zobaczysz [tutaj](/products/web-cloud-hosting).
 
 ### Jak zarządzać swoimi hasłami?
 
@@ -69,7 +69,7 @@ W tym celu kliknij zakładkę `Informacje ogólne`{.action} Twojego hostingu. W 
 
 > [!warning]
 >
-> Jeśli zauważysz anomalię niewymienioną w tym FAQ, zapoznaj się z sekcjami "*Diagnostyka*" w [naszej dokumentacji](https://docs.ovh.com/pl/hosting/).
+> Jeśli zauważysz anomalię niewymienioną w tym FAQ, zapoznaj się z sekcjami "*Diagnostyka*" w [naszej dokumentacji](/products/web-cloud-hosting).
 >
 
 ### Co zrobić w przypadku awarii mojej strony www? 

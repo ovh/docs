@@ -117,7 +117,7 @@ Para o backup da sua base de dados, [crie uma nova base de dados](/pages/web/hos
 
 > [!primary]
 >
-> A OVHcloud oferece servidores de base de dados Web Cloud Databases. Se pretender utilizar esta oferta com o seu website, consulte toda a nossa documentação sobre este produto na [nossa página dedicada](https://docs.ovh.com/pt/clouddb/).
+> A OVHcloud oferece servidores de base de dados Web Cloud Databases. Se pretender utilizar esta oferta com o seu website, consulte toda a nossa documentação sobre este produto na [nossa página dedicada](/products/web-cloud-clouddb).
 >
 
 De seguida, associe a sua base de dados OVHcloud ao ficheiro de configuração do seu site presente no espaço de armazenamento FTP do seu alojamento OVHcloud.
@@ -211,11 +211,11 @@ Depois de migrar os seus antigos endereços de e-mail para a OVHcloud, reconfigu
 
 #### Para as contas "Email-Pro"
 
-- Encontre os nossos guias de ajuda à configuração nas secções `Configuration on computador` e `Configuration no smartphone` de [o nosso manual na oferta Email-Pro](https://docs.ovh.com/pt/emails-pro/).
+- Encontre os nossos guias de ajuda à configuração nas secções `Configuration on computador` e `Configuration no smartphone` de [o nosso manual na oferta Email-Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 #### Para as contas de e-mail "Exchange" :
 
-- Encontre os nossos guias de ajuda à configuração nas secções `Configuration Exchange no computador` e `Configuration Exchange no smartphone` de [a nossa documentação sobre a oferta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/).
+- Encontre os nossos guias de ajuda à configuração nas secções `Configuration Exchange no computador` e `Configuration Exchange no smartphone` de [a nossa documentação sobre a oferta Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ### Etapa 9: substituir os servidores DNS ativos do seu domínio pelos da OVHcloud <a name="step9"></a>
 

@@ -36,7 +36,7 @@ Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de vot
 Afin de résoudre cette anomalie, vous devrez :
 
 1. déterminer l'hébergement auquel est relié votre nom de domaine, afin d'intervenir sur le bon serveur ;
-2. créer, activer ou renouveler un [certificat SSL](../les-certificats-ssl-sur-les-hebergements-web/) pour votre nom de domaine sur l'hébergement concerné.
+2. créer, activer ou renouveler un [certificat SSL](/ca/fr/web/hosting/les-certificats-ssl-sur-les-hebergements-web/) pour votre nom de domaine sur l'hébergement concerné.
 
 ### Étape 1 : vérifier l'hébergement attaché à votre nom de domaine
 

@@ -90,7 +90,7 @@ Para ello, consulte nuestra guía: [Mover una Additional IP](/pages/cloud/dedica
 
 Una vez que los datos estén disponibles en el nuevo servidor, es posible que deba modificar su configuración DNS, por ejemplo, si ha utilizado la dirección IP principal.
 
-Para más información, consulte nuestra documentación sobre los [dominios y DNS](https://docs.ovh.com/us/es/domains/).
+Para más información, consulte nuestra documentación sobre los [dominios y DNS](/products/web-cloud-domains-domain-names).
 
 ## Más información
 

@@ -144,7 +144,7 @@ It is possible to start archiving a container with less than 1 TB of data, but t
 
 Operate your lifecycle and learn how to create buckets, archive, retrieve data, list metadata, reading [this guide](/pages/cloud/storage/object_storage/cold_archive_getting_started).
 
-[All the Object Storage documentation](https://docs.ovh.com/gb/en/storage/object-storage/).
+[All the Object Storage documentation](/products/storage-object-storage).
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our Storage and Backup services.
 

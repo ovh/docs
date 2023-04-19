@@ -187,7 +187,7 @@ Wenn Sie nur die Informationen zur Konfiguration Ihres E-Mail-Accounts benötige
 
 > [!warning]
 >
-> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts in Ihrem Client haben, [verwenden Sie unsere Konfigurationsanleitungen](/de/emails/) oder wenden Sie sich an den Herausgeber der von Ihnen verwendeten Anwendung, falls die Einrichtung spezielle Anpassungen erfordert.
+> Sollten Sie Schwierigkeiten bei der Konfiguration des E-Mail-Accounts in Ihrem Client haben, [verwenden Sie unsere Konfigurationsanleitungen](/products/web-cloud-email-collaborative-solutions-mx-plan) oder wenden Sie sich an den Herausgeber der von Ihnen verwendeten Anwendung, falls die Einrichtung spezielle Anpassungen erfordert.
 >
 
 ## Weiterführende Informationen

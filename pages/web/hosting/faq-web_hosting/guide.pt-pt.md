@@ -16,7 +16,7 @@ updated: 2022-11-28
 
 Para configurar o seu alojamento, comece por aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A partir da secção `Alojamentos`, poderá gerir os seus certificados SSL, a versão PHP, a opção CDN, o multi-site, as bases de dados, etc.
 
-**Truques e dicas**: Para o ajudar a configurar o seu alojamento, sugerimos que consulte a rubrica "Primeiros passos", que poderá encontrar [aqui](https://docs.ovh.com/pt/hosting/).
+**Truques e dicas**: Para o ajudar a configurar o seu alojamento, sugerimos que consulte a rubrica "Primeiros passos", que poderá encontrar [aqui](/products/web-cloud-hosting).
 
 ### Como gerir as minhas palavras-passe?
 
@@ -69,7 +69,7 @@ Para isso, clique no separador `Informações gerais`{.action} do seu alojamento
 
 > [!warning]
 >
-> Se encontrar uma anomalia não listada nesta FAQ, consulte as páginas "*Diagnóstico*" da [nossa documentação](https://docs.ovh.com/pt/hosting/).
+> Se encontrar uma anomalia não listada nesta FAQ, consulte as páginas "*Diagnóstico*" da [nossa documentação](/products/web-cloud-hosting).
 >
 
 ### O que fazer se o meu site tiver um problema de funcionamento? 

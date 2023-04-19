@@ -159,7 +159,7 @@ Para modificar la configuración, haga clic en la etiqueta roja y realice la ope
 
 Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OVHcloud pone a su disposición una aplicación online (_web app_) disponible en la dirección <https://www.ovh.com/world/es/mail/>. Introduzca las claves de su dirección de correo electrónico.
 
-Si ha configurado alguna de las cuentas migradas en un cliente de correo (p. ej. Outlook), deberá volver a configurarlas. La información de conexión al servidor de OVHcloud ha cambiado tras la migración. Para más información, consulte nuestra guía en las secciones relativas a [Hosted Exchange](/us/es/microsoft-collaborative-solutions/). Si no puede reconfigurar la cuenta de forma inmediata, siempre es posible acceder a través de la aplicación online.
+Si ha configurado alguna de las cuentas migradas en un cliente de correo (p. ej. Outlook), deberá volver a configurarlas. La información de conexión al servidor de OVHcloud ha cambiado tras la migración. Para más información, consulte nuestra guía en las secciones relativas a [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Si no puede reconfigurar la cuenta de forma inmediata, siempre es posible acceder a través de la aplicación online.
 
 ### Organización del contenido de sus direcciones de correo tras una migración <a name="content-after-migration"></a>
 
@@ -177,6 +177,6 @@ También puede migrar manualmente sus direcciones de correo a su nueva solución
 
 ## Más información
 
-[Guías Exchange](/us/es/microsoft-collaborative-solutions/){.external}.
+[Guías Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

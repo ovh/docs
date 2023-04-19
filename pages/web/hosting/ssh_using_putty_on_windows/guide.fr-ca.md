@@ -8,7 +8,7 @@ updated: 2020-05-05
 
 Pour l'aide à l'utilisation du SSH sur vos hébergements, le mieux est de consulter [ce guide sur le SSH](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.ref}. Attention l'option SSH n'est disponible qu'à partir des [hébergements PRO](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/){.external}.
 
-Retrouvez nos [différents guides hébergements Web](https://docs.ovh.com/ca/fr/hosting/){.external} disponibles.
+Retrouvez nos [différents guides hébergements Web](/products/web-cloud-hosting){.external} disponibles.
 
 > [!warning]
 >

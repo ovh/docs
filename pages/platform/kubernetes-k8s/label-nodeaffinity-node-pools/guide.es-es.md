@@ -309,6 +309,6 @@ In this tutorial you saw how to create, in your OVHcloud Managed Kubernetes clus
 
 But do you know that you can do several others Node operations like taint, drain and cordon thanks to Node pool labels propagation to the Nodes?
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/es/kubernetes/).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 Join our [community of users](https://community.ovh.com/en/).

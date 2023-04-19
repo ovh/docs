@@ -149,7 +149,7 @@ You cannot cancel [Sectigo SSL services](https://www.ovhcloud.com/asia/web-hosti
 
 An MX Plan solution is not subject to a periodic subscription. You cannot cancel your order, but you can delete your service if you wish.
 
-To delete your [MX Plan solution](https://docs.ovh.com/asia/en/emails/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
+To delete your [MX Plan solution](/products/web-cloud-email-collaborative-solutions-mx-plan), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Delete MX Plan immediately`{.action}.
 

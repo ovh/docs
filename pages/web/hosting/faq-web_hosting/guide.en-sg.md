@@ -58,7 +58,7 @@ To do this, go to your Web Hosting plan’s `General information`{.action} tab. 
 
 > [!warning]
 >
-> If you experience any issues that are not listed in this FAQ, please refer to the [Troubleshooting](https://docs.ovh.com/sg/en/hosting/) section of our guides.
+> If you experience any issues that are not listed in this FAQ, please refer to the [Troubleshooting](/products/web-cloud-hosting) section of our guides.
 >
 
 ### What do I do if my website isn't working properly? 

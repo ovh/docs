@@ -211,7 +211,7 @@ En función del uso previsto de sus instancias, puede seleccionar el **Modo púb
 
 El modo público es el modelo de red clásico. Permite que las instancias tendrán un puerto de red público conectado. Asociada al vRack, cada instancia posee una IP pública y una IP privada.
 
-El modo privado le permite asignar sus instancias únicamente a una red privada. Las instancias de este modo solo pueden estar expuestas a la red pública mediante un servicio Gateway o un Load Balancer con Floating IPs. Para más información, consulte nuestra guía sobre las [soluciones de red para el Public Cloud de OVHcloud](https://docs.ovh.com/us/es/publiccloud/network-services/).
+El modo privado le permite asignar sus instancias únicamente a una red privada. Las instancias de este modo solo pueden estar expuestas a la red pública mediante un servicio Gateway o un Load Balancer con Floating IPs. Para más información, consulte nuestra guía sobre las [soluciones de red para el Public Cloud de OVHcloud](/products/public-cloud-network).
 
 Una vez elegido el modo, seleccione una red privada a la que quiere asociar la instancia o haga clic en `Crear una nueva red privada`{.action} para crear una nueva.
 

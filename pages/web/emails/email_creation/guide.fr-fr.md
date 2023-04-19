@@ -183,7 +183,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/fr/emails/) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
+> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 >
 
 ## Aller plus loin

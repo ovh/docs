@@ -44,7 +44,7 @@ Choisissez `SFTP`{.action} ou `Activé`{.action} (pour activer le protocole SSH 
 
 > [!primary]
 >
-> Pour tout autre message d'erreur, consultez la section `Diagnostic` de nos guides [Hébergements Web](/fr/hosting/).
+> Pour tout autre message d'erreur, consultez la section `Diagnostic` de nos guides [Hébergements Web](/products/web-cloud-hosting).
 >
 
 ### J'ai transféré mes fichiers avec un logiciel FTP, mais mon site ne s'affiche pas.

@@ -16,7 +16,7 @@ updated: 2022-11-28
 
 Per configurare il tuo hosting, accedi innanzitutto allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Dalla rubrica `Hosting`{.action} è possibile gestire certificati SSL, versione PHP, opzione CDN, multisito, database, ecc...
 
-**Consigli e suggerimenti**: Per aiutarti a configurare il tuo hosting, ti invitiamo a consultare la sezione "*Per iniziare*" che trovi [qui](https://docs.ovh.com/it/hosting/).
+**Consigli e suggerimenti**: Per aiutarti a configurare il tuo hosting, ti invitiamo a consultare la sezione "*Per iniziare*" che trovi [qui](/products/web-cloud-hosting).
 
 ### Come gestire le tue password?
 
@@ -69,7 +69,7 @@ Clicca sulla scheda `Informazioni generali`{.action} del tuo hosting. Nella sezi
 
 > [!warning]
 >
-> Se riscontri un'anomalia non inclusa in questa FAQ, consulta la pagina "Diagnostica" della [nostra guida](https://docs.ovh.com/it/hosting/).
+> Se riscontri un'anomalia non inclusa in questa FAQ, consulta la pagina "Diagnostica" della [nostra guida](/products/web-cloud-hosting).
 >
 
 ### Cosa fare se il tuo sito Web non funziona? 

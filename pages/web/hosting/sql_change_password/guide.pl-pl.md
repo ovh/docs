@@ -195,7 +195,7 @@ Ponownie, możliwe są dwa przypadki:
 
 - Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej [hostingowi](https://www.ovhcloud.com/pl/web-hosting/), postępuj zgodnie z tymi [instrukcjami](#case1).
 
-- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej ofertom [Web Cloud Databases](https://docs.ovh.com/pl/clouddb/), postępuj zgodnie z tymi [instrukcjami](#case2).
+- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej ofertom [Web Cloud Databases](/products/web-cloud-clouddb), postępuj zgodnie z tymi [instrukcjami](#case2).
 
 #### Przypadek nr 1: baza danych twojej strony jest częścią twojej oferty hostingowej <a name="case1"></a>
 

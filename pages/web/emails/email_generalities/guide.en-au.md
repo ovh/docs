@@ -95,7 +95,7 @@ If you simply need the information required to configure your email account, the
 
 > [!warning]
 >
-> If you encounter any issues configuring your email address on your device, [you can use our configuration](/au/en/emails/) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
+> If you encounter any issues configuring your email address on your device, [you can use our configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
 >
 
 ### MX Plan solution legacy version.
@@ -162,7 +162,7 @@ If you simply need the information required to configure your email account, the
 
 > [!warning]
 >
-> If you encounter any issues configuring your email address on your device, [you can use our configuration](/au/en/emails/) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
+> If you encounter any issues configuring your email address on your device, [you can use our configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
 >
 
 ## Go further

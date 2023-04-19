@@ -27,7 +27,7 @@ updated: 2022-11-18
 
 ### FTP
 
-- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](/ie/en/hosting/).
+- Access error ("530 Login authentication failed"): You can make sure the access credentials to your hosting space are correct by checking via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) ("FTP - SSH"). Passwords are never displayed but they can be changed. Please refer to our [FTP guides](/products/web-cloud-hosting).
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
 

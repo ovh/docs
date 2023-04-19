@@ -46,11 +46,11 @@ Come verificare che i tuoi servizi siano operativi:
 
 Se utilizzi un client di posta sul tuo computer (Outlook, Mail di Mac, Thunderbird, ecc.) o sul tuo smartphone (iOS, Android, ecc.), e riscontri un malfunzionamento all'invio o alla ricezione, verifica i parametri di configurazione in base al tuo servizio di posta elettronica e al client di posta o applicazione utilizzato.
 
-- Per un'offerta **MX Plan**, nella sezione [Hosted email - MX Plan](https://docs.ovh.com/it/emails/) delle nostre guide **Web Cloud**.
+- Per un'offerta **MX Plan**, nella sezione [Hosted email - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) delle nostre guide **Web Cloud**.
 
-- Per un'offerta **Email Pro**, nella sezione [Email Pro](https://docs.ovh.com/it/emails-pro/) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione di un client di posta`.
+- Per un'offerta **Email Pro**, nella sezione [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione di un client di posta`.
 
-- Per un'offerta **Exchange**, nella sezione [Soluzioni collaborative Microsoft](https://docs.ovh.com/it/microsoft-collaborative-solutions/) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione di un client di posta elettronica Exchange` o del tuo smartphone nella `Varie`.
+- Per un'offerta **Exchange**, nella sezione [Soluzioni collaborative Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione di un client di posta elettronica Exchange` o del tuo smartphone nella `Varie`.
 
 ### Le email sono funzionali dalla Webmail?
 

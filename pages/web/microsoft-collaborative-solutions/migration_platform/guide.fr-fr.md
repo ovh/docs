@@ -117,7 +117,7 @@ Pour modifier la configuration, cliquez sur la pastille rouge et réalisez la ma
 Il ne vous reste plus qu’à utiliser vos adresses e-mail migrées. Pour cela, OVHcloud met à disposition un applicatif en ligne (_web app_) accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous devez y renseigner les identifiants relatifs à votre adresse e-mail.
 
 Si vous avez configuré l'un des comptes migrés sur un client de messagerie (exemple: Outlook, Thunderbird), vous devez de nouveau le paramétrer. Les informations de connexion au serveur OVHcloud ont changé suite à la migration.
-<br>Pour vous aider dans vos manipulations, consultez notre documentation depuis les sections des guides consacrées à [E-mail Pro](https://docs.ovh.com/fr/emails-pro/){.external} et [Hosted Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}. Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
+<br>Pour vous aider dans vos manipulations, consultez notre documentation depuis les sections des guides consacrées à [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external} et [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}. Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
 
 > [!primary]
 >
@@ -128,8 +128,8 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (ex
 
 [Gérer les contacts de ses services](/pages/account/customer/managing_contacts){.external}.
 
-[Guides E-mail Pro](https://docs.ovh.com/fr/emails-pro/){.external}.
+[Guides E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
 
-[Guides Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}.
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

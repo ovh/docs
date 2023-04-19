@@ -30,9 +30,9 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 >
 > Wenn Sie das Passwort Ihrer E-Mail-Adresse ändern, muss diese Änderung auch auf alle E-Mail-Clients, die auf diesen Account zugreifen, angewendet werden. Finden Sie dazu die Konfigurationsanleitung zu Ihrer E-Mail-Anwendung auf der Anleitungsseite für Ihr E-Mail-Angebot:
 >
-> - [MX Plan](https://docs.ovh.com/de/emails/)
-> - [E-Mail Pro](https://docs.ovh.com/de/emails-pro/)
-> - [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/)
+> - [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## In der praktischen Anwendung

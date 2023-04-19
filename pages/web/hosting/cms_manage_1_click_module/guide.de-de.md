@@ -38,7 +38,7 @@ Klicken Sie dann auf den Button `...`{.action} rechts in der Zeile für Ihr Modu
 
 > [!primary]
 >
-> Sollte Ihre Website nach diesem Vorgang nicht korrekt angezeigt werden, lesen Sie die zu den Webhosting-Paketen gehörigen OVHcloud Anleitungen unter [Diagnose](https://docs.ovh.com/de/hosting/).
+> Sollte Ihre Website nach diesem Vorgang nicht korrekt angezeigt werden, lesen Sie die zu den Webhosting-Paketen gehörigen OVHcloud Anleitungen unter [Diagnose](/products/web-cloud-hosting).
 >
 
 ### Administrator-Interface

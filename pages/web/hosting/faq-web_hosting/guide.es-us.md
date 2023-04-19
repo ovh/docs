@@ -16,7 +16,7 @@ updated: 2022-11-28
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para configurar el alojamiento. Desde la sección `Alojamientos` podrá gestionar sus certificados SSL, la versión PHP, la opción CDN, el multisitio, las bases de datos, etc.
 
-**Trucos y Trucos**: Para ayudarle a configurar su alojamiento, consulte la sección *Primeros pasos* que encontrará [aquí](https://docs.ovh.com/us/es/hosting/).
+**Trucos y Trucos**: Para ayudarle a configurar su alojamiento, consulte la sección *Primeros pasos* que encontrará [aquí](/products/web-cloud-hosting).
 
 ### ¿Cómo administrar mis contraseñas?
 
@@ -63,7 +63,7 @@ Para ello, acceda a la pestaña `Información general`{.action} del alojamiento.
 
 > [!warning]
 >
-> Si encuentra una anomalía no indicada en esta FAQ, consulte la página "*Diagnóstico*" de [nuestra documentación](https://docs.ovh.com/us/es/hosting/).
+> Si encuentra una anomalía no indicada en esta FAQ, consulte la página "*Diagnóstico*" de [nuestra documentación](/products/web-cloud-hosting).
 >
 
 ### ¿Qué hacer si mi sitio web no funciona bien? 

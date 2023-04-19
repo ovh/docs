@@ -202,7 +202,7 @@ Todos los parámetros de configuración se encuentran en la guía "[Información
 
 #### Para las cuentas de correo "Exchange":
 
-Consulte todas nuestras guías de ayuda a la configuración en `Configuración Exchange en ordenador` y `Configuración Exchange en smartphone` de [nuestra documentación sobre Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/).
+Consulte todas nuestras guías de ayuda a la configuración en `Configuración Exchange en ordenador` y `Configuración Exchange en smartphone` de [nuestra documentación sobre Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ### Etapa 9: sustituir los servidores DNS activos de su dominio por los de OVHcloud <a name="step9"></a>
 

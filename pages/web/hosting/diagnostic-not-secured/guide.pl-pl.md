@@ -40,7 +40,7 @@ W przypadku niedostępności Twojej strony może wystąpić kilka komunikatów o
 Aby usunąć tę anomalię, należy:
 
 1. określenie hostingu, do którego jest podłączona Twoja domena, w celu przeprowadzenia interwencji na właściwym serwerze;
-2. tworzenie, aktywacja lub odnawianie [certyfikatu SSL](../certyfikaty-ssl-na-hostingu/) dla Twojej domeny na wybranym hostingu.
+2. tworzenie, aktywacja lub odnawianie [certyfikatu SSL](/pl/web/hosting/certyfikaty-ssl-na-hostingu/) dla Twojej domeny na wybranym hostingu.
 
 ### Etap 1: sprawdź hosting przypisany do Twojej domeny
 

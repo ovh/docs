@@ -198,7 +198,7 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 
 Ein MX Plan Angebot unterliegt nicht einem regelmäßigen Abonnement; es kann daher nicht gekündigt werden. Sie können Ihren Dienst aber löschen.
 
-Um Ihren [MX Plan](https://docs.ovh.com/de/emails/) Dienst zu löschen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
+Um Ihren [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) Dienst zu löschen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Produkte und Dienstleistungen`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts neben der betreffenden Dienstleistung und dann auf `MX Plan sofort löschen`{.action}.
 

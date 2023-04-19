@@ -88,6 +88,6 @@ The upgrading process can take several minutes (around 5 minutes per node in you
 
 To have an overview of the OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/asia/public-cloud/kubernetes/).
 
-To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/asia/en/kubernetes/).
+To learn more about how to use your Kubernetes cluster the practical way, we invite you to look at our [tutorials](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 Join our [community of users](https://community.ovh.com/en/).

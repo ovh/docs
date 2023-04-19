@@ -198,7 +198,7 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 Un'offerta MX Plan non è soggetta a sottoscrizione periodica. e non è possibile disattivarla ma, se lo desideri, puoi eliminare la tua offerta.
 
-Per eliminare la soluzione [MX Plan](https://docs.ovh.com/it/emails/), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
+Per eliminare la soluzione [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Prodotti e servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Elimina subito MX Plan`{.action}.
 

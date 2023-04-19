@@ -27,9 +27,9 @@ You can access your OVHcloud email accounts using the password associated with t
 >
 > When you change the password for your email account, you will also need to apply this change to all email clients that access this account. You can find the configuration guides for your email software on the guide homepage of your email offer:
 >
-> - [MX Plan](https://docs.ovh.com/gb/en/emails/)
-> - [Email Pro](https://docs.ovh.com/gb/en/emails-pro/)
-> - [Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/)
+> - [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## Instructions

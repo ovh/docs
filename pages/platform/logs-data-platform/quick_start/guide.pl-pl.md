@@ -198,6 +198,6 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - [Using roles](/pages/platform/logs-data-platform/roles){.ref} to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
 - [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](/pages/platform/logs-data-platform/opensearch_dashboards){.ref}
 - If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
-- Documentation: [Guides](/pl/logs-data-platform/){.ref}
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}

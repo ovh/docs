@@ -35,7 +35,7 @@ Let's assume that a file named `my-dataset.zip` exists locally on your computer 
 
 ### 1- Select your solution
 
-If you want to know more about the different storage solutions, refer to this [page](https://docs.ovh.com/ca/en/storage/).
+If you want to know more about the different storage solutions, refer to this [page](/products/storage-backup).
 
 ![image](images/ui-container-solution.png){.thumbnail}
 

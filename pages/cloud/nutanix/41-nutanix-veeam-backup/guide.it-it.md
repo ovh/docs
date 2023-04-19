@@ -469,6 +469,6 @@ A preview of the status of the restoration is launched, it takes some time depen
 
 [VEEAM documentation on installing VEEAM Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
 
-[OVHcloud storage solutions](https://docs.ovh.com/it/storage/)
+[OVHcloud storage solutions](/products/storage-backup)
 
 Join our community of users on <https://community.ovh.com/en/>.

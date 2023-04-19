@@ -285,7 +285,7 @@ Po kliknięciu prawym przyciskiem myszy na ikonę, możesz zmienić sposób por�
 
 Poniżej znajdziesz link do naszej dokumentacji, aby [usunąć powtarzające się błędy podczas korzystania z programu FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-Zapoznaj się [z przewodnikami dotyczącymi hostingu współdzielonego](https://docs.ovh.com/pl/hosting/).
+Zapoznaj się [z przewodnikami dotyczącymi hostingu współdzielonego](/products/web-cloud-hosting).
 
 Zapoznaj się z oficjalną [stroną Filezilli](https://filezilla-project.org/).
 

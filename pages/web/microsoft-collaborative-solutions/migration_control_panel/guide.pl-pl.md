@@ -164,7 +164,7 @@ Aby zmienić konfigurację, kliknij czerwony przycisk i wykonaj żądaną operac
 
 Teraz możesz korzystać z migrowanych kont e-mail. W tym celu OVHcloud udostępnia aplikację online (_web app_) dostępną pod adresem <https://www.ovh.com/pl/mail/>. Wpisz dane dostępowe do Twojego konta e-mail.
 
-Jeśli skonfigurowałeś jedno z kont przeniesionych na klienta poczty elektronicznej (np. Outlook), należy ponownie skonfigurować to konto. Dane do logowania do serwera OVHcloud zmieniły się po migracji. Aby pomóc Ci w przeprowadzeniu operacji, zapoznaj się z naszą dokumentacją w sekcjach przewodników dotyczących [E-mail Pro](../../emails-pro/) i [Hosted Exchange](/pl/microsoft-collaborative-solutions/). Jeśli nie jesteś w stanie zmienić konfiguracji konta w tej chwili, dostęp przez aplikację online jest zawsze możliwy.
+Jeśli skonfigurowałeś jedno z kont przeniesionych na klienta poczty elektronicznej (np. Outlook), należy ponownie skonfigurować to konto. Dane do logowania do serwera OVHcloud zmieniły się po migracji. Aby pomóc Ci w przeprowadzeniu operacji, zapoznaj się z naszą dokumentacją w sekcjach przewodników dotyczących [E-mail Pro](../../emails-pro/) i [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Jeśli nie jesteś w stanie zmienić konfiguracji konta w tej chwili, dostęp przez aplikację online jest zawsze możliwy.
 
 ### Organizacja zawartości Twoich kont e-mail po migracji <a name="content-after-migration"></a>
 
@@ -184,8 +184,8 @@ Możesz również ręcznie przenieść Twoje konta e-mail do nowej usługi e-mai
 
 [Zarządzanie kontaktami swoich usług](/pages/account/customer/managing_contacts){.external}.
 
-[Przewodniki E-mail Pro](/pl/emails-pro/){.external}.
+[Przewodniki E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
 
-[Przewodniki Exchange](/pl/microsoft-collaborative-solutions/){.external}.
+[Przewodniki Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

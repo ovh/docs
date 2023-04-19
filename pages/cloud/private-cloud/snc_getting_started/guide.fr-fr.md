@@ -216,6 +216,6 @@ Une liste vide en retour, comme ci-dessous, vous confirme que l'ensemble des act
 
 ## Aller plus loin
 
-[Nos guides SecNumCloud Connectivity](https://docs.ovh.com/fr/network-ip/)
+[Nos guides SecNumCloud Connectivity](/products/network)
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

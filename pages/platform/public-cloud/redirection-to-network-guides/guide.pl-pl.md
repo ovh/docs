@@ -8,7 +8,7 @@ updated: 2022-11-02
 
 ## Cel
 
-Sprawdź nasze przewodniki dotyczące sieci Public Cloud na [ta strona](https://docs.ovh.com/pl/publiccloud/network-services/).
+Sprawdź nasze przewodniki dotyczące sieci Public Cloud na [ta strona](/products/public-cloud-network).
 
 ## Przejdź dalej
 

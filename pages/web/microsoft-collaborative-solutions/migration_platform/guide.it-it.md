@@ -122,7 +122,7 @@ Per modificare la configurazione, clicca sulla casellina rossa e esegui l'operaz
 A questo punto non ti resta che utilizzare i tuoi account email migrati. OVHcloud mette a disposizione un'applicazione online (_Web app_) accessibile all'indirizzo <https://www.ovh.it/mail/>. inserendo le credenziali associate al tuo indirizzo email.
 
 Se hai configurato uno degli account migrati su un client di posta (ad esempio: Outlook, Thunderbird), è necessario impostarlo di nuovo. Le informazioni di connessione al server OVHcloud sono cambiate in seguito alla migrazione.
-<br>Per maggiori informazioni sulle operazioni da effettuare, consulta la nostra documentazione nelle sezioni delle guide dedicate a [Email Pro](https://docs.ovh.com/it/emails-pro/){.external} e [Hosted Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/){.external}. Se non sei in grado di riconfigurare l'account nell'immediato, l'accesso tramite l'applicazione online è sempre possibile.
+<br>Per maggiori informazioni sulle operazioni da effettuare, consulta la nostra documentazione nelle sezioni delle guide dedicate a [Email Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external} e [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}. Se non sei in grado di riconfigurare l'account nell'immediato, l'accesso tramite l'applicazione online è sempre possibile.
 
 > [!primary]
 >
@@ -133,8 +133,8 @@ Se hai configurato uno degli account migrati su un client di posta (ad esempio: 
 
 [Gestire i contatti dei servizi](/pages/account/customer/managing_contacts){.external} .
 
-[Guides E-mail Pro](https://docs.ovh.com/it/emails-pro/){.external}.
+[Guides E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
 
-[Guides Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/){.external}.
+[Guides Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

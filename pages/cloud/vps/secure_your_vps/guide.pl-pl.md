@@ -251,7 +251,7 @@ Zabezpieczenie danych jest jednym z kluczowych czynników, dlatego OVHcloud ofer
 - Opcja `Snapshot` umożliwia tworzenie zrzutu ręcznego.
 - Opcja automatycznej `kopii zapasowej` pozwala na zachowanie regularnych kopii zapasowych serwera VPS (z wyjątkiem dodatkowych dysków).
 
-Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twojej usługi znajdują się na [stronie produktu](https://www.ovhcloud.com/pl/vps/options/) i w odpowiednich [przewodnikach](https://docs.ovh.com/pl/vps/).
+Wszystkie informacje na temat rozwiązań kopii zapasowych dostępnych dla Twojej usługi znajdują się na [stronie produktu](https://www.ovhcloud.com/pl/vps/options/) i w odpowiednich [przewodnikach](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Sprawdź również
 

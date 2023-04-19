@@ -71,6 +71,6 @@ Le résultat de la requête apparaît en dessous de `availableVersions` avec les
 
 [Plan de mise à jours Nutanix AOS](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG)
 
-[Utilisation de l'API OVHcloud](https://docs.ovh.com/ca/fr/api/)
+[Utilisation de l'API OVHcloud](/products/infrastructure-as-code-api-apiv6)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -157,10 +157,10 @@ Si desea configurar su dirección de correo electrónico en un cliente de correo
 
 [Transferir un sitio web y el correo sin cortes del servicio](/pages/web/hosting/hosting_migrating_to_ovh)
 
-[Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/)
+[Publicar un sitio web en internet](/us/es/web/hosting/web_hosting_publicar_un_sitio_web_en_internet/)
 
 [Instalar un sitio web con un módulo en un clic](/pages/web/hosting/cms_install_1_click_modules)
 
-[Crear una dirección de correo electrónico](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/)
+[Crear una dirección de correo electrónico](/us/es/web/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/)
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

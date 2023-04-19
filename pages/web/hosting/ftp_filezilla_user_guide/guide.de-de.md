@@ -283,7 +283,7 @@ Wenn Sie mit der rechten Maustaste auf das Icon klicken, können Sie den Verglei
 
 Sie finden [hier unsere Anleitung zur Behebung von Fehlern bei der Verwendung eines FTP-Programms](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-Im Allgemeinen finden Sie [hier alle unsere Hilfen zu Webhostings](https://docs.ovh.com/de/hosting/).
+Im Allgemeinen finden Sie [hier alle unsere Hilfen zu Webhostings](/products/web-cloud-hosting).
 
 Die offizielle Website von FileZilla finden Sie [hier](https://filezilla-project.org/).
 

@@ -189,7 +189,7 @@ Se non conosci i parametri necessari alla configurazione dell’account email, e
 
 > [!warning]
 >
-> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](/it/emails/) o rivolgiti al fornitore del servizio.
+> In caso di difficoltà durante la configurazione dell’account email sul dispositivo, [consulta le nostre guide](/products/web-cloud-email-collaborative-solutions-mx-plan) o rivolgiti al fornitore del servizio.
 >
 
 ## Per saperne di più

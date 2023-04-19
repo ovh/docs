@@ -164,7 +164,7 @@ Para alterar a configuração, clique na etiqueta vermelha e execute a operaçã
 
 Só precisa de utilizar os seus endereços de e-mail migrados. Para isso, a OVHcloud disponibiliza uma aplicação online (_web app_) acessível no endereço <https://www.ovh.com/pt/mail/>. Introduza os dados de acesso relativos ao seu endereço de e-mail.
 
-Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), deve configurá-la novamente. As informações de ligação ao servidor OVHcloud foram alteradas após a migração. Para o ajudar nas suas operações, consulte o nosso manual através das secções dos guias [E-mail Pro](../../emails-pro/) e [Hosted Exchange](/pt/microsoft-collaborative-solutions/). Se não consegue reconfigurar a conta de forma imediata, o acesso através da aplicação online é sempre possível.
+Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), deve configurá-la novamente. As informações de ligação ao servidor OVHcloud foram alteradas após a migração. Para o ajudar nas suas operações, consulte o nosso manual através das secções dos guias [E-mail Pro](../../emails-pro/) e [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Se não consegue reconfigurar a conta de forma imediata, o acesso através da aplicação online é sempre possível.
 
 ## Organização do conteúdo dos seus endereços de e-mail na sequência de uma migração <a name="content-after-migration"></a>
 
@@ -184,8 +184,8 @@ Também pode migrar manualmente os seus endereços de e-mail para a nova oferta 
 
 [Como gerir os contactos (gestores) dos serviços OVHcloud](/pages/account/customer/managing_contacts){.external}.
 
-[Guias E-mail Pro](/pt/emails-pro/){.external}.
+[Guias E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro){.external}.
 
-[Guias Exchange](/pt/microsoft-collaborative-solutions/){.external}.
+[Guias Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

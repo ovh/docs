@@ -198,7 +198,7 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 Uma oferta MX Plan não está sujeita a subscrição periódica. Não pode ser objeto de rescisão, mas, se for esse o seu desejo, pode suprimir a sua oferta.
 
-Para eliminar a oferta [MX Plan](https://docs.ovh.com/pt/emails/), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
+Para eliminar a oferta [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Produtos e serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Eliminar imediatamente o MX Plan`{.action}.
 

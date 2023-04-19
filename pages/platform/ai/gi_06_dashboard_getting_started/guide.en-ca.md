@@ -37,7 +37,7 @@ The following chapters will help you to discover each section of the `AI Dashboa
 In this section, you will find information related to your use of the AI Tools with easy access to [AI Notebooks](/pages/platform/ai/notebook_guide_introduction_definition), [AI Training](/pages/platform/ai/training_guide_02_howto_submit_job) and [AI Deploy](/pages/platform/ai/deploy_guide_02_getting_started).  
 Listed instances are the ones that are in `RUNNING` and `STOPPED` status.
 
-You can also easily access to your [Object Storage](https://docs.ovh.com/ca/en/storage/object-storage/).
+You can also easily access to your [Object Storage](/products/storage-object-storage).
 
 You can find more details on the prices of the AI tools [here](https://www.ovhcloud.com/en-ca/public-cloud/prices/#ai-&-machine-learning).
 

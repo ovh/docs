@@ -70,7 +70,7 @@ Lors d'une première connexion au webmail, vous êtes invité à définir la lan
 
 ##### 2. Utiliser l'appareil de votre choix
 
-Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un smartphone ou une tablette). Pour cela, vous pouvez vous aider de [nos guides de configuration](/ca/fr/emails/)
+Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un smartphone ou une tablette). Pour cela, vous pouvez vous aider de [nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan)
 
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
@@ -91,7 +91,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/ca/fr/emails/) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
+> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 >
 
 ### Version historique de l'offre MX Plan
@@ -135,7 +135,7 @@ Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser vot
 
 ##### 2. Utiliser l'appareil de votre choix
 
-Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un smartphone ou une tablette). Pour cela, vous avez la possibilité de vous aider de [nos guides de configuration](/ca/fr/emails/)
+Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un smartphone ou une tablette). Pour cela, vous avez la possibilité de vous aider de [nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan)
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 
@@ -155,7 +155,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 > [!warning]
 >
-> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/ca/fr/emails/) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
+> Si vous éprouvez des difficultés dans la configuration de votre adresse e-mail sur votre appareil, [aidez-vous de nos guides de configuration](/products/web-cloud-email-collaborative-solutions-mx-plan) ou rapprochez-vous de l'éditeur de l'application que vous utilisez, la manipulation étant inhérente à cette dernière.
 >
 
 ## Aller plus loin

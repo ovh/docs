@@ -175,7 +175,7 @@ No es posible dar de baja las ofertas [SSL sectigo](https://www.ovhcloud.com/es/
 
 Una solución MX Plan no está sujeta a una suscripción periódica. Por lo tanto, no puede dar de baja el servicio, pero, si así lo desea, puede eliminar el servicio.
 
-Para eliminar la solución [MX Plan](https://docs.ovh.com/us/es/emails/), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
+Para eliminar la solución [MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan), conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Productos y servicios`{.action}.
 
 Haga clic en el botón `...`{.action} a la derecha del servicio que desea dar de baja y, seguidamente, en `Eliminar inmediatamente el MX Plan`{.action}.
 

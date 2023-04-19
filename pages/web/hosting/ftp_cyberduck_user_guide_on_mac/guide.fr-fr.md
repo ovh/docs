@@ -8,7 +8,7 @@ updated: 2020-05-05
 
 Ce guide a été réalisé avec une version gratuite de l'applicatif en version 4.5.2 téléchargée depuis le site officiel.
 
-Retrouvez nos [différents guides mutualisés/hébergement Web](https://docs.ovh.com/fr/hosting/) disponibles.
+Retrouvez nos [différents guides mutualisés/hébergement Web](/products/web-cloud-hosting) disponibles.
 
 
 > [!warning]

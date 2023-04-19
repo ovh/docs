@@ -215,7 +215,7 @@ In base all'utilizzo previsto delle tue istanze, puoi selezionare il **Modalità
 
 La modalità Public è il modello di rete classico che permette alle istanze di avere una porta di rete pubblica collegata. Associata alla vRack, ogni istanza possiede un IP pubblico e un IP privato.
 
-La modalità Private ti offre la possibilità di assegnare le tue istanze esclusivamente a una rete privata. Le istanze di questa modalità possono essere esposte alla rete pubblica solo con un servizio Gateway o Load Balancer con Floating IP. Per maggiori informazioni, consulta la nostra guida sulle [soluzioni di rete per il Public Cloud OVHcloud](https://docs.ovh.com/it/publiccloud/network-services/).
+La modalità Private ti offre la possibilità di assegnare le tue istanze esclusivamente a una rete privata. Le istanze di questa modalità possono essere esposte alla rete pubblica solo con un servizio Gateway o Load Balancer con Floating IP. Per maggiori informazioni, consulta la nostra guida sulle [soluzioni di rete per il Public Cloud OVHcloud](/products/public-cloud-network).
 
 Una volta scelta la modalità, seleziona una rete privata a cui associare l'istanza o clicca su `Crea una nuova rete privata`{.action} per crearne una nuova.
 

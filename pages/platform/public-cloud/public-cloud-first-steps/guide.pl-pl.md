@@ -211,7 +211,7 @@ W zależności od planowanego wykorzystania instancji możesz wybrać **Tryb pub
 
 Tryb publiczny to klasyczny model sieci, który umożliwia przypisany publiczny port sieciowy Twoim instancjom. Każda instancja posiada publiczny adres IP i prywatny adres IP przypisany do usługi vrack.
 
-Tryb prywatny daje możliwość przypisywania instancji tylko do sieci prywatnej. Instancje w tym trybie mogą być dostępne w sieci publicznej wyłącznie za pomocą usługi Gateway lub Load Balancer z Floating IP. Więcej informacji znajdziesz w ddokumentacją dotyczącą [rozwiązań sieciowych dla Public Cloud OVHcloud](https://docs.ovh.com/pl/publiccloud/network-services/).
+Tryb prywatny daje możliwość przypisywania instancji tylko do sieci prywatnej. Instancje w tym trybie mogą być dostępne w sieci publicznej wyłącznie za pomocą usługi Gateway lub Load Balancer z Floating IP. Więcej informacji znajdziesz w ddokumentacją dotyczącą [rozwiązań sieciowych dla Public Cloud OVHcloud](/products/public-cloud-network).
 
 Po wybraniu trybu wybierz prywatną sieć, do której chcesz przypisać instancję lub kliknij `Utwórz nową prywatną sieć`{.action}, aby stworzyć nową.
 

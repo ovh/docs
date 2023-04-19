@@ -243,7 +243,7 @@ Congratulations, you are now able to collect data from multiple sources and push
 
 ## Go further
 
-[OVHcloud documentation on managed Public Cloud Databases](https://docs.ovh.com/us/en/publiccloud/databases/)
+[OVHcloud documentation on managed Public Cloud Databases](/products/public-cloud-databases)
 
 [OpenSearch capabilities](/pages/platform/databases/opensearch_01_capabilities)
 

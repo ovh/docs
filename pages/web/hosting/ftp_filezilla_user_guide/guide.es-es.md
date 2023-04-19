@@ -285,7 +285,7 @@ Pulse con el botón derecho del ratón sobre el icono para cambiar el modo de co
 
 A continuación puede consultar nuestra guía para [solucionar los errores recurrentes en el uso de un programa FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-En términos más generales, consulte [todas nuestras guías relativas a los alojamientos compartidos](https://docs.ovh.com/us/es/hosting/).
+En términos más generales, consulte [todas nuestras guías relativas a los alojamientos compartidos](/products/web-cloud-hosting).
 
 No dude en consultar la [página oficial de Filezilla](https://filezilla-project.org/).
 

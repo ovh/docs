@@ -24,7 +24,7 @@ Jeśli wpisy MX są różne, to znaczy, że być może korzystasz z oferty e-mai
 ### Jak skonfigurować mój adres e-mail i używać go w interfejsie webmail? 
 
 Konto e-mail można skonfigurować w programie pocztowym takim jak Outlook, Thunderbird, Mail na komputery Mac itd.
-W tym celu przygotowaliśmy przewodniki, z których dowiesz się, jak skonfigurować Twój adres. Znajdziesz je na [tej stronie](/pl/emails/).
+W tym celu przygotowaliśmy przewodniki, z których dowiesz się, jak skonfigurować Twój adres. Znajdziesz je na [tej stronie](/products/web-cloud-email-collaborative-solutions-mx-plan).
 
 Za sprawą interfejsu [webmail](https://www.ovh.pl/mail/){.external} w każdej chwili możesz uzyskać dostęp do Twojej poczty za pośrednictwem dowolnego urządzenia z dostępem do Internetu. Po utworzeniu konta e-mail zaloguj się tam, aby uzyskać dostęp do poczty.
 

@@ -101,7 +101,7 @@ Se pretender obter mais informações sobre os elementos necessários para confi
 
 > [!warning]
 >
-> Se tiver problemas em configurar o endereço de e-mail no seu dispositivo, [consulte os nossos manuais de configuração](/pt/emails/) ou entre em contacto com o editor da aplicação que estiver a utilizar.
+> Se tiver problemas em configurar o endereço de e-mail no seu dispositivo, [consulte os nossos manuais de configuração](/products/web-cloud-email-collaborative-solutions-mx-plan) ou entre em contacto com o editor da aplicação que estiver a utilizar.
 >
 
 #### Funcionalidades avançadas
@@ -217,7 +217,7 @@ Se pretender obter mais informações sobre os elementos necessários para confi
 
 > [!warning]
 >
-> Se tiver problemas em configurar o endereço de e-mail no seu dispositivo, [consulte os nossos manuais de configuração](/pt/emails/) ou entre em contacto com o editor da aplicação que estiver a utilizar.
+> Se tiver problemas em configurar o endereço de e-mail no seu dispositivo, [consulte os nossos manuais de configuração](/products/web-cloud-email-collaborative-solutions-mx-plan) ou entre em contacto com o editor da aplicação que estiver a utilizar.
 
 #### Funcionalidades avançadas
 

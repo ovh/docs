@@ -110,7 +110,7 @@ Zur Erinnerung: Alle für Ihren Dienst erstellten Adressen können alle Adressen
 
 Nachdem Sie Ihre Accounts fertig eingerichtet haben, können Sie diese nun verwenden. OVHcloud stellt Ihnen hierfür **Webmail** zur Verfügung, das über die Adresse <https://www.ovh.com/de/mail/> erreichbar ist. Wenn Sie einen Drittanbieter-Client für Ihre E-Mail-Accounts verwenden, stellen Sie sicher, dass die Software mit dem Dienst kompatibel ist.
 
-Falls Sie Hilfe bei der Einrichtung Ihres E-Mail-Accounts in einem E-Mail-Client oder auf einem Gerät (Smartphone, Tablet) benötigen oder Fragen zu den Funktionen Ihres E-Mail-Dienstes haben, lesen Sie unsere Anleitungen zu [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/) oder [E-Mail Pro](https://docs.ovh.com/de/emails-pro/).
+Falls Sie Hilfe bei der Einrichtung Ihres E-Mail-Accounts in einem E-Mail-Client oder auf einem Gerät (Smartphone, Tablet) benötigen oder Fragen zu den Funktionen Ihres E-Mail-Dienstes haben, lesen Sie unsere Anleitungen zu [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) oder [E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 Sie können Outlook Lizenzen über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und Office 365 Lizenzen auf der Webseite <https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/> erwerben. Wir empfehlen Ihnen, eine dieser Lösungen zu verwenden, falls Sie den Outlook E-Mail-Client oder andere Software der MS Office Suite nutzen möchten.
 

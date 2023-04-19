@@ -29,7 +29,7 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 Une fois le service délivré et après réception des identifiants de connexion à son Serveur Dédié, OVHcloud recommande au client de changer ses identifiants 
 et de procéder au durcissement de son système d'exploitation. Des références et guides de durcissement sont présentés dans la section [9.1 Fourniture d'image OS 
 et durcissement](#os-images) de cette page.<br>
-D'autres guides sont disponibles dans [le corpus documentaire sur les Serveurs Dédiés](https://docs.ovh.com/fr/dedicated/) pour assister le client à la prise 
+D'autres guides sont disponibles dans [le corpus documentaire sur les Serveurs Dédiés](/products/bare-metal-cloud-dedicated-servers) pour assister le client à la prise 
 en main et l'exploitation du service.
 
 ### 2.2 - Scan de vulnérabilités

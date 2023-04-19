@@ -285,7 +285,7 @@ Cliccando con il tasto destro sull'icona, puoi cambiare il metodo di confronto. 
 
 Di seguito trovi il link alla nostra guida per [risolvere gli errori ricorrenti nell'utilizzo di un software FTP](/pages/web/hosting/ftp_recurring_ftp_problems).
 
-Più in generale, consulta [le nostre guide relative agli hosting condivisi](https://docs.ovh.com/it/hosting/).
+Più in generale, consulta [le nostre guide relative agli hosting condivisi](/products/web-cloud-hosting).
 
 Consulta la [pagina ufficiale di Filezilla](https://filezilla-project.org/).
 

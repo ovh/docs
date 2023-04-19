@@ -36,7 +36,7 @@ Several error messages may appear if your website is inaccessible. The examples 
 To solve this issue, you will need to:
 
 1. determine the hosting plan to which your domain name is linked, in order to intervene on the correct server;
-2. create, activate or renew a [SSL certificate](../ssl-certificates-on-web-hosting-plans/) for your domain name on the concerned hosting plan.
+2. create, activate or renew a [SSL certificate](/us/en/web/hosting/ssl-certificates-on-web-hosting-plans/) for your domain name on the concerned hosting plan.
 
 ### Step 1: check the hosting plan attached to your domain name
 

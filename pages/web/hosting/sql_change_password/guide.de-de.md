@@ -194,7 +194,7 @@ Auch hier sind zwei Fälle möglich:
 
 - Wenn Ihre Datenbank sich im Bereich Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) für [Webhostings](https://www.ovhcloud.com/de/web-hosting/)befindet, folgen Sie [diesen Anweisungen](#case1).
 
-- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, der [Web Cloud Databases Angeboten](https://docs.ovh.com/de/clouddb/) gewidmet ist, folgen Sie [diesen Anweisungen](#case2).
+- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, der [Web Cloud Databases Angeboten](/products/web-cloud-clouddb) gewidmet ist, folgen Sie [diesen Anweisungen](#case2).
 
 #### Fall 1: Die Datenbank Ihrer Website ist Teil Ihres Webhostings <a name="case1"></a>
 

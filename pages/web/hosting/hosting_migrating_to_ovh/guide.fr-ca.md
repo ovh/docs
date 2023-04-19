@@ -198,7 +198,7 @@ Une fois vos anciennes adresses e-mail migrées chez OVHcloud, reconfigurez vos 
 
 #### Pour les comptes e-mail « Exchange » :
 
-- Retrouvez l'ensemble de nos guides d'aide à la configuration dans les sections `Configuration Exchange sur ordinateur` et `Configuration Exchange sur smartphone` de [notre documentation sur l'offre Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/).
+- Retrouvez l'ensemble de nos guides d'aide à la configuration dans les sections `Configuration Exchange sur ordinateur` et `Configuration Exchange sur smartphone` de [notre documentation sur l'offre Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ### Etape 9 : remplacer les serveurs DNS actifs de votre nom de domaine par ceux d'OVHcloud <a name="step9"></a>
 

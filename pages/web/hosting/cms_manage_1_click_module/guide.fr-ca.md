@@ -35,7 +35,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 
 > [!primary]
 >
-> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez les guides OVHcloud liés aux hébergements mutualisés dans la section [Diagnostic](https://docs.ovh.com/fr/hosting/).
+> Si votre site ne s'affiche pas correctement suite à cette manipulation, consultez les guides OVHcloud liés aux hébergements mutualisés dans la section [Diagnostic](/products/web-cloud-hosting).
 >
 
 ### Accéder à l'interface administrateur

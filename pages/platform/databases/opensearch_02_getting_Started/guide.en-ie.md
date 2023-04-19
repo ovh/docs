@@ -37,7 +37,7 @@ In this step, choose an appropriate service plan. If needed, you will be able to
 
 ![Choose plan](images/creation_opensearch02.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/ie/en/publiccloud/databases/) of your selected database type for detailed information on each plan's properties.
+Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on each plan's properties.
 
 Click on `Next`{.action} to continue.
 
@@ -55,7 +55,7 @@ You can increase the number of nodes and choose the node template in this step. 
 
 ![Order nodes](images/creation_opensearch04.png){.thumbnail}
 
-Please visit the [capabilities page](https://docs.ovh.com/ie/en/publiccloud/databases/) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
+Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
 
 Take note of the pricing information and click on `Next`{.action} to continue.
 

@@ -12,7 +12,7 @@ updated: 2022-11-28
 
 Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/ca/fr/&ovhSubsidiary=qc). Depuis la rubrique `Hébergements`, vous pourrez notamment gérer vos certificats SSL, la version PHP, l'option CDN, le multisite, les bases de données, etc.
 
-**Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique « *Premiers pas* » que vous retrouverez [ici](https://docs.ovh.com/ca/fr/hosting/).
+**Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique « *Premiers pas* » que vous retrouverez [ici](/products/web-cloud-hosting).
 
 ### Comment gérer mes mots de passe ?
 
@@ -52,7 +52,7 @@ Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votr
 
 > [!warning]
 >
-> Si vous rencontrez une anomalie non-répertoriée dans cette FAQ, consultez les pages « Diagnostic » de [notre documentation](https://docs.ovh.com/ca/fr/hosting/).
+> Si vous rencontrez une anomalie non-répertoriée dans cette FAQ, consultez les pages « Diagnostic » de [notre documentation](/products/web-cloud-hosting).
 >
 
 ### Que faire si mon site web dysfonctionne ? 

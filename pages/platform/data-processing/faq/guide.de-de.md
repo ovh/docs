@@ -32,7 +32,7 @@ There are many uses for this type of solution, but it is most often used to proc
 
 ### Who can use Data processing? Is it necessary to be a data expert?
 
-No matter your level of expertise in Python or Java programming, the Data Processing solution is fully usable. To facilitate its use, OVHcloud provides you with the Apache Spark framework and tutorials directly accessible in [the guides](/de/data-processing/).
+No matter your level of expertise in Python or Java programming, the Data Processing solution is fully usable. To facilitate its use, OVHcloud provides you with the Apache Spark framework and tutorials directly accessible in [the guides](/products/public-cloud-data-analytics-data-processing).
 
 
 ### From which countries can customers order the Data Processing solution?
@@ -79,7 +79,7 @@ For more information, we invite you to read [the following guide](/pages/platfor
 
 ### How to launch a job with the Data Processing solution?
 
-It is possible to launch a job via Control Panel, API and CLI. For more information, we invite you to read [our documentation](/de/data-processing/).
+It is possible to launch a job via Control Panel, API and CLI. For more information, we invite you to read [our documentation](/products/public-cloud-data-analytics-data-processing).
 
 
 ### Where to put the data to process?
@@ -139,7 +139,7 @@ OVHcloud builds a cluster, deploys it and monitors it. A great breakthrough, rig
 
 ## Go further
 
-To learn more about using Data Processing and how to create a cluster and process your data, we invite you to look at [Data Processing documentation page](/de/data-processing/).
+To learn more about using Data Processing and how to create a cluster and process your data, we invite you to look at [Data Processing documentation page](/products/public-cloud-data-analytics-data-processing).
 
 You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
 

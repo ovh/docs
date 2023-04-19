@@ -38,7 +38,7 @@ Es können verschiedene Fehlermeldungen auftreten, wenn Ihre Website nicht errei
 Um die Problemursache zu beheben müssen Sie:
 
 1. das korrekte Hosting identifizieren, mit dem Ihre Domain verbunden ist.
-2. auf dem betreffenden Hosting ein [SSL-Zertifikat](../ssl-zertifikate-auf-webhostings-verwalten/) für Ihre Domain erstellen, aktivieren oder verlängern.
+2. auf dem betreffenden Hosting ein [SSL-Zertifikat](/de/web/hosting/ssl-zertifikate-auf-webhostings-verwalten/) für Ihre Domain erstellen, aktivieren oder verlängern.
 
 ### Schritt 1: Überprüfen des Webhostings der betroffenen Domain
 

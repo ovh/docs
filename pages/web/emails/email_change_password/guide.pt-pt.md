@@ -24,9 +24,9 @@ As contas de e-mail da sua oferta OVHcloud são acessíveis graças à palavra-p
 >
 > Ao alterar a palavra-passe do seu endereço de e-mail, deverá também refletir esta alteração em todos os dispositivos onde o endereço de e-mail foi configurado. Não hesite em consultar os nossos guias de configuração para o seu software de e-mail a partir da página inicial da sua oferta de e-mail:
 >
-> - [MXplan](https://docs.ovh.com/pt/emails/)
-> - [E-mail Pro](https://docs.ovh.com/pt/emails-pro/)
-> - [Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/)
+> - [MXplan](/products/web-cloud-email-collaborative-solutions-mx-plan)
+> - [E-mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro)
+> - [Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 >
 
 ## Instruções

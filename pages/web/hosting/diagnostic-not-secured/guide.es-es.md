@@ -40,7 +40,7 @@ En caso de que su sitio web no sea accesible, puede aparecer varios mensajes de 
 Para resolver esta anomalía, deberá:
 
 1. determinar el alojamiento al que está asociado el dominio para intervenir en el servidor correcto;
-2. crear, activar o renovar un [certificado SSL](../gestionar-un-certificado-ssl-en-un-alojamiento-web/) para su nombre de dominio en el alojamiento correspondiente.
+2. crear, activar o renovar un [certificado SSL](/es/web/hosting/gestionar-un-certificado-ssl-en-un-alojamiento-web/) para su nombre de dominio en el alojamiento correspondiente.
 
 ### Etapa 1: comprobar el alojamiento asociado a su dominio
 

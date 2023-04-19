@@ -130,9 +130,9 @@ La tabla mostrará las cuentas pendientes de configurar con el formato *@configu
 
 ### Utilizar las direcciones de correo
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/), en el apartado relativo a Outlook Web Application (OWA).
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA). Puede acceder a ella en la dirección <https://www.ovhcloud.com/es-es/mail/>. Para acceder, introduzca las claves de su dirección de correo electrónico. Para más información, consulte las guías de OVHcloud sobre las [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange), en el apartado relativo a Outlook Web Application (OWA).
 
-Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
+Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVHcloud sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio.
 
 OVHcloud ofrece, desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), licencias Outlook opcionales con su cuenta de correo Exchange.
 
@@ -152,7 +152,7 @@ Una vez que el servicio Hosted Exchange haya sido configurado y esté operativo,
 
 Para activar las distintas funciones, seleccione el servicio Hosted Exchange correspondiente en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra la pestaña correspondiente a la acción que quiera realizar.
 
-Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/).
+Para más información sobre estas funciones, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ## Más información
 

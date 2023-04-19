@@ -244,7 +244,7 @@ Securing your data is a key element, which is why OVHcloud offers you several ba
 - The `Snapshot` option allows you to create a manual snapshot.
 - The `Automated Backup` option enables you to keep regular backups of your VPS (excluding additional disks).
 
-You can find all information on the available backup solutions for your service on the [product page](https://www.ovhcloud.com/en-ie/vps/options/) and in the [respective guides](https://docs.ovh.com/ie/en/vps/).
+You can find all information on the available backup solutions for your service on the [product page](https://www.ovhcloud.com/en-ie/vps/options/) and in the [respective guides](/products/bare-metal-cloud-virtual-private-servers).
 
 ## Go further
 

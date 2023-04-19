@@ -160,7 +160,7 @@ To modify the configuration, click on the red box and carry out the requested op
 
 Now, you can start using your migrated email addresses. To do this, OVHcloud offers an online interface (_web app_), available here: <https://www.ovh.com/ca/en/mail/>. You will need to enter your email credentials.
 
-If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the relevant guides in the [Hosted Exchange](/ca/en/microsoft-collaborative-solutions/) guide section. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
+If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the relevant guides in the [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) guide section. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
 
 ### Organise the content of your email addresses following a migration <a name=`content-after-migration`></a>
 
@@ -176,6 +176,6 @@ You can also manually migrate your email addresses to your new OVHcloud email so
 
 ## Go further
 
-[Exchange guides](/ca/en/microsoft-collaborative-solutions/){.external}.
+[Exchange guides](/products/web-cloud-email-collaborative-solutions-microsoft-exchange){.external}.
 
 Join our community of users on ‹https://community.ovh.com/en/>.

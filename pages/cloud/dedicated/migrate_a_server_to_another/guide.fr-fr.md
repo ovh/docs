@@ -84,7 +84,7 @@ Une fois ces IP en votre possession, il vous suffira de déplacer celles-ci vers
 
 Dès que les données sont disponible sur le nouveau serveur, il sera peut être nécessaire de modifier votre configuration DNS, par exemple dans le cas où l'adresse IP principale était utilisée.
 
-Pour plus d'informations, consultez notre documentation sur les [domaines et DNS](https://docs.ovh.com/fr/domains/).
+Pour plus d'informations, consultez notre documentation sur les [domaines et DNS](/products/web-cloud-domains-domain-names).
 
 ## Aller plus loin
 

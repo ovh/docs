@@ -209,11 +209,11 @@ Sobald Ihre E-Mail-Accounts bei OVHcloud eingerichtet und bestehende Inhalte mig
 
 #### Für E-Mail Pro E-Mail-Accounts:
 
-- Sie finden alle unsere Anleitungen zur Konfigurationsunterstützung unter `Konfiguration des E-Mail-Clients` auf der [Seite für E-Mail Pro](https://docs.ovh.com/de/emails-pro/).
+- Sie finden alle unsere Anleitungen zur Konfigurationsunterstützung unter `Konfiguration des E-Mail-Clients` auf der [Seite für E-Mail Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 #### Für Exchange E-Mail-Accounts:
 
-- Sie finden alle unsere Anleitungen zur Konfigurationsunterstützung in den Abschnitten `Konfiguration des Exchange E-Mail-Clients`und `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets` auf der [Seite für Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/).
+- Sie finden alle unsere Anleitungen zur Konfigurationsunterstützung in den Abschnitten `Konfiguration des Exchange E-Mail-Clients`und `Konfiguration von Exchange auf kompatiblen Smartphones/Tablets` auf der [Seite für Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ### Schritt 9: Die aktiven DNS-Server Ihres Domainnamens mit OVHcloud DNS-Servern ersetzen <a name="step9"></a>
 

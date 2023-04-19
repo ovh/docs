@@ -211,11 +211,11 @@ Po zakończeniu migracji Twoich poprzednich kont e-mail do OVHcloud możesz pono
 
 #### Dla kont "Email-Pro":
 
-- Wszystkie nasze przewodniki dotyczące konfiguracji znajdują się w sekcjach `Konfiguracja na komputerze` i `Konfiguracja na smartphonie` [dokumentacja dotycząca oferty Email-Pro](https://docs.ovh.com/pl/emails-pro/).
+- Wszystkie nasze przewodniki dotyczące konfiguracji znajdują się w sekcjach `Konfiguracja na komputerze` i `Konfiguracja na smartphonie` [dokumentacja dotycząca oferty Email-Pro](/products/web-cloud-email-collaborative-solutions-email-pro).
 
 #### Dla kont e-mail "Exchange":
 
-- Wszystkie nasze przewodniki dotyczące konfiguracji znajdują się w sekcjach `Konfiguracja Exchange na komputerze` oraz `Konfiguracja Exchange na smartphonie` [dokumentacja dotycząca oferty Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/).
+- Wszystkie nasze przewodniki dotyczące konfiguracji znajdują się w sekcjach `Konfiguracja Exchange na komputerze` oraz `Konfiguracja Exchange na smartphonie` [dokumentacja dotycząca oferty Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ### Etap 9: zastąpienie aktywnych serwerów DNS Twojej domeny serwerami OVHcloud <a name="step9"></a>
 

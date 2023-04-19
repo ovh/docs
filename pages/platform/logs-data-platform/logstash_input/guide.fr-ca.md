@@ -367,6 +367,6 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
-- Documentation: [Guides](/ca/fr/logs-data-platform/){.ref}
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

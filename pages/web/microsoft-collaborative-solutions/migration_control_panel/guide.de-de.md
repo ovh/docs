@@ -166,7 +166,7 @@ Um die Konfiguration zu ändern, klicken Sie auf das rote Kästchen und führen 
 
 Verwenden Sie nun Ihre migrierten E-Mail-Accounts. OVHcloud stellt dazu eine Online-Anwendung (*Web App*) zur Verfügung, die über <https://www.ovh.com/de/mail/> erreichbar ist. Geben Sie dort die Login-Daten für Ihre E-Mail-Adresse ein.
 
-Wenn Sie einen der migrierten Accounts auf einem E-Mail-Client (wie Outlook) eingerichtet haben, müssen Sie diesen erneut konfigurieren. Die Verbindungsdaten zum OVHcloud Server haben sich nach der Migration geändert. Weitere Informationen finden Sie in den jeweiligen Anleitungen zu [E-Mail Pro](../../emails-pro/) und [Hosted Exchange](/de/microsoft-collaborative-solutions/). Auch wenn Sie den Account nicht sofort neu konfigurieren können, ist der Zugriff über die Online-Anwendung weiterhin möglich.
+Wenn Sie einen der migrierten Accounts auf einem E-Mail-Client (wie Outlook) eingerichtet haben, müssen Sie diesen erneut konfigurieren. Die Verbindungsdaten zum OVHcloud Server haben sich nach der Migration geändert. Weitere Informationen finden Sie in den jeweiligen Anleitungen zu [E-Mail Pro](../../emails-pro/) und [Hosted Exchange](/products/web-cloud-email-collaborative-solutions-microsoft-exchange). Auch wenn Sie den Account nicht sofort neu konfigurieren können, ist der Zugriff über die Online-Anwendung weiterhin möglich.
 
 ### Organisation der Inhalte Ihrer E-Mail-Accounts nach einer Migration <a name="content-after-migration"></a>
 
@@ -187,8 +187,8 @@ Sie können auch Ihre E-Mail-Accounts manuell auf Ihr neues OVHcloud E-Mail-Ange
 
 [Verwaltung der Kontakte Ihrer Dienste](/pages/account/customer/managing_contacts)
 
-[E-Mail Pro Hilfen](https://docs.ovh.com/de/emails-pro/)
+[E-Mail Pro Hilfen](/products/web-cloud-email-collaborative-solutions-email-pro)
 
-[Exchange Hilfen](https://docs.ovh.com/de/microsoft-collaborative-solutions/)
+[Exchange Hilfen](/products/web-cloud-email-collaborative-solutions-microsoft-exchange)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

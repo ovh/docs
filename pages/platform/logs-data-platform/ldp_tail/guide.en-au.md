@@ -163,6 +163,6 @@ To make the magic happens, replace begin and end values with timestamps that hav
 ## Go further
 
 - Getting Started: [Quick Start](/pages/platform/logs-data-platform/quick_start){.ref}
-- Documentation: [Guides](/au/en/logs-data-platform/){.ref}
+- Documentation: [Guides](/products/public-cloud-data-platforms-logs-data-platform){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

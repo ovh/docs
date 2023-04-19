@@ -41,9 +41,9 @@ Follow these steps to ensure that your relevant services are up and running:
 
 If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc.) or smartphone (iOS, Android, etc.), and you experience a sending or receiving technical issue, check the configuration settings according to your email solution and the email client or application you are using.
 
-- For an **MXplan** solution, go to the [Shared emails - MX Plan](https://docs.ovh.com/us/en/emails/) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
+- For an **MXplan** solution, go to the [Shared emails - MX Plan](/products/web-cloud-email-collaborative-solutions-mx-plan) section in our **Web Cloud** guides, and check the configuration of your email software in the `Configure on computer` section, or in the `Configure on smartphone` section for your smartphone.
 
-- For an **Exchange** offer, in the [Microsoft Collaborative Solutions ](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/) section in our **Web Cloud** guides, check the configuration of your email software in the section `Email clients` or your smartphone in `Exchange-compatible smartphone and tablet configuration`.
+- For an **Exchange** offer, in the [Microsoft Collaborative Solutions ](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) section in our **Web Cloud** guides, check the configuration of your email software in the section `Email clients` or your smartphone in `Exchange-compatible smartphone and tablet configuration`.
 
 ### Are emails functional from webmail?
 

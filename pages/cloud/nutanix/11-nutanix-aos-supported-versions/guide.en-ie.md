@@ -71,6 +71,6 @@ The query result appears below `availableVersions` with both versions supported 
 
 [Nutanix AOS Update Plan](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG)
 
-[Using the OVHcloud API](https://docs.ovh.com/ie/en/api/)
+[Using the OVHcloud API](/products/infrastructure-as-code-api-apiv6)
 
 Join our community of users on <https://community.ovh.com/en/>.

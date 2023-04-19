@@ -200,7 +200,7 @@ Once you have migrated your email accounts to OVHcloud, reconfigure your email s
 
 #### For Exchange email accounts:
 
-- You can find all of our configuration guides in the `Exchange configuration on computer` and `Exchange configuration on smartphone` sections of [our Exchange documentation](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/).
+- You can find all of our configuration guides in the `Exchange configuration on computer` and `Exchange configuration on smartphone` sections of [our Exchange documentation](/products/web-cloud-email-collaborative-solutions-microsoft-exchange).
 
 ## Step 9: Replace your domain name’s active DNS servers with those of OVHcloud <a name="step9"></a>
 

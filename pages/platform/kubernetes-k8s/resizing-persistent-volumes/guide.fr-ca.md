@@ -415,6 +415,6 @@ mysql> SHOW TABLES;
 
 Now you can expand the Persistent Volumes on your OVHcloud Managed Kubernetes cluster, and adapt them to the live of your data.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/ca/fr/kubernetes/).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](/products/public-cloud-containers-orchestration-managed-kubernetes-k8s).
 
 Join our [community of users](https://community.ovh.com/en/).
