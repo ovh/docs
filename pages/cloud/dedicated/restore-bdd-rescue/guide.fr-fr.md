@@ -10,9 +10,9 @@ updated: 2023-04-13
 
 ## Objectif
 
-Le mode Rescue est un mode qui vous permet d'accéder à vos données en permanence, même si le système d'exploitation du serveur ou les logiciels hébergés sur celui-ci ne fonctionnent plus.
+Le mode Rescue permet d'accéder à vos données en permanence, même si le système d'exploitation du serveur ou les logiciels hébergés sur celui-ci ne fonctionnent plus.
 
-**Ce tutoriel explique comment accéder à un système en mode rescue et récupérer des fichiers de base de données.**
+**Découvrez comment accéder à votre système d'exploitation en mode rescue et récupérer les fichiers de base de données.**
 
 ## Prérequis
 
@@ -83,10 +83,10 @@ Device     Boot Start     End Sectors  Size Id Type
 
 > [!primary]
 >
-> Les sections de code suivantes sont fournies à titre d'illustration uniquement, en fonction de l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions en fonction de votre configuration réelle en remplaçant les valeurs dans les commandes par vos identifiants de disque et de volume.
+> Les sections de code suivantes sont fournies à titre d'illustration, en relation avec l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions avec votre configuration réelle et remplacer les valeurs dans les commandes par vos identifiants de disque et de volume.
 >
 
-Dans cet exemple, le disque principal (10 Go) est nommé "sdb". Nos données in `/` se trouvent donc sur la partition `/dev/sdb1`. (Alors que "sda" est le disque en mode rescue et "sda1" est la partition principale en mode rescue montée sur `/`.)
+Dans cet exemple, le disque principal (10 Go) est nommé "sdb". Nos données in `/` se trouvent donc sur la partition `/dev/sdb1`. (Alors que "sda" est en mode rescue et "sda1" la partition principale en mode rescue montée sur `/`.)
 
 Nous montons la partition système dans le dossier `/mnt` puis nous vérifions son contenu :
 
@@ -173,7 +173,7 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 
 > [!primary]
 >
-> Les sections de code suivantes sont fournies à titre d'illustration uniquement, en fonction de l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions en fonction de votre configuration réelle en remplaçant les valeurs dans les commandes par vos identifiants de disque et de volume.
+> Les sections de code suivantes sont fournies à titre d'illustration, en relation avec l'exemple de sortie ci-dessus. Vous devrez ajuster les instructions avec votre configuration réelle et remplacer les valeurs dans les commandes par vos identifiants de disque et de volume.
 >
 
 Dans cet exemple, nos données dans `/` se trouvent sur le volume `/dev/md3`.
@@ -214,7 +214,7 @@ Une fois toutes les partitions nécessaires montées, nous devons pouvoir exécu
 root@rescue:~# chroot /mnt/
 root@rescue:/#
 ```
-À partir de ce moment, toutes les commandes que vous allez entrer seront appliquées à votre système à la place de l'environnement temporaire du mode rescue.
+Maintenant, toutes les commandes que vous allez entrer seront appliquées à votre système à la place de l'environnement temporaire du mode rescue.
 
 Nous pouvons maintenant démarrer le service `mysql` :
 
@@ -257,7 +257,7 @@ Dans le cas de tables corrompues, cette commande peut être utilisée pour la r�
 root@rescue:/# mysqlcheck -u root -p Password_Root_MySQL --auto-repair --optimize --all-databases
 ```
 
-À partir du dossier `/home`, vous pouvez désormais envoyer vos fichiers de sauvegarde vers un serveur distant. Cet exemple utilise l'utilitaire de transfert de fichiers `scp` :
+À partir du dossier `/home`, vous pouvez désormais envoyer vos fichiers de sauvegarde vers un serveur distant. Dans cet exemple nous utilisons l'utilitaire de transfert de fichiers `scp` :
 
 ```shell-session
 root@rescue:/# scp -P SSH_Port_Number dump.sql user@IP_address:/home/backup
