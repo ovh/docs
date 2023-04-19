@@ -121,7 +121,7 @@ Para eliminar utilizadores FTP, clique no botão `...`{.action} à direita do ut
 
 #### Finalização
 
-Depois de verificar estes 6 elementos, pode realizar a sua [alteração da oferta](#modify).
+Depois de verificar estes 7 elementos, pode realizar a sua [alteração da oferta](#modify).
 
 ### Casos especiais
 

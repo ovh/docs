@@ -55,7 +55,7 @@ A continuación, seleccione la nueva suscripción y la duración de la misma. Ac
 > **En primer lugar**, deberá migrar su alojamiento desde la fórmula *Performance 2* al plan *Performance 1* y **después** al plan *Profesional*.
 >
 
-Antes de realizar el cambio a una gama inferior, compruebe los siguientes 6 elementos:
+Antes de realizar el cambio a una gama inferior, compruebe los siguientes 7 elementos:
 
 #### 1 - Número de sitios
 
@@ -123,7 +123,7 @@ Para eliminar usuarios FTP, haga clic en el botón `...`{.action} a la derecha d
 
 #### Finalización
 
-Una vez que haya comprobado estos 6 elementos, puede realizar el [cambio de producto](#modify).
+Una vez que haya comprobado estos 7 elementos, puede realizar el [cambio de producto](#modify).
 
 ### Casos particulares
 

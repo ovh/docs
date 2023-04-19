@@ -55,7 +55,7 @@ Wählen Sie dann Ihr neues Abonnement und dessen Dauer aus. Bestätigen Sie die 
 > Sie müssen Ihr Hosting **zuerst** von *Performance 2* zum *Performance 1* **und dann** zum *Pro*-Angebot umstellen.
 >
 
-Bevor Sie Ihre Umstellung auf eine niedrigere Reihe vornehmen, überprüfen Sie die folgenden 6 Punkte:
+Bevor Sie Ihre Umstellung auf eine niedrigere Reihe vornehmen, überprüfen Sie die folgenden 7 Punkte:
 
 #### 1 - Anzahl der Websites
 

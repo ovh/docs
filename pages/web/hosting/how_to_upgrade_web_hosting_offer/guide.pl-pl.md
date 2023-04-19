@@ -71,7 +71,7 @@ Następnie wybierz Twój nowy abonament oraz czas jego trwania. Zatwierdź odpow
 > Należy **najpierw** zmienić ofertę hostingu z poziomu oferty *Performance 2* na ofertę *Performance 1* **następnie** na ofertę *Pro*.
 >
 
-Przed przejściem na niższą ofertę, sprawdź 6 poniższe elementy:
+Przed przejściem na niższą ofertę, sprawdź 7 poniższe elementy:
 
 #### 1 - Liczba stron
 
@@ -139,7 +139,7 @@ Aby usunąć użytkowników FTP, kliknij przycisk `...`{.action} po prawej stron
 
 #### Zakończenie
 
-Po sprawdzeniu 6 elementów możesz wykonać [zmianę oferty](#modify).
+Po sprawdzeniu 7 elementów możesz wykonać [zmianę oferty](#modify).
 
 ### Szczególne przypadki
 

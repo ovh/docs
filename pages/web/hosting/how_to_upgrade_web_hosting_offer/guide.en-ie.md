@@ -50,7 +50,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 > For example, you cannot switch from *Performance 2* to *Professional* in a single operation.
 > You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Professional* plan.
 
-Before you make your switch to a lower range, check the following 6 items:
+Before you make your switch to a lower range, check the following 7 items:
 
 #### 1 - Number of sites
 
@@ -118,7 +118,7 @@ To delete FTP users, click the `...`{.action} to the right of the FTP user you w
 
 #### Completion
 
-Once you have checked these 6 elements, you can [change your plan](#modify).
+Once you have checked these 7 elements, you can [change your plan](#modify).
 
 ### Special cases
 
