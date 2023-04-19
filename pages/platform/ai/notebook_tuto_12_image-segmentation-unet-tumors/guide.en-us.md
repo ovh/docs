@@ -1,6 +1,6 @@
 ---
 title: AI Notebooks - Tutorial - Brain tumor segmentation using U-Net
-slug: notebooks/tuto-image-segmentation-unet-brain-tumors
+slug: notebooks/tuto-image-segmentation-unet-tumors
 excerpt: Implementing a Convolutional Neural Network for Brain Tumor Segmentation in Medical Imaging
 section: AI Notebooks - Tutorials
 order: 12
@@ -51,7 +51,7 @@ In this tutorial, the `tensorflow` framework is used. If you use another environ
 
 #### Resources
 
-GPU is recommended because medical imaging is a training intensive task.
+Using GPUs is recommended because medical imaging is a training intensive task.
 
 > [!primary]
 >
@@ -60,7 +60,7 @@ GPU is recommended because medical imaging is a training intensive task.
 
 ### Launching a Jupyter notebook with "Miniconda" via CLI
 
-*If you do not have our CLI yet, follow [this guide](https://docs.ovh.com/us/en/publiccloud/ai/cli/install-client/) to install it.*
+*If you do not use our CLI yet, follow [this guide](https://docs.ovh.com/us/en/publiccloud/ai/cli/install-client/) to install it.*
 
 If you want to launch your notebook with the OVHcloud AI CLI, choose the `jupyterlab` editor and the `tensorflow` framework.
 
