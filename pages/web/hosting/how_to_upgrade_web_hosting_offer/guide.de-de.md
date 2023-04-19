@@ -115,9 +115,9 @@ Wählen Sie im Bereich `E-Mails`{.action} in Ihrem Kundencenter den betreffenden
 
 Bevor Sie Ihr Hosting auf ein niedrigeres Angebot umstellen, stellen Sie sicher, dass das neue Angebot genügend FTP-Benutzer bietet.
 
-Die Anzahl der FTP-Benutzer ist in Ihrem OVHcloud Kundencenter sichtbar. Gehen Sie in den Bereich `Web Cloud`{.action} und wählen Sie das betreffende Hosting im Bereich `Hosting-Pakete`{.action} links aus. Klicken Sie auf der angezeigten Seite auf den Tab `FTP-SSH`{.action}. Im unteren Teil der folgenden Seite enthält eine Tabelle alle für Ihr Webhosting erstellten FTP-Benutzer.
+Die Anzahl der FTP-Benutzer ist in Ihrem OVHcloud Kundencenter sichtbar. Gehen Sie in den Bereich `Web Cloud`{.action} und wählen Sie das betreffende Hosting links im Bereich `Hosting-Pakete`{.action} aus. Klicken Sie auf der neu angezeigten Seite auf den Tab `FTP-SSH`{.action}. Der untere Bereich dieser Seite enthält eine Tabelle mit allen für Ihr Webhosting erstellten FTP-Benutzer.
 
-Um FTP-Benutzer zu löschen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts neben dem FTP-Benutzer, den Sie löschen möchten, und dann `Löschen`{.action}.
+Um FTP-Benutzer zu löschen, klicken Sie auf `...`{.action} rechts neben dem entsprechenden FTP-Benutzer und dann auf `Löschen`{.action}.
 
 ![FTP-Deletion](images/userFTP.png){.thumbnail}
 
