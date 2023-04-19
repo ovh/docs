@@ -77,11 +77,11 @@ Veeam Enterprise Plus vous permet de sauvegarder et de restaurer des snapshots d
 
 Pour en savoir plus sur l'installation d'un serveur Veeam Enterprise Plus dans votre solution VMware on OVHcloud, veuillez vous référer à la [documentation OVHcloud](https://docs.ovh.com/ca/fr/storage/backup/veeam/veeam-backup-replication/).
 
-### Longue durée et archivage (BETA)
+### Longue durée et archivage
 
 Certaines données nécessitent d'être stockées et sauvegardées avec une rétention longue pour des raisons légales et/ou techniques, idéalement dans un espace de stockage dédié avec des accès limités une fois que la donnée a été écrite. OVHcloud propose une solution nommée Cold Archive pour ce type de besoin, solution ayant un haut niveau de sécurité pour vos données.
 
-Plus d'information sur [OVHcloud](https://labs.ovhcloud.com/fr/cold-archive/).
+Plus d'information sur [OVHcloud](https://www.ovhcloud.com/fr/public-cloud/cloud-archive/).
 
 ### Connexion du support SAP
 
