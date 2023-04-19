@@ -1,7 +1,7 @@
 ---
-title: AI Deploy - Capabilities and limitations
+title: AI Deploy - Features, Capabilities and Limitations
 slug: deploy/capabilities
-excerpt: Discover the capabilities and limitations of AI Deploy
+excerpt: Find out about current features, capabilities and limitations of AI Deploy
 section: AI Deploy - Guides
 order: 01
 updated: 2023-04-04
@@ -17,16 +17,82 @@ updated: 2023-04-04
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud AI Deploy offer.
-We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+
+## Features
+
+### Available features
+
+AI Deploy allows you to deploy your AI applications and models with compute resources (CPUs, GPUs) and high availability.
+
+| Feature                                    | Details                                                                                                                                                                                                                                   |
+|--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **AI environments**                        |                                                                                                                                                                                                                                           |
+| Preinstalled Machine Learning environments | AI Deploy comes with a generic Python environment (Conda) or pre-installed ones, such as Pytorch, Tensorflow, FastAI, HuggingFace and more.                                                                                               |
+| Easy customization                         | AI Deploy allows installation of almost any Conda or Pip packages. You can easily customize your environment to suit your needs. It also allows you to use your own environment by specifying your Docker image.                          |
+| **Management**                             |                                                                                                                                                                                                                                           |
+| Multiple ways to manage your deployed apps | You can manage your AI Deploy apps through the OVHcloud Control Panel, API or CLI. Depending on your needs, you can easily automate their creation and deletion as well.                                                                      |
+| Easy start and Stop                        | You can start and stop an app in one click.                                                                                                                                                                                               |
+| Check the logs of your app                 | You can also check the logs of your deployed app through the OVHcloud Control Panel, API or CLI.                                                                                                                                              |
+| **Compute resources**                      |                                                                                                                                                                                                                                           |
+| Guaranteed compute resources               | Select the amount of CPUs or GPUs required during the creation of the AI Deploy app. Once launched, you will keep these resources as long as your app is running.                                                                         |
+| Background execution                       | Your tasks can be executed in the background, meaning that closing your Web browser will have no effect on your work.                                                                                                                         |
+| No maximum runtime                         | Your tasks can last as long as your app is running.                                                                                                                                                                                       |
+| Monitoring tools                           | Each AI Deploy app comes with a native Grafana dashboard, allowing you to keep track and monitor your CPU, GPU, RAM and storage resources.                                                                                                |
+| **Storage**                                |                                                                                                                                                                                                                                           |
+| Fast and flexible storage                  | Each AI Deploy service comes with local storage, but also the ability to attach remote storage from Object Storage. From a few GiB to multiple TiB, we push your data near our compute power on fast SSD storage for better performances. |
+| Git repositories importation               | During the creation of your AI Deploy app, you can specify one or multiple Git repositories to download inside your app environment.                                                                                                      |
+| **Security**                               |                                                                                                                                                                                                                                           |
+| Open or restricted authentication          | During the creation of your AI Deploy app, you can either select Public Access, allowing anyone to access your application, or Restricted Access, allowing access via security tokens or credentials.                                     |
+| European values                            | We respect your privacy and will never use your personal data for our internal purposes.                                                                                                                                                  |
+| **Availability and billing**               |                                                                                                                                                                                                                                           |
+| Easy billing                               | You only pay for what you consume, billed per minute.                                                                                                                                                                                     |
+| Available in many countries                | AI Deploy requires an OVHcloud account. We currently accept dozens of countries. Once created, you will have access to the whole set of features.                                                                                         |
+
+#### Logs and Monitoring tools
+
+##### **Logs**
+
+To check the logs of your app, you can do it via the `ovhai` CLI using the following command:
+
+```console
+ovhai app logs <app-id>
+```
+
+##### **Monitoring tools**
+
+To observe the metrics of your app, you can do so with the `ovhai` CLI using the command above:
+
+```console
+ovhai app get <app-id>
+```
+
+You can then access your metrics through the `Monitoring Url`.
+
+You are also able to check it from the OVHcloud Control Panel in your app information by clicking the `Go to Graph Dashboard`{.action} button.
+
+#### API management
+
+API endpoints to manage your AI Deploy apps can be found here:
+
+- EU: <https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
+- CA: <https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
+
+#### Command line interface (CLI)
+
+AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/ie/en/publiccloud/ai/cli/install-client/).
+
+### Planned features
+We continuously improve our offers. You can follow, vote and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/4>.
 
 ## Capabilities and limitations
 
 ### Supported regions and multi-AZ deployments
 
-The AI Deploy offer is available for any OVHcloud account, whatever the country, and physically deployed in the following regions:
+AI Deploy can be used from any country in the world, as long as you have an OVHcloud account.
+Physically, two datacenters are available:
 
-- `BHS` (Beauharnois, Canada)
-- `GRA` (Gravelines, France)
+- `BHS` (Beauharnois, Canada, America)
+- `GRA` (Gravelines, France, Europe)
 
 Entire AI Deploy instances have to be in the same region. Multi-AZ is currently not supported.
 
@@ -36,26 +102,36 @@ Entire AI Deploy instances have to be in the same region. Multi-AZ is currently 
 
 ##### **Replica type**
 
-You can either choose the number of GPU or CPU for an AI Deploy app, not both.
+You can either choose the number of `GPUs` or `CPUs` for an AI Deploy app, not both.
 By default, an app uses one CPU instance.
+The memory resource is not customisable.
 
 ##### **Available replica ranges**
 
 If you choose `GPU`:
 
-- You can go from 1 to 4 GPU per instance.
-- CPU, memory and local storage resources are not customizable but scaled linearly with each additional GPU.
+- CPU, memory and local storage resources are not customisable but scaled linearly with each additional GPU.
 
 If you choose `CPU`:
 
-- You can go from 1 to 12 CPU per instance.
-- Memory and local storage resource is not customizable but scaled linearly with each additional CPU.
+- Memory and local storage resource is not customisable but scaled linearly with each additional CPU.
 
-Information about maximum number of CPU/GPU, memory per CPU/GPU, and local storage are available with the `ovhai` CLI or OVHcloud Public Cloud price page.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available on the [OVHcloud website](https://www.ovhcloud.com/en-ie/public-cloud/prices/#ai-&-machine-learning), Control Panel and the `ovhai` CLI.
 
-```console
-ovhai capabilities
+``` {.console}
+ovhai capabilities flavor list
 ```
+
+For your information, the current limits are:
+
+- CPU: 12 per app.
+- GPU: 4 per app.
+
+##### **Available hardware for AI Deploy**
+
+Currently, we provide:
+
+- **NVIDIA V100S** ([pricing available here](https://www.ovhcloud.com/en-ie/public-cloud/prices/#ai-&-machine-learning)).
 
 ##### **Scaling**
 
@@ -71,31 +147,37 @@ If you choose `autoscaling`:
 - You can define the metric monitored that will act as a trigger for autoscaling: `CPU` or `RAM`.
 - You can choose the threshold for the percentage of average use: integer between 1 and 100%.
 
-#### Local storage
+#### Available storage
 
-Local storage is ephemeral.
-Local storage depends on the selected instances during AI Deploy app deployment. Please refer to the compute resources section for more information.
+##### **Local storage**
 
-#### Attached storage
+Each AI Deploy app comes with a local storage space, which is ephemeral. When you delete your app, this storage space is also deleted.
+This storage space depends on the selected instances during AI Deploy app deployment. Please refer to the compute resources section for more information.
 
-You can attach data volumes from Public Cloud Object Storage. Object Storage bucked should be in the same region as your AI Deploy app.
+> [!primary]
+> **Local storage** is limited and not the recommended way to handle data, see the [OVHcloud documentation on data](https://docs.ovh.com/ie/en/publiccloud/ai/data) for more information.
+>
+
+##### **Attached storage**
+
+You can attach data volumes from Public Cloud Object Storage. The Object Storage bucket should be in the same region as your AI Deploy app.
 Attached storage allows you to work on several TB of data, while being persistent when you delete your AI Deploy app.
 
-### Features and known limits
+#### Maximum execution time
 
-#### Permitted deployment
+There is no duration limitation on AI Deploy apps execution.
 
-AI Deploy authorizes the deployment of your own Docker images or applications from the [OVHcloud portfolio](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/apps-portfolio/).
+#### Environment customization & Permitted deployment
+
+Each environment can be customized directly with PIP or CONDA (we support almost any package and library).
+
+AI Deploy authorizes the deployment of your own Docker images, and of applications from the [OVHcloud portfolio](https://docs.ovh.com/ie/en/publiccloud/ai/deploy/apps-portfolio/).
 
 Docker images can be hosted in a public or private registry.
 
 The use of `docker-compose` is not possible.
 
-Please beware that images need to be built with an **AMD architecture**.
-
-#### Maximum execution time
-
-There is no duration limitation on AI Deploy app execution.
+Please be aware that images need to be built with an **AMD architecture**.
 
 #### High-availability
 
@@ -107,61 +189,26 @@ To benefit from high-availability, a minimum of two instances is required. In ca
 You can update the Docker image of your application to provide an updated version of your service. Updates are incremental and will not cause any downtime. Your current configuration will also be preserved, such as your HTTP endpoint and deployment policy.
 There is no need to stop and restart the application for the image update to take effect.
 
-#### Network
+### Network
 
-**Public networking** can be used for all the AI Tools.
+- **Public networking** can be used for all the AI Tools.
 
-**Private networking (vRack)** is not supported.
+- **Private networking (vRack)** is not supported.
 
-**Ports**: you can map your AI Deploy app to only one port. Default port is 8080.
+- **Ports**: you can map your AI Deploy app to only one port. Default port is 8080.
 
-**Ingress and Egress traffic** are included in the service plans and not metered.
+- **Ingress and Egress traffic** are included in the service plans and not metered.
 
-#### Logs and metrics
+### Quotas per Public Cloud project
 
-##### **Logs**
-
-To check the logs of your app, you can do it via the `ovhai` CLI using the following command:
-
-```console
-ovhai app logs <app-id>
-```
-
-##### **Metrics**
-
-To observe the metrics of your app, you can do so with the `ovhai` CLI using the command above:
-
-```console
-ovhai app get <app-id>
-```
-
-You can then access your metrics through the `Monitoring Url`.
-
-You are also able to check it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) in your app information by clicking on the button `Access dashboards`.
-
-#### Security
-
-A security rule is selected during the AI Deploy app deployment process.
-
-You can either select **Public Access**, allowing anyone to access your application, or **Restricted Access*, via security tokens**.
-
-#### API management
-
-API endpoints to manage your AI Deploy apps can be found here:
-
-- EU: <https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
-- CA: <https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
-
-#### Command line interface (CLI)
-
-AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/ie/en/publiccloud/ai/cli/install-client/){.external}.
+Each Public Cloud project grants a customer by default a maximum of 4 GPUs used simultaneously. Reach out to our support if you need to increase this limitation.
 
 ## Go further
 
 Browse the full [AI Deploy documentation](https://docs.ovh.com/ie/en/publiccloud/ai/) to further understand the main concepts and get started.
 
-## We want your feedback!
+## Feedback
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-Are you on Discord? Connect to our channel at <https://discord.gg/KbrKSEettv> and interact directly with the team that builds our AI services!
+Are you on Discord? Connect to [our channel](https://discord.gg/KbrKSEettv) and interact directly with the team that builds our AI services!
