@@ -4,7 +4,7 @@ excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'h
 slug: how_to_change_web_hosting_offer
 section: Optimiser son site
 order: 02
-updated: 2023-01-03
+updated: 2023-04-19
 ---
 
 **Dernière mise à jour le 30/01/2023**
