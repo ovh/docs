@@ -7,7 +7,7 @@ order: 02
 updated: 2023-04-19
 ---
 
-**Last updated 15rd February 2023**
+**Last updated 15th February 2023**
 
 ## Objective
 
@@ -111,7 +111,7 @@ In the `Emails`{.action} section of your Control Panel, select the solution conc
 
 Before switching your hosting plan to a lower plan, ensure that the new plan has enough FTP users.
 
-You can view the number of FTP users in your OVHcloud Control Panel. Go to the `Web Cloud`{.action} section, then select the plan concerned in the `Hosting`{.action} section on the left-hand side. On the page that appears, click on the `FTP-SSH`{.action} tab. In the lower part of the next page, a table lists all FTP users created for your Web Hosting plan.
+You can view the number of FTP users in your OVHcloud Control Panel. Go to the `Web Cloud`{.action} section, then select the plan concerned in the `Hosting plans`{.action} section on the left-hand side. On the page that appears, click on the `FTP-SSH`{.action} tab. In the lower part of the next page, a table lists all FTP users created for your Web Hosting plan.
 
 To delete FTP users, click the `...`{.action} to the right of the FTP user you want to delete, then `Delete`{.action}.
 
