@@ -785,6 +785,7 @@
                 + [AI Notebooks - Tutorial - Build your spam classifier](platform/ai/notebook_tuto_09_spam_classifier)
                 + [AI Notebooks - Tutorial - Create and train a Rasa chatbot](platform/ai/notebook_tuto_10_create_chatbot)
                 + [AI Notebooks - Tutorial - Train YOLOv7 for sign language recognition](platform/ai/notebook_tuto_11_yolov7)
+                + [AI Notebooks - Tutorial - Brain tumor segmentation using U-Net](platform/ai/notebook_tuto_12_image-segmentation-unet-tumors)
         + [AI Training](public-cloud-ai-and-machine-learning-ai-training)
             + [Guides](public-cloud-ai-and-machine-learning-ai-training-guides)
                 + [AI Training - Features, Capabilities and Limitations](platform/ai/training_guide_01_capabilities)
