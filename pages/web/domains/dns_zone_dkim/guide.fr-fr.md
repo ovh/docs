@@ -7,6 +7,28 @@ order: 06
 updated: 2022-09-12
 ---
 
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #fff; 
+   color: #000;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.90em;
+   color: #000;
+ }
+ .small {
+     font-size: 0.90em;
+ }
+</style>
+
 **Dernière mise à jour le 12/09/2022**
 
 ## Objectif
@@ -30,11 +52,19 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 
 ## en pratique
 
+Lorsque vous envoyez un e-mail depuis **contact@mydomain.ovh**, une signature cryptée à l'aide d'une clé privée (private key) est ajoutée dans l'entête de l'e-mail. Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature avec la clé publique (Public key) visible dans la zone DNS de **mydomain.ovh**. La signature est créée à partir du contenu de l'e-mail envoyé, cela signifie que si l'e-mail est modifié lors du transit, la signature ne correspondra pas avec le contenu : ce qui provoquera l'échec de la vérification DKIM sur le serveur destinataire.
+
+![email](images/email-dns-conf-dkim.png){.thumbnail}
+
 **Sommaire**
 
 - [Comment DKIM fonctionne-t-il?](#how-dkim-work)
+    - [Le hachage](#hash)
+    - [La cryptographie asymétrique](#crypto)
+    - [Comment le hachage et la cryptographie asymatrique sont utilisés pour DKIM ?](#crypto-and-hash)
+    - [Pourquoi a-t-on besoin de configurer les serveurs DNS ?](#dns-and-dkim)
+- [Configurer DKIM pour une offre e-mail Exchange OVHcloud](#internal-dkim)
 - [Configurer DKIM pour une offre e-mail hors de votre compte OVHcloud](#external-dkim)
-- [Configurer DKIM pour une offre e-mail OVHcloud](#external-dkim)
 
 ### **Comment DKIM fonctionne-t-il ?** <a name="how-dkim-work"></a>
 
@@ -60,78 +90,70 @@ Dans la cryptographie asymétrique, on utilise une **clé publique** et une **cl
 
 - **la donnée d'entrée est cryptée par le propriétaire de la clé privée et décryptée par la clé publique** : vous souhaitez authentifier un échange de donnée. Par exemple, Vos destinataires souhaitent s'assurer que vous êtes l'auteur du message que vous leur transmettez. Dans ce cas, vous allez crypter votre message avec votre clé privé, celui-ci ne pourra être décrypté que par la clé publique que vous aurez transmis à tout le monde. Ce qui garantie à vos destinataire l'authenticité de votre message. En effet, un message décrypté par la clé publique ne peut provenir uniquement que du propriétaire de la clé privé.
 
-#### **Comment le hachage et la cryptographie asymatrique sont utilisé pour DKIM ?** 
+#### **Comment le hachage et la cryptographie asymatrique sont utilisés pour DKIM ?** <a name="crypto-and-hash"></a>
 
 Depuis la plateforme e-mail, DKIM va utiliser le hachage pour créer une signature à partir de certains éléments de [l'entête de l'e-mail](https://docs.ovh.com/fr/emails/recuperation-des-entetes-e-mails/#comprendre-le-contenu-dun-en-tete) et du corps de l'e-mail (contenu de l'e-mail).
 
 La signature est ensuite cryptée avec la clé privé en utilisant la cryptographie asymétrique.
 
-#### **Pourquoi a-t-on besoin des serverus DNS ?**
+#### **Pourquoi a-t-on besoin de configurer les serveurs DNS ?** <a name="dns-and-dkim"></a>
 
-Pour que le destinataire puisse vérifier la signature DKIM de l'expéditeur, il aura besoin des paramètres DKIM et surtout de la clé publique. La [zone DNS](docs.ovh.com/fr/domains/editer-ma-zone-dns/) d'une nom de domaine est publique, c'est pourquoi DKIM utilise un enregistrement dans la zone DNS pour transmettre la clé publique et les paramètre DKIM au destinataire 
+Pour que le destinataire puisse vérifier la signature DKIM de l'expéditeur, il aura besoin des paramètres DKIM et surtout de la clé publique pour décrypter. La [zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) d'une nom de domaine est publique, c'est pourquoi un enregistrement DNS est ajouté pour transmettre la clé publique et les paramètre DKIM au destinataire.
 
-#### Pourquoi DKIM nécessite 
+### Configurer DKIM pour une offre e-mail Exchange OVHcloud
 
-Lorsque vous envoyez un e-mail depuis **contact@mydomain.ovh**, une signature cryptée à l'aide d'une clé privée (private key) est ajoutée dans l'entête de l'e-mail. Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature avec la clé publique (Public key) visible dans la zone DNS de **mydomain.ovh**. La signature est créée à partir du contenu de l'e-mail envoyé, cela signifie que si l'e-mail est modifié lors du transit, la signature ne correspondra pas avec le contenu : ce qui provoquera l'échec de la vérification DKIM sur le serveur destinataire.
-
-![email](images/email-dns-conf-dkim.png){.thumbnail}
-
-
-
-
-
- 
-Si le client a une zone DNS hébergée chez OVH, il n'aura pas à modifier sa zone manuellement.
+#### **La gestion du nom de domaine est dans le même espace client OVHcloud que la plateforme Exchange
+Si le client a une zone DNS hébergée chez OVHcloud, il n'aura pas à modifier sa zone manuellement.
 Si le client a une zone DNS externe, il va devoir ajouter un champ dans celle-ci.
- 
 
 Rendez-vous sur api.ovh.com, puis sur "/email/exchange"
 
- 
-Les différents états du DKIM :
+##### **Les différents états du DKIM** 
 
-Todo = La task va être lancée. Le statut passera en ready si les champs DNS sont bien présents.
+`Todo` : La tâche va être lancée. Le statut passera en `ready` si les enregistrements DNS sont bien présents.
 
-WaitingRecord : Indique qu'on attend que les champs DNS soient présents dans la zone du domaine. Un check va être fait régulièrement (5 min) pour voir si le champ est présent.
+`WaitingRecord` : Les enregistrements DNS sont en attente de configuration dans la zone du domaine. Une vérification régulière est faite pour voir si l'enregistrement DNS  est présent.
 
-Ready = OK, les champs DNS sont bien présents. Le DKIM peut être activé (prêt à passer au statut "Inproduction").
+`Ready` : Les enregistrements DNS sont présents dans la zone. Le DKIM peut être activé (prêt à passer au statut `Inproduction`).
 
- 
 
 POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 
-Enabling = Statut qui va activer le DKIM (Délai : 1 minute environ)
+Enabling : Statut qui va activer le DKIM (Délai : 1 minute environ)
 
 Prérequis : Le DKIM doit être en statut "Ready" avant de pouvoir l'activer.
 
  
 
-InProduction : Le DKIM est en production, il va signer les e-mails sortants de votre domaine !
+`InProduction` : Le DKIM est en production, il va signer les e-mails sortants de votre domaine !
 
  
 
 POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/disable
 
-Disabling = Statut qui va désactiver le DKIM (Délai : 1 minute environ)
+`Disabling` : Statut qui va désactiver le DKIM (Délai : 1 minute environ)
 
 Prérequis : Le DKIM doit être en statut "inProduction" avant de pouvoir le désactiver.
 
- 
-
-Deleting = En cours de suppression
+`Deleting` : En cours de suppression
 
 -----
 
  
-Activons le DKIM pour le domaine beaumont.ovh et l'Hosted Exchange hosted-ca663554-24 : 
+#### Activons le DKIM pour le domaine beaumont.ovh et l'Hosted Exchange hosted-ca663554-24 : 
+
 1) Récupérez le nom des sélecteurs liés au domaine :
 
 GET  /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkimSelector
 
-Resultats :
-- "ovhex670797-selector1"
-- "ovhex670797-selector2"
+Exemple de résultat :
 
+```
+[
+- "ovhex123456-selector1"
+- "ovhex123456-selector2"
+]
+```
  
 2) Créez les sélecteurs pour ce domaine :
 
@@ -141,13 +163,36 @@ POST  /email/exchange/{organizationName}/service/{exchangeService}/domain/{domai
 
 - configureDkim : si la case est cochée, le champ CNAME sera automatiquement ajouté dans votre zone DNS si celle-ci est chez OVHcloud.
 
- 
+Exemple de résultat :
+
+```
+{
+  "status": "todo",
+  "function": "addExchangeDomainDKIM",
+  "id": 107924143,
+  "finishDate": null,
+  "todoDate": "2023-04-19T11:32:07+02:00"
+}
+```
+
+{
+  "status": "inProduction",
+  "recordType": "CNAME",
+  "customerRecord": "ovhex763062-selector1._domainkey.guides.ovh",
+  "selectorName": "ovhex763062-selector1",
+  "targetRecord": "ovhex763062-selector1._domainkey.1500.ab.dkim.mail.ovh.net",
+  "lastUpdate": "2023-04-19T11:44:38+02:00",
+  "taskPendingId": 0,
+  "header": "from;to;subject;date",
+  "cnameIsValid": true
+}
+
 3) Vérifiez le champ CNAME à ajouter dans la zone DNS :
 
 (si la zone DNS n'est pas gérée par OVHcloud ou que vous n'avez pas coché la case à l'étape précédente)
 GET  /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 
-- Si vous voyez "status : "waitingRecord" alors que les champs DNS sont bien présents dans la zone, cela signifie que le robot n'est pas encore passé pour vérifier les champs DNS : ressayez dans 5 minutes.
+- Si vous voyez "status : "waitingRecord" alors que les enregistrements DNS sont bien présents dans la zone, cela signifie que le robot n'est pas encore passé pour vérifier les enregistrements DNS : ressayez dans 5 minutes.
 
 - Si vous voyez "Status : Ready" c'est parfait, on peut activer le DKIM !
 
@@ -173,11 +218,14 @@ Félicitations, vous pouvez maintenant envoyer un e-mail depuis l'offre mail rat
 
  
 
-Voici ce que vous trouverez dans l'entête du mail reçu :
+Voici ce que vous pourrez trouver dans l'entête de l'e-mail reçu :
 
-
-
-
+<pre class="console"><code>
+ARC-Authentication-Results: i=1; mx.example.com;
+       dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
+       spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
+Return-Path: <test-dkim@mydomain.ovh>
+</code></pre>
 
 
 
