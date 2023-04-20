@@ -149,7 +149,7 @@ curl https://eu.api.ovh.com/v2/iam/policy -H "X-Pagination-Size: 5"
 The following page can be retrieved by providing the cursor returned in the previous call response:
 
 ```bash
-curl https://eu.api.ovh.com/v2/iam/policy -H "X-Pagination-Size: 5` -H `X-Pagination-Cursor: xxxyyzzz`
+curl https://eu.api.ovh.com/v2/iam/policy -H "X-Pagination-Size: 5" -H `X-Pagination-Cursor: xxxyyzzz"
 ```
 
 The absence of the `X-Pagination-Cursor-Next` header in an API response containing a list of items means that the last page is reached and all available items have been returned.
