@@ -50,11 +50,11 @@ You can create notebooks in the [OVHcloud Control Panel](#controlpanel) or use t
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-Access the administration UI for your OVHcloud Data Processing by clicking on `Data Processing`{.action} (1) in the left-hand menu and then click on `Créer un notebook`{.action} (2).
+Access the administration UI for your OVHcloud Data Processing by clicking on `Data Processing`{.action} (1) in the left-hand menu and then click on `Create a notebook`{.action} (2).
 
 ![Create a Notebook 00](images/Creating-a-notebook00.png){.thumbnail}
 
-In the Control Panel the name is generated automatically, remember it for later. Select the framework (1) and the region (2).
+In the Control Panel the name is generated automatically, remember it for later. Select a framework (1) and a region (2).
 
 Then choose the notebook privacy setting (3). Be careful with your sensitive data in case you choose public access.
 
@@ -68,7 +68,7 @@ Now select the dimensioning necessary for the job:
 
 (3) After configuring your notebook, check in the summary box at the top right that all information is correct.
 
-(4) Then click on `Créer votre notebook`{.action} to create your notebook. 
+(4) Then click on `Create your notebook`{.action} to create your notebook. 
 
 ![Create a Notebook 02](images/Creating-a-notebook02.png){.thumbnail}
 
