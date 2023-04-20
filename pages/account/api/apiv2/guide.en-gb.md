@@ -16,21 +16,21 @@ Historically, OVHcloud APIs have been available under the **/1.0** branch corres
 
 A new section of the OVHcloud APIs is available under the prefix **/v2** on [https://eu.api.ovh.com/v2](https://api.ovh.com/console-preview/?branch=v2){.external}. 
 
-This new branch will bring together new API routes, reworked in a new format, and become the main API branch for new feature developments in OVHcloud products.<br>
-Branch **/1.0** will continue to exist in parallel to branch **/v2** but will not contain the same functionality. As a client, you can consume APIs from branch **/1.0** and **/v2** simultaneously in your programmes, while retaining the same authentication and tools to call the API. To standardise the naming of our API branches, the **/1.0** branch is also available via the **/v1** alias.
+This new branch will bring together new API routes, reworked in a new format, and become the main API branch for new feature developments of OVHcloud products.<br>
+The **/1.0** branch will continue to exist in parallel to the **/v2** branch but will not contain the same functionality. As a customer, you can consume APIs from branch **/1.0** and **/v2** simultaneously in your programmes, while retaining the same authentication and tools to call the API. To standardise the naming of our API branches, the **/1.0** branch is also available via the **/v1** alias.
 
-The branch **/v2** introduces new principles of exposure and consumption (which differ from the branch **/v1**), the purpose of this guide is to present them to you.
+The **/v2** branch introduces new principles of exposure and consumption (which differ from the **/v1** branch), the purpose of this guide is to introduce them.
 
 ## Principles
 
 ### Version management
 
 The */v2* branch of the API uses a versioning system to manage its specifications. This means that each modification in the API routes (input parameters, expected return, ...) will be the subject of a new version.
-These versions (which are different from the version contained in the API branch name) will contain two numbers that increment: major and minor versions. This makes it possible to distinguish minor changes from major/brittle changes in API schemes. Minor (non-brittle) changes increment the minor version while brittle changes increment the major version.
+These versions (which are different from the version contained in the API branch name) will contain two numbers that increment: major and minor versions. This makes it possible to distinguish minor changes from major/breaking changes in API schemes. Minor (non-breaking) changes increment the minor version while breaking changes increment the major version.
 
 A summary of the changes (*changelog*) accompanies the publication of each new version to get a detailed view of the changes made.
 
-The API’s *v2* branch is designed to expose several major versions in parallel. This means that applications using a specific version of the API will continue to work after the release of a new major version.
+The API *v2* branch is designed to expose several major versions in parallel. This means that applications using a specific version of the API will continue to work after the release of a new major version.
 
 As a customer, you will be responsible for choosing the version you use. You will need to specify which major version of the specification will be used with your account.
 
@@ -51,7 +51,7 @@ curl -X GET -H "X-Schemas-Version: 1.0" https://eu.api.ovh.com/v2/iam/policy
 If this header is not provided during an API call, the major version of your account is used by default.
 
 We recommend only using this header during your validation phases. Indeed, its use in your production applications will require maintenance on your side the day that this major version is no longer available.<br>
-When a major new version is released, we will evaluate the impact of this new version on your API usage, and send you a detailed report. If you are not affected by the broken changes, we will offer you to switch directly to the new major version. In this case, if you use the header in your applications, the switch cannot be performed without maintenance on your application.
+When a major new version is released, we will evaluate the impact of this new version on your API usage, and send you a detailed report. If you are not affected by the breaking changes, we will offer you to switch directly to the new major version. In this case, if you use the header in your applications, the switch cannot be performed without maintenance on your application.
 
 #### Retrieve available versions via the console
 
@@ -70,7 +70,7 @@ There are two opposing approaches to seeing the current state of a resource thro
 
 The first approach is the one used by the current API: [https://eu.api.ovh.com/v1](https://eu.api.ovh.com/v1){.external}.
 
-The APIv2 uses the resource-centric approach, which makes it easier to use *as-code*, particularly with tools like [Terraform](https://www.terraform.io){.external}. This operation also abstracts all the complexity of the process of transforming a resource from one state to another since it is the responsibility of the API and not the client.
+The APIv2 uses the resource-centric approach, which makes it easier to use *as-code*, particularly with tools like [Terraform](https://www.terraform.io){.external}. This operation also abstracts all the complexity of the process of transforming a resource from one state to another since it is the responsibility of the API and not the customer.
 
 ### Asynchronous management and events
 
@@ -117,20 +117,20 @@ In some cases, an event may also contain a link to the resource that the task is
 
 > [!primary]
 >
-> The event and task examples shown above may vary by API section. Please refer to the [console](https://help.ovhcloud.com/csm/en-gb-api-console-exploration?id=kb_article_view&sysparm_article=KB0057325) to view the exact definition for each section.
+> The event and task examples shown above may vary by API section. Please refer to the [console](pages/account/api/console-preview/) to view the exact definition for each section.
 >
 
 ### Pagination
 
-Paging allows you to segment API responses containing a list of items into multiple pages.
+Pagination allows you to segment API responses containing a list of items into multiple pages.
 
 The main advantages of pagination are:
 
-- Reduced bandwidth usage for API clients
-- shorter API response times
-- smaller response bodies, which allows for less expensive exploitation of the data returned from the client side.
+- Reduced bandwidth usage for API clients.
+- Shorter API response times.
+- Smaller response bodies, which allows for less expensive exploitation of the data returned from the client side.
 
-The APIv2 exposes cursor paging, in which cursors are passed in the query and response headers. You can also control the number of returned items.
+The APIv2 exposes cursor pagination, in which cursors are passed in the query and response headers. You can also control the number of returned items.
 
 The headers used are:
 
@@ -154,7 +154,7 @@ curl https://eu.api.ovh.com/v2/iam/policy -H "X-Pagination-Size: 5` -H `X-Pagina
 
 The absence of the `X-Pagination-Cursor-Next` header in an API response containing a list of items means that the last page is reached and all available items have been returned.
 
-## Official customers
+## Official clients
 
 Several libraries are available to use the OVHcloud APIs:
 
@@ -164,8 +164,8 @@ Several libraries are available to use the OVHcloud APIs:
 
 ## Go further <a name="gofurther"></a>
 
-[Exploring OVHcloud APIs](https://help.ovhcloud.com/csm/en-gb-api-console-exploration?id=kb_article_view&sysparm_article=KB0057325)
+[Exploring OVHcloud APIs](pages/account/api/console-preview/)
 
-[Using Terraform with OVHcloud](https://help.ovhcloud.com/csm/en-gb-terraform-at-ovhcloud?id=kb_article_view&sysparm_article=KB0054612) 
+[Using Terraform with OVHcloud](pages/account/api/terraform-at-ovhcloud) 
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
