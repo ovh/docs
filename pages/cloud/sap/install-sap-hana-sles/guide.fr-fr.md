@@ -16,7 +16,7 @@ Ce guide fournit des instructions pour le déploiement de l'image SUSE Linux Ent
 ## Prérequis
 
 - Un accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Un [serveur dédié HGR-SAP Baremetal](https://www.ovhcloud.com/fr/lp/sap/)
+- Un [serveur dédié HGR-SAP Bare Metal](https://www.ovhcloud.com/fr/lp/sap/)
 
 ## En pratique
 
@@ -28,7 +28,7 @@ Depuis l'espace client OVHcloud, vous pouvez lancer le déploiement de l'image S
 
 Sélectionnez l'option `Installer à partir d'un template OVHcloud`{.action}.
 
-![select-template](images/select-template.png){.thumbnail width="500" height="500"}
+![select-template](images/select-template.png){.thumbnail}
 
 La première étape consiste à renseigner des informations sur le système d'exploitation que vous souhaitez installer.<br>
 &ensp;&thinsp;a. Dans le menu déroulant `Type de système d'exploitation`{.action}, sélectionnez `ERP`{.action}.<br>
@@ -41,7 +41,7 @@ Si vous le désirez, vous avez la possibilité de personnaliser la configuration
 > [!primary]
 > Par défaut, les partitions `/boot` et `/` sont en RAID 1.
 
-![sles-template](images/sles-template.png){.thumbnail width="500" height="500"}
+![sles-template](images/sles-template.png){.thumbnail}
 
 Si vous ne personnalisez pas la configuration des partitions, vous accéderez directement à la dernière étape.
 
@@ -206,7 +206,7 @@ $ zypper install -y saptune
 <ol start="2">
   <li>En fonction de votre futur système SAP, deux possibilités s'offrent à vous.</li>
 </ol>
-&ensp;&thinsp;a. Le premier choix est `HANA` qui correspond à une installation SAP HANA qui hébergera un système SAP Netweaver.<br>
+&ensp;&thinsp;a. Le premier choix est `HANA` qui correspond à une installation SAP HANA qui hébergera un système SAP NetWeaver.<br>
 &ensp;&thinsp;b. Le second choix est `S4HANA-DBSERVER` qui correspond à une installation SAP HANA qui hébergera un système SAP S/4HANA.
 
 Pour lancer l'application des paramètres en fonction de votre futur système, lancez la commande suivante :
