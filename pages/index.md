@@ -852,6 +852,7 @@
             + [Tutorials](public-cloud-data-analytics-data-processing-tutorials)
                 + [Python - Calculating π number with Apache Spark](platform/data-processing/40_TUTORIAL_calculate_pi)
                 + [Python - Analyzing most used words in lyrics with Apache Spark](platform/data-processing/41_TUTORIAL_wordcount)
+                + [Notebooks for Apache Spark - Data cleaning](platform/data-processing/42_TUTORIAL_notebook-data-cleaning)
     + [Data Platforms](bare-metal-cloud-data-platforms)
         + [Logs Data Platform](public-cloud-data-platforms-logs-data-platform)
             + [Getting started](public-cloud-data-platforms-logs-data-platform-getting-started)
