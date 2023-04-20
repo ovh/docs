@@ -17,7 +17,7 @@ Historically, OVHcloud APIs have been available under the **/1.0** branch corres
 A new section of the OVHcloud APIs is available under the prefix **/v2** on [https://eu.api.ovh.com/v2](https://api.ovh.com/console-preview/?branch=v2){.external}. 
 
 This new branch will bring together new API routes, reworked in a new format, and become the main API branch for new feature developments of OVHcloud products.<br>
-The **/1.0** branch will continue to exist in parallel to the **/v2** branch but will not contain the same functionality. As a customer, you can consume APIs from branch **/1.0** and **/v2** simultaneously in your programmes, while retaining the same authentication and tools to call the API. To standardise the naming of our API branches, the **/1.0** branch is also available via the **/v1** alias.
+The **/1.0** branch will continue to exist in parallel to the **/v2** branch but will not contain the same functionality. As a customer, you can consume APIs from branch **/1.0** and **/v2** simultaneously in your programs, while retaining the same authentication and tools to call the API. To standardise the naming of our API branches, the **/1.0** branch is also available via the **/v1** alias.
 
 The **/v2** branch introduces new principles of exposure and consumption (which differ from the **/v1** branch), the purpose of this guide is to introduce them.
 
