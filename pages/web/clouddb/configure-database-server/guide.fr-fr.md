@@ -73,7 +73,7 @@ Pour un hébergement web OVHcloud, vous pouvez simplement cocher `Autoriser les 
 >
 > Pour délier une offre Web Cloud Databases associée à un hébergement web **Performance**, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur l'onglet `Web Cloud` puis sur l'hébergement concerné dans l'onglet `Hébergements`{.action} qui apparaît dans la colonne de gauche. 
 >
-> Sur la nouvelle page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement que vous souhaitez puis poursuivez jusqu'à la validation de la commande.
+> Sur la nouvelle page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
 >
 > **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée independamment de votre hébergement web Performance.**
 >
