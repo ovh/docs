@@ -196,20 +196,20 @@ subnet 192.168.1.0 netmask 255.255.255.240 {
     option broadcast-address 192.168.1.15;
     option routers 192.168.1.1;
     ping-check = 1;
-    next-server 192.168.1.1;                        # Détermine l'IP de votre serveur tftp
+    next-server 192.168.1.1;                        # Determines the IP of your tftp server
 
-    if option arch = 00:07 {                        # Détermine le type d'architecture, ici 64bits
+    if option arch = 00:07 {                        # Determines the architecture type, here 64 bits
       if exists user-class and option user-class = "iPXE" {
-          filename "refind.pxe";                    # Détermine le script appelé par le binaire
+          filename "refind.pxe";                    # Determines the script called by the binary
       } else {
-            filename "ipxe.efi";                    # Détermine le binaire iPXE
+            filename "ipxe.efi";                    # Determines iPXE binary
       }
 
-    } else if option arch = 00:06 {                 # Détermine le type d'architecture, ici 32bits
+    } else if option arch = 00:06 {                 # Determines the architecture type, here 32 bits
       if exists  user-class and option user-class = "iPXE" {
-              filename "refind.pxe";                # Détermine le script appelé par le binaire
+              filename "refind.pxe";                # Determines the script called by the binary
       } else {
-              filename "ipxe32.efi";                # Détermine le binaire iPXE
+              filename "ipxe32.efi";                # Determines iPXE binary
       }
     }
 }
@@ -353,10 +353,10 @@ It is strongly recommended that you use an NTP service, especially if your infra
 
 ## Go further
 
-[Comprendre et/ou personnaliser votre service DHCP](https://wiki.debian.org/DHCP_Server).<br>
-[Comprendre et/ou personnaliser votre service iPXE](https://ipxe.org/docs).<br>
-[Comprendre et/ou personnaliser votre service rEFInd](https://en.wikipedia.org/wiki/REFInd).<br>
-[Comprendre ou découvrir NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).<br>
-[Comprendre ou découvrir Dnsmasq](https://wiki.debian.org/dnsmasq).<br>
+[Understanding and/or customising your DHCP service](https://wiki.debian.org/DHCP_Server).<br>
+[Understanding and/or customising your iPXE service](https://ipxe.org/docs).<br>
+[Understanding and/or customising your rEFInd service](https://en.wikipedia.org/wiki/REFInd).<br>
+[Understand or discover NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol).<br>
+[Understand or discover Dnsmasq](https://wiki.debian.org/dnsmasq).<br>
 
 Join our community of users on <https://community.ovh.com/en/>.
