@@ -19,13 +19,14 @@ A new section of the OVHcloud APIs is available under the prefix **/v2** on [htt
 This new branch will bring together new API routes, reworked in a new format, and become the main API branch for new feature developments of OVHcloud products.<br>
 The **/1.0** branch will continue to exist in parallel to the **/v2** branch but will not contain the same functionality. As a customer, you can consume APIs from branch **/1.0** and **/v2** simultaneously in your programs, while retaining the same authentication and tools to call the API. To standardise the naming of our API branches, the **/1.0** branch is also available via the **/v1** alias.
 
-The **/v2** branch introduces new principles of exposure and consumption (which differ from the **/v1** branch), the purpose of this guide is to introduce them.
+The **/v2** branch introduces new principles of exposure and consumption (which differ from the **/v1** branch). The purpose of this guide is to introduce them.
 
 ## Principles
 
 ### Version management
 
 The */v2* branch of the API uses a versioning system to manage its specifications. This means that each modification in the API routes (input parameters, expected return, ...) will be the subject of a new version.
+
 These versions (which are different from the version contained in the API branch name) will contain two numbers that increment: major and minor versions. This makes it possible to distinguish minor changes from major/breaking changes in API schemes. Minor (non-breaking) changes increment the minor version while breaking changes increment the major version.
 
 A summary of the changes (*changelog*) accompanies the publication of each new version to get a detailed view of the changes made.
@@ -34,7 +35,7 @@ The API *v2* branch is designed to expose several major versions in parallel. Th
 
 As a customer, you will be responsible for choosing the version you use. You will need to specify which major version of the specification will be used with your account.
 
-When a new major release is released, the previous major release will remain active for a specified period of time in the *changelog* to give you time to adapt your applications.
+When a new major version is released, the previous major release will remain active for a specified period of time in the *changelog* to give you time to adapt your applications.
 Before the availability period for the previous major version ends, you will need to ensure that your applications using the OVHcloud API are still compatible, and make the major version change in your Control Panel. If you do not do so, you will be automatically migrated to the latest major version at the end of your current major release availability period. 
 
 #### Select a specific major version of the API
@@ -134,9 +135,9 @@ The APIv2 exposes cursor pagination, in which cursors are passed in the query an
 
 The headers used are:
 
-- `X-Pagination-Size`: this optional header allows you to control the size of the returned pages.
-- `X-Pagination-Cursor-Next`: header returned by the API that contains the value to use in the next query to retrieve the next page.
-- `X-Pagination-Cursor`: the header to send in a query to retrieve the next page.
+- `X-Pagination-Size`: This optional header allows you to control the size of the returned pages.
+- `X-Pagination-Cursor-Next`: Header returned by the API that contains the value to use in the next query to retrieve the next page.
+- `X-Pagination-Cursor`: The header to send in a query to retrieve the next page.
 
 For example, the following call will return the first 5 items and the cursor to use to retrieve the next page:
 
@@ -168,4 +169,4 @@ Several libraries are available to use the OVHcloud APIs:
 
 [Using Terraform with OVHcloud](pages/account/api/terraform-at-ovhcloud) 
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our community of users on <https://community.ovh.com/en/>.
