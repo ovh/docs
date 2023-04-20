@@ -4,9 +4,10 @@ slug: apache-spark-notebooks
 excerpt: Learn how to create an Apache Spark notebook
 section: Getting started
 order: 03
+updated: 2023-04-20
 ---
 
-**Last updated April 6th, 2023.**
+**Last updated April 20th, 2023.**
 
 > [!primary]
 >

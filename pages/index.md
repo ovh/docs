@@ -811,6 +811,7 @@
                 + [Submitting a Java/Scala job to Data Processing platform using the OVHcloud Control Panel](platform/data-processing/20_GETTINGSTARTED_submit-java-scala-ui)
                 + [Checking a job's logs](platform/data-processing/21_GETTINGSTARTED_check-job-logs)
                 + [Monitoring your jobs using Grafana and the Apache Spark dashboard](platform/data-processing/22_GETTINGSTARTED_monitor)
+                + [Data Processing Apache Spark Notebooks - Getting started](pages/platform/data-processing/23_GETTINGSTARTED_create-a-notebook)
                 + [FAQ](platform/data-processing/faq)
             + [How to](public-cloud-data-analytics-data-processing-how-to)
                 + [How to activate the Data Processing service for your cloud project](platform/data-processing/30_HOWTO_activate_project)
