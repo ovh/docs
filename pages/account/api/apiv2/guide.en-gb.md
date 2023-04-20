@@ -158,8 +158,8 @@ The absence of the `X-Pagination-Cursor-Next` header in an API response containi
 
 Several libraries are available to use the OVHcloud APIs:
 
-- Go : [https://github.com/ovh/go-ovh](https://github.com/ovh/go-ovh){.external}
-- Python : [https://github.com/ovh/python-ovh](https://github.com/ovh/python-ovh){.external}
+- Go: [https://github.com/ovh/go-ovh](https://github.com/ovh/go-ovh){.external}
+- Python: [https://github.com/ovh/python-ovh](https://github.com/ovh/python-ovh){.external}
 - PHP: [https://github.com/ovh/php-ovh](https://github.com/ovh/php-ovh){.external}
 
 ## Go further <a name="gofurther"></a>
