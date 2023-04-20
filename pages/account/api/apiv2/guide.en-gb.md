@@ -61,7 +61,7 @@ The different versions are displayed in the **SCHEMAS VERSION** section. You can
 
 ![API](images/console-schemas-version.png){.thumbnail}
 
-### Vision as-code
+### As-code design
 
 There are two opposing approaches to seeing the current state of a resource through an API and changing its state:
 
