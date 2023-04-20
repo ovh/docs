@@ -30,7 +30,7 @@ From the OVHcloud Control Panel, you can launch the deployment of the SLES 15 fo
 
 Select the `Install from an OVHcloud template`{.action} option.
 
-![select-template](images/select-template.png){.thumbnail}
+![select-template](images/select-template.png){.thumbnail width=592 height=420}
 
 The first step involves providing information about the operating system which you want to install.<br>
 &ensp;&thinsp;a. In the drop-down menu `Type of OS`{.action}, select `ERP`{.action}.<br>
@@ -43,7 +43,7 @@ If you want, you can customise the partition configuration.
 > [!primary]
 > By default, partitions `/boot` and `/` are in RAID 1.
 
-![sles-template](images/sles-template.png){.thumbnail}
+![sles-template](images/sles-template.png){.thumbnail width=593 height=762}
 
 If you do not custom the configuration of partitions, you will go to the last step.
 

@@ -28,7 +28,7 @@ Depuis l'espace client OVHcloud, vous pouvez lancer le déploiement de l'image S
 
 Sélectionnez l'option `Installer à partir d'un template OVHcloud`{.action}.
 
-![select-template](images/select-template.png){.thumbnail}
+![select-template](images/select-template.png){.thumbnail width=592 height=420}
 
 La première étape consiste à renseigner des informations sur le système d'exploitation que vous souhaitez installer.<br>
 &ensp;&thinsp;a. Dans le menu déroulant `Type de système d'exploitation`{.action}, sélectionnez `ERP`{.action}.<br>
@@ -41,7 +41,7 @@ Si vous le désirez, vous avez la possibilité de personnaliser la configuration
 > [!primary]
 > Par défaut, les partitions `/boot` et `/` sont en RAID 1.
 
-![sles-template](images/sles-template.png){.thumbnail}
+![sles-template](images/sles-template.png){.thumbnail width=593 height=762}
 
 Si vous ne personnalisez pas la configuration des partitions, vous accéderez directement à la dernière étape.
 
